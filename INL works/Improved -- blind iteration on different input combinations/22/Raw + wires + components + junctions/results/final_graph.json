@@ -1,0 +1,1130 @@
+{
+  "document": "22",
+  "iteration": "1",
+  "nodes": [
+    "GEN-G01",
+    "GSU-T01",
+    "SWYD-345",
+    "CB-13A1",
+    "BUS-13A",
+    "CB-13B1",
+    "BUS-13B",
+    "CB-13T",
+    "AUX-XFMR-1A",
+    "CB-4A-IN",
+    "BUS-4160-A",
+    "AUX-XFMR-1B",
+    "CB-4B-IN",
+    "BUS-4160-B",
+    "SAT-XFMR-1C",
+    "CB-4C-IN",
+    "BUS-4160-C",
+    "SAT-XFMR-1D",
+    "CB-4D-IN",
+    "BUS-4160-D",
+    "DG-1A",
+    "CB-DG-A",
+    "DG-1B",
+    "CB-DG-B",
+    "DG-1C",
+    "CB-DG-C",
+    "DG-1D",
+    "CB-DG-D",
+    "CB-4AB-TIE",
+    "CB-4CD-TIE",
+    "CB-LC-A",
+    "TR-LC-A",
+    "BUS-480-A",
+    "CB-LC-B",
+    "TR-LC-B",
+    "BUS-480-B",
+    "CB-LC-C",
+    "TR-LC-C",
+    "BUS-480-C",
+    "CB-LC-D",
+    "TR-LC-D",
+    "BUS-480-D",
+    "CB-MCC-AA",
+    "MCC-AA",
+    "CB-MCC-AB",
+    "MCC-AB",
+    "XFMR-120-A",
+    "PNL-120-A",
+    "GND-A",
+    "CB-RHR-A",
+    "PUMP-RHR-A",
+    "CB-SI-A",
+    "PUMP-SI-A",
+    "CB-CCW-A",
+    "PUMP-CCW-A",
+    "CB-FAN-A",
+    "FAN-CR-A",
+    "CB-CH-A",
+    "CHILLER-A",
+    "CB-VLV1-A",
+    "MOV-HV1-A",
+    "CB-VLV2-A",
+    "MOV-HV2-A",
+    "CB-SPARE-A",
+    "SPARE-LOAD-A",
+    "CB-MCC-BA",
+    "MCC-BA",
+    "CB-MCC-BB",
+    "MCC-BB",
+    "XFMR-120-B",
+    "PNL-120-B",
+    "GND-B",
+    "CB-RHR-B",
+    "PUMP-RHR-B",
+    "CB-SI-B",
+    "PUMP-SI-B",
+    "CB-CCW-B",
+    "PUMP-CCW-B",
+    "CB-FAN-B",
+    "FAN-CR-B",
+    "CB-CH-B",
+    "CHILLER-B",
+    "CB-VLV1-B",
+    "MOV-HV1-B",
+    "CB-VLV2-B",
+    "MOV-HV2-B",
+    "CB-SPARE-B",
+    "SPARE-LOAD-B",
+    "CB-MCC-CA",
+    "MCC-CA",
+    "CB-MCC-CB",
+    "MCC-CB",
+    "XFMR-120-C",
+    "PNL-120-C",
+    "GND-C",
+    "CB-RHR-C",
+    "PUMP-RHR-C",
+    "CB-SI-C",
+    "PUMP-SI-C",
+    "CB-CCW-C",
+    "PUMP-CCW-C",
+    "CB-FAN-C",
+    "FAN-CR-C",
+    "CB-CH-C",
+    "CHILLER-C",
+    "CB-VLV1-C",
+    "MOV-HV1-C",
+    "CB-VLV2-C",
+    "MOV-HV2-C",
+    "CB-SPARE-C",
+    "SPARE-LOAD-C",
+    "CB-MCC-DA",
+    "MCC-DA",
+    "CB-MCC-DB",
+    "MCC-DB",
+    "XFMR-120-D",
+    "PNL-120-D",
+    "GND-D",
+    "CB-RHR-D",
+    "PUMP-RHR-D",
+    "CB-SI-D",
+    "PUMP-SI-D",
+    "CB-CCW-D",
+    "PUMP-CCW-D",
+    "CB-FAN-D",
+    "FAN-CR-D",
+    "CB-CH-D",
+    "CHILLER-D",
+    "CB-VLV1-D",
+    "MOV-HV1-D",
+    "CB-VLV2-D",
+    "MOV-HV2-D",
+    "CB-SPARE-D",
+    "SPARE-LOAD-D",
+    "CB-DC-A1",
+    "CHGR-125A",
+    "BUS-125A",
+    "CB-DC-B1",
+    "CHGR-125B",
+    "BUS-125B",
+    "BAT-125A",
+    "BAT-125B",
+    "DC-MCC-A",
+    "DC-MCC-B",
+    "FUSE-FD-A",
+    "INV-UPS-A",
+    "BUS-UPS-A",
+    "FUSE-FD-B",
+    "INV-UPS-B",
+    "BUS-UPS-B",
+    "INST-RACK-A",
+    "INST-RACK-B",
+    "GRD-DC-A",
+    "GRD-DC-B",
+    "PNL-RPS-A",
+    "PLC-SAF-A",
+    "PNL-RPS-B",
+    "PLC-SAF-B"
+  ],
+  "edges": [
+    {
+      "source": "GEN-G01",
+      "target": "GSU-T01",
+      "edge_type": "power",
+      "evidence": "Solid upper source conductor."
+    },
+    {
+      "source": "GSU-T01",
+      "target": "SWYD-345",
+      "edge_type": "power",
+      "evidence": "Solid upper source conductor."
+    },
+    {
+      "source": "SWYD-345",
+      "target": "CB-13A1",
+      "edge_type": "power",
+      "evidence": "Solid feeder from switchyard/source line to 13.8 kV bus A."
+    },
+    {
+      "source": "CB-13A1",
+      "target": "BUS-13A",
+      "edge_type": "power",
+      "evidence": "Solid feeder from switchyard/source line to 13.8 kV bus A."
+    },
+    {
+      "source": "SWYD-345",
+      "target": "CB-13B1",
+      "edge_type": "power",
+      "evidence": "Solid feeder from switchyard/source line to 13.8 kV bus B."
+    },
+    {
+      "source": "CB-13B1",
+      "target": "BUS-13B",
+      "edge_type": "power",
+      "evidence": "Solid feeder from switchyard/source line to 13.8 kV bus B."
+    },
+    {
+      "source": "BUS-13A",
+      "target": "CB-13T",
+      "edge_type": "power",
+      "evidence": "Solid 13.8 kV bus tie."
+    },
+    {
+      "source": "CB-13T",
+      "target": "BUS-13B",
+      "edge_type": "power",
+      "evidence": "Solid 13.8 kV bus tie."
+    },
+    {
+      "source": "BUS-13A",
+      "target": "AUX-XFMR-1A",
+      "edge_type": "power",
+      "evidence": "Solid auxiliary transformer feed to 4160 V bus A."
+    },
+    {
+      "source": "AUX-XFMR-1A",
+      "target": "CB-4A-IN",
+      "edge_type": "power",
+      "evidence": "Solid auxiliary transformer feed to 4160 V bus A."
+    },
+    {
+      "source": "CB-4A-IN",
+      "target": "BUS-4160-A",
+      "edge_type": "power",
+      "evidence": "Solid auxiliary transformer feed to 4160 V bus A."
+    },
+    {
+      "source": "BUS-13A",
+      "target": "AUX-XFMR-1B",
+      "edge_type": "power",
+      "evidence": "Solid auxiliary transformer feed to 4160 V bus B."
+    },
+    {
+      "source": "AUX-XFMR-1B",
+      "target": "CB-4B-IN",
+      "edge_type": "power",
+      "evidence": "Solid auxiliary transformer feed to 4160 V bus B."
+    },
+    {
+      "source": "CB-4B-IN",
+      "target": "BUS-4160-B",
+      "edge_type": "power",
+      "evidence": "Solid auxiliary transformer feed to 4160 V bus B."
+    },
+    {
+      "source": "BUS-13B",
+      "target": "SAT-XFMR-1C",
+      "edge_type": "power",
+      "evidence": "Solid startup transformer feed to 4160 V bus C."
+    },
+    {
+      "source": "SAT-XFMR-1C",
+      "target": "CB-4C-IN",
+      "edge_type": "power",
+      "evidence": "Solid startup transformer feed to 4160 V bus C."
+    },
+    {
+      "source": "CB-4C-IN",
+      "target": "BUS-4160-C",
+      "edge_type": "power",
+      "evidence": "Solid startup transformer feed to 4160 V bus C."
+    },
+    {
+      "source": "BUS-13B",
+      "target": "SAT-XFMR-1D",
+      "edge_type": "power",
+      "evidence": "Solid startup transformer feed to 4160 V bus D."
+    },
+    {
+      "source": "SAT-XFMR-1D",
+      "target": "CB-4D-IN",
+      "edge_type": "power",
+      "evidence": "Solid startup transformer feed to 4160 V bus D."
+    },
+    {
+      "source": "CB-4D-IN",
+      "target": "BUS-4160-D",
+      "edge_type": "power",
+      "evidence": "Solid startup transformer feed to 4160 V bus D."
+    },
+    {
+      "source": "DG-1A",
+      "target": "CB-DG-A",
+      "edge_type": "power",
+      "evidence": "Solid diesel generator feeder."
+    },
+    {
+      "source": "CB-DG-A",
+      "target": "BUS-4160-A",
+      "edge_type": "power",
+      "evidence": "Solid diesel generator feeder."
+    },
+    {
+      "source": "DG-1B",
+      "target": "CB-DG-B",
+      "edge_type": "power",
+      "evidence": "Solid diesel generator feeder."
+    },
+    {
+      "source": "CB-DG-B",
+      "target": "BUS-4160-B",
+      "edge_type": "power",
+      "evidence": "Solid diesel generator feeder."
+    },
+    {
+      "source": "DG-1C",
+      "target": "CB-DG-C",
+      "edge_type": "power",
+      "evidence": "Solid diesel generator feeder."
+    },
+    {
+      "source": "CB-DG-C",
+      "target": "BUS-4160-C",
+      "edge_type": "power",
+      "evidence": "Solid diesel generator feeder."
+    },
+    {
+      "source": "DG-1D",
+      "target": "CB-DG-D",
+      "edge_type": "power",
+      "evidence": "Solid diesel generator feeder."
+    },
+    {
+      "source": "CB-DG-D",
+      "target": "BUS-4160-D",
+      "edge_type": "power",
+      "evidence": "Solid diesel generator feeder."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-4AB-TIE",
+      "edge_type": "power",
+      "evidence": "Solid 4160 V A/B tie."
+    },
+    {
+      "source": "CB-4AB-TIE",
+      "target": "BUS-4160-B",
+      "edge_type": "power",
+      "evidence": "Solid 4160 V A/B tie."
+    },
+    {
+      "source": "BUS-4160-C",
+      "target": "CB-4CD-TIE",
+      "edge_type": "power",
+      "evidence": "Solid 4160 V C/D tie."
+    },
+    {
+      "source": "CB-4CD-TIE",
+      "target": "BUS-4160-D",
+      "edge_type": "power",
+      "evidence": "Solid 4160 V C/D tie."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-LC-A",
+      "edge_type": "power",
+      "evidence": "Solid load-center transformer chain."
+    },
+    {
+      "source": "CB-LC-A",
+      "target": "TR-LC-A",
+      "edge_type": "power",
+      "evidence": "Solid load-center transformer chain."
+    },
+    {
+      "source": "TR-LC-A",
+      "target": "BUS-480-A",
+      "edge_type": "power",
+      "evidence": "Solid load-center transformer chain."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-LC-B",
+      "edge_type": "power",
+      "evidence": "Solid load-center transformer chain."
+    },
+    {
+      "source": "CB-LC-B",
+      "target": "TR-LC-B",
+      "edge_type": "power",
+      "evidence": "Solid load-center transformer chain."
+    },
+    {
+      "source": "TR-LC-B",
+      "target": "BUS-480-B",
+      "edge_type": "power",
+      "evidence": "Solid load-center transformer chain."
+    },
+    {
+      "source": "BUS-4160-C",
+      "target": "CB-LC-C",
+      "edge_type": "power",
+      "evidence": "Solid load-center transformer chain."
+    },
+    {
+      "source": "CB-LC-C",
+      "target": "TR-LC-C",
+      "edge_type": "power",
+      "evidence": "Solid load-center transformer chain."
+    },
+    {
+      "source": "TR-LC-C",
+      "target": "BUS-480-C",
+      "edge_type": "power",
+      "evidence": "Solid load-center transformer chain."
+    },
+    {
+      "source": "BUS-4160-D",
+      "target": "CB-LC-D",
+      "edge_type": "power",
+      "evidence": "Solid load-center transformer chain."
+    },
+    {
+      "source": "CB-LC-D",
+      "target": "TR-LC-D",
+      "edge_type": "power",
+      "evidence": "Solid load-center transformer chain."
+    },
+    {
+      "source": "TR-LC-D",
+      "target": "BUS-480-D",
+      "edge_type": "power",
+      "evidence": "Solid load-center transformer chain."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-MCC-AA",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to left MCC."
+    },
+    {
+      "source": "CB-MCC-AA",
+      "target": "MCC-AA",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to left MCC."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-MCC-AB",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to right MCC."
+    },
+    {
+      "source": "CB-MCC-AB",
+      "target": "MCC-AB",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to right MCC."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "XFMR-120-A",
+      "edge_type": "power",
+      "evidence": "Solid 120 V panel transformer tap."
+    },
+    {
+      "source": "XFMR-120-A",
+      "target": "PNL-120-A",
+      "edge_type": "power",
+      "evidence": "Solid 120 V panel transformer tap."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "GND-A",
+      "edge_type": "ground",
+      "evidence": "Solid ground branch from 480 V bus."
+    },
+    {
+      "source": "MCC-AA",
+      "target": "CB-RHR-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-RHR-A",
+      "target": "PUMP-RHR-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-AA",
+      "target": "CB-SI-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-SI-A",
+      "target": "PUMP-SI-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-AA",
+      "target": "CB-CCW-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-CCW-A",
+      "target": "PUMP-CCW-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-AA",
+      "target": "CB-FAN-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-FAN-A",
+      "target": "FAN-CR-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-AB",
+      "target": "CB-CH-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-CH-A",
+      "target": "CHILLER-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-AB",
+      "target": "CB-VLV1-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-VLV1-A",
+      "target": "MOV-HV1-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-AB",
+      "target": "CB-VLV2-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-VLV2-A",
+      "target": "MOV-HV2-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-AB",
+      "target": "CB-SPARE-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-SPARE-A",
+      "target": "SPARE-LOAD-A",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-MCC-BA",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to left MCC."
+    },
+    {
+      "source": "CB-MCC-BA",
+      "target": "MCC-BA",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to left MCC."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-MCC-BB",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to right MCC."
+    },
+    {
+      "source": "CB-MCC-BB",
+      "target": "MCC-BB",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to right MCC."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "XFMR-120-B",
+      "edge_type": "power",
+      "evidence": "Solid 120 V panel transformer tap."
+    },
+    {
+      "source": "XFMR-120-B",
+      "target": "PNL-120-B",
+      "edge_type": "power",
+      "evidence": "Solid 120 V panel transformer tap."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "GND-B",
+      "edge_type": "ground",
+      "evidence": "Solid ground branch from 480 V bus."
+    },
+    {
+      "source": "MCC-BA",
+      "target": "CB-RHR-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-RHR-B",
+      "target": "PUMP-RHR-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-BA",
+      "target": "CB-SI-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-SI-B",
+      "target": "PUMP-SI-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-BA",
+      "target": "CB-CCW-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-CCW-B",
+      "target": "PUMP-CCW-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-BA",
+      "target": "CB-FAN-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-FAN-B",
+      "target": "FAN-CR-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-BB",
+      "target": "CB-CH-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-CH-B",
+      "target": "CHILLER-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-BB",
+      "target": "CB-VLV1-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-VLV1-B",
+      "target": "MOV-HV1-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-BB",
+      "target": "CB-VLV2-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-VLV2-B",
+      "target": "MOV-HV2-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-BB",
+      "target": "CB-SPARE-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-SPARE-B",
+      "target": "SPARE-LOAD-B",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "BUS-480-C",
+      "target": "CB-MCC-CA",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to left MCC."
+    },
+    {
+      "source": "CB-MCC-CA",
+      "target": "MCC-CA",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to left MCC."
+    },
+    {
+      "source": "BUS-480-C",
+      "target": "CB-MCC-CB",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to right MCC."
+    },
+    {
+      "source": "CB-MCC-CB",
+      "target": "MCC-CB",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to right MCC."
+    },
+    {
+      "source": "BUS-480-C",
+      "target": "XFMR-120-C",
+      "edge_type": "power",
+      "evidence": "Solid 120 V panel transformer tap."
+    },
+    {
+      "source": "XFMR-120-C",
+      "target": "PNL-120-C",
+      "edge_type": "power",
+      "evidence": "Solid 120 V panel transformer tap."
+    },
+    {
+      "source": "BUS-480-C",
+      "target": "GND-C",
+      "edge_type": "ground",
+      "evidence": "Solid ground branch from 480 V bus."
+    },
+    {
+      "source": "MCC-CA",
+      "target": "CB-RHR-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-RHR-C",
+      "target": "PUMP-RHR-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-CA",
+      "target": "CB-SI-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-SI-C",
+      "target": "PUMP-SI-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-CA",
+      "target": "CB-CCW-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-CCW-C",
+      "target": "PUMP-CCW-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-CA",
+      "target": "CB-FAN-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-FAN-C",
+      "target": "FAN-CR-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-CB",
+      "target": "CB-CH-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-CH-C",
+      "target": "CHILLER-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-CB",
+      "target": "CB-VLV1-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-VLV1-C",
+      "target": "MOV-HV1-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-CB",
+      "target": "CB-VLV2-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-VLV2-C",
+      "target": "MOV-HV2-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-CB",
+      "target": "CB-SPARE-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-SPARE-C",
+      "target": "SPARE-LOAD-C",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "BUS-480-D",
+      "target": "CB-MCC-DA",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to left MCC."
+    },
+    {
+      "source": "CB-MCC-DA",
+      "target": "MCC-DA",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to left MCC."
+    },
+    {
+      "source": "BUS-480-D",
+      "target": "CB-MCC-DB",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to right MCC."
+    },
+    {
+      "source": "CB-MCC-DB",
+      "target": "MCC-DB",
+      "edge_type": "power",
+      "evidence": "Solid 480 V load-center feeder to right MCC."
+    },
+    {
+      "source": "BUS-480-D",
+      "target": "XFMR-120-D",
+      "edge_type": "power",
+      "evidence": "Solid 120 V panel transformer tap."
+    },
+    {
+      "source": "XFMR-120-D",
+      "target": "PNL-120-D",
+      "edge_type": "power",
+      "evidence": "Solid 120 V panel transformer tap."
+    },
+    {
+      "source": "BUS-480-D",
+      "target": "GND-D",
+      "edge_type": "ground",
+      "evidence": "Solid ground branch from 480 V bus."
+    },
+    {
+      "source": "MCC-DA",
+      "target": "CB-RHR-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-RHR-D",
+      "target": "PUMP-RHR-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-DA",
+      "target": "CB-SI-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-SI-D",
+      "target": "PUMP-SI-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-DA",
+      "target": "CB-CCW-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-CCW-D",
+      "target": "PUMP-CCW-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-DA",
+      "target": "CB-FAN-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-FAN-D",
+      "target": "FAN-CR-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-DB",
+      "target": "CB-CH-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-CH-D",
+      "target": "CHILLER-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-DB",
+      "target": "CB-VLV1-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-VLV1-D",
+      "target": "MOV-HV1-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-DB",
+      "target": "CB-VLV2-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-VLV2-D",
+      "target": "MOV-HV2-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "MCC-DB",
+      "target": "CB-SPARE-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "CB-SPARE-D",
+      "target": "SPARE-LOAD-D",
+      "edge_type": "power",
+      "evidence": "Solid MCC branch feeder."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-DC-A1",
+      "edge_type": "dc",
+      "evidence": "Solid feeder to 125 VDC charger A and bus."
+    },
+    {
+      "source": "CB-DC-A1",
+      "target": "CHGR-125A",
+      "edge_type": "dc",
+      "evidence": "Solid feeder to 125 VDC charger A and bus."
+    },
+    {
+      "source": "CHGR-125A",
+      "target": "BUS-125A",
+      "edge_type": "dc",
+      "evidence": "Solid feeder to 125 VDC charger A and bus."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-DC-B1",
+      "edge_type": "dc",
+      "evidence": "Solid feeder to 125 VDC charger B and bus."
+    },
+    {
+      "source": "CB-DC-B1",
+      "target": "CHGR-125B",
+      "edge_type": "dc",
+      "evidence": "Solid feeder to 125 VDC charger B and bus."
+    },
+    {
+      "source": "CHGR-125B",
+      "target": "BUS-125B",
+      "edge_type": "dc",
+      "evidence": "Solid feeder to 125 VDC charger B and bus."
+    },
+    {
+      "source": "BUS-125A",
+      "target": "BAT-125A",
+      "edge_type": "dc",
+      "evidence": "Solid battery connection to DC bus A."
+    },
+    {
+      "source": "BUS-125B",
+      "target": "BAT-125B",
+      "edge_type": "dc",
+      "evidence": "Solid battery connection to DC bus B."
+    },
+    {
+      "source": "BUS-125A",
+      "target": "DC-MCC-A",
+      "edge_type": "dc",
+      "evidence": "Solid DC MCC A feeder."
+    },
+    {
+      "source": "BUS-125B",
+      "target": "DC-MCC-B",
+      "edge_type": "dc",
+      "evidence": "Solid DC MCC B feeder."
+    },
+    {
+      "source": "BUS-125A",
+      "target": "FUSE-FD-A",
+      "edge_type": "dc/ups",
+      "evidence": "Solid DC-to-UPS A chain."
+    },
+    {
+      "source": "FUSE-FD-A",
+      "target": "INV-UPS-A",
+      "edge_type": "dc/ups",
+      "evidence": "Solid DC-to-UPS A chain."
+    },
+    {
+      "source": "INV-UPS-A",
+      "target": "BUS-UPS-A",
+      "edge_type": "dc/ups",
+      "evidence": "Solid DC-to-UPS A chain."
+    },
+    {
+      "source": "BUS-125B",
+      "target": "FUSE-FD-B",
+      "edge_type": "dc/ups",
+      "evidence": "Solid DC-to-UPS B chain."
+    },
+    {
+      "source": "FUSE-FD-B",
+      "target": "INV-UPS-B",
+      "edge_type": "dc/ups",
+      "evidence": "Solid DC-to-UPS B chain."
+    },
+    {
+      "source": "INV-UPS-B",
+      "target": "BUS-UPS-B",
+      "edge_type": "dc/ups",
+      "evidence": "Solid DC-to-UPS B chain."
+    },
+    {
+      "source": "BUS-125A",
+      "target": "INST-RACK-A",
+      "edge_type": "dc",
+      "evidence": "Solid DC bus A instrument rack feed."
+    },
+    {
+      "source": "BUS-125B",
+      "target": "INST-RACK-B",
+      "edge_type": "dc",
+      "evidence": "Solid DC bus B instrument rack feed."
+    },
+    {
+      "source": "BUS-125A",
+      "target": "GRD-DC-A",
+      "edge_type": "ground",
+      "evidence": "Solid DC bus A ground branch."
+    },
+    {
+      "source": "BUS-125B",
+      "target": "GRD-DC-B",
+      "edge_type": "ground",
+      "evidence": "Solid DC bus B ground branch."
+    },
+    {
+      "source": "BUS-UPS-A",
+      "target": "PNL-RPS-A",
+      "edge_type": "ups",
+      "evidence": "Solid vertical UPS bus A supply drop accepted in final round."
+    },
+    {
+      "source": "BUS-UPS-A",
+      "target": "PLC-SAF-A",
+      "edge_type": "ups",
+      "evidence": "Solid vertical UPS bus A supply drop accepted in final round."
+    },
+    {
+      "source": "BUS-UPS-B",
+      "target": "PNL-RPS-B",
+      "edge_type": "ups",
+      "evidence": "Solid vertical UPS bus B supply drop accepted in final round."
+    },
+    {
+      "source": "BUS-UPS-B",
+      "target": "PLC-SAF-B",
+      "edge_type": "ups",
+      "evidence": "Solid vertical UPS bus B supply drop accepted in final round."
+    }
+  ],
+  "validation": {
+    "symmetric": true,
+    "diagonal_zero": true
+  }
+}

@@ -1,0 +1,197 @@
+source,target,type,evidence
+TR-SAT-1A,CB-SAT-A,P,solid vertical feeder through SAT 1A breaker
+CB-SAT-A,BUS-4160A,P,breaker feeder lands on BUS-4160A dot
+TR-SAT-1B,CB-SAT-B,P,solid vertical feeder through SAT 1B breaker
+CB-SAT-B,BUS-4160B,P,breaker feeder lands on BUS-4160B dot
+TR-UAT-1A,CB-UAT-A,P,solid feeder from UAT 1A to breaker
+CB-UAT-A,BUS-4160B,P,breaker feeder lands on BUS-4160B
+TR-UAT-1B,CB-UAT-B,P,solid feeder from UAT 1B to breaker
+CB-UAT-B,BUS-4160B,P,breaker feeder lands on BUS-4160B
+DG-1A,CB-DG-A,P,DG-1A solid feeder enters CB-DG-A
+CB-DG-A,BUS-4160A,P,CB-DG-A feeder lands on BUS-4160A
+DG-1B,CB-DG-B,P,DG-1B solid feeder enters CB-DG-B
+CB-DG-B,BUS-4160B,P,CB-DG-B feeder lands on BUS-4160B
+BUS-4160A,CB-4160 TIE,P,left side of normally-open tie breaker is on BUS-4160A
+CB-4160 TIE,BUS-4160B,P,right side of normally-open tie breaker is on BUS-4160B
+BUS-4160A,GND-4160A,GND,ground branch from BUS-4160A
+BUS-4160B,GND-4160B,GND,ground branch from BUS-4160B
+BUS-4160A,PT-4160A,CTRL,dashed voltage/control chain from BUS-4160A tap to SW-43A
+PT-4160A,FU-PT-A,CTRL,dashed voltage/control chain from BUS-4160A tap to SW-43A
+FU-PT-A,XFMR-CTRL A,CTRL,dashed voltage/control chain from BUS-4160A tap to SW-43A
+XFMR-CTRL A,TB-RPS-A,CTRL,dashed voltage/control chain from BUS-4160A tap to SW-43A
+TB-RPS-A,SW-43A,CTRL,dashed voltage/control chain from BUS-4160A tap to SW-43A
+BUS-4160B,PT-4160B,CTRL,dashed voltage/control chain from BUS-4160B tap to SW-43B
+PT-4160B,FU-PT-B,CTRL,dashed voltage/control chain from BUS-4160B tap to SW-43B
+FU-PT-B,XFMR-CTRL B,CTRL,dashed voltage/control chain from BUS-4160B tap to SW-43B
+XFMR-CTRL B,TB-RPS-B,CTRL,dashed voltage/control chain from BUS-4160B tap to SW-43B
+TB-RPS-B,SW-43B,CTRL,dashed voltage/control chain from BUS-4160B tap to SW-43B
+BUS-4160A,TR-480-A1,P,solid feeder from BUS-4160A to BUS-480A
+TR-480-A1,CB-480A-IN,P,solid feeder from BUS-4160A to BUS-480A
+CB-480A-IN,BUS-480A,P,solid feeder from BUS-4160A to BUS-480A
+BUS-4160A,TR-480-B1,P,solid feeder from BUS-4160A to BUS-480B
+TR-480-B1,CB-480B-IN,P,solid feeder from BUS-4160A to BUS-480B
+CB-480B-IN,BUS-480B,P,solid feeder from BUS-4160A to BUS-480B
+BUS-4160B,TR-480-C1,P,solid feeder from BUS-4160B to BUS-480C
+TR-480-C1,CB-480C-IN,P,solid feeder from BUS-4160B to BUS-480C
+CB-480C-IN,BUS-480C,P,solid feeder from BUS-4160B to BUS-480C
+BUS-4160B,TR-480-D1,P,solid feeder from BUS-4160B to BUS-480D
+TR-480-D1,CB-480D-IN,P,solid feeder from BUS-4160B to BUS-480D
+CB-480D-IN,BUS-480D,P,solid feeder from BUS-4160B to BUS-480D
+BUS-480A,CB-A01,P,vertical feeder branch from BUS-480A through CB-A01 -> DS-A01 -> MS-A01 to load PUMP-CCW-A1
+CB-A01,DS-A01,P,vertical feeder branch from BUS-480A through CB-A01 -> DS-A01 -> MS-A01 to load PUMP-CCW-A1
+DS-A01,MS-A01,P,vertical feeder branch from BUS-480A through CB-A01 -> DS-A01 -> MS-A01 to load PUMP-CCW-A1
+MS-A01,PUMP-CCW-A1,P,vertical feeder branch from BUS-480A through CB-A01 -> DS-A01 -> MS-A01 to load PUMP-CCW-A1
+BUS-480A,CB-A02,P,vertical feeder branch from BUS-480A through CB-A02 -> DS-A02 -> MS-A02 to load PUMP-RHR-A1
+CB-A02,DS-A02,P,vertical feeder branch from BUS-480A through CB-A02 -> DS-A02 -> MS-A02 to load PUMP-RHR-A1
+DS-A02,MS-A02,P,vertical feeder branch from BUS-480A through CB-A02 -> DS-A02 -> MS-A02 to load PUMP-RHR-A1
+MS-A02,PUMP-RHR-A1,P,vertical feeder branch from BUS-480A through CB-A02 -> DS-A02 -> MS-A02 to load PUMP-RHR-A1
+BUS-480A,CB-A03,P,vertical feeder branch from BUS-480A through CB-A03 -> FS-A03 -> MS-A03 to load FAN-RB-A1
+CB-A03,FS-A03,P,vertical feeder branch from BUS-480A through CB-A03 -> FS-A03 -> MS-A03 to load FAN-RB-A1
+FS-A03,MS-A03,P,vertical feeder branch from BUS-480A through CB-A03 -> FS-A03 -> MS-A03 to load FAN-RB-A1
+MS-A03,FAN-RB-A1,P,vertical feeder branch from BUS-480A through CB-A03 -> FS-A03 -> MS-A03 to load FAN-RB-A1
+BUS-480A,CB-A04,P,vertical feeder branch from BUS-480A through CB-A04 -> DS-A04 -> RY-A04 to load MOV-SI-A11
+CB-A04,DS-A04,P,vertical feeder branch from BUS-480A through CB-A04 -> DS-A04 -> RY-A04 to load MOV-SI-A11
+DS-A04,RY-A04,P,vertical feeder branch from BUS-480A through CB-A04 -> DS-A04 -> RY-A04 to load MOV-SI-A11
+RY-A04,MOV-SI-A11,P,vertical feeder branch from BUS-480A through CB-A04 -> DS-A04 -> RY-A04 to load MOV-SI-A11
+BUS-480A,CB-A05,P,vertical feeder branch from BUS-480A through CB-A05 -> DS-A05 -> CP-A05 to load PNL-LTG-A1
+CB-A05,DS-A05,P,vertical feeder branch from BUS-480A through CB-A05 -> DS-A05 -> CP-A05 to load PNL-LTG-A1
+DS-A05,CP-A05,P,vertical feeder branch from BUS-480A through CB-A05 -> DS-A05 -> CP-A05 to load PNL-LTG-A1
+CP-A05,PNL-LTG-A1,P,vertical feeder branch from BUS-480A through CB-A05 -> DS-A05 -> CP-A05 to load PNL-LTG-A1
+BUS-480A,CB-A06,P,vertical feeder branch from BUS-480A through CB-A06 -> DS-A06 -> MS-A06 to load PUMP-AFW-A1
+CB-A06,DS-A06,P,vertical feeder branch from BUS-480A through CB-A06 -> DS-A06 -> MS-A06 to load PUMP-AFW-A1
+DS-A06,MS-A06,P,vertical feeder branch from BUS-480A through CB-A06 -> DS-A06 -> MS-A06 to load PUMP-AFW-A1
+MS-A06,PUMP-AFW-A1,P,vertical feeder branch from BUS-480A through CB-A06 -> DS-A06 -> MS-A06 to load PUMP-AFW-A1
+BUS-480A,CB-A07,P,vertical feeder branch from BUS-480A through CB-A07 -> FS-A07 -> FU-A07 to load HTR-PZR-A1
+CB-A07,FS-A07,P,vertical feeder branch from BUS-480A through CB-A07 -> FS-A07 -> FU-A07 to load HTR-PZR-A1
+FS-A07,FU-A07,P,vertical feeder branch from BUS-480A through CB-A07 -> FS-A07 -> FU-A07 to load HTR-PZR-A1
+FU-A07,HTR-PZR-A1,P,vertical feeder branch from BUS-480A through CB-A07 -> FS-A07 -> FU-A07 to load HTR-PZR-A1
+BUS-480A,CB-A08,P,vertical feeder branch from BUS-480A through CB-A08 -> DS-A08 -> TB-A08 to load SPARE-A8
+CB-A08,DS-A08,P,vertical feeder branch from BUS-480A through CB-A08 -> DS-A08 -> TB-A08 to load SPARE-A8
+DS-A08,TB-A08,P,vertical feeder branch from BUS-480A through CB-A08 -> DS-A08 -> TB-A08 to load SPARE-A8
+TB-A08,SPARE-A8,P,vertical feeder branch from BUS-480A through CB-A08 -> DS-A08 -> TB-A08 to load SPARE-A8
+BUS-480B,CB-B01,P,vertical feeder branch from BUS-480B through CB-B01 -> DS-B01 -> MS-B01 to load PUMP-CCW-B1
+CB-B01,DS-B01,P,vertical feeder branch from BUS-480B through CB-B01 -> DS-B01 -> MS-B01 to load PUMP-CCW-B1
+DS-B01,MS-B01,P,vertical feeder branch from BUS-480B through CB-B01 -> DS-B01 -> MS-B01 to load PUMP-CCW-B1
+MS-B01,PUMP-CCW-B1,P,vertical feeder branch from BUS-480B through CB-B01 -> DS-B01 -> MS-B01 to load PUMP-CCW-B1
+BUS-480B,CB-B02,P,vertical feeder branch from BUS-480B through CB-B02 -> DS-B02 -> MS-B02 to load PUMP-RHR-B1
+CB-B02,DS-B02,P,vertical feeder branch from BUS-480B through CB-B02 -> DS-B02 -> MS-B02 to load PUMP-RHR-B1
+DS-B02,MS-B02,P,vertical feeder branch from BUS-480B through CB-B02 -> DS-B02 -> MS-B02 to load PUMP-RHR-B1
+MS-B02,PUMP-RHR-B1,P,vertical feeder branch from BUS-480B through CB-B02 -> DS-B02 -> MS-B02 to load PUMP-RHR-B1
+BUS-480B,CB-B03,P,vertical feeder branch from BUS-480B through CB-B03 -> FS-B03 -> MS-B03 to load FAN-FUEL-B1
+CB-B03,FS-B03,P,vertical feeder branch from BUS-480B through CB-B03 -> FS-B03 -> MS-B03 to load FAN-FUEL-B1
+FS-B03,MS-B03,P,vertical feeder branch from BUS-480B through CB-B03 -> FS-B03 -> MS-B03 to load FAN-FUEL-B1
+MS-B03,FAN-FUEL-B1,P,vertical feeder branch from BUS-480B through CB-B03 -> FS-B03 -> MS-B03 to load FAN-FUEL-B1
+BUS-480B,CB-B04,P,vertical feeder branch from BUS-480B through CB-B04 -> DS-B04 -> RY-B04 to load MOV-CCW-B21
+CB-B04,DS-B04,P,vertical feeder branch from BUS-480B through CB-B04 -> DS-B04 -> RY-B04 to load MOV-CCW-B21
+DS-B04,RY-B04,P,vertical feeder branch from BUS-480B through CB-B04 -> DS-B04 -> RY-B04 to load MOV-CCW-B21
+RY-B04,MOV-CCW-B21,P,vertical feeder branch from BUS-480B through CB-B04 -> DS-B04 -> RY-B04 to load MOV-CCW-B21
+BUS-480B,CB-B05,P,vertical feeder branch from BUS-480B through CB-B05 -> DS-B05 -> CP-B05 to load MCC-AUX-B6
+CB-B05,DS-B05,P,vertical feeder branch from BUS-480B through CB-B05 -> DS-B05 -> CP-B05 to load MCC-AUX-B6
+DS-B05,CP-B05,P,vertical feeder branch from BUS-480B through CB-B05 -> DS-B05 -> CP-B05 to load MCC-AUX-B6
+CP-B05,MCC-AUX-B6,P,vertical feeder branch from BUS-480B through CB-B05 -> DS-B05 -> CP-B05 to load MCC-AUX-B6
+BUS-480B,CB-B06,P,vertical feeder branch from BUS-480B through CB-B06 -> DS-B06 -> MS-B06 to load AIR-CMP-B1
+CB-B06,DS-B06,P,vertical feeder branch from BUS-480B through CB-B06 -> DS-B06 -> MS-B06 to load AIR-CMP-B1
+DS-B06,MS-B06,P,vertical feeder branch from BUS-480B through CB-B06 -> DS-B06 -> MS-B06 to load AIR-CMP-B1
+MS-B06,AIR-CMP-B1,P,vertical feeder branch from BUS-480B through CB-B06 -> DS-B06 -> MS-B06 to load AIR-CMP-B1
+BUS-480B,CB-B07,P,vertical feeder branch from BUS-480B through CB-B07 -> FS-B07 -> RY-B07 to load VLV-CHG-B1
+CB-B07,FS-B07,P,vertical feeder branch from BUS-480B through CB-B07 -> FS-B07 -> RY-B07 to load VLV-CHG-B1
+FS-B07,RY-B07,P,vertical feeder branch from BUS-480B through CB-B07 -> FS-B07 -> RY-B07 to load VLV-CHG-B1
+RY-B07,VLV-CHG-B1,P,vertical feeder branch from BUS-480B through CB-B07 -> FS-B07 -> RY-B07 to load VLV-CHG-B1
+BUS-480C,CB-C01,P,vertical feeder branch from BUS-480C through CB-C01 -> DS-C01 -> MS-C01 to load PUMP-HPCI-C1
+CB-C01,DS-C01,P,vertical feeder branch from BUS-480C through CB-C01 -> DS-C01 -> MS-C01 to load PUMP-HPCI-C1
+DS-C01,MS-C01,P,vertical feeder branch from BUS-480C through CB-C01 -> DS-C01 -> MS-C01 to load PUMP-HPCI-C1
+MS-C01,PUMP-HPCI-C1,P,vertical feeder branch from BUS-480C through CB-C01 -> DS-C01 -> MS-C01 to load PUMP-HPCI-C1
+BUS-480C,CB-C02,P,vertical feeder branch from BUS-480C through CB-C02 -> DS-C02 -> MS-C02 to load PUMP-RCW-C1
+CB-C02,DS-C02,P,vertical feeder branch from BUS-480C through CB-C02 -> DS-C02 -> MS-C02 to load PUMP-RCW-C1
+DS-C02,MS-C02,P,vertical feeder branch from BUS-480C through CB-C02 -> DS-C02 -> MS-C02 to load PUMP-RCW-C1
+MS-C02,PUMP-RCW-C1,P,vertical feeder branch from BUS-480C through CB-C02 -> DS-C02 -> MS-C02 to load PUMP-RCW-C1
+BUS-480C,CB-C03,P,vertical feeder branch from BUS-480C through CB-C03 -> FS-C03 -> MS-C03 to load FAN-RB-C1
+CB-C03,FS-C03,P,vertical feeder branch from BUS-480C through CB-C03 -> FS-C03 -> MS-C03 to load FAN-RB-C1
+FS-C03,MS-C03,P,vertical feeder branch from BUS-480C through CB-C03 -> FS-C03 -> MS-C03 to load FAN-RB-C1
+MS-C03,FAN-RB-C1,P,vertical feeder branch from BUS-480C through CB-C03 -> FS-C03 -> MS-C03 to load FAN-RB-C1
+BUS-480C,CB-C04,P,vertical feeder branch from BUS-480C through CB-C04 -> DS-C04 -> RY-C04 to load MOV-RHR-C11
+CB-C04,DS-C04,P,vertical feeder branch from BUS-480C through CB-C04 -> DS-C04 -> RY-C04 to load MOV-RHR-C11
+DS-C04,RY-C04,P,vertical feeder branch from BUS-480C through CB-C04 -> DS-C04 -> RY-C04 to load MOV-RHR-C11
+RY-C04,MOV-RHR-C11,P,vertical feeder branch from BUS-480C through CB-C04 -> DS-C04 -> RY-C04 to load MOV-RHR-C11
+BUS-480C,CB-C05,P,vertical feeder branch from BUS-480C through CB-C05 -> DS-C05 -> MS-C05 to load PUMP-SEAL-C1
+CB-C05,DS-C05,P,vertical feeder branch from BUS-480C through CB-C05 -> DS-C05 -> MS-C05 to load PUMP-SEAL-C1
+DS-C05,MS-C05,P,vertical feeder branch from BUS-480C through CB-C05 -> DS-C05 -> MS-C05 to load PUMP-SEAL-C1
+MS-C05,PUMP-SEAL-C1,P,vertical feeder branch from BUS-480C through CB-C05 -> DS-C05 -> MS-C05 to load PUMP-SEAL-C1
+BUS-480C,CB-C06,P,vertical feeder branch from BUS-480C through CB-C06 -> DS-C06 -> CP-C06 to load PNL-IC-C7
+CB-C06,DS-C06,P,vertical feeder branch from BUS-480C through CB-C06 -> DS-C06 -> CP-C06 to load PNL-IC-C7
+DS-C06,CP-C06,P,vertical feeder branch from BUS-480C through CB-C06 -> DS-C06 -> CP-C06 to load PNL-IC-C7
+CP-C06,PNL-IC-C7,P,vertical feeder branch from BUS-480C through CB-C06 -> DS-C06 -> CP-C06 to load PNL-IC-C7
+BUS-480C,CB-C07,P,vertical feeder branch from BUS-480C through CB-C07 -> FS-C07 -> MS-C07 to load SUMP-PMP-C1
+CB-C07,FS-C07,P,vertical feeder branch from BUS-480C through CB-C07 -> FS-C07 -> MS-C07 to load SUMP-PMP-C1
+FS-C07,MS-C07,P,vertical feeder branch from BUS-480C through CB-C07 -> FS-C07 -> MS-C07 to load SUMP-PMP-C1
+MS-C07,SUMP-PMP-C1,P,vertical feeder branch from BUS-480C through CB-C07 -> FS-C07 -> MS-C07 to load SUMP-PMP-C1
+BUS-480C,CB-C08,P,vertical feeder branch from BUS-480C through CB-C08 -> DS-C08 -> FU-C08 to load HTR-VENT-C2
+CB-C08,DS-C08,P,vertical feeder branch from BUS-480C through CB-C08 -> DS-C08 -> FU-C08 to load HTR-VENT-C2
+DS-C08,FU-C08,P,vertical feeder branch from BUS-480C through CB-C08 -> DS-C08 -> FU-C08 to load HTR-VENT-C2
+FU-C08,HTR-VENT-C2,P,vertical feeder branch from BUS-480C through CB-C08 -> DS-C08 -> FU-C08 to load HTR-VENT-C2
+BUS-480D,CB-D01,P,vertical feeder branch from BUS-480D through CB-D01 -> DS-D01 -> MS-D01 to load PUMP-AFW-D1
+CB-D01,DS-D01,P,vertical feeder branch from BUS-480D through CB-D01 -> DS-D01 -> MS-D01 to load PUMP-AFW-D1
+DS-D01,MS-D01,P,vertical feeder branch from BUS-480D through CB-D01 -> DS-D01 -> MS-D01 to load PUMP-AFW-D1
+MS-D01,PUMP-AFW-D1,P,vertical feeder branch from BUS-480D through CB-D01 -> DS-D01 -> MS-D01 to load PUMP-AFW-D1
+BUS-480D,CB-D02,P,vertical feeder branch from BUS-480D through CB-D02 -> DS-D02 -> MS-D02 to load FAN-CR-D1
+CB-D02,DS-D02,P,vertical feeder branch from BUS-480D through CB-D02 -> DS-D02 -> MS-D02 to load FAN-CR-D1
+DS-D02,MS-D02,P,vertical feeder branch from BUS-480D through CB-D02 -> DS-D02 -> MS-D02 to load FAN-CR-D1
+MS-D02,FAN-CR-D1,P,vertical feeder branch from BUS-480D through CB-D02 -> DS-D02 -> MS-D02 to load FAN-CR-D1
+BUS-480D,CB-D03,P,vertical feeder branch from BUS-480D through CB-D03 -> FS-D03 -> RY-D03 to load MOV-SI-D21
+CB-D03,FS-D03,P,vertical feeder branch from BUS-480D through CB-D03 -> FS-D03 -> RY-D03 to load MOV-SI-D21
+FS-D03,RY-D03,P,vertical feeder branch from BUS-480D through CB-D03 -> FS-D03 -> RY-D03 to load MOV-SI-D21
+RY-D03,MOV-SI-D21,P,vertical feeder branch from BUS-480D through CB-D03 -> FS-D03 -> RY-D03 to load MOV-SI-D21
+BUS-480D,CB-D04,P,vertical feeder branch from BUS-480D through CB-D04 -> DS-D04 -> MS-D04 to load PUMP-LUBE-D1
+CB-D04,DS-D04,P,vertical feeder branch from BUS-480D through CB-D04 -> DS-D04 -> MS-D04 to load PUMP-LUBE-D1
+DS-D04,MS-D04,P,vertical feeder branch from BUS-480D through CB-D04 -> DS-D04 -> MS-D04 to load PUMP-LUBE-D1
+MS-D04,PUMP-LUBE-D1,P,vertical feeder branch from BUS-480D through CB-D04 -> DS-D04 -> MS-D04 to load PUMP-LUBE-D1
+BUS-480D,CB-D05,P,vertical feeder branch from BUS-480D through CB-D05 -> DS-D05 -> CP-D05 to load PNL-ESS-D5
+CB-D05,DS-D05,P,vertical feeder branch from BUS-480D through CB-D05 -> DS-D05 -> CP-D05 to load PNL-ESS-D5
+DS-D05,CP-D05,P,vertical feeder branch from BUS-480D through CB-D05 -> DS-D05 -> CP-D05 to load PNL-ESS-D5
+CP-D05,PNL-ESS-D5,P,vertical feeder branch from BUS-480D through CB-D05 -> DS-D05 -> CP-D05 to load PNL-ESS-D5
+BUS-480D,CB-D06,P,vertical feeder branch from BUS-480D through CB-D06 -> DS-D06 -> MS-D06 to load COMP-AIR-D1
+CB-D06,DS-D06,P,vertical feeder branch from BUS-480D through CB-D06 -> DS-D06 -> MS-D06 to load COMP-AIR-D1
+DS-D06,MS-D06,P,vertical feeder branch from BUS-480D through CB-D06 -> DS-D06 -> MS-D06 to load COMP-AIR-D1
+MS-D06,COMP-AIR-D1,P,vertical feeder branch from BUS-480D through CB-D06 -> DS-D06 -> MS-D06 to load COMP-AIR-D1
+BUS-480D,CB-D07,P,vertical feeder branch from BUS-480D through CB-D07 -> FS-D07 -> TB-D07 to load SPARE-D7
+CB-D07,FS-D07,P,vertical feeder branch from BUS-480D through CB-D07 -> FS-D07 -> TB-D07 to load SPARE-D7
+FS-D07,TB-D07,P,vertical feeder branch from BUS-480D through CB-D07 -> FS-D07 -> TB-D07 to load SPARE-D7
+TB-D07,SPARE-D7,P,vertical feeder branch from BUS-480D through CB-D07 -> FS-D07 -> TB-D07 to load SPARE-D7
+BUS-480B,CHG-125A,P,heavy feeder from BUS-480B drops to Train A charger
+CHG-125A,REC-125A,DC,solid Train A DC power chain
+REC-125A,CB-DC-A,DC,solid Train A DC power chain
+CB-DC-A,BUS-125A,DC,CB-DC-A vertical line lands on BUS-125A dot
+BAT-125A,BUS-125A,DC,battery branch lands on BUS-125A
+BUS-125A,GND-DC-A,GND,ground branch from BUS-125A
+BUS-125A,INV-120A,DC,BUS-125A line continues to INV-120A
+INV-120A,UPS-120A,CTRL,dashed link from inverter to UPS
+UPS-120A,BUS-120A,P,UPS vertical feeder lands on BUS-120A
+BUS-120A,RPS-PNL-A,P,RPS-PNL-A vertical feeder lands on BUS-120A
+RPS-PNL-A,PLC-RPS-A,SIG,dashed signal line from RPS panel to PLC
+RELAY-K102,JB-RPS-A,SIG,upper dashed harness continues to JB-RPS-A
+RELAY-K102,PNL-ANN-A,SIG,dashed branch from RELAY-K102 path drops to annunciator
+RELAY-K104,PNL-ANN-A,SIG,lower dashed harness branches to annunciator
+BUS-480C,CHG-125B,P,heavy feeder from BUS-480C drops to Train B charger
+CHG-125B,REC-125B,DC,solid Train B DC power chain
+REC-125B,CB-DC-B,DC,solid Train B DC power chain
+CB-DC-B,BUS-125B,DC,CB-DC-B vertical line lands on BUS-125B dot
+BAT-125B,BUS-125B,DC,battery branch lands on BUS-125B
+BUS-125B,GND-DC-B,GND,ground branch from BUS-125B
+BUS-125B,INV-120B,DC,BUS-125B line continues to INV-120B
+INV-120B,UPS-120B,CTRL,dashed link from inverter to UPS
+UPS-120B,BUS-120B,P,UPS vertical feeder lands on BUS-120B
+BUS-120B,RPS-PNL-B,P,RPS-PNL-B vertical feeder lands on BUS-120B
+RPS-PNL-B,PLC-RPS-B,SIG,dashed signal line from RPS panel to PLC
+RELAY-K202,JB-RPS-B,SIG,upper dashed harness continues to JB-RPS-B
+RELAY-K202,PNL-ANN-B,SIG,dashed branch from RELAY-K202 path drops to annunciator
+RELAY-K204,PNL-ANN-B,SIG,lower dashed harness branches to annunciator
+BUS-MAIN-230,TR-SAT-1A,P,Diego R1 high-recall label read for switchyard bus
+BUS-MAIN-230,TR-SAT-1B,P,Diego R1 high-recall label read for switchyard bus
+PLC-RPS-A,RELAY-K101,SIG,Diego R1 broad dashed RPS fan-out
+PLC-RPS-A,RELAY-K102,SIG,Diego R1 broad dashed RPS fan-out
+PLC-RPS-A,RELAY-K103,SIG,Diego R1 broad dashed RPS fan-out
+PLC-RPS-A,RELAY-K104,SIG,Diego R1 broad dashed RPS fan-out
+PLC-RPS-B,RELAY-K201,SIG,Diego R1 broad dashed RPS fan-out
+PLC-RPS-B,RELAY-K202,SIG,Diego R1 broad dashed RPS fan-out
+PLC-RPS-B,RELAY-K203,SIG,Diego R1 broad dashed RPS fan-out
+PLC-RPS-B,RELAY-K204,SIG,Diego R1 broad dashed RPS fan-out

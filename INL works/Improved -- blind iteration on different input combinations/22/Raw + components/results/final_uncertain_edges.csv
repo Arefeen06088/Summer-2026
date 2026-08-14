@@ -1,0 +1,14 @@
+source,target,reason,kind
+BUS-480-A 480V LOAD CENTER A,CB-DC-A1,"Lower raw DC/UPS crops show CB-DC-A1 fed by an upstream solid AC feeder into CHGR-125A, but the source is not visually labeled as BUS-480-A at the connection point; the asserted matrix keeps only AC FEED TO CHGR-125A -> CB-DC-A1.",power
+BUS-480-B 480V LOAD CENTER B,CB-DC-B1,"Lower raw DC/UPS crops show CB-DC-B1 fed by an upstream solid AC feeder into CHGR-125B, but the source is not visually labeled as BUS-480-B at the connection point; the asserted matrix keeps only AC FEED TO CHGR-125B -> CB-DC-B1.",power
+XFMR-PT-1,BUS-UPS-B 120 VAC UPS BUS B,"XFMR-PT-1 is in the B-side control-power area, but the visible instrument/dashed loop drops to METER-V01 and METER-A01; no direct landing on BUS-UPS-B is shown.",instrument
+SOL-SDV-A,DIODE-OR-A,"A-side raw crop shows SOL-SDV-A tied by dashed control wiring to DC-MCC-A, while DIODE-OR-A is separately tied by solid wiring to BUS-125A at a bus dot; no continuous solid or dashed segment joins the two symbols.",dc
+SOL-SDV-B,DIODE-OR-B,"B-side raw crop shows SOL-SDV-B on a dashed control lead from DC-MCC-B; DIODE-OR-B is separately shown on a solid tap to BUS-125B, with no visible solenoid-to-diode segment.",dc
+INST-CT-A,CB-RHR-A,"INST-CT-A is drawn adjacent to and apparently sensing the RHR feeder, but the exact dotted/instrument endpoint at CB-RHR-A is not explicit enough to assert as a matrix edge.",instrument
+INST-CT-B,CB-RHR-B,"INST-CT-B is drawn adjacent to and apparently sensing the RHR feeder, but the exact dotted/instrument endpoint at CB-RHR-B is not explicit enough to assert as a matrix edge.",instrument
+INST-CT-C,CB-RHR-C,"INST-CT-C is drawn adjacent to and apparently sensing the RHR feeder, but the exact dotted/instrument endpoint at CB-RHR-C is not explicit enough to assert as a matrix edge.",instrument
+INST-CT-D,CB-RHR-D,"INST-CT-D is drawn adjacent to and apparently sensing the RHR feeder, but the exact dotted/instrument endpoint at CB-RHR-D is not explicit enough to assert as a matrix edge.",instrument
+PNL-120-A,PUMP-SI-A,"A vertical dashed control route passes through the SI branch area, but the reliable endpoint remains the CB-SI-A/panel control path; no direct landing on the PUMP-SI-A symbol is shown.",control
+PNL-120-B,PUMP-SI-B,"A vertical dashed control route passes through the SI branch area, but the reliable endpoint remains the CB-SI-B/panel control path; no direct landing on the PUMP-SI-B symbol is shown.",control
+PNL-120-C,PUMP-SI-C,"A vertical dashed control route passes through the SI branch area, but the reliable endpoint remains the CB-SI-C/panel control path; no direct landing on the PUMP-SI-C symbol is shown.",control
+PNL-120-D,PUMP-SI-D,"A vertical dashed control route passes through the SI branch area, but the reliable endpoint remains the CB-SI-D/panel control path; no direct landing on the PUMP-SI-D symbol is shown.",control

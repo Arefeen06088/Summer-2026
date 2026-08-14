@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 19
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\19\connectivity_matrix_v3.csv
+GT normalized nodes: 200; GT normalized edges: 200
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from jennifer_round1_matrix.csv with Precision=0.970000, Recall=0.970000, F1=0.970000
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=194, FP=6, FN=6, Precision=0.970000, Recall=0.970000, F1=0.970000
+Primary issue: extra/misnamed/intermediate extracted nodes created false-positive edges.
+
+Extra/non-GT nodes most responsible for FP edges: [LS-MOV601] (2 FP edges); OFFSITE GRID-1 (1 FP edges); OFFSITE GRID-2 (1 FP edges).
+Missing GT nodes examples: GRID-1; GRID-2; LS-MOV601.
+Close-but-not-exact name examples: [LS-MOV601] -> LS-MOV601 (0.90).
+False-positive edge examples among GT-known nodes: BAT-125A -- CHGR-125A; BAT-125B -- CHGR-125B.
+False-negative edge examples among GT-known nodes: BUS-125DC-A -- CHGR-125A; BUS-125DC-B -- CHGR-125B.
+False-positive examples involving extra/non-GT nodes: DS-101 -- OFFSITE GRID-1; DS-102 -- OFFSITE GRID-2; JB-601 -- [LS-MOV601]; VALVE-MOV601 -- [LS-MOV601].
+False-negative examples involving missing/differently named nodes: DS-101 -- GRID-1; DS-102 -- GRID-2; JB-601 -- LS-MOV601; LS-MOV601 -- VALVE-MOV601.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included ([LS-MOV601]; OFFSITE GRID-1; OFFSITE GRID-2), the final-row metrics would be TP=194, FP=2, FN=6, Precision=0.989796, Recall=0.970000, F1=0.979798.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=194, FP=2, FN=6, Precision=0.989796, Recall=0.970000, F1=0.979798.

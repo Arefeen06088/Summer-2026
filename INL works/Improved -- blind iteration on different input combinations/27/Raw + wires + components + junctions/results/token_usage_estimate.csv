@@ -1,0 +1,7 @@
+document,iteration,round,agent,model_call,input_tokens_est_low,input_tokens_est_expected,input_tokens_est_high,cached_input_tokens,image_file_input_tokens_est,output_tokens_est_low,output_tokens_est_expected,output_tokens_est_high,reasoning_tokens,usage_object_available,notes
+27,1,main_setup_visual_inspection,Main,"resource inventory, crop generation, visual inspection",9000,13000,18000,not exposed,9800,1000,1800,3200,not exposed,no,Local crop generation and model visual inspection; no OCR or GT/validation files.
+27,1,round_01_diego,Diego,high-recall extraction,9500,13000,17000,not exposed,12155,3800,5600,8000,not exposed,no,Subagent usage object not exposed by tool.
+27,1,round_02_jennifer,Jennifer,precision review/refinement,13000,18000,24000,not exposed,9265,2400,3600,5200,not exposed,no,Includes Diego proposal text plus visual resources.
+27,1,round_03_diego,Diego,convergence check after Jennifer correction,800,1200,1700,not exposed,0,250,450,800,not exposed,no,Text-only follow-up in same subagent context.
+27,1,round_04_jennifer,Jennifer,final sign-off,500,800,1200,not exposed,0,100,250,500,not exposed,no,Text-only final confirmation.
+27,1,main_write_verify,Main,"artifact writing, verification, final response",4500,7000,11000,not exposed,0,500,1100,1800,not exposed,no,No API key for Responses input-token counting endpoint.

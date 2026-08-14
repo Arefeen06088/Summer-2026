@@ -1,0 +1,7 @@
+timestamp,case,round,agent,role,approx_prompt_tokens,approx_completion_tokens,matrix_nodes,matrix_edges,output_artifact,notes
+2026-07-14T04:03:12,17,local,main,inventory/crops/local inspection,1500,260,199,199,codes/crops,Approximate tokens; exact tool token accounting unavailable
+2026-07-14T04:03:12,17,round_01,Diego,high-recall extraction,4700,3300,203,203,round_01_diego_matrix.csv,Broad extraction with wireway and recorder-tail candidates
+2026-07-14T04:03:12,17,round_02,Jennifer,precision review,5400,1700,199,199,round_02_jennifer_matrix.csv,Removed routing annotations and unsupported recorder tails
+2026-07-14T04:03:12,17,round_03,Diego,saturation check,900,180,199,199,round_03_diego_saturation_matrix.csv,Agreed with Jennifer corrections
+2026-07-14T04:03:12,17,round_04,Jennifer,final confirmation,380,150,199,199,round_04_jennifer_final_matrix.csv,Removed edge-free visible components from final node list
+2026-07-14T04:03:12,17,local,main,artifact generation/validation,1200,200,199,199,final_connectivity_matrix.csv,"Symmetric matrix, zero diagonal"

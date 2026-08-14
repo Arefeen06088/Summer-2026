@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 19
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\19\connectivity_matrix_v3.csv
+GT normalized nodes: 200; GT normalized edges: 200
+Matrices evaluated: 5
+Best row: Diego -- Round 1 from diego_round_1_connectivity_matrix.csv with Precision=0.969697, Recall=0.960000, F1=0.964824
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=192, FP=10, FN=8, Precision=0.950495, Recall=0.960000, F1=0.955224
+Primary issue: extra/misnamed/intermediate extracted nodes created false-positive edges.
+
+Extra/non-GT nodes most responsible for FP edges: UNLABELED-480-CP-A (3 FP edges); UNLABELED-480-CP-B (3 FP edges); OFFSITE GRID-1 (1 FP edges); OFFSITE GRID-2 (1 FP edges).
+Missing GT nodes examples: GRID-1; GRID-2.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: BAT-125A -- CHGR-125A; BAT-125B -- CHGR-125B.
+False-negative edge examples among GT-known nodes: BUS-125DC-A -- CHGR-125A; BUS-125DC-B -- CHGR-125B; BUS-480-A -- CB-301; BUS-480-A -- CHGR-125A; BUS-480-B -- CB-302; BUS-480-B -- CHGR-125B.
+False-positive examples involving extra/non-GT nodes: BUS-480-A -- UNLABELED-480-CP-A; BUS-480-B -- UNLABELED-480-CP-B; CB-301 -- UNLABELED-480-CP-A; CB-302 -- UNLABELED-480-CP-B; CHGR-125A -- UNLABELED-480-CP-A; CHGR-125B -- UNLABELED-480-CP-B; DS-101 -- OFFSITE GRID-1; DS-102 -- OFFSITE GRID-2.
+False-negative examples involving missing/differently named nodes: DS-101 -- GRID-1; DS-102 -- GRID-2.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (UNLABELED-480-CP-A; UNLABELED-480-CP-B; OFFSITE GRID-1; OFFSITE GRID-2), the final-row metrics would be TP=192, FP=2, FN=8, Precision=0.989691, Recall=0.960000, F1=0.974619.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=192, FP=2, FN=8, Precision=0.989691, Recall=0.960000, F1=0.974619.

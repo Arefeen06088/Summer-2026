@@ -1,0 +1,7 @@
+document,iteration,round,call_id,actor,input_tokens_est,cached_input_tokens_est,text_input_tokens_est,image_file_count,image_input_tokens_est,output_tokens_low_est,output_tokens_expected_est,output_tokens_high_est,reasoning_tokens_est,total_low_tokens_est,total_expected_tokens_est,total_high_tokens_est,usage_object_available,notes
+25,1,setup,main-setup,main,2400,0,2400,0,0,700,1200,1900,900,4000,4500,5200,no,"Main setup, crop generation, Diego spawn."
+25,1,1,diego-r1,Diego,21010,0,1800,22,19210,2600,4300,6500,1600,25210,26910,29110,no,High-recall visual extraction.
+25,1,2,jennifer-r2,Jennifer,24960,0,6600,20,18360,2200,3600,5400,1200,28360,29760,31560,no,Precision review with Diego proposal.
+25,1,3,diego-r3,Diego,4700,0,4700,0,0,300,800,1600,450,5450,5950,6750,no,Convergence review.
+25,1,4,jennifer-r4,Jennifer,180,0,180,0,0,250,650,1300,350,780,1180,1830,no,Final confirmation.
+25,1,write/final,main-artifacts-final,main,2000,0,2000,0,0,700,1300,2300,1200,3900,4500,5500,no,Artifact writing and final response.

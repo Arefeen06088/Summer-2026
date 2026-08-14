@@ -1,0 +1,205 @@
+from,to,evidence
+GEN-UT,CB-101,solid utility generator feed to 4.16 kV bus A
+CB-101,DS-101A,solid utility generator feed to 4.16 kV bus A
+DS-101A,TR-UAT1,solid utility generator feed to 4.16 kV bus A
+TR-UAT1,CB-201A,solid utility generator feed to 4.16 kV bus A
+CB-201A,BUS-201A,solid utility generator feed to 4.16 kV bus A
+GEN-UT,CB-102,solid utility generator feed to 4.16 kV bus B
+CB-102,DS-101B,solid utility generator feed to 4.16 kV bus B
+DS-101B,TR-UAT2,solid utility generator feed to 4.16 kV bus B
+TR-UAT2,CB-201B,solid utility generator feed to 4.16 kV bus B
+CB-201B,BUS-201B,solid utility generator feed to 4.16 kV bus B
+BUS-101,CB-103,solid startup feed to non-1E bus A
+CB-103,DS-102A,solid startup feed to non-1E bus A
+DS-102A,TR-SU1,solid startup feed to non-1E bus A
+TR-SU1,CB-202A,solid startup feed to non-1E bus A
+CB-202A,BUS-202A,solid startup feed to non-1E bus A
+BUS-102,CB-104,solid startup feed to non-1E bus B
+CB-104,DS-102B,solid startup feed to non-1E bus B
+DS-102B,TR-SU2,solid startup feed to non-1E bus B
+TR-SU2,CB-202B,solid startup feed to non-1E bus B
+CB-202B,BUS-202B,solid startup feed to non-1E bus B
+BUS-201A,DS-201A,solid EDG-1A feeder
+DS-201A,CB-105,solid EDG-1A feeder
+CB-105,EDG-1A,solid EDG-1A feeder
+BUS-201B,CB-204A,solid EDG-1B feeder
+CB-204A,DS-201B,solid EDG-1B feeder
+DS-201B,CB-106,solid EDG-1B feeder
+CB-106,EDG-1B,solid EDG-1B feeder
+BUS-202A,UCB-202A-EDG2A,solid EDG-2A feeder with unreadable breaker tag
+UCB-202A-EDG2A,DS-202A,solid EDG-2A feeder with unreadable breaker tag
+DS-202A,CB-203A,solid EDG-2A feeder with unreadable breaker tag
+CB-203A,EDG-2A,solid EDG-2A feeder with unreadable breaker tag
+BUS-202B,DS-202B,solid EDG-2B feeder
+DS-202B,CB-203B,solid EDG-2B feeder
+CB-203B,EDG-2B,solid EDG-2B feeder
+BUS-201A,CB-301A,solid 4.16 kV to Train A load center A1
+CB-301A,DS-301A,solid 4.16 kV to Train A load center A1
+DS-301A,TR-SA,solid 4.16 kV to Train A load center A1
+TR-SA,CB-501A,solid 4.16 kV to Train A load center A1
+CB-501A,BUS-301A,solid 4.16 kV to Train A load center A1
+BUS-202A,CB-302A,solid 4.16 kV to Train A MCC bus A2
+CB-302A,DS-302A,solid 4.16 kV to Train A MCC bus A2
+DS-302A,TR-NA,solid 4.16 kV to Train A MCC bus A2
+TR-NA,CB-502A,solid 4.16 kV to Train A MCC bus A2
+CB-502A,BUS-302A,solid 4.16 kV to Train A MCC bus A2
+BUS-201B,CB-301B,solid 4.16 kV to Train B load center B1
+CB-301B,DS-301B,solid 4.16 kV to Train B load center B1
+DS-301B,TR-SB,solid 4.16 kV to Train B load center B1
+TR-SB,CB-501B,solid 4.16 kV to Train B load center B1
+CB-501B,BUS-301B,solid 4.16 kV to Train B load center B1
+BUS-202B,CB-302B,"solid 4.16 kV to Train B MCC bus B2, reviewer-corrected visual order"
+CB-302B,DS-302B,"solid 4.16 kV to Train B MCC bus B2, reviewer-corrected visual order"
+DS-302B,CB-502B,"solid 4.16 kV to Train B MCC bus B2, reviewer-corrected visual order"
+CB-502B,TR-NB,"solid 4.16 kV to Train B MCC bus B2, reviewer-corrected visual order"
+TR-NB,BUS-302B,"solid 4.16 kV to Train B MCC bus B2, reviewer-corrected visual order"
+BUS-301A,CB-303A,solid feeder to MCC-1A
+CB-303A,MCC-1A,solid feeder to MCC-1A
+BUS-301A,CB-304A,solid feeder to MCC-2A
+CB-304A,MCC-2A,solid feeder to MCC-2A
+BUS-302A,CB-503A,solid feeder to MCC-3A
+CB-503A,MCC-3A,solid feeder to MCC-3A
+BUS-301B,CB-303B,solid feeder to MCC-1B
+CB-303B,MCC-1B,solid feeder to MCC-1B
+BUS-301B,CB-304B,solid feeder to MCC-2B
+CB-304B,MCC-2B,solid feeder to MCC-2B
+BUS-302B,CB-503B,solid feeder to MCC-3B
+CB-503B,MCC-3B,solid feeder to MCC-3B
+BUS-301A,GND-1,ground tap from BUS-301A
+MCC-3A,GND-5,ground tap from MCC-3A
+BUS-301B,GND-2,ground tap from BUS-301B
+MCC-3B,GND-6,ground tap from MCC-3B
+MCC-1A,MOTOR-SI101A,solid MCC-1A load branches
+MCC-1A,PUMP-SI101A,solid MCC-1A load branches
+MCC-1A,MOTOR-CCW101A,solid MCC-1A load branches
+MCC-1A,PUMP-CCW101A,solid MCC-1A load branches
+MCC-1A,VLV-8801A,solid MCC-1A load branches
+MCC-2A,MOTOR-AFW101A,solid MCC-2A load branches
+MCC-2A,PUMP-AFW101A,solid MCC-2A load branches
+MCC-2A,MOTOR-RHR101A,solid MCC-2A load branches
+MCC-2A,PUMP-RHR101A,solid MCC-2A load branches
+MCC-2A,VLV-8802A,solid MCC-2A load branches
+MCC-3A,MOTOR-SW101A,solid MCC-3A load branches
+MCC-3A,PUMP-SW101A,solid MCC-3A load branches
+MCC-3A,MOTOR-CHG101A,solid MCC-3A load branches
+MCC-3A,PUMP-CHG101A,solid MCC-3A load branches
+MCC-3A,MOTOR-FAN101A,solid MCC-3A load branches
+MCC-3A,VLV-8901A,solid MCC-3A load branches
+MCC-1B,MOTOR-SI101B,solid MCC-1B load branches
+MCC-1B,PUMP-SI101B,solid MCC-1B load branches
+MCC-1B,MOTOR-CCW101B,solid MCC-1B load branches
+MCC-1B,PUMP-CCW101B,solid MCC-1B load branches
+MCC-1B,VLV-8801B,solid MCC-1B load branches
+MCC-2B,MOTOR-AFW101B,solid MCC-2B load branches
+MCC-2B,PUMP-AFW101B,solid MCC-2B load branches
+MCC-2B,MOTOR-RHR101B,solid MCC-2B load branches
+MCC-2B,PUMP-RHR101B,solid MCC-2B load branches
+MCC-2B,VLV-8802B,solid MCC-2B load branches
+MCC-3B,MOTOR-SW101B,solid MCC-3B load branches
+MCC-3B,PUMP-SW101B,solid MCC-3B load branches
+MCC-3B,MOTOR-CHG101B,solid MCC-3B load branches
+MCC-3B,PUMP-CHG101B,solid MCC-3B load branches
+MCC-3B,MOTOR-FAN101B,solid MCC-3B load branches
+MCC-3B,VLV-8901B,solid MCC-3B load branches
+BUS-301A,DS-401A,solid Train A 125 VDC supply
+DS-401A,TR-DC-A,solid Train A 125 VDC supply
+TR-DC-A,RECT-125A,solid Train A 125 VDC supply
+RECT-125A,BUS-401A,solid Train A 125 VDC supply
+BUS-301B,DS-401B,solid Train B 125 VDC supply
+DS-401B,TR-DC-B,solid Train B 125 VDC supply
+TR-DC-B,RECT-125B,solid Train B 125 VDC supply
+RECT-125B,BUS-401B,solid Train B 125 VDC supply
+BUS-302A,DS-402A,solid inverter supply to 120 VAC instrument bus A
+DS-402A,TR-INV-A,solid inverter supply to 120 VAC instrument bus A
+TR-INV-A,INV-120C,solid inverter supply to 120 VAC instrument bus A
+INV-120C,BUS-501A,solid inverter supply to 120 VAC instrument bus A
+BUS-302B,DS-402B,solid supply to 120 VAC instrument bus B
+DS-402B,TR-INV-B,solid supply to 120 VAC instrument bus B
+TR-INV-B,RECT-24C,solid supply to 120 VAC instrument bus B
+RECT-24C,BUS-501B,solid supply to 120 VAC instrument bus B
+BUS-401A,BAT-1A,125 VDC bus A taps
+BUS-401A,BAT-2A,125 VDC bus A taps
+BUS-401A,GND-3,125 VDC bus A taps
+BUS-401A,INV-120A,125 VDC bus A taps
+INV-120A,BUS-501A,solid DC/AC output to 120 VAC bus A
+BUS-401B,BAT-1B,125 VDC bus B taps
+BUS-401B,BAT-2B,125 VDC bus B taps
+BUS-401B,GND-4,125 VDC bus B taps
+BUS-401B,INV-120B,125 VDC bus B taps
+INV-120B,BUS-501B,solid DC/AC output to 120 VAC bus B
+BUS-501A,CP-SWGR,dashed control taps from 120 VAC bus A
+BUS-501A,CP-SI-A,dashed control taps from 120 VAC bus A
+BUS-501A,CP-CCW-A,dashed control taps from 120 VAC bus A
+BUS-501A,CP-EDG-A,dashed control taps from 120 VAC bus A
+BUS-501A,RPS-A,dashed control taps from 120 VAC bus A
+BUS-501A,ESFAS-A,dashed control taps from 120 VAC bus A
+BUS-501B,CP-SI-B,dashed control taps from 120 VAC bus B
+BUS-501B,CP-CCW-B,dashed control taps from 120 VAC bus B
+BUS-501B,CP-EDG-B,dashed control taps from 120 VAC bus B
+BUS-501B,RPS-B,dashed control taps from 120 VAC bus B
+BUS-501B,ESFAS-B,dashed control taps from 120 VAC bus B
+CP-SWGR,CP-SI-A,dashed vertical control connection
+CP-SI-A,K101,dashed CP-SI-A control rung
+K101,K102,dashed CP-SI-A control rung
+K102,K103,dashed CP-SI-A control rung
+K103,JB-101,dashed CP-SI-A control rung
+CP-SI-B,K104,dashed CP-SI-B control rung
+K104,K105,dashed CP-SI-B control rung
+K105,K106,dashed CP-SI-B control rung
+K106,JB-102,dashed CP-SI-B control rung
+CP-CCW-A,K107,dashed CP-CCW-A control rung
+K107,K108,dashed CP-CCW-A control rung
+K108,K109,dashed CP-CCW-A control rung
+K109,JB-103,dashed CP-CCW-A control rung
+CP-CCW-B,K110,dashed CP-CCW-B control rung
+K110,K111,dashed CP-CCW-B control rung
+K111,K112,dashed CP-CCW-B control rung
+K112,JB-104,dashed CP-CCW-B control rung
+CP-EDG-A,K113,dashed CP-EDG-A control rung
+K113,K114,dashed CP-EDG-A control rung
+K114,K115,dashed CP-EDG-A control rung
+K115,JB-105,dashed CP-EDG-A control rung
+CP-EDG-B,K116,dashed CP-EDG-B control rung
+K116,K117,dashed CP-EDG-B control rung
+K117,K118,dashed CP-EDG-B control rung
+K118,JB-106,dashed CP-EDG-B control rung
+RPS-A,K119,dashed RPS-A control rung
+K119,K120,dashed RPS-A control rung
+K120,K121,dashed RPS-A control rung
+K121,JB-107,dashed RPS-A control rung
+RPS-B,K122,dashed RPS-B control rung
+K122,K123,dashed RPS-B control rung
+K123,K124,dashed RPS-B control rung
+K124,JB-108,dashed RPS-B control rung
+ESFAS-A,K125,dashed ESFAS-A control rung
+K125,K126,dashed ESFAS-A control rung
+K126,K127,dashed ESFAS-A control rung
+K127,JB-109,dashed ESFAS-A control rung
+ESFAS-B,K128,dashed ESFAS-B control rung
+K128,K129,dashed ESFAS-B control rung
+K129,K130,dashed ESFAS-B control rung
+K130,JB-110,dashed ESFAS-B control rung
+JB-101,PT101,dotted signal from JB-101
+PT101,PT102,dotted signal from JB-101
+JB-102,PT103,dotted signal from JB-102
+PT103,FT201,dotted signal from JB-102
+JB-103,FT202,dotted signal from JB-103
+FT202,LT301,dotted signal from JB-103
+JB-104,LT302,dotted signal from JB-104
+LT302,TT401,dotted signal from JB-104
+JB-105,TT402,dotted signal from JB-105
+TT402,CT501,dotted signal from JB-105
+JB-106,CT502,dotted signal from JB-106
+JB-107,VT601,dotted signal from JB-107
+JB-108,VT602,dotted signal from JB-108
+JB-109,ZS701,dotted signal from JB-109
+JB-110,ZS702,dotted signal from JB-110
+BUS-501A,BUS-501B,visible normally-open tie between 120 VAC buses
+K101,UVLS-A,UVLS-A branch tap on K101 rung
+K101,UVLS-B,UVLS-B branch tap on K101 rung
+CP-EDG-A,CP-EDG-B,dashed control-spine adjacency
+CP-EDG-B,RPS-A,dashed control-spine adjacency
+RPS-A,RPS-B,dashed control-spine adjacency
+RPS-B,ESFAS-A,dashed control-spine adjacency
+ESFAS-A,ESFAS-B,dashed control-spine adjacency
+ESFAS-B,CP-CRD,dashed control-spine adjacency

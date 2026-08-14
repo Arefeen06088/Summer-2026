@@ -1,0 +1,28 @@
+Connectivity matrix validation summary - Document 20 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\20\synthetic_npp_connectivity_matrix_v3_label_clearance.csv
+GT after normalization: 202 undirected edges across 200 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token usage was not available in local tracking files.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=202, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+- Main reason score is below perfect: perfect exact normalized match.
+- Extracted components: 200; extra/non-GT names: 0; missing GT component names: 0.
+
+Counterfactual performance insights:
+- No counterfactual repair is needed for the final row because it is a perfect exact match.
+
+Best evaluated row: Jennifer -- Round 2 with F1=1.000000.
+
+Round-specific notes:
+- Diego -- Round 1: TP=201, FP=4, FN=1, F1=0.987715; extra nodes=3, missing GT nodes=0. FP examples: A/B ESF INTERLOCK -- RELAY-K106; A/B ESF INTERLOCK -- RELAY-K108; INV-UPS-A -- UPS-A AC OUTPUT; INV-UPS-B -- UPS-B AC OUTPUT. FN examples: RELAY-K106 -- RELAY-K108.
+- Jennifer -- Round 2: TP=202, FP=0, FN=0, F1=1.000000; extra nodes=0, missing GT nodes=0.
+- Diego -- Round 3: TP=202, FP=0, FN=0, F1=1.000000; extra nodes=0, missing GT nodes=0.
+- Jennifer -- Round 4: TP=202, FP=0, FN=0, F1=1.000000; extra nodes=0, missing GT nodes=0.
+- Final connectivity -- Final: TP=202, FP=0, FN=0, F1=1.000000; extra nodes=0, missing GT nodes=0.

@@ -1,0 +1,1695 @@
+{
+  "document": "22",
+  "iteration": "1",
+  "round": "jennifer_round2_final",
+  "agent": "Jennifer",
+  "final_status": "saturation_agreement",
+  "asserted_edges": [
+    {
+      "source": "GEN-G01",
+      "target": "GSU-T01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid source-detail line runs from GEN-G01 generator circle into GSU-T01 transformer symbol."
+    },
+    {
+      "source": "GSU-T01",
+      "target": "13.8KV SOURCE/SWYD LINE",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid line exits GSU-T01 and continues as the upper source/switchyard line feeding the aux-bus breakers."
+    },
+    {
+      "source": "SWYD-345",
+      "target": "13.8KV SOURCE/SWYD LINE",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "SWYD-345 switchyard symbol is drawn inline on the same solid upper source conductor."
+    },
+    {
+      "source": "13.8KV SOURCE/SWYD LINE",
+      "target": "CB-13A1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Vertical solid feeder from the upper source line enters breaker CB-13A1."
+    },
+    {
+      "source": "CB-13A1",
+      "target": "BUS-13A 13.8 KV AUX BUS A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Breaker CB-13A1 has a vertical solid drop to a dotted tap on BUS-13A."
+    },
+    {
+      "source": "BUS-13A 13.8 KV AUX BUS A",
+      "target": "CB-13T",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "BUS-13A thick conductor reaches the left terminal dot of tie breaker CB-13T."
+    },
+    {
+      "source": "CB-13T",
+      "target": "BUS-13B 13.8 KV AUX BUS B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Tie breaker CB-13T right terminal connects by solid line to BUS-13B."
+    },
+    {
+      "source": "13.8KV SOURCE/SWYD LINE",
+      "target": "CB-13B1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Vertical solid feeder from the upper source line enters breaker CB-13B1."
+    },
+    {
+      "source": "CB-13B1",
+      "target": "BUS-13B 13.8 KV AUX BUS B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Breaker CB-13B1 has a vertical solid drop to a dotted tap on BUS-13B."
+    },
+    {
+      "source": "BUS-13A 13.8 KV AUX BUS A",
+      "target": "RELAY-87U",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "Dashed C-031 control lead originates at a dotted tap on BUS-13A and descends to RELAY-87U."
+    },
+    {
+      "source": "RELAY-87U",
+      "target": "CB-4B-IN",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "Dashed control lead leaves RELAY-87U and terminates at breaker CB-4B-IN."
+    },
+    {
+      "source": "BUS-13A 13.8 KV AUX BUS A",
+      "target": "AUX-XFMR-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from BUS-13A 13.8 KV AUX BUS A feeds transformer AUX-XFMR-1A."
+    },
+    {
+      "source": "AUX-XFMR-1A",
+      "target": "CB-4A-IN",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor continues from AUX-XFMR-1A to incoming breaker CB-4A-IN."
+    },
+    {
+      "source": "CB-4A-IN",
+      "target": "BUS-4160-A 4160V SAFETY BUS 1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Incoming breaker CB-4A-IN lands on a dotted tap of BUS-4160-A 4160V SAFETY BUS 1A."
+    },
+    {
+      "source": "DG-1A",
+      "target": "CB-DG-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid diesel-generator feeder from DG-1A enters breaker CB-DG-A."
+    },
+    {
+      "source": "CB-DG-A",
+      "target": "BUS-4160-A 4160V SAFETY BUS 1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Breaker CB-DG-A connects by solid conductor to a dotted tap on BUS-4160-A 4160V SAFETY BUS 1A."
+    },
+    {
+      "source": "BUS-4160-A 4160V SAFETY BUS 1A",
+      "target": "CB-4AB-TIE",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid 4160 V bus conductor reaches the left terminal dot of CB-4AB-TIE."
+    },
+    {
+      "source": "CB-4AB-TIE",
+      "target": "BUS-4160-B 4160V SAFETY BUS 1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "CB-4AB-TIE right terminal connects by solid conductor to BUS-4160-B."
+    },
+    {
+      "source": "SYNC-PNL-1",
+      "target": "BUS-4160-A 4160V SAFETY BUS 1A",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "Dashed C-030/control lead from SYNC-PNL-1 reaches a dotted tap at the left side of BUS-4160-A."
+    },
+    {
+      "source": "SYNC-PNL-1",
+      "target": "CB-DG-A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control line from SYNC-PNL-1 routes upward/right into the CB-DG-A breaker area."
+    },
+    {
+      "source": "BUS-4160-A 4160V SAFETY BUS 1A",
+      "target": "CB-LC-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Vertical solid feeder drops from BUS-4160-A 4160V SAFETY BUS 1A into load-center breaker CB-LC-A."
+    },
+    {
+      "source": "CB-LC-A",
+      "target": "TR-LC-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid conductor connects breaker CB-LC-A to transformer TR-LC-A."
+    },
+    {
+      "source": "TR-LC-A",
+      "target": "BUS-480-A 480V LOAD CENTER A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid conductor exits transformer TR-LC-A and lands on BUS-480-A 480V LOAD CENTER A."
+    },
+    {
+      "source": "BUS-480-A 480V LOAD CENTER A",
+      "target": "INST-PT-A",
+      "kind": "instrument",
+      "confidence": "high",
+      "evidence": "Short vertical instrument tap with bus dot connects INST-PT-A to the right end of BUS-480-A 480V LOAD CENTER A."
+    },
+    {
+      "source": "BUS-480-A 480V LOAD CENTER A",
+      "target": "CB-MCC-AA",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid feeder from BUS-480-A 480V LOAD CENTER A drops through breaker CB-MCC-AA toward MCC-AA."
+    },
+    {
+      "source": "CB-MCC-AA",
+      "target": "MCC-AA",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Breaker CB-MCC-AA connects directly to panel MCC-AA by a solid vertical conductor."
+    },
+    {
+      "source": "BUS-480-A 480V LOAD CENTER A",
+      "target": "CB-MCC-AB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid feeder from BUS-480-A 480V LOAD CENTER A drops through breaker CB-MCC-AB toward MCC-AB."
+    },
+    {
+      "source": "CB-MCC-AB",
+      "target": "MCC-AB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Breaker CB-MCC-AB connects directly to panel MCC-AB by a solid vertical conductor."
+    },
+    {
+      "source": "BUS-480-A 480V LOAD CENTER A",
+      "target": "XFMR-120-A",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Solid side feeder from BUS-480-A 480V LOAD CENTER A routes down the train drawing to transformer XFMR-120-A."
+    },
+    {
+      "source": "XFMR-120-A",
+      "target": "PNL-120-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects XFMR-120-A to panel PNL-120-A."
+    },
+    {
+      "source": "BUS-480-A 480V LOAD CENTER A",
+      "target": "GND-A",
+      "kind": "ground",
+      "confidence": "medium",
+      "evidence": "Right-side solid conductor from BUS-480-A 480V LOAD CENTER A descends to ground symbol GND-A; drawn as a grounding connection."
+    },
+    {
+      "source": "MCC-AA",
+      "target": "INST-CT-A",
+      "kind": "instrument",
+      "confidence": "medium",
+      "evidence": "Dashed/dotted instrument lead from the first MCC feeder group reaches CT symbol INST-CT-A."
+    },
+    {
+      "source": "MCC-AA",
+      "target": "CB-RHR-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-AA feeds breaker CB-RHR-A."
+    },
+    {
+      "source": "CB-RHR-A",
+      "target": "PUMP-RHR-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-RHR-A lands on load PUMP-RHR-A."
+    },
+    {
+      "source": "MCC-AA",
+      "target": "CB-SI-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-AA feeds breaker CB-SI-A."
+    },
+    {
+      "source": "CB-SI-A",
+      "target": "PUMP-SI-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-SI-A lands on load PUMP-SI-A."
+    },
+    {
+      "source": "MCC-AA",
+      "target": "CB-CCW-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-AA feeds breaker CB-CCW-A."
+    },
+    {
+      "source": "CB-CCW-A",
+      "target": "PUMP-CCW-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-CCW-A lands on load PUMP-CCW-A."
+    },
+    {
+      "source": "MCC-AA",
+      "target": "CB-FAN-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-AA feeds breaker CB-FAN-A."
+    },
+    {
+      "source": "CB-FAN-A",
+      "target": "FAN-CR-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-FAN-A lands on load FAN-CR-A."
+    },
+    {
+      "source": "MCC-AB",
+      "target": "CB-CH-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-AB feeds breaker CB-CH-A."
+    },
+    {
+      "source": "CB-CH-A",
+      "target": "CHILLER-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-CH-A lands on load CHILLER-A."
+    },
+    {
+      "source": "MCC-AB",
+      "target": "CB-VLV1-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-AB feeds breaker CB-VLV1-A."
+    },
+    {
+      "source": "CB-VLV1-A",
+      "target": "MOV-HV1-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-VLV1-A lands on load MOV-HV1-A."
+    },
+    {
+      "source": "MCC-AB",
+      "target": "CB-VLV2-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-AB feeds breaker CB-VLV2-A."
+    },
+    {
+      "source": "CB-VLV2-A",
+      "target": "MOV-HV2-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-VLV2-A lands on load MOV-HV2-A."
+    },
+    {
+      "source": "MCC-AB",
+      "target": "CB-SPARE-A",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Solid branch conductor from MCC-AB reaches breaker CB-SPARE-A; label indicates spare branch."
+    },
+    {
+      "source": "CB-SPARE-A",
+      "target": "SPARE-LOAD-A",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Solid vertical conductor is drawn from CB-SPARE-A to SPARE-LOAD-A; both labels indicate spare/placeholder service."
+    },
+    {
+      "source": "CB-RHR-A",
+      "target": "CB-SI-A",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "Dashed control wiring is drawn between the RHR and SI breaker branch area in train A."
+    },
+    {
+      "source": "CB-SI-A",
+      "target": "PNL-120-A",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "Vertical dashed control path descends from the SI branch area to panel PNL-120-A."
+    },
+    {
+      "source": "PNL-120-A",
+      "target": "RELAY-KA1",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control lead from PNL-120-A connects to relay RELAY-KA1."
+    },
+    {
+      "source": "PNL-120-A",
+      "target": "RELAY-KA2",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control lead from PNL-120-A connects to relay RELAY-KA2."
+    },
+    {
+      "source": "RELAY-KA1",
+      "target": "RELAY-KA2",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "Relays RELAY-KA1 and RELAY-KA2 are enclosed/linked by the same dashed control loop."
+    },
+    {
+      "source": "RELAY-KA1",
+      "target": "JB-A1",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control conductor runs from relay RELAY-KA1 to junction box JB-A1."
+    },
+    {
+      "source": "JB-A1",
+      "target": "TERM-A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control conductor continues from JB-A1 to terminal block TERM-A."
+    },
+    {
+      "source": "BUS-13A 13.8 KV AUX BUS A",
+      "target": "AUX-XFMR-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from BUS-13A 13.8 KV AUX BUS A feeds transformer AUX-XFMR-1B."
+    },
+    {
+      "source": "AUX-XFMR-1B",
+      "target": "CB-4B-IN",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor continues from AUX-XFMR-1B to incoming breaker CB-4B-IN."
+    },
+    {
+      "source": "CB-4B-IN",
+      "target": "BUS-4160-B 4160V SAFETY BUS 1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Incoming breaker CB-4B-IN lands on a dotted tap of BUS-4160-B 4160V SAFETY BUS 1B."
+    },
+    {
+      "source": "DG-1B",
+      "target": "CB-DG-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid diesel-generator feeder from DG-1B enters breaker CB-DG-B."
+    },
+    {
+      "source": "CB-DG-B",
+      "target": "BUS-4160-B 4160V SAFETY BUS 1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Breaker CB-DG-B connects by solid conductor to a dotted tap on BUS-4160-B 4160V SAFETY BUS 1B."
+    },
+    {
+      "source": "BUS-4160-B 4160V SAFETY BUS 1B",
+      "target": "CB-LC-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Vertical solid feeder drops from BUS-4160-B 4160V SAFETY BUS 1B into load-center breaker CB-LC-B."
+    },
+    {
+      "source": "CB-LC-B",
+      "target": "TR-LC-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid conductor connects breaker CB-LC-B to transformer TR-LC-B."
+    },
+    {
+      "source": "TR-LC-B",
+      "target": "BUS-480-B 480V LOAD CENTER B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid conductor exits transformer TR-LC-B and lands on BUS-480-B 480V LOAD CENTER B."
+    },
+    {
+      "source": "BUS-480-B 480V LOAD CENTER B",
+      "target": "INST-PT-B",
+      "kind": "instrument",
+      "confidence": "high",
+      "evidence": "Short vertical instrument tap with bus dot connects INST-PT-B to the right end of BUS-480-B 480V LOAD CENTER B."
+    },
+    {
+      "source": "BUS-480-B 480V LOAD CENTER B",
+      "target": "CB-MCC-BA",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid feeder from BUS-480-B 480V LOAD CENTER B drops through breaker CB-MCC-BA toward MCC-BA."
+    },
+    {
+      "source": "CB-MCC-BA",
+      "target": "MCC-BA",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Breaker CB-MCC-BA connects directly to panel MCC-BA by a solid vertical conductor."
+    },
+    {
+      "source": "BUS-480-B 480V LOAD CENTER B",
+      "target": "CB-MCC-BB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid feeder from BUS-480-B 480V LOAD CENTER B drops through breaker CB-MCC-BB toward MCC-BB."
+    },
+    {
+      "source": "CB-MCC-BB",
+      "target": "MCC-BB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Breaker CB-MCC-BB connects directly to panel MCC-BB by a solid vertical conductor."
+    },
+    {
+      "source": "BUS-480-B 480V LOAD CENTER B",
+      "target": "XFMR-120-B",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Solid side feeder from BUS-480-B 480V LOAD CENTER B routes down the train drawing to transformer XFMR-120-B."
+    },
+    {
+      "source": "XFMR-120-B",
+      "target": "PNL-120-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects XFMR-120-B to panel PNL-120-B."
+    },
+    {
+      "source": "BUS-480-B 480V LOAD CENTER B",
+      "target": "GND-B",
+      "kind": "ground",
+      "confidence": "medium",
+      "evidence": "Right-side solid conductor from BUS-480-B 480V LOAD CENTER B descends to ground symbol GND-B; drawn as a grounding connection."
+    },
+    {
+      "source": "MCC-BA",
+      "target": "INST-CT-B",
+      "kind": "instrument",
+      "confidence": "medium",
+      "evidence": "Dashed/dotted instrument lead from the first MCC feeder group reaches CT symbol INST-CT-B."
+    },
+    {
+      "source": "MCC-BA",
+      "target": "CB-RHR-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-BA feeds breaker CB-RHR-B."
+    },
+    {
+      "source": "CB-RHR-B",
+      "target": "PUMP-RHR-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-RHR-B lands on load PUMP-RHR-B."
+    },
+    {
+      "source": "MCC-BA",
+      "target": "CB-SI-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-BA feeds breaker CB-SI-B."
+    },
+    {
+      "source": "CB-SI-B",
+      "target": "PUMP-SI-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-SI-B lands on load PUMP-SI-B."
+    },
+    {
+      "source": "MCC-BA",
+      "target": "CB-CCW-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-BA feeds breaker CB-CCW-B."
+    },
+    {
+      "source": "CB-CCW-B",
+      "target": "PUMP-CCW-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-CCW-B lands on load PUMP-CCW-B."
+    },
+    {
+      "source": "MCC-BA",
+      "target": "CB-FAN-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-BA feeds breaker CB-FAN-B."
+    },
+    {
+      "source": "CB-FAN-B",
+      "target": "FAN-CR-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-FAN-B lands on load FAN-CR-B."
+    },
+    {
+      "source": "MCC-BB",
+      "target": "CB-CH-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-BB feeds breaker CB-CH-B."
+    },
+    {
+      "source": "CB-CH-B",
+      "target": "CHILLER-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-CH-B lands on load CHILLER-B."
+    },
+    {
+      "source": "MCC-BB",
+      "target": "CB-VLV1-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-BB feeds breaker CB-VLV1-B."
+    },
+    {
+      "source": "CB-VLV1-B",
+      "target": "MOV-HV1-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-VLV1-B lands on load MOV-HV1-B."
+    },
+    {
+      "source": "MCC-BB",
+      "target": "CB-VLV2-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-BB feeds breaker CB-VLV2-B."
+    },
+    {
+      "source": "CB-VLV2-B",
+      "target": "MOV-HV2-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-VLV2-B lands on load MOV-HV2-B."
+    },
+    {
+      "source": "MCC-BB",
+      "target": "CB-SPARE-B",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Solid branch conductor from MCC-BB reaches breaker CB-SPARE-B; label indicates spare branch."
+    },
+    {
+      "source": "CB-SPARE-B",
+      "target": "SPARE-LOAD-B",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Solid vertical conductor is drawn from CB-SPARE-B to SPARE-LOAD-B; both labels indicate spare/placeholder service."
+    },
+    {
+      "source": "CB-RHR-B",
+      "target": "CB-SI-B",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "Dashed control wiring is drawn between the RHR and SI breaker branch area in train B."
+    },
+    {
+      "source": "CB-SI-B",
+      "target": "PNL-120-B",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "Vertical dashed control path descends from the SI branch area to panel PNL-120-B."
+    },
+    {
+      "source": "PNL-120-B",
+      "target": "RELAY-KB1",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control lead from PNL-120-B connects to relay RELAY-KB1."
+    },
+    {
+      "source": "PNL-120-B",
+      "target": "RELAY-KB2",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control lead from PNL-120-B connects to relay RELAY-KB2."
+    },
+    {
+      "source": "RELAY-KB1",
+      "target": "RELAY-KB2",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "Relays RELAY-KB1 and RELAY-KB2 are enclosed/linked by the same dashed control loop."
+    },
+    {
+      "source": "RELAY-KB1",
+      "target": "JB-B1",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control conductor runs from relay RELAY-KB1 to junction box JB-B1."
+    },
+    {
+      "source": "JB-B1",
+      "target": "TERM-B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control conductor continues from JB-B1 to terminal block TERM-B."
+    },
+    {
+      "source": "BUS-13B 13.8 KV AUX BUS B",
+      "target": "SAT-XFMR-1C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from BUS-13B 13.8 KV AUX BUS B feeds transformer SAT-XFMR-1C."
+    },
+    {
+      "source": "SAT-XFMR-1C",
+      "target": "CB-4C-IN",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor continues from SAT-XFMR-1C to incoming breaker CB-4C-IN."
+    },
+    {
+      "source": "CB-4C-IN",
+      "target": "BUS-4160-C 4160V SAFETY BUS 1C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Incoming breaker CB-4C-IN lands on a dotted tap of BUS-4160-C 4160V SAFETY BUS 1C."
+    },
+    {
+      "source": "DG-1C",
+      "target": "CB-DG-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid diesel-generator feeder from DG-1C enters breaker CB-DG-C."
+    },
+    {
+      "source": "CB-DG-C",
+      "target": "BUS-4160-C 4160V SAFETY BUS 1C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Breaker CB-DG-C connects by solid conductor to a dotted tap on BUS-4160-C 4160V SAFETY BUS 1C."
+    },
+    {
+      "source": "BUS-4160-C 4160V SAFETY BUS 1C",
+      "target": "CB-4CD-TIE",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid 4160 V bus conductor reaches the left terminal dot of CB-4CD-TIE."
+    },
+    {
+      "source": "CB-4CD-TIE",
+      "target": "BUS-4160-D 4160V SAFETY BUS 1D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "CB-4CD-TIE right terminal connects by solid conductor to BUS-4160-D."
+    },
+    {
+      "source": "BUS-4160-C 4160V SAFETY BUS 1C",
+      "target": "CB-LC-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Vertical solid feeder drops from BUS-4160-C 4160V SAFETY BUS 1C into load-center breaker CB-LC-C."
+    },
+    {
+      "source": "CB-LC-C",
+      "target": "TR-LC-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid conductor connects breaker CB-LC-C to transformer TR-LC-C."
+    },
+    {
+      "source": "TR-LC-C",
+      "target": "BUS-480-C 480V LOAD CENTER C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid conductor exits transformer TR-LC-C and lands on BUS-480-C 480V LOAD CENTER C."
+    },
+    {
+      "source": "BUS-480-C 480V LOAD CENTER C",
+      "target": "INST-PT-C",
+      "kind": "instrument",
+      "confidence": "high",
+      "evidence": "Short vertical instrument tap with bus dot connects INST-PT-C to the right end of BUS-480-C 480V LOAD CENTER C."
+    },
+    {
+      "source": "BUS-480-C 480V LOAD CENTER C",
+      "target": "CB-MCC-CA",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid feeder from BUS-480-C 480V LOAD CENTER C drops through breaker CB-MCC-CA toward MCC-CA."
+    },
+    {
+      "source": "CB-MCC-CA",
+      "target": "MCC-CA",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Breaker CB-MCC-CA connects directly to panel MCC-CA by a solid vertical conductor."
+    },
+    {
+      "source": "BUS-480-C 480V LOAD CENTER C",
+      "target": "CB-MCC-CB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid feeder from BUS-480-C 480V LOAD CENTER C drops through breaker CB-MCC-CB toward MCC-CB."
+    },
+    {
+      "source": "CB-MCC-CB",
+      "target": "MCC-CB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Breaker CB-MCC-CB connects directly to panel MCC-CB by a solid vertical conductor."
+    },
+    {
+      "source": "BUS-480-C 480V LOAD CENTER C",
+      "target": "XFMR-120-C",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Solid side feeder from BUS-480-C 480V LOAD CENTER C routes down the train drawing to transformer XFMR-120-C."
+    },
+    {
+      "source": "XFMR-120-C",
+      "target": "PNL-120-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects XFMR-120-C to panel PNL-120-C."
+    },
+    {
+      "source": "BUS-480-C 480V LOAD CENTER C",
+      "target": "GND-C",
+      "kind": "ground",
+      "confidence": "medium",
+      "evidence": "Right-side solid conductor from BUS-480-C 480V LOAD CENTER C descends to ground symbol GND-C; drawn as a grounding connection."
+    },
+    {
+      "source": "MCC-CA",
+      "target": "INST-CT-C",
+      "kind": "instrument",
+      "confidence": "medium",
+      "evidence": "Dashed/dotted instrument lead from the first MCC feeder group reaches CT symbol INST-CT-C."
+    },
+    {
+      "source": "MCC-CA",
+      "target": "CB-RHR-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-CA feeds breaker CB-RHR-C."
+    },
+    {
+      "source": "CB-RHR-C",
+      "target": "PUMP-RHR-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-RHR-C lands on load PUMP-RHR-C."
+    },
+    {
+      "source": "MCC-CA",
+      "target": "CB-SI-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-CA feeds breaker CB-SI-C."
+    },
+    {
+      "source": "CB-SI-C",
+      "target": "PUMP-SI-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-SI-C lands on load PUMP-SI-C."
+    },
+    {
+      "source": "MCC-CA",
+      "target": "CB-CCW-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-CA feeds breaker CB-CCW-C."
+    },
+    {
+      "source": "CB-CCW-C",
+      "target": "PUMP-CCW-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-CCW-C lands on load PUMP-CCW-C."
+    },
+    {
+      "source": "MCC-CA",
+      "target": "CB-FAN-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-CA feeds breaker CB-FAN-C."
+    },
+    {
+      "source": "CB-FAN-C",
+      "target": "FAN-CR-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-FAN-C lands on load FAN-CR-C."
+    },
+    {
+      "source": "MCC-CB",
+      "target": "CB-CH-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-CB feeds breaker CB-CH-C."
+    },
+    {
+      "source": "CB-CH-C",
+      "target": "CHILLER-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-CH-C lands on load CHILLER-C."
+    },
+    {
+      "source": "MCC-CB",
+      "target": "CB-VLV1-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-CB feeds breaker CB-VLV1-C."
+    },
+    {
+      "source": "CB-VLV1-C",
+      "target": "MOV-HV1-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-VLV1-C lands on load MOV-HV1-C."
+    },
+    {
+      "source": "MCC-CB",
+      "target": "CB-VLV2-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-CB feeds breaker CB-VLV2-C."
+    },
+    {
+      "source": "CB-VLV2-C",
+      "target": "MOV-HV2-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-VLV2-C lands on load MOV-HV2-C."
+    },
+    {
+      "source": "MCC-CB",
+      "target": "CB-SPARE-C",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Solid branch conductor from MCC-CB reaches breaker CB-SPARE-C; label indicates spare branch."
+    },
+    {
+      "source": "CB-SPARE-C",
+      "target": "SPARE-LOAD-C",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Solid vertical conductor is drawn from CB-SPARE-C to SPARE-LOAD-C; both labels indicate spare/placeholder service."
+    },
+    {
+      "source": "CB-RHR-C",
+      "target": "CB-SI-C",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "Dashed control wiring is drawn between the RHR and SI breaker branch area in train C."
+    },
+    {
+      "source": "CB-SI-C",
+      "target": "PNL-120-C",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "Vertical dashed control path descends from the SI branch area to panel PNL-120-C."
+    },
+    {
+      "source": "PNL-120-C",
+      "target": "RELAY-KC1",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control lead from PNL-120-C connects to relay RELAY-KC1."
+    },
+    {
+      "source": "PNL-120-C",
+      "target": "RELAY-KC2",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control lead from PNL-120-C connects to relay RELAY-KC2."
+    },
+    {
+      "source": "RELAY-KC1",
+      "target": "RELAY-KC2",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "Relays RELAY-KC1 and RELAY-KC2 are enclosed/linked by the same dashed control loop."
+    },
+    {
+      "source": "RELAY-KC1",
+      "target": "JB-C1",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control conductor runs from relay RELAY-KC1 to junction box JB-C1."
+    },
+    {
+      "source": "JB-C1",
+      "target": "TERM-C",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control conductor continues from JB-C1 to terminal block TERM-C."
+    },
+    {
+      "source": "BUS-13B 13.8 KV AUX BUS B",
+      "target": "SAT-XFMR-1D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from BUS-13B 13.8 KV AUX BUS B feeds transformer SAT-XFMR-1D."
+    },
+    {
+      "source": "SAT-XFMR-1D",
+      "target": "CB-4D-IN",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor continues from SAT-XFMR-1D to incoming breaker CB-4D-IN."
+    },
+    {
+      "source": "CB-4D-IN",
+      "target": "BUS-4160-D 4160V SAFETY BUS 1D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Incoming breaker CB-4D-IN lands on a dotted tap of BUS-4160-D 4160V SAFETY BUS 1D."
+    },
+    {
+      "source": "DG-1D",
+      "target": "CB-DG-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid diesel-generator feeder from DG-1D enters breaker CB-DG-D."
+    },
+    {
+      "source": "CB-DG-D",
+      "target": "BUS-4160-D 4160V SAFETY BUS 1D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Breaker CB-DG-D connects by solid conductor to a dotted tap on BUS-4160-D 4160V SAFETY BUS 1D."
+    },
+    {
+      "source": "BUS-4160-D 4160V SAFETY BUS 1D",
+      "target": "CB-LC-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Vertical solid feeder drops from BUS-4160-D 4160V SAFETY BUS 1D into load-center breaker CB-LC-D."
+    },
+    {
+      "source": "CB-LC-D",
+      "target": "TR-LC-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid conductor connects breaker CB-LC-D to transformer TR-LC-D."
+    },
+    {
+      "source": "TR-LC-D",
+      "target": "BUS-480-D 480V LOAD CENTER D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid conductor exits transformer TR-LC-D and lands on BUS-480-D 480V LOAD CENTER D."
+    },
+    {
+      "source": "BUS-480-D 480V LOAD CENTER D",
+      "target": "INST-PT-D",
+      "kind": "instrument",
+      "confidence": "high",
+      "evidence": "Short vertical instrument tap with bus dot connects INST-PT-D to the right end of BUS-480-D 480V LOAD CENTER D."
+    },
+    {
+      "source": "BUS-480-D 480V LOAD CENTER D",
+      "target": "CB-MCC-DA",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid feeder from BUS-480-D 480V LOAD CENTER D drops through breaker CB-MCC-DA toward MCC-DA."
+    },
+    {
+      "source": "CB-MCC-DA",
+      "target": "MCC-DA",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Breaker CB-MCC-DA connects directly to panel MCC-DA by a solid vertical conductor."
+    },
+    {
+      "source": "BUS-480-D 480V LOAD CENTER D",
+      "target": "CB-MCC-DB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid feeder from BUS-480-D 480V LOAD CENTER D drops through breaker CB-MCC-DB toward MCC-DB."
+    },
+    {
+      "source": "CB-MCC-DB",
+      "target": "MCC-DB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Breaker CB-MCC-DB connects directly to panel MCC-DB by a solid vertical conductor."
+    },
+    {
+      "source": "BUS-480-D 480V LOAD CENTER D",
+      "target": "XFMR-120-D",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Solid side feeder from BUS-480-D 480V LOAD CENTER D routes down the train drawing to transformer XFMR-120-D."
+    },
+    {
+      "source": "XFMR-120-D",
+      "target": "PNL-120-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects XFMR-120-D to panel PNL-120-D."
+    },
+    {
+      "source": "BUS-480-D 480V LOAD CENTER D",
+      "target": "GND-D",
+      "kind": "ground",
+      "confidence": "medium",
+      "evidence": "Right-side solid conductor from BUS-480-D 480V LOAD CENTER D descends to ground symbol GND-D; drawn as a grounding connection."
+    },
+    {
+      "source": "MCC-DA",
+      "target": "INST-CT-D",
+      "kind": "instrument",
+      "confidence": "medium",
+      "evidence": "Dashed/dotted instrument lead from the first MCC feeder group reaches CT symbol INST-CT-D."
+    },
+    {
+      "source": "MCC-DA",
+      "target": "CB-RHR-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-DA feeds breaker CB-RHR-D."
+    },
+    {
+      "source": "CB-RHR-D",
+      "target": "PUMP-RHR-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-RHR-D lands on load PUMP-RHR-D."
+    },
+    {
+      "source": "MCC-DA",
+      "target": "CB-SI-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-DA feeds breaker CB-SI-D."
+    },
+    {
+      "source": "CB-SI-D",
+      "target": "PUMP-SI-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-SI-D lands on load PUMP-SI-D."
+    },
+    {
+      "source": "MCC-DA",
+      "target": "CB-CCW-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-DA feeds breaker CB-CCW-D."
+    },
+    {
+      "source": "CB-CCW-D",
+      "target": "PUMP-CCW-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-CCW-D lands on load PUMP-CCW-D."
+    },
+    {
+      "source": "MCC-DA",
+      "target": "CB-FAN-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-DA feeds breaker CB-FAN-D."
+    },
+    {
+      "source": "CB-FAN-D",
+      "target": "FAN-CR-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-FAN-D lands on load FAN-CR-D."
+    },
+    {
+      "source": "MCC-DB",
+      "target": "CB-CH-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-DB feeds breaker CB-CH-D."
+    },
+    {
+      "source": "CB-CH-D",
+      "target": "CHILLER-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-CH-D lands on load CHILLER-D."
+    },
+    {
+      "source": "MCC-DB",
+      "target": "CB-VLV1-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-DB feeds breaker CB-VLV1-D."
+    },
+    {
+      "source": "CB-VLV1-D",
+      "target": "MOV-HV1-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-VLV1-D lands on load MOV-HV1-D."
+    },
+    {
+      "source": "MCC-DB",
+      "target": "CB-VLV2-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid branch conductor from MCC-DB feeds breaker CB-VLV2-D."
+    },
+    {
+      "source": "CB-VLV2-D",
+      "target": "MOV-HV2-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor from breaker CB-VLV2-D lands on load MOV-HV2-D."
+    },
+    {
+      "source": "MCC-DB",
+      "target": "CB-SPARE-D",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Solid branch conductor from MCC-DB reaches breaker CB-SPARE-D; label indicates spare branch."
+    },
+    {
+      "source": "CB-SPARE-D",
+      "target": "SPARE-LOAD-D",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Solid vertical conductor is drawn from CB-SPARE-D to SPARE-LOAD-D; both labels indicate spare/placeholder service."
+    },
+    {
+      "source": "CB-RHR-D",
+      "target": "CB-SI-D",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "Dashed control wiring is drawn between the RHR and SI breaker branch area in train D."
+    },
+    {
+      "source": "CB-SI-D",
+      "target": "PNL-120-D",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "Vertical dashed control path descends from the SI branch area to panel PNL-120-D."
+    },
+    {
+      "source": "PNL-120-D",
+      "target": "RELAY-KD1",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control lead from PNL-120-D connects to relay RELAY-KD1."
+    },
+    {
+      "source": "PNL-120-D",
+      "target": "RELAY-KD2",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control lead from PNL-120-D connects to relay RELAY-KD2."
+    },
+    {
+      "source": "RELAY-KD1",
+      "target": "RELAY-KD2",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "Relays RELAY-KD1 and RELAY-KD2 are enclosed/linked by the same dashed control loop."
+    },
+    {
+      "source": "RELAY-KD1",
+      "target": "JB-D1",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control conductor runs from relay RELAY-KD1 to junction box JB-D1."
+    },
+    {
+      "source": "JB-D1",
+      "target": "TERM-D",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control conductor continues from JB-D1 to terminal block TERM-D."
+    },
+    {
+      "source": "AC FEED TO CHGR-125A",
+      "target": "CB-DC-A1",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Unlabeled solid AC feeder terminates at the source side of CB-DC-A1."
+    },
+    {
+      "source": "CB-DC-A1",
+      "target": "CHGR-125A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid horizontal conductor connects breaker CB-DC-A1 to CHGR-125A."
+    },
+    {
+      "source": "CHGR-125A",
+      "target": "BUS-125A 125 VDC BUS A",
+      "kind": "dc",
+      "confidence": "high",
+      "evidence": "Vertical DC output from CHGR-125A lands on BUS-125A with a filled bus dot."
+    },
+    {
+      "source": "BUS-125A 125 VDC BUS A",
+      "target": "BAT-125A",
+      "kind": "dc",
+      "confidence": "high",
+      "evidence": "Vertical solid tap from BUS-125A connects to battery BAT-125A."
+    },
+    {
+      "source": "BUS-125A 125 VDC BUS A",
+      "target": "FUSE-FD-A",
+      "kind": "dc",
+      "confidence": "high",
+      "evidence": "Vertical solid tap from BUS-125A feeds fuse FUSE-FD-A."
+    },
+    {
+      "source": "FUSE-FD-A",
+      "target": "INV-UPS-A",
+      "kind": "dc",
+      "confidence": "high",
+      "evidence": "Solid conductor from FUSE-FD-A enters inverter INV-UPS-A."
+    },
+    {
+      "source": "INV-UPS-A",
+      "target": "BUS-UPS-A 120 VAC UPS BUS A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Output of INV-UPS-A is shown by a vertical solid tap to BUS-UPS-A."
+    },
+    {
+      "source": "BUS-125A 125 VDC BUS A",
+      "target": "DC-MCC-A",
+      "kind": "dc",
+      "confidence": "high",
+      "evidence": "Vertical solid tap from BUS-125A rises to DC-MCC-A."
+    },
+    {
+      "source": "DC-MCC-A",
+      "target": "SOL-SDV-A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control line runs from DC-MCC-A to SOL-SDV-A."
+    },
+    {
+      "source": "BUS-125A 125 VDC BUS A",
+      "target": "DIODE-OR-A",
+      "kind": "dc",
+      "confidence": "high",
+      "evidence": "DIODE-OR-A has a solid connection down to BUS-125A at a filled bus dot."
+    },
+    {
+      "source": "BUS-125A 125 VDC BUS A",
+      "target": "GRD-DC-A",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "Vertical solid conductor from BUS-125A descends to ground symbol GRD-DC-A."
+    },
+    {
+      "source": "BUS-UPS-A 120 VAC UPS BUS A",
+      "target": "INST-RACK-A",
+      "kind": "instrument",
+      "confidence": "high",
+      "evidence": "Vertical dotted/instrument tap connects BUS-UPS-A to INST-RACK-A."
+    },
+    {
+      "source": "BUS-UPS-A 120 VAC UPS BUS A",
+      "target": "PNL-RPS-A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Vertical dashed control tap connects BUS-UPS-A to PNL-RPS-A."
+    },
+    {
+      "source": "PNL-RPS-A",
+      "target": "RELAY-RPS-A1",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control lead from PNL-RPS-A drops to RELAY-RPS-A1."
+    },
+    {
+      "source": "PNL-RPS-A",
+      "target": "RELAY-ESF-A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control lead from PNL-RPS-A routes to RELAY-ESF-A."
+    },
+    {
+      "source": "BUS-UPS-A 120 VAC UPS BUS A",
+      "target": "PLC-SAF-A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Vertical dashed control tap connects BUS-UPS-A to PLC-SAF-A."
+    },
+    {
+      "source": "BUS-UPS-A 120 VAC UPS BUS A",
+      "target": "ANN-PNL-CR",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control conductor leaves the right end of BUS-UPS-A and enters ANN-PNL-CR."
+    },
+    {
+      "source": "ANN-PNL-CR",
+      "target": "JB-CR-01",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Vertical control conductor connects ANN-PNL-CR to JB-CR-01."
+    },
+    {
+      "source": "JB-CR-01",
+      "target": "TERM-MTB-A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control line from JB-CR-01 terminates at TERM-MTB-A."
+    },
+    {
+      "source": "JB-CR-01",
+      "target": "TERM-MTB-B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control line from JB-CR-01 terminates at TERM-MTB-B."
+    },
+    {
+      "source": "AC FEED TO CHGR-125B",
+      "target": "CB-DC-B1",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Unlabeled solid AC feeder terminates at the source side of CB-DC-B1."
+    },
+    {
+      "source": "CB-DC-B1",
+      "target": "CHGR-125B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid horizontal conductor connects breaker CB-DC-B1 to CHGR-125B."
+    },
+    {
+      "source": "CHGR-125B",
+      "target": "BUS-125B 125 VDC BUS B",
+      "kind": "dc",
+      "confidence": "high",
+      "evidence": "Vertical DC output from CHGR-125B lands on BUS-125B with a filled bus dot."
+    },
+    {
+      "source": "BUS-125B 125 VDC BUS B",
+      "target": "BAT-125B",
+      "kind": "dc",
+      "confidence": "high",
+      "evidence": "Vertical solid tap from BUS-125B connects to battery BAT-125B."
+    },
+    {
+      "source": "BUS-125B 125 VDC BUS B",
+      "target": "FUSE-FD-B",
+      "kind": "dc",
+      "confidence": "high",
+      "evidence": "Vertical solid tap from BUS-125B feeds fuse FUSE-FD-B."
+    },
+    {
+      "source": "FUSE-FD-B",
+      "target": "INV-UPS-B",
+      "kind": "dc",
+      "confidence": "high",
+      "evidence": "Solid conductor from FUSE-FD-B enters inverter INV-UPS-B."
+    },
+    {
+      "source": "INV-UPS-B",
+      "target": "BUS-UPS-B 120 VAC UPS BUS B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Output of INV-UPS-B is shown by a vertical solid tap to BUS-UPS-B."
+    },
+    {
+      "source": "BUS-125B 125 VDC BUS B",
+      "target": "DC-MCC-B",
+      "kind": "dc",
+      "confidence": "high",
+      "evidence": "Vertical solid tap from BUS-125B rises to DC-MCC-B."
+    },
+    {
+      "source": "DC-MCC-B",
+      "target": "SOL-SDV-B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control line runs from DC-MCC-B to SOL-SDV-B."
+    },
+    {
+      "source": "BUS-125B 125 VDC BUS B",
+      "target": "DIODE-OR-B",
+      "kind": "dc",
+      "confidence": "high",
+      "evidence": "DIODE-OR-B has a solid connection down to the left side of BUS-125B at a filled bus dot."
+    },
+    {
+      "source": "BUS-125B 125 VDC BUS B",
+      "target": "GRD-DC-B",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "Vertical solid conductor from BUS-125B descends to ground symbol GRD-DC-B."
+    },
+    {
+      "source": "BUS-UPS-B 120 VAC UPS BUS B",
+      "target": "INST-RACK-B",
+      "kind": "instrument",
+      "confidence": "high",
+      "evidence": "Vertical dotted/instrument tap connects BUS-UPS-B to INST-RACK-B."
+    },
+    {
+      "source": "BUS-UPS-B 120 VAC UPS BUS B",
+      "target": "PNL-RPS-B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Vertical dashed control tap connects BUS-UPS-B to PNL-RPS-B."
+    },
+    {
+      "source": "PNL-RPS-B",
+      "target": "RELAY-RPS-B1",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control lead from PNL-RPS-B drops to RELAY-RPS-B1."
+    },
+    {
+      "source": "PNL-RPS-B",
+      "target": "RELAY-ESF-B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control lead from PNL-RPS-B routes to RELAY-ESF-B."
+    },
+    {
+      "source": "BUS-UPS-B 120 VAC UPS BUS B",
+      "target": "PLC-SAF-B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Vertical dashed control tap connects BUS-UPS-B to PLC-SAF-B."
+    },
+    {
+      "source": "BUS-UPS-B 120 VAC UPS BUS B",
+      "target": "REC-SEQ-1",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "Dashed control conductor leaves the right end of BUS-UPS-B and enters REC-SEQ-1."
+    },
+    {
+      "source": "XFMR-PT-1",
+      "target": "XFMR-PT-1 INSTRUMENT LOOP",
+      "kind": "instrument",
+      "confidence": "medium",
+      "evidence": "XFMR-PT-1 is tied to the adjacent dotted/dashed meter instrumentation loop."
+    },
+    {
+      "source": "XFMR-PT-1 INSTRUMENT LOOP",
+      "target": "METER-V01",
+      "kind": "instrument",
+      "confidence": "high",
+      "evidence": "Dotted/dashed vertical instrument line descends from the XFMR-PT-1 loop to METER-V01."
+    },
+    {
+      "source": "XFMR-PT-1 INSTRUMENT LOOP",
+      "target": "METER-A01",
+      "kind": "instrument",
+      "confidence": "high",
+      "evidence": "Dotted/dashed vertical instrument line descends from the same meter loop to METER-A01."
+    }
+  ],
+  "uncertain_edges": [
+    {
+      "source": "BUS-480-A 480V LOAD CENTER A",
+      "target": "CB-DC-A1",
+      "kind": "power",
+      "reason": "Lower raw DC/UPS crops show CB-DC-A1 fed by an upstream solid AC feeder into CHGR-125A, but the source is not visually labeled as BUS-480-A at the connection point; the asserted matrix keeps only AC FEED TO CHGR-125A -> CB-DC-A1."
+    },
+    {
+      "source": "BUS-480-B 480V LOAD CENTER B",
+      "target": "CB-DC-B1",
+      "kind": "power",
+      "reason": "Lower raw DC/UPS crops show CB-DC-B1 fed by an upstream solid AC feeder into CHGR-125B, but the source is not visually labeled as BUS-480-B at the connection point; the asserted matrix keeps only AC FEED TO CHGR-125B -> CB-DC-B1."
+    },
+    {
+      "source": "XFMR-PT-1",
+      "target": "BUS-UPS-B 120 VAC UPS BUS B",
+      "kind": "instrument",
+      "reason": "XFMR-PT-1 is in the B-side control-power area, but the visible instrument/dashed loop drops to METER-V01 and METER-A01; no direct landing on BUS-UPS-B is shown."
+    },
+    {
+      "source": "SOL-SDV-A",
+      "target": "DIODE-OR-A",
+      "kind": "dc",
+      "reason": "A-side raw crop shows SOL-SDV-A tied by dashed control wiring to DC-MCC-A, while DIODE-OR-A is separately tied by solid wiring to BUS-125A at a bus dot; no continuous solid or dashed segment joins the two symbols."
+    },
+    {
+      "source": "SOL-SDV-B",
+      "target": "DIODE-OR-B",
+      "kind": "dc",
+      "reason": "B-side raw crop shows SOL-SDV-B on a dashed control lead from DC-MCC-B; DIODE-OR-B is separately shown on a solid tap to BUS-125B, with no visible solenoid-to-diode segment."
+    },
+    {
+      "source": "INST-CT-A",
+      "target": "CB-RHR-A",
+      "kind": "instrument",
+      "reason": "INST-CT-A is drawn adjacent to and apparently sensing the RHR feeder, but the exact dotted/instrument endpoint at CB-RHR-A is not explicit enough to assert as a matrix edge."
+    },
+    {
+      "source": "INST-CT-B",
+      "target": "CB-RHR-B",
+      "kind": "instrument",
+      "reason": "INST-CT-B is drawn adjacent to and apparently sensing the RHR feeder, but the exact dotted/instrument endpoint at CB-RHR-B is not explicit enough to assert as a matrix edge."
+    },
+    {
+      "source": "INST-CT-C",
+      "target": "CB-RHR-C",
+      "kind": "instrument",
+      "reason": "INST-CT-C is drawn adjacent to and apparently sensing the RHR feeder, but the exact dotted/instrument endpoint at CB-RHR-C is not explicit enough to assert as a matrix edge."
+    },
+    {
+      "source": "INST-CT-D",
+      "target": "CB-RHR-D",
+      "kind": "instrument",
+      "reason": "INST-CT-D is drawn adjacent to and apparently sensing the RHR feeder, but the exact dotted/instrument endpoint at CB-RHR-D is not explicit enough to assert as a matrix edge."
+    },
+    {
+      "source": "PNL-120-A",
+      "target": "PUMP-SI-A",
+      "kind": "control",
+      "reason": "A vertical dashed control route passes through the SI branch area, but the reliable endpoint remains the CB-SI-A/panel control path; no direct landing on the PUMP-SI-A symbol is shown."
+    },
+    {
+      "source": "PNL-120-B",
+      "target": "PUMP-SI-B",
+      "kind": "control",
+      "reason": "A vertical dashed control route passes through the SI branch area, but the reliable endpoint remains the CB-SI-B/panel control path; no direct landing on the PUMP-SI-B symbol is shown."
+    },
+    {
+      "source": "PNL-120-C",
+      "target": "PUMP-SI-C",
+      "kind": "control",
+      "reason": "A vertical dashed control route passes through the SI branch area, but the reliable endpoint remains the CB-SI-C/panel control path; no direct landing on the PUMP-SI-C symbol is shown."
+    },
+    {
+      "source": "PNL-120-D",
+      "target": "PUMP-SI-D",
+      "kind": "control",
+      "reason": "A vertical dashed control route passes through the SI branch area, but the reliable endpoint remains the CB-SI-D/panel control path; no direct landing on the PUMP-SI-D symbol is shown."
+    }
+  ],
+  "removed_edges": [
+    {
+      "source": "SOL-SDV-A",
+      "target": "DIODE-OR-A",
+      "kind": "dc",
+      "reason": "Accepted. Raw lower DC/control crop shows SOL-SDV-A connected by dashed control wiring to DC-MCC-A, while DIODE-OR-A is separately connected by solid wiring to BUS-125A; no continuous solid or dashed segment lands between SOL-SDV-A and DIODE-OR-A."
+    }
+  ],
+  "added_edges": [],
+  "label_corrections": [],
+  "rejected_non_edges": [
+    {
+      "source": "BUS-13A 13.8 KV AUX BUS A",
+      "target": "BUS-13B 13.8 KV AUX BUS B",
+      "kind": "power",
+      "reason": "The only visible 13.8 kV A/B connection is through tie breaker CB-13T; there is no direct bus-to-bus junction dot bypassing the breaker."
+    },
+    {
+      "source": "BUS-4160-A 4160V SAFETY BUS 1A",
+      "target": "BUS-4160-B 4160V SAFETY BUS 1B",
+      "kind": "power",
+      "reason": "The A/B 4160 V buses connect only through CB-4AB-TIE; no direct bus-to-bus connection is drawn."
+    },
+    {
+      "source": "BUS-4160-B 4160V SAFETY BUS 1B",
+      "target": "BUS-4160-C 4160V SAFETY BUS 1C",
+      "kind": "power",
+      "reason": "The B and C 4160 V buses are horizontally aligned but separated by a visible gap and no tie breaker or junction dot."
+    },
+    {
+      "source": "BUS-4160-C 4160V SAFETY BUS 1C",
+      "target": "BUS-4160-D 4160V SAFETY BUS 1D",
+      "kind": "power",
+      "reason": "The C/D 4160 V buses connect only through CB-4CD-TIE; no direct bus-to-bus connection is drawn."
+    },
+    {
+      "source": "BUS-480-A 480V LOAD CENTER A",
+      "target": "BUS-480-B 480V LOAD CENTER B",
+      "kind": "power",
+      "reason": "Adjacent 480 V load-center buses are aligned but separated at the train boundary; no connecting tie or dot is visible."
+    },
+    {
+      "source": "BUS-480-B 480V LOAD CENTER B",
+      "target": "BUS-480-C 480V LOAD CENTER C",
+      "kind": "power",
+      "reason": "Adjacent 480 V load-center buses are aligned but separated at the train boundary; no connecting tie or dot is visible."
+    },
+    {
+      "source": "BUS-480-C 480V LOAD CENTER C",
+      "target": "BUS-480-D 480V LOAD CENTER D",
+      "kind": "power",
+      "reason": "Adjacent 480 V load-center buses are aligned but separated at the train boundary; no connecting tie or dot is visible."
+    },
+    {
+      "source": "BUS-125A 125 VDC BUS A",
+      "target": "BUS-125B 125 VDC BUS B",
+      "kind": "dc",
+      "reason": "The A and B 125 VDC buses are separate horizontal buses; diode taps do not form a visible bus-to-bus conductor."
+    },
+    {
+      "source": "BUS-UPS-A 120 VAC UPS BUS A",
+      "target": "BUS-UPS-B 120 VAC UPS BUS B",
+      "kind": "power",
+      "reason": "UPS buses A and B are separate parallel buses with separate loads; no tie conductor is shown."
+    },
+    {
+      "source": "METER-V01",
+      "target": "METER-A01",
+      "kind": "instrument",
+      "reason": "Both meters hang from the same XFMR-PT-1 instrument loop, but there is no direct meter-to-meter line."
+    }
+  ],
+  "agreement_notes": [
+    "Jennifer round1 and Diego round2 have identical node order, asserted edge set, and 204x204 matrix.",
+    "Diego round2 accepted the removal of SOL-SDV-A <-> DIODE-OR-A; it remains unasserted and listed as uncertain.",
+    "No uncertain edges were promoted, no edges were added, and no label corrections were made in the final pass.",
+    "Final matrix contains 217 asserted undirected edges and exactly matches the agreed Jennifer round1 / Diego round2 matrix.",
+    "Accepted Jennifer's removal of SOL-SDV-A <-> DIODE-OR-A. The A-side raw crop separates the dashed DC-MCC-A-to-SOL-SDV-A control lead from the solid DIODE-OR-A-to-BUS-125A tap.",
+    "No disputed Jennifer removals: no direct visual segment was found between SOL-SDV-A and DIODE-OR-A under the solid=POWER/DC, dashed=CONTROL, dotted=INSTRUMENT legend rules.",
+    "The lower 125VDC/120VAC UPS section remains separated into A and B buses. BUS-125A/B and BUS-UPS-A/B do not show a direct tie; charger upstream feeds remain represented as logical AC FEED TO CHGR-125A/B nodes.",
+    "No remaining uncertain edge has enough direct visual support to assert. CT-to-RHR candidates remain sensing-adjacent rather than terminal-explicit, and PNL-120-to-PUMP-SI candidates remain dashed routes through the SI branch area without direct pump-symbol landings."
+  ],
+  "quality_checks": {
+    "symmetric_matrix": true,
+    "diagonal_zero": true,
+    "edge_count_matches_matrix": true
+  }
+}

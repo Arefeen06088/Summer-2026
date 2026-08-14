@@ -1,0 +1,1027 @@
+{
+  "document": "22",
+  "iteration": "1",
+  "final_status": "saturation_agreement",
+  "nodes": [
+    {
+      "id": "GEN-G01",
+      "type": "source",
+      "evidence": "Top-left source-detail area; generator circle labeled GEN-G01 connected by a solid line to GSU-T01."
+    },
+    {
+      "id": "GSU-T01",
+      "type": "transformer",
+      "evidence": "Top-left source-detail area; transformer symbol labeled GSU-T01 in the solid source line."
+    },
+    {
+      "id": "13.8KV SOURCE/SWYD LINE",
+      "type": "logical_node",
+      "evidence": "Unlabeled solid source line across the top feeding CB-13A1 and CB-13B1 and passing the SWYD-345 symbol."
+    },
+    {
+      "id": "SWYD-345",
+      "type": "other",
+      "evidence": "Top-center switchyard symbol labeled SWYD-345 on the solid source line."
+    },
+    {
+      "id": "CB-13A1",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-13A1 above the left 13.8 kV bus with vertical solid drop to BUS-13A."
+    },
+    {
+      "id": "BUS-13A 13.8 KV AUX BUS A",
+      "type": "bus",
+      "evidence": "Upper-left thick horizontal bus labeled BUS-13A 13.8 KV AUX BUS A."
+    },
+    {
+      "id": "CB-13T",
+      "type": "breaker",
+      "evidence": "Tie breaker labeled CB-13T between the BUS-13A and BUS-13B thick horizontal sections."
+    },
+    {
+      "id": "BUS-13B 13.8 KV AUX BUS B",
+      "type": "bus",
+      "evidence": "Upper-right thick horizontal bus labeled BUS-13B 13.8 KV AUX BUS B."
+    },
+    {
+      "id": "CB-13B1",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-13B1 above the right 13.8 kV bus with vertical solid drop to BUS-13B."
+    },
+    {
+      "id": "RELAY-87U",
+      "type": "relay",
+      "evidence": "K relay circle labeled RELAY-87U below the 13.8 kV tie area with dashed C-031/control wiring."
+    },
+    {
+      "id": "AUX-XFMR-1A",
+      "type": "transformer",
+      "evidence": "Upper A-train transformer symbol labeled AUX-XFMR-1A between the 13.8 kV aux bus and incoming 4160 V breaker."
+    },
+    {
+      "id": "CB-4A-IN",
+      "type": "breaker",
+      "evidence": "Incoming breaker labeled CB-4A-IN on the vertical feeder into BUS-4160-A 4160V SAFETY BUS 1A."
+    },
+    {
+      "id": "BUS-4160-A 4160V SAFETY BUS 1A",
+      "type": "bus",
+      "evidence": "Thick horizontal 4160 V safety bus labeled BUS-4160-A 4160V SAFETY BUS 1A in train A."
+    },
+    {
+      "id": "DG-1A",
+      "type": "source",
+      "evidence": "Diesel-generator circle labeled DG-1A above the train A 4160 V bus."
+    },
+    {
+      "id": "CB-DG-A",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-DG-A between DG-1A and BUS-4160-A 4160V SAFETY BUS 1A."
+    },
+    {
+      "id": "SYNC-PNL-1",
+      "type": "control",
+      "evidence": "Control panel labeled SYNC-PNL-1 below the left side of BUS-4160-A with dashed C-030/control wiring to the DG breaker area."
+    },
+    {
+      "id": "CB-4AB-TIE",
+      "type": "breaker",
+      "evidence": "Tie breaker labeled CB-4AB-TIE between BUS-4160-A and BUS-4160-B."
+    },
+    {
+      "id": "CB-LC-A",
+      "type": "breaker",
+      "evidence": "Load-center breaker labeled CB-LC-A below BUS-4160-A 4160V SAFETY BUS 1A."
+    },
+    {
+      "id": "TR-LC-A",
+      "type": "transformer",
+      "evidence": "Load-center transformer symbol labeled TR-LC-A below CB-LC-A."
+    },
+    {
+      "id": "BUS-480-A 480V LOAD CENTER A",
+      "type": "bus",
+      "evidence": "Thick horizontal 480 V load-center bus labeled BUS-480-A 480V LOAD CENTER A in train A."
+    },
+    {
+      "id": "INST-PT-A",
+      "type": "instrument",
+      "evidence": "PT instrument circle labeled INST-PT-A tapped from the right side of BUS-480-A 480V LOAD CENTER A."
+    },
+    {
+      "id": "CB-MCC-AA",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-MCC-AA from BUS-480-A 480V LOAD CENTER A into MCC-AA."
+    },
+    {
+      "id": "MCC-AA",
+      "type": "panel",
+      "evidence": "Motor-control-center box labeled MCC-AA under BUS-480-A 480V LOAD CENTER A."
+    },
+    {
+      "id": "INST-CT-A",
+      "type": "instrument",
+      "evidence": "CT instrument circle labeled INST-CT-A adjacent to the first feeder group in MCC-AA."
+    },
+    {
+      "id": "CB-RHR-A",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-RHR-A below MCC-AA in train A."
+    },
+    {
+      "id": "PUMP-RHR-A",
+      "type": "load",
+      "evidence": "Load symbol labeled PUMP-RHR-A at the lower end of the CB-RHR-A feeder in train A."
+    },
+    {
+      "id": "CB-SI-A",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-SI-A below MCC-AA in train A."
+    },
+    {
+      "id": "PUMP-SI-A",
+      "type": "load",
+      "evidence": "Load symbol labeled PUMP-SI-A at the lower end of the CB-SI-A feeder in train A."
+    },
+    {
+      "id": "CB-CCW-A",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-CCW-A below MCC-AA in train A."
+    },
+    {
+      "id": "PUMP-CCW-A",
+      "type": "load",
+      "evidence": "Load symbol labeled PUMP-CCW-A at the lower end of the CB-CCW-A feeder in train A."
+    },
+    {
+      "id": "CB-FAN-A",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-FAN-A below MCC-AA in train A."
+    },
+    {
+      "id": "FAN-CR-A",
+      "type": "load",
+      "evidence": "Load symbol labeled FAN-CR-A at the lower end of the CB-FAN-A feeder in train A."
+    },
+    {
+      "id": "CB-MCC-AB",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-MCC-AB from BUS-480-A 480V LOAD CENTER A into MCC-AB."
+    },
+    {
+      "id": "MCC-AB",
+      "type": "panel",
+      "evidence": "Motor-control-center box labeled MCC-AB under BUS-480-A 480V LOAD CENTER A."
+    },
+    {
+      "id": "CB-CH-A",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-CH-A below MCC-AB in train A."
+    },
+    {
+      "id": "CHILLER-A",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled CHILLER-A at the lower end of the CB-CH-A feeder in train A."
+    },
+    {
+      "id": "CB-VLV1-A",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-VLV1-A below MCC-AB in train A."
+    },
+    {
+      "id": "MOV-HV1-A",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled MOV-HV1-A at the lower end of the CB-VLV1-A feeder in train A."
+    },
+    {
+      "id": "CB-VLV2-A",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-VLV2-A below MCC-AB in train A."
+    },
+    {
+      "id": "MOV-HV2-A",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled MOV-HV2-A at the lower end of the CB-VLV2-A feeder in train A."
+    },
+    {
+      "id": "CB-SPARE-A",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-SPARE-A below MCC-AB in train A."
+    },
+    {
+      "id": "SPARE-LOAD-A",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled SPARE-LOAD-A at the lower end of the CB-SPARE-A feeder in train A."
+    },
+    {
+      "id": "XFMR-120-A",
+      "type": "transformer",
+      "evidence": "Transformer symbol labeled XFMR-120-A below the train A 480 V distribution area."
+    },
+    {
+      "id": "PNL-120-A",
+      "type": "panel",
+      "evidence": "Panel box labeled PNL-120-A below XFMR-120-A with dashed control wiring to relays and terminals."
+    },
+    {
+      "id": "RELAY-KA1",
+      "type": "relay",
+      "evidence": "Upper K relay circle labeled RELAY-KA1 next to PNL-120-A."
+    },
+    {
+      "id": "RELAY-KA2",
+      "type": "relay",
+      "evidence": "Lower K relay circle labeled RELAY-KA2 next to PNL-120-A."
+    },
+    {
+      "id": "JB-A1",
+      "type": "panel",
+      "evidence": "Junction box labeled JB-A1 to the right of train A relay group on dashed control wiring."
+    },
+    {
+      "id": "TERM-A",
+      "type": "panel",
+      "evidence": "Terminal block labeled TERM-A to the right of JB-A1 on dashed control wiring."
+    },
+    {
+      "id": "GND-A",
+      "type": "ground",
+      "evidence": "Ground symbol labeled GND-A at the lower-right side of train A distribution drawing."
+    },
+    {
+      "id": "AUX-XFMR-1B",
+      "type": "transformer",
+      "evidence": "Upper B-train transformer symbol labeled AUX-XFMR-1B between the 13.8 kV aux bus and incoming 4160 V breaker."
+    },
+    {
+      "id": "CB-4B-IN",
+      "type": "breaker",
+      "evidence": "Incoming breaker labeled CB-4B-IN on the vertical feeder into BUS-4160-B 4160V SAFETY BUS 1B."
+    },
+    {
+      "id": "BUS-4160-B 4160V SAFETY BUS 1B",
+      "type": "bus",
+      "evidence": "Thick horizontal 4160 V safety bus labeled BUS-4160-B 4160V SAFETY BUS 1B in train B."
+    },
+    {
+      "id": "DG-1B",
+      "type": "source",
+      "evidence": "Diesel-generator circle labeled DG-1B above the train B 4160 V bus."
+    },
+    {
+      "id": "CB-DG-B",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-DG-B between DG-1B and BUS-4160-B 4160V SAFETY BUS 1B."
+    },
+    {
+      "id": "CB-LC-B",
+      "type": "breaker",
+      "evidence": "Load-center breaker labeled CB-LC-B below BUS-4160-B 4160V SAFETY BUS 1B."
+    },
+    {
+      "id": "TR-LC-B",
+      "type": "transformer",
+      "evidence": "Load-center transformer symbol labeled TR-LC-B below CB-LC-B."
+    },
+    {
+      "id": "BUS-480-B 480V LOAD CENTER B",
+      "type": "bus",
+      "evidence": "Thick horizontal 480 V load-center bus labeled BUS-480-B 480V LOAD CENTER B in train B."
+    },
+    {
+      "id": "INST-PT-B",
+      "type": "instrument",
+      "evidence": "PT instrument circle labeled INST-PT-B tapped from the right side of BUS-480-B 480V LOAD CENTER B."
+    },
+    {
+      "id": "CB-MCC-BA",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-MCC-BA from BUS-480-B 480V LOAD CENTER B into MCC-BA."
+    },
+    {
+      "id": "MCC-BA",
+      "type": "panel",
+      "evidence": "Motor-control-center box labeled MCC-BA under BUS-480-B 480V LOAD CENTER B."
+    },
+    {
+      "id": "INST-CT-B",
+      "type": "instrument",
+      "evidence": "CT instrument circle labeled INST-CT-B adjacent to the first feeder group in MCC-BA."
+    },
+    {
+      "id": "CB-RHR-B",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-RHR-B below MCC-BA in train B."
+    },
+    {
+      "id": "PUMP-RHR-B",
+      "type": "load",
+      "evidence": "Load symbol labeled PUMP-RHR-B at the lower end of the CB-RHR-B feeder in train B."
+    },
+    {
+      "id": "CB-SI-B",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-SI-B below MCC-BA in train B."
+    },
+    {
+      "id": "PUMP-SI-B",
+      "type": "load",
+      "evidence": "Load symbol labeled PUMP-SI-B at the lower end of the CB-SI-B feeder in train B."
+    },
+    {
+      "id": "CB-CCW-B",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-CCW-B below MCC-BA in train B."
+    },
+    {
+      "id": "PUMP-CCW-B",
+      "type": "load",
+      "evidence": "Load symbol labeled PUMP-CCW-B at the lower end of the CB-CCW-B feeder in train B."
+    },
+    {
+      "id": "CB-FAN-B",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-FAN-B below MCC-BA in train B."
+    },
+    {
+      "id": "FAN-CR-B",
+      "type": "load",
+      "evidence": "Load symbol labeled FAN-CR-B at the lower end of the CB-FAN-B feeder in train B."
+    },
+    {
+      "id": "CB-MCC-BB",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-MCC-BB from BUS-480-B 480V LOAD CENTER B into MCC-BB."
+    },
+    {
+      "id": "MCC-BB",
+      "type": "panel",
+      "evidence": "Motor-control-center box labeled MCC-BB under BUS-480-B 480V LOAD CENTER B."
+    },
+    {
+      "id": "CB-CH-B",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-CH-B below MCC-BB in train B."
+    },
+    {
+      "id": "CHILLER-B",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled CHILLER-B at the lower end of the CB-CH-B feeder in train B."
+    },
+    {
+      "id": "CB-VLV1-B",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-VLV1-B below MCC-BB in train B."
+    },
+    {
+      "id": "MOV-HV1-B",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled MOV-HV1-B at the lower end of the CB-VLV1-B feeder in train B."
+    },
+    {
+      "id": "CB-VLV2-B",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-VLV2-B below MCC-BB in train B."
+    },
+    {
+      "id": "MOV-HV2-B",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled MOV-HV2-B at the lower end of the CB-VLV2-B feeder in train B."
+    },
+    {
+      "id": "CB-SPARE-B",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-SPARE-B below MCC-BB in train B."
+    },
+    {
+      "id": "SPARE-LOAD-B",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled SPARE-LOAD-B at the lower end of the CB-SPARE-B feeder in train B."
+    },
+    {
+      "id": "XFMR-120-B",
+      "type": "transformer",
+      "evidence": "Transformer symbol labeled XFMR-120-B below the train B 480 V distribution area."
+    },
+    {
+      "id": "PNL-120-B",
+      "type": "panel",
+      "evidence": "Panel box labeled PNL-120-B below XFMR-120-B with dashed control wiring to relays and terminals."
+    },
+    {
+      "id": "RELAY-KB1",
+      "type": "relay",
+      "evidence": "Upper K relay circle labeled RELAY-KB1 next to PNL-120-B."
+    },
+    {
+      "id": "RELAY-KB2",
+      "type": "relay",
+      "evidence": "Lower K relay circle labeled RELAY-KB2 next to PNL-120-B."
+    },
+    {
+      "id": "JB-B1",
+      "type": "panel",
+      "evidence": "Junction box labeled JB-B1 to the right of train B relay group on dashed control wiring."
+    },
+    {
+      "id": "TERM-B",
+      "type": "panel",
+      "evidence": "Terminal block labeled TERM-B to the right of JB-B1 on dashed control wiring."
+    },
+    {
+      "id": "GND-B",
+      "type": "ground",
+      "evidence": "Ground symbol labeled GND-B at the lower-right side of train B distribution drawing."
+    },
+    {
+      "id": "SAT-XFMR-1C",
+      "type": "transformer",
+      "evidence": "Upper C-train transformer symbol labeled SAT-XFMR-1C between the 13.8 kV aux bus and incoming 4160 V breaker."
+    },
+    {
+      "id": "CB-4C-IN",
+      "type": "breaker",
+      "evidence": "Incoming breaker labeled CB-4C-IN on the vertical feeder into BUS-4160-C 4160V SAFETY BUS 1C."
+    },
+    {
+      "id": "BUS-4160-C 4160V SAFETY BUS 1C",
+      "type": "bus",
+      "evidence": "Thick horizontal 4160 V safety bus labeled BUS-4160-C 4160V SAFETY BUS 1C in train C."
+    },
+    {
+      "id": "DG-1C",
+      "type": "source",
+      "evidence": "Diesel-generator circle labeled DG-1C above the train C 4160 V bus."
+    },
+    {
+      "id": "CB-DG-C",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-DG-C between DG-1C and BUS-4160-C 4160V SAFETY BUS 1C."
+    },
+    {
+      "id": "CB-4CD-TIE",
+      "type": "breaker",
+      "evidence": "Tie breaker labeled CB-4CD-TIE between BUS-4160-C and BUS-4160-D."
+    },
+    {
+      "id": "CB-LC-C",
+      "type": "breaker",
+      "evidence": "Load-center breaker labeled CB-LC-C below BUS-4160-C 4160V SAFETY BUS 1C."
+    },
+    {
+      "id": "TR-LC-C",
+      "type": "transformer",
+      "evidence": "Load-center transformer symbol labeled TR-LC-C below CB-LC-C."
+    },
+    {
+      "id": "BUS-480-C 480V LOAD CENTER C",
+      "type": "bus",
+      "evidence": "Thick horizontal 480 V load-center bus labeled BUS-480-C 480V LOAD CENTER C in train C."
+    },
+    {
+      "id": "INST-PT-C",
+      "type": "instrument",
+      "evidence": "PT instrument circle labeled INST-PT-C tapped from the right side of BUS-480-C 480V LOAD CENTER C."
+    },
+    {
+      "id": "CB-MCC-CA",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-MCC-CA from BUS-480-C 480V LOAD CENTER C into MCC-CA."
+    },
+    {
+      "id": "MCC-CA",
+      "type": "panel",
+      "evidence": "Motor-control-center box labeled MCC-CA under BUS-480-C 480V LOAD CENTER C."
+    },
+    {
+      "id": "INST-CT-C",
+      "type": "instrument",
+      "evidence": "CT instrument circle labeled INST-CT-C adjacent to the first feeder group in MCC-CA."
+    },
+    {
+      "id": "CB-RHR-C",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-RHR-C below MCC-CA in train C."
+    },
+    {
+      "id": "PUMP-RHR-C",
+      "type": "load",
+      "evidence": "Load symbol labeled PUMP-RHR-C at the lower end of the CB-RHR-C feeder in train C."
+    },
+    {
+      "id": "CB-SI-C",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-SI-C below MCC-CA in train C."
+    },
+    {
+      "id": "PUMP-SI-C",
+      "type": "load",
+      "evidence": "Load symbol labeled PUMP-SI-C at the lower end of the CB-SI-C feeder in train C."
+    },
+    {
+      "id": "CB-CCW-C",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-CCW-C below MCC-CA in train C."
+    },
+    {
+      "id": "PUMP-CCW-C",
+      "type": "load",
+      "evidence": "Load symbol labeled PUMP-CCW-C at the lower end of the CB-CCW-C feeder in train C."
+    },
+    {
+      "id": "CB-FAN-C",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-FAN-C below MCC-CA in train C."
+    },
+    {
+      "id": "FAN-CR-C",
+      "type": "load",
+      "evidence": "Load symbol labeled FAN-CR-C at the lower end of the CB-FAN-C feeder in train C."
+    },
+    {
+      "id": "CB-MCC-CB",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-MCC-CB from BUS-480-C 480V LOAD CENTER C into MCC-CB."
+    },
+    {
+      "id": "MCC-CB",
+      "type": "panel",
+      "evidence": "Motor-control-center box labeled MCC-CB under BUS-480-C 480V LOAD CENTER C."
+    },
+    {
+      "id": "CB-CH-C",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-CH-C below MCC-CB in train C."
+    },
+    {
+      "id": "CHILLER-C",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled CHILLER-C at the lower end of the CB-CH-C feeder in train C."
+    },
+    {
+      "id": "CB-VLV1-C",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-VLV1-C below MCC-CB in train C."
+    },
+    {
+      "id": "MOV-HV1-C",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled MOV-HV1-C at the lower end of the CB-VLV1-C feeder in train C."
+    },
+    {
+      "id": "CB-VLV2-C",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-VLV2-C below MCC-CB in train C."
+    },
+    {
+      "id": "MOV-HV2-C",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled MOV-HV2-C at the lower end of the CB-VLV2-C feeder in train C."
+    },
+    {
+      "id": "CB-SPARE-C",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-SPARE-C below MCC-CB in train C."
+    },
+    {
+      "id": "SPARE-LOAD-C",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled SPARE-LOAD-C at the lower end of the CB-SPARE-C feeder in train C."
+    },
+    {
+      "id": "XFMR-120-C",
+      "type": "transformer",
+      "evidence": "Transformer symbol labeled XFMR-120-C below the train C 480 V distribution area."
+    },
+    {
+      "id": "PNL-120-C",
+      "type": "panel",
+      "evidence": "Panel box labeled PNL-120-C below XFMR-120-C with dashed control wiring to relays and terminals."
+    },
+    {
+      "id": "RELAY-KC1",
+      "type": "relay",
+      "evidence": "Upper K relay circle labeled RELAY-KC1 next to PNL-120-C."
+    },
+    {
+      "id": "RELAY-KC2",
+      "type": "relay",
+      "evidence": "Lower K relay circle labeled RELAY-KC2 next to PNL-120-C."
+    },
+    {
+      "id": "JB-C1",
+      "type": "panel",
+      "evidence": "Junction box labeled JB-C1 to the right of train C relay group on dashed control wiring."
+    },
+    {
+      "id": "TERM-C",
+      "type": "panel",
+      "evidence": "Terminal block labeled TERM-C to the right of JB-C1 on dashed control wiring."
+    },
+    {
+      "id": "GND-C",
+      "type": "ground",
+      "evidence": "Ground symbol labeled GND-C at the lower-right side of train C distribution drawing."
+    },
+    {
+      "id": "SAT-XFMR-1D",
+      "type": "transformer",
+      "evidence": "Upper D-train transformer symbol labeled SAT-XFMR-1D between the 13.8 kV aux bus and incoming 4160 V breaker."
+    },
+    {
+      "id": "CB-4D-IN",
+      "type": "breaker",
+      "evidence": "Incoming breaker labeled CB-4D-IN on the vertical feeder into BUS-4160-D 4160V SAFETY BUS 1D."
+    },
+    {
+      "id": "BUS-4160-D 4160V SAFETY BUS 1D",
+      "type": "bus",
+      "evidence": "Thick horizontal 4160 V safety bus labeled BUS-4160-D 4160V SAFETY BUS 1D in train D."
+    },
+    {
+      "id": "DG-1D",
+      "type": "source",
+      "evidence": "Diesel-generator circle labeled DG-1D above the train D 4160 V bus."
+    },
+    {
+      "id": "CB-DG-D",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-DG-D between DG-1D and BUS-4160-D 4160V SAFETY BUS 1D."
+    },
+    {
+      "id": "CB-LC-D",
+      "type": "breaker",
+      "evidence": "Load-center breaker labeled CB-LC-D below BUS-4160-D 4160V SAFETY BUS 1D."
+    },
+    {
+      "id": "TR-LC-D",
+      "type": "transformer",
+      "evidence": "Load-center transformer symbol labeled TR-LC-D below CB-LC-D."
+    },
+    {
+      "id": "BUS-480-D 480V LOAD CENTER D",
+      "type": "bus",
+      "evidence": "Thick horizontal 480 V load-center bus labeled BUS-480-D 480V LOAD CENTER D in train D."
+    },
+    {
+      "id": "INST-PT-D",
+      "type": "instrument",
+      "evidence": "PT instrument circle labeled INST-PT-D tapped from the right side of BUS-480-D 480V LOAD CENTER D."
+    },
+    {
+      "id": "CB-MCC-DA",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-MCC-DA from BUS-480-D 480V LOAD CENTER D into MCC-DA."
+    },
+    {
+      "id": "MCC-DA",
+      "type": "panel",
+      "evidence": "Motor-control-center box labeled MCC-DA under BUS-480-D 480V LOAD CENTER D."
+    },
+    {
+      "id": "INST-CT-D",
+      "type": "instrument",
+      "evidence": "CT instrument circle labeled INST-CT-D adjacent to the first feeder group in MCC-DA."
+    },
+    {
+      "id": "CB-RHR-D",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-RHR-D below MCC-DA in train D."
+    },
+    {
+      "id": "PUMP-RHR-D",
+      "type": "load",
+      "evidence": "Load symbol labeled PUMP-RHR-D at the lower end of the CB-RHR-D feeder in train D."
+    },
+    {
+      "id": "CB-SI-D",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-SI-D below MCC-DA in train D."
+    },
+    {
+      "id": "PUMP-SI-D",
+      "type": "load",
+      "evidence": "Load symbol labeled PUMP-SI-D at the lower end of the CB-SI-D feeder in train D."
+    },
+    {
+      "id": "CB-CCW-D",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-CCW-D below MCC-DA in train D."
+    },
+    {
+      "id": "PUMP-CCW-D",
+      "type": "load",
+      "evidence": "Load symbol labeled PUMP-CCW-D at the lower end of the CB-CCW-D feeder in train D."
+    },
+    {
+      "id": "CB-FAN-D",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-FAN-D below MCC-DA in train D."
+    },
+    {
+      "id": "FAN-CR-D",
+      "type": "load",
+      "evidence": "Load symbol labeled FAN-CR-D at the lower end of the CB-FAN-D feeder in train D."
+    },
+    {
+      "id": "CB-MCC-DB",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-MCC-DB from BUS-480-D 480V LOAD CENTER D into MCC-DB."
+    },
+    {
+      "id": "MCC-DB",
+      "type": "panel",
+      "evidence": "Motor-control-center box labeled MCC-DB under BUS-480-D 480V LOAD CENTER D."
+    },
+    {
+      "id": "CB-CH-D",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-CH-D below MCC-DB in train D."
+    },
+    {
+      "id": "CHILLER-D",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled CHILLER-D at the lower end of the CB-CH-D feeder in train D."
+    },
+    {
+      "id": "CB-VLV1-D",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-VLV1-D below MCC-DB in train D."
+    },
+    {
+      "id": "MOV-HV1-D",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled MOV-HV1-D at the lower end of the CB-VLV1-D feeder in train D."
+    },
+    {
+      "id": "CB-VLV2-D",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-VLV2-D below MCC-DB in train D."
+    },
+    {
+      "id": "MOV-HV2-D",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled MOV-HV2-D at the lower end of the CB-VLV2-D feeder in train D."
+    },
+    {
+      "id": "CB-SPARE-D",
+      "type": "breaker",
+      "evidence": "Branch breaker labeled CB-SPARE-D below MCC-DB in train D."
+    },
+    {
+      "id": "SPARE-LOAD-D",
+      "type": "load",
+      "evidence": "Load/place-holder symbol labeled SPARE-LOAD-D at the lower end of the CB-SPARE-D feeder in train D."
+    },
+    {
+      "id": "XFMR-120-D",
+      "type": "transformer",
+      "evidence": "Transformer symbol labeled XFMR-120-D below the train D 480 V distribution area."
+    },
+    {
+      "id": "PNL-120-D",
+      "type": "panel",
+      "evidence": "Panel box labeled PNL-120-D below XFMR-120-D with dashed control wiring to relays and terminals."
+    },
+    {
+      "id": "RELAY-KD1",
+      "type": "relay",
+      "evidence": "Upper K relay circle labeled RELAY-KD1 next to PNL-120-D."
+    },
+    {
+      "id": "RELAY-KD2",
+      "type": "relay",
+      "evidence": "Lower K relay circle labeled RELAY-KD2 next to PNL-120-D."
+    },
+    {
+      "id": "JB-D1",
+      "type": "panel",
+      "evidence": "Junction box labeled JB-D1 to the right of train D relay group on dashed control wiring."
+    },
+    {
+      "id": "TERM-D",
+      "type": "panel",
+      "evidence": "Terminal block labeled TERM-D to the right of JB-D1 on dashed control wiring."
+    },
+    {
+      "id": "GND-D",
+      "type": "ground",
+      "evidence": "Ground symbol labeled GND-D at the lower-right side of train D distribution drawing."
+    },
+    {
+      "id": "AC FEED TO CHGR-125A",
+      "type": "logical_node",
+      "evidence": "Unlabeled solid AC feeder entering CB-DC-A1 above CHGR-125A in the lower-left control-power area."
+    },
+    {
+      "id": "CB-DC-A1",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-DC-A1 on the solid feeder into CHGR-125A."
+    },
+    {
+      "id": "CHGR-125A",
+      "type": "other",
+      "evidence": "AC/DC charger rectangle labeled CHGR-125A above BUS-125A."
+    },
+    {
+      "id": "BUS-125A 125 VDC BUS A",
+      "type": "bus",
+      "evidence": "Lower-left thick horizontal bus labeled BUS-125A 125 VDC BUS A."
+    },
+    {
+      "id": "BAT-125A",
+      "type": "source",
+      "evidence": "Battery symbol labeled BAT-125A connected by a vertical tap to BUS-125A."
+    },
+    {
+      "id": "FUSE-FD-A",
+      "type": "other",
+      "evidence": "Fuse symbol labeled FUSE-FD-A tapped from BUS-125A and feeding INV-UPS-A."
+    },
+    {
+      "id": "INV-UPS-A",
+      "type": "other",
+      "evidence": "DC/AC inverter rectangle labeled INV-UPS-A between BUS-125A and BUS-UPS-A."
+    },
+    {
+      "id": "BUS-UPS-A 120 VAC UPS BUS A",
+      "type": "bus",
+      "evidence": "Lower-left thick horizontal UPS bus labeled BUS-UPS-A 120 VAC UPS BUS A."
+    },
+    {
+      "id": "DC-MCC-A",
+      "type": "panel",
+      "evidence": "DC motor-control-center box labeled DC-MCC-A tapped from BUS-125A."
+    },
+    {
+      "id": "SOL-SDV-A",
+      "type": "control",
+      "evidence": "Solenoid valve symbol labeled SOL-SDV-A connected by dashed control line from DC-MCC-A."
+    },
+    {
+      "id": "DIODE-OR-A",
+      "type": "other",
+      "evidence": "Diode symbol labeled DIODE-OR-A above BUS-125A with a solid connection to the bus."
+    },
+    {
+      "id": "GRD-DC-A",
+      "type": "ground",
+      "evidence": "Ground symbol labeled GRD-DC-A connected to the right portion of BUS-125A."
+    },
+    {
+      "id": "INST-RACK-A",
+      "type": "instrument",
+      "evidence": "Instrument rack box labeled INST-RACK-A with vertical dotted/instrument tap to BUS-UPS-A."
+    },
+    {
+      "id": "PNL-RPS-A",
+      "type": "control",
+      "evidence": "Panel box labeled PNL-RPS-A below BUS-UPS-A with dashed control wiring to RPS/ESF relays."
+    },
+    {
+      "id": "RELAY-RPS-A1",
+      "type": "relay",
+      "evidence": "K relay circle labeled RELAY-RPS-A1 below PNL-RPS-A."
+    },
+    {
+      "id": "RELAY-ESF-A",
+      "type": "relay",
+      "evidence": "K relay circle labeled RELAY-ESF-A to the right of PNL-RPS-A."
+    },
+    {
+      "id": "PLC-SAF-A",
+      "type": "control",
+      "evidence": "PLC box labeled PLC-SAF-A below BUS-UPS-A on a dashed vertical tap."
+    },
+    {
+      "id": "ANN-PNL-CR",
+      "type": "control",
+      "evidence": "Annunciator/control panel labeled ANN-PNL-CR connected by dashed control line from the right end of BUS-UPS-A."
+    },
+    {
+      "id": "JB-CR-01",
+      "type": "panel",
+      "evidence": "Junction box labeled JB-CR-01 below ANN-PNL-CR with dashed lines to MTB terminal blocks."
+    },
+    {
+      "id": "TERM-MTB-A",
+      "type": "panel",
+      "evidence": "Terminal block labeled TERM-MTB-A below JB-CR-01."
+    },
+    {
+      "id": "TERM-MTB-B",
+      "type": "panel",
+      "evidence": "Terminal block labeled TERM-MTB-B below JB-CR-01."
+    },
+    {
+      "id": "AC FEED TO CHGR-125B",
+      "type": "logical_node",
+      "evidence": "Unlabeled solid AC feeder entering CB-DC-B1 above CHGR-125B in the lower-center control-power area."
+    },
+    {
+      "id": "CB-DC-B1",
+      "type": "breaker",
+      "evidence": "Breaker labeled CB-DC-B1 on the solid feeder into CHGR-125B."
+    },
+    {
+      "id": "CHGR-125B",
+      "type": "other",
+      "evidence": "AC/DC charger rectangle labeled CHGR-125B above BUS-125B."
+    },
+    {
+      "id": "BUS-125B 125 VDC BUS B",
+      "type": "bus",
+      "evidence": "Lower-center/right thick horizontal bus labeled BUS-125B 125 VDC BUS B."
+    },
+    {
+      "id": "BAT-125B",
+      "type": "source",
+      "evidence": "Battery symbol labeled BAT-125B connected by a vertical tap to BUS-125B."
+    },
+    {
+      "id": "FUSE-FD-B",
+      "type": "other",
+      "evidence": "Fuse symbol labeled FUSE-FD-B tapped from BUS-125B and feeding INV-UPS-B."
+    },
+    {
+      "id": "INV-UPS-B",
+      "type": "other",
+      "evidence": "DC/AC inverter rectangle labeled INV-UPS-B between BUS-125B and BUS-UPS-B."
+    },
+    {
+      "id": "BUS-UPS-B 120 VAC UPS BUS B",
+      "type": "bus",
+      "evidence": "Lower-center/right thick horizontal UPS bus labeled BUS-UPS-B 120 VAC UPS BUS B."
+    },
+    {
+      "id": "DC-MCC-B",
+      "type": "panel",
+      "evidence": "DC motor-control-center box labeled DC-MCC-B tapped from BUS-125B."
+    },
+    {
+      "id": "SOL-SDV-B",
+      "type": "control",
+      "evidence": "Solenoid valve symbol labeled SOL-SDV-B connected by dashed control line from DC-MCC-B."
+    },
+    {
+      "id": "DIODE-OR-B",
+      "type": "other",
+      "evidence": "Diode symbol labeled DIODE-OR-B above the left side of BUS-125B with a solid connection to the bus."
+    },
+    {
+      "id": "GRD-DC-B",
+      "type": "ground",
+      "evidence": "Ground symbol labeled GRD-DC-B connected to the right portion of BUS-125B."
+    },
+    {
+      "id": "INST-RACK-B",
+      "type": "instrument",
+      "evidence": "Instrument rack box labeled INST-RACK-B with vertical dotted/instrument tap to BUS-UPS-B."
+    },
+    {
+      "id": "PNL-RPS-B",
+      "type": "control",
+      "evidence": "Panel box labeled PNL-RPS-B below BUS-UPS-B with dashed control wiring to RPS/ESF relays."
+    },
+    {
+      "id": "RELAY-RPS-B1",
+      "type": "relay",
+      "evidence": "K relay circle labeled RELAY-RPS-B1 below PNL-RPS-B."
+    },
+    {
+      "id": "RELAY-ESF-B",
+      "type": "relay",
+      "evidence": "K relay circle labeled RELAY-ESF-B to the right of PNL-RPS-B."
+    },
+    {
+      "id": "PLC-SAF-B",
+      "type": "control",
+      "evidence": "PLC box labeled PLC-SAF-B below BUS-UPS-B on a dashed vertical tap."
+    },
+    {
+      "id": "REC-SEQ-1",
+      "type": "control",
+      "evidence": "Recorder/sequencer box labeled REC-SEQ-1 connected by dashed control line from the right end of BUS-UPS-B."
+    },
+    {
+      "id": "XFMR-PT-1",
+      "type": "instrument",
+      "evidence": "Instrument transformer symbol labeled XFMR-PT-1 above the V/A meters in the lower-right area."
+    },
+    {
+      "id": "XFMR-PT-1 INSTRUMENT LOOP",
+      "type": "logical_node",
+      "evidence": "Unlabeled dotted/dashed instrument loop tying XFMR-PT-1 and the adjacent V/A meter taps."
+    },
+    {
+      "id": "METER-V01",
+      "type": "instrument",
+      "evidence": "Voltmeter circle labeled METER-V01 below XFMR-PT-1."
+    },
+    {
+      "id": "METER-A01",
+      "type": "instrument",
+      "evidence": "Ammeter circle labeled METER-A01 to the right of METER-V01."
+    }
+  ]
+}

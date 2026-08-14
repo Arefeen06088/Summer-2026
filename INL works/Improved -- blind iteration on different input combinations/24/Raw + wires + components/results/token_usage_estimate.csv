@@ -1,0 +1,7 @@
+document,iteration,round,call_id,actor,input_tokens_est,cached_input_tokens_est,text_input_tokens_est,image_file_count,image_input_tokens_est,output_tokens_low_est,output_tokens_expected_est,output_tokens_high_est,reasoning_tokens_est,total_low_tokens_est,total_expected_tokens_est,total_high_tokens_est,usage_object_available,notes
+24,1,setup,main-setup,main,2200,0,2200,0,0,600,1100,1800,900,3700,4200,4900,no,Main agent inspected paths/crops and spawned Diego; exact usage object not exposed.
+24,1,1,diego-r1,Diego,28560,0,1700,24,26860,2500,4200,6200,1500,32560,34260,36260,no,High-recall extraction; image tokens estimated from 24 visual crops.
+24,1,2,jennifer-r2,Jennifer,25465,0,6000,17,19465,1800,3100,4800,1100,28365,29665,31365,no,Precision review; exact usage object not exposed by subagent notification.
+24,1,3,diego-r3,Diego,4200,0,4200,0,0,300,800,1600,450,4950,5450,6250,no,Convergence review; text-only estimate.
+24,1,4,jennifer-r4,Jennifer,140,0,140,0,0,250,650,1300,350,740,1140,1790,no,Final convergence confirmation; text-only estimate.
+24,1,write/final,main-artifacts-final,main,1800,0,1800,0,0,600,1200,2200,1200,3600,4200,5200,no,Artifact writing and final report; exact usage object not exposed.

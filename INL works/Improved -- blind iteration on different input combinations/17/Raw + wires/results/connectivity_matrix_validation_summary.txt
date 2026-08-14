@@ -1,0 +1,21 @@
+Connectivity matrix validation summary
+Document: 17
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\17\synthetic_npp_aux_power_schematic_overlap_fixed_connectivity_matrix.csv
+GT normalized nodes: 200; GT normalized edges: 209
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from connectivity_matrix_round_01_jennifer_precision.csv with Precision=0.884817, Recall=0.808612, F1=0.845000
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=169, FP=22, FN=40, Precision=0.884817, Recall=0.808612, F1=0.845000
+Primary issue: missing or differently named GT components contributed false negatives.
+
+Extra/non-GT nodes most responsible for FP edges: HTR-AHU-1A (2 FP edges); PUMP-CV-1B (2 FP edges); HTR-RPR-1A (2 FP edges); HTR-AHU-1B (2 FP edges); FAN-CRDR-1A (2 FP edges); FAN-CRDR-1B (2 FP edges); HTR-RPR-1B (2 FP edges); PUMP-CV-1A (2 FP edges).
+Missing GT nodes examples: FAN-CRDM-1A; FAN-CRDM-1B; GND-SWGR-A; GND-SWGR-B; HTR-PZR-1A; HTR-PZR-1B; LS-RWCU-101A; LS-RWCU-101B; MOV-RHR-102A; MOV-RHR-102B.
+Close-but-not-exact name examples: HOV-RHR-102A -> MOV-RHR-102A (0.92); HOV-RHR-102B -> MOV-RHR-102B (0.92); FAN-CRDR-1A -> FAN-CRDM-1A (0.91); FAN-CRDR-1B -> FAN-CRDM-1B (0.91); GND-SMGR-A -> GND-SWGR-A (0.90); GND-SMGR-B -> GND-SWGR-B (0.90); HTR-AHU-1A -> MTR-AHU-1A (0.90); HTR-AHU-1B -> MTR-AHU-1B (0.90).
+False-negative edge examples among GT-known nodes: ANN-ESF-A -- PNL-ANN; ANN-ESF-B -- PNL-ANN; CB-TR-A1 -- RELAY-UV-A1; CB-TR-A2 -- RELAY-UV-A2; CB-TR-B1 -- RELAY-UV-B1; CB-TR-B2 -- RELAY-UV-B2; LS-RHR-1A -- PUMP-RHR-1A; LS-RHR-1B -- PUMP-RHR-1B.
+False-positive examples involving extra/non-GT nodes: BUS-480-A -- GND-SMGR-A; BUS-480-B -- GND-SMGR-B; FAN-CRDR-1A -- GND-FAN-1A; FAN-CRDR-1A -- MS-105A; FAN-CRDR-1B -- GND-FAN-1B; FAN-CRDR-1B -- MS-205B; GND-AHU-1A -- HTR-AHU-1A; GND-AHU-1B -- HTR-AHU-1B.
+False-negative examples involving missing/differently named nodes: BUS-480-A -- GND-SWGR-A; BUS-480-B -- GND-SWGR-B; FAN-CRDM-1A -- GND-FAN-1A; FAN-CRDM-1A -- MS-105A; FAN-CRDM-1B -- GND-FAN-1B; FAN-CRDM-1B -- MS-205B; GND-AHU-1A -- MTR-AHU-1A; GND-AHU-1B -- MTR-AHU-1B.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (HTR-AHU-1A; PUMP-CV-1B; HTR-RPR-1A; HTR-AHU-1B; FAN-CRDR-1A), the final-row metrics would be TP=169, FP=12, FN=40, Precision=0.933702, Recall=0.808612, F1=0.866667.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=169, FP=0, FN=40, Precision=1.000000, Recall=0.808612, F1=0.894180.

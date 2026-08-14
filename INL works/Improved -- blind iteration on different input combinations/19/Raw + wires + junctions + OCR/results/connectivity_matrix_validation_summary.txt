@@ -1,0 +1,33 @@
+Connectivity matrix validation summary - Document 19 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\19\connectivity_matrix_v3.csv
+GT after normalization: 200 undirected edges across 200 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token usage was not available in local tracking files.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=195, FP=5, FN=5, Precision=0.975000, Recall=0.975000, F1=0.975000.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names.
+- Extracted components: 201; extra/non-GT names: 1; missing GT component names: 0.
+- False-positive extracted edge examples: CB-301 -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CB-302 -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CHGR-125A -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CHGR-125B -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; INST-601 -- LS-MOV601.
+- Missed GT edge examples: BUS-480-A -- CB-301; BUS-480-A -- CHGR-125A; BUS-480-B -- CB-302; BUS-480-B -- CHGR-125B; LS-MOV601 -- VALVE-MOV601.
+- Extra/non-GT component examples: CONTROL_POWER_DC_DISTRIBUTION_HEADER.
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=195, FP=0, FN=5, Precision=1.000000, Recall=0.975000, F1=0.987342.
+- If all missed GT edges were added, final performance would be TP=200, FP=5, FN=0, Precision=0.975610, Recall=1.000000, F1=0.987654.
+- If extra node CONTROL_POWER_DC_DISTRIBUTION_HEADER and its 4 false-positive incident edge(s) were not put in extraction, final performance would be TP=195, FP=1, FN=5, Precision=0.994898, Recall=0.975000, F1=0.984848.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.975000.
+
+Round-specific notes:
+- Diego -- Round 1: TP=195, FP=7, FN=5, F1=0.970149; extra nodes=1, missing GT nodes=0. FP examples: BUS-120AC-B -- CHGR-125B; BUS-125DC-A -- JB-MAIN; CB-301 -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CB-302 -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; ... (+3 more). FN examples: BUS-480-A -- CB-301; BUS-480-A -- CHGR-125A; BUS-480-B -- CB-302; BUS-480-B -- CHGR-125B; ... (+1 more).
+- Jennifer -- Round 2: TP=195, FP=5, FN=5, F1=0.975000; extra nodes=1, missing GT nodes=0. FP examples: CB-301 -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CB-302 -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CHGR-125A -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CHGR-125B -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; ... (+1 more). FN examples: BUS-480-A -- CB-301; BUS-480-A -- CHGR-125A; BUS-480-B -- CB-302; BUS-480-B -- CHGR-125B; ... (+1 more).
+- Diego -- Round 3: TP=195, FP=5, FN=5, F1=0.975000; extra nodes=1, missing GT nodes=0. FP examples: CB-301 -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CB-302 -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CHGR-125A -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CHGR-125B -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; ... (+1 more). FN examples: BUS-480-A -- CB-301; BUS-480-A -- CHGR-125A; BUS-480-B -- CB-302; BUS-480-B -- CHGR-125B; ... (+1 more).
+- Jennifer -- Round 4: TP=195, FP=5, FN=5, F1=0.975000; extra nodes=1, missing GT nodes=0. FP examples: CB-301 -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CB-302 -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CHGR-125A -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CHGR-125B -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; ... (+1 more). FN examples: BUS-480-A -- CB-301; BUS-480-A -- CHGR-125A; BUS-480-B -- CB-302; BUS-480-B -- CHGR-125B; ... (+1 more).
+- Final connectivity -- Final: TP=195, FP=5, FN=5, F1=0.975000; extra nodes=1, missing GT nodes=0. FP examples: CB-301 -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CB-302 -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CHGR-125A -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; CHGR-125B -- CONTROL_POWER_DC_DISTRIBUTION_HEADER; ... (+1 more). FN examples: BUS-480-A -- CB-301; BUS-480-A -- CHGR-125A; BUS-480-B -- CB-302; BUS-480-B -- CHGR-125B; ... (+1 more).

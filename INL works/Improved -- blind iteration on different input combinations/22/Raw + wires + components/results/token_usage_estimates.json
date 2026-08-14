@@ -1,0 +1,90 @@
+{
+  "calls": [
+    {
+      "call_id": "doc22-main-aggregate",
+      "document": 22,
+      "iteration": 1,
+      "actor": "Main agent",
+      "round_name": "orchestration",
+      "model_call": "aggregate local visual inspection, agent coordination, artifact writing",
+      "text_prompt_tokens": 3513,
+      "image_file_tokens": 35445,
+      "cached_input_tokens": "unavailable",
+      "output_tokens": 3000,
+      "reasoning_tokens": "unavailable",
+      "notes": "aggregate estimate; exact internal main-agent calls/usage are not exposed in this local session",
+      "input_tokens": 38958
+    },
+    {
+      "call_id": "doc22-r1-diego",
+      "document": 22,
+      "iteration": 1,
+      "actor": "Diego",
+      "round_name": "round_01_diego",
+      "model_call": "spawn_agent high-recall extraction",
+      "text_prompt_tokens": 37,
+      "image_file_tokens": 9350,
+      "cached_input_tokens": "unavailable",
+      "output_tokens": 4300,
+      "reasoning_tokens": "unavailable",
+      "notes": "actual usage object not exposed by subagent tool; output estimated from returned text length",
+      "input_tokens": 9387
+    },
+    {
+      "call_id": "doc22-r2-jennifer",
+      "document": 22,
+      "iteration": 1,
+      "actor": "Jennifer",
+      "round_name": "round_02_jennifer",
+      "model_call": "spawn_agent precision review",
+      "text_prompt_tokens": 3639,
+      "image_file_tokens": 9010,
+      "cached_input_tokens": "unavailable",
+      "output_tokens": 3300,
+      "reasoning_tokens": "unavailable",
+      "notes": "actual usage object not exposed by subagent tool; includes Diego R1 proposal in prompt",
+      "input_tokens": 12649
+    },
+    {
+      "call_id": "doc22-r3-diego",
+      "document": 22,
+      "iteration": 1,
+      "actor": "Diego",
+      "round_name": "round_03_diego",
+      "model_call": "send_input acceptance/refinement",
+      "text_prompt_tokens": 1334,
+      "image_file_tokens": 0,
+      "cached_input_tokens": "unavailable",
+      "output_tokens": 500,
+      "reasoning_tokens": "unavailable",
+      "notes": "incremental text-only follow-up; prior visual context may be cached by service but amount is unavailable",
+      "input_tokens": 1334
+    },
+    {
+      "call_id": "doc22-r4-jennifer",
+      "document": 22,
+      "iteration": 1,
+      "actor": "Jennifer",
+      "round_name": "round_04_jennifer",
+      "model_call": "send_input final confirmation",
+      "text_prompt_tokens": 387,
+      "image_file_tokens": 0,
+      "cached_input_tokens": "unavailable",
+      "output_tokens": 350,
+      "reasoning_tokens": "unavailable",
+      "notes": "incremental text-only final confirmation; exact response usage unavailable",
+      "input_tokens": 387
+    }
+  ],
+  "totals": {
+    "document": 22,
+    "iteration": 1,
+    "input_tokens_est": 62715,
+    "image_file_input_tokens_est": 53805,
+    "output_tokens_est": 11450,
+    "low_total_est": 59335,
+    "expected_total_est": 74165,
+    "high_total_est": 92709,
+    "method": "local heuristic: text chars/4 plus high-detail image tile estimate; Responses token-counting endpoint unavailable without API key"
+  }
+}

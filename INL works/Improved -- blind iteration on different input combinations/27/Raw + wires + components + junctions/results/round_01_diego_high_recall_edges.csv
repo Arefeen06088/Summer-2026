@@ -1,0 +1,204 @@
+source,target,line_type,status,evidence
+GRID-345,DS-101,solid,confirmed,Normal/emergency source block to source disconnect.
+DS-101,CB-101,solid,confirmed,Source disconnect to main incoming breaker.
+CB-101,BUS-13KV-N,bus-tap,confirmed,Main breaker taps BUS-13KV-N.
+GEN-G1,CB-G1,solid,confirmed,Generator G1 downlead to breaker.
+CB-G1,BUS-13KV-N,bus-tap,confirmed,G1 breaker taps BUS-13KV-N.
+GEN-G2,CB-G2,solid,confirmed,Generator G2 downlead to breaker.
+CB-G2,BUS-13KV-N,bus-tap,confirmed,G2 breaker taps BUS-13KV-N.
+BUS-13KV-N,TR-1A,bus-tap,confirmed,13 kV bus vertical feeder to transformer TR-1A.
+TR-1A,CB-4A-IN,solid,confirmed,TR-1A secondary to 4160 A incoming breaker.
+CB-4A-IN,BUS-4160-A,bus-tap,confirmed,4160 A incoming breaker taps BUS-4160-A.
+BUS-13KV-N,TR-1B,bus-tap,confirmed,13 kV bus vertical feeder to transformer TR-1B.
+TR-1B,CB-4B-IN,solid,confirmed,TR-1B secondary to 4160 B incoming breaker.
+CB-4B-IN,BUS-4160-B,bus-tap,confirmed,4160 B incoming breaker taps BUS-4160-B.
+DG-1A,CB-DG1A,solid,confirmed,Diesel generator A downlead to breaker.
+CB-DG1A,BUS-4160-A,bus-tap,confirmed,DG A breaker taps BUS-4160-A.
+DG-1B,CB-DG1B,solid,confirmed,Diesel generator B downlead to breaker.
+CB-DG1B,BUS-4160-B,bus-tap,confirmed,DG B breaker taps BUS-4160-B.
+BUS-4160-A,CB-TIE-41,normally_open_tie,normally_open,"CB-TIE-41 is drawn between 4160 A and B buses; retained as terminal adjacency, normally open."
+CB-TIE-41,BUS-4160-B,normally_open_tie,normally_open,"CB-TIE-41 is drawn between 4160 A and B buses; retained as terminal adjacency, normally open."
+BUS-4160-A,TR-480-A,bus-tap,confirmed,480 V load center A transformer primary is routed from BUS-4160-A.
+TR-480-A,CB-480A-IN,solid,confirmed,TR-480-A secondary connects to CB-480A-IN.
+CB-480A-IN,BUS-480-A,bus-tap,confirmed,CB-480A-IN incoming feeder taps BUS-480-A.
+BUS-4160-B,TR-480-B,bus-tap,confirmed,480 V load center B transformer primary is routed from BUS-4160-B.
+TR-480-B,CB-480B-IN,solid,confirmed,TR-480-B secondary connects to CB-480B-IN.
+CB-480B-IN,BUS-480-B,bus-tap,confirmed,CB-480B-IN incoming feeder taps BUS-480-B.
+BUS-4160-A,TR-480-C,bus-tap,confirmed,480 V load center C transformer primary is routed from BUS-4160-A.
+TR-480-C,CB-480C-IN,solid,confirmed,TR-480-C secondary connects to CB-480C-IN.
+CB-480C-IN,BUS-480-C,bus-tap,confirmed,CB-480C-IN incoming feeder taps BUS-480-C.
+BUS-4160-B,TR-480-D,bus-tap,confirmed,480 V load center D transformer primary is routed from BUS-4160-B.
+TR-480-D,CB-480D-IN,solid,confirmed,TR-480-D secondary connects to CB-480D-IN.
+CB-480D-IN,BUS-480-D,bus-tap,confirmed,CB-480D-IN incoming feeder taps BUS-480-D.
+DC-BUS-125A,DC-BUS-125B,dc_ground,confirmed,Continuous labeled 125 V DC bus segment between A and B DC bus labels.
+DC-BUS-125A,PANEL-CTRL-MAIN,dashed,confirmed,Common DC bus tap drops to PANEL-CTRL-MAIN; represented at DC-BUS-125A/B common segment.
+BUS-480-C,GND-EQ-A,dc_ground,confirmed,Left lower ground path from BUS-480-C area to GND-EQ-A symbol.
+BUS-480-D,GND-EQ-B,dc_ground,confirmed,Right lower ground path from BUS-480-D area to GND-EQ-B symbol.
+CHGR-125A,DC-BUS-125A,dc_ground,confirmed,CHGR-125A output connects to DC-BUS-125A enclosure/bus path.
+BAT-125A,DC-BUS-125A,dc_ground,confirmed,BAT-125A is associated with the DC-BUS-125A enclosure/bus path.
+CHGR-125B,DC-BUS-125B,dc_ground,confirmed,CHGR-125B output connects to DC-BUS-125B enclosure/bus path.
+BAT-125B,DC-BUS-125B,dc_ground,confirmed,BAT-125B is associated with the DC-BUS-125B enclosure/bus path.
+BUS-480-A,CB-A01,bus-tap,confirmed,CB-A01 is a filled-dot tap from BUS-480-A.
+CB-A01,DS-A01,solid,confirmed,A01 feeder breaker to DS-A01.
+DS-A01,PMP-A01,solid,confirmed,A01 feeder device chain to PMP-A01.
+PMP-A01,RLY-A01,dashed,confirmed,A01 lower dashed lead to RLY-A01.
+BUS-480-A,CB-A02,bus-tap,confirmed,CB-A02 is a filled-dot tap from BUS-480-A.
+CB-A02,FU-A02,solid,confirmed,A02 feeder breaker to FU-A02.
+FU-A02,MOV-A02,solid,confirmed,A02 feeder device chain to MOV-A02.
+MOV-A02,LS-A02,dotted,confirmed,A02 lower dotted lead to LS-A02.
+BUS-480-A,CB-A03,bus-tap,confirmed,CB-A03 is a filled-dot tap from BUS-480-A.
+CB-A03,DS-A03,solid,confirmed,A03 feeder breaker to DS-A03.
+DS-A03,MTR-A03,solid,confirmed,A03 feeder device chain to MTR-A03.
+MTR-A03,RLY-A03,dashed,confirmed,A03 lower dashed lead to RLY-A03.
+BUS-480-A,CB-A04,bus-tap,confirmed,CB-A04 is a filled-dot tap from BUS-480-A.
+CB-A04,DS-A04,solid,confirmed,A04 feeder breaker to DS-A04.
+DS-A04,PNL-A04,solid,confirmed,A04 feeder device chain to PNL-A04.
+PNL-A04,JB-A04,dotted,confirmed,A04 lower dotted lead to JB-A04.
+BUS-480-A,CB-A05,bus-tap,confirmed,CB-A05 is a filled-dot tap from BUS-480-A.
+CB-A05,FU-A05,solid,confirmed,A05 feeder breaker to FU-A05.
+FU-A05,PMP-A05,solid,confirmed,A05 feeder device chain to PMP-A05.
+PMP-A05,FT-A05,dotted,confirmed,A05 lower dotted lead to FT-A05.
+BUS-480-A,CB-A06,bus-tap,confirmed,CB-A06 is a filled-dot tap from BUS-480-A.
+CB-A06,DS-A06,solid,confirmed,A06 feeder breaker to DS-A06.
+DS-A06,MOV-A06,solid,confirmed,A06 feeder device chain to MOV-A06.
+MOV-A06,RLY-A06,dashed,confirmed,A06 lower dashed lead to RLY-A06.
+BUS-480-A,CB-A07,bus-tap,confirmed,CB-A07 is a filled-dot tap from BUS-480-A.
+CB-A07,DS-A07,solid,confirmed,A07 feeder breaker to DS-A07.
+DS-A07,MCC-A07,solid,confirmed,A07 feeder device chain to MCC-A07.
+MCC-A07,TB-A07,dotted,confirmed,A07 lower dotted lead to TB-A07.
+BUS-480-A,CB-A08,bus-tap,confirmed,CB-A08 is a filled-dot tap from BUS-480-A.
+CB-A08,FU-A08,solid,confirmed,A08 feeder breaker to FU-A08.
+FU-A08,PMP-A08,solid,confirmed,A08 feeder device chain to PMP-A08.
+PMP-A08,PT-A08,dotted,confirmed,A08 lower dotted lead to PT-A08.
+BUS-480-A,CB-A09,bus-tap,confirmed,CB-A09 is a filled-dot tap from BUS-480-A.
+CB-A09,DS-A09,solid,confirmed,A09 feeder breaker to DS-A09.
+DS-A09,FAN-A09,solid,confirmed,A09 feeder device chain to FAN-A09.
+FAN-A09,HS-A09,dashed,confirmed,A09 lower dashed lead to HS-A09.
+BUS-480-A,CB-A10,bus-tap,confirmed,CB-A10 is a filled-dot tap from BUS-480-A.
+CB-A10,DS-A10,solid,confirmed,A10 feeder breaker to DS-A10.
+DS-A10,JB-A10,solid,confirmed,A10 feeder device chain to JB-A10.
+JB-A10,LT-A10,dotted,confirmed,A10 lower dotted lead to LT-A10.
+BUS-480-B,CB-B01,bus-tap,confirmed,CB-B01 is a filled-dot tap from BUS-480-B.
+CB-B01,DS-B01,solid,confirmed,B01 feeder breaker to DS-B01.
+DS-B01,PMP-B01,solid,confirmed,B01 feeder device chain to PMP-B01.
+PMP-B01,RLY-B01,dashed,confirmed,B01 lower dashed lead to RLY-B01.
+BUS-480-B,CB-B02,bus-tap,confirmed,CB-B02 is a filled-dot tap from BUS-480-B.
+CB-B02,FU-B02,solid,confirmed,B02 feeder breaker to FU-B02.
+FU-B02,MOV-B02,solid,confirmed,B02 feeder device chain to MOV-B02.
+MOV-B02,LS-B02,dotted,confirmed,B02 lower dotted lead to LS-B02.
+BUS-480-B,CB-B03,bus-tap,confirmed,CB-B03 is a filled-dot tap from BUS-480-B.
+CB-B03,DS-B03,solid,confirmed,B03 feeder breaker to DS-B03.
+DS-B03,MTR-B03,solid,confirmed,B03 feeder device chain to MTR-B03.
+MTR-B03,RLY-B03,dashed,confirmed,B03 lower dashed lead to RLY-B03.
+BUS-480-B,CB-B04,bus-tap,confirmed,CB-B04 is a filled-dot tap from BUS-480-B.
+CB-B04,DS-B04,solid,confirmed,B04 feeder breaker to DS-B04.
+DS-B04,PNL-B04,solid,confirmed,B04 feeder device chain to PNL-B04.
+PNL-B04,JB-B04,dotted,confirmed,B04 lower dotted lead to JB-B04.
+BUS-480-B,CB-B05,bus-tap,confirmed,CB-B05 is a filled-dot tap from BUS-480-B.
+CB-B05,FU-B05,solid,confirmed,B05 feeder breaker to FU-B05.
+FU-B05,PMP-B05,solid,confirmed,B05 feeder device chain to PMP-B05.
+PMP-B05,FT-B05,dotted,confirmed,B05 lower dotted lead to FT-B05.
+BUS-480-B,CB-B06,bus-tap,confirmed,CB-B06 is a filled-dot tap from BUS-480-B.
+CB-B06,DS-B06,solid,confirmed,B06 feeder breaker to DS-B06.
+DS-B06,MOV-B06,solid,confirmed,B06 feeder device chain to MOV-B06.
+MOV-B06,RLY-B06,dashed,confirmed,B06 lower dashed lead to RLY-B06.
+BUS-480-B,CB-B07,bus-tap,confirmed,CB-B07 is a filled-dot tap from BUS-480-B.
+CB-B07,DS-B07,solid,confirmed,B07 feeder breaker to DS-B07.
+DS-B07,MCC-B07,solid,confirmed,B07 feeder device chain to MCC-B07.
+MCC-B07,TB-B07,dotted,confirmed,B07 lower dotted lead to TB-B07.
+BUS-480-B,CB-B08,bus-tap,confirmed,CB-B08 is a filled-dot tap from BUS-480-B.
+CB-B08,FU-B08,solid,confirmed,B08 feeder breaker to FU-B08.
+FU-B08,PMP-B08,solid,confirmed,B08 feeder device chain to PMP-B08.
+PMP-B08,PT-B08,dotted,confirmed,B08 lower dotted lead to PT-B08.
+BUS-480-B,CB-B09,bus-tap,confirmed,CB-B09 is a filled-dot tap from BUS-480-B.
+CB-B09,DS-B09,solid,confirmed,B09 feeder breaker to DS-B09.
+DS-B09,FAN-B09,solid,confirmed,B09 feeder device chain to FAN-B09.
+FAN-B09,HS-B09,dashed,confirmed,B09 lower dashed lead to HS-B09.
+BUS-480-B,CB-B10,bus-tap,confirmed,CB-B10 is a filled-dot tap from BUS-480-B.
+CB-B10,DS-B10,solid,confirmed,B10 feeder breaker to DS-B10.
+DS-B10,JB-B10,solid,confirmed,B10 feeder device chain to JB-B10.
+JB-B10,LT-B10,dotted,confirmed,B10 lower dotted lead to LT-B10.
+BUS-480-C,CB-C01,bus-tap,confirmed,CB-C01 is a filled-dot tap from BUS-480-C.
+CB-C01,DS-C01,solid,confirmed,C01 feeder breaker to DS-C01.
+DS-C01,MOV-C01,solid,confirmed,C01 feeder device chain to MOV-C01.
+MOV-C01,RLY-C01,dashed,confirmed,C01 lower dashed lead to RLY-C01.
+BUS-480-C,CB-C02,bus-tap,confirmed,CB-C02 is a filled-dot tap from BUS-480-C.
+CB-C02,FU-C02,solid,confirmed,C02 feeder breaker to FU-C02.
+FU-C02,PNL-C02,solid,confirmed,C02 feeder device chain to PNL-C02.
+PNL-C02,JB-C02,dotted,confirmed,C02 lower dotted lead to JB-C02.
+BUS-480-C,CB-C03,bus-tap,confirmed,CB-C03 is a filled-dot tap from BUS-480-C.
+CB-C03,DS-C03,solid,confirmed,C03 feeder breaker to DS-C03.
+DS-C03,PMP-C03,solid,confirmed,C03 feeder device chain to PMP-C03.
+PMP-C03,FT-C03,dotted,confirmed,C03 lower dotted lead to FT-C03.
+BUS-480-C,CB-C04,bus-tap,confirmed,CB-C04 is a filled-dot tap from BUS-480-C.
+CB-C04,DS-C04,solid,confirmed,C04 feeder breaker to DS-C04.
+DS-C04,HTR-C04,solid,confirmed,C04 feeder device chain to HTR-C04.
+HTR-C04,HS-C04,dashed,confirmed,C04 lower dashed lead to HS-C04.
+BUS-480-C,CB-C05,bus-tap,confirmed,CB-C05 is a filled-dot tap from BUS-480-C.
+CB-C05,FU-C05,solid,confirmed,C05 feeder breaker to FU-C05.
+FU-C05,INST-C05,solid,confirmed,C05 feeder device chain to INST-C05.
+INST-C05,JB-C05,dotted,confirmed,C05 lower dotted lead to JB-C05.
+BUS-480-C,CB-C06,bus-tap,confirmed,CB-C06 is a filled-dot tap from BUS-480-C.
+CB-C06,DS-C06,solid,confirmed,C06 feeder breaker to DS-C06.
+DS-C06,MOV-C06,solid,confirmed,C06 feeder device chain to MOV-C06.
+MOV-C06,LS-C06,dotted,confirmed,C06 lower dotted lead to LS-C06.
+BUS-480-C,CB-C07,bus-tap,confirmed,CB-C07 is a filled-dot tap from BUS-480-C.
+CB-C07,DS-C07,solid,confirmed,C07 feeder breaker to DS-C07.
+DS-C07,MCC-C07,solid,confirmed,C07 feeder device chain to MCC-C07.
+MCC-C07,TB-C07,dotted,confirmed,C07 lower dotted lead to TB-C07.
+BUS-480-C,CB-C08,bus-tap,confirmed,CB-C08 is a filled-dot tap from BUS-480-C.
+CB-C08,FU-C08,solid,confirmed,C08 feeder breaker to FU-C08.
+FU-C08,PMP-C08,solid,confirmed,C08 feeder device chain to PMP-C08.
+PMP-C08,PT-C08,dotted,confirmed,C08 lower dotted lead to PT-C08.
+BUS-480-C,CB-C09,bus-tap,confirmed,CB-C09 is a filled-dot tap from BUS-480-C.
+CB-C09,DS-C09,solid,confirmed,C09 feeder breaker to DS-C09.
+DS-C09,PNL-C09,solid,confirmed,C09 feeder device chain to PNL-C09.
+PNL-C09,RLY-C09,dashed,confirmed,C09 lower dashed lead to RLY-C09.
+BUS-480-C,CB-C10,bus-tap,confirmed,CB-C10 is a filled-dot tap from BUS-480-C.
+CB-C10,DS-C10,solid,confirmed,C10 feeder breaker to DS-C10.
+DS-C10,JB-C10,solid,confirmed,C10 feeder device chain to JB-C10.
+JB-C10,TB-C10,dotted,confirmed,C10 lower dotted lead to TB-C10.
+BUS-480-D,CB-D01,bus-tap,confirmed,CB-D01 is a filled-dot tap from BUS-480-D.
+CB-D01,DS-D01,solid,confirmed,D01 feeder breaker to DS-D01.
+DS-D01,MOV-D01,solid,confirmed,D01 feeder device chain to MOV-D01.
+MOV-D01,RLY-D01,dashed,confirmed,D01 lower dashed lead to RLY-D01.
+BUS-480-D,CB-D02,bus-tap,confirmed,CB-D02 is a filled-dot tap from BUS-480-D.
+CB-D02,FU-D02,solid,confirmed,D02 feeder breaker to FU-D02.
+FU-D02,PNL-D02,solid,confirmed,D02 feeder device chain to PNL-D02.
+PNL-D02,JB-D02,dotted,confirmed,D02 lower dotted lead to JB-D02.
+BUS-480-D,CB-D03,bus-tap,confirmed,CB-D03 is a filled-dot tap from BUS-480-D.
+CB-D03,DS-D03,solid,confirmed,D03 feeder breaker to DS-D03.
+DS-D03,PMP-D03,solid,confirmed,D03 feeder device chain to PMP-D03.
+PMP-D03,FT-D03,dotted,confirmed,D03 lower dotted lead to FT-D03.
+BUS-480-D,CB-D04,bus-tap,confirmed,CB-D04 is a filled-dot tap from BUS-480-D.
+CB-D04,DS-D04,solid,confirmed,D04 feeder breaker to DS-D04.
+DS-D04,HTR-D04,solid,confirmed,D04 feeder device chain to HTR-D04.
+HTR-D04,HS-D04,dashed,confirmed,D04 lower dashed lead to HS-D04.
+BUS-480-D,CB-D05,bus-tap,confirmed,CB-D05 is a filled-dot tap from BUS-480-D.
+CB-D05,FU-D05,solid,confirmed,D05 feeder breaker to FU-D05.
+FU-D05,INST-D05,solid,confirmed,D05 feeder device chain to INST-D05.
+INST-D05,JB-D05,dotted,confirmed,D05 lower dotted lead to JB-D05.
+BUS-480-D,CB-D06,bus-tap,confirmed,CB-D06 is a filled-dot tap from BUS-480-D.
+CB-D06,DS-D06,solid,confirmed,D06 feeder breaker to DS-D06.
+DS-D06,MOV-D06,solid,confirmed,D06 feeder device chain to MOV-D06.
+MOV-D06,LS-D06,dotted,confirmed,D06 lower dotted lead to LS-D06.
+BUS-480-D,CB-D07,bus-tap,confirmed,CB-D07 is a filled-dot tap from BUS-480-D.
+CB-D07,DS-D07,solid,confirmed,D07 feeder breaker to DS-D07.
+DS-D07,MCC-D07,solid,confirmed,D07 feeder device chain to MCC-D07.
+MCC-D07,TB-D07,dotted,confirmed,D07 lower dotted lead to TB-D07.
+BUS-480-D,CB-D08,bus-tap,confirmed,CB-D08 is a filled-dot tap from BUS-480-D.
+CB-D08,FU-D08,solid,confirmed,D08 feeder breaker to FU-D08.
+FU-D08,PMP-D08,solid,confirmed,D08 feeder device chain to PMP-D08.
+PMP-D08,PT-D08,dotted,confirmed,D08 lower dotted lead to PT-D08.
+BUS-480-D,CB-D09,bus-tap,confirmed,CB-D09 is a filled-dot tap from BUS-480-D.
+CB-D09,DS-D09,solid,confirmed,D09 feeder breaker to DS-D09.
+DS-D09,PNL-D09,solid,confirmed,D09 feeder device chain to PNL-D09.
+PNL-D09,RLY-D09,dashed,confirmed,D09 lower dashed lead to RLY-D09.
+BUS-480-D,CB-D10,bus-tap,confirmed,CB-D10 is a filled-dot tap from BUS-480-D.
+CB-D10,DS-D10,solid,confirmed,D10 feeder breaker to DS-D10.
+DS-D10,JB-D10,solid,confirmed,D10 feeder device chain to JB-D10.
+JB-D10,TB-D10,dotted,confirmed,D10 lower dotted lead to TB-D10.
+CB-A10,CHGR-125A,solid,rejected_later,Diego high-recall candidate: charger near A10 branch; later corrected by Jennifer.
+DS-A10,BAT-125A,solid,rejected_later,Diego high-recall candidate: battery near DS-A10; later rejected by Jennifer.
+CB-B01,CHGR-125B,solid,rejected_later,Diego high-recall candidate: charger near B01 branch; later corrected by Jennifer.
+DS-B01,BAT-125B,solid,rejected_later,Diego high-recall candidate: battery near DS-B01; later rejected by Jennifer.

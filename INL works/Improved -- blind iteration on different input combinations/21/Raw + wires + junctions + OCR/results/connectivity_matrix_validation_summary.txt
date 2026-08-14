@@ -1,0 +1,38 @@
+Connectivity matrix validation summary - Document 21 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\21\synthetic_npp_connectivity_matrix_fixed.csv
+GT after normalization: 204 undirected edges across 200 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token usage was not available in local tracking files.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=176, FP=26, FN=28, Precision=0.871287, Recall=0.862745, F1=0.866995.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names; missing exact GT component names; close-but-not-exact component names.
+- Extracted components: 200; extra/non-GT names: 4; missing GT component names: 4.
+- False-positive extracted edge examples: BAT-EDG-A -- CP-CRD; BAT-EDG-B -- CP-CRD; BUS-201B -- CB-204A; BUS-202A -- CB-204B; BUS-301A -- DS-402A; BUS-302A -- CB-303A; BUS-302B -- CB-303B; BUS-302B -- TR-NB; ... (+18 more).
+- Missed GT edge examples: BAT-EDG-A -- CP-EDG-A; BAT-EDG-B -- CP-EDG-B; BUS-201A -- CB-204A; BUS-201B -- CB-204B; BUS-201B -- DS-201B; BUS-202A -- CB-204A; BUS-202A -- DS-202A; BUS-202B -- CB-204B; ... (+20 more).
+- Extra/non-GT component examples: DS-J01A; DS-J01B; DS-J02A; DS-J02B.
+- Missing GT component examples: DS-301A; DS-301B; DS-302A; DS-302B.
+- Close-but-not-exact component examples: DS-J01A ~ DS-301A (0.86); DS-J01B ~ DS-301B (0.86); DS-J02A ~ DS-302A (0.86); DS-J02B ~ DS-302B (0.86).
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=176, FP=0, FN=28, Precision=1.000000, Recall=0.862745, F1=0.926316.
+- If all missed GT edges were added, final performance would be TP=204, FP=26, FN=0, Precision=0.886957, Recall=1.000000, F1=0.940092.
+- If extra node DS-J01A and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=176, FP=24, FN=28, Precision=0.880000, Recall=0.862745, F1=0.871287.
+- If extra node DS-J01B and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=176, FP=24, FN=28, Precision=0.880000, Recall=0.862745, F1=0.871287.
+- If extra node DS-J02A and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=176, FP=24, FN=28, Precision=0.880000, Recall=0.862745, F1=0.871287.
+- If extra node DS-J02B and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=176, FP=24, FN=28, Precision=0.880000, Recall=0.862745, F1=0.871287.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.866995.
+
+Round-specific notes:
+- Diego -- Round 1: TP=176, FP=32, FN=28, F1=0.854369; extra nodes=5, missing GT nodes=4. FP examples: 4KV_SWITCHGEAR_LEFT_RISER -- BUS-201A; 4KV_SWITCHGEAR_LEFT_RISER -- BUS-201B; 4KV_SWITCHGEAR_LEFT_RISER -- BUS-202A; 4KV_SWITCHGEAR_LEFT_RISER -- BUS-202B; ... (+28 more). FN examples: BAT-EDG-A -- CP-EDG-A; BAT-EDG-B -- CP-EDG-B; BUS-201A -- CB-204A; BUS-201A -- CB-301A; ... (+24 more).
+- Jennifer -- Round 2: TP=176, FP=26, FN=28, F1=0.866995; extra nodes=4, missing GT nodes=4. FP examples: BAT-EDG-A -- CP-CRD; BAT-EDG-B -- CP-CRD; BUS-201B -- CB-204A; BUS-202A -- CB-204B; ... (+22 more). FN examples: BAT-EDG-A -- CP-EDG-A; BAT-EDG-B -- CP-EDG-B; BUS-201A -- CB-204A; BUS-201B -- CB-204B; ... (+24 more).
+- Diego -- Round 3: TP=176, FP=26, FN=28, F1=0.866995; extra nodes=4, missing GT nodes=4. FP examples: BAT-EDG-A -- CP-CRD; BAT-EDG-B -- CP-CRD; BUS-201B -- CB-204A; BUS-202A -- CB-204B; ... (+22 more). FN examples: BAT-EDG-A -- CP-EDG-A; BAT-EDG-B -- CP-EDG-B; BUS-201A -- CB-204A; BUS-201B -- CB-204B; ... (+24 more).
+- Jennifer -- Round 4: TP=176, FP=26, FN=28, F1=0.866995; extra nodes=4, missing GT nodes=4. FP examples: BAT-EDG-A -- CP-CRD; BAT-EDG-B -- CP-CRD; BUS-201B -- CB-204A; BUS-202A -- CB-204B; ... (+22 more). FN examples: BAT-EDG-A -- CP-EDG-A; BAT-EDG-B -- CP-EDG-B; BUS-201A -- CB-204A; BUS-201B -- CB-204B; ... (+24 more).
+- Final connectivity -- Final: TP=176, FP=26, FN=28, F1=0.866995; extra nodes=4, missing GT nodes=4. FP examples: BAT-EDG-A -- CP-CRD; BAT-EDG-B -- CP-CRD; BUS-201B -- CB-204A; BUS-202A -- CB-204B; ... (+22 more). FN examples: BAT-EDG-A -- CP-EDG-A; BAT-EDG-B -- CP-EDG-B; BUS-201A -- CB-204A; BUS-201B -- CB-204B; ... (+24 more).

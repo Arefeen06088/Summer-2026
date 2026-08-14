@@ -1,0 +1,31 @@
+Connectivity matrix validation summary - Document 22 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\22\synthetic_npp_connectivity_matrix_clean(1).csv
+GT after normalization: 208 undirected edges across 200 component names.
+
+Token usage:
+Token source files: document22_token_usage_estimates.csv.
+Document total token usage was not available in local tracking files.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=194, FP=9, FN=14, Precision=0.955665, Recall=0.932692, F1=0.944039.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges.
+- Extracted components: 200; extra/non-GT names: 0; missing GT component names: 0.
+- False-positive extracted edge examples: CB-RHR-A -- INST-CT-A; CB-RHR-B -- INST-CT-B; CB-RHR-C -- INST-CT-C; CB-RHR-D -- INST-CT-D; JB-A1 -- RELAY-KA1; JB-B1 -- RELAY-KB1; JB-C1 -- RELAY-KC1; JB-D1 -- RELAY-KD1; ... (+1 more).
+- Missed GT edge examples: BUS-125A -- METER-A01; BUS-4160-A -- XFMR-PT-1; CB-RHR-A -- MCC-AA; CB-RHR-A -- RELAY-KA1; CB-RHR-B -- MCC-BA; CB-RHR-B -- RELAY-KB1; CB-RHR-C -- MCC-CA; CB-RHR-C -- RELAY-KC1; ... (+6 more).
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=194, FP=0, FN=14, Precision=1.000000, Recall=0.932692, F1=0.965174.
+- If all missed GT edges were added, final performance would be TP=208, FP=9, FN=0, Precision=0.958525, Recall=1.000000, F1=0.978824.
+
+Best evaluated row: Diego -- Round 1 with F1=0.949640.
+
+Round-specific notes:
+- Diego -- Round 1: TP=198, FP=11, FN=10, F1=0.949640; extra nodes=0, missing GT nodes=0. FP examples: CB-RHR-A -- INST-CT-A; CB-RHR-B -- INST-CT-B; CB-RHR-C -- INST-CT-C; CB-RHR-D -- INST-CT-D; ... (+7 more). FN examples: BUS-125A -- METER-A01; BUS-4160-A -- XFMR-PT-1; CB-RHR-A -- RELAY-KA1; CB-RHR-B -- RELAY-KB1; ... (+6 more).
+- Jennifer -- Round 2: TP=194, FP=9, FN=14, F1=0.944039; extra nodes=0, missing GT nodes=0. FP examples: CB-RHR-A -- INST-CT-A; CB-RHR-B -- INST-CT-B; CB-RHR-C -- INST-CT-C; CB-RHR-D -- INST-CT-D; ... (+5 more). FN examples: BUS-125A -- METER-A01; BUS-4160-A -- XFMR-PT-1; CB-RHR-A -- MCC-AA; CB-RHR-A -- RELAY-KA1; ... (+10 more).
+- Diego -- Round 3: TP=194, FP=9, FN=14, F1=0.944039; extra nodes=0, missing GT nodes=0. FP examples: CB-RHR-A -- INST-CT-A; CB-RHR-B -- INST-CT-B; CB-RHR-C -- INST-CT-C; CB-RHR-D -- INST-CT-D; ... (+5 more). FN examples: BUS-125A -- METER-A01; BUS-4160-A -- XFMR-PT-1; CB-RHR-A -- MCC-AA; CB-RHR-A -- RELAY-KA1; ... (+10 more).
+- Jennifer -- Round 4: TP=194, FP=9, FN=14, F1=0.944039; extra nodes=0, missing GT nodes=0. FP examples: CB-RHR-A -- INST-CT-A; CB-RHR-B -- INST-CT-B; CB-RHR-C -- INST-CT-C; CB-RHR-D -- INST-CT-D; ... (+5 more). FN examples: BUS-125A -- METER-A01; BUS-4160-A -- XFMR-PT-1; CB-RHR-A -- MCC-AA; CB-RHR-A -- RELAY-KA1; ... (+10 more).
+- Final connectivity -- Final: TP=194, FP=9, FN=14, F1=0.944039; extra nodes=0, missing GT nodes=0. FP examples: CB-RHR-A -- INST-CT-A; CB-RHR-B -- INST-CT-B; CB-RHR-C -- INST-CT-C; CB-RHR-D -- INST-CT-D; ... (+5 more). FN examples: BUS-125A -- METER-A01; BUS-4160-A -- XFMR-PT-1; CB-RHR-A -- MCC-AA; CB-RHR-A -- RELAY-KA1; ... (+10 more).

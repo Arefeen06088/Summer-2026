@@ -1,0 +1,2806 @@
+{
+  "document": "26",
+  "iteration": "2",
+  "round": "diego_round2",
+  "role": "high_recall_extractor",
+  "status": "agreement_with_jennifer_round1",
+  "source_restriction": "Doc26 Raw + components only; no GT, no Raw+wires, no OCR engines",
+  "review_notes": [
+    "Diego round 2 saturation check used only Doc26 Raw + components visual resources plus Jennifer round 1 review artifacts supplied by the user for comparison; no GT, GT-derived feedback, Raw+wires, existing wires scripts, or OCR engines were used.",
+    "Saturation/agreement reached: status agreement_with_jennifer_round1; Diego round 2 exactly adopts Jennifer round 1's 201 asserted-edge set.",
+    "Jennifer retained all Diego round 1 asserted edges: 0 removed, 0 added, and no label corrections were reported.",
+    "I agree with Jennifer's tightened classification: dashed routes without terminal dots remain uncertain only where endpoint ambiguity persists, and visually settled crossings/shortcuts are rejected non-edges.",
+    "Matrix was regenerated from the adopted asserted_edges and validated as symmetric with a zero diagonal."
+  ],
+  "nodes": [
+    {
+      "id": "GEN-301",
+      "type": "component",
+      "evidence": "Visible label 'GEN-301' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "TR-UAT-31",
+      "type": "component",
+      "evidence": "Visible label 'TR-UAT-31' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A-IN1",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A-IN1' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "SAT-31A",
+      "type": "component",
+      "evidence": "Visible label 'SAT-31A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A-ST",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A-ST' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "DG-31A",
+      "type": "component",
+      "evidence": "Visible label 'DG-31A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A-DG",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A-DG' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "BUS-416A",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-416A' on a double-line bus in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A01",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A01' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "TR-480A1",
+      "type": "component",
+      "evidence": "Visible label 'TR-480A1' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-480A-IN",
+      "type": "component",
+      "evidence": "Visible label 'CB-480A-IN' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A02",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A02' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "TR-480A2",
+      "type": "component",
+      "evidence": "Visible label 'TR-480A2' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-480A-ALT",
+      "type": "component",
+      "evidence": "Visible label 'CB-480A-ALT' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A03",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A03' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "DS-RCP-A",
+      "type": "component",
+      "evidence": "Visible label 'DS-RCP-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "MTR-RCP-A",
+      "type": "load",
+      "evidence": "Visible label 'MTR-RCP-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "GND-RCP-A",
+      "type": "ground",
+      "evidence": "Visible label 'GND-RCP-A' beside a ground symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A04",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A04' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "DS-SW-A",
+      "type": "component",
+      "evidence": "Visible label 'DS-SW-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "PUMP-SW31A",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-SW31A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "GND-SW-A",
+      "type": "ground",
+      "evidence": "Visible label 'GND-SW-A' beside a ground symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A05",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A05' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "DS-AFW-A",
+      "type": "component",
+      "evidence": "Visible label 'DS-AFW-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "PUMP-AFW31A",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-AFW31A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A06",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A06' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "DS-CHW-A",
+      "type": "component",
+      "evidence": "Visible label 'DS-CHW-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "MTR-CHWP-A",
+      "type": "load",
+      "evidence": "Visible label 'MTR-CHWP-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4AB-TIE",
+      "type": "component",
+      "evidence": "Visible label 'CB-4AB-TIE' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "SAT-31B",
+      "type": "component",
+      "evidence": "Visible label 'SAT-31B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B-ST",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B-ST' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "DG-31B",
+      "type": "component",
+      "evidence": "Visible label 'DG-31B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B-DG",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B-DG' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "BUS-416B",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-416B' on a double-line bus in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B01",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B01' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "TR-480B1",
+      "type": "component",
+      "evidence": "Visible label 'TR-480B1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-480B-IN",
+      "type": "component",
+      "evidence": "Visible label 'CB-480B-IN' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B02",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B02' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "TR-480B2",
+      "type": "component",
+      "evidence": "Visible label 'TR-480B2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-480B-ALT",
+      "type": "component",
+      "evidence": "Visible label 'CB-480B-ALT' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B03",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B03' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "DS-RCP-B",
+      "type": "component",
+      "evidence": "Visible label 'DS-RCP-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "MTR-RCP-B",
+      "type": "load",
+      "evidence": "Visible label 'MTR-RCP-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "GND-RCP-B",
+      "type": "ground",
+      "evidence": "Visible label 'GND-RCP-B' beside a ground symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B04",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B04' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "DS-SW-B",
+      "type": "component",
+      "evidence": "Visible label 'DS-SW-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "PUMP-SW31B",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-SW31B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "GND-SW-B",
+      "type": "ground",
+      "evidence": "Visible label 'GND-SW-B' beside a ground symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B05",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B05' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "DS-AFW-B",
+      "type": "component",
+      "evidence": "Visible label 'DS-AFW-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "PUMP-AFW31B",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-AFW31B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B06",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B06' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "DS-CHW-B",
+      "type": "component",
+      "evidence": "Visible label 'DS-CHW-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "MTR-CHWP-B",
+      "type": "load",
+      "evidence": "Visible label 'MTR-CHWP-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "BUS-480A",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-480A' on a double-line bus in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "CB-480A11",
+      "type": "component",
+      "evidence": "Visible label 'CB-480A11' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "MCC-31A1",
+      "type": "panel",
+      "evidence": "Visible label 'MCC-31A1' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "GND-MCC-A1",
+      "type": "ground",
+      "evidence": "Visible label 'GND-MCC-A1' beside a ground symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A1-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-A1-1' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A1-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-A1-01' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "PUMP-CVC-A",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-CVC-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A1-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-A1-2' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A1-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-A1-02' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "MOV-RHR-731A",
+      "type": "load",
+      "evidence": "Visible label 'MOV-RHR-731A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A1-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-A1-3' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A1-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-A1-03' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "FAN-CRD-A",
+      "type": "load",
+      "evidence": "Visible label 'FAN-CRD-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "CB-480A12",
+      "type": "component",
+      "evidence": "Visible label 'CB-480A12' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "MCC-31A2",
+      "type": "panel",
+      "evidence": "Visible label 'MCC-31A2' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "GND-MCC-A2",
+      "type": "ground",
+      "evidence": "Visible label 'GND-MCC-A2' beside a ground symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A2-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-A2-1' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A2-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-A2-01' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "PUMP-CCW-A",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-CCW-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A2-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-A2-2' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A2-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-A2-02' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "HTR-BORIC-A",
+      "type": "load",
+      "evidence": "Visible label 'HTR-BORIC-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A2-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-A2-3' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A2-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-A2-03' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "MOV-CHG-121A",
+      "type": "load",
+      "evidence": "Visible label 'MOV-CHG-121A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "CB-480A13",
+      "type": "component",
+      "evidence": "Visible label 'CB-480A13' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "LC-31A3",
+      "type": "panel",
+      "evidence": "Visible label 'LC-31A3' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A3-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-A3-1' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A3-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-A3-01' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "MTR-SUMP-A",
+      "type": "load",
+      "evidence": "Visible label 'MTR-SUMP-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A3-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-A3-2' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A3-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-A3-02' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "PUMP-LUBE-A",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-LUBE-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A3-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-A3-3' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A3-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-A3-03' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "MOV-SI-902A",
+      "type": "load",
+      "evidence": "Visible label 'MOV-SI-902A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "CB-480A14",
+      "type": "component",
+      "evidence": "Visible label 'CB-480A14' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "PNL-31A4",
+      "type": "panel",
+      "evidence": "Visible label 'PNL-31A4' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A4-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-A4-1' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A4-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-A4-01' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "FAN-CONT-A",
+      "type": "load",
+      "evidence": "Visible label 'FAN-CONT-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A4-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-A4-2' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A4-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-A4-02' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "PUMP-SAMPLE-A",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-SAMPLE-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A4-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-A4-3' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A4-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-A4-03' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "MOV-VENT-406A",
+      "type": "load",
+      "evidence": "Visible label 'MOV-VENT-406A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "CB-480AB-TIE",
+      "type": "component",
+      "evidence": "Visible label 'CB-480AB-TIE' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "BUS-480B",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-480B' on a double-line bus in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "CB-480B11",
+      "type": "component",
+      "evidence": "Visible label 'CB-480B11' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "MCC-31B1",
+      "type": "panel",
+      "evidence": "Visible label 'MCC-31B1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "GND-MCC-B1",
+      "type": "ground",
+      "evidence": "Visible label 'GND-MCC-B1' beside a ground symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B1-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-B1-1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B1-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-B1-01' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "PUMP-CVC-B",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-CVC-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B1-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-B1-2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B1-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-B1-02' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "MOV-RHR-731B",
+      "type": "load",
+      "evidence": "Visible label 'MOV-RHR-731B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B1-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-B1-3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B1-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-B1-03' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "FAN-CRD-B",
+      "type": "load",
+      "evidence": "Visible label 'FAN-CRD-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "CB-480B12",
+      "type": "component",
+      "evidence": "Visible label 'CB-480B12' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "MCC-31B2",
+      "type": "panel",
+      "evidence": "Visible label 'MCC-31B2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "GND-MCC-B2",
+      "type": "ground",
+      "evidence": "Visible label 'GND-MCC-B2' beside a ground symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B2-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-B2-1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B2-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-B2-01' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "PUMP-CCW-B",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-CCW-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B2-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-B2-2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B2-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-B2-02' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "HTR-BORIC-B",
+      "type": "load",
+      "evidence": "Visible label 'HTR-BORIC-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B2-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-B2-3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B2-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-B2-03' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "MOV-CHG-121B",
+      "type": "load",
+      "evidence": "Visible label 'MOV-CHG-121B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "CB-480B13",
+      "type": "component",
+      "evidence": "Visible label 'CB-480B13' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "LC-31B3",
+      "type": "panel",
+      "evidence": "Visible label 'LC-31B3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B3-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-B3-1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B3-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-B3-01' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "MTR-SUMP-B",
+      "type": "load",
+      "evidence": "Visible label 'MTR-SUMP-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B3-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-B3-2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B3-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-B3-02' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "PUMP-LUBE-B",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-LUBE-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B3-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-B3-3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B3-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-B3-03' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "MOV-SI-902B",
+      "type": "load",
+      "evidence": "Visible label 'MOV-SI-902B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "CB-480B14",
+      "type": "component",
+      "evidence": "Visible label 'CB-480B14' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "PNL-31B4",
+      "type": "panel",
+      "evidence": "Visible label 'PNL-31B4' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B4-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-B4-1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B4-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-B4-01' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "FAN-CONT-B",
+      "type": "load",
+      "evidence": "Visible label 'FAN-CONT-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B4-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-B4-2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B4-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-B4-02' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "PUMP-SAMPLE-B",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-SAMPLE-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B4-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-B4-3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B4-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-B4-03' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "MOV-VENT-406B",
+      "type": "load",
+      "evidence": "Visible label 'MOV-VENT-406B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "BAT-31A",
+      "type": "component",
+      "evidence": "Visible label 'BAT-31A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "DS-BAT-A",
+      "type": "component",
+      "evidence": "Visible label 'DS-BAT-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "CHG-31A",
+      "type": "component",
+      "evidence": "Visible label 'CHG-31A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "CB-CHG-A",
+      "type": "component",
+      "evidence": "Visible label 'CB-CHG-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "BUS-125DCA",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-125DCA' on a double-line bus in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "CB-INV-A",
+      "type": "component",
+      "evidence": "Visible label 'CB-INV-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "INV-31A",
+      "type": "component",
+      "evidence": "Visible label 'INV-31A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "PNL-DC-A",
+      "type": "panel",
+      "evidence": "Visible label 'PNL-DC-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "BUS-INV-A",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-INV-A' on a double-line bus in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "PNL-AC-A",
+      "type": "panel",
+      "evidence": "Visible label 'PNL-AC-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "RPS-PNL-A",
+      "type": "panel",
+      "evidence": "Visible label 'RPS-PNL-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "TB-UPS-A",
+      "type": "other",
+      "evidence": "Visible label 'TB-UPS-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "BUS-120N-A",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-120N-A' on a double-line bus in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "RELAY-K7A1",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7A1' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "TB-RPS-A1",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-A1' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "PT-31A1",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31A1' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "RELAY-K7A2",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7A2' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "TB-RPS-A2",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-A2' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "PT-31A2",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31A2' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "RELAY-K7A3",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7A3' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "TB-RPS-A3",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-A3' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "PT-31A3",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31A3' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "RELAY-K7A4",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7A4' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "TB-RPS-A4",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-A4' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "PT-31A4",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31A4' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "CB-DCAB-TIE",
+      "type": "component",
+      "evidence": "Visible label 'CB-DCAB-TIE' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "BAT-31B",
+      "type": "component",
+      "evidence": "Visible label 'BAT-31B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "DS-BAT-B",
+      "type": "component",
+      "evidence": "Visible label 'DS-BAT-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "CHG-31B",
+      "type": "component",
+      "evidence": "Visible label 'CHG-31B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "CB-CHG-B",
+      "type": "component",
+      "evidence": "Visible label 'CB-CHG-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "BUS-125DCB",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-125DCB' on a double-line bus in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "CB-INV-B",
+      "type": "component",
+      "evidence": "Visible label 'CB-INV-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "INV-31B",
+      "type": "component",
+      "evidence": "Visible label 'INV-31B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "PNL-DC-B",
+      "type": "panel",
+      "evidence": "Visible label 'PNL-DC-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "BUS-INV-B",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-INV-B' on a double-line bus in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "PNL-AC-B",
+      "type": "panel",
+      "evidence": "Visible label 'PNL-AC-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "RPS-PNL-B",
+      "type": "panel",
+      "evidence": "Visible label 'RPS-PNL-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "TB-UPS-B",
+      "type": "other",
+      "evidence": "Visible label 'TB-UPS-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "BUS-120N-B",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-120N-B' on a double-line bus in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "RELAY-K7B1",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7B1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "TB-RPS-B1",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-B1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "PT-31B1",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31B1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "RELAY-K7B2",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7B2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "TB-RPS-B2",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-B2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "PT-31B2",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31B2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "RELAY-K7B3",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7B3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "TB-RPS-B3",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-B3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "PT-31B3",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31B3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "RELAY-K7B4",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7B4' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "TB-RPS-B4",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-B4' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "PT-31B4",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31B4' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    }
+  ],
+  "matrix_order": [
+    "GEN-301",
+    "TR-UAT-31",
+    "CB-4A-IN1",
+    "SAT-31A",
+    "CB-4A-ST",
+    "DG-31A",
+    "CB-4A-DG",
+    "BUS-416A",
+    "CB-4A01",
+    "TR-480A1",
+    "CB-480A-IN",
+    "CB-4A02",
+    "TR-480A2",
+    "CB-480A-ALT",
+    "CB-4A03",
+    "DS-RCP-A",
+    "MTR-RCP-A",
+    "GND-RCP-A",
+    "CB-4A04",
+    "DS-SW-A",
+    "PUMP-SW31A",
+    "GND-SW-A",
+    "CB-4A05",
+    "DS-AFW-A",
+    "PUMP-AFW31A",
+    "CB-4A06",
+    "DS-CHW-A",
+    "MTR-CHWP-A",
+    "CB-4AB-TIE",
+    "SAT-31B",
+    "CB-4B-ST",
+    "DG-31B",
+    "CB-4B-DG",
+    "BUS-416B",
+    "CB-4B01",
+    "TR-480B1",
+    "CB-480B-IN",
+    "CB-4B02",
+    "TR-480B2",
+    "CB-480B-ALT",
+    "CB-4B03",
+    "DS-RCP-B",
+    "MTR-RCP-B",
+    "GND-RCP-B",
+    "CB-4B04",
+    "DS-SW-B",
+    "PUMP-SW31B",
+    "GND-SW-B",
+    "CB-4B05",
+    "DS-AFW-B",
+    "PUMP-AFW31B",
+    "CB-4B06",
+    "DS-CHW-B",
+    "MTR-CHWP-B",
+    "BUS-480A",
+    "CB-480A11",
+    "MCC-31A1",
+    "GND-MCC-A1",
+    "STR-A1-1",
+    "JB-A1-01",
+    "PUMP-CVC-A",
+    "STR-A1-2",
+    "JB-A1-02",
+    "MOV-RHR-731A",
+    "STR-A1-3",
+    "JB-A1-03",
+    "FAN-CRD-A",
+    "CB-480A12",
+    "MCC-31A2",
+    "GND-MCC-A2",
+    "STR-A2-1",
+    "JB-A2-01",
+    "PUMP-CCW-A",
+    "STR-A2-2",
+    "JB-A2-02",
+    "HTR-BORIC-A",
+    "STR-A2-3",
+    "JB-A2-03",
+    "MOV-CHG-121A",
+    "CB-480A13",
+    "LC-31A3",
+    "STR-A3-1",
+    "JB-A3-01",
+    "MTR-SUMP-A",
+    "STR-A3-2",
+    "JB-A3-02",
+    "PUMP-LUBE-A",
+    "STR-A3-3",
+    "JB-A3-03",
+    "MOV-SI-902A",
+    "CB-480A14",
+    "PNL-31A4",
+    "STR-A4-1",
+    "JB-A4-01",
+    "FAN-CONT-A",
+    "STR-A4-2",
+    "JB-A4-02",
+    "PUMP-SAMPLE-A",
+    "STR-A4-3",
+    "JB-A4-03",
+    "MOV-VENT-406A",
+    "CB-480AB-TIE",
+    "BUS-480B",
+    "CB-480B11",
+    "MCC-31B1",
+    "GND-MCC-B1",
+    "STR-B1-1",
+    "JB-B1-01",
+    "PUMP-CVC-B",
+    "STR-B1-2",
+    "JB-B1-02",
+    "MOV-RHR-731B",
+    "STR-B1-3",
+    "JB-B1-03",
+    "FAN-CRD-B",
+    "CB-480B12",
+    "MCC-31B2",
+    "GND-MCC-B2",
+    "STR-B2-1",
+    "JB-B2-01",
+    "PUMP-CCW-B",
+    "STR-B2-2",
+    "JB-B2-02",
+    "HTR-BORIC-B",
+    "STR-B2-3",
+    "JB-B2-03",
+    "MOV-CHG-121B",
+    "CB-480B13",
+    "LC-31B3",
+    "STR-B3-1",
+    "JB-B3-01",
+    "MTR-SUMP-B",
+    "STR-B3-2",
+    "JB-B3-02",
+    "PUMP-LUBE-B",
+    "STR-B3-3",
+    "JB-B3-03",
+    "MOV-SI-902B",
+    "CB-480B14",
+    "PNL-31B4",
+    "STR-B4-1",
+    "JB-B4-01",
+    "FAN-CONT-B",
+    "STR-B4-2",
+    "JB-B4-02",
+    "PUMP-SAMPLE-B",
+    "STR-B4-3",
+    "JB-B4-03",
+    "MOV-VENT-406B",
+    "BAT-31A",
+    "DS-BAT-A",
+    "CHG-31A",
+    "CB-CHG-A",
+    "BUS-125DCA",
+    "CB-INV-A",
+    "INV-31A",
+    "PNL-DC-A",
+    "BUS-INV-A",
+    "PNL-AC-A",
+    "RPS-PNL-A",
+    "TB-UPS-A",
+    "BUS-120N-A",
+    "RELAY-K7A1",
+    "TB-RPS-A1",
+    "PT-31A1",
+    "RELAY-K7A2",
+    "TB-RPS-A2",
+    "PT-31A2",
+    "RELAY-K7A3",
+    "TB-RPS-A3",
+    "PT-31A3",
+    "RELAY-K7A4",
+    "TB-RPS-A4",
+    "PT-31A4",
+    "CB-DCAB-TIE",
+    "BAT-31B",
+    "DS-BAT-B",
+    "CHG-31B",
+    "CB-CHG-B",
+    "BUS-125DCB",
+    "CB-INV-B",
+    "INV-31B",
+    "PNL-DC-B",
+    "BUS-INV-B",
+    "PNL-AC-B",
+    "RPS-PNL-B",
+    "TB-UPS-B",
+    "BUS-120N-B",
+    "RELAY-K7B1",
+    "TB-RPS-B1",
+    "PT-31B1",
+    "RELAY-K7B2",
+    "TB-RPS-B2",
+    "PT-31B2",
+    "RELAY-K7B3",
+    "TB-RPS-B3",
+    "PT-31B3",
+    "RELAY-K7B4",
+    "TB-RPS-B4",
+    "PT-31B4"
+  ],
+  "asserted_edges": [
+    {
+      "source": "GEN-301",
+      "target": "TR-UAT-31",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins GEN-301 to TR-UAT-31."
+    },
+    {
+      "source": "TR-UAT-31",
+      "target": "CB-4A-IN1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins TR-UAT-31 to CB-4A-IN1."
+    },
+    {
+      "source": "CB-4A-IN1",
+      "target": "BUS-416A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins CB-4A-IN1 to BUS-416A."
+    },
+    {
+      "source": "SAT-31A",
+      "target": "CB-4A-ST",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins SAT-31A to CB-4A-ST."
+    },
+    {
+      "source": "CB-4A-ST",
+      "target": "BUS-416A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins CB-4A-ST to BUS-416A."
+    },
+    {
+      "source": "DG-31A",
+      "target": "CB-4A-DG",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins DG-31A to CB-4A-DG."
+    },
+    {
+      "source": "CB-4A-DG",
+      "target": "BUS-416A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins CB-4A-DG to BUS-416A."
+    },
+    {
+      "source": "BUS-416A",
+      "target": "CB-4A01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins BUS-416A to CB-4A01."
+    },
+    {
+      "source": "CB-4A01",
+      "target": "TR-480A1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins CB-4A01 to TR-480A1."
+    },
+    {
+      "source": "TR-480A1",
+      "target": "CB-480A-IN",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins TR-480A1 to CB-480A-IN."
+    },
+    {
+      "source": "CB-480A-IN",
+      "target": "BUS-480A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins CB-480A-IN to BUS-480A."
+    },
+    {
+      "source": "BUS-416A",
+      "target": "CB-4A02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins BUS-416A to CB-4A02."
+    },
+    {
+      "source": "CB-4A02",
+      "target": "TR-480A2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins CB-4A02 to TR-480A2."
+    },
+    {
+      "source": "TR-480A2",
+      "target": "CB-480A-ALT",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins TR-480A2 to CB-480A-ALT."
+    },
+    {
+      "source": "CB-480A-ALT",
+      "target": "BUS-480A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins CB-480A-ALT to BUS-480A."
+    },
+    {
+      "source": "BUS-416A",
+      "target": "CB-4A03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins BUS-416A to CB-4A03."
+    },
+    {
+      "source": "CB-4A03",
+      "target": "DS-RCP-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins CB-4A03 to DS-RCP-A."
+    },
+    {
+      "source": "DS-RCP-A",
+      "target": "MTR-RCP-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins DS-RCP-A to MTR-RCP-A."
+    },
+    {
+      "source": "MTR-RCP-A",
+      "target": "GND-RCP-A",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "Visible ground symbol/solid lead in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins MTR-RCP-A to GND-RCP-A."
+    },
+    {
+      "source": "BUS-416A",
+      "target": "CB-4A04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins BUS-416A to CB-4A04."
+    },
+    {
+      "source": "CB-4A04",
+      "target": "DS-SW-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins CB-4A04 to DS-SW-A."
+    },
+    {
+      "source": "DS-SW-A",
+      "target": "PUMP-SW31A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins DS-SW-A to PUMP-SW31A."
+    },
+    {
+      "source": "PUMP-SW31A",
+      "target": "GND-SW-A",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "Visible ground symbol/solid lead in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins PUMP-SW31A to GND-SW-A."
+    },
+    {
+      "source": "BUS-416A",
+      "target": "CB-4A05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins BUS-416A to CB-4A05."
+    },
+    {
+      "source": "CB-4A05",
+      "target": "DS-AFW-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins CB-4A05 to DS-AFW-A."
+    },
+    {
+      "source": "DS-AFW-A",
+      "target": "PUMP-AFW31A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins DS-AFW-A to PUMP-AFW31A."
+    },
+    {
+      "source": "BUS-416A",
+      "target": "CB-4A06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins BUS-416A to CB-4A06."
+    },
+    {
+      "source": "CB-4A06",
+      "target": "DS-CHW-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins CB-4A06 to DS-CHW-A."
+    },
+    {
+      "source": "DS-CHW-A",
+      "target": "MTR-CHWP-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r1c1-r2c2 Train A 4.16 kV feeders joins DS-CHW-A to MTR-CHWP-A."
+    },
+    {
+      "source": "BUS-416A",
+      "target": "CB-4AB-TIE",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_grid_r1c2_2x.png / raw_06_center_core.png 4.16 kV bus tie joins BUS-416A to CB-4AB-TIE."
+    },
+    {
+      "source": "CB-4AB-TIE",
+      "target": "BUS-416B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_grid_r1c2_2x.png / raw_06_center_core.png 4.16 kV bus tie joins CB-4AB-TIE to BUS-416B."
+    },
+    {
+      "source": "SAT-31B",
+      "target": "CB-4B-ST",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins SAT-31B to CB-4B-ST."
+    },
+    {
+      "source": "CB-4B-ST",
+      "target": "BUS-416B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins CB-4B-ST to BUS-416B."
+    },
+    {
+      "source": "DG-31B",
+      "target": "CB-4B-DG",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins DG-31B to CB-4B-DG."
+    },
+    {
+      "source": "CB-4B-DG",
+      "target": "BUS-416B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins CB-4B-DG to BUS-416B."
+    },
+    {
+      "source": "BUS-416B",
+      "target": "CB-4B01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins BUS-416B to CB-4B01."
+    },
+    {
+      "source": "CB-4B01",
+      "target": "TR-480B1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins CB-4B01 to TR-480B1."
+    },
+    {
+      "source": "TR-480B1",
+      "target": "CB-480B-IN",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins TR-480B1 to CB-480B-IN."
+    },
+    {
+      "source": "CB-480B-IN",
+      "target": "BUS-480B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins CB-480B-IN to BUS-480B."
+    },
+    {
+      "source": "BUS-416B",
+      "target": "CB-4B02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins BUS-416B to CB-4B02."
+    },
+    {
+      "source": "CB-4B02",
+      "target": "TR-480B2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins CB-4B02 to TR-480B2."
+    },
+    {
+      "source": "TR-480B2",
+      "target": "CB-480B-ALT",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins TR-480B2 to CB-480B-ALT."
+    },
+    {
+      "source": "CB-480B-ALT",
+      "target": "BUS-480B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins CB-480B-ALT to BUS-480B."
+    },
+    {
+      "source": "BUS-416B",
+      "target": "CB-4B03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins BUS-416B to CB-4B03."
+    },
+    {
+      "source": "CB-4B03",
+      "target": "DS-RCP-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins CB-4B03 to DS-RCP-B."
+    },
+    {
+      "source": "DS-RCP-B",
+      "target": "MTR-RCP-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins DS-RCP-B to MTR-RCP-B."
+    },
+    {
+      "source": "MTR-RCP-B",
+      "target": "GND-RCP-B",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "Visible ground symbol/solid lead in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins MTR-RCP-B to GND-RCP-B."
+    },
+    {
+      "source": "BUS-416B",
+      "target": "CB-4B04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins BUS-416B to CB-4B04."
+    },
+    {
+      "source": "CB-4B04",
+      "target": "DS-SW-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins CB-4B04 to DS-SW-B."
+    },
+    {
+      "source": "DS-SW-B",
+      "target": "PUMP-SW31B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins DS-SW-B to PUMP-SW31B."
+    },
+    {
+      "source": "PUMP-SW31B",
+      "target": "GND-SW-B",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "Visible ground symbol/solid lead in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins PUMP-SW31B to GND-SW-B."
+    },
+    {
+      "source": "BUS-416B",
+      "target": "CB-4B05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins BUS-416B to CB-4B05."
+    },
+    {
+      "source": "CB-4B05",
+      "target": "DS-AFW-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins CB-4B05 to DS-AFW-B."
+    },
+    {
+      "source": "DS-AFW-B",
+      "target": "PUMP-AFW31B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins DS-AFW-B to PUMP-AFW31B."
+    },
+    {
+      "source": "BUS-416B",
+      "target": "CB-4B06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins BUS-416B to CB-4B06."
+    },
+    {
+      "source": "CB-4B06",
+      "target": "DS-CHW-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins CB-4B06 to DS-CHW-B."
+    },
+    {
+      "source": "DS-CHW-B",
+      "target": "MTR-CHWP-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 4.16 kV feeders joins DS-CHW-B to MTR-CHWP-B."
+    },
+    {
+      "source": "BUS-480A",
+      "target": "CB-480A11",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins BUS-480A to CB-480A11."
+    },
+    {
+      "source": "CB-480A11",
+      "target": "MCC-31A1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins CB-480A11 to MCC-31A1."
+    },
+    {
+      "source": "MCC-31A1",
+      "target": "GND-MCC-A1",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "Visible ground symbol/solid lead in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins MCC-31A1 to GND-MCC-A1."
+    },
+    {
+      "source": "MCC-31A1",
+      "target": "STR-A1-1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins MCC-31A1 to STR-A1-1."
+    },
+    {
+      "source": "STR-A1-1",
+      "target": "JB-A1-01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins STR-A1-1 to JB-A1-01."
+    },
+    {
+      "source": "JB-A1-01",
+      "target": "PUMP-CVC-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins JB-A1-01 to PUMP-CVC-A."
+    },
+    {
+      "source": "MCC-31A1",
+      "target": "STR-A1-2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins MCC-31A1 to STR-A1-2."
+    },
+    {
+      "source": "STR-A1-2",
+      "target": "JB-A1-02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins STR-A1-2 to JB-A1-02."
+    },
+    {
+      "source": "JB-A1-02",
+      "target": "MOV-RHR-731A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins JB-A1-02 to MOV-RHR-731A."
+    },
+    {
+      "source": "MCC-31A1",
+      "target": "STR-A1-3",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins MCC-31A1 to STR-A1-3."
+    },
+    {
+      "source": "STR-A1-3",
+      "target": "JB-A1-03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins STR-A1-3 to JB-A1-03."
+    },
+    {
+      "source": "JB-A1-03",
+      "target": "FAN-CRD-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins JB-A1-03 to FAN-CRD-A."
+    },
+    {
+      "source": "BUS-480A",
+      "target": "CB-480A12",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins BUS-480A to CB-480A12."
+    },
+    {
+      "source": "CB-480A12",
+      "target": "MCC-31A2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins CB-480A12 to MCC-31A2."
+    },
+    {
+      "source": "MCC-31A2",
+      "target": "GND-MCC-A2",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "Visible ground symbol/solid lead in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins MCC-31A2 to GND-MCC-A2."
+    },
+    {
+      "source": "MCC-31A2",
+      "target": "STR-A2-1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins MCC-31A2 to STR-A2-1."
+    },
+    {
+      "source": "STR-A2-1",
+      "target": "JB-A2-01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins STR-A2-1 to JB-A2-01."
+    },
+    {
+      "source": "JB-A2-01",
+      "target": "PUMP-CCW-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins JB-A2-01 to PUMP-CCW-A."
+    },
+    {
+      "source": "MCC-31A2",
+      "target": "STR-A2-2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins MCC-31A2 to STR-A2-2."
+    },
+    {
+      "source": "STR-A2-2",
+      "target": "JB-A2-02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins STR-A2-2 to JB-A2-02."
+    },
+    {
+      "source": "JB-A2-02",
+      "target": "HTR-BORIC-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins JB-A2-02 to HTR-BORIC-A."
+    },
+    {
+      "source": "MCC-31A2",
+      "target": "STR-A2-3",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins MCC-31A2 to STR-A2-3."
+    },
+    {
+      "source": "STR-A2-3",
+      "target": "JB-A2-03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins STR-A2-3 to JB-A2-03."
+    },
+    {
+      "source": "JB-A2-03",
+      "target": "MOV-CHG-121A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins JB-A2-03 to MOV-CHG-121A."
+    },
+    {
+      "source": "BUS-480A",
+      "target": "CB-480A13",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins BUS-480A to CB-480A13."
+    },
+    {
+      "source": "CB-480A13",
+      "target": "LC-31A3",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins CB-480A13 to LC-31A3."
+    },
+    {
+      "source": "LC-31A3",
+      "target": "STR-A3-1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins LC-31A3 to STR-A3-1."
+    },
+    {
+      "source": "STR-A3-1",
+      "target": "JB-A3-01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins STR-A3-1 to JB-A3-01."
+    },
+    {
+      "source": "JB-A3-01",
+      "target": "MTR-SUMP-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins JB-A3-01 to MTR-SUMP-A."
+    },
+    {
+      "source": "LC-31A3",
+      "target": "STR-A3-2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins LC-31A3 to STR-A3-2."
+    },
+    {
+      "source": "STR-A3-2",
+      "target": "JB-A3-02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins STR-A3-2 to JB-A3-02."
+    },
+    {
+      "source": "JB-A3-02",
+      "target": "PUMP-LUBE-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins JB-A3-02 to PUMP-LUBE-A."
+    },
+    {
+      "source": "LC-31A3",
+      "target": "STR-A3-3",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins LC-31A3 to STR-A3-3."
+    },
+    {
+      "source": "STR-A3-3",
+      "target": "JB-A3-03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins STR-A3-3 to JB-A3-03."
+    },
+    {
+      "source": "JB-A3-03",
+      "target": "MOV-SI-902A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins JB-A3-03 to MOV-SI-902A."
+    },
+    {
+      "source": "BUS-480A",
+      "target": "CB-480A14",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins BUS-480A to CB-480A14."
+    },
+    {
+      "source": "CB-480A14",
+      "target": "PNL-31A4",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins CB-480A14 to PNL-31A4."
+    },
+    {
+      "source": "PNL-31A4",
+      "target": "STR-A4-1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins PNL-31A4 to STR-A4-1."
+    },
+    {
+      "source": "STR-A4-1",
+      "target": "JB-A4-01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins STR-A4-1 to JB-A4-01."
+    },
+    {
+      "source": "JB-A4-01",
+      "target": "FAN-CONT-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins JB-A4-01 to FAN-CONT-A."
+    },
+    {
+      "source": "PNL-31A4",
+      "target": "STR-A4-2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins PNL-31A4 to STR-A4-2."
+    },
+    {
+      "source": "STR-A4-2",
+      "target": "JB-A4-02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins STR-A4-2 to JB-A4-02."
+    },
+    {
+      "source": "JB-A4-02",
+      "target": "PUMP-SAMPLE-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins JB-A4-02 to PUMP-SAMPLE-A."
+    },
+    {
+      "source": "PNL-31A4",
+      "target": "STR-A4-3",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins PNL-31A4 to STR-A4-3."
+    },
+    {
+      "source": "STR-A4-3",
+      "target": "JB-A4-03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins STR-A4-3 to JB-A4-03."
+    },
+    {
+      "source": "JB-A4-03",
+      "target": "MOV-VENT-406A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r2c1-r3c2 Train A 480 V feeders joins JB-A4-03 to MOV-VENT-406A."
+    },
+    {
+      "source": "BUS-480A",
+      "target": "CB-480AB-TIE",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_grid_r2c2_2x.png / raw_06_center_core.png 480 V bus tie joins BUS-480A to CB-480AB-TIE."
+    },
+    {
+      "source": "CB-480AB-TIE",
+      "target": "BUS-480B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_grid_r2c2_2x.png / raw_06_center_core.png 480 V bus tie joins CB-480AB-TIE to BUS-480B."
+    },
+    {
+      "source": "BUS-480B",
+      "target": "CB-480B11",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins BUS-480B to CB-480B11."
+    },
+    {
+      "source": "CB-480B11",
+      "target": "MCC-31B1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins CB-480B11 to MCC-31B1."
+    },
+    {
+      "source": "MCC-31B1",
+      "target": "GND-MCC-B1",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "Visible ground symbol/solid lead in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins MCC-31B1 to GND-MCC-B1."
+    },
+    {
+      "source": "MCC-31B1",
+      "target": "STR-B1-1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins MCC-31B1 to STR-B1-1."
+    },
+    {
+      "source": "STR-B1-1",
+      "target": "JB-B1-01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins STR-B1-1 to JB-B1-01."
+    },
+    {
+      "source": "JB-B1-01",
+      "target": "PUMP-CVC-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins JB-B1-01 to PUMP-CVC-B."
+    },
+    {
+      "source": "MCC-31B1",
+      "target": "STR-B1-2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins MCC-31B1 to STR-B1-2."
+    },
+    {
+      "source": "STR-B1-2",
+      "target": "JB-B1-02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins STR-B1-2 to JB-B1-02."
+    },
+    {
+      "source": "JB-B1-02",
+      "target": "MOV-RHR-731B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins JB-B1-02 to MOV-RHR-731B."
+    },
+    {
+      "source": "MCC-31B1",
+      "target": "STR-B1-3",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins MCC-31B1 to STR-B1-3."
+    },
+    {
+      "source": "STR-B1-3",
+      "target": "JB-B1-03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins STR-B1-3 to JB-B1-03."
+    },
+    {
+      "source": "JB-B1-03",
+      "target": "FAN-CRD-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins JB-B1-03 to FAN-CRD-B."
+    },
+    {
+      "source": "BUS-480B",
+      "target": "CB-480B12",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins BUS-480B to CB-480B12."
+    },
+    {
+      "source": "CB-480B12",
+      "target": "MCC-31B2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins CB-480B12 to MCC-31B2."
+    },
+    {
+      "source": "MCC-31B2",
+      "target": "GND-MCC-B2",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "Visible ground symbol/solid lead in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins MCC-31B2 to GND-MCC-B2."
+    },
+    {
+      "source": "MCC-31B2",
+      "target": "STR-B2-1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins MCC-31B2 to STR-B2-1."
+    },
+    {
+      "source": "STR-B2-1",
+      "target": "JB-B2-01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins STR-B2-1 to JB-B2-01."
+    },
+    {
+      "source": "JB-B2-01",
+      "target": "PUMP-CCW-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins JB-B2-01 to PUMP-CCW-B."
+    },
+    {
+      "source": "MCC-31B2",
+      "target": "STR-B2-2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins MCC-31B2 to STR-B2-2."
+    },
+    {
+      "source": "STR-B2-2",
+      "target": "JB-B2-02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins STR-B2-2 to JB-B2-02."
+    },
+    {
+      "source": "JB-B2-02",
+      "target": "HTR-BORIC-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins JB-B2-02 to HTR-BORIC-B."
+    },
+    {
+      "source": "MCC-31B2",
+      "target": "STR-B2-3",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins MCC-31B2 to STR-B2-3."
+    },
+    {
+      "source": "STR-B2-3",
+      "target": "JB-B2-03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins STR-B2-3 to JB-B2-03."
+    },
+    {
+      "source": "JB-B2-03",
+      "target": "MOV-CHG-121B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins JB-B2-03 to MOV-CHG-121B."
+    },
+    {
+      "source": "BUS-480B",
+      "target": "CB-480B13",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins BUS-480B to CB-480B13."
+    },
+    {
+      "source": "CB-480B13",
+      "target": "LC-31B3",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins CB-480B13 to LC-31B3."
+    },
+    {
+      "source": "LC-31B3",
+      "target": "STR-B3-1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins LC-31B3 to STR-B3-1."
+    },
+    {
+      "source": "STR-B3-1",
+      "target": "JB-B3-01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins STR-B3-1 to JB-B3-01."
+    },
+    {
+      "source": "JB-B3-01",
+      "target": "MTR-SUMP-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins JB-B3-01 to MTR-SUMP-B."
+    },
+    {
+      "source": "LC-31B3",
+      "target": "STR-B3-2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins LC-31B3 to STR-B3-2."
+    },
+    {
+      "source": "STR-B3-2",
+      "target": "JB-B3-02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins STR-B3-2 to JB-B3-02."
+    },
+    {
+      "source": "JB-B3-02",
+      "target": "PUMP-LUBE-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins JB-B3-02 to PUMP-LUBE-B."
+    },
+    {
+      "source": "LC-31B3",
+      "target": "STR-B3-3",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins LC-31B3 to STR-B3-3."
+    },
+    {
+      "source": "STR-B3-3",
+      "target": "JB-B3-03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins STR-B3-3 to JB-B3-03."
+    },
+    {
+      "source": "JB-B3-03",
+      "target": "MOV-SI-902B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins JB-B3-03 to MOV-SI-902B."
+    },
+    {
+      "source": "BUS-480B",
+      "target": "CB-480B14",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins BUS-480B to CB-480B14."
+    },
+    {
+      "source": "CB-480B14",
+      "target": "PNL-31B4",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins CB-480B14 to PNL-31B4."
+    },
+    {
+      "source": "PNL-31B4",
+      "target": "STR-B4-1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins PNL-31B4 to STR-B4-1."
+    },
+    {
+      "source": "STR-B4-1",
+      "target": "JB-B4-01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins STR-B4-1 to JB-B4-01."
+    },
+    {
+      "source": "JB-B4-01",
+      "target": "FAN-CONT-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins JB-B4-01 to FAN-CONT-B."
+    },
+    {
+      "source": "PNL-31B4",
+      "target": "STR-B4-2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins PNL-31B4 to STR-B4-2."
+    },
+    {
+      "source": "STR-B4-2",
+      "target": "JB-B4-02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins STR-B4-2 to JB-B4-02."
+    },
+    {
+      "source": "JB-B4-02",
+      "target": "PUMP-SAMPLE-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins JB-B4-02 to PUMP-SAMPLE-B."
+    },
+    {
+      "source": "PNL-31B4",
+      "target": "STR-B4-3",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins PNL-31B4 to STR-B4-3."
+    },
+    {
+      "source": "STR-B4-3",
+      "target": "JB-B4-03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins STR-B4-3 to JB-B4-03."
+    },
+    {
+      "source": "JB-B4-03",
+      "target": "MOV-VENT-406B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png and raw_07_right_core.png Train B 480 V feeders joins JB-B4-03 to MOV-VENT-406B."
+    },
+    {
+      "source": "BAT-31A",
+      "target": "DS-BAT-A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible solid DC feeder/tap in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins BAT-31A to DS-BAT-A."
+    },
+    {
+      "source": "DS-BAT-A",
+      "target": "BUS-125DCA",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible solid DC feeder/tap in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins DS-BAT-A to BUS-125DCA."
+    },
+    {
+      "source": "CHG-31A",
+      "target": "CB-CHG-A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible solid DC feeder/tap in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins CHG-31A to CB-CHG-A."
+    },
+    {
+      "source": "CB-CHG-A",
+      "target": "BUS-125DCA",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible solid DC feeder/tap in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins CB-CHG-A to BUS-125DCA."
+    },
+    {
+      "source": "BUS-125DCA",
+      "target": "CB-INV-A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible solid DC tap at label DC-A-INV in raw_05_left_core.png joins CB-INV-A to BUS-125DCA."
+    },
+    {
+      "source": "BUS-125DCA",
+      "target": "INV-31A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible vertical solid feeder continues from BUS-125DCA down to INV-31A in raw_05_left_core.png."
+    },
+    {
+      "source": "BUS-125DCA",
+      "target": "PNL-DC-A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible solid DC feeder/tap in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins BUS-125DCA to PNL-DC-A."
+    },
+    {
+      "source": "INV-31A",
+      "target": "BUS-INV-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins INV-31A to BUS-INV-A."
+    },
+    {
+      "source": "BUS-INV-A",
+      "target": "PNL-AC-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins BUS-INV-A to PNL-AC-A."
+    },
+    {
+      "source": "BUS-INV-A",
+      "target": "RPS-PNL-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins BUS-INV-A to RPS-PNL-A."
+    },
+    {
+      "source": "PNL-AC-A",
+      "target": "BUS-120N-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid feeder at label 120-A-N joins PNL-AC-A to BUS-120N-A in raw_05_left_core.png/raw_grid_r4c2_2x.png."
+    },
+    {
+      "source": "RPS-PNL-A",
+      "target": "TB-UPS-A",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Visible dashed control/protection line in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins RPS-PNL-A to TB-UPS-A."
+    },
+    {
+      "source": "BUS-120N-A",
+      "target": "RELAY-K7A1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins BUS-120N-A to RELAY-K7A1."
+    },
+    {
+      "source": "RELAY-K7A1",
+      "target": "TB-RPS-A1",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Visible dashed control/protection line in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins RELAY-K7A1 to TB-RPS-A1."
+    },
+    {
+      "source": "TB-RPS-A1",
+      "target": "PT-31A1",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "Visible dotted instrument signal line in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins TB-RPS-A1 to PT-31A1."
+    },
+    {
+      "source": "BUS-120N-A",
+      "target": "RELAY-K7A2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins BUS-120N-A to RELAY-K7A2."
+    },
+    {
+      "source": "RELAY-K7A2",
+      "target": "TB-RPS-A2",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Visible dashed control/protection line in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins RELAY-K7A2 to TB-RPS-A2."
+    },
+    {
+      "source": "TB-RPS-A2",
+      "target": "PT-31A2",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "Visible dotted instrument signal line in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins TB-RPS-A2 to PT-31A2."
+    },
+    {
+      "source": "BUS-120N-A",
+      "target": "RELAY-K7A3",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins BUS-120N-A to RELAY-K7A3."
+    },
+    {
+      "source": "RELAY-K7A3",
+      "target": "TB-RPS-A3",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Visible dashed control/protection line in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins RELAY-K7A3 to TB-RPS-A3."
+    },
+    {
+      "source": "TB-RPS-A3",
+      "target": "PT-31A3",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "Visible dotted instrument signal line in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins TB-RPS-A3 to PT-31A3."
+    },
+    {
+      "source": "BUS-120N-A",
+      "target": "RELAY-K7A4",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins BUS-120N-A to RELAY-K7A4."
+    },
+    {
+      "source": "RELAY-K7A4",
+      "target": "TB-RPS-A4",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Visible dashed control/protection line in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins RELAY-K7A4 to TB-RPS-A4."
+    },
+    {
+      "source": "TB-RPS-A4",
+      "target": "PT-31A4",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "Visible dotted instrument signal line in raw_05_left_core.png and raw_grid_r3c1-r4c2 Train A DC/UPS/RPS feeders joins TB-RPS-A4 to PT-31A4."
+    },
+    {
+      "source": "BUS-125DCA",
+      "target": "CB-DCAB-TIE",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible solid DC feeder/tap in raw_grid_r3c2_2x.png / raw_06_center_core.png DC bus tie joins BUS-125DCA to CB-DCAB-TIE."
+    },
+    {
+      "source": "CB-DCAB-TIE",
+      "target": "BUS-125DCB",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible solid DC feeder/tap in raw_grid_r3c2_2x.png / raw_06_center_core.png DC bus tie joins CB-DCAB-TIE to BUS-125DCB."
+    },
+    {
+      "source": "BAT-31B",
+      "target": "DS-BAT-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible solid DC feeder/tap in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins BAT-31B to DS-BAT-B."
+    },
+    {
+      "source": "DS-BAT-B",
+      "target": "BUS-125DCB",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible solid DC feeder/tap in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins DS-BAT-B to BUS-125DCB."
+    },
+    {
+      "source": "CHG-31B",
+      "target": "CB-CHG-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible solid DC feeder/tap in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins CHG-31B to CB-CHG-B."
+    },
+    {
+      "source": "CB-CHG-B",
+      "target": "BUS-125DCB",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible solid DC feeder/tap in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins CB-CHG-B to BUS-125DCB."
+    },
+    {
+      "source": "BUS-125DCB",
+      "target": "CB-INV-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible solid DC tap at label DC-B-INV in raw_06_center_core.png joins CB-INV-B to BUS-125DCB."
+    },
+    {
+      "source": "BUS-125DCB",
+      "target": "INV-31B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible vertical solid feeder continues from BUS-125DCB down to INV-31B in raw_06_center_core.png."
+    },
+    {
+      "source": "BUS-125DCB",
+      "target": "PNL-DC-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Visible solid DC feeder/tap in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins BUS-125DCB to PNL-DC-B."
+    },
+    {
+      "source": "INV-31B",
+      "target": "BUS-INV-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins INV-31B to BUS-INV-B."
+    },
+    {
+      "source": "BUS-INV-B",
+      "target": "PNL-AC-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins BUS-INV-B to PNL-AC-B."
+    },
+    {
+      "source": "BUS-INV-B",
+      "target": "RPS-PNL-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins BUS-INV-B to RPS-PNL-B."
+    },
+    {
+      "source": "PNL-AC-B",
+      "target": "BUS-120N-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid feeder at label 120-B-N joins PNL-AC-B to BUS-120N-B in raw_07_right_core.png/raw_08_notes_title_area.png."
+    },
+    {
+      "source": "RPS-PNL-B",
+      "target": "TB-UPS-B",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Visible dashed control/protection line in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins RPS-PNL-B to TB-UPS-B."
+    },
+    {
+      "source": "BUS-120N-B",
+      "target": "RELAY-K7B1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins BUS-120N-B to RELAY-K7B1."
+    },
+    {
+      "source": "RELAY-K7B1",
+      "target": "TB-RPS-B1",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Visible dashed control/protection line in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins RELAY-K7B1 to TB-RPS-B1."
+    },
+    {
+      "source": "TB-RPS-B1",
+      "target": "PT-31B1",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "Visible dotted instrument signal line in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins TB-RPS-B1 to PT-31B1."
+    },
+    {
+      "source": "BUS-120N-B",
+      "target": "RELAY-K7B2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins BUS-120N-B to RELAY-K7B2."
+    },
+    {
+      "source": "RELAY-K7B2",
+      "target": "TB-RPS-B2",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Visible dashed control/protection line in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins RELAY-K7B2 to TB-RPS-B2."
+    },
+    {
+      "source": "TB-RPS-B2",
+      "target": "PT-31B2",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "Visible dotted instrument signal line in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins TB-RPS-B2 to PT-31B2."
+    },
+    {
+      "source": "BUS-120N-B",
+      "target": "RELAY-K7B3",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins BUS-120N-B to RELAY-K7B3."
+    },
+    {
+      "source": "RELAY-K7B3",
+      "target": "TB-RPS-B3",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Visible dashed control/protection line in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins RELAY-K7B3 to TB-RPS-B3."
+    },
+    {
+      "source": "TB-RPS-B3",
+      "target": "PT-31B3",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "Visible dotted instrument signal line in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins TB-RPS-B3 to PT-31B3."
+    },
+    {
+      "source": "BUS-120N-B",
+      "target": "RELAY-K7B4",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid power feeder/tap in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins BUS-120N-B to RELAY-K7B4."
+    },
+    {
+      "source": "RELAY-K7B4",
+      "target": "TB-RPS-B4",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Visible dashed control/protection line in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins RELAY-K7B4 to TB-RPS-B4."
+    },
+    {
+      "source": "TB-RPS-B4",
+      "target": "PT-31B4",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "Visible dotted instrument signal line in raw_06_center_core.png, raw_07_right_core.png, and raw_08_notes_title_area.png Train B DC/UPS/RPS feeders joins TB-RPS-B4 to PT-31B4."
+    }
+  ],
+  "uncertain_edges": [
+    {
+      "a": "CB-480A13",
+      "b": "MOV-SI-902A",
+      "reason": "The dashed interlock follows the right side of the LC-31A3/MOV-SI branch, but the precise endpoint on the breaker, panel, or MOV branch is ambiguous.",
+      "evidence": "raw_05_left_core.png and raw_grid_r3c1_2x.png: dashed route descends beside STR-A3-3/JB-A3-03/MOV-SI-902A with no terminal dot."
+    },
+    {
+      "a": "CB-480B13",
+      "b": "MOV-SI-902B",
+      "reason": "The dashed interlock follows the right side of the LC-31B3/MOV-SI branch, but the precise endpoint on the breaker, panel, or MOV branch is ambiguous.",
+      "evidence": "raw_06_center_core.png, raw_07_right_core.png, and raw_grid_r3c3_2x.png: dashed route descends beside STR-B3-3/JB-B3-03/MOV-SI-902B with no terminal dot."
+    },
+    {
+      "a": "MOV-SI-902A",
+      "b": "CB-INV-A",
+      "reason": "A dashed route from the MOV-SI-902A branch continues toward the DC/UPS inverter area, but intervening crossings and missing dots make the endpoint unclear.",
+      "evidence": "raw_05_left_core.png and raw_grid_r3c1_2x.png: dashed route descends from the MOV-SI-902A region toward the CB-INV-A/DC-A-INV area."
+    },
+    {
+      "a": "MOV-SI-902B",
+      "b": "CB-INV-B",
+      "reason": "A dashed route from the MOV-SI-902B branch continues toward the DC/UPS inverter area, but intervening crossings and missing dots make the endpoint unclear.",
+      "evidence": "raw_06_center_core.png, raw_07_right_core.png, and raw_grid_r3c3_2x.png: dashed route descends from the MOV-SI-902B region toward the CB-INV-B/DC-B-INV area."
+    },
+    {
+      "a": "MOV-VENT-406A",
+      "b": "RPS-PNL-A",
+      "reason": "A dashed interlock leaves the MOV-VENT-406A branch and travels toward the lower UPS/RPS area; endpoint association with RPS-PNL-A is plausible but not directly dotted.",
+      "evidence": "raw_05_left_core.png: dashed line from the PNL-31A4/MOV-VENT-406A branch continues downward/right toward the RPS-PNL-A/TB-UPS-A area."
+    },
+    {
+      "a": "MOV-VENT-406B",
+      "b": "RPS-PNL-B",
+      "reason": "A dashed interlock leaves the MOV-VENT-406B branch and travels toward the lower UPS/RPS area; endpoint association with RPS-PNL-B is plausible but not directly dotted.",
+      "evidence": "raw_06_center_core.png and raw_07_right_core.png: dashed line from the PNL-31B4/MOV-VENT-406B branch continues downward/left toward the RPS-PNL-B/TB-UPS-B area."
+    },
+    {
+      "a": "MOV-RHR-731A",
+      "b": "BAT-31A",
+      "reason": "A dashed control line near the MOV-RHR-731A branch reaches the DC subsystem top control band near BAT-31A; exact termination is unclear.",
+      "evidence": "raw_05_left_core.png and raw_grid_r3c1_2x.png: dashed line near STR-A1-2/JB-A1-02/MOV-RHR-731A merges into the dashed band above BAT-31A."
+    },
+    {
+      "a": "MOV-RHR-731B",
+      "b": "BAT-31B",
+      "reason": "A dashed control line near the MOV-RHR-731B branch reaches the DC subsystem top control band near BAT-31B; exact termination is unclear.",
+      "evidence": "raw_06_center_core.png and raw_grid_r3c3_2x.png: dashed line near STR-B1-2/JB-B1-02/MOV-RHR-731B merges into the dashed band above BAT-31B."
+    },
+    {
+      "a": "MOV-CHG-121A",
+      "b": "CHG-31A",
+      "reason": "Dashed routing in the lower Train A control band passes near MOV-CHG-121A and CHG-31A, but it is not clear which symbol, if any, it terminates on.",
+      "evidence": "raw_05_left_core.png and raw_grid_r3c1_2x.png: dashed band crosses the BAT-31A/CHG-31A area and nearby valve branches without a clear endpoint dot."
+    },
+    {
+      "a": "MOV-CHG-121B",
+      "b": "CHG-31B",
+      "reason": "Dashed routing in the lower Train B control band passes near MOV-CHG-121B and CHG-31B, but it is not clear which symbol, if any, it terminates on.",
+      "evidence": "raw_06_center_core.png and raw_grid_r3c3_2x.png: dashed band crosses the BAT-31B/CHG-31B area and nearby valve branches without a clear endpoint dot."
+    }
+  ],
+  "rejected_non_edges": [
+    {
+      "a": "BUS-416A",
+      "b": "BUS-416B",
+      "reason": "Separated train buses; the visible connection is through CB-4AB-TIE, not a direct bus-to-bus edge.",
+      "evidence": "raw_grid_r1c2_2x.png and raw_06_center_core.png: CB-4AB-TIE is drawn between the bus ends."
+    },
+    {
+      "a": "BUS-480A",
+      "b": "BUS-480B",
+      "reason": "Separated train load-center buses; the visible connection is through CB-480AB-TIE, not a direct bus-to-bus edge.",
+      "evidence": "raw_grid_r2c2_2x.png and raw_06_center_core.png: CB-480AB-TIE is drawn between the bus ends."
+    },
+    {
+      "a": "BUS-125DCA",
+      "b": "BUS-125DCB",
+      "reason": "Separated DC buses; the visible connection is through CB-DCAB-TIE, not a direct bus-to-bus edge.",
+      "evidence": "raw_grid_r3c2_2x.png and raw_06_center_core.png: CB-DCAB-TIE is drawn between the DC bus ends."
+    },
+    {
+      "a": "BUS-416A",
+      "b": "BUS-480A",
+      "reason": "Transformer and breaker devices intervene; no direct 4.16 kV to 480 V bus short is shown.",
+      "evidence": "raw_05_left_core.png and raw_grid_r2c1_2x.png: BUS-416A feeds BUS-480A only through CB/TR/CB vertical device chains."
+    },
+    {
+      "a": "BUS-416B",
+      "b": "BUS-480B",
+      "reason": "Transformer and breaker devices intervene; no direct 4.16 kV to 480 V bus short is shown.",
+      "evidence": "raw_06_center_core.png and raw_grid_r2c3_2x.png: BUS-416B feeds BUS-480B only through CB/TR/CB vertical device chains."
+    },
+    {
+      "a": "PNL-AC-A",
+      "b": "RELAY-K7A2",
+      "reason": "They share nearby vertical alignment, but BUS-120N-A is the visible junction node between them; no direct panel-to-relay edge is shown.",
+      "evidence": "raw_grid_r4c2_2x.png: PNL-AC-A lands on BUS-120N-A, and RELAY-K7A2 taps from BUS-120N-A below."
+    },
+    {
+      "a": "PNL-AC-B",
+      "b": "RELAY-K7B2",
+      "reason": "They share nearby vertical alignment, but BUS-120N-B is the visible junction node between them; no direct panel-to-relay edge is shown.",
+      "evidence": "raw_07_right_core.png and raw_grid_r4c3_2x.png: PNL-AC-B lands on BUS-120N-B, and RELAY-K7B2 taps from BUS-120N-B below."
+    },
+    {
+      "a": "TB-UPS-A",
+      "b": "BUS-120N-A",
+      "reason": "The TB-UPS-A dashed control line is routed from RPS-PNL-A; it crosses near vertical guide/control lines without a bus junction dot.",
+      "evidence": "raw_grid_r4c2_2x.png: dashed RPS-PNL-A to TB-UPS-A run is above BUS-120N-A and has no tap dot to the bus."
+    },
+    {
+      "a": "TB-UPS-B",
+      "b": "BUS-120N-B",
+      "reason": "The TB-UPS-B dashed control line is routed from RPS-PNL-B; it crosses near vertical guide/control lines without a bus junction dot.",
+      "evidence": "raw_07_right_core.png and raw_08_notes_title_area.png: dashed RPS-PNL-B to TB-UPS-B run is above BUS-120N-B and has no tap dot to the bus."
+    },
+    {
+      "a": "MOV-SI-902A",
+      "b": "BUS-125DCA",
+      "reason": "A dashed control route approaches/crosses the lower DC bus area, but no junction dot is visible at BUS-125DCA.",
+      "evidence": "raw_05_left_core.png and raw_grid_r3c1_2x.png: dashed route descends near BUS-125DCA without a terminal dot on the bus."
+    },
+    {
+      "a": "MOV-SI-902B",
+      "b": "BUS-125DCB",
+      "reason": "A dashed control route approaches/crosses the lower DC bus area, but no junction dot is visible at BUS-125DCB.",
+      "evidence": "raw_06_center_core.png and raw_grid_r3c3_2x.png: dashed route descends near BUS-125DCB without a terminal dot on the bus."
+    },
+    {
+      "a": "MTR-RCP-A",
+      "b": "BUS-480A",
+      "reason": "RCP-A motor branch is fed from BUS-416A; the nearby dashed vertical route crosses the 480 V bus area without an electrical junction dot.",
+      "evidence": "raw_05_left_core.png and raw_grid_r2c1_2x.png: MTR-RCP-A sits on the 4.16 kV branch while BUS-480A is below and crossed by dashed routing only."
+    },
+    {
+      "a": "MTR-RCP-B",
+      "b": "BUS-480B",
+      "reason": "RCP-B motor branch is fed from BUS-416B; the nearby dashed vertical route crosses the 480 V bus area without an electrical junction dot.",
+      "evidence": "raw_06_center_core.png and raw_grid_r2c3_2x.png: MTR-RCP-B sits on the 4.16 kV branch while BUS-480B is below and crossed by dashed routing only."
+    },
+    {
+      "a": "CB-4A03",
+      "b": "GND-RCP-A",
+      "reason": "The dashed control route near CB-4A03 passes beside the RCP-A ground reference; it does not visibly terminate at the ground symbol.",
+      "evidence": "raw_05_left_core.png: GND-RCP-A is the solid ground reference for MTR-RCP-A, while the CB-4A03 dashed route runs nearby without a terminal dot at the symbol."
+    },
+    {
+      "a": "CB-4B03",
+      "b": "GND-RCP-B",
+      "reason": "The dashed control route near CB-4B03 passes beside the RCP-B ground reference; it does not visibly terminate at the ground symbol.",
+      "evidence": "raw_06_center_core.png: GND-RCP-B is the solid ground reference for MTR-RCP-B, while the CB-4B03 dashed route runs nearby without a terminal dot at the symbol."
+    },
+    {
+      "a": "CB-INV-A",
+      "b": "INV-31A",
+      "reason": "Both components land on the BUS-125DCA tap, but the visible DC bus junction dot is between them; no direct component-to-component shortcut is asserted.",
+      "evidence": "raw_05_left_core.png and raw_grid_r3c1_2x.png: CB-INV-A is above BUS-125DCA and INV-31A is below the same bus tap."
+    },
+    {
+      "a": "CB-INV-B",
+      "b": "INV-31B",
+      "reason": "Both components land on the BUS-125DCB tap, but the visible DC bus junction dot is between them; no direct component-to-component shortcut is asserted.",
+      "evidence": "raw_06_center_core.png and raw_grid_r3c3_2x.png: CB-INV-B is above BUS-125DCB and INV-31B is below the same bus tap."
+    },
+    {
+      "a": "RPS-PNL-A",
+      "b": "BUS-120N-A",
+      "reason": "RPS-PNL-A has a visible solid tap to BUS-INV-A and a dashed control run to TB-UPS-A; no direct tap to BUS-120N-A is visible.",
+      "evidence": "raw_grid_r4c2_2x.png: RPS-PNL-A is connected upward to BUS-INV-A, while BUS-120N-A is the lower bus with no RPS-PNL-A junction dot."
+    },
+    {
+      "a": "RPS-PNL-B",
+      "b": "BUS-120N-B",
+      "reason": "RPS-PNL-B has a visible solid tap to BUS-INV-B and a dashed control run to TB-UPS-B; no direct tap to BUS-120N-B is visible.",
+      "evidence": "raw_07_right_core.png and raw_08_notes_title_area.png: RPS-PNL-B is connected upward to BUS-INV-B, while BUS-120N-B is the lower bus with no RPS-PNL-B junction dot."
+    }
+  ]
+}

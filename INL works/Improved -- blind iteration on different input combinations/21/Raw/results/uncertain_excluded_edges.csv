@@ -1,0 +1,6 @@
+candidate_edge,decision,reason
+BAT-EDG-A -- BAT-EDG-B,excluded_uncertain,"dashed EDG battery loop visible, but exact adjacent component representation was not clean enough without an unlabeled loop node"
+BAT-EDG-B -- CP-CRD,excluded_uncertain,"dashed loop appears to continue toward CP-CRD, but pairwise adjacency was not visually locked by reviewers"
+INV-120C -- <named destination>,excluded_uncertain,"INV-120C output line continues, but no legible named endpoint was visually confirmed"
+CB-204B,excluded_label,EDG-2A inboard breaker is drawn but unlabeled; canonical node kept as CB-UNLABELED-EDG2A-INBOARD
+EDG feeder / no-tie crossings,excluded,drawing note and geometry show crossings without junction dots are not connections

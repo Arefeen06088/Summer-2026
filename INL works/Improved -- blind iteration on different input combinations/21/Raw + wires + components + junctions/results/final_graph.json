@@ -1,0 +1,1705 @@
+{
+  "document": "21",
+  "iteration": "1",
+  "node_count": 193,
+  "edge_count": 187,
+  "nodes": [
+    "GEN-UT",
+    "CB-101",
+    "DS-101A",
+    "TR-UAT1",
+    "CB-201A",
+    "BUS-201A",
+    "CB-102",
+    "DS-101B",
+    "TR-UAT2",
+    "CB-201B",
+    "BUS-201B",
+    "BUS-101",
+    "CB-103",
+    "DS-102A",
+    "TR-SU1",
+    "CB-202A",
+    "BUS-202A",
+    "BUS-102",
+    "CB-104",
+    "DS-102B",
+    "TR-SU2",
+    "CB-202B",
+    "BUS-202B",
+    "DS-201A",
+    "CB-105",
+    "EDG-1A",
+    "CB-204A",
+    "DS-201B",
+    "CB-106",
+    "EDG-1B",
+    "DS-202A",
+    "CB-203A",
+    "EDG-2A",
+    "DS-202B",
+    "CB-203B",
+    "EDG-2B",
+    "CB-301A",
+    "DS-301A",
+    "TR-SA",
+    "CB-501A",
+    "BUS-301A",
+    "CB-302A",
+    "DS-302A",
+    "TR-NA",
+    "CB-502A",
+    "BUS-302A",
+    "CB-301B",
+    "DS-301B",
+    "TR-SB",
+    "CB-501B",
+    "BUS-301B",
+    "CB-302B",
+    "DS-302B",
+    "TR-NB",
+    "CB-502B",
+    "BUS-302B",
+    "GND-1",
+    "CB-303A",
+    "MCC-1A",
+    "CB-304A",
+    "MCC-2A",
+    "CB-503A",
+    "MCC-3A",
+    "MOTOR-SI101A",
+    "PUMP-SI101A",
+    "MOTOR-CCW101A",
+    "PUMP-CCW101A",
+    "VLV-8801A",
+    "MOTOR-AFW101A",
+    "PUMP-AFW101A",
+    "MOTOR-RHR101A",
+    "PUMP-RHR101A",
+    "VLV-8802A",
+    "MOTOR-SW101A",
+    "PUMP-SW101A",
+    "MOTOR-CHG101A",
+    "PUMP-CHG101A",
+    "MOTOR-FAN101A",
+    "VLV-8901A",
+    "GND-5",
+    "GND-2",
+    "CB-303B",
+    "MCC-1B",
+    "CB-304B",
+    "MCC-2B",
+    "CB-503B",
+    "MCC-3B",
+    "MOTOR-SI101B",
+    "PUMP-SI101B",
+    "MOTOR-CCW101B",
+    "PUMP-CCW101B",
+    "VLV-8801B",
+    "MOTOR-AFW101B",
+    "PUMP-AFW101B",
+    "MOTOR-RHR101B",
+    "PUMP-RHR101B",
+    "VLV-8802B",
+    "MOTOR-SW101B",
+    "PUMP-SW101B",
+    "MOTOR-CHG101B",
+    "PUMP-CHG101B",
+    "MOTOR-FAN101B",
+    "VLV-8901B",
+    "GND-6",
+    "DS-401A",
+    "TR-DC-A",
+    "RECT-125A",
+    "BUS-401A",
+    "BAT-1A",
+    "BAT-2A",
+    "GND-3",
+    "INV-120A",
+    "BUS-501A",
+    "DS-401B",
+    "TR-DC-B",
+    "RECT-125B",
+    "BUS-401B",
+    "BAT-1B",
+    "BAT-2B",
+    "GND-4",
+    "INV-120B",
+    "BUS-501B",
+    "DS-402A",
+    "TR-INV-A",
+    "INV-120C",
+    "DS-402B",
+    "TR-INV-B",
+    "RECT-24C",
+    "CP-SI-A",
+    "K101",
+    "K102",
+    "K103",
+    "JB-101",
+    "PT101",
+    "PT102",
+    "CP-SI-B",
+    "K104",
+    "K105",
+    "K106",
+    "JB-102",
+    "PT103",
+    "FT201",
+    "CP-CCW-A",
+    "K107",
+    "K108",
+    "K109",
+    "JB-103",
+    "FT202",
+    "LT301",
+    "CP-CCW-B",
+    "K110",
+    "K111",
+    "K112",
+    "JB-104",
+    "LT302",
+    "TT401",
+    "CP-EDG-A",
+    "K113",
+    "K114",
+    "K115",
+    "JB-105",
+    "TT402",
+    "CT501",
+    "CP-EDG-B",
+    "K116",
+    "K117",
+    "K118",
+    "JB-106",
+    "CT502",
+    "RPS-A",
+    "K119",
+    "K120",
+    "K121",
+    "JB-107",
+    "VT601",
+    "RPS-B",
+    "K122",
+    "K123",
+    "K124",
+    "JB-108",
+    "VT602",
+    "ESFAS-A",
+    "K125",
+    "K126",
+    "K127",
+    "JB-109",
+    "ZS701",
+    "ESFAS-B",
+    "K128",
+    "K129",
+    "K130",
+    "JB-110",
+    "ZS702"
+  ],
+  "edges": [
+    {
+      "source": "GEN-UT",
+      "target": "CB-101",
+      "edge_type": "power",
+      "evidence": "top-left GEN-UT to class 1E bus A chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-101",
+      "target": "DS-101A",
+      "edge_type": "power",
+      "evidence": "top-left GEN-UT to class 1E bus A chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "DS-101A",
+      "target": "TR-UAT1",
+      "edge_type": "power",
+      "evidence": "top-left GEN-UT to class 1E bus A chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "TR-UAT1",
+      "target": "CB-201A",
+      "edge_type": "power",
+      "evidence": "top-left GEN-UT to class 1E bus A chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-201A",
+      "target": "BUS-201A",
+      "edge_type": "power",
+      "evidence": "top-left GEN-UT to class 1E bus A chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "GEN-UT",
+      "target": "CB-102",
+      "edge_type": "power",
+      "evidence": "top-left GEN-UT to class 1E bus B chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-102",
+      "target": "DS-101B",
+      "edge_type": "power",
+      "evidence": "top-left GEN-UT to class 1E bus B chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "DS-101B",
+      "target": "TR-UAT2",
+      "edge_type": "power",
+      "evidence": "top-left GEN-UT to class 1E bus B chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "TR-UAT2",
+      "target": "CB-201B",
+      "edge_type": "power",
+      "evidence": "top-left GEN-UT to class 1E bus B chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-201B",
+      "target": "BUS-201B",
+      "edge_type": "power",
+      "evidence": "top-left GEN-UT to class 1E bus B chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-101",
+      "target": "CB-103",
+      "edge_type": "power",
+      "evidence": "13.8 kV auxiliary bus to non-1E bus A chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-103",
+      "target": "DS-102A",
+      "edge_type": "power",
+      "evidence": "13.8 kV auxiliary bus to non-1E bus A chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "DS-102A",
+      "target": "TR-SU1",
+      "edge_type": "power",
+      "evidence": "13.8 kV auxiliary bus to non-1E bus A chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "TR-SU1",
+      "target": "CB-202A",
+      "edge_type": "power",
+      "evidence": "13.8 kV auxiliary bus to non-1E bus A chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-202A",
+      "target": "BUS-202A",
+      "edge_type": "power",
+      "evidence": "13.8 kV auxiliary bus to non-1E bus A chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-102",
+      "target": "CB-104",
+      "edge_type": "power",
+      "evidence": "13.8 kV preferred bus to non-1E bus B chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-104",
+      "target": "DS-102B",
+      "edge_type": "power",
+      "evidence": "13.8 kV preferred bus to non-1E bus B chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "DS-102B",
+      "target": "TR-SU2",
+      "edge_type": "power",
+      "evidence": "13.8 kV preferred bus to non-1E bus B chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "TR-SU2",
+      "target": "CB-202B",
+      "edge_type": "power",
+      "evidence": "13.8 kV preferred bus to non-1E bus B chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-202B",
+      "target": "BUS-202B",
+      "edge_type": "power",
+      "evidence": "13.8 kV preferred bus to non-1E bus B chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-201A",
+      "target": "DS-201A",
+      "edge_type": "power",
+      "evidence": "EDG-1A feeder from BUS-201A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "DS-201A",
+      "target": "CB-105",
+      "edge_type": "power",
+      "evidence": "EDG-1A feeder from BUS-201A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-105",
+      "target": "EDG-1A",
+      "edge_type": "power",
+      "evidence": "EDG-1A feeder from BUS-201A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-201B",
+      "target": "CB-204A",
+      "edge_type": "power",
+      "evidence": "EDG-1B feeder from BUS-201B; CB-204A label visible",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-204A",
+      "target": "DS-201B",
+      "edge_type": "power",
+      "evidence": "EDG-1B feeder from BUS-201B; CB-204A label visible",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "DS-201B",
+      "target": "CB-106",
+      "edge_type": "power",
+      "evidence": "EDG-1B feeder from BUS-201B; CB-204A label visible",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-106",
+      "target": "EDG-1B",
+      "edge_type": "power",
+      "evidence": "EDG-1B feeder from BUS-201B; CB-204A label visible",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-202A",
+      "target": "DS-202A",
+      "edge_type": "power",
+      "evidence": "EDG-2A feeder from BUS-202A; unlabeled bus-side breaker visually present but collapsed for named-node matrix",
+      "normally_open": "",
+      "note": "Unlabeled breaker between BUS-202A and DS-202A is not assigned a fabricated final node name."
+    },
+    {
+      "source": "DS-202A",
+      "target": "CB-203A",
+      "edge_type": "power",
+      "evidence": "EDG-2A feeder from BUS-202A; unlabeled bus-side breaker visually present but collapsed for named-node matrix",
+      "normally_open": "",
+      "note": "Unlabeled breaker between BUS-202A and DS-202A is not assigned a fabricated final node name."
+    },
+    {
+      "source": "CB-203A",
+      "target": "EDG-2A",
+      "edge_type": "power",
+      "evidence": "EDG-2A feeder from BUS-202A; unlabeled bus-side breaker visually present but collapsed for named-node matrix",
+      "normally_open": "",
+      "note": "Unlabeled breaker between BUS-202A and DS-202A is not assigned a fabricated final node name."
+    },
+    {
+      "source": "BUS-202B",
+      "target": "DS-202B",
+      "edge_type": "power",
+      "evidence": "EDG-2B feeder from BUS-202B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "DS-202B",
+      "target": "CB-203B",
+      "edge_type": "power",
+      "evidence": "EDG-2B feeder from BUS-202B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-203B",
+      "target": "EDG-2B",
+      "edge_type": "power",
+      "evidence": "EDG-2B feeder from BUS-202B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-201A",
+      "target": "CB-301A",
+      "edge_type": "power",
+      "evidence": "train A safety load center transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-301A",
+      "target": "DS-301A",
+      "edge_type": "power",
+      "evidence": "train A safety load center transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "DS-301A",
+      "target": "TR-SA",
+      "edge_type": "power",
+      "evidence": "train A safety load center transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "TR-SA",
+      "target": "CB-501A",
+      "edge_type": "power",
+      "evidence": "train A safety load center transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-501A",
+      "target": "BUS-301A",
+      "edge_type": "power",
+      "evidence": "train A safety load center transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-202A",
+      "target": "CB-302A",
+      "edge_type": "power",
+      "evidence": "train A non-1E/MCC transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-302A",
+      "target": "DS-302A",
+      "edge_type": "power",
+      "evidence": "train A non-1E/MCC transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "DS-302A",
+      "target": "TR-NA",
+      "edge_type": "power",
+      "evidence": "train A non-1E/MCC transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "TR-NA",
+      "target": "CB-502A",
+      "edge_type": "power",
+      "evidence": "train A non-1E/MCC transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-502A",
+      "target": "BUS-302A",
+      "edge_type": "power",
+      "evidence": "train A non-1E/MCC transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-201B",
+      "target": "CB-301B",
+      "edge_type": "power",
+      "evidence": "train B safety load center transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-301B",
+      "target": "DS-301B",
+      "edge_type": "power",
+      "evidence": "train B safety load center transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "DS-301B",
+      "target": "TR-SB",
+      "edge_type": "power",
+      "evidence": "train B safety load center transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "TR-SB",
+      "target": "CB-501B",
+      "edge_type": "power",
+      "evidence": "train B safety load center transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-501B",
+      "target": "BUS-301B",
+      "edge_type": "power",
+      "evidence": "train B safety load center transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-202B",
+      "target": "CB-302B",
+      "edge_type": "power",
+      "evidence": "train B non-1E/MCC transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-302B",
+      "target": "DS-302B",
+      "edge_type": "power",
+      "evidence": "train B non-1E/MCC transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "DS-302B",
+      "target": "TR-NB",
+      "edge_type": "power",
+      "evidence": "train B non-1E/MCC transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "TR-NB",
+      "target": "CB-502B",
+      "edge_type": "power",
+      "evidence": "train B non-1E/MCC transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-502B",
+      "target": "BUS-302B",
+      "edge_type": "power",
+      "evidence": "train B non-1E/MCC transformer branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-301A",
+      "target": "GND-1",
+      "edge_type": "ground",
+      "evidence": "ground tap from BUS-301A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-301A",
+      "target": "CB-303A",
+      "edge_type": "power",
+      "evidence": "MCC-1A feeder from BUS-301A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-303A",
+      "target": "MCC-1A",
+      "edge_type": "power",
+      "evidence": "MCC-1A feeder from BUS-301A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-301A",
+      "target": "CB-304A",
+      "edge_type": "power",
+      "evidence": "MCC-2A feeder from BUS-301A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-304A",
+      "target": "MCC-2A",
+      "edge_type": "power",
+      "evidence": "MCC-2A feeder from BUS-301A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-302A",
+      "target": "CB-503A",
+      "edge_type": "power",
+      "evidence": "MCC-3A feeder from BUS-302A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-503A",
+      "target": "MCC-3A",
+      "edge_type": "power",
+      "evidence": "MCC-3A feeder from BUS-302A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-1A",
+      "target": "MOTOR-SI101A",
+      "edge_type": "power",
+      "evidence": "MCC-1A fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-1A",
+      "target": "PUMP-SI101A",
+      "edge_type": "power",
+      "evidence": "MCC-1A fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-1A",
+      "target": "MOTOR-CCW101A",
+      "edge_type": "power",
+      "evidence": "MCC-1A fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-1A",
+      "target": "PUMP-CCW101A",
+      "edge_type": "power",
+      "evidence": "MCC-1A fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-1A",
+      "target": "VLV-8801A",
+      "edge_type": "power",
+      "evidence": "MCC-1A fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-2A",
+      "target": "MOTOR-AFW101A",
+      "edge_type": "power",
+      "evidence": "MCC-2A fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-2A",
+      "target": "PUMP-AFW101A",
+      "edge_type": "power",
+      "evidence": "MCC-2A fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-2A",
+      "target": "MOTOR-RHR101A",
+      "edge_type": "power",
+      "evidence": "MCC-2A fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-2A",
+      "target": "PUMP-RHR101A",
+      "edge_type": "power",
+      "evidence": "MCC-2A fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-2A",
+      "target": "VLV-8802A",
+      "edge_type": "power",
+      "evidence": "MCC-2A fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-3A",
+      "target": "MOTOR-SW101A",
+      "edge_type": "power",
+      "evidence": "MCC-3A fanout load/ground branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-3A",
+      "target": "PUMP-SW101A",
+      "edge_type": "power",
+      "evidence": "MCC-3A fanout load/ground branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-3A",
+      "target": "MOTOR-CHG101A",
+      "edge_type": "power",
+      "evidence": "MCC-3A fanout load/ground branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-3A",
+      "target": "PUMP-CHG101A",
+      "edge_type": "power",
+      "evidence": "MCC-3A fanout load/ground branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-3A",
+      "target": "MOTOR-FAN101A",
+      "edge_type": "power",
+      "evidence": "MCC-3A fanout load/ground branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-3A",
+      "target": "VLV-8901A",
+      "edge_type": "power",
+      "evidence": "MCC-3A fanout load/ground branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-3A",
+      "target": "GND-5",
+      "edge_type": "ground",
+      "evidence": "MCC-3A fanout load/ground branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-301B",
+      "target": "GND-2",
+      "edge_type": "ground",
+      "evidence": "ground tap from BUS-301B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-301B",
+      "target": "CB-303B",
+      "edge_type": "power",
+      "evidence": "MCC-1B feeder from BUS-301B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-303B",
+      "target": "MCC-1B",
+      "edge_type": "power",
+      "evidence": "MCC-1B feeder from BUS-301B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-301B",
+      "target": "CB-304B",
+      "edge_type": "power",
+      "evidence": "MCC-2B feeder from BUS-301B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-304B",
+      "target": "MCC-2B",
+      "edge_type": "power",
+      "evidence": "MCC-2B feeder from BUS-301B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-302B",
+      "target": "CB-503B",
+      "edge_type": "power",
+      "evidence": "MCC-3B feeder from BUS-302B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CB-503B",
+      "target": "MCC-3B",
+      "edge_type": "power",
+      "evidence": "MCC-3B feeder from BUS-302B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-1B",
+      "target": "MOTOR-SI101B",
+      "edge_type": "power",
+      "evidence": "MCC-1B fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-1B",
+      "target": "PUMP-SI101B",
+      "edge_type": "power",
+      "evidence": "MCC-1B fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-1B",
+      "target": "MOTOR-CCW101B",
+      "edge_type": "power",
+      "evidence": "MCC-1B fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-1B",
+      "target": "PUMP-CCW101B",
+      "edge_type": "power",
+      "evidence": "MCC-1B fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-1B",
+      "target": "VLV-8801B",
+      "edge_type": "power",
+      "evidence": "MCC-1B fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-2B",
+      "target": "MOTOR-AFW101B",
+      "edge_type": "power",
+      "evidence": "MCC-2B fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-2B",
+      "target": "PUMP-AFW101B",
+      "edge_type": "power",
+      "evidence": "MCC-2B fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-2B",
+      "target": "MOTOR-RHR101B",
+      "edge_type": "power",
+      "evidence": "MCC-2B fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-2B",
+      "target": "PUMP-RHR101B",
+      "edge_type": "power",
+      "evidence": "MCC-2B fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-2B",
+      "target": "VLV-8802B",
+      "edge_type": "power",
+      "evidence": "MCC-2B fanout load branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-3B",
+      "target": "MOTOR-SW101B",
+      "edge_type": "power",
+      "evidence": "MCC-3B fanout load/ground branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-3B",
+      "target": "PUMP-SW101B",
+      "edge_type": "power",
+      "evidence": "MCC-3B fanout load/ground branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-3B",
+      "target": "MOTOR-CHG101B",
+      "edge_type": "power",
+      "evidence": "MCC-3B fanout load/ground branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-3B",
+      "target": "PUMP-CHG101B",
+      "edge_type": "power",
+      "evidence": "MCC-3B fanout load/ground branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-3B",
+      "target": "MOTOR-FAN101B",
+      "edge_type": "power",
+      "evidence": "MCC-3B fanout load/ground branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-3B",
+      "target": "VLV-8901B",
+      "edge_type": "power",
+      "evidence": "MCC-3B fanout load/ground branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "MCC-3B",
+      "target": "GND-6",
+      "edge_type": "ground",
+      "evidence": "MCC-3B fanout load/ground branch",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "DS-401A",
+      "target": "TR-DC-A",
+      "edge_type": "dc_supply",
+      "evidence": "125 VDC bus A supply chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "TR-DC-A",
+      "target": "RECT-125A",
+      "edge_type": "dc_supply",
+      "evidence": "125 VDC bus A supply chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "RECT-125A",
+      "target": "BUS-401A",
+      "edge_type": "dc_supply",
+      "evidence": "125 VDC bus A supply chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-401A",
+      "target": "BAT-1A",
+      "edge_type": "dc_supply",
+      "evidence": "125 VDC bus A tap",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-401A",
+      "target": "BAT-2A",
+      "edge_type": "dc_supply",
+      "evidence": "125 VDC bus A tap",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-401A",
+      "target": "GND-3",
+      "edge_type": "ground",
+      "evidence": "125 VDC bus A tap",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-401A",
+      "target": "INV-120A",
+      "edge_type": "inverter_supply",
+      "evidence": "BUS-401A inverter to 120 VAC inverter bus A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "INV-120A",
+      "target": "BUS-501A",
+      "edge_type": "inverter_supply",
+      "evidence": "BUS-401A inverter to 120 VAC inverter bus A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "DS-401B",
+      "target": "TR-DC-B",
+      "edge_type": "dc_supply",
+      "evidence": "125 VDC bus B supply chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "TR-DC-B",
+      "target": "RECT-125B",
+      "edge_type": "dc_supply",
+      "evidence": "125 VDC bus B supply chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "RECT-125B",
+      "target": "BUS-401B",
+      "edge_type": "dc_supply",
+      "evidence": "125 VDC bus B supply chain",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-401B",
+      "target": "BAT-1B",
+      "edge_type": "dc_supply",
+      "evidence": "125 VDC bus B tap",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-401B",
+      "target": "BAT-2B",
+      "edge_type": "dc_supply",
+      "evidence": "125 VDC bus B tap",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-401B",
+      "target": "GND-4",
+      "edge_type": "ground",
+      "evidence": "125 VDC bus B tap",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-401B",
+      "target": "INV-120B",
+      "edge_type": "inverter_supply",
+      "evidence": "BUS-401B inverter to 120 VAC inverter bus B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "INV-120B",
+      "target": "BUS-501B",
+      "edge_type": "inverter_supply",
+      "evidence": "BUS-401B inverter to 120 VAC inverter bus B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "DS-402A",
+      "target": "TR-INV-A",
+      "edge_type": "inverter_supply",
+      "evidence": "lower inverter A branch to BUS-501A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "TR-INV-A",
+      "target": "INV-120C",
+      "edge_type": "inverter_supply",
+      "evidence": "lower inverter A branch to BUS-501A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "INV-120C",
+      "target": "BUS-501A",
+      "edge_type": "inverter_supply",
+      "evidence": "lower inverter A branch to BUS-501A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "DS-402B",
+      "target": "TR-INV-B",
+      "edge_type": "dc_supply",
+      "evidence": "lower 24 V supply chain; outgoing continuation is visible but not given a synthetic final node",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "TR-INV-B",
+      "target": "RECT-24C",
+      "edge_type": "dc_supply",
+      "evidence": "lower 24 V supply chain; outgoing continuation is visible but not given a synthetic final node",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-501A",
+      "target": "CP-SI-A",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-SI-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CP-SI-A",
+      "target": "K101",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-SI-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K101",
+      "target": "K102",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-SI-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K102",
+      "target": "K103",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-SI-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K103",
+      "target": "JB-101",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-SI-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "JB-101",
+      "target": "PT101",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-SI-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "PT101",
+      "target": "PT102",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-SI-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-501B",
+      "target": "CP-SI-B",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-SI-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CP-SI-B",
+      "target": "K104",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-SI-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K104",
+      "target": "K105",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-SI-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K105",
+      "target": "K106",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-SI-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K106",
+      "target": "JB-102",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-SI-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "JB-102",
+      "target": "PT103",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-SI-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "PT103",
+      "target": "FT201",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-SI-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-501A",
+      "target": "CP-CCW-A",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-CCW-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CP-CCW-A",
+      "target": "K107",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-CCW-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K107",
+      "target": "K108",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-CCW-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K108",
+      "target": "K109",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-CCW-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K109",
+      "target": "JB-103",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-CCW-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "JB-103",
+      "target": "FT202",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-CCW-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "FT202",
+      "target": "LT301",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-CCW-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-501B",
+      "target": "CP-CCW-B",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-CCW-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CP-CCW-B",
+      "target": "K110",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-CCW-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K110",
+      "target": "K111",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-CCW-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K111",
+      "target": "K112",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-CCW-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K112",
+      "target": "JB-104",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-CCW-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "JB-104",
+      "target": "LT302",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-CCW-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "LT302",
+      "target": "TT401",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-CCW-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-501A",
+      "target": "CP-EDG-A",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-EDG-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CP-EDG-A",
+      "target": "K113",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-EDG-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K113",
+      "target": "K114",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-EDG-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K114",
+      "target": "K115",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-EDG-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K115",
+      "target": "JB-105",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-EDG-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "JB-105",
+      "target": "TT402",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-EDG-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "TT402",
+      "target": "CT501",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-EDG-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-501B",
+      "target": "CP-EDG-B",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-EDG-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "CP-EDG-B",
+      "target": "K116",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-EDG-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K116",
+      "target": "K117",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-EDG-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K117",
+      "target": "K118",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-EDG-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K118",
+      "target": "JB-106",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-EDG-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "JB-106",
+      "target": "CT502",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at CP-EDG-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-501A",
+      "target": "RPS-A",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at RPS-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "RPS-A",
+      "target": "K119",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at RPS-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K119",
+      "target": "K120",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at RPS-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K120",
+      "target": "K121",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at RPS-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K121",
+      "target": "JB-107",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at RPS-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "JB-107",
+      "target": "VT601",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at RPS-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-501B",
+      "target": "RPS-B",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at RPS-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "RPS-B",
+      "target": "K122",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at RPS-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K122",
+      "target": "K123",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at RPS-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K123",
+      "target": "K124",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at RPS-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K124",
+      "target": "JB-108",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at RPS-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "JB-108",
+      "target": "VT602",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at RPS-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-501A",
+      "target": "ESFAS-A",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at ESFAS-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "ESFAS-A",
+      "target": "K125",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at ESFAS-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K125",
+      "target": "K126",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at ESFAS-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K126",
+      "target": "K127",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at ESFAS-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K127",
+      "target": "JB-109",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at ESFAS-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "JB-109",
+      "target": "ZS701",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at ESFAS-A",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "BUS-501B",
+      "target": "ESFAS-B",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at ESFAS-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "ESFAS-B",
+      "target": "K128",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at ESFAS-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K128",
+      "target": "K129",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at ESFAS-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K129",
+      "target": "K130",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at ESFAS-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "K130",
+      "target": "JB-110",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at ESFAS-B",
+      "normally_open": "",
+      "note": ""
+    },
+    {
+      "source": "JB-110",
+      "target": "ZS702",
+      "edge_type": "control_signal",
+      "evidence": "control ladder row starting at ESFAS-B",
+      "normally_open": "",
+      "note": ""
+    }
+  ],
+  "validation": {
+    "duplicate_edges": [],
+    "diagonal_zero": true,
+    "missing_nodes": [],
+    "valid": true
+  }
+}

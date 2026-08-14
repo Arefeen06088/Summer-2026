@@ -1,0 +1,8 @@
+document,iteration,call,input_tokens_est,cached_input_tokens,image_file_input_tokens_est,output_tokens_expected,reasoning_tokens_expected,total_low,total_expected,total_high,usage_object_available,notes
+24,1,"Main Codex: grouped orchestration, visual triage, prompts, packaging",32000,unavailable,7480,2200,24000,50400,65680,91000,no,Grouped main-agent model turns; exact usage was not exposed.
+24,1,Diego: round1_high_recall_extraction,8000,unavailable,31110,41763,38000,79368,118873,181931,no,Initial Diego prompt plus 38 Doc24 Raw+components images.
+24,1,Jennifer: round1_precision_review,50263,unavailable,31110,42001,35000,120574,158374,218575,no,Jennifer prompt plus Diego round 1 artifacts and the same image bundle.
+24,1,Diego: round2_saturation_review,67348,unavailable,0,41854,10000,96461,119202,154315,no,Diego round 2 used prior visual context and Jennifer round 1 artifacts.
+24,1,Jennifer: round2_final_attempt_context_overflow,68139,unavailable,31110,0,0,99249,99249,99249,no,This final-confirmation attempt errored with a context-window overflow before producing artifacts; usage object unavailable.
+24,1,Jennifer: round2_final_precision_confirmation_retry,67739,unavailable,7480,42154,11000,104912,128373,164666,no,Fresh Jennifer final reviewer using prior round artifacts and a narrower eight-image visual bundle.
+24,1,TOTAL,293489,unavailable,108290,169972,118000,550964,689751,909736,no,Total over estimated visible workflow calls.

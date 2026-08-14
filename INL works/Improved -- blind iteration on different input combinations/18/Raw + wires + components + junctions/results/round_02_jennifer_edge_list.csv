@@ -1,0 +1,191 @@
+source,target,edge_type,evidence
+GRID-SWYD 1,CB-GRID-A,solid,incoming grid feeder to 230 bus
+CB-GRID-A,BB-SWYD-230,solid,incoming grid feeder to 230 bus
+GRID-SWYD 2,CB-GRID-B,solid,incoming grid feeder to 230 bus
+CB-GRID-B,BB-SWYD-230,solid,incoming grid feeder to 230 bus
+BB-SWYD-230,TR-SAT-1A,solid,station auxiliary transformer A feeder
+TR-SAT-1A,CB-SAT-A,solid,station auxiliary transformer A feeder
+CB-SAT-A,BUS-4160A,solid,station auxiliary transformer A feeder
+BB-SWYD-230,TR-SAT-1B,solid,station auxiliary transformer B feeder
+TR-SAT-1B,CB-SAT-B,solid,station auxiliary transformer B feeder
+CB-SAT-B,BUS-4160B,solid,station auxiliary transformer B feeder
+BB-SWYD-230,CB-GEN-ISO,solid,generator isolation connection to 230 bus
+CB-GEN-ISO,GEN-MAIN-1,solid,generator isolation connection to 230 bus
+GEN-MAIN-1,TR-UAT-1A,solid,generator auxiliary transformer branch
+TR-UAT-1A,CB-UAT-A,solid,generator auxiliary transformer branch
+GEN-MAIN-1,TR-UAT-1B,solid,generator auxiliary transformer branch
+TR-UAT-1B,CB-UAT-B,solid,generator auxiliary transformer branch
+DG-1A,CB-DG-A,solid,diesel generator A feeder
+CB-DG-A,BUS-4160A,solid,diesel generator A feeder
+DG-1B,CB-DG-B,solid,diesel generator B feeder
+CB-DG-B,BUS-4160B,solid,diesel generator B feeder
+BUS-4160A,CB-4160 TIE,solid_normally_open_physical,"drawn 4160 bus tie marked N.O.; physical edge, not bus merge"
+CB-4160 TIE,BUS-4160B,solid_normally_open_physical,"drawn 4160 bus tie marked N.O.; physical edge, not bus merge"
+BUS-4160A,GND-4160A,solid,ground tap from bus
+BUS-4160B,GND-4160B,solid,ground tap from bus
+BUS-4160A,TR-480-A1,solid,A-side 480 transformer feeder; TB-RPS-A omitted in this round
+TR-480-A1,CB-480A-IN,solid,A-side 480 transformer feeder; TB-RPS-A omitted in this round
+CB-480A-IN,BUS-480A,solid,A-side 480 transformer feeder; TB-RPS-A omitted in this round
+BUS-4160A,TR-480-B1,solid,B 480 transformer feeder
+TR-480-B1,CB-480B-IN,solid,B 480 transformer feeder
+CB-480B-IN,BUS-480B,solid,B 480 transformer feeder
+BUS-4160B,TR-480-C1,solid,C 480 transformer feeder
+TR-480-C1,CB-480C-IN,solid,C 480 transformer feeder
+CB-480C-IN,BUS-480C,solid,C 480 transformer feeder
+BUS-4160B,TR-480-D1,solid,D 480 transformer feeder
+TR-480-D1,CB-480D-IN,solid,D 480 transformer feeder
+CB-480D-IN,BUS-480D,solid,D 480 transformer feeder
+BUS-4160A,PT-4160A,dashed,A PT/RPS dashed control chain
+PT-4160A,FU-PT-A,dashed,A PT/RPS dashed control chain
+FU-PT-A,XFMR-CTRL A,dashed,A PT/RPS dashed control chain
+XFMR-CTRL A,TB-RPS-A,dashed,A PT/RPS dashed control chain
+TB-RPS-A,SW-43A,dashed,A PT/RPS dashed control chain
+BUS-4160B,PT-4160B,dashed,B PT/RPS dashed control chain
+PT-4160B,FU-PT-B,dashed,B PT/RPS dashed control chain
+FU-PT-B,XFMR-CTRL B,dashed,B PT/RPS dashed control chain
+XFMR-CTRL B,TB-RPS-B,dashed,B PT/RPS dashed control chain
+TB-RPS-B,SW-43B,dashed,B PT/RPS dashed control chain
+BUS-480A,CB-A01,solid,BUS-480A vertical feeder chain
+CB-A01,DS-A01,solid,BUS-480A vertical feeder chain
+DS-A01,MS-A01,solid,BUS-480A vertical feeder chain
+MS-A01,PUMP-CCW-A1,solid,BUS-480A vertical feeder chain
+BUS-480A,CB-A02,solid,BUS-480A vertical feeder chain
+CB-A02,DS-A02,solid,BUS-480A vertical feeder chain
+DS-A02,MS-A02,solid,BUS-480A vertical feeder chain
+MS-A02,PUMP-RHR-A1,solid,BUS-480A vertical feeder chain
+BUS-480A,CB-A03,solid,BUS-480A vertical feeder chain
+CB-A03,FS-A03,solid,BUS-480A vertical feeder chain
+FS-A03,MS-A03,solid,BUS-480A vertical feeder chain
+MS-A03,FAN-RB-A1,solid,BUS-480A vertical feeder chain
+BUS-480A,CB-A04,solid,BUS-480A vertical feeder chain
+CB-A04,DS-A04,solid,BUS-480A vertical feeder chain
+DS-A04,RY-A04,solid,BUS-480A vertical feeder chain
+RY-A04,MOV-SI-A11,solid,BUS-480A vertical feeder chain
+BUS-480A,CB-A05,solid,BUS-480A vertical feeder chain
+CB-A05,DS-A05,solid,BUS-480A vertical feeder chain
+DS-A05,CP-A05,solid,BUS-480A vertical feeder chain
+CP-A05,PNL-LTG-A1,solid,BUS-480A vertical feeder chain
+BUS-480A,CB-A06,solid,BUS-480A vertical feeder chain
+CB-A06,DS-A06,solid,BUS-480A vertical feeder chain
+DS-A06,MS-A06,solid,BUS-480A vertical feeder chain
+MS-A06,PUMP-AFW-A1,solid,BUS-480A vertical feeder chain
+BUS-480A,CB-A07,solid,BUS-480A vertical feeder chain
+CB-A07,FS-A07,solid,BUS-480A vertical feeder chain
+FS-A07,FU-A07,solid,BUS-480A vertical feeder chain
+FU-A07,HTR-PZR-A1,solid,BUS-480A vertical feeder chain
+BUS-480A,CB-A08,solid,BUS-480A vertical feeder chain
+CB-A08,DS-A08,solid,BUS-480A vertical feeder chain
+DS-A08,TB-A08,solid,BUS-480A vertical feeder chain
+TB-A08,SPARE-A8,solid,BUS-480A vertical feeder chain
+BUS-480B,CB-B01,solid,BUS-480B vertical feeder chain
+CB-B01,DS-B01,solid,BUS-480B vertical feeder chain
+DS-B01,MS-B01,solid,BUS-480B vertical feeder chain
+MS-B01,PUMP-CCW-B1,solid,BUS-480B vertical feeder chain
+BUS-480B,CB-B02,solid,BUS-480B vertical feeder chain
+CB-B02,DS-B02,solid,BUS-480B vertical feeder chain
+DS-B02,MS-B02,solid,BUS-480B vertical feeder chain
+MS-B02,PUMP-RHR-B1,solid,BUS-480B vertical feeder chain
+BUS-480B,CB-B03,solid,BUS-480B vertical feeder chain
+CB-B03,FS-B03,solid,BUS-480B vertical feeder chain
+FS-B03,MS-B03,solid,BUS-480B vertical feeder chain
+MS-B03,FAN-FUEL-B1,solid,BUS-480B vertical feeder chain
+BUS-480B,CB-B04,solid,BUS-480B vertical feeder chain
+CB-B04,DS-B04,solid,BUS-480B vertical feeder chain
+DS-B04,RY-B04,solid,BUS-480B vertical feeder chain
+RY-B04,MOV-CCW-B21,solid,BUS-480B vertical feeder chain
+BUS-480B,CB-B05,solid,BUS-480B vertical feeder chain
+CB-B05,DS-B05,solid,BUS-480B vertical feeder chain
+DS-B05,CP-B05,solid,BUS-480B vertical feeder chain
+CP-B05,MCC-AUX-B6,solid,BUS-480B vertical feeder chain
+BUS-480B,CB-B06,solid,BUS-480B vertical feeder chain
+CB-B06,DS-B06,solid,BUS-480B vertical feeder chain
+DS-B06,MS-B06,solid,BUS-480B vertical feeder chain
+MS-B06,AIR-CMP-B1,solid,BUS-480B vertical feeder chain
+BUS-480B,CB-B07,solid,BUS-480B vertical feeder chain
+CB-B07,FS-B07,solid,BUS-480B vertical feeder chain
+FS-B07,RY-B07,solid,BUS-480B vertical feeder chain
+RY-B07,VLV-CHG-B1,solid,BUS-480B vertical feeder chain
+BUS-480C,CB-C01,solid,BUS-480C vertical feeder chain
+CB-C01,DS-C01,solid,BUS-480C vertical feeder chain
+DS-C01,MS-C01,solid,BUS-480C vertical feeder chain
+MS-C01,PUMP-HPCI-C1,solid,BUS-480C vertical feeder chain
+BUS-480C,CB-C02,solid,BUS-480C vertical feeder chain
+CB-C02,DS-C02,solid,BUS-480C vertical feeder chain
+DS-C02,MS-C02,solid,BUS-480C vertical feeder chain
+MS-C02,PUMP-RCW-C1,solid,BUS-480C vertical feeder chain
+BUS-480C,CB-C03,solid,BUS-480C vertical feeder chain
+CB-C03,FS-C03,solid,BUS-480C vertical feeder chain
+FS-C03,MS-C03,solid,BUS-480C vertical feeder chain
+MS-C03,FAN-RB-C1,solid,BUS-480C vertical feeder chain
+BUS-480C,CB-C04,solid,BUS-480C vertical feeder chain
+CB-C04,DS-C04,solid,BUS-480C vertical feeder chain
+DS-C04,RY-C04,solid,BUS-480C vertical feeder chain
+RY-C04,MOV-RHR-C11,solid,BUS-480C vertical feeder chain
+BUS-480C,CB-C05,solid,BUS-480C vertical feeder chain
+CB-C05,DS-C05,solid,BUS-480C vertical feeder chain
+DS-C05,MS-C05,solid,BUS-480C vertical feeder chain
+MS-C05,PUMP-SEAL-C1,solid,BUS-480C vertical feeder chain
+BUS-480C,CB-C06,solid,BUS-480C vertical feeder chain
+CB-C06,DS-C06,solid,BUS-480C vertical feeder chain
+DS-C06,CP-C06,solid,BUS-480C vertical feeder chain
+CP-C06,PNL-IC-C7,solid,BUS-480C vertical feeder chain
+BUS-480C,CB-C07,solid,BUS-480C vertical feeder chain
+CB-C07,FS-C07,solid,BUS-480C vertical feeder chain
+FS-C07,MS-C07,solid,BUS-480C vertical feeder chain
+MS-C07,SUMP-PMP-C1,solid,BUS-480C vertical feeder chain
+BUS-480C,CB-C08,solid,BUS-480C vertical feeder chain
+CB-C08,DS-C08,solid,BUS-480C vertical feeder chain
+DS-C08,FU-C08,solid,BUS-480C vertical feeder chain
+FU-C08,HTR-VENT-C2,solid,BUS-480C vertical feeder chain
+BUS-480D,CB-D01,solid,BUS-480D vertical feeder chain
+CB-D01,DS-D01,solid,BUS-480D vertical feeder chain
+DS-D01,MS-D01,solid,BUS-480D vertical feeder chain
+MS-D01,PUMP-AFW-D1,solid,BUS-480D vertical feeder chain
+BUS-480D,CB-D02,solid,BUS-480D vertical feeder chain
+CB-D02,DS-D02,solid,BUS-480D vertical feeder chain
+DS-D02,MS-D02,solid,BUS-480D vertical feeder chain
+MS-D02,FAN-CR-D1,solid,BUS-480D vertical feeder chain
+BUS-480D,CB-D03,solid,BUS-480D vertical feeder chain
+CB-D03,FS-D03,solid,BUS-480D vertical feeder chain
+FS-D03,RY-D03,solid,BUS-480D vertical feeder chain
+RY-D03,MOV-SI-D21,solid,BUS-480D vertical feeder chain
+BUS-480D,CB-D04,solid,BUS-480D vertical feeder chain
+CB-D04,DS-D04,solid,BUS-480D vertical feeder chain
+DS-D04,MS-D04,solid,BUS-480D vertical feeder chain
+MS-D04,PUMP-LUBE-D1,solid,BUS-480D vertical feeder chain
+BUS-480D,CB-D05,solid,BUS-480D vertical feeder chain
+CB-D05,DS-D05,solid,BUS-480D vertical feeder chain
+DS-D05,CP-D05,solid,BUS-480D vertical feeder chain
+CP-D05,PNL-ESS-D5,solid,BUS-480D vertical feeder chain
+BUS-480D,CB-D06,solid,BUS-480D vertical feeder chain
+CB-D06,DS-D06,solid,BUS-480D vertical feeder chain
+DS-D06,MS-D06,solid,BUS-480D vertical feeder chain
+MS-D06,COMP-AIR-D1,solid,BUS-480D vertical feeder chain
+BUS-480D,CB-D07,solid,BUS-480D vertical feeder chain
+CB-D07,FS-D07,solid,BUS-480D vertical feeder chain
+FS-D07,TB-D07,solid,BUS-480D vertical feeder chain
+TB-D07,SPARE-D7,solid,BUS-480D vertical feeder chain
+BUS-480B,CHG-125A,solid,Train A DC supply chain
+CHG-125A,REC-125A,solid,Train A DC supply chain
+REC-125A,CB-DC-A,solid,Train A DC supply chain
+CB-DC-A,BUS-125A,solid,Train A DC supply chain
+BAT-125A,BUS-125A,solid,Train A battery tap
+BUS-125A,GND-DC-A,solid,Train A DC ground
+BUS-125A,INV-120A,solid,Train A inverter DC feed
+INV-120A,UPS-120A,dashed,Train A inverter to UPS dashed link
+UPS-120A,BUS-120A,solid,Train A UPS output to 120 VAC bus
+BUS-120A,RPS-PNL-A,solid,Train A RPS panel feed
+RPS-PNL-A,PLC-RPS-A,dashed,Train A RPS panel to PLC dashed signal
+BUS-480C,CHG-125B,solid,Train B DC supply chain
+CHG-125B,REC-125B,solid,Train B DC supply chain
+REC-125B,CB-DC-B,solid,Train B DC supply chain
+CB-DC-B,BUS-125B,solid,Train B DC supply chain
+BAT-125B,BUS-125B,solid,Train B battery tap
+BUS-125B,GND-DC-B,solid,Train B DC ground
+BUS-125B,INV-120B,solid,Train B inverter DC feed
+INV-120B,UPS-120B,dashed,Train B inverter to UPS dashed link
+UPS-120B,BUS-120B,solid,Train B UPS output to 120 VAC bus
+BUS-120B,RPS-PNL-B,solid,Train B RPS panel feed
+RPS-PNL-B,PLC-RPS-B,dashed,Train B RPS panel to PLC dashed signal
+RELAY-K102,PNL-ANN-A,dashed,Train A relay annunciator branch
+RELAY-K202,PNL-ANN-B,dashed,Train B relay annunciator branch

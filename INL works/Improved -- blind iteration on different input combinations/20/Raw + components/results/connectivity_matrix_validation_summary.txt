@@ -1,0 +1,20 @@
+Connectivity matrix validation summary
+Document: 20
+Input configuration: Raw + components
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\20\synthetic_npp_connectivity_matrix_v3_label_clearance.csv
+GT normalized nodes: 200; GT normalized edges: 202
+Matrices evaluated: 5
+Best row: Diego -- Round 1 from doc20_round1_diego_connectivity_matrix.csv with Precision=0.722772, Recall=0.722772, F1=0.722772
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=146, FP=56, FN=56, Precision=0.722772, Recall=0.722772, F1=0.722772
+Primary issue: extra/misnamed/intermediate extracted nodes created false-positive edges.
+
+Extra/non-GT nodes most responsible for FP edges: 480 VAC LOAD CENTER C (9 FP edges); 480 VAC LOAD CENTER B (8 FP edges); 480 VAC LOAD CENTER A (8 FP edges); 480 VAC LOAD CENTER D (7 FP edges); 4.16 KV CLASS 1E BUS A (5 FP edges); 4.16 KV CLASS 1E BUS B (5 FP edges); 125 VDC CONTROL BUS B (4 FP edges); 125 VDC CONTROL BUS A (4 FP edges).
+Missing GT nodes examples: BUS-125DCA; BUS-125DCB; BUS-13K-A; BUS-13K-B; BUS-416-A; BUS-416-B; BUS-480-A; BUS-480-B; BUS-480-C; BUS-480-D.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive examples involving extra/non-GT nodes: 125 VDC CONTROL BUS A -- CP-RPS-A; 125 VDC CONTROL BUS A -- CP-RPS-B; 125 VDC CONTROL BUS A -- INV-UPS-A; 125 VDC CONTROL BUS A -- RECT-125A; 125 VDC CONTROL BUS B -- CP-ESFAS-A; 125 VDC CONTROL BUS B -- CP-ESFAS-B; 125 VDC CONTROL BUS B -- INV-UPS-B; 125 VDC CONTROL BUS B -- RECT-125B.
+False-negative examples involving missing/differently named nodes: BUS-125DCA -- CP-RPS-A; BUS-125DCA -- CP-RPS-B; BUS-125DCA -- INV-UPS-A; BUS-125DCA -- RECT-125A; BUS-125DCB -- CP-ESFAS-A; BUS-125DCB -- CP-ESFAS-B; BUS-125DCB -- INV-UPS-B; BUS-125DCB -- RECT-125B.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (480 VAC LOAD CENTER C; 480 VAC LOAD CENTER B; 480 VAC LOAD CENTER A; 480 VAC LOAD CENTER D; 4.16 KV CLASS 1E BUS A), the final-row metrics would be TP=146, FP=19, FN=56, Precision=0.884848, Recall=0.722772, F1=0.795640.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=146, FP=0, FN=56, Precision=1.000000, Recall=0.722772, F1=0.839080.

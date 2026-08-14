@@ -1,0 +1,222 @@
+source,target,confidence,evidence
+GRID-161A,DS-101,H,source lead
+DS-101,CB-101,H,vertical feeder stack
+CB-101,TR-UAT-1A,H,vertical feeder stack
+TR-UAT-1A,CB-102,H,vertical feeder stack
+CB-102,BUS-4160-A,H,breaker lands on bus
+BUS-4160-A,RELAY-87A,H,bus tap
+BUS-4160-A,RELAY-27A,H,bus tap
+BUS-4160-A,METER-A,H,meter tap
+BUS-4160-A,PT-41A,H,PT tap
+BUS-4160-A,GND-41A,H,ground branch
+BUS-4160-A,CB-ESF-A,H,vertical ESF breaker branch
+CB-ESF-A,BUS-4160-ESF-A,H,ESF breaker to ESF bus
+DG-1A,CB-DG1A,H,generator output lead
+CB-DG1A,ATS-1A,H,DG breaker to transfer switch
+ATS-1A,BUS-4160-ESF-A,H,ATS output to ESF bus
+BUS-4160-A,CB-TIE-41,H,A side tie
+CB-TIE-41,BUS-4160-B,H,tie breaker to B bus
+SYNC-41,CB-TIE-41,H,sync/control tap
+GRID-161B,DS-102,H,source lead
+DS-102,CB-103,H,vertical feeder stack
+CB-103,TR-UAT-1B,H,vertical feeder stack
+TR-UAT-1B,CB-104,H,vertical feeder stack
+CB-104,BUS-4160-B,H,breaker lands on bus
+BUS-4160-B,RELAY-87B,H,bus tap
+BUS-4160-B,RELAY-27B,H,bus tap
+BUS-4160-B,METER-B,H,meter tap
+BUS-4160-B,PT-41B,H,PT tap
+BUS-4160-B,GND-41B,H,ground branch
+BUS-4160-B,CB-ESF-B,H,vertical ESF breaker branch
+CB-ESF-B,BUS-4160-ESF-B,H,ESF breaker to ESF bus
+DG-1B,CB-DG1B,H,generator output lead
+CB-DG1B,ATS-1B,H,DG breaker to transfer switch
+ATS-1B,BUS-4160-ESF-B,H,ATS output to ESF bus
+BUS-4160-A,CB-1A-FDR,H,1A incoming feeder source
+CB-1A-FDR,DS-1A-ISO,H,vertical feeder stack
+DS-1A-ISO,TR-1A,H,vertical feeder stack
+TR-1A,CB-1A-MAIN,H,vertical feeder stack
+CB-1A-MAIN,BUS-480-1A,U,functional-inferred main-to-480V bus continuity; visible gap in crop
+BUS-480-1A,MCC-1A-1,H,480 V bus tap
+MCC-1A-1,PUMP-P101,H,MCC branch
+MCC-1A-1,MOTOR-M102,H,MCC branch
+BUS-480-1A,MCC-1A-2,H,480 V bus tap
+MCC-1A-2,VALVE-MOV103,H,MCC branch
+MCC-1A-2,FAN-F104,H,MCC branch
+BUS-480-1A,MCC-1A-3,H,480 V bus tap
+BUS-480-1A,PNL-1A,H,panel bus tap
+MCC-1A-3,HTR-H105,M,heater branch from MCC-3 area
+MCC-1A-3,VALVE-XV106,H,valve branch from MCC-3 area
+VALVE-XV106,JB-1A-1,H,local valve/JB link
+JB-1A-1,RELAY-K11,M,control line from JB to relay pair
+RELAY-K11,RELAY-K12,M,relay pair on control line
+BUS-480-1A,INST-1A,H,instrument tap
+BUS-480-1A,GND-1A,H,ground branch
+INST-1A,GND-1A,U,Diego high-recall; Jennifer removed as separate bus taps
+BUS-4160-ESF-A,CB-1C-FDR,H,1C incoming feeder source
+CB-1C-FDR,DS-1C-ISO,H,vertical feeder stack
+DS-1C-ISO,TR-1C,H,vertical feeder stack
+TR-1C,CB-1C-MAIN,H,vertical feeder stack
+CB-1C-MAIN,BUS-480-1C,U,functional-inferred main-to-480V bus continuity; visible gap in crop
+BUS-480-1C,MCC-1C-1,H,480 V bus tap
+MCC-1C-1,PUMP-P131,H,MCC branch
+MCC-1C-1,MOTOR-M132,H,MCC branch
+BUS-480-1C,MCC-1C-2,H,480 V bus tap
+MCC-1C-2,VALVE-MOV133,H,MCC branch
+MCC-1C-2,FAN-F134,H,MCC branch
+BUS-480-1C,MCC-1C-3,H,480 V bus tap
+BUS-480-1C,PNL-1C,H,panel bus tap
+MCC-1C-3,HTR-H135,M,heater branch from MCC-3 area
+MCC-1C-3,VALVE-XV136,H,valve branch from MCC-3 area
+VALVE-XV136,JB-1C-1,H,local valve/JB link
+JB-1C-1,RELAY-K21,M,control line from JB to relay pair
+RELAY-K21,RELAY-K22,M,relay pair on control line
+BUS-480-1C,INST-1C,H,instrument tap
+BUS-480-1C,GND-1C,H,ground branch
+INST-1C,GND-1C,U,Diego high-recall; Jennifer removed as separate bus taps
+BUS-4160-B,CB-1B-FDR,H,1B incoming feeder source
+CB-1B-FDR,DS-1B-ISO,H,vertical feeder stack
+DS-1B-ISO,TR-1B,H,vertical feeder stack
+TR-1B,CB-1B-MAIN,H,vertical feeder stack
+CB-1B-MAIN,BUS-480-1B,U,functional-inferred main-to-480V bus continuity; visible gap in crop
+BUS-480-1B,MCC-1B-1,H,480 V bus tap
+MCC-1B-1,PUMP-P161,H,MCC branch
+MCC-1B-1,MOTOR-M162,H,MCC branch
+BUS-480-1B,MCC-1B-2,H,480 V bus tap
+MCC-1B-2,VALVE-MOV163,H,MCC branch
+MCC-1B-2,FAN-F164,H,MCC branch
+BUS-480-1B,MCC-1B-3,H,480 V bus tap
+BUS-480-1B,PNL-1B,H,panel bus tap
+MCC-1B-3,HTR-H165,M,heater branch from MCC-3 area
+MCC-1B-3,VALVE-XV166,H,valve branch from MCC-3 area
+VALVE-XV166,JB-1B-1,H,local valve/JB link
+JB-1B-1,RELAY-K31,M,control line from JB to relay pair
+RELAY-K31,RELAY-K32,M,relay pair on control line
+BUS-480-1B,INST-1B,H,instrument tap
+BUS-480-1B,GND-1B,H,ground branch
+INST-1B,GND-1B,U,Diego high-recall; Jennifer removed as separate bus taps
+BUS-4160-ESF-A,CB-2A-FDR,H,2A incoming feeder source
+CB-2A-FDR,DS-2A-ISO,H,vertical feeder stack
+DS-2A-ISO,TR-2A,H,vertical feeder stack
+TR-2A,CB-2A-MAIN,H,vertical feeder stack
+CB-2A-MAIN,BUS-480-2A,U,functional-inferred main-to-480V bus continuity; visible gap in crop
+BUS-480-2A,MCC-2A-1,H,480 V bus tap
+MCC-2A-1,PUMP-P201,H,MCC branch
+MCC-2A-1,MOTOR-M202,H,MCC branch
+BUS-480-2A,MCC-2A-2,H,480 V bus tap
+MCC-2A-2,VALVE-MOV203,H,MCC branch
+MCC-2A-2,FAN-F204,H,MCC branch
+BUS-480-2A,MCC-2A-3,H,480 V bus tap
+BUS-480-2A,PNL-2A,H,panel bus tap
+MCC-2A-3,HTR-H205,M,heater branch from MCC-3 area
+MCC-2A-3,VALVE-XV206,H,valve branch from MCC-3 area
+VALVE-XV206,JB-2A-1,H,local valve/JB link
+JB-2A-1,RELAY-K41,M,control line from JB to relay pair
+RELAY-K41,RELAY-K42,M,relay pair on control line
+BUS-480-2A,INST-2A,H,instrument tap
+BUS-480-2A,GND-2A,H,ground branch
+INST-2A,GND-2A,U,Diego high-recall; Jennifer removed as separate bus taps
+BUS-4160-ESF-A,CB-2C-FDR,H,2C incoming feeder source
+CB-2C-FDR,DS-2C-ISO,H,vertical feeder stack
+DS-2C-ISO,TR-2C,H,vertical feeder stack
+TR-2C,CB-2C-MAIN,H,vertical feeder stack
+CB-2C-MAIN,BUS-480-2C,U,functional-inferred main-to-480V bus continuity; visible gap in crop
+BUS-480-2C,MCC-2C-1,H,480 V bus tap
+MCC-2C-1,PUMP-P231,H,MCC branch
+MCC-2C-1,MOTOR-M232,H,MCC branch
+BUS-480-2C,MCC-2C-2,H,480 V bus tap
+MCC-2C-2,VALVE-MOV233,H,MCC branch
+MCC-2C-2,FAN-F234,H,MCC branch
+BUS-480-2C,MCC-2C-3,H,480 V bus tap
+BUS-480-2C,PNL-2C,H,panel bus tap
+MCC-2C-3,HTR-H235,M,heater branch from MCC-3 area
+MCC-2C-3,VALVE-XV236,H,valve branch from MCC-3 area
+VALVE-XV236,JB-2C-1,H,local valve/JB link
+JB-2C-1,RELAY-K51,M,control line from JB to relay pair
+RELAY-K51,RELAY-K52,M,relay pair on control line
+BUS-480-2C,INST-2C,H,instrument tap
+BUS-480-2C,GND-2C,H,ground branch
+INST-2C,GND-2C,U,Diego high-recall; Jennifer removed as separate bus taps
+BUS-4160-ESF-B,CB-2B-FDR,H,2B incoming feeder source
+CB-2B-FDR,DS-2B-ISO,H,vertical feeder stack
+DS-2B-ISO,TR-2B,H,vertical feeder stack
+TR-2B,CB-2B-MAIN,H,vertical feeder stack
+CB-2B-MAIN,BUS-480-2B,U,functional-inferred main-to-480V bus continuity; visible gap in crop
+BUS-480-2B,MCC-2B-1,H,480 V bus tap
+MCC-2B-1,PUMP-P261,H,MCC branch
+MCC-2B-1,MOTOR-M262,H,MCC branch
+BUS-480-2B,MCC-2B-2,H,480 V bus tap
+MCC-2B-2,VALVE-MOV263,H,MCC branch
+MCC-2B-2,FAN-F264,H,MCC branch
+BUS-480-2B,MCC-2B-3,H,480 V bus tap
+BUS-480-2B,PNL-2B,H,panel bus tap
+MCC-2B-3,HTR-H265,M,heater branch from MCC-3 area
+MCC-2B-3,VALVE-XV266,H,valve branch from MCC-3 area
+VALVE-XV266,JB-2B-1,H,local valve/JB link
+JB-2B-1,RELAY-K61,M,control line from JB to relay pair
+RELAY-K61,RELAY-K62,M,relay pair on control line
+BUS-480-2B,INST-2B,H,instrument tap
+BUS-480-2B,GND-2B,H,ground branch
+INST-2B,GND-2B,U,Diego high-recall; Jennifer removed as separate bus taps
+BUS-4160-A,CB-2C-FDR,U,Diego high-recall alternate 2C feeder source
+BUS-480-2A,CB-DC-A,H,480 V 2A feeder to DC rectifier supply
+CB-DC-A,RECT-125A,H,rectifier input lead
+RECT-125A,BUS-125DC-A,H,rectifier output to 125 VDC bus
+BUS-125DC-A,BAT-125A,H,battery tap
+BUS-125DC-A,CHGR-AUX-A,H,charger tap
+BUS-125DC-A,METER-DC-A,M,meter tap
+BUS-125DC-A,GND-DC-A,H,ground branch
+BUS-125DC-A,INV-1A,H,inverter DC input
+BUS-125DC-A,CB-DCTIE,H,DC tie left side
+BUS-125DC-A,DC-DC-1,H,DC-DC input from A 125 VDC bus
+INV-1A,UPS-1A,H,inverter to UPS lead
+UPS-1A,CB-UPS-A,H,UPS output lead
+CB-UPS-A,BUS-120AC-A,H,UPS breaker to vital AC bus
+BUS-120AC-A,FUSE-FU-A,H,AC bus tap
+BUS-120AC-A,PNL-RPS-A,H,RPS panel bus tap
+BUS-120AC-A,INST-NIS-A,M,instrument branch
+FUSE-FU-A,RELAY-KA1,M,vital AC dashed/control chain
+RELAY-KA1,RELAY-KA2,M,vital AC dashed/control chain
+RELAY-KA2,ANN-A,M,vital AC dashed/control chain
+ANN-A,REC-SER-A,M,vital AC dashed/control chain
+REC-SER-A,PNL-RPS-A,M,vital AC dashed/control chain
+PNL-RPS-A,PNL-DCS-A,H,control link down to DCS panel
+PNL-DCS-A,JB-CTRL-A,H,DCS panel to control JB
+BUS-24DC-C,PNL-DCS-A,H,24 VDC bus tap
+BUS-480-2B,CB-DC-B,H,480 V 2B feeder to DC rectifier supply
+CB-DC-B,RECT-125B,H,rectifier input lead
+RECT-125B,BUS-125DC-B,H,rectifier output to 125 VDC bus
+BUS-125DC-B,BAT-125B,H,battery tap
+BUS-125DC-B,CHGR-AUX-B,H,charger tap
+BUS-125DC-B,METER-DC-B,M,meter tap
+BUS-125DC-B,GND-DC-B,H,ground branch
+BUS-125DC-B,INV-1B,H,inverter DC input
+CB-DCTIE,BUS-125DC-B,H,DC tie right side
+INV-1B,UPS-1B,H,inverter to UPS lead
+UPS-1B,CB-UPS-B,H,UPS output lead
+CB-UPS-B,BUS-120AC-B,H,UPS breaker to vital AC bus
+BUS-120AC-B,FUSE-FU-B,H,AC bus tap
+BUS-120AC-B,PNL-RPS-B,H,RPS panel bus tap
+BUS-120AC-B,INST-NIS-B,M,instrument branch
+FUSE-FU-B,RELAY-KB1,M,vital AC dashed/control chain
+RELAY-KB1,RELAY-KB2,M,vital AC dashed/control chain
+RELAY-KB2,ANN-B,M,vital AC dashed/control chain
+ANN-B,REC-SER-B,M,vital AC dashed/control chain
+REC-SER-B,PNL-RPS-B,M,vital AC dashed/control chain
+PNL-RPS-B,PNL-DCS-B,H,control link down to DCS panel
+PNL-DCS-B,JB-CTRL-B,H,DCS panel to control JB
+BUS-24DC-C,PNL-DCS-B,H,24 VDC bus tap
+DC-DC-1,BUS-24DC-C,H,DC-DC output to 24 VDC bus
+BAT-24C,BUS-24DC-C,H,24 VDC battery tap
+BUS-24DC-C,PNL-RADMON,H,24 VDC bus tap
+PNL-RADMON,RELAY-KTIE,M,lower control/tie dashed line
+RELAY-KTIE,PNL-DCS-B,M,lower control/tie dashed line continuation
+BUS-120AC-A,RELAY-KA1,U,Diego high-recall direct bus tap for A vital AC/control device
+BUS-120AC-A,RELAY-KA2,U,Diego high-recall direct bus tap for A vital AC/control device
+BUS-120AC-A,ANN-A,U,Diego high-recall direct bus tap for A vital AC/control device
+BUS-120AC-A,REC-SER-A,U,Diego high-recall direct bus tap for A vital AC/control device
+BUS-120AC-B,RELAY-KB1,U,Diego high-recall direct bus tap for B vital AC/control device
+BUS-120AC-B,RELAY-KB2,U,Diego high-recall direct bus tap for B vital AC/control device
+BUS-120AC-B,ANN-B,U,Diego high-recall direct bus tap for B vital AC/control device
+BUS-120AC-B,REC-SER-B,U,Diego high-recall direct bus tap for B vital AC/control device
+DC-DC-1,BUS-125DC-B,U,Diego uncertain alternate DC-DC input

@@ -1,0 +1,31 @@
+Connectivity matrix validation summary - Document 23 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\23\synthetic_npp_connectivity_matrix_ats_components_shifted_v18.csv
+GT after normalization: 200 undirected edges across 200 component names.
+
+Token usage:
+Token source files: document23_token_usage_estimates.csv; document23_token_usage_totals.csv.
+Document total token estimate: low=202030, expected=355569, high=673664.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=186, FP=22, FN=14, Precision=0.894231, Recall=0.930000, F1=0.911765.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges.
+- Extracted components: 200; extra/non-GT names: 0; missing GT component names: 0.
+- False-positive extracted edge examples: ANN-A -- REC-SER-A; ANN-A -- RELAY-KA2; ANN-B -- REC-SER-B; ANN-B -- RELAY-KB2; BUS-120AC-A -- DC-DC-1; BUS-120AC-A -- FUSE-FU-A; BUS-120AC-B -- FUSE-FU-B; BUS-24DC-C -- JB-CTRL-A; ... (+14 more).
+- Missed GT edge examples: ANN-A -- PNL-RPS-A; ANN-B -- PNL-RPS-B; BUS-125DC-A -- DC-DC-1; BUS-4160-A -- CB-1C-FDR; BUS-480-1A -- GND-1A; BUS-480-1B -- GND-1B; BUS-480-1C -- GND-1C; BUS-480-2A -- GND-2A; ... (+6 more).
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=186, FP=0, FN=14, Precision=1.000000, Recall=0.930000, F1=0.963731.
+- If all missed GT edges were added, final performance would be TP=200, FP=22, FN=0, Precision=0.900901, Recall=1.000000, F1=0.947867.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.911765.
+
+Round-specific notes:
+- Diego -- Round 1: TP=186, FP=45, FN=14, F1=0.863109; extra nodes=0, missing GT nodes=0. FP examples: ANN-A -- REC-SER-A; ANN-A -- RELAY-KA2; ANN-B -- REC-SER-B; ANN-B -- RELAY-KB2; ... (+41 more). FN examples: ANN-A -- PNL-RPS-A; ANN-B -- PNL-RPS-B; BUS-125DC-A -- DC-DC-1; BUS-4160-A -- CB-1C-FDR; ... (+10 more).
+- Jennifer -- Round 2: TP=186, FP=22, FN=14, F1=0.911765; extra nodes=0, missing GT nodes=0. FP examples: ANN-A -- REC-SER-A; ANN-A -- RELAY-KA2; ANN-B -- REC-SER-B; ANN-B -- RELAY-KB2; ... (+18 more). FN examples: ANN-A -- PNL-RPS-A; ANN-B -- PNL-RPS-B; BUS-125DC-A -- DC-DC-1; BUS-4160-A -- CB-1C-FDR; ... (+10 more).
+- Diego -- Round 3: TP=186, FP=22, FN=14, F1=0.911765; extra nodes=0, missing GT nodes=0. FP examples: ANN-A -- REC-SER-A; ANN-A -- RELAY-KA2; ANN-B -- REC-SER-B; ANN-B -- RELAY-KB2; ... (+18 more). FN examples: ANN-A -- PNL-RPS-A; ANN-B -- PNL-RPS-B; BUS-125DC-A -- DC-DC-1; BUS-4160-A -- CB-1C-FDR; ... (+10 more).
+- Jennifer -- Round 4: TP=186, FP=22, FN=14, F1=0.911765; extra nodes=0, missing GT nodes=0. FP examples: ANN-A -- REC-SER-A; ANN-A -- RELAY-KA2; ANN-B -- REC-SER-B; ANN-B -- RELAY-KB2; ... (+18 more). FN examples: ANN-A -- PNL-RPS-A; ANN-B -- PNL-RPS-B; BUS-125DC-A -- DC-DC-1; BUS-4160-A -- CB-1C-FDR; ... (+10 more).
+- Final connectivity -- Final: TP=186, FP=22, FN=14, F1=0.911765; extra nodes=0, missing GT nodes=0. FP examples: ANN-A -- REC-SER-A; ANN-A -- RELAY-KA2; ANN-B -- REC-SER-B; ANN-B -- RELAY-KB2; ... (+18 more). FN examples: ANN-A -- PNL-RPS-A; ANN-B -- PNL-RPS-B; BUS-125DC-A -- DC-DC-1; BUS-4160-A -- CB-1C-FDR; ... (+10 more).

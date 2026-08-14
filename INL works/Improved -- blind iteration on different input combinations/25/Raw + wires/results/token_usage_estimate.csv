@@ -1,0 +1,9 @@
+document,iteration,call_id,agent,model,round,input_tokens_est_low,input_tokens_est_expected,input_tokens_est_high,cached_input_tokens_est_expected,image_file_input_tokens_est,output_tokens_est_low,output_tokens_est_expected,output_tokens_est_high,reasoning_tokens_est,usage_object_available,notes,total_tokens_est_low,total_tokens_est_expected,total_tokens_est_high
+25,1,main_orchestration,main,Codex GPT-5 session model,all,45000,65000,95000,unknown,0,2500,5000,8500,not exposed,False,Main-agent context includes the long conversation history plus local visual-inspection work; exact Responses usage was not exposed.,47500,70000,103500
+25,1,diego_round_1,Diego,gpt-5.5,1,1250,1250,1438,0,65620,1045,1900,2600,not exposed,False,initial 12-image high-recall extraction,67915,68770,69658
+25,1,jennifer_round_1,Jennifer,gpt-5.5,2,2300,2300,2645,0,65620,935,1700,2600,not exposed,False,initial 12-image precision review,68855,69620,70865
+25,1,diego_round_2,Diego,gpt-5.5,3,720,720,828,0,0,88,160,350,not exposed,False,text-only review of Jennifer corrections,808,880,1178
+25,1,jennifer_round_2,Jennifer,gpt-5.5,4,430,430,495,0,0,40,70,180,not exposed,False,text-only saturation confirmation,470,500,675
+25,1,diego_round_3,Diego,gpt-5.5,5,240,240,276,0,5695,47,85,180,not exposed,False,focused 3-image count recheck,5982,6020,6151
+25,1,jennifer_round_3,Jennifer,gpt-5.5,6,360,360,414,0,5695,55,100,220,not exposed,False,focused 3-image final precision check,6110,6155,6329
+25,1,responses_input_token_count_endpoint,main,N/A,planned_counting,0,0,0,0,0,0,0,0,N/A,False,OpenAI Responses input-token counting endpoint could not be called because no API key is available; local proxy used formula 85 + 170 * ceil(width/512) * ceil(height/512) for images and o200k_base/char fallback for text.,0,0,0

@@ -1,0 +1,1633 @@
+{
+  "document": "23",
+  "iteration": "1",
+  "round": "jennifer_round2_final",
+  "role": "precision_reviewer_refiner",
+  "final_status": "saturated_agreement",
+  "review_notes": [
+    "Final precision saturation pass used only Doc23 Raw + components visual resources and the explicitly provided round2/round1 JSON/CSV inputs; no GT, GT-derived feedback, Raw+wires folders, OCR, Tesseract/RapidOCR, or outside resources were used.",
+    "Diego round2 accepted Jennifer round1 refined connectivity without changes; mechanical comparison confirms identical nodes, matrix order, matrix, asserted edge set, uncertain edge set, and rejected non-edge set.",
+    "Final visual saturation review found no clear support for re-adding the detached 480 V main-breaker edges, JB-to-second-relay shortcuts, or BUS-120AC-to-INST-NIS shortcuts removed in round1.",
+    "The retained set continues to represent visually supported direct drawn edges/taps rather than same-net cliques; ambiguous feeder origins, shifted load-center crossings, and lower DC/DCS/control cases remain uncertain rather than guessed.",
+    "No nodes, asserted edges, labels, or matrix entries were changed relative to Diego round2."
+  ],
+  "asserted_edges": [
+    {
+      "source": "GRID-161A",
+      "target": "DS-101",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_21: direct heavy source segment."
+    },
+    {
+      "source": "DS-101",
+      "target": "CB-101",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_21: vertical source chain."
+    },
+    {
+      "source": "CB-101",
+      "target": "TR-UAT-1A",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_21: vertical source chain."
+    },
+    {
+      "source": "TR-UAT-1A",
+      "target": "CB-102",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_21: vertical source chain."
+    },
+    {
+      "source": "CB-102",
+      "target": "BUS-4160-A",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_21: breaker terminal lands on BUS-4160-A black dot."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "RELAY-87A",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_21: dashed relay tap to bus dot."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "RELAY-27A",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_22: dashed relay tap to bus dot."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "METER-A",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_22: dashed meter tap to bus dot."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "PT-41A",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_22: dashed PT tap to bus dot."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "GND-41A",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "raw_22: ground lead from bus dot."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-ESF-A",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_22: vertical tap from bus to breaker."
+    },
+    {
+      "source": "CB-ESF-A",
+      "target": "BUS-4160-ESF-A",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_01: breaker lower terminal lands on ESF-A bus."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-TIE-41",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_23: A bus enters tie breaker."
+    },
+    {
+      "source": "CB-TIE-41",
+      "target": "BUS-4160-B",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_23: tie breaker exits to B bus."
+    },
+    {
+      "source": "SYNC-41",
+      "target": "CB-TIE-41",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_23: dashed sync lead to tie breaker."
+    },
+    {
+      "source": "GRID-161B",
+      "target": "DS-102",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_24: direct heavy source segment."
+    },
+    {
+      "source": "DS-102",
+      "target": "CB-103",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_24: vertical source chain."
+    },
+    {
+      "source": "CB-103",
+      "target": "TR-UAT-1B",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_24: vertical source chain."
+    },
+    {
+      "source": "TR-UAT-1B",
+      "target": "CB-104",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_24: vertical source chain."
+    },
+    {
+      "source": "CB-104",
+      "target": "BUS-4160-B",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_24: breaker terminal lands on BUS-4160-B black dot."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "RELAY-87B",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_23: dashed relay tap to bus dot."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "RELAY-27B",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_23/raw_24: dashed relay tap to bus dot."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "METER-B",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_24: dashed meter tap to bus dot."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "PT-41B",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_24: dashed PT tap to bus dot."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "GND-41B",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "raw_24: ground lead from bus dot."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-ESF-B",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_24: vertical tap from bus to breaker."
+    },
+    {
+      "source": "CB-ESF-B",
+      "target": "BUS-4160-ESF-B",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_24: breaker lower terminal lands on ESF-B bus."
+    },
+    {
+      "source": "DG-1A",
+      "target": "CB-DG1A",
+      "kind": "solid_power",
+      "confidence": "medium",
+      "evidence": "raw_01/raw_05: A diesel branch enters CB-DG1A; generator partly cropped."
+    },
+    {
+      "source": "CB-DG1A",
+      "target": "ATS-1A",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_05: direct ATS branch path."
+    },
+    {
+      "source": "ATS-1A",
+      "target": "BUS-4160-ESF-A",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_05: ATS output lands on ESF-A bus dot."
+    },
+    {
+      "source": "DG-1B",
+      "target": "CB-DG1B",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_06: DG-1B directly wired to CB-DG1B."
+    },
+    {
+      "source": "CB-DG1B",
+      "target": "ATS-1B",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_06: direct ATS branch path."
+    },
+    {
+      "source": "ATS-1B",
+      "target": "BUS-4160-ESF-B",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_06: ATS output lands on ESF-B bus dot."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-1A-FDR",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_07_upper_load_centers_full.png: routed incoming feeder from BUS-4160-A to 1A load-center incoming chain."
+    },
+    {
+      "source": "CB-1A-FDR",
+      "target": "DS-1A-ISO",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_25_close_load_1a_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "DS-1A-ISO",
+      "target": "TR-1A",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_25_close_load_1a_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "TR-1A",
+      "target": "CB-1A-MAIN",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_25_close_load_1a_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "BUS-480-1A",
+      "target": "MCC-1A-1",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_25_close_load_1a_left_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-1A-1",
+      "target": "PUMP-P101",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_25_close_load_1a_left_2x.png: left branch from MCC-1A-1."
+    },
+    {
+      "source": "MCC-1A-1",
+      "target": "MOTOR-M102",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_25_close_load_1a_left_2x.png: right branch from MCC-1A-1."
+    },
+    {
+      "source": "BUS-480-1A",
+      "target": "MCC-1A-2",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_25_close_load_1a_left_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-1A-2",
+      "target": "VALVE-MOV103",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_25_close_load_1a_left_2x.png: left branch from MCC-1A-2."
+    },
+    {
+      "source": "MCC-1A-2",
+      "target": "FAN-F104",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_25_close_load_1a_left_2x.png: right branch from MCC-1A-2."
+    },
+    {
+      "source": "BUS-480-1A",
+      "target": "MCC-1A-3",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_26_close_load_1a_right_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-1A-3",
+      "target": "HTR-H105",
+      "kind": "solid_power",
+      "confidence": "medium",
+      "evidence": "raw_26_close_load_1a_right_2x.png: left lower branch from MCC-1A-3 to heater symbol."
+    },
+    {
+      "source": "MCC-1A-3",
+      "target": "VALVE-XV106",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_26_close_load_1a_right_2x.png: right lower branch from MCC-1A-3 to XV valve."
+    },
+    {
+      "source": "BUS-480-1A",
+      "target": "PNL-1A",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_26_close_load_1a_right_2x.png: panel/plus symbol has bus tap."
+    },
+    {
+      "source": "PNL-1A",
+      "target": "JB-1A-1",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_26_close_load_1a_right_2x.png: dashed/control run from panel region toward junction block."
+    },
+    {
+      "source": "VALVE-XV106",
+      "target": "JB-1A-1",
+      "kind": "other",
+      "confidence": "high",
+      "evidence": "raw_26_close_load_1a_right_2x.png: XV valve directly abuts junction block."
+    },
+    {
+      "source": "VALVE-XV106",
+      "target": "RELAY-K11",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_26_close_load_1a_right_2x.png: dashed loop from valve area to first relay."
+    },
+    {
+      "source": "JB-1A-1",
+      "target": "RELAY-K11",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_26_close_load_1a_right_2x.png: dashed loop from junction block to first relay."
+    },
+    {
+      "source": "RELAY-K11",
+      "target": "RELAY-K12",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_26_close_load_1a_right_2x.png: lower control line between relays."
+    },
+    {
+      "source": "BUS-480-1A",
+      "target": "INST-1A",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_26_close_load_1a_right_2x.png: dashed instrument tap from bus."
+    },
+    {
+      "source": "BUS-480-1A",
+      "target": "GND-1A",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "raw_26_close_load_1a_right_2x.png: ground tap from bus dot."
+    },
+    {
+      "source": "BUS-4160-ESF-A",
+      "target": "CB-1C-FDR",
+      "kind": "solid_power",
+      "confidence": "medium",
+      "evidence": "raw_07_upper_load_centers_full.png: routed incoming feeder from BUS-4160-ESF-A to 1C load-center incoming chain."
+    },
+    {
+      "source": "CB-1C-FDR",
+      "target": "DS-1C-ISO",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_27_close_load_1c_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "DS-1C-ISO",
+      "target": "TR-1C",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_27_close_load_1c_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "TR-1C",
+      "target": "CB-1C-MAIN",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_27_close_load_1c_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "BUS-480-1C",
+      "target": "MCC-1C-1",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_27_close_load_1c_left_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-1C-1",
+      "target": "PUMP-P131",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_27_close_load_1c_left_2x.png: left branch from MCC-1C-1."
+    },
+    {
+      "source": "MCC-1C-1",
+      "target": "MOTOR-M132",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_27_close_load_1c_left_2x.png: right branch from MCC-1C-1."
+    },
+    {
+      "source": "BUS-480-1C",
+      "target": "MCC-1C-2",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_27_close_load_1c_left_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-1C-2",
+      "target": "VALVE-MOV133",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_27_close_load_1c_left_2x.png: left branch from MCC-1C-2."
+    },
+    {
+      "source": "MCC-1C-2",
+      "target": "FAN-F134",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_27_close_load_1c_left_2x.png: right branch from MCC-1C-2."
+    },
+    {
+      "source": "BUS-480-1C",
+      "target": "MCC-1C-3",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_28_close_load_1c_right_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-1C-3",
+      "target": "HTR-H135",
+      "kind": "solid_power",
+      "confidence": "medium",
+      "evidence": "raw_28_close_load_1c_right_2x.png: left lower branch from MCC-1C-3 to heater symbol."
+    },
+    {
+      "source": "MCC-1C-3",
+      "target": "VALVE-XV136",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_28_close_load_1c_right_2x.png: right lower branch from MCC-1C-3 to XV valve."
+    },
+    {
+      "source": "BUS-480-1C",
+      "target": "PNL-1C",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_28_close_load_1c_right_2x.png: panel/plus symbol has bus tap."
+    },
+    {
+      "source": "PNL-1C",
+      "target": "JB-1C-1",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_28_close_load_1c_right_2x.png: dashed/control run from panel region toward junction block."
+    },
+    {
+      "source": "VALVE-XV136",
+      "target": "JB-1C-1",
+      "kind": "other",
+      "confidence": "high",
+      "evidence": "raw_28_close_load_1c_right_2x.png: XV valve directly abuts junction block."
+    },
+    {
+      "source": "VALVE-XV136",
+      "target": "RELAY-K21",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_28_close_load_1c_right_2x.png: dashed loop from valve area to first relay."
+    },
+    {
+      "source": "JB-1C-1",
+      "target": "RELAY-K21",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_28_close_load_1c_right_2x.png: dashed loop from junction block to first relay."
+    },
+    {
+      "source": "RELAY-K21",
+      "target": "RELAY-K22",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_28_close_load_1c_right_2x.png: lower control line between relays."
+    },
+    {
+      "source": "BUS-480-1C",
+      "target": "INST-1C",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_28_close_load_1c_right_2x.png: dashed instrument tap from bus."
+    },
+    {
+      "source": "BUS-480-1C",
+      "target": "GND-1C",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "raw_28_close_load_1c_right_2x.png: ground tap from bus dot."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-1B-FDR",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_07_upper_load_centers_full.png: routed incoming feeder from BUS-4160-B to 1B load-center incoming chain."
+    },
+    {
+      "source": "CB-1B-FDR",
+      "target": "DS-1B-ISO",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_29_close_load_1b_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "DS-1B-ISO",
+      "target": "TR-1B",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_29_close_load_1b_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "TR-1B",
+      "target": "CB-1B-MAIN",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_29_close_load_1b_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "BUS-480-1B",
+      "target": "MCC-1B-1",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_29_close_load_1b_left_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-1B-1",
+      "target": "PUMP-P161",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_29_close_load_1b_left_2x.png: left branch from MCC-1B-1."
+    },
+    {
+      "source": "MCC-1B-1",
+      "target": "MOTOR-M162",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_29_close_load_1b_left_2x.png: right branch from MCC-1B-1."
+    },
+    {
+      "source": "BUS-480-1B",
+      "target": "MCC-1B-2",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_29_close_load_1b_left_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-1B-2",
+      "target": "VALVE-MOV163",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_29_close_load_1b_left_2x.png: left branch from MCC-1B-2."
+    },
+    {
+      "source": "MCC-1B-2",
+      "target": "FAN-F164",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_29_close_load_1b_left_2x.png: right branch from MCC-1B-2."
+    },
+    {
+      "source": "BUS-480-1B",
+      "target": "MCC-1B-3",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_30_close_load_1b_right_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-1B-3",
+      "target": "HTR-H165",
+      "kind": "solid_power",
+      "confidence": "medium",
+      "evidence": "raw_30_close_load_1b_right_2x.png: left lower branch from MCC-1B-3 to heater symbol."
+    },
+    {
+      "source": "MCC-1B-3",
+      "target": "VALVE-XV166",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_30_close_load_1b_right_2x.png: right lower branch from MCC-1B-3 to XV valve."
+    },
+    {
+      "source": "BUS-480-1B",
+      "target": "PNL-1B",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_30_close_load_1b_right_2x.png: panel/plus symbol has bus tap."
+    },
+    {
+      "source": "PNL-1B",
+      "target": "JB-1B-1",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_30_close_load_1b_right_2x.png: dashed/control run from panel region toward junction block."
+    },
+    {
+      "source": "VALVE-XV166",
+      "target": "JB-1B-1",
+      "kind": "other",
+      "confidence": "high",
+      "evidence": "raw_30_close_load_1b_right_2x.png: XV valve directly abuts junction block."
+    },
+    {
+      "source": "VALVE-XV166",
+      "target": "RELAY-K31",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_30_close_load_1b_right_2x.png: dashed loop from valve area to first relay."
+    },
+    {
+      "source": "JB-1B-1",
+      "target": "RELAY-K31",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_30_close_load_1b_right_2x.png: dashed loop from junction block to first relay."
+    },
+    {
+      "source": "RELAY-K31",
+      "target": "RELAY-K32",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_30_close_load_1b_right_2x.png: lower control line between relays."
+    },
+    {
+      "source": "BUS-480-1B",
+      "target": "INST-1B",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_30_close_load_1b_right_2x.png: dashed instrument tap from bus."
+    },
+    {
+      "source": "BUS-480-1B",
+      "target": "GND-1B",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "raw_30_close_load_1b_right_2x.png: ground tap from bus dot."
+    },
+    {
+      "source": "BUS-4160-ESF-A",
+      "target": "CB-2A-FDR",
+      "kind": "solid_power",
+      "confidence": "medium",
+      "evidence": "raw_11_lower_load_centers_full.png: routed incoming feeder from BUS-4160-ESF-A to 2A load-center incoming chain."
+    },
+    {
+      "source": "CB-2A-FDR",
+      "target": "DS-2A-ISO",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_31_close_load_2a_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "DS-2A-ISO",
+      "target": "TR-2A",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_31_close_load_2a_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "TR-2A",
+      "target": "CB-2A-MAIN",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_31_close_load_2a_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "BUS-480-2A",
+      "target": "MCC-2A-1",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_31_close_load_2a_left_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-2A-1",
+      "target": "PUMP-P201",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_31_close_load_2a_left_2x.png: left branch from MCC-2A-1."
+    },
+    {
+      "source": "MCC-2A-1",
+      "target": "MOTOR-M202",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_31_close_load_2a_left_2x.png: right branch from MCC-2A-1."
+    },
+    {
+      "source": "BUS-480-2A",
+      "target": "MCC-2A-2",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_31_close_load_2a_left_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-2A-2",
+      "target": "VALVE-MOV203",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_31_close_load_2a_left_2x.png: left branch from MCC-2A-2."
+    },
+    {
+      "source": "MCC-2A-2",
+      "target": "FAN-F204",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_31_close_load_2a_left_2x.png: right branch from MCC-2A-2."
+    },
+    {
+      "source": "BUS-480-2A",
+      "target": "MCC-2A-3",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_32_close_load_2a_right_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-2A-3",
+      "target": "HTR-H205",
+      "kind": "solid_power",
+      "confidence": "medium",
+      "evidence": "raw_32_close_load_2a_right_2x.png: left lower branch from MCC-2A-3 to heater symbol."
+    },
+    {
+      "source": "MCC-2A-3",
+      "target": "VALVE-XV206",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_32_close_load_2a_right_2x.png: right lower branch from MCC-2A-3 to XV valve."
+    },
+    {
+      "source": "BUS-480-2A",
+      "target": "PNL-2A",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_32_close_load_2a_right_2x.png: panel/plus symbol has bus tap."
+    },
+    {
+      "source": "PNL-2A",
+      "target": "JB-2A-1",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_32_close_load_2a_right_2x.png: dashed/control run from panel region toward junction block."
+    },
+    {
+      "source": "VALVE-XV206",
+      "target": "JB-2A-1",
+      "kind": "other",
+      "confidence": "high",
+      "evidence": "raw_32_close_load_2a_right_2x.png: XV valve directly abuts junction block."
+    },
+    {
+      "source": "VALVE-XV206",
+      "target": "RELAY-K41",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_32_close_load_2a_right_2x.png: dashed loop from valve area to first relay."
+    },
+    {
+      "source": "JB-2A-1",
+      "target": "RELAY-K41",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_32_close_load_2a_right_2x.png: dashed loop from junction block to first relay."
+    },
+    {
+      "source": "RELAY-K41",
+      "target": "RELAY-K42",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_32_close_load_2a_right_2x.png: lower control line between relays."
+    },
+    {
+      "source": "BUS-480-2A",
+      "target": "INST-2A",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_32_close_load_2a_right_2x.png: dashed instrument tap from bus."
+    },
+    {
+      "source": "BUS-480-2A",
+      "target": "GND-2A",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "raw_32_close_load_2a_right_2x.png: ground tap from bus dot."
+    },
+    {
+      "source": "BUS-4160-ESF-A",
+      "target": "CB-2C-FDR",
+      "kind": "solid_power",
+      "confidence": "medium",
+      "evidence": "raw_11_lower_load_centers_full.png: routed incoming feeder from BUS-4160-ESF-A to 2C load-center incoming chain."
+    },
+    {
+      "source": "CB-2C-FDR",
+      "target": "DS-2C-ISO",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_33_close_load_2c_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "DS-2C-ISO",
+      "target": "TR-2C",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_33_close_load_2c_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "TR-2C",
+      "target": "CB-2C-MAIN",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_33_close_load_2c_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "BUS-480-2C",
+      "target": "MCC-2C-1",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_33_close_load_2c_left_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-2C-1",
+      "target": "PUMP-P231",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_33_close_load_2c_left_2x.png: left branch from MCC-2C-1."
+    },
+    {
+      "source": "MCC-2C-1",
+      "target": "MOTOR-M232",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_33_close_load_2c_left_2x.png: right branch from MCC-2C-1."
+    },
+    {
+      "source": "BUS-480-2C",
+      "target": "MCC-2C-2",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_33_close_load_2c_left_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-2C-2",
+      "target": "VALVE-MOV233",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_33_close_load_2c_left_2x.png: left branch from MCC-2C-2."
+    },
+    {
+      "source": "MCC-2C-2",
+      "target": "FAN-F234",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_33_close_load_2c_left_2x.png: right branch from MCC-2C-2."
+    },
+    {
+      "source": "BUS-480-2C",
+      "target": "MCC-2C-3",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_34_close_load_2c_right_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-2C-3",
+      "target": "HTR-H235",
+      "kind": "solid_power",
+      "confidence": "medium",
+      "evidence": "raw_34_close_load_2c_right_2x.png: left lower branch from MCC-2C-3 to heater symbol."
+    },
+    {
+      "source": "MCC-2C-3",
+      "target": "VALVE-XV236",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_34_close_load_2c_right_2x.png: right lower branch from MCC-2C-3 to XV valve."
+    },
+    {
+      "source": "BUS-480-2C",
+      "target": "PNL-2C",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_34_close_load_2c_right_2x.png: panel/plus symbol has bus tap."
+    },
+    {
+      "source": "PNL-2C",
+      "target": "JB-2C-1",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_34_close_load_2c_right_2x.png: dashed/control run from panel region toward junction block."
+    },
+    {
+      "source": "VALVE-XV236",
+      "target": "JB-2C-1",
+      "kind": "other",
+      "confidence": "high",
+      "evidence": "raw_34_close_load_2c_right_2x.png: XV valve directly abuts junction block."
+    },
+    {
+      "source": "VALVE-XV236",
+      "target": "RELAY-K51",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_34_close_load_2c_right_2x.png: dashed loop from valve area to first relay."
+    },
+    {
+      "source": "JB-2C-1",
+      "target": "RELAY-K51",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_34_close_load_2c_right_2x.png: dashed loop from junction block to first relay."
+    },
+    {
+      "source": "RELAY-K51",
+      "target": "RELAY-K52",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_34_close_load_2c_right_2x.png: lower control line between relays."
+    },
+    {
+      "source": "BUS-480-2C",
+      "target": "INST-2C",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_34_close_load_2c_right_2x.png: dashed instrument tap from bus."
+    },
+    {
+      "source": "BUS-480-2C",
+      "target": "GND-2C",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "raw_34_close_load_2c_right_2x.png: ground tap from bus dot."
+    },
+    {
+      "source": "BUS-4160-ESF-B",
+      "target": "CB-2B-FDR",
+      "kind": "solid_power",
+      "confidence": "medium",
+      "evidence": "raw_11_lower_load_centers_full.png: routed incoming feeder from BUS-4160-ESF-B to 2B load-center incoming chain."
+    },
+    {
+      "source": "CB-2B-FDR",
+      "target": "DS-2B-ISO",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_35_close_load_2b_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "DS-2B-ISO",
+      "target": "TR-2B",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_35_close_load_2b_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "TR-2B",
+      "target": "CB-2B-MAIN",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_35_close_load_2b_left_2x.png: vertical incoming chain."
+    },
+    {
+      "source": "BUS-480-2B",
+      "target": "MCC-2B-1",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_35_close_load_2b_left_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-2B-1",
+      "target": "PUMP-P261",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_35_close_load_2b_left_2x.png: left branch from MCC-2B-1."
+    },
+    {
+      "source": "MCC-2B-1",
+      "target": "MOTOR-M262",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_35_close_load_2b_left_2x.png: right branch from MCC-2B-1."
+    },
+    {
+      "source": "BUS-480-2B",
+      "target": "MCC-2B-2",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_35_close_load_2b_left_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-2B-2",
+      "target": "VALVE-MOV263",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_35_close_load_2b_left_2x.png: left branch from MCC-2B-2."
+    },
+    {
+      "source": "MCC-2B-2",
+      "target": "FAN-F264",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_35_close_load_2b_left_2x.png: right branch from MCC-2B-2."
+    },
+    {
+      "source": "BUS-480-2B",
+      "target": "MCC-2B-3",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_36_close_load_2b_right_2x.png: black-dot bus tap."
+    },
+    {
+      "source": "MCC-2B-3",
+      "target": "HTR-H265",
+      "kind": "solid_power",
+      "confidence": "medium",
+      "evidence": "raw_36_close_load_2b_right_2x.png: left lower branch from MCC-2B-3 to heater symbol."
+    },
+    {
+      "source": "MCC-2B-3",
+      "target": "VALVE-XV266",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_36_close_load_2b_right_2x.png: right lower branch from MCC-2B-3 to XV valve."
+    },
+    {
+      "source": "BUS-480-2B",
+      "target": "PNL-2B",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_36_close_load_2b_right_2x.png: panel/plus symbol has bus tap."
+    },
+    {
+      "source": "PNL-2B",
+      "target": "JB-2B-1",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_36_close_load_2b_right_2x.png: dashed/control run from panel region toward junction block."
+    },
+    {
+      "source": "VALVE-XV266",
+      "target": "JB-2B-1",
+      "kind": "other",
+      "confidence": "high",
+      "evidence": "raw_36_close_load_2b_right_2x.png: XV valve directly abuts junction block."
+    },
+    {
+      "source": "VALVE-XV266",
+      "target": "RELAY-K61",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_36_close_load_2b_right_2x.png: dashed loop from valve area to first relay."
+    },
+    {
+      "source": "JB-2B-1",
+      "target": "RELAY-K61",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_36_close_load_2b_right_2x.png: dashed loop from junction block to first relay."
+    },
+    {
+      "source": "RELAY-K61",
+      "target": "RELAY-K62",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_36_close_load_2b_right_2x.png: lower control line between relays."
+    },
+    {
+      "source": "BUS-480-2B",
+      "target": "INST-2B",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_36_close_load_2b_right_2x.png: dashed instrument tap from bus."
+    },
+    {
+      "source": "BUS-480-2B",
+      "target": "GND-2B",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "raw_36_close_load_2b_right_2x.png: ground tap from bus dot."
+    },
+    {
+      "source": "CB-DC-A",
+      "target": "RECT-125A",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_37: DC input breaker wired to rectifier."
+    },
+    {
+      "source": "RECT-125A",
+      "target": "BUS-125DC-A",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_37: rectifier taps BUS-125DC-A."
+    },
+    {
+      "source": "BAT-125A",
+      "target": "BUS-125DC-A",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_37: battery tap to bus."
+    },
+    {
+      "source": "CHGR-AUX-A",
+      "target": "BUS-125DC-A",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_37: charger tap to bus."
+    },
+    {
+      "source": "METER-DC-A",
+      "target": "BUS-125DC-A",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_37: dashed meter tap."
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "GND-DC-A",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "raw_37: ground tap."
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "CB-DCTIE",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_15/raw_38: A DC bus enters tie breaker."
+    },
+    {
+      "source": "CB-DCTIE",
+      "target": "BUS-125DC-B",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_38: tie breaker exits to B DC bus."
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "INV-1A",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_37: inverter tap from bus."
+    },
+    {
+      "source": "INV-1A",
+      "target": "UPS-1A",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_37: direct inverter to UPS segment."
+    },
+    {
+      "source": "UPS-1A",
+      "target": "CB-UPS-A",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_37/raw_39: UPS output to breaker."
+    },
+    {
+      "source": "CB-UPS-A",
+      "target": "BUS-120AC-A",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_37/raw_39: breaker lands on AC bus dot."
+    },
+    {
+      "source": "BUS-120AC-A",
+      "target": "FUSE-FU-A",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_37: solid fuse branch from AC bus."
+    },
+    {
+      "source": "FUSE-FU-A",
+      "target": "RELAY-KA1",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_37: fused branch adjacent to dashed relay string."
+    },
+    {
+      "source": "RELAY-KA1",
+      "target": "RELAY-KA2",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_37: dashed relay-to-relay segment."
+    },
+    {
+      "source": "RELAY-KA2",
+      "target": "ANN-A",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_37: dashed control line continues toward annunciator."
+    },
+    {
+      "source": "ANN-A",
+      "target": "REC-SER-A",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_37: dashed conductors between annunciator and recorder."
+    },
+    {
+      "source": "REC-SER-A",
+      "target": "PNL-RPS-A",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_37: multi-line dashed bundle enters RPS panel."
+    },
+    {
+      "source": "BUS-120AC-A",
+      "target": "PNL-RPS-A",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_37: solid tap from AC bus to RPS panel."
+    },
+    {
+      "source": "PNL-RPS-A",
+      "target": "INST-NIS-A",
+      "kind": "long_dashed_instrument",
+      "confidence": "medium",
+      "evidence": "raw_37/raw_39: dashed instrument outline from RPS region."
+    },
+    {
+      "source": "PNL-RPS-A",
+      "target": "PNL-DCS-A",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_37: dashed vertical RPS-to-DCS link."
+    },
+    {
+      "source": "PNL-DCS-A",
+      "target": "JB-CTRL-A",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_37/raw_39: dashed DCS-to-control junction link."
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "DC-DC-1",
+      "kind": "solid_power",
+      "confidence": "medium",
+      "evidence": "raw_37/raw_39: routed DC feed into converter upper terminal."
+    },
+    {
+      "source": "DC-DC-1",
+      "target": "BUS-24DC-C",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_38/raw_39: converter lower terminal lands on 24 VDC bus."
+    },
+    {
+      "source": "BAT-24C",
+      "target": "BUS-24DC-C",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_39: battery symbol on 24 VDC bus."
+    },
+    {
+      "source": "BUS-24DC-C",
+      "target": "PNL-RADMON",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_39: vertical tap to RADMON panel."
+    },
+    {
+      "source": "PNL-RADMON",
+      "target": "RELAY-KTIE",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_39: dashed panel-to-relay segment."
+    },
+    {
+      "source": "CB-DC-B",
+      "target": "RECT-125B",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_38: DC input breaker wired to rectifier."
+    },
+    {
+      "source": "RECT-125B",
+      "target": "BUS-125DC-B",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_38: rectifier taps BUS-125DC-B."
+    },
+    {
+      "source": "BAT-125B",
+      "target": "BUS-125DC-B",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_38: battery tap to bus."
+    },
+    {
+      "source": "CHGR-AUX-B",
+      "target": "BUS-125DC-B",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_38: charger tap to bus."
+    },
+    {
+      "source": "METER-DC-B",
+      "target": "BUS-125DC-B",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_38: dashed meter tap."
+    },
+    {
+      "source": "BUS-125DC-B",
+      "target": "GND-DC-B",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "raw_38: ground tap."
+    },
+    {
+      "source": "BUS-125DC-B",
+      "target": "INV-1B",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_38: inverter tap from bus."
+    },
+    {
+      "source": "INV-1B",
+      "target": "UPS-1B",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_38: direct inverter to UPS segment."
+    },
+    {
+      "source": "UPS-1B",
+      "target": "CB-UPS-B",
+      "kind": "solid_power",
+      "confidence": "high",
+      "evidence": "raw_38: UPS output to breaker."
+    },
+    {
+      "source": "CB-UPS-B",
+      "target": "BUS-120AC-B",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_38: breaker lands on AC bus dot."
+    },
+    {
+      "source": "BUS-120AC-B",
+      "target": "FUSE-FU-B",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_38/raw_39: solid fuse branch from AC bus."
+    },
+    {
+      "source": "FUSE-FU-B",
+      "target": "RELAY-KB1",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_38/raw_39: fused branch adjacent to dashed relay string."
+    },
+    {
+      "source": "RELAY-KB1",
+      "target": "RELAY-KB2",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_39: dashed relay-to-relay segment."
+    },
+    {
+      "source": "RELAY-KB2",
+      "target": "ANN-B",
+      "kind": "short_dashed_control",
+      "confidence": "medium",
+      "evidence": "raw_38: dashed control line continues toward annunciator."
+    },
+    {
+      "source": "ANN-B",
+      "target": "REC-SER-B",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_38: dashed conductors between annunciator and recorder."
+    },
+    {
+      "source": "REC-SER-B",
+      "target": "PNL-RPS-B",
+      "kind": "long_dashed_instrument",
+      "confidence": "high",
+      "evidence": "raw_38: multi-line dashed bundle enters RPS panel."
+    },
+    {
+      "source": "BUS-120AC-B",
+      "target": "PNL-RPS-B",
+      "kind": "bus_tap",
+      "confidence": "high",
+      "evidence": "raw_38: solid tap from AC bus to RPS panel."
+    },
+    {
+      "source": "PNL-RPS-B",
+      "target": "INST-NIS-B",
+      "kind": "long_dashed_instrument",
+      "confidence": "medium",
+      "evidence": "raw_38: dashed instrument outline from RPS region."
+    },
+    {
+      "source": "PNL-RPS-B",
+      "target": "PNL-DCS-B",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_38: dashed vertical RPS-to-DCS link."
+    },
+    {
+      "source": "PNL-DCS-B",
+      "target": "JB-CTRL-B",
+      "kind": "short_dashed_control",
+      "confidence": "high",
+      "evidence": "raw_38: dashed DCS-to-control junction link."
+    }
+  ],
+  "uncertain_edges": [
+    {
+      "a": "BUS-4160-A",
+      "b": "CB-1C-FDR",
+      "reason": "The 1C feeder route is crowded near A-side 4160/ESF conductors; I asserted the visible ESF-A tap but the normal A bus is a plausible alternate visual origin.",
+      "evidence": "raw_01_top_4160_sources_full.png and raw_07_upper_load_centers_full.png."
+    },
+    {
+      "a": "BUS-4160-A",
+      "b": "CB-2C-FDR",
+      "reason": "The 2C incoming route appears A-side/ESF-routed, but the exact source bus is partly obscured by long routed conductors.",
+      "evidence": "raw_20_main_drawing_area.png and raw_11_lower_load_centers_full.png."
+    },
+    {
+      "a": "BUS-4160-ESF-A",
+      "b": "BUS-480-2A",
+      "reason": "A long routed heavy conductor enters the 2A bus area, but it may represent the feeder path to the incoming breaker rather than a direct bus-to-bus edge.",
+      "evidence": "raw_11_lower_load_centers_full.png and raw_31_close_load_2a_left_2x.png."
+    },
+    {
+      "a": "BUS-4160-ESF-B",
+      "b": "BUS-480-2B",
+      "reason": "A large routed heavy line lands near BUS-480-2B; source/feeder role is ambiguous, so the asserted edge stays through CB-2B-FDR.",
+      "evidence": "raw_11_lower_load_centers_full.png and raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "a": "BUS-24DC-C",
+      "b": "PNL-DCS-A",
+      "reason": "DCS-A is adjacent to the 24 VDC area, but the clear visible line is dashed/control from PNL-RPS-A rather than a black-dot 24 VDC tap.",
+      "evidence": "raw_37_close_bottom_dc_left_2x.png and raw_39_close_bottom_center_controls_2x.png."
+    },
+    {
+      "a": "BUS-24DC-C",
+      "b": "PNL-DCS-B",
+      "reason": "DCS-B is adjacent to the 24 VDC area, but the clear visible line is dashed/control from PNL-RPS-B rather than a black-dot 24 VDC tap.",
+      "evidence": "raw_38_close_bottom_dc_right_2x.png."
+    },
+    {
+      "a": "RELAY-KTIE",
+      "b": "PNL-DCS-B",
+      "reason": "The dashed PNL-RADMON/RELAY-KTIE line appears to continue rightward, but the endpoint at DCS-B is not visually clear.",
+      "evidence": "raw_39_close_bottom_center_controls_2x.png into raw_38_close_bottom_dc_right_2x.png."
+    },
+    {
+      "a": "CB-1A-MAIN",
+      "b": "BUS-480-1A",
+      "reason": "Main breaker appears visually shifted away from the 480 V bus; no clean direct breaker-to-bus segment is visible, so it is not asserted.",
+      "evidence": "raw_07_upper_load_centers_full.png; raw_25_close_load_1a_left_2x.png"
+    },
+    {
+      "a": "CB-1C-MAIN",
+      "b": "BUS-480-1C",
+      "reason": "Main breaker appears visually shifted away from the 480 V bus; no clean direct breaker-to-bus segment is visible, so it is not asserted.",
+      "evidence": "raw_07_upper_load_centers_full.png; raw_27_close_load_1c_left_2x.png"
+    },
+    {
+      "a": "CB-1B-MAIN",
+      "b": "BUS-480-1B",
+      "reason": "Main breaker appears visually shifted away from the 480 V bus; no clean direct breaker-to-bus segment is visible, so it is not asserted.",
+      "evidence": "raw_07_upper_load_centers_full.png; raw_29_close_load_1b_left_2x.png"
+    },
+    {
+      "a": "CB-2A-MAIN",
+      "b": "BUS-480-2A",
+      "reason": "Main breaker appears visually shifted away from the 480 V bus; no clean direct breaker-to-bus segment is visible, so it is not asserted.",
+      "evidence": "raw_11_lower_load_centers_full.png; raw_31_close_load_2a_left_2x.png"
+    },
+    {
+      "a": "CB-2C-MAIN",
+      "b": "BUS-480-2C",
+      "reason": "Main breaker appears visually shifted away from the 480 V bus; no clean direct breaker-to-bus segment is visible, so it is not asserted.",
+      "evidence": "raw_11_lower_load_centers_full.png; raw_33_close_load_2c_left_2x.png"
+    },
+    {
+      "a": "CB-2B-MAIN",
+      "b": "BUS-480-2B",
+      "reason": "Main breaker appears visually shifted away from the 480 V bus; no clean direct breaker-to-bus segment is visible, so it is not asserted.",
+      "evidence": "raw_11_lower_load_centers_full.png; raw_35_close_load_2b_left_2x.png"
+    },
+    {
+      "a": "JB-1A-1",
+      "b": "RELAY-K12",
+      "reason": "Second relay is connected through the visible first-relay-to-second-relay path; no separate direct JB-to-second-relay endpoint is clear.",
+      "evidence": "raw_26_close_load_1a_right_2x.png"
+    },
+    {
+      "a": "JB-1C-1",
+      "b": "RELAY-K22",
+      "reason": "Second relay is connected through the visible first-relay-to-second-relay path; no separate direct JB-to-second-relay endpoint is clear.",
+      "evidence": "raw_28_close_load_1c_right_2x.png"
+    },
+    {
+      "a": "JB-1B-1",
+      "b": "RELAY-K32",
+      "reason": "Second relay is connected through the visible first-relay-to-second-relay path; no separate direct JB-to-second-relay endpoint is clear.",
+      "evidence": "raw_30_close_load_1b_right_2x.png"
+    },
+    {
+      "a": "JB-2A-1",
+      "b": "RELAY-K42",
+      "reason": "Second relay is connected through the visible first-relay-to-second-relay path; no separate direct JB-to-second-relay endpoint is clear.",
+      "evidence": "raw_32_close_load_2a_right_2x.png"
+    },
+    {
+      "a": "JB-2C-1",
+      "b": "RELAY-K52",
+      "reason": "Second relay is connected through the visible first-relay-to-second-relay path; no separate direct JB-to-second-relay endpoint is clear.",
+      "evidence": "raw_34_close_load_2c_right_2x.png"
+    },
+    {
+      "a": "JB-2B-1",
+      "b": "RELAY-K62",
+      "reason": "Second relay is connected through the visible first-relay-to-second-relay path; no separate direct JB-to-second-relay endpoint is clear.",
+      "evidence": "raw_36_close_load_2b_right_2x.png"
+    },
+    {
+      "a": "BUS-120AC-A",
+      "b": "INST-NIS-A",
+      "reason": "Instrument is visually on the PNL-RPS-A dashed route, not a direct BUS-120AC-A tap.",
+      "evidence": "raw_15_bottom_dc_ups_full.png; raw_37_close_bottom_dc_left_2x.png"
+    },
+    {
+      "a": "BUS-120AC-B",
+      "b": "INST-NIS-B",
+      "reason": "Instrument is visually on the PNL-RPS-B dashed route, not a direct BUS-120AC-B tap.",
+      "evidence": "raw_15_bottom_dc_ups_full.png; raw_38_close_bottom_dc_right_2x.png"
+    }
+  ],
+  "removed_edges": [],
+  "added_edges": [],
+  "label_corrections": [],
+  "rejected_non_edges": [
+    {
+      "a": "BUS-4160-ESF-A",
+      "b": "CB-1A-FDR",
+      "reason": "The BUS-4160-A feeder drop to CB-1A-FDR crosses/approaches BUS-4160-ESF-A without a junction dot; not an ESF-A connection.",
+      "evidence": "raw_01_top_4160_sources_full.png; raw_full_preview_large.png"
+    },
+    {
+      "a": "BUS-4160-ESF-B",
+      "b": "CB-1B-FDR",
+      "reason": "The BUS-4160-B feeder drop to CB-1B-FDR is separate from BUS-4160-ESF-B; crossings without dots are not connections.",
+      "evidence": "raw_01_top_4160_sources_full.png; raw_full_preview_large.png"
+    },
+    {
+      "a": "DC-DC-1",
+      "b": "BUS-120AC-A",
+      "reason": "The DC-DC-1 supply/drop visually crosses the BUS-120AC-A region without a black junction dot; not a direct AC bus tap.",
+      "evidence": "raw_15_bottom_dc_ups_full.png; raw_39_close_bottom_center_controls_2x.png"
+    },
+    {
+      "a": "BUS-24DC-C",
+      "b": "PNL-DCS-A",
+      "reason": "PNL-DCS-A sits near the 24 VDC bus but the clear visible connection is dashed from PNL-RPS-A/JB-CTRL-A, not a black-dot 24 VDC tap.",
+      "evidence": "raw_15_bottom_dc_ups_full.png; raw_39_close_bottom_center_controls_2x.png"
+    },
+    {
+      "a": "BUS-24DC-C",
+      "b": "PNL-DCS-B",
+      "reason": "PNL-DCS-B sits near the lower control area, but no direct black-dot 24 VDC tap is visible.",
+      "evidence": "raw_15_bottom_dc_ups_full.png; raw_38_close_bottom_dc_right_2x.png"
+    },
+    {
+      "a": "INST-1A",
+      "b": "GND-1A",
+      "reason": "Adjacent instrument and ground drops are separate vertical taps from BUS-480-1A; no cross-junction dot joins them.",
+      "evidence": "raw_26_close_load_1a_right_2x.png"
+    },
+    {
+      "a": "INST-2B",
+      "b": "GND-2B",
+      "reason": "Adjacent instrument and ground drops are separate vertical taps from BUS-480-2B; no cross-junction dot joins them.",
+      "evidence": "raw_36_close_load_2b_right_2x.png"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+candidate_edge_or_node,decision,reason
+AUX METERING BUS,excluded_node,Diego R1 candidate was not a visibly connected schematic node
+BUS-4160-ESF-A -- CB-1A-FDR,excluded_corrected,"1A feeder visually comes from BUS-4160-A, not ESF-A"
+BUS-4160-ESF-B -- CB-1B-FDR,excluded_corrected,"1B feeder visually comes from BUS-4160-B, not ESF-B"
+VALVE-XVxxx -- RELAY-Kn1/Kn2,excluded_overconnected,"control cluster supports XV-to-JB, JB-to-second-relay, and relay-pair edge only"
+JB-x-1 -- first relay,excluded_overconnected,"first relay is connected to second relay, not directly to the JB in the conservative trace"
+BUS-120AC-A/B -- RELAY/ANN/REC direct,excluded_overconnected,RPS/control components are represented by the dashed relay-annunciator-recorder-panel chain
+BUS-24DC-C -- RELAY-KTIE direct,excluded_overconnected,RELAY-KTIE is in the PNL-RADMON to PNL-DCS-B dashed control path
+BUS-24DC-C -- JB-CTRL-A/B direct,excluded_overconnected,"JB-CTRL-A/B connect through PNL-DCS-A/B, not directly to BUS-24DC-C"
+INST-x -- GND-x,excluded_corrected,Diego saturation found INST-x and GND-x are separate drops from BUS-480-x
+Crossings without junction dots,excluded,drawing legend states crossings without dots are not connected

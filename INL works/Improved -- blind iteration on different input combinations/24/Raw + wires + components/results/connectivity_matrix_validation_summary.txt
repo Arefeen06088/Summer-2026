@@ -1,0 +1,34 @@
+Connectivity matrix validation summary - Document 24
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\24\synthetic_npp_connectivity_matrix_rev2.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_matrix.csv): TP=197, FP=24, FN=7, Precision=0.891403, Recall=0.965686, F1=0.927059
+- Jennifer -- Round 2 (round_02_jennifer_matrix.csv): TP=197, FP=17, FN=7, Precision=0.920561, Recall=0.965686, F1=0.942584
+- Diego -- Round 3 (round_03_diego_matrix.csv): TP=197, FP=17, FN=7, Precision=0.920561, Recall=0.965686, F1=0.942584
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=197, FP=17, FN=7, Precision=0.920561, Recall=0.965686, F1=0.942584
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=197, FP=17, FN=7, Precision=0.920561, Recall=0.965686, F1=0.942584
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- ANN-PNL-1 -- LOAD-SHED-CAB
+- HS-2A02 -- RELAY-K2A01
+- HS-2A03 -- RELAY-K2A02
+- HS-2A04 -- RELAY-K2A03
+- HS-2A05 -- RELAY-K2A04
+- HS-2A06 -- RELAY-K2A05
+- HS-2A07 -- RELAY-K2A06
+- HS-2A08 -- RELAY-K2A07
+- HS-2A09 -- RELAY-K2A08
+- HS-2B02 -- RELAY-K2B01
+
+False-negative edge examples:
+- ANN-PNL-1 -- RPS-PNL-A
+- ANN-PNL-1 -- RPS-PNL-B
+- CB-DG1A -- TRIP-MOD-A
+- CB-DG1B -- TRIP-MOD-B
+- CB-TIE-1 -- LOAD-SHED-CAB
+- ESFAS-PNL-A -- LOAD-SHED-CAB
+- ESFAS-PNL-B -- LOAD-SHED-CAB

@@ -1,0 +1,203 @@
+source,target,kind,confidence,evidence
+GEN-M1,CB-GEN1,solid_ac,medium,raw_16: solid source conductor through an unlabeled terminal square to CB-GEN1
+CB-GEN1,TR-UAT1,solid_ac,high,raw_16: top-left source chain
+TR-UAT1,CB-13A-IN,solid_ac,high,raw_16: top-left source chain
+CB-13A-IN,13.8 KV SAFETY BUS A,bus_tap,high,raw_16: vertical CB-13A-IN drop lands on black-dot tap at 13.8 kV Bus A
+13.8 KV SAFETY BUS A,CB-F41A,bus_tap,high,raw_16: black-dot downward tap from Bus A to CB-F41A
+CB-F41A,DS-F41A,solid_ac,high,raw_16/raw_17: solid feeder from Bus A through TR-416A
+DS-F41A,TR-416A,solid_ac,high,raw_16/raw_17: solid feeder from Bus A through TR-416A
+TR-416A,CB-416A-IN,solid_ac,high,raw_16/raw_17: solid feeder from Bus A through TR-416A
+CB-416A-IN,4.16 KV CLASS 1E BUS A,bus_tap,high,raw_17: vertical CB-416A-IN drop lands on 4.16 kV Bus A
+DG-1A,CB-DG1A,solid_ac,medium,raw_17: DG-1A conductor through unlabeled terminal square to CB-DG1A
+CB-DG1A,4.16 KV CLASS 1E BUS A,bus_tap,high,raw_17/raw_18: CB-DG1A vertical tap lands on 4.16 kV Bus A
+13.8 KV SAFETY BUS A,CB-TIE-13K,bus_tap,high,raw_18: 13.8 kV tie breaker left side connected to Bus A
+CB-TIE-13K,13.8 KV SAFETY BUS B,bus_tap,high,raw_18: 13.8 kV tie breaker right side connected to Bus B
+FEED-230A,TR-SAT1,solid_ac,high,raw_01/raw_19: top-right incoming feed conductor into TR-SAT1
+TR-SAT1,CB-13B-IN,solid_ac,high,raw_19: top-right source chain
+CB-13B-IN,13.8 KV SAFETY BUS B,bus_tap,high,raw_19: vertical CB-13B-IN drop lands on Bus B black-dot tap
+13.8 KV SAFETY BUS B,CB-F41B,bus_tap,high,raw_18: black-dot downward tap from Bus B to CB-F41B
+CB-F41B,DS-F41B,solid_ac,high,raw_18/raw_19: solid feeder from Bus B through TR-416B
+DS-F41B,TR-416B,solid_ac,high,raw_18/raw_19: solid feeder from Bus B through TR-416B
+TR-416B,CB-416B-IN,solid_ac,high,raw_18/raw_19: solid feeder from Bus B through TR-416B
+CB-416B-IN,4.16 KV CLASS 1E BUS B,bus_tap,high,raw_19: CB-416B-IN vertical drop to 4.16 kV Bus B
+DG-1B,CB-DG1B,solid_ac,medium,raw_19: DG-1B conductor through unlabeled terminal square to CB-DG1B
+CB-DG1B,4.16 KV CLASS 1E BUS B,bus_tap,high,raw_19: CB-DG1B vertical tap lands on Bus B
+4.16 KV CLASS 1E BUS A,CB-TIE-416,bus_tap,high,raw_18: normally open bus tie left side on 4.16 kV Bus A
+CB-TIE-416,4.16 KV CLASS 1E BUS B,bus_tap,high,raw_18: normally open bus tie right side on 4.16 kV Bus B
+4.16 KV CLASS 1E BUS A,CB-LCA,bus_tap,high,raw_01/raw_05 left feeder to Load Center A: bus tap to 480 feeder breaker
+CB-LCA,TR-480A,solid_ac,high,raw_01/raw_05 left feeder to Load Center A: feeder breaker to transformer
+TR-480A,480 VAC LOAD CENTER A,bus_tap,high,raw_01/raw_05 left feeder to Load Center A: transformer secondary vertical drop to 480 load center bus
+4.16 KV CLASS 1E BUS A,CB-LCB,bus_tap,high,raw_17/raw_05 feeder to Load Center B: bus tap to 480 feeder breaker
+CB-LCB,TR-480B,solid_ac,high,raw_17/raw_05 feeder to Load Center B: feeder breaker to transformer
+TR-480B,480 VAC LOAD CENTER B,bus_tap,high,raw_17/raw_05 feeder to Load Center B: transformer secondary vertical drop to 480 load center bus
+4.16 KV CLASS 1E BUS B,CB-LCC,bus_tap,high,raw_01/raw_05 feeder to Load Center C: bus tap to 480 feeder breaker
+CB-LCC,TR-480C,solid_ac,high,raw_01/raw_05 feeder to Load Center C: feeder breaker to transformer
+TR-480C,480 VAC LOAD CENTER C,bus_tap,high,raw_01/raw_05 feeder to Load Center C: transformer secondary vertical drop to 480 load center bus
+4.16 KV CLASS 1E BUS B,CB-LCD,bus_tap,high,raw_01/raw_05 feeder to Load Center D: bus tap to 480 feeder breaker
+CB-LCD,TR-480D,solid_ac,high,raw_01/raw_05 feeder to Load Center D: feeder breaker to transformer
+TR-480D,480 VAC LOAD CENTER D,bus_tap,high,raw_01/raw_05 feeder to Load Center D: transformer secondary vertical drop to 480 load center bus
+480 VAC LOAD CENTER B,CB-TIE-480,bus_tap,high,raw_20: left vertical tap from Bus 480-B to CB-TIE-480
+CB-TIE-480,480 VAC LOAD CENTER C,bus_tap,high,raw_20: right vertical tap from CB-TIE-480 to Bus 480-C
+480 VAC LOAD CENTER A,CB-48A1,bus_tap,high,raw_21_close_loads_a1_2x.png: black-dot tap from 480 VAC LOAD CENTER A to CB-48A1
+CB-48A1,DS-48A1,solid_ac,high,raw_21_close_loads_a1_2x.png: vertical feeder CB-48A1 to DS-48A1
+DS-48A1,MCC-1A,solid_ac,high,raw_21_close_loads_a1_2x.png: vertical feeder DS-48A1 to MCC-1A
+MCC-1A,RELAY-K1A,solid_ac,high,raw_21_close_loads_a1_2x.png: direct branch from MCC-1A to RELAY-K1A
+RELAY-K1A,PMP-RHR-101A,solid_ac,high,raw_21_close_loads_a1_2x.png: direct branch from RELAY-K1A to PMP-RHR-101A
+480 VAC LOAD CENTER A,CB-48A2,bus_tap,high,raw_21_close_loads_a1_2x.png: black-dot tap from 480 VAC LOAD CENTER A to CB-48A2
+CB-48A2,DS-48A2,solid_ac,high,raw_21_close_loads_a1_2x.png: vertical feeder CB-48A2 to DS-48A2
+DS-48A2,MCC-2A,solid_ac,high,raw_21_close_loads_a1_2x.png: vertical feeder DS-48A2 to MCC-2A
+MCC-2A,CS-2A,dashed_control,high,raw_21_close_loads_a1_2x.png: direct branch from MCC-2A to CS-2A
+CS-2A,MOV-CCW-112A,dashed_control,high,raw_21_close_loads_a1_2x.png: direct branch from CS-2A to MOV-CCW-112A
+480 VAC LOAD CENTER A,CB-48A3,bus_tap,high,raw_21_close_loads_a1_2x.png: black-dot tap from 480 VAC LOAD CENTER A to CB-48A3
+CB-48A3,DS-48A3,solid_ac,high,raw_21_close_loads_a1_2x.png: vertical feeder CB-48A3 to DS-48A3
+DS-48A3,MCC-3A,solid_ac,high,raw_21_close_loads_a1_2x.png: vertical feeder DS-48A3 to MCC-3A
+MCC-3A,RELAY-K3A,solid_ac,high,raw_21_close_loads_a1_2x.png: direct branch from MCC-3A to RELAY-K3A
+RELAY-K3A,FAN-RB-104A,solid_ac,high,raw_21_close_loads_a1_2x.png: direct branch from RELAY-K3A to FAN-RB-104A
+480 VAC LOAD CENTER A,CB-48A4,bus_tap,high,raw_21_close_loads_a1_2x.png: black-dot tap from 480 VAC LOAD CENTER A to CB-48A4
+CB-48A4,DS-48A4,solid_ac,high,raw_21_close_loads_a1_2x.png: vertical feeder CB-48A4 to DS-48A4
+DS-48A4,JB-4A,solid_ac,high,raw_21_close_loads_a1_2x.png: vertical feeder DS-48A4 to JB-4A
+JB-4A,CS-4A,dashed_control,high,raw_21_close_loads_a1_2x.png: direct branch from JB-4A to CS-4A
+CS-4A,HTR-PZR-01A,dashed_control,high,raw_21_close_loads_a1_2x.png: direct branch from CS-4A to HTR-PZR-01A
+480 VAC LOAD CENTER A,CB-48A5,bus_tap,high,raw_21_close_loads_a1_2x.png: black-dot tap from 480 VAC LOAD CENTER A to CB-48A5
+CB-48A5,DS-48A5,solid_ac,high,raw_21_close_loads_a1_2x.png: vertical feeder CB-48A5 to DS-48A5
+DS-48A5,MCC-5A,solid_ac,high,raw_21_close_loads_a1_2x.png: vertical feeder DS-48A5 to MCC-5A
+MCC-5A,RELAY-K5A,solid_ac,high,raw_21_close_loads_a1_2x.png: direct branch from MCC-5A to RELAY-K5A
+RELAY-K5A,COMP-IA-201A,solid_ac,high,raw_21_close_loads_a1_2x.png: direct branch from RELAY-K5A to COMP-IA-201A
+480 VAC LOAD CENTER A,CB-48A6,bus_tap,high,raw_21_close_loads_a1_2x.png: black-dot tap from 480 VAC LOAD CENTER A to CB-48A6
+CB-48A6,DS-48A6,solid_ac,high,raw_21_close_loads_a1_2x.png: vertical feeder CB-48A6 to DS-48A6
+DS-48A6,JB-6A,solid_ac,high,raw_21_close_loads_a1_2x.png: vertical feeder DS-48A6 to JB-6A
+JB-6A,CS-6A,dashed_control,high,raw_21_close_loads_a1_2x.png: direct branch from JB-6A to CS-6A
+CS-6A,MOT-CRN-01A,dashed_control,high,raw_21_close_loads_a1_2x.png: direct branch from CS-6A to MOT-CRN-01A
+480 VAC LOAD CENTER B,CB-48B1,bus_tap,high,raw_22_close_loads_a2_2x.png: black-dot tap from 480 VAC LOAD CENTER B to CB-48B1
+CB-48B1,DS-48B1,solid_ac,high,raw_22_close_loads_a2_2x.png: vertical feeder CB-48B1 to DS-48B1
+DS-48B1,MCC-1B,solid_ac,high,raw_22_close_loads_a2_2x.png: vertical feeder DS-48B1 to MCC-1B
+MCC-1B,RELAY-K1B,solid_ac,high,raw_22_close_loads_a2_2x.png: direct branch from MCC-1B to RELAY-K1B
+RELAY-K1B,PMP-SI-102B,solid_ac,high,raw_22_close_loads_a2_2x.png: direct branch from RELAY-K1B to PMP-SI-102B
+480 VAC LOAD CENTER B,CB-48B2,bus_tap,high,raw_22_close_loads_a2_2x.png: black-dot tap from 480 VAC LOAD CENTER B to CB-48B2
+CB-48B2,DS-48B2,solid_ac,high,raw_22_close_loads_a2_2x.png: vertical feeder CB-48B2 to DS-48B2
+DS-48B2,MCC-2B,solid_ac,high,raw_22_close_loads_a2_2x.png: vertical feeder DS-48B2 to MCC-2B
+MCC-2B,CS-2B,dashed_control,high,raw_22_close_loads_a2_2x.png: direct branch from MCC-2B to CS-2B
+CS-2B,MOV-CS-116B,dashed_control,high,raw_22_close_loads_a2_2x.png: direct branch from CS-2B to MOV-CS-116B
+480 VAC LOAD CENTER B,CB-48B3,bus_tap,high,raw_22_close_loads_a2_2x.png: black-dot tap from 480 VAC LOAD CENTER B to CB-48B3
+CB-48B3,DS-48B3,solid_ac,high,raw_22_close_loads_a2_2x.png: vertical feeder CB-48B3 to DS-48B3
+DS-48B3,MCC-3B,solid_ac,high,raw_22_close_loads_a2_2x.png: vertical feeder DS-48B3 to MCC-3B
+MCC-3B,RELAY-K3B,solid_ac,high,raw_22_close_loads_a2_2x.png: direct branch from MCC-3B to RELAY-K3B
+RELAY-K3B,FAN-CCW-108B,solid_ac,high,raw_22_close_loads_a2_2x.png: direct branch from RELAY-K3B to FAN-CCW-108B
+480 VAC LOAD CENTER B,CB-48B4,bus_tap,high,raw_22_close_loads_a2_2x.png: black-dot tap from 480 VAC LOAD CENTER B to CB-48B4
+CB-48B4,DS-48B4,solid_ac,high,raw_22_close_loads_a2_2x.png: vertical feeder CB-48B4 to DS-48B4
+DS-48B4,JB-4B,solid_ac,high,raw_22_close_loads_a2_2x.png: vertical feeder DS-48B4 to JB-4B
+JB-4B,CS-4B,dashed_control,high,raw_22_close_loads_a2_2x.png: direct branch from JB-4B to CS-4B
+CS-4B,HTR-SUMP-02B,dashed_control,high,raw_22_close_loads_a2_2x.png: direct branch from CS-4B to HTR-SUMP-02B
+480 VAC LOAD CENTER B,CB-48B5,bus_tap,high,raw_22_close_loads_a2_2x.png: black-dot tap from 480 VAC LOAD CENTER B to CB-48B5
+CB-48B5,DS-48B5,solid_ac,high,raw_22_close_loads_a2_2x.png: vertical feeder CB-48B5 to DS-48B5
+DS-48B5,MCC-5B,solid_ac,high,raw_22_close_loads_a2_2x.png: vertical feeder DS-48B5 to MCC-5B
+MCC-5B,RELAY-K5B,solid_ac,high,raw_22_close_loads_a2_2x.png: direct branch from MCC-5B to RELAY-K5B
+RELAY-K5B,PMP-CHG-203B,solid_ac,high,raw_22_close_loads_a2_2x.png: direct branch from RELAY-K5B to PMP-CHG-203B
+480 VAC LOAD CENTER B,CB-48B6,bus_tap,high,raw_22_close_loads_a2_2x.png: black-dot tap from 480 VAC LOAD CENTER B to CB-48B6
+CB-48B6,DS-48B6,solid_ac,high,raw_22_close_loads_a2_2x.png: vertical feeder CB-48B6 to DS-48B6
+DS-48B6,JB-6B,solid_ac,high,raw_22_close_loads_a2_2x.png: vertical feeder DS-48B6 to JB-6B
+JB-6B,CS-6B,dashed_control,high,raw_22_close_loads_a2_2x.png: direct branch from JB-6B to CS-6B
+CS-6B,MOV-SW-118B,dashed_control,high,raw_22_close_loads_a2_2x.png: direct branch from CS-6B to MOV-SW-118B
+480 VAC LOAD CENTER C,CB-48C1,bus_tap,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: black-dot tap from 480 VAC LOAD CENTER C to CB-48C1
+CB-48C1,DS-48C1,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: vertical feeder CB-48C1 to DS-48C1
+DS-48C1,MCC-1C,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: vertical feeder DS-48C1 to MCC-1C
+MCC-1C,RELAY-K1C,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: direct branch from MCC-1C to RELAY-K1C
+RELAY-K1C,PMP-RHR-101C,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: direct branch from RELAY-K1C to PMP-RHR-101C
+480 VAC LOAD CENTER C,CB-48C2,bus_tap,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: black-dot tap from 480 VAC LOAD CENTER C to CB-48C2
+CB-48C2,DS-48C2,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: vertical feeder CB-48C2 to DS-48C2
+DS-48C2,MCC-2C,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: vertical feeder DS-48C2 to MCC-2C
+MCC-2C,CS-2C,dashed_control,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: direct branch from MCC-2C to CS-2C
+CS-2C,MOV-CCW-112C,dashed_control,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: direct branch from CS-2C to MOV-CCW-112C
+480 VAC LOAD CENTER C,CB-48C3,bus_tap,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: black-dot tap from 480 VAC LOAD CENTER C to CB-48C3
+CB-48C3,DS-48C3,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: vertical feeder CB-48C3 to DS-48C3
+DS-48C3,MCC-3C,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: vertical feeder DS-48C3 to MCC-3C
+MCC-3C,RELAY-K3C,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: direct branch from MCC-3C to RELAY-K3C
+RELAY-K3C,FAN-RB-104C,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: direct branch from RELAY-K3C to FAN-RB-104C
+480 VAC LOAD CENTER C,CB-48C4,bus_tap,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: black-dot tap from 480 VAC LOAD CENTER C to CB-48C4
+CB-48C4,DS-48C4,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: vertical feeder CB-48C4 to DS-48C4
+DS-48C4,JB-4C,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: vertical feeder DS-48C4 to JB-4C
+JB-4C,RELAY-K4C,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: direct branch from JB-4C to RELAY-K4C
+RELAY-K4C,PMP-AFW-205C,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: direct branch from RELAY-K4C to PMP-AFW-205C
+480 VAC LOAD CENTER C,CB-48C5,bus_tap,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: black-dot tap from 480 VAC LOAD CENTER C to CB-48C5
+CB-48C5,DS-48C5,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: vertical feeder CB-48C5 to DS-48C5
+DS-48C5,MCC-5C,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: vertical feeder DS-48C5 to MCC-5C
+MCC-5C,RELAY-K5C,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: direct branch from MCC-5C to RELAY-K5C
+RELAY-K5C,PMP-CCP-207C,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: direct branch from RELAY-K5C to PMP-CCP-207C
+480 VAC LOAD CENTER C,CB-48C6,bus_tap,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: black-dot tap from 480 VAC LOAD CENTER C to CB-48C6
+CB-48C6,DS-48C6,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: vertical feeder CB-48C6 to DS-48C6
+DS-48C6,JB-6C,solid_ac,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: vertical feeder DS-48C6 to JB-6C
+JB-6C,CS-6C,dashed_control,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: direct branch from JB-6C to CS-6C
+CS-6C,MOV-FCV-022C,dashed_control,high,raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge: direct branch from CS-6C to MOV-FCV-022C
+480 VAC LOAD CENTER D,CB-48D1,bus_tap,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: black-dot tap from 480 VAC LOAD CENTER D to CB-48D1
+CB-48D1,DS-48D1,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: vertical feeder CB-48D1 to DS-48D1
+DS-48D1,MCC-1D,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: vertical feeder DS-48D1 to MCC-1D
+MCC-1D,RELAY-K1D,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: direct branch from MCC-1D to RELAY-K1D
+RELAY-K1D,PMP-SI-102D,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: direct branch from RELAY-K1D to PMP-SI-102D
+480 VAC LOAD CENTER D,CB-48D2,bus_tap,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: black-dot tap from 480 VAC LOAD CENTER D to CB-48D2
+CB-48D2,DS-48D2,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: vertical feeder CB-48D2 to DS-48D2
+DS-48D2,MCC-2D,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: vertical feeder DS-48D2 to MCC-2D
+MCC-2D,CS-2D,dashed_control,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: direct branch from MCC-2D to CS-2D
+CS-2D,MOV-CS-116D,dashed_control,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: direct branch from CS-2D to MOV-CS-116D
+480 VAC LOAD CENTER D,CB-48D3,bus_tap,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: black-dot tap from 480 VAC LOAD CENTER D to CB-48D3
+CB-48D3,DS-48D3,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: vertical feeder CB-48D3 to DS-48D3
+DS-48D3,MCC-3D,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: vertical feeder DS-48D3 to MCC-3D
+MCC-3D,RELAY-K3D,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: direct branch from MCC-3D to RELAY-K3D
+RELAY-K3D,FAN-ESF-110D,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: direct branch from RELAY-K3D to FAN-ESF-110D
+480 VAC LOAD CENTER D,CB-48D4,bus_tap,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: black-dot tap from 480 VAC LOAD CENTER D to CB-48D4
+CB-48D4,DS-48D4,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: vertical feeder CB-48D4 to DS-48D4
+DS-48D4,JB-4D,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: vertical feeder DS-48D4 to JB-4D
+JB-4D,CS-4D,dashed_control,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: direct branch from JB-4D to CS-4D
+CS-4D,MOV-RWST-24D,dashed_control,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: direct branch from CS-4D to MOV-RWST-24D
+480 VAC LOAD CENTER D,CB-48D5,bus_tap,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: black-dot tap from 480 VAC LOAD CENTER D to CB-48D5
+CB-48D5,DS-48D5,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: vertical feeder CB-48D5 to DS-48D5
+DS-48D5,MCC-5D,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: vertical feeder DS-48D5 to MCC-5D
+MCC-5D,RELAY-K5D,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: direct branch from MCC-5D to RELAY-K5D
+RELAY-K5D,PMP-CHG-203D,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: direct branch from RELAY-K5D to PMP-CHG-203D
+480 VAC LOAD CENTER D,CB-48D6,bus_tap,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: black-dot tap from 480 VAC LOAD CENTER D to CB-48D6
+CB-48D6,DS-48D6,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: vertical feeder CB-48D6 to DS-48D6
+DS-48D6,JB-6D,solid_ac,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: vertical feeder DS-48D6 to JB-6D
+JB-6D,CS-6D,dashed_control,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: direct branch from JB-6D to CS-6D
+CS-6D,MOV-SW-118D,dashed_control,high,raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge: direct branch from CS-6D to MOV-SW-118D
+480 VAC LOAD CENTER A,RECT-125A,bus_tap,high,raw_21: vertical solid 480 V tap from Load Center A bus to RECT-125A AC side
+BAT-125A,CHGR-125A,other,high,raw_21: dashed DC/source group line from BAT-125A to CHGR-125A
+CHGR-125A,RECT-125A,other,high,raw_21: dashed DC/source group line from CHGR-125A to RECT-125A
+RECT-125A,125 VDC CONTROL BUS A,bus_tap,high,raw_10/raw_21: vertical rectifier output drops to black-dot tap on 125 VDC Control Bus A
+125 VDC CONTROL BUS A,INV-UPS-A,bus_tap,high,raw_10: vertical tap from Bus A to INV-UPS-A
+480 VAC LOAD CENTER C,RECT-125B,bus_tap,high,raw_23: vertical solid 480 V tap from Load Center C bus to RECT-125B AC side
+BAT-125B,CHGR-125B,other,high,raw_23: dashed DC/source group line from BAT-125B to CHGR-125B
+CHGR-125B,RECT-125B,other,high,raw_23: dashed DC/source group line from CHGR-125B to RECT-125B
+RECT-125B,125 VDC CONTROL BUS B,bus_tap,high,raw_10/raw_23: vertical rectifier output drops to black-dot tap on 125 VDC Control Bus B
+125 VDC CONTROL BUS B,INV-UPS-B,bus_tap,high,raw_10: vertical tap from Bus B to INV-UPS-B
+125 VDC CONTROL BUS A,CP-RPS-A,bus_tap,high,raw_25_close_dc_a_left_2x.png: dashed vertical tap from 125 VDC CONTROL BUS A to CP-RPS-A
+CP-RPS-A,TB-RPS-A,dashed_control,high,raw_25_close_dc_a_left_2x.png: CP-to-terminal-block dashed vertical segment
+TB-RPS-A,PROT-UV-A,dashed_control,high,raw_25_close_dc_a_left_2x.png: diagonal dashed segment from TB-RPS-A to PROT-UV-A
+PROT-UV-A,RELAY-K101,dashed_control,high,raw_25_close_dc_a_left_2x.png: dashed control leg from PROT-UV-A to RELAY-K101
+RELAY-K101,PT-410A,dot_dash_instrument,high,raw_25_close_dc_a_left_2x.png: dot-dash/instrument leg from RELAY-K101 to PT-410A
+RELAY-K101,LT-512A,dot_dash_instrument,high,raw_25_close_dc_a_left_2x.png: dot-dash/instrument leg from RELAY-K101 to LT-512A
+CP-RPS-A,RELAY-K102,dashed_control,high,raw_25_close_dc_a_left_2x.png: right-hand dashed control leg from CP-RPS-A to RELAY-K102
+RELAY-K102,TT-303A,dot_dash_instrument,high,raw_25_close_dc_a_left_2x.png: dot-dash/instrument vertical leg from RELAY-K102 to TT-303A
+RELAY-K102,GND-CTRL-A,other,medium,raw_25_close_dc_a_left_2x.png: slanted conductor from RELAY-K102 to ground symbol GND-CTRL-A
+125 VDC CONTROL BUS A,CP-RPS-B,bus_tap,high,raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png: dashed vertical tap from 125 VDC CONTROL BUS A to CP-RPS-B
+CP-RPS-B,TB-RPS-B,dashed_control,high,raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png: CP-to-terminal-block dashed vertical segment
+TB-RPS-B,PROT-UV-B,dashed_control,high,raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png: diagonal dashed segment from TB-RPS-B to PROT-UV-B
+PROT-UV-B,RELAY-K103,dashed_control,high,raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png: dashed control leg from PROT-UV-B to RELAY-K103
+RELAY-K103,PT-410B,dot_dash_instrument,high,raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png: dot-dash/instrument leg from RELAY-K103 to PT-410B
+RELAY-K103,LT-512B,dot_dash_instrument,high,raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png: dot-dash/instrument leg from RELAY-K103 to LT-512B
+CP-RPS-B,RELAY-K104,dashed_control,high,raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png: right-hand dashed control leg from CP-RPS-B to RELAY-K104
+RELAY-K104,TT-303B,dot_dash_instrument,high,raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png: dot-dash/instrument vertical leg from RELAY-K104 to TT-303B
+RELAY-K104,GND-CTRL-B,other,medium,raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png: slanted conductor from RELAY-K104 to ground symbol GND-CTRL-B
+125 VDC CONTROL BUS B,CP-ESFAS-A,bus_tap,high,raw_27_close_dc_b_left_2x.png: dashed vertical tap from 125 VDC CONTROL BUS B to CP-ESFAS-A
+CP-ESFAS-A,JB-ESF-A,dashed_control,high,raw_27_close_dc_b_left_2x.png: CP-to-JB dashed vertical segment
+JB-ESF-A,PROT-LOP-A,dashed_control,high,raw_27_close_dc_b_left_2x.png: diagonal dashed segment from JB-ESF-A to PROT-LOP-A
+PROT-LOP-A,RELAY-K105,dashed_control,high,raw_27_close_dc_b_left_2x.png: dashed control leg from PROT-LOP-A to RELAY-K105
+RELAY-K105,FT-611A,dot_dash_instrument,high,raw_27_close_dc_b_left_2x.png: dot-dash/instrument leg from RELAY-K105 to FT-611A
+CP-ESFAS-A,RELAY-K106,dashed_control,high,raw_27_close_dc_b_left_2x.png: right-hand dashed control leg from CP-ESFAS-A to RELAY-K106
+RELAY-K106,XA-730A,dot_dash_instrument,high,raw_27_close_dc_b_left_2x.png: dot-dash/instrument vertical leg from RELAY-K106 to XA-730A
+125 VDC CONTROL BUS B,CP-ESFAS-B,bus_tap,high,raw_28_close_dc_b_right_2x.png: dashed vertical tap from 125 VDC CONTROL BUS B to CP-ESFAS-B
+CP-ESFAS-B,JB-ESF-B,dashed_control,high,raw_28_close_dc_b_right_2x.png: CP-to-JB dashed vertical segment
+JB-ESF-B,PROT-LOP-B,dashed_control,high,raw_28_close_dc_b_right_2x.png: diagonal dashed segment from JB-ESF-B to PROT-LOP-B
+PROT-LOP-B,RELAY-K107,dashed_control,high,raw_28_close_dc_b_right_2x.png: dashed control leg from PROT-LOP-B to RELAY-K107
+RELAY-K107,FT-611B,dot_dash_instrument,high,raw_28_close_dc_b_right_2x.png: dot-dash/instrument leg from RELAY-K107 to FT-611B
+CP-ESFAS-B,RELAY-K108,dashed_control,high,raw_28_close_dc_b_right_2x.png: right-hand dashed control leg from CP-ESFAS-B to RELAY-K108
+RELAY-K108,XA-730B,dot_dash_instrument,high,raw_28_close_dc_b_right_2x.png: dot-dash/instrument vertical leg from RELAY-K108 to XA-730B
+RELAY-K106,RELAY-K108,dashed_control,medium,raw_27/raw_28: long dashed path labeled A/B ESF INTERLOCK between alarm relays

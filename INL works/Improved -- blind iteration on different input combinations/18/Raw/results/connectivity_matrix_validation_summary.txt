@@ -1,0 +1,39 @@
+Connectivity matrix validation summary - Document 18
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\18\synthetic_nuclear_connectivity_matrix_readable.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_matrix.csv): TP=188, FP=12, FN=12, Precision=0.940000, Recall=0.940000, F1=0.940000
+- Jennifer -- Round 2 (round_02_jennifer_matrix.csv): TP=197, FP=3, FN=3, Precision=0.985000, Recall=0.985000, F1=0.985000
+- Diego -- Round 3 (round_03_diego_saturation_matrix.csv): TP=197, FP=3, FN=3, Precision=0.985000, Recall=0.985000, F1=0.985000
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=197, FP=3, FN=3, Precision=0.985000, Recall=0.985000, F1=0.985000
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=197, FP=3, FN=3, Precision=0.985000, Recall=0.985000, F1=0.985000
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- CP-C06 -- PNL-1C-C7
+- JB-RPS-A -- PLC-RPS-A
+- JB-RPS-B -- PLC-RPS-B
+
+False-negative edge examples:
+- CP-C06 -- PNL-IC-C7
+- JB-RPS-A -- RELAY-K101
+- JB-RPS-B -- RELAY-K201
+
+Extra/non-GT nodes causing performance drops:
+- PNL-1C-C7: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 1 extra/intermediate nodes were omitted from the extraction (PNL-1C-C7), final metrics would be TP=197, FP=2, FN=3, Precision=0.989950, Recall=0.985000, F1=0.987469.
+- If all 1 non-GT nodes were omitted, metrics would be TP=197, FP=2, FN=3, Precision=0.989950, Recall=0.985000, F1=0.987469.
+
+Missing GT node examples:
+- PNL-IC-C7: 1 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted PNL-1C-C7 vs GT PNL-IC-C7 (similarity 0.89)

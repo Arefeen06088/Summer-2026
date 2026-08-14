@@ -1,0 +1,13 @@
+edge_or_node,status,reason
+DS-RCP-A--GND-RCP-A,excluded,Dashed side route is present but does not terminate directly enough at DS-RCP-A.
+DS-RCP-B--GND-RCP-B,excluded,Dashed side route is present but does not terminate directly enough at DS-RCP-B.
+STR-A1-2--BAT-31A,excluded,Dashed route passes nearby; no clear battery endpoint.
+STR-B1-2--BAT-31B,excluded,Dashed route passes nearby; no clear battery endpoint.
+MOV-CHG-121A--CHG-31A,excluded,Dashed trunk proximity only.
+MOV-CHG-121B--CHG-31B,excluded,Dashed trunk proximity only.
+MTR-SUMP-A--CB-INV-A,excluded,Dashed route endpoint is ambiguous.
+MTR-SUMP-B--CB-INV-B,excluded,Dashed route endpoint is ambiguous.
+MOV-SI-902A--RPS-PNL-A,excluded,Dashed route passes nearby but direct endpoint is not clear.
+MOV-SI-902B--RPS-PNL-B,excluded,Dashed route passes nearby but direct endpoint is not clear.
+RPS-PNL-A--BUS-120N-A,removed_after_final_review,"RPS-PNL-A is fed from BUS-INV-A and dashed to TB-UPS-A; 120N drop is adjacent, not a clear RPS connection."
+RPS-PNL-B--BUS-120N-B,removed_after_final_review,"RPS-PNL-B is fed from BUS-INV-B and dashed to TB-UPS-B; 120N drop is adjacent, not a clear RPS connection."

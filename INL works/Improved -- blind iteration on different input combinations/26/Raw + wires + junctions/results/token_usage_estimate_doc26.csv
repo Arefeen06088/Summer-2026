@@ -1,0 +1,7 @@
+document,iteration,round,agent,model_call_made,input_tokens_low,input_tokens_expected,input_tokens_high,cached_input_tokens_expected,image_file_input_tokens_low,image_file_input_tokens_expected,image_file_input_tokens_high,output_tokens_low,output_tokens_expected,output_tokens_high,reasoning_tokens_low,reasoning_tokens_expected,reasoning_tokens_high,total_tokens_low,total_tokens_expected,total_tokens_high,usage_object_available,notes
+26,1,Setup and visual inspection,Main Codex agent,yes,2809,3746,5432,0,340,29070,43435,975,1500,2250,2250,5000,9000,6374,39316,60117,no,Main inspected resources/crops and planned the Diego/Jennifer workflow.
+26,1,Diego round 1,Diego,yes,3934,5246,7607,0,1105,78795,117640,3122,4804,7206,3600,8000,14400,11761,96845,146853,no,High-recall visual extraction; multi-agent usage object not exposed.
+26,1,Jennifer round 1,Jennifer,yes,7728,10304,14941,0,1105,78795,117640,3054,4699,7049,3150,7000,12600,15037,100798,152230,no,Precision review of Diego proposal; usage object not exposed.
+26,1,Diego round 2,Diego,yes,10005,13340,19343,0,425,35105,52445,500,266,399,1125,2500,4500,12055,51211,76687,no,Agreement/saturation check after Jennifer corrections.
+26,1,Jennifer round 2 final,Jennifer,yes,5930,7907,11466,0,425,35105,52445,500,31,47,1125,2500,4500,7980,45543,68458,no,Final precision confirmation.
+26,1,Generation and validation,Main Codex agent,yes,5763,7685,11144,0,0,0,0,500,80,120,1800,4000,7200,8063,11765,18464,no,"Local CSV/matrix generation, validation, and summary."

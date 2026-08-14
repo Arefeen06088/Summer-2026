@@ -1,0 +1,157 @@
+source,target,edge_type,evidence
+GEN-G01,GSU-T01,power,Solid upper source conductor.
+GSU-T01,SWYD-345,power,Solid upper source conductor.
+SWYD-345,CB-13A1,power,Solid feeder from switchyard/source line to 13.8 kV bus A.
+CB-13A1,BUS-13A,power,Solid feeder from switchyard/source line to 13.8 kV bus A.
+SWYD-345,CB-13B1,power,Solid feeder from switchyard/source line to 13.8 kV bus B.
+CB-13B1,BUS-13B,power,Solid feeder from switchyard/source line to 13.8 kV bus B.
+BUS-13A,CB-13T,power,Solid 13.8 kV bus tie.
+CB-13T,BUS-13B,power,Solid 13.8 kV bus tie.
+BUS-13A,AUX-XFMR-1A,power,Solid auxiliary transformer feed to 4160 V bus A.
+AUX-XFMR-1A,CB-4A-IN,power,Solid auxiliary transformer feed to 4160 V bus A.
+CB-4A-IN,BUS-4160-A,power,Solid auxiliary transformer feed to 4160 V bus A.
+BUS-13A,AUX-XFMR-1B,power,Solid auxiliary transformer feed to 4160 V bus B.
+AUX-XFMR-1B,CB-4B-IN,power,Solid auxiliary transformer feed to 4160 V bus B.
+CB-4B-IN,BUS-4160-B,power,Solid auxiliary transformer feed to 4160 V bus B.
+BUS-13B,SAT-XFMR-1C,power,Solid startup transformer feed to 4160 V bus C.
+SAT-XFMR-1C,CB-4C-IN,power,Solid startup transformer feed to 4160 V bus C.
+CB-4C-IN,BUS-4160-C,power,Solid startup transformer feed to 4160 V bus C.
+BUS-13B,SAT-XFMR-1D,power,Solid startup transformer feed to 4160 V bus D.
+SAT-XFMR-1D,CB-4D-IN,power,Solid startup transformer feed to 4160 V bus D.
+CB-4D-IN,BUS-4160-D,power,Solid startup transformer feed to 4160 V bus D.
+DG-1A,CB-DG-A,power,Solid diesel generator feeder.
+CB-DG-A,BUS-4160-A,power,Solid diesel generator feeder.
+DG-1B,CB-DG-B,power,Solid diesel generator feeder.
+CB-DG-B,BUS-4160-B,power,Solid diesel generator feeder.
+DG-1C,CB-DG-C,power,Solid diesel generator feeder.
+CB-DG-C,BUS-4160-C,power,Solid diesel generator feeder.
+DG-1D,CB-DG-D,power,Solid diesel generator feeder.
+CB-DG-D,BUS-4160-D,power,Solid diesel generator feeder.
+BUS-4160-A,CB-4AB-TIE,power,Solid 4160 V A/B tie.
+CB-4AB-TIE,BUS-4160-B,power,Solid 4160 V A/B tie.
+BUS-4160-C,CB-4CD-TIE,power,Solid 4160 V C/D tie.
+CB-4CD-TIE,BUS-4160-D,power,Solid 4160 V C/D tie.
+BUS-4160-A,CB-LC-A,power,Solid load-center transformer chain.
+CB-LC-A,TR-LC-A,power,Solid load-center transformer chain.
+TR-LC-A,BUS-480-A,power,Solid load-center transformer chain.
+BUS-4160-B,CB-LC-B,power,Solid load-center transformer chain.
+CB-LC-B,TR-LC-B,power,Solid load-center transformer chain.
+TR-LC-B,BUS-480-B,power,Solid load-center transformer chain.
+BUS-4160-C,CB-LC-C,power,Solid load-center transformer chain.
+CB-LC-C,TR-LC-C,power,Solid load-center transformer chain.
+TR-LC-C,BUS-480-C,power,Solid load-center transformer chain.
+BUS-4160-D,CB-LC-D,power,Solid load-center transformer chain.
+CB-LC-D,TR-LC-D,power,Solid load-center transformer chain.
+TR-LC-D,BUS-480-D,power,Solid load-center transformer chain.
+BUS-480-A,CB-MCC-AA,power,Solid 480 V load-center feeder to left MCC.
+CB-MCC-AA,MCC-AA,power,Solid 480 V load-center feeder to left MCC.
+BUS-480-A,CB-MCC-AB,power,Solid 480 V load-center feeder to right MCC.
+CB-MCC-AB,MCC-AB,power,Solid 480 V load-center feeder to right MCC.
+BUS-480-A,XFMR-120-A,power,Solid 120 V panel transformer tap.
+XFMR-120-A,PNL-120-A,power,Solid 120 V panel transformer tap.
+BUS-480-A,GND-A,ground,Solid ground branch from 480 V bus.
+MCC-AA,CB-RHR-A,power,Solid MCC branch feeder.
+CB-RHR-A,PUMP-RHR-A,power,Solid MCC branch feeder.
+MCC-AA,CB-SI-A,power,Solid MCC branch feeder.
+CB-SI-A,PUMP-SI-A,power,Solid MCC branch feeder.
+MCC-AA,CB-CCW-A,power,Solid MCC branch feeder.
+CB-CCW-A,PUMP-CCW-A,power,Solid MCC branch feeder.
+MCC-AA,CB-FAN-A,power,Solid MCC branch feeder.
+CB-FAN-A,FAN-CR-A,power,Solid MCC branch feeder.
+MCC-AB,CB-CH-A,power,Solid MCC branch feeder.
+CB-CH-A,CHILLER-A,power,Solid MCC branch feeder.
+MCC-AB,CB-VLV1-A,power,Solid MCC branch feeder.
+CB-VLV1-A,MOV-HV1-A,power,Solid MCC branch feeder.
+MCC-AB,CB-VLV2-A,power,Solid MCC branch feeder.
+CB-VLV2-A,MOV-HV2-A,power,Solid MCC branch feeder.
+MCC-AB,CB-SPARE-A,power,Solid MCC branch feeder.
+CB-SPARE-A,SPARE-LOAD-A,power,Solid MCC branch feeder.
+BUS-480-B,CB-MCC-BA,power,Solid 480 V load-center feeder to left MCC.
+CB-MCC-BA,MCC-BA,power,Solid 480 V load-center feeder to left MCC.
+BUS-480-B,CB-MCC-BB,power,Solid 480 V load-center feeder to right MCC.
+CB-MCC-BB,MCC-BB,power,Solid 480 V load-center feeder to right MCC.
+BUS-480-B,XFMR-120-B,power,Solid 120 V panel transformer tap.
+XFMR-120-B,PNL-120-B,power,Solid 120 V panel transformer tap.
+BUS-480-B,GND-B,ground,Solid ground branch from 480 V bus.
+MCC-BA,CB-RHR-B,power,Solid MCC branch feeder.
+CB-RHR-B,PUMP-RHR-B,power,Solid MCC branch feeder.
+MCC-BA,CB-SI-B,power,Solid MCC branch feeder.
+CB-SI-B,PUMP-SI-B,power,Solid MCC branch feeder.
+MCC-BA,CB-CCW-B,power,Solid MCC branch feeder.
+CB-CCW-B,PUMP-CCW-B,power,Solid MCC branch feeder.
+MCC-BA,CB-FAN-B,power,Solid MCC branch feeder.
+CB-FAN-B,FAN-CR-B,power,Solid MCC branch feeder.
+MCC-BB,CB-CH-B,power,Solid MCC branch feeder.
+CB-CH-B,CHILLER-B,power,Solid MCC branch feeder.
+MCC-BB,CB-VLV1-B,power,Solid MCC branch feeder.
+CB-VLV1-B,MOV-HV1-B,power,Solid MCC branch feeder.
+MCC-BB,CB-VLV2-B,power,Solid MCC branch feeder.
+CB-VLV2-B,MOV-HV2-B,power,Solid MCC branch feeder.
+MCC-BB,CB-SPARE-B,power,Solid MCC branch feeder.
+CB-SPARE-B,SPARE-LOAD-B,power,Solid MCC branch feeder.
+BUS-480-C,CB-MCC-CA,power,Solid 480 V load-center feeder to left MCC.
+CB-MCC-CA,MCC-CA,power,Solid 480 V load-center feeder to left MCC.
+BUS-480-C,CB-MCC-CB,power,Solid 480 V load-center feeder to right MCC.
+CB-MCC-CB,MCC-CB,power,Solid 480 V load-center feeder to right MCC.
+BUS-480-C,XFMR-120-C,power,Solid 120 V panel transformer tap.
+XFMR-120-C,PNL-120-C,power,Solid 120 V panel transformer tap.
+BUS-480-C,GND-C,ground,Solid ground branch from 480 V bus.
+MCC-CA,CB-RHR-C,power,Solid MCC branch feeder.
+CB-RHR-C,PUMP-RHR-C,power,Solid MCC branch feeder.
+MCC-CA,CB-SI-C,power,Solid MCC branch feeder.
+CB-SI-C,PUMP-SI-C,power,Solid MCC branch feeder.
+MCC-CA,CB-CCW-C,power,Solid MCC branch feeder.
+CB-CCW-C,PUMP-CCW-C,power,Solid MCC branch feeder.
+MCC-CA,CB-FAN-C,power,Solid MCC branch feeder.
+CB-FAN-C,FAN-CR-C,power,Solid MCC branch feeder.
+MCC-CB,CB-CH-C,power,Solid MCC branch feeder.
+CB-CH-C,CHILLER-C,power,Solid MCC branch feeder.
+MCC-CB,CB-VLV1-C,power,Solid MCC branch feeder.
+CB-VLV1-C,MOV-HV1-C,power,Solid MCC branch feeder.
+MCC-CB,CB-VLV2-C,power,Solid MCC branch feeder.
+CB-VLV2-C,MOV-HV2-C,power,Solid MCC branch feeder.
+MCC-CB,CB-SPARE-C,power,Solid MCC branch feeder.
+CB-SPARE-C,SPARE-LOAD-C,power,Solid MCC branch feeder.
+BUS-480-D,CB-MCC-DA,power,Solid 480 V load-center feeder to left MCC.
+CB-MCC-DA,MCC-DA,power,Solid 480 V load-center feeder to left MCC.
+BUS-480-D,CB-MCC-DB,power,Solid 480 V load-center feeder to right MCC.
+CB-MCC-DB,MCC-DB,power,Solid 480 V load-center feeder to right MCC.
+BUS-480-D,XFMR-120-D,power,Solid 120 V panel transformer tap.
+XFMR-120-D,PNL-120-D,power,Solid 120 V panel transformer tap.
+BUS-480-D,GND-D,ground,Solid ground branch from 480 V bus.
+MCC-DA,CB-RHR-D,power,Solid MCC branch feeder.
+CB-RHR-D,PUMP-RHR-D,power,Solid MCC branch feeder.
+MCC-DA,CB-SI-D,power,Solid MCC branch feeder.
+CB-SI-D,PUMP-SI-D,power,Solid MCC branch feeder.
+MCC-DA,CB-CCW-D,power,Solid MCC branch feeder.
+CB-CCW-D,PUMP-CCW-D,power,Solid MCC branch feeder.
+MCC-DA,CB-FAN-D,power,Solid MCC branch feeder.
+CB-FAN-D,FAN-CR-D,power,Solid MCC branch feeder.
+MCC-DB,CB-CH-D,power,Solid MCC branch feeder.
+CB-CH-D,CHILLER-D,power,Solid MCC branch feeder.
+MCC-DB,CB-VLV1-D,power,Solid MCC branch feeder.
+CB-VLV1-D,MOV-HV1-D,power,Solid MCC branch feeder.
+MCC-DB,CB-VLV2-D,power,Solid MCC branch feeder.
+CB-VLV2-D,MOV-HV2-D,power,Solid MCC branch feeder.
+MCC-DB,CB-SPARE-D,power,Solid MCC branch feeder.
+CB-SPARE-D,SPARE-LOAD-D,power,Solid MCC branch feeder.
+BUS-480-A,CB-DC-A1,dc,Solid feeder to 125 VDC charger A and bus.
+CB-DC-A1,CHGR-125A,dc,Solid feeder to 125 VDC charger A and bus.
+CHGR-125A,BUS-125A,dc,Solid feeder to 125 VDC charger A and bus.
+BUS-480-B,CB-DC-B1,dc,Solid feeder to 125 VDC charger B and bus.
+CB-DC-B1,CHGR-125B,dc,Solid feeder to 125 VDC charger B and bus.
+CHGR-125B,BUS-125B,dc,Solid feeder to 125 VDC charger B and bus.
+BUS-125A,BAT-125A,dc,Solid battery connection to DC bus A.
+BUS-125B,BAT-125B,dc,Solid battery connection to DC bus B.
+BUS-125A,DC-MCC-A,dc,Solid DC MCC A feeder.
+BUS-125B,DC-MCC-B,dc,Solid DC MCC B feeder.
+BUS-125A,FUSE-FD-A,dc/ups,Solid DC-to-UPS A chain.
+FUSE-FD-A,INV-UPS-A,dc/ups,Solid DC-to-UPS A chain.
+INV-UPS-A,BUS-UPS-A,dc/ups,Solid DC-to-UPS A chain.
+BUS-125B,FUSE-FD-B,dc/ups,Solid DC-to-UPS B chain.
+FUSE-FD-B,INV-UPS-B,dc/ups,Solid DC-to-UPS B chain.
+INV-UPS-B,BUS-UPS-B,dc/ups,Solid DC-to-UPS B chain.
+BUS-125A,INST-RACK-A,dc,Solid DC bus A instrument rack feed.
+BUS-125B,INST-RACK-B,dc,Solid DC bus B instrument rack feed.
+BUS-125A,GRD-DC-A,ground,Solid DC bus A ground branch.
+BUS-125B,GRD-DC-B,ground,Solid DC bus B ground branch.

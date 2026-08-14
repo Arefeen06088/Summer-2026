@@ -1,0 +1,198 @@
+source,target,kind,confidence,evidence
+GRID-SWYD-1,CB-GRID-A,power,high,solid source line from GRID-SWYD 1 into CB-GRID-A
+CB-GRID-A,BB-SWYD-230,power,high,CB-GRID-A terminates on the heavy BB-SWYD-230 bus via junction dot
+GRID-SWYD-2,CB-GRID-B,power,high,solid source line from GRID-SWYD 2 into CB-GRID-B
+CB-GRID-B,BB-SWYD-230,power,high,CB-GRID-B joins BB-SWYD-230 at the same heavy bus riser/junction
+BB-SWYD-230,TR-SAT-1A,power,high,vertical solid branch with junction dot from BB-SWYD-230 to TR-SAT-1A
+TR-SAT-1A,CB-SAT-A,power,high,solid vertical segment through transformer TR-SAT-1A to breaker CB-SAT-A
+CB-SAT-A,BUS-4160A,power,high,solid vertical feeder from CB-SAT-A lands on BUS-4160A
+BB-SWYD-230,TR-SAT-1B,power,high,vertical solid branch with junction dot from BB-SWYD-230 to TR-SAT-1B
+TR-SAT-1B,CB-SAT-B,power,high,solid vertical segment through transformer TR-SAT-1B to breaker CB-SAT-B
+CB-SAT-B,BUS-4160B,power,high,solid vertical feeder from CB-SAT-B lands on BUS-4160B
+BB-SWYD-230,CB-GEN-ISO,power,high,top heavy source line passes through CB-GEN-ISO toward GEN-MAIN-1
+CB-GEN-ISO,GEN-MAIN-1,power,high,solid line from CB-GEN-ISO into GEN-MAIN-1 source circle
+GEN-MAIN-1,TR-UAT-1A,power,high,vertical solid branch from GEN-MAIN-1 down to TR-UAT-1A
+TR-UAT-1A,CB-UAT-A,power,high,solid vertical segment from TR-UAT-1A to CB-UAT-A
+GEN-MAIN-1,TR-UAT-1B,power,high,right-hand solid branch from GEN-MAIN-1 down to TR-UAT-1B
+TR-UAT-1B,CB-UAT-B,power,high,solid vertical segment from TR-UAT-1B to CB-UAT-B
+DG-1A,CB-DG-A,power,high,solid line from DG-1A source circle to CB-DG-A
+CB-DG-A,BUS-4160A,power,high,CB-DG-A vertical/riser connection lands on BUS-4160A
+DG-1B,CB-DG-B,power,high,solid line from DG-1B source circle to CB-DG-B
+CB-DG-B,BUS-4160B,power,high,CB-DG-B branch ties into the right end of BUS-4160B
+BUS-4160A,CB-4160-TIE,power,high,BUS-4160A connects through labeled tie breaker CB-4160 TIE
+CB-4160-TIE,BUS-4160B,power,high,tie breaker CB-4160 TIE continues into BUS-4160B
+BUS-4160A,GND-4160A,ground,high,ground symbol GND-4160A is drawn on a solid tap from BUS-4160A
+BUS-4160B,GND-4160B,ground,high,ground symbol GND-4160B is drawn on a solid tap from BUS-4160B
+BUS-4160A,PT-4160A,signal,high,dashed tap with junction dot from BUS-4160A down to PT-4160A
+PT-4160A,FU-PT-A,signal,high,dashed horizontal control/signal line from PT-4160A to FU-PT-A
+FU-PT-A,XFMR-CTRL-A,signal,high,dashed control/signal line continues from FU-PT-A to XFMR-CTRL-A
+XFMR-CTRL-A,TB-RPS-A,signal,high,dashed control/signal line continues from XFMR-CTRL-A to TB-RPS-A
+TB-RPS-A,SW-43A,signal,high,dashed control/signal line continues from TB-RPS-A to SW-43A
+BUS-4160A,TB-RPS-A,power,medium,solid vertical transformer feeder appears to pass through/terminate at TB-RPS-A from BUS-4160A
+TB-RPS-A,TR-480-A1,power,high,solid vertical feeder from TB-RPS-A continues down to TR-480-A1
+TR-480-A1,CB-480A-IN,power,high,solid vertical segment from TR-480-A1 to CB-480A-IN
+CB-480A-IN,BUS-480A,power,high,CB-480A-IN lands on BUS-480A
+BUS-4160A,TR-480-B1,power,high,solid vertical branch from BUS-4160A to TR-480-B1
+TR-480-B1,CB-480B-IN,power,high,solid vertical segment from TR-480-B1 to CB-480B-IN
+CB-480B-IN,BUS-480B,power,high,CB-480B-IN lands on BUS-480B
+BUS-4160B,TR-480-C1,power,high,solid vertical branch from BUS-4160B to TR-480-C1
+TR-480-C1,CB-480C-IN,power,high,solid vertical segment from TR-480-C1 to CB-480C-IN
+CB-480C-IN,BUS-480C,power,high,CB-480C-IN lands on BUS-480C
+BUS-4160B,PT-4160B,signal,high,dashed tap with junction dot from BUS-4160B down to PT-4160B
+PT-4160B,FU-PT-B,signal,high,dashed horizontal control/signal line from PT-4160B to FU-PT-B
+FU-PT-B,XFMR-CTRL-B,signal,high,dashed control/signal line continues from FU-PT-B to XFMR-CTRL-B
+XFMR-CTRL-B,TB-RPS-B,signal,high,dashed control/signal line continues from XFMR-CTRL-B to TB-RPS-B
+TB-RPS-B,SW-43B,signal,high,dashed control/signal line continues from TB-RPS-B to SW-43B
+BUS-4160B,TR-480-D1,power,high,solid vertical branch from BUS-4160B to TR-480-D1
+TR-480-D1,CB-480D-IN,power,high,solid vertical segment from TR-480-D1 to CB-480D-IN
+CB-480D-IN,BUS-480D,power,high,CB-480D-IN lands on BUS-480D
+BUS-480A,CB-A01,power,high,visible vertical tap with junction dot from BUS-480A to CB-A01 on feeder A01
+CB-A01,DS-A01,power,high,continuous vertical feeder A01 connects CB-A01 to DS-A01
+DS-A01,MS-A01,power,high,continuous vertical feeder A01 connects DS-A01 to MS-A01
+MS-A01,PUMP-CCW-A1,power,high,continuous vertical feeder A01 connects MS-A01 to PUMP-CCW-A1
+BUS-480A,CB-A02,power,high,visible vertical tap with junction dot from BUS-480A to CB-A02 on feeder A02
+CB-A02,DS-A02,power,high,continuous vertical feeder A02 connects CB-A02 to DS-A02
+DS-A02,MS-A02,power,high,continuous vertical feeder A02 connects DS-A02 to MS-A02
+MS-A02,PUMP-RHR-A1,power,high,continuous vertical feeder A02 connects MS-A02 to PUMP-RHR-A1
+BUS-480A,CB-A03,power,high,visible vertical tap with junction dot from BUS-480A to CB-A03 on feeder A03
+CB-A03,FS-A03,power,high,continuous vertical feeder A03 connects CB-A03 to FS-A03
+FS-A03,MS-A03,power,high,continuous vertical feeder A03 connects FS-A03 to MS-A03
+MS-A03,FAN-RB-A1,power,high,continuous vertical feeder A03 connects MS-A03 to FAN-RB-A1
+BUS-480A,CB-A04,power,high,visible vertical tap with junction dot from BUS-480A to CB-A04 on feeder A04
+CB-A04,DS-A04,power,high,continuous vertical feeder A04 connects CB-A04 to DS-A04
+DS-A04,RY-A04,power,high,continuous vertical feeder A04 connects DS-A04 to RY-A04
+RY-A04,MOV-SI-A11,power,high,continuous vertical feeder A04 connects RY-A04 to MOV-SI-A11
+BUS-480A,CB-A05,power,high,visible vertical tap with junction dot from BUS-480A to CB-A05 on feeder A05
+CB-A05,DS-A05,power,high,continuous vertical feeder A05 connects CB-A05 to DS-A05
+DS-A05,CP-A05,power,high,continuous vertical feeder A05 connects DS-A05 to CP-A05
+CP-A05,PNL-LTG-A1,power,high,continuous vertical feeder A05 connects CP-A05 to PNL-LTG-A1
+BUS-480A,CB-A06,power,high,visible vertical tap with junction dot from BUS-480A to CB-A06 on feeder A06
+CB-A06,DS-A06,power,high,continuous vertical feeder A06 connects CB-A06 to DS-A06
+DS-A06,MS-A06,power,high,continuous vertical feeder A06 connects DS-A06 to MS-A06
+MS-A06,PUMP-AFW-A1,power,high,continuous vertical feeder A06 connects MS-A06 to PUMP-AFW-A1
+BUS-480A,CB-A07,power,high,visible vertical tap with junction dot from BUS-480A to CB-A07 on feeder A07
+CB-A07,FS-A07,power,high,continuous vertical feeder A07 connects CB-A07 to FS-A07
+FS-A07,FU-A07,power,high,continuous vertical feeder A07 connects FS-A07 to FU-A07
+FU-A07,HTR-PZR-A1,power,high,continuous vertical feeder A07 connects FU-A07 to HTR-PZR-A1
+BUS-480A,CB-A08,power,high,visible vertical tap with junction dot from BUS-480A to CB-A08 on feeder A08
+CB-A08,DS-A08,power,high,continuous vertical feeder A08 connects CB-A08 to DS-A08
+DS-A08,TB-A08,power,high,continuous vertical feeder A08 connects DS-A08 to TB-A08
+TB-A08,SPARE-A8,power,high,continuous vertical feeder A08 connects TB-A08 to SPARE-A8
+BUS-480B,CB-B01,power,high,visible vertical tap with junction dot from BUS-480B to CB-B01 on feeder B01
+CB-B01,DS-B01,power,high,continuous vertical feeder B01 connects CB-B01 to DS-B01
+DS-B01,MS-B01,power,high,continuous vertical feeder B01 connects DS-B01 to MS-B01
+MS-B01,PUMP-CCW-B1,power,high,continuous vertical feeder B01 connects MS-B01 to PUMP-CCW-B1
+BUS-480B,CB-B02,power,high,visible vertical tap with junction dot from BUS-480B to CB-B02 on feeder B02
+CB-B02,DS-B02,power,high,continuous vertical feeder B02 connects CB-B02 to DS-B02
+DS-B02,MS-B02,power,high,continuous vertical feeder B02 connects DS-B02 to MS-B02
+MS-B02,PUMP-RHR-B1,power,high,continuous vertical feeder B02 connects MS-B02 to PUMP-RHR-B1
+BUS-480B,CB-B03,power,high,visible vertical tap with junction dot from BUS-480B to CB-B03 on feeder B03
+CB-B03,FS-B03,power,high,continuous vertical feeder B03 connects CB-B03 to FS-B03
+FS-B03,MS-B03,power,high,continuous vertical feeder B03 connects FS-B03 to MS-B03
+MS-B03,FAN-FUEL-B1,power,high,continuous vertical feeder B03 connects MS-B03 to FAN-FUEL-B1
+BUS-480B,CB-B04,power,high,visible vertical tap with junction dot from BUS-480B to CB-B04 on feeder B04
+CB-B04,DS-B04,power,high,continuous vertical feeder B04 connects CB-B04 to DS-B04
+DS-B04,RY-B04,power,high,continuous vertical feeder B04 connects DS-B04 to RY-B04
+RY-B04,MOV-CCW-B21,power,high,continuous vertical feeder B04 connects RY-B04 to MOV-CCW-B21
+BUS-480B,CB-B05,power,high,visible vertical tap with junction dot from BUS-480B to CB-B05 on feeder B05
+CB-B05,DS-B05,power,high,continuous vertical feeder B05 connects CB-B05 to DS-B05
+DS-B05,CP-B05,power,high,continuous vertical feeder B05 connects DS-B05 to CP-B05
+CP-B05,MCC-AUX-B6,power,high,continuous vertical feeder B05 connects CP-B05 to MCC-AUX-B6
+BUS-480B,CB-B06,power,high,visible vertical tap with junction dot from BUS-480B to CB-B06 on feeder B06
+CB-B06,DS-B06,power,high,continuous vertical feeder B06 connects CB-B06 to DS-B06
+DS-B06,MS-B06,power,high,continuous vertical feeder B06 connects DS-B06 to MS-B06
+MS-B06,AIR-CMP-B1,power,high,continuous vertical feeder B06 connects MS-B06 to AIR-CMP-B1
+BUS-480B,CB-B07,power,high,visible vertical tap with junction dot from BUS-480B to CB-B07 on feeder B07
+CB-B07,FS-B07,power,high,continuous vertical feeder B07 connects CB-B07 to FS-B07
+FS-B07,RY-B07,power,high,continuous vertical feeder B07 connects FS-B07 to RY-B07
+RY-B07,VLV-CHG-B1,power,high,continuous vertical feeder B07 connects RY-B07 to VLV-CHG-B1
+BUS-480C,CB-C01,power,high,visible vertical tap with junction dot from BUS-480C to CB-C01 on feeder C01
+CB-C01,DS-C01,power,high,continuous vertical feeder C01 connects CB-C01 to DS-C01
+DS-C01,MS-C01,power,high,continuous vertical feeder C01 connects DS-C01 to MS-C01
+MS-C01,PUMP-HPCI-C1,power,high,continuous vertical feeder C01 connects MS-C01 to PUMP-HPCI-C1
+BUS-480C,CB-C02,power,high,visible vertical tap with junction dot from BUS-480C to CB-C02 on feeder C02
+CB-C02,DS-C02,power,high,continuous vertical feeder C02 connects CB-C02 to DS-C02
+DS-C02,MS-C02,power,high,continuous vertical feeder C02 connects DS-C02 to MS-C02
+MS-C02,PUMP-RCW-C1,power,high,continuous vertical feeder C02 connects MS-C02 to PUMP-RCW-C1
+BUS-480C,CB-C03,power,high,visible vertical tap with junction dot from BUS-480C to CB-C03 on feeder C03
+CB-C03,FS-C03,power,high,continuous vertical feeder C03 connects CB-C03 to FS-C03
+FS-C03,MS-C03,power,high,continuous vertical feeder C03 connects FS-C03 to MS-C03
+MS-C03,FAN-RB-C1,power,high,continuous vertical feeder C03 connects MS-C03 to FAN-RB-C1
+BUS-480C,CB-C04,power,high,visible vertical tap with junction dot from BUS-480C to CB-C04 on feeder C04
+CB-C04,DS-C04,power,high,continuous vertical feeder C04 connects CB-C04 to DS-C04
+DS-C04,RY-C04,power,high,continuous vertical feeder C04 connects DS-C04 to RY-C04
+RY-C04,MOV-RHR-C11,power,high,continuous vertical feeder C04 connects RY-C04 to MOV-RHR-C11
+BUS-480C,CB-C05,power,high,visible vertical tap with junction dot from BUS-480C to CB-C05 on feeder C05
+CB-C05,DS-C05,power,high,continuous vertical feeder C05 connects CB-C05 to DS-C05
+DS-C05,MS-C05,power,high,continuous vertical feeder C05 connects DS-C05 to MS-C05
+MS-C05,PUMP-SEAL-C1,power,high,continuous vertical feeder C05 connects MS-C05 to PUMP-SEAL-C1
+BUS-480C,CB-C06,power,high,visible vertical tap with junction dot from BUS-480C to CB-C06 on feeder C06
+CB-C06,DS-C06,power,high,continuous vertical feeder C06 connects CB-C06 to DS-C06
+DS-C06,CP-C06,power,high,continuous vertical feeder C06 connects DS-C06 to CP-C06
+CP-C06,PNL-IC-C7,power,high,continuous vertical feeder C06 connects CP-C06 to PNL-IC-C7
+BUS-480C,CB-C07,power,high,visible vertical tap with junction dot from BUS-480C to CB-C07 on feeder C07
+CB-C07,FS-C07,power,high,continuous vertical feeder C07 connects CB-C07 to FS-C07
+FS-C07,MS-C07,power,high,continuous vertical feeder C07 connects FS-C07 to MS-C07
+MS-C07,SUMP-PMP-C1,power,high,continuous vertical feeder C07 connects MS-C07 to SUMP-PMP-C1
+BUS-480C,CB-C08,power,high,visible vertical tap with junction dot from BUS-480C to CB-C08 on feeder C08
+CB-C08,DS-C08,power,high,continuous vertical feeder C08 connects CB-C08 to DS-C08
+DS-C08,FU-C08,power,high,continuous vertical feeder C08 connects DS-C08 to FU-C08
+FU-C08,HTR-VENT-C2,power,high,continuous vertical feeder C08 connects FU-C08 to HTR-VENT-C2
+BUS-480D,CB-D01,power,high,visible vertical tap with junction dot from BUS-480D to CB-D01 on feeder D01
+CB-D01,DS-D01,power,high,continuous vertical feeder D01 connects CB-D01 to DS-D01
+DS-D01,MS-D01,power,high,continuous vertical feeder D01 connects DS-D01 to MS-D01
+MS-D01,PUMP-AFW-D1,power,high,continuous vertical feeder D01 connects MS-D01 to PUMP-AFW-D1
+BUS-480D,CB-D02,power,high,visible vertical tap with junction dot from BUS-480D to CB-D02 on feeder D02
+CB-D02,DS-D02,power,high,continuous vertical feeder D02 connects CB-D02 to DS-D02
+DS-D02,MS-D02,power,high,continuous vertical feeder D02 connects DS-D02 to MS-D02
+MS-D02,FAN-CR-D1,power,high,continuous vertical feeder D02 connects MS-D02 to FAN-CR-D1
+BUS-480D,CB-D03,power,high,visible vertical tap with junction dot from BUS-480D to CB-D03 on feeder D03
+CB-D03,FS-D03,power,high,continuous vertical feeder D03 connects CB-D03 to FS-D03
+FS-D03,RY-D03,power,high,continuous vertical feeder D03 connects FS-D03 to RY-D03
+RY-D03,MOV-SI-D21,power,high,continuous vertical feeder D03 connects RY-D03 to MOV-SI-D21
+BUS-480D,CB-D04,power,high,visible vertical tap with junction dot from BUS-480D to CB-D04 on feeder D04
+CB-D04,DS-D04,power,high,continuous vertical feeder D04 connects CB-D04 to DS-D04
+DS-D04,MS-D04,power,high,continuous vertical feeder D04 connects DS-D04 to MS-D04
+MS-D04,PUMP-LUBE-D1,power,high,continuous vertical feeder D04 connects MS-D04 to PUMP-LUBE-D1
+BUS-480D,CB-D05,power,high,visible vertical tap with junction dot from BUS-480D to CB-D05 on feeder D05
+CB-D05,DS-D05,power,high,continuous vertical feeder D05 connects CB-D05 to DS-D05
+DS-D05,CP-D05,power,high,continuous vertical feeder D05 connects DS-D05 to CP-D05
+CP-D05,PNL-ESS-D5,power,high,continuous vertical feeder D05 connects CP-D05 to PNL-ESS-D5
+BUS-480D,CB-D06,power,high,visible vertical tap with junction dot from BUS-480D to CB-D06 on feeder D06
+CB-D06,DS-D06,power,high,continuous vertical feeder D06 connects CB-D06 to DS-D06
+DS-D06,MS-D06,power,high,continuous vertical feeder D06 connects DS-D06 to MS-D06
+MS-D06,COMP-AIR-D1,power,high,continuous vertical feeder D06 connects MS-D06 to COMP-AIR-D1
+BUS-480D,CB-D07,power,high,visible vertical tap with junction dot from BUS-480D to CB-D07 on feeder D07
+CB-D07,FS-D07,power,high,continuous vertical feeder D07 connects CB-D07 to FS-D07
+FS-D07,TB-D07,power,high,continuous vertical feeder D07 connects FS-D07 to TB-D07
+TB-D07,SPARE-D7,power,high,continuous vertical feeder D07 connects TB-D07 to SPARE-D7
+BUS-480B,CHG-125A,power,high,heavy feeder from BUS-480B descends into Train A and turns into CHG-125A
+CHG-125A,REC-125A,dc_power,high,solid horizontal Train A charger/rectifier line from CHG-125A to REC-125A
+REC-125A,CB-DC-A,dc_power,high,solid horizontal Train A DC line from REC-125A to CB-DC-A
+CB-DC-A,BUS-125A,dc_power,high,solid vertical drop from CB-DC-A lands on BUS-125A
+BUS-125A,BAT-125A,dc_power,high,battery BAT-125A is connected by a vertical tap to BUS-125A
+BUS-125A,GND-DC-A,ground,high,ground symbol GND-DC-A is tapped from BUS-125A
+BUS-125A,INV-120A,dc_power,high,BUS-125A continues right through the inline disconnect mark into INV-120A
+INV-120A,UPS-120A,signal,medium,dashed line from INV-120A output to UPS-120A
+UPS-120A,BUS-120A,power,high,solid vertical connection from UPS-120A down to BUS-120A
+BUS-120A,RPS-PNL-A,power,high,RPS-PNL-A has a solid vertical tap to BUS-120A
+RPS-PNL-A,PLC-RPS-A,signal,high,dashed control/signal line from RPS-PNL-A to PLC-RPS-A
+PLC-RPS-A,RELAY-K101,signal,medium,dashed PLC output bundle feeds the upper Train A relay path to RELAY-K101
+PLC-RPS-A,RELAY-K103,signal,medium,dashed PLC output bundle feeds the lower Train A relay path to RELAY-K103
+RELAY-K102,JB-RPS-A,signal,medium,dashed upper Train A path continues to JB-RPS-A
+RELAY-K102,PNL-ANN-A,signal,medium,dashed drop from the RELAY-K102 path turns toward PNL-ANN-A
+BUS-480C,CHG-125B,power,high,heavy feeder from BUS-480C descends into Train B and turns into CHG-125B
+CHG-125B,REC-125B,dc_power,high,solid horizontal Train B charger/rectifier line from CHG-125B to REC-125B
+REC-125B,CB-DC-B,dc_power,high,solid horizontal Train B DC line from REC-125B to CB-DC-B
+CB-DC-B,BUS-125B,dc_power,high,solid vertical drop from CB-DC-B lands on BUS-125B
+BUS-125B,BAT-125B,dc_power,high,battery BAT-125B is connected by a vertical tap to BUS-125B
+BUS-125B,GND-DC-B,ground,high,ground symbol GND-DC-B is tapped from BUS-125B
+BUS-125B,INV-120B,dc_power,high,BUS-125B continues right through the inline disconnect mark into INV-120B
+INV-120B,UPS-120B,signal,medium,dashed line from INV-120B output to UPS-120B
+UPS-120B,BUS-120B,power,high,solid vertical connection from UPS-120B down to BUS-120B
+BUS-120B,RPS-PNL-B,power,high,RPS-PNL-B has a solid vertical tap to BUS-120B
+RPS-PNL-B,PLC-RPS-B,signal,high,dashed control/signal line from RPS-PNL-B to PLC-RPS-B
+PLC-RPS-B,RELAY-K201,signal,medium,dashed PLC output bundle feeds the upper Train B relay path to RELAY-K201
+PLC-RPS-B,RELAY-K203,signal,medium,dashed PLC output bundle feeds the lower Train B relay path to RELAY-K203
+RELAY-K202,JB-RPS-B,signal,medium,dashed upper Train B path continues to JB-RPS-B
+RELAY-K202,PNL-ANN-B,signal,medium,dashed drop from the RELAY-K202 path turns toward PNL-ANN-B

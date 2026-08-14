@@ -1,0 +1,49 @@
+Connectivity matrix validation summary - Document 19
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\19\connectivity_matrix_v3.csv
+
+Scores:
+- Diego -- Round 1 (round01_diego_connectivity_matrix.csv): TP=192, FP=25, FN=8, Precision=0.884793, Recall=0.960000, F1=0.920863
+- Jennifer -- Round 1 (round01_jennifer_connectivity_matrix.csv): TP=192, FP=8, FN=8, Precision=0.960000, Recall=0.960000, F1=0.960000
+- Diego -- Round 2 (round02_diego_connectivity_matrix.csv): TP=192, FP=8, FN=8, Precision=0.960000, Recall=0.960000, F1=0.960000
+- Jennifer -- Round 2 (round02_jennifer_connectivity_matrix.csv): TP=192, FP=8, FN=8, Precision=0.960000, Recall=0.960000, F1=0.960000
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=192, FP=8, FN=8, Precision=0.960000, Recall=0.960000, F1=0.960000
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- BAT-125A -- CHGR-125A
+- BAT-125B -- CHGR-125B
+- CB-301 -- CTRL-PWR-DC-DIST-A
+- CB-302 -- CTRL-PWR-DC-DIST-B
+- CHGR-125A -- CTRL-PWR-DC-DIST-A
+- CHGR-125B -- CTRL-PWR-DC-DIST-B
+- DS-101 -- OFFSITE GRID-1
+- DS-102 -- OFFSITE GRID-2
+
+False-negative edge examples:
+- BUS-125DC-A -- CHGR-125A
+- BUS-125DC-B -- CHGR-125B
+- BUS-480-A -- CB-301
+- BUS-480-A -- CHGR-125A
+- BUS-480-B -- CB-302
+- BUS-480-B -- CHGR-125B
+- DS-101 -- GRID-1
+- DS-102 -- GRID-2
+
+Extra/non-GT nodes causing performance drops:
+- CTRL-PWR-DC-DIST-A: 2 incident false-positive edge(s)
+- CTRL-PWR-DC-DIST-B: 2 incident false-positive edge(s)
+- OFFSITE GRID-1: 1 incident false-positive edge(s)
+- OFFSITE GRID-2: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 4 extra/intermediate nodes were omitted from the extraction (CTRL-PWR-DC-DIST-A, CTRL-PWR-DC-DIST-B, OFFSITE GRID-1, OFFSITE GRID-2), final metrics would be TP=192, FP=2, FN=8, Precision=0.989691, Recall=0.960000, F1=0.974619.
+- If all 4 non-GT nodes were omitted, metrics would be TP=192, FP=2, FN=8, Precision=0.989691, Recall=0.960000, F1=0.974619.
+
+Missing GT node examples:
+- GRID-1: 1 missed incident GT edge(s)
+- GRID-2: 1 missed incident GT edge(s)

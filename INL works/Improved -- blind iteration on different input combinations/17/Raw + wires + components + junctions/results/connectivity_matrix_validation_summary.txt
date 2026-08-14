@@ -1,0 +1,78 @@
+Connectivity matrix validation summary - Document 17
+Input configuration: Raw + wires + components + junctions
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\17\synthetic_npp_aux_power_schematic_overlap_fixed_connectivity_matrix.csv
+
+Scores:
+- Diego -- Round 1 (round_1_diego_connectivity_matrix.csv): TP=171, FP=31, FN=38, Precision=0.846535, Recall=0.818182, F1=0.832117
+- Jennifer -- Round 1 (round_1_jennifer_connectivity_matrix.csv): TP=177, FP=22, FN=32, Precision=0.889447, Recall=0.846890, F1=0.867647
+- Diego -- Round 2 (round_2_diego_connectivity_matrix.csv): TP=179, FP=22, FN=30, Precision=0.890547, Recall=0.856459, F1=0.873171
+- Jennifer -- Round 2 (round_2_jennifer_final_connectivity_matrix.csv): TP=179, FP=22, FN=30, Precision=0.890547, Recall=0.856459, F1=0.873171
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=179, FP=22, FN=30, Precision=0.890547, Recall=0.856459, F1=0.873171
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- BUS-480-A -- GND-SMGR-A
+- BUS-480-B -- GND-SMGR-B
+- CMP-AIR-2A -- MS-111A
+- CMP-AIR-2A -- TB-AIR-2A
+- GND-AHU-1A -- HTR-AHU-1A
+- GND-AHU-1B -- HTR-AHU-1B
+- GND-CCW-2A -- PUMP-CCW-2A
+- HOV-RHR-102A -- LS-RHR-102A
+- HOV-RHR-102A -- RELAY-K107A
+- HOV-RHR-102B -- LS-RHR-102B
+
+False-negative edge examples:
+- BUS-480-A -- GND-SWGR-A
+- BUS-480-B -- GND-SWGR-B
+- CB-TR-A1 -- RELAY-UV-A1
+- CB-TR-A2 -- RELAY-UV-A2
+- CB-TR-B1 -- RELAY-UV-B1
+- CB-TR-B2 -- RELAY-UV-B2
+- CMP-AIR-1A -- MS-111A
+- CMP-AIR-1A -- TB-AIR-1A
+- GND-AHU-1A -- MTR-AHU-1A
+- GND-AHU-1B -- MTR-AHU-1B
+
+Extra/non-GT nodes causing performance drops:
+- CMP-AIR-2A: 2 incident false-positive edge(s)
+- HTR-AHU-1A: 2 incident false-positive edge(s)
+- HTR-AHU-1B: 2 incident false-positive edge(s)
+- PUMP-CCW-2A: 2 incident false-positive edge(s)
+- HOV-RHR-102A: 2 incident false-positive edge(s)
+- HOV-RHR-102B: 2 incident false-positive edge(s)
+- HOV-RHVC-101A: 2 incident false-positive edge(s)
+- HOV-RHVC-101B: 2 incident false-positive edge(s)
+- INSTR-RAD-1A: 2 incident false-positive edge(s)
+- INSTR-RAD-1B: 2 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (CMP-AIR-2A, HTR-AHU-1A, HTR-AHU-1B, PUMP-CCW-2A, HOV-RHR-102A), final metrics would be TP=179, FP=12, FN=30, Precision=0.937173, Recall=0.856459, F1=0.895000.
+- If all 16 non-GT nodes were omitted, metrics would be TP=179, FP=0, FN=30, Precision=1.000000, Recall=0.856459, F1=0.922680.
+
+Missing GT node examples:
+- CMP-AIR-1A: 2 missed incident GT edge(s)
+- INST-RAD-1A: 2 missed incident GT edge(s)
+- INST-RAD-1B: 2 missed incident GT edge(s)
+- MOV-RHR-102A: 2 missed incident GT edge(s)
+- MOV-RHR-102B: 2 missed incident GT edge(s)
+- MOV-RWCU-101A: 2 missed incident GT edge(s)
+- MOV-RWCU-101B: 2 missed incident GT edge(s)
+- MTR-AHU-1A: 2 missed incident GT edge(s)
+- MTR-AHU-1B: 2 missed incident GT edge(s)
+- PUMP-CCW-1A: 2 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted INSTR-RAD-1A vs GT INST-RAD-1A (similarity 0.96)
+- Extracted INSTR-RAD-1B vs GT INST-RAD-1B (similarity 0.96)
+- Extracted HOV-RHR-102A vs GT MOV-RHR-102A (similarity 0.92)
+- Extracted HOV-RHR-102B vs GT MOV-RHR-102B (similarity 0.92)
+- Extracted PUMP-CCW-2A vs GT PUMP-CCW-1A (similarity 0.91)
+- Extracted CMP-AIR-2A vs GT CMP-AIR-1A (similarity 0.90)
+- Extracted GND-CCW-2A vs GT GND-CCW-1A (similarity 0.90)
+- Extracted GND-SMGR-A vs GT GND-SWGR-A (similarity 0.90)

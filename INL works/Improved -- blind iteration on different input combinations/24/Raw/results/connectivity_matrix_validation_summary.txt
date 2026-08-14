@@ -1,0 +1,22 @@
+Connectivity matrix validation summary - Document 24
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\24\synthetic_npp_connectivity_matrix_rev2.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_matrix.csv): TP=199, FP=3, FN=5, Precision=0.985149, Recall=0.975490, F1=0.980296
+- Jennifer -- Round 2 (round_02_jennifer_precision_matrix.csv): TP=199, FP=1, FN=5, Precision=0.995000, Recall=0.975490, F1=0.985149
+- Diego -- Round 3 (round_03_diego_saturation_matrix.csv): TP=199, FP=1, FN=5, Precision=0.995000, Recall=0.975490, F1=0.985149
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=199, FP=1, FN=5, Precision=0.995000, Recall=0.975490, F1=0.985149
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- ANN-PNL-1 -- LOAD-SHED-CAB
+
+False-negative edge examples:
+- ANN-PNL-1 -- RPS-PNL-A
+- ANN-PNL-1 -- RPS-PNL-B
+- CB-DG1A -- TRIP-MOD-A
+- CB-DG1B -- TRIP-MOD-B
+- CB-TIE-1 -- LOAD-SHED-CAB

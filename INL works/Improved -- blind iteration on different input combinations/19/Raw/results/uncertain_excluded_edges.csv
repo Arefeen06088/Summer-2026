@@ -1,0 +1,10 @@
+source,target,reason
+CONTROL POWER / DC DISTRIBUTION A ROUTE,CB-301/CHGR-125A,"Jennifer classified the text as a route label, not equipment; final graph uses BUS-480-A source edges."
+CONTROL POWER / DC DISTRIBUTION B ROUTE,CB-302/CHGR-125B,"Jennifer classified the text as a route label, not equipment; final graph uses BUS-480-B source edges."
+BUS-4160-A,BUS-4160-B,No direct bus edge; visible connection passes through CB-TIE-4160.
+BUS-480-A,BUS-480-B,No direct bus edge; visible connection passes through CB-TIE-480.
+CHGR-125A,BUS-120AC-A,Nearby routed line has no junction dot; crossings without dots are not connections.
+CHGR-125B,BUS-120AC-B,Nearby routed line has no junction dot; crossings without dots are not connections.
+RELAY-A###,RELAY-K###,No direct relay-A to relay-K connection was accepted; A relays connect only to the MCC side.
+RELAY-PR###,downstream power-chain nodes,PR relays are modeled only as branches from matching CB-F### devices.
+dashed module boundary boxes,enclosed components,"Module boundary boxes are layout groupings, not wires."

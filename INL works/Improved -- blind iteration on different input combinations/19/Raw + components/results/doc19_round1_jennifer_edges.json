@@ -1,0 +1,1245 @@
+{
+  "document": "19",
+  "round": "jennifer_round1",
+  "source_restriction": "Doc19 Raw + components only; no GT, no Raw+wires, no OCR, no web",
+  "asserted_edges": [
+    {
+      "source": "OFFSITE-GRID-1",
+      "target": "DS-101",
+      "type": "power",
+      "evidence": "raw_17/top-left: vertical solid feeder from OFFSITE GRID-1 to DS-101"
+    },
+    {
+      "source": "DS-101",
+      "target": "CB-101",
+      "type": "power",
+      "evidence": "raw_17/top-left: DS-101 stacked directly above CB-101 on same solid drop"
+    },
+    {
+      "source": "CB-101",
+      "target": "TR-101",
+      "type": "power",
+      "evidence": "raw_17/top-left: CB-101 stacked directly above TR-101 on same solid drop"
+    },
+    {
+      "source": "TR-101",
+      "target": "BUS-4160-A",
+      "type": "power",
+      "evidence": "raw_17/top-left: TR-101 bottom ties into horizontal BUS-4160-A"
+    },
+    {
+      "source": "DG-1",
+      "target": "CB-DG1",
+      "type": "power",
+      "evidence": "raw_17/top-left: DG-1 vertical solid feeder to CB-DG1"
+    },
+    {
+      "source": "CB-DG1",
+      "target": "BUS-4160-A",
+      "type": "power",
+      "evidence": "raw_17/top-left: CB-DG1 vertical drop lands on BUS-4160-A junction dot"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "PT-4160A",
+      "type": "signal",
+      "evidence": "raw_01/top bus: PT-4160A dashed vertical tap to BUS-4160-A junction dot"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-201",
+      "type": "power",
+      "evidence": "raw_17/top-left: BUS-4160-A solid vertical drop to CB-201"
+    },
+    {
+      "source": "CB-201",
+      "target": "TR-480-A",
+      "type": "power",
+      "evidence": "raw_17/top-left: CB-201 stacked over TR-480-A on solid feeder"
+    },
+    {
+      "source": "TR-480-A",
+      "target": "CB-480-A",
+      "type": "power",
+      "evidence": "raw_17/top-left: TR-480-A stacked over CB-480-A on solid feeder"
+    },
+    {
+      "source": "CB-480-A",
+      "target": "BUS-480-A",
+      "type": "power",
+      "evidence": "raw_17/top-left/raw_01: CB-480-A lower solid drop reaches BUS-480-A"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-TIE-4160",
+      "type": "tie",
+      "evidence": "raw_18/top-center: left BUS-4160-A terminates into CB-TIE-4160"
+    },
+    {
+      "source": "CB-TIE-4160",
+      "target": "BUS-4160-B",
+      "type": "tie",
+      "evidence": "raw_18/top-center: CB-TIE-4160 exits to right BUS-4160-B"
+    },
+    {
+      "source": "OFFSITE-GRID-2",
+      "target": "DS-102",
+      "type": "power",
+      "evidence": "raw_19/top-right: vertical solid feeder from OFFSITE GRID-2 to DS-102"
+    },
+    {
+      "source": "DS-102",
+      "target": "CB-102",
+      "type": "power",
+      "evidence": "raw_19/top-right: DS-102 stacked directly above CB-102 on same solid drop"
+    },
+    {
+      "source": "CB-102",
+      "target": "TR-102",
+      "type": "power",
+      "evidence": "raw_19/top-right: CB-102 stacked directly above TR-102 on same solid drop"
+    },
+    {
+      "source": "TR-102",
+      "target": "BUS-4160-B",
+      "type": "power",
+      "evidence": "raw_19/top-right: TR-102 bottom ties into horizontal BUS-4160-B"
+    },
+    {
+      "source": "DG-2",
+      "target": "CB-DG2",
+      "type": "power",
+      "evidence": "raw_19/top-right: DG-2 vertical solid feeder to CB-DG2"
+    },
+    {
+      "source": "CB-DG2",
+      "target": "BUS-4160-B",
+      "type": "power",
+      "evidence": "raw_19/top-right: CB-DG2 vertical drop lands on BUS-4160-B junction dot"
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "PT-4160B",
+      "type": "signal",
+      "evidence": "raw_19/top-right: PT-4160B dashed vertical tap to BUS-4160-B junction dot"
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-202",
+      "type": "power",
+      "evidence": "raw_19/top-right: BUS-4160-B solid vertical drop to CB-202"
+    },
+    {
+      "source": "CB-202",
+      "target": "TR-480-B",
+      "type": "power",
+      "evidence": "raw_19/top-right: CB-202 stacked over TR-480-B on solid feeder"
+    },
+    {
+      "source": "TR-480-B",
+      "target": "CB-480-B",
+      "type": "power",
+      "evidence": "raw_19/top-right: TR-480-B stacked over CB-480-B on solid feeder"
+    },
+    {
+      "source": "CB-480-B",
+      "target": "BUS-480-B",
+      "type": "power",
+      "evidence": "raw_19/top-right/raw_01: CB-480-B lower solid drop reaches BUS-480-B"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-TIE-480",
+      "type": "tie",
+      "evidence": "raw_18/raw_20: BUS-480-A enters CB-TIE-480 from left"
+    },
+    {
+      "source": "CB-TIE-480",
+      "target": "BUS-480-B",
+      "type": "tie",
+      "evidence": "raw_18/raw_20: CB-TIE-480 exits to BUS-480-B at right junction"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-F201",
+      "type": "power",
+      "evidence": "raw_21/raw_27 RHR pump A module: vertical solid feeder from BUS-480-A to CB-F201"
+    },
+    {
+      "source": "CB-F201",
+      "target": "RELAY-PR201",
+      "type": "control",
+      "evidence": "raw_21/raw_27 RHR pump A module: dashed protection/control lead from CB-F201 to RELAY-PR201"
+    },
+    {
+      "source": "CB-F201",
+      "target": "DS-F201",
+      "type": "power",
+      "evidence": "raw_21/raw_27 RHR pump A module: solid drop from CB-F201 to DS-F201"
+    },
+    {
+      "source": "DS-F201",
+      "target": "CPT-201",
+      "type": "power",
+      "evidence": "raw_21/raw_27 RHR pump A module: solid drop from DS-F201 to CPT-201"
+    },
+    {
+      "source": "CPT-201",
+      "target": "MCC-201",
+      "type": "power",
+      "evidence": "raw_21/raw_27 RHR pump A module: solid drop from CPT-201 to MCC-201"
+    },
+    {
+      "source": "MCC-201",
+      "target": "CB-L201",
+      "type": "power",
+      "evidence": "raw_21/raw_27 RHR pump A module: solid drop from MCC-201 to CB-L201"
+    },
+    {
+      "source": "MCC-201",
+      "target": "RELAY-A201",
+      "type": "control",
+      "evidence": "raw_21/raw_27 RHR pump A module: dashed side control lead from MCC-201 to RELAY-A201"
+    },
+    {
+      "source": "CB-L201",
+      "target": "RELAY-K201",
+      "type": "power",
+      "evidence": "raw_21/raw_27 RHR pump A module: solid drop from CB-L201 to RELAY-K201"
+    },
+    {
+      "source": "RELAY-K201",
+      "target": "PUMP-P201",
+      "type": "power",
+      "evidence": "raw_21/raw_27 RHR pump A module: solid drop from RELAY-K201 to PUMP-P201"
+    },
+    {
+      "source": "PUMP-P201",
+      "target": "INST-201",
+      "type": "signal",
+      "evidence": "raw_21/raw_27 RHR pump A module: dotted signal lead from PUMP-P201 to INST-201"
+    },
+    {
+      "source": "INST-201",
+      "target": "JB-201",
+      "type": "signal",
+      "evidence": "raw_21/raw_27 RHR pump A module: dotted vertical signal lead from INST-201 to JB-201"
+    },
+    {
+      "source": "JB-201",
+      "target": "TB-201",
+      "type": "signal",
+      "evidence": "raw_21/raw_27 RHR pump A module: dotted vertical signal lead from JB-201 to TB-201"
+    },
+    {
+      "source": "TB-201",
+      "target": "LCS-201",
+      "type": "control",
+      "evidence": "raw_21/raw_27 RHR pump A module: dashed horizontal control lead between TB-201 and LCS-201"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-F203",
+      "type": "power",
+      "evidence": "raw_21/raw_27 core spray A module: vertical solid feeder from BUS-480-A to CB-F203"
+    },
+    {
+      "source": "CB-F203",
+      "target": "RELAY-PR203",
+      "type": "control",
+      "evidence": "raw_21/raw_27 core spray A module: dashed protection/control lead from CB-F203 to RELAY-PR203"
+    },
+    {
+      "source": "CB-F203",
+      "target": "DS-F203",
+      "type": "power",
+      "evidence": "raw_21/raw_27 core spray A module: solid drop from CB-F203 to DS-F203"
+    },
+    {
+      "source": "DS-F203",
+      "target": "CPT-203",
+      "type": "power",
+      "evidence": "raw_21/raw_27 core spray A module: solid drop from DS-F203 to CPT-203"
+    },
+    {
+      "source": "CPT-203",
+      "target": "MCC-203",
+      "type": "power",
+      "evidence": "raw_21/raw_27 core spray A module: solid drop from CPT-203 to MCC-203"
+    },
+    {
+      "source": "MCC-203",
+      "target": "CB-L203",
+      "type": "power",
+      "evidence": "raw_21/raw_27 core spray A module: solid drop from MCC-203 to CB-L203"
+    },
+    {
+      "source": "MCC-203",
+      "target": "RELAY-A203",
+      "type": "control",
+      "evidence": "raw_21/raw_27 core spray A module: dashed side control lead from MCC-203 to RELAY-A203"
+    },
+    {
+      "source": "CB-L203",
+      "target": "RELAY-K203",
+      "type": "power",
+      "evidence": "raw_21/raw_27 core spray A module: solid drop from CB-L203 to RELAY-K203"
+    },
+    {
+      "source": "RELAY-K203",
+      "target": "PUMP-P203",
+      "type": "power",
+      "evidence": "raw_21/raw_27 core spray A module: solid drop from RELAY-K203 to PUMP-P203"
+    },
+    {
+      "source": "PUMP-P203",
+      "target": "INST-203",
+      "type": "signal",
+      "evidence": "raw_21/raw_27 core spray A module: dotted signal lead from PUMP-P203 to INST-203"
+    },
+    {
+      "source": "INST-203",
+      "target": "JB-203",
+      "type": "signal",
+      "evidence": "raw_21/raw_27 core spray A module: dotted vertical signal lead from INST-203 to JB-203"
+    },
+    {
+      "source": "JB-203",
+      "target": "TB-203",
+      "type": "signal",
+      "evidence": "raw_21/raw_27 core spray A module: dotted vertical signal lead from JB-203 to TB-203"
+    },
+    {
+      "source": "TB-203",
+      "target": "LCS-203",
+      "type": "control",
+      "evidence": "raw_21/raw_27 core spray A module: dashed horizontal control lead between TB-203 and LCS-203"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-F301",
+      "type": "power",
+      "evidence": "raw_22/raw_27 CCW pump A module: vertical solid feeder from BUS-480-A to CB-F301"
+    },
+    {
+      "source": "CB-F301",
+      "target": "RELAY-PR301",
+      "type": "control",
+      "evidence": "raw_22/raw_27 CCW pump A module: dashed protection/control lead from CB-F301 to RELAY-PR301"
+    },
+    {
+      "source": "CB-F301",
+      "target": "DS-F301",
+      "type": "power",
+      "evidence": "raw_22/raw_27 CCW pump A module: solid drop from CB-F301 to DS-F301"
+    },
+    {
+      "source": "DS-F301",
+      "target": "CPT-301",
+      "type": "power",
+      "evidence": "raw_22/raw_27 CCW pump A module: solid drop from DS-F301 to CPT-301"
+    },
+    {
+      "source": "CPT-301",
+      "target": "MCC-301",
+      "type": "power",
+      "evidence": "raw_22/raw_27 CCW pump A module: solid drop from CPT-301 to MCC-301"
+    },
+    {
+      "source": "MCC-301",
+      "target": "CB-L301",
+      "type": "power",
+      "evidence": "raw_22/raw_27 CCW pump A module: solid drop from MCC-301 to CB-L301"
+    },
+    {
+      "source": "MCC-301",
+      "target": "RELAY-A301",
+      "type": "control",
+      "evidence": "raw_22/raw_27 CCW pump A module: dashed side control lead from MCC-301 to RELAY-A301"
+    },
+    {
+      "source": "CB-L301",
+      "target": "RELAY-K301",
+      "type": "power",
+      "evidence": "raw_22/raw_27 CCW pump A module: solid drop from CB-L301 to RELAY-K301"
+    },
+    {
+      "source": "RELAY-K301",
+      "target": "PUMP-P301",
+      "type": "power",
+      "evidence": "raw_22/raw_27 CCW pump A module: solid drop from RELAY-K301 to PUMP-P301"
+    },
+    {
+      "source": "PUMP-P301",
+      "target": "INST-301",
+      "type": "signal",
+      "evidence": "raw_22/raw_27 CCW pump A module: dotted signal lead from PUMP-P301 to INST-301"
+    },
+    {
+      "source": "INST-301",
+      "target": "JB-301",
+      "type": "signal",
+      "evidence": "raw_22/raw_27 CCW pump A module: dotted vertical signal lead from INST-301 to JB-301"
+    },
+    {
+      "source": "JB-301",
+      "target": "TB-301",
+      "type": "signal",
+      "evidence": "raw_22/raw_27 CCW pump A module: dotted vertical signal lead from JB-301 to TB-301"
+    },
+    {
+      "source": "TB-301",
+      "target": "LCS-301",
+      "type": "control",
+      "evidence": "raw_22/raw_27 CCW pump A module: dashed horizontal control lead between TB-301 and LCS-301"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-F401",
+      "type": "power",
+      "evidence": "raw_22/raw_27 service water A module: vertical solid feeder from BUS-480-A to CB-F401"
+    },
+    {
+      "source": "CB-F401",
+      "target": "RELAY-PR401",
+      "type": "control",
+      "evidence": "raw_22/raw_27 service water A module: dashed protection/control lead from CB-F401 to RELAY-PR401"
+    },
+    {
+      "source": "CB-F401",
+      "target": "DS-F401",
+      "type": "power",
+      "evidence": "raw_22/raw_27 service water A module: solid drop from CB-F401 to DS-F401"
+    },
+    {
+      "source": "DS-F401",
+      "target": "CPT-401",
+      "type": "power",
+      "evidence": "raw_22/raw_27 service water A module: solid drop from DS-F401 to CPT-401"
+    },
+    {
+      "source": "CPT-401",
+      "target": "MCC-401",
+      "type": "power",
+      "evidence": "raw_22/raw_27 service water A module: solid drop from CPT-401 to MCC-401"
+    },
+    {
+      "source": "MCC-401",
+      "target": "CB-L401",
+      "type": "power",
+      "evidence": "raw_22/raw_27 service water A module: solid drop from MCC-401 to CB-L401"
+    },
+    {
+      "source": "MCC-401",
+      "target": "RELAY-A401",
+      "type": "control",
+      "evidence": "raw_22/raw_27 service water A module: dashed side control lead from MCC-401 to RELAY-A401"
+    },
+    {
+      "source": "CB-L401",
+      "target": "RELAY-K401",
+      "type": "power",
+      "evidence": "raw_22/raw_27 service water A module: solid drop from CB-L401 to RELAY-K401"
+    },
+    {
+      "source": "RELAY-K401",
+      "target": "PUMP-P401",
+      "type": "power",
+      "evidence": "raw_22/raw_27 service water A module: solid drop from RELAY-K401 to PUMP-P401"
+    },
+    {
+      "source": "PUMP-P401",
+      "target": "INST-401",
+      "type": "signal",
+      "evidence": "raw_22/raw_27 service water A module: dotted signal lead from PUMP-P401 to INST-401"
+    },
+    {
+      "source": "INST-401",
+      "target": "JB-401",
+      "type": "signal",
+      "evidence": "raw_22/raw_27 service water A module: dotted vertical signal lead from INST-401 to JB-401"
+    },
+    {
+      "source": "JB-401",
+      "target": "TB-401",
+      "type": "signal",
+      "evidence": "raw_22/raw_27 service water A module: dotted vertical signal lead from JB-401 to TB-401"
+    },
+    {
+      "source": "TB-401",
+      "target": "LCS-401",
+      "type": "control",
+      "evidence": "raw_22/raw_27 service water A module: dashed horizontal control lead between TB-401 and LCS-401"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-F501",
+      "type": "power",
+      "evidence": "raw_23/raw_27 containment fan cooler A module: vertical solid feeder from BUS-480-A to CB-F501"
+    },
+    {
+      "source": "CB-F501",
+      "target": "RELAY-PR501",
+      "type": "control",
+      "evidence": "raw_23/raw_27 containment fan cooler A module: dashed protection/control lead from CB-F501 to RELAY-PR501"
+    },
+    {
+      "source": "CB-F501",
+      "target": "DS-F501",
+      "type": "power",
+      "evidence": "raw_23/raw_27 containment fan cooler A module: solid drop from CB-F501 to DS-F501"
+    },
+    {
+      "source": "DS-F501",
+      "target": "CPT-501",
+      "type": "power",
+      "evidence": "raw_23/raw_27 containment fan cooler A module: solid drop from DS-F501 to CPT-501"
+    },
+    {
+      "source": "CPT-501",
+      "target": "MCC-501",
+      "type": "power",
+      "evidence": "raw_23/raw_27 containment fan cooler A module: solid drop from CPT-501 to MCC-501"
+    },
+    {
+      "source": "MCC-501",
+      "target": "CB-L501",
+      "type": "power",
+      "evidence": "raw_23/raw_27 containment fan cooler A module: solid drop from MCC-501 to CB-L501"
+    },
+    {
+      "source": "MCC-501",
+      "target": "RELAY-A501",
+      "type": "control",
+      "evidence": "raw_23/raw_27 containment fan cooler A module: dashed side control lead from MCC-501 to RELAY-A501"
+    },
+    {
+      "source": "CB-L501",
+      "target": "RELAY-K501",
+      "type": "power",
+      "evidence": "raw_23/raw_27 containment fan cooler A module: solid drop from CB-L501 to RELAY-K501"
+    },
+    {
+      "source": "RELAY-K501",
+      "target": "MTR-F501",
+      "type": "power",
+      "evidence": "raw_23/raw_27 containment fan cooler A module: solid drop from RELAY-K501 to MTR-F501"
+    },
+    {
+      "source": "MTR-F501",
+      "target": "INST-501",
+      "type": "signal",
+      "evidence": "raw_23/raw_27 containment fan cooler A module: dotted signal lead from MTR-F501 to INST-501"
+    },
+    {
+      "source": "INST-501",
+      "target": "JB-501",
+      "type": "signal",
+      "evidence": "raw_23/raw_27 containment fan cooler A module: dotted vertical signal lead from INST-501 to JB-501"
+    },
+    {
+      "source": "JB-501",
+      "target": "TB-501",
+      "type": "signal",
+      "evidence": "raw_23/raw_27 containment fan cooler A module: dotted vertical signal lead from JB-501 to TB-501"
+    },
+    {
+      "source": "TB-501",
+      "target": "LCS-501",
+      "type": "control",
+      "evidence": "raw_23/raw_27 containment fan cooler A module: dashed horizontal control lead between TB-501 and LCS-501"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-F202",
+      "type": "power",
+      "evidence": "raw_24/raw_28 RHR pump B module: vertical solid feeder from BUS-480-B to CB-F202"
+    },
+    {
+      "source": "CB-F202",
+      "target": "RELAY-PR202",
+      "type": "control",
+      "evidence": "raw_24/raw_28 RHR pump B module: dashed protection/control lead from CB-F202 to RELAY-PR202"
+    },
+    {
+      "source": "CB-F202",
+      "target": "DS-F202",
+      "type": "power",
+      "evidence": "raw_24/raw_28 RHR pump B module: solid drop from CB-F202 to DS-F202"
+    },
+    {
+      "source": "DS-F202",
+      "target": "CPT-202",
+      "type": "power",
+      "evidence": "raw_24/raw_28 RHR pump B module: solid drop from DS-F202 to CPT-202"
+    },
+    {
+      "source": "CPT-202",
+      "target": "MCC-202",
+      "type": "power",
+      "evidence": "raw_24/raw_28 RHR pump B module: solid drop from CPT-202 to MCC-202"
+    },
+    {
+      "source": "MCC-202",
+      "target": "CB-L202",
+      "type": "power",
+      "evidence": "raw_24/raw_28 RHR pump B module: solid drop from MCC-202 to CB-L202"
+    },
+    {
+      "source": "MCC-202",
+      "target": "RELAY-A202",
+      "type": "control",
+      "evidence": "raw_24/raw_28 RHR pump B module: dashed side control lead from MCC-202 to RELAY-A202"
+    },
+    {
+      "source": "CB-L202",
+      "target": "RELAY-K202",
+      "type": "power",
+      "evidence": "raw_24/raw_28 RHR pump B module: solid drop from CB-L202 to RELAY-K202"
+    },
+    {
+      "source": "RELAY-K202",
+      "target": "PUMP-P202",
+      "type": "power",
+      "evidence": "raw_24/raw_28 RHR pump B module: solid drop from RELAY-K202 to PUMP-P202"
+    },
+    {
+      "source": "PUMP-P202",
+      "target": "INST-202",
+      "type": "signal",
+      "evidence": "raw_24/raw_28 RHR pump B module: dotted signal lead from PUMP-P202 to INST-202"
+    },
+    {
+      "source": "INST-202",
+      "target": "JB-202",
+      "type": "signal",
+      "evidence": "raw_24/raw_28 RHR pump B module: dotted vertical signal lead from INST-202 to JB-202"
+    },
+    {
+      "source": "JB-202",
+      "target": "TB-202",
+      "type": "signal",
+      "evidence": "raw_24/raw_28 RHR pump B module: dotted vertical signal lead from JB-202 to TB-202"
+    },
+    {
+      "source": "TB-202",
+      "target": "LCS-202",
+      "type": "control",
+      "evidence": "raw_24/raw_28 RHR pump B module: dashed horizontal control lead between TB-202 and LCS-202"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-F204",
+      "type": "power",
+      "evidence": "raw_24/raw_28 core spray B module: vertical solid feeder from BUS-480-B to CB-F204"
+    },
+    {
+      "source": "CB-F204",
+      "target": "RELAY-PR204",
+      "type": "control",
+      "evidence": "raw_24/raw_28 core spray B module: dashed protection/control lead from CB-F204 to RELAY-PR204"
+    },
+    {
+      "source": "CB-F204",
+      "target": "DS-F204",
+      "type": "power",
+      "evidence": "raw_24/raw_28 core spray B module: solid drop from CB-F204 to DS-F204"
+    },
+    {
+      "source": "DS-F204",
+      "target": "CPT-204",
+      "type": "power",
+      "evidence": "raw_24/raw_28 core spray B module: solid drop from DS-F204 to CPT-204"
+    },
+    {
+      "source": "CPT-204",
+      "target": "MCC-204",
+      "type": "power",
+      "evidence": "raw_24/raw_28 core spray B module: solid drop from CPT-204 to MCC-204"
+    },
+    {
+      "source": "MCC-204",
+      "target": "CB-L204",
+      "type": "power",
+      "evidence": "raw_24/raw_28 core spray B module: solid drop from MCC-204 to CB-L204"
+    },
+    {
+      "source": "MCC-204",
+      "target": "RELAY-A204",
+      "type": "control",
+      "evidence": "raw_24/raw_28 core spray B module: dashed side control lead from MCC-204 to RELAY-A204"
+    },
+    {
+      "source": "CB-L204",
+      "target": "RELAY-K204",
+      "type": "power",
+      "evidence": "raw_24/raw_28 core spray B module: solid drop from CB-L204 to RELAY-K204"
+    },
+    {
+      "source": "RELAY-K204",
+      "target": "PUMP-P204",
+      "type": "power",
+      "evidence": "raw_24/raw_28 core spray B module: solid drop from RELAY-K204 to PUMP-P204"
+    },
+    {
+      "source": "PUMP-P204",
+      "target": "INST-204",
+      "type": "signal",
+      "evidence": "raw_24/raw_28 core spray B module: dotted signal lead from PUMP-P204 to INST-204"
+    },
+    {
+      "source": "INST-204",
+      "target": "JB-204",
+      "type": "signal",
+      "evidence": "raw_24/raw_28 core spray B module: dotted vertical signal lead from INST-204 to JB-204"
+    },
+    {
+      "source": "JB-204",
+      "target": "TB-204",
+      "type": "signal",
+      "evidence": "raw_24/raw_28 core spray B module: dotted vertical signal lead from JB-204 to TB-204"
+    },
+    {
+      "source": "TB-204",
+      "target": "LCS-204",
+      "type": "control",
+      "evidence": "raw_24/raw_28 core spray B module: dashed horizontal control lead between TB-204 and LCS-204"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-F302",
+      "type": "power",
+      "evidence": "raw_25/raw_28 CCW pump B module: vertical solid feeder from BUS-480-B to CB-F302"
+    },
+    {
+      "source": "CB-F302",
+      "target": "RELAY-PR302",
+      "type": "control",
+      "evidence": "raw_25/raw_28 CCW pump B module: dashed protection/control lead from CB-F302 to RELAY-PR302"
+    },
+    {
+      "source": "CB-F302",
+      "target": "DS-F302",
+      "type": "power",
+      "evidence": "raw_25/raw_28 CCW pump B module: solid drop from CB-F302 to DS-F302"
+    },
+    {
+      "source": "DS-F302",
+      "target": "CPT-302",
+      "type": "power",
+      "evidence": "raw_25/raw_28 CCW pump B module: solid drop from DS-F302 to CPT-302"
+    },
+    {
+      "source": "CPT-302",
+      "target": "MCC-302",
+      "type": "power",
+      "evidence": "raw_25/raw_28 CCW pump B module: solid drop from CPT-302 to MCC-302"
+    },
+    {
+      "source": "MCC-302",
+      "target": "CB-L302",
+      "type": "power",
+      "evidence": "raw_25/raw_28 CCW pump B module: solid drop from MCC-302 to CB-L302"
+    },
+    {
+      "source": "MCC-302",
+      "target": "RELAY-A302",
+      "type": "control",
+      "evidence": "raw_25/raw_28 CCW pump B module: dashed side control lead from MCC-302 to RELAY-A302"
+    },
+    {
+      "source": "CB-L302",
+      "target": "RELAY-K302",
+      "type": "power",
+      "evidence": "raw_25/raw_28 CCW pump B module: solid drop from CB-L302 to RELAY-K302"
+    },
+    {
+      "source": "RELAY-K302",
+      "target": "PUMP-P302",
+      "type": "power",
+      "evidence": "raw_25/raw_28 CCW pump B module: solid drop from RELAY-K302 to PUMP-P302"
+    },
+    {
+      "source": "PUMP-P302",
+      "target": "INST-302",
+      "type": "signal",
+      "evidence": "raw_25/raw_28 CCW pump B module: dotted signal lead from PUMP-P302 to INST-302"
+    },
+    {
+      "source": "INST-302",
+      "target": "JB-302",
+      "type": "signal",
+      "evidence": "raw_25/raw_28 CCW pump B module: dotted vertical signal lead from INST-302 to JB-302"
+    },
+    {
+      "source": "JB-302",
+      "target": "TB-302",
+      "type": "signal",
+      "evidence": "raw_25/raw_28 CCW pump B module: dotted vertical signal lead from JB-302 to TB-302"
+    },
+    {
+      "source": "TB-302",
+      "target": "LCS-302",
+      "type": "control",
+      "evidence": "raw_25/raw_28 CCW pump B module: dashed horizontal control lead between TB-302 and LCS-302"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-F402",
+      "type": "power",
+      "evidence": "raw_25/raw_28 service water B module: vertical solid feeder from BUS-480-B to CB-F402"
+    },
+    {
+      "source": "CB-F402",
+      "target": "RELAY-PR402",
+      "type": "control",
+      "evidence": "raw_25/raw_28 service water B module: dashed protection/control lead from CB-F402 to RELAY-PR402"
+    },
+    {
+      "source": "CB-F402",
+      "target": "DS-F402",
+      "type": "power",
+      "evidence": "raw_25/raw_28 service water B module: solid drop from CB-F402 to DS-F402"
+    },
+    {
+      "source": "DS-F402",
+      "target": "CPT-402",
+      "type": "power",
+      "evidence": "raw_25/raw_28 service water B module: solid drop from DS-F402 to CPT-402"
+    },
+    {
+      "source": "CPT-402",
+      "target": "MCC-402",
+      "type": "power",
+      "evidence": "raw_25/raw_28 service water B module: solid drop from CPT-402 to MCC-402"
+    },
+    {
+      "source": "MCC-402",
+      "target": "CB-L402",
+      "type": "power",
+      "evidence": "raw_25/raw_28 service water B module: solid drop from MCC-402 to CB-L402"
+    },
+    {
+      "source": "MCC-402",
+      "target": "RELAY-A402",
+      "type": "control",
+      "evidence": "raw_25/raw_28 service water B module: dashed side control lead from MCC-402 to RELAY-A402"
+    },
+    {
+      "source": "CB-L402",
+      "target": "RELAY-K402",
+      "type": "power",
+      "evidence": "raw_25/raw_28 service water B module: solid drop from CB-L402 to RELAY-K402"
+    },
+    {
+      "source": "RELAY-K402",
+      "target": "PUMP-P402",
+      "type": "power",
+      "evidence": "raw_25/raw_28 service water B module: solid drop from RELAY-K402 to PUMP-P402"
+    },
+    {
+      "source": "PUMP-P402",
+      "target": "INST-402",
+      "type": "signal",
+      "evidence": "raw_25/raw_28 service water B module: dotted signal lead from PUMP-P402 to INST-402"
+    },
+    {
+      "source": "INST-402",
+      "target": "JB-402",
+      "type": "signal",
+      "evidence": "raw_25/raw_28 service water B module: dotted vertical signal lead from INST-402 to JB-402"
+    },
+    {
+      "source": "JB-402",
+      "target": "TB-402",
+      "type": "signal",
+      "evidence": "raw_25/raw_28 service water B module: dotted vertical signal lead from JB-402 to TB-402"
+    },
+    {
+      "source": "TB-402",
+      "target": "LCS-402",
+      "type": "control",
+      "evidence": "raw_25/raw_28 service water B module: dashed horizontal control lead between TB-402 and LCS-402"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-F502",
+      "type": "power",
+      "evidence": "raw_26/raw_28 containment fan cooler B module: vertical solid feeder from BUS-480-B to CB-F502"
+    },
+    {
+      "source": "CB-F502",
+      "target": "RELAY-PR502",
+      "type": "control",
+      "evidence": "raw_26/raw_28 containment fan cooler B module: dashed protection/control lead from CB-F502 to RELAY-PR502"
+    },
+    {
+      "source": "CB-F502",
+      "target": "DS-F502",
+      "type": "power",
+      "evidence": "raw_26/raw_28 containment fan cooler B module: solid drop from CB-F502 to DS-F502"
+    },
+    {
+      "source": "DS-F502",
+      "target": "CPT-502",
+      "type": "power",
+      "evidence": "raw_26/raw_28 containment fan cooler B module: solid drop from DS-F502 to CPT-502"
+    },
+    {
+      "source": "CPT-502",
+      "target": "MCC-502",
+      "type": "power",
+      "evidence": "raw_26/raw_28 containment fan cooler B module: solid drop from CPT-502 to MCC-502"
+    },
+    {
+      "source": "MCC-502",
+      "target": "CB-L502",
+      "type": "power",
+      "evidence": "raw_26/raw_28 containment fan cooler B module: solid drop from MCC-502 to CB-L502"
+    },
+    {
+      "source": "MCC-502",
+      "target": "RELAY-A502",
+      "type": "control",
+      "evidence": "raw_26/raw_28 containment fan cooler B module: dashed side control lead from MCC-502 to RELAY-A502"
+    },
+    {
+      "source": "CB-L502",
+      "target": "RELAY-K502",
+      "type": "power",
+      "evidence": "raw_26/raw_28 containment fan cooler B module: solid drop from CB-L502 to RELAY-K502"
+    },
+    {
+      "source": "RELAY-K502",
+      "target": "MTR-F502",
+      "type": "power",
+      "evidence": "raw_26/raw_28 containment fan cooler B module: solid drop from RELAY-K502 to MTR-F502"
+    },
+    {
+      "source": "MTR-F502",
+      "target": "INST-502",
+      "type": "signal",
+      "evidence": "raw_26/raw_28 containment fan cooler B module: dotted signal lead from MTR-F502 to INST-502"
+    },
+    {
+      "source": "INST-502",
+      "target": "JB-502",
+      "type": "signal",
+      "evidence": "raw_26/raw_28 containment fan cooler B module: dotted vertical signal lead from INST-502 to JB-502"
+    },
+    {
+      "source": "JB-502",
+      "target": "TB-502",
+      "type": "signal",
+      "evidence": "raw_26/raw_28 containment fan cooler B module: dotted vertical signal lead from JB-502 to TB-502"
+    },
+    {
+      "source": "TB-502",
+      "target": "LCS-502",
+      "type": "control",
+      "evidence": "raw_26/raw_28 containment fan cooler B module: dashed horizontal control lead between TB-502 and LCS-502"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-F601",
+      "type": "power",
+      "evidence": "raw_23/main: vertical solid feeder from BUS-480-A to CB-F601"
+    },
+    {
+      "source": "CB-F601",
+      "target": "RELAY-PR601",
+      "type": "control",
+      "evidence": "raw_23: dashed protection/control lead from CB-F601 to RELAY-PR601"
+    },
+    {
+      "source": "CB-F601",
+      "target": "DS-F601",
+      "type": "power",
+      "evidence": "raw_23: solid drop from CB-F601 to DS-F601"
+    },
+    {
+      "source": "DS-F601",
+      "target": "CPT-601",
+      "type": "power",
+      "evidence": "raw_23: solid drop from DS-F601 to CPT-601"
+    },
+    {
+      "source": "CPT-601",
+      "target": "MCC-601",
+      "type": "power",
+      "evidence": "raw_23: solid drop from CPT-601 to MCC-601"
+    },
+    {
+      "source": "MCC-601",
+      "target": "CB-L601",
+      "type": "power",
+      "evidence": "raw_23: solid drop from MCC-601 to CB-L601"
+    },
+    {
+      "source": "MCC-601",
+      "target": "RELAY-A601",
+      "type": "control",
+      "evidence": "raw_23: dashed side control lead from MCC-601 to RELAY-A601"
+    },
+    {
+      "source": "CB-L601",
+      "target": "RELAY-K601",
+      "type": "power",
+      "evidence": "raw_23: solid drop from CB-L601 to RELAY-K601"
+    },
+    {
+      "source": "RELAY-K601",
+      "target": "VALVE-MOV601",
+      "type": "power",
+      "evidence": "raw_23: solid drop from RELAY-K601 to VALVE-MOV601"
+    },
+    {
+      "source": "VALVE-MOV601",
+      "target": "INST-601",
+      "type": "signal",
+      "evidence": "raw_23: dotted signal lead from VALVE-MOV601 toward INST-601"
+    },
+    {
+      "source": "LS-MOV601",
+      "target": "JB-601",
+      "type": "signal",
+      "evidence": "raw_23/raw_27: dotted vertical signal lead from LS-MOV601 area down to JB-601"
+    },
+    {
+      "source": "JB-601",
+      "target": "TB-601",
+      "type": "signal",
+      "evidence": "raw_27: dotted vertical signal lead from JB-601 to TB-601"
+    },
+    {
+      "source": "TB-601",
+      "target": "LCS-601",
+      "type": "control",
+      "evidence": "raw_27: dashed horizontal control lead between TB-601 and LCS-601"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-F701",
+      "type": "power",
+      "evidence": "raw_26/main: vertical solid feeder from BUS-480-B to CB-F701"
+    },
+    {
+      "source": "CB-F701",
+      "target": "RELAY-PR701",
+      "type": "control",
+      "evidence": "raw_26: dashed protection/control lead from CB-F701 to RELAY-PR701"
+    },
+    {
+      "source": "CB-F701",
+      "target": "DS-F701",
+      "type": "power",
+      "evidence": "raw_26: solid drop from CB-F701 to DS-F701"
+    },
+    {
+      "source": "DS-F701",
+      "target": "CPT-701",
+      "type": "power",
+      "evidence": "raw_26: solid drop from DS-F701 to CPT-701"
+    },
+    {
+      "source": "CPT-701",
+      "target": "MCC-701",
+      "type": "power",
+      "evidence": "raw_26: solid drop from CPT-701 to MCC-701"
+    },
+    {
+      "source": "MCC-701",
+      "target": "CB-L701",
+      "type": "power",
+      "evidence": "raw_26: solid drop from MCC-701 to CB-L701"
+    },
+    {
+      "source": "MCC-701",
+      "target": "RELAY-A701",
+      "type": "control",
+      "evidence": "raw_26: dashed side control lead from MCC-701 to RELAY-A701"
+    },
+    {
+      "source": "CB-L701",
+      "target": "RELAY-K701",
+      "type": "power",
+      "evidence": "raw_26: solid drop from CB-L701 to RELAY-K701"
+    },
+    {
+      "source": "RELAY-K701",
+      "target": "INST-RPS701",
+      "type": "power",
+      "evidence": "raw_26: solid drop from RELAY-K701 to INST-RPS701"
+    },
+    {
+      "source": "INST-RPS701",
+      "target": "INST-701",
+      "type": "signal",
+      "evidence": "raw_26: dotted signal lead from INST-RPS701 to INST-701"
+    },
+    {
+      "source": "INST-701",
+      "target": "JB-701",
+      "type": "signal",
+      "evidence": "raw_26/raw_28: dotted vertical signal lead from INST-701 to JB-701"
+    },
+    {
+      "source": "JB-701",
+      "target": "TB-701",
+      "type": "signal",
+      "evidence": "raw_28: dotted vertical signal lead from JB-701 to TB-701"
+    },
+    {
+      "source": "TB-701",
+      "target": "LCS-701",
+      "type": "control",
+      "evidence": "raw_28: dashed horizontal control lead between TB-701 and LCS-701"
+    },
+    {
+      "source": "CONTROL-POWER-DC-DISTRIBUTION-A",
+      "target": "CB-301",
+      "type": "power",
+      "evidence": "raw_10/raw_29: CB-301 hangs from left control power/DC distribution route"
+    },
+    {
+      "source": "CB-301",
+      "target": "TR-120-A",
+      "type": "power",
+      "evidence": "raw_10/raw_29: CB-301 stacked above TR-120-A on solid feeder"
+    },
+    {
+      "source": "TR-120-A",
+      "target": "BUS-120AC-A",
+      "type": "power",
+      "evidence": "raw_10/raw_29: TR-120-A lower drop lands on BUS-120AC-A junction"
+    },
+    {
+      "source": "BUS-120AC-A",
+      "target": "JB-MAIN",
+      "type": "signal",
+      "evidence": "raw_10/raw_29: dashed/dotted vertical tap from BUS-120AC-A to JB-MAIN"
+    },
+    {
+      "source": "CONTROL-POWER-DC-DISTRIBUTION-A",
+      "target": "CHGR-125A",
+      "type": "power",
+      "evidence": "raw_10/raw_29: CHGR-125A fed from upper control power/DC distribution route"
+    },
+    {
+      "source": "CHGR-125A",
+      "target": "BAT-125A",
+      "type": "dc_power",
+      "evidence": "raw_10/raw_29: solid vertical from CHGR-125A to BAT-125A"
+    },
+    {
+      "source": "BAT-125A",
+      "target": "BUS-125DC-A",
+      "type": "dc_power",
+      "evidence": "raw_10/raw_29: BAT-125A solid lower lead lands on BUS-125DC-A junction"
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "INV-120A",
+      "type": "dc_power",
+      "evidence": "raw_10/raw_29: INV-120A solid vertical lead lands on BUS-125DC-A junction"
+    },
+    {
+      "source": "INV-120A",
+      "target": "PN-RPS-A",
+      "type": "signal",
+      "evidence": "raw_10/raw_29: dashed lead from INV-120A to PN-RPS-A"
+    },
+    {
+      "source": "CONTROL-POWER-DC-DISTRIBUTION-B",
+      "target": "CB-302",
+      "type": "power",
+      "evidence": "raw_11/raw_30: CB-302 hangs from right control power/DC distribution route"
+    },
+    {
+      "source": "CB-302",
+      "target": "TR-120-B",
+      "type": "power",
+      "evidence": "raw_11/raw_30: CB-302 stacked above TR-120-B on solid feeder"
+    },
+    {
+      "source": "TR-120-B",
+      "target": "BUS-120AC-B",
+      "type": "power",
+      "evidence": "raw_11/raw_30: TR-120-B lower drop lands on BUS-120AC-B junction"
+    },
+    {
+      "source": "CONTROL-POWER-DC-DISTRIBUTION-B",
+      "target": "CHGR-125B",
+      "type": "power",
+      "evidence": "raw_11/raw_30: CHGR-125B fed from upper control power/DC distribution route"
+    },
+    {
+      "source": "CHGR-125B",
+      "target": "BAT-125B",
+      "type": "dc_power",
+      "evidence": "raw_11/raw_30: solid vertical from CHGR-125B to BAT-125B"
+    },
+    {
+      "source": "BAT-125B",
+      "target": "BUS-125DC-B",
+      "type": "dc_power",
+      "evidence": "raw_11/raw_30: BAT-125B solid lower lead lands on BUS-125DC-B junction"
+    },
+    {
+      "source": "BUS-125DC-B",
+      "target": "INV-120B",
+      "type": "dc_power",
+      "evidence": "raw_11/raw_30: INV-120B solid vertical lead lands on BUS-125DC-B junction"
+    },
+    {
+      "source": "INV-120B",
+      "target": "PN-RPS-B",
+      "type": "signal",
+      "evidence": "raw_11/raw_30: dashed lead from INV-120B to PN-RPS-B"
+    }
+  ],
+  "uncertain_edges": [
+    {
+      "source": "BUS-480-A",
+      "target": "CONTROL-POWER-DC-DISTRIBUTION-A",
+      "reason": "raw_16 shows a long solid route from the BUS-480-A/load-area perimeter into the lower control power/DC area, but it overlaps the enclosure/boundary styling and is better treated as a route-continuation ambiguity"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CONTROL-POWER-DC-DISTRIBUTION-B",
+      "reason": "raw_16 shows a long solid route from the BUS-480-B/load-area perimeter into the lower control power/DC area, but it overlaps the enclosure/boundary styling and is better treated as a route-continuation ambiguity"
+    },
+    {
+      "source": "CONTROL-POWER-DC-DISTRIBUTION-A",
+      "target": "CONTROL-POWER-DC-DISTRIBUTION-B",
+      "reason": "the lower control-power/DC enclosure/header appears visually continuous across the sheet, but it may be only a drawing boundary rather than an electrical tie between divisions"
+    },
+    {
+      "source": "LS-MOV601",
+      "target": "VALVE-MOV601",
+      "reason": "raw_23 shows a dotted branch near the MOV signal run down to LS-MOV601, but the branch/junction at the horizontal signal line is not marked clearly enough to assert as a direct endpoint connection"
+    },
+    {
+      "source": "LS-MOV601",
+      "target": "INST-601",
+      "reason": "LS-MOV601 is visually adjacent to the INST-601/VALVE-MOV601 dotted signal path, but the exact tee endpoint is unclear and no explicit junction dot is visible"
+    },
+    {
+      "source": "INST-601",
+      "target": "JB-601",
+      "reason": "the MOV train bottom signal may pass from INST-601 through LS-MOV601 before JB-601; the vertical dotted continuation is visually clearer below LS-MOV601 than directly below INST-601"
+    }
+  ],
+  "removed_edges": [],
+  "added_edges": [],
+  "label_corrections": [],
+  "notes": [
+    "Raw schematic was treated as primary evidence; overlay/crops were used only as visual aids.",
+    "Only direct component-to-component or component-to-logical-bus/header connections are asserted.",
+    "No direct edges are asserted through device chains; for example bus-to-load shortcuts and relay/MCC chain shortcuts are excluded.",
+    "Crossings without junction dots are not encoded as connected.",
+    "CONTROL-POWER-DC-DISTRIBUTION-A/B long route continuations and the possible shared lower enclosure/header interpretation remain uncertain and are not encoded as 1s.",
+    "For the MOV601 signal branch, only VALVE-MOV601 to INST-601 and LS-MOV601 to JB-601 are asserted; LS/INST/valve tee relationships without a clear junction dot remain uncertain.",
+    "Precision review retained 199 asserted undirected edges, with 6 uncertain edges excluded from the matrix."
+  ]
+}

@@ -1,0 +1,9 @@
+source,target,reason
+CB-UAT-A,BUS-4160A,No visible downstream edge from CB-UAT-A to a 4160 bus.
+CB-UAT-B,BUS-4160B,No visible downstream edge from CB-UAT-B to a 4160 bus.
+BUS-4160A,TR-480-A1,Direct edge replaced by BUS-4160A -> TB-RPS-A -> TR-480-A1.
+BUS-4160B,TB-RPS-B,TB-RPS-B is dashed PT/control only; no solid B-side transformer feeder edge.
+TB-RPS-B,TR-480-D1,B-side transformer feeder is separate from TB-RPS-B.
+RELAY-K101,RELAY-K102,No relay-to-relay edge confirmed; dashed branches are PLC-to-device.
+PLC-RPS-A,PNL-ANN-A,"Annunciator connection is via RELAY-K102, not direct from PLC."
+PLC-RPS-B,PNL-ANN-B,"Annunciator connection is via RELAY-K202, not direct from PLC."

@@ -1,0 +1,1028 @@
+{
+  "document": "18",
+  "iteration": "2",
+  "round": "2",
+  "agent": "Jennifer",
+  "final_status": "saturation_agreement_no_new_visual_corrections",
+  "source_restriction": "Doc18 Raw + components and listed round outputs only; no GT, no GT-derived feedback, no Raw+wires, no OCR engines, no web",
+  "node_count": 202,
+  "nodes": [
+    {
+      "id": "GRID-SWYD-1",
+      "type": "unknown",
+      "evidence": "upper left AC source circle labeled GRID-SWYD 1"
+    },
+    {
+      "id": "CB-GRID-A",
+      "type": "breaker",
+      "evidence": "upper left breaker/protector between GRID-SWYD 1 and BB-SWYD-230"
+    },
+    {
+      "id": "GRID-SWYD-2",
+      "type": "unknown",
+      "evidence": "upper left AC source circle labeled GRID-SWYD 2"
+    },
+    {
+      "id": "CB-GRID-B",
+      "type": "breaker",
+      "evidence": "upper left breaker/protector between GRID-SWYD 2 and BB-SWYD-230"
+    },
+    {
+      "id": "BB-SWYD-230",
+      "type": "bus",
+      "evidence": "top heavy horizontal bus labeled BB-SWYD-230"
+    },
+    {
+      "id": "CB-GEN-ISO",
+      "type": "breaker",
+      "evidence": "upper generator isolation breaker on top horizontal source line"
+    },
+    {
+      "id": "GEN-MAIN-1",
+      "type": "unknown",
+      "evidence": "upper right AC generator/source circle labeled GEN-MAIN-1"
+    },
+    {
+      "id": "TR-UAT-1A",
+      "type": "transformer",
+      "evidence": "upper right transformer branch below GEN-MAIN-1 labeled TR-UAT-1A"
+    },
+    {
+      "id": "CB-UAT-A",
+      "type": "breaker",
+      "evidence": "breaker below TR-UAT-1A"
+    },
+    {
+      "id": "TR-UAT-1B",
+      "type": "transformer",
+      "evidence": "upper right transformer branch below GEN-MAIN-1 labeled TR-UAT-1B"
+    },
+    {
+      "id": "CB-UAT-B",
+      "type": "breaker",
+      "evidence": "breaker below TR-UAT-1B"
+    },
+    {
+      "id": "TR-SAT-1A",
+      "type": "transformer",
+      "evidence": "transformer between BB-SWYD-230 and BUS-4160A"
+    },
+    {
+      "id": "CB-SAT-A",
+      "type": "breaker",
+      "evidence": "breaker below TR-SAT-1A feeding BUS-4160A"
+    },
+    {
+      "id": "BUS-4160A",
+      "type": "bus",
+      "evidence": "upper-middle heavy bus labeled BUS-4160A"
+    },
+    {
+      "id": "DG-1A",
+      "type": "unknown",
+      "evidence": "left AC source circle labeled DG-1A"
+    },
+    {
+      "id": "CB-DG-A",
+      "type": "breaker",
+      "evidence": "breaker/protector between DG-1A and BUS-4160A"
+    },
+    {
+      "id": "PT-4160A",
+      "type": "instrument",
+      "evidence": "dashed tap from BUS-4160A labeled PT-4160A"
+    },
+    {
+      "id": "FU-PT-A",
+      "type": "fuse",
+      "evidence": "dashed control/signal chain fuse labeled FU-PT-A"
+    },
+    {
+      "id": "XFMR-CTRL-A",
+      "type": "transformer",
+      "evidence": "dashed control/signal transformer labeled XFMR-CTRL A"
+    },
+    {
+      "id": "TB-RPS-A",
+      "type": "unknown",
+      "evidence": "terminal block on BUS-4160A RPS/480A branch labeled TB-RPS-A"
+    },
+    {
+      "id": "SW-43A",
+      "type": "instrument",
+      "evidence": "switch symbol at end of Train A 4160 signal chain labeled SW-43A"
+    },
+    {
+      "id": "TR-480-A1",
+      "type": "transformer",
+      "evidence": "transformer below TB-RPS-A labeled TR-480-A1"
+    },
+    {
+      "id": "CB-480A-IN",
+      "type": "breaker",
+      "evidence": "incoming breaker below TR-480-A1 labeled CB-480A-IN"
+    },
+    {
+      "id": "GND-4160A",
+      "type": "ground",
+      "evidence": "ground symbol tapped from BUS-4160A"
+    },
+    {
+      "id": "TR-480-B1",
+      "type": "transformer",
+      "evidence": "transformer branch from BUS-4160A to BUS-480B labeled TR-480-B1"
+    },
+    {
+      "id": "CB-480B-IN",
+      "type": "breaker",
+      "evidence": "incoming breaker below TR-480-B1 labeled CB-480B-IN"
+    },
+    {
+      "id": "CB-4160-TIE",
+      "type": "breaker",
+      "evidence": "tie breaker between BUS-4160A and BUS-4160B labeled CB-4160 TIE"
+    },
+    {
+      "id": "BUS-4160B",
+      "type": "bus",
+      "evidence": "upper-middle/right heavy bus labeled BUS-4160B"
+    },
+    {
+      "id": "GND-4160B",
+      "type": "ground",
+      "evidence": "ground symbol tapped from BUS-4160B"
+    },
+    {
+      "id": "TR-SAT-1B",
+      "type": "transformer",
+      "evidence": "transformer between BB-SWYD-230 and BUS-4160B"
+    },
+    {
+      "id": "CB-SAT-B",
+      "type": "breaker",
+      "evidence": "breaker below TR-SAT-1B feeding BUS-4160B"
+    },
+    {
+      "id": "TR-480-C1",
+      "type": "transformer",
+      "evidence": "transformer branch from BUS-4160B to BUS-480C labeled TR-480-C1"
+    },
+    {
+      "id": "CB-480C-IN",
+      "type": "breaker",
+      "evidence": "incoming breaker below TR-480-C1 labeled CB-480C-IN"
+    },
+    {
+      "id": "PT-4160B",
+      "type": "instrument",
+      "evidence": "dashed tap from BUS-4160B labeled PT-4160B"
+    },
+    {
+      "id": "FU-PT-B",
+      "type": "fuse",
+      "evidence": "dashed control/signal chain fuse labeled FU-PT-B"
+    },
+    {
+      "id": "XFMR-CTRL-B",
+      "type": "transformer",
+      "evidence": "dashed control/signal transformer labeled XFMR-CTRL B"
+    },
+    {
+      "id": "TB-RPS-B",
+      "type": "unknown",
+      "evidence": "terminal block in BUS-4160B RPS dashed chain labeled TB-RPS-B"
+    },
+    {
+      "id": "SW-43B",
+      "type": "instrument",
+      "evidence": "switch symbol at end of Train B 4160 signal chain labeled SW-43B"
+    },
+    {
+      "id": "TR-480-D1",
+      "type": "transformer",
+      "evidence": "transformer branch from BUS-4160B to BUS-480D labeled TR-480-D1"
+    },
+    {
+      "id": "CB-480D-IN",
+      "type": "breaker",
+      "evidence": "incoming breaker below TR-480-D1 labeled CB-480D-IN"
+    },
+    {
+      "id": "CB-DG-B",
+      "type": "breaker",
+      "evidence": "right breaker/protector between DG-1B and BUS-4160B"
+    },
+    {
+      "id": "DG-1B",
+      "type": "unknown",
+      "evidence": "right AC source circle labeled DG-1B"
+    },
+    {
+      "id": "BUS-480A",
+      "type": "bus",
+      "evidence": "left 480 V load-center bus labeled BUS-480A"
+    },
+    {
+      "id": "CB-A01",
+      "type": "breaker",
+      "evidence": "vertical feeder A01 below BUS-480A, label CB-A01"
+    },
+    {
+      "id": "DS-A01",
+      "type": "disconnect",
+      "evidence": "vertical feeder A01 below BUS-480A, label DS-A01"
+    },
+    {
+      "id": "MS-A01",
+      "type": "unknown",
+      "evidence": "vertical feeder A01 below BUS-480A, label MS-A01"
+    },
+    {
+      "id": "PUMP-CCW-A1",
+      "type": "load",
+      "evidence": "vertical feeder A01 below BUS-480A, label PUMP-CCW-A1"
+    },
+    {
+      "id": "CB-A02",
+      "type": "breaker",
+      "evidence": "vertical feeder A02 below BUS-480A, label CB-A02"
+    },
+    {
+      "id": "DS-A02",
+      "type": "disconnect",
+      "evidence": "vertical feeder A02 below BUS-480A, label DS-A02"
+    },
+    {
+      "id": "MS-A02",
+      "type": "unknown",
+      "evidence": "vertical feeder A02 below BUS-480A, label MS-A02"
+    },
+    {
+      "id": "PUMP-RHR-A1",
+      "type": "load",
+      "evidence": "vertical feeder A02 below BUS-480A, label PUMP-RHR-A1"
+    },
+    {
+      "id": "CB-A03",
+      "type": "breaker",
+      "evidence": "vertical feeder A03 below BUS-480A, label CB-A03"
+    },
+    {
+      "id": "FS-A03",
+      "type": "fuse",
+      "evidence": "vertical feeder A03 below BUS-480A, label FS-A03"
+    },
+    {
+      "id": "MS-A03",
+      "type": "unknown",
+      "evidence": "vertical feeder A03 below BUS-480A, label MS-A03"
+    },
+    {
+      "id": "FAN-RB-A1",
+      "type": "load",
+      "evidence": "vertical feeder A03 below BUS-480A, label FAN-RB-A1"
+    },
+    {
+      "id": "CB-A04",
+      "type": "breaker",
+      "evidence": "vertical feeder A04 below BUS-480A, label CB-A04"
+    },
+    {
+      "id": "DS-A04",
+      "type": "disconnect",
+      "evidence": "vertical feeder A04 below BUS-480A, label DS-A04"
+    },
+    {
+      "id": "RY-A04",
+      "type": "instrument",
+      "evidence": "vertical feeder A04 below BUS-480A, label RY-A04"
+    },
+    {
+      "id": "MOV-SI-A11",
+      "type": "load",
+      "evidence": "vertical feeder A04 below BUS-480A, label MOV-SI-A11"
+    },
+    {
+      "id": "CB-A05",
+      "type": "breaker",
+      "evidence": "vertical feeder A05 below BUS-480A, label CB-A05"
+    },
+    {
+      "id": "DS-A05",
+      "type": "disconnect",
+      "evidence": "vertical feeder A05 below BUS-480A, label DS-A05"
+    },
+    {
+      "id": "CP-A05",
+      "type": "panel",
+      "evidence": "vertical feeder A05 below BUS-480A, label CP-A05"
+    },
+    {
+      "id": "PNL-LTG-A1",
+      "type": "panel",
+      "evidence": "vertical feeder A05 below BUS-480A, label PNL-LTG-A1"
+    },
+    {
+      "id": "CB-A06",
+      "type": "breaker",
+      "evidence": "vertical feeder A06 below BUS-480A, label CB-A06"
+    },
+    {
+      "id": "DS-A06",
+      "type": "disconnect",
+      "evidence": "vertical feeder A06 below BUS-480A, label DS-A06"
+    },
+    {
+      "id": "MS-A06",
+      "type": "unknown",
+      "evidence": "vertical feeder A06 below BUS-480A, label MS-A06"
+    },
+    {
+      "id": "PUMP-AFW-A1",
+      "type": "load",
+      "evidence": "vertical feeder A06 below BUS-480A, label PUMP-AFW-A1"
+    },
+    {
+      "id": "CB-A07",
+      "type": "breaker",
+      "evidence": "vertical feeder A07 below BUS-480A, label CB-A07"
+    },
+    {
+      "id": "FS-A07",
+      "type": "fuse",
+      "evidence": "vertical feeder A07 below BUS-480A, label FS-A07"
+    },
+    {
+      "id": "FU-A07",
+      "type": "fuse",
+      "evidence": "vertical feeder A07 below BUS-480A, label FU-A07"
+    },
+    {
+      "id": "HTR-PZR-A1",
+      "type": "load",
+      "evidence": "vertical feeder A07 below BUS-480A, label HTR-PZR-A1"
+    },
+    {
+      "id": "CB-A08",
+      "type": "breaker",
+      "evidence": "vertical feeder A08 below BUS-480A, label CB-A08"
+    },
+    {
+      "id": "DS-A08",
+      "type": "disconnect",
+      "evidence": "vertical feeder A08 below BUS-480A, label DS-A08"
+    },
+    {
+      "id": "TB-A08",
+      "type": "unknown",
+      "evidence": "vertical feeder A08 below BUS-480A, label TB-A08"
+    },
+    {
+      "id": "SPARE-A8",
+      "type": "unknown",
+      "evidence": "vertical feeder A08 below BUS-480A, label SPARE-A8"
+    },
+    {
+      "id": "BUS-480B",
+      "type": "bus",
+      "evidence": "second 480 V load-center bus labeled BUS-480B"
+    },
+    {
+      "id": "CB-B01",
+      "type": "breaker",
+      "evidence": "vertical feeder B01 below BUS-480B, label CB-B01"
+    },
+    {
+      "id": "DS-B01",
+      "type": "disconnect",
+      "evidence": "vertical feeder B01 below BUS-480B, label DS-B01"
+    },
+    {
+      "id": "MS-B01",
+      "type": "unknown",
+      "evidence": "vertical feeder B01 below BUS-480B, label MS-B01"
+    },
+    {
+      "id": "PUMP-CCW-B1",
+      "type": "load",
+      "evidence": "vertical feeder B01 below BUS-480B, label PUMP-CCW-B1"
+    },
+    {
+      "id": "CB-B02",
+      "type": "breaker",
+      "evidence": "vertical feeder B02 below BUS-480B, label CB-B02"
+    },
+    {
+      "id": "DS-B02",
+      "type": "disconnect",
+      "evidence": "vertical feeder B02 below BUS-480B, label DS-B02"
+    },
+    {
+      "id": "MS-B02",
+      "type": "unknown",
+      "evidence": "vertical feeder B02 below BUS-480B, label MS-B02"
+    },
+    {
+      "id": "PUMP-RHR-B1",
+      "type": "load",
+      "evidence": "vertical feeder B02 below BUS-480B, label PUMP-RHR-B1"
+    },
+    {
+      "id": "CB-B03",
+      "type": "breaker",
+      "evidence": "vertical feeder B03 below BUS-480B, label CB-B03"
+    },
+    {
+      "id": "FS-B03",
+      "type": "fuse",
+      "evidence": "vertical feeder B03 below BUS-480B, label FS-B03"
+    },
+    {
+      "id": "MS-B03",
+      "type": "unknown",
+      "evidence": "vertical feeder B03 below BUS-480B, label MS-B03"
+    },
+    {
+      "id": "FAN-FUEL-B1",
+      "type": "load",
+      "evidence": "vertical feeder B03 below BUS-480B, label FAN-FUEL-B1"
+    },
+    {
+      "id": "CB-B04",
+      "type": "breaker",
+      "evidence": "vertical feeder B04 below BUS-480B, label CB-B04"
+    },
+    {
+      "id": "DS-B04",
+      "type": "disconnect",
+      "evidence": "vertical feeder B04 below BUS-480B, label DS-B04"
+    },
+    {
+      "id": "RY-B04",
+      "type": "instrument",
+      "evidence": "vertical feeder B04 below BUS-480B, label RY-B04"
+    },
+    {
+      "id": "MOV-CCW-B21",
+      "type": "load",
+      "evidence": "vertical feeder B04 below BUS-480B, label MOV-CCW-B21"
+    },
+    {
+      "id": "CB-B05",
+      "type": "breaker",
+      "evidence": "vertical feeder B05 below BUS-480B, label CB-B05"
+    },
+    {
+      "id": "DS-B05",
+      "type": "disconnect",
+      "evidence": "vertical feeder B05 below BUS-480B, label DS-B05"
+    },
+    {
+      "id": "CP-B05",
+      "type": "panel",
+      "evidence": "vertical feeder B05 below BUS-480B, label CP-B05"
+    },
+    {
+      "id": "MCC-AUX-B6",
+      "type": "mcc",
+      "evidence": "vertical feeder B05 below BUS-480B, label MCC-AUX-B6"
+    },
+    {
+      "id": "CB-B06",
+      "type": "breaker",
+      "evidence": "vertical feeder B06 below BUS-480B, label CB-B06"
+    },
+    {
+      "id": "DS-B06",
+      "type": "disconnect",
+      "evidence": "vertical feeder B06 below BUS-480B, label DS-B06"
+    },
+    {
+      "id": "MS-B06",
+      "type": "unknown",
+      "evidence": "vertical feeder B06 below BUS-480B, label MS-B06"
+    },
+    {
+      "id": "AIR-CMP-B1",
+      "type": "load",
+      "evidence": "vertical feeder B06 below BUS-480B, label AIR-CMP-B1"
+    },
+    {
+      "id": "CB-B07",
+      "type": "breaker",
+      "evidence": "vertical feeder B07 below BUS-480B, label CB-B07"
+    },
+    {
+      "id": "FS-B07",
+      "type": "fuse",
+      "evidence": "vertical feeder B07 below BUS-480B, label FS-B07"
+    },
+    {
+      "id": "RY-B07",
+      "type": "instrument",
+      "evidence": "vertical feeder B07 below BUS-480B, label RY-B07"
+    },
+    {
+      "id": "VLV-CHG-B1",
+      "type": "load",
+      "evidence": "vertical feeder B07 below BUS-480B, label VLV-CHG-B1"
+    },
+    {
+      "id": "BUS-480C",
+      "type": "bus",
+      "evidence": "third 480 V load-center bus labeled BUS-480C"
+    },
+    {
+      "id": "CB-C01",
+      "type": "breaker",
+      "evidence": "vertical feeder C01 below BUS-480C, label CB-C01"
+    },
+    {
+      "id": "DS-C01",
+      "type": "disconnect",
+      "evidence": "vertical feeder C01 below BUS-480C, label DS-C01"
+    },
+    {
+      "id": "MS-C01",
+      "type": "unknown",
+      "evidence": "vertical feeder C01 below BUS-480C, label MS-C01"
+    },
+    {
+      "id": "PUMP-HPCI-C1",
+      "type": "load",
+      "evidence": "vertical feeder C01 below BUS-480C, label PUMP-HPCI-C1"
+    },
+    {
+      "id": "CB-C02",
+      "type": "breaker",
+      "evidence": "vertical feeder C02 below BUS-480C, label CB-C02"
+    },
+    {
+      "id": "DS-C02",
+      "type": "disconnect",
+      "evidence": "vertical feeder C02 below BUS-480C, label DS-C02"
+    },
+    {
+      "id": "MS-C02",
+      "type": "unknown",
+      "evidence": "vertical feeder C02 below BUS-480C, label MS-C02"
+    },
+    {
+      "id": "PUMP-RCW-C1",
+      "type": "load",
+      "evidence": "vertical feeder C02 below BUS-480C, label PUMP-RCW-C1"
+    },
+    {
+      "id": "CB-C03",
+      "type": "breaker",
+      "evidence": "vertical feeder C03 below BUS-480C, label CB-C03"
+    },
+    {
+      "id": "FS-C03",
+      "type": "fuse",
+      "evidence": "vertical feeder C03 below BUS-480C, label FS-C03"
+    },
+    {
+      "id": "MS-C03",
+      "type": "unknown",
+      "evidence": "vertical feeder C03 below BUS-480C, label MS-C03"
+    },
+    {
+      "id": "FAN-RB-C1",
+      "type": "load",
+      "evidence": "vertical feeder C03 below BUS-480C, label FAN-RB-C1"
+    },
+    {
+      "id": "CB-C04",
+      "type": "breaker",
+      "evidence": "vertical feeder C04 below BUS-480C, label CB-C04"
+    },
+    {
+      "id": "DS-C04",
+      "type": "disconnect",
+      "evidence": "vertical feeder C04 below BUS-480C, label DS-C04"
+    },
+    {
+      "id": "RY-C04",
+      "type": "instrument",
+      "evidence": "vertical feeder C04 below BUS-480C, label RY-C04"
+    },
+    {
+      "id": "MOV-RHR-C11",
+      "type": "load",
+      "evidence": "vertical feeder C04 below BUS-480C, label MOV-RHR-C11"
+    },
+    {
+      "id": "CB-C05",
+      "type": "breaker",
+      "evidence": "vertical feeder C05 below BUS-480C, label CB-C05"
+    },
+    {
+      "id": "DS-C05",
+      "type": "disconnect",
+      "evidence": "vertical feeder C05 below BUS-480C, label DS-C05"
+    },
+    {
+      "id": "MS-C05",
+      "type": "unknown",
+      "evidence": "vertical feeder C05 below BUS-480C, label MS-C05"
+    },
+    {
+      "id": "PUMP-SEAL-C1",
+      "type": "load",
+      "evidence": "vertical feeder C05 below BUS-480C, label PUMP-SEAL-C1"
+    },
+    {
+      "id": "CB-C06",
+      "type": "breaker",
+      "evidence": "vertical feeder C06 below BUS-480C, label CB-C06"
+    },
+    {
+      "id": "DS-C06",
+      "type": "disconnect",
+      "evidence": "vertical feeder C06 below BUS-480C, label DS-C06"
+    },
+    {
+      "id": "CP-C06",
+      "type": "panel",
+      "evidence": "vertical feeder C06 below BUS-480C, label CP-C06"
+    },
+    {
+      "id": "PNL-IC-C7",
+      "type": "panel",
+      "evidence": "vertical feeder C06 below BUS-480C, label PNL-IC-C7"
+    },
+    {
+      "id": "CB-C07",
+      "type": "breaker",
+      "evidence": "vertical feeder C07 below BUS-480C, label CB-C07"
+    },
+    {
+      "id": "FS-C07",
+      "type": "fuse",
+      "evidence": "vertical feeder C07 below BUS-480C, label FS-C07"
+    },
+    {
+      "id": "MS-C07",
+      "type": "unknown",
+      "evidence": "vertical feeder C07 below BUS-480C, label MS-C07"
+    },
+    {
+      "id": "SUMP-PMP-C1",
+      "type": "load",
+      "evidence": "vertical feeder C07 below BUS-480C, label SUMP-PMP-C1"
+    },
+    {
+      "id": "CB-C08",
+      "type": "breaker",
+      "evidence": "vertical feeder C08 below BUS-480C, label CB-C08"
+    },
+    {
+      "id": "DS-C08",
+      "type": "disconnect",
+      "evidence": "vertical feeder C08 below BUS-480C, label DS-C08"
+    },
+    {
+      "id": "FU-C08",
+      "type": "fuse",
+      "evidence": "vertical feeder C08 below BUS-480C, label FU-C08"
+    },
+    {
+      "id": "HTR-VENT-C2",
+      "type": "load",
+      "evidence": "vertical feeder C08 below BUS-480C, label HTR-VENT-C2"
+    },
+    {
+      "id": "BUS-480D",
+      "type": "bus",
+      "evidence": "right 480 V load-center bus labeled BUS-480D"
+    },
+    {
+      "id": "CB-D01",
+      "type": "breaker",
+      "evidence": "vertical feeder D01 below BUS-480D, label CB-D01"
+    },
+    {
+      "id": "DS-D01",
+      "type": "disconnect",
+      "evidence": "vertical feeder D01 below BUS-480D, label DS-D01"
+    },
+    {
+      "id": "MS-D01",
+      "type": "unknown",
+      "evidence": "vertical feeder D01 below BUS-480D, label MS-D01"
+    },
+    {
+      "id": "PUMP-AFW-D1",
+      "type": "load",
+      "evidence": "vertical feeder D01 below BUS-480D, label PUMP-AFW-D1"
+    },
+    {
+      "id": "CB-D02",
+      "type": "breaker",
+      "evidence": "vertical feeder D02 below BUS-480D, label CB-D02"
+    },
+    {
+      "id": "DS-D02",
+      "type": "disconnect",
+      "evidence": "vertical feeder D02 below BUS-480D, label DS-D02"
+    },
+    {
+      "id": "MS-D02",
+      "type": "unknown",
+      "evidence": "vertical feeder D02 below BUS-480D, label MS-D02"
+    },
+    {
+      "id": "FAN-CR-D1",
+      "type": "load",
+      "evidence": "vertical feeder D02 below BUS-480D, label FAN-CR-D1"
+    },
+    {
+      "id": "CB-D03",
+      "type": "breaker",
+      "evidence": "vertical feeder D03 below BUS-480D, label CB-D03"
+    },
+    {
+      "id": "FS-D03",
+      "type": "fuse",
+      "evidence": "vertical feeder D03 below BUS-480D, label FS-D03"
+    },
+    {
+      "id": "RY-D03",
+      "type": "instrument",
+      "evidence": "vertical feeder D03 below BUS-480D, label RY-D03"
+    },
+    {
+      "id": "MOV-SI-D21",
+      "type": "load",
+      "evidence": "vertical feeder D03 below BUS-480D, label MOV-SI-D21"
+    },
+    {
+      "id": "CB-D04",
+      "type": "breaker",
+      "evidence": "vertical feeder D04 below BUS-480D, label CB-D04"
+    },
+    {
+      "id": "DS-D04",
+      "type": "disconnect",
+      "evidence": "vertical feeder D04 below BUS-480D, label DS-D04"
+    },
+    {
+      "id": "MS-D04",
+      "type": "unknown",
+      "evidence": "vertical feeder D04 below BUS-480D, label MS-D04"
+    },
+    {
+      "id": "PUMP-LUBE-D1",
+      "type": "load",
+      "evidence": "vertical feeder D04 below BUS-480D, label PUMP-LUBE-D1"
+    },
+    {
+      "id": "CB-D05",
+      "type": "breaker",
+      "evidence": "vertical feeder D05 below BUS-480D, label CB-D05"
+    },
+    {
+      "id": "DS-D05",
+      "type": "disconnect",
+      "evidence": "vertical feeder D05 below BUS-480D, label DS-D05"
+    },
+    {
+      "id": "CP-D05",
+      "type": "panel",
+      "evidence": "vertical feeder D05 below BUS-480D, label CP-D05"
+    },
+    {
+      "id": "PNL-ESS-D5",
+      "type": "panel",
+      "evidence": "vertical feeder D05 below BUS-480D, label PNL-ESS-D5"
+    },
+    {
+      "id": "CB-D06",
+      "type": "breaker",
+      "evidence": "vertical feeder D06 below BUS-480D, label CB-D06"
+    },
+    {
+      "id": "DS-D06",
+      "type": "disconnect",
+      "evidence": "vertical feeder D06 below BUS-480D, label DS-D06"
+    },
+    {
+      "id": "MS-D06",
+      "type": "unknown",
+      "evidence": "vertical feeder D06 below BUS-480D, label MS-D06"
+    },
+    {
+      "id": "COMP-AIR-D1",
+      "type": "load",
+      "evidence": "vertical feeder D06 below BUS-480D, label COMP-AIR-D1"
+    },
+    {
+      "id": "CB-D07",
+      "type": "breaker",
+      "evidence": "vertical feeder D07 below BUS-480D, label CB-D07"
+    },
+    {
+      "id": "FS-D07",
+      "type": "fuse",
+      "evidence": "vertical feeder D07 below BUS-480D, label FS-D07"
+    },
+    {
+      "id": "TB-D07",
+      "type": "unknown",
+      "evidence": "vertical feeder D07 below BUS-480D, label TB-D07"
+    },
+    {
+      "id": "SPARE-D7",
+      "type": "unknown",
+      "evidence": "vertical feeder D07 below BUS-480D, label SPARE-D7"
+    },
+    {
+      "id": "TRAIN-A-125VDC-120VAC-CONTROL-POWER",
+      "type": "logical_node",
+      "evidence": "large lower-left section title enclosing Train A control power"
+    },
+    {
+      "id": "CHG-125A",
+      "type": "dc_source",
+      "evidence": "Train A charger block labeled CHG-125A"
+    },
+    {
+      "id": "REC-125A",
+      "type": "unknown",
+      "evidence": "Train A rectifier block labeled REC-125A"
+    },
+    {
+      "id": "CB-DC-A",
+      "type": "breaker",
+      "evidence": "Train A DC breaker/protector labeled CB-DC-A"
+    },
+    {
+      "id": "BUS-125A",
+      "type": "bus",
+      "evidence": "Train A lower heavy DC bus labeled BUS-125A"
+    },
+    {
+      "id": "BAT-125A",
+      "type": "dc_source",
+      "evidence": "battery symbol below BUS-125A labeled BAT-125A"
+    },
+    {
+      "id": "GND-DC-A",
+      "type": "ground",
+      "evidence": "ground symbol tapped from BUS-125A labeled GND-DC-A"
+    },
+    {
+      "id": "INV-120A",
+      "type": "instrument",
+      "evidence": "DC/AC inverter block at right of BUS-125A labeled INV-120A"
+    },
+    {
+      "id": "UPS-120A",
+      "type": "instrument",
+      "evidence": "UPS block dashed from INV-120A labeled UPS-120A"
+    },
+    {
+      "id": "BUS-120A",
+      "type": "bus",
+      "evidence": "Train A 120 V bus labeled BUS-120A"
+    },
+    {
+      "id": "RPS-PNL-A",
+      "type": "panel",
+      "evidence": "Train A RPS panel block above BUS-120A labeled RPS-PNL-A"
+    },
+    {
+      "id": "PLC-RPS-A",
+      "type": "instrument",
+      "evidence": "Train A PLC block dashed from RPS-PNL-A labeled PLC-RPS-A"
+    },
+    {
+      "id": "RELAY-K101",
+      "type": "instrument",
+      "evidence": "Train A dashed relay contact labeled RELAY-K101"
+    },
+    {
+      "id": "RELAY-K102",
+      "type": "instrument",
+      "evidence": "Train A dashed relay contact labeled RELAY-K102"
+    },
+    {
+      "id": "RELAY-K103",
+      "type": "instrument",
+      "evidence": "Train A dashed relay contact labeled RELAY-K103"
+    },
+    {
+      "id": "RELAY-K104",
+      "type": "instrument",
+      "evidence": "Train A dashed relay contact labeled RELAY-K104"
+    },
+    {
+      "id": "JB-RPS-A",
+      "type": "panel",
+      "evidence": "Train A junction block at top right of dashed relay network labeled JB-RPS-A"
+    },
+    {
+      "id": "PNL-ANN-A",
+      "type": "panel",
+      "evidence": "Train A annunciator panel at right of dashed relay network labeled PNL-ANN-A"
+    },
+    {
+      "id": "TRAIN-B-125VDC-120VAC-CONTROL-POWER",
+      "type": "logical_node",
+      "evidence": "large lower-center/right section title enclosing Train B control power"
+    },
+    {
+      "id": "CHG-125B",
+      "type": "dc_source",
+      "evidence": "Train B charger block labeled CHG-125B"
+    },
+    {
+      "id": "REC-125B",
+      "type": "unknown",
+      "evidence": "Train B rectifier block labeled REC-125B"
+    },
+    {
+      "id": "CB-DC-B",
+      "type": "breaker",
+      "evidence": "Train B DC breaker/protector labeled CB-DC-B"
+    },
+    {
+      "id": "BUS-125B",
+      "type": "bus",
+      "evidence": "Train B lower heavy DC bus labeled BUS-125B"
+    },
+    {
+      "id": "BAT-125B",
+      "type": "dc_source",
+      "evidence": "battery symbol below BUS-125B labeled BAT-125B"
+    },
+    {
+      "id": "GND-DC-B",
+      "type": "ground",
+      "evidence": "ground symbol tapped from BUS-125B labeled GND-DC-B"
+    },
+    {
+      "id": "INV-120B",
+      "type": "instrument",
+      "evidence": "DC/AC inverter block at right of BUS-125B labeled INV-120B"
+    },
+    {
+      "id": "UPS-120B",
+      "type": "instrument",
+      "evidence": "UPS block dashed from INV-120B labeled UPS-120B"
+    },
+    {
+      "id": "BUS-120B",
+      "type": "bus",
+      "evidence": "Train B 120 V bus labeled BUS-120B"
+    },
+    {
+      "id": "RPS-PNL-B",
+      "type": "panel",
+      "evidence": "Train B RPS panel block above BUS-120B labeled RPS-PNL-B"
+    },
+    {
+      "id": "PLC-RPS-B",
+      "type": "instrument",
+      "evidence": "Train B PLC block dashed from RPS-PNL-B labeled PLC-RPS-B"
+    },
+    {
+      "id": "RELAY-K201",
+      "type": "instrument",
+      "evidence": "Train B dashed relay contact labeled RELAY-K201"
+    },
+    {
+      "id": "RELAY-K202",
+      "type": "instrument",
+      "evidence": "Train B dashed relay contact labeled RELAY-K202"
+    },
+    {
+      "id": "RELAY-K203",
+      "type": "instrument",
+      "evidence": "Train B dashed relay contact labeled RELAY-K203"
+    },
+    {
+      "id": "RELAY-K204",
+      "type": "instrument",
+      "evidence": "Train B dashed relay contact labeled RELAY-K204"
+    },
+    {
+      "id": "JB-RPS-B",
+      "type": "panel",
+      "evidence": "Train B junction block at top right of dashed relay network labeled JB-RPS-B"
+    },
+    {
+      "id": "PNL-ANN-B",
+      "type": "panel",
+      "evidence": "Train B annunciator panel at right of dashed relay network labeled PNL-ANN-B"
+    }
+  ],
+  "notes": [
+    "Diego round 2 node order, asserted edge set, uncertain edge set, and matrix cells match Jennifer round 1 refined outputs exactly.",
+    "No additional visually supported correction is visible in the allowed raw schematic and derived component overlays; final decision is saturated agreement.",
+    "Right-side BUS-4160B / PT-4160B / FU-PT-B / XFMR-CTRL-B / TB-RPS-B / SW-43B remains treated as the visible dashed control chain, separate from the solid TR-480-D1 to CB-480D-IN to BUS-480D feeder.",
+    "Dashed relay-annunciator groups remain conservative: edges are asserted only where the dashed line visibly terminates at symbols; nearby dashed route/enclosure segments are not promoted to connectivity.",
+    "removed_edges carries Jennifer round 1 demotions from asserted to uncertain; there are no new round 2 additions, removals, or label corrections."
+  ]
+}

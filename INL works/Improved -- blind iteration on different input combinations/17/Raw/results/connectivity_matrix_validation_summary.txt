@@ -1,0 +1,77 @@
+Connectivity matrix validation summary - Document 17
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\17\synthetic_npp_aux_power_schematic_overlap_fixed_connectivity_matrix.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_matrix.csv): TP=185, FP=18, FN=24, Precision=0.911330, Recall=0.885167, F1=0.898058
+- Jennifer -- Round 2 (round_02_jennifer_matrix.csv): TP=183, FP=16, FN=26, Precision=0.919598, Recall=0.875598, F1=0.897059
+- Diego -- Round 3 (round_03_diego_saturation_matrix.csv): TP=183, FP=16, FN=26, Precision=0.919598, Recall=0.875598, F1=0.897059
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=183, FP=16, FN=26, Precision=0.919598, Recall=0.875598, F1=0.897059
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=183, FP=16, FN=26, Precision=0.919598, Recall=0.875598, F1=0.897059
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- CB-DG-1A -- DGS-1A
+- CB-DG-1B -- DGS-1B
+- GEN-001 MAIN GEN -- UAT-1A
+- GEN-001 MAIN GEN -- UAT-1B
+- GND-AHU-1A -- HTR-AHU-1A
+- GND-AHU-1B -- HTR-AHU-1B
+- HOV-RHR-102A -- LS-RHR-102A
+- HOV-RHR-102A -- RELAY-K107A
+- HOV-RHR-102B -- LS-RHR-102B
+- HOV-RHR-102B -- RELAY-K207B
+
+False-negative edge examples:
+- CB-DG-1A -- DG-1A
+- CB-DG-1B -- DG-1B
+- CB-TR-A1 -- RELAY-UV-A1
+- CB-TR-A2 -- RELAY-UV-A2
+- CB-TR-B1 -- RELAY-UV-B1
+- CB-TR-B2 -- RELAY-UV-B2
+- GEN-001 -- UAT-1A
+- GEN-001 -- UAT-1B
+- GND-AHU-1A -- MTR-AHU-1A
+- GND-AHU-1B -- MTR-AHU-1B
+
+Extra/non-GT nodes causing performance drops:
+- GEN-001 MAIN GEN: 2 incident false-positive edge(s)
+- HTR-AHU-1A: 2 incident false-positive edge(s)
+- HTR-AHU-1B: 2 incident false-positive edge(s)
+- HOV-RHR-102A: 2 incident false-positive edge(s)
+- HOV-RHR-102B: 2 incident false-positive edge(s)
+- HOV-RWCU-101A: 2 incident false-positive edge(s)
+- HOV-RWCU-101B: 2 incident false-positive edge(s)
+- DGS-1A: 1 incident false-positive edge(s)
+- DGS-1B: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (GEN-001 MAIN GEN, HTR-AHU-1A, HTR-AHU-1B, HOV-RHR-102A, HOV-RHR-102B), final metrics would be TP=183, FP=6, FN=26, Precision=0.968254, Recall=0.875598, F1=0.919598.
+- If all 9 non-GT nodes were omitted, metrics would be TP=183, FP=0, FN=26, Precision=1.000000, Recall=0.875598, F1=0.933673.
+
+Missing GT node examples:
+- GEN-001: 2 missed incident GT edge(s)
+- MOV-RHR-102A: 2 missed incident GT edge(s)
+- MOV-RHR-102B: 2 missed incident GT edge(s)
+- MOV-RWCU-101A: 2 missed incident GT edge(s)
+- MOV-RWCU-101B: 2 missed incident GT edge(s)
+- MTR-AHU-1A: 2 missed incident GT edge(s)
+- MTR-AHU-1B: 2 missed incident GT edge(s)
+- DG-1A: 1 missed incident GT edge(s)
+- DG-1B: 1 missed incident GT edge(s)
+- REC-SOE-2: 1 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted HOV-RWCU-101A vs GT MOV-RWCU-101A (similarity 0.92)
+- Extracted HOV-RWCU-101B vs GT MOV-RWCU-101B (similarity 0.92)
+- Extracted HOV-RHR-102A vs GT MOV-RHR-102A (similarity 0.92)
+- Extracted HOV-RHR-102B vs GT MOV-RHR-102B (similarity 0.92)
+- Extracted DGS-1A vs GT DG-1A (similarity 0.91)
+- Extracted DGS-1B vs GT DG-1B (similarity 0.91)
+- Extracted HTR-AHU-1A vs GT MTR-AHU-1A (similarity 0.90)
+- Extracted HTR-AHU-1B vs GT MTR-AHU-1B (similarity 0.90)

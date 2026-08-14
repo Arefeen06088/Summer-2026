@@ -1,0 +1,225 @@
+source,target,edge_type,evidence
+OFFSITE-1,CB-101A,solid power/DC,offsite A solid source line
+CB-101A,TR-SAT-1A,solid power/DC,inline source transformer chain
+TR-SAT-1A,BUS-101A,solid power/DC,solid tap with junction dot
+DG-1A,CB-DG1A,solid power/DC,EDG A solid breaker feed
+CB-DG1A,BUS-101A,solid power/DC,junction dot on BUS-101A
+SW-MAN-A,TB-DG-A,dashed control/trip,generator manual control dashed path
+TB-DG-A,CB-DG1A,dashed control/trip,dashed path terminates at DG breaker
+BUS-101A,CB-201A,solid power/DC,vertical transformer feed from BUS-101A
+CB-201A,TR-1A,solid power/DC,inline transformer chain
+TR-1A,CB-202A,solid power/DC,inline transformer chain
+CB-202A,BUS-201A,solid power/DC,junction dot on BUS-201A
+BUS-101A,CB-TIE-1,solid power/DC,101 bus tie breaker
+CB-TIE-1,BUS-101B,solid power/DC,101 bus tie breaker
+OFFSITE-2,CB-101B,solid power/DC,offsite B solid source line
+CB-101B,TR-SAT-1B,solid power/DC,inline source transformer chain
+TR-SAT-1B,BUS-101B,solid power/DC,solid tap with junction dot
+DG-1B,CB-DG1B,solid power/DC,EDG B solid breaker feed
+CB-DG1B,BUS-101B,solid power/DC,junction dot on BUS-101B
+SW-MAN-B,TB-DG-B,dashed control/trip,generator manual control dashed path
+TB-DG-B,CB-DG1B,dashed control/trip,dashed path terminates at DG breaker
+BUS-101B,CB-201B,solid power/DC,vertical transformer feed from BUS-101B
+CB-201B,TR-1B,solid power/DC,inline transformer chain
+TR-1B,CB-202B,solid power/DC,inline transformer chain
+CB-202B,BUS-201B,solid power/DC,junction dot on BUS-201B
+BUS-201A,CB-2A01,solid power/DC,solid feeder tap from safety bus
+CB-2A01,DS-2A01,solid power/DC,vertical feeder chain
+DS-2A01,MCC-2A01,solid power/DC,vertical feeder chain
+MCC-2A01,TB-2A01,solid power/DC,vertical feeder chain
+TB-2A01,PUMP-P201A,solid power/DC,vertical feeder chain to load
+MCC-2A01,RELAY-K2A01,dashed control/trip,dashed MCC control drop
+BUS-201A,CB-2A02,solid power/DC,solid feeder tap from safety bus
+CB-2A02,DS-2A02,solid power/DC,vertical feeder chain
+DS-2A02,MCC-2A02,solid power/DC,vertical feeder chain
+MCC-2A02,TB-2A02,solid power/DC,vertical feeder chain
+TB-2A02,FAN-F202A,solid power/DC,vertical feeder chain to load
+MCC-2A02,RELAY-K2A02,dashed control/trip,dashed MCC control drop
+BUS-201A,CB-2A03,solid power/DC,solid feeder tap from safety bus
+CB-2A03,DS-2A03,solid power/DC,vertical feeder chain
+DS-2A03,MCC-2A03,solid power/DC,vertical feeder chain
+MCC-2A03,TB-2A03,solid power/DC,vertical feeder chain
+TB-2A03,MOV-HV203A,solid power/DC,vertical feeder chain to load
+MCC-2A03,RELAY-K2A03,dashed control/trip,dashed MCC control drop
+BUS-201A,CB-2A04,solid power/DC,solid feeder tap from safety bus
+CB-2A04,DS-2A04,solid power/DC,vertical feeder chain
+DS-2A04,MCC-2A04,solid power/DC,vertical feeder chain
+MCC-2A04,TB-2A04,solid power/DC,vertical feeder chain
+TB-2A04,PUMP-P204A,solid power/DC,vertical feeder chain to load
+MCC-2A04,RELAY-K2A04,dashed control/trip,dashed MCC control drop
+BUS-201A,CB-2A05,solid power/DC,solid feeder tap from safety bus
+CB-2A05,DS-2A05,solid power/DC,vertical feeder chain
+DS-2A05,MCC-2A05,solid power/DC,vertical feeder chain
+MCC-2A05,TB-2A05,solid power/DC,vertical feeder chain
+TB-2A05,CHLR-205A,solid power/DC,vertical feeder chain to load
+MCC-2A05,RELAY-K2A05,dashed control/trip,dashed MCC control drop
+BUS-201A,CB-2A06,solid power/DC,solid feeder tap from safety bus
+CB-2A06,DS-2A06,solid power/DC,vertical feeder chain
+DS-2A06,MCC-2A06,solid power/DC,vertical feeder chain
+MCC-2A06,TB-2A06,solid power/DC,vertical feeder chain
+TB-2A06,HTR-206A,solid power/DC,vertical feeder chain to load
+MCC-2A06,RELAY-K2A06,dashed control/trip,dashed MCC control drop
+BUS-201A,CB-2A07,solid power/DC,solid feeder tap from safety bus
+CB-2A07,DS-2A07,solid power/DC,vertical feeder chain
+DS-2A07,MCC-2A07,solid power/DC,vertical feeder chain
+MCC-2A07,TB-2A07,solid power/DC,vertical feeder chain
+TB-2A07,VALVE-MV207A,solid power/DC,vertical feeder chain to load
+MCC-2A07,RELAY-K2A07,dashed control/trip,dashed MCC control drop
+BUS-201A,CB-2A08,solid power/DC,solid feeder tap from safety bus
+CB-2A08,DS-2A08,solid power/DC,vertical feeder chain
+DS-2A08,MCC-2A08,solid power/DC,vertical feeder chain
+MCC-2A08,TB-2A08,solid power/DC,vertical feeder chain
+TB-2A08,PMP-LP208A,solid power/DC,vertical feeder chain to load
+MCC-2A08,RELAY-K2A08,dashed control/trip,dashed MCC control drop
+BUS-201A,CB-2A09,solid power/DC,solid feeder tap from safety bus
+CB-2A09,DS-2A09,solid power/DC,vertical feeder chain
+DS-2A09,MCC-2A09,solid power/DC,vertical feeder chain
+MCC-2A09,TB-2A09,solid power/DC,vertical feeder chain
+TB-2A09,COMP-C209A,solid power/DC,vertical feeder chain to load
+MCC-2A09,RELAY-K2A09,dashed control/trip,dashed MCC control drop
+HS-2A01,RELAY-K2A01,dashed control/trip,dashed HS/relay row
+RELAY-K2A01,HS-2A02,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2A02,RELAY-K2A02,dashed control/trip,dashed HS/relay row
+RELAY-K2A02,HS-2A03,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2A03,RELAY-K2A03,dashed control/trip,dashed HS/relay row
+RELAY-K2A03,HS-2A04,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2A04,RELAY-K2A04,dashed control/trip,dashed HS/relay row
+RELAY-K2A04,HS-2A05,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2A05,RELAY-K2A05,dashed control/trip,dashed HS/relay row
+RELAY-K2A05,HS-2A06,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2A06,RELAY-K2A06,dashed control/trip,dashed HS/relay row
+RELAY-K2A06,HS-2A07,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2A07,RELAY-K2A07,dashed control/trip,dashed HS/relay row
+RELAY-K2A07,HS-2A08,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2A08,RELAY-K2A08,dashed control/trip,dashed HS/relay row
+RELAY-K2A08,HS-2A09,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2A09,RELAY-K2A09,dashed control/trip,dashed HS/relay row
+BUS-201B,CB-2B01,solid power/DC,solid feeder tap from safety bus
+CB-2B01,DS-2B01,solid power/DC,vertical feeder chain
+DS-2B01,MCC-2B01,solid power/DC,vertical feeder chain
+MCC-2B01,TB-2B01,solid power/DC,vertical feeder chain
+TB-2B01,PUMP-P201B,solid power/DC,vertical feeder chain to load
+MCC-2B01,RELAY-K2B01,dashed control/trip,dashed MCC control drop
+BUS-201B,CB-2B02,solid power/DC,solid feeder tap from safety bus
+CB-2B02,DS-2B02,solid power/DC,vertical feeder chain
+DS-2B02,MCC-2B02,solid power/DC,vertical feeder chain
+MCC-2B02,TB-2B02,solid power/DC,vertical feeder chain
+TB-2B02,FAN-F202B,solid power/DC,vertical feeder chain to load
+MCC-2B02,RELAY-K2B02,dashed control/trip,dashed MCC control drop
+BUS-201B,CB-2B03,solid power/DC,solid feeder tap from safety bus
+CB-2B03,DS-2B03,solid power/DC,vertical feeder chain
+DS-2B03,MCC-2B03,solid power/DC,vertical feeder chain
+MCC-2B03,TB-2B03,solid power/DC,vertical feeder chain
+TB-2B03,MOV-HV203B,solid power/DC,vertical feeder chain to load
+MCC-2B03,RELAY-K2B03,dashed control/trip,dashed MCC control drop
+BUS-201B,CB-2B04,solid power/DC,solid feeder tap from safety bus
+CB-2B04,DS-2B04,solid power/DC,vertical feeder chain
+DS-2B04,MCC-2B04,solid power/DC,vertical feeder chain
+MCC-2B04,TB-2B04,solid power/DC,vertical feeder chain
+TB-2B04,PUMP-P204B,solid power/DC,vertical feeder chain to load
+MCC-2B04,RELAY-K2B04,dashed control/trip,dashed MCC control drop
+BUS-201B,CB-2B05,solid power/DC,solid feeder tap from safety bus
+CB-2B05,DS-2B05,solid power/DC,vertical feeder chain
+DS-2B05,MCC-2B05,solid power/DC,vertical feeder chain
+MCC-2B05,TB-2B05,solid power/DC,vertical feeder chain
+TB-2B05,CHLR-205B,solid power/DC,vertical feeder chain to load
+MCC-2B05,RELAY-K2B05,dashed control/trip,dashed MCC control drop
+BUS-201B,CB-2B06,solid power/DC,solid feeder tap from safety bus
+CB-2B06,DS-2B06,solid power/DC,vertical feeder chain
+DS-2B06,MCC-2B06,solid power/DC,vertical feeder chain
+MCC-2B06,TB-2B06,solid power/DC,vertical feeder chain
+TB-2B06,HTR-206B,solid power/DC,vertical feeder chain to load
+MCC-2B06,RELAY-K2B06,dashed control/trip,dashed MCC control drop
+BUS-201B,CB-2B07,solid power/DC,solid feeder tap from safety bus
+CB-2B07,DS-2B07,solid power/DC,vertical feeder chain
+DS-2B07,MCC-2B07,solid power/DC,vertical feeder chain
+MCC-2B07,TB-2B07,solid power/DC,vertical feeder chain
+TB-2B07,VALVE-MV207B,solid power/DC,vertical feeder chain to load
+MCC-2B07,RELAY-K2B07,dashed control/trip,dashed MCC control drop
+BUS-201B,CB-2B08,solid power/DC,solid feeder tap from safety bus
+CB-2B08,DS-2B08,solid power/DC,vertical feeder chain
+DS-2B08,MCC-2B08,solid power/DC,vertical feeder chain
+MCC-2B08,TB-2B08,solid power/DC,vertical feeder chain
+TB-2B08,PMP-LP208B,solid power/DC,vertical feeder chain to load
+MCC-2B08,RELAY-K2B08,dashed control/trip,dashed MCC control drop
+BUS-201B,CB-2B09,solid power/DC,solid feeder tap from safety bus
+CB-2B09,DS-2B09,solid power/DC,vertical feeder chain
+DS-2B09,MCC-2B09,solid power/DC,vertical feeder chain
+MCC-2B09,TB-2B09,solid power/DC,vertical feeder chain
+TB-2B09,COMP-C209B,solid power/DC,vertical feeder chain to load
+MCC-2B09,RELAY-K2B09,dashed control/trip,dashed MCC control drop
+HS-2B01,RELAY-K2B01,dashed control/trip,dashed HS/relay row
+RELAY-K2B01,HS-2B02,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2B02,RELAY-K2B02,dashed control/trip,dashed HS/relay row
+RELAY-K2B02,HS-2B03,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2B03,RELAY-K2B03,dashed control/trip,dashed HS/relay row
+RELAY-K2B03,HS-2B04,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2B04,RELAY-K2B04,dashed control/trip,dashed HS/relay row
+RELAY-K2B04,HS-2B05,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2B05,RELAY-K2B05,dashed control/trip,dashed HS/relay row
+RELAY-K2B05,HS-2B06,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2B06,RELAY-K2B06,dashed control/trip,dashed HS/relay row
+RELAY-K2B06,HS-2B07,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2B07,RELAY-K2B07,dashed control/trip,dashed HS/relay row
+RELAY-K2B07,HS-2B08,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2B08,RELAY-K2B08,dashed control/trip,dashed HS/relay row
+RELAY-K2B08,HS-2B09,dashed control/trip,dashed daisy chain across HS/relay row
+HS-2B09,RELAY-K2B09,dashed control/trip,dashed HS/relay row
+DC-BUS-125A,BAT-125A,solid power/DC,125 VDC bus tap
+DC-BUS-125A,CHG-125A,solid power/DC,125 VDC bus tap
+DC-BUS-125A,INV-120A,solid power/DC,125 VDC bus tap
+DC-BUS-125A,PNL-DC-A,solid power/DC,125 VDC bus tap
+DC-BUS-125A,METER-V1,solid power/DC,125 VDC meter tap
+PNL-DC-A,ESFAS-PNL-A,solid power/DC,solid panel link
+PNL-DC-A,GND-DC-A,ground/reference,solid ground drop
+INV-120A,PNL-AC-A,solid power/DC,inverter output to AC panel
+PNL-AC-A,RPS-PNL-A,dashed control/trip,dashed control route
+RPS-PNL-A,TRIP-MOD-A,dashed control/trip,dashed control route
+RPS-PNL-A,RELAY-K27A,dashed control/trip,dashed relay trip chain
+RELAY-K27A,RELAY-K59A,dashed control/trip,dashed relay trip chain
+RELAY-K59A,RELAY-K81A,dashed control/trip,dashed relay trip chain
+RELAY-K81A,RELAY-K86A,dashed control/trip,dashed relay trip chain
+RELAY-K86A,TRIP-MOD-A,dashed control/trip,dashed relay trip chain
+PT-401A,JB-401A,dotted signal,instrument signal route
+LT-402A,JB-401A,dotted signal,instrument signal route
+FT-403A,JB-401A,dotted signal,instrument signal route
+JB-401A,TB-RPS-A,dotted signal,signal route through terminal block
+TB-RPS-A,RPS-PNL-A,dotted signal,signal route into RPS panel
+JB-401A,GND-401A,ground/reference,solid ground/reference drop
+DC-BUS-125B,BAT-125B,solid power/DC,125 VDC bus tap
+DC-BUS-125B,CHG-125B,solid power/DC,125 VDC bus tap
+DC-BUS-125B,INV-120B,solid power/DC,125 VDC bus tap
+DC-BUS-125B,PNL-DC-B,solid power/DC,125 VDC bus tap
+PNL-DC-B,ESFAS-PNL-B,solid power/DC,solid panel link
+PNL-DC-B,GND-DC-B,ground/reference,solid ground drop
+INV-120B,PNL-AC-B,solid power/DC,inverter output to AC panel
+PNL-AC-B,RPS-PNL-B,dashed control/trip,dashed control route
+RPS-PNL-B,TRIP-MOD-B,dashed control/trip,dashed control route
+RPS-PNL-B,RELAY-K27B,dashed control/trip,dashed relay trip chain
+RELAY-K27B,RELAY-K59B,dashed control/trip,dashed relay trip chain
+RELAY-K59B,RELAY-K81B,dashed control/trip,dashed relay trip chain
+RELAY-K81B,RELAY-K86B,dashed control/trip,dashed relay trip chain
+RELAY-K86B,TRIP-MOD-B,dashed control/trip,dashed relay trip chain
+PT-401B,JB-401B,dotted signal,instrument signal route
+LT-402B,JB-401B,dotted signal,instrument signal route
+FT-403B,JB-401B,dotted signal,instrument signal route
+JB-401B,TB-RPS-B,dotted signal,signal route through terminal block
+TB-RPS-B,RPS-PNL-B,dotted signal,signal route into RPS panel
+JB-401B,GND-401B,ground/reference,solid ground/reference drop
+LOAD-SHED-CAB,TDR-1,dashed control/trip,load-shed control route
+LOAD-SHED-CAB,TDR-2,dashed control/trip,load-shed control route
+LOAD-SHED-CAB,LAMP-ALM-A,dotted signal,alarm signal route
+LOAD-SHED-CAB,LAMP-ALM-B,dotted signal,alarm signal route
+LOAD-SHED-CAB,ANN-PNL-1,dotted signal,annunciator signal route
+ANN-PNL-1,SEQ-REC-1,dotted signal,signal route to sequence recorder
+CB-TIE-1,SYNC-CAB,candidate,Diego Round 1 route-channel candidate
+CB-TIE-1,LOAD-SHED-CAB,candidate,Diego Round 1 route-channel candidate
+SYNC-CAB,LOAD-SHED-CAB,candidate,Diego Round 1 route-channel candidate
+ESFAS-PNL-A,TDR-1,candidate,Diego Round 1 dashed-control candidate
+ESFAS-PNL-B,TDR-2,candidate,Diego Round 1 dashed-control candidate
+ESFAS-PNL-A,LOAD-SHED-CAB,candidate,Diego Round 1 dashed-control candidate
+ESFAS-PNL-B,LOAD-SHED-CAB,candidate,Diego Round 1 dashed-control candidate
+TRIP-MOD-A,LOAD-SHED-CAB,candidate,Diego Round 1 dashed-control candidate
+TRIP-MOD-B,LOAD-SHED-CAB,candidate,Diego Round 1 dashed-control candidate
+LAMP-ALM-A,ANN-PNL-1,candidate,Diego Round 1 alarm-signal candidate
+LAMP-ALM-B,ANN-PNL-1,candidate,Diego Round 1 alarm-signal candidate

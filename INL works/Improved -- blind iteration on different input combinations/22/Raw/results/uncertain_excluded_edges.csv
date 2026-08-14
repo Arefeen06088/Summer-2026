@@ -1,0 +1,9 @@
+candidate_edge,decision,reason
+SYNC-PNL-1 -- CB-DG-A,excluded_uncertain,visible supported control tap is BUS-4160-A to SYNC-PNL-1; no clear termination at CB-DG-A
+RELAY-K*1 -- JB-*1,excluded_overconnected,JB run is visually a direct dashed path from PNL-120-* to JB-*1 to TERM-*; relay circles are separate branches
+BUS-480-C 480V LOAD CENTER C -- CB-DC-B1,excluded_corrected,"final trace crop shows CB-DC-B1 source from BUS-480-B side trace, not train C"
+XFMR-PT-1 -- METER-A01,excluded_uncertain,METER-A01 has a separate dashed vertical lead without visible junction to the XFMR-PT-1 drop
+DIODE-OR-A -- SOL-SDV-A,excluded_uncertain,diode OR device is a 125 VDC bus tap; solenoid valve is dashed from DC-MCC-A
+DIODE-OR-B -- SOL-SDV-B,excluded_uncertain,diode OR device is a 125 VDC bus tap; solenoid valve is dashed from DC-MCC-B
+XFMR-PT-1 -- <upstream source>,excluded_unlabeled,upstream dashed trunk exists but no clear labeled named source node is visible
+Crossings without dots,excluded,drawing note says crossings without junction dots are not connected

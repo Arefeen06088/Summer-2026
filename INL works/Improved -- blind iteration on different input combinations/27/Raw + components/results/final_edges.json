@@ -1,0 +1,2588 @@
+{
+  "document": "27",
+  "iteration": "2",
+  "round": "jennifer_final",
+  "agent": "Jennifer",
+  "final_status": "saturation_agreement",
+  "nodes": [
+    {
+      "id": "GRID-345",
+      "type": "bus",
+      "evidence": "Upper-left source box labelled GRID-345 with text 13.8 kV / 4.16 kV normal and emergency sources."
+    },
+    {
+      "id": "DS-101",
+      "type": "component",
+      "evidence": "Upper-left disconnect/source switch symbol labelled DS-101 on solid feeder from GRID-345."
+    },
+    {
+      "id": "CB-101",
+      "type": "component",
+      "evidence": "Upper-left breaker symbol labelled CB-101 on solid feeder before BUS-13KV-N."
+    },
+    {
+      "id": "BUS-13KV-N",
+      "type": "bus",
+      "evidence": "Top horizontal solid bus labelled BUS-13KV-N."
+    },
+    {
+      "id": "GEN-G1",
+      "type": "component",
+      "evidence": "Top generator circle labelled GEN-G1 above breaker CB-G1."
+    },
+    {
+      "id": "CB-G1",
+      "type": "component",
+      "evidence": "Breaker labelled CB-G1 connecting GEN-G1 tap to BUS-13KV-N."
+    },
+    {
+      "id": "TR-1A",
+      "type": "component",
+      "evidence": "Transformer symbol labelled TR-1A on vertical feeder from BUS-13KV-N to BUS-4160-A."
+    },
+    {
+      "id": "CB-4A-IN",
+      "type": "component",
+      "evidence": "Breaker labelled CB-4A-IN below TR-1A, above BUS-4160-A."
+    },
+    {
+      "id": "BUS-4160-A",
+      "type": "bus",
+      "evidence": "Upper middle horizontal solid bus labelled BUS-4160-A."
+    },
+    {
+      "id": "DG-1A",
+      "type": "component",
+      "evidence": "Generator circle labelled DG-1A feeding BUS-4160-A via CB-DG1A."
+    },
+    {
+      "id": "CB-DG1A",
+      "type": "component",
+      "evidence": "Breaker labelled CB-DG1A under DG-1A at the BUS-4160-A tap."
+    },
+    {
+      "id": "CB-TIE-41",
+      "type": "component",
+      "evidence": "Breaker labelled CB-TIE-41 drawn between the A and B 4.16 kV buses."
+    },
+    {
+      "id": "GEN-G2",
+      "type": "component",
+      "evidence": "Top generator circle labelled GEN-G2 above breaker CB-G2."
+    },
+    {
+      "id": "CB-G2",
+      "type": "component",
+      "evidence": "Breaker labelled CB-G2 connecting GEN-G2 tap to BUS-13KV-N."
+    },
+    {
+      "id": "TR-1B",
+      "type": "component",
+      "evidence": "Transformer symbol labelled TR-1B on vertical feeder from BUS-13KV-N to BUS-4160-B."
+    },
+    {
+      "id": "CB-4B-IN",
+      "type": "component",
+      "evidence": "Breaker labelled CB-4B-IN below TR-1B, above BUS-4160-B."
+    },
+    {
+      "id": "BUS-4160-B",
+      "type": "bus",
+      "evidence": "Upper middle/right horizontal solid bus labelled BUS-4160-B."
+    },
+    {
+      "id": "DG-1B",
+      "type": "component",
+      "evidence": "Generator circle labelled DG-1B feeding BUS-4160-B via CB-DG1B."
+    },
+    {
+      "id": "CB-DG1B",
+      "type": "component",
+      "evidence": "Breaker labelled CB-DG1B under DG-1B at the BUS-4160-B tap."
+    },
+    {
+      "id": "TR-480-A",
+      "type": "component",
+      "evidence": "Transformer labelled TR-480-A above Safety Train A load center A incoming breaker."
+    },
+    {
+      "id": "CB-480A-IN",
+      "type": "component",
+      "evidence": "Incoming breaker labelled CB-480A-IN feeding BUS-480-A."
+    },
+    {
+      "id": "BUS-480-A",
+      "type": "bus",
+      "evidence": "Load center A horizontal solid bus labelled BUS-480-A."
+    },
+    {
+      "id": "TR-480-B",
+      "type": "component",
+      "evidence": "Transformer labelled TR-480-B above Safety Train B load center B incoming breaker."
+    },
+    {
+      "id": "CB-480B-IN",
+      "type": "component",
+      "evidence": "Incoming breaker labelled CB-480B-IN feeding BUS-480-B."
+    },
+    {
+      "id": "BUS-480-B",
+      "type": "bus",
+      "evidence": "Load center B horizontal solid bus labelled BUS-480-B."
+    },
+    {
+      "id": "TR-480-C",
+      "type": "component",
+      "evidence": "Transformer labelled TR-480-C above Train A auxiliary load center C incoming breaker."
+    },
+    {
+      "id": "CB-480C-IN",
+      "type": "component",
+      "evidence": "Incoming breaker labelled CB-480C-IN feeding BUS-480-C."
+    },
+    {
+      "id": "BUS-480-C",
+      "type": "bus",
+      "evidence": "Load center C horizontal solid bus labelled BUS-480-C."
+    },
+    {
+      "id": "TR-480-D",
+      "type": "component",
+      "evidence": "Transformer labelled TR-480-D above Train B auxiliary load center D incoming breaker."
+    },
+    {
+      "id": "CB-480D-IN",
+      "type": "component",
+      "evidence": "Incoming breaker labelled CB-480D-IN feeding BUS-480-D."
+    },
+    {
+      "id": "BUS-480-D",
+      "type": "bus",
+      "evidence": "Load center D horizontal solid bus labelled BUS-480-D."
+    },
+    {
+      "id": "SAFETY TRAIN A - 480 V LOAD CENTER A",
+      "type": "panel",
+      "evidence": "Block title printed around the BUS-480-A load-center enclosure."
+    },
+    {
+      "id": "SAFETY TRAIN B - 480 V LOAD CENTER B",
+      "type": "panel",
+      "evidence": "Block title printed around the BUS-480-B load-center enclosure."
+    },
+    {
+      "id": "TRAIN A AUXILIARY - 480 V LOAD CENTER C",
+      "type": "panel",
+      "evidence": "Block title printed around the BUS-480-C load-center enclosure."
+    },
+    {
+      "id": "TRAIN B AUXILIARY - 480 V LOAD CENTER D",
+      "type": "panel",
+      "evidence": "Block title printed around the BUS-480-D load-center enclosure."
+    },
+    {
+      "id": "CHGR-125A",
+      "type": "component",
+      "evidence": "CHG rectangle labelled CHGR-125A inside the A-side 125 V DC charger/battery detail."
+    },
+    {
+      "id": "BAT-125A",
+      "type": "component",
+      "evidence": "Battery symbol labelled BAT-125A in the A-side 125 V DC detail."
+    },
+    {
+      "id": "DC-BUS-125A",
+      "type": "bus",
+      "evidence": "Horizontal/vertical 125 V DC bus label DC-BUS-125A near load centers A/B."
+    },
+    {
+      "id": "CHGR-125B",
+      "type": "component",
+      "evidence": "CHG rectangle labelled CHGR-125B inside the B-side 125 V DC charger/battery detail."
+    },
+    {
+      "id": "BAT-125B",
+      "type": "component",
+      "evidence": "Battery symbol labelled BAT-125B in the B-side 125 V DC detail."
+    },
+    {
+      "id": "DC-BUS-125B",
+      "type": "bus",
+      "evidence": "125 V DC bus label DC-BUS-125B at the B-side charger/battery detail."
+    },
+    {
+      "id": "PANEL-CTRL-MAIN",
+      "type": "panel",
+      "evidence": "Panel symbol labelled PANEL-CTRL-MAIN below the central 125 V DC bus run."
+    },
+    {
+      "id": "GND-EQ-A",
+      "type": "ground",
+      "evidence": "Ground symbol labelled GND-EQ-A at bottom left reached by a dotted/dash-dot equipment line from load center C area."
+    },
+    {
+      "id": "GND-EQ-B",
+      "type": "ground",
+      "evidence": "Ground symbol labelled GND-EQ-B at bottom right reached by a dotted/dash-dot equipment line from load center D area."
+    },
+    {
+      "id": "CB-A01",
+      "type": "component",
+      "evidence": "Breaker label CB-A01 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "DS-A01",
+      "type": "component",
+      "evidence": "DS device label DS-A01 below CB-A01 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "PMP-A01",
+      "type": "load",
+      "evidence": "Load/component label PMP-A01 below DS-A01 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "RLY-A01",
+      "type": "relay",
+      "evidence": "Terminal/instrument label RLY-A01 connected below PMP-A01 by dashed control/status line."
+    },
+    {
+      "id": "CB-A02",
+      "type": "component",
+      "evidence": "Breaker label CB-A02 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "FU-A02",
+      "type": "component",
+      "evidence": "FU device label FU-A02 below CB-A02 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "MOV-A02",
+      "type": "load",
+      "evidence": "Load/component label MOV-A02 below FU-A02 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "LS-A02",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label LS-A02 connected below MOV-A02 by dotted signal line."
+    },
+    {
+      "id": "CB-A03",
+      "type": "component",
+      "evidence": "Breaker label CB-A03 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "DS-A03",
+      "type": "component",
+      "evidence": "DS device label DS-A03 below CB-A03 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "MTR-A03",
+      "type": "load",
+      "evidence": "Load/component label MTR-A03 below DS-A03 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "RLY-A03",
+      "type": "relay",
+      "evidence": "Terminal/instrument label RLY-A03 connected below MTR-A03 by dashed control/status line."
+    },
+    {
+      "id": "CB-A04",
+      "type": "component",
+      "evidence": "Breaker label CB-A04 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "DS-A04",
+      "type": "component",
+      "evidence": "DS device label DS-A04 below CB-A04 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "PNL-A04",
+      "type": "panel",
+      "evidence": "Load/component label PNL-A04 below DS-A04 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "JB-A04",
+      "type": "component",
+      "evidence": "Terminal/instrument label JB-A04 connected below PNL-A04 by dotted signal line."
+    },
+    {
+      "id": "CB-A05",
+      "type": "component",
+      "evidence": "Breaker label CB-A05 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "FU-A05",
+      "type": "component",
+      "evidence": "FU device label FU-A05 below CB-A05 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "PMP-A05",
+      "type": "load",
+      "evidence": "Load/component label PMP-A05 below FU-A05 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "FT-A05",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label FT-A05 connected below PMP-A05 by dotted signal line."
+    },
+    {
+      "id": "CB-A06",
+      "type": "component",
+      "evidence": "Breaker label CB-A06 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "DS-A06",
+      "type": "component",
+      "evidence": "DS device label DS-A06 below CB-A06 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "MOV-A06",
+      "type": "load",
+      "evidence": "Load/component label MOV-A06 below DS-A06 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "RLY-A06",
+      "type": "relay",
+      "evidence": "Terminal/instrument label RLY-A06 connected below MOV-A06 by dashed control/status line."
+    },
+    {
+      "id": "CB-A07",
+      "type": "component",
+      "evidence": "Breaker label CB-A07 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "DS-A07",
+      "type": "component",
+      "evidence": "DS device label DS-A07 below CB-A07 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "MCC-A07",
+      "type": "panel",
+      "evidence": "Load/component label MCC-A07 below DS-A07 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "TB-A07",
+      "type": "component",
+      "evidence": "Terminal/instrument label TB-A07 connected below MCC-A07 by dotted signal line."
+    },
+    {
+      "id": "CB-A08",
+      "type": "component",
+      "evidence": "Breaker label CB-A08 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "FU-A08",
+      "type": "component",
+      "evidence": "FU device label FU-A08 below CB-A08 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "PMP-A08",
+      "type": "load",
+      "evidence": "Load/component label PMP-A08 below FU-A08 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "PT-A08",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label PT-A08 connected below PMP-A08 by dotted signal line."
+    },
+    {
+      "id": "CB-A09",
+      "type": "component",
+      "evidence": "Breaker label CB-A09 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "DS-A09",
+      "type": "component",
+      "evidence": "DS device label DS-A09 below CB-A09 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "FAN-A09",
+      "type": "load",
+      "evidence": "Load/component label FAN-A09 below DS-A09 on Load center A repeated vertical branch under BUS-480-A."
+    },
+    {
+      "id": "HS-A09",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label HS-A09 connected below FAN-A09 by dashed control/status line."
+    },
+    {
+      "id": "CB-B01",
+      "type": "component",
+      "evidence": "Breaker label CB-B01 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "DS-B01",
+      "type": "component",
+      "evidence": "DS device label DS-B01 below CB-B01 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "PMP-B01",
+      "type": "load",
+      "evidence": "Load/component label PMP-B01 below DS-B01 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "RLY-B01",
+      "type": "relay",
+      "evidence": "Terminal/instrument label RLY-B01 connected below PMP-B01 by dashed control/status line."
+    },
+    {
+      "id": "CB-B02",
+      "type": "component",
+      "evidence": "Breaker label CB-B02 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "FU-B02",
+      "type": "component",
+      "evidence": "FU device label FU-B02 below CB-B02 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "MOV-B02",
+      "type": "load",
+      "evidence": "Load/component label MOV-B02 below FU-B02 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "LS-B02",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label LS-B02 connected below MOV-B02 by dotted signal line."
+    },
+    {
+      "id": "CB-B03",
+      "type": "component",
+      "evidence": "Breaker label CB-B03 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "DS-B03",
+      "type": "component",
+      "evidence": "DS device label DS-B03 below CB-B03 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "MTR-B03",
+      "type": "load",
+      "evidence": "Load/component label MTR-B03 below DS-B03 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "RLY-B03",
+      "type": "relay",
+      "evidence": "Terminal/instrument label RLY-B03 connected below MTR-B03 by dashed control/status line."
+    },
+    {
+      "id": "CB-B04",
+      "type": "component",
+      "evidence": "Breaker label CB-B04 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "DS-B04",
+      "type": "component",
+      "evidence": "DS device label DS-B04 below CB-B04 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "PNL-B04",
+      "type": "panel",
+      "evidence": "Load/component label PNL-B04 below DS-B04 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "JB-B04",
+      "type": "component",
+      "evidence": "Terminal/instrument label JB-B04 connected below PNL-B04 by dotted signal line."
+    },
+    {
+      "id": "CB-B05",
+      "type": "component",
+      "evidence": "Breaker label CB-B05 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "FU-B05",
+      "type": "component",
+      "evidence": "FU device label FU-B05 below CB-B05 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "PMP-B05",
+      "type": "load",
+      "evidence": "Load/component label PMP-B05 below FU-B05 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "FT-B05",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label FT-B05 connected below PMP-B05 by dotted signal line."
+    },
+    {
+      "id": "CB-B06",
+      "type": "component",
+      "evidence": "Breaker label CB-B06 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "DS-B06",
+      "type": "component",
+      "evidence": "DS device label DS-B06 below CB-B06 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "MOV-B06",
+      "type": "load",
+      "evidence": "Load/component label MOV-B06 below DS-B06 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "RLY-B06",
+      "type": "relay",
+      "evidence": "Terminal/instrument label RLY-B06 connected below MOV-B06 by dashed control/status line."
+    },
+    {
+      "id": "CB-B07",
+      "type": "component",
+      "evidence": "Breaker label CB-B07 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "DS-B07",
+      "type": "component",
+      "evidence": "DS device label DS-B07 below CB-B07 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "MCC-B07",
+      "type": "panel",
+      "evidence": "Load/component label MCC-B07 below DS-B07 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "TB-B07",
+      "type": "component",
+      "evidence": "Terminal/instrument label TB-B07 connected below MCC-B07 by dotted signal line."
+    },
+    {
+      "id": "CB-B08",
+      "type": "component",
+      "evidence": "Breaker label CB-B08 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "FU-B08",
+      "type": "component",
+      "evidence": "FU device label FU-B08 below CB-B08 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "PMP-B08",
+      "type": "load",
+      "evidence": "Load/component label PMP-B08 below FU-B08 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "PT-B08",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label PT-B08 connected below PMP-B08 by dotted signal line."
+    },
+    {
+      "id": "CB-B09",
+      "type": "component",
+      "evidence": "Breaker label CB-B09 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "DS-B09",
+      "type": "component",
+      "evidence": "DS device label DS-B09 below CB-B09 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "FAN-B09",
+      "type": "load",
+      "evidence": "Load/component label FAN-B09 below DS-B09 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "HS-B09",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label HS-B09 connected below FAN-B09 by dashed control/status line."
+    },
+    {
+      "id": "CB-B10",
+      "type": "component",
+      "evidence": "Breaker label CB-B10 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "DS-B10",
+      "type": "component",
+      "evidence": "DS device label DS-B10 below CB-B10 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "JB-B10",
+      "type": "component",
+      "evidence": "Load/component label JB-B10 below DS-B10 on Load center B repeated vertical branch under BUS-480-B."
+    },
+    {
+      "id": "LT-B10",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label LT-B10 connected below JB-B10 by dotted signal line."
+    },
+    {
+      "id": "CB-C01",
+      "type": "component",
+      "evidence": "Breaker label CB-C01 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "DS-C01",
+      "type": "component",
+      "evidence": "DS device label DS-C01 below CB-C01 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "MOV-C01",
+      "type": "load",
+      "evidence": "Load/component label MOV-C01 below DS-C01 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "RLY-C01",
+      "type": "relay",
+      "evidence": "Terminal/instrument label RLY-C01 connected below MOV-C01 by dashed control/status line."
+    },
+    {
+      "id": "CB-C02",
+      "type": "component",
+      "evidence": "Breaker label CB-C02 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "FU-C02",
+      "type": "component",
+      "evidence": "FU device label FU-C02 below CB-C02 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "PNL-C02",
+      "type": "panel",
+      "evidence": "Load/component label PNL-C02 below FU-C02 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "JB-C02",
+      "type": "component",
+      "evidence": "Terminal/instrument label JB-C02 connected below PNL-C02 by dotted signal line."
+    },
+    {
+      "id": "CB-C03",
+      "type": "component",
+      "evidence": "Breaker label CB-C03 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "DS-C03",
+      "type": "component",
+      "evidence": "DS device label DS-C03 below CB-C03 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "PMP-C03",
+      "type": "load",
+      "evidence": "Load/component label PMP-C03 below DS-C03 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "FT-C03",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label FT-C03 connected below PMP-C03 by dotted signal line."
+    },
+    {
+      "id": "CB-C04",
+      "type": "component",
+      "evidence": "Breaker label CB-C04 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "DS-C04",
+      "type": "component",
+      "evidence": "DS device label DS-C04 below CB-C04 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "HTR-C04",
+      "type": "load",
+      "evidence": "Load/component label HTR-C04 below DS-C04 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "HS-C04",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label HS-C04 connected below HTR-C04 by dashed control/status line."
+    },
+    {
+      "id": "CB-C05",
+      "type": "component",
+      "evidence": "Breaker label CB-C05 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "FU-C05",
+      "type": "component",
+      "evidence": "FU device label FU-C05 below CB-C05 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "INST-C05",
+      "type": "instrument",
+      "evidence": "Load/component label INST-C05 below FU-C05 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "JB-C05",
+      "type": "component",
+      "evidence": "Terminal/instrument label JB-C05 connected below INST-C05 by dotted signal line."
+    },
+    {
+      "id": "CB-C06",
+      "type": "component",
+      "evidence": "Breaker label CB-C06 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "DS-C06",
+      "type": "component",
+      "evidence": "DS device label DS-C06 below CB-C06 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "MOV-C06",
+      "type": "load",
+      "evidence": "Load/component label MOV-C06 below DS-C06 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "LS-C06",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label LS-C06 connected below MOV-C06 by dotted signal line."
+    },
+    {
+      "id": "CB-C07",
+      "type": "component",
+      "evidence": "Breaker label CB-C07 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "DS-C07",
+      "type": "component",
+      "evidence": "DS device label DS-C07 below CB-C07 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "MCC-C07",
+      "type": "panel",
+      "evidence": "Load/component label MCC-C07 below DS-C07 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "TB-C07",
+      "type": "component",
+      "evidence": "Terminal/instrument label TB-C07 connected below MCC-C07 by dotted signal line."
+    },
+    {
+      "id": "CB-C08",
+      "type": "component",
+      "evidence": "Breaker label CB-C08 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "FU-C08",
+      "type": "component",
+      "evidence": "FU device label FU-C08 below CB-C08 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "PMP-C08",
+      "type": "load",
+      "evidence": "Load/component label PMP-C08 below FU-C08 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "PT-C08",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label PT-C08 connected below PMP-C08 by dotted signal line."
+    },
+    {
+      "id": "CB-C09",
+      "type": "component",
+      "evidence": "Breaker label CB-C09 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "DS-C09",
+      "type": "component",
+      "evidence": "DS device label DS-C09 below CB-C09 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "PNL-C09",
+      "type": "panel",
+      "evidence": "Load/component label PNL-C09 below DS-C09 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "RLY-C09",
+      "type": "relay",
+      "evidence": "Terminal/instrument label RLY-C09 connected below PNL-C09 by dashed control/status line."
+    },
+    {
+      "id": "CB-C10",
+      "type": "component",
+      "evidence": "Breaker label CB-C10 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "DS-C10",
+      "type": "component",
+      "evidence": "DS device label DS-C10 below CB-C10 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "JB-C10",
+      "type": "component",
+      "evidence": "Load/component label JB-C10 below DS-C10 on Load center C repeated vertical branch under BUS-480-C."
+    },
+    {
+      "id": "TB-C10",
+      "type": "component",
+      "evidence": "Terminal/instrument label TB-C10 connected below JB-C10 by dotted signal line."
+    },
+    {
+      "id": "CB-D01",
+      "type": "component",
+      "evidence": "Breaker label CB-D01 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "DS-D01",
+      "type": "component",
+      "evidence": "DS device label DS-D01 below CB-D01 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "MOV-D01",
+      "type": "load",
+      "evidence": "Load/component label MOV-D01 below DS-D01 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "RLY-D01",
+      "type": "relay",
+      "evidence": "Terminal/instrument label RLY-D01 connected below MOV-D01 by dashed control/status line."
+    },
+    {
+      "id": "CB-D02",
+      "type": "component",
+      "evidence": "Breaker label CB-D02 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "FU-D02",
+      "type": "component",
+      "evidence": "FU device label FU-D02 below CB-D02 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "PNL-D02",
+      "type": "panel",
+      "evidence": "Load/component label PNL-D02 below FU-D02 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "JB-D02",
+      "type": "component",
+      "evidence": "Terminal/instrument label JB-D02 connected below PNL-D02 by dotted signal line."
+    },
+    {
+      "id": "CB-D03",
+      "type": "component",
+      "evidence": "Breaker label CB-D03 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "DS-D03",
+      "type": "component",
+      "evidence": "DS device label DS-D03 below CB-D03 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "PMP-D03",
+      "type": "load",
+      "evidence": "Load/component label PMP-D03 below DS-D03 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "FT-D03",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label FT-D03 connected below PMP-D03 by dotted signal line."
+    },
+    {
+      "id": "CB-D04",
+      "type": "component",
+      "evidence": "Breaker label CB-D04 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "DS-D04",
+      "type": "component",
+      "evidence": "DS device label DS-D04 below CB-D04 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "HTR-D04",
+      "type": "load",
+      "evidence": "Load/component label HTR-D04 below DS-D04 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "HS-D04",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label HS-D04 connected below HTR-D04 by dashed control/status line."
+    },
+    {
+      "id": "CB-D05",
+      "type": "component",
+      "evidence": "Breaker label CB-D05 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "FU-D05",
+      "type": "component",
+      "evidence": "FU device label FU-D05 below CB-D05 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "INST-D05",
+      "type": "instrument",
+      "evidence": "Load/component label INST-D05 below FU-D05 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "JB-D05",
+      "type": "component",
+      "evidence": "Terminal/instrument label JB-D05 connected below INST-D05 by dotted signal line."
+    },
+    {
+      "id": "CB-D06",
+      "type": "component",
+      "evidence": "Breaker label CB-D06 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "DS-D06",
+      "type": "component",
+      "evidence": "DS device label DS-D06 below CB-D06 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "MOV-D06",
+      "type": "load",
+      "evidence": "Load/component label MOV-D06 below DS-D06 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "LS-D06",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label LS-D06 connected below MOV-D06 by dotted signal line."
+    },
+    {
+      "id": "CB-D07",
+      "type": "component",
+      "evidence": "Breaker label CB-D07 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "DS-D07",
+      "type": "component",
+      "evidence": "DS device label DS-D07 below CB-D07 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "MCC-D07",
+      "type": "panel",
+      "evidence": "Load/component label MCC-D07 below DS-D07 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "TB-D07",
+      "type": "component",
+      "evidence": "Terminal/instrument label TB-D07 connected below MCC-D07 by dotted signal line."
+    },
+    {
+      "id": "CB-D08",
+      "type": "component",
+      "evidence": "Breaker label CB-D08 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "FU-D08",
+      "type": "component",
+      "evidence": "FU device label FU-D08 below CB-D08 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "PMP-D08",
+      "type": "load",
+      "evidence": "Load/component label PMP-D08 below FU-D08 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "PT-D08",
+      "type": "instrument",
+      "evidence": "Terminal/instrument label PT-D08 connected below PMP-D08 by dotted signal line."
+    },
+    {
+      "id": "CB-D09",
+      "type": "component",
+      "evidence": "Breaker label CB-D09 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "DS-D09",
+      "type": "component",
+      "evidence": "DS device label DS-D09 below CB-D09 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "PNL-D09",
+      "type": "panel",
+      "evidence": "Load/component label PNL-D09 below DS-D09 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "RLY-D09",
+      "type": "relay",
+      "evidence": "Terminal/instrument label RLY-D09 connected below PNL-D09 by dashed control/status line."
+    },
+    {
+      "id": "CB-D10",
+      "type": "component",
+      "evidence": "Breaker label CB-D10 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "DS-D10",
+      "type": "component",
+      "evidence": "DS device label DS-D10 below CB-D10 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "JB-D10",
+      "type": "component",
+      "evidence": "Load/component label JB-D10 below DS-D10 on Load center D repeated vertical branch under BUS-480-D."
+    },
+    {
+      "id": "TB-D10",
+      "type": "component",
+      "evidence": "Terminal/instrument label TB-D10 connected below JB-D10 by dotted signal line."
+    },
+    {
+      "id": "CB-A10",
+      "type": "component",
+      "evidence": "Breaker label CB-A10 on right end of BUS-480-A."
+    },
+    {
+      "id": "DS-A10",
+      "type": "component",
+      "evidence": "Disconnect label DS-A10 below CB-A10 in the A-side DC charger/battery detail."
+    },
+    {
+      "id": "JB-A10",
+      "type": "component",
+      "evidence": "Junction box label JB-A10 below BAT-125A and above LT-A10."
+    },
+    {
+      "id": "LT-A10",
+      "type": "instrument",
+      "evidence": "Instrument circle label LT-A10 connected by dotted signal line below JB-A10."
+    }
+  ],
+  "asserted_edges": [
+    {
+      "source": "GRID-345",
+      "target": "DS-101",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid feeder leaves GRID-345 source box into DS-101."
+    },
+    {
+      "source": "DS-101",
+      "target": "CB-101",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Continuous solid feeder connects DS-101 to CB-101."
+    },
+    {
+      "source": "CB-101",
+      "target": "BUS-13KV-N",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid feeder from CB-101 enters the top BUS-13KV-N run."
+    },
+    {
+      "source": "GEN-G1",
+      "target": "CB-G1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "GEN-G1 circle is vertically wired to breaker CB-G1."
+    },
+    {
+      "source": "CB-G1",
+      "target": "BUS-13KV-N",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "CB-G1 vertical feeder terminates on BUS-13KV-N at filled tap dot."
+    },
+    {
+      "source": "BUS-13KV-N",
+      "target": "TR-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap from BUS-13KV-N descends through TR-1A."
+    },
+    {
+      "source": "TR-1A",
+      "target": "CB-4A-IN",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment connects TR-1A to CB-4A-IN."
+    },
+    {
+      "source": "CB-4A-IN",
+      "target": "BUS-4160-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "CB-4A-IN feeder terminates on BUS-4160-A at a filled dot."
+    },
+    {
+      "source": "DG-1A",
+      "target": "CB-DG1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "DG-1A circle is vertically wired to CB-DG1A."
+    },
+    {
+      "source": "CB-DG1A",
+      "target": "BUS-4160-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "CB-DG1A terminates on BUS-4160-A at a filled tap dot."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-TIE-41",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Left side of CB-TIE-41 is drawn on the BUS-4160-A horizontal bus; tie is normally open per note."
+    },
+    {
+      "source": "CB-TIE-41",
+      "target": "BUS-4160-B",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Right side of CB-TIE-41 is drawn on the BUS-4160-B horizontal bus; tie is normally open per note."
+    },
+    {
+      "source": "GEN-G2",
+      "target": "CB-G2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "GEN-G2 circle is vertically wired to breaker CB-G2."
+    },
+    {
+      "source": "CB-G2",
+      "target": "BUS-13KV-N",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "CB-G2 vertical feeder terminates on BUS-13KV-N at filled tap dot."
+    },
+    {
+      "source": "BUS-13KV-N",
+      "target": "TR-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap from BUS-13KV-N descends through TR-1B."
+    },
+    {
+      "source": "TR-1B",
+      "target": "CB-4B-IN",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment connects TR-1B to CB-4B-IN."
+    },
+    {
+      "source": "CB-4B-IN",
+      "target": "BUS-4160-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "CB-4B-IN feeder terminates on BUS-4160-B at a filled dot."
+    },
+    {
+      "source": "DG-1B",
+      "target": "CB-DG1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "DG-1B circle is vertically wired to CB-DG1B."
+    },
+    {
+      "source": "CB-DG1B",
+      "target": "BUS-4160-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "CB-DG1B terminates on BUS-4160-B at a filled tap dot."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "TR-480-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid feeder from BUS-4160-A down through TR-480-A and CB-480A-IN into load center A."
+    },
+    {
+      "source": "TR-480-A",
+      "target": "CB-480A-IN",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment connects TR-480-A to CB-480A-IN."
+    },
+    {
+      "source": "CB-480A-IN",
+      "target": "BUS-480-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Incoming breaker CB-480A-IN lands on BUS-480-A at the visible load-center bus tap."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "TR-480-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid feeder from BUS-4160-B down through TR-480-B and CB-480B-IN into load center B."
+    },
+    {
+      "source": "TR-480-B",
+      "target": "CB-480B-IN",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment connects TR-480-B to CB-480B-IN."
+    },
+    {
+      "source": "CB-480B-IN",
+      "target": "BUS-480-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Incoming breaker CB-480B-IN lands on BUS-480-B at the visible load-center bus tap."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "TR-480-C",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Left-side routed solid feeder from BUS-4160-A area descends through TR-480-C and CB-480C-IN into load center C."
+    },
+    {
+      "source": "TR-480-C",
+      "target": "CB-480C-IN",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment connects TR-480-C to CB-480C-IN."
+    },
+    {
+      "source": "CB-480C-IN",
+      "target": "BUS-480-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Incoming breaker CB-480C-IN lands on BUS-480-C at the visible load-center bus tap."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "TR-480-D",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Right-side routed solid feeder from BUS-4160-B area descends through TR-480-D and CB-480D-IN into load center D."
+    },
+    {
+      "source": "TR-480-D",
+      "target": "CB-480D-IN",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment connects TR-480-D to CB-480D-IN."
+    },
+    {
+      "source": "CB-480D-IN",
+      "target": "BUS-480-D",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Incoming breaker CB-480D-IN lands on BUS-480-D at the visible load-center bus tap."
+    },
+    {
+      "source": "SAFETY TRAIN A - 480 V LOAD CENTER A",
+      "target": "BUS-480-A",
+      "kind": "logical",
+      "confidence": "high",
+      "evidence": "The printed load-center title encloses and names BUS-480-A; logical label-to-bus association, not an added conductor."
+    },
+    {
+      "source": "SAFETY TRAIN B - 480 V LOAD CENTER B",
+      "target": "BUS-480-B",
+      "kind": "logical",
+      "confidence": "high",
+      "evidence": "The printed load-center title encloses and names BUS-480-B; logical label-to-bus association, not an added conductor."
+    },
+    {
+      "source": "TRAIN A AUXILIARY - 480 V LOAD CENTER C",
+      "target": "BUS-480-C",
+      "kind": "logical",
+      "confidence": "high",
+      "evidence": "The printed load-center title encloses and names BUS-480-C; logical label-to-bus association, not an added conductor."
+    },
+    {
+      "source": "TRAIN B AUXILIARY - 480 V LOAD CENTER D",
+      "target": "BUS-480-D",
+      "kind": "logical",
+      "confidence": "high",
+      "evidence": "The printed load-center title encloses and names BUS-480-D; logical label-to-bus association, not an added conductor."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-A01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-A to CB-A01."
+    },
+    {
+      "source": "CB-A01",
+      "target": "DS-A01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-A01 to DS-A01."
+    },
+    {
+      "source": "DS-A01",
+      "target": "PMP-A01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-A01 to PMP-A01."
+    },
+    {
+      "source": "PMP-A01",
+      "target": "RLY-A01",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control/status line descends from PMP-A01 to RLY-A01."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-A02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-A to CB-A02."
+    },
+    {
+      "source": "CB-A02",
+      "target": "FU-A02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-A02 to FU-A02."
+    },
+    {
+      "source": "FU-A02",
+      "target": "MOV-A02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects FU-A02 to MOV-A02."
+    },
+    {
+      "source": "MOV-A02",
+      "target": "LS-A02",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from MOV-A02 to LS-A02."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-A03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-A to CB-A03."
+    },
+    {
+      "source": "CB-A03",
+      "target": "DS-A03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-A03 to DS-A03."
+    },
+    {
+      "source": "DS-A03",
+      "target": "MTR-A03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-A03 to MTR-A03."
+    },
+    {
+      "source": "MTR-A03",
+      "target": "RLY-A03",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control/status line descends from MTR-A03 to RLY-A03."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-A04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-A to CB-A04."
+    },
+    {
+      "source": "CB-A04",
+      "target": "DS-A04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-A04 to DS-A04."
+    },
+    {
+      "source": "DS-A04",
+      "target": "PNL-A04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-A04 to PNL-A04."
+    },
+    {
+      "source": "PNL-A04",
+      "target": "JB-A04",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from PNL-A04 to JB-A04."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-A05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-A to CB-A05."
+    },
+    {
+      "source": "CB-A05",
+      "target": "FU-A05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-A05 to FU-A05."
+    },
+    {
+      "source": "FU-A05",
+      "target": "PMP-A05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects FU-A05 to PMP-A05."
+    },
+    {
+      "source": "PMP-A05",
+      "target": "FT-A05",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from PMP-A05 to FT-A05."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-A06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-A to CB-A06."
+    },
+    {
+      "source": "CB-A06",
+      "target": "DS-A06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-A06 to DS-A06."
+    },
+    {
+      "source": "DS-A06",
+      "target": "MOV-A06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-A06 to MOV-A06."
+    },
+    {
+      "source": "MOV-A06",
+      "target": "RLY-A06",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control/status line descends from MOV-A06 to RLY-A06."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-A07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-A to CB-A07."
+    },
+    {
+      "source": "CB-A07",
+      "target": "DS-A07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-A07 to DS-A07."
+    },
+    {
+      "source": "DS-A07",
+      "target": "MCC-A07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-A07 to MCC-A07."
+    },
+    {
+      "source": "MCC-A07",
+      "target": "TB-A07",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from MCC-A07 to TB-A07."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-A08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-A to CB-A08."
+    },
+    {
+      "source": "CB-A08",
+      "target": "FU-A08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-A08 to FU-A08."
+    },
+    {
+      "source": "FU-A08",
+      "target": "PMP-A08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects FU-A08 to PMP-A08."
+    },
+    {
+      "source": "PMP-A08",
+      "target": "PT-A08",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from PMP-A08 to PT-A08."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-A09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-A to CB-A09."
+    },
+    {
+      "source": "CB-A09",
+      "target": "DS-A09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-A09 to DS-A09."
+    },
+    {
+      "source": "DS-A09",
+      "target": "FAN-A09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-A09 to FAN-A09."
+    },
+    {
+      "source": "FAN-A09",
+      "target": "HS-A09",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control/status line descends from FAN-A09 to HS-A09."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-B01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-B to CB-B01."
+    },
+    {
+      "source": "CB-B01",
+      "target": "DS-B01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-B01 to DS-B01."
+    },
+    {
+      "source": "DS-B01",
+      "target": "PMP-B01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-B01 to PMP-B01."
+    },
+    {
+      "source": "PMP-B01",
+      "target": "RLY-B01",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control/status line descends from PMP-B01 to RLY-B01."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-B02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-B to CB-B02."
+    },
+    {
+      "source": "CB-B02",
+      "target": "FU-B02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-B02 to FU-B02."
+    },
+    {
+      "source": "FU-B02",
+      "target": "MOV-B02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects FU-B02 to MOV-B02."
+    },
+    {
+      "source": "MOV-B02",
+      "target": "LS-B02",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from MOV-B02 to LS-B02."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-B03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-B to CB-B03."
+    },
+    {
+      "source": "CB-B03",
+      "target": "DS-B03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-B03 to DS-B03."
+    },
+    {
+      "source": "DS-B03",
+      "target": "MTR-B03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-B03 to MTR-B03."
+    },
+    {
+      "source": "MTR-B03",
+      "target": "RLY-B03",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control/status line descends from MTR-B03 to RLY-B03."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-B04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-B to CB-B04."
+    },
+    {
+      "source": "CB-B04",
+      "target": "DS-B04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-B04 to DS-B04."
+    },
+    {
+      "source": "DS-B04",
+      "target": "PNL-B04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-B04 to PNL-B04."
+    },
+    {
+      "source": "PNL-B04",
+      "target": "JB-B04",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from PNL-B04 to JB-B04."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-B05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-B to CB-B05."
+    },
+    {
+      "source": "CB-B05",
+      "target": "FU-B05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-B05 to FU-B05."
+    },
+    {
+      "source": "FU-B05",
+      "target": "PMP-B05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects FU-B05 to PMP-B05."
+    },
+    {
+      "source": "PMP-B05",
+      "target": "FT-B05",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from PMP-B05 to FT-B05."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-B06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-B to CB-B06."
+    },
+    {
+      "source": "CB-B06",
+      "target": "DS-B06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-B06 to DS-B06."
+    },
+    {
+      "source": "DS-B06",
+      "target": "MOV-B06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-B06 to MOV-B06."
+    },
+    {
+      "source": "MOV-B06",
+      "target": "RLY-B06",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control/status line descends from MOV-B06 to RLY-B06."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-B07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-B to CB-B07."
+    },
+    {
+      "source": "CB-B07",
+      "target": "DS-B07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-B07 to DS-B07."
+    },
+    {
+      "source": "DS-B07",
+      "target": "MCC-B07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-B07 to MCC-B07."
+    },
+    {
+      "source": "MCC-B07",
+      "target": "TB-B07",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from MCC-B07 to TB-B07."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-B08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-B to CB-B08."
+    },
+    {
+      "source": "CB-B08",
+      "target": "FU-B08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-B08 to FU-B08."
+    },
+    {
+      "source": "FU-B08",
+      "target": "PMP-B08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects FU-B08 to PMP-B08."
+    },
+    {
+      "source": "PMP-B08",
+      "target": "PT-B08",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from PMP-B08 to PT-B08."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-B09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-B to CB-B09."
+    },
+    {
+      "source": "CB-B09",
+      "target": "DS-B09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-B09 to DS-B09."
+    },
+    {
+      "source": "DS-B09",
+      "target": "FAN-B09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-B09 to FAN-B09."
+    },
+    {
+      "source": "FAN-B09",
+      "target": "HS-B09",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control/status line descends from FAN-B09 to HS-B09."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-B10",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-B to CB-B10."
+    },
+    {
+      "source": "CB-B10",
+      "target": "DS-B10",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-B10 to DS-B10."
+    },
+    {
+      "source": "DS-B10",
+      "target": "JB-B10",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-B10 to JB-B10."
+    },
+    {
+      "source": "JB-B10",
+      "target": "LT-B10",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from JB-B10 to LT-B10."
+    },
+    {
+      "source": "BUS-480-C",
+      "target": "CB-C01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-C to CB-C01."
+    },
+    {
+      "source": "CB-C01",
+      "target": "DS-C01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-C01 to DS-C01."
+    },
+    {
+      "source": "DS-C01",
+      "target": "MOV-C01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-C01 to MOV-C01."
+    },
+    {
+      "source": "MOV-C01",
+      "target": "RLY-C01",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control/status line descends from MOV-C01 to RLY-C01."
+    },
+    {
+      "source": "BUS-480-C",
+      "target": "CB-C02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-C to CB-C02."
+    },
+    {
+      "source": "CB-C02",
+      "target": "FU-C02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-C02 to FU-C02."
+    },
+    {
+      "source": "FU-C02",
+      "target": "PNL-C02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects FU-C02 to PNL-C02."
+    },
+    {
+      "source": "PNL-C02",
+      "target": "JB-C02",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from PNL-C02 to JB-C02."
+    },
+    {
+      "source": "BUS-480-C",
+      "target": "CB-C03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-C to CB-C03."
+    },
+    {
+      "source": "CB-C03",
+      "target": "DS-C03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-C03 to DS-C03."
+    },
+    {
+      "source": "DS-C03",
+      "target": "PMP-C03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-C03 to PMP-C03."
+    },
+    {
+      "source": "PMP-C03",
+      "target": "FT-C03",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from PMP-C03 to FT-C03."
+    },
+    {
+      "source": "BUS-480-C",
+      "target": "CB-C04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-C to CB-C04."
+    },
+    {
+      "source": "CB-C04",
+      "target": "DS-C04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-C04 to DS-C04."
+    },
+    {
+      "source": "DS-C04",
+      "target": "HTR-C04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-C04 to HTR-C04."
+    },
+    {
+      "source": "HTR-C04",
+      "target": "HS-C04",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control/status line descends from HTR-C04 to HS-C04."
+    },
+    {
+      "source": "BUS-480-C",
+      "target": "CB-C05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-C to CB-C05."
+    },
+    {
+      "source": "CB-C05",
+      "target": "FU-C05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-C05 to FU-C05."
+    },
+    {
+      "source": "FU-C05",
+      "target": "INST-C05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects FU-C05 to INST-C05."
+    },
+    {
+      "source": "INST-C05",
+      "target": "JB-C05",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from INST-C05 to JB-C05."
+    },
+    {
+      "source": "BUS-480-C",
+      "target": "CB-C06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-C to CB-C06."
+    },
+    {
+      "source": "CB-C06",
+      "target": "DS-C06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-C06 to DS-C06."
+    },
+    {
+      "source": "DS-C06",
+      "target": "MOV-C06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-C06 to MOV-C06."
+    },
+    {
+      "source": "MOV-C06",
+      "target": "LS-C06",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from MOV-C06 to LS-C06."
+    },
+    {
+      "source": "BUS-480-C",
+      "target": "CB-C07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-C to CB-C07."
+    },
+    {
+      "source": "CB-C07",
+      "target": "DS-C07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-C07 to DS-C07."
+    },
+    {
+      "source": "DS-C07",
+      "target": "MCC-C07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-C07 to MCC-C07."
+    },
+    {
+      "source": "MCC-C07",
+      "target": "TB-C07",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from MCC-C07 to TB-C07."
+    },
+    {
+      "source": "BUS-480-C",
+      "target": "CB-C08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-C to CB-C08."
+    },
+    {
+      "source": "CB-C08",
+      "target": "FU-C08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-C08 to FU-C08."
+    },
+    {
+      "source": "FU-C08",
+      "target": "PMP-C08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects FU-C08 to PMP-C08."
+    },
+    {
+      "source": "PMP-C08",
+      "target": "PT-C08",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from PMP-C08 to PT-C08."
+    },
+    {
+      "source": "BUS-480-C",
+      "target": "CB-C09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-C to CB-C09."
+    },
+    {
+      "source": "CB-C09",
+      "target": "DS-C09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-C09 to DS-C09."
+    },
+    {
+      "source": "DS-C09",
+      "target": "PNL-C09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-C09 to PNL-C09."
+    },
+    {
+      "source": "PNL-C09",
+      "target": "RLY-C09",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control/status line descends from PNL-C09 to RLY-C09."
+    },
+    {
+      "source": "BUS-480-C",
+      "target": "CB-C10",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-C to CB-C10."
+    },
+    {
+      "source": "CB-C10",
+      "target": "DS-C10",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-C10 to DS-C10."
+    },
+    {
+      "source": "DS-C10",
+      "target": "JB-C10",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-C10 to JB-C10."
+    },
+    {
+      "source": "JB-C10",
+      "target": "TB-C10",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from JB-C10 to TB-C10."
+    },
+    {
+      "source": "BUS-480-D",
+      "target": "CB-D01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-D to CB-D01."
+    },
+    {
+      "source": "CB-D01",
+      "target": "DS-D01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-D01 to DS-D01."
+    },
+    {
+      "source": "DS-D01",
+      "target": "MOV-D01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-D01 to MOV-D01."
+    },
+    {
+      "source": "MOV-D01",
+      "target": "RLY-D01",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control/status line descends from MOV-D01 to RLY-D01."
+    },
+    {
+      "source": "BUS-480-D",
+      "target": "CB-D02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-D to CB-D02."
+    },
+    {
+      "source": "CB-D02",
+      "target": "FU-D02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-D02 to FU-D02."
+    },
+    {
+      "source": "FU-D02",
+      "target": "PNL-D02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects FU-D02 to PNL-D02."
+    },
+    {
+      "source": "PNL-D02",
+      "target": "JB-D02",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from PNL-D02 to JB-D02."
+    },
+    {
+      "source": "BUS-480-D",
+      "target": "CB-D03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-D to CB-D03."
+    },
+    {
+      "source": "CB-D03",
+      "target": "DS-D03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-D03 to DS-D03."
+    },
+    {
+      "source": "DS-D03",
+      "target": "PMP-D03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-D03 to PMP-D03."
+    },
+    {
+      "source": "PMP-D03",
+      "target": "FT-D03",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from PMP-D03 to FT-D03."
+    },
+    {
+      "source": "BUS-480-D",
+      "target": "CB-D04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-D to CB-D04."
+    },
+    {
+      "source": "CB-D04",
+      "target": "DS-D04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-D04 to DS-D04."
+    },
+    {
+      "source": "DS-D04",
+      "target": "HTR-D04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-D04 to HTR-D04."
+    },
+    {
+      "source": "HTR-D04",
+      "target": "HS-D04",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control/status line descends from HTR-D04 to HS-D04."
+    },
+    {
+      "source": "BUS-480-D",
+      "target": "CB-D05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-D to CB-D05."
+    },
+    {
+      "source": "CB-D05",
+      "target": "FU-D05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-D05 to FU-D05."
+    },
+    {
+      "source": "FU-D05",
+      "target": "INST-D05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects FU-D05 to INST-D05."
+    },
+    {
+      "source": "INST-D05",
+      "target": "JB-D05",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from INST-D05 to JB-D05."
+    },
+    {
+      "source": "BUS-480-D",
+      "target": "CB-D06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-D to CB-D06."
+    },
+    {
+      "source": "CB-D06",
+      "target": "DS-D06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-D06 to DS-D06."
+    },
+    {
+      "source": "DS-D06",
+      "target": "MOV-D06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-D06 to MOV-D06."
+    },
+    {
+      "source": "MOV-D06",
+      "target": "LS-D06",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from MOV-D06 to LS-D06."
+    },
+    {
+      "source": "BUS-480-D",
+      "target": "CB-D07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-D to CB-D07."
+    },
+    {
+      "source": "CB-D07",
+      "target": "DS-D07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-D07 to DS-D07."
+    },
+    {
+      "source": "DS-D07",
+      "target": "MCC-D07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-D07 to MCC-D07."
+    },
+    {
+      "source": "MCC-D07",
+      "target": "TB-D07",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from MCC-D07 to TB-D07."
+    },
+    {
+      "source": "BUS-480-D",
+      "target": "CB-D08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-D to CB-D08."
+    },
+    {
+      "source": "CB-D08",
+      "target": "FU-D08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-D08 to FU-D08."
+    },
+    {
+      "source": "FU-D08",
+      "target": "PMP-D08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects FU-D08 to PMP-D08."
+    },
+    {
+      "source": "PMP-D08",
+      "target": "PT-D08",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from PMP-D08 to PT-D08."
+    },
+    {
+      "source": "BUS-480-D",
+      "target": "CB-D09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-D to CB-D09."
+    },
+    {
+      "source": "CB-D09",
+      "target": "DS-D09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-D09 to DS-D09."
+    },
+    {
+      "source": "DS-D09",
+      "target": "PNL-D09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-D09 to PNL-D09."
+    },
+    {
+      "source": "PNL-D09",
+      "target": "RLY-D09",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control/status line descends from PNL-D09 to RLY-D09."
+    },
+    {
+      "source": "BUS-480-D",
+      "target": "CB-D10",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Filled tap/vertical solid branch from BUS-480-D to CB-D10."
+    },
+    {
+      "source": "CB-D10",
+      "target": "DS-D10",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-D10 to DS-D10."
+    },
+    {
+      "source": "DS-D10",
+      "target": "JB-D10",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects DS-D10 to JB-D10."
+    },
+    {
+      "source": "JB-D10",
+      "target": "TB-D10",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted signal line descends from JB-D10 to TB-D10."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-A10",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Rightmost A branch drops from BUS-480-A into CB-A10."
+    },
+    {
+      "source": "CB-A10",
+      "target": "DS-A10",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-A10 to DS-A10."
+    },
+    {
+      "source": "DS-A10",
+      "target": "BAT-125A",
+      "kind": "dc_power",
+      "confidence": "medium",
+      "evidence": "DS-A10 vertical branch continues into the battery symbol labelled BAT-125A."
+    },
+    {
+      "source": "BAT-125A",
+      "target": "JB-A10",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor continues from BAT-125A to JB-A10."
+    },
+    {
+      "source": "JB-A10",
+      "target": "LT-A10",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "Dotted instrument line drops from JB-A10 to LT-A10."
+    },
+    {
+      "source": "JB-A10",
+      "target": "DC-BUS-125A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Solid horizontal conductor from JB-A10 ties into the labelled DC-BUS-125A at a filled dot."
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CHGR-125A",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "A separate solid tap from the right end of BUS-480-A feeds the CHG rectangle labelled CHGR-125A."
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CHGR-125B",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Solid tap from left side of BUS-480-B drops to the CHG rectangle labelled CHGR-125B."
+    },
+    {
+      "source": "DC-BUS-125A",
+      "target": "DC-BUS-125B",
+      "kind": "dc_power",
+      "confidence": "medium",
+      "evidence": "Continuous horizontal 125 V DC bus run is visible between the DC-BUS-125A and DC-BUS-125B labelled taps."
+    },
+    {
+      "source": "DC-BUS-125A",
+      "target": "PANEL-CTRL-MAIN",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed/control drop from the central 125 V DC bus run descends to PANEL-CTRL-MAIN."
+    },
+    {
+      "source": "BUS-480-C",
+      "target": "GND-EQ-A",
+      "kind": "ground",
+      "confidence": "medium",
+      "evidence": "Dotted/dash-dot equipment line from the BUS-480-C area descends to the ground symbol labelled GND-EQ-A."
+    },
+    {
+      "source": "BUS-480-D",
+      "target": "GND-EQ-B",
+      "kind": "ground",
+      "confidence": "medium",
+      "evidence": "Dotted/dash-dot equipment line from the BUS-480-D area descends to the ground symbol labelled GND-EQ-B."
+    }
+  ],
+  "uncertain_edges": [
+    {
+      "a": "CHGR-125A",
+      "b": "BAT-125A",
+      "reason": "Functionally plausible charger-to-battery relationship, but the raw schematic shows a dashed enclosure/adjacent layout rather than a clear terminal-to-terminal conductor.",
+      "evidence": "CHGR-125A and BAT-125A are inside the same A-side DC charger/battery detail."
+    },
+    {
+      "a": "CHGR-125A",
+      "b": "DC-BUS-125A",
+      "reason": "Plausible DC charger output to the DC bus, but no unambiguous solid or dash-dot terminal from CHGR-125A to DC-BUS-125A is visible.",
+      "evidence": "CHGR-125A is near the DC-BUS-125A label and dashed charger boundary."
+    },
+    {
+      "a": "CHGR-125B",
+      "b": "BAT-125B",
+      "reason": "Functionally plausible charger-to-battery relationship, but the linework does not show a distinct terminal-to-terminal conductor.",
+      "evidence": "CHGR-125B and BAT-125B are in the same B-side DC charger/battery detail."
+    },
+    {
+      "a": "CHGR-125B",
+      "b": "DC-BUS-125B",
+      "reason": "Plausible charger output to DC-BUS-125B, but the visible connection is through the surrounding detail and not a clearly traced conductor.",
+      "evidence": "CHGR-125B sits near the DC-BUS-125B label and B-side battery symbol."
+    },
+    {
+      "a": "PANEL-CTRL-MAIN",
+      "b": "DC-BUS-125B",
+      "reason": "The panel appears connected to the central 125 V DC run, which also reaches DC-BUS-125B, but the nearest clear tap was assigned to DC-BUS-125A to avoid duplicating an uncertain label association.",
+      "evidence": "PANEL-CTRL-MAIN dashed drop is between the DC-BUS-125A and DC-BUS-125B labelled taps."
+    },
+    {
+      "a": "GND-EQ-A",
+      "b": "CB-C01",
+      "reason": "Ground/equipment dotted line passes near the C-branch region, but no visible tee to the individual branch breaker is shown.",
+      "evidence": "Ground trunk from BUS-480-C area routes down left of the C branch array."
+    },
+    {
+      "a": "GND-EQ-B",
+      "b": "CB-D10",
+      "reason": "Ground/equipment dotted line passes near the right end of BUS-480-D, but no branch-level tee into CB-D10 is visible.",
+      "evidence": "D-side ground trunk descends near the right edge after leaving the BUS-480-D area."
+    },
+    {
+      "a": "BUS-480-A",
+      "b": "BAT-125A",
+      "reason": "A10 battery is near the A 480 V branch, but battery/DC conductors are visually mediated by DS-A10/JB-A10 and the charger detail.",
+      "evidence": "Solid vertical branch reaches BAT-125A through CB-A10 and DS-A10; no direct bus-to-battery conductor."
+    },
+    {
+      "a": "BUS-480-B",
+      "b": "BAT-125B",
+      "reason": "B-side battery is visually adjacent to the B bus/charger area, but a direct 480 V bus-to-battery connection is not drawn.",
+      "evidence": "BAT-125B sits in the charger detail beside branch B01 rather than directly on the BUS-480-B conductor."
+    },
+    {
+      "a": "CB-TIE-41",
+      "b": "BUS-13KV-N",
+      "reason": "The tie breaker is visually above the load-center zone and below the top bus, but it is drawn only in the 4.16 kV bus path.",
+      "evidence": "CB-TIE-41 lies on the lower BUS-4160-A/B run, separated from BUS-13KV-N by whitespace and no vertical tap."
+    },
+    {
+      "a": "DC-BUS-125A",
+      "b": "GND-EQ-A",
+      "reason": "Both are DC/ground-related labels, but no visible conductor links the central 125 V DC bus to the A equipment ground symbol.",
+      "evidence": "DC bus is central between A/B load centers; GND-EQ-A is at bottom left on a separate dotted/dash-dot run."
+    },
+    {
+      "a": "BAT-125B",
+      "b": "DC-BUS-125B",
+      "reason": "Plausible DC detail association, but endpoint/routing is unclear; the battery symbol does not visibly terminate on the DC-BUS-125B conductor.",
+      "evidence": "Raw center crop shows BAT-125B inside the B-side charger/battery detail while the DC-BUS-125B vertical tap lands separately on the horizontal 125 V DC bus."
+    }
+  ],
+  "removed_edges": [],
+  "added_edges": [],
+  "label_corrections": [],
+  "rejected_non_edges": [
+    {
+      "a": "BUS-4160-A",
+      "b": "BUS-4160-B",
+      "reason": "No direct bus-to-bus edge asserted; the only visible link is through CB-TIE-41, and notes say bus ties are normally open unless tagged closed."
+    },
+    {
+      "a": "BUS-13KV-N",
+      "b": "BUS-4160-A",
+      "reason": "Voltage-level connection is through TR-1A and CB-4A-IN, not a direct bus edge."
+    },
+    {
+      "a": "BUS-13KV-N",
+      "b": "BUS-4160-B",
+      "reason": "Voltage-level connection is through TR-1B and CB-4B-IN, not a direct bus edge."
+    },
+    {
+      "a": "CB-A01",
+      "b": "CB-A02",
+      "reason": "Both attach to BUS-480-A; matrix uses the bus node rather than making branch breakers a clique."
+    },
+    {
+      "a": "TR-480-A",
+      "b": "TR-480-C",
+      "reason": "Nearby left-side routed feeders are separate; no filled dot or direct conductor links the transformers."
+    },
+    {
+      "a": "TR-480-B",
+      "b": "TR-480-D",
+      "reason": "Nearby right-side routed feeders are separate; no filled dot or direct conductor links the transformers."
+    },
+    {
+      "a": "BUS-480-A",
+      "b": "DC-BUS-125A",
+      "reason": "The 480 V bus and 125 V DC bus are related through charger/battery equipment, not directly connected by a visible conductor."
+    },
+    {
+      "a": "BUS-480-B",
+      "b": "DC-BUS-125B",
+      "reason": "The 480 V bus and 125 V DC bus are related through charger/battery equipment, not directly connected by a visible conductor."
+    },
+    {
+      "a": "GND-EQ-A",
+      "b": "GND-EQ-B",
+      "reason": "Separate ground symbols on left and right; no continuous line between them is visible."
+    },
+    {
+      "a": "legend symbol samples",
+      "b": "drawing circuit",
+      "reason": "Legend/sample symbols are explanatory graphics and are not electrical connections in the schematic body."
+    }
+  ],
+  "notes": [
+    "Final precision review used only Doc27 Raw + components visual resources and the listed round output files; no GT, GT-derived feedback, Raw+wires folders/scripts, or OCR engines were used.",
+    "Diego round 2 exactly matches Jennifer round 1 refined node order, asserted edge set, edge kind/confidence metadata, uncertain edge pairs, and connectivity matrix.",
+    "No new visually supported correction is visible in the provided raw/overlay evidence; saturation/agreement declared.",
+    "The final graph keeps BAT-125B--DC-BUS-125B uncertain rather than asserted because the B-side battery does not visibly terminate on the DC-BUS-125B conductor.",
+    "No new round-2 edges were added, removed, or label-corrected."
+  ]
+}

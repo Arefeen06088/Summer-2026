@@ -1,0 +1,214 @@
+source,target,type,evidence
+GEN-G01,GSU-T01,solid_power,generator source detail connects to step-up transformer
+GSU-T01,SWYD-345,solid_power,step-up transformer line lands on 345 kV switchyard symbol
+SWYD-345,CB-13A1,solid_power,upper source header feeds 13.8 kV A incoming breaker
+CB-13A1,BUS-13A 13.8 KV AUX BUS A,solid_power,incoming breaker drops to AUX BUS A with junction dot
+SWYD-345,CB-13B1,solid_power,upper source header feeds 13.8 kV B incoming breaker
+CB-13B1,BUS-13B 13.8 KV AUX BUS B,solid_power,incoming breaker drops to AUX BUS B with junction dot
+BUS-13A 13.8 KV AUX BUS A,CB-13T,solid_power,tie breaker drawn between 13.8 kV buses
+CB-13T,BUS-13B 13.8 KV AUX BUS B,solid_power,tie breaker drawn between 13.8 kV buses
+BUS-13A 13.8 KV AUX BUS A,AUX-XFMR-1A,solid_power,AUX-XFMR-1A taps from BUS-13A 13.8 KV AUX BUS A
+AUX-XFMR-1A,CB-4A-IN,solid_power,AUX-XFMR-1A output feeds CB-4A-IN
+CB-4A-IN,BUS-4160-A 4160V SAFETY BUS 1A,solid_power,CB-4A-IN lands on BUS-4160-A 4160V SAFETY BUS 1A
+BUS-13A 13.8 KV AUX BUS A,AUX-XFMR-1B,solid_power,AUX-XFMR-1B taps from BUS-13A 13.8 KV AUX BUS A
+AUX-XFMR-1B,CB-4B-IN,solid_power,AUX-XFMR-1B output feeds CB-4B-IN
+CB-4B-IN,BUS-4160-B 4160V SAFETY BUS 1B,solid_power,CB-4B-IN lands on BUS-4160-B 4160V SAFETY BUS 1B
+BUS-13B 13.8 KV AUX BUS B,SAT-XFMR-1C,solid_power,SAT-XFMR-1C taps from BUS-13B 13.8 KV AUX BUS B
+SAT-XFMR-1C,CB-4C-IN,solid_power,SAT-XFMR-1C output feeds CB-4C-IN
+CB-4C-IN,BUS-4160-C 4160V SAFETY BUS 1C,solid_power,CB-4C-IN lands on BUS-4160-C 4160V SAFETY BUS 1C
+BUS-13B 13.8 KV AUX BUS B,SAT-XFMR-1D,solid_power,SAT-XFMR-1D taps from BUS-13B 13.8 KV AUX BUS B
+SAT-XFMR-1D,CB-4D-IN,solid_power,SAT-XFMR-1D output feeds CB-4D-IN
+CB-4D-IN,BUS-4160-D 4160V SAFETY BUS 1D,solid_power,CB-4D-IN lands on BUS-4160-D 4160V SAFETY BUS 1D
+BUS-13A 13.8 KV AUX BUS A,RELAY-87U,control,dashed C-031 control lead from AUX BUS A area to relay
+RELAY-87U,CB-4B-IN,control,dashed control lead from relay to CB-4B-IN
+BUS-4160-A 4160V SAFETY BUS 1A,CB-DG-A,solid_power,DG breaker A taps onto 4160 V safety bus A
+CB-DG-A,DG-1A,solid_power,DG-1A connected to its bus breaker
+BUS-4160-B 4160V SAFETY BUS 1B,CB-DG-B,solid_power,DG breaker B taps onto 4160 V safety bus B
+CB-DG-B,DG-1B,solid_power,DG-1B connected to its bus breaker
+BUS-4160-C 4160V SAFETY BUS 1C,CB-DG-C,solid_power,DG breaker C taps onto 4160 V safety bus C
+CB-DG-C,DG-1C,solid_power,DG-1C connected to its bus breaker
+BUS-4160-D 4160V SAFETY BUS 1D,CB-DG-D,solid_power,DG breaker D taps onto 4160 V safety bus D
+CB-DG-D,DG-1D,solid_power,DG-1D connected to its bus breaker
+BUS-4160-A 4160V SAFETY BUS 1A,CB-4AB-TIE,solid_power,tie breaker joins buses A and B
+CB-4AB-TIE,BUS-4160-B 4160V SAFETY BUS 1B,solid_power,tie breaker joins buses A and B
+BUS-4160-C 4160V SAFETY BUS 1C,CB-4CD-TIE,solid_power,tie breaker joins buses C and D
+CB-4CD-TIE,BUS-4160-D 4160V SAFETY BUS 1D,solid_power,tie breaker joins buses C and D
+BUS-4160-A 4160V SAFETY BUS 1A,CB-LC-A,solid_power,4160 V bus A feeds load-center breaker
+CB-LC-A,TR-LC-A,solid_power,load-center breaker feeds transformer A
+TR-LC-A,BUS-480-A 480V LOAD CENTER A,solid_power,transformer A drops to 480 V load center
+BUS-4160-B 4160V SAFETY BUS 1B,CB-LC-B,solid_power,4160 V bus B feeds load-center breaker
+CB-LC-B,TR-LC-B,solid_power,load-center breaker feeds transformer B
+TR-LC-B,BUS-480-B 480V LOAD CENTER B,solid_power,transformer B drops to 480 V load center
+BUS-4160-C 4160V SAFETY BUS 1C,CB-LC-C,solid_power,4160 V bus C feeds load-center breaker
+CB-LC-C,TR-LC-C,solid_power,load-center breaker feeds transformer C
+TR-LC-C,BUS-480-C 480V LOAD CENTER C,solid_power,transformer C drops to 480 V load center
+BUS-4160-D 4160V SAFETY BUS 1D,CB-LC-D,solid_power,4160 V bus D feeds load-center breaker
+CB-LC-D,TR-LC-D,solid_power,load-center breaker feeds transformer D
+TR-LC-D,BUS-480-D 480V LOAD CENTER D,solid_power,transformer D drops to 480 V load center
+BUS-4160-A 4160V SAFETY BUS 1A,SYNC-PNL-1,control,visible dashed C-030 tap from BUS-4160-A to sync panel
+BUS-480-A 480V LOAD CENTER A,INST-PT-A,instrument,PT instrument tap from 480 V load center A
+BUS-480-A 480V LOAD CENTER A,GND-A,ground,right-side solid ground tap from 480 V load center A
+BUS-480-A 480V LOAD CENTER A,XFMR-120-A,solid_power,left-side solid feed to 120 V transformer A
+XFMR-120-A,PNL-120-A,solid_power,120 V transformer feeds panel A
+BUS-480-A 480V LOAD CENTER A,CB-MCC-AA,solid_power,480 V bus feeds first MCC breaker AA
+CB-MCC-AA,MCC-AA,solid_power,MCC breaker AA feeds MCC AA
+BUS-480-A 480V LOAD CENTER A,CB-MCC-AB,solid_power,480 V bus feeds second MCC breaker AB
+CB-MCC-AB,MCC-AB,solid_power,MCC breaker AB feeds MCC AB
+MCC-AA,INST-CT-A,instrument,CT dashed/instrument tap at MCC AA
+MCC-AA,CB-RHR-A,solid_power,MCC AA feeder to CB-RHR-A
+CB-RHR-A,PUMP-RHR-A,solid_power,CB-RHR-A feeds PUMP-RHR-A
+MCC-AA,CB-SI-A,solid_power,MCC AA feeder to CB-SI-A
+CB-SI-A,PUMP-SI-A,solid_power,CB-SI-A feeds PUMP-SI-A
+MCC-AA,CB-CCW-A,solid_power,MCC AA feeder to CB-CCW-A
+CB-CCW-A,PUMP-CCW-A,solid_power,CB-CCW-A feeds PUMP-CCW-A
+MCC-AA,CB-FAN-A,solid_power,MCC AA feeder to CB-FAN-A
+CB-FAN-A,FAN-CR-A,solid_power,CB-FAN-A feeds FAN-CR-A
+MCC-AB,CB-CH-A,solid_power,MCC AB feeder to CB-CH-A
+CB-CH-A,CHILLER-A,solid_power,CB-CH-A feeds CHILLER-A
+MCC-AB,CB-VLV1-A,solid_power,MCC AB feeder to CB-VLV1-A
+CB-VLV1-A,MOV-HV1-A,solid_power,CB-VLV1-A feeds MOV-HV1-A
+MCC-AB,CB-VLV2-A,solid_power,MCC AB feeder to CB-VLV2-A
+CB-VLV2-A,MOV-HV2-A,solid_power,CB-VLV2-A feeds MOV-HV2-A
+MCC-AB,CB-SPARE-A,solid_power,MCC AB feeder to CB-SPARE-A
+CB-SPARE-A,SPARE-LOAD-A,solid_power,CB-SPARE-A feeds SPARE-LOAD-A
+PNL-120-A,RELAY-KA1,control,dashed branch from PNL-120-A to RELAY-KA1
+PNL-120-A,RELAY-KA2,control,dashed branch from PNL-120-A to RELAY-KA2
+PNL-120-A,JB-A1,control,dashed run from PNL-120-A to junction box
+JB-A1,TERM-A,control,dashed run from JB-A1 to terminal block
+CB-RHR-A,CB-SI-A,control,dashed interlock between RHR and SI breaker area
+PUMP-SI-A,RELAY-KA2,control,dashed SI control lead descends to RELAY-KA2
+BUS-480-B 480V LOAD CENTER B,INST-PT-B,instrument,PT instrument tap from 480 V load center B
+BUS-480-B 480V LOAD CENTER B,GND-B,ground,right-side solid ground tap from 480 V load center B
+BUS-480-B 480V LOAD CENTER B,XFMR-120-B,solid_power,left-side solid feed to 120 V transformer B
+XFMR-120-B,PNL-120-B,solid_power,120 V transformer feeds panel B
+BUS-480-B 480V LOAD CENTER B,CB-MCC-BA,solid_power,480 V bus feeds first MCC breaker BA
+CB-MCC-BA,MCC-BA,solid_power,MCC breaker BA feeds MCC BA
+BUS-480-B 480V LOAD CENTER B,CB-MCC-BB,solid_power,480 V bus feeds second MCC breaker BB
+CB-MCC-BB,MCC-BB,solid_power,MCC breaker BB feeds MCC BB
+MCC-BA,INST-CT-B,instrument,CT dashed/instrument tap at MCC BA
+MCC-BA,CB-RHR-B,solid_power,MCC BA feeder to CB-RHR-B
+CB-RHR-B,PUMP-RHR-B,solid_power,CB-RHR-B feeds PUMP-RHR-B
+MCC-BA,CB-SI-B,solid_power,MCC BA feeder to CB-SI-B
+CB-SI-B,PUMP-SI-B,solid_power,CB-SI-B feeds PUMP-SI-B
+MCC-BA,CB-CCW-B,solid_power,MCC BA feeder to CB-CCW-B
+CB-CCW-B,PUMP-CCW-B,solid_power,CB-CCW-B feeds PUMP-CCW-B
+MCC-BA,CB-FAN-B,solid_power,MCC BA feeder to CB-FAN-B
+CB-FAN-B,FAN-CR-B,solid_power,CB-FAN-B feeds FAN-CR-B
+MCC-BB,CB-CH-B,solid_power,MCC BB feeder to CB-CH-B
+CB-CH-B,CHILLER-B,solid_power,CB-CH-B feeds CHILLER-B
+MCC-BB,CB-VLV1-B,solid_power,MCC BB feeder to CB-VLV1-B
+CB-VLV1-B,MOV-HV1-B,solid_power,CB-VLV1-B feeds MOV-HV1-B
+MCC-BB,CB-VLV2-B,solid_power,MCC BB feeder to CB-VLV2-B
+CB-VLV2-B,MOV-HV2-B,solid_power,CB-VLV2-B feeds MOV-HV2-B
+MCC-BB,CB-SPARE-B,solid_power,MCC BB feeder to CB-SPARE-B
+CB-SPARE-B,SPARE-LOAD-B,solid_power,CB-SPARE-B feeds SPARE-LOAD-B
+PNL-120-B,RELAY-KB1,control,dashed branch from PNL-120-B to RELAY-KB1
+PNL-120-B,RELAY-KB2,control,dashed branch from PNL-120-B to RELAY-KB2
+PNL-120-B,JB-B1,control,dashed run from PNL-120-B to junction box
+JB-B1,TERM-B,control,dashed run from JB-B1 to terminal block
+CB-RHR-B,CB-SI-B,control,dashed interlock between RHR and SI breaker area
+PUMP-SI-B,RELAY-KB2,control,dashed SI control lead descends to RELAY-KB2
+BUS-480-C 480V LOAD CENTER C,INST-PT-C,instrument,PT instrument tap from 480 V load center C
+BUS-480-C 480V LOAD CENTER C,GND-C,ground,right-side solid ground tap from 480 V load center C
+BUS-480-C 480V LOAD CENTER C,XFMR-120-C,solid_power,left-side solid feed to 120 V transformer C
+XFMR-120-C,PNL-120-C,solid_power,120 V transformer feeds panel C
+BUS-480-C 480V LOAD CENTER C,CB-MCC-CA,solid_power,480 V bus feeds first MCC breaker CA
+CB-MCC-CA,MCC-CA,solid_power,MCC breaker CA feeds MCC CA
+BUS-480-C 480V LOAD CENTER C,CB-MCC-CB,solid_power,480 V bus feeds second MCC breaker CB
+CB-MCC-CB,MCC-CB,solid_power,MCC breaker CB feeds MCC CB
+MCC-CA,INST-CT-C,instrument,CT dashed/instrument tap at MCC CA
+MCC-CA,CB-RHR-C,solid_power,MCC CA feeder to CB-RHR-C
+CB-RHR-C,PUMP-RHR-C,solid_power,CB-RHR-C feeds PUMP-RHR-C
+MCC-CA,CB-SI-C,solid_power,MCC CA feeder to CB-SI-C
+CB-SI-C,PUMP-SI-C,solid_power,CB-SI-C feeds PUMP-SI-C
+MCC-CA,CB-CCW-C,solid_power,MCC CA feeder to CB-CCW-C
+CB-CCW-C,PUMP-CCW-C,solid_power,CB-CCW-C feeds PUMP-CCW-C
+MCC-CA,CB-FAN-C,solid_power,MCC CA feeder to CB-FAN-C
+CB-FAN-C,FAN-CR-C,solid_power,CB-FAN-C feeds FAN-CR-C
+MCC-CB,CB-CH-C,solid_power,MCC CB feeder to CB-CH-C
+CB-CH-C,CHILLER-C,solid_power,CB-CH-C feeds CHILLER-C
+MCC-CB,CB-VLV1-C,solid_power,MCC CB feeder to CB-VLV1-C
+CB-VLV1-C,MOV-HV1-C,solid_power,CB-VLV1-C feeds MOV-HV1-C
+MCC-CB,CB-VLV2-C,solid_power,MCC CB feeder to CB-VLV2-C
+CB-VLV2-C,MOV-HV2-C,solid_power,CB-VLV2-C feeds MOV-HV2-C
+MCC-CB,CB-SPARE-C,solid_power,MCC CB feeder to CB-SPARE-C
+CB-SPARE-C,SPARE-LOAD-C,solid_power,CB-SPARE-C feeds SPARE-LOAD-C
+PNL-120-C,RELAY-KC1,control,dashed branch from PNL-120-C to RELAY-KC1
+PNL-120-C,RELAY-KC2,control,dashed branch from PNL-120-C to RELAY-KC2
+PNL-120-C,JB-C1,control,dashed run from PNL-120-C to junction box
+JB-C1,TERM-C,control,dashed run from JB-C1 to terminal block
+CB-RHR-C,CB-SI-C,control,dashed interlock between RHR and SI breaker area
+PUMP-SI-C,RELAY-KC2,control,dashed SI control lead descends to RELAY-KC2
+BUS-480-D 480V LOAD CENTER D,INST-PT-D,instrument,PT instrument tap from 480 V load center D
+BUS-480-D 480V LOAD CENTER D,GND-D,ground,right-side solid ground tap from 480 V load center D
+BUS-480-D 480V LOAD CENTER D,XFMR-120-D,solid_power,left-side solid feed to 120 V transformer D
+XFMR-120-D,PNL-120-D,solid_power,120 V transformer feeds panel D
+BUS-480-D 480V LOAD CENTER D,CB-MCC-DA,solid_power,480 V bus feeds first MCC breaker DA
+CB-MCC-DA,MCC-DA,solid_power,MCC breaker DA feeds MCC DA
+BUS-480-D 480V LOAD CENTER D,CB-MCC-DB,solid_power,480 V bus feeds second MCC breaker DB
+CB-MCC-DB,MCC-DB,solid_power,MCC breaker DB feeds MCC DB
+MCC-DA,INST-CT-D,instrument,CT dashed/instrument tap at MCC DA
+MCC-DA,CB-RHR-D,solid_power,MCC DA feeder to CB-RHR-D
+CB-RHR-D,PUMP-RHR-D,solid_power,CB-RHR-D feeds PUMP-RHR-D
+MCC-DA,CB-SI-D,solid_power,MCC DA feeder to CB-SI-D
+CB-SI-D,PUMP-SI-D,solid_power,CB-SI-D feeds PUMP-SI-D
+MCC-DA,CB-CCW-D,solid_power,MCC DA feeder to CB-CCW-D
+CB-CCW-D,PUMP-CCW-D,solid_power,CB-CCW-D feeds PUMP-CCW-D
+MCC-DA,CB-FAN-D,solid_power,MCC DA feeder to CB-FAN-D
+CB-FAN-D,FAN-CR-D,solid_power,CB-FAN-D feeds FAN-CR-D
+MCC-DB,CB-CH-D,solid_power,MCC DB feeder to CB-CH-D
+CB-CH-D,CHILLER-D,solid_power,CB-CH-D feeds CHILLER-D
+MCC-DB,CB-VLV1-D,solid_power,MCC DB feeder to CB-VLV1-D
+CB-VLV1-D,MOV-HV1-D,solid_power,CB-VLV1-D feeds MOV-HV1-D
+MCC-DB,CB-VLV2-D,solid_power,MCC DB feeder to CB-VLV2-D
+CB-VLV2-D,MOV-HV2-D,solid_power,CB-VLV2-D feeds MOV-HV2-D
+MCC-DB,CB-SPARE-D,solid_power,MCC DB feeder to CB-SPARE-D
+CB-SPARE-D,SPARE-LOAD-D,solid_power,CB-SPARE-D feeds SPARE-LOAD-D
+PNL-120-D,RELAY-KD1,control,dashed branch from PNL-120-D to RELAY-KD1
+PNL-120-D,RELAY-KD2,control,dashed branch from PNL-120-D to RELAY-KD2
+PNL-120-D,JB-D1,control,dashed run from PNL-120-D to junction box
+JB-D1,TERM-D,control,dashed run from JB-D1 to terminal block
+CB-RHR-D,CB-SI-D,control,dashed interlock between RHR and SI breaker area
+PUMP-SI-D,RELAY-KD2,control,dashed SI control lead descends to RELAY-KD2
+CB-DC-A1,CHGR-125A,solid_power,charger A breaker feeds charger A
+CHGR-125A,BUS-125A 125 VDC BUS A,solid_dc,charger A output drops to 125 VDC bus A
+CB-DC-B1,CHGR-125B,solid_power,charger B breaker feeds charger B
+CHGR-125B,BUS-125B 125 VDC BUS B,solid_dc,charger B output drops to 125 VDC bus B
+BUS-125A 125 VDC BUS A,BAT-125A,solid_dc,battery A taps onto 125 VDC bus A
+BUS-125A 125 VDC BUS A,DC-MCC-A,solid_dc,DC-MCC-A solid drop from 125 VDC bus
+BUS-125A 125 VDC BUS A,DIODE-OR-A,solid_dc,diode OR device A solid tap to 125 VDC bus
+BUS-125A 125 VDC BUS A,GRD-DC-A,ground,DC ground A at end of 125 VDC bus
+BUS-125A 125 VDC BUS A,FUSE-FD-A,solid_dc,fuse feeder A taps from 125 VDC bus
+FUSE-FD-A,INV-UPS-A,solid_dc,fuse feeder A feeds UPS inverter
+INV-UPS-A,BUS-UPS-A 120 VAC UPS BUS A,solid_ups,inverter A output lands on UPS bus
+DC-MCC-A,SOL-SDV-A,control,dashed control lead from DC-MCC-A to solenoid valve
+BUS-UPS-A 120 VAC UPS BUS A,INST-RACK-A,instrument,instrument rack A tap from UPS bus
+BUS-UPS-A 120 VAC UPS BUS A,PNL-RPS-A,control_power,UPS bus A feeds RPS panel
+BUS-UPS-A 120 VAC UPS BUS A,PLC-SAF-A,control_power,UPS bus A feeds safety PLC
+PNL-RPS-A,RELAY-RPS-A1,control,RPS panel A dashed branch to RPS relay
+PNL-RPS-A,RELAY-ESF-A,control,RPS panel A dashed branch to ESF relay
+BUS-125B 125 VDC BUS B,BAT-125B,solid_dc,battery B taps onto 125 VDC bus B
+BUS-125B 125 VDC BUS B,DC-MCC-B,solid_dc,DC-MCC-B solid drop from 125 VDC bus
+BUS-125B 125 VDC BUS B,DIODE-OR-B,solid_dc,diode OR device B solid tap to 125 VDC bus
+BUS-125B 125 VDC BUS B,GRD-DC-B,ground,DC ground B at end of 125 VDC bus
+BUS-125B 125 VDC BUS B,FUSE-FD-B,solid_dc,fuse feeder B taps from 125 VDC bus
+FUSE-FD-B,INV-UPS-B,solid_dc,fuse feeder B feeds UPS inverter
+INV-UPS-B,BUS-UPS-B 120 VAC UPS BUS B,solid_ups,inverter B output lands on UPS bus
+DC-MCC-B,SOL-SDV-B,control,dashed control lead from DC-MCC-B to solenoid valve
+BUS-UPS-B 120 VAC UPS BUS B,INST-RACK-B,instrument,instrument rack B tap from UPS bus
+BUS-UPS-B 120 VAC UPS BUS B,PNL-RPS-B,control_power,UPS bus B feeds RPS panel
+BUS-UPS-B 120 VAC UPS BUS B,PLC-SAF-B,control_power,UPS bus B feeds safety PLC
+PNL-RPS-B,RELAY-RPS-B1,control,RPS panel B dashed branch to RPS relay
+PNL-RPS-B,RELAY-ESF-B,control,RPS panel B dashed branch to ESF relay
+BUS-UPS-A 120 VAC UPS BUS A,ANN-PNL-CR,control_power,UPS bus A dashed run to control-room annunciator
+ANN-PNL-CR,JB-CR-01,control,annunciator panel drops to control-room junction box
+JB-CR-01,TERM-MTB-A,control,junction box dashed branch to MTB-A terminal
+JB-CR-01,TERM-MTB-B,control,junction box dashed branch to MTB-B terminal
+BUS-UPS-B 120 VAC UPS BUS B,REC-SEQ-1,control_power,UPS bus B dashed run to recorder/sequencer
+XFMR-PT-1,METER-V01,instrument,dashed PT drop aligns directly with voltage meter
+SYNC-PNL-1,CB-DG-A,control_uncertain,Diego R1 high-recall candidate sync panel to DG breaker
+XFMR-PT-1,METER-A01,instrument_uncertain,Diego R1 high-recall candidate PT to ammeter
+RELAY-KA1,JB-A1,control_uncertain,Diego R1 high-recall candidate relay KA1 to JB-A1
+RELAY-KB1,JB-B1,control_uncertain,Diego R1 high-recall candidate relay KB1 to JB-B1
+RELAY-KC1,JB-C1,control_uncertain,Diego R1 high-recall candidate relay KC1 to JB-C1
+RELAY-KD1,JB-D1,control_uncertain,Diego R1 high-recall candidate relay KD1 to JB-D1

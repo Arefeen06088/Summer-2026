@@ -1,0 +1,206 @@
+source,target,confidence,line_type,evidence
+OFFSITE GRID-1,DS-101,high,ac-power,Division A offsite source descends through DS-101 CB-101 and TR-101 to BUS-4160-A
+DS-101,CB-101,high,ac-power,Division A offsite source descends through DS-101 CB-101 and TR-101 to BUS-4160-A
+CB-101,TR-101,high,ac-power,Division A offsite source descends through DS-101 CB-101 and TR-101 to BUS-4160-A
+TR-101,BUS-4160-A,high,ac-power,Division A offsite source descends through DS-101 CB-101 and TR-101 to BUS-4160-A
+DG-1,CB-DG1,high,ac-power,DG-1 feeder lands on BUS-4160-A through CB-DG1
+CB-DG1,BUS-4160-A,high,ac-power,DG-1 feeder lands on BUS-4160-A through CB-DG1
+BUS-4160-A,PT-4160A,high,instrument,PT-4160A taps the A 4160 bus with a dashed vertical lead
+BUS-4160-A,CB-201,high,ac-power,A 4160 bus drops through CB-201 TR-480-A and CB-480-A to BUS-480-A
+CB-201,TR-480-A,high,ac-power,A 4160 bus drops through CB-201 TR-480-A and CB-480-A to BUS-480-A
+TR-480-A,CB-480-A,high,ac-power,A 4160 bus drops through CB-201 TR-480-A and CB-480-A to BUS-480-A
+CB-480-A,BUS-480-A,high,ac-power,A 4160 bus drops through CB-201 TR-480-A and CB-480-A to BUS-480-A
+BUS-4160-A,CB-TIE-4160,high,ac-power,CB-TIE-4160 is drawn between the two 4160 bus bars
+CB-TIE-4160,BUS-4160-B,high,ac-power,CB-TIE-4160 is drawn between the two 4160 bus bars
+OFFSITE GRID-2,DS-102,high,ac-power,Division B offsite source descends through DS-102 CB-102 and TR-102 to BUS-4160-B
+DS-102,CB-102,high,ac-power,Division B offsite source descends through DS-102 CB-102 and TR-102 to BUS-4160-B
+CB-102,TR-102,high,ac-power,Division B offsite source descends through DS-102 CB-102 and TR-102 to BUS-4160-B
+TR-102,BUS-4160-B,high,ac-power,Division B offsite source descends through DS-102 CB-102 and TR-102 to BUS-4160-B
+DG-2,CB-DG2,high,ac-power,DG-2 feeder lands on BUS-4160-B through CB-DG2
+CB-DG2,BUS-4160-B,high,ac-power,DG-2 feeder lands on BUS-4160-B through CB-DG2
+BUS-4160-B,PT-4160B,high,instrument,PT-4160B taps the B 4160 bus with a dashed vertical lead
+BUS-4160-B,CB-202,high,ac-power,B 4160 bus drops through CB-202 TR-480-B and CB-480-B to BUS-480-B
+CB-202,TR-480-B,high,ac-power,B 4160 bus drops through CB-202 TR-480-B and CB-480-B to BUS-480-B
+TR-480-B,CB-480-B,high,ac-power,B 4160 bus drops through CB-202 TR-480-B and CB-480-B to BUS-480-B
+CB-480-B,BUS-480-B,high,ac-power,B 4160 bus drops through CB-202 TR-480-B and CB-480-B to BUS-480-B
+BUS-480-A,CB-TIE-480,high,ac-power,CB-TIE-480 is drawn between the 480 V A and B bus bars
+CB-TIE-480,BUS-480-B,high,ac-power,CB-TIE-480 is drawn between the 480 V A and B bus bars
+BUS-480-A,CB-F201,high,ac-power,Solid 480 V feeder stack for load module 201
+CB-F201,DS-F201,high,ac-power,Solid 480 V feeder stack for load module 201
+DS-F201,CPT-201,high,ac-power,Solid 480 V feeder stack for load module 201
+CPT-201,MCC-201,high,ac-power,Solid 480 V feeder stack for load module 201
+MCC-201,CB-L201,high,ac-power,Solid 480 V feeder stack for load module 201
+CB-L201,RELAY-K201,high,ac-power,Solid 480 V feeder stack for load module 201
+RELAY-K201,PUMP-P201,high,ac-power,Solid 480 V feeder stack for load module 201
+CB-F201,RELAY-PR201,high,control,Dashed protection-relay lead from CB-F201 to RELAY-PR201
+MCC-201,RELAY-A201,high,control,Dashed auxiliary relay lead from MCC-201 to RELAY-A201
+PUMP-P201,INST-201,high,control,Dashed instrument and local-control chain for module 201
+INST-201,JB-201,high,control,Dashed instrument and local-control chain for module 201
+JB-201,TB-201,high,control,Dashed instrument and local-control chain for module 201
+TB-201,LCS-201,high,control,Dashed instrument and local-control chain for module 201
+BUS-480-A,CB-F203,high,ac-power,Solid 480 V feeder stack for load module 203
+CB-F203,DS-F203,high,ac-power,Solid 480 V feeder stack for load module 203
+DS-F203,CPT-203,high,ac-power,Solid 480 V feeder stack for load module 203
+CPT-203,MCC-203,high,ac-power,Solid 480 V feeder stack for load module 203
+MCC-203,CB-L203,high,ac-power,Solid 480 V feeder stack for load module 203
+CB-L203,RELAY-K203,high,ac-power,Solid 480 V feeder stack for load module 203
+RELAY-K203,PUMP-P203,high,ac-power,Solid 480 V feeder stack for load module 203
+CB-F203,RELAY-PR203,high,control,Dashed protection-relay lead from CB-F203 to RELAY-PR203
+MCC-203,RELAY-A203,high,control,Dashed auxiliary relay lead from MCC-203 to RELAY-A203
+PUMP-P203,INST-203,high,control,Dashed instrument and local-control chain for module 203
+INST-203,JB-203,high,control,Dashed instrument and local-control chain for module 203
+JB-203,TB-203,high,control,Dashed instrument and local-control chain for module 203
+TB-203,LCS-203,high,control,Dashed instrument and local-control chain for module 203
+BUS-480-A,CB-F301,high,ac-power,Solid 480 V feeder stack for load module 301
+CB-F301,DS-F301,high,ac-power,Solid 480 V feeder stack for load module 301
+DS-F301,CPT-301,high,ac-power,Solid 480 V feeder stack for load module 301
+CPT-301,MCC-301,high,ac-power,Solid 480 V feeder stack for load module 301
+MCC-301,CB-L301,high,ac-power,Solid 480 V feeder stack for load module 301
+CB-L301,RELAY-K301,high,ac-power,Solid 480 V feeder stack for load module 301
+RELAY-K301,PUMP-P301,high,ac-power,Solid 480 V feeder stack for load module 301
+CB-F301,RELAY-PR301,high,control,Dashed protection-relay lead from CB-F301 to RELAY-PR301
+MCC-301,RELAY-A301,high,control,Dashed auxiliary relay lead from MCC-301 to RELAY-A301
+PUMP-P301,INST-301,high,control,Dashed instrument and local-control chain for module 301
+INST-301,JB-301,high,control,Dashed instrument and local-control chain for module 301
+JB-301,TB-301,high,control,Dashed instrument and local-control chain for module 301
+TB-301,LCS-301,high,control,Dashed instrument and local-control chain for module 301
+BUS-480-A,CB-F401,high,ac-power,Solid 480 V feeder stack for load module 401
+CB-F401,DS-F401,high,ac-power,Solid 480 V feeder stack for load module 401
+DS-F401,CPT-401,high,ac-power,Solid 480 V feeder stack for load module 401
+CPT-401,MCC-401,high,ac-power,Solid 480 V feeder stack for load module 401
+MCC-401,CB-L401,high,ac-power,Solid 480 V feeder stack for load module 401
+CB-L401,RELAY-K401,high,ac-power,Solid 480 V feeder stack for load module 401
+RELAY-K401,PUMP-P401,high,ac-power,Solid 480 V feeder stack for load module 401
+CB-F401,RELAY-PR401,high,control,Dashed protection-relay lead from CB-F401 to RELAY-PR401
+MCC-401,RELAY-A401,high,control,Dashed auxiliary relay lead from MCC-401 to RELAY-A401
+PUMP-P401,INST-401,high,control,Dashed instrument and local-control chain for module 401
+INST-401,JB-401,high,control,Dashed instrument and local-control chain for module 401
+JB-401,TB-401,high,control,Dashed instrument and local-control chain for module 401
+TB-401,LCS-401,high,control,Dashed instrument and local-control chain for module 401
+BUS-480-A,CB-F501,high,ac-power,Solid 480 V feeder stack for load module 501
+CB-F501,DS-F501,high,ac-power,Solid 480 V feeder stack for load module 501
+DS-F501,CPT-501,high,ac-power,Solid 480 V feeder stack for load module 501
+CPT-501,MCC-501,high,ac-power,Solid 480 V feeder stack for load module 501
+MCC-501,CB-L501,high,ac-power,Solid 480 V feeder stack for load module 501
+CB-L501,RELAY-K501,high,ac-power,Solid 480 V feeder stack for load module 501
+RELAY-K501,MTR-F501,high,ac-power,Solid 480 V feeder stack for load module 501
+CB-F501,RELAY-PR501,high,control,Dashed protection-relay lead from CB-F501 to RELAY-PR501
+MCC-501,RELAY-A501,high,control,Dashed auxiliary relay lead from MCC-501 to RELAY-A501
+MTR-F501,INST-501,high,control,Dashed instrument and local-control chain for module 501
+INST-501,JB-501,high,control,Dashed instrument and local-control chain for module 501
+JB-501,TB-501,high,control,Dashed instrument and local-control chain for module 501
+TB-501,LCS-501,high,control,Dashed instrument and local-control chain for module 501
+BUS-480-A,CB-F601,high,ac-power,Solid 480 V feeder stack for load module 601
+CB-F601,DS-F601,high,ac-power,Solid 480 V feeder stack for load module 601
+DS-F601,CPT-601,high,ac-power,Solid 480 V feeder stack for load module 601
+CPT-601,MCC-601,high,ac-power,Solid 480 V feeder stack for load module 601
+MCC-601,CB-L601,high,ac-power,Solid 480 V feeder stack for load module 601
+CB-L601,RELAY-K601,high,ac-power,Solid 480 V feeder stack for load module 601
+RELAY-K601,VALVE-MOV601,high,ac-power,Solid 480 V feeder stack for load module 601
+CB-F601,RELAY-PR601,high,control,Dashed protection-relay lead from CB-F601 to RELAY-PR601
+MCC-601,RELAY-A601,high,control,Dashed auxiliary relay lead from MCC-601 to RELAY-A601
+VALVE-MOV601,INST-601,high,control,Dashed instrument lead from VALVE-MOV601 to INST-601
+VALVE-MOV601,[LS-MOV601],high,control,Dashed limit-switch branch from VALVE-MOV601 to [LS-MOV601]
+[LS-MOV601],JB-601,high,control,Dashed local-control chain for MOV module 601
+JB-601,TB-601,high,control,Dashed local-control chain for MOV module 601
+TB-601,LCS-601,high,control,Dashed local-control chain for MOV module 601
+BUS-480-B,CB-F202,high,ac-power,Solid 480 V feeder stack for load module 202
+CB-F202,DS-F202,high,ac-power,Solid 480 V feeder stack for load module 202
+DS-F202,CPT-202,high,ac-power,Solid 480 V feeder stack for load module 202
+CPT-202,MCC-202,high,ac-power,Solid 480 V feeder stack for load module 202
+MCC-202,CB-L202,high,ac-power,Solid 480 V feeder stack for load module 202
+CB-L202,RELAY-K202,high,ac-power,Solid 480 V feeder stack for load module 202
+RELAY-K202,PUMP-P202,high,ac-power,Solid 480 V feeder stack for load module 202
+CB-F202,RELAY-PR202,high,control,Dashed protection-relay lead from CB-F202 to RELAY-PR202
+MCC-202,RELAY-A202,high,control,Dashed auxiliary relay lead from MCC-202 to RELAY-A202
+PUMP-P202,INST-202,high,control,Dashed instrument and local-control chain for module 202
+INST-202,JB-202,high,control,Dashed instrument and local-control chain for module 202
+JB-202,TB-202,high,control,Dashed instrument and local-control chain for module 202
+TB-202,LCS-202,high,control,Dashed instrument and local-control chain for module 202
+BUS-480-B,CB-F204,high,ac-power,Solid 480 V feeder stack for load module 204
+CB-F204,DS-F204,high,ac-power,Solid 480 V feeder stack for load module 204
+DS-F204,CPT-204,high,ac-power,Solid 480 V feeder stack for load module 204
+CPT-204,MCC-204,high,ac-power,Solid 480 V feeder stack for load module 204
+MCC-204,CB-L204,high,ac-power,Solid 480 V feeder stack for load module 204
+CB-L204,RELAY-K204,high,ac-power,Solid 480 V feeder stack for load module 204
+RELAY-K204,PUMP-P204,high,ac-power,Solid 480 V feeder stack for load module 204
+CB-F204,RELAY-PR204,high,control,Dashed protection-relay lead from CB-F204 to RELAY-PR204
+MCC-204,RELAY-A204,high,control,Dashed auxiliary relay lead from MCC-204 to RELAY-A204
+PUMP-P204,INST-204,high,control,Dashed instrument and local-control chain for module 204
+INST-204,JB-204,high,control,Dashed instrument and local-control chain for module 204
+JB-204,TB-204,high,control,Dashed instrument and local-control chain for module 204
+TB-204,LCS-204,high,control,Dashed instrument and local-control chain for module 204
+BUS-480-B,CB-F302,high,ac-power,Solid 480 V feeder stack for load module 302
+CB-F302,DS-F302,high,ac-power,Solid 480 V feeder stack for load module 302
+DS-F302,CPT-302,high,ac-power,Solid 480 V feeder stack for load module 302
+CPT-302,MCC-302,high,ac-power,Solid 480 V feeder stack for load module 302
+MCC-302,CB-L302,high,ac-power,Solid 480 V feeder stack for load module 302
+CB-L302,RELAY-K302,high,ac-power,Solid 480 V feeder stack for load module 302
+RELAY-K302,PUMP-P302,high,ac-power,Solid 480 V feeder stack for load module 302
+CB-F302,RELAY-PR302,high,control,Dashed protection-relay lead from CB-F302 to RELAY-PR302
+MCC-302,RELAY-A302,high,control,Dashed auxiliary relay lead from MCC-302 to RELAY-A302
+PUMP-P302,INST-302,high,control,Dashed instrument and local-control chain for module 302
+INST-302,JB-302,high,control,Dashed instrument and local-control chain for module 302
+JB-302,TB-302,high,control,Dashed instrument and local-control chain for module 302
+TB-302,LCS-302,high,control,Dashed instrument and local-control chain for module 302
+BUS-480-B,CB-F402,high,ac-power,Solid 480 V feeder stack for load module 402
+CB-F402,DS-F402,high,ac-power,Solid 480 V feeder stack for load module 402
+DS-F402,CPT-402,high,ac-power,Solid 480 V feeder stack for load module 402
+CPT-402,MCC-402,high,ac-power,Solid 480 V feeder stack for load module 402
+MCC-402,CB-L402,high,ac-power,Solid 480 V feeder stack for load module 402
+CB-L402,RELAY-K402,high,ac-power,Solid 480 V feeder stack for load module 402
+RELAY-K402,PUMP-P402,high,ac-power,Solid 480 V feeder stack for load module 402
+CB-F402,RELAY-PR402,high,control,Dashed protection-relay lead from CB-F402 to RELAY-PR402
+MCC-402,RELAY-A402,high,control,Dashed auxiliary relay lead from MCC-402 to RELAY-A402
+PUMP-P402,INST-402,high,control,Dashed instrument and local-control chain for module 402
+INST-402,JB-402,high,control,Dashed instrument and local-control chain for module 402
+JB-402,TB-402,high,control,Dashed instrument and local-control chain for module 402
+TB-402,LCS-402,high,control,Dashed instrument and local-control chain for module 402
+BUS-480-B,CB-F502,high,ac-power,Solid 480 V feeder stack for load module 502
+CB-F502,DS-F502,high,ac-power,Solid 480 V feeder stack for load module 502
+DS-F502,CPT-502,high,ac-power,Solid 480 V feeder stack for load module 502
+CPT-502,MCC-502,high,ac-power,Solid 480 V feeder stack for load module 502
+MCC-502,CB-L502,high,ac-power,Solid 480 V feeder stack for load module 502
+CB-L502,RELAY-K502,high,ac-power,Solid 480 V feeder stack for load module 502
+RELAY-K502,MTR-F502,high,ac-power,Solid 480 V feeder stack for load module 502
+CB-F502,RELAY-PR502,high,control,Dashed protection-relay lead from CB-F502 to RELAY-PR502
+MCC-502,RELAY-A502,high,control,Dashed auxiliary relay lead from MCC-502 to RELAY-A502
+MTR-F502,INST-502,high,control,Dashed instrument and local-control chain for module 502
+INST-502,JB-502,high,control,Dashed instrument and local-control chain for module 502
+JB-502,TB-502,high,control,Dashed instrument and local-control chain for module 502
+TB-502,LCS-502,high,control,Dashed instrument and local-control chain for module 502
+BUS-480-B,CB-F701,high,ac-power,Solid 480 V feeder stack for load module 701
+CB-F701,DS-F701,high,ac-power,Solid 480 V feeder stack for load module 701
+DS-F701,CPT-701,high,ac-power,Solid 480 V feeder stack for load module 701
+CPT-701,MCC-701,high,ac-power,Solid 480 V feeder stack for load module 701
+MCC-701,CB-L701,high,ac-power,Solid 480 V feeder stack for load module 701
+CB-L701,RELAY-K701,high,ac-power,Solid 480 V feeder stack for load module 701
+RELAY-K701,INST-RPS701,high,ac-power,Solid 480 V feeder stack for load module 701
+CB-F701,RELAY-PR701,high,control,Dashed protection-relay lead from CB-F701 to RELAY-PR701
+MCC-701,RELAY-A701,high,control,Dashed auxiliary relay lead from MCC-701 to RELAY-A701
+INST-RPS701,INST-701,high,control,Dashed instrument lead from INST-RPS701 to INST-701
+INST-701,JB-701,high,control,Dashed local-control chain for RPS instrument module 701
+JB-701,TB-701,high,control,Dashed local-control chain for RPS instrument module 701
+TB-701,LCS-701,high,control,Dashed local-control chain for RPS instrument module 701
+BUS-480-A,CB-301,high,ac-power,A control-power feed leaves BUS-480-A through CB-301 and TR-120-A to BUS-120AC-A
+CB-301,TR-120-A,high,ac-power,A control-power feed leaves BUS-480-A through CB-301 and TR-120-A to BUS-120AC-A
+TR-120-A,BUS-120AC-A,high,ac-power,A control-power feed leaves BUS-480-A through CB-301 and TR-120-A to BUS-120AC-A
+BUS-120AC-A,JB-MAIN,high,control,JB-MAIN is dashed down from BUS-120AC-A
+BUS-480-A,CHGR-125A,high,dc-control,A DC train feed descends through CHGR-125A BAT-125A BUS-125DC-A and INV-120A to PN-RPS-A
+CHGR-125A,BAT-125A,high,dc-control,A DC train feed descends through CHGR-125A BAT-125A BUS-125DC-A and INV-120A to PN-RPS-A
+BAT-125A,BUS-125DC-A,high,dc-control,A DC train feed descends through CHGR-125A BAT-125A BUS-125DC-A and INV-120A to PN-RPS-A
+BUS-125DC-A,INV-120A,high,dc-control,A DC train feed descends through CHGR-125A BAT-125A BUS-125DC-A and INV-120A to PN-RPS-A
+INV-120A,PN-RPS-A,high,dc-control,A DC train feed descends through CHGR-125A BAT-125A BUS-125DC-A and INV-120A to PN-RPS-A
+BUS-480-B,CB-302,high,ac-power,B control-power feed leaves BUS-480-B through CB-302 and TR-120-B to BUS-120AC-B
+CB-302,TR-120-B,high,ac-power,B control-power feed leaves BUS-480-B through CB-302 and TR-120-B to BUS-120AC-B
+TR-120-B,BUS-120AC-B,high,ac-power,B control-power feed leaves BUS-480-B through CB-302 and TR-120-B to BUS-120AC-B
+BUS-480-B,CHGR-125B,high,dc-control,B DC train feed descends through CHGR-125B BAT-125B BUS-125DC-B and INV-120B to PN-RPS-B
+CHGR-125B,BAT-125B,high,dc-control,B DC train feed descends through CHGR-125B BAT-125B BUS-125DC-B and INV-120B to PN-RPS-B
+BAT-125B,BUS-125DC-B,high,dc-control,B DC train feed descends through CHGR-125B BAT-125B BUS-125DC-B and INV-120B to PN-RPS-B
+BUS-125DC-B,INV-120B,high,dc-control,B DC train feed descends through CHGR-125B BAT-125B BUS-125DC-B and INV-120B to PN-RPS-B
+INV-120B,PN-RPS-B,high,dc-control,B DC train feed descends through CHGR-125B BAT-125B BUS-125DC-B and INV-120B to PN-RPS-B
+INST-601,[LS-MOV601],low,control,Diego high-recall possible shared MOV instrument junction; Jennifer treats LS branch as landed from valve then down to JB
+VALVE-MOV601,JB-601,low,control,Diego high-recall shortcut along MOV dashed branch; Jennifer keeps nearest named components only
+INST-RPS701,JB-701,low,control,Diego high-recall shortcut from RPS instrument to JB; Jennifer keeps the intermediate INST-701
+BUS-120AC-B,JB-MAIN,low,control,Diego high-recall possible main junction association; Jennifer keeps JB-MAIN on BUS-120AC-A only
+BUS-480-A,CB-F202,low,ac-power,Diego high-recall possible visual continuation across the 480 tie; Jennifer keeps B-side loads on BUS-480-B

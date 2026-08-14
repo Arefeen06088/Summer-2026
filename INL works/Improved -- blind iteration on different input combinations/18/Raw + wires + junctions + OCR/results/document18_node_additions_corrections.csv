@@ -1,0 +1,21 @@
+node_id,label,node_kind,role_or_type,action,confidence,evidence
+BUS-SWYD-230,BUS-SWYD-230,logical_bus,230kV_switchyard_bus,add_logical_bus,high,Thick top horizontal bus labeled BUS-SWYD-230; multiple transformer and generator/source branches visibly land on it
+BUS-GEN-TERMINAL,GEN-MAIN-1 terminal/UAT primary node,logical_bus,generator_terminal_node,add_logical_node,high,Top-right conductor after CB-GEN-ISO ties GEN-MAIN-1 and the primary leads of TR-UAT-1A and TR-UAT-1B
+BUS-4160A,BUS-4160A,logical_bus,4.16kV_left_bus,add_logical_bus,high,Left 4.16 kV busbar labeled BUS-4160A; SAT-A DG-A tie breaker PT and 480 transformer taps land here
+BUS-4160B,BUS-4160B,logical_bus,4.16kV_right_bus,add_logical_bus,high,Right 4.16 kV busbar labeled BUS-4160B; SAT-B UATs tie breaker PT and 480 transformer taps land here
+BUS-480A,BUS-480A,logical_bus,480V_bus_section_A,add_logical_bus,high,Horizontal busbar labeled BUS-480A with A01-A08 feeder taps and CB-480A-IN landing
+BUS-480B,BUS-480B,logical_bus,480V_bus_section_B,add_logical_bus,high,Horizontal busbar labeled BUS-480B with B01-B07 feeder taps CB-480B-IN and long Train A supply drop
+BUS-480C,BUS-480C,logical_bus,480V_bus_section_C,add_logical_bus,high,Horizontal busbar labeled BUS-480C with C01-C08 feeder taps CB-480C-IN and long Train B supply drop
+BUS-480D,BUS-480D,logical_bus,480V_bus_section_D,add_logical_bus,high,Horizontal busbar labeled BUS-480D with D01-D07 feeder taps and CB-480D-IN landing
+BUS-125A,BUS-125A,logical_bus,Train_A_125VDC_bus,add_logical_bus,high,Lower-left Train A thick DC bus labeled BUS-125A; battery ground charger and inverter branches land on it
+BUS-120A,BUS-120A,logical_bus,Train_A_120VAC_bus,add_logical_bus,high,Lower-left Train A thick AC/control bus labeled BUS-120A; UPS output and RPS panel tap land on it
+BUS-125B,BUS-125B,logical_bus,Train_B_125VDC_bus,add_logical_bus,high,Lower-right Train B thick DC bus labeled BUS-125B; battery ground charger and inverter branches land on it
+BUS-120B,BUS-120B,logical_bus,Train_B_120VAC_bus,add_logical_bus,high,Lower-right Train B thick AC/control bus labeled BUS-120B; UPS output and RPS panel tap land on it
+RPS-A-DASHED-NET,RPS-A dashed control wiring,logical_node,dashed_control_network,add_logical_node,medium,Train A dashed wiring encloses or branches to PLC relays JB-RPS-A and PNL-ANN-A; point-to-point order is not visually unique
+RPS-B-DASHED-NET,RPS-B dashed control wiring,logical_node,dashed_control_network,add_logical_node,medium,Train B dashed wiring encloses or branches to PLC relays JB-RPS-B and PNL-ANN-B; point-to-point order is not visually unique
+DET-COMP-0133,AIR-CMP-B1,physical_component,compressor_or_air_motor_load,type_refinement,medium,CSV class is generic physical_component but label AIR-CMP-B1 and 480B feeder position indicate an air-compressor load
+REJECT-TITLE-BLOCK,title block and revision table,artifact,drawing_metadata,reject_artifact,high,Bottom-right title block contains text boxes and lines only; no wire-mask landings to schematic components
+REJECT-LEGEND-NOTES,legend and notes boxes,artifact,drawing_metadata,reject_artifact,high,Upper-right legend and notes are explanatory graphics; they are outside the connected electrical network
+REJECT-SHEET-GRID,sheet border grid and tick marks,artifact,drawing_frame,reject_artifact,high,Faint border/ruler/grid lines cross the sheet but do not have component labels or filled junction dots
+REJECT-DOTLESS-CROSSINGS,simple wire crossings without filled dots,artifact,non_connected_crossing,reject_non_node,high,Connections were not inferred at crossings unless the raw drawing showed a filled dot clear T-section or a component landing
+WIRE-ENDPOINTS-ONLY,unlabeled wire endpoints from wire_nodes.csv,wire_topology_node,intermediate_geometry_only,reject_as_component_node,high,Endpoint markers were used as geometric evidence but not promoted to named graph nodes without a component bus label or explicit junction role

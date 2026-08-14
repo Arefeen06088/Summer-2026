@@ -1,0 +1,229 @@
+source,target,type,evidence
+GRID-161A,DS-101,solid_power,continuous normal source A chain to BUS-4160-A
+DS-101,CB-101,solid_power,continuous normal source A chain to BUS-4160-A
+CB-101,TR-UAT-1A,solid_power,continuous normal source A chain to BUS-4160-A
+TR-UAT-1A,CB-102,solid_power,continuous normal source A chain to BUS-4160-A
+CB-102,BUS-4160-A,solid_power,continuous normal source A chain to BUS-4160-A
+GRID-161B,DS-102,solid_power,continuous normal source B chain to BUS-4160-B
+DS-102,CB-103,solid_power,continuous normal source B chain to BUS-4160-B
+CB-103,TR-UAT-1B,solid_power,continuous normal source B chain to BUS-4160-B
+TR-UAT-1B,CB-104,solid_power,continuous normal source B chain to BUS-4160-B
+CB-104,BUS-4160-B,solid_power,continuous normal source B chain to BUS-4160-B
+BUS-4160-A,CB-TIE-41,solid_power,CB-TIE-41 is drawn inline between the A and B 4160 V bus sections
+CB-TIE-41,BUS-4160-B,solid_power,CB-TIE-41 is drawn inline between the A and B 4160 V bus sections
+BUS-4160-A,RELAY-87A,instrument,RELAY-87A tap terminates on BUS-4160-A
+BUS-4160-A,RELAY-27A,instrument,RELAY-27A tap terminates on BUS-4160-A
+BUS-4160-A,METER-A,instrument,METER-A tap terminates on BUS-4160-A
+BUS-4160-A,PT-41A,instrument,PT-41A tap terminates on BUS-4160-A
+BUS-4160-A,GND-41A,ground,ground symbol drops from BUS-4160-A
+BUS-4160-B,RELAY-87B,instrument,RELAY-87B tap terminates on BUS-4160-B
+BUS-4160-B,RELAY-27B,instrument,RELAY-27B tap terminates on BUS-4160-B
+BUS-4160-B,METER-B,instrument,METER-B tap terminates on BUS-4160-B
+BUS-4160-B,PT-41B,instrument,PT-41B tap terminates on BUS-4160-B
+BUS-4160-B,GND-41B,ground,ground symbol drops from BUS-4160-B
+BUS-4160-A,CB-ESF-A,solid_power,CB-ESF-A vertical feeder connects normal A bus to ESF-A bus
+CB-ESF-A,BUS-4160-ESF-A,solid_power,CB-ESF-A vertical feeder connects normal A bus to ESF-A bus
+BUS-4160-B,CB-ESF-B,solid_power,CB-ESF-B vertical feeder connects normal B bus to ESF-B bus
+CB-ESF-B,BUS-4160-ESF-B,solid_power,CB-ESF-B vertical feeder connects normal B bus to ESF-B bus
+DG-1A,CB-DG1A,solid_power,DG-1A path runs through CB-DG1A and ATS-1A to BUS-4160-ESF-A
+CB-DG1A,ATS-1A,solid_power,DG-1A path runs through CB-DG1A and ATS-1A to BUS-4160-ESF-A
+ATS-1A,BUS-4160-ESF-A,solid_power,DG-1A path runs through CB-DG1A and ATS-1A to BUS-4160-ESF-A
+DG-1B,CB-DG1B,solid_power,DG-1B path runs through CB-DG1B and ATS-1B to BUS-4160-ESF-B
+CB-DG1B,ATS-1B,solid_power,DG-1B path runs through CB-DG1B and ATS-1B to BUS-4160-ESF-B
+ATS-1B,BUS-4160-ESF-B,solid_power,DG-1B path runs through CB-DG1B and ATS-1B to BUS-4160-ESF-B
+BUS-4160-ESF-A,CB-1C-FDR,solid_power,heavy feeder from BUS-4160-ESF-A routes to CB-1C-FDR
+BUS-4160-ESF-A,CB-2A-FDR,solid_power,heavy feeder from BUS-4160-ESF-A routes to CB-2A-FDR
+BUS-4160-ESF-A,CB-2C-FDR,solid_power,heavy feeder from BUS-4160-ESF-A routes to CB-2C-FDR
+BUS-4160-ESF-B,CB-2B-FDR,solid_power,heavy feeder from BUS-4160-ESF-B routes to CB-2B-FDR
+CB-1A-FDR,DS-1A-ISO,solid_power,load center 1A feeder chain lands on BUS-480-1A
+DS-1A-ISO,TR-1A,solid_power,load center 1A feeder chain lands on BUS-480-1A
+TR-1A,CB-1A-MAIN,solid_power,load center 1A feeder chain lands on BUS-480-1A
+CB-1A-MAIN,BUS-480-1A,solid_power,load center 1A feeder chain lands on BUS-480-1A
+BUS-480-1A,MCC-1A-1,solid_power,BUS-480-1A tap to MCC-1A-1
+MCC-1A-1,PUMP-P101,solid_power,MCC-1A-1 feeder to PUMP-P101
+MCC-1A-1,MOTOR-M102,solid_power,MCC-1A-1 feeder to MOTOR-M102
+BUS-480-1A,MCC-1A-2,solid_power,BUS-480-1A tap to MCC-1A-2
+MCC-1A-2,VALVE-MOV103,solid_power,MCC-1A-2 feeder to VALVE-MOV103
+MCC-1A-2,FAN-F104,solid_power,MCC-1A-2 feeder to FAN-F104
+BUS-480-1A,MCC-1A-3,solid_power,BUS-480-1A tap to MCC-1A-3
+MCC-1A-3,HTR-H105,solid_power,MCC-1A-3 feeder to HTR-H105
+MCC-1A-3,VALVE-XV106,solid_power,MCC-1A-3 feeder to VALVE-XV106
+BUS-480-1A,PNL-1A,solid_power,labeled PNL-1A square taps from BUS-480-1A
+BUS-480-1A,INST-1A,instrument,INST-1A instrument tap from BUS-480-1A
+VALVE-XV106,JB-1A-1,control,VALVE-XV106 control lead enters JB-1A-1
+JB-1A-1,RELAY-K12,control,JB-1A-1 dashed control run terminates at RELAY-K12
+RELAY-K11,RELAY-K12,control,relay pair RELAY-K11/RELAY-K12 connected by control run
+CB-1C-FDR,DS-1C-ISO,solid_power,load center 1C feeder chain lands on BUS-480-1C
+DS-1C-ISO,TR-1C,solid_power,load center 1C feeder chain lands on BUS-480-1C
+TR-1C,CB-1C-MAIN,solid_power,load center 1C feeder chain lands on BUS-480-1C
+CB-1C-MAIN,BUS-480-1C,solid_power,load center 1C feeder chain lands on BUS-480-1C
+BUS-480-1C,MCC-1C-1,solid_power,BUS-480-1C tap to MCC-1C-1
+MCC-1C-1,PUMP-P131,solid_power,MCC-1C-1 feeder to PUMP-P131
+MCC-1C-1,MOTOR-M132,solid_power,MCC-1C-1 feeder to MOTOR-M132
+BUS-480-1C,MCC-1C-2,solid_power,BUS-480-1C tap to MCC-1C-2
+MCC-1C-2,VALVE-MOV133,solid_power,MCC-1C-2 feeder to VALVE-MOV133
+MCC-1C-2,FAN-F134,solid_power,MCC-1C-2 feeder to FAN-F134
+BUS-480-1C,MCC-1C-3,solid_power,BUS-480-1C tap to MCC-1C-3
+MCC-1C-3,HTR-H135,solid_power,MCC-1C-3 feeder to HTR-H135
+MCC-1C-3,VALVE-XV136,solid_power,MCC-1C-3 feeder to VALVE-XV136
+BUS-480-1C,PNL-1C,solid_power,labeled PNL-1C square taps from BUS-480-1C
+BUS-480-1C,INST-1C,instrument,INST-1C instrument tap from BUS-480-1C
+VALVE-XV136,JB-1C-1,control,VALVE-XV136 control lead enters JB-1C-1
+JB-1C-1,RELAY-K22,control,JB-1C-1 dashed control run terminates at RELAY-K22
+RELAY-K21,RELAY-K22,control,relay pair RELAY-K21/RELAY-K22 connected by control run
+CB-1B-FDR,DS-1B-ISO,solid_power,load center 1B feeder chain lands on BUS-480-1B
+DS-1B-ISO,TR-1B,solid_power,load center 1B feeder chain lands on BUS-480-1B
+TR-1B,CB-1B-MAIN,solid_power,load center 1B feeder chain lands on BUS-480-1B
+CB-1B-MAIN,BUS-480-1B,solid_power,load center 1B feeder chain lands on BUS-480-1B
+BUS-480-1B,MCC-1B-1,solid_power,BUS-480-1B tap to MCC-1B-1
+MCC-1B-1,PUMP-P161,solid_power,MCC-1B-1 feeder to PUMP-P161
+MCC-1B-1,MOTOR-M162,solid_power,MCC-1B-1 feeder to MOTOR-M162
+BUS-480-1B,MCC-1B-2,solid_power,BUS-480-1B tap to MCC-1B-2
+MCC-1B-2,VALVE-MOV163,solid_power,MCC-1B-2 feeder to VALVE-MOV163
+MCC-1B-2,FAN-F164,solid_power,MCC-1B-2 feeder to FAN-F164
+BUS-480-1B,MCC-1B-3,solid_power,BUS-480-1B tap to MCC-1B-3
+MCC-1B-3,HTR-H165,solid_power,MCC-1B-3 feeder to HTR-H165
+MCC-1B-3,VALVE-XV166,solid_power,MCC-1B-3 feeder to VALVE-XV166
+BUS-480-1B,PNL-1B,solid_power,labeled PNL-1B square taps from BUS-480-1B
+BUS-480-1B,INST-1B,instrument,INST-1B instrument tap from BUS-480-1B
+VALVE-XV166,JB-1B-1,control,VALVE-XV166 control lead enters JB-1B-1
+JB-1B-1,RELAY-K32,control,JB-1B-1 dashed control run terminates at RELAY-K32
+RELAY-K31,RELAY-K32,control,relay pair RELAY-K31/RELAY-K32 connected by control run
+CB-2A-FDR,DS-2A-ISO,solid_power,load center 2A feeder chain lands on BUS-480-2A
+DS-2A-ISO,TR-2A,solid_power,load center 2A feeder chain lands on BUS-480-2A
+TR-2A,CB-2A-MAIN,solid_power,load center 2A feeder chain lands on BUS-480-2A
+CB-2A-MAIN,BUS-480-2A,solid_power,load center 2A feeder chain lands on BUS-480-2A
+BUS-480-2A,MCC-2A-1,solid_power,BUS-480-2A tap to MCC-2A-1
+MCC-2A-1,PUMP-P201,solid_power,MCC-2A-1 feeder to PUMP-P201
+MCC-2A-1,MOTOR-M202,solid_power,MCC-2A-1 feeder to MOTOR-M202
+BUS-480-2A,MCC-2A-2,solid_power,BUS-480-2A tap to MCC-2A-2
+MCC-2A-2,VALVE-MOV203,solid_power,MCC-2A-2 feeder to VALVE-MOV203
+MCC-2A-2,FAN-F204,solid_power,MCC-2A-2 feeder to FAN-F204
+BUS-480-2A,MCC-2A-3,solid_power,BUS-480-2A tap to MCC-2A-3
+MCC-2A-3,HTR-H205,solid_power,MCC-2A-3 feeder to HTR-H205
+MCC-2A-3,VALVE-XV206,solid_power,MCC-2A-3 feeder to VALVE-XV206
+BUS-480-2A,PNL-2A,solid_power,labeled PNL-2A square taps from BUS-480-2A
+BUS-480-2A,INST-2A,instrument,INST-2A instrument tap from BUS-480-2A
+VALVE-XV206,JB-2A-1,control,VALVE-XV206 control lead enters JB-2A-1
+JB-2A-1,RELAY-K42,control,JB-2A-1 dashed control run terminates at RELAY-K42
+RELAY-K41,RELAY-K42,control,relay pair RELAY-K41/RELAY-K42 connected by control run
+CB-2C-FDR,DS-2C-ISO,solid_power,load center 2C feeder chain lands on BUS-480-2C
+DS-2C-ISO,TR-2C,solid_power,load center 2C feeder chain lands on BUS-480-2C
+TR-2C,CB-2C-MAIN,solid_power,load center 2C feeder chain lands on BUS-480-2C
+CB-2C-MAIN,BUS-480-2C,solid_power,load center 2C feeder chain lands on BUS-480-2C
+BUS-480-2C,MCC-2C-1,solid_power,BUS-480-2C tap to MCC-2C-1
+MCC-2C-1,PUMP-P231,solid_power,MCC-2C-1 feeder to PUMP-P231
+MCC-2C-1,MOTOR-M232,solid_power,MCC-2C-1 feeder to MOTOR-M232
+BUS-480-2C,MCC-2C-2,solid_power,BUS-480-2C tap to MCC-2C-2
+MCC-2C-2,VALVE-MOV233,solid_power,MCC-2C-2 feeder to VALVE-MOV233
+MCC-2C-2,FAN-F234,solid_power,MCC-2C-2 feeder to FAN-F234
+BUS-480-2C,MCC-2C-3,solid_power,BUS-480-2C tap to MCC-2C-3
+MCC-2C-3,HTR-H235,solid_power,MCC-2C-3 feeder to HTR-H235
+MCC-2C-3,VALVE-XV236,solid_power,MCC-2C-3 feeder to VALVE-XV236
+BUS-480-2C,PNL-2C,solid_power,labeled PNL-2C square taps from BUS-480-2C
+BUS-480-2C,INST-2C,instrument,INST-2C instrument tap from BUS-480-2C
+VALVE-XV236,JB-2C-1,control,VALVE-XV236 control lead enters JB-2C-1
+JB-2C-1,RELAY-K52,control,JB-2C-1 dashed control run terminates at RELAY-K52
+RELAY-K51,RELAY-K52,control,relay pair RELAY-K51/RELAY-K52 connected by control run
+CB-2B-FDR,DS-2B-ISO,solid_power,load center 2B feeder chain lands on BUS-480-2B
+DS-2B-ISO,TR-2B,solid_power,load center 2B feeder chain lands on BUS-480-2B
+TR-2B,CB-2B-MAIN,solid_power,load center 2B feeder chain lands on BUS-480-2B
+CB-2B-MAIN,BUS-480-2B,solid_power,load center 2B feeder chain lands on BUS-480-2B
+BUS-480-2B,MCC-2B-1,solid_power,BUS-480-2B tap to MCC-2B-1
+MCC-2B-1,PUMP-P261,solid_power,MCC-2B-1 feeder to PUMP-P261
+MCC-2B-1,MOTOR-M262,solid_power,MCC-2B-1 feeder to MOTOR-M262
+BUS-480-2B,MCC-2B-2,solid_power,BUS-480-2B tap to MCC-2B-2
+MCC-2B-2,VALVE-MOV263,solid_power,MCC-2B-2 feeder to VALVE-MOV263
+MCC-2B-2,FAN-F264,solid_power,MCC-2B-2 feeder to FAN-F264
+BUS-480-2B,MCC-2B-3,solid_power,BUS-480-2B tap to MCC-2B-3
+MCC-2B-3,HTR-H265,solid_power,MCC-2B-3 feeder to HTR-H265
+MCC-2B-3,VALVE-XV266,solid_power,MCC-2B-3 feeder to VALVE-XV266
+BUS-480-2B,PNL-2B,solid_power,labeled PNL-2B square taps from BUS-480-2B
+BUS-480-2B,INST-2B,instrument,INST-2B instrument tap from BUS-480-2B
+VALVE-XV266,JB-2B-1,control,VALVE-XV266 control lead enters JB-2B-1
+JB-2B-1,RELAY-K62,control,JB-2B-1 dashed control run terminates at RELAY-K62
+RELAY-K61,RELAY-K62,control,relay pair RELAY-K61/RELAY-K62 connected by control run
+BUS-480-2A,CB-DC-A,solid_power,BUS-480-2A feeder supplies the A-side DC rectifier chain
+CB-DC-A,RECT-125A,solid_power,BUS-480-2A feeder supplies the A-side DC rectifier chain
+RECT-125A,BUS-125DC-A,solid_power,BUS-480-2A feeder supplies the A-side DC rectifier chain
+BUS-480-2B,CB-DC-B,solid_power,BUS-480-2B feeder supplies the B-side DC rectifier chain
+CB-DC-B,RECT-125B,solid_power,BUS-480-2B feeder supplies the B-side DC rectifier chain
+RECT-125B,BUS-125DC-B,solid_power,BUS-480-2B feeder supplies the B-side DC rectifier chain
+BUS-125DC-A,BAT-125A,solid_dc,BAT-125A taps from BUS-125DC-A
+BUS-125DC-A,CHGR-AUX-A,solid_dc,CHGR-AUX-A taps from BUS-125DC-A
+BUS-125DC-A,METER-DC-A,solid_dc,METER-DC-A taps from BUS-125DC-A
+BUS-125DC-A,INV-1A,solid_dc,INV-1A taps from BUS-125DC-A
+BUS-125DC-A,GND-DC-A,ground,GND-DC-A taps from BUS-125DC-A
+BUS-125DC-A,CB-DCTIE,solid_dc,CB-DCTIE taps from BUS-125DC-A
+CB-DCTIE,BUS-125DC-B,solid_dc,CB-DCTIE is inline between the A and B 125 VDC buses
+BUS-125DC-B,BAT-125B,solid_dc,BAT-125B taps from BUS-125DC-B
+BUS-125DC-B,CHGR-AUX-B,solid_dc,CHGR-AUX-B taps from BUS-125DC-B
+BUS-125DC-B,METER-DC-B,solid_dc,METER-DC-B taps from BUS-125DC-B
+BUS-125DC-B,INV-1B,solid_dc,INV-1B taps from BUS-125DC-B
+BUS-125DC-B,GND-DC-B,ground,GND-DC-B taps from BUS-125DC-B
+INV-1A,UPS-1A,solid_power,A-side inverter output passes through UPS-1A and CB-UPS-A to BUS-120AC-A
+UPS-1A,CB-UPS-A,solid_power,A-side inverter output passes through UPS-1A and CB-UPS-A to BUS-120AC-A
+CB-UPS-A,BUS-120AC-A,solid_power,A-side inverter output passes through UPS-1A and CB-UPS-A to BUS-120AC-A
+INV-1B,UPS-1B,solid_power,B-side inverter output passes through UPS-1B and CB-UPS-B to BUS-120AC-B
+UPS-1B,CB-UPS-B,solid_power,B-side inverter output passes through UPS-1B and CB-UPS-B to BUS-120AC-B
+CB-UPS-B,BUS-120AC-B,solid_power,B-side inverter output passes through UPS-1B and CB-UPS-B to BUS-120AC-B
+BUS-120AC-A,FUSE-FU-A,solid_power,BUS-120AC-A tap to FUSE-FU-A
+BUS-120AC-A,PNL-RPS-A,control_power,BUS-120AC-A tap to PNL-RPS-A
+BUS-120AC-A,INST-NIS-A,instrument,BUS-120AC-A instrument tap to INST-NIS-A
+BUS-120AC-B,FUSE-FU-B,solid_power,BUS-120AC-B tap to FUSE-FU-B
+BUS-120AC-B,PNL-RPS-B,control_power,BUS-120AC-B tap to PNL-RPS-B
+BUS-120AC-B,INST-NIS-B,instrument,BUS-120AC-B instrument tap to INST-NIS-B
+RELAY-KA1,RELAY-KA2,control,"A-side dashed RPS/control chain links relay, annunciator, recorder, and RPS panel"
+RELAY-KA2,ANN-A,control,"A-side dashed RPS/control chain links relay, annunciator, recorder, and RPS panel"
+ANN-A,REC-SER-A,control,"A-side dashed RPS/control chain links relay, annunciator, recorder, and RPS panel"
+REC-SER-A,PNL-RPS-A,control,"A-side dashed RPS/control chain links relay, annunciator, recorder, and RPS panel"
+RELAY-KB1,RELAY-KB2,control,"B-side dashed RPS/control chain links relay, annunciator, recorder, and RPS panel"
+RELAY-KB2,ANN-B,control,"B-side dashed RPS/control chain links relay, annunciator, recorder, and RPS panel"
+ANN-B,REC-SER-B,control,"B-side dashed RPS/control chain links relay, annunciator, recorder, and RPS panel"
+REC-SER-B,PNL-RPS-B,control,"B-side dashed RPS/control chain links relay, annunciator, recorder, and RPS panel"
+DC-DC-1,BUS-24DC-C,solid_dc,DC-DC-1 output lands on BUS-24DC-C
+BUS-24DC-C,BAT-24C,solid_dc,BAT-24C taps from BUS-24DC-C
+BUS-24DC-C,PNL-RADMON,solid_dc,PNL-RADMON taps from BUS-24DC-C
+BUS-24DC-C,PNL-DCS-A,solid_dc,PNL-DCS-A taps from BUS-24DC-C
+BUS-24DC-C,PNL-DCS-B,solid_dc,PNL-DCS-B taps from BUS-24DC-C
+PNL-DCS-A,JB-CTRL-A,control,dashed control lead from PNL-DCS-A to JB-CTRL-A
+PNL-RADMON,RELAY-KTIE,control,"dashed 24 VDC control path links PNL-RADMON, RELAY-KTIE, and PNL-DCS-B"
+RELAY-KTIE,PNL-DCS-B,control,"dashed 24 VDC control path links PNL-RADMON, RELAY-KTIE, and PNL-DCS-B"
+PNL-DCS-B,JB-CTRL-B,control,dashed control lead from PNL-DCS-B to JB-CTRL-B
+INST-1A,GND-1A,ground_uncertain,Diego R1 provisional INST-1A to GND-1A chain
+INST-1C,GND-1C,ground_uncertain,Diego R1 provisional INST-1C to GND-1C chain
+INST-1B,GND-1B,ground_uncertain,Diego R1 provisional INST-1B to GND-1B chain
+INST-2A,GND-2A,ground_uncertain,Diego R1 provisional INST-2A to GND-2A chain
+INST-2C,GND-2C,ground_uncertain,Diego R1 provisional INST-2C to GND-2C chain
+INST-2B,GND-2B,ground_uncertain,Diego R1 provisional INST-2B to GND-2B chain
+BUS-4160-ESF-A,CB-1A-FDR,solid_power_uncertain,Diego R1 high-recall ESF-A source candidate for 1A
+BUS-4160-ESF-B,CB-1B-FDR,solid_power_uncertain,Diego R1 high-recall ESF-B source candidate for 1B
+VALVE-XV106,RELAY-K11,control_uncertain,Diego R1 broad VALVE-XV106/relay control-cluster candidate
+VALVE-XV106,RELAY-K12,control_uncertain,Diego R1 broad VALVE-XV106/relay control-cluster candidate
+JB-1A-1,RELAY-K11,control_uncertain,Diego R1 broad JB-1A-1/relay control-cluster candidate
+VALVE-XV136,RELAY-K21,control_uncertain,Diego R1 broad VALVE-XV136/relay control-cluster candidate
+VALVE-XV136,RELAY-K22,control_uncertain,Diego R1 broad VALVE-XV136/relay control-cluster candidate
+JB-1C-1,RELAY-K21,control_uncertain,Diego R1 broad JB-1C-1/relay control-cluster candidate
+VALVE-XV166,RELAY-K31,control_uncertain,Diego R1 broad VALVE-XV166/relay control-cluster candidate
+VALVE-XV166,RELAY-K32,control_uncertain,Diego R1 broad VALVE-XV166/relay control-cluster candidate
+JB-1B-1,RELAY-K31,control_uncertain,Diego R1 broad JB-1B-1/relay control-cluster candidate
+VALVE-XV206,RELAY-K41,control_uncertain,Diego R1 broad VALVE-XV206/relay control-cluster candidate
+VALVE-XV206,RELAY-K42,control_uncertain,Diego R1 broad VALVE-XV206/relay control-cluster candidate
+JB-2A-1,RELAY-K41,control_uncertain,Diego R1 broad JB-2A-1/relay control-cluster candidate
+VALVE-XV236,RELAY-K51,control_uncertain,Diego R1 broad VALVE-XV236/relay control-cluster candidate
+VALVE-XV236,RELAY-K52,control_uncertain,Diego R1 broad VALVE-XV236/relay control-cluster candidate
+JB-2C-1,RELAY-K51,control_uncertain,Diego R1 broad JB-2C-1/relay control-cluster candidate
+VALVE-XV266,RELAY-K61,control_uncertain,Diego R1 broad VALVE-XV266/relay control-cluster candidate
+VALVE-XV266,RELAY-K62,control_uncertain,Diego R1 broad VALVE-XV266/relay control-cluster candidate
+JB-2B-1,RELAY-K61,control_uncertain,Diego R1 broad JB-2B-1/relay control-cluster candidate
+BUS-120AC-A,RELAY-KA1,control_power_uncertain,Diego R1 broad RPS/control tap candidate from BUS-120AC-A
+BUS-120AC-A,RELAY-KA2,control_power_uncertain,Diego R1 broad RPS/control tap candidate from BUS-120AC-A
+BUS-120AC-A,ANN-A,control_power_uncertain,Diego R1 broad RPS/control tap candidate from BUS-120AC-A
+BUS-120AC-A,REC-SER-A,control_power_uncertain,Diego R1 broad RPS/control tap candidate from BUS-120AC-A
+BUS-120AC-B,RELAY-KB1,control_power_uncertain,Diego R1 broad RPS/control tap candidate from BUS-120AC-B
+BUS-120AC-B,RELAY-KB2,control_power_uncertain,Diego R1 broad RPS/control tap candidate from BUS-120AC-B
+BUS-120AC-B,ANN-B,control_power_uncertain,Diego R1 broad RPS/control tap candidate from BUS-120AC-B
+BUS-120AC-B,REC-SER-B,control_power_uncertain,Diego R1 broad RPS/control tap candidate from BUS-120AC-B
+BUS-24DC-C,RELAY-KTIE,control_power_uncertain,Diego R1 broad BUS-24DC-C common/control candidate to RELAY-KTIE
+BUS-24DC-C,JB-CTRL-A,control_power_uncertain,Diego R1 broad BUS-24DC-C common/control candidate to JB-CTRL-A
+BUS-24DC-C,JB-CTRL-B,control_power_uncertain,Diego R1 broad BUS-24DC-C common/control candidate to JB-CTRL-B

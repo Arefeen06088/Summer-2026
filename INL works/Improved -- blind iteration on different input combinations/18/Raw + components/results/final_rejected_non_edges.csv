@@ -1,0 +1,7 @@
+source,target,reason
+BUS-4160A,BUS-4160B,the buses are separated by the labeled CB-4160-TIE; no direct bus splice is asserted apart from the tie-breaker path
+CB-UAT-A,BUS-4160A,CB-UAT-A terminates visually with no drawn continuation down to BUS-4160A
+CB-UAT-B,BUS-4160B,CB-UAT-B terminates visually with no drawn continuation down to BUS-4160B
+TRAIN-A-125VDC-120VAC-CONTROL-POWER,TRAIN-B-125VDC-120VAC-CONTROL-POWER,section titles/rectangles are adjacent drawing regions; note says Train A and Train B are separated and no wire bridges them
+PT-4160B,TR-480-D1,PT-4160B is on a dashed control/signal chain; TR-480-D1 is on a separate solid power feeder with no visible junction between them
+GRID-SWYD-1,GRID-SWYD-2,two separate source symbols feed BB-SWYD-230 through separate breakers; no direct source-to-source line is drawn

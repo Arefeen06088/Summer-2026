@@ -1,0 +1,16 @@
+source,target,status,reason
+DS-A10,CHGR-125A,excluded,"Removed: CHGR-125A has its own solid tap from BUS-480-A, not a downstream connection from DS-A10."
+DS-B01,CHGR-125B,excluded,"Removed: CHGR-125B has its own solid tap from BUS-480-B, not a downstream connection from DS-B01."
+BAT-125A,DC-BUS-125A,excluded,"Removed as a direct edge: BAT-125A appears tied through the charger/DC dash-dot cluster, not directly to the bus tap."
+BAT-125B,DC-BUS-125B,excluded,"Removed as a direct edge: BAT-125B appears tied through the charger/DC dash-dot cluster, not directly to the bus tap."
+DC-BUS-125B,PANEL-CTRL-MAIN,excluded,Removed as an extra direct edge: panel taps the common span; represented by DC-BUS-125A to panel plus the A-B bus-span edge.
+BUS-4160-A,TR-480-C,kept_uncertain,"Kept Medium: long feeder is visually continuous through the left routing run, but it is less compact than the A/B transformer feeds."
+BUS-4160-B,TR-480-D,kept_uncertain,"Kept Medium: long feeder is visually continuous through the right routing run, but it is less compact than the A/B transformer feeds."
+CHGR-125A,BAT-125A,kept_uncertain,"Kept Medium: dash-dot DC/control cluster touches the charger and battery, but terminal detail is small."
+CHGR-125B,BAT-125B,kept_uncertain,"Kept Medium: dash-dot DC/control cluster touches the charger and battery, but terminal detail is small."
+CHGR-125A,DC-BUS-125A,kept_uncertain,"Kept Medium: dash-dot DC/control cluster visually ties CHGR-125A to the DC-BUS-125A tap, but terminal detail is small."
+CHGR-125B,DC-BUS-125B,kept_uncertain,"Kept Medium: dash-dot DC/control cluster visually ties CHGR-125B to the DC-BUS-125B tap, but terminal detail is small."
+DC-BUS-125A,DC-BUS-125B,kept_uncertain,Kept Medium: labels sit on a continuous horizontal DC bus span with filled tap marks.
+DC-BUS-125A,PANEL-CTRL-MAIN,kept_uncertain,Kept Medium: the tap lands on the common DC span; represented through the A-side bus node.
+BUS-480-C,GND-EQ-A,kept_uncertain,Kept Medium: labeled ground node is connected by dotted/dc-ground line from BUS-480-C area.
+BUS-480-D,GND-EQ-B,kept_uncertain,Kept Medium: labeled ground node is connected by dotted/dc-ground line from BUS-480-D area.

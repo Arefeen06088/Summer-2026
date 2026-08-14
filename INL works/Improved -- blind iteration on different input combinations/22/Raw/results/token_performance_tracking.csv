@@ -1,0 +1,7 @@
+timestamp,case,round,agent,role,approx_prompt_tokens,approx_completion_tokens,matrix_nodes,matrix_edges,output_artifact,notes
+2026-07-14T08:47:12,22,local,main,inventory/crops/local inspection,2600,620,200,209,codes/crops,Approximate tokens; exact tool token accounting unavailable
+2026-07-14T08:47:12,22,round_01,Diego,high-recall extraction,6500,3900,200,213,round_01_diego_matrix.csv,"Broad graph with uncertain sync, relay-to-JB, and PT-to-ammeter candidates"
+2026-07-14T08:47:12,22,round_02,Jennifer,precision review,7200,2600,200,210,round_02_jennifer_matrix.csv,Removed overconnected relay/JB and sync edges; provisional charger B and meter A edges
+2026-07-14T08:47:12,22,round_03,Diego,focused saturation/high-recall check,2600,620,200,209,round_03_diego_saturation_matrix.csv,Corrected charger B source to BUS-480-B and excluded PT-to-ammeter
+2026-07-14T08:47:12,22,round_04,Jennifer,final precision lock,2100,510,200,209,round_04_jennifer_final_matrix.csv,Accepted Diego round 2 corrections and locked final matrix
+2026-07-14T08:47:12,22,local,main,artifact generation/validation,1900,360,200,209,final_connectivity_matrix.csv,"Symmetric matrix, zero diagonal"

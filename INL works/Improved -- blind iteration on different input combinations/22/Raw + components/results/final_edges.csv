@@ -1,0 +1,218 @@
+source,target,kind,confidence,evidence
+GEN-G01,GSU-T01,power,high,Solid source-detail line runs from GEN-G01 generator circle into GSU-T01 transformer symbol.
+GSU-T01,13.8KV SOURCE/SWYD LINE,power,high,Solid line exits GSU-T01 and continues as the upper source/switchyard line feeding the aux-bus breakers.
+SWYD-345,13.8KV SOURCE/SWYD LINE,power,high,SWYD-345 switchyard symbol is drawn inline on the same solid upper source conductor.
+13.8KV SOURCE/SWYD LINE,CB-13A1,power,high,Vertical solid feeder from the upper source line enters breaker CB-13A1.
+CB-13A1,BUS-13A 13.8 KV AUX BUS A,power,high,Breaker CB-13A1 has a vertical solid drop to a dotted tap on BUS-13A.
+BUS-13A 13.8 KV AUX BUS A,CB-13T,power,high,BUS-13A thick conductor reaches the left terminal dot of tie breaker CB-13T.
+CB-13T,BUS-13B 13.8 KV AUX BUS B,power,high,Tie breaker CB-13T right terminal connects by solid line to BUS-13B.
+13.8KV SOURCE/SWYD LINE,CB-13B1,power,high,Vertical solid feeder from the upper source line enters breaker CB-13B1.
+CB-13B1,BUS-13B 13.8 KV AUX BUS B,power,high,Breaker CB-13B1 has a vertical solid drop to a dotted tap on BUS-13B.
+BUS-13A 13.8 KV AUX BUS A,RELAY-87U,control,medium,Dashed C-031 control lead originates at a dotted tap on BUS-13A and descends to RELAY-87U.
+RELAY-87U,CB-4B-IN,control,medium,Dashed control lead leaves RELAY-87U and terminates at breaker CB-4B-IN.
+BUS-13A 13.8 KV AUX BUS A,AUX-XFMR-1A,power,high,Solid vertical tap from BUS-13A 13.8 KV AUX BUS A feeds transformer AUX-XFMR-1A.
+AUX-XFMR-1A,CB-4A-IN,power,high,Solid vertical conductor continues from AUX-XFMR-1A to incoming breaker CB-4A-IN.
+CB-4A-IN,BUS-4160-A 4160V SAFETY BUS 1A,power,high,Incoming breaker CB-4A-IN lands on a dotted tap of BUS-4160-A 4160V SAFETY BUS 1A.
+DG-1A,CB-DG-A,power,high,Solid diesel-generator feeder from DG-1A enters breaker CB-DG-A.
+CB-DG-A,BUS-4160-A 4160V SAFETY BUS 1A,power,high,Breaker CB-DG-A connects by solid conductor to a dotted tap on BUS-4160-A 4160V SAFETY BUS 1A.
+BUS-4160-A 4160V SAFETY BUS 1A,CB-4AB-TIE,power,high,Solid 4160 V bus conductor reaches the left terminal dot of CB-4AB-TIE.
+CB-4AB-TIE,BUS-4160-B 4160V SAFETY BUS 1B,power,high,CB-4AB-TIE right terminal connects by solid conductor to BUS-4160-B.
+SYNC-PNL-1,BUS-4160-A 4160V SAFETY BUS 1A,control,medium,Dashed C-030/control lead from SYNC-PNL-1 reaches a dotted tap at the left side of BUS-4160-A.
+SYNC-PNL-1,CB-DG-A,control,high,Dashed control line from SYNC-PNL-1 routes upward/right into the CB-DG-A breaker area.
+BUS-4160-A 4160V SAFETY BUS 1A,CB-LC-A,power,high,Vertical solid feeder drops from BUS-4160-A 4160V SAFETY BUS 1A into load-center breaker CB-LC-A.
+CB-LC-A,TR-LC-A,power,high,Solid conductor connects breaker CB-LC-A to transformer TR-LC-A.
+TR-LC-A,BUS-480-A 480V LOAD CENTER A,power,high,Solid conductor exits transformer TR-LC-A and lands on BUS-480-A 480V LOAD CENTER A.
+BUS-480-A 480V LOAD CENTER A,INST-PT-A,instrument,high,Short vertical instrument tap with bus dot connects INST-PT-A to the right end of BUS-480-A 480V LOAD CENTER A.
+BUS-480-A 480V LOAD CENTER A,CB-MCC-AA,power,high,Solid feeder from BUS-480-A 480V LOAD CENTER A drops through breaker CB-MCC-AA toward MCC-AA.
+CB-MCC-AA,MCC-AA,power,high,Breaker CB-MCC-AA connects directly to panel MCC-AA by a solid vertical conductor.
+BUS-480-A 480V LOAD CENTER A,CB-MCC-AB,power,high,Solid feeder from BUS-480-A 480V LOAD CENTER A drops through breaker CB-MCC-AB toward MCC-AB.
+CB-MCC-AB,MCC-AB,power,high,Breaker CB-MCC-AB connects directly to panel MCC-AB by a solid vertical conductor.
+BUS-480-A 480V LOAD CENTER A,XFMR-120-A,power,medium,Solid side feeder from BUS-480-A 480V LOAD CENTER A routes down the train drawing to transformer XFMR-120-A.
+XFMR-120-A,PNL-120-A,power,high,Solid vertical conductor connects XFMR-120-A to panel PNL-120-A.
+BUS-480-A 480V LOAD CENTER A,GND-A,ground,medium,Right-side solid conductor from BUS-480-A 480V LOAD CENTER A descends to ground symbol GND-A; drawn as a grounding connection.
+MCC-AA,INST-CT-A,instrument,medium,Dashed/dotted instrument lead from the first MCC feeder group reaches CT symbol INST-CT-A.
+MCC-AA,CB-RHR-A,power,high,Solid branch conductor from MCC-AA feeds breaker CB-RHR-A.
+CB-RHR-A,PUMP-RHR-A,power,high,Solid vertical conductor from breaker CB-RHR-A lands on load PUMP-RHR-A.
+MCC-AA,CB-SI-A,power,high,Solid branch conductor from MCC-AA feeds breaker CB-SI-A.
+CB-SI-A,PUMP-SI-A,power,high,Solid vertical conductor from breaker CB-SI-A lands on load PUMP-SI-A.
+MCC-AA,CB-CCW-A,power,high,Solid branch conductor from MCC-AA feeds breaker CB-CCW-A.
+CB-CCW-A,PUMP-CCW-A,power,high,Solid vertical conductor from breaker CB-CCW-A lands on load PUMP-CCW-A.
+MCC-AA,CB-FAN-A,power,high,Solid branch conductor from MCC-AA feeds breaker CB-FAN-A.
+CB-FAN-A,FAN-CR-A,power,high,Solid vertical conductor from breaker CB-FAN-A lands on load FAN-CR-A.
+MCC-AB,CB-CH-A,power,high,Solid branch conductor from MCC-AB feeds breaker CB-CH-A.
+CB-CH-A,CHILLER-A,power,high,Solid vertical conductor from breaker CB-CH-A lands on load CHILLER-A.
+MCC-AB,CB-VLV1-A,power,high,Solid branch conductor from MCC-AB feeds breaker CB-VLV1-A.
+CB-VLV1-A,MOV-HV1-A,power,high,Solid vertical conductor from breaker CB-VLV1-A lands on load MOV-HV1-A.
+MCC-AB,CB-VLV2-A,power,high,Solid branch conductor from MCC-AB feeds breaker CB-VLV2-A.
+CB-VLV2-A,MOV-HV2-A,power,high,Solid vertical conductor from breaker CB-VLV2-A lands on load MOV-HV2-A.
+MCC-AB,CB-SPARE-A,power,medium,Solid branch conductor from MCC-AB reaches breaker CB-SPARE-A; label indicates spare branch.
+CB-SPARE-A,SPARE-LOAD-A,power,medium,Solid vertical conductor is drawn from CB-SPARE-A to SPARE-LOAD-A; both labels indicate spare/placeholder service.
+CB-RHR-A,CB-SI-A,control,medium,Dashed control wiring is drawn between the RHR and SI breaker branch area in train A.
+CB-SI-A,PNL-120-A,control,medium,Vertical dashed control path descends from the SI branch area to panel PNL-120-A.
+PNL-120-A,RELAY-KA1,control,high,Dashed control lead from PNL-120-A connects to relay RELAY-KA1.
+PNL-120-A,RELAY-KA2,control,high,Dashed control lead from PNL-120-A connects to relay RELAY-KA2.
+RELAY-KA1,RELAY-KA2,control,medium,Relays RELAY-KA1 and RELAY-KA2 are enclosed/linked by the same dashed control loop.
+RELAY-KA1,JB-A1,control,high,Dashed control conductor runs from relay RELAY-KA1 to junction box JB-A1.
+JB-A1,TERM-A,control,high,Dashed control conductor continues from JB-A1 to terminal block TERM-A.
+BUS-13A 13.8 KV AUX BUS A,AUX-XFMR-1B,power,high,Solid vertical tap from BUS-13A 13.8 KV AUX BUS A feeds transformer AUX-XFMR-1B.
+AUX-XFMR-1B,CB-4B-IN,power,high,Solid vertical conductor continues from AUX-XFMR-1B to incoming breaker CB-4B-IN.
+CB-4B-IN,BUS-4160-B 4160V SAFETY BUS 1B,power,high,Incoming breaker CB-4B-IN lands on a dotted tap of BUS-4160-B 4160V SAFETY BUS 1B.
+DG-1B,CB-DG-B,power,high,Solid diesel-generator feeder from DG-1B enters breaker CB-DG-B.
+CB-DG-B,BUS-4160-B 4160V SAFETY BUS 1B,power,high,Breaker CB-DG-B connects by solid conductor to a dotted tap on BUS-4160-B 4160V SAFETY BUS 1B.
+BUS-4160-B 4160V SAFETY BUS 1B,CB-LC-B,power,high,Vertical solid feeder drops from BUS-4160-B 4160V SAFETY BUS 1B into load-center breaker CB-LC-B.
+CB-LC-B,TR-LC-B,power,high,Solid conductor connects breaker CB-LC-B to transformer TR-LC-B.
+TR-LC-B,BUS-480-B 480V LOAD CENTER B,power,high,Solid conductor exits transformer TR-LC-B and lands on BUS-480-B 480V LOAD CENTER B.
+BUS-480-B 480V LOAD CENTER B,INST-PT-B,instrument,high,Short vertical instrument tap with bus dot connects INST-PT-B to the right end of BUS-480-B 480V LOAD CENTER B.
+BUS-480-B 480V LOAD CENTER B,CB-MCC-BA,power,high,Solid feeder from BUS-480-B 480V LOAD CENTER B drops through breaker CB-MCC-BA toward MCC-BA.
+CB-MCC-BA,MCC-BA,power,high,Breaker CB-MCC-BA connects directly to panel MCC-BA by a solid vertical conductor.
+BUS-480-B 480V LOAD CENTER B,CB-MCC-BB,power,high,Solid feeder from BUS-480-B 480V LOAD CENTER B drops through breaker CB-MCC-BB toward MCC-BB.
+CB-MCC-BB,MCC-BB,power,high,Breaker CB-MCC-BB connects directly to panel MCC-BB by a solid vertical conductor.
+BUS-480-B 480V LOAD CENTER B,XFMR-120-B,power,medium,Solid side feeder from BUS-480-B 480V LOAD CENTER B routes down the train drawing to transformer XFMR-120-B.
+XFMR-120-B,PNL-120-B,power,high,Solid vertical conductor connects XFMR-120-B to panel PNL-120-B.
+BUS-480-B 480V LOAD CENTER B,GND-B,ground,medium,Right-side solid conductor from BUS-480-B 480V LOAD CENTER B descends to ground symbol GND-B; drawn as a grounding connection.
+MCC-BA,INST-CT-B,instrument,medium,Dashed/dotted instrument lead from the first MCC feeder group reaches CT symbol INST-CT-B.
+MCC-BA,CB-RHR-B,power,high,Solid branch conductor from MCC-BA feeds breaker CB-RHR-B.
+CB-RHR-B,PUMP-RHR-B,power,high,Solid vertical conductor from breaker CB-RHR-B lands on load PUMP-RHR-B.
+MCC-BA,CB-SI-B,power,high,Solid branch conductor from MCC-BA feeds breaker CB-SI-B.
+CB-SI-B,PUMP-SI-B,power,high,Solid vertical conductor from breaker CB-SI-B lands on load PUMP-SI-B.
+MCC-BA,CB-CCW-B,power,high,Solid branch conductor from MCC-BA feeds breaker CB-CCW-B.
+CB-CCW-B,PUMP-CCW-B,power,high,Solid vertical conductor from breaker CB-CCW-B lands on load PUMP-CCW-B.
+MCC-BA,CB-FAN-B,power,high,Solid branch conductor from MCC-BA feeds breaker CB-FAN-B.
+CB-FAN-B,FAN-CR-B,power,high,Solid vertical conductor from breaker CB-FAN-B lands on load FAN-CR-B.
+MCC-BB,CB-CH-B,power,high,Solid branch conductor from MCC-BB feeds breaker CB-CH-B.
+CB-CH-B,CHILLER-B,power,high,Solid vertical conductor from breaker CB-CH-B lands on load CHILLER-B.
+MCC-BB,CB-VLV1-B,power,high,Solid branch conductor from MCC-BB feeds breaker CB-VLV1-B.
+CB-VLV1-B,MOV-HV1-B,power,high,Solid vertical conductor from breaker CB-VLV1-B lands on load MOV-HV1-B.
+MCC-BB,CB-VLV2-B,power,high,Solid branch conductor from MCC-BB feeds breaker CB-VLV2-B.
+CB-VLV2-B,MOV-HV2-B,power,high,Solid vertical conductor from breaker CB-VLV2-B lands on load MOV-HV2-B.
+MCC-BB,CB-SPARE-B,power,medium,Solid branch conductor from MCC-BB reaches breaker CB-SPARE-B; label indicates spare branch.
+CB-SPARE-B,SPARE-LOAD-B,power,medium,Solid vertical conductor is drawn from CB-SPARE-B to SPARE-LOAD-B; both labels indicate spare/placeholder service.
+CB-RHR-B,CB-SI-B,control,medium,Dashed control wiring is drawn between the RHR and SI breaker branch area in train B.
+CB-SI-B,PNL-120-B,control,medium,Vertical dashed control path descends from the SI branch area to panel PNL-120-B.
+PNL-120-B,RELAY-KB1,control,high,Dashed control lead from PNL-120-B connects to relay RELAY-KB1.
+PNL-120-B,RELAY-KB2,control,high,Dashed control lead from PNL-120-B connects to relay RELAY-KB2.
+RELAY-KB1,RELAY-KB2,control,medium,Relays RELAY-KB1 and RELAY-KB2 are enclosed/linked by the same dashed control loop.
+RELAY-KB1,JB-B1,control,high,Dashed control conductor runs from relay RELAY-KB1 to junction box JB-B1.
+JB-B1,TERM-B,control,high,Dashed control conductor continues from JB-B1 to terminal block TERM-B.
+BUS-13B 13.8 KV AUX BUS B,SAT-XFMR-1C,power,high,Solid vertical tap from BUS-13B 13.8 KV AUX BUS B feeds transformer SAT-XFMR-1C.
+SAT-XFMR-1C,CB-4C-IN,power,high,Solid vertical conductor continues from SAT-XFMR-1C to incoming breaker CB-4C-IN.
+CB-4C-IN,BUS-4160-C 4160V SAFETY BUS 1C,power,high,Incoming breaker CB-4C-IN lands on a dotted tap of BUS-4160-C 4160V SAFETY BUS 1C.
+DG-1C,CB-DG-C,power,high,Solid diesel-generator feeder from DG-1C enters breaker CB-DG-C.
+CB-DG-C,BUS-4160-C 4160V SAFETY BUS 1C,power,high,Breaker CB-DG-C connects by solid conductor to a dotted tap on BUS-4160-C 4160V SAFETY BUS 1C.
+BUS-4160-C 4160V SAFETY BUS 1C,CB-4CD-TIE,power,high,Solid 4160 V bus conductor reaches the left terminal dot of CB-4CD-TIE.
+CB-4CD-TIE,BUS-4160-D 4160V SAFETY BUS 1D,power,high,CB-4CD-TIE right terminal connects by solid conductor to BUS-4160-D.
+BUS-4160-C 4160V SAFETY BUS 1C,CB-LC-C,power,high,Vertical solid feeder drops from BUS-4160-C 4160V SAFETY BUS 1C into load-center breaker CB-LC-C.
+CB-LC-C,TR-LC-C,power,high,Solid conductor connects breaker CB-LC-C to transformer TR-LC-C.
+TR-LC-C,BUS-480-C 480V LOAD CENTER C,power,high,Solid conductor exits transformer TR-LC-C and lands on BUS-480-C 480V LOAD CENTER C.
+BUS-480-C 480V LOAD CENTER C,INST-PT-C,instrument,high,Short vertical instrument tap with bus dot connects INST-PT-C to the right end of BUS-480-C 480V LOAD CENTER C.
+BUS-480-C 480V LOAD CENTER C,CB-MCC-CA,power,high,Solid feeder from BUS-480-C 480V LOAD CENTER C drops through breaker CB-MCC-CA toward MCC-CA.
+CB-MCC-CA,MCC-CA,power,high,Breaker CB-MCC-CA connects directly to panel MCC-CA by a solid vertical conductor.
+BUS-480-C 480V LOAD CENTER C,CB-MCC-CB,power,high,Solid feeder from BUS-480-C 480V LOAD CENTER C drops through breaker CB-MCC-CB toward MCC-CB.
+CB-MCC-CB,MCC-CB,power,high,Breaker CB-MCC-CB connects directly to panel MCC-CB by a solid vertical conductor.
+BUS-480-C 480V LOAD CENTER C,XFMR-120-C,power,medium,Solid side feeder from BUS-480-C 480V LOAD CENTER C routes down the train drawing to transformer XFMR-120-C.
+XFMR-120-C,PNL-120-C,power,high,Solid vertical conductor connects XFMR-120-C to panel PNL-120-C.
+BUS-480-C 480V LOAD CENTER C,GND-C,ground,medium,Right-side solid conductor from BUS-480-C 480V LOAD CENTER C descends to ground symbol GND-C; drawn as a grounding connection.
+MCC-CA,INST-CT-C,instrument,medium,Dashed/dotted instrument lead from the first MCC feeder group reaches CT symbol INST-CT-C.
+MCC-CA,CB-RHR-C,power,high,Solid branch conductor from MCC-CA feeds breaker CB-RHR-C.
+CB-RHR-C,PUMP-RHR-C,power,high,Solid vertical conductor from breaker CB-RHR-C lands on load PUMP-RHR-C.
+MCC-CA,CB-SI-C,power,high,Solid branch conductor from MCC-CA feeds breaker CB-SI-C.
+CB-SI-C,PUMP-SI-C,power,high,Solid vertical conductor from breaker CB-SI-C lands on load PUMP-SI-C.
+MCC-CA,CB-CCW-C,power,high,Solid branch conductor from MCC-CA feeds breaker CB-CCW-C.
+CB-CCW-C,PUMP-CCW-C,power,high,Solid vertical conductor from breaker CB-CCW-C lands on load PUMP-CCW-C.
+MCC-CA,CB-FAN-C,power,high,Solid branch conductor from MCC-CA feeds breaker CB-FAN-C.
+CB-FAN-C,FAN-CR-C,power,high,Solid vertical conductor from breaker CB-FAN-C lands on load FAN-CR-C.
+MCC-CB,CB-CH-C,power,high,Solid branch conductor from MCC-CB feeds breaker CB-CH-C.
+CB-CH-C,CHILLER-C,power,high,Solid vertical conductor from breaker CB-CH-C lands on load CHILLER-C.
+MCC-CB,CB-VLV1-C,power,high,Solid branch conductor from MCC-CB feeds breaker CB-VLV1-C.
+CB-VLV1-C,MOV-HV1-C,power,high,Solid vertical conductor from breaker CB-VLV1-C lands on load MOV-HV1-C.
+MCC-CB,CB-VLV2-C,power,high,Solid branch conductor from MCC-CB feeds breaker CB-VLV2-C.
+CB-VLV2-C,MOV-HV2-C,power,high,Solid vertical conductor from breaker CB-VLV2-C lands on load MOV-HV2-C.
+MCC-CB,CB-SPARE-C,power,medium,Solid branch conductor from MCC-CB reaches breaker CB-SPARE-C; label indicates spare branch.
+CB-SPARE-C,SPARE-LOAD-C,power,medium,Solid vertical conductor is drawn from CB-SPARE-C to SPARE-LOAD-C; both labels indicate spare/placeholder service.
+CB-RHR-C,CB-SI-C,control,medium,Dashed control wiring is drawn between the RHR and SI breaker branch area in train C.
+CB-SI-C,PNL-120-C,control,medium,Vertical dashed control path descends from the SI branch area to panel PNL-120-C.
+PNL-120-C,RELAY-KC1,control,high,Dashed control lead from PNL-120-C connects to relay RELAY-KC1.
+PNL-120-C,RELAY-KC2,control,high,Dashed control lead from PNL-120-C connects to relay RELAY-KC2.
+RELAY-KC1,RELAY-KC2,control,medium,Relays RELAY-KC1 and RELAY-KC2 are enclosed/linked by the same dashed control loop.
+RELAY-KC1,JB-C1,control,high,Dashed control conductor runs from relay RELAY-KC1 to junction box JB-C1.
+JB-C1,TERM-C,control,high,Dashed control conductor continues from JB-C1 to terminal block TERM-C.
+BUS-13B 13.8 KV AUX BUS B,SAT-XFMR-1D,power,high,Solid vertical tap from BUS-13B 13.8 KV AUX BUS B feeds transformer SAT-XFMR-1D.
+SAT-XFMR-1D,CB-4D-IN,power,high,Solid vertical conductor continues from SAT-XFMR-1D to incoming breaker CB-4D-IN.
+CB-4D-IN,BUS-4160-D 4160V SAFETY BUS 1D,power,high,Incoming breaker CB-4D-IN lands on a dotted tap of BUS-4160-D 4160V SAFETY BUS 1D.
+DG-1D,CB-DG-D,power,high,Solid diesel-generator feeder from DG-1D enters breaker CB-DG-D.
+CB-DG-D,BUS-4160-D 4160V SAFETY BUS 1D,power,high,Breaker CB-DG-D connects by solid conductor to a dotted tap on BUS-4160-D 4160V SAFETY BUS 1D.
+BUS-4160-D 4160V SAFETY BUS 1D,CB-LC-D,power,high,Vertical solid feeder drops from BUS-4160-D 4160V SAFETY BUS 1D into load-center breaker CB-LC-D.
+CB-LC-D,TR-LC-D,power,high,Solid conductor connects breaker CB-LC-D to transformer TR-LC-D.
+TR-LC-D,BUS-480-D 480V LOAD CENTER D,power,high,Solid conductor exits transformer TR-LC-D and lands on BUS-480-D 480V LOAD CENTER D.
+BUS-480-D 480V LOAD CENTER D,INST-PT-D,instrument,high,Short vertical instrument tap with bus dot connects INST-PT-D to the right end of BUS-480-D 480V LOAD CENTER D.
+BUS-480-D 480V LOAD CENTER D,CB-MCC-DA,power,high,Solid feeder from BUS-480-D 480V LOAD CENTER D drops through breaker CB-MCC-DA toward MCC-DA.
+CB-MCC-DA,MCC-DA,power,high,Breaker CB-MCC-DA connects directly to panel MCC-DA by a solid vertical conductor.
+BUS-480-D 480V LOAD CENTER D,CB-MCC-DB,power,high,Solid feeder from BUS-480-D 480V LOAD CENTER D drops through breaker CB-MCC-DB toward MCC-DB.
+CB-MCC-DB,MCC-DB,power,high,Breaker CB-MCC-DB connects directly to panel MCC-DB by a solid vertical conductor.
+BUS-480-D 480V LOAD CENTER D,XFMR-120-D,power,medium,Solid side feeder from BUS-480-D 480V LOAD CENTER D routes down the train drawing to transformer XFMR-120-D.
+XFMR-120-D,PNL-120-D,power,high,Solid vertical conductor connects XFMR-120-D to panel PNL-120-D.
+BUS-480-D 480V LOAD CENTER D,GND-D,ground,medium,Right-side solid conductor from BUS-480-D 480V LOAD CENTER D descends to ground symbol GND-D; drawn as a grounding connection.
+MCC-DA,INST-CT-D,instrument,medium,Dashed/dotted instrument lead from the first MCC feeder group reaches CT symbol INST-CT-D.
+MCC-DA,CB-RHR-D,power,high,Solid branch conductor from MCC-DA feeds breaker CB-RHR-D.
+CB-RHR-D,PUMP-RHR-D,power,high,Solid vertical conductor from breaker CB-RHR-D lands on load PUMP-RHR-D.
+MCC-DA,CB-SI-D,power,high,Solid branch conductor from MCC-DA feeds breaker CB-SI-D.
+CB-SI-D,PUMP-SI-D,power,high,Solid vertical conductor from breaker CB-SI-D lands on load PUMP-SI-D.
+MCC-DA,CB-CCW-D,power,high,Solid branch conductor from MCC-DA feeds breaker CB-CCW-D.
+CB-CCW-D,PUMP-CCW-D,power,high,Solid vertical conductor from breaker CB-CCW-D lands on load PUMP-CCW-D.
+MCC-DA,CB-FAN-D,power,high,Solid branch conductor from MCC-DA feeds breaker CB-FAN-D.
+CB-FAN-D,FAN-CR-D,power,high,Solid vertical conductor from breaker CB-FAN-D lands on load FAN-CR-D.
+MCC-DB,CB-CH-D,power,high,Solid branch conductor from MCC-DB feeds breaker CB-CH-D.
+CB-CH-D,CHILLER-D,power,high,Solid vertical conductor from breaker CB-CH-D lands on load CHILLER-D.
+MCC-DB,CB-VLV1-D,power,high,Solid branch conductor from MCC-DB feeds breaker CB-VLV1-D.
+CB-VLV1-D,MOV-HV1-D,power,high,Solid vertical conductor from breaker CB-VLV1-D lands on load MOV-HV1-D.
+MCC-DB,CB-VLV2-D,power,high,Solid branch conductor from MCC-DB feeds breaker CB-VLV2-D.
+CB-VLV2-D,MOV-HV2-D,power,high,Solid vertical conductor from breaker CB-VLV2-D lands on load MOV-HV2-D.
+MCC-DB,CB-SPARE-D,power,medium,Solid branch conductor from MCC-DB reaches breaker CB-SPARE-D; label indicates spare branch.
+CB-SPARE-D,SPARE-LOAD-D,power,medium,Solid vertical conductor is drawn from CB-SPARE-D to SPARE-LOAD-D; both labels indicate spare/placeholder service.
+CB-RHR-D,CB-SI-D,control,medium,Dashed control wiring is drawn between the RHR and SI breaker branch area in train D.
+CB-SI-D,PNL-120-D,control,medium,Vertical dashed control path descends from the SI branch area to panel PNL-120-D.
+PNL-120-D,RELAY-KD1,control,high,Dashed control lead from PNL-120-D connects to relay RELAY-KD1.
+PNL-120-D,RELAY-KD2,control,high,Dashed control lead from PNL-120-D connects to relay RELAY-KD2.
+RELAY-KD1,RELAY-KD2,control,medium,Relays RELAY-KD1 and RELAY-KD2 are enclosed/linked by the same dashed control loop.
+RELAY-KD1,JB-D1,control,high,Dashed control conductor runs from relay RELAY-KD1 to junction box JB-D1.
+JB-D1,TERM-D,control,high,Dashed control conductor continues from JB-D1 to terminal block TERM-D.
+AC FEED TO CHGR-125A,CB-DC-A1,power,medium,Unlabeled solid AC feeder terminates at the source side of CB-DC-A1.
+CB-DC-A1,CHGR-125A,power,high,Solid horizontal conductor connects breaker CB-DC-A1 to CHGR-125A.
+CHGR-125A,BUS-125A 125 VDC BUS A,dc,high,Vertical DC output from CHGR-125A lands on BUS-125A with a filled bus dot.
+BUS-125A 125 VDC BUS A,BAT-125A,dc,high,Vertical solid tap from BUS-125A connects to battery BAT-125A.
+BUS-125A 125 VDC BUS A,FUSE-FD-A,dc,high,Vertical solid tap from BUS-125A feeds fuse FUSE-FD-A.
+FUSE-FD-A,INV-UPS-A,dc,high,Solid conductor from FUSE-FD-A enters inverter INV-UPS-A.
+INV-UPS-A,BUS-UPS-A 120 VAC UPS BUS A,power,high,Output of INV-UPS-A is shown by a vertical solid tap to BUS-UPS-A.
+BUS-125A 125 VDC BUS A,DC-MCC-A,dc,high,Vertical solid tap from BUS-125A rises to DC-MCC-A.
+DC-MCC-A,SOL-SDV-A,control,high,Dashed control line runs from DC-MCC-A to SOL-SDV-A.
+BUS-125A 125 VDC BUS A,DIODE-OR-A,dc,high,DIODE-OR-A has a solid connection down to BUS-125A at a filled bus dot.
+BUS-125A 125 VDC BUS A,GRD-DC-A,ground,high,Vertical solid conductor from BUS-125A descends to ground symbol GRD-DC-A.
+BUS-UPS-A 120 VAC UPS BUS A,INST-RACK-A,instrument,high,Vertical dotted/instrument tap connects BUS-UPS-A to INST-RACK-A.
+BUS-UPS-A 120 VAC UPS BUS A,PNL-RPS-A,control,high,Vertical dashed control tap connects BUS-UPS-A to PNL-RPS-A.
+PNL-RPS-A,RELAY-RPS-A1,control,high,Dashed control lead from PNL-RPS-A drops to RELAY-RPS-A1.
+PNL-RPS-A,RELAY-ESF-A,control,high,Dashed control lead from PNL-RPS-A routes to RELAY-ESF-A.
+BUS-UPS-A 120 VAC UPS BUS A,PLC-SAF-A,control,high,Vertical dashed control tap connects BUS-UPS-A to PLC-SAF-A.
+BUS-UPS-A 120 VAC UPS BUS A,ANN-PNL-CR,control,high,Dashed control conductor leaves the right end of BUS-UPS-A and enters ANN-PNL-CR.
+ANN-PNL-CR,JB-CR-01,control,high,Vertical control conductor connects ANN-PNL-CR to JB-CR-01.
+JB-CR-01,TERM-MTB-A,control,high,Dashed control line from JB-CR-01 terminates at TERM-MTB-A.
+JB-CR-01,TERM-MTB-B,control,high,Dashed control line from JB-CR-01 terminates at TERM-MTB-B.
+AC FEED TO CHGR-125B,CB-DC-B1,power,medium,Unlabeled solid AC feeder terminates at the source side of CB-DC-B1.
+CB-DC-B1,CHGR-125B,power,high,Solid horizontal conductor connects breaker CB-DC-B1 to CHGR-125B.
+CHGR-125B,BUS-125B 125 VDC BUS B,dc,high,Vertical DC output from CHGR-125B lands on BUS-125B with a filled bus dot.
+BUS-125B 125 VDC BUS B,BAT-125B,dc,high,Vertical solid tap from BUS-125B connects to battery BAT-125B.
+BUS-125B 125 VDC BUS B,FUSE-FD-B,dc,high,Vertical solid tap from BUS-125B feeds fuse FUSE-FD-B.
+FUSE-FD-B,INV-UPS-B,dc,high,Solid conductor from FUSE-FD-B enters inverter INV-UPS-B.
+INV-UPS-B,BUS-UPS-B 120 VAC UPS BUS B,power,high,Output of INV-UPS-B is shown by a vertical solid tap to BUS-UPS-B.
+BUS-125B 125 VDC BUS B,DC-MCC-B,dc,high,Vertical solid tap from BUS-125B rises to DC-MCC-B.
+DC-MCC-B,SOL-SDV-B,control,high,Dashed control line runs from DC-MCC-B to SOL-SDV-B.
+BUS-125B 125 VDC BUS B,DIODE-OR-B,dc,high,DIODE-OR-B has a solid connection down to the left side of BUS-125B at a filled bus dot.
+BUS-125B 125 VDC BUS B,GRD-DC-B,ground,high,Vertical solid conductor from BUS-125B descends to ground symbol GRD-DC-B.
+BUS-UPS-B 120 VAC UPS BUS B,INST-RACK-B,instrument,high,Vertical dotted/instrument tap connects BUS-UPS-B to INST-RACK-B.
+BUS-UPS-B 120 VAC UPS BUS B,PNL-RPS-B,control,high,Vertical dashed control tap connects BUS-UPS-B to PNL-RPS-B.
+PNL-RPS-B,RELAY-RPS-B1,control,high,Dashed control lead from PNL-RPS-B drops to RELAY-RPS-B1.
+PNL-RPS-B,RELAY-ESF-B,control,high,Dashed control lead from PNL-RPS-B routes to RELAY-ESF-B.
+BUS-UPS-B 120 VAC UPS BUS B,PLC-SAF-B,control,high,Vertical dashed control tap connects BUS-UPS-B to PLC-SAF-B.
+BUS-UPS-B 120 VAC UPS BUS B,REC-SEQ-1,control,high,Dashed control conductor leaves the right end of BUS-UPS-B and enters REC-SEQ-1.
+XFMR-PT-1,XFMR-PT-1 INSTRUMENT LOOP,instrument,medium,XFMR-PT-1 is tied to the adjacent dotted/dashed meter instrumentation loop.
+XFMR-PT-1 INSTRUMENT LOOP,METER-V01,instrument,high,Dotted/dashed vertical instrument line descends from the XFMR-PT-1 loop to METER-V01.
+XFMR-PT-1 INSTRUMENT LOOP,METER-A01,instrument,high,Dotted/dashed vertical instrument line descends from the same meter loop to METER-A01.

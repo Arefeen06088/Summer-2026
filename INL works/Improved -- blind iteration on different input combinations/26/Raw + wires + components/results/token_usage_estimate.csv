@@ -1,0 +1,7 @@
+document,iteration,round,call_id,actor,input_tokens_est,cached_input_tokens_est,text_input_tokens_est,image_file_count,image_file_tokens_est,output_tokens_low_est,output_tokens_expected_est,output_tokens_high_est,reasoning_tokens_est,total_low_tokens_est,total_expected_tokens_est,total_high_tokens_est,usage_object_available,notes
+26,1,setup/local inspection,main-visual-inspection,main,17322,0,2617,13,14705,900,1600,2600,1200,19422,20122,21122,no,"File inspection, crop review, and local visual extraction baseline."
+26,1,round 1,diego-r1,Diego,14500,0,1665,11,12835,3800,6500,9000,2200,20500,23200,25700,no,High-recall visual extraction from full and focused crops.
+26,1,round 2,jennifer-r1,Jennifer,18284,0,6214,10,12070,900,1700,2800,900,20084,20884,21984,no,Precision review of Diego round 1 and focused crop set.
+26,1,round 3,diego-r2,Diego,3806,0,916,2,2890,160,320,650,450,4416,4576,4906,no,Convergence check on Jennifer disputed lower-control additions.
+26,1,round 4,jennifer-r2-final,Jennifer,6944,0,1164,4,5780,180,360,700,450,7574,7754,8094,no,Final precision decision on disputed RPS-to-120N edges.
+26,1,write/final,main-artifacts-final,main,3213,0,3213,0,0,700,1200,2200,1200,5113,5613,6613,no,"Artifact generation, validation, and final response."

@@ -1,0 +1,13 @@
+source,target,edge_type,evidence
+CB-TIE-1,SYNC-CAB,rejected/uncertain,"dashed route nearby, no clean terminal edge"
+CB-TIE-1,LOAD-SHED-CAB,rejected/uncertain,"route corridor, no clean terminal edge"
+SYNC-CAB,LOAD-SHED-CAB,rejected/uncertain,"route corridor, no clean terminal edge"
+ESFAS-PNL-A,TDR-1,rejected/uncertain,dashed routing but no clean endpoint
+ESFAS-PNL-B,TDR-2,rejected/uncertain,dashed routing but no clean endpoint
+ESFAS-PNL-A,LOAD-SHED-CAB,rejected/uncertain,dashed routing but no clean endpoint
+ESFAS-PNL-B,LOAD-SHED-CAB,rejected/uncertain,dashed routing but no clean endpoint
+TRIP-MOD-A,LOAD-SHED-CAB,rejected/uncertain,dashed routing but no clean endpoint
+TRIP-MOD-B,LOAD-SHED-CAB,rejected/uncertain,dashed routing but no clean endpoint
+LAMP-ALM-A,ANN-PNL-1,rejected/uncertain,lamp and annunciator route via load-shed/alarm bus
+LAMP-ALM-B,ANN-PNL-1,rejected/uncertain,lamp and annunciator route via load-shed/alarm bus
+BUS-101A,BUS-101B,rejected/uncertain,tie breaker CB-TIE-1 is the intervening component

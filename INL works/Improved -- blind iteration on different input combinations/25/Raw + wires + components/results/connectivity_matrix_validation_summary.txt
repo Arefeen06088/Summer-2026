@@ -1,0 +1,46 @@
+Connectivity matrix validation summary - Document 25
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\25\synthetic_npp_connectivity_matrix_revised_v4.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_matrix.csv): TP=197, FP=15, FN=11, Precision=0.929245, Recall=0.947115, F1=0.938095
+- Jennifer -- Round 2 (round_02_jennifer_matrix.csv): TP=197, FP=8, FN=11, Precision=0.960976, Recall=0.947115, F1=0.953995
+- Diego -- Round 3 (round_03_diego_matrix.csv): TP=197, FP=8, FN=11, Precision=0.960976, Recall=0.947115, F1=0.953995
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=197, FP=8, FN=11, Precision=0.960976, Recall=0.947115, F1=0.953995
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=197, FP=8, FN=11, Precision=0.960976, Recall=0.947115, F1=0.953995
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+
+False-positive edge examples:
+- 480V-CHGR-A-FEEDER -- CHGR-125-1A
+- 480V-CHGR-B-FEEDER -- CHGR-125-1B
+- DS-4A01 -- TR-480-1A
+- DS-4B01 -- TR-480-1B
+- DS-4C01 -- TR-480-1C
+- PNL-A/B-TIE -- PNL-RPS-A
+- PNL-A/B-TIE -- PNL-RPS-B
+- RPS-TRIP-BUS -- TC-52-4A
+
+False-negative edge examples:
+- BUS-125DC-A -- INV-120-1B
+- BUS-125DC-B -- INV-120-1A
+- BUS-4160-A -- TR-480-1A
+- BUS-4160-B -- TR-480-1B
+- BUS-4160-C -- TR-480-1C
+- BUS-480-1A -- CHGR-125-1A
+- BUS-480-1B -- CHGR-125-1B
+- CB-4A01 -- TC-52-4A
+- CB-4B01 -- TC-52-4A
+- CB-4C01 -- TC-52-4A
+
+Extra/non-GT nodes causing performance drops:
+- PNL-A/B-TIE: 2 incident false-positive edge(s)
+- 480V-CHGR-A-FEEDER: 1 incident false-positive edge(s)
+- 480V-CHGR-B-FEEDER: 1 incident false-positive edge(s)
+- RPS-TRIP-BUS: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 4 extra/intermediate nodes were omitted from the extraction (PNL-A/B-TIE, 480V-CHGR-A-FEEDER, 480V-CHGR-B-FEEDER, RPS-TRIP-BUS), final metrics would be TP=197, FP=3, FN=11, Precision=0.985000, Recall=0.947115, F1=0.965686.
+- If all 4 non-GT nodes were omitted, metrics would be TP=197, FP=3, FN=11, Precision=0.985000, Recall=0.947115, F1=0.965686.

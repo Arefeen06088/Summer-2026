@@ -1,0 +1,203 @@
+from,to,evidence
+GEN-M1,CB-GEN1,"solid AC power, top band"
+CB-GEN1,TR-UAT1,"solid AC power, top band"
+TR-UAT1,CB-13A-IN,"solid AC power, top band"
+CB-13A-IN,BUS-13K-A,"solid AC power, top band"
+BUS-13K-A,CB-TIE-13K,"solid AC tie, top band"
+CB-TIE-13K,BUS-13K-B,"solid AC tie, top band"
+FEED-230A,TR-SAT1,"solid AC offsite feed, top band"
+TR-SAT1,CB-13B-IN,"solid AC offsite feed, top band"
+CB-13B-IN,BUS-13K-B,"solid AC offsite feed, top band"
+BUS-13K-A,CB-F41A,"solid AC stepdown, upper-left"
+CB-F41A,DS-F41A,"solid AC stepdown, upper-left"
+DS-F41A,TR-416A,"solid AC stepdown, upper-left"
+TR-416A,CB-416A-IN,"solid AC stepdown, upper-left"
+CB-416A-IN,BUS-416-A,"solid AC stepdown, upper-left"
+BUS-13K-B,CB-F41B,"solid AC stepdown, upper-middle"
+CB-F41B,DS-F41B,"solid AC stepdown, upper-middle"
+DS-F41B,TR-416B,"solid AC stepdown, upper-middle"
+TR-416B,CB-416B-IN,"solid AC stepdown, upper-middle"
+CB-416B-IN,BUS-416-B,"solid AC stepdown, upper-middle"
+DG-1A,CB-DG1A,solid emergency generator feed
+CB-DG1A,BUS-416-A,solid emergency generator feed
+DG-1B,CB-DG1B,solid emergency generator feed
+CB-DG1B,BUS-416-B,solid emergency generator feed
+BUS-416-A,CB-TIE-416,solid 4.16 kV bus tie
+CB-TIE-416,BUS-416-B,solid 4.16 kV bus tie
+BUS-416-A,CB-LCA,solid 480 V load-center feed
+CB-LCA,TR-480A,solid 480 V load-center feed
+TR-480A,BUS-480-A,solid 480 V load-center feed
+BUS-416-A,CB-LCB,solid 480 V load-center feed
+CB-LCB,TR-480B,solid 480 V load-center feed
+TR-480B,BUS-480-B,solid 480 V load-center feed
+BUS-416-B,CB-LCC,solid 480 V load-center feed
+CB-LCC,TR-480C,solid 480 V load-center feed
+TR-480C,BUS-480-C,solid 480 V load-center feed
+BUS-416-B,CB-LCD,solid 480 V load-center feed
+CB-LCD,TR-480D,solid 480 V load-center feed
+TR-480D,BUS-480-D,solid 480 V load-center feed
+BUS-480-B,CB-TIE-480,solid 480 V bus tie
+CB-TIE-480,BUS-480-C,solid 480 V bus tie
+BUS-480-A,CB-48A1,480 VAC feeder A1
+CB-48A1,DS-48A1,480 VAC feeder A1
+DS-48A1,MCC-1A,480 VAC feeder A1
+MCC-1A,RELAY-K1A,480 VAC feeder A1
+RELAY-K1A,PMP-RHR-101A,480 VAC feeder A1
+BUS-480-A,CB-48A2,480 VAC feeder A2
+CB-48A2,DS-48A2,480 VAC feeder A2
+DS-48A2,MCC-2A,480 VAC feeder A2
+MCC-2A,CS-2A,480 VAC feeder A2
+CS-2A,MOV-CCW-112A,480 VAC feeder A2
+BUS-480-A,CB-48A3,480 VAC feeder A3
+CB-48A3,DS-48A3,480 VAC feeder A3
+DS-48A3,MCC-3A,480 VAC feeder A3
+MCC-3A,RELAY-K3A,480 VAC feeder A3
+RELAY-K3A,FAN-RB-104A,480 VAC feeder A3
+BUS-480-A,CB-48A4,480 VAC feeder A4
+CB-48A4,DS-48A4,480 VAC feeder A4
+DS-48A4,JB-4A,480 VAC feeder A4
+JB-4A,CS-4A,480 VAC feeder A4
+CS-4A,HTR-PZR-01A,480 VAC feeder A4
+BUS-480-A,CB-48A5,480 VAC feeder A5
+CB-48A5,DS-48A5,480 VAC feeder A5
+DS-48A5,MCC-5A,480 VAC feeder A5
+MCC-5A,RELAY-K5A,480 VAC feeder A5
+RELAY-K5A,COMP-IA-201A,480 VAC feeder A5
+BUS-480-A,CB-48A6,480 VAC feeder A6
+CB-48A6,DS-48A6,480 VAC feeder A6
+DS-48A6,JB-6A,480 VAC feeder A6
+JB-6A,CS-6A,480 VAC feeder A6
+CS-6A,MOT-CRN-01A,480 VAC feeder A6
+BUS-480-B,CB-48B1,480 VAC feeder B1
+CB-48B1,DS-48B1,480 VAC feeder B1
+DS-48B1,MCC-1B,480 VAC feeder B1
+MCC-1B,RELAY-K1B,480 VAC feeder B1
+RELAY-K1B,PMP-SI-102B,480 VAC feeder B1
+BUS-480-B,CB-48B2,480 VAC feeder B2
+CB-48B2,DS-48B2,480 VAC feeder B2
+DS-48B2,MCC-2B,480 VAC feeder B2
+MCC-2B,CS-2B,480 VAC feeder B2
+CS-2B,MOV-CS-116B,480 VAC feeder B2
+BUS-480-B,CB-48B3,480 VAC feeder B3
+CB-48B3,DS-48B3,480 VAC feeder B3
+DS-48B3,MCC-3B,480 VAC feeder B3
+MCC-3B,RELAY-K3B,480 VAC feeder B3
+RELAY-K3B,FAN-CCW-108B,480 VAC feeder B3
+BUS-480-B,CB-48B4,480 VAC feeder B4
+CB-48B4,DS-48B4,480 VAC feeder B4
+DS-48B4,JB-4B,480 VAC feeder B4
+JB-4B,CS-4B,480 VAC feeder B4
+CS-4B,HTR-SUMP-02B,480 VAC feeder B4
+BUS-480-B,CB-48B5,480 VAC feeder B5
+CB-48B5,DS-48B5,480 VAC feeder B5
+DS-48B5,MCC-5B,480 VAC feeder B5
+MCC-5B,RELAY-K5B,480 VAC feeder B5
+RELAY-K5B,PMP-CHG-203B,480 VAC feeder B5
+BUS-480-B,CB-48B6,480 VAC feeder B6
+CB-48B6,DS-48B6,480 VAC feeder B6
+DS-48B6,JB-6B,480 VAC feeder B6
+JB-6B,CS-6B,480 VAC feeder B6
+CS-6B,MOV-SW-118B,480 VAC feeder B6
+BUS-480-C,CB-48C1,480 VAC feeder C1
+CB-48C1,DS-48C1,480 VAC feeder C1
+DS-48C1,MCC-1C,480 VAC feeder C1
+MCC-1C,RELAY-K1C,480 VAC feeder C1
+RELAY-K1C,PMP-RHR-101C,480 VAC feeder C1
+BUS-480-C,CB-48C2,480 VAC feeder C2
+CB-48C2,DS-48C2,480 VAC feeder C2
+DS-48C2,MCC-2C,480 VAC feeder C2
+MCC-2C,CS-2C,480 VAC feeder C2
+CS-2C,MOV-CCW-112C,480 VAC feeder C2
+BUS-480-C,CB-48C3,480 VAC feeder C3
+CB-48C3,DS-48C3,480 VAC feeder C3
+DS-48C3,MCC-3C,480 VAC feeder C3
+MCC-3C,RELAY-K3C,480 VAC feeder C3
+RELAY-K3C,FAN-RB-104C,480 VAC feeder C3
+BUS-480-C,CB-48C4,480 VAC feeder C4
+CB-48C4,DS-48C4,480 VAC feeder C4
+DS-48C4,JB-4C,480 VAC feeder C4
+JB-4C,RELAY-K4C,480 VAC feeder C4
+RELAY-K4C,PMP-AFW-205C,480 VAC feeder C4
+BUS-480-C,CB-48C5,480 VAC feeder C5
+CB-48C5,DS-48C5,480 VAC feeder C5
+DS-48C5,MCC-5C,480 VAC feeder C5
+MCC-5C,RELAY-K5C,480 VAC feeder C5
+RELAY-K5C,PMP-CCP-207C,480 VAC feeder C5
+BUS-480-C,CB-48C6,480 VAC feeder C6
+CB-48C6,DS-48C6,480 VAC feeder C6
+DS-48C6,JB-6C,480 VAC feeder C6
+JB-6C,CS-6C,480 VAC feeder C6
+CS-6C,MOV-FCV-022C,480 VAC feeder C6
+BUS-480-D,CB-48D1,480 VAC feeder D1
+CB-48D1,DS-48D1,480 VAC feeder D1
+DS-48D1,MCC-1D,480 VAC feeder D1
+MCC-1D,RELAY-K1D,480 VAC feeder D1
+RELAY-K1D,PMP-SI-102D,480 VAC feeder D1
+BUS-480-D,CB-48D2,480 VAC feeder D2
+CB-48D2,DS-48D2,480 VAC feeder D2
+DS-48D2,MCC-2D,480 VAC feeder D2
+MCC-2D,CS-2D,480 VAC feeder D2
+CS-2D,MOV-CS-116D,480 VAC feeder D2
+BUS-480-D,CB-48D3,480 VAC feeder D3
+CB-48D3,DS-48D3,480 VAC feeder D3
+DS-48D3,MCC-3D,480 VAC feeder D3
+MCC-3D,RELAY-K3D,480 VAC feeder D3
+RELAY-K3D,FAN-ESF-110D,480 VAC feeder D3
+BUS-480-D,CB-48D4,480 VAC feeder D4
+CB-48D4,DS-48D4,480 VAC feeder D4
+DS-48D4,JB-4D,480 VAC feeder D4
+JB-4D,CS-4D,480 VAC feeder D4
+CS-4D,MOV-RWST-24D,480 VAC feeder D4
+BUS-480-D,CB-48D5,480 VAC feeder D5
+CB-48D5,DS-48D5,480 VAC feeder D5
+DS-48D5,MCC-5D,480 VAC feeder D5
+MCC-5D,RELAY-K5D,480 VAC feeder D5
+RELAY-K5D,PMP-CHG-203D,480 VAC feeder D5
+BUS-480-D,CB-48D6,480 VAC feeder D6
+CB-48D6,DS-48D6,480 VAC feeder D6
+DS-48D6,JB-6D,480 VAC feeder D6
+JB-6D,CS-6D,480 VAC feeder D6
+CS-6D,MOV-SW-118D,480 VAC feeder D6
+BUS-480-A,RECT-125A,solid AC rectifier feed
+BAT-125A,CHGR-125A,DC supply chain
+CHGR-125A,RECT-125A,DC supply chain
+RECT-125A,BUS-125DCA,DC supply chain
+INV-UPS-A,BUS-125DCA,DC/UPS connection
+BUS-480-C,RECT-125B,solid AC rectifier feed
+BAT-125B,CHGR-125B,DC supply chain
+CHGR-125B,RECT-125B,DC supply chain
+RECT-125B,BUS-125DCB,DC supply chain
+INV-UPS-B,BUS-125DCB,DC/UPS connection
+BUS-125DCA,CP-RPS-A,dashed control/protection
+CP-RPS-A,TB-RPS-A,dashed control/protection
+TB-RPS-A,PROT-UV-A,dashed control/protection
+PROT-UV-A,RELAY-K101,dashed control/protection
+RELAY-K101,PT-410A,instrument signal
+RELAY-K101,LT-512A,instrument signal
+CP-RPS-A,RELAY-K102,instrument/control
+RELAY-K102,TT-303A,instrument/control
+RELAY-K102,GND-CTRL-A,ground/control lead
+BUS-125DCA,CP-RPS-B,dashed control/protection
+CP-RPS-B,TB-RPS-B,dashed control/protection
+TB-RPS-B,PROT-UV-B,dashed control/protection
+PROT-UV-B,RELAY-K103,dashed control/protection
+RELAY-K103,PT-410B,instrument signal
+RELAY-K103,LT-512B,instrument signal
+CP-RPS-B,RELAY-K104,instrument/control
+RELAY-K104,TT-303B,instrument/control
+RELAY-K104,GND-CTRL-B,ground/control lead
+BUS-125DCB,CP-ESFAS-A,ESFAS dashed control/protection
+CP-ESFAS-A,JB-ESF-A,ESFAS dashed control/protection
+JB-ESF-A,PROT-LOP-A,ESFAS dashed control/protection
+PROT-LOP-A,RELAY-K105,ESFAS dashed control/protection
+RELAY-K105,FT-611A,ESFAS dashed control/protection
+CP-ESFAS-A,RELAY-K106,ESFAS control/alarm
+RELAY-K106,XA-730A,ESFAS control/alarm
+BUS-125DCB,CP-ESFAS-B,ESFAS dashed control/protection
+CP-ESFAS-B,JB-ESF-B,ESFAS dashed control/protection
+JB-ESF-B,PROT-LOP-B,ESFAS dashed control/protection
+PROT-LOP-B,RELAY-K107,ESFAS dashed control/protection
+RELAY-K107,FT-611B,ESFAS dashed control/protection
+CP-ESFAS-B,RELAY-K108,ESFAS control/alarm
+RELAY-K108,XA-730B,ESFAS control/alarm
+RELAY-K106,RELAY-K108,dashed control-interlock labeled A/B ESF INTERLOCK

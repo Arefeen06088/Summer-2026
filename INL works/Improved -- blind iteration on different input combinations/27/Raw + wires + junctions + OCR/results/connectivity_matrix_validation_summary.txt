@@ -1,0 +1,31 @@
+Connectivity matrix validation summary - Document 27 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\27\synthetic_npp_connectivity_matrix_readable.csv
+GT after normalization: 200 undirected edges across 200 component names.
+
+Token usage:
+Token source files: document27_token_usage_estimates.csv; document27_token_usage_totals.csv.
+Document total token estimate: low=171149, expected=314396, high=633077.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=198, FP=3, FN=2, Precision=0.985075, Recall=0.990000, F1=0.987531.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges.
+- Extracted components: 200; extra/non-GT names: 0; missing GT component names: 0.
+- False-positive extracted edge examples: BAT-125A -- DC-BUS-125A; BAT-125B -- DC-BUS-125B; DC-BUS-125A -- DC-BUS-125B.
+- Missed GT edge examples: BAT-125A -- CHGR-125A; BAT-125B -- CHGR-125B.
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=198, FP=0, FN=2, Precision=1.000000, Recall=0.990000, F1=0.994975.
+- If all missed GT edges were added, final performance would be TP=200, FP=3, FN=0, Precision=0.985222, Recall=1.000000, F1=0.992556.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.987531.
+
+Round-specific notes:
+- Diego -- Round 1: TP=191, FP=11, FN=9, F1=0.950249; extra nodes=2, missing GT nodes=1. FP examples: BAT-125A -- DC-BUS-125A; BAT-125B -- DC-BUS-125B; BUS-13.8KV -- CB-101; BUS-13.8KV -- CB-G1; ... (+7 more). FN examples: BAT-125A -- CHGR-125A; BAT-125B -- CHGR-125B; BUS-13KV-N -- CB-101; BUS-13KV-N -- CB-G1; ... (+5 more).
+- Jennifer -- Round 2: TP=198, FP=3, FN=2, F1=0.987531; extra nodes=0, missing GT nodes=0. FP examples: BAT-125A -- DC-BUS-125A; BAT-125B -- DC-BUS-125B; DC-BUS-125A -- DC-BUS-125B. FN examples: BAT-125A -- CHGR-125A; BAT-125B -- CHGR-125B.
+- Diego -- Round 3: TP=198, FP=3, FN=2, F1=0.987531; extra nodes=0, missing GT nodes=0. FP examples: BAT-125A -- DC-BUS-125A; BAT-125B -- DC-BUS-125B; DC-BUS-125A -- DC-BUS-125B. FN examples: BAT-125A -- CHGR-125A; BAT-125B -- CHGR-125B.
+- Jennifer -- Round 4: TP=198, FP=3, FN=2, F1=0.987531; extra nodes=0, missing GT nodes=0. FP examples: BAT-125A -- DC-BUS-125A; BAT-125B -- DC-BUS-125B; DC-BUS-125A -- DC-BUS-125B. FN examples: BAT-125A -- CHGR-125A; BAT-125B -- CHGR-125B.
+- Final connectivity -- Final: TP=198, FP=3, FN=2, F1=0.987531; extra nodes=0, missing GT nodes=0. FP examples: BAT-125A -- DC-BUS-125A; BAT-125B -- DC-BUS-125B; DC-BUS-125A -- DC-BUS-125B. FN examples: BAT-125A -- CHGR-125A; BAT-125B -- CHGR-125B.

@@ -1,0 +1,14 @@
+node_id,label,node_kind,role_or_type,action,related_existing_node,evidence,confidence
+ADD-BUS-4KV-A,BUS-4KV-A,busbar,4kV class 1E train A bus,add_missing_busbar,,raw top bus label BUS-4160-A with SAT-1A UAT-1A DG-1A CB-TR-A1 CB-TR-A2 taps,high
+ADD-BUS-4KV-B,BUS-4KV-B,busbar,4kV class 1E train B bus,add_missing_busbar,,raw top bus label BUS-4160-B with UAT-1B DG-1B SAT-1B CB-TR-B1 CB-TR-B2 taps,high
+ADD-BUS-480-A,BUS-480-A,busbar,480V MCC and load-center train A bus,add_missing_busbar,,raw middle horizontal bus label BUS-480-A feeding CB-101A through CB-112A and tied through CB-TIE-480AB,high
+ADD-BUS-480-B,BUS-480-B,busbar,480V MCC and load-center train B bus,add_missing_busbar,,raw middle horizontal bus label BUS-480-B feeding CB-201B through CB-212B and tied through CB-TIE-480AB,high
+ADD-BUS-125DC-A,BUS-125DC-A,busbar,125V DC train A bus,add_missing_busbar,,raw lower DC bus label BUS-125DC-A with BAT-125-A CHGR-125-A INV-120-A and CB-DCTIE-AB taps,high
+ADD-BUS-125DC-B,BUS-125DC-B,busbar,125V DC train B bus,add_missing_busbar,,raw lower DC bus label BUS-125DC-B with BAT-125-B CHGR-125-B INV-120-B and CB-DCTIE-AB taps,high
+ADD-BUS-120-RPS-A,BUS-120-RPS-A,busbar,120VAC RPS and ESF control train A bus,add_missing_busbar,,raw lower AC bus label BUS-120AC-A downstream of INV-120-A and STS-120-A in Train A DC RPS ESF control area,medium
+ADD-BUS-120-RPS-B,BUS-120-RPS-B,busbar,120VAC RPS and ESF control train B bus,add_missing_busbar,,raw lower AC bus label BUS-120AC-B downstream of INV-120-B and STS-120-B in Train B DC RPS ESF control area,medium
+ADD-MCC-BUSBAR-A,MCC-480-A,busbar,semantic MCC feeder busbar A,add_semantic_alias,ADD-BUS-480-A,raw same long 480V feeder bus carries CB-101A through CB-112A under Train A MCC region,medium
+ADD-MCC-BUSBAR-B,MCC-480-B,busbar,semantic MCC feeder busbar B,add_semantic_alias,ADD-BUS-480-B,raw same long 480V feeder bus carries CB-201B through CB-212B under Train B MCC region,medium
+ADD-MASTER-TB-4KV-480,MASTER-TERMINAL-BLOCKS,terminal_block,master terminal block interface,add_missing_interface,,raw box labelled MASTER TERMINAL BLOCKS below 4kV tie with numbered terminals 25 through 29,medium
+ADD-GND-DC-B,GND-DC-B,ground,125V DC train B ground symbol,add_missing_ground,,raw lower right ground symbol tied to BUS-125DC-B near CB-DC-B and battery charger B,medium
+ADD-ARTIFACT-PP-E1-480-125R,PP-E1-480-125R,document_artifact,title block drawing number artifact,reject_artifact,,right title block or reference text is not connected to any drawn electrical conductor,high

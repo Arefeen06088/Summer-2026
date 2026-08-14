@@ -1,0 +1,1076 @@
+{
+  "document": "23",
+  "iteration": "1",
+  "nodes": [
+    "GRID-161A",
+    "DS-101",
+    "CB-101",
+    "TR-UAT-1A",
+    "CB-102",
+    "BUS-4160-A",
+    "GRID-161B",
+    "DS-102",
+    "CB-103",
+    "TR-UAT-1B",
+    "CB-104",
+    "BUS-4160-B",
+    "CB-TIE-41",
+    "CB-ESF-A",
+    "BUS-4160-ESF-A",
+    "CB-ESF-B",
+    "BUS-4160-ESF-B",
+    "DG-1A",
+    "CB-DG1A",
+    "ATS-1A",
+    "DG-1B",
+    "CB-DG1B",
+    "ATS-1B",
+    "GND-41A",
+    "GND-41B",
+    "CB-1A-FDR",
+    "DS-1A-ISO",
+    "TR-1A",
+    "CB-1A-MAIN",
+    "BUS-480-1A",
+    "MCC-1A-1",
+    "PUMP-P101",
+    "MOTOR-M102",
+    "MCC-1A-2",
+    "VALVE-MOV103",
+    "FAN-F104",
+    "MCC-1A-3",
+    "HTR-H105",
+    "VALVE-XV106",
+    "PNL-1A",
+    "GND-1A",
+    "CB-1C-FDR",
+    "DS-1C-ISO",
+    "TR-1C",
+    "CB-1C-MAIN",
+    "BUS-480-1C",
+    "MCC-1C-1",
+    "PUMP-P131",
+    "MOTOR-M132",
+    "MCC-1C-2",
+    "VALVE-MOV133",
+    "FAN-F134",
+    "MCC-1C-3",
+    "HTR-H135",
+    "VALVE-XV136",
+    "PNL-1C",
+    "GND-1C",
+    "CB-1B-FDR",
+    "DS-1B-ISO",
+    "TR-1B",
+    "CB-1B-MAIN",
+    "BUS-480-1B",
+    "MCC-1B-1",
+    "PUMP-P161",
+    "MOTOR-M162",
+    "MCC-1B-2",
+    "VALVE-MOV163",
+    "FAN-F164",
+    "MCC-1B-3",
+    "HTR-H165",
+    "VALVE-XV166",
+    "PNL-1B",
+    "GND-1B",
+    "CB-2A-FDR",
+    "DS-2A-ISO",
+    "TR-2A",
+    "CB-2A-MAIN",
+    "BUS-480-2A",
+    "MCC-2A-1",
+    "PUMP-P201",
+    "MOTOR-M202",
+    "MCC-2A-2",
+    "VALVE-MOV203",
+    "FAN-F204",
+    "MCC-2A-3",
+    "HTR-H205",
+    "VALVE-XV206",
+    "PNL-2A",
+    "GND-2A",
+    "CB-2C-FDR",
+    "DS-2C-ISO",
+    "TR-2C",
+    "CB-2C-MAIN",
+    "BUS-480-2C",
+    "MCC-2C-1",
+    "PUMP-P231",
+    "MOTOR-M232",
+    "MCC-2C-2",
+    "VALVE-MOV233",
+    "FAN-F234",
+    "MCC-2C-3",
+    "HTR-H235",
+    "VALVE-XV236",
+    "PNL-2C",
+    "GND-2C",
+    "CB-2B-FDR",
+    "DS-2B-ISO",
+    "TR-2B",
+    "CB-2B-MAIN",
+    "BUS-480-2B",
+    "MCC-2B-1",
+    "PUMP-P261",
+    "MOTOR-M262",
+    "MCC-2B-2",
+    "VALVE-MOV263",
+    "FAN-F264",
+    "MCC-2B-3",
+    "HTR-H265",
+    "VALVE-XV266",
+    "PNL-2B",
+    "GND-2B",
+    "CB-DC-A",
+    "RECT-125A",
+    "BUS-125DC-A",
+    "BAT-125A",
+    "CHGR-AUX-A",
+    "INV-1A",
+    "UPS-1A",
+    "CB-UPS-A",
+    "BUS-120AC-A",
+    "PNL-RPS-A",
+    "FUSE-FU-A",
+    "GND-DC-A",
+    "CB-DCTIE",
+    "BUS-125DC-B",
+    "CB-DC-B",
+    "RECT-125B",
+    "BAT-125B",
+    "CHGR-AUX-B",
+    "INV-1B",
+    "UPS-1B",
+    "CB-UPS-B",
+    "BUS-120AC-B",
+    "PNL-RPS-B",
+    "FUSE-FU-B",
+    "GND-DC-B",
+    "DC-DC-1",
+    "BUS-24DC-C",
+    "BAT-24C",
+    "PNL-RADMON",
+    "PNL-DCS-A",
+    "PNL-DCS-B"
+  ],
+  "edges": [
+    {
+      "source": "GRID-161A",
+      "target": "DS-101",
+      "edge_type": "power",
+      "evidence": "Solid A unit auxiliary source chain."
+    },
+    {
+      "source": "DS-101",
+      "target": "CB-101",
+      "edge_type": "power",
+      "evidence": "Solid A unit auxiliary source chain."
+    },
+    {
+      "source": "CB-101",
+      "target": "TR-UAT-1A",
+      "edge_type": "power",
+      "evidence": "Solid A unit auxiliary source chain."
+    },
+    {
+      "source": "TR-UAT-1A",
+      "target": "CB-102",
+      "edge_type": "power",
+      "evidence": "Solid A unit auxiliary source chain."
+    },
+    {
+      "source": "CB-102",
+      "target": "BUS-4160-A",
+      "edge_type": "power",
+      "evidence": "Solid A unit auxiliary source chain."
+    },
+    {
+      "source": "GRID-161B",
+      "target": "DS-102",
+      "edge_type": "power",
+      "evidence": "Solid B unit auxiliary source chain."
+    },
+    {
+      "source": "DS-102",
+      "target": "CB-103",
+      "edge_type": "power",
+      "evidence": "Solid B unit auxiliary source chain."
+    },
+    {
+      "source": "CB-103",
+      "target": "TR-UAT-1B",
+      "edge_type": "power",
+      "evidence": "Solid B unit auxiliary source chain."
+    },
+    {
+      "source": "TR-UAT-1B",
+      "target": "CB-104",
+      "edge_type": "power",
+      "evidence": "Solid B unit auxiliary source chain."
+    },
+    {
+      "source": "CB-104",
+      "target": "BUS-4160-B",
+      "edge_type": "power",
+      "evidence": "Solid B unit auxiliary source chain."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-TIE-41",
+      "edge_type": "power",
+      "evidence": "Solid 4160 V bus tie."
+    },
+    {
+      "source": "CB-TIE-41",
+      "target": "BUS-4160-B",
+      "edge_type": "power",
+      "evidence": "Solid 4160 V bus tie."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-ESF-A",
+      "edge_type": "power",
+      "evidence": "Solid A normal-to-ESF feeder."
+    },
+    {
+      "source": "CB-ESF-A",
+      "target": "BUS-4160-ESF-A",
+      "edge_type": "power",
+      "evidence": "Solid A normal-to-ESF feeder."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-ESF-B",
+      "edge_type": "power",
+      "evidence": "Solid B normal-to-ESF feeder."
+    },
+    {
+      "source": "CB-ESF-B",
+      "target": "BUS-4160-ESF-B",
+      "edge_type": "power",
+      "evidence": "Solid B normal-to-ESF feeder."
+    },
+    {
+      "source": "DG-1A",
+      "target": "CB-DG1A",
+      "edge_type": "power",
+      "evidence": "Solid A diesel/ATS feeder to ESF bus."
+    },
+    {
+      "source": "CB-DG1A",
+      "target": "ATS-1A",
+      "edge_type": "power",
+      "evidence": "Solid A diesel/ATS feeder to ESF bus."
+    },
+    {
+      "source": "ATS-1A",
+      "target": "BUS-4160-ESF-A",
+      "edge_type": "power",
+      "evidence": "Solid A diesel/ATS feeder to ESF bus."
+    },
+    {
+      "source": "DG-1B",
+      "target": "CB-DG1B",
+      "edge_type": "power",
+      "evidence": "Solid B diesel/ATS feeder to ESF bus."
+    },
+    {
+      "source": "CB-DG1B",
+      "target": "ATS-1B",
+      "edge_type": "power",
+      "evidence": "Solid B diesel/ATS feeder to ESF bus."
+    },
+    {
+      "source": "ATS-1B",
+      "target": "BUS-4160-ESF-B",
+      "edge_type": "power",
+      "evidence": "Solid B diesel/ATS feeder to ESF bus."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "GND-41A",
+      "edge_type": "ground",
+      "evidence": "Direct solid top-bus ground drop accepted by Jennifer."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "GND-41B",
+      "edge_type": "ground",
+      "evidence": "Direct solid top-bus ground drop accepted by Jennifer."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-1A-FDR",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 1A."
+    },
+    {
+      "source": "CB-1A-FDR",
+      "target": "DS-1A-ISO",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 1A."
+    },
+    {
+      "source": "DS-1A-ISO",
+      "target": "TR-1A",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 1A."
+    },
+    {
+      "source": "TR-1A",
+      "target": "CB-1A-MAIN",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 1A."
+    },
+    {
+      "source": "CB-1A-MAIN",
+      "target": "BUS-480-1A",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 1A."
+    },
+    {
+      "source": "BUS-480-1A",
+      "target": "MCC-1A-1",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 1A-1."
+    },
+    {
+      "source": "MCC-1A-1",
+      "target": "PUMP-P101",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1A-1 load branch."
+    },
+    {
+      "source": "MCC-1A-1",
+      "target": "MOTOR-M102",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1A-1 load branch."
+    },
+    {
+      "source": "BUS-480-1A",
+      "target": "MCC-1A-2",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 1A-2."
+    },
+    {
+      "source": "MCC-1A-2",
+      "target": "VALVE-MOV103",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1A-2 load branch."
+    },
+    {
+      "source": "MCC-1A-2",
+      "target": "FAN-F104",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1A-2 load branch."
+    },
+    {
+      "source": "BUS-480-1A",
+      "target": "MCC-1A-3",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 1A-3."
+    },
+    {
+      "source": "MCC-1A-3",
+      "target": "HTR-H105",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1A-3 load branch."
+    },
+    {
+      "source": "MCC-1A-3",
+      "target": "VALVE-XV106",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1A-3 load branch."
+    },
+    {
+      "source": "BUS-480-1A",
+      "target": "PNL-1A",
+      "edge_type": "power",
+      "evidence": "Direct solid panel supply drop for 1A."
+    },
+    {
+      "source": "BUS-480-1A",
+      "target": "GND-1A",
+      "edge_type": "ground",
+      "evidence": "Direct solid 480 V ground drop for 1A."
+    },
+    {
+      "source": "BUS-4160-ESF-A",
+      "target": "CB-1C-FDR",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 1C."
+    },
+    {
+      "source": "CB-1C-FDR",
+      "target": "DS-1C-ISO",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 1C."
+    },
+    {
+      "source": "DS-1C-ISO",
+      "target": "TR-1C",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 1C."
+    },
+    {
+      "source": "TR-1C",
+      "target": "CB-1C-MAIN",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 1C."
+    },
+    {
+      "source": "CB-1C-MAIN",
+      "target": "BUS-480-1C",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 1C."
+    },
+    {
+      "source": "BUS-480-1C",
+      "target": "MCC-1C-1",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 1C-1."
+    },
+    {
+      "source": "MCC-1C-1",
+      "target": "PUMP-P131",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1C-1 load branch."
+    },
+    {
+      "source": "MCC-1C-1",
+      "target": "MOTOR-M132",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1C-1 load branch."
+    },
+    {
+      "source": "BUS-480-1C",
+      "target": "MCC-1C-2",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 1C-2."
+    },
+    {
+      "source": "MCC-1C-2",
+      "target": "VALVE-MOV133",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1C-2 load branch."
+    },
+    {
+      "source": "MCC-1C-2",
+      "target": "FAN-F134",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1C-2 load branch."
+    },
+    {
+      "source": "BUS-480-1C",
+      "target": "MCC-1C-3",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 1C-3."
+    },
+    {
+      "source": "MCC-1C-3",
+      "target": "HTR-H135",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1C-3 load branch."
+    },
+    {
+      "source": "MCC-1C-3",
+      "target": "VALVE-XV136",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1C-3 load branch."
+    },
+    {
+      "source": "BUS-480-1C",
+      "target": "PNL-1C",
+      "edge_type": "power",
+      "evidence": "Direct solid panel supply drop for 1C."
+    },
+    {
+      "source": "BUS-480-1C",
+      "target": "GND-1C",
+      "edge_type": "ground",
+      "evidence": "Direct solid 480 V ground drop for 1C."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-1B-FDR",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 1B."
+    },
+    {
+      "source": "CB-1B-FDR",
+      "target": "DS-1B-ISO",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 1B."
+    },
+    {
+      "source": "DS-1B-ISO",
+      "target": "TR-1B",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 1B."
+    },
+    {
+      "source": "TR-1B",
+      "target": "CB-1B-MAIN",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 1B."
+    },
+    {
+      "source": "CB-1B-MAIN",
+      "target": "BUS-480-1B",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 1B."
+    },
+    {
+      "source": "BUS-480-1B",
+      "target": "MCC-1B-1",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 1B-1."
+    },
+    {
+      "source": "MCC-1B-1",
+      "target": "PUMP-P161",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1B-1 load branch."
+    },
+    {
+      "source": "MCC-1B-1",
+      "target": "MOTOR-M162",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1B-1 load branch."
+    },
+    {
+      "source": "BUS-480-1B",
+      "target": "MCC-1B-2",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 1B-2."
+    },
+    {
+      "source": "MCC-1B-2",
+      "target": "VALVE-MOV163",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1B-2 load branch."
+    },
+    {
+      "source": "MCC-1B-2",
+      "target": "FAN-F164",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1B-2 load branch."
+    },
+    {
+      "source": "BUS-480-1B",
+      "target": "MCC-1B-3",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 1B-3."
+    },
+    {
+      "source": "MCC-1B-3",
+      "target": "HTR-H165",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1B-3 load branch."
+    },
+    {
+      "source": "MCC-1B-3",
+      "target": "VALVE-XV166",
+      "edge_type": "power",
+      "evidence": "Solid MCC 1B-3 load branch."
+    },
+    {
+      "source": "BUS-480-1B",
+      "target": "PNL-1B",
+      "edge_type": "power",
+      "evidence": "Direct solid panel supply drop for 1B."
+    },
+    {
+      "source": "BUS-480-1B",
+      "target": "GND-1B",
+      "edge_type": "ground",
+      "evidence": "Direct solid 480 V ground drop for 1B."
+    },
+    {
+      "source": "BUS-4160-ESF-A",
+      "target": "CB-2A-FDR",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 2A."
+    },
+    {
+      "source": "CB-2A-FDR",
+      "target": "DS-2A-ISO",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 2A."
+    },
+    {
+      "source": "DS-2A-ISO",
+      "target": "TR-2A",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 2A."
+    },
+    {
+      "source": "TR-2A",
+      "target": "CB-2A-MAIN",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 2A."
+    },
+    {
+      "source": "CB-2A-MAIN",
+      "target": "BUS-480-2A",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 2A."
+    },
+    {
+      "source": "BUS-480-2A",
+      "target": "MCC-2A-1",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 2A-1."
+    },
+    {
+      "source": "MCC-2A-1",
+      "target": "PUMP-P201",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2A-1 load branch."
+    },
+    {
+      "source": "MCC-2A-1",
+      "target": "MOTOR-M202",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2A-1 load branch."
+    },
+    {
+      "source": "BUS-480-2A",
+      "target": "MCC-2A-2",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 2A-2."
+    },
+    {
+      "source": "MCC-2A-2",
+      "target": "VALVE-MOV203",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2A-2 load branch."
+    },
+    {
+      "source": "MCC-2A-2",
+      "target": "FAN-F204",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2A-2 load branch."
+    },
+    {
+      "source": "BUS-480-2A",
+      "target": "MCC-2A-3",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 2A-3."
+    },
+    {
+      "source": "MCC-2A-3",
+      "target": "HTR-H205",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2A-3 load branch."
+    },
+    {
+      "source": "MCC-2A-3",
+      "target": "VALVE-XV206",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2A-3 load branch."
+    },
+    {
+      "source": "BUS-480-2A",
+      "target": "PNL-2A",
+      "edge_type": "power",
+      "evidence": "Direct solid panel supply drop for 2A."
+    },
+    {
+      "source": "BUS-480-2A",
+      "target": "GND-2A",
+      "edge_type": "ground",
+      "evidence": "Direct solid 480 V ground drop for 2A."
+    },
+    {
+      "source": "BUS-4160-ESF-A",
+      "target": "CB-2C-FDR",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 2C."
+    },
+    {
+      "source": "CB-2C-FDR",
+      "target": "DS-2C-ISO",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 2C."
+    },
+    {
+      "source": "DS-2C-ISO",
+      "target": "TR-2C",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 2C."
+    },
+    {
+      "source": "TR-2C",
+      "target": "CB-2C-MAIN",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 2C."
+    },
+    {
+      "source": "CB-2C-MAIN",
+      "target": "BUS-480-2C",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 2C."
+    },
+    {
+      "source": "BUS-480-2C",
+      "target": "MCC-2C-1",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 2C-1."
+    },
+    {
+      "source": "MCC-2C-1",
+      "target": "PUMP-P231",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2C-1 load branch."
+    },
+    {
+      "source": "MCC-2C-1",
+      "target": "MOTOR-M232",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2C-1 load branch."
+    },
+    {
+      "source": "BUS-480-2C",
+      "target": "MCC-2C-2",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 2C-2."
+    },
+    {
+      "source": "MCC-2C-2",
+      "target": "VALVE-MOV233",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2C-2 load branch."
+    },
+    {
+      "source": "MCC-2C-2",
+      "target": "FAN-F234",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2C-2 load branch."
+    },
+    {
+      "source": "BUS-480-2C",
+      "target": "MCC-2C-3",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 2C-3."
+    },
+    {
+      "source": "MCC-2C-3",
+      "target": "HTR-H235",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2C-3 load branch."
+    },
+    {
+      "source": "MCC-2C-3",
+      "target": "VALVE-XV236",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2C-3 load branch."
+    },
+    {
+      "source": "BUS-480-2C",
+      "target": "PNL-2C",
+      "edge_type": "power",
+      "evidence": "Direct solid panel supply drop for 2C."
+    },
+    {
+      "source": "BUS-480-2C",
+      "target": "GND-2C",
+      "edge_type": "ground",
+      "evidence": "Direct solid 480 V ground drop for 2C."
+    },
+    {
+      "source": "BUS-4160-ESF-B",
+      "target": "CB-2B-FDR",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 2B."
+    },
+    {
+      "source": "CB-2B-FDR",
+      "target": "DS-2B-ISO",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 2B."
+    },
+    {
+      "source": "DS-2B-ISO",
+      "target": "TR-2B",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 2B."
+    },
+    {
+      "source": "TR-2B",
+      "target": "CB-2B-MAIN",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 2B."
+    },
+    {
+      "source": "CB-2B-MAIN",
+      "target": "BUS-480-2B",
+      "edge_type": "power",
+      "evidence": "Solid feeder chain to 480 V load center 2B."
+    },
+    {
+      "source": "BUS-480-2B",
+      "target": "MCC-2B-1",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 2B-1."
+    },
+    {
+      "source": "MCC-2B-1",
+      "target": "PUMP-P261",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2B-1 load branch."
+    },
+    {
+      "source": "MCC-2B-1",
+      "target": "MOTOR-M262",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2B-1 load branch."
+    },
+    {
+      "source": "BUS-480-2B",
+      "target": "MCC-2B-2",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 2B-2."
+    },
+    {
+      "source": "MCC-2B-2",
+      "target": "VALVE-MOV263",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2B-2 load branch."
+    },
+    {
+      "source": "MCC-2B-2",
+      "target": "FAN-F264",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2B-2 load branch."
+    },
+    {
+      "source": "BUS-480-2B",
+      "target": "MCC-2B-3",
+      "edge_type": "power",
+      "evidence": "Solid bus tap to MCC 2B-3."
+    },
+    {
+      "source": "MCC-2B-3",
+      "target": "HTR-H265",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2B-3 load branch."
+    },
+    {
+      "source": "MCC-2B-3",
+      "target": "VALVE-XV266",
+      "edge_type": "power",
+      "evidence": "Solid MCC 2B-3 load branch."
+    },
+    {
+      "source": "BUS-480-2B",
+      "target": "PNL-2B",
+      "edge_type": "power",
+      "evidence": "Direct solid panel supply drop for 2B."
+    },
+    {
+      "source": "BUS-480-2B",
+      "target": "GND-2B",
+      "edge_type": "ground",
+      "evidence": "Direct solid 480 V ground drop for 2B."
+    },
+    {
+      "source": "BUS-480-2A",
+      "target": "CB-DC-A",
+      "edge_type": "dc",
+      "evidence": "Solid A DC rectifier feed."
+    },
+    {
+      "source": "CB-DC-A",
+      "target": "RECT-125A",
+      "edge_type": "dc",
+      "evidence": "Solid A DC rectifier feed."
+    },
+    {
+      "source": "RECT-125A",
+      "target": "BUS-125DC-A",
+      "edge_type": "dc",
+      "evidence": "Solid A DC rectifier feed."
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "BAT-125A",
+      "edge_type": "dc",
+      "evidence": "Direct solid battery A connection."
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "CHGR-AUX-A",
+      "edge_type": "dc",
+      "evidence": "Direct solid auxiliary charger A drop."
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "INV-1A",
+      "edge_type": "ups",
+      "evidence": "Solid A DC-to-UPS chain."
+    },
+    {
+      "source": "INV-1A",
+      "target": "UPS-1A",
+      "edge_type": "ups",
+      "evidence": "Solid A DC-to-UPS chain."
+    },
+    {
+      "source": "UPS-1A",
+      "target": "CB-UPS-A",
+      "edge_type": "ups",
+      "evidence": "Solid A DC-to-UPS chain."
+    },
+    {
+      "source": "CB-UPS-A",
+      "target": "BUS-120AC-A",
+      "edge_type": "ups",
+      "evidence": "Solid A DC-to-UPS chain."
+    },
+    {
+      "source": "BUS-120AC-A",
+      "target": "PNL-RPS-A",
+      "edge_type": "ups",
+      "evidence": "Direct solid A RPS panel supply."
+    },
+    {
+      "source": "BUS-120AC-A",
+      "target": "FUSE-FU-A",
+      "edge_type": "ups",
+      "evidence": "Direct solid A fuse drop."
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "GND-DC-A",
+      "edge_type": "ground",
+      "evidence": "Direct solid A DC ground drop."
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "CB-DCTIE",
+      "edge_type": "dc",
+      "evidence": "Solid 125 VDC A/B tie breaker path."
+    },
+    {
+      "source": "CB-DCTIE",
+      "target": "BUS-125DC-B",
+      "edge_type": "dc",
+      "evidence": "Solid 125 VDC A/B tie breaker path."
+    },
+    {
+      "source": "BUS-480-2B",
+      "target": "CB-DC-B",
+      "edge_type": "dc",
+      "evidence": "Solid B DC rectifier feed."
+    },
+    {
+      "source": "CB-DC-B",
+      "target": "RECT-125B",
+      "edge_type": "dc",
+      "evidence": "Solid B DC rectifier feed."
+    },
+    {
+      "source": "RECT-125B",
+      "target": "BUS-125DC-B",
+      "edge_type": "dc",
+      "evidence": "Solid B DC rectifier feed."
+    },
+    {
+      "source": "BUS-125DC-B",
+      "target": "BAT-125B",
+      "edge_type": "dc",
+      "evidence": "Direct solid battery B connection."
+    },
+    {
+      "source": "BUS-125DC-B",
+      "target": "CHGR-AUX-B",
+      "edge_type": "dc",
+      "evidence": "Direct solid auxiliary charger B drop."
+    },
+    {
+      "source": "BUS-125DC-B",
+      "target": "INV-1B",
+      "edge_type": "ups",
+      "evidence": "Solid B DC-to-UPS chain."
+    },
+    {
+      "source": "INV-1B",
+      "target": "UPS-1B",
+      "edge_type": "ups",
+      "evidence": "Solid B DC-to-UPS chain."
+    },
+    {
+      "source": "UPS-1B",
+      "target": "CB-UPS-B",
+      "edge_type": "ups",
+      "evidence": "Solid B DC-to-UPS chain."
+    },
+    {
+      "source": "CB-UPS-B",
+      "target": "BUS-120AC-B",
+      "edge_type": "ups",
+      "evidence": "Solid B DC-to-UPS chain."
+    },
+    {
+      "source": "BUS-120AC-B",
+      "target": "PNL-RPS-B",
+      "edge_type": "ups",
+      "evidence": "Direct solid B RPS panel supply."
+    },
+    {
+      "source": "BUS-120AC-B",
+      "target": "FUSE-FU-B",
+      "edge_type": "ups",
+      "evidence": "Direct solid B fuse drop."
+    },
+    {
+      "source": "BUS-125DC-B",
+      "target": "GND-DC-B",
+      "edge_type": "ground",
+      "evidence": "Direct solid B DC ground drop."
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "DC-DC-1",
+      "edge_type": "dc",
+      "evidence": "Solid DC/DC converter to 24 VDC bus."
+    },
+    {
+      "source": "DC-DC-1",
+      "target": "BUS-24DC-C",
+      "edge_type": "dc",
+      "evidence": "Solid DC/DC converter to 24 VDC bus."
+    },
+    {
+      "source": "BUS-24DC-C",
+      "target": "BAT-24C",
+      "edge_type": "dc",
+      "evidence": "Direct solid 24 VDC battery connection."
+    },
+    {
+      "source": "BUS-24DC-C",
+      "target": "PNL-RADMON",
+      "edge_type": "dc",
+      "evidence": "Direct solid radiation monitor panel supply."
+    },
+    {
+      "source": "BUS-24DC-C",
+      "target": "PNL-DCS-A",
+      "edge_type": "dc",
+      "evidence": "Direct solid 24 VDC panel supply accepted by Jennifer."
+    },
+    {
+      "source": "BUS-24DC-C",
+      "target": "PNL-DCS-B",
+      "edge_type": "dc",
+      "evidence": "Direct solid 24 VDC panel supply accepted by Jennifer."
+    }
+  ],
+  "validation": {
+    "symmetric": true,
+    "diagonal_zero": true
+  }
+}

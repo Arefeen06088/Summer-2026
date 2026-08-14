@@ -1,0 +1,7 @@
+timestamp,case,round,agent,role,approx_prompt_tokens,approx_completion_tokens,matrix_nodes,matrix_edges,output_artifact,notes
+2026-07-14T09:29:26,23,local,main,inventory/crops/local inspection,2800,760,200,201,codes/crops,Approximate tokens; exact tool token accounting unavailable
+2026-07-14T09:29:26,23,round_01,Diego,high-recall extraction,6600,2600,201,228,round_01_diego_matrix.csv,"Broad graph with ESF source candidates, broad relay/JB clusters, and broad RPS/common bus candidates"
+2026-07-14T09:29:26,23,round_02,Jennifer,precision review,7600,2700,200,201,round_02_jennifer_matrix.csv,"Removed AUX METERING BUS, fixed 1A/1B feeders, narrowed relay/JB and RPS control edges; still had provisional INST-x--GND-x"
+2026-07-14T09:29:26,23,round_03,Diego,saturation/high-recall check,3200,600,200,201,round_03_diego_saturation_matrix.csv,Corrected each load-center ground as BUS-480-x--GND-x rather than INST-x--GND-x
+2026-07-14T09:29:26,23,round_04,Jennifer,final precision lock,2400,520,200,201,round_04_jennifer_final_matrix.csv,Final precision lock of Diego-corrected graph
+2026-07-14T09:29:26,23,local,main,artifact generation/validation,2100,420,200,201,final_connectivity_matrix.csv,"Symmetric matrix, zero diagonal"

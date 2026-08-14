@@ -1,0 +1,200 @@
+source,target,type,evidence
+OFFSITE-GRID-1,DS-101,power,raw_17/top-left: vertical solid feeder from OFFSITE GRID-1 to DS-101
+DS-101,CB-101,power,raw_17/top-left: DS-101 stacked directly above CB-101 on same solid drop
+CB-101,TR-101,power,raw_17/top-left: CB-101 stacked directly above TR-101 on same solid drop
+TR-101,BUS-4160-A,power,raw_17/top-left: TR-101 bottom ties into horizontal BUS-4160-A
+DG-1,CB-DG1,power,raw_17/top-left: DG-1 vertical solid feeder to CB-DG1
+CB-DG1,BUS-4160-A,power,raw_17/top-left: CB-DG1 vertical drop lands on BUS-4160-A junction dot
+BUS-4160-A,PT-4160A,signal,raw_01/top bus: PT-4160A dashed vertical tap to BUS-4160-A junction dot
+BUS-4160-A,CB-201,power,raw_17/top-left: BUS-4160-A solid vertical drop to CB-201
+CB-201,TR-480-A,power,raw_17/top-left: CB-201 stacked over TR-480-A on solid feeder
+TR-480-A,CB-480-A,power,raw_17/top-left: TR-480-A stacked over CB-480-A on solid feeder
+CB-480-A,BUS-480-A,power,raw_17/top-left/raw_01: CB-480-A lower solid drop reaches BUS-480-A
+BUS-4160-A,CB-TIE-4160,tie,raw_18/top-center: left BUS-4160-A terminates into CB-TIE-4160
+CB-TIE-4160,BUS-4160-B,tie,raw_18/top-center: CB-TIE-4160 exits to right BUS-4160-B
+OFFSITE-GRID-2,DS-102,power,raw_19/top-right: vertical solid feeder from OFFSITE GRID-2 to DS-102
+DS-102,CB-102,power,raw_19/top-right: DS-102 stacked directly above CB-102 on same solid drop
+CB-102,TR-102,power,raw_19/top-right: CB-102 stacked directly above TR-102 on same solid drop
+TR-102,BUS-4160-B,power,raw_19/top-right: TR-102 bottom ties into horizontal BUS-4160-B
+DG-2,CB-DG2,power,raw_19/top-right: DG-2 vertical solid feeder to CB-DG2
+CB-DG2,BUS-4160-B,power,raw_19/top-right: CB-DG2 vertical drop lands on BUS-4160-B junction dot
+BUS-4160-B,PT-4160B,signal,raw_19/top-right: PT-4160B dashed vertical tap to BUS-4160-B junction dot
+BUS-4160-B,CB-202,power,raw_19/top-right: BUS-4160-B solid vertical drop to CB-202
+CB-202,TR-480-B,power,raw_19/top-right: CB-202 stacked over TR-480-B on solid feeder
+TR-480-B,CB-480-B,power,raw_19/top-right: TR-480-B stacked over CB-480-B on solid feeder
+CB-480-B,BUS-480-B,power,raw_19/top-right/raw_01: CB-480-B lower solid drop reaches BUS-480-B
+BUS-480-A,CB-TIE-480,tie,raw_18/raw_20: BUS-480-A enters CB-TIE-480 from left
+CB-TIE-480,BUS-480-B,tie,raw_18/raw_20: CB-TIE-480 exits to BUS-480-B at right junction
+BUS-480-A,CB-F201,power,raw_21/raw_27 RHR pump A module: vertical solid feeder from BUS-480-A to CB-F201
+CB-F201,RELAY-PR201,control,raw_21/raw_27 RHR pump A module: dashed protection/control lead from CB-F201 to RELAY-PR201
+CB-F201,DS-F201,power,raw_21/raw_27 RHR pump A module: solid drop from CB-F201 to DS-F201
+DS-F201,CPT-201,power,raw_21/raw_27 RHR pump A module: solid drop from DS-F201 to CPT-201
+CPT-201,MCC-201,power,raw_21/raw_27 RHR pump A module: solid drop from CPT-201 to MCC-201
+MCC-201,CB-L201,power,raw_21/raw_27 RHR pump A module: solid drop from MCC-201 to CB-L201
+MCC-201,RELAY-A201,control,raw_21/raw_27 RHR pump A module: dashed side control lead from MCC-201 to RELAY-A201
+CB-L201,RELAY-K201,power,raw_21/raw_27 RHR pump A module: solid drop from CB-L201 to RELAY-K201
+RELAY-K201,PUMP-P201,power,raw_21/raw_27 RHR pump A module: solid drop from RELAY-K201 to PUMP-P201
+PUMP-P201,INST-201,signal,raw_21/raw_27 RHR pump A module: dotted signal lead from PUMP-P201 to INST-201
+INST-201,JB-201,signal,raw_21/raw_27 RHR pump A module: dotted vertical signal lead from INST-201 to JB-201
+JB-201,TB-201,signal,raw_21/raw_27 RHR pump A module: dotted vertical signal lead from JB-201 to TB-201
+TB-201,LCS-201,control,raw_21/raw_27 RHR pump A module: dashed horizontal control lead between TB-201 and LCS-201
+BUS-480-A,CB-F203,power,raw_21/raw_27 core spray A module: vertical solid feeder from BUS-480-A to CB-F203
+CB-F203,RELAY-PR203,control,raw_21/raw_27 core spray A module: dashed protection/control lead from CB-F203 to RELAY-PR203
+CB-F203,DS-F203,power,raw_21/raw_27 core spray A module: solid drop from CB-F203 to DS-F203
+DS-F203,CPT-203,power,raw_21/raw_27 core spray A module: solid drop from DS-F203 to CPT-203
+CPT-203,MCC-203,power,raw_21/raw_27 core spray A module: solid drop from CPT-203 to MCC-203
+MCC-203,CB-L203,power,raw_21/raw_27 core spray A module: solid drop from MCC-203 to CB-L203
+MCC-203,RELAY-A203,control,raw_21/raw_27 core spray A module: dashed side control lead from MCC-203 to RELAY-A203
+CB-L203,RELAY-K203,power,raw_21/raw_27 core spray A module: solid drop from CB-L203 to RELAY-K203
+RELAY-K203,PUMP-P203,power,raw_21/raw_27 core spray A module: solid drop from RELAY-K203 to PUMP-P203
+PUMP-P203,INST-203,signal,raw_21/raw_27 core spray A module: dotted signal lead from PUMP-P203 to INST-203
+INST-203,JB-203,signal,raw_21/raw_27 core spray A module: dotted vertical signal lead from INST-203 to JB-203
+JB-203,TB-203,signal,raw_21/raw_27 core spray A module: dotted vertical signal lead from JB-203 to TB-203
+TB-203,LCS-203,control,raw_21/raw_27 core spray A module: dashed horizontal control lead between TB-203 and LCS-203
+BUS-480-A,CB-F301,power,raw_22/raw_27 CCW pump A module: vertical solid feeder from BUS-480-A to CB-F301
+CB-F301,RELAY-PR301,control,raw_22/raw_27 CCW pump A module: dashed protection/control lead from CB-F301 to RELAY-PR301
+CB-F301,DS-F301,power,raw_22/raw_27 CCW pump A module: solid drop from CB-F301 to DS-F301
+DS-F301,CPT-301,power,raw_22/raw_27 CCW pump A module: solid drop from DS-F301 to CPT-301
+CPT-301,MCC-301,power,raw_22/raw_27 CCW pump A module: solid drop from CPT-301 to MCC-301
+MCC-301,CB-L301,power,raw_22/raw_27 CCW pump A module: solid drop from MCC-301 to CB-L301
+MCC-301,RELAY-A301,control,raw_22/raw_27 CCW pump A module: dashed side control lead from MCC-301 to RELAY-A301
+CB-L301,RELAY-K301,power,raw_22/raw_27 CCW pump A module: solid drop from CB-L301 to RELAY-K301
+RELAY-K301,PUMP-P301,power,raw_22/raw_27 CCW pump A module: solid drop from RELAY-K301 to PUMP-P301
+PUMP-P301,INST-301,signal,raw_22/raw_27 CCW pump A module: dotted signal lead from PUMP-P301 to INST-301
+INST-301,JB-301,signal,raw_22/raw_27 CCW pump A module: dotted vertical signal lead from INST-301 to JB-301
+JB-301,TB-301,signal,raw_22/raw_27 CCW pump A module: dotted vertical signal lead from JB-301 to TB-301
+TB-301,LCS-301,control,raw_22/raw_27 CCW pump A module: dashed horizontal control lead between TB-301 and LCS-301
+BUS-480-A,CB-F401,power,raw_22/raw_27 service water A module: vertical solid feeder from BUS-480-A to CB-F401
+CB-F401,RELAY-PR401,control,raw_22/raw_27 service water A module: dashed protection/control lead from CB-F401 to RELAY-PR401
+CB-F401,DS-F401,power,raw_22/raw_27 service water A module: solid drop from CB-F401 to DS-F401
+DS-F401,CPT-401,power,raw_22/raw_27 service water A module: solid drop from DS-F401 to CPT-401
+CPT-401,MCC-401,power,raw_22/raw_27 service water A module: solid drop from CPT-401 to MCC-401
+MCC-401,CB-L401,power,raw_22/raw_27 service water A module: solid drop from MCC-401 to CB-L401
+MCC-401,RELAY-A401,control,raw_22/raw_27 service water A module: dashed side control lead from MCC-401 to RELAY-A401
+CB-L401,RELAY-K401,power,raw_22/raw_27 service water A module: solid drop from CB-L401 to RELAY-K401
+RELAY-K401,PUMP-P401,power,raw_22/raw_27 service water A module: solid drop from RELAY-K401 to PUMP-P401
+PUMP-P401,INST-401,signal,raw_22/raw_27 service water A module: dotted signal lead from PUMP-P401 to INST-401
+INST-401,JB-401,signal,raw_22/raw_27 service water A module: dotted vertical signal lead from INST-401 to JB-401
+JB-401,TB-401,signal,raw_22/raw_27 service water A module: dotted vertical signal lead from JB-401 to TB-401
+TB-401,LCS-401,control,raw_22/raw_27 service water A module: dashed horizontal control lead between TB-401 and LCS-401
+BUS-480-A,CB-F501,power,raw_23/raw_27 containment fan cooler A module: vertical solid feeder from BUS-480-A to CB-F501
+CB-F501,RELAY-PR501,control,raw_23/raw_27 containment fan cooler A module: dashed protection/control lead from CB-F501 to RELAY-PR501
+CB-F501,DS-F501,power,raw_23/raw_27 containment fan cooler A module: solid drop from CB-F501 to DS-F501
+DS-F501,CPT-501,power,raw_23/raw_27 containment fan cooler A module: solid drop from DS-F501 to CPT-501
+CPT-501,MCC-501,power,raw_23/raw_27 containment fan cooler A module: solid drop from CPT-501 to MCC-501
+MCC-501,CB-L501,power,raw_23/raw_27 containment fan cooler A module: solid drop from MCC-501 to CB-L501
+MCC-501,RELAY-A501,control,raw_23/raw_27 containment fan cooler A module: dashed side control lead from MCC-501 to RELAY-A501
+CB-L501,RELAY-K501,power,raw_23/raw_27 containment fan cooler A module: solid drop from CB-L501 to RELAY-K501
+RELAY-K501,MTR-F501,power,raw_23/raw_27 containment fan cooler A module: solid drop from RELAY-K501 to MTR-F501
+MTR-F501,INST-501,signal,raw_23/raw_27 containment fan cooler A module: dotted signal lead from MTR-F501 to INST-501
+INST-501,JB-501,signal,raw_23/raw_27 containment fan cooler A module: dotted vertical signal lead from INST-501 to JB-501
+JB-501,TB-501,signal,raw_23/raw_27 containment fan cooler A module: dotted vertical signal lead from JB-501 to TB-501
+TB-501,LCS-501,control,raw_23/raw_27 containment fan cooler A module: dashed horizontal control lead between TB-501 and LCS-501
+BUS-480-B,CB-F202,power,raw_24/raw_28 RHR pump B module: vertical solid feeder from BUS-480-B to CB-F202
+CB-F202,RELAY-PR202,control,raw_24/raw_28 RHR pump B module: dashed protection/control lead from CB-F202 to RELAY-PR202
+CB-F202,DS-F202,power,raw_24/raw_28 RHR pump B module: solid drop from CB-F202 to DS-F202
+DS-F202,CPT-202,power,raw_24/raw_28 RHR pump B module: solid drop from DS-F202 to CPT-202
+CPT-202,MCC-202,power,raw_24/raw_28 RHR pump B module: solid drop from CPT-202 to MCC-202
+MCC-202,CB-L202,power,raw_24/raw_28 RHR pump B module: solid drop from MCC-202 to CB-L202
+MCC-202,RELAY-A202,control,raw_24/raw_28 RHR pump B module: dashed side control lead from MCC-202 to RELAY-A202
+CB-L202,RELAY-K202,power,raw_24/raw_28 RHR pump B module: solid drop from CB-L202 to RELAY-K202
+RELAY-K202,PUMP-P202,power,raw_24/raw_28 RHR pump B module: solid drop from RELAY-K202 to PUMP-P202
+PUMP-P202,INST-202,signal,raw_24/raw_28 RHR pump B module: dotted signal lead from PUMP-P202 to INST-202
+INST-202,JB-202,signal,raw_24/raw_28 RHR pump B module: dotted vertical signal lead from INST-202 to JB-202
+JB-202,TB-202,signal,raw_24/raw_28 RHR pump B module: dotted vertical signal lead from JB-202 to TB-202
+TB-202,LCS-202,control,raw_24/raw_28 RHR pump B module: dashed horizontal control lead between TB-202 and LCS-202
+BUS-480-B,CB-F204,power,raw_24/raw_28 core spray B module: vertical solid feeder from BUS-480-B to CB-F204
+CB-F204,RELAY-PR204,control,raw_24/raw_28 core spray B module: dashed protection/control lead from CB-F204 to RELAY-PR204
+CB-F204,DS-F204,power,raw_24/raw_28 core spray B module: solid drop from CB-F204 to DS-F204
+DS-F204,CPT-204,power,raw_24/raw_28 core spray B module: solid drop from DS-F204 to CPT-204
+CPT-204,MCC-204,power,raw_24/raw_28 core spray B module: solid drop from CPT-204 to MCC-204
+MCC-204,CB-L204,power,raw_24/raw_28 core spray B module: solid drop from MCC-204 to CB-L204
+MCC-204,RELAY-A204,control,raw_24/raw_28 core spray B module: dashed side control lead from MCC-204 to RELAY-A204
+CB-L204,RELAY-K204,power,raw_24/raw_28 core spray B module: solid drop from CB-L204 to RELAY-K204
+RELAY-K204,PUMP-P204,power,raw_24/raw_28 core spray B module: solid drop from RELAY-K204 to PUMP-P204
+PUMP-P204,INST-204,signal,raw_24/raw_28 core spray B module: dotted signal lead from PUMP-P204 to INST-204
+INST-204,JB-204,signal,raw_24/raw_28 core spray B module: dotted vertical signal lead from INST-204 to JB-204
+JB-204,TB-204,signal,raw_24/raw_28 core spray B module: dotted vertical signal lead from JB-204 to TB-204
+TB-204,LCS-204,control,raw_24/raw_28 core spray B module: dashed horizontal control lead between TB-204 and LCS-204
+BUS-480-B,CB-F302,power,raw_25/raw_28 CCW pump B module: vertical solid feeder from BUS-480-B to CB-F302
+CB-F302,RELAY-PR302,control,raw_25/raw_28 CCW pump B module: dashed protection/control lead from CB-F302 to RELAY-PR302
+CB-F302,DS-F302,power,raw_25/raw_28 CCW pump B module: solid drop from CB-F302 to DS-F302
+DS-F302,CPT-302,power,raw_25/raw_28 CCW pump B module: solid drop from DS-F302 to CPT-302
+CPT-302,MCC-302,power,raw_25/raw_28 CCW pump B module: solid drop from CPT-302 to MCC-302
+MCC-302,CB-L302,power,raw_25/raw_28 CCW pump B module: solid drop from MCC-302 to CB-L302
+MCC-302,RELAY-A302,control,raw_25/raw_28 CCW pump B module: dashed side control lead from MCC-302 to RELAY-A302
+CB-L302,RELAY-K302,power,raw_25/raw_28 CCW pump B module: solid drop from CB-L302 to RELAY-K302
+RELAY-K302,PUMP-P302,power,raw_25/raw_28 CCW pump B module: solid drop from RELAY-K302 to PUMP-P302
+PUMP-P302,INST-302,signal,raw_25/raw_28 CCW pump B module: dotted signal lead from PUMP-P302 to INST-302
+INST-302,JB-302,signal,raw_25/raw_28 CCW pump B module: dotted vertical signal lead from INST-302 to JB-302
+JB-302,TB-302,signal,raw_25/raw_28 CCW pump B module: dotted vertical signal lead from JB-302 to TB-302
+TB-302,LCS-302,control,raw_25/raw_28 CCW pump B module: dashed horizontal control lead between TB-302 and LCS-302
+BUS-480-B,CB-F402,power,raw_25/raw_28 service water B module: vertical solid feeder from BUS-480-B to CB-F402
+CB-F402,RELAY-PR402,control,raw_25/raw_28 service water B module: dashed protection/control lead from CB-F402 to RELAY-PR402
+CB-F402,DS-F402,power,raw_25/raw_28 service water B module: solid drop from CB-F402 to DS-F402
+DS-F402,CPT-402,power,raw_25/raw_28 service water B module: solid drop from DS-F402 to CPT-402
+CPT-402,MCC-402,power,raw_25/raw_28 service water B module: solid drop from CPT-402 to MCC-402
+MCC-402,CB-L402,power,raw_25/raw_28 service water B module: solid drop from MCC-402 to CB-L402
+MCC-402,RELAY-A402,control,raw_25/raw_28 service water B module: dashed side control lead from MCC-402 to RELAY-A402
+CB-L402,RELAY-K402,power,raw_25/raw_28 service water B module: solid drop from CB-L402 to RELAY-K402
+RELAY-K402,PUMP-P402,power,raw_25/raw_28 service water B module: solid drop from RELAY-K402 to PUMP-P402
+PUMP-P402,INST-402,signal,raw_25/raw_28 service water B module: dotted signal lead from PUMP-P402 to INST-402
+INST-402,JB-402,signal,raw_25/raw_28 service water B module: dotted vertical signal lead from INST-402 to JB-402
+JB-402,TB-402,signal,raw_25/raw_28 service water B module: dotted vertical signal lead from JB-402 to TB-402
+TB-402,LCS-402,control,raw_25/raw_28 service water B module: dashed horizontal control lead between TB-402 and LCS-402
+BUS-480-B,CB-F502,power,raw_26/raw_28 containment fan cooler B module: vertical solid feeder from BUS-480-B to CB-F502
+CB-F502,RELAY-PR502,control,raw_26/raw_28 containment fan cooler B module: dashed protection/control lead from CB-F502 to RELAY-PR502
+CB-F502,DS-F502,power,raw_26/raw_28 containment fan cooler B module: solid drop from CB-F502 to DS-F502
+DS-F502,CPT-502,power,raw_26/raw_28 containment fan cooler B module: solid drop from DS-F502 to CPT-502
+CPT-502,MCC-502,power,raw_26/raw_28 containment fan cooler B module: solid drop from CPT-502 to MCC-502
+MCC-502,CB-L502,power,raw_26/raw_28 containment fan cooler B module: solid drop from MCC-502 to CB-L502
+MCC-502,RELAY-A502,control,raw_26/raw_28 containment fan cooler B module: dashed side control lead from MCC-502 to RELAY-A502
+CB-L502,RELAY-K502,power,raw_26/raw_28 containment fan cooler B module: solid drop from CB-L502 to RELAY-K502
+RELAY-K502,MTR-F502,power,raw_26/raw_28 containment fan cooler B module: solid drop from RELAY-K502 to MTR-F502
+MTR-F502,INST-502,signal,raw_26/raw_28 containment fan cooler B module: dotted signal lead from MTR-F502 to INST-502
+INST-502,JB-502,signal,raw_26/raw_28 containment fan cooler B module: dotted vertical signal lead from INST-502 to JB-502
+JB-502,TB-502,signal,raw_26/raw_28 containment fan cooler B module: dotted vertical signal lead from JB-502 to TB-502
+TB-502,LCS-502,control,raw_26/raw_28 containment fan cooler B module: dashed horizontal control lead between TB-502 and LCS-502
+BUS-480-A,CB-F601,power,raw_23/main: vertical solid feeder from BUS-480-A to CB-F601
+CB-F601,RELAY-PR601,control,raw_23: dashed protection/control lead from CB-F601 to RELAY-PR601
+CB-F601,DS-F601,power,raw_23: solid drop from CB-F601 to DS-F601
+DS-F601,CPT-601,power,raw_23: solid drop from DS-F601 to CPT-601
+CPT-601,MCC-601,power,raw_23: solid drop from CPT-601 to MCC-601
+MCC-601,CB-L601,power,raw_23: solid drop from MCC-601 to CB-L601
+MCC-601,RELAY-A601,control,raw_23: dashed side control lead from MCC-601 to RELAY-A601
+CB-L601,RELAY-K601,power,raw_23: solid drop from CB-L601 to RELAY-K601
+RELAY-K601,VALVE-MOV601,power,raw_23: solid drop from RELAY-K601 to VALVE-MOV601
+VALVE-MOV601,INST-601,signal,raw_23: dotted signal lead from VALVE-MOV601 toward INST-601
+LS-MOV601,JB-601,signal,raw_23/raw_27: dotted vertical signal lead from LS-MOV601 area down to JB-601
+JB-601,TB-601,signal,raw_27: dotted vertical signal lead from JB-601 to TB-601
+TB-601,LCS-601,control,raw_27: dashed horizontal control lead between TB-601 and LCS-601
+BUS-480-B,CB-F701,power,raw_26/main: vertical solid feeder from BUS-480-B to CB-F701
+CB-F701,RELAY-PR701,control,raw_26: dashed protection/control lead from CB-F701 to RELAY-PR701
+CB-F701,DS-F701,power,raw_26: solid drop from CB-F701 to DS-F701
+DS-F701,CPT-701,power,raw_26: solid drop from DS-F701 to CPT-701
+CPT-701,MCC-701,power,raw_26: solid drop from CPT-701 to MCC-701
+MCC-701,CB-L701,power,raw_26: solid drop from MCC-701 to CB-L701
+MCC-701,RELAY-A701,control,raw_26: dashed side control lead from MCC-701 to RELAY-A701
+CB-L701,RELAY-K701,power,raw_26: solid drop from CB-L701 to RELAY-K701
+RELAY-K701,INST-RPS701,power,raw_26: solid drop from RELAY-K701 to INST-RPS701
+INST-RPS701,INST-701,signal,raw_26: dotted signal lead from INST-RPS701 to INST-701
+INST-701,JB-701,signal,raw_26/raw_28: dotted vertical signal lead from INST-701 to JB-701
+JB-701,TB-701,signal,raw_28: dotted vertical signal lead from JB-701 to TB-701
+TB-701,LCS-701,control,raw_28: dashed horizontal control lead between TB-701 and LCS-701
+CONTROL-POWER-DC-DISTRIBUTION-A,CB-301,power,raw_10/raw_29: CB-301 hangs from left control power/DC distribution route
+CB-301,TR-120-A,power,raw_10/raw_29: CB-301 stacked above TR-120-A on solid feeder
+TR-120-A,BUS-120AC-A,power,raw_10/raw_29: TR-120-A lower drop lands on BUS-120AC-A junction
+BUS-120AC-A,JB-MAIN,signal,raw_10/raw_29: dashed/dotted vertical tap from BUS-120AC-A to JB-MAIN
+CONTROL-POWER-DC-DISTRIBUTION-A,CHGR-125A,power,raw_10/raw_29: CHGR-125A fed from upper control power/DC distribution route
+CHGR-125A,BAT-125A,dc_power,raw_10/raw_29: solid vertical from CHGR-125A to BAT-125A
+BAT-125A,BUS-125DC-A,dc_power,raw_10/raw_29: BAT-125A solid lower lead lands on BUS-125DC-A junction
+BUS-125DC-A,INV-120A,dc_power,raw_10/raw_29: INV-120A solid vertical lead lands on BUS-125DC-A junction
+INV-120A,PN-RPS-A,signal,raw_10/raw_29: dashed lead from INV-120A to PN-RPS-A
+CONTROL-POWER-DC-DISTRIBUTION-B,CB-302,power,raw_11/raw_30: CB-302 hangs from right control power/DC distribution route
+CB-302,TR-120-B,power,raw_11/raw_30: CB-302 stacked above TR-120-B on solid feeder
+TR-120-B,BUS-120AC-B,power,raw_11/raw_30: TR-120-B lower drop lands on BUS-120AC-B junction
+CONTROL-POWER-DC-DISTRIBUTION-B,CHGR-125B,power,raw_11/raw_30: CHGR-125B fed from upper control power/DC distribution route
+CHGR-125B,BAT-125B,dc_power,raw_11/raw_30: solid vertical from CHGR-125B to BAT-125B
+BAT-125B,BUS-125DC-B,dc_power,raw_11/raw_30: BAT-125B solid lower lead lands on BUS-125DC-B junction
+BUS-125DC-B,INV-120B,dc_power,raw_11/raw_30: INV-120B solid vertical lead lands on BUS-125DC-B junction
+INV-120B,PN-RPS-B,signal,raw_11/raw_30: dashed lead from INV-120B to PN-RPS-B

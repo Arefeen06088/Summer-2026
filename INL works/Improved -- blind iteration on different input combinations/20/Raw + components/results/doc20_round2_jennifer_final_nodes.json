@@ -1,0 +1,1220 @@
+{
+  "document": 20,
+  "iteration": 1,
+  "round": "jennifer_round2_final",
+  "role": "precision_reviewer_final",
+  "final_status": "agreed_saturated",
+  "review_notes": [
+    "Final precision confirmation used only Doc20 Raw + components resources plus Diego round 2 and Jennifer round 1 review files; no GT, GT-derived files, Raw+wires folders, OCR engines, or outside resources used.",
+    "Diego round 2 agrees with Jennifer round 1: 200 nodes, 202 asserted direct drawn edges, no additions, no removals, and no label corrections.",
+    "Saturated matrix retains direct-edge semantics: buses connect only to visibly tapped breaker/device/feeder endpoints, not to every same-net component.",
+    "480 VAC tie remains BUS-480-B/480 VAC LOAD CENTER B to CB-TIE-480 to BUS-480-C/480 VAC LOAD CENTER C; no direct B-C or CB-TIE-480-to-CB-48C1 edge is asserted.",
+    "DC source groups remain BAT to CHGR to RECT, rectifier to the 125 VDC control bus, and 125 VDC bus to INV; charger-to-bus shortcuts remain unasserted.",
+    "Dashed control/interlock and dot-dash instrumentation paths are endpoint-specific; the four ambiguous candidates remain uncertain and outside the matrix.",
+    "Final matrix was validated as symmetric 0/1 with diagonal 0 and edge set exactly equal to asserted_edges."
+  ],
+  "nodes": [
+    {
+      "id": "13.8 KV SAFETY BUS A",
+      "kind": "bus",
+      "evidence": "raw_01 top bus label; wire tag BUS-13K-A on same bus"
+    },
+    {
+      "id": "13.8 KV SAFETY BUS B",
+      "kind": "bus",
+      "evidence": "raw_01 top bus label; wire tag BUS-13K-B on same bus"
+    },
+    {
+      "id": "4.16 KV CLASS 1E BUS A",
+      "kind": "bus",
+      "evidence": "raw_01 middle bus label; wire tag BUS-416-A"
+    },
+    {
+      "id": "4.16 KV CLASS 1E BUS B",
+      "kind": "bus",
+      "evidence": "raw_01 middle bus label; wire tag BUS-416-B"
+    },
+    {
+      "id": "480 VAC LOAD CENTER A",
+      "kind": "bus",
+      "evidence": "raw_05/raw_21 horizontal bus label; wire tag BUS-480-A"
+    },
+    {
+      "id": "480 VAC LOAD CENTER B",
+      "kind": "bus",
+      "evidence": "raw_05/raw_22 horizontal bus label; wire tag BUS-480-B"
+    },
+    {
+      "id": "480 VAC LOAD CENTER C",
+      "kind": "bus",
+      "evidence": "raw_05/raw_23 horizontal bus label; wire tag BUS-480-C"
+    },
+    {
+      "id": "480 VAC LOAD CENTER D",
+      "kind": "bus",
+      "evidence": "raw_05/raw_24 horizontal bus label; wire tag BUS-480-D"
+    },
+    {
+      "id": "125 VDC CONTROL BUS A",
+      "kind": "bus",
+      "evidence": "raw_10 lower left horizontal bus label; wire tag BUS-125DCA"
+    },
+    {
+      "id": "125 VDC CONTROL BUS B",
+      "kind": "bus",
+      "evidence": "raw_10 lower right horizontal bus label; wire tag BUS-125DCB"
+    },
+    {
+      "id": "GEN-M1",
+      "kind": "source",
+      "evidence": "raw_16_close_a_source_chain_2x.png top-left generator source"
+    },
+    {
+      "id": "CB-GEN1",
+      "kind": "breaker",
+      "evidence": "raw_16_close_a_source_chain_2x.png between GEN-M1 and TR-UAT1"
+    },
+    {
+      "id": "TR-UAT1",
+      "kind": "transformer",
+      "evidence": "raw_16_close_a_source_chain_2x.png top-left transformer"
+    },
+    {
+      "id": "CB-13A-IN",
+      "kind": "breaker",
+      "evidence": "raw_16_close_a_source_chain_2x.png vertical tap to 13.8 kV Bus A"
+    },
+    {
+      "id": "CB-F41A",
+      "kind": "breaker",
+      "evidence": "raw_16_close_a_source_chain_2x.png lower feeder from 13.8 kV Bus A"
+    },
+    {
+      "id": "DS-F41A",
+      "kind": "disconnect",
+      "evidence": "raw_16_close_a_source_chain_2x.png between CB-F41A and TR-416A"
+    },
+    {
+      "id": "TR-416A",
+      "kind": "transformer",
+      "evidence": "raw_16/raw_17 close crops, feeder transformer to 4.16 kV Bus A"
+    },
+    {
+      "id": "CB-416A-IN",
+      "kind": "breaker",
+      "evidence": "raw_17_close_a_4160_to_480_2x.png transformer output to 4.16 kV Bus A"
+    },
+    {
+      "id": "DG-1A",
+      "kind": "source",
+      "evidence": "raw_17_close_a_4160_to_480_2x.png diesel generator A"
+    },
+    {
+      "id": "CB-DG1A",
+      "kind": "breaker",
+      "evidence": "raw_17/raw_18 close crops, DG-1A breaker to 4.16 kV Bus A"
+    },
+    {
+      "id": "CB-TIE-13K",
+      "kind": "breaker",
+      "evidence": "raw_18_close_mid_13kv_4160_ties_2x.png tie between 13.8 kV buses"
+    },
+    {
+      "id": "CB-TIE-416",
+      "kind": "breaker",
+      "evidence": "raw_18_close_mid_13kv_4160_ties_2x.png normally open 4.16 kV bus tie"
+    },
+    {
+      "id": "FEED-230A",
+      "kind": "source",
+      "evidence": "raw_01/raw_19 top-right incoming feed block"
+    },
+    {
+      "id": "TR-SAT1",
+      "kind": "transformer",
+      "evidence": "raw_19_close_b_source_chain_2x.png top-right station transformer"
+    },
+    {
+      "id": "CB-13B-IN",
+      "kind": "breaker",
+      "evidence": "raw_19_close_b_source_chain_2x.png vertical tap to 13.8 kV Bus B"
+    },
+    {
+      "id": "CB-F41B",
+      "kind": "breaker",
+      "evidence": "raw_18/raw_19 close crops, feeder from 13.8 kV Bus B"
+    },
+    {
+      "id": "DS-F41B",
+      "kind": "disconnect",
+      "evidence": "raw_18_close_mid_13kv_4160_ties_2x.png between CB-F41B and TR-416B"
+    },
+    {
+      "id": "TR-416B",
+      "kind": "transformer",
+      "evidence": "raw_18/raw_19 close crops, feeder transformer to 4.16 kV Bus B"
+    },
+    {
+      "id": "CB-416B-IN",
+      "kind": "breaker",
+      "evidence": "raw_19_close_b_source_chain_2x.png transformer output to 4.16 kV Bus B"
+    },
+    {
+      "id": "DG-1B",
+      "kind": "source",
+      "evidence": "raw_19_close_b_source_chain_2x.png diesel generator B"
+    },
+    {
+      "id": "CB-DG1B",
+      "kind": "breaker",
+      "evidence": "raw_19_close_b_source_chain_2x.png DG-1B breaker to 4.16 kV Bus B"
+    },
+    {
+      "id": "CB-LCA",
+      "kind": "breaker",
+      "evidence": "raw_01/raw_05 left 4.16-to-480 feeder A"
+    },
+    {
+      "id": "TR-480A",
+      "kind": "transformer",
+      "evidence": "raw_05 top of Load Center A"
+    },
+    {
+      "id": "CB-LCB",
+      "kind": "breaker",
+      "evidence": "raw_17_close_a_4160_to_480_2x.png 4.16-to-480 feeder B"
+    },
+    {
+      "id": "TR-480B",
+      "kind": "transformer",
+      "evidence": "raw_17/raw_05 top of Load Center B"
+    },
+    {
+      "id": "CB-LCC",
+      "kind": "breaker",
+      "evidence": "raw_01/raw_05 feeder to Load Center C"
+    },
+    {
+      "id": "TR-480C",
+      "kind": "transformer",
+      "evidence": "raw_05/raw_20 top of Load Center C"
+    },
+    {
+      "id": "CB-LCD",
+      "kind": "breaker",
+      "evidence": "raw_01/raw_05 feeder to Load Center D"
+    },
+    {
+      "id": "TR-480D",
+      "kind": "transformer",
+      "evidence": "raw_05 top of Load Center D"
+    },
+    {
+      "id": "CB-TIE-480",
+      "kind": "breaker",
+      "evidence": "raw_20_close_480_tie_2x.png 480 V tie between Load Centers B and C"
+    },
+    {
+      "id": "CB-48A1",
+      "kind": "breaker",
+      "evidence": "raw_21_close_loads_a1_2x.png; branch breaker CB-48A1"
+    },
+    {
+      "id": "DS-48A1",
+      "kind": "disconnect",
+      "evidence": "raw_21_close_loads_a1_2x.png; disconnect DS-48A1"
+    },
+    {
+      "id": "MCC-1A",
+      "kind": "panel",
+      "evidence": "raw_21_close_loads_a1_2x.png; downstream cabinet/block MCC-1A"
+    },
+    {
+      "id": "RELAY-K1A",
+      "kind": "relay",
+      "evidence": "raw_21_close_loads_a1_2x.png; inline control/protection device RELAY-K1A"
+    },
+    {
+      "id": "PMP-RHR-101A",
+      "kind": "load",
+      "evidence": "raw_21_close_loads_a1_2x.png; terminal load PMP-RHR-101A"
+    },
+    {
+      "id": "CB-48A2",
+      "kind": "breaker",
+      "evidence": "raw_21_close_loads_a1_2x.png; branch breaker CB-48A2"
+    },
+    {
+      "id": "DS-48A2",
+      "kind": "disconnect",
+      "evidence": "raw_21_close_loads_a1_2x.png; disconnect DS-48A2"
+    },
+    {
+      "id": "MCC-2A",
+      "kind": "panel",
+      "evidence": "raw_21_close_loads_a1_2x.png; downstream cabinet/block MCC-2A"
+    },
+    {
+      "id": "CS-2A",
+      "kind": "panel",
+      "evidence": "raw_21_close_loads_a1_2x.png; inline control/protection device CS-2A"
+    },
+    {
+      "id": "MOV-CCW-112A",
+      "kind": "load",
+      "evidence": "raw_21_close_loads_a1_2x.png; terminal load MOV-CCW-112A"
+    },
+    {
+      "id": "CB-48A3",
+      "kind": "breaker",
+      "evidence": "raw_21_close_loads_a1_2x.png; branch breaker CB-48A3"
+    },
+    {
+      "id": "DS-48A3",
+      "kind": "disconnect",
+      "evidence": "raw_21_close_loads_a1_2x.png; disconnect DS-48A3"
+    },
+    {
+      "id": "MCC-3A",
+      "kind": "panel",
+      "evidence": "raw_21_close_loads_a1_2x.png; downstream cabinet/block MCC-3A"
+    },
+    {
+      "id": "RELAY-K3A",
+      "kind": "relay",
+      "evidence": "raw_21_close_loads_a1_2x.png; inline control/protection device RELAY-K3A"
+    },
+    {
+      "id": "FAN-RB-104A",
+      "kind": "load",
+      "evidence": "raw_21_close_loads_a1_2x.png; terminal load FAN-RB-104A"
+    },
+    {
+      "id": "CB-48A4",
+      "kind": "breaker",
+      "evidence": "raw_21_close_loads_a1_2x.png; branch breaker CB-48A4"
+    },
+    {
+      "id": "DS-48A4",
+      "kind": "disconnect",
+      "evidence": "raw_21_close_loads_a1_2x.png; disconnect DS-48A4"
+    },
+    {
+      "id": "JB-4A",
+      "kind": "terminal_block",
+      "evidence": "raw_21_close_loads_a1_2x.png; downstream cabinet/block JB-4A"
+    },
+    {
+      "id": "CS-4A",
+      "kind": "panel",
+      "evidence": "raw_21_close_loads_a1_2x.png; inline control/protection device CS-4A"
+    },
+    {
+      "id": "HTR-PZR-01A",
+      "kind": "load",
+      "evidence": "raw_21_close_loads_a1_2x.png; terminal load HTR-PZR-01A"
+    },
+    {
+      "id": "CB-48A5",
+      "kind": "breaker",
+      "evidence": "raw_21_close_loads_a1_2x.png; branch breaker CB-48A5"
+    },
+    {
+      "id": "DS-48A5",
+      "kind": "disconnect",
+      "evidence": "raw_21_close_loads_a1_2x.png; disconnect DS-48A5"
+    },
+    {
+      "id": "MCC-5A",
+      "kind": "panel",
+      "evidence": "raw_21_close_loads_a1_2x.png; downstream cabinet/block MCC-5A"
+    },
+    {
+      "id": "RELAY-K5A",
+      "kind": "relay",
+      "evidence": "raw_21_close_loads_a1_2x.png; inline control/protection device RELAY-K5A"
+    },
+    {
+      "id": "COMP-IA-201A",
+      "kind": "load",
+      "evidence": "raw_21_close_loads_a1_2x.png; terminal load COMP-IA-201A"
+    },
+    {
+      "id": "CB-48A6",
+      "kind": "breaker",
+      "evidence": "raw_21_close_loads_a1_2x.png; branch breaker CB-48A6"
+    },
+    {
+      "id": "DS-48A6",
+      "kind": "disconnect",
+      "evidence": "raw_21_close_loads_a1_2x.png; disconnect DS-48A6"
+    },
+    {
+      "id": "JB-6A",
+      "kind": "terminal_block",
+      "evidence": "raw_21_close_loads_a1_2x.png; downstream cabinet/block JB-6A"
+    },
+    {
+      "id": "CS-6A",
+      "kind": "panel",
+      "evidence": "raw_21_close_loads_a1_2x.png; inline control/protection device CS-6A"
+    },
+    {
+      "id": "MOT-CRN-01A",
+      "kind": "load",
+      "evidence": "raw_21_close_loads_a1_2x.png; terminal load MOT-CRN-01A"
+    },
+    {
+      "id": "CB-48B1",
+      "kind": "breaker",
+      "evidence": "raw_22_close_loads_a2_2x.png; branch breaker CB-48B1"
+    },
+    {
+      "id": "DS-48B1",
+      "kind": "disconnect",
+      "evidence": "raw_22_close_loads_a2_2x.png; disconnect DS-48B1"
+    },
+    {
+      "id": "MCC-1B",
+      "kind": "panel",
+      "evidence": "raw_22_close_loads_a2_2x.png; downstream cabinet/block MCC-1B"
+    },
+    {
+      "id": "RELAY-K1B",
+      "kind": "relay",
+      "evidence": "raw_22_close_loads_a2_2x.png; inline control/protection device RELAY-K1B"
+    },
+    {
+      "id": "PMP-SI-102B",
+      "kind": "load",
+      "evidence": "raw_22_close_loads_a2_2x.png; terminal load PMP-SI-102B"
+    },
+    {
+      "id": "CB-48B2",
+      "kind": "breaker",
+      "evidence": "raw_22_close_loads_a2_2x.png; branch breaker CB-48B2"
+    },
+    {
+      "id": "DS-48B2",
+      "kind": "disconnect",
+      "evidence": "raw_22_close_loads_a2_2x.png; disconnect DS-48B2"
+    },
+    {
+      "id": "MCC-2B",
+      "kind": "panel",
+      "evidence": "raw_22_close_loads_a2_2x.png; downstream cabinet/block MCC-2B"
+    },
+    {
+      "id": "CS-2B",
+      "kind": "panel",
+      "evidence": "raw_22_close_loads_a2_2x.png; inline control/protection device CS-2B"
+    },
+    {
+      "id": "MOV-CS-116B",
+      "kind": "load",
+      "evidence": "raw_22_close_loads_a2_2x.png; terminal load MOV-CS-116B"
+    },
+    {
+      "id": "CB-48B3",
+      "kind": "breaker",
+      "evidence": "raw_22_close_loads_a2_2x.png; branch breaker CB-48B3"
+    },
+    {
+      "id": "DS-48B3",
+      "kind": "disconnect",
+      "evidence": "raw_22_close_loads_a2_2x.png; disconnect DS-48B3"
+    },
+    {
+      "id": "MCC-3B",
+      "kind": "panel",
+      "evidence": "raw_22_close_loads_a2_2x.png; downstream cabinet/block MCC-3B"
+    },
+    {
+      "id": "RELAY-K3B",
+      "kind": "relay",
+      "evidence": "raw_22_close_loads_a2_2x.png; inline control/protection device RELAY-K3B"
+    },
+    {
+      "id": "FAN-CCW-108B",
+      "kind": "load",
+      "evidence": "raw_22_close_loads_a2_2x.png; terminal load FAN-CCW-108B"
+    },
+    {
+      "id": "CB-48B4",
+      "kind": "breaker",
+      "evidence": "raw_22_close_loads_a2_2x.png; branch breaker CB-48B4"
+    },
+    {
+      "id": "DS-48B4",
+      "kind": "disconnect",
+      "evidence": "raw_22_close_loads_a2_2x.png; disconnect DS-48B4"
+    },
+    {
+      "id": "JB-4B",
+      "kind": "terminal_block",
+      "evidence": "raw_22_close_loads_a2_2x.png; downstream cabinet/block JB-4B"
+    },
+    {
+      "id": "CS-4B",
+      "kind": "panel",
+      "evidence": "raw_22_close_loads_a2_2x.png; inline control/protection device CS-4B"
+    },
+    {
+      "id": "HTR-SUMP-02B",
+      "kind": "load",
+      "evidence": "raw_22_close_loads_a2_2x.png; terminal load HTR-SUMP-02B"
+    },
+    {
+      "id": "CB-48B5",
+      "kind": "breaker",
+      "evidence": "raw_22_close_loads_a2_2x.png; branch breaker CB-48B5"
+    },
+    {
+      "id": "DS-48B5",
+      "kind": "disconnect",
+      "evidence": "raw_22_close_loads_a2_2x.png; disconnect DS-48B5"
+    },
+    {
+      "id": "MCC-5B",
+      "kind": "panel",
+      "evidence": "raw_22_close_loads_a2_2x.png; downstream cabinet/block MCC-5B"
+    },
+    {
+      "id": "RELAY-K5B",
+      "kind": "relay",
+      "evidence": "raw_22_close_loads_a2_2x.png; inline control/protection device RELAY-K5B"
+    },
+    {
+      "id": "PMP-CHG-203B",
+      "kind": "load",
+      "evidence": "raw_22_close_loads_a2_2x.png; terminal load PMP-CHG-203B"
+    },
+    {
+      "id": "CB-48B6",
+      "kind": "breaker",
+      "evidence": "raw_22_close_loads_a2_2x.png; branch breaker CB-48B6"
+    },
+    {
+      "id": "DS-48B6",
+      "kind": "disconnect",
+      "evidence": "raw_22_close_loads_a2_2x.png; disconnect DS-48B6"
+    },
+    {
+      "id": "JB-6B",
+      "kind": "terminal_block",
+      "evidence": "raw_22_close_loads_a2_2x.png; downstream cabinet/block JB-6B"
+    },
+    {
+      "id": "CS-6B",
+      "kind": "panel",
+      "evidence": "raw_22_close_loads_a2_2x.png; inline control/protection device CS-6B"
+    },
+    {
+      "id": "MOV-SW-118B",
+      "kind": "load",
+      "evidence": "raw_22_close_loads_a2_2x.png; terminal load MOV-SW-118B"
+    },
+    {
+      "id": "CB-48C1",
+      "kind": "breaker",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; branch breaker CB-48C1"
+    },
+    {
+      "id": "DS-48C1",
+      "kind": "disconnect",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; disconnect DS-48C1"
+    },
+    {
+      "id": "MCC-1C",
+      "kind": "panel",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; downstream cabinet/block MCC-1C"
+    },
+    {
+      "id": "RELAY-K1C",
+      "kind": "relay",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; inline control/protection device RELAY-K1C"
+    },
+    {
+      "id": "PMP-RHR-101C",
+      "kind": "load",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; terminal load PMP-RHR-101C"
+    },
+    {
+      "id": "CB-48C2",
+      "kind": "breaker",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; branch breaker CB-48C2"
+    },
+    {
+      "id": "DS-48C2",
+      "kind": "disconnect",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; disconnect DS-48C2"
+    },
+    {
+      "id": "MCC-2C",
+      "kind": "panel",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; downstream cabinet/block MCC-2C"
+    },
+    {
+      "id": "CS-2C",
+      "kind": "panel",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; inline control/protection device CS-2C"
+    },
+    {
+      "id": "MOV-CCW-112C",
+      "kind": "load",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; terminal load MOV-CCW-112C"
+    },
+    {
+      "id": "CB-48C3",
+      "kind": "breaker",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; branch breaker CB-48C3"
+    },
+    {
+      "id": "DS-48C3",
+      "kind": "disconnect",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; disconnect DS-48C3"
+    },
+    {
+      "id": "MCC-3C",
+      "kind": "panel",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; downstream cabinet/block MCC-3C"
+    },
+    {
+      "id": "RELAY-K3C",
+      "kind": "relay",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; inline control/protection device RELAY-K3C"
+    },
+    {
+      "id": "FAN-RB-104C",
+      "kind": "load",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; terminal load FAN-RB-104C"
+    },
+    {
+      "id": "CB-48C4",
+      "kind": "breaker",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; branch breaker CB-48C4"
+    },
+    {
+      "id": "DS-48C4",
+      "kind": "disconnect",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; disconnect DS-48C4"
+    },
+    {
+      "id": "JB-4C",
+      "kind": "terminal_block",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; downstream cabinet/block JB-4C"
+    },
+    {
+      "id": "RELAY-K4C",
+      "kind": "relay",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; inline control/protection device RELAY-K4C"
+    },
+    {
+      "id": "PMP-AFW-205C",
+      "kind": "load",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; terminal load PMP-AFW-205C"
+    },
+    {
+      "id": "CB-48C5",
+      "kind": "breaker",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; branch breaker CB-48C5"
+    },
+    {
+      "id": "DS-48C5",
+      "kind": "disconnect",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; disconnect DS-48C5"
+    },
+    {
+      "id": "MCC-5C",
+      "kind": "panel",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; downstream cabinet/block MCC-5C"
+    },
+    {
+      "id": "RELAY-K5C",
+      "kind": "relay",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; inline control/protection device RELAY-K5C"
+    },
+    {
+      "id": "PMP-CCP-207C",
+      "kind": "load",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; terminal load PMP-CCP-207C"
+    },
+    {
+      "id": "CB-48C6",
+      "kind": "breaker",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; branch breaker CB-48C6"
+    },
+    {
+      "id": "DS-48C6",
+      "kind": "disconnect",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; disconnect DS-48C6"
+    },
+    {
+      "id": "JB-6C",
+      "kind": "terminal_block",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; downstream cabinet/block JB-6C"
+    },
+    {
+      "id": "CS-6C",
+      "kind": "panel",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; inline control/protection device CS-6C"
+    },
+    {
+      "id": "MOV-FCV-022C",
+      "kind": "load",
+      "evidence": "raw_23_close_loads_c_2x.png plus raw_22_close_loads_a2_2x.png at C1/tie edge; terminal load MOV-FCV-022C"
+    },
+    {
+      "id": "CB-48D1",
+      "kind": "breaker",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; branch breaker CB-48D1"
+    },
+    {
+      "id": "DS-48D1",
+      "kind": "disconnect",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; disconnect DS-48D1"
+    },
+    {
+      "id": "MCC-1D",
+      "kind": "panel",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; downstream cabinet/block MCC-1D"
+    },
+    {
+      "id": "RELAY-K1D",
+      "kind": "relay",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; inline control/protection device RELAY-K1D"
+    },
+    {
+      "id": "PMP-SI-102D",
+      "kind": "load",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; terminal load PMP-SI-102D"
+    },
+    {
+      "id": "CB-48D2",
+      "kind": "breaker",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; branch breaker CB-48D2"
+    },
+    {
+      "id": "DS-48D2",
+      "kind": "disconnect",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; disconnect DS-48D2"
+    },
+    {
+      "id": "MCC-2D",
+      "kind": "panel",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; downstream cabinet/block MCC-2D"
+    },
+    {
+      "id": "CS-2D",
+      "kind": "panel",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; inline control/protection device CS-2D"
+    },
+    {
+      "id": "MOV-CS-116D",
+      "kind": "load",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; terminal load MOV-CS-116D"
+    },
+    {
+      "id": "CB-48D3",
+      "kind": "breaker",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; branch breaker CB-48D3"
+    },
+    {
+      "id": "DS-48D3",
+      "kind": "disconnect",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; disconnect DS-48D3"
+    },
+    {
+      "id": "MCC-3D",
+      "kind": "panel",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; downstream cabinet/block MCC-3D"
+    },
+    {
+      "id": "RELAY-K3D",
+      "kind": "relay",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; inline control/protection device RELAY-K3D"
+    },
+    {
+      "id": "FAN-ESF-110D",
+      "kind": "load",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; terminal load FAN-ESF-110D"
+    },
+    {
+      "id": "CB-48D4",
+      "kind": "breaker",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; branch breaker CB-48D4"
+    },
+    {
+      "id": "DS-48D4",
+      "kind": "disconnect",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; disconnect DS-48D4"
+    },
+    {
+      "id": "JB-4D",
+      "kind": "terminal_block",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; downstream cabinet/block JB-4D"
+    },
+    {
+      "id": "CS-4D",
+      "kind": "panel",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; inline control/protection device CS-4D"
+    },
+    {
+      "id": "MOV-RWST-24D",
+      "kind": "load",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; terminal load MOV-RWST-24D"
+    },
+    {
+      "id": "CB-48D5",
+      "kind": "breaker",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; branch breaker CB-48D5"
+    },
+    {
+      "id": "DS-48D5",
+      "kind": "disconnect",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; disconnect DS-48D5"
+    },
+    {
+      "id": "MCC-5D",
+      "kind": "panel",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; downstream cabinet/block MCC-5D"
+    },
+    {
+      "id": "RELAY-K5D",
+      "kind": "relay",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; inline control/protection device RELAY-K5D"
+    },
+    {
+      "id": "PMP-CHG-203D",
+      "kind": "load",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; terminal load PMP-CHG-203D"
+    },
+    {
+      "id": "CB-48D6",
+      "kind": "breaker",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; branch breaker CB-48D6"
+    },
+    {
+      "id": "DS-48D6",
+      "kind": "disconnect",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; disconnect DS-48D6"
+    },
+    {
+      "id": "JB-6D",
+      "kind": "terminal_block",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; downstream cabinet/block JB-6D"
+    },
+    {
+      "id": "CS-6D",
+      "kind": "panel",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; inline control/protection device CS-6D"
+    },
+    {
+      "id": "MOV-SW-118D",
+      "kind": "load",
+      "evidence": "raw_24_close_loads_d_2x.png plus raw_23_close_loads_c_2x.png at D1 edge; terminal load MOV-SW-118D"
+    },
+    {
+      "id": "BAT-125A",
+      "kind": "source",
+      "evidence": "raw_21_close_loads_a1_2x.png battery symbol below Load Center A"
+    },
+    {
+      "id": "CHGR-125A",
+      "kind": "panel",
+      "evidence": "raw_21_close_loads_a1_2x.png charger block below Load Center A"
+    },
+    {
+      "id": "RECT-125A",
+      "kind": "panel",
+      "evidence": "raw_21_close_loads_a1_2x.png AC/DC rectifier block with vertical bus tap"
+    },
+    {
+      "id": "INV-UPS-A",
+      "kind": "panel",
+      "evidence": "raw_10_bottom_dc_control_full.png DC/AC inverter/UPS block on Control Bus A"
+    },
+    {
+      "id": "BAT-125B",
+      "kind": "source",
+      "evidence": "raw_23_close_loads_c_2x.png battery symbol below Load Center C"
+    },
+    {
+      "id": "CHGR-125B",
+      "kind": "panel",
+      "evidence": "raw_23_close_loads_c_2x.png charger block below Load Center C"
+    },
+    {
+      "id": "RECT-125B",
+      "kind": "panel",
+      "evidence": "raw_23_close_loads_c_2x.png AC/DC rectifier block with vertical bus tap"
+    },
+    {
+      "id": "INV-UPS-B",
+      "kind": "panel",
+      "evidence": "raw_10_bottom_dc_control_full.png DC/AC inverter/UPS block on Control Bus B"
+    },
+    {
+      "id": "CP-RPS-A",
+      "kind": "panel",
+      "evidence": "raw_25_close_dc_a_left_2x.png; control panel CP-RPS-A"
+    },
+    {
+      "id": "TB-RPS-A",
+      "kind": "terminal_block",
+      "evidence": "raw_25_close_dc_a_left_2x.png; terminal block TB-RPS-A"
+    },
+    {
+      "id": "PROT-UV-A",
+      "kind": "protection",
+      "evidence": "raw_25_close_dc_a_left_2x.png; protection block PROT-UV-A"
+    },
+    {
+      "id": "RELAY-K101",
+      "kind": "relay",
+      "evidence": "raw_25_close_dc_a_left_2x.png; oval relay RELAY-K101"
+    },
+    {
+      "id": "PT-410A",
+      "kind": "instrument",
+      "evidence": "raw_25_close_dc_a_left_2x.png; transmitter/instrument PT-410A"
+    },
+    {
+      "id": "LT-512A",
+      "kind": "instrument",
+      "evidence": "raw_25_close_dc_a_left_2x.png; transmitter/instrument LT-512A"
+    },
+    {
+      "id": "RELAY-K102",
+      "kind": "relay",
+      "evidence": "raw_25_close_dc_a_left_2x.png; oval relay RELAY-K102"
+    },
+    {
+      "id": "TT-303A",
+      "kind": "instrument",
+      "evidence": "raw_25_close_dc_a_left_2x.png; transmitter/instrument TT-303A"
+    },
+    {
+      "id": "GND-CTRL-A",
+      "kind": "junction_or_logical_node",
+      "evidence": "raw_25_close_dc_a_left_2x.png; ground symbol GND-CTRL-A"
+    },
+    {
+      "id": "CP-RPS-B",
+      "kind": "panel",
+      "evidence": "raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png; control panel CP-RPS-B"
+    },
+    {
+      "id": "TB-RPS-B",
+      "kind": "terminal_block",
+      "evidence": "raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png; terminal block TB-RPS-B"
+    },
+    {
+      "id": "PROT-UV-B",
+      "kind": "protection",
+      "evidence": "raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png; protection block PROT-UV-B"
+    },
+    {
+      "id": "RELAY-K103",
+      "kind": "relay",
+      "evidence": "raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png; oval relay RELAY-K103"
+    },
+    {
+      "id": "PT-410B",
+      "kind": "instrument",
+      "evidence": "raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png; transmitter/instrument PT-410B"
+    },
+    {
+      "id": "LT-512B",
+      "kind": "instrument",
+      "evidence": "raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png; transmitter/instrument LT-512B"
+    },
+    {
+      "id": "RELAY-K104",
+      "kind": "relay",
+      "evidence": "raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png; oval relay RELAY-K104"
+    },
+    {
+      "id": "TT-303B",
+      "kind": "instrument",
+      "evidence": "raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png; transmitter/instrument TT-303B"
+    },
+    {
+      "id": "GND-CTRL-B",
+      "kind": "junction_or_logical_node",
+      "evidence": "raw_25_close_dc_a_left_2x.png plus raw_26_close_dc_a_right_2x.png; ground symbol GND-CTRL-B"
+    },
+    {
+      "id": "CP-ESFAS-A",
+      "kind": "panel",
+      "evidence": "raw_27_close_dc_b_left_2x.png; control panel CP-ESFAS-A"
+    },
+    {
+      "id": "JB-ESF-A",
+      "kind": "terminal_block",
+      "evidence": "raw_27_close_dc_b_left_2x.png; junction/terminal box JB-ESF-A"
+    },
+    {
+      "id": "PROT-LOP-A",
+      "kind": "protection",
+      "evidence": "raw_27_close_dc_b_left_2x.png; protection block PROT-LOP-A"
+    },
+    {
+      "id": "RELAY-K105",
+      "kind": "relay",
+      "evidence": "raw_27_close_dc_b_left_2x.png; flow/logic relay RELAY-K105"
+    },
+    {
+      "id": "FT-611A",
+      "kind": "instrument",
+      "evidence": "raw_27_close_dc_b_left_2x.png; flow transmitter FT-611A"
+    },
+    {
+      "id": "RELAY-K106",
+      "kind": "relay",
+      "evidence": "raw_27_close_dc_b_left_2x.png; alarm/interlock relay RELAY-K106"
+    },
+    {
+      "id": "XA-730A",
+      "kind": "instrument",
+      "evidence": "raw_27_close_dc_b_left_2x.png; alarm/annunciator XA-730A"
+    },
+    {
+      "id": "CP-ESFAS-B",
+      "kind": "panel",
+      "evidence": "raw_28_close_dc_b_right_2x.png; control panel CP-ESFAS-B"
+    },
+    {
+      "id": "JB-ESF-B",
+      "kind": "terminal_block",
+      "evidence": "raw_28_close_dc_b_right_2x.png; junction/terminal box JB-ESF-B"
+    },
+    {
+      "id": "PROT-LOP-B",
+      "kind": "protection",
+      "evidence": "raw_28_close_dc_b_right_2x.png; protection block PROT-LOP-B"
+    },
+    {
+      "id": "RELAY-K107",
+      "kind": "relay",
+      "evidence": "raw_28_close_dc_b_right_2x.png; flow/logic relay RELAY-K107"
+    },
+    {
+      "id": "FT-611B",
+      "kind": "instrument",
+      "evidence": "raw_28_close_dc_b_right_2x.png; flow transmitter FT-611B"
+    },
+    {
+      "id": "RELAY-K108",
+      "kind": "relay",
+      "evidence": "raw_28_close_dc_b_right_2x.png; alarm/interlock relay RELAY-K108"
+    },
+    {
+      "id": "XA-730B",
+      "kind": "instrument",
+      "evidence": "raw_28_close_dc_b_right_2x.png; alarm/annunciator XA-730B"
+    }
+  ],
+  "matrix_order": [
+    "13.8 KV SAFETY BUS A",
+    "13.8 KV SAFETY BUS B",
+    "4.16 KV CLASS 1E BUS A",
+    "4.16 KV CLASS 1E BUS B",
+    "480 VAC LOAD CENTER A",
+    "480 VAC LOAD CENTER B",
+    "480 VAC LOAD CENTER C",
+    "480 VAC LOAD CENTER D",
+    "125 VDC CONTROL BUS A",
+    "125 VDC CONTROL BUS B",
+    "GEN-M1",
+    "CB-GEN1",
+    "TR-UAT1",
+    "CB-13A-IN",
+    "CB-F41A",
+    "DS-F41A",
+    "TR-416A",
+    "CB-416A-IN",
+    "DG-1A",
+    "CB-DG1A",
+    "CB-TIE-13K",
+    "CB-TIE-416",
+    "FEED-230A",
+    "TR-SAT1",
+    "CB-13B-IN",
+    "CB-F41B",
+    "DS-F41B",
+    "TR-416B",
+    "CB-416B-IN",
+    "DG-1B",
+    "CB-DG1B",
+    "CB-LCA",
+    "TR-480A",
+    "CB-LCB",
+    "TR-480B",
+    "CB-LCC",
+    "TR-480C",
+    "CB-LCD",
+    "TR-480D",
+    "CB-TIE-480",
+    "CB-48A1",
+    "DS-48A1",
+    "MCC-1A",
+    "RELAY-K1A",
+    "PMP-RHR-101A",
+    "CB-48A2",
+    "DS-48A2",
+    "MCC-2A",
+    "CS-2A",
+    "MOV-CCW-112A",
+    "CB-48A3",
+    "DS-48A3",
+    "MCC-3A",
+    "RELAY-K3A",
+    "FAN-RB-104A",
+    "CB-48A4",
+    "DS-48A4",
+    "JB-4A",
+    "CS-4A",
+    "HTR-PZR-01A",
+    "CB-48A5",
+    "DS-48A5",
+    "MCC-5A",
+    "RELAY-K5A",
+    "COMP-IA-201A",
+    "CB-48A6",
+    "DS-48A6",
+    "JB-6A",
+    "CS-6A",
+    "MOT-CRN-01A",
+    "CB-48B1",
+    "DS-48B1",
+    "MCC-1B",
+    "RELAY-K1B",
+    "PMP-SI-102B",
+    "CB-48B2",
+    "DS-48B2",
+    "MCC-2B",
+    "CS-2B",
+    "MOV-CS-116B",
+    "CB-48B3",
+    "DS-48B3",
+    "MCC-3B",
+    "RELAY-K3B",
+    "FAN-CCW-108B",
+    "CB-48B4",
+    "DS-48B4",
+    "JB-4B",
+    "CS-4B",
+    "HTR-SUMP-02B",
+    "CB-48B5",
+    "DS-48B5",
+    "MCC-5B",
+    "RELAY-K5B",
+    "PMP-CHG-203B",
+    "CB-48B6",
+    "DS-48B6",
+    "JB-6B",
+    "CS-6B",
+    "MOV-SW-118B",
+    "CB-48C1",
+    "DS-48C1",
+    "MCC-1C",
+    "RELAY-K1C",
+    "PMP-RHR-101C",
+    "CB-48C2",
+    "DS-48C2",
+    "MCC-2C",
+    "CS-2C",
+    "MOV-CCW-112C",
+    "CB-48C3",
+    "DS-48C3",
+    "MCC-3C",
+    "RELAY-K3C",
+    "FAN-RB-104C",
+    "CB-48C4",
+    "DS-48C4",
+    "JB-4C",
+    "RELAY-K4C",
+    "PMP-AFW-205C",
+    "CB-48C5",
+    "DS-48C5",
+    "MCC-5C",
+    "RELAY-K5C",
+    "PMP-CCP-207C",
+    "CB-48C6",
+    "DS-48C6",
+    "JB-6C",
+    "CS-6C",
+    "MOV-FCV-022C",
+    "CB-48D1",
+    "DS-48D1",
+    "MCC-1D",
+    "RELAY-K1D",
+    "PMP-SI-102D",
+    "CB-48D2",
+    "DS-48D2",
+    "MCC-2D",
+    "CS-2D",
+    "MOV-CS-116D",
+    "CB-48D3",
+    "DS-48D3",
+    "MCC-3D",
+    "RELAY-K3D",
+    "FAN-ESF-110D",
+    "CB-48D4",
+    "DS-48D4",
+    "JB-4D",
+    "CS-4D",
+    "MOV-RWST-24D",
+    "CB-48D5",
+    "DS-48D5",
+    "MCC-5D",
+    "RELAY-K5D",
+    "PMP-CHG-203D",
+    "CB-48D6",
+    "DS-48D6",
+    "JB-6D",
+    "CS-6D",
+    "MOV-SW-118D",
+    "BAT-125A",
+    "CHGR-125A",
+    "RECT-125A",
+    "INV-UPS-A",
+    "BAT-125B",
+    "CHGR-125B",
+    "RECT-125B",
+    "INV-UPS-B",
+    "CP-RPS-A",
+    "TB-RPS-A",
+    "PROT-UV-A",
+    "RELAY-K101",
+    "PT-410A",
+    "LT-512A",
+    "RELAY-K102",
+    "TT-303A",
+    "GND-CTRL-A",
+    "CP-RPS-B",
+    "TB-RPS-B",
+    "PROT-UV-B",
+    "RELAY-K103",
+    "PT-410B",
+    "LT-512B",
+    "RELAY-K104",
+    "TT-303B",
+    "GND-CTRL-B",
+    "CP-ESFAS-A",
+    "JB-ESF-A",
+    "PROT-LOP-A",
+    "RELAY-K105",
+    "FT-611A",
+    "RELAY-K106",
+    "XA-730A",
+    "CP-ESFAS-B",
+    "JB-ESF-B",
+    "PROT-LOP-B",
+    "RELAY-K107",
+    "FT-611B",
+    "RELAY-K108",
+    "XA-730B"
+  ]
+}

@@ -1,0 +1,202 @@
+source,target,confidence,line_type,evidence
+GEN-301,TR-UAT-31,high,solid_power,top source or bus tie solid feeder
+TR-UAT-31,CB-4A-IN1,high,solid_power,top source or bus tie solid feeder
+CB-4A-IN1,BUS-416A,high,solid_power,top source or bus tie solid feeder
+SAT-31A,CB-4A-ST,high,solid_power,top source or bus tie solid feeder
+CB-4A-ST,BUS-416A,high,solid_power,top source or bus tie solid feeder
+DG-31A,CB-4A-DG,high,solid_power,top source or bus tie solid feeder
+CB-4A-DG,BUS-416A,high,solid_power,top source or bus tie solid feeder
+SAT-31B,CB-4B-ST,high,solid_power,top source or bus tie solid feeder
+CB-4B-ST,BUS-416B,high,solid_power,top source or bus tie solid feeder
+DG-31B,CB-4B-DG,high,solid_power,top source or bus tie solid feeder
+CB-4B-DG,BUS-416B,high,solid_power,top source or bus tie solid feeder
+BUS-416A,CB-4AB-TIE,high,solid_power,top source or bus tie solid feeder
+CB-4AB-TIE,BUS-416B,high,solid_power,top source or bus tie solid feeder
+BUS-416A,CB-4A01,high,solid_power,4.16 kV transformer feeder
+CB-4A01,TR-480A1,high,solid_power,4.16 kV transformer feeder
+TR-480A1,CB-480A-IN,high,solid_power,4.16 kV transformer feeder
+CB-480A-IN,BUS-480A,high,solid_power,4.16 kV transformer feeder
+BUS-416A,CB-4A02,high,solid_power,alternate 4.16 kV transformer feeder
+CB-4A02,TR-480A2,high,solid_power,alternate 4.16 kV transformer feeder
+TR-480A2,CB-480A-ALT,high,solid_power,alternate 4.16 kV transformer feeder
+CB-480A-ALT,BUS-480A,high,solid_power,alternate 4.16 kV transformer feeder
+BUS-416A,CB-4A03,high,solid_power,RCP motor feeder and labeled ground
+CB-4A03,DS-RCP-A,high,solid_power,RCP motor feeder and labeled ground
+DS-RCP-A,MTR-RCP-A,high,solid_power,RCP motor feeder and labeled ground
+MTR-RCP-A,GND-RCP-A,high,solid_power,RCP motor feeder and labeled ground
+BUS-416A,CB-4A04,high,solid_power,service-water pump feeder and labeled ground
+CB-4A04,DS-SW-A,high,solid_power,service-water pump feeder and labeled ground
+DS-SW-A,PUMP-SW31A,high,solid_power,service-water pump feeder and labeled ground
+PUMP-SW31A,GND-SW-A,high,solid_power,service-water pump feeder and labeled ground
+BUS-416A,CB-4A05,high,solid_power,AFW pump feeder
+CB-4A05,DS-AFW-A,high,solid_power,AFW pump feeder
+DS-AFW-A,PUMP-AFW31A,high,solid_power,AFW pump feeder
+BUS-416A,CB-4A06,high,solid_power,chilled-water pump feeder
+CB-4A06,DS-CHW-A,high,solid_power,chilled-water pump feeder
+DS-CHW-A,MTR-CHWP-A,high,solid_power,chilled-water pump feeder
+BUS-416B,CB-4B01,high,solid_power,4.16 kV transformer feeder
+CB-4B01,TR-480B1,high,solid_power,4.16 kV transformer feeder
+TR-480B1,CB-480B-IN,high,solid_power,4.16 kV transformer feeder
+CB-480B-IN,BUS-480B,high,solid_power,4.16 kV transformer feeder
+BUS-416B,CB-4B02,high,solid_power,alternate 4.16 kV transformer feeder
+CB-4B02,TR-480B2,high,solid_power,alternate 4.16 kV transformer feeder
+TR-480B2,CB-480B-ALT,high,solid_power,alternate 4.16 kV transformer feeder
+CB-480B-ALT,BUS-480B,high,solid_power,alternate 4.16 kV transformer feeder
+BUS-416B,CB-4B03,high,solid_power,RCP motor feeder and labeled ground
+CB-4B03,DS-RCP-B,high,solid_power,RCP motor feeder and labeled ground
+DS-RCP-B,MTR-RCP-B,high,solid_power,RCP motor feeder and labeled ground
+MTR-RCP-B,GND-RCP-B,high,solid_power,RCP motor feeder and labeled ground
+BUS-416B,CB-4B04,high,solid_power,service-water pump feeder and labeled ground
+CB-4B04,DS-SW-B,high,solid_power,service-water pump feeder and labeled ground
+DS-SW-B,PUMP-SW31B,high,solid_power,service-water pump feeder and labeled ground
+PUMP-SW31B,GND-SW-B,high,solid_power,service-water pump feeder and labeled ground
+BUS-416B,CB-4B05,high,solid_power,AFW pump feeder
+CB-4B05,DS-AFW-B,high,solid_power,AFW pump feeder
+DS-AFW-B,PUMP-AFW31B,high,solid_power,AFW pump feeder
+BUS-416B,CB-4B06,high,solid_power,chilled-water pump feeder
+CB-4B06,DS-CHW-B,high,solid_power,chilled-water pump feeder
+DS-CHW-B,MTR-CHWP-B,high,solid_power,chilled-water pump feeder
+BUS-480A,CB-480AB-TIE,high,solid_power,480 V tie breaker between buses
+CB-480AB-TIE,BUS-480B,high,solid_power,480 V tie breaker between buses
+BUS-480A,CB-480A11,high,solid_power,MCC-31A1 solid feeder from BUS-480A
+CB-480A11,MCC-31A1,high,solid_power,MCC-31A1 solid feeder from BUS-480A
+MCC-31A1,GND-MCC-A1,high,solid_power,MCC-31A1 solid connection to labeled ground
+MCC-31A1,STR-A1-1,high,solid_power,MCC-31A1 branch feeds PUMP-CVC-A through starter and junction box
+STR-A1-1,JB-A1-01,high,solid_power,MCC-31A1 branch feeds PUMP-CVC-A through starter and junction box
+JB-A1-01,PUMP-CVC-A,high,solid_power,MCC-31A1 branch feeds PUMP-CVC-A through starter and junction box
+MCC-31A1,STR-A1-2,high,solid_power,MCC-31A1 branch feeds MOV-RHR-731A through starter and junction box
+STR-A1-2,JB-A1-02,high,solid_power,MCC-31A1 branch feeds MOV-RHR-731A through starter and junction box
+JB-A1-02,MOV-RHR-731A,high,solid_power,MCC-31A1 branch feeds MOV-RHR-731A through starter and junction box
+MCC-31A1,STR-A1-3,high,solid_power,MCC-31A1 branch feeds FAN-CRD-A through starter and junction box
+STR-A1-3,JB-A1-03,high,solid_power,MCC-31A1 branch feeds FAN-CRD-A through starter and junction box
+JB-A1-03,FAN-CRD-A,high,solid_power,MCC-31A1 branch feeds FAN-CRD-A through starter and junction box
+BUS-480A,CB-480A12,high,solid_power,MCC-31A2 solid feeder from BUS-480A
+CB-480A12,MCC-31A2,high,solid_power,MCC-31A2 solid feeder from BUS-480A
+MCC-31A2,GND-MCC-A2,high,solid_power,MCC-31A2 solid connection to labeled ground
+MCC-31A2,STR-A2-1,high,solid_power,MCC-31A2 branch feeds PUMP-CCW-A through starter and junction box
+STR-A2-1,JB-A2-01,high,solid_power,MCC-31A2 branch feeds PUMP-CCW-A through starter and junction box
+JB-A2-01,PUMP-CCW-A,high,solid_power,MCC-31A2 branch feeds PUMP-CCW-A through starter and junction box
+MCC-31A2,STR-A2-2,high,solid_power,MCC-31A2 branch feeds HTR-BORIC-A through starter and junction box
+STR-A2-2,JB-A2-02,high,solid_power,MCC-31A2 branch feeds HTR-BORIC-A through starter and junction box
+JB-A2-02,HTR-BORIC-A,high,solid_power,MCC-31A2 branch feeds HTR-BORIC-A through starter and junction box
+MCC-31A2,STR-A2-3,high,solid_power,MCC-31A2 branch feeds MOV-CHG-121A through starter and junction box
+STR-A2-3,JB-A2-03,high,solid_power,MCC-31A2 branch feeds MOV-CHG-121A through starter and junction box
+JB-A2-03,MOV-CHG-121A,high,solid_power,MCC-31A2 branch feeds MOV-CHG-121A through starter and junction box
+BUS-480A,CB-480A13,high,solid_power,LC-31A3 solid feeder from BUS-480A
+CB-480A13,LC-31A3,high,solid_power,LC-31A3 solid feeder from BUS-480A
+LC-31A3,STR-A3-1,high,solid_power,LC-31A3 branch feeds MTR-SUMP-A through starter and junction box
+STR-A3-1,JB-A3-01,high,solid_power,LC-31A3 branch feeds MTR-SUMP-A through starter and junction box
+JB-A3-01,MTR-SUMP-A,high,solid_power,LC-31A3 branch feeds MTR-SUMP-A through starter and junction box
+LC-31A3,STR-A3-2,high,solid_power,LC-31A3 branch feeds PUMP-LUBE-A through starter and junction box
+STR-A3-2,JB-A3-02,high,solid_power,LC-31A3 branch feeds PUMP-LUBE-A through starter and junction box
+JB-A3-02,PUMP-LUBE-A,high,solid_power,LC-31A3 branch feeds PUMP-LUBE-A through starter and junction box
+LC-31A3,STR-A3-3,high,solid_power,LC-31A3 branch feeds MOV-SI-902A through starter and junction box
+STR-A3-3,JB-A3-03,high,solid_power,LC-31A3 branch feeds MOV-SI-902A through starter and junction box
+JB-A3-03,MOV-SI-902A,high,solid_power,LC-31A3 branch feeds MOV-SI-902A through starter and junction box
+BUS-480A,CB-480A14,high,solid_power,PNL-31A4 solid feeder from BUS-480A
+CB-480A14,PNL-31A4,high,solid_power,PNL-31A4 solid feeder from BUS-480A
+PNL-31A4,STR-A4-1,high,solid_power,PNL-31A4 branch feeds FAN-CONT-A through starter and junction box
+STR-A4-1,JB-A4-01,high,solid_power,PNL-31A4 branch feeds FAN-CONT-A through starter and junction box
+JB-A4-01,FAN-CONT-A,high,solid_power,PNL-31A4 branch feeds FAN-CONT-A through starter and junction box
+PNL-31A4,STR-A4-2,high,solid_power,PNL-31A4 branch feeds PUMP-SAMPLE-A through starter and junction box
+STR-A4-2,JB-A4-02,high,solid_power,PNL-31A4 branch feeds PUMP-SAMPLE-A through starter and junction box
+JB-A4-02,PUMP-SAMPLE-A,high,solid_power,PNL-31A4 branch feeds PUMP-SAMPLE-A through starter and junction box
+PNL-31A4,STR-A4-3,high,solid_power,PNL-31A4 branch feeds MOV-VENT-406A through starter and junction box
+STR-A4-3,JB-A4-03,high,solid_power,PNL-31A4 branch feeds MOV-VENT-406A through starter and junction box
+JB-A4-03,MOV-VENT-406A,high,solid_power,PNL-31A4 branch feeds MOV-VENT-406A through starter and junction box
+BUS-480B,CB-480B11,high,solid_power,MCC-31B1 solid feeder from BUS-480B
+CB-480B11,MCC-31B1,high,solid_power,MCC-31B1 solid feeder from BUS-480B
+MCC-31B1,GND-MCC-B1,high,solid_power,MCC-31B1 solid connection to labeled ground
+MCC-31B1,STR-B1-1,high,solid_power,MCC-31B1 branch feeds PUMP-CVC-B through starter and junction box
+STR-B1-1,JB-B1-01,high,solid_power,MCC-31B1 branch feeds PUMP-CVC-B through starter and junction box
+JB-B1-01,PUMP-CVC-B,high,solid_power,MCC-31B1 branch feeds PUMP-CVC-B through starter and junction box
+MCC-31B1,STR-B1-2,high,solid_power,MCC-31B1 branch feeds MOV-RHR-731B through starter and junction box
+STR-B1-2,JB-B1-02,high,solid_power,MCC-31B1 branch feeds MOV-RHR-731B through starter and junction box
+JB-B1-02,MOV-RHR-731B,high,solid_power,MCC-31B1 branch feeds MOV-RHR-731B through starter and junction box
+MCC-31B1,STR-B1-3,high,solid_power,MCC-31B1 branch feeds FAN-CRD-B through starter and junction box
+STR-B1-3,JB-B1-03,high,solid_power,MCC-31B1 branch feeds FAN-CRD-B through starter and junction box
+JB-B1-03,FAN-CRD-B,high,solid_power,MCC-31B1 branch feeds FAN-CRD-B through starter and junction box
+BUS-480B,CB-480B12,high,solid_power,MCC-31B2 solid feeder from BUS-480B
+CB-480B12,MCC-31B2,high,solid_power,MCC-31B2 solid feeder from BUS-480B
+MCC-31B2,GND-MCC-B2,high,solid_power,MCC-31B2 solid connection to labeled ground
+MCC-31B2,STR-B2-1,high,solid_power,MCC-31B2 branch feeds PUMP-CCW-B through starter and junction box
+STR-B2-1,JB-B2-01,high,solid_power,MCC-31B2 branch feeds PUMP-CCW-B through starter and junction box
+JB-B2-01,PUMP-CCW-B,high,solid_power,MCC-31B2 branch feeds PUMP-CCW-B through starter and junction box
+MCC-31B2,STR-B2-2,high,solid_power,MCC-31B2 branch feeds HTR-BORIC-B through starter and junction box
+STR-B2-2,JB-B2-02,high,solid_power,MCC-31B2 branch feeds HTR-BORIC-B through starter and junction box
+JB-B2-02,HTR-BORIC-B,high,solid_power,MCC-31B2 branch feeds HTR-BORIC-B through starter and junction box
+MCC-31B2,STR-B2-3,high,solid_power,MCC-31B2 branch feeds MOV-CHG-121B through starter and junction box
+STR-B2-3,JB-B2-03,high,solid_power,MCC-31B2 branch feeds MOV-CHG-121B through starter and junction box
+JB-B2-03,MOV-CHG-121B,high,solid_power,MCC-31B2 branch feeds MOV-CHG-121B through starter and junction box
+BUS-480B,CB-480B13,high,solid_power,LC-31B3 solid feeder from BUS-480B
+CB-480B13,LC-31B3,high,solid_power,LC-31B3 solid feeder from BUS-480B
+LC-31B3,STR-B3-1,high,solid_power,LC-31B3 branch feeds MTR-SUMP-B through starter and junction box
+STR-B3-1,JB-B3-01,high,solid_power,LC-31B3 branch feeds MTR-SUMP-B through starter and junction box
+JB-B3-01,MTR-SUMP-B,high,solid_power,LC-31B3 branch feeds MTR-SUMP-B through starter and junction box
+LC-31B3,STR-B3-2,high,solid_power,LC-31B3 branch feeds PUMP-LUBE-B through starter and junction box
+STR-B3-2,JB-B3-02,high,solid_power,LC-31B3 branch feeds PUMP-LUBE-B through starter and junction box
+JB-B3-02,PUMP-LUBE-B,high,solid_power,LC-31B3 branch feeds PUMP-LUBE-B through starter and junction box
+LC-31B3,STR-B3-3,high,solid_power,LC-31B3 branch feeds MOV-SI-902B through starter and junction box
+STR-B3-3,JB-B3-03,high,solid_power,LC-31B3 branch feeds MOV-SI-902B through starter and junction box
+JB-B3-03,MOV-SI-902B,high,solid_power,LC-31B3 branch feeds MOV-SI-902B through starter and junction box
+BUS-480B,CB-480B14,high,solid_power,PNL-31B4 solid feeder from BUS-480B
+CB-480B14,PNL-31B4,high,solid_power,PNL-31B4 solid feeder from BUS-480B
+PNL-31B4,STR-B4-1,high,solid_power,PNL-31B4 branch feeds FAN-CONT-B through starter and junction box
+STR-B4-1,JB-B4-01,high,solid_power,PNL-31B4 branch feeds FAN-CONT-B through starter and junction box
+JB-B4-01,FAN-CONT-B,high,solid_power,PNL-31B4 branch feeds FAN-CONT-B through starter and junction box
+PNL-31B4,STR-B4-2,high,solid_power,PNL-31B4 branch feeds PUMP-SAMPLE-B through starter and junction box
+STR-B4-2,JB-B4-02,high,solid_power,PNL-31B4 branch feeds PUMP-SAMPLE-B through starter and junction box
+JB-B4-02,PUMP-SAMPLE-B,high,solid_power,PNL-31B4 branch feeds PUMP-SAMPLE-B through starter and junction box
+PNL-31B4,STR-B4-3,high,solid_power,PNL-31B4 branch feeds MOV-VENT-406B through starter and junction box
+STR-B4-3,JB-B4-03,high,solid_power,PNL-31B4 branch feeds MOV-VENT-406B through starter and junction box
+JB-B4-03,MOV-VENT-406B,high,solid_power,PNL-31B4 branch feeds MOV-VENT-406B through starter and junction box
+BAT-31A,DS-BAT-A,high,solid_power,battery path to BUS-125DCA
+DS-BAT-A,BUS-125DCA,high,solid_power,battery path to BUS-125DCA
+CHG-31A,CB-CHG-A,high,solid_power,charger path to BUS-125DCA
+CB-CHG-A,BUS-125DCA,high,solid_power,charger path to BUS-125DCA
+BUS-125DCA,PNL-DC-A,high,solid_power,BUS-125DCA tap to DC panel
+BUS-125DCA,CB-INV-A,medium,solid_power,BUS-125DCA inverter breaker and inverter feed
+CB-INV-A,INV-31A,medium,solid_power,BUS-125DCA inverter breaker and inverter feed
+INV-31A,BUS-INV-A,medium,solid_power,BUS-125DCA inverter breaker and inverter feed
+BUS-INV-A,PNL-AC-A,high,solid_power,BUS-INV-A tap to AC panel
+BUS-INV-A,RPS-PNL-A,high,solid_power,BUS-INV-A tap to RPS panel
+PNL-AC-A,BUS-120N-A,high,solid_power,AC panel output to BUS-120N-A
+BUS-120N-A,RELAY-K7A1,high,solid_power,BUS-120N-A tap to relay K7A1
+RELAY-K7A1,TB-RPS-A1,medium,dotted_signal,dotted relay signal to RPS terminal block
+TB-RPS-A1,PT-31A1,medium,dotted_signal,dotted instrument signal to PT
+BUS-120N-A,RELAY-K7A2,high,solid_power,BUS-120N-A tap to relay K7A2
+RELAY-K7A2,TB-RPS-A2,medium,dotted_signal,dotted relay signal to RPS terminal block
+TB-RPS-A2,PT-31A2,medium,dotted_signal,dotted instrument signal to PT
+BUS-120N-A,RELAY-K7A3,high,solid_power,BUS-120N-A tap to relay K7A3
+RELAY-K7A3,TB-RPS-A3,medium,dotted_signal,dotted relay signal to RPS terminal block
+TB-RPS-A3,PT-31A3,medium,dotted_signal,dotted instrument signal to PT
+BUS-120N-A,RELAY-K7A4,high,solid_power,BUS-120N-A tap to relay K7A4
+RELAY-K7A4,TB-RPS-A4,medium,dotted_signal,dotted relay signal to RPS terminal block
+TB-RPS-A4,PT-31A4,medium,dotted_signal,dotted instrument signal to PT
+RPS-PNL-A,TB-UPS-A,medium,dashed_control,dashed control line from RPS panel to UPS terminal block
+BAT-31B,DS-BAT-B,high,solid_power,battery path to BUS-125DCB
+DS-BAT-B,BUS-125DCB,high,solid_power,battery path to BUS-125DCB
+CHG-31B,CB-CHG-B,high,solid_power,charger path to BUS-125DCB
+CB-CHG-B,BUS-125DCB,high,solid_power,charger path to BUS-125DCB
+BUS-125DCB,PNL-DC-B,high,solid_power,BUS-125DCB tap to DC panel
+BUS-125DCB,CB-INV-B,medium,solid_power,BUS-125DCB inverter breaker and inverter feed
+CB-INV-B,INV-31B,medium,solid_power,BUS-125DCB inverter breaker and inverter feed
+INV-31B,BUS-INV-B,medium,solid_power,BUS-125DCB inverter breaker and inverter feed
+BUS-INV-B,PNL-AC-B,high,solid_power,BUS-INV-B tap to AC panel
+BUS-INV-B,RPS-PNL-B,high,solid_power,BUS-INV-B tap to RPS panel
+PNL-AC-B,BUS-120N-B,high,solid_power,AC panel output to BUS-120N-B
+BUS-120N-B,RELAY-K7B1,high,solid_power,BUS-120N-B tap to relay K7B1
+RELAY-K7B1,TB-RPS-B1,medium,dotted_signal,dotted relay signal to RPS terminal block
+TB-RPS-B1,PT-31B1,medium,dotted_signal,dotted instrument signal to PT
+BUS-120N-B,RELAY-K7B2,high,solid_power,BUS-120N-B tap to relay K7B2
+RELAY-K7B2,TB-RPS-B2,medium,dotted_signal,dotted relay signal to RPS terminal block
+TB-RPS-B2,PT-31B2,medium,dotted_signal,dotted instrument signal to PT
+BUS-120N-B,RELAY-K7B3,high,solid_power,BUS-120N-B tap to relay K7B3
+RELAY-K7B3,TB-RPS-B3,medium,dotted_signal,dotted relay signal to RPS terminal block
+TB-RPS-B3,PT-31B3,medium,dotted_signal,dotted instrument signal to PT
+BUS-120N-B,RELAY-K7B4,high,solid_power,BUS-120N-B tap to relay K7B4
+RELAY-K7B4,TB-RPS-B4,medium,dotted_signal,dotted relay signal to RPS terminal block
+TB-RPS-B4,PT-31B4,medium,dotted_signal,dotted instrument signal to PT
+RPS-PNL-B,TB-UPS-B,medium,dashed_control,dashed control line from RPS panel to UPS terminal block
+BUS-125DCA,CB-DCAB-TIE,high,solid_power,125 VDC tie breaker between buses
+CB-DCAB-TIE,BUS-125DCB,high,solid_power,125 VDC tie breaker between buses

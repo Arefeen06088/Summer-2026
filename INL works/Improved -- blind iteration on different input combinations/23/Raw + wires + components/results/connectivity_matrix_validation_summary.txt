@@ -1,0 +1,37 @@
+Connectivity matrix validation summary - Document 23
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\23\synthetic_npp_connectivity_matrix_ats_components_shifted_v18.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_matrix.csv): TP=185, FP=36, FN=15, Precision=0.837104, Recall=0.925000, F1=0.878860
+- Jennifer -- Round 2 (round_02_jennifer_matrix.csv): TP=179, FP=20, FN=21, Precision=0.899497, Recall=0.895000, F1=0.897243
+- Diego -- Round 3 (round_03_diego_matrix.csv): TP=185, FP=20, FN=15, Precision=0.902439, Recall=0.925000, F1=0.913580
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=179, FP=20, FN=21, Precision=0.899497, Recall=0.895000, F1=0.897243
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=179, FP=20, FN=21, Precision=0.899497, Recall=0.895000, F1=0.897243
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- ANN-A -- REC-SER-A
+- ANN-A -- RELAY-KA2
+- ANN-B -- REC-SER-B
+- ANN-B -- RELAY-KB2
+- BUS-120AC-A -- FUSE-FU-A
+- BUS-120AC-A -- INST-NIS-A
+- BUS-120AC-B -- FUSE-FU-B
+- BUS-120AC-B -- INST-NIS-B
+- BUS-24DC-C -- PNL-DCS-A
+- BUS-24DC-C -- PNL-DCS-B
+
+False-negative edge examples:
+- ANN-A -- PNL-RPS-A
+- ANN-B -- PNL-RPS-B
+- BUS-4160-A -- CB-1C-FDR
+- BUS-480-1A -- CB-1A-MAIN
+- BUS-480-1B -- CB-1B-MAIN
+- BUS-480-1C -- CB-1C-MAIN
+- BUS-480-2A -- CB-2A-MAIN
+- BUS-480-2B -- CB-2B-MAIN
+- BUS-480-2C -- CB-2C-MAIN
+- FUSE-FU-A -- PNL-RPS-A

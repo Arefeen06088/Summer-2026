@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 22
+Input configuration: Raw + components
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\22\synthetic_npp_connectivity_matrix_clean(1).csv
+GT normalized nodes: 200; GT normalized edges: 208
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from doc22_round1_jennifer_connectivity_matrix.csv with Precision=0.552995, Recall=0.576923, F1=0.564706
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=120, FP=97, FN=88, Precision=0.552995, Recall=0.576923, F1=0.564706
+Primary issue: extra/misnamed/intermediate extracted nodes created false-positive edges.
+
+Extra/non-GT nodes most responsible for FP edges: BUS-480-B 480V LOAD CENTER B (6 FP edges); BUS-125A 125 VDC BUS A (6 FP edges); BUS-125B 125 VDC BUS B (6 FP edges); BUS-480-D 480V LOAD CENTER D (6 FP edges); BUS-480-A 480V LOAD CENTER A (6 FP edges); BUS-480-C 480V LOAD CENTER C (6 FP edges); BUS-13A 13.8 KV AUX BUS A (5 FP edges); BUS-UPS-B 120 VAC UPS BUS B (5 FP edges).
+Missing GT nodes examples: BUS-125A; BUS-125B; BUS-13A; BUS-13B; BUS-4160-A; BUS-4160-B; BUS-4160-C; BUS-4160-D; BUS-480-A; BUS-480-B.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: CB-RHR-A -- CB-SI-A; CB-RHR-B -- CB-SI-B; CB-RHR-C -- CB-SI-C; CB-RHR-D -- CB-SI-D; CB-SI-A -- PNL-120-A; CB-SI-B -- PNL-120-B; CB-SI-C -- PNL-120-C; CB-SI-D -- PNL-120-D.
+False-negative edge examples among GT-known nodes: CB-13A1 -- SWYD-345; CB-13B1 -- SWYD-345; CB-RHR-A -- RELAY-KA1; CB-RHR-B -- RELAY-KB1; CB-RHR-C -- RELAY-KC1; CB-RHR-D -- RELAY-KD1; GSU-T01 -- SWYD-345; JB-A1 -- PNL-120-A.
+False-positive examples involving extra/non-GT nodes: 13.8KV SOURCE/SWYD LINE -- CB-13A1; 13.8KV SOURCE/SWYD LINE -- CB-13B1; 13.8KV SOURCE/SWYD LINE -- GSU-T01; 13.8KV SOURCE/SWYD LINE -- SWYD-345; AC FEED TO CHGR-125A -- CB-DC-A1; AC FEED TO CHGR-125B -- CB-DC-B1; ANN-PNL-CR -- BUS-UPS-A 120 VAC UPS BUS A; AUX-XFMR-1A -- BUS-13A 13.8 KV AUX BUS A.
+False-negative examples involving missing/differently named nodes: ANN-PNL-CR -- BUS-UPS-A; AUX-XFMR-1A -- BUS-13A; AUX-XFMR-1B -- BUS-13A; BAT-125A -- BUS-125A; BAT-125B -- BUS-125B; BUS-125A -- CHGR-125A; BUS-125A -- DC-MCC-A; BUS-125A -- DIODE-OR-A.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (BUS-480-B 480V LOAD CENTER B; BUS-125A 125 VDC BUS A; BUS-125B 125 VDC BUS B; BUS-480-D 480V LOAD CENTER D; BUS-480-A 480V LOAD CENTER A), the final-row metrics would be TP=120, FP=67, FN=88, Precision=0.641711, Recall=0.576923, F1=0.607595.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=120, FP=16, FN=88, Precision=0.882353, Recall=0.576923, F1=0.697674.

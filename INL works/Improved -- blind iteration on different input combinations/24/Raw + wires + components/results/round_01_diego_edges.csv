@@ -1,0 +1,222 @@
+source,target,confidence,status,evidence
+OFFSITE-1,CB-101A,high,accepted,solid source conductor
+CB-101A,TR-SAT-1A,high,accepted,solid conductor
+TR-SAT-1A,BUS-101A,high,accepted,vertical tap with junction dot
+EDG-1A,CB-DG1A,high,accepted,vertical solid conductor
+CB-DG1A,BUS-101A,high,accepted,vertical tap with junction dot
+SW-MAN-A,TB-DG-A,high,accepted,dashed control line
+TB-DG-A,CB-DG1A,high,accepted,dashed control line to breaker
+BUS-101A,CB-201A,high,accepted,solid vertical feeder
+CB-201A,TR-1A,high,accepted,solid vertical conductor
+TR-1A,CB-202A,high,accepted,solid vertical conductor
+CB-202A,BUS-201A,high,accepted,solid tap to lower bus
+OFFSITE-2,CB-101B,high,accepted,solid source conductor
+CB-101B,TR-SAT-1B,high,accepted,solid conductor
+TR-SAT-1B,BUS-101B,high,accepted,vertical tap with junction dot
+EDG-1B,CB-DG1B,high,accepted,vertical solid conductor
+CB-DG1B,BUS-101B,high,accepted,vertical tap with junction dot
+SW-MAN-B,TB-DG-B,high,accepted,dashed control line
+TB-DG-B,CB-DG1B,high,accepted,dashed control line to breaker
+BUS-101B,CB-201B,high,accepted,solid vertical feeder
+CB-201B,TR-1B,high,accepted,solid vertical conductor
+TR-1B,CB-202B,high,accepted,solid vertical conductor
+CB-202B,BUS-201B,high,accepted,solid tap to lower bus
+BUS-101A,CB-TIE-1,high,accepted,top bus enters tie breaker
+CB-TIE-1,BUS-101B,high,accepted,top bus exits tie breaker
+CB-TIE-1,SYNC-CAB,medium,accepted,vertical routed control path from tie breaker to sync cabinet
+BUS-201A,CB-2A01,high,accepted,solid bus tap with junction dot
+CB-2A01,DS-2A01,high,accepted,vertical solid feeder
+DS-2A01,MCC-2A01,high,accepted,vertical solid feeder
+MCC-2A01,TB-2A01,high,accepted,vertical solid feeder
+TB-2A01,PUMP-P201A,high,accepted,vertical solid feeder to load
+MCC-2A01,RELAY-K2A01,high,accepted,dashed control/trip drop from MCC
+BUS-201A,CB-2A02,high,accepted,solid bus tap with junction dot
+CB-2A02,DS-2A02,high,accepted,vertical solid feeder
+DS-2A02,MCC-2A02,high,accepted,vertical solid feeder
+MCC-2A02,TB-2A02,high,accepted,vertical solid feeder
+TB-2A02,FAN-F202A,high,accepted,vertical solid feeder to load
+MCC-2A02,RELAY-K2A02,high,accepted,dashed control/trip drop from MCC
+BUS-201A,CB-2A03,high,accepted,solid bus tap with junction dot
+CB-2A03,DS-2A03,high,accepted,vertical solid feeder
+DS-2A03,MCC-2A03,high,accepted,vertical solid feeder
+MCC-2A03,TB-2A03,high,accepted,vertical solid feeder
+TB-2A03,MOV-HV203A,high,accepted,vertical solid feeder to load
+MCC-2A03,RELAY-K2A03,high,accepted,dashed control/trip drop from MCC
+BUS-201A,CB-2A04,high,accepted,solid bus tap with junction dot
+CB-2A04,DS-2A04,high,accepted,vertical solid feeder
+DS-2A04,MCC-2A04,high,accepted,vertical solid feeder
+MCC-2A04,TB-2A04,high,accepted,vertical solid feeder
+TB-2A04,PUMP-P204A,high,accepted,vertical solid feeder to load
+MCC-2A04,RELAY-K2A04,high,accepted,dashed control/trip drop from MCC
+BUS-201A,CB-2A05,high,accepted,solid bus tap with junction dot
+CB-2A05,DS-2A05,high,accepted,vertical solid feeder
+DS-2A05,MCC-2A05,high,accepted,vertical solid feeder
+MCC-2A05,TB-2A05,high,accepted,vertical solid feeder
+TB-2A05,CHLR-205A,high,accepted,vertical solid feeder to load
+MCC-2A05,RELAY-K2A05,high,accepted,dashed control/trip drop from MCC
+BUS-201A,CB-2A06,high,accepted,solid bus tap with junction dot
+CB-2A06,DS-2A06,high,accepted,vertical solid feeder
+DS-2A06,MCC-2A06,high,accepted,vertical solid feeder
+MCC-2A06,TB-2A06,high,accepted,vertical solid feeder
+TB-2A06,HTR-206A,high,accepted,vertical solid feeder to load
+MCC-2A06,RELAY-K2A06,high,accepted,dashed control/trip drop from MCC
+BUS-201A,CB-2A07,high,accepted,solid bus tap with junction dot
+CB-2A07,DS-2A07,high,accepted,vertical solid feeder
+DS-2A07,MCC-2A07,high,accepted,vertical solid feeder
+MCC-2A07,TB-2A07,high,accepted,vertical solid feeder
+TB-2A07,VALVE-MV207A,high,accepted,vertical solid feeder to load
+MCC-2A07,RELAY-K2A07,high,accepted,dashed control/trip drop from MCC
+BUS-201A,CB-2A08,high,accepted,solid bus tap with junction dot
+CB-2A08,DS-2A08,high,accepted,vertical solid feeder
+DS-2A08,MCC-2A08,high,accepted,vertical solid feeder
+MCC-2A08,TB-2A08,high,accepted,vertical solid feeder
+TB-2A08,PMP-LP208A,high,accepted,vertical solid feeder to load
+MCC-2A08,RELAY-K2A08,high,accepted,dashed control/trip drop from MCC
+BUS-201A,CB-2A09,high,accepted,solid bus tap with junction dot
+CB-2A09,DS-2A09,high,accepted,vertical solid feeder
+DS-2A09,MCC-2A09,high,accepted,vertical solid feeder
+MCC-2A09,TB-2A09,high,accepted,vertical solid feeder
+TB-2A09,COMP-C209A,high,accepted,vertical solid feeder to load
+MCC-2A09,RELAY-K2A09,high,accepted,dashed control/trip drop from MCC
+HS-2A01,RELAY-K2A01,high,accepted,adjacent dashed control/trip chain
+RELAY-K2A01,HS-2A02,high,accepted,adjacent dashed control/trip chain
+HS-2A02,RELAY-K2A02,high,accepted,adjacent dashed control/trip chain
+RELAY-K2A02,HS-2A03,high,accepted,adjacent dashed control/trip chain
+HS-2A03,RELAY-K2A03,high,accepted,adjacent dashed control/trip chain
+RELAY-K2A03,HS-2A04,high,accepted,adjacent dashed control/trip chain
+HS-2A04,RELAY-K2A04,high,accepted,adjacent dashed control/trip chain
+RELAY-K2A04,HS-2A05,high,accepted,adjacent dashed control/trip chain
+HS-2A05,RELAY-K2A05,high,accepted,adjacent dashed control/trip chain
+RELAY-K2A05,HS-2A06,high,accepted,adjacent dashed control/trip chain
+HS-2A06,RELAY-K2A06,high,accepted,adjacent dashed control/trip chain
+RELAY-K2A06,HS-2A07,high,accepted,adjacent dashed control/trip chain
+HS-2A07,RELAY-K2A07,high,accepted,adjacent dashed control/trip chain
+RELAY-K2A07,HS-2A08,high,accepted,adjacent dashed control/trip chain
+HS-2A08,RELAY-K2A08,high,accepted,adjacent dashed control/trip chain
+RELAY-K2A08,HS-2A09,high,accepted,adjacent dashed control/trip chain
+HS-2A09,RELAY-K2A09,high,accepted,adjacent dashed control/trip chain
+BUS-201B,CB-2B01,high,accepted,solid bus tap with junction dot
+CB-2B01,DS-2B01,high,accepted,vertical solid feeder
+DS-2B01,MCC-2B01,high,accepted,vertical solid feeder
+MCC-2B01,TB-2B01,high,accepted,vertical solid feeder
+TB-2B01,PUMP-P201B,high,accepted,vertical solid feeder to load
+MCC-2B01,RELAY-K2B01,high,accepted,dashed control/trip drop from MCC
+BUS-201B,CB-2B02,high,accepted,solid bus tap with junction dot
+CB-2B02,DS-2B02,high,accepted,vertical solid feeder
+DS-2B02,MCC-2B02,high,accepted,vertical solid feeder
+MCC-2B02,TB-2B02,high,accepted,vertical solid feeder
+TB-2B02,FAN-F202B,high,accepted,vertical solid feeder to load
+MCC-2B02,RELAY-K2B02,high,accepted,dashed control/trip drop from MCC
+BUS-201B,CB-2B03,high,accepted,solid bus tap with junction dot
+CB-2B03,DS-2B03,high,accepted,vertical solid feeder
+DS-2B03,MCC-2B03,high,accepted,vertical solid feeder
+MCC-2B03,TB-2B03,high,accepted,vertical solid feeder
+TB-2B03,MOV-HV203B,high,accepted,vertical solid feeder to load
+MCC-2B03,RELAY-K2B03,high,accepted,dashed control/trip drop from MCC
+BUS-201B,CB-2B04,high,accepted,solid bus tap with junction dot
+CB-2B04,DS-2B04,high,accepted,vertical solid feeder
+DS-2B04,MCC-2B04,high,accepted,vertical solid feeder
+MCC-2B04,TB-2B04,high,accepted,vertical solid feeder
+TB-2B04,PUMP-P204B,high,accepted,vertical solid feeder to load
+MCC-2B04,RELAY-K2B04,high,accepted,dashed control/trip drop from MCC
+BUS-201B,CB-2B05,high,accepted,solid bus tap with junction dot
+CB-2B05,DS-2B05,high,accepted,vertical solid feeder
+DS-2B05,MCC-2B05,high,accepted,vertical solid feeder
+MCC-2B05,TB-2B05,high,accepted,vertical solid feeder
+TB-2B05,CHLR-205B,high,accepted,vertical solid feeder to load
+MCC-2B05,RELAY-K2B05,high,accepted,dashed control/trip drop from MCC
+BUS-201B,CB-2B06,high,accepted,solid bus tap with junction dot
+CB-2B06,DS-2B06,high,accepted,vertical solid feeder
+DS-2B06,MCC-2B06,high,accepted,vertical solid feeder
+MCC-2B06,TB-2B06,high,accepted,vertical solid feeder
+TB-2B06,HTR-206B,high,accepted,vertical solid feeder to load
+MCC-2B06,RELAY-K2B06,high,accepted,dashed control/trip drop from MCC
+BUS-201B,CB-2B07,high,accepted,solid bus tap with junction dot
+CB-2B07,DS-2B07,high,accepted,vertical solid feeder
+DS-2B07,MCC-2B07,high,accepted,vertical solid feeder
+MCC-2B07,TB-2B07,high,accepted,vertical solid feeder
+TB-2B07,VALVE-MV207B,high,accepted,vertical solid feeder to load
+MCC-2B07,RELAY-K2B07,high,accepted,dashed control/trip drop from MCC
+BUS-201B,CB-2B08,high,accepted,solid bus tap with junction dot
+CB-2B08,DS-2B08,high,accepted,vertical solid feeder
+DS-2B08,MCC-2B08,high,accepted,vertical solid feeder
+MCC-2B08,TB-2B08,high,accepted,vertical solid feeder
+TB-2B08,PMP-LP208B,high,accepted,vertical solid feeder to load
+MCC-2B08,RELAY-K2B08,high,accepted,dashed control/trip drop from MCC
+BUS-201B,CB-2B09,high,accepted,solid bus tap with junction dot
+CB-2B09,DS-2B09,high,accepted,vertical solid feeder
+DS-2B09,MCC-2B09,high,accepted,vertical solid feeder
+MCC-2B09,TB-2B09,high,accepted,vertical solid feeder
+TB-2B09,COMP-C209B,high,accepted,vertical solid feeder to load
+MCC-2B09,RELAY-K2B09,high,accepted,dashed control/trip drop from MCC
+HS-2B01,RELAY-K2B01,high,accepted,adjacent dashed control/trip chain
+RELAY-K2B01,HS-2B02,high,accepted,adjacent dashed control/trip chain
+HS-2B02,RELAY-K2B02,high,accepted,adjacent dashed control/trip chain
+RELAY-K2B02,HS-2B03,high,accepted,adjacent dashed control/trip chain
+HS-2B03,RELAY-K2B03,high,accepted,adjacent dashed control/trip chain
+RELAY-K2B03,HS-2B04,high,accepted,adjacent dashed control/trip chain
+HS-2B04,RELAY-K2B04,high,accepted,adjacent dashed control/trip chain
+RELAY-K2B04,HS-2B05,high,accepted,adjacent dashed control/trip chain
+HS-2B05,RELAY-K2B05,high,accepted,adjacent dashed control/trip chain
+RELAY-K2B05,HS-2B06,high,accepted,adjacent dashed control/trip chain
+HS-2B06,RELAY-K2B06,high,accepted,adjacent dashed control/trip chain
+RELAY-K2B06,HS-2B07,high,accepted,adjacent dashed control/trip chain
+HS-2B07,RELAY-K2B07,high,accepted,adjacent dashed control/trip chain
+RELAY-K2B07,HS-2B08,high,accepted,adjacent dashed control/trip chain
+HS-2B08,RELAY-K2B08,high,accepted,adjacent dashed control/trip chain
+RELAY-K2B08,HS-2B09,high,accepted,adjacent dashed control/trip chain
+HS-2B09,RELAY-K2B09,high,accepted,adjacent dashed control/trip chain
+DC-BUS-125A,BAT-125A,high,accepted,solid DC bus tap
+DC-BUS-125A,CHG-125A,high,accepted,solid DC bus tap
+DC-BUS-125A,INV-120A,high,accepted,solid DC bus tap
+DC-BUS-125A,PNL-DC-A,high,accepted,solid DC bus tap
+DC-BUS-125A,METER-V1,high,accepted,meter tap at bus end
+PNL-DC-A,ESFAS-PNL-A,high,accepted,solid horizontal conductor
+PNL-DC-A,GND-DC-A,high,accepted,dashed ground drop
+INV-120A,PNL-AC-A,high,accepted,solid vertical conductor
+PNL-AC-A,RPS-PNL-A,high,accepted,dashed control/trip line
+RPS-PNL-A,TRIP-MOD-A,high,accepted,dashed control/trip line
+RPS-PNL-A,RELAY-K27A,medium,accepted,dashed control drop to relay chain
+RELAY-K27A,RELAY-K59A,high,accepted,dashed relay chain
+RELAY-K59A,RELAY-K81A,high,accepted,dashed relay chain
+RELAY-K81A,RELAY-K86A,high,accepted,dashed relay chain
+TRIP-MOD-A,RELAY-K86A,high,accepted,dashed vertical control/trip line
+PT-401A,JB-401A,medium,accepted,dotted signal route
+LT-402A,JB-401A,high,accepted,dotted signal route
+FT-403A,JB-401A,high,accepted,dotted signal route
+JB-401A,TB-RPS-A,high,accepted,dotted signal route
+JB-401A,GND-401A,high,accepted,dashed grounding drop
+TB-RPS-A,RPS-PNL-A,medium,accepted,dotted signal route to RPS panel
+DC-BUS-125B,BAT-125B,high,accepted,solid DC bus tap
+DC-BUS-125B,CHG-125B,high,accepted,solid DC bus tap
+DC-BUS-125B,INV-120B,high,accepted,solid DC bus tap
+DC-BUS-125B,PNL-DC-B,high,accepted,solid DC bus tap
+PNL-DC-B,ESFAS-PNL-B,high,accepted,solid horizontal conductor
+PNL-DC-B,GND-DC-B,high,accepted,dashed ground drop
+INV-120B,PNL-AC-B,high,accepted,solid vertical conductor
+PNL-AC-B,RPS-PNL-B,high,accepted,dashed control/trip line
+RPS-PNL-B,TRIP-MOD-B,high,accepted,dashed control/trip line
+RPS-PNL-B,RELAY-K27B,medium,accepted,dashed control drop to relay chain
+RELAY-K27B,RELAY-K59B,high,accepted,dashed relay chain
+RELAY-K59B,RELAY-K81B,high,accepted,dashed relay chain
+RELAY-K81B,RELAY-K86B,high,accepted,dashed relay chain
+TRIP-MOD-B,RELAY-K86B,high,accepted,dashed vertical control/trip line
+PT-401B,JB-401B,medium,accepted,dotted signal route
+LT-402B,JB-401B,high,accepted,dotted signal route
+FT-403B,JB-401B,high,accepted,dotted signal route
+JB-401B,TB-RPS-B,high,accepted,dotted signal route
+JB-401B,GND-401B,high,accepted,dashed grounding drop
+TB-RPS-B,RPS-PNL-B,medium,accepted,dotted signal route to RPS panel
+LOAD-SHED-CAB,TDR-1,high,accepted,dashed horizontal control/trip line
+LOAD-SHED-CAB,TDR-2,high,accepted,dashed horizontal control/trip line
+LOAD-SHED-CAB,LAMP-ALM-A,medium,accepted,dotted signal branch
+LOAD-SHED-CAB,LAMP-ALM-B,medium,accepted,dotted signal branch
+LOAD-SHED-CAB,ANN-PNL-1,medium,accepted,vertical dotted/signal route
+ANN-PNL-1,SEQ-REC-1,high,accepted,dotted signal line
+SYNC-CAB,LOAD-SHED-CAB,medium,removed_by_jennifer,possible vertical routing near cabinets
+RELAY-K2A09,SYNC-CAB,low,uncertain,possible continuation near crowded note/crop edge
+TRIP-MOD-A,LOAD-SHED-CAB,low,uncertain,nearby dashed route but no clean endpoint
+TRIP-MOD-B,LOAD-SHED-CAB,low,uncertain,nearby dashed route but no clean endpoint
+ESFAS-PNL-A,TDR-1,low,uncertain,possible route through channel without visible termination
+ESFAS-PNL-B,TDR-2,low,uncertain,possible route through channel without visible termination
+LAMP-ALM-A,LAMP-ALM-B,low,removed_by_jennifer,"shared dotted signal route, not a direct edge"

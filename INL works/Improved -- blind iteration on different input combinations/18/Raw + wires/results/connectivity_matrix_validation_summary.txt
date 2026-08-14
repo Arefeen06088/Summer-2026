@@ -1,0 +1,18 @@
+Connectivity matrix validation summary
+Document: 18
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\18\synthetic_nuclear_connectivity_matrix_readable.csv
+GT normalized nodes: 200; GT normalized edges: 200
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from round1_jennifer_matrix.csv with Precision=0.980100, Recall=0.985000, F1=0.982544
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=197, FP=4, FN=3, Precision=0.980100, Recall=0.985000, F1=0.982544
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+No extra/non-GT extracted nodes were attached to false-positive edges in the final edge set.
+Missing GT nodes examples: none.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: BUS-4160A -- TB-RPS-A; JB-RPS-A -- RELAY-K102; JB-RPS-B -- RELAY-K202; TB-RPS-A -- TR-480-A1.
+False-negative edge examples among GT-known nodes: BUS-4160A -- TR-480-A1; JB-RPS-A -- RELAY-K101; JB-RPS-B -- RELAY-K201.
+
+What-if node pruning insight: no non-GT intermediate nodes were available to prune; the remaining drop is mainly connectivity/edge discovery or missing direct GT edges.

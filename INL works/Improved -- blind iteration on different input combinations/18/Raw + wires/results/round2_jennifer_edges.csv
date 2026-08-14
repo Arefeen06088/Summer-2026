@@ -1,0 +1,202 @@
+edge_id,u,v,confidence,evidence
+0,GRID-SWYD-1,CB-GRID-A,0.98,solid switchyard feeder
+1,CB-GRID-A,BB-SWYD-230,0.98,solid switchyard feeder
+2,GRID-SWYD-2,CB-GRID-B,0.98,solid switchyard feeder
+3,CB-GRID-B,BB-SWYD-230,0.98,solid switchyard feeder
+4,BB-SWYD-230,TR-SAT-1A,0.98,solid standby transformer feeder
+5,TR-SAT-1A,CB-SAT-A,0.98,solid standby transformer feeder
+6,CB-SAT-A,BUS-4160A,0.98,solid standby transformer feeder
+7,BB-SWYD-230,TR-SAT-1B,0.98,solid standby transformer feeder
+8,TR-SAT-1B,CB-SAT-B,0.98,solid standby transformer feeder
+9,CB-SAT-B,BUS-4160B,0.98,solid standby transformer feeder
+10,BB-SWYD-230,CB-GEN-ISO,0.98,solid generator isolation path
+11,CB-GEN-ISO,GEN-MAIN-1,0.98,solid generator isolation path
+12,GEN-MAIN-1,TR-UAT-1A,0.95,solid UAT branch; lower breaker terminal is dangling
+13,TR-UAT-1A,CB-UAT-A,0.95,solid UAT branch; lower breaker terminal is dangling
+14,GEN-MAIN-1,TR-UAT-1B,0.95,solid UAT branch; lower breaker terminal is dangling
+15,TR-UAT-1B,CB-UAT-B,0.95,solid UAT branch; lower breaker terminal is dangling
+16,BUS-4160A,CB-DG-A,0.98,solid diesel generator feeder
+17,CB-DG-A,DG-1A,0.98,solid diesel generator feeder
+18,BUS-4160B,CB-DG-B,0.98,solid diesel generator feeder
+19,CB-DG-B,DG-1B,0.98,solid diesel generator feeder
+20,BUS-4160A,GND-4160A,0.96,solid named ground tap
+21,BUS-4160B,GND-4160B,0.96,solid named ground tap
+22,BUS-4160A,CB-4160-TIE,0.97,solid 4160 bus tie marked N.O.
+23,CB-4160-TIE,BUS-4160B,0.97,solid 4160 bus tie marked N.O.
+24,BUS-4160A,TB-RPS-A,0.93,solid A feeder; terminal block visibly inline
+25,TB-RPS-A,TR-480-A1,0.93,solid A feeder; terminal block visibly inline
+26,TR-480-A1,CB-480A-IN,0.93,solid A feeder; terminal block visibly inline
+27,CB-480A-IN,BUS-480A,0.93,solid A feeder; terminal block visibly inline
+28,BUS-4160A,TR-480-B1,0.98,solid 4160-to-480 feeder
+29,TR-480-B1,CB-480B-IN,0.98,solid 4160-to-480 feeder
+30,CB-480B-IN,BUS-480B,0.98,solid 4160-to-480 feeder
+31,BUS-4160B,TR-480-C1,0.98,solid 4160-to-480 feeder
+32,TR-480-C1,CB-480C-IN,0.98,solid 4160-to-480 feeder
+33,CB-480C-IN,BUS-480C,0.98,solid 4160-to-480 feeder
+34,BUS-4160B,TR-480-D1,0.98,solid 4160-to-480 feeder
+35,TR-480-D1,CB-480D-IN,0.98,solid 4160-to-480 feeder
+36,CB-480D-IN,BUS-480D,0.98,solid 4160-to-480 feeder
+37,BUS-4160A,PT-4160A,0.95,dashed PT/RPS control chain
+38,PT-4160A,FU-PT-A,0.95,dashed PT/RPS control chain
+39,FU-PT-A,XFMR-CTRL-A,0.95,dashed PT/RPS control chain
+40,XFMR-CTRL-A,TB-RPS-A,0.95,dashed PT/RPS control chain
+41,TB-RPS-A,SW-43A,0.95,dashed PT/RPS control chain
+42,BUS-4160B,PT-4160B,0.95,dashed PT/RPS control chain
+43,PT-4160B,FU-PT-B,0.95,dashed PT/RPS control chain
+44,FU-PT-B,XFMR-CTRL-B,0.95,dashed PT/RPS control chain
+45,XFMR-CTRL-B,TB-RPS-B,0.95,dashed PT/RPS control chain
+46,TB-RPS-B,SW-43B,0.95,dashed PT/RPS control chain
+47,BUS-480A,CB-A01,0.98,solid 480V bus-tap load chain
+48,CB-A01,DS-A01,0.98,solid 480V bus-tap load chain
+49,DS-A01,MS-A01,0.98,solid 480V bus-tap load chain
+50,MS-A01,PUMP-CCW-A1,0.98,solid 480V bus-tap load chain
+51,BUS-480A,CB-A02,0.98,solid 480V bus-tap load chain
+52,CB-A02,DS-A02,0.98,solid 480V bus-tap load chain
+53,DS-A02,MS-A02,0.98,solid 480V bus-tap load chain
+54,MS-A02,PUMP-RHR-A1,0.98,solid 480V bus-tap load chain
+55,BUS-480A,CB-A03,0.98,solid 480V bus-tap load chain
+56,CB-A03,FS-A03,0.98,solid 480V bus-tap load chain
+57,FS-A03,MS-A03,0.98,solid 480V bus-tap load chain
+58,MS-A03,FAN-RB-A1,0.98,solid 480V bus-tap load chain
+59,BUS-480A,CB-A04,0.98,solid 480V bus-tap load chain
+60,CB-A04,DS-A04,0.98,solid 480V bus-tap load chain
+61,DS-A04,RY-A04,0.98,solid 480V bus-tap load chain
+62,RY-A04,MOV-SI-A11,0.98,solid 480V bus-tap load chain
+63,BUS-480A,CB-A05,0.98,solid 480V bus-tap load chain
+64,CB-A05,DS-A05,0.98,solid 480V bus-tap load chain
+65,DS-A05,CP-A05,0.98,solid 480V bus-tap load chain
+66,CP-A05,PNL-LTG-A1,0.98,solid 480V bus-tap load chain
+67,BUS-480A,CB-A06,0.98,solid 480V bus-tap load chain
+68,CB-A06,DS-A06,0.98,solid 480V bus-tap load chain
+69,DS-A06,MS-A06,0.98,solid 480V bus-tap load chain
+70,MS-A06,PUMP-AFW-A1,0.98,solid 480V bus-tap load chain
+71,BUS-480A,CB-A07,0.98,solid 480V bus-tap load chain
+72,CB-A07,FS-A07,0.98,solid 480V bus-tap load chain
+73,FS-A07,FU-A07,0.98,solid 480V bus-tap load chain
+74,FU-A07,HTR-PZR-A1,0.98,solid 480V bus-tap load chain
+75,BUS-480A,CB-A08,0.98,solid 480V bus-tap load chain
+76,CB-A08,DS-A08,0.98,solid 480V bus-tap load chain
+77,DS-A08,TB-A08,0.98,solid 480V bus-tap load chain
+78,TB-A08,SPARE-A8,0.98,solid 480V bus-tap load chain
+79,BUS-480B,CB-B01,0.98,solid 480V bus-tap load chain
+80,CB-B01,DS-B01,0.98,solid 480V bus-tap load chain
+81,DS-B01,MS-B01,0.98,solid 480V bus-tap load chain
+82,MS-B01,PUMP-CCW-B1,0.98,solid 480V bus-tap load chain
+83,BUS-480B,CB-B02,0.98,solid 480V bus-tap load chain
+84,CB-B02,DS-B02,0.98,solid 480V bus-tap load chain
+85,DS-B02,MS-B02,0.98,solid 480V bus-tap load chain
+86,MS-B02,PUMP-RHR-B1,0.98,solid 480V bus-tap load chain
+87,BUS-480B,CB-B03,0.98,solid 480V bus-tap load chain
+88,CB-B03,FS-B03,0.98,solid 480V bus-tap load chain
+89,FS-B03,MS-B03,0.98,solid 480V bus-tap load chain
+90,MS-B03,FAN-FUEL-B1,0.98,solid 480V bus-tap load chain
+91,BUS-480B,CB-B04,0.98,solid 480V bus-tap load chain
+92,CB-B04,DS-B04,0.98,solid 480V bus-tap load chain
+93,DS-B04,RY-B04,0.98,solid 480V bus-tap load chain
+94,RY-B04,MOV-CCW-B21,0.98,solid 480V bus-tap load chain
+95,BUS-480B,CB-B05,0.98,solid 480V bus-tap load chain
+96,CB-B05,DS-B05,0.98,solid 480V bus-tap load chain
+97,DS-B05,CP-B05,0.98,solid 480V bus-tap load chain
+98,CP-B05,MCC-AUX-B6,0.98,solid 480V bus-tap load chain
+99,BUS-480B,CB-B06,0.98,solid 480V bus-tap load chain
+100,CB-B06,DS-B06,0.98,solid 480V bus-tap load chain
+101,DS-B06,MS-B06,0.98,solid 480V bus-tap load chain
+102,MS-B06,AIR-CMP-B1,0.98,solid 480V bus-tap load chain
+103,BUS-480B,CB-B07,0.98,solid 480V bus-tap load chain
+104,CB-B07,FS-B07,0.98,solid 480V bus-tap load chain
+105,FS-B07,RY-B07,0.98,solid 480V bus-tap load chain
+106,RY-B07,VLV-CHG-B1,0.98,solid 480V bus-tap load chain
+107,BUS-480C,CB-C01,0.98,solid 480V bus-tap load chain
+108,CB-C01,DS-C01,0.98,solid 480V bus-tap load chain
+109,DS-C01,MS-C01,0.98,solid 480V bus-tap load chain
+110,MS-C01,PUMP-HPCI-C1,0.98,solid 480V bus-tap load chain
+111,BUS-480C,CB-C02,0.98,solid 480V bus-tap load chain
+112,CB-C02,DS-C02,0.98,solid 480V bus-tap load chain
+113,DS-C02,MS-C02,0.98,solid 480V bus-tap load chain
+114,MS-C02,PUMP-RCW-C1,0.98,solid 480V bus-tap load chain
+115,BUS-480C,CB-C03,0.98,solid 480V bus-tap load chain
+116,CB-C03,FS-C03,0.98,solid 480V bus-tap load chain
+117,FS-C03,MS-C03,0.98,solid 480V bus-tap load chain
+118,MS-C03,FAN-RB-C1,0.98,solid 480V bus-tap load chain
+119,BUS-480C,CB-C04,0.98,solid 480V bus-tap load chain
+120,CB-C04,DS-C04,0.98,solid 480V bus-tap load chain
+121,DS-C04,RY-C04,0.98,solid 480V bus-tap load chain
+122,RY-C04,MOV-RHR-C11,0.98,solid 480V bus-tap load chain
+123,BUS-480C,CB-C05,0.98,solid 480V bus-tap load chain
+124,CB-C05,DS-C05,0.98,solid 480V bus-tap load chain
+125,DS-C05,MS-C05,0.98,solid 480V bus-tap load chain
+126,MS-C05,PUMP-SEAL-C1,0.98,solid 480V bus-tap load chain
+127,BUS-480C,CB-C06,0.98,solid 480V bus-tap load chain
+128,CB-C06,DS-C06,0.98,solid 480V bus-tap load chain
+129,DS-C06,CP-C06,0.98,solid 480V bus-tap load chain
+130,CP-C06,PNL-IC-C7,0.98,solid 480V bus-tap load chain
+131,BUS-480C,CB-C07,0.98,solid 480V bus-tap load chain
+132,CB-C07,FS-C07,0.98,solid 480V bus-tap load chain
+133,FS-C07,MS-C07,0.98,solid 480V bus-tap load chain
+134,MS-C07,SUMP-PMP-C1,0.98,solid 480V bus-tap load chain
+135,BUS-480C,CB-C08,0.98,solid 480V bus-tap load chain
+136,CB-C08,DS-C08,0.98,solid 480V bus-tap load chain
+137,DS-C08,FU-C08,0.98,solid 480V bus-tap load chain
+138,FU-C08,HTR-VENT-C2,0.98,solid 480V bus-tap load chain
+139,BUS-480D,CB-D01,0.98,solid 480V bus-tap load chain
+140,CB-D01,DS-D01,0.98,solid 480V bus-tap load chain
+141,DS-D01,MS-D01,0.98,solid 480V bus-tap load chain
+142,MS-D01,PUMP-AFW-D1,0.98,solid 480V bus-tap load chain
+143,BUS-480D,CB-D02,0.98,solid 480V bus-tap load chain
+144,CB-D02,DS-D02,0.98,solid 480V bus-tap load chain
+145,DS-D02,MS-D02,0.98,solid 480V bus-tap load chain
+146,MS-D02,FAN-CR-D1,0.98,solid 480V bus-tap load chain
+147,BUS-480D,CB-D03,0.98,solid 480V bus-tap load chain
+148,CB-D03,FS-D03,0.98,solid 480V bus-tap load chain
+149,FS-D03,RY-D03,0.98,solid 480V bus-tap load chain
+150,RY-D03,MOV-SI-D21,0.98,solid 480V bus-tap load chain
+151,BUS-480D,CB-D04,0.98,solid 480V bus-tap load chain
+152,CB-D04,DS-D04,0.98,solid 480V bus-tap load chain
+153,DS-D04,MS-D04,0.98,solid 480V bus-tap load chain
+154,MS-D04,PUMP-LUBE-D1,0.98,solid 480V bus-tap load chain
+155,BUS-480D,CB-D05,0.98,solid 480V bus-tap load chain
+156,CB-D05,DS-D05,0.98,solid 480V bus-tap load chain
+157,DS-D05,CP-D05,0.98,solid 480V bus-tap load chain
+158,CP-D05,PNL-ESS-D5,0.98,solid 480V bus-tap load chain
+159,BUS-480D,CB-D06,0.98,solid 480V bus-tap load chain
+160,CB-D06,DS-D06,0.98,solid 480V bus-tap load chain
+161,DS-D06,MS-D06,0.98,solid 480V bus-tap load chain
+162,MS-D06,COMP-AIR-D1,0.98,solid 480V bus-tap load chain
+163,BUS-480D,CB-D07,0.98,solid 480V bus-tap load chain
+164,CB-D07,FS-D07,0.98,solid 480V bus-tap load chain
+165,FS-D07,TB-D07,0.98,solid 480V bus-tap load chain
+166,TB-D07,SPARE-D7,0.98,solid 480V bus-tap load chain
+167,BUS-480B,CHG-125A,0.95,solid Train A control-power source path
+168,CHG-125A,REC-125A,0.95,solid Train A control-power source path
+169,REC-125A,CB-DC-A,0.95,solid Train A control-power source path
+170,CB-DC-A,BUS-125A,0.95,solid Train A control-power source path
+171,BUS-480C,CHG-125B,0.95,solid Train B control-power source path
+172,CHG-125B,REC-125B,0.95,solid Train B control-power source path
+173,REC-125B,CB-DC-B,0.95,solid Train B control-power source path
+174,CB-DC-B,BUS-125B,0.95,solid Train B control-power source path
+175,BUS-125A,BAT-125A,0.98,solid battery tap
+176,BUS-125A,GND-DC-A,0.96,solid DC ground tap
+177,BUS-125A,INV-120A,0.96,solid DC bus to inverter path
+178,INV-120A,UPS-120A,0.94,dashed inverter-to-UPS signal/power path
+179,UPS-120A,BUS-120A,0.98,solid UPS output to 120V bus
+180,BUS-120A,RPS-PNL-A,0.98,solid 120V bus tap to RPS panel
+181,RPS-PNL-A,PLC-RPS-A,0.95,dashed RPS panel to PLC path
+182,PLC-RPS-A,RELAY-K101,0.86,dashed RPS relay harness endpoint
+183,PLC-RPS-A,RELAY-K102,0.86,dashed RPS relay harness endpoint
+184,PLC-RPS-A,RELAY-K103,0.86,dashed RPS relay harness endpoint
+185,PLC-RPS-A,RELAY-K104,0.86,dashed RPS relay harness endpoint
+186,RELAY-K102,JB-RPS-A,0.86,dashed branch from K102 harness to JB
+187,RELAY-K102,PNL-ANN-A,0.86,dashed branch from K102 harness to annunciator
+188,BUS-125B,BAT-125B,0.98,solid battery tap
+189,BUS-125B,GND-DC-B,0.96,solid DC ground tap
+190,BUS-125B,INV-120B,0.96,solid DC bus to inverter path
+191,INV-120B,UPS-120B,0.94,dashed inverter-to-UPS signal/power path
+192,UPS-120B,BUS-120B,0.98,solid UPS output to 120V bus
+193,BUS-120B,RPS-PNL-B,0.98,solid 120V bus tap to RPS panel
+194,RPS-PNL-B,PLC-RPS-B,0.95,dashed RPS panel to PLC path
+195,PLC-RPS-B,RELAY-K201,0.86,dashed RPS relay harness endpoint
+196,PLC-RPS-B,RELAY-K202,0.86,dashed RPS relay harness endpoint
+197,PLC-RPS-B,RELAY-K203,0.86,dashed RPS relay harness endpoint
+198,PLC-RPS-B,RELAY-K204,0.86,dashed RPS relay harness endpoint
+199,RELAY-K202,JB-RPS-B,0.86,dashed branch from K202 harness to JB
+200,RELAY-K202,PNL-ANN-B,0.86,dashed branch from K202 harness to annunciator

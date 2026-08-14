@@ -1,0 +1,202 @@
+source,target,confidence,line_type,evidence
+GRID-SWYD-1,CB-GRID-A,high,ac-power,Grid source 1 breaker lands on 230 kV switchyard bus
+CB-GRID-A,BB-SWYD-230,high,ac-power,Grid source 1 breaker lands on 230 kV switchyard bus
+GRID-SWYD-2,CB-GRID-B,high,ac-power,Grid source 2 breaker lands on 230 kV switchyard bus
+CB-GRID-B,BB-SWYD-230,high,ac-power,Grid source 2 breaker lands on 230 kV switchyard bus
+BB-SWYD-230,CB-GEN-1SO,high,ac-power,Main generator breaker ties generator to switchyard bus
+CB-GEN-1SO,GEN-MAIN-1,high,ac-power,Main generator breaker ties generator to switchyard bus
+GEN-MAIN-1,TR-UAT-1A,high,ac-power,UAT 1A is visibly tapped from main generator with breaker below
+TR-UAT-1A,CB-UAT-A,high,ac-power,UAT 1A is visibly tapped from main generator with breaker below
+GEN-MAIN-1,TR-UAT-1B,high,ac-power,UAT 1B is visibly tapped from main generator with breaker below
+TR-UAT-1B,CB-UAT-B,high,ac-power,UAT 1B is visibly tapped from main generator with breaker below
+BB-SWYD-230,TR-SAT-1A,high,ac-power,Station transformer 1A feeds 4160 bus A
+TR-SAT-1A,CB-SAT-A,high,ac-power,Station transformer 1A feeds 4160 bus A
+CB-SAT-A,BUS-4160A,high,ac-power,Station transformer 1A feeds 4160 bus A
+BB-SWYD-230,TR-SAT-1B,high,ac-power,Station transformer 1B feeds 4160 bus B
+TR-SAT-1B,CB-SAT-B,high,ac-power,Station transformer 1B feeds 4160 bus B
+CB-SAT-B,BUS-4160B,high,ac-power,Station transformer 1B feeds 4160 bus B
+DG-1A,CB-DG-A,high,ac-power,Diesel generator 1A breaker lands on bus 4160A
+CB-DG-A,BUS-4160A,high,ac-power,Diesel generator 1A breaker lands on bus 4160A
+DG-1B,CB-DG-B,high,ac-power,Diesel generator 1B breaker lands on bus 4160B
+CB-DG-B,BUS-4160B,high,ac-power,Diesel generator 1B breaker lands on bus 4160B
+BUS-4160A,CB-4160-TIE,high,ac-power,Normally-open 4160 tie breaker between A and B bus bars
+CB-4160-TIE,BUS-4160B,high,ac-power,Normally-open 4160 tie breaker between A and B bus bars
+BUS-4160A,GND-4160A,high,ground,Ground symbol taps bus 4160A
+BUS-4160B,GND-4160B,high,ground,Ground symbol taps bus 4160B
+BUS-4160A,PT-4160A,high,control,A-side PT control chain leaves bus 4160A
+PT-4160A,FU-PT-A,high,control,A-side PT control chain leaves bus 4160A
+FU-PT-A,XFMR-CTRL-A,high,control,A-side PT control chain leaves bus 4160A
+XFMR-CTRL-A,TB-RPS-A,high,control,A-side PT control chain leaves bus 4160A
+TB-RPS-A,SW-43A,high,control,A-side PT control chain leaves bus 4160A
+BUS-4160A,TB-RPS-A,high,ac-power,A-side solid feeder drops from bus 4160A into TB-RPS-A before transformer 480 A1
+BUS-4160B,PT-4160B,high,control,B-side PT control chain leaves bus 4160B
+PT-4160B,FU-PT-B,high,control,B-side PT control chain leaves bus 4160B
+FU-PT-B,XFMR-CTRL-B,high,control,B-side PT control chain leaves bus 4160B
+XFMR-CTRL-B,TB-RPS-B,high,control,B-side PT control chain leaves bus 4160B
+TB-RPS-B,SW-43B,high,control,B-side PT control chain leaves bus 4160B
+TB-RPS-A,TR-480-A1,high,ac-power,Transformer 480 A1 is below TB-RPS-A on the A-side solid feeder and feeds bus 480A
+TR-480-A1,CB-480A-IN,high,ac-power,Transformer 480 A1 is below TB-RPS-A on the A-side solid feeder and feeds bus 480A
+CB-480A-IN,BUS-480A,high,ac-power,Transformer 480 A1 is below TB-RPS-A on the A-side solid feeder and feeds bus 480A
+BUS-4160A,TR-480-B1,high,ac-power,Transformer 480 B1 feeds bus 480B
+TR-480-B1,CB-480B-IN,high,ac-power,Transformer 480 B1 feeds bus 480B
+CB-480B-IN,BUS-480B,high,ac-power,Transformer 480 B1 feeds bus 480B
+BUS-4160B,TR-480-C1,high,ac-power,Transformer 480 C1 feeds bus 480C
+TR-480-C1,CB-480C-IN,high,ac-power,Transformer 480 C1 feeds bus 480C
+CB-480C-IN,BUS-480C,high,ac-power,Transformer 480 C1 feeds bus 480C
+BUS-4160B,TR-480-D1,high,ac-power,Transformer 480 D1 feeds bus 480D
+TR-480-D1,CB-480D-IN,high,ac-power,Transformer 480 D1 feeds bus 480D
+CB-480D-IN,BUS-480D,high,ac-power,Transformer 480 D1 feeds bus 480D
+BUS-480A,CB-A01,high,ac-power,A-section radial feeder to PUMP-CCW-A1
+CB-A01,DS-A01,high,ac-power,A-section radial feeder to PUMP-CCW-A1
+DS-A01,MS-A01,high,ac-power,A-section radial feeder to PUMP-CCW-A1
+MS-A01,PUMP-CCW-A1,high,ac-power,A-section radial feeder to PUMP-CCW-A1
+BUS-480A,CB-A02,high,ac-power,A-section radial feeder to PUMP-RHR-A1
+CB-A02,DS-A02,high,ac-power,A-section radial feeder to PUMP-RHR-A1
+DS-A02,MS-A02,high,ac-power,A-section radial feeder to PUMP-RHR-A1
+MS-A02,PUMP-RHR-A1,high,ac-power,A-section radial feeder to PUMP-RHR-A1
+BUS-480A,CB-A03,high,ac-power,A-section radial feeder to FAN-RB-A1
+CB-A03,FS-A03,high,ac-power,A-section radial feeder to FAN-RB-A1
+FS-A03,MS-A03,high,ac-power,A-section radial feeder to FAN-RB-A1
+MS-A03,FAN-RB-A1,high,ac-power,A-section radial feeder to FAN-RB-A1
+BUS-480A,CB-A04,high,ac-power,A-section radial feeder to MOV-SI-A11
+CB-A04,DS-A04,high,ac-power,A-section radial feeder to MOV-SI-A11
+DS-A04,RY-A04,high,ac-power,A-section radial feeder to MOV-SI-A11
+RY-A04,MOV-SI-A11,high,ac-power,A-section radial feeder to MOV-SI-A11
+BUS-480A,CB-A05,high,ac-power,A-section radial feeder to PNL-LTG-A1
+CB-A05,DS-A05,high,ac-power,A-section radial feeder to PNL-LTG-A1
+DS-A05,CP-A05,high,ac-power,A-section radial feeder to PNL-LTG-A1
+CP-A05,PNL-LTG-A1,high,ac-power,A-section radial feeder to PNL-LTG-A1
+BUS-480A,CB-A06,high,ac-power,A-section radial feeder to PUMP-AFW-A1
+CB-A06,DS-A06,high,ac-power,A-section radial feeder to PUMP-AFW-A1
+DS-A06,MS-A06,high,ac-power,A-section radial feeder to PUMP-AFW-A1
+MS-A06,PUMP-AFW-A1,high,ac-power,A-section radial feeder to PUMP-AFW-A1
+BUS-480A,CB-A07,high,ac-power,A-section radial feeder to HTR-PZR-A1
+CB-A07,FS-A07,high,ac-power,A-section radial feeder to HTR-PZR-A1
+FS-A07,FU-A07,high,ac-power,A-section radial feeder to HTR-PZR-A1
+FU-A07,HTR-PZR-A1,high,ac-power,A-section radial feeder to HTR-PZR-A1
+BUS-480A,CB-A08,high,ac-power,A-section radial feeder to SPARE-A8
+CB-A08,DS-A08,high,ac-power,A-section radial feeder to SPARE-A8
+DS-A08,TB-A08,high,ac-power,A-section radial feeder to SPARE-A8
+TB-A08,SPARE-A8,high,ac-power,A-section radial feeder to SPARE-A8
+BUS-480B,CB-B01,high,ac-power,B-section radial feeder to PUMP-CCW-B1
+CB-B01,DS-B01,high,ac-power,B-section radial feeder to PUMP-CCW-B1
+DS-B01,MS-B01,high,ac-power,B-section radial feeder to PUMP-CCW-B1
+MS-B01,PUMP-CCW-B1,high,ac-power,B-section radial feeder to PUMP-CCW-B1
+BUS-480B,CB-B02,high,ac-power,B-section radial feeder to PUMP-RHR-B1
+CB-B02,DS-B02,high,ac-power,B-section radial feeder to PUMP-RHR-B1
+DS-B02,MS-B02,high,ac-power,B-section radial feeder to PUMP-RHR-B1
+MS-B02,PUMP-RHR-B1,high,ac-power,B-section radial feeder to PUMP-RHR-B1
+BUS-480B,CB-B03,high,ac-power,B-section radial feeder to FAN-FUEL-B1
+CB-B03,FS-B03,high,ac-power,B-section radial feeder to FAN-FUEL-B1
+FS-B03,MS-B03,high,ac-power,B-section radial feeder to FAN-FUEL-B1
+MS-B03,FAN-FUEL-B1,high,ac-power,B-section radial feeder to FAN-FUEL-B1
+BUS-480B,CB-B04,high,ac-power,B-section radial feeder to MOV-CCW-B21
+CB-B04,DS-B04,high,ac-power,B-section radial feeder to MOV-CCW-B21
+DS-B04,RY-B04,high,ac-power,B-section radial feeder to MOV-CCW-B21
+RY-B04,MOV-CCW-B21,high,ac-power,B-section radial feeder to MOV-CCW-B21
+BUS-480B,CB-B05,high,ac-power,B-section radial feeder to MCC-AUX-B6
+CB-B05,DS-B05,high,ac-power,B-section radial feeder to MCC-AUX-B6
+DS-B05,CP-B05,high,ac-power,B-section radial feeder to MCC-AUX-B6
+CP-B05,MCC-AUX-B6,high,ac-power,B-section radial feeder to MCC-AUX-B6
+BUS-480B,CB-B06,high,ac-power,B-section radial feeder to AIR-CMP-B1
+CB-B06,DS-B06,high,ac-power,B-section radial feeder to AIR-CMP-B1
+DS-B06,MS-B06,high,ac-power,B-section radial feeder to AIR-CMP-B1
+MS-B06,AIR-CMP-B1,high,ac-power,B-section radial feeder to AIR-CMP-B1
+BUS-480B,CB-B07,high,ac-power,B-section radial feeder to VLV-CHG-B1
+CB-B07,FS-B07,high,ac-power,B-section radial feeder to VLV-CHG-B1
+FS-B07,RY-B07,high,ac-power,B-section radial feeder to VLV-CHG-B1
+RY-B07,VLV-CHG-B1,high,ac-power,B-section radial feeder to VLV-CHG-B1
+BUS-480C,CB-C01,high,ac-power,C-section radial feeder to PUMP-HPCI-C1
+CB-C01,DS-C01,high,ac-power,C-section radial feeder to PUMP-HPCI-C1
+DS-C01,MS-C01,high,ac-power,C-section radial feeder to PUMP-HPCI-C1
+MS-C01,PUMP-HPCI-C1,high,ac-power,C-section radial feeder to PUMP-HPCI-C1
+BUS-480C,CB-C02,high,ac-power,C-section radial feeder to PUMP-RCW-C1
+CB-C02,DS-C02,high,ac-power,C-section radial feeder to PUMP-RCW-C1
+DS-C02,MS-C02,high,ac-power,C-section radial feeder to PUMP-RCW-C1
+MS-C02,PUMP-RCW-C1,high,ac-power,C-section radial feeder to PUMP-RCW-C1
+BUS-480C,CB-C03,high,ac-power,C-section radial feeder to FAN-RB-C1
+CB-C03,FS-C03,high,ac-power,C-section radial feeder to FAN-RB-C1
+FS-C03,MS-C03,high,ac-power,C-section radial feeder to FAN-RB-C1
+MS-C03,FAN-RB-C1,high,ac-power,C-section radial feeder to FAN-RB-C1
+BUS-480C,CB-C04,high,ac-power,C-section radial feeder to MOV-RHR-C11
+CB-C04,DS-C04,high,ac-power,C-section radial feeder to MOV-RHR-C11
+DS-C04,RY-C04,high,ac-power,C-section radial feeder to MOV-RHR-C11
+RY-C04,MOV-RHR-C11,high,ac-power,C-section radial feeder to MOV-RHR-C11
+BUS-480C,CB-C05,high,ac-power,C-section radial feeder to PUMP-SEAL-C1
+CB-C05,DS-C05,high,ac-power,C-section radial feeder to PUMP-SEAL-C1
+DS-C05,MS-C05,high,ac-power,C-section radial feeder to PUMP-SEAL-C1
+MS-C05,PUMP-SEAL-C1,high,ac-power,C-section radial feeder to PUMP-SEAL-C1
+BUS-480C,CB-C06,high,ac-power,C-section radial feeder to PNL-IC-C7
+CB-C06,DS-C06,high,ac-power,C-section radial feeder to PNL-IC-C7
+DS-C06,CP-C06,high,ac-power,C-section radial feeder to PNL-IC-C7
+CP-C06,PNL-IC-C7,high,ac-power,C-section radial feeder to PNL-IC-C7
+BUS-480C,CB-C07,high,ac-power,C-section radial feeder to SUMP-PMP-C1
+CB-C07,FS-C07,high,ac-power,C-section radial feeder to SUMP-PMP-C1
+FS-C07,MS-C07,high,ac-power,C-section radial feeder to SUMP-PMP-C1
+MS-C07,SUMP-PMP-C1,high,ac-power,C-section radial feeder to SUMP-PMP-C1
+BUS-480C,CB-C08,high,ac-power,C-section radial feeder to HTR-VENT-C2
+CB-C08,DS-C08,high,ac-power,C-section radial feeder to HTR-VENT-C2
+DS-C08,FU-C08,high,ac-power,C-section radial feeder to HTR-VENT-C2
+FU-C08,HTR-VENT-C2,high,ac-power,C-section radial feeder to HTR-VENT-C2
+BUS-480D,CB-D01,high,ac-power,D-section radial feeder to PUMP-AFW-D1
+CB-D01,DS-D01,high,ac-power,D-section radial feeder to PUMP-AFW-D1
+DS-D01,MS-D01,high,ac-power,D-section radial feeder to PUMP-AFW-D1
+MS-D01,PUMP-AFW-D1,high,ac-power,D-section radial feeder to PUMP-AFW-D1
+BUS-480D,CB-D02,high,ac-power,D-section radial feeder to FAN-CR-D1
+CB-D02,DS-D02,high,ac-power,D-section radial feeder to FAN-CR-D1
+DS-D02,MS-D02,high,ac-power,D-section radial feeder to FAN-CR-D1
+MS-D02,FAN-CR-D1,high,ac-power,D-section radial feeder to FAN-CR-D1
+BUS-480D,CB-D03,high,ac-power,D-section radial feeder to MOV-SI-D21
+CB-D03,FS-D03,high,ac-power,D-section radial feeder to MOV-SI-D21
+FS-D03,RY-D03,high,ac-power,D-section radial feeder to MOV-SI-D21
+RY-D03,MOV-SI-D21,high,ac-power,D-section radial feeder to MOV-SI-D21
+BUS-480D,CB-D04,high,ac-power,D-section radial feeder to PUMP-LUBE-D1
+CB-D04,DS-D04,high,ac-power,D-section radial feeder to PUMP-LUBE-D1
+DS-D04,MS-D04,high,ac-power,D-section radial feeder to PUMP-LUBE-D1
+MS-D04,PUMP-LUBE-D1,high,ac-power,D-section radial feeder to PUMP-LUBE-D1
+BUS-480D,CB-D05,high,ac-power,D-section radial feeder to PNL-ESS-D5
+CB-D05,DS-D05,high,ac-power,D-section radial feeder to PNL-ESS-D5
+DS-D05,CP-D05,high,ac-power,D-section radial feeder to PNL-ESS-D5
+CP-D05,PNL-ESS-D5,high,ac-power,D-section radial feeder to PNL-ESS-D5
+BUS-480D,CB-D06,high,ac-power,D-section radial feeder to COMP-AIR-D1
+CB-D06,DS-D06,high,ac-power,D-section radial feeder to COMP-AIR-D1
+DS-D06,MS-D06,high,ac-power,D-section radial feeder to COMP-AIR-D1
+MS-D06,COMP-AIR-D1,high,ac-power,D-section radial feeder to COMP-AIR-D1
+BUS-480D,CB-D07,high,ac-power,D-section radial feeder to SPARE-D7
+CB-D07,FS-D07,high,ac-power,D-section radial feeder to SPARE-D7
+FS-D07,TB-D07,high,ac-power,D-section radial feeder to SPARE-D7
+TB-D07,SPARE-D7,high,ac-power,D-section radial feeder to SPARE-D7
+BUS-480B,CHG-125A,high,dc-power,Train A charger input conductor descends from bus 480B; then rectifier and DC breaker land on bus 125A
+CHG-125A,REC-125A,high,dc-power,Train A charger input conductor descends from bus 480B; then rectifier and DC breaker land on bus 125A
+REC-125A,CB-DC-A,high,dc-power,Train A charger input conductor descends from bus 480B; then rectifier and DC breaker land on bus 125A
+CB-DC-A,BUS-125A,high,dc-power,Train A charger input conductor descends from bus 480B; then rectifier and DC breaker land on bus 125A
+BUS-125A,BAT-125A,high,dc-power,Battery 125A vertical tap from bus 125A
+BUS-125A,GND-DC-A,high,ground,DC ground taps bus 125A
+BUS-125A,INV-120A,high,dc-power,Inverter 120A input is fed from bus 125A
+INV-120A,UPS-120A,high,control,Dashed AC/control run from inverter 120A to UPS 120A
+UPS-120A,BUS-120A,high,ac-power,UPS 120A lands on bus 120A; which feeds RPS panel A
+BUS-120A,RPS-PNL-A,high,ac-power,UPS 120A lands on bus 120A; which feeds RPS panel A
+RPS-PNL-A,PLC-RPS-A,high,control,Dashed signal run from RPS panel A to PLC RPS A
+PLC-RPS-A,RELAY-K101,high,control,PLC RPS A output bundle enters top relay run to K101
+RELAY-K101,RELAY-K102,high,control,Top dashed relay run connects K101 to K102
+RELAY-K102,JB-RPS-A,high,control,Top dashed relay run continues to junction box RPS A
+RELAY-K102,PNL-ANN-A,high,control,Dashed vertical and horizontal run from K102 to annunciator panel A
+PLC-RPS-A,RELAY-K103,high,control,PLC RPS A output bundle enters lower relay run to K103
+RELAY-K103,RELAY-K104,high,control,Lower dashed relay run connects K103 to K104
+BUS-480C,CHG-125B,high,dc-power,Train B charger input conductor descends from bus 480C; then rectifier and DC breaker land on bus 125B
+CHG-125B,REC-125B,high,dc-power,Train B charger input conductor descends from bus 480C; then rectifier and DC breaker land on bus 125B
+REC-125B,CB-DC-B,high,dc-power,Train B charger input conductor descends from bus 480C; then rectifier and DC breaker land on bus 125B
+CB-DC-B,BUS-125B,high,dc-power,Train B charger input conductor descends from bus 480C; then rectifier and DC breaker land on bus 125B
+BUS-125B,BAT-125B,high,dc-power,Battery 125B vertical tap from bus 125B
+BUS-125B,GND-DC-B,high,ground,DC ground taps bus 125B
+BUS-125B,INV-120B,high,dc-power,Inverter 120B input is fed from bus 125B
+INV-120B,UPS-120B,high,control,Dashed AC/control run from inverter 120B to UPS 120B
+UPS-120B,BUS-120B,high,ac-power,UPS 120B lands on bus 120B; which feeds RPS panel B
+BUS-120B,RPS-PNL-B,high,ac-power,UPS 120B lands on bus 120B; which feeds RPS panel B
+RPS-PNL-B,PLC-RPS-B,high,control,Dashed signal run from RPS panel B to PLC RPS B
+PLC-RPS-B,RELAY-K201,high,control,PLC RPS B output bundle enters top relay run to K201
+RELAY-K201,RELAY-K202,high,control,Top dashed relay run connects K201 to K202
+RELAY-K202,JB-RPS-B,high,control,Top dashed relay run continues to junction box RPS B
+RELAY-K202,PNL-ANN-B,high,control,Dashed vertical and horizontal run from K202 to annunciator panel B
+PLC-RPS-B,RELAY-K203,high,control,PLC RPS B output bundle enters lower relay run to K203
+RELAY-K203,RELAY-K204,high,control,Lower dashed relay run connects K203 to K204

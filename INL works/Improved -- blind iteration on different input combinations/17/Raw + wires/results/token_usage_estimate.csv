@@ -1,0 +1,6 @@
+document,iteration,call_id,actor,round,model,input_tokens_est,cached_input_tokens_est,output_tokens_est,reasoning_tokens_available,reasoning_tokens_low_est,reasoning_tokens_expected_est,reasoning_tokens_high_est,image_file_input_tokens_est,total_tokens_low_est,total_tokens_expected_est,total_tokens_high_est,usage_object_available,notes
+17,1,main_01_visual_orchestration_and_artifacts,main,orchestration,gpt-5,1400,0,4200,no,2500,5200,9000,31000,39100,41800,45600,no,"local visual inspection, crop/result scripts"
+17,1,diego_01_high_recall,Diego,round_01,gpt-5.5 xhigh,2600,0,3100,no,4500,9000,16200,24105,34305,38805,46005,no,subagent usage object unavailable; high-recall response observed
+17,1,jennifer_01_precision,Jennifer,round_01,gpt-5.5 xhigh,3600,0,3200,no,4500,9000,16200,23405,34705,39205,46405,no,subagent usage object unavailable; precision response observed
+17,1,diego_02_saturation,Diego,round_02,gpt-5.5 xhigh,2100,24105,900,no,1500,3000,5600,10862,15362,16862,19462,no,narrow follow-up with extra crops
+17,1,jennifer_02_final,Jennifer,round_02,gpt-5.5 xhigh,1200,23405,500,no,800,1600,3000,10862,13362,14162,15562,no,final accept/refine response observed; usage object unavailable

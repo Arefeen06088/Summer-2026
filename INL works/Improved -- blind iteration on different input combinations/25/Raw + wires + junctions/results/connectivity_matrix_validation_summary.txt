@@ -1,0 +1,18 @@
+Connectivity matrix validation summary
+Document: 25
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\25\synthetic_npp_connectivity_matrix_revised_v4.csv
+GT normalized nodes: 200; GT normalized edges: 208
+Matrices evaluated: 5
+Best row: Diego -- Round 2 from diego_round2_matrix.csv with Precision=0.975369, Recall=0.951923, F1=0.963504
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=198, FP=5, FN=10, Precision=0.975369, Recall=0.951923, F1=0.963504
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+No extra/non-GT extracted nodes were attached to false-positive edges in the final edge set.
+Missing GT nodes examples: none.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: DS-4A01 -- TR-480-1A; DS-4B01 -- TR-480-1B; DS-4C01 -- TR-480-1C; INV-120-1A -- RELAY-K501A; INV-120-1B -- RELAY-K501A.
+False-negative edge examples among GT-known nodes: BUS-125DC-A -- INV-120-1B; BUS-125DC-B -- INV-120-1A; BUS-4160-A -- TR-480-1A; BUS-4160-B -- TR-480-1B; BUS-4160-C -- TR-480-1C; BUS-480-1A -- CHGR-125-1A; BUS-480-1B -- CHGR-125-1B; CB-4A01 -- TC-52-4A.
+
+What-if node pruning insight: no non-GT intermediate nodes were available to prune; the remaining drop is mainly connectivity/edge discovery or missing direct GT edges.

@@ -1,0 +1,1218 @@
+{
+  "document": "26",
+  "iteration": "1",
+  "round": "jennifer_round2_final",
+  "role": "precision_reviewer_refiner",
+  "final_status": "saturated_agreement",
+  "review_notes": [
+    "Final precision/saturation review used the allowed Doc 26 Raw + components visual resources and the supplied round1/round2 JSON/CSV comparison artifacts; no GT, GT-derived feedback, Raw+wires, existing wires scripts, or OCR engines were used.",
+    "Diego round2 accepted Jennifer round1 exactly: same 200-node order, same 201 asserted-edge set, same 10 uncertain candidates, same rejected non-edge set, and same symmetric matrix.",
+    "Final visual spot-check of the raw schematic crops confirmed the main risk areas: train bus ties remain mediated by tie breakers, transformer/breaker chains are not skipped, inverter taps are mediated by DC bus junction dots, ground symbols are only connected where the drawn line terminates, and dashed control routes without terminal dots remain uncertain or rejected.",
+    "No visually necessary final correction was found; final_status is saturated_agreement and no edges or labels were changed from Diego round2.",
+    "Validation: nodes=200, asserted_edges=201, uncertain_edges=10, removed_since_diego_round2=0, added_since_diego_round2=0, matrix=200x200, symmetric=True, diagonal_zero=True."
+  ],
+  "nodes": [
+    {
+      "id": "GEN-301",
+      "type": "component",
+      "evidence": "Visible label 'GEN-301' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "TR-UAT-31",
+      "type": "component",
+      "evidence": "Visible label 'TR-UAT-31' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A-IN1",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A-IN1' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "SAT-31A",
+      "type": "component",
+      "evidence": "Visible label 'SAT-31A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A-ST",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A-ST' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "DG-31A",
+      "type": "component",
+      "evidence": "Visible label 'DG-31A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A-DG",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A-DG' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "BUS-416A",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-416A' on a double-line bus in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A01",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A01' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "TR-480A1",
+      "type": "component",
+      "evidence": "Visible label 'TR-480A1' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-480A-IN",
+      "type": "component",
+      "evidence": "Visible label 'CB-480A-IN' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A02",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A02' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "TR-480A2",
+      "type": "component",
+      "evidence": "Visible label 'TR-480A2' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-480A-ALT",
+      "type": "component",
+      "evidence": "Visible label 'CB-480A-ALT' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A03",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A03' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "DS-RCP-A",
+      "type": "component",
+      "evidence": "Visible label 'DS-RCP-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "MTR-RCP-A",
+      "type": "load",
+      "evidence": "Visible label 'MTR-RCP-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "GND-RCP-A",
+      "type": "ground",
+      "evidence": "Visible label 'GND-RCP-A' beside a ground symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A04",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A04' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "DS-SW-A",
+      "type": "component",
+      "evidence": "Visible label 'DS-SW-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "PUMP-SW31A",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-SW31A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "GND-SW-A",
+      "type": "ground",
+      "evidence": "Visible label 'GND-SW-A' beside a ground symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A05",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A05' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "DS-AFW-A",
+      "type": "component",
+      "evidence": "Visible label 'DS-AFW-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "PUMP-AFW31A",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-AFW31A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4A06",
+      "type": "component",
+      "evidence": "Visible label 'CB-4A06' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "DS-CHW-A",
+      "type": "component",
+      "evidence": "Visible label 'DS-CHW-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "MTR-CHWP-A",
+      "type": "load",
+      "evidence": "Visible label 'MTR-CHWP-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "CB-4AB-TIE",
+      "type": "component",
+      "evidence": "Visible label 'CB-4AB-TIE' and adjacent symbol in raw_05_left_core.png / raw_grid_r1c1-r1c2 4.16 kV Train A area."
+    },
+    {
+      "id": "SAT-31B",
+      "type": "component",
+      "evidence": "Visible label 'SAT-31B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B-ST",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B-ST' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "DG-31B",
+      "type": "component",
+      "evidence": "Visible label 'DG-31B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B-DG",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B-DG' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "BUS-416B",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-416B' on a double-line bus in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B01",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B01' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "TR-480B1",
+      "type": "component",
+      "evidence": "Visible label 'TR-480B1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-480B-IN",
+      "type": "component",
+      "evidence": "Visible label 'CB-480B-IN' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B02",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B02' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "TR-480B2",
+      "type": "component",
+      "evidence": "Visible label 'TR-480B2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-480B-ALT",
+      "type": "component",
+      "evidence": "Visible label 'CB-480B-ALT' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B03",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B03' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "DS-RCP-B",
+      "type": "component",
+      "evidence": "Visible label 'DS-RCP-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "MTR-RCP-B",
+      "type": "load",
+      "evidence": "Visible label 'MTR-RCP-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "GND-RCP-B",
+      "type": "ground",
+      "evidence": "Visible label 'GND-RCP-B' beside a ground symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B04",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B04' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "DS-SW-B",
+      "type": "component",
+      "evidence": "Visible label 'DS-SW-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "PUMP-SW31B",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-SW31B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "GND-SW-B",
+      "type": "ground",
+      "evidence": "Visible label 'GND-SW-B' beside a ground symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B05",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B05' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "DS-AFW-B",
+      "type": "component",
+      "evidence": "Visible label 'DS-AFW-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "PUMP-AFW31B",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-AFW31B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "CB-4B06",
+      "type": "component",
+      "evidence": "Visible label 'CB-4B06' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "DS-CHW-B",
+      "type": "component",
+      "evidence": "Visible label 'DS-CHW-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "MTR-CHWP-B",
+      "type": "load",
+      "evidence": "Visible label 'MTR-CHWP-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 4.16 kV Train B area."
+    },
+    {
+      "id": "BUS-480A",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-480A' on a double-line bus in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "CB-480A11",
+      "type": "component",
+      "evidence": "Visible label 'CB-480A11' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "MCC-31A1",
+      "type": "panel",
+      "evidence": "Visible label 'MCC-31A1' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "GND-MCC-A1",
+      "type": "ground",
+      "evidence": "Visible label 'GND-MCC-A1' beside a ground symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A1-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-A1-1' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A1-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-A1-01' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "PUMP-CVC-A",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-CVC-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A1-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-A1-2' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A1-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-A1-02' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "MOV-RHR-731A",
+      "type": "load",
+      "evidence": "Visible label 'MOV-RHR-731A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A1-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-A1-3' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A1-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-A1-03' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "FAN-CRD-A",
+      "type": "load",
+      "evidence": "Visible label 'FAN-CRD-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "CB-480A12",
+      "type": "component",
+      "evidence": "Visible label 'CB-480A12' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "MCC-31A2",
+      "type": "panel",
+      "evidence": "Visible label 'MCC-31A2' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "GND-MCC-A2",
+      "type": "ground",
+      "evidence": "Visible label 'GND-MCC-A2' beside a ground symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A2-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-A2-1' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A2-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-A2-01' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "PUMP-CCW-A",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-CCW-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A2-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-A2-2' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A2-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-A2-02' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "HTR-BORIC-A",
+      "type": "load",
+      "evidence": "Visible label 'HTR-BORIC-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A2-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-A2-3' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A2-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-A2-03' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "MOV-CHG-121A",
+      "type": "load",
+      "evidence": "Visible label 'MOV-CHG-121A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "CB-480A13",
+      "type": "component",
+      "evidence": "Visible label 'CB-480A13' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "LC-31A3",
+      "type": "panel",
+      "evidence": "Visible label 'LC-31A3' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A3-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-A3-1' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A3-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-A3-01' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "MTR-SUMP-A",
+      "type": "load",
+      "evidence": "Visible label 'MTR-SUMP-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A3-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-A3-2' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A3-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-A3-02' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "PUMP-LUBE-A",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-LUBE-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A3-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-A3-3' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A3-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-A3-03' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "MOV-SI-902A",
+      "type": "load",
+      "evidence": "Visible label 'MOV-SI-902A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "CB-480A14",
+      "type": "component",
+      "evidence": "Visible label 'CB-480A14' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "PNL-31A4",
+      "type": "panel",
+      "evidence": "Visible label 'PNL-31A4' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A4-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-A4-1' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A4-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-A4-01' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "FAN-CONT-A",
+      "type": "load",
+      "evidence": "Visible label 'FAN-CONT-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A4-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-A4-2' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A4-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-A4-02' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "PUMP-SAMPLE-A",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-SAMPLE-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "STR-A4-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-A4-3' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "JB-A4-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-A4-03' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "MOV-VENT-406A",
+      "type": "load",
+      "evidence": "Visible label 'MOV-VENT-406A' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "CB-480AB-TIE",
+      "type": "component",
+      "evidence": "Visible label 'CB-480AB-TIE' and adjacent symbol in raw_05_left_core.png / raw_grid_r2c1-r3c2 480 V Train A load center area."
+    },
+    {
+      "id": "BUS-480B",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-480B' on a double-line bus in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "CB-480B11",
+      "type": "component",
+      "evidence": "Visible label 'CB-480B11' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "MCC-31B1",
+      "type": "panel",
+      "evidence": "Visible label 'MCC-31B1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "GND-MCC-B1",
+      "type": "ground",
+      "evidence": "Visible label 'GND-MCC-B1' beside a ground symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B1-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-B1-1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B1-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-B1-01' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "PUMP-CVC-B",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-CVC-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B1-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-B1-2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B1-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-B1-02' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "MOV-RHR-731B",
+      "type": "load",
+      "evidence": "Visible label 'MOV-RHR-731B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B1-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-B1-3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B1-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-B1-03' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "FAN-CRD-B",
+      "type": "load",
+      "evidence": "Visible label 'FAN-CRD-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "CB-480B12",
+      "type": "component",
+      "evidence": "Visible label 'CB-480B12' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "MCC-31B2",
+      "type": "panel",
+      "evidence": "Visible label 'MCC-31B2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "GND-MCC-B2",
+      "type": "ground",
+      "evidence": "Visible label 'GND-MCC-B2' beside a ground symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B2-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-B2-1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B2-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-B2-01' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "PUMP-CCW-B",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-CCW-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B2-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-B2-2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B2-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-B2-02' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "HTR-BORIC-B",
+      "type": "load",
+      "evidence": "Visible label 'HTR-BORIC-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B2-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-B2-3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B2-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-B2-03' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "MOV-CHG-121B",
+      "type": "load",
+      "evidence": "Visible label 'MOV-CHG-121B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "CB-480B13",
+      "type": "component",
+      "evidence": "Visible label 'CB-480B13' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "LC-31B3",
+      "type": "panel",
+      "evidence": "Visible label 'LC-31B3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B3-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-B3-1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B3-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-B3-01' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "MTR-SUMP-B",
+      "type": "load",
+      "evidence": "Visible label 'MTR-SUMP-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B3-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-B3-2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B3-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-B3-02' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "PUMP-LUBE-B",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-LUBE-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B3-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-B3-3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B3-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-B3-03' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "MOV-SI-902B",
+      "type": "load",
+      "evidence": "Visible label 'MOV-SI-902B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "CB-480B14",
+      "type": "component",
+      "evidence": "Visible label 'CB-480B14' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "PNL-31B4",
+      "type": "panel",
+      "evidence": "Visible label 'PNL-31B4' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B4-1",
+      "type": "other",
+      "evidence": "Visible label 'STR-B4-1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B4-01",
+      "type": "other",
+      "evidence": "Visible label 'JB-B4-01' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "FAN-CONT-B",
+      "type": "load",
+      "evidence": "Visible label 'FAN-CONT-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B4-2",
+      "type": "other",
+      "evidence": "Visible label 'STR-B4-2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B4-02",
+      "type": "other",
+      "evidence": "Visible label 'JB-B4-02' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "PUMP-SAMPLE-B",
+      "type": "load",
+      "evidence": "Visible label 'PUMP-SAMPLE-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "STR-B4-3",
+      "type": "other",
+      "evidence": "Visible label 'STR-B4-3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "JB-B4-03",
+      "type": "other",
+      "evidence": "Visible label 'JB-B4-03' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "MOV-VENT-406B",
+      "type": "load",
+      "evidence": "Visible label 'MOV-VENT-406B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png 480 V Train B load center area."
+    },
+    {
+      "id": "BAT-31A",
+      "type": "component",
+      "evidence": "Visible label 'BAT-31A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "DS-BAT-A",
+      "type": "component",
+      "evidence": "Visible label 'DS-BAT-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "CHG-31A",
+      "type": "component",
+      "evidence": "Visible label 'CHG-31A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "CB-CHG-A",
+      "type": "component",
+      "evidence": "Visible label 'CB-CHG-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "BUS-125DCA",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-125DCA' on a double-line bus in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "CB-INV-A",
+      "type": "component",
+      "evidence": "Visible label 'CB-INV-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "INV-31A",
+      "type": "component",
+      "evidence": "Visible label 'INV-31A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "PNL-DC-A",
+      "type": "panel",
+      "evidence": "Visible label 'PNL-DC-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "BUS-INV-A",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-INV-A' on a double-line bus in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "PNL-AC-A",
+      "type": "panel",
+      "evidence": "Visible label 'PNL-AC-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "RPS-PNL-A",
+      "type": "panel",
+      "evidence": "Visible label 'RPS-PNL-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "TB-UPS-A",
+      "type": "other",
+      "evidence": "Visible label 'TB-UPS-A' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "BUS-120N-A",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-120N-A' on a double-line bus in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "RELAY-K7A1",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7A1' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "TB-RPS-A1",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-A1' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "PT-31A1",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31A1' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "RELAY-K7A2",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7A2' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "TB-RPS-A2",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-A2' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "PT-31A2",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31A2' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "RELAY-K7A3",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7A3' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "TB-RPS-A3",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-A3' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "PT-31A3",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31A3' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "RELAY-K7A4",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7A4' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "TB-RPS-A4",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-A4' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "PT-31A4",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31A4' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "CB-DCAB-TIE",
+      "type": "component",
+      "evidence": "Visible label 'CB-DCAB-TIE' and adjacent symbol in raw_05_left_core.png / raw_grid_r3c1-r4c2 125 VDC UPS RPS Train A area."
+    },
+    {
+      "id": "BAT-31B",
+      "type": "component",
+      "evidence": "Visible label 'BAT-31B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "DS-BAT-B",
+      "type": "component",
+      "evidence": "Visible label 'DS-BAT-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "CHG-31B",
+      "type": "component",
+      "evidence": "Visible label 'CHG-31B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "CB-CHG-B",
+      "type": "component",
+      "evidence": "Visible label 'CB-CHG-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "BUS-125DCB",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-125DCB' on a double-line bus in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "CB-INV-B",
+      "type": "component",
+      "evidence": "Visible label 'CB-INV-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "INV-31B",
+      "type": "component",
+      "evidence": "Visible label 'INV-31B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "PNL-DC-B",
+      "type": "panel",
+      "evidence": "Visible label 'PNL-DC-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "BUS-INV-B",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-INV-B' on a double-line bus in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "PNL-AC-B",
+      "type": "panel",
+      "evidence": "Visible label 'PNL-AC-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "RPS-PNL-B",
+      "type": "panel",
+      "evidence": "Visible label 'RPS-PNL-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "TB-UPS-B",
+      "type": "other",
+      "evidence": "Visible label 'TB-UPS-B' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "BUS-120N-B",
+      "type": "bus",
+      "evidence": "Visible label 'BUS-120N-B' on a double-line bus in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "RELAY-K7B1",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7B1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "TB-RPS-B1",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-B1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "PT-31B1",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31B1' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "RELAY-K7B2",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7B2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "TB-RPS-B2",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-B2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "PT-31B2",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31B2' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "RELAY-K7B3",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7B3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "TB-RPS-B3",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-B3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "PT-31B3",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31B3' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "RELAY-K7B4",
+      "type": "relay",
+      "evidence": "Visible label 'RELAY-K7B4' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "TB-RPS-B4",
+      "type": "other",
+      "evidence": "Visible label 'TB-RPS-B4' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    },
+    {
+      "id": "PT-31B4",
+      "type": "instrument",
+      "evidence": "Visible label 'PT-31B4' and adjacent symbol in raw_06_center_core.png / raw_07_right_core.png / raw_08_notes_title_area.png 125 VDC UPS RPS Train B area."
+    }
+  ],
+  "matrix_order": [
+    "GEN-301",
+    "TR-UAT-31",
+    "CB-4A-IN1",
+    "SAT-31A",
+    "CB-4A-ST",
+    "DG-31A",
+    "CB-4A-DG",
+    "BUS-416A",
+    "CB-4A01",
+    "TR-480A1",
+    "CB-480A-IN",
+    "CB-4A02",
+    "TR-480A2",
+    "CB-480A-ALT",
+    "CB-4A03",
+    "DS-RCP-A",
+    "MTR-RCP-A",
+    "GND-RCP-A",
+    "CB-4A04",
+    "DS-SW-A",
+    "PUMP-SW31A",
+    "GND-SW-A",
+    "CB-4A05",
+    "DS-AFW-A",
+    "PUMP-AFW31A",
+    "CB-4A06",
+    "DS-CHW-A",
+    "MTR-CHWP-A",
+    "CB-4AB-TIE",
+    "SAT-31B",
+    "CB-4B-ST",
+    "DG-31B",
+    "CB-4B-DG",
+    "BUS-416B",
+    "CB-4B01",
+    "TR-480B1",
+    "CB-480B-IN",
+    "CB-4B02",
+    "TR-480B2",
+    "CB-480B-ALT",
+    "CB-4B03",
+    "DS-RCP-B",
+    "MTR-RCP-B",
+    "GND-RCP-B",
+    "CB-4B04",
+    "DS-SW-B",
+    "PUMP-SW31B",
+    "GND-SW-B",
+    "CB-4B05",
+    "DS-AFW-B",
+    "PUMP-AFW31B",
+    "CB-4B06",
+    "DS-CHW-B",
+    "MTR-CHWP-B",
+    "BUS-480A",
+    "CB-480A11",
+    "MCC-31A1",
+    "GND-MCC-A1",
+    "STR-A1-1",
+    "JB-A1-01",
+    "PUMP-CVC-A",
+    "STR-A1-2",
+    "JB-A1-02",
+    "MOV-RHR-731A",
+    "STR-A1-3",
+    "JB-A1-03",
+    "FAN-CRD-A",
+    "CB-480A12",
+    "MCC-31A2",
+    "GND-MCC-A2",
+    "STR-A2-1",
+    "JB-A2-01",
+    "PUMP-CCW-A",
+    "STR-A2-2",
+    "JB-A2-02",
+    "HTR-BORIC-A",
+    "STR-A2-3",
+    "JB-A2-03",
+    "MOV-CHG-121A",
+    "CB-480A13",
+    "LC-31A3",
+    "STR-A3-1",
+    "JB-A3-01",
+    "MTR-SUMP-A",
+    "STR-A3-2",
+    "JB-A3-02",
+    "PUMP-LUBE-A",
+    "STR-A3-3",
+    "JB-A3-03",
+    "MOV-SI-902A",
+    "CB-480A14",
+    "PNL-31A4",
+    "STR-A4-1",
+    "JB-A4-01",
+    "FAN-CONT-A",
+    "STR-A4-2",
+    "JB-A4-02",
+    "PUMP-SAMPLE-A",
+    "STR-A4-3",
+    "JB-A4-03",
+    "MOV-VENT-406A",
+    "CB-480AB-TIE",
+    "BUS-480B",
+    "CB-480B11",
+    "MCC-31B1",
+    "GND-MCC-B1",
+    "STR-B1-1",
+    "JB-B1-01",
+    "PUMP-CVC-B",
+    "STR-B1-2",
+    "JB-B1-02",
+    "MOV-RHR-731B",
+    "STR-B1-3",
+    "JB-B1-03",
+    "FAN-CRD-B",
+    "CB-480B12",
+    "MCC-31B2",
+    "GND-MCC-B2",
+    "STR-B2-1",
+    "JB-B2-01",
+    "PUMP-CCW-B",
+    "STR-B2-2",
+    "JB-B2-02",
+    "HTR-BORIC-B",
+    "STR-B2-3",
+    "JB-B2-03",
+    "MOV-CHG-121B",
+    "CB-480B13",
+    "LC-31B3",
+    "STR-B3-1",
+    "JB-B3-01",
+    "MTR-SUMP-B",
+    "STR-B3-2",
+    "JB-B3-02",
+    "PUMP-LUBE-B",
+    "STR-B3-3",
+    "JB-B3-03",
+    "MOV-SI-902B",
+    "CB-480B14",
+    "PNL-31B4",
+    "STR-B4-1",
+    "JB-B4-01",
+    "FAN-CONT-B",
+    "STR-B4-2",
+    "JB-B4-02",
+    "PUMP-SAMPLE-B",
+    "STR-B4-3",
+    "JB-B4-03",
+    "MOV-VENT-406B",
+    "BAT-31A",
+    "DS-BAT-A",
+    "CHG-31A",
+    "CB-CHG-A",
+    "BUS-125DCA",
+    "CB-INV-A",
+    "INV-31A",
+    "PNL-DC-A",
+    "BUS-INV-A",
+    "PNL-AC-A",
+    "RPS-PNL-A",
+    "TB-UPS-A",
+    "BUS-120N-A",
+    "RELAY-K7A1",
+    "TB-RPS-A1",
+    "PT-31A1",
+    "RELAY-K7A2",
+    "TB-RPS-A2",
+    "PT-31A2",
+    "RELAY-K7A3",
+    "TB-RPS-A3",
+    "PT-31A3",
+    "RELAY-K7A4",
+    "TB-RPS-A4",
+    "PT-31A4",
+    "CB-DCAB-TIE",
+    "BAT-31B",
+    "DS-BAT-B",
+    "CHG-31B",
+    "CB-CHG-B",
+    "BUS-125DCB",
+    "CB-INV-B",
+    "INV-31B",
+    "PNL-DC-B",
+    "BUS-INV-B",
+    "PNL-AC-B",
+    "RPS-PNL-B",
+    "TB-UPS-B",
+    "BUS-120N-B",
+    "RELAY-K7B1",
+    "TB-RPS-B1",
+    "PT-31B1",
+    "RELAY-K7B2",
+    "TB-RPS-B2",
+    "PT-31B2",
+    "RELAY-K7B3",
+    "TB-RPS-B3",
+    "PT-31B3",
+    "RELAY-K7B4",
+    "TB-RPS-B4",
+    "PT-31B4"
+  ]
+}

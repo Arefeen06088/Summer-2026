@@ -1,0 +1,210 @@
+source,target,evidence
+GEN-301,TR-UAT-31,solid generator/UAT feed to BUS-416A
+TR-UAT-31,CB-4A-IN1,solid generator/UAT feed to BUS-416A
+CB-4A-IN1,BUS-416A,solid generator/UAT feed to BUS-416A
+SAT-31A,CB-4A-ST,solid SAT-31A feeder to BUS-416A
+CB-4A-ST,BUS-416A,solid SAT-31A feeder to BUS-416A
+DG-31A,CB-4A-DG,solid DG-31A feeder to BUS-416A
+CB-4A-DG,BUS-416A,solid DG-31A feeder to BUS-416A
+BUS-416A,CB-4AB-TIE,solid 4.16 kV A/B bus tie
+CB-4AB-TIE,BUS-416B,solid 4.16 kV A/B bus tie
+SAT-31B,CB-4B-ST,solid SAT-31B feeder to BUS-416B
+CB-4B-ST,BUS-416B,solid SAT-31B feeder to BUS-416B
+DG-31B,CB-4B-DG,solid DG-31B feeder to BUS-416B
+CB-4B-DG,BUS-416B,solid DG-31B feeder to BUS-416B
+BUS-416A,CB-4A01,train A transformer feeder 01
+CB-4A01,TR-480A1,train A transformer feeder 01
+TR-480A1,CB-480A-IN,train A transformer feeder 01
+CB-480A-IN,BUS-480A,train A transformer feeder 01
+BUS-416A,CB-4A02,train A alternate transformer feeder 02
+CB-4A02,TR-480A2,train A alternate transformer feeder 02
+TR-480A2,CB-480A-ALT,train A alternate transformer feeder 02
+CB-480A-ALT,BUS-480A,train A alternate transformer feeder 02
+BUS-416A,CB-4A03,train A RCP motor and ground chain
+CB-4A03,DS-RCP-A,train A RCP motor and ground chain
+DS-RCP-A,MTR-RCP-A,train A RCP motor and ground chain
+MTR-RCP-A,GND-RCP-A,train A RCP motor and ground chain
+BUS-416A,CB-4A04,train A service water pump and ground chain
+CB-4A04,DS-SW-A,train A service water pump and ground chain
+DS-SW-A,PUMP-SW31A,train A service water pump and ground chain
+PUMP-SW31A,GND-SW-A,train A service water pump and ground chain
+BUS-416A,CB-4A05,train A AFW pump chain
+CB-4A05,DS-AFW-A,train A AFW pump chain
+DS-AFW-A,PUMP-AFW31A,train A AFW pump chain
+BUS-416A,CB-4A06,train A chilled water pump chain
+CB-4A06,DS-CHW-A,train A chilled water pump chain
+DS-CHW-A,MTR-CHWP-A,train A chilled water pump chain
+BUS-416B,CB-4B01,train B transformer feeder 01
+CB-4B01,TR-480B1,train B transformer feeder 01
+TR-480B1,CB-480B-IN,train B transformer feeder 01
+CB-480B-IN,BUS-480B,train B transformer feeder 01
+BUS-416B,CB-4B02,train B alternate transformer feeder 02
+CB-4B02,TR-480B2,train B alternate transformer feeder 02
+TR-480B2,CB-480B-ALT,train B alternate transformer feeder 02
+CB-480B-ALT,BUS-480B,train B alternate transformer feeder 02
+BUS-416B,CB-4B03,train B RCP motor and ground chain
+CB-4B03,DS-RCP-B,train B RCP motor and ground chain
+DS-RCP-B,MTR-RCP-B,train B RCP motor and ground chain
+MTR-RCP-B,GND-RCP-B,train B RCP motor and ground chain
+BUS-416B,CB-4B04,train B service water pump and ground chain
+CB-4B04,DS-SW-B,train B service water pump and ground chain
+DS-SW-B,PUMP-SW31B,train B service water pump and ground chain
+PUMP-SW31B,GND-SW-B,train B service water pump and ground chain
+BUS-416B,CB-4B05,train B AFW pump chain
+CB-4B05,DS-AFW-B,train B AFW pump chain
+DS-AFW-B,PUMP-AFW31B,train B AFW pump chain
+BUS-416B,CB-4B06,train B chilled water pump chain
+CB-4B06,DS-CHW-B,train B chilled water pump chain
+DS-CHW-B,MTR-CHWP-B,train B chilled water pump chain
+BUS-480A,CB-480AB-TIE,solid 480 V A/B tie
+CB-480AB-TIE,BUS-480B,solid 480 V A/B tie
+BUS-480A,CB-480A11,train A 480V MCC-1 feed
+CB-480A11,MCC-31A1,train A 480V MCC-1 feed
+MCC-31A1,GND-MCC-A1,train A MCC-1 ground
+MCC-31A1,STR-A1-1,train A MCC-1 branch 1
+STR-A1-1,JB-A1-01,train A MCC-1 branch 1
+JB-A1-01,PUMP-CVC-A,train A MCC-1 branch 1
+MCC-31A1,STR-A1-2,train A MCC-1 branch 2
+STR-A1-2,JB-A1-02,train A MCC-1 branch 2
+JB-A1-02,MOV-RHR-731A,train A MCC-1 branch 2
+MCC-31A1,STR-A1-3,train A MCC-1 branch 3
+STR-A1-3,JB-A1-03,train A MCC-1 branch 3
+JB-A1-03,FAN-CRD-A,train A MCC-1 branch 3
+BUS-480A,CB-480A12,train A 480V MCC-2 feed
+CB-480A12,MCC-31A2,train A 480V MCC-2 feed
+MCC-31A2,GND-MCC-A2,train A MCC-2 ground
+MCC-31A2,STR-A2-1,train A MCC-2 branch 1
+STR-A2-1,JB-A2-01,train A MCC-2 branch 1
+JB-A2-01,PUMP-CCW-A,train A MCC-2 branch 1
+MCC-31A2,STR-A2-2,train A MCC-2 branch 2
+STR-A2-2,JB-A2-02,train A MCC-2 branch 2
+JB-A2-02,HTR-BORIC-A,train A MCC-2 branch 2
+MCC-31A2,STR-A2-3,train A MCC-2 branch 3
+STR-A2-3,JB-A2-03,train A MCC-2 branch 3
+JB-A2-03,MOV-CHG-121A,train A MCC-2 branch 3
+BUS-480A,CB-480A13,train A 480V load-center feed
+CB-480A13,LC-31A3,train A 480V load-center feed
+LC-31A3,STR-A3-1,train A load-center branch 1
+STR-A3-1,JB-A3-01,train A load-center branch 1
+JB-A3-01,MTR-SUMP-A,train A load-center branch 1
+LC-31A3,STR-A3-2,train A load-center branch 2
+STR-A3-2,JB-A3-02,train A load-center branch 2
+JB-A3-02,PUMP-LUBE-A,train A load-center branch 2
+LC-31A3,STR-A3-3,train A load-center branch 3
+STR-A3-3,JB-A3-03,train A load-center branch 3
+JB-A3-03,MOV-SI-902A,train A load-center branch 3
+BUS-480A,CB-480A14,train A 480V panel feed
+CB-480A14,PNL-31A4,train A 480V panel feed
+PNL-31A4,STR-A4-1,train A panel branch 1
+STR-A4-1,JB-A4-01,train A panel branch 1
+JB-A4-01,FAN-CONT-A,train A panel branch 1
+PNL-31A4,STR-A4-2,train A panel branch 2
+STR-A4-2,JB-A4-02,train A panel branch 2
+JB-A4-02,PUMP-SAMPLE-A,train A panel branch 2
+PNL-31A4,STR-A4-3,train A panel branch 3
+STR-A4-3,JB-A4-03,train A panel branch 3
+JB-A4-03,MOV-VENT-406A,train A panel branch 3
+BUS-480B,CB-480B11,train B 480V MCC-1 feed
+CB-480B11,MCC-31B1,train B 480V MCC-1 feed
+MCC-31B1,GND-MCC-B1,train B MCC-1 ground
+MCC-31B1,STR-B1-1,train B MCC-1 branch 1
+STR-B1-1,JB-B1-01,train B MCC-1 branch 1
+JB-B1-01,PUMP-CVC-B,train B MCC-1 branch 1
+MCC-31B1,STR-B1-2,train B MCC-1 branch 2
+STR-B1-2,JB-B1-02,train B MCC-1 branch 2
+JB-B1-02,MOV-RHR-731B,train B MCC-1 branch 2
+MCC-31B1,STR-B1-3,train B MCC-1 branch 3
+STR-B1-3,JB-B1-03,train B MCC-1 branch 3
+JB-B1-03,FAN-CRD-B,train B MCC-1 branch 3
+BUS-480B,CB-480B12,train B 480V MCC-2 feed
+CB-480B12,MCC-31B2,train B 480V MCC-2 feed
+MCC-31B2,GND-MCC-B2,train B MCC-2 ground
+MCC-31B2,STR-B2-1,train B MCC-2 branch 1
+STR-B2-1,JB-B2-01,train B MCC-2 branch 1
+JB-B2-01,PUMP-CCW-B,train B MCC-2 branch 1
+MCC-31B2,STR-B2-2,train B MCC-2 branch 2
+STR-B2-2,JB-B2-02,train B MCC-2 branch 2
+JB-B2-02,HTR-BORIC-B,train B MCC-2 branch 2
+MCC-31B2,STR-B2-3,train B MCC-2 branch 3
+STR-B2-3,JB-B2-03,train B MCC-2 branch 3
+JB-B2-03,MOV-CHG-121B,train B MCC-2 branch 3
+BUS-480B,CB-480B13,train B 480V load-center feed
+CB-480B13,LC-31B3,train B 480V load-center feed
+LC-31B3,STR-B3-1,train B load-center branch 1
+STR-B3-1,JB-B3-01,train B load-center branch 1
+JB-B3-01,MTR-SUMP-B,train B load-center branch 1
+LC-31B3,STR-B3-2,train B load-center branch 2
+STR-B3-2,JB-B3-02,train B load-center branch 2
+JB-B3-02,PUMP-LUBE-B,train B load-center branch 2
+LC-31B3,STR-B3-3,train B load-center branch 3
+STR-B3-3,JB-B3-03,train B load-center branch 3
+JB-B3-03,MOV-SI-902B,train B load-center branch 3
+BUS-480B,CB-480B14,train B 480V panel feed
+CB-480B14,PNL-31B4,train B 480V panel feed
+PNL-31B4,STR-B4-1,train B panel branch 1
+STR-B4-1,JB-B4-01,train B panel branch 1
+JB-B4-01,FAN-CONT-B,train B panel branch 1
+PNL-31B4,STR-B4-2,train B panel branch 2
+STR-B4-2,JB-B4-02,train B panel branch 2
+JB-B4-02,PUMP-SAMPLE-B,train B panel branch 2
+PNL-31B4,STR-B4-3,train B panel branch 3
+STR-B4-3,JB-B4-03,train B panel branch 3
+JB-B4-03,MOV-VENT-406B,train B panel branch 3
+BUS-125DCA,CB-DCAB-TIE,solid 125VDC A/B tie
+CB-DCAB-TIE,BUS-125DCB,solid 125VDC A/B tie
+BAT-31A,DS-BAT-A,train A battery feed to 125VDC bus
+DS-BAT-A,BUS-125DCA,train A battery feed to 125VDC bus
+CHG-31A,CB-CHG-A,train A charger feed to 125VDC bus
+CB-CHG-A,BUS-125DCA,train A charger feed to 125VDC bus
+BUS-125DCA,PNL-DC-A,train A 125VDC panel feed
+BUS-125DCA,CB-INV-A,train A inverter feed
+CB-INV-A,INV-31A,train A inverter feed
+INV-31A,BUS-INV-A,train A inverter feed
+BUS-INV-A,PNL-AC-A,train A UPS AC panel feed
+BUS-INV-A,RPS-PNL-A,train A RPS panel feed
+RPS-PNL-A,TB-UPS-A,train A dashed UPS terminal control connection
+PNL-AC-A,BUS-120N-A,train A 120V bus feed
+BUS-120N-A,RELAY-K7A1,train A RPS relay/terminal/PT channel 1
+RELAY-K7A1,TB-RPS-A1,train A RPS relay/terminal/PT channel 1
+TB-RPS-A1,PT-31A1,train A RPS relay/terminal/PT channel 1
+BUS-120N-A,RELAY-K7A2,train A RPS relay/terminal/PT channel 2
+RELAY-K7A2,TB-RPS-A2,train A RPS relay/terminal/PT channel 2
+TB-RPS-A2,PT-31A2,train A RPS relay/terminal/PT channel 2
+BUS-120N-A,RELAY-K7A3,train A RPS relay/terminal/PT channel 3
+RELAY-K7A3,TB-RPS-A3,train A RPS relay/terminal/PT channel 3
+TB-RPS-A3,PT-31A3,train A RPS relay/terminal/PT channel 3
+BUS-120N-A,RELAY-K7A4,train A RPS relay/terminal/PT channel 4
+RELAY-K7A4,TB-RPS-A4,train A RPS relay/terminal/PT channel 4
+TB-RPS-A4,PT-31A4,train A RPS relay/terminal/PT channel 4
+BAT-31B,DS-BAT-B,train B battery feed to 125VDC bus
+DS-BAT-B,BUS-125DCB,train B battery feed to 125VDC bus
+CHG-31B,CB-CHG-B,train B charger feed to 125VDC bus
+CB-CHG-B,BUS-125DCB,train B charger feed to 125VDC bus
+BUS-125DCB,PNL-DC-B,train B 125VDC panel feed
+BUS-125DCB,CB-INV-B,train B inverter feed
+CB-INV-B,INV-31B,train B inverter feed
+INV-31B,BUS-INV-B,train B inverter feed
+BUS-INV-B,PNL-AC-B,train B UPS AC panel feed
+BUS-INV-B,RPS-PNL-B,train B RPS panel feed
+RPS-PNL-B,TB-UPS-B,train B dashed UPS terminal control connection
+PNL-AC-B,BUS-120N-B,train B 120V bus feed
+BUS-120N-B,RELAY-K7B1,train B RPS relay/terminal/PT channel 1
+RELAY-K7B1,TB-RPS-B1,train B RPS relay/terminal/PT channel 1
+TB-RPS-B1,PT-31B1,train B RPS relay/terminal/PT channel 1
+BUS-120N-B,RELAY-K7B2,train B RPS relay/terminal/PT channel 2
+RELAY-K7B2,TB-RPS-B2,train B RPS relay/terminal/PT channel 2
+TB-RPS-B2,PT-31B2,train B RPS relay/terminal/PT channel 2
+BUS-120N-B,RELAY-K7B3,train B RPS relay/terminal/PT channel 3
+RELAY-K7B3,TB-RPS-B3,train B RPS relay/terminal/PT channel 3
+TB-RPS-B3,PT-31B3,train B RPS relay/terminal/PT channel 3
+BUS-120N-B,RELAY-K7B4,train B RPS relay/terminal/PT channel 4
+RELAY-K7B4,TB-RPS-B4,train B RPS relay/terminal/PT channel 4
+TB-RPS-B4,PT-31B4,train B RPS relay/terminal/PT channel 4
+CB-480A13,MOV-SI-902A,Diego high-recall dashed control/protection candidate near LC-31A3 branch
+MOV-SI-902A,CB-INV-A,Diego high-recall dashed route candidate into A inverter area
+CB-480B13,MOV-SI-902B,Diego high-recall dashed control/protection candidate near LC-31B3 branch
+MOV-SI-902B,CB-INV-B,Diego high-recall dashed route candidate into B inverter area
+MOV-RHR-731A,CHG-31A,Diego high-recall dashed route candidate in train A lower control lane
+MOV-RHR-731B,CHG-31B,Diego high-recall dashed route candidate in train B lower control lane
+MOV-VENT-406A,RPS-PNL-A,Diego high-recall dashed route candidate to A RPS panel region
+MOV-VENT-406B,RPS-PNL-B,Diego high-recall dashed route candidate to B RPS panel region

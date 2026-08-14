@@ -1,0 +1,65 @@
+Connectivity matrix validation summary - Document 18
+Input configuration: Raw + wires + components + junctions
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\18\synthetic_nuclear_connectivity_matrix_readable.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_connectivity_matrix.csv): TP=189, FP=12, FN=11, Precision=0.940299, Recall=0.945000, F1=0.942643
+- Jennifer -- Round 2 (round_02_jennifer_connectivity_matrix.csv): TP=182, FP=8, FN=18, Precision=0.957895, Recall=0.910000, F1=0.933333
+- Diego -- Round 3 (round_03_diego_connectivity_matrix.csv): TP=190, FP=10, FN=10, Precision=0.950000, Recall=0.950000, F1=0.950000
+- Jennifer -- Round 4 (round_04_jennifer_final_connectivity_matrix.csv): TP=189, FP=12, FN=11, Precision=0.940299, Recall=0.945000, F1=0.942643
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=189, FP=12, FN=11, Precision=0.940299, Recall=0.945000, F1=0.942643
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- BUS-4160A -- CB-4160 TIE
+- BUS-4160A -- TB-RPS-A
+- BUS-4160B -- CB-4160 TIE
+- CB-GRID-A -- GRID-SWYD 1
+- CB-GRID-B -- GRID-SWYD 2
+- FU-PT-A -- XFMR-CTRL A
+- FU-PT-B -- XFMR-CTRL B
+- JB-RPS-A -- PLC-RPS-A
+- JB-RPS-B -- PLC-RPS-B
+- TB-RPS-A -- TR-480-A1
+
+False-negative edge examples:
+- BUS-4160A -- CB-4160-TIE
+- BUS-4160A -- TR-480-A1
+- BUS-4160B -- CB-4160-TIE
+- CB-GRID-A -- GRID-SWYD-1
+- CB-GRID-B -- GRID-SWYD-2
+- FU-PT-A -- XFMR-CTRL-A
+- FU-PT-B -- XFMR-CTRL-B
+- JB-RPS-A -- RELAY-K101
+- JB-RPS-B -- RELAY-K201
+- TB-RPS-A -- XFMR-CTRL-A
+
+Extra/non-GT nodes causing performance drops:
+- CB-4160 TIE: 2 incident false-positive edge(s)
+- XFMR-CTRL A: 2 incident false-positive edge(s)
+- XFMR-CTRL B: 2 incident false-positive edge(s)
+- GRID-SWYD 1: 1 incident false-positive edge(s)
+- GRID-SWYD 2: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (CB-4160 TIE, XFMR-CTRL A, XFMR-CTRL B, GRID-SWYD 1, GRID-SWYD 2), final metrics would be TP=189, FP=4, FN=11, Precision=0.979275, Recall=0.945000, F1=0.961832.
+- If all 5 non-GT nodes were omitted, metrics would be TP=189, FP=4, FN=11, Precision=0.979275, Recall=0.945000, F1=0.961832.
+
+Missing GT node examples:
+- CB-4160-TIE: 2 missed incident GT edge(s)
+- XFMR-CTRL-A: 2 missed incident GT edge(s)
+- XFMR-CTRL-B: 2 missed incident GT edge(s)
+- GRID-SWYD-1: 1 missed incident GT edge(s)
+- GRID-SWYD-2: 1 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted CB-4160 TIE vs GT CB-4160-TIE (similarity 0.91)
+- Extracted GRID-SWYD 1 vs GT GRID-SWYD-1 (similarity 0.91)
+- Extracted GRID-SWYD 2 vs GT GRID-SWYD-2 (similarity 0.91)
+- Extracted XFMR-CTRL A vs GT XFMR-CTRL-A (similarity 0.91)
+- Extracted XFMR-CTRL B vs GT XFMR-CTRL-B (similarity 0.91)

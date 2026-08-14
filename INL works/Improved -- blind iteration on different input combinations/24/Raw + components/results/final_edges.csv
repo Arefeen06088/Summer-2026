@@ -1,0 +1,217 @@
+source,target,kind,confidence,evidence
+OFFSITE-1,CB-101A,power,high,solid horizontal line from OFFSITE-1 AC source to CB-101A.
+CB-101A,TR-SAT-1A,power,high,solid horizontal line from CB-101A to TR-SAT-1A.
+TR-SAT-1A,BUS-101A,power,high,solid vertical drop from TR-SAT-1A to BUS-101A with junction dot.
+EDG-1A,CB-DG1A,power,high,solid vertical line from EDG-1A generator circle to CB-DG1A.
+CB-DG1A,BUS-101A,power,high,solid vertical line from CB-DG1A to BUS-101A with junction dot.
+SW-MAN-A,TB-DG-A,control_trip,high,dashed control/trip line from SW-MAN-A to TB-DG-A.
+TB-DG-A,CB-DG1A,control_trip,high,dashed control/trip line from TB-DG-A to the left side of CB-DG1A.
+BUS-101A,CB-201A,power,high,solid vertical feeder from BUS-101A down to CB-201A.
+CB-201A,TR-1A,power,high,solid vertical segment from CB-201A to TR-1A.
+TR-1A,CB-202A,power,high,solid vertical segment from TR-1A to CB-202A.
+CB-202A,BUS-201A,power,high,solid vertical segment from CB-202A to BUS-201A with junction dot.
+BUS-101A,CB-TIE-1,power,high,upper solid bus reaches left side of CB-TIE-1 from BUS-101A.
+CB-TIE-1,BUS-101B,power,high,upper solid bus leaves right side of CB-TIE-1 toward BUS-101B.
+CB-TIE-1,SYNC-CAB,control_trip,medium,vertical dashed control/trip routing drops from CB-TIE-1 area toward SYNC-CAB.
+OFFSITE-2,CB-101B,power,high,solid horizontal line from OFFSITE-2 AC source to CB-101B.
+CB-101B,TR-SAT-1B,power,high,solid horizontal line from CB-101B to TR-SAT-1B.
+TR-SAT-1B,BUS-101B,power,high,solid vertical drop from TR-SAT-1B to BUS-101B with junction dot.
+EDG-1B,CB-DG1B,power,high,solid vertical line from EDG-1B generator circle to CB-DG1B.
+CB-DG1B,BUS-101B,power,high,solid vertical line from CB-DG1B to BUS-101B with junction dot.
+SW-MAN-B,TB-DG-B,control_trip,high,dashed control/trip line from SW-MAN-B to TB-DG-B.
+TB-DG-B,CB-DG1B,control_trip,high,dashed control/trip line from TB-DG-B to the left side of CB-DG1B.
+BUS-101B,CB-201B,power,high,solid vertical feeder from BUS-101B down to CB-201B.
+CB-201B,TR-1B,power,high,solid vertical segment from CB-201B to TR-1B.
+TR-1B,CB-202B,power,high,solid vertical segment from TR-1B to CB-202B.
+CB-202B,BUS-201B,power,high,solid vertical segment from CB-202B to BUS-201B with junction dot.
+BUS-201A,CB-2A01,power,high,solid vertical feeder with black junction dot from BUS-201A to CB-2A01.
+CB-2A01,DS-2A01,power,high,solid vertical segment from CB-2A01 down to DS-2A01.
+DS-2A01,MCC-2A01,power,high,solid vertical segment from DS-2A01 down to MCC-2A01.
+MCC-2A01,TB-2A01,power,high,solid vertical segment through MCC-2A01 to TB-2A01.
+TB-2A01,PUMP-P201A,power,high,solid vertical feeder from TB-2A01 to load label PUMP-P201A.
+MCC-2A01,RELAY-K2A01,control_trip,medium,dashed vertical control/trip drop from MCC-2A01 side to RELAY-K2A01.
+BUS-201A,CB-2A02,power,high,solid vertical feeder with black junction dot from BUS-201A to CB-2A02.
+CB-2A02,DS-2A02,power,high,solid vertical segment from CB-2A02 down to DS-2A02.
+DS-2A02,MCC-2A02,power,high,solid vertical segment from DS-2A02 down to MCC-2A02.
+MCC-2A02,TB-2A02,power,high,solid vertical segment through MCC-2A02 to TB-2A02.
+TB-2A02,FAN-F202A,power,high,solid vertical feeder from TB-2A02 to load label FAN-F202A.
+MCC-2A02,RELAY-K2A02,control_trip,medium,dashed vertical control/trip drop from MCC-2A02 side to RELAY-K2A02.
+BUS-201A,CB-2A03,power,high,solid vertical feeder with black junction dot from BUS-201A to CB-2A03.
+CB-2A03,DS-2A03,power,high,solid vertical segment from CB-2A03 down to DS-2A03.
+DS-2A03,MCC-2A03,power,high,solid vertical segment from DS-2A03 down to MCC-2A03.
+MCC-2A03,TB-2A03,power,high,solid vertical segment through MCC-2A03 to TB-2A03.
+TB-2A03,MOV-HV203A,power,high,solid vertical feeder from TB-2A03 to load label MOV-HV203A.
+MCC-2A03,RELAY-K2A03,control_trip,medium,dashed vertical control/trip drop from MCC-2A03 side to RELAY-K2A03.
+BUS-201A,CB-2A04,power,high,solid vertical feeder with black junction dot from BUS-201A to CB-2A04.
+CB-2A04,DS-2A04,power,high,solid vertical segment from CB-2A04 down to DS-2A04.
+DS-2A04,MCC-2A04,power,high,solid vertical segment from DS-2A04 down to MCC-2A04.
+MCC-2A04,TB-2A04,power,high,solid vertical segment through MCC-2A04 to TB-2A04.
+TB-2A04,PUMP-P204A,power,high,solid vertical feeder from TB-2A04 to load label PUMP-P204A.
+MCC-2A04,RELAY-K2A04,control_trip,medium,dashed vertical control/trip drop from MCC-2A04 side to RELAY-K2A04.
+BUS-201A,CB-2A05,power,high,solid vertical feeder with black junction dot from BUS-201A to CB-2A05.
+CB-2A05,DS-2A05,power,high,solid vertical segment from CB-2A05 down to DS-2A05.
+DS-2A05,MCC-2A05,power,high,solid vertical segment from DS-2A05 down to MCC-2A05.
+MCC-2A05,TB-2A05,power,high,solid vertical segment through MCC-2A05 to TB-2A05.
+TB-2A05,CHLR-205A,power,high,solid vertical feeder from TB-2A05 to load label CHLR-205A.
+MCC-2A05,RELAY-K2A05,control_trip,medium,dashed vertical control/trip drop from MCC-2A05 side to RELAY-K2A05.
+BUS-201A,CB-2A06,power,high,solid vertical feeder with black junction dot from BUS-201A to CB-2A06.
+CB-2A06,DS-2A06,power,high,solid vertical segment from CB-2A06 down to DS-2A06.
+DS-2A06,MCC-2A06,power,high,solid vertical segment from DS-2A06 down to MCC-2A06.
+MCC-2A06,TB-2A06,power,high,solid vertical segment through MCC-2A06 to TB-2A06.
+TB-2A06,HTR-206A,power,high,solid vertical feeder from TB-2A06 to load label HTR-206A.
+MCC-2A06,RELAY-K2A06,control_trip,medium,dashed vertical control/trip drop from MCC-2A06 side to RELAY-K2A06.
+BUS-201A,CB-2A07,power,high,solid vertical feeder with black junction dot from BUS-201A to CB-2A07.
+CB-2A07,DS-2A07,power,high,solid vertical segment from CB-2A07 down to DS-2A07.
+DS-2A07,MCC-2A07,power,high,solid vertical segment from DS-2A07 down to MCC-2A07.
+MCC-2A07,TB-2A07,power,high,solid vertical segment through MCC-2A07 to TB-2A07.
+TB-2A07,VALVE-MV207A,power,high,solid vertical feeder from TB-2A07 to load label VALVE-MV207A.
+MCC-2A07,RELAY-K2A07,control_trip,medium,dashed vertical control/trip drop from MCC-2A07 side to RELAY-K2A07.
+BUS-201A,CB-2A08,power,high,solid vertical feeder with black junction dot from BUS-201A to CB-2A08.
+CB-2A08,DS-2A08,power,high,solid vertical segment from CB-2A08 down to DS-2A08.
+DS-2A08,MCC-2A08,power,high,solid vertical segment from DS-2A08 down to MCC-2A08.
+MCC-2A08,TB-2A08,power,high,solid vertical segment through MCC-2A08 to TB-2A08.
+TB-2A08,PMP-LP208A,power,high,solid vertical feeder from TB-2A08 to load label PMP-LP208A.
+MCC-2A08,RELAY-K2A08,control_trip,medium,dashed vertical control/trip drop from MCC-2A08 side to RELAY-K2A08.
+BUS-201A,CB-2A09,power,high,solid vertical feeder with black junction dot from BUS-201A to CB-2A09.
+CB-2A09,DS-2A09,power,high,solid vertical segment from CB-2A09 down to DS-2A09.
+DS-2A09,MCC-2A09,power,high,solid vertical segment from DS-2A09 down to MCC-2A09.
+MCC-2A09,TB-2A09,power,high,solid vertical segment through MCC-2A09 to TB-2A09.
+TB-2A09,COMP-C209A,power,high,solid vertical feeder from TB-2A09 to load label COMP-C209A.
+MCC-2A09,RELAY-K2A09,control_trip,medium,dashed vertical control/trip drop from MCC-2A09 side to RELAY-K2A09.
+HS-2A01,RELAY-K2A01,control_trip,high,"continuous dashed lower control/trip row, Train A, between HS-2A01 and RELAY-K2A01."
+RELAY-K2A01,HS-2A02,control_trip,high,"continuous dashed lower control/trip row, Train A, between RELAY-K2A01 and HS-2A02."
+HS-2A02,RELAY-K2A02,control_trip,high,"continuous dashed lower control/trip row, Train A, between HS-2A02 and RELAY-K2A02."
+RELAY-K2A02,HS-2A03,control_trip,high,"continuous dashed lower control/trip row, Train A, between RELAY-K2A02 and HS-2A03."
+HS-2A03,RELAY-K2A03,control_trip,high,"continuous dashed lower control/trip row, Train A, between HS-2A03 and RELAY-K2A03."
+RELAY-K2A03,HS-2A04,control_trip,high,"continuous dashed lower control/trip row, Train A, between RELAY-K2A03 and HS-2A04."
+HS-2A04,RELAY-K2A04,control_trip,high,"continuous dashed lower control/trip row, Train A, between HS-2A04 and RELAY-K2A04."
+RELAY-K2A04,HS-2A05,control_trip,high,"continuous dashed lower control/trip row, Train A, between RELAY-K2A04 and HS-2A05."
+HS-2A05,RELAY-K2A05,control_trip,high,"continuous dashed lower control/trip row, Train A, between HS-2A05 and RELAY-K2A05."
+RELAY-K2A05,HS-2A06,control_trip,high,"continuous dashed lower control/trip row, Train A, between RELAY-K2A05 and HS-2A06."
+HS-2A06,RELAY-K2A06,control_trip,high,"continuous dashed lower control/trip row, Train A, between HS-2A06 and RELAY-K2A06."
+RELAY-K2A06,HS-2A07,control_trip,high,"continuous dashed lower control/trip row, Train A, between RELAY-K2A06 and HS-2A07."
+HS-2A07,RELAY-K2A07,control_trip,high,"continuous dashed lower control/trip row, Train A, between HS-2A07 and RELAY-K2A07."
+RELAY-K2A07,HS-2A08,control_trip,high,"continuous dashed lower control/trip row, Train A, between RELAY-K2A07 and HS-2A08."
+HS-2A08,RELAY-K2A08,control_trip,high,"continuous dashed lower control/trip row, Train A, between HS-2A08 and RELAY-K2A08."
+RELAY-K2A08,HS-2A09,control_trip,high,"continuous dashed lower control/trip row, Train A, between RELAY-K2A08 and HS-2A09."
+HS-2A09,RELAY-K2A09,control_trip,high,"continuous dashed lower control/trip row, Train A, between HS-2A09 and RELAY-K2A09."
+BUS-201B,CB-2B01,power,high,solid vertical feeder with black junction dot from BUS-201B to CB-2B01.
+CB-2B01,DS-2B01,power,high,solid vertical segment from CB-2B01 down to DS-2B01.
+DS-2B01,MCC-2B01,power,high,solid vertical segment from DS-2B01 down to MCC-2B01.
+MCC-2B01,TB-2B01,power,high,solid vertical segment through MCC-2B01 to TB-2B01.
+TB-2B01,PUMP-P201B,power,high,solid vertical feeder from TB-2B01 to load label PUMP-P201B.
+MCC-2B01,RELAY-K2B01,control_trip,medium,dashed vertical control/trip drop from MCC-2B01 side to RELAY-K2B01.
+BUS-201B,CB-2B02,power,high,solid vertical feeder with black junction dot from BUS-201B to CB-2B02.
+CB-2B02,DS-2B02,power,high,solid vertical segment from CB-2B02 down to DS-2B02.
+DS-2B02,MCC-2B02,power,high,solid vertical segment from DS-2B02 down to MCC-2B02.
+MCC-2B02,TB-2B02,power,high,solid vertical segment through MCC-2B02 to TB-2B02.
+TB-2B02,FAN-F202B,power,high,solid vertical feeder from TB-2B02 to load label FAN-F202B.
+MCC-2B02,RELAY-K2B02,control_trip,medium,dashed vertical control/trip drop from MCC-2B02 side to RELAY-K2B02.
+BUS-201B,CB-2B03,power,high,solid vertical feeder with black junction dot from BUS-201B to CB-2B03.
+CB-2B03,DS-2B03,power,high,solid vertical segment from CB-2B03 down to DS-2B03.
+DS-2B03,MCC-2B03,power,high,solid vertical segment from DS-2B03 down to MCC-2B03.
+MCC-2B03,TB-2B03,power,high,solid vertical segment through MCC-2B03 to TB-2B03.
+TB-2B03,MOV-HV203B,power,high,solid vertical feeder from TB-2B03 to load label MOV-HV203B.
+MCC-2B03,RELAY-K2B03,control_trip,medium,dashed vertical control/trip drop from MCC-2B03 side to RELAY-K2B03.
+BUS-201B,CB-2B04,power,high,solid vertical feeder with black junction dot from BUS-201B to CB-2B04.
+CB-2B04,DS-2B04,power,high,solid vertical segment from CB-2B04 down to DS-2B04.
+DS-2B04,MCC-2B04,power,high,solid vertical segment from DS-2B04 down to MCC-2B04.
+MCC-2B04,TB-2B04,power,high,solid vertical segment through MCC-2B04 to TB-2B04.
+TB-2B04,PUMP-P204B,power,high,solid vertical feeder from TB-2B04 to load label PUMP-P204B.
+MCC-2B04,RELAY-K2B04,control_trip,medium,dashed vertical control/trip drop from MCC-2B04 side to RELAY-K2B04.
+BUS-201B,CB-2B05,power,high,solid vertical feeder with black junction dot from BUS-201B to CB-2B05.
+CB-2B05,DS-2B05,power,high,solid vertical segment from CB-2B05 down to DS-2B05.
+DS-2B05,MCC-2B05,power,high,solid vertical segment from DS-2B05 down to MCC-2B05.
+MCC-2B05,TB-2B05,power,high,solid vertical segment through MCC-2B05 to TB-2B05.
+TB-2B05,CHLR-205B,power,high,solid vertical feeder from TB-2B05 to load label CHLR-205B.
+MCC-2B05,RELAY-K2B05,control_trip,medium,dashed vertical control/trip drop from MCC-2B05 side to RELAY-K2B05.
+BUS-201B,CB-2B06,power,high,solid vertical feeder with black junction dot from BUS-201B to CB-2B06.
+CB-2B06,DS-2B06,power,high,solid vertical segment from CB-2B06 down to DS-2B06.
+DS-2B06,MCC-2B06,power,high,solid vertical segment from DS-2B06 down to MCC-2B06.
+MCC-2B06,TB-2B06,power,high,solid vertical segment through MCC-2B06 to TB-2B06.
+TB-2B06,HTR-206B,power,high,solid vertical feeder from TB-2B06 to load label HTR-206B.
+MCC-2B06,RELAY-K2B06,control_trip,medium,dashed vertical control/trip drop from MCC-2B06 side to RELAY-K2B06.
+BUS-201B,CB-2B07,power,high,solid vertical feeder with black junction dot from BUS-201B to CB-2B07.
+CB-2B07,DS-2B07,power,high,solid vertical segment from CB-2B07 down to DS-2B07.
+DS-2B07,MCC-2B07,power,high,solid vertical segment from DS-2B07 down to MCC-2B07.
+MCC-2B07,TB-2B07,power,high,solid vertical segment through MCC-2B07 to TB-2B07.
+TB-2B07,VALVE-MV207B,power,high,solid vertical feeder from TB-2B07 to load label VALVE-MV207B.
+MCC-2B07,RELAY-K2B07,control_trip,medium,dashed vertical control/trip drop from MCC-2B07 side to RELAY-K2B07.
+BUS-201B,CB-2B08,power,high,solid vertical feeder with black junction dot from BUS-201B to CB-2B08.
+CB-2B08,DS-2B08,power,high,solid vertical segment from CB-2B08 down to DS-2B08.
+DS-2B08,MCC-2B08,power,high,solid vertical segment from DS-2B08 down to MCC-2B08.
+MCC-2B08,TB-2B08,power,high,solid vertical segment through MCC-2B08 to TB-2B08.
+TB-2B08,PMP-LP208B,power,high,solid vertical feeder from TB-2B08 to load label PMP-LP208B.
+MCC-2B08,RELAY-K2B08,control_trip,medium,dashed vertical control/trip drop from MCC-2B08 side to RELAY-K2B08.
+BUS-201B,CB-2B09,power,high,solid vertical feeder with black junction dot from BUS-201B to CB-2B09.
+CB-2B09,DS-2B09,power,high,solid vertical segment from CB-2B09 down to DS-2B09.
+DS-2B09,MCC-2B09,power,high,solid vertical segment from DS-2B09 down to MCC-2B09.
+MCC-2B09,TB-2B09,power,high,solid vertical segment through MCC-2B09 to TB-2B09.
+TB-2B09,COMP-C209B,power,high,solid vertical feeder from TB-2B09 to load label COMP-C209B.
+MCC-2B09,RELAY-K2B09,control_trip,medium,dashed vertical control/trip drop from MCC-2B09 side to RELAY-K2B09.
+HS-2B01,RELAY-K2B01,control_trip,high,"continuous dashed lower control/trip row, Train B, between HS-2B01 and RELAY-K2B01."
+RELAY-K2B01,HS-2B02,control_trip,high,"continuous dashed lower control/trip row, Train B, between RELAY-K2B01 and HS-2B02."
+HS-2B02,RELAY-K2B02,control_trip,high,"continuous dashed lower control/trip row, Train B, between HS-2B02 and RELAY-K2B02."
+RELAY-K2B02,HS-2B03,control_trip,high,"continuous dashed lower control/trip row, Train B, between RELAY-K2B02 and HS-2B03."
+HS-2B03,RELAY-K2B03,control_trip,high,"continuous dashed lower control/trip row, Train B, between HS-2B03 and RELAY-K2B03."
+RELAY-K2B03,HS-2B04,control_trip,high,"continuous dashed lower control/trip row, Train B, between RELAY-K2B03 and HS-2B04."
+HS-2B04,RELAY-K2B04,control_trip,high,"continuous dashed lower control/trip row, Train B, between HS-2B04 and RELAY-K2B04."
+RELAY-K2B04,HS-2B05,control_trip,high,"continuous dashed lower control/trip row, Train B, between RELAY-K2B04 and HS-2B05."
+HS-2B05,RELAY-K2B05,control_trip,high,"continuous dashed lower control/trip row, Train B, between HS-2B05 and RELAY-K2B05."
+RELAY-K2B05,HS-2B06,control_trip,high,"continuous dashed lower control/trip row, Train B, between RELAY-K2B05 and HS-2B06."
+HS-2B06,RELAY-K2B06,control_trip,high,"continuous dashed lower control/trip row, Train B, between HS-2B06 and RELAY-K2B06."
+RELAY-K2B06,HS-2B07,control_trip,high,"continuous dashed lower control/trip row, Train B, between RELAY-K2B06 and HS-2B07."
+HS-2B07,RELAY-K2B07,control_trip,high,"continuous dashed lower control/trip row, Train B, between HS-2B07 and RELAY-K2B07."
+RELAY-K2B07,HS-2B08,control_trip,high,"continuous dashed lower control/trip row, Train B, between RELAY-K2B07 and HS-2B08."
+HS-2B08,RELAY-K2B08,control_trip,high,"continuous dashed lower control/trip row, Train B, between HS-2B08 and RELAY-K2B08."
+RELAY-K2B08,HS-2B09,control_trip,high,"continuous dashed lower control/trip row, Train B, between RELAY-K2B08 and HS-2B09."
+HS-2B09,RELAY-K2B09,control_trip,high,"continuous dashed lower control/trip row, Train B, between HS-2B09 and RELAY-K2B09."
+DC-BUS-125A,BAT-125A,dc_power,high,solid DC bus tap from DC-BUS-125A to BAT-125A.
+DC-BUS-125A,CHG-125A,dc_power,high,solid DC bus tap from DC-BUS-125A to CHG-125A.
+DC-BUS-125A,INV-120A,dc_power,high,solid DC bus tap from DC-BUS-125A to INV-120A.
+DC-BUS-125A,PNL-DC-A,dc_power,high,solid DC bus tap from DC-BUS-125A to PNL-DC-A.
+DC-BUS-125A,METER-V1,dc_power,high,solid DC bus tap from DC-BUS-125A to METER-V1.
+INV-120A,PNL-AC-A,power,high,solid vertical line from INV-120A to PNL-AC-A.
+PNL-DC-A,ESFAS-PNL-A,dc_power,high,solid horizontal line from PNL-DC-A to ESFAS-PNL-A.
+PNL-DC-A,GND-DC-A,ground,high,ground symbol GND-DC-A directly below PNL-DC-A on vertical ground lead.
+PNL-AC-A,RPS-PNL-A,control_trip,high,dashed control/trip line from PNL-AC-A to RPS-PNL-A.
+RPS-PNL-A,TRIP-MOD-A,control_trip,high,dashed control/trip line from RPS-PNL-A to TRIP-MOD-A.
+ESFAS-PNL-A,TRIP-MOD-A,control_trip,medium,dashed control/trip route from ESFAS-PNL-A down and around to TRIP-MOD-A area.
+RPS-PNL-A,RELAY-K27A,control_trip,high,dashed vertical drop from RPS-PNL-A to RELAY-K27A.
+RELAY-K27A,RELAY-K59A,control_trip,high,dashed horizontal trip chain between RELAY-K27A and RELAY-K59A.
+RELAY-K59A,RELAY-K81A,control_trip,high,dashed horizontal trip chain between RELAY-K59A and RELAY-K81A.
+RELAY-K81A,RELAY-K86A,control_trip,high,dashed horizontal trip chain between RELAY-K81A and RELAY-K86A.
+TRIP-MOD-A,RELAY-K86A,control_trip,high,dashed vertical drop from TRIP-MOD-A to RELAY-K86A.
+PT-401A,JB-401A,signal,high,dotted signal line from PT-401A to JB-401A.
+LT-402A,JB-401A,signal,high,dotted signal line from LT-402A to JB-401A.
+FT-403A,JB-401A,signal,high,dotted signal line from FT-403A to JB-401A.
+JB-401A,TB-RPS-A,signal,high,dotted signal line from JB-401A to TB-RPS-A.
+TB-RPS-A,RPS-PNL-A,signal,medium,dotted signal path from TB-RPS-A continues toward RPS-PNL-A.
+JB-401A,GND-401A,ground,high,vertical ground lead from JB-401A to GND-401A.
+LOAD-SHED-CAB,TDR-1,control_trip,high,dashed control/trip segment from LOAD-SHED-CAB left side to TDR-1.
+LOAD-SHED-CAB,TDR-2,control_trip,high,dashed control/trip segment from LOAD-SHED-CAB right side to TDR-2.
+LOAD-SHED-CAB,LAMP-ALM-A,signal,high,dotted signal branch from LOAD-SHED-CAB down to LAMP-ALM-A.
+LOAD-SHED-CAB,LAMP-ALM-B,signal,high,dotted signal branch from LOAD-SHED-CAB down to LAMP-ALM-B.
+LOAD-SHED-CAB,ANN-PNL-1,signal,medium,dotted central signal routing from LOAD-SHED-CAB toward ANN-PNL-1.
+ANN-PNL-1,SEQ-REC-1,signal,high,dotted signal line directly between ANN-PNL-1 and SEQ-REC-1.
+DC-BUS-125B,BAT-125B,dc_power,high,solid DC bus tap from DC-BUS-125B to BAT-125B.
+DC-BUS-125B,CHG-125B,dc_power,high,solid DC bus tap from DC-BUS-125B to CHG-125B.
+DC-BUS-125B,INV-120B,dc_power,high,solid DC bus tap from DC-BUS-125B to INV-120B.
+DC-BUS-125B,PNL-DC-B,dc_power,high,solid DC bus tap from DC-BUS-125B to PNL-DC-B.
+INV-120B,PNL-AC-B,power,high,solid vertical line from INV-120B to PNL-AC-B.
+PNL-DC-B,ESFAS-PNL-B,dc_power,high,solid horizontal line from PNL-DC-B to ESFAS-PNL-B.
+PNL-DC-B,GND-DC-B,ground,high,ground symbol GND-DC-B directly below PNL-DC-B on vertical ground lead.
+PNL-AC-B,RPS-PNL-B,control_trip,high,dashed control/trip line from PNL-AC-B to RPS-PNL-B.
+RPS-PNL-B,TRIP-MOD-B,control_trip,high,dashed control/trip line from RPS-PNL-B to TRIP-MOD-B.
+ESFAS-PNL-B,TRIP-MOD-B,control_trip,medium,dashed control/trip route from ESFAS-PNL-B down and around to TRIP-MOD-B area.
+RPS-PNL-B,RELAY-K27B,control_trip,high,dashed vertical drop from RPS-PNL-B to RELAY-K27B.
+RELAY-K27B,RELAY-K59B,control_trip,high,dashed horizontal trip chain between RELAY-K27B and RELAY-K59B.
+RELAY-K59B,RELAY-K81B,control_trip,high,dashed horizontal trip chain between RELAY-K59B and RELAY-K81B.
+RELAY-K81B,RELAY-K86B,control_trip,high,dashed horizontal trip chain between RELAY-K81B and RELAY-K86B.
+TRIP-MOD-B,RELAY-K86B,control_trip,high,dashed vertical drop from TRIP-MOD-B to RELAY-K86B.
+PT-401B,JB-401B,signal,high,dotted signal line from PT-401B to JB-401B.
+LT-402B,JB-401B,signal,high,dotted signal line from LT-402B to JB-401B.
+FT-403B,JB-401B,signal,high,dotted signal line from FT-403B to JB-401B.
+JB-401B,TB-RPS-B,signal,high,dotted signal line from JB-401B to TB-RPS-B.
+TB-RPS-B,RPS-PNL-B,signal,medium,dotted signal path from TB-RPS-B continues toward RPS-PNL-B.
+JB-401B,GND-401B,ground,high,vertical ground lead from JB-401B to GND-401B.

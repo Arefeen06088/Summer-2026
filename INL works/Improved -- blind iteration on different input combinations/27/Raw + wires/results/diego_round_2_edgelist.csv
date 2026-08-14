@@ -1,0 +1,201 @@
+a,b,kind,evidence
+GRID-345,DS-101,solid_power,top normal/emergency source feeder
+DS-101,CB-101,solid_power,top normal/emergency source feeder
+CB-101,BUS-13KV-N,solid_power,top normal/emergency source feeder
+GEN-G1,CB-G1,solid_power,G1 tap to 13 kV bus
+CB-G1,BUS-13KV-N,solid_power,G1 tap to 13 kV bus
+GEN-G2,CB-G2,solid_power,G2 tap to 13 kV bus
+CB-G2,BUS-13KV-N,solid_power,G2 tap to 13 kV bus
+BUS-13KV-N,TR-1A,solid_power,13 kV bus to train A 4.16 kV bus
+TR-1A,CB-4A-IN,solid_power,13 kV bus to train A 4.16 kV bus
+CB-4A-IN,BUS-4160-A,solid_power,13 kV bus to train A 4.16 kV bus
+BUS-13KV-N,TR-1B,solid_power,13 kV bus to train B 4.16 kV bus
+TR-1B,CB-4B-IN,solid_power,13 kV bus to train B 4.16 kV bus
+CB-4B-IN,BUS-4160-B,solid_power,13 kV bus to train B 4.16 kV bus
+DG-1A,CB-DG1A,solid_power,diesel generator 1A feeder
+CB-DG1A,BUS-4160-A,solid_power,diesel generator 1A feeder
+DG-1B,CB-DG1B,solid_power,diesel generator 1B feeder
+CB-DG1B,BUS-4160-B,solid_power,diesel generator 1B feeder
+BUS-4160-A,CB-TIE-41,solid_power,4.16 kV bus tie
+CB-TIE-41,BUS-4160-B,solid_power,4.16 kV bus tie
+BUS-4160-A,TR-480-A,solid_power,train A 480 V transformer feeder
+TR-480-A,CB-480A-IN,solid_power,train A 480 V transformer feeder
+CB-480A-IN,BUS-480-A,solid_power,train A 480 V transformer feeder
+BUS-4160-B,TR-480-B,solid_power,train B 480 V transformer feeder
+TR-480-B,CB-480B-IN,solid_power,train B 480 V transformer feeder
+CB-480B-IN,BUS-480-B,solid_power,train B 480 V transformer feeder
+BUS-4160-A,TR-480-C,solid_power,train A auxiliary 480 V transformer feeder
+TR-480-C,CB-480C-IN,solid_power,train A auxiliary 480 V transformer feeder
+CB-480C-IN,BUS-480-C,solid_power,train A auxiliary 480 V transformer feeder
+BUS-4160-B,TR-480-D,solid_power,train B auxiliary 480 V transformer feeder
+TR-480-D,CB-480D-IN,solid_power,train B auxiliary 480 V transformer feeder
+CB-480D-IN,BUS-480-D,solid_power,train B auxiliary 480 V transformer feeder
+BUS-480-A,CB-A01,solid_power,BUS-480-A feeder A01 tap
+CB-A01,DS-A01,solid_power,breaker to disconnect
+DS-A01,PMP-A01,solid_power,DS-A01 to load PMP-A01
+PMP-A01,RLY-A01,dashed_control,visible dashed control/status drop
+BUS-480-A,CB-A02,solid_power,BUS-480-A feeder A02 tap
+CB-A02,FU-A02,solid_power,breaker to fuse
+FU-A02,MOV-A02,solid_power,FU-A02 to load MOV-A02
+MOV-A02,LS-A02,dotted_signal,visible dotted signal drop
+BUS-480-A,CB-A03,solid_power,BUS-480-A feeder A03 tap
+CB-A03,DS-A03,solid_power,breaker to disconnect
+DS-A03,MTR-A03,solid_power,DS-A03 to load MTR-A03
+MTR-A03,RLY-A03,dashed_control,visible dashed control/status drop
+BUS-480-A,CB-A04,solid_power,BUS-480-A feeder A04 tap
+CB-A04,DS-A04,solid_power,breaker to disconnect
+DS-A04,PNL-A04,solid_power,DS-A04 to load PNL-A04
+PNL-A04,JB-A04,dotted_signal,visible dotted signal drop
+BUS-480-A,CB-A05,solid_power,BUS-480-A feeder A05 tap
+CB-A05,FU-A05,solid_power,breaker to fuse
+FU-A05,PMP-A05,solid_power,FU-A05 to load PMP-A05
+PMP-A05,FT-A05,dotted_signal,visible dotted signal drop
+BUS-480-A,CB-A06,solid_power,BUS-480-A feeder A06 tap
+CB-A06,DS-A06,solid_power,breaker to disconnect
+DS-A06,MOV-A06,solid_power,DS-A06 to load MOV-A06
+MOV-A06,RLY-A06,dashed_control,visible dashed control/status drop
+BUS-480-A,CB-A07,solid_power,BUS-480-A feeder A07 tap
+CB-A07,DS-A07,solid_power,breaker to disconnect
+DS-A07,MCC-A07,solid_power,DS-A07 to load MCC-A07
+MCC-A07,TB-A07,dotted_signal,visible dotted signal drop
+BUS-480-A,CB-A08,solid_power,BUS-480-A feeder A08 tap
+CB-A08,FU-A08,solid_power,breaker to fuse
+FU-A08,PMP-A08,solid_power,FU-A08 to load PMP-A08
+PMP-A08,PT-A08,dotted_signal,visible dotted signal drop
+BUS-480-A,CB-A09,solid_power,BUS-480-A feeder A09 tap
+CB-A09,DS-A09,solid_power,breaker to disconnect
+DS-A09,FAN-A09,solid_power,DS-A09 to load FAN-A09
+FAN-A09,HS-A09,dashed_control,visible dashed control/status drop
+BUS-480-A,CB-A10,solid_power,A10 battery/JB chain; final JB to LT is a signal drop
+CB-A10,DS-A10,solid_power,A10 battery/JB chain; final JB to LT is a signal drop
+DS-A10,BAT-125A,solid_power,A10 battery/JB chain; final JB to LT is a signal drop
+BAT-125A,JB-A10,solid_power,A10 battery/JB chain; final JB to LT is a signal drop
+JB-A10,LT-A10,dotted_signal,dotted signal from JB-A10 to LT-A10
+BUS-480-A,CHGR-125A,solid_power,solid tap from BUS-480-A to CHG box labelled CHGR-125A
+CHGR-125A,DC-BUS-125A,dc_ground,dash-dot charger/DC line lands on DC-BUS-125A dot
+BUS-480-B,CB-B01,solid_power,BUS-480-B feeder B01 tap
+CB-B01,DS-B01,solid_power,breaker to disconnect
+DS-B01,PMP-B01,solid_power,DS-B01 to load PMP-B01
+PMP-B01,RLY-B01,dashed_control,visible dashed control/status drop
+BUS-480-B,CB-B02,solid_power,BUS-480-B feeder B02 tap
+CB-B02,FU-B02,solid_power,breaker to fuse
+FU-B02,MOV-B02,solid_power,FU-B02 to load MOV-B02
+MOV-B02,LS-B02,dotted_signal,visible dotted signal drop
+BUS-480-B,CB-B03,solid_power,BUS-480-B feeder B03 tap
+CB-B03,DS-B03,solid_power,breaker to disconnect
+DS-B03,MTR-B03,solid_power,DS-B03 to load MTR-B03
+MTR-B03,RLY-B03,dashed_control,visible dashed control/status drop
+BUS-480-B,CB-B04,solid_power,BUS-480-B feeder B04 tap
+CB-B04,DS-B04,solid_power,breaker to disconnect
+DS-B04,PNL-B04,solid_power,DS-B04 to load PNL-B04
+PNL-B04,JB-B04,dotted_signal,visible dotted signal drop
+BUS-480-B,CB-B05,solid_power,BUS-480-B feeder B05 tap
+CB-B05,FU-B05,solid_power,breaker to fuse
+FU-B05,PMP-B05,solid_power,FU-B05 to load PMP-B05
+PMP-B05,FT-B05,dotted_signal,visible dotted signal drop
+BUS-480-B,CB-B06,solid_power,BUS-480-B feeder B06 tap
+CB-B06,DS-B06,solid_power,breaker to disconnect
+DS-B06,MOV-B06,solid_power,DS-B06 to load MOV-B06
+MOV-B06,RLY-B06,dashed_control,visible dashed control/status drop
+BUS-480-B,CB-B07,solid_power,BUS-480-B feeder B07 tap
+CB-B07,DS-B07,solid_power,breaker to disconnect
+DS-B07,MCC-B07,solid_power,DS-B07 to load MCC-B07
+MCC-B07,TB-B07,dotted_signal,visible dotted signal drop
+BUS-480-B,CB-B08,solid_power,BUS-480-B feeder B08 tap
+CB-B08,FU-B08,solid_power,breaker to fuse
+FU-B08,PMP-B08,solid_power,FU-B08 to load PMP-B08
+PMP-B08,PT-B08,dotted_signal,visible dotted signal drop
+BUS-480-B,CB-B09,solid_power,BUS-480-B feeder B09 tap
+CB-B09,DS-B09,solid_power,breaker to disconnect
+DS-B09,FAN-B09,solid_power,DS-B09 to load FAN-B09
+FAN-B09,HS-B09,dashed_control,visible dashed control/status drop
+BUS-480-B,CB-B10,solid_power,BUS-480-B feeder B10 tap
+CB-B10,DS-B10,solid_power,breaker to disconnect
+DS-B10,JB-B10,solid_power,DS-B10 to load JB-B10
+JB-B10,LT-B10,dotted_signal,visible dotted signal drop
+BUS-480-B,CHGR-125B,solid_power,solid tap from BUS-480-B to CHG box labelled CHGR-125B
+CHGR-125B,DC-BUS-125B,dc_ground,dash-dot charger/DC line lands on DC-BUS-125B dot
+BUS-480-C,CB-C01,solid_power,BUS-480-C feeder C01 tap
+CB-C01,DS-C01,solid_power,breaker to disconnect
+DS-C01,MOV-C01,solid_power,DS-C01 to load MOV-C01
+MOV-C01,RLY-C01,dashed_control,visible dashed control/status drop
+BUS-480-C,CB-C02,solid_power,BUS-480-C feeder C02 tap
+CB-C02,FU-C02,solid_power,breaker to fuse
+FU-C02,PNL-C02,solid_power,FU-C02 to load PNL-C02
+PNL-C02,JB-C02,dotted_signal,visible dotted signal drop
+BUS-480-C,CB-C03,solid_power,BUS-480-C feeder C03 tap
+CB-C03,DS-C03,solid_power,breaker to disconnect
+DS-C03,PMP-C03,solid_power,DS-C03 to load PMP-C03
+PMP-C03,FT-C03,dotted_signal,visible dotted signal drop
+BUS-480-C,CB-C04,solid_power,BUS-480-C feeder C04 tap
+CB-C04,DS-C04,solid_power,breaker to disconnect
+DS-C04,HTR-C04,solid_power,DS-C04 to load HTR-C04
+HTR-C04,HS-C04,dashed_control,visible dashed control/status drop
+BUS-480-C,CB-C05,solid_power,BUS-480-C feeder C05 tap
+CB-C05,FU-C05,solid_power,breaker to fuse
+FU-C05,INST-C05,solid_power,FU-C05 to load INST-C05
+INST-C05,JB-C05,dotted_signal,visible dotted signal drop
+BUS-480-C,CB-C06,solid_power,BUS-480-C feeder C06 tap
+CB-C06,DS-C06,solid_power,breaker to disconnect
+DS-C06,MOV-C06,solid_power,DS-C06 to load MOV-C06
+MOV-C06,LS-C06,dotted_signal,visible dotted signal drop
+BUS-480-C,CB-C07,solid_power,BUS-480-C feeder C07 tap
+CB-C07,DS-C07,solid_power,breaker to disconnect
+DS-C07,MCC-C07,solid_power,DS-C07 to load MCC-C07
+MCC-C07,TB-C07,dotted_signal,visible dotted signal drop
+BUS-480-C,CB-C08,solid_power,BUS-480-C feeder C08 tap
+CB-C08,FU-C08,solid_power,breaker to fuse
+FU-C08,PMP-C08,solid_power,FU-C08 to load PMP-C08
+PMP-C08,PT-C08,dotted_signal,visible dotted signal drop
+BUS-480-C,CB-C09,solid_power,BUS-480-C feeder C09 tap
+CB-C09,DS-C09,solid_power,breaker to disconnect
+DS-C09,PNL-C09,solid_power,DS-C09 to load PNL-C09
+PNL-C09,RLY-C09,dashed_control,visible dashed control/status drop
+BUS-480-C,CB-C10,solid_power,BUS-480-C feeder C10 tap
+CB-C10,DS-C10,solid_power,breaker to disconnect
+DS-C10,JB-C10,solid_power,DS-C10 to load JB-C10
+JB-C10,TB-C10,dotted_signal,visible dotted signal drop
+BUS-480-C,GND-EQ-A,dc_ground,dash-dot ground connection from BUS-480-C to GND-EQ-A
+BUS-480-D,CB-D01,solid_power,BUS-480-D feeder D01 tap
+CB-D01,DS-D01,solid_power,breaker to disconnect
+DS-D01,MOV-D01,solid_power,DS-D01 to load MOV-D01
+MOV-D01,RLY-D01,dashed_control,visible dashed control/status drop
+BUS-480-D,CB-D02,solid_power,BUS-480-D feeder D02 tap
+CB-D02,FU-D02,solid_power,breaker to fuse
+FU-D02,PNL-D02,solid_power,FU-D02 to load PNL-D02
+PNL-D02,JB-D02,dotted_signal,visible dotted signal drop
+BUS-480-D,CB-D03,solid_power,BUS-480-D feeder D03 tap
+CB-D03,DS-D03,solid_power,breaker to disconnect
+DS-D03,PMP-D03,solid_power,DS-D03 to load PMP-D03
+PMP-D03,FT-D03,dotted_signal,visible dotted signal drop
+BUS-480-D,CB-D04,solid_power,BUS-480-D feeder D04 tap
+CB-D04,DS-D04,solid_power,breaker to disconnect
+DS-D04,HTR-D04,solid_power,DS-D04 to load HTR-D04
+HTR-D04,HS-D04,dashed_control,visible dashed control/status drop
+BUS-480-D,CB-D05,solid_power,BUS-480-D feeder D05 tap
+CB-D05,FU-D05,solid_power,breaker to fuse
+FU-D05,INST-D05,solid_power,FU-D05 to load INST-D05
+INST-D05,JB-D05,dotted_signal,visible dotted signal drop
+BUS-480-D,CB-D06,solid_power,BUS-480-D feeder D06 tap
+CB-D06,DS-D06,solid_power,breaker to disconnect
+DS-D06,MOV-D06,solid_power,DS-D06 to load MOV-D06
+MOV-D06,LS-D06,dotted_signal,visible dotted signal drop
+BUS-480-D,CB-D07,solid_power,BUS-480-D feeder D07 tap
+CB-D07,DS-D07,solid_power,breaker to disconnect
+DS-D07,MCC-D07,solid_power,DS-D07 to load MCC-D07
+MCC-D07,TB-D07,dotted_signal,visible dotted signal drop
+BUS-480-D,CB-D08,solid_power,BUS-480-D feeder D08 tap
+CB-D08,FU-D08,solid_power,breaker to fuse
+FU-D08,PMP-D08,solid_power,FU-D08 to load PMP-D08
+PMP-D08,PT-D08,dotted_signal,visible dotted signal drop
+BUS-480-D,CB-D09,solid_power,BUS-480-D feeder D09 tap
+CB-D09,DS-D09,solid_power,breaker to disconnect
+DS-D09,PNL-D09,solid_power,DS-D09 to load PNL-D09
+PNL-D09,RLY-D09,dashed_control,visible dashed control/status drop
+BUS-480-D,CB-D10,solid_power,BUS-480-D feeder D10 tap
+CB-D10,DS-D10,solid_power,breaker to disconnect
+DS-D10,JB-D10,solid_power,DS-D10 to load JB-D10
+JB-D10,TB-D10,dotted_signal,visible dotted signal drop
+BUS-480-D,GND-EQ-B,dc_ground,dash-dot ground connection from BUS-480-D to GND-EQ-B
+DC-BUS-125A,DC-BUS-125B,dc_bus,continuous central 125 V DC bus
+DC-BUS-125A,PANEL-CTRL-MAIN,dashed_control,dashed tap from central DC bus to panel; represented once on A side

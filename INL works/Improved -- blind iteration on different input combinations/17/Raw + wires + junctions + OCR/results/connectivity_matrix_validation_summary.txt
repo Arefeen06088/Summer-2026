@@ -1,0 +1,38 @@
+Connectivity matrix validation summary - Document 17 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\17\synthetic_npp_aux_power_schematic_overlap_fixed_connectivity_matrix.csv
+GT after normalization: 209 undirected edges across 200 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token usage was not available in local tracking files.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=141, FP=52, FN=68, Precision=0.730570, Recall=0.674641, F1=0.701493.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names; missing exact GT component names; close-but-not-exact component names.
+- Extracted components: 196; extra/non-GT names: 31; missing GT component names: 35.
+- False-positive extracted edge examples: BUS-125DC-A -- CHGR-125-A; BUS-125DC-B -- CHGR-125-B; BUS-480-A -- CT-4B8-A1; BUS-480-A -- GND-SMGR-A; BUS-480-B -- CT-4B8-B1; BUS-480-B -- GND-SMGR-B; CB-480-A2 -- CT-4B8-A1; CB-480-B2 -- CT-4B8-B1; ... (+44 more).
+- Missed GT edge examples: AM-480-A -- BUS-480-A; AM-480-B -- BUS-480-B; BAT-125-A -- CHGR-125-A; BAT-125-B -- CHGR-125-B; BUS-480-A -- CB-480-A2; BUS-480-A -- CT-480-A1; BUS-480-A -- GND-SWGR-A; BUS-480-A -- VM-480-A; ... (+60 more).
+- Extra/non-GT component examples: CFP-AIR-1A; CFP-AIR-1B; CT-4B8-A1; CT-4B8-B1; FAN-CDR1-1A; FAN-CDR1-1B; FIS-101A; FIS-102A; FIS-103A; FIS-104A; ... (+21 more).
+- Missing GT component examples: AM-480-A; AM-480-B; CMP-AIR-1A; CMP-AIR-1B; CT-480-A1; CT-480-B1; FAN-CRDM-1A; FAN-CRDM-1B; GEN-001; GND-SWGR-A; ... (+25 more).
+- Close-but-not-exact component examples: CFP-AIR-1A ~ CMP-AIR-1A (0.90); CFP-AIR-1B ~ CMP-AIR-1B (0.90); CT-4B8-A1 ~ CT-480-A1 (0.89); CT-4B8-B1 ~ CT-480-B1 (0.89); GND-SMGR-A ~ GND-SWGR-A (0.90); GND-SMGR-B ~ GND-SWGR-B (0.90); LS-RHCU-101A ~ LS-RWCU-101A (0.92); LS-RHCU-101B ~ LS-RWCU-101B (0.92); MOV-RHCU-101A ~ MOV-RWCU-101A (0.92); MOV-RHCU-101B ~ MOV-RWCU-101B (0.92).
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=141, FP=0, FN=68, Precision=1.000000, Recall=0.674641, F1=0.805714.
+- If all missed GT edges were added, final performance would be TP=209, FP=52, FN=0, Precision=0.800766, Recall=1.000000, F1=0.889362.
+- If extra node CFP-AIR-1A and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=141, FP=50, FN=68, Precision=0.738220, Recall=0.674641, F1=0.705000.
+- If extra node CFP-AIR-1B and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=141, FP=50, FN=68, Precision=0.738220, Recall=0.674641, F1=0.705000.
+- If extra node CT-4B8-A1 and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=141, FP=50, FN=68, Precision=0.738220, Recall=0.674641, F1=0.705000.
+- If extra node CT-4B8-B1 and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=141, FP=50, FN=68, Precision=0.738220, Recall=0.674641, F1=0.705000.
+
+Best evaluated row: Diego -- Round 3 with F1=0.701493.
+
+Round-specific notes:
+- Diego -- Round 1: TP=139, FP=84, FN=70, F1=0.643519; extra nodes=31, missing GT nodes=35. FP examples: ANN-ESF-A -- PNL-DCS; ANN-ESF-A -- REC-SOE-1; ANN-ESF-B -- PNL-DCS; ANN-ESF-B -- REC-SOE-2; ... (+80 more). FN examples: AM-480-A -- BUS-480-A; AM-480-B -- BUS-480-B; BAT-125-A -- CHGR-125-A; BAT-125-B -- CHGR-125-B; ... (+66 more).
+- Jennifer -- Round 2: TP=139, FP=52, FN=70, F1=0.695000; extra nodes=31, missing GT nodes=35. FP examples: BUS-125DC-A -- CHGR-125-A; BUS-125DC-B -- CHGR-125-B; BUS-480-A -- CT-4B8-A1; BUS-480-A -- GND-SMGR-A; ... (+48 more). FN examples: AM-480-A -- BUS-480-A; AM-480-B -- BUS-480-B; BAT-125-A -- CHGR-125-A; BAT-125-B -- CHGR-125-B; ... (+66 more).
+- Diego -- Round 3: TP=141, FP=52, FN=68, F1=0.701493; extra nodes=31, missing GT nodes=35. FP examples: BUS-125DC-A -- CHGR-125-A; BUS-125DC-B -- CHGR-125-B; BUS-480-A -- CT-4B8-A1; BUS-480-A -- GND-SMGR-A; ... (+48 more). FN examples: AM-480-A -- BUS-480-A; AM-480-B -- BUS-480-B; BAT-125-A -- CHGR-125-A; BAT-125-B -- CHGR-125-B; ... (+64 more).
+- Jennifer -- Round 4: TP=141, FP=52, FN=68, F1=0.701493; extra nodes=31, missing GT nodes=35. FP examples: BUS-125DC-A -- CHGR-125-A; BUS-125DC-B -- CHGR-125-B; BUS-480-A -- CT-4B8-A1; BUS-480-A -- GND-SMGR-A; ... (+48 more). FN examples: AM-480-A -- BUS-480-A; AM-480-B -- BUS-480-B; BAT-125-A -- CHGR-125-A; BAT-125-B -- CHGR-125-B; ... (+64 more).
+- Final connectivity -- Final: TP=141, FP=52, FN=68, F1=0.701493; extra nodes=31, missing GT nodes=35. FP examples: BUS-125DC-A -- CHGR-125-A; BUS-125DC-B -- CHGR-125-B; BUS-480-A -- CT-4B8-A1; BUS-480-A -- GND-SMGR-A; ... (+48 more). FN examples: AM-480-A -- BUS-480-A; AM-480-B -- BUS-480-B; BAT-125-A -- CHGR-125-A; BAT-125-B -- CHGR-125-B; ... (+64 more).

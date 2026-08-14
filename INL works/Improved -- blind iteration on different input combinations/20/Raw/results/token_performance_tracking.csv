@@ -1,0 +1,7 @@
+timestamp,case,round,agent,role,approx_prompt_tokens,approx_completion_tokens,matrix_nodes,matrix_edges,output_artifact,notes
+2026-07-14T06:12:39,20,local,main,inventory/crops/local inspection,1800,320,200,202,codes/crops,Approximate tokens; exact tool token accounting unavailable
+2026-07-14T06:12:39,20,round_01,Diego,high-recall extraction,4700,3600,203,205,round_01_diego_matrix.csv,Broad extraction included three unlabeled source/interface symbols
+2026-07-14T06:12:39,20,round_02,Jennifer,precision review,6000,1800,200,202,round_02_jennifer_matrix.csv,Removed unlabeled symbols; canonicalized bus tags; pruned unsupported interlock overconnections
+2026-07-14T06:12:39,20,round_03,Diego,saturation check,1100,240,200,202,round_03_diego_saturation_matrix.csv,Saturation matrix uses Jennifer precision corrections
+2026-07-14T06:12:39,20,round_04,Jennifer,final confirmation,480,170,200,202,round_04_jennifer_final_matrix.csv,Final matrix after agreement
+2026-07-14T06:12:39,20,local,main,artifact generation/validation,1500,260,200,202,final_connectivity_matrix.csv,"Symmetric matrix, zero diagonal"

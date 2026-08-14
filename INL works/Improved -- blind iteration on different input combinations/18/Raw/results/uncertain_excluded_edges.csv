@@ -1,0 +1,9 @@
+source,target,reason
+BUS-4160A,BUS-4160B,No direct edge modeled; visible connection passes through CB-4160-TIE marked normally open.
+CB-UAT-A,BUS-4160A,UAT A breaker lower terminal stops without a visible connection to the 4160 A bus.
+CB-UAT-B,BUS-4160B,UAT B breaker lower terminal stops without a visible connection to the 4160 B bus.
+RELAY-K101,RELAY-K102,Relay bundle internals are not modeled as relay-to-relay edges without direct component-to-component evidence.
+RELAY-K103,RELAY-K104,Relay bundle internals are not modeled as relay-to-relay edges without direct component-to-component evidence.
+RELAY-K201,RELAY-K202,Relay bundle internals are not modeled as relay-to-relay edges without direct component-to-component evidence.
+RELAY-K203,RELAY-K204,Relay bundle internals are not modeled as relay-to-relay edges without direct component-to-component evidence.
+crossing-without-dot,any crossing line,Legend says crossing without dot is not a connection.

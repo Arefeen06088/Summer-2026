@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 21
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\21\synthetic_npp_connectivity_matrix_fixed.csv
+GT normalized nodes: 200; GT normalized edges: 204
+Matrices evaluated: 5
+Best row: Diego -- Round 1 from diego_round1_matrix.csv with Precision=0.633333, Recall=0.651961, F1=0.642512
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=131, FP=81, FN=73, Precision=0.617925, Recall=0.642157, F1=0.629808
+Primary issue: extra/misnamed/intermediate extracted nodes created false-positive edges.
+
+Extra/non-GT nodes most responsible for FP edges: K101 (4 FP edges); K102 (3 FP edges); PT101 (2 FP edges); K122 (2 FP edges); K123 (2 FP edges); K120 (2 FP edges); K121 (2 FP edges); K107 (2 FP edges).
+Missing GT nodes examples: CB-204B; INST-CT501; INST-CT502; INST-FT201; INST-FT202; INST-LT301; INST-LT302; INST-PT101; INST-PT102; INST-PT103.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: BUS-201B -- CB-204A; BUS-401A -- DS-401B; BUS-401A -- DS-402B; BUS-401B -- RECT-24C; BUS-501A -- CP-SWGR; BUS-501B -- CP-CRD; CB-204A -- DS-201B; CP-CCW-A -- CP-CCW-B.
+False-negative edge examples among GT-known nodes: BAT-EDG-A -- CP-EDG-A; BAT-EDG-B -- CP-EDG-B; BUS-201A -- CB-204A; BUS-201B -- DS-201B; BUS-202A -- CB-204A; BUS-202A -- DS-202A; BUS-301A -- BUS-301B; BUS-301B -- DS-401B.
+False-positive examples involving extra/non-GT nodes: BUS-202A -- CB-EDG2A-BUS-UNLABELED; CB-EDG2A-BUS-UNLABELED -- DS-202A; CP-CCW-A -- K107; CP-CCW-B -- K110; CP-EDG-A -- K113; CP-EDG-B -- K116; CP-SI-A -- K101; CP-SI-B -- K104.
+False-negative examples involving missing/differently named nodes: BUS-201B -- CB-204B; BUS-202B -- CB-204B; CP-CCW-A -- RELAY-K107; CP-CCW-B -- RELAY-K110; CP-EDG-A -- RELAY-K113; CP-EDG-B -- RELAY-K116; CP-SI-A -- RELAY-K101; CP-SI-B -- RELAY-K104.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (K101; K102; PT101; K122; K123), the final-row metrics would be TP=131, FP=70, FN=73, Precision=0.651741, Recall=0.642157, F1=0.646914.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=131, FP=21, FN=73, Precision=0.861842, Recall=0.642157, F1=0.735955.

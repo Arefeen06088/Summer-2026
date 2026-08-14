@@ -1,0 +1,221 @@
+source,target,type,evidence
+OFFSITE-1,CB-101A,power,solid offsite feed
+CB-101A,TR-SAT-1A,power,solid offsite feed
+TR-SAT-1A,BUS-101A,power,solid transformer drop to bus
+EDG-1A,CB-DG1A,power,solid EDG lead
+CB-DG1A,BUS-101A,power,solid EDG breaker drop to bus
+BUS-101A,CB-TIE-1,power,solid bus tie segment
+CB-TIE-1,BUS-101B,power,solid bus tie segment
+OFFSITE-2,CB-101B,power,solid offsite feed
+CB-101B,TR-SAT-1B,power,solid offsite feed
+TR-SAT-1B,BUS-101B,power,solid transformer drop to bus
+EDG-1B,CB-DG1B,power,solid EDG lead
+CB-DG1B,BUS-101B,power,solid EDG breaker drop to bus
+BUS-101A,CB-201A,power,solid transformer feeder drop
+CB-201A,TR-1A,power,solid transformer feeder chain
+TR-1A,CB-202A,power,solid transformer feeder chain
+CB-202A,BUS-201A,power,solid drop to 4.16 kV safety bus
+BUS-101B,CB-201B,power,solid transformer feeder drop
+CB-201B,TR-1B,power,solid transformer feeder chain
+TR-1B,CB-202B,power,solid transformer feeder chain
+CB-202B,BUS-201B,power,solid drop to 4.16 kV safety bus
+BUS-201A,CB-2A01,power,vertical feeder tap from bus
+CB-2A01,DS-2A01,power,solid feeder column
+DS-2A01,MCC-2A01,power,solid feeder column
+MCC-2A01,TB-2A01,power,solid feeder column
+TB-2A01,PUMP-P201A,power,solid feeder column to load
+MCC-2A01,RELAY-K2A01,control,dashed drop from MCC to relay row
+HS-2A01,RELAY-K2A01,control,dashed hand-switch to relay segment
+BUS-201A,CB-2A02,power,vertical feeder tap from bus
+CB-2A02,DS-2A02,power,solid feeder column
+DS-2A02,MCC-2A02,power,solid feeder column
+MCC-2A02,TB-2A02,power,solid feeder column
+TB-2A02,FAN-F202A,power,solid feeder column to load
+MCC-2A02,RELAY-K2A02,control,dashed drop from MCC to relay row
+HS-2A02,RELAY-K2A02,control,dashed hand-switch to relay segment
+BUS-201A,CB-2A03,power,vertical feeder tap from bus
+CB-2A03,DS-2A03,power,solid feeder column
+DS-2A03,MCC-2A03,power,solid feeder column
+MCC-2A03,TB-2A03,power,solid feeder column
+TB-2A03,MOV-HV203A,power,solid feeder column to load
+MCC-2A03,RELAY-K2A03,control,dashed drop from MCC to relay row
+HS-2A03,RELAY-K2A03,control,dashed hand-switch to relay segment
+BUS-201A,CB-2A04,power,vertical feeder tap from bus
+CB-2A04,DS-2A04,power,solid feeder column
+DS-2A04,MCC-2A04,power,solid feeder column
+MCC-2A04,TB-2A04,power,solid feeder column
+TB-2A04,PUMP-P204A,power,solid feeder column to load
+MCC-2A04,RELAY-K2A04,control,dashed drop from MCC to relay row
+HS-2A04,RELAY-K2A04,control,dashed hand-switch to relay segment
+BUS-201A,CB-2A05,power,vertical feeder tap from bus
+CB-2A05,DS-2A05,power,solid feeder column
+DS-2A05,MCC-2A05,power,solid feeder column
+MCC-2A05,TB-2A05,power,solid feeder column
+TB-2A05,CHLR-205A,power,solid feeder column to load
+MCC-2A05,RELAY-K2A05,control,dashed drop from MCC to relay row
+HS-2A05,RELAY-K2A05,control,dashed hand-switch to relay segment
+BUS-201A,CB-2A06,power,vertical feeder tap from bus
+CB-2A06,DS-2A06,power,solid feeder column
+DS-2A06,MCC-2A06,power,solid feeder column
+MCC-2A06,TB-2A06,power,solid feeder column
+TB-2A06,HTR-206A,power,solid feeder column to load
+MCC-2A06,RELAY-K2A06,control,dashed drop from MCC to relay row
+HS-2A06,RELAY-K2A06,control,dashed hand-switch to relay segment
+BUS-201A,CB-2A07,power,vertical feeder tap from bus
+CB-2A07,DS-2A07,power,solid feeder column
+DS-2A07,MCC-2A07,power,solid feeder column
+MCC-2A07,TB-2A07,power,solid feeder column
+TB-2A07,VALVE-MV207A,power,solid feeder column to load
+MCC-2A07,RELAY-K2A07,control,dashed drop from MCC to relay row
+HS-2A07,RELAY-K2A07,control,dashed hand-switch to relay segment
+BUS-201A,CB-2A08,power,vertical feeder tap from bus
+CB-2A08,DS-2A08,power,solid feeder column
+DS-2A08,MCC-2A08,power,solid feeder column
+MCC-2A08,TB-2A08,power,solid feeder column
+TB-2A08,PMP-LP208A,power,solid feeder column to load
+MCC-2A08,RELAY-K2A08,control,dashed drop from MCC to relay row
+HS-2A08,RELAY-K2A08,control,dashed hand-switch to relay segment
+BUS-201A,CB-2A09,power,vertical feeder tap from bus
+CB-2A09,DS-2A09,power,solid feeder column
+DS-2A09,MCC-2A09,power,solid feeder column
+MCC-2A09,TB-2A09,power,solid feeder column
+TB-2A09,COMP-C209A,power,solid feeder column to load
+MCC-2A09,RELAY-K2A09,control,dashed drop from MCC to relay row
+HS-2A09,RELAY-K2A09,control,dashed hand-switch to relay segment
+RELAY-K2A01,HS-2A02,control,dashed relay-row chain between adjacent feeder controls
+RELAY-K2A02,HS-2A03,control,dashed relay-row chain between adjacent feeder controls
+RELAY-K2A03,HS-2A04,control,dashed relay-row chain between adjacent feeder controls
+RELAY-K2A04,HS-2A05,control,dashed relay-row chain between adjacent feeder controls
+RELAY-K2A05,HS-2A06,control,dashed relay-row chain between adjacent feeder controls
+RELAY-K2A06,HS-2A07,control,dashed relay-row chain between adjacent feeder controls
+RELAY-K2A07,HS-2A08,control,dashed relay-row chain between adjacent feeder controls
+RELAY-K2A08,HS-2A09,control,dashed relay-row chain between adjacent feeder controls
+BUS-201B,CB-2B01,power,vertical feeder tap from bus
+CB-2B01,DS-2B01,power,solid feeder column
+DS-2B01,MCC-2B01,power,solid feeder column
+MCC-2B01,TB-2B01,power,solid feeder column
+TB-2B01,PUMP-P201B,power,solid feeder column to load
+MCC-2B01,RELAY-K2B01,control,dashed drop from MCC to relay row
+HS-2B01,RELAY-K2B01,control,dashed hand-switch to relay segment
+BUS-201B,CB-2B02,power,vertical feeder tap from bus
+CB-2B02,DS-2B02,power,solid feeder column
+DS-2B02,MCC-2B02,power,solid feeder column
+MCC-2B02,TB-2B02,power,solid feeder column
+TB-2B02,FAN-F202B,power,solid feeder column to load
+MCC-2B02,RELAY-K2B02,control,dashed drop from MCC to relay row
+HS-2B02,RELAY-K2B02,control,dashed hand-switch to relay segment
+BUS-201B,CB-2B03,power,vertical feeder tap from bus
+CB-2B03,DS-2B03,power,solid feeder column
+DS-2B03,MCC-2B03,power,solid feeder column
+MCC-2B03,TB-2B03,power,solid feeder column
+TB-2B03,MOV-HV203B,power,solid feeder column to load
+MCC-2B03,RELAY-K2B03,control,dashed drop from MCC to relay row
+HS-2B03,RELAY-K2B03,control,dashed hand-switch to relay segment
+BUS-201B,CB-2B04,power,vertical feeder tap from bus
+CB-2B04,DS-2B04,power,solid feeder column
+DS-2B04,MCC-2B04,power,solid feeder column
+MCC-2B04,TB-2B04,power,solid feeder column
+TB-2B04,PUMP-P204B,power,solid feeder column to load
+MCC-2B04,RELAY-K2B04,control,dashed drop from MCC to relay row
+HS-2B04,RELAY-K2B04,control,dashed hand-switch to relay segment
+BUS-201B,CB-2B05,power,vertical feeder tap from bus
+CB-2B05,DS-2B05,power,solid feeder column
+DS-2B05,MCC-2B05,power,solid feeder column
+MCC-2B05,TB-2B05,power,solid feeder column
+TB-2B05,CHLR-205B,power,solid feeder column to load
+MCC-2B05,RELAY-K2B05,control,dashed drop from MCC to relay row
+HS-2B05,RELAY-K2B05,control,dashed hand-switch to relay segment
+BUS-201B,CB-2B06,power,vertical feeder tap from bus
+CB-2B06,DS-2B06,power,solid feeder column
+DS-2B06,MCC-2B06,power,solid feeder column
+MCC-2B06,TB-2B06,power,solid feeder column
+TB-2B06,HTR-206B,power,solid feeder column to load
+MCC-2B06,RELAY-K2B06,control,dashed drop from MCC to relay row
+HS-2B06,RELAY-K2B06,control,dashed hand-switch to relay segment
+BUS-201B,CB-2B07,power,vertical feeder tap from bus
+CB-2B07,DS-2B07,power,solid feeder column
+DS-2B07,MCC-2B07,power,solid feeder column
+MCC-2B07,TB-2B07,power,solid feeder column
+TB-2B07,VALVE-MV207B,power,solid feeder column to load
+MCC-2B07,RELAY-K2B07,control,dashed drop from MCC to relay row
+HS-2B07,RELAY-K2B07,control,dashed hand-switch to relay segment
+BUS-201B,CB-2B08,power,vertical feeder tap from bus
+CB-2B08,DS-2B08,power,solid feeder column
+DS-2B08,MCC-2B08,power,solid feeder column
+MCC-2B08,TB-2B08,power,solid feeder column
+TB-2B08,PMP-LP208B,power,solid feeder column to load
+MCC-2B08,RELAY-K2B08,control,dashed drop from MCC to relay row
+HS-2B08,RELAY-K2B08,control,dashed hand-switch to relay segment
+BUS-201B,CB-2B09,power,vertical feeder tap from bus
+CB-2B09,DS-2B09,power,solid feeder column
+DS-2B09,MCC-2B09,power,solid feeder column
+MCC-2B09,TB-2B09,power,solid feeder column
+TB-2B09,COMP-C209B,power,solid feeder column to load
+MCC-2B09,RELAY-K2B09,control,dashed drop from MCC to relay row
+HS-2B09,RELAY-K2B09,control,dashed hand-switch to relay segment
+RELAY-K2B01,HS-2B02,control,dashed relay-row chain between adjacent feeder controls
+RELAY-K2B02,HS-2B03,control,dashed relay-row chain between adjacent feeder controls
+RELAY-K2B03,HS-2B04,control,dashed relay-row chain between adjacent feeder controls
+RELAY-K2B04,HS-2B05,control,dashed relay-row chain between adjacent feeder controls
+RELAY-K2B05,HS-2B06,control,dashed relay-row chain between adjacent feeder controls
+RELAY-K2B06,HS-2B07,control,dashed relay-row chain between adjacent feeder controls
+RELAY-K2B07,HS-2B08,control,dashed relay-row chain between adjacent feeder controls
+RELAY-K2B08,HS-2B09,control,dashed relay-row chain between adjacent feeder controls
+DC-BUS-125A,BAT-125A,dc_power,solid DC bus tap
+DC-BUS-125A,CHG-125A,dc_power,solid DC bus tap
+DC-BUS-125A,INV-120A,dc_power,solid DC bus tap
+DC-BUS-125A,PNL-DC-A,dc_power,solid DC bus tap
+DC-BUS-125A,METER-V1,signal_tap,meter tap on A DC bus
+INV-120A,PNL-AC-A,power,solid inverter-to-AC-panel link
+PNL-DC-A,ESFAS-PNL-A,dc_power,solid panel-to-panel link
+PNL-DC-A,GND-DC-A,ground,ground reference lead
+DC-BUS-125B,BAT-125B,dc_power,solid DC bus tap
+DC-BUS-125B,CHG-125B,dc_power,solid DC bus tap
+DC-BUS-125B,INV-120B,dc_power,solid DC bus tap
+DC-BUS-125B,PNL-DC-B,dc_power,solid DC bus tap
+INV-120B,PNL-AC-B,power,solid inverter-to-AC-panel link
+PNL-DC-B,ESFAS-PNL-B,dc_power,solid panel-to-panel link
+PNL-DC-B,GND-DC-B,ground,ground reference lead
+SW-MAN-A,TB-DG-A,control,dashed DG manual-control path
+TB-DG-A,CB-DG1A,control,dashed DG manual-control path
+SW-MAN-B,TB-DG-B,control,dashed DG manual-control path
+TB-DG-B,CB-DG1B,control,dashed DG manual-control path
+CB-TIE-1,SYNC-CAB,control,dashed tie/sync path with visible landing
+PNL-AC-A,RPS-PNL-A,control,dashed panel control path
+RPS-PNL-A,TRIP-MOD-A,control,dashed RPS-to-trip-module path
+ESFAS-PNL-A,TRIP-MOD-A,control,dashed ESFAS-to-trip-module path
+TRIP-MOD-A,LOAD-SHED-CAB,control,dashed route into load-shed cabinet
+RPS-PNL-A,RELAY-K27A,control,dashed RPS drop to relay chain
+RELAY-K27A,RELAY-K59A,control,dashed relay-chain segment
+RELAY-K59A,RELAY-K81A,control,dashed relay-chain segment
+RELAY-K81A,RELAY-K86A,control,dashed relay-chain segment
+TRIP-MOD-A,RELAY-K86A,control,dashed trip-module drop to relay chain
+PNL-AC-B,RPS-PNL-B,control,dashed panel control path
+RPS-PNL-B,TRIP-MOD-B,control,dashed RPS-to-trip-module path
+LOAD-SHED-CAB,TRIP-MOD-B,control,dashed route from load-shed cabinet
+RPS-PNL-B,RELAY-K27B,control,dashed RPS drop to relay chain
+RELAY-K27B,RELAY-K59B,control,dashed relay-chain segment
+RELAY-K59B,RELAY-K81B,control,dashed relay-chain segment
+RELAY-K81B,RELAY-K86B,control,dashed relay-chain segment
+TRIP-MOD-B,RELAY-K86B,control,dashed trip-module drop to relay chain
+LOAD-SHED-CAB,TDR-1,control,dashed TDR path
+LOAD-SHED-CAB,TDR-2,control,dashed TDR path
+PT-401A,JB-401A,signal,dotted instrument signal into junction box
+LT-402A,JB-401A,signal,dotted instrument signal into junction box
+FT-403A,JB-401A,signal,dotted instrument signal into junction box
+JB-401A,TB-RPS-A,signal,dotted signal path
+TB-RPS-A,RPS-PNL-A,signal,dotted signal path
+JB-401A,GND-401A,ground,ground reference lead
+RPS-PNL-A,ANN-PNL-1,signal,dotted annunciator signal route
+LOAD-SHED-CAB,LAMP-ALM-A,signal,dotted alarm signal route
+LOAD-SHED-CAB,LAMP-ALM-B,signal,dotted alarm signal route
+LOAD-SHED-CAB,ANN-PNL-1,signal,dotted annunciator signal route
+ANN-PNL-1,SEQ-REC-1,signal,dotted annunciator-to-sequence-recorder route
+PT-401B,JB-401B,signal,dotted instrument signal into junction box
+LT-402B,JB-401B,signal,dotted instrument signal into junction box
+FT-403B,JB-401B,signal,dotted instrument signal into junction box
+JB-401B,TB-RPS-B,signal,dotted signal path
+TB-RPS-B,RPS-PNL-B,signal,dotted signal path
+JB-401B,GND-401B,ground,ground reference lead
+SYNC-CAB,LOAD-SHED-CAB,control_uncertain,Diego R1 high-recall central corridor inference
+RPS-PNL-B,RELAY-K59B,control_uncertain,Diego R1 high-recall B relay branch inference

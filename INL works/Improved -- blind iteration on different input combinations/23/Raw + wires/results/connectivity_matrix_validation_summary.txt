@@ -1,0 +1,19 @@
+Connectivity matrix validation summary
+Document: 23
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\23\synthetic_npp_connectivity_matrix_ats_components_shifted_v18.csv
+GT normalized nodes: 200; GT normalized edges: 200
+Matrices evaluated: 5
+Best row: Diego -- Round 1 from round_01_diego_matrix.csv with Precision=0.874419, Recall=0.940000, F1=0.906024
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=148, FP=8, FN=52, Precision=0.948718, Recall=0.740000, F1=0.831461
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+Extra/non-GT extracted nodes existed, but they were not attached to false-positive edges in the final edge set.
+Missing GT nodes examples: JB-CTRL-A.
+Close-but-not-exact name examples: JB-CTRL/A -> JB-CTRL-A (0.89).
+False-positive edge examples among GT-known nodes: BUS-120AC-A -- FUSE-FU-A; BUS-120AC-B -- FUSE-FU-B; JB-1A-1 -- VALVE-XV106; JB-1B-1 -- VALVE-XV166; JB-1C-1 -- VALVE-XV136; JB-2A-1 -- VALVE-XV206; JB-2B-1 -- VALVE-XV266; JB-2C-1 -- VALVE-XV236.
+False-negative edge examples among GT-known nodes: ANN-A -- PNL-RPS-A; ANN-B -- PNL-RPS-B; BUS-125DC-A -- METER-DC-A; BUS-125DC-B -- METER-DC-B; BUS-4160-A -- METER-A; BUS-4160-A -- PT-41A; BUS-4160-A -- RELAY-27A; BUS-4160-A -- RELAY-87A.
+False-negative examples involving missing/differently named nodes: JB-CTRL-A -- PNL-DCS-A.
+
+What-if node pruning insight: no non-GT intermediate nodes were available to prune; the remaining drop is mainly connectivity/edge discovery or missing direct GT edges.

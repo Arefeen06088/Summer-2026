@@ -1,0 +1,31 @@
+Connectivity matrix validation summary - Document 26 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\26\synthetic_npp_connectivity_matrix_v3.csv
+GT after normalization: 209 undirected edges across 200 component names.
+
+Token usage:
+Token source files: document26_token_usage_estimates.csv; document26_token_usage_totals.csv.
+Document total token estimate: low=141160, expected=274412, high=572217.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=201, FP=8, FN=8, Precision=0.961722, Recall=0.961722, F1=0.961722.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges.
+- Extracted components: 200; extra/non-GT names: 0; missing GT component names: 0.
+- False-positive extracted edge examples: BAT-31A -- CHG-31A; BAT-31A -- STR-A1-1; BAT-31B -- CHG-31B; BAT-31B -- STR-B1-1; CB-480A13 -- STR-A3-3; CB-480B13 -- STR-B3-3; CB-4A03 -- MTR-RCP-A; CB-4B03 -- MTR-RCP-B.
+- Missed GT edge examples: CB-480A13 -- RELAY-K7A3; CB-480B13 -- RELAY-K7B3; CB-4A03 -- RELAY-K7A1; CB-4B03 -- RELAY-K7B1; RELAY-K7A2 -- STR-A1-1; RELAY-K7A4 -- STR-A3-3; RELAY-K7B2 -- STR-B1-1; RELAY-K7B4 -- STR-B3-3.
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=201, FP=0, FN=8, Precision=1.000000, Recall=0.961722, F1=0.980488.
+- If all missed GT edges were added, final performance would be TP=209, FP=8, FN=0, Precision=0.963134, Recall=1.000000, F1=0.981221.
+
+Best evaluated row: Diego -- Round 1 with F1=0.961722.
+
+Round-specific notes:
+- Diego -- Round 1: TP=201, FP=8, FN=8, F1=0.961722; extra nodes=0, missing GT nodes=0. FP examples: BAT-31A -- CHG-31A; BAT-31A -- STR-A1-1; BAT-31B -- CHG-31B; BAT-31B -- STR-B1-1; ... (+4 more). FN examples: CB-480A13 -- RELAY-K7A3; CB-480B13 -- RELAY-K7B3; CB-4A03 -- RELAY-K7A1; CB-4B03 -- RELAY-K7B1; ... (+4 more).
+- Jennifer -- Round 2: TP=201, FP=8, FN=8, F1=0.961722; extra nodes=0, missing GT nodes=0. FP examples: BAT-31A -- CHG-31A; BAT-31A -- STR-A1-1; BAT-31B -- CHG-31B; BAT-31B -- STR-B1-1; ... (+4 more). FN examples: CB-480A13 -- RELAY-K7A3; CB-480B13 -- RELAY-K7B3; CB-4A03 -- RELAY-K7A1; CB-4B03 -- RELAY-K7B1; ... (+4 more).
+- Diego -- Round 3: TP=201, FP=8, FN=8, F1=0.961722; extra nodes=0, missing GT nodes=0. FP examples: BAT-31A -- CHG-31A; BAT-31A -- STR-A1-1; BAT-31B -- CHG-31B; BAT-31B -- STR-B1-1; ... (+4 more). FN examples: CB-480A13 -- RELAY-K7A3; CB-480B13 -- RELAY-K7B3; CB-4A03 -- RELAY-K7A1; CB-4B03 -- RELAY-K7B1; ... (+4 more).
+- Jennifer -- Round 4: TP=201, FP=8, FN=8, F1=0.961722; extra nodes=0, missing GT nodes=0. FP examples: BAT-31A -- CHG-31A; BAT-31A -- STR-A1-1; BAT-31B -- CHG-31B; BAT-31B -- STR-B1-1; ... (+4 more). FN examples: CB-480A13 -- RELAY-K7A3; CB-480B13 -- RELAY-K7B3; CB-4A03 -- RELAY-K7A1; CB-4B03 -- RELAY-K7B1; ... (+4 more).
+- Final connectivity -- Final: TP=201, FP=8, FN=8, F1=0.961722; extra nodes=0, missing GT nodes=0. FP examples: BAT-31A -- CHG-31A; BAT-31A -- STR-A1-1; BAT-31B -- CHG-31B; BAT-31B -- STR-B1-1; ... (+4 more). FN examples: CB-480A13 -- RELAY-K7A3; CB-480B13 -- RELAY-K7B3; CB-4A03 -- RELAY-K7A1; CB-4B03 -- RELAY-K7B1; ... (+4 more).

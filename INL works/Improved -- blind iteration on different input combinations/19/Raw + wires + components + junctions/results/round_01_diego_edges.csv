@@ -1,0 +1,201 @@
+source,target,value,evidence
+OFFSITE GRID-1,DS-101,1,solid vertical
+DS-101,CB-101,1,solid vertical; 4x crop confirms CB-101
+CB-101,TR-101,1,solid vertical; 4x crop confirms CB-101
+TR-101,BUS-4160-A,1,solid tap to 4160 bus
+DG-1,CB-DG1,1,solid vertical
+CB-DG1,BUS-4160-A,1,solid tap to 4160 bus
+BUS-4160-A,PT-4160A,1,instrument tap
+BUS-4160-A,CB-201,1,solid branch
+CB-201,TR-480-A,1,solid vertical
+TR-480-A,CB-480-A,1,solid vertical
+CB-480-A,BUS-480-A,1,solid tap
+BUS-4160-A,CB-TIE-4160,1,tie breaker left side
+CB-TIE-4160,BUS-4160-B,1,tie breaker right side
+BUS-480-A,CB-TIE-480,1,tie breaker left side
+CB-TIE-480,BUS-480-B,1,tie breaker right side
+OFFSITE GRID-2,DS-102,1,solid vertical
+DS-102,CB-102,1,solid vertical; 4x crop confirms CB-102
+CB-102,TR-102,1,solid vertical; 4x crop confirms CB-102
+TR-102,BUS-4160-B,1,solid tap to 4160 bus
+DG-2,CB-DG2,1,solid vertical
+CB-DG2,BUS-4160-B,1,solid tap to 4160 bus
+BUS-4160-B,PT-4160B,1,instrument tap
+BUS-4160-B,CB-202,1,solid branch
+CB-202,TR-480-B,1,solid vertical
+TR-480-B,CB-480-B,1,solid vertical
+CB-480-B,BUS-480-B,1,solid tap
+BUS-480-A,CB-F201,1,480V bus feeder drop
+CB-F201,DS-F201,1,solid vertical
+DS-F201,CPT-201,1,solid vertical
+CPT-201,MCC-201,1,solid vertical
+MCC-201,CB-L201,1,solid vertical
+CB-L201,RELAY-K201,1,solid vertical
+RELAY-K201,PUMP-P201,1,solid vertical to load
+CB-F201,RELAY-PR201,1,dashed protection/control
+MCC-201,RELAY-A201,1,dashed control
+PUMP-P201,INST-201,1,dashed indication
+INST-201,JB-201,1,dashed vertical
+JB-201,TB-201,1,dashed vertical
+TB-201,LCS-201,1,dashed control
+BUS-480-A,CB-F203,1,480V bus feeder drop
+CB-F203,DS-F203,1,solid vertical
+DS-F203,CPT-203,1,solid vertical
+CPT-203,MCC-203,1,solid vertical
+MCC-203,CB-L203,1,solid vertical
+CB-L203,RELAY-K203,1,solid vertical
+RELAY-K203,PUMP-P203,1,solid vertical to load
+CB-F203,RELAY-PR203,1,dashed protection/control
+MCC-203,RELAY-A203,1,dashed control
+PUMP-P203,INST-203,1,dashed indication
+INST-203,JB-203,1,dashed vertical
+JB-203,TB-203,1,dashed vertical
+TB-203,LCS-203,1,dashed control
+BUS-480-A,CB-F301,1,480V bus feeder drop
+CB-F301,DS-F301,1,solid vertical
+DS-F301,CPT-301,1,solid vertical
+CPT-301,MCC-301,1,solid vertical
+MCC-301,CB-L301,1,solid vertical
+CB-L301,RELAY-K301,1,solid vertical
+RELAY-K301,PUMP-P301,1,solid vertical to load
+CB-F301,RELAY-PR301,1,dashed protection/control
+MCC-301,RELAY-A301,1,dashed control
+PUMP-P301,INST-301,1,dashed indication
+INST-301,JB-301,1,dashed vertical
+JB-301,TB-301,1,dashed vertical
+TB-301,LCS-301,1,dashed control
+BUS-480-A,CB-F401,1,480V bus feeder drop
+CB-F401,DS-F401,1,solid vertical
+DS-F401,CPT-401,1,solid vertical
+CPT-401,MCC-401,1,solid vertical
+MCC-401,CB-L401,1,solid vertical
+CB-L401,RELAY-K401,1,solid vertical
+RELAY-K401,PUMP-P401,1,solid vertical to load
+CB-F401,RELAY-PR401,1,dashed protection/control
+MCC-401,RELAY-A401,1,dashed control
+PUMP-P401,INST-401,1,dashed indication
+INST-401,JB-401,1,dashed vertical
+JB-401,TB-401,1,dashed vertical
+TB-401,LCS-401,1,dashed control
+BUS-480-A,CB-F501,1,480V bus feeder drop
+CB-F501,DS-F501,1,solid vertical
+DS-F501,CPT-501,1,solid vertical
+CPT-501,MCC-501,1,solid vertical
+MCC-501,CB-L501,1,solid vertical
+CB-L501,RELAY-K501,1,solid vertical
+RELAY-K501,MTR-F501,1,solid vertical to load
+CB-F501,RELAY-PR501,1,dashed protection/control
+MCC-501,RELAY-A501,1,dashed control
+MTR-F501,INST-501,1,dashed indication
+INST-501,JB-501,1,dashed vertical
+JB-501,TB-501,1,dashed vertical
+TB-501,LCS-501,1,dashed control
+BUS-480-B,CB-F202,1,480V bus feeder drop
+CB-F202,DS-F202,1,solid vertical
+DS-F202,CPT-202,1,solid vertical
+CPT-202,MCC-202,1,solid vertical
+MCC-202,CB-L202,1,solid vertical
+CB-L202,RELAY-K202,1,solid vertical
+RELAY-K202,PUMP-P202,1,solid vertical to load
+CB-F202,RELAY-PR202,1,dashed protection/control
+MCC-202,RELAY-A202,1,dashed control
+PUMP-P202,INST-202,1,dashed indication
+INST-202,JB-202,1,dashed vertical
+JB-202,TB-202,1,dashed vertical
+TB-202,LCS-202,1,dashed control
+BUS-480-B,CB-F204,1,480V bus feeder drop
+CB-F204,DS-F204,1,solid vertical
+DS-F204,CPT-204,1,solid vertical
+CPT-204,MCC-204,1,solid vertical
+MCC-204,CB-L204,1,solid vertical
+CB-L204,RELAY-K204,1,solid vertical
+RELAY-K204,PUMP-P204,1,solid vertical to load
+CB-F204,RELAY-PR204,1,dashed protection/control
+MCC-204,RELAY-A204,1,dashed control
+PUMP-P204,INST-204,1,dashed indication
+INST-204,JB-204,1,dashed vertical
+JB-204,TB-204,1,dashed vertical
+TB-204,LCS-204,1,dashed control
+BUS-480-B,CB-F302,1,480V bus feeder drop
+CB-F302,DS-F302,1,solid vertical
+DS-F302,CPT-302,1,solid vertical
+CPT-302,MCC-302,1,solid vertical
+MCC-302,CB-L302,1,solid vertical
+CB-L302,RELAY-K302,1,solid vertical
+RELAY-K302,PUMP-P302,1,solid vertical to load
+CB-F302,RELAY-PR302,1,dashed protection/control
+MCC-302,RELAY-A302,1,dashed control
+PUMP-P302,INST-302,1,dashed indication
+INST-302,JB-302,1,dashed vertical
+JB-302,TB-302,1,dashed vertical
+TB-302,LCS-302,1,dashed control
+BUS-480-B,CB-F402,1,480V bus feeder drop
+CB-F402,DS-F402,1,solid vertical
+DS-F402,CPT-402,1,solid vertical
+CPT-402,MCC-402,1,solid vertical
+MCC-402,CB-L402,1,solid vertical
+CB-L402,RELAY-K402,1,solid vertical
+RELAY-K402,PUMP-P402,1,solid vertical to load
+CB-F402,RELAY-PR402,1,dashed protection/control
+MCC-402,RELAY-A402,1,dashed control
+PUMP-P402,INST-402,1,dashed indication
+INST-402,JB-402,1,dashed vertical
+JB-402,TB-402,1,dashed vertical
+TB-402,LCS-402,1,dashed control
+BUS-480-B,CB-F502,1,480V bus feeder drop
+CB-F502,DS-F502,1,solid vertical
+DS-F502,CPT-502,1,solid vertical
+CPT-502,MCC-502,1,solid vertical
+MCC-502,CB-L502,1,solid vertical
+CB-L502,RELAY-K502,1,solid vertical
+RELAY-K502,MTR-F502,1,solid vertical to load
+CB-F502,RELAY-PR502,1,dashed protection/control
+MCC-502,RELAY-A502,1,dashed control
+MTR-F502,INST-502,1,dashed indication
+INST-502,JB-502,1,dashed vertical
+JB-502,TB-502,1,dashed vertical
+TB-502,LCS-502,1,dashed control
+BUS-480-A,CB-F601,1,480V bus feeder drop
+CB-F601,DS-F601,1,solid vertical
+DS-F601,CPT-601,1,solid vertical
+CPT-601,MCC-601,1,solid vertical
+MCC-601,CB-L601,1,solid vertical
+CB-L601,RELAY-K601,1,solid vertical
+RELAY-K601,VALVE-MOV601,1,solid vertical to valve
+CB-F601,RELAY-PR601,1,dashed protection/control
+MCC-601,RELAY-A601,1,dashed control
+VALVE-MOV601,INST-601,1,dashed indication
+VALVE-MOV601,LS-MOV601,1,Diego high-recall uncertain edge; corrected later
+LS-MOV601,JB-601,1,Diego high-recall uncertain edge; corrected later
+JB-601,TB-601,1,dashed vertical
+TB-601,LCS-601,1,dashed control
+BUS-480-B,CB-F701,1,480V bus feeder drop
+CB-F701,DS-F701,1,solid vertical
+DS-F701,CPT-701,1,solid vertical
+CPT-701,MCC-701,1,solid vertical
+MCC-701,CB-L701,1,solid vertical
+CB-L701,RELAY-K701,1,solid vertical
+RELAY-K701,INST-RPS701,1,solid vertical to instrument
+CB-F701,RELAY-PR701,1,dashed protection/control
+MCC-701,RELAY-A701,1,dashed control
+INST-RPS701,INST-701,1,dashed indication
+INST-RPS701,JB-701,1,Diego high-recall edge; corrected later
+JB-701,TB-701,1,dashed vertical
+TB-701,LCS-701,1,dashed control
+BUS-480-A,CB-301,1,routed control-power source from 480V bus
+CB-301,TR-120-A,1,solid vertical
+TR-120-A,BUS-120AC-A,1,solid tap
+BUS-120AC-A,JB-MAIN,1,dashed vertical branch
+BUS-480-A,CHGR-125A,1,routed charger feed from 480V bus
+CHGR-125A,BAT-125A,1,solid vertical
+BAT-125A,BUS-125DC-A,1,solid tap
+BUS-125DC-A,INV-120A,1,solid tap
+INV-120A,PN-RPS-A,1,dashed output
+BUS-480-B,CB-302,1,routed control-power source from 480V bus
+CB-302,TR-120-B,1,solid vertical
+TR-120-B,BUS-120AC-B,1,solid tap
+BUS-480-B,CHGR-125B,1,routed charger feed from 480V bus
+CHGR-125B,BAT-125B,1,solid vertical
+BAT-125B,BUS-125DC-B,1,solid tap
+BUS-125DC-B,INV-120B,1,solid tap
+INV-120B,PN-RPS-B,1,dashed output

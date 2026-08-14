@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 18
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\18\synthetic_nuclear_connectivity_matrix_readable.csv
+GT normalized nodes: 200; GT normalized edges: 200
+Matrices evaluated: 5
+Best row: Diego -- Round 1 from diego_round1_matrix.csv with Precision=0.924883, Recall=0.985000, F1=0.953995
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=191, FP=10, FN=9, Precision=0.950249, Recall=0.955000, F1=0.952618
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+Extra/non-GT nodes most responsible for FP edges: CB-GEN-1SO (2 FP edges).
+Missing GT nodes examples: CB-GEN-ISO.
+Close-but-not-exact name examples: CB-GEN-1SO -> CB-GEN-ISO (0.90).
+False-positive edge examples among GT-known nodes: BUS-4160A -- TB-RPS-A; JB-RPS-A -- RELAY-K102; JB-RPS-B -- RELAY-K202; RELAY-K101 -- RELAY-K102; RELAY-K103 -- RELAY-K104; RELAY-K201 -- RELAY-K202; RELAY-K203 -- RELAY-K204; TB-RPS-A -- TR-480-A1.
+False-negative edge examples among GT-known nodes: BUS-4160A -- TR-480-A1; JB-RPS-A -- RELAY-K101; JB-RPS-B -- RELAY-K201; PLC-RPS-A -- RELAY-K102; PLC-RPS-A -- RELAY-K104; PLC-RPS-B -- RELAY-K202; PLC-RPS-B -- RELAY-K204.
+False-positive examples involving extra/non-GT nodes: BB-SWYD-230 -- CB-GEN-1SO; CB-GEN-1SO -- GEN-MAIN-1.
+False-negative examples involving missing/differently named nodes: BB-SWYD-230 -- CB-GEN-ISO; CB-GEN-ISO -- GEN-MAIN-1.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (CB-GEN-1SO), the final-row metrics would be TP=191, FP=8, FN=9, Precision=0.959799, Recall=0.955000, F1=0.957393.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=191, FP=8, FN=9, Precision=0.959799, Recall=0.955000, F1=0.957393.

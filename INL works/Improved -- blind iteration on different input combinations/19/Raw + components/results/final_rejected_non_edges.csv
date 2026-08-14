@@ -1,0 +1,7 @@
+source,target,status,reason
+BUS-480-A,CONTROL-POWER-DC-DISTRIBUTION-A,uncertain,"raw_16 shows a long solid route from the BUS-480-A/load-area perimeter into the lower control power/DC area, but it overlaps the enclosure/boundary styling and is better treated as a route-continuation ambiguity"
+BUS-480-B,CONTROL-POWER-DC-DISTRIBUTION-B,uncertain,"raw_16 shows a long solid route from the BUS-480-B/load-area perimeter into the lower control power/DC area, but it overlaps the enclosure/boundary styling and is better treated as a route-continuation ambiguity"
+CONTROL-POWER-DC-DISTRIBUTION-A,CONTROL-POWER-DC-DISTRIBUTION-B,uncertain,"the lower control-power/DC enclosure/header appears visually continuous across the sheet, but it may be only a drawing boundary rather than an electrical tie between divisions"
+LS-MOV601,VALVE-MOV601,uncertain,"raw_23 shows a dotted branch near the MOV signal run down to LS-MOV601, but the branch/junction at the horizontal signal line is not marked clearly enough to assert as a direct endpoint connection"
+LS-MOV601,INST-601,uncertain,"LS-MOV601 is visually adjacent to the INST-601/VALVE-MOV601 dotted signal path, but the exact tee endpoint is unclear and no explicit junction dot is visible"
+INST-601,JB-601,uncertain,the MOV train bottom signal may pass from INST-601 through LS-MOV601 before JB-601; the vertical dotted continuation is visually clearer below LS-MOV601 than directly below INST-601

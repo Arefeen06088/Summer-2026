@@ -1,0 +1,54 @@
+{
+  "document": "27",
+  "iteration": "1",
+  "created_utc": "2026-07-23T03:22:17Z",
+  "nodes": 200,
+  "edges": 201,
+  "off_diagonal_nonzero_entries": 402,
+  "symmetric": true,
+  "diagonal_sum": 0,
+  "line_type_counts": {
+    "solid": 92,
+    "bus-tap": 59,
+    "normally_open_tie": 2,
+    "dc_ground": 7,
+    "dashed": 15,
+    "dotted": 26
+  },
+  "status_counts": {
+    "confirmed": 199,
+    "normally_open": 2
+  },
+  "subagent_rounds": [
+    {
+      "round": "round_01_diego_high_recall",
+      "agent": "Diego",
+      "status": "High-recall candidate matrix; included four charger/battery overconnection candidates later rejected.",
+      "nodes": 200,
+      "edges": 203
+    },
+    {
+      "round": "round_02_jennifer_precision_review",
+      "agent": "Jennifer",
+      "status": "Removed four unsupported charger/battery candidates; counted only closed/confirmed edges and status-marked open tie separately.",
+      "nodes": 200,
+      "edges": 199
+    },
+    {
+      "round": "round_03_diego_convergence",
+      "agent": "Diego",
+      "status": "Accepted Jennifer corrections and retained CB-TIE-41 terminal edges as drawn physical adjacency.",
+      "nodes": 200,
+      "edges": 201
+    },
+    {
+      "round": "round_04_jennifer_final",
+      "agent": "Jennifer",
+      "status": "Final saturated physical-adjacency matrix confirmed.",
+      "nodes": 200,
+      "edges": 201
+    }
+  ],
+  "ocr_used": false,
+  "gt_or_validation_used": false
+}

@@ -1,0 +1,424 @@
+1) NODE_LIST_CSV
+node
+BAT-125A
+BAT-125B
+BUS-13KV-N
+BUS-4160-A
+BUS-4160-B
+BUS-480-A
+BUS-480-B
+BUS-480-C
+BUS-480-D
+CB-101
+CB-480A-IN
+CB-480B-IN
+CB-480C-IN
+CB-480D-IN
+CB-4A-IN
+CB-4B-IN
+CB-A01
+CB-A02
+CB-A03
+CB-A04
+CB-A05
+CB-A06
+CB-A07
+CB-A08
+CB-A09
+CB-A10
+CB-B01
+CB-B02
+CB-B03
+CB-B04
+CB-B05
+CB-B06
+CB-B07
+CB-B08
+CB-B09
+CB-B10
+CB-C01
+CB-C02
+CB-C03
+CB-C04
+CB-C05
+CB-C06
+CB-C07
+CB-C08
+CB-C09
+CB-C10
+CB-D01
+CB-D02
+CB-D03
+CB-D04
+CB-D05
+CB-D06
+CB-D07
+CB-D08
+CB-D09
+CB-D10
+CB-DG1A
+CB-DG1B
+CB-G1
+CB-G2
+CB-TIE-41
+CHGR-125A
+CHGR-125B
+DC-BUS-125A
+DC-BUS-125B
+DG-1A
+DG-1B
+DS-101
+DS-A01
+DS-A03
+DS-A04
+DS-A06
+DS-A07
+DS-A09
+DS-A10
+DS-B01
+DS-B03
+DS-B04
+DS-B06
+DS-B07
+DS-B09
+DS-B10
+DS-C01
+DS-C03
+DS-C04
+DS-C06
+DS-C07
+DS-C09
+DS-C10
+DS-D01
+DS-D03
+DS-D04
+DS-D06
+DS-D07
+DS-D09
+DS-D10
+FAN-A09
+FAN-B09
+FT-A05
+FT-B05
+FT-C03
+FT-D03
+FU-A02
+FU-A05
+FU-A08
+FU-B02
+FU-B05
+FU-B08
+FU-C02
+FU-C05
+FU-C08
+FU-D02
+FU-D05
+FU-D08
+GEN-G1
+GEN-G2
+GND-EQ-A
+GND-EQ-B
+GRID-345
+HS-A09
+HS-B09
+HS-C04
+HS-D04
+HTR-C04
+HTR-D04
+INST-C05
+INST-D05
+JB-A04
+JB-A10
+JB-B04
+JB-B10
+JB-C02
+JB-C05
+JB-C10
+JB-D02
+JB-D05
+JB-D10
+LS-A02
+LS-B02
+LS-C06
+LS-D06
+LT-A10
+LT-B10
+MCC-A07
+MCC-B07
+MCC-C07
+MCC-D07
+MOV-A02
+MOV-A06
+MOV-B02
+MOV-B06
+MOV-C01
+MOV-C06
+MOV-D01
+MOV-D06
+MTR-A03
+MTR-B03
+PANEL-CTRL-MAIN
+PMP-A01
+PMP-A05
+PMP-A08
+PMP-B01
+PMP-B05
+PMP-B08
+PMP-C03
+PMP-C08
+PMP-D03
+PMP-D08
+PNL-A04
+PNL-B04
+PNL-C02
+PNL-C09
+PNL-D02
+PNL-D09
+PT-A08
+PT-B08
+PT-C08
+PT-D08
+RLY-A01
+RLY-A03
+RLY-A06
+RLY-B01
+RLY-B03
+RLY-B06
+RLY-C01
+RLY-C09
+RLY-D01
+RLY-D09
+TB-A07
+TB-B07
+TB-C07
+TB-C10
+TB-D07
+TB-D10
+TR-1A
+TR-1B
+TR-480-A
+TR-480-B
+TR-480-C
+TR-480-D
+
+2) EDGE_LIST_CSV
+source,target,confidence,line_type,evidence
+GRID-345,DS-101,0.98,solid,top-left source box GRID-345 feeds DS-101 on a solid feeder
+DS-101,CB-101,0.98,solid,top-left DS-101 switch feeds CB-101 on the same solid feeder
+CB-101,BUS-13KV-N,0.98,solid,top feeder exits CB-101 and lands on labeled BUS-13KV-N
+GEN-G1,CB-G1,0.97,solid,top G1 generator circle drops through CB-G1
+CB-G1,BUS-13KV-N,0.97,solid,top CB-G1 lower terminal taps BUS-13KV-N with a filled dot
+BUS-13KV-N,TR-1A,0.97,solid,top vertical feeder drops from BUS-13KV-N to TR-1A
+TR-1A,CB-4A-IN,0.97,solid,top TR-1A secondary drops to CB-4A-IN
+CB-4A-IN,BUS-4160-A,0.97,solid,top CB-4A-IN lower terminal lands on BUS-4160-A
+DG-1A,CB-DG1A,0.96,solid,left upper DG-1A generator feeds CB-DG1A
+CB-DG1A,BUS-4160-A,0.96,solid,left upper CB-DG1A lower terminal taps BUS-4160-A
+GEN-G2,CB-G2,0.97,solid,top G2 generator circle drops through CB-G2
+CB-G2,BUS-13KV-N,0.97,solid,top CB-G2 lower terminal taps BUS-13KV-N with a filled dot
+BUS-13KV-N,TR-1B,0.97,solid,top vertical feeder drops from BUS-13KV-N to TR-1B
+TR-1B,CB-4B-IN,0.97,solid,top TR-1B secondary drops to CB-4B-IN
+CB-4B-IN,BUS-4160-B,0.97,solid,top CB-4B-IN lower terminal lands on BUS-4160-B
+DG-1B,CB-DG1B,0.96,solid,right upper DG-1B generator feeds CB-DG1B
+CB-DG1B,BUS-4160-B,0.96,solid,right upper CB-DG1B lower terminal taps BUS-4160-B
+BUS-4160-A,CB-TIE-41,0.95,solid,4160 tie crop shows CB-TIE-41 in series after BUS-4160-A
+CB-TIE-41,BUS-4160-B,0.95,solid,4160 tie crop shows the tie output continuing to BUS-4160-B and note 8 says bus ties are normally open unless tagged closed
+BUS-4160-A,TR-480-A,0.96,solid,left full crop shows vertical feeder from BUS-4160-A to TR-480-A
+TR-480-A,CB-480A-IN,0.97,solid,left full crop shows TR-480-A secondary directly above CB-480A-IN
+CB-480A-IN,BUS-480-A,0.98,solid,mid-left crop shows CB-480A-IN diagonal feeder landing on BUS-480-A
+BUS-4160-B,TR-480-B,0.96,solid,right full crop shows vertical feeder from BUS-4160-B to TR-480-B
+TR-480-B,CB-480B-IN,0.97,solid,right full crop shows TR-480-B secondary directly above CB-480B-IN
+CB-480B-IN,BUS-480-B,0.98,solid,right full crop shows CB-480B-IN diagonal feeder landing on BUS-480-B
+BUS-4160-A,TR-480-C,0.91,solid,left full crop shows long A-side 4160 route descending to TR-480-C
+TR-480-C,CB-480C-IN,0.97,solid,left full crop shows TR-480-C secondary directly above CB-480C-IN
+CB-480C-IN,BUS-480-C,0.98,solid,left full crop shows CB-480C-IN lower feeder landing on BUS-480-C
+BUS-4160-B,TR-480-D,0.91,solid,right full crop shows long B-side 4160 route descending to TR-480-D
+TR-480-D,CB-480D-IN,0.97,solid,right full crop shows TR-480-D secondary directly above CB-480D-IN
+CB-480D-IN,BUS-480-D,0.98,solid,right full crop shows CB-480D-IN lower feeder landing on BUS-480-D
+BUS-480-A,CB-A01,0.96,solid,A01 branch has filled tap from BUS-480-A to CB-A01
+CB-A01,DS-A01,0.96,solid,A01 solid vertical feeder connects CB-A01 to DS-A01
+DS-A01,PMP-A01,0.96,solid,A01 solid vertical feeder continues from DS-A01 to PMP-A01
+PMP-A01,RLY-A01,0.94,dashed,A01 dashed control line drops from PMP-A01 to RLY-A01
+BUS-480-A,CB-A02,0.96,solid,A02 branch has filled tap from BUS-480-A to CB-A02
+CB-A02,FU-A02,0.96,solid,A02 solid vertical feeder connects CB-A02 to FU-A02
+FU-A02,MOV-A02,0.96,solid,A02 solid vertical feeder continues from FU-A02 to MOV-A02
+MOV-A02,LS-A02,0.96,dotted,A02 dotted instrument line drops from MOV-A02 to LS-A02
+BUS-480-A,CB-A03,0.96,solid,A03 branch has filled tap from BUS-480-A to CB-A03
+CB-A03,DS-A03,0.96,solid,A03 solid vertical feeder connects CB-A03 to DS-A03
+DS-A03,MTR-A03,0.96,solid,A03 solid vertical feeder continues from DS-A03 to MTR-A03
+MTR-A03,RLY-A03,0.94,dashed,A03 dashed control line drops from MTR-A03 to RLY-A03
+BUS-480-A,CB-A04,0.96,solid,A04 branch has filled tap from BUS-480-A to CB-A04
+CB-A04,DS-A04,0.96,solid,A04 solid vertical feeder connects CB-A04 to DS-A04
+DS-A04,PNL-A04,0.96,solid,A04 solid vertical feeder continues from DS-A04 to PNL-A04
+PNL-A04,JB-A04,0.96,dotted,A04 dotted instrument line drops from PNL-A04 to JB-A04
+BUS-480-A,CB-A05,0.96,solid,A05 branch has filled tap from BUS-480-A to CB-A05
+CB-A05,FU-A05,0.96,solid,A05 solid vertical feeder connects CB-A05 to FU-A05
+FU-A05,PMP-A05,0.96,solid,A05 solid vertical feeder continues from FU-A05 to PMP-A05
+PMP-A05,FT-A05,0.96,dotted,A05 dotted instrument line drops from PMP-A05 to FT-A05
+BUS-480-A,CB-A06,0.96,solid,A06 branch has filled tap from BUS-480-A to CB-A06
+CB-A06,DS-A06,0.96,solid,A06 solid vertical feeder connects CB-A06 to DS-A06
+DS-A06,MOV-A06,0.96,solid,A06 solid vertical feeder continues from DS-A06 to MOV-A06
+MOV-A06,RLY-A06,0.94,dashed,A06 dashed control line drops from MOV-A06 to RLY-A06
+BUS-480-A,CB-A07,0.96,solid,A07 branch has filled tap from BUS-480-A to CB-A07
+CB-A07,DS-A07,0.96,solid,A07 solid vertical feeder connects CB-A07 to DS-A07
+DS-A07,MCC-A07,0.96,solid,A07 solid vertical feeder continues from DS-A07 to MCC-A07
+MCC-A07,TB-A07,0.96,dotted,A07 dotted instrument line drops from MCC-A07 to TB-A07
+BUS-480-A,CB-A08,0.96,solid,A08 branch has filled tap from BUS-480-A to CB-A08
+CB-A08,FU-A08,0.96,solid,A08 solid vertical feeder connects CB-A08 to FU-A08
+FU-A08,PMP-A08,0.96,solid,A08 solid vertical feeder continues from FU-A08 to PMP-A08
+PMP-A08,PT-A08,0.96,dotted,A08 dotted instrument line drops from PMP-A08 to PT-A08
+BUS-480-A,CB-A09,0.96,solid,A09 branch has filled tap from BUS-480-A to CB-A09
+CB-A09,DS-A09,0.96,solid,A09 solid vertical feeder connects CB-A09 to DS-A09
+DS-A09,FAN-A09,0.96,solid,A09 solid vertical feeder continues from DS-A09 to FAN-A09
+FAN-A09,HS-A09,0.94,dashed,A09 dashed control line drops from FAN-A09 to HS-A09
+BUS-480-A,CB-A10,0.95,solid,A10 branch has filled tap from BUS-480-A to CB-A10
+CB-A10,DS-A10,0.95,solid,A10 solid vertical feeder connects CB-A10 to DS-A10
+DS-A10,JB-A10,0.88,solid,A10 crop shows the solid feeder continuing from DS-A10 to the four terminal JB-A10 box
+JB-A10,LT-A10,0.95,dotted,A10 dotted instrument line drops from JB-A10 to LT-A10
+BUS-480-A,CHGR-125A,0.90,solid,A10 crop shows separate filled BUS-480-A tap feeding CHGR-125A
+CHGR-125A,DC-BUS-125A,0.78,dash-dot,A10 crop shows dash-dot DC route from CHGR-125A side down to filled DC-BUS-125A tap
+BUS-480-B,CB-B01,0.96,solid,B01 branch has filled tap from BUS-480-B to CB-B01
+CB-B01,DS-B01,0.96,solid,B01 solid vertical feeder connects CB-B01 to DS-B01
+DS-B01,PMP-B01,0.96,solid,B01 solid vertical feeder continues from DS-B01 to PMP-B01
+PMP-B01,RLY-B01,0.94,dashed,B01 dashed control line drops from PMP-B01 to RLY-B01
+BUS-480-B,CHGR-125B,0.90,solid,B01 crop shows separate filled BUS-480-B tap feeding CHGR-125B
+CHGR-125B,DC-BUS-125B,0.78,dash-dot,B01 crop shows dash-dot DC route from CHGR-125B side down to filled DC-BUS-125B tap
+BUS-480-B,CB-B02,0.96,solid,B02 branch has filled tap from BUS-480-B to CB-B02
+CB-B02,FU-B02,0.96,solid,B02 solid vertical feeder connects CB-B02 to FU-B02
+FU-B02,MOV-B02,0.96,solid,B02 solid vertical feeder continues from FU-B02 to MOV-B02
+MOV-B02,LS-B02,0.96,dotted,B02 dotted instrument line drops from MOV-B02 to LS-B02
+BUS-480-B,CB-B03,0.96,solid,B03 branch has filled tap from BUS-480-B to CB-B03
+CB-B03,DS-B03,0.96,solid,B03 solid vertical feeder connects CB-B03 to DS-B03
+DS-B03,MTR-B03,0.96,solid,B03 solid vertical feeder continues from DS-B03 to MTR-B03
+MTR-B03,RLY-B03,0.94,dashed,B03 dashed control line drops from MTR-B03 to RLY-B03
+BUS-480-B,CB-B04,0.96,solid,B04 branch has filled tap from BUS-480-B to CB-B04
+CB-B04,DS-B04,0.96,solid,B04 solid vertical feeder connects CB-B04 to DS-B04
+DS-B04,PNL-B04,0.96,solid,B04 solid vertical feeder continues from DS-B04 to PNL-B04
+PNL-B04,JB-B04,0.96,dotted,B04 dotted instrument line drops from PNL-B04 to JB-B04
+BUS-480-B,CB-B05,0.96,solid,B05 branch has filled tap from BUS-480-B to CB-B05
+CB-B05,FU-B05,0.96,solid,B05 solid vertical feeder connects CB-B05 to FU-B05
+FU-B05,PMP-B05,0.96,solid,B05 solid vertical feeder continues from FU-B05 to PMP-B05
+PMP-B05,FT-B05,0.96,dotted,B05 dotted instrument line drops from PMP-B05 to FT-B05
+BUS-480-B,CB-B06,0.96,solid,B06 branch has filled tap from BUS-480-B to CB-B06
+CB-B06,DS-B06,0.96,solid,B06 solid vertical feeder connects CB-B06 to DS-B06
+DS-B06,MOV-B06,0.96,solid,B06 solid vertical feeder continues from DS-B06 to MOV-B06
+MOV-B06,RLY-B06,0.94,dashed,B06 dashed control line drops from MOV-B06 to RLY-B06
+BUS-480-B,CB-B07,0.96,solid,B07 branch has filled tap from BUS-480-B to CB-B07
+CB-B07,DS-B07,0.96,solid,B07 solid vertical feeder connects CB-B07 to DS-B07
+DS-B07,MCC-B07,0.96,solid,B07 solid vertical feeder continues from DS-B07 to MCC-B07
+MCC-B07,TB-B07,0.96,dotted,B07 dotted instrument line drops from MCC-B07 to TB-B07
+BUS-480-B,CB-B08,0.96,solid,B08 branch has filled tap from BUS-480-B to CB-B08
+CB-B08,FU-B08,0.96,solid,B08 solid vertical feeder connects CB-B08 to FU-B08
+FU-B08,PMP-B08,0.96,solid,B08 solid vertical feeder continues from FU-B08 to PMP-B08
+PMP-B08,PT-B08,0.96,dotted,B08 dotted instrument line drops from PMP-B08 to PT-B08
+BUS-480-B,CB-B09,0.96,solid,B09 branch has filled tap from BUS-480-B to CB-B09
+CB-B09,DS-B09,0.96,solid,B09 solid vertical feeder connects CB-B09 to DS-B09
+DS-B09,FAN-B09,0.96,solid,B09 solid vertical feeder continues from DS-B09 to FAN-B09
+FAN-B09,HS-B09,0.94,dashed,B09 dashed control line drops from FAN-B09 to HS-B09
+BUS-480-B,CB-B10,0.96,solid,B10 right crop shows filled bus tap from BUS-480-B to CB-B10
+CB-B10,DS-B10,0.96,solid,B10 solid vertical feeder connects CB-B10 to DS-B10
+DS-B10,JB-B10,0.96,solid,B10 solid vertical feeder continues from DS-B10 to JB-B10
+JB-B10,LT-B10,0.96,dotted,B10 dotted instrument line drops from JB-B10 to LT-B10
+DC-BUS-125A,DC-BUS-125B,0.86,solid,DC detail crop shows continuous thick horizontal bus between filled DC-BUS-125A and DC-BUS-125B taps
+DC-BUS-125A,PANEL-CTRL-MAIN,0.78,dashed,DC detail crop shows one dashed vertical tap from the common DC corridor down to PANEL-CTRL-MAIN
+BUS-480-C,CB-C01,0.96,solid,C01 branch has filled tap from BUS-480-C to CB-C01
+CB-C01,DS-C01,0.96,solid,C01 solid vertical feeder connects CB-C01 to DS-C01
+DS-C01,MOV-C01,0.96,solid,C01 solid vertical feeder continues from DS-C01 to MOV-C01
+MOV-C01,RLY-C01,0.94,dashed,C01 dashed control line drops from MOV-C01 to RLY-C01
+BUS-480-C,CB-C02,0.96,solid,C02 branch has filled tap from BUS-480-C to CB-C02
+CB-C02,FU-C02,0.96,solid,C02 solid vertical feeder connects CB-C02 to FU-C02
+FU-C02,PNL-C02,0.96,solid,C02 solid vertical feeder continues from FU-C02 to PNL-C02
+PNL-C02,JB-C02,0.96,dotted,C02 dotted instrument line drops from PNL-C02 to JB-C02
+BUS-480-C,CB-C03,0.96,solid,C03 branch has filled tap from BUS-480-C to CB-C03
+CB-C03,DS-C03,0.96,solid,C03 solid vertical feeder connects CB-C03 to DS-C03
+DS-C03,PMP-C03,0.96,solid,C03 solid vertical feeder continues from DS-C03 to PMP-C03
+PMP-C03,FT-C03,0.96,dotted,C03 dotted instrument line drops from PMP-C03 to FT-C03
+BUS-480-C,CB-C04,0.96,solid,C04 branch has filled tap from BUS-480-C to CB-C04
+CB-C04,DS-C04,0.96,solid,C04 solid vertical feeder connects CB-C04 to DS-C04
+DS-C04,HTR-C04,0.96,solid,C04 solid vertical feeder continues from DS-C04 to HTR-C04
+HTR-C04,HS-C04,0.94,dashed,C04 dashed control line drops from HTR-C04 to HS-C04
+BUS-480-C,CB-C05,0.96,solid,C05 branch has filled tap from BUS-480-C to CB-C05
+CB-C05,FU-C05,0.96,solid,C05 solid vertical feeder connects CB-C05 to FU-C05
+FU-C05,INST-C05,0.96,solid,C05 solid vertical feeder continues from FU-C05 to INST-C05
+INST-C05,JB-C05,0.96,dotted,C05 dotted instrument line drops from INST-C05 to JB-C05
+BUS-480-C,CB-C06,0.96,solid,C06 branch has filled tap from BUS-480-C to CB-C06
+CB-C06,DS-C06,0.96,solid,C06 solid vertical feeder connects CB-C06 to DS-C06
+DS-C06,MOV-C06,0.96,solid,C06 solid vertical feeder continues from DS-C06 to MOV-C06
+MOV-C06,LS-C06,0.96,dotted,C06 dotted instrument line drops from MOV-C06 to LS-C06
+BUS-480-C,CB-C07,0.96,solid,C07 branch has filled tap from BUS-480-C to CB-C07
+CB-C07,DS-C07,0.96,solid,C07 solid vertical feeder connects CB-C07 to DS-C07
+DS-C07,MCC-C07,0.96,solid,C07 solid vertical feeder continues from DS-C07 to MCC-C07
+MCC-C07,TB-C07,0.96,dotted,C07 dotted instrument line drops from MCC-C07 to TB-C07
+BUS-480-C,CB-C08,0.96,solid,C08 branch has filled tap from BUS-480-C to CB-C08
+CB-C08,FU-C08,0.96,solid,C08 solid vertical feeder connects CB-C08 to FU-C08
+FU-C08,PMP-C08,0.96,solid,C08 solid vertical feeder continues from FU-C08 to PMP-C08
+PMP-C08,PT-C08,0.96,dotted,C08 dotted instrument line drops from PMP-C08 to PT-C08
+BUS-480-C,CB-C09,0.96,solid,C09 branch has filled tap from BUS-480-C to CB-C09
+CB-C09,DS-C09,0.96,solid,C09 solid vertical feeder connects CB-C09 to DS-C09
+DS-C09,PNL-C09,0.96,solid,C09 solid vertical feeder continues from DS-C09 to PNL-C09
+PNL-C09,RLY-C09,0.94,dashed,C09 dashed control line drops from PNL-C09 to RLY-C09
+BUS-480-C,CB-C10,0.96,solid,C10 branch has filled tap from BUS-480-C to CB-C10
+CB-C10,DS-C10,0.96,solid,C10 solid vertical feeder connects CB-C10 to DS-C10
+DS-C10,JB-C10,0.96,solid,C10 solid vertical feeder continues from DS-C10 to JB-C10
+JB-C10,TB-C10,0.96,dotted,C10 dotted instrument line drops from JB-C10 to TB-C10
+BUS-480-C,GND-EQ-A,0.82,dash-dot,bottom-left crop shows dash-dot ground route from filled BUS-480-C tap down to GND-EQ-A
+BUS-480-D,CB-D01,0.96,solid,D01 branch has filled tap from BUS-480-D to CB-D01
+CB-D01,DS-D01,0.96,solid,D01 solid vertical feeder connects CB-D01 to DS-D01
+DS-D01,MOV-D01,0.96,solid,D01 solid vertical feeder continues from DS-D01 to MOV-D01
+MOV-D01,RLY-D01,0.94,dashed,D01 dashed control line drops from MOV-D01 to RLY-D01
+BUS-480-D,CB-D02,0.96,solid,D02 branch has filled tap from BUS-480-D to CB-D02
+CB-D02,FU-D02,0.96,solid,D02 solid vertical feeder connects CB-D02 to FU-D02
+FU-D02,PNL-D02,0.96,solid,D02 solid vertical feeder continues from FU-D02 to PNL-D02
+PNL-D02,JB-D02,0.96,dotted,D02 dotted instrument line drops from PNL-D02 to JB-D02
+BUS-480-D,CB-D03,0.96,solid,D03 branch has filled tap from BUS-480-D to CB-D03
+CB-D03,DS-D03,0.96,solid,D03 solid vertical feeder connects CB-D03 to DS-D03
+DS-D03,PMP-D03,0.96,solid,D03 solid vertical feeder continues from DS-D03 to PMP-D03
+PMP-D03,FT-D03,0.96,dotted,D03 dotted instrument line drops from PMP-D03 to FT-D03
+BUS-480-D,CB-D04,0.96,solid,D04 branch has filled tap from BUS-480-D to CB-D04
+CB-D04,DS-D04,0.96,solid,D04 solid vertical feeder connects CB-D04 to DS-D04
+DS-D04,HTR-D04,0.96,solid,D04 solid vertical feeder continues from DS-D04 to HTR-D04
+HTR-D04,HS-D04,0.94,dashed,D04 dashed control line drops from HTR-D04 to HS-D04
+BUS-480-D,CB-D05,0.96,solid,D05 branch has filled tap from BUS-480-D to CB-D05
+CB-D05,FU-D05,0.96,solid,D05 solid vertical feeder connects CB-D05 to FU-D05
+FU-D05,INST-D05,0.96,solid,D05 solid vertical feeder continues from FU-D05 to INST-D05
+INST-D05,JB-D05,0.96,dotted,D05 dotted instrument line drops from INST-D05 to JB-D05
+BUS-480-D,CB-D06,0.96,solid,D06 branch has filled tap from BUS-480-D to CB-D06
+CB-D06,DS-D06,0.96,solid,D06 solid vertical feeder connects CB-D06 to DS-D06
+DS-D06,MOV-D06,0.96,solid,D06 solid vertical feeder continues from DS-D06 to MOV-D06
+MOV-D06,LS-D06,0.96,dotted,D06 dotted instrument line drops from MOV-D06 to LS-D06
+BUS-480-D,CB-D07,0.96,solid,D07 branch has filled tap from BUS-480-D to CB-D07
+CB-D07,DS-D07,0.96,solid,D07 solid vertical feeder connects CB-D07 to DS-D07
+DS-D07,MCC-D07,0.96,solid,D07 solid vertical feeder continues from DS-D07 to MCC-D07
+MCC-D07,TB-D07,0.96,dotted,D07 dotted instrument line drops from MCC-D07 to TB-D07
+BUS-480-D,CB-D08,0.96,solid,D08 branch has filled tap from BUS-480-D to CB-D08
+CB-D08,FU-D08,0.96,solid,D08 solid vertical feeder connects CB-D08 to FU-D08
+FU-D08,PMP-D08,0.96,solid,D08 solid vertical feeder continues from FU-D08 to PMP-D08
+PMP-D08,PT-D08,0.96,dotted,D08 dotted instrument line drops from PMP-D08 to PT-D08
+BUS-480-D,CB-D09,0.96,solid,D09 branch has filled tap from BUS-480-D to CB-D09
+CB-D09,DS-D09,0.96,solid,D09 solid vertical feeder connects CB-D09 to DS-D09
+DS-D09,PNL-D09,0.96,solid,D09 solid vertical feeder continues from DS-D09 to PNL-D09
+PNL-D09,RLY-D09,0.94,dashed,D09 dashed control line drops from PNL-D09 to RLY-D09
+BUS-480-D,CB-D10,0.96,solid,D10 right crop shows filled bus tap from BUS-480-D to CB-D10
+CB-D10,DS-D10,0.96,solid,D10 solid vertical feeder connects CB-D10 to DS-D10
+DS-D10,JB-D10,0.96,solid,D10 solid vertical feeder continues from DS-D10 to JB-D10
+JB-D10,TB-D10,0.96,dotted,D10 dotted instrument line drops from JB-D10 to TB-D10
+BUS-480-D,GND-EQ-B,0.82,dash-dot,bottom-right crop shows dash-dot ground route from filled BUS-480-D tap down to GND-EQ-B
+
+3) CHANGES_FROM_JENNIFER_ROUND1
+I agree with Jennifer R1. No edges restored and no additional removals relative to Jennifer's precision edge list.
+- DS-A10/BAT-125A remains excluded: the visible solid feeder continues from DS-A10 down to JB-A10, while BAT-125A is adjacent without a visible contact.
+- BAT-125A/JB-A10 and CHGR-125A/BAT-125A remain excluded: no conductor is visible touching both symbols.
+- JB-A10/DC-BUS-125A remains excluded: the JB-A10 dotted drop is visually near the DC corridor, but no filled tap/contact is visible at the crossing.
+- CHGR-125B/BAT-125B and BAT-125B/DC-BUS-125B remain excluded: BAT-125B is adjacent to the dash-dot route without an explicit terminal contact.
+- DC-BUS-125B/PANEL-CTRL-MAIN remains excluded: only one dashed panel tap is visible from the shared DC corridor, so I keep a single panel edge rather than duplicate A and B logical associations.
+- GND-EQ-A and GND-EQ-B remain included only to BUS-480-C and BUS-480-D: the dash-dot ground routes visibly descend from those bus areas to the ground symbols.
+
+4) REMAINING_AMBIGUITIES
+- DC-BUS-125A/DC-BUS-125B is drawn as a continuous thick bus but labeled DC; line_type remains solid because the visible shared segment is solid while the charger boundary routes are dash-dot.
+- CHGR-125A/B and BAT-125A/B remain visually adjacent inside DC boundary corridors, but internal battery-charger associations are intentionally not modeled without conductor contacts.
+- PANEL-CTRL-MAIN has one visible dashed center tap on the common DC corridor; a separate center-tap node would be another modeling choice, but no second panel edge is added.
+- Equipment-ground upper attachment is kept at the nearest labeled 480 V bus areas from visible dash-dot ground routes and filled bus tap areas; no branch-device ground edges are added.
+
+5) COUNTS
+unique node count: 200
+CSV edge row count: 199
+unique undirected pair count: 199

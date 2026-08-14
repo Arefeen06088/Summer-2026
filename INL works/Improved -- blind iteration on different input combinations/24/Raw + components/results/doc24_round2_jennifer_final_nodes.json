@@ -1,0 +1,1218 @@
+{
+  "document": "24",
+  "iteration": "1",
+  "round": "jennifer_round2_final",
+  "role": "precision_reviewer_refiner",
+  "final_status": "saturated_agreement",
+  "review_notes": [
+    "Final precision confirmation used only Doc24 Raw + components visual resources and the supplied prior Doc24 round artifacts; no Ground Truth, GT-derived feedback, Raw+wires resources, existing Doc24 wires scripts, or OCR engines were used.",
+    "Raw schematic remains authoritative; detected-components overlay was used only as a placement aid.",
+    "Final visual pass confirmed the repeated Train A/B feeder ladders, upper source/tie paths, lower DC power paths, relay/control chains, and signal/ground routes are represented by the Diego round 2 asserted set.",
+    "SYNC-CAB to LOAD-SHED-CAB remains uncertain: the center raw crop shows nearby dashed routing but no clear continuous endpoint-to-endpoint conductor between the two cabinets.",
+    "No final visually necessary corrections were found; Diego round 2 asserted_edges, uncertain_edges, rejected_non_edges, node list, and matrix order are preserved."
+  ],
+  "nodes": [
+    {
+      "id": "OFFSITE-1",
+      "type": "other",
+      "evidence": "AC offsite source oval at upper left, label OFFSITE-1."
+    },
+    {
+      "id": "CB-101A",
+      "type": "component",
+      "evidence": "upper Train A offsite feeder breaker, label CB-101A."
+    },
+    {
+      "id": "TR-SAT-1A",
+      "type": "component",
+      "evidence": "upper Train A transformer symbol, label TR-SAT-1A."
+    },
+    {
+      "id": "EDG-1A",
+      "type": "other",
+      "evidence": "generator circle above Train A diesel breaker, label EDG-1A."
+    },
+    {
+      "id": "CB-DG1A",
+      "type": "component",
+      "evidence": "Train A emergency diesel generator breaker, label CB-DG1A."
+    },
+    {
+      "id": "SW-MAN-A",
+      "type": "component",
+      "evidence": "Train A manual switch on dashed EDG control line, label SW-MAN-A."
+    },
+    {
+      "id": "TB-DG-A",
+      "type": "component",
+      "evidence": "Train A diesel-generator terminal block on dashed control line, label TB-DG-A."
+    },
+    {
+      "id": "BUS-101A",
+      "type": "bus",
+      "evidence": "upper solid Train A bus labelled BUS-101A with junction dots at source/generator/feeders."
+    },
+    {
+      "id": "CB-TIE-1",
+      "type": "component",
+      "evidence": "central breaker in the upper solid bus tie, label CB-TIE-1."
+    },
+    {
+      "id": "BUS-101B",
+      "type": "bus",
+      "evidence": "upper solid Train B bus labelled BUS-101B with junction dots at source/generator/feeders."
+    },
+    {
+      "id": "OFFSITE-2",
+      "type": "other",
+      "evidence": "AC offsite source oval at upper Train B area, label OFFSITE-2."
+    },
+    {
+      "id": "CB-101B",
+      "type": "component",
+      "evidence": "upper Train B offsite feeder breaker, label CB-101B."
+    },
+    {
+      "id": "TR-SAT-1B",
+      "type": "component",
+      "evidence": "upper Train B transformer symbol, label TR-SAT-1B."
+    },
+    {
+      "id": "EDG-1B",
+      "type": "other",
+      "evidence": "generator circle above Train B diesel breaker, label EDG-1B."
+    },
+    {
+      "id": "CB-DG1B",
+      "type": "component",
+      "evidence": "Train B emergency diesel generator breaker, label CB-DG1B."
+    },
+    {
+      "id": "SW-MAN-B",
+      "type": "component",
+      "evidence": "Train B manual switch on dashed EDG control line, label SW-MAN-B."
+    },
+    {
+      "id": "TB-DG-B",
+      "type": "component",
+      "evidence": "Train B diesel-generator terminal block on dashed control line, label TB-DG-B."
+    },
+    {
+      "id": "CB-201A",
+      "type": "component",
+      "evidence": "vertical Train A feeder breaker below BUS-101A, label CB-201A."
+    },
+    {
+      "id": "TR-1A",
+      "type": "component",
+      "evidence": "Train A transformer below CB-201A, label TR-1A."
+    },
+    {
+      "id": "CB-202A",
+      "type": "component",
+      "evidence": "Train A breaker below TR-1A feeding lower bus, label CB-202A."
+    },
+    {
+      "id": "BUS-201A",
+      "type": "bus",
+      "evidence": "middle Train A 4.16 kV safety bus, labelled BUS-201A at vertical feeder and described as normal/EDG sources."
+    },
+    {
+      "id": "CB-201B",
+      "type": "component",
+      "evidence": "vertical Train B feeder breaker below BUS-101B, label CB-201B."
+    },
+    {
+      "id": "TR-1B",
+      "type": "component",
+      "evidence": "Train B transformer below CB-201B, label TR-1B."
+    },
+    {
+      "id": "CB-202B",
+      "type": "component",
+      "evidence": "Train B breaker below TR-1B feeding lower bus, label CB-202B."
+    },
+    {
+      "id": "BUS-201B",
+      "type": "bus",
+      "evidence": "middle Train B 4.16 kV safety bus, labelled BUS-201B at vertical feeder and described as normal/EDG sources."
+    },
+    {
+      "id": "SYNC-CAB",
+      "type": "panel",
+      "evidence": "central cabinet rectangle below tie/routing channel, label SYNC-CAB."
+    },
+    {
+      "id": "CB-2A01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A01; breaker label CB-2A01."
+    },
+    {
+      "id": "DS-2A01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A01; disconnect label DS-2A01."
+    },
+    {
+      "id": "MCC-2A01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A01; motor-control-center label MCC-2A01."
+    },
+    {
+      "id": "TB-2A01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A01; terminal block label TB-2A01."
+    },
+    {
+      "id": "PUMP-P201A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A01; label PUMP-P201A."
+    },
+    {
+      "id": "HS-2A01",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A01; label HS-2A01."
+    },
+    {
+      "id": "RELAY-K2A01",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A01; label RELAY-K2A01."
+    },
+    {
+      "id": "CB-2A02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A02; breaker label CB-2A02."
+    },
+    {
+      "id": "DS-2A02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A02; disconnect label DS-2A02."
+    },
+    {
+      "id": "MCC-2A02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A02; motor-control-center label MCC-2A02."
+    },
+    {
+      "id": "TB-2A02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A02; terminal block label TB-2A02."
+    },
+    {
+      "id": "FAN-F202A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A02; label FAN-F202A."
+    },
+    {
+      "id": "HS-2A02",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A02; label HS-2A02."
+    },
+    {
+      "id": "RELAY-K2A02",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A02; label RELAY-K2A02."
+    },
+    {
+      "id": "CB-2A03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A03; breaker label CB-2A03."
+    },
+    {
+      "id": "DS-2A03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A03; disconnect label DS-2A03."
+    },
+    {
+      "id": "MCC-2A03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A03; motor-control-center label MCC-2A03."
+    },
+    {
+      "id": "TB-2A03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A03; terminal block label TB-2A03."
+    },
+    {
+      "id": "MOV-HV203A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A03; label MOV-HV203A."
+    },
+    {
+      "id": "HS-2A03",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A03; label HS-2A03."
+    },
+    {
+      "id": "RELAY-K2A03",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A03; label RELAY-K2A03."
+    },
+    {
+      "id": "CB-2A04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A04; breaker label CB-2A04."
+    },
+    {
+      "id": "DS-2A04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A04; disconnect label DS-2A04."
+    },
+    {
+      "id": "MCC-2A04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A04; motor-control-center label MCC-2A04."
+    },
+    {
+      "id": "TB-2A04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A04; terminal block label TB-2A04."
+    },
+    {
+      "id": "PUMP-P204A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A04; label PUMP-P204A."
+    },
+    {
+      "id": "HS-2A04",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A04; label HS-2A04."
+    },
+    {
+      "id": "RELAY-K2A04",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A04; label RELAY-K2A04."
+    },
+    {
+      "id": "CB-2A05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A05; breaker label CB-2A05."
+    },
+    {
+      "id": "DS-2A05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A05; disconnect label DS-2A05."
+    },
+    {
+      "id": "MCC-2A05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A05; motor-control-center label MCC-2A05."
+    },
+    {
+      "id": "TB-2A05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A05; terminal block label TB-2A05."
+    },
+    {
+      "id": "CHLR-205A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A05; label CHLR-205A."
+    },
+    {
+      "id": "HS-2A05",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A05; label HS-2A05."
+    },
+    {
+      "id": "RELAY-K2A05",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A05; label RELAY-K2A05."
+    },
+    {
+      "id": "CB-2A06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A06; breaker label CB-2A06."
+    },
+    {
+      "id": "DS-2A06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A06; disconnect label DS-2A06."
+    },
+    {
+      "id": "MCC-2A06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A06; motor-control-center label MCC-2A06."
+    },
+    {
+      "id": "TB-2A06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A06; terminal block label TB-2A06."
+    },
+    {
+      "id": "HTR-206A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A06; label HTR-206A."
+    },
+    {
+      "id": "HS-2A06",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A06; label HS-2A06."
+    },
+    {
+      "id": "RELAY-K2A06",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A06; label RELAY-K2A06."
+    },
+    {
+      "id": "CB-2A07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A07; breaker label CB-2A07."
+    },
+    {
+      "id": "DS-2A07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A07; disconnect label DS-2A07."
+    },
+    {
+      "id": "MCC-2A07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A07; motor-control-center label MCC-2A07."
+    },
+    {
+      "id": "TB-2A07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A07; terminal block label TB-2A07."
+    },
+    {
+      "id": "VALVE-MV207A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A07; label VALVE-MV207A."
+    },
+    {
+      "id": "HS-2A07",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A07; label HS-2A07."
+    },
+    {
+      "id": "RELAY-K2A07",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A07; label RELAY-K2A07."
+    },
+    {
+      "id": "CB-2A08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A08; breaker label CB-2A08."
+    },
+    {
+      "id": "DS-2A08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A08; disconnect label DS-2A08."
+    },
+    {
+      "id": "MCC-2A08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A08; motor-control-center label MCC-2A08."
+    },
+    {
+      "id": "TB-2A08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A08; terminal block label TB-2A08."
+    },
+    {
+      "id": "PMP-LP208A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A08; label PMP-LP208A."
+    },
+    {
+      "id": "HS-2A08",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A08; label HS-2A08."
+    },
+    {
+      "id": "RELAY-K2A08",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A08; label RELAY-K2A08."
+    },
+    {
+      "id": "CB-2A09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A09; breaker label CB-2A09."
+    },
+    {
+      "id": "DS-2A09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A09; disconnect label DS-2A09."
+    },
+    {
+      "id": "MCC-2A09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A09; motor-control-center label MCC-2A09."
+    },
+    {
+      "id": "TB-2A09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A09; terminal block label TB-2A09."
+    },
+    {
+      "id": "COMP-C209A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A09; label COMP-C209A."
+    },
+    {
+      "id": "HS-2A09",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A09; label HS-2A09."
+    },
+    {
+      "id": "RELAY-K2A09",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A09; label RELAY-K2A09."
+    },
+    {
+      "id": "CB-2B01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B01; breaker label CB-2B01."
+    },
+    {
+      "id": "DS-2B01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B01; disconnect label DS-2B01."
+    },
+    {
+      "id": "MCC-2B01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B01; motor-control-center label MCC-2B01."
+    },
+    {
+      "id": "TB-2B01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B01; terminal block label TB-2B01."
+    },
+    {
+      "id": "PUMP-P201B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B01; label PUMP-P201B."
+    },
+    {
+      "id": "HS-2B01",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B01; label HS-2B01."
+    },
+    {
+      "id": "RELAY-K2B01",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B01; label RELAY-K2B01."
+    },
+    {
+      "id": "CB-2B02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B02; breaker label CB-2B02."
+    },
+    {
+      "id": "DS-2B02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B02; disconnect label DS-2B02."
+    },
+    {
+      "id": "MCC-2B02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B02; motor-control-center label MCC-2B02."
+    },
+    {
+      "id": "TB-2B02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B02; terminal block label TB-2B02."
+    },
+    {
+      "id": "FAN-F202B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B02; label FAN-F202B."
+    },
+    {
+      "id": "HS-2B02",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B02; label HS-2B02."
+    },
+    {
+      "id": "RELAY-K2B02",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B02; label RELAY-K2B02."
+    },
+    {
+      "id": "CB-2B03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B03; breaker label CB-2B03."
+    },
+    {
+      "id": "DS-2B03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B03; disconnect label DS-2B03."
+    },
+    {
+      "id": "MCC-2B03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B03; motor-control-center label MCC-2B03."
+    },
+    {
+      "id": "TB-2B03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B03; terminal block label TB-2B03."
+    },
+    {
+      "id": "MOV-HV203B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B03; label MOV-HV203B."
+    },
+    {
+      "id": "HS-2B03",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B03; label HS-2B03."
+    },
+    {
+      "id": "RELAY-K2B03",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B03; label RELAY-K2B03."
+    },
+    {
+      "id": "CB-2B04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B04; breaker label CB-2B04."
+    },
+    {
+      "id": "DS-2B04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B04; disconnect label DS-2B04."
+    },
+    {
+      "id": "MCC-2B04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B04; motor-control-center label MCC-2B04."
+    },
+    {
+      "id": "TB-2B04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B04; terminal block label TB-2B04."
+    },
+    {
+      "id": "PUMP-P204B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B04; label PUMP-P204B."
+    },
+    {
+      "id": "HS-2B04",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B04; label HS-2B04."
+    },
+    {
+      "id": "RELAY-K2B04",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B04; label RELAY-K2B04."
+    },
+    {
+      "id": "CB-2B05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B05; breaker label CB-2B05."
+    },
+    {
+      "id": "DS-2B05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B05; disconnect label DS-2B05."
+    },
+    {
+      "id": "MCC-2B05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B05; motor-control-center label MCC-2B05."
+    },
+    {
+      "id": "TB-2B05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B05; terminal block label TB-2B05."
+    },
+    {
+      "id": "CHLR-205B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B05; label CHLR-205B."
+    },
+    {
+      "id": "HS-2B05",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B05; label HS-2B05."
+    },
+    {
+      "id": "RELAY-K2B05",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B05; label RELAY-K2B05."
+    },
+    {
+      "id": "CB-2B06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B06; breaker label CB-2B06."
+    },
+    {
+      "id": "DS-2B06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B06; disconnect label DS-2B06."
+    },
+    {
+      "id": "MCC-2B06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B06; motor-control-center label MCC-2B06."
+    },
+    {
+      "id": "TB-2B06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B06; terminal block label TB-2B06."
+    },
+    {
+      "id": "HTR-206B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B06; label HTR-206B."
+    },
+    {
+      "id": "HS-2B06",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B06; label HS-2B06."
+    },
+    {
+      "id": "RELAY-K2B06",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B06; label RELAY-K2B06."
+    },
+    {
+      "id": "CB-2B07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B07; breaker label CB-2B07."
+    },
+    {
+      "id": "DS-2B07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B07; disconnect label DS-2B07."
+    },
+    {
+      "id": "MCC-2B07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B07; motor-control-center label MCC-2B07."
+    },
+    {
+      "id": "TB-2B07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B07; terminal block label TB-2B07."
+    },
+    {
+      "id": "VALVE-MV207B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B07; label VALVE-MV207B."
+    },
+    {
+      "id": "HS-2B07",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B07; label HS-2B07."
+    },
+    {
+      "id": "RELAY-K2B07",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B07; label RELAY-K2B07."
+    },
+    {
+      "id": "CB-2B08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B08; breaker label CB-2B08."
+    },
+    {
+      "id": "DS-2B08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B08; disconnect label DS-2B08."
+    },
+    {
+      "id": "MCC-2B08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B08; motor-control-center label MCC-2B08."
+    },
+    {
+      "id": "TB-2B08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B08; terminal block label TB-2B08."
+    },
+    {
+      "id": "PMP-LP208B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B08; label PMP-LP208B."
+    },
+    {
+      "id": "HS-2B08",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B08; label HS-2B08."
+    },
+    {
+      "id": "RELAY-K2B08",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B08; label RELAY-K2B08."
+    },
+    {
+      "id": "CB-2B09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B09; breaker label CB-2B09."
+    },
+    {
+      "id": "DS-2B09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B09; disconnect label DS-2B09."
+    },
+    {
+      "id": "MCC-2B09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B09; motor-control-center label MCC-2B09."
+    },
+    {
+      "id": "TB-2B09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B09; terminal block label TB-2B09."
+    },
+    {
+      "id": "COMP-C209B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B09; label COMP-C209B."
+    },
+    {
+      "id": "HS-2B09",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B09; label HS-2B09."
+    },
+    {
+      "id": "RELAY-K2B09",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B09; label RELAY-K2B09."
+    },
+    {
+      "id": "DC-BUS-125A",
+      "type": "bus",
+      "evidence": "lower solid DC bus in Train A area, label DC-BUS-125A."
+    },
+    {
+      "id": "BAT-125A",
+      "type": "component",
+      "evidence": "battery block connected below DC-BUS-125A, label BAT-125A."
+    },
+    {
+      "id": "CHG-125A",
+      "type": "component",
+      "evidence": "charger block connected below DC-BUS-125A, label CHG-125A."
+    },
+    {
+      "id": "INV-120A",
+      "type": "component",
+      "evidence": "inverter block connected below DC-BUS-125A, label INV-120A."
+    },
+    {
+      "id": "METER-V1",
+      "type": "instrument",
+      "evidence": "voltmeter circle at right end of DC-BUS-125A, label METER-V1."
+    },
+    {
+      "id": "PNL-DC-A",
+      "type": "panel",
+      "evidence": "Train A DC panel connected to DC-BUS-125A, label PNL-DC-A."
+    },
+    {
+      "id": "ESFAS-PNL-A",
+      "type": "panel",
+      "evidence": "Train A ESFAS panel connected to PNL-DC-A, label ESFAS-PNL-A."
+    },
+    {
+      "id": "GND-DC-A",
+      "type": "ground",
+      "evidence": "ground symbol below PNL-DC-A, label GND-DC-A."
+    },
+    {
+      "id": "PNL-AC-A",
+      "type": "panel",
+      "evidence": "Train A AC panel below INV-120A, label PNL-AC-A."
+    },
+    {
+      "id": "RPS-PNL-A",
+      "type": "panel",
+      "evidence": "Train A RPS panel in lower control area, label RPS-PNL-A."
+    },
+    {
+      "id": "TRIP-MOD-A",
+      "type": "panel",
+      "evidence": "Train A trip module at lower right of Train A control area, label TRIP-MOD-A."
+    },
+    {
+      "id": "PT-401A",
+      "type": "instrument",
+      "evidence": "Train A pressure transmitter circle on dotted signal input, label PT-401A."
+    },
+    {
+      "id": "LT-402A",
+      "type": "instrument",
+      "evidence": "Train A level transmitter circle on dotted signal input, label LT-402A."
+    },
+    {
+      "id": "FT-403A",
+      "type": "instrument",
+      "evidence": "Train A flow transmitter circle on dotted signal input, label FT-403A."
+    },
+    {
+      "id": "JB-401A",
+      "type": "component",
+      "evidence": "Train A junction box receiving PT/LT/FT dotted signals, label JB-401A."
+    },
+    {
+      "id": "TB-RPS-A",
+      "type": "component",
+      "evidence": "Train A RPS terminal block on dotted signal path, label TB-RPS-A."
+    },
+    {
+      "id": "GND-401A",
+      "type": "ground",
+      "evidence": "ground symbol below JB-401A, label GND-401A."
+    },
+    {
+      "id": "RELAY-K27A",
+      "type": "relay",
+      "evidence": "Train A relay in lower dashed trip chain, label RELAY-K27A."
+    },
+    {
+      "id": "RELAY-K59A",
+      "type": "relay",
+      "evidence": "Train A relay in lower dashed trip chain, label RELAY-K59A."
+    },
+    {
+      "id": "RELAY-K81A",
+      "type": "relay",
+      "evidence": "Train A relay in lower dashed trip chain, label RELAY-K81A."
+    },
+    {
+      "id": "RELAY-K86A",
+      "type": "relay",
+      "evidence": "Train A relay at trip module drop, label RELAY-K86A."
+    },
+    {
+      "id": "LOAD-SHED-CAB",
+      "type": "panel",
+      "evidence": "central load-shed cabinet, label LOAD-SHED-CAB."
+    },
+    {
+      "id": "TDR-1",
+      "type": "relay",
+      "evidence": "timer relay/block left of LOAD-SHED-CAB, label TDR-1."
+    },
+    {
+      "id": "TDR-2",
+      "type": "relay",
+      "evidence": "timer relay/block right of LOAD-SHED-CAB, label TDR-2."
+    },
+    {
+      "id": "LAMP-ALM-A",
+      "type": "instrument",
+      "evidence": "alarm lamp below LOAD-SHED-CAB on dotted signal branch, label LAMP-ALM-A."
+    },
+    {
+      "id": "LAMP-ALM-B",
+      "type": "instrument",
+      "evidence": "alarm lamp below LOAD-SHED-CAB on dotted signal branch, label LAMP-ALM-B."
+    },
+    {
+      "id": "ANN-PNL-1",
+      "type": "panel",
+      "evidence": "annunciator panel below center signal path, label ANN-PNL-1."
+    },
+    {
+      "id": "SEQ-REC-1",
+      "type": "instrument",
+      "evidence": "sequence recorder block right of ANN-PNL-1, label SEQ-REC-1."
+    },
+    {
+      "id": "DC-BUS-125B",
+      "type": "bus",
+      "evidence": "lower solid DC bus in Train B area, label DC-BUS-125B."
+    },
+    {
+      "id": "BAT-125B",
+      "type": "component",
+      "evidence": "battery block connected below DC-BUS-125B, label BAT-125B."
+    },
+    {
+      "id": "CHG-125B",
+      "type": "component",
+      "evidence": "charger block connected below DC-BUS-125B, label CHG-125B."
+    },
+    {
+      "id": "INV-120B",
+      "type": "component",
+      "evidence": "inverter block connected below DC-BUS-125B, label INV-120B."
+    },
+    {
+      "id": "PNL-DC-B",
+      "type": "panel",
+      "evidence": "Train B DC panel connected to DC-BUS-125B, label PNL-DC-B."
+    },
+    {
+      "id": "ESFAS-PNL-B",
+      "type": "panel",
+      "evidence": "Train B ESFAS panel connected to PNL-DC-B, label ESFAS-PNL-B."
+    },
+    {
+      "id": "GND-DC-B",
+      "type": "ground",
+      "evidence": "ground symbol below PNL-DC-B, label GND-DC-B."
+    },
+    {
+      "id": "PNL-AC-B",
+      "type": "panel",
+      "evidence": "Train B AC panel below INV-120B, label PNL-AC-B."
+    },
+    {
+      "id": "RPS-PNL-B",
+      "type": "panel",
+      "evidence": "Train B RPS panel in lower control area, label RPS-PNL-B."
+    },
+    {
+      "id": "TRIP-MOD-B",
+      "type": "panel",
+      "evidence": "Train B trip module at lower right control area, label TRIP-MOD-B."
+    },
+    {
+      "id": "PT-401B",
+      "type": "instrument",
+      "evidence": "Train B pressure transmitter circle on dotted signal input, label PT-401B."
+    },
+    {
+      "id": "LT-402B",
+      "type": "instrument",
+      "evidence": "Train B level transmitter circle on dotted signal input, label LT-402B."
+    },
+    {
+      "id": "FT-403B",
+      "type": "instrument",
+      "evidence": "Train B flow transmitter circle on dotted signal input, label FT-403B."
+    },
+    {
+      "id": "JB-401B",
+      "type": "component",
+      "evidence": "Train B junction box receiving PT/LT/FT dotted signals, label JB-401B."
+    },
+    {
+      "id": "TB-RPS-B",
+      "type": "component",
+      "evidence": "Train B RPS terminal block on dotted signal path, label TB-RPS-B."
+    },
+    {
+      "id": "GND-401B",
+      "type": "ground",
+      "evidence": "ground symbol below JB-401B, label GND-401B."
+    },
+    {
+      "id": "RELAY-K27B",
+      "type": "relay",
+      "evidence": "Train B relay in lower dashed trip chain, label RELAY-K27B."
+    },
+    {
+      "id": "RELAY-K59B",
+      "type": "relay",
+      "evidence": "Train B relay in lower dashed trip chain, label RELAY-K59B."
+    },
+    {
+      "id": "RELAY-K81B",
+      "type": "relay",
+      "evidence": "Train B relay in lower dashed trip chain, label RELAY-K81B."
+    },
+    {
+      "id": "RELAY-K86B",
+      "type": "relay",
+      "evidence": "Train B relay at trip module drop, label RELAY-K86B."
+    }
+  ],
+  "matrix_order": [
+    "OFFSITE-1",
+    "CB-101A",
+    "TR-SAT-1A",
+    "EDG-1A",
+    "CB-DG1A",
+    "SW-MAN-A",
+    "TB-DG-A",
+    "BUS-101A",
+    "CB-TIE-1",
+    "BUS-101B",
+    "OFFSITE-2",
+    "CB-101B",
+    "TR-SAT-1B",
+    "EDG-1B",
+    "CB-DG1B",
+    "SW-MAN-B",
+    "TB-DG-B",
+    "CB-201A",
+    "TR-1A",
+    "CB-202A",
+    "BUS-201A",
+    "CB-201B",
+    "TR-1B",
+    "CB-202B",
+    "BUS-201B",
+    "SYNC-CAB",
+    "CB-2A01",
+    "DS-2A01",
+    "MCC-2A01",
+    "TB-2A01",
+    "PUMP-P201A",
+    "HS-2A01",
+    "RELAY-K2A01",
+    "CB-2A02",
+    "DS-2A02",
+    "MCC-2A02",
+    "TB-2A02",
+    "FAN-F202A",
+    "HS-2A02",
+    "RELAY-K2A02",
+    "CB-2A03",
+    "DS-2A03",
+    "MCC-2A03",
+    "TB-2A03",
+    "MOV-HV203A",
+    "HS-2A03",
+    "RELAY-K2A03",
+    "CB-2A04",
+    "DS-2A04",
+    "MCC-2A04",
+    "TB-2A04",
+    "PUMP-P204A",
+    "HS-2A04",
+    "RELAY-K2A04",
+    "CB-2A05",
+    "DS-2A05",
+    "MCC-2A05",
+    "TB-2A05",
+    "CHLR-205A",
+    "HS-2A05",
+    "RELAY-K2A05",
+    "CB-2A06",
+    "DS-2A06",
+    "MCC-2A06",
+    "TB-2A06",
+    "HTR-206A",
+    "HS-2A06",
+    "RELAY-K2A06",
+    "CB-2A07",
+    "DS-2A07",
+    "MCC-2A07",
+    "TB-2A07",
+    "VALVE-MV207A",
+    "HS-2A07",
+    "RELAY-K2A07",
+    "CB-2A08",
+    "DS-2A08",
+    "MCC-2A08",
+    "TB-2A08",
+    "PMP-LP208A",
+    "HS-2A08",
+    "RELAY-K2A08",
+    "CB-2A09",
+    "DS-2A09",
+    "MCC-2A09",
+    "TB-2A09",
+    "COMP-C209A",
+    "HS-2A09",
+    "RELAY-K2A09",
+    "CB-2B01",
+    "DS-2B01",
+    "MCC-2B01",
+    "TB-2B01",
+    "PUMP-P201B",
+    "HS-2B01",
+    "RELAY-K2B01",
+    "CB-2B02",
+    "DS-2B02",
+    "MCC-2B02",
+    "TB-2B02",
+    "FAN-F202B",
+    "HS-2B02",
+    "RELAY-K2B02",
+    "CB-2B03",
+    "DS-2B03",
+    "MCC-2B03",
+    "TB-2B03",
+    "MOV-HV203B",
+    "HS-2B03",
+    "RELAY-K2B03",
+    "CB-2B04",
+    "DS-2B04",
+    "MCC-2B04",
+    "TB-2B04",
+    "PUMP-P204B",
+    "HS-2B04",
+    "RELAY-K2B04",
+    "CB-2B05",
+    "DS-2B05",
+    "MCC-2B05",
+    "TB-2B05",
+    "CHLR-205B",
+    "HS-2B05",
+    "RELAY-K2B05",
+    "CB-2B06",
+    "DS-2B06",
+    "MCC-2B06",
+    "TB-2B06",
+    "HTR-206B",
+    "HS-2B06",
+    "RELAY-K2B06",
+    "CB-2B07",
+    "DS-2B07",
+    "MCC-2B07",
+    "TB-2B07",
+    "VALVE-MV207B",
+    "HS-2B07",
+    "RELAY-K2B07",
+    "CB-2B08",
+    "DS-2B08",
+    "MCC-2B08",
+    "TB-2B08",
+    "PMP-LP208B",
+    "HS-2B08",
+    "RELAY-K2B08",
+    "CB-2B09",
+    "DS-2B09",
+    "MCC-2B09",
+    "TB-2B09",
+    "COMP-C209B",
+    "HS-2B09",
+    "RELAY-K2B09",
+    "DC-BUS-125A",
+    "BAT-125A",
+    "CHG-125A",
+    "INV-120A",
+    "METER-V1",
+    "PNL-DC-A",
+    "ESFAS-PNL-A",
+    "GND-DC-A",
+    "PNL-AC-A",
+    "RPS-PNL-A",
+    "TRIP-MOD-A",
+    "PT-401A",
+    "LT-402A",
+    "FT-403A",
+    "JB-401A",
+    "TB-RPS-A",
+    "GND-401A",
+    "RELAY-K27A",
+    "RELAY-K59A",
+    "RELAY-K81A",
+    "RELAY-K86A",
+    "LOAD-SHED-CAB",
+    "TDR-1",
+    "TDR-2",
+    "LAMP-ALM-A",
+    "LAMP-ALM-B",
+    "ANN-PNL-1",
+    "SEQ-REC-1",
+    "DC-BUS-125B",
+    "BAT-125B",
+    "CHG-125B",
+    "INV-120B",
+    "PNL-DC-B",
+    "ESFAS-PNL-B",
+    "GND-DC-B",
+    "PNL-AC-B",
+    "RPS-PNL-B",
+    "TRIP-MOD-B",
+    "PT-401B",
+    "LT-402B",
+    "FT-403B",
+    "JB-401B",
+    "TB-RPS-B",
+    "GND-401B",
+    "RELAY-K27B",
+    "RELAY-K59B",
+    "RELAY-K81B",
+    "RELAY-K86B"
+  ]
+}

@@ -1,0 +1,205 @@
+source,target,evidence
+GRID-345,DS-101,solid grid source chain
+DS-101,CB-101,solid grid source chain
+CB-101,BUS-13KV-N,solid grid source chain to 13 kV bus
+GEN-G1,CB-G1,generator G1 vertical feeder
+CB-G1,BUS-13KV-N,generator G1 tap to 13 kV bus
+GEN-G2,CB-G2,generator G2 vertical feeder
+CB-G2,BUS-13KV-N,generator G2 tap to 13 kV bus
+BUS-13KV-N,TR-1A,normal transformer A feed
+TR-1A,CB-4A-IN,normal transformer A incomer
+CB-4A-IN,BUS-4160-A,normal transformer A incomer to 4.16 kV bus
+BUS-13KV-N,TR-1B,normal transformer B feed
+TR-1B,CB-4B-IN,normal transformer B incomer
+CB-4B-IN,BUS-4160-B,normal transformer B incomer to 4.16 kV bus
+DG-1A,CB-DG1A,diesel generator A feeder
+CB-DG1A,BUS-4160-A,diesel generator A bus tap
+DG-1B,CB-DG1B,diesel generator B feeder
+CB-DG1B,BUS-4160-B,diesel generator B bus tap
+BUS-4160-A,CB-TIE-41,4.16 kV bus tie
+CB-TIE-41,BUS-4160-B,4.16 kV bus tie
+BUS-4160-A,TR-480-A,480 V transformer A feeder
+TR-480-A,CB-480A-IN,480 V transformer A incomer
+CB-480A-IN,BUS-480-A,480 V load center A incomer
+BUS-4160-B,TR-480-B,480 V transformer B feeder
+TR-480-B,CB-480B-IN,480 V transformer B incomer
+CB-480B-IN,BUS-480-B,480 V load center B incomer
+BUS-4160-A,TR-480-C,480 V transformer C feeder
+TR-480-C,CB-480C-IN,480 V transformer C incomer
+CB-480C-IN,BUS-480-C,480 V load center C incomer
+BUS-4160-B,TR-480-D,480 V transformer D feeder
+TR-480-D,CB-480D-IN,480 V transformer D incomer
+CB-480D-IN,BUS-480-D,480 V load center D incomer
+BUS-480-A,CB-A01,load center A branch 01 bus tap
+CB-A01,DS-A01,load center A branch 01 CB to protection device
+DS-A01,PMP-A01,load center A branch 01 protection to load
+PMP-A01,RLY-A01,load center A branch 01 control/signal drop
+BUS-480-A,CB-A02,load center A branch 02 bus tap
+CB-A02,FU-A02,load center A branch 02 CB to protection device
+FU-A02,MOV-A02,load center A branch 02 protection to load
+MOV-A02,LS-A02,load center A branch 02 control/signal drop
+BUS-480-A,CB-A03,load center A branch 03 bus tap
+CB-A03,DS-A03,load center A branch 03 CB to protection device
+DS-A03,MTR-A03,load center A branch 03 protection to load
+MTR-A03,RLY-A03,load center A branch 03 control/signal drop
+BUS-480-A,CB-A04,load center A branch 04 bus tap
+CB-A04,DS-A04,load center A branch 04 CB to protection device
+DS-A04,PNL-A04,load center A branch 04 protection to load
+PNL-A04,JB-A04,load center A branch 04 control/signal drop
+BUS-480-A,CB-A05,load center A branch 05 bus tap
+CB-A05,FU-A05,load center A branch 05 CB to protection device
+FU-A05,PMP-A05,load center A branch 05 protection to load
+PMP-A05,FT-A05,load center A branch 05 control/signal drop
+BUS-480-A,CB-A06,load center A branch 06 bus tap
+CB-A06,DS-A06,load center A branch 06 CB to protection device
+DS-A06,MOV-A06,load center A branch 06 protection to load
+MOV-A06,RLY-A06,load center A branch 06 control/signal drop
+BUS-480-A,CB-A07,load center A branch 07 bus tap
+CB-A07,DS-A07,load center A branch 07 CB to protection device
+DS-A07,MCC-A07,load center A branch 07 protection to load
+MCC-A07,TB-A07,load center A branch 07 control/signal drop
+BUS-480-A,CB-A08,load center A branch 08 bus tap
+CB-A08,FU-A08,load center A branch 08 CB to protection device
+FU-A08,PMP-A08,load center A branch 08 protection to load
+PMP-A08,PT-A08,load center A branch 08 control/signal drop
+BUS-480-A,CB-A09,load center A branch 09 bus tap
+CB-A09,DS-A09,load center A branch 09 CB to protection device
+DS-A09,FAN-A09,load center A branch 09 protection to load
+FAN-A09,HS-A09,load center A branch 09 control/signal drop
+BUS-480-A,CB-A10,load center A branch 10 bus tap
+CB-A10,DS-A10,load center A branch 10 CB to protection device
+DS-A10,BAT-125A,A10 branch passes through BAT-125A
+BAT-125A,JB-A10,A10 battery to junction box chain
+JB-A10,LT-A10,A10 dotted signal to LT-A10
+BUS-480-B,CB-B01,load center B branch 01 bus tap
+CB-B01,DS-B01,load center B branch 01 CB to protection device
+DS-B01,PMP-B01,load center B branch 01 protection to load
+PMP-B01,RLY-B01,load center B branch 01 control/signal drop
+BUS-480-B,CB-B02,load center B branch 02 bus tap
+CB-B02,FU-B02,load center B branch 02 CB to protection device
+FU-B02,MOV-B02,load center B branch 02 protection to load
+MOV-B02,LS-B02,load center B branch 02 control/signal drop
+BUS-480-B,CB-B03,load center B branch 03 bus tap
+CB-B03,DS-B03,load center B branch 03 CB to protection device
+DS-B03,MTR-B03,load center B branch 03 protection to load
+MTR-B03,RLY-B03,load center B branch 03 control/signal drop
+BUS-480-B,CB-B04,load center B branch 04 bus tap
+CB-B04,DS-B04,load center B branch 04 CB to protection device
+DS-B04,PNL-B04,load center B branch 04 protection to load
+PNL-B04,JB-B04,load center B branch 04 control/signal drop
+BUS-480-B,CB-B05,load center B branch 05 bus tap
+CB-B05,FU-B05,load center B branch 05 CB to protection device
+FU-B05,PMP-B05,load center B branch 05 protection to load
+PMP-B05,FT-B05,load center B branch 05 control/signal drop
+BUS-480-B,CB-B06,load center B branch 06 bus tap
+CB-B06,DS-B06,load center B branch 06 CB to protection device
+DS-B06,MOV-B06,load center B branch 06 protection to load
+MOV-B06,RLY-B06,load center B branch 06 control/signal drop
+BUS-480-B,CB-B07,load center B branch 07 bus tap
+CB-B07,DS-B07,load center B branch 07 CB to protection device
+DS-B07,MCC-B07,load center B branch 07 protection to load
+MCC-B07,TB-B07,load center B branch 07 control/signal drop
+BUS-480-B,CB-B08,load center B branch 08 bus tap
+CB-B08,FU-B08,load center B branch 08 CB to protection device
+FU-B08,PMP-B08,load center B branch 08 protection to load
+PMP-B08,PT-B08,load center B branch 08 control/signal drop
+BUS-480-B,CB-B09,load center B branch 09 bus tap
+CB-B09,DS-B09,load center B branch 09 CB to protection device
+DS-B09,FAN-B09,load center B branch 09 protection to load
+FAN-B09,HS-B09,load center B branch 09 control/signal drop
+BUS-480-B,CB-B10,load center B branch 10 bus tap
+CB-B10,DS-B10,load center B branch 10 CB to protection device
+DS-B10,JB-B10,load center B branch 10 protection to load
+JB-B10,LT-B10,load center B branch 10 control/signal drop
+BUS-480-C,CB-C01,load center C branch 01 bus tap
+CB-C01,DS-C01,load center C branch 01 CB to protection device
+DS-C01,MOV-C01,load center C branch 01 protection to load
+MOV-C01,RLY-C01,load center C branch 01 control/signal drop
+BUS-480-C,CB-C02,load center C branch 02 bus tap
+CB-C02,FU-C02,load center C branch 02 CB to protection device
+FU-C02,PNL-C02,load center C branch 02 protection to load
+PNL-C02,JB-C02,load center C branch 02 control/signal drop
+BUS-480-C,CB-C03,load center C branch 03 bus tap
+CB-C03,DS-C03,load center C branch 03 CB to protection device
+DS-C03,PMP-C03,load center C branch 03 protection to load
+PMP-C03,FT-C03,load center C branch 03 control/signal drop
+BUS-480-C,CB-C04,load center C branch 04 bus tap
+CB-C04,DS-C04,load center C branch 04 CB to protection device
+DS-C04,HTR-C04,load center C branch 04 protection to load
+HTR-C04,HS-C04,load center C branch 04 control/signal drop
+BUS-480-C,CB-C05,load center C branch 05 bus tap
+CB-C05,FU-C05,load center C branch 05 CB to protection device
+FU-C05,INST-C05,load center C branch 05 protection to load
+INST-C05,JB-C05,load center C branch 05 control/signal drop
+BUS-480-C,CB-C06,load center C branch 06 bus tap
+CB-C06,DS-C06,load center C branch 06 CB to protection device
+DS-C06,MOV-C06,load center C branch 06 protection to load
+MOV-C06,LS-C06,load center C branch 06 control/signal drop
+BUS-480-C,CB-C07,load center C branch 07 bus tap
+CB-C07,DS-C07,load center C branch 07 CB to protection device
+DS-C07,MCC-C07,load center C branch 07 protection to load
+MCC-C07,TB-C07,load center C branch 07 control/signal drop
+BUS-480-C,CB-C08,load center C branch 08 bus tap
+CB-C08,FU-C08,load center C branch 08 CB to protection device
+FU-C08,PMP-C08,load center C branch 08 protection to load
+PMP-C08,PT-C08,load center C branch 08 control/signal drop
+BUS-480-C,CB-C09,load center C branch 09 bus tap
+CB-C09,DS-C09,load center C branch 09 CB to protection device
+DS-C09,PNL-C09,load center C branch 09 protection to load
+PNL-C09,RLY-C09,load center C branch 09 control/signal drop
+BUS-480-C,CB-C10,load center C branch 10 bus tap
+CB-C10,DS-C10,load center C branch 10 CB to protection device
+DS-C10,JB-C10,load center C branch 10 protection to load
+JB-C10,TB-C10,load center C branch 10 control/signal drop
+BUS-480-D,CB-D01,load center D branch 01 bus tap
+CB-D01,DS-D01,load center D branch 01 CB to protection device
+DS-D01,MOV-D01,load center D branch 01 protection to load
+MOV-D01,RLY-D01,load center D branch 01 control/signal drop
+BUS-480-D,CB-D02,load center D branch 02 bus tap
+CB-D02,FU-D02,load center D branch 02 CB to protection device
+FU-D02,PNL-D02,load center D branch 02 protection to load
+PNL-D02,JB-D02,load center D branch 02 control/signal drop
+BUS-480-D,CB-D03,load center D branch 03 bus tap
+CB-D03,DS-D03,load center D branch 03 CB to protection device
+DS-D03,PMP-D03,load center D branch 03 protection to load
+PMP-D03,FT-D03,load center D branch 03 control/signal drop
+BUS-480-D,CB-D04,load center D branch 04 bus tap
+CB-D04,DS-D04,load center D branch 04 CB to protection device
+DS-D04,HTR-D04,load center D branch 04 protection to load
+HTR-D04,HS-D04,load center D branch 04 control/signal drop
+BUS-480-D,CB-D05,load center D branch 05 bus tap
+CB-D05,FU-D05,load center D branch 05 CB to protection device
+FU-D05,INST-D05,load center D branch 05 protection to load
+INST-D05,JB-D05,load center D branch 05 control/signal drop
+BUS-480-D,CB-D06,load center D branch 06 bus tap
+CB-D06,DS-D06,load center D branch 06 CB to protection device
+DS-D06,MOV-D06,load center D branch 06 protection to load
+MOV-D06,LS-D06,load center D branch 06 control/signal drop
+BUS-480-D,CB-D07,load center D branch 07 bus tap
+CB-D07,DS-D07,load center D branch 07 CB to protection device
+DS-D07,MCC-D07,load center D branch 07 protection to load
+MCC-D07,TB-D07,load center D branch 07 control/signal drop
+BUS-480-D,CB-D08,load center D branch 08 bus tap
+CB-D08,FU-D08,load center D branch 08 CB to protection device
+FU-D08,PMP-D08,load center D branch 08 protection to load
+PMP-D08,PT-D08,load center D branch 08 control/signal drop
+BUS-480-D,CB-D09,load center D branch 09 bus tap
+CB-D09,DS-D09,load center D branch 09 CB to protection device
+DS-D09,PNL-D09,load center D branch 09 protection to load
+PNL-D09,RLY-D09,load center D branch 09 control/signal drop
+BUS-480-D,CB-D10,load center D branch 10 bus tap
+CB-D10,DS-D10,load center D branch 10 CB to protection device
+DS-D10,JB-D10,load center D branch 10 protection to load
+JB-D10,TB-D10,load center D branch 10 control/signal drop
+JB-A10,DC-BUS-125A,Diego accepted A10/JB tie to DC bus A
+BAT-125B,DC-BUS-125B,Diego accepted battery B tie to DC bus B
+DC-BUS-125A,PANEL-CTRL-MAIN,Diego accepted DC bus A control-panel tap
+PANEL-CTRL-MAIN,DC-BUS-125B,Diego accepted control-panel/DC bus B tap
+BUS-480-C,GND-EQ-A,Diego round-1 ground tie with misread label
+BUS-480-D,GND-EQ-B,Diego round-1 ground tie with misread label
+CHGR-125A,DC-BUS-125A,Diego high-recall charger A to DC bus candidate
+CHGR-125A,BAT-125A,Diego high-recall charger A to battery A candidate
+CHGR-125B,DC-BUS-125B,Diego high-recall charger B to DC bus candidate
+CHGR-125B,BAT-125B,Diego high-recall charger B to battery B candidate
+DS-B01,BAT-125B,Diego high-recall B01/battery adjacency candidate
+DC-BUS-125A,DC-BUS-125B,Diego high-recall continuous DC bus candidate

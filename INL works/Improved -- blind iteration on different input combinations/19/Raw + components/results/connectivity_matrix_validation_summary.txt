@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 19
+Input configuration: Raw + components
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\19\connectivity_matrix_v3.csv
+GT normalized nodes: 200; GT normalized edges: 200
+Matrices evaluated: 5
+Best row: Diego -- Round 1 from doc19_round1_diego_connectivity_matrix.csv with Precision=0.959799, Recall=0.955000, F1=0.957393
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=191, FP=8, FN=9, Precision=0.959799, Recall=0.955000, F1=0.957393
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+Extra/non-GT nodes most responsible for FP edges: CONTROL-POWER-DC-DISTRIBUTION-B (2 FP edges); CONTROL-POWER-DC-DISTRIBUTION-A (2 FP edges); OFFSITE-GRID-2 (1 FP edges); OFFSITE-GRID-1 (1 FP edges).
+Missing GT nodes examples: GRID-1; GRID-2.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: BAT-125A -- CHGR-125A; BAT-125B -- CHGR-125B.
+False-negative edge examples among GT-known nodes: BUS-125DC-A -- CHGR-125A; BUS-125DC-B -- CHGR-125B; BUS-480-A -- CB-301; BUS-480-A -- CHGR-125A; BUS-480-B -- CB-302; BUS-480-B -- CHGR-125B; LS-MOV601 -- VALVE-MOV601.
+False-positive examples involving extra/non-GT nodes: CB-301 -- CONTROL-POWER-DC-DISTRIBUTION-A; CB-302 -- CONTROL-POWER-DC-DISTRIBUTION-B; CHGR-125A -- CONTROL-POWER-DC-DISTRIBUTION-A; CHGR-125B -- CONTROL-POWER-DC-DISTRIBUTION-B; DS-101 -- OFFSITE-GRID-1; DS-102 -- OFFSITE-GRID-2.
+False-negative examples involving missing/differently named nodes: DS-101 -- GRID-1; DS-102 -- GRID-2.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (CONTROL-POWER-DC-DISTRIBUTION-B; CONTROL-POWER-DC-DISTRIBUTION-A; OFFSITE-GRID-2; OFFSITE-GRID-1), the final-row metrics would be TP=191, FP=2, FN=9, Precision=0.989637, Recall=0.955000, F1=0.972010.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=191, FP=2, FN=9, Precision=0.989637, Recall=0.955000, F1=0.972010.

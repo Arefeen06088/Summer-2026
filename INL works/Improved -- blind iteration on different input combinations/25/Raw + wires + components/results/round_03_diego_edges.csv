@@ -1,0 +1,206 @@
+source,target,confidence,status,evidence
+SWYD-115KV,FDR-13A,high,accepted,source stack A solid conductors
+FDR-13A,TR-UAT-1A,high,accepted,source stack A solid conductors
+TR-UAT-1A,CB-52-4A,high,accepted,source stack A solid conductors
+CB-52-4A,BUS-4160-A,high,accepted,source stack A solid conductors
+EDG-1A,CB-DG-1A,high,accepted,diesel generator A solid conductors
+CB-DG-1A,BUS-4160-A,high,accepted,diesel generator A solid conductors
+SWYD-115KV,FDR-13B,high,accepted,source stack B solid conductors
+FDR-13B,TR-UAT-1B,high,accepted,source stack B solid conductors
+TR-UAT-1B,CB-52-4B,high,accepted,source stack B solid conductors
+CB-52-4B,BUS-4160-B,high,accepted,source stack B solid conductors
+EDG-1B,CB-DG-1B,high,accepted,diesel generator B solid conductors
+CB-DG-1B,BUS-4160-B,high,accepted,diesel generator B solid conductors
+SWYD-115KV,TR-SAT-1,high,accepted,source stack C solid conductors
+TR-SAT-1,CB-52-4C,high,accepted,source stack C solid conductors
+CB-52-4C,BUS-4160-C,high,accepted,source stack C solid conductors
+EDG-1C,CB-DG-1C,high,accepted,diesel generator C solid conductors
+CB-DG-1C,BUS-4160-C,high,accepted,diesel generator C solid conductors
+BUS-4160-A,CB-TIE-AB,high,accepted,inline tie breaker AB on 4.16 kV bus
+CB-TIE-AB,BUS-4160-B,high,accepted,inline tie breaker AB on 4.16 kV bus
+BUS-4160-B,CB-TIE-BC,high,accepted,inline tie breaker BC on 4.16 kV bus
+CB-TIE-BC,BUS-4160-C,high,accepted,inline tie breaker BC on 4.16 kV bus
+BUS-4160-A,CB-4A01,high,accepted,4.16 kV bus feeder tap
+CB-4A01,DS-4A01,high,accepted,4.16 kV bus feeder tap
+BUS-4160-A,CB-4A02,high,accepted,4.16 kV bus feeder tap
+CB-4A02,DS-4A02,high,accepted,4.16 kV bus feeder tap
+BUS-4160-A,CB-4A03,high,accepted,4.16 kV bus feeder tap
+CB-4A03,DS-4A03,high,accepted,4.16 kV bus feeder tap
+BUS-4160-A,CB-4A04,high,accepted,4.16 kV bus feeder tap
+CB-4A04,DS-4A04,high,accepted,4.16 kV bus feeder tap
+BUS-4160-A,CB-4A05,high,accepted,4.16 kV bus feeder tap
+CB-4A05,DS-4A05,high,accepted,4.16 kV bus feeder tap
+BUS-4160-A,CB-4A06,high,accepted,4.16 kV bus feeder tap
+CB-4A06,DS-4A06,high,accepted,4.16 kV bus feeder tap
+BUS-4160-A,CB-4A07,high,accepted,4.16 kV bus feeder tap
+CB-4A07,DS-4A07,high,accepted,4.16 kV bus feeder tap
+BUS-4160-A,CB-4A08,high,accepted,4.16 kV bus feeder tap
+CB-4A08,DS-4A08,high,accepted,4.16 kV bus feeder tap
+DS-4A01,TR-480-1A,high,accepted,feeder 01 transformer path to 480 V bus
+TR-480-1A,CB-52-48A,high,accepted,feeder 01 transformer path to 480 V bus
+CB-52-48A,BUS-480-1A,high,accepted,feeder 01 transformer path to 480 V bus
+DS-4A01,MS-A01,high,accepted,feeder 01 RHR pump branch
+MS-A01,PUMP-RHR-P201A,high,accepted,feeder 01 RHR pump branch
+DS-4A02,MS-A02,high,accepted,feeder 02 charging/safety pump branch
+MS-A02,PUMP-CS-P202A,high,accepted,feeder 02 charging/safety pump branch
+DS-4A03,TR-LC-A03,high,accepted,feeder 03 load center transformer branch
+TR-LC-A03,LC-480-A03,high,accepted,feeder 03 load center transformer branch
+DS-4A04,MS-A04,high,accepted,feeder 04 fan branch
+MS-A04,FAN-CR-401A,high,accepted,feeder 04 fan branch
+DS-4A05,PNL-ESF-A05,high,accepted,feeder 05 ESF panel and ground reference
+PNL-ESF-A05,GND-ESF-A05,high,accepted,feeder 05 ESF panel and ground reference
+DS-4A06,RECT-RPS-A06,high,accepted,feeder 06 RPS rectifier/inverter branch
+RECT-RPS-A06,INV-RPS-A06,high,accepted,feeder 06 RPS rectifier/inverter branch
+DS-4A07,MS-A07,high,accepted,feeder 07 AFW pump branch
+MS-A07,PUMP-AFW-P203A,high,accepted,feeder 07 AFW pump branch
+DS-4A08,TR-CTRL-A08,high,accepted,feeder 08 control transformer/panel branch
+TR-CTRL-A08,CP-CTRL-A08,high,accepted,feeder 08 control transformer/panel branch
+BUS-480-1A,MCC-A1,high,accepted,480 V bus drop to MCC section 1
+BUS-480-1A,MCC-A2,high,accepted,480 V bus drop to MCC section 2
+MCC-A1,CB-48A01,high,accepted,MCC section 1 branch 01
+CB-48A01,MS-48A01,high,accepted,MCC section 1 branch 01
+MS-48A01,PUMP-CVC-P301A,high,accepted,MCC section 1 branch 01
+MCC-A1,CB-48A02,high,accepted,MCC section 1 branch 02
+CB-48A02,K-48A02,high,accepted,MCC section 1 branch 02
+K-48A02,MOV-CS-451A,high,accepted,MCC section 1 branch 02
+MCC-A1,CB-48A03,high,accepted,MCC section 1 branch 03
+CB-48A03,MS-48A03,high,accepted,MCC section 1 branch 03
+MS-48A03,FAN-HVAC-501A,high,accepted,MCC section 1 branch 03
+MCC-A2,CB-48A04,high,accepted,MCC section 2 branch 04
+CB-48A04,MS-48A04,high,accepted,MCC section 2 branch 04
+MS-48A04,PUMP-SUMP-P302A,high,accepted,MCC section 2 branch 04
+MCC-A2,CB-48A05,high,accepted,MCC section 2 branch 05
+CB-48A05,K-48A05,high,accepted,MCC section 2 branch 05
+K-48A05,MOV-RHR-452A,high,accepted,MCC section 2 branch 05
+MCC-A2,CB-48A06,high,accepted,MCC section 2 branch 06
+CB-48A06,XFU-48A06,high,accepted,MCC section 2 branch 06
+XFU-48A06,PNL-PI-601A,high,accepted,MCC section 2 branch 06
+BUS-4160-B,CB-4B01,high,accepted,4.16 kV bus feeder tap
+CB-4B01,DS-4B01,high,accepted,4.16 kV bus feeder tap
+BUS-4160-B,CB-4B02,high,accepted,4.16 kV bus feeder tap
+CB-4B02,DS-4B02,high,accepted,4.16 kV bus feeder tap
+BUS-4160-B,CB-4B03,high,accepted,4.16 kV bus feeder tap
+CB-4B03,DS-4B03,high,accepted,4.16 kV bus feeder tap
+BUS-4160-B,CB-4B04,high,accepted,4.16 kV bus feeder tap
+CB-4B04,DS-4B04,high,accepted,4.16 kV bus feeder tap
+BUS-4160-B,CB-4B05,high,accepted,4.16 kV bus feeder tap
+CB-4B05,DS-4B05,high,accepted,4.16 kV bus feeder tap
+BUS-4160-B,CB-4B06,high,accepted,4.16 kV bus feeder tap
+CB-4B06,DS-4B06,high,accepted,4.16 kV bus feeder tap
+BUS-4160-B,CB-4B07,high,accepted,4.16 kV bus feeder tap
+CB-4B07,DS-4B07,high,accepted,4.16 kV bus feeder tap
+BUS-4160-B,CB-4B08,high,accepted,4.16 kV bus feeder tap
+CB-4B08,DS-4B08,high,accepted,4.16 kV bus feeder tap
+DS-4B01,TR-480-1B,high,accepted,feeder 01 transformer path to 480 V bus
+TR-480-1B,CB-52-48B,high,accepted,feeder 01 transformer path to 480 V bus
+CB-52-48B,BUS-480-1B,high,accepted,feeder 01 transformer path to 480 V bus
+DS-4B01,MS-B01,high,accepted,feeder 01 RHR pump branch
+MS-B01,PUMP-RHR-P201B,high,accepted,feeder 01 RHR pump branch
+DS-4B02,MS-B02,high,accepted,feeder 02 charging/safety pump branch
+MS-B02,PUMP-CS-P202B,high,accepted,feeder 02 charging/safety pump branch
+DS-4B03,TR-LC-B03,high,accepted,feeder 03 load center transformer branch
+TR-LC-B03,LC-480-B03,high,accepted,feeder 03 load center transformer branch
+DS-4B04,MS-B04,high,accepted,feeder 04 fan branch
+MS-B04,FAN-CR-401B,high,accepted,feeder 04 fan branch
+DS-4B05,PNL-ESF-B05,high,accepted,feeder 05 ESF panel and ground reference
+PNL-ESF-B05,GND-ESF-B05,high,accepted,feeder 05 ESF panel and ground reference
+DS-4B06,RECT-RPS-B06,high,accepted,feeder 06 RPS rectifier/inverter branch
+RECT-RPS-B06,INV-RPS-B06,high,accepted,feeder 06 RPS rectifier/inverter branch
+DS-4B07,MS-B07,high,accepted,feeder 07 AFW pump branch
+MS-B07,PUMP-AFW-P203B,high,accepted,feeder 07 AFW pump branch
+DS-4B08,TR-CTRL-B08,high,accepted,feeder 08 control transformer/panel branch
+TR-CTRL-B08,CP-CTRL-B08,high,accepted,feeder 08 control transformer/panel branch
+BUS-480-1B,MCC-B1,high,accepted,480 V bus drop to MCC section 1
+BUS-480-1B,MCC-B2,high,accepted,480 V bus drop to MCC section 2
+MCC-B1,CB-48B01,high,accepted,MCC section 1 branch 01
+CB-48B01,MS-48B01,high,accepted,MCC section 1 branch 01
+MS-48B01,PUMP-CVC-P301B,high,accepted,MCC section 1 branch 01
+MCC-B1,CB-48B02,high,accepted,MCC section 1 branch 02
+CB-48B02,K-48B02,high,accepted,MCC section 1 branch 02
+K-48B02,MOV-CS-451B,high,accepted,MCC section 1 branch 02
+MCC-B1,CB-48B03,high,accepted,MCC section 1 branch 03
+CB-48B03,MS-48B03,high,accepted,MCC section 1 branch 03
+MS-48B03,FAN-HVAC-501B,high,accepted,MCC section 1 branch 03
+MCC-B2,CB-48B04,high,accepted,MCC section 2 branch 04
+CB-48B04,MS-48B04,high,accepted,MCC section 2 branch 04
+MS-48B04,PUMP-SUMP-P302B,high,accepted,MCC section 2 branch 04
+MCC-B2,CB-48B05,high,accepted,MCC section 2 branch 05
+CB-48B05,K-48B05,high,accepted,MCC section 2 branch 05
+K-48B05,MOV-RHR-452B,high,accepted,MCC section 2 branch 05
+MCC-B2,CB-48B06,high,accepted,MCC section 2 branch 06
+CB-48B06,XFU-48B06,high,accepted,MCC section 2 branch 06
+XFU-48B06,PNL-PI-601B,high,accepted,MCC section 2 branch 06
+BUS-4160-C,CB-4C01,high,accepted,4.16 kV bus feeder tap
+CB-4C01,DS-4C01,high,accepted,4.16 kV bus feeder tap
+BUS-4160-C,CB-4C02,high,accepted,4.16 kV bus feeder tap
+CB-4C02,DS-4C02,high,accepted,4.16 kV bus feeder tap
+BUS-4160-C,CB-4C03,high,accepted,4.16 kV bus feeder tap
+CB-4C03,DS-4C03,high,accepted,4.16 kV bus feeder tap
+BUS-4160-C,CB-4C04,high,accepted,4.16 kV bus feeder tap
+CB-4C04,DS-4C04,high,accepted,4.16 kV bus feeder tap
+BUS-4160-C,CB-4C05,high,accepted,4.16 kV bus feeder tap
+CB-4C05,DS-4C05,high,accepted,4.16 kV bus feeder tap
+BUS-4160-C,CB-4C06,high,accepted,4.16 kV bus feeder tap
+CB-4C06,DS-4C06,high,accepted,4.16 kV bus feeder tap
+BUS-4160-C,CB-4C07,high,accepted,4.16 kV bus feeder tap
+CB-4C07,DS-4C07,high,accepted,4.16 kV bus feeder tap
+BUS-4160-C,CB-4C08,high,accepted,4.16 kV bus feeder tap
+CB-4C08,DS-4C08,high,accepted,4.16 kV bus feeder tap
+DS-4C01,TR-480-1C,high,accepted,feeder 01 transformer path to 480 V bus
+TR-480-1C,CB-52-48C,high,accepted,feeder 01 transformer path to 480 V bus
+CB-52-48C,BUS-480-1C,high,accepted,feeder 01 transformer path to 480 V bus
+DS-4C01,MS-C01,high,accepted,feeder 01 RHR pump branch
+MS-C01,PUMP-RHR-P201C,high,accepted,feeder 01 RHR pump branch
+DS-4C02,MS-C02,high,accepted,feeder 02 charging/safety pump branch
+MS-C02,PUMP-CS-P202C,high,accepted,feeder 02 charging/safety pump branch
+DS-4C03,TR-LC-C03,high,accepted,feeder 03 load center transformer branch
+TR-LC-C03,LC-480-C03,high,accepted,feeder 03 load center transformer branch
+DS-4C04,MS-C04,high,accepted,feeder 04 fan branch
+MS-C04,FAN-CR-401C,high,accepted,feeder 04 fan branch
+DS-4C05,PNL-ESF-C05,high,accepted,feeder 05 ESF panel and ground reference
+PNL-ESF-C05,GND-ESF-C05,high,accepted,feeder 05 ESF panel and ground reference
+DS-4C06,RECT-RPS-C06,high,accepted,feeder 06 RPS rectifier/inverter branch
+RECT-RPS-C06,INV-RPS-C06,high,accepted,feeder 06 RPS rectifier/inverter branch
+DS-4C07,MS-C07,high,accepted,feeder 07 AFW pump branch
+MS-C07,PUMP-AFW-P203C,high,accepted,feeder 07 AFW pump branch
+DS-4C08,TR-CTRL-C08,high,accepted,feeder 08 control transformer/panel branch
+TR-CTRL-C08,CP-CTRL-C08,high,accepted,feeder 08 control transformer/panel branch
+BUS-480-1C,MCC-C1,high,accepted,480 V bus drop to MCC section 1
+BUS-480-1C,MCC-C2,high,accepted,480 V bus drop to MCC section 2
+MCC-C1,CB-48C01,high,accepted,MCC section 1 branch 01
+CB-48C01,MS-48C01,high,accepted,MCC section 1 branch 01
+MS-48C01,PUMP-CVC-P301C,high,accepted,MCC section 1 branch 01
+MCC-C1,CB-48C02,high,accepted,MCC section 1 branch 02
+CB-48C02,K-48C02,high,accepted,MCC section 1 branch 02
+K-48C02,MOV-CS-451C,high,accepted,MCC section 1 branch 02
+MCC-C1,CB-48C03,high,accepted,MCC section 1 branch 03
+CB-48C03,MS-48C03,high,accepted,MCC section 1 branch 03
+MS-48C03,FAN-HVAC-501C,high,accepted,MCC section 1 branch 03
+MCC-C2,CB-48C04,high,accepted,MCC section 2 branch 04
+CB-48C04,MS-48C04,high,accepted,MCC section 2 branch 04
+MS-48C04,PUMP-SUMP-P302C,high,accepted,MCC section 2 branch 04
+MCC-C2,CB-48C05,high,accepted,MCC section 2 branch 05
+CB-48C05,K-48C05,high,accepted,MCC section 2 branch 05
+K-48C05,MOV-RHR-452C,high,accepted,MCC section 2 branch 05
+MCC-C2,CB-48C06,high,accepted,MCC section 2 branch 06
+CB-48C06,XFU-48C06,high,accepted,MCC section 2 branch 06
+XFU-48C06,PNL-PI-601C,high,accepted,MCC section 2 branch 06
+480V-CHGR-A-FEEDER,CHGR-125-1A,high,accepted,A charger feed to DC bus
+CHGR-125-1A,BUS-125DC-A,high,accepted,A charger feed to DC bus
+BAT-125-1A,BUS-125DC-A,high,accepted,A battery tap to DC bus
+BUS-125DC-A,INV-120-1A,high,accepted,A DC bus to RPS panel through inverter
+INV-120-1A,PNL-RPS-A,high,accepted,A DC bus to RPS panel through inverter
+PNL-RPS-A,RELAY-K501A,high,accepted,A RPS dashed/control route to relay
+PNL-RPS-A,XMTR-PT-501A,high,accepted,A RPS signal/control route to transmitter
+PNL-RPS-A,PNL-A/B-TIE,medium,accepted,visible PNL A/B tie dashed route
+PNL-A/B-TIE,PNL-RPS-B,medium,accepted,visible PNL A/B tie dashed route
+480V-CHGR-B-FEEDER,CHGR-125-1B,high,accepted,B charger feed to DC bus
+CHGR-125-1B,BUS-125DC-B,high,accepted,B charger feed to DC bus
+BAT-125-1B,BUS-125DC-B,high,accepted,B battery tap to DC bus
+BUS-125DC-B,INV-120-1B,high,accepted,B DC bus to RPS panel through inverter
+INV-120-1B,PNL-RPS-B,high,accepted,B DC bus to RPS panel through inverter
+PNL-RPS-B,RELAY-K501B,high,accepted,B RPS dashed/control route to relay
+PNL-RPS-B,XMTR-PT-501B,high,accepted,B RPS signal/control route to transmitter
+RELAY-K501A,TC-52-4A,medium,accepted,dashed control route from A relay to trip coil
+RELAY-K501B,TC-52-4A,high,accepted,dashed control route from B relay to trip coil
+RPS-TRIP-BUS,TC-52-4A,high,accepted,dashed trip bus route to trip coil

@@ -1,0 +1,14 @@
+original_label,final_label,decision,reason
+BUS-SWYD-230,BB-SWYD-230,rename,The raw top-left source bus text reads BB-SWYD-230; BUS-SWYD-230 was not retained as the final label.
+CB-SWYD-230,,reject_unsupported_node,No switchyard breaker symbol is drawn at the bus landing; the overlay/OCR label conflates the BB-SWYD-230 bus label with a breaker-like node.
+BUS-GEN-TERMINAL,GEN-MAIN-1-TERMINAL,rename_logical_node,"The shared conductor after CB-GEN-ISO ties GEN-MAIN-1 to the UAT primary taps, but it is not labeled as a busbar; final label names the generator terminal function."
+RPS-A-DASHED-NET,RPS-A-DASHED-NET,keep_limited_logical_node,"A shared Train A dashed bundle is visually justified for PLC-RPS-A, JB-RPS-A, and PNL-ANN-A; relay memberships without clear landings were dropped."
+RPS-B-DASHED-NET,RPS-B-DASHED-NET,keep_limited_logical_node,"A shared Train B dashed bundle is visually justified for PLC-RPS-B, JB-RPS-B, and PNL-ANN-B; relay memberships without clear landings were dropped."
+RELAY-K101,RELAY-K101,keep_component_drop_dashed_membership,"RELAY-K101 label/component is visually present, but its Train A dashed-net membership was dropped because the dashed line does not unambiguously land on a terminal."
+RELAY-K102,RELAY-K102,keep_component_drop_dashed_membership,"RELAY-K102 label/component is visually present, but its Train A dashed-net membership was dropped because the dashed line does not unambiguously land on a terminal."
+RELAY-K103,RELAY-K103,keep_component_drop_dashed_membership,"RELAY-K103 label/component is visually present, but its Train A dashed-net membership was dropped because the dashed line does not unambiguously land on a terminal."
+RELAY-K104,RELAY-K104,keep_component_drop_dashed_membership,"RELAY-K104 label/component is visually present, but its Train A dashed-net membership was dropped because the dashed line does not unambiguously land on a terminal."
+RELAY-K201,RELAY-K201,keep_component_drop_dashed_membership,"RELAY-K201 label/component is visually present, but its Train B dashed-net membership was dropped because the dashed line does not unambiguously land on a terminal."
+RELAY-K202,RELAY-K202,keep_component_drop_dashed_membership,"RELAY-K202 label/component is visually present, but its Train B dashed-net membership was dropped because the dashed line does not unambiguously land on a terminal."
+RELAY-K203,RELAY-K203,keep_component_drop_dashed_membership,"RELAY-K203 label/component is visually present, but its Train B dashed-net membership was dropped because the dashed line does not unambiguously land on a terminal."
+RELAY-K204,RELAY-K204,keep_component_drop_dashed_membership,"RELAY-K204 label/component is visually present, but its Train B dashed-net membership was dropped because the dashed line does not unambiguously land on a terminal."

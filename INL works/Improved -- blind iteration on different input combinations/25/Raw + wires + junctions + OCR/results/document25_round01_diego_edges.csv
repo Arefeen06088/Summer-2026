@@ -1,0 +1,212 @@
+source,target,edge_kind,confidence,evidence
+SWYD-115KV,FDR-13A,power,high,Top source bus tap drops to FDR-13A; raw W001 area and wire overlay align.
+FDR-13A,TR-UAT-1A,power,high,"Vertical feeder from FDR-13A to TR-UAT-1A, labelled around W002."
+TR-UAT-1A,CB-52-4A,power,high,"Vertical feeder from TR-UAT-1A to CB-52-4A, labelled around W003."
+CB-52-4A,BUS-4160-A,power,high,"CB-52-4A lower conductor lands on BUS-4160-A, labelled around W004."
+EDG-1A,CB-DG-1A,power,high,"EDG-1A generator drop to CB-DG-1A, labelled around W005."
+CB-DG-1A,BUS-4160-A,power,high,CB-DG-1A lower conductor taps BUS-4160-A with a visible junction dot.
+SWYD-115KV,FDR-13B,power,high,Top source bus tap drops to FDR-13B; raw W007 area and wire overlay align.
+FDR-13B,TR-UAT-1B,power,high,"Vertical feeder from FDR-13B to TR-UAT-1B, labelled around W008."
+TR-UAT-1B,CB-52-4B,power,high,"Vertical feeder from TR-UAT-1B to CB-52-4B, labelled around W009."
+CB-52-4B,BUS-4160-B,power,high,"CB-52-4B lower conductor lands on BUS-4160-B, labelled around W010."
+EDG-1B,CB-DG-1B,power,high,"EDG-1B generator drop to CB-DG-1B, labelled around W011."
+CB-DG-1B,BUS-4160-B,power,high,CB-DG-1B lower conductor taps BUS-4160-B with a visible junction dot.
+SWYD-115KV,TR-SAT-1,power,high,"Top source bus vertical drop to TR-SAT-1, labelled around W013."
+TR-SAT-1,CB-52-4C,power,high,"TR-SAT-1 lower conductor to CB-52-4C, labelled around W014."
+CB-52-4C,BUS-4160-C,power,high,CB-52-4C lower conductor lands on BUS-4160-C.
+EDG-1C,CB-DG-1C,power,high,"EDG-1C generator drop to CB-DG-1C, labelled around W016."
+CB-DG-1C,BUS-4160-C,power,high,"CB-DG-1C lower conductor taps BUS-4160-C, labelled around W017."
+BUS-4160-A,CB-TIE-AB,power,high,Right end of BUS-4160-A enters CB-TIE-AB via labelled tie conductor W018.
+CB-TIE-AB,BUS-4160-B,power,high,CB-TIE-AB exits to left end of BUS-4160-B via labelled tie conductor W019.
+BUS-4160-B,CB-TIE-BC,power,high,Right end of BUS-4160-B enters CB-TIE-BC via labelled tie conductor W020.
+CB-TIE-BC,BUS-4160-C,power,high,CB-TIE-BC exits to left end of BUS-4160-C via labelled tie conductor W021.
+BUS-4160-A,CB-4A01,power,high,Visible Train A BUS-4160-A tap to CB-4A01 in feeder branch 01.
+CB-4A01,DS-4A01,power,high,Vertical branch conductor from CB-4A01 to DS-4A01 in Train A feeder branch 01.
+DS-4A01,TR-480-1A,power,medium,First feeder visibly passes adjacent to TR-480-1A and continues to the 480 V transformer path.
+DS-4A01,MS-A01,power,high,Same first feeder vertical continues to MS-A01 above PUMP-RHR-P201A.
+MS-A01,PUMP-RHR-P201A,power,high,MS-A01 lower conductor feeds PUMP-RHR-P201A.
+BUS-4160-A,CB-4A02,power,high,Visible Train A BUS-4160-A tap to CB-4A02 in feeder branch 02.
+CB-4A02,DS-4A02,power,high,Vertical branch conductor from CB-4A02 to DS-4A02 in Train A feeder branch 02.
+DS-4A02,MS-A02,power,high,Feeder 4A02 drops from DS-4A02 to MS-A02.
+MS-A02,PUMP-CS-P202A,power,high,MS-A02 lower conductor feeds PUMP-CS-P202A.
+BUS-4160-A,CB-4A03,power,high,Visible Train A BUS-4160-A tap to CB-4A03 in feeder branch 03.
+CB-4A03,DS-4A03,power,high,Vertical branch conductor from CB-4A03 to DS-4A03 in Train A feeder branch 03.
+DS-4A03,TR-LC-A03,power,high,Feeder 4A03 drops from DS-4A03 to TR-LC-A03.
+TR-LC-A03,LC-480-A03,power,high,TR-LC-A03 lower conductor feeds LC-480-A03.
+BUS-4160-A,CB-4A04,power,high,Visible Train A BUS-4160-A tap to CB-4A04 in feeder branch 04.
+CB-4A04,DS-4A04,power,high,Vertical branch conductor from CB-4A04 to DS-4A04 in Train A feeder branch 04.
+DS-4A04,MS-A04,power,high,Feeder 4A04 drops from DS-4A04 to MS-A04.
+MS-A04,FAN-CR-401A,power,high,MS-A04 lower conductor feeds FAN-CR-401A.
+BUS-4160-A,CB-4A05,power,high,Visible Train A BUS-4160-A tap to CB-4A05 in feeder branch 05.
+CB-4A05,DS-4A05,power,high,Vertical branch conductor from CB-4A05 to DS-4A05 in Train A feeder branch 05.
+DS-4A05,PNL-ESF-A05,power,high,Feeder 4A05 drops from DS-4A05 to PNL-ESF-A05.
+PNL-ESF-A05,GND-ESF-A05,ground_reference,high,Dashed ground-reference conductor from PNL-ESF-A05 to GND-ESF-A05.
+BUS-4160-A,CB-4A06,power,high,Visible Train A BUS-4160-A tap to CB-4A06 in feeder branch 06.
+CB-4A06,DS-4A06,power,high,Vertical branch conductor from CB-4A06 to DS-4A06 in Train A feeder branch 06.
+DS-4A06,RECT-RPS-A06,power,high,Feeder 4A06 drops from DS-4A06 to RECT-RPS-A06.
+RECT-RPS-A06,INV-RPS-A06,dc_power,high,RECT-RPS-A06 lower conductor feeds INV-RPS-A06.
+BUS-4160-A,CB-4A07,power,high,Visible Train A BUS-4160-A tap to CB-4A07 in feeder branch 07.
+CB-4A07,DS-4A07,power,high,Vertical branch conductor from CB-4A07 to DS-4A07 in Train A feeder branch 07.
+DS-4A07,MS-A07,power,high,Feeder 4A07 drops from DS-4A07 to MS-A07.
+MS-A07,PUMP-AFW-P203A,power,high,MS-A07 lower conductor feeds PUMP-AFW-P203A.
+BUS-4160-A,CB-4A08,power,high,Visible Train A BUS-4160-A tap to CB-4A08 in feeder branch 08.
+CB-4A08,DS-4A08,power,high,Vertical branch conductor from CB-4A08 to DS-4A08 in Train A feeder branch 08.
+DS-4A08,TR-CTRL-A08,power,high,Feeder 4A08 drops from DS-4A08 to TR-CTRL-A08.
+TR-CTRL-A08,CP-CTRL-A08,power,high,TR-CTRL-A08 lower conductor feeds CP-CTRL-A08.
+TR-480-1A,CB-52-48A,power,high,TR-480-1A secondary conductor drops to CB-52-48A.
+CB-52-48A,BUS-480-1A,power,high,CB-52-48A lower conductor lands on named BUS-480-1A.
+BUS-4160-B,CB-4B01,power,high,Visible Train B BUS-4160-B tap to CB-4B01 in feeder branch 01.
+CB-4B01,DS-4B01,power,high,Vertical branch conductor from CB-4B01 to DS-4B01 in Train B feeder branch 01.
+DS-4B01,TR-480-1B,power,medium,First feeder visibly passes adjacent to TR-480-1B and continues to the 480 V transformer path.
+DS-4B01,MS-B01,power,high,Same first feeder vertical continues to MS-B01 above PUMP-RHR-P201B.
+MS-B01,PUMP-RHR-P201B,power,high,MS-B01 lower conductor feeds PUMP-RHR-P201B.
+BUS-4160-B,CB-4B02,power,high,Visible Train B BUS-4160-B tap to CB-4B02 in feeder branch 02.
+CB-4B02,DS-4B02,power,high,Vertical branch conductor from CB-4B02 to DS-4B02 in Train B feeder branch 02.
+DS-4B02,MS-B02,power,high,Feeder 4B02 drops from DS-4B02 to MS-B02.
+MS-B02,PUMP-CS-P202B,power,high,MS-B02 lower conductor feeds PUMP-CS-P202B.
+BUS-4160-B,CB-4B03,power,high,Visible Train B BUS-4160-B tap to CB-4B03 in feeder branch 03.
+CB-4B03,DS-4B03,power,high,Vertical branch conductor from CB-4B03 to DS-4B03 in Train B feeder branch 03.
+DS-4B03,TR-LC-B03,power,high,Feeder 4B03 drops from DS-4B03 to TR-LC-B03.
+TR-LC-B03,LC-480-B03,power,high,TR-LC-B03 lower conductor feeds LC-480-B03.
+BUS-4160-B,CB-4B04,power,high,Visible Train B BUS-4160-B tap to CB-4B04 in feeder branch 04.
+CB-4B04,DS-4B04,power,high,Vertical branch conductor from CB-4B04 to DS-4B04 in Train B feeder branch 04.
+DS-4B04,MS-B04,power,high,Feeder 4B04 drops from DS-4B04 to MS-B04.
+MS-B04,FAN-CR-401B,power,high,MS-B04 lower conductor feeds FAN-CR-401B.
+BUS-4160-B,CB-4B05,power,high,Visible Train B BUS-4160-B tap to CB-4B05 in feeder branch 05.
+CB-4B05,DS-4B05,power,high,Vertical branch conductor from CB-4B05 to DS-4B05 in Train B feeder branch 05.
+DS-4B05,PNL-ESF-B05,power,high,Feeder 4B05 drops from DS-4B05 to PNL-ESF-B05.
+PNL-ESF-B05,GND-ESF-B05,ground_reference,high,Dashed ground-reference conductor from PNL-ESF-B05 to GND-ESF-B05.
+BUS-4160-B,CB-4B06,power,high,Visible Train B BUS-4160-B tap to CB-4B06 in feeder branch 06.
+CB-4B06,DS-4B06,power,high,Vertical branch conductor from CB-4B06 to DS-4B06 in Train B feeder branch 06.
+DS-4B06,RECT-RPS-B06,power,high,Feeder 4B06 drops from DS-4B06 to RECT-RPS-B06.
+RECT-RPS-B06,INV-RPS-B06,dc_power,high,RECT-RPS-B06 lower conductor feeds INV-RPS-B06.
+BUS-4160-B,CB-4B07,power,high,Visible Train B BUS-4160-B tap to CB-4B07 in feeder branch 07.
+CB-4B07,DS-4B07,power,high,Vertical branch conductor from CB-4B07 to DS-4B07 in Train B feeder branch 07.
+DS-4B07,MS-B07,power,high,Feeder 4B07 drops from DS-4B07 to MS-B07.
+MS-B07,PUMP-AFW-P203B,power,high,MS-B07 lower conductor feeds PUMP-AFW-P203B.
+BUS-4160-B,CB-4B08,power,high,Visible Train B BUS-4160-B tap to CB-4B08 in feeder branch 08.
+CB-4B08,DS-4B08,power,high,Vertical branch conductor from CB-4B08 to DS-4B08 in Train B feeder branch 08.
+DS-4B08,TR-CTRL-B08,power,high,Feeder 4B08 drops from DS-4B08 to TR-CTRL-B08.
+TR-CTRL-B08,CP-CTRL-B08,power,high,TR-CTRL-B08 lower conductor feeds CP-CTRL-B08.
+TR-480-1B,CB-52-48B,power,high,TR-480-1B secondary conductor drops to CB-52-48B.
+CB-52-48B,BUS-480-1B,power,high,CB-52-48B lower conductor lands on named BUS-480-1B.
+BUS-4160-C,CB-4C01,power,high,Visible Train C BUS-4160-C tap to CB-4C01 in feeder branch 01.
+CB-4C01,DS-4C01,power,high,Vertical branch conductor from CB-4C01 to DS-4C01 in Train C feeder branch 01.
+DS-4C01,TR-480-1C,power,medium,First feeder visibly passes adjacent to TR-480-1C and continues to the 480 V transformer path.
+DS-4C01,MS-C01,power,high,Same first feeder vertical continues to MS-C01 above PUMP-RHR-P201C.
+MS-C01,PUMP-RHR-P201C,power,high,MS-C01 lower conductor feeds PUMP-RHR-P201C.
+BUS-4160-C,CB-4C02,power,high,Visible Train C BUS-4160-C tap to CB-4C02 in feeder branch 02.
+CB-4C02,DS-4C02,power,high,Vertical branch conductor from CB-4C02 to DS-4C02 in Train C feeder branch 02.
+DS-4C02,MS-C02,power,high,Feeder 4C02 drops from DS-4C02 to MS-C02.
+MS-C02,PUMP-CS-P202C,power,high,MS-C02 lower conductor feeds PUMP-CS-P202C.
+BUS-4160-C,CB-4C03,power,high,Visible Train C BUS-4160-C tap to CB-4C03 in feeder branch 03.
+CB-4C03,DS-4C03,power,high,Vertical branch conductor from CB-4C03 to DS-4C03 in Train C feeder branch 03.
+DS-4C03,TR-LC-C03,power,high,Feeder 4C03 drops from DS-4C03 to TR-LC-C03.
+TR-LC-C03,LC-480-C03,power,high,TR-LC-C03 lower conductor feeds LC-480-C03.
+BUS-4160-C,CB-4C04,power,high,Visible Train C BUS-4160-C tap to CB-4C04 in feeder branch 04.
+CB-4C04,DS-4C04,power,high,Vertical branch conductor from CB-4C04 to DS-4C04 in Train C feeder branch 04.
+DS-4C04,MS-C04,power,high,Feeder 4C04 drops from DS-4C04 to MS-C04.
+MS-C04,FAN-CR-401C,power,high,MS-C04 lower conductor feeds FAN-CR-401C.
+BUS-4160-C,CB-4C05,power,high,Visible Train C BUS-4160-C tap to CB-4C05 in feeder branch 05.
+CB-4C05,DS-4C05,power,high,Vertical branch conductor from CB-4C05 to DS-4C05 in Train C feeder branch 05.
+DS-4C05,PNL-ESF-C05,power,high,Feeder 4C05 drops from DS-4C05 to PNL-ESF-C05.
+PNL-ESF-C05,GND-ESF-C05,ground_reference,high,Dashed ground-reference conductor from PNL-ESF-C05 to GND-ESF-C05.
+BUS-4160-C,CB-4C06,power,high,Visible Train C BUS-4160-C tap to CB-4C06 in feeder branch 06.
+CB-4C06,DS-4C06,power,high,Vertical branch conductor from CB-4C06 to DS-4C06 in Train C feeder branch 06.
+DS-4C06,RECT-RPS-C06,power,high,Feeder 4C06 drops from DS-4C06 to RECT-RPS-C06.
+RECT-RPS-C06,INV-RPS-C06,dc_power,high,RECT-RPS-C06 lower conductor feeds INV-RPS-C06.
+BUS-4160-C,CB-4C07,power,high,Visible Train C BUS-4160-C tap to CB-4C07 in feeder branch 07.
+CB-4C07,DS-4C07,power,high,Vertical branch conductor from CB-4C07 to DS-4C07 in Train C feeder branch 07.
+DS-4C07,MS-C07,power,high,Feeder 4C07 drops from DS-4C07 to MS-C07.
+MS-C07,PUMP-AFW-P203C,power,high,MS-C07 lower conductor feeds PUMP-AFW-P203C.
+BUS-4160-C,CB-4C08,power,high,Visible Train C BUS-4160-C tap to CB-4C08 in feeder branch 08.
+CB-4C08,DS-4C08,power,high,Vertical branch conductor from CB-4C08 to DS-4C08 in Train C feeder branch 08.
+DS-4C08,TR-CTRL-C08,power,high,Feeder 4C08 drops from DS-4C08 to TR-CTRL-C08.
+TR-CTRL-C08,CP-CTRL-C08,power,high,TR-CTRL-C08 lower conductor feeds CP-CTRL-C08.
+TR-480-1C,CB-52-48C,power,high,TR-480-1C secondary conductor drops to CB-52-48C.
+CB-52-48C,BUS-480-1C,power,high,CB-52-48C lower conductor lands on named BUS-480-1C.
+BUS-480-1A,MCC-A1,power,high,Named BUS-480-1A vertical feeder lands on MCC-A1 busbar; duplicate visible taps collapsed to one bus edge.
+MCC-A1,MCC-A2,power,high,Vertical 480 V feeder continues from MCC-A1 busbar to MCC-A2 busbar.
+MCC-A1,CB-48A01,power,high,MCC-A1 busbar tap feeds CB-48A01.
+CB-48A01,MS-48A01,power,high,CB-48A01 lower conductor feeds MS-48A01 in MCC Train A top row.
+MS-48A01,PUMP-CVC-P301A,power,high,MS-48A01 lower/routed conductor feeds PUMP-CVC-P301A; dashed where control/interlock branch is drawn.
+MCC-A1,CB-48A02,power,high,MCC-A1 busbar tap feeds CB-48A02.
+CB-48A02,K-48A02,control_interlock_trip,high,CB-48A02 lower conductor feeds K-48A02 in MCC Train A top row.
+K-48A02,MOV-CS-451A,control_interlock_trip,high,K-48A02 lower/routed conductor feeds MOV-CS-451A; dashed where control/interlock branch is drawn.
+MCC-A1,CB-48A03,power,high,MCC-A1 busbar tap feeds CB-48A03.
+CB-48A03,MS-48A03,power,high,CB-48A03 lower conductor feeds MS-48A03 in MCC Train A top row.
+MS-48A03,FAN-HVAC-501A,power,high,MS-48A03 lower/routed conductor feeds FAN-HVAC-501A; dashed where control/interlock branch is drawn.
+MCC-A2,CB-48A04,power,high,MCC-A2 busbar tap feeds CB-48A04.
+CB-48A04,MS-48A04,power,high,CB-48A04 lower conductor feeds MS-48A04 in MCC Train A lower row.
+MS-48A04,PUMP-SUMP-P302A,power,high,MS-48A04 lower/routed conductor feeds PUMP-SUMP-P302A; dashed where control/interlock branch is drawn.
+MCC-A2,CB-48A05,power,high,MCC-A2 busbar tap feeds CB-48A05.
+CB-48A05,K-48A05,control_interlock_trip,high,CB-48A05 lower conductor feeds K-48A05 in MCC Train A lower row.
+K-48A05,MOV-RHR-452A,control_interlock_trip,high,K-48A05 lower/routed conductor feeds MOV-RHR-452A; dashed where control/interlock branch is drawn.
+MCC-A2,CB-48A06,power,high,MCC-A2 busbar tap feeds CB-48A06.
+CB-48A06,XFU-48A06,control_interlock_trip,high,CB-48A06 lower conductor feeds XFU-48A06 in MCC Train A lower row.
+XFU-48A06,PNL-PI-601A,control_interlock_trip,high,XFU-48A06 lower/routed conductor feeds PNL-PI-601A; dashed where control/interlock branch is drawn.
+BUS-480-1B,MCC-B1,power,high,Named BUS-480-1B vertical feeder lands on MCC-B1 busbar; duplicate visible taps collapsed to one bus edge.
+MCC-B1,MCC-B2,power,high,Vertical 480 V feeder continues from MCC-B1 busbar to MCC-B2 busbar.
+MCC-B1,CB-48B01,power,high,MCC-B1 busbar tap feeds CB-48B01.
+CB-48B01,MS-48B01,power,high,CB-48B01 lower conductor feeds MS-48B01 in MCC Train B top row.
+MS-48B01,PUMP-CVC-P301B,power,high,MS-48B01 lower/routed conductor feeds PUMP-CVC-P301B; dashed where control/interlock branch is drawn.
+MCC-B1,CB-48B02,power,high,MCC-B1 busbar tap feeds CB-48B02.
+CB-48B02,K-48B02,control_interlock_trip,high,CB-48B02 lower conductor feeds K-48B02 in MCC Train B top row.
+K-48B02,MOV-CS-451B,control_interlock_trip,high,K-48B02 lower/routed conductor feeds MOV-CS-451B; dashed where control/interlock branch is drawn.
+MCC-B1,CB-48B03,power,high,MCC-B1 busbar tap feeds CB-48B03.
+CB-48B03,MS-48B03,power,high,CB-48B03 lower conductor feeds MS-48B03 in MCC Train B top row.
+MS-48B03,FAN-HVAC-501B,power,high,MS-48B03 lower/routed conductor feeds FAN-HVAC-501B; dashed where control/interlock branch is drawn.
+MCC-B2,CB-48B04,power,high,MCC-B2 busbar tap feeds CB-48B04.
+CB-48B04,MS-48B04,power,high,CB-48B04 lower conductor feeds MS-48B04 in MCC Train B lower row.
+MS-48B04,PUMP-SUMP-P302B,power,high,MS-48B04 lower/routed conductor feeds PUMP-SUMP-P302B; dashed where control/interlock branch is drawn.
+MCC-B2,CB-48B05,power,high,MCC-B2 busbar tap feeds CB-48B05.
+CB-48B05,K-48B05,control_interlock_trip,high,CB-48B05 lower conductor feeds K-48B05 in MCC Train B lower row.
+K-48B05,MOV-RHR-452B,control_interlock_trip,high,K-48B05 lower/routed conductor feeds MOV-RHR-452B; dashed where control/interlock branch is drawn.
+MCC-B2,CB-48B06,power,high,MCC-B2 busbar tap feeds CB-48B06.
+CB-48B06,XFU-48B06,control_interlock_trip,high,CB-48B06 lower conductor feeds XFU-48B06 in MCC Train B lower row.
+XFU-48B06,PNL-PI-601B,control_interlock_trip,high,XFU-48B06 lower/routed conductor feeds PNL-PI-601B; dashed where control/interlock branch is drawn.
+BUS-480-1C,MCC-C1,power,high,Named BUS-480-1C vertical feeder lands on MCC-C1 busbar; duplicate visible taps collapsed to one bus edge.
+MCC-C1,MCC-C2,power,high,Vertical 480 V feeder continues from MCC-C1 busbar to MCC-C2 busbar.
+MCC-C1,CB-48C01,power,high,MCC-C1 busbar tap feeds CB-48C01.
+CB-48C01,MS-48C01,power,high,CB-48C01 lower conductor feeds MS-48C01 in MCC Train C top row.
+MS-48C01,PUMP-CVC-P301C,power,high,MS-48C01 lower/routed conductor feeds PUMP-CVC-P301C; dashed where control/interlock branch is drawn.
+MCC-C1,CB-48C02,power,high,MCC-C1 busbar tap feeds CB-48C02.
+CB-48C02,K-48C02,control_interlock_trip,high,CB-48C02 lower conductor feeds K-48C02 in MCC Train C top row.
+K-48C02,MOV-CS-451C,control_interlock_trip,high,K-48C02 lower/routed conductor feeds MOV-CS-451C; dashed where control/interlock branch is drawn.
+MCC-C1,CB-48C03,power,high,MCC-C1 busbar tap feeds CB-48C03.
+CB-48C03,MS-48C03,power,high,CB-48C03 lower conductor feeds MS-48C03 in MCC Train C top row.
+MS-48C03,FAN-HVAC-501C,power,high,MS-48C03 lower/routed conductor feeds FAN-HVAC-501C; dashed where control/interlock branch is drawn.
+MCC-C2,CB-48C04,power,high,MCC-C2 busbar tap feeds CB-48C04.
+CB-48C04,MS-48C04,power,high,CB-48C04 lower conductor feeds MS-48C04 in MCC Train C lower row.
+MS-48C04,PUMP-SUMP-P302C,power,high,MS-48C04 lower/routed conductor feeds PUMP-SUMP-P302C; dashed where control/interlock branch is drawn.
+MCC-C2,CB-48C05,power,high,MCC-C2 busbar tap feeds CB-48C05.
+CB-48C05,K-48C05,control_interlock_trip,high,CB-48C05 lower conductor feeds K-48C05 in MCC Train C lower row.
+K-48C05,MOV-RHR-452C,control_interlock_trip,high,K-48C05 lower/routed conductor feeds MOV-RHR-452C; dashed where control/interlock branch is drawn.
+MCC-C2,CB-48C06,power,high,MCC-C2 busbar tap feeds CB-48C06.
+CB-48C06,XFU-48C06,control_interlock_trip,high,CB-48C06 lower conductor feeds XFU-48C06 in MCC Train C lower row.
+XFU-48C06,PNL-PI-601C,control_interlock_trip,high,XFU-48C06 lower/routed conductor feeds PNL-PI-601C; dashed where control/interlock branch is drawn.
+480V CHGR-A FEEDER,CHGR-125-1A,external_feeder,high,Dashed arrow labelled 480V CHGR-A FEEDER enters CHGR-125-1A left side.
+480V CHGR-B FEEDER,CHGR-125-1B,external_feeder,medium,Dashed arrow labelled 480V CHGR-B FEEDER is routed through the lower lane toward the CHGR-125-1B area; endpoint is less pin-clean than A feeder.
+CHGR-125-1A,BUS-125DC-A,dc_power,high,"CHGR-125-1A lower/right conductor lands on BUS-125DC-A, labelled W188 area."
+BAT-125-1A,BUS-125DC-A,dc_power,high,"BAT-125-1A upper conductor ties into BUS-125DC-A, labelled W187 area."
+BUS-125DC-A,INV-120-1A,dc_power,high,BUS-125DC-A thick bus feeds INV-120-1A left DC/AC input.
+INV-120-1A,PNL-RPS-A,power,high,"INV-120-1A right output conductor feeds PNL-RPS-A, labelled W190 area."
+PNL-RPS-A,RELAY-K501A,control_interlock_trip,high,"Dashed control/interlock conductor from PNL-RPS-A to RELAY-K501A, labelled W191."
+PNL-RPS-A,XMTR-PT-501A,instrument_signal,high,"Dotted vertical instrument-signal line from PNL-RPS-A to XMTR-PT-501A, labelled W193/W201 area."
+PNL-RPS-A,CHGR-125-1B,control_interlock_trip,medium,Dashed lower control line adjacent to PNL-RPS-A is labelled CHGR-125-1B and visually enters the charger block.
+PNL-RPS-A,PNL A/B TIE,control_interlock_trip,high,Named dashed PNL A/B TIE leaves the PNL-RPS-A/CHGR-125-1B control lane.
+PNL A/B TIE,PNL-RPS-B,control_interlock_trip,high,Named dashed PNL A/B TIE routes to the PNL-RPS-B area.
+CHGR-125-1B,BUS-125DC-B,dc_power,high,"CHGR-125-1B lower conductor drops to BUS-125DC-B, labelled W195 area."
+BAT-125-1B,BUS-125DC-B,dc_power,high,"BAT-125-1B upper conductor ties into BUS-125DC-B, labelled W194 area."
+BUS-125DC-B,INV-120-1B,dc_power,high,BUS-125DC-B thick bus feeds INV-120-1B left DC/AC input.
+INV-120-1B,PNL-RPS-B,power,high,"INV-120-1B right output conductor feeds PNL-RPS-B, labelled W197."
+PNL-RPS-B,RELAY-K501B,control_interlock_trip,high,"Dashed control/interlock conductor from PNL-RPS-B to RELAY-K501B, labelled W198."
+PNL-RPS-B,XMTR-PT-501B,instrument_signal,high,"Dotted vertical instrument-signal line from PNL-RPS-B to XMTR-PT-501B, labelled W199."
+RELAY-K501A,RPS TRIP BUS,control_interlock_trip,medium,Dashed relay trip/control line W192 aligns with the named RPS TRIP BUS routing lane.
+RELAY-K501B,RPS TRIP BUS,control_interlock_trip,medium,Dashed relay trip/control line W202 routes toward the named RPS TRIP BUS and TC-52-4A.
+TC-52-4A,RPS TRIP BUS,control_interlock_trip,high,TC-52-4A trip coil has dashed conductors entering the named RPS TRIP BUS lane.
+TC-52-4A,CB-52-4A,control_interlock_trip,low,Tag TC-52-4A visually references breaker CB-52-4A; no direct same-sheet hardwire beyond routed trip-bus control path.
+CB-4A01,RPS TRIP BUS,control_interlock_trip,low,"Train A first feeder has dashed interlock line W022 into the routed control lane; possible trip-bus association, lower confidence."
+CB-4B01,RPS TRIP BUS,control_interlock_trip,low,"Train B first feeder has dashed interlock line W025 into the routed control lane; possible trip-bus association, lower confidence."
+CB-4C01,RPS TRIP BUS,control_interlock_trip,medium,Train C first feeder dashed line W028 visually shares the named RPS TRIP BUS lane near the arrow.
+RELAY-K501A,INV-120-1B,power,medium,Solid routed output/control line from the RELAY-K501A-labelled run drops toward INV-120-1B; plausible visible connection in bottom band.

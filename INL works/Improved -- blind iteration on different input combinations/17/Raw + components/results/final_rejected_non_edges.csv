@@ -1,0 +1,13 @@
+source,target,reason
+BUS-4160-A,BUS-4160-B,not directly shorted; the visible connection passes through inline normally-open breaker CB-TIE-4AB
+BUS-480-A,BUS-480-B,not directly shorted; the visible connection passes through inline normally-open breaker CB-TIE-480AB
+BUS-125DC-A,BUS-125DC-B,not directly shorted; the visible connection passes through inline normally-open breaker CB-DCTIE-AB
+PNL-DCS,PNL-ANN,nearby panels share an enclosure but no direct line segment between the labeled symbols is visible
+MASTER-TERMINAL-BLOCKS,BUS-480-A,near vertical dashed routing crosses/approaches the 480 V bus area without a black termination dot
+RPS-ESF-TRIP-ROUTING-SIDE-CHANNELS,BUS-480-B,routing note is adjacent to dashed side-channel lines and does not terminate on the solid 480 V bus
+MASTER-TERMINAL-BLOCKS,CB-TIE-480AB,vertical dashed runs from the terminal-block area pass near/cross the 480 V tie region but do not visibly terminate on CB-TIE-480AB; crossings without dots are not junctions
+STS-120-A,PNL-ESF-A,the dashed output from STS-120-A visibly routes to PNL-RPS-A; no direct dashed termination on PNL-ESF-A is drawn
+STS-120-B,PNL-ESF-B,the dashed output from STS-120-B visibly routes to PNL-RPS-B; no direct dashed termination on PNL-ESF-B is drawn
+WIREWAY-A-CONTROL-LANES-2380-2420,CB-DC-A,the wireway label is a route/callout beside the solid side run; it does not visibly terminate on CB-DC-A
+WIREWAY-B-CONTROL-LANES-2380-2420,CB-DC-B,the wireway label is a route/callout beside the solid side run; it does not visibly terminate on CB-DC-B
+MASTER-TERMINAL-BLOCKS,CB-TR-B1,removed from asserted edges because the B-side dashed control run is near the master terminal block area but is not drawn into or onto that block

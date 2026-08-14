@@ -1,0 +1,22 @@
+source,target,line_type,status,evidence
+BUS-13K-A,BUS-13K-B,P,uncertain_excluded,Tie breaker CB-TIE-13K lies between the bus sections; no direct bus-to-bus edge.
+BUS-416-A,BUS-416-B,P,uncertain_excluded,Tie breaker CB-TIE-416 lies between the bus sections; no direct bus-to-bus edge.
+BUS-480-B,BUS-480-C,P,uncertain_excluded,Tie breaker CB-TIE-480 lies between the load-center buses; no direct bus-to-bus edge.
+BUS-480-C,BUS-480-D,P,uncertain_excluded,No visible tie or junction dot between BUS-480-C and BUS-480-D.
+BUS-125DCA,BUS-125DCB,DC,uncertain_excluded,Separate 125 VDC buses; no visible inter-bus jumper.
+GEN-M1,UNLABELED_SOURCE_BLOCK,P,uncertain_excluded,Small inline source square is visible but unlabeled and was not promoted to a matrix node.
+DG-1A,UNLABELED_DG1A_BLOCK,P,uncertain_excluded,Small inline DG square is visible but unlabeled and was not promoted to a matrix node.
+DG-1B,UNLABELED_DG1B_BLOCK,P,uncertain_excluded,Small inline DG square is visible but unlabeled and was not promoted to a matrix node.
+HTR-PZR-01A,RECT-125A,P,uncertain_excluded,Tight crop shows RECT-125A is fed by a separate BUS-480-A solid tap; HTR-PZR-01A is on a dashed control branch.
+MOV-FCV-022C,RECT-125B,P,uncertain_excluded,MOV-FCV-022C is on a dashed control branch; RECT-125B feed is a separate solid route.
+CB-48C6,RECT-125B,P,uncertain_excluded,"RECT-125B feed comes from the BUS-480-C end route, not through CB-48C6."
+BAT-125A,BUS-125DCA,DC,uncertain_excluded,No direct battery-to-125DCA bus tap is visible.
+CHGR-125A,BUS-125DCA,DC,uncertain_excluded,No direct charger-to-125DCA bus tap is visible.
+BAT-125B,BUS-125DCB,DC,uncertain_excluded,No direct battery-to-125DCB bus tap is visible.
+CHGR-125B,BUS-125DCB,DC,uncertain_excluded,No direct charger-to-125DCB bus tap is visible.
+INV-UPS-A,AC_OUTPUT_NODE,SIG,uncertain_excluded,"AC side is labeled inside INV-UPS-A, but no external output wire is visible."
+INV-UPS-B,AC_OUTPUT_NODE,SIG,uncertain_excluded,"AC side is labeled inside INV-UPS-B, but no external output wire is visible."
+RELAY-K105,XA-730A,SIG,uncertain_excluded,Separate ESFAS-A branches; no connecting line between RELAY-K105 and XA-730A.
+RELAY-K107,XA-730B,SIG,uncertain_excluded,Separate ESFAS-B branches; no connecting line between RELAY-K107 and XA-730B.
+RELAY-K106,FT-611B,CTRL,uncertain_excluded,A/B ESF interlock passes without a junction dot or tap to FT-611B.
+RELAY-K108,FT-611A,CTRL,uncertain_excluded,A/B ESF interlock passes without a junction dot or tap to FT-611A.

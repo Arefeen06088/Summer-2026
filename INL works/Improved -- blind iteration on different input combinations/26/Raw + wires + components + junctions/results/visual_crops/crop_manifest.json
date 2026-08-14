@@ -1,0 +1,1495 @@
+{
+  "base": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions",
+  "sources": {
+    "raw": {
+      "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\raw -- synthetic_npp_electrical_schematic_v3(1).png",
+      "size": [
+        7000,
+        4334
+      ],
+      "mode": "RGB"
+    },
+    "components": {
+      "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\detected_components_overlay.png",
+      "size": [
+        7000,
+        4334
+      ],
+      "mode": "RGB"
+    },
+    "wire_nodes": {
+      "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\wire_nodes_overlay.png",
+      "size": [
+        7000,
+        4334
+      ],
+      "mode": "RGB"
+    },
+    "wires": {
+      "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\wires_mask_overlay.png",
+      "size": [
+        7000,
+        4334
+      ],
+      "mode": "RGB"
+    }
+  },
+  "crops": [
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_full_thumb.png",
+      "box": [
+        0,
+        0,
+        7000,
+        4334
+      ],
+      "size": [
+        1800,
+        1114
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_top_left_train.png",
+      "box": [
+        180,
+        300,
+        3000,
+        1600
+      ],
+      "size": [
+        2820,
+        1300
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_top_right_train.png",
+      "box": [
+        3150,
+        300,
+        5800,
+        1600
+      ],
+      "size": [
+        2650,
+        1300
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_middle_left_train.png",
+      "box": [
+        180,
+        1500,
+        3000,
+        2850
+      ],
+      "size": [
+        2820,
+        1350
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_middle_right_train.png",
+      "box": [
+        3150,
+        1500,
+        5800,
+        2850
+      ],
+      "size": [
+        2650,
+        1350
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_bottom_left_train.png",
+      "box": [
+        180,
+        2800,
+        3000,
+        4210
+      ],
+      "size": [
+        2820,
+        1410
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_bottom_right_train.png",
+      "box": [
+        3150,
+        2800,
+        5800,
+        4210
+      ],
+      "size": [
+        2650,
+        1410
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_left_top_bus_close.png",
+      "box": [
+        250,
+        650,
+        2850,
+        1450
+      ],
+      "size": [
+        2600,
+        800
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_right_top_bus_close.png",
+      "box": [
+        3200,
+        650,
+        5750,
+        1450
+      ],
+      "size": [
+        2550,
+        800
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_left_middle_loads_close.png",
+      "box": [
+        250,
+        1750,
+        2850,
+        2750
+      ],
+      "size": [
+        2600,
+        1000
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_right_middle_loads_close.png",
+      "box": [
+        3200,
+        1750,
+        5750,
+        2750
+      ],
+      "size": [
+        2550,
+        1000
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_left_bottom_control_close.png",
+      "box": [
+        250,
+        2750,
+        2850,
+        4200
+      ],
+      "size": [
+        2600,
+        1450
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_right_bottom_control_close.png",
+      "box": [
+        3200,
+        2750,
+        5750,
+        4200
+      ],
+      "size": [
+        2550,
+        1450
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_center_ties.png",
+      "box": [
+        2850,
+        650,
+        3300,
+        3300
+      ],
+      "size": [
+        450,
+        2650
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_title_block.png",
+      "box": [
+        6000,
+        3275,
+        6980,
+        4260
+      ],
+      "size": [
+        980,
+        985
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_legend_notes.png",
+      "box": [
+        6000,
+        750,
+        6980,
+        2500
+      ],
+      "size": [
+        980,
+        1750
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_revisions.png",
+      "box": [
+        6000,
+        180,
+        6980,
+        760
+      ],
+      "size": [
+        980,
+        580
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_top_sources_full.png",
+      "box": [
+        250,
+        120,
+        5850,
+        900
+      ],
+      "size": [
+        5600,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_top_sources_left.png",
+      "box": [
+        250,
+        120,
+        1600,
+        900
+      ],
+      "size": [
+        1350,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_top_sources_mid.png",
+      "box": [
+        1600,
+        120,
+        3500,
+        900
+      ],
+      "size": [
+        1900,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_top_sources_right.png",
+      "box": [
+        3500,
+        120,
+        5850,
+        900
+      ],
+      "size": [
+        2350,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_bus_ties_close.png",
+      "box": [
+        2600,
+        650,
+        3650,
+        3450
+      ],
+      "size": [
+        1050,
+        2800
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_lower_left_control_full.png",
+      "box": [
+        250,
+        2550,
+        3100,
+        4300
+      ],
+      "size": [
+        2850,
+        1750
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_lower_right_control_full.png",
+      "box": [
+        3150,
+        2550,
+        5950,
+        4300
+      ],
+      "size": [
+        2800,
+        1750
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_rps_panel_a_close.png",
+      "box": [
+        3900,
+        2750,
+        5400,
+        3650
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_rps_panel_b_close.png",
+      "box": [
+        4850,
+        2750,
+        6350,
+        3650
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_rps_pt_a_close.png",
+      "box": [
+        3900,
+        3350,
+        5400,
+        4250
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\raw_rps_pt_b_close.png",
+      "box": [
+        4850,
+        3350,
+        6350,
+        4250
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_full_thumb.png",
+      "box": [
+        0,
+        0,
+        7000,
+        4334
+      ],
+      "size": [
+        1800,
+        1114
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_top_left_train.png",
+      "box": [
+        180,
+        300,
+        3000,
+        1600
+      ],
+      "size": [
+        2820,
+        1300
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_top_right_train.png",
+      "box": [
+        3150,
+        300,
+        5800,
+        1600
+      ],
+      "size": [
+        2650,
+        1300
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_middle_left_train.png",
+      "box": [
+        180,
+        1500,
+        3000,
+        2850
+      ],
+      "size": [
+        2820,
+        1350
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_middle_right_train.png",
+      "box": [
+        3150,
+        1500,
+        5800,
+        2850
+      ],
+      "size": [
+        2650,
+        1350
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_bottom_left_train.png",
+      "box": [
+        180,
+        2800,
+        3000,
+        4210
+      ],
+      "size": [
+        2820,
+        1410
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_bottom_right_train.png",
+      "box": [
+        3150,
+        2800,
+        5800,
+        4210
+      ],
+      "size": [
+        2650,
+        1410
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_left_top_bus_close.png",
+      "box": [
+        250,
+        650,
+        2850,
+        1450
+      ],
+      "size": [
+        2600,
+        800
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_right_top_bus_close.png",
+      "box": [
+        3200,
+        650,
+        5750,
+        1450
+      ],
+      "size": [
+        2550,
+        800
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_left_middle_loads_close.png",
+      "box": [
+        250,
+        1750,
+        2850,
+        2750
+      ],
+      "size": [
+        2600,
+        1000
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_right_middle_loads_close.png",
+      "box": [
+        3200,
+        1750,
+        5750,
+        2750
+      ],
+      "size": [
+        2550,
+        1000
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_left_bottom_control_close.png",
+      "box": [
+        250,
+        2750,
+        2850,
+        4200
+      ],
+      "size": [
+        2600,
+        1450
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_right_bottom_control_close.png",
+      "box": [
+        3200,
+        2750,
+        5750,
+        4200
+      ],
+      "size": [
+        2550,
+        1450
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_center_ties.png",
+      "box": [
+        2850,
+        650,
+        3300,
+        3300
+      ],
+      "size": [
+        450,
+        2650
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_title_block.png",
+      "box": [
+        6000,
+        3275,
+        6980,
+        4260
+      ],
+      "size": [
+        980,
+        985
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_legend_notes.png",
+      "box": [
+        6000,
+        750,
+        6980,
+        2500
+      ],
+      "size": [
+        980,
+        1750
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_revisions.png",
+      "box": [
+        6000,
+        180,
+        6980,
+        760
+      ],
+      "size": [
+        980,
+        580
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_top_sources_full.png",
+      "box": [
+        250,
+        120,
+        5850,
+        900
+      ],
+      "size": [
+        5600,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_top_sources_left.png",
+      "box": [
+        250,
+        120,
+        1600,
+        900
+      ],
+      "size": [
+        1350,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_top_sources_mid.png",
+      "box": [
+        1600,
+        120,
+        3500,
+        900
+      ],
+      "size": [
+        1900,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_top_sources_right.png",
+      "box": [
+        3500,
+        120,
+        5850,
+        900
+      ],
+      "size": [
+        2350,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_bus_ties_close.png",
+      "box": [
+        2600,
+        650,
+        3650,
+        3450
+      ],
+      "size": [
+        1050,
+        2800
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_lower_left_control_full.png",
+      "box": [
+        250,
+        2550,
+        3100,
+        4300
+      ],
+      "size": [
+        2850,
+        1750
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_lower_right_control_full.png",
+      "box": [
+        3150,
+        2550,
+        5950,
+        4300
+      ],
+      "size": [
+        2800,
+        1750
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_rps_panel_a_close.png",
+      "box": [
+        3900,
+        2750,
+        5400,
+        3650
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_rps_panel_b_close.png",
+      "box": [
+        4850,
+        2750,
+        6350,
+        3650
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_rps_pt_a_close.png",
+      "box": [
+        3900,
+        3350,
+        5400,
+        4250
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\components_rps_pt_b_close.png",
+      "box": [
+        4850,
+        3350,
+        6350,
+        4250
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_full_thumb.png",
+      "box": [
+        0,
+        0,
+        7000,
+        4334
+      ],
+      "size": [
+        1800,
+        1114
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_top_left_train.png",
+      "box": [
+        180,
+        300,
+        3000,
+        1600
+      ],
+      "size": [
+        2820,
+        1300
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_top_right_train.png",
+      "box": [
+        3150,
+        300,
+        5800,
+        1600
+      ],
+      "size": [
+        2650,
+        1300
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_middle_left_train.png",
+      "box": [
+        180,
+        1500,
+        3000,
+        2850
+      ],
+      "size": [
+        2820,
+        1350
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_middle_right_train.png",
+      "box": [
+        3150,
+        1500,
+        5800,
+        2850
+      ],
+      "size": [
+        2650,
+        1350
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_bottom_left_train.png",
+      "box": [
+        180,
+        2800,
+        3000,
+        4210
+      ],
+      "size": [
+        2820,
+        1410
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_bottom_right_train.png",
+      "box": [
+        3150,
+        2800,
+        5800,
+        4210
+      ],
+      "size": [
+        2650,
+        1410
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_left_top_bus_close.png",
+      "box": [
+        250,
+        650,
+        2850,
+        1450
+      ],
+      "size": [
+        2600,
+        800
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_right_top_bus_close.png",
+      "box": [
+        3200,
+        650,
+        5750,
+        1450
+      ],
+      "size": [
+        2550,
+        800
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_left_middle_loads_close.png",
+      "box": [
+        250,
+        1750,
+        2850,
+        2750
+      ],
+      "size": [
+        2600,
+        1000
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_right_middle_loads_close.png",
+      "box": [
+        3200,
+        1750,
+        5750,
+        2750
+      ],
+      "size": [
+        2550,
+        1000
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_left_bottom_control_close.png",
+      "box": [
+        250,
+        2750,
+        2850,
+        4200
+      ],
+      "size": [
+        2600,
+        1450
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_right_bottom_control_close.png",
+      "box": [
+        3200,
+        2750,
+        5750,
+        4200
+      ],
+      "size": [
+        2550,
+        1450
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_center_ties.png",
+      "box": [
+        2850,
+        650,
+        3300,
+        3300
+      ],
+      "size": [
+        450,
+        2650
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_title_block.png",
+      "box": [
+        6000,
+        3275,
+        6980,
+        4260
+      ],
+      "size": [
+        980,
+        985
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_legend_notes.png",
+      "box": [
+        6000,
+        750,
+        6980,
+        2500
+      ],
+      "size": [
+        980,
+        1750
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_revisions.png",
+      "box": [
+        6000,
+        180,
+        6980,
+        760
+      ],
+      "size": [
+        980,
+        580
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_top_sources_full.png",
+      "box": [
+        250,
+        120,
+        5850,
+        900
+      ],
+      "size": [
+        5600,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_top_sources_left.png",
+      "box": [
+        250,
+        120,
+        1600,
+        900
+      ],
+      "size": [
+        1350,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_top_sources_mid.png",
+      "box": [
+        1600,
+        120,
+        3500,
+        900
+      ],
+      "size": [
+        1900,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_top_sources_right.png",
+      "box": [
+        3500,
+        120,
+        5850,
+        900
+      ],
+      "size": [
+        2350,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_bus_ties_close.png",
+      "box": [
+        2600,
+        650,
+        3650,
+        3450
+      ],
+      "size": [
+        1050,
+        2800
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_lower_left_control_full.png",
+      "box": [
+        250,
+        2550,
+        3100,
+        4300
+      ],
+      "size": [
+        2850,
+        1750
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_lower_right_control_full.png",
+      "box": [
+        3150,
+        2550,
+        5950,
+        4300
+      ],
+      "size": [
+        2800,
+        1750
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_rps_panel_a_close.png",
+      "box": [
+        3900,
+        2750,
+        5400,
+        3650
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_rps_panel_b_close.png",
+      "box": [
+        4850,
+        2750,
+        6350,
+        3650
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_rps_pt_a_close.png",
+      "box": [
+        3900,
+        3350,
+        5400,
+        4250
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wire_nodes_rps_pt_b_close.png",
+      "box": [
+        4850,
+        3350,
+        6350,
+        4250
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_full_thumb.png",
+      "box": [
+        0,
+        0,
+        7000,
+        4334
+      ],
+      "size": [
+        1800,
+        1114
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_top_left_train.png",
+      "box": [
+        180,
+        300,
+        3000,
+        1600
+      ],
+      "size": [
+        2820,
+        1300
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_top_right_train.png",
+      "box": [
+        3150,
+        300,
+        5800,
+        1600
+      ],
+      "size": [
+        2650,
+        1300
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_middle_left_train.png",
+      "box": [
+        180,
+        1500,
+        3000,
+        2850
+      ],
+      "size": [
+        2820,
+        1350
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_middle_right_train.png",
+      "box": [
+        3150,
+        1500,
+        5800,
+        2850
+      ],
+      "size": [
+        2650,
+        1350
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_bottom_left_train.png",
+      "box": [
+        180,
+        2800,
+        3000,
+        4210
+      ],
+      "size": [
+        2820,
+        1410
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_bottom_right_train.png",
+      "box": [
+        3150,
+        2800,
+        5800,
+        4210
+      ],
+      "size": [
+        2650,
+        1410
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_left_top_bus_close.png",
+      "box": [
+        250,
+        650,
+        2850,
+        1450
+      ],
+      "size": [
+        2600,
+        800
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_right_top_bus_close.png",
+      "box": [
+        3200,
+        650,
+        5750,
+        1450
+      ],
+      "size": [
+        2550,
+        800
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_left_middle_loads_close.png",
+      "box": [
+        250,
+        1750,
+        2850,
+        2750
+      ],
+      "size": [
+        2600,
+        1000
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_right_middle_loads_close.png",
+      "box": [
+        3200,
+        1750,
+        5750,
+        2750
+      ],
+      "size": [
+        2550,
+        1000
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_left_bottom_control_close.png",
+      "box": [
+        250,
+        2750,
+        2850,
+        4200
+      ],
+      "size": [
+        2600,
+        1450
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_right_bottom_control_close.png",
+      "box": [
+        3200,
+        2750,
+        5750,
+        4200
+      ],
+      "size": [
+        2550,
+        1450
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_center_ties.png",
+      "box": [
+        2850,
+        650,
+        3300,
+        3300
+      ],
+      "size": [
+        450,
+        2650
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_title_block.png",
+      "box": [
+        6000,
+        3275,
+        6980,
+        4260
+      ],
+      "size": [
+        980,
+        985
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_legend_notes.png",
+      "box": [
+        6000,
+        750,
+        6980,
+        2500
+      ],
+      "size": [
+        980,
+        1750
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_revisions.png",
+      "box": [
+        6000,
+        180,
+        6980,
+        760
+      ],
+      "size": [
+        980,
+        580
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_top_sources_full.png",
+      "box": [
+        250,
+        120,
+        5850,
+        900
+      ],
+      "size": [
+        5600,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_top_sources_left.png",
+      "box": [
+        250,
+        120,
+        1600,
+        900
+      ],
+      "size": [
+        1350,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_top_sources_mid.png",
+      "box": [
+        1600,
+        120,
+        3500,
+        900
+      ],
+      "size": [
+        1900,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_top_sources_right.png",
+      "box": [
+        3500,
+        120,
+        5850,
+        900
+      ],
+      "size": [
+        2350,
+        780
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_bus_ties_close.png",
+      "box": [
+        2600,
+        650,
+        3650,
+        3450
+      ],
+      "size": [
+        1050,
+        2800
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_lower_left_control_full.png",
+      "box": [
+        250,
+        2550,
+        3100,
+        4300
+      ],
+      "size": [
+        2850,
+        1750
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_lower_right_control_full.png",
+      "box": [
+        3150,
+        2550,
+        5950,
+        4300
+      ],
+      "size": [
+        2800,
+        1750
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_rps_panel_a_close.png",
+      "box": [
+        3900,
+        2750,
+        5400,
+        3650
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_rps_panel_b_close.png",
+      "box": [
+        4850,
+        2750,
+        6350,
+        3650
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_rps_pt_a_close.png",
+      "box": [
+        3900,
+        3350,
+        5400,
+        4250
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    },
+    {
+      "file": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires + components + junctions\\results\\visual_crops\\wires_rps_pt_b_close.png",
+      "box": [
+        4850,
+        3350,
+        6350,
+        4250
+      ],
+      "size": [
+        1500,
+        900
+      ]
+    }
+  ]
+}

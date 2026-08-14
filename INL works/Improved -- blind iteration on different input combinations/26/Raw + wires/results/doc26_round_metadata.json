@@ -1,0 +1,90 @@
+{
+  "document": 26,
+  "source_folder": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\26\\Raw + wires",
+  "raw_file": "raw -- synthetic_npp_electrical_schematic_v3(1).png",
+  "wire_aids": [
+    "wires_mask.png",
+    "wires_mask_overlay.png"
+  ],
+  "warning": "GT/GT-derived resources were not used.",
+  "off_the_shelf_ocr": "not used",
+  "aliases_not_nodes": [
+    "480-A-11",
+    "480-B-13",
+    "DC-A-INV",
+    "DC-B-INV",
+    "120-A-N",
+    "120-B-N"
+  ],
+  "uncertain_candidates_after_round_1": [
+    {
+      "candidate": "CB-4A03 -- GND-RCP-A or CB-4A03 -- MTR-RCP-A",
+      "reason": "dashed interlock line appears near RCP A branch, but endpoint dot/landing was unresolved in R1"
+    },
+    {
+      "candidate": "CB-4B03 -- GND-RCP-B or CB-4B03 -- MTR-RCP-B",
+      "reason": "dashed interlock line appears near RCP B branch, but endpoint dot/landing was unresolved in R1"
+    },
+    {
+      "candidate": "MOV A train dashed control trunks",
+      "reason": "dashed paths cross/approach MOV branches and lower DC/UPS area; endpoints require focused review"
+    },
+    {
+      "candidate": "MOV B train dashed control trunks",
+      "reason": "dashed paths cross/approach MOV branches and lower DC/UPS area; endpoints require focused review"
+    },
+    {
+      "candidate": "Title-block 209 minus final visual 205 connection gap",
+      "reason": "no further visually supported labeled endpoint pairs were found in final review"
+    }
+  ],
+  "rounds": {
+    "diego_round_1": {
+      "nodes": 200,
+      "edges": 203,
+      "matrix_csv": "diego_round_1_connectivity_matrix.csv",
+      "edgelist_csv": "diego_round_1_edgelist.csv",
+      "nodes_csv": "diego_round_1_nodes.csv",
+      "notes": [
+        "High-recall matrix excluded unresolved dashed RCP/MOV candidates pending review.",
+        "Inverter path was later corrected by Jennifer."
+      ]
+    },
+    "jennifer_round_1": {
+      "nodes": 200,
+      "edges": 203,
+      "matrix_csv": "jennifer_round_1_connectivity_matrix.csv",
+      "edgelist_csv": "jennifer_round_1_edgelist.csv",
+      "nodes_csv": "jennifer_round_1_nodes.csv",
+      "notes": [
+        "Precision review accepted the main graph.",
+        "Corrected inverter path to put BUS-125DC(A/B) between CB-INV and INV-31(A/B).",
+        "Kept RCP interlocks and MOV dashed control trunks unresolved.",
+        "Reclassified RPS-PNL(A/B)--TB-UPS(A/B) as dashed control rather than instrument."
+      ]
+    },
+    "diego_round_2": {
+      "nodes": 200,
+      "edges": 205,
+      "matrix_csv": "diego_round_2_connectivity_matrix.csv",
+      "edgelist_csv": "diego_round_2_edgelist.csv",
+      "nodes_csv": "diego_round_2_nodes.csv",
+      "notes": [
+        "RCP dashed breaker-side contacts kept uncertain/rejected because no labeled lower endpoint is visible.",
+        "High-recall R2 accepted only the two STR-A3/B3 to BUS-120N dashed/protection routes."
+      ]
+    },
+    "jennifer_round_2_final": {
+      "nodes": 200,
+      "edges": 205,
+      "matrix_csv": "jennifer_round_2_final_connectivity_matrix.csv",
+      "edgelist_csv": "jennifer_round_2_final_edgelist.csv",
+      "nodes_csv": "jennifer_round_2_final_nodes.csv",
+      "notes": [
+        "Final evidence-saturated matrix.",
+        "Accepted edge count is 205; title block states 209, but four additional connections were not visually supported enough to include.",
+        "RCP dashed endpoints remain uncertain/rejected."
+      ]
+    }
+  }
+}

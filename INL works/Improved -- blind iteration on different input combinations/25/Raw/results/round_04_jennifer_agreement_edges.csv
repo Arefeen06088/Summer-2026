@@ -1,0 +1,204 @@
+source,target,evidence
+SWYD-115KV,FDR-13A,top source train A visible wire chain
+FDR-13A,TR-UAT-1A,top source train A visible wire chain
+TR-UAT-1A,CB-52-4A,top source train A visible wire chain
+CB-52-4A,BUS-4160-A,top source train A visible wire chain
+EDG-1A,CB-DG-1A,EDG-1A breaker tie to BUS-4160-A
+CB-DG-1A,BUS-4160-A,EDG-1A breaker tie to BUS-4160-A
+SWYD-115KV,FDR-13B,top source train B visible wire chain
+FDR-13B,TR-UAT-1B,top source train B visible wire chain
+TR-UAT-1B,CB-52-4B,top source train B visible wire chain
+CB-52-4B,BUS-4160-B,top source train B visible wire chain
+EDG-1B,CB-DG-1B,EDG-1B breaker tie to BUS-4160-B
+CB-DG-1B,BUS-4160-B,EDG-1B breaker tie to BUS-4160-B
+SWYD-115KV,TR-SAT-1,standby transformer chain to BUS-4160-C
+TR-SAT-1,CB-52-4C,standby transformer chain to BUS-4160-C
+CB-52-4C,BUS-4160-C,standby transformer chain to BUS-4160-C
+EDG-1C,CB-DG-1C,EDG-1C breaker tie to BUS-4160-C
+CB-DG-1C,BUS-4160-C,EDG-1C breaker tie to BUS-4160-C
+BUS-4160-A,CB-TIE-AB,visible bus tie A-B
+CB-TIE-AB,BUS-4160-B,visible bus tie A-B
+BUS-4160-B,CB-TIE-BC,visible bus tie B-C
+CB-TIE-BC,BUS-4160-C,visible bus tie B-C
+BUS-4160-A,CB-4A01,train A bus tap to feeder 01 breaker
+CB-4A01,TR-480-1A,train A transformer branch from feeder 01
+TR-480-1A,CB-52-48A,train A transformer branch from feeder 01
+CB-52-48A,BUS-480-1A,train A transformer branch from feeder 01
+CB-4A01,DS-4A01,train A RHR pump branch from feeder 01
+DS-4A01,MS-A01,train A RHR pump branch from feeder 01
+MS-A01,PUMP-RHR P201A,train A RHR pump branch from feeder 01
+BUS-4160-A,CB-4A02,train A core spray pump feeder 02
+CB-4A02,DS-4A02,train A core spray pump feeder 02
+DS-4A02,MS-A02,train A core spray pump feeder 02
+MS-A02,PUMP-CS-P202A,train A core spray pump feeder 02
+BUS-4160-A,CB-4A03,train A load-center transformer feeder 03
+CB-4A03,DS-4A03,train A load-center transformer feeder 03
+DS-4A03,TR-LC-A03,train A load-center transformer feeder 03
+TR-LC-A03,LC-480-A03,train A load-center transformer feeder 03
+BUS-4160-A,CB-4A04,train A control-room fan feeder 04
+CB-4A04,DS-4A04,train A control-room fan feeder 04
+DS-4A04,MS-A04,train A control-room fan feeder 04
+MS-A04,FAN-CR-401A,train A control-room fan feeder 04
+BUS-4160-A,CB-4A05,train A ESF panel feeder 05
+CB-4A05,DS-4A05,train A ESF panel feeder 05
+DS-4A05,PNL-ESF-A05,train A ESF panel feeder 05
+PNL-ESF-A05,GND-ESF-A05,train A ESF panel feeder 05
+BUS-4160-A,CB-4A06,train A RPS rectifier/inverter feeder 06
+CB-4A06,DS-4A06,train A RPS rectifier/inverter feeder 06
+DS-4A06,RECT-RPS-A06,train A RPS rectifier/inverter feeder 06
+RECT-RPS-A06,INV-RPS-A06,train A RPS rectifier/inverter feeder 06
+BUS-4160-A,CB-4A07,train A AFW pump feeder 07
+CB-4A07,DS-4A07,train A AFW pump feeder 07
+DS-4A07,MS-A07,train A AFW pump feeder 07
+MS-A07,PUMP-AFW P203A,train A AFW pump feeder 07
+BUS-4160-A,CB-4A08,train A control power feeder 08
+CB-4A08,DS-4A08,train A control power feeder 08
+DS-4A08,TR-CTRL-A08,train A control power feeder 08
+TR-CTRL-A08,CP-CTRL-A08,train A control power feeder 08
+BUS-4160-B,CB-4B01,train B bus tap to feeder 01 breaker
+CB-4B01,TR-480-1B,train B transformer branch from feeder 01
+TR-480-1B,CB-52-48B,train B transformer branch from feeder 01
+CB-52-48B,BUS-480-1B,train B transformer branch from feeder 01
+CB-4B01,DS-4B01,train B RHR pump branch from feeder 01
+DS-4B01,MS-B01,train B RHR pump branch from feeder 01
+MS-B01,PUMP-RHR P201B,train B RHR pump branch from feeder 01
+BUS-4160-B,CB-4B02,train B core spray pump feeder 02
+CB-4B02,DS-4B02,train B core spray pump feeder 02
+DS-4B02,MS-B02,train B core spray pump feeder 02
+MS-B02,PUMP-CS-P202B,train B core spray pump feeder 02
+BUS-4160-B,CB-4B03,train B load-center transformer feeder 03
+CB-4B03,DS-4B03,train B load-center transformer feeder 03
+DS-4B03,TR-LC-B03,train B load-center transformer feeder 03
+TR-LC-B03,LC-480-B03,train B load-center transformer feeder 03
+BUS-4160-B,CB-4B04,train B control-room fan feeder 04
+CB-4B04,DS-4B04,train B control-room fan feeder 04
+DS-4B04,MS-B04,train B control-room fan feeder 04
+MS-B04,FAN-CR-401B,train B control-room fan feeder 04
+BUS-4160-B,CB-4B05,train B ESF panel feeder 05
+CB-4B05,DS-4B05,train B ESF panel feeder 05
+DS-4B05,PNL-ESF-B05,train B ESF panel feeder 05
+PNL-ESF-B05,GND-ESF-B05,train B ESF panel feeder 05
+BUS-4160-B,CB-4B06,train B RPS rectifier/inverter feeder 06
+CB-4B06,DS-4B06,train B RPS rectifier/inverter feeder 06
+DS-4B06,RECT-RPS-B06,train B RPS rectifier/inverter feeder 06
+RECT-RPS-B06,INV-RPS-B06,train B RPS rectifier/inverter feeder 06
+BUS-4160-B,CB-4B07,train B AFW pump feeder 07
+CB-4B07,DS-4B07,train B AFW pump feeder 07
+DS-4B07,MS-B07,train B AFW pump feeder 07
+MS-B07,PUMP-AFW P203B,train B AFW pump feeder 07
+BUS-4160-B,CB-4B08,train B control power feeder 08
+CB-4B08,DS-4B08,train B control power feeder 08
+DS-4B08,TR-CTRL-B08,train B control power feeder 08
+TR-CTRL-B08,CP-CTRL-B08,train B control power feeder 08
+BUS-4160-C,CB-4C01,train C bus tap to feeder 01 breaker
+CB-4C01,TR-480-1C,train C transformer branch from feeder 01
+TR-480-1C,CB-52-48C,train C transformer branch from feeder 01
+CB-52-48C,BUS-480-1C,train C transformer branch from feeder 01
+CB-4C01,DS-4C01,train C RHR pump branch from feeder 01
+DS-4C01,MS-C01,train C RHR pump branch from feeder 01
+MS-C01,PUMP-RHR P201C,train C RHR pump branch from feeder 01
+BUS-4160-C,CB-4C02,train C core spray pump feeder 02
+CB-4C02,DS-4C02,train C core spray pump feeder 02
+DS-4C02,MS-C02,train C core spray pump feeder 02
+MS-C02,PUMP-CS-P202C,train C core spray pump feeder 02
+BUS-4160-C,CB-4C03,train C load-center transformer feeder 03
+CB-4C03,DS-4C03,train C load-center transformer feeder 03
+DS-4C03,TR-LC-C03,train C load-center transformer feeder 03
+TR-LC-C03,LC-480-C03,train C load-center transformer feeder 03
+BUS-4160-C,CB-4C04,train C control-room fan feeder 04
+CB-4C04,DS-4C04,train C control-room fan feeder 04
+DS-4C04,MS-C04,train C control-room fan feeder 04
+MS-C04,FAN-CR-401C,train C control-room fan feeder 04
+BUS-4160-C,CB-4C05,train C ESF panel feeder 05
+CB-4C05,DS-4C05,train C ESF panel feeder 05
+DS-4C05,PNL-ESF-C05,train C ESF panel feeder 05
+PNL-ESF-C05,GND-ESF-C05,train C ESF panel feeder 05
+BUS-4160-C,CB-4C06,train C RPS rectifier/inverter feeder 06
+CB-4C06,DS-4C06,train C RPS rectifier/inverter feeder 06
+DS-4C06,RECT-RPS-C06,train C RPS rectifier/inverter feeder 06
+RECT-RPS-C06,INV-RPS-C06,train C RPS rectifier/inverter feeder 06
+BUS-4160-C,CB-4C07,train C AFW pump feeder 07
+CB-4C07,DS-4C07,train C AFW pump feeder 07
+DS-4C07,MS-C07,train C AFW pump feeder 07
+MS-C07,PUMP-AFW P203C,train C AFW pump feeder 07
+BUS-4160-C,CB-4C08,train C control power feeder 08
+CB-4C08,DS-4C08,train C control power feeder 08
+DS-4C08,TR-CTRL-C08,train C control power feeder 08
+TR-CTRL-C08,CP-CTRL-C08,train C control power feeder 08
+BUS-480-1A,MCC-A1,train A 480V bus feeds MCC-A1
+BUS-480-1A,MCC-A2,train A 480V bus feeds MCC-A2
+MCC-A1,CB-48A01,train A MCC-1 branch 01
+CB-48A01,MS-48A01,train A MCC-1 branch 01
+MS-48A01,PUMP-CVC P301A,train A MCC-1 branch 01
+MCC-A1,CB-48A02,train A MCC-1 branch 02
+CB-48A02,K-48A02,train A MCC-1 branch 02
+K-48A02,MOV-CS-451A,train A MCC-1 branch 02
+MCC-A1,CB-48A03,train A MCC-1 branch 03
+CB-48A03,MS-48A03,train A MCC-1 branch 03
+MS-48A03,FAN-HVAC-501A,train A MCC-1 branch 03
+MCC-A2,CB-48A04,train A MCC-2 branch 04
+CB-48A04,MS-48A04,train A MCC-2 branch 04
+MS-48A04,PUMP-SUMP P302A,train A MCC-2 branch 04
+MCC-A2,CB-48A05,train A MCC-2 branch 05
+CB-48A05,K-48A05,train A MCC-2 branch 05
+K-48A05,MOV-RHR-452A,train A MCC-2 branch 05
+MCC-A2,CB-48A06,train A MCC-2 branch 06
+CB-48A06,XFU-48A06,train A MCC-2 branch 06
+XFU-48A06,PNL-PI-601A,train A MCC-2 branch 06
+BUS-480-1B,MCC-B1,train B 480V bus feeds MCC-B1
+BUS-480-1B,MCC-B2,train B 480V bus feeds MCC-B2
+MCC-B1,CB-48B01,train B MCC-1 branch 01
+CB-48B01,MS-48B01,train B MCC-1 branch 01
+MS-48B01,PUMP-CVC P301B,train B MCC-1 branch 01
+MCC-B1,CB-48B02,train B MCC-1 branch 02
+CB-48B02,K-48B02,train B MCC-1 branch 02
+K-48B02,MOV-CS-451B,train B MCC-1 branch 02
+MCC-B1,CB-48B03,train B MCC-1 branch 03
+CB-48B03,MS-48B03,train B MCC-1 branch 03
+MS-48B03,FAN-HVAC-501B,train B MCC-1 branch 03
+MCC-B2,CB-48B04,train B MCC-2 branch 04
+CB-48B04,MS-48B04,train B MCC-2 branch 04
+MS-48B04,PUMP-SUMP P302B,train B MCC-2 branch 04
+MCC-B2,CB-48B05,train B MCC-2 branch 05
+CB-48B05,K-48B05,train B MCC-2 branch 05
+K-48B05,MOV-RHR-452B,train B MCC-2 branch 05
+MCC-B2,CB-48B06,train B MCC-2 branch 06
+CB-48B06,XFU-48B06,train B MCC-2 branch 06
+XFU-48B06,PNL-PI-601B,train B MCC-2 branch 06
+BUS-480-1C,MCC-C1,train C 480V bus feeds MCC-C1
+BUS-480-1C,MCC-C2,train C 480V bus feeds MCC-C2
+MCC-C1,CB-48C01,train C MCC-1 branch 01
+CB-48C01,MS-48C01,train C MCC-1 branch 01
+MS-48C01,PUMP-CVC P301C,train C MCC-1 branch 01
+MCC-C1,CB-48C02,train C MCC-1 branch 02
+CB-48C02,K-48C02,train C MCC-1 branch 02
+K-48C02,MOV-CS-451C,train C MCC-1 branch 02
+MCC-C1,CB-48C03,train C MCC-1 branch 03
+CB-48C03,MS-48C03,train C MCC-1 branch 03
+MS-48C03,FAN-HVAC-501C,train C MCC-1 branch 03
+MCC-C2,CB-48C04,train C MCC-2 branch 04
+CB-48C04,MS-48C04,train C MCC-2 branch 04
+MS-48C04,PUMP-SUMP P302C,train C MCC-2 branch 04
+MCC-C2,CB-48C05,train C MCC-2 branch 05
+CB-48C05,K-48C05,train C MCC-2 branch 05
+K-48C05,MOV-RHR-452C,train C MCC-2 branch 05
+MCC-C2,CB-48C06,train C MCC-2 branch 06
+CB-48C06,XFU-48C06,train C MCC-2 branch 06
+XFU-48C06,PNL-PI-601C,train C MCC-2 branch 06
+BUS-480-1A,CHGR-125-1A,final charger A component chain; route label excluded
+CHGR-125-1A,BUS-125DC-A,final charger A component chain; route label excluded
+BUS-480-1B,CHGR-125-1B,final charger B component chain; route label excluded
+CHGR-125-1B,BUS-125DC-B,final charger B component chain; route label excluded
+PNL-RPS-A,PNL-RPS-B,final RPS panel tie; route label excluded
+BAT-125-1A,BUS-125DC-A,battery A tied to 125VDC bus A
+BUS-125DC-A,INV-120-1A,DC bus A through inverter to RPS panel A
+INV-120-1A,PNL-RPS-A,DC bus A through inverter to RPS panel A
+PNL-RPS-A,RELAY-K501A,RPS panel A relay branch
+PNL-RPS-A,XMTR-PT-501A,RPS panel A transmitter branch
+BAT-125-1B,BUS-125DC-B,battery B tied to 125VDC bus B
+BUS-125DC-B,INV-120-1B,DC bus B through inverter to RPS panel B
+INV-120-1B,PNL-RPS-B,DC bus B through inverter to RPS panel B
+PNL-RPS-B,RELAY-K501B,RPS panel B relay branch
+PNL-RPS-B,XMTR-PT-501B,RPS panel B transmitter branch
+RELAY-K501A,TC-52-4A,relay K501A trip-coil connection
+RELAY-K501B,TC-52-4A,relay K501B trip-coil connection

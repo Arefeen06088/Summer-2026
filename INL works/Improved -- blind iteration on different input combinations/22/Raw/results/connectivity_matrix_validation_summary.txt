@@ -1,0 +1,67 @@
+Connectivity matrix validation summary - Document 22
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\22\synthetic_npp_connectivity_matrix_clean(1).csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_matrix.csv): TP=128, FP=85, FN=80, Precision=0.600939, Recall=0.615385, F1=0.608076
+- Jennifer -- Round 2 (round_02_jennifer_matrix.csv): TP=127, FP=83, FN=81, Precision=0.604762, Recall=0.610577, F1=0.607656
+- Diego -- Round 3 (round_03_diego_saturation_matrix.csv): TP=127, FP=82, FN=81, Precision=0.607656, Recall=0.610577, F1=0.609113
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=127, FP=82, FN=81, Precision=0.607656, Recall=0.610577, F1=0.609113
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=127, FP=82, FN=81, Precision=0.607656, Recall=0.610577, F1=0.609113
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- ANN-PNL-CR -- BUS-UPS-A 120 VAC UPS BUS A
+- AUX-XFMR-1A -- BUS-13A 13.8 KV AUX BUS A
+- AUX-XFMR-1B -- BUS-13A 13.8 KV AUX BUS A
+- BAT-125A -- BUS-125A 125 VDC BUS A
+- BAT-125B -- BUS-125B 125 VDC BUS B
+- BUS-125A 125 VDC BUS A -- CHGR-125A
+- BUS-125A 125 VDC BUS A -- DC-MCC-A
+- BUS-125A 125 VDC BUS A -- DIODE-OR-A
+- BUS-125A 125 VDC BUS A -- FUSE-FD-A
+- BUS-125A 125 VDC BUS A -- GRD-DC-A
+
+False-negative edge examples:
+- ANN-PNL-CR -- BUS-UPS-A
+- AUX-XFMR-1A -- BUS-13A
+- AUX-XFMR-1B -- BUS-13A
+- BAT-125A -- BUS-125A
+- BAT-125B -- BUS-125B
+- BUS-125A -- CHGR-125A
+- BUS-125A -- DC-MCC-A
+- BUS-125A -- DIODE-OR-A
+- BUS-125A -- FUSE-FD-A
+- BUS-125A -- GRD-DC-A
+
+Extra/non-GT nodes causing performance drops:
+- BUS-480-A 480V LOAD CENTER A: 7 incident false-positive edge(s)
+- BUS-480-B 480V LOAD CENTER B: 7 incident false-positive edge(s)
+- BUS-125A 125 VDC BUS A: 6 incident false-positive edge(s)
+- BUS-125B 125 VDC BUS B: 6 incident false-positive edge(s)
+- BUS-480-C 480V LOAD CENTER C: 6 incident false-positive edge(s)
+- BUS-480-D 480V LOAD CENTER D: 6 incident false-positive edge(s)
+- BUS-UPS-A 120 VAC UPS BUS A: 5 incident false-positive edge(s)
+- BUS-13A 13.8 KV AUX BUS A: 5 incident false-positive edge(s)
+- BUS-4160-A 4160V SAFETY BUS 1A: 5 incident false-positive edge(s)
+- BUS-UPS-B 120 VAC UPS BUS B: 5 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (BUS-480-A 480V LOAD CENTER A, BUS-480-B 480V LOAD CENTER B, BUS-125A 125 VDC BUS A, BUS-125B 125 VDC BUS B, BUS-480-C 480V LOAD CENTER C), final metrics would be TP=127, FP=50, FN=81, Precision=0.717514, Recall=0.610577, F1=0.659740.
+- If all 14 non-GT nodes were omitted, metrics would be TP=127, FP=8, FN=81, Precision=0.940741, Recall=0.610577, F1=0.740525.
+
+Missing GT node examples:
+- BUS-125A: 7 missed incident GT edge(s)
+- BUS-480-A: 7 missed incident GT edge(s)
+- BUS-480-B: 7 missed incident GT edge(s)
+- BUS-125B: 6 missed incident GT edge(s)
+- BUS-4160-A: 6 missed incident GT edge(s)
+- BUS-480-C: 6 missed incident GT edge(s)
+- BUS-480-D: 6 missed incident GT edge(s)
+- BUS-13A: 5 missed incident GT edge(s)
+- BUS-UPS-A: 5 missed incident GT edge(s)
+- BUS-UPS-B: 5 missed incident GT edge(s)

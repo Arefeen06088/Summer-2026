@@ -1,0 +1,7 @@
+stage,agent,role,artifact,node_count,edge_count,token_accounting,decision
+prep,Codex,orchestrator,codes/make_crops.py and codes/crops,,,runtime exact token counts not exposed; artifacts updated for traceability,raw-derived crops generated for visual inspection
+round_01,Diego,high-recall extractor,round_01_diego_high_recall_matrix.csv,200,204,exact subagent token count not exposed,included DC/charger/battery candidates and preserved the initial ground-label read
+round_02,Jennifer,precision reviewer/refiner,round_02_jennifer_precision_matrix.csv,200,203,exact subagent token count not exposed,fixed GND-EO labels and removed unsupported direct charger-to-battery/B01-battery edges
+round_03,Diego,saturation extractor,round_03_diego_saturation_matrix.csv,200,203,exact subagent token count not exposed,AGREED with Jennifer precision graph
+round_04,Jennifer,final precision confirmation,round_04_jennifer_agreement_matrix.csv,200,203,exact subagent token count not exposed,AGREED final saturated matrix
+final,Codex,orchestrator,final_connectivity_matrix.csv,200,203,runtime exact token counts not exposed; see note for audit trail,validated symmetric zero-diagonal component matrix

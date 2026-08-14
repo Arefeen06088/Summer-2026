@@ -1,0 +1,201 @@
+source,target,line_type,status,evidence
+OFFSITE GRID-1,DS-101,P,accepted,Solid incoming feeder from offsite grid 1 into disconnect DS-101.
+DS-101,CB-101,P,accepted,Solid feeder continues from DS-101 to circuit breaker CB-101.
+CB-101,TR-101,P,accepted,Solid feeder continues from CB-101 to transformer TR-101.
+TR-101,BUS-4160-A,P,accepted,Transformer TR-101 output lands on BUS-4160-A.
+DG-1,CB-DG1,P,accepted,Diesel generator DG-1 output runs through breaker CB-DG1.
+CB-DG1,BUS-4160-A,P,accepted,CB-DG1 output ties into BUS-4160-A.
+BUS-4160-A,PT-4160A,SIG,accepted,Dotted instrument tap from BUS-4160-A to PT-4160A.
+BUS-4160-A,CB-TIE-4160,P,accepted,Solid bus tie connection from BUS-4160-A to CB-TIE-4160.
+CB-TIE-4160,BUS-4160-B,P,accepted,Solid bus tie connection from CB-TIE-4160 to BUS-4160-B.
+OFFSITE GRID-2,DS-102,P,accepted,Solid incoming feeder from offsite grid 2 into disconnect DS-102.
+DS-102,CB-102,P,accepted,Solid feeder continues from DS-102 to circuit breaker CB-102.
+CB-102,TR-102,P,accepted,Solid feeder continues from CB-102 to transformer TR-102.
+TR-102,BUS-4160-B,P,accepted,Transformer TR-102 output lands on BUS-4160-B.
+DG-2,CB-DG2,P,accepted,Diesel generator DG-2 output runs through breaker CB-DG2.
+CB-DG2,BUS-4160-B,P,accepted,CB-DG2 output ties into BUS-4160-B.
+BUS-4160-B,PT-4160B,SIG,accepted,Dotted instrument tap from BUS-4160-B to PT-4160B.
+BUS-4160-A,CB-201,P,accepted,Solid 4160 V A feeder drops from BUS-4160-A to CB-201.
+CB-201,TR-480-A,P,accepted,Solid feeder continues from CB-201 to TR-480-A.
+TR-480-A,CB-480-A,P,accepted,Solid secondary feeder continues from TR-480-A to CB-480-A.
+CB-480-A,BUS-480-A,P,accepted,CB-480-A output lands on BUS-480-A.
+BUS-4160-B,CB-202,P,accepted,Solid 4160 V B feeder drops from BUS-4160-B to CB-202.
+CB-202,TR-480-B,P,accepted,Solid feeder continues from CB-202 to TR-480-B.
+TR-480-B,CB-480-B,P,accepted,Solid secondary feeder continues from TR-480-B to CB-480-B.
+CB-480-B,BUS-480-B,P,accepted,CB-480-B output lands on BUS-480-B.
+BUS-480-A,CB-TIE-480,P,accepted,Solid 480 V bus tie connection from BUS-480-A to CB-TIE-480.
+CB-TIE-480,BUS-480-B,P,accepted,Solid 480 V bus tie connection from CB-TIE-480 to BUS-480-B.
+BUS-480-A,CB-F201,P,accepted,Solid feeder tap from BUS-480-A into feeder breaker CB-F201.
+CB-F201,RELAY-PR201,CTRL,accepted,Dashed protection/control lead from CB-F201 to RELAY-PR201.
+CB-F201,DS-F201,P,accepted,Solid feeder continues from CB-F201 to DS-F201.
+DS-F201,CPT-201,P,accepted,Solid feeder continues from DS-F201 to CPT-201.
+CPT-201,MCC-201,P,accepted,Solid feeder continues from CPT-201 to MCC-201.
+MCC-201,CB-L201,P,accepted,Solid load feeder exits MCC-201 through CB-L201.
+CB-L201,RELAY-K201,P,accepted,Solid load feeder continues from CB-L201 through RELAY-K201.
+RELAY-K201,PUMP-P201,P,accepted,Solid load feeder from RELAY-K201 terminates at PUMP-P201.
+MCC-201,RELAY-A201,CTRL,accepted,Dashed control/auxiliary lead associates MCC-201 with RELAY-A201.
+PUMP-P201,INST-201,SIG,accepted,Dotted instrument/signal lead from PUMP-P201 to INST-201.
+INST-201,JB-201,SIG,accepted,Dotted signal lead continues from INST-201 to JB-201.
+JB-201,TB-201,SIG,accepted,Dotted signal lead continues from JB-201 to TB-201.
+LCS-201,TB-201,CTRL,accepted,Dashed local control station lead from LCS-201 to TB-201.
+BUS-480-A,CB-F203,P,accepted,Solid feeder tap from BUS-480-A into feeder breaker CB-F203.
+CB-F203,RELAY-PR203,CTRL,accepted,Dashed protection/control lead from CB-F203 to RELAY-PR203.
+CB-F203,DS-F203,P,accepted,Solid feeder continues from CB-F203 to DS-F203.
+DS-F203,CPT-203,P,accepted,Solid feeder continues from DS-F203 to CPT-203.
+CPT-203,MCC-203,P,accepted,Solid feeder continues from CPT-203 to MCC-203.
+MCC-203,CB-L203,P,accepted,Solid load feeder exits MCC-203 through CB-L203.
+CB-L203,RELAY-K203,P,accepted,Solid load feeder continues from CB-L203 through RELAY-K203.
+RELAY-K203,PUMP-P203,P,accepted,Solid load feeder from RELAY-K203 terminates at PUMP-P203.
+MCC-203,RELAY-A203,CTRL,accepted,Dashed control/auxiliary lead associates MCC-203 with RELAY-A203.
+PUMP-P203,INST-203,SIG,accepted,Dotted instrument/signal lead from PUMP-P203 to INST-203.
+INST-203,JB-203,SIG,accepted,Dotted signal lead continues from INST-203 to JB-203.
+JB-203,TB-203,SIG,accepted,Dotted signal lead continues from JB-203 to TB-203.
+LCS-203,TB-203,CTRL,accepted,Dashed local control station lead from LCS-203 to TB-203.
+BUS-480-A,CB-F301,P,accepted,Solid feeder tap from BUS-480-A into feeder breaker CB-F301.
+CB-F301,RELAY-PR301,CTRL,accepted,Dashed protection/control lead from CB-F301 to RELAY-PR301.
+CB-F301,DS-F301,P,accepted,Solid feeder continues from CB-F301 to DS-F301.
+DS-F301,CPT-301,P,accepted,Solid feeder continues from DS-F301 to CPT-301.
+CPT-301,MCC-301,P,accepted,Solid feeder continues from CPT-301 to MCC-301.
+MCC-301,CB-L301,P,accepted,Solid load feeder exits MCC-301 through CB-L301.
+CB-L301,RELAY-K301,P,accepted,Solid load feeder continues from CB-L301 through RELAY-K301.
+RELAY-K301,PUMP-P301,P,accepted,Solid load feeder from RELAY-K301 terminates at PUMP-P301.
+MCC-301,RELAY-A301,CTRL,accepted,Dashed control/auxiliary lead associates MCC-301 with RELAY-A301.
+PUMP-P301,INST-301,SIG,accepted,Dotted instrument/signal lead from PUMP-P301 to INST-301.
+INST-301,JB-301,SIG,accepted,Dotted signal lead continues from INST-301 to JB-301.
+JB-301,TB-301,SIG,accepted,Dotted signal lead continues from JB-301 to TB-301.
+LCS-301,TB-301,CTRL,accepted,Dashed local control station lead from LCS-301 to TB-301.
+BUS-480-A,CB-F401,P,accepted,Solid feeder tap from BUS-480-A into feeder breaker CB-F401.
+CB-F401,RELAY-PR401,CTRL,accepted,Dashed protection/control lead from CB-F401 to RELAY-PR401.
+CB-F401,DS-F401,P,accepted,Solid feeder continues from CB-F401 to DS-F401.
+DS-F401,CPT-401,P,accepted,Solid feeder continues from DS-F401 to CPT-401.
+CPT-401,MCC-401,P,accepted,Solid feeder continues from CPT-401 to MCC-401.
+MCC-401,CB-L401,P,accepted,Solid load feeder exits MCC-401 through CB-L401.
+CB-L401,RELAY-K401,P,accepted,Solid load feeder continues from CB-L401 through RELAY-K401.
+RELAY-K401,PUMP-P401,P,accepted,Solid load feeder from RELAY-K401 terminates at PUMP-P401.
+MCC-401,RELAY-A401,CTRL,accepted,Dashed control/auxiliary lead associates MCC-401 with RELAY-A401.
+PUMP-P401,INST-401,SIG,accepted,Dotted instrument/signal lead from PUMP-P401 to INST-401.
+INST-401,JB-401,SIG,accepted,Dotted signal lead continues from INST-401 to JB-401.
+JB-401,TB-401,SIG,accepted,Dotted signal lead continues from JB-401 to TB-401.
+LCS-401,TB-401,CTRL,accepted,Dashed local control station lead from LCS-401 to TB-401.
+BUS-480-A,CB-F501,P,accepted,Solid feeder tap from BUS-480-A into feeder breaker CB-F501.
+CB-F501,RELAY-PR501,CTRL,accepted,Dashed protection/control lead from CB-F501 to RELAY-PR501.
+CB-F501,DS-F501,P,accepted,Solid feeder continues from CB-F501 to DS-F501.
+DS-F501,CPT-501,P,accepted,Solid feeder continues from DS-F501 to CPT-501.
+CPT-501,MCC-501,P,accepted,Solid feeder continues from CPT-501 to MCC-501.
+MCC-501,CB-L501,P,accepted,Solid load feeder exits MCC-501 through CB-L501.
+CB-L501,RELAY-K501,P,accepted,Solid load feeder continues from CB-L501 through RELAY-K501.
+RELAY-K501,MTR-F501,P,accepted,Solid load feeder from RELAY-K501 terminates at MTR-F501.
+MCC-501,RELAY-A501,CTRL,accepted,Dashed control/auxiliary lead associates MCC-501 with RELAY-A501.
+MTR-F501,INST-501,SIG,accepted,Dotted instrument/signal lead from MTR-F501 to INST-501.
+INST-501,JB-501,SIG,accepted,Dotted signal lead continues from INST-501 to JB-501.
+JB-501,TB-501,SIG,accepted,Dotted signal lead continues from JB-501 to TB-501.
+LCS-501,TB-501,CTRL,accepted,Dashed local control station lead from LCS-501 to TB-501.
+BUS-480-B,CB-F202,P,accepted,Solid feeder tap from BUS-480-B into feeder breaker CB-F202.
+CB-F202,RELAY-PR202,CTRL,accepted,Dashed protection/control lead from CB-F202 to RELAY-PR202.
+CB-F202,DS-F202,P,accepted,Solid feeder continues from CB-F202 to DS-F202.
+DS-F202,CPT-202,P,accepted,Solid feeder continues from DS-F202 to CPT-202.
+CPT-202,MCC-202,P,accepted,Solid feeder continues from CPT-202 to MCC-202.
+MCC-202,CB-L202,P,accepted,Solid load feeder exits MCC-202 through CB-L202.
+CB-L202,RELAY-K202,P,accepted,Solid load feeder continues from CB-L202 through RELAY-K202.
+RELAY-K202,PUMP-P202,P,accepted,Solid load feeder from RELAY-K202 terminates at PUMP-P202.
+MCC-202,RELAY-A202,CTRL,accepted,Dashed control/auxiliary lead associates MCC-202 with RELAY-A202.
+PUMP-P202,INST-202,SIG,accepted,Dotted instrument/signal lead from PUMP-P202 to INST-202.
+INST-202,JB-202,SIG,accepted,Dotted signal lead continues from INST-202 to JB-202.
+JB-202,TB-202,SIG,accepted,Dotted signal lead continues from JB-202 to TB-202.
+LCS-202,TB-202,CTRL,accepted,Dashed local control station lead from LCS-202 to TB-202.
+BUS-480-B,CB-F204,P,accepted,Solid feeder tap from BUS-480-B into feeder breaker CB-F204.
+CB-F204,RELAY-PR204,CTRL,accepted,Dashed protection/control lead from CB-F204 to RELAY-PR204.
+CB-F204,DS-F204,P,accepted,Solid feeder continues from CB-F204 to DS-F204.
+DS-F204,CPT-204,P,accepted,Solid feeder continues from DS-F204 to CPT-204.
+CPT-204,MCC-204,P,accepted,Solid feeder continues from CPT-204 to MCC-204.
+MCC-204,CB-L204,P,accepted,Solid load feeder exits MCC-204 through CB-L204.
+CB-L204,RELAY-K204,P,accepted,Solid load feeder continues from CB-L204 through RELAY-K204.
+RELAY-K204,PUMP-P204,P,accepted,Solid load feeder from RELAY-K204 terminates at PUMP-P204.
+MCC-204,RELAY-A204,CTRL,accepted,Dashed control/auxiliary lead associates MCC-204 with RELAY-A204.
+PUMP-P204,INST-204,SIG,accepted,Dotted instrument/signal lead from PUMP-P204 to INST-204.
+INST-204,JB-204,SIG,accepted,Dotted signal lead continues from INST-204 to JB-204.
+JB-204,TB-204,SIG,accepted,Dotted signal lead continues from JB-204 to TB-204.
+LCS-204,TB-204,CTRL,accepted,Dashed local control station lead from LCS-204 to TB-204.
+BUS-480-B,CB-F302,P,accepted,Solid feeder tap from BUS-480-B into feeder breaker CB-F302.
+CB-F302,RELAY-PR302,CTRL,accepted,Dashed protection/control lead from CB-F302 to RELAY-PR302.
+CB-F302,DS-F302,P,accepted,Solid feeder continues from CB-F302 to DS-F302.
+DS-F302,CPT-302,P,accepted,Solid feeder continues from DS-F302 to CPT-302.
+CPT-302,MCC-302,P,accepted,Solid feeder continues from CPT-302 to MCC-302.
+MCC-302,CB-L302,P,accepted,Solid load feeder exits MCC-302 through CB-L302.
+CB-L302,RELAY-K302,P,accepted,Solid load feeder continues from CB-L302 through RELAY-K302.
+RELAY-K302,PUMP-P302,P,accepted,Solid load feeder from RELAY-K302 terminates at PUMP-P302.
+MCC-302,RELAY-A302,CTRL,accepted,Dashed control/auxiliary lead associates MCC-302 with RELAY-A302.
+PUMP-P302,INST-302,SIG,accepted,Dotted instrument/signal lead from PUMP-P302 to INST-302.
+INST-302,JB-302,SIG,accepted,Dotted signal lead continues from INST-302 to JB-302.
+JB-302,TB-302,SIG,accepted,Dotted signal lead continues from JB-302 to TB-302.
+LCS-302,TB-302,CTRL,accepted,Dashed local control station lead from LCS-302 to TB-302.
+BUS-480-B,CB-F402,P,accepted,Solid feeder tap from BUS-480-B into feeder breaker CB-F402.
+CB-F402,RELAY-PR402,CTRL,accepted,Dashed protection/control lead from CB-F402 to RELAY-PR402.
+CB-F402,DS-F402,P,accepted,Solid feeder continues from CB-F402 to DS-F402.
+DS-F402,CPT-402,P,accepted,Solid feeder continues from DS-F402 to CPT-402.
+CPT-402,MCC-402,P,accepted,Solid feeder continues from CPT-402 to MCC-402.
+MCC-402,CB-L402,P,accepted,Solid load feeder exits MCC-402 through CB-L402.
+CB-L402,RELAY-K402,P,accepted,Solid load feeder continues from CB-L402 through RELAY-K402.
+RELAY-K402,PUMP-P402,P,accepted,Solid load feeder from RELAY-K402 terminates at PUMP-P402.
+MCC-402,RELAY-A402,CTRL,accepted,Dashed control/auxiliary lead associates MCC-402 with RELAY-A402.
+PUMP-P402,INST-402,SIG,accepted,Dotted instrument/signal lead from PUMP-P402 to INST-402.
+INST-402,JB-402,SIG,accepted,Dotted signal lead continues from INST-402 to JB-402.
+JB-402,TB-402,SIG,accepted,Dotted signal lead continues from JB-402 to TB-402.
+LCS-402,TB-402,CTRL,accepted,Dashed local control station lead from LCS-402 to TB-402.
+BUS-480-B,CB-F502,P,accepted,Solid feeder tap from BUS-480-B into feeder breaker CB-F502.
+CB-F502,RELAY-PR502,CTRL,accepted,Dashed protection/control lead from CB-F502 to RELAY-PR502.
+CB-F502,DS-F502,P,accepted,Solid feeder continues from CB-F502 to DS-F502.
+DS-F502,CPT-502,P,accepted,Solid feeder continues from DS-F502 to CPT-502.
+CPT-502,MCC-502,P,accepted,Solid feeder continues from CPT-502 to MCC-502.
+MCC-502,CB-L502,P,accepted,Solid load feeder exits MCC-502 through CB-L502.
+CB-L502,RELAY-K502,P,accepted,Solid load feeder continues from CB-L502 through RELAY-K502.
+RELAY-K502,MTR-F502,P,accepted,Solid load feeder from RELAY-K502 terminates at MTR-F502.
+MCC-502,RELAY-A502,CTRL,accepted,Dashed control/auxiliary lead associates MCC-502 with RELAY-A502.
+MTR-F502,INST-502,SIG,accepted,Dotted instrument/signal lead from MTR-F502 to INST-502.
+INST-502,JB-502,SIG,accepted,Dotted signal lead continues from INST-502 to JB-502.
+JB-502,TB-502,SIG,accepted,Dotted signal lead continues from JB-502 to TB-502.
+LCS-502,TB-502,CTRL,accepted,Dashed local control station lead from LCS-502 to TB-502.
+BUS-480-A,CB-F601,P,accepted,Solid feeder tap from BUS-480-A into feeder breaker CB-F601.
+CB-F601,RELAY-PR601,CTRL,accepted,Dashed protection/control lead from CB-F601 to RELAY-PR601.
+CB-F601,DS-F601,P,accepted,Solid feeder continues from CB-F601 to DS-F601.
+DS-F601,CPT-601,P,accepted,Solid feeder continues from DS-F601 to CPT-601.
+CPT-601,MCC-601,P,accepted,Solid feeder continues from CPT-601 to MCC-601.
+MCC-601,CB-L601,P,accepted,Solid load feeder exits MCC-601 through CB-L601.
+CB-L601,RELAY-K601,P,accepted,Solid load feeder continues from CB-L601 through RELAY-K601.
+RELAY-K601,VALVE-MOV601,P,accepted,Solid load feeder from RELAY-K601 terminates at VALVE-MOV601.
+MCC-601,RELAY-A601,CTRL,accepted,Dashed control/auxiliary lead associates MCC-601 with RELAY-A601.
+VALVE-MOV601,INST-601,SIG,accepted,Visible signal branch from VALVE-MOV601 to INST-601.
+VALVE-MOV601,LS-MOV601,SIG,accepted,Visible signal branch from VALVE-MOV601 to limit switch LS-MOV601.
+LS-MOV601,JB-601,SIG,accepted,Dotted signal run continues from LS-MOV601 to JB-601.
+JB-601,TB-601,SIG,accepted,Dotted signal run continues from JB-601 to TB-601.
+LCS-601,TB-601,CTRL,accepted,Dashed local control station lead from LCS-601 to TB-601.
+BUS-480-B,CB-F701,P,accepted,Solid feeder tap from BUS-480-B into feeder breaker CB-F701.
+CB-F701,RELAY-PR701,CTRL,accepted,Dashed protection/control lead from CB-F701 to RELAY-PR701.
+CB-F701,DS-F701,P,accepted,Solid feeder continues from CB-F701 to DS-F701.
+DS-F701,CPT-701,P,accepted,Solid feeder continues from DS-F701 to CPT-701.
+CPT-701,MCC-701,P,accepted,Solid feeder continues from CPT-701 to MCC-701.
+MCC-701,CB-L701,P,accepted,Solid load feeder exits MCC-701 through CB-L701.
+CB-L701,RELAY-K701,P,accepted,Solid load feeder continues from CB-L701 through RELAY-K701.
+RELAY-K701,INST-RPS701,P,accepted,Solid load feeder from RELAY-K701 terminates at INST-RPS701.
+MCC-701,RELAY-A701,CTRL,accepted,Dashed control/auxiliary lead associates MCC-701 with RELAY-A701.
+INST-RPS701,INST-701,SIG,accepted,Dotted instrument/signal lead from INST-RPS701 to INST-701.
+INST-701,JB-701,SIG,accepted,Dotted signal lead continues from INST-701 to JB-701.
+JB-701,TB-701,SIG,accepted,Dotted signal lead continues from JB-701 to TB-701.
+LCS-701,TB-701,CTRL,accepted,Dashed local control station lead from LCS-701 to TB-701.
+CTRL-PWR-DC-DIST-A,CB-301,P,accepted,Lower A source rail connects directly into CB-301.
+CB-301,TR-120-A,P,accepted,Solid feeder continues from CB-301 to TR-120-A.
+TR-120-A,BUS-120AC-A,P,accepted,TR-120-A output lands on BUS-120AC-A.
+BUS-120AC-A,JB-MAIN,SIG,accepted,Dotted/signal lead from BUS-120AC-A to JB-MAIN.
+CTRL-PWR-DC-DIST-A,CHGR-125A,P,accepted,Lower A source rail branches to CHGR-125A.
+CHGR-125A,BAT-125A,DC,accepted,Charger CHGR-125A connects to BAT-125A.
+BAT-125A,BUS-125DC-A,DC,accepted,BAT-125A connects to BUS-125DC-A.
+BUS-125DC-A,INV-120A,DC,accepted,BUS-125DC-A feeds INV-120A.
+INV-120A,PN-RPS-A,CTRL,accepted,Dashed/control lead from INV-120A to PN-RPS-A.
+CTRL-PWR-DC-DIST-B,CB-302,P,accepted,Lower B source rail connects directly into CB-302.
+CB-302,TR-120-B,P,accepted,Solid feeder continues from CB-302 to TR-120-B.
+TR-120-B,BUS-120AC-B,P,accepted,TR-120-B output lands on BUS-120AC-B.
+CTRL-PWR-DC-DIST-B,CHGR-125B,P,accepted,Lower B source rail branches to CHGR-125B.
+CHGR-125B,BAT-125B,DC,accepted,Charger CHGR-125B connects to BAT-125B.
+BAT-125B,BUS-125DC-B,DC,accepted,BAT-125B connects to BUS-125DC-B.
+BUS-125DC-B,INV-120B,DC,accepted,BUS-125DC-B feeds INV-120B.
+INV-120B,PN-RPS-B,CTRL,accepted,Dashed/control lead from INV-120B to PN-RPS-B.

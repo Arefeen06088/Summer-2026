@@ -1,0 +1,74 @@
+Connectivity matrix validation summary - Document 21
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\21\synthetic_npp_connectivity_matrix_fixed.csv
+
+Scores:
+- Diego -- Round 1 (round01_diego_connectivity_matrix.csv): TP=121, FP=77, FN=83, Precision=0.611111, Recall=0.593137, F1=0.601990
+- Jennifer -- Round 1 (round01_jennifer_connectivity_matrix.csv): TP=121, FP=69, FN=83, Precision=0.636842, Recall=0.593137, F1=0.614213
+- Diego -- Round 2 (round02_diego_connectivity_matrix.csv): TP=121, FP=71, FN=83, Precision=0.630208, Recall=0.593137, F1=0.611111
+- Jennifer -- Round 2 (round02_jennifer_connectivity_matrix.csv): TP=121, FP=71, FN=83, Precision=0.630208, Recall=0.593137, F1=0.611111
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=121, FP=71, FN=83, Precision=0.630208, Recall=0.593137, F1=0.611111
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- BUS-201B -- CB-204A
+- BUS-202A -- UNLABELED-CB-EDG-2A
+- BUS-302B -- TR-NB
+- BUS-401A -- DS-401B
+- BUS-401B -- RECT-24C
+- CB-204A -- DS-201B
+- CB-301A -- DS-501A
+- CB-301B -- DS-501B
+- CB-302A -- DS-502A
+- CB-302B -- DS-502B
+
+False-negative edge examples:
+- BAT-EDG-A -- CP-EDG-A
+- BAT-EDG-B -- CP-EDG-B
+- BUS-201A -- CB-204A
+- BUS-201B -- CB-204B
+- BUS-201B -- DS-201B
+- BUS-202A -- CB-204A
+- BUS-202A -- DS-202A
+- BUS-202B -- CB-204B
+- BUS-301A -- BUS-301B
+- BUS-301A -- DS-401A
+
+Extra/non-GT nodes causing performance drops:
+- UNLABELED-CB-EDG-2A: 2 incident false-positive edge(s)
+- DS-501A: 2 incident false-positive edge(s)
+- DS-501B: 2 incident false-positive edge(s)
+- DS-502A: 2 incident false-positive edge(s)
+- DS-502B: 2 incident false-positive edge(s)
+- K107: 2 incident false-positive edge(s)
+- K110: 2 incident false-positive edge(s)
+- K113: 2 incident false-positive edge(s)
+- K116: 2 incident false-positive edge(s)
+- K101: 2 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (UNLABELED-CB-EDG-2A, DS-501A, DS-501B, DS-502A, DS-502B), final metrics would be TP=121, FP=61, FN=83, Precision=0.664835, Recall=0.593137, F1=0.626943.
+- If all 50 non-GT nodes were omitted, metrics would be TP=121, FP=6, FN=83, Precision=0.952756, Recall=0.593137, F1=0.731118.
+
+Missing GT node examples:
+- CB-204B: 2 missed incident GT edge(s)
+- DS-301A: 2 missed incident GT edge(s)
+- DS-301B: 2 missed incident GT edge(s)
+- DS-302A: 2 missed incident GT edge(s)
+- DS-302B: 2 missed incident GT edge(s)
+- INST-FT202: 2 missed incident GT edge(s)
+- INST-LT302: 2 missed incident GT edge(s)
+- INST-PT101: 2 missed incident GT edge(s)
+- INST-PT103: 2 missed incident GT edge(s)
+- INST-TT402: 2 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted DS-501A vs GT DS-301A (similarity 0.86)
+- Extracted DS-501B vs GT DS-301B (similarity 0.86)
+- Extracted DS-502A vs GT DS-102A (similarity 0.86)
+- Extracted DS-502B vs GT DS-202B (similarity 0.86)

@@ -1,0 +1,7 @@
+document,iteration,round,agent,status,input_text_tokens_est,cached_input_tokens_est,image_file_input_tokens_tile_est,image_file_input_tokens_patch_high_est,output_tokens_est,reasoning_tokens,low_output_tokens_est,expected_output_tokens_est,high_output_tokens_est,expected_total_tokens_tile_est,high_total_tokens_patch_est,usage_object_available,notes
+18,1,main_agent_aggregate,main,completed_estimated,683,0,33915,51080,520,unavailable,442,520,624,35118,52387,no,Aggregate main-agent orchestration; exact internal call count and usage are not exposed.
+18,1,diego_round_01,Diego,completed,2732,0,13260,21596,2600,unavailable,2210,2600,3120,18592,27448,no,High-recall extractor output estimated from returned proposal.
+18,1,jennifer_round_02,Jennifer,completed,3030,0,13345,21794,2500,unavailable,2125,2500,3000,18875,27824,no,Precision reviewer output estimated from returned refinement.
+18,1,diego_round_03,Diego,completed,1830,0,7310,9986,320,unavailable,272,320,384,9460,12200,no,Second Diego delta output estimated from returned message.
+18,1,jennifer_round_04a_interrupted,Jennifer,interrupted_no_matrix,444,0,4420,3672,0,unavailable,0,0,800,4864,4116,no,Likely submitted then interrupted; no usable output/usage object returned.
+18,1,jennifer_round_04b_final,Jennifer,completed_final,544,0,7735,12876,520,unavailable,442,520,624,8799,14044,no,Final agreement output estimated from returned message.

@@ -1,0 +1,2853 @@
+{
+  "document": "24",
+  "iteration": "1",
+  "round": "diego_round2",
+  "role": "high_recall_extractor",
+  "status": "agreement_with_jennifer_round1",
+  "source_restriction": "Doc24 Raw + components only; no GT, no Raw+wires, no OCR engines",
+  "review_notes": [
+    "Diego round 2 saturation check used only Doc24 Raw + components visual resources plus Jennifer round 1 review artifacts supplied by the user for comparison; no GT, GT-derived feedback, Raw+wires, existing wires scripts, or OCR engines were used.",
+    "Agreement reached with Jennifer round 1: the raw center crop does not show a continuous endpoint-to-endpoint conductor from SYNC-CAB to LOAD-SHED-CAB.",
+    "Diego round 2 exactly adopts Jennifer round 1 asserted-edge set: 216 asserted edges, preserving the 200-node matrix order.",
+    "SYNC-CAB <-> LOAD-SHED-CAB remains in uncertain_edges rather than asserted_edges because the visible evidence supports proximity/plausibility but not a direct conductor endpoint.",
+    "No additional visually supported corrections were found during the saturation pass."
+  ],
+  "nodes": [
+    {
+      "id": "OFFSITE-1",
+      "type": "other",
+      "evidence": "AC offsite source oval at upper left, label OFFSITE-1."
+    },
+    {
+      "id": "CB-101A",
+      "type": "component",
+      "evidence": "upper Train A offsite feeder breaker, label CB-101A."
+    },
+    {
+      "id": "TR-SAT-1A",
+      "type": "component",
+      "evidence": "upper Train A transformer symbol, label TR-SAT-1A."
+    },
+    {
+      "id": "EDG-1A",
+      "type": "other",
+      "evidence": "generator circle above Train A diesel breaker, label EDG-1A."
+    },
+    {
+      "id": "CB-DG1A",
+      "type": "component",
+      "evidence": "Train A emergency diesel generator breaker, label CB-DG1A."
+    },
+    {
+      "id": "SW-MAN-A",
+      "type": "component",
+      "evidence": "Train A manual switch on dashed EDG control line, label SW-MAN-A."
+    },
+    {
+      "id": "TB-DG-A",
+      "type": "component",
+      "evidence": "Train A diesel-generator terminal block on dashed control line, label TB-DG-A."
+    },
+    {
+      "id": "BUS-101A",
+      "type": "bus",
+      "evidence": "upper solid Train A bus labelled BUS-101A with junction dots at source/generator/feeders."
+    },
+    {
+      "id": "CB-TIE-1",
+      "type": "component",
+      "evidence": "central breaker in the upper solid bus tie, label CB-TIE-1."
+    },
+    {
+      "id": "BUS-101B",
+      "type": "bus",
+      "evidence": "upper solid Train B bus labelled BUS-101B with junction dots at source/generator/feeders."
+    },
+    {
+      "id": "OFFSITE-2",
+      "type": "other",
+      "evidence": "AC offsite source oval at upper Train B area, label OFFSITE-2."
+    },
+    {
+      "id": "CB-101B",
+      "type": "component",
+      "evidence": "upper Train B offsite feeder breaker, label CB-101B."
+    },
+    {
+      "id": "TR-SAT-1B",
+      "type": "component",
+      "evidence": "upper Train B transformer symbol, label TR-SAT-1B."
+    },
+    {
+      "id": "EDG-1B",
+      "type": "other",
+      "evidence": "generator circle above Train B diesel breaker, label EDG-1B."
+    },
+    {
+      "id": "CB-DG1B",
+      "type": "component",
+      "evidence": "Train B emergency diesel generator breaker, label CB-DG1B."
+    },
+    {
+      "id": "SW-MAN-B",
+      "type": "component",
+      "evidence": "Train B manual switch on dashed EDG control line, label SW-MAN-B."
+    },
+    {
+      "id": "TB-DG-B",
+      "type": "component",
+      "evidence": "Train B diesel-generator terminal block on dashed control line, label TB-DG-B."
+    },
+    {
+      "id": "CB-201A",
+      "type": "component",
+      "evidence": "vertical Train A feeder breaker below BUS-101A, label CB-201A."
+    },
+    {
+      "id": "TR-1A",
+      "type": "component",
+      "evidence": "Train A transformer below CB-201A, label TR-1A."
+    },
+    {
+      "id": "CB-202A",
+      "type": "component",
+      "evidence": "Train A breaker below TR-1A feeding lower bus, label CB-202A."
+    },
+    {
+      "id": "BUS-201A",
+      "type": "bus",
+      "evidence": "middle Train A 4.16 kV safety bus, labelled BUS-201A at vertical feeder and described as normal/EDG sources."
+    },
+    {
+      "id": "CB-201B",
+      "type": "component",
+      "evidence": "vertical Train B feeder breaker below BUS-101B, label CB-201B."
+    },
+    {
+      "id": "TR-1B",
+      "type": "component",
+      "evidence": "Train B transformer below CB-201B, label TR-1B."
+    },
+    {
+      "id": "CB-202B",
+      "type": "component",
+      "evidence": "Train B breaker below TR-1B feeding lower bus, label CB-202B."
+    },
+    {
+      "id": "BUS-201B",
+      "type": "bus",
+      "evidence": "middle Train B 4.16 kV safety bus, labelled BUS-201B at vertical feeder and described as normal/EDG sources."
+    },
+    {
+      "id": "SYNC-CAB",
+      "type": "panel",
+      "evidence": "central cabinet rectangle below tie/routing channel, label SYNC-CAB."
+    },
+    {
+      "id": "CB-2A01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A01; breaker label CB-2A01."
+    },
+    {
+      "id": "DS-2A01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A01; disconnect label DS-2A01."
+    },
+    {
+      "id": "MCC-2A01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A01; motor-control-center label MCC-2A01."
+    },
+    {
+      "id": "TB-2A01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A01; terminal block label TB-2A01."
+    },
+    {
+      "id": "PUMP-P201A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A01; label PUMP-P201A."
+    },
+    {
+      "id": "HS-2A01",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A01; label HS-2A01."
+    },
+    {
+      "id": "RELAY-K2A01",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A01; label RELAY-K2A01."
+    },
+    {
+      "id": "CB-2A02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A02; breaker label CB-2A02."
+    },
+    {
+      "id": "DS-2A02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A02; disconnect label DS-2A02."
+    },
+    {
+      "id": "MCC-2A02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A02; motor-control-center label MCC-2A02."
+    },
+    {
+      "id": "TB-2A02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A02; terminal block label TB-2A02."
+    },
+    {
+      "id": "FAN-F202A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A02; label FAN-F202A."
+    },
+    {
+      "id": "HS-2A02",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A02; label HS-2A02."
+    },
+    {
+      "id": "RELAY-K2A02",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A02; label RELAY-K2A02."
+    },
+    {
+      "id": "CB-2A03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A03; breaker label CB-2A03."
+    },
+    {
+      "id": "DS-2A03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A03; disconnect label DS-2A03."
+    },
+    {
+      "id": "MCC-2A03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A03; motor-control-center label MCC-2A03."
+    },
+    {
+      "id": "TB-2A03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A03; terminal block label TB-2A03."
+    },
+    {
+      "id": "MOV-HV203A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A03; label MOV-HV203A."
+    },
+    {
+      "id": "HS-2A03",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A03; label HS-2A03."
+    },
+    {
+      "id": "RELAY-K2A03",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A03; label RELAY-K2A03."
+    },
+    {
+      "id": "CB-2A04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A04; breaker label CB-2A04."
+    },
+    {
+      "id": "DS-2A04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A04; disconnect label DS-2A04."
+    },
+    {
+      "id": "MCC-2A04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A04; motor-control-center label MCC-2A04."
+    },
+    {
+      "id": "TB-2A04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A04; terminal block label TB-2A04."
+    },
+    {
+      "id": "PUMP-P204A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A04; label PUMP-P204A."
+    },
+    {
+      "id": "HS-2A04",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A04; label HS-2A04."
+    },
+    {
+      "id": "RELAY-K2A04",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A04; label RELAY-K2A04."
+    },
+    {
+      "id": "CB-2A05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A05; breaker label CB-2A05."
+    },
+    {
+      "id": "DS-2A05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A05; disconnect label DS-2A05."
+    },
+    {
+      "id": "MCC-2A05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A05; motor-control-center label MCC-2A05."
+    },
+    {
+      "id": "TB-2A05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A05; terminal block label TB-2A05."
+    },
+    {
+      "id": "CHLR-205A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A05; label CHLR-205A."
+    },
+    {
+      "id": "HS-2A05",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A05; label HS-2A05."
+    },
+    {
+      "id": "RELAY-K2A05",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A05; label RELAY-K2A05."
+    },
+    {
+      "id": "CB-2A06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A06; breaker label CB-2A06."
+    },
+    {
+      "id": "DS-2A06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A06; disconnect label DS-2A06."
+    },
+    {
+      "id": "MCC-2A06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A06; motor-control-center label MCC-2A06."
+    },
+    {
+      "id": "TB-2A06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A06; terminal block label TB-2A06."
+    },
+    {
+      "id": "HTR-206A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A06; label HTR-206A."
+    },
+    {
+      "id": "HS-2A06",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A06; label HS-2A06."
+    },
+    {
+      "id": "RELAY-K2A06",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A06; label RELAY-K2A06."
+    },
+    {
+      "id": "CB-2A07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A07; breaker label CB-2A07."
+    },
+    {
+      "id": "DS-2A07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A07; disconnect label DS-2A07."
+    },
+    {
+      "id": "MCC-2A07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A07; motor-control-center label MCC-2A07."
+    },
+    {
+      "id": "TB-2A07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A07; terminal block label TB-2A07."
+    },
+    {
+      "id": "VALVE-MV207A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A07; label VALVE-MV207A."
+    },
+    {
+      "id": "HS-2A07",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A07; label HS-2A07."
+    },
+    {
+      "id": "RELAY-K2A07",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A07; label RELAY-K2A07."
+    },
+    {
+      "id": "CB-2A08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A08; breaker label CB-2A08."
+    },
+    {
+      "id": "DS-2A08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A08; disconnect label DS-2A08."
+    },
+    {
+      "id": "MCC-2A08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A08; motor-control-center label MCC-2A08."
+    },
+    {
+      "id": "TB-2A08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A08; terminal block label TB-2A08."
+    },
+    {
+      "id": "PMP-LP208A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A08; label PMP-LP208A."
+    },
+    {
+      "id": "HS-2A08",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A08; label HS-2A08."
+    },
+    {
+      "id": "RELAY-K2A08",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A08; label RELAY-K2A08."
+    },
+    {
+      "id": "CB-2A09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A09; breaker label CB-2A09."
+    },
+    {
+      "id": "DS-2A09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A09; disconnect label DS-2A09."
+    },
+    {
+      "id": "MCC-2A09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A09; motor-control-center label MCC-2A09."
+    },
+    {
+      "id": "TB-2A09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2A09; terminal block label TB-2A09."
+    },
+    {
+      "id": "COMP-C209A",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2A09; label COMP-C209A."
+    },
+    {
+      "id": "HS-2A09",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2A09; label HS-2A09."
+    },
+    {
+      "id": "RELAY-K2A09",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2A09; label RELAY-K2A09."
+    },
+    {
+      "id": "CB-2B01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B01; breaker label CB-2B01."
+    },
+    {
+      "id": "DS-2B01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B01; disconnect label DS-2B01."
+    },
+    {
+      "id": "MCC-2B01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B01; motor-control-center label MCC-2B01."
+    },
+    {
+      "id": "TB-2B01",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B01; terminal block label TB-2B01."
+    },
+    {
+      "id": "PUMP-P201B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B01; label PUMP-P201B."
+    },
+    {
+      "id": "HS-2B01",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B01; label HS-2B01."
+    },
+    {
+      "id": "RELAY-K2B01",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B01; label RELAY-K2B01."
+    },
+    {
+      "id": "CB-2B02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B02; breaker label CB-2B02."
+    },
+    {
+      "id": "DS-2B02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B02; disconnect label DS-2B02."
+    },
+    {
+      "id": "MCC-2B02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B02; motor-control-center label MCC-2B02."
+    },
+    {
+      "id": "TB-2B02",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B02; terminal block label TB-2B02."
+    },
+    {
+      "id": "FAN-F202B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B02; label FAN-F202B."
+    },
+    {
+      "id": "HS-2B02",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B02; label HS-2B02."
+    },
+    {
+      "id": "RELAY-K2B02",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B02; label RELAY-K2B02."
+    },
+    {
+      "id": "CB-2B03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B03; breaker label CB-2B03."
+    },
+    {
+      "id": "DS-2B03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B03; disconnect label DS-2B03."
+    },
+    {
+      "id": "MCC-2B03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B03; motor-control-center label MCC-2B03."
+    },
+    {
+      "id": "TB-2B03",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B03; terminal block label TB-2B03."
+    },
+    {
+      "id": "MOV-HV203B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B03; label MOV-HV203B."
+    },
+    {
+      "id": "HS-2B03",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B03; label HS-2B03."
+    },
+    {
+      "id": "RELAY-K2B03",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B03; label RELAY-K2B03."
+    },
+    {
+      "id": "CB-2B04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B04; breaker label CB-2B04."
+    },
+    {
+      "id": "DS-2B04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B04; disconnect label DS-2B04."
+    },
+    {
+      "id": "MCC-2B04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B04; motor-control-center label MCC-2B04."
+    },
+    {
+      "id": "TB-2B04",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B04; terminal block label TB-2B04."
+    },
+    {
+      "id": "PUMP-P204B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B04; label PUMP-P204B."
+    },
+    {
+      "id": "HS-2B04",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B04; label HS-2B04."
+    },
+    {
+      "id": "RELAY-K2B04",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B04; label RELAY-K2B04."
+    },
+    {
+      "id": "CB-2B05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B05; breaker label CB-2B05."
+    },
+    {
+      "id": "DS-2B05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B05; disconnect label DS-2B05."
+    },
+    {
+      "id": "MCC-2B05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B05; motor-control-center label MCC-2B05."
+    },
+    {
+      "id": "TB-2B05",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B05; terminal block label TB-2B05."
+    },
+    {
+      "id": "CHLR-205B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B05; label CHLR-205B."
+    },
+    {
+      "id": "HS-2B05",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B05; label HS-2B05."
+    },
+    {
+      "id": "RELAY-K2B05",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B05; label RELAY-K2B05."
+    },
+    {
+      "id": "CB-2B06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B06; breaker label CB-2B06."
+    },
+    {
+      "id": "DS-2B06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B06; disconnect label DS-2B06."
+    },
+    {
+      "id": "MCC-2B06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B06; motor-control-center label MCC-2B06."
+    },
+    {
+      "id": "TB-2B06",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B06; terminal block label TB-2B06."
+    },
+    {
+      "id": "HTR-206B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B06; label HTR-206B."
+    },
+    {
+      "id": "HS-2B06",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B06; label HS-2B06."
+    },
+    {
+      "id": "RELAY-K2B06",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B06; label RELAY-K2B06."
+    },
+    {
+      "id": "CB-2B07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B07; breaker label CB-2B07."
+    },
+    {
+      "id": "DS-2B07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B07; disconnect label DS-2B07."
+    },
+    {
+      "id": "MCC-2B07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B07; motor-control-center label MCC-2B07."
+    },
+    {
+      "id": "TB-2B07",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B07; terminal block label TB-2B07."
+    },
+    {
+      "id": "VALVE-MV207B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B07; label VALVE-MV207B."
+    },
+    {
+      "id": "HS-2B07",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B07; label HS-2B07."
+    },
+    {
+      "id": "RELAY-K2B07",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B07; label RELAY-K2B07."
+    },
+    {
+      "id": "CB-2B08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B08; breaker label CB-2B08."
+    },
+    {
+      "id": "DS-2B08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B08; disconnect label DS-2B08."
+    },
+    {
+      "id": "MCC-2B08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B08; motor-control-center label MCC-2B08."
+    },
+    {
+      "id": "TB-2B08",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B08; terminal block label TB-2B08."
+    },
+    {
+      "id": "PMP-LP208B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B08; label PMP-LP208B."
+    },
+    {
+      "id": "HS-2B08",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B08; label HS-2B08."
+    },
+    {
+      "id": "RELAY-K2B08",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B08; label RELAY-K2B08."
+    },
+    {
+      "id": "CB-2B09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B09; breaker label CB-2B09."
+    },
+    {
+      "id": "DS-2B09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B09; disconnect label DS-2B09."
+    },
+    {
+      "id": "MCC-2B09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B09; motor-control-center label MCC-2B09."
+    },
+    {
+      "id": "TB-2B09",
+      "type": "component",
+      "evidence": "vertical feeder branch 2B09; terminal block label TB-2B09."
+    },
+    {
+      "id": "COMP-C209B",
+      "type": "load",
+      "evidence": "load at bottom of feeder branch 2B09; label COMP-C209B."
+    },
+    {
+      "id": "HS-2B09",
+      "type": "component",
+      "evidence": "hand switch on lower dashed control row under branch 2B09; label HS-2B09."
+    },
+    {
+      "id": "RELAY-K2B09",
+      "type": "relay",
+      "evidence": "relay on lower dashed control row under branch 2B09; label RELAY-K2B09."
+    },
+    {
+      "id": "DC-BUS-125A",
+      "type": "bus",
+      "evidence": "lower solid DC bus in Train A area, label DC-BUS-125A."
+    },
+    {
+      "id": "BAT-125A",
+      "type": "component",
+      "evidence": "battery block connected below DC-BUS-125A, label BAT-125A."
+    },
+    {
+      "id": "CHG-125A",
+      "type": "component",
+      "evidence": "charger block connected below DC-BUS-125A, label CHG-125A."
+    },
+    {
+      "id": "INV-120A",
+      "type": "component",
+      "evidence": "inverter block connected below DC-BUS-125A, label INV-120A."
+    },
+    {
+      "id": "METER-V1",
+      "type": "instrument",
+      "evidence": "voltmeter circle at right end of DC-BUS-125A, label METER-V1."
+    },
+    {
+      "id": "PNL-DC-A",
+      "type": "panel",
+      "evidence": "Train A DC panel connected to DC-BUS-125A, label PNL-DC-A."
+    },
+    {
+      "id": "ESFAS-PNL-A",
+      "type": "panel",
+      "evidence": "Train A ESFAS panel connected to PNL-DC-A, label ESFAS-PNL-A."
+    },
+    {
+      "id": "GND-DC-A",
+      "type": "ground",
+      "evidence": "ground symbol below PNL-DC-A, label GND-DC-A."
+    },
+    {
+      "id": "PNL-AC-A",
+      "type": "panel",
+      "evidence": "Train A AC panel below INV-120A, label PNL-AC-A."
+    },
+    {
+      "id": "RPS-PNL-A",
+      "type": "panel",
+      "evidence": "Train A RPS panel in lower control area, label RPS-PNL-A."
+    },
+    {
+      "id": "TRIP-MOD-A",
+      "type": "panel",
+      "evidence": "Train A trip module at lower right of Train A control area, label TRIP-MOD-A."
+    },
+    {
+      "id": "PT-401A",
+      "type": "instrument",
+      "evidence": "Train A pressure transmitter circle on dotted signal input, label PT-401A."
+    },
+    {
+      "id": "LT-402A",
+      "type": "instrument",
+      "evidence": "Train A level transmitter circle on dotted signal input, label LT-402A."
+    },
+    {
+      "id": "FT-403A",
+      "type": "instrument",
+      "evidence": "Train A flow transmitter circle on dotted signal input, label FT-403A."
+    },
+    {
+      "id": "JB-401A",
+      "type": "component",
+      "evidence": "Train A junction box receiving PT/LT/FT dotted signals, label JB-401A."
+    },
+    {
+      "id": "TB-RPS-A",
+      "type": "component",
+      "evidence": "Train A RPS terminal block on dotted signal path, label TB-RPS-A."
+    },
+    {
+      "id": "GND-401A",
+      "type": "ground",
+      "evidence": "ground symbol below JB-401A, label GND-401A."
+    },
+    {
+      "id": "RELAY-K27A",
+      "type": "relay",
+      "evidence": "Train A relay in lower dashed trip chain, label RELAY-K27A."
+    },
+    {
+      "id": "RELAY-K59A",
+      "type": "relay",
+      "evidence": "Train A relay in lower dashed trip chain, label RELAY-K59A."
+    },
+    {
+      "id": "RELAY-K81A",
+      "type": "relay",
+      "evidence": "Train A relay in lower dashed trip chain, label RELAY-K81A."
+    },
+    {
+      "id": "RELAY-K86A",
+      "type": "relay",
+      "evidence": "Train A relay at trip module drop, label RELAY-K86A."
+    },
+    {
+      "id": "LOAD-SHED-CAB",
+      "type": "panel",
+      "evidence": "central load-shed cabinet, label LOAD-SHED-CAB."
+    },
+    {
+      "id": "TDR-1",
+      "type": "relay",
+      "evidence": "timer relay/block left of LOAD-SHED-CAB, label TDR-1."
+    },
+    {
+      "id": "TDR-2",
+      "type": "relay",
+      "evidence": "timer relay/block right of LOAD-SHED-CAB, label TDR-2."
+    },
+    {
+      "id": "LAMP-ALM-A",
+      "type": "instrument",
+      "evidence": "alarm lamp below LOAD-SHED-CAB on dotted signal branch, label LAMP-ALM-A."
+    },
+    {
+      "id": "LAMP-ALM-B",
+      "type": "instrument",
+      "evidence": "alarm lamp below LOAD-SHED-CAB on dotted signal branch, label LAMP-ALM-B."
+    },
+    {
+      "id": "ANN-PNL-1",
+      "type": "panel",
+      "evidence": "annunciator panel below center signal path, label ANN-PNL-1."
+    },
+    {
+      "id": "SEQ-REC-1",
+      "type": "instrument",
+      "evidence": "sequence recorder block right of ANN-PNL-1, label SEQ-REC-1."
+    },
+    {
+      "id": "DC-BUS-125B",
+      "type": "bus",
+      "evidence": "lower solid DC bus in Train B area, label DC-BUS-125B."
+    },
+    {
+      "id": "BAT-125B",
+      "type": "component",
+      "evidence": "battery block connected below DC-BUS-125B, label BAT-125B."
+    },
+    {
+      "id": "CHG-125B",
+      "type": "component",
+      "evidence": "charger block connected below DC-BUS-125B, label CHG-125B."
+    },
+    {
+      "id": "INV-120B",
+      "type": "component",
+      "evidence": "inverter block connected below DC-BUS-125B, label INV-120B."
+    },
+    {
+      "id": "PNL-DC-B",
+      "type": "panel",
+      "evidence": "Train B DC panel connected to DC-BUS-125B, label PNL-DC-B."
+    },
+    {
+      "id": "ESFAS-PNL-B",
+      "type": "panel",
+      "evidence": "Train B ESFAS panel connected to PNL-DC-B, label ESFAS-PNL-B."
+    },
+    {
+      "id": "GND-DC-B",
+      "type": "ground",
+      "evidence": "ground symbol below PNL-DC-B, label GND-DC-B."
+    },
+    {
+      "id": "PNL-AC-B",
+      "type": "panel",
+      "evidence": "Train B AC panel below INV-120B, label PNL-AC-B."
+    },
+    {
+      "id": "RPS-PNL-B",
+      "type": "panel",
+      "evidence": "Train B RPS panel in lower control area, label RPS-PNL-B."
+    },
+    {
+      "id": "TRIP-MOD-B",
+      "type": "panel",
+      "evidence": "Train B trip module at lower right control area, label TRIP-MOD-B."
+    },
+    {
+      "id": "PT-401B",
+      "type": "instrument",
+      "evidence": "Train B pressure transmitter circle on dotted signal input, label PT-401B."
+    },
+    {
+      "id": "LT-402B",
+      "type": "instrument",
+      "evidence": "Train B level transmitter circle on dotted signal input, label LT-402B."
+    },
+    {
+      "id": "FT-403B",
+      "type": "instrument",
+      "evidence": "Train B flow transmitter circle on dotted signal input, label FT-403B."
+    },
+    {
+      "id": "JB-401B",
+      "type": "component",
+      "evidence": "Train B junction box receiving PT/LT/FT dotted signals, label JB-401B."
+    },
+    {
+      "id": "TB-RPS-B",
+      "type": "component",
+      "evidence": "Train B RPS terminal block on dotted signal path, label TB-RPS-B."
+    },
+    {
+      "id": "GND-401B",
+      "type": "ground",
+      "evidence": "ground symbol below JB-401B, label GND-401B."
+    },
+    {
+      "id": "RELAY-K27B",
+      "type": "relay",
+      "evidence": "Train B relay in lower dashed trip chain, label RELAY-K27B."
+    },
+    {
+      "id": "RELAY-K59B",
+      "type": "relay",
+      "evidence": "Train B relay in lower dashed trip chain, label RELAY-K59B."
+    },
+    {
+      "id": "RELAY-K81B",
+      "type": "relay",
+      "evidence": "Train B relay in lower dashed trip chain, label RELAY-K81B."
+    },
+    {
+      "id": "RELAY-K86B",
+      "type": "relay",
+      "evidence": "Train B relay at trip module drop, label RELAY-K86B."
+    }
+  ],
+  "matrix_order": [
+    "OFFSITE-1",
+    "CB-101A",
+    "TR-SAT-1A",
+    "EDG-1A",
+    "CB-DG1A",
+    "SW-MAN-A",
+    "TB-DG-A",
+    "BUS-101A",
+    "CB-TIE-1",
+    "BUS-101B",
+    "OFFSITE-2",
+    "CB-101B",
+    "TR-SAT-1B",
+    "EDG-1B",
+    "CB-DG1B",
+    "SW-MAN-B",
+    "TB-DG-B",
+    "CB-201A",
+    "TR-1A",
+    "CB-202A",
+    "BUS-201A",
+    "CB-201B",
+    "TR-1B",
+    "CB-202B",
+    "BUS-201B",
+    "SYNC-CAB",
+    "CB-2A01",
+    "DS-2A01",
+    "MCC-2A01",
+    "TB-2A01",
+    "PUMP-P201A",
+    "HS-2A01",
+    "RELAY-K2A01",
+    "CB-2A02",
+    "DS-2A02",
+    "MCC-2A02",
+    "TB-2A02",
+    "FAN-F202A",
+    "HS-2A02",
+    "RELAY-K2A02",
+    "CB-2A03",
+    "DS-2A03",
+    "MCC-2A03",
+    "TB-2A03",
+    "MOV-HV203A",
+    "HS-2A03",
+    "RELAY-K2A03",
+    "CB-2A04",
+    "DS-2A04",
+    "MCC-2A04",
+    "TB-2A04",
+    "PUMP-P204A",
+    "HS-2A04",
+    "RELAY-K2A04",
+    "CB-2A05",
+    "DS-2A05",
+    "MCC-2A05",
+    "TB-2A05",
+    "CHLR-205A",
+    "HS-2A05",
+    "RELAY-K2A05",
+    "CB-2A06",
+    "DS-2A06",
+    "MCC-2A06",
+    "TB-2A06",
+    "HTR-206A",
+    "HS-2A06",
+    "RELAY-K2A06",
+    "CB-2A07",
+    "DS-2A07",
+    "MCC-2A07",
+    "TB-2A07",
+    "VALVE-MV207A",
+    "HS-2A07",
+    "RELAY-K2A07",
+    "CB-2A08",
+    "DS-2A08",
+    "MCC-2A08",
+    "TB-2A08",
+    "PMP-LP208A",
+    "HS-2A08",
+    "RELAY-K2A08",
+    "CB-2A09",
+    "DS-2A09",
+    "MCC-2A09",
+    "TB-2A09",
+    "COMP-C209A",
+    "HS-2A09",
+    "RELAY-K2A09",
+    "CB-2B01",
+    "DS-2B01",
+    "MCC-2B01",
+    "TB-2B01",
+    "PUMP-P201B",
+    "HS-2B01",
+    "RELAY-K2B01",
+    "CB-2B02",
+    "DS-2B02",
+    "MCC-2B02",
+    "TB-2B02",
+    "FAN-F202B",
+    "HS-2B02",
+    "RELAY-K2B02",
+    "CB-2B03",
+    "DS-2B03",
+    "MCC-2B03",
+    "TB-2B03",
+    "MOV-HV203B",
+    "HS-2B03",
+    "RELAY-K2B03",
+    "CB-2B04",
+    "DS-2B04",
+    "MCC-2B04",
+    "TB-2B04",
+    "PUMP-P204B",
+    "HS-2B04",
+    "RELAY-K2B04",
+    "CB-2B05",
+    "DS-2B05",
+    "MCC-2B05",
+    "TB-2B05",
+    "CHLR-205B",
+    "HS-2B05",
+    "RELAY-K2B05",
+    "CB-2B06",
+    "DS-2B06",
+    "MCC-2B06",
+    "TB-2B06",
+    "HTR-206B",
+    "HS-2B06",
+    "RELAY-K2B06",
+    "CB-2B07",
+    "DS-2B07",
+    "MCC-2B07",
+    "TB-2B07",
+    "VALVE-MV207B",
+    "HS-2B07",
+    "RELAY-K2B07",
+    "CB-2B08",
+    "DS-2B08",
+    "MCC-2B08",
+    "TB-2B08",
+    "PMP-LP208B",
+    "HS-2B08",
+    "RELAY-K2B08",
+    "CB-2B09",
+    "DS-2B09",
+    "MCC-2B09",
+    "TB-2B09",
+    "COMP-C209B",
+    "HS-2B09",
+    "RELAY-K2B09",
+    "DC-BUS-125A",
+    "BAT-125A",
+    "CHG-125A",
+    "INV-120A",
+    "METER-V1",
+    "PNL-DC-A",
+    "ESFAS-PNL-A",
+    "GND-DC-A",
+    "PNL-AC-A",
+    "RPS-PNL-A",
+    "TRIP-MOD-A",
+    "PT-401A",
+    "LT-402A",
+    "FT-403A",
+    "JB-401A",
+    "TB-RPS-A",
+    "GND-401A",
+    "RELAY-K27A",
+    "RELAY-K59A",
+    "RELAY-K81A",
+    "RELAY-K86A",
+    "LOAD-SHED-CAB",
+    "TDR-1",
+    "TDR-2",
+    "LAMP-ALM-A",
+    "LAMP-ALM-B",
+    "ANN-PNL-1",
+    "SEQ-REC-1",
+    "DC-BUS-125B",
+    "BAT-125B",
+    "CHG-125B",
+    "INV-120B",
+    "PNL-DC-B",
+    "ESFAS-PNL-B",
+    "GND-DC-B",
+    "PNL-AC-B",
+    "RPS-PNL-B",
+    "TRIP-MOD-B",
+    "PT-401B",
+    "LT-402B",
+    "FT-403B",
+    "JB-401B",
+    "TB-RPS-B",
+    "GND-401B",
+    "RELAY-K27B",
+    "RELAY-K59B",
+    "RELAY-K81B",
+    "RELAY-K86B"
+  ],
+  "asserted_edges": [
+    {
+      "source": "OFFSITE-1",
+      "target": "CB-101A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid horizontal line from OFFSITE-1 AC source to CB-101A."
+    },
+    {
+      "source": "CB-101A",
+      "target": "TR-SAT-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid horizontal line from CB-101A to TR-SAT-1A."
+    },
+    {
+      "source": "TR-SAT-1A",
+      "target": "BUS-101A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical drop from TR-SAT-1A to BUS-101A with junction dot."
+    },
+    {
+      "source": "EDG-1A",
+      "target": "CB-DG1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical line from EDG-1A generator circle to CB-DG1A."
+    },
+    {
+      "source": "CB-DG1A",
+      "target": "BUS-101A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical line from CB-DG1A to BUS-101A with junction dot."
+    },
+    {
+      "source": "SW-MAN-A",
+      "target": "TB-DG-A",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed control/trip line from SW-MAN-A to TB-DG-A."
+    },
+    {
+      "source": "TB-DG-A",
+      "target": "CB-DG1A",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed control/trip line from TB-DG-A to the left side of CB-DG1A."
+    },
+    {
+      "source": "BUS-101A",
+      "target": "CB-201A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from BUS-101A down to CB-201A."
+    },
+    {
+      "source": "CB-201A",
+      "target": "TR-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-201A to TR-1A."
+    },
+    {
+      "source": "TR-1A",
+      "target": "CB-202A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from TR-1A to CB-202A."
+    },
+    {
+      "source": "CB-202A",
+      "target": "BUS-201A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-202A to BUS-201A with junction dot."
+    },
+    {
+      "source": "BUS-101A",
+      "target": "CB-TIE-1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "upper solid bus reaches left side of CB-TIE-1 from BUS-101A."
+    },
+    {
+      "source": "CB-TIE-1",
+      "target": "BUS-101B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "upper solid bus leaves right side of CB-TIE-1 toward BUS-101B."
+    },
+    {
+      "source": "CB-TIE-1",
+      "target": "SYNC-CAB",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "vertical dashed control/trip routing drops from CB-TIE-1 area toward SYNC-CAB."
+    },
+    {
+      "source": "OFFSITE-2",
+      "target": "CB-101B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid horizontal line from OFFSITE-2 AC source to CB-101B."
+    },
+    {
+      "source": "CB-101B",
+      "target": "TR-SAT-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid horizontal line from CB-101B to TR-SAT-1B."
+    },
+    {
+      "source": "TR-SAT-1B",
+      "target": "BUS-101B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical drop from TR-SAT-1B to BUS-101B with junction dot."
+    },
+    {
+      "source": "EDG-1B",
+      "target": "CB-DG1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical line from EDG-1B generator circle to CB-DG1B."
+    },
+    {
+      "source": "CB-DG1B",
+      "target": "BUS-101B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical line from CB-DG1B to BUS-101B with junction dot."
+    },
+    {
+      "source": "SW-MAN-B",
+      "target": "TB-DG-B",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed control/trip line from SW-MAN-B to TB-DG-B."
+    },
+    {
+      "source": "TB-DG-B",
+      "target": "CB-DG1B",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed control/trip line from TB-DG-B to the left side of CB-DG1B."
+    },
+    {
+      "source": "BUS-101B",
+      "target": "CB-201B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from BUS-101B down to CB-201B."
+    },
+    {
+      "source": "CB-201B",
+      "target": "TR-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-201B to TR-1B."
+    },
+    {
+      "source": "TR-1B",
+      "target": "CB-202B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from TR-1B to CB-202B."
+    },
+    {
+      "source": "CB-202B",
+      "target": "BUS-201B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-202B to BUS-201B with junction dot."
+    },
+    {
+      "source": "BUS-201A",
+      "target": "CB-2A01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201A to CB-2A01."
+    },
+    {
+      "source": "CB-2A01",
+      "target": "DS-2A01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2A01 down to DS-2A01."
+    },
+    {
+      "source": "DS-2A01",
+      "target": "MCC-2A01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2A01 down to MCC-2A01."
+    },
+    {
+      "source": "MCC-2A01",
+      "target": "TB-2A01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2A01 to TB-2A01."
+    },
+    {
+      "source": "TB-2A01",
+      "target": "PUMP-P201A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2A01 to load label PUMP-P201A."
+    },
+    {
+      "source": "MCC-2A01",
+      "target": "RELAY-K2A01",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2A01 side to RELAY-K2A01."
+    },
+    {
+      "source": "BUS-201A",
+      "target": "CB-2A02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201A to CB-2A02."
+    },
+    {
+      "source": "CB-2A02",
+      "target": "DS-2A02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2A02 down to DS-2A02."
+    },
+    {
+      "source": "DS-2A02",
+      "target": "MCC-2A02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2A02 down to MCC-2A02."
+    },
+    {
+      "source": "MCC-2A02",
+      "target": "TB-2A02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2A02 to TB-2A02."
+    },
+    {
+      "source": "TB-2A02",
+      "target": "FAN-F202A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2A02 to load label FAN-F202A."
+    },
+    {
+      "source": "MCC-2A02",
+      "target": "RELAY-K2A02",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2A02 side to RELAY-K2A02."
+    },
+    {
+      "source": "BUS-201A",
+      "target": "CB-2A03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201A to CB-2A03."
+    },
+    {
+      "source": "CB-2A03",
+      "target": "DS-2A03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2A03 down to DS-2A03."
+    },
+    {
+      "source": "DS-2A03",
+      "target": "MCC-2A03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2A03 down to MCC-2A03."
+    },
+    {
+      "source": "MCC-2A03",
+      "target": "TB-2A03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2A03 to TB-2A03."
+    },
+    {
+      "source": "TB-2A03",
+      "target": "MOV-HV203A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2A03 to load label MOV-HV203A."
+    },
+    {
+      "source": "MCC-2A03",
+      "target": "RELAY-K2A03",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2A03 side to RELAY-K2A03."
+    },
+    {
+      "source": "BUS-201A",
+      "target": "CB-2A04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201A to CB-2A04."
+    },
+    {
+      "source": "CB-2A04",
+      "target": "DS-2A04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2A04 down to DS-2A04."
+    },
+    {
+      "source": "DS-2A04",
+      "target": "MCC-2A04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2A04 down to MCC-2A04."
+    },
+    {
+      "source": "MCC-2A04",
+      "target": "TB-2A04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2A04 to TB-2A04."
+    },
+    {
+      "source": "TB-2A04",
+      "target": "PUMP-P204A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2A04 to load label PUMP-P204A."
+    },
+    {
+      "source": "MCC-2A04",
+      "target": "RELAY-K2A04",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2A04 side to RELAY-K2A04."
+    },
+    {
+      "source": "BUS-201A",
+      "target": "CB-2A05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201A to CB-2A05."
+    },
+    {
+      "source": "CB-2A05",
+      "target": "DS-2A05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2A05 down to DS-2A05."
+    },
+    {
+      "source": "DS-2A05",
+      "target": "MCC-2A05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2A05 down to MCC-2A05."
+    },
+    {
+      "source": "MCC-2A05",
+      "target": "TB-2A05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2A05 to TB-2A05."
+    },
+    {
+      "source": "TB-2A05",
+      "target": "CHLR-205A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2A05 to load label CHLR-205A."
+    },
+    {
+      "source": "MCC-2A05",
+      "target": "RELAY-K2A05",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2A05 side to RELAY-K2A05."
+    },
+    {
+      "source": "BUS-201A",
+      "target": "CB-2A06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201A to CB-2A06."
+    },
+    {
+      "source": "CB-2A06",
+      "target": "DS-2A06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2A06 down to DS-2A06."
+    },
+    {
+      "source": "DS-2A06",
+      "target": "MCC-2A06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2A06 down to MCC-2A06."
+    },
+    {
+      "source": "MCC-2A06",
+      "target": "TB-2A06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2A06 to TB-2A06."
+    },
+    {
+      "source": "TB-2A06",
+      "target": "HTR-206A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2A06 to load label HTR-206A."
+    },
+    {
+      "source": "MCC-2A06",
+      "target": "RELAY-K2A06",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2A06 side to RELAY-K2A06."
+    },
+    {
+      "source": "BUS-201A",
+      "target": "CB-2A07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201A to CB-2A07."
+    },
+    {
+      "source": "CB-2A07",
+      "target": "DS-2A07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2A07 down to DS-2A07."
+    },
+    {
+      "source": "DS-2A07",
+      "target": "MCC-2A07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2A07 down to MCC-2A07."
+    },
+    {
+      "source": "MCC-2A07",
+      "target": "TB-2A07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2A07 to TB-2A07."
+    },
+    {
+      "source": "TB-2A07",
+      "target": "VALVE-MV207A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2A07 to load label VALVE-MV207A."
+    },
+    {
+      "source": "MCC-2A07",
+      "target": "RELAY-K2A07",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2A07 side to RELAY-K2A07."
+    },
+    {
+      "source": "BUS-201A",
+      "target": "CB-2A08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201A to CB-2A08."
+    },
+    {
+      "source": "CB-2A08",
+      "target": "DS-2A08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2A08 down to DS-2A08."
+    },
+    {
+      "source": "DS-2A08",
+      "target": "MCC-2A08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2A08 down to MCC-2A08."
+    },
+    {
+      "source": "MCC-2A08",
+      "target": "TB-2A08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2A08 to TB-2A08."
+    },
+    {
+      "source": "TB-2A08",
+      "target": "PMP-LP208A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2A08 to load label PMP-LP208A."
+    },
+    {
+      "source": "MCC-2A08",
+      "target": "RELAY-K2A08",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2A08 side to RELAY-K2A08."
+    },
+    {
+      "source": "BUS-201A",
+      "target": "CB-2A09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201A to CB-2A09."
+    },
+    {
+      "source": "CB-2A09",
+      "target": "DS-2A09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2A09 down to DS-2A09."
+    },
+    {
+      "source": "DS-2A09",
+      "target": "MCC-2A09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2A09 down to MCC-2A09."
+    },
+    {
+      "source": "MCC-2A09",
+      "target": "TB-2A09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2A09 to TB-2A09."
+    },
+    {
+      "source": "TB-2A09",
+      "target": "COMP-C209A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2A09 to load label COMP-C209A."
+    },
+    {
+      "source": "MCC-2A09",
+      "target": "RELAY-K2A09",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2A09 side to RELAY-K2A09."
+    },
+    {
+      "source": "HS-2A01",
+      "target": "RELAY-K2A01",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between HS-2A01 and RELAY-K2A01."
+    },
+    {
+      "source": "RELAY-K2A01",
+      "target": "HS-2A02",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between RELAY-K2A01 and HS-2A02."
+    },
+    {
+      "source": "HS-2A02",
+      "target": "RELAY-K2A02",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between HS-2A02 and RELAY-K2A02."
+    },
+    {
+      "source": "RELAY-K2A02",
+      "target": "HS-2A03",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between RELAY-K2A02 and HS-2A03."
+    },
+    {
+      "source": "HS-2A03",
+      "target": "RELAY-K2A03",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between HS-2A03 and RELAY-K2A03."
+    },
+    {
+      "source": "RELAY-K2A03",
+      "target": "HS-2A04",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between RELAY-K2A03 and HS-2A04."
+    },
+    {
+      "source": "HS-2A04",
+      "target": "RELAY-K2A04",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between HS-2A04 and RELAY-K2A04."
+    },
+    {
+      "source": "RELAY-K2A04",
+      "target": "HS-2A05",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between RELAY-K2A04 and HS-2A05."
+    },
+    {
+      "source": "HS-2A05",
+      "target": "RELAY-K2A05",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between HS-2A05 and RELAY-K2A05."
+    },
+    {
+      "source": "RELAY-K2A05",
+      "target": "HS-2A06",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between RELAY-K2A05 and HS-2A06."
+    },
+    {
+      "source": "HS-2A06",
+      "target": "RELAY-K2A06",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between HS-2A06 and RELAY-K2A06."
+    },
+    {
+      "source": "RELAY-K2A06",
+      "target": "HS-2A07",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between RELAY-K2A06 and HS-2A07."
+    },
+    {
+      "source": "HS-2A07",
+      "target": "RELAY-K2A07",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between HS-2A07 and RELAY-K2A07."
+    },
+    {
+      "source": "RELAY-K2A07",
+      "target": "HS-2A08",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between RELAY-K2A07 and HS-2A08."
+    },
+    {
+      "source": "HS-2A08",
+      "target": "RELAY-K2A08",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between HS-2A08 and RELAY-K2A08."
+    },
+    {
+      "source": "RELAY-K2A08",
+      "target": "HS-2A09",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between RELAY-K2A08 and HS-2A09."
+    },
+    {
+      "source": "HS-2A09",
+      "target": "RELAY-K2A09",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train A, between HS-2A09 and RELAY-K2A09."
+    },
+    {
+      "source": "BUS-201B",
+      "target": "CB-2B01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201B to CB-2B01."
+    },
+    {
+      "source": "CB-2B01",
+      "target": "DS-2B01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2B01 down to DS-2B01."
+    },
+    {
+      "source": "DS-2B01",
+      "target": "MCC-2B01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2B01 down to MCC-2B01."
+    },
+    {
+      "source": "MCC-2B01",
+      "target": "TB-2B01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2B01 to TB-2B01."
+    },
+    {
+      "source": "TB-2B01",
+      "target": "PUMP-P201B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2B01 to load label PUMP-P201B."
+    },
+    {
+      "source": "MCC-2B01",
+      "target": "RELAY-K2B01",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2B01 side to RELAY-K2B01."
+    },
+    {
+      "source": "BUS-201B",
+      "target": "CB-2B02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201B to CB-2B02."
+    },
+    {
+      "source": "CB-2B02",
+      "target": "DS-2B02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2B02 down to DS-2B02."
+    },
+    {
+      "source": "DS-2B02",
+      "target": "MCC-2B02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2B02 down to MCC-2B02."
+    },
+    {
+      "source": "MCC-2B02",
+      "target": "TB-2B02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2B02 to TB-2B02."
+    },
+    {
+      "source": "TB-2B02",
+      "target": "FAN-F202B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2B02 to load label FAN-F202B."
+    },
+    {
+      "source": "MCC-2B02",
+      "target": "RELAY-K2B02",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2B02 side to RELAY-K2B02."
+    },
+    {
+      "source": "BUS-201B",
+      "target": "CB-2B03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201B to CB-2B03."
+    },
+    {
+      "source": "CB-2B03",
+      "target": "DS-2B03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2B03 down to DS-2B03."
+    },
+    {
+      "source": "DS-2B03",
+      "target": "MCC-2B03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2B03 down to MCC-2B03."
+    },
+    {
+      "source": "MCC-2B03",
+      "target": "TB-2B03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2B03 to TB-2B03."
+    },
+    {
+      "source": "TB-2B03",
+      "target": "MOV-HV203B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2B03 to load label MOV-HV203B."
+    },
+    {
+      "source": "MCC-2B03",
+      "target": "RELAY-K2B03",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2B03 side to RELAY-K2B03."
+    },
+    {
+      "source": "BUS-201B",
+      "target": "CB-2B04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201B to CB-2B04."
+    },
+    {
+      "source": "CB-2B04",
+      "target": "DS-2B04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2B04 down to DS-2B04."
+    },
+    {
+      "source": "DS-2B04",
+      "target": "MCC-2B04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2B04 down to MCC-2B04."
+    },
+    {
+      "source": "MCC-2B04",
+      "target": "TB-2B04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2B04 to TB-2B04."
+    },
+    {
+      "source": "TB-2B04",
+      "target": "PUMP-P204B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2B04 to load label PUMP-P204B."
+    },
+    {
+      "source": "MCC-2B04",
+      "target": "RELAY-K2B04",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2B04 side to RELAY-K2B04."
+    },
+    {
+      "source": "BUS-201B",
+      "target": "CB-2B05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201B to CB-2B05."
+    },
+    {
+      "source": "CB-2B05",
+      "target": "DS-2B05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2B05 down to DS-2B05."
+    },
+    {
+      "source": "DS-2B05",
+      "target": "MCC-2B05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2B05 down to MCC-2B05."
+    },
+    {
+      "source": "MCC-2B05",
+      "target": "TB-2B05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2B05 to TB-2B05."
+    },
+    {
+      "source": "TB-2B05",
+      "target": "CHLR-205B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2B05 to load label CHLR-205B."
+    },
+    {
+      "source": "MCC-2B05",
+      "target": "RELAY-K2B05",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2B05 side to RELAY-K2B05."
+    },
+    {
+      "source": "BUS-201B",
+      "target": "CB-2B06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201B to CB-2B06."
+    },
+    {
+      "source": "CB-2B06",
+      "target": "DS-2B06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2B06 down to DS-2B06."
+    },
+    {
+      "source": "DS-2B06",
+      "target": "MCC-2B06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2B06 down to MCC-2B06."
+    },
+    {
+      "source": "MCC-2B06",
+      "target": "TB-2B06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2B06 to TB-2B06."
+    },
+    {
+      "source": "TB-2B06",
+      "target": "HTR-206B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2B06 to load label HTR-206B."
+    },
+    {
+      "source": "MCC-2B06",
+      "target": "RELAY-K2B06",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2B06 side to RELAY-K2B06."
+    },
+    {
+      "source": "BUS-201B",
+      "target": "CB-2B07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201B to CB-2B07."
+    },
+    {
+      "source": "CB-2B07",
+      "target": "DS-2B07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2B07 down to DS-2B07."
+    },
+    {
+      "source": "DS-2B07",
+      "target": "MCC-2B07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2B07 down to MCC-2B07."
+    },
+    {
+      "source": "MCC-2B07",
+      "target": "TB-2B07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2B07 to TB-2B07."
+    },
+    {
+      "source": "TB-2B07",
+      "target": "VALVE-MV207B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2B07 to load label VALVE-MV207B."
+    },
+    {
+      "source": "MCC-2B07",
+      "target": "RELAY-K2B07",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2B07 side to RELAY-K2B07."
+    },
+    {
+      "source": "BUS-201B",
+      "target": "CB-2B08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201B to CB-2B08."
+    },
+    {
+      "source": "CB-2B08",
+      "target": "DS-2B08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2B08 down to DS-2B08."
+    },
+    {
+      "source": "DS-2B08",
+      "target": "MCC-2B08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2B08 down to MCC-2B08."
+    },
+    {
+      "source": "MCC-2B08",
+      "target": "TB-2B08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2B08 to TB-2B08."
+    },
+    {
+      "source": "TB-2B08",
+      "target": "PMP-LP208B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2B08 to load label PMP-LP208B."
+    },
+    {
+      "source": "MCC-2B08",
+      "target": "RELAY-K2B08",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2B08 side to RELAY-K2B08."
+    },
+    {
+      "source": "BUS-201B",
+      "target": "CB-2B09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder with black junction dot from BUS-201B to CB-2B09."
+    },
+    {
+      "source": "CB-2B09",
+      "target": "DS-2B09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from CB-2B09 down to DS-2B09."
+    },
+    {
+      "source": "DS-2B09",
+      "target": "MCC-2B09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment from DS-2B09 down to MCC-2B09."
+    },
+    {
+      "source": "MCC-2B09",
+      "target": "TB-2B09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical segment through MCC-2B09 to TB-2B09."
+    },
+    {
+      "source": "TB-2B09",
+      "target": "COMP-C209B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from TB-2B09 to load label COMP-C209B."
+    },
+    {
+      "source": "MCC-2B09",
+      "target": "RELAY-K2B09",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed vertical control/trip drop from MCC-2B09 side to RELAY-K2B09."
+    },
+    {
+      "source": "HS-2B01",
+      "target": "RELAY-K2B01",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between HS-2B01 and RELAY-K2B01."
+    },
+    {
+      "source": "RELAY-K2B01",
+      "target": "HS-2B02",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between RELAY-K2B01 and HS-2B02."
+    },
+    {
+      "source": "HS-2B02",
+      "target": "RELAY-K2B02",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between HS-2B02 and RELAY-K2B02."
+    },
+    {
+      "source": "RELAY-K2B02",
+      "target": "HS-2B03",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between RELAY-K2B02 and HS-2B03."
+    },
+    {
+      "source": "HS-2B03",
+      "target": "RELAY-K2B03",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between HS-2B03 and RELAY-K2B03."
+    },
+    {
+      "source": "RELAY-K2B03",
+      "target": "HS-2B04",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between RELAY-K2B03 and HS-2B04."
+    },
+    {
+      "source": "HS-2B04",
+      "target": "RELAY-K2B04",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between HS-2B04 and RELAY-K2B04."
+    },
+    {
+      "source": "RELAY-K2B04",
+      "target": "HS-2B05",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between RELAY-K2B04 and HS-2B05."
+    },
+    {
+      "source": "HS-2B05",
+      "target": "RELAY-K2B05",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between HS-2B05 and RELAY-K2B05."
+    },
+    {
+      "source": "RELAY-K2B05",
+      "target": "HS-2B06",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between RELAY-K2B05 and HS-2B06."
+    },
+    {
+      "source": "HS-2B06",
+      "target": "RELAY-K2B06",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between HS-2B06 and RELAY-K2B06."
+    },
+    {
+      "source": "RELAY-K2B06",
+      "target": "HS-2B07",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between RELAY-K2B06 and HS-2B07."
+    },
+    {
+      "source": "HS-2B07",
+      "target": "RELAY-K2B07",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between HS-2B07 and RELAY-K2B07."
+    },
+    {
+      "source": "RELAY-K2B07",
+      "target": "HS-2B08",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between RELAY-K2B07 and HS-2B08."
+    },
+    {
+      "source": "HS-2B08",
+      "target": "RELAY-K2B08",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between HS-2B08 and RELAY-K2B08."
+    },
+    {
+      "source": "RELAY-K2B08",
+      "target": "HS-2B09",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between RELAY-K2B08 and HS-2B09."
+    },
+    {
+      "source": "HS-2B09",
+      "target": "RELAY-K2B09",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "continuous dashed lower control/trip row, Train B, between HS-2B09 and RELAY-K2B09."
+    },
+    {
+      "source": "DC-BUS-125A",
+      "target": "BAT-125A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid DC bus tap from DC-BUS-125A to BAT-125A."
+    },
+    {
+      "source": "DC-BUS-125A",
+      "target": "CHG-125A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid DC bus tap from DC-BUS-125A to CHG-125A."
+    },
+    {
+      "source": "DC-BUS-125A",
+      "target": "INV-120A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid DC bus tap from DC-BUS-125A to INV-120A."
+    },
+    {
+      "source": "DC-BUS-125A",
+      "target": "PNL-DC-A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid DC bus tap from DC-BUS-125A to PNL-DC-A."
+    },
+    {
+      "source": "DC-BUS-125A",
+      "target": "METER-V1",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid DC bus tap from DC-BUS-125A to METER-V1."
+    },
+    {
+      "source": "INV-120A",
+      "target": "PNL-AC-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical line from INV-120A to PNL-AC-A."
+    },
+    {
+      "source": "PNL-DC-A",
+      "target": "ESFAS-PNL-A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid horizontal line from PNL-DC-A to ESFAS-PNL-A."
+    },
+    {
+      "source": "PNL-DC-A",
+      "target": "GND-DC-A",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "ground symbol GND-DC-A directly below PNL-DC-A on vertical ground lead."
+    },
+    {
+      "source": "PNL-AC-A",
+      "target": "RPS-PNL-A",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed control/trip line from PNL-AC-A to RPS-PNL-A."
+    },
+    {
+      "source": "RPS-PNL-A",
+      "target": "TRIP-MOD-A",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed control/trip line from RPS-PNL-A to TRIP-MOD-A."
+    },
+    {
+      "source": "ESFAS-PNL-A",
+      "target": "TRIP-MOD-A",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed control/trip route from ESFAS-PNL-A down and around to TRIP-MOD-A area."
+    },
+    {
+      "source": "RPS-PNL-A",
+      "target": "RELAY-K27A",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed vertical drop from RPS-PNL-A to RELAY-K27A."
+    },
+    {
+      "source": "RELAY-K27A",
+      "target": "RELAY-K59A",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed horizontal trip chain between RELAY-K27A and RELAY-K59A."
+    },
+    {
+      "source": "RELAY-K59A",
+      "target": "RELAY-K81A",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed horizontal trip chain between RELAY-K59A and RELAY-K81A."
+    },
+    {
+      "source": "RELAY-K81A",
+      "target": "RELAY-K86A",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed horizontal trip chain between RELAY-K81A and RELAY-K86A."
+    },
+    {
+      "source": "TRIP-MOD-A",
+      "target": "RELAY-K86A",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed vertical drop from TRIP-MOD-A to RELAY-K86A."
+    },
+    {
+      "source": "PT-401A",
+      "target": "JB-401A",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted signal line from PT-401A to JB-401A."
+    },
+    {
+      "source": "LT-402A",
+      "target": "JB-401A",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted signal line from LT-402A to JB-401A."
+    },
+    {
+      "source": "FT-403A",
+      "target": "JB-401A",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted signal line from FT-403A to JB-401A."
+    },
+    {
+      "source": "JB-401A",
+      "target": "TB-RPS-A",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted signal line from JB-401A to TB-RPS-A."
+    },
+    {
+      "source": "TB-RPS-A",
+      "target": "RPS-PNL-A",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted signal path from TB-RPS-A continues toward RPS-PNL-A."
+    },
+    {
+      "source": "JB-401A",
+      "target": "GND-401A",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "vertical ground lead from JB-401A to GND-401A."
+    },
+    {
+      "source": "LOAD-SHED-CAB",
+      "target": "TDR-1",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed control/trip segment from LOAD-SHED-CAB left side to TDR-1."
+    },
+    {
+      "source": "LOAD-SHED-CAB",
+      "target": "TDR-2",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed control/trip segment from LOAD-SHED-CAB right side to TDR-2."
+    },
+    {
+      "source": "LOAD-SHED-CAB",
+      "target": "LAMP-ALM-A",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted signal branch from LOAD-SHED-CAB down to LAMP-ALM-A."
+    },
+    {
+      "source": "LOAD-SHED-CAB",
+      "target": "LAMP-ALM-B",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted signal branch from LOAD-SHED-CAB down to LAMP-ALM-B."
+    },
+    {
+      "source": "LOAD-SHED-CAB",
+      "target": "ANN-PNL-1",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted central signal routing from LOAD-SHED-CAB toward ANN-PNL-1."
+    },
+    {
+      "source": "ANN-PNL-1",
+      "target": "SEQ-REC-1",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted signal line directly between ANN-PNL-1 and SEQ-REC-1."
+    },
+    {
+      "source": "DC-BUS-125B",
+      "target": "BAT-125B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid DC bus tap from DC-BUS-125B to BAT-125B."
+    },
+    {
+      "source": "DC-BUS-125B",
+      "target": "CHG-125B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid DC bus tap from DC-BUS-125B to CHG-125B."
+    },
+    {
+      "source": "DC-BUS-125B",
+      "target": "INV-120B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid DC bus tap from DC-BUS-125B to INV-120B."
+    },
+    {
+      "source": "DC-BUS-125B",
+      "target": "PNL-DC-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid DC bus tap from DC-BUS-125B to PNL-DC-B."
+    },
+    {
+      "source": "INV-120B",
+      "target": "PNL-AC-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical line from INV-120B to PNL-AC-B."
+    },
+    {
+      "source": "PNL-DC-B",
+      "target": "ESFAS-PNL-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid horizontal line from PNL-DC-B to ESFAS-PNL-B."
+    },
+    {
+      "source": "PNL-DC-B",
+      "target": "GND-DC-B",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "ground symbol GND-DC-B directly below PNL-DC-B on vertical ground lead."
+    },
+    {
+      "source": "PNL-AC-B",
+      "target": "RPS-PNL-B",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed control/trip line from PNL-AC-B to RPS-PNL-B."
+    },
+    {
+      "source": "RPS-PNL-B",
+      "target": "TRIP-MOD-B",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed control/trip line from RPS-PNL-B to TRIP-MOD-B."
+    },
+    {
+      "source": "ESFAS-PNL-B",
+      "target": "TRIP-MOD-B",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "dashed control/trip route from ESFAS-PNL-B down and around to TRIP-MOD-B area."
+    },
+    {
+      "source": "RPS-PNL-B",
+      "target": "RELAY-K27B",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed vertical drop from RPS-PNL-B to RELAY-K27B."
+    },
+    {
+      "source": "RELAY-K27B",
+      "target": "RELAY-K59B",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed horizontal trip chain between RELAY-K27B and RELAY-K59B."
+    },
+    {
+      "source": "RELAY-K59B",
+      "target": "RELAY-K81B",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed horizontal trip chain between RELAY-K59B and RELAY-K81B."
+    },
+    {
+      "source": "RELAY-K81B",
+      "target": "RELAY-K86B",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed horizontal trip chain between RELAY-K81B and RELAY-K86B."
+    },
+    {
+      "source": "TRIP-MOD-B",
+      "target": "RELAY-K86B",
+      "kind": "control_trip",
+      "confidence": "high",
+      "evidence": "dashed vertical drop from TRIP-MOD-B to RELAY-K86B."
+    },
+    {
+      "source": "PT-401B",
+      "target": "JB-401B",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted signal line from PT-401B to JB-401B."
+    },
+    {
+      "source": "LT-402B",
+      "target": "JB-401B",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted signal line from LT-402B to JB-401B."
+    },
+    {
+      "source": "FT-403B",
+      "target": "JB-401B",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted signal line from FT-403B to JB-401B."
+    },
+    {
+      "source": "JB-401B",
+      "target": "TB-RPS-B",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted signal line from JB-401B to TB-RPS-B."
+    },
+    {
+      "source": "TB-RPS-B",
+      "target": "RPS-PNL-B",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted signal path from TB-RPS-B continues toward RPS-PNL-B."
+    },
+    {
+      "source": "JB-401B",
+      "target": "GND-401B",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "vertical ground lead from JB-401B to GND-401B."
+    }
+  ],
+  "uncertain_edges": [
+    {
+      "a": "TRIP-MOD-A",
+      "b": "TDR-1",
+      "reason": "plausible load-shed/trip control path, but the dashed line endpoint is partly outside the close crop and is not clearly tied into TDR-1 with a distinct junction.",
+      "evidence": "lower-center dashed route approaches the TDR-1/LOAD-SHED-CAB area from the Train A trip module side."
+    },
+    {
+      "a": "TDR-2",
+      "b": "TRIP-MOD-B",
+      "reason": "plausible symmetric load-shed/trip control path, but the dashed line endpoint is not unambiguously visible as a direct TDR-2 to TRIP-MOD-B connection.",
+      "evidence": "lower-center/right dashed route approaches TDR-2 and the Train B trip module routing channel."
+    },
+    {
+      "a": "ESFAS-PNL-A",
+      "b": "LOAD-SHED-CAB",
+      "reason": "dashed routing from ESFAS-PNL-A bends toward the central load-shed area, but the visible path also runs through/around TRIP-MOD-A and TDR-1; direct endpoint is ambiguous.",
+      "evidence": "Train A lower dashed path leaving ESFAS-PNL-A continues toward the central load-shed/timer region."
+    },
+    {
+      "a": "ESFAS-PNL-B",
+      "b": "LOAD-SHED-CAB",
+      "reason": "same symmetric ambiguity as Train A: dashed routing is visible, but a direct ESFAS to load-shed connection is not fully supported.",
+      "evidence": "Train B lower dashed path leaves ESFAS-PNL-B toward the right-side trip/load-shed routing channel."
+    },
+    {
+      "a": "TB-RPS-A",
+      "b": "ANN-PNL-1",
+      "reason": "dotted signal trunk appears to continue from the Train A RPS signal area toward ANN-PNL-1, but the exact endpoint through the crowded lower-center area is not clear enough to assert.",
+      "evidence": "dotted line from TB-RPS-A continues rightward beneath the Train A panels toward the central annunciator region."
+    },
+    {
+      "a": "TB-RPS-B",
+      "b": "SEQ-REC-1",
+      "reason": "plausible recorder signal from the Train B RPS signal trunk, but the drawing segment between TB-RPS-B and SEQ-REC-1 is not fully visible as a direct endpoint.",
+      "evidence": "dotted Train B signal trunk continues leftward from TB-RPS-B while SEQ-REC-1 is on the central dotted signal chain."
+    },
+    {
+      "a": "PNL-DC-A",
+      "b": "RPS-PNL-A",
+      "reason": "vertical dashed/ground lead below PNL-DC-A is near RPS-PNL-A, but the ground symbol separates the visible path and no clear panel-to-panel conductor is shown.",
+      "evidence": "PNL-DC-A has a ground lead to GND-DC-A with RPS-PNL-A below in the same region."
+    },
+    {
+      "a": "PNL-DC-B",
+      "b": "RPS-PNL-B",
+      "reason": "vertical dashed/ground lead below PNL-DC-B is near RPS-PNL-B, but the ground symbol separates the visible path and no clear panel-to-panel conductor is shown.",
+      "evidence": "PNL-DC-B has a ground lead to GND-DC-B with RPS-PNL-B below in the same region."
+    },
+    {
+      "a": "RELAY-K2A09",
+      "b": "SYNC-CAB",
+      "reason": "the Train A feeder control row terminates near a central dashed routing channel and SYNC-CAB, but a direct endpoint is not readable.",
+      "evidence": "right end of Train A lower feeder dashed row lies near SYNC-CAB/routing annotation."
+    },
+    {
+      "a": "RELAY-K2B09",
+      "b": "TRIP-MOD-B",
+      "reason": "right-side dashed border routes near the Train B feeder relay row and lower trip module region, but no direct conductor endpoint is visible.",
+      "evidence": "Train B lower feeder control row and right-side dashed routing boundary are adjacent in the right-core crop."
+    },
+    {
+      "a": "SYNC-CAB",
+      "b": "LOAD-SHED-CAB",
+      "reason": "Plausible central control/trip candidate, but the endpoint/routing between the two cabinets is not clear enough to assert.",
+      "evidence": "raw_grid_r3c3_2x/raw_06_center_core show the central dashed routing near both cabinets; the load-shed cabinet is visibly connected to TDR-1/TDR-2, while a direct SYNC-CAB to LOAD-SHED-CAB endpoint is not visible."
+    }
+  ],
+  "rejected_non_edges": [
+    {
+      "a": "BUS-101A",
+      "b": "BUS-101B",
+      "reason": "not asserted as a direct bus-to-bus edge; the visible solid connection passes through CB-TIE-1."
+    },
+    {
+      "a": "BUS-201A",
+      "b": "BUS-201B",
+      "reason": "middle 4.16 kV buses are separated by the central routing channel; no visible solid tie or junction dot connects them."
+    },
+    {
+      "a": "SW-MAN-A",
+      "b": "BUS-101A",
+      "reason": "SW-MAN-A is on a dashed diesel-generator control path near the upper bus, but there is no junction dot or solid connection to BUS-101A."
+    },
+    {
+      "a": "SW-MAN-B",
+      "b": "BUS-101B",
+      "reason": "SW-MAN-B is on a dashed diesel-generator control path near the upper bus, but there is no junction dot or solid connection to BUS-101B."
+    },
+    {
+      "a": "CB-TIE-1",
+      "b": "BUS-201A",
+      "reason": "central dashed routing descends near the lower bus area, but crossings without black junction dots are not electrical connections."
+    },
+    {
+      "a": "CB-TIE-1",
+      "b": "BUS-201B",
+      "reason": "central dashed routing descends near the lower bus area, but crossings without black junction dots are not electrical connections."
+    },
+    {
+      "a": "TB-RPS-A",
+      "b": "PNL-AC-A",
+      "reason": "dotted signal line runs near PNL-AC-A, but no terminal, endpoint, or junction dot attaches it to that panel."
+    },
+    {
+      "a": "TB-RPS-B",
+      "b": "PNL-AC-B",
+      "reason": "dotted signal line runs near PNL-AC-B, but no terminal, endpoint, or junction dot attaches it to that panel."
+    },
+    {
+      "a": "GND-401A",
+      "b": "GND-DC-A",
+      "reason": "separate ground symbols are visible with no conductor joining them on the drawing."
+    },
+    {
+      "a": "GND-401B",
+      "b": "GND-DC-B",
+      "reason": "separate ground symbols are visible with no conductor joining them on the drawing."
+    }
+  ]
+}

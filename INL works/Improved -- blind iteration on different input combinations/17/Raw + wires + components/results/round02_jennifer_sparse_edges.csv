@@ -1,0 +1,202 @@
+source,target,type,evidence
+GEN-001,UAT-1A,P,solid generator feeder visibly lands at UAT-1A
+GEN-001,UAT-1B,P,solid generator feeder visibly lands at UAT-1B
+SAT-1A,CB-SAT-1A,P,solid vertical feeder from SAT-1A to breaker
+CB-SAT-1A,BUS-4160-A,P,breaker feeder lands on BUS-4160-A with black dot
+UAT-1A,CB-UAT-1A,P,solid vertical feeder from UAT-1A to breaker
+CB-UAT-1A,BUS-4160-A,P,breaker feeder lands on BUS-4160-A with black dot
+DG-1A,CB-DG-1A,P,solid vertical feeder from DG-1A to breaker
+CB-DG-1A,BUS-4160-A,P,breaker feeder lands on BUS-4160-A with black dot
+BUS-4160-A,PT-4160-A,INST,dotted instrument tap drops from BUS-4160-A to PT
+BUS-4160-A,CB-TIE-4AB,P,solid 4.16 kV bus tie segment enters tie breaker
+CB-TIE-4AB,BUS-4160-B,P,solid 4.16 kV bus tie segment exits tie breaker
+UAT-1B,CB-UAT-1B,P,solid vertical feeder from UAT-1B to breaker
+CB-UAT-1B,BUS-4160-B,P,breaker feeder lands on BUS-4160-B with black dot
+DG-1B,CB-DG-1B,P,solid vertical feeder from DG-1B to breaker
+CB-DG-1B,BUS-4160-B,P,breaker feeder lands on BUS-4160-B with black dot
+SAT-1B,CB-SAT-1B,P,solid vertical feeder from SAT-1B to breaker
+CB-SAT-1B,BUS-4160-B,P,breaker feeder lands on BUS-4160-B with black dot
+BUS-4160-B,PT-4160-B,INST,dotted instrument tap drops from BUS-4160-B to PT
+BUS-4160-A,CB-TR-A1,P,solid feeder from BUS-4160-A to load-center transformer breaker
+CB-TR-A1,TR-LC-A1,P,solid feeder from breaker into transformer
+TR-LC-A1,CB-480-A1,P,solid feeder from transformer to 480 V breaker
+CB-480-A1,BUS-480-A,P,solid feeder lands on BUS-480-A
+BUS-4160-A,CB-TR-A2,P,solid feeder from BUS-4160-A to second transformer breaker
+CB-TR-A2,TR-LC-A2,P,solid feeder from breaker into transformer
+TR-LC-A2,CB-480-A2,P,solid feeder from transformer to 480 V breaker
+CB-480-A2,BUS-480-A,P,solid feeder lands on BUS-480-A
+BUS-480-A,CB-TIE-480AB,P,solid 480 V tie segment enters tie breaker
+CB-TIE-480AB,BUS-480-B,P,solid 480 V tie segment exits tie breaker
+BUS-4160-B,CB-TR-B1,P,solid feeder from BUS-4160-B to load-center transformer breaker
+CB-TR-B1,TR-LC-B1,P,solid feeder from breaker into transformer
+TR-LC-B1,CB-480-B1,P,solid feeder from transformer to 480 V breaker
+CB-480-B1,BUS-480-B,P,solid feeder lands on BUS-480-B
+BUS-4160-B,CB-TR-B2,P,solid feeder from BUS-4160-B to second transformer breaker
+CB-TR-B2,TR-LC-B2,P,solid feeder from breaker into transformer
+TR-LC-B2,CB-480-B2,P,solid feeder from transformer to 480 V breaker
+CB-480-B2,BUS-480-B,P,solid feeder lands on BUS-480-B
+BUS-480-A,AM-480-A,INST,dotted instrument tap from BUS-480-A to ammeter
+BUS-480-A,VM-480-A,INST,dotted instrument tap from BUS-480-A to voltmeter
+BUS-480-A,CT-480-A1,INST,dotted instrument tap from BUS-480-A to CT
+BUS-480-A,GND-SWGR-A,GND,solid branch from switchgear bus to ground
+BUS-480-B,AM-480-B,INST,dotted instrument tap from BUS-480-B to ammeter
+BUS-480-B,VM-480-B,INST,dotted instrument tap from BUS-480-B to voltmeter
+BUS-480-B,CT-480-B1,INST,dotted instrument tap from BUS-480-B to CT
+BUS-480-B,GND-SWGR-B,GND,solid branch from switchgear bus to ground
+BUS-480-A,CB-101A,P,solid branch from BUS-480-A to CB-101A
+CB-101A,DS-101A,P,solid feeder chain
+DS-101A,MS-101A,P,solid feeder chain
+MS-101A,PUMP-SLC-1A,P,solid feeder chain
+PUMP-SLC-1A,TB-SLC-1A,P,solid feeder chain
+BUS-480-A,CB-102A,P,solid branch from BUS-480-A to CB-102A
+CB-102A,FU-102A,P,solid feeder chain
+FU-102A,MS-102A,P,solid feeder chain
+MS-102A,PUMP-COV-1A,P,solid feeder chain
+PUMP-COV-1A,GND-CCW-1A,GND,solid branch to ground
+BUS-480-A,CB-103A,P,solid branch from BUS-480-A to CB-103A
+CB-103A,DS-103A,P,solid feeder chain
+DS-103A,MS-103A,P,solid feeder chain
+MS-103A,PUMP-RHR-1A,P,solid feeder chain
+PUMP-RHR-1A,LS-RHR-1A,INST,dotted instrument path
+BUS-480-A,CB-104A,P,solid branch from BUS-480-A to CB-104A
+CB-104A,FU-104A,P,solid feeder chain
+FU-104A,MS-104A,P,solid feeder chain
+MS-104A,PUMP-CS-1A,P,solid feeder chain
+PUMP-CS-1A,TB-CS-1A,P,solid feeder chain
+BUS-480-A,CB-105A,P,solid branch from BUS-480-A to CB-105A
+CB-105A,DS-105A,P,solid feeder chain
+DS-105A,MS-105A,P,solid feeder chain
+MS-105A,FAN-CRDH-1A,P,solid feeder chain
+FAN-CRDH-1A,GND-FAN-1A,GND,solid branch to ground
+BUS-480-A,CB-106A,P,solid branch from BUS-480-A to CB-106A
+CB-106A,FU-106A,P,solid feeder chain
+FU-106A,RELAY-K106A,CTRL,dashed control path
+RELAY-K106A,MOV-RHCU-101A,CTRL,dashed control path
+MOV-RHCU-101A,LS-RHCU-101A,INST,dotted instrument path
+BUS-480-A,CB-107A,P,solid branch from BUS-480-A to CB-107A
+CB-107A,DS-107A,P,solid feeder chain
+DS-107A,RELAY-K107A,CTRL,dashed control path
+RELAY-K107A,MOV-RHR-102A,CTRL,dashed control path
+MOV-RHR-102A,LS-RHR-102A,INST,dotted instrument path
+BUS-480-A,CB-108A,P,solid branch from BUS-480-A to CB-108A
+CB-108A,FU-108A,P,solid feeder chain
+FU-108A,MS-108A,P,solid feeder chain
+MS-108A,HTR-PZR-1A,P,solid feeder chain
+HTR-PZR-1A,TB-HTR-1A,P,solid feeder chain
+BUS-480-A,CB-109A,P,solid branch from BUS-480-A to CB-109A
+CB-109A,DS-109A,P,solid feeder chain
+DS-109A,MS-109A,P,solid feeder chain
+MS-109A,PUMP-SW-1A,P,solid feeder chain
+PUMP-SW-1A,GND-SW-1A,GND,solid branch to ground
+BUS-480-A,CB-110A,P,solid branch from BUS-480-A to CB-110A
+CB-110A,FU-110A,P,solid feeder chain
+FU-110A,MS-110A,P,solid feeder chain
+MS-110A,HTR-AHU-1A,P,solid feeder chain
+HTR-AHU-1A,GND-AHU-1A,GND,solid branch to ground
+BUS-480-A,CB-111A,P,solid branch from BUS-480-A to CB-111A
+CB-111A,DS-111A,P,solid feeder chain
+DS-111A,MS-111A,P,solid feeder chain
+MS-111A,CMP-AIR-1A,P,solid feeder chain
+CMP-AIR-1A,TB-AIR-1A,P,solid feeder chain
+BUS-480-A,CB-112A,P,solid branch from BUS-480-A to CB-112A
+CB-112A,FU-112A,P,solid feeder chain
+FU-112A,RELAY-K112A,CTRL,dashed control path
+RELAY-K112A,INET-RAD-1A,CTRL,dashed control path
+INET-RAD-1A,JB-RAD-1A,INST,dotted instrument path
+BUS-480-B,CB-201B,P,solid branch from BUS-480-B to CB-201B
+CB-201B,DS-201B,P,solid feeder chain
+DS-201B,MS-201B,P,solid feeder chain
+MS-201B,PUMP-SLC-1B,P,solid feeder chain
+PUMP-SLC-1B,TB-SLC-1B,P,solid feeder chain
+BUS-480-B,CB-202B,P,solid branch from BUS-480-B to CB-202B
+CB-202B,FU-202B,P,solid feeder chain
+FU-202B,MS-202B,P,solid feeder chain
+MS-202B,PUMP-COV-1B,P,solid feeder chain
+PUMP-COV-1B,GND-CCW-1B,GND,solid branch to ground
+BUS-480-B,CB-203B,P,solid branch from BUS-480-B to CB-203B
+CB-203B,DS-203B,P,solid feeder chain
+DS-203B,MS-203B,P,solid feeder chain
+MS-203B,PUMP-RHR-1B,P,solid feeder chain
+PUMP-RHR-1B,LS-RHR-1B,INST,dotted instrument path
+BUS-480-B,CB-204B,P,solid branch from BUS-480-B to CB-204B
+CB-204B,FU-204B,P,solid feeder chain
+FU-204B,MS-204B,P,solid feeder chain
+MS-204B,PUMP-CS-1B,P,solid feeder chain
+PUMP-CS-1B,TB-CS-1B,P,solid feeder chain
+BUS-480-B,CB-205B,P,solid branch from BUS-480-B to CB-205B
+CB-205B,DS-205B,P,solid feeder chain
+DS-205B,MS-205B,P,solid feeder chain
+MS-205B,FAN-CRDH-1B,P,solid feeder chain
+FAN-CRDH-1B,GND-FAN-1B,GND,solid branch to ground
+BUS-480-B,CB-206B,P,solid branch from BUS-480-B to CB-206B
+CB-206B,FU-206B,P,solid feeder chain
+FU-206B,RELAY-K206B,CTRL,dashed control path
+RELAY-K206B,MOV-RHCU-101B,CTRL,dashed control path
+MOV-RHCU-101B,LS-RHCU-101B,INST,dotted instrument path
+BUS-480-B,CB-207B,P,solid branch from BUS-480-B to CB-207B
+CB-207B,DS-207B,P,solid feeder chain
+DS-207B,RELAY-K207B,CTRL,dashed control path
+RELAY-K207B,MOV-RHR-102B,CTRL,dashed control path
+MOV-RHR-102B,LS-RHR-102B,INST,dotted instrument path
+BUS-480-B,CB-208B,P,solid branch from BUS-480-B to CB-208B
+CB-208B,FU-208B,P,solid feeder chain
+FU-208B,MS-208B,P,solid feeder chain
+MS-208B,HTR-PZR-1B,P,solid feeder chain
+HTR-PZR-1B,TB-HTR-1B,P,solid feeder chain
+BUS-480-B,CB-209B,P,solid branch from BUS-480-B to CB-209B
+CB-209B,DS-209B,P,solid feeder chain
+DS-209B,MS-209B,P,solid feeder chain
+MS-209B,PUMP-SW-1B,P,solid feeder chain
+PUMP-SW-1B,GND-SW-1B,GND,solid branch to ground
+BUS-480-B,CB-210B,P,solid branch from BUS-480-B to CB-210B
+CB-210B,FU-210B,P,solid feeder chain
+FU-210B,MS-210B,P,solid feeder chain
+MS-210B,HTR-AHU-1B,P,solid feeder chain
+HTR-AHU-1B,GND-AHU-1B,GND,solid branch to ground
+BUS-480-B,CB-211B,P,solid branch from BUS-480-B to CB-211B
+CB-211B,DS-211B,P,solid feeder chain
+DS-211B,MS-211B,P,solid feeder chain
+MS-211B,CMP-AIR-1B,P,solid feeder chain
+CMP-AIR-1B,TB-AIR-1B,P,solid feeder chain
+BUS-480-B,CB-212B,P,solid branch from BUS-480-B to CB-212B
+CB-212B,FU-212B,P,solid feeder chain
+FU-212B,RELAY-K212B,CTRL,dashed control path
+RELAY-K212B,INET-RAD-1B,CTRL,dashed control path
+INET-RAD-1B,JB-RAD-1B,INST,dotted instrument path
+BUS-480-A,CB-DC-A,P,solid feed down left side to DC/control breaker
+CB-DC-A,CHGR-125-A,P,solid feed from breaker to charger
+CHGR-125-A,BAT-125-A,P,solid connection between charger and battery
+BAT-125-A,BUS-125DC-A,P,solid battery drop lands on BUS-125DC-A
+BUS-125DC-A,GND-DC-A,GND,solid branch from DC bus to ground
+BUS-125DC-A,INV-120-A,P,solid branch from DC bus to inverter
+INV-120-A,BUS-120AC-A,P,solid inverter output lands on BUS-120AC-A
+BUS-120AC-A,STS-120-A,P,solid branch from 120 VAC bus to STS
+STS-120-A,PNL-RPS-A,CTRL,dashed control run from STS to RPS panel
+PNL-RPS-A,TB-RPS-A,CTRL,dashed control run from RPS panel to terminal block
+PNL-RPS-A,RELAY-UV-A1,CTRL,dashed control run from RPS panel to UV relay
+PNL-RPS-A,RELAY-UV-A2,CTRL,dashed control run from RPS panel to UV relay
+PNL-ESF-A,TB-ESF-A,CTRL,dashed control run from ESF panel to terminal block
+PNL-ESF-A,RELAY-RPS-A,CTRL,dashed control run from ESF panel to RPS relay
+PNL-ESF-A,RELAY-ESF-A,CTRL,dashed control run from ESF panel to ESF relay
+RELAY-ESF-A,REC-SOE-1,INST,dotted instrument run from ESF relay to SOE recorder
+PNL-DCS,REC-SOE-1,CTRL,dashed run from DCS panel lands at REC-SOE-1
+PNL-ANN,ANN-ESF-A,CTRL,singular PNL-ANN dashed line lands at ANN-ESF-A
+BUS-125DC-A,CB-DCTIE-AB,P,solid DC bus tie segment enters normally-open tie breaker
+CB-DCTIE-AB,BUS-125DC-B,P,solid DC bus tie segment exits normally-open tie breaker
+BUS-480-B,CB-DC-B,P,solid feed down right side to DC/control breaker
+CB-DC-B,CHGR-125-B,P,solid feed from breaker to charger
+CHGR-125-B,BAT-125-B,P,solid connection between charger and battery
+BAT-125-B,BUS-125DC-B,P,solid battery drop lands on BUS-125DC-B
+BUS-125DC-B,GND-DC-B,GND,solid branch from DC bus to ground
+BUS-125DC-B,INV-120-B,P,solid branch from DC bus to inverter
+INV-120-B,BUS-120AC-B,P,solid inverter output lands on BUS-120AC-B
+BUS-120AC-B,STS-120-B,P,solid branch from 120 VAC bus to STS
+STS-120-B,PNL-RPS-B,CTRL,dashed control run from STS to RPS panel
+PNL-RPS-B,TB-RPS-B,CTRL,dashed control run from RPS panel to terminal block
+PNL-RPS-B,RELAY-UV-B1,CTRL,dashed control run from RPS panel to UV relay
+PNL-RPS-B,RELAY-UV-B2,CTRL,dashed control run from RPS panel to UV relay
+PNL-ESF-B,TB-ESF-B,CTRL,dashed control run from ESF panel to terminal block
+PNL-ESF-B,RELAY-RPS-B,CTRL,dashed control run from ESF panel to RPS relay
+PNL-ESF-B,RELAY-ESF-B,CTRL,dashed control run from ESF panel to ESF relay
+RELAY-ESF-B,REC-SOE-2,INST,dotted instrument run from ESF relay to SOE recorder
+PNL-ANN,ANN-ESF-B,CTRL,singular PNL-ANN dashed line lands at ANN-ESF-B

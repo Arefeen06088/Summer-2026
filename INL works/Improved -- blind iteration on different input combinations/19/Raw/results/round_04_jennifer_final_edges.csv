@@ -1,0 +1,201 @@
+source,target,type,evidence
+OFFSITE GRID-1,DS-101,solid_power,Division A offsite source chain
+DS-101,CB-101,solid_power,Division A offsite source chain
+CB-101,TR-101,solid_power,Division A offsite source chain
+TR-101,BUS-4160-A,solid_power,Division A transformer to 4160 bus
+DG-1,CB-DG1,solid_power,Division A diesel generator feeder
+CB-DG1,BUS-4160-A,solid_power,Division A DG breaker to 4160 bus
+PT-4160A,BUS-4160-A,dashed_signal,Division A PT signal tap with dot
+BUS-4160-A,CB-TIE-4160,solid_power,4160 bus tie through breaker
+CB-TIE-4160,BUS-4160-B,solid_power,4160 bus tie through breaker
+OFFSITE GRID-2,DS-102,solid_power,Division B offsite source chain
+DS-102,CB-102,solid_power,Division B offsite source chain
+CB-102,TR-102,solid_power,Division B offsite source chain
+TR-102,BUS-4160-B,solid_power,Division B transformer to 4160 bus
+DG-2,CB-DG2,solid_power,Division B diesel generator feeder
+CB-DG2,BUS-4160-B,solid_power,Division B DG breaker to 4160 bus
+PT-4160B,BUS-4160-B,dashed_signal,Division B PT signal tap with dot
+BUS-4160-A,CB-201,solid_power,Division A 480 V transformer feeder
+CB-201,TR-480-A,solid_power,Division A 480 V transformer feeder
+TR-480-A,CB-480-A,solid_power,Division A 480 V incoming breaker
+CB-480-A,BUS-480-A,solid_power,Division A 480 V bus
+BUS-4160-B,CB-202,solid_power,Division B 480 V transformer feeder
+CB-202,TR-480-B,solid_power,Division B 480 V transformer feeder
+TR-480-B,CB-480-B,solid_power,Division B 480 V incoming breaker
+CB-480-B,BUS-480-B,solid_power,Division B 480 V bus
+BUS-480-A,CB-TIE-480,solid_power,480 V tie through breaker
+CB-TIE-480,BUS-480-B,solid_power,480 V tie through breaker
+BUS-480-A,CB-F201,solid_power,480 V feeder 201 from bus
+CB-F201,DS-F201,solid_power,feeder 201 disconnect chain
+DS-F201,CPT-201,solid_power,feeder 201 CPT chain
+CPT-201,MCC-201,solid_power,feeder 201 MCC chain
+MCC-201,CB-L201,solid_power,feeder 201 local breaker
+CB-L201,RELAY-K201,solid_power/control,feeder 201 K relay
+RELAY-K201,PUMP-P201,solid_power/control,feeder 201 load
+CB-F201,RELAY-PR201,dashed_control,feeder 201 PR relay branch
+MCC-201,RELAY-A201,dashed_control,feeder 201 MCC auxiliary relay
+PUMP-P201,INST-201,dashed_signal,feeder 201 load instrumentation
+INST-201,JB-201,dashed_signal,feeder 201 instrument to junction box
+JB-201,TB-201,dashed_signal,feeder 201 junction box to terminal block
+TB-201,LCS-201,dashed_signal,feeder 201 terminal block to local panel
+BUS-480-A,CB-F203,solid_power,480 V feeder 203 from bus
+CB-F203,DS-F203,solid_power,feeder 203 disconnect chain
+DS-F203,CPT-203,solid_power,feeder 203 CPT chain
+CPT-203,MCC-203,solid_power,feeder 203 MCC chain
+MCC-203,CB-L203,solid_power,feeder 203 local breaker
+CB-L203,RELAY-K203,solid_power/control,feeder 203 K relay
+RELAY-K203,PUMP-P203,solid_power/control,feeder 203 load
+CB-F203,RELAY-PR203,dashed_control,feeder 203 PR relay branch
+MCC-203,RELAY-A203,dashed_control,feeder 203 MCC auxiliary relay
+PUMP-P203,INST-203,dashed_signal,feeder 203 load instrumentation
+INST-203,JB-203,dashed_signal,feeder 203 instrument to junction box
+JB-203,TB-203,dashed_signal,feeder 203 junction box to terminal block
+TB-203,LCS-203,dashed_signal,feeder 203 terminal block to local panel
+BUS-480-A,CB-F301,solid_power,480 V feeder 301 from bus
+CB-F301,DS-F301,solid_power,feeder 301 disconnect chain
+DS-F301,CPT-301,solid_power,feeder 301 CPT chain
+CPT-301,MCC-301,solid_power,feeder 301 MCC chain
+MCC-301,CB-L301,solid_power,feeder 301 local breaker
+CB-L301,RELAY-K301,solid_power/control,feeder 301 K relay
+RELAY-K301,PUMP-P301,solid_power/control,feeder 301 load
+CB-F301,RELAY-PR301,dashed_control,feeder 301 PR relay branch
+MCC-301,RELAY-A301,dashed_control,feeder 301 MCC auxiliary relay
+PUMP-P301,INST-301,dashed_signal,feeder 301 load instrumentation
+INST-301,JB-301,dashed_signal,feeder 301 instrument to junction box
+JB-301,TB-301,dashed_signal,feeder 301 junction box to terminal block
+TB-301,LCS-301,dashed_signal,feeder 301 terminal block to local panel
+BUS-480-A,CB-F401,solid_power,480 V feeder 401 from bus
+CB-F401,DS-F401,solid_power,feeder 401 disconnect chain
+DS-F401,CPT-401,solid_power,feeder 401 CPT chain
+CPT-401,MCC-401,solid_power,feeder 401 MCC chain
+MCC-401,CB-L401,solid_power,feeder 401 local breaker
+CB-L401,RELAY-K401,solid_power/control,feeder 401 K relay
+RELAY-K401,PUMP-P401,solid_power/control,feeder 401 load
+CB-F401,RELAY-PR401,dashed_control,feeder 401 PR relay branch
+MCC-401,RELAY-A401,dashed_control,feeder 401 MCC auxiliary relay
+PUMP-P401,INST-401,dashed_signal,feeder 401 load instrumentation
+INST-401,JB-401,dashed_signal,feeder 401 instrument to junction box
+JB-401,TB-401,dashed_signal,feeder 401 junction box to terminal block
+TB-401,LCS-401,dashed_signal,feeder 401 terminal block to local panel
+BUS-480-A,CB-F501,solid_power,480 V feeder 501 from bus
+CB-F501,DS-F501,solid_power,feeder 501 disconnect chain
+DS-F501,CPT-501,solid_power,feeder 501 CPT chain
+CPT-501,MCC-501,solid_power,feeder 501 MCC chain
+MCC-501,CB-L501,solid_power,feeder 501 local breaker
+CB-L501,RELAY-K501,solid_power/control,feeder 501 K relay
+RELAY-K501,MTR-F501,solid_power/control,feeder 501 load
+CB-F501,RELAY-PR501,dashed_control,feeder 501 PR relay branch
+MCC-501,RELAY-A501,dashed_control,feeder 501 MCC auxiliary relay
+MTR-F501,INST-501,dashed_signal,feeder 501 load instrumentation
+INST-501,JB-501,dashed_signal,feeder 501 instrument to junction box
+JB-501,TB-501,dashed_signal,feeder 501 junction box to terminal block
+TB-501,LCS-501,dashed_signal,feeder 501 terminal block to local panel
+BUS-480-A,CB-F601,solid_power,480 V feeder 601 from bus
+CB-F601,DS-F601,solid_power,feeder 601 disconnect chain
+DS-F601,CPT-601,solid_power,feeder 601 CPT chain
+CPT-601,MCC-601,solid_power,feeder 601 MCC chain
+MCC-601,CB-L601,solid_power,feeder 601 local breaker
+CB-L601,RELAY-K601,solid_power/control,feeder 601 K relay
+RELAY-K601,VALVE-MOV601,solid_power/control,feeder 601 MOV load
+CB-F601,RELAY-PR601,dashed_control,feeder 601 PR relay branch
+MCC-601,RELAY-A601,dashed_control,feeder 601 MCC auxiliary relay
+VALVE-MOV601,INST-601,dashed_signal,MOV601 instrument branch
+VALVE-MOV601,[LS-MOV601],dashed_signal,MOV601 limit-switch branch
+[LS-MOV601],JB-601,dashed_signal,MOV601 limit switch to junction box
+JB-601,TB-601,dashed_signal,MOV601 junction box to terminal block
+TB-601,LCS-601,dashed_signal,MOV601 terminal block to local panel
+BUS-480-B,CB-F202,solid_power,480 V feeder 202 from bus
+CB-F202,DS-F202,solid_power,feeder 202 disconnect chain
+DS-F202,CPT-202,solid_power,feeder 202 CPT chain
+CPT-202,MCC-202,solid_power,feeder 202 MCC chain
+MCC-202,CB-L202,solid_power,feeder 202 local breaker
+CB-L202,RELAY-K202,solid_power/control,feeder 202 K relay
+RELAY-K202,PUMP-P202,solid_power/control,feeder 202 load
+CB-F202,RELAY-PR202,dashed_control,feeder 202 PR relay branch
+MCC-202,RELAY-A202,dashed_control,feeder 202 MCC auxiliary relay
+PUMP-P202,INST-202,dashed_signal,feeder 202 load instrumentation
+INST-202,JB-202,dashed_signal,feeder 202 instrument to junction box
+JB-202,TB-202,dashed_signal,feeder 202 junction box to terminal block
+TB-202,LCS-202,dashed_signal,feeder 202 terminal block to local panel
+BUS-480-B,CB-F204,solid_power,480 V feeder 204 from bus
+CB-F204,DS-F204,solid_power,feeder 204 disconnect chain
+DS-F204,CPT-204,solid_power,feeder 204 CPT chain
+CPT-204,MCC-204,solid_power,feeder 204 MCC chain
+MCC-204,CB-L204,solid_power,feeder 204 local breaker
+CB-L204,RELAY-K204,solid_power/control,feeder 204 K relay
+RELAY-K204,PUMP-P204,solid_power/control,feeder 204 load
+CB-F204,RELAY-PR204,dashed_control,feeder 204 PR relay branch
+MCC-204,RELAY-A204,dashed_control,feeder 204 MCC auxiliary relay
+PUMP-P204,INST-204,dashed_signal,feeder 204 load instrumentation
+INST-204,JB-204,dashed_signal,feeder 204 instrument to junction box
+JB-204,TB-204,dashed_signal,feeder 204 junction box to terminal block
+TB-204,LCS-204,dashed_signal,feeder 204 terminal block to local panel
+BUS-480-B,CB-F302,solid_power,480 V feeder 302 from bus
+CB-F302,DS-F302,solid_power,feeder 302 disconnect chain
+DS-F302,CPT-302,solid_power,feeder 302 CPT chain
+CPT-302,MCC-302,solid_power,feeder 302 MCC chain
+MCC-302,CB-L302,solid_power,feeder 302 local breaker
+CB-L302,RELAY-K302,solid_power/control,feeder 302 K relay
+RELAY-K302,PUMP-P302,solid_power/control,feeder 302 load
+CB-F302,RELAY-PR302,dashed_control,feeder 302 PR relay branch
+MCC-302,RELAY-A302,dashed_control,feeder 302 MCC auxiliary relay
+PUMP-P302,INST-302,dashed_signal,feeder 302 load instrumentation
+INST-302,JB-302,dashed_signal,feeder 302 instrument to junction box
+JB-302,TB-302,dashed_signal,feeder 302 junction box to terminal block
+TB-302,LCS-302,dashed_signal,feeder 302 terminal block to local panel
+BUS-480-B,CB-F402,solid_power,480 V feeder 402 from bus
+CB-F402,DS-F402,solid_power,feeder 402 disconnect chain
+DS-F402,CPT-402,solid_power,feeder 402 CPT chain
+CPT-402,MCC-402,solid_power,feeder 402 MCC chain
+MCC-402,CB-L402,solid_power,feeder 402 local breaker
+CB-L402,RELAY-K402,solid_power/control,feeder 402 K relay
+RELAY-K402,PUMP-P402,solid_power/control,feeder 402 load
+CB-F402,RELAY-PR402,dashed_control,feeder 402 PR relay branch
+MCC-402,RELAY-A402,dashed_control,feeder 402 MCC auxiliary relay
+PUMP-P402,INST-402,dashed_signal,feeder 402 load instrumentation
+INST-402,JB-402,dashed_signal,feeder 402 instrument to junction box
+JB-402,TB-402,dashed_signal,feeder 402 junction box to terminal block
+TB-402,LCS-402,dashed_signal,feeder 402 terminal block to local panel
+BUS-480-B,CB-F502,solid_power,480 V feeder 502 from bus
+CB-F502,DS-F502,solid_power,feeder 502 disconnect chain
+DS-F502,CPT-502,solid_power,feeder 502 CPT chain
+CPT-502,MCC-502,solid_power,feeder 502 MCC chain
+MCC-502,CB-L502,solid_power,feeder 502 local breaker
+CB-L502,RELAY-K502,solid_power/control,feeder 502 K relay
+RELAY-K502,MTR-F502,solid_power/control,feeder 502 load
+CB-F502,RELAY-PR502,dashed_control,feeder 502 PR relay branch
+MCC-502,RELAY-A502,dashed_control,feeder 502 MCC auxiliary relay
+MTR-F502,INST-502,dashed_signal,feeder 502 load instrumentation
+INST-502,JB-502,dashed_signal,feeder 502 instrument to junction box
+JB-502,TB-502,dashed_signal,feeder 502 junction box to terminal block
+TB-502,LCS-502,dashed_signal,feeder 502 terminal block to local panel
+BUS-480-B,CB-F701,solid_power,480 V feeder 701 from bus
+CB-F701,DS-F701,solid_power,feeder 701 disconnect chain
+DS-F701,CPT-701,solid_power,feeder 701 CPT chain
+CPT-701,MCC-701,solid_power,feeder 701 MCC chain
+MCC-701,CB-L701,solid_power,feeder 701 local breaker
+CB-L701,RELAY-K701,solid_power/control,feeder 701 K relay
+RELAY-K701,INST-RPS701,solid_power/control,feeder 701 RPS instrument endpoint
+CB-F701,RELAY-PR701,dashed_control,feeder 701 PR relay branch
+MCC-701,RELAY-A701,dashed_control,feeder 701 MCC auxiliary relay
+INST-RPS701,INST-701,dashed_signal,RPS701 to instrument 701
+INST-701,JB-701,dashed_signal,instrument 701 to junction box
+JB-701,TB-701,dashed_signal,junction box 701 to terminal block
+TB-701,LCS-701,dashed_signal,terminal block 701 to local panel
+BUS-480-A,CB-301,solid_power,A lower control power routed from BUS-480-A
+CB-301,TR-120-A,solid_power,A 120 VAC transformer chain
+TR-120-A,BUS-120AC-A,solid_power,A transformer to 120 VAC bus
+BUS-480-A,CHGR-125A,solid_power,A 125 VDC charger route from BUS-480-A
+CHGR-125A,BAT-125A,solid_power,A charger to battery
+BAT-125A,BUS-125DC-A,solid_power,A battery to 125 VDC bus
+BUS-120AC-A,JB-MAIN,dashed_signal,A 120 VAC bus junction box tap
+BUS-125DC-A,INV-120A,solid_power,A DC bus to inverter
+INV-120A,PN-RPS-A,dashed_control,A inverter to RPS panel
+BUS-480-B,CB-302,solid_power,B lower control power routed from BUS-480-B
+CB-302,TR-120-B,solid_power,B 120 VAC transformer chain
+TR-120-B,BUS-120AC-B,solid_power,B transformer to 120 VAC bus
+BUS-480-B,CHGR-125B,solid_power,B 125 VDC charger route from BUS-480-B
+CHGR-125B,BAT-125B,solid_power,B charger to battery
+BAT-125B,BUS-125DC-B,solid_power,B battery to 125 VDC bus
+BUS-125DC-B,INV-120B,solid_power,B DC bus to inverter
+INV-120B,PN-RPS-B,dashed_control,B inverter to RPS panel

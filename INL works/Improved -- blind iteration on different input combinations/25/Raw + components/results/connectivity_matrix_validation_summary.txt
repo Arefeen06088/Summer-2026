@@ -1,0 +1,21 @@
+Connectivity matrix validation summary
+Document: 25
+Input configuration: Raw + components
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\25\synthetic_npp_connectivity_matrix_revised_v4.csv
+GT normalized nodes: 200; GT normalized edges: 208
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from doc25_round1_jennifer_connectivity_matrix.csv with Precision=0.921569, Recall=0.903846, F1=0.912621
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=188, FP=16, FN=20, Precision=0.921569, Recall=0.903846, F1=0.912621
+Primary issue: extra/misnamed/intermediate extracted nodes created false-positive edges.
+
+Extra/non-GT nodes most responsible for FP edges: RPS TRIP BUS (4 FP edges); PUMP-CVC P301B (1 FP edges); PUMP-AFW P203A (1 FP edges); PUMP-AFW P203B (1 FP edges); PUMP-RHR P201B (1 FP edges); PUMP-CVC P301A (1 FP edges); PUMP-CVC P301C (1 FP edges); PUMP-SUMP P302A (1 FP edges).
+Missing GT nodes examples: PUMP-AFW-P203A; PUMP-AFW-P203B; PUMP-AFW-P203C; PUMP-CVC-P301A; PUMP-CVC-P301B; PUMP-CVC-P301C; PUMP-RHR-P201A; PUMP-RHR-P201B; PUMP-RHR-P201C; PUMP-SUMP-P302A.
+Close-but-not-exact name examples: PUMP-SUMP P302A -> PUMP-SUMP-P302A (0.93); PUMP-SUMP P302B -> PUMP-SUMP-P302B (0.93); PUMP-SUMP P302C -> PUMP-SUMP-P302C (0.93); PUMP-AFW P203A -> PUMP-AFW-P203A (0.93); PUMP-AFW P203B -> PUMP-AFW-P203B (0.93); PUMP-AFW P203C -> PUMP-AFW-P203C (0.93); PUMP-CVC P301A -> PUMP-CVC-P301A (0.93); PUMP-CVC P301B -> PUMP-CVC-P301B (0.93).
+False-negative edge examples among GT-known nodes: BUS-125DC-A -- INV-120-1B; BUS-125DC-B -- INV-120-1A; BUS-480-1A -- CHGR-125-1A; BUS-480-1B -- CHGR-125-1B; CB-4A01 -- TC-52-4A; CB-4B01 -- TC-52-4A; CB-4C01 -- TC-52-4A; PNL-RPS-A -- PNL-RPS-B.
+False-positive examples involving extra/non-GT nodes: CB-4A01 -- RPS TRIP BUS; CB-4B01 -- RPS TRIP BUS; CB-4C01 -- RPS TRIP BUS; MS-48A01 -- PUMP-CVC P301A; MS-48A04 -- PUMP-SUMP P302A; MS-48B01 -- PUMP-CVC P301B; MS-48B04 -- PUMP-SUMP P302B; MS-48C01 -- PUMP-CVC P301C.
+False-negative examples involving missing/differently named nodes: MS-48A01 -- PUMP-CVC-P301A; MS-48A04 -- PUMP-SUMP-P302A; MS-48B01 -- PUMP-CVC-P301B; MS-48B04 -- PUMP-SUMP-P302B; MS-48C01 -- PUMP-CVC-P301C; MS-48C04 -- PUMP-SUMP-P302C; MS-A01 -- PUMP-RHR-P201A; MS-A07 -- PUMP-AFW-P203A.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (RPS TRIP BUS; PUMP-CVC P301B; PUMP-AFW P203A; PUMP-AFW P203B; PUMP-RHR P201B), the final-row metrics would be TP=188, FP=8, FN=20, Precision=0.959184, Recall=0.903846, F1=0.930693.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=188, FP=0, FN=20, Precision=1.000000, Recall=0.903846, F1=0.949495.

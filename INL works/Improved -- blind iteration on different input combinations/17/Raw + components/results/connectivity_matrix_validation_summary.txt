@@ -1,0 +1,21 @@
+Connectivity matrix validation summary
+Document: 17
+Input configuration: Raw + components
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\17\synthetic_npp_aux_power_schematic_overlap_fixed_connectivity_matrix.csv
+GT normalized nodes: 200; GT normalized edges: 209
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from doc17_round1_jennifer_connectivity_matrix.csv with Precision=0.574257, Recall=0.555024, F1=0.564477
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=116, FP=86, FN=93, Precision=0.574257, Recall=0.555024, F1=0.564477
+Primary issue: missing or differently named GT components contributed false negatives.
+
+Extra/non-GT nodes most responsible for FP edges: MC-205A (2 FP edges); HTR-AMU-2B (2 FP edges); FU-212A (2 FP edges); MC-210B (2 FP edges); CB-206A (2 FP edges); MC-202B (2 FP edges); FU-204A (2 FP edges); MC-204A (2 FP edges).
+Missing GT nodes examples: CB-101A; CB-102A; CB-103A; CB-104A; CB-105A; CB-106A; CB-107A; CB-108A; CB-109A; CB-110A.
+Close-but-not-exact name examples: LS-RHCU-101A -> LS-RWCU-101A (0.92); LS-RHCU-101B -> LS-RWCU-101B (0.92); INCT-RAD-1A -> INST-RAD-1A (0.91); INCT-RAD-1B -> INST-RAD-1B (0.91); LS-RHR-202A -> LS-RHR-102A (0.91); LS-RHR-202B -> LS-RHR-102B (0.91); RELAY-K106B -> RELAY-K206B (0.91); RELAY-K107B -> RELAY-K107A (0.91).
+False-negative edge examples among GT-known nodes: CB-TR-A1 -- RELAY-UV-A1; CB-TR-A2 -- RELAY-UV-A2; CB-TR-B1 -- RELAY-UV-B1; CB-TR-B2 -- RELAY-UV-B2.
+False-positive examples involving extra/non-GT nodes: BUS-480-A -- CB-201A; BUS-480-A -- CB-202A; BUS-480-A -- CB-203A; BUS-480-A -- CB-204A; BUS-480-A -- CB-205A; BUS-480-A -- CB-206A; BUS-480-A -- CB-207A; BUS-480-A -- CB-208A.
+False-negative examples involving missing/differently named nodes: BUS-480-A -- CB-101A; BUS-480-A -- CB-102A; BUS-480-A -- CB-103A; BUS-480-A -- CB-104A; BUS-480-A -- CB-105A; BUS-480-A -- CB-106A; BUS-480-A -- CB-107A; BUS-480-A -- CB-108A.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (MC-205A; HTR-AMU-2B; FU-212A; MC-210B; CB-206A), the final-row metrics would be TP=116, FP=77, FN=93, Precision=0.601036, Recall=0.555024, F1=0.577114.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=116, FP=0, FN=93, Precision=1.000000, Recall=0.555024, F1=0.713846.

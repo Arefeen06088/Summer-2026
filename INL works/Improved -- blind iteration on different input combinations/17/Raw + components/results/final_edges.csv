@@ -1,0 +1,203 @@
+source,target,kind,confidence,evidence
+SAT-1A,CB-SAT-1A,power,high,solid vertical source feeder into 4.16 kV bus A
+CB-SAT-1A,BUS-4160-A,power,high,solid vertical source feeder into 4.16 kV bus A
+UAT-1A,CB-UAT-1A,power,high,solid vertical unit auxiliary feeder into 4.16 kV bus A
+CB-UAT-1A,BUS-4160-A,power,high,solid vertical unit auxiliary feeder into 4.16 kV bus A
+DG-1A,CB-DG-1A,power,high,solid emergency diesel generator feeder into 4.16 kV bus A
+CB-DG-1A,BUS-4160-A,power,high,solid emergency diesel generator feeder into 4.16 kV bus A
+GEN-001,UAT-1A,power,medium,main-generator line visibly enters UAT-1A primary area on train A side
+GEN-001,UAT-1B,power,medium,main-generator line visibly leaves GEN-001 toward UAT-1B primary area on train B side
+BUS-4160-A,PT-4160-A,signal,medium,dotted instrument tap drops from 4.16 kV bus A to PT symbol
+BUS-4160-A,CB-TIE-4AB,power,high,inline normally-open tie breaker drawn between 4.16 kV buses A and B
+CB-TIE-4AB,BUS-4160-B,power,high,inline normally-open tie breaker drawn between 4.16 kV buses A and B
+BUS-4160-A,CB-TR-A1,power,high,solid feeder from 4.16 kV bus A through LC A1 transformer to 480 V bus A
+CB-TR-A1,TR-LC-A1,power,high,solid feeder from 4.16 kV bus A through LC A1 transformer to 480 V bus A
+TR-LC-A1,CB-480-A1,power,high,solid feeder from 4.16 kV bus A through LC A1 transformer to 480 V bus A
+CB-480-A1,BUS-480-A,power,high,solid feeder from 4.16 kV bus A through LC A1 transformer to 480 V bus A
+BUS-4160-A,CB-TR-A2,power,high,solid feeder from 4.16 kV bus A through LC A2 transformer to 480 V bus A
+CB-TR-A2,TR-LC-A2,power,high,solid feeder from 4.16 kV bus A through LC A2 transformer to 480 V bus A
+TR-LC-A2,CB-480-A2,power,high,solid feeder from 4.16 kV bus A through LC A2 transformer to 480 V bus A
+CB-480-A2,BUS-480-A,power,high,solid feeder from 4.16 kV bus A through LC A2 transformer to 480 V bus A
+CB-TR-A2,MASTER-TERMINAL-BLOCKS,control,medium,dashed control line leaves CB-TR-A2 and runs into the master terminal block area
+UAT-1B,CB-UAT-1B,power,high,solid vertical unit auxiliary feeder into 4.16 kV bus B
+CB-UAT-1B,BUS-4160-B,power,high,solid vertical unit auxiliary feeder into 4.16 kV bus B
+DG-1B,CB-DG-1B,power,high,solid emergency diesel generator feeder into 4.16 kV bus B
+CB-DG-1B,BUS-4160-B,power,high,solid emergency diesel generator feeder into 4.16 kV bus B
+SAT-1B,CB-SAT-1B,power,high,solid vertical station auxiliary feeder into 4.16 kV bus B
+CB-SAT-1B,BUS-4160-B,power,high,solid vertical station auxiliary feeder into 4.16 kV bus B
+BUS-4160-B,PT-4160-B,signal,medium,dotted instrument tap drops from 4.16 kV bus B to PT symbol
+BUS-4160-B,CB-TR-B1,power,high,solid feeder from 4.16 kV bus B through LC B1 transformer to 480 V bus B
+CB-TR-B1,TR-LC-B1,power,high,solid feeder from 4.16 kV bus B through LC B1 transformer to 480 V bus B
+TR-LC-B1,CB-480-B1,power,high,solid feeder from 4.16 kV bus B through LC B1 transformer to 480 V bus B
+CB-480-B1,BUS-480-B,power,high,solid feeder from 4.16 kV bus B through LC B1 transformer to 480 V bus B
+BUS-4160-B,CB-TR-B2,power,high,solid feeder from 4.16 kV bus B through LC B2 transformer to 480 V bus B
+CB-TR-B2,TR-LC-B2,power,high,solid feeder from 4.16 kV bus B through LC B2 transformer to 480 V bus B
+TR-LC-B2,CB-480-B2,power,high,solid feeder from 4.16 kV bus B through LC B2 transformer to 480 V bus B
+CB-480-B2,BUS-480-B,power,high,solid feeder from 4.16 kV bus B through LC B2 transformer to 480 V bus B
+BUS-480-A,AM-480-A,signal,medium,dotted ammeter tap above BUS-480-A
+BUS-480-A,VM-480-A,signal,medium,dotted voltmeter tap above BUS-480-A
+BUS-480-A,CT-480-A1,signal,medium,dotted CT tap adjacent to transformer feeder on BUS-480-A
+BUS-480-A,GND-SWGR-A,ground,high,ground symbol tied to BUS-480-A with a solid branch
+BUS-480-B,AM-480-B,signal,medium,dotted ammeter tap above BUS-480-B
+BUS-480-B,VM-480-B,signal,medium,dotted voltmeter tap above BUS-480-B
+BUS-480-B,CT-480-B1,signal,medium,dotted CT tap adjacent to transformer feeder on BUS-480-B
+BUS-480-B,GND-SWGR-B,ground,high,ground symbol tied to BUS-480-B with a solid branch
+BUS-480-A,CB-TIE-480AB,power,high,inline normally-open tie breaker drawn between 480 V buses A and B
+CB-TIE-480AB,BUS-480-B,power,high,inline normally-open tie breaker drawn between 480 V buses A and B
+BUS-480-A,CB-201A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+CB-201A,DS-201A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+DS-201A,MC-201A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+MC-201A,PUMP-SLC-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+PUMP-SLC-1A,TB-SLC-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+BUS-480-A,CB-202A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+CB-202A,FU-202A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+FU-202A,MC-202A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+MC-202A,PUMP-CCW-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+PUMP-CCW-1A,GND-CCW-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+BUS-480-A,CB-203A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+CB-203A,DS-203A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+DS-203A,MC-203A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+MC-203A,PUMP-RHR-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+BUS-480-A,CB-204A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+CB-204A,FU-204A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+FU-204A,MC-204A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+MC-204A,PUMP-CS-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+PUMP-CS-1A,TB-CS-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+BUS-480-A,CB-205A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+CB-205A,DS-205A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+DS-205A,MC-205A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+MC-205A,FAN-CRDM-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+FAN-CRDM-1A,GND-FAN-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+BUS-480-A,CB-206A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+CB-206A,FU-206A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+FU-206A,RELAY-K106A,control,high,dashed control lead descends from FU-206A to RELAY-K106A
+RELAY-K106A,HOV-RHCU-101A,control,high,dashed control lead descends from RELAY-K106A to HOV-RHCU-101A
+HOV-RHCU-101A,LS-RHCU-101A,signal,high,dotted instrument/signal lead descends from HOV-RHCU-101A to LS-RHCU-101A
+BUS-480-A,CB-207A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+CB-207A,DS-207A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+DS-207A,RELAY-K107A,control,high,dashed control lead descends from DS-207A to RELAY-K107A
+RELAY-K107A,HOV-RHR-202A,control,high,dashed control lead descends from RELAY-K107A to HOV-RHR-202A
+HOV-RHR-202A,LS-RHR-202A,signal,high,dotted instrument/signal lead descends from HOV-RHR-202A to LS-RHR-202A
+BUS-480-A,CB-208A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+CB-208A,FU-208A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+FU-208A,MC-208A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+MC-208A,HTR-RPS-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+HTR-RPS-1A,TB-HTR-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+BUS-480-A,CB-209A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+CB-209A,DS-209A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+DS-209A,MC-209A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+MC-209A,PUMP-SW-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+PUMP-SW-1A,GND-SW-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+BUS-480-A,CB-210A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+CB-210A,FU-210A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+FU-210A,MC-210A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+MC-210A,HTR-AMU-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+HTR-AMU-1A,GND-AMU-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+BUS-480-A,CB-211A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+CB-211A,DS-211A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+DS-211A,MC-211A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+MC-211A,CMP-AIR-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+CMP-AIR-1A,TB-AIR-1A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+BUS-480-A,CB-212A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+CB-212A,FU-212A,power,high,vertical train A 480 V feeder symbols are joined by a continuous visible line
+FU-212A,RELAY-K112A,control,high,dashed control lead descends from FU-212A to RELAY-K112A
+RELAY-K112A,INCT-RAD-1A,control,high,dashed control lead descends from RELAY-K112A to INCT-RAD-1A
+INCT-RAD-1A,JB-RAD-1A,signal,high,dotted instrument/signal lead descends from INCT-RAD-1A to JB-RAD-1A
+PUMP-RHR-1A,LS-RHR-1A,signal,high,dotted instrument/signal lead descends from PUMP-RHR-1A to LS-RHR-1A
+BUS-480-B,CB-201B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+CB-201B,DS-201B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+DS-201B,MC-201B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+MC-201B,PUMP-SLC-1B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+PUMP-SLC-1B,TB-SLC-1B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+BUS-480-B,CB-202B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+CB-202B,FU-202B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+FU-202B,MC-202B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+MC-202B,PUMP-CCW-1B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+PUMP-CCW-1B,GND-CCW-1B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+BUS-480-B,CB-203B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+CB-203B,DS-203B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+DS-203B,MC-203B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+MC-203B,PUMP-RHR-1B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+BUS-480-B,CB-204B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+CB-204B,FU-204B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+FU-204B,MC-204B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+MC-204B,PUMP-CS-2B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+PUMP-CS-2B,TB-CS-2B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+BUS-480-B,CB-205B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+CB-205B,DS-205B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+DS-205B,MC-205B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+MC-205B,FAN-CRDM-1B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+FAN-CRDM-1B,GND-FAN-1B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+BUS-480-B,CB-206B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+CB-206B,FU-206B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+FU-206B,RELAY-K106B,control,high,dashed control lead descends from FU-206B to RELAY-K106B
+RELAY-K106B,HOV-RHCU-101B,control,high,dashed control lead descends from RELAY-K106B to HOV-RHCU-101B
+HOV-RHCU-101B,LS-RHCU-101B,signal,high,dotted instrument/signal lead descends from HOV-RHCU-101B to LS-RHCU-101B
+BUS-480-B,CB-207B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+CB-207B,DS-207B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+DS-207B,RELAY-K107B,control,high,dashed control lead descends from DS-207B to RELAY-K107B
+RELAY-K107B,HOV-RHR-202B,control,high,dashed control lead descends from RELAY-K107B to HOV-RHR-202B
+HOV-RHR-202B,LS-RHR-202B,signal,high,dotted instrument/signal lead descends from HOV-RHR-202B to LS-RHR-202B
+BUS-480-B,CB-208B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+CB-208B,FU-208B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+FU-208B,MC-208B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+MC-208B,HTR-RPS-1B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+HTR-RPS-1B,TB-HTR-1B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+BUS-480-B,CB-209B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+CB-209B,DS-209B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+DS-209B,MC-209B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+MC-209B,PUMP-SW-2B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+PUMP-SW-2B,GND-SW-2B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+BUS-480-B,CB-210B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+CB-210B,FU-210B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+FU-210B,MC-210B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+MC-210B,HTR-AMU-2B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+HTR-AMU-2B,GND-AMU-2B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+BUS-480-B,CB-211B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+CB-211B,DS-211B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+DS-211B,MC-211B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+MC-211B,CMP-AIR-2B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+CMP-AIR-2B,TB-AIR-2B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+BUS-480-B,CB-212B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+CB-212B,FU-212B,power,high,vertical train B 480 V feeder symbols are joined by a continuous visible line
+FU-212B,RELAY-K112B,control,high,dashed control lead descends from FU-212B to RELAY-K112B
+RELAY-K112B,INCT-RAD-1B,control,high,dashed control lead descends from RELAY-K112B to INCT-RAD-1B
+INCT-RAD-1B,JB-RAD-1B,signal,high,dotted instrument/signal lead descends from INCT-RAD-1B to JB-RAD-1B
+PUMP-RHR-1B,LS-RHR-1B,signal,high,dotted instrument/signal lead descends from PUMP-RHR-1B to LS-RHR-1B
+BUS-480-A,CB-DC-A,power,medium,solid left-side route appears to drop from 480 V bus A to CB-DC-A before the charger
+CB-DC-A,CHGR-125-A,dc_power,high,solid connected charger/battery route into 125 VDC bus A
+CHGR-125-A,BAT-125-A,dc_power,high,solid connected charger/battery route into 125 VDC bus A
+BAT-125-A,BUS-125DC-A,dc_power,high,solid connected charger/battery route into 125 VDC bus A
+BUS-125DC-A,GND-DC-A,ground,high,ground branch from left end of 125 VDC bus A
+BUS-125DC-A,INV-120-A,dc_power,high,solid tap from 125 VDC bus A through inverter to 120 VAC inverter bus and STS
+INV-120-A,BUS-120AC-A,dc_power,high,solid tap from 125 VDC bus A through inverter to 120 VAC inverter bus and STS
+BUS-120AC-A,STS-120-A,dc_power,high,solid tap from 125 VDC bus A through inverter to 120 VAC inverter bus and STS
+BUS-480-B,CB-DC-B,power,medium,solid right-side route appears to drop from 480 V bus B to CB-DC-B before the charger
+CB-DC-B,CHGR-125-B,dc_power,high,solid connected charger/battery route into 125 VDC bus B
+CHGR-125-B,BAT-125-B,dc_power,high,solid connected charger/battery route into 125 VDC bus B
+BAT-125-B,BUS-125DC-B,dc_power,high,solid connected charger/battery route into 125 VDC bus B
+BUS-125DC-B,GND-DC-B,ground,high,ground branch at battery tap/right end of 125 VDC bus B
+BUS-125DC-B,INV-120-B,dc_power,high,solid tap from 125 VDC bus B through inverter to 120 VAC inverter bus and STS
+INV-120-B,BUS-120AC-B,dc_power,high,solid tap from 125 VDC bus B through inverter to 120 VAC inverter bus and STS
+BUS-120AC-B,STS-120-B,dc_power,high,solid tap from 125 VDC bus B through inverter to 120 VAC inverter bus and STS
+BUS-125DC-A,CB-DCTIE-AB,dc_power,high,inline normally-open DC tie breaker drawn between 125 VDC buses A and B
+CB-DCTIE-AB,BUS-125DC-B,dc_power,high,inline normally-open DC tie breaker drawn between 125 VDC buses A and B
+STS-120-A,PNL-RPS-A,control,medium,dashed control feed from STS-120-A drops to PNL-RPS-A
+PNL-RPS-A,TB-RPS-A,control,medium,dashed line from PNL-RPS-A to terminal block TB-RPS-A
+PNL-RPS-A,RELAY-UV-A1,control,medium,dashed line from PNL-RPS-A down to RELAY-UV-A1
+PNL-RPS-A,RELAY-UV-A2,control,medium,dashed line from PNL-RPS-A down to RELAY-UV-A2
+PNL-ESF-A,TB-ESF-A,control,medium,dashed line from PNL-ESF-A to terminal block TB-ESF-A
+PNL-ESF-A,RELAY-RPS-A,control,medium,dashed line from PNL-ESF-A down to RELAY-RPS-A
+PNL-ESF-A,RELAY-ESF-A,control,medium,dashed line from PNL-ESF-A down to RELAY-ESF-A
+STS-120-B,PNL-RPS-B,control,medium,dashed control feed from STS-120-B drops to PNL-RPS-B
+PNL-RPS-B,TB-RPS-B,control,medium,dashed line from PNL-RPS-B to terminal block TB-RPS-B
+PNL-RPS-B,RELAY-UV-B1,control,medium,dashed line from PNL-RPS-B down to RELAY-UV-B1
+PNL-RPS-B,RELAY-UV-B2,control,medium,dashed line from PNL-RPS-B down to RELAY-UV-B2
+PNL-ESF-B,TB-ESF-B,control,medium,dashed line from PNL-ESF-B to terminal block TB-ESF-B
+PNL-ESF-B,RELAY-RPS-B,control,medium,dashed line from PNL-ESF-B down to RELAY-RPS-B
+PNL-ESF-B,RELAY-ESF-B,control,medium,dashed/dotted line from PNL-ESF-B down to RELAY-ESF-B
+PNL-DCS,REC-SOE-1,control,medium,dashed line drops from PNL-DCS and turns into REC-SOE-1
+PNL-ANN,ANN-ESF-A,control,medium,dashed line from PNL-ANN left/down to ANN-ESF-A
+PNL-ANN,ANN-ESF-B,control,medium,dashed line from PNL-ANN right/down to ANN-ESF-B
+RELAY-ESF-B,REC-SOE-2,signal,medium,dotted signal line from RELAY-ESF-B turns toward REC-SOE-2
+RELAY-ESF-A,REC-SOE-1,signal,high,A dotted signal run descends from RELAY-ESF-A and continues across the lower annunciation area to a dotted vertical termination at REC-SOE-1.

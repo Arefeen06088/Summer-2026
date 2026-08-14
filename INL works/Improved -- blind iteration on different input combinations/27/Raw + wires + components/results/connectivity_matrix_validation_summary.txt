@@ -1,0 +1,16 @@
+Connectivity matrix validation summary - Document 27
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\27\synthetic_npp_connectivity_matrix_readable.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_matrix.csv): TP=198, FP=6, FN=2, Precision=0.970588, Recall=0.990000, F1=0.980198
+- Jennifer -- Round 2 (round_02_jennifer_matrix.csv): TP=200, FP=1, FN=0, Precision=0.995025, Recall=1.000000, F1=0.997506
+- Diego -- Round 3 (round_03_diego_matrix.csv): TP=200, FP=1, FN=0, Precision=0.995025, Recall=1.000000, F1=0.997506
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=200, FP=1, FN=0, Precision=0.995025, Recall=1.000000, F1=0.997506
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=200, FP=1, FN=0, Precision=0.995025, Recall=1.000000, F1=0.997506
+
+Main reasons the final score was not perfect:
+- Extra extracted edges are present; precision is the limiting term.
+
+False-positive edge examples:
+- DC-BUS-125A -- DC-BUS-125B

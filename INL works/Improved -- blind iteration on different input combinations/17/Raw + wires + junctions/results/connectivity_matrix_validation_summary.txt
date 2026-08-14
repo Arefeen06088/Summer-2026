@@ -1,0 +1,21 @@
+Connectivity matrix validation summary
+Document: 17
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\17\synthetic_npp_aux_power_schematic_overlap_fixed_connectivity_matrix.csv
+GT normalized nodes: 200; GT normalized edges: 209
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from jennifer_round1_matrix.csv with Precision=0.850000, Recall=0.813397, F1=0.831296
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=170, FP=30, FN=39, Precision=0.850000, Recall=0.813397, F1=0.831296
+Primary issue: extra/misnamed/intermediate extracted nodes created false-positive edges.
+
+Extra/non-GT nodes most responsible for FP edges: MOV-RHCV-102B (2 FP edges); MOV-RHCV-101A (2 FP edges); PUMP-COV-1B (2 FP edges); HTR-AHU-1B (2 FP edges); PUMP-COV-1A (2 FP edges); INET-RAD-1A (2 FP edges); MOV-RHCV-102A (2 FP edges); FAN-CRD-1A (2 FP edges).
+Missing GT nodes examples: CMP-AIR-1A; CMP-AIR-1B; FAN-CRDM-1A; FAN-CRDM-1B; GND-SWGR-A; GND-SWGR-B; INST-RAD-1A; INST-RAD-1B; LS-RWCU-101A; LS-RWCU-101B.
+Close-but-not-exact name examples: FAN-CRD-1A -> FAN-CRDM-1A (0.95); FAN-CRD-1B -> FAN-CRDM-1B (0.95); INET-RAD-1A -> INST-RAD-1A (0.91); INET-RAD-1B -> INST-RAD-1B (0.91); CIP-AIR-1A -> CMP-AIR-1A (0.90); CIP-AIR-1B -> CMP-AIR-1B (0.90); GND-SMGR-A -> GND-SWGR-A (0.90); GND-SMGR-B -> GND-SWGR-B (0.90).
+False-negative edge examples among GT-known nodes: CB-TR-A1 -- RELAY-UV-A1; CB-TR-A2 -- RELAY-UV-A2; CB-TR-B1 -- RELAY-UV-B1; CB-TR-B2 -- RELAY-UV-B2; MS-103A -- RELAY-RPS-A; MS-104A -- RELAY-ESF-A; MS-203B -- RELAY-RPS-B; MS-204B -- RELAY-ESF-B.
+False-positive examples involving extra/non-GT nodes: BUS-480-A -- GND-SMGR-A; BUS-480-B -- GND-SMGR-B; CIP-AIR-1A -- MS-111A; CIP-AIR-1A -- TB-AIR-1A; CIP-AIR-1B -- MS-211B; CIP-AIR-1B -- TB-AIR-1B; FAN-CRD-1A -- GND-FAN-1A; FAN-CRD-1A -- MS-105A.
+False-negative examples involving missing/differently named nodes: BUS-480-A -- GND-SWGR-A; BUS-480-B -- GND-SWGR-B; CMP-AIR-1A -- MS-111A; CMP-AIR-1A -- TB-AIR-1A; CMP-AIR-1B -- MS-211B; CMP-AIR-1B -- TB-AIR-1B; FAN-CRDM-1A -- GND-FAN-1A; FAN-CRDM-1A -- MS-105A.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (MOV-RHCV-102B; MOV-RHCV-101A; PUMP-COV-1B; HTR-AHU-1B; PUMP-COV-1A), the final-row metrics would be TP=170, FP=20, FN=39, Precision=0.894737, Recall=0.813397, F1=0.852130.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=170, FP=0, FN=39, Precision=1.000000, Recall=0.813397, F1=0.897098.

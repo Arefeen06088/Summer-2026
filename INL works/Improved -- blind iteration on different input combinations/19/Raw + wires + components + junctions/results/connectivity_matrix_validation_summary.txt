@@ -1,0 +1,49 @@
+Connectivity matrix validation summary - Document 19
+Input configuration: Raw + wires + components + junctions
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\19\connectivity_matrix_v3.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_matrix.csv): TP=195, FP=5, FN=5, Precision=0.975000, Recall=0.975000, F1=0.975000
+- Jennifer -- Round 1 (round_01_jennifer_matrix.csv): TP=190, FP=10, FN=10, Precision=0.950000, Recall=0.950000, F1=0.950000
+- Diego -- Round 2 (round_02_diego_matrix.csv): TP=194, FP=6, FN=6, Precision=0.970000, Recall=0.970000, F1=0.970000
+- Jennifer -- Round 2 (round_02_jennifer_matrix.csv): TP=194, FP=6, FN=6, Precision=0.970000, Recall=0.970000, F1=0.970000
+- Final connectivity -- Final (final_matrix.csv): TP=194, FP=6, FN=6, Precision=0.970000, Recall=0.970000, F1=0.970000
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- BAT-125A -- CHGR-125A
+- BAT-125B -- CHGR-125B
+- DS-101 -- OFFSITE GRID-1
+- DS-102 -- OFFSITE GRID-2
+- INST-601 -- [LS-MOV601]
+- JB-601 -- [LS-MOV601]
+
+False-negative edge examples:
+- BUS-125DC-A -- CHGR-125A
+- BUS-125DC-B -- CHGR-125B
+- DS-101 -- GRID-1
+- DS-102 -- GRID-2
+- JB-601 -- LS-MOV601
+- LS-MOV601 -- VALVE-MOV601
+
+Extra/non-GT nodes causing performance drops:
+- [LS-MOV601]: 2 incident false-positive edge(s)
+- OFFSITE GRID-1: 1 incident false-positive edge(s)
+- OFFSITE GRID-2: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 3 extra/intermediate nodes were omitted from the extraction ([LS-MOV601], OFFSITE GRID-1, OFFSITE GRID-2), final metrics would be TP=194, FP=2, FN=6, Precision=0.989796, Recall=0.970000, F1=0.979798.
+- If all 3 non-GT nodes were omitted, metrics would be TP=194, FP=2, FN=6, Precision=0.989796, Recall=0.970000, F1=0.979798.
+
+Missing GT node examples:
+- LS-MOV601: 2 missed incident GT edge(s)
+- GRID-1: 1 missed incident GT edge(s)
+- GRID-2: 1 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted [LS-MOV601] vs GT LS-MOV601 (similarity 0.90)

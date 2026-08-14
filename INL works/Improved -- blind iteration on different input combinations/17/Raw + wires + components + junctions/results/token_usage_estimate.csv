@@ -1,0 +1,7 @@
+document,iteration,model_call,input_tokens_expected,cached_input_tokens,output_tokens_expected,reasoning_tokens,image_file_input_tokens_expected,total_expected,low_estimate,high_estimate,usage_source
+17,main,main-orchestration-visual-inspection,9000,0,1800,,21845,32645,24483,44070,local estimate; Responses token-count endpoint unavailable without API key; usage object not exposed by local subagent tool
+17,round-1,Diego high-recall extractor,2400,0,7600,,21760,31760,23820,42876,local estimate; Responses token-count endpoint unavailable without API key; usage object not exposed by local subagent tool
+17,round-1,Jennifer precision reviewer,6200,0,4300,,15980,26480,19860,35748,local estimate; Responses token-count endpoint unavailable without API key; usage object not exposed by local subagent tool
+17,round-2,Diego saturation check,3900,0,220,,0,4120,3090,5562,local estimate; Responses token-count endpoint unavailable without API key; usage object not exposed by local subagent tool
+17,round-2,Jennifer final dotted-edge decision,220,0,120,,0,340,255,459,local estimate; Responses token-count endpoint unavailable without API key; usage object not exposed by local subagent tool
+17,final,main synthesis/artifact generation,5200,0,700,,0,5900,4425,7965,local estimate; Responses token-count endpoint unavailable without API key; usage object not exposed by local subagent tool

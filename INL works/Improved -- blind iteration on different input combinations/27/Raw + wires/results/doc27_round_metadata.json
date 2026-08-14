@@ -1,0 +1,55 @@
+{
+  "document": 27,
+  "iteration": 1,
+  "source_folder": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\27\\Raw + wires",
+  "source_discipline": [
+    "Used only Raw + wires resources.",
+    "No GT or GT-derived feedback used.",
+    "No off-the-shelf OCR used; labels were read visually by agents/main inspection."
+  ],
+  "rounds": [
+    {
+      "round": "Diego R1",
+      "agent": "Diego",
+      "agent_id": "019f76c5-c8cc-7a11-9693-621484aabb1f",
+      "nodes": 200,
+      "accepted_edges": 199,
+      "outcome": "High-recall graph; charger boxes left ambiguous; A10/B01 battery/DC area overconnected."
+    },
+    {
+      "round": "Jennifer R1",
+      "agent": "Jennifer",
+      "agent_id": "019f76cc-93e6-7c10-bb73-a58b98cc1e2c",
+      "nodes": 200,
+      "accepted_edges": 200,
+      "outcome": "Promoted CHGR-125A/B as real nodes; removed unsupported JB-A10/DC and B battery ties."
+    },
+    {
+      "round": "Diego R2",
+      "agent": "Diego",
+      "agent_id": "019f76d1-8fd4-7ab1-b625-3d8c2c3f45b1",
+      "nodes": 200,
+      "accepted_edges": 200,
+      "outcome": "Saturation check of Jennifer R1 corrections; no matrix-changing additions expected unless noted in final review."
+    },
+    {
+      "round": "Jennifer R2 final",
+      "agent": "Jennifer",
+      "agent_id": "019f76d3-8cb5-7d80-89fb-38132de46751",
+      "nodes": 200,
+      "accepted_edges": 200,
+      "outcome": "Confirmed saturation/final state; no additions or removals from Diego R2/Jennifer R1 corrected matrix."
+    }
+  ],
+  "final_edge_count": 200,
+  "final_node_count": 200,
+  "final_uncertain_excluded": [
+    "JB-A10 -- DC-BUS-125A",
+    "DS-B01 -- BAT-125B",
+    "BAT-125B -- DC-BUS-125B",
+    "CHGR-125A -- BAT-125A",
+    "CHGR-125B -- BAT-125B",
+    "BAT-125A -- DC-BUS-125A",
+    "PANEL-CTRL-MAIN -- DC-BUS-125B"
+  ]
+}

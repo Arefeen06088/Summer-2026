@@ -1,0 +1,49 @@
+Connectivity matrix validation summary - Document 27
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\27\synthetic_npp_connectivity_matrix_readable.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_matrix.csv): TP=197, FP=7, FN=3, Precision=0.965686, Recall=0.985000, F1=0.975248
+- Jennifer -- Round 2 (round_02_jennifer_precision_matrix.csv): TP=195, FP=8, FN=5, Precision=0.960591, Recall=0.975000, F1=0.967742
+- Diego -- Round 3 (round_03_diego_saturation_matrix.csv): TP=195, FP=8, FN=5, Precision=0.960591, Recall=0.975000, F1=0.967742
+- Jennifer -- Round 4 (round_04_jennifer_agreement_matrix.csv): TP=195, FP=8, FN=5, Precision=0.960591, Recall=0.975000, F1=0.967742
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=195, FP=8, FN=5, Precision=0.960591, Recall=0.975000, F1=0.967742
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- BAT-125A -- DS-A10
+- BAT-125A -- JB-A10
+- BAT-125B -- DC-BUS-125B
+- BUS-480-C -- GND-EO-A
+- BUS-480-D -- GND-EO-B
+- DC-BUS-125A -- DC-BUS-125B
+- DC-BUS-125A -- JB-A10
+- DC-BUS-125B -- PANEL-CTRL-MAIN
+
+False-negative edge examples:
+- BAT-125A -- CHGR-125A
+- BAT-125B -- CHGR-125B
+- BUS-480-C -- GND-EQ-A
+- BUS-480-D -- GND-EQ-B
+- DS-A10 -- JB-A10
+
+Extra/non-GT nodes causing performance drops:
+- GND-EO-A: 1 incident false-positive edge(s)
+- GND-EO-B: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 2 extra/intermediate nodes were omitted from the extraction (GND-EO-A, GND-EO-B), final metrics would be TP=195, FP=6, FN=5, Precision=0.970149, Recall=0.975000, F1=0.972569.
+- If all 2 non-GT nodes were omitted, metrics would be TP=195, FP=6, FN=5, Precision=0.970149, Recall=0.975000, F1=0.972569.
+
+Missing GT node examples:
+- GND-EQ-A: 1 missed incident GT edge(s)
+- GND-EQ-B: 1 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted GND-EO-A vs GT GND-EQ-A (similarity 0.88)
+- Extracted GND-EO-B vs GT GND-EQ-B (similarity 0.88)

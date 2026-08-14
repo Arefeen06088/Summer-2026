@@ -1,0 +1,201 @@
+source,target,type,evidence
+GRID-SWYD-1,CB-GRID-A,solid_power,grid source 1 feeder
+CB-GRID-A,BB-SWYD-230,solid_power,grid source 1 breaker to 230 kV bus
+GRID-SWYD-2,CB-GRID-B,solid_power,grid source 2 feeder
+CB-GRID-B,BB-SWYD-230,solid_power,grid source 2 breaker to 230 kV bus
+BB-SWYD-230,TR-SAT-1A,solid_power,station auxiliary transformer A tap
+TR-SAT-1A,CB-SAT-A,solid_power,SAT A low-side breaker
+CB-SAT-A,BUS-4160A,solid_power,SAT A breaker to 4160 A bus
+BB-SWYD-230,TR-SAT-1B,solid_power,station auxiliary transformer B tap
+TR-SAT-1B,CB-SAT-B,solid_power,SAT B low-side breaker
+CB-SAT-B,BUS-4160B,solid_power,SAT B breaker to 4160 B bus
+BB-SWYD-230,CB-GEN-150,solid_power,generator isolation breaker on 230 kV bus
+CB-GEN-150,GEN-MAIN-1,solid_power,isolation breaker to main generator
+GEN-MAIN-1,TR-UAT-1A,solid_power,main generator tap to UAT A
+TR-UAT-1A,CB-UAT-A,solid_power,UAT A to visible breaker
+GEN-MAIN-1,TR-UAT-1B,solid_power,main generator tap to UAT B
+TR-UAT-1B,CB-UAT-B,solid_power,UAT B to visible breaker
+DG-1A,CB-DG-A,solid_power,diesel generator A feeder
+CB-DG-A,BUS-4160A,solid_power,DG A breaker to 4160 A bus
+DG-1B,CB-DG-B,solid_power,diesel generator B feeder
+CB-DG-B,BUS-4160B,solid_power,DG B breaker to 4160 B bus
+BUS-4160A,CB-4160-TIE,solid_power,normally open 4160 tie from A side
+CB-4160-TIE,BUS-4160B,solid_power,normally open 4160 tie to B side
+BUS-4160A,GND-4160A,ground,4160 A bus ground tap
+BUS-4160B,GND-4160B,ground,4160 B bus ground tap
+BUS-4160A,TR-480-A1,solid_power,4160 A feeder to transformer A1
+TR-480-A1,CB-480A-1N,solid_power,transformer A1 to 480 A incomer
+CB-480A-1N,BUS-480A,solid_power,480 A incomer to bus
+BUS-4160A,TR-480-B1,solid_power,4160 A feeder to transformer B1
+TR-480-B1,CB-480B-1N,solid_power,transformer B1 to 480 B incomer
+CB-480B-1N,BUS-480B,solid_power,480 B incomer to bus
+BUS-4160B,TR-480-C1,solid_power,4160 B feeder to transformer C1
+TR-480-C1,CB-480C-1N,solid_power,transformer C1 to 480 C incomer
+CB-480C-1N,BUS-480C,solid_power,480 C incomer to bus
+BUS-4160B,TR-480-D1,solid_power,4160 B feeder to transformer D1
+TR-480-D1,CB-480D-1N,solid_power,transformer D1 to 480 D incomer
+CB-480D-1N,BUS-480D,solid_power,480 D incomer to bus
+BUS-4160A,PT-4160A,dashed_instrument,A bus PT tap
+PT-4160A,FU-PT-A,dashed_instrument,A PT fuse chain
+FU-PT-A,XFMR-CTRL-A,dashed_control,A control transformer chain
+XFMR-CTRL-A,TB-RPS-A,dashed_control,A RPS terminal chain
+TB-RPS-A,SW-43A,dashed_control,A selector switch chain
+BUS-4160B,PT-4160B,dashed_instrument,B bus PT tap
+PT-4160B,FU-PT-B,dashed_instrument,B PT fuse chain
+FU-PT-B,XFMR-CTRL-B,dashed_control,B control transformer chain
+XFMR-CTRL-B,TB-RPS-B,dashed_control,B RPS terminal chain
+TB-RPS-B,SW-43B,dashed_control,B selector switch chain
+BUS-480A,CB-A01,solid_power,Load center A feeder CB-A01 from 480 V bus
+CB-A01,DS-A01,solid_power,Load center A feeder CB-A01 first device
+DS-A01,MS-A01,solid_power,Load center A feeder CB-A01 second device
+MS-A01,PUMP-CCW-A1,solid_power/control,Load center A feeder CB-A01 endpoint load
+BUS-480A,CB-A02,solid_power,Load center A feeder CB-A02 from 480 V bus
+CB-A02,DS-A02,solid_power,Load center A feeder CB-A02 first device
+DS-A02,MS-A02,solid_power,Load center A feeder CB-A02 second device
+MS-A02,PUMP-RHR-A1,solid_power/control,Load center A feeder CB-A02 endpoint load
+BUS-480A,CB-A03,solid_power,Load center A feeder CB-A03 from 480 V bus
+CB-A03,FS-A03,solid_power,Load center A feeder CB-A03 first device
+FS-A03,MS-A03,solid_power,Load center A feeder CB-A03 second device
+MS-A03,FAN-RB-A1,solid_power/control,Load center A feeder CB-A03 endpoint load
+BUS-480A,CB-A04,solid_power,Load center A feeder CB-A04 from 480 V bus
+CB-A04,DS-A04,solid_power,Load center A feeder CB-A04 first device
+DS-A04,RY-A04,solid_power,Load center A feeder CB-A04 second device
+RY-A04,MOV-SI-A11,solid_power/control,Load center A feeder CB-A04 endpoint load
+BUS-480A,CB-A05,solid_power,Load center A feeder CB-A05 from 480 V bus
+CB-A05,DS-A05,solid_power,Load center A feeder CB-A05 first device
+DS-A05,CP-A05,solid_power,Load center A feeder CB-A05 second device
+CP-A05,PNL-LTG-A1,solid_power/control,Load center A feeder CB-A05 endpoint load
+BUS-480A,CB-A06,solid_power,Load center A feeder CB-A06 from 480 V bus
+CB-A06,DS-A06,solid_power,Load center A feeder CB-A06 first device
+DS-A06,MS-A06,solid_power,Load center A feeder CB-A06 second device
+MS-A06,PUMP-AFW-A1,solid_power/control,Load center A feeder CB-A06 endpoint load
+BUS-480A,CB-A07,solid_power,Load center A feeder CB-A07 from 480 V bus
+CB-A07,FS-A07,solid_power,Load center A feeder CB-A07 first device
+FS-A07,FU-A07,solid_power,Load center A feeder CB-A07 second device
+FU-A07,HTR-PZR-A1,solid_power/control,Load center A feeder CB-A07 endpoint load
+BUS-480A,CB-A08,solid_power,Load center A feeder CB-A08 from 480 V bus
+CB-A08,DS-A08,solid_power,Load center A feeder CB-A08 first device
+DS-A08,TB-A08,solid_power,Load center A feeder CB-A08 second device
+TB-A08,SPARE-A8,solid_power/control,Load center A feeder CB-A08 endpoint load
+BUS-480B,CB-B01,solid_power,Load center B feeder CB-B01 from 480 V bus
+CB-B01,DS-B01,solid_power,Load center B feeder CB-B01 first device
+DS-B01,MS-B01,solid_power,Load center B feeder CB-B01 second device
+MS-B01,PUMP-CCW-B1,solid_power/control,Load center B feeder CB-B01 endpoint load
+BUS-480B,CB-B02,solid_power,Load center B feeder CB-B02 from 480 V bus
+CB-B02,DS-B02,solid_power,Load center B feeder CB-B02 first device
+DS-B02,MS-B02,solid_power,Load center B feeder CB-B02 second device
+MS-B02,PUMP-RHR-B1,solid_power/control,Load center B feeder CB-B02 endpoint load
+BUS-480B,CB-B03,solid_power,Load center B feeder CB-B03 from 480 V bus
+CB-B03,FS-B03,solid_power,Load center B feeder CB-B03 first device
+FS-B03,MS-B03,solid_power,Load center B feeder CB-B03 second device
+MS-B03,FAN-FUEL-B1,solid_power/control,Load center B feeder CB-B03 endpoint load
+BUS-480B,CB-B04,solid_power,Load center B feeder CB-B04 from 480 V bus
+CB-B04,DS-B04,solid_power,Load center B feeder CB-B04 first device
+DS-B04,RY-B04,solid_power,Load center B feeder CB-B04 second device
+RY-B04,MOV-CCW-B21,solid_power/control,Load center B feeder CB-B04 endpoint load
+BUS-480B,CB-B05,solid_power,Load center B feeder CB-B05 from 480 V bus
+CB-B05,DS-B05,solid_power,Load center B feeder CB-B05 first device
+DS-B05,CP-B05,solid_power,Load center B feeder CB-B05 second device
+CP-B05,MCC-AUX-B6,solid_power/control,Load center B feeder CB-B05 endpoint load
+BUS-480B,CB-B06,solid_power,Load center B feeder CB-B06 from 480 V bus
+CB-B06,DS-B06,solid_power,Load center B feeder CB-B06 first device
+DS-B06,MS-B06,solid_power,Load center B feeder CB-B06 second device
+MS-B06,AIR-CMP-B1,solid_power/control,Load center B feeder CB-B06 endpoint load
+BUS-480B,CB-B07,solid_power,Load center B feeder CB-B07 from 480 V bus
+CB-B07,FS-B07,solid_power,Load center B feeder CB-B07 first device
+FS-B07,RY-B07,solid_power,Load center B feeder CB-B07 second device
+RY-B07,VLV-CHG-B1,solid_power/control,Load center B feeder CB-B07 endpoint load
+BUS-480C,CB-C01,solid_power,Load center C feeder CB-C01 from 480 V bus
+CB-C01,DS-C01,solid_power,Load center C feeder CB-C01 first device
+DS-C01,MS-C01,solid_power,Load center C feeder CB-C01 second device
+MS-C01,PUMP-HPCI-C1,solid_power/control,Load center C feeder CB-C01 endpoint load
+BUS-480C,CB-C02,solid_power,Load center C feeder CB-C02 from 480 V bus
+CB-C02,DS-C02,solid_power,Load center C feeder CB-C02 first device
+DS-C02,MS-C02,solid_power,Load center C feeder CB-C02 second device
+MS-C02,PUMP-RCW-C1,solid_power/control,Load center C feeder CB-C02 endpoint load
+BUS-480C,CB-C03,solid_power,Load center C feeder CB-C03 from 480 V bus
+CB-C03,FS-C03,solid_power,Load center C feeder CB-C03 first device
+FS-C03,MS-C03,solid_power,Load center C feeder CB-C03 second device
+MS-C03,FAN-RB-C1,solid_power/control,Load center C feeder CB-C03 endpoint load
+BUS-480C,CB-C04,solid_power,Load center C feeder CB-C04 from 480 V bus
+CB-C04,DS-C04,solid_power,Load center C feeder CB-C04 first device
+DS-C04,RY-C04,solid_power,Load center C feeder CB-C04 second device
+RY-C04,MOV-RHR-C11,solid_power/control,Load center C feeder CB-C04 endpoint load
+BUS-480C,CB-C05,solid_power,Load center C feeder CB-C05 from 480 V bus
+CB-C05,DS-C05,solid_power,Load center C feeder CB-C05 first device
+DS-C05,MS-C05,solid_power,Load center C feeder CB-C05 second device
+MS-C05,PUMP-SEAL-C1,solid_power/control,Load center C feeder CB-C05 endpoint load
+BUS-480C,CB-C06,solid_power,Load center C feeder CB-C06 from 480 V bus
+CB-C06,DS-C06,solid_power,Load center C feeder CB-C06 first device
+DS-C06,CP-C06,solid_power,Load center C feeder CB-C06 second device
+CP-C06,PNL-IC-C7,solid_power/control,Load center C feeder CB-C06 endpoint load
+BUS-480C,CB-C07,solid_power,Load center C feeder CB-C07 from 480 V bus
+CB-C07,FS-C07,solid_power,Load center C feeder CB-C07 first device
+FS-C07,MS-C07,solid_power,Load center C feeder CB-C07 second device
+MS-C07,SUMP-PMP-C1,solid_power/control,Load center C feeder CB-C07 endpoint load
+BUS-480C,CB-C08,solid_power,Load center C feeder CB-C08 from 480 V bus
+CB-C08,DS-C08,solid_power,Load center C feeder CB-C08 first device
+DS-C08,FU-C08,solid_power,Load center C feeder CB-C08 second device
+FU-C08,HTR-VENT-C2,solid_power/control,Load center C feeder CB-C08 endpoint load
+BUS-480D,CB-D01,solid_power,Load center D feeder CB-D01 from 480 V bus
+CB-D01,DS-D01,solid_power,Load center D feeder CB-D01 first device
+DS-D01,MS-D01,solid_power,Load center D feeder CB-D01 second device
+MS-D01,PUMP-AFW-D1,solid_power/control,Load center D feeder CB-D01 endpoint load
+BUS-480D,CB-D02,solid_power,Load center D feeder CB-D02 from 480 V bus
+CB-D02,DS-D02,solid_power,Load center D feeder CB-D02 first device
+DS-D02,MS-D02,solid_power,Load center D feeder CB-D02 second device
+MS-D02,FAN-CR-D1,solid_power/control,Load center D feeder CB-D02 endpoint load
+BUS-480D,CB-D03,solid_power,Load center D feeder CB-D03 from 480 V bus
+CB-D03,FS-D03,solid_power,Load center D feeder CB-D03 first device
+FS-D03,RY-D03,solid_power,Load center D feeder CB-D03 second device
+RY-D03,MOV-SI-D21,solid_power/control,Load center D feeder CB-D03 endpoint load
+BUS-480D,CB-D04,solid_power,Load center D feeder CB-D04 from 480 V bus
+CB-D04,DS-D04,solid_power,Load center D feeder CB-D04 first device
+DS-D04,MS-D04,solid_power,Load center D feeder CB-D04 second device
+MS-D04,PUMP-LUBE-D1,solid_power/control,Load center D feeder CB-D04 endpoint load
+BUS-480D,CB-D05,solid_power,Load center D feeder CB-D05 from 480 V bus
+CB-D05,DS-D05,solid_power,Load center D feeder CB-D05 first device
+DS-D05,CP-D05,solid_power,Load center D feeder CB-D05 second device
+CP-D05,PNL-ESS-D5,solid_power/control,Load center D feeder CB-D05 endpoint load
+BUS-480D,CB-D06,solid_power,Load center D feeder CB-D06 from 480 V bus
+CB-D06,DS-D06,solid_power,Load center D feeder CB-D06 first device
+DS-D06,MS-D06,solid_power,Load center D feeder CB-D06 second device
+MS-D06,COMP-AIR-D1,solid_power/control,Load center D feeder CB-D06 endpoint load
+BUS-480D,CB-D07,solid_power,Load center D feeder CB-D07 from 480 V bus
+CB-D07,FS-D07,solid_power,Load center D feeder CB-D07 first device
+FS-D07,TB-D07,solid_power,Load center D feeder CB-D07 second device
+TB-D07,SPARE-D7,solid_power/control,Load center D feeder CB-D07 endpoint load
+BUS-480B,CHG-125A,solid_power,Train A control-power source from BUS-480B
+CHG-125A,REC-125A,solid_power,A charger/rectifier chain
+REC-125A,CB-DC-A,solid_power,A rectifier to DC breaker
+CB-DC-A,BUS-125A,solid_power,A DC breaker to 125 VDC bus
+BUS-125A,BAT-125A,solid_power,A battery tap with dot
+BUS-125A,GND-DC-A,ground,A DC ground tap with dot
+BUS-125A,INV-120A,solid_power,A DC bus to inverter
+INV-120A,UPS-120A,dashed_control_power,A inverter to UPS
+UPS-120A,BUS-120A,solid_power,A UPS to 120 VAC bus
+BUS-120A,RPS-PNL-A,solid_power,A 120 VAC bus to RPS panel
+RPS-PNL-A,PLC-RPS-A,dashed_control,A RPS panel to PLC
+PLC-RPS-A,RELAY-K101,dashed_control,A PLC relay bundle fanout
+PLC-RPS-A,RELAY-K102,dashed_control,A PLC relay bundle fanout
+PLC-RPS-A,RELAY-K103,dashed_control,A PLC relay bundle fanout
+PLC-RPS-A,RELAY-K104,dashed_control,A PLC relay bundle fanout
+PLC-RPS-A,JB-RPS-A,dashed_control,A PLC bundle to junction box
+RELAY-K102,PNL-ANN-A,dashed_control,A K102 annunciator drop
+BUS-480C,CHG-125B,solid_power,Train B control-power source from BUS-480C
+CHG-125B,REC-125B,solid_power,B charger/rectifier chain
+REC-125B,CB-DC-B,solid_power,B rectifier to DC breaker
+CB-DC-B,BUS-125B,solid_power,B DC breaker to 125 VDC bus
+BUS-125B,BAT-125B,solid_power,B battery tap with dot
+BUS-125B,GND-DC-B,ground,B DC ground tap with dot
+BUS-125B,INV-120B,solid_power,B DC bus to inverter
+INV-120B,UPS-120B,dashed_control_power,B inverter to UPS
+UPS-120B,BUS-120B,solid_power,B UPS to 120 VAC bus
+BUS-120B,RPS-PNL-B,solid_power,B 120 VAC bus to RPS panel
+RPS-PNL-B,PLC-RPS-B,dashed_control,B RPS panel to PLC
+PLC-RPS-B,RELAY-K201,dashed_control,B PLC relay bundle fanout
+PLC-RPS-B,RELAY-K202,dashed_control,B PLC relay bundle fanout
+PLC-RPS-B,RELAY-K203,dashed_control,B PLC relay bundle fanout
+PLC-RPS-B,RELAY-K204,dashed_control,B PLC relay bundle fanout
+PLC-RPS-B,JB-RPS-B,dashed_control,B PLC bundle to junction box
+RELAY-K202,PNL-ANN-B,dashed_control,B K202 annunciator drop

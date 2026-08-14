@@ -1,0 +1,10 @@
+source,target,type,reason
+BUS-MAIN-230,TR-SAT-1A,label_fix,Diego R1 bus label corrected to BB-SWYD-230
+BUS-MAIN-230,TR-SAT-1B,label_fix,Diego R1 bus label corrected to BB-SWYD-230
+BUS-MAIN-230,TR-UAT-1A,excluded,"UAT 1A is visually tapped from GEN-MAIN-1, not directly from the switchyard bus"
+BUS-MAIN-230,TR-UAT-1B,excluded,"UAT 1B is visually tapped from GEN-MAIN-1, not directly from the switchyard bus"
+PLC-RPS-A,RELAY-K102,refined,broad fan-out replaced by local dashed chain through RELAY-K101 to RELAY-K102
+PLC-RPS-A,RELAY-K104,refined,broad fan-out replaced by local dashed chain through RELAY-K103 to RELAY-K104
+PLC-RPS-B,RELAY-K202,refined,broad fan-out replaced by local dashed chain through RELAY-K201 to RELAY-K202
+PLC-RPS-B,RELAY-K204,refined,broad fan-out replaced by local dashed chain through RELAY-K203 to RELAY-K204
+B08 feeder,,excluded,no visually present BUS-480B B08 branch in the focused crops

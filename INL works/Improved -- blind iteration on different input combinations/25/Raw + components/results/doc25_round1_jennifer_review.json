@@ -1,0 +1,2867 @@
+{
+  "document": "25",
+  "iteration": "1",
+  "round": "jennifer_round1",
+  "role": "precision_reviewer_refiner",
+  "review_notes": [
+    "Raw schematic was treated as authoritative; detected-components overlay and allowed crops were used only to localize components and repeated branch patterns.",
+    "No OCR engine, Ground Truth, Raw+wires folder, GT-derived feedback, or existing Doc25 wires scripts were used.",
+    "Retained visually supported direct power adjacencies through repeated feeder chains: bus to breaker, breaker to disconnect/device, device to downstream load/panel/transformer, with no skipped explicit devices.",
+    "Retained direct 4.16 kV bus-to-TR-480 branches because the raw crops show separate vertical transformer feeder taps continuing to CB-52-48 and the 480 V buses, not shortcuts through the nearby CB-4x01/DS-4x01 branches.",
+    "Retained RPS TRIP BUS to CB-4A01/CB-4B01/CB-4C01 as low-confidence control_trip assertions because the dashed W022/W025/W028 leads visibly terminate at side terminals on the first breaker boxes; alternate disconnect endpoints remain uncertain.",
+    "Removed two low-confidence asserted 480V charger-feeder label edges because their off-sheet/routing-lane endpoints are not resolved enough for direct assertions; those candidates were moved to uncertain_edges.",
+    "No visually supported label corrections were found in the allowed raw/overlay crops."
+  ],
+  "nodes": [
+    {
+      "id": "SWYD-115KV",
+      "type": "bus",
+      "evidence": "Top horizontal source bus labelled SWYD-115KV / SOURCE / 4.16KV SAFETY BUSES, with visible bus-tap dots to incoming transformer feeders."
+    },
+    {
+      "id": "BUS-4160-A",
+      "type": "bus",
+      "evidence": "Horizontal bus label visible on raw schematic: BUS-4160-A."
+    },
+    {
+      "id": "BUS-4160-B",
+      "type": "bus",
+      "evidence": "Horizontal bus label visible on raw schematic: BUS-4160-B."
+    },
+    {
+      "id": "BUS-4160-C",
+      "type": "bus",
+      "evidence": "Horizontal bus label visible on raw schematic: BUS-4160-C."
+    },
+    {
+      "id": "BUS-480-1A",
+      "type": "bus",
+      "evidence": "Horizontal bus label visible on raw schematic: BUS-480-1A."
+    },
+    {
+      "id": "BUS-480-1B",
+      "type": "bus",
+      "evidence": "Horizontal bus label visible on raw schematic: BUS-480-1B."
+    },
+    {
+      "id": "BUS-480-1C",
+      "type": "bus",
+      "evidence": "Horizontal bus label visible on raw schematic: BUS-480-1C."
+    },
+    {
+      "id": "BUS-125DC-A",
+      "type": "bus",
+      "evidence": "Horizontal bus label visible on raw schematic: BUS-125DC-A."
+    },
+    {
+      "id": "BUS-125DC-B",
+      "type": "bus",
+      "evidence": "Horizontal bus label visible on raw schematic: BUS-125DC-B."
+    },
+    {
+      "id": "MCC-A1",
+      "type": "bus",
+      "evidence": "Long MCC bus bar labelled MCC-A1 in 480V MCC branch area."
+    },
+    {
+      "id": "MCC-A2",
+      "type": "bus",
+      "evidence": "Long MCC bus bar labelled MCC-A2 in 480V MCC branch area."
+    },
+    {
+      "id": "MCC-B1",
+      "type": "bus",
+      "evidence": "Long MCC bus bar labelled MCC-B1 in 480V MCC branch area."
+    },
+    {
+      "id": "MCC-B2",
+      "type": "bus",
+      "evidence": "Long MCC bus bar labelled MCC-B2 in 480V MCC branch area."
+    },
+    {
+      "id": "MCC-C1",
+      "type": "bus",
+      "evidence": "Long MCC bus bar labelled MCC-C1 in 480V MCC branch area."
+    },
+    {
+      "id": "MCC-C2",
+      "type": "bus",
+      "evidence": "Long MCC bus bar labelled MCC-C2 in 480V MCC branch area."
+    },
+    {
+      "id": "RPS TRIP BUS",
+      "type": "logical_node",
+      "evidence": "Labelled dashed/control routing lane or off-page feeder marker visible in lower control/RPS section: RPS TRIP BUS."
+    },
+    {
+      "id": "PNL A/B TIE",
+      "type": "logical_node",
+      "evidence": "Labelled dashed/control routing lane or off-page feeder marker visible in lower control/RPS section: PNL A/B TIE."
+    },
+    {
+      "id": "480V CHGR-A FEEDER",
+      "type": "logical_node",
+      "evidence": "Labelled dashed/control routing lane or off-page feeder marker visible in lower control/RPS section: 480V CHGR-A FEEDER."
+    },
+    {
+      "id": "480V CHGR-B FEEDER",
+      "type": "logical_node",
+      "evidence": "Labelled dashed/control routing lane or off-page feeder marker visible in lower control/RPS section: 480V CHGR-B FEEDER."
+    },
+    {
+      "id": "FDR-13A",
+      "type": "component",
+      "evidence": "Top source feeder breaker/disconnect label FDR-13A above Train A 4.16KV feeders."
+    },
+    {
+      "id": "TR-UAT-1A",
+      "type": "component",
+      "evidence": "Transformer symbol/label TR-UAT-1A above BUS-4160-A."
+    },
+    {
+      "id": "CB-52-4A",
+      "type": "component",
+      "evidence": "Breaker label CB-52-4A immediately below transformer and above BUS-4160-A."
+    },
+    {
+      "id": "EDG-1A",
+      "type": "component",
+      "evidence": "Generator circle labelled EDG-1A above Train A bus."
+    },
+    {
+      "id": "CB-DG-1A",
+      "type": "component",
+      "evidence": "Diesel generator breaker label CB-DG-1A between EDG-1A and BUS-4160-A."
+    },
+    {
+      "id": "TR-480-1A",
+      "type": "component",
+      "evidence": "480V transformer label TR-480-1A on first vertical transformer branch below BUS-4160-A."
+    },
+    {
+      "id": "CB-52-48A",
+      "type": "component",
+      "evidence": "Breaker label CB-52-48A between TR-480-1A and BUS-480-1A."
+    },
+    {
+      "id": "FDR-13B",
+      "type": "component",
+      "evidence": "Top source feeder breaker/disconnect label FDR-13B above Train B 4.16KV feeders."
+    },
+    {
+      "id": "TR-UAT-1B",
+      "type": "component",
+      "evidence": "Transformer symbol/label TR-UAT-1B above BUS-4160-B."
+    },
+    {
+      "id": "CB-52-4B",
+      "type": "component",
+      "evidence": "Breaker label CB-52-4B immediately below transformer and above BUS-4160-B."
+    },
+    {
+      "id": "EDG-1B",
+      "type": "component",
+      "evidence": "Generator circle labelled EDG-1B above Train B bus."
+    },
+    {
+      "id": "CB-DG-1B",
+      "type": "component",
+      "evidence": "Diesel generator breaker label CB-DG-1B between EDG-1B and BUS-4160-B."
+    },
+    {
+      "id": "TR-480-1B",
+      "type": "component",
+      "evidence": "480V transformer label TR-480-1B on first vertical transformer branch below BUS-4160-B."
+    },
+    {
+      "id": "CB-52-48B",
+      "type": "component",
+      "evidence": "Breaker label CB-52-48B between TR-480-1B and BUS-480-1B."
+    },
+    {
+      "id": "TR-SAT-1",
+      "type": "component",
+      "evidence": "Transformer symbol/label TR-SAT-1 above BUS-4160-C."
+    },
+    {
+      "id": "CB-52-4C",
+      "type": "component",
+      "evidence": "Breaker label CB-52-4C immediately below transformer and above BUS-4160-C."
+    },
+    {
+      "id": "EDG-1C",
+      "type": "component",
+      "evidence": "Generator circle labelled EDG-1C above Train C bus."
+    },
+    {
+      "id": "CB-DG-1C",
+      "type": "component",
+      "evidence": "Diesel generator breaker label CB-DG-1C between EDG-1C and BUS-4160-C."
+    },
+    {
+      "id": "TR-480-1C",
+      "type": "component",
+      "evidence": "480V transformer label TR-480-1C on first vertical transformer branch below BUS-4160-C."
+    },
+    {
+      "id": "CB-52-48C",
+      "type": "component",
+      "evidence": "Breaker label CB-52-48C between TR-480-1C and BUS-480-1C."
+    },
+    {
+      "id": "CB-TIE-AB",
+      "type": "component",
+      "evidence": "Tie breaker label CB-TIE-AB drawn in-line between adjacent BUS-4160 trains."
+    },
+    {
+      "id": "CB-TIE-BC",
+      "type": "component",
+      "evidence": "Tie breaker label CB-TIE-BC drawn in-line between adjacent BUS-4160 trains."
+    },
+    {
+      "id": "CB-4A01",
+      "type": "component",
+      "evidence": "Train A 4.16KV branch breaker label CB-4A01 tapped from BUS-4160-A."
+    },
+    {
+      "id": "DS-4A01",
+      "type": "component",
+      "evidence": "Train A disconnect switch label DS-4A01 below CB-4A01."
+    },
+    {
+      "id": "MS-A01",
+      "type": "component",
+      "evidence": "Train A branch 01 downstream device/load label MS-A01 below DS-4A01."
+    },
+    {
+      "id": "PUMP-RHR P201A",
+      "type": "load",
+      "evidence": "Train A branch 01 downstream device/load label PUMP-RHR P201A below DS-4A01."
+    },
+    {
+      "id": "CB-4A02",
+      "type": "component",
+      "evidence": "Train A 4.16KV branch breaker label CB-4A02 tapped from BUS-4160-A."
+    },
+    {
+      "id": "DS-4A02",
+      "type": "component",
+      "evidence": "Train A disconnect switch label DS-4A02 below CB-4A02."
+    },
+    {
+      "id": "MS-A02",
+      "type": "component",
+      "evidence": "Train A branch 02 downstream device/load label MS-A02 below DS-4A02."
+    },
+    {
+      "id": "PUMP-CS-P202A",
+      "type": "load",
+      "evidence": "Train A branch 02 downstream device/load label PUMP-CS-P202A below DS-4A02."
+    },
+    {
+      "id": "CB-4A03",
+      "type": "component",
+      "evidence": "Train A 4.16KV branch breaker label CB-4A03 tapped from BUS-4160-A."
+    },
+    {
+      "id": "DS-4A03",
+      "type": "component",
+      "evidence": "Train A disconnect switch label DS-4A03 below CB-4A03."
+    },
+    {
+      "id": "TR-LC-A03",
+      "type": "component",
+      "evidence": "Train A branch 03 downstream device/load label TR-LC-A03 below DS-4A03."
+    },
+    {
+      "id": "LC-480-A03",
+      "type": "panel",
+      "evidence": "Train A branch 03 downstream device/load label LC-480-A03 below DS-4A03."
+    },
+    {
+      "id": "CB-4A04",
+      "type": "component",
+      "evidence": "Train A 4.16KV branch breaker label CB-4A04 tapped from BUS-4160-A."
+    },
+    {
+      "id": "DS-4A04",
+      "type": "component",
+      "evidence": "Train A disconnect switch label DS-4A04 below CB-4A04."
+    },
+    {
+      "id": "MS-A04",
+      "type": "component",
+      "evidence": "Train A branch 04 downstream device/load label MS-A04 below DS-4A04."
+    },
+    {
+      "id": "FAN-CR-401A",
+      "type": "load",
+      "evidence": "Train A branch 04 downstream device/load label FAN-CR-401A below DS-4A04."
+    },
+    {
+      "id": "CB-4A05",
+      "type": "component",
+      "evidence": "Train A 4.16KV branch breaker label CB-4A05 tapped from BUS-4160-A."
+    },
+    {
+      "id": "DS-4A05",
+      "type": "component",
+      "evidence": "Train A disconnect switch label DS-4A05 below CB-4A05."
+    },
+    {
+      "id": "PNL-ESF-A05",
+      "type": "panel",
+      "evidence": "Train A branch 05 downstream device/load label PNL-ESF-A05 below DS-4A05."
+    },
+    {
+      "id": "GND-ESF-A05",
+      "type": "ground",
+      "evidence": "Train A branch 05 downstream device/load label GND-ESF-A05 below DS-4A05."
+    },
+    {
+      "id": "CB-4A06",
+      "type": "component",
+      "evidence": "Train A 4.16KV branch breaker label CB-4A06 tapped from BUS-4160-A."
+    },
+    {
+      "id": "DS-4A06",
+      "type": "component",
+      "evidence": "Train A disconnect switch label DS-4A06 below CB-4A06."
+    },
+    {
+      "id": "RECT-RPS-A06",
+      "type": "component",
+      "evidence": "Train A branch 06 downstream device/load label RECT-RPS-A06 below DS-4A06."
+    },
+    {
+      "id": "INV-RPS-A06",
+      "type": "component",
+      "evidence": "Train A branch 06 downstream device/load label INV-RPS-A06 below DS-4A06."
+    },
+    {
+      "id": "CB-4A07",
+      "type": "component",
+      "evidence": "Train A 4.16KV branch breaker label CB-4A07 tapped from BUS-4160-A."
+    },
+    {
+      "id": "DS-4A07",
+      "type": "component",
+      "evidence": "Train A disconnect switch label DS-4A07 below CB-4A07."
+    },
+    {
+      "id": "MS-A07",
+      "type": "component",
+      "evidence": "Train A branch 07 downstream device/load label MS-A07 below DS-4A07."
+    },
+    {
+      "id": "PUMP-AFW P203A",
+      "type": "load",
+      "evidence": "Train A branch 07 downstream device/load label PUMP-AFW P203A below DS-4A07."
+    },
+    {
+      "id": "CB-4A08",
+      "type": "component",
+      "evidence": "Train A 4.16KV branch breaker label CB-4A08 tapped from BUS-4160-A."
+    },
+    {
+      "id": "DS-4A08",
+      "type": "component",
+      "evidence": "Train A disconnect switch label DS-4A08 below CB-4A08."
+    },
+    {
+      "id": "TR-CTRL-A08",
+      "type": "component",
+      "evidence": "Train A branch 08 downstream device/load label TR-CTRL-A08 below DS-4A08."
+    },
+    {
+      "id": "CP-CTRL-A08",
+      "type": "panel",
+      "evidence": "Train A branch 08 downstream device/load label CP-CTRL-A08 below DS-4A08."
+    },
+    {
+      "id": "CB-4B01",
+      "type": "component",
+      "evidence": "Train B 4.16KV branch breaker label CB-4B01 tapped from BUS-4160-B."
+    },
+    {
+      "id": "DS-4B01",
+      "type": "component",
+      "evidence": "Train B disconnect switch label DS-4B01 below CB-4B01."
+    },
+    {
+      "id": "MS-B01",
+      "type": "component",
+      "evidence": "Train B branch 01 downstream device/load label MS-B01 below DS-4B01."
+    },
+    {
+      "id": "PUMP-RHR P201B",
+      "type": "load",
+      "evidence": "Train B branch 01 downstream device/load label PUMP-RHR P201B below DS-4B01."
+    },
+    {
+      "id": "CB-4B02",
+      "type": "component",
+      "evidence": "Train B 4.16KV branch breaker label CB-4B02 tapped from BUS-4160-B."
+    },
+    {
+      "id": "DS-4B02",
+      "type": "component",
+      "evidence": "Train B disconnect switch label DS-4B02 below CB-4B02."
+    },
+    {
+      "id": "MS-B02",
+      "type": "component",
+      "evidence": "Train B branch 02 downstream device/load label MS-B02 below DS-4B02."
+    },
+    {
+      "id": "PUMP-CS-P202B",
+      "type": "load",
+      "evidence": "Train B branch 02 downstream device/load label PUMP-CS-P202B below DS-4B02."
+    },
+    {
+      "id": "CB-4B03",
+      "type": "component",
+      "evidence": "Train B 4.16KV branch breaker label CB-4B03 tapped from BUS-4160-B."
+    },
+    {
+      "id": "DS-4B03",
+      "type": "component",
+      "evidence": "Train B disconnect switch label DS-4B03 below CB-4B03."
+    },
+    {
+      "id": "TR-LC-B03",
+      "type": "component",
+      "evidence": "Train B branch 03 downstream device/load label TR-LC-B03 below DS-4B03."
+    },
+    {
+      "id": "LC-480-B03",
+      "type": "panel",
+      "evidence": "Train B branch 03 downstream device/load label LC-480-B03 below DS-4B03."
+    },
+    {
+      "id": "CB-4B04",
+      "type": "component",
+      "evidence": "Train B 4.16KV branch breaker label CB-4B04 tapped from BUS-4160-B."
+    },
+    {
+      "id": "DS-4B04",
+      "type": "component",
+      "evidence": "Train B disconnect switch label DS-4B04 below CB-4B04."
+    },
+    {
+      "id": "MS-B04",
+      "type": "component",
+      "evidence": "Train B branch 04 downstream device/load label MS-B04 below DS-4B04."
+    },
+    {
+      "id": "FAN-CR-401B",
+      "type": "load",
+      "evidence": "Train B branch 04 downstream device/load label FAN-CR-401B below DS-4B04."
+    },
+    {
+      "id": "CB-4B05",
+      "type": "component",
+      "evidence": "Train B 4.16KV branch breaker label CB-4B05 tapped from BUS-4160-B."
+    },
+    {
+      "id": "DS-4B05",
+      "type": "component",
+      "evidence": "Train B disconnect switch label DS-4B05 below CB-4B05."
+    },
+    {
+      "id": "PNL-ESF-B05",
+      "type": "panel",
+      "evidence": "Train B branch 05 downstream device/load label PNL-ESF-B05 below DS-4B05."
+    },
+    {
+      "id": "GND-ESF-B05",
+      "type": "ground",
+      "evidence": "Train B branch 05 downstream device/load label GND-ESF-B05 below DS-4B05."
+    },
+    {
+      "id": "CB-4B06",
+      "type": "component",
+      "evidence": "Train B 4.16KV branch breaker label CB-4B06 tapped from BUS-4160-B."
+    },
+    {
+      "id": "DS-4B06",
+      "type": "component",
+      "evidence": "Train B disconnect switch label DS-4B06 below CB-4B06."
+    },
+    {
+      "id": "RECT-RPS-B06",
+      "type": "component",
+      "evidence": "Train B branch 06 downstream device/load label RECT-RPS-B06 below DS-4B06."
+    },
+    {
+      "id": "INV-RPS-B06",
+      "type": "component",
+      "evidence": "Train B branch 06 downstream device/load label INV-RPS-B06 below DS-4B06."
+    },
+    {
+      "id": "CB-4B07",
+      "type": "component",
+      "evidence": "Train B 4.16KV branch breaker label CB-4B07 tapped from BUS-4160-B."
+    },
+    {
+      "id": "DS-4B07",
+      "type": "component",
+      "evidence": "Train B disconnect switch label DS-4B07 below CB-4B07."
+    },
+    {
+      "id": "MS-B07",
+      "type": "component",
+      "evidence": "Train B branch 07 downstream device/load label MS-B07 below DS-4B07."
+    },
+    {
+      "id": "PUMP-AFW P203B",
+      "type": "load",
+      "evidence": "Train B branch 07 downstream device/load label PUMP-AFW P203B below DS-4B07."
+    },
+    {
+      "id": "CB-4B08",
+      "type": "component",
+      "evidence": "Train B 4.16KV branch breaker label CB-4B08 tapped from BUS-4160-B."
+    },
+    {
+      "id": "DS-4B08",
+      "type": "component",
+      "evidence": "Train B disconnect switch label DS-4B08 below CB-4B08."
+    },
+    {
+      "id": "TR-CTRL-B08",
+      "type": "component",
+      "evidence": "Train B branch 08 downstream device/load label TR-CTRL-B08 below DS-4B08."
+    },
+    {
+      "id": "CP-CTRL-B08",
+      "type": "panel",
+      "evidence": "Train B branch 08 downstream device/load label CP-CTRL-B08 below DS-4B08."
+    },
+    {
+      "id": "CB-4C01",
+      "type": "component",
+      "evidence": "Train C 4.16KV branch breaker label CB-4C01 tapped from BUS-4160-C."
+    },
+    {
+      "id": "DS-4C01",
+      "type": "component",
+      "evidence": "Train C disconnect switch label DS-4C01 below CB-4C01."
+    },
+    {
+      "id": "MS-C01",
+      "type": "component",
+      "evidence": "Train C branch 01 downstream device/load label MS-C01 below DS-4C01."
+    },
+    {
+      "id": "PUMP-RHR P201C",
+      "type": "load",
+      "evidence": "Train C branch 01 downstream device/load label PUMP-RHR P201C below DS-4C01."
+    },
+    {
+      "id": "CB-4C02",
+      "type": "component",
+      "evidence": "Train C 4.16KV branch breaker label CB-4C02 tapped from BUS-4160-C."
+    },
+    {
+      "id": "DS-4C02",
+      "type": "component",
+      "evidence": "Train C disconnect switch label DS-4C02 below CB-4C02."
+    },
+    {
+      "id": "MS-C02",
+      "type": "component",
+      "evidence": "Train C branch 02 downstream device/load label MS-C02 below DS-4C02."
+    },
+    {
+      "id": "PUMP-CS-P202C",
+      "type": "load",
+      "evidence": "Train C branch 02 downstream device/load label PUMP-CS-P202C below DS-4C02."
+    },
+    {
+      "id": "CB-4C03",
+      "type": "component",
+      "evidence": "Train C 4.16KV branch breaker label CB-4C03 tapped from BUS-4160-C."
+    },
+    {
+      "id": "DS-4C03",
+      "type": "component",
+      "evidence": "Train C disconnect switch label DS-4C03 below CB-4C03."
+    },
+    {
+      "id": "TR-LC-C03",
+      "type": "component",
+      "evidence": "Train C branch 03 downstream device/load label TR-LC-C03 below DS-4C03."
+    },
+    {
+      "id": "LC-480-C03",
+      "type": "panel",
+      "evidence": "Train C branch 03 downstream device/load label LC-480-C03 below DS-4C03."
+    },
+    {
+      "id": "CB-4C04",
+      "type": "component",
+      "evidence": "Train C 4.16KV branch breaker label CB-4C04 tapped from BUS-4160-C."
+    },
+    {
+      "id": "DS-4C04",
+      "type": "component",
+      "evidence": "Train C disconnect switch label DS-4C04 below CB-4C04."
+    },
+    {
+      "id": "MS-C04",
+      "type": "component",
+      "evidence": "Train C branch 04 downstream device/load label MS-C04 below DS-4C04."
+    },
+    {
+      "id": "FAN-CR-401C",
+      "type": "load",
+      "evidence": "Train C branch 04 downstream device/load label FAN-CR-401C below DS-4C04."
+    },
+    {
+      "id": "CB-4C05",
+      "type": "component",
+      "evidence": "Train C 4.16KV branch breaker label CB-4C05 tapped from BUS-4160-C."
+    },
+    {
+      "id": "DS-4C05",
+      "type": "component",
+      "evidence": "Train C disconnect switch label DS-4C05 below CB-4C05."
+    },
+    {
+      "id": "PNL-ESF-C05",
+      "type": "panel",
+      "evidence": "Train C branch 05 downstream device/load label PNL-ESF-C05 below DS-4C05."
+    },
+    {
+      "id": "GND-ESF-C05",
+      "type": "ground",
+      "evidence": "Train C branch 05 downstream device/load label GND-ESF-C05 below DS-4C05."
+    },
+    {
+      "id": "CB-4C06",
+      "type": "component",
+      "evidence": "Train C 4.16KV branch breaker label CB-4C06 tapped from BUS-4160-C."
+    },
+    {
+      "id": "DS-4C06",
+      "type": "component",
+      "evidence": "Train C disconnect switch label DS-4C06 below CB-4C06."
+    },
+    {
+      "id": "RECT-RPS-C06",
+      "type": "component",
+      "evidence": "Train C branch 06 downstream device/load label RECT-RPS-C06 below DS-4C06."
+    },
+    {
+      "id": "INV-RPS-C06",
+      "type": "component",
+      "evidence": "Train C branch 06 downstream device/load label INV-RPS-C06 below DS-4C06."
+    },
+    {
+      "id": "CB-4C07",
+      "type": "component",
+      "evidence": "Train C 4.16KV branch breaker label CB-4C07 tapped from BUS-4160-C."
+    },
+    {
+      "id": "DS-4C07",
+      "type": "component",
+      "evidence": "Train C disconnect switch label DS-4C07 below CB-4C07."
+    },
+    {
+      "id": "MS-C07",
+      "type": "component",
+      "evidence": "Train C branch 07 downstream device/load label MS-C07 below DS-4C07."
+    },
+    {
+      "id": "PUMP-AFW P203C",
+      "type": "load",
+      "evidence": "Train C branch 07 downstream device/load label PUMP-AFW P203C below DS-4C07."
+    },
+    {
+      "id": "CB-4C08",
+      "type": "component",
+      "evidence": "Train C 4.16KV branch breaker label CB-4C08 tapped from BUS-4160-C."
+    },
+    {
+      "id": "DS-4C08",
+      "type": "component",
+      "evidence": "Train C disconnect switch label DS-4C08 below CB-4C08."
+    },
+    {
+      "id": "TR-CTRL-C08",
+      "type": "component",
+      "evidence": "Train C branch 08 downstream device/load label TR-CTRL-C08 below DS-4C08."
+    },
+    {
+      "id": "CP-CTRL-C08",
+      "type": "panel",
+      "evidence": "Train C branch 08 downstream device/load label CP-CTRL-C08 below DS-4C08."
+    },
+    {
+      "id": "CB-48A01",
+      "type": "component",
+      "evidence": "480V MCC-A1 branch breaker label CB-48A01 on visible tap from MCC-A1."
+    },
+    {
+      "id": "MS-48A01",
+      "type": "component",
+      "evidence": "480V MCC-A1 branch 01 downstream label MS-48A01."
+    },
+    {
+      "id": "PUMP-CVC P301A",
+      "type": "load",
+      "evidence": "480V MCC-A1 branch 01 downstream label PUMP-CVC P301A."
+    },
+    {
+      "id": "CB-48A02",
+      "type": "component",
+      "evidence": "480V MCC-A1 branch breaker label CB-48A02 on visible tap from MCC-A1."
+    },
+    {
+      "id": "K-48A02",
+      "type": "relay",
+      "evidence": "480V MCC-A1 branch 02 downstream label K-48A02."
+    },
+    {
+      "id": "MOV-CS-451A",
+      "type": "load",
+      "evidence": "480V MCC-A1 branch 02 downstream label MOV-CS-451A."
+    },
+    {
+      "id": "CB-48A03",
+      "type": "component",
+      "evidence": "480V MCC-A1 branch breaker label CB-48A03 on visible tap from MCC-A1."
+    },
+    {
+      "id": "MS-48A03",
+      "type": "component",
+      "evidence": "480V MCC-A1 branch 03 downstream label MS-48A03."
+    },
+    {
+      "id": "FAN-HVAC-501A",
+      "type": "load",
+      "evidence": "480V MCC-A1 branch 03 downstream label FAN-HVAC-501A."
+    },
+    {
+      "id": "CB-48A04",
+      "type": "component",
+      "evidence": "480V MCC-A2 branch breaker label CB-48A04 on visible tap from MCC-A2."
+    },
+    {
+      "id": "MS-48A04",
+      "type": "component",
+      "evidence": "480V MCC-A2 branch 04 downstream label MS-48A04."
+    },
+    {
+      "id": "PUMP-SUMP P302A",
+      "type": "load",
+      "evidence": "480V MCC-A2 branch 04 downstream label PUMP-SUMP P302A."
+    },
+    {
+      "id": "CB-48A05",
+      "type": "component",
+      "evidence": "480V MCC-A2 branch breaker label CB-48A05 on visible tap from MCC-A2."
+    },
+    {
+      "id": "K-48A05",
+      "type": "relay",
+      "evidence": "480V MCC-A2 branch 05 downstream label K-48A05."
+    },
+    {
+      "id": "MOV-RHR-452A",
+      "type": "load",
+      "evidence": "480V MCC-A2 branch 05 downstream label MOV-RHR-452A."
+    },
+    {
+      "id": "CB-48A06",
+      "type": "component",
+      "evidence": "480V MCC-A2 branch breaker label CB-48A06 on visible tap from MCC-A2."
+    },
+    {
+      "id": "XFU-48A06",
+      "type": "component",
+      "evidence": "480V MCC-A2 branch 06 downstream label XFU-48A06."
+    },
+    {
+      "id": "PNL-PI-601A",
+      "type": "panel",
+      "evidence": "480V MCC-A2 branch 06 downstream label PNL-PI-601A."
+    },
+    {
+      "id": "CB-48B01",
+      "type": "component",
+      "evidence": "480V MCC-B1 branch breaker label CB-48B01 on visible tap from MCC-B1."
+    },
+    {
+      "id": "MS-48B01",
+      "type": "component",
+      "evidence": "480V MCC-B1 branch 01 downstream label MS-48B01."
+    },
+    {
+      "id": "PUMP-CVC P301B",
+      "type": "load",
+      "evidence": "480V MCC-B1 branch 01 downstream label PUMP-CVC P301B."
+    },
+    {
+      "id": "CB-48B02",
+      "type": "component",
+      "evidence": "480V MCC-B1 branch breaker label CB-48B02 on visible tap from MCC-B1."
+    },
+    {
+      "id": "K-48B02",
+      "type": "relay",
+      "evidence": "480V MCC-B1 branch 02 downstream label K-48B02."
+    },
+    {
+      "id": "MOV-CS-451B",
+      "type": "load",
+      "evidence": "480V MCC-B1 branch 02 downstream label MOV-CS-451B."
+    },
+    {
+      "id": "CB-48B03",
+      "type": "component",
+      "evidence": "480V MCC-B1 branch breaker label CB-48B03 on visible tap from MCC-B1."
+    },
+    {
+      "id": "MS-48B03",
+      "type": "component",
+      "evidence": "480V MCC-B1 branch 03 downstream label MS-48B03."
+    },
+    {
+      "id": "FAN-HVAC-501B",
+      "type": "load",
+      "evidence": "480V MCC-B1 branch 03 downstream label FAN-HVAC-501B."
+    },
+    {
+      "id": "CB-48B04",
+      "type": "component",
+      "evidence": "480V MCC-B2 branch breaker label CB-48B04 on visible tap from MCC-B2."
+    },
+    {
+      "id": "MS-48B04",
+      "type": "component",
+      "evidence": "480V MCC-B2 branch 04 downstream label MS-48B04."
+    },
+    {
+      "id": "PUMP-SUMP P302B",
+      "type": "load",
+      "evidence": "480V MCC-B2 branch 04 downstream label PUMP-SUMP P302B."
+    },
+    {
+      "id": "CB-48B05",
+      "type": "component",
+      "evidence": "480V MCC-B2 branch breaker label CB-48B05 on visible tap from MCC-B2."
+    },
+    {
+      "id": "K-48B05",
+      "type": "relay",
+      "evidence": "480V MCC-B2 branch 05 downstream label K-48B05."
+    },
+    {
+      "id": "MOV-RHR-452B",
+      "type": "load",
+      "evidence": "480V MCC-B2 branch 05 downstream label MOV-RHR-452B."
+    },
+    {
+      "id": "CB-48B06",
+      "type": "component",
+      "evidence": "480V MCC-B2 branch breaker label CB-48B06 on visible tap from MCC-B2."
+    },
+    {
+      "id": "XFU-48B06",
+      "type": "component",
+      "evidence": "480V MCC-B2 branch 06 downstream label XFU-48B06."
+    },
+    {
+      "id": "PNL-PI-601B",
+      "type": "panel",
+      "evidence": "480V MCC-B2 branch 06 downstream label PNL-PI-601B."
+    },
+    {
+      "id": "CB-48C01",
+      "type": "component",
+      "evidence": "480V MCC-C1 branch breaker label CB-48C01 on visible tap from MCC-C1."
+    },
+    {
+      "id": "MS-48C01",
+      "type": "component",
+      "evidence": "480V MCC-C1 branch 01 downstream label MS-48C01."
+    },
+    {
+      "id": "PUMP-CVC P301C",
+      "type": "load",
+      "evidence": "480V MCC-C1 branch 01 downstream label PUMP-CVC P301C."
+    },
+    {
+      "id": "CB-48C02",
+      "type": "component",
+      "evidence": "480V MCC-C1 branch breaker label CB-48C02 on visible tap from MCC-C1."
+    },
+    {
+      "id": "K-48C02",
+      "type": "relay",
+      "evidence": "480V MCC-C1 branch 02 downstream label K-48C02."
+    },
+    {
+      "id": "MOV-CS-451C",
+      "type": "load",
+      "evidence": "480V MCC-C1 branch 02 downstream label MOV-CS-451C."
+    },
+    {
+      "id": "CB-48C03",
+      "type": "component",
+      "evidence": "480V MCC-C1 branch breaker label CB-48C03 on visible tap from MCC-C1."
+    },
+    {
+      "id": "MS-48C03",
+      "type": "component",
+      "evidence": "480V MCC-C1 branch 03 downstream label MS-48C03."
+    },
+    {
+      "id": "FAN-HVAC-501C",
+      "type": "load",
+      "evidence": "480V MCC-C1 branch 03 downstream label FAN-HVAC-501C."
+    },
+    {
+      "id": "CB-48C04",
+      "type": "component",
+      "evidence": "480V MCC-C2 branch breaker label CB-48C04 on visible tap from MCC-C2."
+    },
+    {
+      "id": "MS-48C04",
+      "type": "component",
+      "evidence": "480V MCC-C2 branch 04 downstream label MS-48C04."
+    },
+    {
+      "id": "PUMP-SUMP P302C",
+      "type": "load",
+      "evidence": "480V MCC-C2 branch 04 downstream label PUMP-SUMP P302C."
+    },
+    {
+      "id": "CB-48C05",
+      "type": "component",
+      "evidence": "480V MCC-C2 branch breaker label CB-48C05 on visible tap from MCC-C2."
+    },
+    {
+      "id": "K-48C05",
+      "type": "relay",
+      "evidence": "480V MCC-C2 branch 05 downstream label K-48C05."
+    },
+    {
+      "id": "MOV-RHR-452C",
+      "type": "load",
+      "evidence": "480V MCC-C2 branch 05 downstream label MOV-RHR-452C."
+    },
+    {
+      "id": "CB-48C06",
+      "type": "component",
+      "evidence": "480V MCC-C2 branch breaker label CB-48C06 on visible tap from MCC-C2."
+    },
+    {
+      "id": "XFU-48C06",
+      "type": "component",
+      "evidence": "480V MCC-C2 branch 06 downstream label XFU-48C06."
+    },
+    {
+      "id": "PNL-PI-601C",
+      "type": "panel",
+      "evidence": "480V MCC-C2 branch 06 downstream label PNL-PI-601C."
+    },
+    {
+      "id": "CHGR-125-1A",
+      "type": "component",
+      "evidence": "Charger block CHG labelled CHGR-125-1A in lower left control section."
+    },
+    {
+      "id": "BAT-125-1A",
+      "type": "component",
+      "evidence": "Battery symbol labelled BAT-125-1A tied to BUS-125DC-A."
+    },
+    {
+      "id": "INV-120-1A",
+      "type": "component",
+      "evidence": "DC/AC block labelled INV-120-1A at right end of BUS-125DC-A."
+    },
+    {
+      "id": "PNL-RPS-A",
+      "type": "panel",
+      "evidence": "Panel block labelled PNL-RPS-A connected to INV-120-1A output."
+    },
+    {
+      "id": "XMTR-PT-501A",
+      "type": "instrument",
+      "evidence": "Instrument circle I labelled XMTR-PT-501A below PNL-RPS-A."
+    },
+    {
+      "id": "RELAY-K501A",
+      "type": "relay",
+      "evidence": "Relay circle K labelled RELAY-K501A in dashed RPS A control path."
+    },
+    {
+      "id": "CHGR-125-1B",
+      "type": "component",
+      "evidence": "Charger block CHG labelled CHGR-125-1B in lower center control section."
+    },
+    {
+      "id": "BAT-125-1B",
+      "type": "component",
+      "evidence": "Battery symbol labelled BAT-125-1B tied to BUS-125DC-B."
+    },
+    {
+      "id": "INV-120-1B",
+      "type": "component",
+      "evidence": "DC/AC block labelled INV-120-1B at right end of BUS-125DC-B."
+    },
+    {
+      "id": "PNL-RPS-B",
+      "type": "panel",
+      "evidence": "Panel block labelled PNL-RPS-B connected to INV-120-1B output."
+    },
+    {
+      "id": "XMTR-PT-501B",
+      "type": "instrument",
+      "evidence": "Instrument circle I labelled XMTR-PT-501B below PNL-RPS-B."
+    },
+    {
+      "id": "RELAY-K501B",
+      "type": "relay",
+      "evidence": "Relay circle K labelled RELAY-K501B in dashed RPS B control path."
+    },
+    {
+      "id": "TC-52-4A",
+      "type": "relay",
+      "evidence": "Trip coil block labelled TC-52-4A at lower right, with multiple dashed control terminals."
+    }
+  ],
+  "matrix_order": [
+    "SWYD-115KV",
+    "BUS-4160-A",
+    "BUS-4160-B",
+    "BUS-4160-C",
+    "BUS-480-1A",
+    "BUS-480-1B",
+    "BUS-480-1C",
+    "BUS-125DC-A",
+    "BUS-125DC-B",
+    "MCC-A1",
+    "MCC-A2",
+    "MCC-B1",
+    "MCC-B2",
+    "MCC-C1",
+    "MCC-C2",
+    "RPS TRIP BUS",
+    "PNL A/B TIE",
+    "480V CHGR-A FEEDER",
+    "480V CHGR-B FEEDER",
+    "FDR-13A",
+    "TR-UAT-1A",
+    "CB-52-4A",
+    "EDG-1A",
+    "CB-DG-1A",
+    "TR-480-1A",
+    "CB-52-48A",
+    "FDR-13B",
+    "TR-UAT-1B",
+    "CB-52-4B",
+    "EDG-1B",
+    "CB-DG-1B",
+    "TR-480-1B",
+    "CB-52-48B",
+    "TR-SAT-1",
+    "CB-52-4C",
+    "EDG-1C",
+    "CB-DG-1C",
+    "TR-480-1C",
+    "CB-52-48C",
+    "CB-TIE-AB",
+    "CB-TIE-BC",
+    "CB-4A01",
+    "DS-4A01",
+    "MS-A01",
+    "PUMP-RHR P201A",
+    "CB-4A02",
+    "DS-4A02",
+    "MS-A02",
+    "PUMP-CS-P202A",
+    "CB-4A03",
+    "DS-4A03",
+    "TR-LC-A03",
+    "LC-480-A03",
+    "CB-4A04",
+    "DS-4A04",
+    "MS-A04",
+    "FAN-CR-401A",
+    "CB-4A05",
+    "DS-4A05",
+    "PNL-ESF-A05",
+    "GND-ESF-A05",
+    "CB-4A06",
+    "DS-4A06",
+    "RECT-RPS-A06",
+    "INV-RPS-A06",
+    "CB-4A07",
+    "DS-4A07",
+    "MS-A07",
+    "PUMP-AFW P203A",
+    "CB-4A08",
+    "DS-4A08",
+    "TR-CTRL-A08",
+    "CP-CTRL-A08",
+    "CB-4B01",
+    "DS-4B01",
+    "MS-B01",
+    "PUMP-RHR P201B",
+    "CB-4B02",
+    "DS-4B02",
+    "MS-B02",
+    "PUMP-CS-P202B",
+    "CB-4B03",
+    "DS-4B03",
+    "TR-LC-B03",
+    "LC-480-B03",
+    "CB-4B04",
+    "DS-4B04",
+    "MS-B04",
+    "FAN-CR-401B",
+    "CB-4B05",
+    "DS-4B05",
+    "PNL-ESF-B05",
+    "GND-ESF-B05",
+    "CB-4B06",
+    "DS-4B06",
+    "RECT-RPS-B06",
+    "INV-RPS-B06",
+    "CB-4B07",
+    "DS-4B07",
+    "MS-B07",
+    "PUMP-AFW P203B",
+    "CB-4B08",
+    "DS-4B08",
+    "TR-CTRL-B08",
+    "CP-CTRL-B08",
+    "CB-4C01",
+    "DS-4C01",
+    "MS-C01",
+    "PUMP-RHR P201C",
+    "CB-4C02",
+    "DS-4C02",
+    "MS-C02",
+    "PUMP-CS-P202C",
+    "CB-4C03",
+    "DS-4C03",
+    "TR-LC-C03",
+    "LC-480-C03",
+    "CB-4C04",
+    "DS-4C04",
+    "MS-C04",
+    "FAN-CR-401C",
+    "CB-4C05",
+    "DS-4C05",
+    "PNL-ESF-C05",
+    "GND-ESF-C05",
+    "CB-4C06",
+    "DS-4C06",
+    "RECT-RPS-C06",
+    "INV-RPS-C06",
+    "CB-4C07",
+    "DS-4C07",
+    "MS-C07",
+    "PUMP-AFW P203C",
+    "CB-4C08",
+    "DS-4C08",
+    "TR-CTRL-C08",
+    "CP-CTRL-C08",
+    "CB-48A01",
+    "MS-48A01",
+    "PUMP-CVC P301A",
+    "CB-48A02",
+    "K-48A02",
+    "MOV-CS-451A",
+    "CB-48A03",
+    "MS-48A03",
+    "FAN-HVAC-501A",
+    "CB-48A04",
+    "MS-48A04",
+    "PUMP-SUMP P302A",
+    "CB-48A05",
+    "K-48A05",
+    "MOV-RHR-452A",
+    "CB-48A06",
+    "XFU-48A06",
+    "PNL-PI-601A",
+    "CB-48B01",
+    "MS-48B01",
+    "PUMP-CVC P301B",
+    "CB-48B02",
+    "K-48B02",
+    "MOV-CS-451B",
+    "CB-48B03",
+    "MS-48B03",
+    "FAN-HVAC-501B",
+    "CB-48B04",
+    "MS-48B04",
+    "PUMP-SUMP P302B",
+    "CB-48B05",
+    "K-48B05",
+    "MOV-RHR-452B",
+    "CB-48B06",
+    "XFU-48B06",
+    "PNL-PI-601B",
+    "CB-48C01",
+    "MS-48C01",
+    "PUMP-CVC P301C",
+    "CB-48C02",
+    "K-48C02",
+    "MOV-CS-451C",
+    "CB-48C03",
+    "MS-48C03",
+    "FAN-HVAC-501C",
+    "CB-48C04",
+    "MS-48C04",
+    "PUMP-SUMP P302C",
+    "CB-48C05",
+    "K-48C05",
+    "MOV-RHR-452C",
+    "CB-48C06",
+    "XFU-48C06",
+    "PNL-PI-601C",
+    "CHGR-125-1A",
+    "BAT-125-1A",
+    "INV-120-1A",
+    "PNL-RPS-A",
+    "XMTR-PT-501A",
+    "RELAY-K501A",
+    "CHGR-125-1B",
+    "BAT-125-1B",
+    "INV-120-1B",
+    "PNL-RPS-B",
+    "XMTR-PT-501B",
+    "RELAY-K501B",
+    "TC-52-4A"
+  ],
+  "asserted_edges": [
+    {
+      "source": "SWYD-115KV",
+      "target": "FDR-13A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid bus tap from SWYD-115KV down to FDR-13A with junction dot at top bus."
+    },
+    {
+      "source": "FDR-13A",
+      "target": "TR-UAT-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Vertical solid segment from FDR-13A to transformer TR-UAT-1A."
+    },
+    {
+      "source": "TR-UAT-1A",
+      "target": "CB-52-4A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Vertical solid segment from TR-UAT-1A to breaker CB-52-4A."
+    },
+    {
+      "source": "CB-52-4A",
+      "target": "BUS-4160-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical feeder from CB-52-4A lands on BUS-4160-A."
+    },
+    {
+      "source": "SWYD-115KV",
+      "target": "FDR-13B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid bus tap from SWYD-115KV down to FDR-13B with junction dot at top bus."
+    },
+    {
+      "source": "FDR-13B",
+      "target": "TR-UAT-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Vertical solid segment from FDR-13B to transformer TR-UAT-1B."
+    },
+    {
+      "source": "TR-UAT-1B",
+      "target": "CB-52-4B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Vertical solid segment from TR-UAT-1B to breaker CB-52-4B."
+    },
+    {
+      "source": "CB-52-4B",
+      "target": "BUS-4160-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical feeder from CB-52-4B lands on BUS-4160-B."
+    },
+    {
+      "source": "SWYD-115KV",
+      "target": "TR-SAT-1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid bus tap W013 from SWYD-115KV directly to TR-SAT-1 with top bus junction dot."
+    },
+    {
+      "source": "TR-SAT-1",
+      "target": "CB-52-4C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Vertical solid segment from TR-SAT-1 to CB-52-4C."
+    },
+    {
+      "source": "CB-52-4C",
+      "target": "BUS-4160-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical feeder from CB-52-4C lands on BUS-4160-C."
+    },
+    {
+      "source": "EDG-1A",
+      "target": "CB-DG-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical generator lead from EDG-1A to CB-DG-1A."
+    },
+    {
+      "source": "CB-DG-1A",
+      "target": "BUS-4160-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical feeder from CB-DG-1A lands on BUS-4160-A."
+    },
+    {
+      "source": "EDG-1B",
+      "target": "CB-DG-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical generator lead from EDG-1B to CB-DG-1B."
+    },
+    {
+      "source": "CB-DG-1B",
+      "target": "BUS-4160-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical feeder from CB-DG-1B lands on BUS-4160-B."
+    },
+    {
+      "source": "EDG-1C",
+      "target": "CB-DG-1C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical generator lead from EDG-1C to CB-DG-1C."
+    },
+    {
+      "source": "CB-DG-1C",
+      "target": "BUS-4160-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical feeder from CB-DG-1C lands on BUS-4160-C."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-TIE-AB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid in-line tie segment W018 from BUS-4160-A to CB-TIE-AB."
+    },
+    {
+      "source": "CB-TIE-AB",
+      "target": "BUS-4160-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid in-line tie segment W019 from CB-TIE-AB to BUS-4160-B."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-TIE-BC",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid in-line tie segment W020 from BUS-4160-B to CB-TIE-BC."
+    },
+    {
+      "source": "CB-TIE-BC",
+      "target": "BUS-4160-C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid in-line tie segment W021 from CB-TIE-BC to BUS-4160-C."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-4A01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-A to CB-4A01 in Train A branch 01."
+    },
+    {
+      "source": "CB-4A01",
+      "target": "DS-4A01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4A01 and DS-4A01."
+    },
+    {
+      "source": "DS-4A01",
+      "target": "MS-A01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4A01 to downstream device MS-A01."
+    },
+    {
+      "source": "MS-A01",
+      "target": "PUMP-RHR P201A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from MS-A01 to labelled device/load PUMP-RHR P201A."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-4A02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-A to CB-4A02 in Train A branch 02."
+    },
+    {
+      "source": "CB-4A02",
+      "target": "DS-4A02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4A02 and DS-4A02."
+    },
+    {
+      "source": "DS-4A02",
+      "target": "MS-A02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4A02 to downstream device MS-A02."
+    },
+    {
+      "source": "MS-A02",
+      "target": "PUMP-CS-P202A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from MS-A02 to labelled device/load PUMP-CS-P202A."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-4A03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-A to CB-4A03 in Train A branch 03."
+    },
+    {
+      "source": "CB-4A03",
+      "target": "DS-4A03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4A03 and DS-4A03."
+    },
+    {
+      "source": "DS-4A03",
+      "target": "TR-LC-A03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4A03 to downstream device TR-LC-A03."
+    },
+    {
+      "source": "TR-LC-A03",
+      "target": "LC-480-A03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from TR-LC-A03 to labelled device/load LC-480-A03."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-4A04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-A to CB-4A04 in Train A branch 04."
+    },
+    {
+      "source": "CB-4A04",
+      "target": "DS-4A04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4A04 and DS-4A04."
+    },
+    {
+      "source": "DS-4A04",
+      "target": "MS-A04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4A04 to downstream device MS-A04."
+    },
+    {
+      "source": "MS-A04",
+      "target": "FAN-CR-401A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from MS-A04 to labelled device/load FAN-CR-401A."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-4A05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-A to CB-4A05 in Train A branch 05."
+    },
+    {
+      "source": "CB-4A05",
+      "target": "DS-4A05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4A05 and DS-4A05."
+    },
+    {
+      "source": "DS-4A05",
+      "target": "PNL-ESF-A05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4A05 to downstream device PNL-ESF-A05."
+    },
+    {
+      "source": "PNL-ESF-A05",
+      "target": "GND-ESF-A05",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "Dashed/ground-reference drop from PNL-ESF-A05 to ground symbol GND-ESF-A05."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-4A06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-A to CB-4A06 in Train A branch 06."
+    },
+    {
+      "source": "CB-4A06",
+      "target": "DS-4A06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4A06 and DS-4A06."
+    },
+    {
+      "source": "DS-4A06",
+      "target": "RECT-RPS-A06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4A06 to downstream device RECT-RPS-A06."
+    },
+    {
+      "source": "RECT-RPS-A06",
+      "target": "INV-RPS-A06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from RECT-RPS-A06 to labelled device/load INV-RPS-A06."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-4A07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-A to CB-4A07 in Train A branch 07."
+    },
+    {
+      "source": "CB-4A07",
+      "target": "DS-4A07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4A07 and DS-4A07."
+    },
+    {
+      "source": "DS-4A07",
+      "target": "MS-A07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4A07 to downstream device MS-A07."
+    },
+    {
+      "source": "MS-A07",
+      "target": "PUMP-AFW P203A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from MS-A07 to labelled device/load PUMP-AFW P203A."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-4A08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-A to CB-4A08 in Train A branch 08."
+    },
+    {
+      "source": "CB-4A08",
+      "target": "DS-4A08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4A08 and DS-4A08."
+    },
+    {
+      "source": "DS-4A08",
+      "target": "TR-CTRL-A08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4A08 to downstream device TR-CTRL-A08."
+    },
+    {
+      "source": "TR-CTRL-A08",
+      "target": "CP-CTRL-A08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from TR-CTRL-A08 to labelled device/load CP-CTRL-A08."
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "TR-480-1A",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "First transformer branch is visibly tied into BUS-4160-A; TR-480-1A drawn on same vertical feeder toward 480V bus."
+    },
+    {
+      "source": "TR-480-1A",
+      "target": "CB-52-48A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from TR-480-1A to CB-52-48A."
+    },
+    {
+      "source": "CB-52-48A",
+      "target": "BUS-480-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical feeder from CB-52-48A lands on BUS-480-1A."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-4B01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-B to CB-4B01 in Train B branch 01."
+    },
+    {
+      "source": "CB-4B01",
+      "target": "DS-4B01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4B01 and DS-4B01."
+    },
+    {
+      "source": "DS-4B01",
+      "target": "MS-B01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4B01 to downstream device MS-B01."
+    },
+    {
+      "source": "MS-B01",
+      "target": "PUMP-RHR P201B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from MS-B01 to labelled device/load PUMP-RHR P201B."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-4B02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-B to CB-4B02 in Train B branch 02."
+    },
+    {
+      "source": "CB-4B02",
+      "target": "DS-4B02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4B02 and DS-4B02."
+    },
+    {
+      "source": "DS-4B02",
+      "target": "MS-B02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4B02 to downstream device MS-B02."
+    },
+    {
+      "source": "MS-B02",
+      "target": "PUMP-CS-P202B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from MS-B02 to labelled device/load PUMP-CS-P202B."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-4B03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-B to CB-4B03 in Train B branch 03."
+    },
+    {
+      "source": "CB-4B03",
+      "target": "DS-4B03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4B03 and DS-4B03."
+    },
+    {
+      "source": "DS-4B03",
+      "target": "TR-LC-B03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4B03 to downstream device TR-LC-B03."
+    },
+    {
+      "source": "TR-LC-B03",
+      "target": "LC-480-B03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from TR-LC-B03 to labelled device/load LC-480-B03."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-4B04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-B to CB-4B04 in Train B branch 04."
+    },
+    {
+      "source": "CB-4B04",
+      "target": "DS-4B04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4B04 and DS-4B04."
+    },
+    {
+      "source": "DS-4B04",
+      "target": "MS-B04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4B04 to downstream device MS-B04."
+    },
+    {
+      "source": "MS-B04",
+      "target": "FAN-CR-401B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from MS-B04 to labelled device/load FAN-CR-401B."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-4B05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-B to CB-4B05 in Train B branch 05."
+    },
+    {
+      "source": "CB-4B05",
+      "target": "DS-4B05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4B05 and DS-4B05."
+    },
+    {
+      "source": "DS-4B05",
+      "target": "PNL-ESF-B05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4B05 to downstream device PNL-ESF-B05."
+    },
+    {
+      "source": "PNL-ESF-B05",
+      "target": "GND-ESF-B05",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "Dashed/ground-reference drop from PNL-ESF-B05 to ground symbol GND-ESF-B05."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-4B06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-B to CB-4B06 in Train B branch 06."
+    },
+    {
+      "source": "CB-4B06",
+      "target": "DS-4B06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4B06 and DS-4B06."
+    },
+    {
+      "source": "DS-4B06",
+      "target": "RECT-RPS-B06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4B06 to downstream device RECT-RPS-B06."
+    },
+    {
+      "source": "RECT-RPS-B06",
+      "target": "INV-RPS-B06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from RECT-RPS-B06 to labelled device/load INV-RPS-B06."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-4B07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-B to CB-4B07 in Train B branch 07."
+    },
+    {
+      "source": "CB-4B07",
+      "target": "DS-4B07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4B07 and DS-4B07."
+    },
+    {
+      "source": "DS-4B07",
+      "target": "MS-B07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4B07 to downstream device MS-B07."
+    },
+    {
+      "source": "MS-B07",
+      "target": "PUMP-AFW P203B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from MS-B07 to labelled device/load PUMP-AFW P203B."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-4B08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-B to CB-4B08 in Train B branch 08."
+    },
+    {
+      "source": "CB-4B08",
+      "target": "DS-4B08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4B08 and DS-4B08."
+    },
+    {
+      "source": "DS-4B08",
+      "target": "TR-CTRL-B08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4B08 to downstream device TR-CTRL-B08."
+    },
+    {
+      "source": "TR-CTRL-B08",
+      "target": "CP-CTRL-B08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from TR-CTRL-B08 to labelled device/load CP-CTRL-B08."
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "TR-480-1B",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "First transformer branch is visibly tied into BUS-4160-B; TR-480-1B drawn on same vertical feeder toward 480V bus."
+    },
+    {
+      "source": "TR-480-1B",
+      "target": "CB-52-48B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from TR-480-1B to CB-52-48B."
+    },
+    {
+      "source": "CB-52-48B",
+      "target": "BUS-480-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical feeder from CB-52-48B lands on BUS-480-1B."
+    },
+    {
+      "source": "BUS-4160-C",
+      "target": "CB-4C01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-C to CB-4C01 in Train C branch 01."
+    },
+    {
+      "source": "CB-4C01",
+      "target": "DS-4C01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4C01 and DS-4C01."
+    },
+    {
+      "source": "DS-4C01",
+      "target": "MS-C01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4C01 to downstream device MS-C01."
+    },
+    {
+      "source": "MS-C01",
+      "target": "PUMP-RHR P201C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from MS-C01 to labelled device/load PUMP-RHR P201C."
+    },
+    {
+      "source": "BUS-4160-C",
+      "target": "CB-4C02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-C to CB-4C02 in Train C branch 02."
+    },
+    {
+      "source": "CB-4C02",
+      "target": "DS-4C02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4C02 and DS-4C02."
+    },
+    {
+      "source": "DS-4C02",
+      "target": "MS-C02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4C02 to downstream device MS-C02."
+    },
+    {
+      "source": "MS-C02",
+      "target": "PUMP-CS-P202C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from MS-C02 to labelled device/load PUMP-CS-P202C."
+    },
+    {
+      "source": "BUS-4160-C",
+      "target": "CB-4C03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-C to CB-4C03 in Train C branch 03."
+    },
+    {
+      "source": "CB-4C03",
+      "target": "DS-4C03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4C03 and DS-4C03."
+    },
+    {
+      "source": "DS-4C03",
+      "target": "TR-LC-C03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4C03 to downstream device TR-LC-C03."
+    },
+    {
+      "source": "TR-LC-C03",
+      "target": "LC-480-C03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from TR-LC-C03 to labelled device/load LC-480-C03."
+    },
+    {
+      "source": "BUS-4160-C",
+      "target": "CB-4C04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-C to CB-4C04 in Train C branch 04."
+    },
+    {
+      "source": "CB-4C04",
+      "target": "DS-4C04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4C04 and DS-4C04."
+    },
+    {
+      "source": "DS-4C04",
+      "target": "MS-C04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4C04 to downstream device MS-C04."
+    },
+    {
+      "source": "MS-C04",
+      "target": "FAN-CR-401C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from MS-C04 to labelled device/load FAN-CR-401C."
+    },
+    {
+      "source": "BUS-4160-C",
+      "target": "CB-4C05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-C to CB-4C05 in Train C branch 05."
+    },
+    {
+      "source": "CB-4C05",
+      "target": "DS-4C05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4C05 and DS-4C05."
+    },
+    {
+      "source": "DS-4C05",
+      "target": "PNL-ESF-C05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4C05 to downstream device PNL-ESF-C05."
+    },
+    {
+      "source": "PNL-ESF-C05",
+      "target": "GND-ESF-C05",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "Dashed/ground-reference drop from PNL-ESF-C05 to ground symbol GND-ESF-C05."
+    },
+    {
+      "source": "BUS-4160-C",
+      "target": "CB-4C06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-C to CB-4C06 in Train C branch 06."
+    },
+    {
+      "source": "CB-4C06",
+      "target": "DS-4C06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4C06 and DS-4C06."
+    },
+    {
+      "source": "DS-4C06",
+      "target": "RECT-RPS-C06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4C06 to downstream device RECT-RPS-C06."
+    },
+    {
+      "source": "RECT-RPS-C06",
+      "target": "INV-RPS-C06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from RECT-RPS-C06 to labelled device/load INV-RPS-C06."
+    },
+    {
+      "source": "BUS-4160-C",
+      "target": "CB-4C07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-C to CB-4C07 in Train C branch 07."
+    },
+    {
+      "source": "CB-4C07",
+      "target": "DS-4C07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4C07 and DS-4C07."
+    },
+    {
+      "source": "DS-4C07",
+      "target": "MS-C07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4C07 to downstream device MS-C07."
+    },
+    {
+      "source": "MS-C07",
+      "target": "PUMP-AFW P203C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from MS-C07 to labelled device/load PUMP-AFW P203C."
+    },
+    {
+      "source": "BUS-4160-C",
+      "target": "CB-4C08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible solid vertical tap from BUS-4160-C to CB-4C08 in Train C branch 08."
+    },
+    {
+      "source": "CB-4C08",
+      "target": "DS-4C08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment between CB-4C08 and DS-4C08."
+    },
+    {
+      "source": "DS-4C08",
+      "target": "TR-CTRL-C08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from DS-4C08 to downstream device TR-CTRL-C08."
+    },
+    {
+      "source": "TR-CTRL-C08",
+      "target": "CP-CTRL-C08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Visible downstream segment from TR-CTRL-C08 to labelled device/load CP-CTRL-C08."
+    },
+    {
+      "source": "BUS-4160-C",
+      "target": "TR-480-1C",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "First transformer branch is visibly tied into BUS-4160-C; TR-480-1C drawn on same vertical feeder toward 480V bus."
+    },
+    {
+      "source": "TR-480-1C",
+      "target": "CB-52-48C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from TR-480-1C to CB-52-48C."
+    },
+    {
+      "source": "CB-52-48C",
+      "target": "BUS-480-1C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical feeder from CB-52-48C lands on BUS-480-1C."
+    },
+    {
+      "source": "BUS-480-1A",
+      "target": "MCC-A1",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Vertical solid feeder from BUS-480-1A enters/feeds long bus bar MCC-A1; exact feeder tap is visible in train A MCC area."
+    },
+    {
+      "source": "MCC-A1",
+      "target": "CB-48A01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-A1 bus bar to breaker CB-48A01."
+    },
+    {
+      "source": "CB-48A01",
+      "target": "MS-48A01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48A01 to downstream MS-48A01."
+    },
+    {
+      "source": "MS-48A01",
+      "target": "PUMP-CVC P301A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from MS-48A01 to load PUMP-CVC P301A."
+    },
+    {
+      "source": "MCC-A1",
+      "target": "CB-48A02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-A1 bus bar to breaker CB-48A02."
+    },
+    {
+      "source": "CB-48A02",
+      "target": "K-48A02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48A02 to downstream K-48A02."
+    },
+    {
+      "source": "K-48A02",
+      "target": "MOV-CS-451A",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed/control-style vertical segment from K-48A02 to MOV-CS-451A in MCC-A1 branch 02."
+    },
+    {
+      "source": "MCC-A1",
+      "target": "CB-48A03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-A1 bus bar to breaker CB-48A03."
+    },
+    {
+      "source": "CB-48A03",
+      "target": "MS-48A03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48A03 to downstream MS-48A03."
+    },
+    {
+      "source": "MS-48A03",
+      "target": "FAN-HVAC-501A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from MS-48A03 to load FAN-HVAC-501A."
+    },
+    {
+      "source": "BUS-480-1A",
+      "target": "MCC-A2",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Vertical solid feeder from BUS-480-1A enters/feeds long bus bar MCC-A2; exact feeder tap is visible in train A MCC area."
+    },
+    {
+      "source": "MCC-A2",
+      "target": "CB-48A04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-A2 bus bar to breaker CB-48A04."
+    },
+    {
+      "source": "CB-48A04",
+      "target": "MS-48A04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48A04 to downstream MS-48A04."
+    },
+    {
+      "source": "MS-48A04",
+      "target": "PUMP-SUMP P302A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from MS-48A04 to load PUMP-SUMP P302A."
+    },
+    {
+      "source": "MCC-A2",
+      "target": "CB-48A05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-A2 bus bar to breaker CB-48A05."
+    },
+    {
+      "source": "CB-48A05",
+      "target": "K-48A05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48A05 to downstream K-48A05."
+    },
+    {
+      "source": "K-48A05",
+      "target": "MOV-RHR-452A",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed/control-style vertical segment from K-48A05 to MOV-RHR-452A in MCC-A2 branch 05."
+    },
+    {
+      "source": "MCC-A2",
+      "target": "CB-48A06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-A2 bus bar to breaker CB-48A06."
+    },
+    {
+      "source": "CB-48A06",
+      "target": "XFU-48A06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48A06 to downstream XFU-48A06."
+    },
+    {
+      "source": "XFU-48A06",
+      "target": "PNL-PI-601A",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed/control-style vertical segment from XFU-48A06 to PNL-PI-601A in MCC-A2 branch 06."
+    },
+    {
+      "source": "BUS-480-1B",
+      "target": "MCC-B1",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Vertical solid feeder from BUS-480-1B enters/feeds long bus bar MCC-B1; exact feeder tap is visible in train B MCC area."
+    },
+    {
+      "source": "MCC-B1",
+      "target": "CB-48B01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-B1 bus bar to breaker CB-48B01."
+    },
+    {
+      "source": "CB-48B01",
+      "target": "MS-48B01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48B01 to downstream MS-48B01."
+    },
+    {
+      "source": "MS-48B01",
+      "target": "PUMP-CVC P301B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from MS-48B01 to load PUMP-CVC P301B."
+    },
+    {
+      "source": "MCC-B1",
+      "target": "CB-48B02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-B1 bus bar to breaker CB-48B02."
+    },
+    {
+      "source": "CB-48B02",
+      "target": "K-48B02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48B02 to downstream K-48B02."
+    },
+    {
+      "source": "K-48B02",
+      "target": "MOV-CS-451B",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed/control-style vertical segment from K-48B02 to MOV-CS-451B in MCC-B1 branch 02."
+    },
+    {
+      "source": "MCC-B1",
+      "target": "CB-48B03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-B1 bus bar to breaker CB-48B03."
+    },
+    {
+      "source": "CB-48B03",
+      "target": "MS-48B03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48B03 to downstream MS-48B03."
+    },
+    {
+      "source": "MS-48B03",
+      "target": "FAN-HVAC-501B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from MS-48B03 to load FAN-HVAC-501B."
+    },
+    {
+      "source": "BUS-480-1B",
+      "target": "MCC-B2",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Vertical solid feeder from BUS-480-1B enters/feeds long bus bar MCC-B2; exact feeder tap is visible in train B MCC area."
+    },
+    {
+      "source": "MCC-B2",
+      "target": "CB-48B04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-B2 bus bar to breaker CB-48B04."
+    },
+    {
+      "source": "CB-48B04",
+      "target": "MS-48B04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48B04 to downstream MS-48B04."
+    },
+    {
+      "source": "MS-48B04",
+      "target": "PUMP-SUMP P302B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from MS-48B04 to load PUMP-SUMP P302B."
+    },
+    {
+      "source": "MCC-B2",
+      "target": "CB-48B05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-B2 bus bar to breaker CB-48B05."
+    },
+    {
+      "source": "CB-48B05",
+      "target": "K-48B05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48B05 to downstream K-48B05."
+    },
+    {
+      "source": "K-48B05",
+      "target": "MOV-RHR-452B",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed/control-style vertical segment from K-48B05 to MOV-RHR-452B in MCC-B2 branch 05."
+    },
+    {
+      "source": "MCC-B2",
+      "target": "CB-48B06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-B2 bus bar to breaker CB-48B06."
+    },
+    {
+      "source": "CB-48B06",
+      "target": "XFU-48B06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48B06 to downstream XFU-48B06."
+    },
+    {
+      "source": "XFU-48B06",
+      "target": "PNL-PI-601B",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed/control-style vertical segment from XFU-48B06 to PNL-PI-601B in MCC-B2 branch 06."
+    },
+    {
+      "source": "BUS-480-1C",
+      "target": "MCC-C1",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Vertical solid feeder from BUS-480-1C enters/feeds long bus bar MCC-C1; exact feeder tap is visible in train C MCC area."
+    },
+    {
+      "source": "MCC-C1",
+      "target": "CB-48C01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-C1 bus bar to breaker CB-48C01."
+    },
+    {
+      "source": "CB-48C01",
+      "target": "MS-48C01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48C01 to downstream MS-48C01."
+    },
+    {
+      "source": "MS-48C01",
+      "target": "PUMP-CVC P301C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from MS-48C01 to load PUMP-CVC P301C."
+    },
+    {
+      "source": "MCC-C1",
+      "target": "CB-48C02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-C1 bus bar to breaker CB-48C02."
+    },
+    {
+      "source": "CB-48C02",
+      "target": "K-48C02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48C02 to downstream K-48C02."
+    },
+    {
+      "source": "K-48C02",
+      "target": "MOV-CS-451C",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed/control-style vertical segment from K-48C02 to MOV-CS-451C in MCC-C1 branch 02."
+    },
+    {
+      "source": "MCC-C1",
+      "target": "CB-48C03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-C1 bus bar to breaker CB-48C03."
+    },
+    {
+      "source": "CB-48C03",
+      "target": "MS-48C03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48C03 to downstream MS-48C03."
+    },
+    {
+      "source": "MS-48C03",
+      "target": "FAN-HVAC-501C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from MS-48C03 to load FAN-HVAC-501C."
+    },
+    {
+      "source": "BUS-480-1C",
+      "target": "MCC-C2",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "Vertical solid feeder from BUS-480-1C enters/feeds long bus bar MCC-C2; exact feeder tap is visible in train C MCC area."
+    },
+    {
+      "source": "MCC-C2",
+      "target": "CB-48C04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-C2 bus bar to breaker CB-48C04."
+    },
+    {
+      "source": "CB-48C04",
+      "target": "MS-48C04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48C04 to downstream MS-48C04."
+    },
+    {
+      "source": "MS-48C04",
+      "target": "PUMP-SUMP P302C",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from MS-48C04 to load PUMP-SUMP P302C."
+    },
+    {
+      "source": "MCC-C2",
+      "target": "CB-48C05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-C2 bus bar to breaker CB-48C05."
+    },
+    {
+      "source": "CB-48C05",
+      "target": "K-48C05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48C05 to downstream K-48C05."
+    },
+    {
+      "source": "K-48C05",
+      "target": "MOV-RHR-452C",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed/control-style vertical segment from K-48C05 to MOV-RHR-452C in MCC-C2 branch 05."
+    },
+    {
+      "source": "MCC-C2",
+      "target": "CB-48C06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-C2 bus bar to breaker CB-48C06."
+    },
+    {
+      "source": "CB-48C06",
+      "target": "XFU-48C06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "Solid vertical segment from CB-48C06 to downstream XFU-48C06."
+    },
+    {
+      "source": "XFU-48C06",
+      "target": "PNL-PI-601C",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed/control-style vertical segment from XFU-48C06 to PNL-PI-601C in MCC-C2 branch 06."
+    },
+    {
+      "source": "CHGR-125-1A",
+      "target": "BUS-125DC-A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Solid charger output W188 jogs from CHGR-125-1A to BUS-125DC-A."
+    },
+    {
+      "source": "BAT-125-1A",
+      "target": "BUS-125DC-A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Solid battery lead W187 connects BAT-125-1A to BUS-125DC-A."
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "INV-120-1A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "BUS-125DC-A solid horizontal bus terminates at DC/AC block INV-120-1A."
+    },
+    {
+      "source": "INV-120-1A",
+      "target": "PNL-RPS-A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Solid output W190 from INV-120-1A enters panel PNL-RPS-A."
+    },
+    {
+      "source": "PNL-RPS-A",
+      "target": "XMTR-PT-501A",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "Dotted/instrument vertical drop W193 from PNL-RPS-A to instrument circle XMTR-PT-501A."
+    },
+    {
+      "source": "PNL-RPS-A",
+      "target": "RELAY-K501A",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed RPS control path W191 runs from PNL-RPS-A to RELAY-K501A."
+    },
+    {
+      "source": "RELAY-K501A",
+      "target": "TC-52-4A",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control path W192 leaves RELAY-K501A and routes to the trip coil TC-52-4A."
+    },
+    {
+      "source": "CHGR-125-1B",
+      "target": "BUS-125DC-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Solid charger output W195 jogs from CHGR-125-1B to BUS-125DC-B."
+    },
+    {
+      "source": "BAT-125-1B",
+      "target": "BUS-125DC-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Solid battery lead W194 connects BAT-125-1B to BUS-125DC-B."
+    },
+    {
+      "source": "BUS-125DC-B",
+      "target": "INV-120-1B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "BUS-125DC-B solid horizontal bus terminates at DC/AC block INV-120-1B."
+    },
+    {
+      "source": "INV-120-1B",
+      "target": "PNL-RPS-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "Solid output W197 from INV-120-1B enters panel PNL-RPS-B."
+    },
+    {
+      "source": "PNL-RPS-B",
+      "target": "XMTR-PT-501B",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "Dotted/instrument vertical drop W199 from PNL-RPS-B to instrument circle XMTR-PT-501B."
+    },
+    {
+      "source": "PNL-RPS-B",
+      "target": "RELAY-K501B",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed RPS control path W198 runs from PNL-RPS-B to RELAY-K501B."
+    },
+    {
+      "source": "RELAY-K501B",
+      "target": "TC-52-4A",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Dashed control path W202 from RELAY-K501B routes into TC-52-4A."
+    },
+    {
+      "source": "TC-52-4A",
+      "target": "RPS TRIP BUS",
+      "kind": "control_trip",
+      "confidence": "medium",
+      "evidence": "Multiple dashed terminals from TC-52-4A route upward/right to the labelled RPS TRIP BUS."
+    },
+    {
+      "source": "RPS TRIP BUS",
+      "target": "CB-4A01",
+      "kind": "control_trip",
+      "confidence": "low",
+      "evidence": "Dashed control lead W022 visually terminates at/near the first 4.16KV feeder breaker CB-4A01; kept low confidence because the exact terminal is small."
+    },
+    {
+      "source": "RPS TRIP BUS",
+      "target": "CB-4B01",
+      "kind": "control_trip",
+      "confidence": "low",
+      "evidence": "Dashed control lead W025 visually terminates at/near the first 4.16KV feeder breaker CB-4B01; kept low confidence because the exact terminal is small."
+    },
+    {
+      "source": "RPS TRIP BUS",
+      "target": "CB-4C01",
+      "kind": "control_trip",
+      "confidence": "low",
+      "evidence": "Dashed control lead W028 visually terminates at/near the first 4.16KV feeder breaker CB-4C01; kept low confidence because the exact terminal is small."
+    }
+  ],
+  "uncertain_edges": [
+    {
+      "a": "CB-4A01",
+      "b": "TR-480-1A",
+      "reason": "The first Train A branch has adjacent/jogged vertical conductors near CB-4A01 and TR-480-1A; a shared tap is plausible, but the raw linework does not show a clear component-to-component terminal.",
+      "evidence": "Raw grid r1c1/r2c1 show CB-4A01, TR-480-1A, and CB-52-48A clustered on the first Train A bus tap."
+    },
+    {
+      "a": "CB-4B01",
+      "b": "TR-480-1B",
+      "reason": "Same first-branch ambiguity as Train A; transformer feeder is visually near CB-4B01 but not definitively through that breaker.",
+      "evidence": "Raw grid r1c2/r2c2 show CB-4B01, TR-480-1B, and CB-52-48B on adjacent/jogged conductors."
+    },
+    {
+      "a": "CB-4C01",
+      "b": "TR-480-1C",
+      "reason": "Same first-branch ambiguity as Train A/B; transformer feeder proximity does not prove direct electrical terminal on CB-4C01.",
+      "evidence": "Raw grid r1c3/r2c3 show CB-4C01 and TR-480-1C close to the first Train C 4.16KV feeder branch."
+    },
+    {
+      "a": "RPS TRIP BUS",
+      "b": "DS-4A01",
+      "reason": "The dashed W022 control lead reaches the first Train A feeder area; it may terminate at disconnect/trip terminal rather than the breaker label used in asserted_edges.",
+      "evidence": "Dashed path W022 approaches the CB-4A01/DS-4A01 vertical with a small terminal symbol."
+    },
+    {
+      "a": "RPS TRIP BUS",
+      "b": "DS-4B01",
+      "reason": "The dashed W025 control lead reaches the first Train B feeder area; exact terminal could be breaker or disconnect.",
+      "evidence": "Dashed path W025 approaches the CB-4B01/DS-4B01 vertical with small terminal detail."
+    },
+    {
+      "a": "RPS TRIP BUS",
+      "b": "DS-4C01",
+      "reason": "The dashed W028 control lead reaches the first Train C feeder area; exact terminal could be breaker or disconnect.",
+      "evidence": "Dashed path W028 approaches the CB-4C01/DS-4C01 vertical with small terminal detail."
+    },
+    {
+      "a": "PNL-RPS-A",
+      "b": "PNL A/B TIE",
+      "reason": "A dashed lane labelled PNL A/B TIE passes near/under PNL-RPS-A, but the panel terminal/junction is not cleanly visible.",
+      "evidence": "Lower control crop shows W203/PNL A/B TIE routed beside PNL-RPS-A."
+    },
+    {
+      "a": "PNL-RPS-B",
+      "b": "PNL A/B TIE",
+      "reason": "The labelled PNL A/B TIE dashed lane appears to route toward the B-side panel area, but the precise terminal is ambiguous.",
+      "evidence": "Lower control crops show W203/PNL A/B TIE continuing across the RPS B area."
+    },
+    {
+      "a": "PNL A/B TIE",
+      "b": "TC-52-4A",
+      "reason": "The PNL A/B TIE dashed route runs in the same control lane system as the trip coil wiring, but no clear junction dot or terminal to TC is visible.",
+      "evidence": "Raw grid r4c2/r4c3 show parallel dashed lines W192/W203/W202 around TC-52-4A."
+    },
+    {
+      "a": "MCC-A2",
+      "b": "CHGR-125-1A",
+      "reason": "A solid feeder appears to continue from Train A 480V/MCC area into the charger-control area, but the intermediate route and tap are not fully visible in one crop.",
+      "evidence": "Left core/bottom crops show a solid vertical feeder dropping from A-side MCC region toward CHGR-125-1A."
+    },
+    {
+      "a": "MCC-B2",
+      "b": "CHGR-125-1B",
+      "reason": "A solid feeder appears to continue from Train B 480V/MCC area into CHGR-125-1B, but the exact source tap is ambiguous.",
+      "evidence": "Center/bottom crops show the 480V CHGR-B feeder lane and solid vertical near B-side MCC/control boundary."
+    },
+    {
+      "a": "BUS-125DC-A",
+      "b": "BUS-125DC-B",
+      "reason": "The lower DC/control area has large routed conductors near both DC buses; no clear dot/junction shows the A and B DC buses are tied directly.",
+      "evidence": "Raw grid r4c2 shows adjacent BUS-125DC-A/B routing but distinct bus labels and no visible tie dot."
+    },
+    {
+      "a": "INV-120-1A",
+      "b": "INV-120-1B",
+      "reason": "A large solid rectangular route passes near both inverter outputs; it may be routed AC/control wiring rather than a direct inverter-to-inverter connection.",
+      "evidence": "Lower center crop shows solid wiring around INV-120-1A and INV-120-1B with no unambiguous junction symbol between inverter devices."
+    },
+    {
+      "a": "CB-TIE-AB",
+      "b": "RPS TRIP BUS",
+      "reason": "Dashed control-routing lanes pass near the 4.16KV tie-breaker boundary but no definite terminal into CB-TIE-AB is visible.",
+      "evidence": "Top/center crops show dashed vertical lane near the A/B tie area crossing the tie region without a clear connection dot."
+    },
+    {
+      "a": "CB-TIE-BC",
+      "b": "RPS TRIP BUS",
+      "reason": "Dashed control-routing lanes pass near the B/C tie-breaker boundary but no definite terminal into CB-TIE-BC is visible.",
+      "evidence": "Top/center crops show dashed vertical lane near CB-TIE-BC and Train C first branch."
+    },
+    {
+      "a": "480V CHGR-A FEEDER",
+      "b": "CHGR-125-1A",
+      "reason": "The feeder label/dashed routing lane is visually associated with the charger, but the off-sheet source and exact charger input terminal are not sufficiently resolved for an asserted direct edge.",
+      "evidence": "Raw grid r4c1 shows the 480V CHGR-A FEEDER arrow/lane adjacent to the CHG symbol; direct output W188 from CHGR-125-1A to BUS-125DC-A is clear, but the feeder label endpoint remains a routed/off-sheet candidate."
+    },
+    {
+      "a": "480V CHGR-B FEEDER",
+      "b": "CHGR-125-1B",
+      "reason": "The feeder label/dashed routing lane is visually associated with the charger, but the off-sheet source and exact charger input terminal are not sufficiently resolved for an asserted direct edge.",
+      "evidence": "Raw grid r4c2 shows the 480V CHGR-B FEEDER arrow/lane near the CHG symbol; direct output W195 from CHGR-125-1B to BUS-125DC-B is clear, but the feeder label endpoint remains a routed/off-sheet candidate."
+    }
+  ],
+  "removed_edges": [
+    {
+      "source": "480V CHGR-A FEEDER",
+      "target": "CHGR-125-1A",
+      "reason": "The 480V charger feeder is shown as an off-sheet/routed feeder label rather than a fully resolved direct sheet component terminal; precision review moved it out of asserted_edges.",
+      "evidence": "Raw grid r4c1 and left-core crop show the 480V CHGR-A FEEDER arrow/dashed lane associated with the CHG block, while the clearly resolved direct wire is CHGR-125-1A output W188 to BUS-125DC-A."
+    },
+    {
+      "source": "480V CHGR-B FEEDER",
+      "target": "CHGR-125-1B",
+      "reason": "The 480V charger feeder is shown as an off-sheet/routed feeder label rather than a fully resolved direct sheet component terminal; precision review moved it out of asserted_edges.",
+      "evidence": "Raw grid r4c2 and bottom overview show the 480V CHGR-B FEEDER arrow/dashed lane associated with the CHG block, while the clearly resolved direct wire is CHGR-125-1B output W195 to BUS-125DC-B."
+    }
+  ],
+  "added_edges": [],
+  "label_corrections": [],
+  "rejected_non_edges": [
+    {
+      "a": "SWYD-115KV",
+      "b": "EDG-1A",
+      "reason": "EDG-1A is drawn on its own vertical generator feeder through CB-DG-1A; it does not tap the top SWYD bus.",
+      "evidence": "Top Train A crop shows EDG-1A separated from SWYD-115KV, with no junction dot or connecting segment."
+    },
+    {
+      "a": "SWYD-115KV",
+      "b": "EDG-1B",
+      "reason": "EDG-1B is drawn on its own vertical generator feeder through CB-DG-1B; it does not tap the top SWYD bus.",
+      "evidence": "Top Train B crop shows EDG-1B separated from SWYD-115KV, with no junction dot or connecting segment."
+    },
+    {
+      "a": "SWYD-115KV",
+      "b": "EDG-1C",
+      "reason": "EDG-1C is drawn on its own vertical generator feeder through CB-DG-1C; it does not tap the top SWYD bus.",
+      "evidence": "Top Train C crop shows EDG-1C separated from SWYD-115KV, with no junction dot or connecting segment."
+    },
+    {
+      "a": "BUS-4160-A",
+      "b": "BUS-4160-B",
+      "reason": "Adjacent train buses are separated by CB-TIE-AB; no direct bus-to-bus connection is shown without the tie breaker.",
+      "evidence": "CB-TIE-AB square sits in-line between W018 and W019."
+    },
+    {
+      "a": "BUS-4160-B",
+      "b": "BUS-4160-C",
+      "reason": "Adjacent train buses are separated by CB-TIE-BC; no direct bus-to-bus connection is shown without the tie breaker.",
+      "evidence": "CB-TIE-BC square sits in-line between W020 and W021."
+    },
+    {
+      "a": "BUS-4160-A",
+      "b": "BUS-4160-C",
+      "reason": "No direct line spans A to C; any path would pass through two tie breakers and BUS-4160-B.",
+      "evidence": "Train A/B/C buses are separated into distinct labelled horizontal bus segments."
+    },
+    {
+      "a": "PNL-ESF-A05",
+      "b": "PNL-ESF-B05",
+      "reason": "Panels share repeated geometry only; no visible wire connects A05 and B05.",
+      "evidence": "A/B ESF panels are in separate train boundaries; intervening area has no junctioned conductor between the panels."
+    },
+    {
+      "a": "PNL-ESF-B05",
+      "b": "PNL-ESF-C05",
+      "reason": "Panels share repeated geometry only; no visible wire connects B05 and C05.",
+      "evidence": "B/C ESF panels are in separate train boundaries; no junctioned conductor connects them."
+    },
+    {
+      "a": "MCC-A1",
+      "b": "MCC-A2",
+      "reason": "Two MCC bus bars are stacked in the same enclosure but not directly joined by a visible junctioned conductor in the branch field.",
+      "evidence": "MCC-A1 and MCC-A2 are separate labelled bars; vertical branch conductors between them cross/route without a bus-tap dot."
+    },
+    {
+      "a": "MCC-B1",
+      "b": "MCC-B2",
+      "reason": "Two MCC bus bars are stacked in the same enclosure but not directly joined by a visible junctioned conductor in the branch field.",
+      "evidence": "MCC-B1 and MCC-B2 are separate labelled bars; no explicit connecting jumper dot is shown."
+    },
+    {
+      "a": "MCC-C1",
+      "b": "MCC-C2",
+      "reason": "Two MCC bus bars are stacked in the same enclosure but not directly joined by a visible junctioned conductor in the branch field.",
+      "evidence": "MCC-C1 and MCC-C2 are separate labelled bars; no explicit connecting jumper dot is shown."
+    },
+    {
+      "a": "RPS TRIP BUS",
+      "b": "TC-52-4A lower dashed crossings",
+      "reason": "Parallel dashed lines around TC-52-4A cross and jog; crossings without dots are not extra electrical connections.",
+      "evidence": "Legend/note explicitly says crossings without dots are not junctions; TC crop shows multiple parallel dashed routes."
+    }
+  ]
+}

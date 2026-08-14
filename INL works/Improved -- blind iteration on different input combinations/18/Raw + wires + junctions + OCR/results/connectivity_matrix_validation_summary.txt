@@ -1,0 +1,38 @@
+Connectivity matrix validation summary - Document 18 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\18\synthetic_nuclear_connectivity_matrix_readable.csv
+GT after normalization: 200 undirected edges across 200 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token usage was not available in local tracking files.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=179, FP=14, FN=21, Precision=0.927461, Recall=0.895000, F1=0.910941.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names; missing exact GT component names; close-but-not-exact component names.
+- Extracted components: 201; extra/non-GT names: 5; missing GT component names: 4.
+- False-positive extracted edge examples: CB-GEN-ISO -- GEN-MAIN-1-TERMINAL; FU-PT-A -- XFRM-CTRL-A; FU-PT-B -- XFRM-CTRL-B; GEN-MAIN-1 -- GEN-MAIN-1-TERMINAL; GEN-MAIN-1-TERMINAL -- TR-UAT-1A; GEN-MAIN-1-TERMINAL -- TR-UAT-1B; JB-RPS-A -- RPS-A-DASHED-NET; JB-RPS-B -- RPS-B-DASHED-NET; ... (+6 more).
+- Missed GT edge examples: BUS-4160B -- CB-DG-B; CB-DG-B -- DG-1B; CB-GEN-ISO -- GEN-MAIN-1; FU-PT-A -- XFMR-CTRL-A; FU-PT-B -- XFMR-CTRL-B; GEN-MAIN-1 -- TR-UAT-1A; GEN-MAIN-1 -- TR-UAT-1B; JB-RPS-A -- RELAY-K101; ... (+13 more).
+- Extra/non-GT component examples: GEN-MAIN-1-TERMINAL; RPS-A-DASHED-NET; RPS-B-DASHED-NET; XFRM-CTRL-A; XFRM-CTRL-B.
+- Missing GT component examples: CB-DG-B; DG-1B; XFMR-CTRL-A; XFMR-CTRL-B.
+- Close-but-not-exact component examples: XFRM-CTRL-A ~ XFMR-CTRL-A (0.91); XFRM-CTRL-B ~ XFMR-CTRL-B (0.91).
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=179, FP=0, FN=21, Precision=1.000000, Recall=0.895000, F1=0.944591.
+- If all missed GT edges were added, final performance would be TP=200, FP=14, FN=0, Precision=0.934579, Recall=1.000000, F1=0.966184.
+- If extra node GEN-MAIN-1-TERMINAL and its 4 false-positive incident edge(s) were not put in extraction, final performance would be TP=179, FP=10, FN=21, Precision=0.947090, Recall=0.895000, F1=0.920308.
+- If extra node RPS-A-DASHED-NET and its 3 false-positive incident edge(s) were not put in extraction, final performance would be TP=179, FP=11, FN=21, Precision=0.942105, Recall=0.895000, F1=0.917949.
+- If extra node RPS-B-DASHED-NET and its 3 false-positive incident edge(s) were not put in extraction, final performance would be TP=179, FP=11, FN=21, Precision=0.942105, Recall=0.895000, F1=0.917949.
+- If extra node XFRM-CTRL-A and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=179, FP=12, FN=21, Precision=0.937173, Recall=0.895000, F1=0.915601.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.910941.
+
+Round-specific notes:
+- Diego -- Round 1: TP=177, FP=27, FN=23, F1=0.876238; extra nodes=6, missing GT nodes=4. FP examples: BB-SWYD-230 -- CB-SWYD-230; BUS-4160B -- CB-UAT-A; BUS-4160B -- CB-UAT-B; CB-GEN-ISO -- GEN-MAIN-1-TERMINAL; ... (+23 more). FN examples: BB-SWYD-230 -- CB-GRID-A; BB-SWYD-230 -- CB-GRID-B; BUS-4160B -- CB-DG-B; CB-DG-B -- DG-1B; ... (+19 more).
+- Jennifer -- Round 2: TP=179, FP=14, FN=21, F1=0.910941; extra nodes=5, missing GT nodes=4. FP examples: CB-GEN-ISO -- GEN-MAIN-1-TERMINAL; FU-PT-A -- XFRM-CTRL-A; FU-PT-B -- XFRM-CTRL-B; GEN-MAIN-1 -- GEN-MAIN-1-TERMINAL; ... (+10 more). FN examples: BUS-4160B -- CB-DG-B; CB-DG-B -- DG-1B; CB-GEN-ISO -- GEN-MAIN-1; FU-PT-A -- XFMR-CTRL-A; ... (+17 more).
+- Diego -- Round 3: TP=179, FP=14, FN=21, F1=0.910941; extra nodes=5, missing GT nodes=4. FP examples: CB-GEN-ISO -- GEN-MAIN-1-TERMINAL; FU-PT-A -- XFRM-CTRL-A; FU-PT-B -- XFRM-CTRL-B; GEN-MAIN-1 -- GEN-MAIN-1-TERMINAL; ... (+10 more). FN examples: BUS-4160B -- CB-DG-B; CB-DG-B -- DG-1B; CB-GEN-ISO -- GEN-MAIN-1; FU-PT-A -- XFMR-CTRL-A; ... (+17 more).
+- Jennifer -- Round 4: TP=179, FP=14, FN=21, F1=0.910941; extra nodes=5, missing GT nodes=4. FP examples: CB-GEN-ISO -- GEN-MAIN-1-TERMINAL; FU-PT-A -- XFRM-CTRL-A; FU-PT-B -- XFRM-CTRL-B; GEN-MAIN-1 -- GEN-MAIN-1-TERMINAL; ... (+10 more). FN examples: BUS-4160B -- CB-DG-B; CB-DG-B -- DG-1B; CB-GEN-ISO -- GEN-MAIN-1; FU-PT-A -- XFMR-CTRL-A; ... (+17 more).
+- Final connectivity -- Final: TP=179, FP=14, FN=21, F1=0.910941; extra nodes=5, missing GT nodes=4. FP examples: CB-GEN-ISO -- GEN-MAIN-1-TERMINAL; FU-PT-A -- XFRM-CTRL-A; FU-PT-B -- XFRM-CTRL-B; GEN-MAIN-1 -- GEN-MAIN-1-TERMINAL; ... (+10 more). FN examples: BUS-4160B -- CB-DG-B; CB-DG-B -- DG-1B; CB-GEN-ISO -- GEN-MAIN-1; FU-PT-A -- XFMR-CTRL-A; ... (+17 more).

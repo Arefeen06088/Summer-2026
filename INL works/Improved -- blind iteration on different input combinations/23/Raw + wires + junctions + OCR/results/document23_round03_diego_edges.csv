@@ -1,0 +1,209 @@
+source,target,edge_kind,confidence,evidence
+GRID-161A,DS-101,power_solid,high,Raw top-left: grid source circle wired directly to DS-101 by heavy solid line.
+DS-101,CB-101,power_solid,high,Raw top-left: vertical heavy solid from DS-101 to CB-101.
+CB-101,TR-UAT-1A,power_solid,high,Raw top-left: vertical heavy solid from CB-101 to UAT transformer.
+TR-UAT-1A,CB-102,power_solid,high,Raw top-left: vertical heavy solid from UAT transformer to CB-102.
+CB-102,BUS-4160-A,power_solid,high,Raw top-left: CB-102 lands on dotted tap of BUS-4160-A.
+BUS-4160-A,RELAY-87A,control_signal_dashed,medium,Top 4160A bus crop: relay 87A has a dashed vertical tap to BUS-4160-A.
+BUS-4160-A,RELAY-27A,control_signal_dashed,medium,Top 4160A bus crop: relay 27A has a dashed vertical tap to BUS-4160-A.
+BUS-4160-A,METER-A,instrument_dashed,high,Top 4160A bus crop: meter A is connected by vertical metering dash to BUS-4160-A.
+BUS-4160-A,PT-41A,instrument_dashed,high,Top 4160A bus crop: PT-41A is connected by vertical long-dashed metering line to BUS-4160-A.
+BUS-4160-A,GND-41A,ground,high,Top 4160A bus crop: light solid ground drop from bus to GND-41A symbol.
+BUS-4160-A,CB-TIE-41,power_solid,high,Top center: BUS-4160-A runs into left side of CB-TIE-41.
+CB-TIE-41,BUS-4160-B,power_solid,high,Top center/right: right side of CB-TIE-41 continues as BUS-4160-B.
+SYNC-41,CB-TIE-41,control_signal_dashed,medium,Top center: SYNC-41 dashed vertical line lands at the tie-breaker area.
+BUS-4160-B,RELAY-87B,control_signal_dashed,medium,Top 4160B bus crop: relay 87B has a dashed vertical tap to BUS-4160-B.
+BUS-4160-B,RELAY-27B,control_signal_dashed,medium,Top 4160B bus crop: relay 27B has a dashed vertical tap to BUS-4160-B.
+BUS-4160-B,METER-B,instrument_dashed,high,Top 4160B bus crop: meter B is connected by vertical metering dash to BUS-4160-B.
+BUS-4160-B,PT-41B,instrument_dashed,high,Top 4160B bus crop: PT-41B is connected by vertical long-dashed metering line to BUS-4160-B.
+BUS-4160-B,GND-41B,ground,high,Top 4160B bus crop: light solid ground drop from bus to GND-41B symbol.
+BUS-4160-B,CB-104,power_solid,high,Top-right: CB-104 lands on dotted tap of BUS-4160-B.
+CB-104,TR-UAT-1B,power_solid,high,Top-right: vertical heavy solid from CB-104 to TR-UAT-1B.
+TR-UAT-1B,CB-103,power_solid,high,Top-right: vertical heavy solid from TR-UAT-1B to CB-103.
+CB-103,DS-102,power_solid,high,Top-right: vertical heavy solid from CB-103 to DS-102.
+DS-102,GRID-161B,power_solid,high,Top-right: grid source circle wired directly to DS-102 by heavy solid line.
+BUS-4160-A,CB-ESF-A,power_solid,high,Top-left/center: CB-ESF-A is the vertical breaker between BUS-4160-A and the lower ESF-A bus.
+CB-ESF-A,BUS-4160-ESF-A,power_solid,high,Top-left/center: bottom of CB-ESF-A lands on BUS-4160-ESF-A.
+BUS-4160-B,CB-ESF-B,power_solid,high,Top-right/center: CB-ESF-B is the vertical breaker between BUS-4160-B and the lower ESF-B bus.
+CB-ESF-B,BUS-4160-ESF-B,power_solid,high,Top-right/center: bottom of CB-ESF-B lands on BUS-4160-ESF-B.
+DG-1A,CB-DG1A,power_solid,high,Top-left: DG-1A generator circle connects horizontally to CB-DG1A.
+CB-DG1A,ATS-1A,power_solid,high,Top-left: CB-DG1A output continues to ATS-1A switching symbol.
+ATS-1A,BUS-4160-ESF-A,power_solid,high,Top-left: ATS-1A output lands on the BUS-4160-ESF-A heavy line at a junction dot.
+DG-1B,CB-DG1B,power_solid,high,Top-right: DG-1B generator circle connects horizontally to CB-DG1B.
+CB-DG1B,ATS-1B,power_solid,high,Top-right: CB-DG1B output continues to ATS-1B switching symbol.
+ATS-1B,BUS-4160-ESF-B,power_solid,high,Top-right: ATS-1B output lands on the BUS-4160-ESF-B heavy line at a junction dot.
+BUS-4160-A,CB-1A-FDR,power_solid,high,Raw feeder routing: Normal aux 1A vertical feeder drops from BUS-4160-A and crosses ESF-A without a junction dot.
+CB-1A-FDR,DS-1A-ISO,power_solid,high,Load center 1A: vertical heavy feeder chain from feeder breaker to disconnect switch.
+DS-1A-ISO,TR-1A,power_solid,high,Load center 1A: vertical heavy feeder chain from disconnect switch to transformer.
+TR-1A,CB-1A-MAIN,power_solid,high,Load center 1A: vertical heavy feeder chain from transformer to main breaker.
+CB-1A-MAIN,BUS-480-1A,power_solid,high,Load center 1A: main breaker lands on named 480 V bus.
+BUS-480-1A,MCC-1A-1,power_solid,high,Load center 1A: MCC-1 branch drops from named 480 V bus at a junction dot.
+BUS-480-1A,MCC-1A-2,power_solid,high,Load center 1A: MCC-2 branch drops from named 480 V bus at a junction dot.
+BUS-480-1A,MCC-1A-3,power_solid,high,Load center 1A: MCC-3 branch drops from named 480 V bus at a junction dot.
+BUS-480-1A,PNL-1A,power_solid,high,Load center 1A: panel branch drops from named 480 V bus.
+BUS-480-1A,INST-1A,instrument_dashed,high,Load center 1A: instrument tap shown as dashed vertical from named 480 V bus.
+INST-1A,GND-1A,ground,high,Load center 1A: instrument continues to local ground symbol by light solid line.
+MCC-1A-1,PUMP-P101,power_solid,high,Load center 1A: MCC-1 lower left solid branch feeds pump load.
+MCC-1A-1,MOTOR-M102,power_solid,high,Load center 1A: MCC-1 lower right solid branch feeds motor load.
+MCC-1A-2,VALVE-MOV103,power_solid,high,Load center 1A: MCC-2 lower left solid branch feeds MOV valve load.
+MCC-1A-2,FAN-F104,power_solid,high,Load center 1A: MCC-2 lower right solid branch feeds fan load.
+MCC-1A-3,HTR-H105,power_solid,high,Load center 1A: MCC-3 lower branch feeds heater load.
+MCC-1A-3,VALVE-XV106,power_solid,high,Load center 1A: MCC-3 lower branch feeds XV valve load.
+PNL-1A,JB-1A-1,control_signal_dashed,medium,Load center 1A: dashed/control drop from panel region to local junction box.
+JB-1A-1,VALVE-XV106,control_signal_dashed,high,Raw 1A load-center local block: the JB is directly adjacent to and wired into the XV valve control/junction box segment.
+JB-1A-1,RELAY-K11,control_signal_dashed,medium,Raw 1A load-center local block: a short local control stub from the JB descends to the first relay in the pair; no separate direct JB-to-second-relay shortcut is modeled.
+RELAY-K11,RELAY-K12,control_signal_dashed,high,Load center 1A: relay pair is connected by the bottom horizontal control line.
+BUS-4160-ESF-A,CB-1C-FDR,power_solid,medium,"Raw top-left: 1C feeder run is tied to BUS-4160-ESF-A at the lower ESF-A bus junction; nearby upper-bus crossings lack dots, so the ESF-A source is kept with medium confidence."
+CB-1C-FDR,DS-1C-ISO,power_solid,high,Load center 1C: vertical heavy feeder chain from feeder breaker to disconnect switch.
+DS-1C-ISO,TR-1C,power_solid,high,Load center 1C: vertical heavy feeder chain from disconnect switch to transformer.
+TR-1C,CB-1C-MAIN,power_solid,high,Load center 1C: vertical heavy feeder chain from transformer to main breaker.
+CB-1C-MAIN,BUS-480-1C,power_solid,high,Load center 1C: main breaker lands on named 480 V bus.
+BUS-480-1C,MCC-1C-1,power_solid,high,Load center 1C: MCC-1 branch drops from named 480 V bus at a junction dot.
+BUS-480-1C,MCC-1C-2,power_solid,high,Load center 1C: MCC-2 branch drops from named 480 V bus at a junction dot.
+BUS-480-1C,MCC-1C-3,power_solid,high,Load center 1C: MCC-3 branch drops from named 480 V bus at a junction dot.
+BUS-480-1C,PNL-1C,power_solid,high,Load center 1C: panel branch drops from named 480 V bus.
+BUS-480-1C,INST-1C,instrument_dashed,high,Load center 1C: instrument tap shown as dashed vertical from named 480 V bus.
+INST-1C,GND-1C,ground,high,Load center 1C: instrument continues to local ground symbol by light solid line.
+MCC-1C-1,PUMP-P131,power_solid,high,Load center 1C: MCC-1 lower left solid branch feeds pump load.
+MCC-1C-1,MOTOR-M132,power_solid,high,Load center 1C: MCC-1 lower right solid branch feeds motor load.
+MCC-1C-2,VALVE-MOV133,power_solid,high,Load center 1C: MCC-2 lower left solid branch feeds MOV valve load.
+MCC-1C-2,FAN-F134,power_solid,high,Load center 1C: MCC-2 lower right solid branch feeds fan load.
+MCC-1C-3,HTR-H135,power_solid,high,Load center 1C: MCC-3 lower branch feeds heater load.
+MCC-1C-3,VALVE-XV136,power_solid,high,Load center 1C: MCC-3 lower branch feeds XV valve load.
+PNL-1C,JB-1C-1,control_signal_dashed,medium,Load center 1C: dashed/control drop from panel region to local junction box.
+JB-1C-1,VALVE-XV136,control_signal_dashed,high,Raw 1C load-center local block: the JB is directly adjacent to and wired into the XV valve control/junction box segment.
+JB-1C-1,RELAY-K21,control_signal_dashed,medium,Raw 1C load-center local block: a short local control stub from the JB descends to the first relay in the pair; no separate direct JB-to-second-relay shortcut is modeled.
+RELAY-K21,RELAY-K22,control_signal_dashed,high,Load center 1C: relay pair is connected by the bottom horizontal control line.
+BUS-4160-B,CB-1B-FDR,power_solid,high,Raw feeder routing: Normal aux 1B vertical feeder drops from BUS-4160-B and crosses ESF-B without a junction dot.
+CB-1B-FDR,DS-1B-ISO,power_solid,high,Load center 1B: vertical heavy feeder chain from feeder breaker to disconnect switch.
+DS-1B-ISO,TR-1B,power_solid,high,Load center 1B: vertical heavy feeder chain from disconnect switch to transformer.
+TR-1B,CB-1B-MAIN,power_solid,high,Load center 1B: vertical heavy feeder chain from transformer to main breaker.
+CB-1B-MAIN,BUS-480-1B,power_solid,high,Load center 1B: main breaker lands on named 480 V bus.
+BUS-480-1B,MCC-1B-1,power_solid,high,Load center 1B: MCC-1 branch drops from named 480 V bus at a junction dot.
+BUS-480-1B,MCC-1B-2,power_solid,high,Load center 1B: MCC-2 branch drops from named 480 V bus at a junction dot.
+BUS-480-1B,MCC-1B-3,power_solid,high,Load center 1B: MCC-3 branch drops from named 480 V bus at a junction dot.
+BUS-480-1B,PNL-1B,power_solid,high,Load center 1B: panel branch drops from named 480 V bus.
+BUS-480-1B,INST-1B,instrument_dashed,high,Load center 1B: instrument tap shown as dashed vertical from named 480 V bus.
+INST-1B,GND-1B,ground,high,Load center 1B: instrument continues to local ground symbol by light solid line.
+MCC-1B-1,PUMP-P161,power_solid,high,Load center 1B: MCC-1 lower left solid branch feeds pump load.
+MCC-1B-1,MOTOR-M162,power_solid,high,Load center 1B: MCC-1 lower right solid branch feeds motor load.
+MCC-1B-2,VALVE-MOV163,power_solid,high,Load center 1B: MCC-2 lower left solid branch feeds MOV valve load.
+MCC-1B-2,FAN-F164,power_solid,high,Load center 1B: MCC-2 lower right solid branch feeds fan load.
+MCC-1B-3,HTR-H165,power_solid,high,Load center 1B: MCC-3 lower branch feeds heater load.
+MCC-1B-3,VALVE-XV166,power_solid,high,Load center 1B: MCC-3 lower branch feeds XV valve load.
+PNL-1B,JB-1B-1,control_signal_dashed,medium,Load center 1B: dashed/control drop from panel region to local junction box.
+JB-1B-1,VALVE-XV166,control_signal_dashed,high,Raw 1B load-center local block: the JB is directly adjacent to and wired into the XV valve control/junction box segment.
+JB-1B-1,RELAY-K31,control_signal_dashed,medium,Raw 1B load-center local block: a short local control stub from the JB descends to the first relay in the pair; no separate direct JB-to-second-relay shortcut is modeled.
+RELAY-K31,RELAY-K32,control_signal_dashed,high,Load center 1B: relay pair is connected by the bottom horizontal control line.
+BUS-4160-ESF-A,CB-2A-FDR,power_solid,high,Raw feeder routing: ESF load center 2A feeder follows heavy ESF-A routing to CB-2A-FDR.
+CB-2A-FDR,DS-2A-ISO,power_solid,high,Load center 2A: vertical heavy feeder chain from feeder breaker to disconnect switch.
+DS-2A-ISO,TR-2A,power_solid,high,Load center 2A: vertical heavy feeder chain from disconnect switch to transformer.
+TR-2A,CB-2A-MAIN,power_solid,high,Load center 2A: vertical heavy feeder chain from transformer to main breaker.
+CB-2A-MAIN,BUS-480-2A,power_solid,high,Load center 2A: main breaker lands on named 480 V bus.
+BUS-480-2A,MCC-2A-1,power_solid,high,Load center 2A: MCC-1 branch drops from named 480 V bus at a junction dot.
+BUS-480-2A,MCC-2A-2,power_solid,high,Load center 2A: MCC-2 branch drops from named 480 V bus at a junction dot.
+BUS-480-2A,MCC-2A-3,power_solid,high,Load center 2A: MCC-3 branch drops from named 480 V bus at a junction dot.
+BUS-480-2A,PNL-2A,power_solid,high,Load center 2A: panel branch drops from named 480 V bus.
+BUS-480-2A,INST-2A,instrument_dashed,high,Load center 2A: instrument tap shown as dashed vertical from named 480 V bus.
+INST-2A,GND-2A,ground,high,Load center 2A: instrument continues to local ground symbol by light solid line.
+MCC-2A-1,PUMP-P201,power_solid,high,Load center 2A: MCC-1 lower left solid branch feeds pump load.
+MCC-2A-1,MOTOR-M202,power_solid,high,Load center 2A: MCC-1 lower right solid branch feeds motor load.
+MCC-2A-2,VALVE-MOV203,power_solid,high,Load center 2A: MCC-2 lower left solid branch feeds MOV valve load.
+MCC-2A-2,FAN-F204,power_solid,high,Load center 2A: MCC-2 lower right solid branch feeds fan load.
+MCC-2A-3,HTR-H205,power_solid,high,Load center 2A: MCC-3 lower branch feeds heater load.
+MCC-2A-3,VALVE-XV206,power_solid,high,Load center 2A: MCC-3 lower branch feeds XV valve load.
+PNL-2A,JB-2A-1,control_signal_dashed,medium,Load center 2A: dashed/control drop from panel region to local junction box.
+JB-2A-1,VALVE-XV206,control_signal_dashed,high,Raw 2A load-center local block: the JB is directly adjacent to and wired into the XV valve control/junction box segment.
+JB-2A-1,RELAY-K41,control_signal_dashed,medium,Raw 2A load-center local block: a short local control stub from the JB descends to the first relay in the pair; no separate direct JB-to-second-relay shortcut is modeled.
+RELAY-K41,RELAY-K42,control_signal_dashed,high,Load center 2A: relay pair is connected by the bottom horizontal control line.
+BUS-4160-ESF-A,CB-2C-FDR,power_solid,medium,Raw middle/bottom-left: 2C feeder descends from the ESF-A routed conductor into CB-2C-FDR; long routing/crossings make this medium confidence but no alternate dotted source is visible.
+CB-2C-FDR,DS-2C-ISO,power_solid,high,Load center 2C: vertical heavy feeder chain from feeder breaker to disconnect switch.
+DS-2C-ISO,TR-2C,power_solid,high,Load center 2C: vertical heavy feeder chain from disconnect switch to transformer.
+TR-2C,CB-2C-MAIN,power_solid,high,Load center 2C: vertical heavy feeder chain from transformer to main breaker.
+CB-2C-MAIN,BUS-480-2C,power_solid,high,Load center 2C: main breaker lands on named 480 V bus.
+BUS-480-2C,MCC-2C-1,power_solid,high,Load center 2C: MCC-1 branch drops from named 480 V bus at a junction dot.
+BUS-480-2C,MCC-2C-2,power_solid,high,Load center 2C: MCC-2 branch drops from named 480 V bus at a junction dot.
+BUS-480-2C,MCC-2C-3,power_solid,high,Load center 2C: MCC-3 branch drops from named 480 V bus at a junction dot.
+BUS-480-2C,PNL-2C,power_solid,high,Load center 2C: panel branch drops from named 480 V bus.
+BUS-480-2C,INST-2C,instrument_dashed,high,Load center 2C: instrument tap shown as dashed vertical from named 480 V bus.
+INST-2C,GND-2C,ground,high,Load center 2C: instrument continues to local ground symbol by light solid line.
+MCC-2C-1,PUMP-P231,power_solid,high,Load center 2C: MCC-1 lower left solid branch feeds pump load.
+MCC-2C-1,MOTOR-M232,power_solid,high,Load center 2C: MCC-1 lower right solid branch feeds motor load.
+MCC-2C-2,VALVE-MOV233,power_solid,high,Load center 2C: MCC-2 lower left solid branch feeds MOV valve load.
+MCC-2C-2,FAN-F234,power_solid,high,Load center 2C: MCC-2 lower right solid branch feeds fan load.
+MCC-2C-3,HTR-H235,power_solid,high,Load center 2C: MCC-3 lower branch feeds heater load.
+MCC-2C-3,VALVE-XV236,power_solid,high,Load center 2C: MCC-3 lower branch feeds XV valve load.
+PNL-2C,JB-2C-1,control_signal_dashed,medium,Load center 2C: dashed/control drop from panel region to local junction box.
+JB-2C-1,VALVE-XV236,control_signal_dashed,high,Raw 2C load-center local block: the JB is directly adjacent to and wired into the XV valve control/junction box segment.
+JB-2C-1,RELAY-K51,control_signal_dashed,medium,Raw 2C load-center local block: a short local control stub from the JB descends to the first relay in the pair; no separate direct JB-to-second-relay shortcut is modeled.
+RELAY-K51,RELAY-K52,control_signal_dashed,high,Load center 2C: relay pair is connected by the bottom horizontal control line.
+BUS-4160-ESF-B,CB-2B-FDR,power_solid,high,Raw feeder routing: ESF load center 2B feeder follows heavy ESF-B routing to CB-2B-FDR.
+CB-2B-FDR,DS-2B-ISO,power_solid,high,Load center 2B: vertical heavy feeder chain from feeder breaker to disconnect switch.
+DS-2B-ISO,TR-2B,power_solid,high,Load center 2B: vertical heavy feeder chain from disconnect switch to transformer.
+TR-2B,CB-2B-MAIN,power_solid,high,Load center 2B: vertical heavy feeder chain from transformer to main breaker.
+CB-2B-MAIN,BUS-480-2B,power_solid,high,Load center 2B: main breaker lands on named 480 V bus.
+BUS-480-2B,MCC-2B-1,power_solid,high,Load center 2B: MCC-1 branch drops from named 480 V bus at a junction dot.
+BUS-480-2B,MCC-2B-2,power_solid,high,Load center 2B: MCC-2 branch drops from named 480 V bus at a junction dot.
+BUS-480-2B,MCC-2B-3,power_solid,high,Load center 2B: MCC-3 branch drops from named 480 V bus at a junction dot.
+BUS-480-2B,PNL-2B,power_solid,high,Load center 2B: panel branch drops from named 480 V bus.
+BUS-480-2B,INST-2B,instrument_dashed,high,Load center 2B: instrument tap shown as dashed vertical from named 480 V bus.
+INST-2B,GND-2B,ground,high,Load center 2B: instrument continues to local ground symbol by light solid line.
+MCC-2B-1,PUMP-P261,power_solid,high,Load center 2B: MCC-1 lower left solid branch feeds pump load.
+MCC-2B-1,MOTOR-M262,power_solid,high,Load center 2B: MCC-1 lower right solid branch feeds motor load.
+MCC-2B-2,VALVE-MOV263,power_solid,high,Load center 2B: MCC-2 lower left solid branch feeds MOV valve load.
+MCC-2B-2,FAN-F264,power_solid,high,Load center 2B: MCC-2 lower right solid branch feeds fan load.
+MCC-2B-3,HTR-H265,power_solid,high,Load center 2B: MCC-3 lower branch feeds heater load.
+MCC-2B-3,VALVE-XV266,power_solid,high,Load center 2B: MCC-3 lower branch feeds XV valve load.
+PNL-2B,JB-2B-1,control_signal_dashed,medium,Load center 2B: dashed/control drop from panel region to local junction box.
+JB-2B-1,VALVE-XV266,control_signal_dashed,high,Raw 2B load-center local block: the JB is directly adjacent to and wired into the XV valve control/junction box segment.
+JB-2B-1,RELAY-K61,control_signal_dashed,medium,Raw 2B load-center local block: a short local control stub from the JB descends to the first relay in the pair; no separate direct JB-to-second-relay shortcut is modeled.
+RELAY-K61,RELAY-K62,control_signal_dashed,high,Load center 2B: relay pair is connected by the bottom horizontal control line.
+BUS-480-2A,CB-DC-A,power_solid,high,Raw/wire bottom-left: a solid branch from BUS-480-2A leaves the 2A load center and continues directly to CB-DC-A.
+CB-DC-A,RECT-125A,power_solid,high,Bottom-left DC distribution: CB-DC-A is horizontally wired to RECT-125A.
+RECT-125A,BUS-125DC-A,power_solid,high,Bottom-left DC distribution: RECT-125A drops to BUS-125DC-A at a junction dot.
+BUS-125DC-A,BAT-125A,power_solid,high,Bottom-left DC bus: BAT-125A is a vertical bus tap on BUS-125DC-A.
+BUS-125DC-A,CHGR-AUX-A,power_solid,high,Bottom-left DC bus: CHGR-AUX-A is a vertical bus tap on BUS-125DC-A.
+BUS-125DC-A,METER-DC-A,instrument_dashed,high,Bottom-left DC bus: METER-DC-A has a dashed metering tap to BUS-125DC-A.
+BUS-125DC-A,CB-DCTIE,power_solid,high,Bottom center DC bus: BUS-125DC-A enters left side of CB-DCTIE.
+CB-DCTIE,BUS-125DC-B,power_solid,high,Bottom center DC bus: right side of CB-DCTIE continues as BUS-125DC-B.
+BUS-125DC-A,GND-DC-A,ground,high,Bottom center-left: ground drop from BUS-125DC-A to GND-DC-A symbol.
+BUS-125DC-A,INV-1A,power_solid,high,Bottom-left: vertical tap from BUS-125DC-A feeds INV-1A.
+INV-1A,UPS-1A,power_solid,high,Bottom-left: INV-1A is horizontally wired to UPS-1A.
+UPS-1A,CB-UPS-A,power_solid,high,Bottom-left: UPS-1A output routes to CB-UPS-A.
+CB-UPS-A,BUS-120AC-A,power_solid,high,Bottom-left: CB-UPS-A lands on BUS-120AC-A at a junction dot.
+BUS-480-2B,CB-DC-B,power_solid,high,Raw/wire bottom-right: a solid branch from BUS-480-2B routes down to CB-DC-B before RECT-125B.
+CB-DC-B,RECT-125B,power_solid,high,Bottom-right DC distribution: CB-DC-B is horizontally wired to RECT-125B.
+RECT-125B,BUS-125DC-B,power_solid,high,Bottom-right DC distribution: RECT-125B drops to BUS-125DC-B at a junction dot.
+BUS-125DC-B,BAT-125B,power_solid,high,Bottom-right DC bus: BAT-125B is a vertical bus tap on BUS-125DC-B.
+BUS-125DC-B,CHGR-AUX-B,power_solid,high,Bottom-right DC bus: CHGR-AUX-B is a vertical bus tap on BUS-125DC-B.
+BUS-125DC-B,METER-DC-B,instrument_dashed,high,Bottom-right DC bus: METER-DC-B has a dashed metering tap to BUS-125DC-B.
+BUS-125DC-B,GND-DC-B,ground,high,Bottom-right: ground drop from BUS-125DC-B to GND-DC-B symbol.
+BUS-125DC-B,INV-1B,power_solid,high,Bottom-right: vertical tap from BUS-125DC-B feeds INV-1B.
+INV-1B,UPS-1B,power_solid,high,Bottom-right: INV-1B is horizontally wired to UPS-1B.
+UPS-1B,CB-UPS-B,power_solid,high,Bottom-right: UPS-1B output routes to CB-UPS-B.
+CB-UPS-B,BUS-120AC-B,power_solid,high,Bottom-right: CB-UPS-B lands on BUS-120AC-B at a junction dot.
+BUS-120AC-A,FUSE-FU-A,power_solid,high,Bottom-left 120AC bus: FUSE-FU-A is shown as a tap from BUS-120AC-A.
+RELAY-KA1,RELAY-KA2,control_signal_dashed,high,Bottom-left: RELAY-KA1 and RELAY-KA2 are adjacent on the same dashed control line.
+RELAY-KA2,ANN-A,control_signal_dashed,medium,Bottom-left: ANN-A is adjacent to the relay/control strip after KA2.
+ANN-A,REC-SER-A,control_signal_dashed,medium,Bottom-left: ANN-A and REC-SER-A sit on the same dashed control strip.
+REC-SER-A,PNL-RPS-A,control_signal_dashed,medium,Bottom-left: REC-SER-A routes by dashed wiring into PNL-RPS-A.
+BUS-120AC-A,PNL-RPS-A,power_solid,high,Raw bottom-left: PNL-RPS-A has a solid vertical tap from BUS-120AC-A with a visible junction dot.
+PNL-RPS-A,INST-NIS-A,instrument_dashed,medium,Bottom-left: INST-NIS-A is connected near PNL-RPS-A by dashed instrument/control routing.
+PNL-RPS-A,PNL-DCS-A,control_signal_dashed,high,Raw bottom-left: dashed vertical control drop runs from PNL-RPS-A directly to PNL-DCS-A.
+PNL-DCS-A,JB-CTRL-A,control_signal_dashed,high,Bottom center-left: PNL-DCS-A and JB-CTRL-A are connected on the lower dashed control line.
+BUS-24DC-C,JB-CTRL-A,power_solid,medium,Raw/nodes bottom-left: JB-CTRL-A is adjacent to the lower BUS-24DC-C solid bus node; retained as a medium-confidence 24 VDC bus tap.
+BUS-120AC-B,FUSE-FU-B,power_solid,high,Bottom-right 120AC bus: FUSE-FU-B is shown as a tap from BUS-120AC-B.
+RELAY-KB1,RELAY-KB2,control_signal_dashed,high,Bottom-right: RELAY-KB1 and RELAY-KB2 are adjacent on the same dashed control line.
+RELAY-KB2,ANN-B,control_signal_dashed,medium,Bottom-right: ANN-B is adjacent to the relay/control strip after KB2.
+ANN-B,REC-SER-B,control_signal_dashed,medium,Bottom-right: ANN-B and REC-SER-B sit on the same dashed control strip.
+REC-SER-B,PNL-RPS-B,control_signal_dashed,medium,Bottom-right: REC-SER-B routes by dashed wiring into PNL-RPS-B.
+BUS-120AC-B,PNL-RPS-B,power_solid,high,Raw bottom-right: PNL-RPS-B has a solid vertical tap from BUS-120AC-B with a visible junction dot.
+PNL-RPS-B,INST-NIS-B,instrument_dashed,medium,Bottom-right: INST-NIS-B is connected near PNL-RPS-B by dashed instrument/control routing.
+PNL-RPS-B,PNL-DCS-B,control_signal_dashed,high,Raw bottom-right: dashed vertical control drop runs from PNL-RPS-B directly to PNL-DCS-B.
+PNL-DCS-B,JB-CTRL-B,control_signal_dashed,high,Bottom center-right: PNL-DCS-B and JB-CTRL-B are connected on the lower dashed control line.
+BUS-24DC-C,JB-CTRL-B,power_solid,medium,Raw/nodes bottom-right: JB-CTRL-B is adjacent to the lower BUS-24DC-C solid bus node; retained as a medium-confidence 24 VDC bus tap.
+BUS-120AC-A,DC-DC-1,power_solid,medium,Raw bottom center: DC-DC-1 is visibly present and its upper/input side is fed from the BUS-120AC-A distribution run near the A-side RPS strip.
+DC-DC-1,BUS-24DC-C,power_solid,high,Raw/wire bottom center: DC-DC-1 lower/output side lands on BUS-24DC-C at the visible junction adjacent to BAT-24C.
+BUS-24DC-C,BAT-24C,power_solid,high,Raw bottom center: BAT-24C is directly on BUS-24DC-C at the 24 VDC bus node.
+BUS-24DC-C,PNL-RADMON,power_solid,high,Raw bottom center: PNL-RADMON sits on the lower BUS-24DC-C solid distribution line before the KTIE relay dashed control continuation.
+PNL-RADMON,RELAY-KTIE,control_signal_dashed,high,Raw bottom center: short dashed/control line runs directly from PNL-RADMON to RELAY-KTIE.

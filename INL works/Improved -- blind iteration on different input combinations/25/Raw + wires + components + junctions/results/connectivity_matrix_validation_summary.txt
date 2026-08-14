@@ -1,0 +1,78 @@
+Connectivity matrix validation summary - Document 25
+Input configuration: Raw + wires + components + junctions
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\25\synthetic_npp_connectivity_matrix_revised_v4.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_connectivity_matrix.csv): TP=182, FP=23, FN=26, Precision=0.887805, Recall=0.875000, F1=0.881356
+- Jennifer -- Round 2 (round_02_jennifer_precision_connectivity_matrix.csv): TP=184, FP=23, FN=24, Precision=0.888889, Recall=0.884615, F1=0.886747
+- Diego -- Round 3 (round_03_diego_saturation_connectivity_matrix.csv): TP=184, FP=23, FN=24, Precision=0.888889, Recall=0.884615, F1=0.886747
+- Jennifer -- Round 4 (round_04_jennifer_final_connectivity_matrix.csv): TP=184, FP=23, FN=24, Precision=0.888889, Recall=0.884615, F1=0.886747
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=184, FP=23, FN=24, Precision=0.888889, Recall=0.884615, F1=0.886747
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- 480V CHGR-A FEEDER -- CHGR-125-1A
+- 480V CHGR-A FEEDER -- MCC-A2
+- 480V CHGR-B FEEDER -- CHGR-125-1B
+- 480V CHGR-B FEEDER -- MCC-B2
+- DS-4A01 -- TR-480-1A
+- DS-4B01 -- TR-480-1B
+- DS-4C01 -- TR-480-1C
+- MS-48A01 -- PUMP-CVC P301A
+- MS-48A04 -- PUMP-SUMP P302A
+- MS-48B01 -- PUMP-CVC P301B
+
+False-negative edge examples:
+- BUS-125DC-A -- INV-120-1B
+- BUS-125DC-B -- INV-120-1A
+- BUS-4160-A -- TR-480-1A
+- BUS-4160-B -- TR-480-1B
+- BUS-4160-C -- TR-480-1C
+- BUS-480-1A -- CHGR-125-1A
+- BUS-480-1B -- CHGR-125-1B
+- CB-4A01 -- TC-52-4A
+- CB-4B01 -- TC-52-4A
+- CB-4C01 -- TC-52-4A
+
+Extra/non-GT nodes causing performance drops:
+- 480V CHGR-A FEEDER: 2 incident false-positive edge(s)
+- 480V CHGR-B FEEDER: 2 incident false-positive edge(s)
+- PNL A/B TIE: 2 incident false-positive edge(s)
+- RPS TRIP BUS: 2 incident false-positive edge(s)
+- PUMP-CVC P301A: 1 incident false-positive edge(s)
+- PUMP-SUMP P302A: 1 incident false-positive edge(s)
+- PUMP-CVC P301B: 1 incident false-positive edge(s)
+- PUMP-SUMP P302B: 1 incident false-positive edge(s)
+- PUMP-CVC P301C: 1 incident false-positive edge(s)
+- PUMP-SUMP P302C: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (480V CHGR-A FEEDER, 480V CHGR-B FEEDER, PNL A/B TIE, RPS TRIP BUS, PUMP-CVC P301A), final metrics would be TP=184, FP=14, FN=24, Precision=0.929293, Recall=0.884615, F1=0.906404.
+- If all 16 non-GT nodes were omitted, metrics would be TP=184, FP=3, FN=24, Precision=0.983957, Recall=0.884615, F1=0.931646.
+
+Missing GT node examples:
+- PUMP-AFW-P203A: 1 missed incident GT edge(s)
+- PUMP-AFW-P203B: 1 missed incident GT edge(s)
+- PUMP-AFW-P203C: 1 missed incident GT edge(s)
+- PUMP-CVC-P301A: 1 missed incident GT edge(s)
+- PUMP-CVC-P301B: 1 missed incident GT edge(s)
+- PUMP-CVC-P301C: 1 missed incident GT edge(s)
+- PUMP-RHR-P201A: 1 missed incident GT edge(s)
+- PUMP-RHR-P201B: 1 missed incident GT edge(s)
+- PUMP-RHR-P201C: 1 missed incident GT edge(s)
+- PUMP-SUMP-P302A: 1 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted PUMP-SUMP P302A vs GT PUMP-SUMP-P302A (similarity 0.93)
+- Extracted PUMP-SUMP P302B vs GT PUMP-SUMP-P302B (similarity 0.93)
+- Extracted PUMP-SUMP P302C vs GT PUMP-SUMP-P302C (similarity 0.93)
+- Extracted PUMP-AFW P203A vs GT PUMP-AFW-P203A (similarity 0.93)
+- Extracted PUMP-AFW P203B vs GT PUMP-AFW-P203B (similarity 0.93)
+- Extracted PUMP-AFW P203C vs GT PUMP-AFW-P203C (similarity 0.93)
+- Extracted PUMP-CVC P301A vs GT PUMP-CVC-P301A (similarity 0.93)
+- Extracted PUMP-CVC P301B vs GT PUMP-CVC-P301B (similarity 0.93)

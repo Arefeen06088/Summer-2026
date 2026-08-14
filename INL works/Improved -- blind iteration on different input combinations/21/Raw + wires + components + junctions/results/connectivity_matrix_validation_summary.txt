@@ -1,0 +1,67 @@
+Connectivity matrix validation summary - Document 21
+Input configuration: Raw + wires + components + junctions
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\21\synthetic_npp_connectivity_matrix_fixed.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_connectivity_matrix.csv): TP=128, FP=72, FN=76, Precision=0.640000, Recall=0.627451, F1=0.633663
+- Jennifer -- Round 2 (round_02_jennifer_corrected_connectivity_matrix.csv): TP=129, FP=69, FN=75, Precision=0.651515, Recall=0.632353, F1=0.641791
+- Diego -- Round 3 (round_03_diego_saturated_connectivity_matrix.csv): TP=129, FP=69, FN=75, Precision=0.651515, Recall=0.632353, F1=0.641791
+- Jennifer -- Round 4 (round_04_jennifer_final_connectivity_matrix.csv): TP=130, FP=57, FN=74, Precision=0.695187, Recall=0.637255, F1=0.664962
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=130, FP=57, FN=74, Precision=0.695187, Recall=0.637255, F1=0.664962
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- BUS-201B -- CB-204A
+- CB-204A -- DS-201B
+- CP-CCW-A -- K107
+- CP-CCW-B -- K110
+- CP-EDG-A -- K113
+- CP-EDG-B -- K116
+- CP-SI-A -- K101
+- CP-SI-B -- K104
+- CT501 -- TT402
+- CT502 -- JB-106
+
+False-negative edge examples:
+- BAT-EDG-A -- CP-EDG-A
+- BAT-EDG-B -- CP-EDG-B
+- BUS-201A -- CB-204A
+- BUS-201B -- CB-204B
+- BUS-201B -- DS-201B
+- BUS-202A -- CB-204A
+- BUS-202B -- CB-204B
+- BUS-301A -- BUS-301B
+- BUS-301A -- DS-401A
+- BUS-301B -- DS-401B
+
+Extra/non-GT nodes causing performance drops:
+- K107: 2 incident false-positive edge(s)
+- K110: 2 incident false-positive edge(s)
+- K113: 2 incident false-positive edge(s)
+- K116: 2 incident false-positive edge(s)
+- K101: 2 incident false-positive edge(s)
+- K104: 2 incident false-positive edge(s)
+- TT402: 2 incident false-positive edge(s)
+- K125: 2 incident false-positive edge(s)
+- K128: 2 incident false-positive edge(s)
+- PT103: 2 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (K107, K110, K113, K116, K101), final metrics would be TP=130, FP=47, FN=74, Precision=0.734463, Recall=0.637255, F1=0.682415.
+- If all 45 non-GT nodes were omitted, metrics would be TP=130, FP=2, FN=74, Precision=0.984848, Recall=0.637255, F1=0.773810.
+
+Missing GT node examples:
+- CB-204B: 2 missed incident GT edge(s)
+- CP-SWGR: 2 missed incident GT edge(s)
+- INST-FT202: 2 missed incident GT edge(s)
+- INST-LT302: 2 missed incident GT edge(s)
+- INST-PT101: 2 missed incident GT edge(s)
+- INST-PT103: 2 missed incident GT edge(s)
+- INST-TT402: 2 missed incident GT edge(s)
+- RELAY-K101: 2 missed incident GT edge(s)
+- RELAY-K102: 2 missed incident GT edge(s)
+- RELAY-K103: 2 missed incident GT edge(s)

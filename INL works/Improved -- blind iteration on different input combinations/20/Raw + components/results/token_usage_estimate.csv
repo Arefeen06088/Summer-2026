@@ -1,0 +1,7 @@
+document,iteration,call,input_tokens_est,cached_input_tokens,image_file_input_tokens_est,output_tokens_expected,reasoning_tokens_expected,total_low,total_expected,total_high,usage_object_available,notes
+20,1,Main Codex: orchestration_visual_review_packaging,26000,unavailable,10030,1600,22000,45790,59630,82590,no,Grouped main-agent calls; exact per-response usage unavailable in this environment.
+20,1,Diego: round1_high_recall_extraction,6200,unavailable,18955,132740,34000,118399,191895,305539,no,Initial prompt plus 19 Doc20 Raw+components images.
+20,1,Jennifer: round1_precision_review,139940,unavailable,18955,132781,32000,251364,323676,435345,no,Review prompt plus Diego round 1 artifacts and the same 19-image bundle.
+20,1,Diego: round2_saturation_review,248170,unavailable,0,133345,9000,331777,390515,479522,no,No new images were explicitly attached; prior visual context/caching was not exposed.
+20,1,Jennifer: round2_final_confirmation,248375,unavailable,0,42451,8000,277046,298826,332297,no,No new images were explicitly attached; final confirmation used previous visual context and files.
+20,1,TOTAL,668685,unavailable,47940,442917,105000,1024376,1264542,1635293,no,Total over estimated workflow calls.

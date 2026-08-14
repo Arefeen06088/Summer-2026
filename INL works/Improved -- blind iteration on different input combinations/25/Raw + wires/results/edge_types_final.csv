@@ -1,0 +1,209 @@
+source,target,edge_type,evidence
+SWYD-115KV,FDR-13A,solid,top source bus
+FDR-13A,TR-UAT-1A,solid,top source bus
+TR-UAT-1A,CB-52-4A,solid,top source bus
+CB-52-4A,BUS-4160-A,solid,top source bus
+SWYD-115KV,FDR-13B,solid,top source bus
+FDR-13B,TR-UAT-1B,solid,top source bus
+TR-UAT-1B,CB-52-4B,solid,top source bus
+CB-52-4B,BUS-4160-B,solid,top source bus
+SWYD-115KV,TR-SAT-1,solid,top source bus
+TR-SAT-1,CB-52-4C,solid,top source bus
+CB-52-4C,BUS-4160-C,solid,top source bus
+EDG-1A,CB-DG-1A,solid,top source bus
+CB-DG-1A,BUS-4160-A,solid,top source bus
+EDG-1B,CB-DG-1B,solid,top source bus
+CB-DG-1B,BUS-4160-B,solid,top source bus
+EDG-1C,CB-DG-1C,solid,top source bus
+CB-DG-1C,BUS-4160-C,solid,top source bus
+BUS-4160-A,CB-TIE-AB,solid,4.16kV bus tie
+CB-TIE-AB,BUS-4160-B,solid,4.16kV bus tie
+BUS-4160-B,CB-TIE-BC,solid,4.16kV bus tie
+CB-TIE-BC,BUS-4160-C,solid,4.16kV bus tie
+BUS-4160-A,CB-4A01,solid,4.16kV feeder 01 transformer branch
+CB-4A01,DS-4A01,solid,4.16kV feeder 01 transformer branch
+DS-4A01,TR-480-1A,solid,4.16kV feeder 01 transformer branch
+TR-480-1A,CB-52-48A,solid,4.16kV feeder 01 transformer branch
+CB-52-48A,BUS-480-1A,solid,4.16kV feeder 01 transformer branch
+DS-4A01,MS-A01,solid,4.16kV feeder 01 RHR branch
+MS-A01,PUMP-RHR P201A,solid,4.16kV feeder 01 RHR branch
+BUS-4160-A,CB-4A02,solid,4.16kV feeder 02 CS branch
+CB-4A02,DS-4A02,solid,4.16kV feeder 02 CS branch
+DS-4A02,MS-A02,solid,4.16kV feeder 02 CS branch
+MS-A02,PUMP-CS-P202A,solid,4.16kV feeder 02 CS branch
+BUS-4160-A,CB-4A03,solid,4.16kV feeder 03 load center branch
+CB-4A03,DS-4A03,solid,4.16kV feeder 03 load center branch
+DS-4A03,TR-LC-A03,solid,4.16kV feeder 03 load center branch
+TR-LC-A03,LC-480-A03,solid,4.16kV feeder 03 load center branch
+BUS-4160-A,CB-4A04,solid,4.16kV feeder 04 fan branch
+CB-4A04,DS-4A04,solid,4.16kV feeder 04 fan branch
+DS-4A04,MS-A04,solid,4.16kV feeder 04 fan branch
+MS-A04,FAN-CR-401A,solid,4.16kV feeder 04 fan branch
+BUS-4160-A,CB-4A05,solid,4.16kV feeder 05 ESF panel branch
+CB-4A05,DS-4A05,solid,4.16kV feeder 05 ESF panel branch
+DS-4A05,PNL-ESF-A05,solid,4.16kV feeder 05 ESF panel branch
+PNL-ESF-A05,GND-ESF-A05,ground,4.16kV feeder 05 ground reference
+BUS-4160-A,CB-4A06,solid,4.16kV feeder 06 RPS rectifier branch
+CB-4A06,DS-4A06,solid,4.16kV feeder 06 RPS rectifier branch
+DS-4A06,RECT-RPS-A06,solid,4.16kV feeder 06 RPS rectifier branch
+RECT-RPS-A06,INV-RPS-A06,solid,4.16kV feeder 06 RPS rectifier branch
+BUS-4160-A,CB-4A07,solid,4.16kV feeder 07 AFW branch
+CB-4A07,DS-4A07,solid,4.16kV feeder 07 AFW branch
+DS-4A07,MS-A07,solid,4.16kV feeder 07 AFW branch
+MS-A07,PUMP-AFW P203A,solid,4.16kV feeder 07 AFW branch
+BUS-4160-A,CB-4A08,solid,4.16kV feeder 08 control panel branch
+CB-4A08,DS-4A08,solid,4.16kV feeder 08 control panel branch
+DS-4A08,TR-CTRL-A08,solid,4.16kV feeder 08 control panel branch
+TR-CTRL-A08,CP-CTRL-A08,solid,4.16kV feeder 08 control panel branch
+BUS-4160-B,CB-4B01,solid,4.16kV feeder 01 transformer branch
+CB-4B01,DS-4B01,solid,4.16kV feeder 01 transformer branch
+DS-4B01,TR-480-1B,solid,4.16kV feeder 01 transformer branch
+TR-480-1B,CB-52-48B,solid,4.16kV feeder 01 transformer branch
+CB-52-48B,BUS-480-1B,solid,4.16kV feeder 01 transformer branch
+DS-4B01,MS-B01,solid,4.16kV feeder 01 RHR branch
+MS-B01,PUMP-RHR P201B,solid,4.16kV feeder 01 RHR branch
+BUS-4160-B,CB-4B02,solid,4.16kV feeder 02 CS branch
+CB-4B02,DS-4B02,solid,4.16kV feeder 02 CS branch
+DS-4B02,MS-B02,solid,4.16kV feeder 02 CS branch
+MS-B02,PUMP-CS-P202B,solid,4.16kV feeder 02 CS branch
+BUS-4160-B,CB-4B03,solid,4.16kV feeder 03 load center branch
+CB-4B03,DS-4B03,solid,4.16kV feeder 03 load center branch
+DS-4B03,TR-LC-B03,solid,4.16kV feeder 03 load center branch
+TR-LC-B03,LC-480-B03,solid,4.16kV feeder 03 load center branch
+BUS-4160-B,CB-4B04,solid,4.16kV feeder 04 fan branch
+CB-4B04,DS-4B04,solid,4.16kV feeder 04 fan branch
+DS-4B04,MS-B04,solid,4.16kV feeder 04 fan branch
+MS-B04,FAN-CR-401B,solid,4.16kV feeder 04 fan branch
+BUS-4160-B,CB-4B05,solid,4.16kV feeder 05 ESF panel branch
+CB-4B05,DS-4B05,solid,4.16kV feeder 05 ESF panel branch
+DS-4B05,PNL-ESF-B05,solid,4.16kV feeder 05 ESF panel branch
+PNL-ESF-B05,GND-ESF-B05,ground,4.16kV feeder 05 ground reference
+BUS-4160-B,CB-4B06,solid,4.16kV feeder 06 RPS rectifier branch
+CB-4B06,DS-4B06,solid,4.16kV feeder 06 RPS rectifier branch
+DS-4B06,RECT-RPS-B06,solid,4.16kV feeder 06 RPS rectifier branch
+RECT-RPS-B06,INV-RPS-B06,solid,4.16kV feeder 06 RPS rectifier branch
+BUS-4160-B,CB-4B07,solid,4.16kV feeder 07 AFW branch
+CB-4B07,DS-4B07,solid,4.16kV feeder 07 AFW branch
+DS-4B07,MS-B07,solid,4.16kV feeder 07 AFW branch
+MS-B07,PUMP-AFW P203B,solid,4.16kV feeder 07 AFW branch
+BUS-4160-B,CB-4B08,solid,4.16kV feeder 08 control panel branch
+CB-4B08,DS-4B08,solid,4.16kV feeder 08 control panel branch
+DS-4B08,TR-CTRL-B08,solid,4.16kV feeder 08 control panel branch
+TR-CTRL-B08,CP-CTRL-B08,solid,4.16kV feeder 08 control panel branch
+BUS-4160-C,CB-4C01,solid,4.16kV feeder 01 transformer branch
+CB-4C01,DS-4C01,solid,4.16kV feeder 01 transformer branch
+DS-4C01,TR-480-1C,solid,4.16kV feeder 01 transformer branch
+TR-480-1C,CB-52-48C,solid,4.16kV feeder 01 transformer branch
+CB-52-48C,BUS-480-1C,solid,4.16kV feeder 01 transformer branch
+DS-4C01,MS-C01,solid,4.16kV feeder 01 RHR branch
+MS-C01,PUMP-RHR P201C,solid,4.16kV feeder 01 RHR branch
+BUS-4160-C,CB-4C02,solid,4.16kV feeder 02 CS branch
+CB-4C02,DS-4C02,solid,4.16kV feeder 02 CS branch
+DS-4C02,MS-C02,solid,4.16kV feeder 02 CS branch
+MS-C02,PUMP-CS-P202C,solid,4.16kV feeder 02 CS branch
+BUS-4160-C,CB-4C03,solid,4.16kV feeder 03 load center branch
+CB-4C03,DS-4C03,solid,4.16kV feeder 03 load center branch
+DS-4C03,TR-LC-C03,solid,4.16kV feeder 03 load center branch
+TR-LC-C03,LC-480-C03,solid,4.16kV feeder 03 load center branch
+BUS-4160-C,CB-4C04,solid,4.16kV feeder 04 fan branch
+CB-4C04,DS-4C04,solid,4.16kV feeder 04 fan branch
+DS-4C04,MS-C04,solid,4.16kV feeder 04 fan branch
+MS-C04,FAN-CR-401C,solid,4.16kV feeder 04 fan branch
+BUS-4160-C,CB-4C05,solid,4.16kV feeder 05 ESF panel branch
+CB-4C05,DS-4C05,solid,4.16kV feeder 05 ESF panel branch
+DS-4C05,PNL-ESF-C05,solid,4.16kV feeder 05 ESF panel branch
+PNL-ESF-C05,GND-ESF-C05,ground,4.16kV feeder 05 ground reference
+BUS-4160-C,CB-4C06,solid,4.16kV feeder 06 RPS rectifier branch
+CB-4C06,DS-4C06,solid,4.16kV feeder 06 RPS rectifier branch
+DS-4C06,RECT-RPS-C06,solid,4.16kV feeder 06 RPS rectifier branch
+RECT-RPS-C06,INV-RPS-C06,solid,4.16kV feeder 06 RPS rectifier branch
+BUS-4160-C,CB-4C07,solid,4.16kV feeder 07 AFW branch
+CB-4C07,DS-4C07,solid,4.16kV feeder 07 AFW branch
+DS-4C07,MS-C07,solid,4.16kV feeder 07 AFW branch
+MS-C07,PUMP-AFW P203C,solid,4.16kV feeder 07 AFW branch
+BUS-4160-C,CB-4C08,solid,4.16kV feeder 08 control panel branch
+CB-4C08,DS-4C08,solid,4.16kV feeder 08 control panel branch
+DS-4C08,TR-CTRL-C08,solid,4.16kV feeder 08 control panel branch
+TR-CTRL-C08,CP-CTRL-C08,solid,4.16kV feeder 08 control panel branch
+BUS-480-1A,MCC-A1,solid,480V MCC feeder
+BUS-480-1A,MCC-A2,solid,480V MCC feeder
+MCC-A1,CB-48A01,solid,480V MCC branch 01
+CB-48A01,MS-48A01,solid,480V MCC branch 01
+MS-48A01,PUMP-CVC P301A,solid,480V MCC branch 01
+MCC-A1,CB-48A02,solid,480V MCC branch 02
+CB-48A02,K-48A02,solid,480V MCC branch 02
+K-48A02,MOV-CS-451A,dashed,480V MCC branch 02 MOV control
+MCC-A1,CB-48A03,solid,480V MCC branch 03
+CB-48A03,MS-48A03,solid,480V MCC branch 03
+MS-48A03,FAN-HVAC-501A,solid,480V MCC branch 03
+MCC-A2,CB-48A04,solid,480V MCC branch 04
+CB-48A04,MS-48A04,solid,480V MCC branch 04
+MS-48A04,PUMP-SUMP P302A,solid,480V MCC branch 04
+MCC-A2,CB-48A05,solid,480V MCC branch 05
+CB-48A05,K-48A05,solid,480V MCC branch 05
+K-48A05,MOV-RHR-452A,dashed,480V MCC branch 05 MOV control
+MCC-A2,CB-48A06,solid,480V MCC branch 06 transformer
+CB-48A06,XFU-48A06,solid,480V MCC branch 06 transformer
+XFU-48A06,PNL-P1-601A,dashed,480V MCC branch 06 panel feed
+BUS-480-1B,MCC-B1,solid,480V MCC feeder
+BUS-480-1B,MCC-B2,solid,480V MCC feeder
+MCC-B1,CB-48B01,solid,480V MCC branch 01
+CB-48B01,MS-48B01,solid,480V MCC branch 01
+MS-48B01,PUMP-CVC P301B,solid,480V MCC branch 01
+MCC-B1,CB-48B02,solid,480V MCC branch 02
+CB-48B02,K-48B02,solid,480V MCC branch 02
+K-48B02,MOV-CS-451B,dashed,480V MCC branch 02 MOV control
+MCC-B1,CB-48B03,solid,480V MCC branch 03
+CB-48B03,MS-48B03,solid,480V MCC branch 03
+MS-48B03,FAN-HVAC-501B,solid,480V MCC branch 03
+MCC-B2,CB-48B04,solid,480V MCC branch 04
+CB-48B04,MS-48B04,solid,480V MCC branch 04
+MS-48B04,PUMP-SUMP P302B,solid,480V MCC branch 04
+MCC-B2,CB-48B05,solid,480V MCC branch 05
+CB-48B05,K-48B05,solid,480V MCC branch 05
+K-48B05,MOV-RHR-452B,dashed,480V MCC branch 05 MOV control
+MCC-B2,CB-48B06,solid,480V MCC branch 06 transformer
+CB-48B06,XFU-48B06,solid,480V MCC branch 06 transformer
+XFU-48B06,PNL-P1-601B,dashed,480V MCC branch 06 panel feed
+BUS-480-1C,MCC-C1,solid,480V MCC feeder
+BUS-480-1C,MCC-C2,solid,480V MCC feeder
+MCC-C1,CB-48C01,solid,480V MCC branch 01
+CB-48C01,MS-48C01,solid,480V MCC branch 01
+MS-48C01,PUMP-CVC P301C,solid,480V MCC branch 01
+MCC-C1,CB-48C02,solid,480V MCC branch 02
+CB-48C02,K-48C02,solid,480V MCC branch 02
+K-48C02,MOV-CS-451C,dashed,480V MCC branch 02 MOV control
+MCC-C1,CB-48C03,solid,480V MCC branch 03
+CB-48C03,MS-48C03,solid,480V MCC branch 03
+MS-48C03,FAN-HVAC-501C,solid,480V MCC branch 03
+MCC-C2,CB-48C04,solid,480V MCC branch 04
+CB-48C04,MS-48C04,solid,480V MCC branch 04
+MS-48C04,PUMP-SUMP P302C,solid,480V MCC branch 04
+MCC-C2,CB-48C05,solid,480V MCC branch 05
+CB-48C05,K-48C05,solid,480V MCC branch 05
+K-48C05,MOV-RHR-452C,dashed,480V MCC branch 05 MOV control
+MCC-C2,CB-48C06,solid,480V MCC branch 06 transformer
+CB-48C06,XFU-48C06,solid,480V MCC branch 06 transformer
+XFU-48C06,PNL-P1-601C,dashed,480V MCC branch 06 panel feed
+480V CHGR-A FEEDER,CHGR-125-1A,dashed,125VDC charger A feeder lane
+CHGR-125-1A,BUS-125DC-A,solid,125VDC charger A output
+BAT-125-1A,BUS-125DC-A,solid,125VDC battery A
+BUS-125DC-A,INV-120-1A,solid,125VDC bus A inverter feed
+INV-120-1A,PNL-RPS-A,solid,RPS panel A feed
+PNL-RPS-A,RELAY-K501A,dashed,RPS panel A control to relay
+PNL-RPS-A,XMTR-PT-501A,dotted,RPS panel A instrument signal
+480V CHGR-B FEEDER,CHGR-125-1B,dashed,125VDC charger B feeder lane
+CHGR-125-1B,BUS-125DC-B,solid,125VDC charger B output
+BAT-125-1B,BUS-125DC-B,solid,125VDC battery B
+BUS-125DC-B,INV-120-1B,solid,125VDC bus B inverter feed
+INV-120-1B,PNL-RPS-B,solid,RPS panel B feed
+PNL-RPS-B,RELAY-K501B,dashed,RPS panel B control to relay
+PNL-RPS-B,XMTR-PT-501B,dotted,RPS panel B instrument signal
+RPS TRIP BUS,TC-52-4A,dashed,RPS trip bus terminal bundle to trip coil
+RELAY-K501B,TC-52-4A,dashed,relay K501B to trip coil
+PNL-RPS-A,PNL A/B TIE,dashed,RPS A panel to A/B tie lane
+PNL-RPS-B,PNL A/B TIE,dashed,RPS B panel to A/B tie lane
+INV-120-1A,RELAY-K501A,solid,solid conductor from INV-120-1A to relay K501A
+RELAY-K501A,TC-52-4A,dashed,relay K501A to trip coil
+INV-120-1A,BUS-125DC-B,solid,solid conductor landing on B DC bus vertical
+PNL A/B TIE,TC-52-4A,dashed,focused TC crop: A/B tie lane lands at trip-coil terminal

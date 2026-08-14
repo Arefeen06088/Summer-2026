@@ -1,0 +1,7 @@
+timestamp,case,round,agent,role,approx_prompt_tokens,approx_completion_tokens,matrix_nodes,matrix_edges,output_artifact,notes
+2026-07-14T07:35:16,21,local,main,inventory/crops/local inspection,2300,450,200,202,codes/crops,Approximate tokens; exact tool token accounting unavailable
+2026-07-14T07:35:16,21,round_01,Diego,high-recall extraction,6100,4300,199,189,round_01_diego_matrix.csv,Broad extraction before unlabeled EDG-2A breaker and focused control additions
+2026-07-14T07:35:16,21,round_02,Jennifer,precision review,6400,1600,200,193,round_02_jennifer_matrix.csv,Added unlabeled EDG-2A breaker and supported DC/feed edges; excluded uncertain trunk/control features
+2026-07-14T07:35:16,21,round_03,Diego,focused saturation/high-recall check,1900,520,200,202,round_03_diego_saturation_matrix.csv,Accepted nine focused UVLS/trunk/RECT-24C additions
+2026-07-14T07:35:16,21,round_04,Jennifer,final precision lock,1400,430,200,202,round_04_jennifer_final_matrix.csv,Final matrix after Diego/Jennifer agreement
+2026-07-14T07:35:16,21,local,main,artifact generation/validation,1800,320,200,202,final_connectivity_matrix.csv,"Symmetric matrix, zero diagonal"

@@ -1,0 +1,206 @@
+source,target,type,evidence
+CB-GEN1,TR-UAT1,solid_power,generator breaker to UAT
+TR-UAT1,CB-13A-IN,solid_power,UAT to 13 kV A incoming breaker
+CB-13A-IN,BUS-13K-A,solid_power,13 kV A incoming breaker to bus
+FEED-230A,TR-SAT1,solid_power,offsite feeder to SAT
+TR-SAT1,CB-13B-IN,solid_power,SAT to 13 kV B incoming breaker
+CB-13B-IN,BUS-13K-B,solid_power,13 kV B incoming breaker to bus
+BUS-13K-A,CB-TIE-13K,solid_power,13 kV tie through breaker
+CB-TIE-13K,BUS-13K-B,solid_power,13 kV tie through breaker
+BUS-13K-A,CB-F41A,solid_power,13 kV A feeder to 4.16 kV A transformer
+CB-F41A,DS-F41A,solid_power,4.16 kV A feeder disconnect
+DS-F41A,TR-416A,solid_power,4.16 kV A transformer
+TR-416A,CB-416A-IN,solid_power,4.16 kV A incoming breaker
+CB-416A-IN,BUS-416-A,solid_power,4.16 kV A bus
+BUS-13K-B,CB-F41B,solid_power,13 kV B feeder to 4.16 kV B transformer
+CB-F41B,DS-F41B,solid_power,4.16 kV B feeder disconnect
+DS-F41B,TR-416B,solid_power,4.16 kV B transformer
+TR-416B,CB-416B-IN,solid_power,4.16 kV B incoming breaker
+CB-416B-IN,BUS-416-B,solid_power,4.16 kV B bus
+CB-DG1A,BUS-416-A,solid_power,DG A breaker to 4.16 kV A bus
+CB-DG1B,BUS-416-B,solid_power,DG B breaker to 4.16 kV B bus
+BUS-416-A,CB-TIE-416,solid_power,4.16 kV tie through breaker
+CB-TIE-416,BUS-416-B,solid_power,4.16 kV tie through breaker
+BUS-416-A,CB-LCA,solid_power,load center A feeder
+CB-LCA,TR-480A,solid_power,load center A transformer
+TR-480A,BUS-480-A,solid_power,load center A bus
+BUS-416-A,CB-LCB,solid_power,load center B feeder
+CB-LCB,TR-480B,solid_power,load center B transformer
+TR-480B,BUS-480-B,solid_power,load center B bus
+BUS-416-B,CB-LCC,solid_power,load center C feeder
+CB-LCC,TR-480C,solid_power,load center C transformer
+TR-480C,BUS-480-C,solid_power,load center C bus
+BUS-416-B,CB-LCD,solid_power,load center D feeder
+CB-LCD,TR-480D,solid_power,load center D transformer
+TR-480D,BUS-480-D,solid_power,load center D bus
+BUS-480-B,CB-TIE-480,solid_power,480 V B-C tie through breaker
+CB-TIE-480,BUS-480-C,solid_power,480 V B-C tie through breaker
+BUS-480-A,CB-48A1,solid_power,480 V branch CB-48A1 from bus
+CB-48A1,DS-48A1,solid_power,480 V branch CB-48A1 disconnect
+DS-48A1,MCC-1A,solid_power,480 V branch CB-48A1 middle device
+MCC-1A,RELAY-K1A,solid_power/control,480 V branch CB-48A1 control device
+RELAY-K1A,PMP-RHR-101A,solid_power/control,480 V branch CB-48A1 load
+BUS-480-A,CB-48A2,solid_power,480 V branch CB-48A2 from bus
+CB-48A2,DS-48A2,solid_power,480 V branch CB-48A2 disconnect
+DS-48A2,MCC-2A,solid_power,480 V branch CB-48A2 middle device
+MCC-2A,CS-2A,solid_power/control,480 V branch CB-48A2 control device
+CS-2A,MOV-CCW-112A,solid_power/control,480 V branch CB-48A2 load
+BUS-480-A,CB-48A3,solid_power,480 V branch CB-48A3 from bus
+CB-48A3,DS-48A3,solid_power,480 V branch CB-48A3 disconnect
+DS-48A3,MCC-3A,solid_power,480 V branch CB-48A3 middle device
+MCC-3A,RELAY-K3A,solid_power/control,480 V branch CB-48A3 control device
+RELAY-K3A,FAN-RB-104A,solid_power/control,480 V branch CB-48A3 load
+BUS-480-A,CB-48A4,solid_power,480 V branch CB-48A4 from bus
+CB-48A4,DS-48A4,solid_power,480 V branch CB-48A4 disconnect
+DS-48A4,JB-4A,solid_power,480 V branch CB-48A4 middle device
+JB-4A,CS-4A,solid_power/control,480 V branch CB-48A4 control device
+CS-4A,HTR-PZR-01A,solid_power/control,480 V branch CB-48A4 load
+BUS-480-A,CB-48A5,solid_power,480 V branch CB-48A5 from bus
+CB-48A5,DS-48A5,solid_power,480 V branch CB-48A5 disconnect
+DS-48A5,MCC-5A,solid_power,480 V branch CB-48A5 middle device
+MCC-5A,RELAY-K5A,solid_power/control,480 V branch CB-48A5 control device
+RELAY-K5A,COMP-IA-201A,solid_power/control,480 V branch CB-48A5 load
+BUS-480-A,CB-48A6,solid_power,480 V branch CB-48A6 from bus
+CB-48A6,DS-48A6,solid_power,480 V branch CB-48A6 disconnect
+DS-48A6,JB-6A,solid_power,480 V branch CB-48A6 middle device
+JB-6A,CS-6A,solid_power/control,480 V branch CB-48A6 control device
+CS-6A,MOT-CRN-01A,solid_power/control,480 V branch CB-48A6 load
+BUS-480-B,CB-48B1,solid_power,480 V branch CB-48B1 from bus
+CB-48B1,DS-48B1,solid_power,480 V branch CB-48B1 disconnect
+DS-48B1,MCC-1B,solid_power,480 V branch CB-48B1 middle device
+MCC-1B,RELAY-K1B,solid_power/control,480 V branch CB-48B1 control device
+RELAY-K1B,PMP-SI-102B,solid_power/control,480 V branch CB-48B1 load
+BUS-480-B,CB-48B2,solid_power,480 V branch CB-48B2 from bus
+CB-48B2,DS-48B2,solid_power,480 V branch CB-48B2 disconnect
+DS-48B2,MCC-2B,solid_power,480 V branch CB-48B2 middle device
+MCC-2B,CS-2B,solid_power/control,480 V branch CB-48B2 control device
+CS-2B,MOV-CS-116B,solid_power/control,480 V branch CB-48B2 load
+BUS-480-B,CB-48B3,solid_power,480 V branch CB-48B3 from bus
+CB-48B3,DS-48B3,solid_power,480 V branch CB-48B3 disconnect
+DS-48B3,MCC-3B,solid_power,480 V branch CB-48B3 middle device
+MCC-3B,RELAY-K3B,solid_power/control,480 V branch CB-48B3 control device
+RELAY-K3B,FAN-CCW-108B,solid_power/control,480 V branch CB-48B3 load
+BUS-480-B,CB-48B4,solid_power,480 V branch CB-48B4 from bus
+CB-48B4,DS-48B4,solid_power,480 V branch CB-48B4 disconnect
+DS-48B4,JB-4B,solid_power,480 V branch CB-48B4 middle device
+JB-4B,CS-4B,solid_power/control,480 V branch CB-48B4 control device
+CS-4B,HTR-SUMP-02B,solid_power/control,480 V branch CB-48B4 load
+BUS-480-B,CB-48B5,solid_power,480 V branch CB-48B5 from bus
+CB-48B5,DS-48B5,solid_power,480 V branch CB-48B5 disconnect
+DS-48B5,MCC-5B,solid_power,480 V branch CB-48B5 middle device
+MCC-5B,RELAY-K5B,solid_power/control,480 V branch CB-48B5 control device
+RELAY-K5B,PMP-CHG-203B,solid_power/control,480 V branch CB-48B5 load
+BUS-480-B,CB-48B6,solid_power,480 V branch CB-48B6 from bus
+CB-48B6,DS-48B6,solid_power,480 V branch CB-48B6 disconnect
+DS-48B6,JB-6B,solid_power,480 V branch CB-48B6 middle device
+JB-6B,CS-6B,solid_power/control,480 V branch CB-48B6 control device
+CS-6B,MOV-SW-118B,solid_power/control,480 V branch CB-48B6 load
+BUS-480-C,CB-48C1,solid_power,480 V branch CB-48C1 from bus
+CB-48C1,DS-48C1,solid_power,480 V branch CB-48C1 disconnect
+DS-48C1,MCC-1C,solid_power,480 V branch CB-48C1 middle device
+MCC-1C,RELAY-K1C,solid_power/control,480 V branch CB-48C1 control device
+RELAY-K1C,PMP-RHR-101C,solid_power/control,480 V branch CB-48C1 load
+BUS-480-C,CB-48C2,solid_power,480 V branch CB-48C2 from bus
+CB-48C2,DS-48C2,solid_power,480 V branch CB-48C2 disconnect
+DS-48C2,MCC-2C,solid_power,480 V branch CB-48C2 middle device
+MCC-2C,CS-2C,solid_power/control,480 V branch CB-48C2 control device
+CS-2C,MOV-CCW-112C,solid_power/control,480 V branch CB-48C2 load
+BUS-480-C,CB-48C3,solid_power,480 V branch CB-48C3 from bus
+CB-48C3,DS-48C3,solid_power,480 V branch CB-48C3 disconnect
+DS-48C3,MCC-3C,solid_power,480 V branch CB-48C3 middle device
+MCC-3C,RELAY-K3C,solid_power/control,480 V branch CB-48C3 control device
+RELAY-K3C,FAN-RB-104C,solid_power/control,480 V branch CB-48C3 load
+BUS-480-C,CB-48C4,solid_power,480 V branch CB-48C4 from bus
+CB-48C4,DS-48C4,solid_power,480 V branch CB-48C4 disconnect
+DS-48C4,JB-4C,solid_power,480 V branch CB-48C4 middle device
+JB-4C,RELAY-K4C,solid_power/control,480 V branch CB-48C4 control device
+RELAY-K4C,PMP-AFW-205C,solid_power/control,480 V branch CB-48C4 load
+BUS-480-C,CB-48C5,solid_power,480 V branch CB-48C5 from bus
+CB-48C5,DS-48C5,solid_power,480 V branch CB-48C5 disconnect
+DS-48C5,MCC-5C,solid_power,480 V branch CB-48C5 middle device
+MCC-5C,RELAY-K5C,solid_power/control,480 V branch CB-48C5 control device
+RELAY-K5C,PMP-CCP-207C,solid_power/control,480 V branch CB-48C5 load
+BUS-480-C,CB-48C6,solid_power,480 V branch CB-48C6 from bus
+CB-48C6,DS-48C6,solid_power,480 V branch CB-48C6 disconnect
+DS-48C6,JB-6C,solid_power,480 V branch CB-48C6 middle device
+JB-6C,CS-6C,solid_power/control,480 V branch CB-48C6 control device
+CS-6C,MOV-FCV-022C,solid_power/control,480 V branch CB-48C6 load
+BUS-480-D,CB-48D1,solid_power,480 V branch CB-48D1 from bus
+CB-48D1,DS-48D1,solid_power,480 V branch CB-48D1 disconnect
+DS-48D1,MCC-1D,solid_power,480 V branch CB-48D1 middle device
+MCC-1D,RELAY-K1D,solid_power/control,480 V branch CB-48D1 control device
+RELAY-K1D,PMP-SI-102D,solid_power/control,480 V branch CB-48D1 load
+BUS-480-D,CB-48D2,solid_power,480 V branch CB-48D2 from bus
+CB-48D2,DS-48D2,solid_power,480 V branch CB-48D2 disconnect
+DS-48D2,MCC-2D,solid_power,480 V branch CB-48D2 middle device
+MCC-2D,CS-2D,solid_power/control,480 V branch CB-48D2 control device
+CS-2D,MOV-CS-116D,solid_power/control,480 V branch CB-48D2 load
+BUS-480-D,CB-48D3,solid_power,480 V branch CB-48D3 from bus
+CB-48D3,DS-48D3,solid_power,480 V branch CB-48D3 disconnect
+DS-48D3,MCC-3D,solid_power,480 V branch CB-48D3 middle device
+MCC-3D,RELAY-K3D,solid_power/control,480 V branch CB-48D3 control device
+RELAY-K3D,FAN-ESF-110D,solid_power/control,480 V branch CB-48D3 load
+BUS-480-D,CB-48D4,solid_power,480 V branch CB-48D4 from bus
+CB-48D4,DS-48D4,solid_power,480 V branch CB-48D4 disconnect
+DS-48D4,JB-4D,solid_power,480 V branch CB-48D4 middle device
+JB-4D,CS-4D,solid_power/control,480 V branch CB-48D4 control device
+CS-4D,MOV-RWST-24D,solid_power/control,480 V branch CB-48D4 load
+BUS-480-D,CB-48D5,solid_power,480 V branch CB-48D5 from bus
+CB-48D5,DS-48D5,solid_power,480 V branch CB-48D5 disconnect
+DS-48D5,MCC-5D,solid_power,480 V branch CB-48D5 middle device
+MCC-5D,RELAY-K5D,solid_power/control,480 V branch CB-48D5 control device
+RELAY-K5D,PMP-CHG-203D,solid_power/control,480 V branch CB-48D5 load
+BUS-480-D,CB-48D6,solid_power,480 V branch CB-48D6 from bus
+CB-48D6,DS-48D6,solid_power,480 V branch CB-48D6 disconnect
+DS-48D6,JB-6D,solid_power,480 V branch CB-48D6 middle device
+JB-6D,CS-6D,solid_power/control,480 V branch CB-48D6 control device
+CS-6D,MOV-SW-118D,solid_power/control,480 V branch CB-48D6 load
+BUS-480-A,RECT-125A,solid_power,A rectifier feed from load center A
+BAT-125A,CHGR-125A,dc,A battery to charger
+CHGR-125A,RECT-125A,dc,A charger to rectifier
+RECT-125A,BUS-125DCA,dc,A rectifier to 125 VDC bus
+BUS-125DCA,INV-UPS-A,dc,A 125 VDC bus to inverter/UPS
+BUS-125DCA,CP-RPS-A,dc_control,A 125 VDC bus to RPS A panel
+BUS-125DCA,CP-RPS-B,dc_control,A 125 VDC bus to RPS B panel
+BUS-480-C,RECT-125B,solid_power,B rectifier feed from load center C
+BAT-125B,CHGR-125B,dc,B battery to charger
+CHGR-125B,RECT-125B,dc,B charger to rectifier
+RECT-125B,BUS-125DCB,dc,B rectifier to 125 VDC bus
+BUS-125DCB,INV-UPS-B,dc,B 125 VDC bus to inverter/UPS
+BUS-125DCB,CP-ESFAS-A,dc_control,B 125 VDC bus to ESFAS A panel
+BUS-125DCB,CP-ESFAS-B,dc_control,B 125 VDC bus to ESFAS B panel
+CP-RPS-A,TB-RPS-A,control,RPS A control chain
+TB-RPS-A,PROT-UV-A,control,RPS A undervoltage protection
+PROT-UV-A,RELAY-K101,control,RPS A relay K101
+RELAY-K101,PT-410A,instr_signal,K101 to PT-410A
+RELAY-K101,LT-512A,instr_signal,K101 to LT-512A
+CP-RPS-A,RELAY-K102,control,RPS A relay K102 branch
+RELAY-K102,TT-303A,instr_signal,K102 to TT-303A
+RELAY-K102,GND-CTRL-A,ground,K102 to control ground A
+CP-RPS-B,TB-RPS-B,control,RPS B control chain
+TB-RPS-B,PROT-UV-B,control,RPS B undervoltage protection
+PROT-UV-B,RELAY-K103,control,RPS B relay K103
+RELAY-K103,PT-410B,instr_signal,K103 to PT-410B
+RELAY-K103,LT-512B,instr_signal,K103 to LT-512B
+CP-RPS-B,RELAY-K104,control,RPS B relay K104 branch
+RELAY-K104,TT-303B,instr_signal,K104 to TT-303B
+RELAY-K104,GND-CTRL-B,ground,K104 to control ground B
+CP-ESFAS-A,JB-ESF-A,control,ESFAS A junction box
+JB-ESF-A,PROT-LOP-A,control,ESFAS A LOP protection
+PROT-LOP-A,RELAY-K105,control,ESFAS A relay K105
+RELAY-K105,FT-611A,instr_signal,K105 to FT-611A
+CP-ESFAS-A,RELAY-K106,control,ESFAS A relay K106 branch
+RELAY-K106,XA-730A,instr_signal,K106 to XA-730A
+RELAY-K106,RELAY-K108,control_interlock,labeled A/B ESF interlock
+CP-ESFAS-B,JB-ESF-B,control,ESFAS B junction box
+JB-ESF-B,PROT-LOP-B,control,ESFAS B LOP protection
+PROT-LOP-B,RELAY-K107,control,ESFAS B relay K107
+RELAY-K107,FT-611B,instr_signal,K107 to FT-611B
+CP-ESFAS-B,RELAY-K108,control,ESFAS B relay K108 branch
+RELAY-K108,XA-730B,instr_signal,K108 to XA-730B
+GEN-M1,UNLABELED-GEN-M1-TERMINAL,solid_power,Diego R1 included unlabeled source square
+UNLABELED-GEN-M1-TERMINAL,CB-GEN1,solid_power,Diego R1 included unlabeled source square
+DG-1A,UNLABELED-DG-1A-TERMINAL,solid_power,Diego R1 included unlabeled DG square
+UNLABELED-DG-1A-TERMINAL,CB-DG1A,solid_power,Diego R1 included unlabeled DG square
+DG-1B,UNLABELED-DG-1B-TERMINAL,solid_power,Diego R1 included unlabeled DG square
+UNLABELED-DG-1B-TERMINAL,CB-DG1B,solid_power,Diego R1 included unlabeled DG square

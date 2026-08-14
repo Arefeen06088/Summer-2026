@@ -1,0 +1,51 @@
+Connectivity matrix validation summary - Document 21
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\21\synthetic_npp_connectivity_matrix_fixed.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_matrix.csv): TP=182, FP=7, FN=22, Precision=0.962963, Recall=0.892157, F1=0.926209
+- Jennifer -- Round 2 (round_02_jennifer_matrix.csv): TP=183, FP=10, FN=21, Precision=0.948187, Recall=0.897059, F1=0.921914
+- Diego -- Round 3 (round_03_diego_saturation_matrix.csv): TP=183, FP=19, FN=21, Precision=0.905941, Recall=0.897059, F1=0.901478
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=183, FP=19, FN=21, Precision=0.905941, Recall=0.897059, F1=0.901478
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=183, FP=19, FN=21, Precision=0.905941, Recall=0.897059, F1=0.901478
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- BUS-201B -- CB-204A
+- BUS-202A -- CB-UNLABELED-EDG2A-INBOARD
+- BUS-302B -- TR-NB
+- BUS-401A -- DS-401B
+- BUS-401B -- DS-401B
+- BUS-401B -- RECT-24C
+- BUS-501A -- CP-SWGR
+- CB-204A -- DS-201B
+- CB-502B -- DS-302B
+- CB-UNLABELED-EDG2A-INBOARD -- DS-202A
+
+False-negative edge examples:
+- BAT-EDG-A -- CP-EDG-A
+- BAT-EDG-B -- CP-EDG-B
+- BUS-201A -- CB-204A
+- BUS-201B -- CB-204B
+- BUS-201B -- DS-201B
+- BUS-202A -- CB-204A
+- BUS-202A -- DS-202A
+- BUS-202B -- CB-204B
+- BUS-301A -- BUS-301B
+- BUS-301B -- DS-401B
+
+Extra/non-GT nodes causing performance drops:
+- CB-UNLABELED-EDG2A-INBOARD: 2 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 1 extra/intermediate nodes were omitted from the extraction (CB-UNLABELED-EDG2A-INBOARD), final metrics would be TP=183, FP=17, FN=21, Precision=0.915000, Recall=0.897059, F1=0.905941.
+- If all 1 non-GT nodes were omitted, metrics would be TP=183, FP=17, FN=21, Precision=0.915000, Recall=0.897059, F1=0.905941.
+
+Missing GT node examples:
+- CB-204B: 2 missed incident GT edge(s)
+- BAT-EDG-A: 1 missed incident GT edge(s)
+- BAT-EDG-B: 1 missed incident GT edge(s)

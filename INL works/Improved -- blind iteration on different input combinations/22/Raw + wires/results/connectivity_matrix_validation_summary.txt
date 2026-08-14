@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 22
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\22\synthetic_npp_connectivity_matrix_clean(1).csv
+GT normalized nodes: 200; GT normalized edges: 208
+Matrices evaluated: 5
+Best row: Jennifer -- Round 2 from round_02_jennifer_matrix.csv with Precision=0.959391, Recall=0.908654, F1=0.933333
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=189, FP=8, FN=19, Precision=0.959391, Recall=0.908654, F1=0.933333
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+Extra/non-GT nodes most responsible for FP edges: SRC-13.8-HDR (3 FP edges); XFRM-PT-1 (1 FP edges).
+Missing GT nodes examples: XFMR-PT-1.
+Close-but-not-exact name examples: XFRM-PT-1 -> XFMR-PT-1 (0.89).
+False-positive edge examples among GT-known nodes: JB-A1 -- RELAY-KA1; JB-B1 -- RELAY-KB1; JB-C1 -- RELAY-KC1; JB-D1 -- RELAY-KD1.
+False-negative edge examples among GT-known nodes: BUS-125A -- METER-A01; BUS-480-A -- CB-DC-A1; BUS-480-B -- CB-DC-B1; CB-13A1 -- SWYD-345; CB-13B1 -- SWYD-345; CB-RHR-A -- RELAY-KA1; CB-RHR-B -- RELAY-KB1; CB-RHR-C -- RELAY-KC1.
+False-positive examples involving extra/non-GT nodes: CB-13A1 -- SRC-13.8-HDR; CB-13B1 -- SRC-13.8-HDR; METER-V01 -- XFRM-PT-1; SRC-13.8-HDR -- SWYD-345.
+False-negative examples involving missing/differently named nodes: BUS-4160-A -- XFMR-PT-1; METER-V01 -- XFMR-PT-1.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (SRC-13.8-HDR; XFRM-PT-1), the final-row metrics would be TP=189, FP=4, FN=19, Precision=0.979275, Recall=0.908654, F1=0.942643.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=189, FP=4, FN=19, Precision=0.979275, Recall=0.908654, F1=0.942643.

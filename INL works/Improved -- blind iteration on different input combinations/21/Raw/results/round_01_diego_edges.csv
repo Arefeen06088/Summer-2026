@@ -1,0 +1,190 @@
+source,target,type,evidence
+GEN-UT,CB-101,solid_power,generator UT upper feeder
+CB-101,DS-101A,solid_power,upper UAT1 feeder breaker to disconnect
+DS-101A,TR-UAT1,solid_power,upper UAT1 feeder disconnect to transformer
+TR-UAT1,CB-201A,solid_power,UAT1 transformer to 4.16 kV breaker
+CB-201A,BUS-201A,solid_power,breaker lands on class 1E A bus
+GEN-UT,CB-102,solid_power,generator UT lower feeder
+CB-102,DS-101B,solid_power,lower UAT2 feeder breaker to disconnect
+DS-101B,TR-UAT2,solid_power,lower UAT2 feeder disconnect to transformer
+TR-UAT2,CB-201B,solid_power,UAT2 transformer to 4.16 kV breaker
+CB-201B,BUS-201B,solid_power,breaker lands on class 1E B bus
+BUS-101,CB-103,solid_power,13.8 kV aux bus to standby transformer feeder
+CB-103,DS-102A,solid_power,standby A feeder breaker to disconnect
+DS-102A,TR-SU1,solid_power,standby A disconnect to transformer
+TR-SU1,CB-202A,solid_power,standby A transformer to breaker
+CB-202A,BUS-202A,solid_power,breaker lands on non-1E A bus
+BUS-102,CB-104,solid_power,13.8 kV preferred bus to standby transformer feeder
+CB-104,DS-102B,solid_power,standby B feeder breaker to disconnect
+DS-102B,TR-SU2,solid_power,standby B disconnect to transformer
+TR-SU2,CB-202B,solid_power,standby B transformer to breaker
+CB-202B,BUS-202B,solid_power,breaker lands on non-1E B bus
+BUS-201A,DS-201A,solid_power,EDG-1A feeder from BUS-201A
+DS-201A,CB-105,solid_power,EDG-1A feeder disconnect to breaker
+CB-105,EDG-1A,solid_power,EDG-1A breaker to generator
+BUS-201B,CB-204A,solid_power,EDG-1B bus-side breaker
+CB-204A,DS-201B,solid_power,EDG-1B breaker to disconnect
+DS-201B,CB-106,solid_power,EDG-1B disconnect to breaker
+CB-106,EDG-1B,solid_power,EDG-1B breaker to generator
+DS-202A,CB-203A,solid_power,EDG-2A disconnect to breaker
+CB-203A,EDG-2A,solid_power,EDG-2A breaker to generator
+BUS-202B,DS-202B,solid_power,EDG-2B feeder from BUS-202B
+DS-202B,CB-203B,solid_power,EDG-2B disconnect to breaker
+CB-203B,EDG-2B,solid_power,EDG-2B breaker to generator
+BUS-201A,CB-301A,solid_power,BUS-201A drop to 480 V train A transformer
+CB-301A,DS-301A,solid_power,train A transformer breaker to disconnect
+DS-301A,TR-SA,solid_power,disconnect to safety transformer A
+TR-SA,CB-501A,solid_power,safety transformer A to 480 V breaker
+CB-501A,BUS-301A,solid_power,breaker to 480 V load center A1
+BUS-202A,CB-302A,solid_power,BUS-202A drop to normal transformer A
+CB-302A,DS-302A,solid_power,normal A transformer breaker to disconnect
+DS-302A,TR-NA,solid_power,disconnect to normal transformer A
+TR-NA,CB-502A,solid_power,normal transformer A to 480 V breaker
+CB-502A,BUS-302A,solid_power,breaker to 480 V MCC bus A2
+BUS-201B,CB-301B,solid_power,BUS-201B drop to 480 V train B transformer
+CB-301B,DS-301B,solid_power,train B transformer breaker to disconnect
+DS-301B,TR-SB,solid_power,disconnect to safety transformer B
+TR-SB,CB-501B,solid_power,safety transformer B to 480 V breaker
+CB-501B,BUS-301B,solid_power,breaker to 480 V load center B1
+BUS-202B,CB-302B,solid_power,BUS-202B drop to normal transformer B
+CB-302B,DS-302B,solid_power,normal B transformer breaker to disconnect
+DS-302B,CB-502B,solid_power,visible B2 order from disconnect to breaker
+CB-502B,TR-NB,solid_power,B2 breaker to transformer
+TR-NB,BUS-302B,solid_power,normal transformer B to MCC bus B2
+BUS-301A,GND-1,ground,ground tap on BUS-301A
+BUS-301A,CB-303A,solid_power,BUS-301A feeder to MCC-1A
+CB-303A,MCC-1A,solid_power,MCC-1A breaker to MCC
+BUS-301A,CB-304A,solid_power,BUS-301A feeder to MCC-2A
+CB-304A,MCC-2A,solid_power,MCC-2A breaker to MCC
+BUS-302A,CB-503A,solid_power,BUS-302A feeder to MCC-3A
+CB-503A,MCC-3A,solid_power,MCC-3A breaker to MCC
+MCC-3A,GND-5,ground,ground tap from MCC-3A side
+MCC-1A,MOTOR-SI101A,solid_power,MCC-1A motor branch
+MCC-1A,PUMP-SI101A,solid_power,MCC-1A pump branch
+MCC-1A,MOTOR-CCW101A,solid_power,MCC-1A motor branch
+MCC-1A,PUMP-CCW101A,solid_power,MCC-1A pump branch
+MCC-1A,VLV-8801A,solid_power,MCC-1A valve branch
+MCC-2A,MOTOR-AFW101A,solid_power,MCC-2A motor branch
+MCC-2A,PUMP-AFW101A,solid_power,MCC-2A pump branch
+MCC-2A,MOTOR-RHR101A,solid_power,MCC-2A motor branch
+MCC-2A,PUMP-RHR101A,solid_power,MCC-2A pump branch
+MCC-2A,VLV-8802A,solid_power,MCC-2A valve branch
+MCC-3A,MOTOR-SW101A,solid_power,MCC-3A motor branch
+MCC-3A,PUMP-SW101A,solid_power,MCC-3A pump branch
+MCC-3A,MOTOR-CHG101A,solid_power,MCC-3A motor branch
+MCC-3A,PUMP-CHG101A,solid_power,MCC-3A pump branch
+MCC-3A,MOTOR-FAN101A,solid_power,MCC-3A fan motor branch
+MCC-3A,VLV-8901A,solid_power,MCC-3A valve branch
+BUS-301B,GND-2,ground,ground tap on BUS-301B
+BUS-301B,CB-303B,solid_power,BUS-301B feeder to MCC-1B
+CB-303B,MCC-1B,solid_power,MCC-1B breaker to MCC
+BUS-301B,CB-304B,solid_power,BUS-301B feeder to MCC-2B
+CB-304B,MCC-2B,solid_power,MCC-2B breaker to MCC
+BUS-302B,CB-503B,solid_power,BUS-302B feeder to MCC-3B
+CB-503B,MCC-3B,solid_power,MCC-3B breaker to MCC
+MCC-3B,GND-6,ground,ground tap from MCC-3B side
+MCC-1B,MOTOR-SI101B,solid_power,MCC-1B motor branch
+MCC-1B,PUMP-SI101B,solid_power,MCC-1B pump branch
+MCC-1B,MOTOR-CCW101B,solid_power,MCC-1B motor branch
+MCC-1B,PUMP-CCW101B,solid_power,MCC-1B pump branch
+MCC-1B,VLV-8801B,solid_power,MCC-1B valve branch
+MCC-2B,MOTOR-AFW101B,solid_power,MCC-2B motor branch
+MCC-2B,PUMP-AFW101B,solid_power,MCC-2B pump branch
+MCC-2B,MOTOR-RHR101B,solid_power,MCC-2B motor branch
+MCC-2B,PUMP-RHR101B,solid_power,MCC-2B pump branch
+MCC-2B,VLV-8802B,solid_power,MCC-2B valve branch
+MCC-3B,MOTOR-SW101B,solid_power,MCC-3B motor branch
+MCC-3B,PUMP-SW101B,solid_power,MCC-3B pump branch
+MCC-3B,MOTOR-CHG101B,solid_power,MCC-3B motor branch
+MCC-3B,PUMP-CHG101B,solid_power,MCC-3B pump branch
+MCC-3B,MOTOR-FAN101B,solid_power,MCC-3B fan motor branch
+MCC-3B,VLV-8901B,solid_power,MCC-3B valve branch
+DS-401A,TR-DC-A,solid_power,A DC disconnect to transformer
+TR-DC-A,RECT-125A,solid_power,A DC transformer to rectifier
+RECT-125A,BUS-401A,dc,rectifier to 125 VDC bus A
+BUS-401A,BAT-1A,dc,battery 1A tap
+BUS-401A,BAT-2A,dc,battery 2A tap
+BUS-401A,GND-3,ground,ground tap on BUS-401A
+BUS-401A,INV-120A,dc,125 VDC bus A to inverter
+INV-120A,BUS-501A,solid_power,inverter output to 120 VAC bus A
+BUS-401A,DS-401B,dc_tie,drawn tie/drop from BUS-401A to DS-401B
+DS-401B,TR-DC-B,solid_power,DS-401B to B DC transformer
+TR-DC-B,RECT-125B,solid_power,B DC transformer to rectifier
+RECT-125B,BUS-401B,dc,rectifier to 125 VDC bus B
+BUS-401B,BAT-1B,dc,battery 1B tap
+BUS-401B,BAT-2B,dc,battery 2B tap
+BUS-401B,GND-4,ground,ground tap on BUS-401B
+BUS-401B,INV-120B,dc,125 VDC bus B to inverter
+INV-120B,BUS-501B,solid_power,inverter output to 120 VAC bus B
+DS-402A,TR-INV-A,solid_power,A inverter feeder disconnect to transformer
+TR-INV-A,INV-120C,solid_power,transformer to INV-120C
+DS-402B,TR-INV-B,solid_power,B inverter/rectifier disconnect to transformer
+TR-INV-B,RECT-24C,solid_power,transformer to RECT-24C
+BUS-501A,CP-SWGR,control,top control rung from 120 VAC bus A
+CP-SWGR,CP-SI-A,control,vertical dashed link between control panels
+BUS-501A,CP-SI-A,control,A bus to SI-A control row
+BUS-501B,CP-SI-B,control,B bus to SI-B control row
+BUS-501A,CP-CCW-A,control,A bus to CCW-A control row
+BUS-501B,CP-CCW-B,control,B bus to CCW-B control row
+BUS-501A,CP-EDG-A,control,A bus to EDG-A control row
+BUS-501B,CP-EDG-B,control,B bus to EDG-B control row
+BUS-501A,RPS-A,control,A bus to RPS-A row
+BUS-501B,RPS-B,control,B bus to RPS-B row
+BUS-501A,ESFAS-A,control,A bus to ESFAS-A row
+BUS-501B,ESFAS-B,control,B bus to ESFAS-B row
+CP-SI-A,RELAY-K101,control,CP-SI-A dashed control row
+RELAY-K101,RELAY-K102,control,CP-SI-A relay chain
+RELAY-K102,RELAY-K103,control,CP-SI-A relay chain
+RELAY-K103,JB-101,control,CP-SI-A relay chain to junction box
+JB-101,INST-PT101,signal,JB-101 dotted instrument continuation
+INST-PT101,INST-PT102,signal,JB-101 dotted instrument continuation
+CP-SI-B,RELAY-K104,control,CP-SI-B dashed control row
+RELAY-K104,RELAY-K105,control,CP-SI-B relay chain
+RELAY-K105,RELAY-K106,control,CP-SI-B relay chain
+RELAY-K106,JB-102,control,CP-SI-B relay chain to junction box
+JB-102,INST-PT103,signal,JB-102 dotted instrument continuation
+INST-PT103,INST-FT201,signal,JB-102 dotted instrument continuation
+CP-CCW-A,RELAY-K107,control,CP-CCW-A dashed control row
+RELAY-K107,RELAY-K108,control,CP-CCW-A relay chain
+RELAY-K108,RELAY-K109,control,CP-CCW-A relay chain
+RELAY-K109,JB-103,control,CP-CCW-A relay chain to junction box
+JB-103,INST-FT202,signal,JB-103 dotted instrument continuation
+INST-FT202,INST-LT301,signal,JB-103 dotted instrument continuation
+CP-CCW-B,RELAY-K110,control,CP-CCW-B dashed control row
+RELAY-K110,RELAY-K111,control,CP-CCW-B relay chain
+RELAY-K111,RELAY-K112,control,CP-CCW-B relay chain
+RELAY-K112,JB-104,control,CP-CCW-B relay chain to junction box
+JB-104,INST-LT302,signal,JB-104 dotted instrument continuation
+INST-LT302,INST-TT401,signal,JB-104 dotted instrument continuation
+CP-EDG-A,RELAY-K113,control,CP-EDG-A dashed control row
+RELAY-K113,RELAY-K114,control,CP-EDG-A relay chain
+RELAY-K114,RELAY-K115,control,CP-EDG-A relay chain
+RELAY-K115,JB-105,control,CP-EDG-A relay chain to junction box
+JB-105,INST-TT402,signal,JB-105 dotted instrument continuation
+INST-TT402,INST-CT501,signal,JB-105 dotted instrument continuation
+CP-EDG-B,RELAY-K116,control,CP-EDG-B dashed control row
+RELAY-K116,RELAY-K117,control,CP-EDG-B relay chain
+RELAY-K117,RELAY-K118,control,CP-EDG-B relay chain
+RELAY-K118,JB-106,control,CP-EDG-B relay chain to junction box
+JB-106,INST-CT502,signal,JB-106 dotted instrument continuation
+RPS-A,RELAY-K119,control,RPS-A dashed control row
+RELAY-K119,RELAY-K120,control,RPS-A relay chain
+RELAY-K120,RELAY-K121,control,RPS-A relay chain
+RELAY-K121,JB-107,control,RPS-A relay chain to junction box
+JB-107,INST-VT601,signal,JB-107 dotted instrument continuation
+RPS-B,RELAY-K122,control,RPS-B dashed control row
+RELAY-K122,RELAY-K123,control,RPS-B relay chain
+RELAY-K123,RELAY-K124,control,RPS-B relay chain
+RELAY-K124,JB-108,control,RPS-B relay chain to junction box
+JB-108,INST-VT602,signal,JB-108 dotted instrument continuation
+ESFAS-A,RELAY-K125,control,ESFAS-A dashed control row
+RELAY-K125,RELAY-K126,control,ESFAS-A relay chain
+RELAY-K126,RELAY-K127,control,ESFAS-A relay chain
+RELAY-K127,JB-109,control,ESFAS-A relay chain to junction box
+JB-109,INST-ZS701,signal,JB-109 dotted instrument continuation
+ESFAS-B,RELAY-K128,control,ESFAS-B dashed control row
+RELAY-K128,RELAY-K129,control,ESFAS-B relay chain
+RELAY-K129,RELAY-K130,control,ESFAS-B relay chain
+RELAY-K130,JB-110,control,ESFAS-B relay chain to junction box
+JB-110,INST-ZS702,signal,JB-110 dotted instrument continuation
+BUS-202A,DS-202A,solid_power,round-01 high-recall direct EDG-2A path before unlabeled breaker review

@@ -1,0 +1,1218 @@
+{
+  "document": "23",
+  "iteration": "1",
+  "round": "jennifer_round2_final",
+  "role": "precision_reviewer_refiner",
+  "final_status": "saturated_agreement",
+  "review_notes": [
+    "Final precision saturation pass used only Doc23 Raw + components visual resources and the explicitly provided round2/round1 JSON/CSV inputs; no GT, GT-derived feedback, Raw+wires folders, OCR, Tesseract/RapidOCR, or outside resources were used.",
+    "Diego round2 accepted Jennifer round1 refined connectivity without changes; mechanical comparison confirms identical nodes, matrix order, matrix, asserted edge set, uncertain edge set, and rejected non-edge set.",
+    "Final visual saturation review found no clear support for re-adding the detached 480 V main-breaker edges, JB-to-second-relay shortcuts, or BUS-120AC-to-INST-NIS shortcuts removed in round1.",
+    "The retained set continues to represent visually supported direct drawn edges/taps rather than same-net cliques; ambiguous feeder origins, shifted load-center crossings, and lower DC/DCS/control cases remain uncertain rather than guessed.",
+    "No nodes, asserted edges, labels, or matrix entries were changed relative to Diego round2."
+  ],
+  "nodes": [
+    {
+      "id": "GRID-161A",
+      "kind": "source",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "DS-101",
+      "kind": "disconnect",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "CB-101",
+      "kind": "breaker",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "TR-UAT-1A",
+      "kind": "transformer",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "CB-102",
+      "kind": "breaker",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "BUS-4160-A",
+      "kind": "bus",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "RELAY-87A",
+      "kind": "relay",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "RELAY-27A",
+      "kind": "relay",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "METER-A",
+      "kind": "meter",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "PT-41A",
+      "kind": "instrument",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "GND-41A",
+      "kind": "ground",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "CB-ESF-A",
+      "kind": "breaker",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "BUS-4160-ESF-A",
+      "kind": "bus",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "CB-TIE-41",
+      "kind": "breaker",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "SYNC-41",
+      "kind": "instrument",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "GRID-161B",
+      "kind": "source",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "DS-102",
+      "kind": "disconnect",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "CB-103",
+      "kind": "breaker",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "TR-UAT-1B",
+      "kind": "transformer",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "CB-104",
+      "kind": "breaker",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "BUS-4160-B",
+      "kind": "bus",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "RELAY-87B",
+      "kind": "relay",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "RELAY-27B",
+      "kind": "relay",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "METER-B",
+      "kind": "meter",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "PT-41B",
+      "kind": "instrument",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "GND-41B",
+      "kind": "ground",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "CB-ESF-B",
+      "kind": "breaker",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "BUS-4160-ESF-B",
+      "kind": "bus",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "ATS-1A",
+      "kind": "disconnect",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "CB-DG1A",
+      "kind": "breaker",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "DG-1A",
+      "kind": "source",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "ATS-1B",
+      "kind": "disconnect",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "CB-DG1B",
+      "kind": "breaker",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "DG-1B",
+      "kind": "source",
+      "evidence": "Top 4160 V/ESF region in raw_01 plus close crops raw_21/raw_22/raw_23/raw_24."
+    },
+    {
+      "id": "CB-1A-FDR",
+      "kind": "breaker",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "DS-1A-ISO",
+      "kind": "disconnect",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "TR-1A",
+      "kind": "transformer",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "CB-1A-MAIN",
+      "kind": "breaker",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "BUS-480-1A",
+      "kind": "bus",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "MCC-1A-1",
+      "kind": "panel",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "PUMP-P101",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "MOTOR-M102",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "MCC-1A-2",
+      "kind": "panel",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "VALVE-MOV103",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "FAN-F104",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "MCC-1A-3",
+      "kind": "panel",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "PNL-1A",
+      "kind": "panel",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "HTR-H105",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "VALVE-XV106",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "JB-1A-1",
+      "kind": "junction_block",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "INST-1A",
+      "kind": "instrument",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "GND-1A",
+      "kind": "ground",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "RELAY-K11",
+      "kind": "relay",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "RELAY-K12",
+      "kind": "relay",
+      "evidence": "480 V LOAD CENTER 1A - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_25_close_load_1a_left_2x.png, raw_26_close_load_1a_right_2x.png."
+    },
+    {
+      "id": "CB-1C-FDR",
+      "kind": "breaker",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "DS-1C-ISO",
+      "kind": "disconnect",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "TR-1C",
+      "kind": "transformer",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "CB-1C-MAIN",
+      "kind": "breaker",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "BUS-480-1C",
+      "kind": "bus",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "MCC-1C-1",
+      "kind": "panel",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "PUMP-P131",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "MOTOR-M132",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "MCC-1C-2",
+      "kind": "panel",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "VALVE-MOV133",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "FAN-F134",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "MCC-1C-3",
+      "kind": "panel",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "PNL-1C",
+      "kind": "panel",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "HTR-H135",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "VALVE-XV136",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "JB-1C-1",
+      "kind": "junction_block",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "INST-1C",
+      "kind": "instrument",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "GND-1C",
+      "kind": "ground",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "RELAY-K21",
+      "kind": "relay",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "RELAY-K22",
+      "kind": "relay",
+      "evidence": "480 V LOAD CENTER 1C - BALANCE OF PLANT; raw_07_upper_load_centers_full.png, raw_27_close_load_1c_left_2x.png, raw_28_close_load_1c_right_2x.png."
+    },
+    {
+      "id": "CB-1B-FDR",
+      "kind": "breaker",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "DS-1B-ISO",
+      "kind": "disconnect",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "TR-1B",
+      "kind": "transformer",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "CB-1B-MAIN",
+      "kind": "breaker",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "BUS-480-1B",
+      "kind": "bus",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "MCC-1B-1",
+      "kind": "panel",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "PUMP-P161",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "MOTOR-M162",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "MCC-1B-2",
+      "kind": "panel",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "VALVE-MOV163",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "FAN-F164",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "MCC-1B-3",
+      "kind": "panel",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "PNL-1B",
+      "kind": "panel",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "HTR-H165",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "VALVE-XV166",
+      "kind": "load",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "JB-1B-1",
+      "kind": "junction_block",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "INST-1B",
+      "kind": "instrument",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "GND-1B",
+      "kind": "ground",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "RELAY-K31",
+      "kind": "relay",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "RELAY-K32",
+      "kind": "relay",
+      "evidence": "480 V LOAD CENTER 1B - NORMAL AUX; raw_07_upper_load_centers_full.png, raw_29_close_load_1b_left_2x.png, raw_30_close_load_1b_right_2x.png."
+    },
+    {
+      "id": "CB-2A-FDR",
+      "kind": "breaker",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "DS-2A-ISO",
+      "kind": "disconnect",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "TR-2A",
+      "kind": "transformer",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "CB-2A-MAIN",
+      "kind": "breaker",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "BUS-480-2A",
+      "kind": "bus",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "MCC-2A-1",
+      "kind": "panel",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "PUMP-P201",
+      "kind": "load",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "MOTOR-M202",
+      "kind": "load",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "MCC-2A-2",
+      "kind": "panel",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "VALVE-MOV203",
+      "kind": "load",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "FAN-F204",
+      "kind": "load",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "MCC-2A-3",
+      "kind": "panel",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "PNL-2A",
+      "kind": "panel",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "HTR-H205",
+      "kind": "load",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "VALVE-XV206",
+      "kind": "load",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "JB-2A-1",
+      "kind": "junction_block",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "INST-2A",
+      "kind": "instrument",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "GND-2A",
+      "kind": "ground",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "RELAY-K41",
+      "kind": "relay",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "RELAY-K42",
+      "kind": "relay",
+      "evidence": "480 V ESF LOAD CENTER 2A; raw_11_lower_load_centers_full.png, raw_31_close_load_2a_left_2x.png, raw_32_close_load_2a_right_2x.png."
+    },
+    {
+      "id": "CB-2C-FDR",
+      "kind": "breaker",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "DS-2C-ISO",
+      "kind": "disconnect",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "TR-2C",
+      "kind": "transformer",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "CB-2C-MAIN",
+      "kind": "breaker",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "BUS-480-2C",
+      "kind": "bus",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "MCC-2C-1",
+      "kind": "panel",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "PUMP-P231",
+      "kind": "load",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "MOTOR-M232",
+      "kind": "load",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "MCC-2C-2",
+      "kind": "panel",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "VALVE-MOV233",
+      "kind": "load",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "FAN-F234",
+      "kind": "load",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "MCC-2C-3",
+      "kind": "panel",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "PNL-2C",
+      "kind": "panel",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "HTR-H235",
+      "kind": "load",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "VALVE-XV236",
+      "kind": "load",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "JB-2C-1",
+      "kind": "junction_block",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "INST-2C",
+      "kind": "instrument",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "GND-2C",
+      "kind": "ground",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "RELAY-K51",
+      "kind": "relay",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "RELAY-K52",
+      "kind": "relay",
+      "evidence": "480 V BATTERY SUPPORT CENTER 2C; raw_11_lower_load_centers_full.png, raw_33_close_load_2c_left_2x.png, raw_34_close_load_2c_right_2x.png."
+    },
+    {
+      "id": "CB-2B-FDR",
+      "kind": "breaker",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "DS-2B-ISO",
+      "kind": "disconnect",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "TR-2B",
+      "kind": "transformer",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "CB-2B-MAIN",
+      "kind": "breaker",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "BUS-480-2B",
+      "kind": "bus",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "MCC-2B-1",
+      "kind": "panel",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "PUMP-P261",
+      "kind": "load",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "MOTOR-M262",
+      "kind": "load",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "MCC-2B-2",
+      "kind": "panel",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "VALVE-MOV263",
+      "kind": "load",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "FAN-F264",
+      "kind": "load",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "MCC-2B-3",
+      "kind": "panel",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "PNL-2B",
+      "kind": "panel",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "HTR-H265",
+      "kind": "load",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "VALVE-XV266",
+      "kind": "load",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "JB-2B-1",
+      "kind": "junction_block",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "INST-2B",
+      "kind": "instrument",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "GND-2B",
+      "kind": "ground",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "RELAY-K61",
+      "kind": "relay",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "RELAY-K62",
+      "kind": "relay",
+      "evidence": "480 V ESF LOAD CENTER 2B; raw_11_lower_load_centers_full.png, raw_35_close_load_2b_left_2x.png, raw_36_close_load_2b_right_2x.png."
+    },
+    {
+      "id": "CB-DC-A",
+      "kind": "breaker",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "RECT-125A",
+      "kind": "transformer",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "BUS-125DC-A",
+      "kind": "bus",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "BAT-125A",
+      "kind": "source",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "CHGR-AUX-A",
+      "kind": "source",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "METER-DC-A",
+      "kind": "meter",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "GND-DC-A",
+      "kind": "ground",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "CB-DCTIE",
+      "kind": "breaker",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "INV-1A",
+      "kind": "transformer",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "UPS-1A",
+      "kind": "source",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "CB-UPS-A",
+      "kind": "breaker",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "BUS-120AC-A",
+      "kind": "bus",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "FUSE-FU-A",
+      "kind": "disconnect",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "RELAY-KA1",
+      "kind": "relay",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "RELAY-KA2",
+      "kind": "relay",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "ANN-A",
+      "kind": "panel",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "REC-SER-A",
+      "kind": "panel",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "PNL-RPS-A",
+      "kind": "panel",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "INST-NIS-A",
+      "kind": "instrument",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "PNL-DCS-A",
+      "kind": "panel",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "JB-CTRL-A",
+      "kind": "junction_block",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "DC-DC-1",
+      "kind": "transformer",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "BUS-24DC-C",
+      "kind": "bus",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "BAT-24C",
+      "kind": "source",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "PNL-RADMON",
+      "kind": "panel",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "RELAY-KTIE",
+      "kind": "relay",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "CB-DC-B",
+      "kind": "breaker",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "RECT-125B",
+      "kind": "transformer",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "BUS-125DC-B",
+      "kind": "bus",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "BAT-125B",
+      "kind": "source",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "CHGR-AUX-B",
+      "kind": "source",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "METER-DC-B",
+      "kind": "meter",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "GND-DC-B",
+      "kind": "ground",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "INV-1B",
+      "kind": "transformer",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "UPS-1B",
+      "kind": "source",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "CB-UPS-B",
+      "kind": "breaker",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "BUS-120AC-B",
+      "kind": "bus",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "FUSE-FU-B",
+      "kind": "disconnect",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "RELAY-KB1",
+      "kind": "relay",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "RELAY-KB2",
+      "kind": "relay",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "ANN-B",
+      "kind": "panel",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "REC-SER-B",
+      "kind": "panel",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "PNL-RPS-B",
+      "kind": "panel",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "INST-NIS-B",
+      "kind": "instrument",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "PNL-DCS-B",
+      "kind": "panel",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    },
+    {
+      "id": "JB-CTRL-B",
+      "kind": "junction_block",
+      "evidence": "Lower 125 VDC / 120 VAC / RPS / auxiliary DC region in raw_15 plus close crops raw_37/raw_38/raw_39."
+    }
+  ],
+  "matrix_order": [
+    "GRID-161A",
+    "DS-101",
+    "CB-101",
+    "TR-UAT-1A",
+    "CB-102",
+    "BUS-4160-A",
+    "RELAY-87A",
+    "RELAY-27A",
+    "METER-A",
+    "PT-41A",
+    "GND-41A",
+    "CB-ESF-A",
+    "BUS-4160-ESF-A",
+    "CB-TIE-41",
+    "SYNC-41",
+    "GRID-161B",
+    "DS-102",
+    "CB-103",
+    "TR-UAT-1B",
+    "CB-104",
+    "BUS-4160-B",
+    "RELAY-87B",
+    "RELAY-27B",
+    "METER-B",
+    "PT-41B",
+    "GND-41B",
+    "CB-ESF-B",
+    "BUS-4160-ESF-B",
+    "ATS-1A",
+    "CB-DG1A",
+    "DG-1A",
+    "ATS-1B",
+    "CB-DG1B",
+    "DG-1B",
+    "CB-1A-FDR",
+    "DS-1A-ISO",
+    "TR-1A",
+    "CB-1A-MAIN",
+    "BUS-480-1A",
+    "MCC-1A-1",
+    "PUMP-P101",
+    "MOTOR-M102",
+    "MCC-1A-2",
+    "VALVE-MOV103",
+    "FAN-F104",
+    "MCC-1A-3",
+    "PNL-1A",
+    "HTR-H105",
+    "VALVE-XV106",
+    "JB-1A-1",
+    "INST-1A",
+    "GND-1A",
+    "RELAY-K11",
+    "RELAY-K12",
+    "CB-1C-FDR",
+    "DS-1C-ISO",
+    "TR-1C",
+    "CB-1C-MAIN",
+    "BUS-480-1C",
+    "MCC-1C-1",
+    "PUMP-P131",
+    "MOTOR-M132",
+    "MCC-1C-2",
+    "VALVE-MOV133",
+    "FAN-F134",
+    "MCC-1C-3",
+    "PNL-1C",
+    "HTR-H135",
+    "VALVE-XV136",
+    "JB-1C-1",
+    "INST-1C",
+    "GND-1C",
+    "RELAY-K21",
+    "RELAY-K22",
+    "CB-1B-FDR",
+    "DS-1B-ISO",
+    "TR-1B",
+    "CB-1B-MAIN",
+    "BUS-480-1B",
+    "MCC-1B-1",
+    "PUMP-P161",
+    "MOTOR-M162",
+    "MCC-1B-2",
+    "VALVE-MOV163",
+    "FAN-F164",
+    "MCC-1B-3",
+    "PNL-1B",
+    "HTR-H165",
+    "VALVE-XV166",
+    "JB-1B-1",
+    "INST-1B",
+    "GND-1B",
+    "RELAY-K31",
+    "RELAY-K32",
+    "CB-2A-FDR",
+    "DS-2A-ISO",
+    "TR-2A",
+    "CB-2A-MAIN",
+    "BUS-480-2A",
+    "MCC-2A-1",
+    "PUMP-P201",
+    "MOTOR-M202",
+    "MCC-2A-2",
+    "VALVE-MOV203",
+    "FAN-F204",
+    "MCC-2A-3",
+    "PNL-2A",
+    "HTR-H205",
+    "VALVE-XV206",
+    "JB-2A-1",
+    "INST-2A",
+    "GND-2A",
+    "RELAY-K41",
+    "RELAY-K42",
+    "CB-2C-FDR",
+    "DS-2C-ISO",
+    "TR-2C",
+    "CB-2C-MAIN",
+    "BUS-480-2C",
+    "MCC-2C-1",
+    "PUMP-P231",
+    "MOTOR-M232",
+    "MCC-2C-2",
+    "VALVE-MOV233",
+    "FAN-F234",
+    "MCC-2C-3",
+    "PNL-2C",
+    "HTR-H235",
+    "VALVE-XV236",
+    "JB-2C-1",
+    "INST-2C",
+    "GND-2C",
+    "RELAY-K51",
+    "RELAY-K52",
+    "CB-2B-FDR",
+    "DS-2B-ISO",
+    "TR-2B",
+    "CB-2B-MAIN",
+    "BUS-480-2B",
+    "MCC-2B-1",
+    "PUMP-P261",
+    "MOTOR-M262",
+    "MCC-2B-2",
+    "VALVE-MOV263",
+    "FAN-F264",
+    "MCC-2B-3",
+    "PNL-2B",
+    "HTR-H265",
+    "VALVE-XV266",
+    "JB-2B-1",
+    "INST-2B",
+    "GND-2B",
+    "RELAY-K61",
+    "RELAY-K62",
+    "CB-DC-A",
+    "RECT-125A",
+    "BUS-125DC-A",
+    "BAT-125A",
+    "CHGR-AUX-A",
+    "METER-DC-A",
+    "GND-DC-A",
+    "CB-DCTIE",
+    "INV-1A",
+    "UPS-1A",
+    "CB-UPS-A",
+    "BUS-120AC-A",
+    "FUSE-FU-A",
+    "RELAY-KA1",
+    "RELAY-KA2",
+    "ANN-A",
+    "REC-SER-A",
+    "PNL-RPS-A",
+    "INST-NIS-A",
+    "PNL-DCS-A",
+    "JB-CTRL-A",
+    "DC-DC-1",
+    "BUS-24DC-C",
+    "BAT-24C",
+    "PNL-RADMON",
+    "RELAY-KTIE",
+    "CB-DC-B",
+    "RECT-125B",
+    "BUS-125DC-B",
+    "BAT-125B",
+    "CHGR-AUX-B",
+    "METER-DC-B",
+    "GND-DC-B",
+    "INV-1B",
+    "UPS-1B",
+    "CB-UPS-B",
+    "BUS-120AC-B",
+    "FUSE-FU-B",
+    "RELAY-KB1",
+    "RELAY-KB2",
+    "ANN-B",
+    "REC-SER-B",
+    "PNL-RPS-B",
+    "INST-NIS-B",
+    "PNL-DCS-B",
+    "JB-CTRL-B"
+  ]
+}

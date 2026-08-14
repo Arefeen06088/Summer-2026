@@ -1,0 +1,214 @@
+source,target,confidence,line_type,evidence
+SAT-1A,CB-SAT-1A,high,ac-power,station auxiliary A source lands on 4160 bus A
+CB-SAT-1A,BUS-4160-A,high,ac-power,station auxiliary A source lands on 4160 bus A
+GEN-001,UAT-1A,high,ac-power,main generator feed through UAT 1A to bus A
+UAT-1A,CB-UAT-1A,high,ac-power,main generator feed through UAT 1A to bus A
+CB-UAT-1A,BUS-4160-A,high,ac-power,main generator feed through UAT 1A to bus A
+DG-1A,CB-DG-1A,high,ac-power,EDG A source lands on bus A
+CB-DG-1A,BUS-4160-A,high,ac-power,EDG A source lands on bus A
+BUS-4160-A,PT-4160-A,high,instrument,PT 4160 A vertical tap from bus A
+BUS-4160-A,CB-TIE-4AB,high,ac-power,4kV normally open tie breaker between A and B buses
+CB-TIE-4AB,BUS-4160-B,high,ac-power,4kV normally open tie breaker between A and B buses
+SAT-1B,CB-SAT-1B,high,ac-power,station auxiliary B source lands on 4160 bus B
+CB-SAT-1B,BUS-4160-B,high,ac-power,station auxiliary B source lands on 4160 bus B
+GEN-001,UAT-1B,high,ac-power,main generator feed through UAT 1B to bus B
+UAT-1B,CB-UAT-1B,high,ac-power,main generator feed through UAT 1B to bus B
+CB-UAT-1B,BUS-4160-B,high,ac-power,main generator feed through UAT 1B to bus B
+DG-1B,CB-DG-1B,high,ac-power,EDG B source lands on bus B
+CB-DG-1B,BUS-4160-B,high,ac-power,EDG B source lands on bus B
+BUS-4160-B,PT-4160-B,high,instrument,PT 4160 B vertical tap from bus B
+BUS-4160-A,CB-TR-A1,high,ac-power,A1 load center transformer chain
+CB-TR-A1,TR-LC-A1,high,ac-power,A1 load center transformer chain
+TR-LC-A1,CB-480-A1,high,ac-power,A1 load center transformer chain
+CB-480-A1,BUS-480-A,high,ac-power,A1 load center transformer chain
+BUS-4160-A,CB-TR-A2,high,ac-power,A2 load center transformer chain
+CB-TR-A2,TR-LC-A2,high,ac-power,A2 load center transformer chain
+TR-LC-A2,CB-480-A2,high,ac-power,A2 load center transformer chain
+CB-480-A2,BUS-480-A,high,ac-power,A2 load center transformer chain
+BUS-4160-B,CB-TR-B1,high,ac-power,B1 load center transformer chain
+CB-TR-B1,TR-LC-B1,high,ac-power,B1 load center transformer chain
+TR-LC-B1,CB-480-B1,high,ac-power,B1 load center transformer chain
+CB-480-B1,BUS-480-B,high,ac-power,B1 load center transformer chain
+BUS-4160-B,CB-TR-B2,high,ac-power,B2 load center transformer chain
+CB-TR-B2,TR-LC-B2,high,ac-power,B2 load center transformer chain
+TR-LC-B2,CB-480-B2,high,ac-power,B2 load center transformer chain
+CB-480-B2,BUS-480-B,high,ac-power,B2 load center transformer chain
+BUS-480-A,CB-TIE-480AB,high,ac-power,480V normally open tie breaker between load centers
+CB-TIE-480AB,BUS-480-B,high,ac-power,480V normally open tie breaker between load centers
+BUS-480-A,AM-480-A,high,instrument,AM-480-A visually taps BUS-480-A
+BUS-480-A,VM-480-A,high,instrument,VM-480-A visually taps BUS-480-A
+BUS-480-A,CT-480-A1,high,instrument,CT-480-A1 visually taps BUS-480-A
+BUS-480-A,GND-SMGR-A,high,ground,GND-SMGR-A visually taps BUS-480-A
+BUS-480-B,AM-480-B,high,instrument,AM-480-B visually taps BUS-480-B
+BUS-480-B,VM-480-B,high,instrument,VM-480-B visually taps BUS-480-B
+BUS-480-B,CT-480-B1,high,instrument,CT-480-B1 visually taps BUS-480-B
+BUS-480-B,GND-SMGR-B,high,ground,GND-SMGR-B visually taps BUS-480-B
+BUS-480-A,CB-101A,high,ac-power,CB-101A vertical feeder from BUS-480-A
+CB-101A,DS-101A,high,ac-power,CB-101A to DS-101A branch conductor
+DS-101A,MS-101A,high,ac-power,DS-101A to MS-101A branch conductor
+MS-101A,PUMP-SLC-1A,high,ac-power,MS-101A to PUMP-SLC-1A landed branch
+PUMP-SLC-1A,TB-SLC-1A,high,control,PUMP-SLC-1A to TB-SLC-1A visible endpoint
+BUS-480-A,CB-102A,high,ac-power,CB-102A vertical feeder from BUS-480-A
+CB-102A,FU-102A,high,ac-power,CB-102A to FU-102A branch conductor
+FU-102A,MS-102A,high,ac-power,FU-102A to MS-102A branch conductor
+MS-102A,PUMP-COV-1A,high,ac-power,MS-102A to PUMP-COV-1A landed branch
+PUMP-COV-1A,GND-CCW-1A,high,ground,PUMP-COV-1A to GND-CCW-1A visible endpoint
+BUS-480-A,CB-103A,high,ac-power,CB-103A vertical feeder from BUS-480-A
+CB-103A,DS-103A,high,ac-power,CB-103A to DS-103A branch conductor
+DS-103A,MS-103A,high,ac-power,DS-103A to MS-103A branch conductor
+MS-103A,PUMP-RHR-1A,high,ac-power,MS-103A to PUMP-RHR-1A landed branch
+PUMP-RHR-1A,LS-RHR-1A,high,instrument,PUMP-RHR-1A to LS-RHR-1A visible endpoint
+BUS-480-A,CB-104A,high,ac-power,CB-104A vertical feeder from BUS-480-A
+CB-104A,FU-104A,high,ac-power,CB-104A to FU-104A branch conductor
+FU-104A,MS-104A,high,ac-power,FU-104A to MS-104A branch conductor
+MS-104A,PUMP-CS-1A,high,ac-power,MS-104A to PUMP-CS-1A landed branch
+PUMP-CS-1A,TB-CS-1A,high,control,PUMP-CS-1A to TB-CS-1A visible endpoint
+BUS-480-A,CB-105A,high,ac-power,CB-105A vertical feeder from BUS-480-A
+CB-105A,DS-105A,high,ac-power,CB-105A to DS-105A branch conductor
+DS-105A,MS-105A,high,ac-power,DS-105A to MS-105A branch conductor
+MS-105A,FAN-CRD-1A,high,ac-power,MS-105A to FAN-CRD-1A landed branch
+FAN-CRD-1A,GND-FAN-1A,high,ground,FAN-CRD-1A to GND-FAN-1A visible endpoint
+BUS-480-A,CB-106A,high,ac-power,CB-106A vertical feeder from BUS-480-A
+CB-106A,FU-106A,high,ac-power,CB-106A to FU-106A branch conductor
+FU-106A,RELAY-K106A,high,ac-power,FU-106A to RELAY-K106A branch conductor
+RELAY-K106A,MOV-RHCV-101A,high,control,RELAY-K106A to MOV-RHCV-101A landed branch
+MOV-RHCV-101A,LS-RHCV-101A,high,instrument,MOV-RHCV-101A to LS-RHCV-101A visible endpoint
+BUS-480-A,CB-107A,high,ac-power,CB-107A vertical feeder from BUS-480-A
+CB-107A,DS-107A,high,ac-power,CB-107A to DS-107A branch conductor
+DS-107A,RELAY-K107A,high,ac-power,DS-107A to RELAY-K107A branch conductor
+RELAY-K107A,MOV-RHCV-102A,high,control,RELAY-K107A to MOV-RHCV-102A landed branch
+MOV-RHCV-102A,LS-RHR-102A,high,instrument,MOV-RHCV-102A to LS-RHR-102A visible endpoint
+BUS-480-A,CB-108A,high,ac-power,CB-108A vertical feeder from BUS-480-A
+CB-108A,FU-108A,high,ac-power,CB-108A to FU-108A branch conductor
+FU-108A,MS-108A,high,ac-power,FU-108A to MS-108A branch conductor
+MS-108A,HTR-PZR-1A,high,ac-power,MS-108A to HTR-PZR-1A landed branch
+HTR-PZR-1A,TB-HTR-1A,high,control,HTR-PZR-1A to TB-HTR-1A visible endpoint
+BUS-480-A,CB-109A,high,ac-power,CB-109A vertical feeder from BUS-480-A
+CB-109A,DS-109A,high,ac-power,CB-109A to DS-109A branch conductor
+DS-109A,MS-109A,high,ac-power,DS-109A to MS-109A branch conductor
+MS-109A,PUMP-SW-1A,high,ac-power,MS-109A to PUMP-SW-1A landed branch
+PUMP-SW-1A,GND-SW-1A,high,ground,PUMP-SW-1A to GND-SW-1A visible endpoint
+BUS-480-A,CB-110A,high,ac-power,CB-110A vertical feeder from BUS-480-A
+CB-110A,FU-110A,high,ac-power,CB-110A to FU-110A branch conductor
+FU-110A,MS-110A,high,ac-power,FU-110A to MS-110A branch conductor
+MS-110A,HTR-AHU-1A,high,ac-power,MS-110A to HTR-AHU-1A landed branch
+HTR-AHU-1A,GND-AHU-1A,high,ground,HTR-AHU-1A to GND-AHU-1A visible endpoint
+BUS-480-A,CB-111A,high,ac-power,CB-111A vertical feeder from BUS-480-A
+CB-111A,DS-111A,high,ac-power,CB-111A to DS-111A branch conductor
+DS-111A,MS-111A,high,ac-power,DS-111A to MS-111A branch conductor
+MS-111A,CIP-AIR-1A,high,ac-power,MS-111A to CIP-AIR-1A landed branch
+CIP-AIR-1A,TB-AIR-1A,high,control,CIP-AIR-1A to TB-AIR-1A visible endpoint
+BUS-480-A,CB-112A,high,ac-power,CB-112A vertical feeder from BUS-480-A
+CB-112A,FU-112A,high,ac-power,CB-112A to FU-112A branch conductor
+FU-112A,RELAY-K112A,high,ac-power,FU-112A to RELAY-K112A branch conductor
+RELAY-K112A,INET-RAD-1A,high,control,RELAY-K112A to INET-RAD-1A landed branch
+INET-RAD-1A,JB-RAD-1A,high,instrument,INET-RAD-1A to JB-RAD-1A visible endpoint
+BUS-480-B,CB-201B,high,ac-power,CB-201B vertical feeder from BUS-480-B
+CB-201B,DS-201B,high,ac-power,CB-201B to DS-201B branch conductor
+DS-201B,MS-201B,high,ac-power,DS-201B to MS-201B branch conductor
+MS-201B,PUMP-SLC-1B,high,ac-power,MS-201B to PUMP-SLC-1B landed branch
+PUMP-SLC-1B,TB-SLC-1B,high,control,PUMP-SLC-1B to TB-SLC-1B visible endpoint
+BUS-480-B,CB-202B,high,ac-power,CB-202B vertical feeder from BUS-480-B
+CB-202B,FU-202B,high,ac-power,CB-202B to FU-202B branch conductor
+FU-202B,MS-202B,high,ac-power,FU-202B to MS-202B branch conductor
+MS-202B,PUMP-COV-1B,high,ac-power,MS-202B to PUMP-COV-1B landed branch
+PUMP-COV-1B,GND-CCW-1B,high,ground,PUMP-COV-1B to GND-CCW-1B visible endpoint
+BUS-480-B,CB-203B,high,ac-power,CB-203B vertical feeder from BUS-480-B
+CB-203B,DS-203B,high,ac-power,CB-203B to DS-203B branch conductor
+DS-203B,MS-203B,high,ac-power,DS-203B to MS-203B branch conductor
+MS-203B,PUMP-RHR-1B,high,ac-power,MS-203B to PUMP-RHR-1B landed branch
+PUMP-RHR-1B,LS-RHR-1B,high,instrument,PUMP-RHR-1B to LS-RHR-1B visible endpoint
+BUS-480-B,CB-204B,high,ac-power,CB-204B vertical feeder from BUS-480-B
+CB-204B,FU-204B,high,ac-power,CB-204B to FU-204B branch conductor
+FU-204B,MS-204B,high,ac-power,FU-204B to MS-204B branch conductor
+MS-204B,PUMP-CS-1B,high,ac-power,MS-204B to PUMP-CS-1B landed branch
+PUMP-CS-1B,TB-CS-1B,high,control,PUMP-CS-1B to TB-CS-1B visible endpoint
+BUS-480-B,CB-205B,high,ac-power,CB-205B vertical feeder from BUS-480-B
+CB-205B,DS-205B,high,ac-power,CB-205B to DS-205B branch conductor
+DS-205B,MS-205B,high,ac-power,DS-205B to MS-205B branch conductor
+MS-205B,FAN-CRD-1B,high,ac-power,MS-205B to FAN-CRD-1B landed branch
+FAN-CRD-1B,GND-FAN-1B,high,ground,FAN-CRD-1B to GND-FAN-1B visible endpoint
+BUS-480-B,CB-206B,high,ac-power,CB-206B vertical feeder from BUS-480-B
+CB-206B,FU-206B,high,ac-power,CB-206B to FU-206B branch conductor
+FU-206B,RELAY-K206B,high,ac-power,FU-206B to RELAY-K206B branch conductor
+RELAY-K206B,MOV-RHCV-101B,high,control,RELAY-K206B to MOV-RHCV-101B landed branch
+MOV-RHCV-101B,LS-RHCV-101B,high,instrument,MOV-RHCV-101B to LS-RHCV-101B visible endpoint
+BUS-480-B,CB-207B,high,ac-power,CB-207B vertical feeder from BUS-480-B
+CB-207B,DS-207B,high,ac-power,CB-207B to DS-207B branch conductor
+DS-207B,RELAY-K207B,high,ac-power,DS-207B to RELAY-K207B branch conductor
+RELAY-K207B,MOV-RHCV-102B,high,control,RELAY-K207B to MOV-RHCV-102B landed branch
+MOV-RHCV-102B,LS-RHR-102B,high,instrument,MOV-RHCV-102B to LS-RHR-102B visible endpoint
+BUS-480-B,CB-208B,high,ac-power,CB-208B vertical feeder from BUS-480-B
+CB-208B,FU-208B,high,ac-power,CB-208B to FU-208B branch conductor
+FU-208B,MS-208B,high,ac-power,FU-208B to MS-208B branch conductor
+MS-208B,HTR-PZR-1B,high,ac-power,MS-208B to HTR-PZR-1B landed branch
+HTR-PZR-1B,TB-HTR-1B,high,control,HTR-PZR-1B to TB-HTR-1B visible endpoint
+BUS-480-B,CB-209B,high,ac-power,CB-209B vertical feeder from BUS-480-B
+CB-209B,DS-209B,high,ac-power,CB-209B to DS-209B branch conductor
+DS-209B,MS-209B,high,ac-power,DS-209B to MS-209B branch conductor
+MS-209B,PUMP-SW-1B,high,ac-power,MS-209B to PUMP-SW-1B landed branch
+PUMP-SW-1B,GND-SW-1B,high,ground,PUMP-SW-1B to GND-SW-1B visible endpoint
+BUS-480-B,CB-210B,high,ac-power,CB-210B vertical feeder from BUS-480-B
+CB-210B,FU-210B,high,ac-power,CB-210B to FU-210B branch conductor
+FU-210B,MS-210B,high,ac-power,FU-210B to MS-210B branch conductor
+MS-210B,HTR-AHU-1B,high,ac-power,MS-210B to HTR-AHU-1B landed branch
+HTR-AHU-1B,GND-AHU-1B,high,ground,HTR-AHU-1B to GND-AHU-1B visible endpoint
+BUS-480-B,CB-211B,high,ac-power,CB-211B vertical feeder from BUS-480-B
+CB-211B,DS-211B,high,ac-power,CB-211B to DS-211B branch conductor
+DS-211B,MS-211B,high,ac-power,DS-211B to MS-211B branch conductor
+MS-211B,CIP-AIR-1B,high,ac-power,MS-211B to CIP-AIR-1B landed branch
+CIP-AIR-1B,TB-AIR-1B,high,control,CIP-AIR-1B to TB-AIR-1B visible endpoint
+BUS-480-B,CB-212B,high,ac-power,CB-212B vertical feeder from BUS-480-B
+CB-212B,FU-212B,high,ac-power,CB-212B to FU-212B branch conductor
+FU-212B,RELAY-K212B,high,ac-power,FU-212B to RELAY-K212B branch conductor
+RELAY-K212B,INET-RAD-1B,high,control,RELAY-K212B to INET-RAD-1B landed branch
+INET-RAD-1B,JB-RAD-1B,high,instrument,INET-RAD-1B to JB-RAD-1B visible endpoint
+BUS-480-A,CB-DC-A,high,dc-power,A DC charger battery and 125V DC bus chain
+CB-DC-A,CHGR-125-A,high,dc-power,A DC charger battery and 125V DC bus chain
+CHGR-125-A,BAT-125-A,high,dc-power,A DC charger battery and 125V DC bus chain
+BAT-125-A,BUS-125DC-A,high,dc-power,A DC charger battery and 125V DC bus chain
+BUS-125DC-A,GND-DC-A,high,ground,125DC A bus ground landing
+BUS-125DC-A,INV-120-A,high,dc-power,A inverter and static switch feed RPS panel
+INV-120-A,BUS-120AC-A,high,dc-power,A inverter and static switch feed RPS panel
+BUS-120AC-A,STS-120-A,high,dc-power,A inverter and static switch feed RPS panel
+STS-120-A,PNL-RPS-A,high,dc-power,A inverter and static switch feed RPS panel
+PNL-RPS-A,TB-RPS-A,high,control,RPS A panel dashed lead to terminal block
+PNL-RPS-A,RELAY-UV-A1,high,control,RPS A panel dashed lead to UV relay A1
+PNL-RPS-A,RELAY-UV-A2,high,control,RPS A panel dashed lead to UV relay A2
+PNL-ESF-A,TB-ESF-A,high,control,ESF A panel dashed lead to terminal block
+PNL-ESF-A,RELAY-RPS-A,high,control,ESF A panel dashed lead to RPS relay
+PNL-ESF-A,RELAY-ESF-A,high,control,ESF A panel dashed lead to ESF relay
+BUS-125DC-A,CB-DCTIE-AB,high,dc-power,125DC normally open tie breaker between A and B
+CB-DCTIE-AB,BUS-125DC-B,high,dc-power,125DC normally open tie breaker between A and B
+BUS-480-B,CB-DC-B,high,dc-power,B DC charger battery and 125V DC bus chain
+CB-DC-B,CHGR-125-B,high,dc-power,B DC charger battery and 125V DC bus chain
+CHGR-125-B,BAT-125-B,high,dc-power,B DC charger battery and 125V DC bus chain
+BAT-125-B,BUS-125DC-B,high,dc-power,B DC charger battery and 125V DC bus chain
+BUS-125DC-B,GND-DC-B,high,ground,125DC B bus ground landing
+BUS-125DC-B,INV-120-B,high,dc-power,B inverter and static switch feed RPS panel
+INV-120-B,BUS-120AC-B,high,dc-power,B inverter and static switch feed RPS panel
+BUS-120AC-B,STS-120-B,high,dc-power,B inverter and static switch feed RPS panel
+STS-120-B,PNL-RPS-B,high,dc-power,B inverter and static switch feed RPS panel
+PNL-RPS-B,TB-RPS-B,high,control,RPS B panel dashed lead to terminal block
+PNL-RPS-B,RELAY-UV-B1,high,control,RPS B panel dashed lead to UV relay B1
+PNL-RPS-B,RELAY-UV-B2,high,control,RPS B panel dashed lead to UV relay B2
+PNL-ESF-B,TB-ESF-B,high,control,ESF B panel dashed lead to terminal block
+PNL-ESF-B,RELAY-RPS-B,high,control,ESF B panel dashed lead to RPS relay
+PNL-ESF-B,RELAY-ESF-B,high,control,ESF B panel dashed lead to ESF relay
+RELAY-ESF-B,REC-SOE-2,high,instrument,dotted signal from ESF B relay to SOE recorder 2
+PNL-DCS,REC-SOE-1,high,instrument,DCS panel dotted lead to SOE recorder 1
+PNL-ANN,ANN-ESF-A,high,instrument,annunciator panel dashed lead to A annunciator
+PNL-ANN,ANN-ESF-B,high,instrument,annunciator panel dashed lead to B annunciator
+TB-SLC-1A,PNL-RPS-A,low,control,wireway A dashed corridor candidate
+LS-RHR-1A,PNL-RPS-A,low,control,wireway A dashed corridor candidate
+TB-CS-1A,PNL-ESF-A,low,control,wireway A dashed corridor candidate
+TB-HTR-1A,PNL-ESF-A,low,control,wireway A dashed corridor candidate
+JB-RAD-1A,PNL-DCS,low,instrument,dotted radiation candidate toward DCS
+TB-SLC-1B,PNL-RPS-B,low,control,wireway B dashed corridor candidate
+LS-RHR-1B,PNL-RPS-B,low,control,wireway B dashed corridor candidate
+TB-CS-1B,PNL-ESF-B,low,control,wireway B dashed corridor candidate
+TB-HTR-1B,PNL-ESF-B,low,control,wireway B dashed corridor candidate
+JB-RAD-1B,REC-SOE-2,low,instrument,dotted radiation candidate toward SOE
+BUS-120AC-A,PNL-ESF-A,low,dc-power,possible A AC control bus feed to ESF panel
+BUS-120AC-B,PNL-ESF-B,low,dc-power,possible B AC control bus feed to ESF panel
+PNL-DCS,PNL-ANN,low,instrument,annunciation area shared corridor candidate

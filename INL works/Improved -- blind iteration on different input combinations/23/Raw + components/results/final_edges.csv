@@ -1,0 +1,207 @@
+source,target,kind,confidence,evidence
+GRID-161A,DS-101,solid_power,high,raw_21: direct heavy source segment.
+DS-101,CB-101,solid_power,high,raw_21: vertical source chain.
+CB-101,TR-UAT-1A,solid_power,high,raw_21: vertical source chain.
+TR-UAT-1A,CB-102,solid_power,high,raw_21: vertical source chain.
+CB-102,BUS-4160-A,bus_tap,high,raw_21: breaker terminal lands on BUS-4160-A black dot.
+BUS-4160-A,RELAY-87A,long_dashed_instrument,high,raw_21: dashed relay tap to bus dot.
+BUS-4160-A,RELAY-27A,long_dashed_instrument,high,raw_22: dashed relay tap to bus dot.
+BUS-4160-A,METER-A,long_dashed_instrument,high,raw_22: dashed meter tap to bus dot.
+BUS-4160-A,PT-41A,long_dashed_instrument,high,raw_22: dashed PT tap to bus dot.
+BUS-4160-A,GND-41A,ground,high,raw_22: ground lead from bus dot.
+BUS-4160-A,CB-ESF-A,bus_tap,high,raw_22: vertical tap from bus to breaker.
+CB-ESF-A,BUS-4160-ESF-A,bus_tap,high,raw_01: breaker lower terminal lands on ESF-A bus.
+BUS-4160-A,CB-TIE-41,solid_power,high,raw_23: A bus enters tie breaker.
+CB-TIE-41,BUS-4160-B,solid_power,high,raw_23: tie breaker exits to B bus.
+SYNC-41,CB-TIE-41,short_dashed_control,high,raw_23: dashed sync lead to tie breaker.
+GRID-161B,DS-102,solid_power,high,raw_24: direct heavy source segment.
+DS-102,CB-103,solid_power,high,raw_24: vertical source chain.
+CB-103,TR-UAT-1B,solid_power,high,raw_24: vertical source chain.
+TR-UAT-1B,CB-104,solid_power,high,raw_24: vertical source chain.
+CB-104,BUS-4160-B,bus_tap,high,raw_24: breaker terminal lands on BUS-4160-B black dot.
+BUS-4160-B,RELAY-87B,long_dashed_instrument,high,raw_23: dashed relay tap to bus dot.
+BUS-4160-B,RELAY-27B,long_dashed_instrument,high,raw_23/raw_24: dashed relay tap to bus dot.
+BUS-4160-B,METER-B,long_dashed_instrument,high,raw_24: dashed meter tap to bus dot.
+BUS-4160-B,PT-41B,long_dashed_instrument,high,raw_24: dashed PT tap to bus dot.
+BUS-4160-B,GND-41B,ground,high,raw_24: ground lead from bus dot.
+BUS-4160-B,CB-ESF-B,bus_tap,high,raw_24: vertical tap from bus to breaker.
+CB-ESF-B,BUS-4160-ESF-B,bus_tap,high,raw_24: breaker lower terminal lands on ESF-B bus.
+DG-1A,CB-DG1A,solid_power,medium,raw_01/raw_05: A diesel branch enters CB-DG1A; generator partly cropped.
+CB-DG1A,ATS-1A,solid_power,high,raw_05: direct ATS branch path.
+ATS-1A,BUS-4160-ESF-A,bus_tap,high,raw_05: ATS output lands on ESF-A bus dot.
+DG-1B,CB-DG1B,solid_power,high,raw_06: DG-1B directly wired to CB-DG1B.
+CB-DG1B,ATS-1B,solid_power,high,raw_06: direct ATS branch path.
+ATS-1B,BUS-4160-ESF-B,bus_tap,high,raw_06: ATS output lands on ESF-B bus dot.
+BUS-4160-A,CB-1A-FDR,solid_power,high,raw_07_upper_load_centers_full.png: routed incoming feeder from BUS-4160-A to 1A load-center incoming chain.
+CB-1A-FDR,DS-1A-ISO,solid_power,high,raw_25_close_load_1a_left_2x.png: vertical incoming chain.
+DS-1A-ISO,TR-1A,solid_power,high,raw_25_close_load_1a_left_2x.png: vertical incoming chain.
+TR-1A,CB-1A-MAIN,solid_power,high,raw_25_close_load_1a_left_2x.png: vertical incoming chain.
+BUS-480-1A,MCC-1A-1,bus_tap,high,raw_25_close_load_1a_left_2x.png: black-dot bus tap.
+MCC-1A-1,PUMP-P101,solid_power,high,raw_25_close_load_1a_left_2x.png: left branch from MCC-1A-1.
+MCC-1A-1,MOTOR-M102,solid_power,high,raw_25_close_load_1a_left_2x.png: right branch from MCC-1A-1.
+BUS-480-1A,MCC-1A-2,bus_tap,high,raw_25_close_load_1a_left_2x.png: black-dot bus tap.
+MCC-1A-2,VALVE-MOV103,solid_power,high,raw_25_close_load_1a_left_2x.png: left branch from MCC-1A-2.
+MCC-1A-2,FAN-F104,solid_power,high,raw_25_close_load_1a_left_2x.png: right branch from MCC-1A-2.
+BUS-480-1A,MCC-1A-3,bus_tap,high,raw_26_close_load_1a_right_2x.png: black-dot bus tap.
+MCC-1A-3,HTR-H105,solid_power,medium,raw_26_close_load_1a_right_2x.png: left lower branch from MCC-1A-3 to heater symbol.
+MCC-1A-3,VALVE-XV106,solid_power,high,raw_26_close_load_1a_right_2x.png: right lower branch from MCC-1A-3 to XV valve.
+BUS-480-1A,PNL-1A,bus_tap,high,raw_26_close_load_1a_right_2x.png: panel/plus symbol has bus tap.
+PNL-1A,JB-1A-1,short_dashed_control,medium,raw_26_close_load_1a_right_2x.png: dashed/control run from panel region toward junction block.
+VALVE-XV106,JB-1A-1,other,high,raw_26_close_load_1a_right_2x.png: XV valve directly abuts junction block.
+VALVE-XV106,RELAY-K11,short_dashed_control,medium,raw_26_close_load_1a_right_2x.png: dashed loop from valve area to first relay.
+JB-1A-1,RELAY-K11,short_dashed_control,medium,raw_26_close_load_1a_right_2x.png: dashed loop from junction block to first relay.
+RELAY-K11,RELAY-K12,short_dashed_control,high,raw_26_close_load_1a_right_2x.png: lower control line between relays.
+BUS-480-1A,INST-1A,long_dashed_instrument,high,raw_26_close_load_1a_right_2x.png: dashed instrument tap from bus.
+BUS-480-1A,GND-1A,ground,high,raw_26_close_load_1a_right_2x.png: ground tap from bus dot.
+BUS-4160-ESF-A,CB-1C-FDR,solid_power,medium,raw_07_upper_load_centers_full.png: routed incoming feeder from BUS-4160-ESF-A to 1C load-center incoming chain.
+CB-1C-FDR,DS-1C-ISO,solid_power,high,raw_27_close_load_1c_left_2x.png: vertical incoming chain.
+DS-1C-ISO,TR-1C,solid_power,high,raw_27_close_load_1c_left_2x.png: vertical incoming chain.
+TR-1C,CB-1C-MAIN,solid_power,high,raw_27_close_load_1c_left_2x.png: vertical incoming chain.
+BUS-480-1C,MCC-1C-1,bus_tap,high,raw_27_close_load_1c_left_2x.png: black-dot bus tap.
+MCC-1C-1,PUMP-P131,solid_power,high,raw_27_close_load_1c_left_2x.png: left branch from MCC-1C-1.
+MCC-1C-1,MOTOR-M132,solid_power,high,raw_27_close_load_1c_left_2x.png: right branch from MCC-1C-1.
+BUS-480-1C,MCC-1C-2,bus_tap,high,raw_27_close_load_1c_left_2x.png: black-dot bus tap.
+MCC-1C-2,VALVE-MOV133,solid_power,high,raw_27_close_load_1c_left_2x.png: left branch from MCC-1C-2.
+MCC-1C-2,FAN-F134,solid_power,high,raw_27_close_load_1c_left_2x.png: right branch from MCC-1C-2.
+BUS-480-1C,MCC-1C-3,bus_tap,high,raw_28_close_load_1c_right_2x.png: black-dot bus tap.
+MCC-1C-3,HTR-H135,solid_power,medium,raw_28_close_load_1c_right_2x.png: left lower branch from MCC-1C-3 to heater symbol.
+MCC-1C-3,VALVE-XV136,solid_power,high,raw_28_close_load_1c_right_2x.png: right lower branch from MCC-1C-3 to XV valve.
+BUS-480-1C,PNL-1C,bus_tap,high,raw_28_close_load_1c_right_2x.png: panel/plus symbol has bus tap.
+PNL-1C,JB-1C-1,short_dashed_control,medium,raw_28_close_load_1c_right_2x.png: dashed/control run from panel region toward junction block.
+VALVE-XV136,JB-1C-1,other,high,raw_28_close_load_1c_right_2x.png: XV valve directly abuts junction block.
+VALVE-XV136,RELAY-K21,short_dashed_control,medium,raw_28_close_load_1c_right_2x.png: dashed loop from valve area to first relay.
+JB-1C-1,RELAY-K21,short_dashed_control,medium,raw_28_close_load_1c_right_2x.png: dashed loop from junction block to first relay.
+RELAY-K21,RELAY-K22,short_dashed_control,high,raw_28_close_load_1c_right_2x.png: lower control line between relays.
+BUS-480-1C,INST-1C,long_dashed_instrument,high,raw_28_close_load_1c_right_2x.png: dashed instrument tap from bus.
+BUS-480-1C,GND-1C,ground,high,raw_28_close_load_1c_right_2x.png: ground tap from bus dot.
+BUS-4160-B,CB-1B-FDR,solid_power,high,raw_07_upper_load_centers_full.png: routed incoming feeder from BUS-4160-B to 1B load-center incoming chain.
+CB-1B-FDR,DS-1B-ISO,solid_power,high,raw_29_close_load_1b_left_2x.png: vertical incoming chain.
+DS-1B-ISO,TR-1B,solid_power,high,raw_29_close_load_1b_left_2x.png: vertical incoming chain.
+TR-1B,CB-1B-MAIN,solid_power,high,raw_29_close_load_1b_left_2x.png: vertical incoming chain.
+BUS-480-1B,MCC-1B-1,bus_tap,high,raw_29_close_load_1b_left_2x.png: black-dot bus tap.
+MCC-1B-1,PUMP-P161,solid_power,high,raw_29_close_load_1b_left_2x.png: left branch from MCC-1B-1.
+MCC-1B-1,MOTOR-M162,solid_power,high,raw_29_close_load_1b_left_2x.png: right branch from MCC-1B-1.
+BUS-480-1B,MCC-1B-2,bus_tap,high,raw_29_close_load_1b_left_2x.png: black-dot bus tap.
+MCC-1B-2,VALVE-MOV163,solid_power,high,raw_29_close_load_1b_left_2x.png: left branch from MCC-1B-2.
+MCC-1B-2,FAN-F164,solid_power,high,raw_29_close_load_1b_left_2x.png: right branch from MCC-1B-2.
+BUS-480-1B,MCC-1B-3,bus_tap,high,raw_30_close_load_1b_right_2x.png: black-dot bus tap.
+MCC-1B-3,HTR-H165,solid_power,medium,raw_30_close_load_1b_right_2x.png: left lower branch from MCC-1B-3 to heater symbol.
+MCC-1B-3,VALVE-XV166,solid_power,high,raw_30_close_load_1b_right_2x.png: right lower branch from MCC-1B-3 to XV valve.
+BUS-480-1B,PNL-1B,bus_tap,high,raw_30_close_load_1b_right_2x.png: panel/plus symbol has bus tap.
+PNL-1B,JB-1B-1,short_dashed_control,medium,raw_30_close_load_1b_right_2x.png: dashed/control run from panel region toward junction block.
+VALVE-XV166,JB-1B-1,other,high,raw_30_close_load_1b_right_2x.png: XV valve directly abuts junction block.
+VALVE-XV166,RELAY-K31,short_dashed_control,medium,raw_30_close_load_1b_right_2x.png: dashed loop from valve area to first relay.
+JB-1B-1,RELAY-K31,short_dashed_control,medium,raw_30_close_load_1b_right_2x.png: dashed loop from junction block to first relay.
+RELAY-K31,RELAY-K32,short_dashed_control,high,raw_30_close_load_1b_right_2x.png: lower control line between relays.
+BUS-480-1B,INST-1B,long_dashed_instrument,high,raw_30_close_load_1b_right_2x.png: dashed instrument tap from bus.
+BUS-480-1B,GND-1B,ground,high,raw_30_close_load_1b_right_2x.png: ground tap from bus dot.
+BUS-4160-ESF-A,CB-2A-FDR,solid_power,medium,raw_11_lower_load_centers_full.png: routed incoming feeder from BUS-4160-ESF-A to 2A load-center incoming chain.
+CB-2A-FDR,DS-2A-ISO,solid_power,high,raw_31_close_load_2a_left_2x.png: vertical incoming chain.
+DS-2A-ISO,TR-2A,solid_power,high,raw_31_close_load_2a_left_2x.png: vertical incoming chain.
+TR-2A,CB-2A-MAIN,solid_power,high,raw_31_close_load_2a_left_2x.png: vertical incoming chain.
+BUS-480-2A,MCC-2A-1,bus_tap,high,raw_31_close_load_2a_left_2x.png: black-dot bus tap.
+MCC-2A-1,PUMP-P201,solid_power,high,raw_31_close_load_2a_left_2x.png: left branch from MCC-2A-1.
+MCC-2A-1,MOTOR-M202,solid_power,high,raw_31_close_load_2a_left_2x.png: right branch from MCC-2A-1.
+BUS-480-2A,MCC-2A-2,bus_tap,high,raw_31_close_load_2a_left_2x.png: black-dot bus tap.
+MCC-2A-2,VALVE-MOV203,solid_power,high,raw_31_close_load_2a_left_2x.png: left branch from MCC-2A-2.
+MCC-2A-2,FAN-F204,solid_power,high,raw_31_close_load_2a_left_2x.png: right branch from MCC-2A-2.
+BUS-480-2A,MCC-2A-3,bus_tap,high,raw_32_close_load_2a_right_2x.png: black-dot bus tap.
+MCC-2A-3,HTR-H205,solid_power,medium,raw_32_close_load_2a_right_2x.png: left lower branch from MCC-2A-3 to heater symbol.
+MCC-2A-3,VALVE-XV206,solid_power,high,raw_32_close_load_2a_right_2x.png: right lower branch from MCC-2A-3 to XV valve.
+BUS-480-2A,PNL-2A,bus_tap,high,raw_32_close_load_2a_right_2x.png: panel/plus symbol has bus tap.
+PNL-2A,JB-2A-1,short_dashed_control,medium,raw_32_close_load_2a_right_2x.png: dashed/control run from panel region toward junction block.
+VALVE-XV206,JB-2A-1,other,high,raw_32_close_load_2a_right_2x.png: XV valve directly abuts junction block.
+VALVE-XV206,RELAY-K41,short_dashed_control,medium,raw_32_close_load_2a_right_2x.png: dashed loop from valve area to first relay.
+JB-2A-1,RELAY-K41,short_dashed_control,medium,raw_32_close_load_2a_right_2x.png: dashed loop from junction block to first relay.
+RELAY-K41,RELAY-K42,short_dashed_control,high,raw_32_close_load_2a_right_2x.png: lower control line between relays.
+BUS-480-2A,INST-2A,long_dashed_instrument,high,raw_32_close_load_2a_right_2x.png: dashed instrument tap from bus.
+BUS-480-2A,GND-2A,ground,high,raw_32_close_load_2a_right_2x.png: ground tap from bus dot.
+BUS-4160-ESF-A,CB-2C-FDR,solid_power,medium,raw_11_lower_load_centers_full.png: routed incoming feeder from BUS-4160-ESF-A to 2C load-center incoming chain.
+CB-2C-FDR,DS-2C-ISO,solid_power,high,raw_33_close_load_2c_left_2x.png: vertical incoming chain.
+DS-2C-ISO,TR-2C,solid_power,high,raw_33_close_load_2c_left_2x.png: vertical incoming chain.
+TR-2C,CB-2C-MAIN,solid_power,high,raw_33_close_load_2c_left_2x.png: vertical incoming chain.
+BUS-480-2C,MCC-2C-1,bus_tap,high,raw_33_close_load_2c_left_2x.png: black-dot bus tap.
+MCC-2C-1,PUMP-P231,solid_power,high,raw_33_close_load_2c_left_2x.png: left branch from MCC-2C-1.
+MCC-2C-1,MOTOR-M232,solid_power,high,raw_33_close_load_2c_left_2x.png: right branch from MCC-2C-1.
+BUS-480-2C,MCC-2C-2,bus_tap,high,raw_33_close_load_2c_left_2x.png: black-dot bus tap.
+MCC-2C-2,VALVE-MOV233,solid_power,high,raw_33_close_load_2c_left_2x.png: left branch from MCC-2C-2.
+MCC-2C-2,FAN-F234,solid_power,high,raw_33_close_load_2c_left_2x.png: right branch from MCC-2C-2.
+BUS-480-2C,MCC-2C-3,bus_tap,high,raw_34_close_load_2c_right_2x.png: black-dot bus tap.
+MCC-2C-3,HTR-H235,solid_power,medium,raw_34_close_load_2c_right_2x.png: left lower branch from MCC-2C-3 to heater symbol.
+MCC-2C-3,VALVE-XV236,solid_power,high,raw_34_close_load_2c_right_2x.png: right lower branch from MCC-2C-3 to XV valve.
+BUS-480-2C,PNL-2C,bus_tap,high,raw_34_close_load_2c_right_2x.png: panel/plus symbol has bus tap.
+PNL-2C,JB-2C-1,short_dashed_control,medium,raw_34_close_load_2c_right_2x.png: dashed/control run from panel region toward junction block.
+VALVE-XV236,JB-2C-1,other,high,raw_34_close_load_2c_right_2x.png: XV valve directly abuts junction block.
+VALVE-XV236,RELAY-K51,short_dashed_control,medium,raw_34_close_load_2c_right_2x.png: dashed loop from valve area to first relay.
+JB-2C-1,RELAY-K51,short_dashed_control,medium,raw_34_close_load_2c_right_2x.png: dashed loop from junction block to first relay.
+RELAY-K51,RELAY-K52,short_dashed_control,high,raw_34_close_load_2c_right_2x.png: lower control line between relays.
+BUS-480-2C,INST-2C,long_dashed_instrument,high,raw_34_close_load_2c_right_2x.png: dashed instrument tap from bus.
+BUS-480-2C,GND-2C,ground,high,raw_34_close_load_2c_right_2x.png: ground tap from bus dot.
+BUS-4160-ESF-B,CB-2B-FDR,solid_power,medium,raw_11_lower_load_centers_full.png: routed incoming feeder from BUS-4160-ESF-B to 2B load-center incoming chain.
+CB-2B-FDR,DS-2B-ISO,solid_power,high,raw_35_close_load_2b_left_2x.png: vertical incoming chain.
+DS-2B-ISO,TR-2B,solid_power,high,raw_35_close_load_2b_left_2x.png: vertical incoming chain.
+TR-2B,CB-2B-MAIN,solid_power,high,raw_35_close_load_2b_left_2x.png: vertical incoming chain.
+BUS-480-2B,MCC-2B-1,bus_tap,high,raw_35_close_load_2b_left_2x.png: black-dot bus tap.
+MCC-2B-1,PUMP-P261,solid_power,high,raw_35_close_load_2b_left_2x.png: left branch from MCC-2B-1.
+MCC-2B-1,MOTOR-M262,solid_power,high,raw_35_close_load_2b_left_2x.png: right branch from MCC-2B-1.
+BUS-480-2B,MCC-2B-2,bus_tap,high,raw_35_close_load_2b_left_2x.png: black-dot bus tap.
+MCC-2B-2,VALVE-MOV263,solid_power,high,raw_35_close_load_2b_left_2x.png: left branch from MCC-2B-2.
+MCC-2B-2,FAN-F264,solid_power,high,raw_35_close_load_2b_left_2x.png: right branch from MCC-2B-2.
+BUS-480-2B,MCC-2B-3,bus_tap,high,raw_36_close_load_2b_right_2x.png: black-dot bus tap.
+MCC-2B-3,HTR-H265,solid_power,medium,raw_36_close_load_2b_right_2x.png: left lower branch from MCC-2B-3 to heater symbol.
+MCC-2B-3,VALVE-XV266,solid_power,high,raw_36_close_load_2b_right_2x.png: right lower branch from MCC-2B-3 to XV valve.
+BUS-480-2B,PNL-2B,bus_tap,high,raw_36_close_load_2b_right_2x.png: panel/plus symbol has bus tap.
+PNL-2B,JB-2B-1,short_dashed_control,medium,raw_36_close_load_2b_right_2x.png: dashed/control run from panel region toward junction block.
+VALVE-XV266,JB-2B-1,other,high,raw_36_close_load_2b_right_2x.png: XV valve directly abuts junction block.
+VALVE-XV266,RELAY-K61,short_dashed_control,medium,raw_36_close_load_2b_right_2x.png: dashed loop from valve area to first relay.
+JB-2B-1,RELAY-K61,short_dashed_control,medium,raw_36_close_load_2b_right_2x.png: dashed loop from junction block to first relay.
+RELAY-K61,RELAY-K62,short_dashed_control,high,raw_36_close_load_2b_right_2x.png: lower control line between relays.
+BUS-480-2B,INST-2B,long_dashed_instrument,high,raw_36_close_load_2b_right_2x.png: dashed instrument tap from bus.
+BUS-480-2B,GND-2B,ground,high,raw_36_close_load_2b_right_2x.png: ground tap from bus dot.
+CB-DC-A,RECT-125A,solid_power,high,raw_37: DC input breaker wired to rectifier.
+RECT-125A,BUS-125DC-A,bus_tap,high,raw_37: rectifier taps BUS-125DC-A.
+BAT-125A,BUS-125DC-A,bus_tap,high,raw_37: battery tap to bus.
+CHGR-AUX-A,BUS-125DC-A,bus_tap,high,raw_37: charger tap to bus.
+METER-DC-A,BUS-125DC-A,long_dashed_instrument,high,raw_37: dashed meter tap.
+BUS-125DC-A,GND-DC-A,ground,high,raw_37: ground tap.
+BUS-125DC-A,CB-DCTIE,solid_power,high,raw_15/raw_38: A DC bus enters tie breaker.
+CB-DCTIE,BUS-125DC-B,solid_power,high,raw_38: tie breaker exits to B DC bus.
+BUS-125DC-A,INV-1A,bus_tap,high,raw_37: inverter tap from bus.
+INV-1A,UPS-1A,solid_power,high,raw_37: direct inverter to UPS segment.
+UPS-1A,CB-UPS-A,solid_power,high,raw_37/raw_39: UPS output to breaker.
+CB-UPS-A,BUS-120AC-A,bus_tap,high,raw_37/raw_39: breaker lands on AC bus dot.
+BUS-120AC-A,FUSE-FU-A,bus_tap,high,raw_37: solid fuse branch from AC bus.
+FUSE-FU-A,RELAY-KA1,short_dashed_control,medium,raw_37: fused branch adjacent to dashed relay string.
+RELAY-KA1,RELAY-KA2,short_dashed_control,high,raw_37: dashed relay-to-relay segment.
+RELAY-KA2,ANN-A,short_dashed_control,medium,raw_37: dashed control line continues toward annunciator.
+ANN-A,REC-SER-A,short_dashed_control,high,raw_37: dashed conductors between annunciator and recorder.
+REC-SER-A,PNL-RPS-A,long_dashed_instrument,high,raw_37: multi-line dashed bundle enters RPS panel.
+BUS-120AC-A,PNL-RPS-A,bus_tap,high,raw_37: solid tap from AC bus to RPS panel.
+PNL-RPS-A,INST-NIS-A,long_dashed_instrument,medium,raw_37/raw_39: dashed instrument outline from RPS region.
+PNL-RPS-A,PNL-DCS-A,short_dashed_control,high,raw_37: dashed vertical RPS-to-DCS link.
+PNL-DCS-A,JB-CTRL-A,short_dashed_control,high,raw_37/raw_39: dashed DCS-to-control junction link.
+BUS-125DC-A,DC-DC-1,solid_power,medium,raw_37/raw_39: routed DC feed into converter upper terminal.
+DC-DC-1,BUS-24DC-C,bus_tap,high,raw_38/raw_39: converter lower terminal lands on 24 VDC bus.
+BAT-24C,BUS-24DC-C,bus_tap,high,raw_39: battery symbol on 24 VDC bus.
+BUS-24DC-C,PNL-RADMON,bus_tap,high,raw_39: vertical tap to RADMON panel.
+PNL-RADMON,RELAY-KTIE,short_dashed_control,high,raw_39: dashed panel-to-relay segment.
+CB-DC-B,RECT-125B,solid_power,high,raw_38: DC input breaker wired to rectifier.
+RECT-125B,BUS-125DC-B,bus_tap,high,raw_38: rectifier taps BUS-125DC-B.
+BAT-125B,BUS-125DC-B,bus_tap,high,raw_38: battery tap to bus.
+CHGR-AUX-B,BUS-125DC-B,bus_tap,high,raw_38: charger tap to bus.
+METER-DC-B,BUS-125DC-B,long_dashed_instrument,high,raw_38: dashed meter tap.
+BUS-125DC-B,GND-DC-B,ground,high,raw_38: ground tap.
+BUS-125DC-B,INV-1B,bus_tap,high,raw_38: inverter tap from bus.
+INV-1B,UPS-1B,solid_power,high,raw_38: direct inverter to UPS segment.
+UPS-1B,CB-UPS-B,solid_power,high,raw_38: UPS output to breaker.
+CB-UPS-B,BUS-120AC-B,bus_tap,high,raw_38: breaker lands on AC bus dot.
+BUS-120AC-B,FUSE-FU-B,bus_tap,high,raw_38/raw_39: solid fuse branch from AC bus.
+FUSE-FU-B,RELAY-KB1,short_dashed_control,medium,raw_38/raw_39: fused branch adjacent to dashed relay string.
+RELAY-KB1,RELAY-KB2,short_dashed_control,high,raw_39: dashed relay-to-relay segment.
+RELAY-KB2,ANN-B,short_dashed_control,medium,raw_38: dashed control line continues toward annunciator.
+ANN-B,REC-SER-B,short_dashed_control,high,raw_38: dashed conductors between annunciator and recorder.
+REC-SER-B,PNL-RPS-B,long_dashed_instrument,high,raw_38: multi-line dashed bundle enters RPS panel.
+BUS-120AC-B,PNL-RPS-B,bus_tap,high,raw_38: solid tap from AC bus to RPS panel.
+PNL-RPS-B,INST-NIS-B,long_dashed_instrument,medium,raw_38: dashed instrument outline from RPS region.
+PNL-RPS-B,PNL-DCS-B,short_dashed_control,high,raw_38: dashed vertical RPS-to-DCS link.
+PNL-DCS-B,JB-CTRL-B,short_dashed_control,high,raw_38: dashed DCS-to-control junction link.

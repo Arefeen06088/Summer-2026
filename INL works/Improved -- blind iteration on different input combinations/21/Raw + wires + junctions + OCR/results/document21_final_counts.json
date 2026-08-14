@@ -1,0 +1,52 @@
+{
+  "document": 21,
+  "edge_total": 208,
+  "edge_counts_by_edge_kind": {
+    "control_interlock": 60,
+    "ground": 6,
+    "instrument_signal": 15,
+    "normally_open_tie": 1,
+    "power_feeder": 126
+  },
+  "edge_counts_by_confidence": {
+    "high": 186,
+    "low": 2,
+    "medium": 20
+  },
+  "edge_counts_by_edge_kind_and_confidence": {
+    "control_interlock": {
+      "high": 50,
+      "low": 2,
+      "medium": 8
+    },
+    "ground": {
+      "high": 6
+    },
+    "instrument_signal": {
+      "high": 15
+    },
+    "normally_open_tie": {
+      "medium": 1
+    },
+    "power_feeder": {
+      "high": 115,
+      "medium": 11
+    }
+  },
+  "node_record_total": 30,
+  "node_decision_counts": {
+    "add_logical_bus": 14,
+    "add_logical_node": 1,
+    "add_physical_component": 3,
+    "reject_artifact": 10,
+    "reject_connection": 1,
+    "uncertain_not_promoted": 1
+  },
+  "output_files": [
+    "document21_edge_list.csv",
+    "document21_node_additions_corrections.csv",
+    "document21_uncertain_rejected_notes.md",
+    "document21_final_counts.json"
+  ],
+  "scope_note": "Used only the allowed document 21 raw schematic, listed overlays/CSVs, and precision_review_crops; no Ground Truth/evaluator/previous-output files and no off-the-shelf OCR."
+}

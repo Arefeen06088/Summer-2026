@@ -1,0 +1,35 @@
+Connectivity matrix validation summary - Document 25 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\25\synthetic_npp_connectivity_matrix_revised_v4.csv
+GT after normalization: 208 undirected edges across 200 component names.
+
+Token usage:
+Token source files: document25_token_usage_estimates.csv; document25_token_usage_totals.csv.
+Document total token estimate: low=134680, expected=265770, high=561414.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=194, FP=11, FN=14, Precision=0.946341, Recall=0.932692, F1=0.939467.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names.
+- Extracted components: 204; extra/non-GT names: 4; missing GT component names: 0.
+- False-positive extracted edge examples: 480V CHGR-A FEEDER -- CHGR-125-1A; CHGR-125-1B -- PNL-RPS-A; DS-4A01 -- TR-480-1A; DS-4B01 -- TR-480-1B; DS-4C01 -- TR-480-1C; MCC-A1 -- MCC-A2; MCC-B1 -- MCC-B2; MCC-C1 -- MCC-C2; ... (+3 more).
+- Missed GT edge examples: BUS-125DC-A -- INV-120-1B; BUS-125DC-B -- INV-120-1A; BUS-4160-A -- TR-480-1A; BUS-4160-B -- TR-480-1B; BUS-4160-C -- TR-480-1C; BUS-480-1A -- CHGR-125-1A; BUS-480-1A -- MCC-A2; BUS-480-1B -- CHGR-125-1B; ... (+6 more).
+- Extra/non-GT component examples: 480V CHGR-A FEEDER; 480V CHGR-B FEEDER; PNL A/B TIE; RPS TRIP BUS.
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=194, FP=0, FN=14, Precision=1.000000, Recall=0.932692, F1=0.965174.
+- If all missed GT edges were added, final performance would be TP=208, FP=11, FN=0, Precision=0.949772, Recall=1.000000, F1=0.974239.
+- If extra node PNL A/B TIE and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=194, FP=9, FN=14, Precision=0.955665, Recall=0.932692, F1=0.944039.
+- If extra node 480V CHGR-A FEEDER and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=194, FP=10, FN=14, Precision=0.950980, Recall=0.932692, F1=0.941748.
+- If extra node RPS TRIP BUS and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=194, FP=10, FN=14, Precision=0.950980, Recall=0.932692, F1=0.941748.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.939467.
+
+Round-specific notes:
+- Diego -- Round 1: TP=192, FP=19, FN=16, F1=0.916468; extra nodes=4, missing GT nodes=0. FP examples: 480V CHGR-A FEEDER -- CHGR-125-1A; 480V CHGR-B FEEDER -- CHGR-125-1B; CB-4A01 -- RPS TRIP BUS; CB-4B01 -- RPS TRIP BUS; ... (+15 more). FN examples: BUS-125DC-A -- INV-120-1B; BUS-125DC-B -- INV-120-1A; BUS-4160-A -- TR-480-1A; BUS-4160-B -- TR-480-1B; ... (+12 more).
+- Jennifer -- Round 2: TP=194, FP=11, FN=14, F1=0.939467; extra nodes=4, missing GT nodes=0. FP examples: 480V CHGR-A FEEDER -- CHGR-125-1A; CHGR-125-1B -- PNL-RPS-A; DS-4A01 -- TR-480-1A; DS-4B01 -- TR-480-1B; ... (+7 more). FN examples: BUS-125DC-A -- INV-120-1B; BUS-125DC-B -- INV-120-1A; BUS-4160-A -- TR-480-1A; BUS-4160-B -- TR-480-1B; ... (+10 more).
+- Diego -- Round 3: TP=194, FP=11, FN=14, F1=0.939467; extra nodes=4, missing GT nodes=0. FP examples: 480V CHGR-A FEEDER -- CHGR-125-1A; CHGR-125-1B -- PNL-RPS-A; DS-4A01 -- TR-480-1A; DS-4B01 -- TR-480-1B; ... (+7 more). FN examples: BUS-125DC-A -- INV-120-1B; BUS-125DC-B -- INV-120-1A; BUS-4160-A -- TR-480-1A; BUS-4160-B -- TR-480-1B; ... (+10 more).
+- Jennifer -- Round 4: TP=194, FP=11, FN=14, F1=0.939467; extra nodes=4, missing GT nodes=0. FP examples: 480V CHGR-A FEEDER -- CHGR-125-1A; CHGR-125-1B -- PNL-RPS-A; DS-4A01 -- TR-480-1A; DS-4B01 -- TR-480-1B; ... (+7 more). FN examples: BUS-125DC-A -- INV-120-1B; BUS-125DC-B -- INV-120-1A; BUS-4160-A -- TR-480-1A; BUS-4160-B -- TR-480-1B; ... (+10 more).
+- Final connectivity -- Final: TP=194, FP=11, FN=14, F1=0.939467; extra nodes=4, missing GT nodes=0. FP examples: 480V CHGR-A FEEDER -- CHGR-125-1A; CHGR-125-1B -- PNL-RPS-A; DS-4A01 -- TR-480-1A; DS-4B01 -- TR-480-1B; ... (+7 more). FN examples: BUS-125DC-A -- INV-120-1B; BUS-125DC-B -- INV-120-1A; BUS-4160-A -- TR-480-1A; BUS-4160-B -- TR-480-1B; ... (+10 more).

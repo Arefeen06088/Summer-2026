@@ -1,0 +1,49 @@
+{
+  "document": 17,
+  "resource_folder": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\17\\Raw + wires + junctions + OCR",
+  "generated_at_local_date": "2026-07-16",
+  "source_constraints": {
+    "used_only_allowed_resource_folder": true,
+    "used_ground_truth": false,
+    "used_evaluator_feedback": false,
+    "used_off_the_shelf_ocr": false
+  },
+  "node_additions_corrections": {
+    "total_rows": 13,
+    "by_action": {
+      "add_missing_busbar": 8,
+      "add_semantic_alias": 2,
+      "add_missing_interface": 1,
+      "add_missing_ground": 1,
+      "reject_artifact": 1
+    },
+    "by_confidence": {
+      "high": 7,
+      "medium": 6,
+      "low": 0
+    }
+  },
+  "edge_list": {
+    "total_rows": 223,
+    "by_kind": {
+      "power": 136,
+      "tie": 6,
+      "instrument_tap": 6,
+      "ground": 12,
+      "terminal_continuation": 14,
+      "control_signal": 43,
+      "control_power": 6
+    },
+    "by_confidence": {
+      "high": 157,
+      "medium": 34,
+      "low": 32
+    }
+  },
+  "artifact_files": [
+    "document17_node_additions_corrections.csv",
+    "document17_edge_list.csv",
+    "document17_uncertain_rejected_notes.md",
+    "document17_final_counts.json"
+  ]
+}

@@ -1,0 +1,211 @@
+source,target,confidence,line_type,evidence
+GEN-UT,CB-101,high,power,Top source upper branch
+CB-101,DS-101A,high,power,Top source upper chain
+DS-101A,TR-UAT1,high,power,Top source upper chain
+TR-UAT1,CB-201A,high,power,Top source upper chain
+CB-201A,BUS-201A,high,power,Top source to 4.16 kV class 1E bus A
+GEN-UT,CB-102,high,power,Top source lower branch
+CB-102,DS-101B,high,power,Top source lower chain
+DS-101B,TR-UAT2,high,power,Top source lower chain
+TR-UAT2,CB-201B,high,power,Top source lower chain
+CB-201B,BUS-201B,high,power,Top source to 4.16 kV class 1E bus B
+BUS-101,CB-103,high,power,13.8 kV aux bus feeder
+CB-103,DS-102A,high,power,Aux bus feeder
+DS-102A,TR-SU1,high,power,Aux bus feeder
+TR-SU1,CB-202A,high,power,Aux bus feeder
+CB-202A,BUS-202A,high,power,Startup transformer to non-1E bus A
+BUS-102,CB-104,high,power,13.8 kV preferred bus feeder
+CB-104,DS-102B,high,power,Preferred bus feeder
+DS-102B,TR-SU2,high,power,Preferred bus feeder
+TR-SU2,CB-202B,high,power,Preferred bus feeder
+CB-202B,BUS-202B,high,power,Startup transformer to non-1E bus B
+BUS-201A,DS-201A,high,power,EDG-1A feeder tap
+DS-201A,CB-105,high,power,EDG-1A feeder
+CB-105,EDG-1A,high,power,EDG-1A feeder
+BUS-201B,CB-204A,high,power,EDG-1B bus-side breaker
+CB-204A,DS-201B,high,power,EDG-1B feeder
+DS-201B,CB-106,high,power,EDG-1B feeder
+CB-106,EDG-1B,high,power,EDG-1B feeder
+BUS-202A,CB-EDG2A-BUS-UNLABELED,low,power,Visible unlabeled breaker before DS-202A
+CB-EDG2A-BUS-UNLABELED,DS-202A,low,power,Visible unlabeled breaker before DS-202A
+DS-202A,CB-203A,high,power,EDG-2A feeder
+CB-203A,EDG-2A,high,power,EDG-2A feeder
+BUS-202B,DS-202B,high,power,EDG-2B feeder
+DS-202B,CB-203B,high,power,EDG-2B feeder
+CB-203B,EDG-2B,high,power,EDG-2B feeder
+BUS-201A,CB-301A,high,power,Drop to 480 V load center A1
+CB-301A,DS-301A,high,power,Drop to 480 V load center A1
+DS-301A,TR-SA,high,power,Drop to 480 V load center A1
+TR-SA,CB-501A,high,power,Transformer SA low side
+CB-501A,BUS-301A,high,power,480 V load center A1
+BUS-202A,CB-302A,high,power,Drop to 480 V MCC bus A2
+CB-302A,DS-302A,high,power,Drop to 480 V MCC bus A2
+DS-302A,TR-NA,high,power,Drop to 480 V MCC bus A2
+TR-NA,CB-502A,high,power,Transformer NA low side
+CB-502A,BUS-302A,high,power,480 V MCC bus A2
+BUS-201B,CB-301B,high,power,Drop to 480 V load center B1
+CB-301B,DS-301B,high,power,Drop to 480 V load center B1
+DS-301B,TR-SB,high,power,Drop to 480 V load center B1
+TR-SB,CB-501B,high,power,Transformer SB low side
+CB-501B,BUS-301B,high,power,480 V load center B1
+BUS-202B,CB-302B,high,power,Drop to 480 V MCC bus B2
+CB-302B,DS-302B,high,power,Drop to 480 V MCC bus B2
+DS-302B,TR-NB,high,power,Drop to 480 V MCC bus B2
+TR-NB,CB-502B,high,power,Transformer NB low side
+CB-502B,BUS-302B,high,power,480 V MCC bus B2
+BUS-301A,GND-1,high,ground,BUS-301A visible ground tap
+BUS-301A,CB-303A,high,power,BUS-301A feeder to MCC-1A
+CB-303A,MCC-1A,high,power,MCC-1A feeder
+MCC-1A,MOTOR-SI101A,high,power,MCC-1A visible load branch
+MCC-1A,MOTOR-CCW101A,high,power,MCC-1A visible load branch
+MCC-1A,VLV-8801A,high,power,MCC-1A visible load branch
+MCC-1A,PUMP-SI101A,high,power,MCC-1A visible load branch
+MCC-1A,PUMP-CCW101A,high,power,MCC-1A visible load branch
+BUS-301A,CB-304A,high,power,BUS-301A feeder to MCC-2A
+CB-304A,MCC-2A,high,power,MCC-2A feeder
+MCC-2A,MOTOR-AFW101A,high,power,MCC-2A visible load branch
+MCC-2A,MOTOR-RHR101A,high,power,MCC-2A visible load branch
+MCC-2A,VLV-8802A,high,power,MCC-2A visible load branch
+MCC-2A,PUMP-AFW101A,high,power,MCC-2A visible load branch
+MCC-2A,PUMP-RHR101A,high,power,MCC-2A visible load branch
+BUS-302A,CB-503A,high,power,BUS-302A feeder to MCC-3A
+CB-503A,MCC-3A,high,power,MCC-3A feeder
+MCC-3A,MOTOR-SW101A,high,power,MCC-3A visible load branch
+MCC-3A,MOTOR-CHG101A,high,power,MCC-3A visible load branch
+MCC-3A,MOTOR-FAN101A,high,power,MCC-3A visible load branch
+MCC-3A,PUMP-SW101A,high,power,MCC-3A visible load branch
+MCC-3A,PUMP-CHG101A,high,power,MCC-3A visible load branch
+MCC-3A,VLV-8901A,high,power,MCC-3A visible load branch
+BUS-301B,GND-2,high,ground,BUS-301B visible ground tap
+BUS-301B,CB-303B,high,power,BUS-301B feeder to MCC-1B
+CB-303B,MCC-1B,high,power,MCC-1B feeder
+MCC-1B,MOTOR-SI101B,high,power,MCC-1B visible load branch
+MCC-1B,MOTOR-CCW101B,high,power,MCC-1B visible load branch
+MCC-1B,VLV-8801B,high,power,MCC-1B visible load branch
+MCC-1B,PUMP-SI101B,high,power,MCC-1B visible load branch
+MCC-1B,PUMP-CCW101B,high,power,MCC-1B visible load branch
+BUS-301B,CB-304B,high,power,BUS-301B feeder to MCC-2B
+CB-304B,MCC-2B,high,power,MCC-2B feeder
+MCC-2B,MOTOR-AFW101B,high,power,MCC-2B visible load branch
+MCC-2B,MOTOR-RHR101B,high,power,MCC-2B visible load branch
+MCC-2B,VLV-8802B,high,power,MCC-2B visible load branch
+MCC-2B,PUMP-AFW101B,high,power,MCC-2B visible load branch
+MCC-2B,PUMP-RHR101B,high,power,MCC-2B visible load branch
+BUS-302B,CB-503B,high,power,BUS-302B feeder to MCC-3B
+CB-503B,MCC-3B,high,power,MCC-3B feeder
+MCC-3B,MOTOR-SW101B,high,power,MCC-3B visible load branch
+MCC-3B,MOTOR-CHG101B,high,power,MCC-3B visible load branch
+MCC-3B,MOTOR-FAN101B,high,power,MCC-3B visible load branch
+MCC-3B,PUMP-SW101B,high,power,MCC-3B visible load branch
+MCC-3B,PUMP-CHG101B,high,power,MCC-3B visible load branch
+MCC-3B,VLV-8901B,high,power,MCC-3B visible load branch
+MCC-3A,GND-5,high,ground,Ground symbol connects to MCC-3A right-side wiring
+MCC-3B,GND-6,high,ground,Ground symbol connects to MCC-3B right-side wiring
+BUS-301A,DS-401A,low,power,DC feeder continuation from train A section
+DS-401A,TR-DC-A,high,power,125 VDC supply A chain
+TR-DC-A,RECT-125A,high,power,125 VDC supply A chain
+RECT-125A,BUS-401A,high,power,Rectifier to 125 VDC bus A
+BUS-401A,BAT-1A,high,power,Battery tap on DC bus A
+BUS-401A,BAT-2A,high,power,Battery tap on DC bus A
+BUS-401A,GND-3,high,ground,Ground tap on DC bus A
+BUS-401A,INV-120A,high,power,DC bus A inverter feed
+INV-120A,BUS-501A,high,power,120 VAC inverter bus A feed
+BUS-401A,DS-401B,medium,power,Visible tap into B charger chain
+DS-401B,TR-DC-B,high,power,125 VDC supply B chain
+TR-DC-B,RECT-125B,high,power,125 VDC supply B chain
+RECT-125B,BUS-401B,high,power,Rectifier to 125 VDC bus B
+BUS-401B,BAT-1B,high,power,Battery tap on DC bus B
+BUS-401B,BAT-2B,high,power,Battery tap on DC bus B
+BUS-401B,GND-4,high,ground,Ground tap on DC bus B
+BUS-401B,INV-120B,high,power,DC bus B inverter feed
+INV-120B,BUS-501B,high,power,120 VAC inverter bus B feed
+BUS-302A,DS-402A,low,power,Lower inverter feeder from A section
+DS-402A,TR-INV-A,high,power,Inverter A chain
+TR-INV-A,INV-120C,high,power,Inverter A chain
+INV-120C,BUS-501A,medium,power,Long 120 VAC feed lands on inverter bus A
+BUS-401A,DS-402B,medium,power,DS-402B taps visible vertical trunk from DC bus A region
+DS-402B,TR-INV-B,high,power,Inverter B chain
+TR-INV-B,RECT-24C,high,power,Inverter B chain
+RECT-24C,BUS-401B,medium,power,RECT-24C output rises back to BUS-401B
+DS-401A,DS-402A,low,power,Diego high-recall shared trunk interpretation later removed by Jennifer
+DS-401B,DS-402B,low,power,Diego high-recall shared trunk interpretation later removed by Jennifer
+BAT-EDG-A,CP-EDG-A,low,dashed_control,Diego high-recall dashed continuation later removed by Jennifer
+BAT-EDG-B,CP-EDG-B,low,dashed_control,Diego high-recall dashed continuation later removed by Jennifer
+BUS-501A,CP-SI-A,high,dashed_control,CP-SI-A row tap from BUS-501A
+CP-SI-A,K101,high,dashed_control,CP-SI-A relay chain
+K101,K102,high,dashed_control,CP-SI-A relay chain
+K102,K103,high,dashed_control,CP-SI-A relay chain
+K103,JB-101,high,dashed_control,CP-SI-A chain to JB-101
+JB-101,PT101,high,dotted_signal,JB-101 instrument/signal leg
+PT101,PT102,high,dotted_signal,JB-101 instrument/signal leg
+BUS-501B,CP-SI-B,high,dashed_control,CP-SI-B row tap from BUS-501B
+CP-SI-B,K104,high,dashed_control,CP-SI-B relay chain
+K104,K105,high,dashed_control,CP-SI-B relay chain
+K105,K106,high,dashed_control,CP-SI-B relay chain
+K106,JB-102,high,dashed_control,CP-SI-B chain to JB-102
+JB-102,PT103,high,dotted_signal,JB-102 instrument/signal leg
+PT103,FT201,high,dotted_signal,JB-102 instrument/signal leg
+BUS-501A,CP-CCW-A,high,dashed_control,CP-CCW-A row tap from BUS-501A
+CP-CCW-A,K107,high,dashed_control,CP-CCW-A relay chain
+K107,K108,high,dashed_control,CP-CCW-A relay chain
+K108,K109,high,dashed_control,CP-CCW-A relay chain
+K109,JB-103,high,dashed_control,CP-CCW-A chain to JB-103
+JB-103,FT202,high,dotted_signal,JB-103 instrument/signal leg
+FT202,LT301,high,dotted_signal,JB-103 instrument/signal leg
+BUS-501B,CP-CCW-B,high,dashed_control,CP-CCW-B row tap from BUS-501B
+CP-CCW-B,K110,high,dashed_control,CP-CCW-B relay chain
+K110,K111,high,dashed_control,CP-CCW-B relay chain
+K111,K112,high,dashed_control,CP-CCW-B relay chain
+K112,JB-104,high,dashed_control,CP-CCW-B chain to JB-104
+JB-104,LT302,high,dotted_signal,JB-104 instrument/signal leg
+LT302,TT401,high,dotted_signal,JB-104 instrument/signal leg
+BUS-501A,CP-EDG-A,high,dashed_control,CP-EDG-A row tap from BUS-501A
+CP-EDG-A,K113,high,dashed_control,CP-EDG-A relay chain
+K113,K114,high,dashed_control,CP-EDG-A relay chain
+K114,K115,high,dashed_control,CP-EDG-A relay chain
+K115,JB-105,high,dashed_control,CP-EDG-A chain to JB-105
+JB-105,TT402,high,dotted_signal,JB-105 instrument/signal leg
+TT402,CT501,high,dotted_signal,JB-105 instrument/signal leg
+BUS-501B,CP-EDG-B,high,dashed_control,CP-EDG-B row tap from BUS-501B
+CP-EDG-B,K116,high,dashed_control,CP-EDG-B relay chain
+K116,K117,high,dashed_control,CP-EDG-B relay chain
+K117,K118,high,dashed_control,CP-EDG-B relay chain
+K118,JB-106,high,dashed_control,CP-EDG-B chain to JB-106
+JB-106,CT502,high,dotted_signal,JB-106 instrument/signal leg
+BUS-501A,RPS-A,high,dashed_control,RPS-A row tap from BUS-501A
+RPS-A,K119,high,dashed_control,RPS-A relay chain
+K119,K120,high,dashed_control,RPS-A relay chain
+K120,K121,high,dashed_control,RPS-A relay chain
+K121,JB-107,high,dashed_control,RPS-A chain to JB-107
+JB-107,VT601,high,dotted_signal,JB-107 instrument/signal leg
+BUS-501B,RPS-B,high,dashed_control,RPS-B row tap from BUS-501B
+RPS-B,K122,high,dashed_control,RPS-B relay chain
+K122,K123,high,dashed_control,RPS-B relay chain
+K123,K124,high,dashed_control,RPS-B relay chain
+K124,JB-108,high,dashed_control,RPS-B chain to JB-108
+JB-108,VT602,high,dotted_signal,JB-108 instrument/signal leg
+BUS-501A,ESFAS-A,high,dashed_control,ESFAS-A row tap from BUS-501A
+ESFAS-A,K125,high,dashed_control,ESFAS-A relay chain
+K125,K126,high,dashed_control,ESFAS-A relay chain
+K126,K127,high,dashed_control,ESFAS-A relay chain
+K127,JB-109,high,dashed_control,ESFAS-A chain to JB-109
+JB-109,ZS701,high,dotted_signal,JB-109 instrument/signal leg
+BUS-501B,ESFAS-B,high,dashed_control,ESFAS-B row tap from BUS-501B
+ESFAS-B,K128,high,dashed_control,ESFAS-B relay chain
+K128,K129,high,dashed_control,ESFAS-B relay chain
+K129,K130,high,dashed_control,ESFAS-B relay chain
+K130,JB-110,high,dashed_control,ESFAS-B chain to JB-110
+JB-110,ZS702,high,dotted_signal,JB-110 instrument/signal leg
+BUS-501A,CP-SWGR,medium,dashed_control,Upper ladder bus tap
+CP-SWGR,CP-SI-A,medium,dashed_control,Visible vertical dashed CP spine
+CP-SI-A,UVLS-A,medium,dashed_control,UVLS-A tap before K101
+UVLS-A,K101,medium,dashed_control,UVLS-A drops into SI-A relay row
+K101,UVLS-B,medium,dashed_control,UVLS-B tap between K101 and K102
+UVLS-B,K102,medium,dashed_control,UVLS-B drops into SI-A relay row
+CP-EDG-A,CP-EDG-B,medium,dashed_control,Visible vertical dashed CP spine
+CP-EDG-B,RPS-A,medium,dashed_control,Visible vertical dashed CP spine
+RPS-A,RPS-B,medium,dashed_control,Visible vertical dashed CP spine
+RPS-B,ESFAS-A,medium,dashed_control,Visible vertical dashed CP spine
+ESFAS-A,ESFAS-B,medium,dashed_control,Visible vertical dashed CP spine
+ESFAS-B,CP-CRD,medium,dashed_control,Visible vertical dashed CP spine
+BUS-501B,CP-CRD,medium,dashed_control,Lower ladder row tap

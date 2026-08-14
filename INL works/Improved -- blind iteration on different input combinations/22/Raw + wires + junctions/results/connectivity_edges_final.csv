@@ -1,0 +1,207 @@
+source,target,confidence,line_type,evidence
+GEN-G01,GSU-T01,medium,power,solid source detail line
+GSU-T01,SWYD-345,medium,power,solid high-voltage feeder
+SWYD-345,CB-13A1,medium,power,solid feeder to left aux breaker
+SWYD-345,CB-13B1,medium,power,solid feeder to right aux breaker
+CB-13A1,BUS-13A 13.8 KV AUX BUS A,high,power,vertical solid feeder with bus dot
+CB-13B1,BUS-13B 13.8 KV AUX BUS B,high,power,vertical solid feeder with bus dot
+BUS-13A 13.8 KV AUX BUS A,CB-13T,high,power,solid tie breaker landing
+CB-13T,BUS-13B 13.8 KV AUX BUS B,high,power,solid tie breaker landing
+BUS-13A 13.8 KV AUX BUS A,AUX-XFMR-1A,high,power,solid vertical branch with bus dot
+BUS-13A 13.8 KV AUX BUS A,AUX-XFMR-1B,high,power,solid vertical branch with bus dot
+BUS-13B 13.8 KV AUX BUS B,SAT-XFMR-1C,high,power,solid W-011 branch with bus dot
+BUS-13B 13.8 KV AUX BUS B,SAT-XFMR-1D,high,power,solid vertical branch with bus dot
+BUS-13A 13.8 KV AUX BUS A,RELAY-87U,medium,control,dashed C-031 tap from bus dot
+RELAY-87U,CB-4B-IN,high,control,dashed relay output visibly terminates at CB-4B-IN
+AUX-XFMR-1A,CB-4A-IN,high,power,solid transformer feeder
+CB-4A-IN,BUS-4160-A 4160V SAFETY BUS 1A,high,power,solid vertical feeder with bus dot
+AUX-XFMR-1B,CB-4B-IN,high,power,solid transformer feeder
+CB-4B-IN,BUS-4160-B 4160V SAFETY BUS 1B,high,power,solid vertical feeder with bus dot
+SAT-XFMR-1C,CB-4C-IN,high,power,solid transformer feeder
+CB-4C-IN,BUS-4160-C 4160V SAFETY BUS 1C,high,power,solid vertical feeder with bus dot
+SAT-XFMR-1D,CB-4D-IN,high,power,solid transformer feeder
+CB-4D-IN,BUS-4160-D 4160V SAFETY BUS 1D,high,power,solid vertical feeder with bus dot
+BUS-4160-A 4160V SAFETY BUS 1A,CB-4AB-TIE,high,power,solid tie landing at A bus
+CB-4AB-TIE,BUS-4160-B 4160V SAFETY BUS 1B,high,power,solid tie landing at B bus
+BUS-4160-C 4160V SAFETY BUS 1C,CB-4CD-TIE,high,power,solid tie landing at C bus
+CB-4CD-TIE,BUS-4160-D 4160V SAFETY BUS 1D,high,power,solid tie landing at D bus
+BUS-4160-A 4160V SAFETY BUS 1A,SYNC-PNL-1,medium,control,dashed C-030 branch from bus dot
+SYNC-PNL-1,CB-DG-A,medium,control,dashed sync lead to DG breaker
+DG-1A,CB-DG-A,high,power,solid DG feeder
+CB-DG-A,BUS-4160-A 4160V SAFETY BUS 1A,high,power,solid branch landing at 4160V bus dot
+BUS-4160-A 4160V SAFETY BUS 1A,CB-LC-A,high,power,solid load-center feeder
+CB-LC-A,TR-LC-A,high,power,solid feeder through load-center breaker
+TR-LC-A,BUS-480-A 480V LOAD CENTER A,high,power,solid transformer secondary to 480V bus dot
+BUS-480-A 480V LOAD CENTER A,INST-PT-A,high,instrument,dashed PT tap at 480V bus end
+BUS-480-A 480V LOAD CENTER A,CB-MCC-AA,high,power,solid MCC feeder branch at bus dot
+CB-MCC-AA,MCC-AA,high,power,solid feeder to first MCC
+MCC-AA,INST-CT-A,medium,instrument,dashed CT tap visibly terminates at CT symbol
+MCC-AA,CB-RHR-A,high,power,solid branch from first MCC
+CB-RHR-A,PUMP-RHR-A,high,power,solid feeder to RHR pump
+MCC-AA,CB-SI-A,high,power,solid branch from first MCC
+CB-SI-A,PUMP-SI-A,high,power,solid feeder to SI pump
+MCC-AA,CB-CCW-A,high,power,solid branch from first MCC
+CB-CCW-A,PUMP-CCW-A,high,power,solid feeder to CCW pump
+MCC-AA,CB-FAN-A,high,power,solid branch from first MCC
+CB-FAN-A,FAN-CR-A,high,power,solid feeder to fan motor
+CB-RHR-A,CB-SI-A,medium,control,dashed interlock segment visibly lands near breaker pair
+BUS-480-A 480V LOAD CENTER A,CB-MCC-AB,high,power,solid MCC feeder branch at bus dot
+CB-MCC-AB,MCC-AB,high,power,solid feeder to second MCC
+MCC-AB,CB-CH-A,high,power,solid branch from second MCC
+CB-CH-A,CHILLER-A,high,power,solid feeder to chiller motor
+MCC-AB,CB-VLV1-A,high,power,solid branch from second MCC
+CB-VLV1-A,MOV-HV1-A,high,power,solid feeder to motor-operated valve
+MCC-AB,CB-VLV2-A,high,power,solid branch from second MCC
+CB-VLV2-A,MOV-HV2-A,high,power,solid feeder to motor-operated valve
+MCC-AB,CB-SPARE-A,high,power,solid branch from second MCC to spare breaker
+CB-SPARE-A,SPARE-LOAD-A,high,power,solid feeder to spare load
+BUS-480-A 480V LOAD CENTER A,XFMR-120-A,high,power,solid lower branch to 120V transformer
+XFMR-120-A,PNL-120-A,high,power,solid transformer output to panel
+BUS-480-A 480V LOAD CENTER A,GND-A,medium,power,solid grounded branch in train area
+PNL-120-A,RELAY-KA1,high,control,dashed branch terminates at relay circle
+PNL-120-A,RELAY-KA2,high,control,dashed branch terminates at relay circle
+PNL-120-A,JB-A1,high,control,dashed run from panel to junction box
+JB-A1,TERM-A,high,control,dashed run from junction box to terminal block
+DG-1B,CB-DG-B,high,power,solid DG feeder
+CB-DG-B,BUS-4160-B 4160V SAFETY BUS 1B,high,power,solid branch landing at 4160V bus dot
+BUS-4160-B 4160V SAFETY BUS 1B,CB-LC-B,high,power,solid load-center feeder
+CB-LC-B,TR-LC-B,high,power,solid feeder through load-center breaker
+TR-LC-B,BUS-480-B 480V LOAD CENTER B,high,power,solid transformer secondary to 480V bus dot
+BUS-480-B 480V LOAD CENTER B,INST-PT-B,high,instrument,dashed PT tap at 480V bus end
+BUS-480-B 480V LOAD CENTER B,CB-MCC-BA,high,power,solid MCC feeder branch at bus dot
+CB-MCC-BA,MCC-BA,high,power,solid feeder to first MCC
+MCC-BA,INST-CT-B,medium,instrument,dashed CT tap visibly terminates at CT symbol
+MCC-BA,CB-RHR-B,high,power,solid branch from first MCC
+CB-RHR-B,PUMP-RHR-B,high,power,solid feeder to RHR pump
+MCC-BA,CB-SI-B,high,power,solid branch from first MCC
+CB-SI-B,PUMP-SI-B,high,power,solid feeder to SI pump
+MCC-BA,CB-CCW-B,high,power,solid branch from first MCC
+CB-CCW-B,PUMP-CCW-B,high,power,solid feeder to CCW pump
+MCC-BA,CB-FAN-B,high,power,solid branch from first MCC
+CB-FAN-B,FAN-CR-B,high,power,solid feeder to fan motor
+CB-RHR-B,CB-SI-B,medium,control,dashed interlock segment visibly lands near breaker pair
+BUS-480-B 480V LOAD CENTER B,CB-MCC-BB,high,power,solid MCC feeder branch at bus dot
+CB-MCC-BB,MCC-BB,high,power,solid feeder to second MCC
+MCC-BB,CB-CH-B,high,power,solid branch from second MCC
+CB-CH-B,CHILLER-B,high,power,solid feeder to chiller motor
+MCC-BB,CB-VLV1-B,high,power,solid branch from second MCC
+CB-VLV1-B,MOV-HV1-B,high,power,solid feeder to motor-operated valve
+MCC-BB,CB-VLV2-B,high,power,solid branch from second MCC
+CB-VLV2-B,MOV-HV2-B,high,power,solid feeder to motor-operated valve
+MCC-BB,CB-SPARE-B,high,power,solid branch from second MCC to spare breaker
+CB-SPARE-B,SPARE-LOAD-B,high,power,solid feeder to spare load
+BUS-480-B 480V LOAD CENTER B,XFMR-120-B,high,power,solid lower branch to 120V transformer
+XFMR-120-B,PNL-120-B,high,power,solid transformer output to panel
+BUS-480-B 480V LOAD CENTER B,GND-B,medium,power,solid grounded branch in train area
+PNL-120-B,RELAY-KB1,high,control,dashed branch terminates at relay circle
+PNL-120-B,RELAY-KB2,high,control,dashed branch terminates at relay circle
+PNL-120-B,JB-B1,high,control,dashed run from panel to junction box
+JB-B1,TERM-B,high,control,dashed run from junction box to terminal block
+DG-1C,CB-DG-C,high,power,solid DG feeder
+CB-DG-C,BUS-4160-C 4160V SAFETY BUS 1C,high,power,solid branch landing at 4160V bus dot
+BUS-4160-C 4160V SAFETY BUS 1C,CB-LC-C,high,power,solid load-center feeder
+CB-LC-C,TR-LC-C,high,power,solid feeder through load-center breaker
+TR-LC-C,BUS-480-C 480V LOAD CENTER C,high,power,solid transformer secondary to 480V bus dot
+BUS-480-C 480V LOAD CENTER C,INST-PT-C,high,instrument,dashed PT tap at 480V bus end
+BUS-480-C 480V LOAD CENTER C,CB-MCC-CA,high,power,solid MCC feeder branch at bus dot
+CB-MCC-CA,MCC-CA,high,power,solid feeder to first MCC
+MCC-CA,INST-CT-C,medium,instrument,dashed CT tap visibly terminates at CT symbol
+MCC-CA,CB-RHR-C,high,power,solid branch from first MCC
+CB-RHR-C,PUMP-RHR-C,high,power,solid feeder to RHR pump
+MCC-CA,CB-SI-C,high,power,solid branch from first MCC
+CB-SI-C,PUMP-SI-C,high,power,solid feeder to SI pump
+MCC-CA,CB-CCW-C,high,power,solid branch from first MCC
+CB-CCW-C,PUMP-CCW-C,high,power,solid feeder to CCW pump
+MCC-CA,CB-FAN-C,high,power,solid branch from first MCC
+CB-FAN-C,FAN-CR-C,high,power,solid feeder to fan motor
+CB-RHR-C,CB-SI-C,medium,control,dashed interlock segment visibly lands near breaker pair
+BUS-480-C 480V LOAD CENTER C,CB-MCC-CB,high,power,solid MCC feeder branch at bus dot
+CB-MCC-CB,MCC-CB,high,power,solid feeder to second MCC
+MCC-CB,CB-CH-C,high,power,solid branch from second MCC
+CB-CH-C,CHILLER-C,high,power,solid feeder to chiller motor
+MCC-CB,CB-VLV1-C,high,power,solid branch from second MCC
+CB-VLV1-C,MOV-HV1-C,high,power,solid feeder to motor-operated valve
+MCC-CB,CB-VLV2-C,high,power,solid branch from second MCC
+CB-VLV2-C,MOV-HV2-C,high,power,solid feeder to motor-operated valve
+MCC-CB,CB-SPARE-C,high,power,solid branch from second MCC to spare breaker
+CB-SPARE-C,SPARE-LOAD-C,high,power,solid feeder to spare load
+BUS-480-C 480V LOAD CENTER C,XFMR-120-C,high,power,solid lower branch to 120V transformer
+XFMR-120-C,PNL-120-C,high,power,solid transformer output to panel
+BUS-480-C 480V LOAD CENTER C,GND-C,medium,power,solid grounded branch in train area
+PNL-120-C,RELAY-KC1,high,control,dashed branch terminates at relay circle
+PNL-120-C,RELAY-KC2,high,control,dashed branch terminates at relay circle
+PNL-120-C,JB-C1,high,control,dashed run from panel to junction box
+JB-C1,TERM-C,high,control,dashed run from junction box to terminal block
+DG-1D,CB-DG-D,high,power,solid DG feeder
+CB-DG-D,BUS-4160-D 4160V SAFETY BUS 1D,high,power,solid branch landing at 4160V bus dot
+BUS-4160-D 4160V SAFETY BUS 1D,CB-LC-D,high,power,solid load-center feeder
+CB-LC-D,TR-LC-D,high,power,solid feeder through load-center breaker
+TR-LC-D,BUS-480-D 480V LOAD CENTER D,high,power,solid transformer secondary to 480V bus dot
+BUS-480-D 480V LOAD CENTER D,INST-PT-D,high,instrument,dashed PT tap at 480V bus end
+BUS-480-D 480V LOAD CENTER D,CB-MCC-DA,high,power,solid MCC feeder branch at bus dot
+CB-MCC-DA,MCC-DA,high,power,solid feeder to first MCC
+MCC-DA,INST-CT-D,medium,instrument,dashed CT tap visibly terminates at CT symbol
+MCC-DA,CB-RHR-D,high,power,solid branch from first MCC
+CB-RHR-D,PUMP-RHR-D,high,power,solid feeder to RHR pump
+MCC-DA,CB-SI-D,high,power,solid branch from first MCC
+CB-SI-D,PUMP-SI-D,high,power,solid feeder to SI pump
+MCC-DA,CB-CCW-D,high,power,solid branch from first MCC
+CB-CCW-D,PUMP-CCW-D,high,power,solid feeder to CCW pump
+MCC-DA,CB-FAN-D,high,power,solid branch from first MCC
+CB-FAN-D,FAN-CR-D,high,power,solid feeder to fan motor
+CB-RHR-D,CB-SI-D,medium,control,dashed interlock segment visibly lands near breaker pair
+BUS-480-D 480V LOAD CENTER D,CB-MCC-DB,high,power,solid MCC feeder branch at bus dot
+CB-MCC-DB,MCC-DB,high,power,solid feeder to second MCC
+MCC-DB,CB-CH-D,high,power,solid branch from second MCC
+CB-CH-D,CHILLER-D,high,power,solid feeder to chiller motor
+MCC-DB,CB-VLV1-D,high,power,solid branch from second MCC
+CB-VLV1-D,MOV-HV1-D,high,power,solid feeder to motor-operated valve
+MCC-DB,CB-VLV2-D,high,power,solid branch from second MCC
+CB-VLV2-D,MOV-HV2-D,high,power,solid feeder to motor-operated valve
+MCC-DB,CB-SPARE-D,medium,power,solid branch from second MCC to spare breaker
+CB-SPARE-D,SPARE-LOAD-D,medium,power,solid feeder to spare load
+BUS-480-D 480V LOAD CENTER D,XFMR-120-D,high,power,solid lower branch to 120V transformer
+XFMR-120-D,PNL-120-D,high,power,solid transformer output to panel
+BUS-480-D 480V LOAD CENTER D,GND-D,medium,power,solid grounded branch in train area
+PNL-120-D,RELAY-KD1,high,control,dashed branch terminates at relay circle
+PNL-120-D,RELAY-KD2,high,control,dashed branch terminates at relay circle
+PNL-120-D,JB-D1,high,control,dashed run from panel to junction box
+JB-D1,TERM-D,high,control,dashed run from junction box to terminal block
+BUS-480-A 480V LOAD CENTER A,CB-DC-A1,medium,power,long solid feeder down to charger breaker
+CB-DC-A1,CHGR-125A,high,power,solid feeder to charger
+CHGR-125A,BUS-125A 125 VDC BUS A,high,power,solid charger output to 125 VDC bus
+BUS-125A 125 VDC BUS A,BAT-125A,high,power,solid battery branch with bus dot
+BUS-125A 125 VDC BUS A,FUSE-FD-A,high,power,solid branch to fuse
+FUSE-FD-A,INV-UPS-A,high,power,solid branch from fuse to inverter
+INV-UPS-A,BUS-UPS-A 120 VAC UPS BUS A,high,power,solid inverter output to UPS bus
+BUS-125A 125 VDC BUS A,DC-MCC-A,high,power,solid vertical branch with bus dot
+DC-MCC-A,SOL-SDV-A,high,control,dashed control line to solenoid valve
+BUS-125A 125 VDC BUS A,DIODE-OR-A,high,power,solid branch to diode OR
+BUS-125A 125 VDC BUS A,GRD-DC-A,high,power,solid ground branch with bus dot
+BUS-UPS-A 120 VAC UPS BUS A,PNL-RPS-A,high,control,dashed UPS branch to panel
+PNL-RPS-A,RELAY-RPS-A1,high,control,dashed relay branch
+PNL-RPS-A,RELAY-ESF-A,high,control,dashed relay branch
+BUS-UPS-A 120 VAC UPS BUS A,PLC-SAF-A,high,control,dashed UPS branch to PLC panel
+BUS-UPS-A 120 VAC UPS BUS A,INST-RACK-A,high,instrument,dashed UPS branch to instrument rack
+BUS-UPS-A 120 VAC UPS BUS A,ANN-PNL-CR,high,control,dashed right-end branch to annunciator panel
+ANN-PNL-CR,JB-CR-01,high,control,vertical control lead to junction box
+JB-CR-01,TERM-MTB-A,high,control,dashed left terminal branch
+JB-CR-01,TERM-MTB-B,high,control,dashed right terminal branch
+BUS-480-B 480V LOAD CENTER B,CB-DC-B1,medium,power,long solid feeder down to charger breaker
+CB-DC-B1,CHGR-125B,high,power,solid feeder to charger
+CHGR-125B,BUS-125B 125 VDC BUS B,high,power,solid charger output to 125 VDC bus
+BUS-125B 125 VDC BUS B,BAT-125B,high,power,solid battery branch with bus dot
+BUS-125B 125 VDC BUS B,FUSE-FD-B,high,power,solid branch to fuse
+FUSE-FD-B,INV-UPS-B,high,power,solid branch from fuse to inverter
+INV-UPS-B,BUS-UPS-B 120 VAC UPS BUS B,high,power,solid inverter output to UPS bus
+BUS-125B 125 VDC BUS B,DC-MCC-B,high,power,solid vertical branch with bus dot
+DC-MCC-B,SOL-SDV-B,high,control,dashed control line to solenoid valve
+BUS-125B 125 VDC BUS B,DIODE-OR-B,high,power,solid branch to diode OR
+BUS-125B 125 VDC BUS B,GRD-DC-B,high,power,solid ground branch with bus dot
+BUS-UPS-B 120 VAC UPS BUS B,PNL-RPS-B,high,control,dashed UPS branch to panel
+PNL-RPS-B,RELAY-RPS-B1,high,control,dashed relay branch
+PNL-RPS-B,RELAY-ESF-B,high,control,dashed relay branch
+BUS-UPS-B 120 VAC UPS BUS B,PLC-SAF-B,high,control,dashed UPS branch to PLC panel
+BUS-UPS-B 120 VAC UPS BUS B,INST-RACK-B,high,instrument,dashed UPS branch to instrument rack
+BUS-UPS-B 120 VAC UPS BUS B,REC-SEQ-1,high,control,dashed right-end branch to recorder/sequencer
+XFMR-PT-1,METER-V01,high,instrument,dashed vertical PT meter lead

@@ -1,0 +1,205 @@
+node_a,node_b,kind,evidence,confidence
+GRID-SWYD-1,CB-GRID-A,power_primary_230_4160,Top-left raw source symbol has a solid conductor landing on CB-GRID-A; wire overlay follows the same short source lead,high
+CB-GRID-A,CB-SWYD-230,power_primary_230_4160,CB-GRID-A output continues by solid conductor toward the switchyard breaker at the left end of the 230 kV bus,medium
+GRID-SWYD-2,CB-GRID-B,power_primary_230_4160,Lower left source symbol has a solid conductor landing on CB-GRID-B; overlay shows the same isolated source lead,high
+CB-GRID-B,CB-SWYD-230,power_primary_230_4160,CB-GRID-B output rises to the same switchyard breaker/bus entry conductor; no alternate junction is shown,medium
+CB-SWYD-230,BUS-SWYD-230,power_primary_230_4160,CB-SWYD-230 is drawn inline at the left entry of the thick 230 kV switchyard bus; wire mask joins the busbar at that landing,high
+BUS-SWYD-230,TR-SAT-1A,power_primary_230_4160,Vertical tap from the 230 kV bus lands on transformer TR-SAT-1A; node overlay marks the bus T-section,high
+TR-SAT-1A,CB-SAT-A,power_primary_230_4160,Transformer secondary lead continues downward directly into CB-SAT-A,high
+CB-SAT-A,BUS-4160A,power_primary_230_4160,CB-SAT-A lower terminal lands on the left 4.16 kV busbar labeled BUS-4160A,high
+BUS-SWYD-230,TR-SAT-1B,power_primary_230_4160,Vertical tap from the 230 kV bus lands on transformer TR-SAT-1B; overlay shows a continuous drop,high
+TR-SAT-1B,CB-SAT-B,power_primary_230_4160,Transformer secondary lead continues downward directly into CB-SAT-B,high
+CB-SAT-B,BUS-4160B,power_primary_230_4160,CB-SAT-B lower terminal lands on the right 4.16 kV busbar labeled BUS-4160B,high
+BUS-SWYD-230,CB-GEN-ISO,power_primary_230_4160,CB-GEN-ISO is inline on the 230 kV bus/generator tie at the top right; wire mask shows the bus entering its left terminal,high
+CB-GEN-ISO,BUS-GEN-TERMINAL,power_primary_230_4160,Right terminal of CB-GEN-ISO continues to the generator terminal conductor feeding GEN-MAIN-1 and UAT branches,high
+BUS-GEN-TERMINAL,GEN-MAIN-1,power_primary_230_4160,Generator symbol is landed on the same top-right terminal conductor after CB-GEN-ISO,high
+BUS-GEN-TERMINAL,TR-UAT-1A,power_primary_230_4160,Generator terminal conductor drops to transformer TR-UAT-1A; raw and overlay show a vertical landing,high
+TR-UAT-1A,CB-UAT-A,power_primary_230_4160,TR-UAT-1A secondary lead drops directly into CB-UAT-A,high
+CB-UAT-A,BUS-4160B,power_primary_230_4160,CB-UAT-A lower conductor lands on the right 4.16 kV busbar,high
+BUS-GEN-TERMINAL,TR-UAT-1B,power_primary_230_4160,Generator terminal conductor branches to transformer TR-UAT-1B; no dotless crossing is needed for this branch,high
+TR-UAT-1B,CB-UAT-B,power_primary_230_4160,TR-UAT-1B secondary lead drops directly into CB-UAT-B,high
+CB-UAT-B,BUS-4160B,power_primary_230_4160,CB-UAT-B lower conductor lands on the right 4.16 kV busbar,high
+BUS-4160A,CB-4160-TIE,bus_tie,Left 4.16 kV bus segment terminates at CB-4160-TIE; tie breaker is drawn between the two bus sections,high
+CB-4160-TIE,BUS-4160B,bus_tie,Right terminal of CB-4160-TIE lands on BUS-4160B; preserves breaker-mediated bus tie,high
+BUS-4160A,GND-4160A,grounding,Ground symbol GND-4160A is on a vertical tap from BUS-4160A with a visible bus landing,high
+BUS-4160B,GND-4160B,grounding,Ground symbol GND-4160B is on a vertical tap from BUS-4160B with a visible bus landing,high
+DG-1A,CB-DG-A,power_primary_230_4160,Diesel generator DG-1A has a solid lead to breaker CB-DG-A,high
+CB-DG-A,BUS-4160A,power_primary_230_4160,CB-DG-A output conductor lands on the left 4.16 kV busbar,high
+BUS-4160A,PT-4160A,instrumentation_control,Dotted potential-transformer tap drops from BUS-4160A to PT-4160A; shown as instrument/control tap not bus continuation,high
+PT-4160A,FU-PT-A,instrumentation_control,PT-4160A output is connected by a short horizontal control lead to FU-PT-A,high
+FU-PT-A,XFRM-CTRL-A,instrumentation_control,FU-PT-A output continues horizontally to XFRM-CTRL-A,high
+XFRM-CTRL-A,TB-RPS-A,instrumentation_control,XFRM-CTRL-A output lead continues to terminal block TB-RPS-A,high
+TB-RPS-A,SW-43A,instrumentation_control,Terminal block TB-RPS-A is joined by the same horizontal control lead to SW-43A,high
+BUS-4160B,PT-4160B,instrumentation_control,Dotted potential-transformer tap drops from BUS-4160B to PT-4160B,high
+PT-4160B,FU-PT-B,instrumentation_control,PT-4160B output is connected by a short horizontal control lead to FU-PT-B,high
+FU-PT-B,XFRM-CTRL-B,instrumentation_control,FU-PT-B output continues horizontally to XFRM-CTRL-B,high
+XFRM-CTRL-B,TB-RPS-B,instrumentation_control,XFRM-CTRL-B output lead continues to terminal block TB-RPS-B,high
+TB-RPS-B,SW-43B,instrumentation_control,Terminal block TB-RPS-B is joined by the same horizontal control lead to SW-43B,high
+BUS-4160A,TR-480-A1,power_transformer_infeed,Vertical feeder from BUS-4160A lands on transformer TR-480-A1,high
+TR-480-A1,CB-480A-IN,power_transformer_infeed,TR-480-A1 secondary drops directly into incoming breaker CB-480A-IN,high
+CB-480A-IN,BUS-480A,power_transformer_infeed,Incoming breaker CB-480A-IN lower terminal lands on BUS-480A,high
+BUS-4160A,TR-480-B1,power_transformer_infeed,Vertical feeder from BUS-4160A lands on transformer TR-480-B1,high
+TR-480-B1,CB-480B-IN,power_transformer_infeed,TR-480-B1 secondary drops directly into incoming breaker CB-480B-IN,high
+CB-480B-IN,BUS-480B,power_transformer_infeed,Incoming breaker CB-480B-IN lower terminal lands on BUS-480B,high
+BUS-4160B,TR-480-C1,power_transformer_infeed,Vertical feeder from BUS-4160B lands on transformer TR-480-C1,high
+TR-480-C1,CB-480C-IN,power_transformer_infeed,TR-480-C1 secondary drops directly into incoming breaker CB-480C-IN,high
+CB-480C-IN,BUS-480C,power_transformer_infeed,Incoming breaker CB-480C-IN lower terminal lands on BUS-480C,high
+BUS-4160B,TR-480-D1,power_transformer_infeed,Vertical feeder from BUS-4160B lands on transformer TR-480-D1,high
+TR-480-D1,CB-480D-IN,power_transformer_infeed,TR-480-D1 secondary drops directly into incoming breaker CB-480D-IN,high
+CB-480D-IN,BUS-480D,power_transformer_infeed,Incoming breaker CB-480D-IN lower terminal lands on BUS-480D,high
+BUS-480A,CB-A01,power_480_feeder,Vertical feeder tap from BUS-480A lands on CB-A01,high
+CB-A01,DS-A01,power_480_feeder,CB-A01 lower terminal continues down the same feeder to DS-A01,high
+DS-A01,MS-A01,power_480_feeder,DS-A01 lower terminal continues down to MS-A01,high
+MS-A01,PUMP-CCW-A1,power_480_feeder,MS-A01 lower feeder lands on pump motor PUMP-CCW-A1,high
+BUS-480A,CB-A02,power_480_feeder,Vertical feeder tap from BUS-480A lands on CB-A02,high
+CB-A02,DS-A02,power_480_feeder,CB-A02 lower terminal continues down to DS-A02,high
+DS-A02,MS-A02,power_480_feeder,DS-A02 lower terminal continues down to MS-A02,high
+MS-A02,PUMP-RHR-A1,power_480_feeder,MS-A02 lower feeder lands on pump motor PUMP-RHR-A1,high
+BUS-480A,CB-A03,power_480_feeder,Vertical feeder tap from BUS-480A lands on CB-A03,high
+CB-A03,FS-A03,power_480_feeder,CB-A03 lower terminal continues down to FS-A03,high
+FS-A03,MS-A03,power_480_feeder,FS-A03 lower terminal continues down to MS-A03,high
+MS-A03,FAN-RB-A1,power_480_feeder,MS-A03 lower feeder lands on fan motor FAN-RB-A1,high
+BUS-480A,CB-A04,power_480_feeder,Vertical feeder tap from BUS-480A lands on CB-A04,high
+CB-A04,DS-A04,power_480_feeder,CB-A04 lower terminal continues down to DS-A04,high
+DS-A04,RY-A04,power_480_feeder,DS-A04 lower terminal continues down to relay RY-A04,high
+RY-A04,MOV-SI-A11,power_480_feeder,RY-A04 lower feeder lands on MOV-SI-A11,high
+BUS-480A,CB-A05,power_480_feeder,Vertical feeder tap from BUS-480A lands on CB-A05,high
+CB-A05,DS-A05,power_480_feeder,CB-A05 lower terminal continues down to DS-A05,high
+DS-A05,CP-A05,power_480_feeder,DS-A05 lower terminal continues down to CP-A05,high
+CP-A05,PNL-LTG-A1,power_480_feeder,CP-A05 lower feeder lands on panel PNL-LTG-A1,high
+BUS-480A,CB-A06,power_480_feeder,Vertical feeder tap from BUS-480A lands on CB-A06,high
+CB-A06,DS-A06,power_480_feeder,CB-A06 lower terminal continues down to DS-A06,high
+DS-A06,MS-A06,power_480_feeder,DS-A06 lower terminal continues down to MS-A06,high
+MS-A06,PUMP-AFW-A1,power_480_feeder,MS-A06 lower feeder lands on pump motor PUMP-AFW-A1,high
+BUS-480A,CB-A07,power_480_feeder,Vertical feeder tap from BUS-480A lands on CB-A07,high
+CB-A07,FS-A07,power_480_feeder,CB-A07 lower terminal continues down to FS-A07,high
+FS-A07,FU-A07,power_480_feeder,FS-A07 lower terminal continues down to FU-A07,high
+FU-A07,HTR-PZR-A1,power_480_feeder,FU-A07 lower feeder lands on heater load HTR-PZR-A1,high
+BUS-480A,CB-A08,power_480_feeder,Vertical feeder tap from BUS-480A lands on CB-A08,high
+CB-A08,DS-A08,power_480_feeder,CB-A08 lower terminal continues down to DS-A08,high
+DS-A08,TB-A08,power_480_feeder,DS-A08 lower terminal continues down to TB-A08,high
+TB-A08,SPARE-A8,power_480_feeder,TB-A08 lower feeder lands on SPARE-A8,high
+BUS-480B,CB-B01,power_480_feeder,Vertical feeder tap from BUS-480B lands on CB-B01,high
+CB-B01,DS-B01,power_480_feeder,CB-B01 lower terminal continues down to DS-B01,high
+DS-B01,MS-B01,power_480_feeder,DS-B01 lower terminal continues down to MS-B01,high
+MS-B01,PUMP-CCW-B1,power_480_feeder,MS-B01 lower feeder lands on pump motor PUMP-CCW-B1,high
+BUS-480B,CB-B02,power_480_feeder,Vertical feeder tap from BUS-480B lands on CB-B02,high
+CB-B02,DS-B02,power_480_feeder,CB-B02 lower terminal continues down to DS-B02,high
+DS-B02,MS-B02,power_480_feeder,DS-B02 lower terminal continues down to MS-B02,high
+MS-B02,PUMP-RHR-B1,power_480_feeder,MS-B02 lower feeder lands on pump motor PUMP-RHR-B1,high
+BUS-480B,CB-B03,power_480_feeder,Vertical feeder tap from BUS-480B lands on CB-B03,high
+CB-B03,FS-B03,power_480_feeder,CB-B03 lower terminal continues down to FS-B03,high
+FS-B03,MS-B03,power_480_feeder,FS-B03 lower terminal continues down to MS-B03,high
+MS-B03,FAN-FUEL-B1,power_480_feeder,MS-B03 lower feeder lands on fan motor FAN-FUEL-B1,high
+BUS-480B,CB-B04,power_480_feeder,Vertical feeder tap from BUS-480B lands on CB-B04,high
+CB-B04,DS-B04,power_480_feeder,CB-B04 lower terminal continues down to DS-B04,high
+DS-B04,RY-B04,power_480_feeder,DS-B04 lower terminal continues down to relay RY-B04,high
+RY-B04,MOV-CCW-B21,power_480_feeder,RY-B04 lower feeder lands on MOV-CCW-B21,high
+BUS-480B,CB-B05,power_480_feeder,Vertical feeder tap from BUS-480B lands on CB-B05,high
+CB-B05,DS-B05,power_480_feeder,CB-B05 lower terminal continues down to DS-B05,high
+DS-B05,CP-B05,power_480_feeder,DS-B05 lower terminal continues down to CP-B05,high
+CP-B05,MCC-AUX-B6,power_480_feeder,CP-B05 lower feeder lands on MCC-AUX-B6,high
+BUS-480B,CB-B06,power_480_feeder,Vertical feeder tap from BUS-480B lands on CB-B06,high
+CB-B06,DS-B06,power_480_feeder,CB-B06 lower terminal continues down to DS-B06,high
+DS-B06,MS-B06,power_480_feeder,DS-B06 lower terminal continues down to MS-B06,high
+MS-B06,AIR-CMP-B1,power_480_feeder,MS-B06 lower feeder lands on AIR-CMP-B1,high
+BUS-480B,CB-B07,power_480_feeder,Vertical feeder tap from BUS-480B lands on CB-B07,high
+CB-B07,FS-B07,power_480_feeder,CB-B07 lower terminal continues down to FS-B07,high
+FS-B07,RY-B07,power_480_feeder,FS-B07 lower terminal continues down to relay RY-B07,high
+RY-B07,VLV-CHG-B1,power_480_feeder,RY-B07 lower feeder lands on VLV-CHG-B1,high
+BUS-480C,CB-C01,power_480_feeder,Vertical feeder tap from BUS-480C lands on CB-C01,high
+CB-C01,DS-C01,power_480_feeder,CB-C01 lower terminal continues down to DS-C01,high
+DS-C01,MS-C01,power_480_feeder,DS-C01 lower terminal continues down to MS-C01,high
+MS-C01,PUMP-HPCI-C1,power_480_feeder,MS-C01 lower feeder lands on pump motor PUMP-HPCI-C1,high
+BUS-480C,CB-C02,power_480_feeder,Vertical feeder tap from BUS-480C lands on CB-C02,high
+CB-C02,DS-C02,power_480_feeder,CB-C02 lower terminal continues down to DS-C02,high
+DS-C02,MS-C02,power_480_feeder,DS-C02 lower terminal continues down to MS-C02,high
+MS-C02,PUMP-RCW-C1,power_480_feeder,MS-C02 lower feeder lands on pump motor PUMP-RCW-C1,high
+BUS-480C,CB-C03,power_480_feeder,Vertical feeder tap from BUS-480C lands on CB-C03,high
+CB-C03,FS-C03,power_480_feeder,CB-C03 lower terminal continues down to FS-C03,high
+FS-C03,MS-C03,power_480_feeder,FS-C03 lower terminal continues down to MS-C03,high
+MS-C03,FAN-RB-C1,power_480_feeder,MS-C03 lower feeder lands on fan motor FAN-RB-C1,high
+BUS-480C,CB-C04,power_480_feeder,Vertical feeder tap from BUS-480C lands on CB-C04,high
+CB-C04,DS-C04,power_480_feeder,CB-C04 lower terminal continues down to DS-C04,high
+DS-C04,RY-C04,power_480_feeder,DS-C04 lower terminal continues down to relay RY-C04,high
+RY-C04,MOV-RHR-C11,power_480_feeder,RY-C04 lower feeder lands on MOV-RHR-C11,high
+BUS-480C,CB-C05,power_480_feeder,Vertical feeder tap from BUS-480C lands on CB-C05,high
+CB-C05,DS-C05,power_480_feeder,CB-C05 lower terminal continues down to DS-C05,high
+DS-C05,MS-C05,power_480_feeder,DS-C05 lower terminal continues down to MS-C05,high
+MS-C05,PUMP-SEAL-C1,power_480_feeder,MS-C05 lower feeder lands on pump motor PUMP-SEAL-C1,high
+BUS-480C,CB-C06,power_480_feeder,Vertical feeder tap from BUS-480C lands on CB-C06,high
+CB-C06,DS-C06,power_480_feeder,CB-C06 lower terminal continues down to DS-C06,high
+DS-C06,CP-C06,power_480_feeder,DS-C06 lower terminal continues down to CP-C06,high
+CP-C06,PNL-IC-C7,power_480_feeder,CP-C06 lower feeder lands on PNL-IC-C7,high
+BUS-480C,CB-C07,power_480_feeder,Vertical feeder tap from BUS-480C lands on CB-C07,high
+CB-C07,FS-C07,power_480_feeder,CB-C07 lower terminal continues down to FS-C07,high
+FS-C07,MS-C07,power_480_feeder,FS-C07 lower terminal continues down to MS-C07,high
+MS-C07,SUMP-PMP-C1,power_480_feeder,MS-C07 lower feeder lands on SUMP-PMP-C1,high
+BUS-480C,CB-C08,power_480_feeder,Vertical feeder tap from BUS-480C lands on CB-C08,high
+CB-C08,DS-C08,power_480_feeder,CB-C08 lower terminal continues down to DS-C08,high
+DS-C08,FU-C08,power_480_feeder,DS-C08 lower terminal continues down to FU-C08,high
+FU-C08,HTR-VENT-C2,power_480_feeder,FU-C08 lower feeder lands on HTR-VENT-C2,high
+BUS-480D,CB-D01,power_480_feeder,Vertical feeder tap from BUS-480D lands on CB-D01,high
+CB-D01,DS-D01,power_480_feeder,CB-D01 lower terminal continues down to DS-D01,high
+DS-D01,MS-D01,power_480_feeder,DS-D01 lower terminal continues down to MS-D01,high
+MS-D01,PUMP-AFW-D1,power_480_feeder,MS-D01 lower feeder lands on pump motor PUMP-AFW-D1,high
+BUS-480D,CB-D02,power_480_feeder,Vertical feeder tap from BUS-480D lands on CB-D02,high
+CB-D02,DS-D02,power_480_feeder,CB-D02 lower terminal continues down to DS-D02,high
+DS-D02,MS-D02,power_480_feeder,DS-D02 lower terminal continues down to MS-D02,high
+MS-D02,FAN-CR-D1,power_480_feeder,MS-D02 lower feeder lands on fan motor FAN-CR-D1,high
+BUS-480D,CB-D03,power_480_feeder,Vertical feeder tap from BUS-480D lands on CB-D03,high
+CB-D03,FS-D03,power_480_feeder,CB-D03 lower terminal continues down to FS-D03,high
+FS-D03,RY-D03,power_480_feeder,FS-D03 lower terminal continues down to relay RY-D03,high
+RY-D03,MOV-SI-D21,power_480_feeder,RY-D03 lower feeder lands on MOV-SI-D21,high
+BUS-480D,CB-D04,power_480_feeder,Vertical feeder tap from BUS-480D lands on CB-D04,high
+CB-D04,DS-D04,power_480_feeder,CB-D04 lower terminal continues down to DS-D04,high
+DS-D04,MS-D04,power_480_feeder,DS-D04 lower terminal continues down to MS-D04,high
+MS-D04,PUMP-LUBE-D1,power_480_feeder,MS-D04 lower feeder lands on pump motor PUMP-LUBE-D1,high
+BUS-480D,CB-D05,power_480_feeder,Vertical feeder tap from BUS-480D lands on CB-D05,high
+CB-D05,DS-D05,power_480_feeder,CB-D05 lower terminal continues down to DS-D05,high
+DS-D05,CP-D05,power_480_feeder,DS-D05 lower terminal continues down to CP-D05,high
+CP-D05,PNL-ESS-D5,power_480_feeder,CP-D05 lower feeder lands on PNL-ESS-D5,high
+BUS-480D,CB-D06,power_480_feeder,Vertical feeder tap from BUS-480D lands on CB-D06,high
+CB-D06,DS-D06,power_480_feeder,CB-D06 lower terminal continues down to DS-D06,high
+DS-D06,MS-D06,power_480_feeder,DS-D06 lower terminal continues down to MS-D06,high
+MS-D06,COMP-AIR-D1,power_480_feeder,MS-D06 lower feeder lands on compressor COMP-AIR-D1,high
+BUS-480D,CB-D07,power_480_feeder,Vertical feeder tap from BUS-480D lands on CB-D07,high
+CB-D07,FS-D07,power_480_feeder,CB-D07 lower terminal continues down to FS-D07,high
+FS-D07,TB-D07,power_480_feeder,FS-D07 lower terminal continues down to TB-D07,high
+TB-D07,SPARE-D7,power_480_feeder,TB-D07 lower feeder lands on SPARE-D7,high
+BUS-480B,CHG-125A,dc_control_power,Long solid feeder from BUS-480B descends into Train A control-power box and lands on the CHG-125A row,medium
+CHG-125A,REC-125A,dc_control_power,Train A top control-power row shows a horizontal solid link from CHG-125A to REC-125A,high
+REC-125A,CB-DC-A,dc_control_power,REC-125A output continues horizontally to CB-DC-A,high
+CB-DC-A,BUS-125A,dc_control_power,CB-DC-A has a vertical drop to the thick BUS-125A bar with a visible landing,high
+BUS-125A,BAT-125A,dc_control_power,BAT-125A is tied by a vertical lead to the left end of BUS-125A,high
+BUS-125A,GND-DC-A,grounding,GND-DC-A is tied by a vertical tap to BUS-125A,high
+BUS-125A,INV-120A,dc_control_power,BUS-125A continues rightward to the inverter input branch labeled INV-120A,high
+INV-120A,UPS-120A,ac_control_power,INV-120A output is connected by the short Train A AC link to UPS-120A,high
+UPS-120A,BUS-120A,ac_control_power,UPS-120A output lands on the thick BUS-120A bar,high
+BUS-120A,RPS-PNL-A,ac_control_power,Vertical tap from BUS-120A rises to RPS-PNL-A in the Train A control-power box,high
+RPS-PNL-A,PLC-RPS-A,ac_control_power,RPS-PNL-A and PLC-RPS-A are joined by a short solid control-power link,high
+PLC-RPS-A,RPS-A-DASHED-NET,rps_dashed_control,Dotted/dashed Train A control wiring leaves PLC-RPS-A toward the relay and junction-box group,medium
+RELAY-K101,RPS-A-DASHED-NET,rps_dashed_control,RELAY-K101 sits inside the dashed Train A control network enclosure,medium
+RELAY-K102,RPS-A-DASHED-NET,rps_dashed_control,RELAY-K102 sits inside the dashed Train A control network enclosure,medium
+RELAY-K103,RPS-A-DASHED-NET,rps_dashed_control,RELAY-K103 sits inside the dashed Train A control network enclosure,medium
+RELAY-K104,RPS-A-DASHED-NET,rps_dashed_control,RELAY-K104 sits inside the dashed Train A control network enclosure,medium
+JB-RPS-A,RPS-A-DASHED-NET,rps_dashed_control,JB-RPS-A is the right-hand junction point on the Train A dashed control wiring,medium
+PNL-ANN-A,RPS-A-DASHED-NET,rps_dashed_control,PNL-ANN-A is connected by a dashed branch from the Train A relay/control network,medium
+BUS-480C,CHG-125B,dc_control_power,Long solid feeder from BUS-480C descends into Train B control-power box and lands on the CHG-125B row,medium
+CHG-125B,REC-125B,dc_control_power,Train B top control-power row shows a horizontal solid link from CHG-125B to REC-125B,high
+REC-125B,CB-DC-B,dc_control_power,REC-125B output continues horizontally to CB-DC-B,high
+CB-DC-B,BUS-125B,dc_control_power,CB-DC-B has a vertical drop to the thick BUS-125B bar with a visible landing,high
+BUS-125B,BAT-125B,dc_control_power,BAT-125B is tied by a vertical lead to the left end of BUS-125B,high
+BUS-125B,GND-DC-B,grounding,GND-DC-B is tied by a vertical tap to BUS-125B,high
+BUS-125B,INV-120B,dc_control_power,BUS-125B continues rightward to the inverter input branch labeled INV-120B,high
+INV-120B,UPS-120B,ac_control_power,INV-120B output is connected by the short Train B AC link to UPS-120B,high
+UPS-120B,BUS-120B,ac_control_power,UPS-120B output lands on the thick BUS-120B bar,high
+BUS-120B,RPS-PNL-B,ac_control_power,Vertical tap from BUS-120B rises to RPS-PNL-B in the Train B control-power box,high
+RPS-PNL-B,PLC-RPS-B,ac_control_power,RPS-PNL-B and PLC-RPS-B are joined by a short solid control-power link,high
+PLC-RPS-B,RPS-B-DASHED-NET,rps_dashed_control,Dotted/dashed Train B control wiring leaves PLC-RPS-B toward the relay and junction-box group,medium
+RELAY-K201,RPS-B-DASHED-NET,rps_dashed_control,RELAY-K201 sits inside the dashed Train B control network enclosure,medium
+RELAY-K202,RPS-B-DASHED-NET,rps_dashed_control,RELAY-K202 sits inside the dashed Train B control network enclosure,medium
+RELAY-K203,RPS-B-DASHED-NET,rps_dashed_control,RELAY-K203 sits inside the dashed Train B control network enclosure,medium
+RELAY-K204,RPS-B-DASHED-NET,rps_dashed_control,RELAY-K204 sits inside the dashed Train B control network enclosure,medium
+JB-RPS-B,RPS-B-DASHED-NET,rps_dashed_control,JB-RPS-B is the right-hand junction point on the Train B dashed control wiring,medium
+PNL-ANN-B,RPS-B-DASHED-NET,rps_dashed_control,PNL-ANN-B is connected by a dashed branch from the Train B relay/control network,medium

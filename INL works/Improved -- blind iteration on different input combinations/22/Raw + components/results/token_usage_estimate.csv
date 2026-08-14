@@ -1,0 +1,8 @@
+document,iteration,call,input_tokens_est,cached_input_tokens,image_file_input_tokens_est,output_tokens_expected,reasoning_tokens_expected,total_low,total_expected,total_high,usage_object_available,notes
+22,1,"Main Codex: grouped orchestration, visual triage, prompts, packaging",30000,unavailable,9945,2200,22000,54465,64145,87465,no,Grouped main-agent model turns; exact usage was not exposed.
+22,1,Diego: round1_high_recall_extraction,9500,unavailable,51510,44907,40000,111955,145917,212862,no,Initial Diego prompt plus Doc22 full raw/overlay and generated crop bundle.
+22,1,Jennifer: round1_precision_review,50307,unavailable,34000,45264,36000,133066,165571,228730,no,Jennifer prompt plus Diego round 1 artifacts and the reduced Doc22 review image bundle.
+22,1,Diego: round2_saturation_attempt_failed_503,73043,unavailable,0,0,3000,74843,76043,79043,no,Original Diego round 2 attempt hit a 503 before a usable response; usage object unavailable and no output artifact was produced.
+22,1,Diego: round2_saturation_review_fresh_spawn,73643,unavailable,11135,46538,10500,119001,141816,180239,no,Fresh Diego round 2 spawn used prior artifacts plus a focused lower-DC image bundle after the transient 503.
+22,1,Jennifer: round2_final_precision_confirmation,75274,unavailable,9945,45656,14500,121313,145375,187269,no,"Final Jennifer prompt plus Diego round 2 artifacts, Jennifer round 1 artifacts, and a smaller final image bundle."
+22,1,TOTAL,311767,unavailable,116535,184565,126000,614643,738867,975608,no,Total over estimated visible workflow calls.

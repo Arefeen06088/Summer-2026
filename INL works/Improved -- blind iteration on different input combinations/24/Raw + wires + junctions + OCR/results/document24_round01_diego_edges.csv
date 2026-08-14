@@ -1,0 +1,206 @@
+source,target,edge_kind,confidence,evidence
+OFFSITE-1,CB-101A,power,high,Solid incoming AC line from OFFSITE-1 circle to CB-101A in raw top-left crop.
+CB-101A,TR-SAT-1A,power,high,Solid line continues from CB-101A to TR-SAT-1A primary symbol in raw top-left crop.
+TR-SAT-1A,BUS-101A,power,high,Vertical solid drop from TR-SAT-1A to junction dot on BUS-101A.
+EDG-1A,CB-DG1A,power,high,EDG-1A generator circle drops by solid conductor into CB-DG1A.
+CB-DG1A,BUS-101A,power,high,CB-DG1A bottom solid conductor lands on BUS-101A at a junction dot.
+SW-MAN-A,TB-DG-A,control_trip,high,Dashed control line from SW-MAN-A to TB-DG-A near EDG-1A.
+TB-DG-A,CB-DG1A,control_trip,high,Dashed control line continues from TB-DG-A to the side of CB-DG1A.
+BUS-101A,CB-TIE-1,power,high,Solid BUS-101A backbone reaches left side of CB-TIE-1.
+CB-TIE-1,BUS-101B,power,high,Solid conductor exits CB-TIE-1 to BUS-101B side through visible junctions.
+BUS-101A,CB-201A,power,high,Vertical solid tap from BUS-101A junction dot to CB-201A.
+CB-201A,TR-1A,power,high,Solid vertical feed from CB-201A to TR-1A.
+TR-1A,CB-202A,power,high,Solid vertical feed from TR-1A to CB-202A.
+CB-202A,BUS-201A,power,high,Solid vertical feed from CB-202A to junction dot on BUS-201A.
+OFFSITE-2,CB-101B,power,high,Solid incoming AC line from OFFSITE-2 circle to CB-101B in raw top-right crop.
+CB-101B,TR-SAT-1B,power,high,Solid line continues from CB-101B to TR-SAT-1B primary symbol.
+TR-SAT-1B,BUS-101B,power,high,Vertical solid drop from TR-SAT-1B to junction dot on BUS-101B.
+EDG-1B,CB-DG1B,power,high,EDG-1B generator circle drops by solid conductor into CB-DG1B.
+CB-DG1B,BUS-101B,power,high,CB-DG1B bottom solid conductor lands on BUS-101B at a junction dot.
+SW-MAN-B,TB-DG-B,control_trip,high,Dashed control line from SW-MAN-B to TB-DG-B near EDG-1B.
+TB-DG-B,CB-DG1B,control_trip,high,Dashed control line continues from TB-DG-B to the side of CB-DG1B.
+BUS-101B,CB-201B,power,high,Vertical solid tap from BUS-101B junction dot to CB-201B.
+CB-201B,TR-1B,power,high,Solid vertical feed from CB-201B to TR-1B.
+TR-1B,CB-202B,power,high,Solid vertical feed from TR-1B to CB-202B.
+CB-202B,BUS-201B,power,high,Solid vertical feed from CB-202B to junction dot on BUS-201B.
+CB-TIE-1,SYNC-CAB,control_trip,medium,Dashed route descends from the CB-TIE-1 area through the central clear-routing channel toward SYNC-CAB; branch point is routed rather than labeled.
+SYNC-CAB,LOAD-SHED-CAB,control_trip,medium,Central dashed routing channel continues from SYNC-CAB area toward LOAD-SHED-CAB; inferred from continuous dashed path.
+BUS-201A,CB-2A01,power,high,"Train A, feeder 01: vertical solid tap from BUS-201A backbone to CB-2A01 with junction dot on bus."
+CB-2A01,DS-2A01,power,high,"Train A, feeder 01: solid vertical conductor from breaker CB-2A01 to disconnect DS-2A01."
+DS-2A01,MCC-2A01,power,high,"Train A, feeder 01: solid vertical conductor from disconnect DS-2A01 to MCC MCC-2A01."
+MCC-2A01,TB-2A01,power,high,"Train A, feeder 01: solid vertical conductor from MCC MCC-2A01 to terminal block TB-2A01."
+TB-2A01,PUMP-P201A,power,high,"Train A, feeder 01: solid vertical conductor from terminal block TB-2A01 to load PUMP-P201A."
+MCC-2A01,RELAY-K2A01,control_trip,high,"Train A, feeder 01: dashed control/trip drop from side of MCC-2A01 to RELAY-K2A01."
+HS-2A01,RELAY-K2A01,control_trip,high,"Train A, feeder 01: dashed control/trip link between hand switch HS-2A01 and relay RELAY-K2A01."
+BUS-201A,CB-2A02,power,high,"Train A, feeder 02: vertical solid tap from BUS-201A backbone to CB-2A02 with junction dot on bus."
+CB-2A02,DS-2A02,power,high,"Train A, feeder 02: solid vertical conductor from breaker CB-2A02 to disconnect DS-2A02."
+DS-2A02,MCC-2A02,power,high,"Train A, feeder 02: solid vertical conductor from disconnect DS-2A02 to MCC MCC-2A02."
+MCC-2A02,TB-2A02,power,high,"Train A, feeder 02: solid vertical conductor from MCC MCC-2A02 to terminal block TB-2A02."
+TB-2A02,FAN-F202A,power,high,"Train A, feeder 02: solid vertical conductor from terminal block TB-2A02 to load FAN-F202A."
+MCC-2A02,RELAY-K2A02,control_trip,high,"Train A, feeder 02: dashed control/trip drop from side of MCC-2A02 to RELAY-K2A02."
+HS-2A02,RELAY-K2A02,control_trip,high,"Train A, feeder 02: dashed control/trip link between hand switch HS-2A02 and relay RELAY-K2A02."
+BUS-201A,CB-2A03,power,high,"Train A, feeder 03: vertical solid tap from BUS-201A backbone to CB-2A03 with junction dot on bus."
+CB-2A03,DS-2A03,power,high,"Train A, feeder 03: solid vertical conductor from breaker CB-2A03 to disconnect DS-2A03."
+DS-2A03,MCC-2A03,power,high,"Train A, feeder 03: solid vertical conductor from disconnect DS-2A03 to MCC MCC-2A03."
+MCC-2A03,TB-2A03,power,high,"Train A, feeder 03: solid vertical conductor from MCC MCC-2A03 to terminal block TB-2A03."
+TB-2A03,MOV-HV203A,power,high,"Train A, feeder 03: solid vertical conductor from terminal block TB-2A03 to load MOV-HV203A."
+MCC-2A03,RELAY-K2A03,control_trip,high,"Train A, feeder 03: dashed control/trip drop from side of MCC-2A03 to RELAY-K2A03."
+HS-2A03,RELAY-K2A03,control_trip,high,"Train A, feeder 03: dashed control/trip link between hand switch HS-2A03 and relay RELAY-K2A03."
+BUS-201A,CB-2A04,power,high,"Train A, feeder 04: vertical solid tap from BUS-201A backbone to CB-2A04 with junction dot on bus."
+CB-2A04,DS-2A04,power,high,"Train A, feeder 04: solid vertical conductor from breaker CB-2A04 to disconnect DS-2A04."
+DS-2A04,MCC-2A04,power,high,"Train A, feeder 04: solid vertical conductor from disconnect DS-2A04 to MCC MCC-2A04."
+MCC-2A04,TB-2A04,power,high,"Train A, feeder 04: solid vertical conductor from MCC MCC-2A04 to terminal block TB-2A04."
+TB-2A04,PUMP-P204A,power,high,"Train A, feeder 04: solid vertical conductor from terminal block TB-2A04 to load PUMP-P204A."
+MCC-2A04,RELAY-K2A04,control_trip,high,"Train A, feeder 04: dashed control/trip drop from side of MCC-2A04 to RELAY-K2A04."
+HS-2A04,RELAY-K2A04,control_trip,high,"Train A, feeder 04: dashed control/trip link between hand switch HS-2A04 and relay RELAY-K2A04."
+BUS-201A,CB-2A05,power,high,"Train A, feeder 05: vertical solid tap from BUS-201A backbone to CB-2A05 with junction dot on bus."
+CB-2A05,DS-2A05,power,high,"Train A, feeder 05: solid vertical conductor from breaker CB-2A05 to disconnect DS-2A05."
+DS-2A05,MCC-2A05,power,high,"Train A, feeder 05: solid vertical conductor from disconnect DS-2A05 to MCC MCC-2A05."
+MCC-2A05,TB-2A05,power,high,"Train A, feeder 05: solid vertical conductor from MCC MCC-2A05 to terminal block TB-2A05."
+TB-2A05,CHLR-205A,power,high,"Train A, feeder 05: solid vertical conductor from terminal block TB-2A05 to load CHLR-205A."
+MCC-2A05,RELAY-K2A05,control_trip,high,"Train A, feeder 05: dashed control/trip drop from side of MCC-2A05 to RELAY-K2A05."
+HS-2A05,RELAY-K2A05,control_trip,high,"Train A, feeder 05: dashed control/trip link between hand switch HS-2A05 and relay RELAY-K2A05."
+BUS-201A,CB-2A06,power,high,"Train A, feeder 06: vertical solid tap from BUS-201A backbone to CB-2A06 with junction dot on bus."
+CB-2A06,DS-2A06,power,high,"Train A, feeder 06: solid vertical conductor from breaker CB-2A06 to disconnect DS-2A06."
+DS-2A06,MCC-2A06,power,high,"Train A, feeder 06: solid vertical conductor from disconnect DS-2A06 to MCC MCC-2A06."
+MCC-2A06,TB-2A06,power,high,"Train A, feeder 06: solid vertical conductor from MCC MCC-2A06 to terminal block TB-2A06."
+TB-2A06,HTR-206A,power,high,"Train A, feeder 06: solid vertical conductor from terminal block TB-2A06 to load HTR-206A."
+MCC-2A06,RELAY-K2A06,control_trip,high,"Train A, feeder 06: dashed control/trip drop from side of MCC-2A06 to RELAY-K2A06."
+HS-2A06,RELAY-K2A06,control_trip,high,"Train A, feeder 06: dashed control/trip link between hand switch HS-2A06 and relay RELAY-K2A06."
+BUS-201A,CB-2A07,power,high,"Train A, feeder 07: vertical solid tap from BUS-201A backbone to CB-2A07 with junction dot on bus."
+CB-2A07,DS-2A07,power,high,"Train A, feeder 07: solid vertical conductor from breaker CB-2A07 to disconnect DS-2A07."
+DS-2A07,MCC-2A07,power,high,"Train A, feeder 07: solid vertical conductor from disconnect DS-2A07 to MCC MCC-2A07."
+MCC-2A07,TB-2A07,power,high,"Train A, feeder 07: solid vertical conductor from MCC MCC-2A07 to terminal block TB-2A07."
+TB-2A07,VALVE-MV207A,power,high,"Train A, feeder 07: solid vertical conductor from terminal block TB-2A07 to load VALVE-MV207A."
+MCC-2A07,RELAY-K2A07,control_trip,high,"Train A, feeder 07: dashed control/trip drop from side of MCC-2A07 to RELAY-K2A07."
+HS-2A07,RELAY-K2A07,control_trip,high,"Train A, feeder 07: dashed control/trip link between hand switch HS-2A07 and relay RELAY-K2A07."
+BUS-201A,CB-2A08,power,high,"Train A, feeder 08: vertical solid tap from BUS-201A backbone to CB-2A08 with junction dot on bus."
+CB-2A08,DS-2A08,power,high,"Train A, feeder 08: solid vertical conductor from breaker CB-2A08 to disconnect DS-2A08."
+DS-2A08,MCC-2A08,power,high,"Train A, feeder 08: solid vertical conductor from disconnect DS-2A08 to MCC MCC-2A08."
+MCC-2A08,TB-2A08,power,high,"Train A, feeder 08: solid vertical conductor from MCC MCC-2A08 to terminal block TB-2A08."
+TB-2A08,PMP-LP208A,power,high,"Train A, feeder 08: solid vertical conductor from terminal block TB-2A08 to load PMP-LP208A."
+MCC-2A08,RELAY-K2A08,control_trip,high,"Train A, feeder 08: dashed control/trip drop from side of MCC-2A08 to RELAY-K2A08."
+HS-2A08,RELAY-K2A08,control_trip,high,"Train A, feeder 08: dashed control/trip link between hand switch HS-2A08 and relay RELAY-K2A08."
+BUS-201A,CB-2A09,power,high,"Train A, feeder 09: vertical solid tap from BUS-201A backbone to CB-2A09 with junction dot on bus."
+CB-2A09,DS-2A09,power,high,"Train A, feeder 09: solid vertical conductor from breaker CB-2A09 to disconnect DS-2A09."
+DS-2A09,MCC-2A09,power,high,"Train A, feeder 09: solid vertical conductor from disconnect DS-2A09 to MCC MCC-2A09."
+MCC-2A09,TB-2A09,power,high,"Train A, feeder 09: solid vertical conductor from MCC MCC-2A09 to terminal block TB-2A09."
+TB-2A09,COMP-C209A,power,high,"Train A, feeder 09: solid vertical conductor from terminal block TB-2A09 to load COMP-C209A."
+MCC-2A09,RELAY-K2A09,control_trip,high,"Train A, feeder 09: dashed control/trip drop from side of MCC-2A09 to RELAY-K2A09."
+HS-2A09,RELAY-K2A09,control_trip,high,"Train A, feeder 09: dashed control/trip link between hand switch HS-2A09 and relay RELAY-K2A09."
+BUS-201B,CB-2B01,power,high,"Train B, feeder 01: vertical solid tap from BUS-201B backbone to CB-2B01 with junction dot on bus."
+CB-2B01,DS-2B01,power,high,"Train B, feeder 01: solid vertical conductor from breaker CB-2B01 to disconnect DS-2B01."
+DS-2B01,MCC-2B01,power,high,"Train B, feeder 01: solid vertical conductor from disconnect DS-2B01 to MCC MCC-2B01."
+MCC-2B01,TB-2B01,power,high,"Train B, feeder 01: solid vertical conductor from MCC MCC-2B01 to terminal block TB-2B01."
+TB-2B01,PUMP-P201B,power,high,"Train B, feeder 01: solid vertical conductor from terminal block TB-2B01 to load PUMP-P201B."
+MCC-2B01,RELAY-K2B01,control_trip,high,"Train B, feeder 01: dashed control/trip drop from side of MCC-2B01 to RELAY-K2B01."
+HS-2B01,RELAY-K2B01,control_trip,high,"Train B, feeder 01: dashed control/trip link between hand switch HS-2B01 and relay RELAY-K2B01."
+BUS-201B,CB-2B02,power,high,"Train B, feeder 02: vertical solid tap from BUS-201B backbone to CB-2B02 with junction dot on bus."
+CB-2B02,DS-2B02,power,high,"Train B, feeder 02: solid vertical conductor from breaker CB-2B02 to disconnect DS-2B02."
+DS-2B02,MCC-2B02,power,high,"Train B, feeder 02: solid vertical conductor from disconnect DS-2B02 to MCC MCC-2B02."
+MCC-2B02,TB-2B02,power,high,"Train B, feeder 02: solid vertical conductor from MCC MCC-2B02 to terminal block TB-2B02."
+TB-2B02,FAN-F202B,power,high,"Train B, feeder 02: solid vertical conductor from terminal block TB-2B02 to load FAN-F202B."
+MCC-2B02,RELAY-K2B02,control_trip,high,"Train B, feeder 02: dashed control/trip drop from side of MCC-2B02 to RELAY-K2B02."
+HS-2B02,RELAY-K2B02,control_trip,high,"Train B, feeder 02: dashed control/trip link between hand switch HS-2B02 and relay RELAY-K2B02."
+BUS-201B,CB-2B03,power,high,"Train B, feeder 03: vertical solid tap from BUS-201B backbone to CB-2B03 with junction dot on bus."
+CB-2B03,DS-2B03,power,high,"Train B, feeder 03: solid vertical conductor from breaker CB-2B03 to disconnect DS-2B03."
+DS-2B03,MCC-2B03,power,high,"Train B, feeder 03: solid vertical conductor from disconnect DS-2B03 to MCC MCC-2B03."
+MCC-2B03,TB-2B03,power,high,"Train B, feeder 03: solid vertical conductor from MCC MCC-2B03 to terminal block TB-2B03."
+TB-2B03,MOV-HV203B,power,high,"Train B, feeder 03: solid vertical conductor from terminal block TB-2B03 to load MOV-HV203B."
+MCC-2B03,RELAY-K2B03,control_trip,high,"Train B, feeder 03: dashed control/trip drop from side of MCC-2B03 to RELAY-K2B03."
+HS-2B03,RELAY-K2B03,control_trip,high,"Train B, feeder 03: dashed control/trip link between hand switch HS-2B03 and relay RELAY-K2B03."
+BUS-201B,CB-2B04,power,high,"Train B, feeder 04: vertical solid tap from BUS-201B backbone to CB-2B04 with junction dot on bus."
+CB-2B04,DS-2B04,power,high,"Train B, feeder 04: solid vertical conductor from breaker CB-2B04 to disconnect DS-2B04."
+DS-2B04,MCC-2B04,power,high,"Train B, feeder 04: solid vertical conductor from disconnect DS-2B04 to MCC MCC-2B04."
+MCC-2B04,TB-2B04,power,high,"Train B, feeder 04: solid vertical conductor from MCC MCC-2B04 to terminal block TB-2B04."
+TB-2B04,PUMP-P204B,power,high,"Train B, feeder 04: solid vertical conductor from terminal block TB-2B04 to load PUMP-P204B."
+MCC-2B04,RELAY-K2B04,control_trip,high,"Train B, feeder 04: dashed control/trip drop from side of MCC-2B04 to RELAY-K2B04."
+HS-2B04,RELAY-K2B04,control_trip,high,"Train B, feeder 04: dashed control/trip link between hand switch HS-2B04 and relay RELAY-K2B04."
+BUS-201B,CB-2B05,power,high,"Train B, feeder 05: vertical solid tap from BUS-201B backbone to CB-2B05 with junction dot on bus."
+CB-2B05,DS-2B05,power,high,"Train B, feeder 05: solid vertical conductor from breaker CB-2B05 to disconnect DS-2B05."
+DS-2B05,MCC-2B05,power,high,"Train B, feeder 05: solid vertical conductor from disconnect DS-2B05 to MCC MCC-2B05."
+MCC-2B05,TB-2B05,power,high,"Train B, feeder 05: solid vertical conductor from MCC MCC-2B05 to terminal block TB-2B05."
+TB-2B05,CHLR-205B,power,high,"Train B, feeder 05: solid vertical conductor from terminal block TB-2B05 to load CHLR-205B."
+MCC-2B05,RELAY-K2B05,control_trip,high,"Train B, feeder 05: dashed control/trip drop from side of MCC-2B05 to RELAY-K2B05."
+HS-2B05,RELAY-K2B05,control_trip,high,"Train B, feeder 05: dashed control/trip link between hand switch HS-2B05 and relay RELAY-K2B05."
+BUS-201B,CB-2B06,power,high,"Train B, feeder 06: vertical solid tap from BUS-201B backbone to CB-2B06 with junction dot on bus."
+CB-2B06,DS-2B06,power,high,"Train B, feeder 06: solid vertical conductor from breaker CB-2B06 to disconnect DS-2B06."
+DS-2B06,MCC-2B06,power,high,"Train B, feeder 06: solid vertical conductor from disconnect DS-2B06 to MCC MCC-2B06."
+MCC-2B06,TB-2B06,power,high,"Train B, feeder 06: solid vertical conductor from MCC MCC-2B06 to terminal block TB-2B06."
+TB-2B06,HTR-206B,power,high,"Train B, feeder 06: solid vertical conductor from terminal block TB-2B06 to load HTR-206B."
+MCC-2B06,RELAY-K2B06,control_trip,high,"Train B, feeder 06: dashed control/trip drop from side of MCC-2B06 to RELAY-K2B06."
+HS-2B06,RELAY-K2B06,control_trip,high,"Train B, feeder 06: dashed control/trip link between hand switch HS-2B06 and relay RELAY-K2B06."
+BUS-201B,CB-2B07,power,high,"Train B, feeder 07: vertical solid tap from BUS-201B backbone to CB-2B07 with junction dot on bus."
+CB-2B07,DS-2B07,power,high,"Train B, feeder 07: solid vertical conductor from breaker CB-2B07 to disconnect DS-2B07."
+DS-2B07,MCC-2B07,power,high,"Train B, feeder 07: solid vertical conductor from disconnect DS-2B07 to MCC MCC-2B07."
+MCC-2B07,TB-2B07,power,high,"Train B, feeder 07: solid vertical conductor from MCC MCC-2B07 to terminal block TB-2B07."
+TB-2B07,VALVE-MV207B,power,high,"Train B, feeder 07: solid vertical conductor from terminal block TB-2B07 to load VALVE-MV207B."
+MCC-2B07,RELAY-K2B07,control_trip,high,"Train B, feeder 07: dashed control/trip drop from side of MCC-2B07 to RELAY-K2B07."
+HS-2B07,RELAY-K2B07,control_trip,high,"Train B, feeder 07: dashed control/trip link between hand switch HS-2B07 and relay RELAY-K2B07."
+BUS-201B,CB-2B08,power,high,"Train B, feeder 08: vertical solid tap from BUS-201B backbone to CB-2B08 with junction dot on bus."
+CB-2B08,DS-2B08,power,high,"Train B, feeder 08: solid vertical conductor from breaker CB-2B08 to disconnect DS-2B08."
+DS-2B08,MCC-2B08,power,high,"Train B, feeder 08: solid vertical conductor from disconnect DS-2B08 to MCC MCC-2B08."
+MCC-2B08,TB-2B08,power,high,"Train B, feeder 08: solid vertical conductor from MCC MCC-2B08 to terminal block TB-2B08."
+TB-2B08,PMP-LP208B,power,high,"Train B, feeder 08: solid vertical conductor from terminal block TB-2B08 to load PMP-LP208B."
+MCC-2B08,RELAY-K2B08,control_trip,high,"Train B, feeder 08: dashed control/trip drop from side of MCC-2B08 to RELAY-K2B08."
+HS-2B08,RELAY-K2B08,control_trip,high,"Train B, feeder 08: dashed control/trip link between hand switch HS-2B08 and relay RELAY-K2B08."
+BUS-201B,CB-2B09,power,high,"Train B, feeder 09: vertical solid tap from BUS-201B backbone to CB-2B09 with junction dot on bus."
+CB-2B09,DS-2B09,power,high,"Train B, feeder 09: solid vertical conductor from breaker CB-2B09 to disconnect DS-2B09."
+DS-2B09,MCC-2B09,power,high,"Train B, feeder 09: solid vertical conductor from disconnect DS-2B09 to MCC MCC-2B09."
+MCC-2B09,TB-2B09,power,high,"Train B, feeder 09: solid vertical conductor from MCC MCC-2B09 to terminal block TB-2B09."
+TB-2B09,COMP-C209B,power,high,"Train B, feeder 09: solid vertical conductor from terminal block TB-2B09 to load COMP-C209B."
+MCC-2B09,RELAY-K2B09,control_trip,high,"Train B, feeder 09: dashed control/trip drop from side of MCC-2B09 to RELAY-K2B09."
+HS-2B09,RELAY-K2B09,control_trip,high,"Train B, feeder 09: dashed control/trip link between hand switch HS-2B09 and relay RELAY-K2B09."
+DC-BUS-125A,BAT-125A,dc_power,high,Solid vertical tap from DC-BUS-125A to BAT-125A.
+DC-BUS-125A,CHG-125A,dc_power,high,Solid vertical tap from DC-BUS-125A to CHG-125A.
+DC-BUS-125A,INV-120A,dc_power,high,Solid vertical tap from DC-BUS-125A to INV-120A.
+DC-BUS-125A,PNL-DC-A,dc_power,high,Solid vertical tap from DC-BUS-125A to PNL-DC-A.
+DC-BUS-125A,METER-V1,dc_power,high,METER-V1 is drawn on a short tap from the DC-BUS-125A backbone.
+PNL-DC-A,ESFAS-PNL-A,dc_power,high,Solid horizontal conductor from PNL-DC-A to ESFAS-PNL-A.
+PNL-DC-A,GND-DC-A,ground,high,Dashed grounding lead from PNL-DC-A down to GND-DC-A symbol.
+INV-120A,PNL-AC-A,power,high,Solid vertical conductor from INV-120A output to PNL-AC-A.
+PNL-AC-A,RPS-PNL-A,control_trip,high,Dashed control/trip line from PNL-AC-A to RPS-PNL-A.
+RPS-PNL-A,TRIP-MOD-A,control_trip,high,Dashed control/trip line from RPS-PNL-A to TRIP-MOD-A.
+RPS-PNL-A,RELAY-K27A,control_trip,high,Dashed vertical control/trip branch from RPS-PNL-A down to RELAY-K27A path.
+RELAY-K27A,RELAY-K59A,control_trip,high,Dashed relay chain line from RELAY-K27A to RELAY-K59A.
+RELAY-K59A,RELAY-K81A,control_trip,high,Dashed relay chain line from RELAY-K59A to RELAY-K81A.
+RELAY-K81A,RELAY-K86A,control_trip,high,Dashed relay chain line from RELAY-K81A to RELAY-K86A.
+RELAY-K86A,TRIP-MOD-A,control_trip,high,Dashed vertical control/trip branch from RELAY-K86A up to TRIP-MOD-A.
+PT-401A,JB-401A,signal,high,Dotted signal lead from PT-401A into the JB-401A input trunk.
+LT-402A,JB-401A,signal,high,Dotted signal lead from LT-402A into JB-401A.
+FT-403A,JB-401A,signal,high,Dotted signal lead from FT-403A into JB-401A.
+JB-401A,TB-RPS-A,signal,high,Dotted signal line from JB-401A to TB-RPS-A.
+TB-RPS-A,RPS-PNL-A,signal,high,Dotted signal line from TB-RPS-A continues to RPS-PNL-A input area.
+JB-401A,GND-401A,ground,high,Ground lead drops from JB-401A to GND-401A symbol.
+ESFAS-PNL-A,LOAD-SHED-CAB,control_trip,medium,Dashed routed control/trip line leaves ESFAS-PNL-A region and turns toward LOAD-SHED-CAB; exact branch is routed in central channel.
+TRIP-MOD-A,LOAD-SHED-CAB,control_trip,medium,Dashed control/trip route from TRIP-MOD-A top area joins the LOAD-SHED-CAB routed line; central branch lacks a dot but path is visually continuous.
+TB-RPS-A,ANN-PNL-1,signal,medium,Long dotted signal trunk from TB-RPS-A/RPS-PNL-A area continues toward ANN-PNL-1; no named intermediate node is shown.
+DC-BUS-125B,BAT-125B,dc_power,high,Solid vertical tap from DC-BUS-125B to BAT-125B.
+DC-BUS-125B,CHG-125B,dc_power,high,Solid vertical tap from DC-BUS-125B to CHG-125B.
+DC-BUS-125B,INV-120B,dc_power,high,Solid vertical tap from DC-BUS-125B to INV-120B.
+DC-BUS-125B,PNL-DC-B,dc_power,high,Solid vertical tap from DC-BUS-125B to PNL-DC-B.
+PNL-DC-B,ESFAS-PNL-B,dc_power,high,Solid horizontal conductor from PNL-DC-B to ESFAS-PNL-B.
+PNL-DC-B,GND-DC-B,ground,high,Dashed grounding lead from PNL-DC-B down to GND-DC-B symbol.
+INV-120B,PNL-AC-B,power,high,Solid vertical conductor from INV-120B output to PNL-AC-B.
+PNL-AC-B,RPS-PNL-B,control_trip,high,Dashed control/trip line from PNL-AC-B to RPS-PNL-B.
+RPS-PNL-B,TRIP-MOD-B,control_trip,high,Dashed control/trip line from RPS-PNL-B to TRIP-MOD-B.
+RPS-PNL-B,RELAY-K27B,control_trip,high,Dashed vertical control/trip branch from RPS-PNL-B down to RELAY-K27B path.
+RELAY-K27B,RELAY-K59B,control_trip,high,Dashed relay chain line from RELAY-K27B to RELAY-K59B.
+RELAY-K59B,RELAY-K81B,control_trip,high,Dashed relay chain line from RELAY-K59B to RELAY-K81B.
+RELAY-K81B,RELAY-K86B,control_trip,high,Dashed relay chain line from RELAY-K81B to RELAY-K86B.
+RELAY-K86B,TRIP-MOD-B,control_trip,high,Dashed vertical control/trip branch from RELAY-K86B up to TRIP-MOD-B.
+PT-401B,JB-401B,signal,high,Dotted signal lead from PT-401B into the JB-401B input trunk.
+LT-402B,JB-401B,signal,high,Dotted signal lead from LT-402B into JB-401B.
+FT-403B,JB-401B,signal,high,Dotted signal lead from FT-403B into JB-401B.
+JB-401B,TB-RPS-B,signal,high,Dotted signal line from JB-401B to TB-RPS-B.
+TB-RPS-B,RPS-PNL-B,signal,high,Dotted signal line from TB-RPS-B continues to RPS-PNL-B input area.
+JB-401B,GND-401B,ground,high,Ground lead drops from JB-401B to GND-401B symbol.
+ESFAS-PNL-B,LOAD-SHED-CAB,control_trip,medium,Dashed routed control/trip channel from ESFAS-PNL-B/Train B area returns toward LOAD-SHED-CAB; exact central branch is inferred from continuity.
+TRIP-MOD-B,LOAD-SHED-CAB,control_trip,medium,Dashed control/trip route from TRIP-MOD-B joins the right-side load-shed routing channel.
+TB-RPS-B,ANN-PNL-1,signal,medium,Long dotted Train B signal trunk from TB-RPS-B/RPS-PNL-B area runs toward ANN-PNL-1/central annunciation; no named intermediate node is shown.
+LOAD-SHED-CAB,TDR-1,control_trip,high,Dashed control/trip line from left side of LOAD-SHED-CAB to TDR-1.
+LOAD-SHED-CAB,TDR-2,control_trip,high,Dashed control/trip line from right side of LOAD-SHED-CAB to TDR-2.
+LOAD-SHED-CAB,LAMP-ALM-A,signal,medium,Dotted branch below LOAD-SHED-CAB visibly reaches the LAMP-ALM-A area; branch point is not individually named.
+LOAD-SHED-CAB,LAMP-ALM-B,signal,medium,Dotted branch below LOAD-SHED-CAB visibly reaches the LAMP-ALM-B area; branch point is not individually named.
+LOAD-SHED-CAB,ANN-PNL-1,signal,medium,Dotted signal drop from LOAD-SHED-CAB continues to the ANN-PNL-1 dotted trunk; connection inferred by continuous routed line.
+ANN-PNL-1,SEQ-REC-1,signal,high,Dotted signal line directly connects ANN-PNL-1 to SEQ-REC-1.

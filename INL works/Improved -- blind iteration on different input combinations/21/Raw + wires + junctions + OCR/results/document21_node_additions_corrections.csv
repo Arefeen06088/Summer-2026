@@ -1,0 +1,31 @@
+node,decision,canonical_node,evidence,confidence,notes
+BUS-101,add_logical_bus,BUS-101,raw schematic label/geometry: 13.8 kV AUX BUS heavy busbar in incoming auxiliary sources block,high,Bus/logical node visible in raw but not listed as component CSV row
+BUS-102,add_logical_bus,BUS-102,raw schematic label/geometry: 13.8 kV PREFERRED BUS heavy busbar in incoming auxiliary sources block,high,Bus/logical node visible in raw but not listed as component CSV row
+BUS-201A,add_logical_bus,BUS-201A,raw schematic label/geometry: 4.16 kV CLASS 1E BUS A heavy busbar,high,Bus/logical node visible in raw but not listed as component CSV row
+BUS-201B,add_logical_bus,BUS-201B,raw schematic label/geometry: 4.16 kV CLASS 1E BUS B heavy busbar,high,Bus/logical node visible in raw but not listed as component CSV row
+BUS-202A,add_logical_bus,BUS-202A,raw schematic label/geometry: 4.16 kV NON-1E BUS A heavy busbar,high,Bus/logical node visible in raw but not listed as component CSV row
+BUS-202B,add_logical_bus,BUS-202B,raw schematic label/geometry: 4.16 kV NON-1E BUS B heavy busbar,high,Bus/logical node visible in raw but not listed as component CSV row
+BUS-301A,add_logical_bus,BUS-301A,raw schematic label/geometry: 480 V LOAD CENTER A1 heavy busbar,high,Bus/logical node visible in raw but not listed as component CSV row
+BUS-302A,add_logical_bus,BUS-302A,raw schematic label/geometry: 480 V MCC BUS A2 heavy busbar,high,Bus/logical node visible in raw but not listed as component CSV row
+BUS-301B,add_logical_bus,BUS-301B,raw schematic label/geometry: 480 V LOAD CENTER B1 heavy busbar,high,Bus/logical node visible in raw but not listed as component CSV row
+BUS-302B,add_logical_bus,BUS-302B,raw schematic label/geometry: 480 V MCC BUS B2 heavy busbar,high,Bus/logical node visible in raw but not listed as component CSV row
+BUS-401A,add_logical_bus,BUS-401A,raw schematic label/geometry: 125 VDC BUS A heavy busbar,high,Bus/logical node visible in raw but not listed as component CSV row
+BUS-401B,add_logical_bus,BUS-401B,raw schematic label/geometry: 125 VDC BUS B heavy busbar,high,Bus/logical node visible in raw but not listed as component CSV row
+BUS-501A,add_logical_bus,BUS-501A,raw schematic label/geometry: 120 VAC INV BUS A vertical busbar in ladder logic block,high,Bus/logical node visible in raw but not listed as component CSV row
+BUS-501B,add_logical_bus,BUS-501B,raw schematic label/geometry: 120 VAC INV BUS B vertical busbar in ladder logic block,high,Bus/logical node visible in raw but not listed as component CSV row
+4KV_SWITCHGEAR_LEFT_RISER,add_logical_node,4KV_SWITCHGEAR_LEFT_RISER,raw full-left/top-center: vertical solid riser with black dots at multiple 4.16 kV bus intersections and CB-301A drop,medium,Added as a logical node so ambiguous riser/taps are not collapsed into one bus
+CB-204A,add_physical_component,CB-204A,raw top-center/full-right: breaker symbol and tiny label CB-204A between BUS-201B and DS-201B,high,Omitted from component CSV; kept as intermediate device
+CB-204B,add_physical_component,CB-204B,raw top-center/full-right: breaker symbol and tiny label CB-204B between BUS-202A and DS-202A,high,Omitted from component CSV; kept as intermediate device
+DS-401B,add_physical_component,DS-401B,raw lower-left/full-left: disconnect switch symbol labeled DS-401B between BUS-401A tie/drop and TR-DC-B,high,Omitted from component CSV; kept as intermediate device
+FEEDERS DROP TO 480 VLC,reject_artifact,,raw schematic: dashed annotation text/leader near train boundary; not a component or conductive edge,high,"Rejected as annotation/artifact, not a graph node"
+EDG FEEDERS/NO TIE CROSSING,reject_artifact,,raw schematic: annotation near dashed crossing region; not a node,high,"Rejected as annotation/artifact, not a graph node"
+DC FEEDERS CONTINUE BELOW,reject_artifact,,raw schematic: annotation at bottom of Train A block; not a node,high,"Rejected as annotation/artifact, not a graph node"
+CONTROL LADDER CIRCUITS,reject_artifact,,raw schematic: annotation above ladder routing; not a node,high,"Rejected as annotation/artifact, not a graph node"
+NOTES,reject_artifact,,raw schematic: right-side notes block; explanatory text only,high,"Rejected as annotation/artifact, not a graph node"
+LINE CODE,reject_artifact,,raw schematic: legend item; explanatory text only,high,"Rejected as annotation/artifact, not a graph node"
+SYMBOL KEY,reject_artifact,,raw schematic: legend item; explanatory text only,high,"Rejected as annotation/artifact, not a graph node"
+REVISION STATUS,reject_artifact,,raw schematic: revision table; metadata only,high,"Rejected as annotation/artifact, not a graph node"
+TITLE_BLOCK_METADATA,reject_artifact,,raw schematic: title block including component/connection counts and matrix filename; metadata/annotation only,high,"Rejected as annotation/artifact, not a graph node"
+GRID_BORDER_LABELS,reject_artifact,,raw schematic: sheet border grid numbers/letters; drafting reference only,high,"Rejected as annotation/artifact, not a graph node"
+BUS301B_CROSSING_AT_DS-J02B_DROP,reject_connection,,raw full-right: DS-J02B vertical feeder visually crosses BUS-301B area without a clear black junction dot,medium,Not included as BUS-301B to DS-J02B edge; crossing rule applied
+RIGHT_SIDE_4KV_VERTICAL_END_LINE,uncertain_not_promoted,,raw top-center/full-right: aligned bus end line/dots near EDG feeder origins could be a riser or bus-end geometry,low,No separate node emitted; EDG chains are captured from each bus to its first visible device

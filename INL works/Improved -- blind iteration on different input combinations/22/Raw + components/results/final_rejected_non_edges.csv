@@ -1,0 +1,11 @@
+source,target,reason,kind
+BUS-13A 13.8 KV AUX BUS A,BUS-13B 13.8 KV AUX BUS B,The only visible 13.8 kV A/B connection is through tie breaker CB-13T; there is no direct bus-to-bus junction dot bypassing the breaker.,power
+BUS-4160-A 4160V SAFETY BUS 1A,BUS-4160-B 4160V SAFETY BUS 1B,The A/B 4160 V buses connect only through CB-4AB-TIE; no direct bus-to-bus connection is drawn.,power
+BUS-4160-B 4160V SAFETY BUS 1B,BUS-4160-C 4160V SAFETY BUS 1C,The B and C 4160 V buses are horizontally aligned but separated by a visible gap and no tie breaker or junction dot.,power
+BUS-4160-C 4160V SAFETY BUS 1C,BUS-4160-D 4160V SAFETY BUS 1D,The C/D 4160 V buses connect only through CB-4CD-TIE; no direct bus-to-bus connection is drawn.,power
+BUS-480-A 480V LOAD CENTER A,BUS-480-B 480V LOAD CENTER B,Adjacent 480 V load-center buses are aligned but separated at the train boundary; no connecting tie or dot is visible.,power
+BUS-480-B 480V LOAD CENTER B,BUS-480-C 480V LOAD CENTER C,Adjacent 480 V load-center buses are aligned but separated at the train boundary; no connecting tie or dot is visible.,power
+BUS-480-C 480V LOAD CENTER C,BUS-480-D 480V LOAD CENTER D,Adjacent 480 V load-center buses are aligned but separated at the train boundary; no connecting tie or dot is visible.,power
+BUS-125A 125 VDC BUS A,BUS-125B 125 VDC BUS B,The A and B 125 VDC buses are separate horizontal buses; diode taps do not form a visible bus-to-bus conductor.,dc
+BUS-UPS-A 120 VAC UPS BUS A,BUS-UPS-B 120 VAC UPS BUS B,UPS buses A and B are separate parallel buses with separate loads; no tie conductor is shown.,power
+METER-V01,METER-A01,"Both meters hang from the same XFMR-PT-1 instrument loop, but there is no direct meter-to-meter line.",instrument

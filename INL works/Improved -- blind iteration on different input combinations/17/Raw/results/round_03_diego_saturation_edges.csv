@@ -1,0 +1,200 @@
+source,target,type,evidence
+SAT-1A,CB-SAT-1A,solid_power,top train A station auxiliary feeder
+CB-SAT-1A,BUS-4160-A,solid_power,top train A 4160 V bus
+UAT-1A,CB-UAT-1A,solid_power,top train A unit auxiliary feeder
+CB-UAT-1A,BUS-4160-A,solid_power,top train A 4160 V bus
+DGS-1A,CB-DG-1A,solid_power,top train A diesel feeder
+CB-DG-1A,BUS-4160-A,solid_power,top train A 4160 V bus
+GEN-001 MAIN GEN,UAT-1A,solid_power,main generator tap to UAT A
+GEN-001 MAIN GEN,UAT-1B,solid_power,main generator tap to UAT B
+BUS-4160-A,PT-4160-A,dotted_instrument,A 4160 V PT
+BUS-4160-A,CB-TR-A1,solid_power,A load center transformer feeder 1
+CB-TR-A1,TR-LC-A1,solid_power,A load center transformer 1
+BUS-4160-A,CB-TR-A2,solid_power,A load center transformer feeder 2
+CB-TR-A2,TR-LC-A2,solid_power,A load center transformer 2
+BUS-4160-A,CB-TIE-4AB,solid_power,normally open 4160 V tie
+CB-TIE-4AB,BUS-4160-B,solid_power,normally open 4160 V tie
+SAT-1B,CB-SAT-1B,solid_power,top train B station auxiliary feeder
+CB-SAT-1B,BUS-4160-B,solid_power,top train B 4160 V bus
+UAT-1B,CB-UAT-1B,solid_power,top train B unit auxiliary feeder
+CB-UAT-1B,BUS-4160-B,solid_power,top train B 4160 V bus
+DGS-1B,CB-DG-1B,solid_power,top train B diesel feeder
+CB-DG-1B,BUS-4160-B,solid_power,top train B 4160 V bus
+BUS-4160-B,PT-4160-B,dotted_instrument,B 4160 V PT
+BUS-4160-B,CB-TR-B1,solid_power,B load center transformer feeder 1
+CB-TR-B1,TR-LC-B1,solid_power,B load center transformer 1
+BUS-4160-B,CB-TR-B2,solid_power,B load center transformer feeder 2
+CB-TR-B2,TR-LC-B2,solid_power,B load center transformer 2
+TR-LC-A1,CB-480-A1,solid_power,480 V A incomer 1
+CB-480-A1,BUS-480-A,solid_power,480 V A bus
+TR-LC-A2,CB-480-A2,solid_power,480 V A incomer 2
+CB-480-A2,BUS-480-A,solid_power,480 V A bus
+BUS-480-A,AM-480-A,dotted_instrument,A bus ammeter
+BUS-480-A,VM-480-A,dotted_instrument,A bus voltmeter
+BUS-480-A,CT-480-A1,dotted_instrument,A bus CT
+BUS-480-A,GND-SWGR-A,ground,A switchgear ground
+BUS-480-A,CB-TIE-480AB,solid_power,normally open 480 V tie
+CB-TIE-480AB,BUS-480-B,solid_power,normally open 480 V tie
+TR-LC-B1,CB-480-B1,solid_power,480 V B incomer 1
+CB-480-B1,BUS-480-B,solid_power,480 V B bus
+TR-LC-B2,CB-480-B2,solid_power,480 V B incomer 2
+CB-480-B2,BUS-480-B,solid_power,480 V B bus
+BUS-480-B,AM-480-B,dotted_instrument,B bus ammeter
+BUS-480-B,VM-480-B,dotted_instrument,B bus voltmeter
+BUS-480-B,CT-480-B1,dotted_instrument,B bus CT
+BUS-480-B,GND-SWGR-B,ground,B switchgear ground
+BUS-480-A,CB-101A,solid_power,Train A 480 V feeder 101A
+CB-101A,DS-101A,solid_power,Train A feeder 101A protective device
+DS-101A,MS-101A,solid_power/control,Train A feeder 101A starter/relay
+MS-101A,PUMP-SLC-1A,solid_power/control,Train A feeder 101A load
+PUMP-SLC-1A,TB-SLC-1A,ground_terminal_or_instrument,Train A feeder 101A endpoint
+BUS-480-A,CB-102A,solid_power,Train A 480 V feeder 102A
+CB-102A,FU-102A,solid_power,Train A feeder 102A protective device
+FU-102A,MS-102A,solid_power/control,Train A feeder 102A starter/relay
+MS-102A,PUMP-CCW-1A,solid_power/control,Train A feeder 102A load
+PUMP-CCW-1A,GND-CCW-1A,ground_terminal_or_instrument,Train A feeder 102A endpoint
+BUS-480-A,CB-103A,solid_power,Train A 480 V feeder 103A
+CB-103A,DS-103A,solid_power,Train A feeder 103A protective device
+DS-103A,MS-103A,solid_power/control,Train A feeder 103A starter/relay
+MS-103A,PUMP-RHR-1A,solid_power/control,Train A feeder 103A load
+PUMP-RHR-1A,LS-RHR-1A,ground_terminal_or_instrument,Train A feeder 103A endpoint
+BUS-480-A,CB-104A,solid_power,Train A 480 V feeder 104A
+CB-104A,FU-104A,solid_power,Train A feeder 104A protective device
+FU-104A,MS-104A,solid_power/control,Train A feeder 104A starter/relay
+MS-104A,PUMP-CS-1A,solid_power/control,Train A feeder 104A load
+PUMP-CS-1A,TB-CS-1A,ground_terminal_or_instrument,Train A feeder 104A endpoint
+BUS-480-A,CB-105A,solid_power,Train A 480 V feeder 105A
+CB-105A,DS-105A,solid_power,Train A feeder 105A protective device
+DS-105A,MS-105A,solid_power/control,Train A feeder 105A starter/relay
+MS-105A,FAN-CRDM-1A,solid_power/control,Train A feeder 105A load
+FAN-CRDM-1A,GND-FAN-1A,ground_terminal_or_instrument,Train A feeder 105A endpoint
+BUS-480-A,CB-106A,solid_power,Train A 480 V feeder 106A
+CB-106A,FU-106A,solid_power,Train A feeder 106A protective device
+FU-106A,RELAY-K106A,solid_power/control,Train A feeder 106A starter/relay
+RELAY-K106A,HOV-RWCU-101A,solid_power/control,Train A feeder 106A load
+HOV-RWCU-101A,LS-RWCU-101A,ground_terminal_or_instrument,Train A feeder 106A endpoint
+BUS-480-A,CB-107A,solid_power,Train A 480 V feeder 107A
+CB-107A,DS-107A,solid_power,Train A feeder 107A protective device
+DS-107A,RELAY-K107A,solid_power/control,Train A feeder 107A starter/relay
+RELAY-K107A,HOV-RHR-102A,solid_power/control,Train A feeder 107A load
+HOV-RHR-102A,LS-RHR-102A,ground_terminal_or_instrument,Train A feeder 107A endpoint
+BUS-480-A,CB-108A,solid_power,Train A 480 V feeder 108A
+CB-108A,FU-108A,solid_power,Train A feeder 108A protective device
+FU-108A,MS-108A,solid_power/control,Train A feeder 108A starter/relay
+MS-108A,HTR-PZR-1A,solid_power/control,Train A feeder 108A load
+HTR-PZR-1A,TB-HTR-1A,ground_terminal_or_instrument,Train A feeder 108A endpoint
+BUS-480-A,CB-109A,solid_power,Train A 480 V feeder 109A
+CB-109A,DS-109A,solid_power,Train A feeder 109A protective device
+DS-109A,MS-109A,solid_power/control,Train A feeder 109A starter/relay
+MS-109A,PUMP-SW-1A,solid_power/control,Train A feeder 109A load
+PUMP-SW-1A,GND-SW-1A,ground_terminal_or_instrument,Train A feeder 109A endpoint
+BUS-480-A,CB-110A,solid_power,Train A 480 V feeder 110A
+CB-110A,FU-110A,solid_power,Train A feeder 110A protective device
+FU-110A,MS-110A,solid_power/control,Train A feeder 110A starter/relay
+MS-110A,HTR-AHU-1A,solid_power/control,Train A feeder 110A load
+HTR-AHU-1A,GND-AHU-1A,ground_terminal_or_instrument,Train A feeder 110A endpoint
+BUS-480-A,CB-111A,solid_power,Train A 480 V feeder 111A
+CB-111A,DS-111A,solid_power,Train A feeder 111A protective device
+DS-111A,MS-111A,solid_power/control,Train A feeder 111A starter/relay
+MS-111A,CMP-AIR-1A,solid_power/control,Train A feeder 111A load
+CMP-AIR-1A,TB-AIR-1A,ground_terminal_or_instrument,Train A feeder 111A endpoint
+BUS-480-A,CB-112A,solid_power,Train A 480 V feeder 112A
+CB-112A,FU-112A,solid_power,Train A feeder 112A protective device
+FU-112A,RELAY-K112A,solid_power/control,Train A feeder 112A starter/relay
+RELAY-K112A,INST-RAD-1A,solid_power/control,Train A feeder 112A load
+INST-RAD-1A,JB-RAD-1A,ground_terminal_or_instrument,Train A feeder 112A endpoint
+BUS-480-B,CB-201B,solid_power,Train B 480 V feeder 201B
+CB-201B,DS-201B,solid_power,Train B feeder 201B protective device
+DS-201B,MS-201B,solid_power/control,Train B feeder 201B starter/relay
+MS-201B,PUMP-SLC-1B,solid_power/control,Train B feeder 201B load
+PUMP-SLC-1B,TB-SLC-1B,ground_terminal_or_instrument,Train B feeder 201B endpoint
+BUS-480-B,CB-202B,solid_power,Train B 480 V feeder 202B
+CB-202B,FU-202B,solid_power,Train B feeder 202B protective device
+FU-202B,MS-202B,solid_power/control,Train B feeder 202B starter/relay
+MS-202B,PUMP-CCW-1B,solid_power/control,Train B feeder 202B load
+PUMP-CCW-1B,GND-CCW-1B,ground_terminal_or_instrument,Train B feeder 202B endpoint
+BUS-480-B,CB-203B,solid_power,Train B 480 V feeder 203B
+CB-203B,DS-203B,solid_power,Train B feeder 203B protective device
+DS-203B,MS-203B,solid_power/control,Train B feeder 203B starter/relay
+MS-203B,PUMP-RHR-1B,solid_power/control,Train B feeder 203B load
+PUMP-RHR-1B,LS-RHR-1B,ground_terminal_or_instrument,Train B feeder 203B endpoint
+BUS-480-B,CB-204B,solid_power,Train B 480 V feeder 204B
+CB-204B,FU-204B,solid_power,Train B feeder 204B protective device
+FU-204B,MS-204B,solid_power/control,Train B feeder 204B starter/relay
+MS-204B,PUMP-CS-1B,solid_power/control,Train B feeder 204B load
+PUMP-CS-1B,TB-CS-1B,ground_terminal_or_instrument,Train B feeder 204B endpoint
+BUS-480-B,CB-205B,solid_power,Train B 480 V feeder 205B
+CB-205B,DS-205B,solid_power,Train B feeder 205B protective device
+DS-205B,MS-205B,solid_power/control,Train B feeder 205B starter/relay
+MS-205B,FAN-CRDM-1B,solid_power/control,Train B feeder 205B load
+FAN-CRDM-1B,GND-FAN-1B,ground_terminal_or_instrument,Train B feeder 205B endpoint
+BUS-480-B,CB-206B,solid_power,Train B 480 V feeder 206B
+CB-206B,FU-206B,solid_power,Train B feeder 206B protective device
+FU-206B,RELAY-K206B,solid_power/control,Train B feeder 206B starter/relay
+RELAY-K206B,HOV-RWCU-101B,solid_power/control,Train B feeder 206B load
+HOV-RWCU-101B,LS-RWCU-101B,ground_terminal_or_instrument,Train B feeder 206B endpoint
+BUS-480-B,CB-207B,solid_power,Train B 480 V feeder 207B
+CB-207B,DS-207B,solid_power,Train B feeder 207B protective device
+DS-207B,RELAY-K207B,solid_power/control,Train B feeder 207B starter/relay
+RELAY-K207B,HOV-RHR-102B,solid_power/control,Train B feeder 207B load
+HOV-RHR-102B,LS-RHR-102B,ground_terminal_or_instrument,Train B feeder 207B endpoint
+BUS-480-B,CB-208B,solid_power,Train B 480 V feeder 208B
+CB-208B,FU-208B,solid_power,Train B feeder 208B protective device
+FU-208B,MS-208B,solid_power/control,Train B feeder 208B starter/relay
+MS-208B,HTR-PZR-1B,solid_power/control,Train B feeder 208B load
+HTR-PZR-1B,TB-HTR-1B,ground_terminal_or_instrument,Train B feeder 208B endpoint
+BUS-480-B,CB-209B,solid_power,Train B 480 V feeder 209B
+CB-209B,DS-209B,solid_power,Train B feeder 209B protective device
+DS-209B,MS-209B,solid_power/control,Train B feeder 209B starter/relay
+MS-209B,PUMP-SW-1B,solid_power/control,Train B feeder 209B load
+PUMP-SW-1B,GND-SW-1B,ground_terminal_or_instrument,Train B feeder 209B endpoint
+BUS-480-B,CB-210B,solid_power,Train B 480 V feeder 210B
+CB-210B,FU-210B,solid_power,Train B feeder 210B protective device
+FU-210B,MS-210B,solid_power/control,Train B feeder 210B starter/relay
+MS-210B,HTR-AHU-1B,solid_power/control,Train B feeder 210B load
+HTR-AHU-1B,GND-AHU-1B,ground_terminal_or_instrument,Train B feeder 210B endpoint
+BUS-480-B,CB-211B,solid_power,Train B 480 V feeder 211B
+CB-211B,DS-211B,solid_power,Train B feeder 211B protective device
+DS-211B,MS-211B,solid_power/control,Train B feeder 211B starter/relay
+MS-211B,CMP-AIR-1B,solid_power/control,Train B feeder 211B load
+CMP-AIR-1B,TB-AIR-1B,ground_terminal_or_instrument,Train B feeder 211B endpoint
+BUS-480-B,CB-212B,solid_power,Train B 480 V feeder 212B
+CB-212B,FU-212B,solid_power,Train B feeder 212B protective device
+FU-212B,RELAY-K212B,solid_power/control,Train B feeder 212B starter/relay
+RELAY-K212B,INST-RAD-1B,solid_power/control,Train B feeder 212B load
+INST-RAD-1B,JB-RAD-1B,ground_terminal_or_instrument,Train B feeder 212B endpoint
+BUS-480-A,CB-DC-A,solid_power,A lower DC feeder from 480 bus
+CB-DC-A,CHGR-125-A,solid_power,A charger feeder
+CHGR-125-A,BAT-125-A,solid_power,A charger to battery
+BAT-125-A,BUS-125DC-A,solid_power,A battery to 125 VDC bus
+BUS-125DC-A,GND-DC-A,ground,A DC bus ground
+BUS-125DC-A,INV-120-A,solid_power,A DC bus to inverter
+INV-120-A,BUS-120AC-A,solid_power,A inverter to AC bus
+BUS-120AC-A,STS-120-A,solid_power/control,A AC bus to static transfer switch
+STS-120-A,PNL-RPS-A,dashed_control,A STS to RPS panel
+PNL-RPS-A,TB-RPS-A,dashed_control,A RPS panel terminal block
+PNL-RPS-A,RELAY-UV-A1,dashed_control,A RPS undervoltage relay 1
+PNL-RPS-A,RELAY-UV-A2,dashed_control,A RPS undervoltage relay 2
+PNL-ESF-A,TB-ESF-A,dashed_control,A ESF panel terminal block
+PNL-ESF-A,RELAY-RPS-A,dashed_control,A ESF/RPS relay
+PNL-ESF-A,RELAY-ESF-A,dashed_control,A ESF relay
+BUS-125DC-A,CB-DCTIE-AB,solid_power,normally open DC tie
+CB-DCTIE-AB,BUS-125DC-B,solid_power,normally open DC tie
+BUS-480-B,CB-DC-B,solid_power,B lower DC feeder from 480 bus
+CB-DC-B,CHGR-125-B,solid_power,B charger feeder
+CHGR-125-B,BAT-125-B,solid_power,B charger to battery
+BAT-125-B,BUS-125DC-B,solid_power,B battery to 125 VDC bus
+BUS-125DC-B,GND-DC-B,ground,B DC bus ground
+BUS-125DC-B,INV-120-B,solid_power,B DC bus to inverter
+INV-120-B,BUS-120AC-B,solid_power,B inverter to AC bus
+BUS-120AC-B,STS-120-B,solid_power/control,B AC bus to static transfer switch
+STS-120-B,PNL-RPS-B,dashed_control,B STS to RPS panel
+PNL-RPS-B,TB-RPS-B,dashed_control,B RPS panel terminal block
+PNL-RPS-B,RELAY-UV-B1,dashed_control,B RPS undervoltage relay 1
+PNL-RPS-B,RELAY-UV-B2,dashed_control,B RPS undervoltage relay 2
+PNL-ESF-B,TB-ESF-B,dashed_control,B ESF panel terminal block
+PNL-ESF-B,RELAY-RPS-B,dashed_control,B ESF/RPS relay
+PNL-ESF-B,RELAY-ESF-B,dashed_control,B ESF relay
+PNL-DCS,REC-SOE-1,dashed_control,DCS panel to SOE recorder
+PNL-ANN,ANN-ESF-A,dashed_control,annunciator panel to A annunciator
+PNL-ANN,ANN-ESF-B,dashed_control,annunciator panel to B annunciator

@@ -1,0 +1,2577 @@
+{
+  "document": "17",
+  "iteration": "2",
+  "round": "2",
+  "agent": "Diego",
+  "status": "agreement_with_jennifer_round1",
+  "source_restriction": "Doc17 Raw + components only; no GT, no GT-derived feedback, no Raw+wires, no OCR engines",
+  "adopted_from": {
+    "review": "C:\\Asif_all_python_projects\\INL\\INL\\results\\doc17_round1_jennifer_review.json",
+    "matrix": "C:\\Asif_all_python_projects\\INL\\INL\\results\\doc17_round1_jennifer_connectivity_matrix.csv",
+    "reason": "Round 2 saturation review agrees with Jennifer round 1 precision changes after re-inspection of Doc17 raw/overlay visual context."
+  },
+  "nodes": [
+    {
+      "id": "TRAIN-A-CLASS-1E-LOAD-CENTER",
+      "type": "logical_node",
+      "evidence": "dashed enclosure label at upper left of sheet"
+    },
+    {
+      "id": "TRAIN-B-CLASS-1E-LOAD-CENTER",
+      "type": "logical_node",
+      "evidence": "dashed enclosure label at upper middle/right of sheet"
+    },
+    {
+      "id": "MASTER-TERMINAL-BLOCKS",
+      "type": "logical_node",
+      "evidence": "labeled terminal block rectangle between A/B transformer controls"
+    },
+    {
+      "id": "WIREWAY-A-CONTROL-LANES-2380-2420",
+      "type": "logical_node",
+      "evidence": "labeled control-lane box along left lower routing"
+    },
+    {
+      "id": "WIREWAY-B-CONTROL-LANES-2380-2420",
+      "type": "logical_node",
+      "evidence": "labeled control-lane box along center/right lower routing"
+    },
+    {
+      "id": "TRAIN-A-DC-RPS-ESF-CONTROL",
+      "type": "logical_node",
+      "evidence": "dashed lower-left control enclosure label"
+    },
+    {
+      "id": "TRAIN-B-DC-RPS-ESF-CONTROL",
+      "type": "logical_node",
+      "evidence": "dashed lower-middle/right control enclosure label"
+    },
+    {
+      "id": "ANNUNCIATION-SEQUENCE-OF-EVENTS",
+      "type": "logical_node",
+      "evidence": "labeled lower-center annunciation/SOE enclosure"
+    },
+    {
+      "id": "RPS-ESF-TRIP-ROUTING-SIDE-CHANNELS",
+      "type": "logical_node",
+      "evidence": "labeled dashed routing note near right-side control runs"
+    },
+    {
+      "id": "SAT-1A",
+      "type": "transformer",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-SAT-1A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "BUS-4160-A",
+      "type": "bus",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "UAT-1A",
+      "type": "transformer",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-UAT-1A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "DG-1A",
+      "type": "generator",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap. Jennifer round 1 type refinement from the visible symbol/label."
+    },
+    {
+      "id": "CB-DG-1A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "GEN-001",
+      "type": "generator",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap. Jennifer round 1 type refinement from the visible symbol/label."
+    },
+    {
+      "id": "UAT-1B",
+      "type": "transformer",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PT-4160-A",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-TIE-4AB",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "BUS-4160-B",
+      "type": "bus",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-TR-A1",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TR-LC-A1",
+      "type": "transformer",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-480-A1",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "BUS-480-A",
+      "type": "bus",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-TR-A2",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TR-LC-A2",
+      "type": "transformer",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-480-A2",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-UAT-1B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "DG-1B",
+      "type": "generator",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap. Jennifer round 1 type refinement from the visible symbol/label."
+    },
+    {
+      "id": "CB-DG-1B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "SAT-1B",
+      "type": "transformer",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-SAT-1B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PT-4160-B",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-TR-B1",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TR-LC-B1",
+      "type": "transformer",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-480-B1",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "BUS-480-B",
+      "type": "bus",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-TR-B2",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TR-LC-B2",
+      "type": "transformer",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-480-B2",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "AM-480-A",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "VM-480-A",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CT-480-A1",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "GND-SWGR-A",
+      "type": "ground",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "AM-480-B",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "VM-480-B",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CT-480-B1",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "GND-SWGR-B",
+      "type": "ground",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-TIE-480AB",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-201A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "DS-201A",
+      "type": "disconnect",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-201A",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PUMP-SLC-1A",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TB-SLC-1A",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-202A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "FU-202A",
+      "type": "fuse",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-202A",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PUMP-CCW-1A",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "GND-CCW-1A",
+      "type": "ground",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-203A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "DS-203A",
+      "type": "disconnect",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-203A",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PUMP-RHR-1A",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-204A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "FU-204A",
+      "type": "fuse",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-204A",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PUMP-CS-1A",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TB-CS-1A",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-205A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "DS-205A",
+      "type": "disconnect",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-205A",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "FAN-CRDM-1A",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "GND-FAN-1A",
+      "type": "ground",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-206A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "FU-206A",
+      "type": "fuse",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "RELAY-K106A",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "HOV-RHCU-101A",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "LS-RHCU-101A",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-207A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "DS-207A",
+      "type": "disconnect",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "RELAY-K107A",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "HOV-RHR-202A",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "LS-RHR-202A",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-208A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "FU-208A",
+      "type": "fuse",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-208A",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "HTR-RPS-1A",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TB-HTR-1A",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-209A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "DS-209A",
+      "type": "disconnect",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-209A",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PUMP-SW-1A",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "GND-SW-1A",
+      "type": "ground",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-210A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "FU-210A",
+      "type": "fuse",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-210A",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "HTR-AMU-1A",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "GND-AMU-1A",
+      "type": "ground",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-211A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "DS-211A",
+      "type": "disconnect",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-211A",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CMP-AIR-1A",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TB-AIR-1A",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-212A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "FU-212A",
+      "type": "fuse",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "RELAY-K112A",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "INCT-RAD-1A",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "JB-RAD-1A",
+      "type": "junction_box",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap. Jennifer round 1 type refinement from the visible symbol/label."
+    },
+    {
+      "id": "LS-RHR-1A",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-201B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "DS-201B",
+      "type": "disconnect",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-201B",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PUMP-SLC-1B",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TB-SLC-1B",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-202B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "FU-202B",
+      "type": "fuse",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-202B",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PUMP-CCW-1B",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "GND-CCW-1B",
+      "type": "ground",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-203B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "DS-203B",
+      "type": "disconnect",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-203B",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PUMP-RHR-1B",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-204B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "FU-204B",
+      "type": "fuse",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-204B",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PUMP-CS-2B",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TB-CS-2B",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-205B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "DS-205B",
+      "type": "disconnect",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-205B",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "FAN-CRDM-1B",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "GND-FAN-1B",
+      "type": "ground",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-206B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "FU-206B",
+      "type": "fuse",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "RELAY-K106B",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "HOV-RHCU-101B",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "LS-RHCU-101B",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-207B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "DS-207B",
+      "type": "disconnect",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "RELAY-K107B",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "HOV-RHR-202B",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "LS-RHR-202B",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-208B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "FU-208B",
+      "type": "fuse",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-208B",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "HTR-RPS-1B",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TB-HTR-1B",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-209B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "DS-209B",
+      "type": "disconnect",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-209B",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PUMP-SW-2B",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "GND-SW-2B",
+      "type": "ground",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-210B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "FU-210B",
+      "type": "fuse",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-210B",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "HTR-AMU-2B",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "GND-AMU-2B",
+      "type": "ground",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-211B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "DS-211B",
+      "type": "disconnect",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "MC-211B",
+      "type": "mcc",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CMP-AIR-2B",
+      "type": "load",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TB-AIR-2B",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-212B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "FU-212B",
+      "type": "fuse",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "RELAY-K112B",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "INCT-RAD-1B",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "JB-RAD-1B",
+      "type": "junction_box",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap. Jennifer round 1 type refinement from the visible symbol/label."
+    },
+    {
+      "id": "LS-RHR-1B",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-DC-A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CHGR-125-A",
+      "type": "dc_source",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "BAT-125-A",
+      "type": "dc_source",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "BUS-125DC-A",
+      "type": "bus",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "GND-DC-A",
+      "type": "ground",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "INV-120-A",
+      "type": "dc_source",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "BUS-120AC-A",
+      "type": "bus",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "STS-120-A",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-DC-B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CHGR-125-B",
+      "type": "dc_source",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "BAT-125-B",
+      "type": "dc_source",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "BUS-125DC-B",
+      "type": "bus",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "GND-DC-B",
+      "type": "ground",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "INV-120-B",
+      "type": "dc_source",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "BUS-120AC-B",
+      "type": "bus",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "STS-120-B",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "CB-DCTIE-AB",
+      "type": "breaker",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PNL-RPS-A",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TB-RPS-A",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "RELAY-UV-A1",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "RELAY-UV-A2",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PNL-ESF-A",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TB-ESF-A",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "RELAY-RPS-A",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "RELAY-ESF-A",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PNL-RPS-B",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TB-RPS-B",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "RELAY-UV-B1",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "RELAY-UV-B2",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PNL-ESF-B",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "TB-ESF-B",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "RELAY-RPS-B",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "RELAY-ESF-B",
+      "type": "instrument",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PNL-DCS",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "REC-SOE-1",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "PNL-ANN",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "ANN-ESF-A",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "ANN-ESF-B",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    },
+    {
+      "id": "REC-SOE-2",
+      "type": "panel",
+      "evidence": "Visual label read from Doc17 raw schematic/crops; component is aligned with a visible line or bus tap."
+    }
+  ],
+  "asserted_edges": [
+    {
+      "source": "SAT-1A",
+      "target": "CB-SAT-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical source feeder into 4.16 kV bus A"
+    },
+    {
+      "source": "CB-SAT-1A",
+      "target": "BUS-4160-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical source feeder into 4.16 kV bus A"
+    },
+    {
+      "source": "UAT-1A",
+      "target": "CB-UAT-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical unit auxiliary feeder into 4.16 kV bus A"
+    },
+    {
+      "source": "CB-UAT-1A",
+      "target": "BUS-4160-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical unit auxiliary feeder into 4.16 kV bus A"
+    },
+    {
+      "source": "DG-1A",
+      "target": "CB-DG-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid emergency diesel generator feeder into 4.16 kV bus A"
+    },
+    {
+      "source": "CB-DG-1A",
+      "target": "BUS-4160-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid emergency diesel generator feeder into 4.16 kV bus A"
+    },
+    {
+      "source": "GEN-001",
+      "target": "UAT-1A",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "main-generator line visibly enters UAT-1A primary area on train A side"
+    },
+    {
+      "source": "GEN-001",
+      "target": "UAT-1B",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "main-generator line visibly leaves GEN-001 toward UAT-1B primary area on train B side"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "PT-4160-A",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted instrument tap drops from 4.16 kV bus A to PT symbol"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-TIE-4AB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "inline normally-open tie breaker drawn between 4.16 kV buses A and B"
+    },
+    {
+      "source": "CB-TIE-4AB",
+      "target": "BUS-4160-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "inline normally-open tie breaker drawn between 4.16 kV buses A and B"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-TR-A1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus A through LC A1 transformer to 480 V bus A"
+    },
+    {
+      "source": "CB-TR-A1",
+      "target": "TR-LC-A1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus A through LC A1 transformer to 480 V bus A"
+    },
+    {
+      "source": "TR-LC-A1",
+      "target": "CB-480-A1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus A through LC A1 transformer to 480 V bus A"
+    },
+    {
+      "source": "CB-480-A1",
+      "target": "BUS-480-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus A through LC A1 transformer to 480 V bus A"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-TR-A2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus A through LC A2 transformer to 480 V bus A"
+    },
+    {
+      "source": "CB-TR-A2",
+      "target": "TR-LC-A2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus A through LC A2 transformer to 480 V bus A"
+    },
+    {
+      "source": "TR-LC-A2",
+      "target": "CB-480-A2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus A through LC A2 transformer to 480 V bus A"
+    },
+    {
+      "source": "CB-480-A2",
+      "target": "BUS-480-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus A through LC A2 transformer to 480 V bus A"
+    },
+    {
+      "source": "CB-TR-A2",
+      "target": "MASTER-TERMINAL-BLOCKS",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed control line leaves CB-TR-A2 and runs into the master terminal block area"
+    },
+    {
+      "source": "UAT-1B",
+      "target": "CB-UAT-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical unit auxiliary feeder into 4.16 kV bus B"
+    },
+    {
+      "source": "CB-UAT-1B",
+      "target": "BUS-4160-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical unit auxiliary feeder into 4.16 kV bus B"
+    },
+    {
+      "source": "DG-1B",
+      "target": "CB-DG-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid emergency diesel generator feeder into 4.16 kV bus B"
+    },
+    {
+      "source": "CB-DG-1B",
+      "target": "BUS-4160-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid emergency diesel generator feeder into 4.16 kV bus B"
+    },
+    {
+      "source": "SAT-1B",
+      "target": "CB-SAT-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical station auxiliary feeder into 4.16 kV bus B"
+    },
+    {
+      "source": "CB-SAT-1B",
+      "target": "BUS-4160-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical station auxiliary feeder into 4.16 kV bus B"
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "PT-4160-B",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted instrument tap drops from 4.16 kV bus B to PT symbol"
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-TR-B1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus B through LC B1 transformer to 480 V bus B"
+    },
+    {
+      "source": "CB-TR-B1",
+      "target": "TR-LC-B1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus B through LC B1 transformer to 480 V bus B"
+    },
+    {
+      "source": "TR-LC-B1",
+      "target": "CB-480-B1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus B through LC B1 transformer to 480 V bus B"
+    },
+    {
+      "source": "CB-480-B1",
+      "target": "BUS-480-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus B through LC B1 transformer to 480 V bus B"
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-TR-B2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus B through LC B2 transformer to 480 V bus B"
+    },
+    {
+      "source": "CB-TR-B2",
+      "target": "TR-LC-B2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus B through LC B2 transformer to 480 V bus B"
+    },
+    {
+      "source": "TR-LC-B2",
+      "target": "CB-480-B2",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus B through LC B2 transformer to 480 V bus B"
+    },
+    {
+      "source": "CB-480-B2",
+      "target": "BUS-480-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 4.16 kV bus B through LC B2 transformer to 480 V bus B"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "AM-480-A",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted ammeter tap above BUS-480-A"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "VM-480-A",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted voltmeter tap above BUS-480-A"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CT-480-A1",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted CT tap adjacent to transformer feeder on BUS-480-A"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "GND-SWGR-A",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "ground symbol tied to BUS-480-A with a solid branch"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "AM-480-B",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted ammeter tap above BUS-480-B"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "VM-480-B",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted voltmeter tap above BUS-480-B"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CT-480-B1",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted CT tap adjacent to transformer feeder on BUS-480-B"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "GND-SWGR-B",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "ground symbol tied to BUS-480-B with a solid branch"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-TIE-480AB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "inline normally-open tie breaker drawn between 480 V buses A and B"
+    },
+    {
+      "source": "CB-TIE-480AB",
+      "target": "BUS-480-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "inline normally-open tie breaker drawn between 480 V buses A and B"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-201A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-201A",
+      "target": "DS-201A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "DS-201A",
+      "target": "MC-201A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-201A",
+      "target": "PUMP-SLC-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "PUMP-SLC-1A",
+      "target": "TB-SLC-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-202A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-202A",
+      "target": "FU-202A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "FU-202A",
+      "target": "MC-202A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-202A",
+      "target": "PUMP-CCW-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "PUMP-CCW-1A",
+      "target": "GND-CCW-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-203A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-203A",
+      "target": "DS-203A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "DS-203A",
+      "target": "MC-203A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-203A",
+      "target": "PUMP-RHR-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-204A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-204A",
+      "target": "FU-204A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "FU-204A",
+      "target": "MC-204A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-204A",
+      "target": "PUMP-CS-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "PUMP-CS-1A",
+      "target": "TB-CS-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-205A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-205A",
+      "target": "DS-205A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "DS-205A",
+      "target": "MC-205A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-205A",
+      "target": "FAN-CRDM-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "FAN-CRDM-1A",
+      "target": "GND-FAN-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-206A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-206A",
+      "target": "FU-206A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "FU-206A",
+      "target": "RELAY-K106A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control lead descends from FU-206A to RELAY-K106A"
+    },
+    {
+      "source": "RELAY-K106A",
+      "target": "HOV-RHCU-101A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control lead descends from RELAY-K106A to HOV-RHCU-101A"
+    },
+    {
+      "source": "HOV-RHCU-101A",
+      "target": "LS-RHCU-101A",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted instrument/signal lead descends from HOV-RHCU-101A to LS-RHCU-101A"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-207A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-207A",
+      "target": "DS-207A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "DS-207A",
+      "target": "RELAY-K107A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control lead descends from DS-207A to RELAY-K107A"
+    },
+    {
+      "source": "RELAY-K107A",
+      "target": "HOV-RHR-202A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control lead descends from RELAY-K107A to HOV-RHR-202A"
+    },
+    {
+      "source": "HOV-RHR-202A",
+      "target": "LS-RHR-202A",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted instrument/signal lead descends from HOV-RHR-202A to LS-RHR-202A"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-208A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-208A",
+      "target": "FU-208A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "FU-208A",
+      "target": "MC-208A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-208A",
+      "target": "HTR-RPS-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "HTR-RPS-1A",
+      "target": "TB-HTR-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-209A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-209A",
+      "target": "DS-209A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "DS-209A",
+      "target": "MC-209A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-209A",
+      "target": "PUMP-SW-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "PUMP-SW-1A",
+      "target": "GND-SW-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-210A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-210A",
+      "target": "FU-210A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "FU-210A",
+      "target": "MC-210A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-210A",
+      "target": "HTR-AMU-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "HTR-AMU-1A",
+      "target": "GND-AMU-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-211A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-211A",
+      "target": "DS-211A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "DS-211A",
+      "target": "MC-211A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-211A",
+      "target": "CMP-AIR-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CMP-AIR-1A",
+      "target": "TB-AIR-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-212A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-212A",
+      "target": "FU-212A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train A 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "FU-212A",
+      "target": "RELAY-K112A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control lead descends from FU-212A to RELAY-K112A"
+    },
+    {
+      "source": "RELAY-K112A",
+      "target": "INCT-RAD-1A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control lead descends from RELAY-K112A to INCT-RAD-1A"
+    },
+    {
+      "source": "INCT-RAD-1A",
+      "target": "JB-RAD-1A",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted instrument/signal lead descends from INCT-RAD-1A to JB-RAD-1A"
+    },
+    {
+      "source": "PUMP-RHR-1A",
+      "target": "LS-RHR-1A",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted instrument/signal lead descends from PUMP-RHR-1A to LS-RHR-1A"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-201B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-201B",
+      "target": "DS-201B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "DS-201B",
+      "target": "MC-201B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-201B",
+      "target": "PUMP-SLC-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "PUMP-SLC-1B",
+      "target": "TB-SLC-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-202B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-202B",
+      "target": "FU-202B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "FU-202B",
+      "target": "MC-202B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-202B",
+      "target": "PUMP-CCW-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "PUMP-CCW-1B",
+      "target": "GND-CCW-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-203B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-203B",
+      "target": "DS-203B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "DS-203B",
+      "target": "MC-203B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-203B",
+      "target": "PUMP-RHR-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-204B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-204B",
+      "target": "FU-204B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "FU-204B",
+      "target": "MC-204B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-204B",
+      "target": "PUMP-CS-2B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "PUMP-CS-2B",
+      "target": "TB-CS-2B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-205B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-205B",
+      "target": "DS-205B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "DS-205B",
+      "target": "MC-205B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-205B",
+      "target": "FAN-CRDM-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "FAN-CRDM-1B",
+      "target": "GND-FAN-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-206B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-206B",
+      "target": "FU-206B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "FU-206B",
+      "target": "RELAY-K106B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control lead descends from FU-206B to RELAY-K106B"
+    },
+    {
+      "source": "RELAY-K106B",
+      "target": "HOV-RHCU-101B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control lead descends from RELAY-K106B to HOV-RHCU-101B"
+    },
+    {
+      "source": "HOV-RHCU-101B",
+      "target": "LS-RHCU-101B",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted instrument/signal lead descends from HOV-RHCU-101B to LS-RHCU-101B"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-207B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-207B",
+      "target": "DS-207B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "DS-207B",
+      "target": "RELAY-K107B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control lead descends from DS-207B to RELAY-K107B"
+    },
+    {
+      "source": "RELAY-K107B",
+      "target": "HOV-RHR-202B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control lead descends from RELAY-K107B to HOV-RHR-202B"
+    },
+    {
+      "source": "HOV-RHR-202B",
+      "target": "LS-RHR-202B",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted instrument/signal lead descends from HOV-RHR-202B to LS-RHR-202B"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-208B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-208B",
+      "target": "FU-208B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "FU-208B",
+      "target": "MC-208B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-208B",
+      "target": "HTR-RPS-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "HTR-RPS-1B",
+      "target": "TB-HTR-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-209B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-209B",
+      "target": "DS-209B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "DS-209B",
+      "target": "MC-209B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-209B",
+      "target": "PUMP-SW-2B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "PUMP-SW-2B",
+      "target": "GND-SW-2B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-210B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-210B",
+      "target": "FU-210B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "FU-210B",
+      "target": "MC-210B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-210B",
+      "target": "HTR-AMU-2B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "HTR-AMU-2B",
+      "target": "GND-AMU-2B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-211B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-211B",
+      "target": "DS-211B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "DS-211B",
+      "target": "MC-211B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "MC-211B",
+      "target": "CMP-AIR-2B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CMP-AIR-2B",
+      "target": "TB-AIR-2B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-212B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "CB-212B",
+      "target": "FU-212B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical train B 480 V feeder symbols are joined by a continuous visible line"
+    },
+    {
+      "source": "FU-212B",
+      "target": "RELAY-K112B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control lead descends from FU-212B to RELAY-K112B"
+    },
+    {
+      "source": "RELAY-K112B",
+      "target": "INCT-RAD-1B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control lead descends from RELAY-K112B to INCT-RAD-1B"
+    },
+    {
+      "source": "INCT-RAD-1B",
+      "target": "JB-RAD-1B",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted instrument/signal lead descends from INCT-RAD-1B to JB-RAD-1B"
+    },
+    {
+      "source": "PUMP-RHR-1B",
+      "target": "LS-RHR-1B",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "dotted instrument/signal lead descends from PUMP-RHR-1B to LS-RHR-1B"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "CB-DC-A",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "solid left-side route appears to drop from 480 V bus A to CB-DC-A before the charger"
+    },
+    {
+      "source": "CB-DC-A",
+      "target": "CHGR-125-A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid connected charger/battery route into 125 VDC bus A"
+    },
+    {
+      "source": "CHGR-125-A",
+      "target": "BAT-125-A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid connected charger/battery route into 125 VDC bus A"
+    },
+    {
+      "source": "BAT-125-A",
+      "target": "BUS-125DC-A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid connected charger/battery route into 125 VDC bus A"
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "GND-DC-A",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "ground branch from left end of 125 VDC bus A"
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "INV-120-A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid tap from 125 VDC bus A through inverter to 120 VAC inverter bus and STS"
+    },
+    {
+      "source": "INV-120-A",
+      "target": "BUS-120AC-A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid tap from 125 VDC bus A through inverter to 120 VAC inverter bus and STS"
+    },
+    {
+      "source": "BUS-120AC-A",
+      "target": "STS-120-A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid tap from 125 VDC bus A through inverter to 120 VAC inverter bus and STS"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "CB-DC-B",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "solid right-side route appears to drop from 480 V bus B to CB-DC-B before the charger"
+    },
+    {
+      "source": "CB-DC-B",
+      "target": "CHGR-125-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid connected charger/battery route into 125 VDC bus B"
+    },
+    {
+      "source": "CHGR-125-B",
+      "target": "BAT-125-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid connected charger/battery route into 125 VDC bus B"
+    },
+    {
+      "source": "BAT-125-B",
+      "target": "BUS-125DC-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid connected charger/battery route into 125 VDC bus B"
+    },
+    {
+      "source": "BUS-125DC-B",
+      "target": "GND-DC-B",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "ground branch at battery tap/right end of 125 VDC bus B"
+    },
+    {
+      "source": "BUS-125DC-B",
+      "target": "INV-120-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid tap from 125 VDC bus B through inverter to 120 VAC inverter bus and STS"
+    },
+    {
+      "source": "INV-120-B",
+      "target": "BUS-120AC-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid tap from 125 VDC bus B through inverter to 120 VAC inverter bus and STS"
+    },
+    {
+      "source": "BUS-120AC-B",
+      "target": "STS-120-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "solid tap from 125 VDC bus B through inverter to 120 VAC inverter bus and STS"
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "CB-DCTIE-AB",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "inline normally-open DC tie breaker drawn between 125 VDC buses A and B"
+    },
+    {
+      "source": "CB-DCTIE-AB",
+      "target": "BUS-125DC-B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "inline normally-open DC tie breaker drawn between 125 VDC buses A and B"
+    },
+    {
+      "source": "STS-120-A",
+      "target": "PNL-RPS-A",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed control feed from STS-120-A drops to PNL-RPS-A"
+    },
+    {
+      "source": "PNL-RPS-A",
+      "target": "TB-RPS-A",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed line from PNL-RPS-A to terminal block TB-RPS-A"
+    },
+    {
+      "source": "PNL-RPS-A",
+      "target": "RELAY-UV-A1",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed line from PNL-RPS-A down to RELAY-UV-A1"
+    },
+    {
+      "source": "PNL-RPS-A",
+      "target": "RELAY-UV-A2",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed line from PNL-RPS-A down to RELAY-UV-A2"
+    },
+    {
+      "source": "PNL-ESF-A",
+      "target": "TB-ESF-A",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed line from PNL-ESF-A to terminal block TB-ESF-A"
+    },
+    {
+      "source": "PNL-ESF-A",
+      "target": "RELAY-RPS-A",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed line from PNL-ESF-A down to RELAY-RPS-A"
+    },
+    {
+      "source": "PNL-ESF-A",
+      "target": "RELAY-ESF-A",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed line from PNL-ESF-A down to RELAY-ESF-A"
+    },
+    {
+      "source": "STS-120-B",
+      "target": "PNL-RPS-B",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed control feed from STS-120-B drops to PNL-RPS-B"
+    },
+    {
+      "source": "PNL-RPS-B",
+      "target": "TB-RPS-B",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed line from PNL-RPS-B to terminal block TB-RPS-B"
+    },
+    {
+      "source": "PNL-RPS-B",
+      "target": "RELAY-UV-B1",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed line from PNL-RPS-B down to RELAY-UV-B1"
+    },
+    {
+      "source": "PNL-RPS-B",
+      "target": "RELAY-UV-B2",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed line from PNL-RPS-B down to RELAY-UV-B2"
+    },
+    {
+      "source": "PNL-ESF-B",
+      "target": "TB-ESF-B",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed line from PNL-ESF-B to terminal block TB-ESF-B"
+    },
+    {
+      "source": "PNL-ESF-B",
+      "target": "RELAY-RPS-B",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed line from PNL-ESF-B down to RELAY-RPS-B"
+    },
+    {
+      "source": "PNL-ESF-B",
+      "target": "RELAY-ESF-B",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed/dotted line from PNL-ESF-B down to RELAY-ESF-B"
+    },
+    {
+      "source": "PNL-DCS",
+      "target": "REC-SOE-1",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed line drops from PNL-DCS and turns into REC-SOE-1"
+    },
+    {
+      "source": "PNL-ANN",
+      "target": "ANN-ESF-A",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed line from PNL-ANN left/down to ANN-ESF-A"
+    },
+    {
+      "source": "PNL-ANN",
+      "target": "ANN-ESF-B",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed line from PNL-ANN right/down to ANN-ESF-B"
+    },
+    {
+      "source": "RELAY-ESF-B",
+      "target": "REC-SOE-2",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted signal line from RELAY-ESF-B turns toward REC-SOE-2"
+    },
+    {
+      "source": "RELAY-ESF-A",
+      "target": "REC-SOE-1",
+      "kind": "signal",
+      "confidence": "high",
+      "evidence": "A dotted signal run descends from RELAY-ESF-A and continues across the lower annunciation area to a dotted vertical termination at REC-SOE-1."
+    }
+  ],
+  "uncertain_edges": [
+    {
+      "source": "CB-TR-A1",
+      "target": "WIREWAY-A-CONTROL-LANES-2380-2420",
+      "status": "uncertain_after_jennifer_round1",
+      "reason": "dashed line touches/approaches CB-TR-A1 but the far endpoint is a routing lane rather than a clearly terminated symbol",
+      "evidence": "left-side dashed control run enters the CB-TR-A1 area"
+    },
+    {
+      "source": "CB-TR-B2",
+      "target": "WIREWAY-B-CONTROL-LANES-2380-2420",
+      "status": "uncertain_after_jennifer_round1",
+      "reason": "dashed line leaves CB-TR-B2 toward the right-side routing lane, but termination is not explicit",
+      "evidence": "rightward dashed control run at CB-TR-B2"
+    }
+  ],
+  "rejected_non_edges": [
+    {
+      "source": "BUS-4160-A",
+      "target": "BUS-4160-B",
+      "reason": "not directly shorted; the visible connection passes through inline normally-open breaker CB-TIE-4AB"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "BUS-480-B",
+      "reason": "not directly shorted; the visible connection passes through inline normally-open breaker CB-TIE-480AB"
+    },
+    {
+      "source": "BUS-125DC-A",
+      "target": "BUS-125DC-B",
+      "reason": "not directly shorted; the visible connection passes through inline normally-open breaker CB-DCTIE-AB"
+    },
+    {
+      "source": "PNL-DCS",
+      "target": "PNL-ANN",
+      "reason": "nearby panels share an enclosure but no direct line segment between the labeled symbols is visible"
+    },
+    {
+      "source": "MASTER-TERMINAL-BLOCKS",
+      "target": "BUS-480-A",
+      "reason": "near vertical dashed routing crosses/approaches the 480 V bus area without a black termination dot"
+    },
+    {
+      "source": "RPS-ESF-TRIP-ROUTING-SIDE-CHANNELS",
+      "target": "BUS-480-B",
+      "reason": "routing note is adjacent to dashed side-channel lines and does not terminate on the solid 480 V bus"
+    },
+    {
+      "source": "MASTER-TERMINAL-BLOCKS",
+      "target": "CB-TIE-480AB",
+      "reason": "vertical dashed runs from the terminal-block area pass near/cross the 480 V tie region but do not visibly terminate on CB-TIE-480AB; crossings without dots are not junctions"
+    },
+    {
+      "source": "STS-120-A",
+      "target": "PNL-ESF-A",
+      "reason": "the dashed output from STS-120-A visibly routes to PNL-RPS-A; no direct dashed termination on PNL-ESF-A is drawn"
+    },
+    {
+      "source": "STS-120-B",
+      "target": "PNL-ESF-B",
+      "reason": "the dashed output from STS-120-B visibly routes to PNL-RPS-B; no direct dashed termination on PNL-ESF-B is drawn"
+    },
+    {
+      "source": "WIREWAY-A-CONTROL-LANES-2380-2420",
+      "target": "CB-DC-A",
+      "reason": "the wireway label is a route/callout beside the solid side run; it does not visibly terminate on CB-DC-A"
+    },
+    {
+      "source": "WIREWAY-B-CONTROL-LANES-2380-2420",
+      "target": "CB-DC-B",
+      "reason": "the wireway label is a route/callout beside the solid side run; it does not visibly terminate on CB-DC-B"
+    },
+    {
+      "source": "MASTER-TERMINAL-BLOCKS",
+      "target": "CB-TR-B1",
+      "reason": "removed from asserted edges because the B-side dashed control run is near the master terminal block area but is not drawn into or onto that block"
+    }
+  ],
+  "disagreements_with_jennifer_round1": [],
+  "notes": [
+    "Diego round 2 adopts Jennifer round 1 exactly for node order, asserted edge set, uncertain edges, rejected non-edges, and matrix values.",
+    "Visual re-inspection supports removing MASTER-TERMINAL-BLOCKS <-> CB-TR-B1 because the dashed route passes near but does not visibly terminate on the terminal block.",
+    "Visual re-inspection supports asserting RELAY-ESF-A <-> REC-SOE-1 because the dotted signal route visibly continues from the relay into the SOE recorder area.",
+    "Only CB-TR-A1 <-> WIREWAY-A-CONTROL-LANES-2380-2420 and CB-TR-B2 <-> WIREWAY-B-CONTROL-LANES-2380-2420 remain uncertain; other non-terminating dashed/control-route candidates are rejected under the drawing no-dot crossing rule."
+  ],
+  "validation": {
+    "node_count": 209,
+    "asserted_edge_count": 202,
+    "uncertain_edge_count": 2,
+    "matrix_dimensions": [
+      209,
+      209
+    ],
+    "symmetric": true,
+    "diagonal_zero": true,
+    "csv_edge_count": 202,
+    "csv_edge_count_equals_json_asserted_edge_count": true,
+    "asserted_edge_set_exactly_matches_jennifer_round1": true,
+    "matrix_edge_set_matches_json_asserted_edges": true,
+    "node_order_matches_jennifer_round1": true
+  }
+}

@@ -1,0 +1,204 @@
+source,target,confidence,status,evidence
+GEN-301,TR-UAT-31,high,accepted,A UAT source stack solid conductors
+TR-UAT-31,CB-4A-IN1,high,accepted,A UAT source stack solid conductors
+CB-4A-IN1,BUS-416A,high,accepted,A UAT source stack solid conductors
+SAT-31A,CB-4A-ST,high,accepted,A standby transformer source solid conductors
+CB-4A-ST,BUS-416A,high,accepted,A standby transformer source solid conductors
+DG-31A,CB-4A-DG,high,accepted,A diesel generator source solid conductors
+CB-4A-DG,BUS-416A,high,accepted,A diesel generator source solid conductors
+SAT-31B,CB-4B-ST,high,accepted,B standby transformer source solid conductors
+CB-4B-ST,BUS-416B,high,accepted,B standby transformer source solid conductors
+DG-31B,CB-4B-DG,high,accepted,B diesel generator source solid conductors
+CB-4B-DG,BUS-416B,high,accepted,B diesel generator source solid conductors
+BUS-416A,CB-4AB-TIE,high,accepted,4.16 kV tie breaker between train buses
+CB-4AB-TIE,BUS-416B,high,accepted,4.16 kV tie breaker between train buses
+BUS-416A,CB-4A01,high,accepted,A 4.16 kV feeder 01 transformer path to 480 V bus
+CB-4A01,TR-480A1,high,accepted,A 4.16 kV feeder 01 transformer path to 480 V bus
+TR-480A1,CB-480A-IN,high,accepted,A 4.16 kV feeder 01 transformer path to 480 V bus
+CB-480A-IN,BUS-480A,high,accepted,A 4.16 kV feeder 01 transformer path to 480 V bus
+BUS-416A,CB-4A02,high,accepted,A 4.16 kV feeder 02 alternate transformer path to 480 V bus
+CB-4A02,TR-480A2,high,accepted,A 4.16 kV feeder 02 alternate transformer path to 480 V bus
+TR-480A2,CB-480A-ALT,high,accepted,A 4.16 kV feeder 02 alternate transformer path to 480 V bus
+CB-480A-ALT,BUS-480A,high,accepted,A 4.16 kV feeder 02 alternate transformer path to 480 V bus
+BUS-416A,CB-4A03,high,accepted,A RCP branch solid feeder
+CB-4A03,DS-RCP-A,high,accepted,A RCP branch solid feeder
+DS-RCP-A,MTR-RCP-A,high,accepted,A RCP branch solid feeder
+MTR-RCP-A,GND-RCP-A,medium,accepted,A RCP side protection/ground path visibly tied to motor branch
+BUS-416A,CB-4A04,high,accepted,A service-water pump branch solid feeder
+CB-4A04,DS-SW-A,high,accepted,A service-water pump branch solid feeder
+DS-SW-A,PUMP-SW31A,high,accepted,A service-water pump branch solid feeder
+PUMP-SW31A,GND-SW-A,medium,accepted,A service-water pump ground lead
+BUS-416A,CB-4A05,high,accepted,A AFW pump branch solid feeder
+CB-4A05,DS-AFW-A,high,accepted,A AFW pump branch solid feeder
+DS-AFW-A,PUMP-AFW31A,high,accepted,A AFW pump branch solid feeder
+BUS-416A,CB-4A06,high,accepted,A chilled-water motor branch solid feeder
+CB-4A06,DS-CHW-A,high,accepted,A chilled-water motor branch solid feeder
+DS-CHW-A,MTR-CHWP-A,high,accepted,A chilled-water motor branch solid feeder
+BUS-416B,CB-4B01,high,accepted,B 4.16 kV feeder 01 transformer path to 480 V bus
+CB-4B01,TR-480B1,high,accepted,B 4.16 kV feeder 01 transformer path to 480 V bus
+TR-480B1,CB-480B-IN,high,accepted,B 4.16 kV feeder 01 transformer path to 480 V bus
+CB-480B-IN,BUS-480B,high,accepted,B 4.16 kV feeder 01 transformer path to 480 V bus
+BUS-416B,CB-4B02,high,accepted,B 4.16 kV feeder 02 alternate transformer path to 480 V bus
+CB-4B02,TR-480B2,high,accepted,B 4.16 kV feeder 02 alternate transformer path to 480 V bus
+TR-480B2,CB-480B-ALT,high,accepted,B 4.16 kV feeder 02 alternate transformer path to 480 V bus
+CB-480B-ALT,BUS-480B,high,accepted,B 4.16 kV feeder 02 alternate transformer path to 480 V bus
+BUS-416B,CB-4B03,high,accepted,B RCP branch solid feeder
+CB-4B03,DS-RCP-B,high,accepted,B RCP branch solid feeder
+DS-RCP-B,MTR-RCP-B,high,accepted,B RCP branch solid feeder
+MTR-RCP-B,GND-RCP-B,medium,accepted,B RCP side protection/ground path visibly tied to motor branch
+BUS-416B,CB-4B04,high,accepted,B service-water pump branch solid feeder
+CB-4B04,DS-SW-B,high,accepted,B service-water pump branch solid feeder
+DS-SW-B,PUMP-SW31B,high,accepted,B service-water pump branch solid feeder
+PUMP-SW31B,GND-SW-B,medium,accepted,B service-water pump ground lead
+BUS-416B,CB-4B05,high,accepted,B AFW pump branch solid feeder
+CB-4B05,DS-AFW-B,high,accepted,B AFW pump branch solid feeder
+DS-AFW-B,PUMP-AFW31B,high,accepted,B AFW pump branch solid feeder
+BUS-416B,CB-4B06,high,accepted,B chilled-water motor branch solid feeder
+CB-4B06,DS-CHW-B,high,accepted,B chilled-water motor branch solid feeder
+DS-CHW-B,MTR-CHWP-B,high,accepted,B chilled-water motor branch solid feeder
+BUS-480A,CB-480A11,high,accepted,BUS-480A feeder through CB-480A11 to MCC-31A1
+CB-480A11,MCC-31A1,high,accepted,BUS-480A feeder through CB-480A11 to MCC-31A1
+MCC-31A1,GND-MCC-A1,medium,accepted,MCC-31A1 enclosure ground
+MCC-31A1,STR-A1-1,high,accepted,MCC-31A1 branch to PUMP-CVC-A
+STR-A1-1,JB-A1-01,high,accepted,MCC-31A1 branch to PUMP-CVC-A
+JB-A1-01,PUMP-CVC-A,high,accepted,MCC-31A1 branch to PUMP-CVC-A
+MCC-31A1,STR-A1-2,high,accepted,MCC-31A1 branch to MOV-RHR-731A
+STR-A1-2,JB-A1-02,high,accepted,MCC-31A1 branch to MOV-RHR-731A
+JB-A1-02,MOV-RHR-731A,high,accepted,MCC-31A1 branch to MOV-RHR-731A
+MCC-31A1,STR-A1-3,high,accepted,MCC-31A1 branch to FAN-CRD-A
+STR-A1-3,JB-A1-03,high,accepted,MCC-31A1 branch to FAN-CRD-A
+JB-A1-03,FAN-CRD-A,high,accepted,MCC-31A1 branch to FAN-CRD-A
+BUS-480A,CB-480A12,high,accepted,BUS-480A feeder through CB-480A12 to MCC-31A2
+CB-480A12,MCC-31A2,high,accepted,BUS-480A feeder through CB-480A12 to MCC-31A2
+MCC-31A2,GND-MCC-A2,medium,accepted,MCC-31A2 enclosure ground
+MCC-31A2,STR-A2-1,high,accepted,MCC-31A2 branch to PUMP-CCW-A
+STR-A2-1,JB-A2-01,high,accepted,MCC-31A2 branch to PUMP-CCW-A
+JB-A2-01,PUMP-CCW-A,high,accepted,MCC-31A2 branch to PUMP-CCW-A
+MCC-31A2,STR-A2-2,high,accepted,MCC-31A2 branch to HTR-BORIC-A
+STR-A2-2,JB-A2-02,high,accepted,MCC-31A2 branch to HTR-BORIC-A
+JB-A2-02,HTR-BORIC-A,high,accepted,MCC-31A2 branch to HTR-BORIC-A
+MCC-31A2,STR-A2-3,high,accepted,MCC-31A2 branch to MOV-CHG-121A
+STR-A2-3,JB-A2-03,high,accepted,MCC-31A2 branch to MOV-CHG-121A
+JB-A2-03,MOV-CHG-121A,high,accepted,MCC-31A2 branch to MOV-CHG-121A
+BUS-480A,CB-480A13,high,accepted,BUS-480A feeder through CB-480A13 to LC-31A3
+CB-480A13,LC-31A3,high,accepted,BUS-480A feeder through CB-480A13 to LC-31A3
+LC-31A3,STR-A3-1,high,accepted,LC-31A3 branch to MTR-SUMP-A
+STR-A3-1,JB-A3-01,high,accepted,LC-31A3 branch to MTR-SUMP-A
+JB-A3-01,MTR-SUMP-A,high,accepted,LC-31A3 branch to MTR-SUMP-A
+LC-31A3,STR-A3-2,high,accepted,LC-31A3 branch to PUMP-LUBE-A
+STR-A3-2,JB-A3-02,high,accepted,LC-31A3 branch to PUMP-LUBE-A
+JB-A3-02,PUMP-LUBE-A,high,accepted,LC-31A3 branch to PUMP-LUBE-A
+LC-31A3,STR-A3-3,high,accepted,LC-31A3 branch to MOV-SI-902A
+STR-A3-3,JB-A3-03,high,accepted,LC-31A3 branch to MOV-SI-902A
+JB-A3-03,MOV-SI-902A,high,accepted,LC-31A3 branch to MOV-SI-902A
+BUS-480A,CB-480A14,high,accepted,BUS-480A feeder through CB-480A14 to PNL-31A4
+CB-480A14,PNL-31A4,high,accepted,BUS-480A feeder through CB-480A14 to PNL-31A4
+PNL-31A4,STR-A4-1,high,accepted,PNL-31A4 branch to FAN-CONT-A
+STR-A4-1,JB-A4-01,high,accepted,PNL-31A4 branch to FAN-CONT-A
+JB-A4-01,FAN-CONT-A,high,accepted,PNL-31A4 branch to FAN-CONT-A
+PNL-31A4,STR-A4-2,high,accepted,PNL-31A4 branch to PUMP-SAMPLE-A
+STR-A4-2,JB-A4-02,high,accepted,PNL-31A4 branch to PUMP-SAMPLE-A
+JB-A4-02,PUMP-SAMPLE-A,high,accepted,PNL-31A4 branch to PUMP-SAMPLE-A
+PNL-31A4,STR-A4-3,high,accepted,PNL-31A4 branch to MOV-VENT-406A
+STR-A4-3,JB-A4-03,high,accepted,PNL-31A4 branch to MOV-VENT-406A
+JB-A4-03,MOV-VENT-406A,high,accepted,PNL-31A4 branch to MOV-VENT-406A
+BUS-480A,CB-480AB-TIE,high,accepted,480 V tie breaker between train buses
+CB-480AB-TIE,BUS-480B,high,accepted,480 V tie breaker between train buses
+BUS-480B,CB-480B11,high,accepted,BUS-480B feeder through CB-480B11 to MCC-31B1
+CB-480B11,MCC-31B1,high,accepted,BUS-480B feeder through CB-480B11 to MCC-31B1
+MCC-31B1,GND-MCC-B1,medium,accepted,MCC-31B1 enclosure ground
+MCC-31B1,STR-B1-1,high,accepted,MCC-31B1 branch to PUMP-CVC-B
+STR-B1-1,JB-B1-01,high,accepted,MCC-31B1 branch to PUMP-CVC-B
+JB-B1-01,PUMP-CVC-B,high,accepted,MCC-31B1 branch to PUMP-CVC-B
+MCC-31B1,STR-B1-2,high,accepted,MCC-31B1 branch to MOV-RHR-731B
+STR-B1-2,JB-B1-02,high,accepted,MCC-31B1 branch to MOV-RHR-731B
+JB-B1-02,MOV-RHR-731B,high,accepted,MCC-31B1 branch to MOV-RHR-731B
+MCC-31B1,STR-B1-3,high,accepted,MCC-31B1 branch to FAN-CRD-B
+STR-B1-3,JB-B1-03,high,accepted,MCC-31B1 branch to FAN-CRD-B
+JB-B1-03,FAN-CRD-B,high,accepted,MCC-31B1 branch to FAN-CRD-B
+BUS-480B,CB-480B12,high,accepted,BUS-480B feeder through CB-480B12 to MCC-31B2
+CB-480B12,MCC-31B2,high,accepted,BUS-480B feeder through CB-480B12 to MCC-31B2
+MCC-31B2,GND-MCC-B2,medium,accepted,MCC-31B2 enclosure ground
+MCC-31B2,STR-B2-1,high,accepted,MCC-31B2 branch to PUMP-CCW-B
+STR-B2-1,JB-B2-01,high,accepted,MCC-31B2 branch to PUMP-CCW-B
+JB-B2-01,PUMP-CCW-B,high,accepted,MCC-31B2 branch to PUMP-CCW-B
+MCC-31B2,STR-B2-2,high,accepted,MCC-31B2 branch to HTR-BORIC-B
+STR-B2-2,JB-B2-02,high,accepted,MCC-31B2 branch to HTR-BORIC-B
+JB-B2-02,HTR-BORIC-B,high,accepted,MCC-31B2 branch to HTR-BORIC-B
+MCC-31B2,STR-B2-3,high,accepted,MCC-31B2 branch to MOV-CHG-121B
+STR-B2-3,JB-B2-03,high,accepted,MCC-31B2 branch to MOV-CHG-121B
+JB-B2-03,MOV-CHG-121B,high,accepted,MCC-31B2 branch to MOV-CHG-121B
+BUS-480B,CB-480B13,high,accepted,BUS-480B feeder through CB-480B13 to LC-31B3
+CB-480B13,LC-31B3,high,accepted,BUS-480B feeder through CB-480B13 to LC-31B3
+LC-31B3,STR-B3-1,high,accepted,LC-31B3 branch to MTR-SUMP-B
+STR-B3-1,JB-B3-01,high,accepted,LC-31B3 branch to MTR-SUMP-B
+JB-B3-01,MTR-SUMP-B,high,accepted,LC-31B3 branch to MTR-SUMP-B
+LC-31B3,STR-B3-2,high,accepted,LC-31B3 branch to PUMP-LUBE-B
+STR-B3-2,JB-B3-02,high,accepted,LC-31B3 branch to PUMP-LUBE-B
+JB-B3-02,PUMP-LUBE-B,high,accepted,LC-31B3 branch to PUMP-LUBE-B
+LC-31B3,STR-B3-3,high,accepted,LC-31B3 branch to MOV-SI-902B
+STR-B3-3,JB-B3-03,high,accepted,LC-31B3 branch to MOV-SI-902B
+JB-B3-03,MOV-SI-902B,high,accepted,LC-31B3 branch to MOV-SI-902B
+BUS-480B,CB-480B14,high,accepted,BUS-480B feeder through CB-480B14 to PNL-31B4
+CB-480B14,PNL-31B4,high,accepted,BUS-480B feeder through CB-480B14 to PNL-31B4
+PNL-31B4,STR-B4-1,high,accepted,PNL-31B4 branch to FAN-CONT-B
+STR-B4-1,JB-B4-01,high,accepted,PNL-31B4 branch to FAN-CONT-B
+JB-B4-01,FAN-CONT-B,high,accepted,PNL-31B4 branch to FAN-CONT-B
+PNL-31B4,STR-B4-2,high,accepted,PNL-31B4 branch to PUMP-SAMPLE-B
+STR-B4-2,JB-B4-02,high,accepted,PNL-31B4 branch to PUMP-SAMPLE-B
+JB-B4-02,PUMP-SAMPLE-B,high,accepted,PNL-31B4 branch to PUMP-SAMPLE-B
+PNL-31B4,STR-B4-3,high,accepted,PNL-31B4 branch to MOV-VENT-406B
+STR-B4-3,JB-B4-03,high,accepted,PNL-31B4 branch to MOV-VENT-406B
+JB-B4-03,MOV-VENT-406B,high,accepted,PNL-31B4 branch to MOV-VENT-406B
+BAT-31A,DS-BAT-A,high,accepted,A battery branch to 125 VDC bus
+DS-BAT-A,BUS-125DCA,high,accepted,A battery branch to 125 VDC bus
+CHG-31A,CB-CHG-A,high,accepted,A charger branch to 125 VDC bus
+CB-CHG-A,BUS-125DCA,high,accepted,A charger branch to 125 VDC bus
+BUS-125DCA,PNL-DC-A,high,accepted,A DC panel feeder from 125 VDC bus
+BUS-125DCA,CB-INV-A,medium,accepted,A inverter feeder and output bus
+CB-INV-A,INV-31A,medium,accepted,A inverter feeder and output bus
+INV-31A,BUS-INV-A,medium,accepted,A inverter feeder and output bus
+BUS-125DCA,CB-DCAB-TIE,high,accepted,125 VDC A/B tie breaker
+CB-DCAB-TIE,BUS-125DCB,high,accepted,125 VDC A/B tie breaker
+BUS-INV-A,PNL-AC-A,high,accepted,A AC panel between inverter bus and 120N bus
+PNL-AC-A,BUS-120N-A,high,accepted,A AC panel between inverter bus and 120N bus
+BUS-INV-A,RPS-PNL-A,high,accepted,A RPS panel solid feed from inverter bus
+RPS-PNL-A,TB-UPS-A,medium,accepted,A dashed control line from RPS panel to UPS terminal block
+BUS-120N-A,RELAY-K7A1,high,accepted,A relay K7A1 drop from BUS-120N-A
+RELAY-K7A1,TB-RPS-A1,medium,accepted,A relay K7A1 vertical lead to terminal block
+TB-RPS-A1,PT-31A1,medium,accepted,A dotted instrument signal from terminal block to PT
+BUS-120N-A,RELAY-K7A2,high,accepted,A relay K7A2 drop from BUS-120N-A
+RELAY-K7A2,TB-RPS-A2,medium,accepted,A relay K7A2 vertical lead to terminal block
+TB-RPS-A2,PT-31A2,medium,accepted,A dotted instrument signal from terminal block to PT
+BUS-120N-A,RELAY-K7A3,high,accepted,A relay K7A3 drop from BUS-120N-A
+RELAY-K7A3,TB-RPS-A3,medium,accepted,A relay K7A3 vertical lead to terminal block
+TB-RPS-A3,PT-31A3,medium,accepted,A dotted instrument signal from terminal block to PT
+BUS-120N-A,RELAY-K7A4,high,accepted,A relay K7A4 drop from BUS-120N-A
+RELAY-K7A4,TB-RPS-A4,medium,accepted,A relay K7A4 vertical lead to terminal block
+TB-RPS-A4,PT-31A4,medium,accepted,A dotted instrument signal from terminal block to PT
+BAT-31B,DS-BAT-B,high,accepted,B battery branch to 125 VDC bus
+DS-BAT-B,BUS-125DCB,high,accepted,B battery branch to 125 VDC bus
+CHG-31B,CB-CHG-B,high,accepted,B charger branch to 125 VDC bus
+CB-CHG-B,BUS-125DCB,high,accepted,B charger branch to 125 VDC bus
+BUS-125DCB,PNL-DC-B,high,accepted,B DC panel feeder from 125 VDC bus
+BUS-125DCB,CB-INV-B,medium,accepted,B inverter feeder and output bus
+CB-INV-B,INV-31B,medium,accepted,B inverter feeder and output bus
+INV-31B,BUS-INV-B,medium,accepted,B inverter feeder and output bus
+BUS-INV-B,PNL-AC-B,high,accepted,B AC panel between inverter bus and 120N bus
+PNL-AC-B,BUS-120N-B,high,accepted,B AC panel between inverter bus and 120N bus
+BUS-INV-B,RPS-PNL-B,high,accepted,B RPS panel solid feed from inverter bus
+RPS-PNL-B,TB-UPS-B,medium,accepted,B dashed control line from RPS panel to UPS terminal block
+BUS-120N-B,RELAY-K7B1,high,accepted,B relay K7B1 drop from BUS-120N-B
+RELAY-K7B1,TB-RPS-B1,medium,accepted,B relay K7B1 vertical lead to terminal block
+TB-RPS-B1,PT-31B1,medium,accepted,B dotted instrument signal from terminal block to PT
+BUS-120N-B,RELAY-K7B2,high,accepted,B relay K7B2 drop from BUS-120N-B
+RELAY-K7B2,TB-RPS-B2,medium,accepted,B relay K7B2 vertical lead to terminal block
+TB-RPS-B2,PT-31B2,medium,accepted,B dotted instrument signal from terminal block to PT
+BUS-120N-B,RELAY-K7B3,high,accepted,B relay K7B3 drop from BUS-120N-B
+RELAY-K7B3,TB-RPS-B3,medium,accepted,B relay K7B3 vertical lead to terminal block
+TB-RPS-B3,PT-31B3,medium,accepted,B dotted instrument signal from terminal block to PT
+BUS-120N-B,RELAY-K7B4,high,accepted,B relay K7B4 drop from BUS-120N-B
+RELAY-K7B4,TB-RPS-B4,medium,accepted,B relay K7B4 vertical lead to terminal block
+TB-RPS-B4,PT-31B4,medium,accepted,B dotted instrument signal from terminal block to PT
+RPS-PNL-A,BUS-120N-A,medium,removed_after_diego_review,Jennifer round 1 proposed vertical RPS to 120N link; removed after final review
+RPS-PNL-B,BUS-120N-B,medium,removed_after_diego_review,Jennifer round 1 proposed vertical RPS to 120N link; removed after final review

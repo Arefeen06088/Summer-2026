@@ -1,0 +1,37 @@
+Connectivity matrix validation summary - Document 22
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\22\synthetic_npp_connectivity_matrix_clean(1).csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_connectivity_matrix.csv): TP=188, FP=11, FN=20, Precision=0.944724, Recall=0.903846, F1=0.923833
+- Jennifer -- Round 2 (round_02_jennifer_connectivity_matrix.csv): TP=193, FP=5, FN=15, Precision=0.974747, Recall=0.927885, F1=0.950739
+- Diego -- Round 3 (round_03_diego_connectivity_matrix.csv): TP=193, FP=5, FN=15, Precision=0.974747, Recall=0.927885, F1=0.950739
+- Jennifer -- Round 4 (round_04_jennifer_connectivity_matrix.csv): TP=193, FP=5, FN=15, Precision=0.974747, Recall=0.927885, F1=0.950739
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=193, FP=5, FN=15, Precision=0.974747, Recall=0.927885, F1=0.950739
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- CB-RHR-A -- INST-CT-A
+- CB-RHR-B -- INST-CT-B
+- CB-RHR-C -- INST-CT-C
+- CB-RHR-D -- INST-CT-D
+- METER-A01 -- XFMR-PT-1
+
+False-negative edge examples:
+- BUS-125A -- DIODE-OR-A
+- BUS-125A -- METER-A01
+- BUS-125B -- DIODE-OR-B
+- BUS-4160-A -- SYNC-PNL-1
+- BUS-4160-A -- XFMR-PT-1
+- BUS-480-A -- CB-DC-A1
+- BUS-480-B -- CB-DC-B1
+- CB-RHR-A -- MCC-AA
+- CB-RHR-A -- RELAY-KA1
+- CB-RHR-B -- MCC-BA
+
+Missing GT node examples:
+- DIODE-OR-A: 1 missed incident GT edge(s)
+- DIODE-OR-B: 1 missed incident GT edge(s)

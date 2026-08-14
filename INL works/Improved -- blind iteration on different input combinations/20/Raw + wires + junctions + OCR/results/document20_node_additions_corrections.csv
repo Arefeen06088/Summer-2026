@@ -1,0 +1,26 @@
+node,decision,canonical_node,evidence,confidence,notes
+13.8 KV SAFETY BUS A,add_logical_node,BUS-13K-A,raw top bus label and BUS-13K-A tag near tie breaker,high,logical header for left 13.8 kV bus segment
+13.8 KV SAFETY BUS B,add_logical_node,BUS-13K-B,raw top bus label and BUS-13K-B tag near right side,high,logical header for right 13.8 kV bus segment
+4.16 KV CLASS 1E BUS A,add_logical_node,BUS-416-A,raw top bus label and BUS-416-A tag near tie breaker,high,logical header for left 4.16 kV bus segment
+4.16 KV CLASS 1E BUS B,add_logical_node,BUS-416-B,raw top bus label and BUS-416-B tag near right side,high,logical header for right 4.16 kV bus segment
+480 VAC LOAD CENTER A,add_logical_node,BUS-480-A,raw middle label and BUS-480-A tag on load center A header,high,logical header for load center A
+480 VAC LOAD CENTER B,add_logical_node,BUS-480-B,raw middle label and BUS-480-B tag on load center B header,high,logical header for load center B
+480 VAC LOAD CENTER C,add_logical_node,BUS-480-C,raw middle label and BUS-480-C tag on load center C header,high,logical header for load center C
+480 VAC LOAD CENTER D,add_logical_node,BUS-480-D,raw middle label and BUS-480-D tag on load center D header,high,logical header for load center D
+125 VDC CONTROL BUS A,add_logical_node,BUS-125DCA,raw middle DC bus label and BUS-125DCA tag,high,logical header for left 125 VDC control bus
+125 VDC CONTROL BUS B,add_logical_node,BUS-125DCB,raw middle DC bus label and BUS-125DCB tag,high,logical header for right 125 VDC control bus
+A/B ESF INTERLOCK,add_logical_node,A/B ESF INTERLOCK,raw lower center label on dashed interlock loop between K106 and K108,medium,logical node for the cross division ESFAS interlock conductor
+UPS-A AC OUTPUT,add_logical_node,UPS-A AC OUTPUT,raw middle dashed horizontal stub at INV-UPS-A AC side,low,no labeled receiving component visible
+UPS-B AC OUTPUT,add_logical_node,UPS-B AC OUTPUT,raw middle dashed horizontal stub at INV-UPS-B AC side,low,no labeled receiving component visible
+N.O. BUS TIE,reject_annotation,,raw text near CB-TIE-416 only annotates breaker status,high,not a separate node
+480V TIE,reject_annotation,CB-TIE-480,raw text describes the tie breaker region,high,canonical device is CB-TIE-480
+3/C #2 AWG,reject_annotation,,wire size text along 480 feeder drops,high,not a node or component
+bus tick marks,reject_artifact,,short perpendicular ticks repeat along bus bars without black junction dots,high,not connection nodes
+large dashed zone boundaries,reject_artifact,,dashed outlines around sheet regions do not terminate on devices,high,not conductors
+drawing border and grid,reject_artifact,,sheet frame coordinate grid and title block lines,high,not circuit wiring
+line legend samples,reject_artifact,,right side legend shows line style examples only,high,not circuit wiring
+wire crossings without black dots,reject_connection,,raw notes state crossings without dots are not connections,high,not connected unless a black dot is present
+GEN-M1 adjacent small square,reviewed_not_promoted,GEN-M1,unlabeled terminal square between GEN-M1 and CB-GEN1 has no readable tag,medium,edge retained as GEN-M1 to CB-GEN1
+DG-1A adjacent small square,reviewed_not_promoted,DG-1A,unlabeled terminal square between DG-1A and CB-DG1A has no readable tag,medium,edge retained as DG-1A to CB-DG1A
+DG-1B adjacent small square,reviewed_not_promoted,DG-1B,unlabeled terminal square between DG-1B and CB-DG1B has no readable tag,medium,edge retained as DG-1B to CB-DG1B
+component labels from CSV,accepted_reference_index,,component_visual_ocr_labels.csv used as an allowed candidate index only,high,labels were visually checked against raw crops where involved in edges
