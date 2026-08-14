@@ -1,0 +1,302 @@
+{
+  "document": "40",
+  "iteration": "1",
+  "final_status": "saturation_agreement",
+  "nodes": [
+    {
+      "id": "SWGR-21A",
+      "type": "bus",
+      "label_evidence": "Raw top/left core: thick horizontal 4.16 kV bus labeled SWGR-21A with C21A-01 label and junction dots."
+    },
+    {
+      "id": "MCC-21A",
+      "type": "bus",
+      "label_evidence": "Raw left core: rectangular 480 V 3PH motor control center bus labeled MCC-21A."
+    },
+    {
+      "id": "DC-BUS-21A",
+      "type": "bus",
+      "label_evidence": "Raw lower-left/center: thick 125 VDC horizontal bus labeled DC-BUS-21A, cable D21A-07."
+    },
+    {
+      "id": "DG-21A",
+      "type": "component",
+      "label_evidence": "Raw top-left: circular generator symbol labeled DG-21A."
+    },
+    {
+      "id": "UAT-2A",
+      "type": "component",
+      "label_evidence": "Raw top-left: transformer symbol labeled UAT-2A above DS-21A."
+    },
+    {
+      "id": "DS-21A",
+      "type": "component",
+      "label_evidence": "Raw top-left: disconnect-switch box labeled DS-21A below UAT-2A."
+    },
+    {
+      "id": "ATS-21A",
+      "type": "component",
+      "label_evidence": "Raw top-left: automatic transfer switch box labeled ATS-21A between DG/DS feeders and SWGR-21A."
+    },
+    {
+      "id": "CB-21A1",
+      "type": "component",
+      "label_evidence": "Raw upper-left: circuit breaker symbol labeled CB-21A1 below SWGR-21A."
+    },
+    {
+      "id": "TR-21A",
+      "type": "component",
+      "label_evidence": "Raw upper-left: transformer symbol labeled TR-21A between CB-21A1 and MCC-21A."
+    },
+    {
+      "id": "VT-21A",
+      "type": "component",
+      "label_evidence": "Raw left/center: circular VT symbol labeled VT-21A with dashed instrument lead."
+    },
+    {
+      "id": "CB-MPA1",
+      "type": "component",
+      "label_evidence": "Raw left core: circuit breaker symbol labeled CB-MPA1 in MCC-21A pump feeder, trip label MPA1."
+    },
+    {
+      "id": "PUMP-SI21A",
+      "type": "component",
+      "label_evidence": "Raw left core: motor/pump circle labeled PUMP-SI21A below CB-MPA1."
+    },
+    {
+      "id": "PUMP-CCW21A",
+      "type": "component",
+      "label_evidence": "Raw left core: motor/pump circle labeled PUMP-CCW21A on MCC-21A feeder."
+    },
+    {
+      "id": "FAN-RB21A",
+      "type": "component",
+      "label_evidence": "Raw left core: fan/motor circle labeled FAN-RB21A on MCC-21A feeder."
+    },
+    {
+      "id": "CT-21A",
+      "type": "component",
+      "label_evidence": "Raw left core: circular CT symbol labeled CT-21A with dashed lead down to RPS panel."
+    },
+    {
+      "id": "MOV-HV211A",
+      "type": "component",
+      "label_evidence": "Raw left core: motor-operated valve symbol labeled MOV-HV211A on MCC-21A feeder."
+    },
+    {
+      "id": "MOV-RWST21A",
+      "type": "component",
+      "label_evidence": "Raw left core: motor-operated valve symbol labeled MOV-RWST21A with no-dot crossing callout nearby."
+    },
+    {
+      "id": "XFMR-CPT21A",
+      "type": "component",
+      "label_evidence": "Raw left/center: transformer symbol labeled XFMR-CPT21A feeding AC-PNL-120A."
+    },
+    {
+      "id": "AC-PNL-120A",
+      "type": "component",
+      "label_evidence": "Raw left/center: AC panel box labeled AC-PNL-120A beneath XFMR-CPT21A."
+    },
+    {
+      "id": "RECT-21A",
+      "type": "component",
+      "label_evidence": "Raw lower-left/center: charger/rectifier box labeled RECT-21A below AC-PNL-120A."
+    },
+    {
+      "id": "BAT-21A",
+      "type": "component",
+      "label_evidence": "Raw lower-left/center: 125 VDC battery symbol labeled BAT-21A tied to DC-BUS-21A."
+    },
+    {
+      "id": "INV-21A",
+      "type": "component",
+      "label_evidence": "Raw lower-left/center: inverter box labeled INV-21A below DC-BUS-21A with dashed output to RPS-PNL-A."
+    },
+    {
+      "id": "LOCA-SIG-A",
+      "type": "logical_node",
+      "label_evidence": "Raw lower-left: circular logical signal symbol labeled LOCA-SIG-A connected by dashed line to JB-21A."
+    },
+    {
+      "id": "JB-21A",
+      "type": "component",
+      "label_evidence": "Raw lower-left: terminal block box labeled JB-21A in dashed LOCA/RPS signal path."
+    },
+    {
+      "id": "RPS-PNL-A",
+      "type": "component",
+      "label_evidence": "Raw lower-left: RPS logic panel box labeled RPS-PNL-A with terminal strip and dashed logic wiring."
+    },
+    {
+      "id": "RELAY-K21A",
+      "type": "component",
+      "label_evidence": "Raw lower-left: relay coil box labeled RELAY-K21A in RPS CH A control lane."
+    },
+    {
+      "id": "RELAY-86A",
+      "type": "component",
+      "label_evidence": "Raw lower-left: relay coil box labeled RELAY-86A in RPS CH A control lane."
+    },
+    {
+      "id": "VOLTAGE-SIG-A",
+      "type": "logical_node",
+      "label_evidence": "Raw left core/lower-left: dashed instrument line labeled VOLTAGE SIG A near MOV-RWST21A no-dot crossing."
+    },
+    {
+      "id": "TRIP-MPA1",
+      "type": "logical_node",
+      "label_evidence": "Raw left core: dashed trip-control wiring labeled TRIP MPA1 entering the CB-MPA1 trip circuit."
+    },
+    {
+      "id": "TIE-BKR-21AB",
+      "type": "component",
+      "label_evidence": "Raw top center: breaker rectangle labeled TIE-BKR-21AB between SWGR-21A and SWGR-21B."
+    },
+    {
+      "id": "SWGR-21B",
+      "type": "bus",
+      "label_evidence": "Raw top/right core: thick horizontal 4.16 kV bus labeled SWGR-21B with C21B-01 label and junction dots."
+    },
+    {
+      "id": "MCC-21B",
+      "type": "bus",
+      "label_evidence": "Raw center/right core: rectangular 480 V 3PH motor control center bus labeled MCC-21B."
+    },
+    {
+      "id": "DC-BUS-21B",
+      "type": "bus",
+      "label_evidence": "Raw lower-right/center: thick 125 VDC horizontal bus labeled DC-BUS-21B, cable D21B-07."
+    },
+    {
+      "id": "DG-21B",
+      "type": "component",
+      "label_evidence": "Raw top-right: circular generator symbol labeled DG-21B."
+    },
+    {
+      "id": "SAT-2B",
+      "type": "component",
+      "label_evidence": "Raw top-right/center: source alternate transformer symbol labeled SAT-2B."
+    },
+    {
+      "id": "DS-21B",
+      "type": "component",
+      "label_evidence": "Raw top-right/center: disconnect-switch box labeled DS-21B below SAT-2B."
+    },
+    {
+      "id": "ATS-21B",
+      "type": "component",
+      "label_evidence": "Raw top-right: automatic transfer switch box labeled ATS-21B between DG/DS feeders and SWGR-21B."
+    },
+    {
+      "id": "CB-21B1",
+      "type": "component",
+      "label_evidence": "Raw right core: circuit breaker symbol labeled CB-21B1 below SWGR-21B."
+    },
+    {
+      "id": "TR-21B",
+      "type": "component",
+      "label_evidence": "Raw right core: transformer symbol labeled TR-21B between CB-21B1 and MCC-21B."
+    },
+    {
+      "id": "VT-21B",
+      "type": "component",
+      "label_evidence": "Raw right core: circular VT symbol labeled VT-21B with dashed instrument lead."
+    },
+    {
+      "id": "CB-MPB1",
+      "type": "component",
+      "label_evidence": "Raw center/right core: circuit breaker symbol labeled CB-MPB1 in MCC-21B pump feeder, trip label MPB1."
+    },
+    {
+      "id": "PUMP-SI21B",
+      "type": "component",
+      "label_evidence": "Raw center/right core: motor/pump circle labeled PUMP-SI21B below CB-MPB1."
+    },
+    {
+      "id": "PUMP-CCW21B",
+      "type": "component",
+      "label_evidence": "Raw center/right core: motor/pump circle labeled PUMP-CCW21B on MCC-21B feeder."
+    },
+    {
+      "id": "FAN-RB21B",
+      "type": "component",
+      "label_evidence": "Raw center/right core: fan/motor circle labeled FAN-RB21B on MCC-21B feeder."
+    },
+    {
+      "id": "CT-21B",
+      "type": "component",
+      "label_evidence": "Raw center/right core: circular CT symbol labeled CT-21B with dashed lead down to RPS panel."
+    },
+    {
+      "id": "MOV-HV211B",
+      "type": "component",
+      "label_evidence": "Raw right core: motor-operated valve symbol labeled MOV-HV211B on MCC-21B feeder."
+    },
+    {
+      "id": "MOV-RWST21B",
+      "type": "component",
+      "label_evidence": "Raw right core: motor-operated valve symbol labeled MOV-RWST21B at right side of MCC-21B."
+    },
+    {
+      "id": "XFMR-CPT21B",
+      "type": "component",
+      "label_evidence": "Raw center core: transformer symbol labeled XFMR-CPT21B feeding AC-PNL-120B."
+    },
+    {
+      "id": "AC-PNL-120B",
+      "type": "component",
+      "label_evidence": "Raw center core: AC panel box labeled AC-PNL-120B beneath XFMR-CPT21B."
+    },
+    {
+      "id": "RECT-21B",
+      "type": "component",
+      "label_evidence": "Raw center/lower: charger/rectifier box labeled RECT-21B below AC-PNL-120B."
+    },
+    {
+      "id": "BAT-21B",
+      "type": "component",
+      "label_evidence": "Raw center/lower: 125 VDC battery symbol labeled BAT-21B tied to DC-BUS-21B."
+    },
+    {
+      "id": "INV-21B",
+      "type": "component",
+      "label_evidence": "Raw center/lower: inverter box labeled INV-21B below DC-BUS-21B with dashed output to RPS-PNL-B."
+    },
+    {
+      "id": "LOCA-SIG-B",
+      "type": "logical_node",
+      "label_evidence": "Raw lower-right: circular logical signal symbol labeled LOCA-SIG-B connected by dashed line to JB-21B."
+    },
+    {
+      "id": "JB-21B",
+      "type": "component",
+      "label_evidence": "Raw lower-right: terminal block box labeled JB-21B in dashed LOCA/RPS signal path."
+    },
+    {
+      "id": "RPS-PNL-B",
+      "type": "component",
+      "label_evidence": "Raw lower-right/center: RPS logic panel box labeled RPS-PNL-B with terminal strip and dashed logic wiring."
+    },
+    {
+      "id": "RELAY-K21B",
+      "type": "component",
+      "label_evidence": "Raw lower-right: relay coil box labeled RELAY-K21B in RPS CH B control lane."
+    },
+    {
+      "id": "RELAY-86B",
+      "type": "component",
+      "label_evidence": "Raw lower-right: relay coil box labeled RELAY-86B in RPS CH B control lane."
+    },
+    {
+      "id": "VOLTAGE-SIG-B",
+      "type": "logical_node",
+      "label_evidence": "Raw right core/lower-right: dashed instrument line labeled VOLTAGE SIG B near MOV-RWST21B/LOCA-SIG-B area."
+    },
+    {
+      "id": "TRIP-MPB1",
+      "type": "logical_node",
+      "label_evidence": "Raw center/right core: dashed trip-control wiring labeled TRIP MPB1 entering the CB-MPB1 trip circuit."
+    }
+  ]
+}

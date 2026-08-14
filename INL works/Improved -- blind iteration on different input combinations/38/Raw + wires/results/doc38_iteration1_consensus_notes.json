@@ -1,0 +1,362 @@
+{
+  "document": "38",
+  "iteration": "1",
+  "final_nodes": [
+    "GEN-U2A",
+    "CB-101",
+    "TR-UAT-2A",
+    "DG-2A",
+    "CB-103",
+    "BUS-4160A",
+    "CB-105",
+    "TR-SUT-2B",
+    "CB-102",
+    "DG-2B",
+    "CB-104",
+    "BUS-4160B",
+    "CB-201A",
+    "TR-201A",
+    "CB-301A",
+    "BUS-480A",
+    "CB-201B",
+    "TR-201B",
+    "CB-301B",
+    "BUS-480B",
+    "CB-401A",
+    "MCC-2A1",
+    "PUMP-RHR2A",
+    "PUMP-CCW2A",
+    "PUMP-SW2A",
+    "FAN-CR2A",
+    "MOV-RHR141A",
+    "MOV-SI221A",
+    "TR-CPT-A",
+    "CHGR-2A",
+    "BAT-125A",
+    "125VDC-TRAIN-A",
+    "INV-2A",
+    "BUS-120AC-A",
+    "RPS-PNL-A",
+    "RELAY-86A",
+    "RELAY-27A",
+    "CB-401B",
+    "MCC-2B1",
+    "PUMP-RHR2B",
+    "PUMP-CCW2B",
+    "PUMP-SW2B",
+    "FAN-CR2B",
+    "MOV-RHR142B",
+    "MOV-SI222B",
+    "TR-CPT-B",
+    "CHGR-2B",
+    "BAT-125B",
+    "125VDC-TRAIN-B",
+    "INV-2B",
+    "BUS-120AC-B",
+    "RPS-PNL-B",
+    "RELAY-86B",
+    "RELAY-27B"
+  ],
+  "final_edges": [
+    {
+      "source": "GEN-U2A",
+      "target": "CB-101",
+      "evidence": "solid generator lead"
+    },
+    {
+      "source": "CB-101",
+      "target": "TR-UAT-2A",
+      "evidence": "solid breaker to transformer lead"
+    },
+    {
+      "source": "TR-UAT-2A",
+      "target": "BUS-4160A",
+      "evidence": "solid transformer secondary tap to bus"
+    },
+    {
+      "source": "DG-2A",
+      "target": "CB-103",
+      "evidence": "solid diesel generator lead"
+    },
+    {
+      "source": "CB-103",
+      "target": "BUS-4160A",
+      "evidence": "solid feeder to bus"
+    },
+    {
+      "source": "BUS-4160A",
+      "target": "CB-105",
+      "evidence": "solid left bus-tie lead"
+    },
+    {
+      "source": "CB-105",
+      "target": "BUS-4160B",
+      "evidence": "solid right bus-tie lead"
+    },
+    {
+      "source": "TR-SUT-2B",
+      "target": "CB-102",
+      "evidence": "solid startup transformer feeder"
+    },
+    {
+      "source": "CB-102",
+      "target": "BUS-4160B",
+      "evidence": "solid source feeder"
+    },
+    {
+      "source": "DG-2B",
+      "target": "CB-104",
+      "evidence": "solid diesel generator lead"
+    },
+    {
+      "source": "CB-104",
+      "target": "BUS-4160B",
+      "evidence": "solid feeder to bus"
+    },
+    {
+      "source": "BUS-4160A",
+      "target": "CB-201A",
+      "evidence": "solid feeder drop"
+    },
+    {
+      "source": "CB-201A",
+      "target": "TR-201A",
+      "evidence": "solid breaker to transformer lead"
+    },
+    {
+      "source": "TR-201A",
+      "target": "CB-301A",
+      "evidence": "solid transformer to breaker lead"
+    },
+    {
+      "source": "CB-301A",
+      "target": "BUS-480A",
+      "evidence": "solid tap to BUS-480A"
+    },
+    {
+      "source": "BUS-4160B",
+      "target": "CB-201B",
+      "evidence": "solid feeder drop"
+    },
+    {
+      "source": "CB-201B",
+      "target": "TR-201B",
+      "evidence": "solid breaker to transformer lead"
+    },
+    {
+      "source": "TR-201B",
+      "target": "CB-301B",
+      "evidence": "solid transformer to breaker lead"
+    },
+    {
+      "source": "CB-301B",
+      "target": "BUS-480B",
+      "evidence": "solid tap to BUS-480B"
+    },
+    {
+      "source": "BUS-480A",
+      "target": "CB-401A",
+      "evidence": "solid feeder drop"
+    },
+    {
+      "source": "CB-401A",
+      "target": "MCC-2A1",
+      "evidence": "solid breaker output into MCC"
+    },
+    {
+      "source": "BUS-480B",
+      "target": "CB-401B",
+      "evidence": "solid feeder drop"
+    },
+    {
+      "source": "CB-401B",
+      "target": "MCC-2B1",
+      "evidence": "solid breaker output into MCC"
+    },
+    {
+      "source": "MCC-2A1",
+      "target": "PUMP-RHR2A",
+      "evidence": "solid MCC load drop"
+    },
+    {
+      "source": "MCC-2A1",
+      "target": "PUMP-CCW2A",
+      "evidence": "solid MCC load drop"
+    },
+    {
+      "source": "MCC-2A1",
+      "target": "PUMP-SW2A",
+      "evidence": "solid MCC load drop"
+    },
+    {
+      "source": "MCC-2A1",
+      "target": "FAN-CR2A",
+      "evidence": "solid MCC load drop"
+    },
+    {
+      "source": "MCC-2A1",
+      "target": "MOV-RHR141A",
+      "evidence": "solid MCC load drop"
+    },
+    {
+      "source": "MCC-2A1",
+      "target": "MOV-SI221A",
+      "evidence": "solid MCC load drop"
+    },
+    {
+      "source": "MCC-2B1",
+      "target": "PUMP-RHR2B",
+      "evidence": "solid MCC load drop"
+    },
+    {
+      "source": "MCC-2B1",
+      "target": "PUMP-CCW2B",
+      "evidence": "solid MCC load drop"
+    },
+    {
+      "source": "MCC-2B1",
+      "target": "PUMP-SW2B",
+      "evidence": "solid MCC load drop"
+    },
+    {
+      "source": "MCC-2B1",
+      "target": "FAN-CR2B",
+      "evidence": "solid MCC load drop"
+    },
+    {
+      "source": "MCC-2B1",
+      "target": "MOV-RHR142B",
+      "evidence": "solid MCC load drop"
+    },
+    {
+      "source": "MCC-2B1",
+      "target": "MOV-SI222B",
+      "evidence": "solid MCC load drop"
+    },
+    {
+      "source": "BUS-480A",
+      "target": "TR-CPT-A",
+      "evidence": "solid 480V branch"
+    },
+    {
+      "source": "BUS-480A",
+      "target": "CHGR-2A",
+      "evidence": "solid 480V branch"
+    },
+    {
+      "source": "CHGR-2A",
+      "target": "125VDC-TRAIN-A",
+      "evidence": "solid charger output"
+    },
+    {
+      "source": "BAT-125A",
+      "target": "125VDC-TRAIN-A",
+      "evidence": "battery terminal on DC train"
+    },
+    {
+      "source": "125VDC-TRAIN-A",
+      "target": "INV-2A",
+      "evidence": "solid DC train tap"
+    },
+    {
+      "source": "INV-2A",
+      "target": "BUS-120AC-A",
+      "evidence": "solid inverter output"
+    },
+    {
+      "source": "BUS-120AC-A",
+      "target": "RPS-PNL-A",
+      "evidence": "solid AC bus drop"
+    },
+    {
+      "source": "BUS-480B",
+      "target": "TR-CPT-B",
+      "evidence": "solid 480V branch"
+    },
+    {
+      "source": "BUS-480B",
+      "target": "CHGR-2B",
+      "evidence": "solid 480V branch"
+    },
+    {
+      "source": "TR-CPT-B",
+      "target": "BUS-120AC-B",
+      "evidence": "solid CPT-B secondary to AC bus"
+    },
+    {
+      "source": "CHGR-2B",
+      "target": "125VDC-TRAIN-B",
+      "evidence": "solid charger output"
+    },
+    {
+      "source": "BAT-125B",
+      "target": "125VDC-TRAIN-B",
+      "evidence": "battery terminal on DC train"
+    },
+    {
+      "source": "125VDC-TRAIN-B",
+      "target": "INV-2B",
+      "evidence": "solid DC train tap"
+    },
+    {
+      "source": "INV-2B",
+      "target": "BUS-120AC-B",
+      "evidence": "solid inverter output"
+    },
+    {
+      "source": "BUS-120AC-B",
+      "target": "RPS-PNL-B",
+      "evidence": "solid AC bus drop"
+    },
+    {
+      "source": "BUS-120AC-B",
+      "target": "RELAY-27B",
+      "evidence": "solid UV relay B tap"
+    }
+  ],
+  "consensus": "Diego R2 agreed with Jennifer R1 edge set; Jennifer R2 kept visible isolated relays as all-zero nodes.",
+  "excluded_edges": [
+    "TR-CPT-A--BUS-120AC-A",
+    "125VDC-TRAIN-A--RELAY-86A",
+    "125VDC-TRAIN-B--RELAY-86B",
+    "BUS-120AC-A--RELAY-27A",
+    "RELAY-27A--RPS-PNL-A",
+    "RELAY-27B--RPS-PNL-B",
+    "BUS-4160A--BUS-4160B direct collapse",
+    "BUS-480A--BUS-480B reserved/no connection",
+    "GND-STA control/ground reference",
+    "S-125DC-A/B as separate nodes"
+  ],
+  "validations": {
+    "doc38_iteration1_diego_r1": {
+      "nodes": 54,
+      "edges": 57,
+      "symmetric": true,
+      "diagonal_zero": true
+    },
+    "doc38_iteration1_jennifer_r1": {
+      "nodes": 54,
+      "edges": 51,
+      "symmetric": true,
+      "diagonal_zero": true
+    },
+    "doc38_iteration1_diego_r2": {
+      "nodes": 51,
+      "edges": 51,
+      "symmetric": true,
+      "diagonal_zero": true
+    },
+    "doc38_iteration1_jennifer_r2": {
+      "nodes": 54,
+      "edges": 51,
+      "symmetric": true,
+      "diagonal_zero": true
+    },
+    "connectivity_matrix_final": {
+      "nodes": 54,
+      "edges": 51,
+      "symmetric": true,
+      "diagonal_zero": true
+    }
+  }
+}

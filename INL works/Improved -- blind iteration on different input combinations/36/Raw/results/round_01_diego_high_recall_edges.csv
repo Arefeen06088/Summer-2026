@@ -1,0 +1,75 @@
+source,target,evidence
+GRID-230-A,CB-SW-A,offsite A source to source breaker
+CB-SW-A,TR-SU-A,offsite A source breaker to startup transformer
+TR-SU-A,BUS-13K-A,startup transformer A tap to 13.8 kV bus A
+GEN-DG-A,CB-DG-A,diesel generator A to breaker
+CB-DG-A,TR-EDG-A,DG A breaker to emergency transformer
+TR-EDG-A,BUS-13K-A,emergency transformer A tap to 13.8 kV bus A
+BUS-13K-A,CB-13-TIE,13.8 kV bus tie left side
+CB-13-TIE,BUS-13K-B,13.8 kV bus tie right side
+BUS-13K-B,TR-SU-B,13.8 kV bus B to startup transformer B
+TR-SU-B,CB-SW-B,startup transformer B to source breaker
+CB-SW-B,GRID-230-B,source breaker to offsite B source
+BUS-13K-B,TR-EDG-B,13.8 kV bus B to emergency transformer B
+TR-EDG-B,CB-DG-B,emergency transformer B to DG breaker
+CB-DG-B,GEN-DG-B,DG B breaker to diesel generator B
+BUS-13K-A,TR-4K-A,13.8 kV bus A to 4.16 kV transformer A
+TR-4K-A,CB-4K-A,4.16 kV transformer A to incomer breaker
+CB-4K-A,BUS-4K-A,incomer breaker to bus 4K-A
+BUS-4K-A,CB-4K-TIE,4.16 kV tie left side
+CB-4K-TIE,BUS-4K-B,4.16 kV tie right side
+BUS-13K-B,TR-4K-B,13.8 kV bus B to 4.16 kV transformer B
+TR-4K-B,CB-4K-B,4.16 kV transformer B to incomer breaker
+CB-4K-B,BUS-4K-B,incomer breaker to bus 4K-B
+BUS-4K-A,TR-480-A,4.16 kV bus A to 480 V transformer A
+TR-480-A,CB-LC-A,480 V transformer A to load-center breaker
+CB-LC-A,BUS-480-A,load-center breaker A to 480 V bus A
+BUS-480-A,MCC-01A,480 V bus A tap to MCC-01A
+MCC-01A,PUMP-RHR-A,MCC-01A feeder to RHR pump A
+MCC-01A,MOTOR-CCW-A,MCC-01A feeder to CCW motor A
+BUS-480-A,MCC-02A,480 V bus A tap to MCC-02A
+MCC-02A,PUMP-AFW-A,MCC-02A feeder to AFW pump A
+MCC-02A,VALVE-MOV-A,MCC-02A feeder to MOV valve A
+MCC-02A,FAN-CONTAIN-A,MCC-02A feeder to containment fan A
+BUS-480-A,RECT-125A,480 V bus A feed to 125 VDC rectifier A
+RECT-125A,BUS-DC125-A,rectifier A output to 125 VDC bus A
+BUS-DC125-A,BAT-125A,battery A tap on 125 VDC bus A
+BUS-DC125-A,INV-120A,inverter A tap on 125 VDC bus A
+INV-120A,PNL-ESF-A,inverter A solid output to ESF panel A
+BUS-4K-B,TR-480-B,4.16 kV bus B to 480 V transformer B
+TR-480-B,CB-LC-B,480 V transformer B to load-center breaker
+CB-LC-B,BUS-480-B,load-center breaker B to 480 V bus B
+BUS-480-B,MCC-01B,480 V bus B tap to MCC-01B
+MCC-01B,PUMP-RHR-B,MCC-01B feeder to RHR pump B
+MCC-01B,MOTOR-CCW-B,MCC-01B feeder to CCW motor B
+BUS-480-B,MCC-02B,480 V bus B tap to MCC-02B
+MCC-02B,PUMP-AFW-B,MCC-02B feeder to AFW pump B
+MCC-02B,VALVE-MOV-B,MCC-02B feeder to MOV valve B
+MCC-02B,FAN-CONTAIN-B,MCC-02B feeder to containment fan B
+BUS-480-B,RECT-125B,480 V bus B feed to 125 VDC rectifier B
+RECT-125B,BUS-DC125-B,rectifier B output to 125 VDC bus B
+BUS-DC125-B,BAT-125B,battery B tap on 125 VDC bus B
+BUS-DC125-B,INV-120B,inverter B tap on 125 VDC bus B
+INV-120B,PNL-ESF-B,inverter B solid output to ESF panel B
+JB-ESF-A,PNL-ESF-A,Diego accepted dashed JB/panel control drop A
+JB-ESF-B,PNL-ESF-B,Diego accepted dashed JB/panel control drop B
+CB-13-TIE,CONTROL-RPS-TRIP,Diego high-recall RPS trip route abstraction
+CONTROL-RPS-TRIP,PNL-RPS-1,Diego high-recall RPS trip route abstraction
+CB-4K-TIE,CONTROL-RPS-LOCKOUT,Diego high-recall RPS lockout route abstraction
+CONTROL-RPS-LOCKOUT,PNL-RPS-1,Diego high-recall RPS lockout route abstraction
+PNL-RPS-1,CONTROL-RPS-ESF-TRUNK,Diego high-recall central RPS trunk
+PNL-ESF-A,CONTROL-ESF-A,Diego high-recall ESF A control route abstraction
+CONTROL-ESF-A,PUMP-AFW-A,Diego high-recall ESF A control route to AFW pump
+CONTROL-ESF-A,VALVE-MOV-A,Diego high-recall ESF A control route to MOV
+PNL-ESF-B,CONTROL-ESF-B,Diego high-recall ESF B control route abstraction
+CONTROL-ESF-B,PUMP-AFW-B,Diego high-recall ESF B control route to AFW pump
+CONTROL-ESF-B,VALVE-MOV-B,Diego high-recall ESF B control route to MOV
+CONTROL-RPS-ESF-TRUNK,CONTROL-ESF-A,Diego ambiguous central trunk to ESF A route
+CONTROL-RPS-ESF-TRUNK,CONTROL-ESF-B,Diego ambiguous central trunk to ESF B route
+CONTROL-ESF-A,FAN-CONTAIN-A,Diego ambiguous ESF A fan-control candidate
+CONTROL-ESF-B,FAN-CONTAIN-B,Diego ambiguous ESF B fan-control candidate
+CONTROL-ESF-A,INV-120A,Diego ambiguous ESF A inverter-control candidate
+CONTROL-ESF-B,INV-120B,Diego ambiguous ESF B inverter-control candidate
+CONTROL-ESF-A,BUS-DC125-A,Diego ambiguous ESF A DC-bus-control candidate
+CONTROL-ESF-B,BUS-DC125-B,Diego ambiguous ESF B DC-bus-control candidate
+CONTROL-RPS-TRIP,CB-4K-TIE,Diego ambiguous RPS trip to 4K tie candidate

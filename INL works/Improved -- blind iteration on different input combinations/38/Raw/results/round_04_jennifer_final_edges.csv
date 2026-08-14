@@ -1,0 +1,56 @@
+source,target,evidence
+GEN-U2A,CB-101,Solid conductor from generator GEN-U2A to breaker CB-101.
+CB-101,TR-UAT-2A,CB-101 output is wired into transformer TR-UAT-2A.
+TR-UAT-2A,BUS-4160A,Transformer secondary lands on BUS-4160A with a junction dot.
+DG-2A,CB-103,Diesel generator DG-2A feeds breaker CB-103.
+CB-103,BUS-4160A,CB-103 feeder ties into the BUS-4160A riser.
+BUS-4160A,CB-105,Left side of the normally open bus-tie breaker connects to BUS-4160A.
+CB-105,BUS-4160B,Right side of the normally open bus-tie breaker connects to BUS-4160B.
+TR-SUT-2B,CB-102,Startup auxiliary transformer TR-SUT-2B feeds breaker CB-102.
+CB-102,BUS-4160B,CB-102 drops onto BUS-4160B with a junction dot.
+DG-2B,CB-104,Diesel generator DG-2B feeds breaker CB-104.
+CB-104,BUS-4160B,CB-104 feeder lands on BUS-4160B.
+BUS-4160A,CB-201A,BUS-4160A vertical feeder enters CB-201A.
+CB-201A,TR-201A,CB-201A is in series above transformer TR-201A.
+TR-201A,CB-301A,Transformer TR-201A output passes through CB-301A.
+CB-301A,BUS-480A,CB-301A lands on BUS-480A.
+BUS-4160B,CB-201B,BUS-4160B vertical feeder enters CB-201B.
+CB-201B,TR-201B,CB-201B is in series above transformer TR-201B.
+TR-201B,CB-301B,Transformer TR-201B output passes through CB-301B.
+CB-301B,BUS-480B,CB-301B lands on BUS-480B.
+BUS-480A,CB-401A,BUS-480A feeder enters CB-401A.
+CB-401A,MCC-2A1,CB-401A output enters MCC-2A1.
+MCC-2A1,PUMP-RHR2A,MCC-2A1 bucket 01 feeder 2A-F1 drops to PUMP-RHR2A.
+MCC-2A1,PUMP-CCW2A,MCC-2A1 bucket 02 feeder 2A-F2 drops to PUMP-CCW2A.
+MCC-2A1,PUMP-SW2A,MCC-2A1 bucket 03 feeder 2A-F3 drops to PUMP-SW2A.
+MCC-2A1,FAN-CR2A,MCC-2A1 bucket 04 feeder 2A-F4 drops to FAN-CR2A.
+MCC-2A1,MOV-RHR141A,MCC-2A1 bucket 05 feeder 2A-F5 drops to MOV-RHR141A.
+MCC-2A1,MOV-SI221A,MCC-2A1 bucket 06 feeder 2A-F6 drops to MOV-SI221A.
+BUS-480A,TR-CPT-A,A solid feeder from BUS-480A drops to TR-CPT-A.
+BUS-480A,CHGR-2A,A separate solid feeder from BUS-480A supplies CHGR-2A.
+CHGR-2A,125 VDC TRAIN A,Charger output lands on the Train A 125 VDC bus.
+BAT-125A,125 VDC TRAIN A,Battery BAT-125A lands directly on the Train A 125 VDC bus.
+125 VDC TRAIN A,INV-2A,Train A 125 VDC bus feeds inverter INV-2A.
+INV-2A,BUS-120AC-A,INV-2A AC output lands on BUS-120AC-A.
+125 VDC TRAIN A,RELAY-86A,Dashed control lead terminates at the Train A DC bus and RELAY-86A.
+BUS-120AC-A,RPS-PNL-A,BUS-120AC-A has a solid vertical feed to RPS-PNL-A.
+RPS-PNL-A,RELAY-27A,Dashed control connection runs between RPS-PNL-A and RELAY-27A.
+BUS-480B,CB-401B,BUS-480B feeder enters CB-401B.
+CB-401B,MCC-2B1,CB-401B output enters MCC-2B1.
+MCC-2B1,PUMP-RHR2B,MCC-2B1 bucket 01 feeder 2B-F1 drops to PUMP-RHR2B.
+MCC-2B1,PUMP-CCW2B,MCC-2B1 bucket 02 feeder 2B-F2 drops to PUMP-CCW2B.
+MCC-2B1,PUMP-SW2B,MCC-2B1 bucket 03 feeder 2B-F3 drops to PUMP-SW2B.
+MCC-2B1,FAN-CR2B,MCC-2B1 bucket 04 feeder 2B-F4 drops to FAN-CR2B.
+MCC-2B1,MOV-RHR142B,MCC-2B1 bucket 05 feeder 2B-F5 drops to MOV-RHR142B.
+MCC-2B1,MOV-SI222B,MCC-2B1 bucket 06 feeder 2B-F6 drops to MOV-SI222B.
+BUS-480B,TR-CPT-B,A solid feeder from BUS-480B drops to TR-CPT-B.
+BUS-480B,CHGR-2B,A separate solid feeder from BUS-480B supplies CHGR-2B.
+TR-CPT-B,BUS-120AC-B,TR-CPT-B secondary visibly lands on BUS-120AC-B.
+CHGR-2B,125 VDC TRAIN B,Charger output lands on the Train B 125 VDC bus.
+BAT-125B,125 VDC TRAIN B,Battery BAT-125B lands directly on the Train B 125 VDC bus.
+125 VDC TRAIN B,INV-2B,Train B 125 VDC bus feeds inverter INV-2B.
+INV-2B,BUS-120AC-B,INV-2B AC output lands on BUS-120AC-B.
+125 VDC TRAIN B,RELAY-86B,Dashed control lead terminates at the Train B DC bus and RELAY-86B.
+BUS-120AC-B,RPS-PNL-B,BUS-120AC-B has a solid vertical feed to RPS-PNL-B.
+BUS-120AC-B,RELAY-27B,RELAY-27B is visibly tied at the BUS-120AC-B junction.
+RPS-PNL-B,RELAY-27B,Dashed control connection runs between RPS-PNL-B and RELAY-27B.

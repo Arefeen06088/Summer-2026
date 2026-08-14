@@ -1,0 +1,56 @@
+source,target,edge_type,confidence,evidence
+OFFSITE-230KV-A,DS-230A,power,HIGH,solid vertical from offsite block into DS-230A
+DS-230A,TR-1A,power,HIGH,solid vertical from DS-230A to transformer
+TR-1A,CB-1A,power,HIGH,solid vertical from transformer to breaker
+CB-1A,BUS-4160-A,power,HIGH,solid vertical terminates at 4.16 kV bus dot
+EDG-1A,CB-DG-A,power,HIGH,solid emergency diesel drop to diesel breaker
+CB-DG-A,BUS-4160-A,power,HIGH,solid vertical into 4.16 kV bus dot
+BUS-4160-A,CB-TIE-AB,power,HIGH,left bus terminates at normally open tie breaker
+CB-TIE-AB,BUS-4160-B,power,HIGH,right side of normally open tie terminates at B bus
+OFFSITE-230KV-B,DS-230B,power,HIGH,solid vertical from offsite block into DS-230B
+DS-230B,TR-1B,power,HIGH,solid vertical from DS-230B to transformer
+TR-1B,CB-1B,power,HIGH,solid vertical from transformer to breaker
+CB-1B,BUS-4160-B,power,HIGH,solid vertical terminates at 4.16 kV bus dot
+EDG-1B,CB-DG-B,power,HIGH,solid emergency diesel drop to diesel breaker
+CB-DG-B,BUS-4160-B,power,HIGH,solid vertical into 4.16 kV bus dot
+BUS-4160-A,RELAY-UV-A,dc_sensing,HIGH,dashed/dash-dot sensing tap from A bus to relay UV-A 27/59
+BUS-4160-B,RELAY-UV-B,dc_sensing,HIGH,dashed/dash-dot sensing tap from B bus to relay UV-B 27/59
+BUS-4160-A,TR-480-A,power,HIGH,solid branch from A 4.16 kV bus to TR-480-A
+TR-480-A,CB-480-A,power,HIGH,solid vertical through transformer to breaker
+CB-480-A,BUS-480-A,power,HIGH,solid vertical into 480 V load-center bus
+BUS-4160-B,TR-480-B,power,HIGH,solid branch from B 4.16 kV bus to TR-480-B
+TR-480-B,CB-480-B,power,HIGH,solid vertical through transformer to breaker
+CB-480-B,BUS-480-B,power,HIGH,solid vertical into 480 V load-center bus
+BUS-480-A,GND-PLANT,ground_reference,PSEUDO,ground/reference symbol near A 480 V bus
+BUS-480-A,MCC-A1,power,HIGH,solid vertical branch from 480 A bus
+BUS-480-A,MCC-A2,power,HIGH,solid vertical branch from 480 A bus
+BUS-480-B,MCC-B1,power,HIGH,solid vertical branch from 480 B bus
+BUS-480-B,MCC-B2,power,HIGH,solid vertical branch from 480 B bus
+BUS-480-A,CHG-125A,dc_power,MED,LC-A side riser/branch visually reaches charger stack
+CHG-125A,BAT-125A,dc_power,MED,stacked vertical DC path between charger and battery
+BAT-125A,INV-120A,dc_power,HIGH,vertical DC path; terminal schedule also indicates BAT-A to INV-A
+INV-120A,PANEL-120A,dc_power,MED,vertical stack conductor
+PANEL-120A,RPS-A,power,MED,vertical stack conductor
+BUS-480-B,CHG-125B,dc_power,MED,LC-B side riser/branch visually reaches charger stack
+CHG-125B,BAT-125B,dc_power,MED,stacked vertical DC path between charger and battery
+BAT-125B,INV-120B,dc_power,HIGH,vertical DC path in B stack
+INV-120B,PANEL-120B,dc_power,MED,vertical stack conductor
+PANEL-120B,RPS-B,power,MED,vertical stack conductor
+MCC-A1,PUMP-RHR-A,power,HIGH,solid feeder routed from MCC-A1 to RHR-A pump
+MCC-A1,PUMP-CS-A,power,HIGH,solid feeder routed from MCC-A1 to CS-A pump
+MCC-A2,PUMP-CCW-A,power,HIGH,solid feeder routed from MCC-A2 to CCW-A pump
+MCC-A2,MOV-881A,power,HIGH,solid feeder to MOV-881A
+MCC-A2,MOV-742A,power,HIGH,solid feeder to MOV-742A
+MCC-B1,PUMP-RHR-B,power,HIGH,solid feeder routed from MCC-B1 to RHR-B pump
+MCC-B1,PUMP-CS-B,power,HIGH,solid feeder routed from MCC-B1 to CS-B pump
+MCC-B2,PUMP-CCW-B,power,HIGH,solid feeder routed from MCC-B2 to CCW-B pump
+MCC-B2,MOV-881B,power,HIGH,solid feeder to MOV-881B
+MCC-B2,MOV-742B,power,HIGH,solid feeder to MOV-742B
+RPS-A,RELAY-KA1,control,HIGH,dashed branch and terminal schedule KA1 RPS-A to RLY
+RPS-B,RELAY-KB1,control,HIGH,dashed branch and terminal schedule KB1 RPS-B to RLY
+RPS-A,JB-A101,control,HIGH,dashed bottom run and terminal schedule A101 RPS-A to MOV-A
+JB-A101,MOV-881A,control,MED,dashed vertical leg from MOV-881A area to JB-A101
+JB-A101,MOV-742A,control,MED,dashed vertical leg from MOV-742A area to JB-A101
+RPS-B,JB-B101,control,HIGH,dashed bottom/right run and terminal schedule B101 RPS-B to MOV-B
+JB-B101,MOV-881B,control,MED,dashed vertical leg from MOV-881B area to JB-B101
+JB-B101,MOV-742B,control,MED,dashed vertical leg from MOV-742B area to JB-B101

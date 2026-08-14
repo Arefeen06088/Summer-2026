@@ -1,0 +1,334 @@
+{
+  "document": "39",
+  "iteration": "1",
+  "round": "2",
+  "agent": "Jennifer",
+  "final_status": "saturation_agreement_no_new_visually_supported_correction",
+  "source_scope": "Raw + components only; no GT/no OCR",
+  "nodes": [
+    {
+      "id": "OFFSITE_230KV_A",
+      "label": "OFFSITE 230 kV A",
+      "type": "external_source",
+      "evidence": "upper-left source box labeled OFFSITE 230 kV A above DS-230A"
+    },
+    {
+      "id": "DS_230A",
+      "label": "DS-230A",
+      "type": "disconnect",
+      "evidence": "upper-left disconnect box between OFFSITE 230 kV A and TR-1A"
+    },
+    {
+      "id": "TR_1A",
+      "label": "TR-1A 230/4.16",
+      "type": "transformer",
+      "evidence": "upper-left transformer symbol labeled TR-1A 230/4.16 below DS-230A"
+    },
+    {
+      "id": "CB_1A",
+      "label": "CB-1A",
+      "type": "breaker",
+      "evidence": "upper-left breaker box above BUS-4160-A with solid tap and junction dot"
+    },
+    {
+      "id": "BUS_4160_A",
+      "label": "BUS-4160-A DIV I 4.16 kV ESF",
+      "type": "bus",
+      "evidence": "Train A upper double solid bus labeled BUS-4160-A DIV I 4.16 kV ESF"
+    },
+    {
+      "id": "EDG_1A",
+      "label": "EDG-1A emergency diesel",
+      "type": "generator",
+      "evidence": "Train A generator circle marked G, labeled EDG-1A EMERGENCY DIESEL"
+    },
+    {
+      "id": "CB_DG_A",
+      "label": "CB-DG-A",
+      "type": "breaker",
+      "evidence": "Train A diesel generator breaker box below EDG-1A and above BUS-4160-A"
+    },
+    {
+      "id": "RELAY_UV_A",
+      "label": "RELAY-UV-A 27/59",
+      "type": "relay",
+      "evidence": "Train A under/over-voltage relay box below BUS-4160-A with vertical dashed drop"
+    },
+    {
+      "id": "TR_480_A",
+      "label": "TR-480-A 4.16/0.48",
+      "type": "transformer",
+      "evidence": "Train A transformer between BUS-4160-A and CB-480-A"
+    },
+    {
+      "id": "CB_480_A",
+      "label": "CB-480-A",
+      "type": "breaker",
+      "evidence": "Train A breaker below TR-480-A and above BUS-480-A"
+    },
+    {
+      "id": "BUS_480_A",
+      "label": "BUS-480-A 480 V LOAD CENTER A",
+      "type": "bus",
+      "evidence": "Train A lower double solid bus labeled BUS-480-A 480 V LOAD CENTER A"
+    },
+    {
+      "id": "GND_PLANT",
+      "label": "GND-PLANT",
+      "type": "ground_reference",
+      "evidence": "ground symbol labeled GND-PLANT under the right end of BUS-480-A, marked GROUND REFERENCE"
+    },
+    {
+      "id": "CHG_125A",
+      "label": "CHG-125A",
+      "type": "charger",
+      "evidence": "left DC/RPS stack charger box above BAT-125A"
+    },
+    {
+      "id": "BAT_125A",
+      "label": "BAT-125A",
+      "type": "battery",
+      "evidence": "left DC/RPS stack battery box with plus/minus marks below CHG-125A"
+    },
+    {
+      "id": "INV_120A",
+      "label": "INV-120A",
+      "type": "inverter",
+      "evidence": "left DC/RPS stack inverter box below BAT-125A"
+    },
+    {
+      "id": "PANEL_120A",
+      "label": "PANEL-120A",
+      "type": "panel",
+      "evidence": "left stack panel box below INV-120A and above RPS-A"
+    },
+    {
+      "id": "RPS_A",
+      "label": "RPS-A DIV I",
+      "type": "protection_panel",
+      "evidence": "left lower RPS box labeled RPS-A DIV I with dashed control conductors exiting"
+    },
+    {
+      "id": "RELAY_KA1",
+      "label": "RELAY-KA1",
+      "type": "relay",
+      "evidence": "lower-left relay box connected from RPS-A by dashed control conductor"
+    },
+    {
+      "id": "MCC_A1",
+      "label": "MCC-A1 SAFETY LOADS",
+      "type": "mcc",
+      "evidence": "Train A MCC-A1 cabinet below BUS-480-A feeding safety loads"
+    },
+    {
+      "id": "PUMP_RHR_A",
+      "label": "PUMP-RHR-A RHR A",
+      "type": "motor",
+      "evidence": "lower-left RHR pump load box fed from MCC-A1"
+    },
+    {
+      "id": "PUMP_CS_A",
+      "label": "PUMP-CS-A CORE SPRAY",
+      "type": "motor",
+      "evidence": "lower-left core spray pump load box fed from MCC-A1"
+    },
+    {
+      "id": "MCC_A2",
+      "label": "MCC-A2 VALVE/PUMP",
+      "type": "mcc",
+      "evidence": "Train A MCC-A2 cabinet below BUS-480-A feeding valve/pump loads"
+    },
+    {
+      "id": "PUMP_CCW_A",
+      "label": "PUMP-CCW-A CCW A",
+      "type": "motor",
+      "evidence": "lower-left CCW pump load box fed from MCC-A2"
+    },
+    {
+      "id": "MOV_881A",
+      "label": "MOV-881A",
+      "type": "motor_operated_valve",
+      "evidence": "Train A MOV-881A valve load fed from MCC-A2 with dashed control drop toward JB-A101"
+    },
+    {
+      "id": "MOV_742A",
+      "label": "MOV-742A",
+      "type": "motor_operated_valve",
+      "evidence": "Train A MOV-742A valve load fed from MCC-A2 with dashed control drop toward JB-A101"
+    },
+    {
+      "id": "JB_A101",
+      "label": "JB-A101",
+      "type": "junction_box",
+      "evidence": "bottom-left junction box with three terminal circles below the A-side MOV controls"
+    },
+    {
+      "id": "ANN_CR01",
+      "label": "ANN-CR01",
+      "type": "annunciator",
+      "evidence": "bottom-center control room annunciator box labeled ANN-CR01"
+    },
+    {
+      "id": "CB_TIE_AB",
+      "label": "CB-TIE-AB N.O. TIE",
+      "type": "breaker",
+      "evidence": "center breaker box labeled CB-TIE-AB with N.O. TIE annotation between the 4.16 kV buses"
+    },
+    {
+      "id": "OFFSITE_230KV_B",
+      "label": "OFFSITE 230 kV B",
+      "type": "external_source",
+      "evidence": "upper-right source box labeled OFFSITE 230 kV B above DS-230B"
+    },
+    {
+      "id": "DS_230B",
+      "label": "DS-230B",
+      "type": "disconnect",
+      "evidence": "upper-right disconnect box between OFFSITE 230 kV B and TR-1B"
+    },
+    {
+      "id": "TR_1B",
+      "label": "TR-1B 230/4.16",
+      "type": "transformer",
+      "evidence": "upper-right transformer symbol labeled TR-1B 230/4.16 below DS-230B"
+    },
+    {
+      "id": "CB_1B",
+      "label": "CB-1B",
+      "type": "breaker",
+      "evidence": "upper-right breaker box above BUS-4160-B with solid tap and junction dot"
+    },
+    {
+      "id": "BUS_4160_B",
+      "label": "BUS-4160-B DIV II 4.16 kV ESF",
+      "type": "bus",
+      "evidence": "Train B upper double solid bus labeled BUS-4160-B DIV II 4.16 kV ESF"
+    },
+    {
+      "id": "EDG_1B",
+      "label": "EDG-1B emergency diesel",
+      "type": "generator",
+      "evidence": "Train B generator circle marked G, labeled EDG-1B EMERGENCY DIESEL"
+    },
+    {
+      "id": "CB_DG_B",
+      "label": "CB-DG-B",
+      "type": "breaker",
+      "evidence": "Train B diesel generator breaker box below EDG-1B and above BUS-4160-B"
+    },
+    {
+      "id": "RELAY_UV_B",
+      "label": "RELAY-UV-B 27/59",
+      "type": "relay",
+      "evidence": "Train B under/over-voltage relay box below BUS-4160-B with vertical dashed drop"
+    },
+    {
+      "id": "TR_480_B",
+      "label": "TR-480-B 4.16/0.48",
+      "type": "transformer",
+      "evidence": "Train B transformer between BUS-4160-B and CB-480-B"
+    },
+    {
+      "id": "CB_480_B",
+      "label": "CB-480-B",
+      "type": "breaker",
+      "evidence": "Train B breaker below TR-480-B and above BUS-480-B"
+    },
+    {
+      "id": "BUS_480_B",
+      "label": "BUS-480-B 480 V LOAD CENTER B",
+      "type": "bus",
+      "evidence": "Train B lower double solid bus labeled BUS-480-B 480 V LOAD CENTER B"
+    },
+    {
+      "id": "CHG_125B",
+      "label": "CHG-125B",
+      "type": "charger",
+      "evidence": "right DC/RPS stack charger box above BAT-125B"
+    },
+    {
+      "id": "BAT_125B",
+      "label": "BAT-125B",
+      "type": "battery",
+      "evidence": "right DC/RPS stack battery box with plus/minus marks below CHG-125B"
+    },
+    {
+      "id": "INV_120B",
+      "label": "INV-120B",
+      "type": "inverter",
+      "evidence": "right DC/RPS stack inverter box below BAT-125B"
+    },
+    {
+      "id": "PANEL_120B",
+      "label": "PANEL-120B",
+      "type": "panel",
+      "evidence": "right stack panel box below INV-120B and above RPS-B"
+    },
+    {
+      "id": "RPS_B",
+      "label": "RPS-B DIV II",
+      "type": "protection_panel",
+      "evidence": "right lower RPS box labeled RPS-B DIV II with dashed control conductors exiting"
+    },
+    {
+      "id": "RELAY_KB1",
+      "label": "RELAY-KB1",
+      "type": "relay",
+      "evidence": "lower-right relay box connected from RPS-B by dashed control conductor"
+    },
+    {
+      "id": "MCC_B1",
+      "label": "MCC-B1 SAFETY LOADS",
+      "type": "mcc",
+      "evidence": "Train B MCC-B1 cabinet below BUS-480-B feeding safety loads"
+    },
+    {
+      "id": "PUMP_RHR_B",
+      "label": "PUMP-RHR-B RHR B",
+      "type": "motor",
+      "evidence": "lower-center/right RHR pump load box fed from MCC-B1"
+    },
+    {
+      "id": "PUMP_CS_B",
+      "label": "PUMP-CS-B CORE SPRAY",
+      "type": "motor",
+      "evidence": "lower-center/right core spray pump load box fed from MCC-B1"
+    },
+    {
+      "id": "MCC_B2",
+      "label": "MCC-B2 VALVE/PUMP",
+      "type": "mcc",
+      "evidence": "Train B MCC-B2 cabinet below BUS-480-B feeding valve/pump loads"
+    },
+    {
+      "id": "PUMP_CCW_B",
+      "label": "PUMP-CCW-B CCW B",
+      "type": "motor",
+      "evidence": "lower-right CCW pump load box fed from MCC-B2"
+    },
+    {
+      "id": "MOV_881B",
+      "label": "MOV-881B",
+      "type": "motor_operated_valve",
+      "evidence": "Train B MOV-881B valve load fed from MCC-B2 with dashed control drop toward JB-B101"
+    },
+    {
+      "id": "MOV_742B",
+      "label": "MOV-742B",
+      "type": "motor_operated_valve",
+      "evidence": "Train B MOV-742B valve load fed from MCC-B2 with dashed control drop toward JB-B101"
+    },
+    {
+      "id": "JB_B101",
+      "label": "JB-B101",
+      "type": "junction_box",
+      "evidence": "bottom-right junction box with three terminal circles below the B-side MOV controls"
+    },
+    {
+      "id": "REC_SOE01",
+      "label": "REC-SOE01",
+      "type": "recorder",
+      "evidence": "bottom-center/right control room recorder box labeled REC-SOE01"
+    }
+  ]
+}

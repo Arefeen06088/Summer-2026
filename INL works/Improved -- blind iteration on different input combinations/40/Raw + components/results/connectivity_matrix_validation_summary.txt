@@ -1,0 +1,20 @@
+Connectivity matrix validation summary
+Document: 40
+Input configuration: Raw + components
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\40\connectivity_matrix(1).csv
+GT normalized nodes: 55; GT normalized edges: 56
+Matrices evaluated: 5
+Best row: Diego -- Round 1 from doc40_round1_diego_connectivity_matrix.csv with Precision=0.896552, Recall=0.928571, F1=0.912281
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=52, FP=8, FN=4, Precision=0.866667, Recall=0.928571, F1=0.896552
+Primary issue: extra/misnamed/intermediate extracted nodes created false-positive edges.
+
+Extra/non-GT nodes most responsible for FP edges: TRIP-MPA1 (2 FP edges); TRIP-MPB1 (2 FP edges); VOLTAGE-SIG-A (2 FP edges); VOLTAGE-SIG-B (2 FP edges).
+Missing GT nodes examples: none.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-negative edge examples among GT-known nodes: CB-MPA1 -- RELAY-86A; CB-MPB1 -- RELAY-86B; RPS-PNL-A -- VT-21A; RPS-PNL-B -- VT-21B.
+False-positive examples involving extra/non-GT nodes: CB-MPA1 -- TRIP-MPA1; CB-MPB1 -- TRIP-MPB1; RELAY-86A -- TRIP-MPA1; RELAY-86B -- TRIP-MPB1; RPS-PNL-A -- VOLTAGE-SIG-A; RPS-PNL-B -- VOLTAGE-SIG-B; VOLTAGE-SIG-A -- VT-21A; VOLTAGE-SIG-B -- VT-21B.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (TRIP-MPA1; TRIP-MPB1; VOLTAGE-SIG-A; VOLTAGE-SIG-B), the final-row metrics would be TP=52, FP=0, FN=4, Precision=1.000000, Recall=0.928571, F1=0.962963.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=52, FP=0, FN=4, Precision=1.000000, Recall=0.928571, F1=0.962963.

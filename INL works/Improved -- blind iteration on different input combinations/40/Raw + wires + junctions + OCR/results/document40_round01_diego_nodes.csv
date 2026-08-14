@@ -1,0 +1,66 @@
+node,source_label,component_type,node_kind,decision,evidence
+DG-21A,DG-21A,generator,physical_component,include,Generator symbol with solid feeder into ATS-21A.
+UAT-2A,UAT-2A,transformer,physical_component,include,Transformer symbol feeding DS-21A.
+DS-21A,DS-21A,disconnect_switch,physical_component,include,Disconnect switch drawn between UAT-2A and ATS-21A.
+ATS-21A,ATS-21A,transfer_switch,physical_component,include,Transfer switch with two source feeders and output to SWGR-21A.
+SWGR-21A,SWGR-21A,bus,logical_node,include,Thick switchgear busbar with junction dots for ATS-21A CB-21A1 and tie breaker.
+TIE-BKR-21AB,TIE-BKR-21AB,tie_breaker,physical_component,include,Center tie breaker drawn between SWGR-21A and SWGR-21B.
+CB-21A1,CB-21A1,breaker,physical_component,include,Circuit breaker on feeder from SWGR-21A to TR-21A.
+TR-21A,TR-21A,transformer,physical_component,include,Transformer from CB-21A1 down to MCC-21A enclosure.
+MCC-21A,MCC-21A,mcc,physical_component,include,MCC enclosure/component label included and linked to its internal 480 V busbar.
+MCC-21A-480V-3PH,MCC-21A-480V-3PH,bus,logical_node,include,True MCC busbar shown as the heavy 480 V 3PH rail with multiple tapped loads.
+VT-21A,VT-21A,voltage_transformer,physical_component,include,Voltage transformer symbol with dashed voltage signal route toward RPS logic.
+CB-MPA1,CB-MPA1,breaker,physical_component,include,Pump breaker on MCC-21A branch with trip-control input.
+PUMP-SI21A,PUMP-SI21A,pump,physical_component,include,Pump motor load fed through CB-MPA1.
+PUMP-CCW21A,PUMP-CCW21A,pump,physical_component,include,Pump motor load tapped from MCC-21A busbar.
+CT-21A,CT-21A,current_transformer,physical_component,include,Current transformer symbol with dashed signal line toward RPS-PNL-A.
+FAN-RB21A,FAN-RB21A,fan,physical_component,include,Fan motor load tapped from MCC-21A busbar.
+MOV-HV211A,MOV-HV211A,motor_operated_valve,physical_component,include,MOV load tapped from MCC-21A busbar.
+MOV-RWST21A,MOV-RWST21A,motor_operated_valve,physical_component,include,MOV load tapped from MCC-21A busbar with nearby dashed crossing explicitly marked no junction.
+XFMR-CPT21A,XFMR-CPT21A,transformer,physical_component,include,Control power transformer fed from MCC-21A busbar and feeding AC-PNL-120A.
+AC-PNL-120A,AC-PNL-120A,panel,physical_component,include,AC panel below CPT transformer and solid feeder to RECT-21A.
+LOCA-SIG-A,LOCA-SIG-A,signal,physical_component,include,LOCA signal circle connected by dashed signal line to JB-21A.
+JB-21A,JB-21A,junction_box,physical_component,include,Terminal/junction box on dashed LOCA/RPS signal route.
+BAT-21A,BAT-21A,battery,physical_component,include,Battery symbol tied by solid 125 VDC feeder to DC-BUS-21A.
+RECT-21A,RECT-21A,rectifier_charger,physical_component,include,Charger/rectifier fed from AC panel and tied to DC-BUS-21A.
+DC-BUS-21A,DC-BUS-21A,dc_bus,logical_node,include,Thick 125 VDC busbar with dots at battery rectifier and inverter branches.
+RELAY-86A,RELAY-86A,relay,physical_component,include,86 relay on RPS CH A dashed trip/control chain.
+RELAY-K21A,RELAY-K21A,relay,physical_component,include,K relay on RPS CH A dashed control chain.
+RPS-PNL-A,RPS-PNL-A,rps_panel,physical_component,include,RPS logic panel with dashed signal inputs and control outputs.
+INV-21A,INV-21A,inverter,physical_component,include,Inverter connected by solid feeder to DC-BUS-21A and dashed control line to RPS-PNL-A.
+SAT-2B,SAT-2B,transformer,physical_component,include,Transformer source feeding DS-21B.
+DS-21B,DS-21B,disconnect_switch,physical_component,include,Disconnect switch drawn between SAT-2B and ATS-21B.
+DG-21B,DG-21B,generator,physical_component,include,Generator symbol with solid feeder into ATS-21B.
+ATS-21B,ATS-21B,transfer_switch,physical_component,include,Transfer switch with source feeders and output to SWGR-21B.
+SWGR-21B,SWGR-21B,bus,logical_node,include,Thick switchgear busbar with junction dots for tie breaker CB-21B1 and ATS-21B.
+CB-21B1,CB-21B1,breaker,physical_component,include,Circuit breaker on feeder from SWGR-21B to TR-21B.
+TR-21B,TR-21B,transformer,physical_component,include,Transformer from CB-21B1 down to MCC-21B enclosure.
+MCC-21B,MCC-21B,mcc,physical_component,include,MCC enclosure/component label included and linked to its internal 480 V busbar.
+MCC-21B-480V-3PH,MCC-21B-480V-3PH,bus,logical_node,include,True MCC busbar shown as the heavy 480 V 3PH rail with multiple tapped loads.
+VT-21B,VT-21B,voltage_transformer,physical_component,include,Voltage transformer symbol with dashed voltage signal route toward RPS logic.
+XFMR-CPT21B,XFMR-CPT21B,transformer,physical_component,include,Control power transformer fed from MCC-21B busbar and feeding AC-PNL-120B.
+AC-PNL-120B,AC-PNL-120B,panel,physical_component,include,AC panel below CPT transformer and solid feeder to RECT-21B.
+CB-MPB1,CB-MPB1,breaker,physical_component,include,Pump breaker on MCC-21B branch with trip-control input.
+PUMP-SI21B,PUMP-SI21B,pump,physical_component,include,Pump motor load fed through CB-MPB1.
+PUMP-CCW21B,PUMP-CCW21B,pump,physical_component,include,Pump motor load tapped from MCC-21B busbar.
+CT-21B,CT-21B,current_transformer,physical_component,include,Current transformer symbol with dashed signal line toward RPS-PNL-B.
+FAN-RB21B,FAN-RB21B,fan,physical_component,include,Fan motor load tapped from MCC-21B busbar.
+MOV-HV211B,MOV-HV211B,motor_operated_valve,physical_component,include,MOV load tapped from MCC-21B busbar.
+MOV-RWST21B,MOV-RWST21B,motor_operated_valve,physical_component,include,MOV load tapped from MCC-21B busbar.
+RECT-21B,RECT-21B,rectifier_charger,physical_component,include,Charger/rectifier fed from AC panel and tied to DC-BUS-21B.
+BAT-21B,BAT-21B,battery,physical_component,include,Battery symbol tied by solid 125 VDC feeder to DC-BUS-21B.
+DC-BUS-21B,DC-BUS-21B,dc_bus,logical_node,include,Thick 125 VDC busbar with dots at rectifier inverter and battery branches.
+INV-21B,INV-21B,inverter,physical_component,include,Inverter connected by solid feeder to DC-BUS-21B and dashed control line to RPS-PNL-B.
+RPS-PNL-B,RPS-PNL-B,rps_panel,physical_component,include,RPS logic panel with dashed signal inputs and control outputs.
+RELAY-K21B,RELAY-K21B,relay,physical_component,include,K relay on RPS CH B dashed control chain.
+RELAY-86B,RELAY-86B,relay,physical_component,include,86 relay on RPS CH B dashed trip/control chain.
+JB-21B,JB-21B,junction_box,physical_component,include,Terminal/junction box on dashed LOCA/RPS signal route.
+LOCA-SIG-B,LOCA-SIG-B,signal,physical_component,include,LOCA signal circle connected by dashed signal line to JB-21B.
+TRAIN-A-480V-SAFETY-CHANNEL,TRAIN-A-480V-SAFETY-CHANNEL,boundary,logical_node,exclude,Sheet/train boundary title only and not an electrical node.
+TRAIN-B-480V-SAFETY-CHANNEL,TRAIN-B-480V-SAFETY-CHANNEL,boundary,logical_node,exclude,Sheet/train boundary title only and not an electrical node.
+RPS-CH-A-CONTROL-LANE,RPS-CH-A-CONTROL-LANE,control_lane,logical_node,exclude,Caption/boundary for control lane rather than a terminal or bus.
+RPS-CH-B-CONTROL-LANE,RPS-CH-B-CONTROL-LANE,control_lane,logical_node,exclude,Caption/boundary for control lane rather than a terminal or bus.
+VOLTAGE-SIG-A,VOLTAGE-SIG-A,instrument_signal,logical_node,exclude,Route label on dashed instrumentation wiring; endpoints are represented directly.
+VOLTAGE-SIG-B,VOLTAGE-SIG-B,instrument_signal,logical_node,exclude,Route label on dashed instrumentation wiring; endpoints are represented directly.
+SOURCE-NORMAL,SOURCE-NORMAL,feed_note,logical_node,exclude,Source note above Train A source path and not a drawn node.
+SOURCE-ALTERNATE,SOURCE-ALTERNATE,feed_note,logical_node,exclude,Source note above Train B source path and not a drawn node.

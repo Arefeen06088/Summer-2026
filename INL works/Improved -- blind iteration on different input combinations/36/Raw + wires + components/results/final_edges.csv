@@ -1,0 +1,56 @@
+source,target,evidence,confidence
+GRID-230-A,CB-SW-A,solid feeder from grid symbol to breaker,High
+CB-SW-A,TR-SU-A,solid feeder from breaker to source transformer,High
+TR-SU-A,BUS-13K-A,solid feeder lands on 13.8 kV bus at SU-A tap label; SU-A is evidence only,High
+GEN-DG-A,CB-DG-A,solid feeder from DG symbol to breaker,High
+CB-DG-A,TR-EDG-A,solid feeder from breaker to EDG transformer,High
+TR-EDG-A,BUS-13K-A,solid feeder lands on 13.8 kV bus at EDG-A tap label; EDG-A is evidence only,High
+BUS-13K-A,CB-13-TIE,13.8 kV bus physically connects to tie breaker despite TIE OPEN state annotation,High
+CB-13-TIE,BUS-13K-B,tie breaker physically connects to right 13.8 kV bus despite TIE OPEN state annotation,High
+BUS-13K-B,TR-SU-B,solid feeder lands on BUS-13K-B at SU-B tap label; SU-B is evidence only,High
+TR-SU-B,CB-SW-B,solid feeder from transformer to breaker,High
+CB-SW-B,GRID-230-B,solid feeder from breaker to grid symbol,High
+BUS-13K-B,TR-EDG-B,solid feeder lands on BUS-13K-B at EDG-B tap label; EDG-B is evidence only,High
+TR-EDG-B,CB-DG-B,solid feeder from transformer to breaker,High
+CB-DG-B,GEN-DG-B,solid feeder from breaker to DG symbol,High
+BUS-13K-A,TR-4K-A,solid vertical feeder from BUS-13K-A to 4.16 kV transformer,High
+TR-4K-A,CB-4K-A,solid feeder from transformer to breaker,High
+CB-4K-A,BUS-4K-A,breaker bottom lands on 4.16 kV bus with tap dot,High
+BUS-13K-B,TR-4K-B,solid vertical feeder from BUS-13K-B to 4.16 kV transformer,High
+TR-4K-B,CB-4K-B,solid feeder from transformer to breaker,High
+CB-4K-B,BUS-4K-B,breaker bottom lands on 4.16 kV bus with tap dot,High
+BUS-4K-A,CB-4K-TIE,left 4.16 kV bus connects to tie breaker side terminal,High
+CB-4K-TIE,BUS-4K-B,tie breaker connects to right 4.16 kV bus; visual label is CB-4K-TIE,High
+CB-4K-TIE,PNL-RPS-1,control/lockout line from tie breaker area to RPS panel; RPS LOCKOUT is annotation,Medium-High
+BUS-4K-A,TR-480-A,vertical solid tap from 4.16 kV A bus to TR-480-A,High
+TR-480-A,CB-LC-A,solid feeder from transformer to load-center breaker,High
+CB-LC-A,BUS-480-A,breaker output lands on 480 V load-center bus,High
+BUS-480-A,MCC-01A,vertical solid tap from 480 VAC bus at LC-A1 evidence label,High
+MCC-01A,PUMP-RHR-A,solid branch from MCC-01A to RHR pump,High
+MCC-01A,MOTOR-CCW-A,solid branch from MCC-01A to CCW motor,High
+BUS-480-A,MCC-02A,vertical solid tap from 480 VAC bus at LC-A2 evidence label,High
+MCC-02A,PUMP-AFW-A,solid branch from MCC-02A to AFW pump,High
+MCC-02A,VALVE-MOV-A,solid branch from MCC-02A through folded MOV actuator box to valve,High
+MCC-02A,FAN-CONTAIN-A,solid branch from MCC-02A to containment fan,High
+BUS-480-A,RECT-125A,solid route from 480 V bus to rectifier AC side,High
+RECT-125A,BUS-DC125-A,rectifier DC side connects to A 125 VDC bus,High
+BUS-DC125-A,BAT-125A,filled bus tap from A DC bus to battery,High
+BUS-DC125-A,INV-120A,A DC bus continues to inverter DC side,High
+JB-ESF-A,PNL-ESF-A,short dashed/control drop from JB-ESF-A to PNL-ESF-A,High
+PNL-ESF-A,INV-120A,routed line from PNL-ESF-A bottom to INV-120A top,Medium-High
+BUS-4K-B,TR-480-B,vertical solid tap from 4.16 kV B bus to TR-480-B,High
+TR-480-B,CB-LC-B,solid feeder from transformer to load-center breaker,High
+CB-LC-B,BUS-480-B,breaker output lands on 480 V load-center bus,High
+BUS-480-B,MCC-01B,vertical solid tap from 480 VAC bus at LC-B1 evidence label,High
+MCC-01B,PUMP-RHR-B,solid branch from MCC-01B to RHR pump,High
+MCC-01B,MOTOR-CCW-B,solid branch from MCC-01B to CCW motor,High
+BUS-480-B,MCC-02B,vertical solid tap from 480 VAC bus at LC-B2 evidence label,High
+MCC-02B,PUMP-AFW-B,solid branch from MCC-02B to AFW pump,High
+MCC-02B,VALVE-MOV-B,solid branch from MCC-02B through folded MOV actuator box to valve,High
+MCC-02B,FAN-CONTAIN-B,solid branch from MCC-02B to containment fan,High
+BUS-480-B,RECT-125B,solid route from 480 V bus to rectifier AC side,High
+RECT-125B,BUS-DC125-B,rectifier DC side connects to B 125 VDC bus,High
+BUS-DC125-B,BAT-125B,filled bus tap from B DC bus to battery,High
+BUS-DC125-B,INV-120B,B DC bus continues to inverter DC side,High
+JB-ESF-B,PNL-ESF-B,short dashed/control drop from JB-ESF-B to PNL-ESF-B,High
+PNL-ESF-B,INV-120B,routed line from PNL-ESF-B bottom to INV-120B top,Medium-High

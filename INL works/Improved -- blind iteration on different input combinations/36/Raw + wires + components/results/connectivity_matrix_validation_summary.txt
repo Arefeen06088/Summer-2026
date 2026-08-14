@@ -1,0 +1,20 @@
+Connectivity matrix validation summary - Document 36
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\36\synthetic_npp_connectivity_matrix_v2.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_matrix.csv): TP=44, FP=33, FN=16, Precision=0.571429, Recall=0.733333, F1=0.642336
+- Jennifer -- Round 2 (round_02_jennifer_matrix.csv): TP=55, FP=0, FN=5, Precision=1.000000, Recall=0.916667, F1=0.956522
+- Diego -- Round 3 (round_03_diego_matrix.csv): TP=55, FP=0, FN=5, Precision=1.000000, Recall=0.916667, F1=0.956522
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=55, FP=0, FN=5, Precision=1.000000, Recall=0.916667, F1=0.956522
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=55, FP=0, FN=5, Precision=1.000000, Recall=0.916667, F1=0.956522
+
+Main reasons the final score was not perfect:
+- GT edges are missing; recall is the limiting term.
+
+False-negative edge examples:
+- CB-13-TIE -- PNL-RPS-1
+- PNL-ESF-A -- PUMP-AFW-A
+- PNL-ESF-A -- VALVE-MOV-A
+- PNL-ESF-B -- PUMP-AFW-B
+- PNL-ESF-B -- VALVE-MOV-B

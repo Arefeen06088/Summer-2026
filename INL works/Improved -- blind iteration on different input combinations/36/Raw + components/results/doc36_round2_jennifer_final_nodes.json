@@ -1,0 +1,367 @@
+{
+  "document": "36",
+  "iteration": "2",
+  "round": "2",
+  "agent": "Jennifer",
+  "final_status": "saturation_agreement",
+  "source_restriction": "Doc36 Raw + components only; Diego round 2 and Jennifer round 1 outputs only; no GT, no GT-derived feedback, no Raw+wires, no OCR engines",
+  "nodes": [
+    {
+      "id": "GRID-230-A",
+      "type": "ac_source",
+      "evidence": "upper left offsite/emergency AC source symbol labeled GRID-230-A"
+    },
+    {
+      "id": "CB-SW-A",
+      "type": "breaker",
+      "evidence": "upper left switch/breaker box between GRID-230-A and TR-SU-A"
+    },
+    {
+      "id": "TR-SU-A",
+      "type": "transformer",
+      "evidence": "upper left transformer labeled TR-SU-A"
+    },
+    {
+      "id": "SU-A",
+      "type": "bus_tap_label",
+      "evidence": "small tap label SU-A on feeder from TR-SU-A into 13.8 kV bus A"
+    },
+    {
+      "id": "GEN-DG-A",
+      "type": "diesel_generator",
+      "evidence": "left emergency diesel generator symbol labeled GEN-DG-A"
+    },
+    {
+      "id": "EXC-A",
+      "type": "unwired_label",
+      "evidence": "small EXC label above GEN-DG-A; no visible wire shown; Jennifer: retained as an unwired adjacent label, not an asserted component connection"
+    },
+    {
+      "id": "CB-DG-A",
+      "type": "breaker",
+      "evidence": "left breaker box between GEN-DG-A and TR-EDG-A"
+    },
+    {
+      "id": "TR-EDG-A",
+      "type": "transformer",
+      "evidence": "left transformer labeled TR-EDG-A feeding 13.8 kV bus A"
+    },
+    {
+      "id": "EDG-A",
+      "type": "bus_tap_label",
+      "evidence": "tap label EDG-A at emergency diesel feed into BUS-13K-A"
+    },
+    {
+      "id": "BUS-13K-A",
+      "type": "bus",
+      "evidence": "upper center left bus labeled BUS-13K-A / 13.8 kV SWGR"
+    },
+    {
+      "id": "CB-13-TIE",
+      "type": "breaker",
+      "evidence": "upper center tie breaker labeled CB-13-TIE with TIE OPEN note"
+    },
+    {
+      "id": "BUS-13K-B",
+      "type": "bus",
+      "evidence": "upper center right bus labeled BUS-13K-B / 13.8 kV SWGR"
+    },
+    {
+      "id": "SU-B",
+      "type": "bus_tap_label",
+      "evidence": "small tap label SU-B on feeder from TR-SU-B into 13.8 kV bus B"
+    },
+    {
+      "id": "TR-SU-B",
+      "type": "transformer",
+      "evidence": "upper right transformer labeled TR-SU-B"
+    },
+    {
+      "id": "CB-SW-B",
+      "type": "breaker",
+      "evidence": "upper right switch/breaker box between TR-SU-B and GRID-230-B"
+    },
+    {
+      "id": "GRID-230-B",
+      "type": "ac_source",
+      "evidence": "upper right offsite source symbol labeled GRID-230-B"
+    },
+    {
+      "id": "GEN-DG-B",
+      "type": "diesel_generator",
+      "evidence": "right emergency diesel generator symbol labeled GEN-DG-B"
+    },
+    {
+      "id": "EXC-B",
+      "type": "unwired_label",
+      "evidence": "small EXC label above GEN-DG-B; no visible wire shown; Jennifer: retained as an unwired adjacent label, not an asserted component connection"
+    },
+    {
+      "id": "CB-DG-B",
+      "type": "breaker",
+      "evidence": "right breaker box between GEN-DG-B and TR-EDG-B"
+    },
+    {
+      "id": "TR-EDG-B",
+      "type": "transformer",
+      "evidence": "right transformer labeled TR-EDG-B feeding 13.8 kV bus B"
+    },
+    {
+      "id": "EDG-B",
+      "type": "bus_tap_label",
+      "evidence": "tap label EDG-B at emergency diesel feed into BUS-13K-B"
+    },
+    {
+      "id": "TR-4K-A",
+      "type": "transformer",
+      "evidence": "train A 4.16 kV distribution transformer labeled TR-4K-A"
+    },
+    {
+      "id": "CB-4K-A",
+      "type": "breaker",
+      "evidence": "train A breaker below TR-4K-A labeled CB-4K-A"
+    },
+    {
+      "id": "BUS-4K-A",
+      "type": "bus",
+      "evidence": "train A horizontal 4.16 kV Class 1E bus labeled BUS-4K-A"
+    },
+    {
+      "id": "CB-4K-TIE",
+      "type": "breaker",
+      "evidence": "center 4.16 kV tie breaker labeled CB-4K-TIE"
+    },
+    {
+      "id": "BUS-4K-B",
+      "type": "bus",
+      "evidence": "train B horizontal 4.16 kV Class 1E bus labeled BUS-4K-B"
+    },
+    {
+      "id": "CB-4K-B",
+      "type": "breaker",
+      "evidence": "train B breaker below TR-4K-B labeled CB-4K-B"
+    },
+    {
+      "id": "TR-4K-B",
+      "type": "transformer",
+      "evidence": "train B 4.16 kV distribution transformer labeled TR-4K-B"
+    },
+    {
+      "id": "RPS_TRIP",
+      "type": "control_route_label",
+      "evidence": "vertical dashed control route labeled RPS TRIP near center tie area"
+    },
+    {
+      "id": "RPS_LOCKOUT",
+      "type": "control_route_label",
+      "evidence": "control/interlock label RPS LOCKOUT under CB-4K-TIE"
+    },
+    {
+      "id": "PNL-RPS-1",
+      "type": "panel",
+      "evidence": "central panel labeled PNL-RPS-1 with RPS label"
+    },
+    {
+      "id": "TR-480-A",
+      "type": "transformer",
+      "evidence": "train A transformer below BUS-4K-A labeled TR-480-A"
+    },
+    {
+      "id": "CB-LC-A",
+      "type": "breaker",
+      "evidence": "train A load-center breaker labeled CB-LC-A"
+    },
+    {
+      "id": "BUS-480-A",
+      "type": "bus",
+      "evidence": "train A 480 VAC load center bus labeled BUS-480-A"
+    },
+    {
+      "id": "LC-A1",
+      "type": "bus_tap_label",
+      "evidence": "tap label LC-A1 above BUS-480-A feeding MCC-01A"
+    },
+    {
+      "id": "LC-A2",
+      "type": "bus_tap_label",
+      "evidence": "tap label LC-A2 above BUS-480-A feeding MCC-02A"
+    },
+    {
+      "id": "MCC-01A",
+      "type": "mcc",
+      "evidence": "train A motor control center labeled MCC-01A"
+    },
+    {
+      "id": "MCC-02A",
+      "type": "mcc",
+      "evidence": "train A motor control center labeled MCC-02A"
+    },
+    {
+      "id": "PUMP-RHR-A",
+      "type": "load",
+      "evidence": "train A pump load symbol labeled PUMP-RHR-A"
+    },
+    {
+      "id": "MOTOR-CCW-A",
+      "type": "load",
+      "evidence": "train A motor load symbol labeled MOTOR-CCW-A"
+    },
+    {
+      "id": "PUMP-AFW-A",
+      "type": "load",
+      "evidence": "train A pump load symbol labeled PUMP-AFW-A"
+    },
+    {
+      "id": "MOV-A",
+      "type": "inline_mov_label",
+      "evidence": "small inline MOV box above VALVE-MOV-A on MCC-02A feeder"
+    },
+    {
+      "id": "VALVE-MOV-A",
+      "type": "load",
+      "evidence": "train A valve symbol labeled VALVE-MOV-A"
+    },
+    {
+      "id": "FAN-CONTAIN-A",
+      "type": "load",
+      "evidence": "train A fan symbol labeled FAN-CONTAIN-A"
+    },
+    {
+      "id": "RECT-125A",
+      "type": "rectifier",
+      "evidence": "train A rectifier labeled RECT-125A, AC/DC symbol; Jennifer: AC/DC box is visually a rectifier"
+    },
+    {
+      "id": "BUS-DC125-A",
+      "type": "bus",
+      "evidence": "train A 125 VDC distribution bus labeled BUS-DC125-A / 125 VDC A"
+    },
+    {
+      "id": "BAT-125A",
+      "type": "dc_source",
+      "evidence": "train A battery symbol labeled BAT-125A"
+    },
+    {
+      "id": "INV-120A",
+      "type": "inverter",
+      "evidence": "train A inverter labeled INV-120A; Jennifer: DC/AC box is visually an inverter"
+    },
+    {
+      "id": "JB-ESF-A",
+      "type": "panel",
+      "evidence": "train A junction box labeled JB-ESF-A"
+    },
+    {
+      "id": "PNL-ESF-A",
+      "type": "panel",
+      "evidence": "train A panel labeled PNL-ESF-A"
+    },
+    {
+      "id": "TR-480-B",
+      "type": "transformer",
+      "evidence": "train B transformer below BUS-4K-B labeled TR-480-B"
+    },
+    {
+      "id": "CB-LC-B",
+      "type": "breaker",
+      "evidence": "train B load-center breaker labeled CB-LC-B"
+    },
+    {
+      "id": "BUS-480-B",
+      "type": "bus",
+      "evidence": "train B 480 VAC load center bus labeled BUS-480-B"
+    },
+    {
+      "id": "LC-B1",
+      "type": "bus_tap_label",
+      "evidence": "tap label LC-B1 above BUS-480-B feeding MCC-01B"
+    },
+    {
+      "id": "LC-B2",
+      "type": "bus_tap_label",
+      "evidence": "tap label LC-B2 above BUS-480-B feeding MCC-02B"
+    },
+    {
+      "id": "MCC-01B",
+      "type": "mcc",
+      "evidence": "train B motor control center labeled MCC-01B"
+    },
+    {
+      "id": "MCC-02B",
+      "type": "mcc",
+      "evidence": "train B motor control center labeled MCC-02B"
+    },
+    {
+      "id": "PUMP-RHR-B",
+      "type": "load",
+      "evidence": "train B pump load symbol labeled PUMP-RHR-B"
+    },
+    {
+      "id": "MOTOR-CCW-B",
+      "type": "load",
+      "evidence": "train B motor load symbol labeled MOTOR-CCW-B"
+    },
+    {
+      "id": "PUMP-AFW-B",
+      "type": "load",
+      "evidence": "train B pump load symbol labeled PUMP-AFW-B"
+    },
+    {
+      "id": "MOV-B",
+      "type": "inline_mov_label",
+      "evidence": "small inline MOV box above VALVE-MOV-B on MCC-02B feeder"
+    },
+    {
+      "id": "VALVE-MOV-B",
+      "type": "load",
+      "evidence": "train B valve symbol labeled VALVE-MOV-B"
+    },
+    {
+      "id": "FAN-CONTAIN-B",
+      "type": "load",
+      "evidence": "train B fan symbol labeled FAN-CONTAIN-B"
+    },
+    {
+      "id": "RECT-125B",
+      "type": "rectifier",
+      "evidence": "train B rectifier labeled RECT-125B, AC/DC symbol; Jennifer: AC/DC box is visually a rectifier"
+    },
+    {
+      "id": "BUS-DC125-B",
+      "type": "bus",
+      "evidence": "train B 125 VDC distribution bus labeled BUS-DC125-B / 125 VDC B"
+    },
+    {
+      "id": "BAT-125B",
+      "type": "dc_source",
+      "evidence": "train B battery symbol labeled BAT-125B"
+    },
+    {
+      "id": "INV-120B",
+      "type": "inverter",
+      "evidence": "train B inverter labeled INV-120B; Jennifer: DC/AC box is visually an inverter"
+    },
+    {
+      "id": "JB-ESF-B",
+      "type": "panel",
+      "evidence": "train B junction box labeled JB-ESF-B"
+    },
+    {
+      "id": "PNL-ESF-B",
+      "type": "panel",
+      "evidence": "train B panel labeled PNL-ESF-B"
+    }
+  ],
+  "notes": [
+    "Final Jennifer precision review declares saturation/agreement: Diego round 2 matches Jennifer round 1 exactly at 69 nodes, 72 asserted edges, and 4 uncertain edges.",
+    "No new visually supported correction is visible in the allowed Doc36 raw schematic/crops/overlay.",
+    "Solid feeders and filled bus taps remain asserted; undotted crossings and dashed routes without visible port or component-boundary termination remain non-edges or uncertain.",
+    "The four retained uncertain cases are EXC-A/GEN-DG-A, EXC-B/GEN-DG-B, PNL-ESF-A/FAN-CONTAIN-A, and PNL-ESF-B/FAN-CONTAIN-B.",
+    "No additions, removals, or label corrections were made in this final pass."
+  ],
+  "validation": {
+    "final_status": "saturation_agreement",
+    "node_count": 69,
+    "diego_round2_matches_jennifer_round1_nodes": true
+  }
+}

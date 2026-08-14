@@ -1,0 +1,6 @@
+document,iteration,call_id,agent,model,input_tokens_low,input_tokens_expected,input_tokens_high,cached_input_tokens,output_tokens_low,output_tokens_expected,output_tokens_high,reasoning_tokens,image_file_input_tokens_expected,text_file_input_tokens_expected,usage_object,notes
+37,1,main_doc37_orchestration,main,Codex GPT-5 session,3768,8338,10186,0,900,1800,3200,unavailable,7395,943,not exposed in Codex tool transcript,Local orchestration and visual inspection estimate.
+37,1,diego_round1,Diego,gpt-5.5-based visual subagent (usage object unavailable),10103,11886,13668,0,2083,2083,2083,unavailable,11815,71,actual_text_file_estimate,high-recall extractor
+37,1,jennifer_round1,Jennifer,gpt-5.5-based visual subagent (usage object unavailable),11873,13969,16064,0,2079,2079,2079,unavailable,11815,2154,actual_text_file_estimate,precision reviewer
+37,1,diego_round2,Diego,gpt-5.5-based visual subagent (usage object unavailable),11870,13965,16059,0,1951,1951,1951,unavailable,11815,2150,actual_text_file_estimate,agreement/high-recall reconciliation
+37,1,jennifer_round2_final,Jennifer,gpt-5.5-based visual subagent (usage object unavailable),11761,13837,15912,0,1965,1965,1965,unavailable,11815,2022,actual_text_file_estimate,final precision saturation

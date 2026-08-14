@@ -1,0 +1,65 @@
+{
+  "document": "41",
+  "iteration": "1",
+  "base": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\41\\Raw + wires + components + junctions",
+  "allowed_sources_only": true,
+  "used_ground_truth": false,
+  "used_ocr": false,
+  "final_node_count": 58,
+  "final_edge_count": 60,
+  "rounds": [
+    {
+      "round": "round_01_diego",
+      "agent": "Diego",
+      "role": "high-recall extractor",
+      "node_count": 70,
+      "edge_count": 66,
+      "status": "candidate graph; intentionally retained plausible labels/internal symbols"
+    },
+    {
+      "round": "round_02_jennifer",
+      "agent": "Jennifer",
+      "role": "precision reviewer/refiner",
+      "node_count": 58,
+      "edge_count": 60,
+      "status": "refined graph; removed callouts/internal annotations and corrected B charger feed"
+    },
+    {
+      "round": "round_03_diego",
+      "agent": "Diego",
+      "role": "convergence reviewer",
+      "node_count": 58,
+      "edge_count": 60,
+      "status": "agreed with Jennifer round 2 unchanged"
+    },
+    {
+      "round": "round_04_jennifer_final",
+      "agent": "Jennifer",
+      "role": "final saturation reviewer",
+      "node_count": 58,
+      "edge_count": 60,
+      "status": "SATURATED: final graph is Jennifer round 2 unchanged"
+    }
+  ],
+  "token_summary": {
+    "document": "41",
+    "iteration": "1",
+    "method": "local estimate because no API key was available for the OpenAI Responses input-token counting endpoint",
+    "text_token_estimator": "approximate prompt/message token count derived from observed prompt sizes; fallback assumption is about 4 characters per token",
+    "image_file_token_estimator": "standard high-detail vision tile heuristic applied qualitatively to raw/overlay/crop payloads",
+    "usage_objects": "not exposed by the local Codex main/subagent tool responses",
+    "calls": 6,
+    "input_tokens_est": 31500,
+    "cached_input_tokens_est": 0,
+    "image_file_input_tokens_est": 24000,
+    "output_tokens_low": 8470,
+    "output_tokens_expected": 13180,
+    "output_tokens_high": 18600,
+    "reasoning_tokens_low": 4650,
+    "reasoning_tokens_expected": 9000,
+    "reasoning_tokens_high": 16400,
+    "total_tokens_low": 68620,
+    "total_tokens_expected": 77680,
+    "total_tokens_high": 90500
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "document": "41",
+  "iteration": "1",
+  "responses_input_token_count_endpoint": {
+    "attempted": false,
+    "reason": "OPENAI_API_KEY was not available in the execution environment; no authenticated Responses input-token counting request could be made."
+  },
+  "actual_usage_collection": {
+    "available": false,
+    "reason": "Main-agent and subagent per-response usage objects are not exposed through the available Codex tools."
+  },
+  "estimate_method": "Low/expected/high estimates use visible prompt/response sizes, local image/crop payload count, and typical image-token ranges. Reasoning-token counts were not available.",
+  "summary_totals": {
+    "document": "41",
+    "iteration": "1",
+    "model_call_count": 9,
+    "input_tokens_low": 92500,
+    "input_tokens_expected": 131500,
+    "input_tokens_high": 190000,
+    "cached_input_tokens_expected": 18500,
+    "output_tokens_low": 13150,
+    "output_tokens_expected": 20800,
+    "output_tokens_high": 33900,
+    "image_file_input_tokens_expected": 54500,
+    "total_tokens_low": 160150,
+    "total_tokens_expected": 206800,
+    "total_tokens_high": 278400,
+    "actual_usage_available": "no"
+  }
+}

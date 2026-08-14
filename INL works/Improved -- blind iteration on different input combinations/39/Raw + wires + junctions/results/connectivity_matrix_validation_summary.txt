@@ -1,0 +1,21 @@
+Connectivity matrix validation summary
+Document: 39
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\39\connectivity_matrix_improved_no_overlap.csv
+GT normalized nodes: 54; GT normalized edges: 58
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from jennifer_round1_connectivity_matrix.csv with Precision=0.964286, Recall=0.931034, F1=0.947368
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=54, FP=2, FN=4, Precision=0.964286, Recall=0.931034, F1=0.947368
+Primary issue: extra/misnamed/intermediate extracted nodes created false-positive edges.
+
+Extra/non-GT nodes most responsible for FP edges: OFFSITE-230A (1 FP edges); OFFSITE-230B (1 FP edges).
+Missing GT nodes examples: GRID-230A; GRID-230B.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-negative edge examples among GT-known nodes: ANN-CR01 -- RPS-A; ANN-CR01 -- RPS-B.
+False-positive examples involving extra/non-GT nodes: DS-230A -- OFFSITE-230A; DS-230B -- OFFSITE-230B.
+False-negative examples involving missing/differently named nodes: DS-230A -- GRID-230A; DS-230B -- GRID-230B.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (OFFSITE-230A; OFFSITE-230B), the final-row metrics would be TP=54, FP=0, FN=4, Precision=1.000000, Recall=0.931034, F1=0.964286.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=54, FP=0, FN=4, Precision=1.000000, Recall=0.931034, F1=0.964286.

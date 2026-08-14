@@ -1,0 +1,7 @@
+document,iteration,round,model_call,input_text_tokens_est,cached_input_tokens_est,image_file_input_tokens_est,output_tokens_low,output_tokens_expected,output_tokens_high,reasoning_tokens,usage_object,total_tokens_low,total_tokens_expected,total_tokens_high,notes
+36,1,main-prep-and-visual-inspection,main_agent_resource_inspection_crop_generation_visual_review,3600,0,18785,500,900,1600,unavailable,unavailable,22885,23285,23985,"Main agent inspected resources, generated crops, and visually reviewed focused regions."
+36,1,round_01_diego,Diego high-recall extractor,2300,0,31620,3000,5000,7200,unavailable,unavailable,36920,38920,41120,Subagent notification exposed no usage object; image tokens estimated from 20 crop dimensions.
+36,1,round_02_jennifer,Jennifer precision reviewer/refiner,6500,0,23800,1800,3000,4800,unavailable,unavailable,32100,33300,35100,Jennifer reviewed Diego text plus focused crops; no API key for official counting endpoint.
+36,1,round_03_diego,Diego convergence reconciliation,2400,0,7225,500,900,1500,unavailable,unavailable,10125,10525,11125,Diego accepted Jennifer's corrections and listed changed/affirmed edges.
+36,1,round_04_jennifer_final,Jennifer final saturation check,2600,0,7905,400,800,1400,unavailable,unavailable,10905,11305,11905,Final check confirmed saturated matrix and residual uncertainty notes.
+36,1,main-final,main_agent_write_validate_report,3200,0,0,400,800,1400,unavailable,unavailable,3600,4000,4600,"Main agent wrote artifacts, validated matrices, closed agents, and reported results."

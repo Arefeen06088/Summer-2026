@@ -1,0 +1,67 @@
+Connectivity matrix validation summary - Document 39
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\39\connectivity_matrix_improved_no_overlap.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_matrix.csv): TP=13, FP=56, FN=45, Precision=0.188406, Recall=0.224138, F1=0.204724
+- Jennifer -- Round 2 (round_02_jennifer_precision_review_matrix.csv): TP=13, FP=43, FN=45, Precision=0.232143, Recall=0.224138, F1=0.228070
+- Diego -- Round 3 (round_03_diego_saturation_matrix.csv): TP=13, FP=43, FN=45, Precision=0.232143, Recall=0.224138, F1=0.228070
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=13, FP=43, FN=45, Precision=0.232143, Recall=0.224138, F1=0.228070
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=13, FP=43, FN=45, Precision=0.232143, Recall=0.224138, F1=0.228070
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- BUS-4160-A DIV I 4.16 KV ESF -- CB-1A
+- BUS-4160-A DIV I 4.16 KV ESF -- CB-DG-A
+- BUS-4160-A DIV I 4.16 KV ESF -- CB-TIE-AB
+- BUS-4160-A DIV I 4.16 KV ESF -- RELAY-UV-A 27/59
+- BUS-4160-A DIV I 4.16 KV ESF -- TR-480-A 4.16/0.48
+- BUS-4160-B DIV II 4.16 KV ESF -- CB-1B
+- BUS-4160-B DIV II 4.16 KV ESF -- CB-DG-B
+- BUS-4160-B DIV II 4.16 KV ESF -- CB-TIE-AB
+- BUS-4160-B DIV II 4.16 KV ESF -- RELAY-UV-B 27/59
+- BUS-4160-B DIV II 4.16 KV ESF -- TR-480-B 4.16/0.48
+
+False-negative edge examples:
+- ANN-CR01 -- RPS-A
+- ANN-CR01 -- RPS-B
+- BUS-4160-A -- CB-1A
+- BUS-4160-A -- CB-DG-A
+- BUS-4160-A -- CB-TIE-AB
+- BUS-4160-A -- RELAY-UV-A
+- BUS-4160-A -- TR-480-A
+- BUS-4160-B -- CB-1B
+- BUS-4160-B -- CB-DG-B
+- BUS-4160-B -- CB-TIE-AB
+
+Extra/non-GT nodes causing performance drops:
+- BUS-4160-A DIV I 4.16 KV ESF: 5 incident false-positive edge(s)
+- BUS-4160-B DIV II 4.16 KV ESF: 5 incident false-positive edge(s)
+- BUS-480-A 480 V LOAD CENTER A: 5 incident false-positive edge(s)
+- MCC-A2 VALVE/PUMP: 4 incident false-positive edge(s)
+- BUS-480-B 480 V LOAD CENTER B: 4 incident false-positive edge(s)
+- MCC-B2 VALVE/PUMP: 4 incident false-positive edge(s)
+- MCC-A1 SAFETY LOADS: 3 incident false-positive edge(s)
+- MCC-B1 SAFETY LOADS: 3 incident false-positive edge(s)
+- RPS-A DIV I: 3 incident false-positive edge(s)
+- RPS-B DIV II: 3 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (BUS-4160-A DIV I 4.16 KV ESF, BUS-4160-B DIV II 4.16 KV ESF, BUS-480-A 480 V LOAD CENTER A, MCC-A2 VALVE/PUMP, BUS-480-B 480 V LOAD CENTER B), final metrics would be TP=13, FP=21, FN=45, Precision=0.382353, Recall=0.224138, F1=0.282609.
+- If all 24 non-GT nodes were omitted, metrics would be TP=13, FP=0, FN=45, Precision=1.000000, Recall=0.224138, F1=0.366197.
+
+Missing GT node examples:
+- BUS-4160-A: 5 missed incident GT edge(s)
+- BUS-4160-B: 5 missed incident GT edge(s)
+- BUS-480-A: 5 missed incident GT edge(s)
+- BUS-480-B: 4 missed incident GT edge(s)
+- MCC-A2: 4 missed incident GT edge(s)
+- MCC-B2: 4 missed incident GT edge(s)
+- RPS-A: 4 missed incident GT edge(s)
+- RPS-B: 4 missed incident GT edge(s)
+- MCC-A1: 3 missed incident GT edge(s)
+- MCC-B1: 3 missed incident GT edge(s)

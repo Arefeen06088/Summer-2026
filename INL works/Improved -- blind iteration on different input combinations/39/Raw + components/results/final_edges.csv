@@ -1,0 +1,57 @@
+source,target,kind,confidence,evidence,a,b
+OFFSITE_230KV_A,DS_230A,power,high,solid vertical conductor from OFFSITE 230 kV A source box to DS-230A,OFFSITE_230KV_A,DS_230A
+DS_230A,TR_1A,power,high,solid vertical conductor from DS-230A to TR-1A,DS_230A,TR_1A
+TR_1A,CB_1A,power,high,solid vertical conductor from TR-1A to CB-1A,TR_1A,CB_1A
+CB_1A,BUS_4160_A,power,high,solid vertical tap from CB-1A to BUS-4160-A with junction dot,CB_1A,BUS_4160_A
+EDG_1A,CB_DG_A,power,high,solid vertical conductor from EDG-1A generator to CB-DG-A,EDG_1A,CB_DG_A
+CB_DG_A,BUS_4160_A,power,high,solid vertical tap from CB-DG-A to BUS-4160-A with junction dot,CB_DG_A,BUS_4160_A
+BUS_4160_A,CB_TIE_AB,power,medium,left BUS-4160-A conductor reaches the left terminal of the N.O. CB-TIE-AB; terminal edge only,BUS_4160_A,CB_TIE_AB
+BUS_4160_A,RELAY_UV_A,sensing,high,vertical dashed sensing/control drop from BUS-4160-A junction to RELAY-UV-A 27/59,BUS_4160_A,RELAY_UV_A
+BUS_4160_A,TR_480_A,power,high,solid vertical feeder from BUS-4160-A junction down to TR-480-A,BUS_4160_A,TR_480_A
+TR_480_A,CB_480_A,power,high,solid vertical conductor from TR-480-A to CB-480-A,TR_480_A,CB_480_A
+CB_480_A,BUS_480_A,power,high,solid vertical tap from CB-480-A to BUS-480-A with junction dot,CB_480_A,BUS_480_A
+BUS_480_A,CHG_125A,power,medium,solid routed branch from the left end of BUS-480-A rises to the CHG-125A stack,BUS_480_A,CHG_125A
+CHG_125A,BAT_125A,dc_power,medium,visible adjacent stack conductor between CHG-125A and BAT-125A,CHG_125A,BAT_125A
+BAT_125A,INV_120A,dc_power,high,visible DC stack conductor from BAT-125A to INV-120A; terminal schedule lists DC-A BAT-A to INV-A,BAT_125A,INV_120A
+INV_120A,PANEL_120A,power,high,solid vertical conductor continues from INV-120A to PANEL-120A,INV_120A,PANEL_120A
+PANEL_120A,RPS_A,power,high,solid vertical conductor continues from PANEL-120A to RPS-A DIV I,PANEL_120A,RPS_A
+BUS_480_A,GND_PLANT,ground,medium,solid vertical lead from right end of BUS-480-A to ground symbol labeled GND-PLANT/GROUND REFERENCE,BUS_480_A,GND_PLANT
+BUS_480_A,MCC_A1,power,high,solid vertical tap with junction dot from BUS-480-A to MCC-A1,BUS_480_A,MCC_A1
+BUS_480_A,MCC_A2,power,high,solid vertical tap with junction dot from BUS-480-A to MCC-A2,BUS_480_A,MCC_A2
+MCC_A1,PUMP_RHR_A,power,high,solid load conductor from MCC-A1 to PUMP-RHR-A,MCC_A1,PUMP_RHR_A
+MCC_A1,PUMP_CS_A,power,high,solid load conductor from MCC-A1 to PUMP-CS-A,MCC_A1,PUMP_CS_A
+MCC_A2,PUMP_CCW_A,power,high,solid load conductor from MCC-A2 to PUMP-CCW-A,MCC_A2,PUMP_CCW_A
+MCC_A2,MOV_881A,power,high,solid load conductor from MCC-A2 to MOV-881A,MCC_A2,MOV_881A
+MCC_A2,MOV_742A,power,high,solid load conductor from MCC-A2 to MOV-742A,MCC_A2,MOV_742A
+RPS_A,RELAY_KA1,control,high,dashed control conductor from RPS-A to RELAY-KA1; terminal schedule lists KA1 from RPS-A to relay,RPS_A,RELAY_KA1
+RPS_A,JB_A101,control,medium,dashed RPS-A control bundle routes to the A101 field junction area; terminal schedule lists A101 from RPS-A to MOV-A,RPS_A,JB_A101
+MOV_881A,JB_A101,control,high,dashed vertical control lead from MOV-881A down to JB-A101 terminal area,MOV_881A,JB_A101
+MOV_742A,JB_A101,control,high,dashed vertical control lead from MOV-742A down to JB-A101 terminal area,MOV_742A,JB_A101
+ANN_CR01,REC_SOE01,control,high,short dashed conductor visibly connects ANN-CR01 to REC-SOE01,ANN_CR01,REC_SOE01
+CB_TIE_AB,BUS_4160_B,power,medium,right terminal of N.O. CB-TIE-AB connects to the left end of BUS-4160-B; terminal edge only,CB_TIE_AB,BUS_4160_B
+OFFSITE_230KV_B,DS_230B,power,high,solid vertical conductor from OFFSITE 230 kV B source box to DS-230B,OFFSITE_230KV_B,DS_230B
+DS_230B,TR_1B,power,high,solid vertical conductor from DS-230B to TR-1B,DS_230B,TR_1B
+TR_1B,CB_1B,power,high,solid vertical conductor from TR-1B to CB-1B,TR_1B,CB_1B
+CB_1B,BUS_4160_B,power,high,solid vertical tap from CB-1B to BUS-4160-B with junction dot,CB_1B,BUS_4160_B
+EDG_1B,CB_DG_B,power,high,solid vertical conductor from EDG-1B generator to CB-DG-B,EDG_1B,CB_DG_B
+CB_DG_B,BUS_4160_B,power,high,solid vertical tap from CB-DG-B to BUS-4160-B with junction dot,CB_DG_B,BUS_4160_B
+BUS_4160_B,RELAY_UV_B,sensing,high,vertical dashed sensing/control drop from BUS-4160-B junction to RELAY-UV-B 27/59,BUS_4160_B,RELAY_UV_B
+BUS_4160_B,TR_480_B,power,high,solid vertical feeder from BUS-4160-B junction down to TR-480-B,BUS_4160_B,TR_480_B
+TR_480_B,CB_480_B,power,high,solid vertical conductor from TR-480-B to CB-480-B,TR_480_B,CB_480_B
+CB_480_B,BUS_480_B,power,high,solid vertical tap from CB-480-B to BUS-480-B with junction dot,CB_480_B,BUS_480_B
+BUS_480_B,CHG_125B,power,medium,solid routed branch from the right end of BUS-480-B rises to the CHG-125B stack,BUS_480_B,CHG_125B
+CHG_125B,BAT_125B,dc_power,medium,visible adjacent stack conductor between CHG-125B and BAT-125B,CHG_125B,BAT_125B
+BAT_125B,INV_120B,dc_power,high,visible DC stack conductor from BAT-125B to INV-120B,BAT_125B,INV_120B
+INV_120B,PANEL_120B,power,high,solid vertical conductor continues from INV-120B to PANEL-120B,INV_120B,PANEL_120B
+PANEL_120B,RPS_B,power,high,solid vertical conductor continues from PANEL-120B to RPS-B DIV II,PANEL_120B,RPS_B
+BUS_480_B,MCC_B1,power,high,solid vertical tap with junction dot from BUS-480-B to MCC-B1,BUS_480_B,MCC_B1
+BUS_480_B,MCC_B2,power,high,solid vertical tap with junction dot from BUS-480-B to MCC-B2,BUS_480_B,MCC_B2
+MCC_B1,PUMP_RHR_B,power,high,solid load conductor from MCC-B1 to PUMP-RHR-B,MCC_B1,PUMP_RHR_B
+MCC_B1,PUMP_CS_B,power,high,solid load conductor from MCC-B1 to PUMP-CS-B,MCC_B1,PUMP_CS_B
+MCC_B2,PUMP_CCW_B,power,high,solid load conductor from MCC-B2 to PUMP-CCW-B,MCC_B2,PUMP_CCW_B
+MCC_B2,MOV_881B,power,high,solid load conductor from MCC-B2 to MOV-881B,MCC_B2,MOV_881B
+MCC_B2,MOV_742B,power,high,solid load conductor from MCC-B2 to MOV-742B,MCC_B2,MOV_742B
+RPS_B,RELAY_KB1,control,high,dashed control conductor from RPS-B to RELAY-KB1; terminal schedule lists KB1 from RPS-B to relay,RPS_B,RELAY_KB1
+RPS_B,JB_B101,control,medium,dashed RPS-B control bundle routes to the B101 field junction area; terminal schedule lists B101 from RPS-B to MOV-B,RPS_B,JB_B101
+MOV_881B,JB_B101,control,high,dashed vertical control lead from MOV-881B down to JB-B101 terminal area,MOV_881B,JB_B101
+MOV_742B,JB_B101,control,high,dashed vertical control lead from MOV-742B down to JB-B101 terminal area,MOV_742B,JB_B101

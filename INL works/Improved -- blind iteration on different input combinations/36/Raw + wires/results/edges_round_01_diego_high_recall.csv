@@ -1,0 +1,70 @@
+source,target,edge_type,evidence
+GRID-230-A,CB-SW-A,power,solid offsite source A to switch breaker
+CB-SW-A,TR-SU-A,power,solid source A breaker to startup transformer
+TR-SU-A,SU-A,power,solid startup transformer A to SU-A bus tap
+SU-A,BUS-13K-A,power,filled-dot tap onto 13.8 kV auxiliary switchgear A
+GEN-DG-A,CB-DG-A,power,solid emergency generator A to breaker
+CB-DG-A,TR-EDG-A,power,solid diesel breaker A to EDG transformer
+TR-EDG-A,EDG-A,power,solid EDG transformer A to EDG-A bus tap
+EDG-A,BUS-13K-A,power,filled-dot tap onto 13.8 kV bus A
+BUS-13K-A,CB-13-TIE,power,13.8 kV bus A to tie breaker
+CB-13-TIE,BUS-13K-B,power,tie breaker to 13.8 kV bus B
+BUS-13K-B,SU-B,power,filled-dot tap from 13.8 kV bus B to SU-B
+SU-B,TR-SU-B,power,solid SU-B tap to startup transformer B
+TR-SU-B,CB-SW-B,power,solid startup transformer B to source breaker
+CB-SW-B,GRID-230-B,power,solid source breaker to offsite source B
+BUS-13K-B,EDG-B,power,filled-dot tap from 13.8 kV bus B to EDG-B
+EDG-B,TR-EDG-B,power,solid EDG-B tap to transformer
+TR-EDG-B,CB-DG-B,power,solid EDG transformer B to diesel breaker
+CB-DG-B,GEN-DG-B,power,solid diesel breaker B to generator
+BUS-13K-A,TR-4K-A,power,solid transformer feed from 13.8 kV bus A
+TR-4K-A,CB-4K-A,power,solid transformer A to 4.16 kV breaker
+CB-4K-A,BUS-4K-A,power,solid breaker A to 4.16 kV bus A
+BUS-13K-B,TR-4K-B,power,solid transformer feed from 13.8 kV bus B
+TR-4K-B,CB-4K-B,power,solid transformer B to 4.16 kV breaker
+CB-4K-B,BUS-4K-B,power,solid breaker B to 4.16 kV bus B
+BUS-4K-A,CB-4K-TIE,power,4.16 kV bus A to tie breaker
+CB-4K-TIE,BUS-4K-B,power,tie breaker to 4.16 kV bus B
+BUS-4K-A,TR-480-A,power,solid feed from 4.16 kV bus A to 480 V transformer
+TR-480-A,CB-LC-A,power,solid transformer A to load-center breaker
+CB-LC-A,BUS-480-A,power,solid breaker A to 480 VAC bus A
+BUS-480-A,LC-A1,power,filled-dot 480 VAC load-center A1 tap
+LC-A1,MCC-01A,power,vertical feeder from LC-A1 tap to MCC-01A
+MCC-01A,PUMP-RHR-A,power,solid MCC feeder to RHR pump A
+MCC-01A,MOTOR-CCW-A,power,solid MCC feeder to CCW motor A
+BUS-480-A,LC-A2,power,filled-dot 480 VAC load-center A2 tap
+LC-A2,MCC-02A,power,vertical feeder from LC-A2 tap to MCC-02A
+MCC-02A,PUMP-AFW-A,power,solid MCC feeder to AFW pump A
+MCC-02A,VALVE-MOV-A,power,solid MCC feeder to MOV A
+MCC-02A,FAN-CONTAIN-A,power,solid MCC feeder to containment fan A
+BUS-480-A,RECT-125A,power,solid 480 VAC branch to rectifier/charger A
+RECT-125A,BUS-DC125-A,power,solid rectifier A output to 125 VDC bus
+BUS-DC125-A,BAT-125A,power,filled-dot battery A tap on 125 VDC bus
+BUS-DC125-A,INV-120A,power,filled-dot inverter A DC input on 125 VDC bus
+INV-120A,PNL-ESF-A,power,solid inverter A AC/control power feed to ESF panel A
+BUS-4K-B,TR-480-B,power,solid feed from 4.16 kV bus B to 480 V transformer
+TR-480-B,CB-LC-B,power,solid transformer B to load-center breaker
+CB-LC-B,BUS-480-B,power,solid breaker B to 480 VAC bus B
+BUS-480-B,LC-B1,power,filled-dot 480 VAC load-center B1 tap
+LC-B1,MCC-01B,power,vertical feeder from LC-B1 tap to MCC-01B
+MCC-01B,PUMP-RHR-B,power,solid MCC feeder to RHR pump B
+MCC-01B,MOTOR-CCW-B,power,solid MCC feeder to CCW motor B
+BUS-480-B,LC-B2,power,filled-dot 480 VAC load-center B2 tap
+LC-B2,MCC-02B,power,vertical feeder from LC-B2 tap to MCC-02B
+MCC-02B,PUMP-AFW-B,power,solid MCC feeder to AFW pump B
+MCC-02B,VALVE-MOV-B,power,solid MCC feeder to MOV B
+MCC-02B,FAN-CONTAIN-B,power,solid MCC feeder to containment fan B
+BUS-480-B,RECT-125B,power,solid 480 VAC branch to rectifier/charger B
+RECT-125B,BUS-DC125-B,power,solid rectifier B output to 125 VDC bus
+BUS-DC125-B,BAT-125B,power,filled-dot battery B tap on 125 VDC bus
+BUS-DC125-B,INV-120B,power,filled-dot inverter B DC input on 125 VDC bus
+INV-120B,PNL-ESF-B,power,solid inverter B AC/control power feed to ESF panel B
+CB-13-TIE,RPS TRIP,control,high-recall dashed path label near tie breaker
+RPS TRIP,CB-4K-TIE,control,high-recall dashed path between RPS trip label and 4.16 kV tie
+CB-4K-TIE,PNL-RPS-1,control,high-recall dashed path through RPS lockout label to RPS panel
+JB-ESF-A,PNL-ESF-A,control,dashed vertical line from ESF junction box A to panel A
+JB-ESF-B,PNL-ESF-B,control,dashed vertical line from ESF junction box B to panel B
+PNL-ESF-A,PUMP-AFW-A,control,dashed ESF control branch to AFW pump A
+PNL-ESF-A,VALVE-MOV-A,control,dashed ESF control branch to MOV A
+PNL-ESF-B,PUMP-AFW-B,control,dashed ESF control branch to AFW pump B
+PNL-ESF-B,VALVE-MOV-B,control,dashed ESF control branch to MOV B

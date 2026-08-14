@@ -1,0 +1,78 @@
+source,target,evidence,confidence
+GRID-230-A,CB-SW-A,solid feeder from grid symbol to breaker,0.98
+CB-SW-A,TR-SU-A,solid feeder from breaker to source transformer,0.98
+TR-SU-A,SU-A,solid feeder exits transformer and drops to SU-A tap,0.96
+SU-A,BUS-13K-A,SU-A feeder lands on left 13.8 kV bus section,0.96
+GEN-DG-A,CB-DG-A,solid feeder from DG symbol to breaker,0.98
+CB-DG-A,TR-EDG-A,solid feeder from breaker to EDG transformer,0.98
+TR-EDG-A,EDG-A,solid feeder exits transformer toward EDG-A tap,0.96
+EDG-A,BUS-13K-A,EDG-A tap enters BUS-13K-A,0.96
+BUS-13K-A,CB-13-TIE,left 13.8 kV bus terminates at tie breaker,0.98
+CB-13-TIE,BUS-13K-B,tie breaker continues to right 13.8 kV bus; labeled TIE OPEN,0.98
+BUS-13K-B,SU-B,right 13.8 kV bus has SU-B source tap,0.96
+SU-B,TR-SU-B,solid feeder rises to source transformer B,0.96
+TR-SU-B,CB-SW-B,solid feeder from transformer to breaker,0.98
+CB-SW-B,GRID-230-B,solid feeder from breaker to grid symbol,0.98
+BUS-13K-B,EDG-B,EDG-B tap on right 13.8 kV bus,0.96
+EDG-B,TR-EDG-B,solid feeder from bus tap to EDG transformer,0.96
+TR-EDG-B,CB-DG-B,solid feeder from transformer to breaker,0.98
+CB-DG-B,GEN-DG-B,solid feeder from breaker to DG symbol,0.98
+BUS-13K-A,TR-4K-A,vertical solid feeder from BUS-13K-A to TR-4K-A,0.98
+TR-4K-A,CB-4K-A,solid vertical feeder through transformer to breaker,0.98
+CB-4K-A,BUS-4K-A,breaker bottom lands on 4.16 kV bus with tap dot,0.98
+BUS-13K-B,TR-4K-B,vertical solid feeder from BUS-13K-B to TR-4K-B,0.98
+TR-4K-B,CB-4K-B,solid vertical feeder through transformer to breaker,0.98
+CB-4K-B,BUS-4K-B,breaker bottom lands on 4.16 kV bus with tap dot,0.98
+BUS-4K-A,CB-4K-TIE,left 4.16 kV bus connects to tie breaker side terminal,0.97
+CB-4K-TIE,BUS-4K-B,tie breaker side terminal connects to right 4.16 kV bus,0.97
+CB-4K-TIE,RPS-LOCKOUT,lockout label directly under tie breaker with short vertical control/terminal line,0.82
+RPS-LOCKOUT,PNL-RPS-1,solid vertical line from lockout area to RPS panel top,0.90
+CB-13-TIE,RPS-TRIP,dashed control route drops from CB-13-TIE area to RPS TRIP label,0.72
+RPS-TRIP,PNL-RPS-1,dashed route visually continues toward left side of PNL-RPS-1,0.62
+BUS-4K-A,TR-480-A,vertical solid tap from 4.16 kV A bus to TR-480-A,0.98
+TR-480-A,CB-LC-A,solid feeder from transformer to load-center breaker,0.98
+CB-LC-A,BUS-480-A,breaker output lands on 480 V load-center bus,0.98
+BUS-480-A,LC-A1,filled bus tap labeled LC-A1,0.96
+LC-A1,MCC-01A,vertical solid feeder from LC-A1 tap to MCC-01A,0.98
+MCC-01A,PUMP-RHR-A,solid branch from MCC-01A to pump,0.97
+MCC-01A,MOTOR-CCW-A,solid branch from MCC-01A to motor,0.97
+BUS-480-A,LC-A2,filled bus tap labeled LC-A2,0.96
+LC-A2,MCC-02A,vertical solid feeder from LC-A2 tap to MCC-02A,0.98
+MCC-02A,PUMP-AFW-A,solid branch from MCC-02A to AFW pump,0.97
+MCC-02A,MOV-A,solid branch from MCC-02A to small MOV box over valve,0.94
+MOV-A,VALVE-MOV-A,short solid vertical from MOV box to valve,0.96
+MCC-02A,FAN-CONTAIN-A,solid branch from MCC-02A to containment fan,0.96
+BUS-480-A,RECT-125A,left end of 480 V bus routes down to rectifier AC side,0.93
+RECT-125A,BUS-DC125-A,rectifier DC side connects to 125 VDC A bus,0.98
+BUS-DC125-A,BAT-125A,filled vertical tap from DC bus to battery,0.98
+BUS-DC125-A,INV-120A,DC bus continues to inverter DC side,0.98
+JB-ESF-A,PNL-ESF-A,short vertical dashed/control drop from JB to matching ESF panel,0.86
+PNL-ESF-A,INV-120A,solid routed line from PNL-ESF-A bottom to INV-120A top,0.90
+PNL-ESF-A,ESF-A-CONTROL-TRUNK,dashed side stubs at panel enter lower dashed route,0.55
+ESF-A-CONTROL-TRUNK,PUMP-AFW-A,short dashed drop visually reaches lower dashed route near AFW-A,0.50
+ESF-A-CONTROL-TRUNK,VALVE-MOV-A,short dashed drop visually reaches lower dashed route near MOV-A valve,0.50
+ESF-A-CONTROL-TRUNK,FAN-CONTAIN-A,lower dashed route passes under/near fan A label,0.38
+BUS-4K-B,TR-480-B,vertical solid tap from 4.16 kV B bus to TR-480-B,0.98
+TR-480-B,CB-LC-B,solid feeder from transformer to load-center breaker,0.98
+CB-LC-B,BUS-480-B,breaker output lands on 480 V load-center bus,0.98
+BUS-480-B,LC-B1,filled bus tap labeled LC-B1,0.96
+LC-B1,MCC-01B,vertical solid feeder from LC-B1 tap to MCC-01B,0.98
+MCC-01B,PUMP-RHR-B,solid branch from MCC-01B to pump,0.97
+MCC-01B,MOTOR-CCW-B,solid branch from MCC-01B to motor,0.97
+BUS-480-B,LC-B2,filled bus tap labeled LC-B2,0.96
+LC-B2,MCC-02B,vertical solid feeder from LC-B2 tap to MCC-02B,0.98
+MCC-02B,PUMP-AFW-B,solid branch from MCC-02B to AFW pump,0.97
+MCC-02B,MOV-B,solid branch from MCC-02B to small MOV box over valve,0.94
+MOV-B,VALVE-MOV-B,short solid vertical from MOV box to valve,0.96
+MCC-02B,FAN-CONTAIN-B,solid branch from MCC-02B to containment fan,0.96
+BUS-480-B,RECT-125B,right end of 480 V bus routes down to rectifier AC side,0.93
+RECT-125B,BUS-DC125-B,rectifier DC side connects to 125 VDC B bus,0.98
+BUS-DC125-B,BAT-125B,filled vertical tap from DC bus to battery,0.98
+BUS-DC125-B,INV-120B,DC bus continues to inverter DC side,0.98
+JB-ESF-B,PNL-ESF-B,short vertical dashed/control drop from JB to matching ESF panel,0.86
+PNL-ESF-B,INV-120B,solid routed line from PNL-ESF-B bottom to INV-120B top,0.90
+PNL-ESF-B,ESF-B-CONTROL-TRUNK,dashed side stubs at panel enter lower dashed route,0.55
+ESF-B-CONTROL-TRUNK,PUMP-AFW-B,short dashed drop visually reaches lower dashed route near AFW-B,0.50
+ESF-B-CONTROL-TRUNK,VALVE-MOV-B,short dashed drop visually reaches lower dashed route near MOV-B valve,0.50
+ESF-B-CONTROL-TRUNK,FAN-CONTAIN-B,lower dashed route passes under/near fan B label,0.38
+ESF-A-CONTROL-TRUNK,ESF-B-CONTROL-TRUNK,lower dashed route appears visually continuous across center but may be boundary/routing aid,0.35

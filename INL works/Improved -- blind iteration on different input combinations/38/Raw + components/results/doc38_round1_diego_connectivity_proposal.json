@@ -1,0 +1,1002 @@
+{
+  "document": "38",
+  "iteration": "1",
+  "round": "1",
+  "agent": "Diego",
+  "status": "high_recall_proposal",
+  "source_scope": "Raw + components only; no GT/no OCR",
+  "nodes": [
+    {
+      "id": "EXT_UNIT_AUX_BUS_CONT",
+      "label": "TO UNIT AUX BUS CONT.",
+      "type": "logical_node",
+      "evidence": "upper-left continuation box at A-zone with solid line into GEN-U2A"
+    },
+    {
+      "id": "GEN_U2A",
+      "label": "GEN-U2A",
+      "type": "generator",
+      "evidence": "upper-left circular G generator symbol labelled GEN-U2A"
+    },
+    {
+      "id": "CB_101",
+      "label": "CB-101",
+      "type": "breaker",
+      "evidence": "breaker symbol between GEN-U2A and TR-UAT-2A near top left"
+    },
+    {
+      "id": "TR_UAT_2A",
+      "label": "TR-UAT-2A 22/4.16 KV",
+      "type": "transformer",
+      "evidence": "two-coil transformer above BUS-4160A labelled TR-UAT-2A 22/4.16 KV"
+    },
+    {
+      "id": "BUS_4160A",
+      "label": "BUS-4160A / 4.16 KV ESF DIV I",
+      "type": "bus",
+      "evidence": "top left heavy horizontal 4.16 kV bus labelled BUS-4160A and 4.16 KV ESF DIV I"
+    },
+    {
+      "id": "DG_2A",
+      "label": "DG-2A / ESF DIESEL A",
+      "type": "generator",
+      "evidence": "left dashed ESF diesel area with circular DG symbol labelled DG-2A"
+    },
+    {
+      "id": "CB_103",
+      "label": "CB-103",
+      "type": "breaker",
+      "evidence": "breaker symbol between DG-2A and the 4.16 kV A-side riser"
+    },
+    {
+      "id": "CB_201A",
+      "label": "CB-201A",
+      "type": "breaker",
+      "evidence": "vertical feeder breaker from BUS-4160A down to TR-201A"
+    },
+    {
+      "id": "TR_201A",
+      "label": "TR-201A 4.16/0.48 KV",
+      "type": "transformer",
+      "evidence": "two-coil transformer below CB-201A on A-side 4.16 kV to 480 V feeder"
+    },
+    {
+      "id": "CB_301A",
+      "label": "CB-301A",
+      "type": "breaker",
+      "evidence": "breaker below TR-201A and above BUS-480A"
+    },
+    {
+      "id": "BUS_480A",
+      "label": "BUS-480A / 480 VAC DIV I",
+      "type": "bus",
+      "evidence": "middle-left heavy horizontal bus labelled BUS-480A, 480 VAC DIV I"
+    },
+    {
+      "id": "CB_105",
+      "label": "CB-105 / N.O. BUS TIE",
+      "type": "breaker",
+      "evidence": "top-center breaker labelled CB-105 with N.O. BUS TIE between the two 4.16 kV buses"
+    },
+    {
+      "id": "TR_SUT_2B",
+      "label": "TR-SUT-2B 230/4.16 KV",
+      "type": "transformer",
+      "evidence": "upper-center/right two-coil startup auxiliary transformer labelled TR-SUT-2B 230/4.16 KV"
+    },
+    {
+      "id": "CB_102",
+      "label": "CB-102",
+      "type": "breaker",
+      "evidence": "breaker to right of TR-SUT-2B with vertical tap down to BUS-4160B"
+    },
+    {
+      "id": "BUS_4160B",
+      "label": "BUS-4160B / 4.16 KV ESF DIV II",
+      "type": "bus",
+      "evidence": "top right heavy horizontal 4.16 kV bus labelled BUS-4160B and 4.16 KV ESF DIV II"
+    },
+    {
+      "id": "DG_2B",
+      "label": "DG-2B / ESF DIESEL B",
+      "type": "generator",
+      "evidence": "right dashed ESF diesel area with circular DG symbol labelled DG-2B"
+    },
+    {
+      "id": "CB_104",
+      "label": "CB-104",
+      "type": "breaker",
+      "evidence": "breaker between BUS-4160B vertical tap and DG-2B"
+    },
+    {
+      "id": "CB_201B",
+      "label": "CB-201B",
+      "type": "breaker",
+      "evidence": "vertical feeder breaker from BUS-4160B down to TR-201B"
+    },
+    {
+      "id": "TR_201B",
+      "label": "TR-201B 4.16/0.48 KV",
+      "type": "transformer",
+      "evidence": "two-coil transformer below CB-201B on B-side 4.16 kV to 480 V feeder"
+    },
+    {
+      "id": "CB_301B",
+      "label": "CB-301B",
+      "type": "breaker",
+      "evidence": "breaker below TR-201B and above BUS-480B"
+    },
+    {
+      "id": "BUS_480B",
+      "label": "BUS-480B / 480 VAC DIV II",
+      "type": "bus",
+      "evidence": "middle-right heavy horizontal bus labelled BUS-480B, 480 VAC DIV II"
+    },
+    {
+      "id": "CB_401A",
+      "label": "CB-401A",
+      "type": "breaker",
+      "evidence": "breaker below BUS-480A feeding MCC-2A1"
+    },
+    {
+      "id": "MCC_2A1",
+      "label": "MCC-2A1 / 480V MOTOR CONTROL CENTER",
+      "type": "panel",
+      "evidence": "large A-side motor control center enclosure labelled MCC-2A1 with internal 480V bus"
+    },
+    {
+      "id": "BKT_2A1_01_2A_F1",
+      "label": "MCC-2A1 bucket 01 / 2A-F1",
+      "type": "logical_node",
+      "evidence": "first A-side MCC load bucket/local disconnect square labelled 01 with feeder tag 2A-F1"
+    },
+    {
+      "id": "PUMP_RHR2A",
+      "label": "PUMP-RHR2A 125 HP RHR PUMP A",
+      "type": "motor",
+      "evidence": "A-side motor symbol below MCC bucket 01 labelled PUMP-RHR2A 125 HP RHR PUMP A"
+    },
+    {
+      "id": "BKT_2A1_02_2A_F2",
+      "label": "MCC-2A1 bucket 02 / 2A-F2",
+      "type": "logical_node",
+      "evidence": "second A-side MCC load bucket/local disconnect square labelled 02 with feeder tag 2A-F2"
+    },
+    {
+      "id": "PUMP_CCW2A",
+      "label": "PUMP-CCW2A 60 HP COMP SVC PUMP A",
+      "type": "motor",
+      "evidence": "A-side motor symbol below MCC bucket 02 labelled PUMP-CCW2A 60 HP COMP SVC PUMP A"
+    },
+    {
+      "id": "BKT_2A1_03_2A_F3",
+      "label": "MCC-2A1 bucket 03 / 2A-F3",
+      "type": "logical_node",
+      "evidence": "third A-side MCC load bucket/local disconnect square labelled 03 with feeder tag 2A-F3"
+    },
+    {
+      "id": "PUMP_SW2A",
+      "label": "PUMP-SW2A 100 HP SERVICE WATER A",
+      "type": "motor",
+      "evidence": "A-side motor symbol below MCC bucket 03 labelled PUMP-SW2A 100 HP SERVICE WATER A"
+    },
+    {
+      "id": "BKT_2A1_04_2A_F4",
+      "label": "MCC-2A1 bucket 04 / 2A-F4",
+      "type": "logical_node",
+      "evidence": "fourth A-side MCC load bucket/local disconnect square labelled 04 with feeder tag 2A-F4"
+    },
+    {
+      "id": "FAN_CR2A",
+      "label": "FAN-CR2A 30 HP CTRL ROOM FAN A",
+      "type": "motor",
+      "evidence": "A-side fan motor symbol below MCC bucket 04 labelled FAN-CR2A 30 HP CTRL ROOM FAN A"
+    },
+    {
+      "id": "BKT_2A1_05_2A_F5",
+      "label": "MCC-2A1 bucket 05 / 2A-F5",
+      "type": "logical_node",
+      "evidence": "fifth A-side MCC load bucket/local disconnect square labelled 05 with feeder tag 2A-F5"
+    },
+    {
+      "id": "MOV_RHR141A",
+      "label": "MOV-RHR141A RHR HX INLET A",
+      "type": "motor",
+      "evidence": "A-side motor-operated valve symbol below MCC bucket 05 labelled MOV-RHR141A RHR HX INLET A"
+    },
+    {
+      "id": "BKT_2A1_06_2A_F6",
+      "label": "MCC-2A1 bucket 06 / 2A-F6",
+      "type": "logical_node",
+      "evidence": "sixth A-side MCC load bucket/local disconnect square labelled 06 with feeder tag 2A-F6"
+    },
+    {
+      "id": "MOV_SI2221A",
+      "label": "MOV-SI2221A SI TEST VALVE A",
+      "type": "motor",
+      "evidence": "A-side motor-operated valve symbol below MCC bucket 06 labelled MOV-SI2221A SI TEST VALVE A"
+    },
+    {
+      "id": "TR_CPT_A",
+      "label": "TR-CPT-A 480/120 VAC",
+      "type": "transformer",
+      "evidence": "lower-left control power transformer labelled TR-CPT-A 480/120 VAC fed by A-side 480 V vertical tap"
+    },
+    {
+      "id": "CHGR_2A",
+      "label": "CHGR-2A 125VDC CHARGER",
+      "type": "charger",
+      "evidence": "A-side 125VDC charger block with DC symbol below 480 V auxiliary tap"
+    },
+    {
+      "id": "BAT_125A_S_125DC_A",
+      "label": "S-125DC-A / BAT-125A BATTERY",
+      "type": "other",
+      "evidence": "A-side battery symbol labelled S-125DC-A and BAT-125A BATTERY above 125 VDC train A"
+    },
+    {
+      "id": "BUS_125DCA",
+      "label": "125 VDC TRAIN A",
+      "type": "bus",
+      "evidence": "lower-left heavy horizontal DC bus labelled 125 VDC TRAIN A"
+    },
+    {
+      "id": "INV_2A",
+      "label": "INV-2A DC/AC INV",
+      "type": "other",
+      "evidence": "A-side inverter block labelled INV-2A DC/AC INV between 125 VDC train A and 120 VAC inst A bus"
+    },
+    {
+      "id": "BUS_120ACA",
+      "label": "BUS-120AC-A / 120 VAC INST A",
+      "type": "bus",
+      "evidence": "lower-left heavy horizontal AC bus labelled BUS-120AC-A and 120 VAC INST A"
+    },
+    {
+      "id": "RPS_PNL_A",
+      "label": "RPS-PNL-A REACTOR PROT A",
+      "type": "panel",
+      "evidence": "lower A-side panel box labelled RPS-PNL-A REACTOR PROT A tapped from 120 VAC inst A bus"
+    },
+    {
+      "id": "RELAY_86A",
+      "label": "RELAY-86A LOCKOUT A",
+      "type": "relay",
+      "evidence": "A-side relay/contact box labelled RELAY-86A LOCKOUT A near 125 VDC train A"
+    },
+    {
+      "id": "RELAY_27A",
+      "label": "RELAY-27A UV BUS A",
+      "type": "relay",
+      "evidence": "A-side relay/contact box labelled RELAY-27A UV BUS A near RPS-PNL-A dashed control loop"
+    },
+    {
+      "id": "CB_401B",
+      "label": "CB-401B",
+      "type": "breaker",
+      "evidence": "breaker below BUS-480B feeding MCC-2B1"
+    },
+    {
+      "id": "MCC_2B1",
+      "label": "MCC-2B1 / 480V MOTOR CONTROL CENTER",
+      "type": "panel",
+      "evidence": "large B-side motor control center enclosure labelled MCC-2B1 with internal 480V bus"
+    },
+    {
+      "id": "BKT_2B1_01_2B_F1",
+      "label": "MCC-2B1 bucket 01 / 2B-F1",
+      "type": "logical_node",
+      "evidence": "first B-side MCC load bucket/local disconnect square labelled 01 with feeder tag 2B-F1"
+    },
+    {
+      "id": "PUMP_RHR2B",
+      "label": "PUMP-RHR2B 125 HP RHR PUMP B",
+      "type": "motor",
+      "evidence": "B-side motor symbol below MCC bucket 01 labelled PUMP-RHR2B 125 HP RHR PUMP B"
+    },
+    {
+      "id": "BKT_2B1_02_2B_F2",
+      "label": "MCC-2B1 bucket 02 / 2B-F2",
+      "type": "logical_node",
+      "evidence": "second B-side MCC load bucket/local disconnect square labelled 02 with feeder tag 2B-F2"
+    },
+    {
+      "id": "PUMP_CCW2B",
+      "label": "PUMP-CCW2B 60 HP COMP SVC PUMP B",
+      "type": "motor",
+      "evidence": "B-side motor symbol below MCC bucket 02 labelled PUMP-CCW2B 60 HP COMP SVC PUMP B"
+    },
+    {
+      "id": "BKT_2B1_03_2B_F3",
+      "label": "MCC-2B1 bucket 03 / 2B-F3",
+      "type": "logical_node",
+      "evidence": "third B-side MCC load bucket/local disconnect square labelled 03 with feeder tag 2B-F3"
+    },
+    {
+      "id": "PUMP_SW2B",
+      "label": "PUMP-SW2B 100 HP SERVICE WATER B",
+      "type": "motor",
+      "evidence": "B-side motor symbol below MCC bucket 03 labelled PUMP-SW2B 100 HP SERVICE WATER B"
+    },
+    {
+      "id": "BKT_2B1_04_2B_F4",
+      "label": "MCC-2B1 bucket 04 / 2B-F4",
+      "type": "logical_node",
+      "evidence": "fourth B-side MCC load bucket/local disconnect square labelled 04 with feeder tag 2B-F4"
+    },
+    {
+      "id": "FAN_CR2B",
+      "label": "FAN-CR2B 30 HP CTRL ROOM FAN B",
+      "type": "motor",
+      "evidence": "B-side fan motor symbol below MCC bucket 04 labelled FAN-CR2B 30 HP CTRL ROOM FAN B"
+    },
+    {
+      "id": "BKT_2B1_05_2B_F5",
+      "label": "MCC-2B1 bucket 05 / 2B-F5",
+      "type": "logical_node",
+      "evidence": "fifth B-side MCC load bucket/local disconnect square labelled 05 with feeder tag 2B-F5"
+    },
+    {
+      "id": "MOV_RHR142B",
+      "label": "MOV-RHR142B RHR HX INLET B",
+      "type": "motor",
+      "evidence": "B-side motor-operated valve symbol below MCC bucket 05 labelled MOV-RHR142B RHR HX INLET B"
+    },
+    {
+      "id": "BKT_2B1_06_2B_F6",
+      "label": "MCC-2B1 bucket 06 / 2B-F6",
+      "type": "logical_node",
+      "evidence": "sixth B-side MCC load bucket/local disconnect square labelled 06 with feeder tag 2B-F6"
+    },
+    {
+      "id": "MOV_SI2222B",
+      "label": "MOV-SI2222B SI TEST VALVE B",
+      "type": "motor",
+      "evidence": "B-side motor-operated valve symbol below MCC bucket 06 labelled MOV-SI2222B SI TEST VALVE B"
+    },
+    {
+      "id": "TR_CPT_B",
+      "label": "TR-CPT-B 480/120 VAC",
+      "type": "transformer",
+      "evidence": "lower-right control power transformer labelled TR-CPT-B 480/120 VAC fed by B-side 480 V vertical tap"
+    },
+    {
+      "id": "CHGR_2B",
+      "label": "CHGR-2B 125VDC CHARGER",
+      "type": "charger",
+      "evidence": "B-side 125VDC charger block with DC symbol below 480 V auxiliary tap"
+    },
+    {
+      "id": "BAT_125B_S_125DC_B",
+      "label": "S-125DC-B / BAT-125B BATTERY",
+      "type": "other",
+      "evidence": "B-side battery symbol/box labelled BAT-125B BATTERY near 125 VDC train B"
+    },
+    {
+      "id": "BUS_125DCB",
+      "label": "125 VDC TRAIN B",
+      "type": "bus",
+      "evidence": "lower-right heavy horizontal DC bus labelled 125 VDC TRAIN B"
+    },
+    {
+      "id": "INV_2B",
+      "label": "INV-2B DC/AC INV",
+      "type": "other",
+      "evidence": "B-side inverter block labelled INV-2B DC/AC INV between 125 VDC train B and 120 VAC inst B bus"
+    },
+    {
+      "id": "BUS_120ACB",
+      "label": "BUS-120AC-B / 120 VAC INST B",
+      "type": "bus",
+      "evidence": "lower-right heavy horizontal AC bus labelled BUS-120AC-B and 120 VAC INST B"
+    },
+    {
+      "id": "RPS_PNL_B",
+      "label": "RPS-PNL-B REACTOR PROT B",
+      "type": "panel",
+      "evidence": "lower B-side panel box labelled RPS-PNL-B REACTOR PROT B tapped from 120 VAC inst B bus"
+    },
+    {
+      "id": "RELAY_86B",
+      "label": "RELAY-86B LOCKOUT B",
+      "type": "relay",
+      "evidence": "B-side relay/contact box labelled RELAY-86B LOCKOUT B near 125 VDC train B"
+    },
+    {
+      "id": "RELAY_27B",
+      "label": "RELAY-27B UV BUS B",
+      "type": "relay",
+      "evidence": "B-side relay/contact box labelled RELAY-27B UV BUS B at right end of 120 VAC inst B bus"
+    },
+    {
+      "id": "GND_STA",
+      "label": "GND-STA STATION GND",
+      "type": "ground",
+      "evidence": "single station ground symbol at lower-left labelled GND-STA STATION GND"
+    },
+    {
+      "id": "CABLE_ROUTE_2A_C22",
+      "label": "2A-C22 dashed control cable route",
+      "type": "logical_node",
+      "evidence": "left-side vertical dashed route labelled 2A-C22"
+    },
+    {
+      "id": "CABLE_ROUTE_2A_C86",
+      "label": "2A-C86 dashed control cable route",
+      "type": "logical_node",
+      "evidence": "left-side vertical dashed route labelled 2A-C86"
+    },
+    {
+      "id": "CABLE_ROUTE_2B_C22",
+      "label": "2B-C22 dashed control cable route",
+      "type": "logical_node",
+      "evidence": "right-side vertical dashed route labelled 2B-C22"
+    },
+    {
+      "id": "CABLE_ROUTE_2B_C86",
+      "label": "2B-C86 dashed control cable route",
+      "type": "logical_node",
+      "evidence": "right-side vertical dashed route labelled 2B-C86"
+    },
+    {
+      "id": "LOGICAL_480V_TIE_RESERVED_SPACE",
+      "label": "480V TIE RESERVED SPACE - NO CONNECTION SHOWN",
+      "type": "logical_node",
+      "evidence": "text between BUS-480A and BUS-480B explicitly says 480V tie reserved space, no connection shown"
+    },
+    {
+      "id": "EXT_STATION_YARD_CONT",
+      "label": "TO STATION YARD CONT.",
+      "type": "logical_node",
+      "evidence": "small upper-right continuation box labelled TO STATION YARD CONT.; no visible circuit line attached"
+    }
+  ],
+  "asserted_edges": [
+    {
+      "a": "EXT_UNIT_AUX_BUS_CONT",
+      "b": "GEN_U2A",
+      "kind": "power",
+      "evidence": "solid conductor from the upper-left continuation box enters the left side of GEN-U2A",
+      "confidence": "medium"
+    },
+    {
+      "a": "GEN_U2A",
+      "b": "CB_101",
+      "kind": "power",
+      "evidence": "solid horizontal conductor from GEN-U2A to CB-101",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_101",
+      "b": "TR_UAT_2A",
+      "kind": "power",
+      "evidence": "solid horizontal conductor from CB-101 to TR-UAT-2A primary side",
+      "confidence": "high"
+    },
+    {
+      "a": "TR_UAT_2A",
+      "b": "BUS_4160A",
+      "kind": "power",
+      "evidence": "short vertical transformer secondary tap drops to BUS-4160A with visible connection dot",
+      "confidence": "high"
+    },
+    {
+      "a": "DG_2A",
+      "b": "CB_103",
+      "kind": "power",
+      "evidence": "solid horizontal conductor from DG-2A to CB-103 inside ESF diesel A area",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_103",
+      "b": "BUS_4160A",
+      "kind": "power",
+      "evidence": "CB-103 output ties into the same vertical riser connected to BUS-4160A",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_4160A",
+      "b": "CB_201A",
+      "kind": "power",
+      "evidence": "vertical tap from BUS-4160A down into CB-201A with connection dot on bus",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_201A",
+      "b": "TR_201A",
+      "kind": "power",
+      "evidence": "vertical conductor from CB-201A to TR-201A",
+      "confidence": "high"
+    },
+    {
+      "a": "TR_201A",
+      "b": "CB_301A",
+      "kind": "power",
+      "evidence": "vertical conductor from TR-201A to CB-301A",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_301A",
+      "b": "BUS_480A",
+      "kind": "power",
+      "evidence": "vertical feeder from CB-301A joins BUS-480A with a dot",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_4160A",
+      "b": "CB_105",
+      "kind": "power",
+      "evidence": "left end of bus tie conductor from BUS-4160A enters CB-105",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_105",
+      "b": "BUS_4160B",
+      "kind": "power",
+      "evidence": "right end of CB-105 bus tie conductor enters BUS-4160B side; table notes CB-105 open but terminals are drawn",
+      "confidence": "high"
+    },
+    {
+      "a": "TR_SUT_2B",
+      "b": "CB_102",
+      "kind": "power",
+      "evidence": "solid horizontal conductor from TR-SUT-2B to CB-102",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_102",
+      "b": "BUS_4160B",
+      "kind": "power",
+      "evidence": "CB-102 has vertical tap down to BUS-4160B with connection dot",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_4160B",
+      "b": "CB_104",
+      "kind": "power",
+      "evidence": "vertical tap from BUS-4160B feeds CB-104 near DG-2B",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_104",
+      "b": "DG_2B",
+      "kind": "power",
+      "evidence": "solid horizontal conductor from CB-104 to DG-2B",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_4160B",
+      "b": "CB_201B",
+      "kind": "power",
+      "evidence": "vertical tap from BUS-4160B down into CB-201B with connection dot",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_201B",
+      "b": "TR_201B",
+      "kind": "power",
+      "evidence": "vertical conductor from CB-201B to TR-201B",
+      "confidence": "high"
+    },
+    {
+      "a": "TR_201B",
+      "b": "CB_301B",
+      "kind": "power",
+      "evidence": "vertical conductor from TR-201B to CB-301B",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_301B",
+      "b": "BUS_480B",
+      "kind": "power",
+      "evidence": "vertical feeder from CB-301B joins BUS-480B with a dot",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480A",
+      "b": "CB_401A",
+      "kind": "power",
+      "evidence": "vertical tap from BUS-480A to CB-401A with connection dot on bus",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_401A",
+      "b": "MCC_2A1",
+      "kind": "power",
+      "evidence": "vertical conductor from CB-401A enters top of MCC-2A1 enclosure",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2A1",
+      "b": "BKT_2A1_01_2A_F1",
+      "kind": "power",
+      "evidence": "bucket 01/local disconnect hangs from MCC-2A1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "BKT_2A1_01_2A_F1",
+      "b": "PUMP_RHR2A",
+      "kind": "power",
+      "evidence": "vertical feeder 2A-F1 from bucket 01 goes directly to PUMP-RHR2A motor symbol",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2A1",
+      "b": "BKT_2A1_02_2A_F2",
+      "kind": "power",
+      "evidence": "bucket 02/local disconnect hangs from MCC-2A1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "BKT_2A1_02_2A_F2",
+      "b": "PUMP_CCW2A",
+      "kind": "power",
+      "evidence": "vertical feeder 2A-F2 from bucket 02 goes directly to PUMP-CCW2A motor symbol",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2A1",
+      "b": "BKT_2A1_03_2A_F3",
+      "kind": "power",
+      "evidence": "bucket 03/local disconnect hangs from MCC-2A1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "BKT_2A1_03_2A_F3",
+      "b": "PUMP_SW2A",
+      "kind": "power",
+      "evidence": "vertical feeder 2A-F3 from bucket 03 goes directly to PUMP-SW2A motor symbol",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2A1",
+      "b": "BKT_2A1_04_2A_F4",
+      "kind": "power",
+      "evidence": "bucket 04/local disconnect hangs from MCC-2A1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "BKT_2A1_04_2A_F4",
+      "b": "FAN_CR2A",
+      "kind": "power",
+      "evidence": "vertical feeder 2A-F4 from bucket 04 goes directly to FAN-CR2A symbol",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2A1",
+      "b": "BKT_2A1_05_2A_F5",
+      "kind": "power",
+      "evidence": "bucket 05/local disconnect hangs from MCC-2A1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "BKT_2A1_05_2A_F5",
+      "b": "MOV_RHR141A",
+      "kind": "power",
+      "evidence": "vertical feeder 2A-F5 from bucket 05 goes directly to MOV-RHR141A valve motor symbol",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2A1",
+      "b": "BKT_2A1_06_2A_F6",
+      "kind": "power",
+      "evidence": "bucket 06/local disconnect hangs from MCC-2A1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "BKT_2A1_06_2A_F6",
+      "b": "MOV_SI2221A",
+      "kind": "power",
+      "evidence": "vertical feeder 2A-F6 from bucket 06 goes directly to MOV-SI2221A valve motor symbol",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480A",
+      "b": "TR_CPT_A",
+      "kind": "power",
+      "evidence": "left-side auxiliary vertical tap descends from BUS-480A to TR-CPT-A primary",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480A",
+      "b": "CHGR_2A",
+      "kind": "power",
+      "evidence": "adjacent A-side 480 V tap branches right into CHGR-2A input",
+      "confidence": "high"
+    },
+    {
+      "a": "CHGR_2A",
+      "b": "BUS_125DCA",
+      "kind": "dc_power",
+      "evidence": "vertical output from CHGR-2A lands on 125 VDC TRAIN A with dot",
+      "confidence": "high"
+    },
+    {
+      "a": "BAT_125A_S_125DC_A",
+      "b": "BUS_125DCA",
+      "kind": "dc_power",
+      "evidence": "battery symbol S-125DC-A/BAT-125A has vertical connection to 125 VDC TRAIN A bus",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_125DCA",
+      "b": "INV_2A",
+      "kind": "dc_power",
+      "evidence": "vertical tap from 125 VDC TRAIN A down into INV-2A DC side",
+      "confidence": "high"
+    },
+    {
+      "a": "INV_2A",
+      "b": "BUS_120ACA",
+      "kind": "power",
+      "evidence": "INV-2A lower AC output is in line with BUS-120AC-A / 120 VAC INST A",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_120ACA",
+      "b": "RPS_PNL_A",
+      "kind": "power",
+      "evidence": "solid vertical tap with dot from 120 VAC INST A bus into RPS-PNL-A",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_125DCA",
+      "b": "RELAY_86A",
+      "kind": "control",
+      "evidence": "dashed vertical control lead drops from a dot on 125 VDC TRAIN A into RELAY-86A contact box",
+      "confidence": "medium"
+    },
+    {
+      "a": "BUS_480B",
+      "b": "CB_401B",
+      "kind": "power",
+      "evidence": "vertical tap from BUS-480B to CB-401B with connection dot on bus",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_401B",
+      "b": "MCC_2B1",
+      "kind": "power",
+      "evidence": "vertical conductor from CB-401B enters top of MCC-2B1 enclosure",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2B1",
+      "b": "BKT_2B1_01_2B_F1",
+      "kind": "power",
+      "evidence": "bucket 01/local disconnect hangs from MCC-2B1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "BKT_2B1_01_2B_F1",
+      "b": "PUMP_RHR2B",
+      "kind": "power",
+      "evidence": "vertical feeder 2B-F1 from bucket 01 goes directly to PUMP-RHR2B motor symbol",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2B1",
+      "b": "BKT_2B1_02_2B_F2",
+      "kind": "power",
+      "evidence": "bucket 02/local disconnect hangs from MCC-2B1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "BKT_2B1_02_2B_F2",
+      "b": "PUMP_CCW2B",
+      "kind": "power",
+      "evidence": "vertical feeder 2B-F2 from bucket 02 goes directly to PUMP-CCW2B motor symbol",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2B1",
+      "b": "BKT_2B1_03_2B_F3",
+      "kind": "power",
+      "evidence": "bucket 03/local disconnect hangs from MCC-2B1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "BKT_2B1_03_2B_F3",
+      "b": "PUMP_SW2B",
+      "kind": "power",
+      "evidence": "vertical feeder 2B-F3 from bucket 03 goes directly to PUMP-SW2B motor symbol",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2B1",
+      "b": "BKT_2B1_04_2B_F4",
+      "kind": "power",
+      "evidence": "bucket 04/local disconnect hangs from MCC-2B1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "BKT_2B1_04_2B_F4",
+      "b": "FAN_CR2B",
+      "kind": "power",
+      "evidence": "vertical feeder 2B-F4 from bucket 04 goes directly to FAN-CR2B symbol",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2B1",
+      "b": "BKT_2B1_05_2B_F5",
+      "kind": "power",
+      "evidence": "bucket 05/local disconnect hangs from MCC-2B1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "BKT_2B1_05_2B_F5",
+      "b": "MOV_RHR142B",
+      "kind": "power",
+      "evidence": "vertical feeder 2B-F5 from bucket 05 goes directly to MOV-RHR142B valve motor symbol",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2B1",
+      "b": "BKT_2B1_06_2B_F6",
+      "kind": "power",
+      "evidence": "bucket 06/local disconnect hangs from MCC-2B1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "BKT_2B1_06_2B_F6",
+      "b": "MOV_SI2222B",
+      "kind": "power",
+      "evidence": "vertical feeder 2B-F6 from bucket 06 goes directly to MOV-SI2222B valve motor symbol",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480B",
+      "b": "TR_CPT_B",
+      "kind": "power",
+      "evidence": "right-side auxiliary vertical tap descends from BUS-480B to TR-CPT-B primary",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480B",
+      "b": "CHGR_2B",
+      "kind": "power",
+      "evidence": "adjacent B-side 480 V tap branches left/down into CHGR-2B input",
+      "confidence": "high"
+    },
+    {
+      "a": "TR_CPT_B",
+      "b": "BUS_120ACB",
+      "kind": "power",
+      "evidence": "TR-CPT-B secondary lead drops to and dots into BUS-120AC-B / 120 VAC INST B at right end of bus",
+      "confidence": "high"
+    },
+    {
+      "a": "CHGR_2B",
+      "b": "BUS_125DCB",
+      "kind": "dc_power",
+      "evidence": "vertical output from CHGR-2B lands on 125 VDC TRAIN B with dot",
+      "confidence": "high"
+    },
+    {
+      "a": "BAT_125B_S_125DC_B",
+      "b": "BUS_125DCB",
+      "kind": "dc_power",
+      "evidence": "battery symbol/label BAT-125B has vertical connection to 125 VDC TRAIN B bus",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_125DCB",
+      "b": "INV_2B",
+      "kind": "dc_power",
+      "evidence": "vertical tap from 125 VDC TRAIN B down into INV-2B DC side",
+      "confidence": "high"
+    },
+    {
+      "a": "INV_2B",
+      "b": "BUS_120ACB",
+      "kind": "power",
+      "evidence": "INV-2B lower AC output is in line with BUS-120AC-B / 120 VAC INST B",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_120ACB",
+      "b": "RPS_PNL_B",
+      "kind": "power",
+      "evidence": "solid vertical tap with dot from 120 VAC INST B bus into RPS-PNL-B",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_125DCB",
+      "b": "RELAY_86B",
+      "kind": "control",
+      "evidence": "dashed vertical control lead drops from a dot on 125 VDC TRAIN B into RELAY-86B contact box",
+      "confidence": "medium"
+    },
+    {
+      "a": "BUS_120ACB",
+      "b": "RELAY_27B",
+      "kind": "control",
+      "evidence": "right end of 120 VAC INST B bus has solid/dotted connection into the RELAY-27B UV BUS B contact box",
+      "confidence": "medium"
+    }
+  ],
+  "uncertain_edges": [
+    {
+      "a": "TR_CPT_A",
+      "b": "BUS_120ACA",
+      "reason": "TR-CPT-A is labelled 480/120 VAC, so a secondary-to-120 VAC relation is plausible, but the visible lower lead ends at a standalone dot left of BUS-120AC-A with no solid joining conductor."
+    },
+    {
+      "a": "RELAY_27A",
+      "b": "BUS_120ACA",
+      "reason": "RELAY-27A is labelled UV BUS A and likely monitors the 120 VAC A bus, but only dashed control routing is visible near the relay; no solid bus tap is clearly drawn."
+    },
+    {
+      "a": "RELAY_27A",
+      "b": "RPS_PNL_A",
+      "reason": "Dashed control loop encloses/approaches RELAY-27A and RPS-PNL-A, but it may represent routed control cable boundary rather than a definite terminal-to-terminal conductor."
+    },
+    {
+      "a": "RELAY_27B",
+      "b": "RPS_PNL_B",
+      "reason": "B-side dashed control loop visually runs from the relay area around RPS-PNL-B, but the dashed line is treated as routing unless a terminal connection is explicit."
+    },
+    {
+      "a": "RELAY_86A",
+      "b": "RPS_PNL_A",
+      "reason": "Lockout relay 86A is near the A-side RPS/control dashed loop, but no solid conductor from the relay box to RPS-PNL-A is visually definite."
+    },
+    {
+      "a": "RELAY_86B",
+      "b": "RPS_PNL_B",
+      "reason": "Lockout relay 86B is near the B-side RPS/control dashed loop, but no solid conductor from the relay box to RPS-PNL-B is visually definite."
+    },
+    {
+      "a": "GND_STA",
+      "b": "CABLE_ROUTE_2A_C22",
+      "reason": "A dotted station-ground path appears near the left dashed cable routes and ground symbol, but it is not asserted as electrical bus connectivity."
+    },
+    {
+      "a": "GND_STA",
+      "b": "CABLE_ROUTE_2A_C86",
+      "reason": "A dotted station-ground path appears near the left dashed cable routes and ground symbol, but the specific cable-route tie is not visually conclusive."
+    },
+    {
+      "a": "CABLE_ROUTE_2A_C22",
+      "b": "DG_2A",
+      "reason": "The 2A-C22 dashed route passes through the ESF diesel A/dashed enclosure area, but dashed routing is not enough to assert an electrical edge."
+    },
+    {
+      "a": "CABLE_ROUTE_2A_C86",
+      "b": "RELAY_86A",
+      "reason": "The 2A-C86 label and lockout relay numbering are plausibly related, but the dashed routing is not a solid, terminal-level conductor."
+    },
+    {
+      "a": "CABLE_ROUTE_2B_C22",
+      "b": "DG_2B",
+      "reason": "The 2B-C22 dashed route passes through the ESF diesel B/dashed enclosure area, but dashed routing is not enough to assert an electrical edge."
+    },
+    {
+      "a": "CABLE_ROUTE_2B_C86",
+      "b": "RELAY_86B",
+      "reason": "The 2B-C86 label and lockout relay numbering are plausibly related, but the dashed routing is not a solid, terminal-level conductor."
+    },
+    {
+      "a": "BUS_480A",
+      "b": "LOGICAL_480V_TIE_RESERVED_SPACE",
+      "reason": "The reserved 480 V tie label sits between BUS-480A and BUS-480B, but the note explicitly says no connection shown."
+    },
+    {
+      "a": "BUS_480B",
+      "b": "LOGICAL_480V_TIE_RESERVED_SPACE",
+      "reason": "The reserved 480 V tie label sits between BUS-480A and BUS-480B, but the note explicitly says no connection shown."
+    },
+    {
+      "a": "EXT_STATION_YARD_CONT",
+      "b": "BUS_4160B",
+      "reason": "Upper-right continuation box is on the drawing border and near the B-side area, but no visible conductor connects it to BUS-4160B or any device."
+    }
+  ],
+  "notes": [
+    "Raw schematic was treated as authoritative; overlay boxes were used only as visual aids.",
+    "CB-105 is drawn as the 4.16 kV bus tie and the status table lists it OPEN; asserted edges represent visible physical terminals to the breaker, not a direct BUS_4160A-to-BUS_4160B short.",
+    "MCC load bucket/local disconnect squares are represented as logical nodes between each MCC and its load to preserve the visually labelled feeder geometry.",
+    "Dashed control-cable route/enclosure lines are not asserted as electrical connectivity unless a visible device/contact/tap is present.",
+    "The 480 V tie reserved space between BUS-480A and BUS-480B is explicitly marked NO CONNECTION SHOWN and is left isolated."
+  ]
+}

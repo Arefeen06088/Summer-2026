@@ -1,0 +1,426 @@
+{
+  "document": 36,
+  "iteration": 1,
+  "node_count": 65,
+  "edge_count": 70,
+  "nodes": [
+    "GRID-230-A",
+    "CB-SW-A",
+    "TR-SU-A",
+    "SU-A",
+    "BUS-13K-A",
+    "GEN-DG-A",
+    "CB-DG-A",
+    "TR-EDG-A",
+    "EDG-A",
+    "CB-13-TIE",
+    "BUS-13K-B",
+    "SU-B",
+    "TR-SU-B",
+    "CB-SW-B",
+    "GRID-230-B",
+    "EDG-B",
+    "TR-EDG-B",
+    "CB-DG-B",
+    "GEN-DG-B",
+    "TR-4K-A",
+    "CB-4K-A",
+    "BUS-4K-A",
+    "CB-4K-TIE",
+    "BUS-4K-B",
+    "CB-4K-B",
+    "TR-4K-B",
+    "TR-480-A",
+    "CB-LC-A",
+    "BUS-480-A",
+    "LC-A1",
+    "MCC-01A",
+    "PUMP-RHR-A",
+    "MOTOR-CCW-A",
+    "LC-A2",
+    "MCC-02A",
+    "PUMP-AFW-A",
+    "VALVE-MOV-A",
+    "FAN-CONTAIN-A",
+    "RECT-125A",
+    "BUS-DC125-A",
+    "BAT-125A",
+    "INV-120A",
+    "JB-ESF-A",
+    "PNL-ESF-A",
+    "PNL-RPS-1",
+    "RPS-TRIP",
+    "RPS-LOCKOUT",
+    "TR-480-B",
+    "CB-LC-B",
+    "BUS-480-B",
+    "LC-B1",
+    "MCC-01B",
+    "PUMP-RHR-B",
+    "MOTOR-CCW-B",
+    "LC-B2",
+    "MCC-02B",
+    "PUMP-AFW-B",
+    "VALVE-MOV-B",
+    "FAN-CONTAIN-B",
+    "RECT-125B",
+    "BUS-DC125-B",
+    "BAT-125B",
+    "INV-120B",
+    "JB-ESF-B",
+    "PNL-ESF-B"
+  ],
+  "edges": [
+    {
+      "source": "GRID-230-A",
+      "target": "CB-SW-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-SW-A",
+      "target": "TR-SU-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "TR-SU-A",
+      "target": "SU-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "SU-A",
+      "target": "BUS-13K-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "GEN-DG-A",
+      "target": "CB-DG-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-DG-A",
+      "target": "TR-EDG-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "TR-EDG-A",
+      "target": "EDG-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "EDG-A",
+      "target": "BUS-13K-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-13K-A",
+      "target": "CB-13-TIE",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-13-TIE",
+      "target": "BUS-13K-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-13K-B",
+      "target": "SU-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "SU-B",
+      "target": "TR-SU-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "TR-SU-B",
+      "target": "CB-SW-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-SW-B",
+      "target": "GRID-230-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-13K-B",
+      "target": "EDG-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "EDG-B",
+      "target": "TR-EDG-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "TR-EDG-B",
+      "target": "CB-DG-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-DG-B",
+      "target": "GEN-DG-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-13K-A",
+      "target": "TR-4K-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "TR-4K-A",
+      "target": "CB-4K-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-4K-A",
+      "target": "BUS-4K-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-13K-B",
+      "target": "TR-4K-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "TR-4K-B",
+      "target": "CB-4K-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-4K-B",
+      "target": "BUS-4K-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-4K-A",
+      "target": "CB-4K-TIE",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-4K-TIE",
+      "target": "BUS-4K-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-4K-A",
+      "target": "TR-480-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "TR-480-A",
+      "target": "CB-LC-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-LC-A",
+      "target": "BUS-480-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "LC-A1",
+      "edge_type": "power"
+    },
+    {
+      "source": "LC-A1",
+      "target": "MCC-01A",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-01A",
+      "target": "PUMP-RHR-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-01A",
+      "target": "MOTOR-CCW-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "LC-A2",
+      "edge_type": "power"
+    },
+    {
+      "source": "LC-A2",
+      "target": "MCC-02A",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-02A",
+      "target": "PUMP-AFW-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-02A",
+      "target": "VALVE-MOV-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-02A",
+      "target": "FAN-CONTAIN-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "RECT-125A",
+      "edge_type": "power"
+    },
+    {
+      "source": "RECT-125A",
+      "target": "BUS-DC125-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-DC125-A",
+      "target": "BAT-125A",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-DC125-A",
+      "target": "INV-120A",
+      "edge_type": "power"
+    },
+    {
+      "source": "INV-120A",
+      "target": "PNL-ESF-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-4K-B",
+      "target": "TR-480-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "TR-480-B",
+      "target": "CB-LC-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-LC-B",
+      "target": "BUS-480-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "LC-B1",
+      "edge_type": "power"
+    },
+    {
+      "source": "LC-B1",
+      "target": "MCC-01B",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-01B",
+      "target": "PUMP-RHR-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-01B",
+      "target": "MOTOR-CCW-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "LC-B2",
+      "edge_type": "power"
+    },
+    {
+      "source": "LC-B2",
+      "target": "MCC-02B",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-02B",
+      "target": "PUMP-AFW-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-02B",
+      "target": "VALVE-MOV-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-02B",
+      "target": "FAN-CONTAIN-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "RECT-125B",
+      "edge_type": "power"
+    },
+    {
+      "source": "RECT-125B",
+      "target": "BUS-DC125-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-DC125-B",
+      "target": "BAT-125B",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-DC125-B",
+      "target": "INV-120B",
+      "edge_type": "power"
+    },
+    {
+      "source": "INV-120B",
+      "target": "PNL-ESF-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-13-TIE",
+      "target": "RPS-TRIP",
+      "edge_type": "control"
+    },
+    {
+      "source": "RPS-TRIP",
+      "target": "PNL-RPS-1",
+      "edge_type": "control"
+    },
+    {
+      "source": "CB-4K-TIE",
+      "target": "RPS-LOCKOUT",
+      "edge_type": "control"
+    },
+    {
+      "source": "RPS-LOCKOUT",
+      "target": "PNL-RPS-1",
+      "edge_type": "control"
+    },
+    {
+      "source": "JB-ESF-A",
+      "target": "PNL-ESF-A",
+      "edge_type": "control"
+    },
+    {
+      "source": "JB-ESF-B",
+      "target": "PNL-ESF-B",
+      "edge_type": "control"
+    },
+    {
+      "source": "PNL-ESF-A",
+      "target": "PUMP-AFW-A",
+      "edge_type": "control"
+    },
+    {
+      "source": "PNL-ESF-A",
+      "target": "VALVE-MOV-A",
+      "edge_type": "control"
+    },
+    {
+      "source": "PNL-ESF-B",
+      "target": "PUMP-AFW-B",
+      "edge_type": "control"
+    },
+    {
+      "source": "PNL-ESF-B",
+      "target": "VALVE-MOV-B",
+      "edge_type": "control"
+    }
+  ],
+  "note": "High-recall proposal included annotation labels RPS-TRIP and RPS-LOCKOUT as tentative logical nodes."
+}

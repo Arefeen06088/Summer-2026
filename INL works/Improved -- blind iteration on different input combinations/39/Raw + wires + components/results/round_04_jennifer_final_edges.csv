@@ -1,0 +1,56 @@
+source,target,confidence,evidence
+OFFSITE_230KV_A,DS_230A,HIGH,solid vertical from offsite block into DS-230A
+DS_230A,TR_1A,HIGH,solid vertical from DS-230A to transformer
+TR_1A,CB_1A,HIGH,solid vertical from transformer to breaker
+CB_1A,BUS_4160_A,HIGH,solid vertical terminates at 4.16 kV bus dot
+EDG_1A,CB_DG_A,HIGH,solid emergency diesel drop to diesel breaker
+CB_DG_A,BUS_4160_A,HIGH,solid vertical into 4.16 kV bus dot
+BUS_4160_A,CB_TIE_AB,HIGH,left bus terminates at normally open tie breaker; represented through breaker node
+CB_TIE_AB,BUS_4160_B,HIGH,right side of normally open tie terminates at B bus; no direct bus splice
+OFFSITE_230KV_B,DS_230B,HIGH,solid vertical from offsite block into DS-230B
+DS_230B,TR_1B,HIGH,solid vertical from DS-230B to transformer
+TR_1B,CB_1B,HIGH,solid vertical from transformer to breaker
+CB_1B,BUS_4160_B,HIGH,solid vertical terminates at 4.16 kV bus dot
+EDG_1B,CB_DG_B,HIGH,solid emergency diesel drop to diesel breaker
+CB_DG_B,BUS_4160_B,HIGH,solid vertical into 4.16 kV bus dot
+BUS_4160_A,RELAY_UV_A,HIGH,dashed/dash-dot sensing tap from A bus to relay UV-A 27/59
+BUS_4160_B,RELAY_UV_B,HIGH,dashed/dash-dot sensing tap from B bus to relay UV-B 27/59
+BUS_4160_A,TR_480_A,HIGH,solid branch from A 4.16 kV bus to TR-480-A
+TR_480_A,CB_480_A,HIGH,solid vertical through transformer to breaker
+CB_480_A,BUS_480_A,HIGH,solid vertical into 480 V load-center bus
+BUS_4160_B,TR_480_B,HIGH,solid branch from B 4.16 kV bus to TR-480-B
+TR_480_B,CB_480_B,HIGH,solid vertical through transformer to breaker
+CB_480_B,BUS_480_B,HIGH,solid vertical into 480 V load-center bus
+BUS_480_A,MCC_A1,HIGH,solid vertical branch from 480 A bus
+BUS_480_A,MCC_A2,HIGH,solid vertical branch from 480 A bus
+BUS_480_B,MCC_B1,HIGH,solid vertical branch from 480 B bus
+BUS_480_B,MCC_B2,HIGH,solid vertical branch from 480 B bus
+BUS_480_A,CHG_125A,MED,LC-A side riser/branch visually reaches charger stack
+CHG_125A,BAT_125A,MED,stacked vertical DC path between charger and battery
+BAT_125A,INV_120A,HIGH,vertical DC path; terminal schedule also indicates BAT-A to INV-A
+INV_120A,PANEL_120A,MED,vertical stack conductor
+PANEL_120A,RPS_A,MED,vertical stack conductor
+BUS_480_B,CHG_125B,MED,LC-B side riser/branch visually reaches charger stack
+CHG_125B,BAT_125B,MED,stacked vertical DC path between charger and battery
+BAT_125B,INV_120B,HIGH,vertical DC path in B stack
+INV_120B,PANEL_120B,MED,vertical stack conductor
+PANEL_120B,RPS_B,MED,vertical stack conductor
+MCC_A1,PUMP_RHR_A,HIGH,solid feeder routed from MCC-A1 to RHR-A pump
+MCC_A1,PUMP_CS_A,HIGH,solid feeder routed from MCC-A1 to CS-A pump
+MCC_A2,PUMP_CCW_A,HIGH,solid feeder routed from MCC-A2 to CCW-A pump
+MCC_A2,MOV_881A,HIGH,solid feeder to MOV-881A
+MCC_A2,MOV_742A,HIGH,solid feeder to MOV-742A
+MCC_B1,PUMP_RHR_B,HIGH,solid feeder routed from MCC-B1 to RHR-B pump
+MCC_B1,PUMP_CS_B,HIGH,solid feeder routed from MCC-B1 to CS-B pump
+MCC_B2,PUMP_CCW_B,HIGH,solid feeder routed from MCC-B2 to CCW-B pump
+MCC_B2,MOV_881B,HIGH,solid feeder to MOV-881B
+MCC_B2,MOV_742B,HIGH,solid feeder to MOV-742B
+RPS_A,RELAY_KA1,HIGH,dashed branch and terminal schedule KA1 RPS-A to RLY
+RPS_B,RELAY_KB1,HIGH,dashed branch and terminal schedule KB1 RPS-B to RLY
+RPS_A,JB_A101,HIGH,dashed bottom run and terminal schedule A101 RPS-A to MOV-A
+JB_A101,MOV_881A,MED,dashed vertical leg from MOV-881A area to JB-A101
+JB_A101,MOV_742A,MED,dashed vertical leg from MOV-742A area to JB-A101
+RPS_B,JB_B101,HIGH,dashed bottom/right run and terminal schedule B101 RPS-B to MOV-B
+JB_B101,MOV_881B,MED,dashed vertical leg from MOV-881B area to JB-B101
+JB_B101,MOV_742B,MED,dashed vertical leg from MOV-742B area to JB-B101
+ANN_CR01,REC_SOE01,HIGH,dashed segment visibly terminates between annunciation and SOE boxes

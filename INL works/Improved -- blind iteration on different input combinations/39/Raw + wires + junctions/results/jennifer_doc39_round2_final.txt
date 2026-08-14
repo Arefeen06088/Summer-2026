@@ -1,0 +1,131 @@
+1) NODE_LIST_CSV
+node
+ANN-CR01
+BAT-125A
+BAT-125B
+BUS-4160-A
+BUS-4160-B
+BUS-480-A
+BUS-480-B
+CB-1A
+CB-1B
+CB-480-A
+CB-480-B
+CB-DG-A
+CB-DG-B
+CB-TIE-AB
+CHG-125A
+CHG-125B
+DS-230A
+DS-230B
+EDG-1A
+EDG-1B
+GND-PLANT
+INV-120A
+INV-120B
+JB-A101
+JB-B101
+MCC-A1
+MCC-A2
+MCC-B1
+MCC-B2
+MOV-742A
+MOV-742B
+MOV-881A
+MOV-881B
+OFFSITE-230A
+OFFSITE-230B
+PANEL-120A
+PANEL-120B
+PUMP-CCW-A
+PUMP-CCW-B
+PUMP-CS-A
+PUMP-CS-B
+PUMP-RHR-A
+PUMP-RHR-B
+REC-SOE01
+RELAY-KA1
+RELAY-KB1
+RELAY-UV-A
+RELAY-UV-B
+RPS-A
+RPS-B
+TR-1A
+TR-1B
+TR-480-A
+TR-480-B
+
+2) EDGE_LIST_CSV
+source,target,confidence,line_type,evidence
+OFFSITE-230A,DS-230A,0.96,solid,raw_top_full shows vertical solid feeder from OFFSITE 230 kV A source box into DS-230A top port
+DS-230A,TR-1A,0.96,solid,raw_top_full shows DS-230A bottom port continuing directly into TR-1A top
+TR-1A,CB-1A,0.96,solid,raw_top_full shows TR-1A bottom port feeding CB-1A
+CB-1A,BUS-4160-A,0.97,solid,raw_top_full shows CB-1A bottom port landing at filled tap on BUS-4160-A
+EDG-1A,CB-DG-A,0.96,solid,raw_top_full shows EDG-1A emergency diesel vertical feeder into CB-DG-A
+CB-DG-A,BUS-4160-A,0.96,solid,raw_top_full shows CB-DG-A bottom port landing at filled tap on BUS-4160-A
+BUS-4160-A,CB-TIE-AB,0.94,solid,raw_top_full shows BUS-4160-A continuing right into physical N.O. tie breaker CB-TIE-AB
+CB-TIE-AB,BUS-4160-B,0.94,solid,raw_top_full shows CB-TIE-AB right port continuing to BUS-4160-B
+OFFSITE-230B,DS-230B,0.96,solid,raw_top_full shows vertical solid feeder from OFFSITE 230 kV B source box into DS-230B top port
+DS-230B,TR-1B,0.96,solid,raw_top_full shows DS-230B bottom port continuing directly into TR-1B top
+TR-1B,CB-1B,0.96,solid,raw_top_full shows TR-1B bottom port feeding CB-1B
+CB-1B,BUS-4160-B,0.97,solid,raw_top_full shows CB-1B bottom port landing at filled tap on BUS-4160-B
+EDG-1B,CB-DG-B,0.96,solid,raw_top_full shows EDG-1B emergency diesel vertical feeder into CB-DG-B
+CB-DG-B,BUS-4160-B,0.96,solid,raw_top_full shows CB-DG-B bottom port landing at filled tap on BUS-4160-B
+BUS-4160-A,TR-480-A,0.96,solid,raw_left_train shows filled tap on BUS-4160-A dropping to TR-480-A
+TR-480-A,CB-480-A,0.96,solid,raw_left_train shows TR-480-A bottom port continuing to CB-480-A
+CB-480-A,BUS-480-A,0.97,solid,raw_left_train shows CB-480-A bottom port landing on BUS-480-A load center
+BUS-4160-B,TR-480-B,0.96,solid,raw_right_train shows filled tap on BUS-4160-B dropping to TR-480-B
+TR-480-B,CB-480-B,0.96,solid,raw_right_train shows TR-480-B bottom port continuing to CB-480-B
+CB-480-B,BUS-480-B,0.97,solid,raw_right_train shows CB-480-B bottom port landing on BUS-480-B load center
+BUS-4160-A,RELAY-UV-A,0.80,dash-dot,raw_left_train shows vertical dash-dot sensing drop from BUS-4160-A to RELAY-UV-A box
+BUS-4160-B,RELAY-UV-B,0.80,dash-dot,raw_right_train shows vertical dash-dot sensing drop from BUS-4160-B to RELAY-UV-B box
+BUS-480-A,MCC-A1,0.96,solid,raw_left_train shows filled bus tap from BUS-480-A dropping to MCC-A1
+BUS-480-A,MCC-A2,0.96,solid,raw_left_train shows filled bus tap from BUS-480-A dropping to MCC-A2
+BUS-480-A,GND-PLANT,0.90,solid,raw_left_train shows right end of BUS-480-A dropping to ground reference symbol labeled GND-PLANT
+BUS-480-B,MCC-B1,0.96,solid,raw_right_train shows filled bus tap from BUS-480-B dropping to MCC-B1
+BUS-480-B,MCC-B2,0.96,solid,raw_right_train shows filled bus tap from BUS-480-B dropping to MCC-B2
+BUS-480-A,CHG-125A,0.78,solid,raw_left_train shows LC-A feeder from BUS-480-A into the A-side 125 V stack rail shared by CHG-125A
+CHG-125A,BAT-125A,0.90,solid,raw_left_train shows vertical solid A-side stack conductor from CHG-125A down to BAT-125A
+BAT-125A,INV-120A,0.90,solid,raw_left_train shows vertical solid A-side stack conductor continuing from BAT-125A to INV-120A
+INV-120A,PANEL-120A,0.90,solid,raw_left_train shows vertical solid A-side stack conductor from INV-120A to PANEL-120A
+PANEL-120A,RPS-A,0.90,solid,raw_left_train shows vertical solid A-side stack conductor from PANEL-120A to RPS-A
+BUS-480-B,CHG-125B,0.76,solid,raw_right_train shows LC-B feeder from BUS-480-B into the B-side 125 V stack rail shared by CHG-125B
+CHG-125B,BAT-125B,0.90,solid,raw_right_train shows vertical solid B-side stack conductor from CHG-125B down to BAT-125B
+BAT-125B,INV-120B,0.90,solid,raw_right_train shows vertical solid B-side stack conductor continuing from BAT-125B to INV-120B
+INV-120B,PANEL-120B,0.90,solid,raw_right_train shows vertical solid B-side stack conductor from INV-120B to PANEL-120B
+PANEL-120B,RPS-B,0.90,solid,raw_right_train shows vertical solid B-side stack conductor from PANEL-120B to RPS-B
+MCC-A1,PUMP-RHR-A,0.96,solid,raw_left_train shows MCC-A1 left feeder dropping to PUMP-RHR-A
+MCC-A1,PUMP-CS-A,0.96,solid,raw_left_train shows MCC-A1 center feeder dropping to PUMP-CS-A
+MCC-A2,PUMP-CCW-A,0.96,solid,raw_left_train shows MCC-A2 left feeder dropping to PUMP-CCW-A
+MCC-A2,MOV-881A,0.96,solid,raw_left_train shows MCC-A2 center feeder dropping to MOV-881A
+MCC-A2,MOV-742A,0.96,solid,raw_left_train shows MCC-A2 right feeder dropping to MOV-742A
+MCC-B1,PUMP-RHR-B,0.96,solid,raw_right_train shows MCC-B1 left feeder dropping to PUMP-RHR-B
+MCC-B1,PUMP-CS-B,0.96,solid,raw_right_train shows MCC-B1 center feeder dropping to PUMP-CS-B
+MCC-B2,PUMP-CCW-B,0.96,solid,raw_right_train shows MCC-B2 left feeder dropping to PUMP-CCW-B
+MCC-B2,MOV-881B,0.96,solid,raw_right_train shows MCC-B2 center feeder dropping to MOV-881B
+MCC-B2,MOV-742B,0.96,solid,raw_right_train shows MCC-B2 right feeder dropping to MOV-742B
+RPS-A,RELAY-KA1,0.86,dashed,raw_left_train shows dashed control route from RPS-A side to RELAY-KA1
+RPS-B,RELAY-KB1,0.86,dashed,raw_right_train shows dashed control route from RPS-B side to RELAY-KB1
+RPS-A,JB-A101,0.72,dashed,raw_left_train and raw_bottom_full show dashed RPS-A control corridor continuing to JB-A101 lower field junction box
+JB-A101,MOV-881A,0.82,dashed,raw_left_train shows dashed control drop from MOV-881A down to JB-A101
+JB-A101,MOV-742A,0.82,dashed,raw_left_train shows dashed control drop from MOV-742A down to JB-A101
+RPS-B,JB-B101,0.72,dashed,raw_right_train and raw_bottom_full show dashed RPS-B control corridor continuing to JB-B101 lower field junction box
+JB-B101,MOV-881B,0.82,dashed,raw_right_train shows dashed control drop from MOV-881B down to JB-B101
+JB-B101,MOV-742B,0.82,dashed,raw_right_train shows dashed control drop from MOV-742B down to JB-B101
+ANN-CR01,REC-SOE01,0.78,dashed,raw_lower_dc_ac shows dashed control room annunciation line directly between ANN-CR01 and REC-SOE01 boxes
+
+3) FINAL_DECISION
+- Saturated and agreed with Diego round 2 unchanged. Final visual check supports the 54-node 56-edge Jennifer round-1 precision graph as the final matrix basis.
+- Final exclusions remain JB-A101--ANN-CR01 and REC-SOE01--JB-B101 because the raw schematic shows shared lower tray or corridor proximity without clear dashed terminal endpoints.
+- No BUS-480-B ground edge was added. LC-A and LC-B remain evidence labels only. KA1 KB1 A101 B101 and DC-A are not promoted to nodes.
+
+4) COUNTS
+unique node count: 54
+edge row count: 56
+unique undirected pair count: 56
+
+5) FINAL_NOTES
+- CB-TIE-AB is retained as a physical visible bus-tie connection despite the N.O. label.
+- BUS-4160-A--RELAY-UV-A and BUS-4160-B--RELAY-UV-B are retained as dash-dot sensing edges rather than power feeders.
+- BUS-480-A--CHG-125A and BUS-480-B--CHG-125B remain lower-confidence stack-feed interpretations through the LC-A and LC-B side rails.
+- RPS/JB/MOV dashed controls are retained only where the routed dashed line visibly lands at the named boxes.

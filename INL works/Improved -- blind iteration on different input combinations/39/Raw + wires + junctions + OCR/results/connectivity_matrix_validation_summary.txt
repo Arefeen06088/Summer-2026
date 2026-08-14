@@ -1,0 +1,37 @@
+Connectivity matrix validation summary - Document 39 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\39\connectivity_matrix_improved_no_overlap.csv
+GT after normalization: 58 undirected edges across 54 component names.
+
+Token usage:
+Token source files: document39_token_usage_estimates.csv; document39_token_usage_totals.csv.
+Document total token estimate: low=70181, expected=179772, high=453918.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=44, FP=12, FN=14, Precision=0.785714, Recall=0.758621, F1=0.771930.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names; missing exact GT component names.
+- Extracted components: 54; extra/non-GT names: 4; missing GT component names: 4.
+- False-positive extracted edge examples: BUS-4160-A-DIV-I -- CB-1A; BUS-4160-A-DIV-I -- CB-DG-A; BUS-4160-A-DIV-I -- CB-TIE-AB; BUS-4160-A-DIV-I -- RELAY-UV-A; BUS-4160-A-DIV-I -- TR-480-A; BUS-4160-B-DIV-II -- CB-1B; BUS-4160-B-DIV-II -- CB-DG-B; BUS-4160-B-DIV-II -- CB-TIE-AB; ... (+4 more).
+- Missed GT edge examples: ANN-CR01 -- RPS-A; ANN-CR01 -- RPS-B; BUS-4160-A -- CB-1A; BUS-4160-A -- CB-DG-A; BUS-4160-A -- CB-TIE-AB; BUS-4160-A -- RELAY-UV-A; BUS-4160-A -- TR-480-A; BUS-4160-B -- CB-1B; ... (+6 more).
+- Extra/non-GT component examples: BUS-4160-A-DIV-I; BUS-4160-B-DIV-II; OFFSITE-230KV-A; OFFSITE-230KV-B.
+- Missing GT component examples: BUS-4160-A; BUS-4160-B; GRID-230A; GRID-230B.
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=44, FP=0, FN=14, Precision=1.000000, Recall=0.758621, F1=0.862745.
+- If all missed GT edges were added, final performance would be TP=58, FP=12, FN=0, Precision=0.828571, Recall=1.000000, F1=0.906250.
+- If extra node BUS-4160-A-DIV-I and its 5 false-positive incident edge(s) were not put in extraction, final performance would be TP=44, FP=7, FN=14, Precision=0.862745, Recall=0.758621, F1=0.807339.
+- If extra node BUS-4160-B-DIV-II and its 5 false-positive incident edge(s) were not put in extraction, final performance would be TP=44, FP=7, FN=14, Precision=0.862745, Recall=0.758621, F1=0.807339.
+- If extra node OFFSITE-230KV-A and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=44, FP=11, FN=14, Precision=0.800000, Recall=0.758621, F1=0.778761.
+- If extra node OFFSITE-230KV-B and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=44, FP=11, FN=14, Precision=0.800000, Recall=0.758621, F1=0.778761.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.771930.
+
+Round-specific notes:
+- Diego -- Round 1: TP=44, FP=16, FN=14, F1=0.745763; extra nodes=5, missing GT nodes=4. FP examples: ANN-CR01 -- CONTROL-ROOM-ANNUNCIATION; BUS-4160-A-DIV-I -- CB-1A; BUS-4160-A-DIV-I -- CB-DG-A; BUS-4160-A-DIV-I -- CB-TIE-AB; ... (+12 more). FN examples: ANN-CR01 -- RPS-A; ANN-CR01 -- RPS-B; BUS-4160-A -- CB-1A; BUS-4160-A -- CB-DG-A; ... (+10 more).
+- Jennifer -- Round 2: TP=44, FP=12, FN=14, F1=0.771930; extra nodes=4, missing GT nodes=4. FP examples: BUS-4160-A-DIV-I -- CB-1A; BUS-4160-A-DIV-I -- CB-DG-A; BUS-4160-A-DIV-I -- CB-TIE-AB; BUS-4160-A-DIV-I -- RELAY-UV-A; ... (+8 more). FN examples: ANN-CR01 -- RPS-A; ANN-CR01 -- RPS-B; BUS-4160-A -- CB-1A; BUS-4160-A -- CB-DG-A; ... (+10 more).
+- Diego -- Round 3: TP=44, FP=12, FN=14, F1=0.771930; extra nodes=4, missing GT nodes=4. FP examples: BUS-4160-A-DIV-I -- CB-1A; BUS-4160-A-DIV-I -- CB-DG-A; BUS-4160-A-DIV-I -- CB-TIE-AB; BUS-4160-A-DIV-I -- RELAY-UV-A; ... (+8 more). FN examples: ANN-CR01 -- RPS-A; ANN-CR01 -- RPS-B; BUS-4160-A -- CB-1A; BUS-4160-A -- CB-DG-A; ... (+10 more).
+- Jennifer -- Round 4: TP=44, FP=12, FN=14, F1=0.771930; extra nodes=4, missing GT nodes=4. FP examples: BUS-4160-A-DIV-I -- CB-1A; BUS-4160-A-DIV-I -- CB-DG-A; BUS-4160-A-DIV-I -- CB-TIE-AB; BUS-4160-A-DIV-I -- RELAY-UV-A; ... (+8 more). FN examples: ANN-CR01 -- RPS-A; ANN-CR01 -- RPS-B; BUS-4160-A -- CB-1A; BUS-4160-A -- CB-DG-A; ... (+10 more).
+- Final connectivity -- Final: TP=44, FP=12, FN=14, F1=0.771930; extra nodes=4, missing GT nodes=4. FP examples: BUS-4160-A-DIV-I -- CB-1A; BUS-4160-A-DIV-I -- CB-DG-A; BUS-4160-A-DIV-I -- CB-TIE-AB; BUS-4160-A-DIV-I -- RELAY-UV-A; ... (+8 more). FN examples: ANN-CR01 -- RPS-A; ANN-CR01 -- RPS-B; BUS-4160-A -- CB-1A; BUS-4160-A -- CB-DG-A; ... (+10 more).

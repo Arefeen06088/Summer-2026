@@ -1,0 +1,18 @@
+source,target,status,reason
+TO UNIT AUX BUS CONT.,,excluded_node,"off-page continuation label, not a component node"
+FROM UNIT MAIN GENERATOR,,excluded_node,"source/annotation label, not a component node"
+SOURCE STARTUP AUX XFMR,,excluded_node,"source/annotation label, not a component node"
+TO STATION YARD CONT.,,excluded_node,"off-page continuation label, not a component node"
+2A-F1..2A-F6,,folded_node,feeder labels folded into direct MCC-2A1 to load edges
+2B-F1..2B-F6,,folded_node,feeder labels folded into direct MCC-2B1 to load edges
+S-125DC-A,125 VDC TRAIN A,merged_node,same visible bus label family represented as BUS-125VDC-A
+S-125DC-B,125 VDC TRAIN B,merged_node,same visible bus label family represented as BUS-125VDC-B
+RELAY-27A,,uncertain_excluded_node,"visible UV relay, but dashed/control endpoints are not clean enough for final binary topology"
+RELAY-27B,,uncertain_excluded_node,"visible UV relay, but dashed/control endpoints are not clean enough for final binary topology"
+BUS-480A,BUS-480B,excluded_edge,nearby note says 480V tie reserved space; no connection shown
+BUS-4160A,BUS-4160B,excluded_edge,A/B 4.16 kV tie is represented only through CB-105
+RELAY-86A,RPS-PNL-A,uncertain_excluded_edge,dashed/control logic relationship is visually mixed with routing outline
+RELAY-86B,RPS-PNL-B,uncertain_excluded_edge,dashed/control logic relationship is visually mixed with routing outline
+RELAY-27A,RPS-PNL-A,uncertain_excluded_edge,dashed control boundary is visible but endpoint routing is not precise enough
+RELAY-27B,RPS-PNL-B,uncertain_excluded_edge,dashed control boundary is visible but endpoint routing is not precise enough
+dashed risers/enclosures/tables,,excluded_annotation,"routing boundaries, schedules, notes, title block, status/reference tables are not graph nodes"

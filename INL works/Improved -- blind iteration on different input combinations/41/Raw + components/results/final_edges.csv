@@ -1,0 +1,63 @@
+source,target,kind,confidence,evidence
+OFFSITE_A_161KV,TR_1A,power_feeder,medium,Stepped solid conductor from 161 kV OFFSITE A device port to TR-1A primary side terminal.
+TR_1A,CB_101,power_feeder,high,Solid stepped feeder from TR-1A secondary terminal to left terminal of CB-101.
+CB_101,BUS_1A_4160V,power_feeder,high,Solid 4160V FEED A line from CB-101 right terminal into BUS-1A left terminal.
+TR_1A,GND_1E,grounding_conductor,high,Vertical conductor from TR-1A bottom terminal to ground symbol labeled GND-1E.
+EDG_1A,CB_105,power_feeder,high,Solid line from EDG-1A generator port to CB-105 left/lower terminal path.
+CB_105,BUS_1A_4160V,power_feeder,high,Solid EDG A INCOMING feeder exits CB-105 and rises to BUS-1A.
+CB_105,CTRL_86A,control_interlock,high,Dashed control lead drops from CB-105 bottom terminal to dashed CTRL-86A trunk.
+BUS_1A_4160V,CB_TIE_1AB,bus_tie,medium,Solid line from right terminal of BUS-1A to left terminal of CB-TIE 1AB; breaker contact is shown open.
+CB_TIE_1AB,BUS_1B_4160V,bus_tie,medium,Solid line from right terminal of CB-TIE 1AB to left terminal of BUS-1B; bus tie note says normally open.
+BUS_1A_4160V,TR_LC_1A,power_feeder,high,Vertical feeder from BUS-1A down to row-C junction dot above TR-LC-1A.
+BUS_1A_4160V,TR_SAF_1A,power_feeder,high,Vertical feeder from BUS-1A down to row-C junction dot above TR-SAF-1A.
+OFFSITE_B_161KV,TR_1B,power_feeder,medium,Stepped solid conductor from 161 kV OFFSITE B device port to TR-1B primary side terminal.
+TR_1B,CB_102,power_feeder,high,Solid stepped feeder from TR-1B secondary terminal to right terminal of CB-102.
+CB_102,BUS_1B_4160V,power_feeder,high,Solid line from CB-102 left terminal into BUS-1B right terminal.
+EDG_1B,CB_106,power_feeder,high,Solid line from EDG-1B generator port to right terminal of CB-106.
+CB_106,BUS_1B_4160V,power_feeder,high,Solid EDG B INCOMING feeder exits CB-106 and rises to BUS-1B.
+CB_106,CTRL_86B,control_interlock,high,Dashed control lead drops from CB-106 bottom terminal to dashed CTRL-86B trunk.
+BUS_1B_4160V,TR_LC_1B,power_feeder,high,Vertical feeder from BUS-1B down to row-C terminal dot above TR-LC-1B.
+BUS_1B_4160V,TR_SAF_1B,power_feeder,high,Vertical feeder from BUS-1B/EDG B incoming path down to row-C terminal dot above TR-SAF-1B.
+TR_LC_1A,CB_201,power_feeder,high,Short vertical line from TR-LC-1A secondary terminal to CB-201 top terminal.
+CB_201,BUS_480A,power_feeder,high,Vertical 480V 3PH feeder from CB-201 bottom terminal to BUS-480A.
+BUS_480A,MCC_1A,power_feeder,high,Vertical drop from BUS-480A to top terminal of MCC-1A.
+MCC_1A,PUMP_CCW_103A,power_feeder,high,Solid feeder from MCC-1A bottom terminal through terminal dot to PUMP-CCW-103A motor.
+BUS_480A,MCC_1C,power_feeder,high,Vertical drop from BUS-480A to top terminal of MCC-1C.
+MCC_1C,FAN_CRHV_104A,power_feeder,high,Solid feeder from MCC-1C bottom terminal through terminal dot to FAN-CRHV-104A.
+BUS_480A,CHGR_125A,power_feeder,high,"Solid feeder leaves the left terminal circle of BUS-480A, is labeled CABLE 1A-480-7/FDR A-DC, and lands on the left input port of CHGR-125A."
+TR_SAF_1A,CB_203,power_feeder,high,Short vertical line from TR-SAF-1A secondary terminal to CB-203 top terminal.
+CB_203,BUS_480E1A,power_feeder,high,Vertical 480V ESS A feeder from CB-203 bottom terminal to BUS-480E1A.
+BUS_480E1A,MCC_ESS_A,power_feeder,high,Vertical drop from BUS-480E1A to top terminal of MCC-ESS-A.
+MCC_ESS_A,PUMP_SI_101A,power_feeder,high,Left solid branch from MCC-ESS-A lower terminals to PUMP-SI-101A motor.
+MCC_ESS_A,PUMP_RHR_102A,power_feeder,high,Center solid branch from MCC-ESS-A lower terminals to PUMP-RHR-102A motor.
+MCC_ESS_A,MOV_1201A,power_feeder,high,Right solid branch from MCC-ESS-A lower terminals to MOV-1201A valve symbol.
+TR_LC_1B,CB_202,power_feeder,high,Short vertical line from TR-LC-1B secondary terminal to CB-202 top terminal.
+CB_202,BUS_480B,power_feeder,high,Vertical 480V 3PH feeder from CB-202 bottom terminal to BUS-480B.
+BUS_480B,MCC_1B,power_feeder,high,Vertical drop from BUS-480B to top terminal of MCC-1B.
+MCC_1B,PUMP_CCW_103B,power_feeder,high,Solid feeder from MCC-1B bottom terminal through terminal dot to PUMP-CCW-103B motor.
+BUS_480B,MCC_1D,power_feeder,high,Vertical drop from BUS-480B to top terminal of MCC-1D.
+MCC_1D,FAN_CRHV_104B,power_feeder,high,Solid feeder from MCC-1D bottom terminal through terminal dot to FAN-CRHV-104B.
+TR_SAF_1B,CB_204,power_feeder,high,Short vertical line from TR-SAF-1B secondary terminal to CB-204 top terminal.
+CB_204,BUS_480E1B,power_feeder,high,Solid 480V ESS B feeder from CB-204 bottom terminal routes left and down to BUS-480E1B left terminal.
+BUS_480E1B,MCC_ESS_B,power_feeder,high,Vertical drop from BUS-480E1B to top terminal of MCC-ESS-B.
+MCC_ESS_B,PUMP_SI_101B,power_feeder,high,Left solid branch from MCC-ESS-B lower terminals to PUMP-SI-101B motor.
+MCC_ESS_B,PUMP_RHR_102B,power_feeder,high,Center solid branch from MCC-ESS-B lower terminals to PUMP-RHR-102B motor.
+MCC_ESS_B,MOV_1201B,power_feeder,high,Right solid branch from MCC-ESS-B lower terminals to MOV-1201B valve symbol.
+BUS_480E1B,CHGR_125B,power_feeder,medium,Solid feeder/cable path labeled CABLE 1B-480-9/FDR B-DC descends from the BUS-480E1B 480 V ESS B feeder area to the right input port of CHGR-125B; no terminal dot ties it to BUS-480B.
+CTRL_86A,RELAY_K86A,control_interlock,high,Dashed CTRL-86A trunk terminates at square port immediately left of RELAY-K86A.
+RELAY_K86A,PANEL_RPS_A,control_interlock,high,Dashed vertical lead from RELAY-K86A lower terminal continues to the left side square terminal of PANEL-RPS-A.
+PANEL_RPS_A,JB_ESF_01,control_interlock,high,"Dashed control lead leaves the top terminal of PANEL-RPS-A, turns upward/right, and lands on the left square port of JB-ESF-01."
+CTRL_86B,RELAY_K86B,control_interlock,high,Dashed CTRL-86B trunk terminates at square port immediately right of RELAY-K86B.
+RELAY_K86B,PANEL_RPS_B,control_interlock,high,Dashed vertical lead from RELAY-K86B lower terminal continues to the right side square terminal of PANEL-RPS-B.
+PANEL_RPS_B,JB_ESF_01,control_interlock,high,"Dashed control lead leaves the right square port of JB-ESF-01, drops, and lands on the top terminal of PANEL-RPS-B."
+CHGR_125A,DC_BUS_125A,dc_feeder,high,Solid DC output line from CHGR-125A right terminal to DC-BUS-125A.
+BAT_125A,DC_BUS_125A,dc_feeder,high,Solid line from BAT-125A to lower/left connection on DC-BUS-125A.
+DC_BUS_125A,INV_120A,dc_feeder,high,Solid 125VDC line from DC-BUS-125A right terminal to INV-120A input.
+INV_120A,UPS_BUS_A,power_feeder,high,Solid VITAL 120VAC line from INV-120A output to UPS-BUS-A left terminal.
+UPS_BUS_A,PANEL_RPS_A,power_feeder,high,Solid stepped feeder from the upper/left side of UPS-BUS-A rises and lands on the bottom terminal of PANEL-RPS-A. Nearby vertical boundary/crossing line has no terminal dot and is not treated as a junction.
+UPS_BUS_A,INST_RACK_1,power_feeder,high,"Solid line exits the right terminal of UPS-BUS-A, turns downward, and lands on the top terminal circle of INST-RACK-1."
+CHGR_125B,DC_BUS_125B,dc_feeder,high,Solid DC output line from CHGR-125B left terminal to DC-BUS-125B right-side connection.
+BAT_125B,DC_BUS_125B,dc_feeder,high,Solid line from BAT-125B to lower/right connection on DC-BUS-125B.
+DC_BUS_125B,INV_120B,dc_feeder,high,Solid 125VDC line from DC-BUS-125B left terminal to INV-120B input.
+INV_120B,UPS_BUS_B,power_feeder,high,Solid VITAL 120VAC line from INV-120B output to UPS-BUS-B right/left-facing terminal.
+UPS_BUS_B,PANEL_RPS_B,power_feeder,high,Solid stepped feeder from UPS-BUS-B rises to the bottom terminal of PANEL-RPS-B.

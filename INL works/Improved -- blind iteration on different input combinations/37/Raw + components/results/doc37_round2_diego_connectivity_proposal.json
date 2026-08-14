@@ -1,0 +1,776 @@
+{
+  "document": "37",
+  "iteration": "2",
+  "round": "2",
+  "agent": "Diego",
+  "source_restriction": "Doc37 Raw + components only; no GT, no GT-derived feedback, no Raw+wires, no OCR engines",
+  "nodes": [
+    {
+      "id": "GRID-345",
+      "type": "source",
+      "evidence": "top center 3-phase source circle labeled GRID-345 / 6.9 kV offsite 345 kV"
+    },
+    {
+      "id": "CB-101",
+      "type": "breaker",
+      "evidence": "top row breaker labeled CB-101 / 52-1A between GRID-345 and AUX-TR-1A"
+    },
+    {
+      "id": "AUX-TR-1A",
+      "type": "transformer",
+      "evidence": "top transformer symbol labeled AUX-TR-1A with 345/6.9 kV marking"
+    },
+    {
+      "id": "BUS-6KA",
+      "type": "bus",
+      "evidence": "upper left horizontal bus labeled BUS-6KA / 6.9 kV class 1E bus A"
+    },
+    {
+      "id": "CB-TIE-6K",
+      "type": "breaker",
+      "evidence": "central bus-tie breaker labeled CB-TIE-6K / 52-T6 between BUS-6KA and BUS-6KB"
+    },
+    {
+      "id": "CB-102",
+      "type": "breaker",
+      "evidence": "top row breaker labeled CB-102 / 52-1B between GRID-345 and AUX-TR-1B"
+    },
+    {
+      "id": "AUX-TR-1B",
+      "type": "transformer",
+      "evidence": "top transformer symbol labeled AUX-TR-1B with 345/6.9 kV marking"
+    },
+    {
+      "id": "BUS-6KB",
+      "type": "bus",
+      "evidence": "upper right horizontal bus labeled BUS-6KB / 6.9 kV class 1E bus B"
+    },
+    {
+      "id": "CB-103A",
+      "type": "breaker",
+      "evidence": "breaker/tap label CB-103A above SWGR-1EA feeder from BUS-6KA"
+    },
+    {
+      "id": "SWGR-1EA",
+      "type": "panel",
+      "evidence": "left 6.9 kV switchgear section labeled SWGR-1EA / 6.9 kV SWGR A"
+    },
+    {
+      "id": "DG-1A",
+      "type": "generator",
+      "evidence": "left diesel generator circle labeled DG-1A / diesel gen A"
+    },
+    {
+      "id": "CB-DG1A",
+      "type": "breaker",
+      "evidence": "left diesel generator breaker labeled CB-DG1A / 52-DGA"
+    },
+    {
+      "id": "ATS-1A",
+      "type": "transfer_switch",
+      "evidence": "left transfer switch labeled ATS-1A with NORM/EMERG marking"
+    },
+    {
+      "id": "RELAY-K12A",
+      "type": "relay",
+      "evidence": "left relay coil box labeled RELAY-K12A / ATS permissive"
+    },
+    {
+      "id": "TR-480A",
+      "type": "transformer",
+      "evidence": "left 6.9 kV/480 V transformer labeled TR-480A"
+    },
+    {
+      "id": "BUS-480A",
+      "type": "bus",
+      "evidence": "left middle horizontal bus labeled BUS-480A / 480 V load center A"
+    },
+    {
+      "id": "MCC-1A",
+      "type": "mcc",
+      "evidence": "left Safety MCC A enclosure fed by vertical tap labeled MCC-1A / P23"
+    },
+    {
+      "id": "PUMP-SI-1A",
+      "type": "load",
+      "evidence": "left MCC load branch P24 labeled PUMP-SI-1A / SI pump A"
+    },
+    {
+      "id": "PUMP-RHR-1A",
+      "type": "load",
+      "evidence": "left MCC load branch P25 labeled PUMP-RHR-1A / RHR pump A"
+    },
+    {
+      "id": "PUMP-CCW-1A",
+      "type": "load",
+      "evidence": "left MCC load branch P26 labeled PUMP-CCW-1A / CCW pump A"
+    },
+    {
+      "id": "FAN-RB-1A",
+      "type": "load",
+      "evidence": "left MCC load branch P27 labeled FAN-RB-1A / RB fan A"
+    },
+    {
+      "id": "MOV-HPCI-1A",
+      "type": "load",
+      "evidence": "left MCC load branch P28 labeled MOV-HPCI-1A / HPCI MOV A"
+    },
+    {
+      "id": "VALVE-SW-1A",
+      "type": "load",
+      "evidence": "left MCC load branch P29 labeled VALVE-SW-1A / SW INBD A"
+    },
+    {
+      "id": "CHGR-125A",
+      "type": "charger",
+      "evidence": "left AC/DC charger box labeled CHGR-125A"
+    },
+    {
+      "id": "BAT-125A",
+      "type": "dc_source",
+      "evidence": "left battery symbol labeled BAT-125A / 125 VDC A"
+    },
+    {
+      "id": "BUS-125DCA",
+      "type": "bus",
+      "evidence": "left DC horizontal bus labeled BUS-125DCA / 125 VDC bus A"
+    },
+    {
+      "id": "INV-120A",
+      "type": "inverter",
+      "evidence": "left DC/AC inverter box labeled INV-120A"
+    },
+    {
+      "id": "GND-01A",
+      "type": "ground",
+      "evidence": "left ground reference symbol labeled GND-01A / DC REF A"
+    },
+    {
+      "id": "BUS-120A",
+      "type": "bus",
+      "evidence": "lower left horizontal bus labeled BUS-120A / 120 VAC RPS A"
+    },
+    {
+      "id": "PAN-RPS-A",
+      "type": "panel",
+      "evidence": "lower left RPS panel feed labeled PAN-RPS-A / RPS panel A"
+    },
+    {
+      "id": "INST-RACK-A",
+      "type": "instrument",
+      "evidence": "lower left instrument rack feed labeled INST-RACK-A / INST RACK A"
+    },
+    {
+      "id": "CB-103B",
+      "type": "breaker",
+      "evidence": "breaker/tap label CB-103B above SWGR-1EB feeder from BUS-6KB"
+    },
+    {
+      "id": "SWGR-1EB",
+      "type": "panel",
+      "evidence": "right 6.9 kV switchgear section labeled SWGR-1EB / 6.9 kV SWGR B"
+    },
+    {
+      "id": "DG-1B",
+      "type": "generator",
+      "evidence": "right diesel generator circle labeled DG-1B / diesel gen B"
+    },
+    {
+      "id": "CB-DG1B",
+      "type": "breaker",
+      "evidence": "right diesel generator breaker labeled CB-DG1B / 52-DGB"
+    },
+    {
+      "id": "ATS-1B",
+      "type": "transfer_switch",
+      "evidence": "right transfer switch labeled ATS-1B with NORM/EMERG marking"
+    },
+    {
+      "id": "RELAY-K12B",
+      "type": "relay",
+      "evidence": "right relay coil box labeled RELAY-K12B / ATS permissive"
+    },
+    {
+      "id": "TR-480B",
+      "type": "transformer",
+      "evidence": "right 6.9 kV/480 V transformer labeled TR-480B"
+    },
+    {
+      "id": "BUS-480B",
+      "type": "bus",
+      "evidence": "right middle horizontal bus labeled BUS-480B / 480 V load center B"
+    },
+    {
+      "id": "MCC-1B",
+      "type": "mcc",
+      "evidence": "right Safety MCC B enclosure fed by vertical tap labeled MCC-1B / P30"
+    },
+    {
+      "id": "PUMP-SI-1B",
+      "type": "load",
+      "evidence": "right MCC load branch P31 labeled PUMP-SI-1B / SI pump B"
+    },
+    {
+      "id": "PUMP-RHR-1B",
+      "type": "load",
+      "evidence": "right MCC load branch P32 labeled PUMP-RHR-1B / RHR pump B"
+    },
+    {
+      "id": "PUMP-CCW-1B",
+      "type": "load",
+      "evidence": "right MCC load branch P33 labeled PUMP-CCW-1B / CCW pump B"
+    },
+    {
+      "id": "FAN-RB-1B",
+      "type": "load",
+      "evidence": "right MCC load branch P34 labeled FAN-RB-1B / RB fan B"
+    },
+    {
+      "id": "MOV-HPCI-1B",
+      "type": "load",
+      "evidence": "right MCC load branch P35 labeled MOV-HPCI-1B / HPCI MOV B"
+    },
+    {
+      "id": "VALVE-SW-1B",
+      "type": "load",
+      "evidence": "right MCC load branch P36 labeled VALVE-SW-1B / SW INBD B"
+    },
+    {
+      "id": "CHGR-125B",
+      "type": "charger",
+      "evidence": "right AC/DC charger box labeled CHGR-125B"
+    },
+    {
+      "id": "BAT-125B",
+      "type": "dc_source",
+      "evidence": "right battery symbol labeled BAT-125B / 125 VDC B"
+    },
+    {
+      "id": "BUS-125DCB",
+      "type": "bus",
+      "evidence": "right DC horizontal bus labeled BUS-125DCB / 125 VDC bus B"
+    },
+    {
+      "id": "INV-120B",
+      "type": "inverter",
+      "evidence": "right DC/AC inverter box labeled INV-120B"
+    },
+    {
+      "id": "GND-01B",
+      "type": "ground",
+      "evidence": "right ground reference symbol labeled GND-01B / DC REF B"
+    },
+    {
+      "id": "BUS-120B",
+      "type": "bus",
+      "evidence": "lower right horizontal bus labeled BUS-120B / 120 VAC RPS B"
+    },
+    {
+      "id": "PAN-RPS-B",
+      "type": "panel",
+      "evidence": "lower right RPS panel feed labeled PAN-RPS-B / RPS panel B"
+    },
+    {
+      "id": "INST-RACK-B",
+      "type": "instrument",
+      "evidence": "lower right instrument rack feed labeled INST-RACK-B / INST RACK B"
+    },
+    {
+      "id": "PLC-ESF",
+      "type": "logic_controller",
+      "evidence": "bottom center ESF logic controller area labeled PLC-ESF / ESF logic"
+    }
+  ],
+  "asserted_edges": [
+    {
+      "source": "GRID-345",
+      "target": "CB-101",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid horizontal conductor P01 from source circle to CB-101"
+    },
+    {
+      "source": "CB-101",
+      "target": "AUX-TR-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid horizontal conductor P02 from CB-101 to AUX-TR-1A"
+    },
+    {
+      "source": "AUX-TR-1A",
+      "target": "BUS-6KA",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical P03 conductor with filled bus tap on BUS-6KA"
+    },
+    {
+      "source": "GRID-345",
+      "target": "CB-102",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid horizontal conductor P04 from source circle to CB-102"
+    },
+    {
+      "source": "CB-102",
+      "target": "AUX-TR-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid horizontal conductor P05 from CB-102 to AUX-TR-1B"
+    },
+    {
+      "source": "AUX-TR-1B",
+      "target": "BUS-6KB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical P06 conductor with filled bus tap on BUS-6KB"
+    },
+    {
+      "source": "BUS-6KA",
+      "target": "CB-TIE-6K",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid P07 conductor from BUS-6KA end/tap into central tie breaker"
+    },
+    {
+      "source": "CB-TIE-6K",
+      "target": "BUS-6KB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid P08 conductor from central tie breaker to BUS-6KB end/tap"
+    },
+    {
+      "source": "BUS-6KA",
+      "target": "CB-103A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical solid feeder from BUS-6KA filled tap into CB-103A"
+    },
+    {
+      "source": "CB-103A",
+      "target": "SWGR-1EA",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical solid feeder continues from CB-103A into 6.9 kV SWGR A / SWGR-1EA"
+    },
+    {
+      "source": "DG-1A",
+      "target": "CB-DG1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor P09 from DG-1A to CB-DG1A"
+    },
+    {
+      "source": "CB-DG1A",
+      "target": "SWGR-1EA",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor P10 from CB-DG1A into SWGR-1EA enclosure"
+    },
+    {
+      "source": "SWGR-1EA",
+      "target": "ATS-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical solid conductor P13 from SWGR-1EA to ATS-1A"
+    },
+    {
+      "source": "ATS-1A",
+      "target": "TR-480A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical solid conductor P14 from ATS-1A to TR-480A"
+    },
+    {
+      "source": "TR-480A",
+      "target": "BUS-480A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical P15 conductor with filled bus tap on BUS-480A"
+    },
+    {
+      "source": "ATS-1A",
+      "target": "RELAY-K12A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control/interlock line C01 directly between ATS-1A and RELAY-K12A"
+    },
+    {
+      "source": "BUS-480A",
+      "target": "MCC-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical P23 conductor with filled tap from BUS-480A to MCC-1A/Safety MCC A"
+    },
+    {
+      "source": "MCC-1A",
+      "target": "PUMP-SI-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid branch P24 from Safety MCC A terminal to PUMP-SI-1A"
+    },
+    {
+      "source": "MCC-1A",
+      "target": "PUMP-RHR-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid branch P25 from Safety MCC A terminal to PUMP-RHR-1A"
+    },
+    {
+      "source": "MCC-1A",
+      "target": "PUMP-CCW-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid branch P26 from Safety MCC A terminal to PUMP-CCW-1A"
+    },
+    {
+      "source": "MCC-1A",
+      "target": "FAN-RB-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid branch P27 from Safety MCC A terminal to FAN-RB-1A"
+    },
+    {
+      "source": "MCC-1A",
+      "target": "MOV-HPCI-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid branch P28 from Safety MCC A terminal to MOV-HPCI-1A"
+    },
+    {
+      "source": "MCC-1A",
+      "target": "VALVE-SW-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid branch P29 from Safety MCC A terminal to VALVE-SW-1A"
+    },
+    {
+      "source": "BUS-480A",
+      "target": "CHGR-125A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical P37 conductor with filled tap from BUS-480A to CHGR-125A"
+    },
+    {
+      "source": "CHGR-125A",
+      "target": "BUS-125DCA",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "vertical P38 conductor from CHGR-125A to filled tap on BUS-125DCA"
+    },
+    {
+      "source": "BAT-125A",
+      "target": "BUS-125DCA",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "vertical P39 conductor from BAT-125A to filled tap on BUS-125DCA"
+    },
+    {
+      "source": "BUS-125DCA",
+      "target": "INV-120A",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "vertical P40 conductor from BUS-125DCA to INV-120A"
+    },
+    {
+      "source": "BUS-125DCA",
+      "target": "GND-01A",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "vertical G01 conductor from BUS-125DCA tap to GND-01A ground reference symbol"
+    },
+    {
+      "source": "INV-120A",
+      "target": "BUS-120A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical P41 conductor from INV-120A to filled tap on BUS-120A"
+    },
+    {
+      "source": "BUS-120A",
+      "target": "PAN-RPS-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical P42 conductor with filled tap from BUS-120A to PAN-RPS-A"
+    },
+    {
+      "source": "BUS-120A",
+      "target": "INST-RACK-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical P43 conductor with filled tap from BUS-120A to INST-RACK-A"
+    },
+    {
+      "source": "BUS-6KB",
+      "target": "CB-103B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical solid feeder from BUS-6KB filled tap into CB-103B"
+    },
+    {
+      "source": "CB-103B",
+      "target": "SWGR-1EB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical solid feeder continues from CB-103B into 6.9 kV SWGR B / SWGR-1EB"
+    },
+    {
+      "source": "DG-1B",
+      "target": "CB-DG1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor P16 from DG-1B to CB-DG1B"
+    },
+    {
+      "source": "CB-DG1B",
+      "target": "SWGR-1EB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor P17 from CB-DG1B into SWGR-1EB enclosure"
+    },
+    {
+      "source": "SWGR-1EB",
+      "target": "ATS-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical solid conductor P20 from SWGR-1EB to ATS-1B"
+    },
+    {
+      "source": "ATS-1B",
+      "target": "TR-480B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical solid conductor P21 from ATS-1B to TR-480B"
+    },
+    {
+      "source": "TR-480B",
+      "target": "BUS-480B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical P22 conductor with filled bus tap on BUS-480B"
+    },
+    {
+      "source": "RELAY-K12B",
+      "target": "ATS-1B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control/interlock line C04 directly between RELAY-K12B and ATS-1B"
+    },
+    {
+      "source": "BUS-480B",
+      "target": "MCC-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical P30 conductor with filled tap from BUS-480B to MCC-1B/Safety MCC B"
+    },
+    {
+      "source": "MCC-1B",
+      "target": "PUMP-SI-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid branch P31 from Safety MCC B terminal to PUMP-SI-1B"
+    },
+    {
+      "source": "MCC-1B",
+      "target": "PUMP-RHR-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid branch P32 from Safety MCC B terminal to PUMP-RHR-1B"
+    },
+    {
+      "source": "MCC-1B",
+      "target": "PUMP-CCW-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid branch P33 from Safety MCC B terminal to PUMP-CCW-1B"
+    },
+    {
+      "source": "MCC-1B",
+      "target": "FAN-RB-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid branch P34 from Safety MCC B terminal to FAN-RB-1B"
+    },
+    {
+      "source": "MCC-1B",
+      "target": "MOV-HPCI-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid branch P35 from Safety MCC B terminal to MOV-HPCI-1B"
+    },
+    {
+      "source": "MCC-1B",
+      "target": "VALVE-SW-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid branch P36 from Safety MCC B terminal to VALVE-SW-1B"
+    },
+    {
+      "source": "BUS-480B",
+      "target": "CHGR-125B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical P44 conductor with filled tap from BUS-480B to CHGR-125B"
+    },
+    {
+      "source": "CHGR-125B",
+      "target": "BUS-125DCB",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "vertical P45 conductor from CHGR-125B to filled tap on BUS-125DCB"
+    },
+    {
+      "source": "BAT-125B",
+      "target": "BUS-125DCB",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "vertical P46 conductor from BAT-125B to filled tap on BUS-125DCB"
+    },
+    {
+      "source": "BUS-125DCB",
+      "target": "INV-120B",
+      "kind": "dc_power",
+      "confidence": "high",
+      "evidence": "vertical P47 conductor from BUS-125DCB to INV-120B"
+    },
+    {
+      "source": "BUS-125DCB",
+      "target": "GND-01B",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "vertical G02 conductor from BUS-125DCB tap to GND-01B ground reference symbol"
+    },
+    {
+      "source": "INV-120B",
+      "target": "BUS-120B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical P48 conductor from INV-120B to filled tap on BUS-120B"
+    },
+    {
+      "source": "BUS-120B",
+      "target": "PAN-RPS-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical P49 conductor with filled tap from BUS-120B to PAN-RPS-B"
+    },
+    {
+      "source": "BUS-120B",
+      "target": "INST-RACK-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "vertical P50 conductor with filled tap from BUS-120B to INST-RACK-B"
+    }
+  ],
+  "uncertain_edges": [
+    {
+      "source": "GRID-345",
+      "target": "CB-TIE-6K",
+      "status": "uncertain_by_jennifer_round1",
+      "reason": "The source/tie-breaker label area is crowded; no continuous solid vertical conductor from GRID-345 to CB-TIE-6K is clear enough to assert.",
+      "evidence": "Top-center GRID-345/CB-TIE-6K region: P07/P08 visibly enter the tie breaker horizontally, while the possible vertical source relation is obscured by overlapping labels."
+    },
+    {
+      "source": "RELAY-K12A",
+      "target": "PLC-ESF",
+      "status": "uncertain_by_jennifer_round1",
+      "reason": "C02-style dashed routing passes near the relay/ESF area, but there is no clear terminal or junction tying both named devices together.",
+      "evidence": "Center-left dashed vertical route beside RELAY-K12A and lower ESF area; C01 is the only clear relay termination."
+    },
+    {
+      "source": "RELAY-K12B",
+      "target": "PLC-ESF",
+      "status": "uncertain_by_jennifer_round1",
+      "reason": "C05-style dashed routing passes near the relay/ESF area, but there is no clear terminal or junction tying both named devices together.",
+      "evidence": "Center-right dashed vertical route beside RELAY-K12B and lower ESF area; C04 is the only clear relay termination."
+    }
+  ],
+  "removed_edges": [],
+  "added_edges": [],
+  "label_corrections": [],
+  "rejected_non_edges": [
+    {
+      "source": "BUS-480A",
+      "target": "BUS-480B",
+      "reason": "Separate 480 V load-center buses with a visible center gap and no tie conductor."
+    },
+    {
+      "source": "BUS-125DCA",
+      "target": "BUS-125DCB",
+      "reason": "Separate DC buses across the center boundary; no solid conductor or filled dot joins them."
+    },
+    {
+      "source": "BUS-120A",
+      "target": "BUS-120B",
+      "reason": "Separate lower 120 VAC RPS buses; no shared route or connecting conductor is shown."
+    },
+    {
+      "source": "BUS-6KA",
+      "target": "BUS-6KB",
+      "reason": "No direct bus-to-bus edge; the visible route goes through CB-TIE-6K via P07/P08."
+    },
+    {
+      "source": "RELAY-K12A",
+      "target": "RELAY-K12B",
+      "reason": "No dashed or solid line directly connects the relay boxes across the center area."
+    },
+    {
+      "source": "PLC-ESF",
+      "target": "BUS-120A",
+      "reason": "Bottom dashed RPS distribution/tray annotation crosses the area without a filled dot or visible power tap to BUS-120A."
+    },
+    {
+      "source": "PLC-ESF",
+      "target": "BUS-120B",
+      "reason": "Bottom dashed RPS distribution/tray annotation crosses the area without a filled dot or visible power tap to BUS-120B."
+    },
+    {
+      "source": "PAN-RPS-A",
+      "target": "INST-RACK-A",
+      "reason": "C03 bottom dashed cable-tray/internal-routing outline is not a point-to-point connection; the visible electrical feeds are separate solid taps from BUS-120A."
+    },
+    {
+      "source": "PAN-RPS-A",
+      "target": "PLC-ESF",
+      "reason": "C03/C02 dashed tray routing approaches the ESF area, but no clear terminal, filled dot, or port-to-port conductor is visible."
+    },
+    {
+      "source": "INST-RACK-A",
+      "target": "PLC-ESF",
+      "reason": "C03 dashed tray routing is adjacent to INST-RACK-A and PLC-ESF, but no visible point-to-point termination is shown."
+    },
+    {
+      "source": "PLC-ESF",
+      "target": "PAN-RPS-B",
+      "reason": "C06/bottom dashed tray routing near RPS panel B is functional routing, not a visibly terminated point-to-point connection."
+    },
+    {
+      "source": "PLC-ESF",
+      "target": "INST-RACK-B",
+      "reason": "Bottom dashed routing and annotation pass near INST-RACK-B without a clear termination on the rack."
+    },
+    {
+      "source": "PAN-RPS-B",
+      "target": "INST-RACK-B",
+      "reason": "Both are fed from BUS-120B by separate solid taps; the dashed tray/annotation is not a direct panel-to-rack edge."
+    }
+  ],
+  "notes": [
+    "Raw schematic and supplied component overlays/crops were used as visual aids only; no OCR engines, Ground Truth, GT-derived feedback, Raw+wires folders, or web resources were used.",
+    "All Diego asserted edges were visually checked and retained; no asserted edge was removed because each retained edge has a visible solid conductor or direct dashed interlock termination.",
+    "Node IDs from Diego were preserved; only component type classifications were refined for source, generator, transfer switch, relay, charger, inverter, and ESF logic nodes.",
+    "Filled dots at bus taps were treated as electrical connections; visual crossings without filled dots were not used for connectivity.",
+    "Bottom ESF/RPS dashed cable-tray or distribution routing was not converted into point-to-point matrix connectivity unless a solid feed or direct dashed termination was visible.",
+    "Diego round 2 adopts Jennifer round 1 exactly for node IDs/order, asserted edge set, uncertain edge set, rejected non-edges, and matrix connectivity."
+  ],
+  "status": "agreement_with_jennifer_round1",
+  "adopted_from": "doc37_round1_jennifer_review.json",
+  "diego_round2_review": {
+    "decision": "agree_with_jennifer_round1",
+    "summary": "Re-inspection of the raw schematic and allowed crops supports Jennifer's precision refinements: asserted edges remain unchanged, only three uncertain candidates remain, and the bottom dashed ESF/RPS tray candidates are rejected because they do not visibly terminate point-to-point.",
+    "visual_basis": [
+      "P07/P08 terminate at CB-TIE-6K and the bus taps on BUS-6KA/BUS-6KB are visible, but a direct GRID-345-to-CB-TIE-6K termination is not visually clear.",
+      "C01 and C04 visibly terminate between ATS-1A/RELAY-K12A and RELAY-K12B/ATS-1B respectively; C02/C05 near PLC-ESF lack clear point-to-point relay termination.",
+      "Bottom C03/C06 and tray routing are functional dashed routing annotations rather than discrete visible terminations among PAN-RPS, INST-RACK, and PLC-ESF nodes."
+    ]
+  }
+}

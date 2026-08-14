@@ -1,0 +1,69 @@
+source,target,confidence,line_type,evidence
+GRID-230-A,CB-SW-A,0.96,solid,top-left crop shows solid conductor from GRID-230-A right port to CB-SW-A left port
+CB-SW-A,TR-SU-A,0.96,solid,top-left crop shows solid conductor from CB-SW-A right port to TR-SU-A left port
+TR-SU-A,SU-A,0.93,solid,top-left crop shows TR-SU-A right port feeding the labeled SU-A source tap
+SU-A,BUS-13K-A,0.94,solid,top-left crop shows SU-A source entry landing on BUS-13K-A at filled tap
+GEN-DG-A,CB-DG-A,0.96,solid,top-left crop shows solid conductor from GEN-DG-A right port to CB-DG-A left port
+CB-DG-A,TR-EDG-A,0.96,solid,top-left crop shows solid conductor from CB-DG-A right port to TR-EDG-A left port
+TR-EDG-A,EDG-A,0.93,solid,top-left crop shows TR-EDG-A right port feeding the labeled EDG-A tap route
+EDG-A,BUS-13K-A,0.94,solid,top-left crop shows EDG-A label at filled tap on BUS-13K-A
+GRID-230-B,CB-SW-B,0.96,solid,top-right crop shows solid conductor from GRID-230-B left port to CB-SW-B right port
+CB-SW-B,TR-SU-B,0.96,solid,top-right crop shows solid conductor from CB-SW-B left port to TR-SU-B right port
+TR-SU-B,SU-B,0.93,solid,top-right crop shows TR-SU-B left port feeding labeled SU-B source tap
+SU-B,BUS-13K-B,0.94,solid,top-right crop shows SU-B source entry landing on BUS-13K-B at filled tap
+GEN-DG-B,CB-DG-B,0.96,solid,top-right crop shows solid conductor from GEN-DG-B left port to CB-DG-B right port
+CB-DG-B,TR-EDG-B,0.96,solid,top-right crop shows solid conductor from CB-DG-B left port to TR-EDG-B right port
+TR-EDG-B,EDG-B,0.93,solid,top-right crop shows TR-EDG-B left port feeding the labeled EDG-B tap route
+EDG-B,BUS-13K-B,0.94,solid,top-right crop shows EDG-B label at filled tap on BUS-13K-B
+BUS-13K-A,CB-13-TIE,0.88,solid,top-center crop shows BUS-13K-A entering CB-13-TIE left port with TIE OPEN tag as operating note only
+CB-13-TIE,BUS-13K-B,0.88,solid,top-center crop shows CB-13-TIE right port continuing to BUS-13K-B with TIE OPEN tag as operating note only
+BUS-13K-A,TR-4K-A,0.95,solid,top-center crop shows filled tap on BUS-13K-A dropping to TR-4K-A
+TR-4K-A,CB-4K-A,0.96,solid,center-left crop shows TR-4K-A bottom port to CB-4K-A top port
+CB-4K-A,BUS-4K-A,0.96,solid,center-left crop shows CB-4K-A bottom port landing on BUS-4K-A
+BUS-13K-B,TR-4K-B,0.95,solid,top-center crop shows filled tap on BUS-13K-B dropping to TR-4K-B
+TR-4K-B,CB-4K-B,0.96,solid,center-right crop shows TR-4K-B bottom port to CB-4K-B top port
+CB-4K-B,BUS-4K-B,0.96,solid,center-right crop shows CB-4K-B bottom port landing on BUS-4K-B
+BUS-4K-A,CB-4K-TIE,0.88,solid,RPS tie crop shows BUS-4K-A entering CB-4K-TIE left port while RPS LOCKOUT is an operating annotation
+CB-4K-TIE,BUS-4K-B,0.88,solid,RPS tie crop shows CB-4K-TIE right port continuing to BUS-4K-B while RPS LOCKOUT is an operating annotation
+CB-13-TIE,PNL-RPS-1,0.62,dashed,RPS detail crop shows dashed RPS trip corridor from CB-13-TIE underside to left side port of PNL-RPS-1
+CB-4K-TIE,PNL-RPS-1,0.84,solid,RPS detail crop shows solid vertical lockout route from CB-4K-TIE lower port to PNL-RPS-1 top port
+BUS-4K-A,TR-480-A,0.95,solid,mid-left crop shows filled tap on BUS-4K-A dropping to TR-480-A
+TR-480-A,CB-LC-A,0.96,solid,mid-left crop shows TR-480-A bottom port feeding CB-LC-A top port
+CB-LC-A,BUS-480-A,0.96,solid,lower-bus crop shows CB-LC-A bottom port landing on BUS-480-A at filled tap
+BUS-4K-B,TR-480-B,0.95,solid,mid-right crop shows filled tap on BUS-4K-B dropping to TR-480-B
+TR-480-B,CB-LC-B,0.96,solid,mid-right crop shows TR-480-B bottom port feeding CB-LC-B top port
+CB-LC-B,BUS-480-B,0.96,solid,lower-bus crop shows CB-LC-B bottom port landing on BUS-480-B at filled tap
+BUS-480-A,LC-A1,0.88,solid,lower-bus crop shows LC-A1 label at filled tap on BUS-480-A
+LC-A1,MCC-01A,0.92,solid,lower-left crop shows vertical solid drop from LC-A1 tap to MCC-01A top port
+BUS-480-A,LC-A2,0.88,solid,lower-bus crop shows LC-A2 label at filled tap on BUS-480-A
+LC-A2,MCC-02A,0.92,solid,lower-bus crop shows vertical solid drop from LC-A2 tap to MCC-02A top port
+BUS-480-B,LC-B1,0.88,solid,lower-bus crop shows LC-B1 label at filled tap on BUS-480-B
+LC-B1,MCC-01B,0.92,solid,lower-bus crop shows vertical solid drop from LC-B1 tap to MCC-01B top port
+BUS-480-B,LC-B2,0.88,solid,lower-bus crop shows LC-B2 label at filled tap on BUS-480-B
+LC-B2,MCC-02B,0.92,solid,lower-bus crop shows vertical solid drop from LC-B2 tap to MCC-02B top port
+MCC-01A,PUMP-RHR-A,0.96,solid,bottom-left crop shows MCC-01A lower-left feeder to PUMP-RHR-A
+MCC-01A,MOTOR-CCW-A,0.96,solid,bottom-left crop shows MCC-01A lower-right feeder to MOTOR-CCW-A
+MCC-02A,PUMP-AFW-A,0.96,solid,bottom-center crop shows MCC-02A left feeder to PUMP-AFW-A
+MCC-02A,VALVE-MOV-A,0.94,solid,bottom-center crop shows MCC-02A center feeder through MOV annotation to VALVE-MOV-A
+MCC-02A,FAN-CONTAIN-A,0.94,solid,bottom-center crop shows MCC-02A right feeder to FAN-CONTAIN-A
+MCC-01B,PUMP-RHR-B,0.96,solid,bottom-center crop shows MCC-01B lower-left feeder to PUMP-RHR-B
+MCC-01B,MOTOR-CCW-B,0.96,solid,bottom-center crop shows MCC-01B lower-right feeder to MOTOR-CCW-B
+MCC-02B,PUMP-AFW-B,0.96,solid,bottom-right crop shows MCC-02B left feeder to PUMP-AFW-B
+MCC-02B,VALVE-MOV-B,0.94,solid,bottom-right crop shows MCC-02B center feeder through MOV annotation to VALVE-MOV-B
+MCC-02B,FAN-CONTAIN-B,0.94,solid,bottom-right crop shows MCC-02B right feeder to FAN-CONTAIN-B
+BUS-480-A,RECT-125A,0.90,solid,train-A DC crop shows 480 V bus tap routing down into AC port of RECT-125A
+RECT-125A,BUS-DC125-A,0.96,solid,train-A DC crop shows RECT-125A DC side exiting to BUS-DC125-A
+BUS-DC125-A,BAT-125A,0.96,solid,train-A DC crop shows filled tap on BUS-DC125-A dropping to BAT-125A
+BUS-DC125-A,INV-120A,0.96,solid,train-A DC crop shows BUS-DC125-A entering left DC port of INV-120A
+BUS-480-B,RECT-125B,0.90,solid,train-B DC crop shows 480 V bus tap routing down into AC port of RECT-125B
+RECT-125B,BUS-DC125-B,0.96,solid,train-B DC crop shows RECT-125B DC side exiting to BUS-DC125-B
+BUS-DC125-B,BAT-125B,0.96,solid,train-B DC crop shows filled tap on BUS-DC125-B dropping to BAT-125B
+BUS-DC125-B,INV-120B,0.96,solid,train-B DC crop shows BUS-DC125-B entering right DC port of INV-120B
+INV-120A,PNL-ESF-A,0.90,solid,ESF control crop shows solid conductor from INV-120A top port to PNL-ESF-A bottom port
+INV-120B,PNL-ESF-B,0.90,solid,ESF control crop shows solid conductor from INV-120B top port to PNL-ESF-B bottom port
+JB-ESF-A,PNL-ESF-A,0.88,dashed,ESF detail crop shows dashed vertical line from JB-ESF-A bottom port to PNL-ESF-A top port
+JB-ESF-B,PNL-ESF-B,0.88,dashed,ESF detail crop shows dashed vertical line from JB-ESF-B bottom port to PNL-ESF-B top port
+PNL-ESF-A,PUMP-AFW-A,0.64,dashed,train-A DC crop shows PUMP-AFW-A dashed drop joining ESF control corridor with port dots at PNL-ESF-A side
+PNL-ESF-A,VALVE-MOV-A,0.64,dashed,train-A DC crop shows VALVE-MOV-A dashed drop joining ESF control corridor with port dots at PNL-ESF-A side
+PNL-ESF-B,PUMP-AFW-B,0.64,dashed,train-B DC crop shows PUMP-AFW-B dashed drop joining ESF control corridor with port dots at PNL-ESF-B side
+PNL-ESF-B,VALVE-MOV-B,0.64,dashed,train-B DC crop shows VALVE-MOV-B dashed drop joining ESF control corridor with port dots at PNL-ESF-B side

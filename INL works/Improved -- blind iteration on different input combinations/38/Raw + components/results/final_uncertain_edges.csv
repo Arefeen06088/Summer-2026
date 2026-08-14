@@ -1,0 +1,10 @@
+source,target,reason,a,b
+TR_CPT_A,BUS_120ACA,"TR-CPT-A is labelled 480/120 VAC, but its lower lead ends at a standalone dot left of BUS-120AC-A; unlike B side, no visible landing on the AC bus is drawn.",TR_CPT_A,BUS_120ACA
+BUS_125DCA,RELAY_86A,"A dashed lead drops from the 125 VDC train area toward RELAY-86A, but dashed control/cable routing is not enough for a high-confidence electrical edge.",BUS_125DCA,RELAY_86A
+BUS_125DCB,RELAY_86B,"A dashed lead drops from the 125 VDC train area toward RELAY-86B, but dashed control/cable routing is not enough for a high-confidence electrical edge.",BUS_125DCB,RELAY_86B
+BUS_120ACA,RELAY_27A,"RELAY-27A is labelled UV BUS A, but only dashed control routing is visible near the relay; no solid tap from BUS-120AC-A is visible.",BUS_120ACA,RELAY_27A
+RELAY_27A,RPS_PNL_A,"Dashed route/enclosure line approaches RELAY-27A and RPS-PNL-A, but no explicit solid terminal-to-terminal conductor is visible.",RELAY_27A,RPS_PNL_A
+RELAY_86A,RPS_PNL_A,"Lockout relay 86A is near the A-side RPS/control route, but the visible connection is dashed/routed rather than a definite electrical edge.",RELAY_86A,RPS_PNL_A
+RELAY_86B,RPS_PNL_B,"Lockout relay 86B is near the B-side RPS/control route, but the visible connection is dashed/routed rather than a definite electrical edge.",RELAY_86B,RPS_PNL_B
+RELAY_27B,RPS_PNL_B,"B-side dashed control loop runs near RELAY-27B and RPS-PNL-B; the solid BUS-120AC-B tap is asserted, but this RPS-panel relation remains routing-level only.",RELAY_27B,RPS_PNL_B
+BUS_4160A,BUS_4160B,"The buses meet only through CB-105, which is labelled N.O. and listed OPEN; terminal edges to CB-105 are asserted, but direct bus-to-bus continuity is not.",BUS_4160A,BUS_4160B

@@ -1,0 +1,57 @@
+source,target,type,confidence,evidence
+DG-21A,ATS-21A,solid_power,HIGH,solid feeder from generator to ATS-21A
+UAT-2A,DS-21A,solid_power,HIGH,UAT-2A stacked over DS-21A with direct conductor
+DS-21A,ATS-21A,solid_power,HIGH,solid feeder from disconnect into ATS-21A
+ATS-21A,SWGR-21A,solid_power,HIGH,ATS-21A vertical feeder lands on SWGR-21A bus dot
+SWGR-21A,TIE-BKR-21AB,solid_power,HIGH,SWGR-21A bus enters the tie breaker node
+TIE-BKR-21AB,SWGR-21B,solid_power,HIGH,tie breaker output continues into SWGR-21B bus
+SAT-2B,DS-21B,solid_power,HIGH,SAT-2B stacked over DS-21B with direct conductor
+DS-21B,ATS-21B,solid_power,HIGH,solid feeder from disconnect into ATS-21B
+DG-21B,ATS-21B,solid_power,HIGH,solid feeder from generator to ATS-21B
+ATS-21B,SWGR-21B,solid_power,HIGH,ATS-21B vertical feeder lands on SWGR-21B bus dot
+SWGR-21A,CB-21A1,solid_power,HIGH,vertical tap from SWGR-21A bus to breaker
+CB-21A1,TR-21A,solid_power,HIGH,breaker directly feeds transformer TR-21A
+TR-21A,MCC-21A,solid_power,HIGH,transformer output lands on MCC-21A bus
+SWGR-21B,CB-21B1,solid_power,HIGH,vertical tap from SWGR-21B bus to breaker
+CB-21B1,TR-21B,solid_power,HIGH,breaker directly feeds transformer TR-21B
+TR-21B,MCC-21B,solid_power,HIGH,transformer output lands on MCC-21B bus
+MCC-21A,CB-MPA1,solid_power,HIGH,MCC-21A load bus feeder through breaker CB-MPA1
+CB-MPA1,PUMP-SI21A,solid_power,HIGH,CB-MPA1 solid feeder continues to PUMP-SI21A
+MCC-21A,PUMP-CCW21A,solid_power,HIGH,solid vertical branch from MCC-21A to PUMP-CCW21A
+MCC-21A,FAN-RB21A,solid_power,HIGH,solid vertical branch from MCC-21A to FAN-RB21A
+MCC-21A,MOV-HV211A,solid_power,HIGH,solid vertical branch from MCC-21A to MOV-HV211A
+MCC-21A,MOV-RWST21A,solid_power,HIGH,solid vertical branch from MCC-21A to MOV-RWST21A
+MCC-21A,XFMR-CPT21A,solid_power,HIGH,solid branch from MCC-21A to control power transformer
+XFMR-CPT21A,AC-PNL-120A,solid_power,HIGH,transformer output connects to AC-PNL-120A
+AC-PNL-120A,RECT-21A,solid_power,HIGH,solid AC panel feeder drops to rectifier/charger
+RECT-21A,DC-BUS-21A,solid_power,HIGH,rectifier output lands on 125 VDC bus dot
+BAT-21A,DC-BUS-21A,solid_power,HIGH,battery tap lands on DC-BUS-21A dot
+DC-BUS-21A,INV-21A,solid_power,HIGH,solid DC bus feeder drops to inverter
+MCC-21B,XFMR-CPT21B,solid_power,HIGH,solid branch from MCC-21B to control power transformer
+XFMR-CPT21B,AC-PNL-120B,solid_power,HIGH,transformer output connects to AC-PNL-120B
+AC-PNL-120B,RECT-21B,solid_power,HIGH,solid AC panel feeder drops to rectifier/charger
+MCC-21B,CB-MPB1,solid_power,HIGH,MCC-21B load bus feeder through breaker CB-MPB1
+CB-MPB1,PUMP-SI21B,solid_power,HIGH,CB-MPB1 solid feeder continues to PUMP-SI21B
+MCC-21B,PUMP-CCW21B,solid_power,HIGH,solid vertical branch from MCC-21B to PUMP-CCW21B
+MCC-21B,FAN-RB21B,solid_power,HIGH,solid vertical branch from MCC-21B to FAN-RB21B
+MCC-21B,MOV-HV211B,solid_power,HIGH,solid vertical branch from MCC-21B to MOV-HV211B
+MCC-21B,MOV-RWST21B,solid_power,HIGH,solid vertical branch from MCC-21B to MOV-RWST21B
+RECT-21B,DC-BUS-21B,solid_power,HIGH,rectifier output lands on 125 VDC bus dot
+BAT-21B,DC-BUS-21B,solid_power,HIGH,battery tap lands on DC-BUS-21B dot
+DC-BUS-21B,INV-21B,solid_power,HIGH,solid DC bus feeder drops to inverter
+LOCA-SIG-A,JB-21A,instrument_signal,HIGH,short-dash signal line from LOCA circle to JB-21A
+JB-21A,RPS-PNL-A,instrument_signal,HIGH,short-dash signal line from JB-21A to RPS-PNL-A terminal strip
+INV-21A,RPS-PNL-A,control_power_logic,HIGH,dashed logic/control-power run between inverter and RPS-PNL-A
+CT-21A,RPS-PNL-A,instrument_signal,HIGH,dashed CT signal path visually routes into RPS logic area
+VT-21A,RPS-PNL-A,instrument_signal,MEDIUM,dashed voltage signal path from VT-21A to RPS-PNL-A
+RPS-PNL-A,RELAY-K21A,control_logic,HIGH,dashed RPS control lane between panel and K relay
+RELAY-K21A,RELAY-86A,control_logic,HIGH,dashed RPS control lane between K relay and 86 relay
+RELAY-86A,CB-MPA1,trip_control,HIGH,dash-dot trip control path labeled TRIP MPA1 to breaker input
+LOCA-SIG-B,JB-21B,instrument_signal,HIGH,short-dash signal line from LOCA circle to JB-21B
+JB-21B,RPS-PNL-B,instrument_signal,HIGH,short-dash signal line from JB-21B to RPS-PNL-B terminal strip
+INV-21B,RPS-PNL-B,control_power_logic,HIGH,dashed logic/control-power run between inverter and RPS-PNL-B
+CT-21B,RPS-PNL-B,instrument_signal,HIGH,dashed CT signal path visually routes into RPS logic area
+VT-21B,RPS-PNL-B,instrument_signal,MEDIUM,dashed voltage signal path from VT-21B to RPS-PNL-B
+RPS-PNL-B,RELAY-K21B,control_logic,HIGH,dashed RPS control lane between panel and K relay
+RELAY-K21B,RELAY-86B,control_logic,HIGH,dashed RPS control lane between K relay and 86 relay
+RELAY-86B,CB-MPB1,trip_control,HIGH,dash-dot trip control path labeled TRIP MPB1 to breaker input

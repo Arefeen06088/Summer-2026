@@ -1,0 +1,84 @@
+source,target,evidence,confidence
+TO UNIT AUX BUS CONT.,GEN-U2A,off-page box has short conductor toward generator,medium
+GEN-U2A,CB-101,solid horizontal conductor,high
+CB-101,TR-UAT-2A,solid horizontal conductor,high
+TR-UAT-2A,BUS-4160A / 4.16 KV ESF DIV I,vertical tap with dot to 4.16 kV bus,high
+DG-2A / ESF DIESEL A,CB-103,solid horizontal conductor,high
+CB-103,BUS-4160A / 4.16 KV ESF DIV I,solid branch joins same 4.16 kV bus riser,high
+BUS-4160A / 4.16 KV ESF DIV I,CB-201A,vertical feeder from bus,high
+CB-201A,TR-201A,vertical conductor,high
+TR-201A,CB-301A,vertical conductor,high
+CB-301A,BUS-480A / 480 VAC DIV I,vertical conductor to 480 V bus,high
+BUS-4160A / 4.16 KV ESF DIV I,CB-105 / N.O. BUS TIE,solid bus-tie connection,high
+CB-105 / N.O. BUS TIE,BUS-4160B / 4.16 KV ESF DIV II,solid bus-tie connection,high
+SOURCE: STARTUP AUX XFMR,TR-SUT-2B,source annotation directly above transformer,low
+TR-SUT-2B,CB-102,solid horizontal conductor,high
+CB-102,BUS-4160B / 4.16 KV ESF DIV II,vertical conductor to bus,high
+TO STATION YARD CONT.,CB-102,nearby continuation/source area,low
+DG-2B / ESF DIESEL B,CB-104,solid horizontal conductor,high
+CB-104,BUS-4160B / 4.16 KV ESF DIV II,solid branch joins 4.16 kV bus riser,high
+BUS-4160B / 4.16 KV ESF DIV II,CB-201B,vertical feeder from bus,high
+CB-201B,TR-201B,vertical conductor,high
+TR-201B,CB-301B,vertical conductor,high
+CB-301B,BUS-480B / 480 VAC DIV II,vertical conductor to 480 V bus,high
+BUS-480A / 480 VAC DIV I,CB-401A,vertical feeder from 480 V bus,high
+CB-401A,MCC-2A1,vertical feeder enters MCC,high
+BUS-480B / 480 VAC DIV II,CB-401B,vertical feeder from 480 V bus,high
+CB-401B,MCC-2B1,vertical feeder enters MCC,high
+MCC-2A1,2A-F1 RHR2A feeder,bucket 01 / 2A-F1 vertical,high
+2A-F1 RHR2A feeder,PUMP-RHR2A,vertical conductor lands on pump,high
+MCC-2A1,2A-F2 CCW2A feeder,bucket 02 / 2A-F2 vertical,high
+2A-F2 CCW2A feeder,PUMP-CCW2A,vertical conductor lands on pump,high
+MCC-2A1,2A-F3 SW2A feeder,bucket 03 / 2A-F3 vertical,high
+2A-F3 SW2A feeder,PUMP-SW2A,vertical conductor lands on pump,high
+MCC-2A1,2A-F4 CR2A feeder,bucket 04 / 2A-F4 vertical,high
+2A-F4 CR2A feeder,FAN-CR2A,vertical conductor lands on fan,high
+MCC-2A1,2A-F5 RHR141A feeder,bucket 05 / 2A-F5 vertical,high
+2A-F5 RHR141A feeder,MOV-RHR141A,vertical conductor lands on MOV,high
+MCC-2A1,2A-F6 S1221A feeder,bucket 06 / 2A-F6 vertical,high
+2A-F6 S1221A feeder,MOV-S1221A,vertical conductor lands on MOV,high
+MCC-2B1,2B-F1 RHR2B feeder,bucket 01 / 2B-F1 vertical,high
+2B-F1 RHR2B feeder,PUMP-RHR2B,vertical conductor lands on pump,high
+MCC-2B1,2B-F2 CCW2B feeder,bucket 02 / 2B-F2 vertical,high
+2B-F2 CCW2B feeder,PUMP-CCW2B,vertical conductor lands on pump,high
+MCC-2B1,2B-F3 SW2B feeder,bucket 03 / 2B-F3 vertical,high
+2B-F3 SW2B feeder,PUMP-SW2B,vertical conductor lands on pump,high
+MCC-2B1,2B-F4 CR2B feeder,bucket 04 / 2B-F4 vertical,high
+2B-F4 CR2B feeder,FAN-CR2B,vertical conductor lands on fan,high
+MCC-2B1,2B-F5 RHR142B feeder,bucket 05 / 2B-F5 vertical,high
+2B-F5 RHR142B feeder,MOV-RHR142B,vertical conductor lands on MOV,high
+MCC-2B1,2B-F6 S1222B feeder,bucket 06 / 2B-F6 vertical,high
+2B-F6 S1222B feeder,MOV-S1222B,vertical conductor lands on MOV,high
+BUS-480A / 480 VAC DIV I,TR-CPT-A,left-side 480 V feeder descends to CPT area,medium
+BUS-480A / 480 VAC DIV I,CHGR-2A,left-side 480 V feeder/jog reaches charger input,medium
+TR-CPT-A,BUS-120AC-A / 120 VAC INST A,480/120 transformer visually associated with 120 VAC bus,low
+CHGR-2A,125 VDC TRAIN A,charger bottom terminal lands on DC train,high
+BAT-125A,125 VDC TRAIN A,battery tap/dot on DC train,high
+S-125DC-A,BAT-125A,DC section label drawn with battery symbol,medium
+S-125DC-A,125 VDC TRAIN A,label aligned with DC train,medium
+125 VDC TRAIN A,INV-2A,vertical drop from DC train to inverter,high
+INV-2A,BUS-120AC-A / 120 VAC INST A,inverter output connects to 120 VAC bus,high
+125 VDC TRAIN A,RELAY-86A LOCKOUT A,lockout relay shown adjacent to train A control tap,medium
+BUS-120AC-A / 120 VAC INST A,RPS-PNL-A,vertical tap from 120 VAC inst bus to panel,high
+BUS-120AC-A / 120 VAC INST A,RELAY-27A UV BUS A,UV relay adjacent to 120 VAC A dashed area,medium
+RELAY-27A UV BUS A,RPS-PNL-A,dashed control line encloses relay and panel,high
+RELAY-86A LOCKOUT A,RPS-PNL-A,dashed/control routing plausibly links lockout to RPS area,low
+BUS-480B / 480 VAC DIV II,TR-CPT-B,right-side 480 V feeder descends to CPT area,medium
+BUS-480B / 480 VAC DIV II,CHGR-2B,right-side 480 V feeder/jog reaches charger input,medium
+TR-CPT-B,BUS-120AC-B / 120 VAC INST B,480/120 transformer visually associated with 120 VAC bus,low
+CHGR-2B,125 VDC TRAIN B,charger bottom terminal lands on DC train,high
+BAT-125B,125 VDC TRAIN B,battery tap/dot on DC train,high
+S-125DC-B,BAT-125B,DC section label drawn with battery symbol,medium
+S-125DC-B,125 VDC TRAIN B,label aligned with DC train,medium
+125 VDC TRAIN B,INV-2B,vertical drop from DC train to inverter,high
+INV-2B,BUS-120AC-B / 120 VAC INST B,inverter output connects to 120 VAC bus,high
+125 VDC TRAIN B,RELAY-86B LOCKOUT B,lockout relay shown adjacent to train B control tap,medium
+BUS-120AC-B / 120 VAC INST B,RPS-PNL-B,vertical tap from 120 VAC inst bus to panel,high
+BUS-120AC-B / 120 VAC INST B,RELAY-27B1 / 27B UV BUS B,UV relay adjacent to 120 VAC B dashed area,medium
+RELAY-27B1 / 27B UV BUS B,RPS-PNL-B,dashed control line encloses relay and panel,high
+RELAY-86B LOCKOUT B,RPS-PNL-B,dashed/control routing plausibly links lockout to RPS area,low
+ESF DIESEL A dashed enclosure,DG-2A / ESF DIESEL A,dashed box encloses diesel generator area,medium
+ESF DIESEL B dashed enclosure,DG-2B / ESF DIESEL B,dashed box encloses diesel generator area,medium
+2A-CZ?/2A-C86? dashed risers,RPS-PNL-A,long dashed/control riser turns into lower A area,low
+2B-CZ?/2B-C86? dashed risers,RPS-PNL-B,long dashed/control riser turns into lower B area,low
+2A-CZ?/2A-C86? dashed risers,GND-STA / STATION GND,dotted lower run visually terminates at station ground,low

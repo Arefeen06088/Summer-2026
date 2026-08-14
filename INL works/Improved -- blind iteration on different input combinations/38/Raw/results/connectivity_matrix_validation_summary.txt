@@ -1,0 +1,51 @@
+Connectivity matrix validation summary - Document 38
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\38\synthetic_npp_connectivity_matrix_improved.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_matrix.csv): TP=35, FP=43, FN=25, Precision=0.448718, Recall=0.583333, F1=0.507246
+- Jennifer -- Round 2 (round_02_jennifer_precision_review_matrix.csv): TP=46, FP=9, FN=14, Precision=0.836364, Recall=0.766667, F1=0.800000
+- Diego -- Round 3 (round_03_diego_saturation_matrix.csv): TP=46, FP=9, FN=14, Precision=0.836364, Recall=0.766667, F1=0.800000
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=46, FP=9, FN=14, Precision=0.836364, Recall=0.766667, F1=0.800000
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=46, FP=9, FN=14, Precision=0.836364, Recall=0.766667, F1=0.800000
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- 125 VDC TRAIN A -- BAT-125A
+- 125 VDC TRAIN A -- CHGR-2A
+- 125 VDC TRAIN A -- INV-2A
+- 125 VDC TRAIN A -- RELAY-86A
+- 125 VDC TRAIN B -- BAT-125B
+- 125 VDC TRAIN B -- CHGR-2B
+- 125 VDC TRAIN B -- INV-2B
+- 125 VDC TRAIN B -- RELAY-86B
+- BUS-120AC-B -- RELAY-27B
+
+False-negative edge examples:
+- BAT-125A -- BUS-125DC-A
+- BAT-125B -- BUS-125DC-B
+- BUS-120AC-A -- TR-CPT-A
+- BUS-125DC-A -- CHGR-2A
+- BUS-125DC-A -- INV-2A
+- BUS-125DC-A -- RELAY-86A
+- BUS-125DC-B -- CHGR-2B
+- BUS-125DC-B -- INV-2B
+- BUS-125DC-B -- RELAY-86B
+- CB-103 -- RELAY-86A
+
+Extra/non-GT nodes causing performance drops:
+- 125 VDC TRAIN A: 4 incident false-positive edge(s)
+- 125 VDC TRAIN B: 4 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 2 extra/intermediate nodes were omitted from the extraction (125 VDC TRAIN A, 125 VDC TRAIN B), final metrics would be TP=46, FP=1, FN=14, Precision=0.978723, Recall=0.766667, F1=0.859813.
+- If all 2 non-GT nodes were omitted, metrics would be TP=46, FP=1, FN=14, Precision=0.978723, Recall=0.766667, F1=0.859813.
+
+Missing GT node examples:
+- BUS-125DC-A: 4 missed incident GT edge(s)
+- BUS-125DC-B: 4 missed incident GT edge(s)
+- GND-STA: 1 missed incident GT edge(s)

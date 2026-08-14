@@ -1,0 +1,61 @@
+source,target,edge_kind,confidence,evidence
+OFFSITE-A,TR-1A,power_feeder,high,Solid feeder from OFFSITE-A to TR-1A primary.
+TR-1A,CB-101,power_feeder,high,Solid feeder from TR-1A secondary to CB-101.
+TR-1A,GND-1E,grounding_reference,medium,Ground/reference symbol visibly connected below TR-1A; included for high recall.
+CB-101,BUS-1A-4.16KV,power_feeder,high,CB-101 output connects to BUS-1A.
+EDG-1A,CB-105,power_feeder,high,EDG A incoming feeder to CB-105.
+CB-105,BUS-1A-4.16KV,power_feeder,high,CB-105 output rises to BUS-1A.
+BUS-1A-4.16KV,CB-TIE-1AB,power_feeder_normally_open_tie,high,BUS-1A connects to N.O. tie breaker.
+CB-TIE-1AB,BUS-1B-4.16KV,power_feeder_normally_open_tie,high,Tie breaker connects to BUS-1B terminal.
+BUS-1B-4.16KV,CB-102,power_feeder,high,BUS-1B connects to CB-102.
+CB-102,TR-1B,power_feeder,high,CB-102 connects to TR-1B secondary.
+TR-1B,OFFSITE-B,power_feeder,high,TR-1B primary connects to OFFSITE-B.
+EDG-1B,CB-106,power_feeder,high,EDG B incoming feeder to CB-106.
+CB-106,BUS-1B-4.16KV,power_feeder,high,CB-106 output rises to BUS-1B.
+CB-105,RELAY-K86A,control_interlock,high,Dashed lockout/control path from CB-105 to Train A 86 relay path.
+CB-106,RELAY-K86B,control_interlock,high,Dashed lockout/control path from CB-106 to Train B 86 relay path.
+BUS-1A-4.16KV,TR-LC-1A,power_feeder,high,Vertical tap from BUS-1A to TR-LC-1A.
+BUS-1A-4.16KV,TR-SAF-1A,power_feeder,high,Vertical tap from BUS-1A to TR-SAF-1A.
+BUS-1B-4.16KV,TR-LC-1B,power_feeder,high,Vertical tap from BUS-1B to TR-LC-1B.
+BUS-1B-4.16KV,TR-SAF-1B,power_feeder,high,Vertical tap from BUS-1B to TR-SAF-1B.
+TR-LC-1A,CB-201,power_feeder,high,TR-LC-1A low side feeds CB-201.
+CB-201,BUS-480A,power_feeder,high,CB-201 output feeds BUS-480A.
+TR-SAF-1A,CB-203,power_feeder,high,TR-SAF-1A low side feeds CB-203.
+CB-203,BUS-480E1A,power_feeder,high,CB-203 output feeds BUS-480E1A.
+TR-LC-1B,CB-202,power_feeder,high,TR-LC-1B low side feeds CB-202.
+CB-202,BUS-480B,power_feeder,high,CB-202 output feeds BUS-480B.
+TR-SAF-1B,CB-204,power_feeder,high,TR-SAF-1B low side feeds CB-204.
+CB-204,BUS-480E1B,power_feeder,high,CB-204 output feeds BUS-480E1B.
+BUS-480A,MCC-1A,power_feeder,high,Vertical feeder from BUS-480A to MCC-1A.
+BUS-480A,MCC-1C,power_feeder,high,Vertical feeder from BUS-480A to MCC-1C.
+BUS-480A,CHGR-125A,power_feeder,medium,CABLE 1A-480-7 route from BUS-480A to charger input.
+BUS-480E1A,MCC-ESS-A,power_feeder,high,Vertical feeder from BUS-480E1A to MCC-ESS-A.
+MCC-1A,PUMP-CCW-103A,power_feeder,high,Solid feeder from MCC-1A to pump motor.
+MCC-1C,FAN-CRHV-104A,power_feeder,high,Solid feeder from MCC-1C to fan motor.
+MCC-ESS-A,PUMP-SI-101A,power_feeder,high,MCC-ESS-A output feeds SI pump.
+MCC-ESS-A,PUMP-RHR-102A,power_feeder,high,MCC-ESS-A output feeds RHR pump.
+MCC-ESS-A,MOV-1201A,power_feeder,high,MCC-ESS-A output feeds MOV-1201A.
+BUS-480B,MCC-1B,power_feeder,high,Vertical feeder from BUS-480B to MCC-1B.
+BUS-480B,MCC-1D,power_feeder,high,Vertical feeder from BUS-480B to MCC-1D.
+BUS-480E1B,MCC-ESS-B,power_feeder,high,Vertical feeder from BUS-480E1B to MCC-ESS-B.
+BUS-480E1B,CHGR-125B,power_feeder,medium,CABLE 1B-480-9 route from BUS-480E1B area to charger input.
+MCC-1B,PUMP-CCW-103B,power_feeder,high,Solid feeder from MCC-1B to pump motor.
+MCC-1D,FAN-CRHV-104B,power_feeder,high,Solid feeder from MCC-1D to fan motor.
+MCC-ESS-B,PUMP-SI-101B,power_feeder,high,MCC-ESS-B output feeds SI pump.
+MCC-ESS-B,PUMP-RHR-102B,power_feeder,high,MCC-ESS-B output feeds RHR pump.
+MCC-ESS-B,MOV-1201B,power_feeder,high,MCC-ESS-B output feeds MOV-1201B.
+CHGR-125A,DC-BUS-125A,dc_power,high,Charger DC output connects to DC-BUS-125A.
+BAT-125A,DC-BUS-125A,dc_power,high,Battery connects to DC-BUS-125A.
+DC-BUS-125A,INV-120A,dc_power,high,DC-BUS-125A connects to inverter input.
+INV-120A,UPS-BUS-A,ac_power,high,INV-120A output connects to UPS-BUS-A.
+UPS-BUS-A,PANEL-RPS-A,ac_power,high,Solid feeder from UPS-BUS-A to PANEL-RPS-A.
+UPS-BUS-A,INST-RACK-1,ac_power,high,UPS-BUS-A right terminal feeds INST-RACK-1.
+RELAY-K86A,PANEL-RPS-A,control_interlock,high,Dashed control path from relay to panel.
+PANEL-RPS-A,JB-ESF-01,control_interlock,high,Dashed control path from panel to JB-ESF-01.
+CHGR-125B,DC-BUS-125B,dc_power,high,Charger DC output connects to DC-BUS-125B.
+BAT-125B,DC-BUS-125B,dc_power,high,Battery connects to DC-BUS-125B.
+DC-BUS-125B,INV-120B,dc_power,high,DC-BUS-125B connects to inverter input.
+INV-120B,UPS-BUS-B,ac_power,high,INV-120B output connects to UPS-BUS-B.
+UPS-BUS-B,PANEL-RPS-B,ac_power,high,Solid feeder from UPS-BUS-B to PANEL-RPS-B.
+RELAY-K86B,PANEL-RPS-B,control_interlock,high,Dashed control path from relay to panel.
+PANEL-RPS-B,JB-ESF-01,control_interlock,high,Dashed control path from panel to JB-ESF-01.

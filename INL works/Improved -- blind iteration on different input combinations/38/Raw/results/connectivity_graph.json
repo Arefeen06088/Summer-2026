@@ -1,0 +1,630 @@
+{
+  "document": "38",
+  "iteration": "1",
+  "nodes": [
+    {
+      "id": "GEN-U2A",
+      "index": 1
+    },
+    {
+      "id": "CB-101",
+      "index": 2
+    },
+    {
+      "id": "TR-UAT-2A",
+      "index": 3
+    },
+    {
+      "id": "DG-2A",
+      "index": 4
+    },
+    {
+      "id": "CB-103",
+      "index": 5
+    },
+    {
+      "id": "BUS-4160A",
+      "index": 6
+    },
+    {
+      "id": "CB-105",
+      "index": 7
+    },
+    {
+      "id": "BUS-4160B",
+      "index": 8
+    },
+    {
+      "id": "CB-102",
+      "index": 9
+    },
+    {
+      "id": "TR-SUT-2B",
+      "index": 10
+    },
+    {
+      "id": "CB-104",
+      "index": 11
+    },
+    {
+      "id": "DG-2B",
+      "index": 12
+    },
+    {
+      "id": "CB-201A",
+      "index": 13
+    },
+    {
+      "id": "TR-201A",
+      "index": 14
+    },
+    {
+      "id": "CB-301A",
+      "index": 15
+    },
+    {
+      "id": "BUS-480A",
+      "index": 16
+    },
+    {
+      "id": "CB-401A",
+      "index": 17
+    },
+    {
+      "id": "MCC-2A1",
+      "index": 18
+    },
+    {
+      "id": "PUMP-RHR2A",
+      "index": 19
+    },
+    {
+      "id": "PUMP-CCW2A",
+      "index": 20
+    },
+    {
+      "id": "PUMP-SW2A",
+      "index": 21
+    },
+    {
+      "id": "FAN-CR2A",
+      "index": 22
+    },
+    {
+      "id": "MOV-RHR141A",
+      "index": 23
+    },
+    {
+      "id": "MOV-SI221A",
+      "index": 24
+    },
+    {
+      "id": "TR-CPT-A",
+      "index": 25
+    },
+    {
+      "id": "CHGR-2A",
+      "index": 26
+    },
+    {
+      "id": "BAT-125A",
+      "index": 27
+    },
+    {
+      "id": "125 VDC TRAIN A",
+      "index": 28
+    },
+    {
+      "id": "INV-2A",
+      "index": 29
+    },
+    {
+      "id": "BUS-120AC-A",
+      "index": 30
+    },
+    {
+      "id": "RELAY-86A",
+      "index": 31
+    },
+    {
+      "id": "RPS-PNL-A",
+      "index": 32
+    },
+    {
+      "id": "RELAY-27A",
+      "index": 33
+    },
+    {
+      "id": "CB-201B",
+      "index": 34
+    },
+    {
+      "id": "TR-201B",
+      "index": 35
+    },
+    {
+      "id": "CB-301B",
+      "index": 36
+    },
+    {
+      "id": "BUS-480B",
+      "index": 37
+    },
+    {
+      "id": "CB-401B",
+      "index": 38
+    },
+    {
+      "id": "MCC-2B1",
+      "index": 39
+    },
+    {
+      "id": "PUMP-RHR2B",
+      "index": 40
+    },
+    {
+      "id": "PUMP-CCW2B",
+      "index": 41
+    },
+    {
+      "id": "PUMP-SW2B",
+      "index": 42
+    },
+    {
+      "id": "FAN-CR2B",
+      "index": 43
+    },
+    {
+      "id": "MOV-RHR142B",
+      "index": 44
+    },
+    {
+      "id": "MOV-SI222B",
+      "index": 45
+    },
+    {
+      "id": "TR-CPT-B",
+      "index": 46
+    },
+    {
+      "id": "CHGR-2B",
+      "index": 47
+    },
+    {
+      "id": "BAT-125B",
+      "index": 48
+    },
+    {
+      "id": "125 VDC TRAIN B",
+      "index": 49
+    },
+    {
+      "id": "INV-2B",
+      "index": 50
+    },
+    {
+      "id": "BUS-120AC-B",
+      "index": 51
+    },
+    {
+      "id": "RELAY-86B",
+      "index": 52
+    },
+    {
+      "id": "RPS-PNL-B",
+      "index": 53
+    },
+    {
+      "id": "RELAY-27B",
+      "index": 54
+    }
+  ],
+  "edges": [
+    {
+      "source": "GEN-U2A",
+      "target": "CB-101",
+      "evidence": "Solid conductor from generator GEN-U2A to breaker CB-101."
+    },
+    {
+      "source": "CB-101",
+      "target": "TR-UAT-2A",
+      "evidence": "CB-101 output is wired into transformer TR-UAT-2A."
+    },
+    {
+      "source": "TR-UAT-2A",
+      "target": "BUS-4160A",
+      "evidence": "Transformer secondary lands on BUS-4160A with a junction dot."
+    },
+    {
+      "source": "DG-2A",
+      "target": "CB-103",
+      "evidence": "Diesel generator DG-2A feeds breaker CB-103."
+    },
+    {
+      "source": "CB-103",
+      "target": "BUS-4160A",
+      "evidence": "CB-103 feeder ties into the BUS-4160A riser."
+    },
+    {
+      "source": "BUS-4160A",
+      "target": "CB-105",
+      "evidence": "Left side of the normally open bus-tie breaker connects to BUS-4160A."
+    },
+    {
+      "source": "CB-105",
+      "target": "BUS-4160B",
+      "evidence": "Right side of the normally open bus-tie breaker connects to BUS-4160B."
+    },
+    {
+      "source": "TR-SUT-2B",
+      "target": "CB-102",
+      "evidence": "Startup auxiliary transformer TR-SUT-2B feeds breaker CB-102."
+    },
+    {
+      "source": "CB-102",
+      "target": "BUS-4160B",
+      "evidence": "CB-102 drops onto BUS-4160B with a junction dot."
+    },
+    {
+      "source": "DG-2B",
+      "target": "CB-104",
+      "evidence": "Diesel generator DG-2B feeds breaker CB-104."
+    },
+    {
+      "source": "CB-104",
+      "target": "BUS-4160B",
+      "evidence": "CB-104 feeder lands on BUS-4160B."
+    },
+    {
+      "source": "BUS-4160A",
+      "target": "CB-201A",
+      "evidence": "BUS-4160A vertical feeder enters CB-201A."
+    },
+    {
+      "source": "CB-201A",
+      "target": "TR-201A",
+      "evidence": "CB-201A is in series above transformer TR-201A."
+    },
+    {
+      "source": "TR-201A",
+      "target": "CB-301A",
+      "evidence": "Transformer TR-201A output passes through CB-301A."
+    },
+    {
+      "source": "CB-301A",
+      "target": "BUS-480A",
+      "evidence": "CB-301A lands on BUS-480A."
+    },
+    {
+      "source": "BUS-4160B",
+      "target": "CB-201B",
+      "evidence": "BUS-4160B vertical feeder enters CB-201B."
+    },
+    {
+      "source": "CB-201B",
+      "target": "TR-201B",
+      "evidence": "CB-201B is in series above transformer TR-201B."
+    },
+    {
+      "source": "TR-201B",
+      "target": "CB-301B",
+      "evidence": "Transformer TR-201B output passes through CB-301B."
+    },
+    {
+      "source": "CB-301B",
+      "target": "BUS-480B",
+      "evidence": "CB-301B lands on BUS-480B."
+    },
+    {
+      "source": "BUS-480A",
+      "target": "CB-401A",
+      "evidence": "BUS-480A feeder enters CB-401A."
+    },
+    {
+      "source": "CB-401A",
+      "target": "MCC-2A1",
+      "evidence": "CB-401A output enters MCC-2A1."
+    },
+    {
+      "source": "MCC-2A1",
+      "target": "PUMP-RHR2A",
+      "evidence": "MCC-2A1 bucket 01 feeder 2A-F1 drops to PUMP-RHR2A."
+    },
+    {
+      "source": "MCC-2A1",
+      "target": "PUMP-CCW2A",
+      "evidence": "MCC-2A1 bucket 02 feeder 2A-F2 drops to PUMP-CCW2A."
+    },
+    {
+      "source": "MCC-2A1",
+      "target": "PUMP-SW2A",
+      "evidence": "MCC-2A1 bucket 03 feeder 2A-F3 drops to PUMP-SW2A."
+    },
+    {
+      "source": "MCC-2A1",
+      "target": "FAN-CR2A",
+      "evidence": "MCC-2A1 bucket 04 feeder 2A-F4 drops to FAN-CR2A."
+    },
+    {
+      "source": "MCC-2A1",
+      "target": "MOV-RHR141A",
+      "evidence": "MCC-2A1 bucket 05 feeder 2A-F5 drops to MOV-RHR141A."
+    },
+    {
+      "source": "MCC-2A1",
+      "target": "MOV-SI221A",
+      "evidence": "MCC-2A1 bucket 06 feeder 2A-F6 drops to MOV-SI221A."
+    },
+    {
+      "source": "BUS-480A",
+      "target": "TR-CPT-A",
+      "evidence": "A solid feeder from BUS-480A drops to TR-CPT-A."
+    },
+    {
+      "source": "BUS-480A",
+      "target": "CHGR-2A",
+      "evidence": "A separate solid feeder from BUS-480A supplies CHGR-2A."
+    },
+    {
+      "source": "CHGR-2A",
+      "target": "125 VDC TRAIN A",
+      "evidence": "Charger output lands on the Train A 125 VDC bus."
+    },
+    {
+      "source": "BAT-125A",
+      "target": "125 VDC TRAIN A",
+      "evidence": "Battery BAT-125A lands directly on the Train A 125 VDC bus."
+    },
+    {
+      "source": "125 VDC TRAIN A",
+      "target": "INV-2A",
+      "evidence": "Train A 125 VDC bus feeds inverter INV-2A."
+    },
+    {
+      "source": "INV-2A",
+      "target": "BUS-120AC-A",
+      "evidence": "INV-2A AC output lands on BUS-120AC-A."
+    },
+    {
+      "source": "125 VDC TRAIN A",
+      "target": "RELAY-86A",
+      "evidence": "Dashed control lead terminates at the Train A DC bus and RELAY-86A."
+    },
+    {
+      "source": "BUS-120AC-A",
+      "target": "RPS-PNL-A",
+      "evidence": "BUS-120AC-A has a solid vertical feed to RPS-PNL-A."
+    },
+    {
+      "source": "RPS-PNL-A",
+      "target": "RELAY-27A",
+      "evidence": "Dashed control connection runs between RPS-PNL-A and RELAY-27A."
+    },
+    {
+      "source": "BUS-480B",
+      "target": "CB-401B",
+      "evidence": "BUS-480B feeder enters CB-401B."
+    },
+    {
+      "source": "CB-401B",
+      "target": "MCC-2B1",
+      "evidence": "CB-401B output enters MCC-2B1."
+    },
+    {
+      "source": "MCC-2B1",
+      "target": "PUMP-RHR2B",
+      "evidence": "MCC-2B1 bucket 01 feeder 2B-F1 drops to PUMP-RHR2B."
+    },
+    {
+      "source": "MCC-2B1",
+      "target": "PUMP-CCW2B",
+      "evidence": "MCC-2B1 bucket 02 feeder 2B-F2 drops to PUMP-CCW2B."
+    },
+    {
+      "source": "MCC-2B1",
+      "target": "PUMP-SW2B",
+      "evidence": "MCC-2B1 bucket 03 feeder 2B-F3 drops to PUMP-SW2B."
+    },
+    {
+      "source": "MCC-2B1",
+      "target": "FAN-CR2B",
+      "evidence": "MCC-2B1 bucket 04 feeder 2B-F4 drops to FAN-CR2B."
+    },
+    {
+      "source": "MCC-2B1",
+      "target": "MOV-RHR142B",
+      "evidence": "MCC-2B1 bucket 05 feeder 2B-F5 drops to MOV-RHR142B."
+    },
+    {
+      "source": "MCC-2B1",
+      "target": "MOV-SI222B",
+      "evidence": "MCC-2B1 bucket 06 feeder 2B-F6 drops to MOV-SI222B."
+    },
+    {
+      "source": "BUS-480B",
+      "target": "TR-CPT-B",
+      "evidence": "A solid feeder from BUS-480B drops to TR-CPT-B."
+    },
+    {
+      "source": "BUS-480B",
+      "target": "CHGR-2B",
+      "evidence": "A separate solid feeder from BUS-480B supplies CHGR-2B."
+    },
+    {
+      "source": "TR-CPT-B",
+      "target": "BUS-120AC-B",
+      "evidence": "TR-CPT-B secondary visibly lands on BUS-120AC-B."
+    },
+    {
+      "source": "CHGR-2B",
+      "target": "125 VDC TRAIN B",
+      "evidence": "Charger output lands on the Train B 125 VDC bus."
+    },
+    {
+      "source": "BAT-125B",
+      "target": "125 VDC TRAIN B",
+      "evidence": "Battery BAT-125B lands directly on the Train B 125 VDC bus."
+    },
+    {
+      "source": "125 VDC TRAIN B",
+      "target": "INV-2B",
+      "evidence": "Train B 125 VDC bus feeds inverter INV-2B."
+    },
+    {
+      "source": "INV-2B",
+      "target": "BUS-120AC-B",
+      "evidence": "INV-2B AC output lands on BUS-120AC-B."
+    },
+    {
+      "source": "125 VDC TRAIN B",
+      "target": "RELAY-86B",
+      "evidence": "Dashed control lead terminates at the Train B DC bus and RELAY-86B."
+    },
+    {
+      "source": "BUS-120AC-B",
+      "target": "RPS-PNL-B",
+      "evidence": "BUS-120AC-B has a solid vertical feed to RPS-PNL-B."
+    },
+    {
+      "source": "BUS-120AC-B",
+      "target": "RELAY-27B",
+      "evidence": "RELAY-27B is visibly tied at the BUS-120AC-B junction."
+    },
+    {
+      "source": "RPS-PNL-B",
+      "target": "RELAY-27B",
+      "evidence": "Dashed control connection runs between RPS-PNL-B and RELAY-27B."
+    }
+  ],
+  "rejected_items": [
+    {
+      "item": "TO UNIT AUX BUS CONT.",
+      "reason": "Off-sheet continuation box, not retained as a matrix component."
+    },
+    {
+      "item": "MCC-2A1-01..06",
+      "reason": "MCC bucket/local-disconnect numbers were folded into MCC-to-load edges."
+    },
+    {
+      "item": "MCC-2B1-01..06",
+      "reason": "MCC bucket/local-disconnect numbers were folded into MCC-to-load edges."
+    },
+    {
+      "item": "2A-C72/2A-C86/2B-C72/2B-C86",
+      "reason": "Dashed cable-route labels, not components."
+    },
+    {
+      "item": "ESF DIESEL A/B",
+      "reason": "Area/enclosure text labels; actual electrical nodes are DG-2A and DG-2B."
+    },
+    {
+      "item": "GND-STA",
+      "reason": "Station ground reference symbol only; not a visible direct electrical connection to a retained component."
+    },
+    {
+      "item": "TR-CPT-A--BUS-120AC-A",
+      "reason": "A-side transformer secondary ends at an isolated dot/gap and does not visibly land on BUS-120AC-A."
+    },
+    {
+      "item": "BUS-120AC-A--RELAY-27A",
+      "reason": "No visible BUS-120AC-A tap to RELAY-27A; RELAY-27A is only dashed to RPS-PNL-A."
+    }
+  ],
+  "validation": {
+    "document": "38",
+    "iteration": "1",
+    "raw_image": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\38\\Raw\\raw -- synthetic_npp_schematic_improved.png",
+    "node_count": 54,
+    "edge_count": 55,
+    "symmetric": true,
+    "diagonal_zero": true,
+    "duplicate_final_edges_removed": 0,
+    "unknown_endpoint_count": 0,
+    "degree_by_node": {
+      "GEN-U2A": 1,
+      "CB-101": 2,
+      "TR-UAT-2A": 2,
+      "DG-2A": 1,
+      "CB-103": 2,
+      "BUS-4160A": 4,
+      "CB-105": 2,
+      "BUS-4160B": 4,
+      "CB-102": 2,
+      "TR-SUT-2B": 1,
+      "CB-104": 2,
+      "DG-2B": 1,
+      "CB-201A": 2,
+      "TR-201A": 2,
+      "CB-301A": 2,
+      "BUS-480A": 4,
+      "CB-401A": 2,
+      "MCC-2A1": 7,
+      "PUMP-RHR2A": 1,
+      "PUMP-CCW2A": 1,
+      "PUMP-SW2A": 1,
+      "FAN-CR2A": 1,
+      "MOV-RHR141A": 1,
+      "MOV-SI221A": 1,
+      "TR-CPT-A": 1,
+      "CHGR-2A": 2,
+      "BAT-125A": 1,
+      "125 VDC TRAIN A": 4,
+      "INV-2A": 2,
+      "BUS-120AC-A": 2,
+      "RELAY-86A": 1,
+      "RPS-PNL-A": 2,
+      "RELAY-27A": 1,
+      "CB-201B": 2,
+      "TR-201B": 2,
+      "CB-301B": 2,
+      "BUS-480B": 4,
+      "CB-401B": 2,
+      "MCC-2B1": 7,
+      "PUMP-RHR2B": 1,
+      "PUMP-CCW2B": 1,
+      "PUMP-SW2B": 1,
+      "FAN-CR2B": 1,
+      "MOV-RHR142B": 1,
+      "MOV-SI222B": 1,
+      "TR-CPT-B": 2,
+      "CHGR-2B": 2,
+      "BAT-125B": 1,
+      "125 VDC TRAIN B": 4,
+      "INV-2B": 2,
+      "BUS-120AC-B": 4,
+      "RELAY-86B": 1,
+      "RPS-PNL-B": 2,
+      "RELAY-27B": 2
+    },
+    "round_edge_counts": [
+      {
+        "round": 1,
+        "agent": "Diego",
+        "label": "high_recall",
+        "node_count": 74,
+        "edge_count": 78
+      },
+      {
+        "round": 2,
+        "agent": "Jennifer",
+        "label": "precision_review",
+        "node_count": 54,
+        "edge_count": 55
+      },
+      {
+        "round": 3,
+        "agent": "Diego",
+        "label": "saturation",
+        "node_count": 54,
+        "edge_count": 55
+      },
+      {
+        "round": 4,
+        "agent": "Jennifer",
+        "label": "final",
+        "node_count": 54,
+        "edge_count": 55
+      }
+    ]
+  }
+}

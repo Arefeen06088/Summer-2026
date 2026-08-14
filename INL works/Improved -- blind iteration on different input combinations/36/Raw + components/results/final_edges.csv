@@ -1,0 +1,73 @@
+source,target,kind,confidence,evidence
+GRID-230-A,CB-SW-A,power,high,solid feeder from GRID-230-A right terminal to CB-SW-A left terminal
+CB-SW-A,TR-SU-A,power,high,solid feeder from CB-SW-A right terminal to TR-SU-A left terminal
+TR-SU-A,SU-A,power,high,solid routed feeder from TR-SU-A output to SU-A tap label
+SU-A,BUS-13K-A,power,high,SU-A feeder terminates on left end/tap of BUS-13K-A
+GEN-DG-A,CB-DG-A,power,high,solid feeder from GEN-DG-A to CB-DG-A
+CB-DG-A,TR-EDG-A,power,high,solid feeder from CB-DG-A to TR-EDG-A
+TR-EDG-A,EDG-A,power,high,solid feeder from TR-EDG-A toward EDG-A labeled bus tap
+EDG-A,BUS-13K-A,power,high,EDG-A labeled tap connects into BUS-13K-A with filled bus tap
+GRID-230-B,CB-SW-B,power,high,solid feeder from GRID-230-B to CB-SW-B
+CB-SW-B,TR-SU-B,power,high,solid feeder from CB-SW-B to TR-SU-B
+TR-SU-B,SU-B,power,high,solid routed feeder from TR-SU-B output to SU-B tap label
+SU-B,BUS-13K-B,power,high,SU-B feeder terminates on right-end tap of BUS-13K-B
+GEN-DG-B,CB-DG-B,power,high,solid feeder from GEN-DG-B to CB-DG-B
+CB-DG-B,TR-EDG-B,power,high,solid feeder from CB-DG-B to TR-EDG-B
+TR-EDG-B,EDG-B,power,high,solid feeder from TR-EDG-B toward EDG-B labeled tap
+EDG-B,BUS-13K-B,power,high,EDG-B labeled tap connects into BUS-13K-B with filled bus tap
+BUS-13K-A,CB-13-TIE,power,high,solid BUS-13K-A segment reaches left terminal of CB-13-TIE
+CB-13-TIE,BUS-13K-B,power,high,solid feeder from right terminal of CB-13-TIE to BUS-13K-B
+CB-13-TIE,RPS_TRIP,control,medium,dashed control route leaves CB-13-TIE area and drops along line labeled RPS TRIP
+RPS_TRIP,PNL-RPS-1,control,medium,dashed RPS TRIP route continues down into/along PNL-RPS-1 control panel area
+BUS-13K-A,TR-4K-A,power,high,vertical solid feeder with bus tap from BUS-13K-A down to TR-4K-A
+TR-4K-A,CB-4K-A,power,high,solid vertical feeder from TR-4K-A to CB-4K-A
+CB-4K-A,BUS-4K-A,power,high,solid vertical feeder from CB-4K-A to BUS-4K-A tap
+BUS-4K-A,CB-4K-TIE,power,high,solid 4.16 kV bus A segment reaches left terminal of CB-4K-TIE
+BUS-4K-A,TR-480-A,power,high,filled bus tap drops from BUS-4K-A to TR-480-A
+BUS-13K-B,TR-4K-B,power,high,vertical solid feeder with bus tap from BUS-13K-B down to TR-4K-B
+TR-4K-B,CB-4K-B,power,high,solid vertical feeder from TR-4K-B to CB-4K-B
+CB-4K-B,BUS-4K-B,power,high,solid vertical feeder from CB-4K-B to BUS-4K-B tap
+BUS-4K-B,CB-4K-TIE,power,high,solid 4.16 kV bus B segment reaches right terminal of CB-4K-TIE
+BUS-4K-B,TR-480-B,power,high,filled bus tap drops from BUS-4K-B to TR-480-B
+CB-4K-TIE,RPS_LOCKOUT,control,medium,control/interlock line and label RPS LOCKOUT directly under CB-4K-TIE
+RPS_LOCKOUT,PNL-RPS-1,control,medium,RPS LOCKOUT control route terminates at/above PNL-RPS-1
+TR-480-A,CB-LC-A,power,high,solid vertical feeder from TR-480-A to CB-LC-A
+CB-LC-A,BUS-480-A,power,high,solid feeder from CB-LC-A bottom to BUS-480-A tap
+BUS-480-A,LC-A1,power,high,LC-A1 label marks filled tap on BUS-480-A
+LC-A1,MCC-01A,power,high,vertical solid feeder from LC-A1 tap to MCC-01A
+BUS-480-A,LC-A2,power,high,LC-A2 label marks filled tap on BUS-480-A
+LC-A2,MCC-02A,power,high,vertical solid feeder from LC-A2 tap to MCC-02A
+BUS-480-A,RECT-125A,power,high,solid feeder from 480 VAC load center bus down/left to RECT-125A AC input
+MCC-01A,PUMP-RHR-A,power,high,solid branch from MCC-01A lower left output to PUMP-RHR-A
+MCC-01A,MOTOR-CCW-A,power,high,solid branch from MCC-01A lower right output to MOTOR-CCW-A
+MCC-02A,PUMP-AFW-A,power,high,solid branch from MCC-02A lower left output to PUMP-AFW-A
+MCC-02A,MOV-A,power,high,solid MCC-02A branch runs through small MOV-A box
+MOV-A,VALVE-MOV-A,power,high,solid vertical segment from MOV-A box into VALVE-MOV-A
+MCC-02A,FAN-CONTAIN-A,power,high,solid branch from MCC-02A right output to FAN-CONTAIN-A
+RECT-125A,BUS-DC125-A,dc_power,high,RECT-125A DC output joins BUS-DC125-A horizontal 125 VDC bus
+BUS-DC125-A,BAT-125A,dc_power,high,filled tap and vertical solid line from BUS-DC125-A to BAT-125A
+BUS-DC125-A,INV-120A,dc_power,high,solid BUS-DC125-A segment reaches INV-120A DC input
+INV-120A,PNL-ESF-A,power,high,solid vertical feeder from INV-120A top to PNL-ESF-A bottom
+JB-ESF-A,PNL-ESF-A,control,medium,dashed vertical control line between JB-ESF-A and PNL-ESF-A
+PNL-ESF-A,PUMP-AFW-A,control,medium,dashed control line with vertical stub to PUMP-AFW-A label area
+PNL-ESF-A,VALVE-MOV-A,control,medium,dashed control line with vertical stub to VALVE-MOV-A
+TR-480-B,CB-LC-B,power,high,solid vertical feeder from TR-480-B to CB-LC-B
+CB-LC-B,BUS-480-B,power,high,solid feeder from CB-LC-B bottom to BUS-480-B tap
+BUS-480-B,LC-B1,power,high,LC-B1 label marks filled tap on BUS-480-B
+LC-B1,MCC-01B,power,high,vertical solid feeder from LC-B1 tap to MCC-01B
+BUS-480-B,LC-B2,power,high,LC-B2 label marks filled tap on BUS-480-B
+LC-B2,MCC-02B,power,high,vertical solid feeder from LC-B2 tap to MCC-02B
+BUS-480-B,RECT-125B,power,high,solid feeder from BUS-480-B right-side tap down to RECT-125B AC input
+MCC-01B,PUMP-RHR-B,power,high,solid branch from MCC-01B lower left output to PUMP-RHR-B
+MCC-01B,MOTOR-CCW-B,power,high,solid branch from MCC-01B lower right output to MOTOR-CCW-B
+MCC-02B,PUMP-AFW-B,power,high,solid branch from MCC-02B lower left output to PUMP-AFW-B
+MCC-02B,MOV-B,power,high,solid MCC-02B branch runs through small MOV-B box
+MOV-B,VALVE-MOV-B,power,high,solid vertical segment from MOV-B box into VALVE-MOV-B
+MCC-02B,FAN-CONTAIN-B,power,high,solid branch from MCC-02B right output to FAN-CONTAIN-B
+RECT-125B,BUS-DC125-B,dc_power,high,RECT-125B DC output joins BUS-DC125-B horizontal 125 VDC bus
+BUS-DC125-B,BAT-125B,dc_power,high,filled tap and vertical solid line from BUS-DC125-B to BAT-125B
+BUS-DC125-B,INV-120B,dc_power,high,solid BUS-DC125-B segment reaches INV-120B DC input
+INV-120B,PNL-ESF-B,power,high,solid vertical feeder from INV-120B top to PNL-ESF-B bottom
+JB-ESF-B,PNL-ESF-B,control,medium,dashed vertical control line between JB-ESF-B and PNL-ESF-B
+PNL-ESF-B,PUMP-AFW-B,control,medium,dashed control line with vertical stub to PUMP-AFW-B label area
+PNL-ESF-B,VALVE-MOV-B,control,medium,dashed control line with vertical stub to VALVE-MOV-B

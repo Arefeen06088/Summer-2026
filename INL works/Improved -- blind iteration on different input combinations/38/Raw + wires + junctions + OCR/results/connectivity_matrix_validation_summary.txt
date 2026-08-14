@@ -1,0 +1,35 @@
+Connectivity matrix validation summary - Document 38 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\38\synthetic_npp_connectivity_matrix_improved.csv
+GT after normalization: 60 undirected edges across 55 component names.
+
+Token usage:
+Token source files: document38_token_usage_estimates.csv; document38_token_usage_totals.csv.
+Document total token estimate: low=62391, expected=169386, high=440934.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=44, FP=9, FN=16, Precision=0.830189, Recall=0.733333, F1=0.778761.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names; missing exact GT component names.
+- Extracted components: 55; extra/non-GT names: 2; missing GT component names: 2.
+- False-positive extracted edge examples: 125 VDC TRAIN A -- BAT-125A; 125 VDC TRAIN A -- CHGR-2A; 125 VDC TRAIN A -- INV-2A; 125 VDC TRAIN A -- RELAY-86A; 125 VDC TRAIN B -- BAT-125B; 125 VDC TRAIN B -- CHGR-2B; 125 VDC TRAIN B -- INV-2B; 125 VDC TRAIN B -- RELAY-86B; ... (+1 more).
+- Missed GT edge examples: BAT-125A -- BUS-125DC-A; BAT-125B -- BUS-125DC-B; BUS-120AC-A -- TR-CPT-A; BUS-125DC-A -- CHGR-2A; BUS-125DC-A -- INV-2A; BUS-125DC-A -- RELAY-86A; BUS-125DC-B -- CHGR-2B; BUS-125DC-B -- INV-2B; ... (+8 more).
+- Extra/non-GT component examples: 125 VDC TRAIN A; 125 VDC TRAIN B.
+- Missing GT component examples: BUS-125DC-A; BUS-125DC-B.
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=44, FP=0, FN=16, Precision=1.000000, Recall=0.733333, F1=0.846154.
+- If all missed GT edges were added, final performance would be TP=60, FP=9, FN=0, Precision=0.869565, Recall=1.000000, F1=0.930233.
+- If extra node 125 VDC TRAIN A and its 4 false-positive incident edge(s) were not put in extraction, final performance would be TP=44, FP=5, FN=16, Precision=0.897959, Recall=0.733333, F1=0.807339.
+- If extra node 125 VDC TRAIN B and its 4 false-positive incident edge(s) were not put in extraction, final performance would be TP=44, FP=5, FN=16, Precision=0.897959, Recall=0.733333, F1=0.807339.
+
+Best evaluated row: Diego -- Round 1 with F1=0.800000.
+
+Round-specific notes:
+- Diego -- Round 1: TP=46, FP=9, FN=14, F1=0.800000; extra nodes=2, missing GT nodes=2. FP examples: 125 VDC TRAIN A -- BAT-125A; 125 VDC TRAIN A -- CHGR-2A; 125 VDC TRAIN A -- INV-2A; 125 VDC TRAIN A -- RELAY-86A; ... (+5 more). FN examples: BAT-125A -- BUS-125DC-A; BAT-125B -- BUS-125DC-B; BUS-120AC-A -- TR-CPT-A; BUS-125DC-A -- CHGR-2A; ... (+10 more).
+- Jennifer -- Round 2: TP=44, FP=9, FN=16, F1=0.778761; extra nodes=2, missing GT nodes=2. FP examples: 125 VDC TRAIN A -- BAT-125A; 125 VDC TRAIN A -- CHGR-2A; 125 VDC TRAIN A -- INV-2A; 125 VDC TRAIN A -- RELAY-86A; ... (+5 more). FN examples: BAT-125A -- BUS-125DC-A; BAT-125B -- BUS-125DC-B; BUS-120AC-A -- TR-CPT-A; BUS-125DC-A -- CHGR-2A; ... (+12 more).
+- Diego -- Round 3: TP=44, FP=9, FN=16, F1=0.778761; extra nodes=2, missing GT nodes=2. FP examples: 125 VDC TRAIN A -- BAT-125A; 125 VDC TRAIN A -- CHGR-2A; 125 VDC TRAIN A -- INV-2A; 125 VDC TRAIN A -- RELAY-86A; ... (+5 more). FN examples: BAT-125A -- BUS-125DC-A; BAT-125B -- BUS-125DC-B; BUS-120AC-A -- TR-CPT-A; BUS-125DC-A -- CHGR-2A; ... (+12 more).
+- Jennifer -- Round 4: TP=44, FP=9, FN=16, F1=0.778761; extra nodes=2, missing GT nodes=2. FP examples: 125 VDC TRAIN A -- BAT-125A; 125 VDC TRAIN A -- CHGR-2A; 125 VDC TRAIN A -- INV-2A; 125 VDC TRAIN A -- RELAY-86A; ... (+5 more). FN examples: BAT-125A -- BUS-125DC-A; BAT-125B -- BUS-125DC-B; BUS-120AC-A -- TR-CPT-A; BUS-125DC-A -- CHGR-2A; ... (+12 more).
+- Final connectivity -- Final: TP=44, FP=9, FN=16, F1=0.778761; extra nodes=2, missing GT nodes=2. FP examples: 125 VDC TRAIN A -- BAT-125A; 125 VDC TRAIN A -- CHGR-2A; 125 VDC TRAIN A -- INV-2A; 125 VDC TRAIN A -- RELAY-86A; ... (+5 more). FN examples: BAT-125A -- BUS-125DC-A; BAT-125B -- BUS-125DC-B; BUS-120AC-A -- TR-CPT-A; BUS-125DC-A -- CHGR-2A; ... (+12 more).

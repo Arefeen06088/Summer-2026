@@ -1,0 +1,875 @@
+{
+    "document":  "41",
+    "iteration":  "1",
+    "round":  "diego_round1_high_recall",
+    "source_restriction":  "Doc41 Raw + components only; no GT, no GT-derived feedback, no Raw+wires, no OCR engines, no web",
+    "extraction_policy":  "high recall; asserted_edges visually supported; uncertain_edges excluded from matrix",
+    "nodes":  [
+                  {
+                      "id":  "OFFSITE_A_161KV",
+                      "type":  "component",
+                      "label_evidence":  "Circle source labeled 161 kV OFFSITE A in upper-left switchgear area."
+                  },
+                  {
+                      "id":  "TR_1A",
+                      "type":  "component",
+                      "label_evidence":  "Transformer symbol labeled TR-1A, SU 13.8/4.16, under 3-1/C 500 MCM note."
+                  },
+                  {
+                      "id":  "GND_1E",
+                      "type":  "logical_node",
+                      "label_evidence":  "Ground symbol labeled GND-1E below TR-1A."
+                  },
+                  {
+                      "id":  "CB_101",
+                      "type":  "component",
+                      "label_evidence":  "Drawout breaker rectangle labeled CB-101 on 4160V FEED A."
+                  },
+                  {
+                      "id":  "BUS_1A_4160V",
+                      "type":  "bus",
+                      "label_evidence":  "Horizontal bus bar labeled BUS-1A 4.16 kV."
+                  },
+                  {
+                      "id":  "EDG_1A",
+                      "type":  "component",
+                      "label_evidence":  "Generator circle labeled EDG-1A 4160 V."
+                  },
+                  {
+                      "id":  "CB_105",
+                      "type":  "component",
+                      "label_evidence":  "Drawout breaker rectangle labeled CB-105 on EDG A INCOMING feeder."
+                  },
+                  {
+                      "id":  "CTRL_86A",
+                      "type":  "logical_node",
+                      "label_evidence":  "Dashed control/interlock trunk labeled CTRL-86A along left side of drawing."
+                  },
+                  {
+                      "id":  "CB_TIE_1AB",
+                      "type":  "component",
+                      "label_evidence":  "Center drawout breaker labeled CB-TIE 1AB, with N.O. callout nearby."
+                  },
+                  {
+                      "id":  "BUS_1B_4160V",
+                      "type":  "bus",
+                      "label_evidence":  "Horizontal bus bar labeled BUS-1B 4.16 kV."
+                  },
+                  {
+                      "id":  "CB_102",
+                      "type":  "component",
+                      "label_evidence":  "Drawout breaker rectangle labeled CB-102 between BUS-1B and TR-1B."
+                  },
+                  {
+                      "id":  "TR_1B",
+                      "type":  "component",
+                      "label_evidence":  "Transformer symbol labeled TR-1B, SU 13.8/4.16."
+                  },
+                  {
+                      "id":  "OFFSITE_B_161KV",
+                      "type":  "component",
+                      "label_evidence":  "Circle source labeled 161 kV OFFSITE B in upper-right switchgear area."
+                  },
+                  {
+                      "id":  "EDG_1B",
+                      "type":  "component",
+                      "label_evidence":  "Generator circle labeled EDG-1B 4160 V."
+                  },
+                  {
+                      "id":  "CB_106",
+                      "type":  "component",
+                      "label_evidence":  "Drawout breaker rectangle labeled CB-106 on EDG B INCOMING feeder."
+                  },
+                  {
+                      "id":  "CTRL_86B",
+                      "type":  "logical_node",
+                      "label_evidence":  "Dashed control/interlock trunk labeled CTRL-86B on right side of drawing."
+                  },
+                  {
+                      "id":  "TR_LC_1A",
+                      "type":  "component",
+                      "label_evidence":  "Transformer symbol labeled TR-LC-1A 4.16/0.48 in Train A 480 V load center area."
+                  },
+                  {
+                      "id":  "CB_201",
+                      "type":  "component",
+                      "label_evidence":  "Breaker rectangle labeled CB-201 below TR-LC-1A."
+                  },
+                  {
+                      "id":  "BUS_480A",
+                      "type":  "bus",
+                      "label_evidence":  "Horizontal 480 V bus bar labeled BUS-480A."
+                  },
+                  {
+                      "id":  "MCC_1A",
+                      "type":  "component",
+                      "label_evidence":  "MCC box labeled MCC-1A NORMAL under BUS-480A."
+                  },
+                  {
+                      "id":  "PUMP_CCW_103A",
+                      "type":  "component",
+                      "label_evidence":  "Motor/load symbol labeled PUMP-CCW-103A CCW PUMP."
+                  },
+                  {
+                      "id":  "MCC_1C",
+                      "type":  "component",
+                      "label_evidence":  "MCC box labeled MCC-1C AUX under BUS-480A."
+                  },
+                  {
+                      "id":  "FAN_CRHV_104A",
+                      "type":  "component",
+                      "label_evidence":  "Fan/load symbol labeled FAN-CRHV-104A CR HVAC."
+                  },
+                  {
+                      "id":  "TR_SAF_1A",
+                      "type":  "component",
+                      "label_evidence":  "Transformer symbol labeled TR-SAF-1A CLASS 1E."
+                  },
+                  {
+                      "id":  "CB_203",
+                      "type":  "component",
+                      "label_evidence":  "Breaker rectangle labeled CB-203 below TR-SAF-1A."
+                  },
+                  {
+                      "id":  "BUS_480E1A",
+                      "type":  "bus",
+                      "label_evidence":  "Horizontal ESS bus bar labeled BUS-480E1A."
+                  },
+                  {
+                      "id":  "MCC_ESS_A",
+                      "type":  "component",
+                      "label_evidence":  "MCC box labeled MCC-ESS-A CLASS 1E."
+                  },
+                  {
+                      "id":  "PUMP_SI_101A",
+                      "type":  "component",
+                      "label_evidence":  "Motor/load symbol labeled PUMP-SI-101A SAFETY INJ."
+                  },
+                  {
+                      "id":  "PUMP_RHR_102A",
+                      "type":  "component",
+                      "label_evidence":  "Motor/load symbol labeled PUMP-RHR-102A RHR PUMP."
+                  },
+                  {
+                      "id":  "MOV_1201A",
+                      "type":  "component",
+                      "label_evidence":  "Valve/load symbol labeled MOV-1201A SI HDR MOV."
+                  },
+                  {
+                      "id":  "TR_LC_1B",
+                      "type":  "component",
+                      "label_evidence":  "Transformer symbol labeled TR-LC-1B 4.16/0.48 in Train B 480 V area."
+                  },
+                  {
+                      "id":  "CB_202",
+                      "type":  "component",
+                      "label_evidence":  "Breaker rectangle labeled CB-202 below TR-LC-1B."
+                  },
+                  {
+                      "id":  "BUS_480B",
+                      "type":  "bus",
+                      "label_evidence":  "Horizontal 480 V bus bar labeled BUS-480B."
+                  },
+                  {
+                      "id":  "MCC_1B",
+                      "type":  "component",
+                      "label_evidence":  "MCC box labeled MCC-1B NORMAL under BUS-480B."
+                  },
+                  {
+                      "id":  "PUMP_CCW_103B",
+                      "type":  "component",
+                      "label_evidence":  "Motor/load symbol labeled PUMP-CCW-103B CCW PUMP."
+                  },
+                  {
+                      "id":  "MCC_1D",
+                      "type":  "component",
+                      "label_evidence":  "MCC box labeled MCC-1D AUX under BUS-480B."
+                  },
+                  {
+                      "id":  "FAN_CRHV_104B",
+                      "type":  "component",
+                      "label_evidence":  "Fan/load symbol labeled FAN-CRHV-104B CR HVAC."
+                  },
+                  {
+                      "id":  "TR_SAF_1B",
+                      "type":  "component",
+                      "label_evidence":  "Transformer symbol labeled TR-SAF-1B CLASS 1E."
+                  },
+                  {
+                      "id":  "CB_204",
+                      "type":  "component",
+                      "label_evidence":  "Breaker rectangle labeled CB-204 below TR-SAF-1B."
+                  },
+                  {
+                      "id":  "BUS_480E1B",
+                      "type":  "bus",
+                      "label_evidence":  "Horizontal ESS bus bar labeled BUS-480E1B."
+                  },
+                  {
+                      "id":  "MCC_ESS_B",
+                      "type":  "component",
+                      "label_evidence":  "MCC box labeled MCC-ESS-B CLASS 1E."
+                  },
+                  {
+                      "id":  "PUMP_SI_101B",
+                      "type":  "component",
+                      "label_evidence":  "Motor/load symbol labeled PUMP-SI-101B SAFETY INJ."
+                  },
+                  {
+                      "id":  "PUMP_RHR_102B",
+                      "type":  "component",
+                      "label_evidence":  "Motor/load symbol labeled PUMP-RHR-102B RHR PUMP."
+                  },
+                  {
+                      "id":  "MOV_1201B",
+                      "type":  "component",
+                      "label_evidence":  "Valve/load symbol labeled MOV-1201B RHR HDR MOV."
+                  },
+                  {
+                      "id":  "RELAY_K86A",
+                      "type":  "component",
+                      "label_evidence":  "Circle marked 86 with label RELAY-K86A in RPS control interlocks area."
+                  },
+                  {
+                      "id":  "PANEL_RPS_A",
+                      "type":  "component",
+                      "label_evidence":  "Control panel rectangle labeled PANEL-RPS-A with TRAIN A text."
+                  },
+                  {
+                      "id":  "JB_ESF_01",
+                      "type":  "component",
+                      "label_evidence":  "Junction box rectangle labeled JB-ESF-01, TB1."
+                  },
+                  {
+                      "id":  "RELAY_K86B",
+                      "type":  "component",
+                      "label_evidence":  "Circle marked 86 with label RELAY-K86B in RPS control interlocks area."
+                  },
+                  {
+                      "id":  "PANEL_RPS_B",
+                      "type":  "component",
+                      "label_evidence":  "Control panel rectangle labeled PANEL-RPS-B with TRAIN B text."
+                  },
+                  {
+                      "id":  "CHGR_125A",
+                      "type":  "component",
+                      "label_evidence":  "Battery charger rectangle labeled CHGR-125A, 480AC/125DC."
+                  },
+                  {
+                      "id":  "BAT_125A",
+                      "type":  "component",
+                      "label_evidence":  "Battery symbol labeled BAT-125A."
+                  },
+                  {
+                      "id":  "DC_BUS_125A",
+                      "type":  "bus",
+                      "label_evidence":  "DC bus bar labeled DC-BUS-125A."
+                  },
+                  {
+                      "id":  "INV_120A",
+                      "type":  "component",
+                      "label_evidence":  "Inverter rectangle labeled INV-120A, 125DC/120AC."
+                  },
+                  {
+                      "id":  "UPS_BUS_A",
+                      "type":  "bus",
+                      "label_evidence":  "UPS bus bar labeled UPS-BUS-A, adjacent to VITAL 120VAC callout."
+                  },
+                  {
+                      "id":  "INST_RACK_1",
+                      "type":  "component",
+                      "label_evidence":  "Instrument rack rectangle labeled INST-RACK-1 with PT/UV/SEQ."
+                  },
+                  {
+                      "id":  "CHGR_125B",
+                      "type":  "component",
+                      "label_evidence":  "Battery charger rectangle labeled CHGR-125B, 480AC/125DC."
+                  },
+                  {
+                      "id":  "BAT_125B",
+                      "type":  "component",
+                      "label_evidence":  "Battery symbol labeled BAT-125B."
+                  },
+                  {
+                      "id":  "DC_BUS_125B",
+                      "type":  "bus",
+                      "label_evidence":  "DC bus bar labeled DC-BUS-125B."
+                  },
+                  {
+                      "id":  "INV_120B",
+                      "type":  "component",
+                      "label_evidence":  "Inverter rectangle labeled INV-120B, 125DC/120AC."
+                  },
+                  {
+                      "id":  "UPS_BUS_B",
+                      "type":  "bus",
+                      "label_evidence":  "UPS bus bar labeled UPS-BUS-B, adjacent to VITAL 120VAC callout."
+                  }
+              ],
+    "node_order":  [
+                       "OFFSITE_A_161KV",
+                       "TR_1A",
+                       "GND_1E",
+                       "CB_101",
+                       "BUS_1A_4160V",
+                       "EDG_1A",
+                       "CB_105",
+                       "CTRL_86A",
+                       "CB_TIE_1AB",
+                       "BUS_1B_4160V",
+                       "CB_102",
+                       "TR_1B",
+                       "OFFSITE_B_161KV",
+                       "EDG_1B",
+                       "CB_106",
+                       "CTRL_86B",
+                       "TR_LC_1A",
+                       "CB_201",
+                       "BUS_480A",
+                       "MCC_1A",
+                       "PUMP_CCW_103A",
+                       "MCC_1C",
+                       "FAN_CRHV_104A",
+                       "TR_SAF_1A",
+                       "CB_203",
+                       "BUS_480E1A",
+                       "MCC_ESS_A",
+                       "PUMP_SI_101A",
+                       "PUMP_RHR_102A",
+                       "MOV_1201A",
+                       "TR_LC_1B",
+                       "CB_202",
+                       "BUS_480B",
+                       "MCC_1B",
+                       "PUMP_CCW_103B",
+                       "MCC_1D",
+                       "FAN_CRHV_104B",
+                       "TR_SAF_1B",
+                       "CB_204",
+                       "BUS_480E1B",
+                       "MCC_ESS_B",
+                       "PUMP_SI_101B",
+                       "PUMP_RHR_102B",
+                       "MOV_1201B",
+                       "RELAY_K86A",
+                       "PANEL_RPS_A",
+                       "JB_ESF_01",
+                       "RELAY_K86B",
+                       "PANEL_RPS_B",
+                       "CHGR_125A",
+                       "BAT_125A",
+                       "DC_BUS_125A",
+                       "INV_120A",
+                       "UPS_BUS_A",
+                       "INST_RACK_1",
+                       "CHGR_125B",
+                       "BAT_125B",
+                       "DC_BUS_125B",
+                       "INV_120B",
+                       "UPS_BUS_B"
+                   ],
+    "asserted_edges":  [
+                           {
+                               "source":  "OFFSITE_A_161KV",
+                               "target":  "TR_1A",
+                               "kind":  "power_feeder",
+                               "confidence":  "medium",
+                               "evidence":  "Stepped solid conductor from 161 kV OFFSITE A device port to TR-1A primary side terminal."
+                           },
+                           {
+                               "source":  "TR_1A",
+                               "target":  "CB_101",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid stepped feeder from TR-1A secondary terminal to left terminal of CB-101."
+                           },
+                           {
+                               "source":  "CB_101",
+                               "target":  "BUS_1A_4160V",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid 4160V FEED A line from CB-101 right terminal into BUS-1A left terminal."
+                           },
+                           {
+                               "source":  "TR_1A",
+                               "target":  "GND_1E",
+                               "kind":  "grounding_conductor",
+                               "confidence":  "high",
+                               "evidence":  "Vertical conductor from TR-1A bottom terminal to ground symbol labeled GND-1E."
+                           },
+                           {
+                               "source":  "EDG_1A",
+                               "target":  "CB_105",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid line from EDG-1A generator port to CB-105 left/lower terminal path."
+                           },
+                           {
+                               "source":  "CB_105",
+                               "target":  "BUS_1A_4160V",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid EDG A INCOMING feeder exits CB-105 and rises to BUS-1A."
+                           },
+                           {
+                               "source":  "CB_105",
+                               "target":  "CTRL_86A",
+                               "kind":  "control_interlock",
+                               "confidence":  "high",
+                               "evidence":  "Dashed control lead drops from CB-105 bottom terminal to dashed CTRL-86A trunk."
+                           },
+                           {
+                               "source":  "BUS_1A_4160V",
+                               "target":  "CB_TIE_1AB",
+                               "kind":  "bus_tie",
+                               "confidence":  "medium",
+                               "evidence":  "Solid line from right terminal of BUS-1A to left terminal of CB-TIE 1AB; breaker contact is shown open."
+                           },
+                           {
+                               "source":  "CB_TIE_1AB",
+                               "target":  "BUS_1B_4160V",
+                               "kind":  "bus_tie",
+                               "confidence":  "medium",
+                               "evidence":  "Solid line from right terminal of CB-TIE 1AB to left terminal of BUS-1B; bus tie note says normally open."
+                           },
+                           {
+                               "source":  "BUS_1A_4160V",
+                               "target":  "TR_LC_1A",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Vertical feeder from BUS-1A down to row-C junction dot above TR-LC-1A."
+                           },
+                           {
+                               "source":  "BUS_1A_4160V",
+                               "target":  "TR_SAF_1A",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Vertical feeder from BUS-1A down to row-C junction dot above TR-SAF-1A."
+                           },
+                           {
+                               "source":  "OFFSITE_B_161KV",
+                               "target":  "TR_1B",
+                               "kind":  "power_feeder",
+                               "confidence":  "medium",
+                               "evidence":  "Stepped solid conductor from 161 kV OFFSITE B device port to TR-1B primary side terminal."
+                           },
+                           {
+                               "source":  "TR_1B",
+                               "target":  "CB_102",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid stepped feeder from TR-1B secondary terminal to right terminal of CB-102."
+                           },
+                           {
+                               "source":  "CB_102",
+                               "target":  "BUS_1B_4160V",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid line from CB-102 left terminal into BUS-1B right terminal."
+                           },
+                           {
+                               "source":  "EDG_1B",
+                               "target":  "CB_106",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid line from EDG-1B generator port to right terminal of CB-106."
+                           },
+                           {
+                               "source":  "CB_106",
+                               "target":  "BUS_1B_4160V",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid EDG B INCOMING feeder exits CB-106 and rises to BUS-1B."
+                           },
+                           {
+                               "source":  "CB_106",
+                               "target":  "CTRL_86B",
+                               "kind":  "control_interlock",
+                               "confidence":  "high",
+                               "evidence":  "Dashed control lead drops from CB-106 bottom terminal to dashed CTRL-86B trunk."
+                           },
+                           {
+                               "source":  "BUS_1B_4160V",
+                               "target":  "TR_LC_1B",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Vertical feeder from BUS-1B down to row-C terminal dot above TR-LC-1B."
+                           },
+                           {
+                               "source":  "BUS_1B_4160V",
+                               "target":  "TR_SAF_1B",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Vertical feeder from BUS-1B/EDG B incoming path down to row-C terminal dot above TR-SAF-1B."
+                           },
+                           {
+                               "source":  "TR_LC_1A",
+                               "target":  "CB_201",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Short vertical line from TR-LC-1A secondary terminal to CB-201 top terminal."
+                           },
+                           {
+                               "source":  "CB_201",
+                               "target":  "BUS_480A",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Vertical 480V 3PH feeder from CB-201 bottom terminal to BUS-480A."
+                           },
+                           {
+                               "source":  "BUS_480A",
+                               "target":  "MCC_1A",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Vertical drop from BUS-480A to top terminal of MCC-1A."
+                           },
+                           {
+                               "source":  "MCC_1A",
+                               "target":  "PUMP_CCW_103A",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid feeder from MCC-1A bottom terminal through terminal dot to PUMP-CCW-103A motor."
+                           },
+                           {
+                               "source":  "BUS_480A",
+                               "target":  "MCC_1C",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Vertical drop from BUS-480A to top terminal of MCC-1C."
+                           },
+                           {
+                               "source":  "MCC_1C",
+                               "target":  "FAN_CRHV_104A",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid feeder from MCC-1C bottom terminal through terminal dot to FAN-CRHV-104A."
+                           },
+                           {
+                               "source":  "BUS_480A",
+                               "target":  "CHGR_125A",
+                               "kind":  "power_feeder",
+                               "confidence":  "medium",
+                               "evidence":  "Long solid cable labeled CABLE 1A-480-7/FDR A-DC leaves BUS-480A left terminal and runs down to CHGR-125A input."
+                           },
+                           {
+                               "source":  "TR_SAF_1A",
+                               "target":  "CB_203",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Short vertical line from TR-SAF-1A secondary terminal to CB-203 top terminal."
+                           },
+                           {
+                               "source":  "CB_203",
+                               "target":  "BUS_480E1A",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Vertical 480V ESS A feeder from CB-203 bottom terminal to BUS-480E1A."
+                           },
+                           {
+                               "source":  "BUS_480E1A",
+                               "target":  "MCC_ESS_A",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Vertical drop from BUS-480E1A to top terminal of MCC-ESS-A."
+                           },
+                           {
+                               "source":  "MCC_ESS_A",
+                               "target":  "PUMP_SI_101A",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Left solid branch from MCC-ESS-A lower terminals to PUMP-SI-101A motor."
+                           },
+                           {
+                               "source":  "MCC_ESS_A",
+                               "target":  "PUMP_RHR_102A",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Center solid branch from MCC-ESS-A lower terminals to PUMP-RHR-102A motor."
+                           },
+                           {
+                               "source":  "MCC_ESS_A",
+                               "target":  "MOV_1201A",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Right solid branch from MCC-ESS-A lower terminals to MOV-1201A valve symbol."
+                           },
+                           {
+                               "source":  "TR_LC_1B",
+                               "target":  "CB_202",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Short vertical line from TR-LC-1B secondary terminal to CB-202 top terminal."
+                           },
+                           {
+                               "source":  "CB_202",
+                               "target":  "BUS_480B",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Vertical 480V 3PH feeder from CB-202 bottom terminal to BUS-480B."
+                           },
+                           {
+                               "source":  "BUS_480B",
+                               "target":  "MCC_1B",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Vertical drop from BUS-480B to top terminal of MCC-1B."
+                           },
+                           {
+                               "source":  "MCC_1B",
+                               "target":  "PUMP_CCW_103B",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid feeder from MCC-1B bottom terminal through terminal dot to PUMP-CCW-103B motor."
+                           },
+                           {
+                               "source":  "BUS_480B",
+                               "target":  "MCC_1D",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Vertical drop from BUS-480B to top terminal of MCC-1D."
+                           },
+                           {
+                               "source":  "MCC_1D",
+                               "target":  "FAN_CRHV_104B",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid feeder from MCC-1D bottom terminal through terminal dot to FAN-CRHV-104B."
+                           },
+                           {
+                               "source":  "TR_SAF_1B",
+                               "target":  "CB_204",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Short vertical line from TR-SAF-1B secondary terminal to CB-204 top terminal."
+                           },
+                           {
+                               "source":  "CB_204",
+                               "target":  "BUS_480E1B",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid 480V ESS B feeder from CB-204 bottom terminal routes left and down to BUS-480E1B left terminal."
+                           },
+                           {
+                               "source":  "BUS_480E1B",
+                               "target":  "MCC_ESS_B",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Vertical drop from BUS-480E1B to top terminal of MCC-ESS-B."
+                           },
+                           {
+                               "source":  "MCC_ESS_B",
+                               "target":  "PUMP_SI_101B",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Left solid branch from MCC-ESS-B lower terminals to PUMP-SI-101B motor."
+                           },
+                           {
+                               "source":  "MCC_ESS_B",
+                               "target":  "PUMP_RHR_102B",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Center solid branch from MCC-ESS-B lower terminals to PUMP-RHR-102B motor."
+                           },
+                           {
+                               "source":  "MCC_ESS_B",
+                               "target":  "MOV_1201B",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Right solid branch from MCC-ESS-B lower terminals to MOV-1201B valve symbol."
+                           },
+                           {
+                               "source":  "BUS_480E1B",
+                               "target":  "CHGR_125B",
+                               "kind":  "power_feeder",
+                               "confidence":  "medium",
+                               "evidence":  "Long solid cable labeled CABLE 1B-480-9/FDR B-DC descends from BUS-480E1B right side to CHGR-125B input."
+                           },
+                           {
+                               "source":  "CTRL_86A",
+                               "target":  "RELAY_K86A",
+                               "kind":  "control_interlock",
+                               "confidence":  "high",
+                               "evidence":  "Dashed CTRL-86A trunk terminates at square port immediately left of RELAY-K86A."
+                           },
+                           {
+                               "source":  "RELAY_K86A",
+                               "target":  "PANEL_RPS_A",
+                               "kind":  "control_interlock",
+                               "confidence":  "medium",
+                               "evidence":  "Dashed vertical lead from RELAY-K86A lower terminal runs down to side terminal on PANEL-RPS-A."
+                           },
+                           {
+                               "source":  "PANEL_RPS_A",
+                               "target":  "JB_ESF_01",
+                               "kind":  "control_interlock",
+                               "confidence":  "medium",
+                               "evidence":  "Dashed U-shaped path from PANEL-RPS-A top terminal to left terminal of JB-ESF-01."
+                           },
+                           {
+                               "source":  "CTRL_86B",
+                               "target":  "RELAY_K86B",
+                               "kind":  "control_interlock",
+                               "confidence":  "high",
+                               "evidence":  "Dashed CTRL-86B trunk terminates at square port immediately right of RELAY-K86B."
+                           },
+                           {
+                               "source":  "RELAY_K86B",
+                               "target":  "PANEL_RPS_B",
+                               "kind":  "control_interlock",
+                               "confidence":  "medium",
+                               "evidence":  "Dashed vertical lead from RELAY-K86B lower terminal runs down to side terminal on PANEL-RPS-B."
+                           },
+                           {
+                               "source":  "PANEL_RPS_B",
+                               "target":  "JB_ESF_01",
+                               "kind":  "control_interlock",
+                               "confidence":  "medium",
+                               "evidence":  "Dashed U-shaped path from right terminal of JB-ESF-01 down to PANEL-RPS-B top terminal."
+                           },
+                           {
+                               "source":  "CHGR_125A",
+                               "target":  "DC_BUS_125A",
+                               "kind":  "dc_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid DC output line from CHGR-125A right terminal to DC-BUS-125A."
+                           },
+                           {
+                               "source":  "BAT_125A",
+                               "target":  "DC_BUS_125A",
+                               "kind":  "dc_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid line from BAT-125A to lower/left connection on DC-BUS-125A."
+                           },
+                           {
+                               "source":  "DC_BUS_125A",
+                               "target":  "INV_120A",
+                               "kind":  "dc_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid 125VDC line from DC-BUS-125A right terminal to INV-120A input."
+                           },
+                           {
+                               "source":  "INV_120A",
+                               "target":  "UPS_BUS_A",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid VITAL 120VAC line from INV-120A output to UPS-BUS-A left terminal."
+                           },
+                           {
+                               "source":  "UPS_BUS_A",
+                               "target":  "PANEL_RPS_A",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid feeder rises from UPS-BUS-A upper terminal to bottom terminal of PANEL-RPS-A."
+                           },
+                           {
+                               "source":  "UPS_BUS_A",
+                               "target":  "INST_RACK_1",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid line exits UPS-BUS-A right terminal, turns down, and lands on top terminal of INST-RACK-1."
+                           },
+                           {
+                               "source":  "CHGR_125B",
+                               "target":  "DC_BUS_125B",
+                               "kind":  "dc_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid DC output line from CHGR-125B left terminal to DC-BUS-125B right-side connection."
+                           },
+                           {
+                               "source":  "BAT_125B",
+                               "target":  "DC_BUS_125B",
+                               "kind":  "dc_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid line from BAT-125B to lower/right connection on DC-BUS-125B."
+                           },
+                           {
+                               "source":  "DC_BUS_125B",
+                               "target":  "INV_120B",
+                               "kind":  "dc_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid 125VDC line from DC-BUS-125B left terminal to INV-120B input."
+                           },
+                           {
+                               "source":  "INV_120B",
+                               "target":  "UPS_BUS_B",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid VITAL 120VAC line from INV-120B output to UPS-BUS-B right/left-facing terminal."
+                           },
+                           {
+                               "source":  "UPS_BUS_B",
+                               "target":  "PANEL_RPS_B",
+                               "kind":  "power_feeder",
+                               "confidence":  "high",
+                               "evidence":  "Solid feeder rises from UPS-BUS-B upper terminal to bottom terminal of PANEL-RPS-B."
+                           }
+                       ],
+    "uncertain_edges":  [
+                            {
+                                "source":  "BUS_480B",
+                                "target":  "BUS_480E1B",
+                                "status":  "uncertain",
+                                "reason":  "CB-204 feeder route passes very near BUS-480B right terminal, but no terminal dot or closed tie between the two bus bars is visible.",
+                                "evidence":  "Adjacent row-D bus boxes with a routed solid feeder landing on BUS-480E1B left side; BUS-480B right end remains an open terminal circle."
+                            },
+                            {
+                                "source":  "UPS_BUS_A",
+                                "target":  "UPS_BUS_B",
+                                "status":  "uncertain",
+                                "reason":  "Long 120 VAC conductors run horizontally near both UPS buses, but the raw view does not show a terminal-dot tie between A and B bus bars.",
+                                "evidence":  "Separate UPS-BUS-A and UPS-BUS-B bus symbols with train-separated inverter feeds; intervening linework crosses without visible junction dot."
+                            },
+                            {
+                                "source":  "UPS_BUS_B",
+                                "target":  "INST_RACK_1",
+                                "status":  "uncertain",
+                                "reason":  "Instrument rack is centered between train panels, but only the UPS-BUS-A right terminal visibly drops to INST-RACK-1.",
+                                "evidence":  "Solid asserted line from UPS-BUS-A to INST-RACK-1; no equally clear line from UPS-BUS-B to rack terminal."
+                            },
+                            {
+                                "source":  "CTRL_86A",
+                                "target":  "CTRL_86B",
+                                "status":  "uncertain",
+                                "reason":  "Dashed interlock routing appears around the control area perimeter, but A and B trunks have separate labels and no visible terminal-dot junction between them.",
+                                "evidence":  "CTRL-86A label and CTRL-86B label appear on opposite sides with dashed runs terminating at separate 86 relay square ports."
+                            }
+                        ],
+    "rejected_non_edges":  [
+                               {
+                                   "source":  "BUS_1A_4160V",
+                                   "target":  "BUS_1B_4160V",
+                                   "reason":  "open switch / normally open bus tie; direct bus-to-bus continuity is not asserted",
+                                   "evidence":  "CB-TIE 1AB is drawn with open breaker contact and note states bus tie normally open."
+                               },
+                               {
+                                   "source":  "PANEL_RPS_A",
+                                   "target":  "PANEL_RPS_B",
+                                   "reason":  "only connected through JB-ESF-01 dashed terminal paths, not by a direct panel-to-panel conductor",
+                                   "evidence":  "Dashed paths from each panel enter opposite sides of JB-ESF-01; no continuous direct line between panel boxes."
+                               },
+                               {
+                                   "source":  "RELAY_K86A",
+                                   "target":  "RELAY_K86B",
+                                   "reason":  "separate train relay ports; no shared terminal dot or conductor between relay circles",
+                                   "evidence":  "Each 86 relay has its own dashed square-port trunk and separate lower dashed lead to its RPS panel."
+                               },
+                               {
+                                   "source":  "BUS_480A",
+                                   "target":  "BUS_480E1A",
+                                   "reason":  "separate normal and ESS buses; no tie or terminal-dot connection shown",
+                                   "evidence":  "BUS-480A and BUS-480E1A are separate horizontal bus bars fed by different breakers CB-201 and CB-203."
+                               },
+                               {
+                                   "source":  "MCC_ESS_A",
+                                   "target":  "MCC_ESS_B",
+                                   "reason":  "train separation and crossing/background linework only; no direct MCC-to-MCC feeder",
+                                   "evidence":  "ESS MCC boxes are in different train areas; horizontal enclosure/boundary lines pass behind without terminal dots."
+                               }
+                           ],
+    "notes":  [
+                  "Raw schematic was treated as decisive; detected overlay and generated previews were used only as visual zoom aids.",
+                  "Open drawout breaker symbols are represented as component terminals connected to visible feeders; direct continuity through normally open CB-TIE 1AB is rejected.",
+                  "Control/interlock edges use dashed-line evidence and are not included as power feeders.",
+                  "Terminal-dot rule applied: crossings without visible dots are excluded from asserted edges."
+              ]
+}

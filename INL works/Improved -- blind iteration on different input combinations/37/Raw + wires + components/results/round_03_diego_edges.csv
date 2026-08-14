@@ -1,0 +1,56 @@
+source,target,type,confidence,evidence
+GRID-345,CB-101,power,high,solid P01
+CB-101,AUX-TR-1A,power,high,solid P02
+GRID-345,CB-102,power,high,solid P04
+CB-102,AUX-TR-1B,power,high,solid P05
+AUX-TR-1A,BUS-6KA,power,high,vertical P03 filled bus tap
+AUX-TR-1B,BUS-6KB,power,high,vertical P06 filled bus tap
+BUS-6KA,CB-TIE-6K,power,high,solid P07
+CB-TIE-6K,BUS-6KB,power,high,solid P08
+BUS-6KA,CB-103A,power,high,filled tap
+CB-103A,SWGR-1EA,power,high,vertical conductor
+DG-1A,CB-DG1A,power,high,solid P09
+CB-DG1A,SWGR-1EA,power,high,solid P10
+BUS-6KB,CB-103B,power,high,filled tap
+CB-103B,SWGR-1EB,power,high,vertical conductor
+DG-1B,CB-DG1B,power,high,solid P16
+CB-DG1B,SWGR-1EB,power,high,solid P17
+SWGR-1EA,ATS-1A,power,high,vertical P13
+ATS-1A,TR-480A,power,high,vertical P14
+TR-480A,BUS-480A,power,high,vertical P15 filled tap
+ATS-1A,RELAY-K12A,control,high,dashed C01
+SWGR-1EB,ATS-1B,power,high,vertical P20
+ATS-1B,TR-480B,power,high,vertical P21
+TR-480B,BUS-480B,power,high,vertical P22 filled tap
+ATS-1B,RELAY-K12B,control,high,dashed C04
+RELAY-K12B,PLC-ESF,control,medium,dashed C05 routed to PLC-ESF/ESF logic area
+BUS-480A,MCC-1A,power,high,vertical P23 filled tap
+BUS-480A,CHGR-125A,power,high,vertical P37 filled tap
+MCC-1A,PUMP-SI-1A,power,high,vertical P24
+MCC-1A,PUMP-RHR-1A,power,high,vertical P25
+MCC-1A,PUMP-CCW-1A,power,high,vertical P26
+MCC-1A,FAN-RB-1A,power,high,vertical P27
+MCC-1A,MOV-HPCI-1A,power,high,vertical P28
+MCC-1A,VALVE-SW-1A,power,high,vertical P29
+CHGR-125A,BUS-125DCA,dc-power,high,vertical P38
+BAT-125A,BUS-125DCA,dc-power,high,vertical P39
+BUS-125DCA,INV-120A,dc-power,high,filled tap to inverter
+INV-120A,BUS-120A,ac-power,high,vertical P41
+BUS-120A,PAN-RPS-A,ac-power,high,solid P42 tap
+BUS-120A,INST-RACK-A,ac-power,high,solid P43 tap
+PAN-RPS-A,INST-RACK-A,control,medium,dashed C03 functional route
+BUS-480B,MCC-1B,power,high,vertical P30 filled tap
+BUS-480B,CHGR-125B,power,high,vertical P44 filled tap
+MCC-1B,PUMP-SI-1B,power,high,vertical P31
+MCC-1B,PUMP-RHR-1B,power,high,vertical P32
+MCC-1B,PUMP-CCW-1B,power,high,vertical P33
+MCC-1B,FAN-RB-1B,power,high,vertical P34
+MCC-1B,MOV-HPCI-1B,power,high,vertical P35
+MCC-1B,VALVE-SW-1B,power,high,vertical P36
+CHGR-125B,BUS-125DCB,dc-power,high,vertical P45
+BAT-125B,BUS-125DCB,dc-power,high,vertical P46
+BUS-125DCB,INV-120B,dc-power,high,filled tap to inverter
+INV-120B,BUS-120B,ac-power,high,vertical P48
+BUS-120B,PAN-RPS-B,ac-power,high,solid P49 tap
+BUS-120B,INST-RACK-B,ac-power,high,solid P50 tap
+PLC-ESF,PAN-RPS-B,control,medium,dashed C06 functional route

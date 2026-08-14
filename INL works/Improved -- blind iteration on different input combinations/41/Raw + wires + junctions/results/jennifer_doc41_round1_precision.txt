@@ -1,0 +1,139 @@
+1) NODE_LIST_CSV
+node
+BAT-125A
+BAT-125B
+BUS-1A-4.16KV
+BUS-1B-4.16KV
+BUS-480A
+BUS-480B
+BUS-480E1A
+BUS-480E1B
+CB-101
+CB-102
+CB-105
+CB-106
+CB-201
+CB-202
+CB-203
+CB-204
+CB-TIE-1AB
+CHGR-125A
+CHGR-125B
+DC-BUS-125A
+DC-BUS-125B
+EDG-1A
+EDG-1B
+FAN-CRHV-104A
+FAN-CRHV-104B
+GND-1E
+INST-RACK-1
+INV-120A
+INV-120B
+JB-ESF-01
+MCC-1A
+MCC-1B
+MCC-1C
+MCC-1D
+MCC-ESS-A
+MCC-ESS-B
+MOV-1201A
+MOV-1201B
+OFFSITE-A
+OFFSITE-B
+PANEL-RPS-A
+PANEL-RPS-B
+PUMP-CCW-103A
+PUMP-CCW-103B
+PUMP-RHR-102A
+PUMP-RHR-102B
+PUMP-SI-101A
+PUMP-SI-101B
+RELAY-K86A
+RELAY-K86B
+TR-1A
+TR-1B
+TR-LC-1A
+TR-LC-1B
+TR-SAF-1A
+TR-SAF-1B
+UPS-BUS-A
+UPS-BUS-B
+
+2) EDGE_LIST_CSV
+source,target,confidence,line_type,evidence
+OFFSITE-A,TR-1A,0.94,solid,raw_top_full shows OFFSITE A source terminal wired to TR-1A primary
+TR-1A,CB-101,0.96,solid,raw_top_full shows TR-1A secondary wired through the 4160V FEED A path to CB-101 left port
+TR-1A,GND-1E,0.88,grounding,raw_top_full and raw_left_train show TR-1A lower grounding conductor landing on GND-1E
+CB-101,BUS-1A-4.16KV,0.96,solid,raw_top_full shows CB-101 right port landing on BUS-1A-4.16KV
+EDG-1A,CB-105,0.96,solid,raw_left_train shows EDG-1A generator feeder entering CB-105
+CB-105,BUS-1A-4.16KV,0.94,solid,raw_left_train shows CB-105 outgoing feeder rising to the EDG A incoming tap on BUS-1A-4.16KV
+BUS-1A-4.16KV,CB-TIE-1AB,0.93,solid,raw_top_full shows BUS-1A-4.16KV right end entering CB-TIE-1AB
+CB-TIE-1AB,BUS-1B-4.16KV,0.93,solid,raw_top_full shows CB-TIE-1AB right port continuing to BUS-1B-4.16KV
+OFFSITE-B,TR-1B,0.94,solid,raw_top_full shows OFFSITE B source terminal wired to TR-1B primary
+TR-1B,CB-102,0.96,solid,raw_top_full shows TR-1B secondary wired to CB-102 right side
+CB-102,BUS-1B-4.16KV,0.96,solid,raw_top_full shows CB-102 left port landing on BUS-1B-4.16KV
+EDG-1B,CB-106,0.96,solid,raw_right_train shows EDG-1B generator feeder entering CB-106
+CB-106,BUS-1B-4.16KV,0.94,solid,raw_right_train shows CB-106 outgoing feeder tied into BUS-1B-4.16KV by the EDG B incoming riser
+BUS-1A-4.16KV,TR-LC-1A,0.95,solid,raw_left_train shows BUS-1A-4.16KV vertical tap feeding TR-LC-1A
+TR-LC-1A,CB-201,0.95,solid,raw_left_train shows TR-LC-1A secondary conductor entering CB-201
+CB-201,BUS-480A,0.96,solid,raw_left_train shows CB-201 bottom conductor landing on BUS-480A
+BUS-1A-4.16KV,TR-SAF-1A,0.94,solid,raw_left_train shows BUS-1A-4.16KV vertical tap feeding TR-SAF-1A
+TR-SAF-1A,CB-203,0.95,solid,raw_left_train shows TR-SAF-1A secondary conductor entering CB-203
+CB-203,BUS-480E1A,0.96,solid,raw_left_train shows CB-203 bottom conductor landing on BUS-480E1A
+BUS-1B-4.16KV,TR-LC-1B,0.95,solid,raw_top_full shows BUS-1B-4.16KV vertical tap feeding TR-LC-1B
+TR-LC-1B,CB-202,0.95,solid,raw_top_full and raw_central_controls show TR-LC-1B secondary conductor entering CB-202
+CB-202,BUS-480B,0.96,solid,raw_central_controls shows CB-202 bottom conductor landing on BUS-480B
+BUS-1B-4.16KV,TR-SAF-1B,0.94,solid,raw_right_train shows BUS-1B-4.16KV vertical tap feeding TR-SAF-1B
+TR-SAF-1B,CB-204,0.95,solid,raw_right_train shows TR-SAF-1B secondary conductor entering CB-204
+CB-204,BUS-480E1B,0.96,solid,raw_right_train shows CB-204 bottom conductor landing on BUS-480E1B
+BUS-480A,MCC-1A,0.96,solid,raw_left_train shows BUS-480A tap dropping directly to MCC-1A
+BUS-480A,MCC-1C,0.96,solid,raw_left_train shows BUS-480A tap dropping directly to MCC-1C
+BUS-480E1A,MCC-ESS-A,0.96,solid,raw_left_train shows BUS-480E1A tap dropping directly to MCC-ESS-A
+BUS-480B,MCC-1B,0.96,solid,raw_central_controls shows BUS-480B tap dropping directly to MCC-1B
+BUS-480B,MCC-1D,0.96,solid,raw_central_controls shows BUS-480B tap dropping directly to MCC-1D
+BUS-480E1B,MCC-ESS-B,0.96,solid,raw_right_train shows BUS-480E1B tap dropping directly to MCC-ESS-B
+MCC-1A,PUMP-CCW-103A,0.96,solid,raw_left_train shows MCC-1A feeder dropping to PUMP-CCW-103A
+MCC-1C,FAN-CRHV-104A,0.96,solid,raw_left_train shows MCC-1C feeder dropping to FAN-CRHV-104A
+MCC-ESS-A,PUMP-SI-101A,0.96,solid,raw_left_train shows MCC-ESS-A left feeder dropping to PUMP-SI-101A
+MCC-ESS-A,PUMP-RHR-102A,0.96,solid,raw_left_train shows MCC-ESS-A center feeder dropping to PUMP-RHR-102A
+MCC-ESS-A,MOV-1201A,0.95,solid,raw_left_train shows MCC-ESS-A right feeder routed to MOV-1201A
+MCC-1B,PUMP-CCW-103B,0.96,solid,raw_central_controls shows MCC-1B feeder dropping to PUMP-CCW-103B
+MCC-1D,FAN-CRHV-104B,0.96,solid,raw_central_controls shows MCC-1D feeder dropping to FAN-CRHV-104B
+MCC-ESS-B,PUMP-SI-101B,0.96,solid,raw_right_train shows MCC-ESS-B left feeder dropping to PUMP-SI-101B
+MCC-ESS-B,PUMP-RHR-102B,0.96,solid,raw_right_train shows MCC-ESS-B center feeder dropping to PUMP-RHR-102B
+MCC-ESS-B,MOV-1201B,0.95,solid,raw_right_train shows MCC-ESS-B right feeder routed to MOV-1201B
+BUS-480A,CHGR-125A,0.86,solid,raw_left_train and raw_lower_left_detail show long CABLE 1A-480-7 route from BUS-480A side into CHGR-125A
+CHGR-125A,DC-BUS-125A,0.96,solid,raw_lower_left_detail shows CHGR-125A output conductor landing on DC-BUS-125A
+BAT-125A,DC-BUS-125A,0.96,solid,raw_lower_left_detail shows BAT-125A lead landing on DC-BUS-125A
+DC-BUS-125A,INV-120A,0.96,solid,raw_lower_left_detail shows DC-BUS-125A right port wired to INV-120A
+INV-120A,UPS-BUS-A,0.96,solid,raw_lower_left_detail shows INV-120A right port wired to UPS-BUS-A
+UPS-BUS-A,PANEL-RPS-A,0.90,solid,raw_lower_left_detail and raw_central_controls show solid vital power conductor from UPS-BUS-A to PANEL-RPS-A bottom port
+UPS-BUS-A,INST-RACK-1,0.92,solid,raw_lower_left_detail shows UPS-BUS-A right-side feeder turning down into INST-RACK-1
+BUS-480E1B,CHGR-125B,0.82,solid,raw_right_train and raw_lower_right_detail show long CABLE 1B-480-9 route from BUS-480E1B side into CHGR-125B
+CHGR-125B,DC-BUS-125B,0.96,solid,raw_lower_right_detail shows CHGR-125B output conductor landing on DC-BUS-125B
+BAT-125B,DC-BUS-125B,0.96,solid,raw_lower_right_detail shows BAT-125B lead landing on DC-BUS-125B
+DC-BUS-125B,INV-120B,0.96,solid,raw_lower_right_detail shows DC-BUS-125B left port wired to INV-120B
+INV-120B,UPS-BUS-B,0.96,solid,raw_lower_right_detail shows INV-120B left port wired to UPS-BUS-B
+UPS-BUS-B,PANEL-RPS-B,0.90,solid,raw_lower_right_detail and raw_central_controls show solid vital power conductor from UPS-BUS-B to PANEL-RPS-B bottom port
+CB-105,RELAY-K86A,0.72,dashed,raw_top_full and raw_left_train show CTRL-86A dashed interlock from CB-105 area through tray to the K86A relay terminal area
+RELAY-K86A,PANEL-RPS-A,0.88,dashed,raw_central_controls shows dashed vertical control wiring from RELAY-K86A to PANEL-RPS-A side port
+PANEL-RPS-A,JB-ESF-01,0.82,dashed,raw_central_controls shows dashed route from PANEL-RPS-A upper terminal into left side of JB-ESF-01
+JB-ESF-01,PANEL-RPS-B,0.82,dashed,raw_central_controls shows dashed route from right side of JB-ESF-01 into PANEL-RPS-B upper terminal
+CB-106,RELAY-K86B,0.72,dashed,raw_top_full and raw_right_train show CTRL-86B dashed interlock from CB-106 area through tray to the K86B relay terminal area
+RELAY-K86B,PANEL-RPS-B,0.88,dashed,raw_central_controls shows dashed vertical control wiring from RELAY-K86B to PANEL-RPS-B side port
+
+3) COUNTS
+unique node count: 58
+edge row count: 60
+unique undirected pair count: 60
+
+4) REVIEW_NOTES
+- No Diego round 1 nodes or visually supported physical edges were removed.
+- Kept CB-TIE-1AB as a physical solid bus tie between BUS-1A-4.16KV and BUS-1B-4.16KV despite the normally open note.
+- Kept GND-1E only as the visible grounding endpoint connected to TR-1A.
+- Kept BUS-480A to CHGR-125A and BUS-480E1B to CHGR-125B as lower-confidence long feeder edges because the visible cable routes originate at those bus areas and terminate at the charger ports.
+- Kept CB-105 to RELAY-K86A and CB-106 to RELAY-K86B as lower-confidence dashed interlock edges because CTRL-86A and CTRL-86B route through boundary tray to the K86 relay terminal areas.
+- Kept PANEL-RPS-A to JB-ESF-01 and JB-ESF-01 to PANEL-RPS-B because the dashed routes visibly terminate at panel and JB terminals.
+- Did not add UPS-BUS-A to UPS-BUS-B or PANEL-RPS-A to PANEL-RPS-B because the visible lines do not show clear endpoint dots forming those direct cross-links.
+- Did not add relay-to-JB edges because the visible dashed relay drops terminate at their RPS panels rather than directly at JB-ESF-01.
+- FDR cable TB CTRL labels and terminal dots were treated as evidence labels only and not promoted to nodes.

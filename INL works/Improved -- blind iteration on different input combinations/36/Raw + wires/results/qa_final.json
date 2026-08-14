@@ -1,0 +1,62 @@
+{
+  "node_count": 63,
+  "hard_edge_count": 68,
+  "missing_edge_endpoints": [],
+  "symmetric": true,
+  "diagonal_zero": true,
+  "isolated_hard_only_nodes": [],
+  "uncertain_edge_count": 4,
+  "rounds": {
+    "round_01_diego_high_recall": {
+      "node_count": 65,
+      "hard_edge_count": 69,
+      "missing_edge_endpoints": [],
+      "symmetric": true,
+      "diagonal_zero": true,
+      "isolated_hard_only_nodes": [
+        "RPS LOCKOUT"
+      ],
+      "uncertain_edge_count": 6,
+      "note": "Diego R1 high recall: accepted RPS TRIP as a tentative logical node and kept RPS LOCKOUT split uncertain."
+    },
+    "round_01_jennifer_precision": {
+      "node_count": 63,
+      "hard_edge_count": 68,
+      "missing_edge_endpoints": [],
+      "symmetric": true,
+      "diagonal_zero": true,
+      "isolated_hard_only_nodes": [],
+      "uncertain_edge_count": 4,
+      "note": "Jennifer R1 precision: removed annotation-only RPS labels as nodes and excluded unsupported fan-control taps."
+    },
+    "round_02_diego_saturation": {
+      "node_count": 63,
+      "hard_edge_count": 68,
+      "missing_edge_endpoints": [],
+      "symmetric": true,
+      "diagonal_zero": true,
+      "isolated_hard_only_nodes": [],
+      "uncertain_edge_count": 4,
+      "note": "Diego R2 saturation: agreed final graph should keep RPS labels as path annotations only."
+    },
+    "round_02_jennifer_final": {
+      "node_count": 63,
+      "hard_edge_count": 68,
+      "missing_edge_endpoints": [],
+      "symmetric": true,
+      "diagonal_zero": true,
+      "isolated_hard_only_nodes": [],
+      "uncertain_edge_count": 4,
+      "note": "Jennifer final: confirmed no extra hard edges beyond the refined Raw + wires graph."
+    }
+  },
+  "raw_resource": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw + wires\\raw -- synthetic_npp_electrical_schematic_v2.png",
+  "overlay_resource": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw + wires\\wires_mask_overlay.png",
+  "mask_resource": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw + wires\\wires_mask.png",
+  "notes": [
+    "Final matrix includes visible solid power connections and clearly terminated dashed control/interlock paths only.",
+    "RPS TRIP and RPS LOCKOUT are treated as text annotations on dashed paths, not final component nodes.",
+    "Fan ESF-control taps are not hardened because no clean dashed tap reaches FAN-CONTAIN-A/B.",
+    "Only Raw + wires resources were used."
+  ]
+}

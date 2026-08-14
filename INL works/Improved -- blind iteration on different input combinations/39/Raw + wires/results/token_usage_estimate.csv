@@ -1,0 +1,6 @@
+document,iteration,call,actor,model,text_input_tokens,cached_input_tokens,image_input_tokens_low,image_input_tokens_expected,image_input_tokens_high,output_tokens_low,output_tokens_expected,output_tokens_high,reasoning_tokens,usage_object_available,notes,total_low,total_expected,total_high,input_total_expected
+39,1,main_agent_visual_orchestration,Main agent,gpt-5-class Codex runtime,24000,0,1530,19890,24863,2800,4500,8000,not available,no,Aggregate estimate for this Codex turn; exact main-agent usage is not exposed.,28330,48390,61663,43890
+39,1,round1_diego_high_recall,Diego,gpt-5.5,650,0,765,9605,12007,8500,11500,15000,not available,no,Subagent final response contained full high-recall matrix.,9915,21755,27787,10255
+39,1,round1_jennifer_precision,Jennifer,gpt-5.5,1750,0,765,9605,12007,3500,5800,8500,not available,no,Subagent final response included sparse corrected graph and partial matrix; edge list is authoritative.,6015,17155,22607,11355
+39,1,round2_diego_saturation,Diego,gpt-5.5,1700,0,595,8075,10094,180,300,600,not available,no,Focused saturation check; Diego agreed with Jennifer R1.,2475,10075,12734,9775
+39,1,round2_jennifer_final,Jennifer,gpt-5.5,1550,0,680,9180,11475,250,450,900,not available,no,Final precision confirmation; exact output usage unavailable until API usage objects are exposed.,2480,11180,14235,10730

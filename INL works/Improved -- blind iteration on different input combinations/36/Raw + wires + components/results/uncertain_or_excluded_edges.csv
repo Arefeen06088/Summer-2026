@@ -1,0 +1,38 @@
+source,target,status,reason
+SU-A,,excluded_node,"tap/status/routing label or folded actuator, not a standalone final node"
+EDG-A,,excluded_node,"tap/status/routing label or folded actuator, not a standalone final node"
+SU-B,,excluded_node,"tap/status/routing label or folded actuator, not a standalone final node"
+EDG-B,,excluded_node,"tap/status/routing label or folded actuator, not a standalone final node"
+LC-A1,,excluded_node,"tap/status/routing label or folded actuator, not a standalone final node"
+LC-A2,,excluded_node,"tap/status/routing label or folded actuator, not a standalone final node"
+LC-B1,,excluded_node,"tap/status/routing label or folded actuator, not a standalone final node"
+LC-B2,,excluded_node,"tap/status/routing label or folded actuator, not a standalone final node"
+RPS-LOCKOUT,,excluded_node,"tap/status/routing label or folded actuator, not a standalone final node"
+RPS-TRIP,,excluded_node,"tap/status/routing label or folded actuator, not a standalone final node"
+MOV-A,,excluded_node,"tap/status/routing label or folded actuator, not a standalone final node"
+MOV-B,,excluded_node,"tap/status/routing label or folded actuator, not a standalone final node"
+ESF-A-CONTROL-TRUNK,,excluded_node,"tap/status/routing label or folded actuator, not a standalone final node"
+ESF-B-CONTROL-TRUNK,,excluded_node,"tap/status/routing label or folded actuator, not a standalone final node"
+CB-4K-TIE,RPS-LOCKOUT,excluded_edge,"RPS LOCKOUT is a status/annotation label, not a graph node."
+RPS-LOCKOUT,PNL-RPS-1,excluded_edge,Represented as CB-4K-TIE to PNL-RPS-1 control edge without a separate status node.
+CB-13-TIE,RPS-TRIP,excluded_edge,"RPS TRIP is a control annotation on dashed routing, not a graph node."
+RPS-TRIP,PNL-RPS-1,excluded_edge,Endpoint is ambiguous; kept as uncertain CB-13-TIE to PNL-RPS-1 instead of final edge.
+ESF-A-CONTROL-TRUNK,ESF-B-CONTROL-TRUNK,excluded_edge,Lower dashed route is not labeled as a component node and partly follows routing/boundary graphics.
+ESF-A-CONTROL-TRUNK,PUMP-AFW-A,excluded_edge,Dashed route may imply control but is too ambiguous for the binary matrix.
+ESF-A-CONTROL-TRUNK,VALVE-MOV-A,excluded_edge,Dashed route may imply control but is too ambiguous for the binary matrix.
+ESF-A-CONTROL-TRUNK,FAN-CONTAIN-A,excluded_edge,Dashed route is too weak/ambiguous near fan A.
+ESF-B-CONTROL-TRUNK,PUMP-AFW-B,excluded_edge,Dashed route may imply control but is too ambiguous for the binary matrix.
+ESF-B-CONTROL-TRUNK,VALVE-MOV-B,excluded_edge,Dashed route may imply control but is too ambiguous for the binary matrix.
+ESF-B-CONTROL-TRUNK,FAN-CONTAIN-B,excluded_edge,Dashed route is too weak/ambiguous near fan B.
+CB-13-TIE,PNL-RPS-1,uncertain_excluded,dashed RPS trip route approaches RPS area but endpoint is not clean enough for binary connectivity
+PNL-ESF-A,PUMP-AFW-A,uncertain_excluded,lower dashed ESF route may imply control but also behaves like routing/boundary graphic
+PNL-ESF-A,VALVE-MOV-A,uncertain_excluded,lower dashed ESF route may imply control but endpoint is not explicit
+PNL-ESF-A,FAN-CONTAIN-A,excluded,route proximity only; no clear supported endpoint
+PNL-ESF-B,PUMP-AFW-B,uncertain_excluded,lower dashed ESF route may imply control but also behaves like routing/boundary graphic
+PNL-ESF-B,VALVE-MOV-B,uncertain_excluded,lower dashed ESF route may imply control but endpoint is not explicit
+PNL-ESF-B,FAN-CONTAIN-B,excluded,route proximity only; no clear supported endpoint
+PNL-ESF-A,PNL-ESF-B,excluded,no explicit A/B panel interconnection
+BUS-DC125-A,BUS-DC125-B,excluded,no visible DC A/B cross-tie
+RECT-125A,RECT-125B,excluded,no visible rectifier cross-tie
+INV-120A,INV-120B,excluded,no visible inverter cross-tie
+BAT-125A,BAT-125B,excluded,no visible battery cross-tie

@@ -1,0 +1,7 @@
+stage,agent,role,artifact,node_count,edge_count,token_accounting,decision
+prep,Codex,orchestrator,codes/make_crops.py and codes/crops,,,usage object not exposed; see token_usage_estimates_by_call.csv,raw-derived crops generated for visual inspection
+round_01,Diego,high-recall extractor,round_01_diego_high_recall_matrix.csv,60,74,actual usage unavailable; low/expected/high estimates recorded,included route-node and uncertain dashed-control candidates
+round_02,Jennifer,precision reviewer/refiner,round_02_jennifer_precision_matrix.csv,55,60,actual usage unavailable; low/expected/high estimates recorded,removed invented CONTROL-* nodes and unsupported dashed extras
+round_03,Diego,saturation extractor,round_03_diego_saturation_matrix.csv,55,60,actual usage unavailable; low/expected/high estimates recorded,AGREED with Jennifer precision graph
+round_04,Jennifer,final precision confirmation,round_04_jennifer_agreement_matrix.csv,55,60,actual usage unavailable; low/expected/high estimates recorded,AGREED final saturated matrix
+final,Codex,orchestrator,final_connectivity_matrix.csv,55,60,see token_usage_summary_by_document.csv,validated symmetric zero-diagonal component matrix

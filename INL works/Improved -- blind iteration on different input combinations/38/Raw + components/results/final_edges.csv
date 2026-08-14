@@ -1,0 +1,65 @@
+source,target,kind,confidence,evidence,a,b
+EXT_UNIT_AUX_BUS_CONT,GEN_U2A,power,medium,visible conductor from the upper-left continuation box into GEN-U2A area,EXT_UNIT_AUX_BUS_CONT,GEN_U2A
+GEN_U2A,CB_101,power,high,solid horizontal conductor from GEN-U2A to CB-101,GEN_U2A,CB_101
+CB_101,TR_UAT_2A,power,high,solid horizontal conductor from CB-101 to TR-UAT-2A,CB_101,TR_UAT_2A
+TR_UAT_2A,BUS_4160A,power,high,transformer secondary tap lands on BUS-4160A with a visible dot,TR_UAT_2A,BUS_4160A
+DG_2A,CB_103,power,high,solid horizontal conductor from DG-2A to CB-103,DG_2A,CB_103
+CB_103,BUS_4160A,power,high,CB-103 output ties into the A-side 4.16 kV riser connected to BUS-4160A,CB_103,BUS_4160A
+BUS_4160A,CB_201A,power,high,vertical tap from BUS-4160A down into CB-201A,BUS_4160A,CB_201A
+CB_201A,TR_201A,power,high,vertical conductor from CB-201A to TR-201A,CB_201A,TR_201A
+TR_201A,CB_301A,power,high,vertical conductor from TR-201A to CB-301A,TR_201A,CB_301A
+CB_301A,BUS_480A,power,high,vertical feeder from CB-301A lands on BUS-480A with a dot,CB_301A,BUS_480A
+BUS_4160A,CB_105,power,medium,left bus-tie terminal from BUS-4160A enters CB-105; N.O./open status noted separately,BUS_4160A,CB_105
+CB_105,BUS_4160B,power,medium,right bus-tie terminal from CB-105 enters BUS-4160B side; N.O./open status noted separately,CB_105,BUS_4160B
+TR_SUT_2B,CB_102,power,high,solid horizontal conductor from TR-SUT-2B to CB-102,TR_SUT_2B,CB_102
+CB_102,BUS_4160B,power,high,CB-102 vertical tap lands on BUS-4160B with a dot,CB_102,BUS_4160B
+BUS_4160B,CB_104,power,high,vertical tap from BUS-4160B feeds CB-104,BUS_4160B,CB_104
+CB_104,DG_2B,power,high,solid horizontal conductor from CB-104 to DG-2B,CB_104,DG_2B
+BUS_4160B,CB_201B,power,high,vertical tap from BUS-4160B down into CB-201B,BUS_4160B,CB_201B
+CB_201B,TR_201B,power,high,vertical conductor from CB-201B to TR-201B,CB_201B,TR_201B
+TR_201B,CB_301B,power,high,vertical conductor from TR-201B to CB-301B,TR_201B,CB_301B
+CB_301B,BUS_480B,power,high,vertical feeder from CB-301B lands on BUS-480B with a dot,CB_301B,BUS_480B
+BUS_480A,CB_401A,power,high,vertical tap from BUS-480A to CB-401A,BUS_480A,CB_401A
+CB_401A,MCC_2A1,power,high,vertical conductor from CB-401A enters MCC-2A1,CB_401A,MCC_2A1
+MCC_2A1,DISC_2A1_01_2A_F1,power,high,bucket 01 local disconnect hangs from the MCC-2A1 internal bus,MCC_2A1,DISC_2A1_01_2A_F1
+DISC_2A1_01_2A_F1,PUMP_RHR2A,power,high,feeder 2A-F1 descends from bucket 01 to PUMP-RHR2A,DISC_2A1_01_2A_F1,PUMP_RHR2A
+MCC_2A1,DISC_2A1_02_2A_F2,power,high,bucket 02 local disconnect hangs from the MCC-2A1 internal bus,MCC_2A1,DISC_2A1_02_2A_F2
+DISC_2A1_02_2A_F2,PUMP_CCW2A,power,high,feeder 2A-F2 descends from bucket 02 to PUMP-CCW2A,DISC_2A1_02_2A_F2,PUMP_CCW2A
+MCC_2A1,DISC_2A1_03_2A_F3,power,high,bucket 03 local disconnect hangs from the MCC-2A1 internal bus,MCC_2A1,DISC_2A1_03_2A_F3
+DISC_2A1_03_2A_F3,PUMP_SW2A,power,high,feeder 2A-F3 descends from bucket 03 to PUMP-SW2A,DISC_2A1_03_2A_F3,PUMP_SW2A
+MCC_2A1,DISC_2A1_04_2A_F4,power,high,bucket 04 local disconnect hangs from the MCC-2A1 internal bus,MCC_2A1,DISC_2A1_04_2A_F4
+DISC_2A1_04_2A_F4,FAN_CR2A,power,high,feeder 2A-F4 descends from bucket 04 to FAN-CR2A,DISC_2A1_04_2A_F4,FAN_CR2A
+MCC_2A1,DISC_2A1_05_2A_F5,power,high,bucket 05 local disconnect hangs from the MCC-2A1 internal bus,MCC_2A1,DISC_2A1_05_2A_F5
+DISC_2A1_05_2A_F5,MOV_RHR141A,power,high,feeder 2A-F5 descends from bucket 05 to MOV-RHR141A,DISC_2A1_05_2A_F5,MOV_RHR141A
+MCC_2A1,DISC_2A1_06_2A_F6,power,high,bucket 06 local disconnect hangs from the MCC-2A1 internal bus,MCC_2A1,DISC_2A1_06_2A_F6
+DISC_2A1_06_2A_F6,MOV_SI2221A,power,high,feeder 2A-F6 descends from bucket 06 to MOV-SI2221A,DISC_2A1_06_2A_F6,MOV_SI2221A
+BUS_480A,TR_CPT_A,power,high,left auxiliary 480 V tap drops from BUS-480A to TR-CPT-A primary,BUS_480A,TR_CPT_A
+BUS_480A,CHGR_2A,power,high,adjacent A-side 480 V tap branches into CHGR-2A input,BUS_480A,CHGR_2A
+CHGR_2A,BUS_125DCA,dc_power,high,CHGR-2A output lands on 125 VDC TRAIN A with a dot,CHGR_2A,BUS_125DCA
+BAT_125A,BUS_125DCA,dc_power,high,BAT-125A battery has vertical connection to 125 VDC TRAIN A,BAT_125A,BUS_125DCA
+BUS_125DCA,INV_2A,dc_power,high,vertical tap from 125 VDC TRAIN A into INV-2A DC side,BUS_125DCA,INV_2A
+INV_2A,BUS_120ACA,power,high,INV-2A AC side aligns with and connects to BUS-120AC-A,INV_2A,BUS_120ACA
+BUS_120ACA,RPS_PNL_A,control,high,solid vertical tap with dot from BUS-120AC-A into RPS-PNL-A,BUS_120ACA,RPS_PNL_A
+BUS_480B,CB_401B,power,high,vertical tap from BUS-480B to CB-401B,BUS_480B,CB_401B
+CB_401B,MCC_2B1,power,high,vertical conductor from CB-401B enters MCC-2B1,CB_401B,MCC_2B1
+MCC_2B1,DISC_2B1_01_2B_F1,power,high,bucket 01 local disconnect hangs from the MCC-2B1 internal bus,MCC_2B1,DISC_2B1_01_2B_F1
+DISC_2B1_01_2B_F1,PUMP_RHR2B,power,high,feeder 2B-F1 descends from bucket 01 to PUMP-RHR2B,DISC_2B1_01_2B_F1,PUMP_RHR2B
+MCC_2B1,DISC_2B1_02_2B_F2,power,high,bucket 02 local disconnect hangs from the MCC-2B1 internal bus,MCC_2B1,DISC_2B1_02_2B_F2
+DISC_2B1_02_2B_F2,PUMP_CCW2B,power,high,feeder 2B-F2 descends from bucket 02 to PUMP-CCW2B,DISC_2B1_02_2B_F2,PUMP_CCW2B
+MCC_2B1,DISC_2B1_03_2B_F3,power,high,bucket 03 local disconnect hangs from the MCC-2B1 internal bus,MCC_2B1,DISC_2B1_03_2B_F3
+DISC_2B1_03_2B_F3,PUMP_SW2B,power,high,feeder 2B-F3 descends from bucket 03 to PUMP-SW2B,DISC_2B1_03_2B_F3,PUMP_SW2B
+MCC_2B1,DISC_2B1_04_2B_F4,power,high,bucket 04 local disconnect hangs from the MCC-2B1 internal bus,MCC_2B1,DISC_2B1_04_2B_F4
+DISC_2B1_04_2B_F4,FAN_CR2B,power,high,feeder 2B-F4 descends from bucket 04 to FAN-CR2B,DISC_2B1_04_2B_F4,FAN_CR2B
+MCC_2B1,DISC_2B1_05_2B_F5,power,high,bucket 05 local disconnect hangs from the MCC-2B1 internal bus,MCC_2B1,DISC_2B1_05_2B_F5
+DISC_2B1_05_2B_F5,MOV_RHR142B,power,high,feeder 2B-F5 descends from bucket 05 to MOV-RHR142B,DISC_2B1_05_2B_F5,MOV_RHR142B
+MCC_2B1,DISC_2B1_06_2B_F6,power,high,bucket 06 local disconnect hangs from the MCC-2B1 internal bus,MCC_2B1,DISC_2B1_06_2B_F6
+DISC_2B1_06_2B_F6,MOV_SI2222B,power,high,feeder 2B-F6 descends from bucket 06 to MOV-SI2222B,DISC_2B1_06_2B_F6,MOV_SI2222B
+BUS_480B,TR_CPT_B,power,high,B-side auxiliary 480 V tap drops from BUS-480B to TR-CPT-B primary,BUS_480B,TR_CPT_B
+BUS_480B,CHGR_2B,power,high,B-side 480 V auxiliary tap branches into CHGR-2B input,BUS_480B,CHGR_2B
+TR_CPT_B,BUS_120ACB,power,high,TR-CPT-B secondary visibly lands on BUS-120AC-B at the right end with a dot,TR_CPT_B,BUS_120ACB
+CHGR_2B,BUS_125DCB,dc_power,high,CHGR-2B output lands on 125 VDC TRAIN B with a dot,CHGR_2B,BUS_125DCB
+BAT_125B,BUS_125DCB,dc_power,high,BAT-125B battery has vertical connection to 125 VDC TRAIN B,BAT_125B,BUS_125DCB
+BUS_125DCB,INV_2B,dc_power,high,vertical tap from 125 VDC TRAIN B into INV-2B DC side,BUS_125DCB,INV_2B
+INV_2B,BUS_120ACB,power,high,INV-2B AC side aligns with and connects to BUS-120AC-B,INV_2B,BUS_120ACB
+BUS_120ACB,RPS_PNL_B,control,high,solid vertical tap with dot from BUS-120AC-B into RPS-PNL-B,BUS_120ACB,RPS_PNL_B
+BUS_120ACB,RELAY_27B,control,high,solid tap from the right end of BUS-120AC-B into RELAY-27B UV BUS B,BUS_120ACB,RELAY_27B

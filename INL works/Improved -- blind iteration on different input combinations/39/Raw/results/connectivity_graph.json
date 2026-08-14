@@ -1,0 +1,635 @@
+{
+  "document": "39",
+  "iteration": "1",
+  "nodes": [
+    {
+      "id": "OFFSITE 230 kV A",
+      "index": 1
+    },
+    {
+      "id": "DS-230A",
+      "index": 2
+    },
+    {
+      "id": "TR-1A 230/4.16",
+      "index": 3
+    },
+    {
+      "id": "CB-1A",
+      "index": 4
+    },
+    {
+      "id": "EDG-1A",
+      "index": 5
+    },
+    {
+      "id": "CB-DG-A",
+      "index": 6
+    },
+    {
+      "id": "BUS-4160-A DIV I 4.16 kV ESF",
+      "index": 7
+    },
+    {
+      "id": "RELAY-UV-A 27/59",
+      "index": 8
+    },
+    {
+      "id": "CB-TIE-AB",
+      "index": 9
+    },
+    {
+      "id": "BUS-4160-B DIV II 4.16 kV ESF",
+      "index": 10
+    },
+    {
+      "id": "RELAY-UV-B 27/59",
+      "index": 11
+    },
+    {
+      "id": "OFFSITE 230 kV B",
+      "index": 12
+    },
+    {
+      "id": "DS-230B",
+      "index": 13
+    },
+    {
+      "id": "TR-1B 230/4.16",
+      "index": 14
+    },
+    {
+      "id": "CB-1B",
+      "index": 15
+    },
+    {
+      "id": "EDG-1B",
+      "index": 16
+    },
+    {
+      "id": "CB-DG-B",
+      "index": 17
+    },
+    {
+      "id": "TR-480-A 4.16/0.48",
+      "index": 18
+    },
+    {
+      "id": "CB-480-A",
+      "index": 19
+    },
+    {
+      "id": "BUS-480-A 480 V LOAD CENTER A",
+      "index": 20
+    },
+    {
+      "id": "GND-PLANT",
+      "index": 21
+    },
+    {
+      "id": "MCC-A1 SAFETY LOADS",
+      "index": 22
+    },
+    {
+      "id": "PUMP-RHR-A RHR A",
+      "index": 23
+    },
+    {
+      "id": "PUMP-CS-A CORE SPRAY",
+      "index": 24
+    },
+    {
+      "id": "MCC-A2 VALVE/PUMP",
+      "index": 25
+    },
+    {
+      "id": "PUMP-CCW-A CCW A",
+      "index": 26
+    },
+    {
+      "id": "MOV-881A",
+      "index": 27
+    },
+    {
+      "id": "MOV-742A",
+      "index": 28
+    },
+    {
+      "id": "CHG-125A",
+      "index": 29
+    },
+    {
+      "id": "BAT-125A",
+      "index": 30
+    },
+    {
+      "id": "INV-120A",
+      "index": 31
+    },
+    {
+      "id": "PANEL-120A",
+      "index": 32
+    },
+    {
+      "id": "RPS-A DIV I",
+      "index": 33
+    },
+    {
+      "id": "RELAY-KA1",
+      "index": 34
+    },
+    {
+      "id": "JB-A101",
+      "index": 35
+    },
+    {
+      "id": "TR-480-B 4.16/0.48",
+      "index": 36
+    },
+    {
+      "id": "CB-480-B",
+      "index": 37
+    },
+    {
+      "id": "BUS-480-B 480 V LOAD CENTER B",
+      "index": 38
+    },
+    {
+      "id": "MCC-B1 SAFETY LOADS",
+      "index": 39
+    },
+    {
+      "id": "PUMP-RHR-B RHR B",
+      "index": 40
+    },
+    {
+      "id": "PUMP-CS-B CORE SPRAY",
+      "index": 41
+    },
+    {
+      "id": "MCC-B2 VALVE/PUMP",
+      "index": 42
+    },
+    {
+      "id": "PUMP-CCW-B CCW B",
+      "index": 43
+    },
+    {
+      "id": "MOV-881B",
+      "index": 44
+    },
+    {
+      "id": "MOV-742B",
+      "index": 45
+    },
+    {
+      "id": "CHG-125B",
+      "index": 46
+    },
+    {
+      "id": "BAT-125B",
+      "index": 47
+    },
+    {
+      "id": "INV-120B",
+      "index": 48
+    },
+    {
+      "id": "PANEL-120B",
+      "index": 49
+    },
+    {
+      "id": "RPS-B DIV II",
+      "index": 50
+    },
+    {
+      "id": "RELAY-KB1",
+      "index": 51
+    },
+    {
+      "id": "JB-B101",
+      "index": 52
+    },
+    {
+      "id": "ANN-CR01",
+      "index": 53
+    },
+    {
+      "id": "REC-SOE01",
+      "index": 54
+    }
+  ],
+  "edges": [
+    {
+      "source": "OFFSITE 230 kV A",
+      "target": "DS-230A",
+      "evidence": "Solid vertical offsite source feed to disconnect DS-230A."
+    },
+    {
+      "source": "DS-230A",
+      "target": "TR-1A 230/4.16",
+      "evidence": "Solid vertical conductor from disconnect into transformer TR-1A."
+    },
+    {
+      "source": "TR-1A 230/4.16",
+      "target": "CB-1A",
+      "evidence": "Transformer TR-1A feeds breaker CB-1A."
+    },
+    {
+      "source": "CB-1A",
+      "target": "BUS-4160-A DIV I 4.16 kV ESF",
+      "evidence": "CB-1A lands on BUS-4160-A with a junction dot."
+    },
+    {
+      "source": "EDG-1A",
+      "target": "CB-DG-A",
+      "evidence": "Emergency diesel generator EDG-1A feeds CB-DG-A."
+    },
+    {
+      "source": "CB-DG-A",
+      "target": "BUS-4160-A DIV I 4.16 kV ESF",
+      "evidence": "CB-DG-A lands on BUS-4160-A with a junction dot."
+    },
+    {
+      "source": "BUS-4160-A DIV I 4.16 kV ESF",
+      "target": "RELAY-UV-A 27/59",
+      "evidence": "Dashed control/sensing drop from BUS-4160-A to RELAY-UV-A."
+    },
+    {
+      "source": "BUS-4160-A DIV I 4.16 kV ESF",
+      "target": "CB-TIE-AB",
+      "evidence": "Left side of normally-open tie breaker connects to BUS-4160-A."
+    },
+    {
+      "source": "CB-TIE-AB",
+      "target": "BUS-4160-B DIV II 4.16 kV ESF",
+      "evidence": "Right side of normally-open tie breaker connects to BUS-4160-B."
+    },
+    {
+      "source": "BUS-4160-B DIV II 4.16 kV ESF",
+      "target": "RELAY-UV-B 27/59",
+      "evidence": "Dashed control/sensing drop from BUS-4160-B to RELAY-UV-B."
+    },
+    {
+      "source": "OFFSITE 230 kV B",
+      "target": "DS-230B",
+      "evidence": "Solid vertical offsite source feed to disconnect DS-230B."
+    },
+    {
+      "source": "DS-230B",
+      "target": "TR-1B 230/4.16",
+      "evidence": "Solid vertical conductor from disconnect into transformer TR-1B."
+    },
+    {
+      "source": "TR-1B 230/4.16",
+      "target": "CB-1B",
+      "evidence": "Transformer TR-1B feeds breaker CB-1B."
+    },
+    {
+      "source": "CB-1B",
+      "target": "BUS-4160-B DIV II 4.16 kV ESF",
+      "evidence": "CB-1B lands on BUS-4160-B with a junction dot."
+    },
+    {
+      "source": "EDG-1B",
+      "target": "CB-DG-B",
+      "evidence": "Emergency diesel generator EDG-1B feeds CB-DG-B."
+    },
+    {
+      "source": "CB-DG-B",
+      "target": "BUS-4160-B DIV II 4.16 kV ESF",
+      "evidence": "CB-DG-B lands on BUS-4160-B with a junction dot."
+    },
+    {
+      "source": "BUS-4160-A DIV I 4.16 kV ESF",
+      "target": "TR-480-A 4.16/0.48",
+      "evidence": "BUS-4160-A vertical feeder drops to transformer TR-480-A."
+    },
+    {
+      "source": "TR-480-A 4.16/0.48",
+      "target": "CB-480-A",
+      "evidence": "TR-480-A output feeds breaker CB-480-A."
+    },
+    {
+      "source": "CB-480-A",
+      "target": "BUS-480-A 480 V LOAD CENTER A",
+      "evidence": "CB-480-A lands on BUS-480-A with a junction dot."
+    },
+    {
+      "source": "BUS-480-A 480 V LOAD CENTER A",
+      "target": "MCC-A1 SAFETY LOADS",
+      "evidence": "BUS-480-A has a solid feeder to MCC-A1."
+    },
+    {
+      "source": "BUS-480-A 480 V LOAD CENTER A",
+      "target": "MCC-A2 VALVE/PUMP",
+      "evidence": "BUS-480-A has a solid feeder to MCC-A2."
+    },
+    {
+      "source": "BUS-480-A 480 V LOAD CENTER A",
+      "target": "GND-PLANT",
+      "evidence": "Ground-reference conductor terminates from BUS-480-A to GND-PLANT."
+    },
+    {
+      "source": "BUS-480-A 480 V LOAD CENTER A",
+      "target": "CHG-125A",
+      "evidence": "Solid LC-A labeled branch feeds CHG-125A from BUS-480-A."
+    },
+    {
+      "source": "MCC-A1 SAFETY LOADS",
+      "target": "PUMP-RHR-A RHR A",
+      "evidence": "Solid load conductor from MCC-A1 to PUMP-RHR-A."
+    },
+    {
+      "source": "MCC-A1 SAFETY LOADS",
+      "target": "PUMP-CS-A CORE SPRAY",
+      "evidence": "Solid load conductor from MCC-A1 to PUMP-CS-A."
+    },
+    {
+      "source": "MCC-A2 VALVE/PUMP",
+      "target": "PUMP-CCW-A CCW A",
+      "evidence": "Solid load conductor from MCC-A2 to PUMP-CCW-A."
+    },
+    {
+      "source": "MCC-A2 VALVE/PUMP",
+      "target": "MOV-881A",
+      "evidence": "Solid load conductor from MCC-A2 to MOV-881A."
+    },
+    {
+      "source": "MCC-A2 VALVE/PUMP",
+      "target": "MOV-742A",
+      "evidence": "Solid load conductor from MCC-A2 to MOV-742A."
+    },
+    {
+      "source": "CHG-125A",
+      "target": "BAT-125A",
+      "evidence": "Adjacent side-stack DC/sensing conductor between charger and battery."
+    },
+    {
+      "source": "BAT-125A",
+      "target": "INV-120A",
+      "evidence": "Adjacent side-stack DC/sensing conductor between battery and inverter."
+    },
+    {
+      "source": "INV-120A",
+      "target": "PANEL-120A",
+      "evidence": "Adjacent side-stack conductor between inverter and 120 V panel."
+    },
+    {
+      "source": "PANEL-120A",
+      "target": "RPS-A DIV I",
+      "evidence": "Adjacent side-stack conductor between panel and RPS-A."
+    },
+    {
+      "source": "RPS-A DIV I",
+      "target": "RELAY-KA1",
+      "evidence": "Dashed control conductor from RPS-A to relay KA1."
+    },
+    {
+      "source": "RPS-A DIV I",
+      "target": "JB-A101",
+      "evidence": "Dashed control route from RPS-A to junction box JB-A101."
+    },
+    {
+      "source": "JB-A101",
+      "target": "MOV-881A",
+      "evidence": "Dashed MOV control conductor terminates at JB-A101 and MOV-881A."
+    },
+    {
+      "source": "JB-A101",
+      "target": "MOV-742A",
+      "evidence": "Dashed MOV control conductor terminates at JB-A101 and MOV-742A."
+    },
+    {
+      "source": "BUS-4160-B DIV II 4.16 kV ESF",
+      "target": "TR-480-B 4.16/0.48",
+      "evidence": "BUS-4160-B vertical feeder drops to transformer TR-480-B."
+    },
+    {
+      "source": "TR-480-B 4.16/0.48",
+      "target": "CB-480-B",
+      "evidence": "TR-480-B output feeds breaker CB-480-B."
+    },
+    {
+      "source": "CB-480-B",
+      "target": "BUS-480-B 480 V LOAD CENTER B",
+      "evidence": "CB-480-B lands on BUS-480-B with a junction dot."
+    },
+    {
+      "source": "BUS-480-B 480 V LOAD CENTER B",
+      "target": "MCC-B1 SAFETY LOADS",
+      "evidence": "BUS-480-B has a solid feeder to MCC-B1."
+    },
+    {
+      "source": "BUS-480-B 480 V LOAD CENTER B",
+      "target": "MCC-B2 VALVE/PUMP",
+      "evidence": "BUS-480-B has a solid feeder to MCC-B2."
+    },
+    {
+      "source": "BUS-480-B 480 V LOAD CENTER B",
+      "target": "CHG-125B",
+      "evidence": "Solid LC-B labeled branch feeds CHG-125B from BUS-480-B."
+    },
+    {
+      "source": "MCC-B1 SAFETY LOADS",
+      "target": "PUMP-RHR-B RHR B",
+      "evidence": "Solid load conductor from MCC-B1 to PUMP-RHR-B."
+    },
+    {
+      "source": "MCC-B1 SAFETY LOADS",
+      "target": "PUMP-CS-B CORE SPRAY",
+      "evidence": "Solid load conductor from MCC-B1 to PUMP-CS-B."
+    },
+    {
+      "source": "MCC-B2 VALVE/PUMP",
+      "target": "PUMP-CCW-B CCW B",
+      "evidence": "Solid load conductor from MCC-B2 to PUMP-CCW-B."
+    },
+    {
+      "source": "MCC-B2 VALVE/PUMP",
+      "target": "MOV-881B",
+      "evidence": "Solid load conductor from MCC-B2 to MOV-881B."
+    },
+    {
+      "source": "MCC-B2 VALVE/PUMP",
+      "target": "MOV-742B",
+      "evidence": "Solid load conductor from MCC-B2 to MOV-742B."
+    },
+    {
+      "source": "CHG-125B",
+      "target": "BAT-125B",
+      "evidence": "Adjacent side-stack DC/sensing conductor between charger and battery."
+    },
+    {
+      "source": "BAT-125B",
+      "target": "INV-120B",
+      "evidence": "Adjacent side-stack DC/sensing conductor between battery and inverter."
+    },
+    {
+      "source": "INV-120B",
+      "target": "PANEL-120B",
+      "evidence": "Adjacent side-stack conductor between inverter and 120 V panel."
+    },
+    {
+      "source": "PANEL-120B",
+      "target": "RPS-B DIV II",
+      "evidence": "Adjacent side-stack conductor between panel and RPS-B."
+    },
+    {
+      "source": "RPS-B DIV II",
+      "target": "RELAY-KB1",
+      "evidence": "Dashed control conductor from RPS-B to relay KB1."
+    },
+    {
+      "source": "RPS-B DIV II",
+      "target": "JB-B101",
+      "evidence": "Dashed control route from RPS-B to junction box JB-B101."
+    },
+    {
+      "source": "JB-B101",
+      "target": "MOV-881B",
+      "evidence": "Dashed MOV control conductor terminates at JB-B101 and MOV-881B."
+    },
+    {
+      "source": "JB-B101",
+      "target": "MOV-742B",
+      "evidence": "Dashed MOV control conductor terminates at JB-B101 and MOV-742B."
+    },
+    {
+      "source": "ANN-CR01",
+      "target": "REC-SOE01",
+      "evidence": "Direct dashed control-room annunciation conductor between ANN-CR01 and REC-SOE01."
+    }
+  ],
+  "rejected_items": [
+    {
+      "item": "LC-A / LC-B as nodes",
+      "reason": "They are bus/tap labels, not standalone retained components."
+    },
+    {
+      "item": "RELAY-UV-A 27/59 -- CB-TIE-AB",
+      "reason": "Functionally plausible, but no direct conductor is shown."
+    },
+    {
+      "item": "RELAY-UV-B 27/59 -- CB-TIE-AB",
+      "reason": "Functionally plausible, but no direct conductor is shown."
+    },
+    {
+      "item": "RPS-A DIV I -- MOV-881A / MOV-742A",
+      "reason": "MOV control is visually routed through JB-A101, not directly from RPS-A."
+    },
+    {
+      "item": "RPS-B DIV II -- MOV-881B / MOV-742B",
+      "reason": "MOV control is visually routed through JB-B101, not directly from RPS-B."
+    },
+    {
+      "item": "BUS-480-B 480 V LOAD CENTER B -- GND-PLANT",
+      "reason": "Only the A-side bus has a visible terminating conductor to GND-PLANT."
+    },
+    {
+      "item": "JB-A101 -- ANN-CR01",
+      "reason": "Lower control-room route does not visibly terminate at both endpoints."
+    },
+    {
+      "item": "JB-B101 -- REC-SOE01",
+      "reason": "Lower control-room route does not visibly terminate at both endpoints."
+    }
+  ],
+  "validation": {
+    "document": "39",
+    "iteration": "1",
+    "raw_image": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\39\\Raw\\raw -- npp_schematic_improved_no_overlap.png",
+    "node_count": 54,
+    "edge_count": 56,
+    "symmetric": true,
+    "diagonal_zero": true,
+    "duplicate_final_edges_removed": 0,
+    "unknown_endpoint_count": 0,
+    "degree_by_node": {
+      "OFFSITE 230 kV A": 1,
+      "DS-230A": 2,
+      "TR-1A 230/4.16": 2,
+      "CB-1A": 2,
+      "EDG-1A": 1,
+      "CB-DG-A": 2,
+      "BUS-4160-A DIV I 4.16 kV ESF": 5,
+      "RELAY-UV-A 27/59": 1,
+      "CB-TIE-AB": 2,
+      "BUS-4160-B DIV II 4.16 kV ESF": 5,
+      "RELAY-UV-B 27/59": 1,
+      "OFFSITE 230 kV B": 1,
+      "DS-230B": 2,
+      "TR-1B 230/4.16": 2,
+      "CB-1B": 2,
+      "EDG-1B": 1,
+      "CB-DG-B": 2,
+      "TR-480-A 4.16/0.48": 2,
+      "CB-480-A": 2,
+      "BUS-480-A 480 V LOAD CENTER A": 5,
+      "GND-PLANT": 1,
+      "MCC-A1 SAFETY LOADS": 3,
+      "PUMP-RHR-A RHR A": 1,
+      "PUMP-CS-A CORE SPRAY": 1,
+      "MCC-A2 VALVE/PUMP": 4,
+      "PUMP-CCW-A CCW A": 1,
+      "MOV-881A": 2,
+      "MOV-742A": 2,
+      "CHG-125A": 2,
+      "BAT-125A": 2,
+      "INV-120A": 2,
+      "PANEL-120A": 2,
+      "RPS-A DIV I": 3,
+      "RELAY-KA1": 1,
+      "JB-A101": 3,
+      "TR-480-B 4.16/0.48": 2,
+      "CB-480-B": 2,
+      "BUS-480-B 480 V LOAD CENTER B": 4,
+      "MCC-B1 SAFETY LOADS": 3,
+      "PUMP-RHR-B RHR B": 1,
+      "PUMP-CS-B CORE SPRAY": 1,
+      "MCC-B2 VALVE/PUMP": 4,
+      "PUMP-CCW-B CCW B": 1,
+      "MOV-881B": 2,
+      "MOV-742B": 2,
+      "CHG-125B": 2,
+      "BAT-125B": 2,
+      "INV-120B": 2,
+      "PANEL-120B": 2,
+      "RPS-B DIV II": 3,
+      "RELAY-KB1": 1,
+      "JB-B101": 3,
+      "ANN-CR01": 1,
+      "REC-SOE01": 1
+    },
+    "round_edge_counts": [
+      {
+        "round": 1,
+        "agent": "Diego",
+        "label": "high_recall",
+        "node_count": 56,
+        "edge_count": 69
+      },
+      {
+        "round": 2,
+        "agent": "Jennifer",
+        "label": "precision_review",
+        "node_count": 54,
+        "edge_count": 56
+      },
+      {
+        "round": 3,
+        "agent": "Diego",
+        "label": "saturation",
+        "node_count": 54,
+        "edge_count": 56
+      },
+      {
+        "round": 4,
+        "agent": "Jennifer",
+        "label": "final",
+        "node_count": 54,
+        "edge_count": 56
+      }
+    ]
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "document": "40",
+  "iteration": "1",
+  "source_image": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\40\\Raw\\raw -- synthetic_nuclear_distribution_schematic.png",
+  "nodes": [
+    "DG-21A",
+    "UAT-2A",
+    "DS-21A",
+    "ATS-21A",
+    "SWGR-21A",
+    "CB-21A1",
+    "TR-21A",
+    "MCC-21A",
+    "CB-MPA1",
+    "PUMP-SI21A",
+    "PUMP-CCW21A",
+    "FAN-RB21A",
+    "MOV-HV211A",
+    "MOV-RWST21A",
+    "XFMR-CPT21A",
+    "AC-PNL-120A",
+    "RECT-21A",
+    "DC-BUS-21A",
+    "BAT-21A",
+    "INV-21A",
+    "VT-21A",
+    "CT-21A",
+    "LOCA-SIG-A",
+    "JB-21A",
+    "RPS-PNL-A",
+    "RELAY-K21A",
+    "RELAY-86A",
+    "TIE-BKR-21AB",
+    "SWGR-21B",
+    "DG-21B",
+    "SAT-2B",
+    "DS-21B",
+    "ATS-21B",
+    "CB-21B1",
+    "TR-21B",
+    "MCC-21B",
+    "XFMR-CPT21B",
+    "AC-PNL-120B",
+    "RECT-21B",
+    "DC-BUS-21B",
+    "BAT-21B",
+    "INV-21B",
+    "CB-MPB1",
+    "PUMP-SI21B",
+    "PUMP-CCW21B",
+    "FAN-RB21B",
+    "MOV-HV211B",
+    "MOV-RWST21B",
+    "VT-21B",
+    "CT-21B",
+    "LOCA-SIG-B",
+    "JB-21B",
+    "RPS-PNL-B",
+    "RELAY-K21B",
+    "RELAY-86B"
+  ],
+  "edges": [
+    {
+      "source": "DG-21A",
+      "target": "ATS-21A"
+    },
+    {
+      "source": "UAT-2A",
+      "target": "DS-21A"
+    },
+    {
+      "source": "DS-21A",
+      "target": "ATS-21A"
+    },
+    {
+      "source": "ATS-21A",
+      "target": "SWGR-21A"
+    },
+    {
+      "source": "SWGR-21A",
+      "target": "CB-21A1"
+    },
+    {
+      "source": "CB-21A1",
+      "target": "TR-21A"
+    },
+    {
+      "source": "TR-21A",
+      "target": "MCC-21A"
+    },
+    {
+      "source": "SWGR-21A",
+      "target": "TIE-BKR-21AB"
+    },
+    {
+      "source": "TIE-BKR-21AB",
+      "target": "SWGR-21B"
+    },
+    {
+      "source": "MCC-21A",
+      "target": "CB-MPA1"
+    },
+    {
+      "source": "CB-MPA1",
+      "target": "PUMP-SI21A"
+    },
+    {
+      "source": "MCC-21A",
+      "target": "PUMP-CCW21A"
+    },
+    {
+      "source": "MCC-21A",
+      "target": "FAN-RB21A"
+    },
+    {
+      "source": "MCC-21A",
+      "target": "MOV-HV211A"
+    },
+    {
+      "source": "MCC-21A",
+      "target": "MOV-RWST21A"
+    },
+    {
+      "source": "MCC-21A",
+      "target": "XFMR-CPT21A"
+    },
+    {
+      "source": "XFMR-CPT21A",
+      "target": "AC-PNL-120A"
+    },
+    {
+      "source": "AC-PNL-120A",
+      "target": "RECT-21A"
+    },
+    {
+      "source": "RECT-21A",
+      "target": "DC-BUS-21A"
+    },
+    {
+      "source": "BAT-21A",
+      "target": "DC-BUS-21A"
+    },
+    {
+      "source": "INV-21A",
+      "target": "DC-BUS-21A"
+    },
+    {
+      "source": "LOCA-SIG-A",
+      "target": "JB-21A"
+    },
+    {
+      "source": "JB-21A",
+      "target": "RPS-PNL-A"
+    },
+    {
+      "source": "CT-21A",
+      "target": "RPS-PNL-A"
+    },
+    {
+      "source": "VT-21A",
+      "target": "RPS-PNL-A"
+    },
+    {
+      "source": "INV-21A",
+      "target": "RPS-PNL-A"
+    },
+    {
+      "source": "RPS-PNL-A",
+      "target": "RELAY-K21A"
+    },
+    {
+      "source": "RELAY-K21A",
+      "target": "RELAY-86A"
+    },
+    {
+      "source": "RELAY-86A",
+      "target": "CB-MPA1"
+    },
+    {
+      "source": "DG-21B",
+      "target": "ATS-21B"
+    },
+    {
+      "source": "SAT-2B",
+      "target": "DS-21B"
+    },
+    {
+      "source": "DS-21B",
+      "target": "ATS-21B"
+    },
+    {
+      "source": "ATS-21B",
+      "target": "SWGR-21B"
+    },
+    {
+      "source": "SWGR-21B",
+      "target": "CB-21B1"
+    },
+    {
+      "source": "CB-21B1",
+      "target": "TR-21B"
+    },
+    {
+      "source": "TR-21B",
+      "target": "MCC-21B"
+    },
+    {
+      "source": "MCC-21B",
+      "target": "XFMR-CPT21B"
+    },
+    {
+      "source": "XFMR-CPT21B",
+      "target": "AC-PNL-120B"
+    },
+    {
+      "source": "AC-PNL-120B",
+      "target": "RECT-21B"
+    },
+    {
+      "source": "RECT-21B",
+      "target": "DC-BUS-21B"
+    },
+    {
+      "source": "BAT-21B",
+      "target": "DC-BUS-21B"
+    },
+    {
+      "source": "INV-21B",
+      "target": "DC-BUS-21B"
+    },
+    {
+      "source": "MCC-21B",
+      "target": "CB-MPB1"
+    },
+    {
+      "source": "CB-MPB1",
+      "target": "PUMP-SI21B"
+    },
+    {
+      "source": "MCC-21B",
+      "target": "PUMP-CCW21B"
+    },
+    {
+      "source": "MCC-21B",
+      "target": "FAN-RB21B"
+    },
+    {
+      "source": "MCC-21B",
+      "target": "MOV-HV211B"
+    },
+    {
+      "source": "MCC-21B",
+      "target": "MOV-RWST21B"
+    },
+    {
+      "source": "LOCA-SIG-B",
+      "target": "JB-21B"
+    },
+    {
+      "source": "JB-21B",
+      "target": "RPS-PNL-B"
+    },
+    {
+      "source": "CT-21B",
+      "target": "RPS-PNL-B"
+    },
+    {
+      "source": "VT-21B",
+      "target": "RPS-PNL-B"
+    },
+    {
+      "source": "INV-21B",
+      "target": "RPS-PNL-B"
+    },
+    {
+      "source": "RPS-PNL-B",
+      "target": "RELAY-K21B"
+    },
+    {
+      "source": "RELAY-K21B",
+      "target": "RELAY-86B"
+    },
+    {
+      "source": "RELAY-86B",
+      "target": "CB-MPB1"
+    }
+  ],
+  "pruned_high_recall_candidates": [
+    {
+      "source": "MOV-RWST21A",
+      "target": "RPS-PNL-A"
+    },
+    {
+      "source": "MOV-RWST21B",
+      "target": "RPS-PNL-B"
+    },
+    {
+      "source": "DC-BUS-21A",
+      "target": "RPS-PNL-A"
+    },
+    {
+      "source": "DC-BUS-21B",
+      "target": "RPS-PNL-B"
+    },
+    {
+      "source": "SWGR-21A",
+      "target": "VT-21A"
+    },
+    {
+      "source": "SWGR-21B",
+      "target": "VT-21B"
+    },
+    {
+      "source": "MCC-21A",
+      "target": "CT-21A"
+    },
+    {
+      "source": "FAN-RB21A",
+      "target": "CT-21A"
+    },
+    {
+      "source": "MCC-21B",
+      "target": "CT-21B"
+    },
+    {
+      "source": "FAN-RB21B",
+      "target": "CT-21B"
+    }
+  ],
+  "validation": {
+    "node_count": 55,
+    "edge_count": 56,
+    "matrix_size": [
+      55,
+      55
+    ],
+    "diagonal_zero": true,
+    "symmetric": true,
+    "errors": [],
+    "valid": true
+  }
+}

@@ -1,0 +1,34 @@
+Connectivity matrix validation summary - Document 40 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\40\connectivity_matrix(1).csv
+GT after normalization: 56 undirected edges across 55 component names.
+
+Token usage:
+Token source files: not available.
+Document total token usage was not available in local tracking files.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=44, FP=14, FN=12, Precision=0.758621, Recall=0.785714, F1=0.771930.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names.
+- Extracted components: 57; extra/non-GT names: 2; missing GT component names: 0.
+- False-positive extracted edge examples: CB-MPA1 -- MCC-21A-480V-3PH; CB-MPB1 -- MCC-21B-480V-3PH; FAN-RB21A -- MCC-21A-480V-3PH; FAN-RB21B -- MCC-21B-480V-3PH; MCC-21A -- MCC-21A-480V-3PH; MCC-21A-480V-3PH -- MOV-HV211A; MCC-21A-480V-3PH -- MOV-RWST21A; MCC-21A-480V-3PH -- PUMP-CCW21A; ... (+6 more).
+- Missed GT edge examples: CB-MPA1 -- MCC-21A; CB-MPB1 -- MCC-21B; FAN-RB21A -- MCC-21A; FAN-RB21B -- MCC-21B; MCC-21A -- MOV-HV211A; MCC-21A -- MOV-RWST21A; MCC-21A -- PUMP-CCW21A; MCC-21A -- XFMR-CPT21A; ... (+4 more).
+- Extra/non-GT component examples: MCC-21A-480V-3PH; MCC-21B-480V-3PH.
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=44, FP=0, FN=12, Precision=1.000000, Recall=0.785714, F1=0.880000.
+- If all missed GT edges were added, final performance would be TP=56, FP=14, FN=0, Precision=0.800000, Recall=1.000000, F1=0.888889.
+- If extra node MCC-21A-480V-3PH and its 7 false-positive incident edge(s) were not put in extraction, final performance would be TP=44, FP=7, FN=12, Precision=0.862745, Recall=0.785714, F1=0.822430.
+- If extra node MCC-21B-480V-3PH and its 7 false-positive incident edge(s) were not put in extraction, final performance would be TP=44, FP=7, FN=12, Precision=0.862745, Recall=0.785714, F1=0.822430.
+
+Best evaluated row: Diego -- Round 1 with F1=0.771930.
+
+Round-specific notes:
+- Diego -- Round 1: TP=44, FP=14, FN=12, F1=0.771930; extra nodes=2, missing GT nodes=0. FP examples: CB-MPA1 -- MCC-21A-480V-3PH; CB-MPB1 -- MCC-21B-480V-3PH; FAN-RB21A -- MCC-21A-480V-3PH; FAN-RB21B -- MCC-21B-480V-3PH; ... (+10 more). FN examples: CB-MPA1 -- MCC-21A; CB-MPB1 -- MCC-21B; FAN-RB21A -- MCC-21A; FAN-RB21B -- MCC-21B; ... (+8 more).
+- Jennifer -- Round 2: TP=44, FP=14, FN=12, F1=0.771930; extra nodes=2, missing GT nodes=0. FP examples: CB-MPA1 -- MCC-21A-480V-3PH; CB-MPB1 -- MCC-21B-480V-3PH; FAN-RB21A -- MCC-21A-480V-3PH; FAN-RB21B -- MCC-21B-480V-3PH; ... (+10 more). FN examples: CB-MPA1 -- MCC-21A; CB-MPB1 -- MCC-21B; FAN-RB21A -- MCC-21A; FAN-RB21B -- MCC-21B; ... (+8 more).
+- Diego -- Round 3: TP=44, FP=14, FN=12, F1=0.771930; extra nodes=2, missing GT nodes=0. FP examples: CB-MPA1 -- MCC-21A-480V-3PH; CB-MPB1 -- MCC-21B-480V-3PH; FAN-RB21A -- MCC-21A-480V-3PH; FAN-RB21B -- MCC-21B-480V-3PH; ... (+10 more). FN examples: CB-MPA1 -- MCC-21A; CB-MPB1 -- MCC-21B; FAN-RB21A -- MCC-21A; FAN-RB21B -- MCC-21B; ... (+8 more).
+- Jennifer -- Round 4: TP=44, FP=14, FN=12, F1=0.771930; extra nodes=2, missing GT nodes=0. FP examples: CB-MPA1 -- MCC-21A-480V-3PH; CB-MPB1 -- MCC-21B-480V-3PH; FAN-RB21A -- MCC-21A-480V-3PH; FAN-RB21B -- MCC-21B-480V-3PH; ... (+10 more). FN examples: CB-MPA1 -- MCC-21A; CB-MPB1 -- MCC-21B; FAN-RB21A -- MCC-21A; FAN-RB21B -- MCC-21B; ... (+8 more).
+- Final connectivity -- Final: TP=44, FP=14, FN=12, F1=0.771930; extra nodes=2, missing GT nodes=0. FP examples: CB-MPA1 -- MCC-21A-480V-3PH; CB-MPB1 -- MCC-21B-480V-3PH; FAN-RB21A -- MCC-21A-480V-3PH; FAN-RB21B -- MCC-21B-480V-3PH; ... (+10 more). FN examples: CB-MPA1 -- MCC-21A; CB-MPB1 -- MCC-21B; FAN-RB21A -- MCC-21A; FAN-RB21B -- MCC-21B; ... (+8 more).

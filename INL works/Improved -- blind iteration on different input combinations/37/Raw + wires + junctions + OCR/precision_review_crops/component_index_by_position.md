@@ -1,0 +1,73 @@
+# Document 37 Component Index
+
+## Counts By Type
+
+- automatic_transfer_switch: 2
+- battery: 2
+- breaker_switch: 6
+- charger_rectifier: 2
+- diesel_generator: 2
+- fan: 2
+- grid_source: 1
+- ground: 2
+- instrument_rack: 2
+- inverter: 2
+- logic_panel: 1
+- mcc: 2
+- mov_valve: 4
+- panel: 2
+- pump_motor: 6
+- relay: 2
+- switchgear: 2
+- tie_breaker: 1
+- transformer: 4
+
+## Labels By Position
+
+- GRID-345 | grid_source | id=DET-COMP-0003 | bbox=[2440, 175, 2688, 370] | centroid=[2564.0, 272.5]
+- AUX-TR-1A | transformer | id=DET-COMP-0001 | bbox=[1628, 190, 1902, 372] | centroid=[1765.0, 281.0]
+- AUX-TR-1B | transformer | id=DET-COMP-0005 | bbox=[3185, 190, 3460, 372] | centroid=[3322.5, 281.0]
+- CB-101 | breaker_switch | id=DET-COMP-0002 | bbox=[2065, 240, 2258, 330] | centroid=[2161.5, 285.0]
+- CB-102 | breaker_switch | id=DET-COMP-0004 | bbox=[2822, 240, 3018, 330] | centroid=[2920.0, 285.0]
+- CB-TIE-6K | tie_breaker | id=DET-COMP-0006 | bbox=[2370, 438, 2565, 565] | centroid=[2467.5, 501.5]
+- CB-103A | breaker_switch | id=DET-COMP-0010 | bbox=[1410, 575, 1572, 690] | centroid=[1491.0, 632.5]
+- CB-103B | breaker_switch | id=DET-COMP-0017 | bbox=[3500, 575, 3668, 690] | centroid=[3584.0, 632.5]
+- DG-1A | diesel_generator | id=DET-COMP-0007 | bbox=[320, 675, 540, 890] | centroid=[430.0, 782.5]
+- DG-1B | diesel_generator | id=DET-COMP-0014 | bbox=[4530, 675, 4750, 890] | centroid=[4640.0, 782.5]
+- CB-DG1A | breaker_switch | id=DET-COMP-0008 | bbox=[665, 735, 870, 825] | centroid=[767.5, 780.0]
+- SWGR-1EA | switchgear | id=DET-COMP-0009 | bbox=[1305, 735, 1692, 970] | centroid=[1498.5, 852.5]
+- SWGR-1EB | switchgear | id=DET-COMP-0016 | bbox=[3388, 735, 3760, 970] | centroid=[3574.0, 852.5]
+- CB-DG1B | breaker_switch | id=DET-COMP-0015 | bbox=[4200, 735, 4405, 825] | centroid=[4302.5, 780.0]
+- ATS-1A | automatic_transfer_switch | id=DET-COMP-0011 | bbox=[1350, 1110, 1648, 1295] | centroid=[1499.0, 1202.5]
+- ATS-1B | automatic_transfer_switch | id=DET-COMP-0018 | bbox=[3425, 1110, 3725, 1295] | centroid=[3575.0, 1202.5]
+- RELAY-K12A | relay | id=DET-COMP-0012 | bbox=[2160, 1130, 2342, 1266] | centroid=[2251.0, 1198.0]
+- RELAY-K12B | relay | id=DET-COMP-0019 | bbox=[2740, 1130, 2930, 1266] | centroid=[2835.0, 1198.0]
+- TR-480A | transformer | id=DET-COMP-0013 | bbox=[1372, 1370, 1624, 1558] | centroid=[1498.0, 1464.0]
+- TR-480B | transformer | id=DET-COMP-0020 | bbox=[3450, 1370, 3695, 1558] | centroid=[3572.5, 1464.0]
+- MCC-1A | mcc | id=DET-COMP-0021 | bbox=[275, 1878, 1880, 2110] | centroid=[1077.5, 1994.0]
+- MCC-1B | mcc | id=DET-COMP-0035 | bbox=[3070, 1878, 4688, 2110] | centroid=[3879.0, 1994.0]
+- CHGR-125A | charger_rectifier | id=DET-COMP-0028 | bbox=[1972, 1900, 2162, 2100] | centroid=[2067.0, 2000.0]
+- BAT-125A | battery | id=DET-COMP-0029 | bbox=[2230, 1900, 2365, 2170] | centroid=[2297.5, 2035.0]
+- BAT-125B | battery | id=DET-COMP-0042 | bbox=[2598, 1900, 2735, 2170] | centroid=[2666.5, 2035.0]
+- CHGR-125B | charger_rectifier | id=DET-COMP-0043 | bbox=[2760, 1900, 2955, 2100] | centroid=[2857.5, 2000.0]
+- MOV-HPCI-1A | mov_valve | id=DET-COMP-0026 | bbox=[1395, 2230, 1542, 2480] | centroid=[1468.5, 2355.0]
+- VALVE-SW-1A | mov_valve | id=DET-COMP-0027 | bbox=[1690, 2230, 1835, 2480] | centroid=[1762.5, 2355.0]
+- MOV-HPCI-1B | mov_valve | id=DET-COMP-0040 | bbox=[4205, 2230, 4348, 2480] | centroid=[4276.5, 2355.0]
+- VALVE-SW-1B | mov_valve | id=DET-COMP-0041 | bbox=[4495, 2230, 4645, 2480] | centroid=[4570.0, 2355.0]
+- PUMP-SI-1A | pump_motor | id=DET-COMP-0022 | bbox=[350, 2310, 485, 2520] | centroid=[417.5, 2415.0]
+- PUMP-RHR-1A | pump_motor | id=DET-COMP-0023 | bbox=[620, 2310, 760, 2520] | centroid=[690.0, 2415.0]
+- PUMP-CCW-1A | pump_motor | id=DET-COMP-0024 | bbox=[890, 2310, 1035, 2520] | centroid=[962.5, 2415.0]
+- FAN-RB-1A | fan | id=DET-COMP-0025 | bbox=[1160, 2310, 1305, 2520] | centroid=[1232.5, 2415.0]
+- PUMP-SI-1B | pump_motor | id=DET-COMP-0036 | bbox=[3125, 2310, 3265, 2520] | centroid=[3195.0, 2415.0]
+- PUMP-RHR-1B | pump_motor | id=DET-COMP-0037 | bbox=[3395, 2310, 3540, 2520] | centroid=[3467.5, 2415.0]
+- PUMP-CCW-1B | pump_motor | id=DET-COMP-0038 | bbox=[3665, 2310, 3810, 2520] | centroid=[3737.5, 2415.0]
+- FAN-RB-1B | fan | id=DET-COMP-0039 | bbox=[3940, 2310, 4085, 2520] | centroid=[4012.5, 2415.0]
+- GND-01A | ground | id=DET-COMP-0030 | bbox=[2225, 2320, 2370, 2490] | centroid=[2297.5, 2405.0]
+- GND-01B | ground | id=DET-COMP-0044 | bbox=[2590, 2320, 2735, 2490] | centroid=[2662.5, 2405.0]
+- INV-120A | inverter | id=DET-COMP-0031 | bbox=[1950, 2370, 2170, 2570] | centroid=[2060.0, 2470.0]
+- INV-120B | inverter | id=DET-COMP-0045 | bbox=[2862, 2370, 3070, 2570] | centroid=[2966.0, 2470.0]
+- PAN-RPS-A | panel | id=DET-COMP-0032 | bbox=[1815, 2735, 2050, 2935] | centroid=[1932.5, 2835.0]
+- INST-RACK-A | instrument_rack | id=DET-COMP-0033 | bbox=[2120, 2735, 2330, 2935] | centroid=[2225.0, 2835.0]
+- PLC-ESF | logic_panel | id=DET-COMP-0034 | bbox=[2388, 2735, 2602, 2935] | centroid=[2495.0, 2835.0]
+- PAN-RPS-B | panel | id=DET-COMP-0046 | bbox=[2670, 2735, 2915, 2935] | centroid=[2792.5, 2835.0]
+- INST-RACK-B | instrument_rack | id=DET-COMP-0047 | bbox=[2980, 2735, 3210, 2935] | centroid=[3095.0, 2835.0]

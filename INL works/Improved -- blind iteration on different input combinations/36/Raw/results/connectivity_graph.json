@@ -1,0 +1,407 @@
+{
+  "case": 36,
+  "raw_resource": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw\\raw -- synthetic_npp_electrical_schematic_v2.png",
+  "nodes": [
+    "GRID-230-A",
+    "CB-SW-A",
+    "TR-SU-A",
+    "GEN-DG-A",
+    "CB-DG-A",
+    "TR-EDG-A",
+    "BUS-13K-A",
+    "CB-13-TIE",
+    "BUS-13K-B",
+    "TR-SU-B",
+    "CB-SW-B",
+    "GRID-230-B",
+    "TR-EDG-B",
+    "CB-DG-B",
+    "GEN-DG-B",
+    "TR-4K-A",
+    "CB-4K-A",
+    "BUS-4K-A",
+    "CB-4K-TIE",
+    "BUS-4K-B",
+    "CB-4K-B",
+    "TR-4K-B",
+    "TR-480-A",
+    "CB-LC-A",
+    "BUS-480-A",
+    "MCC-01A",
+    "PUMP-RHR-A",
+    "MOTOR-CCW-A",
+    "MCC-02A",
+    "PUMP-AFW-A",
+    "VALVE-MOV-A",
+    "FAN-CONTAIN-A",
+    "RECT-125A",
+    "BUS-DC125-A",
+    "BAT-125A",
+    "INV-120A",
+    "JB-ESF-A",
+    "PNL-ESF-A",
+    "TR-480-B",
+    "CB-LC-B",
+    "BUS-480-B",
+    "MCC-01B",
+    "PUMP-RHR-B",
+    "MOTOR-CCW-B",
+    "MCC-02B",
+    "PUMP-AFW-B",
+    "VALVE-MOV-B",
+    "FAN-CONTAIN-B",
+    "RECT-125B",
+    "BUS-DC125-B",
+    "BAT-125B",
+    "INV-120B",
+    "JB-ESF-B",
+    "PNL-ESF-B",
+    "PNL-RPS-1"
+  ],
+  "edges": [
+    {
+      "source": "GRID-230-A",
+      "target": "CB-SW-A",
+      "evidence": "offsite A source to source breaker"
+    },
+    {
+      "source": "CB-SW-A",
+      "target": "TR-SU-A",
+      "evidence": "offsite A source breaker to startup transformer"
+    },
+    {
+      "source": "TR-SU-A",
+      "target": "BUS-13K-A",
+      "evidence": "startup transformer A tap to 13.8 kV bus A"
+    },
+    {
+      "source": "GEN-DG-A",
+      "target": "CB-DG-A",
+      "evidence": "diesel generator A to breaker"
+    },
+    {
+      "source": "CB-DG-A",
+      "target": "TR-EDG-A",
+      "evidence": "DG A breaker to emergency transformer"
+    },
+    {
+      "source": "TR-EDG-A",
+      "target": "BUS-13K-A",
+      "evidence": "emergency transformer A tap to 13.8 kV bus A"
+    },
+    {
+      "source": "BUS-13K-A",
+      "target": "CB-13-TIE",
+      "evidence": "13.8 kV bus tie left side"
+    },
+    {
+      "source": "CB-13-TIE",
+      "target": "BUS-13K-B",
+      "evidence": "13.8 kV bus tie right side"
+    },
+    {
+      "source": "BUS-13K-B",
+      "target": "TR-SU-B",
+      "evidence": "13.8 kV bus B to startup transformer B"
+    },
+    {
+      "source": "TR-SU-B",
+      "target": "CB-SW-B",
+      "evidence": "startup transformer B to source breaker"
+    },
+    {
+      "source": "CB-SW-B",
+      "target": "GRID-230-B",
+      "evidence": "source breaker to offsite B source"
+    },
+    {
+      "source": "BUS-13K-B",
+      "target": "TR-EDG-B",
+      "evidence": "13.8 kV bus B to emergency transformer B"
+    },
+    {
+      "source": "TR-EDG-B",
+      "target": "CB-DG-B",
+      "evidence": "emergency transformer B to DG breaker"
+    },
+    {
+      "source": "CB-DG-B",
+      "target": "GEN-DG-B",
+      "evidence": "DG B breaker to diesel generator B"
+    },
+    {
+      "source": "BUS-13K-A",
+      "target": "TR-4K-A",
+      "evidence": "13.8 kV bus A to 4.16 kV transformer A"
+    },
+    {
+      "source": "TR-4K-A",
+      "target": "CB-4K-A",
+      "evidence": "4.16 kV transformer A to incomer breaker"
+    },
+    {
+      "source": "CB-4K-A",
+      "target": "BUS-4K-A",
+      "evidence": "incomer breaker to bus 4K-A"
+    },
+    {
+      "source": "BUS-4K-A",
+      "target": "CB-4K-TIE",
+      "evidence": "4.16 kV tie left side"
+    },
+    {
+      "source": "CB-4K-TIE",
+      "target": "BUS-4K-B",
+      "evidence": "4.16 kV tie right side"
+    },
+    {
+      "source": "BUS-13K-B",
+      "target": "TR-4K-B",
+      "evidence": "13.8 kV bus B to 4.16 kV transformer B"
+    },
+    {
+      "source": "TR-4K-B",
+      "target": "CB-4K-B",
+      "evidence": "4.16 kV transformer B to incomer breaker"
+    },
+    {
+      "source": "CB-4K-B",
+      "target": "BUS-4K-B",
+      "evidence": "incomer breaker to bus 4K-B"
+    },
+    {
+      "source": "BUS-4K-A",
+      "target": "TR-480-A",
+      "evidence": "4.16 kV bus A to 480 V transformer A"
+    },
+    {
+      "source": "TR-480-A",
+      "target": "CB-LC-A",
+      "evidence": "480 V transformer A to load-center breaker"
+    },
+    {
+      "source": "CB-LC-A",
+      "target": "BUS-480-A",
+      "evidence": "load-center breaker A to 480 V bus A"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "MCC-01A",
+      "evidence": "480 V bus A tap to MCC-01A"
+    },
+    {
+      "source": "MCC-01A",
+      "target": "PUMP-RHR-A",
+      "evidence": "MCC-01A feeder to RHR pump A"
+    },
+    {
+      "source": "MCC-01A",
+      "target": "MOTOR-CCW-A",
+      "evidence": "MCC-01A feeder to CCW motor A"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "MCC-02A",
+      "evidence": "480 V bus A tap to MCC-02A"
+    },
+    {
+      "source": "MCC-02A",
+      "target": "PUMP-AFW-A",
+      "evidence": "MCC-02A feeder to AFW pump A"
+    },
+    {
+      "source": "MCC-02A",
+      "target": "VALVE-MOV-A",
+      "evidence": "MCC-02A feeder to MOV valve A"
+    },
+    {
+      "source": "MCC-02A",
+      "target": "FAN-CONTAIN-A",
+      "evidence": "MCC-02A feeder to containment fan A"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "RECT-125A",
+      "evidence": "480 V bus A feed to 125 VDC rectifier A"
+    },
+    {
+      "source": "RECT-125A",
+      "target": "BUS-DC125-A",
+      "evidence": "rectifier A output to 125 VDC bus A"
+    },
+    {
+      "source": "BUS-DC125-A",
+      "target": "BAT-125A",
+      "evidence": "battery A tap on 125 VDC bus A"
+    },
+    {
+      "source": "BUS-DC125-A",
+      "target": "INV-120A",
+      "evidence": "inverter A tap on 125 VDC bus A"
+    },
+    {
+      "source": "INV-120A",
+      "target": "PNL-ESF-A",
+      "evidence": "inverter A solid output to ESF panel A"
+    },
+    {
+      "source": "BUS-4K-B",
+      "target": "TR-480-B",
+      "evidence": "4.16 kV bus B to 480 V transformer B"
+    },
+    {
+      "source": "TR-480-B",
+      "target": "CB-LC-B",
+      "evidence": "480 V transformer B to load-center breaker"
+    },
+    {
+      "source": "CB-LC-B",
+      "target": "BUS-480-B",
+      "evidence": "load-center breaker B to 480 V bus B"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "MCC-01B",
+      "evidence": "480 V bus B tap to MCC-01B"
+    },
+    {
+      "source": "MCC-01B",
+      "target": "PUMP-RHR-B",
+      "evidence": "MCC-01B feeder to RHR pump B"
+    },
+    {
+      "source": "MCC-01B",
+      "target": "MOTOR-CCW-B",
+      "evidence": "MCC-01B feeder to CCW motor B"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "MCC-02B",
+      "evidence": "480 V bus B tap to MCC-02B"
+    },
+    {
+      "source": "MCC-02B",
+      "target": "PUMP-AFW-B",
+      "evidence": "MCC-02B feeder to AFW pump B"
+    },
+    {
+      "source": "MCC-02B",
+      "target": "VALVE-MOV-B",
+      "evidence": "MCC-02B feeder to MOV valve B"
+    },
+    {
+      "source": "MCC-02B",
+      "target": "FAN-CONTAIN-B",
+      "evidence": "MCC-02B feeder to containment fan B"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "RECT-125B",
+      "evidence": "480 V bus B feed to 125 VDC rectifier B"
+    },
+    {
+      "source": "RECT-125B",
+      "target": "BUS-DC125-B",
+      "evidence": "rectifier B output to 125 VDC bus B"
+    },
+    {
+      "source": "BUS-DC125-B",
+      "target": "BAT-125B",
+      "evidence": "battery B tap on 125 VDC bus B"
+    },
+    {
+      "source": "BUS-DC125-B",
+      "target": "INV-120B",
+      "evidence": "inverter B tap on 125 VDC bus B"
+    },
+    {
+      "source": "INV-120B",
+      "target": "PNL-ESF-B",
+      "evidence": "inverter B solid output to ESF panel B"
+    },
+    {
+      "source": "CB-13-TIE",
+      "target": "PNL-RPS-1",
+      "evidence": "dashed RPS trip/control line lands on CB-13-TIE and PNL-RPS-1"
+    },
+    {
+      "source": "CB-4K-TIE",
+      "target": "PNL-RPS-1",
+      "evidence": "dashed RPS lockout/control line lands on CB-4K-TIE and PNL-RPS-1"
+    },
+    {
+      "source": "JB-ESF-A",
+      "target": "PNL-ESF-A",
+      "evidence": "dashed vertical control drop between JB-ESF-A and PNL-ESF-A"
+    },
+    {
+      "source": "JB-ESF-B",
+      "target": "PNL-ESF-B",
+      "evidence": "dashed vertical control drop between JB-ESF-B and PNL-ESF-B"
+    },
+    {
+      "source": "PNL-ESF-A",
+      "target": "PUMP-AFW-A",
+      "evidence": "dashed ESF control line lands on PNL-ESF-A and AFW pump A"
+    },
+    {
+      "source": "PNL-ESF-A",
+      "target": "VALVE-MOV-A",
+      "evidence": "dashed ESF control line lands on PNL-ESF-A and MOV valve A"
+    },
+    {
+      "source": "PNL-ESF-B",
+      "target": "PUMP-AFW-B",
+      "evidence": "dashed ESF control line lands on PNL-ESF-B and AFW pump B"
+    },
+    {
+      "source": "PNL-ESF-B",
+      "target": "VALVE-MOV-B",
+      "evidence": "dashed ESF control line lands on PNL-ESF-B and MOV valve B"
+    }
+  ],
+  "validation": {
+    "node_count": 55,
+    "edge_count": 60,
+    "symmetric": true,
+    "zero_diagonal": true,
+    "unique_nodes": true
+  },
+  "rounds": {
+    "round_01_diego_high_recall": {
+      "node_count": 60,
+      "edge_count": 74,
+      "symmetric": true,
+      "zero_diagonal": true,
+      "unique_nodes": true
+    },
+    "round_02_jennifer_precision": {
+      "node_count": 55,
+      "edge_count": 60,
+      "symmetric": true,
+      "zero_diagonal": true,
+      "unique_nodes": true
+    },
+    "round_03_diego_saturation": {
+      "node_count": 55,
+      "edge_count": 60,
+      "symmetric": true,
+      "zero_diagonal": true,
+      "unique_nodes": true
+    },
+    "round_04_jennifer_agreement": {
+      "node_count": 55,
+      "edge_count": 60,
+      "symmetric": true,
+      "zero_diagonal": true,
+      "unique_nodes": true
+    },
+    "final": {
+      "node_count": 55,
+      "edge_count": 60,
+      "symmetric": true,
+      "zero_diagonal": true,
+      "unique_nodes": true
+    }
+  }
+}

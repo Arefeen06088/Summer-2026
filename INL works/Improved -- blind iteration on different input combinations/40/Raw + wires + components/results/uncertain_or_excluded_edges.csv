@@ -1,0 +1,12 @@
+item,status,reason
+MCC-21A--VT-21A,removed_after_round_1,"VT signal line is visible, but no MCC bus endpoint or junction dot supports a direct source edge."
+MCC-21B--VT-21B,removed_after_round_1,"VT signal line is visible, but no MCC bus endpoint or junction dot supports a direct source edge."
+MCC-21A--CT-21A,removed_after_round_1,"CT signal line is visible, but no conductor is drawn through the CT to the MCC bus."
+MCC-21B--CT-21B,removed_after_round_1,"CT signal line is visible, but no conductor is drawn through the CT to the MCC bus."
+Voltage-Sig-A / Voltage-Sig-B,excluded_from_final_nodes,"Line labels on dashed instrument-signal paths, not component symbols."
+Trip-MPA1 / Trip-MPB1,excluded_from_final_nodes,"Trip labels beside breaker control inputs, not standalone component symbols."
+"C21A-01, C21B-01, D21A-07, D21B-07, S21A-11, S21B-11",excluded,"Cable index and cable/rating labels are metadata or conductor labels, not matrix nodes."
+SWGR-21A--SWGR-21B direct edge,excluded,"A and B buses connect through TIE-BKR-21AB, not by direct splice."
+DC-BUS-21A--DC-BUS-21B,excluded,Separate 125 VDC buses; no cross-train DC tie is drawn.
+MOV-RWST crossed dashed lines,excluded,The drawing explicitly marks line crossing without dot as no junction.
+"Source Normal/Alternate, Bus Loads, channel/control-lane titles",excluded,"Area labels and headings, not components."

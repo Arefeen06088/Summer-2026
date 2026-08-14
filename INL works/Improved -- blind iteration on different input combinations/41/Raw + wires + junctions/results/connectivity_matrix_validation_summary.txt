@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 41
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\41\synthetic_npp_connectivity_matrix(3).csv
+GT normalized nodes: 58; GT normalized edges: 60
+Matrices evaluated: 5
+Best row: Diego -- Round 1 from diego_round1_connectivity_matrix.csv with Precision=0.783333, Recall=0.783333, F1=0.783333
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=47, FP=13, FN=13, Precision=0.783333, Recall=0.783333, F1=0.783333
+Primary issue: extra/misnamed/intermediate extracted nodes created false-positive edges.
+
+Extra/non-GT nodes most responsible for FP edges: BUS-1B-4.16KV (5 FP edges); BUS-1A-4.16KV (5 FP edges); OFFSITE-B (1 FP edges); OFFSITE-A (1 FP edges).
+Missing GT nodes examples: BUS-1A; BUS-1B; GRID-161A; GRID-161B.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: BUS-480E1B -- CHGR-125B.
+False-negative edge examples among GT-known nodes: BUS-480B -- CHGR-125B.
+False-positive examples involving extra/non-GT nodes: BUS-1A-4.16KV -- CB-101; BUS-1A-4.16KV -- CB-105; BUS-1A-4.16KV -- CB-TIE-1AB; BUS-1A-4.16KV -- TR-LC-1A; BUS-1A-4.16KV -- TR-SAF-1A; BUS-1B-4.16KV -- CB-102; BUS-1B-4.16KV -- CB-106; BUS-1B-4.16KV -- CB-TIE-1AB.
+False-negative examples involving missing/differently named nodes: BUS-1A -- CB-101; BUS-1A -- CB-105; BUS-1A -- CB-TIE-1AB; BUS-1A -- TR-LC-1A; BUS-1A -- TR-SAF-1A; BUS-1B -- CB-102; BUS-1B -- CB-106; BUS-1B -- CB-TIE-1AB.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (BUS-1B-4.16KV; BUS-1A-4.16KV; OFFSITE-B; OFFSITE-A), the final-row metrics would be TP=47, FP=1, FN=13, Precision=0.979167, Recall=0.783333, F1=0.870370.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=47, FP=1, FN=13, Precision=0.979167, Recall=0.783333, F1=0.870370.

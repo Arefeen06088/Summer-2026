@@ -1,0 +1,899 @@
+{
+  "document": "40",
+  "iteration": "1",
+  "round": "diego_round1_high_recall",
+  "source_restriction": "Doc40 Raw + components only; no GT, no GT-derived feedback, no Raw+wires, no OCR engines, no web",
+  "extraction_policy": "high recall; asserted_edges visually supported; uncertain_edges excluded from matrix",
+  "nodes": [
+    {
+      "id": "SWGR-21A",
+      "type": "bus",
+      "label_evidence": "Raw top/left core: thick horizontal 4.16 kV bus labeled SWGR-21A with C21A-01 label and junction dots."
+    },
+    {
+      "id": "MCC-21A",
+      "type": "bus",
+      "label_evidence": "Raw left core: rectangular 480 V 3PH motor control center bus labeled MCC-21A."
+    },
+    {
+      "id": "DC-BUS-21A",
+      "type": "bus",
+      "label_evidence": "Raw lower-left/center: thick 125 VDC horizontal bus labeled DC-BUS-21A, cable D21A-07."
+    },
+    {
+      "id": "DG-21A",
+      "type": "component",
+      "label_evidence": "Raw top-left: circular generator symbol labeled DG-21A."
+    },
+    {
+      "id": "UAT-2A",
+      "type": "component",
+      "label_evidence": "Raw top-left: transformer symbol labeled UAT-2A above DS-21A."
+    },
+    {
+      "id": "DS-21A",
+      "type": "component",
+      "label_evidence": "Raw top-left: disconnect-switch box labeled DS-21A below UAT-2A."
+    },
+    {
+      "id": "ATS-21A",
+      "type": "component",
+      "label_evidence": "Raw top-left: automatic transfer switch box labeled ATS-21A between DG/DS feeders and SWGR-21A."
+    },
+    {
+      "id": "CB-21A1",
+      "type": "component",
+      "label_evidence": "Raw upper-left: circuit breaker symbol labeled CB-21A1 below SWGR-21A."
+    },
+    {
+      "id": "TR-21A",
+      "type": "component",
+      "label_evidence": "Raw upper-left: transformer symbol labeled TR-21A between CB-21A1 and MCC-21A."
+    },
+    {
+      "id": "VT-21A",
+      "type": "component",
+      "label_evidence": "Raw left/center: circular VT symbol labeled VT-21A with dashed instrument lead."
+    },
+    {
+      "id": "CB-MPA1",
+      "type": "component",
+      "label_evidence": "Raw left core: circuit breaker symbol labeled CB-MPA1 in MCC-21A pump feeder, trip label MPA1."
+    },
+    {
+      "id": "PUMP-SI21A",
+      "type": "component",
+      "label_evidence": "Raw left core: motor/pump circle labeled PUMP-SI21A below CB-MPA1."
+    },
+    {
+      "id": "PUMP-CCW21A",
+      "type": "component",
+      "label_evidence": "Raw left core: motor/pump circle labeled PUMP-CCW21A on MCC-21A feeder."
+    },
+    {
+      "id": "FAN-RB21A",
+      "type": "component",
+      "label_evidence": "Raw left core: fan/motor circle labeled FAN-RB21A on MCC-21A feeder."
+    },
+    {
+      "id": "CT-21A",
+      "type": "component",
+      "label_evidence": "Raw left core: circular CT symbol labeled CT-21A with dashed lead down to RPS panel."
+    },
+    {
+      "id": "MOV-HV211A",
+      "type": "component",
+      "label_evidence": "Raw left core: motor-operated valve symbol labeled MOV-HV211A on MCC-21A feeder."
+    },
+    {
+      "id": "MOV-RWST21A",
+      "type": "component",
+      "label_evidence": "Raw left core: motor-operated valve symbol labeled MOV-RWST21A with no-dot crossing callout nearby."
+    },
+    {
+      "id": "XFMR-CPT21A",
+      "type": "component",
+      "label_evidence": "Raw left/center: transformer symbol labeled XFMR-CPT21A feeding AC-PNL-120A."
+    },
+    {
+      "id": "AC-PNL-120A",
+      "type": "component",
+      "label_evidence": "Raw left/center: AC panel box labeled AC-PNL-120A beneath XFMR-CPT21A."
+    },
+    {
+      "id": "RECT-21A",
+      "type": "component",
+      "label_evidence": "Raw lower-left/center: charger/rectifier box labeled RECT-21A below AC-PNL-120A."
+    },
+    {
+      "id": "BAT-21A",
+      "type": "component",
+      "label_evidence": "Raw lower-left/center: 125 VDC battery symbol labeled BAT-21A tied to DC-BUS-21A."
+    },
+    {
+      "id": "INV-21A",
+      "type": "component",
+      "label_evidence": "Raw lower-left/center: inverter box labeled INV-21A below DC-BUS-21A with dashed output to RPS-PNL-A."
+    },
+    {
+      "id": "LOCA-SIG-A",
+      "type": "logical_node",
+      "label_evidence": "Raw lower-left: circular logical signal symbol labeled LOCA-SIG-A connected by dashed line to JB-21A."
+    },
+    {
+      "id": "JB-21A",
+      "type": "component",
+      "label_evidence": "Raw lower-left: terminal block box labeled JB-21A in dashed LOCA/RPS signal path."
+    },
+    {
+      "id": "RPS-PNL-A",
+      "type": "component",
+      "label_evidence": "Raw lower-left: RPS logic panel box labeled RPS-PNL-A with terminal strip and dashed logic wiring."
+    },
+    {
+      "id": "RELAY-K21A",
+      "type": "component",
+      "label_evidence": "Raw lower-left: relay coil box labeled RELAY-K21A in RPS CH A control lane."
+    },
+    {
+      "id": "RELAY-86A",
+      "type": "component",
+      "label_evidence": "Raw lower-left: relay coil box labeled RELAY-86A in RPS CH A control lane."
+    },
+    {
+      "id": "VOLTAGE-SIG-A",
+      "type": "logical_node",
+      "label_evidence": "Raw left core/lower-left: dashed instrument line labeled VOLTAGE SIG A near MOV-RWST21A no-dot crossing."
+    },
+    {
+      "id": "TRIP-MPA1",
+      "type": "logical_node",
+      "label_evidence": "Raw left core: dashed trip-control wiring labeled TRIP MPA1 entering the CB-MPA1 trip circuit."
+    },
+    {
+      "id": "TIE-BKR-21AB",
+      "type": "component",
+      "label_evidence": "Raw top center: breaker rectangle labeled TIE-BKR-21AB between SWGR-21A and SWGR-21B."
+    },
+    {
+      "id": "SWGR-21B",
+      "type": "bus",
+      "label_evidence": "Raw top/right core: thick horizontal 4.16 kV bus labeled SWGR-21B with C21B-01 label and junction dots."
+    },
+    {
+      "id": "MCC-21B",
+      "type": "bus",
+      "label_evidence": "Raw center/right core: rectangular 480 V 3PH motor control center bus labeled MCC-21B."
+    },
+    {
+      "id": "DC-BUS-21B",
+      "type": "bus",
+      "label_evidence": "Raw lower-right/center: thick 125 VDC horizontal bus labeled DC-BUS-21B, cable D21B-07."
+    },
+    {
+      "id": "DG-21B",
+      "type": "component",
+      "label_evidence": "Raw top-right: circular generator symbol labeled DG-21B."
+    },
+    {
+      "id": "SAT-2B",
+      "type": "component",
+      "label_evidence": "Raw top-right/center: source alternate transformer symbol labeled SAT-2B."
+    },
+    {
+      "id": "DS-21B",
+      "type": "component",
+      "label_evidence": "Raw top-right/center: disconnect-switch box labeled DS-21B below SAT-2B."
+    },
+    {
+      "id": "ATS-21B",
+      "type": "component",
+      "label_evidence": "Raw top-right: automatic transfer switch box labeled ATS-21B between DG/DS feeders and SWGR-21B."
+    },
+    {
+      "id": "CB-21B1",
+      "type": "component",
+      "label_evidence": "Raw right core: circuit breaker symbol labeled CB-21B1 below SWGR-21B."
+    },
+    {
+      "id": "TR-21B",
+      "type": "component",
+      "label_evidence": "Raw right core: transformer symbol labeled TR-21B between CB-21B1 and MCC-21B."
+    },
+    {
+      "id": "VT-21B",
+      "type": "component",
+      "label_evidence": "Raw right core: circular VT symbol labeled VT-21B with dashed instrument lead."
+    },
+    {
+      "id": "CB-MPB1",
+      "type": "component",
+      "label_evidence": "Raw center/right core: circuit breaker symbol labeled CB-MPB1 in MCC-21B pump feeder, trip label MPB1."
+    },
+    {
+      "id": "PUMP-SI21B",
+      "type": "component",
+      "label_evidence": "Raw center/right core: motor/pump circle labeled PUMP-SI21B below CB-MPB1."
+    },
+    {
+      "id": "PUMP-CCW21B",
+      "type": "component",
+      "label_evidence": "Raw center/right core: motor/pump circle labeled PUMP-CCW21B on MCC-21B feeder."
+    },
+    {
+      "id": "FAN-RB21B",
+      "type": "component",
+      "label_evidence": "Raw center/right core: fan/motor circle labeled FAN-RB21B on MCC-21B feeder."
+    },
+    {
+      "id": "CT-21B",
+      "type": "component",
+      "label_evidence": "Raw center/right core: circular CT symbol labeled CT-21B with dashed lead down to RPS panel."
+    },
+    {
+      "id": "MOV-HV211B",
+      "type": "component",
+      "label_evidence": "Raw right core: motor-operated valve symbol labeled MOV-HV211B on MCC-21B feeder."
+    },
+    {
+      "id": "MOV-RWST21B",
+      "type": "component",
+      "label_evidence": "Raw right core: motor-operated valve symbol labeled MOV-RWST21B at right side of MCC-21B."
+    },
+    {
+      "id": "XFMR-CPT21B",
+      "type": "component",
+      "label_evidence": "Raw center core: transformer symbol labeled XFMR-CPT21B feeding AC-PNL-120B."
+    },
+    {
+      "id": "AC-PNL-120B",
+      "type": "component",
+      "label_evidence": "Raw center core: AC panel box labeled AC-PNL-120B beneath XFMR-CPT21B."
+    },
+    {
+      "id": "RECT-21B",
+      "type": "component",
+      "label_evidence": "Raw center/lower: charger/rectifier box labeled RECT-21B below AC-PNL-120B."
+    },
+    {
+      "id": "BAT-21B",
+      "type": "component",
+      "label_evidence": "Raw center/lower: 125 VDC battery symbol labeled BAT-21B tied to DC-BUS-21B."
+    },
+    {
+      "id": "INV-21B",
+      "type": "component",
+      "label_evidence": "Raw center/lower: inverter box labeled INV-21B below DC-BUS-21B with dashed output to RPS-PNL-B."
+    },
+    {
+      "id": "LOCA-SIG-B",
+      "type": "logical_node",
+      "label_evidence": "Raw lower-right: circular logical signal symbol labeled LOCA-SIG-B connected by dashed line to JB-21B."
+    },
+    {
+      "id": "JB-21B",
+      "type": "component",
+      "label_evidence": "Raw lower-right: terminal block box labeled JB-21B in dashed LOCA/RPS signal path."
+    },
+    {
+      "id": "RPS-PNL-B",
+      "type": "component",
+      "label_evidence": "Raw lower-right/center: RPS logic panel box labeled RPS-PNL-B with terminal strip and dashed logic wiring."
+    },
+    {
+      "id": "RELAY-K21B",
+      "type": "component",
+      "label_evidence": "Raw lower-right: relay coil box labeled RELAY-K21B in RPS CH B control lane."
+    },
+    {
+      "id": "RELAY-86B",
+      "type": "component",
+      "label_evidence": "Raw lower-right: relay coil box labeled RELAY-86B in RPS CH B control lane."
+    },
+    {
+      "id": "VOLTAGE-SIG-B",
+      "type": "logical_node",
+      "label_evidence": "Raw right core/lower-right: dashed instrument line labeled VOLTAGE SIG B near MOV-RWST21B/LOCA-SIG-B area."
+    },
+    {
+      "id": "TRIP-MPB1",
+      "type": "logical_node",
+      "label_evidence": "Raw center/right core: dashed trip-control wiring labeled TRIP MPB1 entering the CB-MPB1 trip circuit."
+    }
+  ],
+  "node_order": [
+    "SWGR-21A",
+    "MCC-21A",
+    "DC-BUS-21A",
+    "DG-21A",
+    "UAT-2A",
+    "DS-21A",
+    "ATS-21A",
+    "CB-21A1",
+    "TR-21A",
+    "VT-21A",
+    "CB-MPA1",
+    "PUMP-SI21A",
+    "PUMP-CCW21A",
+    "FAN-RB21A",
+    "CT-21A",
+    "MOV-HV211A",
+    "MOV-RWST21A",
+    "XFMR-CPT21A",
+    "AC-PNL-120A",
+    "RECT-21A",
+    "BAT-21A",
+    "INV-21A",
+    "LOCA-SIG-A",
+    "JB-21A",
+    "RPS-PNL-A",
+    "RELAY-K21A",
+    "RELAY-86A",
+    "VOLTAGE-SIG-A",
+    "TRIP-MPA1",
+    "TIE-BKR-21AB",
+    "SWGR-21B",
+    "MCC-21B",
+    "DC-BUS-21B",
+    "DG-21B",
+    "SAT-2B",
+    "DS-21B",
+    "ATS-21B",
+    "CB-21B1",
+    "TR-21B",
+    "VT-21B",
+    "CB-MPB1",
+    "PUMP-SI21B",
+    "PUMP-CCW21B",
+    "FAN-RB21B",
+    "CT-21B",
+    "MOV-HV211B",
+    "MOV-RWST21B",
+    "XFMR-CPT21B",
+    "AC-PNL-120B",
+    "RECT-21B",
+    "BAT-21B",
+    "INV-21B",
+    "LOCA-SIG-B",
+    "JB-21B",
+    "RPS-PNL-B",
+    "RELAY-K21B",
+    "RELAY-86B",
+    "VOLTAGE-SIG-B",
+    "TRIP-MPB1"
+  ],
+  "asserted_edges": [
+    {
+      "source": "DG-21A",
+      "target": "ATS-21A",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid feeder from DG-21A down then right into the left terminal of ATS-21A."
+    },
+    {
+      "source": "UAT-2A",
+      "target": "DS-21A",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Vertical solid conductor directly connects UAT-2A secondary to DS-21A."
+    },
+    {
+      "source": "DS-21A",
+      "target": "ATS-21A",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid conductor exits DS-21A bottom/right and enters ATS-21A right terminal."
+    },
+    {
+      "source": "ATS-21A",
+      "target": "SWGR-21A",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Vertical solid feeder from ATS-21A to SWGR-21A bus with black junction dot at bus."
+    },
+    {
+      "source": "SWGR-21A",
+      "target": "CB-21A1",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Vertical tap from SWGR-21A bus drops through black junction dot into CB-21A1."
+    },
+    {
+      "source": "CB-21A1",
+      "target": "TR-21A",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-21A1 to transformer TR-21A."
+    },
+    {
+      "source": "TR-21A",
+      "target": "MCC-21A",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical transformer secondary lands on MCC-21A with black dot at MCC top feeder point."
+    },
+    {
+      "source": "SWGR-21A",
+      "target": "TIE-BKR-21AB",
+      "kind": "bus_tie",
+      "confidence": "high",
+      "evidence": "SWGR-21A horizontal bus enters the left terminal of TIE-BKR-21AB."
+    },
+    {
+      "source": "TIE-BKR-21AB",
+      "target": "SWGR-21B",
+      "kind": "bus_tie",
+      "confidence": "high",
+      "evidence": "TIE-BKR-21AB right terminal continues as the SWGR-21B horizontal bus."
+    },
+    {
+      "source": "DG-21B",
+      "target": "ATS-21B",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid feeder from DG-21B down then left into ATS-21B right terminal."
+    },
+    {
+      "source": "SAT-2B",
+      "target": "DS-21B",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Vertical solid conductor directly connects SAT-2B to DS-21B."
+    },
+    {
+      "source": "DS-21B",
+      "target": "ATS-21B",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid conductor exits DS-21B bottom/left and enters ATS-21B left terminal."
+    },
+    {
+      "source": "ATS-21B",
+      "target": "SWGR-21B",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Vertical solid feeder from ATS-21B to SWGR-21B bus with black junction dot at bus."
+    },
+    {
+      "source": "SWGR-21B",
+      "target": "CB-21B1",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Vertical tap from SWGR-21B bus drops through black junction dot into CB-21B1."
+    },
+    {
+      "source": "CB-21B1",
+      "target": "TR-21B",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects CB-21B1 to transformer TR-21B."
+    },
+    {
+      "source": "TR-21B",
+      "target": "MCC-21B",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical transformer secondary lands on MCC-21B with black dot at MCC top feeder point."
+    },
+    {
+      "source": "MCC-21A",
+      "target": "CB-MPA1",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Vertical MCC-21A feeder drops from terminal/bus dots into CB-MPA1."
+    },
+    {
+      "source": "CB-MPA1",
+      "target": "PUMP-SI21A",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical feeder continues from CB-MPA1 down to PUMP-SI21A motor symbol."
+    },
+    {
+      "source": "MCC-21A",
+      "target": "PUMP-CCW21A",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-21A bus lands directly on PUMP-CCW21A motor."
+    },
+    {
+      "source": "MCC-21A",
+      "target": "FAN-RB21A",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-21A bus lands directly on FAN-RB21A fan motor."
+    },
+    {
+      "source": "MCC-21A",
+      "target": "MOV-HV211A",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-21A bus feeds MOV-HV211A valve symbol."
+    },
+    {
+      "source": "MCC-21A",
+      "target": "MOV-RWST21A",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-21A bus feeds MOV-RWST21A; nearby dashed crossing is explicitly marked no-dot/no-junction."
+    },
+    {
+      "source": "MCC-21A",
+      "target": "XFMR-CPT21A",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid branch from right end of MCC-21A bus steps down to XFMR-CPT21A primary."
+    },
+    {
+      "source": "XFMR-CPT21A",
+      "target": "AC-PNL-120A",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects XFMR-CPT21A secondary to AC-PNL-120A."
+    },
+    {
+      "source": "AC-PNL-120A",
+      "target": "RECT-21A",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid feeder from AC-PNL-120A bottom routes down to the top of RECT-21A."
+    },
+    {
+      "source": "RECT-21A",
+      "target": "DC-BUS-21A",
+      "kind": "dc_feeder",
+      "confidence": "high",
+      "evidence": "RECT-21A output conductor lands on DC-BUS-21A at a black junction dot."
+    },
+    {
+      "source": "DC-BUS-21A",
+      "target": "BAT-21A",
+      "kind": "dc_feeder",
+      "confidence": "high",
+      "evidence": "BAT-21A has a solid vertical lead to DC-BUS-21A with a black junction dot."
+    },
+    {
+      "source": "DC-BUS-21A",
+      "target": "INV-21A",
+      "kind": "dc_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical branch from DC-BUS-21A continues down to INV-21A."
+    },
+    {
+      "source": "INV-21A",
+      "target": "RPS-PNL-A",
+      "kind": "control_logic",
+      "confidence": "high",
+      "evidence": "Dashed control/logic line runs from INV-21A side terminal to RPS-PNL-A side terminal."
+    },
+    {
+      "source": "CT-21A",
+      "target": "RPS-PNL-A",
+      "kind": "instrument_signal",
+      "confidence": "high",
+      "evidence": "Short-dash/instrument lead descends from CT-21A to an RPS-PNL-A terminal strip position."
+    },
+    {
+      "source": "LOCA-SIG-A",
+      "target": "JB-21A",
+      "kind": "instrument_signal",
+      "confidence": "high",
+      "evidence": "Dashed signal line connects LOCA-SIG-A circle to the left side of JB-21A."
+    },
+    {
+      "source": "JB-21A",
+      "target": "RPS-PNL-A",
+      "kind": "instrument_signal",
+      "confidence": "high",
+      "evidence": "Dashed signal wiring leaves JB-21A and routes to top terminals of RPS-PNL-A."
+    },
+    {
+      "source": "RPS-PNL-A",
+      "target": "RELAY-K21A",
+      "kind": "control_logic",
+      "confidence": "high",
+      "evidence": "Dashed RPS CH A control lane connects RPS-PNL-A left side to RELAY-K21A."
+    },
+    {
+      "source": "RELAY-K21A",
+      "target": "RELAY-86A",
+      "kind": "control_logic",
+      "confidence": "high",
+      "evidence": "Dashed control lane segment joins RELAY-K21A and RELAY-86A."
+    },
+    {
+      "source": "RELAY-86A",
+      "target": "TRIP-MPA1",
+      "kind": "trip_control",
+      "confidence": "medium",
+      "evidence": "Dashed trip-control loop rises from RELAY-86A area toward the TRIP MPA1 lead; route is visible but partly long/edge-routed."
+    },
+    {
+      "source": "TRIP-MPA1",
+      "target": "CB-MPA1",
+      "kind": "trip_control",
+      "confidence": "high",
+      "evidence": "Dashed trip lead labeled TRIP MPA1 terminates at/inside CB-MPA1 trip connection."
+    },
+    {
+      "source": "VT-21A",
+      "target": "VOLTAGE-SIG-A",
+      "kind": "instrument_signal",
+      "confidence": "medium",
+      "evidence": "Dashed instrument run from VT-21A aligns with and continues to the dashed line labeled VOLTAGE SIG A; no-dot crossing called out near MOV-RWST21A."
+    },
+    {
+      "source": "MCC-21B",
+      "target": "CB-MPB1",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Vertical MCC-21B feeder drops from terminal/bus dots into CB-MPB1."
+    },
+    {
+      "source": "CB-MPB1",
+      "target": "PUMP-SI21B",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical feeder continues from CB-MPB1 down to PUMP-SI21B motor symbol."
+    },
+    {
+      "source": "MCC-21B",
+      "target": "PUMP-CCW21B",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-21B bus lands directly on PUMP-CCW21B motor."
+    },
+    {
+      "source": "MCC-21B",
+      "target": "FAN-RB21B",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-21B bus lands directly on FAN-RB21B fan motor."
+    },
+    {
+      "source": "MCC-21B",
+      "target": "MOV-HV211B",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-21B bus feeds MOV-HV211B valve symbol."
+    },
+    {
+      "source": "MCC-21B",
+      "target": "MOV-RWST21B",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical tap from MCC-21B bus feeds MOV-RWST21B valve symbol."
+    },
+    {
+      "source": "MCC-21B",
+      "target": "XFMR-CPT21B",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid branch from left end of MCC-21B bus steps down to XFMR-CPT21B primary."
+    },
+    {
+      "source": "XFMR-CPT21B",
+      "target": "AC-PNL-120B",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical conductor connects XFMR-CPT21B secondary to AC-PNL-120B."
+    },
+    {
+      "source": "AC-PNL-120B",
+      "target": "RECT-21B",
+      "kind": "power_feeder",
+      "confidence": "high",
+      "evidence": "Solid feeder from AC-PNL-120B bottom routes down to the top of RECT-21B."
+    },
+    {
+      "source": "RECT-21B",
+      "target": "DC-BUS-21B",
+      "kind": "dc_feeder",
+      "confidence": "high",
+      "evidence": "RECT-21B output conductor lands on DC-BUS-21B at a black junction dot."
+    },
+    {
+      "source": "DC-BUS-21B",
+      "target": "BAT-21B",
+      "kind": "dc_feeder",
+      "confidence": "high",
+      "evidence": "BAT-21B has a solid vertical lead to DC-BUS-21B with a black junction dot."
+    },
+    {
+      "source": "DC-BUS-21B",
+      "target": "INV-21B",
+      "kind": "dc_feeder",
+      "confidence": "high",
+      "evidence": "Solid vertical branch from DC-BUS-21B continues down to INV-21B."
+    },
+    {
+      "source": "INV-21B",
+      "target": "RPS-PNL-B",
+      "kind": "control_logic",
+      "confidence": "high",
+      "evidence": "Dashed control/logic line runs from INV-21B side terminal to RPS-PNL-B side terminal."
+    },
+    {
+      "source": "CT-21B",
+      "target": "RPS-PNL-B",
+      "kind": "instrument_signal",
+      "confidence": "high",
+      "evidence": "Short-dash/instrument lead descends from CT-21B to an RPS-PNL-B terminal strip position."
+    },
+    {
+      "source": "LOCA-SIG-B",
+      "target": "JB-21B",
+      "kind": "instrument_signal",
+      "confidence": "high",
+      "evidence": "Dashed signal line connects JB-21B right side to LOCA-SIG-B circle."
+    },
+    {
+      "source": "JB-21B",
+      "target": "RPS-PNL-B",
+      "kind": "instrument_signal",
+      "confidence": "high",
+      "evidence": "Dashed signal wiring leaves JB-21B and routes to top terminals of RPS-PNL-B."
+    },
+    {
+      "source": "RPS-PNL-B",
+      "target": "RELAY-K21B",
+      "kind": "control_logic",
+      "confidence": "high",
+      "evidence": "Dashed RPS CH B control lane connects RPS-PNL-B right side to RELAY-K21B."
+    },
+    {
+      "source": "RELAY-K21B",
+      "target": "RELAY-86B",
+      "kind": "control_logic",
+      "confidence": "high",
+      "evidence": "Dashed control lane segment joins RELAY-K21B and RELAY-86B."
+    },
+    {
+      "source": "RELAY-86B",
+      "target": "TRIP-MPB1",
+      "kind": "trip_control",
+      "confidence": "medium",
+      "evidence": "Dashed trip-control loop rises from RELAY-86B area toward the TRIP MPB1 lead; route is visible but partly long/edge-routed."
+    },
+    {
+      "source": "TRIP-MPB1",
+      "target": "CB-MPB1",
+      "kind": "trip_control",
+      "confidence": "high",
+      "evidence": "Dashed trip lead labeled TRIP MPB1 terminates at/inside CB-MPB1 trip connection."
+    },
+    {
+      "source": "VT-21B",
+      "target": "VOLTAGE-SIG-B",
+      "kind": "instrument_signal",
+      "confidence": "medium",
+      "evidence": "Dashed instrument run from VT-21B descends to the dashed line labeled VOLTAGE SIG B near the right-side signal loop."
+    }
+  ],
+  "uncertain_edges": [
+    {
+      "source": "VOLTAGE-SIG-A",
+      "target": "BAT-21A",
+      "status": "uncertain",
+      "reason": "Voltage-signal dashed line is near BAT-21A/125 VDC area but the visible crop does not show an unambiguous junction dot to the battery symbol.",
+      "evidence": "Raw grid r2c2 shows VOLTAGE SIG A line above BAT-21A; endpoints/open circles are present but no clear battery terminal dot."
+    },
+    {
+      "source": "VOLTAGE-SIG-A",
+      "target": "DC-BUS-21A",
+      "status": "uncertain",
+      "reason": "The dashed voltage signal may be sensing the 125 VDC bus, but its crossing/nearby endpoint lacks a definite junction dot on DC-BUS-21A.",
+      "evidence": "Raw left/lower crops show the dashed signal above the DC bus and a no-dot note elsewhere; no visible dot on the 125 VDC bus."
+    },
+    {
+      "source": "VT-21A",
+      "target": "MCC-21A",
+      "status": "uncertain",
+      "reason": "VT-21A dashed lead descends through/near the MCC boundary, but no solid terminal dot indicates a direct MCC-21A connection in this extraction view.",
+      "evidence": "Raw upper middle/left core show the VT dashed run crossing the MCC area with no visible junction dot."
+    },
+    {
+      "source": "VOLTAGE-SIG-B",
+      "target": "BAT-21B",
+      "status": "uncertain",
+      "reason": "Voltage-signal dashed routing is near BAT-21B/DC-BUS-21B, but a direct battery junction is not visually decisive.",
+      "evidence": "Raw center/right lower crops show the dashed signal lane near BAT-21B and RPS terminals without a clear dot at BAT-21B."
+    },
+    {
+      "source": "VOLTAGE-SIG-B",
+      "target": "DC-BUS-21B",
+      "status": "uncertain",
+      "reason": "The dashed voltage signal may sense the 125 VDC B bus, but no unambiguous dot on DC-BUS-21B is visible.",
+      "evidence": "Raw right/lower crops show the signal line crossing near DC-BUS-21B; conductor type and lack of dot keep it out of the matrix."
+    },
+    {
+      "source": "VT-21B",
+      "target": "MCC-21B",
+      "status": "uncertain",
+      "reason": "VT-21B dashed lead descends near the MCC/right-side bus area, but the drawing does not show a definite junction dot to MCC-21B.",
+      "evidence": "Raw right core shows the VT-21B dashed run adjacent to MCC/load area, separate from solid feeders."
+    },
+    {
+      "source": "RELAY-86B",
+      "target": "LOCA-SIG-B",
+      "status": "uncertain",
+      "reason": "The right-side vertical dashed control/trip return passes near the LOCA/JB branch; a shared junction is plausible but not visually decisive.",
+      "evidence": "Raw title/right-core crops show vertical dashed routing beside JB-21B/LOCA-SIG-B with possible close intersections."
+    },
+    {
+      "source": "RELAY-86A",
+      "target": "LOCA-SIG-A",
+      "status": "uncertain",
+      "reason": "The left-side trip/control vertical line runs near the LOCA signal area, but LOCA-SIG-A appears to connect through JB-21A rather than directly to the trip line.",
+      "evidence": "Raw left core shows LOCA-SIG-A to JB-21A dashed line and a separate long dashed trip loop nearby."
+    }
+  ],
+  "rejected_non_edges": [
+    {
+      "source": "SWGR-21A",
+      "target": "SWGR-21B",
+      "reason": "not a direct bus-to-bus connection; tie breaker component separates the two buses",
+      "evidence": "Raw top center shows SWGR-21A and SWGR-21B connected only through TIE-BKR-21AB rectangle."
+    },
+    {
+      "source": "MCC-21A",
+      "target": "VOLTAGE-SIG-A",
+      "reason": "crossing/no dot",
+      "evidence": "Raw left core explicitly labels NO DOT = NO JUNCTION where dashed voltage-signal run crosses the solid MCC/MOV feeder area."
+    },
+    {
+      "source": "MOV-RWST21A",
+      "target": "VOLTAGE-SIG-A",
+      "reason": "crossing/no dot",
+      "evidence": "The dashed VOLTAGE SIG A run passes near/through MOV-RWST21A feeder with the drawing callout NO DOT = NO JUNCTION."
+    },
+    {
+      "source": "MOV-HV211A",
+      "target": "VOLTAGE-SIG-A",
+      "reason": "only label/proximity and dashed crossing; no terminal dot",
+      "evidence": "MOV-HV211A solid feeder is separate from the nearby dashed voltage-signal routing."
+    },
+    {
+      "source": "MCC-21B",
+      "target": "VOLTAGE-SIG-B",
+      "reason": "crossing/no dot",
+      "evidence": "Right-side dashed voltage-signal/control routing passes the MCC-21B load area without a visible junction dot to the MCC bus."
+    },
+    {
+      "source": "MOV-RWST21B",
+      "target": "VOLTAGE-SIG-B",
+      "reason": "crossing/proximity without dot",
+      "evidence": "Raw right core shows the dashed signal/control line routed beside MOV-RWST21B but no dot at the solid MOV feeder."
+    },
+    {
+      "source": "CT-21A",
+      "target": "DC-BUS-21A",
+      "reason": "instrument lead crosses/descends near DC area but no dot on DC bus",
+      "evidence": "CT-21A dashed lead continues to RPS-PNL-A terminals and does not visibly junction to the 125 VDC bus."
+    },
+    {
+      "source": "CT-21B",
+      "target": "DC-BUS-21B",
+      "reason": "instrument lead crosses/descends near DC area but no dot on DC bus",
+      "evidence": "CT-21B dashed lead continues to RPS-PNL-B terminals and does not visibly junction to the 125 VDC bus."
+    },
+    {
+      "source": "CB-MPA1",
+      "target": "PUMP-CCW21A",
+      "reason": "separate vertical feeders from MCC-21A; no bridging conductor",
+      "evidence": "PUMP-SI21A is below CB-MPA1; PUMP-CCW21A has its own direct MCC tap."
+    },
+    {
+      "source": "CB-MPB1",
+      "target": "PUMP-CCW21B",
+      "reason": "separate vertical feeders from MCC-21B; no bridging conductor",
+      "evidence": "PUMP-SI21B is below CB-MPB1; PUMP-CCW21B has its own direct MCC tap."
+    }
+  ],
+  "notes": [
+    "Raw schematic was treated as decisive; detected overlay and generated previews were used only as visual aids.",
+    "Solid feeders were treated as AC/DC power connections according to the visible legend; dashed/short-dash runs were treated as control, logic, trip, or instrument signal paths according to visual context.",
+    "Black dots at buses/terminals were treated as junction evidence. Crossings without dots, including the explicit NO DOT = NO JUNCTION callout near MOV-RWST21A, were not asserted.",
+    "Validation passed while writing: 59 nodes, 58 asserted undirected edges, matrix edge count 58, symmetric matrix, zero diagonal."
+  ]
+}

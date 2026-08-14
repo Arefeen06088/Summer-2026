@@ -1,0 +1,66 @@
+{
+  "nodes": 57,
+  "included_edge_rows": 58,
+  "unique_undirected_edges": 58,
+  "duplicate_edge_rows": 0,
+  "validation_passed": true,
+  "matrix_symmetric": true,
+  "diagonal_zero": true,
+  "matrix_header_row_match_nodes": true,
+  "unknown_endpoint_count": 0,
+  "unknown_edges": [],
+  "duplicate_pair_count": 0,
+  "duplicate_pairs": [],
+  "edge_kind_counts": {
+    "125vdc_feeder": 6,
+    "control_logic": 6,
+    "instrument_signal": 8,
+    "internal_bus": 2,
+    "power_feeder": 34,
+    "trip_control": 2
+  },
+  "confidence_counts": {
+    "high": 52,
+    "medium": 6
+  },
+  "uncertain_edges": [
+    {
+      "source": "CT-21A",
+      "target": "RPS-PNL-A",
+      "confidence": "medium",
+      "reason": "Dashed CT-21A signal line continues down to a top terminal on RPS-PNL-A."
+    },
+    {
+      "source": "VT-21A",
+      "target": "RPS-PNL-A",
+      "confidence": "medium",
+      "reason": "VT-21A dashed voltage signal route visually continues to RPS-PNL-A while intermediate route label is excluded."
+    },
+    {
+      "source": "RELAY-86A",
+      "target": "CB-MPA1",
+      "confidence": "medium",
+      "reason": "Dash-dot trip-control route from RELAY-86A rises and branches into CB-MPA1 trip terminal."
+    },
+    {
+      "source": "CT-21B",
+      "target": "RPS-PNL-B",
+      "confidence": "medium",
+      "reason": "Dashed CT-21B signal line continues down to a top terminal on RPS-PNL-B."
+    },
+    {
+      "source": "VT-21B",
+      "target": "RPS-PNL-B",
+      "confidence": "medium",
+      "reason": "VT-21B dashed voltage signal route visually continues to RPS-PNL-B while intermediate route label is excluded."
+    },
+    {
+      "source": "RELAY-86B",
+      "target": "CB-MPB1",
+      "confidence": "medium",
+      "reason": "Dash-dot trip-control route from RELAY-86B rises and branches into CB-MPB1 trip terminal."
+    }
+  ],
+  "round01_nodes_csv_copied_exactly": true,
+  "round01_edges_csv_copied_exactly": true
+}

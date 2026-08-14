@@ -1,0 +1,69 @@
+{
+  "document": 37,
+  "iteration": 1,
+  "created_at": "2026-07-22T23:04:36",
+  "resource_location": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\37\\Raw + wires + components",
+  "codes_dir": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\37\\Raw + wires + components\\codes",
+  "results_dir": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\37\\Raw + wires + components\\results",
+  "final_node_count": 53,
+  "final_edge_count": 55,
+  "high_confidence_edge_count": 52,
+  "medium_confidence_edge_count": 3,
+  "agents": [
+    {
+      "name": "Diego",
+      "role": "high-recall extractor"
+    },
+    {
+      "name": "Jennifer",
+      "role": "precision reviewer/refiner"
+    }
+  ],
+  "rounds": [
+    {
+      "round": "round_01_diego",
+      "agent": "Diego",
+      "node_count": 55,
+      "edge_count": 60
+    },
+    {
+      "round": "round_02_jennifer",
+      "agent": "Jennifer",
+      "node_count": 53,
+      "edge_count": 55
+    },
+    {
+      "round": "round_03_diego",
+      "agent": "Diego",
+      "node_count": 53,
+      "edge_count": 55
+    },
+    {
+      "round": "round_04_jennifer_final",
+      "agent": "Jennifer",
+      "node_count": 53,
+      "edge_count": 55
+    }
+  ],
+  "final_files": {
+    "matrix": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\37\\Raw + wires + components\\results\\final_connectivity_matrix.csv",
+    "edges": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\37\\Raw + wires + components\\results\\final_edges.csv",
+    "node_order": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\37\\Raw + wires + components\\results\\final_node_order.csv",
+    "report": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\37\\Raw + wires + components\\results\\extraction_report.md",
+    "token_usage": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\37\\Raw + wires + components\\results\\token_usage_estimate.csv"
+  },
+  "actual_usage_available": false,
+  "responses_counting_endpoint_used": false,
+  "token_usage_expected_total": 189090,
+  "extraction_constraints": {
+    "gt_or_feedback_used": false,
+    "off_the_shelf_ocr_used": false,
+    "allowed_inputs": [
+      "raw schematic image",
+      "detected components/logical overlay",
+      "wires mask",
+      "wires mask overlay",
+      "visual crops made from those images"
+    ]
+  }
+}

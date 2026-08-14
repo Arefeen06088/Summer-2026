@@ -1,0 +1,60 @@
+source,target,type,confidence,evidence
+OFFSITE A,TR-1A,power,0.95,solid source line to transformer primary
+TR-1A,CB-101,power,0.95,solid transformer secondary to breaker
+CB-101,BUS-1A,power,0.95,breaker output lands on BUS-1A
+EDG-1A,CB-105,power,0.95,solid EDG feeder into breaker
+CB-105,BUS-1A,power,0.95,breaker output to EDG A incoming bus tap
+BUS-1A,CB-TIE-1AB,power,0.95,solid bus end to tie breaker
+CB-TIE-1AB,BUS-1B,power,0.95,tie breaker output to BUS-1B
+BUS-1B,CB-102,power,0.95,solid bus end to breaker
+CB-102,TR-1B,power,0.95,breaker output to transformer
+TR-1B,OFFSITE B,power,0.95,solid transformer primary to source
+EDG-1B,CB-106,power,0.95,solid EDG feeder into breaker
+CB-106,BUS-1B,power,0.95,breaker output to EDG B incoming bus tap
+BUS-1A,TR-LC-1A,power,0.90,solid feeder drops from BUS-1A to transformer
+TR-LC-1A,CB-201,power,0.95,transformer secondary to breaker
+CB-201,BUS-480A,power,0.95,breaker output to BUS-480A
+BUS-1A,TR-SAF-1A,power,0.90,solid feeder drops from BUS-1A to transformer
+TR-SAF-1A,CB-203,power,0.95,transformer secondary to breaker
+CB-203,BUS-480E1A,power,0.95,breaker output to BUS-480E1A
+BUS-1B,TR-LC-1B,power,0.90,solid feeder drops from BUS-1B to transformer
+TR-LC-1B,CB-202,power,0.95,transformer secondary to breaker
+CB-202,BUS-480B,power,0.95,breaker output to BUS-480B
+BUS-1B,TR-SAF-1B,power,0.90,solid feeder drops from BUS-1B to transformer
+TR-SAF-1B,CB-204,power,0.95,transformer secondary to breaker
+CB-204,BUS-480E1B,power,0.95,breaker output to BUS-480E1B
+BUS-480A,MCC-1A,power,0.95,solid branch from bus to MCC
+MCC-1A,PUMP-CCW-103A,power,0.95,solid feeder from MCC to pump
+BUS-480A,MCC-1C,power,0.95,solid branch from bus to MCC
+MCC-1C,FAN-CRHV-104A,power,0.95,solid feeder from MCC to fan
+BUS-480E1A,MCC-ESS-A,power,0.95,solid branch from bus to MCC
+MCC-ESS-A,PUMP-SI-101A,power,0.95,solid feeder from MCC to pump
+MCC-ESS-A,PUMP-RHR-102A,power,0.95,solid feeder from MCC to pump
+MCC-ESS-A,MOV-1201A,power,0.95,solid feeder from MCC to MOV
+BUS-480B,MCC-1B,power,0.95,solid branch from bus to MCC
+MCC-1B,PUMP-CCW-103B,power,0.95,solid feeder from MCC to pump
+BUS-480B,MCC-1D,power,0.95,solid branch from bus to MCC
+MCC-1D,FAN-CRHV-104B,power,0.95,solid feeder from MCC to fan
+BUS-480E1B,MCC-ESS-B,power,0.95,solid branch from bus to MCC
+MCC-ESS-B,PUMP-SI-101B,power,0.95,solid feeder from MCC to pump
+MCC-ESS-B,PUMP-RHR-102B,power,0.95,solid feeder from MCC to pump
+MCC-ESS-B,MOV-1201B,power,0.95,solid feeder from MCC to MOV
+BUS-480A,CHGR-125A,power,0.85,solid feeder via left BUS-480A cable path
+CHGR-125A,DC-BUS-125A,power,0.95,charger DC side to DC bus
+BAT-125A,DC-BUS-125A,power,0.95,battery lead to DC bus
+DC-BUS-125A,INV-120A,power,0.95,DC bus to inverter
+INV-120A,UPS-BUS-A,power,0.95,inverter output to UPS bus
+UPS-BUS-A,PANEL-RPS-A,power,0.90,solid feeder from UPS bus to panel
+UPS-BUS-A,INST-RACK-1,power,0.90,solid feeder from UPS bus to rack top port
+BUS-480E1B,CHGR-125B,power,0.85,solid feeder via right BUS-480E1B cable path
+CHGR-125B,DC-BUS-125B,power,0.95,charger DC side to DC bus
+BAT-125B,DC-BUS-125B,power,0.95,battery lead to DC bus
+DC-BUS-125B,INV-120B,power,0.95,DC bus to inverter
+INV-120B,UPS-BUS-B,power,0.95,inverter output to UPS bus
+UPS-BUS-B,PANEL-RPS-B,power,0.90,solid feeder from UPS bus to panel
+CB-105,RELAY-K86A,control/interlock,0.85,dashed control line to relay port
+RELAY-K86A,PANEL-RPS-A,control/interlock,0.90,dashed vertical line from relay to panel port
+PANEL-RPS-A,JB-ESF-01,control/interlock,0.90,dashed line from panel to JB left port
+JB-ESF-01,PANEL-RPS-B,control/interlock,0.90,dashed line from JB right port to panel
+PANEL-RPS-B,RELAY-K86B,control/interlock,0.90,dashed vertical line from panel port to relay
+RELAY-K86B,CB-106,control/interlock,0.85,dashed control line from relay port to breaker

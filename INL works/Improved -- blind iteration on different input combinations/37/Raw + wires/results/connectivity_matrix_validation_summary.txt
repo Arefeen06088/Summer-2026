@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 37
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\37\synthetic_npp_connectivity_matrix_v2(1).csv
+GT normalized nodes: 55; GT normalized edges: 58
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from doc37_iteration1_jennifer_r1_matrix.csv with Precision=0.839286, Recall=0.810345, F1=0.824561
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=47, FP=9, FN=11, Precision=0.839286, Recall=0.810345, F1=0.824561
+Primary issue: extra/misnamed/intermediate extracted nodes created false-positive edges.
+
+Extra/non-GT nodes most responsible for FP edges: 6.9 KV SWGR B (3 FP edges); 6.9 KV SWGR A (3 FP edges); CB-TIE-6KV (2 FP edges).
+Missing GT nodes examples: CB-TIE-6K; SWGR-1EA; SWGR-1EB.
+Close-but-not-exact name examples: CB-TIE-6KV -> CB-TIE-6K (0.95).
+False-positive edge examples among GT-known nodes: INST-RACK-A -- PAN-RPS-A.
+False-negative edge examples among GT-known nodes: PAN-RPS-A -- PLC-ESF; PAN-RPS-A -- RELAY-K12A; PAN-RPS-B -- RELAY-K12B.
+False-positive examples involving extra/non-GT nodes: 6.9 KV SWGR A -- ATS-1A; 6.9 KV SWGR A -- CB-103A; 6.9 KV SWGR A -- CB-DG1A; 6.9 KV SWGR B -- ATS-1B; 6.9 KV SWGR B -- CB-103B; 6.9 KV SWGR B -- CB-DG1B; BUS-6KA -- CB-TIE-6KV; BUS-6KB -- CB-TIE-6KV.
+False-negative examples involving missing/differently named nodes: ATS-1A -- SWGR-1EA; ATS-1B -- SWGR-1EB; BUS-6KA -- CB-TIE-6K; BUS-6KB -- CB-TIE-6K; CB-103A -- SWGR-1EA; CB-103B -- SWGR-1EB; CB-DG1A -- SWGR-1EA; CB-DG1B -- SWGR-1EB.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (6.9 KV SWGR B; 6.9 KV SWGR A; CB-TIE-6KV), the final-row metrics would be TP=47, FP=1, FN=11, Precision=0.979167, Recall=0.810345, F1=0.886792.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=47, FP=1, FN=11, Precision=0.979167, Recall=0.810345, F1=0.886792.

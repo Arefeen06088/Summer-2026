@@ -1,0 +1,57 @@
+source,target,evidence
+AUX-TR-1A,CB-101,Top-left offsite feeder. CB-101 is drawn inline between GRID-345 and AUX-TR-1A.
+CB-101,GRID-345,GRID-345 bus ties directly into CB-101 at the left top feeder.
+GRID-345,CB-102,GRID-345 bus ties directly into CB-102 at the right top feeder.
+CB-102,AUX-TR-1B,Top-right offsite feeder. CB-102 is drawn inline between GRID-345 and AUX-TR-1B.
+AUX-TR-1A,BUS-6KA,Transformer secondary drops to BUS-6KA.
+AUX-TR-1B,BUS-6KB,Transformer secondary drops to BUS-6KB.
+BUS-6KA,CB-TIE-6K,Horizontal bus tie breaker connects between the two 6 kV buses.
+CB-TIE-6K,BUS-6KB,Horizontal bus tie breaker connects between the two 6 kV buses.
+BUS-6KA,CB-103A,Train A feeder leaves BUS-6KA through CB-103A.
+CB-103A,SWGR-1EA,CB-103A output enters SWGR-1EA.
+DG-1A,CB-DG1A,Emergency diesel generator 1A feeds its breaker.
+CB-DG1A,SWGR-1EA,DG breaker output connects into Train A switchgear.
+SWGR-1EA,ATS-1A,Train A switchgear feeder runs to ATS-1A.
+ATS-1A,RELAY-K12A,Dashed control C01 leaves ATS-1A and terminates at RELAY-K12A.
+ATS-1A,TR-480A,ATS-1A output feeds transformer TR-480A.
+TR-480A,BUS-480A,TR-480A secondary connects to BUS-480A.
+BUS-480A,MCC-1A,480 V bus feeds Train A MCC.
+MCC-1A,PUMP-SI-1A,MCC-1A branch to safety injection pump 1A.
+MCC-1A,PUMP-RHR-1A,MCC-1A branch to residual heat removal pump 1A.
+MCC-1A,PUMP-CCW-1A,MCC-1A branch to component cooling water pump 1A.
+MCC-1A,FAN-RB-1A,MCC-1A branch to reactor building fan 1A.
+MCC-1A,MOV-HPCI-1A,MCC-1A branch to HPCI motor-operated valve 1A.
+MCC-1A,VALVE-SW-1A,MCC-1A branch to service water valve 1A.
+BUS-480A,CHGR-125A,480 V bus supplies charger CHGR-125A.
+CHGR-125A,BUS-125DCA,Charger output lands on the 125 VDC A bus.
+BAT-125A,BUS-125DCA,Battery BAT-125A lands directly on the 125 VDC A bus.
+BUS-125DCA,INV-120A,DC bus feeds inverter INV-120A.
+BUS-125DCA,GND-01A,Labeled ground/reference tap GND-01A connects to the DC A bus.
+INV-120A,BUS-120A,Inverter output feeds BUS-120A.
+BUS-120A,PAN-RPS-A,AC instrumentation bus feeds RPS panel A.
+BUS-120A,INST-RACK-A,AC instrumentation bus feeds instrument rack A.
+PAN-RPS-A,PLC-ESF,Dashed functional cable C03 runs from PAN-RPS-A to PLC-ESF.
+BUS-6KB,CB-103B,Train B feeder leaves BUS-6KB through CB-103B.
+CB-103B,SWGR-1EB,CB-103B output enters SWGR-1EB.
+DG-1B,CB-DG1B,Emergency diesel generator 1B feeds its breaker.
+CB-DG1B,SWGR-1EB,DG breaker output connects into Train B switchgear.
+SWGR-1EB,ATS-1B,Train B switchgear feeder runs to ATS-1B.
+ATS-1B,RELAY-K12B,Dashed control C04 leaves ATS-1B and terminates at RELAY-K12B.
+ATS-1B,TR-480B,ATS-1B output feeds transformer TR-480B.
+TR-480B,BUS-480B,TR-480B secondary connects to BUS-480B.
+BUS-480B,MCC-1B,480 V bus feeds Train B MCC.
+MCC-1B,PUMP-SI-1B,MCC-1B branch to safety injection pump 1B.
+MCC-1B,PUMP-RHR-1B,MCC-1B branch to residual heat removal pump 1B.
+MCC-1B,PUMP-CCW-1B,MCC-1B branch to component cooling water pump 1B.
+MCC-1B,FAN-RB-1B,MCC-1B branch to reactor building fan 1B.
+MCC-1B,MOV-HPCI-1B,MCC-1B branch to HPCI motor-operated valve 1B.
+MCC-1B,VALVE-SW-1B,MCC-1B branch to service water valve 1B.
+BUS-480B,CHGR-125B,480 V bus supplies charger CHGR-125B.
+CHGR-125B,BUS-125DCB,Charger output lands on the 125 VDC B bus.
+BAT-125B,BUS-125DCB,Battery BAT-125B lands directly on the 125 VDC B bus.
+BUS-125DCB,INV-120B,DC bus feeds inverter INV-120B.
+BUS-125DCB,GND-01B,Labeled ground/reference tap GND-01B connects to the DC B bus.
+INV-120B,BUS-120B,Inverter output feeds BUS-120B.
+BUS-120B,PAN-RPS-B,AC instrumentation bus feeds RPS panel B.
+BUS-120B,INST-RACK-B,AC instrumentation bus feeds instrument rack B.
+PLC-ESF,PAN-RPS-B,Dashed functional cable C06 runs from PLC-ESF to PAN-RPS-B.

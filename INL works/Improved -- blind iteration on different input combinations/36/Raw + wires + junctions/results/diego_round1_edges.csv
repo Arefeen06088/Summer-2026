@@ -1,0 +1,72 @@
+source,target,confidence,line_type,evidence
+GRID-230-A,CB-SW-A,0.96,solid,Raw top-left: solid single-line conductor from GRID-230-A circle right port to CB-SW-A left port.
+CB-SW-A,TR-SU-A,0.96,solid,Raw top-left: solid conductor exits CB-SW-A right port and enters TR-SU-A left port.
+TR-SU-A,SU-A,0.93,solid,Raw top-left: TR-SU-A right port feeds an orthogonal solid run down/right to the small SU-A source-entry label.
+SU-A,BUS-13K-A,0.94,solid,Raw top-left/top-center: SU-A labeled source entry lands on the left end of BUS-13K-A with a filled tap.
+GEN-DG-A,CB-DG-A,0.96,solid,Raw top-left: solid conductor from GEN-DG-A circle right port to CB-DG-A left port.
+CB-DG-A,TR-EDG-A,0.96,solid,Raw top-left: solid conductor from CB-DG-A right port to TR-EDG-A left port.
+TR-EDG-A,EDG-A,0.93,solid,Raw top-left: TR-EDG-A right port continues on the emergency diesel feeder toward the labeled EDG-A bus tap.
+EDG-A,BUS-13K-A,0.94,solid,Raw top-left/top-center: EDG-A label sits at a filled tap on BUS-13K-A reached by the diesel transformer feeder.
+GRID-230-B,CB-SW-B,0.96,solid,Raw top-right: solid single-line conductor from GRID-230-B circle left port to CB-SW-B right port.
+CB-SW-B,TR-SU-B,0.96,solid,Raw top-right: solid conductor from CB-SW-B left port to TR-SU-B right port.
+TR-SU-B,SU-B,0.93,solid,Raw top-right: TR-SU-B left port follows an orthogonal solid run down/left to the small SU-B source-entry label.
+SU-B,BUS-13K-B,0.94,solid,Raw top-right/top-center: SU-B source-entry run lands on BUS-13K-B at the filled source tap.
+GEN-DG-B,CB-DG-B,0.96,solid,Raw top-right: solid conductor from GEN-DG-B circle left port to CB-DG-B right port.
+CB-DG-B,TR-EDG-B,0.96,solid,Raw top-right: solid conductor from CB-DG-B left port to TR-EDG-B right port.
+TR-EDG-B,EDG-B,0.93,solid,Raw top-right/top-center: TR-EDG-B left port feeds the labeled EDG-B tap on the 13 kV bus run.
+EDG-B,BUS-13K-B,0.94,solid,Raw top-right/top-center: EDG-B label is placed at a filled tap on BUS-13K-B.
+BUS-13K-A,CB-13-TIE,0.88,solid,Raw top-center: BUS-13K-A thick horizontal bus enters the left port of CB-13-TIE; tie is tagged TIE OPEN but conductor is drawn.
+CB-13-TIE,BUS-13K-B,0.88,solid,Raw top-center: CB-13-TIE right port continues as the thick BUS-13K-B horizontal bus; tie is tagged TIE OPEN.
+BUS-13K-A,TR-4K-A,0.95,solid,Raw top/center: filled tap on BUS-13K-A drops vertically to TR-4K-A top port.
+TR-4K-A,CB-4K-A,0.96,solid,Raw center: TR-4K-A bottom port connects by vertical solid conductor to CB-4K-A top port.
+CB-4K-A,BUS-4K-A,0.96,solid,Raw center-left: CB-4K-A bottom port lands on the labeled BUS-4K-A / 4.16 kV bus with a filled tap.
+BUS-13K-B,TR-4K-B,0.95,solid,Raw top/center: filled tap on BUS-13K-B drops vertically to TR-4K-B top port.
+TR-4K-B,CB-4K-B,0.96,solid,Raw center-right: TR-4K-B bottom port connects by vertical solid conductor to CB-4K-B top port.
+CB-4K-B,BUS-4K-B,0.96,solid,Raw center-right: CB-4K-B bottom port lands on the labeled BUS-4K-B / 4.16 kV bus with a filled tap.
+BUS-4K-A,CB-4K-TIE,0.88,solid,Raw center: BUS-4K-A thick horizontal bus enters CB-4K-TIE left port; RPS lockout label is adjacent.
+CB-4K-TIE,BUS-4K-B,0.88,solid,Raw center: CB-4K-TIE right port continues to BUS-4K-B as a thick horizontal bus; tie device is drawn in-line.
+CB-13-TIE,RPS-TRIP,0.63,dashed,Raw center/top: dashed control corridor leaves the CB-13-TIE underside/left area and passes through the small RPS TRIP box.
+RPS-TRIP,PNL-RPS-1,0.55,dashed,Raw center: same RPS TRIP dashed corridor descends and turns toward the left side of PNL-RPS-1; endpoint is visually plausible but partly crowded by boundaries.
+RPS-TRIP,CB-4K-TIE,0.52,dashed,Raw center: RPS TRIP dashed route runs down beside the 4 kV tie region and appears to enter the CB-4K-TIE/RPS lockout control area.
+CB-4K-TIE,RPS-LOCKOUT,0.76,dashed,Raw center: control drop is drawn from CB-4K-TIE lower port through the labeled RPS LOCKOUT box/label area.
+RPS-LOCKOUT,PNL-RPS-1,0.76,dashed,Raw center/control crop: vertical control line continues from RPS LOCKOUT down to the top port of PNL-RPS-1.
+BUS-4K-A,TR-480-A,0.95,solid,Raw mid-left: filled tap on BUS-4K-A drops vertically to TR-480-A top port.
+TR-480-A,CB-LC-A,0.96,solid,Raw mid-left/lower bus: TR-480-A bottom port feeds CB-LC-A top port with a vertical solid conductor.
+CB-LC-A,BUS-480-A,0.96,solid,Raw lower bus center: CB-LC-A bottom port lands on BUS-480-A at the filled 480 V load-center tap.
+BUS-4K-B,TR-480-B,0.95,solid,Raw mid-right: filled tap on BUS-4K-B drops vertically to TR-480-B top port.
+TR-480-B,CB-LC-B,0.96,solid,Raw mid-right/lower bus: TR-480-B bottom port feeds CB-LC-B top port with a vertical solid conductor.
+CB-LC-B,BUS-480-B,0.96,solid,Raw lower bus center/right: CB-LC-B bottom port lands on BUS-480-B at the filled 480 V load-center tap.
+BUS-480-A,LC-A1,0.88,solid,Raw left/mid: LC-A1 label sits over a filled tap on BUS-480-A.
+LC-A1,MCC-01A,0.92,solid,Raw left/mid: vertical solid drop from LC-A1 bus tap enters the top port of MCC-01A.
+BUS-480-A,LC-A2,0.88,solid,Raw lower bus center: LC-A2 label marks the filled tap region on BUS-480-A near the MCC-02A feed.
+LC-A2,MCC-02A,0.92,solid,Raw lower bus center: vertical solid drop from LC-A2 tap enters the top port of MCC-02A.
+BUS-480-B,LC-B1,0.88,solid,Raw lower bus center: LC-B1 label sits over a filled tap on BUS-480-B.
+LC-B1,MCC-01B,0.92,solid,Raw lower bus center: vertical solid drop from LC-B1 bus tap enters MCC-01B top port.
+BUS-480-B,LC-B2,0.88,solid,Raw right/mid: LC-B2 label marks a filled tap on BUS-480-B.
+LC-B2,MCC-02B,0.92,solid,Raw right/mid: vertical solid drop from LC-B2 bus tap enters MCC-02B top port.
+MCC-01A,PUMP-RHR-A,0.96,solid,Raw bottom-left: MCC-01A lower-left port has a solid feeder to PUMP-RHR-A.
+MCC-01A,MOTOR-CCW-A,0.96,solid,Raw bottom-left: MCC-01A lower-right port has a solid feeder to MOTOR-CCW-A.
+MCC-02A,PUMP-AFW-A,0.96,solid,Raw bottom-left/center: MCC-02A left lower branch feeds PUMP-AFW-A with a solid conductor.
+MCC-02A,VALVE-MOV-A,0.94,solid,Raw bottom-center: MCC-02A center branch feeds VALVE-MOV-A through the small MOV actuator box.
+MCC-02A,FAN-CONTAIN-A,0.94,solid,Raw bottom-center: MCC-02A right branch runs horizontally then down to FAN-CONTAIN-A.
+MCC-01B,PUMP-RHR-B,0.96,solid,Raw bottom-center/right: MCC-01B lower-left branch feeds PUMP-RHR-B with a solid conductor.
+MCC-01B,MOTOR-CCW-B,0.96,solid,Raw bottom-center/right: MCC-01B lower-right branch feeds MOTOR-CCW-B with a solid conductor.
+MCC-02B,PUMP-AFW-B,0.96,solid,Raw bottom-right: MCC-02B left lower branch feeds PUMP-AFW-B with a solid conductor.
+MCC-02B,VALVE-MOV-B,0.94,solid,Raw bottom-right: MCC-02B center branch feeds VALVE-MOV-B through the small MOV actuator box.
+MCC-02B,FAN-CONTAIN-B,0.94,solid,Raw bottom-right: MCC-02B right branch runs horizontally then down to FAN-CONTAIN-B.
+BUS-480-A,RECT-125A,0.90,solid,Raw bottom-left/overview: 480 V bus left-side tap routes down and into the AC port/top of RECT-125A.
+RECT-125A,BUS-DC125-A,0.96,solid,Raw bottom-left/lower bus: RECT-125A DC side exits right and lands on the thick BUS-DC125-A horizontal bus.
+BUS-DC125-A,BAT-125A,0.96,solid,Raw lower bus center/left: filled tap on BUS-DC125-A drops vertically to BAT-125A terminals.
+BUS-DC125-A,INV-120A,0.96,solid,Raw lower bus center: BUS-DC125-A thick DC bus enters INV-120A left DC port.
+BUS-480-B,RECT-125B,0.90,solid,Raw right/bottom-right: 480 V bus right-side tap routes down and into the AC port/top of RECT-125B.
+RECT-125B,BUS-DC125-B,0.96,solid,Raw bottom-right: RECT-125B DC side exits left and lands on the thick BUS-DC125-B horizontal bus.
+BUS-DC125-B,BAT-125B,0.96,solid,Raw lower bus center/right: filled tap on BUS-DC125-B drops vertically to BAT-125B terminals.
+BUS-DC125-B,INV-120B,0.96,solid,Raw lower bus center: BUS-DC125-B thick DC bus enters INV-120B right-side DC port.
+INV-120A,PNL-ESF-A,0.90,solid,Raw bottom-center: INV-120A top/AC side has a solid routed conductor up to the bottom port of PNL-ESF-A.
+INV-120B,PNL-ESF-B,0.90,solid,Raw bottom-center: INV-120B top/AC side has a solid routed conductor up to the bottom port of PNL-ESF-B.
+JB-ESF-A,PNL-ESF-A,0.88,dashed,Raw control center: dashed vertical control line connects JB-ESF-A bottom port to PNL-ESF-A top port.
+JB-ESF-B,PNL-ESF-B,0.88,dashed,Raw control center: dashed vertical control line connects JB-ESF-B bottom port to PNL-ESF-B top port.
+PNL-ESF-A,PUMP-AFW-A,0.64,dashed,Raw lower bus/control crop: PUMP-AFW-A dashed drop joins the Train A dashed ESF control corridor that enters PNL-ESF-A side ports.
+PNL-ESF-A,VALVE-MOV-A,0.64,dashed,Raw lower bus/control crop: VALVE-MOV-A dashed drop joins the same Train A dashed ESF control corridor into PNL-ESF-A.
+PNL-ESF-B,PUMP-AFW-B,0.64,dashed,Raw lower bus/right: PUMP-AFW-B dashed drop joins the Train B dashed ESF control corridor routed to PNL-ESF-B side ports.
+PNL-ESF-B,VALVE-MOV-B,0.64,dashed,Raw lower bus/right: VALVE-MOV-B dashed drop joins the Train B dashed ESF control corridor routed to PNL-ESF-B side ports.

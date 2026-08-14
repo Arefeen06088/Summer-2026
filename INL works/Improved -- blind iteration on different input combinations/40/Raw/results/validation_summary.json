@@ -1,0 +1,57 @@
+{
+  "document": "40",
+  "iteration": "1",
+  "raw_image": "raw -- synthetic_nuclear_distribution_schematic.png",
+  "final": {
+    "node_count": 55,
+    "edge_count": 56,
+    "matrix_size": [
+      55,
+      55
+    ],
+    "diagonal_zero": true,
+    "symmetric": true,
+    "errors": [],
+    "valid": true
+  },
+  "rounds": [
+    {
+      "round": "01",
+      "agent": "Diego",
+      "stage": "high_recall",
+      "node_count": 55,
+      "edge_count": 66,
+      "valid": true,
+      "notes": "High-recall graph retained visually plausible review extras before precision pruning."
+    },
+    {
+      "round": "02",
+      "agent": "Jennifer",
+      "stage": "precision_review",
+      "node_count": 55,
+      "edge_count": 56,
+      "valid": true,
+      "notes": "Precision review removed unsupported crossing/nearby-line candidates without junction dots."
+    },
+    {
+      "round": "03",
+      "agent": "Diego",
+      "stage": "saturation",
+      "node_count": 55,
+      "edge_count": 56,
+      "valid": true,
+      "notes": "Diego accepted Jennifer's refined graph."
+    },
+    {
+      "round": "04",
+      "agent": "Jennifer",
+      "stage": "final",
+      "node_count": 55,
+      "edge_count": 56,
+      "valid": true,
+      "notes": "Jennifer confirmed graph content and corrected the bookkeeping count to 56 edges."
+    }
+  ],
+  "no_gt_used": true,
+  "raw_only_scope": true
+}

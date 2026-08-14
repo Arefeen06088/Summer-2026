@@ -1,0 +1,290 @@
+{
+  "document": "37",
+  "iteration": "2",
+  "round": "2",
+  "agent": "Jennifer",
+  "final_status": "saturation_agreement_no_new_visually_supported_correction",
+  "source_restriction": "Doc37 Raw + components and listed round outputs only; no GT, no GT-derived feedback, no Raw+wires, no OCR engines, no web",
+  "node_count": 55,
+  "nodes": [
+    {
+      "id": "GRID-345",
+      "type": "source",
+      "evidence": "top center 3-phase source circle labeled GRID-345 / 6.9 kV offsite 345 kV"
+    },
+    {
+      "id": "CB-101",
+      "type": "breaker",
+      "evidence": "top row breaker labeled CB-101 / 52-1A between GRID-345 and AUX-TR-1A"
+    },
+    {
+      "id": "AUX-TR-1A",
+      "type": "transformer",
+      "evidence": "top transformer symbol labeled AUX-TR-1A with 345/6.9 kV marking"
+    },
+    {
+      "id": "BUS-6KA",
+      "type": "bus",
+      "evidence": "upper left horizontal bus labeled BUS-6KA / 6.9 kV class 1E bus A"
+    },
+    {
+      "id": "CB-TIE-6K",
+      "type": "breaker",
+      "evidence": "central bus-tie breaker labeled CB-TIE-6K / 52-T6 between BUS-6KA and BUS-6KB"
+    },
+    {
+      "id": "CB-102",
+      "type": "breaker",
+      "evidence": "top row breaker labeled CB-102 / 52-1B between GRID-345 and AUX-TR-1B"
+    },
+    {
+      "id": "AUX-TR-1B",
+      "type": "transformer",
+      "evidence": "top transformer symbol labeled AUX-TR-1B with 345/6.9 kV marking"
+    },
+    {
+      "id": "BUS-6KB",
+      "type": "bus",
+      "evidence": "upper right horizontal bus labeled BUS-6KB / 6.9 kV class 1E bus B"
+    },
+    {
+      "id": "CB-103A",
+      "type": "breaker",
+      "evidence": "breaker/tap label CB-103A above SWGR-1EA feeder from BUS-6KA"
+    },
+    {
+      "id": "SWGR-1EA",
+      "type": "panel",
+      "evidence": "left 6.9 kV switchgear section labeled SWGR-1EA / 6.9 kV SWGR A"
+    },
+    {
+      "id": "DG-1A",
+      "type": "generator",
+      "evidence": "left diesel generator circle labeled DG-1A / diesel gen A"
+    },
+    {
+      "id": "CB-DG1A",
+      "type": "breaker",
+      "evidence": "left diesel generator breaker labeled CB-DG1A / 52-DGA"
+    },
+    {
+      "id": "ATS-1A",
+      "type": "transfer_switch",
+      "evidence": "left transfer switch labeled ATS-1A with NORM/EMERG marking"
+    },
+    {
+      "id": "RELAY-K12A",
+      "type": "relay",
+      "evidence": "left relay coil box labeled RELAY-K12A / ATS permissive"
+    },
+    {
+      "id": "TR-480A",
+      "type": "transformer",
+      "evidence": "left 6.9 kV/480 V transformer labeled TR-480A"
+    },
+    {
+      "id": "BUS-480A",
+      "type": "bus",
+      "evidence": "left middle horizontal bus labeled BUS-480A / 480 V load center A"
+    },
+    {
+      "id": "MCC-1A",
+      "type": "mcc",
+      "evidence": "left Safety MCC A enclosure fed by vertical tap labeled MCC-1A / P23"
+    },
+    {
+      "id": "PUMP-SI-1A",
+      "type": "load",
+      "evidence": "left MCC load branch P24 labeled PUMP-SI-1A / SI pump A"
+    },
+    {
+      "id": "PUMP-RHR-1A",
+      "type": "load",
+      "evidence": "left MCC load branch P25 labeled PUMP-RHR-1A / RHR pump A"
+    },
+    {
+      "id": "PUMP-CCW-1A",
+      "type": "load",
+      "evidence": "left MCC load branch P26 labeled PUMP-CCW-1A / CCW pump A"
+    },
+    {
+      "id": "FAN-RB-1A",
+      "type": "load",
+      "evidence": "left MCC load branch P27 labeled FAN-RB-1A / RB fan A"
+    },
+    {
+      "id": "MOV-HPCI-1A",
+      "type": "load",
+      "evidence": "left MCC load branch P28 labeled MOV-HPCI-1A / HPCI MOV A"
+    },
+    {
+      "id": "VALVE-SW-1A",
+      "type": "load",
+      "evidence": "left MCC load branch P29 labeled VALVE-SW-1A / SW INBD A"
+    },
+    {
+      "id": "CHGR-125A",
+      "type": "charger",
+      "evidence": "left AC/DC charger box labeled CHGR-125A"
+    },
+    {
+      "id": "BAT-125A",
+      "type": "dc_source",
+      "evidence": "left battery symbol labeled BAT-125A / 125 VDC A"
+    },
+    {
+      "id": "BUS-125DCA",
+      "type": "bus",
+      "evidence": "left DC horizontal bus labeled BUS-125DCA / 125 VDC bus A"
+    },
+    {
+      "id": "INV-120A",
+      "type": "inverter",
+      "evidence": "left DC/AC inverter box labeled INV-120A"
+    },
+    {
+      "id": "GND-01A",
+      "type": "ground",
+      "evidence": "left ground reference symbol labeled GND-01A / DC REF A"
+    },
+    {
+      "id": "BUS-120A",
+      "type": "bus",
+      "evidence": "lower left horizontal bus labeled BUS-120A / 120 VAC RPS A"
+    },
+    {
+      "id": "PAN-RPS-A",
+      "type": "panel",
+      "evidence": "lower left RPS panel feed labeled PAN-RPS-A / RPS panel A"
+    },
+    {
+      "id": "INST-RACK-A",
+      "type": "instrument",
+      "evidence": "lower left instrument rack feed labeled INST-RACK-A / INST RACK A"
+    },
+    {
+      "id": "CB-103B",
+      "type": "breaker",
+      "evidence": "breaker/tap label CB-103B above SWGR-1EB feeder from BUS-6KB"
+    },
+    {
+      "id": "SWGR-1EB",
+      "type": "panel",
+      "evidence": "right 6.9 kV switchgear section labeled SWGR-1EB / 6.9 kV SWGR B"
+    },
+    {
+      "id": "DG-1B",
+      "type": "generator",
+      "evidence": "right diesel generator circle labeled DG-1B / diesel gen B"
+    },
+    {
+      "id": "CB-DG1B",
+      "type": "breaker",
+      "evidence": "right diesel generator breaker labeled CB-DG1B / 52-DGB"
+    },
+    {
+      "id": "ATS-1B",
+      "type": "transfer_switch",
+      "evidence": "right transfer switch labeled ATS-1B with NORM/EMERG marking"
+    },
+    {
+      "id": "RELAY-K12B",
+      "type": "relay",
+      "evidence": "right relay coil box labeled RELAY-K12B / ATS permissive"
+    },
+    {
+      "id": "TR-480B",
+      "type": "transformer",
+      "evidence": "right 6.9 kV/480 V transformer labeled TR-480B"
+    },
+    {
+      "id": "BUS-480B",
+      "type": "bus",
+      "evidence": "right middle horizontal bus labeled BUS-480B / 480 V load center B"
+    },
+    {
+      "id": "MCC-1B",
+      "type": "mcc",
+      "evidence": "right Safety MCC B enclosure fed by vertical tap labeled MCC-1B / P30"
+    },
+    {
+      "id": "PUMP-SI-1B",
+      "type": "load",
+      "evidence": "right MCC load branch P31 labeled PUMP-SI-1B / SI pump B"
+    },
+    {
+      "id": "PUMP-RHR-1B",
+      "type": "load",
+      "evidence": "right MCC load branch P32 labeled PUMP-RHR-1B / RHR pump B"
+    },
+    {
+      "id": "PUMP-CCW-1B",
+      "type": "load",
+      "evidence": "right MCC load branch P33 labeled PUMP-CCW-1B / CCW pump B"
+    },
+    {
+      "id": "FAN-RB-1B",
+      "type": "load",
+      "evidence": "right MCC load branch P34 labeled FAN-RB-1B / RB fan B"
+    },
+    {
+      "id": "MOV-HPCI-1B",
+      "type": "load",
+      "evidence": "right MCC load branch P35 labeled MOV-HPCI-1B / HPCI MOV B"
+    },
+    {
+      "id": "VALVE-SW-1B",
+      "type": "load",
+      "evidence": "right MCC load branch P36 labeled VALVE-SW-1B / SW INBD B"
+    },
+    {
+      "id": "CHGR-125B",
+      "type": "charger",
+      "evidence": "right AC/DC charger box labeled CHGR-125B"
+    },
+    {
+      "id": "BAT-125B",
+      "type": "dc_source",
+      "evidence": "right battery symbol labeled BAT-125B / 125 VDC B"
+    },
+    {
+      "id": "BUS-125DCB",
+      "type": "bus",
+      "evidence": "right DC horizontal bus labeled BUS-125DCB / 125 VDC bus B"
+    },
+    {
+      "id": "INV-120B",
+      "type": "inverter",
+      "evidence": "right DC/AC inverter box labeled INV-120B"
+    },
+    {
+      "id": "GND-01B",
+      "type": "ground",
+      "evidence": "right ground reference symbol labeled GND-01B / DC REF B"
+    },
+    {
+      "id": "BUS-120B",
+      "type": "bus",
+      "evidence": "lower right horizontal bus labeled BUS-120B / 120 VAC RPS B"
+    },
+    {
+      "id": "PAN-RPS-B",
+      "type": "panel",
+      "evidence": "lower right RPS panel feed labeled PAN-RPS-B / RPS panel B"
+    },
+    {
+      "id": "INST-RACK-B",
+      "type": "instrument",
+      "evidence": "lower right instrument rack feed labeled INST-RACK-B / INST RACK B"
+    },
+    {
+      "id": "PLC-ESF",
+      "type": "logic_controller",
+      "evidence": "bottom center ESF logic controller area labeled PLC-ESF / ESF logic"
+    }
+  ],
+  "notes": [
+    "Final node set is saturated: Diego round 2 and Jennifer round 1 use identical node IDs and order.",
+    "No visually supported label/node correction was found in the allowed raw/component evidence."
+  ]
+}

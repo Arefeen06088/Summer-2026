@@ -1,0 +1,68 @@
+source,target,edge_type,confidence,evidence
+GEN-U2A,CB-101,solid_power,high,solid line from generator symbol to CB-101
+CB-101,TR-UAT-2A,solid_power,high,solid line from CB-101 to TR-UAT-2A
+TR-UAT-2A,BUS-4160A,solid_power,high,transformer output drops to BUS-4160A
+DG-2A,CB-103,solid_power,high,solid ESF diesel A line to CB-103
+CB-103,BUS-4160A,solid_power,high,CB-103 output joins BUS-4160A vertical feeder
+BUS-4160A,CB-105,bus_tie_open,high,N.O. bus tie breaker
+CB-105,BUS-4160B,bus_tie_open,high,N.O. bus tie to BUS-4160B
+BUS-4160A,CB-201A,breaker_feeder,high,tap from 4.16 kV ESF DIV I bus
+CB-201A,TR-201A,transformer_feeder,high,vertical solid conductor through feeder transformer stack
+TR-201A,CB-301A,transformer_feeder,high,transformer low side to CB-301A
+CB-301A,BUS-480A,solid_power,high,CB-301A lands on BUS-480A
+BUS-480A,CB-401A,breaker_feeder,high,BUS-480A tap to CB-401A
+CB-401A,MCC-2A1,solid_power,high,CB-401A output drops into MCC-2A1
+MCC-2A1,PUMP-RHR2A,load_feeder,high,MCC bucket 01 / 2A-F1 solid feeder
+MCC-2A1,PUMP-CCW2A,load_feeder,high,MCC bucket 02 / 2A-F2 solid feeder
+MCC-2A1,PUMP-SW2A,load_feeder,high,MCC bucket 03 / 2A-F3 solid feeder
+MCC-2A1,FAN-CR2A,load_feeder,high,MCC bucket 04 / 2A-F4 solid feeder
+MCC-2A1,MOV-RHR141A,load_feeder,high,MCC bucket 05 / 2A-F5 solid feeder
+MCC-2A1,MOV-SI221A,load_feeder,high,MCC bucket 06 / 2A-F6 solid feeder
+BUS-480A,TR-CPT-A,solid_power,high,left BUS-480A side feeder drops to TR-CPT-A
+BUS-480A,CHGR-2A,solid_power,high,same lower left 480 feeder branches to CHGR-2A input
+CHGR-2A,BUS-125VDC-TRAIN-A,dc_output,high,charger bottom terminal lands on 125 VDC Train A
+BAT-125A/S-125DC-A,BUS-125VDC-TRAIN-A,dc_bus,high,battery symbol/terminal on 125 VDC Train A
+BUS-125VDC-TRAIN-A,INV-2A,dc_input,high,solid tap from 125 VDC Train A to inverter DC side
+INV-2A,BUS-120AC-A,ac_output,high,inverter output aligns with BUS-120AC-A
+BUS-120AC-A,RPS-PNL-A,solid_power,high,solid vertical from BUS-120AC-A to RPS-PNL-A
+BUS-125VDC-TRAIN-A,RELAY-86A,dashed_control,medium,dashed indication from 125 VDC Train A area to Relay-86A
+BUS-120AC-A,RELAY-27A,uv_monitor,medium,Relay-27A labeled UV BUS A near BUS-120AC-A
+RPS-PNL-A,RELAY-27A,dashed_control,medium,dashed control loop between RPS-PNL-A and Relay-27A
+TR-CPT-A,BUS-120AC-A,possible_ac_supply,low,"functional transformer label, but visual continuity ambiguous"
+TR-SUT-2B,CB-102,solid_power,high,solid line from startup aux transformer to CB-102
+CB-102,BUS-4160B,solid_power,high,CB-102 output drops to BUS-4160B
+DG-2B,CB-104,solid_power,high,solid ESF diesel B line to CB-104
+CB-104,BUS-4160B,solid_power,high,CB-104 output joins BUS-4160B vertical feeder
+BUS-4160B,CB-201B,breaker_feeder,high,tap from 4.16 kV ESF DIV II bus
+CB-201B,TR-201B,transformer_feeder,high,vertical solid conductor through feeder transformer stack
+TR-201B,CB-301B,transformer_feeder,high,transformer low side to CB-301B
+CB-301B,BUS-480B,solid_power,high,CB-301B lands on BUS-480B
+BUS-480B,CB-401B,breaker_feeder,high,BUS-480B tap to CB-401B
+CB-401B,MCC-2B1,solid_power,high,CB-401B output drops into MCC-2B1
+MCC-2B1,PUMP-RHR2B,load_feeder,high,MCC bucket 01 / 2B-F1 solid feeder
+MCC-2B1,PUMP-CCW2B,load_feeder,high,MCC bucket 02 / 2B-F2 solid feeder
+MCC-2B1,PUMP-SW2B,load_feeder,high,MCC bucket 03 / 2B-F3 solid feeder
+MCC-2B1,FAN-CR2B,load_feeder,high,MCC bucket 04 / 2B-F4 solid feeder
+MCC-2B1,MOV-RHR142B,load_feeder,high,MCC bucket 05 / 2B-F5 solid feeder
+MCC-2B1,MOV-SI222B,load_feeder,high,MCC bucket 06 / 2B-F6 solid feeder
+BUS-480B,TR-CPT-B,solid_power,high,right BUS-480B side feeder drops to TR-CPT-B
+BUS-480B,CHGR-2B,solid_power,high,same lower right 480 feeder branches to CHGR-2B input
+CHGR-2B,BUS-125VDC-TRAIN-B,dc_output,high,charger bottom terminal lands on 125 VDC Train B
+BAT-125B/S-125DC-B,BUS-125VDC-TRAIN-B,dc_bus,high,battery symbol/terminal on 125 VDC Train B
+BUS-125VDC-TRAIN-B,INV-2B,dc_input,high,solid tap from 125 VDC Train B to inverter DC side
+INV-2B,BUS-120AC-B,ac_output,high,inverter output aligns with BUS-120AC-B
+BUS-120AC-B,RPS-PNL-B,solid_power,high,solid vertical from BUS-120AC-B to RPS-PNL-B
+BUS-125VDC-TRAIN-B,RELAY-86B,dashed_control,medium,dashed/control tap from 125 VDC Train B area to Relay-86B
+BUS-120AC-B,RELAY-27B,uv_monitor,medium,Relay-27B labeled UV BUS B at BUS-120AC-B
+RPS-PNL-B,RELAY-27B,dashed_control,medium,dashed control loop between RPS-PNL-B and Relay-27B
+TR-CPT-B,BUS-120AC-B,possible_ac_supply,low,functional transformer label with visually ambiguous continuity in first pass
+UNIT_MAIN_GENERATOR_LABEL,TR-UAT-2A,label_context,low,text label above TR-UAT-2A
+STARTUP_AUX_XFMR_SOURCE_LABEL,TR-SUT-2B,label_context,low,text label above TR-SUT-2B
+TO_UNIT_AUX_BUS_CONT_LABEL,GEN-U2A,continuation_label,low,continuation box near GEN-U2A
+TO_STATION_YARD_CONT_LABEL,BUS-4160B,continuation_label,low,upper-right continuation box
+A_CONTROL_CABLES_2A-C72_2A-C86,RPS-PNL-A,dashed_control,low,dashed control cable/riser path surrounds left RPS area
+A_CONTROL_CABLES_2A-C72_2A-C86,RELAY-27A,dashed_control,low,dashed path visually reaches Relay-27A area
+A_CONTROL_CABLES_2A-C72_2A-C86,GND-STA,station_ground,low,dotted/dashed left-side path descends to GND-STA
+B_CONTROL_CABLES_2B-C72_2B-C86,RPS-PNL-B,dashed_control,low,dashed control cable/riser path surrounds right RPS area
+B_CONTROL_CABLES_2B-C72_2B-C86,RELAY-27B,dashed_control,low,dashed path visually reaches Relay-27B area
+B_CONTROL_CABLES_2B-C72_2B-C86,RELAY-86B,dashed_control,low,dashed horizontal/control line passes Relay-86B area

@@ -1,0 +1,336 @@
+{
+  "document": 37,
+  "iteration": 1,
+  "node_count": 55,
+  "edge_count": 54,
+  "nodes": [
+    "GRID-345",
+    "CB-101",
+    "AUX-TR-1A",
+    "CB-102",
+    "AUX-TR-1B",
+    "BUS-6KA",
+    "CB-TIE-6K",
+    "BUS-6KB",
+    "CB-103A",
+    "SWGR-1EA",
+    "DG-1A",
+    "CB-DG1A",
+    "ATS-1A",
+    "RELAY-K12A",
+    "TR-480A",
+    "BUS-480A",
+    "MCC-1A",
+    "PUMP-SI-1A",
+    "PUMP-RHR-1A",
+    "PUMP-CCW-1A",
+    "FAN-RB-1A",
+    "MOV-HPCI-1A",
+    "VALVE-SW-1A",
+    "CHGR-125A",
+    "BAT-125A",
+    "BUS-125DCA",
+    "GND-01A",
+    "INV-120A",
+    "BUS-120A",
+    "PAN-RPS-A",
+    "INST-RACK-A",
+    "PLC-ESF",
+    "CB-103B",
+    "SWGR-1EB",
+    "DG-1B",
+    "CB-DG1B",
+    "ATS-1B",
+    "RELAY-K12B",
+    "TR-480B",
+    "BUS-480B",
+    "MCC-1B",
+    "PUMP-SI-1B",
+    "PUMP-RHR-1B",
+    "PUMP-CCW-1B",
+    "FAN-RB-1B",
+    "MOV-HPCI-1B",
+    "VALVE-SW-1B",
+    "CHGR-125B",
+    "BAT-125B",
+    "BUS-125DCB",
+    "GND-01B",
+    "INV-120B",
+    "BUS-120B",
+    "PAN-RPS-B",
+    "INST-RACK-B"
+  ],
+  "edges": [
+    {
+      "source": "AUX-TR-1A",
+      "target": "CB-101",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-101",
+      "target": "GRID-345",
+      "edge_type": "power"
+    },
+    {
+      "source": "GRID-345",
+      "target": "CB-102",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-102",
+      "target": "AUX-TR-1B",
+      "edge_type": "power"
+    },
+    {
+      "source": "AUX-TR-1A",
+      "target": "BUS-6KA",
+      "edge_type": "power"
+    },
+    {
+      "source": "AUX-TR-1B",
+      "target": "BUS-6KB",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-6KA",
+      "target": "CB-TIE-6K",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-TIE-6K",
+      "target": "BUS-6KB",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-6KA",
+      "target": "CB-103A",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-103A",
+      "target": "SWGR-1EA",
+      "edge_type": "power"
+    },
+    {
+      "source": "DG-1A",
+      "target": "CB-DG1A",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-DG1A",
+      "target": "SWGR-1EA",
+      "edge_type": "power"
+    },
+    {
+      "source": "SWGR-1EA",
+      "target": "ATS-1A",
+      "edge_type": "power"
+    },
+    {
+      "source": "ATS-1A",
+      "target": "TR-480A",
+      "edge_type": "power"
+    },
+    {
+      "source": "TR-480A",
+      "target": "BUS-480A",
+      "edge_type": "power"
+    },
+    {
+      "source": "ATS-1A",
+      "target": "RELAY-K12A",
+      "edge_type": "control"
+    },
+    {
+      "source": "BUS-480A",
+      "target": "MCC-1A",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-1A",
+      "target": "PUMP-SI-1A",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-1A",
+      "target": "PUMP-RHR-1A",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-1A",
+      "target": "PUMP-CCW-1A",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-1A",
+      "target": "FAN-RB-1A",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-1A",
+      "target": "MOV-HPCI-1A",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-1A",
+      "target": "VALVE-SW-1A",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-480A",
+      "target": "CHGR-125A",
+      "edge_type": "power"
+    },
+    {
+      "source": "CHGR-125A",
+      "target": "BUS-125DCA",
+      "edge_type": "power"
+    },
+    {
+      "source": "BAT-125A",
+      "target": "BUS-125DCA",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-125DCA",
+      "target": "GND-01A",
+      "edge_type": "dc_ref"
+    },
+    {
+      "source": "BUS-125DCA",
+      "target": "INV-120A",
+      "edge_type": "power"
+    },
+    {
+      "source": "INV-120A",
+      "target": "BUS-120A",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-120A",
+      "target": "PAN-RPS-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-120A",
+      "target": "INST-RACK-A",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-6KB",
+      "target": "CB-103B",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-103B",
+      "target": "SWGR-1EB",
+      "edge_type": "power"
+    },
+    {
+      "source": "DG-1B",
+      "target": "CB-DG1B",
+      "edge_type": "power"
+    },
+    {
+      "source": "CB-DG1B",
+      "target": "SWGR-1EB",
+      "edge_type": "power"
+    },
+    {
+      "source": "SWGR-1EB",
+      "target": "ATS-1B",
+      "edge_type": "power"
+    },
+    {
+      "source": "ATS-1B",
+      "target": "TR-480B",
+      "edge_type": "power"
+    },
+    {
+      "source": "TR-480B",
+      "target": "BUS-480B",
+      "edge_type": "power"
+    },
+    {
+      "source": "ATS-1B",
+      "target": "RELAY-K12B",
+      "edge_type": "control"
+    },
+    {
+      "source": "BUS-480B",
+      "target": "MCC-1B",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-1B",
+      "target": "PUMP-SI-1B",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-1B",
+      "target": "PUMP-RHR-1B",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-1B",
+      "target": "PUMP-CCW-1B",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-1B",
+      "target": "FAN-RB-1B",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-1B",
+      "target": "MOV-HPCI-1B",
+      "edge_type": "power"
+    },
+    {
+      "source": "MCC-1B",
+      "target": "VALVE-SW-1B",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-480B",
+      "target": "CHGR-125B",
+      "edge_type": "power"
+    },
+    {
+      "source": "CHGR-125B",
+      "target": "BUS-125DCB",
+      "edge_type": "power"
+    },
+    {
+      "source": "BAT-125B",
+      "target": "BUS-125DCB",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-125DCB",
+      "target": "GND-01B",
+      "edge_type": "dc_ref"
+    },
+    {
+      "source": "BUS-125DCB",
+      "target": "INV-120B",
+      "edge_type": "power"
+    },
+    {
+      "source": "INV-120B",
+      "target": "BUS-120B",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-120B",
+      "target": "PAN-RPS-B",
+      "edge_type": "power"
+    },
+    {
+      "source": "BUS-120B",
+      "target": "INST-RACK-B",
+      "edge_type": "power"
+    }
+  ],
+  "note": "Final consensus after Diego high-recall extraction and Jennifer precision review. The matrix includes supported solid power conductors, ATS relay dashed controls, and DC reference taps. It excludes the unsupported GRID-345 to CB-TIE-6K candidate and C03/C06 PLC-ESF cable-tray routing candidates. PLC-ESF remains as a visible isolated node."
+}

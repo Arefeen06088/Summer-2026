@@ -1,0 +1,639 @@
+{
+  "document": "37",
+  "iteration": "1",
+  "nodes": [
+    {
+      "id": "GRID-345",
+      "index": 1
+    },
+    {
+      "id": "CB-101",
+      "index": 2
+    },
+    {
+      "id": "CB-102",
+      "index": 3
+    },
+    {
+      "id": "AUX-TR-1A",
+      "index": 4
+    },
+    {
+      "id": "AUX-TR-1B",
+      "index": 5
+    },
+    {
+      "id": "BUS-6KA",
+      "index": 6
+    },
+    {
+      "id": "BUS-6KB",
+      "index": 7
+    },
+    {
+      "id": "CB-TIE-6K",
+      "index": 8
+    },
+    {
+      "id": "CB-103A",
+      "index": 9
+    },
+    {
+      "id": "SWGR-1EA",
+      "index": 10
+    },
+    {
+      "id": "DG-1A",
+      "index": 11
+    },
+    {
+      "id": "CB-DG1A",
+      "index": 12
+    },
+    {
+      "id": "ATS-1A",
+      "index": 13
+    },
+    {
+      "id": "RELAY-K12A",
+      "index": 14
+    },
+    {
+      "id": "TR-480A",
+      "index": 15
+    },
+    {
+      "id": "BUS-480A",
+      "index": 16
+    },
+    {
+      "id": "MCC-1A",
+      "index": 17
+    },
+    {
+      "id": "PUMP-SI-1A",
+      "index": 18
+    },
+    {
+      "id": "PUMP-RHR-1A",
+      "index": 19
+    },
+    {
+      "id": "PUMP-CCW-1A",
+      "index": 20
+    },
+    {
+      "id": "FAN-RB-1A",
+      "index": 21
+    },
+    {
+      "id": "MOV-HPCI-1A",
+      "index": 22
+    },
+    {
+      "id": "VALVE-SW-1A",
+      "index": 23
+    },
+    {
+      "id": "CHGR-125A",
+      "index": 24
+    },
+    {
+      "id": "BAT-125A",
+      "index": 25
+    },
+    {
+      "id": "BUS-125DCA",
+      "index": 26
+    },
+    {
+      "id": "GND-01A",
+      "index": 27
+    },
+    {
+      "id": "INV-120A",
+      "index": 28
+    },
+    {
+      "id": "BUS-120A",
+      "index": 29
+    },
+    {
+      "id": "PAN-RPS-A",
+      "index": 30
+    },
+    {
+      "id": "INST-RACK-A",
+      "index": 31
+    },
+    {
+      "id": "PLC-ESF",
+      "index": 32
+    },
+    {
+      "id": "CB-103B",
+      "index": 33
+    },
+    {
+      "id": "SWGR-1EB",
+      "index": 34
+    },
+    {
+      "id": "DG-1B",
+      "index": 35
+    },
+    {
+      "id": "CB-DG1B",
+      "index": 36
+    },
+    {
+      "id": "ATS-1B",
+      "index": 37
+    },
+    {
+      "id": "RELAY-K12B",
+      "index": 38
+    },
+    {
+      "id": "TR-480B",
+      "index": 39
+    },
+    {
+      "id": "BUS-480B",
+      "index": 40
+    },
+    {
+      "id": "MCC-1B",
+      "index": 41
+    },
+    {
+      "id": "PUMP-SI-1B",
+      "index": 42
+    },
+    {
+      "id": "PUMP-RHR-1B",
+      "index": 43
+    },
+    {
+      "id": "PUMP-CCW-1B",
+      "index": 44
+    },
+    {
+      "id": "FAN-RB-1B",
+      "index": 45
+    },
+    {
+      "id": "MOV-HPCI-1B",
+      "index": 46
+    },
+    {
+      "id": "VALVE-SW-1B",
+      "index": 47
+    },
+    {
+      "id": "CHGR-125B",
+      "index": 48
+    },
+    {
+      "id": "BAT-125B",
+      "index": 49
+    },
+    {
+      "id": "BUS-125DCB",
+      "index": 50
+    },
+    {
+      "id": "GND-01B",
+      "index": 51
+    },
+    {
+      "id": "INV-120B",
+      "index": 52
+    },
+    {
+      "id": "BUS-120B",
+      "index": 53
+    },
+    {
+      "id": "PAN-RPS-B",
+      "index": 54
+    },
+    {
+      "id": "INST-RACK-B",
+      "index": 55
+    }
+  ],
+  "edges": [
+    {
+      "source": "AUX-TR-1A",
+      "target": "CB-101",
+      "evidence": "Top-left offsite feeder. CB-101 is drawn inline between GRID-345 and AUX-TR-1A."
+    },
+    {
+      "source": "CB-101",
+      "target": "GRID-345",
+      "evidence": "GRID-345 bus ties directly into CB-101 at the left top feeder."
+    },
+    {
+      "source": "GRID-345",
+      "target": "CB-102",
+      "evidence": "GRID-345 bus ties directly into CB-102 at the right top feeder."
+    },
+    {
+      "source": "CB-102",
+      "target": "AUX-TR-1B",
+      "evidence": "Top-right offsite feeder. CB-102 is drawn inline between GRID-345 and AUX-TR-1B."
+    },
+    {
+      "source": "AUX-TR-1A",
+      "target": "BUS-6KA",
+      "evidence": "Transformer secondary drops to BUS-6KA."
+    },
+    {
+      "source": "AUX-TR-1B",
+      "target": "BUS-6KB",
+      "evidence": "Transformer secondary drops to BUS-6KB."
+    },
+    {
+      "source": "BUS-6KA",
+      "target": "CB-TIE-6K",
+      "evidence": "Horizontal bus tie breaker connects between the two 6 kV buses."
+    },
+    {
+      "source": "CB-TIE-6K",
+      "target": "BUS-6KB",
+      "evidence": "Horizontal bus tie breaker connects between the two 6 kV buses."
+    },
+    {
+      "source": "BUS-6KA",
+      "target": "CB-103A",
+      "evidence": "Train A feeder leaves BUS-6KA through CB-103A."
+    },
+    {
+      "source": "CB-103A",
+      "target": "SWGR-1EA",
+      "evidence": "CB-103A output enters SWGR-1EA."
+    },
+    {
+      "source": "DG-1A",
+      "target": "CB-DG1A",
+      "evidence": "Emergency diesel generator 1A feeds its breaker."
+    },
+    {
+      "source": "CB-DG1A",
+      "target": "SWGR-1EA",
+      "evidence": "DG breaker output connects into Train A switchgear."
+    },
+    {
+      "source": "SWGR-1EA",
+      "target": "ATS-1A",
+      "evidence": "Train A switchgear feeder runs to ATS-1A."
+    },
+    {
+      "source": "ATS-1A",
+      "target": "RELAY-K12A",
+      "evidence": "Dashed control C01 leaves ATS-1A and terminates at RELAY-K12A."
+    },
+    {
+      "source": "ATS-1A",
+      "target": "TR-480A",
+      "evidence": "ATS-1A output feeds transformer TR-480A."
+    },
+    {
+      "source": "TR-480A",
+      "target": "BUS-480A",
+      "evidence": "TR-480A secondary connects to BUS-480A."
+    },
+    {
+      "source": "BUS-480A",
+      "target": "MCC-1A",
+      "evidence": "480 V bus feeds Train A MCC."
+    },
+    {
+      "source": "MCC-1A",
+      "target": "PUMP-SI-1A",
+      "evidence": "MCC-1A branch to safety injection pump 1A."
+    },
+    {
+      "source": "MCC-1A",
+      "target": "PUMP-RHR-1A",
+      "evidence": "MCC-1A branch to residual heat removal pump 1A."
+    },
+    {
+      "source": "MCC-1A",
+      "target": "PUMP-CCW-1A",
+      "evidence": "MCC-1A branch to component cooling water pump 1A."
+    },
+    {
+      "source": "MCC-1A",
+      "target": "FAN-RB-1A",
+      "evidence": "MCC-1A branch to reactor building fan 1A."
+    },
+    {
+      "source": "MCC-1A",
+      "target": "MOV-HPCI-1A",
+      "evidence": "MCC-1A branch to HPCI motor-operated valve 1A."
+    },
+    {
+      "source": "MCC-1A",
+      "target": "VALVE-SW-1A",
+      "evidence": "MCC-1A branch to service water valve 1A."
+    },
+    {
+      "source": "BUS-480A",
+      "target": "CHGR-125A",
+      "evidence": "480 V bus supplies charger CHGR-125A."
+    },
+    {
+      "source": "CHGR-125A",
+      "target": "BUS-125DCA",
+      "evidence": "Charger output lands on the 125 VDC A bus."
+    },
+    {
+      "source": "BAT-125A",
+      "target": "BUS-125DCA",
+      "evidence": "Battery BAT-125A lands directly on the 125 VDC A bus."
+    },
+    {
+      "source": "BUS-125DCA",
+      "target": "INV-120A",
+      "evidence": "DC bus feeds inverter INV-120A."
+    },
+    {
+      "source": "BUS-125DCA",
+      "target": "GND-01A",
+      "evidence": "Labeled ground/reference tap GND-01A connects to the DC A bus."
+    },
+    {
+      "source": "INV-120A",
+      "target": "BUS-120A",
+      "evidence": "Inverter output feeds BUS-120A."
+    },
+    {
+      "source": "BUS-120A",
+      "target": "PAN-RPS-A",
+      "evidence": "AC instrumentation bus feeds RPS panel A."
+    },
+    {
+      "source": "BUS-120A",
+      "target": "INST-RACK-A",
+      "evidence": "AC instrumentation bus feeds instrument rack A."
+    },
+    {
+      "source": "PAN-RPS-A",
+      "target": "PLC-ESF",
+      "evidence": "Dashed functional cable C03 runs from PAN-RPS-A to PLC-ESF."
+    },
+    {
+      "source": "BUS-6KB",
+      "target": "CB-103B",
+      "evidence": "Train B feeder leaves BUS-6KB through CB-103B."
+    },
+    {
+      "source": "CB-103B",
+      "target": "SWGR-1EB",
+      "evidence": "CB-103B output enters SWGR-1EB."
+    },
+    {
+      "source": "DG-1B",
+      "target": "CB-DG1B",
+      "evidence": "Emergency diesel generator 1B feeds its breaker."
+    },
+    {
+      "source": "CB-DG1B",
+      "target": "SWGR-1EB",
+      "evidence": "DG breaker output connects into Train B switchgear."
+    },
+    {
+      "source": "SWGR-1EB",
+      "target": "ATS-1B",
+      "evidence": "Train B switchgear feeder runs to ATS-1B."
+    },
+    {
+      "source": "ATS-1B",
+      "target": "RELAY-K12B",
+      "evidence": "Dashed control C04 leaves ATS-1B and terminates at RELAY-K12B."
+    },
+    {
+      "source": "ATS-1B",
+      "target": "TR-480B",
+      "evidence": "ATS-1B output feeds transformer TR-480B."
+    },
+    {
+      "source": "TR-480B",
+      "target": "BUS-480B",
+      "evidence": "TR-480B secondary connects to BUS-480B."
+    },
+    {
+      "source": "BUS-480B",
+      "target": "MCC-1B",
+      "evidence": "480 V bus feeds Train B MCC."
+    },
+    {
+      "source": "MCC-1B",
+      "target": "PUMP-SI-1B",
+      "evidence": "MCC-1B branch to safety injection pump 1B."
+    },
+    {
+      "source": "MCC-1B",
+      "target": "PUMP-RHR-1B",
+      "evidence": "MCC-1B branch to residual heat removal pump 1B."
+    },
+    {
+      "source": "MCC-1B",
+      "target": "PUMP-CCW-1B",
+      "evidence": "MCC-1B branch to component cooling water pump 1B."
+    },
+    {
+      "source": "MCC-1B",
+      "target": "FAN-RB-1B",
+      "evidence": "MCC-1B branch to reactor building fan 1B."
+    },
+    {
+      "source": "MCC-1B",
+      "target": "MOV-HPCI-1B",
+      "evidence": "MCC-1B branch to HPCI motor-operated valve 1B."
+    },
+    {
+      "source": "MCC-1B",
+      "target": "VALVE-SW-1B",
+      "evidence": "MCC-1B branch to service water valve 1B."
+    },
+    {
+      "source": "BUS-480B",
+      "target": "CHGR-125B",
+      "evidence": "480 V bus supplies charger CHGR-125B."
+    },
+    {
+      "source": "CHGR-125B",
+      "target": "BUS-125DCB",
+      "evidence": "Charger output lands on the 125 VDC B bus."
+    },
+    {
+      "source": "BAT-125B",
+      "target": "BUS-125DCB",
+      "evidence": "Battery BAT-125B lands directly on the 125 VDC B bus."
+    },
+    {
+      "source": "BUS-125DCB",
+      "target": "INV-120B",
+      "evidence": "DC bus feeds inverter INV-120B."
+    },
+    {
+      "source": "BUS-125DCB",
+      "target": "GND-01B",
+      "evidence": "Labeled ground/reference tap GND-01B connects to the DC B bus."
+    },
+    {
+      "source": "INV-120B",
+      "target": "BUS-120B",
+      "evidence": "Inverter output feeds BUS-120B."
+    },
+    {
+      "source": "BUS-120B",
+      "target": "PAN-RPS-B",
+      "evidence": "AC instrumentation bus feeds RPS panel B."
+    },
+    {
+      "source": "BUS-120B",
+      "target": "INST-RACK-B",
+      "evidence": "AC instrumentation bus feeds instrument rack B."
+    },
+    {
+      "source": "PLC-ESF",
+      "target": "PAN-RPS-B",
+      "evidence": "Dashed functional cable C06 runs from PLC-ESF to PAN-RPS-B."
+    }
+  ],
+  "rejected_edges": [
+    {
+      "source": "PAN-RPS-A",
+      "target": "INST-RACK-A",
+      "reason": "Both land on BUS-120A, but no direct wire between the panel and rack is visually supported."
+    },
+    {
+      "source": "INST-RACK-A",
+      "target": "PLC-ESF",
+      "reason": "Dashed C03 is traced from PAN-RPS-A to PLC-ESF, not from INST-RACK-A."
+    },
+    {
+      "source": "RELAY-K12A",
+      "target": "PLC-ESF",
+      "reason": "RELAY-K12A terminates C01 from ATS-1A; no continuous supported segment to PLC-ESF."
+    },
+    {
+      "source": "RELAY-K12B",
+      "target": "PLC-ESF",
+      "reason": "C05 appears as routing/annotation near the relay area without a clear PLC-ESF termination."
+    },
+    {
+      "source": "CHGR-125A",
+      "target": "BAT-125A",
+      "reason": "Both connect to BUS-125DCA; the charger and battery are not directly connected to each other."
+    },
+    {
+      "source": "CHGR-125B",
+      "target": "BAT-125B",
+      "reason": "Both connect to BUS-125DCB; the charger and battery are not directly connected to each other."
+    },
+    {
+      "source": "GRID-345",
+      "target": "CB-TIE-6K",
+      "reason": "CB-TIE-6K ties BUS-6KA and BUS-6KB only; GRID-345 reaches the buses through CB-101/CB-102 and transformers."
+    }
+  ],
+  "validation": {
+    "document": "37",
+    "iteration": "1",
+    "raw_image": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\37\\Raw\\raw -- synthetic_npp_electrical_schematic_v2(1).png",
+    "node_count": 55,
+    "edge_count": 56,
+    "symmetric": true,
+    "diagonal_zero": true,
+    "duplicate_final_edges_removed": 0,
+    "unknown_endpoint_count": 0,
+    "degree_by_node": {
+      "GRID-345": 2,
+      "CB-101": 2,
+      "CB-102": 2,
+      "AUX-TR-1A": 2,
+      "AUX-TR-1B": 2,
+      "BUS-6KA": 3,
+      "BUS-6KB": 3,
+      "CB-TIE-6K": 2,
+      "CB-103A": 2,
+      "SWGR-1EA": 3,
+      "DG-1A": 1,
+      "CB-DG1A": 2,
+      "ATS-1A": 3,
+      "RELAY-K12A": 1,
+      "TR-480A": 2,
+      "BUS-480A": 3,
+      "MCC-1A": 7,
+      "PUMP-SI-1A": 1,
+      "PUMP-RHR-1A": 1,
+      "PUMP-CCW-1A": 1,
+      "FAN-RB-1A": 1,
+      "MOV-HPCI-1A": 1,
+      "VALVE-SW-1A": 1,
+      "CHGR-125A": 2,
+      "BAT-125A": 1,
+      "BUS-125DCA": 4,
+      "GND-01A": 1,
+      "INV-120A": 2,
+      "BUS-120A": 3,
+      "PAN-RPS-A": 2,
+      "INST-RACK-A": 1,
+      "PLC-ESF": 2,
+      "CB-103B": 2,
+      "SWGR-1EB": 3,
+      "DG-1B": 1,
+      "CB-DG1B": 2,
+      "ATS-1B": 3,
+      "RELAY-K12B": 1,
+      "TR-480B": 2,
+      "BUS-480B": 3,
+      "MCC-1B": 7,
+      "PUMP-SI-1B": 1,
+      "PUMP-RHR-1B": 1,
+      "PUMP-CCW-1B": 1,
+      "FAN-RB-1B": 1,
+      "MOV-HPCI-1B": 1,
+      "VALVE-SW-1B": 1,
+      "CHGR-125B": 2,
+      "BAT-125B": 1,
+      "BUS-125DCB": 4,
+      "GND-01B": 1,
+      "INV-120B": 2,
+      "BUS-120B": 3,
+      "PAN-RPS-B": 2,
+      "INST-RACK-B": 1
+    },
+    "round_edge_counts": [
+      {
+        "round": 1,
+        "agent": "Diego",
+        "label": "high_recall",
+        "edge_count": 63
+      },
+      {
+        "round": 2,
+        "agent": "Jennifer",
+        "label": "precision_review",
+        "edge_count": 56
+      },
+      {
+        "round": 3,
+        "agent": "Diego",
+        "label": "saturation",
+        "edge_count": 56
+      },
+      {
+        "round": 4,
+        "agent": "Jennifer",
+        "label": "final",
+        "edge_count": 56
+      }
+    ]
+  }
+}

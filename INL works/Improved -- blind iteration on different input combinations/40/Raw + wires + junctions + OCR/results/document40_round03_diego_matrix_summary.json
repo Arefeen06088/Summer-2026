@@ -1,0 +1,77 @@
+{
+  "nodes": 57,
+  "included_edge_rows": 58,
+  "unique_undirected_edges": 58,
+  "duplicate_edge_rows": 0,
+  "validation_passed": true,
+  "matrix_symmetric": true,
+  "diagonal_zero": true,
+  "matrix_header_row_match_nodes": true,
+  "unknown_endpoint_count": 0,
+  "unknown_edges": [],
+  "duplicate_pair_count": 0,
+  "duplicate_pairs": [],
+  "round02_nodes_csv_copied_exactly": true,
+  "round02_edges_csv_copied_exactly": true,
+  "saturation_decision": "Jennifer round02 carried forward unchanged; saturation is likely reached.",
+  "edge_kind_counts": {
+    "125vdc_feeder": 6,
+    "control_logic": 6,
+    "instrument_signal": 8,
+    "internal_bus": 2,
+    "power_feeder": 34,
+    "trip_control": 2
+  },
+  "confidence_counts": {
+    "high": 52,
+    "medium": 6
+  },
+  "uncertain_edges": [
+    {
+      "source": "CT-21A",
+      "target": "RPS-PNL-A",
+      "confidence": "medium",
+      "round03_decision": "kept",
+      "reason": "Short-dash CT-21A signal route continues down to a top terminal on RPS-PNL-A."
+    },
+    {
+      "source": "VT-21A",
+      "target": "RPS-PNL-A",
+      "confidence": "medium",
+      "round03_decision": "kept",
+      "reason": "VT-21A dashed voltage route continues to RPS-PNL-A; VOLTAGE-SIG-A is only a route label."
+    },
+    {
+      "source": "RELAY-86A",
+      "target": "CB-MPA1",
+      "confidence": "medium",
+      "round03_decision": "kept",
+      "reason": "Dash-dot trip route reaches the TRIP MPA1 terminal at CB-MPA1 and the RELAY-86A chain."
+    },
+    {
+      "source": "CT-21B",
+      "target": "RPS-PNL-B",
+      "confidence": "medium",
+      "round03_decision": "kept",
+      "reason": "Short-dash CT-21B signal route continues down to a top terminal on RPS-PNL-B."
+    },
+    {
+      "source": "VT-21B",
+      "target": "RPS-PNL-B",
+      "confidence": "medium",
+      "round03_decision": "kept",
+      "reason": "VT-21B dashed voltage route continues to RPS-PNL-B; VOLTAGE-SIG-B is only a route label."
+    },
+    {
+      "source": "RELAY-86B",
+      "target": "CB-MPB1",
+      "confidence": "medium",
+      "round03_decision": "kept",
+      "reason": "Dash-dot trip route reaches the TRIP MPB1 terminal at CB-MPB1 and the RELAY-86B chain."
+    }
+  ],
+  "no_dot_crossings_confirmed_non_connections": [
+    "VOLTAGE-SIG-A route near MOV-RWST21A",
+    "VOLTAGE-SIG-B route near MOV-RWST21B"
+  ]
+}

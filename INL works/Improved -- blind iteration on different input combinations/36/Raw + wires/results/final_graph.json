@@ -1,0 +1,435 @@
+{
+  "document": "36",
+  "iteration": "1",
+  "node_count": 63,
+  "hard_edge_count": 68,
+  "nodes": [
+    "GRID-230-A",
+    "CB-SW-A",
+    "TR-SU-A",
+    "SU-A",
+    "BUS-13K-A",
+    "GEN-DG-A",
+    "CB-DG-A",
+    "TR-EDG-A",
+    "EDG-A",
+    "CB-13-TIE",
+    "BUS-13K-B",
+    "SU-B",
+    "TR-SU-B",
+    "CB-SW-B",
+    "GRID-230-B",
+    "EDG-B",
+    "TR-EDG-B",
+    "CB-DG-B",
+    "GEN-DG-B",
+    "TR-4K-A",
+    "CB-4K-A",
+    "BUS-4K-A",
+    "CB-4K-TIE",
+    "BUS-4K-B",
+    "CB-4K-B",
+    "TR-4K-B",
+    "TR-480-A",
+    "CB-LC-A",
+    "BUS-480-A",
+    "LC-A1",
+    "MCC-01A",
+    "PUMP-RHR-A",
+    "MOTOR-CCW-A",
+    "LC-A2",
+    "MCC-02A",
+    "PUMP-AFW-A",
+    "VALVE-MOV-A",
+    "FAN-CONTAIN-A",
+    "RECT-125A",
+    "BUS-DC125-A",
+    "BAT-125A",
+    "INV-120A",
+    "JB-ESF-A",
+    "PNL-ESF-A",
+    "PNL-RPS-1",
+    "TR-480-B",
+    "CB-LC-B",
+    "BUS-480-B",
+    "LC-B1",
+    "MCC-01B",
+    "PUMP-RHR-B",
+    "MOTOR-CCW-B",
+    "LC-B2",
+    "MCC-02B",
+    "PUMP-AFW-B",
+    "VALVE-MOV-B",
+    "FAN-CONTAIN-B",
+    "RECT-125B",
+    "BUS-DC125-B",
+    "BAT-125B",
+    "INV-120B",
+    "JB-ESF-B",
+    "PNL-ESF-B"
+  ],
+  "edges": [
+    {
+      "source": "GRID-230-A",
+      "target": "CB-SW-A",
+      "evidence": "solid offsite source A to switch breaker"
+    },
+    {
+      "source": "CB-SW-A",
+      "target": "TR-SU-A",
+      "evidence": "solid source A breaker to startup transformer"
+    },
+    {
+      "source": "TR-SU-A",
+      "target": "SU-A",
+      "evidence": "solid startup transformer A to SU-A bus tap"
+    },
+    {
+      "source": "SU-A",
+      "target": "BUS-13K-A",
+      "evidence": "filled-dot tap onto 13.8 kV auxiliary switchgear A"
+    },
+    {
+      "source": "GEN-DG-A",
+      "target": "CB-DG-A",
+      "evidence": "solid emergency generator A to breaker"
+    },
+    {
+      "source": "CB-DG-A",
+      "target": "TR-EDG-A",
+      "evidence": "solid diesel breaker A to EDG transformer"
+    },
+    {
+      "source": "TR-EDG-A",
+      "target": "EDG-A",
+      "evidence": "solid EDG transformer A to EDG-A bus tap"
+    },
+    {
+      "source": "EDG-A",
+      "target": "BUS-13K-A",
+      "evidence": "filled-dot tap onto 13.8 kV bus A"
+    },
+    {
+      "source": "BUS-13K-A",
+      "target": "CB-13-TIE",
+      "evidence": "13.8 kV bus A to tie breaker"
+    },
+    {
+      "source": "CB-13-TIE",
+      "target": "BUS-13K-B",
+      "evidence": "tie breaker to 13.8 kV bus B"
+    },
+    {
+      "source": "BUS-13K-B",
+      "target": "SU-B",
+      "evidence": "filled-dot tap from 13.8 kV bus B to SU-B"
+    },
+    {
+      "source": "SU-B",
+      "target": "TR-SU-B",
+      "evidence": "solid SU-B tap to startup transformer B"
+    },
+    {
+      "source": "TR-SU-B",
+      "target": "CB-SW-B",
+      "evidence": "solid startup transformer B to source breaker"
+    },
+    {
+      "source": "CB-SW-B",
+      "target": "GRID-230-B",
+      "evidence": "solid source breaker to offsite source B"
+    },
+    {
+      "source": "BUS-13K-B",
+      "target": "EDG-B",
+      "evidence": "filled-dot tap from 13.8 kV bus B to EDG-B"
+    },
+    {
+      "source": "EDG-B",
+      "target": "TR-EDG-B",
+      "evidence": "solid EDG-B tap to transformer"
+    },
+    {
+      "source": "TR-EDG-B",
+      "target": "CB-DG-B",
+      "evidence": "solid EDG transformer B to diesel breaker"
+    },
+    {
+      "source": "CB-DG-B",
+      "target": "GEN-DG-B",
+      "evidence": "solid diesel breaker B to generator"
+    },
+    {
+      "source": "BUS-13K-A",
+      "target": "TR-4K-A",
+      "evidence": "solid transformer feed from 13.8 kV bus A"
+    },
+    {
+      "source": "TR-4K-A",
+      "target": "CB-4K-A",
+      "evidence": "solid transformer A to 4.16 kV breaker"
+    },
+    {
+      "source": "CB-4K-A",
+      "target": "BUS-4K-A",
+      "evidence": "solid breaker A to 4.16 kV bus A"
+    },
+    {
+      "source": "BUS-13K-B",
+      "target": "TR-4K-B",
+      "evidence": "solid transformer feed from 13.8 kV bus B"
+    },
+    {
+      "source": "TR-4K-B",
+      "target": "CB-4K-B",
+      "evidence": "solid transformer B to 4.16 kV breaker"
+    },
+    {
+      "source": "CB-4K-B",
+      "target": "BUS-4K-B",
+      "evidence": "solid breaker B to 4.16 kV bus B"
+    },
+    {
+      "source": "BUS-4K-A",
+      "target": "CB-4K-TIE",
+      "evidence": "4.16 kV bus A to tie breaker"
+    },
+    {
+      "source": "CB-4K-TIE",
+      "target": "BUS-4K-B",
+      "evidence": "tie breaker to 4.16 kV bus B"
+    },
+    {
+      "source": "BUS-4K-A",
+      "target": "TR-480-A",
+      "evidence": "solid feed from 4.16 kV bus A to 480 V transformer"
+    },
+    {
+      "source": "TR-480-A",
+      "target": "CB-LC-A",
+      "evidence": "solid transformer A to load-center breaker"
+    },
+    {
+      "source": "CB-LC-A",
+      "target": "BUS-480-A",
+      "evidence": "solid breaker A to 480 VAC bus A"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "LC-A1",
+      "evidence": "filled-dot 480 VAC load-center A1 tap"
+    },
+    {
+      "source": "LC-A1",
+      "target": "MCC-01A",
+      "evidence": "vertical feeder from LC-A1 tap to MCC-01A"
+    },
+    {
+      "source": "MCC-01A",
+      "target": "PUMP-RHR-A",
+      "evidence": "solid MCC feeder to RHR pump A"
+    },
+    {
+      "source": "MCC-01A",
+      "target": "MOTOR-CCW-A",
+      "evidence": "solid MCC feeder to CCW motor A"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "LC-A2",
+      "evidence": "filled-dot 480 VAC load-center A2 tap"
+    },
+    {
+      "source": "LC-A2",
+      "target": "MCC-02A",
+      "evidence": "vertical feeder from LC-A2 tap to MCC-02A"
+    },
+    {
+      "source": "MCC-02A",
+      "target": "PUMP-AFW-A",
+      "evidence": "solid MCC feeder to AFW pump A"
+    },
+    {
+      "source": "MCC-02A",
+      "target": "VALVE-MOV-A",
+      "evidence": "solid MCC feeder to MOV A"
+    },
+    {
+      "source": "MCC-02A",
+      "target": "FAN-CONTAIN-A",
+      "evidence": "solid MCC feeder to containment fan A"
+    },
+    {
+      "source": "BUS-480-A",
+      "target": "RECT-125A",
+      "evidence": "solid 480 VAC branch to rectifier/charger A"
+    },
+    {
+      "source": "RECT-125A",
+      "target": "BUS-DC125-A",
+      "evidence": "solid rectifier A output to 125 VDC bus"
+    },
+    {
+      "source": "BUS-DC125-A",
+      "target": "BAT-125A",
+      "evidence": "filled-dot battery A tap on 125 VDC bus"
+    },
+    {
+      "source": "BUS-DC125-A",
+      "target": "INV-120A",
+      "evidence": "filled-dot inverter A DC input on 125 VDC bus"
+    },
+    {
+      "source": "INV-120A",
+      "target": "PNL-ESF-A",
+      "evidence": "solid inverter A AC/control power feed to ESF panel A"
+    },
+    {
+      "source": "BUS-4K-B",
+      "target": "TR-480-B",
+      "evidence": "solid feed from 4.16 kV bus B to 480 V transformer"
+    },
+    {
+      "source": "TR-480-B",
+      "target": "CB-LC-B",
+      "evidence": "solid transformer B to load-center breaker"
+    },
+    {
+      "source": "CB-LC-B",
+      "target": "BUS-480-B",
+      "evidence": "solid breaker B to 480 VAC bus B"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "LC-B1",
+      "evidence": "filled-dot 480 VAC load-center B1 tap"
+    },
+    {
+      "source": "LC-B1",
+      "target": "MCC-01B",
+      "evidence": "vertical feeder from LC-B1 tap to MCC-01B"
+    },
+    {
+      "source": "MCC-01B",
+      "target": "PUMP-RHR-B",
+      "evidence": "solid MCC feeder to RHR pump B"
+    },
+    {
+      "source": "MCC-01B",
+      "target": "MOTOR-CCW-B",
+      "evidence": "solid MCC feeder to CCW motor B"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "LC-B2",
+      "evidence": "filled-dot 480 VAC load-center B2 tap"
+    },
+    {
+      "source": "LC-B2",
+      "target": "MCC-02B",
+      "evidence": "vertical feeder from LC-B2 tap to MCC-02B"
+    },
+    {
+      "source": "MCC-02B",
+      "target": "PUMP-AFW-B",
+      "evidence": "solid MCC feeder to AFW pump B"
+    },
+    {
+      "source": "MCC-02B",
+      "target": "VALVE-MOV-B",
+      "evidence": "solid MCC feeder to MOV B"
+    },
+    {
+      "source": "MCC-02B",
+      "target": "FAN-CONTAIN-B",
+      "evidence": "solid MCC feeder to containment fan B"
+    },
+    {
+      "source": "BUS-480-B",
+      "target": "RECT-125B",
+      "evidence": "solid 480 VAC branch to rectifier/charger B"
+    },
+    {
+      "source": "RECT-125B",
+      "target": "BUS-DC125-B",
+      "evidence": "solid rectifier B output to 125 VDC bus"
+    },
+    {
+      "source": "BUS-DC125-B",
+      "target": "BAT-125B",
+      "evidence": "filled-dot battery B tap on 125 VDC bus"
+    },
+    {
+      "source": "BUS-DC125-B",
+      "target": "INV-120B",
+      "evidence": "filled-dot inverter B DC input on 125 VDC bus"
+    },
+    {
+      "source": "INV-120B",
+      "target": "PNL-ESF-B",
+      "evidence": "solid inverter B AC/control power feed to ESF panel B"
+    },
+    {
+      "source": "CB-13-TIE",
+      "target": "PNL-RPS-1",
+      "evidence": "single dashed RPS trip/interlock path; RPS TRIP is annotation text"
+    },
+    {
+      "source": "CB-4K-TIE",
+      "target": "PNL-RPS-1",
+      "evidence": "single dashed RPS lockout/interlock path; RPS LOCKOUT is annotation text"
+    },
+    {
+      "source": "JB-ESF-A",
+      "target": "PNL-ESF-A",
+      "evidence": "dashed vertical line from ESF junction box A to panel A"
+    },
+    {
+      "source": "JB-ESF-B",
+      "target": "PNL-ESF-B",
+      "evidence": "dashed vertical line from ESF junction box B to panel B"
+    },
+    {
+      "source": "PNL-ESF-A",
+      "target": "PUMP-AFW-A",
+      "evidence": "dashed ESF control branch to AFW pump A"
+    },
+    {
+      "source": "PNL-ESF-A",
+      "target": "VALVE-MOV-A",
+      "evidence": "dashed ESF control branch to MOV A"
+    },
+    {
+      "source": "PNL-ESF-B",
+      "target": "PUMP-AFW-B",
+      "evidence": "dashed ESF control branch to AFW pump B"
+    },
+    {
+      "source": "PNL-ESF-B",
+      "target": "VALVE-MOV-B",
+      "evidence": "dashed ESF control branch to MOV B"
+    }
+  ],
+  "uncertain_edges": [
+    {
+      "source": "PNL-RPS-1",
+      "target": "PNL-ESF-A",
+      "reason": "possible central dashed corridor relation, but no clean terminal/dot into ESF panel A"
+    },
+    {
+      "source": "PNL-RPS-1",
+      "target": "PNL-ESF-B",
+      "reason": "possible central dashed corridor relation, but no clean terminal/dot into ESF panel B"
+    },
+    {
+      "source": "PNL-ESF-A",
+      "target": "FAN-CONTAIN-A",
+      "reason": "dashed boundary/route passes near fan A but no clean vertical tap is visible"
+    },
+    {
+      "source": "PNL-ESF-B",
+      "target": "FAN-CONTAIN-B",
+      "reason": "dashed boundary/route passes near fan B but no clean vertical tap is visible"
+    }
+  ]
+}

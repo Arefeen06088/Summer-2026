@@ -1,0 +1,30 @@
+Connectivity matrix validation summary - Document 37
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\37\synthetic_npp_connectivity_matrix_v2(1).csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_matrix.csv): TP=52, FP=8, FN=6, Precision=0.866667, Recall=0.896552, F1=0.881356
+- Jennifer -- Round 2 (round_02_jennifer_matrix.csv): TP=53, FP=2, FN=5, Precision=0.963636, Recall=0.913793, F1=0.938053
+- Diego -- Round 3 (round_03_diego_matrix.csv): TP=53, FP=2, FN=5, Precision=0.963636, Recall=0.913793, F1=0.938053
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=53, FP=2, FN=5, Precision=0.963636, Recall=0.913793, F1=0.938053
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=53, FP=2, FN=5, Precision=0.963636, Recall=0.913793, F1=0.938053
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some GT nodes are missing from the extraction, causing false negatives for their incident edges.
+
+False-positive edge examples:
+- INST-RACK-A -- PAN-RPS-A
+- PLC-ESF -- RELAY-K12B
+
+False-negative edge examples:
+- BUS-125DCA -- GND-01A
+- BUS-125DCB -- GND-01B
+- PAN-RPS-A -- PLC-ESF
+- PAN-RPS-A -- RELAY-K12A
+- PAN-RPS-B -- RELAY-K12B
+
+
+Missing GT node examples:
+- GND-01A: 1 missed incident GT edge(s)
+- GND-01B: 1 missed incident GT edge(s)

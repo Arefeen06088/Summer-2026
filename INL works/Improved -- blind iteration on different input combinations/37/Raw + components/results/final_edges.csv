@@ -1,0 +1,55 @@
+source,target,kind,confidence,evidence
+GRID-345,CB-101,power,high,solid horizontal conductor P01 from source circle to CB-101
+CB-101,AUX-TR-1A,power,high,solid horizontal conductor P02 from CB-101 to AUX-TR-1A
+AUX-TR-1A,BUS-6KA,power,high,vertical P03 conductor with filled bus tap on BUS-6KA
+GRID-345,CB-102,power,high,solid horizontal conductor P04 from source circle to CB-102
+CB-102,AUX-TR-1B,power,high,solid horizontal conductor P05 from CB-102 to AUX-TR-1B
+AUX-TR-1B,BUS-6KB,power,high,vertical P06 conductor with filled bus tap on BUS-6KB
+BUS-6KA,CB-TIE-6K,power,high,solid P07 conductor from BUS-6KA end/tap into central tie breaker
+CB-TIE-6K,BUS-6KB,power,high,solid P08 conductor from central tie breaker to BUS-6KB end/tap
+BUS-6KA,CB-103A,power,high,vertical solid feeder from BUS-6KA filled tap into CB-103A
+CB-103A,SWGR-1EA,power,high,vertical solid feeder continues from CB-103A into 6.9 kV SWGR A / SWGR-1EA
+DG-1A,CB-DG1A,power,high,solid conductor P09 from DG-1A to CB-DG1A
+CB-DG1A,SWGR-1EA,power,high,solid conductor P10 from CB-DG1A into SWGR-1EA enclosure
+SWGR-1EA,ATS-1A,power,high,vertical solid conductor P13 from SWGR-1EA to ATS-1A
+ATS-1A,TR-480A,power,high,vertical solid conductor P14 from ATS-1A to TR-480A
+TR-480A,BUS-480A,power,high,vertical P15 conductor with filled bus tap on BUS-480A
+ATS-1A,RELAY-K12A,control,high,dashed control/interlock line C01 directly between ATS-1A and RELAY-K12A
+BUS-480A,MCC-1A,power,high,vertical P23 conductor with filled tap from BUS-480A to MCC-1A/Safety MCC A
+MCC-1A,PUMP-SI-1A,power,high,solid branch P24 from Safety MCC A terminal to PUMP-SI-1A
+MCC-1A,PUMP-RHR-1A,power,high,solid branch P25 from Safety MCC A terminal to PUMP-RHR-1A
+MCC-1A,PUMP-CCW-1A,power,high,solid branch P26 from Safety MCC A terminal to PUMP-CCW-1A
+MCC-1A,FAN-RB-1A,power,high,solid branch P27 from Safety MCC A terminal to FAN-RB-1A
+MCC-1A,MOV-HPCI-1A,power,high,solid branch P28 from Safety MCC A terminal to MOV-HPCI-1A
+MCC-1A,VALVE-SW-1A,power,high,solid branch P29 from Safety MCC A terminal to VALVE-SW-1A
+BUS-480A,CHGR-125A,power,high,vertical P37 conductor with filled tap from BUS-480A to CHGR-125A
+CHGR-125A,BUS-125DCA,dc_power,high,vertical P38 conductor from CHGR-125A to filled tap on BUS-125DCA
+BAT-125A,BUS-125DCA,dc_power,high,vertical P39 conductor from BAT-125A to filled tap on BUS-125DCA
+BUS-125DCA,INV-120A,dc_power,high,vertical P40 conductor from BUS-125DCA to INV-120A
+BUS-125DCA,GND-01A,ground,high,vertical G01 conductor from BUS-125DCA tap to GND-01A ground reference symbol
+INV-120A,BUS-120A,power,high,vertical P41 conductor from INV-120A to filled tap on BUS-120A
+BUS-120A,PAN-RPS-A,power,high,vertical P42 conductor with filled tap from BUS-120A to PAN-RPS-A
+BUS-120A,INST-RACK-A,power,high,vertical P43 conductor with filled tap from BUS-120A to INST-RACK-A
+BUS-6KB,CB-103B,power,high,vertical solid feeder from BUS-6KB filled tap into CB-103B
+CB-103B,SWGR-1EB,power,high,vertical solid feeder continues from CB-103B into 6.9 kV SWGR B / SWGR-1EB
+DG-1B,CB-DG1B,power,high,solid conductor P16 from DG-1B to CB-DG1B
+CB-DG1B,SWGR-1EB,power,high,solid conductor P17 from CB-DG1B into SWGR-1EB enclosure
+SWGR-1EB,ATS-1B,power,high,vertical solid conductor P20 from SWGR-1EB to ATS-1B
+ATS-1B,TR-480B,power,high,vertical solid conductor P21 from ATS-1B to TR-480B
+TR-480B,BUS-480B,power,high,vertical P22 conductor with filled bus tap on BUS-480B
+RELAY-K12B,ATS-1B,control,high,dashed control/interlock line C04 directly between RELAY-K12B and ATS-1B
+BUS-480B,MCC-1B,power,high,vertical P30 conductor with filled tap from BUS-480B to MCC-1B/Safety MCC B
+MCC-1B,PUMP-SI-1B,power,high,solid branch P31 from Safety MCC B terminal to PUMP-SI-1B
+MCC-1B,PUMP-RHR-1B,power,high,solid branch P32 from Safety MCC B terminal to PUMP-RHR-1B
+MCC-1B,PUMP-CCW-1B,power,high,solid branch P33 from Safety MCC B terminal to PUMP-CCW-1B
+MCC-1B,FAN-RB-1B,power,high,solid branch P34 from Safety MCC B terminal to FAN-RB-1B
+MCC-1B,MOV-HPCI-1B,power,high,solid branch P35 from Safety MCC B terminal to MOV-HPCI-1B
+MCC-1B,VALVE-SW-1B,power,high,solid branch P36 from Safety MCC B terminal to VALVE-SW-1B
+BUS-480B,CHGR-125B,power,high,vertical P44 conductor with filled tap from BUS-480B to CHGR-125B
+CHGR-125B,BUS-125DCB,dc_power,high,vertical P45 conductor from CHGR-125B to filled tap on BUS-125DCB
+BAT-125B,BUS-125DCB,dc_power,high,vertical P46 conductor from BAT-125B to filled tap on BUS-125DCB
+BUS-125DCB,INV-120B,dc_power,high,vertical P47 conductor from BUS-125DCB to INV-120B
+BUS-125DCB,GND-01B,ground,high,vertical G02 conductor from BUS-125DCB tap to GND-01B ground reference symbol
+INV-120B,BUS-120B,power,high,vertical P48 conductor from INV-120B to filled tap on BUS-120B
+BUS-120B,PAN-RPS-B,power,high,vertical P49 conductor with filled tap from BUS-120B to PAN-RPS-B
+BUS-120B,INST-RACK-B,power,high,vertical P50 conductor with filled tap from BUS-120B to INST-RACK-B

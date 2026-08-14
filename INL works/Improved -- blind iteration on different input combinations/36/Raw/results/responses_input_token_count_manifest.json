@@ -1,0 +1,72 @@
+{
+  "endpoint": "POST /v1/responses/input_tokens",
+  "status": "not_called",
+  "reason": "OPENAI_API_KEY is not set in this environment.",
+  "openai_docs": "https://platform.openai.com/docs/guides/token-counting",
+  "payload_shape": {
+    "model": "gpt-5.4",
+    "input": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "input_text",
+            "text": "<prompt text>"
+          },
+          {
+            "type": "input_image",
+            "image_url": "data:image/png;base64,<image bytes>"
+          }
+        ]
+      }
+    ]
+  },
+  "planned_calls": [
+    {
+      "call_id": "main_aggregate",
+      "agent": "Codex",
+      "role": "orchestrator/extractor/output-writer",
+      "image_paths": []
+    },
+    {
+      "call_id": "round_01_diego_high_recall",
+      "agent": "Diego",
+      "role": "high-recall extractor",
+      "image_paths": [
+        "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw\\raw -- synthetic_npp_electrical_schematic_v2.png",
+        "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw\\codes\\crops\\top_sources.png",
+        "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw\\codes\\crops\\mid_4160.png",
+        "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw\\codes\\crops\\train_a_loads.png",
+        "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw\\codes\\crops\\train_b_loads.png",
+        "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw\\codes\\crops\\dc_control_center.png",
+        "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw\\codes\\crops\\title_notes_legend.png"
+      ]
+    },
+    {
+      "call_id": "round_02_jennifer_precision",
+      "agent": "Jennifer",
+      "role": "precision reviewer/refiner",
+      "image_paths": [
+        "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw\\raw -- synthetic_npp_electrical_schematic_v2.png",
+        "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw\\codes\\crops\\top_sources.png",
+        "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw\\codes\\crops\\mid_4160.png",
+        "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw\\codes\\crops\\train_a_loads.png",
+        "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw\\codes\\crops\\train_b_loads.png",
+        "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw\\codes\\crops\\dc_control_center.png",
+        "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\36\\Raw\\codes\\crops\\title_notes_legend.png"
+      ]
+    },
+    {
+      "call_id": "round_03_diego_saturation",
+      "agent": "Diego",
+      "role": "saturation extractor",
+      "image_paths": []
+    },
+    {
+      "call_id": "round_04_jennifer_agreement",
+      "agent": "Jennifer",
+      "role": "final precision confirmation",
+      "image_paths": []
+    }
+  ]
+}

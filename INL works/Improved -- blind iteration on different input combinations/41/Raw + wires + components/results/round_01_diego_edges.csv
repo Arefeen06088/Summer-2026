@@ -1,0 +1,61 @@
+source,target,type,confidence,evidence
+OFFSITE A,TR-1A,power,0.95,solid feeder from offsite source symbol to transformer primary terminals
+TR-1A,CB-101,power,0.95,solid feeder from transformer secondary to CB-101
+CB-101,BUS-1A,power,0.97,CB-101 output lands on BUS-1A left side
+TR-1A,GND-1E,grounding,0.90,ground conductor from TR-1A bottom terminal to GND-1E symbol
+EDG-1A,CB-105,power,0.95,solid feeder from EDG-1A output terminal to CB-105
+CB-105,BUS-1A,power,0.94,CB-105 output joins BUS-1A via EDG A incoming feeder
+BUS-1A,CB-TIE-1AB,power,0.95,BUS-1A right end connects to bus tie breaker port
+CB-TIE-1AB,BUS-1B,power,0.95,bus tie breaker right port connects to BUS-1B
+BUS-1B,CB-102,power,0.97,BUS-1B right side connects to CB-102
+CB-102,TR-1B,power,0.95,CB-102 output connects to TR-1B secondary
+TR-1B,OFFSITE B,power,0.95,TR-1B primary connects to offsite B source terminals
+EDG-1B,CB-106,power,0.95,solid feeder from EDG-1B terminal to CB-106
+CB-106,BUS-1B,power,0.94,CB-106 output lands on BUS-1B via EDG B incoming feeder
+BUS-1A,TR-LC-1A,power,0.93,vertical tap from BUS-1A to TR-LC-1A primary
+TR-LC-1A,CB-201,power,0.95,transformer secondary feeds CB-201
+CB-201,BUS-480A,power,0.97,CB-201 lower feeder lands on BUS-480A
+BUS-1A,TR-SAF-1A,power,0.93,vertical tap from BUS-1A to TR-SAF-1A primary
+TR-SAF-1A,CB-203,power,0.95,TR-SAF-1A secondary feeds CB-203
+CB-203,BUS-480E1A,power,0.97,CB-203 lower feeder lands on BUS-480E1A
+BUS-1B,TR-LC-1B,power,0.93,vertical tap from BUS-1B to TR-LC-1B primary
+TR-LC-1B,CB-202,power,0.95,TR-LC-1B secondary feeds CB-202
+CB-202,BUS-480B,power,0.97,CB-202 lower feeder lands on BUS-480B
+BUS-1B,TR-SAF-1B,power,0.90,right train vertical tap visually feeds TR-SAF-1B primary
+TR-SAF-1B,CB-204,power,0.95,TR-SAF-1B secondary feeds CB-204
+CB-204,BUS-480E1B,power,0.97,CB-204 lower feeder lands on BUS-480E1B
+BUS-480A,MCC-1A,power,0.96,vertical feeder from BUS-480A to MCC-1A top port
+MCC-1A,PUMP-CCW-103A,power,0.96,solid feeder from MCC-1A bottom to pump terminal
+BUS-480A,MCC-1C,power,0.96,vertical feeder from BUS-480A to MCC-1C top port
+MCC-1C,FAN-CRHV-104A,power,0.96,solid feeder from MCC-1C bottom to fan terminal
+BUS-480E1A,MCC-ESS-A,power,0.96,vertical feeder from BUS-480E1A to MCC-ESS-A
+MCC-ESS-A,PUMP-SI-101A,power,0.95,left bottom feeder from MCC-ESS-A to pump
+MCC-ESS-A,PUMP-RHR-102A,power,0.95,middle bottom feeder from MCC-ESS-A to pump
+MCC-ESS-A,MOV-1201A,power,0.92,right bottom feeder from MCC-ESS-A to MOV symbol
+BUS-480B,MCC-1B,power,0.96,vertical feeder from BUS-480B to MCC-1B
+MCC-1B,PUMP-CCW-103B,power,0.96,solid feeder from MCC-1B bottom to pump
+BUS-480B,MCC-1D,power,0.96,vertical feeder from BUS-480B to MCC-1D
+MCC-1D,FAN-CRHV-104B,power,0.96,solid feeder from MCC-1D bottom to fan
+BUS-480E1B,MCC-ESS-B,power,0.96,vertical feeder from BUS-480E1B to MCC-ESS-B
+MCC-ESS-B,PUMP-SI-101B,power,0.95,left bottom feeder from MCC-ESS-B to pump
+MCC-ESS-B,PUMP-RHR-102B,power,0.95,middle bottom feeder from MCC-ESS-B to pump
+MCC-ESS-B,MOV-1201B,power,0.92,right bottom feeder from MCC-ESS-B to MOV
+BUS-480A,CHGR-125A,power,0.78,long solid cable route from BUS-480A side to CHGR-125A
+CHGR-125A,DC-BUS-125A,power,0.95,charger DC output lands on DC-BUS-125A
+BAT-125A,DC-BUS-125A,power,0.95,battery feeder lands on lower side of DC-BUS-125A
+DC-BUS-125A,INV-120A,power,0.96,right side of DC-BUS-125A connects to INV-120A
+INV-120A,UPS-BUS-A,power,0.96,INV-120A output connects to UPS-BUS-A
+UPS-BUS-A,PANEL-RPS-A,power,0.90,short solid branch from UPS-BUS-A area to PANEL-RPS-A bottom
+UPS-BUS-A,INST-RACK-1,power,0.90,solid branch from UPS-BUS-A output drops to INST-RACK-1
+BUS-480E1B,CHGR-125B,power,0.78,right-side solid cable route from BUS-480E1B area to CHGR-125B
+CHGR-125B,DC-BUS-125B,power,0.95,charger DC output lands on DC-BUS-125B
+BAT-125B,DC-BUS-125B,power,0.95,battery feeder lands on lower side of DC-BUS-125B
+DC-BUS-125B,INV-120B,power,0.96,left side of DC-BUS-125B connects to INV-120B
+INV-120B,UPS-BUS-B,power,0.96,INV-120B output connects to UPS-BUS-B
+UPS-BUS-B,PANEL-RPS-B,power,0.90,short solid branch from UPS-BUS-B to PANEL-RPS-B bottom
+CB-105,RELAY-K86A,control/interlock,0.86,dashed CTRL-86A route from CB-105 bottom continues to K86A relay port
+RELAY-K86A,PANEL-RPS-A,control/interlock,0.92,dashed vertical/bracket connection from relay to RPS-A panel side
+JB-ESF-01,PANEL-RPS-A,control/interlock,0.88,dashed line from JB-ESF-01 left side to PANEL-RPS-A top/side
+JB-ESF-01,PANEL-RPS-B,control/interlock,0.88,dashed line from JB-ESF-01 right side to PANEL-RPS-B top/side
+RELAY-K86B,PANEL-RPS-B,control/interlock,0.92,dashed vertical/bracket connection from relay to RPS-B panel side
+CB-106,RELAY-K86B,control/interlock,0.86,dashed CTRL-86B route from CB-106 bottom continues to K86B relay port

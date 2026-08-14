@@ -1,0 +1,61 @@
+source,target,kind,confidence,evidence
+DG-21A,ATS-21A,power_feeder,high,Solid feeder from DG-21A down then right into the left terminal of ATS-21A.
+UAT-2A,DS-21A,power_feeder,high,Vertical solid conductor directly connects UAT-2A secondary to DS-21A.
+DS-21A,ATS-21A,power_feeder,high,Solid conductor exits DS-21A bottom/right and enters ATS-21A right terminal.
+ATS-21A,SWGR-21A,power_feeder,high,Vertical solid feeder from ATS-21A to SWGR-21A bus with black junction dot at bus.
+SWGR-21A,CB-21A1,power_feeder,high,Vertical tap from SWGR-21A bus drops through black junction dot into CB-21A1.
+CB-21A1,TR-21A,power_feeder,high,Solid vertical conductor connects CB-21A1 to transformer TR-21A.
+TR-21A,MCC-21A,power_feeder,high,Solid vertical transformer secondary lands on MCC-21A with black dot at MCC top feeder point.
+SWGR-21A,TIE-BKR-21AB,bus_tie,high,SWGR-21A horizontal bus enters the left terminal of TIE-BKR-21AB.
+TIE-BKR-21AB,SWGR-21B,bus_tie,high,TIE-BKR-21AB right terminal continues as the SWGR-21B horizontal bus.
+DG-21B,ATS-21B,power_feeder,high,Solid feeder from DG-21B down then left into ATS-21B right terminal.
+SAT-2B,DS-21B,power_feeder,high,Vertical solid conductor directly connects SAT-2B to DS-21B.
+DS-21B,ATS-21B,power_feeder,high,Solid conductor exits DS-21B bottom/left and enters ATS-21B left terminal.
+ATS-21B,SWGR-21B,power_feeder,high,Vertical solid feeder from ATS-21B to SWGR-21B bus with black junction dot at bus.
+SWGR-21B,CB-21B1,power_feeder,high,Vertical tap from SWGR-21B bus drops through black junction dot into CB-21B1.
+CB-21B1,TR-21B,power_feeder,high,Solid vertical conductor connects CB-21B1 to transformer TR-21B.
+TR-21B,MCC-21B,power_feeder,high,Solid vertical transformer secondary lands on MCC-21B with black dot at MCC top feeder point.
+MCC-21A,CB-MPA1,power_feeder,high,Vertical MCC-21A feeder drops from terminal/bus dots into CB-MPA1.
+CB-MPA1,PUMP-SI21A,power_feeder,high,Solid vertical feeder continues from CB-MPA1 down to PUMP-SI21A motor symbol.
+MCC-21A,PUMP-CCW21A,power_feeder,high,Solid vertical tap from MCC-21A bus lands directly on PUMP-CCW21A motor.
+MCC-21A,FAN-RB21A,power_feeder,high,Solid vertical tap from MCC-21A bus lands directly on FAN-RB21A fan motor.
+MCC-21A,MOV-HV211A,power_feeder,high,Solid vertical tap from MCC-21A bus feeds MOV-HV211A valve symbol.
+MCC-21A,MOV-RWST21A,power_feeder,high,Solid vertical tap from MCC-21A bus feeds MOV-RWST21A; nearby dashed crossing is explicitly marked no-dot/no-junction.
+MCC-21A,XFMR-CPT21A,power_feeder,high,Solid branch from right end of MCC-21A bus steps down to XFMR-CPT21A primary.
+XFMR-CPT21A,AC-PNL-120A,power_feeder,high,Solid vertical conductor connects XFMR-CPT21A secondary to AC-PNL-120A.
+AC-PNL-120A,RECT-21A,power_feeder,high,Solid feeder from AC-PNL-120A bottom routes down to the top of RECT-21A.
+RECT-21A,DC-BUS-21A,dc_feeder,high,RECT-21A output conductor lands on DC-BUS-21A at a black junction dot.
+DC-BUS-21A,BAT-21A,dc_feeder,high,BAT-21A has a solid vertical lead to DC-BUS-21A with a black junction dot.
+DC-BUS-21A,INV-21A,dc_feeder,high,Solid vertical branch from DC-BUS-21A continues down to INV-21A.
+INV-21A,RPS-PNL-A,control_logic,high,Dashed control/logic line runs from INV-21A side terminal to RPS-PNL-A side terminal.
+CT-21A,RPS-PNL-A,instrument_signal,high,Short-dash/instrument lead descends from CT-21A to an RPS-PNL-A terminal strip position.
+LOCA-SIG-A,JB-21A,instrument_signal,high,Dashed signal line connects LOCA-SIG-A circle to the left side of JB-21A.
+JB-21A,RPS-PNL-A,instrument_signal,high,Dashed signal wiring leaves JB-21A and routes to top terminals of RPS-PNL-A.
+RPS-PNL-A,RELAY-K21A,control_logic,high,Dashed RPS CH A control lane connects RPS-PNL-A left side to RELAY-K21A.
+RELAY-K21A,RELAY-86A,control_logic,high,Dashed control lane segment joins RELAY-K21A and RELAY-86A.
+RELAY-86A,TRIP-MPA1,trip_control,medium,Dashed trip-control loop rises from RELAY-86A area toward the TRIP MPA1 lead; route is visible but partly long/edge-routed.
+TRIP-MPA1,CB-MPA1,trip_control,high,Dashed trip lead labeled TRIP MPA1 terminates at/inside CB-MPA1 trip connection.
+VT-21A,VOLTAGE-SIG-A,instrument_signal,medium,Dashed instrument run from VT-21A aligns with and continues to the dashed line labeled VOLTAGE SIG A; no-dot crossing called out near MOV-RWST21A.
+MCC-21B,CB-MPB1,power_feeder,high,Vertical MCC-21B feeder drops from terminal/bus dots into CB-MPB1.
+CB-MPB1,PUMP-SI21B,power_feeder,high,Solid vertical feeder continues from CB-MPB1 down to PUMP-SI21B motor symbol.
+MCC-21B,PUMP-CCW21B,power_feeder,high,Solid vertical tap from MCC-21B bus lands directly on PUMP-CCW21B motor.
+MCC-21B,FAN-RB21B,power_feeder,high,Solid vertical tap from MCC-21B bus lands directly on FAN-RB21B fan motor.
+MCC-21B,MOV-HV211B,power_feeder,high,Solid vertical tap from MCC-21B bus feeds MOV-HV211B valve symbol.
+MCC-21B,MOV-RWST21B,power_feeder,high,Solid vertical tap from MCC-21B bus feeds MOV-RWST21B valve symbol.
+MCC-21B,XFMR-CPT21B,power_feeder,high,Solid branch from left end of MCC-21B bus steps down to XFMR-CPT21B primary.
+XFMR-CPT21B,AC-PNL-120B,power_feeder,high,Solid vertical conductor connects XFMR-CPT21B secondary to AC-PNL-120B.
+AC-PNL-120B,RECT-21B,power_feeder,high,Solid feeder from AC-PNL-120B bottom routes down to the top of RECT-21B.
+RECT-21B,DC-BUS-21B,dc_feeder,high,RECT-21B output conductor lands on DC-BUS-21B at a black junction dot.
+DC-BUS-21B,BAT-21B,dc_feeder,high,BAT-21B has a solid vertical lead to DC-BUS-21B with a black junction dot.
+DC-BUS-21B,INV-21B,dc_feeder,high,Solid vertical branch from DC-BUS-21B continues down to INV-21B.
+INV-21B,RPS-PNL-B,control_logic,high,Dashed control/logic line runs from INV-21B side terminal to RPS-PNL-B side terminal.
+CT-21B,RPS-PNL-B,instrument_signal,high,Short-dash/instrument lead descends from CT-21B to an RPS-PNL-B terminal strip position.
+LOCA-SIG-B,JB-21B,instrument_signal,high,Dashed signal line connects JB-21B right side to LOCA-SIG-B circle.
+JB-21B,RPS-PNL-B,instrument_signal,high,Dashed signal wiring leaves JB-21B and routes to top terminals of RPS-PNL-B.
+RPS-PNL-B,RELAY-K21B,control_logic,high,Dashed RPS CH B control lane connects RPS-PNL-B right side to RELAY-K21B.
+RELAY-K21B,RELAY-86B,control_logic,high,Dashed control lane segment joins RELAY-K21B and RELAY-86B.
+RELAY-86B,TRIP-MPB1,trip_control,medium,Dashed trip-control loop rises from RELAY-86B area toward the TRIP MPB1 lead; route is visible but partly long/edge-routed.
+TRIP-MPB1,CB-MPB1,trip_control,high,Dashed trip lead labeled TRIP MPB1 terminates at/inside CB-MPB1 trip connection.
+VT-21B,VOLTAGE-SIG-B,instrument_signal,medium,Dashed instrument run from VT-21B descends to the dashed line labeled VOLTAGE SIG B near the right-side signal loop.
+VOLTAGE-SIG-A,RPS-PNL-A,instrument_signal,high,"Raw left/lower core: dashed instrument line labeled VOLTAGE SIG A turns down on the left side of the battery area, crosses the DC bus without a dot, and lands on a top terminal dot of RPS-PNL-A."
+VOLTAGE-SIG-B,RPS-PNL-B,instrument_signal,high,"Raw center/right core: dashed instrument line labeled VOLTAGE SIG B turns down near the DC-BUS-21B label, crosses the 125 VDC bus without a dot, and lands on a top terminal dot of RPS-PNL-B."

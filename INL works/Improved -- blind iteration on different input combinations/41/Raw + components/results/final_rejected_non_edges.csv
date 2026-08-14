@@ -1,0 +1,10 @@
+source,target,reason,evidence
+BUS_1A_4160V,BUS_1B_4160V,Direct bus-to-bus continuity is not asserted because the tie is through open CB-TIE 1AB.,CB-TIE 1AB is drawn with an open breaker contact and the notes state the bus tie is normally open.
+BUS_480B,BUS_480E1B,Separate adjacent 480 V normal and ESS buses; no terminal dot or closed tie is shown between them.,The BUS-480B right terminal is open while the CB-204/BUS-480E1B feeder route passes nearby; the terminal-dot rule prevents treating the crossing/proximity as a junction.
+UPS_BUS_A,UPS_BUS_B,Separate UPS bus bars; no visible terminal-dot tie or continuous conductor between their bus terminals.,The conductor from UPS-BUS-A right terminal turns down to INST-RACK-1 before the B train area; UPS-BUS-B is separately fed by INV-120B.
+CTRL_86A,CTRL_86B,Separate dashed control trunks for train A and train B; no continuous dashed conductor or shared terminal dot joins them.,"CTRL-86A terminates at the square port beside RELAY-K86A, while CTRL-86B terminates at the square port beside RELAY-K86B."
+PANEL_RPS_A,PANEL_RPS_B,No direct panel-to-panel conductor is shown.,Each panel connects by its own dashed lead to JB-ESF-01; the panel bodies are not directly wired together.
+RELAY_K86A,RELAY_K86B,Separate 86 relay devices with separate dashed train control paths.,No conductor or terminal dot connects the two relay symbols directly.
+BUS_480A,BUS_480E1A,Separate normal and ESS 480 V buses in train A; no tie or terminal-dot connection shown.,BUS-480A is fed through CB-201/TR-LC-1A; BUS-480E1A is fed through CB-203/TR-SAF-1A.
+MCC_ESS_A,MCC_ESS_B,Train-separated MCCs with no direct feeder between them.,Horizontal enclosure/boundary linework passes through the area without terminal dots at the MCCs.
+BUS_480B,CHGR_125B,"B charger supply is supported from the BUS-480E1B/480 V ESS B feeder path, not from the BUS-480B normal bus.",The charger supply cable is labeled near the right ESS-B feeder path; BUS-480B has no terminal-dot branch to CHGR-125B.

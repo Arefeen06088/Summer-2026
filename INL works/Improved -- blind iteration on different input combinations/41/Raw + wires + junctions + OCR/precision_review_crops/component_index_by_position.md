@@ -1,0 +1,87 @@
+# Document 41 Component Index
+
+## Counts By Type
+
+- battery: 2
+- breaker: 8
+- bus: 6
+- charger: 2
+- dc_bus: 2
+- fan_motor: 2
+- generator: 2
+- instrument_rack: 1
+- inverter: 2
+- junction_box: 1
+- motor_control_center: 6
+- motor_operated_valve: 2
+- panel: 2
+- pump_motor: 6
+- relay: 2
+- source: 2
+- tie_breaker: 1
+- transformer: 6
+- unit_region: 3
+- ups_bus: 2
+
+## Labels By Position
+
+- OFFSITE-A | source | physical_component | id=DET-COMP-0001 | bbox=[340, 315, 470, 460] | centroid=[405.0, 387.5]
+- OFFSITE-B | source | physical_component | id=DET-COMP-0002 | bbox=[3590, 315, 3725, 460] | centroid=[3657.5, 387.5]
+- TR-1A | transformer | physical_component | id=DET-COMP-0003 | bbox=[600, 340, 815, 560] | centroid=[707.5, 450.0]
+- TR-1B | transformer | physical_component | id=DET-COMP-0004 | bbox=[3235, 340, 3450, 560] | centroid=[3342.5, 450.0]
+- CB-101 | breaker | physical_component | id=DET-COMP-0005 | bbox=[850, 430, 1030, 550] | centroid=[940.0, 490.0]
+- CB-102 | breaker | physical_component | id=DET-COMP-0006 | bbox=[3020, 430, 3210, 550] | centroid=[3115.0, 490.0]
+- CB-TIE-1AB | tie_breaker | physical_component | id=DET-COMP-0007 | bbox=[1950, 460, 2140, 610] | centroid=[2045.0, 535.0]
+- BUS-1A-4.16KV | bus | logical_node | id=LOG-NODE-0001 | bbox=[1000, 485, 1870, 575] | centroid=[1435.0, 530.0]
+- BUS-1B-4.16KV | bus | logical_node | id=LOG-NODE-0002 | bbox=[2220, 485, 3010, 575] | centroid=[2615.0, 530.0]
+- EDG-1A | generator | physical_component | id=DET-COMP-0008 | bbox=[340, 670, 475, 810] | centroid=[407.5, 740.0]
+- EDG-1B | generator | physical_component | id=DET-COMP-0009 | bbox=[3585, 670, 3735, 810] | centroid=[3660.0, 740.0]
+- CB-105 | breaker | physical_component | id=DET-COMP-0010 | bbox=[850, 690, 1030, 830] | centroid=[940.0, 760.0]
+- CB-106 | breaker | physical_component | id=DET-COMP-0011 | bbox=[3020, 690, 3210, 830] | centroid=[3115.0, 760.0]
+- CLASS-1E-AC/DC | unit_region | logical_node | id=LOG-NODE-0003 | bbox=[260, 875, 3810, 2280] | centroid=[2035.0, 1577.5]
+- TR-LC-1A | transformer | physical_component | id=DET-COMP-0012 | bbox=[710, 940, 890, 1135] | centroid=[800.0, 1037.5]
+- TR-SAF-1A | transformer | physical_component | id=DET-COMP-0013 | bbox=[1590, 940, 1775, 1135] | centroid=[1682.5, 1037.5]
+- TR-LC-1B | transformer | physical_component | id=DET-COMP-0014 | bbox=[2330, 940, 2515, 1135] | centroid=[2422.5, 1037.5]
+- TR-SAF-1B | transformer | physical_component | id=DET-COMP-0015 | bbox=[3210, 940, 3395, 1135] | centroid=[3302.5, 1037.5]
+- CB-201 | breaker | physical_component | id=DET-COMP-0016 | bbox=[710, 1160, 890, 1310] | centroid=[800.0, 1235.0]
+- CB-203 | breaker | physical_component | id=DET-COMP-0017 | bbox=[1590, 1160, 1775, 1310] | centroid=[1682.5, 1235.0]
+- CB-202 | breaker | physical_component | id=DET-COMP-0018 | bbox=[2330, 1160, 2515, 1310] | centroid=[2422.5, 1235.0]
+- CB-204 | breaker | physical_component | id=DET-COMP-0019 | bbox=[3210, 1160, 3395, 1310] | centroid=[3302.5, 1235.0]
+- BUS-480A | bus | logical_node | id=LOG-NODE-0004 | bbox=[390, 1340, 1220, 1420] | centroid=[805.0, 1380.0]
+- BUS-480E1A | bus | logical_node | id=LOG-NODE-0005 | bbox=[1390, 1340, 2020, 1420] | centroid=[1705.0, 1380.0]
+- BUS-480B | bus | logical_node | id=LOG-NODE-0006 | bbox=[2170, 1340, 2980, 1420] | centroid=[2575.0, 1380.0]
+- BUS-480E1B | bus | logical_node | id=LOG-NODE-0007 | bbox=[3010, 1340, 3660, 1420] | centroid=[3335.0, 1380.0]
+- MCC-1A | motor_control_center | physical_component | id=DET-COMP-0020 | bbox=[470, 1490, 750, 1700] | centroid=[610.0, 1595.0]
+- MCC-1C | motor_control_center | physical_component | id=DET-COMP-0021 | bbox=[960, 1490, 1240, 1700] | centroid=[1100.0, 1595.0]
+- MCC-ESS-A | motor_control_center | physical_component | id=DET-COMP-0022 | bbox=[1570, 1490, 1855, 1700] | centroid=[1712.5, 1595.0]
+- MCC-1B | motor_control_center | physical_component | id=DET-COMP-0023 | bbox=[2190, 1490, 2470, 1700] | centroid=[2330.0, 1595.0]
+- MCC-1D | motor_control_center | physical_component | id=DET-COMP-0024 | bbox=[2670, 1490, 2950, 1700] | centroid=[2810.0, 1595.0]
+- MCC-ESS-B | motor_control_center | physical_component | id=DET-COMP-0025 | bbox=[3180, 1490, 3465, 1700] | centroid=[3322.5, 1595.0]
+- MOV-1201A | motor_operated_valve | physical_component | id=DET-COMP-0026 | bbox=[1965, 1955, 2100, 2125] | centroid=[2032.5, 2040.0]
+- MOV-1201B | motor_operated_valve | physical_component | id=DET-COMP-0027 | bbox=[3660, 1955, 3800, 2125] | centroid=[3730.0, 2040.0]
+- PUMP-CCW-103A | pump_motor | physical_component | id=DET-COMP-0028 | bbox=[470, 1970, 610, 2130] | centroid=[540.0, 2050.0]
+- FAN-CRHV-104A | fan_motor | physical_component | id=DET-COMP-0029 | bbox=[1000, 1970, 1140, 2130] | centroid=[1070.0, 2050.0]
+- PUMP-SI-101A | pump_motor | physical_component | id=DET-COMP-0030 | bbox=[1375, 1970, 1515, 2130] | centroid=[1445.0, 2050.0]
+- PUMP-RHR-102A | pump_motor | physical_component | id=DET-COMP-0031 | bbox=[1685, 1970, 1830, 2130] | centroid=[1757.5, 2050.0]
+- PUMP-CCW-103B | pump_motor | physical_component | id=DET-COMP-0032 | bbox=[2220, 1970, 2365, 2130] | centroid=[2292.5, 2050.0]
+- FAN-CRHV-104B | fan_motor | physical_component | id=DET-COMP-0033 | bbox=[2765, 1970, 2910, 2130] | centroid=[2837.5, 2050.0]
+- PUMP-SI-101B | pump_motor | physical_component | id=DET-COMP-0034 | bbox=[3090, 1970, 3235, 2130] | centroid=[3162.5, 2050.0]
+- PUMP-RHR-102B | pump_motor | physical_component | id=DET-COMP-0035 | bbox=[3390, 1970, 3535, 2130] | centroid=[3462.5, 2050.0]
+- JB-ESF-01 | junction_box | physical_component | id=DET-COMP-0036 | bbox=[2120, 2175, 2290, 2315] | centroid=[2205.0, 2245.0]
+- RELAY-K86A | relay | physical_component | id=DET-COMP-0037 | bbox=[1780, 2180, 1915, 2320] | centroid=[1847.5, 2250.0]
+- RELAY-K86B | relay | physical_component | id=DET-COMP-0038 | bbox=[2730, 2180, 2870, 2320] | centroid=[2800.0, 2250.0]
+- VITAL-POWER-TRAIN-A | unit_region | logical_node | id=LOG-NODE-0008 | bbox=[360, 2380, 2020, 3050] | centroid=[1190.0, 2715.0]
+- PANEL-RPS-A | panel | physical_component | id=DET-COMP-0039 | bbox=[1840, 2380, 2075, 2540] | centroid=[1957.5, 2460.0]
+- VITAL-POWER-TRAIN-B | unit_region | logical_node | id=LOG-NODE-0009 | bbox=[2260, 2380, 3620, 3050] | centroid=[2940.0, 2715.0]
+- PANEL-RPS-B | panel | physical_component | id=DET-COMP-0040 | bbox=[2390, 2380, 2630, 2540] | centroid=[2510.0, 2460.0]
+- CHGR-125A | charger | physical_component | id=DET-COMP-0041 | bbox=[595, 2390, 860, 2555] | centroid=[727.5, 2472.5]
+- CHGR-125B | charger | physical_component | id=DET-COMP-0042 | bbox=[3325, 2390, 3590, 2555] | centroid=[3457.5, 2472.5]
+- UPS-BUS-A | ups_bus | physical_component | id=DET-COMP-0043 | bbox=[1290, 2660, 1610, 2810] | centroid=[1450.0, 2735.0]
+- UPS-BUS-B | ups_bus | physical_component | id=DET-COMP-0044 | bbox=[2700, 2660, 3020, 2810] | centroid=[2860.0, 2735.0]
+- DC-BUS-125A | dc_bus | physical_component | id=DET-COMP-0045 | bbox=[930, 2670, 1235, 2765] | centroid=[1082.5, 2717.5]
+- INV-120A | inverter | physical_component | id=DET-COMP-0046 | bbox=[1620, 2670, 1915, 2765] | centroid=[1767.5, 2717.5]
+- INV-120B | inverter | physical_component | id=DET-COMP-0047 | bbox=[2310, 2670, 2620, 2765] | centroid=[2465.0, 2717.5]
+- DC-BUS-125B | dc_bus | physical_component | id=DET-COMP-0048 | bbox=[3070, 2670, 3370, 2765] | centroid=[3220.0, 2717.5]
+- BAT-125A | battery | physical_component | id=DET-COMP-0049 | bbox=[585, 2780, 860, 2970] | centroid=[722.5, 2875.0]
+- BAT-125B | battery | physical_component | id=DET-COMP-0050 | bbox=[3320, 2780, 3590, 2970] | centroid=[3455.0, 2875.0]
+- INST-RACK-1 | instrument_rack | physical_component | id=DET-COMP-0051 | bbox=[2000, 2830, 2260, 3070] | centroid=[2130.0, 2950.0]

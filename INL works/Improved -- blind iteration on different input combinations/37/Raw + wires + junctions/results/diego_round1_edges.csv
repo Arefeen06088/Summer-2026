@@ -1,0 +1,57 @@
+source,target,confidence,line_type,evidence
+AUX-TR-1A,CB-101,0.96,solid,top-center raw crop: P02 solid feeder runs from AUX-TR-1A right port to CB-101/S2-1A left port
+CB-101,GRID-345,0.96,solid,top-center raw crop: P01 solid feeder connects CB-101 right port to GRID-345 source circle left port
+GRID-345,CB-102,0.96,solid,top-center raw crop: P04 solid feeder connects GRID-345 source circle right port to CB-102 left port
+CB-102,AUX-TR-1B,0.96,solid,top-center raw crop: P05 solid feeder runs from CB-102/S2-1B right port to AUX-TR-1B left port
+AUX-TR-1A,BUS-6KA,0.94,solid,top-center/left raw crop: AUX-TR-1A bottom 345/6.9 kV lead drops to filled tap on BUS-6KA
+AUX-TR-1B,BUS-6KB,0.94,solid,top-center/right raw crop: AUX-TR-1B bottom 345/6.9 kV lead drops to filled tap on BUS-6KB
+BUS-6KA,CB-TIE-6K,0.88,solid,top-center raw crop: left BUS-6KA segment enters CB-TIE-6K/S2-T6 left port via P07
+CB-TIE-6K,BUS-6KB,0.88,solid,top-center raw crop: CB-TIE-6K/S2-T6 right port continues to BUS-6KB via P08
+BUS-6KA,CB-103A,0.95,solid,left/top raw crop: filled tap on BUS-6KA drops through the labeled CB-103A breaker symbol
+CB-103A,SWGR-1EA,0.95,solid,left/top raw crop: vertical solid conductor continues from CB-103A bottom port into SWGR-1EA top port
+DG-1A,CB-DG1A,0.96,solid,left raw crop: DG-1A diesel generator circle has a solid P09 feeder to CB-DG1A left port
+CB-DG1A,SWGR-1EA,0.95,solid,left raw crop: P10 solid feeder runs from CB-DG1A right port to SWGR-1EA left port
+SWGR-1EA,ATS-1A,0.94,solid,left/mid raw crop: SWGR-1EA bottom port drops vertically on P13 to ATS-1A top port
+ATS-1A,TR-480A,0.94,solid,left/mid raw crop: ATS-1A bottom port continues on P14 to TR-480A top port
+TR-480A,BUS-480A,0.95,solid,left/mid raw crop: TR-480A bottom 6.9 kV/480 V lead drops to filled tap P15 on BUS-480A
+ATS-1A,RELAY-K12A,0.82,dashed,mid/control raw crop: dashed C01 permissive control line runs from ATS-1A right side to RELAY-K12A
+BUS-6KB,CB-103B,0.95,solid,right/top raw crop: filled tap on BUS-6KB drops through the labeled CB-103B breaker symbol
+CB-103B,SWGR-1EB,0.95,solid,right/top raw crop: vertical solid conductor continues from CB-103B bottom port into SWGR-1EB top port
+DG-1B,CB-DG1B,0.96,solid,right raw crop: DG-1B diesel generator circle has a solid P16 feeder to CB-DG1B right port
+CB-DG1B,SWGR-1EB,0.95,solid,right raw crop: P17 solid feeder runs from CB-DG1B left port to SWGR-1EB right port
+SWGR-1EB,ATS-1B,0.94,solid,right/mid raw crop: SWGR-1EB bottom port drops vertically on P20 to ATS-1B top port
+ATS-1B,TR-480B,0.94,solid,right/mid raw crop: ATS-1B bottom port continues on P21 to TR-480B top port
+TR-480B,BUS-480B,0.95,solid,right/mid raw crop: TR-480B bottom 6.9 kV/480 V lead drops to filled tap P22 on BUS-480B
+ATS-1B,RELAY-K12B,0.82,dashed,mid/control raw crop: dashed C04 permissive control line runs from ATS-1B left side to RELAY-K12B
+BUS-480A,MCC-1A,0.96,solid,mid-left raw crop: filled tap P23 drops from BUS-480A to the top of MCC-1A / Safety MCC A
+MCC-1A,PUMP-SI-1A,0.96,solid,left/bottom raw crop: MCC-1A feeder position P24 drops directly to PUMP-SI-1A
+MCC-1A,PUMP-RHR-1A,0.96,solid,left/bottom raw crop: MCC-1A feeder position P25 drops directly to PUMP-RHR-1A
+MCC-1A,PUMP-CCW-1A,0.96,solid,left/bottom raw crop: MCC-1A feeder position P26 drops directly to PUMP-CCW-1A
+MCC-1A,FAN-RB-1A,0.96,solid,left/bottom raw crop: MCC-1A feeder position P27 drops directly to FAN-RB-1A
+MCC-1A,MOV-HPCI-1A,0.94,solid,left/bottom raw crop: MCC-1A feeder position P28 drops through generic MOV annotation to MOV-HPCI-1A
+MCC-1A,VALVE-SW-1A,0.94,solid,left/bottom raw crop: MCC-1A feeder position P29 drops through generic MOV annotation to VALVE-SW-1A
+BUS-480B,MCC-1B,0.96,solid,mid-right raw crop: filled tap P30 drops from BUS-480B to the top of MCC-1B / Safety MCC B
+MCC-1B,PUMP-SI-1B,0.96,solid,right/bottom raw crop: MCC-1B feeder position P31 drops directly to PUMP-SI-1B
+MCC-1B,PUMP-RHR-1B,0.96,solid,right/bottom raw crop: MCC-1B feeder position P32 drops directly to PUMP-RHR-1B
+MCC-1B,PUMP-CCW-1B,0.96,solid,right/bottom raw crop: MCC-1B feeder position P33 drops directly to PUMP-CCW-1B
+MCC-1B,FAN-RB-1B,0.96,solid,right/bottom raw crop: MCC-1B feeder position P34 drops directly to FAN-RB-1B
+MCC-1B,MOV-HPCI-1B,0.94,solid,right/bottom raw crop: MCC-1B feeder position P35 drops through generic MOV annotation to MOV-HPCI-1B
+MCC-1B,VALVE-SW-1B,0.94,solid,right/bottom raw crop: MCC-1B feeder position P36 drops through generic MOV annotation to VALVE-SW-1B
+BUS-480A,CHGR-125A,0.93,solid,train-A DC raw crop: filled tap P37 on BUS-480A drops to CHGR-125A AC/DC charger top port
+CHGR-125A,BUS-125DCA,0.96,solid,train-A DC raw crop: CHGR-125A bottom 480AC/125DC lead P38 drops to filled tap on BUS-125DCA
+BAT-125A,BUS-125DCA,0.96,solid,train-A DC raw crop: BAT-125A bottom 125 VDC A lead P39 drops to filled tap on BUS-125DCA
+BUS-125DCA,GND-01A,0.91,solid,train-A DC raw crop: BUS-125DCA has a filled tap G01 down to the GND-01A DC reference symbol
+BUS-125DCA,INV-120A,0.96,solid,train-A DC raw crop: filled tap from BUS-125DCA drops into INV-120A top DC port
+INV-120A,BUS-120A,0.96,solid,train-A DC raw crop: INV-120A bottom 125DC/120AC lead P41 drops to filled tap on BUS-120A
+BUS-120A,PAN-RPS-A,0.94,solid,lower-bus raw crop: filled tap P42 on BUS-120A drops to PAN-RPS-A / RPS Panel A
+BUS-120A,INST-RACK-A,0.94,solid,lower-bus raw crop: filled tap P43 on BUS-120A drops to INST-RACK-A
+PAN-RPS-A,PLC-ESF,0.66,dashed,lower-bus raw crop: dashed C03 control route leaves RPS Panel A bottom and runs to the ESF/PLC-ESF logic box
+BUS-480B,CHGR-125B,0.93,solid,train-B DC raw crop: filled tap P44 on BUS-480B drops to CHGR-125B AC/DC charger top port
+CHGR-125B,BUS-125DCB,0.96,solid,train-B DC raw crop: CHGR-125B bottom 480AC/125DC lead P45 drops to filled tap on BUS-125DCB
+BAT-125B,BUS-125DCB,0.96,solid,train-B DC raw crop: BAT-125B bottom 125 VDC B lead P46 drops to filled tap on BUS-125DCB
+BUS-125DCB,GND-01B,0.91,solid,train-B DC raw crop: BUS-125DCB has a filled tap G02 down to the GND-01B DC reference symbol
+BUS-125DCB,INV-120B,0.96,solid,train-B DC raw crop: filled tap from BUS-125DCB drops into INV-120B top DC port
+INV-120B,BUS-120B,0.96,solid,train-B DC raw crop: INV-120B bottom 125DC/120AC lead P48 drops to filled tap on BUS-120B
+BUS-120B,PAN-RPS-B,0.94,solid,lower-bus raw crop: filled tap P49 on BUS-120B drops to PAN-RPS-B / RPS Panel B
+BUS-120B,INST-RACK-B,0.94,solid,lower-bus raw crop: filled tap P50 on BUS-120B drops to INST-RACK-B
+PLC-ESF,PAN-RPS-B,0.66,dashed,lower-bus raw crop: dashed C06 control route runs from PLC-ESF/ESF logic toward RPS Panel B

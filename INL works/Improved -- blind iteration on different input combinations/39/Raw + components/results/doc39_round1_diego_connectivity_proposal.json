@@ -1,0 +1,889 @@
+{
+  "document": "39",
+  "iteration": "1",
+  "round": "1",
+  "agent": "Diego",
+  "status": "high_recall_proposal",
+  "source_scope": "Raw + components only; no GT/no OCR",
+  "nodes": [
+    {
+      "id": "OFFSITE_230KV_A",
+      "label": "OFFSITE 230 kV A",
+      "type": "external_continuation",
+      "evidence": "upper-left source box with three-line bus symbol labeled OFFSITE 230 kV A above DS-230A"
+    },
+    {
+      "id": "DS_230A",
+      "label": "DS-230A",
+      "type": "disconnect",
+      "evidence": "upper-left disconnect box below OFFSITE 230 kV A and above TR-1A"
+    },
+    {
+      "id": "TR_1A",
+      "label": "TR-1A 230/4.16",
+      "type": "transformer",
+      "evidence": "upper-left transformer symbol labeled TR-1A 230/4.16 between DS-230A and CB-1A"
+    },
+    {
+      "id": "CB_1A",
+      "label": "CB-1A",
+      "type": "breaker",
+      "evidence": "upper-left breaker box immediately above BUS-4160-A with vertical tap and junction dot"
+    },
+    {
+      "id": "BUS_4160_A",
+      "label": "BUS-4160-A DIV I 4.16 kV ESF",
+      "type": "bus",
+      "evidence": "left upper double horizontal solid bus labeled BUS-4160-A DIV I 4.16 kV ESF"
+    },
+    {
+      "id": "EDG_1A",
+      "label": "EDG-1A emergency diesel",
+      "type": "generator",
+      "evidence": "upper Train A generator circle marked G, labeled EDG-1A EMERGENCY DIESEL"
+    },
+    {
+      "id": "CB_DG_A",
+      "label": "CB-DG-A",
+      "type": "breaker",
+      "evidence": "Train A diesel generator breaker box below EDG-1A and above 4.16 kV bus tap"
+    },
+    {
+      "id": "RELAY_UV_A",
+      "label": "RELAY-UV-A 27/59",
+      "type": "relay",
+      "evidence": "relay box below right side of BUS-4160-A, dashed/dash-dot vertical sensing lead from bus"
+    },
+    {
+      "id": "TR_480_A",
+      "label": "TR-480-A 4.16/0.48",
+      "type": "transformer",
+      "evidence": "left-middle transformer symbol between BUS-4160-A and CB-480-A"
+    },
+    {
+      "id": "CB_480_A",
+      "label": "CB-480-A",
+      "type": "breaker",
+      "evidence": "breaker box below TR-480-A and above BUS-480-A"
+    },
+    {
+      "id": "BUS_480_A",
+      "label": "BUS-480-A 480 V LOAD CENTER A",
+      "type": "bus",
+      "evidence": "left-middle double horizontal solid bus labeled BUS-480-A 480 V LOAD CENTER A"
+    },
+    {
+      "id": "LC_A",
+      "label": "LC-A",
+      "type": "logical_node",
+      "evidence": "LC-A label printed at left end of BUS-480-A near the load center tap"
+    },
+    {
+      "id": "GND_PLANT",
+      "label": "GND-PLANT",
+      "type": "ground",
+      "evidence": "ground symbol and label GND-PLANT at right end of BUS-480-A, marked ground reference"
+    },
+    {
+      "id": "CHG_125A",
+      "label": "CHG-125A",
+      "type": "charger",
+      "evidence": "left vertical DC/RPS stack, charger box above BAT-125A"
+    },
+    {
+      "id": "BAT_125A",
+      "label": "BAT-125A",
+      "type": "battery",
+      "evidence": "left vertical DC/RPS stack, battery box with plus/minus marks below CHG-125A"
+    },
+    {
+      "id": "INV_120A",
+      "label": "INV-120A",
+      "type": "inverter",
+      "evidence": "left vertical DC/RPS stack, inverter box below BAT-125A and above PANEL-120A"
+    },
+    {
+      "id": "PANEL_120A",
+      "label": "PANEL-120A",
+      "type": "panel",
+      "evidence": "left vertical stack panel box below INV-120A"
+    },
+    {
+      "id": "RPS_A",
+      "label": "RPS-A DIV I",
+      "type": "panel",
+      "evidence": "left lower RPS box labeled RPS-A DIV I with dashed control conductors exiting"
+    },
+    {
+      "id": "RELAY_KA1",
+      "label": "RELAY-KA1",
+      "type": "relay",
+      "evidence": "lower-left relay box connected by dashed control line from RPS-A"
+    },
+    {
+      "id": "MCC_A1",
+      "label": "MCC-A1 SAFETY LOADS",
+      "type": "mcc",
+      "evidence": "left lower MCC-A1 cabinet below BUS-480-A feeding safety loads"
+    },
+    {
+      "id": "PUMP_RHR_A",
+      "label": "PUMP-RHR-A RHR A",
+      "type": "motor",
+      "evidence": "lower-left pump/motor load box fed from MCC-A1"
+    },
+    {
+      "id": "PUMP_CS_A",
+      "label": "PUMP-CS-A CORE SPRAY",
+      "type": "motor",
+      "evidence": "lower-left core spray pump/motor load box fed from MCC-A1"
+    },
+    {
+      "id": "MCC_A2",
+      "label": "MCC-A2 VALVE/PUMP",
+      "type": "mcc",
+      "evidence": "left lower MCC-A2 cabinet below BUS-480-A feeding valve/pump loads"
+    },
+    {
+      "id": "PUMP_CCW_A",
+      "label": "PUMP-CCW-A CCW A",
+      "type": "motor",
+      "evidence": "lower-left CCW pump/motor load box fed from MCC-A2"
+    },
+    {
+      "id": "MOV_881A",
+      "label": "MOV-881A",
+      "type": "motor",
+      "evidence": "lower-left motor-operated valve load symbol fed from MCC-A2, dashed control lead to JB-A101"
+    },
+    {
+      "id": "MOV_742A",
+      "label": "MOV-742A",
+      "type": "motor",
+      "evidence": "lower-left motor-operated valve load symbol fed from MCC-A2, dashed control lead to JB-A101"
+    },
+    {
+      "id": "JB_A101",
+      "label": "JB-A101",
+      "type": "junction_box",
+      "evidence": "bottom-left junction box with three terminal circles below MOV-881A/MOV-742A"
+    },
+    {
+      "id": "ANN_CR01",
+      "label": "ANN-CR01",
+      "type": "annunciator",
+      "evidence": "bottom-center control room annunciation box labeled ANN-CR01"
+    },
+    {
+      "id": "CB_TIE_AB",
+      "label": "CB-TIE-AB N.O. TIE",
+      "type": "breaker",
+      "evidence": "center upper breaker box labeled CB-TIE-AB with N.O. TIE annotation between BUS-4160-A and BUS-4160-B"
+    },
+    {
+      "id": "OFFSITE_230KV_B",
+      "label": "OFFSITE 230 kV B",
+      "type": "external_continuation",
+      "evidence": "upper-right source box with three-line bus symbol labeled OFFSITE 230 kV B above DS-230B"
+    },
+    {
+      "id": "DS_230B",
+      "label": "DS-230B",
+      "type": "disconnect",
+      "evidence": "upper-right disconnect box below OFFSITE 230 kV B and above TR-1B"
+    },
+    {
+      "id": "TR_1B",
+      "label": "TR-1B 230/4.16",
+      "type": "transformer",
+      "evidence": "upper-right transformer symbol labeled TR-1B 230/4.16 between DS-230B and CB-1B"
+    },
+    {
+      "id": "CB_1B",
+      "label": "CB-1B",
+      "type": "breaker",
+      "evidence": "upper-right breaker box immediately above BUS-4160-B with vertical tap and junction dot"
+    },
+    {
+      "id": "BUS_4160_B",
+      "label": "BUS-4160-B DIV II 4.16 kV ESF",
+      "type": "bus",
+      "evidence": "right upper double horizontal solid bus labeled BUS-4160-B DIV II 4.16 kV ESF"
+    },
+    {
+      "id": "EDG_1B",
+      "label": "EDG-1B emergency diesel",
+      "type": "generator",
+      "evidence": "upper Train B generator circle marked G, labeled EDG-1B EMERGENCY DIESEL"
+    },
+    {
+      "id": "CB_DG_B",
+      "label": "CB-DG-B",
+      "type": "breaker",
+      "evidence": "Train B diesel generator breaker box below EDG-1B and above 4.16 kV bus tap"
+    },
+    {
+      "id": "RELAY_UV_B",
+      "label": "RELAY-UV-B 27/59",
+      "type": "relay",
+      "evidence": "relay box below left side of BUS-4160-B, dashed/dash-dot vertical sensing lead from bus"
+    },
+    {
+      "id": "TR_480_B",
+      "label": "TR-480-B 4.16/0.48",
+      "type": "transformer",
+      "evidence": "right-middle transformer symbol between BUS-4160-B and CB-480-B"
+    },
+    {
+      "id": "CB_480_B",
+      "label": "CB-480-B",
+      "type": "breaker",
+      "evidence": "breaker box below TR-480-B and above BUS-480-B"
+    },
+    {
+      "id": "BUS_480_B",
+      "label": "BUS-480-B 480 V LOAD CENTER B",
+      "type": "bus",
+      "evidence": "right-middle double horizontal solid bus labeled BUS-480-B 480 V LOAD CENTER B"
+    },
+    {
+      "id": "LC_B",
+      "label": "LC-B",
+      "type": "logical_node",
+      "evidence": "LC-B label printed at right end of BUS-480-B near the load center tap"
+    },
+    {
+      "id": "CHG_125B",
+      "label": "CHG-125B",
+      "type": "charger",
+      "evidence": "right vertical DC/RPS stack, charger box above BAT-125B"
+    },
+    {
+      "id": "BAT_125B",
+      "label": "BAT-125B",
+      "type": "battery",
+      "evidence": "right vertical DC/RPS stack, battery box with plus/minus marks below CHG-125B"
+    },
+    {
+      "id": "INV_120B",
+      "label": "INV-120B",
+      "type": "inverter",
+      "evidence": "right vertical DC/RPS stack, inverter box below BAT-125B and above PANEL-120B"
+    },
+    {
+      "id": "PANEL_120B",
+      "label": "PANEL-120B",
+      "type": "panel",
+      "evidence": "right vertical stack panel box below INV-120B"
+    },
+    {
+      "id": "RPS_B",
+      "label": "RPS-B DIV II",
+      "type": "panel",
+      "evidence": "right lower RPS box labeled RPS-B DIV II with dashed control conductors exiting"
+    },
+    {
+      "id": "RELAY_KB1",
+      "label": "RELAY-KB1",
+      "type": "relay",
+      "evidence": "lower-right relay box connected by dashed control line from RPS-B"
+    },
+    {
+      "id": "MCC_B1",
+      "label": "MCC-B1 SAFETY LOADS",
+      "type": "mcc",
+      "evidence": "right lower MCC-B1 cabinet below BUS-480-B feeding safety loads"
+    },
+    {
+      "id": "PUMP_RHR_B",
+      "label": "PUMP-RHR-B RHR B",
+      "type": "motor",
+      "evidence": "lower-center pump/motor load box fed from MCC-B1"
+    },
+    {
+      "id": "PUMP_CS_B",
+      "label": "PUMP-CS-B CORE SPRAY",
+      "type": "motor",
+      "evidence": "lower-center core spray pump/motor load box fed from MCC-B1"
+    },
+    {
+      "id": "MCC_B2",
+      "label": "MCC-B2 VALVE/PUMP",
+      "type": "mcc",
+      "evidence": "right lower MCC-B2 cabinet below BUS-480-B feeding valve/pump loads"
+    },
+    {
+      "id": "PUMP_CCW_B",
+      "label": "PUMP-CCW-B CCW B",
+      "type": "motor",
+      "evidence": "lower-right CCW pump/motor load box fed from MCC-B2"
+    },
+    {
+      "id": "MOV_881B",
+      "label": "MOV-881B",
+      "type": "motor",
+      "evidence": "lower-right motor-operated valve load symbol fed from MCC-B2, dashed control lead to JB-B101"
+    },
+    {
+      "id": "MOV_742B",
+      "label": "MOV-742B",
+      "type": "motor",
+      "evidence": "lower-right motor-operated valve load symbol fed from MCC-B2, dashed control lead to JB-B101"
+    },
+    {
+      "id": "JB_B101",
+      "label": "JB-B101",
+      "type": "junction_box",
+      "evidence": "bottom-right junction box with three terminal circles below MOV-881B/MOV-742B"
+    },
+    {
+      "id": "REC_SOE01",
+      "label": "REC-SOE01",
+      "type": "recorder",
+      "evidence": "bottom-center/right control room recorder box labeled REC-SOE01, dashed line from ANN-CR01"
+    }
+  ],
+  "asserted_edges": [
+    {
+      "a": "OFFSITE_230KV_A",
+      "b": "DS_230A",
+      "kind": "power",
+      "evidence": "solid vertical conductor from OFFSITE 230 kV A source box to DS-230A top terminal",
+      "confidence": "high"
+    },
+    {
+      "a": "DS_230A",
+      "b": "TR_1A",
+      "kind": "power",
+      "evidence": "solid vertical conductor from DS-230A lower terminal to top of TR-1A",
+      "confidence": "high"
+    },
+    {
+      "a": "TR_1A",
+      "b": "CB_1A",
+      "kind": "power",
+      "evidence": "solid vertical conductor from TR-1A lower terminal to CB-1A",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_1A",
+      "b": "BUS_4160_A",
+      "kind": "power",
+      "evidence": "solid vertical tap from CB-1A to BUS-4160-A with junction dot on bus",
+      "confidence": "high"
+    },
+    {
+      "a": "EDG_1A",
+      "b": "CB_DG_A",
+      "kind": "power",
+      "evidence": "solid vertical conductor from EDG-1A generator to CB-DG-A",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_DG_A",
+      "b": "BUS_4160_A",
+      "kind": "power",
+      "evidence": "solid vertical tap from CB-DG-A to BUS-4160-A with junction dot",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_4160_A",
+      "b": "CB_TIE_AB",
+      "kind": "power",
+      "evidence": "left BUS-4160-A conductor terminates at left terminal dot of N.O. CB-TIE-AB",
+      "confidence": "medium"
+    },
+    {
+      "a": "BUS_4160_A",
+      "b": "RELAY_UV_A",
+      "kind": "sensing",
+      "evidence": "vertical dashed/dash-dot sensing lead drops from BUS-4160-A junction to RELAY-UV-A 27/59",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_4160_A",
+      "b": "TR_480_A",
+      "kind": "power",
+      "evidence": "solid vertical feeder from BUS-4160-A junction dot down to TR-480-A",
+      "confidence": "high"
+    },
+    {
+      "a": "TR_480_A",
+      "b": "CB_480_A",
+      "kind": "power",
+      "evidence": "solid vertical conductor from TR-480-A lower terminal to CB-480-A",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_480_A",
+      "b": "BUS_480_A",
+      "kind": "power",
+      "evidence": "solid vertical tap from CB-480-A to BUS-480-A with junction dot",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480_A",
+      "b": "LC_A",
+      "kind": "logical",
+      "evidence": "LC-A label is printed at the BUS-480-A left endpoint/label location",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480_A",
+      "b": "CHG_125A",
+      "kind": "power",
+      "evidence": "solid routed branch from BUS-480-A left end rises to the CHG-125A charger stack",
+      "confidence": "medium"
+    },
+    {
+      "a": "CHG_125A",
+      "b": "BAT_125A",
+      "kind": "dc_power",
+      "evidence": "vertical DC/sensing-style conductor between charger and battery in the left DC stack",
+      "confidence": "medium"
+    },
+    {
+      "a": "BAT_125A",
+      "b": "INV_120A",
+      "kind": "dc_power",
+      "evidence": "visible vertical DC conductor in left stack and terminal schedule row DC-A BAT-A to INV-A",
+      "confidence": "high"
+    },
+    {
+      "a": "INV_120A",
+      "b": "PANEL_120A",
+      "kind": "power",
+      "evidence": "vertical conductor continues downward from INV-120A to PANEL-120A in the left stack",
+      "confidence": "medium"
+    },
+    {
+      "a": "PANEL_120A",
+      "b": "RPS_A",
+      "kind": "control",
+      "evidence": "vertical control/power conductor continues from PANEL-120A to RPS-A DIV I",
+      "confidence": "medium"
+    },
+    {
+      "a": "BUS_480_A",
+      "b": "GND_PLANT",
+      "kind": "ground",
+      "evidence": "solid vertical ground-reference lead from right end of BUS-480-A to GND-PLANT symbol",
+      "confidence": "medium"
+    },
+    {
+      "a": "BUS_480_A",
+      "b": "MCC_A1",
+      "kind": "power",
+      "evidence": "solid vertical tap with junction dot from BUS-480-A down into MCC-A1",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480_A",
+      "b": "MCC_A2",
+      "kind": "power",
+      "evidence": "solid vertical tap with junction dot from BUS-480-A down into MCC-A2",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_A1",
+      "b": "PUMP_RHR_A",
+      "kind": "power",
+      "evidence": "solid routed load conductor from MCC-A1 to PUMP-RHR-A",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_A1",
+      "b": "PUMP_CS_A",
+      "kind": "power",
+      "evidence": "solid vertical/routed load conductor from MCC-A1 to PUMP-CS-A",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_A2",
+      "b": "PUMP_CCW_A",
+      "kind": "power",
+      "evidence": "solid routed load conductor from MCC-A2 to PUMP-CCW-A",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_A2",
+      "b": "MOV_881A",
+      "kind": "power",
+      "evidence": "solid vertical load conductor from MCC-A2 to MOV-881A",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_A2",
+      "b": "MOV_742A",
+      "kind": "power",
+      "evidence": "solid routed load conductor from MCC-A2 to MOV-742A",
+      "confidence": "high"
+    },
+    {
+      "a": "RPS_A",
+      "b": "RELAY_KA1",
+      "kind": "control",
+      "evidence": "dashed control conductor exits RPS-A and terminates at RELAY-KA1; terminal schedule also lists KA1 RPS-A to RLY",
+      "confidence": "high"
+    },
+    {
+      "a": "RPS_A",
+      "b": "JB_A101",
+      "kind": "control",
+      "evidence": "dashed control bundle descends from RPS-A and routes along lower control path toward JB-A101; terminal schedule lists A101 RPS-A to MOV-A",
+      "confidence": "medium"
+    },
+    {
+      "a": "MOV_881A",
+      "b": "JB_A101",
+      "kind": "control",
+      "evidence": "dashed vertical control lead from MOV-881A down to JB-A101 terminal area",
+      "confidence": "high"
+    },
+    {
+      "a": "MOV_742A",
+      "b": "JB_A101",
+      "kind": "control",
+      "evidence": "dashed vertical control lead from MOV-742A down to JB-A101 terminal area",
+      "confidence": "high"
+    },
+    {
+      "a": "ANN_CR01",
+      "b": "REC_SOE01",
+      "kind": "control",
+      "evidence": "dashed control-room annunciation conductor runs between ANN-CR01 and REC-SOE01",
+      "confidence": "medium"
+    },
+    {
+      "a": "CB_TIE_AB",
+      "b": "BUS_4160_B",
+      "kind": "power",
+      "evidence": "right terminal dot of N.O. CB-TIE-AB connects to the left end of BUS-4160-B",
+      "confidence": "medium"
+    },
+    {
+      "a": "OFFSITE_230KV_B",
+      "b": "DS_230B",
+      "kind": "power",
+      "evidence": "solid vertical conductor from OFFSITE 230 kV B source box to DS-230B top terminal",
+      "confidence": "high"
+    },
+    {
+      "a": "DS_230B",
+      "b": "TR_1B",
+      "kind": "power",
+      "evidence": "solid vertical conductor from DS-230B lower terminal to top of TR-1B",
+      "confidence": "high"
+    },
+    {
+      "a": "TR_1B",
+      "b": "CB_1B",
+      "kind": "power",
+      "evidence": "solid vertical conductor from TR-1B lower terminal to CB-1B",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_1B",
+      "b": "BUS_4160_B",
+      "kind": "power",
+      "evidence": "solid vertical tap from CB-1B to BUS-4160-B with junction dot on bus",
+      "confidence": "high"
+    },
+    {
+      "a": "EDG_1B",
+      "b": "CB_DG_B",
+      "kind": "power",
+      "evidence": "solid vertical conductor from EDG-1B generator to CB-DG-B",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_DG_B",
+      "b": "BUS_4160_B",
+      "kind": "power",
+      "evidence": "solid vertical tap from CB-DG-B to BUS-4160-B with junction dot",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_4160_B",
+      "b": "RELAY_UV_B",
+      "kind": "sensing",
+      "evidence": "vertical dashed/dash-dot sensing lead drops from BUS-4160-B junction to RELAY-UV-B 27/59",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_4160_B",
+      "b": "TR_480_B",
+      "kind": "power",
+      "evidence": "solid vertical feeder from BUS-4160-B junction dot down to TR-480-B",
+      "confidence": "high"
+    },
+    {
+      "a": "TR_480_B",
+      "b": "CB_480_B",
+      "kind": "power",
+      "evidence": "solid vertical conductor from TR-480-B lower terminal to CB-480-B",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_480_B",
+      "b": "BUS_480_B",
+      "kind": "power",
+      "evidence": "solid vertical tap from CB-480-B to BUS-480-B with junction dot",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480_B",
+      "b": "LC_B",
+      "kind": "logical",
+      "evidence": "LC-B label is printed at the BUS-480-B right endpoint/label location",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480_B",
+      "b": "CHG_125B",
+      "kind": "power",
+      "evidence": "solid routed branch from BUS-480-B right end rises to the CHG-125B charger stack",
+      "confidence": "medium"
+    },
+    {
+      "a": "CHG_125B",
+      "b": "BAT_125B",
+      "kind": "dc_power",
+      "evidence": "vertical DC/sensing-style conductor between charger and battery in the right DC stack",
+      "confidence": "medium"
+    },
+    {
+      "a": "BAT_125B",
+      "b": "INV_120B",
+      "kind": "dc_power",
+      "evidence": "visible vertical DC conductor between BAT-125B and INV-120B in right stack",
+      "confidence": "high"
+    },
+    {
+      "a": "INV_120B",
+      "b": "PANEL_120B",
+      "kind": "power",
+      "evidence": "vertical conductor continues downward from INV-120B to PANEL-120B in the right stack",
+      "confidence": "medium"
+    },
+    {
+      "a": "PANEL_120B",
+      "b": "RPS_B",
+      "kind": "control",
+      "evidence": "vertical control/power conductor continues from PANEL-120B to RPS-B DIV II",
+      "confidence": "medium"
+    },
+    {
+      "a": "BUS_480_B",
+      "b": "MCC_B1",
+      "kind": "power",
+      "evidence": "solid vertical tap with junction dot from BUS-480-B down into MCC-B1",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480_B",
+      "b": "MCC_B2",
+      "kind": "power",
+      "evidence": "solid vertical tap with junction dot from BUS-480-B down into MCC-B2",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_B1",
+      "b": "PUMP_RHR_B",
+      "kind": "power",
+      "evidence": "solid routed load conductor from MCC-B1 to PUMP-RHR-B",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_B1",
+      "b": "PUMP_CS_B",
+      "kind": "power",
+      "evidence": "solid vertical/routed load conductor from MCC-B1 to PUMP-CS-B",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_B2",
+      "b": "PUMP_CCW_B",
+      "kind": "power",
+      "evidence": "solid routed load conductor from MCC-B2 to PUMP-CCW-B",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_B2",
+      "b": "MOV_881B",
+      "kind": "power",
+      "evidence": "solid vertical load conductor from MCC-B2 to MOV-881B",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_B2",
+      "b": "MOV_742B",
+      "kind": "power",
+      "evidence": "solid routed load conductor from MCC-B2 to MOV-742B",
+      "confidence": "high"
+    },
+    {
+      "a": "RPS_B",
+      "b": "RELAY_KB1",
+      "kind": "control",
+      "evidence": "dashed control conductor exits RPS-B and terminates at RELAY-KB1; terminal schedule also lists KB1 RPS-B to RLY",
+      "confidence": "high"
+    },
+    {
+      "a": "RPS_B",
+      "b": "JB_B101",
+      "kind": "control",
+      "evidence": "dashed control bundle descends from RPS-B and routes along lower control path toward JB-B101; terminal schedule lists B101 RPS-B to MOV-B",
+      "confidence": "medium"
+    },
+    {
+      "a": "MOV_881B",
+      "b": "JB_B101",
+      "kind": "control",
+      "evidence": "dashed vertical control lead from MOV-881B down to JB-B101 terminal area",
+      "confidence": "high"
+    },
+    {
+      "a": "MOV_742B",
+      "b": "JB_B101",
+      "kind": "control",
+      "evidence": "dashed vertical/routed control lead from MOV-742B down to JB-B101 terminal area",
+      "confidence": "high"
+    }
+  ],
+  "uncertain_edges": [
+    {
+      "a": "BUS_4160_A",
+      "b": "BUS_4160_B",
+      "reason": "direct bus-to-bus continuity would require the N.O. CB-TIE-AB path; drawing labels the tie normally open, so only terminal-to-CB edges are asserted"
+    },
+    {
+      "a": "OFFSITE_230KV_A",
+      "b": "BUS_4160_A",
+      "reason": "normal offsite feed is visually a chain through DS-230A, TR-1A, and CB-1A, not a direct conductor edge"
+    },
+    {
+      "a": "OFFSITE_230KV_B",
+      "b": "BUS_4160_B",
+      "reason": "normal offsite feed is visually a chain through DS-230B, TR-1B, and CB-1B, not a direct conductor edge"
+    },
+    {
+      "a": "CHG_125A",
+      "b": "INV_120A",
+      "reason": "left DC stack has vertical DC routing, but the visually supported scheduled direct DC row is BAT-A to INV-A; charger-to-inverter directness is not asserted"
+    },
+    {
+      "a": "CHG_125B",
+      "b": "INV_120B",
+      "reason": "right DC stack has vertical DC routing, but charger-to-inverter directness is less explicit than battery-to-inverter"
+    },
+    {
+      "a": "BUS_480_A",
+      "b": "PANEL_120A",
+      "reason": "PANEL-120A likely receives derived 120 V power through the inverter stack rather than a direct BUS-480-A conductor"
+    },
+    {
+      "a": "BUS_480_B",
+      "b": "PANEL_120B",
+      "reason": "PANEL-120B likely receives derived 120 V power through the inverter stack rather than a direct BUS-480-B conductor"
+    },
+    {
+      "a": "BUS_480_A",
+      "b": "RPS_A",
+      "reason": "RPS-A supply/control appears through PANEL-120A and lower stack conductors; no direct bus-to-RPS conductor is visible"
+    },
+    {
+      "a": "BUS_480_B",
+      "b": "RPS_B",
+      "reason": "RPS-B supply/control appears through PANEL-120B and lower stack conductors; no direct bus-to-RPS conductor is visible"
+    },
+    {
+      "a": "RPS_A",
+      "b": "MOV_881A",
+      "reason": "terminal schedule says A101 routes RPS-A to MOV-A controls, but the visible geometry uses JB-A101 as the intermediate field junction"
+    },
+    {
+      "a": "RPS_A",
+      "b": "MOV_742A",
+      "reason": "terminal schedule says A101 routes RPS-A to MOV-A controls, but the visible geometry uses JB-A101 as the intermediate field junction"
+    },
+    {
+      "a": "RPS_B",
+      "b": "MOV_881B",
+      "reason": "terminal schedule says B101 routes RPS-B to MOV-B controls, but the visible geometry uses JB-B101 as the intermediate field junction"
+    },
+    {
+      "a": "RPS_B",
+      "b": "MOV_742B",
+      "reason": "terminal schedule says B101 routes RPS-B to MOV-B controls, but the visible geometry uses JB-B101 as the intermediate field junction"
+    },
+    {
+      "a": "JB_A101",
+      "b": "ANN_CR01",
+      "reason": "bottom control-room annunciation route is nearby and plausible, but a clean conductor termination from JB-A101 into ANN-CR01 is not visually certain"
+    },
+    {
+      "a": "JB_A101",
+      "b": "REC_SOE01",
+      "reason": "control-room route plausibly carries A-side signals to recorder/annunciator, but the visible direct termination is not clear"
+    },
+    {
+      "a": "JB_B101",
+      "b": "REC_SOE01",
+      "reason": "B-side lower dashed route is geometrically aligned with the recorder/control-room annunciation area, but termination into REC-SOE01 is not clear enough to assert"
+    },
+    {
+      "a": "JB_B101",
+      "b": "ANN_CR01",
+      "reason": "bottom control-room annunciation route plausibly spans both sides, but a direct JB-B101 to ANN-CR01 termination is not visually confirmed"
+    },
+    {
+      "a": "JB_A101",
+      "b": "JB_B101",
+      "reason": "long lower dashed routing/boundary could be interpreted as a shared control-room run, but it may be route/enclosure graphics rather than one electrical conductor"
+    },
+    {
+      "a": "RELAY_KA1",
+      "b": "PUMP_RHR_A",
+      "reason": "relay is placed near MCC-A1 safety-load conductors and may be an interlock, but no conductor visibly terminates from RELAY-KA1 to the pump"
+    },
+    {
+      "a": "RELAY_KA1",
+      "b": "PUMP_CS_A",
+      "reason": "relay is placed near MCC-A1 safety-load conductors and may be an interlock, but no conductor visibly terminates from RELAY-KA1 to the pump"
+    },
+    {
+      "a": "RELAY_KB1",
+      "b": "MOV_881B",
+      "reason": "RELAY-KB1 appears as an interlock relay in the right control area, but dashed conductors visibly route to RPS-B/JB-B101 rather than directly to MOV-881B"
+    },
+    {
+      "a": "RELAY_KB1",
+      "b": "MOV_742B",
+      "reason": "RELAY-KB1 appears as an interlock relay in the right control area, but dashed conductors visibly route to RPS-B/JB-B101 rather than directly to MOV-742B"
+    },
+    {
+      "a": "RELAY_UV_A",
+      "b": "CB_TIE_AB",
+      "reason": "under/over-voltage relay could logically supervise the tie/interlock, but only its sensing lead to BUS-4160-A is visible"
+    },
+    {
+      "a": "RELAY_UV_B",
+      "b": "CB_TIE_AB",
+      "reason": "under/over-voltage relay could logically supervise the tie/interlock, but only its sensing lead to BUS-4160-B is visible"
+    },
+    {
+      "a": "GND_PLANT",
+      "b": "BUS_480_B",
+      "reason": "ground reference is drawn near the center split but its visible solid conductor terminates at BUS-480-A, not BUS-480-B"
+    }
+  ],
+  "notes": [
+    "Raw schematic was treated as primary evidence; overlay/crops were used only as visual aids for localization.",
+    "Dashed division outlines, equipment-zone boundaries, note boxes, and routing/enclosure graphics are not treated as electrical edges unless a conductor visibly terminates at labeled devices.",
+    "Breaker/disconnect symbols are represented by terminal-to-device edges; asserted edges do not imply the internal contact is closed.",
+    "The normally open CB-TIE-AB is modeled with BUS-4160-A to CB-TIE-AB and CB-TIE-AB to BUS-4160-B terminal edges only; direct BUS-4160-A to BUS-4160-B continuity is uncertain.",
+    "Multiple parallel dashed control conductors in a bundle were collapsed to one undirected control edge between the same visible endpoint devices.",
+    "Crossings without junction dots were not treated as connected."
+  ]
+}

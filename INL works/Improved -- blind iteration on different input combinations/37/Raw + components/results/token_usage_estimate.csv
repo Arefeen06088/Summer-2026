@@ -1,0 +1,7 @@
+document,iteration,call,input_tokens_est,cached_input_tokens,image_file_input_tokens_est,output_tokens_expected,reasoning_tokens_expected,total_low,total_expected,total_high,usage_object_available,notes
+37,1,"Main Codex: grouped orchestration, visual triage, prompts, packaging",30000,unavailable,2210,2200,22000,46730,56410,79730,no,Grouped main-agent model turns; exact usage was not exposed.
+37,1,Diego: round1_high_recall_extraction,9500,unavailable,52190,7707,40000,90315,109397,154022,no,Initial Diego prompt plus Doc37 full raw/overlay and generated crop bundle.
+37,1,Jennifer: round1_precision_review,13107,unavailable,52190,7702,36000,91519,108999,149621,no,Jennifer prompt plus Diego round 1 artifacts and the same image bundle.
+37,1,Diego: round2_saturation_review,18437,unavailable,0,7991,10500,29532,36928,52223,no,Diego round 2 used prior visual context and Jennifer round 1 artifacts.
+37,1,Jennifer: round2_final_precision_confirmation,19321,unavailable,18020,9752,14500,51893,61593,81945,no,"Final Jennifer prompt plus Diego round 2 artifacts, Jennifer round 1 artifacts, and a smaller final image bundle."
+37,1,TOTAL,90365,unavailable,124610,35352,123000,309989,373327,517541,no,Total over estimated visible workflow calls.

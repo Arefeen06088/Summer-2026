@@ -1,0 +1,54 @@
+source,target,evidence,confidence
+GEN-U2A,CB-101,solid conductor between generator and breaker,High
+CB-101,TR-UAT-2A,solid conductor between breaker and transformer,High
+TR-UAT-2A,BUS-4160A,vertical conductor lands on BUS-4160A,High
+DG-2A,CB-103,solid conductor between diesel generator and breaker,High
+CB-103,BUS-4160A,solid conductor from breaker to BUS-4160A,High
+BUS-4160A,CB-105,bus-tie conductor reaches CB-105 from BUS-4160A,High
+CB-105,BUS-4160B,bus-tie conductor reaches BUS-4160B from CB-105,High
+TR-SUT-2B,CB-102,solid conductor between startup transformer and breaker,High
+CB-102,BUS-4160B,vertical conductor from breaker lands on BUS-4160B,High
+DG-2B,CB-104,solid conductor between diesel generator and breaker,High
+CB-104,BUS-4160B,solid conductor from breaker to BUS-4160B,High
+BUS-4160A,CB-201A,vertical feeder from BUS-4160A to breaker,High
+CB-201A,TR-201A,stacked vertical connection breaker to transformer,High
+TR-201A,CB-301A,stacked vertical connection transformer to breaker,High
+CB-301A,BUS-480A,vertical conductor lands on BUS-480A,High
+BUS-4160B,CB-201B,vertical feeder from BUS-4160B to breaker,High
+CB-201B,TR-201B,stacked vertical connection breaker to transformer,High
+TR-201B,CB-301B,stacked vertical connection transformer to breaker,High
+CB-301B,BUS-480B,vertical conductor lands on BUS-480B,High
+BUS-480A,CB-401A,vertical feeder from BUS-480A to breaker,High
+CB-401A,MCC-2A1,solid feeder from breaker into MCC-2A1,High
+BUS-480B,CB-401B,vertical feeder from BUS-480B to breaker,High
+CB-401B,MCC-2B1,solid feeder from breaker into MCC-2B1,High
+MCC-2A1,PUMP-RHR2A,visible feeder from MCC bucket to RHR pump A,High
+MCC-2A1,PUMP-CCW2A,visible feeder from MCC bucket to comp svc pump A,High
+MCC-2A1,PUMP-SW2A,visible feeder from MCC bucket to service water A,High
+MCC-2A1,FAN-CR2A,visible feeder from MCC bucket to control room fan A,High
+MCC-2A1,MOV-RHR141A,visible feeder from MCC bucket to RHR HX inlet A MOV,High
+MCC-2A1,MOV-SI221A,visible feeder from MCC bucket to SI test valve A MOV,High
+MCC-2B1,PUMP-RHR2B,visible feeder from MCC bucket to RHR pump B,High
+MCC-2B1,PUMP-CCW2B,visible feeder from MCC bucket to comp svc pump B,High
+MCC-2B1,PUMP-SW2B,visible feeder from MCC bucket to service water B,High
+MCC-2B1,FAN-CR2B,visible feeder from MCC bucket to control room fan B,High
+MCC-2B1,MOV-RHR142B,visible feeder from MCC bucket to RHR HX inlet B MOV,High
+MCC-2B1,MOV-SI222B,visible feeder from MCC bucket to SI test valve B MOV,High
+BUS-480A,TR-CPT-A,auxiliary 480V drop feeds CPT-A,Medium
+TR-CPT-A,BUS-120AC-A,CPT-A secondary appears to land on 120AC-A bus,Medium
+BUS-480A,CHGR-2A,auxiliary 480V drop feeds charger 2A,Medium
+CHGR-2A,BUS-125VDC-A,charger output lands on 125VDC train A bus,High
+BAT-125A,BUS-125VDC-A,battery symbol connected to 125VDC train A bus,High
+BUS-125VDC-A,INV-2A,DC bus tap feeds inverter 2A,High
+INV-2A,BUS-120AC-A,inverter output lands on 120AC-A bus,High
+BUS-120AC-A,RPS-PNL-A,solid 120AC-A feeder drops into RPS panel A,High
+BUS-125VDC-A,RELAY-86A,solid tap from 125VDC train A to relay 86A,Medium
+BUS-480B,TR-CPT-B,auxiliary 480V drop feeds CPT-B,Medium
+TR-CPT-B,BUS-120AC-B,CPT-B secondary lands on 120AC-B bus,High
+BUS-480B,CHGR-2B,auxiliary 480V drop feeds charger 2B,Medium
+CHGR-2B,BUS-125VDC-B,charger output lands on 125VDC train B bus,High
+BAT-125B,BUS-125VDC-B,battery symbol connected to 125VDC train B bus,High
+BUS-125VDC-B,INV-2B,DC bus tap feeds inverter 2B,High
+INV-2B,BUS-120AC-B,inverter output lands on 120AC-B bus,High
+BUS-120AC-B,RPS-PNL-B,solid 120AC-B feeder drops into RPS panel B,High
+BUS-125VDC-B,RELAY-86B,solid tap from 125VDC train B to relay 86B,Medium

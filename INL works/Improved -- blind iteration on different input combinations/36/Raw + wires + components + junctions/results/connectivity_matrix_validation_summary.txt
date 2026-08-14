@@ -1,0 +1,50 @@
+Connectivity matrix validation summary - Document 36
+Input configuration: Raw + wires + components + junctions
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\36\synthetic_npp_connectivity_matrix_v2.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_connectivity_matrix.csv): TP=50, FP=20, FN=10, Precision=0.714286, Recall=0.833333, F1=0.769231
+- Jennifer -- Round 2 (round_02_jennifer_precision_review_connectivity_matrix.csv): TP=52, FP=16, FN=8, Precision=0.764706, Recall=0.866667, F1=0.812500
+- Diego -- Round 3 (round_03_diego_saturation_check_connectivity_matrix.csv): TP=52, FP=16, FN=8, Precision=0.764706, Recall=0.866667, F1=0.812500
+- Jennifer -- Round 4 (round_04_jennifer_final_confirmation_connectivity_matrix.csv): TP=52, FP=16, FN=8, Precision=0.764706, Recall=0.866667, F1=0.812500
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=52, FP=16, FN=8, Precision=0.764706, Recall=0.866667, F1=0.812500
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+
+False-positive edge examples:
+- BUS-13K-A -- EDG-A
+- BUS-13K-A -- SU-A
+- BUS-13K-B -- EDG-B
+- BUS-13K-B -- SU-B
+- BUS-480-A -- LC-A1
+- BUS-480-A -- LC-A2
+- BUS-480-B -- LC-B1
+- BUS-480-B -- LC-B2
+- EDG-A -- TR-EDG-A
+- EDG-B -- TR-EDG-B
+
+False-negative edge examples:
+- BUS-13K-A -- TR-EDG-A
+- BUS-13K-A -- TR-SU-A
+- BUS-13K-B -- TR-EDG-B
+- BUS-13K-B -- TR-SU-B
+- BUS-480-A -- MCC-01A
+- BUS-480-A -- MCC-02A
+- BUS-480-B -- MCC-01B
+- BUS-480-B -- MCC-02B
+
+Extra/non-GT nodes causing performance drops:
+- EDG-A: 2 incident false-positive edge(s)
+- SU-A: 2 incident false-positive edge(s)
+- EDG-B: 2 incident false-positive edge(s)
+- SU-B: 2 incident false-positive edge(s)
+- LC-A1: 2 incident false-positive edge(s)
+- LC-A2: 2 incident false-positive edge(s)
+- LC-B1: 2 incident false-positive edge(s)
+- LC-B2: 2 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (EDG-A, SU-A, EDG-B, SU-B, LC-A1), final metrics would be TP=52, FP=6, FN=8, Precision=0.896552, Recall=0.866667, F1=0.881356.
+- If all 8 non-GT nodes were omitted, metrics would be TP=52, FP=0, FN=8, Precision=1.000000, Recall=0.866667, F1=0.928571.

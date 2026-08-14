@@ -1,0 +1,57 @@
+{
+  "document": "41",
+  "iteration": "1",
+  "raw_image": "raw -- synthetic_npp_electrical_schematic(2).png",
+  "final": {
+    "node_count": 58,
+    "edge_count": 60,
+    "matrix_size": [
+      58,
+      58
+    ],
+    "diagonal_zero": true,
+    "symmetric": true,
+    "errors": [],
+    "valid": true
+  },
+  "rounds": [
+    {
+      "round": "01",
+      "agent": "Diego",
+      "stage": "high_recall",
+      "node_count": 60,
+      "edge_count": 68,
+      "valid": true,
+      "notes": "High-recall graph included CTRL-86 callout nodes and six review-only candidate extras."
+    },
+    {
+      "round": "02",
+      "agent": "Jennifer",
+      "stage": "precision_review",
+      "node_count": 58,
+      "edge_count": 60,
+      "valid": true,
+      "notes": "Precision review removed CTRL-86 callout nodes and unsupported crossings; selected CB-204 as charger-B feed anchor."
+    },
+    {
+      "round": "03",
+      "agent": "Diego",
+      "stage": "saturation",
+      "node_count": 58,
+      "edge_count": 60,
+      "valid": true,
+      "notes": "Diego accepted Jennifer's refined graph without corrections."
+    },
+    {
+      "round": "04",
+      "agent": "Jennifer",
+      "stage": "final",
+      "node_count": 58,
+      "edge_count": 60,
+      "valid": true,
+      "notes": "Jennifer confirmed final graph as 58 nodes and 60 edges."
+    }
+  ],
+  "no_gt_used": true,
+  "raw_only_scope": true
+}

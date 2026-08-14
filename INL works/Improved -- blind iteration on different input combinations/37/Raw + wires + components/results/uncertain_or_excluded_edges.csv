@@ -1,0 +1,10 @@
+source,target,status,reason
+BUS-125DCA,GND-01A,excluded,"DC reference/ground annotation, not equipment/node for this matrix."
+BUS-125DCB,GND-01B,excluded,"DC reference/ground annotation, not equipment/node for this matrix."
+PAN-RPS-A,PLC-ESF,excluded,A-side dashed C03 route supports PAN-RPS-A--INST-RACK-A rather than a clear PLC landing.
+INST-RACK-A,PLC-ESF,excluded,No crisp visual terminal landing to PLC-ESF; C03 is treated as the A-side panel/rack functional route.
+INST-RACK-B,PLC-ESF,excluded,No supported B-side instrument-rack-to-PLC dashed route; C06 supports PLC-ESF--PAN-RPS-B.
+PAN-RPS-B,INST-RACK-B,excluded,No dashed route visually supports this pair; both receive 120 VAC from BUS-120B separately.
+RELAY-K12B,PLC-ESF,included_medium_confidence,C05 visibly routes from RELAY-K12B down toward the PLC-ESF/ESF logic area; endpoint is functional/diagrammatic.
+PLC-ESF,PAN-RPS-B,included_medium_confidence,C06 functional dashed route to RPS Panel B.
+PAN-RPS-A,INST-RACK-A,included_medium_confidence,C03 functional dashed route under the A-side RPS panel and instrument rack.

@@ -1,0 +1,625 @@
+{
+  "document": "38",
+  "iteration": "1",
+  "round": "2",
+  "agent": "Jennifer",
+  "final_status": "saturation_agreement_no_new_visually_supported_correction",
+  "source_scope": "Raw + components only; no GT/no OCR",
+  "asserted_edges": [
+    {
+      "a": "EXT_UNIT_AUX_BUS_CONT",
+      "b": "GEN_U2A",
+      "kind": "power",
+      "evidence": "visible conductor from the upper-left continuation box into GEN-U2A area",
+      "confidence": "medium"
+    },
+    {
+      "a": "GEN_U2A",
+      "b": "CB_101",
+      "kind": "power",
+      "evidence": "solid horizontal conductor from GEN-U2A to CB-101",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_101",
+      "b": "TR_UAT_2A",
+      "kind": "power",
+      "evidence": "solid horizontal conductor from CB-101 to TR-UAT-2A",
+      "confidence": "high"
+    },
+    {
+      "a": "TR_UAT_2A",
+      "b": "BUS_4160A",
+      "kind": "power",
+      "evidence": "transformer secondary tap lands on BUS-4160A with a visible dot",
+      "confidence": "high"
+    },
+    {
+      "a": "DG_2A",
+      "b": "CB_103",
+      "kind": "power",
+      "evidence": "solid horizontal conductor from DG-2A to CB-103",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_103",
+      "b": "BUS_4160A",
+      "kind": "power",
+      "evidence": "CB-103 output ties into the A-side 4.16 kV riser connected to BUS-4160A",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_4160A",
+      "b": "CB_201A",
+      "kind": "power",
+      "evidence": "vertical tap from BUS-4160A down into CB-201A",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_201A",
+      "b": "TR_201A",
+      "kind": "power",
+      "evidence": "vertical conductor from CB-201A to TR-201A",
+      "confidence": "high"
+    },
+    {
+      "a": "TR_201A",
+      "b": "CB_301A",
+      "kind": "power",
+      "evidence": "vertical conductor from TR-201A to CB-301A",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_301A",
+      "b": "BUS_480A",
+      "kind": "power",
+      "evidence": "vertical feeder from CB-301A lands on BUS-480A with a dot",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_4160A",
+      "b": "CB_105",
+      "kind": "power",
+      "evidence": "left bus-tie terminal from BUS-4160A enters CB-105; N.O./open status noted separately",
+      "confidence": "medium"
+    },
+    {
+      "a": "CB_105",
+      "b": "BUS_4160B",
+      "kind": "power",
+      "evidence": "right bus-tie terminal from CB-105 enters BUS-4160B side; N.O./open status noted separately",
+      "confidence": "medium"
+    },
+    {
+      "a": "TR_SUT_2B",
+      "b": "CB_102",
+      "kind": "power",
+      "evidence": "solid horizontal conductor from TR-SUT-2B to CB-102",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_102",
+      "b": "BUS_4160B",
+      "kind": "power",
+      "evidence": "CB-102 vertical tap lands on BUS-4160B with a dot",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_4160B",
+      "b": "CB_104",
+      "kind": "power",
+      "evidence": "vertical tap from BUS-4160B feeds CB-104",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_104",
+      "b": "DG_2B",
+      "kind": "power",
+      "evidence": "solid horizontal conductor from CB-104 to DG-2B",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_4160B",
+      "b": "CB_201B",
+      "kind": "power",
+      "evidence": "vertical tap from BUS-4160B down into CB-201B",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_201B",
+      "b": "TR_201B",
+      "kind": "power",
+      "evidence": "vertical conductor from CB-201B to TR-201B",
+      "confidence": "high"
+    },
+    {
+      "a": "TR_201B",
+      "b": "CB_301B",
+      "kind": "power",
+      "evidence": "vertical conductor from TR-201B to CB-301B",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_301B",
+      "b": "BUS_480B",
+      "kind": "power",
+      "evidence": "vertical feeder from CB-301B lands on BUS-480B with a dot",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480A",
+      "b": "CB_401A",
+      "kind": "power",
+      "evidence": "vertical tap from BUS-480A to CB-401A",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_401A",
+      "b": "MCC_2A1",
+      "kind": "power",
+      "evidence": "vertical conductor from CB-401A enters MCC-2A1",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2A1",
+      "b": "DISC_2A1_01_2A_F1",
+      "kind": "power",
+      "evidence": "bucket 01 local disconnect hangs from the MCC-2A1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "DISC_2A1_01_2A_F1",
+      "b": "PUMP_RHR2A",
+      "kind": "power",
+      "evidence": "feeder 2A-F1 descends from bucket 01 to PUMP-RHR2A",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2A1",
+      "b": "DISC_2A1_02_2A_F2",
+      "kind": "power",
+      "evidence": "bucket 02 local disconnect hangs from the MCC-2A1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "DISC_2A1_02_2A_F2",
+      "b": "PUMP_CCW2A",
+      "kind": "power",
+      "evidence": "feeder 2A-F2 descends from bucket 02 to PUMP-CCW2A",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2A1",
+      "b": "DISC_2A1_03_2A_F3",
+      "kind": "power",
+      "evidence": "bucket 03 local disconnect hangs from the MCC-2A1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "DISC_2A1_03_2A_F3",
+      "b": "PUMP_SW2A",
+      "kind": "power",
+      "evidence": "feeder 2A-F3 descends from bucket 03 to PUMP-SW2A",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2A1",
+      "b": "DISC_2A1_04_2A_F4",
+      "kind": "power",
+      "evidence": "bucket 04 local disconnect hangs from the MCC-2A1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "DISC_2A1_04_2A_F4",
+      "b": "FAN_CR2A",
+      "kind": "power",
+      "evidence": "feeder 2A-F4 descends from bucket 04 to FAN-CR2A",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2A1",
+      "b": "DISC_2A1_05_2A_F5",
+      "kind": "power",
+      "evidence": "bucket 05 local disconnect hangs from the MCC-2A1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "DISC_2A1_05_2A_F5",
+      "b": "MOV_RHR141A",
+      "kind": "power",
+      "evidence": "feeder 2A-F5 descends from bucket 05 to MOV-RHR141A",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2A1",
+      "b": "DISC_2A1_06_2A_F6",
+      "kind": "power",
+      "evidence": "bucket 06 local disconnect hangs from the MCC-2A1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "DISC_2A1_06_2A_F6",
+      "b": "MOV_SI2221A",
+      "kind": "power",
+      "evidence": "feeder 2A-F6 descends from bucket 06 to MOV-SI2221A",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480A",
+      "b": "TR_CPT_A",
+      "kind": "power",
+      "evidence": "left auxiliary 480 V tap drops from BUS-480A to TR-CPT-A primary",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480A",
+      "b": "CHGR_2A",
+      "kind": "power",
+      "evidence": "adjacent A-side 480 V tap branches into CHGR-2A input",
+      "confidence": "high"
+    },
+    {
+      "a": "CHGR_2A",
+      "b": "BUS_125DCA",
+      "kind": "dc_power",
+      "evidence": "CHGR-2A output lands on 125 VDC TRAIN A with a dot",
+      "confidence": "high"
+    },
+    {
+      "a": "BAT_125A",
+      "b": "BUS_125DCA",
+      "kind": "dc_power",
+      "evidence": "BAT-125A battery has vertical connection to 125 VDC TRAIN A",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_125DCA",
+      "b": "INV_2A",
+      "kind": "dc_power",
+      "evidence": "vertical tap from 125 VDC TRAIN A into INV-2A DC side",
+      "confidence": "high"
+    },
+    {
+      "a": "INV_2A",
+      "b": "BUS_120ACA",
+      "kind": "power",
+      "evidence": "INV-2A AC side aligns with and connects to BUS-120AC-A",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_120ACA",
+      "b": "RPS_PNL_A",
+      "kind": "control",
+      "evidence": "solid vertical tap with dot from BUS-120AC-A into RPS-PNL-A",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480B",
+      "b": "CB_401B",
+      "kind": "power",
+      "evidence": "vertical tap from BUS-480B to CB-401B",
+      "confidence": "high"
+    },
+    {
+      "a": "CB_401B",
+      "b": "MCC_2B1",
+      "kind": "power",
+      "evidence": "vertical conductor from CB-401B enters MCC-2B1",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2B1",
+      "b": "DISC_2B1_01_2B_F1",
+      "kind": "power",
+      "evidence": "bucket 01 local disconnect hangs from the MCC-2B1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "DISC_2B1_01_2B_F1",
+      "b": "PUMP_RHR2B",
+      "kind": "power",
+      "evidence": "feeder 2B-F1 descends from bucket 01 to PUMP-RHR2B",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2B1",
+      "b": "DISC_2B1_02_2B_F2",
+      "kind": "power",
+      "evidence": "bucket 02 local disconnect hangs from the MCC-2B1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "DISC_2B1_02_2B_F2",
+      "b": "PUMP_CCW2B",
+      "kind": "power",
+      "evidence": "feeder 2B-F2 descends from bucket 02 to PUMP-CCW2B",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2B1",
+      "b": "DISC_2B1_03_2B_F3",
+      "kind": "power",
+      "evidence": "bucket 03 local disconnect hangs from the MCC-2B1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "DISC_2B1_03_2B_F3",
+      "b": "PUMP_SW2B",
+      "kind": "power",
+      "evidence": "feeder 2B-F3 descends from bucket 03 to PUMP-SW2B",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2B1",
+      "b": "DISC_2B1_04_2B_F4",
+      "kind": "power",
+      "evidence": "bucket 04 local disconnect hangs from the MCC-2B1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "DISC_2B1_04_2B_F4",
+      "b": "FAN_CR2B",
+      "kind": "power",
+      "evidence": "feeder 2B-F4 descends from bucket 04 to FAN-CR2B",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2B1",
+      "b": "DISC_2B1_05_2B_F5",
+      "kind": "power",
+      "evidence": "bucket 05 local disconnect hangs from the MCC-2B1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "DISC_2B1_05_2B_F5",
+      "b": "MOV_RHR142B",
+      "kind": "power",
+      "evidence": "feeder 2B-F5 descends from bucket 05 to MOV-RHR142B",
+      "confidence": "high"
+    },
+    {
+      "a": "MCC_2B1",
+      "b": "DISC_2B1_06_2B_F6",
+      "kind": "power",
+      "evidence": "bucket 06 local disconnect hangs from the MCC-2B1 internal bus",
+      "confidence": "high"
+    },
+    {
+      "a": "DISC_2B1_06_2B_F6",
+      "b": "MOV_SI2222B",
+      "kind": "power",
+      "evidence": "feeder 2B-F6 descends from bucket 06 to MOV-SI2222B",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480B",
+      "b": "TR_CPT_B",
+      "kind": "power",
+      "evidence": "B-side auxiliary 480 V tap drops from BUS-480B to TR-CPT-B primary",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_480B",
+      "b": "CHGR_2B",
+      "kind": "power",
+      "evidence": "B-side 480 V auxiliary tap branches into CHGR-2B input",
+      "confidence": "high"
+    },
+    {
+      "a": "TR_CPT_B",
+      "b": "BUS_120ACB",
+      "kind": "power",
+      "evidence": "TR-CPT-B secondary visibly lands on BUS-120AC-B at the right end with a dot",
+      "confidence": "high"
+    },
+    {
+      "a": "CHGR_2B",
+      "b": "BUS_125DCB",
+      "kind": "dc_power",
+      "evidence": "CHGR-2B output lands on 125 VDC TRAIN B with a dot",
+      "confidence": "high"
+    },
+    {
+      "a": "BAT_125B",
+      "b": "BUS_125DCB",
+      "kind": "dc_power",
+      "evidence": "BAT-125B battery has vertical connection to 125 VDC TRAIN B",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_125DCB",
+      "b": "INV_2B",
+      "kind": "dc_power",
+      "evidence": "vertical tap from 125 VDC TRAIN B into INV-2B DC side",
+      "confidence": "high"
+    },
+    {
+      "a": "INV_2B",
+      "b": "BUS_120ACB",
+      "kind": "power",
+      "evidence": "INV-2B AC side aligns with and connects to BUS-120AC-B",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_120ACB",
+      "b": "RPS_PNL_B",
+      "kind": "control",
+      "evidence": "solid vertical tap with dot from BUS-120AC-B into RPS-PNL-B",
+      "confidence": "high"
+    },
+    {
+      "a": "BUS_120ACB",
+      "b": "RELAY_27B",
+      "kind": "control",
+      "evidence": "solid tap from the right end of BUS-120AC-B into RELAY-27B UV BUS B",
+      "confidence": "high"
+    }
+  ],
+  "uncertain_edges": [
+    {
+      "a": "TR_CPT_A",
+      "b": "BUS_120ACA",
+      "reason": "TR-CPT-A is labelled 480/120 VAC, but its lower lead ends at a standalone dot left of BUS-120AC-A; unlike B side, no visible landing on the AC bus is drawn."
+    },
+    {
+      "a": "BUS_125DCA",
+      "b": "RELAY_86A",
+      "reason": "A dashed lead drops from the 125 VDC train area toward RELAY-86A, but dashed control/cable routing is not enough for a high-confidence electrical edge."
+    },
+    {
+      "a": "BUS_125DCB",
+      "b": "RELAY_86B",
+      "reason": "A dashed lead drops from the 125 VDC train area toward RELAY-86B, but dashed control/cable routing is not enough for a high-confidence electrical edge."
+    },
+    {
+      "a": "BUS_120ACA",
+      "b": "RELAY_27A",
+      "reason": "RELAY-27A is labelled UV BUS A, but only dashed control routing is visible near the relay; no solid tap from BUS-120AC-A is visible."
+    },
+    {
+      "a": "RELAY_27A",
+      "b": "RPS_PNL_A",
+      "reason": "Dashed route/enclosure line approaches RELAY-27A and RPS-PNL-A, but no explicit solid terminal-to-terminal conductor is visible."
+    },
+    {
+      "a": "RELAY_86A",
+      "b": "RPS_PNL_A",
+      "reason": "Lockout relay 86A is near the A-side RPS/control route, but the visible connection is dashed/routed rather than a definite electrical edge."
+    },
+    {
+      "a": "RELAY_86B",
+      "b": "RPS_PNL_B",
+      "reason": "Lockout relay 86B is near the B-side RPS/control route, but the visible connection is dashed/routed rather than a definite electrical edge."
+    },
+    {
+      "a": "RELAY_27B",
+      "b": "RPS_PNL_B",
+      "reason": "B-side dashed control loop runs near RELAY-27B and RPS-PNL-B; the solid BUS-120AC-B tap is asserted, but this RPS-panel relation remains routing-level only."
+    },
+    {
+      "a": "BUS_4160A",
+      "b": "BUS_4160B",
+      "reason": "The buses meet only through CB-105, which is labelled N.O. and listed OPEN; terminal edges to CB-105 are asserted, but direct bus-to-bus continuity is not."
+    }
+  ],
+  "removed_edges": [
+    {
+      "a": "BUS_125DCA",
+      "b": "RELAY_86A",
+      "reason": "Diego asserted a dashed relay/control lead as connectivity; precision review downgrades it to uncertain because the drawing uses dashed control routing."
+    },
+    {
+      "a": "BUS_125DCB",
+      "b": "RELAY_86B",
+      "reason": "Diego asserted a dashed relay/control lead as connectivity; precision review downgrades it to uncertain because the drawing uses dashed control routing."
+    }
+  ],
+  "added_edges": [],
+  "label_corrections": [
+    {
+      "from": "BKT_2A1_01_2A_F1",
+      "to": "DISC_2A1_01_2A_F1",
+      "reason": "Small square is a visible MCC bucket/local disconnect, retained as a disconnect component rather than a generic logical node."
+    },
+    {
+      "from": "BKT_2A1_02_2A_F2",
+      "to": "DISC_2A1_02_2A_F2",
+      "reason": "Small square is a visible MCC bucket/local disconnect, retained as a disconnect component rather than a generic logical node."
+    },
+    {
+      "from": "BKT_2A1_03_2A_F3",
+      "to": "DISC_2A1_03_2A_F3",
+      "reason": "Small square is a visible MCC bucket/local disconnect, retained as a disconnect component rather than a generic logical node."
+    },
+    {
+      "from": "BKT_2A1_04_2A_F4",
+      "to": "DISC_2A1_04_2A_F4",
+      "reason": "Small square is a visible MCC bucket/local disconnect, retained as a disconnect component rather than a generic logical node."
+    },
+    {
+      "from": "BKT_2A1_05_2A_F5",
+      "to": "DISC_2A1_05_2A_F5",
+      "reason": "Small square is a visible MCC bucket/local disconnect, retained as a disconnect component rather than a generic logical node."
+    },
+    {
+      "from": "BKT_2A1_06_2A_F6",
+      "to": "DISC_2A1_06_2A_F6",
+      "reason": "Small square is a visible MCC bucket/local disconnect, retained as a disconnect component rather than a generic logical node."
+    },
+    {
+      "from": "BKT_2B1_01_2B_F1",
+      "to": "DISC_2B1_01_2B_F1",
+      "reason": "Small square is a visible MCC bucket/local disconnect, retained as a disconnect component rather than a generic logical node."
+    },
+    {
+      "from": "BKT_2B1_02_2B_F2",
+      "to": "DISC_2B1_02_2B_F2",
+      "reason": "Small square is a visible MCC bucket/local disconnect, retained as a disconnect component rather than a generic logical node."
+    },
+    {
+      "from": "BKT_2B1_03_2B_F3",
+      "to": "DISC_2B1_03_2B_F3",
+      "reason": "Small square is a visible MCC bucket/local disconnect, retained as a disconnect component rather than a generic logical node."
+    },
+    {
+      "from": "BKT_2B1_04_2B_F4",
+      "to": "DISC_2B1_04_2B_F4",
+      "reason": "Small square is a visible MCC bucket/local disconnect, retained as a disconnect component rather than a generic logical node."
+    },
+    {
+      "from": "BKT_2B1_05_2B_F5",
+      "to": "DISC_2B1_05_2B_F5",
+      "reason": "Small square is a visible MCC bucket/local disconnect, retained as a disconnect component rather than a generic logical node."
+    },
+    {
+      "from": "BKT_2B1_06_2B_F6",
+      "to": "DISC_2B1_06_2B_F6",
+      "reason": "Small square is a visible MCC bucket/local disconnect, retained as a disconnect component rather than a generic logical node."
+    },
+    {
+      "from": "BAT_125A_S_125DC_A",
+      "to": "BAT_125A",
+      "reason": "BAT-125A is the battery component; S-125DC-A is retained in the label as adjacent equipment text rather than the node id."
+    },
+    {
+      "from": "BAT_125B_S_125DC_B",
+      "to": "BAT_125B",
+      "reason": "BAT-125B is the battery component; S-125DC-B is retained in the label as adjacent equipment text rather than the node id."
+    }
+  ],
+  "rejected_non_edges": [
+    {
+      "a": "BUS_480A",
+      "b": "BUS_480B",
+      "reason": "The middle gap is explicitly labelled 480V TIE RESERVED SPACE / NO CONNECTION SHOWN."
+    },
+    {
+      "a": "EXT_STATION_YARD_CONT",
+      "b": "BUS_4160B",
+      "reason": "Upper-right station-yard continuation box has no visible conductor to BUS-4160B or any device."
+    },
+    {
+      "a": "GND_STA",
+      "b": "CABLE_ROUTE_2A_C22",
+      "reason": "Station ground is shown as a single point; dotted/dashed nearby route is not retained as a connected electrical node."
+    },
+    {
+      "a": "GND_STA",
+      "b": "CABLE_ROUTE_2A_C86",
+      "reason": "Station ground is shown as a single point; dotted/dashed nearby route is not retained as a connected electrical node."
+    }
+  ],
+  "notes": [
+    "Raw schematic and raw crops were treated as authoritative; overlay was used only as a secondary locator.",
+    "Omitted Diego dashed cable route nodes CABLE_ROUTE_2A_C22, CABLE_ROUTE_2A_C86, CABLE_ROUTE_2B_C22, and CABLE_ROUTE_2B_C86 from the final node list.",
+    "Omitted Diego LOGICAL_480V_TIE_RESERVED_SPACE because the drawing explicitly says NO CONNECTION SHOWN; no BUS-480A to BUS-480B edge is asserted.",
+    "Omitted EXT_STATION_YARD_CONT because the upper-right continuation box has no visible conductor attached.",
+    "MCC bucket/local disconnect squares are retained as disconnect nodes because each is a visible numbered bucket with a feeder tag in series with its load; motors are not connected directly to the MCC node in the matrix.",
+    "CB-105 terminal edges are retained as drawn device-terminal connectivity, but CB-105 is labelled N.O. and the status table lists it OPEN; no direct BUS-4160A to BUS-4160B continuity edge is asserted.",
+    "Dashed leads/routes to RELAY-86A, RELAY-86B, and A-side RELAY-27A are downgraded to uncertain rather than matrix edges.",
+    "TR-CPT-A does not visibly connect to BUS-120AC-A; TR-CPT-B visibly connects to BUS-120AC-B by a solid vertical landing with a dot.",
+    "GND-STA is retained only as a labelled isolated ground symbol; no dotted/dashed ground-route edge is asserted.",
+    "Diego round 2 proposal and matrix match Jennifer round 1 node order, asserted edges, uncertain edges, and matrix exactly.",
+    "Final visual recheck found no new visually supported correction; saturation declared."
+  ]
+}

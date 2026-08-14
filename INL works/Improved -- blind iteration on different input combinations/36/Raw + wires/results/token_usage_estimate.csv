@@ -1,0 +1,7 @@
+document,iteration,call_id,actor,agent_id,round,model,input_tokens_est,cached_input_tokens_est,output_tokens_est,reasoning_tokens_available,reasoning_tokens_low_est,reasoning_tokens_expected_est,reasoning_tokens_high_est,image_file_input_tokens_est,total_tokens_low_est,total_tokens_expected_est,total_tokens_high_est,usage_object_available,notes
+36,1,main_01_visual_orchestration_and_artifacts,main,,orchestration,gpt-5,1700,0,4200,no,2500,5200,9000,107950,116350,119050,122850,no,main local visual inspection and script writing
+36,1,diego_01_high_recall,Diego,019f76d7-661b-75a1-a971-5b83dc21f325,round_01,gpt-5.5 xhigh,2300,0,3200,no,4200,8500,15000,122315,132015,136315,142815,no,high-recall subagent; usage object unavailable
+36,1,jennifer_01_precision,Jennifer,019f76db-828f-7530-b14b-82eb55ad04ed,round_01,gpt-5.5 xhigh,3400,0,2600,no,4200,8000,14000,118235,128435,132235,138235,no,precision-review subagent; usage object unavailable
+36,1,diego_02_saturation,Diego,019f76de-51cc-7113-9663-50e27ebeb997,round_02,gpt-5.5 xhigh,1700,122315,900,no,1200,2500,4800,37230,41030,42330,44630,no,saturation check; usage object unavailable
+36,1,jennifer_02_final,Jennifer,019f76df-9679-72d0-807f-b3e6a6d228e0,round_02,gpt-5.5 xhigh,1300,118235,500,no,800,1700,3400,63325,65925,66825,68525,no,final confirmation; usage object unavailable
+36,1,TOTAL,all,,all,mixed,10400,240550,11400,no,12900,25900,46200,449055,483755,496755,517055,no,total local estimate; Responses token-count endpoint unavailable because no API key was provided

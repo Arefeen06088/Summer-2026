@@ -1,0 +1,13 @@
+Connectivity matrix validation summary - Document 36
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\36\synthetic_npp_connectivity_matrix_v2.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_matrix.csv): TP=54, FP=20, FN=6, Precision=0.729730, Recall=0.900000, F1=0.805970
+- Jennifer -- Round 2 (round_02_jennifer_precision_matrix.csv): TP=60, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000
+- Diego -- Round 3 (round_03_diego_saturation_matrix.csv): TP=60, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000
+- Jennifer -- Round 4 (round_04_jennifer_agreement_matrix.csv): TP=60, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=60, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000
+
+Main reasons the final score was not perfect:
+- Final row is a perfect exact-edge match after label normalization.

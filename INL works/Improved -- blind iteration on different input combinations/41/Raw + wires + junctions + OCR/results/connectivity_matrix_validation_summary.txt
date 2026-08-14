@@ -1,0 +1,37 @@
+Connectivity matrix validation summary - Document 41 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\41\synthetic_npp_connectivity_matrix(3).csv
+GT after normalization: 60 undirected edges across 58 component names.
+
+Token usage:
+Token source files: document41_token_usage_estimates.csv; document41_token_usage_totals.csv.
+Document total token estimate: low=71514, expected=150977, high=524193.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=46, FP=13, FN=14, Precision=0.779661, Recall=0.766667, F1=0.773109.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names; missing exact GT component names.
+- Extracted components: 57; extra/non-GT names: 4; missing GT component names: 5.
+- False-positive extracted edge examples: BUS-1A-4.16KV -- CB-101; BUS-1A-4.16KV -- CB-105; BUS-1A-4.16KV -- CB-TIE-1AB; BUS-1A-4.16KV -- TR-LC-1A; BUS-1A-4.16KV -- TR-SAF-1A; BUS-1B-4.16KV -- CB-102; BUS-1B-4.16KV -- CB-106; BUS-1B-4.16KV -- CB-TIE-1AB; ... (+5 more).
+- Missed GT edge examples: BUS-1A -- CB-101; BUS-1A -- CB-105; BUS-1A -- CB-TIE-1AB; BUS-1A -- TR-LC-1A; BUS-1A -- TR-SAF-1A; BUS-1B -- CB-102; BUS-1B -- CB-106; BUS-1B -- CB-TIE-1AB; ... (+6 more).
+- Extra/non-GT component examples: BUS-1A-4.16KV; BUS-1B-4.16KV; OFFSITE-A; OFFSITE-B.
+- Missing GT component examples: BUS-1A; BUS-1B; GND-1E; GRID-161A; GRID-161B.
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=46, FP=0, FN=14, Precision=1.000000, Recall=0.766667, F1=0.867925.
+- If all missed GT edges were added, final performance would be TP=60, FP=13, FN=0, Precision=0.821918, Recall=1.000000, F1=0.902256.
+- If extra node BUS-1A-4.16KV and its 5 false-positive incident edge(s) were not put in extraction, final performance would be TP=46, FP=8, FN=14, Precision=0.851852, Recall=0.766667, F1=0.807018.
+- If extra node BUS-1B-4.16KV and its 5 false-positive incident edge(s) were not put in extraction, final performance would be TP=46, FP=8, FN=14, Precision=0.851852, Recall=0.766667, F1=0.807018.
+- If extra node OFFSITE-A and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=46, FP=12, FN=14, Precision=0.793103, Recall=0.766667, F1=0.779661.
+- If extra node OFFSITE-B and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=46, FP=12, FN=14, Precision=0.793103, Recall=0.766667, F1=0.779661.
+
+Best evaluated row: Diego -- Round 1 with F1=0.783333.
+
+Round-specific notes:
+- Diego -- Round 1: TP=47, FP=13, FN=13, F1=0.783333; extra nodes=4, missing GT nodes=4. FP examples: BUS-1A-4.16KV -- CB-101; BUS-1A-4.16KV -- CB-105; BUS-1A-4.16KV -- CB-TIE-1AB; BUS-1A-4.16KV -- TR-LC-1A; ... (+9 more). FN examples: BUS-1A -- CB-101; BUS-1A -- CB-105; BUS-1A -- CB-TIE-1AB; BUS-1A -- TR-LC-1A; ... (+9 more).
+- Jennifer -- Round 2: TP=46, FP=13, FN=14, F1=0.773109; extra nodes=4, missing GT nodes=5. FP examples: BUS-1A-4.16KV -- CB-101; BUS-1A-4.16KV -- CB-105; BUS-1A-4.16KV -- CB-TIE-1AB; BUS-1A-4.16KV -- TR-LC-1A; ... (+9 more). FN examples: BUS-1A -- CB-101; BUS-1A -- CB-105; BUS-1A -- CB-TIE-1AB; BUS-1A -- TR-LC-1A; ... (+10 more).
+- Diego -- Round 3: TP=46, FP=13, FN=14, F1=0.773109; extra nodes=4, missing GT nodes=5. FP examples: BUS-1A-4.16KV -- CB-101; BUS-1A-4.16KV -- CB-105; BUS-1A-4.16KV -- CB-TIE-1AB; BUS-1A-4.16KV -- TR-LC-1A; ... (+9 more). FN examples: BUS-1A -- CB-101; BUS-1A -- CB-105; BUS-1A -- CB-TIE-1AB; BUS-1A -- TR-LC-1A; ... (+10 more).
+- Jennifer -- Round 4: TP=46, FP=13, FN=14, F1=0.773109; extra nodes=4, missing GT nodes=5. FP examples: BUS-1A-4.16KV -- CB-101; BUS-1A-4.16KV -- CB-105; BUS-1A-4.16KV -- CB-TIE-1AB; BUS-1A-4.16KV -- TR-LC-1A; ... (+9 more). FN examples: BUS-1A -- CB-101; BUS-1A -- CB-105; BUS-1A -- CB-TIE-1AB; BUS-1A -- TR-LC-1A; ... (+10 more).
+- Final connectivity -- Final: TP=46, FP=13, FN=14, F1=0.773109; extra nodes=4, missing GT nodes=5. FP examples: BUS-1A-4.16KV -- CB-101; BUS-1A-4.16KV -- CB-105; BUS-1A-4.16KV -- CB-TIE-1AB; BUS-1A-4.16KV -- TR-LC-1A; ... (+9 more). FN examples: BUS-1A -- CB-101; BUS-1A -- CB-105; BUS-1A -- CB-TIE-1AB; BUS-1A -- TR-LC-1A; ... (+10 more).

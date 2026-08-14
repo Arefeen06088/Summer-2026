@@ -1,0 +1,12 @@
+candidate,kind,decision,reason
+GND-1E,node,excluded,"ground/reference symbol tied to TR-1A, not peer equipment matrix node"
+TR-1A--GND-1E,edge,excluded,"visual grounding annotation, excluded with GND-1E node"
+UPS-BUS-B--INST-RACK-1,edge,excluded,no terminal-supported feeder from B UPS bus to rack
+PANEL-RPS-A--PANEL-RPS-B,edge,excluded,control path visibly passes through JB-ESF-01
+RELAY-K86A--JB-ESF-01,edge,excluded,PANEL-RPS-A is visible intermediate endpoint
+RELAY-K86B--JB-ESF-01,edge,excluded,PANEL-RPS-B is visible intermediate endpoint
+BUS-1A--BUS-1B,edge,excluded,CB-TIE-1AB is between the buses
+CABLE 1A-480-7 / CABLE 1B-480-9,node,excluded,cable callouts only
+FDR A-DC / FDR B-DC,node,excluded,feeder labels only
+PT / UV / SEQ,node,excluded,"internal markings inside INST-RACK-1, not external endpoints"
+"title block, terminal block schedule, notes, grid labels",node,excluded,"metadata/annotation, not connectivity endpoints"

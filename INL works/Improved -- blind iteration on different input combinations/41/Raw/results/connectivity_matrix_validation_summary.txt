@@ -1,0 +1,61 @@
+Connectivity matrix validation summary - Document 41
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\41\synthetic_npp_connectivity_matrix(3).csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_matrix.csv): TP=43, FP=25, FN=17, Precision=0.632353, Recall=0.716667, F1=0.671875
+- Jennifer -- Round 2 (round_02_jennifer_precision_review_matrix.csv): TP=45, FP=15, FN=15, Precision=0.750000, Recall=0.750000, F1=0.750000
+- Diego -- Round 3 (round_03_diego_saturation_matrix.csv): TP=45, FP=15, FN=15, Precision=0.750000, Recall=0.750000, F1=0.750000
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=45, FP=15, FN=15, Precision=0.750000, Recall=0.750000, F1=0.750000
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=45, FP=15, FN=15, Precision=0.750000, Recall=0.750000, F1=0.750000
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- BUS-1A-4.16KV -- CB-101
+- BUS-1A-4.16KV -- CB-105
+- BUS-1A-4.16KV -- CB-TIE-1AB
+- BUS-1A-4.16KV -- TR-LC-1A
+- BUS-1A-4.16KV -- TR-SAF-1A
+- BUS-1B-4.16KV -- CB-102
+- BUS-1B-4.16KV -- CB-106
+- BUS-1B-4.16KV -- CB-TIE-1AB
+- BUS-1B-4.16KV -- TR-LC-1B
+- BUS-1B-4.16KV -- TR-SAF-1B
+
+False-negative edge examples:
+- BUS-1A -- CB-101
+- BUS-1A -- CB-105
+- BUS-1A -- CB-TIE-1AB
+- BUS-1A -- TR-LC-1A
+- BUS-1A -- TR-SAF-1A
+- BUS-1B -- CB-102
+- BUS-1B -- CB-106
+- BUS-1B -- CB-TIE-1AB
+- BUS-1B -- TR-LC-1B
+- BUS-1B -- TR-SAF-1B
+
+Extra/non-GT nodes causing performance drops:
+- BUS-1A-4.16KV: 5 incident false-positive edge(s)
+- BUS-1B-4.16KV: 5 incident false-positive edge(s)
+- JB-ESF-01-TB1: 2 incident false-positive edge(s)
+- OFFSITE-A-161KV: 1 incident false-positive edge(s)
+- OFFSITE-B-161KV: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (BUS-1A-4.16KV, BUS-1B-4.16KV, JB-ESF-01-TB1, OFFSITE-A-161KV, OFFSITE-B-161KV), final metrics would be TP=45, FP=1, FN=15, Precision=0.978261, Recall=0.750000, F1=0.849057.
+- If all 5 non-GT nodes were omitted, metrics would be TP=45, FP=1, FN=15, Precision=0.978261, Recall=0.750000, F1=0.849057.
+
+Missing GT node examples:
+- BUS-1A: 5 missed incident GT edge(s)
+- BUS-1B: 5 missed incident GT edge(s)
+- JB-ESF-01: 2 missed incident GT edge(s)
+- GRID-161A: 1 missed incident GT edge(s)
+- GRID-161B: 1 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted JB-ESF-01-TB1 vs GT JB-ESF-01 (similarity 0.82)

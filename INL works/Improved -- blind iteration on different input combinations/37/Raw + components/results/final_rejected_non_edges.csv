@@ -1,0 +1,14 @@
+source,target,reason
+BUS-480A,BUS-480B,Separate 480 V load-center buses with a visible center gap and no tie conductor.
+BUS-125DCA,BUS-125DCB,Separate DC buses across the center boundary; no solid conductor or filled dot joins them.
+BUS-120A,BUS-120B,Separate lower 120 VAC RPS buses; no shared route or connecting conductor is shown.
+BUS-6KA,BUS-6KB,No direct bus-to-bus edge; the visible route goes through CB-TIE-6K via P07/P08.
+RELAY-K12A,RELAY-K12B,No dashed or solid line directly connects the relay boxes across the center area.
+PLC-ESF,BUS-120A,Bottom dashed RPS distribution/tray annotation crosses the area without a filled dot or visible power tap to BUS-120A.
+PLC-ESF,BUS-120B,Bottom dashed RPS distribution/tray annotation crosses the area without a filled dot or visible power tap to BUS-120B.
+PAN-RPS-A,INST-RACK-A,C03 bottom dashed cable-tray/internal-routing outline is not a point-to-point connection; the visible electrical feeds are separate solid taps from BUS-120A.
+PAN-RPS-A,PLC-ESF,"C03/C02 dashed tray routing approaches the ESF area, but no clear terminal, filled dot, or port-to-port conductor is visible."
+INST-RACK-A,PLC-ESF,"C03 dashed tray routing is adjacent to INST-RACK-A and PLC-ESF, but no visible point-to-point termination is shown."
+PLC-ESF,PAN-RPS-B,"C06/bottom dashed tray routing near RPS panel B is functional routing, not a visibly terminated point-to-point connection."
+PLC-ESF,INST-RACK-B,Bottom dashed routing and annotation pass near INST-RACK-B without a clear termination on the rack.
+PAN-RPS-B,INST-RACK-B,Both are fed from BUS-120B by separate solid taps; the dashed tray/annotation is not a direct panel-to-rack edge.

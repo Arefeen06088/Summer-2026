@@ -1,0 +1,21 @@
+Connectivity matrix validation summary
+Document: 39
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\39\connectivity_matrix_improved_no_overlap.csv
+GT normalized nodes: 54; GT normalized edges: 58
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from round1_jennifer_precision_connectivity_matrix.csv with Precision=0.803571, Recall=0.775862, F1=0.789474
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=45, FP=11, FN=13, Precision=0.803571, Recall=0.775862, F1=0.789474
+Primary issue: extra/misnamed/intermediate extracted nodes created false-positive edges.
+
+Extra/non-GT nodes most responsible for FP edges: BUS-480-A/LC-A (5 FP edges); BUS-480-B/LC-B (4 FP edges); OFFSITE-230KV-B (1 FP edges); OFFSITE-230KV-A (1 FP edges).
+Missing GT nodes examples: BUS-480-A; BUS-480-B; GRID-230A; GRID-230B.
+Close-but-not-exact name examples: BUS-480-A/LC-A -> BUS-480-A (0.78); BUS-480-B/LC-B -> BUS-480-B (0.78).
+False-negative edge examples among GT-known nodes: ANN-CR01 -- RPS-A; ANN-CR01 -- RPS-B.
+False-positive examples involving extra/non-GT nodes: BUS-480-A/LC-A -- CB-480-A; BUS-480-A/LC-A -- CHG-125A; BUS-480-A/LC-A -- GND-PLANT; BUS-480-A/LC-A -- MCC-A1; BUS-480-A/LC-A -- MCC-A2; BUS-480-B/LC-B -- CB-480-B; BUS-480-B/LC-B -- CHG-125B; BUS-480-B/LC-B -- MCC-B1.
+False-negative examples involving missing/differently named nodes: BUS-480-A -- CB-480-A; BUS-480-A -- CHG-125A; BUS-480-A -- GND-PLANT; BUS-480-A -- MCC-A1; BUS-480-A -- MCC-A2; BUS-480-B -- CB-480-B; BUS-480-B -- CHG-125B; BUS-480-B -- MCC-B1.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (BUS-480-A/LC-A; BUS-480-B/LC-B; OFFSITE-230KV-B; OFFSITE-230KV-A), the final-row metrics would be TP=45, FP=0, FN=13, Precision=1.000000, Recall=0.775862, F1=0.873786.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=45, FP=0, FN=13, Precision=1.000000, Recall=0.775862, F1=0.873786.

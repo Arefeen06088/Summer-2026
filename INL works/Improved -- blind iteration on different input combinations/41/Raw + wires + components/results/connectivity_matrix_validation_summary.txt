@@ -1,0 +1,39 @@
+Connectivity matrix validation summary - Document 41
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\41\synthetic_npp_connectivity_matrix(3).csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_matrix.csv): TP=57, FP=3, FN=3, Precision=0.950000, Recall=0.950000, F1=0.950000
+- Jennifer -- Round 2 (round_02_jennifer_matrix.csv): TP=56, FP=3, FN=4, Precision=0.949153, Recall=0.933333, F1=0.941176
+- Diego -- Round 3 (round_03_diego_matrix.csv): TP=56, FP=3, FN=4, Precision=0.949153, Recall=0.933333, F1=0.941176
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=56, FP=3, FN=4, Precision=0.949153, Recall=0.933333, F1=0.941176
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=56, FP=3, FN=4, Precision=0.949153, Recall=0.933333, F1=0.941176
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- BUS-480E1B -- CHGR-125B
+- OFFSITE A -- TR-1A
+- OFFSITE B -- TR-1B
+
+False-negative edge examples:
+- BUS-480B -- CHGR-125B
+- GND-1E -- TR-1A
+- GRID-161A -- TR-1A
+- GRID-161B -- TR-1B
+
+Extra/non-GT nodes causing performance drops:
+- OFFSITE A: 1 incident false-positive edge(s)
+- OFFSITE B: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 2 extra/intermediate nodes were omitted from the extraction (OFFSITE A, OFFSITE B), final metrics would be TP=56, FP=1, FN=4, Precision=0.982456, Recall=0.933333, F1=0.957265.
+- If all 2 non-GT nodes were omitted, metrics would be TP=56, FP=1, FN=4, Precision=0.982456, Recall=0.933333, F1=0.957265.
+
+Missing GT node examples:
+- GND-1E: 1 missed incident GT edge(s)
+- GRID-161A: 1 missed incident GT edge(s)
+- GRID-161B: 1 missed incident GT edge(s)

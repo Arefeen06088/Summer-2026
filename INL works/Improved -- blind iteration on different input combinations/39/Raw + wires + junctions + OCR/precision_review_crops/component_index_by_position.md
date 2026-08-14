@@ -1,0 +1,94 @@
+# Document 39 Component Index
+
+## Counts By Type
+
+- annunciator: 1
+- battery: 2
+- boundary: 2
+- breaker: 6
+- bus: 4
+- charger: 2
+- control_bus: 1
+- disconnect_switch: 2
+- feed_note: 2
+- generator: 2
+- ground: 1
+- inverter: 2
+- junction_box: 2
+- local_control: 2
+- mcc: 4
+- motor_operated_valve: 4
+- panel: 2
+- pump: 6
+- recorder: 1
+- relay: 4
+- rps_panel: 2
+- source: 2
+- tie_breaker: 1
+- tie_note: 1
+- transformer: 4
+
+## Labels By Position
+
+- OFFSITE-230KV-A | source | id=DET-COMP-0001 | bbox=[515, 205, 955, 325] | centroid=[735.0, 265.0]
+- OFFSITE-230KV-B | source | id=DET-COMP-0008 | bbox=[2685, 205, 3245, 325] | centroid=[2965.0, 265.0]
+- DIVISION-I-TRAIN-A-SAFETY-POWER | boundary | id=LOG-NODE-0001 | bbox=[1100, 215, 2250, 270] | centroid=[1675.0, 242.5]
+- DIVISION-II-TRAIN-B-SAFETY-POWER | boundary | id=LOG-NODE-0002 | bbox=[3000, 215, 4260, 270] | centroid=[3630.0, 242.5]
+- EDG-1A | generator | id=DET-COMP-0005 | bbox=[1370, 285, 1690, 615] | centroid=[1530.0, 450.0]
+- EDG-1B | generator | id=DET-COMP-0012 | bbox=[3505, 285, 3825, 615] | centroid=[3665.0, 450.0]
+- DS-230A | disconnect_switch | id=DET-COMP-0002 | bbox=[560, 375, 980, 525] | centroid=[770.0, 450.0]
+- DS-230B | disconnect_switch | id=DET-COMP-0009 | bbox=[2790, 375, 3210, 525] | centroid=[3000.0, 450.0]
+- TR-1A | transformer | id=DET-COMP-0003 | bbox=[585, 525, 915, 735] | centroid=[750.0, 630.0]
+- TR-1B | transformer | id=DET-COMP-0010 | bbox=[2785, 525, 3225, 735] | centroid=[3005.0, 630.0]
+- CB-DG-A | breaker | id=DET-COMP-0006 | bbox=[1335, 730, 1700, 865] | centroid=[1517.5, 797.5]
+- CB-DG-B | breaker | id=DET-COMP-0013 | bbox=[3470, 730, 3870, 865] | centroid=[3670.0, 797.5]
+- CB-1A | breaker | id=DET-COMP-0004 | bbox=[555, 735, 950, 855] | centroid=[752.5, 795.0]
+- CB-1B | breaker | id=DET-COMP-0011 | bbox=[2770, 735, 3250, 855] | centroid=[3010.0, 795.0]
+- N.O.-TIE | tie_note | id=LOG-NODE-0009 | bbox=[2110, 780, 2470, 850] | centroid=[2290.0, 815.0]
+- CB-TIE-AB | tie_breaker | id=DET-COMP-0007 | bbox=[2095, 840, 2470, 1010] | centroid=[2282.5, 925.0]
+- BUS-4160-A-DIV-I | bus | id=LOG-NODE-0003 | bbox=[325, 855, 2110, 930] | centroid=[1217.5, 892.5]
+- BUS-4160-B-DIV-II | bus | id=LOG-NODE-0004 | bbox=[2470, 855, 4150, 930] | centroid=[3310.0, 892.5]
+- NORMAL-OFFSITE-FEED-A | feed_note | id=LOG-NODE-0011 | bbox=[320, 925, 950, 1010] | centroid=[635.0, 967.5]
+- NORMAL-OFFSITE-FEED-B | feed_note | id=LOG-NODE-0012 | bbox=[2700, 925, 3350, 1010] | centroid=[3025.0, 967.5]
+- CHG-125A | charger | id=DET-COMP-0020 | bbox=[55, 1035, 445, 1178] | centroid=[250.0, 1106.5]
+- CHG-125B | charger | id=DET-COMP-0036 | bbox=[4040, 1035, 4450, 1178] | centroid=[4245.0, 1106.5]
+- RELAY-UV-A | relay | id=DET-COMP-0014 | bbox=[1600, 1040, 2135, 1225] | centroid=[1867.5, 1132.5]
+- RELAY-UV-B | relay | id=DET-COMP-0015 | bbox=[2580, 1040, 3060, 1225] | centroid=[2820.0, 1132.5]
+- TR-480-A | transformer | id=DET-COMP-0016 | bbox=[775, 1050, 1265, 1280] | centroid=[1020.0, 1165.0]
+- TR-480-B | transformer | id=DET-COMP-0018 | bbox=[2955, 1050, 3470, 1280] | centroid=[3212.5, 1165.0]
+- BAT-125A | battery | id=DET-COMP-0021 | bbox=[55, 1218, 445, 1370] | centroid=[250.0, 1294.0]
+- BAT-125B | battery | id=DET-COMP-0037 | bbox=[4040, 1218, 4450, 1370] | centroid=[4245.0, 1294.0]
+- CB-480-A | breaker | id=DET-COMP-0017 | bbox=[760, 1310, 1280, 1480] | centroid=[1020.0, 1395.0]
+- CB-480-B | breaker | id=DET-COMP-0019 | bbox=[2950, 1310, 3490, 1480] | centroid=[3220.0, 1395.0]
+- INV-120A | inverter | id=DET-COMP-0022 | bbox=[55, 1405, 445, 1545] | centroid=[250.0, 1475.0]
+- INV-120B | inverter | id=DET-COMP-0038 | bbox=[4040, 1405, 4450, 1545] | centroid=[4245.0, 1475.0]
+- LC-A | local_control | id=LOG-NODE-0007 | bbox=[405, 1465, 545, 1565] | centroid=[475.0, 1515.0]
+- LC-B | local_control | id=LOG-NODE-0008 | bbox=[3920, 1465, 4090, 1565] | centroid=[4005.0, 1515.0]
+- BUS-480-A | bus | id=LOG-NODE-0005 | bbox=[440, 1485, 2130, 1540] | centroid=[1285.0, 1512.5]
+- BUS-480-B | bus | id=LOG-NODE-0006 | bbox=[2370, 1485, 4350, 1540] | centroid=[3360.0, 1512.5]
+- PANEL-120A | panel | id=DET-COMP-0023 | bbox=[55, 1605, 445, 1750] | centroid=[250.0, 1677.5]
+- PANEL-120B | panel | id=DET-COMP-0039 | bbox=[4040, 1605, 4450, 1750] | centroid=[4245.0, 1677.5]
+- GND-PLANT | ground | id=DET-COMP-0050 | bbox=[1900, 1650, 2205, 1845] | centroid=[2052.5, 1747.5]
+- MCC-A1 | mcc | id=DET-COMP-0025 | bbox=[365, 1690, 1065, 1930] | centroid=[715.0, 1810.0]
+- MCC-A2 | mcc | id=DET-COMP-0026 | bbox=[1210, 1690, 1910, 1930] | centroid=[1560.0, 1810.0]
+- MCC-B1 | mcc | id=DET-COMP-0042 | bbox=[2400, 1690, 3220, 1930] | centroid=[2810.0, 1810.0]
+- MCC-B2 | mcc | id=DET-COMP-0043 | bbox=[3290, 1690, 4000, 1930] | centroid=[3645.0, 1810.0]
+- RPS-A | rps_panel | id=DET-COMP-0024 | bbox=[55, 1785, 445, 1925] | centroid=[250.0, 1855.0]
+- RPS-B | rps_panel | id=DET-COMP-0040 | bbox=[4040, 1785, 4450, 1925] | centroid=[4245.0, 1855.0]
+- RELAY-KA1 | relay | id=DET-COMP-0027 | bbox=[310, 1940, 745, 2115] | centroid=[527.5, 2027.5]
+- RELAY-KB1 | relay | id=DET-COMP-0041 | bbox=[4040, 2000, 4450, 2140] | centroid=[4245.0, 2070.0]
+- MOV-881A | motor_operated_valve | id=DET-COMP-0031 | bbox=[1380, 2205, 1680, 2415] | centroid=[1530.0, 2310.0]
+- MOV-742A | motor_operated_valve | id=DET-COMP-0032 | bbox=[1780, 2205, 2115, 2415] | centroid=[1947.5, 2310.0]
+- MOV-881B | motor_operated_valve | id=DET-COMP-0047 | bbox=[3620, 2205, 3905, 2415] | centroid=[3762.5, 2310.0]
+- MOV-742B | motor_operated_valve | id=DET-COMP-0048 | bbox=[3960, 2205, 4325, 2415] | centroid=[4142.5, 2310.0]
+- PUMP-RHR-A | pump | id=DET-COMP-0028 | bbox=[295, 2255, 555, 2415] | centroid=[425.0, 2335.0]
+- PUMP-CS-A | pump | id=DET-COMP-0029 | bbox=[600, 2255, 900, 2415] | centroid=[750.0, 2335.0]
+- PUMP-CCW-A | pump | id=DET-COMP-0030 | bbox=[1010, 2255, 1325, 2415] | centroid=[1167.5, 2335.0]
+- PUMP-RHR-B | pump | id=DET-COMP-0044 | bbox=[2375, 2255, 2715, 2415] | centroid=[2545.0, 2335.0]
+- PUMP-CS-B | pump | id=DET-COMP-0045 | bbox=[2770, 2255, 3155, 2415] | centroid=[2962.5, 2335.0]
+- PUMP-CCW-B | pump | id=DET-COMP-0046 | bbox=[3220, 2255, 3550, 2415] | centroid=[3385.0, 2335.0]
+- JB-A101 | junction_box | id=DET-COMP-0033 | bbox=[1595, 2470, 1930, 2575] | centroid=[1762.5, 2522.5]
+- ANN-CR01 | annunciator | id=DET-COMP-0034 | bbox=[2040, 2470, 2595, 2575] | centroid=[2317.5, 2522.5]
+- REC-SOE01 | recorder | id=DET-COMP-0035 | bbox=[2655, 2470, 3105, 2575] | centroid=[2880.0, 2522.5]
+- JB-B101 | junction_box | id=DET-COMP-0049 | bbox=[3615, 2470, 4055, 2575] | centroid=[3835.0, 2522.5]
+- CONTROL-ROOM-ANNUNCIATION | control_bus | id=LOG-NODE-0010 | bbox=[1850, 2520, 4050, 2585] | centroid=[2950.0, 2552.5]

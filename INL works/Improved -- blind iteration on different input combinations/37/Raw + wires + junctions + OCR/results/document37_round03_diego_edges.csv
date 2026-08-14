@@ -1,0 +1,55 @@
+﻿source,target,edge_kind,confidence,round_action,evidence,visual_evidence,notes
+AUX-TR-1A,CB-101,power_feeder,high,include,solid conductor P02 runs from transformer right side to CB-101 left terminal,raw__top_band.png; wires__top_band.png,offsite source feeder
+CB-101,GRID-345,power_feeder,high,include,solid conductor P01 runs from CB-101 right terminal to GRID-345 source circle,raw__top_band.png; wires__top_band.png,offsite source feeder
+GRID-345,CB-102,power_feeder,high,include,solid conductor P04 runs from GRID-345 source circle to CB-102 left terminal,raw__top_band.png; wires__top_band.png,offsite source feeder
+CB-102,AUX-TR-1B,power_feeder,high,include,solid conductor P05 runs from CB-102 right terminal to transformer left side,raw__top_band.png; wires__top_band.png,offsite source feeder
+AUX-TR-1A,BUS-6KA,power_feeder,high,include,vertical transformer secondary P03 drops to BUS-6KA with filled tap dot,raw__top_band.png; wires__top_band.png; nodes__top_band.png,filled bus tap visible
+AUX-TR-1B,BUS-6KB,power_feeder,high,include,vertical transformer secondary P06 drops to BUS-6KB with filled tap dot,raw__top_band.png; wires__top_band.png; nodes__top_band.png,filled bus tap visible
+BUS-6KA,CB-TIE-6K,bus_tie,high,include,solid tie route P07 leaves BUS-6KA toward CB-TIE-6K at central tie area,raw__row1_col2.png; wires__row1_col2.png,bus tie through breaker
+CB-TIE-6K,BUS-6KB,bus_tie,high,include,solid tie route P08 leaves CB-TIE-6K toward BUS-6KB with filled tap at right bus,raw__row1_col2.png; wires__row1_col2.png,bus tie through breaker
+BUS-6KA,CB-103A,power_feeder,high,include,vertical feeder from BUS-6KA to CB-103A has filled bus tap,raw__top_band.png; wires__top_band.png; nodes__full_sheet.png,train A 6.9 kV feeder
+CB-103A,SWGR-1EA,power_feeder,high,include,vertical conductor continues from CB-103A down into SWGR-1EA top,raw__top_band.png; wires__top_band.png,train A switchgear feeder
+DG-1A,CB-DG1A,power_feeder,high,include,solid horizontal conductor P09 links DG-1A source circle to CB-DG1A,raw__top_band.png; wires__top_band.png,train A emergency DG feeder
+CB-DG1A,SWGR-1EA,power_feeder,high,include,solid horizontal conductor P10 links CB-DG1A to SWGR-1EA left side,raw__top_band.png; wires__top_band.png,train A emergency DG feeder
+SWGR-1EA,ATS-1A,power_feeder,high,include,solid vertical conductor P13 descends from SWGR-1EA bottom to ATS-1A top,raw__top_band.png; raw__middle_band.png; wires__full_sheet.png,train A normal source to ATS
+ATS-1A,TR-480A,power_feeder,high,include,solid vertical conductor P14 descends from ATS-1A to TR-480A primary,raw__middle_band.png; wires__middle_band.png,train A transformer primary feeder
+TR-480A,BUS-480A,power_feeder,high,include,solid vertical conductor P15 descends from TR-480A to BUS-480A with filled tap dot,raw__middle_band.png; wires__middle_band.png,filled 480 V bus tap visible
+BUS-6KB,CB-103B,power_feeder,high,include,vertical feeder from BUS-6KB to CB-103B has filled bus tap,raw__top_band.png; wires__top_band.png; nodes__full_sheet.png,train B 6.9 kV feeder
+CB-103B,SWGR-1EB,power_feeder,high,include,vertical conductor continues from CB-103B down into SWGR-1EB top,raw__top_band.png; wires__top_band.png,train B switchgear feeder
+DG-1B,CB-DG1B,power_feeder,high,include,solid horizontal conductor P16 links DG-1B source circle to CB-DG1B,raw__top_band.png; wires__top_band.png,train B emergency DG feeder
+CB-DG1B,SWGR-1EB,power_feeder,high,include,solid horizontal conductor P17 links CB-DG1B to SWGR-1EB right side,raw__top_band.png; wires__top_band.png,train B emergency DG feeder
+SWGR-1EB,ATS-1B,power_feeder,high,include,solid vertical conductor P20 descends from SWGR-1EB bottom to ATS-1B top,raw__top_band.png; raw__middle_band.png; wires__full_sheet.png,train B normal source to ATS
+ATS-1B,TR-480B,power_feeder,high,include,solid vertical conductor P21 descends from ATS-1B to TR-480B primary,raw__middle_band.png; wires__middle_band.png,train B transformer primary feeder
+TR-480B,BUS-480B,power_feeder,high,include,solid vertical conductor P22 descends from TR-480B to BUS-480B with filled tap dot,raw__middle_band.png; wires__middle_band.png,filled 480 V bus tap visible
+ATS-1A,RELAY-K12A,control_interlock,high,include,dashed control line C01 runs horizontally from ATS-1A to RELAY-K12A,raw__middle_band.png; raw__row2_col2.png,ATS permissive control path
+RELAY-K12B,ATS-1B,control_interlock,high,include,dashed control line C04 runs horizontally from RELAY-K12B to ATS-1B,raw__middle_band.png; raw__row2_col2.png,ATS permissive control path
+BUS-480A,MCC-1A,power_feeder,high,include,vertical feeder P23 drops from BUS-480A to MCC-1A with filled bus tap,raw__middle_band.png; wires__middle_band.png,480 V load center A feeder
+BUS-480A,CHGR-125A,power_feeder,high,include,vertical feeder P37 drops from BUS-480A to CHGR-125A with filled bus tap,raw__middle_band.png; wires__middle_band.png,charger A AC input
+BUS-480B,MCC-1B,power_feeder,high,include,vertical feeder P30 drops from BUS-480B to MCC-1B with filled bus tap,raw__middle_band.png; wires__middle_band.png,480 V load center B feeder
+BUS-480B,CHGR-125B,power_feeder,high,include,vertical feeder P44 drops from BUS-480B to CHGR-125B with filled bus tap,raw__middle_band.png; wires__middle_band.png,charger B AC input
+MCC-1A,PUMP-SI-1A,power_feeder,high,include,solid feeder P24 descends from MCC-1A lower terminal to PUMP-SI-1A motor,raw__bottom_band.png; wires__bottom_band.png,MCC A load feeder
+MCC-1A,PUMP-RHR-1A,power_feeder,high,include,solid feeder P25 descends from MCC-1A lower terminal to PUMP-RHR-1A motor,raw__bottom_band.png; wires__bottom_band.png,MCC A load feeder
+MCC-1A,PUMP-CCW-1A,power_feeder,high,include,solid feeder P26 descends from MCC-1A lower terminal to PUMP-CCW-1A motor,raw__bottom_band.png; wires__bottom_band.png,MCC A load feeder
+MCC-1A,FAN-RB-1A,power_feeder,high,include,solid feeder P27 descends from MCC-1A lower terminal to FAN-RB-1A,raw__bottom_band.png; wires__bottom_band.png,MCC A load feeder
+MCC-1A,MOV-HPCI-1A,power_feeder,high,include,solid feeder P28 descends from MCC-1A lower terminal to MOV-HPCI-1A,raw__bottom_band.png; wires__bottom_band.png,MCC A MOV feeder
+MCC-1A,VALVE-SW-1A,power_feeder,high,include,solid feeder P29 descends from MCC-1A lower terminal to VALVE-SW-1A,raw__bottom_band.png; wires__bottom_band.png,MCC A MOV feeder
+MCC-1B,PUMP-SI-1B,power_feeder,high,include,solid feeder P31 descends from MCC-1B lower terminal to PUMP-SI-1B motor,raw__bottom_band.png; wires__bottom_band.png,MCC B load feeder
+MCC-1B,PUMP-RHR-1B,power_feeder,high,include,solid feeder P32 descends from MCC-1B lower terminal to PUMP-RHR-1B motor,raw__bottom_band.png; wires__bottom_band.png,MCC B load feeder
+MCC-1B,PUMP-CCW-1B,power_feeder,high,include,solid feeder P33 descends from MCC-1B lower terminal to PUMP-CCW-1B motor,raw__bottom_band.png; wires__bottom_band.png,MCC B load feeder
+MCC-1B,FAN-RB-1B,power_feeder,high,include,solid feeder P34 descends from MCC-1B lower terminal to FAN-RB-1B,raw__bottom_band.png; wires__bottom_band.png,MCC B load feeder
+MCC-1B,MOV-HPCI-1B,power_feeder,high,include,solid feeder P35 descends from MCC-1B lower terminal to MOV-HPCI-1B,raw__bottom_band.png; wires__bottom_band.png,MCC B MOV feeder
+MCC-1B,VALVE-SW-1B,power_feeder,high,include,solid feeder P36 descends from MCC-1B lower terminal to VALVE-SW-1B,raw__bottom_band.png; wires__bottom_band.png,MCC B MOV feeder
+CHGR-125A,BUS-125DCA,power_feeder,high,include,vertical DC output P38 descends from CHGR-125A to BUS-125DCA with tap at bus,raw__middle_band.png; raw__bottom_band.png; wires__bottom_band.png,charger A DC output
+BAT-125A,BUS-125DCA,power_feeder,high,include,vertical battery lead P39 descends from BAT-125A to BUS-125DCA with filled tap,raw__bottom_band.png; wires__bottom_band.png,battery A connected to DC bus
+BUS-125DCA,INV-120A,power_feeder,high,include,vertical feeder P40 drops from BUS-125DCA to INV-120A with filled tap,raw__bottom_band.png; wires__bottom_band.png,inverter A DC input
+BUS-125DCA,GND-01A,ground,high,include,ground lead G01 drops from BUS-125DCA to GND-01A symbol,raw__bottom_band.png; wires__bottom_band.png,DC reference A ground
+INV-120A,BUS-120A,power_feeder,high,include,vertical output P41 descends from INV-120A to BUS-120A with filled tap,raw__bottom_band.png; wires__bottom_band.png,inverter A 120 VAC output
+CHGR-125B,BUS-125DCB,power_feeder,high,include,vertical DC output P45 descends from CHGR-125B to BUS-125DCB with tap at bus,raw__middle_band.png; raw__bottom_band.png; wires__bottom_band.png,charger B DC output
+BAT-125B,BUS-125DCB,power_feeder,high,include,vertical battery lead P46 descends from BAT-125B to BUS-125DCB with filled tap,raw__bottom_band.png; wires__bottom_band.png,battery B connected to DC bus
+BUS-125DCB,INV-120B,power_feeder,high,include,vertical feeder P47 drops from BUS-125DCB to INV-120B with filled tap,raw__bottom_band.png; wires__bottom_band.png,inverter B DC input
+BUS-125DCB,GND-01B,ground,high,include,ground lead G02 drops from BUS-125DCB to GND-01B symbol,raw__bottom_band.png; wires__bottom_band.png,DC reference B ground
+INV-120B,BUS-120B,power_feeder,high,include,vertical output P48 descends from INV-120B to BUS-120B with filled tap,raw__bottom_band.png; wires__bottom_band.png,inverter B 120 VAC output
+BUS-120A,PAN-RPS-A,power_feeder,high,include,vertical feeder P42 drops from BUS-120A to PAN-RPS-A with filled tap at bus,raw__bottom_band.png; wires__bottom_band.png,120 VAC RPS A panel feed
+BUS-120A,INST-RACK-A,power_feeder,high,include,vertical feeder P43 drops from BUS-120A to INST-RACK-A with filled tap at bus,raw__bottom_band.png; wires__bottom_band.png,120 VAC instrument rack A feed
+BUS-120B,PAN-RPS-B,power_feeder,high,include,vertical feeder P49 drops from BUS-120B to PAN-RPS-B with filled tap at bus,raw__bottom_band.png; wires__bottom_band.png,120 VAC RPS B panel feed
+BUS-120B,INST-RACK-B,power_feeder,high,include,vertical feeder P50 drops from BUS-120B to INST-RACK-B with filled tap at bus,raw__bottom_band.png; wires__bottom_band.png,120 VAC instrument rack B feed

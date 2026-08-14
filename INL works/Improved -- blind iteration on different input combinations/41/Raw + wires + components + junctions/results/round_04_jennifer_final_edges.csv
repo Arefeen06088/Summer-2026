@@ -1,0 +1,61 @@
+source,target,edge_type,confidence,evidence
+OFFSITE-A,TR-1A,power_feeder,high,solid offsite A feeder to TR-1A
+TR-1A,GND-1E,grounding,high,grounding conductor and ground symbol below TR-1A
+TR-1A,CB-101,power_feeder,high,TR-1A secondary to CB-101
+CB-101,BUS-1A-4.16KV,power_feeder,high,CB-101 output to BUS-1A
+EDG-1A,CB-105,power_feeder,high,EDG-1A feeder to CB-105
+CB-105,BUS-1A-4.16KV,power_feeder,high,CB-105 incoming feeder rises to BUS-1A
+BUS-1A-4.16KV,CB-TIE-1AB,power_feeder,high,bus tie from right end of BUS-1A
+CB-TIE-1AB,BUS-1B-4.16KV,power_feeder,high,normally-open tie to BUS-1B
+BUS-1B-4.16KV,CB-102,power_feeder,high,BUS-1B right terminal to CB-102
+CB-102,TR-1B,power_feeder,high,CB-102 to TR-1B
+TR-1B,OFFSITE-B,power_feeder,high,TR-1B primary to offsite B source
+EDG-1B,CB-106,power_feeder,high,EDG-1B feeder to CB-106
+CB-106,BUS-1B-4.16KV,power_feeder,high,CB-106 incoming feeder rises to BUS-1B
+BUS-1A-4.16KV,TR-LC-1A,power_feeder,high,vertical drop from BUS-1A
+BUS-1A-4.16KV,TR-SAF-1A,power_feeder,high,vertical drop from BUS-1A
+BUS-1B-4.16KV,TR-LC-1B,power_feeder,high,vertical drop from BUS-1B
+BUS-1B-4.16KV,TR-SAF-1B,power_feeder,high,vertical drop from BUS-1B
+TR-LC-1A,CB-201,power_feeder,high,transformer secondary to CB-201
+CB-201,BUS-480A,power_feeder,high,CB-201 output to BUS-480A
+TR-SAF-1A,CB-203,power_feeder,high,transformer secondary to CB-203
+CB-203,BUS-480E1A,power_feeder,high,CB-203 output to BUS-480E1A
+TR-LC-1B,CB-202,power_feeder,high,transformer secondary to CB-202
+CB-202,BUS-480B,power_feeder,high,CB-202 output to BUS-480B
+TR-SAF-1B,CB-204,power_feeder,high,transformer secondary to CB-204
+CB-204,BUS-480E1B,power_feeder,high,CB-204 output to BUS-480E1B
+BUS-480A,MCC-1A,power_feeder,high,vertical feeder from BUS-480A
+BUS-480A,MCC-1C,power_feeder,high,vertical feeder from BUS-480A
+BUS-480A,CHGR-125A,power_feeder,high,left feeder/cable callout from BUS-480A to charger
+BUS-480E1A,MCC-ESS-A,power_feeder,high,vertical feeder from BUS-480E1A
+MCC-1A,PUMP-CCW-103A,power_feeder,high,MCC output to pump
+MCC-1C,FAN-CRHV-104A,power_feeder,high,MCC output to fan
+MCC-ESS-A,PUMP-SI-101A,power_feeder,high,MCC-ESS-A output to pump
+MCC-ESS-A,PUMP-RHR-102A,power_feeder,high,MCC-ESS-A output to pump
+MCC-ESS-A,MOV-1201A,power_feeder,high,MCC-ESS-A output to MOV
+BUS-480B,MCC-1B,power_feeder,high,vertical feeder from BUS-480B
+BUS-480B,MCC-1D,power_feeder,high,vertical feeder from BUS-480B
+BUS-480E1B,MCC-ESS-B,power_feeder,high,vertical feeder from BUS-480E1B
+BUS-480E1B,CHGR-125B,power_feeder,medium,right-side cable 1B-480-9 appears to land on BUS-480E1B
+MCC-1B,PUMP-CCW-103B,power_feeder,high,MCC output to pump
+MCC-1D,FAN-CRHV-104B,power_feeder,high,MCC output to fan
+MCC-ESS-B,PUMP-SI-101B,power_feeder,high,MCC-ESS-B output to pump
+MCC-ESS-B,PUMP-RHR-102B,power_feeder,high,MCC-ESS-B output to pump
+MCC-ESS-B,MOV-1201B,power_feeder,high,MCC-ESS-B output to MOV
+CHGR-125A,DC-BUS-125A,dc_power,high,charger output to DC bus
+BAT-125A,DC-BUS-125A,dc_power,high,battery connected to DC bus
+DC-BUS-125A,INV-120A,dc_power,high,DC bus feeds inverter
+INV-120A,UPS-BUS-A,ac_power,high,inverter output to UPS bus
+UPS-BUS-A,PANEL-RPS-A,ac_power,medium,UPS A feeder to RPS panel
+UPS-BUS-A,INST-RACK-1,instrument_power,high,UPS A feeder to instrument rack
+CHGR-125B,DC-BUS-125B,dc_power,high,charger output to DC bus
+BAT-125B,DC-BUS-125B,dc_power,high,battery connected to DC bus
+DC-BUS-125B,INV-120B,dc_power,high,DC bus feeds inverter
+INV-120B,UPS-BUS-B,ac_power,high,inverter output to UPS bus
+UPS-BUS-B,PANEL-RPS-B,ac_power,medium,UPS B feeder to RPS panel
+CB-105,RELAY-K86A,control_interlock,high,dashed control circuit from CB-105 to K86A relay path
+RELAY-K86A,PANEL-RPS-A,control_interlock,high,dashed relay-to-panel interlock
+CB-106,RELAY-K86B,control_interlock,high,dashed control circuit from CB-106 to K86B relay path
+RELAY-K86B,PANEL-RPS-B,control_interlock,high,dashed relay-to-panel interlock
+JB-ESF-01,PANEL-RPS-A,control_interlock,medium,dashed wiring between junction box and RPS-A area
+JB-ESF-01,PANEL-RPS-B,control_interlock,medium,dashed wiring between junction box and RPS-B area

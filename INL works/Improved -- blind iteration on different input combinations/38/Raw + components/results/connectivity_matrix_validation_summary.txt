@@ -1,0 +1,21 @@
+Connectivity matrix validation summary
+Document: 38
+Input configuration: Raw + components
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\38\synthetic_npp_connectivity_matrix_improved.csv
+GT normalized nodes: 55; GT normalized edges: 60
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from doc38_round1_jennifer_connectivity_matrix.csv with Precision=0.421875, Recall=0.450000, F1=0.435484
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=27, FP=37, FN=33, Precision=0.421875, Recall=0.450000, F1=0.435484
+Primary issue: extra/misnamed/intermediate extracted nodes created false-positive edges.
+
+Extra/non-GT nodes most responsible for FP edges: BUS-120ACB (4 FP edges); BUS-125DCA (3 FP edges); BUS-125DCB (3 FP edges); DISC-2B1-02-2B-F2 (2 FP edges); DISC-2A1-06-2A-F6 (2 FP edges); DISC-2B1-03-2B-F3 (2 FP edges); DISC-2A1-05-2A-F5 (2 FP edges); DISC-2B1-05-2B-F5 (2 FP edges).
+Missing GT nodes examples: BUS-120AC-A; BUS-120AC-B; BUS-125DC-A; BUS-125DC-B; MOV-SI221A; MOV-SI222B.
+Close-but-not-exact name examples: BUS-120ACA -> BUS-120AC-A (0.95); BUS-120ACB -> BUS-120AC-B (0.95); BUS-125DCA -> BUS-125DC-A (0.95); BUS-125DCB -> BUS-125DC-B (0.95); MOV-SI2221A -> MOV-SI221A (0.95); MOV-SI2222B -> MOV-SI222B (0.95).
+False-negative edge examples among GT-known nodes: CB-103 -- RELAY-86A; CB-104 -- RELAY-86B; CB-201A -- RELAY-27A; CB-201B -- RELAY-27B; FAN-CR2A -- MCC-2A1; FAN-CR2B -- MCC-2B1; GND-STA -- TR-201A; MCC-2A1 -- MOV-RHR141A.
+False-positive examples involving extra/non-GT nodes: BAT-125A -- BUS-125DCA; BAT-125B -- BUS-125DCB; BUS-120ACA -- INV-2A; BUS-120ACA -- RPS-PNL-A; BUS-120ACB -- INV-2B; BUS-120ACB -- RELAY-27B; BUS-120ACB -- RPS-PNL-B; BUS-120ACB -- TR-CPT-B.
+False-negative examples involving missing/differently named nodes: BAT-125A -- BUS-125DC-A; BAT-125B -- BUS-125DC-B; BUS-120AC-A -- INV-2A; BUS-120AC-A -- RPS-PNL-A; BUS-120AC-A -- TR-CPT-A; BUS-120AC-B -- INV-2B; BUS-120AC-B -- RPS-PNL-B; BUS-120AC-B -- TR-CPT-B.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (BUS-120ACB; BUS-125DCA; BUS-125DCB; DISC-2B1-02-2B-F2; DISC-2A1-06-2A-F6), the final-row metrics would be TP=27, FP=23, FN=33, Precision=0.540000, Recall=0.450000, F1=0.490909.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=27, FP=0, FN=33, Precision=1.000000, Recall=0.450000, F1=0.620690.

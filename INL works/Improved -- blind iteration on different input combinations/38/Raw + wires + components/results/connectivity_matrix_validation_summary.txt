@@ -1,0 +1,57 @@
+Connectivity matrix validation summary - Document 38
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\38\synthetic_npp_connectivity_matrix_improved.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_matrix.csv): TP=9, FP=74, FN=51, Precision=0.108434, Recall=0.150000, F1=0.125874
+- Jennifer -- Round 2 (round_02_jennifer_matrix.csv): TP=45, FP=8, FN=15, Precision=0.849057, Recall=0.750000, F1=0.796460
+- Diego -- Round 3 (round_03_diego_matrix.csv): TP=45, FP=8, FN=15, Precision=0.849057, Recall=0.750000, F1=0.796460
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=45, FP=8, FN=15, Precision=0.849057, Recall=0.750000, F1=0.796460
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=45, FP=8, FN=15, Precision=0.849057, Recall=0.750000, F1=0.796460
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- BAT-125A -- BUS-125VDC-A
+- BAT-125B -- BUS-125VDC-B
+- BUS-125VDC-A -- CHGR-2A
+- BUS-125VDC-A -- INV-2A
+- BUS-125VDC-A -- RELAY-86A
+- BUS-125VDC-B -- CHGR-2B
+- BUS-125VDC-B -- INV-2B
+- BUS-125VDC-B -- RELAY-86B
+
+False-negative edge examples:
+- BAT-125A -- BUS-125DC-A
+- BAT-125B -- BUS-125DC-B
+- BUS-125DC-A -- CHGR-2A
+- BUS-125DC-A -- INV-2A
+- BUS-125DC-A -- RELAY-86A
+- BUS-125DC-B -- CHGR-2B
+- BUS-125DC-B -- INV-2B
+- BUS-125DC-B -- RELAY-86B
+- CB-103 -- RELAY-86A
+- CB-104 -- RELAY-86B
+
+Extra/non-GT nodes causing performance drops:
+- BUS-125VDC-A: 4 incident false-positive edge(s)
+- BUS-125VDC-B: 4 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 2 extra/intermediate nodes were omitted from the extraction (BUS-125VDC-A, BUS-125VDC-B), final metrics would be TP=45, FP=0, FN=15, Precision=1.000000, Recall=0.750000, F1=0.857143.
+- If all 2 non-GT nodes were omitted, metrics would be TP=45, FP=0, FN=15, Precision=1.000000, Recall=0.750000, F1=0.857143.
+
+Missing GT node examples:
+- BUS-125DC-A: 4 missed incident GT edge(s)
+- BUS-125DC-B: 4 missed incident GT edge(s)
+- RELAY-27A: 2 missed incident GT edge(s)
+- RELAY-27B: 2 missed incident GT edge(s)
+- GND-STA: 1 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted BUS-125VDC-A vs GT BUS-125DC-A (similarity 0.96)
+- Extracted BUS-125VDC-B vs GT BUS-125DC-B (similarity 0.96)

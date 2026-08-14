@@ -1,0 +1,8 @@
+item,status,reason
+GND_PLANT,excluded,"ground/reference symbol, not an equipment endpoint"
+BUS_480_A-GND_PLANT,removed,reference/ground branch excluded from connectivity matrix
+BUS_4160_A-BUS_4160_B,excluded,only connected through CB_TIE_AB; no direct bus splice
+JB_A101-ANN_CR01,excluded,no clear terminal-to-terminal conductor endpoint
+REC_SOE01-JB_B101,excluded,no clear terminal-to-terminal conductor endpoint
+dashed division/control-room boundaries,excluded,"boundaries/regions, not schematic conductors"
+"notes, title block, reference drawings, terminal schedule",excluded,metadata; used only as visual context where adjacent wiring also supports it

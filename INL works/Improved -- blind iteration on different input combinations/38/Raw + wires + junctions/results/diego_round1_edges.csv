@@ -1,0 +1,58 @@
+source,target,confidence,line_type,evidence
+GEN-U2A,CB-101,0.96,solid,raw_top_left shows solid feeder from GEN-U2A circle right port to CB-101 left port
+CB-101,TR-UAT-2A,0.96,solid,raw_top_left shows solid feeder from CB-101 right port to TR-UAT-2A left port
+TR-UAT-2A,BUS-4160A,0.95,solid,raw_top_left shows TR-UAT-2A bottom lead landing at filled tap on BUS-4160A
+DG-2A,CB-103,0.96,solid,raw_top_left shows ESF diesel DG-2A solid feeder into CB-103
+CB-103,BUS-4160A,0.93,solid,raw_top_left shows CB-103 output joining the vertical riser that taps BUS-4160A at a filled dot
+BUS-4160A,CB-105,0.94,solid,raw_source_top shows BUS-4160A right segment entering CB-105 bus-tie breaker
+CB-105,BUS-4160B,0.94,solid,raw_source_top shows CB-105 right port continuing as solid feeder to BUS-4160B despite N.O. bus tie status
+TR-SUT-2B,CB-102,0.96,solid,raw_source_top shows startup auxiliary transformer TR-SUT-2B right port wired to CB-102
+CB-102,BUS-4160B,0.95,solid,raw_source_top shows CB-102 bottom lead landing at filled tap on BUS-4160B
+DG-2B,CB-104,0.96,solid,raw_source_top shows DG-2B solid feeder into CB-104
+CB-104,BUS-4160B,0.93,solid,raw_source_top shows CB-104 output tied by vertical riser to BUS-4160B tap
+BUS-4160A,CB-201A,0.95,solid,raw_top_left shows BUS-4160A vertical feeder down through CB-201A
+CB-201A,TR-201A,0.95,solid,raw_top_left shows CB-201A bottom conductor entering TR-201A top
+TR-201A,CB-301A,0.95,solid,raw_top_left shows TR-201A bottom conductor entering CB-301A
+CB-301A,BUS-480A,0.96,solid,raw_top_left and raw_mid_left show CB-301A bottom lead landing at filled tap on BUS-480A
+BUS-4160B,CB-201B,0.95,solid,raw_source_top shows BUS-4160B vertical feeder down through CB-201B
+CB-201B,TR-201B,0.95,solid,raw_source_top shows CB-201B bottom conductor entering TR-201B top
+TR-201B,CB-301B,0.95,solid,raw_source_top shows TR-201B bottom conductor entering CB-301B
+CB-301B,BUS-480B,0.96,solid,raw_distribution_center shows CB-301B bottom lead landing at filled tap on BUS-480B
+BUS-480A,CB-401A,0.95,solid,raw_mid_left shows BUS-480A tap dropping through CB-401A
+CB-401A,MCC-2A1,0.95,solid,raw_mid_left shows CB-401A bottom conductor entering MCC-2A1 top bus section
+MCC-2A1,PUMP-RHR2A,0.96,solid,raw_train_a_loads shows MCC-2A1 feeder 2A-F1 dropping directly to PUMP-RHR2A
+MCC-2A1,PUMP-CCW2A,0.96,solid,raw_train_a_loads shows MCC-2A1 feeder 2A-F2 dropping directly to PUMP-CCW2A
+MCC-2A1,PUMP-SW2A,0.96,solid,raw_train_a_loads shows MCC-2A1 feeder 2A-F3 dropping directly to PUMP-SW2A
+MCC-2A1,FAN-CR2A,0.96,solid,raw_train_a_loads shows MCC-2A1 feeder 2A-F4 dropping directly to FAN-CR2A
+MCC-2A1,MOV-RHR141A,0.95,solid,raw_train_a_loads shows MCC-2A1 feeder 2A-F5 dropping directly to MOV-RHR141A
+MCC-2A1,MOV-SI221A,0.95,solid,raw_train_a_loads shows MCC-2A1 feeder 2A-F6 dropping directly to MOV-SI221A
+BUS-480B,CB-401B,0.95,solid,raw_distribution_center shows BUS-480B tap dropping through CB-401B
+CB-401B,MCC-2B1,0.95,solid,raw_distribution_center shows CB-401B bottom conductor entering MCC-2B1 top bus section
+MCC-2B1,PUMP-RHR2B,0.96,solid,raw_distribution_center shows MCC-2B1 feeder 2B-F1 dropping directly to PUMP-RHR2B
+MCC-2B1,PUMP-CCW2B,0.96,solid,raw_distribution_center shows MCC-2B1 feeder 2B-F2 dropping directly to PUMP-CCW2B
+MCC-2B1,PUMP-SW2B,0.96,solid,raw_distribution_center shows MCC-2B1 feeder 2B-F3 dropping directly to PUMP-SW2B
+MCC-2B1,FAN-CR2B,0.96,solid,raw_distribution_center shows MCC-2B1 feeder 2B-F4 dropping directly to FAN-CR2B
+MCC-2B1,MOV-RHR142B,0.95,solid,raw_train_b_loads shows MCC-2B1 feeder 2B-F5 dropping directly to MOV-RHR142B
+MCC-2B1,MOV-SI222B,0.95,solid,raw_train_b_loads shows MCC-2B1 feeder 2B-F6 dropping directly to MOV-SI222B
+BUS-480A,TR-CPT-A,0.88,solid,raw_train_a_loads shows left BUS-480A riser feeding TR-CPT-A 480 to 120 VAC transformer
+TR-CPT-A,BUS-120AC-A,0.94,solid,raw_train_a_loads shows TR-CPT-A bottom conductor continuing to the 120 VAC INST A bus
+BUS-480A,CHGR-2A,0.86,solid,raw_train_a_loads shows BUS-480A auxiliary feeder routed down and across into CHGR-2A top AC side
+CHGR-2A,BUS-125DC-A,0.96,solid,raw_train_a_loads shows CHGR-2A bottom 125VDC charger lead landing on BUS-125DC-A
+BUS-480B,TR-CPT-B,0.88,solid,raw_train_b_loads shows right BUS-480B riser feeding TR-CPT-B 480 to 120 VAC transformer
+TR-CPT-B,BUS-120AC-B,0.94,solid,raw_dc_control_right shows TR-CPT-B bottom conductor continuing to the 120 VAC INST B bus
+BUS-480B,CHGR-2B,0.86,solid,raw_train_b_loads shows BUS-480B auxiliary feeder routed down and across into CHGR-2B top AC side
+CHGR-2B,BUS-125DC-B,0.96,solid,raw_dc_control_right shows CHGR-2B bottom 125VDC charger lead landing on BUS-125DC-B
+BAT-125A,BUS-125DC-A,0.96,solid,raw_train_a_loads shows BAT-125A battery bottom lead landing at filled tap on 125 VDC TRAIN A bus
+BUS-125DC-A,INV-2A,0.95,solid,raw_dc_control_left shows BUS-125DC-A tap dropping into INV-2A top DC side
+INV-2A,BUS-120AC-A,0.96,solid,raw_dc_control_left shows INV-2A bottom AC lead landing on BUS-120AC-A
+BUS-125DC-A,RELAY-86A,0.78,dashed,raw_dc_control_left shows dashed lockout tap dropping from filled BUS-125DC-A point to RELAY-86A
+BUS-120AC-A,RPS-PNL-A,0.95,solid,raw_dc_control_left shows filled BUS-120AC-A tap dropping directly to RPS-PNL-A top
+BUS-120AC-A,RELAY-27A,0.52,dashed,raw_dc_control_left labels RELAY-27A as UV BUS A near the 120 VAC A bus but the direct tap is not drawn as clearly as train B
+RPS-PNL-A,RELAY-27A,0.78,dashed,raw_dc_control_left shows dashed control route from RPS-PNL-A right side to RELAY-27A
+BAT-125B,BUS-125DC-B,0.96,solid,raw_dc_control_right shows BAT-125B battery bottom lead landing at filled tap on 125 VDC TRAIN B bus
+BUS-125DC-B,INV-2B,0.95,solid,raw_dc_control_right shows BUS-125DC-B tap dropping into INV-2B top DC side
+INV-2B,BUS-120AC-B,0.96,solid,raw_dc_control_right shows INV-2B bottom AC lead landing on BUS-120AC-B
+BUS-125DC-B,RELAY-86B,0.78,dashed,raw_dc_control_right shows dashed lockout tap dropping from filled BUS-125DC-B point to RELAY-86B
+BUS-120AC-B,RPS-PNL-B,0.95,solid,raw_dc_control_right shows filled BUS-120AC-B tap dropping directly to RPS-PNL-B top
+BUS-120AC-B,RELAY-27B,0.90,solid,raw_dc_control_right shows BUS-120AC-B continuing into the left side of RELAY-27B at the UV BUS B point
+RPS-PNL-B,RELAY-27B,0.78,dashed,raw_dc_control_right shows dashed control route from RPS-PNL-B right side to RELAY-27B

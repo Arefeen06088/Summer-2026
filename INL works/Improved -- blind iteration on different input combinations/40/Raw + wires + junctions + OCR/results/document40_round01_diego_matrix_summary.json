@@ -1,0 +1,54 @@
+{
+  "nodes": 57,
+  "included_edge_rows": 58,
+  "unique_undirected_edges": 58,
+  "duplicate_edge_rows": 0,
+  "validation_passed": true,
+  "matrix_symmetric": true,
+  "diagonal_zero": true,
+  "unknown_endpoint_count": 0,
+  "edge_kind_counts": {
+    "125vdc_feeder": 6,
+    "control_logic": 6,
+    "instrument_signal": 8,
+    "internal_bus": 2,
+    "power_feeder": 34,
+    "trip_control": 2
+  },
+  "confidence_counts": {
+    "high": 52,
+    "medium": 6
+  },
+  "uncertain_edges": [
+    {
+      "source": "CT-21A",
+      "target": "RPS-PNL-A",
+      "reason": "Dashed CT signal route is visually continuous but long."
+    },
+    {
+      "source": "VT-21A",
+      "target": "RPS-PNL-A",
+      "reason": "Voltage signal route label was excluded and represented by endpoint continuity."
+    },
+    {
+      "source": "RELAY-86A",
+      "target": "CB-MPA1",
+      "reason": "Dash-dot trip route is visually present but routed through the lower control lane."
+    },
+    {
+      "source": "CT-21B",
+      "target": "RPS-PNL-B",
+      "reason": "Dashed CT signal route is visually continuous but long."
+    },
+    {
+      "source": "VT-21B",
+      "target": "RPS-PNL-B",
+      "reason": "Voltage signal route label was excluded and represented by endpoint continuity."
+    },
+    {
+      "source": "RELAY-86B",
+      "target": "CB-MPB1",
+      "reason": "Dash-dot trip route is visually present but routed through the lower control lane."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+1) NODE_LIST_CSV
+node
+AC-PNL-120A
+AC-PNL-120B
+ATS-21A
+ATS-21B
+BAT-21A
+BAT-21B
+CB-21A1
+CB-21B1
+CB-MPA1
+CB-MPB1
+CT-21A
+CT-21B
+DC-BUS-21A
+DC-BUS-21B
+DG-21A
+DG-21B
+DS-21A
+DS-21B
+FAN-RB21A
+FAN-RB21B
+INV-21A
+INV-21B
+JB-21A
+JB-21B
+LOCA-SIG-A
+LOCA-SIG-B
+MCC-21A
+MCC-21B
+MOV-HV211A
+MOV-HV211B
+MOV-RWST21A
+MOV-RWST21B
+PUMP-CCW21A
+PUMP-CCW21B
+PUMP-SI21A
+PUMP-SI21B
+RECT-21A
+RECT-21B
+RELAY-86A
+RELAY-86B
+RELAY-K21A
+RELAY-K21B
+RPS-PNL-A
+RPS-PNL-B
+SAT-2B
+SWGR-21A
+SWGR-21B
+TIE-BKR-21AB
+TR-21A
+TR-21B
+UAT-2A
+XFMR-CPT21A
+XFMR-CPT21B
+
+2) EDGE_LIST_CSV
+source,target,confidence,line_type,evidence
+DG-21A,ATS-21A,0.96,solid,raw_top_full and raw_left_train show DG-21A vertical feeder turning into ATS-21A left port
+UAT-2A,DS-21A,0.96,solid,raw_top_full shows UAT-2A bottom conductor directly entering DS-21A
+DS-21A,ATS-21A,0.96,solid,raw_top_full shows DS-21A lower right feeder continuing into ATS-21A
+ATS-21A,SWGR-21A,0.96,solid,raw_top_full shows ATS-21A bottom drop landing at filled tap on SWGR-21A
+SWGR-21A,TIE-BKR-21AB,0.95,solid,raw_top_full shows SWGR-21A bus entering the left port of TIE-BKR-21AB
+TIE-BKR-21AB,SWGR-21B,0.95,solid,raw_top_full shows TIE-BKR-21AB right port continuing as SWGR-21B bus
+SWGR-21A,CB-21A1,0.96,solid,raw_left_train shows filled bus tap dropping from SWGR-21A through CB-21A1
+CB-21A1,TR-21A,0.96,solid,raw_left_train shows CB-21A1 bottom conductor entering TR-21A
+TR-21A,MCC-21A,0.96,solid,raw_left_train shows TR-21A bottom conductor landing at filled tap on MCC-21A
+SAT-2B,DS-21B,0.96,solid,raw_top_full shows SAT-2B bottom conductor directly entering DS-21B
+DS-21B,ATS-21B,0.96,solid,raw_top_full shows DS-21B lower conductor routing to ATS-21B left side
+DG-21B,ATS-21B,0.96,solid,raw_top_full and raw_right_train show DG-21B vertical feeder turning into ATS-21B right port
+ATS-21B,SWGR-21B,0.96,solid,raw_top_full shows ATS-21B bottom drop landing at filled tap on SWGR-21B
+SWGR-21B,CB-21B1,0.96,solid,raw_right_train shows filled bus tap dropping from SWGR-21B through CB-21B1
+CB-21B1,TR-21B,0.96,solid,raw_right_train shows CB-21B1 bottom conductor entering TR-21B
+TR-21B,MCC-21B,0.96,solid,raw_right_train shows TR-21B bottom conductor landing at filled tap on MCC-21B
+MCC-21A,CB-MPA1,0.95,solid,raw_left_train shows MCC-21A left feeder dropping through breaker CB-MPA1
+CB-MPA1,PUMP-SI21A,0.95,solid,raw_left_train shows CB-MPA1 bottom feeder continuing to PUMP-SI21A
+MCC-21A,PUMP-CCW21A,0.96,solid,raw_left_train shows MCC-21A feeder dropping directly to PUMP-CCW21A
+MCC-21A,FAN-RB21A,0.96,solid,raw_left_train shows MCC-21A feeder dropping directly to FAN-RB21A
+MCC-21A,MOV-HV211A,0.95,solid,raw_left_train shows MCC-21A feeder dropping directly to MOV-HV211A
+MCC-21A,MOV-RWST21A,0.93,solid,raw_left_train shows MCC-21A right feeder dropping to MOV-RWST21A and nearby no-dot crossing is not used as a connection
+MCC-21A,XFMR-CPT21A,0.94,solid,raw_left_train shows MCC-21A right-end feeder stepping down to XFMR-CPT21A
+XFMR-CPT21A,AC-PNL-120A,0.96,solid,raw_left_train shows XFMR-CPT21A bottom conductor entering AC-PNL-120A
+AC-PNL-120A,RECT-21A,0.94,solid,raw_left_train shows AC-PNL-120A feeder dropping to RECT-21A charger input
+RECT-21A,DC-BUS-21A,0.96,solid,raw_left_train and raw_lower_dc_ac show RECT-21A bottom conductor landing on DC-BUS-21A filled tap
+DC-BUS-21A,BAT-21A,0.96,solid,raw_lower_dc_ac shows BAT-21A 125 VDC lead landing at filled tap on DC-BUS-21A
+DC-BUS-21A,INV-21A,0.96,solid,raw_lower_dc_ac shows DC-BUS-21A filled tap dropping to INV-21A
+MCC-21B,XFMR-CPT21B,0.94,solid,raw_central_controls shows MCC-21B left feeder stepping down to XFMR-CPT21B
+XFMR-CPT21B,AC-PNL-120B,0.96,solid,raw_central_controls shows XFMR-CPT21B bottom conductor entering AC-PNL-120B
+MCC-21B,CB-MPB1,0.95,solid,raw_right_train shows MCC-21B left feeder dropping through breaker CB-MPB1
+CB-MPB1,PUMP-SI21B,0.95,solid,raw_right_train shows CB-MPB1 bottom feeder continuing to PUMP-SI21B
+MCC-21B,PUMP-CCW21B,0.96,solid,raw_right_train shows MCC-21B feeder dropping directly to PUMP-CCW21B
+MCC-21B,FAN-RB21B,0.96,solid,raw_right_train shows MCC-21B feeder dropping directly to FAN-RB21B
+MCC-21B,MOV-HV211B,0.95,solid,raw_right_train shows MCC-21B feeder dropping directly to MOV-HV211B
+MCC-21B,MOV-RWST21B,0.93,solid,raw_right_train shows MCC-21B right feeder dropping directly to MOV-RWST21B
+AC-PNL-120B,RECT-21B,0.94,solid,raw_central_controls shows AC-PNL-120B feeder dropping to RECT-21B charger input
+RECT-21B,DC-BUS-21B,0.96,solid,raw_central_controls and raw_right_train show RECT-21B bottom conductor landing on DC-BUS-21B filled tap
+DC-BUS-21B,BAT-21B,0.96,solid,raw_right_train and raw_lower_dc_ac show BAT-21B 125 VDC lead landing at filled tap on DC-BUS-21B
+DC-BUS-21B,INV-21B,0.96,solid,raw_right_train and raw_lower_dc_ac show DC-BUS-21B filled tap dropping to INV-21B
+LOCA-SIG-A,JB-21A,0.78,instrument_signal,raw_left_train shows short-dash instrument line from LOCA-SIG-A circle to JB-21A terminal block
+JB-21A,RPS-PNL-A,0.74,instrument_signal,raw_left_train and raw_lower_dc_ac show the short-dash signal route from JB-21A continuing to the RPS-PNL-A top terminal strip
+RPS-PNL-A,RELAY-K21A,0.82,dashed_control,raw_left_train and raw_bottom_full show dashed RPS channel A control lane from RPS-PNL-A to RELAY-K21A
+RELAY-K21A,RELAY-86A,0.82,dashed_control,raw_left_train and raw_bottom_full show same dashed control lane continuing between RELAY-K21A and RELAY-86A
+RPS-PNL-A,INV-21A,0.74,dashed_control,raw_lower_dc_ac shows dashed RPS channel A lane from RPS-PNL-A right port to INV-21A left side below the DC feeder
+CT-21A,RPS-PNL-A,0.64,instrument_signal,raw_left_train and raw_central_controls show CT-21A short-dash lead descending to the RPS-PNL-A top terminal strip area
+DC-BUS-21A,RPS-PNL-A,0.68,dashed_control,raw_lower_dc_ac shows dashed vertical voltage or control reference from the DC-BUS-21A and BAT-21A tap area landing at RPS-PNL-A top terminal strip
+LOCA-SIG-B,JB-21B,0.78,instrument_signal,raw_right_train shows short-dash instrument line from LOCA-SIG-B circle to JB-21B terminal block
+JB-21B,RPS-PNL-B,0.74,instrument_signal,raw_right_train and raw_lower_dc_ac show the short-dash signal route from JB-21B continuing to the RPS-PNL-B top terminal strip
+RPS-PNL-B,RELAY-K21B,0.82,dashed_control,raw_right_train and raw_bottom_full show dashed RPS channel B control lane from RPS-PNL-B to RELAY-K21B
+RELAY-K21B,RELAY-86B,0.82,dashed_control,raw_right_train and raw_bottom_full show same dashed control lane continuing between RELAY-K21B and RELAY-86B
+RPS-PNL-B,INV-21B,0.74,dashed_control,raw_lower_dc_ac shows dashed RPS channel B lane from INV-21B right side to RPS-PNL-B left terminal side
+CT-21B,RPS-PNL-B,0.64,instrument_signal,raw_right_train and raw_central_controls show CT-21B short-dash lead descending to the RPS-PNL-B top terminal strip area
+DC-BUS-21B,RPS-PNL-B,0.68,dashed_control,raw_right_train and raw_lower_dc_ac show dashed vertical voltage or control reference from the DC-BUS-21B and BAT-21B tap area landing at RPS-PNL-B top terminal strip
+
+3) FINAL_DECISION
+- Saturated and agreed with Diego round 2 after final visual precision check; no final corrections were made.
+- Final exclusions remain: VT-21A/B to RPS panel edges, MOV-RWST21A/B to RPS panel edges, CB-MPA1/B1 to RELAY-86A/B trip edges, and direct LOCA-SIG-A/B to RELAY-86A/B edges because the raw schematic does not show clear endpoint or dot/terminal support.
+
+4) COUNTS
+unique node count: 53
+edge row count: 54
+unique undirected pair count: 54
+
+5) FINAL_NOTES
+- The solid feeder backbone and listed 125 VDC and 120 VAC power paths are visually supported by terminal dots or direct component ports.
+- Retained lower-confidence signal/control edges only where the route visibly lands at a named RPS terminal strip or on the continuous RPS channel control lane.
+- Cable IDs, grid labels, terminal strip labels, notes, and cable-index rows are evidence labels only and are not graph nodes.
+- The MOV-RWST no-dot crossings are not used as junctions.

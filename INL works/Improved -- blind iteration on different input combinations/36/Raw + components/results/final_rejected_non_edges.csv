@@ -1,0 +1,15 @@
+source,target,reason
+BUS-13K-A,BUS-13K-B,no direct bus-to-bus connection; CB-13-TIE is drawn between the buses and is labeled tie open
+BUS-4K-A,BUS-4K-B,no direct bus-to-bus connection; CB-4K-TIE is drawn between the buses
+BUS-480-A,BUS-DC125-A,different voltage buses separated by RECT-125A/INV-120A equipment; no direct filled junction
+BUS-480-B,BUS-DC125-B,different voltage buses separated by RECT-125B/INV-120B equipment; no direct filled junction
+PNL-ESF-A,PNL-ESF-B,adjacent panels are separated by center divider/dashed route; no direct wire or dot between panels
+JB-ESF-A,JB-ESF-B,junction boxes are adjacent but no connecting line or terminal dot is drawn between them
+RPS_TRIP,BUS-4K-A,dashed control route passes near/crosses the 4.16 kV area without a bus tap dot; legend says undotted crossings are not connected
+RPS_TRIP,BUS-4K-B,dashed control route passes near/crosses the 4.16 kV area without a bus tap dot; legend says undotted crossings are not connected
+PNL-RPS-1,PNL-ESF-A,central dashed RPS route descends near PNL-ESF-A but does not visibly terminate at a PNL-ESF-A port dot or boundary
+PNL-RPS-1,PNL-ESF-B,central dashed RPS route descends near PNL-ESF-B but does not visibly terminate at a PNL-ESF-B port dot or boundary
+JB-ESF-A,PNL-RPS-1,"JB-ESF-A is adjacent to the central dashed RPS route, but the visible dashed line from JB-ESF-A goes down to PNL-ESF-A, not to PNL-RPS-1"
+JB-ESF-B,PNL-RPS-1,"JB-ESF-B is adjacent to the central dashed RPS route, but the visible dashed line from JB-ESF-B goes down to PNL-ESF-B, not to PNL-RPS-1"
+INV-120A,VALVE-MOV-A,dashed control route near INV-120A crosses/runs nearby without a visible port dot at the inverter; the asserted inverter connection is the solid feeder to PNL-ESF-A
+INV-120B,VALVE-MOV-B,dashed control route near INV-120B crosses/runs nearby without a visible port dot at the inverter; the asserted inverter connection is the solid feeder to PNL-ESF-B

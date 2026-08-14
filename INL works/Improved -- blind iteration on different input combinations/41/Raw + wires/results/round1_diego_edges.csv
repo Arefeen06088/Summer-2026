@@ -1,0 +1,61 @@
+u,v,kind,evidence
+OFFSITE_A_161KV,TR_1A,solid,Offsite A source lead terminates at TR-1A primary.
+TR_1A,GND_1E,ground,Grounding conductor from TR-1A to named ground node GND-1E.
+TR_1A,CB_101,solid,TR-1A secondary feeder terminates at CB-101.
+CB_101,BUS_1A_4160,solid,CB-101 output lands on BUS-1A 4160 V.
+EDG_1A,CB_105,solid,EDG-1A generator feeder enters CB-105.
+CB_105,BUS_1A_4160,solid,CB-105 incoming feeder lands on BUS-1A.
+BUS_1A_4160,CB_TIE_1AB,solid,BUS-1A is drawn to tie breaker CB-TIE-1AB.
+CB_TIE_1AB,BUS_1B_4160,solid,Tie breaker connects to BUS-1B; breaker is marked N.O. but drawn connected.
+BUS_1B_4160,CB_102,solid,BUS-1B terminates at CB-102.
+CB_102,TR_1B,solid,CB-102 feeder connects to TR-1B.
+TR_1B,OFFSITE_B_161KV,solid,TR-1B primary connects to Offsite B source.
+EDG_1B,CB_106,solid,EDG-1B generator feeder enters CB-106.
+CB_106,BUS_1B_4160,solid,CB-106 incoming feeder lands on BUS-1B.
+BUS_1A_4160,TR_LC_1A,solid,Vertical feeder from BUS-1A to TR-LC-1A.
+TR_LC_1A,CB_201,solid,TR-LC-1A secondary connects to CB-201.
+CB_201,BUS_480A,solid,CB-201 output connects to BUS-480A.
+BUS_480A,MCC_1A,solid,BUS-480A drop feeds MCC-1A.
+MCC_1A,PUMP_CCW_103A,solid,MCC-1A feeder terminates at PUMP-CCW-103A.
+BUS_480A,MCC_1C,solid,BUS-480A drop feeds MCC-1C.
+MCC_1C,FAN_CRHV_104A,solid,MCC-1C feeder terminates at FAN-CRHV-104A.
+BUS_1A_4160,TR_SAF_1A,solid,Vertical feeder from BUS-1A to TR-SAF-1A.
+TR_SAF_1A,CB_203,solid,TR-SAF-1A secondary connects to CB-203.
+CB_203,BUS_480E1A,solid,CB-203 output connects to BUS-480E1A.
+BUS_480E1A,MCC_ESS_A,solid,BUS-480E1A drop feeds MCC-ESS-A.
+MCC_ESS_A,PUMP_SI_101A,solid,MCC-ESS-A feeder terminates at PUMP-SI-101A.
+MCC_ESS_A,PUMP_RHR_102A,solid,MCC-ESS-A feeder terminates at PUMP-RHR-102A.
+MCC_ESS_A,MOV_1201A,solid,MCC-ESS-A feeder terminates at MOV-1201A.
+BUS_1B_4160,TR_LC_1B,solid,Vertical feeder from BUS-1B to TR-LC-1B.
+TR_LC_1B,CB_202,solid,TR-LC-1B secondary connects to CB-202.
+CB_202,BUS_480B,solid,CB-202 output connects to BUS-480B.
+BUS_480B,MCC_1B,solid,BUS-480B drop feeds MCC-1B.
+MCC_1B,PUMP_CCW_103B,solid,MCC-1B feeder terminates at PUMP-CCW-103B.
+BUS_480B,MCC_1D,solid,BUS-480B drop feeds MCC-1D.
+MCC_1D,FAN_CRHV_104B,solid,MCC-1D feeder terminates at FAN-CRHV-104B.
+BUS_1B_4160,TR_SAF_1B,solid,Vertical feeder from BUS-1B to TR-SAF-1B.
+TR_SAF_1B,CB_204,solid,TR-SAF-1B secondary connects to CB-204.
+CB_204,BUS_480E1B,solid,CB-204 output connects to BUS-480E1B.
+BUS_480E1B,MCC_ESS_B,solid,BUS-480E1B drop feeds MCC-ESS-B.
+MCC_ESS_B,PUMP_SI_101B,solid,MCC-ESS-B feeder terminates at PUMP-SI-101B.
+MCC_ESS_B,PUMP_RHR_102B,solid,MCC-ESS-B feeder terminates at PUMP-RHR-102B.
+MCC_ESS_B,MOV_1201B,solid,MCC-ESS-B feeder terminates at MOV-1201B.
+BUS_480A,CHGR_125A,solid route,FDR A-DC route leaves BUS-480A and terminates at CHGR-125A AC input.
+CHGR_125A,DC_BUS_125A,solid,CHGR-125A DC output connects to DC-BUS-125A.
+DC_BUS_125A,BAT_125A,solid,BAT-125A lead connects to DC-BUS-125A.
+DC_BUS_125A,INV_120A,solid,DC-BUS-125A connects to INV-120A input.
+INV_120A,UPS_BUS_A,solid,INV-120A output connects to UPS-BUS-A.
+UPS_BUS_A,INST_RACK_1,solid,UPS-BUS-A feeder drops to INST-RACK-1.
+UPS_BUS_A,PANEL_RPS_A,solid,UPS-BUS-A branch feeds PANEL-RPS-A bottom port.
+BUS_480B,CHGR_125B,solid route,FDR B-DC route is traced from BUS-480B side to CHGR-125B AC input; no ESS-B terminal dot.
+CHGR_125B,DC_BUS_125B,solid,CHGR-125B DC output connects to DC-BUS-125B.
+DC_BUS_125B,BAT_125B,solid,BAT-125B lead connects to DC-BUS-125B.
+DC_BUS_125B,INV_120B,solid,DC-BUS-125B connects to INV-120B input.
+INV_120B,UPS_BUS_B,solid,INV-120B output connects to UPS-BUS-B.
+UPS_BUS_B,PANEL_RPS_B,solid,UPS-BUS-B branch feeds PANEL-RPS-B bottom port.
+CB_105,RELAY_K86A,dashed control,CTRL-86A dashed route terminates at CB-105 and K86A relay port.
+RELAY_K86A,PANEL_RPS_A,dashed control,Dashed interlock from K86A relay to PANEL-RPS-A side port.
+PANEL_RPS_A,JB_ESF_01,dashed control,PANEL-RPS-A top dashed interlock terminates at JB-ESF-01.
+JB_ESF_01,PANEL_RPS_B,dashed control,JB-ESF-01 dashed interlock terminates at PANEL-RPS-B top port.
+PANEL_RPS_B,RELAY_K86B,dashed control,PANEL-RPS-B side dashed interlock terminates at K86B relay.
+RELAY_K86B,CB_106,dashed control,K86B relay dashed route terminates at CB-106 lower port.

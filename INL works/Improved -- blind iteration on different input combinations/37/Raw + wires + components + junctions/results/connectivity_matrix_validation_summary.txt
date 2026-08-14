@@ -1,0 +1,23 @@
+Connectivity matrix validation summary - Document 37
+Input configuration: Raw + wires + components + junctions
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\37\synthetic_npp_connectivity_matrix_v2(1).csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_connectivity_matrix.csv): TP=56, FP=1, FN=2, Precision=0.982456, Recall=0.965517, F1=0.973913
+- Jennifer -- Round 2 (round_02_jennifer_precision_review_connectivity_matrix.csv): TP=54, FP=1, FN=4, Precision=0.981818, Recall=0.931034, F1=0.955752
+- Diego -- Round 3 (round_03_diego_saturation_check_connectivity_matrix.csv): TP=54, FP=0, FN=4, Precision=1.000000, Recall=0.931034, F1=0.964286
+- Jennifer -- Round 4 (round_04_jennifer_final_confirmation_connectivity_matrix.csv): TP=54, FP=0, FN=4, Precision=1.000000, Recall=0.931034, F1=0.964286
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=54, FP=0, FN=4, Precision=1.000000, Recall=0.931034, F1=0.964286
+
+Main reasons the final score was not perfect:
+- GT edges are missing; recall is the limiting term.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-negative edge examples:
+- PAN-RPS-A -- PLC-ESF
+- PAN-RPS-A -- RELAY-K12A
+- PAN-RPS-B -- PLC-ESF
+- PAN-RPS-B -- RELAY-K12B
+
+Missing GT node examples:
+- PLC-ESF: 2 missed incident GT edge(s)

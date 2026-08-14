@@ -1,0 +1,15 @@
+source,target,reason,evidence
+SWGR-21A,SWGR-21B,not a direct bus-to-bus connection; tie breaker component separates the two buses,Raw top center shows SWGR-21A and SWGR-21B connected only through TIE-BKR-21AB.
+MCC-21A,VOLTAGE-SIG-A,crossing/proximity without bus or terminal dot,Raw left core shows the dashed voltage-signal routing passing the MCC/load area; the drawing calls out NO DOT = NO JUNCTION near the crossing.
+MOV-RWST21A,VOLTAGE-SIG-A,"explicit no-dot crossing, not a MOV-to-signal connection",Raw left/center crop shows VOLTAGE SIG A passing beside the MOV-RWST21A feeder at the NO DOT = NO JUNCTION callout.
+MOV-HV211A,VOLTAGE-SIG-A,separate solid MOV feeder and dashed signal line; no terminal dot,"Raw left core shows MOV-HV211A on its own solid MCC feeder, separate from VOLTAGE SIG A."
+VOLTAGE-SIG-A,BAT-21A,nearby dashed voltage-signal conductor does not touch the battery symbol or show a battery terminal dot,Raw grid r2c2/left core shows the VOLTAGE SIG A vertical run beside BAT-21A; BAT-21A has only a solid DC-bus lead.
+VOLTAGE-SIG-A,DC-BUS-21A,dashed signal line crosses the 125 VDC bus without a junction dot,Raw left/lower core shows VOLTAGE SIG A descending through the DC-BUS-21A area; no black dot is present on the DC bus at that crossing.
+CT-21A,DC-BUS-21A,instrument lead crosses/descends near DC area but no dot on DC bus,"Raw left/lower core shows CT-21A dashed lead landing on RPS-PNL-A, not on the 125 VDC bus."
+CB-MPA1,PUMP-CCW21A,separate vertical feeders from MCC-21A; no bridging conductor,PUMP-SI21A is below CB-MPA1; PUMP-CCW21A has its own direct MCC-21A tap.
+MCC-21B,VOLTAGE-SIG-B,crossing/proximity without bus or terminal dot,Raw right core shows the dashed voltage-signal/control routing passing the MCC-21B load area without a visible junction dot to the MCC bus.
+MOV-RWST21B,VOLTAGE-SIG-B,crossing/proximity without dot,"Raw right core shows dashed VOLTAGE SIG B/control routing beside MOV-RWST21B, with no dot at the solid MOV feeder."
+VOLTAGE-SIG-B,BAT-21B,nearby dashed voltage-signal conductor does not touch the battery symbol or show a battery terminal dot,Raw center/right lower crops show the VOLTAGE SIG B vertical run beside BAT-21B; BAT-21B has only a solid DC-bus lead.
+VOLTAGE-SIG-B,DC-BUS-21B,dashed signal line crosses the 125 VDC bus without a junction dot,Raw center/right lower crops show VOLTAGE SIG B descending through the DC-BUS-21B area; no black dot is present on the DC bus at that crossing.
+CT-21B,DC-BUS-21B,instrument lead crosses/descends near DC area but no dot on DC bus,"Raw center/right lower crops show CT-21B dashed lead landing on RPS-PNL-B, not on the 125 VDC bus."
+CB-MPB1,PUMP-CCW21B,separate vertical feeders from MCC-21B; no bridging conductor,PUMP-SI21B is below CB-MPB1; PUMP-CCW21B has its own direct MCC-21B tap.

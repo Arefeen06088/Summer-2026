@@ -1,0 +1,59 @@
+source,target,edge_kind,confidence,round_action,evidence
+DG-21A,ATS-21A,power_feeder,high,include,Solid feeder from DG-21A down and right into ATS-21A left side.
+UAT-2A,DS-21A,power_feeder,high,include,Solid vertical feeder from UAT-2A to DS-21A.
+DS-21A,ATS-21A,power_feeder,high,include,Solid feeder from DS-21A down and left into ATS-21A right side.
+ATS-21A,SWGR-21A,power_feeder,high,include,Solid output from ATS-21A to junction dot on SWGR-21A.
+SWGR-21A,TIE-BKR-21AB,power_feeder,high,include,SWGR-21A main bus connects through dot at the tie breaker left terminal.
+SWGR-21A,CB-21A1,power_feeder,high,include,Junction dot on SWGR-21A feeds vertical branch through CB-21A1.
+CB-21A1,TR-21A,power_feeder,high,include,Solid feeder continues from CB-21A1 to TR-21A.
+TR-21A,MCC-21A,power_feeder,high,include,Solid feeder from TR-21A terminates at MCC-21A enclosure dot.
+MCC-21A,MCC-21A-480V-3PH,internal_bus,high,include,MCC-21A enclosure contains the drawn 480 V 3PH busbar.
+TIE-BKR-21AB,SWGR-21B,power_feeder,high,include,Tie breaker right terminal connects to SWGR-21B busbar.
+SAT-2B,DS-21B,power_feeder,high,include,Solid vertical feeder from SAT-2B to DS-21B.
+DS-21B,ATS-21B,power_feeder,high,include,Solid feeder from DS-21B down and right into ATS-21B.
+DG-21B,ATS-21B,power_feeder,high,include,Solid feeder from DG-21B down and left into ATS-21B.
+ATS-21B,SWGR-21B,power_feeder,high,include,Solid output from ATS-21B to junction dot on SWGR-21B.
+SWGR-21B,CB-21B1,power_feeder,high,include,Junction dot on SWGR-21B feeds vertical branch through CB-21B1.
+CB-21B1,TR-21B,power_feeder,high,include,Solid feeder continues from CB-21B1 to TR-21B.
+TR-21B,MCC-21B,power_feeder,high,include,Solid feeder from TR-21B terminates at MCC-21B enclosure dot.
+MCC-21B,MCC-21B-480V-3PH,internal_bus,high,include,MCC-21B enclosure contains the drawn 480 V 3PH busbar.
+MCC-21A-480V-3PH,CB-MPA1,power_feeder,high,include,MCC-21A busbar tap feeds CB-MPA1.
+CB-MPA1,PUMP-SI21A,power_feeder,high,include,Solid feeder leaves CB-MPA1 and continues to PUMP-SI21A.
+MCC-21A-480V-3PH,PUMP-CCW21A,power_feeder,high,include,Solid vertical tap from MCC-21A busbar to PUMP-CCW21A.
+MCC-21A-480V-3PH,FAN-RB21A,power_feeder,high,include,Solid vertical tap from MCC-21A busbar to FAN-RB21A.
+MCC-21A-480V-3PH,MOV-HV211A,power_feeder,high,include,Solid vertical tap from MCC-21A busbar to MOV-HV211A.
+MCC-21A-480V-3PH,MOV-RWST21A,power_feeder,high,include,Solid vertical tap from MCC-21A busbar to MOV-RWST21A.
+MCC-21A-480V-3PH,XFMR-CPT21A,power_feeder,high,include,Solid right-side MCC-21A tap feeds XFMR-CPT21A.
+XFMR-CPT21A,AC-PNL-120A,power_feeder,high,include,Solid feeder from XFMR-CPT21A to AC-PNL-120A.
+AC-PNL-120A,RECT-21A,power_feeder,high,include,Solid feeder from AC-PNL-120A down and left to RECT-21A.
+RECT-21A,DC-BUS-21A,125vdc_feeder,high,include,Solid rectifier output joins DC-BUS-21A at a junction dot.
+BAT-21A,DC-BUS-21A,125vdc_feeder,high,include,Solid battery lead joins DC-BUS-21A at a junction dot.
+INV-21A,DC-BUS-21A,125vdc_feeder,high,include,Solid inverter lead joins DC-BUS-21A through the rectifier branch junction.
+MCC-21B-480V-3PH,CB-MPB1,power_feeder,high,include,MCC-21B busbar tap feeds CB-MPB1.
+CB-MPB1,PUMP-SI21B,power_feeder,high,include,Solid feeder leaves CB-MPB1 and continues to PUMP-SI21B.
+MCC-21B-480V-3PH,PUMP-CCW21B,power_feeder,high,include,Solid vertical tap from MCC-21B busbar to PUMP-CCW21B.
+MCC-21B-480V-3PH,FAN-RB21B,power_feeder,high,include,Solid vertical tap from MCC-21B busbar to FAN-RB21B.
+MCC-21B-480V-3PH,MOV-HV211B,power_feeder,high,include,Solid vertical tap from MCC-21B busbar to MOV-HV211B.
+MCC-21B-480V-3PH,MOV-RWST21B,power_feeder,high,include,Solid vertical tap from MCC-21B busbar to MOV-RWST21B.
+MCC-21B-480V-3PH,XFMR-CPT21B,power_feeder,high,include,Solid left-side MCC-21B tap feeds XFMR-CPT21B.
+XFMR-CPT21B,AC-PNL-120B,power_feeder,high,include,Solid feeder from XFMR-CPT21B to AC-PNL-120B.
+AC-PNL-120B,RECT-21B,power_feeder,high,include,Solid feeder from AC-PNL-120B down and right to RECT-21B.
+RECT-21B,DC-BUS-21B,125vdc_feeder,high,include,Solid rectifier output joins DC-BUS-21B at a junction dot.
+BAT-21B,DC-BUS-21B,125vdc_feeder,high,include,Solid battery lead joins DC-BUS-21B at a junction dot.
+INV-21B,DC-BUS-21B,125vdc_feeder,high,include,Solid inverter lead joins DC-BUS-21B at a junction dot.
+LOCA-SIG-A,JB-21A,instrument_signal,high,include,Dashed signal line connects LOCA-SIG-A to JB-21A with terminal dots.
+JB-21A,RPS-PNL-A,instrument_signal,high,include,Dashed signal route continues from JB-21A to a top terminal on RPS-PNL-A.
+CT-21A,RPS-PNL-A,instrument_signal,medium,include,Dashed CT-21A signal line continues down to a top terminal on RPS-PNL-A.
+VT-21A,RPS-PNL-A,instrument_signal,medium,include,VT-21A dashed voltage signal route visually continues to RPS-PNL-A while intermediate route label is excluded.
+RPS-PNL-A,INV-21A,control_logic,high,include,Dashed horizontal control line directly connects RPS-PNL-A to INV-21A.
+RPS-PNL-A,RELAY-K21A,control_logic,high,include,Dashed control chain links RPS-PNL-A to RELAY-K21A.
+RELAY-K21A,RELAY-86A,control_logic,high,include,Dashed control chain continues between RELAY-K21A and RELAY-86A.
+RELAY-86A,CB-MPA1,trip_control,medium,include,Dash-dot trip-control route from RELAY-86A rises and branches into CB-MPA1 trip terminal.
+LOCA-SIG-B,JB-21B,instrument_signal,high,include,Dashed signal line connects LOCA-SIG-B to JB-21B with terminal dots.
+JB-21B,RPS-PNL-B,instrument_signal,high,include,Dashed signal route continues from JB-21B to a top terminal on RPS-PNL-B.
+CT-21B,RPS-PNL-B,instrument_signal,medium,include,Dashed CT-21B signal line continues down to a top terminal on RPS-PNL-B.
+VT-21B,RPS-PNL-B,instrument_signal,medium,include,VT-21B dashed voltage signal route visually continues to RPS-PNL-B while intermediate route label is excluded.
+RPS-PNL-B,INV-21B,control_logic,high,include,Dashed horizontal control line directly connects RPS-PNL-B to INV-21B.
+RPS-PNL-B,RELAY-K21B,control_logic,high,include,Dashed control chain links RPS-PNL-B to RELAY-K21B.
+RELAY-K21B,RELAY-86B,control_logic,high,include,Dashed control chain continues between RELAY-K21B and RELAY-86B.
+RELAY-86B,CB-MPB1,trip_control,medium,include,Dash-dot trip-control route from RELAY-86B rises and branches into CB-MPB1 trip terminal.

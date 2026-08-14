@@ -1,0 +1,102 @@
+{
+  "document": 37,
+  "iteration": 1,
+  "calls": [
+    {
+      "document": 37,
+      "iteration": 1,
+      "call": "Main agent orchestration, local visual inspection, and artifact writing",
+      "model_call_count": 3,
+      "input_tokens_est": 21000,
+      "cached_input_tokens": "unavailable",
+      "image_file_input_tokens_est": 14000,
+      "output_tokens_est": 6500,
+      "reasoning_tokens": "unavailable",
+      "low_total_est": 30000,
+      "expected_total_est": 41500,
+      "high_total_est": 56000,
+      "method": "Grouped local estimate; exact internal main-agent continuations and usage objects were not exposed."
+    },
+    {
+      "document": 37,
+      "iteration": 1,
+      "call": "Diego R1 high-recall extraction",
+      "model_call_count": 1,
+      "input_tokens_est": 23000,
+      "cached_input_tokens": "unavailable",
+      "image_file_input_tokens_est": 17000,
+      "output_tokens_est": 3600,
+      "reasoning_tokens": "unavailable",
+      "low_total_est": 36000,
+      "expected_total_est": 43600,
+      "high_total_est": 56000,
+      "method": "Local approximation; actual subagent usage object was not exposed."
+    },
+    {
+      "document": 37,
+      "iteration": 1,
+      "call": "Jennifer R1 precision review",
+      "model_call_count": 1,
+      "input_tokens_est": 27000,
+      "cached_input_tokens": "unavailable",
+      "image_file_input_tokens_est": 18000,
+      "output_tokens_est": 2600,
+      "reasoning_tokens": "unavailable",
+      "low_total_est": 40000,
+      "expected_total_est": 47600,
+      "high_total_est": 62000,
+      "method": "Local approximation; actual subagent usage object was not exposed."
+    },
+    {
+      "document": 37,
+      "iteration": 1,
+      "call": "Diego R2 saturation check",
+      "model_call_count": 1,
+      "input_tokens_est": 18000,
+      "cached_input_tokens": "unavailable",
+      "image_file_input_tokens_est": 10000,
+      "output_tokens_est": 1500,
+      "reasoning_tokens": "unavailable",
+      "low_total_est": 25000,
+      "expected_total_est": 29500,
+      "high_total_est": 38000,
+      "method": "Local approximation; actual subagent usage object was not exposed."
+    },
+    {
+      "document": 37,
+      "iteration": 1,
+      "call": "Jennifer R2 final confirmation",
+      "model_call_count": 1,
+      "input_tokens_est": 15000,
+      "cached_input_tokens": "unavailable",
+      "image_file_input_tokens_est": 9000,
+      "output_tokens_est": 1200,
+      "reasoning_tokens": "unavailable",
+      "low_total_est": 21000,
+      "expected_total_est": 25200,
+      "high_total_est": 33000,
+      "method": "Local approximation; actual subagent usage object was not exposed."
+    }
+  ],
+  "totals": {
+    "document": 37,
+    "iteration": 1,
+    "call": "TOTAL",
+    "model_call_count": 7,
+    "input_tokens_est": 104000,
+    "cached_input_tokens": "unavailable",
+    "image_file_input_tokens_est": 68000,
+    "output_tokens_est": 15400,
+    "reasoning_tokens": "unavailable",
+    "low_total_est": 152000,
+    "expected_total_est": 187400,
+    "high_total_est": 245000,
+    "method": "Sum of local estimates."
+  },
+  "limitations": [
+    "No OpenAI API key was available, so the Responses input-token counting endpoint was not called.",
+    "Subagent usage objects were not exposed to the main agent; values are local estimates.",
+    "Cached input and reasoning-token counts are unavailable.",
+    "Main-agent system-internal continuations are grouped into one row because exact per-continuation usage was not exposed."
+  ]
+}

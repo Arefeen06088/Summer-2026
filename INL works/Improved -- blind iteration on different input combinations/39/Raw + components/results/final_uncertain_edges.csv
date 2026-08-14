@@ -1,0 +1,25 @@
+source,target,reason,a,b
+BUS_4160_A,BUS_4160_B,"the only visible path is through CB-TIE-AB, which is labeled N.O.; direct bus-to-bus continuity is not asserted",BUS_4160_A,BUS_4160_B
+OFFSITE_230KV_A,BUS_4160_A,"normal offsite feed is a visible chain through DS-230A, TR-1A, and CB-1A, not a direct edge",OFFSITE_230KV_A,BUS_4160_A
+OFFSITE_230KV_B,BUS_4160_B,"normal offsite feed is a visible chain through DS-230B, TR-1B, and CB-1B, not a direct edge",OFFSITE_230KV_B,BUS_4160_B
+CHG_125A,INV_120A,the side stack shows battery as the intervening DC device; the supported direct scheduled DC edge is BAT-125A to INV-120A,CHG_125A,INV_120A
+CHG_125B,INV_120B,"the side stack shows battery as the intervening DC device, so charger-to-inverter directness is not asserted",CHG_125B,INV_120B
+BUS_480_A,PANEL_120A,PANEL-120A appears downstream of INV-120A in the side stack; no direct 480 V bus-to-panel conductor is visible,BUS_480_A,PANEL_120A
+BUS_480_B,PANEL_120B,PANEL-120B appears downstream of INV-120B in the side stack; no direct 480 V bus-to-panel conductor is visible,BUS_480_B,PANEL_120B
+BUS_480_A,RPS_A,RPS-A supply is drawn through the panel/stack path; no direct BUS-480-A to RPS-A conductor is visible,BUS_480_A,RPS_A
+BUS_480_B,RPS_B,RPS-B supply is drawn through the panel/stack path; no direct BUS-480-B to RPS-B conductor is visible,BUS_480_B,RPS_B
+RPS_A,MOV_881A,terminal schedule and dashed routing indicate A101 as the field junction path rather than a direct RPS-A to MOV edge,RPS_A,MOV_881A
+RPS_A,MOV_742A,terminal schedule and dashed routing indicate A101 as the field junction path rather than a direct RPS-A to MOV edge,RPS_A,MOV_742A
+RPS_B,MOV_881B,terminal schedule and dashed routing indicate B101 as the field junction path rather than a direct RPS-B to MOV edge,RPS_B,MOV_881B
+RPS_B,MOV_742B,terminal schedule and dashed routing indicate B101 as the field junction path rather than a direct RPS-B to MOV edge,RPS_B,MOV_742B
+JB_A101,ANN_CR01,"ANN-CR01 lies near the broader bottom dashed control-room route, but no clear termination from JB-A101 into ANN-CR01 is visible",JB_A101,ANN_CR01
+JB_A101,REC_SOE01,"the A-side field junction is near the broader bottom control route, but no clear direct termination into REC-SOE01 is visible",JB_A101,REC_SOE01
+JB_B101,ANN_CR01,"the B-side field junction sits on/near a broad dashed route, but no direct termination into ANN-CR01 is visible",JB_B101,ANN_CR01
+JB_B101,REC_SOE01,"the B-side field junction sits on/near a broad dashed route, but no direct termination into REC-SOE01 is visible",JB_B101,REC_SOE01
+JB_A101,JB_B101,"the long lower dashed routing/boundary spans the sheet, but it is not a visible direct electrical conductor between the two JBs",JB_A101,JB_B101
+RELAY_KA1,PUMP_RHR_A,"relay placement is near MCC-A1 load wiring, but no conductor visibly terminates from RELAY-KA1 to this pump",RELAY_KA1,PUMP_RHR_A
+RELAY_KA1,PUMP_CS_A,"relay placement is near MCC-A1 load wiring, but no conductor visibly terminates from RELAY-KA1 to this pump",RELAY_KA1,PUMP_CS_A
+RELAY_KB1,MOV_881B,"RELAY-KB1 is in the RPS-B control area, but the visible dashed route is to RPS-B/JB-B101 rather than directly to MOV-881B",RELAY_KB1,MOV_881B
+RELAY_KB1,MOV_742B,"RELAY-KB1 is in the RPS-B control area, but the visible dashed route is to RPS-B/JB-B101 rather than directly to MOV-742B",RELAY_KB1,MOV_742B
+RELAY_UV_A,CB_TIE_AB,"UV relay may logically supervise an interlock, but only the sensing/control drop from BUS-4160-A to RELAY-UV-A is visible",RELAY_UV_A,CB_TIE_AB
+RELAY_UV_B,CB_TIE_AB,"UV relay may logically supervise an interlock, but only the sensing/control drop from BUS-4160-B to RELAY-UV-B is visible",RELAY_UV_B,CB_TIE_AB
