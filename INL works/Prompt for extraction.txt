@@ -1,0 +1,63 @@
+Resource location: C:\Asif_all_python_projects\INL\Improved -- blind iteration on different input combinations\1\Raw + wires + junctions 
+
+You will store your codes and artifacts here: C:\Asif_all_python_projects\INL\Improved -- blind iteration on different input combinations\1\Raw + wires + junctions\codes           
+
+
+You will place your results here: C:\Asif_all_python_projects\INL\Improved -- blind iteration on different input combinations\1\Raw + wires + junctions\results          
+
+
+Given a raw schematic diagram and other visual aids like wires and wire masks, your task is to extract the connectivity matrix from the diagram. We need to get the component names right as well as the edges/connections right in order to get a perfect score (FP = 0, FN = 0, precision = 1, recall = 1, F1 score = 1). The raw data is the most reliable resource, the derived resources are aids for your extraction.      
+
+
+Connectivity matrix format:
+- rows = component/node names
+- columns = same names in same order
+- 1 = connected
+- 0 = not connected
+- symmetric for undirected connectivity
+- diagonal = 0 unless self-loop is justified
+
+
+
+For this task, you must deploy two subagents: Diego, Jennifer
+
+
+
+Diego is the high-recall extractor: he inspects the schematic raw and derived resources and proposes all visually/geometrically plausible components, labels, logical nodes, and edges, with evidence for each connection.
+
+
+
+Jennifer is the precision reviewer/refiner: she visually inspects the schematic raw and derived resources, checks Diego’s proposal, removes unsupported or overconnected edges, fixes visually supported label/component issues, and marks ambiguous cases uncertain instead of guessing.
+
+
+This is one and only iteration. There will not be iteration 2 or 3. So, give your best for the best possible extraction In an iteration, there will be back and forth communication (let's call them rounds) between Diego and Jennifer:  
+
+Run rounds using:
+
+Diego extracts -> Jennifer corrects -> Diego extracts -> Jennifer corrects -> ..... until they agree on the connectivity matrix (saturates) 
+
+
+Under the results\ folder, you will store connectivity matrices from all rounds (from Diego and Jennifer) so that we can analyze the progress in results later. 
+
+
+For each iteration with this multi-agent image workflow, estimate total token usage. 
+
+Please:
+1. Identify every model call made by the main agent and subagents.
+2. For each call, estimate or record:
+   - input tokens
+   - cached input tokens
+   - output tokens
+   - reasoning tokens, if available
+   - image/file input tokens
+3. Use the OpenAI Responses input-token counting endpoint for planned payloads where possible.
+4. After execution, collect the usage object from every model response.
+5. Return a table grouped by document, iteration and total tokens. 
+6. Also give a low / expected / high estimate for calls whose output is not known in advance.
+7. Since we do not have API key, at the very least, find any method to get an estimate of total input token for each round. 
+ 
+
+
+Warning: Neither Diego, nor Jennifer should not use any Ground Truth (GT) or GT derived feedback while doing the extractions. They can only use resources from the folder named 'Raw + wires + junctions' 
+
+Do not use any off-the-shelf OCR like tesseractOCR or RapidOCR, use GPT-5.5 based subagents' own visual inspection abilities.
