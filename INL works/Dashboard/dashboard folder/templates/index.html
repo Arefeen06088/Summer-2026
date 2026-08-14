@@ -1,0 +1,791 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>SchemAgent: From Plant Diagrams to Connectivity Matrix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        :root {
+            --bg-main: #020708;
+            --bg-panel: #051012;
+            --bg-card: #08171a;
+            --accent-teal: #00b3b3;
+            --accent-teal-soft: #45d0d0;
+            --accent-teal-muted: #0a3b3f;
+            --accent-hover: #00e0e0;
+            --border-soft: #0f2227;
+            --text-main: #e6f5f6;
+            --text-muted: #9fb9bc;
+            --text-soft: #7ba3a7;
+            --button-bg: #041013;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top left, #042c30, #020708 55%);
+            color: var(--text-main);
+        }
+
+        .page-shell {
+            min-height: 100vh;
+            display: block;
+            flex-direction: column;
+            background: linear-gradient(180deg, #020708 0%, #000000 70%);
+        }
+
+        .header {
+            padding: 28px 32px 10px;
+            border-bottom: 1px solid var(--border-soft);
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .title-row {
+            display: block;
+            
+            align-items: baseline;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.9rem;
+            letter-spacing: 0.04em;
+            
+            color: var(--accent-teal);
+        }
+
+        .title-tagline {
+            font-size: 0.95rem;
+            color: var(--text-soft);
+        }
+
+        .header-strip {
+            margin-top: 12px;
+            display: block;
+            
+            gap: 10px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .header-pill {
+            padding: 4px 10px;
+            border-radius: 999px;
+            border: 1px solid var(--accent-teal-muted);
+            background: rgba(0, 179, 179, 0.08);
+            color: var(--accent-teal-soft);
+        }
+
+        .layout {
+            flex: 1;
+            display: grid;
+            grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+            gap: 20px;
+            padding: 20px 28px 24px;
+        }
+
+        @media (max-width: 960px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .workflow-panel {
+            background: var(--bg-panel);
+            border-radius: 16px;
+            border: 1px solid var(--border-soft);
+            padding: 18px 18px 20px;
+            box-shadow: 0 18px 32px rgba(0, 0, 0, 0.55);
+        }
+
+        .preview-panel {
+            background: var(--bg-panel);
+            border-radius: 16px;
+            border: 1px solid var(--border-soft);
+            padding: 18px;
+            box-shadow: 0 18px 32px rgba(0, 0, 0, 0.55);
+        }
+
+        .panel-title {
+            font-size: 0.95rem;
+            letter-spacing: 0.12em;
+            
+            color: var(--text-soft);
+            margin-bottom: 12px;
+        }
+
+        .row-label {
+            font-size: 0.8rem;
+            
+            letter-spacing: 0.16em;
+            color: var(--text-soft);
+            margin-bottom: 6px;
+        }
+
+        .workflow-row {
+            display: grid;
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+
+        .workflow-row.top-row {
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+        }
+
+        .workflow-row.middle-row,
+        .workflow-row.bottom-row {
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+        }
+
+        .workflow-row.middle-row > .card:first-child,
+        .workflow-row.bottom-row > .card:first-child {
+            grid-column: 2 / span 3;
+        }
+
+        @media (max-width: 1040px) {
+            .workflow-row.top-row,
+            .workflow-row.middle-row,
+            .workflow-row.bottom-row {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .workflow-row.middle-row > .card:first-child,
+            .workflow-row.bottom-row > .card:first-child {
+                grid-column: auto;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .workflow-row.top-row,
+            .workflow-row.middle-row,
+            .workflow-row.bottom-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            border: 1px solid var(--border-soft);
+            padding: 10px 10px 12px;
+            display: block;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .card-label {
+            font-size: 0.78rem;
+            
+            letter-spacing: 0.14em;
+            color: var(--text-soft);
+        }
+
+        .card-step {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent-teal-soft);
+            margin-bottom: 2px;
+        }
+
+        .primary-button {
+                margin-top: 24px;
+                padding: 8px 10px 34px;
+                border-radius: 8px;
+                border: 1px solid var(--accent-teal-muted);
+                background: radial-gradient(circle at top left, #0b2a30, #041013);
+                color: var(--text-main);
+                font-size: 0.86rem;
+                font-weight: 600;
+                text-align: center;
+                cursor: pointer;
+                position: relative;
+                display: block;
+                height: 112px;
+                width: 100%;
+            }
+
+
+        .primary-button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .secondary-link {
+            margin-top: 4px;
+            align-self: flex-start;
+            padding: 0;
+            border: none;
+            background: transparent;
+            font-size: 0.8rem;
+            color: var(--text-soft);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.16s ease;
+        }
+
+        .secondary-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 1px;
+            background: var(--accent-teal);
+            transition: width 0.16s ease;
+        }
+
+        .secondary-link:hover {
+            color: var(--accent-hover);
+        }
+
+        .secondary-link:hover::after {
+            width: 100%;
+        }
+
+        .secondary-link.active {
+            color: var(--accent-teal);
+        }
+
+        .secondary-link.active::after {
+            width: 100%;
+            background: var(--accent-hover);
+        }
+
+        .preview-header {
+            display: block;
+            
+            
+            margin-bottom: 10px;
+        }
+
+        .preview-title {
+            font-size: 0.9rem;
+            color: var(--text-soft);
+        }
+
+        .detail-panel {
+            display: none;
+            border-radius: 12px;
+            border: 1px solid var(--border-soft);
+            background: var(--button-bg);
+            padding: 10px;
+            min-height: 160px;
+        }
+
+        .detail-panel.active {
+            display: block;
+        }
+
+        .detail-panel h2 {
+            margin: 0 0 8px;
+            font-size: 0.95rem;
+            color: var(--accent-teal-soft);
+        }
+
+        .detail-panel p {
+            margin: 4px 0 10px;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 10px;
+        }
+
+        .detail-image-wrap {
+            border-radius: 10px;
+            border: 1px solid var(--border-soft);
+            overflow: hidden;
+            background: #000;
+        }
+
+        .detail-image-wrap img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .detail-table-wrap {
+            max-height: 220px;
+            overflow: auto;
+            border-radius: 10px;
+            border: 1px solid var(--border-soft);
+        }
+
+        table.metrics-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #030c10;
+        }
+
+        table.metrics-table th,
+        table.metrics-table td {
+            padding: 8px 10px;
+            font-size: 0.82rem;
+            text-align: center;
+        }
+
+        table.metrics-table thead {
+            background: rgba(0, 179, 179, 0.1);
+        }
+
+        table.metrics-table th {
+            color: var(--accent-teal-soft);
+            border-bottom: 1px solid var(--border-soft);
+        }
+
+        table.metrics-table td {
+            color: var(--text-main);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        table.metrics-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .matrix-summary {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .matrix-summary strong {
+            color: var(--accent-teal-soft);
+        }
+
+        .download-link {
+            display: inline-flex;
+            
+            gap: 6px;
+            font-size: 0.82rem;
+            color: var(--accent-teal-soft);
+            text-decoration: none;
+            padding: 6px 10px;
+            border-radius: 999px;
+            border: 1px solid var(--accent-teal-muted);
+            background: rgba(0, 179, 179, 0.12);
+            margin-top: 8px;
+            transition: background 0.16s ease, border-color 0.16s ease, color 0.16s ease;
+        }
+
+        .download-link:hover {
+            background: rgba(0, 224, 224, 0.18);
+            border-color: var(--accent-hover);
+            color: var(--accent-hover);
+        }
+
+        .download-link svg {
+            width: 12px;
+            height: 12px;
+        }
+
+        .footer {
+            padding: 10px 28px 16px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            border-top: 1px solid #040b0e;
+            background: #000;
+        }
+
+        .footer span {
+            color: var(--accent-teal-soft);
+        }
+    
+        .workflow-row.top-row,
+        .workflow-row.middle-row,
+        .workflow-row.bottom-row {
+            align-items: stretch;
+        }
+
+        .primary-button {
+            width: 100%;
+        }
+
+    
+        .workflow-row.top-row .card:nth-child(4) .primary-button {
+              margin-top: 8px;
+          }
+
+        .progress-bar-container {
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            bottom: 20px;
+            width: auto;
+            height: 6px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.06);
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            width: 0%;
+            height: 100%;
+            background: var(--accent-teal-soft);
+        }
+
+        .progress-text {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 6px;
+            text-align: center;
+            font-size: 0.72rem;
+            color: var(--text-soft);
+        }
+
+
+</style>
+</head>
+<body>
+<div class="page-shell">
+    <header class="header">
+        <div class="title-row">
+            <h1>SchemAgent: From Plant Diagrams to Connectivity Matrix</h1>
+                    </div>
+        <div class="header-strip">
+                        <div>Steps: raw diagram → layers → connectivity matrix → validation.</div>
+        </div>
+    </header>
+
+    <main class="layout">
+        <section class="workflow-panel" aria-label="workflow controls">
+            <div class="panel-title">Workflow steps</div>
+
+            <div class="row-label">Layer generation</div>
+            <input type="file" id="raw-upload-input" style="display:none" accept="image/*" />
+            <div class="workflow-row top-row">
+                <div class="card">
+                    <div class="card-step">Step 1</div>
+                    <div class="card-label">Raw schematic</div>
+                    <button class="primary-button" type="button" onclick="openRawUpload(); startProgress('step1')" >
+                        <span>Upload Raw Diagram</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="progress-step1"></div>
+                        </div>
+                        <div class="progress-text" id="progress-text-step1">0%</div>
+                    </button>
+                    <button class="secondary-link" type="button" data-panel="raw" onclick="showPanel('raw')" >show raw</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-step">Step 2</div>
+                    <div class="card-label">Wire layer</div>
+                    <button class="primary-button" type="button" onclick="startProgress('step2')" >
+                        <span>Generate Wire Layers</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="progress-step2"></div>
+                        </div>
+                        <div class="progress-text" id="progress-text-step2">0%</div>
+                    </button>
+                    <button class="secondary-link" type="button" data-panel="wires" onclick="showPanel('wires')" >show output</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-step">Step 3</div>
+                    <div class="card-label">Junction layer</div>
+                    <button class="primary-button" type="button" onclick="startProgress('step3')" >
+                        <span>Generate Junction Layers</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="progress-step3"></div>
+                        </div>
+                        <div class="progress-text" id="progress-text-step3">0%</div>
+                    </button>
+                    <button class="secondary-link" type="button" data-panel="junctions" onclick="showPanel('junctions')" >show output</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-step">Step 4</div>
+                    <div class="card-label">Component layer</div>
+                    <button class="primary-button" type="button" onclick="startProgress('step4')" >
+                        <span>Generate Component Layer</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="progress-step4"></div>
+                        </div>
+                        <div class="progress-text" id="progress-text-step4">0%</div>
+                    </button>
+                    <button class="secondary-link" type="button" data-panel="components" onclick="showPanel('components')" >show output</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-step">Step 5</div>
+                    <div class="card-label">Label layer</div>
+                    <button class="primary-button" type="button" onclick="startProgress('step5')" >
+                        <span>Generate Label Layer</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="progress-step5"></div>
+                        </div>
+                        <div class="progress-text" id="progress-text-step5">0%</div>
+                    </button>
+                    <button class="secondary-link" type="button" data-panel="labels" onclick="showPanel('labels')" >show output</button>
+                </div>
+            </div>
+
+            <div class="row-label">Connectivity matrix</div>
+            <div class="workflow-row middle-row">
+                <div class="card">
+                    <div class="card-step">Step 6</div>
+                    <div class="card-label">Matrix synthesis</div>
+                    <button class="primary-button" type="button" onclick="showPanel('matrix'); startProgress('step6')" >
+                        <span>Generate Connectivity Matrix</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="progress-step6"></div>
+                        </div>
+                        <div class="progress-text" id="progress-text-step6">0%</div>
+                    </button>
+                    <button class="secondary-link" type="button" onclick="downloadMatrix()">download matrix</button>
+                </div>
+            </div>
+
+            <div class="row-label">Validation against ground truth</div>
+            <input type="file" id="gt-upload-input" style="display:none" accept="*/*" />
+            <div class="workflow-row bottom-row">
+                <div class="card">
+                    <div class="card-step">Step 7</div>
+                    <div class="card-label">Ground truth comparison</div>
+                    <button class="primary-button" type="button" onclick="openGtUpload(); startProgress('step7')" >
+                        <span>Upload Ground Truth</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="progress-step7"></div>
+                        </div>
+                        <div class="progress-text" id="progress-text-step7">0%</div>
+                    </button>
+                    <button class="secondary-link" type="button" onclick="showPanel('metrics')" >show validation scores</button>
+                </div>
+            </div>
+        </section>
+
+
+        <aside class="preview-panel" aria-label="preview area">
+            <div class="preview-header">
+                <div class="preview-title">Step preview</div>
+                            </div>
+
+            <div id="panel-raw" class="detail-panel">
+                <h2>Raw plant diagram</h2>
+                
+                <div class="detail-grid">
+                    <div class="detail-image-wrap">
+                        <img src="{{ url_for('get_resource', category='Raw', filename='raw -- synthetic_npp_electrical_schematic_revised_v4.png') }}" alt="Raw synthetic schematic" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="panel-wires" class="detail-panel">
+                <h2>Wire layers</h2>
+                
+                <div class="detail-grid">
+                    <div class="detail-image-wrap">
+                        <img src="{{ url_for('get_resource', category='Wires', filename='wires_mask_overlay.png') }}" alt="Wires mask overlay" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="panel-junctions" class="detail-panel">
+                <h2>Junction layers</h2>
+                
+                <div class="detail-grid">
+                    <div class="detail-image-wrap">
+                        <img src="{{ url_for('get_resource', category='Junctions', filename='wire_nodes_overlay.png') }}" alt="Wire nodes overlay" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="panel-components" class="detail-panel">
+                <h2>Component layer</h2>
+                
+                <div class="detail-grid">
+                    <div class="detail-image-wrap">
+                        <img src="{{ url_for('get_resource', category='Components', filename='detected_components_overlay.png') }}" alt="Detected components overlay" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="panel-labels" class="detail-panel">
+                <h2>Label layer</h2>
+                
+                <div class="detail-grid">
+                    <div class="detail-image-wrap">
+                        <img src="{{ url_for('get_resource', category='Labels', filename='component_labels_banners_overlay.png') }}" alt="Component labels overlay" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="panel-matrix" class="detail-panel">
+                <h2>Connectivity matrix preview</h2>
+                
+                <div class="detail-grid">
+                    <div class="detail-table-wrap">
+                        <table class="metrics-table">
+                            <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Value</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% if matrix_summary %}
+                                <tr>
+                                    <td>Number of nodes detected</td>
+                                    <td>{{ matrix_summary.rows }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of connections detected</td>
+                                    <td>{{ matrix_summary.columns }}</td>
+                                </tr>
+                            {% else %}
+                                <tr>
+                                    <td colspan="2">Connectivity matrix CSV not found.</td>
+                                </tr>
+                            {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="matrix-summary">
+                    {% if matrix_summary %}
+                        Loaded from <strong>connectivity_matrix.csv</strong>. Use <strong>download matrix</strong> below to fetch the full file.
+                    {% else %}
+                        Once a connectivity matrix is available, this panel will summarize it.
+                    {% endif %}
+                </div>
+                <a href="{{ url_for('download_matrix') }}" class="download-link" id="matrix-download-link">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path fill="currentColor" d="M8 1.5a.75.75 0 0 1 .75.75v6.19l2.22-2.22a.75.75 0 1 1 1.06 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-3.5-3.5a.75.75 0 0 1 1.06-1.06L7.25 8.44V2.25A.75.75 0 0 1 8 1.5Zm-5.5 9.25a.75.75 0 0 1 .75-.75h9.5a.75.75 0 0 1 .75.75v2.5A2.75 2.75 0 0 1 10.75 16h-5.5A2.75 2.75 0 0 1 2.5 13.25v-2.5Zm1.5.75v1.75c0 .69.56 1.25 1.25 1.25h5.5c.69 0 1.25-.56 1.25-1.25V11.5h-8Z" />
+                    </svg>
+                    <span>download matrix</span>
+                </a>
+            </div>
+
+            <div id="panel-metrics" class="detail-panel">
+                <h2>Ground truth validation scores</h2>
+                
+                <div class="detail-grid">
+                    <div class="detail-table-wrap">
+                        <table class="metrics-table">
+                            <thead>
+                            <tr>
+                                <th>TP</th>
+                                <th>FP</th>
+                                <th>FN</th>
+                                <th>Precision</th>
+                                <th>Recall</th>
+                                <th>F1 score</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% if metrics %}
+                                <tr>
+                                    <td>{{ metrics.tp }}</td>
+                                    <td>{{ metrics.fp }}</td>
+                                    <td>{{ metrics.fn }}</td>
+                                    <td>{{ '%.6f'|format(metrics.precision) if metrics.precision is not none else '—' }}</td>
+                                    <td>{{ '%.6f'|format(metrics.recall) if metrics.recall is not none else '—' }}</td>
+                                    <td>{{ '%.6f'|format(metrics.f1) if metrics.f1 is not none else '—' }}</td>
+                                </tr>
+                            {% else %}
+                                <tr>
+                                    <td colspan="6">No validation metrics found. Ensure the CSV exists in the Result scores folder.</td>
+                                </tr>
+                            {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        Prototype only – operations are currently wired to preset folders under <span>Dashboard</span>. Once the extraction pipeline is ready, the same buttons can trigger live processing.
+    </footer>
+</div>
+
+<script>
+    function showPanel(name) {
+        var panels = document.querySelectorAll('.detail-panel');
+        for (var i = 0; i < panels.length; i++) {
+            var p = panels[i];
+            if (p.id === 'panel-' + name) {
+                p.classList.add('active');
+            } else {
+                p.classList.remove('active');
+            }
+        }
+
+        var links = document.querySelectorAll('.secondary-link');
+        for (var j = 0; j < links.length; j++) {
+            var link = links[j];
+            var panel = link.getAttribute('data-panel');
+            if (panel === name) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        }
+    }
+
+    function downloadMatrix() {
+        var link = document.getElementById('matrix-download-link');
+        if (link) {
+            link.click();
+        }
+    }
+
+    function openRawUpload() {
+        var input = document.getElementById('raw-upload-input');
+        if (input) {
+            input.click();
+        }
+    }
+
+    function openGtUpload() {
+        var input = document.getElementById('gt-upload-input');
+        if (input) {
+            input.click();
+        }
+    }
+
+    var progressTimers = {};
+
+    function startProgress(step) {
+        var bar = document.getElementById('progress-' + step);
+        var textEl = document.getElementById('progress-text-' + step);
+        if (!bar) {
+            return;
+        }
+        bar.style.width = '0%';
+        if (textEl) {
+            textEl.textContent = '0%';
+        }
+        var start = Date.now();
+        var duration = 3000;
+        if (progressTimers[step]) {
+            clearInterval(progressTimers[step]);
+        }
+        progressTimers[step] = setInterval(function () {
+            var elapsed = Date.now() - start;
+            var pct = Math.min((elapsed / duration) * 100, 100);
+            bar.style.width = pct + '%';
+            if (textEl) {
+                textEl.textContent = Math.round(pct) + '%';
+            }
+            if (pct >= 100) {
+                clearInterval(progressTimers[step]);
+                progressTimers[step] = null;
+            }
+        }, 50);
+    }
+</script>
+</body>
+</html>
+

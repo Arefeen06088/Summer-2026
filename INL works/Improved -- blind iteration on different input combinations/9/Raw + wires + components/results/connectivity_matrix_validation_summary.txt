@@ -1,0 +1,36 @@
+Connectivity matrix validation summary - Document 9
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\9\connectivity_matrix_expanded_clear_refined_v3_reworked.csv
+
+Scores:
+- Diego -- Round 1 (round_matrices\round_01_diego_connectivity_matrix.csv): TP=173, FP=10, FN=27, Precision=0.945355, Recall=0.865000, F1=0.903394
+- Jennifer -- Round 2 (round_matrices\round_02_jennifer_connectivity_matrix.csv): TP=174, FP=9, FN=26, Precision=0.950820, Recall=0.870000, F1=0.908616
+- Diego -- Round 3 (round_matrices\round_03_diego_connectivity_matrix.csv): TP=174, FP=9, FN=26, Precision=0.950820, Recall=0.870000, F1=0.908616
+- Jennifer -- Round 4 (round_matrices\round_04_jennifer_connectivity_matrix.csv): TP=174, FP=9, FN=26, Precision=0.950820, Recall=0.870000, F1=0.908616
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=174, FP=9, FN=26, Precision=0.950820, Recall=0.870000, F1=0.908616
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- ANN-ESF-A -- RELAY-K2A
+- ANN-ESF-B -- RELAY-K2B
+- CB-481B -- RELAY-27B
+- FAN-AHU-2A -- MTR-480-N2
+- MTR-480-N1 -- PUMP-SUMP-1B
+- PLC-ESF-A -- PN-120A
+- PLC-ESF-B -- PN-120B
+- PN-480-N1A -- PN-480-N1B
+- PN-480-N2A -- PN-480-N2B
+
+False-negative edge examples:
+- ANN-ESF-A -- RELAY-86A
+- ANN-ESF-B -- RELAY-86B
+- BUS-4160-N1 -- RELAY-50/51A
+- BUS-4160-N2 -- RELAY-27B
+- CB-EDG-A -- RELAY-86A
+- CB-EDG-B -- RELAY-86B
+- CB-RHR-A -- JB-1A
+- CB-RHR-B -- JB-1B
+- CB-SI-A -- JB-2A
+- CB-SI-B -- JB-2B

@@ -1,0 +1,97 @@
+source,target,status,evidence
+GRID-1,AUX-TR-1A,accepted,solid offsite A line
+AUX-TR-1A,CB-101,accepted,solid line into CB-101
+CB-102,AUX-TR-1B,accepted,solid line from CB-102
+AUX-TR-1B,GRID-2,accepted,solid offsite B line
+BUS-416A,BUS-TIE-41,accepted,BUS-416A enters normally open bus tie
+BUS-TIE-41,BUS-416B,accepted,bus tie exits to BUS-416B
+EDG-1A,CB-DG1A,accepted,solid generator A lead
+CB-DG1A,BUS-416A,accepted,DG breaker feeder lands on BUS-416A
+BUS-416A,TR-480A1,accepted,solid feeder down to transformer
+TR-480A1,CB-480A1,accepted,solid transformer low-side vertical
+CB-480A1,MCC-480A1,accepted,solid breaker output to MCC
+MCC-480A1,FDB-A1,accepted,buckets shown below connection
+BUS-416A,TR-480A2,accepted,solid feeder down to transformer
+TR-480A2,CB-480A2,accepted,solid transformer low-side vertical
+CB-480A2,MCC-480A2,accepted,solid breaker output to MCC
+MCC-480A2,FDB-A2,accepted,buckets shown below connection
+BUS-416B,TR-480B1,accepted,solid feeder down to transformer
+TR-480B1,CB-480B1,accepted,solid transformer low-side vertical
+CB-480B1,MCC-480B1,accepted,solid breaker output to MCC
+MCC-480B1,FDB-B1,accepted,buckets shown below connection
+BUS-416B,TR-480B2,accepted,solid feeder down to transformer
+TR-480B2,CB-480B2,accepted,solid transformer low-side vertical
+CB-480B2,MCC-480B2,accepted,solid breaker output to MCC
+MCC-480B2,FDB-B2,accepted,buckets shown below connection
+BUS-416B,CB-DG1B,accepted,DG breaker feeder lands on BUS-416B
+CB-DG1B,EDG-1B,accepted,solid generator B lead
+BUS-416A,CB-CHG-A,accepted,solid charger A feeder
+CB-CHG-A,CHGR-125A,accepted,52-CA downlead
+CHGR-125A,DC-BUS-A,accepted,charger A output to DC bus
+BAT-125A,DC-BUS-A,accepted,battery A lead to DC bus
+DC-BUS-A,INV-120A,accepted,125V DC A vertical
+INV-120A,BUS-120A,accepted,120VAC inverter A output
+BUS-416B,CB-CHG-B,accepted,solid charger B feeder
+CB-CHG-B,CHGR-125B,accepted,52-CB downlead
+CHGR-125B,DC-BUS-B,accepted,charger B output to DC bus
+BAT-125B,DC-BUS-B,accepted,battery B lead to DC bus
+DC-BUS-B,INV-120B,accepted,125V DC B vertical
+INV-120B,BUS-120B,accepted,120VAC inverter B output
+FDB-A1,CB-SI-A1,accepted,vertical tap from MCC feeder bus to breaker
+CB-SI-A1,PUMP-SI-A1,accepted,solid vertical drop from breaker to load
+FDB-A1,CB-RHR-A1,accepted,vertical tap from MCC feeder bus to breaker
+CB-RHR-A1,PUMP-RHR-A1,accepted,solid vertical drop from breaker to load
+FDB-A1,CB-CCW-A1,accepted,vertical tap from MCC feeder bus to breaker
+CB-CCW-A1,PUMP-CCW-A1,accepted,solid vertical drop from breaker to load
+FDB-A1,CB-FAN-A1,accepted,vertical tap from MCC feeder bus to breaker
+CB-FAN-A1,FAN-CR-A1,accepted,solid vertical drop from breaker to load
+FDB-A1,CB-MOV-A101,accepted,vertical tap from MCC feeder bus to breaker
+CB-MOV-A101,VALVE-SI-A101,accepted,solid vertical drop from breaker to load
+FDB-A1,CB-MOV-A102,accepted,vertical tap from MCC feeder bus to breaker
+CB-MOV-A102,VALVE-RHR-A102,accepted,solid vertical drop from breaker to load
+FDB-A2,CB-CS-A2,accepted,vertical tap from MCC feeder bus to breaker
+CB-CS-A2,PUMP-CS-A2,accepted,solid vertical drop from breaker to load
+FDB-A2,CB-SW-A2,accepted,vertical tap from MCC feeder bus to breaker
+CB-SW-A2,PUMP-SW-A2,accepted,solid vertical drop from breaker to load
+FDB-A2,CB-AFW-A2,accepted,vertical tap from MCC feeder bus to breaker
+CB-AFW-A2,PUMP-AFW-A2,accepted,solid vertical drop from breaker to load
+FDB-A2,CB-FAN-A2,accepted,vertical tap from MCC feeder bus to breaker
+CB-FAN-A2,FAN-EB-A2,accepted,solid vertical drop from breaker to load
+FDB-A2,CB-MOV-A201,accepted,vertical tap from MCC feeder bus to breaker
+CB-MOV-A201,VALVE-CCW-A201,accepted,solid vertical drop from breaker to load
+FDB-A2,CB-HTR-A2,accepted,vertical tap from MCC feeder bus to breaker
+CB-HTR-A2,HTR-BAY-A2,accepted,solid vertical drop from breaker to load
+FDB-B1,CB-SI-B1,accepted,vertical tap from MCC feeder bus to breaker
+CB-SI-B1,PUMP-SI-B1,accepted,solid vertical drop from breaker to load
+FDB-B1,CB-RHR-B1,accepted,vertical tap from MCC feeder bus to breaker
+CB-RHR-B1,PUMP-RHR-B1,accepted,solid vertical drop from breaker to load
+FDB-B1,CB-CCW-B1,accepted,vertical tap from MCC feeder bus to breaker
+CB-CCW-B1,PUMP-CCW-B1,accepted,solid vertical drop from breaker to load
+FDB-B1,CB-FAN-B1,accepted,vertical tap from MCC feeder bus to breaker
+CB-FAN-B1,FAN-CR-B1,accepted,solid vertical drop from breaker to load
+FDB-B1,CB-MOV-B101,accepted,vertical tap from MCC feeder bus to breaker
+CB-MOV-B101,VALVE-SI-B101,accepted,solid vertical drop from breaker to load
+FDB-B1,CB-MOV-B102,accepted,vertical tap from MCC feeder bus to breaker
+CB-MOV-B102,VALVE-RHR-B102,accepted,solid vertical drop from breaker to load
+FDB-B2,CB-CS-B2,accepted,vertical tap from MCC feeder bus to breaker
+CB-CS-B2,PUMP-CS-B2,accepted,solid vertical drop from breaker to load
+FDB-B2,CB-SW-B2,accepted,vertical tap from MCC feeder bus to breaker
+CB-SW-B2,PUMP-SW-B2,accepted,solid vertical drop from breaker to load
+FDB-B2,CB-FAN-B2,accepted,vertical tap from MCC feeder bus to breaker
+CB-FAN-B2,FAN-EB-B2,accepted,solid vertical drop from breaker to load
+FDB-B2,CB-MOV-B201,accepted,vertical tap from MCC feeder bus to breaker
+CB-MOV-B201,VALVE-CCW-B201,accepted,solid vertical drop from breaker to load
+FDB-B2,CB-HTR-B2,accepted,vertical tap from MCC feeder bus to breaker
+CB-HTR-B2,HTR-BAY-B2,accepted,solid vertical drop from breaker to load
+BUS-120A,PANEL-RPS-A,accepted,dashed 120VAC instrument/control riser to RPS A
+INST-PT-A,PANEL-RPS-A,accepted,dotted PT-A signal line
+INST-LT-A,PANEL-RPS-A,accepted,dotted LT-A signal line
+RELAY-K27A,PANEL-RPS-A,accepted,dashed relay A control line
+RELAY-K27A,PANEL-ESF-A,accepted,dashed UV relay A output to ESF
+PANEL-ESF-A,JB-A401,accepted,dashed ESF A line to junction box
+BUS-120B,PANEL-RPS-B,accepted,dashed 120VAC instrument/control riser to RPS B
+INST-PT-B,PANEL-RPS-B,accepted,dotted PT-B signal line
+INST-LT-B,PANEL-RPS-B,accepted,dotted LT-B signal line
+RELAY-K27B,PANEL-RPS-B,accepted,dashed relay B control line
+RELAY-K27B,PANEL-ESF-B,accepted,dashed UV relay B output to ESF
+PANEL-ESF-B,JB-B501,accepted,dashed ESF B line to junction box

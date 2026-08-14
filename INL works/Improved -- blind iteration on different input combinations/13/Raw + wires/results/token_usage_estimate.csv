@@ -1,0 +1,6 @@
+document,iteration,call,model,text_input_tokens_low,text_input_tokens_expected,text_input_tokens_high,cached_input_tokens,image_file_input_tokens_low,image_file_input_tokens_expected,image_file_input_tokens_high,output_tokens_low,output_tokens_expected,output_tokens_high,reasoning_tokens_low,reasoning_tokens_expected,reasoning_tokens_high,total_tokens_low,total_tokens_expected,total_tokens_high,usage_object_available,notes
+13,1,main_agent_orchestration,gpt-5,16500,22000,29701,0,73367,97822,132060,1875,2500,3375,6750,9000,12150,98492,131322,177286,no,Estimated from visible tool context; API usage object unavailable.
+13,1,Diego_R1_high_recall,gpt-5.5,675,900,1215,0,64496,85994,116092,3150,4200,5670,4875,6500,8775,73196,97594,131752,no,Subagent model response usage object not exposed to main agent.
+13,1,Jennifer_R1_precision,gpt-5.5,3900,5200,7021,0,71634,95512,128942,1950,2600,3511,4125,5500,7426,81609,108812,146900,no,Includes Diego R1 proposal text plus images.
+13,1,Diego_R2_saturation,gpt-5.5,1200,1600,2160,0,61686,82248,111035,675,900,1215,2625,3500,4725,66186,88248,119135,no,Saturation check of disputed visual edges.
+13,1,Jennifer_R2_final,gpt-5.5,675,900,1215,0,61686,82248,111035,525,700,946,2250,3000,4051,65136,86848,117247,no,Final agreement on visual/geometric edge policy.

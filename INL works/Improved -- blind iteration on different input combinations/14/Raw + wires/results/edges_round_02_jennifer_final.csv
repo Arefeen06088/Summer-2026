@@ -1,0 +1,156 @@
+source,target,type,evidence
+BAT-125A,BUS-125DCA,dc,solid battery tap to BUS-125DCA
+BAT-125B,BUS-125DCB,dc,solid battery tap to BUS-125DCB
+BUS-125DCA,CB-DC-TIE,dc_tie,solid 125 VDC tie breaker path
+BUS-125DCA,CHG-125A,dc_supply,solid A charger feed visibly passes through PANEL-RPS-A into CHG-125A and BUS-125DCA
+BUS-125DCA,INV-120A,ups,solid inverter path between DC bus and UPS bus
+BUS-125DCB,CB-DC-TIE,dc_tie,solid 125 VDC tie breaker path
+BUS-125DCB,CHG-125B,dc_supply,solid B charger feed from BUS-480B to CHG-125B and BUS-125DCB
+BUS-125DCB,INV-120B,ups,solid inverter path between DC bus and UPS bus
+BUS-480A,CB-480-TIE,power_tie,solid 480 V tie breaker path
+BUS-480A,CB-48A-03,power,solid 480A branch C-48A-03-P to load and local ground
+BUS-480A,CB-48A-04,power,solid 480A branch C-48A-04-P to load and local ground
+BUS-480A,CB-48A-05,power,solid 480A branch C-48A-05-P to load and local ground
+BUS-480A,CB-48A-06,power,solid 480A branch C-48A-06-P to load and local ground
+BUS-480A,CB-48A-08,power,solid 480A branch C-48A-08-P to load and local ground
+BUS-480A,CB-48A-09,power,solid 480A branch C-48A-09-P to load and local ground
+BUS-480A,PANEL-RPS-A,dc_supply,solid A charger feed visibly passes through PANEL-RPS-A into CHG-125A and BUS-125DCA
+BUS-480A,TR-480A,power,solid transformer downfeed from 4.16 kV to 480 V
+BUS-480B,CB-480-TIE,power_tie,solid 480 V tie breaker path
+BUS-480B,CB-48B-03,power,solid 480B branch C-48B-03-P to load and local ground
+BUS-480B,CB-48B-04,power,solid 480B branch C-48B-04-P to load and local ground
+BUS-480B,CB-48B-05,power,solid 480B branch C-48B-05-P to load and local ground
+BUS-480B,CB-48B-06,power,solid 480B branch C-48B-06-P to load and local ground
+BUS-480B,CB-48B-08,power,solid 480B branch C-48B-08-P to load and local ground
+BUS-480B,CHG-125B,dc_supply,solid B charger feed from BUS-480B to CHG-125B and BUS-125DCB
+BUS-480B,TR-480B,power,solid transformer downfeed from 4.16 kV to 480 V
+BUS-4A,CB-4A-01,power,solid 4A branch C-4A-01-P to load and local ground
+BUS-4A,CB-4A-02,power,solid 4A branch C-4A-02-P to load and local ground
+BUS-4A,CB-4A-07,power,solid 4A branch C-4A-07-P to load and local ground
+BUS-4A,CB-DG-A,power,solid diesel generator feeder to BUS-4A
+BUS-4A,CB-SST-A,power,solid source feeder to BUS-4A
+BUS-4A,CB-TIE-4KV,power_tie,solid 4 kV tie breaker path
+BUS-4A,CB-UAT-1,power,solid generator auxiliary feeder to BUS-4A
+BUS-4A,TR-480A,power,solid transformer downfeed from 4.16 kV to 480 V
+BUS-4B,CB-4B-01,power,solid 4B branch C-4B-01-P to load and local ground
+BUS-4B,CB-4B-02,power,solid 4B branch C-4B-02-P to load and local ground
+BUS-4B,CB-4B-07,power,solid 4B branch C-4B-07-P to load and local ground
+BUS-4B,CB-DG-B,power,solid diesel generator feeder to BUS-4B
+BUS-4B,CB-SST-B,power,solid source feeder to BUS-4B
+BUS-4B,CB-TIE-4KV,power_tie,solid 4 kV tie breaker path
+BUS-4B,TR-480B,power,solid transformer downfeed from 4.16 kV to 480 V
+BUS-UPS-A,INV-120A,ups,solid inverter path between DC bus and UPS bus
+BUS-UPS-B,INV-120B,ups,solid inverter path between DC bus and UPS bus
+CB-48A-03,DS-48A-03,power,solid 480A branch C-48A-03-P to load and local ground
+CB-48A-04,DS-48A-04,power,solid 480A branch C-48A-04-P to load and local ground
+CB-48A-05,DS-48A-05,power,solid 480A branch C-48A-05-P to load and local ground
+CB-48A-06,DS-48A-06,power,solid 480A branch C-48A-06-P to load and local ground
+CB-48A-08,DS-48A-08,power,solid 480A branch C-48A-08-P to load and local ground
+CB-48A-09,DS-48A-09,power,solid 480A branch C-48A-09-P to load and local ground
+CB-48B-03,DS-48B-03,power,solid 480B branch C-48B-03-P to load and local ground
+CB-48B-04,DS-48B-04,power,solid 480B branch C-48B-04-P to load and local ground
+CB-48B-05,DS-48B-05,power,solid 480B branch C-48B-05-P to load and local ground
+CB-48B-06,DS-48B-06,power,solid 480B branch C-48B-06-P to load and local ground
+CB-48B-08,DS-48B-08,power,solid 480B branch C-48B-08-P to load and local ground
+CB-4A-01,DS-4A-01,power,solid 4A branch C-4A-01-P to load and local ground
+CB-4A-02,DS-4A-02,power,solid 4A branch C-4A-02-P to load and local ground
+CB-4A-07,DS-4A-07,power,solid 4A branch C-4A-07-P to load and local ground
+CB-4B-01,DS-4B-01,power,solid 4B branch C-4B-01-P to load and local ground
+CB-4B-02,DS-4B-02,power,solid 4B branch C-4B-02-P to load and local ground
+CB-4B-07,DS-4B-07,power,solid 4B branch C-4B-07-P to load and local ground
+CB-DG-A,TR-DG-A,power,solid diesel generator feeder to BUS-4A
+CB-DG-B,TR-DG-B,power,solid diesel generator feeder to BUS-4B
+CB-SST-A,TR-SST-A,power,solid source feeder to BUS-4A
+CB-SST-B,TR-SST-B,power,solid source feeder to BUS-4B
+CB-UAT-1,TR-UAT-1,power,solid generator auxiliary feeder to BUS-4A
+CHG-125A,PANEL-RPS-A,dc_supply,solid A charger feed visibly passes through PANEL-RPS-A into CHG-125A and BUS-125DCA
+COMP-IA-1A,GND-A09,power,solid 480A branch C-48A-09-P to load and local ground
+COMP-IA-1A,TB-A09,power,solid 480A branch C-48A-09-P to load and local ground
+DG-1A,TR-DG-A,power,solid diesel generator feeder to BUS-4A
+DG-1B,TR-DG-B,power,solid diesel generator feeder to BUS-4B
+DS-48A-03,KON-A03,power,solid 480A branch C-48A-03-P to load and local ground
+DS-48A-04,FU-A04,power,solid 480A branch C-48A-04-P to load and local ground
+DS-48A-05,OL-A05,power,solid 480A branch C-48A-05-P to load and local ground
+DS-48A-06,KON-A06,power,solid 480A branch C-48A-06-P to load and local ground
+DS-48A-08,OL-A08,power,solid 480A branch C-48A-08-P to load and local ground
+DS-48A-09,KON-A09,power,solid 480A branch C-48A-09-P to load and local ground
+DS-48B-03,KON-B03,power,solid 480B branch C-48B-03-P to load and local ground
+DS-48B-04,FU-B04,power,solid 480B branch C-48B-04-P to load and local ground
+DS-48B-05,OL-B05,power,solid 480B branch C-48B-05-P to load and local ground
+DS-48B-06,KON-B06,power,solid 480B branch C-48B-06-P to load and local ground
+DS-48B-08,OL-B08,power,solid 480B branch C-48B-08-P to load and local ground
+DS-4A-01,FU-A01,power,solid 4A branch C-4A-01-P to load and local ground
+DS-4A-02,OL-A02,power,solid 4A branch C-4A-02-P to load and local ground
+DS-4A-07,FU-A07,power,solid 4A branch C-4A-07-P to load and local ground
+DS-4B-01,FU-B01,power,solid 4B branch C-4B-01-P to load and local ground
+DS-4B-02,OL-B02,power,solid 4B branch C-4B-02-P to load and local ground
+DS-4B-07,FU-B07,power,solid 4B branch C-4B-07-P to load and local ground
+FAN-CR-1A,GND-A04,power,solid 480A branch C-48A-04-P to load and local ground
+FAN-CR-1A,TB-A04,power,solid 480A branch C-48A-04-P to load and local ground
+FAN-CR-1B,GND-B04,power,solid 480B branch C-48B-04-P to load and local ground
+FAN-CR-1B,TB-B04,power,solid 480B branch C-48B-04-P to load and local ground
+FI-A01,TB-A01,signal_tap,short visible terminal-block tap to FI-A01
+FI-B01,TB-B01,signal_tap,short visible terminal-block tap to FI-B01
+FS-A03,TB-A03,signal_tap,short visible terminal-block tap to FS-A03
+FS-B03,TB-B03,signal_tap,short visible terminal-block tap to FS-B03
+FU-A01,TB-A01,power,solid 4A branch C-4A-01-P to load and local ground
+FU-A04,TB-A04,power,solid 480A branch C-48A-04-P to load and local ground
+FU-A07,TB-A07,power,solid 4A branch C-4A-07-P to load and local ground
+FU-B01,TB-B01,power,solid 4B branch C-4B-01-P to load and local ground
+FU-B04,TB-B04,power,solid 480B branch C-48B-04-P to load and local ground
+FU-B07,TB-B07,power,solid 4B branch C-4B-07-P to load and local ground
+GEN-TG1,TR-UAT-1,power,solid generator auxiliary feeder to BUS-4A
+GND-A01,PUMP-CS-1A,power,solid 4A branch C-4A-01-P to load and local ground
+GND-A02,PUMP-RHR-1A,power,solid 4A branch C-4A-02-P to load and local ground
+GND-A03,PUMP-SW-1A,power,solid 480A branch C-48A-03-P to load and local ground
+GND-A05,MOV-SI-101A,power,solid 480A branch C-48A-05-P to load and local ground
+GND-A06,RECT-AUX-1A,power,solid 480A branch C-48A-06-P to load and local ground
+GND-A07,PUMP-CW-1A,power,solid 4A branch C-4A-07-P to load and local ground
+GND-A08,HTR-PZR-A,power,solid 480A branch C-48A-08-P to load and local ground
+GND-B01,PUMP-CS-1B,power,solid 4B branch C-4B-01-P to load and local ground
+GND-B02,PUMP-RHR-1B,power,solid 4B branch C-4B-02-P to load and local ground
+GND-B03,PUMP-SW-1B,power,solid 480B branch C-48B-03-P to load and local ground
+GND-B05,MOV-SI-101B,power,solid 480B branch C-48B-05-P to load and local ground
+GND-B06,INV-AUX-1B,power,solid 480B branch C-48B-06-P to load and local ground
+GND-B07,PUMP-CW-1B,power,solid 4B branch C-4B-07-P to load and local ground
+GND-B08,HVAC-CHLR-1B,power,solid 480B branch C-48B-08-P to load and local ground
+GRID-1,TR-SST-A,power,solid source feeder to BUS-4A
+GRID-2,TR-SST-B,power,solid source feeder to BUS-4B
+HTR-PZR-A,TB-A08,power,solid 480A branch C-48A-08-P to load and local ground
+HVAC-CHLR-1B,TB-B08,power,solid 480B branch C-48B-08-P to load and local ground
+INV-AUX-1B,TB-B06,power,solid 480B branch C-48B-06-P to load and local ground
+KON-A03,TB-A03,power,solid 480A branch C-48A-03-P to load and local ground
+KON-A06,TB-A06,power,solid 480A branch C-48A-06-P to load and local ground
+KON-A09,TB-A09,power,solid 480A branch C-48A-09-P to load and local ground
+KON-B03,TB-B03,power,solid 480B branch C-48B-03-P to load and local ground
+KON-B06,TB-B06,power,solid 480B branch C-48B-06-P to load and local ground
+LT-B08,TB-B08,signal_tap,short visible terminal-block tap to LT-B08
+MOV-SI-101A,TB-A05,power,solid 480A branch C-48A-05-P to load and local ground
+MOV-SI-101B,TB-B05,power,solid 480B branch C-48B-05-P to load and local ground
+OL-A02,TB-A02,power,solid 4A branch C-4A-02-P to load and local ground
+OL-A05,TB-A05,power,solid 480A branch C-48A-05-P to load and local ground
+OL-A08,TB-A08,power,solid 480A branch C-48A-08-P to load and local ground
+OL-B02,TB-B02,power,solid 4B branch C-4B-02-P to load and local ground
+OL-B05,TB-B05,power,solid 480B branch C-48B-05-P to load and local ground
+OL-B08,TB-B08,power,solid 480B branch C-48B-08-P to load and local ground
+PI-A02,TB-A02,signal_tap,short visible terminal-block tap to PI-A02
+PI-B02,TB-B02,signal_tap,short visible terminal-block tap to PI-B02
+PS-A09,TB-A09,signal_tap,short visible terminal-block tap to PS-A09
+PT-A07,TB-A07,signal_tap,short visible terminal-block tap to PT-A07
+PT-B07,TB-B07,signal_tap,short visible terminal-block tap to PT-B07
+PUMP-CS-1A,TB-A01,power,solid 4A branch C-4A-01-P to load and local ground
+PUMP-CS-1B,TB-B01,power,solid 4B branch C-4B-01-P to load and local ground
+PUMP-CW-1A,TB-A07,power,solid 4A branch C-4A-07-P to load and local ground
+PUMP-CW-1B,TB-B07,power,solid 4B branch C-4B-07-P to load and local ground
+PUMP-RHR-1A,TB-A02,power,solid 4A branch C-4A-02-P to load and local ground
+PUMP-RHR-1B,TB-B02,power,solid 4B branch C-4B-02-P to load and local ground
+PUMP-SW-1A,TB-A03,power,solid 480A branch C-48A-03-P to load and local ground
+PUMP-SW-1B,TB-B03,power,solid 480B branch C-48B-03-P to load and local ground
+RECT-AUX-1A,TB-A06,power,solid 480A branch C-48A-06-P to load and local ground
+TB-A04,TS-A04,signal_tap,short visible terminal-block tap to TS-A04
+TB-A05,ZS-A05,signal_tap,short visible terminal-block tap to ZS-A05
+TB-A06,VM-A06,signal_tap,short visible terminal-block tap to VM-A06
+TB-A08,TT-A08,signal_tap,short visible terminal-block tap to TT-A08
+TB-B04,TS-B04,signal_tap,short visible terminal-block tap to TS-B04
+TB-B05,ZS-B05,signal_tap,short visible terminal-block tap to ZS-B05
+TB-B06,VM-B06,signal_tap,short visible terminal-block tap to VM-B06

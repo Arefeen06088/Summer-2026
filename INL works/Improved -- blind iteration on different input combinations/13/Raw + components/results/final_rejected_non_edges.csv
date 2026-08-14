@@ -1,0 +1,15 @@
+node_a,node_b,evidence
+BUS-4A,BUS-4B,Not directly joined; visual path goes through named tie breaker CB-TIE-AB.
+BUS-4C,BUS-4D,Not directly joined; visual path goes through named tie breaker CB-TIE-CD.
+MCC-A1,MCC-A2,Separate MCC bus sections with a visible gap; both are fed from LC-480A.
+MCC-B1,MCC-B2,Separate MCC bus sections with a visible gap; both are fed from LC-480B.
+MCC-C1,MCC-C2,Separate MCC bus sections with a visible gap; both are fed from LC-480C.
+MCC-D1,MCC-D2,Separate MCC bus sections with a visible gap; both are fed from LC-480D.
+CB-A01,CB-A02,"Both hang from MCC-A1; same-bus membership is represented through MCC-A1, not breaker-to-breaker edges."
+PMP-SI-A01,PMP-RHR-A02,"Both are loads on MCC-A1 branches, but no direct line joins the loads."
+DC-BUS-A,DC-BUS-B,No direct DC bus tie is shown between train A and train B DC buses in the component-only sheet.
+DC-BUS-C,DC-BUS-D,No direct DC bus tie is shown between train C and train D DC buses in the component-only sheet.
+ESFAS,RLY-*,"The L.O. permissive from ESFAS notes are textual control-source notes, not individually traceable named endpoint wires."
+GND-A,GND-B,Ground labels are not made a clique; only visually continuous grounding-conductor adjacencies are asserted.
+LC-480A,LC-480B,No 480 V load-center tie is shown; each LC is fed from its train transformer path.
+LC-480C,LC-480D,No 480 V load-center tie is shown; each LC is fed from its train transformer path.

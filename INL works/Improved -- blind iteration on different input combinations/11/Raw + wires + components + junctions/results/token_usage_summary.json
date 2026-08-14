@@ -1,0 +1,13 @@
+{
+  "document": 11,
+  "iteration": 1,
+  "total_tokens_low": 56585,
+  "total_tokens_expected": 87450,
+  "total_tokens_high": 125566,
+  "responses_input_token_counting_endpoint": "POST /v1/responses/input_tokens",
+  "endpoint_called": false,
+  "endpoint_status": "Not called because OPENAI_API_KEY is absent.",
+  "fallback_method": "Text: local fixed prompt-size estimates. Images: high-detail 512px tile estimate, 85 base + 170 per tile after OpenAI-style resizing.",
+  "usage_object_status": "Actual usage objects are not exposed by this Codex multi_agent_v1/tool runtime.",
+  "official_reference": "https://platform.openai.com/docs/api-reference/responses/input_tokens"
+}

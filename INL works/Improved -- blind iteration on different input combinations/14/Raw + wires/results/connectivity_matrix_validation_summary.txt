@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 14
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\14\connectivity_matrix_even_bus_spacing.csv
+GT normalized nodes: 178; GT normalized edges: 190
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from connectivity_matrix_round_01_jennifer_precision.csv with Precision=0.961290, Recall=0.784211, F1=0.863768
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=149, FP=6, FN=41, Precision=0.961290, Recall=0.784211, F1=0.863768
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+Extra/non-GT nodes most responsible for FP edges: PUMP-CW-1A (2 FP edges); PUMP-CW-1B (2 FP edges).
+Missing GT nodes examples: PUMP-CCW-1A; PUMP-CCW-1B.
+Close-but-not-exact name examples: PUMP-CW-1A -> PUMP-CCW-1A (0.95); PUMP-CW-1B -> PUMP-CCW-1B (0.95).
+False-positive edge examples among GT-known nodes: BUS-480A -- PANEL-RPS-A; CHG-125A -- PANEL-RPS-A.
+False-negative edge examples among GT-known nodes: BUS-480A -- CHG-125A; BUS-UPS-A -- PANEL-MCR; CB-48A-03 -- RELAY-KA03; CB-48A-04 -- RELAY-KA04; CB-48A-05 -- RELAY-KA05; CB-48A-06 -- RELAY-KA06; CB-48A-08 -- RELAY-KA08; CB-48A-09 -- RELAY-KA09.
+False-positive examples involving extra/non-GT nodes: GND-A07 -- PUMP-CW-1A; GND-B07 -- PUMP-CW-1B; PUMP-CW-1A -- TB-A07; PUMP-CW-1B -- TB-B07.
+False-negative examples involving missing/differently named nodes: GND-A07 -- PUMP-CCW-1A; GND-B07 -- PUMP-CCW-1B; PUMP-CCW-1A -- TB-A07; PUMP-CCW-1B -- TB-B07.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (PUMP-CW-1A; PUMP-CW-1B), the final-row metrics would be TP=149, FP=2, FN=41, Precision=0.986755, Recall=0.784211, F1=0.873900.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=149, FP=2, FN=41, Precision=0.986755, Recall=0.784211, F1=0.873900.

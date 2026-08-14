@@ -1,0 +1,28 @@
+Connectivity matrix validation summary - Document 3 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\3\synthetic_npp_100_component_connectivity_matrix.csv
+GT after normalization: 100 undirected edges across 100 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token estimate: low=61990, expected=78390, high=103170.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=100, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+- Main reason score is below perfect: perfect exact normalized match.
+- Extracted components: 100; extra/non-GT names: 0; missing GT component names: 0.
+
+Counterfactual performance insights:
+- No counterfactual repair is needed for the final row because it is a perfect exact match.
+
+Best evaluated row: Diego -- Round 1 with F1=1.000000.
+
+Round-specific notes:
+- Diego -- Round 1: TP=100, FP=0, FN=0, F1=1.000000; extra nodes=0, missing GT nodes=0.
+- Jennifer -- Round 2: TP=100, FP=0, FN=0, F1=1.000000; extra nodes=0, missing GT nodes=0.
+- Diego -- Round 3: TP=100, FP=0, FN=0, F1=1.000000; extra nodes=0, missing GT nodes=0.
+- Jennifer -- Round 4: TP=100, FP=0, FN=0, F1=1.000000; extra nodes=0, missing GT nodes=0.
+- Final connectivity -- Final: TP=100, FP=0, FN=0, F1=1.000000; extra nodes=0, missing GT nodes=0.

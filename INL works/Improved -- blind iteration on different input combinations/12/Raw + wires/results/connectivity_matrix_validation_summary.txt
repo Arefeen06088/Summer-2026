@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 12
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\12\synthetic_npp_connectivity_matrix_rps_rerouted.csv
+GT normalized nodes: 160; GT normalized edges: 180
+Matrices evaluated: 6
+Best row: Diego -- Round 1 from connectivity_matrix_round_01_diego_high_recall.csv with Precision=0.932927, Recall=0.850000, F1=0.889535
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=145, FP=9, FN=35, Precision=0.941558, Recall=0.805556, F1=0.868263
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+Extra/non-GT nodes most responsible for FP edges: PUMP-RHR-A (1 FP edges); PUMP-RHR-B (1 FP edges).
+Missing GT nodes examples: PUMP-RHR-A1; PUMP-RHR-B1.
+Close-but-not-exact name examples: PUMP-RHR-A -> PUMP-RHR-A1 (0.95); PUMP-RHR-B -> PUMP-RHR-B1 (0.95).
+False-positive edge examples among GT-known nodes: ANN-480A -- RELAY-27A; ANN-480B -- RELAY-27B; BUS-480-B -- CB-DC-1B; CB-DC-1A -- MCC-2A; PNL-ESFAS-A -- PNL-RPS-A; PNL-ESFAS-A -- SEQ-REC-1; PNL-ESFAS-B -- PNL-RPS-B.
+False-negative edge examples among GT-known nodes: ANN-480A -- PNL-RPS-A; ANN-480B -- SEQ-REC-1; BUS-120VAC-ESF -- PNL-ESFAS-A; BUS-120VAC-ESF -- PNL-ESFAS-B; BUS-480-C -- CB-DC-1A; BUS-480-D -- CB-DC-1B; CB-103 -- RELAY-86A; CB-111 -- RELAY-27A.
+False-positive examples involving extra/non-GT nodes: FU-F001 -- PUMP-RHR-A; MS-F016 -- PUMP-RHR-B.
+False-negative examples involving missing/differently named nodes: FU-F001 -- PUMP-RHR-A1; MS-F016 -- PUMP-RHR-B1.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (PUMP-RHR-A; PUMP-RHR-B), the final-row metrics would be TP=145, FP=7, FN=35, Precision=0.953947, Recall=0.805556, F1=0.873494.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=145, FP=7, FN=35, Precision=0.953947, Recall=0.805556, F1=0.873494.

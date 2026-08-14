@@ -1,0 +1,70 @@
+Connectivity matrix validation summary - Document 6
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\6\synthetic_npp_connectivity_matrix_variant3_redo_clean_v7.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_connectivity_matrix.csv): TP=93, FP=27, FN=38, Precision=0.775000, Recall=0.709924, F1=0.741036
+- Jennifer -- Round 1 (round_01_jennifer_connectivity_matrix.csv): TP=85, FP=20, FN=46, Precision=0.809524, Recall=0.648855, F1=0.720339
+- Diego -- Round 2 (round_02_diego_connectivity_matrix.csv): TP=85, FP=20, FN=46, Precision=0.809524, Recall=0.648855, F1=0.720339
+- Jennifer -- Round 2 (round_02_jennifer_connectivity_matrix.csv): TP=85, FP=20, FN=46, Precision=0.809524, Recall=0.648855, F1=0.720339
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=85, FP=20, FN=46, Precision=0.809524, Recall=0.648855, F1=0.720339
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- AC/DC CHGR-A -- BAT-125A
+- AC/DC CHGR-A -- LC-480A
+- AC/DC CHGR-A -- PNL-DC-A
+- AC/DC CHGR-B -- BAT-125B
+- AC/DC CHGR-B -- LC-480B
+- AC/DC CHGR-B -- PNL-DC-B
+- AC/DC REC-A -- DC/AC INV-A
+- AC/DC REC-A -- GND-A
+- AC/DC REC-A -- PNL-DC-A
+- AC/DC REC-B -- DC/AC INV-B
+
+False-negative edge examples:
+- ATS-A -- RELAY-UV-A
+- ATS-B -- RELAY-UV-B
+- BAT-125A -- CHGR-A
+- BAT-125B -- CHGR-B
+- CB-DG-A -- EDG-201A
+- CB-DG-A -- RELAY-DG-A
+- CB-DG-B -- EDG-201B
+- CB-DG-B -- RELAY-DG-B
+- CHGR-A -- LC-480A
+- CHGR-A -- PNL-DC-A
+
+Extra/non-GT nodes causing performance drops:
+- AC/DC CHGR-A: 3 incident false-positive edge(s)
+- AC/DC CHGR-B: 3 incident false-positive edge(s)
+- AC/DC REC-A: 3 incident false-positive edge(s)
+- AC/DC REC-B: 3 incident false-positive edge(s)
+- DC/AC INV-A: 2 incident false-positive edge(s)
+- DC/AC INV-B: 2 incident false-positive edge(s)
+- DG EDG-201A: 1 incident false-positive edge(s)
+- DG EDG-201B: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (AC/DC CHGR-A, AC/DC CHGR-B, AC/DC REC-A, AC/DC REC-B, DC/AC INV-A), final metrics would be TP=85, FP=7, FN=46, Precision=0.923913, Recall=0.648855, F1=0.762332.
+- If all 8 non-GT nodes were omitted, metrics would be TP=85, FP=4, FN=46, Precision=0.955056, Recall=0.648855, F1=0.772727.
+
+Missing GT node examples:
+- CHGR-A: 3 missed incident GT edge(s)
+- CHGR-B: 3 missed incident GT edge(s)
+- CT-EDG-A: 3 missed incident GT edge(s)
+- CT-EDG-B: 3 missed incident GT edge(s)
+- EDG-201A: 3 missed incident GT edge(s)
+- EDG-201B: 3 missed incident GT edge(s)
+- INV-A: 2 missed incident GT edge(s)
+- INV-B: 2 missed incident GT edge(s)
+- REC-A: 2 missed incident GT edge(s)
+- REC-B: 2 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted DG EDG-201A vs GT EDG-201A (similarity 0.84)
+- Extracted DG EDG-201B vs GT EDG-201B (similarity 0.84)

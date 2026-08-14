@@ -1,0 +1,196 @@
+node_a,node_b,kind,evidence,confidence
+GRID-230KV,SWYD-230,ac_power_feeder,Jennifer R2 replacement: collapse title/feed descriptor into the drawn direct incoming source-to-switchyard connection.,high
+SWYD-230,DS-101,ac_power_feeder,crop_raw_common_source_230kv_sut.png: conductor leaves SWYD-230 and enters DS-101.,high
+DS-101,CB-101,ac_power_feeder,crop_raw_common_source_230kv_sut.png: DS-101 output continues right to CB-101.,high
+CB-101,TR-SUT-1A,ac_power_feeder,crop_raw_common_source_230kv_sut.png: CB-101 upper branch enters TR-SUT-1A primary.,high
+CB-101,TR-SUT-1B,ac_power_feeder,crop_raw_common_source_230kv_sut.png: CB-101 lower branch enters TR-SUT-1B primary.,high
+TR-SUT-1A,BUS-4A,ac_power_feeder,common/top A crops: TR-SUT-1A secondary drops to BUS-4A near T4 with junction dots.,high
+TR-SUT-1B,BUS-4B,ac_power_feeder,common/top B crops: TR-SUT-1B secondary continues to BUS-4B incoming side.,medium
+BUS-4A,CB-DGA,ac_power_feeder,crop_raw_top_a_power.png: EDG feeder breaker CB-DGA taps BUS-4A.,high
+CB-DGA,EDG-A,ac_power_feeder,crop_raw_top_a_power.png: CB-DGA is in series with EDG-A.,high
+BUS-4B,CB-DGB,ac_power_feeder,crop_raw_top_b_power.png: EDG feeder breaker CB-DGB taps BUS-4B.,high
+CB-DGB,EDG-B,ac_power_feeder,crop_raw_top_b_power.png: CB-DGB is in series with EDG-B.,high
+BUS-4A,CB-TIE-AB,ac_power_feeder,top A/B crops: CB-TIE-AB is drawn on the horizontal tie from BUS-4A toward BUS-4B.,high
+CB-TIE-AB,BUS-4B,ac_power_feeder,top A/B crops: right side of CB-TIE-AB continues into BUS-4B side.,high
+GEN-G1,CB-201,ac_power_feeder,crop_raw_middle_source_tie_cd.png: generator output conductor enters CB-201.,high
+CB-201,UNIT-GENERATOR-AUX-FEED,ac_power_feeder,crop_raw_middle_source_tie_cd.png: CB-201 output is on the unit auxiliary feed conductor.,medium
+UNIT-GENERATOR-AUX-FEED,TR-UAT-1A,ac_power_feeder,crop_raw_middle_source_tie_cd.png: unit auxiliary feed connects into TR-UAT-1A path.,high
+UNIT-GENERATOR-AUX-FEED,TR-UAT-1B,ac_power_feeder,crop_raw_middle_source_tie_cd.png: long auxiliary feed continuation reaches TR-UAT-1B path.,medium
+TR-UAT-1A,BUS-4C,ac_power_feeder,crop_raw_middle_source_tie_cd.png: TR-UAT-1A secondary drops to BUS-4C around T4.,high
+TR-UAT-1B,BUS-4D,ac_power_feeder,crop_raw_middle_source_tie_cd.png: TR-UAT-1B secondary drops to BUS-4D around T4.,high
+BUS-4C,CB-DGC,ac_power_feeder,crop_raw_middle_source_tie_cd.png: EDG feeder breaker CB-DGC taps BUS-4C.,high
+CB-DGC,EDG-C,ac_power_feeder,crop_raw_middle_source_tie_cd.png: CB-DGC is in series with EDG-C.,high
+BUS-4D,CB-DGD,ac_power_feeder,crop_raw_middle_source_tie_cd.png: EDG feeder breaker CB-DGD taps BUS-4D.,high
+CB-DGD,EDG-D,ac_power_feeder,crop_raw_middle_source_tie_cd.png: CB-DGD is in series with EDG-D.,high
+BUS-4C,CB-TIE-CD,ac_power_feeder,middle/bottom C-D crops: CB-TIE-CD is drawn on the tie from BUS-4C toward BUS-4D.,high
+CB-TIE-CD,BUS-4D,ac_power_feeder,middle/bottom C-D crops: right side of CB-TIE-CD continues into BUS-4D side.,high
+BUS-4A,CB-4A-48,ac_power_feeder,crop_raw_top_a_power.png: BUS-4A tap drops through CB-4A-48.,high
+CB-4A-48,TR-480A,ac_power_feeder,crop_raw_top_a_power.png: CB-4A-48 lower terminal enters TR-480A.,high
+TR-480A,CB-48A,ac_power_feeder,crop_raw_top_a_power.png: TR-480A secondary is wired to CB-48A.,high
+CB-48A,LC-480A,ac_power_feeder,crop_raw_top_a_power.png: CB-48A output drops to the LC-480A 480 V bus.,high
+LC-480A,PP-A1,ac_power_feeder,crop_raw_train_a_mcc_dc.png: left vertical feeder from LC-480A enters PP-A1.,high
+LC-480A,MCC-A1,ac_power_feeder,crop_raw_train_a_mcc_dc.png: LC-480A vertical feeder supplies MCC-A1 bus.,high
+LC-480A,MCC-A2,ac_power_feeder,crop_raw_train_a_mcc_dc.png: LC-480A vertical feeder supplies MCC-A2 bus.,high
+LC-480A,JB-A1,instrument_or_io,crop_raw_train_a_mcc_dc.png: vertical drop from right side of LC-480A enters JB-A1 / local I/O area.,medium
+LC-480A,LOCAL-IO-A,instrument_or_io,crop_raw_top_a_power.png: LOCAL I/O terminal symbol sits at the right end of LC-480A.,medium
+BAT-125A,CHG-125A,dc_power_feeder,crop_raw_train_a_mcc_dc.png: BAT-125A is wired vertically into CHG-125A.,high
+CHG-125A,DC-BUS-A,dc_power_feeder,crop_raw_train_a_mcc_dc.png: CHG-125A lower terminal connects to DC-BUS-A.,high
+DC-BUS-A,INV-A,dc_power_feeder,crop_raw_train_a_mcc_dc.png: DC-BUS-A drops into INV-A.,high
+INV-A,UPS-A,ac_or_dc_power_feeder,crop_raw_train_a_mcc_dc.png: INV-A lower path continues into UPS-A.,medium
+UPS-A,PP-A1,control_or_aux_power_loop,crop_raw_train_a_mcc_dc.png: thin rectangular loop visually connects UPS-A side path back toward PP-A1.,low
+PP-A1,GND-A,grounding,crop_raw_train_a_mcc_dc.png: PP-A1 lower/enclosure path visually continues to train A ground area.,low
+MCC-A1,CB-A01,ac_power_feeder,crop_raw_train_a_mcc_dc.png: vertical tap from MCC-A1 bus feeds CB-A01.,high
+CB-A01,DS-A01,ac_power_feeder,crop_raw_train_a_mcc_dc.png: CB-A01 output continues to DS-A01.,high
+DS-A01,PMP-SI-A01,ac_power_feeder,crop_raw_train_a_mcc_dc.png: DS-A01 lower terminal feeds PMP-SI-A01.,high
+MCC-A1,CB-A02,ac_power_feeder,crop_raw_train_a_mcc_dc.png: vertical tap from MCC-A1 bus feeds CB-A02.,high
+CB-A02,PMP-RHR-A02,ac_power_feeder,crop_raw_train_a_mcc_dc.png: CB-A02 output continues directly to PMP-RHR-A02.,high
+MCC-A1,CB-A03,ac_power_feeder,crop_raw_train_a_mcc_dc.png: vertical tap from MCC-A1 bus feeds CB-A03.,high
+CB-A03,DS-A03,ac_power_feeder,crop_raw_train_a_mcc_dc.png: CB-A03 output continues to DS-A03.,high
+DS-A03,MTR-CCW-A03,ac_power_feeder,crop_raw_train_a_mcc_dc.png: DS-A03 lower terminal feeds MTR-CCW-A03.,high
+MCC-A1,CB-A04,ac_power_feeder,crop_raw_train_a_mcc_dc.png: vertical tap from MCC-A1 bus feeds CB-A04.,high
+CB-A04,FAN-VC-A04,ac_power_feeder,crop_raw_train_a_mcc_dc.png: CB-A04 output continues directly to FAN-VC-A04.,high
+MCC-A1,CB-A05,ac_power_feeder,crop_raw_train_a_mcc_dc.png: vertical tap from MCC-A1 bus feeds CB-A05.,high
+CB-A05,MOV-RCS-A05,ac_power_feeder,crop_raw_train_a_mcc_dc.png: CB-A05 output continues directly to MOV-RCS-A05.,high
+MCC-A2,CB-A06,ac_power_feeder,crop_raw_train_a_mcc_dc.png: vertical tap from MCC-A2 bus feeds CB-A06.,high
+CB-A06,DS-A06,ac_power_feeder,crop_raw_train_a_mcc_dc.png: CB-A06 output continues to DS-A06.,high
+DS-A06,PMP-CHG-A06,ac_power_feeder,crop_raw_train_a_mcc_dc.png: DS-A06 lower terminal feeds PMP-CHG-A06.,high
+MCC-A2,CB-A07,ac_power_feeder,crop_raw_train_a_mcc_dc.png: vertical tap from MCC-A2 bus feeds CB-A07.,high
+CB-A07,HTR-CAB-A07,ac_power_feeder,crop_raw_train_a_mcc_dc.png: CB-A07 output continues directly to HTR-CAB-A07.,high
+MCC-A2,CB-A08,ac_power_feeder,crop_raw_train_a_mcc_dc.png: vertical tap from MCC-A2 bus feeds CB-A08.,high
+CB-A08,INST-RK-A08,ac_power_feeder,crop_raw_train_a_mcc_dc.png: CB-A08 output continues directly to INST-RK-A08.,high
+MCC-A2,CB-A09,ac_power_feeder,crop_raw_train_a_mcc_dc.png: vertical tap from MCC-A2 bus feeds CB-A09.,high
+CB-A09,VLV-HPI-A09,ac_power_feeder,crop_raw_train_a_mcc_dc.png: CB-A09 output continues directly to VLV-HPI-A09.,high
+MCC-A2,CB-A10,ac_power_feeder,crop_raw_train_a_mcc_dc.png: vertical tap from MCC-A2 bus feeds CB-A10.,high
+CB-A10,PNL-ESF-A10,ac_power_feeder,crop_raw_train_a_mcc_dc.png: CB-A10 output continues directly to PNL-ESF-A10.,high
+RLY-KA01,CB-A01,control_trip,crop_raw_train_a_mcc_dc.png: dashed/vertical permissive line associates RLY-KA01 with CB-A01.,medium
+RLY-KA02,CB-A02,control_trip,crop_raw_train_a_mcc_dc.png: dashed/vertical permissive line associates RLY-KA02 with CB-A02.,medium
+RLY-KA05,CB-A05,control_trip,crop_raw_train_a_mcc_dc.png: dashed/vertical permissive line associates RLY-KA05 with CB-A05.,medium
+RLY-KA07,CB-A07,control_trip,crop_raw_train_a_mcc_dc.png: dashed/vertical permissive line associates RLY-KA07 with CB-A07.,medium
+BUS-4B,CB-4B-48,ac_power_feeder,crop_raw_top_b_power.png: BUS-4B tap drops through CB-4B-48.,high
+CB-4B-48,TR-480B,ac_power_feeder,crop_raw_top_b_power.png: CB-4B-48 lower terminal enters TR-480B.,high
+TR-480B,CB-48B,ac_power_feeder,crop_raw_top_b_power.png: TR-480B secondary is wired to CB-48B.,high
+CB-48B,LC-480B,ac_power_feeder,crop_raw_top_b_power.png: CB-48B output drops to the LC-480B 480 V bus.,high
+LC-480B,PP-B1,ac_power_feeder,crop_raw_train_b_mcc_dc.png: left vertical feeder from LC-480B enters PP-B1.,high
+LC-480B,MCC-B1,ac_power_feeder,crop_raw_train_b_mcc_dc.png: LC-480B vertical feeder supplies MCC-B1 bus.,high
+LC-480B,MCC-B2,ac_power_feeder,crop_raw_train_b_mcc_dc.png: LC-480B vertical feeder supplies MCC-B2 bus.,high
+LC-480B,JB-B1,instrument_or_io,crop_raw_train_b_mcc_dc.png: vertical drop from right side of LC-480B enters JB-B1 / local I/O area.,medium
+LC-480B,LOCAL-IO-B,instrument_or_io,crop_raw_top_b_power.png: LOCAL I/O terminal symbol sits at the right end of LC-480B.,medium
+BAT-125B,CHG-125B,dc_power_feeder,crop_raw_train_b_mcc_dc.png: BAT-125B is wired vertically into CHG-125B.,high
+CHG-125B,DC-BUS-B,dc_power_feeder,crop_raw_train_b_mcc_dc.png: CHG-125B lower terminal connects to DC-BUS-B.,high
+DC-BUS-B,INV-B,dc_power_feeder,crop_raw_train_b_mcc_dc.png: DC-BUS-B drops into INV-B.,high
+INV-B,UPS-B,ac_or_dc_power_feeder,crop_raw_train_b_mcc_dc.png: INV-B lower path continues into UPS-B.,medium
+UPS-B,PP-B1,control_or_aux_power_loop,crop_raw_train_b_mcc_dc.png: thin rectangular loop visually connects UPS-B side path back toward PP-B1.,low
+PP-B1,GND-B,grounding,crop_raw_train_b_mcc_dc.png: PP-B1 lower/enclosure path visually continues to train B ground area.,low
+MCC-B1,CB-B01,ac_power_feeder,crop_raw_train_b_mcc_dc.png: vertical tap from MCC-B1 bus feeds CB-B01.,high
+CB-B01,PMP-SI-B01,ac_power_feeder,crop_raw_train_b_mcc_dc.png: CB-B01 output continues directly to PMP-SI-B01.,high
+MCC-B1,CB-B02,ac_power_feeder,crop_raw_train_b_mcc_dc.png: vertical tap from MCC-B1 bus feeds CB-B02.,high
+CB-B02,DS-B02,ac_power_feeder,crop_raw_train_b_mcc_dc.png: CB-B02 output continues to DS-B02.,high
+DS-B02,PMP-RHR-B02,ac_power_feeder,crop_raw_train_b_mcc_dc.png: DS-B02 lower terminal feeds PMP-RHR-B02.,high
+MCC-B1,CB-B03,ac_power_feeder,crop_raw_train_b_mcc_dc.png: vertical tap from MCC-B1 bus feeds CB-B03.,high
+CB-B03,MTR-CCW-B03,ac_power_feeder,crop_raw_train_b_mcc_dc.png: CB-B03 output continues directly to MTR-CCW-B03.,high
+MCC-B1,CB-B04,ac_power_feeder,crop_raw_train_b_mcc_dc.png: vertical tap from MCC-B1 bus feeds CB-B04.,high
+CB-B04,FAN-VC-B04,ac_power_feeder,crop_raw_train_b_mcc_dc.png: CB-B04 output continues directly to FAN-VC-B04.,high
+MCC-B1,CB-B05,ac_power_feeder,crop_raw_train_b_mcc_dc.png: vertical tap from MCC-B1 bus feeds CB-B05.,high
+CB-B05,DS-B05,ac_power_feeder,crop_raw_train_b_mcc_dc.png: CB-B05 output continues to DS-B05.,high
+DS-B05,MOV-RCS-B05,ac_power_feeder,crop_raw_train_b_mcc_dc.png: DS-B05 lower terminal feeds MOV-RCS-B05.,high
+MCC-B2,CB-B06,ac_power_feeder,crop_raw_train_b_mcc_dc.png: vertical tap from MCC-B2 bus feeds CB-B06.,high
+CB-B06,PMP-CHG-B06,ac_power_feeder,crop_raw_train_b_mcc_dc.png: CB-B06 output continues directly to PMP-CHG-B06.,high
+MCC-B2,CB-B07,ac_power_feeder,crop_raw_train_b_mcc_dc.png: vertical tap from MCC-B2 bus feeds CB-B07.,high
+CB-B07,HTR-CAB-B07,ac_power_feeder,crop_raw_train_b_mcc_dc.png: CB-B07 output continues directly to HTR-CAB-B07.,high
+MCC-B2,CB-B08,ac_power_feeder,crop_raw_train_b_mcc_dc.png: vertical tap from MCC-B2 bus feeds CB-B08.,high
+CB-B08,DS-B08,ac_power_feeder,crop_raw_train_b_mcc_dc.png: CB-B08 output continues to DS-B08.,high
+DS-B08,INST-RK-B08,ac_power_feeder,crop_raw_train_b_mcc_dc.png: DS-B08 lower terminal feeds INST-RK-B08.,high
+MCC-B2,CB-B09,ac_power_feeder,crop_raw_train_b_mcc_dc.png: vertical tap from MCC-B2 bus feeds CB-B09.,high
+CB-B09,VLV-HPI-B09,ac_power_feeder,crop_raw_train_b_mcc_dc.png: CB-B09 output continues directly to VLV-HPI-B09.,high
+MCC-B2,CB-B10,ac_power_feeder,crop_raw_train_b_mcc_dc.png: vertical tap from MCC-B2 bus feeds CB-B10.,high
+CB-B10,PNL-ESF-B10,ac_power_feeder,crop_raw_train_b_mcc_dc.png: CB-B10 output continues directly to PNL-ESF-B10.,high
+RLY-KB02,CB-B02,control_trip,crop_raw_train_b_mcc_dc.png: dashed/vertical permissive line associates RLY-KB02 with CB-B02.,medium
+RLY-KB04,CB-B04,control_trip,crop_raw_train_b_mcc_dc.png: dashed/vertical permissive line associates RLY-KB04 with CB-B04.,medium
+RLY-KB06,CB-B06,control_trip,crop_raw_train_b_mcc_dc.png: dashed/vertical permissive line associates RLY-KB06 with CB-B06.,medium
+BUS-4C,CB-4C-48,ac_power_feeder,crop_raw_bottom_c_power.png: BUS-4C tap drops through CB-4C-48.,high
+CB-4C-48,TR-480C,ac_power_feeder,crop_raw_bottom_c_power.png: CB-4C-48 lower terminal enters TR-480C.,high
+TR-480C,CB-48C,ac_power_feeder,crop_raw_bottom_c_power.png: TR-480C secondary is wired to CB-48C.,high
+CB-48C,LC-480C,ac_power_feeder,crop_raw_bottom_c_power.png: CB-48C output drops to the LC-480C 480 V bus.,high
+LC-480C,PP-C1,ac_power_feeder,crop_raw_train_c_mcc_dc.png: left vertical feeder from LC-480C enters PP-C1.,high
+LC-480C,MCC-C1,ac_power_feeder,crop_raw_train_c_mcc_dc.png: LC-480C vertical feeder supplies MCC-C1 bus.,high
+LC-480C,MCC-C2,ac_power_feeder,crop_raw_train_c_mcc_dc.png: LC-480C vertical feeder supplies MCC-C2 bus.,high
+LC-480C,JB-C1,instrument_or_io,crop_raw_train_c_mcc_dc.png: vertical drop from right side of LC-480C enters JB-C1 / local I/O area.,medium
+LC-480C,LOCAL-IO-C,instrument_or_io,crop_raw_bottom_c_power.png: LOCAL I/O terminal symbol sits at the right end of LC-480C.,medium
+BAT-125C,CHG-125C,dc_power_feeder,crop_raw_train_c_mcc_dc.png: BAT-125C is wired vertically into CHG-125C.,high
+CHG-125C,DC-BUS-C,dc_power_feeder,crop_raw_train_c_mcc_dc.png: CHG-125C lower terminal connects to DC-BUS-C.,high
+DC-BUS-C,INV-C,dc_power_feeder,crop_raw_train_c_mcc_dc.png: DC-BUS-C drops into INV-C.,high
+INV-C,UPS-C,ac_or_dc_power_feeder,crop_raw_train_c_mcc_dc.png: INV-C lower path continues into UPS-C.,medium
+UPS-C,PP-C1,control_or_aux_power_loop,crop_raw_train_c_mcc_dc.png: thin rectangular loop visually connects UPS-C side path back toward PP-C1.,low
+PP-C1,GND-C,grounding,crop_raw_train_c_mcc_dc.png: PP-C1 lower/enclosure path visually continues to train C ground area.,low
+MCC-C1,CB-C01,ac_power_feeder,crop_raw_train_c_mcc_dc.png: vertical tap from MCC-C1 bus feeds CB-C01.,high
+CB-C01,DS-C01,ac_power_feeder,crop_raw_train_c_mcc_dc.png: CB-C01 output continues to DS-C01.,high
+DS-C01,PMP-SI-C01,ac_power_feeder,crop_raw_train_c_mcc_dc.png: DS-C01 lower terminal feeds PMP-SI-C01.,high
+MCC-C1,CB-C02,ac_power_feeder,crop_raw_train_c_mcc_dc.png: vertical tap from MCC-C1 bus feeds CB-C02.,high
+CB-C02,PMP-RHR-C02,ac_power_feeder,crop_raw_train_c_mcc_dc.png: CB-C02 output continues directly to PMP-RHR-C02.,high
+MCC-C1,CB-C03,ac_power_feeder,crop_raw_train_c_mcc_dc.png: vertical tap from MCC-C1 bus feeds CB-C03.,high
+CB-C03,MTR-CCW-C03,ac_power_feeder,crop_raw_train_c_mcc_dc.png: CB-C03 output continues directly to MTR-CCW-C03.,high
+MCC-C1,CB-C04,ac_power_feeder,crop_raw_train_c_mcc_dc.png: vertical tap from MCC-C1 bus feeds CB-C04.,high
+CB-C04,DS-C04,ac_power_feeder,crop_raw_train_c_mcc_dc.png: CB-C04 output continues to DS-C04.,high
+DS-C04,FAN-VC-C04,ac_power_feeder,crop_raw_train_c_mcc_dc.png: DS-C04 lower terminal feeds FAN-VC-C04.,high
+MCC-C1,CB-C05,ac_power_feeder,crop_raw_train_c_mcc_dc.png: vertical tap from MCC-C1 bus feeds CB-C05.,high
+CB-C05,MOV-RCS-C05,ac_power_feeder,crop_raw_train_c_mcc_dc.png: CB-C05 output continues directly to MOV-RCS-C05.,high
+MCC-C2,CB-C06,ac_power_feeder,crop_raw_train_c_mcc_dc.png: vertical tap from MCC-C2 bus feeds CB-C06.,high
+CB-C06,PMP-CHG-C06,ac_power_feeder,crop_raw_train_c_mcc_dc.png: CB-C06 output continues directly to PMP-CHG-C06.,high
+MCC-C2,CB-C07,ac_power_feeder,crop_raw_train_c_mcc_dc.png: vertical tap from MCC-C2 bus feeds CB-C07.,high
+CB-C07,DS-C07,ac_power_feeder,crop_raw_train_c_mcc_dc.png: CB-C07 output continues to DS-C07.,high
+DS-C07,HTR-CAB-C07,ac_power_feeder,crop_raw_train_c_mcc_dc.png: DS-C07 lower terminal feeds HTR-CAB-C07.,high
+MCC-C2,CB-C08,ac_power_feeder,crop_raw_train_c_mcc_dc.png: vertical tap from MCC-C2 bus feeds CB-C08.,high
+CB-C08,INST-RK-C08,ac_power_feeder,crop_raw_train_c_mcc_dc.png: CB-C08 output continues directly to INST-RK-C08.,high
+MCC-C2,CB-C09,ac_power_feeder,crop_raw_train_c_mcc_dc.png: vertical tap from MCC-C2 bus feeds CB-C09.,high
+CB-C09,VLV-HPI-C09,ac_power_feeder,crop_raw_train_c_mcc_dc.png: CB-C09 output continues directly to VLV-HPI-C09.,high
+MCC-C2,CB-C10,ac_power_feeder,crop_raw_train_c_mcc_dc.png: vertical tap from MCC-C2 bus feeds CB-C10.,high
+CB-C10,PNL-ESF-C10,ac_power_feeder,crop_raw_train_c_mcc_dc.png: CB-C10 output continues directly to PNL-ESF-C10.,high
+RLY-KC01,CB-C01,control_trip,crop_raw_train_c_mcc_dc.png: dashed/vertical permissive line associates RLY-KC01 with CB-C01.,medium
+RLY-KC03,CB-C03,control_trip,crop_raw_train_c_mcc_dc.png: dashed/vertical permissive line associates RLY-KC03 with CB-C03.,medium
+RLY-KC08,CB-C08,control_trip,crop_raw_train_c_mcc_dc.png: dashed/vertical permissive line associates RLY-KC08 with CB-C08.,medium
+BUS-4D,CB-4D-48,ac_power_feeder,crop_raw_bottom_d_power.png: BUS-4D tap drops through CB-4D-48.,high
+CB-4D-48,TR-480D,ac_power_feeder,crop_raw_bottom_d_power.png: CB-4D-48 lower terminal enters TR-480D.,high
+TR-480D,CB-48D,ac_power_feeder,crop_raw_bottom_d_power.png: TR-480D secondary is wired to CB-48D.,high
+CB-48D,LC-480D,ac_power_feeder,crop_raw_bottom_d_power.png: CB-48D output drops to the LC-480D 480 V bus.,high
+LC-480D,PP-D1,ac_power_feeder,crop_raw_train_d_mcc_dc.png: left vertical feeder from LC-480D enters PP-D1.,high
+LC-480D,MCC-D1,ac_power_feeder,crop_raw_train_d_mcc_dc.png: LC-480D vertical feeder supplies MCC-D1 bus.,high
+LC-480D,MCC-D2,ac_power_feeder,crop_raw_train_d_mcc_dc.png: LC-480D vertical feeder supplies MCC-D2 bus.,high
+LC-480D,JB-D1,instrument_or_io,crop_raw_train_d_mcc_dc.png: vertical drop from right side of LC-480D enters JB-D1 / local I/O area.,medium
+LC-480D,LOCAL-IO-D,instrument_or_io,crop_raw_bottom_d_power.png: LOCAL I/O terminal symbol sits at the right end of LC-480D.,medium
+BAT-125D,CHG-125D,dc_power_feeder,crop_raw_train_d_mcc_dc.png: BAT-125D is wired vertically into CHG-125D.,high
+CHG-125D,DC-BUS-D,dc_power_feeder,crop_raw_train_d_mcc_dc.png: CHG-125D lower terminal connects to DC-BUS-D.,high
+DC-BUS-D,INV-D,dc_power_feeder,crop_raw_train_d_mcc_dc.png: DC-BUS-D drops into INV-D.,high
+INV-D,UPS-D,ac_or_dc_power_feeder,crop_raw_train_d_mcc_dc.png: INV-D lower path continues into UPS-D.,medium
+UPS-D,PP-D1,control_or_aux_power_loop,crop_raw_train_d_mcc_dc.png: thin rectangular loop visually connects UPS-D side path back toward PP-D1.,low
+PP-D1,GND-D,grounding,crop_raw_train_d_mcc_dc.png: PP-D1 lower/enclosure path visually continues to train D ground area.,low
+MCC-D1,CB-D01,ac_power_feeder,crop_raw_train_d_mcc_dc.png: vertical tap from MCC-D1 bus feeds CB-D01.,high
+CB-D01,PMP-SI-D01,ac_power_feeder,crop_raw_train_d_mcc_dc.png: CB-D01 output continues directly to PMP-SI-D01.,high
+MCC-D1,CB-D02,ac_power_feeder,crop_raw_train_d_mcc_dc.png: vertical tap from MCC-D1 bus feeds CB-D02.,high
+CB-D02,DS-D02,ac_power_feeder,crop_raw_train_d_mcc_dc.png: CB-D02 output continues to DS-D02.,high
+DS-D02,PMP-RHR-D02,ac_power_feeder,crop_raw_train_d_mcc_dc.png: DS-D02 lower terminal feeds PMP-RHR-D02.,high
+MCC-D1,CB-D03,ac_power_feeder,crop_raw_train_d_mcc_dc.png: vertical tap from MCC-D1 bus feeds CB-D03.,high
+CB-D03,MTR-CCW-D03,ac_power_feeder,crop_raw_train_d_mcc_dc.png: CB-D03 output continues directly to MTR-CCW-D03.,high
+MCC-D1,CB-D04,ac_power_feeder,crop_raw_train_d_mcc_dc.png: vertical tap from MCC-D1 bus feeds CB-D04.,high
+CB-D04,FAN-VC-D04,ac_power_feeder,crop_raw_train_d_mcc_dc.png: CB-D04 output continues directly to FAN-VC-D04.,high
+MCC-D1,CB-D05,ac_power_feeder,crop_raw_train_d_mcc_dc.png: vertical tap from MCC-D1 bus feeds CB-D05.,high
+CB-D05,MOV-RCS-D05,ac_power_feeder,crop_raw_train_d_mcc_dc.png: CB-D05 output continues directly to MOV-RCS-D05.,high
+MCC-D2,CB-D06,ac_power_feeder,crop_raw_train_d_mcc_dc.png: vertical tap from MCC-D2 bus feeds CB-D06.,high
+CB-D06,DS-D06,ac_power_feeder,crop_raw_train_d_mcc_dc.png: CB-D06 output continues to DS-D06.,high
+DS-D06,PMP-CHG-D06,ac_power_feeder,crop_raw_train_d_mcc_dc.png: DS-D06 lower terminal feeds PMP-CHG-D06.,high
+MCC-D2,CB-D07,ac_power_feeder,crop_raw_train_d_mcc_dc.png: vertical tap from MCC-D2 bus feeds CB-D07.,high
+CB-D07,HTR-CAB-D07,ac_power_feeder,crop_raw_train_d_mcc_dc.png: CB-D07 output continues directly to HTR-CAB-D07.,high
+MCC-D2,CB-D08,ac_power_feeder,crop_raw_train_d_mcc_dc.png: vertical tap from MCC-D2 bus feeds CB-D08.,high
+CB-D08,INST-RK-D08,ac_power_feeder,crop_raw_train_d_mcc_dc.png: CB-D08 output continues directly to INST-RK-D08.,high
+MCC-D2,CB-D09,ac_power_feeder,crop_raw_train_d_mcc_dc.png: vertical tap from MCC-D2 bus feeds CB-D09.,high
+CB-D09,DS-D09,ac_power_feeder,crop_raw_train_d_mcc_dc.png: CB-D09 output continues to DS-D09.,high
+DS-D09,VLV-HPI-D09,ac_power_feeder,crop_raw_train_d_mcc_dc.png: DS-D09 lower terminal feeds VLV-HPI-D09.,high
+MCC-D2,CB-D10,ac_power_feeder,crop_raw_train_d_mcc_dc.png: vertical tap from MCC-D2 bus feeds CB-D10.,high
+CB-D10,PNL-ESF-D10,ac_power_feeder,crop_raw_train_d_mcc_dc.png: CB-D10 output continues directly to PNL-ESF-D10.,high
+RLY-KD02,CB-D02,control_trip,crop_raw_train_d_mcc_dc.png: dashed/vertical permissive line associates RLY-KD02 with CB-D02.,medium
+RLY-KD05,CB-D05,control_trip,crop_raw_train_d_mcc_dc.png: dashed/vertical permissive line associates RLY-KD05 with CB-D05.,medium
+RLY-KD07,CB-D07,control_trip,crop_raw_train_d_mcc_dc.png: dashed/vertical permissive line associates RLY-KD07 with CB-D07.,medium
+RLY-KD10,CB-D10,control_trip,crop_raw_train_d_mcc_dc.png: dashed/vertical permissive line associates RLY-KD10 with CB-D10.,medium
+GND-A,GND-PLANT,grounding,crop_raw_plant_ground_center.png and train A crop: individual train ground joins common grounding network.,medium
+GND-B,GND-PLANT,grounding,crop_raw_plant_ground_center.png and train B crop: individual train ground joins common grounding network.,medium
+GND-C,GND-PLANT,grounding,crop_raw_plant_ground_center.png and train C crop: individual train ground joins common grounding network.,medium
+GND-D,GND-PLANT,grounding,crop_raw_plant_ground_center.png and train D crop: individual train ground joins common grounding network.,medium

@@ -1,0 +1,11 @@
+source,target,status,evidence
+TBxx/cable labels,schematic devices,uncertain_excluded,"labels are references, not graph nodes"
+CB-N1,CHGR-125A,uncertain_excluded,downstream destination from CB-N1 not matrix-safe after precision review
+CB-N2,CHGR-125B,uncertain_excluded,downstream destination from CB-N2 not supported; CB-N2 to MCC-2D was confirmed instead
+VLV-HV-302B,panel/MCC parent,uncertain_excluded,B-side parent/continuation not visually safe
+PUMP-CHG-2B,VLV-HV-302B,uncertain_excluded,B-side continuation not visually safe
+CB-52A/CB-53A/CB-54A,RELAY-K1A or CP-ESFAS-A,uncertain_excluded,bundled dashed interlock lacks clear named endpoints
+CB-52B/CB-53B/CB-54B,RELAY-K1B or CP-ESFAS-B,uncertain_excluded,bundled dashed interlock lacks clear named endpoints
+JB-2A1,RELAY-K1A,uncertain_excluded,bundled dashed route lacks a clean terminal-dot endpoint
+JB-2B1,RELAY-K1B,uncertain_excluded,bundled dashed route lacks a clean terminal-dot endpoint
+RELAY-86A/B,CB-EDG-C,uncertain_excluded,no confirmed dashed trip termination to center EDG breaker

@@ -1,0 +1,18 @@
+Connectivity matrix validation summary
+Document: 8
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\8\connectivity_matrix_improved_local_refined_v3.csv
+GT normalized nodes: 120; GT normalized edges: 140
+Matrices evaluated: 4
+Best row: Jennifer -- Round 1 from round1_jennifer_matrix.csv with Precision=0.935714, Recall=0.935714, F1=0.935714
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=131, FP=9, FN=9, Precision=0.935714, Recall=0.935714, F1=0.935714
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+No extra/non-GT extracted nodes were present in the final node set.
+No GT components were missing from the final node set.
+No strong close-name mismatches were detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: BUS-120AC-A -- PN-125A; BUS-120AC-B -- PN-125B; BUS-480-N2A -- DS-480-A; BUS-480-N2B -- DS-480-B; CB-N1 -- CHGR-125A; CHGR-125A -- MCC-2C; CP-ESFAS-A -- JB-2A1; PN-480-A -- PUMP-CHG-2A.
+False-negative edge examples among GT-known nodes: BUS-480-E2A -- CHGR-125A; BUS-480-E2A -- DS-480-A; BUS-480-E2B -- DS-480-B; BUS-480-N2A -- PN-480-A; BUS-480-N2B -- PN-480-B; CB-N1 -- MCC-2C; JB-2A1 -- PN-125A; JB-2B1 -- PN-125B.
+
+What-if node pruning insight: no non-GT intermediate nodes were available to prune; the remaining drop is mainly connectivity/edge discovery or missing direct GT edges.

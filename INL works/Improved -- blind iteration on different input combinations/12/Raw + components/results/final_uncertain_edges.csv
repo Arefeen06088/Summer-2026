@@ -1,0 +1,26 @@
+node_a,node_b,evidence,why_uncertain
+PT-4160A,RELAY-27A,A dotted/signal route from PT-4160A area descends toward the A-side UV relay/logic group.,Long route is partly outside the tight crop and mingles with other dashed control paths.
+PT-4160B,RELAY-27B,A dotted/signal route from PT-4160B area descends toward the B-side UV relay/logic group.,Long route is partly outside the tight crop and mingles with other dashed control paths.
+PT-4160A,ANN-480A,Dotted annunciation path appears to share the A-side PT/UV signal route near ANN-480A.,Could be an annunciation branch from relay outputs rather than a direct PT-to-annunciator connection.
+PT-4160B,ANN-480B,Dotted annunciation path appears to share the B-side PT/UV signal route near ANN-480B.,Could be an annunciation branch from relay outputs rather than a direct PT-to-annunciator connection.
+BUS-120VAC-ESF,SEQ-REC-1,SEQ-REC-1 sits immediately below BUS-120VAC-ESF with dotted signal/power routing around it.,"The visible connection is dotted signal routing, not a clear solid bus tap."
+RELAY-27A,RELAY-86A,A-side dashed logic from RELAY-27A bends into the same terminal cluster used by RELAY-86A.,The terminal block may mediate the connection; direct relay-to-relay adjacency is not visually separable.
+RELAY-27B,RELAY-86B,B-side dashed logic from RELAY-27B bends into the same terminal cluster used by RELAY-86B.,The terminal block may mediate the connection; direct relay-to-relay adjacency is not visually separable.
+RELAY-50A,TB-RPS-A,A-side OC relay dashed lead appears to route upward/right toward the TB-RPS-A cluster.,Path is partly obscured by crossings and may first pass through RELAY-86A.
+RELAY-50B,TB-RPS-B,B-side OC relay dashed lead appears to route upward/left toward the TB-RPS-B cluster.,Path is partly obscured by crossings and may first pass through RELAY-86B.
+TB-ANN-1,RELAY-50A,Dashed/dotted annunciation path from TB-ANN-1 runs near the RELAY-50A lower route.,Shared annunciation bus makes direct endpoint ambiguous.
+TB-ANN-1,RELAY-86A,Dashed/dotted annunciation path from TB-ANN-1 runs near the RELAY-86A lower route.,Shared annunciation bus makes direct endpoint ambiguous.
+ANN-480A,RELAY-50A,ANN-480A has a dashed line extending into the lower A-side relay network.,It is unclear whether the line lands on RELAY-50A or on shared annunciation/control wiring.
+ANN-480B,RELAY-50B,ANN-480B has a dashed line extending into the lower B-side relay network.,It is unclear whether the line lands on RELAY-50B or on shared annunciation/control wiring.
+ANN-480A,RELAY-86A,A dashed route from the annunciation area approaches the RELAY-86A/terminal cluster.,"Multiple lines overlap near TB-RPS-A, so this may be indirect."
+ANN-480B,RELAY-86B,A dashed route from the annunciation area approaches the RELAY-86B/terminal cluster.,"Multiple lines overlap near TB-RPS-B, so this may be indirect."
+TB-RPS-A,PNL-ESFAS-A,Dashed A-side terminal-block route drops and bends toward the ESFAS A panel.,Could connect through PNL-RPS-A before reaching ESFAS A.
+TB-RPS-B,PNL-ESFAS-B,Dashed B-side terminal-block route drops and bends toward the ESFAS B panel.,Could connect through PNL-RPS-B before reaching ESFAS B.
+CB-101,CB-102,A dash-dot interlock line runs across the A-side top source breaker row.,"This is likely a shared interlock/control bus, not a proven direct pairwise connection."
+CB-102,CB-103,The same dash-dot interlock line continues across CB-102 and CB-103.,Shared interlock/control bus prevents direct pairwise certainty.
+CB-103,CB-TIE-1,Dash-dot interlock routing continues from the A source breaker group toward CB-TIE-1.,The route detours around the tie breaker and may represent a control manifold.
+CB-TIE-1,CB-203,Dash-dot interlock routing continues across the tie region into the B source breaker group.,The direct endpoint through the tie interlock is not certain.
+CB-203,CB-202,A dash-dot interlock line runs across the B-side source breaker row.,Shared interlock/control bus prevents direct pairwise certainty.
+CB-202,CB-303,The B-side dash-dot interlock line continues from CB-202 toward CB-303.,Shared interlock/control bus prevents direct pairwise certainty.
+CB-111,CB-112,Dash-dot control/interlock path spans the A-side 480 V transformer feeder breaker area.,"The path appears to be a control route, not a distinct direct wire between feeder breakers."
+CB-211,CB-212,Dash-dot control/interlock path spans the B-side 480 V transformer feeder breaker area.,"The path appears to be a control route, not a distinct direct wire between feeder breakers."

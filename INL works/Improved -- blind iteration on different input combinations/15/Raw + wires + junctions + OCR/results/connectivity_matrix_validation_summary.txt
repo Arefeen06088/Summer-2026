@@ -1,0 +1,31 @@
+Connectivity matrix validation summary - Document 15 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\15\improved_synthetic_nuclear_connectivity_matrix.csv
+GT after normalization: 190 undirected edges across 183 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token usage was not available in local tracking files.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=186, FP=12, FN=4, Precision=0.939394, Recall=0.978947, F1=0.958763.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges.
+- Extracted components: 183; extra/non-GT names: 0; missing GT component names: 0.
+- False-positive extracted edge examples: BUS-NSS-1 -- CB-DG-A; BUS-NSS-1 -- CB-DG-B; BUS-NSS-2 -- CB-DG-C; BUS-NSS-2 -- CB-DG-D; CB-DG-A -- CB-NF-A; CB-DG-A -- RPS-AC-1; CB-DG-B -- CB-NF-B; CB-DG-C -- CB-NF-C; ... (+4 more).
+- Missed GT edge examples: CB-DG-B -- SEQ-1AB; CB-DG-D -- SEQ-2CD; CB-NF-A -- RPS-AC-1; CB-NF-C -- RPS-AC-2.
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=186, FP=0, FN=4, Precision=1.000000, Recall=0.978947, F1=0.989362.
+- If all missed GT edges were added, final performance would be TP=190, FP=12, FN=0, Precision=0.940594, Recall=1.000000, F1=0.969388.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.958763.
+
+Round-specific notes:
+- Diego -- Round 1: TP=186, FP=16, FN=4, F1=0.948980; extra nodes=0, missing GT nodes=0. FP examples: BUS-NSS-1 -- CB-DG-A; BUS-NSS-1 -- CB-DG-B; BUS-NSS-2 -- CB-DG-C; BUS-NSS-2 -- CB-DG-D; ... (+12 more). FN examples: CB-DG-B -- SEQ-1AB; CB-DG-D -- SEQ-2CD; CB-NF-A -- RPS-AC-1; CB-NF-C -- RPS-AC-2.
+- Jennifer -- Round 2: TP=186, FP=12, FN=4, F1=0.958763; extra nodes=0, missing GT nodes=0. FP examples: BUS-NSS-1 -- CB-DG-A; BUS-NSS-1 -- CB-DG-B; BUS-NSS-2 -- CB-DG-C; BUS-NSS-2 -- CB-DG-D; ... (+8 more). FN examples: CB-DG-B -- SEQ-1AB; CB-DG-D -- SEQ-2CD; CB-NF-A -- RPS-AC-1; CB-NF-C -- RPS-AC-2.
+- Diego -- Round 3: TP=186, FP=12, FN=4, F1=0.958763; extra nodes=0, missing GT nodes=0. FP examples: BUS-NSS-1 -- CB-DG-A; BUS-NSS-1 -- CB-DG-B; BUS-NSS-2 -- CB-DG-C; BUS-NSS-2 -- CB-DG-D; ... (+8 more). FN examples: CB-DG-B -- SEQ-1AB; CB-DG-D -- SEQ-2CD; CB-NF-A -- RPS-AC-1; CB-NF-C -- RPS-AC-2.
+- Jennifer -- Round 4: TP=186, FP=12, FN=4, F1=0.958763; extra nodes=0, missing GT nodes=0. FP examples: BUS-NSS-1 -- CB-DG-A; BUS-NSS-1 -- CB-DG-B; BUS-NSS-2 -- CB-DG-C; BUS-NSS-2 -- CB-DG-D; ... (+8 more). FN examples: CB-DG-B -- SEQ-1AB; CB-DG-D -- SEQ-2CD; CB-NF-A -- RPS-AC-1; CB-NF-C -- RPS-AC-2.
+- Final connectivity -- Final: TP=186, FP=12, FN=4, F1=0.958763; extra nodes=0, missing GT nodes=0. FP examples: BUS-NSS-1 -- CB-DG-A; BUS-NSS-1 -- CB-DG-B; BUS-NSS-2 -- CB-DG-C; BUS-NSS-2 -- CB-DG-D; ... (+8 more). FN examples: CB-DG-B -- SEQ-1AB; CB-DG-D -- SEQ-2CD; CB-NF-A -- RPS-AC-1; CB-NF-C -- RPS-AC-2.

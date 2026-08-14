@@ -1,0 +1,104 @@
+{
+  "document": "13",
+  "iteration": "1",
+  "resource_folder": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\13\\Raw + components",
+  "source_restriction": "Only Document 13 Raw + components resources were used; no GT, no OCR, no web, no Raw + wires.",
+  "agents": [
+    "Diego",
+    "Jennifer"
+  ],
+  "round_sequence": [
+    "Diego round 1 high-recall extraction",
+    "Jennifer round 1 precision review",
+    "Diego round 2 saturation review",
+    "Jennifer round 2 final confirmation"
+  ],
+  "agreement_status": {
+    "status": "final_saturation_consensus",
+    "statement": "Jennifer final confirmation found no remaining unsupported edge, node, or label requiring correction after Diego round 2.",
+    "diego_round2_status": {
+      "status": "saturation_agreement_with_jennifer_round1",
+      "statement": "I found no additional disagreements, omissions, or label corrections after reviewing Jennifer's refined result against the same Doc 13 Raw + components images/crops.",
+      "asserted_edge_count": 191,
+      "uncertain_edge_count": 19,
+      "node_count": 193
+    },
+    "final_round_added_edges": 0,
+    "final_round_removed_edges": 0,
+    "final_round_label_corrections": 0,
+    "accepted_round1_asserted_additions_retained": [
+      [
+        "PP-A1",
+        "UPS-A",
+        "Accepted from Jennifer round 1: raw_03_train_a_full_2x/raw_07_train_a_loads_dc_zoom_2x show the PP-A1 lower solid feeder entering UPS-A."
+      ],
+      [
+        "PP-B1",
+        "UPS-B",
+        "Accepted from Jennifer round 1: raw_04_train_b_full_2x/raw_08_train_b_loads_dc_zoom_2x show the PP-B1 lower solid feeder entering UPS-B."
+      ],
+      [
+        "PP-C1",
+        "UPS-C",
+        "Accepted from Jennifer round 1: raw_05_train_c_full_2x/raw_09_train_c_loads_dc_zoom_2x show the PP-C1 lower solid feeder entering UPS-C."
+      ],
+      [
+        "PP-D1",
+        "UPS-D",
+        "Accepted from Jennifer round 1: raw_06_train_d_full_2x/raw_10_train_d_loads_dc_zoom_2x show the PP-D1 lower solid feeder entering UPS-D."
+      ]
+    ],
+    "mcc_to_jb_uncertain_edges_retained": [
+      [
+        "MCC-A2",
+        "JB-A1"
+      ],
+      [
+        "MCC-B2",
+        "JB-B1"
+      ],
+      [
+        "MCC-C2",
+        "JB-C1"
+      ],
+      [
+        "MCC-D2",
+        "JB-D1"
+      ]
+    ]
+  },
+  "validation": {
+    "node_count": 193,
+    "asserted_edge_count": 191,
+    "symmetric": true,
+    "diagonal_zero": true,
+    "binary": true
+  },
+  "uncertain_edge_count": 19,
+  "removed_edge_count": 0,
+  "final_round_added_edge_count": 0,
+  "jennifer_round1_added_edge_count": 4,
+  "label_correction_count": 0,
+  "round_files_copied": [
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\13\\Raw + components\\results\\diego_round1_edges.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\13\\Raw + components\\results\\diego_round1_connectivity_matrix.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\13\\Raw + components\\results\\jennifer_round1_nodes.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\13\\Raw + components\\results\\jennifer_round1_edges.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\13\\Raw + components\\results\\jennifer_round1_connectivity_matrix.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\13\\Raw + components\\results\\diego_round2_edges.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\13\\Raw + components\\results\\diego_round2_connectivity_matrix.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\13\\Raw + components\\results\\jennifer_round2_final_nodes.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\13\\Raw + components\\results\\jennifer_round2_final_edges.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\13\\Raw + components\\results\\jennifer_round2_final_connectivity_matrix.csv"
+  ],
+  "token_estimate_totals": {
+    "total_input_tokens_expected": 144283,
+    "total_image_tokens_expected": 68425,
+    "total_output_tokens_expected": 133817,
+    "total_reasoning_tokens_expected": 90000,
+    "total_tokens_low": 273646,
+    "total_tokens_expected": 368100,
+    "total_tokens_high": 537555
+  },
+  "generated_at_utc": "2026-07-17T17:35:20.549963+00:00"
+}

@@ -1,0 +1,740 @@
+{
+  "UTIL-230A": [
+    "DS-230A"
+  ],
+  "DS-230A": [
+    "SAT-1A",
+    "UTIL-230A"
+  ],
+  "SAT-1A": [
+    "CB-SAT-A",
+    "DS-230A"
+  ],
+  "CB-SAT-A": [
+    "BUS-4160S1A",
+    "SAT-1A"
+  ],
+  "UTIL-230B": [
+    "DS-230B"
+  ],
+  "DS-230B": [
+    "SAT-1B",
+    "UTIL-230B"
+  ],
+  "SAT-1B": [
+    "CB-SAT-B",
+    "DS-230B"
+  ],
+  "CB-SAT-B": [
+    "BUS-4160S1B",
+    "SAT-1B"
+  ],
+  "GEN-1A": [
+    "CB-GEN-1"
+  ],
+  "CB-GEN-1": [
+    "BUS-13K-01",
+    "GEN-1A"
+  ],
+  "BUS-13K-01": [
+    "CB-GEN-1",
+    "UAT-1A",
+    "UAT-1B"
+  ],
+  "UAT-1A": [
+    "BUS-13K-01",
+    "CB-UAT-1A"
+  ],
+  "CB-UAT-1A": [
+    "BUS-4160-N1",
+    "UAT-1A"
+  ],
+  "UAT-1B": [
+    "BUS-13K-01",
+    "CB-UAT-1B"
+  ],
+  "CB-UAT-1B": [
+    "BUS-4160-N2",
+    "UAT-1B"
+  ],
+  "BUS-4160-N1": [
+    "CB-4160-N1A",
+    "CB-4160-N1B",
+    "CB-TIE-41N",
+    "CB-UAT-1A"
+  ],
+  "CB-TIE-41N": [
+    "BUS-4160-N1",
+    "BUS-4160-N2"
+  ],
+  "BUS-4160-N2": [
+    "CB-4160-N2A",
+    "CB-4160-N2B",
+    "CB-TIE-41N",
+    "CB-UAT-1B"
+  ],
+  "EDG-1A": [
+    "CB-EDG-A"
+  ],
+  "CB-EDG-A": [
+    "BUS-4160S1A",
+    "CB-482A",
+    "EDG-1A"
+  ],
+  "BUS-4160S1A": [
+    "CB-481A",
+    "CB-482A",
+    "CB-EDG-A",
+    "CB-SAT-A",
+    "CT-41A",
+    "PT-41A"
+  ],
+  "CT-41A": [
+    "BUS-4160S1A",
+    "RELAY-50/51A"
+  ],
+  "PT-41A": [
+    "BUS-4160S1A",
+    "RELAY-50/51A"
+  ],
+  "RELAY-50/51A": [
+    "CT-41A",
+    "PT-41A",
+    "RELAY-86A"
+  ],
+  "RELAY-86A": [
+    "CB-482A",
+    "RELAY-50/51A"
+  ],
+  "CB-481A": [
+    "BUS-4160S1A",
+    "TR-480-A1"
+  ],
+  "TR-480-A1": [
+    "CB-481A",
+    "CB-LV-A1"
+  ],
+  "CB-LV-A1": [
+    "BUS-480-A1",
+    "TR-480-A1"
+  ],
+  "BUS-480-A1": [
+    "CB-LV-A1",
+    "MCC-SAF-A1"
+  ],
+  "MCC-SAF-A1": [
+    "BUS-480-A1",
+    "CB-CCW-A",
+    "CB-RHR-A",
+    "CB-SI-A"
+  ],
+  "CB-RHR-A": [
+    "MCC-SAF-A1",
+    "PUMP-RHR-A"
+  ],
+  "PUMP-RHR-A": [
+    "CB-RHR-A"
+  ],
+  "CB-SI-A": [
+    "MCC-SAF-A1",
+    "PUMP-SI-A"
+  ],
+  "PUMP-SI-A": [
+    "CB-SI-A"
+  ],
+  "CB-CCW-A": [
+    "MCC-SAF-A1",
+    "PUMP-CCW-A"
+  ],
+  "PUMP-CCW-A": [
+    "CB-CCW-A"
+  ],
+  "CB-482A": [
+    "BUS-4160S1A",
+    "CB-EDG-A",
+    "RELAY-86A",
+    "TR-480-A2"
+  ],
+  "TR-480-A2": [
+    "CB-482A",
+    "CB-LV-A2"
+  ],
+  "CB-LV-A2": [
+    "BUS-480-A2",
+    "TR-480-A2"
+  ],
+  "BUS-480-A2": [
+    "CB-LV-A2",
+    "MCC-SAF-A2"
+  ],
+  "MCC-SAF-A2": [
+    "BUS-480-A2",
+    "CB-COMP-A",
+    "CB-CRF-A",
+    "CB-CVC-A"
+  ],
+  "CB-CVC-A": [
+    "MCC-SAF-A2",
+    "PUMP-CVC-A"
+  ],
+  "PUMP-CVC-A": [
+    "CB-CVC-A"
+  ],
+  "CB-CRF-A": [
+    "FAN-CR-A",
+    "MCC-SAF-A2"
+  ],
+  "FAN-CR-A": [
+    "CB-CRF-A",
+    "PN-MOV-A"
+  ],
+  "CB-COMP-A": [
+    "COMP-AIR-A",
+    "MCC-SAF-A2"
+  ],
+  "COMP-AIR-A": [
+    "CB-COMP-A"
+  ],
+  "PN-MOV-A": [
+    "FAN-CR-A",
+    "FU-8810A",
+    "FU-HV302A",
+    "FU-RCICA",
+    "FU-SWA"
+  ],
+  "FU-8810A": [
+    "MOV-8810A",
+    "PN-MOV-A"
+  ],
+  "MOV-8810A": [
+    "FU-8810A"
+  ],
+  "FU-HV302A": [
+    "PN-MOV-A",
+    "VLV-HV-302A"
+  ],
+  "VLV-HV-302A": [
+    "FU-HV302A"
+  ],
+  "FU-RCICA": [
+    "MOV-RCIC-A",
+    "PN-MOV-A"
+  ],
+  "MOV-RCIC-A": [
+    "FU-RCICA"
+  ],
+  "FU-SWA": [
+    "MOV-SW-A",
+    "PN-MOV-A"
+  ],
+  "MOV-SW-A": [
+    "FU-SWA"
+  ],
+  "EDG-1B": [
+    "CB-EDG-B"
+  ],
+  "CB-EDG-B": [
+    "BUS-4160S1B",
+    "CB-482B",
+    "EDG-1B"
+  ],
+  "BUS-4160S1B": [
+    "CB-481B",
+    "CB-482B",
+    "CB-EDG-B",
+    "CB-SAT-B",
+    "CT-41B",
+    "PT-41B"
+  ],
+  "CT-41B": [
+    "BUS-4160S1B",
+    "RELAY-27B"
+  ],
+  "PT-41B": [
+    "BUS-4160S1B",
+    "RELAY-27B"
+  ],
+  "RELAY-27B": [
+    "CB-481B",
+    "CT-41B",
+    "PT-41B",
+    "RELAY-86B"
+  ],
+  "RELAY-86B": [
+    "RELAY-27B"
+  ],
+  "CB-481B": [
+    "BUS-4160S1B",
+    "RELAY-27B",
+    "TR-480-B1"
+  ],
+  "TR-480-B1": [
+    "CB-481B",
+    "CB-LV-B1"
+  ],
+  "CB-LV-B1": [
+    "BUS-480-B1",
+    "TR-480-B1"
+  ],
+  "BUS-480-B1": [
+    "CB-LV-B1",
+    "MCC-SAF-B1"
+  ],
+  "MCC-SAF-B1": [
+    "BUS-480-B1",
+    "CB-CCW-B",
+    "CB-RHR-B",
+    "CB-SI-B"
+  ],
+  "CB-RHR-B": [
+    "MCC-SAF-B1",
+    "PUMP-RHR-B"
+  ],
+  "PUMP-RHR-B": [
+    "CB-RHR-B"
+  ],
+  "CB-SI-B": [
+    "MCC-SAF-B1",
+    "PUMP-SI-B"
+  ],
+  "PUMP-SI-B": [
+    "CB-SI-B",
+    "JB-2B"
+  ],
+  "CB-CCW-B": [
+    "MCC-SAF-B1",
+    "PUMP-CCW-B"
+  ],
+  "PUMP-CCW-B": [
+    "CB-CCW-B"
+  ],
+  "CB-482B": [
+    "BUS-4160S1B",
+    "CB-EDG-B",
+    "TR-480-B2"
+  ],
+  "TR-480-B2": [
+    "CB-482B",
+    "CB-LV-B2"
+  ],
+  "CB-LV-B2": [
+    "BUS-480-B2",
+    "TR-480-B2"
+  ],
+  "BUS-480-B2": [
+    "CB-LV-B2",
+    "MCC-SAF-B2"
+  ],
+  "MCC-SAF-B2": [
+    "BUS-480-B2",
+    "CB-COMP-B",
+    "CB-CRF-B",
+    "CB-CVC-B",
+    "PN-MOV-B"
+  ],
+  "CB-CVC-B": [
+    "MCC-SAF-B2",
+    "PUMP-CVC-B"
+  ],
+  "PUMP-CVC-B": [
+    "CB-CVC-B"
+  ],
+  "CB-CRF-B": [
+    "FAN-CR-B",
+    "MCC-SAF-B2"
+  ],
+  "FAN-CR-B": [
+    "CB-CRF-B"
+  ],
+  "CB-COMP-B": [
+    "COMP-AIR-B",
+    "MCC-SAF-B2"
+  ],
+  "COMP-AIR-B": [
+    "CB-COMP-B"
+  ],
+  "PN-MOV-B": [
+    "FU-8810B",
+    "FU-HV302B",
+    "FU-RCICB",
+    "FU-SWB",
+    "MCC-SAF-B2"
+  ],
+  "FU-8810B": [
+    "MOV-8810B",
+    "PN-MOV-B"
+  ],
+  "MOV-8810B": [
+    "FU-8810B"
+  ],
+  "FU-HV302B": [
+    "PN-MOV-B",
+    "VLV-HV-302B"
+  ],
+  "VLV-HV-302B": [
+    "FU-HV302B"
+  ],
+  "FU-RCICB": [
+    "MOV-RCIC-B",
+    "PN-MOV-B"
+  ],
+  "MOV-RCIC-B": [
+    "FU-RCICB"
+  ],
+  "FU-SWB": [
+    "MOV-SW-B",
+    "PN-MOV-B"
+  ],
+  "MOV-SW-B": [
+    "FU-SWB"
+  ],
+  "CB-4160-N1A": [
+    "BUS-4160-N1",
+    "TR-480-N1A"
+  ],
+  "TR-480-N1A": [
+    "CB-4160-N1A",
+    "CB-480-N1A"
+  ],
+  "CB-480-N1A": [
+    "BUS-480-N1A",
+    "TR-480-N1A"
+  ],
+  "BUS-480-N1A": [
+    "CB-480-N1A",
+    "MCC-NORM-1A"
+  ],
+  "MCC-NORM-1A": [
+    "BUS-480-N1A",
+    "PN-480-N1A"
+  ],
+  "PN-480-N1A": [
+    "CB-AHU-1A",
+    "CB-CWP-1A",
+    "CB-HEAT-1A",
+    "MCC-NORM-1A",
+    "PN-480-N1B"
+  ],
+  "CB-CWP-1A": [
+    "PN-480-N1A",
+    "PUMP-CWP-1A"
+  ],
+  "PUMP-CWP-1A": [
+    "CB-CWP-1A"
+  ],
+  "CB-HEAT-1A": [
+    "HTR-1A",
+    "PN-480-N1A"
+  ],
+  "HTR-1A": [
+    "CB-HEAT-1A"
+  ],
+  "CB-AHU-1A": [
+    "FAN-AHU-1A",
+    "PN-480-N1A"
+  ],
+  "FAN-AHU-1A": [
+    "CB-AHU-1A"
+  ],
+  "CB-4160-N1B": [
+    "BUS-4160-N1",
+    "TR-480-N1B"
+  ],
+  "TR-480-N1B": [
+    "CB-4160-N1B",
+    "CB-480-N1B"
+  ],
+  "CB-480-N1B": [
+    "BUS-480-N1B",
+    "TR-480-N1B"
+  ],
+  "BUS-480-N1B": [
+    "CB-480-N1B",
+    "MCC-NORM-1B"
+  ],
+  "MCC-NORM-1B": [
+    "BUS-480-N1B",
+    "PN-480-N1B"
+  ],
+  "PN-480-N1B": [
+    "CB-CWP-1B",
+    "CB-LTG-1B",
+    "CB-SUMP-1B",
+    "MCC-NORM-1B",
+    "PN-480-N1A"
+  ],
+  "CB-CWP-1B": [
+    "PN-480-N1B",
+    "PUMP-CWP-1B"
+  ],
+  "PUMP-CWP-1B": [
+    "CB-CWP-1B"
+  ],
+  "CB-SUMP-1B": [
+    "PN-480-N1B",
+    "PUMP-SUMP-1B"
+  ],
+  "PUMP-SUMP-1B": [
+    "CB-SUMP-1B",
+    "MTR-480-N1"
+  ],
+  "CB-LTG-1B": [
+    "PN-480-N1B",
+    "PN-LTG-1B"
+  ],
+  "PN-LTG-1B": [
+    "CB-LTG-1B",
+    "JB-NORM-A"
+  ],
+  "MTR-480-N1": [
+    "JB-NORM-A",
+    "PUMP-SUMP-1B"
+  ],
+  "JB-NORM-A": [
+    "MTR-480-N1",
+    "PN-LTG-1B",
+    "RTD-PNL-A"
+  ],
+  "RTD-PNL-A": [
+    "JB-NORM-A",
+    "TB-SEQ-A"
+  ],
+  "TB-SEQ-A": [
+    "RTD-PNL-A",
+    "TDR-SEQ-A"
+  ],
+  "TDR-SEQ-A": [
+    "TB-SEQ-A"
+  ],
+  "CB-4160-N2A": [
+    "BUS-4160-N2",
+    "TR-480-N2A"
+  ],
+  "TR-480-N2A": [
+    "CB-4160-N2A",
+    "CB-480-N2A"
+  ],
+  "CB-480-N2A": [
+    "BUS-480-N2A",
+    "TR-480-N2A"
+  ],
+  "BUS-480-N2A": [
+    "CB-480-N2A",
+    "MCC-NORM-2A"
+  ],
+  "MCC-NORM-2A": [
+    "BUS-480-N2A",
+    "PN-480-N2A"
+  ],
+  "PN-480-N2A": [
+    "CB-AHU-2A",
+    "CB-CWP-2A",
+    "CB-VAC-2A",
+    "MCC-NORM-2A",
+    "PN-480-N2B"
+  ],
+  "CB-CWP-2A": [
+    "PN-480-N2A",
+    "PUMP-CWP-2A"
+  ],
+  "PUMP-CWP-2A": [
+    "CB-CWP-2A"
+  ],
+  "CB-VAC-2A": [
+    "PN-480-N2A",
+    "PUMP-VAC-2A"
+  ],
+  "PUMP-VAC-2A": [
+    "CB-VAC-2A"
+  ],
+  "CB-AHU-2A": [
+    "FAN-AHU-2A",
+    "PN-480-N2A"
+  ],
+  "FAN-AHU-2A": [
+    "CB-AHU-2A",
+    "MTR-480-N2"
+  ],
+  "MTR-480-N2": [
+    "FAN-AHU-2A",
+    "JB-NORM-B"
+  ],
+  "JB-NORM-B": [
+    "MTR-480-N2",
+    "RTD-PNL-B"
+  ],
+  "RTD-PNL-B": [
+    "JB-NORM-B",
+    "TB-SEQ-B"
+  ],
+  "TB-SEQ-B": [
+    "RTD-PNL-B",
+    "TDR-SEQ-B"
+  ],
+  "TDR-SEQ-B": [
+    "TB-SEQ-B"
+  ],
+  "CB-4160-N2B": [
+    "BUS-4160-N2",
+    "TR-480-N2B"
+  ],
+  "TR-480-N2B": [
+    "CB-4160-N2B",
+    "CB-480-N2B"
+  ],
+  "CB-480-N2B": [
+    "BUS-480-N2B",
+    "TR-480-N2B"
+  ],
+  "BUS-480-N2B": [
+    "CB-480-N2B",
+    "MCC-NORM-2B"
+  ],
+  "MCC-NORM-2B": [
+    "BUS-480-N2B",
+    "PN-480-N2B"
+  ],
+  "PN-480-N2B": [
+    "CB-CWP-2B",
+    "CB-LTG-2B",
+    "CB-OIL-2B",
+    "MCC-NORM-2B",
+    "PN-480-N2A"
+  ],
+  "CB-CWP-2B": [
+    "PN-480-N2B",
+    "PUMP-CWP-2B"
+  ],
+  "PUMP-CWP-2B": [
+    "CB-CWP-2B"
+  ],
+  "CB-OIL-2B": [
+    "PN-480-N2B",
+    "PUMP-OIL-2B"
+  ],
+  "PUMP-OIL-2B": [
+    "CB-OIL-2B"
+  ],
+  "CB-LTG-2B": [
+    "PN-480-N2B",
+    "PN-LTG-2B"
+  ],
+  "PN-LTG-2B": [
+    "CB-LTG-2B"
+  ],
+  "BAT-125A": [
+    "BUS-125DC-A"
+  ],
+  "CHG-125A": [
+    "BUS-125DC-A"
+  ],
+  "BUS-125DC-A": [
+    "BAT-125A",
+    "CHG-125A",
+    "GND-A",
+    "INV-120A",
+    "PN-125A"
+  ],
+  "GND-A": [
+    "BUS-125DC-A"
+  ],
+  "INV-120A": [
+    "BUS-120AC-A",
+    "BUS-125DC-A"
+  ],
+  "BUS-120AC-A": [
+    "INV-120A",
+    "PN-120A"
+  ],
+  "PN-125A": [
+    "BUS-125DC-A",
+    "JB-1A",
+    "JB-2A"
+  ],
+  "JB-1A": [
+    "PN-125A"
+  ],
+  "JB-2A": [
+    "PN-125A"
+  ],
+  "PN-120A": [
+    "ANN-ESF-A",
+    "BUS-120AC-A",
+    "PLC-ESF-A"
+  ],
+  "PLC-ESF-A": [
+    "ANN-ESF-A",
+    "PN-120A",
+    "RELAY-K1A",
+    "RELAY-K2A"
+  ],
+  "RELAY-K1A": [
+    "PLC-ESF-A"
+  ],
+  "RELAY-K2A": [
+    "PLC-ESF-A"
+  ],
+  "ANN-ESF-A": [
+    "PLC-ESF-A",
+    "PN-120A"
+  ],
+  "BAT-125B": [
+    "BUS-125DC-B"
+  ],
+  "CHG-125B": [
+    "BUS-125DC-B"
+  ],
+  "BUS-125DC-B": [
+    "BAT-125B",
+    "CHG-125B",
+    "GND-B",
+    "INV-120B",
+    "PN-125B"
+  ],
+  "GND-B": [
+    "BUS-125DC-B"
+  ],
+  "INV-120B": [
+    "BUS-120AC-B",
+    "BUS-125DC-B"
+  ],
+  "BUS-120AC-B": [
+    "INV-120B",
+    "PN-120B"
+  ],
+  "PN-125B": [
+    "BUS-125DC-B",
+    "JB-1B",
+    "JB-2B"
+  ],
+  "JB-1B": [
+    "PN-125B"
+  ],
+  "JB-2B": [
+    "PLC-ESF-B",
+    "PN-125B",
+    "PUMP-SI-B"
+  ],
+  "PN-120B": [
+    "ANN-ESF-B",
+    "BUS-120AC-B",
+    "PLC-ESF-B"
+  ],
+  "PLC-ESF-B": [
+    "ANN-ESF-B",
+    "JB-2B",
+    "PN-120B",
+    "RELAY-K1B",
+    "RELAY-K2B"
+  ],
+  "RELAY-K1B": [
+    "PLC-ESF-B"
+  ],
+  "RELAY-K2B": [
+    "PLC-ESF-B"
+  ],
+  "ANN-ESF-B": [
+    "PLC-ESF-B",
+    "PN-120B"
+  ]
+}

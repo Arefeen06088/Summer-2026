@@ -1,0 +1,178 @@
+source,target,confidence,line_type,evidence
+GRID-1,TR-SST-A,high,ac-power,upper_train_A_sources: continuous visible segment between GRID-1 and TR-SST-A
+TR-SST-A,CB-SST-A,high,ac-power,upper_train_A_sources: continuous visible segment between TR-SST-A and CB-SST-A
+CB-SST-A,BUS-4A,high,ac-power,upper_train_A_sources: continuous visible segment between CB-SST-A and BUS-4A
+GEN-TG1,TR-UAT-1,high,ac-power,upper_train_A_sources: continuous visible segment between GEN-TG1 and TR-UAT-1
+TR-UAT-1,CB-UAT-1,high,ac-power,upper_train_A_sources: continuous visible segment between TR-UAT-1 and CB-UAT-1
+CB-UAT-1,BUS-4A,high,ac-power,upper_train_A_sources: continuous visible segment between CB-UAT-1 and BUS-4A
+DG-1A,TR-DG-A,high,ac-power,upper_train_A_sources: continuous visible segment between DG-1A and TR-DG-A
+TR-DG-A,CB-DG-A,high,ac-power,upper_train_A_sources: continuous visible segment between TR-DG-A and CB-DG-A
+CB-DG-A,BUS-4A,high,ac-power,upper_train_A_sources: continuous visible segment between CB-DG-A and BUS-4A
+GRID-2,TR-SST-B,high,ac-power,upper_train_B_sources: continuous visible segment between GRID-2 and TR-SST-B
+TR-SST-B,CB-SST-B,high,ac-power,upper_train_B_sources: continuous visible segment between TR-SST-B and CB-SST-B
+CB-SST-B,BUS-4B,high,ac-power,upper_train_B_sources: continuous visible segment between CB-SST-B and BUS-4B
+DG-1B,TR-DG-B,high,ac-power,upper_train_B_sources: continuous visible segment between DG-1B and TR-DG-B
+TR-DG-B,CB-DG-B,high,ac-power,upper_train_B_sources: continuous visible segment between TR-DG-B and CB-DG-B
+CB-DG-B,BUS-4B,high,ac-power,upper_train_B_sources: continuous visible segment between CB-DG-B and BUS-4B
+BUS-4A,CB-TIE-4KV,high,ac-power,center_tie_verticals: 4 kV bus line enters left side of CB-TIE-4KV
+CB-TIE-4KV,BUS-4B,high,ac-power,center_tie_verticals: 4 kV bus line exits right side of CB-TIE-4KV
+BUS-4A,TR-480A,high,ac-power,upper_train_A_sources: solid vertical tap from BUS-4A to transformer TR-480A
+TR-480A,BUS-480A,high,ac-power,upper_train_A_sources and middle_train_A_480_feeders: transformer secondary drops to BUS-480A
+BUS-4B,TR-480B,high,ac-power,upper_train_B_sources: solid vertical tap from BUS-4B to transformer TR-480B
+TR-480B,BUS-480B,high,ac-power,upper_train_B_sources and middle_train_B_480_feeders: transformer secondary drops to BUS-480B
+BUS-480A,CB-480-TIE,high,ac-power,center_tie_verticals: horizontal 480 V tie from left bus into CB-480-TIE
+CB-480-TIE,BUS-480B,high,ac-power,center_tie_verticals: horizontal 480 V tie exits CB-480-TIE toward right bus
+BUS-4A,CB-4A-01,high,ac-power,upper_train_A_sources: bus tap descends from BUS-4A into breaker CB-4A-01
+CB-4A-01,DS-4A-01,high,ac-power,upper_train_A_sources: solid vertical feeder from CB-4A-01 to disconnect DS-4A-01
+DS-4A-01,FU-A01,high,ac-power,upper_train_A_sources: solid feeder continues from DS-4A-01 to series device FU-A01
+FU-A01,TB-A01,high,ac-power,upper_train_A_sources: solid feeder continues from FU-A01 to terminal block TB-A01
+TB-A01,PUMP-CS-1A,high,ac-power,upper_train_A_sources: solid feeder descends from terminal block TB-A01 to load PUMP-CS-1A
+PUMP-CS-1A,GND-A01,medium,ground,upper_train_A_sources: vertical continuation below load PUMP-CS-1A terminates at ground symbol GND-A01
+RELAY-KA01,CB-4A-01,medium,control,upper_train_A_sources: dashed relay contact path is drawn adjacent to breaker CB-4A-01
+FI-A01,TB-A01,medium,instrument,upper_train_A_sources: instrument circle FI-A01 has short dashed signal lead into terminal block TB-A01
+BUS-4A,CB-4A-02,high,ac-power,upper_train_A_sources: bus tap descends from BUS-4A into breaker CB-4A-02
+CB-4A-02,DS-4A-02,high,ac-power,upper_train_A_sources: solid vertical feeder from CB-4A-02 to disconnect DS-4A-02
+DS-4A-02,OL-A02,high,ac-power,upper_train_A_sources: solid feeder continues from DS-4A-02 to series device OL-A02
+OL-A02,TB-A02,high,ac-power,upper_train_A_sources: solid feeder continues from OL-A02 to terminal block TB-A02
+TB-A02,PUMP-RHR-1A,high,ac-power,upper_train_A_sources: solid feeder descends from terminal block TB-A02 to load PUMP-RHR-1A
+PUMP-RHR-1A,GND-A02,medium,ground,upper_train_A_sources: vertical continuation below load PUMP-RHR-1A terminates at ground symbol GND-A02
+RELAY-KA02,CB-4A-02,medium,control,upper_train_A_sources: dashed relay contact path is drawn adjacent to breaker CB-4A-02
+PI-A02,TB-A02,medium,instrument,upper_train_A_sources: instrument circle PI-A02 has short dashed signal lead into terminal block TB-A02
+BUS-4A,CB-4A-07,high,ac-power,upper_train_A_sources: bus tap descends from BUS-4A into breaker CB-4A-07
+CB-4A-07,DS-4A-07,high,ac-power,upper_train_A_sources: solid vertical feeder from CB-4A-07 to disconnect DS-4A-07
+DS-4A-07,FU-A07,high,ac-power,upper_train_A_sources: solid feeder continues from DS-4A-07 to series device FU-A07
+FU-A07,TB-A07,high,ac-power,upper_train_A_sources: solid feeder continues from FU-A07 to terminal block TB-A07
+TB-A07,PUMP-CW-1A,high,ac-power,upper_train_A_sources: solid feeder descends from terminal block TB-A07 to load PUMP-CW-1A
+PUMP-CW-1A,GND-A07,medium,ground,upper_train_A_sources: vertical continuation below load PUMP-CW-1A terminates at ground symbol GND-A07
+RELAY-KA07,CB-4A-07,medium,control,upper_train_A_sources: dashed relay contact path is drawn adjacent to breaker CB-4A-07
+PT-A07,TB-A07,medium,instrument,upper_train_A_sources: instrument circle PT-A07 has short dashed signal lead into terminal block TB-A07
+BUS-480A,CB-48A-03,high,ac-power,middle_train_A_480_feeders: bus tap descends from BUS-480A into breaker CB-48A-03
+CB-48A-03,DS-48A-03,high,ac-power,middle_train_A_480_feeders: solid vertical feeder from CB-48A-03 to disconnect DS-48A-03
+DS-48A-03,KON-A03,high,ac-power,middle_train_A_480_feeders: solid feeder continues from DS-48A-03 to series device KON-A03
+KON-A03,TB-A03,high,ac-power,middle_train_A_480_feeders: solid feeder continues from KON-A03 to terminal block TB-A03
+TB-A03,PUMP-SW-1A,high,ac-power,middle_train_A_480_feeders: solid feeder descends from terminal block TB-A03 to load PUMP-SW-1A
+PUMP-SW-1A,GND-A03,medium,ground,middle_train_A_480_feeders: vertical continuation below load PUMP-SW-1A terminates at ground symbol GND-A03
+RELAY-KA03,CB-48A-03,medium,control,middle_train_A_480_feeders: dashed relay contact path is drawn adjacent to breaker CB-48A-03
+FS-A03,TB-A03,medium,instrument,middle_train_A_480_feeders: instrument circle FS-A03 has short dashed signal lead into terminal block TB-A03
+BUS-480A,CB-48A-04,high,ac-power,middle_train_A_480_feeders: bus tap descends from BUS-480A into breaker CB-48A-04
+CB-48A-04,DS-48A-04,high,ac-power,middle_train_A_480_feeders: solid vertical feeder from CB-48A-04 to disconnect DS-48A-04
+DS-48A-04,FU-A04,high,ac-power,middle_train_A_480_feeders: solid feeder continues from DS-48A-04 to series device FU-A04
+FU-A04,TB-A04,high,ac-power,middle_train_A_480_feeders: solid feeder continues from FU-A04 to terminal block TB-A04
+TB-A04,FAN-CR-1A,high,ac-power,middle_train_A_480_feeders: solid feeder descends from terminal block TB-A04 to load FAN-CR-1A
+FAN-CR-1A,GND-A04,medium,ground,middle_train_A_480_feeders: vertical continuation below load FAN-CR-1A terminates at ground symbol GND-A04
+RELAY-KA04,CB-48A-04,medium,control,middle_train_A_480_feeders: dashed relay contact path is drawn adjacent to breaker CB-48A-04
+TS-A04,TB-A04,medium,instrument,middle_train_A_480_feeders: instrument circle TS-A04 has short dashed signal lead into terminal block TB-A04
+BUS-480A,CB-48A-05,high,ac-power,middle_train_A_480_feeders: bus tap descends from BUS-480A into breaker CB-48A-05
+CB-48A-05,DS-48A-05,high,ac-power,middle_train_A_480_feeders: solid vertical feeder from CB-48A-05 to disconnect DS-48A-05
+DS-48A-05,OL-A05,high,ac-power,middle_train_A_480_feeders: solid feeder continues from DS-48A-05 to series device OL-A05
+OL-A05,TB-A05,high,ac-power,middle_train_A_480_feeders: solid feeder continues from OL-A05 to terminal block TB-A05
+TB-A05,MOV-SI-101A,high,ac-power,middle_train_A_480_feeders: solid feeder descends from terminal block TB-A05 to load MOV-SI-101A
+MOV-SI-101A,GND-A05,medium,ground,middle_train_A_480_feeders: vertical continuation below load MOV-SI-101A terminates at ground symbol GND-A05
+RELAY-KA05,CB-48A-05,medium,control,middle_train_A_480_feeders: dashed relay contact path is drawn adjacent to breaker CB-48A-05
+ZS-A05,TB-A05,medium,instrument,middle_train_A_480_feeders: instrument circle ZS-A05 has short dashed signal lead into terminal block TB-A05
+BUS-480A,CB-48A-06,high,ac-power,middle_train_A_480_feeders: bus tap descends from BUS-480A into breaker CB-48A-06
+CB-48A-06,DS-48A-06,high,ac-power,middle_train_A_480_feeders: solid vertical feeder from CB-48A-06 to disconnect DS-48A-06
+DS-48A-06,KON-A06,high,ac-power,middle_train_A_480_feeders: solid feeder continues from DS-48A-06 to series device KON-A06
+KON-A06,TB-A06,high,ac-power,middle_train_A_480_feeders: solid feeder continues from KON-A06 to terminal block TB-A06
+TB-A06,RECT-AUX-1A,high,ac-power,middle_train_A_480_feeders: solid feeder descends from terminal block TB-A06 to load RECT-AUX-1A
+RECT-AUX-1A,GND-A06,medium,ground,middle_train_A_480_feeders: vertical continuation below load RECT-AUX-1A terminates at ground symbol GND-A06
+RELAY-KA06,CB-48A-06,medium,control,middle_train_A_480_feeders: dashed relay contact path is drawn adjacent to breaker CB-48A-06
+VM-A06,TB-A06,medium,instrument,middle_train_A_480_feeders: instrument circle VM-A06 has short dashed signal lead into terminal block TB-A06
+BUS-480A,CB-48A-08,high,ac-power,middle_train_A_480_feeders: bus tap descends from BUS-480A into breaker CB-48A-08
+CB-48A-08,DS-48A-08,high,ac-power,middle_train_A_480_feeders: solid vertical feeder from CB-48A-08 to disconnect DS-48A-08
+DS-48A-08,OL-A08,high,ac-power,middle_train_A_480_feeders: solid feeder continues from DS-48A-08 to series device OL-A08
+OL-A08,TB-A08,high,ac-power,middle_train_A_480_feeders: solid feeder continues from OL-A08 to terminal block TB-A08
+TB-A08,HTR-PZR-A,high,ac-power,middle_train_A_480_feeders: solid feeder descends from terminal block TB-A08 to load HTR-PZR-A
+HTR-PZR-A,GND-A08,medium,ground,middle_train_A_480_feeders: vertical continuation below load HTR-PZR-A terminates at ground symbol GND-A08
+RELAY-KA08,CB-48A-08,medium,control,middle_train_A_480_feeders: dashed relay contact path is drawn adjacent to breaker CB-48A-08
+TT-A08,TB-A08,medium,instrument,middle_train_A_480_feeders: instrument circle TT-A08 has short dashed signal lead into terminal block TB-A08
+BUS-480A,CB-48A-09,high,ac-power,middle_train_A_480_feeders: bus tap descends from BUS-480A into breaker CB-48A-09
+CB-48A-09,DS-48A-09,high,ac-power,middle_train_A_480_feeders: solid vertical feeder from CB-48A-09 to disconnect DS-48A-09
+DS-48A-09,KON-A09,high,ac-power,middle_train_A_480_feeders: solid feeder continues from DS-48A-09 to series device KON-A09
+KON-A09,TB-A09,high,ac-power,middle_train_A_480_feeders: solid feeder continues from KON-A09 to terminal block TB-A09
+TB-A09,COMP-IA-1A,high,ac-power,middle_train_A_480_feeders: solid feeder descends from terminal block TB-A09 to load COMP-IA-1A
+COMP-IA-1A,GND-A09,medium,ground,middle_train_A_480_feeders: vertical continuation below load COMP-IA-1A terminates at ground symbol GND-A09
+RELAY-KA09,CB-48A-09,medium,control,middle_train_A_480_feeders: dashed relay contact path is drawn adjacent to breaker CB-48A-09
+PS-A09,TB-A09,medium,instrument,middle_train_A_480_feeders: instrument circle PS-A09 has short dashed signal lead into terminal block TB-A09
+PANEL-ESF-A,PANEL-RPS-A,medium,control,lower_train_A_dc_ups: dashed panel bundle spans PANEL-ESF-A to PANEL-RPS-A
+PANEL-RPS-A,PANEL-LS-A,medium,control,lower_train_A_dc_ups: dashed panel bundle continues from PANEL-RPS-A to PANEL-LS-A
+PANEL-RPS-A,CHG-125A,medium,mixed,lower_train_A_dc_ups: vertical solid drop from panel area aligns with CHG-125A and DC bus tap
+CHG-125A,BUS-125DCA,high,dc-power,lower_train_A_dc_ups: charger output line lands on BUS-125DCA with junction dot
+BAT-125A,BUS-125DCA,high,dc-power,lower_train_A_dc_ups: battery vertical lead lands on BUS-125DCA
+BUS-125DCA,INV-120A,high,dc-power,lower_train_A_dc_ups: vertical DC feed descends from BUS-125DCA to inverter INV-120A
+INV-120A,BUS-UPS-A,high,ups-power,lower_train_A_dc_ups and bottom_terminal_blocks: inverter output lands on BUS-UPS-A
+BUS-4B,CB-4B-01,high,ac-power,upper_train_B_sources: bus tap descends from BUS-4B into breaker CB-4B-01
+CB-4B-01,DS-4B-01,high,ac-power,upper_train_B_sources: solid vertical feeder from CB-4B-01 to disconnect DS-4B-01
+DS-4B-01,FU-B01,high,ac-power,upper_train_B_sources: solid feeder continues from DS-4B-01 to series device FU-B01
+FU-B01,TB-B01,high,ac-power,upper_train_B_sources: solid feeder continues from FU-B01 to terminal block TB-B01
+TB-B01,PUMP-CS-1B,high,ac-power,upper_train_B_sources: solid feeder descends from terminal block TB-B01 to load PUMP-CS-1B
+PUMP-CS-1B,GND-B01,medium,ground,upper_train_B_sources: vertical continuation below load PUMP-CS-1B terminates at ground symbol GND-B01
+RELAY-KB01,CB-4B-01,medium,control,upper_train_B_sources: dashed relay contact path is drawn adjacent to breaker CB-4B-01
+FI-B01,TB-B01,medium,instrument,upper_train_B_sources: instrument circle FI-B01 has short dashed signal lead into terminal block TB-B01
+BUS-4B,CB-4B-02,high,ac-power,upper_train_B_sources: bus tap descends from BUS-4B into breaker CB-4B-02
+CB-4B-02,DS-4B-02,high,ac-power,upper_train_B_sources: solid vertical feeder from CB-4B-02 to disconnect DS-4B-02
+DS-4B-02,OL-B02,high,ac-power,upper_train_B_sources: solid feeder continues from DS-4B-02 to series device OL-B02
+OL-B02,TB-B02,high,ac-power,upper_train_B_sources: solid feeder continues from OL-B02 to terminal block TB-B02
+TB-B02,PUMP-RHR-1B,high,ac-power,upper_train_B_sources: solid feeder descends from terminal block TB-B02 to load PUMP-RHR-1B
+PUMP-RHR-1B,GND-B02,medium,ground,upper_train_B_sources: vertical continuation below load PUMP-RHR-1B terminates at ground symbol GND-B02
+RELAY-KB02,CB-4B-02,medium,control,upper_train_B_sources: dashed relay contact path is drawn adjacent to breaker CB-4B-02
+PI-B02,TB-B02,medium,instrument,upper_train_B_sources: instrument circle PI-B02 has short dashed signal lead into terminal block TB-B02
+BUS-4B,CB-4B-07,high,ac-power,upper_train_B_sources: bus tap descends from BUS-4B into breaker CB-4B-07
+CB-4B-07,DS-4B-07,high,ac-power,upper_train_B_sources: solid vertical feeder from CB-4B-07 to disconnect DS-4B-07
+DS-4B-07,FU-B07,high,ac-power,upper_train_B_sources: solid feeder continues from DS-4B-07 to series device FU-B07
+FU-B07,TB-B07,high,ac-power,upper_train_B_sources: solid feeder continues from FU-B07 to terminal block TB-B07
+TB-B07,PUMP-CW-1B,high,ac-power,upper_train_B_sources: solid feeder descends from terminal block TB-B07 to load PUMP-CW-1B
+PUMP-CW-1B,GND-B07,medium,ground,upper_train_B_sources: vertical continuation below load PUMP-CW-1B terminates at ground symbol GND-B07
+RELAY-KB07,CB-4B-07,medium,control,upper_train_B_sources: dashed relay contact path is drawn adjacent to breaker CB-4B-07
+PT-B07,TB-B07,medium,instrument,upper_train_B_sources: instrument circle PT-B07 has short dashed signal lead into terminal block TB-B07
+BUS-480B,CB-48B-03,high,ac-power,middle_train_B_480_feeders: bus tap descends from BUS-480B into breaker CB-48B-03
+CB-48B-03,DS-48B-03,high,ac-power,middle_train_B_480_feeders: solid vertical feeder from CB-48B-03 to disconnect DS-48B-03
+DS-48B-03,KON-B03,high,ac-power,middle_train_B_480_feeders: solid feeder continues from DS-48B-03 to series device KON-B03
+KON-B03,TB-B03,high,ac-power,middle_train_B_480_feeders: solid feeder continues from KON-B03 to terminal block TB-B03
+TB-B03,PUMP-SW-1B,high,ac-power,middle_train_B_480_feeders: solid feeder descends from terminal block TB-B03 to load PUMP-SW-1B
+PUMP-SW-1B,GND-B03,medium,ground,middle_train_B_480_feeders: vertical continuation below load PUMP-SW-1B terminates at ground symbol GND-B03
+RELAY-KB03,CB-48B-03,medium,control,middle_train_B_480_feeders: dashed relay contact path is drawn adjacent to breaker CB-48B-03
+FS-B03,TB-B03,medium,instrument,middle_train_B_480_feeders: instrument circle FS-B03 has short dashed signal lead into terminal block TB-B03
+BUS-480B,CB-48B-04,high,ac-power,middle_train_B_480_feeders: bus tap descends from BUS-480B into breaker CB-48B-04
+CB-48B-04,DS-48B-04,high,ac-power,middle_train_B_480_feeders: solid vertical feeder from CB-48B-04 to disconnect DS-48B-04
+DS-48B-04,FU-B04,high,ac-power,middle_train_B_480_feeders: solid feeder continues from DS-48B-04 to series device FU-B04
+FU-B04,TB-B04,high,ac-power,middle_train_B_480_feeders: solid feeder continues from FU-B04 to terminal block TB-B04
+TB-B04,FAN-CR-1B,high,ac-power,middle_train_B_480_feeders: solid feeder descends from terminal block TB-B04 to load FAN-CR-1B
+FAN-CR-1B,GND-B04,medium,ground,middle_train_B_480_feeders: vertical continuation below load FAN-CR-1B terminates at ground symbol GND-B04
+RELAY-KB04,CB-48B-04,medium,control,middle_train_B_480_feeders: dashed relay contact path is drawn adjacent to breaker CB-48B-04
+TS-B04,TB-B04,medium,instrument,middle_train_B_480_feeders: instrument circle TS-B04 has short dashed signal lead into terminal block TB-B04
+BUS-480B,CB-48B-05,high,ac-power,middle_train_B_480_feeders: bus tap descends from BUS-480B into breaker CB-48B-05
+CB-48B-05,DS-48B-05,high,ac-power,middle_train_B_480_feeders: solid vertical feeder from CB-48B-05 to disconnect DS-48B-05
+DS-48B-05,OL-B05,high,ac-power,middle_train_B_480_feeders: solid feeder continues from DS-48B-05 to series device OL-B05
+OL-B05,TB-B05,high,ac-power,middle_train_B_480_feeders: solid feeder continues from OL-B05 to terminal block TB-B05
+TB-B05,MOV-SI-101B,high,ac-power,middle_train_B_480_feeders: solid feeder descends from terminal block TB-B05 to load MOV-SI-101B
+MOV-SI-101B,GND-B05,medium,ground,middle_train_B_480_feeders: vertical continuation below load MOV-SI-101B terminates at ground symbol GND-B05
+RELAY-KB05,CB-48B-05,medium,control,middle_train_B_480_feeders: dashed relay contact path is drawn adjacent to breaker CB-48B-05
+ZS-B05,TB-B05,medium,instrument,middle_train_B_480_feeders: instrument circle ZS-B05 has short dashed signal lead into terminal block TB-B05
+BUS-480B,CB-48B-06,high,ac-power,middle_train_B_480_feeders: bus tap descends from BUS-480B into breaker CB-48B-06
+CB-48B-06,DS-48B-06,high,ac-power,middle_train_B_480_feeders: solid vertical feeder from CB-48B-06 to disconnect DS-48B-06
+DS-48B-06,KON-B06,high,ac-power,middle_train_B_480_feeders: solid feeder continues from DS-48B-06 to series device KON-B06
+KON-B06,TB-B06,high,ac-power,middle_train_B_480_feeders: solid feeder continues from KON-B06 to terminal block TB-B06
+TB-B06,INV-AUX-1B,high,ac-power,middle_train_B_480_feeders: solid feeder descends from terminal block TB-B06 to load INV-AUX-1B
+INV-AUX-1B,GND-B06,medium,ground,middle_train_B_480_feeders: vertical continuation below load INV-AUX-1B terminates at ground symbol GND-B06
+RELAY-KB06,CB-48B-06,medium,control,middle_train_B_480_feeders: dashed relay contact path is drawn adjacent to breaker CB-48B-06
+VM-B06,TB-B06,medium,instrument,middle_train_B_480_feeders: instrument circle VM-B06 has short dashed signal lead into terminal block TB-B06
+BUS-480B,CB-48B-08,high,ac-power,middle_train_B_480_feeders: bus tap descends from BUS-480B into breaker CB-48B-08
+CB-48B-08,DS-48B-08,high,ac-power,middle_train_B_480_feeders: solid vertical feeder from CB-48B-08 to disconnect DS-48B-08
+DS-48B-08,OL-B08,high,ac-power,middle_train_B_480_feeders: solid feeder continues from DS-48B-08 to series device OL-B08
+OL-B08,TB-B08,high,ac-power,middle_train_B_480_feeders: solid feeder continues from OL-B08 to terminal block TB-B08
+TB-B08,HVAC-CHLR-1B,high,ac-power,middle_train_B_480_feeders: solid feeder descends from terminal block TB-B08 to load HVAC-CHLR-1B
+HVAC-CHLR-1B,GND-B08,medium,ground,middle_train_B_480_feeders: vertical continuation below load HVAC-CHLR-1B terminates at ground symbol GND-B08
+RELAY-KB08,CB-48B-08,medium,control,middle_train_B_480_feeders: dashed relay contact path is drawn adjacent to breaker CB-48B-08
+LT-B08,TB-B08,medium,instrument,middle_train_B_480_feeders: instrument circle LT-B08 has short dashed signal lead into terminal block TB-B08
+PANEL-LS-B,PANEL-RPS-B,medium,control,lower_train_B_dc_ups: dashed panel bundle spans PANEL-LS-B to PANEL-RPS-B
+PANEL-RPS-B,PANEL-ESF-B,medium,control,lower_train_B_dc_ups: dashed panel bundle continues from PANEL-RPS-B to PANEL-ESF-B
+PANEL-LS-B,CHG-125B,medium,mixed,lower_train_B_dc_ups: vertical solid drop from panel area aligns with CHG-125B and DC bus tap
+CHG-125B,BUS-125DCB,high,dc-power,lower_train_B_dc_ups: charger output line lands on BUS-125DCB with junction dot
+BAT-125B,BUS-125DCB,high,dc-power,lower_train_B_dc_ups: battery vertical lead lands on BUS-125DCB
+BUS-125DCB,INV-120B,high,dc-power,lower_train_B_dc_ups: vertical DC feed descends from BUS-125DCB to inverter INV-120B
+INV-120B,BUS-UPS-B,high,ups-power,lower_train_B_dc_ups: inverter output lands on BUS-UPS-B
+BUS-125DCA,CB-DC-TIE,high,dc-power,center_tie_verticals: lower DC tie breaker is in series between BUS-125DCA and BUS-125DCB
+CB-DC-TIE,BUS-125DCB,high,dc-power,center_tie_verticals: lower DC tie breaker exits toward BUS-125DCB
+PANEL-MCR,PANEL-ANN,medium,control,center_tie_verticals: dashed vertical route connects PANEL-MCR down to PANEL-ANN
+PANEL-ANN,CB-DC-TIE,low,control,center_tie_verticals: dashed vertical route continues from annunciator panel toward CB-DC-TIE

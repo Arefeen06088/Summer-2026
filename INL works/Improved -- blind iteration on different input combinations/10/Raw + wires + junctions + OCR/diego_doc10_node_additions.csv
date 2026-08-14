@@ -1,0 +1,14 @@
+node_label,node_kind,action,reason,evidence,confidence
+BUS-SWY-345KV,bus,add,Top solid 345 kV switchyard bus label is not in component CSV,crop_raw_top_sources_345_4160.png and wire_nodes_overlay.png,high
+BUS-4160-A,bus,add,Vertical thick bus labelled BUS-4160-A and 4160V CL1E SWGR A is not in component CSV,crop_raw_train_a_4160_switchgear.png,high
+BUS-4160-B,bus,add,Vertical thick bus labelled BUS-4160-B and 4160V CL1E SWGR B is not in component CSV,crop_raw_train_b_4160_switchgear.png,high
+TR-UPS-A,physical_component,add,Transformer symbol and label TR-UPS-A is visible but absent from component CSV,crop_raw_train_a_4160_switchgear.png and component_labels_banners_overlay.png,high
+TR-UPS-B,physical_component,add,Transformer symbol and label TR-UPS-B is visible but absent from component CSV,crop_raw_train_b_4160_switchgear.png and component_labels_banners_overlay.png,high
+480V-LC-FEEDERS-A,logical_feeder_bus,add,Drawn feeder label beneath A-side switchgear feeding low-voltage load centers is not in component CSV,crop_raw_train_a_4160_switchgear.png and crop_raw_train_a_480_mcc_loads.png,high
+480V-LC-FEEDERS-B,logical_feeder_bus,add,Drawn feeder label beneath B-side switchgear feeding low-voltage load centers is not in component CSV,crop_raw_train_b_4160_switchgear.png and crop_raw_train_b_480_mcc_loads.png,high
+BUS-DC-A,bus,add,Drawn DC bus label between BAT-1A and INV-1A is not in component CSV,crop_raw_train_a_dc_ups_ground.png,high
+BUS-DC-B,bus,add,Drawn DC bus label between BAT-1B and INV-1B is not in component CSV,crop_raw_train_b_dc_ups_ground.png,high
+BUS-UPS-A,bus,add,Drawn UPS bus label between INV-1A and PNL-UPS-A is not in component CSV,crop_raw_train_a_dc_ups_ground.png,high
+BUS-UPS-B,bus,add,Drawn UPS bus label between INV-1B and PNL-UPS-B is not in component CSV,crop_raw_train_b_dc_ups_ground.png,high
+CT-CAB-A-CONTROL-CABLE-TRAY,control_cable_tray,add,Dashed control cable tray label CT-CAB-A spans train A and routes to MCR bay,crop_raw_top_sources_345_4160.png and crop_raw_left_control_panels.png,medium
+CT-CAB-B-CONTROL-CABLE-TRAY,control_cable_tray,add,Dashed control cable tray label CT-CAB-B spans train B and routes to MCR bay,crop_raw_top_sources_345_4160.png and crop_raw_right_control_panels.png,medium

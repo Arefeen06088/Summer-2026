@@ -1,0 +1,42 @@
+[
+  {
+    "round": "round01_diego",
+    "node_count": 197,
+    "edge_count": 195,
+    "matrix": "round01_diego_connectivity_matrix.csv",
+    "edges": "round01_diego_edges.csv",
+    "agent": "Diego",
+    "role": "high-recall extractor",
+    "summary": "Initial high-recall extraction included label/continuation nodes and tentative JB-to-DC/voltage-label/local-I/O edges."
+  },
+  {
+    "round": "round01_jennifer",
+    "node_count": 187,
+    "edge_count": 183,
+    "matrix": "round01_jennifer_connectivity_matrix.csv",
+    "edges": "round01_jennifer_edges.csv",
+    "agent": "Jennifer",
+    "role": "precision reviewer/refiner",
+    "summary": "Removed label-only and continuation-only nodes/edges, kept only landed relay-control edges, but still listed isolated GND-B."
+  },
+  {
+    "round": "round02_diego",
+    "node_count": 186,
+    "edge_count": 183,
+    "matrix": "round02_diego_connectivity_matrix.csv",
+    "edges": "round02_diego_edges.csv",
+    "agent": "Diego",
+    "role": "high-recall saturation review",
+    "summary": "Agreed with Jennifer's corrected candidate and noted the isolated GND-B count issue."
+  },
+  {
+    "round": "round02_jennifer",
+    "node_count": 186,
+    "edge_count": 183,
+    "matrix": "round02_jennifer_connectivity_matrix.csv",
+    "edges": "round02_jennifer_edges.csv",
+    "agent": "Jennifer",
+    "role": "precision final signoff",
+    "summary": "Removed isolated GND-B for the final accepted/connected matrix."
+  }
+]

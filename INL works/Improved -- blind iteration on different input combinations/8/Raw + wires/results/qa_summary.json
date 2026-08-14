@@ -1,0 +1,43 @@
+[
+  {
+    "round": "round1_diego",
+    "node_count": 120,
+    "edge_count": 139,
+    "matrix_size": [
+      120,
+      120
+    ],
+    "symmetric": true,
+    "diagonal_zero": true,
+    "isolated_nodes": [
+      "VLV-HV-302B"
+    ],
+    "notes": "Diego R1 high-recall proposal. This is reconstructed from the final list plus Jennifer's explicit deltas: it includes PN-480-B--CHGR-125B and JB-2B1--CP-ESFAS-B, but excludes Jennifer's promoted edges."
+  },
+  {
+    "round": "round1_jennifer",
+    "node_count": 120,
+    "edge_count": 140,
+    "matrix_size": [
+      120,
+      120
+    ],
+    "symmetric": true,
+    "diagonal_zero": true,
+    "isolated_nodes": [],
+    "notes": "Jennifer R1 precision correction. Promoted BUS-480-E2B--CHGR-125B, MCC-2C--PUMP-CHG-2A, PN-480-B--VLV-HV-302B; removed PN-480-B--CHGR-125B and JB-2B1--CP-ESFAS-B."
+  },
+  {
+    "round": "round2_diego_saturation",
+    "node_count": 120,
+    "edge_count": 140,
+    "matrix_size": [
+      120,
+      120
+    ],
+    "symmetric": true,
+    "diagonal_zero": true,
+    "isolated_nodes": [],
+    "notes": "Diego R2 accepted Jennifer R1 unchanged. Matrix saturated at 120 nodes and 140 accepted edges."
+  }
+]

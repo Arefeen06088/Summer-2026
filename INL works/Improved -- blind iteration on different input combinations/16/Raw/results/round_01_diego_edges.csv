@@ -1,0 +1,179 @@
+source,target,type,evidence
+GRID-161KV,TR-SST-1A,solid_power,top-left 4160 V station feed
+TR-SST-1A,CB-401A,solid_power,top-left station transformer A feeder
+CB-401A,BUS-4KV-A,solid_power,top 4 kV A bus
+TR-SST-1A,CB-401B,solid_power,top-left station transformer B feeder
+CB-401B,BUS-4KV-B,solid_power,top 4 kV B bus
+BUS-4KV-A,CB-TIE-4AB,solid_power,4 kV A/B tie
+CB-TIE-4AB,BUS-4KV-B,solid_power,4 kV A/B tie
+GEN-EDG-A,CB-EDG-A,solid_power,EDG A feeder
+CB-EDG-A,BUS-4KV-A,solid_power,EDG A feeder to A bus
+GEN-EDG-B,CB-EDG-B,solid_power,EDG B feeder
+CB-EDG-B,BUS-4KV-B,solid_power,EDG B feeder to B bus
+BUS-4KV-A,TR-4KV-480A,solid_power,A stepdown transformer
+TR-4KV-480A,CB-480A-IN,solid_power,A 480 V incomer
+CB-480A-IN,BUS-480-A,solid_power,A 480 V bus
+BUS-4KV-B,TR-4KV-480B,solid_power,B stepdown transformer
+TR-4KV-480B,CB-480B-IN,solid_power,B 480 V incomer
+CB-480B-IN,BUS-480-B,solid_power,B 480 V bus; crosses A header without dot
+BUS-480-A,CB-TIE-480AB,solid_power,480 V A/B tie
+CB-TIE-480AB,BUS-480-B,solid_power,480 V A/B tie
+BUS-480-A,CB-11A-FDR,solid_power,480 V A feeder
+CB-11A-FDR,MCC-11A,solid_power,MCC 11A feeder
+BUS-480-A,CB-12A-FDR,solid_power,480 V A feeder
+CB-12A-FDR,MCC-12A,solid_power,MCC 12A feeder
+BUS-480-A,CB-21A-FDR,solid_power,480 V A feeder
+CB-21A-FDR,MCC-21A,solid_power,MCC 21A feeder
+CB-31A-FDR30-B,MCC-31A,solid_power,MCC 31A feeder
+BUS-480-B,CB-11B-FDR,solid_power,480 V B feeder
+CB-11B-FDR,MCC-11B,solid_power,MCC 11B feeder
+BUS-480-B,CB-12B-FDR,solid_power,480 V B feeder
+CB-12B-FDR,MCC-12B,solid_power,MCC 12B feeder
+BUS-480-B,CB-21B-FDR,solid_power,480 V B feeder
+CB-21B-FDR,MCC-21B,solid_power,MCC 21B feeder
+BUS-480-B,CB-31B-FDR,solid_power,480 V B feeder
+CB-31B-FDR,MCC-31B,solid_power,MCC 31B feeder
+MCC-11A,CB-P201A,solid_power,MCC-11A branch P201A
+CB-P201A,RELAY-KP201A,solid_power/control,MCC-11A branch P201A relay path
+RELAY-KP201A,PUMP-RHR201A,solid_power,MCC-11A branch P201A load path
+PUMP-RHR201A,GND-P201A,ground_or_terminal,MCC-11A branch P201A terminal/ground endpoint
+MCC-11A,CB-P211A,solid_power,MCC-11A branch P211A
+CB-P211A,RELAY-KP211A,solid_power/control,MCC-11A branch P211A relay path
+RELAY-KP211A,PUMP-CS211A,solid_power,MCC-11A branch P211A load path
+PUMP-CS211A,GND-P211A,ground_or_terminal,MCC-11A branch P211A terminal/ground endpoint
+MCC-11A,CB-P221A,solid_power,MCC-11A branch P221A
+CB-P221A,RELAY-KP221A,solid_power/control,MCC-11A branch P221A relay path
+RELAY-KP221A,PUMP-SI221A,solid_power,MCC-11A branch P221A load path
+PUMP-SI221A,GND-P221A,ground_or_terminal,MCC-11A branch P221A terminal/ground endpoint
+MCC-12A,CB-P101A,solid_power,MCC-12A branch P101A
+CB-P101A,RELAY-KP101A,solid_power/control,MCC-12A branch P101A relay path
+RELAY-KP101A,PUMP-AFW101A,solid_power,MCC-12A branch P101A load path
+PUMP-AFW101A,GND-P101A,ground_or_terminal,MCC-12A branch P101A terminal/ground endpoint
+MCC-12A,CB-HV101A,solid_power,MCC-12A branch HV101A
+CB-HV101A,RELAY-KHV101A,solid_power/control,MCC-12A branch HV101A relay path
+RELAY-KHV101A,MOV-HV101A,solid_power,MCC-12A branch HV101A load path
+MOV-HV101A,TB-HV101A,ground_or_terminal,MCC-12A branch HV101A terminal/ground endpoint
+MCC-12A,CB-FN1A,solid_power,MCC-12A branch FN1A
+CB-FN1A,RELAY-KFN1A,solid_power/control,MCC-12A branch FN1A relay path
+RELAY-KFN1A,FAN-FN1A,solid_power,MCC-12A branch FN1A load path
+FAN-FN1A,GND-FN1A,ground_or_terminal,MCC-12A branch FN1A terminal/ground endpoint
+MCC-21A,CB-P301A,solid_power,MCC-21A branch P301A
+CB-P301A,RELAY-KP301A,solid_power/control,MCC-21A branch P301A relay path
+RELAY-KP301A,PUMP-CCW301A,solid_power,MCC-21A branch P301A load path
+PUMP-CCW301A,GND-P301A,ground_or_terminal,MCC-21A branch P301A terminal/ground endpoint
+MCC-21A,CB-P401A,solid_power,MCC-21A branch P401A
+CB-P401A,RELAY-KP401A,solid_power/control,MCC-21A branch P401A relay path
+RELAY-KP401A,PUMP-SW401A,solid_power,MCC-21A branch P401A load path
+PUMP-SW401A,GND-P401A,ground_or_terminal,MCC-21A branch P401A terminal/ground endpoint
+MCC-21A,CB-HT1A,solid_power,MCC-21A branch HT1A
+CB-HT1A,RELAY-KHT1A,solid_power/control,MCC-21A branch HT1A relay path
+RELAY-KHT1A,HTR-PZR1A,solid_power,MCC-21A branch HT1A load path
+HTR-PZR1A,TB-HT1A,ground_or_terminal,MCC-21A branch HT1A terminal/ground endpoint
+MCC-31A,CB-RM1A,solid_power,MCC-31A branch RM1A
+CB-RM1A,RELAY-KRM1A,solid_power/control,MCC-31A branch RM1A relay path
+RELAY-KRM1A,MON-RAD1A,solid_power,MCC-31A branch RM1A load path
+MON-RAD1A,TB-RM1A,ground_or_terminal,MCC-31A branch RM1A terminal/ground endpoint
+MCC-31A,CB-P501A,solid_power,MCC-31A branch P501A
+CB-P501A,RELAY-KP501A,solid_power/control,MCC-31A branch P501A relay path
+RELAY-KP501A,PUMP-CHM501A,solid_power,MCC-31A branch P501A load path
+PUMP-CHM501A,GND-P501A,ground_or_terminal,MCC-31A branch P501A terminal/ground endpoint
+MCC-31A,CB-CV121A,solid_power,MCC-31A branch CV121A
+CB-CV121A,RELAY-KCV121A,solid_power/control,MCC-31A branch CV121A relay path
+RELAY-KCV121A,MOV-CV121A,solid_power,MCC-31A branch CV121A load path
+MOV-CV121A,TB-CV121A,ground_or_terminal,MCC-31A branch CV121A terminal/ground endpoint
+MCC-11B,CB-P201B,solid_power,MCC-11B branch P201B
+CB-P201B,RELAY-KP201B,solid_power/control,MCC-11B branch P201B relay path
+RELAY-KP201B,PUMP-RHR201B,solid_power,MCC-11B branch P201B load path
+PUMP-RHR201B,GND-P201B,ground_or_terminal,MCC-11B branch P201B terminal/ground endpoint
+MCC-11B,CB-P211B,solid_power,MCC-11B branch P211B
+CB-P211B,RELAY-KP211B,solid_power/control,MCC-11B branch P211B relay path
+RELAY-KP211B,PUMP-CS211B,solid_power,MCC-11B branch P211B load path
+PUMP-CS211B,GND-P211B,ground_or_terminal,MCC-11B branch P211B terminal/ground endpoint
+MCC-11B,CB-P221B,solid_power,MCC-11B branch P221B
+CB-P221B,RELAY-KP221B,solid_power/control,MCC-11B branch P221B relay path
+RELAY-KP221B,PUMP-SI221B,solid_power,MCC-11B branch P221B load path
+PUMP-SI221B,GND-P221B,ground_or_terminal,MCC-11B branch P221B terminal/ground endpoint
+MCC-12B,CB-P101B,solid_power,MCC-12B branch P101B
+CB-P101B,RELAY-KP101B,solid_power/control,MCC-12B branch P101B relay path
+RELAY-KP101B,PUMP-AFW101B,solid_power,MCC-12B branch P101B load path
+PUMP-AFW101B,GND-P101B,ground_or_terminal,MCC-12B branch P101B terminal/ground endpoint
+MCC-12B,CB-HV101B,solid_power,MCC-12B branch HV101B
+CB-HV101B,RELAY-KHV101B,solid_power/control,MCC-12B branch HV101B relay path
+RELAY-KHV101B,MOV-HV101B,solid_power,MCC-12B branch HV101B load path
+MOV-HV101B,TB-HV101B,ground_or_terminal,MCC-12B branch HV101B terminal/ground endpoint
+MCC-12B,CB-FN1B,solid_power,MCC-12B branch FN1B
+CB-FN1B,RELAY-KFN1B,solid_power/control,MCC-12B branch FN1B relay path
+RELAY-KFN1B,FAN-FN1B,solid_power,MCC-12B branch FN1B load path
+FAN-FN1B,GND-FN1B,ground_or_terminal,MCC-12B branch FN1B terminal/ground endpoint
+MCC-21B,CB-P301B,solid_power,MCC-21B branch P301B
+CB-P301B,RELAY-KP301B,solid_power/control,MCC-21B branch P301B relay path
+RELAY-KP301B,PUMP-CCW301B,solid_power,MCC-21B branch P301B load path
+PUMP-CCW301B,GND-P301B,ground_or_terminal,MCC-21B branch P301B terminal/ground endpoint
+MCC-21B,CB-P401B,solid_power,MCC-21B branch P401B
+CB-P401B,RELAY-KP401B,solid_power/control,MCC-21B branch P401B relay path
+RELAY-KP401B,PUMP-SW401B,solid_power,MCC-21B branch P401B load path
+PUMP-SW401B,GND-P401B,ground_or_terminal,MCC-21B branch P401B terminal/ground endpoint
+MCC-21B,CB-HT1B,solid_power,MCC-21B branch HT1B
+CB-HT1B,RELAY-KHT1B,solid_power/control,MCC-21B branch HT1B relay path
+RELAY-KHT1B,HTR-PZR1B,solid_power,MCC-21B branch HT1B load path
+HTR-PZR1B,TB-HT1B,ground_or_terminal,MCC-21B branch HT1B terminal/ground endpoint
+MCC-31B,CB-RM1B,solid_power,MCC-31B branch RM1B
+CB-RM1B,RELAY-KRM1B,solid_power/control,MCC-31B branch RM1B relay path
+RELAY-KRM1B,MON-RAD1B,solid_power,MCC-31B branch RM1B load path
+MON-RAD1B,TB-RM1B,ground_or_terminal,MCC-31B branch RM1B terminal/ground endpoint
+MCC-31B,CB-P501B,solid_power,MCC-31B branch P501B
+CB-P501B,RELAY-KP501B,solid_power/control,MCC-31B branch P501B relay path
+RELAY-KP501B,PUMP-CHM501B,solid_power,MCC-31B branch P501B load path
+PUMP-CHM501B,GND-P501B,ground_or_terminal,MCC-31B branch P501B terminal/ground endpoint
+MCC-31B,CB-CV121B,solid_power,MCC-31B branch CV121B
+CB-CV121B,RELAY-KCV121B,solid_power/control,MCC-31B branch CV121B relay path
+RELAY-KCV121B,MOV-CV121B,solid_power,MCC-31B branch CV121B load path
+MOV-CV121B,TB-CV121B,ground_or_terminal,MCC-31B branch CV121B terminal/ground endpoint
+BUS-480-A,TR-RPS-A,solid_power,A RPS transformer feed
+TR-RPS-A,MG-RPS-A,solid_power,A RPS motor-generator feed
+MG-RPS-A,BUS-120-RPS-A,solid_power,A 120 VAC vital bus
+BUS-480-B,TR-RPS-B,solid_power,B RPS transformer feed
+TR-RPS-B,MG-RPS-B,solid_power,B RPS motor-generator feed
+MG-RPS-B,BUS-120-RPS-B,solid_power,B 120 VAC vital bus
+BATT-125A,CHGR-125A,dashed_dc_power,A battery to charger
+CHGR-125A,BUS-125DC-A,solid/dc_power,A charger to 125 VDC bus
+BUS-125DC-A,INV-120A,solid_power,A DC bus to inverter
+INV-120A,BUS-120-RPS-A,solid_power,A inverter to 120 VAC bus
+BATT-125B,CHGR-125B,dashed_dc_power,B battery to charger
+CHGR-125B,BUS-125DC-B,solid/dc_power,B charger to 125 VDC bus
+BUS-125DC-B,INV-120B,solid_power,B DC bus to inverter
+INV-120B,BUS-120-RPS-B,solid_power,B inverter to 120 VAC bus
+CP-RPS-A,JB-RPS-AB-1A,dashed_control,A RPS control panel to junction box
+JB-RPS-AB-1A,PROT-UV-A,dashed_control,A UV protection path
+PROT-UV-A,RELAY-27A,dashed_control,A UV protection relay
+CP-ESF-A,TB-2A,dashed_control,A ESF control panel to terminal block
+TB-2A,PROT-GF-A,dashed_control,A GF protection path
+PROT-GF-A,RELAY-86A,dashed_control,A GF lockout relay
+CP-DCS-01,TB-3A,dashed_control,DCS panel to A terminal block
+CP-DCS-01,PT-RCS101,dotted_signal,DCS to pressure transmitter
+PT-RCS101,REC-SOE-1,dotted_signal,pressure transmitter to recorder
+CP-DCS-01,TB-ESF-1,dotted_signal,DCS to ESF terminal block 1
+TB-ESF-1,LT-RWST101,dotted_signal,level signal path
+LT-RWST101,ANN-501,dotted_signal,level transmitter to annunciator
+TB-ESF-1,FT-AFW101,dotted_signal,flow signal path
+FT-AFW101,METER-VM-1,dotted_signal,flow transmitter to meter
+CP-RPS-B,JB-RPS-B3-1B,dashed_control,B RPS control panel to junction box
+JB-RPS-B3-1B,PROT-UV-B,dashed_control,B UV protection path
+PROT-UV-B,RELAY-27B,dashed_control,B UV protection relay
+CP-ESF-B,TB-2B,dashed_control,B ESF control panel to terminal block
+TB-2B,PROT-GF-B,dashed_control,B GF protection path
+PROT-GF-B,RELAY-86B,dashed_control,B GF lockout relay
+CP-ANN-01,TB-3B,dashed_control,annunciator panel to B terminal block
+MG-RPS-B,TB-ESF-2,dotted_signal,B-side MG/ESF signal path accepted by reviewer
+TB-ESF-2,LS-SUMP101,dotted_signal,sump level switch
+TB-ESF-2,XS-DOOR101,dotted_signal,door switch
+TB-ESF-2,JB-CONTAIN,dotted_signal,containment junction box
+BUS-120-RPS-A,UCP-01,dashed_control,A 120 VAC bus to shared UCP
+BUS-120-RPS-B,UCP-01,dashed_control,B 120 VAC bus to shared UCP
+UCP-01,GND-NO,ground,UCP ground
+BUS-480-A,CB-31A-FDR30-B,solid_power,"Diego R1 high-recall placement, later corrected to BUS-480-B"
+BUS-125DC-A,BATT-125A,solid/dc_power,"Diego R1 direct battery-bus edge, later removed"
+BUS-125DC-B,BATT-125B,solid/dc_power,"Diego R1 direct battery-bus edge, later removed"
+RELAY-86A,TB-3A,dashed_control,"Diego R1 plausible lower control route, later removed"
+RELAY-86B,TB-3B,dashed_control,"Diego R1 plausible lower control route, later removed"
+MG-RPS-B,RTD-RCS101,dotted_signal,"Diego R1 plausible signal tap, later excluded"

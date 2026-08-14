@@ -1,0 +1,22 @@
+source,target,status,evidence
+BUS-4KV-A,PT-4160A,uncertain_excluded,PT is visible but PT-to-bus sensing edge is not precision-clean
+BUS-4KV-B,PT-4160B,uncertain_excluded,PT is visible but PT-to-bus sensing edge is not precision-clean
+PNL-RPS-A,GND-1,uncertain_excluded,"ground shown as equipment reference only, not matrix connectivity"
+PNL-RPS-B,GND-2,uncertain_excluded,"ground shown as equipment reference only, not matrix connectivity"
+DS-F015,SPARE-A2,uncertain_excluded,"SPARE-A2 is a placeholder, not active load connectivity"
+ANN B,TB-RPS-B,uncertain_excluded,ANN B visible but no confirmed discrete endpoint
+RELAY-27A,TB-RPS-A,uncertain_excluded,dashed relay/RPS route is crowded and not endpoint-clean
+RELAY-27B,TB-RPS-B,uncertain_excluded,dashed relay/RPS route is crowded and not endpoint-clean
+RELAY-86A,TB-RPS-A,uncertain_excluded,lockout-to-terminal route is not endpoint-clean; only RELAY-50A--RELAY-86A retained
+RELAY-86B,TB-RPS-B,uncertain_excluded,lockout-to-terminal route is not endpoint-clean; only RELAY-50B--RELAY-86B retained
+BUS-120VAC-ESF,PNL-RPS-A,uncertain_excluded,instrument bus to RPS-A endpoint is not precision-clean
+BUS-120VAC-ESF,PNL-RPS-B,uncertain_excluded,instrument bus to RPS-B endpoint is not precision-clean
+BUS-120VAC-ESF,SEQ-REC-1,uncertain_excluded,recorder feed is not precision-clean
+PNL-RPS-A,PNL-ESFAS-A,uncertain_excluded,dashed RPS/ESFAS route is ambiguous
+PNL-RPS-B,PNL-ESFAS-B,uncertain_excluded,dashed RPS/ESFAS route is ambiguous
+BUS-480-C,MCC-2A,uncertain_excluded,direct bypass would skip CB-M2A and appears to be routing/crossing clutter
+BUS-480-B,MCC-2B,uncertain_excluded,direct bypass would skip CB-M2B and appears to be routing/crossing clutter
+CB-F019,CB-DC-1B,uncertain_excluded,vertical alignment near MOV-RCIC-B is treated as crossing/routing artifact
+CB-F027,CB-DC-1B,uncertain_excluded,vertical alignment near FAN-BLDG-B is treated as crossing/routing artifact
+A_SOURCE_INTERLOCK_TRUNK,CB-101,uncertain_excluded,helper trunk node removed from final graph
+B_SOURCE_INTERLOCK_TRUNK,CB-203,uncertain_excluded,helper trunk node removed from final graph

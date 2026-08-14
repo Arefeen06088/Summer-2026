@@ -1,0 +1,6 @@
+document,iteration,call_id,actor,round,model,input_tokens_est,cached_input_tokens_est,output_tokens_est,reasoning_tokens_available,reasoning_tokens_low_est,reasoning_tokens_expected_est,reasoning_tokens_high_est,image_file_input_tokens_est,total_tokens_low_est,total_tokens_expected_est,total_tokens_high_est,usage_object_available,notes
+14,1,main_01_visual_orchestration_and_artifacts,main,orchestration,gpt-5,29,0,2200,no,2250,4500,8100,44973,49452,51702,71813,no,Local visual review and artifact-writing calls; exact Responses usage unavailable.
+14,1,diego_01_high_recall,Diego,round_01,gpt-5.5 xhigh,41,0,3210,no,4500,9000,16200,83038,90789,95289,132677,no,"Subagent response text was available, but usage object was not exposed."
+14,1,jennifer_01_precision,Jennifer,round_01,gpt-5.5 xhigh,44,0,2510,no,4000,8000,14400,81000,87554,91554,127183,no,"Subagent response text was available, but usage object was not exposed."
+14,1,diego_02_saturation,Diego,round_02,gpt-5.5 xhigh,86314,86289,190,no,1250,2500,4500,0,87754,89004,91071,no,Follow-up in same subagent thread; prior visual context estimated as cached input.
+14,1,jennifer_02_final,Jennifer,round_02,gpt-5.5 xhigh,83587,83554,95,no,750,1500,2700,0,84432,85182,86416,no,Follow-up in same subagent thread; prior visual context estimated as cached input.

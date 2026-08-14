@@ -1,0 +1,145 @@
+u,v,kind,evidence
+GEN-01,TR-UAT-1,solid,Generator GEN-01 solid 13.8 kV feeder lands on TR-UAT-1.
+TR-UAT-1,CB-UAT-1,solid,TR-UAT-1 secondary feeder lands on CB-UAT-1.
+CB-UAT-1,BUS-13-8A,solid,CB-UAT-1 is connected to BUS-13-8A.
+TR-SUT-1,CB-SUT-1,solid,TR-SUT-1 secondary feeder lands on CB-SUT-1.
+CB-SUT-1,BUS-13-8A,solid,CB-SUT-1 is connected to BUS-13-8A.
+BUS-13-8A,CB-13-TIE,solid,BUS-13-8A connects to the 13.8 kV tie breaker.
+CB-13-TIE,BUS-13-8B,solid,Tie breaker output connects to BUS-13-8B.
+GEN-02,TR-UAT-2,solid,Generator GEN-02 solid 13.8 kV feeder lands on TR-UAT-2.
+TR-UAT-2,CB-UAT-2,solid,TR-UAT-2 secondary feeder lands on CB-UAT-2.
+CB-UAT-2,BUS-13-8B,solid,CB-UAT-2 is connected to BUS-13-8B.
+TR-SUT-2,CB-SUT-2,solid,TR-SUT-2 secondary feeder lands on CB-SUT-2.
+CB-SUT-2,BUS-13-8B,solid,CB-SUT-2 is connected to BUS-13-8B.
+BUS-13-8A,CB-IN-A,solid,Normal feeder from BUS-13-8A drops to CB-IN-A.
+BUS-13-8A,CB-IN-B,solid,Normal feeder from BUS-13-8A drops to CB-IN-B.
+BUS-13-8B,CB-IN-C,solid,Normal feeder from BUS-13-8B drops to CB-IN-C.
+BUS-13-8B,CB-IN-D,solid,Normal feeder from BUS-13-8B drops to CB-IN-D.
+CB-IN-A,BUS-4160-A,solid,CB-IN-A solid incoming feeder lands on BUS-4160-A.
+DG-1A,CB-DG-A,solid,Diesel generator DG-1A feeder lands on CB-DG-A.
+CB-DG-A,BUS-4160-A,solid,CB-DG-A output lands on BUS-4160-A.
+CB-IN-A,RELAY-27A,dashed control,Dashed control path terminates at CB-IN-A and RELAY-27A.
+RELAY-27A,CB-DG-A,dashed control,Dashed 27 relay path terminates at CB-DG-A.
+RELAY-27A,PANEL-SSPS,dashed control,Dashed RELAY-27A route continues to visible PANEL-SSPS top terminals.
+BUS-4160-A,CB-4160-A1,solid,First 4.16 kV feeder from BUS-4160-A.
+CB-4160-A1,TR-480-A1,solid,CB-4160-A1 feeds TR-480-A1.
+TR-480-A1,CB-480-A1,solid,TR-480-A1 secondary feeds CB-480-A1.
+CB-480-A1,BUS-480-A1,solid,CB-480-A1 output lands on BUS-480-A1.
+BUS-4160-A,CB-4160-A2,solid,Second 4.16 kV feeder from BUS-4160-A.
+CB-4160-A2,TR-480-A2,solid,CB-4160-A2 feeds TR-480-A2.
+TR-480-A2,CB-480-A2,solid,TR-480-A2 secondary feeds CB-480-A2.
+CB-480-A2,BUS-480-A2,solid,CB-480-A2 output lands on BUS-480-A2.
+BUS-480-A1,BUS-480-A2,solid tie,Solid continuous 480 V bus tie at TIE-A12 between bus sections.
+BUS-480-A1,CB-MCC-A1,solid,BUS-480-A1 feeder drops to CB-MCC-A1.
+CB-MCC-A1,MCC-A1,solid,CB-MCC-A1 feeds MCC-A1.
+MCC-A1,PUMP-SI-A,solid,MCC-A1 feeder terminates at PUMP-SI-A.
+MCC-A1,PUMP-CCW-A,solid,MCC-A1 feeder terminates at PUMP-CCW-A.
+MCC-A1,FAN-HVAC-A,solid,MCC-A1 feeder terminates at FAN-HVAC-A.
+BUS-480-A2,CB-MCC-A2,solid,BUS-480-A2 feeder drops to CB-MCC-A2.
+CB-MCC-A2,MCC-A2,solid,CB-MCC-A2 feeds MCC-A2.
+MCC-A2,MOV-RHR-A,solid,MCC-A2 feeder terminates at MOV-RHR-A.
+MCC-A2,PANEL-IC-A,dashed control,Dashed conductor from MCC-A2 area terminates at PANEL-IC-A.
+BUS-480-A2,RECT-125-A,solid,BUS-480-A2 branch labeled 125 VDC/BC-A feeds RECT-125-A.
+RECT-125-A,PANEL-IC-A,solid,RECT-125-A output enters the PANEL-IC-A conductor path.
+PANEL-IC-A,GND-A,solid ground,PANEL-IC-A lower conductor connects to explicit GND-A symbol with dot.
+CB-IN-B,BUS-4160-B,solid,CB-IN-B solid incoming feeder lands on BUS-4160-B.
+DG-1B,CB-DG-B,solid,Diesel generator DG-1B feeder lands on CB-DG-B.
+CB-DG-B,BUS-4160-B,solid,CB-DG-B output lands on BUS-4160-B.
+CB-IN-B,RELAY-27B,dashed control,Dashed control path terminates at CB-IN-B and RELAY-27B.
+RELAY-27B,CB-DG-B,dashed control,Dashed 27 relay path terminates at CB-DG-B.
+RELAY-27B,PANEL-SSPS,dashed control,Dashed RELAY-27B route continues to visible PANEL-SSPS top terminals.
+BUS-4160-B,CB-4160-B1,solid,First 4.16 kV feeder from BUS-4160-B.
+CB-4160-B1,TR-480-B1,solid,CB-4160-B1 feeds TR-480-B1.
+TR-480-B1,CB-480-B1,solid,TR-480-B1 secondary feeds CB-480-B1.
+CB-480-B1,BUS-480-B1,solid,CB-480-B1 output lands on BUS-480-B1.
+BUS-4160-B,CB-4160-B2,solid,Second 4.16 kV feeder from BUS-4160-B.
+CB-4160-B2,TR-480-B2,solid,CB-4160-B2 feeds TR-480-B2.
+TR-480-B2,CB-480-B2,solid,TR-480-B2 secondary feeds CB-480-B2.
+CB-480-B2,BUS-480-B2,solid,CB-480-B2 output lands on BUS-480-B2.
+BUS-480-B1,BUS-480-B2,solid tie,Solid continuous 480 V bus tie at TIE-B12 between bus sections.
+BUS-480-B1,CB-MCC-B1,solid,BUS-480-B1 feeder drops to CB-MCC-B1.
+CB-MCC-B1,MCC-B1,solid,CB-MCC-B1 feeds MCC-B1.
+MCC-B1,PUMP-SI-B,solid,MCC-B1 feeder terminates at PUMP-SI-B.
+MCC-B1,PUMP-CCW-B,solid,MCC-B1 feeder terminates at PUMP-CCW-B.
+MCC-B1,FAN-HVAC-B,solid,MCC-B1 feeder terminates at FAN-HVAC-B.
+BUS-480-B2,CB-MCC-B2,solid,BUS-480-B2 feeder drops to CB-MCC-B2.
+CB-MCC-B2,MCC-B2,solid,CB-MCC-B2 feeds MCC-B2.
+MCC-B2,MOV-RHR-B,solid,MCC-B2 feeder terminates at MOV-RHR-B.
+MCC-B2,PANEL-IC-B,dashed control,Dashed conductor from MCC-B2 area terminates at PANEL-IC-B.
+BUS-480-B2,RECT-125-B,solid,BUS-480-B2 branch labeled 125 VDC/BC-B feeds RECT-125-B.
+RECT-125-B,PANEL-IC-B,solid,RECT-125-B output enters the PANEL-IC-B conductor path.
+PANEL-IC-B,GND-B,solid ground,PANEL-IC-B lower conductor connects to explicit GND-B symbol with dot.
+CB-IN-C,BUS-4160-C,solid,CB-IN-C solid incoming feeder lands on BUS-4160-C.
+DG-1C,CB-DG-C,solid,Diesel generator DG-1C feeder lands on CB-DG-C.
+CB-DG-C,BUS-4160-C,solid,CB-DG-C output lands on BUS-4160-C.
+CB-IN-C,RELAY-27C,dashed control,Dashed control path terminates at CB-IN-C and RELAY-27C.
+RELAY-27C,CB-DG-C,dashed control,Dashed 27 relay path terminates at CB-DG-C.
+RELAY-27C,PANEL-SSPS,dashed control,Dashed RELAY-27C route continues to visible PANEL-SSPS top terminals.
+BUS-4160-C,CB-4160-C1,solid,First 4.16 kV feeder from BUS-4160-C.
+CB-4160-C1,TR-480-C1,solid,CB-4160-C1 feeds TR-480-C1.
+TR-480-C1,CB-480-C1,solid,TR-480-C1 secondary feeds CB-480-C1.
+CB-480-C1,BUS-480-C1,solid,CB-480-C1 output lands on BUS-480-C1.
+BUS-4160-C,CB-4160-C2,solid,Second 4.16 kV feeder from BUS-4160-C.
+CB-4160-C2,TR-480-C2,solid,CB-4160-C2 feeds TR-480-C2.
+TR-480-C2,CB-480-C2,solid,TR-480-C2 secondary feeds CB-480-C2.
+CB-480-C2,BUS-480-C2,solid,CB-480-C2 output lands on BUS-480-C2.
+BUS-480-C1,BUS-480-C2,solid tie,Solid continuous 480 V bus tie at TIE-C12 between bus sections.
+BUS-480-C1,CB-MCC-C1,solid,BUS-480-C1 feeder drops to CB-MCC-C1.
+CB-MCC-C1,MCC-C1,solid,CB-MCC-C1 feeds MCC-C1.
+MCC-C1,PUMP-SI-C,solid,MCC-C1 feeder terminates at PUMP-SI-C.
+MCC-C1,PUMP-CCW-C,solid,MCC-C1 feeder terminates at PUMP-CCW-C.
+MCC-C1,FAN-HVAC-C,solid,MCC-C1 feeder terminates at FAN-HVAC-C.
+BUS-480-C2,CB-MCC-C2,solid,BUS-480-C2 feeder drops to CB-MCC-C2.
+CB-MCC-C2,MCC-C2,solid,CB-MCC-C2 feeds MCC-C2.
+MCC-C2,MOV-RHR-C,solid,MCC-C2 feeder terminates at MOV-RHR-C.
+MCC-C2,PANEL-IC-C,dashed control,Dashed conductor from MCC-C2 area terminates at PANEL-IC-C.
+BUS-480-C2,RECT-125-C,solid,BUS-480-C2 branch labeled 125 VDC/BC-C feeds RECT-125-C.
+RECT-125-C,PANEL-IC-C,solid,RECT-125-C output enters the PANEL-IC-C conductor path.
+PANEL-IC-C,GND-C,solid ground,PANEL-IC-C lower conductor connects to explicit GND-C symbol with dot.
+CB-IN-D,BUS-4160-D,solid,CB-IN-D solid incoming feeder lands on BUS-4160-D.
+DG-1D,CB-DG-D,solid,Diesel generator DG-1D feeder lands on CB-DG-D.
+CB-DG-D,BUS-4160-D,solid,CB-DG-D output lands on BUS-4160-D.
+CB-IN-D,RELAY-27D,dashed control,Dashed control path terminates at CB-IN-D and RELAY-27D.
+RELAY-27D,CB-DG-D,dashed control,Dashed 27 relay path terminates at CB-DG-D.
+RELAY-27D,PANEL-SSPS,dashed control,Dashed RELAY-27D route continues to visible PANEL-SSPS top terminals.
+BUS-4160-D,CB-4160-D1,solid,First 4.16 kV feeder from BUS-4160-D.
+CB-4160-D1,TR-480-D1,solid,CB-4160-D1 feeds TR-480-D1.
+TR-480-D1,CB-480-D1,solid,TR-480-D1 secondary feeds CB-480-D1.
+CB-480-D1,BUS-480-D1,solid,CB-480-D1 output lands on BUS-480-D1.
+BUS-4160-D,CB-4160-D2,solid,Second 4.16 kV feeder from BUS-4160-D.
+CB-4160-D2,TR-480-D2,solid,CB-4160-D2 feeds TR-480-D2.
+TR-480-D2,CB-480-D2,solid,TR-480-D2 secondary feeds CB-480-D2.
+CB-480-D2,BUS-480-D2,solid,CB-480-D2 output lands on BUS-480-D2.
+BUS-480-D1,BUS-480-D2,solid tie,Solid continuous 480 V bus tie at TIE-D12 between bus sections.
+BUS-480-D1,CB-MCC-D1,solid,BUS-480-D1 feeder drops to CB-MCC-D1.
+CB-MCC-D1,MCC-D1,solid,CB-MCC-D1 feeds MCC-D1.
+MCC-D1,PUMP-SI-D,solid,MCC-D1 feeder terminates at PUMP-SI-D.
+MCC-D1,PUMP-CCW-D,solid,MCC-D1 feeder terminates at PUMP-CCW-D.
+MCC-D1,FAN-HVAC-D,solid,MCC-D1 feeder terminates at FAN-HVAC-D.
+BUS-480-D2,CB-MCC-D2,solid,BUS-480-D2 feeder drops to CB-MCC-D2.
+CB-MCC-D2,MCC-D2,solid,CB-MCC-D2 feeds MCC-D2.
+MCC-D2,MOV-RHR-D,solid,MCC-D2 feeder terminates at MOV-RHR-D.
+MCC-D2,PANEL-IC-D,dashed control,Dashed conductor from MCC-D2 area terminates at PANEL-IC-D.
+BUS-480-D2,RECT-125-D,solid,BUS-480-D2 branch labeled 125 VDC/BC-D feeds RECT-125-D.
+RECT-125-D,PANEL-IC-D,solid,RECT-125-D output enters the PANEL-IC-D conductor path.
+PANEL-IC-D,GND-D,solid ground,PANEL-IC-D lower conductor connects to explicit GND-D symbol with dot.
+PANEL-IC-A,BUS-DC-125A,solid route,DC-A125 route from PANEL-IC-A lands on BUS-DC-125A.
+PANEL-IC-B,BUS-DC-125B,solid route,DC-B125 route from PANEL-IC-B lands on BUS-DC-125B routing.
+PANEL-IC-C,BUS-DC-125B,solid route,DC-C125 route from PANEL-IC-C ties into the division B DC bus routing.
+PANEL-IC-D,BUS-DC-125B,solid route,DC-D125 route from PANEL-IC-D lands on BUS-DC-125B routing.
+BUS-480-A1,ATS-480-A,solid,ATS-A1 branch from BUS-480-A1 lands on ATS-480-A.
+BUS-480-B1,ATS-480-A,solid,ATS-B1 branch from BUS-480-B1 lands on ATS-480-A.
+ATS-480-A,PANEL-RPS-A,solid,ATS-AOUT route from ATS-480-A enters PANEL-RPS-A.
+BUS-480-C1,ATS-480-B,solid,ATS-C1 branch from BUS-480-C1 lands on ATS-480-B.
+BUS-480-D1,ATS-480-B,solid,ATS-D1 branch from BUS-480-D1 lands on ATS-480-B.
+ATS-480-B,PANEL-RPS-B,solid,ATS-BOUT route from ATS-480-B enters PANEL-RPS-B.
+BAT-125A,BUS-DC-125A,solid,BAT-125A connects to BUS-DC-125A.
+BUS-DC-125A,INV-UPS-A,solid,BUS-DC-125A UPS-AIN feeder lands on INV-UPS-A.
+INV-UPS-A,PANEL-RPS-A,solid,INV-UPS-A UPS-AOUT lands on PANEL-RPS-A.
+BAT-125B,BUS-DC-125B,solid,BAT-125B connects to BUS-DC-125B.
+BUS-DC-125B,INV-UPS-B,solid,BUS-DC-125B UPS-BIN feeder lands on INV-UPS-B.
+INV-UPS-B,PANEL-RPS-B,solid,INV-UPS-B UPS-BOUT lands on PANEL-RPS-B.
+PANEL-RPS-A,PANEL-SSPS,dashed control,Dashed RPS-A interlock enters the PANEL-SSPS control network.
+PANEL-RPS-B,PANEL-SSPS,dashed control,Dashed RPS-B interlock enters the PANEL-SSPS control network.
+ATS-480-A,PANEL-SSPS,dashed adjacent,Removed: dashed ATS/interlock route lacks a clear ATS-to-SSPS terminal.
+ATS-480-B,PANEL-SSPS,dashed adjacent,Removed: dashed ATS/interlock route lacks a clear ATS-to-SSPS terminal.

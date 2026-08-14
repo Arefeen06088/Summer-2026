@@ -1,0 +1,35 @@
+Connectivity matrix validation summary - Document 12 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\12\synthetic_npp_connectivity_matrix_rps_rerouted.csv
+GT after normalization: 180 undirected edges across 160 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token estimate: low=148037, expected=178887, high=228187.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=141, FP=8, FN=39, Precision=0.946309, Recall=0.783333, F1=0.857143.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names; missing exact GT component names; close-but-not-exact component names.
+- Extracted components: 160; extra/non-GT names: 1; missing GT component names: 1.
+- False-positive extracted edge examples: CB-DC-1A -- MCC-2A; CB-DC-1B -- MCC-2B; CB-F023 -- DS-F23; DS-F23 -- VALVE-IA-B; PNL-ESFAS-A -- PNL-RPS-A; PNL-ESFAS-A -- SEQ-REC-1; PNL-ESFAS-B -- PNL-RPS-B; PNL-ESFAS-B -- SEQ-REC-1.
+- Missed GT edge examples: ANN-480A -- PNL-RPS-A; ANN-480B -- SEQ-REC-1; BUS-120VAC-ESF -- PNL-ESFAS-A; BUS-120VAC-ESF -- PNL-ESFAS-B; BUS-120VAC-ESF -- PNL-RPS-A; BUS-120VAC-ESF -- PNL-RPS-B; BUS-480-C -- CB-DC-1A; BUS-480-D -- CB-DC-1B; ... (+31 more).
+- Extra/non-GT component examples: DS-F23.
+- Missing GT component examples: DS-F023.
+- Close-but-not-exact component examples: DS-F23 ~ DS-F023 (0.92).
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=141, FP=0, FN=39, Precision=1.000000, Recall=0.783333, F1=0.878505.
+- If all missed GT edges were added, final performance would be TP=180, FP=8, FN=0, Precision=0.957447, Recall=1.000000, F1=0.978261.
+- If extra node DS-F23 and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=141, FP=6, FN=39, Precision=0.959184, Recall=0.783333, F1=0.862385.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.857143.
+
+Round-specific notes:
+- Diego -- Round 1: TP=144, FP=73, FN=36, F1=0.725441; extra nodes=8, missing GT nodes=0. FP examples: ANN-480A -- RPS-A-SIGNAL-NET; ANN-480B -- RPS-B-SIGNAL-NET; ATS-INV -- RPS-A-CONTROL-NET; ATS-INV -- RPS-B-CONTROL-NET; ... (+69 more). FN examples: ANN-480A -- PNL-RPS-A; ANN-480B -- SEQ-REC-1; BUS-120VAC-ESF -- PNL-ESFAS-A; BUS-120VAC-ESF -- PNL-ESFAS-B; ... (+32 more).
+- Jennifer -- Round 2: TP=141, FP=8, FN=39, F1=0.857143; extra nodes=1, missing GT nodes=1. FP examples: CB-DC-1A -- MCC-2A; CB-DC-1B -- MCC-2B; CB-F023 -- DS-F23; DS-F23 -- VALVE-IA-B; ... (+4 more). FN examples: ANN-480A -- PNL-RPS-A; ANN-480B -- SEQ-REC-1; BUS-120VAC-ESF -- PNL-ESFAS-A; BUS-120VAC-ESF -- PNL-ESFAS-B; ... (+35 more).
+- Diego -- Round 3: TP=141, FP=8, FN=39, F1=0.857143; extra nodes=1, missing GT nodes=1. FP examples: CB-DC-1A -- MCC-2A; CB-DC-1B -- MCC-2B; CB-F023 -- DS-F23; DS-F23 -- VALVE-IA-B; ... (+4 more). FN examples: ANN-480A -- PNL-RPS-A; ANN-480B -- SEQ-REC-1; BUS-120VAC-ESF -- PNL-ESFAS-A; BUS-120VAC-ESF -- PNL-ESFAS-B; ... (+35 more).
+- Jennifer -- Round 4: TP=141, FP=8, FN=39, F1=0.857143; extra nodes=1, missing GT nodes=1. FP examples: CB-DC-1A -- MCC-2A; CB-DC-1B -- MCC-2B; CB-F023 -- DS-F23; DS-F23 -- VALVE-IA-B; ... (+4 more). FN examples: ANN-480A -- PNL-RPS-A; ANN-480B -- SEQ-REC-1; BUS-120VAC-ESF -- PNL-ESFAS-A; BUS-120VAC-ESF -- PNL-ESFAS-B; ... (+35 more).
+- Final connectivity -- Final: TP=141, FP=8, FN=39, F1=0.857143; extra nodes=1, missing GT nodes=1. FP examples: CB-DC-1A -- MCC-2A; CB-DC-1B -- MCC-2B; CB-F023 -- DS-F23; DS-F23 -- VALVE-IA-B; ... (+4 more). FN examples: ANN-480A -- PNL-RPS-A; ANN-480B -- SEQ-REC-1; BUS-120VAC-ESF -- PNL-ESFAS-A; BUS-120VAC-ESF -- PNL-ESFAS-B; ... (+35 more).

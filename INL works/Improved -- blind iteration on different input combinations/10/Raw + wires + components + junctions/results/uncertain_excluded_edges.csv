@@ -1,0 +1,12 @@
+source,target,status,reason
+CB-UAT,CB-TIE-AB,excluded,tie handled through BUS-4160-A
+CB-SAT,CB-TIE-AB,excluded,tie handled through BUS-4160-B
+CT-CAB-A/B,*,excluded,"cable-tray route/reference labels, not graph nodes"
+GND-A/B,*,excluded,lower ground reference routes shown isolated
+PT-4160-A/B,CT-4160-A/B,uncertain/excluded,direct dotted component-to-component edge not clear
+CT-4160-A/B,FUSE-A01/B01,uncertain/excluded,dotted path near switchgear has no clear terminal dot
+CT-4160-A/B,CB-A08/B08,uncertain/excluded,dotted path near switchgear has no clear terminal dot
+FUSE-A01/B01,DS-A01/B01,excluded,visible solid run goes to CB-A09/B09 instead
+LC-101A/B,DS-A02/B02,excluded,overconnected shared conductor inference
+MCC-102A/B,FAN-AB-A/B,excluded,overconnected branch inference
+SER-01,JB-CONTROL,excluded,no visible wire terminates on SER-01

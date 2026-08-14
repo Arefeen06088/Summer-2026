@@ -1,0 +1,654 @@
+import csv
+from pathlib import Path
+
+
+BASE = Path(
+    r"C:\Asif_all_python_projects\INL\Improved -- blind iteration on different input combinations\10\Raw + wires + components + junctions"
+)
+RESULTS = BASE / "results"
+
+
+DIEGO_NODES = """
+SRC-345KV
+BUS-SWY-345KV
+CT-CAB-A CONTROL CABLE TRAY
+CT-CAB-B CONTROL CABLE TRAY
+GEN-01
+UAT-1
+CB-UAT
+DG-1A
+CB-DGA
+BUS-4160-A
+CB-TIE-AB
+SAT-1
+CB-SAT
+DG-1B
+CB-DGB
+BUS-4160-B
+TB-SWGR-A
+RLY-27A
+RLY-50A
+RLY-86A
+PT-4160-A
+CT-4160-A
+PNL-RPS-A
+PNL-ESFAS-A
+TB-LV-A
+FUSE-A01
+FUSE-A02
+CB-A01
+TR-480-A1
+CB-A02
+TR-480-A2
+CB-A03
+PUMP-RHR-A
+CB-A04
+PUMP-CS-A
+CB-A05
+PUMP-AFW-A
+CB-A06
+TR-UPS-A
+CB-A07
+CHLR-A
+CB-A08
+480V LC FEEDERS - A
+FAN-CR-A
+CB-A09
+LC-101A
+LC-102A
+DS-A01
+DS-A02
+MCC-101A
+MOV-101A
+MOV-102A
+MCC-102A
+JB-101A
+AOV-101A
+PUMP-CCW-A
+MCC-103A
+FAN-AB-A
+HTR-TRACE-A
+RECT-1A
+BCHG-1A
+BAT-1A
+BUS-DC-A
+INV-1A
+BUS-UPS-A
+PNL-UPS-A
+DC/UPS TRAIN A
+GND-A
+TB-SWGR-B
+RLY-27B
+RLY-50B
+RLY-86B
+PT-4160-B
+CT-4160-B
+PNL-RPS-B
+PNL-ESFAS-B
+TB-LV-B
+FUSE-B01
+FUSE-B02
+CB-B01
+TR-480-B1
+CB-B02
+TR-480-B2
+CB-B03
+PUMP-RHR-B
+CB-B04
+PUMP-CS-B
+CB-B05
+PUMP-AFW-B
+CB-B06
+TR-UPS-B
+CB-B07
+CHLR-B
+CB-B08
+480V LC FEEDERS - B
+FAN-CR-B
+CB-B09
+LC-101B
+LC-102B
+DS-B01
+DS-B02
+MCC-101B
+MOV-101B
+MOV-102B
+MCC-102B
+JB-101B
+AOV-101B
+PUMP-CCW-B
+MCC-103B
+FAN-AB-B
+HTR-TRACE-B
+RECT-1B
+BCHG-1B
+BAT-1B
+BUS-DC-B
+INV-1B
+BUS-UPS-B
+PNL-UPS-B
+DC/UPS TRAIN B
+GND-B
+PNL-MCR-01
+PNL-ANN-01
+SER-01
+JB-CONTROL
+"""
+
+
+FINAL_NODES = """
+SRC-345KV
+BUS-SWY-345KV
+GEN-01
+UAT-1
+CB-UAT
+DG-1A
+CB-DGA
+BUS-4160-A
+CB-TIE-AB
+SAT-1
+CB-SAT
+DG-1B
+CB-DGB
+BUS-4160-B
+TB-SWGR-A
+RLY-27A
+RLY-50A
+RLY-86A
+PT-4160-A
+CT-4160-A
+PNL-RPS-A
+PNL-ESFAS-A
+TB-LV-A
+FUSE-A01
+FUSE-A02
+CB-A01
+TR-480-A1
+CB-A02
+TR-480-A2
+CB-A03
+PUMP-RHR-A
+CB-A04
+PUMP-CS-A
+CB-A05
+PUMP-AFW-A
+CB-A06
+TR-UPS-A
+CB-A07
+CHLR-A
+CB-A08
+480V LC FEEDERS - A
+FAN-CR-A
+CB-A09
+LC-101A
+LC-102A
+DS-A01
+DS-A02
+MCC-101A
+MOV-101A
+MOV-102A
+MCC-102A
+JB-101A
+AOV-101A
+PUMP-CCW-A
+MCC-103A
+FAN-AB-A
+HTR-TRACE-A
+RECT-1A
+BCHG-1A
+BAT-1A
+BUS-DC-A
+INV-1A
+BUS-UPS-A
+PNL-UPS-A
+GND-A
+TB-SWGR-B
+RLY-27B
+RLY-50B
+RLY-86B
+PT-4160-B
+CT-4160-B
+PNL-RPS-B
+PNL-ESFAS-B
+TB-LV-B
+FUSE-B01
+FUSE-B02
+CB-B01
+TR-480-B1
+CB-B02
+TR-480-B2
+CB-B03
+PUMP-RHR-B
+CB-B04
+PUMP-CS-B
+CB-B05
+PUMP-AFW-B
+CB-B06
+TR-UPS-B
+CB-B07
+CHLR-B
+CB-B08
+480V LC FEEDERS - B
+FAN-CR-B
+CB-B09
+LC-101B
+LC-102B
+DS-B01
+DS-B02
+MCC-101B
+MOV-101B
+MOV-102B
+MCC-102B
+JB-101B
+AOV-101B
+PUMP-CCW-B
+MCC-103B
+FAN-AB-B
+HTR-TRACE-B
+RECT-1B
+BCHG-1B
+BAT-1B
+BUS-DC-B
+INV-1B
+BUS-UPS-B
+PNL-UPS-B
+GND-B
+PNL-MCR-01
+PNL-ANN-01
+SER-01
+JB-CONTROL
+"""
+
+
+DIEGO_EDGES = """
+SRC-345KV,BUS-SWY-345KV,POWER
+BUS-SWY-345KV,SAT-1,POWER
+GEN-01,UAT-1,POWER
+UAT-1,CB-UAT,POWER
+CB-UAT,BUS-4160-A,POWER
+CB-UAT,CB-TIE-AB,POWER
+DG-1A,CB-DGA,POWER
+CB-DGA,BUS-4160-A,POWER
+BUS-4160-A,CB-TIE-AB,POWER
+CB-TIE-AB,BUS-4160-B,POWER
+SAT-1,CB-SAT,POWER
+CB-SAT,BUS-4160-B,POWER
+CB-SAT,CB-TIE-AB,POWER
+DG-1B,CB-DGB,POWER
+CB-DGB,BUS-4160-B,POWER
+BUS-4160-A,CB-A01,POWER
+CB-A01,TR-480-A1,POWER
+BUS-4160-A,CB-A02,POWER
+CB-A02,TR-480-A2,POWER
+BUS-4160-A,CB-A03,POWER
+CB-A03,PUMP-RHR-A,POWER
+BUS-4160-A,CB-A04,POWER
+CB-A04,PUMP-CS-A,POWER
+BUS-4160-A,CB-A05,POWER
+CB-A05,PUMP-AFW-A,POWER
+BUS-4160-A,CB-A06,POWER
+CB-A06,TR-UPS-A,POWER
+BUS-4160-A,CB-A07,POWER
+CB-A07,CHLR-A,POWER
+BUS-4160-A,CB-A08,POWER
+CB-A08,480V LC FEEDERS - A,POWER
+480V LC FEEDERS - A,FAN-CR-A,POWER
+BUS-4160-A,CB-A09,POWER
+BUS-4160-B,CB-B01,POWER
+CB-B01,TR-480-B1,POWER
+BUS-4160-B,CB-B02,POWER
+CB-B02,TR-480-B2,POWER
+BUS-4160-B,CB-B03,POWER
+CB-B03,PUMP-RHR-B,POWER
+BUS-4160-B,CB-B04,POWER
+CB-B04,PUMP-CS-B,POWER
+BUS-4160-B,CB-B05,POWER
+CB-B05,PUMP-AFW-B,POWER
+BUS-4160-B,CB-B06,POWER
+CB-B06,TR-UPS-B,POWER
+BUS-4160-B,CB-B07,POWER
+CB-B07,CHLR-B,POWER
+BUS-4160-B,CB-B08,POWER
+CB-B08,480V LC FEEDERS - B,POWER
+480V LC FEEDERS - B,FAN-CR-B,POWER
+BUS-4160-B,CB-B09,POWER
+480V LC FEEDERS - A,LC-101A,POWER
+480V LC FEEDERS - A,LC-102A,POWER
+PNL-RPS-A,FUSE-A01,POWER
+PNL-ESFAS-A,FUSE-A02,POWER
+FUSE-A01,DS-A01,POWER
+FUSE-A02,DS-A01,POWER
+LC-101A,DS-A01,POWER
+DS-A01,MCC-101A,POWER
+DS-A01,DS-A02,POWER
+LC-101A,DS-A02,POWER
+LC-102A,DS-A02,POWER
+DS-A02,MCC-102A,POWER
+LC-102A,MCC-103A,POWER
+MCC-101A,MOV-101A,POWER
+MCC-101A,MOV-102A,POWER
+MCC-102A,AOV-101A,POWER
+MCC-102A,PUMP-CCW-A,POWER
+MCC-102A,FAN-AB-A,POWER
+MCC-103A,FAN-AB-A,POWER
+PUMP-CCW-A,FAN-AB-A,POWER
+FAN-AB-A,HTR-TRACE-A,POWER
+480V LC FEEDERS - B,LC-101B,POWER
+480V LC FEEDERS - B,LC-102B,POWER
+PNL-RPS-B,FUSE-B01,POWER
+PNL-ESFAS-B,FUSE-B02,POWER
+FUSE-B01,DS-B01,POWER
+FUSE-B02,DS-B01,POWER
+LC-101B,DS-B01,POWER
+DS-B01,MCC-101B,POWER
+DS-B01,DS-B02,POWER
+LC-101B,DS-B02,POWER
+LC-102B,DS-B02,POWER
+DS-B02,MCC-102B,POWER
+LC-102B,MCC-103B,POWER
+MCC-101B,MOV-101B,POWER
+MCC-101B,MOV-102B,POWER
+MCC-102B,AOV-101B,POWER
+MCC-102B,PUMP-CCW-B,POWER
+MCC-102B,FAN-AB-B,POWER
+MCC-103B,FAN-AB-B,POWER
+PUMP-CCW-B,FAN-AB-B,POWER
+FAN-AB-B,HTR-TRACE-B,POWER
+RECT-1A,BCHG-1A,POWER
+BCHG-1A,BAT-1A,POWER
+BAT-1A,BUS-DC-A,POWER
+BUS-DC-A,INV-1A,POWER
+INV-1A,BUS-UPS-A,POWER
+BUS-UPS-A,PNL-UPS-A,POWER
+RECT-1B,BCHG-1B,POWER
+BCHG-1B,BAT-1B,POWER
+BAT-1B,BUS-DC-B,POWER
+BUS-DC-B,INV-1B,POWER
+INV-1B,BUS-UPS-B,POWER
+BUS-UPS-B,PNL-UPS-B,POWER
+CT-CAB-A CONTROL CABLE TRAY,TB-SWGR-A,CONTROL
+TB-SWGR-A,RLY-27A,CONTROL
+TB-SWGR-A,RLY-50A,SIGNAL
+TB-SWGR-A,RLY-86A,SIGNAL
+RLY-27A,PT-4160-A,SIGNAL
+RLY-50A,CT-4160-A,SIGNAL
+RLY-86A,CT-4160-A,SIGNAL
+PT-4160-A,CT-4160-A,SIGNAL
+CT-4160-A,FUSE-A01,SIGNAL
+FUSE-A01,CB-A09,SIGNAL
+CT-4160-A,CB-A08,SIGNAL
+CT-CAB-A CONTROL CABLE TRAY,PNL-RPS-A,CONTROL
+CT-CAB-A CONTROL CABLE TRAY,PNL-ESFAS-A,CONTROL
+CT-CAB-A CONTROL CABLE TRAY,TB-LV-A,CONTROL
+MCC-101A,JB-101A,CONTROL
+JB-101A,AOV-101A,CONTROL
+CT-CAB-A CONTROL CABLE TRAY,PNL-UPS-A,CONTROL
+CT-CAB-A CONTROL CABLE TRAY,DC/UPS TRAIN A,CONTROL
+GND-A,DC/UPS TRAIN A,GROUND
+GND-A,PNL-UPS-A,GROUND
+GND-A,CT-CAB-A CONTROL CABLE TRAY,GROUND
+CT-CAB-B CONTROL CABLE TRAY,TB-SWGR-B,CONTROL
+TB-SWGR-B,RLY-27B,CONTROL
+TB-SWGR-B,RLY-50B,SIGNAL
+TB-SWGR-B,RLY-86B,SIGNAL
+RLY-27B,PT-4160-B,SIGNAL
+RLY-50B,CT-4160-B,SIGNAL
+RLY-86B,CT-4160-B,SIGNAL
+PT-4160-B,CT-4160-B,SIGNAL
+CT-4160-B,FUSE-B01,SIGNAL
+FUSE-B01,CB-B09,SIGNAL
+CT-4160-B,CB-B08,SIGNAL
+CT-CAB-B CONTROL CABLE TRAY,PNL-RPS-B,CONTROL
+CT-CAB-B CONTROL CABLE TRAY,PNL-ESFAS-B,CONTROL
+CT-CAB-B CONTROL CABLE TRAY,TB-LV-B,CONTROL
+MCC-101B,JB-101B,CONTROL
+JB-101B,AOV-101B,CONTROL
+CT-CAB-B CONTROL CABLE TRAY,PNL-UPS-B,CONTROL
+CT-CAB-B CONTROL CABLE TRAY,DC/UPS TRAIN B,CONTROL
+GND-B,DC/UPS TRAIN B,GROUND
+GND-B,PNL-UPS-B,GROUND
+GND-B,CT-CAB-B CONTROL CABLE TRAY,GROUND
+CT-CAB-B CONTROL CABLE TRAY,PNL-MCR-01,CONTROL
+PNL-MCR-01,JB-CONTROL,CONTROL
+CT-CAB-B CONTROL CABLE TRAY,JB-CONTROL,CONTROL
+CT-CAB-B CONTROL CABLE TRAY,PNL-ANN-01,SIGNAL
+PNL-ANN-01,JB-CONTROL,SIGNAL
+SER-01,JB-CONTROL,SIGNAL
+"""
+
+
+FINAL_EDGES = """
+SRC-345KV,BUS-SWY-345KV,POWER
+BUS-SWY-345KV,SAT-1,POWER
+GEN-01,UAT-1,POWER
+UAT-1,CB-UAT,POWER
+CB-UAT,BUS-4160-A,POWER
+DG-1A,CB-DGA,POWER
+CB-DGA,BUS-4160-A,POWER
+BUS-4160-A,CB-TIE-AB,POWER
+CB-TIE-AB,BUS-4160-B,POWER
+SAT-1,CB-SAT,POWER
+CB-SAT,BUS-4160-B,POWER
+DG-1B,CB-DGB,POWER
+CB-DGB,BUS-4160-B,POWER
+BUS-4160-A,CB-A01,POWER
+CB-A01,TR-480-A1,POWER
+BUS-4160-A,CB-A02,POWER
+CB-A02,TR-480-A2,POWER
+BUS-4160-A,CB-A03,POWER
+CB-A03,PUMP-RHR-A,POWER
+BUS-4160-A,CB-A04,POWER
+CB-A04,PUMP-CS-A,POWER
+BUS-4160-A,CB-A05,POWER
+CB-A05,PUMP-AFW-A,POWER
+BUS-4160-A,CB-A06,POWER
+CB-A06,TR-UPS-A,POWER
+BUS-4160-A,CB-A07,POWER
+CB-A07,CHLR-A,POWER
+BUS-4160-A,CB-A08,POWER
+CB-A08,480V LC FEEDERS - A,POWER
+480V LC FEEDERS - A,FAN-CR-A,POWER
+480V LC FEEDERS - A,LC-101A,POWER
+480V LC FEEDERS - A,LC-102A,POWER
+BUS-4160-A,CB-A09,POWER
+FUSE-A01,CB-A09,POWER
+PNL-RPS-A,FUSE-A01,POWER
+PNL-ESFAS-A,FUSE-A02,POWER
+FUSE-A02,DS-A01,POWER
+LC-101A,DS-A01,POWER
+DS-A01,DS-A02,POWER
+LC-102A,DS-A02,POWER
+DS-A01,MCC-101A,POWER
+DS-A02,MCC-102A,POWER
+LC-102A,MCC-103A,POWER
+MCC-101A,MOV-101A,POWER
+MCC-101A,MOV-102A,POWER
+MCC-101A,JB-101A,CONTROL
+JB-101A,AOV-101A,CONTROL
+MCC-102A,AOV-101A,POWER
+MCC-102A,PUMP-CCW-A,POWER
+PUMP-CCW-A,FAN-AB-A,POWER
+MCC-103A,FAN-AB-A,POWER
+FAN-AB-A,HTR-TRACE-A,POWER
+RECT-1A,BCHG-1A,POWER
+BCHG-1A,BAT-1A,POWER
+BAT-1A,BUS-DC-A,POWER
+BUS-DC-A,INV-1A,POWER
+INV-1A,BUS-UPS-A,POWER
+BUS-UPS-A,PNL-UPS-A,POWER
+TB-SWGR-A,RLY-27A,CONTROL
+TB-SWGR-A,RLY-50A,SIGNAL
+TB-SWGR-A,RLY-86A,SIGNAL
+RLY-27A,PT-4160-A,SIGNAL
+RLY-50A,CT-4160-A,SIGNAL
+RLY-86A,CT-4160-A,SIGNAL
+BUS-4160-B,CB-B01,POWER
+CB-B01,TR-480-B1,POWER
+BUS-4160-B,CB-B02,POWER
+CB-B02,TR-480-B2,POWER
+BUS-4160-B,CB-B03,POWER
+CB-B03,PUMP-RHR-B,POWER
+BUS-4160-B,CB-B04,POWER
+CB-B04,PUMP-CS-B,POWER
+BUS-4160-B,CB-B05,POWER
+CB-B05,PUMP-AFW-B,POWER
+BUS-4160-B,CB-B06,POWER
+CB-B06,TR-UPS-B,POWER
+BUS-4160-B,CB-B07,POWER
+CB-B07,CHLR-B,POWER
+BUS-4160-B,CB-B08,POWER
+CB-B08,480V LC FEEDERS - B,POWER
+480V LC FEEDERS - B,FAN-CR-B,POWER
+480V LC FEEDERS - B,LC-101B,POWER
+480V LC FEEDERS - B,LC-102B,POWER
+BUS-4160-B,CB-B09,POWER
+FUSE-B01,CB-B09,POWER
+PNL-RPS-B,FUSE-B01,POWER
+PNL-ESFAS-B,FUSE-B02,POWER
+FUSE-B02,DS-B01,POWER
+LC-101B,DS-B01,POWER
+DS-B01,DS-B02,POWER
+LC-102B,DS-B02,POWER
+DS-B01,MCC-101B,POWER
+DS-B02,MCC-102B,POWER
+LC-102B,MCC-103B,POWER
+MCC-101B,MOV-101B,POWER
+MCC-101B,MOV-102B,POWER
+MCC-101B,JB-101B,CONTROL
+JB-101B,AOV-101B,CONTROL
+MCC-102B,AOV-101B,POWER
+MCC-102B,PUMP-CCW-B,POWER
+PUMP-CCW-B,FAN-AB-B,POWER
+MCC-103B,FAN-AB-B,POWER
+FAN-AB-B,HTR-TRACE-B,POWER
+RECT-1B,BCHG-1B,POWER
+BCHG-1B,BAT-1B,POWER
+BAT-1B,BUS-DC-B,POWER
+BUS-DC-B,INV-1B,POWER
+INV-1B,BUS-UPS-B,POWER
+BUS-UPS-B,PNL-UPS-B,POWER
+TB-SWGR-B,RLY-27B,CONTROL
+TB-SWGR-B,RLY-50B,SIGNAL
+TB-SWGR-B,RLY-86B,SIGNAL
+RLY-27B,PT-4160-B,SIGNAL
+RLY-50B,CT-4160-B,SIGNAL
+RLY-86B,CT-4160-B,SIGNAL
+PNL-MCR-01,JB-CONTROL,CONTROL
+PNL-ANN-01,JB-CONTROL,SIGNAL
+"""
+
+
+UNCERTAIN_EXCLUDED = [
+    ("CB-UAT", "CB-TIE-AB", "excluded", "tie handled through BUS-4160-A"),
+    ("CB-SAT", "CB-TIE-AB", "excluded", "tie handled through BUS-4160-B"),
+    ("CT-CAB-A/B", "*", "excluded", "cable-tray route/reference labels, not graph nodes"),
+    ("GND-A/B", "*", "excluded", "lower ground reference routes shown isolated"),
+    ("PT-4160-A/B", "CT-4160-A/B", "uncertain/excluded", "direct dotted component-to-component edge not clear"),
+    ("CT-4160-A/B", "FUSE-A01/B01", "uncertain/excluded", "dotted path near switchgear has no clear terminal dot"),
+    ("CT-4160-A/B", "CB-A08/B08", "uncertain/excluded", "dotted path near switchgear has no clear terminal dot"),
+    ("FUSE-A01/B01", "DS-A01/B01", "excluded", "visible solid run goes to CB-A09/B09 instead"),
+    ("LC-101A/B", "DS-A02/B02", "excluded", "overconnected shared conductor inference"),
+    ("MCC-102A/B", "FAN-AB-A/B", "excluded", "overconnected branch inference"),
+    ("SER-01", "JB-CONTROL", "excluded", "no visible wire terminates on SER-01"),
+]
+
+
+ROUND_NOTES = """# Document 10 round notes
+
+## Round 1 - Diego high recall
+Diego included all visually plausible power, control, signal, and ground/reference-route edges.
+He retained route/group labels including CT-CAB-A/B CONTROL CABLE TRAY and DC/UPS TRAIN A/B.
+
+## Round 2 - Jennifer precision
+Jennifer removed route-only/group-text nodes, unsupported breaker-to-breaker tie edges,
+ground/reference-band edges, ambiguous CT/PT-to-fuse/breaker signal edges, and MCR/SER
+overconnections. She retained named conductor nodes such as BUS-* and 480V LC FEEDERS - A/B.
+
+## Round 3 - Diego saturation
+Diego agreed Jennifer's corrected set was visually saturated. Final matrix equals round 2.
+"""
+
+
+def parse_nodes(text):
+    nodes = [line.strip() for line in text.splitlines() if line.strip()]
+    seen = set()
+    duplicates = [n for n in nodes if n in seen or seen.add(n)]
+    if duplicates:
+        raise ValueError(f"duplicate nodes: {duplicates}")
+    return nodes
+
+
+def parse_edges(text):
+    rows = []
+    for row in csv.reader(line for line in text.splitlines() if line.strip()):
+        if len(row) != 3:
+            raise ValueError(f"bad edge row: {row}")
+        a, b, edge_type = (item.strip() for item in row)
+        rows.append((a, b, edge_type))
+    return rows
+
+
+def write_edges(path, edges):
+    with path.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["source", "target", "type"])
+        writer.writerows(edges)
+
+
+def write_node_order(path, nodes):
+    with path.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["index", "node"])
+        for index, node in enumerate(nodes):
+            writer.writerow([index, node])
+
+
+def write_matrix(path, nodes, edges):
+    index = {node: i for i, node in enumerate(nodes)}
+    missing = sorted({n for edge in edges for n in edge[:2]} - set(index))
+    if missing:
+        raise ValueError(f"{path.name} has edges with missing nodes: {missing}")
+    matrix = [[0 for _ in nodes] for _ in nodes]
+    for a, b, _edge_type in edges:
+        if a == b:
+            matrix[index[a]][index[b]] = 1
+        else:
+            matrix[index[a]][index[b]] = 1
+            matrix[index[b]][index[a]] = 1
+    with path.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow([""] + nodes)
+        for node, row in zip(nodes, matrix):
+            writer.writerow([node] + row)
+
+
+def write_round(prefix, nodes, edges):
+    write_node_order(RESULTS / f"{prefix}_node_order.csv", nodes)
+    write_edges(RESULTS / f"{prefix}_edges.csv", edges)
+    write_matrix(RESULTS / f"{prefix}_connectivity_matrix.csv", nodes, edges)
+
+
+def main():
+    RESULTS.mkdir(parents=True, exist_ok=True)
+    diego_nodes = parse_nodes(DIEGO_NODES)
+    final_nodes = parse_nodes(FINAL_NODES)
+    diego_edges = parse_edges(DIEGO_EDGES)
+    final_edges = parse_edges(FINAL_EDGES)
+
+    write_round("round_01_diego_high_recall", diego_nodes, diego_edges)
+    write_round("round_02_jennifer_precision", final_nodes, final_edges)
+    write_round("round_03_diego_saturation", final_nodes, final_edges)
+    write_node_order(RESULTS / "final_node_order.csv", final_nodes)
+    write_edges(RESULTS / "final_edges.csv", final_edges)
+    write_matrix(RESULTS / "final_connectivity_matrix.csv", final_nodes, final_edges)
+
+    with (RESULTS / "uncertain_excluded_edges.csv").open("w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["source", "target", "status", "reason"])
+        writer.writerows(UNCERTAIN_EXCLUDED)
+
+    (RESULTS / "round_notes.md").write_text(ROUND_NOTES, encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()

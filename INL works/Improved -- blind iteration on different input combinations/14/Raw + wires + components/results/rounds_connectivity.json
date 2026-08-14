@@ -1,0 +1,34 @@
+[
+  {
+    "round": "round01_diego",
+    "nodes": 178,
+    "edges": 174,
+    "agent": "Diego",
+    "role": "high-recall extractor",
+    "summary": "Initial proposal kept all plausible power/DC/signal/ground edges and accepted CB-to-relay dashed control edges; included several visible but isolated panel nodes."
+  },
+  {
+    "round": "round01_jennifer",
+    "nodes": 156,
+    "edges": 157,
+    "agent": "Jennifer",
+    "role": "precision reviewer/refiner",
+    "summary": "Removed relay/control edges and isolated ambiguous panel nodes because the dashed conductors were adjacent or passing nearby without clean landed terminals."
+  },
+  {
+    "round": "round02_diego",
+    "nodes": 156,
+    "edges": 157,
+    "agent": "Diego",
+    "role": "high-recall saturation review",
+    "summary": "Rechecked relay, panel, DC/UPS, and tie crops; agreed with Jennifer's corrected edge list unchanged."
+  },
+  {
+    "round": "round02_jennifer",
+    "nodes": 156,
+    "edges": 157,
+    "agent": "Jennifer",
+    "role": "precision final signoff",
+    "summary": "Confirmed saturated/final unchanged; relay/panel/tie ambiguities remain excluded or uncertain."
+  }
+]

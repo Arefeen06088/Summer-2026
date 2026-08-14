@@ -1,0 +1,35 @@
+Connectivity matrix validation summary - Document 8
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\8\connectivity_matrix_improved_local_refined_v3.csv
+
+Scores:
+- Diego -- Round 1 (round_matrices\round_01_diego_connectivity_matrix.csv): TP=129, FP=8, FN=11, Precision=0.941606, Recall=0.921429, F1=0.931408
+- Jennifer -- Round 2 (round_matrices\round_02_jennifer_connectivity_matrix.csv): TP=131, FP=9, FN=9, Precision=0.935714, Recall=0.935714, F1=0.935714
+- Diego -- Round 3 (round_matrices\round_03_diego_connectivity_matrix.csv): TP=131, FP=9, FN=9, Precision=0.935714, Recall=0.935714, F1=0.935714
+- Jennifer -- Round 4 (round_matrices\round_04_jennifer_connectivity_matrix.csv): TP=131, FP=9, FN=9, Precision=0.935714, Recall=0.935714, F1=0.935714
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=131, FP=9, FN=9, Precision=0.935714, Recall=0.935714, F1=0.935714
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- BUS-480-N2A -- DS-480-A
+- BUS-480-N2B -- DS-480-B
+- CB-N1 -- CHGR-125A
+- JB-2A1 -- RELAY-K1A
+- JB-2A1 -- VLV-HV-302A
+- JB-2B1 -- PUMP-AF-2B
+- JB-2B1 -- RELAY-K1B
+- JB-2B1 -- VLV-HV-302B
+- MCC-2C -- PN-480-A
+
+False-negative edge examples:
+- BUS-480-E2A -- CHGR-125A
+- BUS-480-E2A -- DS-480-A
+- BUS-480-E2B -- CHGR-125B
+- BUS-480-E2B -- DS-480-B
+- BUS-480-N2A -- PN-480-A
+- BUS-480-N2B -- PN-480-B
+- CB-N1 -- MCC-2C
+- JB-2A1 -- PN-125A
+- JB-2B1 -- PN-125B

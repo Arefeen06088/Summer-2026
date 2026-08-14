@@ -1,0 +1,26 @@
+source,target,reason
+BUS-480-A,TR-RPS-A,upstream RPS transformer feeder source is not cleanly terminated at the A rail
+BUS-480-B,TR-RPS-B,upstream RPS transformer feeder source is not cleanly terminated at the B rail
+BUS-120-RPS-A,UCB-01,lower shared dashed/common route is not a clean one-hop endpoint
+BUS-120-RPS-B,UCB-01,lower shared dashed/common route is not a clean one-hop endpoint
+UCB-01,GND-NO,UCB/common ground routing is shared and not accepted as a hard endpoint chain
+JB-CONTAIN,XS-DOOR101,containment junction to door switch is visually plausible but routed through shared signal trunk
+RTD-RCS101,MG-RPS-B,RTD side connection lands near a shared vertical route; exact endpoint ambiguous
+CP-DCS-01,TB-ESF-1,dotted/signal route is shared with multiple endpoints
+CP-ANN-01,TB-ESF-2,dotted/signal route is shared with multiple endpoints
+CB-401A,CB-401B,dashed breaker trip/interlock routing is visually plausible but not a hard terminal-to-terminal edge
+MOV-HV101A,TB-HV101A,demoted by Jennifer R1 because the tail is dashed/dotted
+HTR-PZR1A,TB-HT1A,demoted by Jennifer R1 because the tail is dashed/dotted
+RELAY-KRM1A,MON-RAD1A,demoted by Jennifer R1 because the tail is dashed/dotted
+MON-RAD1A,TB-RM1A,demoted by Jennifer R1 because the tail is dashed/dotted
+MOV-CV121A,TB-CV121A,demoted by Jennifer R1 because the tail is dashed/dotted
+MOV-HV101B,TB-HV101B,demoted by Jennifer R1 because the tail is dashed/dotted
+HTR-PZR1B,TB-HT1B,demoted by Jennifer R1 because the tail is dashed/dotted
+RELAY-KRM1B,MON-RAD1B,demoted by Jennifer R1 because the tail is dashed/dotted
+MON-RAD1B,TB-RM1B,demoted by Jennifer R1 because the tail is dashed/dotted
+MOV-CV121B,TB-CV121B,demoted by Jennifer R1 because the tail is dashed/dotted
+PT-RCS101,REC-SOE-1,local signal stub demoted pending saturation
+LT-RWST101,ANN-501,local signal stub demoted pending saturation
+FT-AFW101,METER-VM-1,local signal stub demoted pending saturation
+TB-ESF-2,LS-SUMP101,local signal stub demoted pending saturation
+TB-ESF-2,XS-DOOR101,local signal stub demoted pending saturation

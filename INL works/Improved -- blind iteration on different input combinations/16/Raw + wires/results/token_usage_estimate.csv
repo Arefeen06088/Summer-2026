@@ -1,0 +1,6 @@
+document,iteration,call_id,actor,round,model,input_tokens_est,cached_input_tokens_est,output_tokens_est,reasoning_tokens_available,reasoning_tokens_low_est,reasoning_tokens_expected_est,reasoning_tokens_high_est,image_file_input_tokens_est,total_tokens_low_est,total_tokens_expected_est,total_tokens_high_est,usage_object_available,notes
+16,1,main_01_visual_orchestration_and_artifacts,main,orchestration,gpt-5,1200,0,4200,no,2500,5200,9000,38242,46142,48842,52642,no,"local visual inspection, scripts, artifact writing"
+16,1,diego_01_high_recall,Diego,round_01,gpt-5.5 xhigh,2600,0,2800,no,4500,9000,16200,14828,24728,29228,36428,no,subagent usage object unavailable; visual draft observed
+16,1,jennifer_01_precision,Jennifer,round_01,gpt-5.5 xhigh,3300,0,2300,no,4000,8000,14400,18156,27756,31756,38156,no,subagent usage object unavailable; visual review observed
+16,1,diego_02_saturation,Diego,round_02,gpt-5.5 xhigh,2300,14828,520,no,1200,2400,4500,0,4020,5220,7320,no,follow-up in same Diego context; prior image packet estimated cached
+16,1,jennifer_02_final,Jennifer,round_02,gpt-5.5 xhigh,1800,18156,420,no,900,1800,3400,0,3120,4020,5620,no,follow-up in same Jennifer context; prior image packet estimated cached

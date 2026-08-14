@@ -1,0 +1,23 @@
+source,target,status,evidence
+CT-CAB-A,TB-SWGR-A,uncertain_excluded,"CT-CAB-A is a cable-tray/location label, not a component node"
+CT-CAB-B,TB-SWGR-B,uncertain_excluded,"CT-CAB-B is a cable-tray/location label, not a component node"
+TR-480-A1,480V LC FEEDERS-A,uncertain_excluded,480V LC FEEDERS-A is a feeder label replaced by direct TR-to-LC edges
+TR-480-A2,480V LC FEEDERS-A,uncertain_excluded,480V LC FEEDERS-A is a feeder label replaced by direct TR-to-LC edges
+480V LC FEEDERS-A,LC-101A,uncertain_excluded,480V LC FEEDERS-A is a feeder label replaced by direct TR-to-LC edges
+480V LC FEEDERS-A,LC-102A,uncertain_excluded,480V LC FEEDERS-A is a feeder label replaced by direct TR-to-LC edges
+TR-480-B1,480V LC FEEDERS-B,uncertain_excluded,480V LC FEEDERS-B is a feeder label replaced by direct TR-to-LC edges
+TR-480-B2,480V LC FEEDERS-B,uncertain_excluded,480V LC FEEDERS-B is a feeder label replaced by direct TR-to-LC edges
+480V LC FEEDERS-B,LC-101B,uncertain_excluded,480V LC FEEDERS-B is a feeder label replaced by direct TR-to-LC edges
+480V LC FEEDERS-B,LC-102B,uncertain_excluded,480V LC FEEDERS-B is a feeder label replaced by direct TR-to-LC edges
+CT-4160-A,RLY-86A,uncertain_excluded,nearby dotted/control linework does not cleanly terminate at RLY-86A
+CT-4160-B,RLY-86B,uncertain_excluded,nearby dotted/control linework does not cleanly terminate at RLY-86B
+CT-CAB-B,PNL-MCR-01,uncertain_excluded,"MCR route enters the bay, but CT-CAB-B was removed as a non-component label"
+CT-CAB-B,JB-CONTROL,uncertain_excluded,"MCR route enters the bay, but CT-CAB-B was removed as a non-component label"
+PNL-RPS-A,FUSE-A01,uncertain_excluded,fuse area has overlapping solid/dotted routes; endpoint pair is not precision-clean
+PNL-ESFAS-A,FUSE-A02,uncertain_excluded,fuse area has overlapping solid/dotted routes; endpoint pair is not precision-clean
+PNL-RPS-B,FUSE-B01,uncertain_excluded,fuse area has overlapping solid/dotted routes; endpoint pair is not precision-clean
+PNL-ESFAS-B,FUSE-B02,uncertain_excluded,fuse area has overlapping solid/dotted routes; endpoint pair is not precision-clean
+BUS-DC-A,GND-A,uncertain_excluded,ground symbol is visible but endpoint is not clean enough to assert
+BUS-DC-B,GND-B,uncertain_excluded,ground symbol is visible but endpoint is not clean enough to assert
+CB-A09,unresolved downstream A load,uncertain_excluded,CB-A09 has a bus tap but no clean named downstream endpoint
+CB-B09,unresolved downstream B load,uncertain_excluded,CB-B09 has a bus tap but no clean named downstream endpoint

@@ -1,0 +1,184 @@
+node_a,node_b,kind,evidence,confidence
+GRID-161KV,TR-SST-1A,power,upper_train_a_source_raw: solid conductor from grid source symbol into TR-SST-1A primary.,high
+TR-SST-1A,CB-401A,power,upper_train_a_source_raw: transformer secondary lead enters CB-401A.,high
+CB-401A,BUS-4KV-A,power,upper_train_a_source_raw: CB-401A output terminal lands on BUS-4KV-A with filled junction dot.,high
+TR-SST-1A,CB-401B,power,upper_train_a_source_raw: lower transformer secondary lead feeds CB-401B.,high
+CB-401B,BUS-4KV-B,power,upper_train_a_source_raw: CB-401B output terminal lands on BUS-4KV-B with filled junction dot.,high
+BUS-4KV-A,CB-TIE-4AB,power,upper_4kv_sources_raw: tie breaker top terminal is on BUS-4KV-A.,high
+CB-TIE-4AB,BUS-4KV-B,power,upper_4kv_sources_raw: tie breaker bottom terminal is on BUS-4KV-B.,high
+GEN-EDG-A,CB-EDG-A,power,upper_train_b_source_raw: generator A vertical lead enters CB-EDG-A.,high
+CB-EDG-A,BUS-4KV-A,power,upper_train_b_source_raw: CB-EDG-A lower terminal connects to BUS-4KV-A at a filled dot.,high
+GEN-EDG-B,CB-EDG-B,power,upper_train_b_source_raw: generator B vertical lead enters CB-EDG-B; crossing of BUS-4KV-A has no visible dot.,high
+CB-EDG-B,BUS-4KV-B,power,upper_train_b_source_raw: CB-EDG-B lower terminal connects to BUS-4KV-B at a filled dot.,high
+BUS-4KV-A,TR-4KV-480A,power,upper_train_a_source_raw: vertical feeder with dot drops from BUS-4KV-A into TR-4KV-480A; lower 4 kV bus crossing has no dot.,high
+TR-4KV-480A,CB-480A-IN,power,upper_train_a_source_raw/full_left_train_raw: transformer secondary continues down through arrow to CB-480A-IN.,high
+CB-480A-IN,BUS-480-A,power,bus_480_and_mcc_all_raw: CB-480A-IN output vertical lands on upper BUS-480-A with junction dot.,high
+BUS-4KV-B,TR-4KV-480B,power,upper_train_b_source_raw: vertical feeder drops from BUS-4KV-B into TR-4KV-480B.,high
+TR-4KV-480B,CB-480B-IN,power,upper_train_b_source_raw/full_right_train_raw: transformer secondary continues down to CB-480B-IN.,high
+CB-480B-IN,BUS-480-B,power,bus_480_and_mcc_all_raw/full_right_train_raw: CB-480B-IN vertical continues to the lower 480 V bus with junction dot; top 480 bus crossing is not used as a connection.,high
+BUS-480-A,CB-TIE-480AB,power,bus_480_and_mcc_all_raw: CB-TIE-480AB upper terminal is connected to BUS-480-A.,high
+CB-TIE-480AB,BUS-480-B,power,bus_480_and_mcc_all_raw: CB-TIE-480AB lower terminal is connected to lower 480 V bus.,high
+BUS-480-A,CB-11A-FDR,power,full_left_train_raw: A upper 480 bus vertical feeder through CB-11A-FDR to MCC-11A busbar.,high
+CB-11A-FDR,MCC-11A,power,full_left_train_raw: A upper 480 bus vertical feeder through CB-11A-FDR to MCC-11A busbar.,high
+BUS-480-A,CB-12A-FDR,power,full_left_train_raw: A upper 480 bus vertical feeder through CB-12A-FDR to MCC-12A busbar.,high
+CB-12A-FDR,MCC-12A,power,full_left_train_raw: A upper 480 bus vertical feeder through CB-12A-FDR to MCC-12A busbar.,high
+BUS-480-A,CB-21A-FDR,power,full_left_train_raw: A upper 480 bus vertical feeder through CB-21A-FDR to MCC-21A busbar.,high
+CB-21A-FDR,MCC-21A,power,full_left_train_raw: A upper 480 bus vertical feeder through CB-21A-FDR to MCC-21A busbar.,high
+BUS-480-B,CB-31A-FDR30-B,power,full_left_train_raw/bus_480_and_mcc_all_raw: MCC-31A feeder breaker is drawn from lower 480 bus beside the 480 tie; label includes FDR30-B.,medium
+CB-31A-FDR30-B,MCC-31A,power,full_left_train_raw/bus_480_and_mcc_all_raw: MCC-31A feeder breaker is drawn from lower 480 bus beside the 480 tie; label includes FDR30-B.,medium
+BUS-480-B,CB-11B-FDR,power,full_right_train_raw: lower 480 bus vertical feeder through CB-11B-FDR to MCC-11B busbar.,high
+CB-11B-FDR,MCC-11B,power,full_right_train_raw: lower 480 bus vertical feeder through CB-11B-FDR to MCC-11B busbar.,high
+BUS-480-B,CB-12B-FDR,power,full_right_train_raw: lower 480 bus vertical feeder through CB-12B-FDR to MCC-12B busbar.,high
+CB-12B-FDR,MCC-12B,power,full_right_train_raw: lower 480 bus vertical feeder through CB-12B-FDR to MCC-12B busbar.,high
+BUS-480-B,CB-21B-FDR,power,full_right_train_raw: lower 480 bus vertical feeder through CB-21B-FDR to MCC-21B busbar.,high
+CB-21B-FDR,MCC-21B,power,full_right_train_raw: lower 480 bus vertical feeder through CB-21B-FDR to MCC-21B busbar.,high
+BUS-480-B,CB-31B-FDR,power,full_right_train_raw: lower 480 bus vertical feeder through CB-31B-FDR to MCC-31B busbar.,high
+CB-31B-FDR,MCC-31B,power,full_right_train_raw: lower 480 bus vertical feeder through CB-31B-FDR to MCC-31B busbar.,high
+MCC-11A,CB-P201A,power,full_left_train_raw/mcc_feeders_a_left_raw: vertical branch from MCC busbar down into branch breaker CB-P201A.,high
+CB-P201A,RELAY-KP201A,relay_association,full_left_train_raw/mcc_feeders_a_left_raw: RELAY-KP201A is directly below CB-P201A on the same branch feeder; suffixes match the protected load.,high
+RELAY-KP201A,PUMP-RHR201A,controlled_power,full_left_train_raw/mcc_feeders_a_left_raw: vertical conductor from relay/contact RELAY-KP201A to load PUMP-RHR201A.,high
+PUMP-RHR201A,GND-P201A,ground,full_left_train_raw/mcc_feeders_a_left_raw: load PUMP-RHR201A continues down to individual ground symbol GND-P201A.,high
+MCC-11A,CB-P211A,power,full_left_train_raw/mcc_feeders_a_left_raw: vertical branch from MCC busbar down into branch breaker CB-P211A.,high
+CB-P211A,RELAY-KP211A,relay_association,full_left_train_raw/mcc_feeders_a_left_raw: RELAY-KP211A is directly below CB-P211A on the same branch feeder; suffixes match the protected load.,high
+RELAY-KP211A,PUMP-CS211A,controlled_power,full_left_train_raw/mcc_feeders_a_left_raw: vertical conductor from relay/contact RELAY-KP211A to load PUMP-CS211A.,high
+PUMP-CS211A,GND-P211A,ground,full_left_train_raw/mcc_feeders_a_left_raw: load PUMP-CS211A continues down to individual ground symbol GND-P211A.,high
+MCC-11A,CB-P221A,power,full_left_train_raw/mcc_feeders_a_left_raw: vertical branch from MCC busbar down into branch breaker CB-P221A.,high
+CB-P221A,RELAY-KP221A,relay_association,full_left_train_raw/mcc_feeders_a_left_raw: RELAY-KP221A is directly below CB-P221A on the same branch feeder; suffixes match the protected load.,high
+RELAY-KP221A,PUMP-SI221A,controlled_power,full_left_train_raw/mcc_feeders_a_left_raw: vertical conductor from relay/contact RELAY-KP221A to load PUMP-SI221A.,high
+PUMP-SI221A,GND-P221A,ground,full_left_train_raw/mcc_feeders_a_left_raw: load PUMP-SI221A continues down to individual ground symbol GND-P221A.,high
+MCC-12A,CB-P101A,power,mcc_feeders_a_left_raw: vertical branch from MCC busbar down into branch breaker CB-P101A.,high
+CB-P101A,RELAY-KP101A,relay_association,mcc_feeders_a_left_raw: RELAY-KP101A is directly below CB-P101A on the same branch feeder; suffixes match the protected load.,high
+RELAY-KP101A,PUMP-AFW101A,controlled_power,mcc_feeders_a_left_raw: vertical conductor from relay/contact RELAY-KP101A to load PUMP-AFW101A.,high
+PUMP-AFW101A,GND-P101A,ground,mcc_feeders_a_left_raw: load PUMP-AFW101A continues down to individual ground symbol GND-P101A.,high
+MCC-12A,CB-HV101A,power,mcc_feeders_a_left_raw: vertical branch from MCC busbar down into branch breaker CB-HV101A.,high
+CB-HV101A,RELAY-KHV101A,relay_association,mcc_feeders_a_left_raw: RELAY-KHV101A is directly below CB-HV101A on the same branch feeder; suffixes match the protected load.,high
+RELAY-KHV101A,MOV-HV101A,controlled_power,mcc_feeders_a_left_raw: vertical conductor from relay/contact RELAY-KHV101A to load MOV-HV101A.,high
+MOV-HV101A,TB-HV101A,control,mcc_feeders_a_left_raw: load MOV-HV101A continues by dashed/control lead to terminal block TB-HV101A.,medium
+MCC-12A,CB-FN1A,power,mcc_feeders_a_left_raw: vertical branch from MCC busbar down into branch breaker CB-FN1A.,high
+CB-FN1A,RELAY-KFN1A,relay_association,mcc_feeders_a_left_raw: RELAY-KFN1A is directly below CB-FN1A on the same branch feeder; suffixes match the protected load.,high
+RELAY-KFN1A,FAN-HV1A,controlled_power,mcc_feeders_a_left_raw: vertical conductor from relay/contact RELAY-KFN1A to load FAN-HV1A.,high
+FAN-HV1A,GND-FN1A,ground,mcc_feeders_a_left_raw: load FAN-HV1A continues down to individual ground symbol GND-FN1A.,high
+MCC-21A,CB-P301A,power,mcc_feeders_a_right_raw: vertical branch from MCC busbar down into branch breaker CB-P301A.,high
+CB-P301A,RELAY-KP301A,relay_association,mcc_feeders_a_right_raw: RELAY-KP301A is directly below CB-P301A on the same branch feeder; suffixes match the protected load.,high
+RELAY-KP301A,PUMP-CCW301A,controlled_power,mcc_feeders_a_right_raw: vertical conductor from relay/contact RELAY-KP301A to load PUMP-CCW301A.,high
+PUMP-CCW301A,GND-P301A,ground,mcc_feeders_a_right_raw: load PUMP-CCW301A continues down to individual ground symbol GND-P301A.,high
+MCC-21A,CB-P401A,power,mcc_feeders_a_right_raw: vertical branch from MCC busbar down into branch breaker CB-P401A.,high
+CB-P401A,RELAY-KP401A,relay_association,mcc_feeders_a_right_raw: RELAY-KP401A is directly below CB-P401A on the same branch feeder; suffixes match the protected load.,high
+RELAY-KP401A,PUMP-SW401A,controlled_power,mcc_feeders_a_right_raw: vertical conductor from relay/contact RELAY-KP401A to load PUMP-SW401A.,high
+PUMP-SW401A,GND-P401A,ground,mcc_feeders_a_right_raw: load PUMP-SW401A continues down to individual ground symbol GND-P401A.,high
+MCC-21A,CB-HT1A,power,mcc_feeders_a_right_raw: vertical branch from MCC busbar down into branch breaker CB-HT1A.,high
+CB-HT1A,RELAY-KHT1A,relay_association,mcc_feeders_a_right_raw: RELAY-KHT1A is directly below CB-HT1A on the same branch feeder; suffixes match the protected load.,high
+RELAY-KHT1A,HTR-PZR1A,controlled_power,mcc_feeders_a_right_raw: vertical conductor from relay/contact RELAY-KHT1A to load HTR-PZR1A.,high
+HTR-PZR1A,TB-HT1A,control,mcc_feeders_a_right_raw: load HTR-PZR1A continues by dashed/control lead to terminal block TB-HT1A.,medium
+MCC-31A,CB-RM1A,power,mcc_feeders_a_right_raw: vertical branch from MCC busbar down into branch breaker CB-RM1A.,high
+CB-RM1A,RELAY-KRM1A,relay_association,mcc_feeders_a_right_raw: RELAY-KRM1A is directly below CB-RM1A on the same branch feeder; suffixes match the protected load.,high
+RELAY-KRM1A,MON-RAD1A,signal,mcc_feeders_a_right_raw: vertical conductor from relay/contact RELAY-KRM1A to load MON-RAD1A.,medium
+MON-RAD1A,TB-RM1A,signal,mcc_feeders_a_right_raw: monitor branch uses dotted lower lead from MON-RAD1A to terminal block TB-RM1A.,medium
+MCC-31A,CB-P501A,power,mcc_feeders_a_right_raw: vertical branch from MCC busbar down into branch breaker CB-P501A.,high
+CB-P501A,RELAY-KP501A,relay_association,mcc_feeders_a_right_raw: RELAY-KP501A is directly below CB-P501A on the same branch feeder; suffixes match the protected load.,high
+RELAY-KP501A,PUMP-CHW501A,controlled_power,mcc_feeders_a_right_raw: vertical conductor from relay/contact RELAY-KP501A to load PUMP-CHW501A.,high
+PUMP-CHW501A,GND-P501A,ground,mcc_feeders_a_right_raw: load PUMP-CHW501A continues down to individual ground symbol GND-P501A.,high
+MCC-31A,CB-CV121A,power,mcc_feeders_a_right_raw: vertical branch from MCC busbar down into branch breaker CB-CV121A.,high
+CB-CV121A,RELAY-KCV121A,relay_association,mcc_feeders_a_right_raw: RELAY-KCV121A is directly below CB-CV121A on the same branch feeder; suffixes match the protected load.,high
+RELAY-KCV121A,MOV-CV121A,controlled_power,mcc_feeders_a_right_raw: vertical conductor from relay/contact RELAY-KCV121A to load MOV-CV121A.,high
+MOV-CV121A,TB-CV121A,control,mcc_feeders_a_right_raw: load MOV-CV121A continues by dashed/control lead to terminal block TB-CV121A.,medium
+MCC-11B,CB-P201B,power,mcc_feeders_b_left_raw: vertical branch from MCC busbar down into branch breaker CB-P201B.,high
+CB-P201B,RELAY-KP201B,relay_association,mcc_feeders_b_left_raw: RELAY-KP201B is directly below CB-P201B on the same branch feeder; suffixes match the protected load.,high
+RELAY-KP201B,PUMP-RHR201B,controlled_power,mcc_feeders_b_left_raw: vertical conductor from relay/contact RELAY-KP201B to load PUMP-RHR201B.,high
+PUMP-RHR201B,GND-P201B,ground,mcc_feeders_b_left_raw: load PUMP-RHR201B continues down to individual ground symbol GND-P201B.,high
+MCC-11B,CB-P211B,power,mcc_feeders_b_left_raw: vertical branch from MCC busbar down into branch breaker CB-P211B.,high
+CB-P211B,RELAY-KP211B,relay_association,mcc_feeders_b_left_raw: RELAY-KP211B is directly below CB-P211B on the same branch feeder; suffixes match the protected load.,high
+RELAY-KP211B,PUMP-CS211B,controlled_power,mcc_feeders_b_left_raw: vertical conductor from relay/contact RELAY-KP211B to load PUMP-CS211B.,high
+PUMP-CS211B,GND-P211B,ground,mcc_feeders_b_left_raw: load PUMP-CS211B continues down to individual ground symbol GND-P211B.,high
+MCC-11B,CB-P221B,power,mcc_feeders_b_left_raw: vertical branch from MCC busbar down into branch breaker CB-P221B.,high
+CB-P221B,RELAY-KP221B,relay_association,mcc_feeders_b_left_raw: RELAY-KP221B is directly below CB-P221B on the same branch feeder; suffixes match the protected load.,high
+RELAY-KP221B,PUMP-SI221B,controlled_power,mcc_feeders_b_left_raw: vertical conductor from relay/contact RELAY-KP221B to load PUMP-SI221B.,high
+PUMP-SI221B,GND-P221B,ground,mcc_feeders_b_left_raw: load PUMP-SI221B continues down to individual ground symbol GND-P221B.,high
+MCC-12B,CB-P101B,power,mcc_feeders_b_left_raw: vertical branch from MCC busbar down into branch breaker CB-P101B.,high
+CB-P101B,RELAY-KP101B,relay_association,mcc_feeders_b_left_raw: RELAY-KP101B is directly below CB-P101B on the same branch feeder; suffixes match the protected load.,high
+RELAY-KP101B,PUMP-AFW101B,controlled_power,mcc_feeders_b_left_raw: vertical conductor from relay/contact RELAY-KP101B to load PUMP-AFW101B.,high
+PUMP-AFW101B,GND-P101B,ground,mcc_feeders_b_left_raw: load PUMP-AFW101B continues down to individual ground symbol GND-P101B.,high
+MCC-12B,CB-HV101B,power,mcc_feeders_b_left_raw: vertical branch from MCC busbar down into branch breaker CB-HV101B.,high
+CB-HV101B,RELAY-KHV101B,relay_association,mcc_feeders_b_left_raw: RELAY-KHV101B is directly below CB-HV101B on the same branch feeder; suffixes match the protected load.,high
+RELAY-KHV101B,MOV-HV101B,controlled_power,mcc_feeders_b_left_raw: vertical conductor from relay/contact RELAY-KHV101B to load MOV-HV101B.,high
+MOV-HV101B,TB-HV101B,control,mcc_feeders_b_left_raw: load MOV-HV101B continues by dashed/control lead to terminal block TB-HV101B.,medium
+MCC-12B,CB-FN1B,power,mcc_feeders_b_left_raw: vertical branch from MCC busbar down into branch breaker CB-FN1B.,high
+CB-FN1B,RELAY-KFN1B,relay_association,mcc_feeders_b_left_raw: RELAY-KFN1B is directly below CB-FN1B on the same branch feeder; suffixes match the protected load.,high
+RELAY-KFN1B,FAN-HV1B,controlled_power,mcc_feeders_b_left_raw: vertical conductor from relay/contact RELAY-KFN1B to load FAN-HV1B.,high
+FAN-HV1B,GND-FN1B,ground,mcc_feeders_b_left_raw: load FAN-HV1B continues down to individual ground symbol GND-FN1B.,high
+MCC-21B,CB-P301B,power,mcc_feeders_b_right_raw: vertical branch from MCC busbar down into branch breaker CB-P301B.,high
+CB-P301B,RELAY-KP301B,relay_association,mcc_feeders_b_right_raw: RELAY-KP301B is directly below CB-P301B on the same branch feeder; suffixes match the protected load.,high
+RELAY-KP301B,PUMP-CCW301B,controlled_power,mcc_feeders_b_right_raw: vertical conductor from relay/contact RELAY-KP301B to load PUMP-CCW301B.,high
+PUMP-CCW301B,GND-P301B,ground,mcc_feeders_b_right_raw: load PUMP-CCW301B continues down to individual ground symbol GND-P301B.,high
+MCC-21B,CB-P401B,power,mcc_feeders_b_right_raw: vertical branch from MCC busbar down into branch breaker CB-P401B.,high
+CB-P401B,RELAY-KP401B,relay_association,mcc_feeders_b_right_raw: RELAY-KP401B is directly below CB-P401B on the same branch feeder; suffixes match the protected load.,high
+RELAY-KP401B,PUMP-SW401B,controlled_power,mcc_feeders_b_right_raw: vertical conductor from relay/contact RELAY-KP401B to load PUMP-SW401B.,high
+PUMP-SW401B,GND-P401B,ground,mcc_feeders_b_right_raw: load PUMP-SW401B continues down to individual ground symbol GND-P401B.,high
+MCC-21B,CB-HT1B,power,mcc_feeders_b_right_raw: vertical branch from MCC busbar down into branch breaker CB-HT1B.,high
+CB-HT1B,RELAY-KHT1B,relay_association,mcc_feeders_b_right_raw: RELAY-KHT1B is directly below CB-HT1B on the same branch feeder; suffixes match the protected load.,high
+RELAY-KHT1B,HTR-PZR1B,controlled_power,mcc_feeders_b_right_raw: vertical conductor from relay/contact RELAY-KHT1B to load HTR-PZR1B.,high
+HTR-PZR1B,TB-HT1B,control,mcc_feeders_b_right_raw: load HTR-PZR1B continues by dashed/control lead to terminal block TB-HT1B.,medium
+MCC-31B,CB-RM1B,power,mcc_feeders_b_right_raw: vertical branch from MCC busbar down into branch breaker CB-RM1B.,high
+CB-RM1B,RELAY-KRM1B,relay_association,mcc_feeders_b_right_raw: RELAY-KRM1B is directly below CB-RM1B on the same branch feeder; suffixes match the protected load.,high
+RELAY-KRM1B,MON-RAD1B,signal,mcc_feeders_b_right_raw: vertical conductor from relay/contact RELAY-KRM1B to load MON-RAD1B.,medium
+MON-RAD1B,TB-RM1B,signal,mcc_feeders_b_right_raw: monitor branch uses dotted lower lead from MON-RAD1B to terminal block TB-RM1B.,medium
+MCC-31B,CB-P501B,power,mcc_feeders_b_right_raw: vertical branch from MCC busbar down into branch breaker CB-P501B.,high
+CB-P501B,RELAY-KP501B,relay_association,mcc_feeders_b_right_raw: RELAY-KP501B is directly below CB-P501B on the same branch feeder; suffixes match the protected load.,high
+RELAY-KP501B,PUMP-CHW501B,controlled_power,mcc_feeders_b_right_raw: vertical conductor from relay/contact RELAY-KP501B to load PUMP-CHW501B.,high
+PUMP-CHW501B,GND-P501B,ground,mcc_feeders_b_right_raw: load PUMP-CHW501B continues down to individual ground symbol GND-P501B.,high
+MCC-31B,CB-CV121B,power,mcc_feeders_b_right_raw: vertical branch from MCC busbar down into branch breaker CB-CV121B.,high
+CB-CV121B,RELAY-KCV121B,relay_association,mcc_feeders_b_right_raw: RELAY-KCV121B is directly below CB-CV121B on the same branch feeder; suffixes match the protected load.,high
+RELAY-KCV121B,MOV-CV121B,controlled_power,mcc_feeders_b_right_raw: vertical conductor from relay/contact RELAY-KCV121B to load MOV-CV121B.,high
+MOV-CV121B,TB-CV121B,control,mcc_feeders_b_right_raw: load MOV-CV121B continues by dashed/control lead to terminal block TB-CV121B.,medium
+BUS-480-A,TR-RPS-A,power,"full_left_train_raw: solid vertical drop from upper BUS-480-A feeds TR-RPS-A, with visible dots at bus and transformer terminals.",high
+TR-RPS-A,MG-RPS-A,power,control_panels_a_raw: transformer secondary vertical lead connects to top of MG-RPS-A motor-generator symbol.,high
+MG-RPS-A,BUS-120-RPS-A,ac_power,control_panels_a_raw/lower_dc_a_raw: MG-RPS-A lower terminal continues to BUS-120-RPS-A vertical/bus junction.,high
+BUS-480-B,TR-RPS-B,power,full_right_train_raw/mask_overlay: vertical feed from lower 480 V B bus region descends to TR-RPS-B; path is visually congested by MCC feeder alignment.,medium
+TR-RPS-B,MG-RPS-B,power,control_panels_b_raw: transformer secondary vertical lead connects to top of MG-RPS-B motor-generator symbol.,high
+MG-RPS-B,BUS-120-RPS-B,ac_power,control_panels_b_raw/lower_dc_b_raw: MG-RPS-B lower vertical lead continues to BUS-120-RPS-B junction.,high
+BATT-125A,CHGR-125A,dc_power,lower_dc_a_raw: dashed DC link connects battery BATT-125A to charger CHGR-125A.,high
+CHGR-125A,BUS-125DC-A,dc_power,lower_dc_a_raw: charger output vertical lead lands on BUS-125DC-A with dot.,high
+BUS-125DC-A,INV-120A,dc_power,lower_dc_a_raw: inverter DC input is drawn from BUS-125DC-A with filled junctions.,high
+INV-120A,BUS-120-RPS-A,ac_power,lower_dc_a_raw: inverter output vertical lead lands on BUS-120-RPS-A.,high
+BATT-125B,CHGR-125B,dc_power,lower_dc_b_raw: dashed DC link connects battery BATT-125B to charger CHGR-125B.,high
+CHGR-125B,BUS-125DC-B,dc_power,lower_dc_b_raw: charger output vertical lead lands on BUS-125DC-B with dot.,high
+BUS-125DC-B,INV-120B,dc_power,lower_dc_b_raw: inverter DC input is drawn from BUS-125DC-B with filled junctions.,high
+INV-120B,BUS-120-RPS-B,ac_power,lower_dc_b_raw: inverter output vertical lead lands on BUS-120-RPS-B.,high
+BUS-125DC-A,CP-RPS-A,dc_control_power,control_panels_a_raw: CP-RPS-A sits on vertical/dashed control-power feed tied to BUS-125DC-A region.,medium
+BUS-125DC-A,CP-ESF-A,dc_control_power,control_panels_a_raw: CP-ESF-A lower vertical conductor drops to BUS-125DC-A.,high
+BUS-125DC-A,CP-DCS-01,dc_control_power,control_panels_a_raw: CP-DCS-01 lower vertical control conductor ties into BUS-125DC-A area.,medium
+BUS-125DC-A,REC-SOE-1,dc_control_power,lower_dc_a_raw/control_panels_a_raw: REC-SOE-1 is directly above BUS-125DC-A with a filled dot at the bus.,high
+CP-RPS-A,JB-RPS-A3-1A,control,control_panels_a_raw: bottom dot of CP-RPS-A drops into labeled JB-RPS-A3-1A.,high
+JB-RPS-A3-1A,PROT-UV-A,control,control_panels_a_raw: vertical conductor from JB-RPS-A3-1A to PROT-UV-A.,high
+PROT-UV-A,RELAY-27A,control,control_panels_a_raw: dashed control lead from PROT-UV-A right terminal to RELAY-27A.,medium
+CP-ESF-A,TB-2A,control,control_panels_a_raw: CP-ESF-A bottom terminal connects vertically to TB-2A.,high
+TB-2A,PROT-GF-A,control,control_panels_a_raw: TB-2A bottom terminal connects vertically to PROT-GF-A.,high
+PROT-GF-A,RELAY-86A,control,control_panels_a_raw: dashed control lead from PROT-GF-A right terminal to RELAY-86A.,medium
+RELAY-86A,TB-3A,control,control_panels_a_raw: dashed control lead from RELAY-86A to TB-3A/CP-DCS vertical wiring.,medium
+CP-DCS-01,TB-3A,control,control_panels_a_raw: CP-DCS-01 bottom terminal connects vertically to TB-3A.,high
+CP-DCS-01,TB-ESF-1,signal,control_panels_a_raw: dotted signal conductors from CP-DCS-01 right terminals route to TB-ESF-1.,medium
+TB-ESF-1,PT-RCS101,signal,control_panels_a_raw: dotted signal path from TB-ESF-1 left side to PT-RCS101.,medium
+PT-RCS101,REC-SOE-1,signal,control_panels_a_raw: vertical lead from PT-RCS101 down to REC-SOE-1.,high
+TB-ESF-1,LT-RWST101,signal,control_panels_a_raw: dotted/vertical signal path from TB-ESF-1 to LT-RWST101.,medium
+LT-RWST101,ANN-501,signal,control_panels_a_raw: vertical lead from LT-RWST101 down to ANN-501.,high
+TB-ESF-1,FT-AFW101,signal,control_panels_a_raw: dotted signal path from TB-ESF-1 toward FT-AFW101.,medium
+FT-AFW101,METER-VM-1,signal,control_panels_a_raw: vertical lead from FT-AFW101 down to METER-VM-1.,high
+METER-VM-1,BUS-120-RPS-A,ac_power,lower_dc_a_raw/control_panels_a_raw: meter vertical lead lands on BUS-120-RPS-A at filled dot.,high
+BUS-125DC-B,CP-RPS-B,dc_control_power,control_panels_b_raw: CP-RPS-B vertical/dashed control-power wiring descends to BUS-125DC-B region.,medium
+BUS-125DC-B,CP-ESF-B,dc_control_power,control_panels_b_raw: CP-ESF-B lower vertical conductor ties to BUS-125DC-B.,high
+BUS-125DC-B,CP-ANN-01,dc_control_power,control_panels_b_raw: CP-ANN-01 lower control wiring routes to BUS-125DC-B area.,medium
+CP-RPS-B,JB-RPS-B3-1B,control,control_panels_b_raw: bottom dot of CP-RPS-B drops into labeled JB-RPS-B3-1B.,high
+JB-RPS-B3-1B,PROT-UV-B,control,control_panels_b_raw: vertical conductor from JB-RPS-B3-1B to PROT-UV-B.,high
+PROT-UV-B,RELAY-27B,control,control_panels_b_raw: dashed control lead from PROT-UV-B right terminal to RELAY-27B.,medium
+CP-ESF-B,TB-2B,control,control_panels_b_raw: CP-ESF-B bottom terminal connects vertically to TB-2B.,high
+TB-2B,PROT-GF-B,control,control_panels_b_raw: TB-2B bottom terminal connects vertically to PROT-GF-B.,high
+PROT-GF-B,RELAY-86B,control,control_panels_b_raw: dashed control lead from PROT-GF-B right terminal to RELAY-86B.,medium
+RELAY-86B,TB-3B,control,control_panels_b_raw: dashed control lead from RELAY-86B to TB-3B/CP-ANN vertical wiring.,medium
+CP-ANN-01,TB-3B,control,control_panels_b_raw: CP-ANN-01 bottom terminal connects vertically to TB-3B.,high
+MG-RPS-B,TB-ESF-2,signal,control_panels_b_raw: TB-ESF-2 left-side terminals are drawn adjacent to MG-RPS-B vertical conductor with filled dots.,medium
+RTD-RCS101,BUS-120-RPS-B,signal,full_right_train_raw/lower_dc_b_raw: RTD vertical conductor continues down to lower 120 RPS B bus region; ambiguous because it shares the MG vertical run. Jennifer R2: retained as medium-uncertain.,medium
+TB-ESF-2,LS-SUMP101,signal,control_panels_b_raw: dotted/vertical signal path from TB-ESF-2 to LS-SUMP101.,medium
+TB-ESF-2,XS-DOOR101,signal,control_panels_b_raw: dotted signal path from TB-ESF-2 right side to XS-DOOR101.,medium
+TB-ESF-2,JB-CONTAIN,signal,control_panels_b_raw: dotted signal path with junction dot enters JB-CONTAIN from TB-ESF-2 region.,medium
+UCP-01,GND-NO,ground,lower_common_ground_raw: UCP-01 bottom terminal has solid vertical lead to GND-NO ground symbol.,high
+UCP-01,BUS-120-RPS-B,control,lower_common_ground_raw/lower_dc_b_raw: dotted lower common control path from UCP-01 routes into the left continuation of BUS-120-RPS-B area. Jennifer R2: retained as medium-uncertain.,medium

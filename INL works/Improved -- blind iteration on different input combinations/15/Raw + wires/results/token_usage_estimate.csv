@@ -1,0 +1,6 @@
+document,iteration,call_id,actor,round,model,input_tokens_est,cached_input_tokens_est,output_tokens_est,reasoning_tokens_available,reasoning_tokens_low_est,reasoning_tokens_expected_est,reasoning_tokens_high_est,image_file_input_tokens_est,total_tokens_low_est,total_tokens_expected_est,total_tokens_high_est,usage_object_available,notes
+15,1,main_01_visual_orchestration_and_artifacts,main,orchestration,gpt-5,27,0,2400,no,2500,5000,9000,108183,113110,115610,158315,no,Exact usage unavailable; local visual and artifact work.
+15,1,diego_01_high_recall,Diego,round_01,gpt-5.5 xhigh,25,0,3600,no,4500,9000,16200,102643,110768,115268,159654,no,Subagent usage object unavailable; response text observed.
+15,1,jennifer_01_precision,Jennifer,round_01,gpt-5.5 xhigh,24,0,2600,no,4000,8000,14400,103183,109807,113807,157233,no,Subagent usage object unavailable; response text observed.
+15,1,diego_02_saturation,Diego,round_02,gpt-5.5 xhigh,106293,106268,700,no,1500,3000,5400,0,108493,109993,112639,no,Follow-up in same subagent context; prior visual packet counted as cached estimate.
+15,1,jennifer_02_final,Jennifer,round_02,gpt-5.5 xhigh,105832,105807,220,no,900,1800,3240,0,106952,107852,109369,no,Follow-up in same subagent context; prior visual packet counted as cached estimate.

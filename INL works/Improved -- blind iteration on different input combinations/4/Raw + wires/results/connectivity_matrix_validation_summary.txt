@@ -1,0 +1,21 @@
+Connectivity matrix validation summary
+Document: 4
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\4\synthetic_npp_120_component_connectivity_matrix.csv
+GT normalized nodes: 120; GT normalized edges: 124
+Matrices evaluated: 5
+Best row: Diego -- Round 1 from round1_diego_matrix.csv with Precision=0.937008, Recall=0.959677, F1=0.948207
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=112, FP=4, FN=12, Precision=0.965517, Recall=0.903226, F1=0.933333
+Primary issue: missing or differently named GT components contributed false negatives.
+
+Extra/non-GT nodes most responsible for FP edges: DCB-01 (2 FP edges); DCA-01 (2 FP edges).
+Missing GT nodes examples: ANN-CP-A; REC-SER-01; RELAY-K701; RELAY-K702; TB-ESF-A; TB-ESF-B.
+No strong close-name mismatches were detected by the simple fuzzy-name check.
+False-negative edge examples among GT-known nodes: BUS-480-LCA -- CB-CHG-A; BUS-480-LCB -- CB-CHG-B.
+False-positive examples involving extra/non-GT nodes: BUS-480-LCA -- DCA-01; BUS-480-LCB -- DCB-01; CB-CHG-A -- DCA-01; CB-CHG-B -- DCB-01.
+False-negative examples involving missing/differently named nodes: ANN-CP-A -- REC-SER-01; ANN-CP-A -- TB-ESF-A; ESFAS-TRAIN-A -- RELAY-K701; ESFAS-TRAIN-B -- RELAY-K702; REC-SER-01 -- TB-ESF-B; RELAY-K701 -- RPS-TRAIN-A; RELAY-K701 -- TB-ESF-A; RELAY-K702 -- RPS-TRAIN-B.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (DCB-01; DCA-01), the final-row metrics would be TP=112, FP=0, FN=12, Precision=1.000000, Recall=0.903226, F1=0.949153.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=112, FP=0, FN=12, Precision=1.000000, Recall=0.903226, F1=0.949153.

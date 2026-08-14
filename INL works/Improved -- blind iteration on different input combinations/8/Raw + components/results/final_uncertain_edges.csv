@@ -1,0 +1,12 @@
+source,target_or_category,reason
+CB-EDG-C,BUS-4160-S2B,"Center EDG feeder may bridge toward B, but filled endpoint is not clean."
+MOV-8802A,JB-2A1,"Dashed route is plausible, but endpoint ownership is congested."
+MOV-8802B,JB-2B1,"Dashed route is plausible, but endpoint ownership is congested."
+PUMP-SI/RHR/CS/CCW branches A/B,RELAY-K1A/K1B,Dashed interlock bundles pass nearby but exact branch terminals are not safe.
+CP-RPS-A,CP-ESFAS-A,Adjacent cabinets/routing without clear direct terminal.
+CP-RPS-B,CP-ESFAS-B,Adjacent cabinets/routing without clear direct terminal.
+CP-ESFAS-A,RELAY-86A,Plausible trip/control route but no clean endpoint-to-endpoint evidence.
+CP-ESFAS-B,RELAY-86B,Plausible trip/control route but no clean endpoint-to-endpoint evidence.
+BUS-480-E2A,BUS-480-N2A,Nearby buses but no direct tie beyond shown devices.
+BUS-480-E2B,BUS-480-N2B,Nearby buses but no direct tie beyond shown devices.
+dashed status/interlock bundles,raceway paths,Excluded where dashed paths pass through corridors without unambiguous terminal endpoints.

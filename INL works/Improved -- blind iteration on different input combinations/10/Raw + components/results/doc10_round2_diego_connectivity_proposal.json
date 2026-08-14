@@ -1,0 +1,2029 @@
+{
+  "document": "10",
+  "iteration": "1",
+  "round": "diego_round2",
+  "agent": "Diego",
+  "method": "visual inspection of Doc10 Raw + components only; no GT/OCR/web; saturation review of Jennifer round1 deltas",
+  "node_order": [
+    "SRC-345KV",
+    "BUS-SWY-345KV",
+    "UAT-1",
+    "GEN-01",
+    "SAT-1",
+    "CB-TIE-AB",
+    "BUS-4160-A",
+    "CB-UAT",
+    "DG-1A",
+    "CB-DGA",
+    "CB-A01",
+    "CB-A02",
+    "CB-A03",
+    "CB-A04",
+    "CB-A05",
+    "CB-A06",
+    "CB-A07",
+    "CB-A08",
+    "CB-A09",
+    "TR-480-A1",
+    "TR-480-A2",
+    "PUMP-RHR-A",
+    "PUMP-CS-A",
+    "PUMP-AFW-A",
+    "TR-UPS-A",
+    "CHLR-A",
+    "FAN-CR-A",
+    "480V LC FEEDERS - A",
+    "PT-4160-A",
+    "CT-4160-A",
+    "FUSE-A01",
+    "FUSE-A02",
+    "PNL-RPS-A",
+    "PNL-ESFAS-A",
+    "TB-LV-A",
+    "LC-101A",
+    "LC-102A",
+    "DS-A01",
+    "DS-A02",
+    "MCC-101A",
+    "MCC-102A",
+    "MCC-103A",
+    "MOV-101A",
+    "MOV-102A",
+    "JB-101A",
+    "AOV-101A",
+    "PUMP-CCW-A",
+    "FAN-AB-A",
+    "HTR-TRACE-A",
+    "RECT-1A",
+    "BCHG-1A",
+    "BAT-1A",
+    "BUS-DC-A",
+    "INV-1A",
+    "BUS-UPS-A",
+    "PNL-UPS-A",
+    "TB-SWGR-A",
+    "RLY-27A",
+    "RLY-50A",
+    "RLY-86A",
+    "CT-CAB-A CONTROL CABLE TRAY",
+    "GND-A",
+    "GND-A ROUTE",
+    "BUS-4160-B",
+    "CB-SAT",
+    "DG-1B",
+    "CB-DGB",
+    "CB-B01",
+    "CB-B02",
+    "CB-B03",
+    "CB-B04",
+    "CB-B05",
+    "CB-B06",
+    "CB-B07",
+    "CB-B08",
+    "CB-B09",
+    "TR-480-B1",
+    "TR-480-B2",
+    "PUMP-RHR-B",
+    "PUMP-CS-B",
+    "PUMP-AFW-B",
+    "TR-UPS-B",
+    "CHLR-B",
+    "FAN-CR-B",
+    "480V LC FEEDERS - B",
+    "PT-4160-B",
+    "CT-4160-B",
+    "FUSE-B01",
+    "FUSE-B02",
+    "PNL-RPS-B",
+    "PNL-ESFAS-B",
+    "TB-LV-B",
+    "LC-101B",
+    "LC-102B",
+    "DS-B01",
+    "DS-B02",
+    "MCC-101B",
+    "MCC-102B",
+    "MCC-103B",
+    "MOV-101B",
+    "MOV-102B",
+    "JB-101B",
+    "AOV-101B",
+    "PUMP-CCW-B",
+    "FAN-AB-B",
+    "HTR-TRACE-B",
+    "RECT-1B",
+    "BCHG-1B",
+    "BAT-1B",
+    "BUS-DC-B",
+    "INV-1B",
+    "BUS-UPS-B",
+    "PNL-UPS-B",
+    "TB-SWGR-B",
+    "RLY-27B",
+    "RLY-50B",
+    "RLY-86B",
+    "CT-CAB-B CONTROL CABLE TRAY",
+    "GND-B",
+    "GND-B ROUTE",
+    "PNL-MCR-01",
+    "PNL-ANN-01",
+    "SER-01",
+    "JB-CONTROL"
+  ],
+  "nodes": [
+    {
+      "id": "SRC-345KV",
+      "type": "source",
+      "evidence": "top-left circle labeled SRC-345KV tied by solid conductor to upper 345 kV bus"
+    },
+    {
+      "id": "BUS-SWY-345KV",
+      "type": "bus",
+      "evidence": "thick top horizontal bus labeled BUS-SWY-345KV"
+    },
+    {
+      "id": "UAT-1",
+      "type": "transformer",
+      "evidence": "upper A-side transformer rectangle labeled UAT-1"
+    },
+    {
+      "id": "GEN-01",
+      "type": "source",
+      "evidence": "large circle labeled GEN-01 connected to UAT-1 by solid conductor"
+    },
+    {
+      "id": "SAT-1",
+      "type": "transformer",
+      "evidence": "upper B-side transformer rectangle labeled SAT-1 tapped from BUS-SWY-345KV"
+    },
+    {
+      "id": "CB-TIE-AB",
+      "type": "breaker",
+      "evidence": "breaker labeled CB-TIE-AB on the solid tie between A and B switchgear"
+    },
+    {
+      "id": "BUS-4160-A",
+      "type": "bus",
+      "evidence": "vertical thick A switchgear bus labeled BUS-4160-A / 4160V CL 1E SWGR A"
+    },
+    {
+      "id": "CB-UAT",
+      "type": "breaker",
+      "evidence": "breaker labeled CB-UAT above BUS-4160-A"
+    },
+    {
+      "id": "DG-1A",
+      "type": "source",
+      "evidence": "circle labeled DG-1A"
+    },
+    {
+      "id": "CB-DGA",
+      "type": "breaker",
+      "evidence": "breaker labeled CB-DGA between DG-1A and BUS-4160-A"
+    },
+    {
+      "id": "CB-A01",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A01 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A02",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A02 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A03",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A03 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A04",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A04 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A05",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A05 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A06",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A06 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A07",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A07 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A08",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A08 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A09",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A09 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "TR-480-A1",
+      "type": "transformer",
+      "evidence": "A transformer labeled TR-480-A1 on CB-A01 feeder"
+    },
+    {
+      "id": "TR-480-A2",
+      "type": "transformer",
+      "evidence": "A transformer labeled TR-480-A2 near upper pump feeders"
+    },
+    {
+      "id": "PUMP-RHR-A",
+      "type": "load",
+      "evidence": "A motor circle labeled PUMP-RHR-A"
+    },
+    {
+      "id": "PUMP-CS-A",
+      "type": "load",
+      "evidence": "A motor circle labeled PUMP-CS-A"
+    },
+    {
+      "id": "PUMP-AFW-A",
+      "type": "load",
+      "evidence": "A motor circle labeled PUMP-AFW-A"
+    },
+    {
+      "id": "TR-UPS-A",
+      "type": "transformer",
+      "evidence": "A transformer labeled TR-UPS-A on mid-level feeder"
+    },
+    {
+      "id": "CHLR-A",
+      "type": "load",
+      "evidence": "A rectangular load labeled CHLR-A"
+    },
+    {
+      "id": "FAN-CR-A",
+      "type": "load",
+      "evidence": "A fan/motor symbol labeled FAN-CR-A"
+    },
+    {
+      "id": "480V LC FEEDERS - A",
+      "type": "bus",
+      "evidence": "A feeder group label 480V LC FEEDERS - A"
+    },
+    {
+      "id": "PT-4160-A",
+      "type": "control",
+      "evidence": "A circle labeled PT-4160-A with solid tap and dotted signal routing"
+    },
+    {
+      "id": "CT-4160-A",
+      "type": "control",
+      "evidence": "A circle labeled CT-4160-A near RPS/ESFAS/fuses"
+    },
+    {
+      "id": "FUSE-A01",
+      "type": "breaker",
+      "evidence": "A fuse symbol labeled FUSE-A01"
+    },
+    {
+      "id": "FUSE-A02",
+      "type": "breaker",
+      "evidence": "A fuse symbol labeled FUSE-A02"
+    },
+    {
+      "id": "PNL-RPS-A",
+      "type": "panel",
+      "evidence": "A panel labeled PNL-RPS-A"
+    },
+    {
+      "id": "PNL-ESFAS-A",
+      "type": "panel",
+      "evidence": "A panel labeled PNL-ESFAS-A"
+    },
+    {
+      "id": "TB-LV-A",
+      "type": "panel",
+      "evidence": "A terminal board labeled TB-LV-A"
+    },
+    {
+      "id": "LC-101A",
+      "type": "panel",
+      "evidence": "A load center labeled LC-101A"
+    },
+    {
+      "id": "LC-102A",
+      "type": "panel",
+      "evidence": "A load center labeled LC-102A"
+    },
+    {
+      "id": "DS-A01",
+      "type": "breaker",
+      "evidence": "A disconnect switch labeled DS-A01"
+    },
+    {
+      "id": "DS-A02",
+      "type": "breaker",
+      "evidence": "A disconnect switch labeled DS-A02"
+    },
+    {
+      "id": "MCC-101A",
+      "type": "panel",
+      "evidence": "A motor control center labeled MCC-101A"
+    },
+    {
+      "id": "MCC-102A",
+      "type": "panel",
+      "evidence": "A motor control center labeled MCC-102A"
+    },
+    {
+      "id": "MCC-103A",
+      "type": "panel",
+      "evidence": "A motor control center labeled MCC-103A"
+    },
+    {
+      "id": "MOV-101A",
+      "type": "load",
+      "evidence": "A motor-operated valve labeled MOV-101A"
+    },
+    {
+      "id": "MOV-102A",
+      "type": "load",
+      "evidence": "A motor-operated valve labeled MOV-102A"
+    },
+    {
+      "id": "JB-101A",
+      "type": "panel",
+      "evidence": "A junction box labeled JB-101A"
+    },
+    {
+      "id": "AOV-101A",
+      "type": "load",
+      "evidence": "A air-operated valve labeled AOV-101A"
+    },
+    {
+      "id": "PUMP-CCW-A",
+      "type": "load",
+      "evidence": "A motor circle labeled PUMP-CCW-A"
+    },
+    {
+      "id": "FAN-AB-A",
+      "type": "load",
+      "evidence": "A fan/motor symbol labeled FAN-AB-A"
+    },
+    {
+      "id": "HTR-TRACE-A",
+      "type": "load",
+      "evidence": "A heater trace rectangle labeled HTR-TRACE-A"
+    },
+    {
+      "id": "RECT-1A",
+      "type": "source",
+      "evidence": "A DC/UPS train rectangle labeled RECT-1A"
+    },
+    {
+      "id": "BCHG-1A",
+      "type": "other",
+      "evidence": "A battery charger rectangle labeled BCHG-1A"
+    },
+    {
+      "id": "BAT-1A",
+      "type": "source",
+      "evidence": "A battery symbol labeled BAT-1A"
+    },
+    {
+      "id": "BUS-DC-A",
+      "type": "bus",
+      "evidence": "A thick DC bus labeled BUS-DC-A"
+    },
+    {
+      "id": "INV-1A",
+      "type": "other",
+      "evidence": "A inverter rectangle labeled INV-1A"
+    },
+    {
+      "id": "BUS-UPS-A",
+      "type": "bus",
+      "evidence": "A thick UPS bus labeled BUS-UPS-A"
+    },
+    {
+      "id": "PNL-UPS-A",
+      "type": "panel",
+      "evidence": "A UPS panel labeled PNL-UPS-A"
+    },
+    {
+      "id": "TB-SWGR-A",
+      "type": "panel",
+      "evidence": "A terminal board labeled TB-SWGR-A beside relay stack"
+    },
+    {
+      "id": "RLY-27A",
+      "type": "relay",
+      "evidence": "A relay circle labeled RLY-27A"
+    },
+    {
+      "id": "RLY-50A",
+      "type": "relay",
+      "evidence": "A relay circle labeled RLY-50A"
+    },
+    {
+      "id": "RLY-86A",
+      "type": "relay",
+      "evidence": "A relay circle labeled RLY-86A"
+    },
+    {
+      "id": "CT-CAB-A CONTROL CABLE TRAY",
+      "type": "control",
+      "evidence": "upper A route label CT-CAB-A CONTROL CABLE TRAY"
+    },
+    {
+      "id": "GND-A",
+      "type": "ground",
+      "evidence": "lower A ground symbol labeled GND-A"
+    },
+    {
+      "id": "GND-A ROUTE",
+      "type": "logical_node",
+      "evidence": "A dash-dot ground routing adjacent to GND-A"
+    },
+    {
+      "id": "BUS-4160-B",
+      "type": "bus",
+      "evidence": "vertical thick B switchgear bus labeled BUS-4160-B / 4160V CL 1E SWGR B"
+    },
+    {
+      "id": "CB-SAT",
+      "type": "breaker",
+      "evidence": "breaker labeled CB-SAT below SAT-1"
+    },
+    {
+      "id": "DG-1B",
+      "type": "source",
+      "evidence": "circle labeled DG-1B"
+    },
+    {
+      "id": "CB-DGB",
+      "type": "breaker",
+      "evidence": "breaker labeled CB-DGB between DG-1B and BUS-4160-B"
+    },
+    {
+      "id": "CB-B01",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B01 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B02",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B02 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B03",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B03 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B04",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B04 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B05",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B05 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B06",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B06 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B07",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B07 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B08",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B08 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B09",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B09 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "TR-480-B1",
+      "type": "transformer",
+      "evidence": "B transformer labeled TR-480-B1 on CB-B01 feeder"
+    },
+    {
+      "id": "TR-480-B2",
+      "type": "transformer",
+      "evidence": "B transformer labeled TR-480-B2 near upper pump feeders"
+    },
+    {
+      "id": "PUMP-RHR-B",
+      "type": "load",
+      "evidence": "B motor circle labeled PUMP-RHR-B"
+    },
+    {
+      "id": "PUMP-CS-B",
+      "type": "load",
+      "evidence": "B motor circle labeled PUMP-CS-B"
+    },
+    {
+      "id": "PUMP-AFW-B",
+      "type": "load",
+      "evidence": "B motor circle labeled PUMP-AFW-B"
+    },
+    {
+      "id": "TR-UPS-B",
+      "type": "transformer",
+      "evidence": "B transformer labeled TR-UPS-B on mid-level feeder"
+    },
+    {
+      "id": "CHLR-B",
+      "type": "load",
+      "evidence": "B rectangular load labeled CHLR-B"
+    },
+    {
+      "id": "FAN-CR-B",
+      "type": "load",
+      "evidence": "B fan/motor symbol labeled FAN-CR-B"
+    },
+    {
+      "id": "480V LC FEEDERS - B",
+      "type": "bus",
+      "evidence": "B feeder group label 480V LC FEEDERS - B"
+    },
+    {
+      "id": "PT-4160-B",
+      "type": "control",
+      "evidence": "B circle labeled PT-4160-B with solid tap and dotted signal routing"
+    },
+    {
+      "id": "CT-4160-B",
+      "type": "control",
+      "evidence": "B circle labeled CT-4160-B near RPS/ESFAS/fuses"
+    },
+    {
+      "id": "FUSE-B01",
+      "type": "breaker",
+      "evidence": "B fuse symbol labeled FUSE-B01"
+    },
+    {
+      "id": "FUSE-B02",
+      "type": "breaker",
+      "evidence": "B fuse symbol labeled FUSE-B02"
+    },
+    {
+      "id": "PNL-RPS-B",
+      "type": "panel",
+      "evidence": "B panel labeled PNL-RPS-B"
+    },
+    {
+      "id": "PNL-ESFAS-B",
+      "type": "panel",
+      "evidence": "B panel labeled PNL-ESFAS-B"
+    },
+    {
+      "id": "TB-LV-B",
+      "type": "panel",
+      "evidence": "B terminal board labeled TB-LV-B"
+    },
+    {
+      "id": "LC-101B",
+      "type": "panel",
+      "evidence": "B load center labeled LC-101B"
+    },
+    {
+      "id": "LC-102B",
+      "type": "panel",
+      "evidence": "B load center labeled LC-102B"
+    },
+    {
+      "id": "DS-B01",
+      "type": "breaker",
+      "evidence": "B disconnect switch labeled DS-B01"
+    },
+    {
+      "id": "DS-B02",
+      "type": "breaker",
+      "evidence": "B disconnect switch labeled DS-B02"
+    },
+    {
+      "id": "MCC-101B",
+      "type": "panel",
+      "evidence": "B motor control center labeled MCC-101B"
+    },
+    {
+      "id": "MCC-102B",
+      "type": "panel",
+      "evidence": "B motor control center labeled MCC-102B"
+    },
+    {
+      "id": "MCC-103B",
+      "type": "panel",
+      "evidence": "B motor control center labeled MCC-103B"
+    },
+    {
+      "id": "MOV-101B",
+      "type": "load",
+      "evidence": "B motor-operated valve labeled MOV-101B"
+    },
+    {
+      "id": "MOV-102B",
+      "type": "load",
+      "evidence": "B motor-operated valve labeled MOV-102B"
+    },
+    {
+      "id": "JB-101B",
+      "type": "panel",
+      "evidence": "B junction box labeled JB-101B"
+    },
+    {
+      "id": "AOV-101B",
+      "type": "load",
+      "evidence": "B air-operated valve labeled AOV-101B"
+    },
+    {
+      "id": "PUMP-CCW-B",
+      "type": "load",
+      "evidence": "B motor circle labeled PUMP-CCW-B"
+    },
+    {
+      "id": "FAN-AB-B",
+      "type": "load",
+      "evidence": "B fan/motor symbol labeled FAN-AB-B"
+    },
+    {
+      "id": "HTR-TRACE-B",
+      "type": "load",
+      "evidence": "B heater trace rectangle labeled HTR-TRACE-B"
+    },
+    {
+      "id": "RECT-1B",
+      "type": "source",
+      "evidence": "B DC/UPS train rectangle labeled RECT-1B"
+    },
+    {
+      "id": "BCHG-1B",
+      "type": "other",
+      "evidence": "B battery charger rectangle labeled BCHG-1B"
+    },
+    {
+      "id": "BAT-1B",
+      "type": "source",
+      "evidence": "B battery symbol labeled BAT-1B"
+    },
+    {
+      "id": "BUS-DC-B",
+      "type": "bus",
+      "evidence": "B thick DC bus labeled BUS-DC-B"
+    },
+    {
+      "id": "INV-1B",
+      "type": "other",
+      "evidence": "B inverter rectangle labeled INV-1B"
+    },
+    {
+      "id": "BUS-UPS-B",
+      "type": "bus",
+      "evidence": "B thick UPS bus labeled BUS-UPS-B"
+    },
+    {
+      "id": "PNL-UPS-B",
+      "type": "panel",
+      "evidence": "B UPS panel labeled PNL-UPS-B"
+    },
+    {
+      "id": "TB-SWGR-B",
+      "type": "panel",
+      "evidence": "B terminal board labeled TB-SWGR-B beside relay stack"
+    },
+    {
+      "id": "RLY-27B",
+      "type": "relay",
+      "evidence": "B relay circle labeled RLY-27B"
+    },
+    {
+      "id": "RLY-50B",
+      "type": "relay",
+      "evidence": "B relay circle labeled RLY-50B"
+    },
+    {
+      "id": "RLY-86B",
+      "type": "relay",
+      "evidence": "B relay circle labeled RLY-86B"
+    },
+    {
+      "id": "CT-CAB-B CONTROL CABLE TRAY",
+      "type": "control",
+      "evidence": "upper B route label CT-CAB-B CONTROL CABLE TRAY"
+    },
+    {
+      "id": "GND-B",
+      "type": "ground",
+      "evidence": "lower B ground symbol labeled GND-B"
+    },
+    {
+      "id": "GND-B ROUTE",
+      "type": "logical_node",
+      "evidence": "B dash-dot ground routing adjacent to GND-B"
+    },
+    {
+      "id": "PNL-MCR-01",
+      "type": "panel",
+      "evidence": "right-side control bay panel labeled PNL-MCR-01"
+    },
+    {
+      "id": "PNL-ANN-01",
+      "type": "panel",
+      "evidence": "right-side annunciator panel labeled PNL-ANN-01"
+    },
+    {
+      "id": "SER-01",
+      "type": "panel",
+      "evidence": "right-side panel/recorder labeled SER-01"
+    },
+    {
+      "id": "JB-CONTROL",
+      "type": "panel",
+      "evidence": "right-side junction box labeled JB-CONTROL"
+    }
+  ],
+  "edges": [
+    {
+      "source": "SRC-345KV",
+      "target": "BUS-SWY-345KV",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from SRC-345KV circle into thick top BUS-SWY-345KV"
+    },
+    {
+      "source": "BUS-SWY-345KV",
+      "target": "SAT-1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical tap from BUS-SWY-345KV into SAT-1"
+    },
+    {
+      "source": "SAT-1",
+      "target": "CB-SAT",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from SAT-1 routes down to CB-SAT"
+    },
+    {
+      "source": "CB-SAT",
+      "target": "BUS-4160-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from CB-SAT lands on BUS-4160-B"
+    },
+    {
+      "source": "GEN-01",
+      "target": "UAT-1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid line connects UAT-1 to GEN-01"
+    },
+    {
+      "source": "UAT-1",
+      "target": "CB-UAT",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from UAT-1 feeder routes to CB-UAT"
+    },
+    {
+      "source": "CB-UAT",
+      "target": "BUS-4160-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "CB-UAT conductor visibly lands on BUS-4160-A"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-TIE-AB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid tie feeder leaves BUS-4160-A and enters CB-TIE-AB"
+    },
+    {
+      "source": "CB-TIE-AB",
+      "target": "BUS-4160-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid tie conductor continues from CB-TIE-AB into the B switchgear bus boundary; center clear-bay crossings are not treated as extra junctions"
+    },
+    {
+      "source": "DG-1A",
+      "target": "CB-DGA",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid line from DG-1A enters CB-DGA"
+    },
+    {
+      "source": "CB-DGA",
+      "target": "BUS-4160-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from CB-DGA lands on BUS-4160-A"
+    },
+    {
+      "source": "DG-1B",
+      "target": "CB-DGB",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid line from DG-1B enters CB-DGB"
+    },
+    {
+      "source": "CB-DGB",
+      "target": "BUS-4160-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from CB-DGB lands on BUS-4160-B"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-A01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-A to CB-A01"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-A02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-A to CB-A02"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-A03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-A to CB-A03"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-A04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-A to CB-A04"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-A05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-A to CB-A05"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-A06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-A to CB-A06"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-A07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-A to CB-A07"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-A08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-A to CB-A08"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "CB-A09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-A to CB-A09"
+    },
+    {
+      "source": "CB-A01",
+      "target": "TR-480-A1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from CB-A01 terminates at TR-480-A1"
+    },
+    {
+      "source": "CB-A02",
+      "target": "TR-480-A2",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "solid feeder from CB-A02 aligns with TR-480-A2 branch"
+    },
+    {
+      "source": "CB-A03",
+      "target": "PUMP-RHR-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder row from CB-A03 reaches PUMP-RHR-A"
+    },
+    {
+      "source": "CB-A04",
+      "target": "PUMP-CS-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder row from CB-A04 reaches PUMP-CS-A"
+    },
+    {
+      "source": "CB-A05",
+      "target": "PUMP-AFW-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder row from CB-A05 reaches PUMP-AFW-A"
+    },
+    {
+      "source": "CB-A06",
+      "target": "TR-UPS-A",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "solid feeder from CB-A06 reaches TR-UPS-A branch"
+    },
+    {
+      "source": "CB-A07",
+      "target": "CHLR-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder row from CB-A07 reaches CHLR-A"
+    },
+    {
+      "source": "CB-A08",
+      "target": "480V LC FEEDERS - A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from CB-A08 enters labeled 480V LC FEEDERS - A"
+    },
+    {
+      "source": "480V LC FEEDERS - A",
+      "target": "FAN-CR-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 480V LC FEEDERS - A reaches FAN-CR-A"
+    },
+    {
+      "source": "BUS-4160-A",
+      "target": "PT-4160-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid tap from BUS-4160-A routes to PT-4160-A"
+    },
+    {
+      "source": "CT-4160-A",
+      "target": "FUSE-A01",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted signal loop around CT-4160-A continues to FUSE-A01"
+    },
+    {
+      "source": "PNL-ESFAS-A",
+      "target": "FUSE-A02",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "solid conductor from PNL-ESFAS-A runs into FUSE-A02"
+    },
+    {
+      "source": "FUSE-A02",
+      "target": "DS-A01",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "solid lower feeder from FUSE-A02 routes to DS-A01 area"
+    },
+    {
+      "source": "PNL-RPS-A",
+      "target": "TB-LV-A",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed cable-tray drop links PNL-RPS-A to TB-LV-A"
+    },
+    {
+      "source": "PNL-ESFAS-A",
+      "target": "TB-LV-A",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed cable-tray drop links PNL-ESFAS-A to TB-LV-A"
+    },
+    {
+      "source": "480V LC FEEDERS - A",
+      "target": "LC-101A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid drop from 480V LC FEEDERS - A lands on LC-101A"
+    },
+    {
+      "source": "480V LC FEEDERS - A",
+      "target": "LC-102A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid drop from 480V LC FEEDERS - A lands on LC-102A"
+    },
+    {
+      "source": "LC-101A",
+      "target": "DS-A01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor drops from LC-101A to DS-A01"
+    },
+    {
+      "source": "LC-102A",
+      "target": "DS-A02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor drops from LC-102A to DS-A02"
+    },
+    {
+      "source": "DS-A01",
+      "target": "MCC-101A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from DS-A01 feeds MCC-101A"
+    },
+    {
+      "source": "DS-A02",
+      "target": "MCC-102A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from DS-A02 feeds MCC-102A"
+    },
+    {
+      "source": "LC-102A",
+      "target": "MCC-103A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from LC-102A continues to MCC-103A"
+    },
+    {
+      "source": "MCC-101A",
+      "target": "MOV-101A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid drop from MCC-101A reaches MOV-101A"
+    },
+    {
+      "source": "MCC-101A",
+      "target": "MOV-102A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid drop from MCC-101A reaches MOV-102A"
+    },
+    {
+      "source": "MCC-101A",
+      "target": "JB-101A",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed control lead leaves MCC-101A area and drops to JB-101A"
+    },
+    {
+      "source": "JB-101A",
+      "target": "AOV-101A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control line runs from JB-101A to AOV-101A"
+    },
+    {
+      "source": "MCC-102A",
+      "target": "AOV-101A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from MCC-102A reaches AOV-101A"
+    },
+    {
+      "source": "MCC-102A",
+      "target": "PUMP-CCW-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from MCC-102A reaches PUMP-CCW-A"
+    },
+    {
+      "source": "MCC-103A",
+      "target": "FAN-AB-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from MCC-103A reaches FAN-AB-A"
+    },
+    {
+      "source": "FAN-AB-A",
+      "target": "HTR-TRACE-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical conductor connects FAN-AB-A to HTR-TRACE-A"
+    },
+    {
+      "source": "HTR-TRACE-A",
+      "target": "PNL-UPS-A",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "vertical dashed/control lead descends from HTR-TRACE-A toward PNL-UPS-A"
+    },
+    {
+      "source": "RECT-1A",
+      "target": "BCHG-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid DC/UPS train conductor from RECT-1A to BCHG-1A"
+    },
+    {
+      "source": "BCHG-1A",
+      "target": "BAT-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from BCHG-1A into BAT-1A"
+    },
+    {
+      "source": "BAT-1A",
+      "target": "BUS-DC-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "BAT-1A connects by solid conductor to BUS-DC-A"
+    },
+    {
+      "source": "BUS-DC-A",
+      "target": "INV-1A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor leaves BUS-DC-A and enters INV-1A"
+    },
+    {
+      "source": "INV-1A",
+      "target": "BUS-UPS-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from INV-1A feeds BUS-UPS-A"
+    },
+    {
+      "source": "BUS-UPS-A",
+      "target": "PNL-UPS-A",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from BUS-UPS-A enters PNL-UPS-A"
+    },
+    {
+      "source": "GND-A",
+      "target": "GND-A ROUTE",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "dash-dot ground route terminates at GND-A"
+    },
+    {
+      "source": "CT-CAB-A CONTROL CABLE TRAY",
+      "target": "TB-SWGR-A",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "visible cable-tray drop reaches TB-SWGR-A"
+    },
+    {
+      "source": "CT-CAB-A CONTROL CABLE TRAY",
+      "target": "TB-LV-A",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "lower dashed cable-tray routing reaches TB-LV-A"
+    },
+    {
+      "source": "TB-SWGR-A",
+      "target": "RLY-27A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed lead from TB-SWGR-A terminates at RLY-27A"
+    },
+    {
+      "source": "TB-SWGR-A",
+      "target": "RLY-50A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed lead from TB-SWGR-A terminates at RLY-50A"
+    },
+    {
+      "source": "TB-SWGR-A",
+      "target": "RLY-86A",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed lead from TB-SWGR-A terminates at RLY-86A"
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-B01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-B to CB-B01"
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-B02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-B to CB-B02"
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-B03",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-B to CB-B03"
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-B04",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-B to CB-B04"
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-B05",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-B to CB-B05"
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-B06",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-B to CB-B06"
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-B07",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-B to CB-B07"
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-B08",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-B to CB-B08"
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "CB-B09",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "short solid tap from BUS-4160-B to CB-B09"
+    },
+    {
+      "source": "CB-B01",
+      "target": "TR-480-B1",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from CB-B01 terminates at TR-480-B1"
+    },
+    {
+      "source": "CB-B02",
+      "target": "TR-480-B2",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "solid feeder from CB-B02 aligns with TR-480-B2 branch"
+    },
+    {
+      "source": "CB-B03",
+      "target": "PUMP-RHR-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder row from CB-B03 reaches PUMP-RHR-B"
+    },
+    {
+      "source": "CB-B04",
+      "target": "PUMP-CS-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder row from CB-B04 reaches PUMP-CS-B"
+    },
+    {
+      "source": "CB-B05",
+      "target": "PUMP-AFW-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder row from CB-B05 reaches PUMP-AFW-B"
+    },
+    {
+      "source": "CB-B06",
+      "target": "TR-UPS-B",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "solid feeder from CB-B06 reaches TR-UPS-B branch"
+    },
+    {
+      "source": "CB-B07",
+      "target": "CHLR-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder row from CB-B07 reaches CHLR-B"
+    },
+    {
+      "source": "CB-B08",
+      "target": "480V LC FEEDERS - B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from CB-B08 enters labeled 480V LC FEEDERS - B"
+    },
+    {
+      "source": "480V LC FEEDERS - B",
+      "target": "FAN-CR-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from 480V LC FEEDERS - B reaches FAN-CR-B"
+    },
+    {
+      "source": "BUS-4160-B",
+      "target": "PT-4160-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid tap from BUS-4160-B routes to PT-4160-B"
+    },
+    {
+      "source": "CT-4160-B",
+      "target": "FUSE-B01",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted signal loop around CT-4160-B continues to FUSE-B01"
+    },
+    {
+      "source": "PNL-ESFAS-B",
+      "target": "FUSE-B02",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "solid conductor from PNL-ESFAS-B runs into FUSE-B02"
+    },
+    {
+      "source": "FUSE-B02",
+      "target": "DS-B01",
+      "kind": "power",
+      "confidence": "medium",
+      "evidence": "solid lower feeder from FUSE-B02 routes to DS-B01 area"
+    },
+    {
+      "source": "PNL-RPS-B",
+      "target": "TB-LV-B",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed cable-tray drop links PNL-RPS-B to TB-LV-B"
+    },
+    {
+      "source": "PNL-ESFAS-B",
+      "target": "TB-LV-B",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed cable-tray drop links PNL-ESFAS-B to TB-LV-B"
+    },
+    {
+      "source": "480V LC FEEDERS - B",
+      "target": "LC-101B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid drop from 480V LC FEEDERS - B lands on LC-101B"
+    },
+    {
+      "source": "480V LC FEEDERS - B",
+      "target": "LC-102B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid drop from 480V LC FEEDERS - B lands on LC-102B"
+    },
+    {
+      "source": "LC-101B",
+      "target": "DS-B01",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor drops from LC-101B to DS-B01"
+    },
+    {
+      "source": "LC-102B",
+      "target": "DS-B02",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor drops from LC-102B to DS-B02"
+    },
+    {
+      "source": "DS-B01",
+      "target": "MCC-101B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from DS-B01 feeds MCC-101B"
+    },
+    {
+      "source": "DS-B02",
+      "target": "MCC-102B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from DS-B02 feeds MCC-102B"
+    },
+    {
+      "source": "LC-102B",
+      "target": "MCC-103B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from LC-102B continues to MCC-103B"
+    },
+    {
+      "source": "MCC-101B",
+      "target": "MOV-101B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid drop from MCC-101B reaches MOV-101B"
+    },
+    {
+      "source": "MCC-101B",
+      "target": "MOV-102B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid drop from MCC-101B reaches MOV-102B"
+    },
+    {
+      "source": "MCC-101B",
+      "target": "JB-101B",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed control lead leaves MCC-101B area and drops to JB-101B"
+    },
+    {
+      "source": "JB-101B",
+      "target": "AOV-101B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed control line runs from JB-101B to AOV-101B"
+    },
+    {
+      "source": "MCC-102B",
+      "target": "AOV-101B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from MCC-102B reaches AOV-101B"
+    },
+    {
+      "source": "MCC-102B",
+      "target": "PUMP-CCW-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid feeder from MCC-102B reaches PUMP-CCW-B"
+    },
+    {
+      "source": "MCC-103B",
+      "target": "FAN-AB-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical feeder from MCC-103B reaches FAN-AB-B"
+    },
+    {
+      "source": "FAN-AB-B",
+      "target": "HTR-TRACE-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid vertical conductor connects FAN-AB-B to HTR-TRACE-B"
+    },
+    {
+      "source": "HTR-TRACE-B",
+      "target": "PNL-UPS-B",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "vertical dashed/control lead descends from HTR-TRACE-B toward PNL-UPS-B"
+    },
+    {
+      "source": "RECT-1B",
+      "target": "BCHG-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid DC/UPS train conductor from RECT-1B to BCHG-1B"
+    },
+    {
+      "source": "BCHG-1B",
+      "target": "BAT-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from BCHG-1B into BAT-1B"
+    },
+    {
+      "source": "BAT-1B",
+      "target": "BUS-DC-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "BAT-1B connects by solid conductor to BUS-DC-B"
+    },
+    {
+      "source": "BUS-DC-B",
+      "target": "INV-1B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor leaves BUS-DC-B and enters INV-1B"
+    },
+    {
+      "source": "INV-1B",
+      "target": "BUS-UPS-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from INV-1B feeds BUS-UPS-B"
+    },
+    {
+      "source": "BUS-UPS-B",
+      "target": "PNL-UPS-B",
+      "kind": "power",
+      "confidence": "high",
+      "evidence": "solid conductor from BUS-UPS-B enters PNL-UPS-B"
+    },
+    {
+      "source": "GND-B",
+      "target": "GND-B ROUTE",
+      "kind": "ground",
+      "confidence": "high",
+      "evidence": "dash-dot ground route terminates at GND-B"
+    },
+    {
+      "source": "CT-CAB-B CONTROL CABLE TRAY",
+      "target": "TB-SWGR-B",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "visible cable-tray drop reaches TB-SWGR-B"
+    },
+    {
+      "source": "CT-CAB-B CONTROL CABLE TRAY",
+      "target": "TB-LV-B",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "lower dashed cable-tray routing reaches TB-LV-B"
+    },
+    {
+      "source": "TB-SWGR-B",
+      "target": "RLY-27B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed lead from TB-SWGR-B terminates at RLY-27B"
+    },
+    {
+      "source": "TB-SWGR-B",
+      "target": "RLY-50B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed lead from TB-SWGR-B terminates at RLY-50B"
+    },
+    {
+      "source": "TB-SWGR-B",
+      "target": "RLY-86B",
+      "kind": "control",
+      "confidence": "high",
+      "evidence": "dashed lead from TB-SWGR-B terminates at RLY-86B"
+    },
+    {
+      "source": "CT-CAB-B CONTROL CABLE TRAY",
+      "target": "PNL-MCR-01",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "long dashed cable-tray drop enters PNL-MCR-01 control bay area"
+    },
+    {
+      "source": "CT-CAB-B CONTROL CABLE TRAY",
+      "target": "JB-CONTROL",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "long dashed control drops from CT-CAB-B route descend to JB-CONTROL"
+    },
+    {
+      "source": "PNL-MCR-01",
+      "target": "JB-CONTROL",
+      "kind": "control",
+      "confidence": "medium",
+      "evidence": "dashed control lead visible between PNL-MCR-01 routing and JB-CONTROL"
+    },
+    {
+      "source": "PNL-ANN-01",
+      "target": "JB-CONTROL",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted signal lead from PNL-ANN-01 side descends toward JB-CONTROL"
+    },
+    {
+      "source": "SER-01",
+      "target": "JB-CONTROL",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "dotted signal lead from SER-01 area joins JB-CONTROL bundle"
+    },
+    {
+      "source": "CT-4160-A",
+      "target": "BUS-4160-A",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "A-side dotted signal run leaves the CT-4160-A enclosure and visibly terminates at the BUS-4160-A breaker/bus cluster near CB-A08/A09."
+    },
+    {
+      "source": "CT-4160-B",
+      "target": "BUS-4160-B",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "B-side dotted signal run leaves the CT-4160-B enclosure and visibly terminates at the BUS-4160-B breaker/bus cluster near CB-B08/B09."
+    }
+  ],
+  "uncertain_edges": [
+    {
+      "source": "CB-A09",
+      "target": "FUSE-A01",
+      "kind": "signal",
+      "reason": "CB-A09 is adjacent to the FUSE-A01/CT-4160-A dotted cluster, but the direct terminal is crowded and not unambiguous."
+    },
+    {
+      "source": "CB-A09",
+      "target": "480V LC FEEDERS - A",
+      "kind": "power",
+      "reason": "The lowest A feeder row appears near the 480 V LC area, but the downstream landing is partly hidden by overlapping routing."
+    },
+    {
+      "source": "CB-B09",
+      "target": "FUSE-B01",
+      "kind": "signal",
+      "reason": "CB-B09 is adjacent to the FUSE-B01/CT-4160-B dotted cluster, but the direct terminal is crowded and not unambiguous."
+    },
+    {
+      "source": "CB-B09",
+      "target": "480V LC FEEDERS - B",
+      "kind": "power",
+      "reason": "The lowest B feeder row appears near the 480 V LC area, but the downstream landing is partly hidden by overlapping routing."
+    },
+    {
+      "source": "TR-480-A2",
+      "target": "PUMP-RHR-A",
+      "kind": "power",
+      "reason": "TR-480-A2 sits on the same upper A feeder spine as the pump group, but the direct secondary-bus junction is not labeled or dotted."
+    },
+    {
+      "source": "TR-480-A2",
+      "target": "PUMP-CS-A",
+      "kind": "power",
+      "reason": "The line is geometrically aligned with TR-480-A2 secondary area, but no explicit joined terminal is visible."
+    },
+    {
+      "source": "TR-480-A2",
+      "target": "PUMP-AFW-A",
+      "kind": "power",
+      "reason": "The line is geometrically aligned with TR-480-A2 secondary area, but no explicit joined terminal is visible."
+    },
+    {
+      "source": "TR-480-B2",
+      "target": "PUMP-RHR-B",
+      "kind": "power",
+      "reason": "TR-480-B2 sits on the same upper B feeder spine as the pump group, but the direct secondary-bus junction is not labeled or dotted."
+    },
+    {
+      "source": "TR-480-B2",
+      "target": "PUMP-CS-B",
+      "kind": "power",
+      "reason": "The line is geometrically aligned with TR-480-B2 secondary area, but no explicit joined terminal is visible."
+    },
+    {
+      "source": "TR-480-B2",
+      "target": "PUMP-AFW-B",
+      "kind": "power",
+      "reason": "The line is geometrically aligned with TR-480-B2 secondary area, but no explicit joined terminal is visible."
+    },
+    {
+      "source": "TR-UPS-A",
+      "target": "480V LC FEEDERS - A",
+      "kind": "power",
+      "reason": "TR-UPS-A is near the A 480 V feeder spine, but the branch through the vertical feeder is not clearly terminated."
+    },
+    {
+      "source": "TR-UPS-B",
+      "target": "480V LC FEEDERS - B",
+      "kind": "power",
+      "reason": "TR-UPS-B is near the B 480 V feeder spine, but the branch through the vertical feeder is not clearly terminated."
+    },
+    {
+      "source": "RLY-27A",
+      "target": "PT-4160-A",
+      "kind": "signal",
+      "reason": "Dotted routing from the A relay stack trends toward PT-4160-A, but the exact relay-to-PT assignment is not visually isolated."
+    },
+    {
+      "source": "RLY-50A",
+      "target": "CT-4160-A",
+      "kind": "signal",
+      "reason": "Dotted routing from the A relay stack trends toward CT-4160-A, but the exact relay-to-CT assignment is not visually isolated."
+    },
+    {
+      "source": "RLY-86A",
+      "target": "BUS-4160-A",
+      "kind": "control",
+      "reason": "RLY-86A likely participates in trip/control, but no direct joined terminal to BUS-4160-A is visible."
+    },
+    {
+      "source": "RLY-27B",
+      "target": "PT-4160-B",
+      "kind": "signal",
+      "reason": "Dotted routing from the B relay stack trends toward PT-4160-B, but the exact relay-to-PT assignment is not visually isolated."
+    },
+    {
+      "source": "RLY-50B",
+      "target": "CT-4160-B",
+      "kind": "signal",
+      "reason": "Dotted routing from the B relay stack trends toward CT-4160-B, but the exact relay-to-CT assignment is not visually isolated."
+    },
+    {
+      "source": "RLY-86B",
+      "target": "BUS-4160-B",
+      "kind": "control",
+      "reason": "RLY-86B likely participates in trip/control, but no direct joined terminal to BUS-4160-B is visible."
+    },
+    {
+      "source": "CT-CAB-A CONTROL CABLE TRAY",
+      "target": "GND-A ROUTE",
+      "kind": "ground",
+      "reason": "The upper A cable-tray line resembles dash-dot routing near the ground route, but the label says control cable tray and the terminal is ambiguous."
+    },
+    {
+      "source": "CT-CAB-B CONTROL CABLE TRAY",
+      "target": "GND-B ROUTE",
+      "kind": "ground",
+      "reason": "The upper B cable-tray line resembles dash-dot routing near ground routing, but the label says control cable tray and the terminal is ambiguous."
+    },
+    {
+      "source": "GND-A ROUTE",
+      "target": "BAT-1A",
+      "kind": "ground",
+      "reason": "Dash-dot ground routing encloses the A DC/UPS train, but no explicit BAT-1A ground lug is shown."
+    },
+    {
+      "source": "GND-B ROUTE",
+      "target": "BAT-1B",
+      "kind": "ground",
+      "reason": "Dash-dot ground routing encloses the B DC/UPS train, but no explicit BAT-1B ground lug is shown."
+    },
+    {
+      "source": "PNL-MCR-01",
+      "target": "PNL-ANN-01",
+      "kind": "control",
+      "reason": "Both panels share the control bay bundle, but a direct panel-to-panel conductor is not clear."
+    },
+    {
+      "source": "PNL-ANN-01",
+      "target": "SER-01",
+      "kind": "signal",
+      "reason": "Dotted signal routing passes near both panels, but the exact terminal sequence is ambiguous."
+    },
+    {
+      "source": "PNL-RPS-A",
+      "target": "CT-4160-A",
+      "kind": "signal",
+      "reason": "PNL-RPS-A sits next to the CT-4160-A signal/fuse cluster, but the raw crop does not isolate a direct dotted terminal from the panel to the CT symbol."
+    },
+    {
+      "source": "PNL-RPS-B",
+      "target": "CT-4160-B",
+      "kind": "signal",
+      "reason": "PNL-RPS-B sits next to the CT-4160-B signal/fuse cluster, but the raw crop does not isolate a direct dotted terminal from the panel to the CT symbol."
+    },
+    {
+      "source": "FUSE-A01",
+      "target": "BUS-4160-A",
+      "kind": "signal",
+      "reason": "The dotted route runs through the crowded A fuse/CT/CB-A09 cluster, but a fuse-to-bus terminal is not clear enough to assert."
+    },
+    {
+      "source": "FUSE-B01",
+      "target": "BUS-4160-B",
+      "kind": "signal",
+      "reason": "The dotted route runs through the crowded B fuse/CT/CB-B09 cluster, but a fuse-to-bus terminal is not clear enough to assert."
+    }
+  ],
+  "response_to_jennifer": [
+    "Accepted the removal of PNL-RPS-A to CT-4160-A and PNL-RPS-B to CT-4160-B signal edges: the panels sit next to the CT/fuse clusters, but the raw crops do not isolate a direct dotted panel-to-CT terminal.",
+    "Accepted the removal of FUSE-A01 to BUS-4160-A and FUSE-B01 to BUS-4160-B signal edges: the dotted route is visually associated with the CT enclosure and bus/breaker cluster rather than a clean fuse-to-bus terminal.",
+    "Accepted the addition of CT-4160-A to BUS-4160-A and CT-4160-B to BUS-4160-B signal edges: these are the clearer dotted signal endpoints visible in the A and B CT/fuse/breaker clusters.",
+    "No Jennifer changes are disputed; I do not see explicit visual evidence strong enough to reinstate the removed edges.",
+    "No remaining uncertain edge was promoted during saturation review; crossings without dots and crowded cable-tray/fuse regions remain non-asserted."
+  ],
+  "accepted_jennifer_removals": [
+    {
+      "source": "PNL-RPS-A",
+      "target": "CT-4160-A",
+      "kind": "signal",
+      "reason": "The panel is adjacent to the CT/fuse wiring, but the raw crop shows no isolated dotted/signal terminal from PNL-RPS-A directly into CT-4160-A."
+    },
+    {
+      "source": "FUSE-A01",
+      "target": "BUS-4160-A",
+      "kind": "signal",
+      "reason": "The dotted run lands at the bus/breaker cluster from the CT-4160-A signal enclosure; FUSE-A01 itself does not visibly terminate on BUS-4160-A."
+    },
+    {
+      "source": "PNL-RPS-B",
+      "target": "CT-4160-B",
+      "kind": "signal",
+      "reason": "The panel is adjacent to the CT/fuse wiring, but the raw crop shows no isolated dotted/signal terminal from PNL-RPS-B directly into CT-4160-B."
+    },
+    {
+      "source": "FUSE-B01",
+      "target": "BUS-4160-B",
+      "kind": "signal",
+      "reason": "The dotted run lands at the bus/breaker cluster from the CT-4160-B signal enclosure; FUSE-B01 itself does not visibly terminate on BUS-4160-B."
+    }
+  ],
+  "accepted_jennifer_additions": [
+    {
+      "source": "CT-4160-A",
+      "target": "BUS-4160-A",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "A-side dotted signal run leaves the CT-4160-A enclosure and visibly terminates at the BUS-4160-A breaker/bus cluster near CB-A08/A09.",
+      "reason": "Endpoint is visually better supported than Diego's FUSE-A01-to-bus signal assertion."
+    },
+    {
+      "source": "CT-4160-B",
+      "target": "BUS-4160-B",
+      "kind": "signal",
+      "confidence": "medium",
+      "evidence": "B-side dotted signal run leaves the CT-4160-B enclosure and visibly terminates at the BUS-4160-B breaker/bus cluster near CB-B08/B09.",
+      "reason": "Endpoint is visually better supported than Diego's FUSE-B01-to-bus signal assertion."
+    }
+  ],
+  "disputed_jennifer_changes": [],
+  "still_uncertain_edges": [
+    {
+      "source": "CB-A09",
+      "target": "FUSE-A01",
+      "kind": "signal",
+      "reason": "CB-A09 is adjacent to the FUSE-A01/CT-4160-A dotted cluster, but the direct terminal is crowded and not unambiguous."
+    },
+    {
+      "source": "CB-A09",
+      "target": "480V LC FEEDERS - A",
+      "kind": "power",
+      "reason": "The lowest A feeder row appears near the 480 V LC area, but the downstream landing is partly hidden by overlapping routing."
+    },
+    {
+      "source": "CB-B09",
+      "target": "FUSE-B01",
+      "kind": "signal",
+      "reason": "CB-B09 is adjacent to the FUSE-B01/CT-4160-B dotted cluster, but the direct terminal is crowded and not unambiguous."
+    },
+    {
+      "source": "CB-B09",
+      "target": "480V LC FEEDERS - B",
+      "kind": "power",
+      "reason": "The lowest B feeder row appears near the 480 V LC area, but the downstream landing is partly hidden by overlapping routing."
+    },
+    {
+      "source": "TR-480-A2",
+      "target": "PUMP-RHR-A",
+      "kind": "power",
+      "reason": "TR-480-A2 sits on the same upper A feeder spine as the pump group, but the direct secondary-bus junction is not labeled or dotted."
+    },
+    {
+      "source": "TR-480-A2",
+      "target": "PUMP-CS-A",
+      "kind": "power",
+      "reason": "The line is geometrically aligned with TR-480-A2 secondary area, but no explicit joined terminal is visible."
+    },
+    {
+      "source": "TR-480-A2",
+      "target": "PUMP-AFW-A",
+      "kind": "power",
+      "reason": "The line is geometrically aligned with TR-480-A2 secondary area, but no explicit joined terminal is visible."
+    },
+    {
+      "source": "TR-480-B2",
+      "target": "PUMP-RHR-B",
+      "kind": "power",
+      "reason": "TR-480-B2 sits on the same upper B feeder spine as the pump group, but the direct secondary-bus junction is not labeled or dotted."
+    },
+    {
+      "source": "TR-480-B2",
+      "target": "PUMP-CS-B",
+      "kind": "power",
+      "reason": "The line is geometrically aligned with TR-480-B2 secondary area, but no explicit joined terminal is visible."
+    },
+    {
+      "source": "TR-480-B2",
+      "target": "PUMP-AFW-B",
+      "kind": "power",
+      "reason": "The line is geometrically aligned with TR-480-B2 secondary area, but no explicit joined terminal is visible."
+    },
+    {
+      "source": "TR-UPS-A",
+      "target": "480V LC FEEDERS - A",
+      "kind": "power",
+      "reason": "TR-UPS-A is near the A 480 V feeder spine, but the branch through the vertical feeder is not clearly terminated."
+    },
+    {
+      "source": "TR-UPS-B",
+      "target": "480V LC FEEDERS - B",
+      "kind": "power",
+      "reason": "TR-UPS-B is near the B 480 V feeder spine, but the branch through the vertical feeder is not clearly terminated."
+    },
+    {
+      "source": "RLY-27A",
+      "target": "PT-4160-A",
+      "kind": "signal",
+      "reason": "Dotted routing from the A relay stack trends toward PT-4160-A, but the exact relay-to-PT assignment is not visually isolated."
+    },
+    {
+      "source": "RLY-50A",
+      "target": "CT-4160-A",
+      "kind": "signal",
+      "reason": "Dotted routing from the A relay stack trends toward CT-4160-A, but the exact relay-to-CT assignment is not visually isolated."
+    },
+    {
+      "source": "RLY-86A",
+      "target": "BUS-4160-A",
+      "kind": "control",
+      "reason": "RLY-86A likely participates in trip/control, but no direct joined terminal to BUS-4160-A is visible."
+    },
+    {
+      "source": "RLY-27B",
+      "target": "PT-4160-B",
+      "kind": "signal",
+      "reason": "Dotted routing from the B relay stack trends toward PT-4160-B, but the exact relay-to-PT assignment is not visually isolated."
+    },
+    {
+      "source": "RLY-50B",
+      "target": "CT-4160-B",
+      "kind": "signal",
+      "reason": "Dotted routing from the B relay stack trends toward CT-4160-B, but the exact relay-to-CT assignment is not visually isolated."
+    },
+    {
+      "source": "RLY-86B",
+      "target": "BUS-4160-B",
+      "kind": "control",
+      "reason": "RLY-86B likely participates in trip/control, but no direct joined terminal to BUS-4160-B is visible."
+    },
+    {
+      "source": "CT-CAB-A CONTROL CABLE TRAY",
+      "target": "GND-A ROUTE",
+      "kind": "ground",
+      "reason": "The upper A cable-tray line resembles dash-dot routing near the ground route, but the label says control cable tray and the terminal is ambiguous."
+    },
+    {
+      "source": "CT-CAB-B CONTROL CABLE TRAY",
+      "target": "GND-B ROUTE",
+      "kind": "ground",
+      "reason": "The upper B cable-tray line resembles dash-dot routing near ground routing, but the label says control cable tray and the terminal is ambiguous."
+    },
+    {
+      "source": "GND-A ROUTE",
+      "target": "BAT-1A",
+      "kind": "ground",
+      "reason": "Dash-dot ground routing encloses the A DC/UPS train, but no explicit BAT-1A ground lug is shown."
+    },
+    {
+      "source": "GND-B ROUTE",
+      "target": "BAT-1B",
+      "kind": "ground",
+      "reason": "Dash-dot ground routing encloses the B DC/UPS train, but no explicit BAT-1B ground lug is shown."
+    },
+    {
+      "source": "PNL-MCR-01",
+      "target": "PNL-ANN-01",
+      "kind": "control",
+      "reason": "Both panels share the control bay bundle, but a direct panel-to-panel conductor is not clear."
+    },
+    {
+      "source": "PNL-ANN-01",
+      "target": "SER-01",
+      "kind": "signal",
+      "reason": "Dotted signal routing passes near both panels, but the exact terminal sequence is ambiguous."
+    },
+    {
+      "source": "PNL-RPS-A",
+      "target": "CT-4160-A",
+      "kind": "signal",
+      "reason": "PNL-RPS-A sits next to the CT-4160-A signal/fuse cluster, but the raw crop does not isolate a direct dotted terminal from the panel to the CT symbol."
+    },
+    {
+      "source": "PNL-RPS-B",
+      "target": "CT-4160-B",
+      "kind": "signal",
+      "reason": "PNL-RPS-B sits next to the CT-4160-B signal/fuse cluster, but the raw crop does not isolate a direct dotted terminal from the panel to the CT symbol."
+    },
+    {
+      "source": "FUSE-A01",
+      "target": "BUS-4160-A",
+      "kind": "signal",
+      "reason": "The dotted route runs through the crowded A fuse/CT/CB-A09 cluster, but a fuse-to-bus terminal is not clear enough to assert."
+    },
+    {
+      "source": "FUSE-B01",
+      "target": "BUS-4160-B",
+      "kind": "signal",
+      "reason": "The dotted route runs through the crowded B fuse/CT/CB-B09 cluster, but a fuse-to-bus terminal is not clear enough to assert."
+    }
+  ],
+  "notes": [
+    "Round 2 accepts Jennifer round 1 signal endpoint refinements after visual reinspection of the Doc10 raw CT/fuse/breaker clusters.",
+    "Raw schematic remains primary; overlay/crops are only visual aids supplied with Doc10 Raw + components.",
+    "Line kinds follow the legend: solid=power, dashed=control, dotted=signal, dash-dot=ground.",
+    "A and B train items remain separate except for the visibly labeled shared/tie devices and buses already asserted.",
+    "The asserted edge set is intended to match Jennifer round 1 reviewed matrix: 124 nodes and 124 asserted edges."
+  ],
+  "quality_checks": {
+    "symmetric_matrix": true,
+    "diagonal_zero": true,
+    "edge_count_matches_matrix": true
+  }
+}

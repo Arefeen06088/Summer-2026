@@ -1,0 +1,128 @@
+source,target,evidence
+BUS-480-RB1,CB-IN-A,incomer dots onto BUS-480-RB1
+BUS-480-RB1,CB-DG-A,breaker output dots onto BUS-480-RB1
+BUS-480-RB1,CB-TIE-480,upper tie terminal
+BUS-480-RB1,CB-F101,visible feeder drop from upper 480 V bus
+BUS-480-RB1,CB-F103,visible feeder drop from upper 480 V bus
+BUS-480-RB1,CB-F105,visible feeder drop from upper 480 V bus
+BUS-480-RB1,CB-F107,visible feeder drop from upper 480 V bus
+BUS-480-RB1,CB-F109,visible feeder drop from upper 480 V bus
+BUS-480-RB1,CB-F111,visible feeder drop from upper 480 V bus
+BUS-480-RB1,CB-F113,visible feeder drop from upper 480 V bus
+BUS-480-RB1,CB-F115,visible feeder drop from upper 480 V bus
+BUS-480-RB1,CB-LC-A,LC-A feeder leaves RB1; crossing at RB2 has no dot
+BUS-480-RB2,CB-IN-B,incomer dots onto BUS-480-RB2
+BUS-480-RB2,CB-DG-B,breaker output dots onto BUS-480-RB2
+BUS-480-RB2,CB-TIE-480,lower tie terminal
+BUS-480-RB2,CB-F102,visible feeder drop from upper 480 V bus
+BUS-480-RB2,CB-F104,visible feeder drop from upper 480 V bus
+BUS-480-RB2,CB-F106,visible feeder drop from upper 480 V bus
+BUS-480-RB2,CB-F108,visible feeder drop from upper 480 V bus
+BUS-480-RB2,CB-F110,visible feeder drop from upper 480 V bus
+BUS-480-RB2,CB-F112,visible feeder drop from upper 480 V bus
+BUS-480-RB2,CB-F114,visible feeder drop from upper 480 V bus
+BUS-480-RB2,CB-LC-B,LC-B feeder leaves RB2 side
+BUS-480-LCA,CB-LC-A2,LC-A feeder lands on BUS-480-LCA dot
+BUS-480-LCA,CB-LC-TIE,left LC tie terminal
+BUS-480-LCA,CB-A201,visible feeder drop from lower load-center bus
+BUS-480-LCA,CB-A202,visible feeder drop from lower load-center bus
+BUS-480-LCA,CB-A203,visible feeder drop from lower load-center bus
+BUS-480-LCA,CB-A204,visible feeder drop from lower load-center bus
+BUS-480-LCA,CB-A205,visible feeder drop from lower load-center bus
+BUS-480-LCA,CB-CHG-A,DCA-01 spur from LC-A side
+BUS-480-LCB,CB-LC-B2,LC-B feeder lands on BUS-480-LCB dot
+BUS-480-LCB,CB-LC-TIE,right LC tie terminal
+BUS-480-LCB,CB-B206,visible feeder drop from lower load-center bus
+BUS-480-LCB,CB-B207,visible feeder drop from lower load-center bus
+BUS-480-LCB,CB-B208,visible feeder drop from lower load-center bus
+BUS-480-LCB,CB-B209,visible feeder drop from lower load-center bus
+BUS-480-LCB,CB-CHG-B,DCB-01 spur from LC-B bus dot
+BUS-125DCA,CHG-125A,visible named-node conductor
+BUS-125DCA,INV-120A,visible named-node conductor
+BUS-125DCB,CHG-125B,visible named-node conductor
+BUS-125DCB,INV-120B,visible named-node conductor
+BUS-UPS-A,INV-120A,visible named-node conductor
+BUS-UPS-A,RPS-TRAIN-A,visible named-node conductor
+BUS-UPS-A,ESFAS-TRAIN-A,visible named-node conductor
+BUS-UPS-B,INV-120B,visible named-node conductor
+BUS-UPS-B,RPS-TRAIN-B,visible named-node conductor
+BUS-UPS-B,ESFAS-TRAIN-B,visible named-node conductor
+BUS-UPS-B,REC-SER-01,
+GND-NG-A,TR-LC-A,named ground symbol tied to transformer
+GND-NG-B,TR-LC-B,named ground symbol tied to transformer
+CB-UAT-A,US-345A,solid Train A utility source lead
+CB-UAT-A,TR-UAT-1,solid source feeder
+CB-IN-A,TR-UAT-1,solid transformer outgoing feeder
+CB-DG-A,EDG-1A,solid EDG A lead
+CB-SAT-B,US-230B,solid Train B utility source lead
+CB-SAT-B,TR-SAT-2,solid source feeder
+CB-IN-B,TR-SAT-2,solid transformer outgoing feeder
+CB-DG-B,EDG-1B,solid EDG B lead
+CB-F101,OL-F101,inline breaker to overload on feeder branch
+OL-F101,PMP-SI-1A,inline overload to named upper load
+CB-F102,OL-F102,inline breaker to overload on feeder branch
+OL-F102,PMP-RHR-1A,inline overload to named upper load
+CB-F103,OL-F103,inline breaker to overload on feeder branch
+FAN-CTMT-1A,OL-F103,visible named-node conductor
+CB-F104,OL-F104,inline breaker to overload on feeder branch
+MOV-RC-104,OL-F104,visible named-node conductor
+CB-F105,OL-F105,inline breaker to overload on feeder branch
+OL-F105,PMP-CCW-1A,inline overload to named upper load
+CB-F106,OL-F106,inline breaker to overload on feeder branch
+MOV-IA-106,OL-F106,visible named-node conductor
+CB-F107,OL-F107,inline breaker to overload on feeder branch
+FAN-AHU-1A,OL-F107,visible named-node conductor
+CB-F108,OL-F108,inline breaker to overload on feeder branch
+OL-F108,PMP-CS-1A,inline overload to named upper load
+CB-F109,OL-F109,inline breaker to overload on feeder branch
+MOV-EF-109,OL-F109,visible named-node conductor
+CB-F110,OL-F110,inline breaker to overload on feeder branch
+HTR-PZR-1,OL-F110,visible named-node conductor
+CB-F111,OL-F111,inline breaker to overload on feeder branch
+OL-F111,PMP-SI-1B,inline overload to named upper load
+CB-F112,OL-F112,inline breaker to overload on feeder branch
+OL-F112,PMP-RHR-1B,inline overload to named upper load
+CB-F113,OL-F113,inline breaker to overload on feeder branch
+FAN-CTMT-1B,OL-F113,visible named-node conductor
+CB-F114,OL-F114,inline breaker to overload on feeder branch
+MOV-RC-114,OL-F114,visible named-node conductor
+CB-F115,OL-F115,inline breaker to overload on feeder branch
+OL-F115,PNL-SPARE-F15,inline overload to named upper load
+CB-LC-A,TR-LC-A,solid LC-A feeder
+CB-LC-A2,TR-LC-A,solid LC-A feeder
+CB-LC-B,TR-LC-B,solid LC-B feeder
+CB-LC-B,RELAY-K701,
+CB-LC-B2,TR-LC-B,solid LC-B feeder
+CB-LC-B2,RELAY-K702,
+CB-A201,OL-201,inline lower load-center branch
+OL-201,PMP-SW-2A,visible named-node conductor
+CB-A202,OL-202,inline lower load-center branch
+OL-202,PMP-CVC-2A,visible named-node conductor
+CB-A203,OL-203,inline lower load-center branch
+MOV-SI-203,OL-203,visible named-node conductor
+CB-A204,OL-204,inline lower load-center branch
+FAN-CR-2A,OL-204,visible named-node conductor
+CB-A205,OL-205,inline lower load-center branch
+HTR-BATT-A,OL-205,visible named-node conductor
+CB-B206,OL-206,inline lower load-center branch
+OL-206,PMP-SW-2B,visible named-node conductor
+CB-B207,OL-207,inline lower load-center branch
+OL-207,PMP-CVC-2B,visible named-node conductor
+CB-B208,OL-208,inline lower load-center branch
+MOV-SI-208,OL-208,visible named-node conductor
+CB-B209,OL-209,inline lower load-center branch
+OL-209,PNL-LTG-209,visible named-node conductor
+CB-CHG-A,CHG-125A,visible named-node conductor
+BAT-125A,CHG-125A,visible named-node conductor
+ESFAS-TRAIN-A,RELAY-K701,dashed control line terminates at ESFAS-A and relay
+RELAY-K701,RPS-TRAIN-A,dashed control line terminates at RPS-A and relay
+RELAY-K701,TB-ESF-A,dashed relay line visibly lands on terminal block
+ANN-CP-A,BUS-UPS-B,
+ANN-CP-A,TB-ESF-A,dashed SIGA-01 line terminates at both named boxes
+ANN-CP-A,REC-SER-01,vertical dashed line terminates at both named panels
+CB-CHG-B,CHG-125B,visible named-node conductor
+BAT-125B,CHG-125B,visible named-node conductor
+ESFAS-TRAIN-B,RELAY-K702,dashed control line terminates at ESFAS-B and relay
+RELAY-K702,RPS-TRAIN-B,dashed control line terminates at RPS-B and relay
+RELAY-K702,TB-ESF-B,dashed relay line visibly lands on terminal block
+REC-SER-01,TB-ESF-B,dashed SIGB-01 line terminates at both named boxes

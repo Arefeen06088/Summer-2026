@@ -1,0 +1,28 @@
+Connectivity matrix validation summary - Document 1
+Input configuration: Raw + wires + components + junctions
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\1\connectivity_matrix_clean_100_connected.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_connectivity_matrix.csv): TP=93, FP=11, FN=7, Precision=0.894231, Recall=0.930000, F1=0.911765
+- Jennifer -- Round 2 (round_02_jennifer_precision_connectivity_matrix.csv): TP=99, FP=2, FN=1, Precision=0.980198, Recall=0.990000, F1=0.985075
+- Diego -- Round 3 (round_03_diego_saturation_connectivity_matrix.csv): TP=99, FP=2, FN=1, Precision=0.980198, Recall=0.990000, F1=0.985075
+- Jennifer -- Round 4 (round_04_jennifer_final_agreed_connectivity_matrix.csv): TP=99, FP=2, FN=1, Precision=0.980198, Recall=0.990000, F1=0.985075
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=99, FP=2, FN=1, Precision=0.980198, Recall=0.990000, F1=0.985075
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+
+False-positive edge examples:
+- BUS-125DC-A -- N.O. DC TIE
+- BUS-125DC-B -- N.O. DC TIE
+
+False-negative edge examples:
+- BUS-125DC-A -- BUS-125DC-B
+
+Extra/non-GT nodes causing performance drops:
+- N.O. DC TIE: 2 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 1 extra/intermediate nodes were omitted from the extraction (N.O. DC TIE), final metrics would be TP=99, FP=0, FN=1, Precision=1.000000, Recall=0.990000, F1=0.994975.
+- If all 1 non-GT nodes were omitted, metrics would be TP=99, FP=0, FN=1, Precision=1.000000, Recall=0.990000, F1=0.994975.

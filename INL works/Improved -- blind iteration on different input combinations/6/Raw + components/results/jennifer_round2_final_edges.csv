@@ -1,0 +1,104 @@
+source,target,value,status,edge_type,evidence
+GEN-G201,IPB-201,1,asserted,solid_power,Generator output connects to isolated phase bus.
+IPB-201,CB-GEN-201,1,asserted,solid_power,IPB output connects to generator breaker.
+CB-GEN-201,GSU-201,1,asserted,solid_power,Generator breaker feeds GSU transformer.
+GSU-201,SWYD-BUS-A,1,asserted,solid_power,GSU transformer lands on switchyard bus A.
+IPB-201,TR-UAT-201,1,asserted,solid_power,Solid IPB tap feeds unit auxiliary transformer 201.
+IPB-201,TR-UAT-202,1,asserted,solid_power,Solid IPB tap feeds unit auxiliary transformer 202.
+SWYD-BUS-A,CB-GRID-A,1,asserted,solid_power,Switchyard bus A terminal feeds grid breaker A.
+CB-GRID-A,GRID-230A,1,asserted,solid_power,Grid breaker A connects to 230 kV grid A.
+SWYD-BUS-B,CB-GRID-B,1,asserted,solid_power,Switchyard bus B terminal feeds grid breaker B.
+CB-GRID-B,GRID-230B,1,asserted,solid_power,Grid breaker B connects to 230 kV grid B.
+SWYD-BUS-A,TR-SST-201,1,asserted,solid_power,Switchyard bus A tap feeds station service transformer 201.
+SWYD-BUS-B,TR-SST-202,1,asserted,solid_power,Switchyard bus B tap feeds station service transformer 202.
+TR-UAT-201,CB-UAT-1,1,asserted,solid_power,UAT 201 secondary connects to UAT breaker 1.
+CB-UAT-1,BUS-6KV-A,1,asserted,solid_power,UAT breaker 1 lands on 6 kV bus A.
+TR-SST-201,CB-SST-1,1,asserted,solid_power,SST 201 secondary connects to SST breaker 1.
+CB-SST-1,BUS-6KV-A,1,asserted,solid_power,SST breaker 1 lands on 6 kV bus A.
+EDG-201A,CB-DG-A,1,asserted,solid_power,Diesel generator A connects to DG breaker A.
+CB-DG-A,ATS-A,1,asserted,solid_power,DG breaker A connects to ATS-A.
+ATS-A,BUS-6KV-A,1,asserted,solid_power,ATS-A output lands on 6 kV bus A.
+TR-UAT-202,CB-UAT-2,1,asserted,solid_power,UAT 202 secondary connects to UAT breaker 2.
+CB-UAT-2,BUS-6KV-B,1,asserted,solid_power,UAT breaker 2 lands on 6 kV bus B.
+TR-SST-202,CB-SST-2,1,asserted,solid_power,SST 202 secondary connects to SST breaker 2.
+CB-SST-2,BUS-6KV-B,1,asserted,solid_power,SST breaker 2 lands on 6 kV bus B.
+EDG-201B,CB-DG-B,1,asserted,solid_power,Diesel generator B connects to DG breaker B.
+CB-DG-B,ATS-B,1,asserted,solid_power,DG breaker B connects to ATS-B.
+ATS-B,BUS-6KV-B,1,asserted,solid_power,ATS-B output lands on 6 kV bus B.
+BUS-6KV-A,TR-480A,1,asserted,solid_power,6 kV bus A feeds transformer 480A.
+TR-480A,CB-LC-A1,1,asserted,solid_power,Transformer 480A secondary connects to load-center breaker A1.
+CB-LC-A1,LC-480A,1,asserted,solid_power,Breaker A1 feeds load center 480A.
+BUS-4KV-N,TR-480N,1,asserted,solid_power,Non-safety 4 kV bus feeds transformer 480N.
+TR-480N,CB-LC-N1,1,asserted,solid_power,Transformer 480N secondary connects to load-center breaker N1.
+CB-LC-N1,LC-480N,1,asserted,solid_power,Breaker N1 feeds load center 480N.
+BUS-6KV-B,TR-480B,1,asserted,solid_power,6 kV bus B feeds transformer 480B.
+TR-480B,CB-LC-B1,1,asserted,solid_power,Transformer 480B secondary connects to load-center breaker B1.
+CB-LC-B1,LC-480B,1,asserted,solid_power,Breaker B1 feeds load center 480B.
+LC-480A,MCC-CCW-A,1,asserted,solid_power,Load center A feeder to CCW MCC A.
+MCC-CCW-A,JBX-CCW-A,1,asserted,solid_power,CCW MCC A feeder to CCW junction box A.
+JBX-CCW-A,PUMP-CCW-A,1,asserted,solid_power,CCW junction box A to CCW pump A.
+MCC-CCW-A,MOV-CCW-201A,1,asserted,solid_power,CCW MCC A branch to CCW MOV 201A.
+LC-480A,MCC-SW-A,1,asserted,solid_power,Load center A feeder to service-water MCC A.
+MCC-SW-A,JBX-SW-A,1,asserted,solid_power,SW MCC A feeder to SW junction box A.
+JBX-SW-A,PUMP-SW-A,1,asserted,solid_power,SW junction box A to SW pump A.
+LC-480A,MCC-HPI-A,1,asserted,solid_power,Load center A feeder to HPI MCC A.
+MCC-HPI-A,PUMP-HPI-A,1,asserted,solid_power,HPI MCC A branch to HPI pump A.
+MCC-HPI-A,MOV-SI-201A,1,asserted,solid_power,HPI MCC A branch to SI MOV 201A.
+LC-480A,MCC-VENT-A,1,asserted,solid_power,Load center A feeder to ventilation MCC A.
+MCC-VENT-A,FAN-CR-A,1,asserted,solid_power,Ventilation MCC A feeder to control-room fan A.
+LC-480B,MCC-CCW-B,1,asserted,solid_power,Load center B feeder to CCW MCC B.
+MCC-CCW-B,JBX-CCW-B,1,asserted,solid_power,CCW MCC B feeder to CCW junction box B.
+JBX-CCW-B,PUMP-CCW-B,1,asserted,solid_power,CCW junction box B to CCW pump B.
+MCC-CCW-B,MOV-CCW-201B,1,asserted,solid_power,CCW MCC B branch to CCW MOV 201B.
+LC-480B,MCC-SW-B,1,asserted,solid_power,Load center B feeder to service-water MCC B.
+MCC-SW-B,JBX-SW-B,1,asserted,solid_power,SW MCC B feeder to SW junction box B.
+JBX-SW-B,PUMP-SW-B,1,asserted,solid_power,SW junction box B to SW pump B.
+LC-480B,MCC-HPI-B,1,asserted,solid_power,Load center B feeder to HPI MCC B.
+MCC-HPI-B,PUMP-HPI-B,1,asserted,solid_power,HPI MCC B branch to HPI pump B.
+MCC-HPI-B,MOV-SI-201B,1,asserted,solid_power,HPI MCC B branch to SI MOV 201B.
+LC-480B,MCC-VENT-B,1,asserted,solid_power,Load center B feeder to ventilation MCC B.
+MCC-VENT-B,FAN-CR-B,1,asserted,solid_power,Ventilation MCC B feeder to control-room fan B.
+LC-480N,LP-N-A,1,asserted,solid_power,Non-safety load center branch to panel LP-N-A.
+LP-N-A,HTR-BLDG-A,1,asserted,solid_power,LP-N-A feeds building heater A.
+LC-480N,LP-N-B,1,asserted,solid_power,Non-safety load center branch to panel LP-N-B.
+LP-N-B,HTR-BLDG-B,1,asserted,solid_power,LP-N-B feeds building heater B.
+LC-480A,CHGR-A,1,asserted,solid_power,Load center A solid drop supplies charger A.
+CHGR-A,BAT-125A,1,asserted,dc_power,Charger A connects to 125 V battery A.
+CHGR-A,PNL-DC-A,1,asserted,dc_power,Charger A connects to DC panel A.
+BAT-125A,PNL-DC-A,1,asserted,dc_power,Battery A connects to DC panel A.
+PNL-DC-A,REC-A,1,asserted,dc_power,DC panel A connects to rectifier/rec A.
+REC-A,INV-A,1,asserted,dc_power,REC-A connects to inverter A.
+INV-A,UPS-A,1,asserted,dc_power,Inverter A feeds UPS-A.
+LC-480B,CHGR-B,1,asserted,solid_power,Load center B solid drop supplies charger B.
+CHGR-B,BAT-125B,1,asserted,dc_power,Charger B connects to 125 V battery B.
+CHGR-B,PNL-DC-B,1,asserted,dc_power,Charger B connects to DC panel B.
+BAT-125B,PNL-DC-B,1,asserted,dc_power,Battery B connects to DC panel B.
+PNL-DC-B,REC-B,1,asserted,dc_power,DC panel B connects to rectifier/rec B.
+REC-B,INV-B,1,asserted,dc_power,REC-B connects to inverter B.
+INV-B,UPS-B,1,asserted,dc_power,Inverter B feeds UPS-B.
+SWYD-BUS-A,CB-TIE-230,1,asserted,tie,A-side terminal of 230 kV switchyard tie breaker.
+CB-TIE-230,SWYD-BUS-B,1,asserted,tie,B-side terminal of 230 kV switchyard tie breaker.
+BUS-6KV-A,CB-TIE-6KV,1,asserted,tie,A-side terminal of 6 kV tie breaker.
+CB-TIE-6KV,BUS-6KV-B,1,asserted,tie,B-side terminal of 6 kV tie breaker.
+BUS-6KV-A,DS-6KV-A,1,asserted,tie,6 kV bus A terminal to disconnect switch A.
+DS-6KV-A,BUS-4KV-N,1,asserted,tie,Disconnect switch A terminal to non-safety 4 kV bus.
+BUS-6KV-B,DS-6KV-B,1,asserted,tie,6 kV bus B terminal to disconnect switch B.
+DS-6KV-B,BUS-4KV-N,1,asserted,tie,Disconnect switch B terminal to non-safety 4 kV bus.
+BUS-6KV-A,PT-6KV-A,1,asserted,sensing,Potential transformer A taps 6 kV bus A.
+BUS-6KV-B,PT-6KV-B,1,asserted,sensing,Potential transformer B taps 6 kV bus B.
+LC-480A,UV-SENS-A,1,asserted,sensing,Undervoltage sensor A taps load center A.
+LC-480B,UV-SENS-B,1,asserted,sensing,Undervoltage sensor B taps load center B.
+PNL-INST-A,RELAY-UV-A,1,asserted,dashed_control,Same-channel dashed path from instrument panel A to UV relay A.
+PNL-INST-B,RELAY-UV-B,1,asserted,dashed_control,Same-channel dashed path from instrument panel B to UV relay B.
+CP-ESFAS-A,RELAY-SI-A,1,asserted,dashed_control,Same-channel dashed path from ESFAS cabinet A to SI relay A.
+CP-ESFAS-B,RELAY-SI-B,1,asserted,dashed_control,Same-channel dashed path from ESFAS cabinet B to SI relay B.
+PLC-RPS-A,RELAY-LOAD-A,1,asserted,dashed_control,Same-channel dashed path from RPS PLC A to load relay A.
+PLC-RPS-B,RELAY-LOAD-B,1,asserted,dashed_control,Same-channel dashed path from RPS PLC B to load relay B.
+JBX-ESF-A,RELAY-DG-A,1,asserted,dashed_control,Same-channel dashed path from ESF junction box A to DG relay A.
+JBX-ESF-B,RELAY-DG-B,1,asserted,dashed_control,Same-channel dashed path from ESF junction box B to DG relay B.
+BAT-125A,GND-A,1,asserted,ground_reference,Dotted ground bond from battery A to GND-A.
+REC-A,GND-A,1,asserted,ground_reference,Dotted ground bond from REC-A to GND-A.
+BAT-125B,GND-B,1,asserted,ground_reference,Dotted ground bond from battery B to GND-B.
+REC-B,GND-B,1,asserted,ground_reference,Dotted ground bond from REC-B to GND-B.
+GND-A,GND-MAIN,1,asserted,ground_reference,Ground A bonds to main ground node.
+GND-B,GND-MAIN,1,asserted,ground_reference,Ground B bonds to main ground node.

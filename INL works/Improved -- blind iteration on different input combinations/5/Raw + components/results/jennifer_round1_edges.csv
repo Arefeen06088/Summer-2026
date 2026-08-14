@@ -1,0 +1,130 @@
+source,target,value,status,edge_type,evidence
+GRID-N230,ISO-230A,1,asserted,solid_power,Left offsite source through isolator.
+ISO-230A,BRK-2301,1,asserted,solid_power,Series 230 kV isolator to breaker.
+BRK-2301,BUS-SY230,1,asserted,solid_power,Breaker drop lands on 230 kV switchyard bus.
+GRID-S230,ISO-230B,1,asserted,solid_power,Right offsite source through isolator.
+ISO-230B,BRK-2302,1,asserted,solid_power,Series 230 kV isolator to breaker.
+BRK-2302,BUS-SY230,1,asserted,solid_power,Breaker drop lands on 230 kV switchyard bus.
+GEN-G101,GSU-1,1,asserted,solid_power,Generator terminals feed step-up transformer.
+GSU-1,BUS-SY230,1,asserted,solid_power,Transformer output lands on 230 kV bus.
+BUS-SY230,TR-RAT-1A,1,asserted,solid_power,Bus tap down to reserve auxiliary transformer A.
+BUS-SY230,TR-UAT-1A,1,asserted,solid_power,Bus/generator-side tap to unit auxiliary transformer A.
+TR-RAT-1A,CB-AUX-A,1,asserted,solid_power,Transformer secondary feeds AUX A breaker.
+TR-UAT-1A,CB-AUX-A,1,asserted,solid_power,Unit auxiliary transformer A feeds AUX A breaker.
+CB-AUX-A,BUS-AUX13A,1,asserted,solid_power,Breaker lands on 13.8 kV aux bus A.
+BUS-SY230,TR-UAT-1B,1,asserted,solid_power,Bus/generator-side tap to unit auxiliary transformer B.
+TR-UAT-1B,CB-AUX-B,1,asserted,solid_power,Unit auxiliary transformer B feeds AUX B breaker.
+CB-AUX-B,BUS-AUX13B,1,asserted,solid_power,Breaker lands on 13.8 kV aux bus B.
+BUS-SY230,TR-RAT-1B,1,asserted,solid_power,Bus tap down to reserve auxiliary transformer B.
+CB-AUX-B,TR-RAT-1B,1,asserted,solid_power,Reserve auxiliary transformer B feeds AUX B breaker.
+BUS-AUX13A,BUS-NON1,1,asserted,solid_power,Non-safety service bus taps from the left 13.8 kV aux bus section.
+BUS-AUX13A,CB-TIE13,1,asserted,tie,A-side terminal of 13.8 kV tie breaker.
+BUS-AUX13B,CB-TIE13,1,asserted,tie,B-side terminal of 13.8 kV tie breaker.
+BUS-416A,CB-TIE-AB,1,asserted,tie,A-side terminal of 4.16 kV tie breaker.
+CB-TIE-AB,BUS-416B,1,asserted,tie,B-side terminal of 4.16 kV tie breaker.
+BUS-416C,CB-TIE-CD,1,asserted,tie,C-side terminal of 4.16 kV tie breaker.
+CB-TIE-CD,BUS-416D,1,asserted,tie,D-side terminal of 4.16 kV tie breaker.
+BUS-AUX13A,TR-SAF-A,1,asserted,solid_power,Aux bus A tap to safety transformer A.
+TR-SAF-A,CB-SAF-A,1,asserted,solid_power,Transformer A secondary to breaker.
+CB-SAF-A,BUS-416A,1,asserted,solid_power,Breaker lands on safety bus A.
+EDG-A,CB-EDG-A,1,asserted,solid_power,Emergency diesel generator A to breaker.
+CB-EDG-A,BUS-416A,1,asserted,solid_power,EDG breaker lands on safety bus A.
+BUS-416A,TR-480-A,1,asserted,solid_power,Safety bus A feeds 480 V transformer A.
+TR-480-A,CB-LC-A,1,asserted,solid_power,Transformer A secondary to load-center breaker.
+CB-LC-A,LC-480A,1,asserted,solid_power,Breaker lands on load center A.
+LC-480A,CB-MCCA1,1,asserted,solid_power,Load center A left feeder to MCC breaker.
+CB-MCCA1,MCC-1A1,1,asserted,solid_power,Breaker feeds motor control center A1.
+MCC-1A1,PUMP-AFW-A,1,asserted,solid_power,MCC A1 branch to AFW pump A.
+MCC-1A1,VLV-MSIV-A,1,asserted,solid_power,MCC A1 branch to MSIV A.
+LC-480A,CB-MCCA2,1,asserted,solid_power,Load center A right feeder to MCC breaker.
+CB-MCCA2,MCC-1A2,1,asserted,solid_power,Breaker feeds motor control center A2.
+MCC-1A2,PUMP-CCW-A,1,asserted,solid_power,MCC A2 branch to CCW pump A.
+LC-480A,XFER-ATS-A,1,asserted,solid_power,ATS-A normal feed from LC-480A side.
+BUS-AUX13A,TR-SAF-B,1,asserted,solid_power,Aux bus A tap to safety transformer B.
+TR-SAF-B,CB-SAF-B,1,asserted,solid_power,Transformer B secondary to breaker.
+CB-SAF-B,BUS-416B,1,asserted,solid_power,Breaker lands on safety bus B.
+EDG-B,CB-EDG-B,1,asserted,solid_power,Emergency diesel generator B to breaker.
+CB-EDG-B,BUS-416B,1,asserted,solid_power,EDG breaker lands on safety bus B.
+BUS-416B,TR-480-B,1,asserted,solid_power,Safety bus B feeds 480 V transformer B.
+TR-480-B,CB-LC-B,1,asserted,solid_power,Transformer B secondary to load-center breaker.
+CB-LC-B,LC-480B,1,asserted,solid_power,Breaker lands on load center B.
+LC-480B,CB-MCCB1,1,asserted,solid_power,Load center B left feeder to MCC breaker.
+CB-MCCB1,MCC-1B1,1,asserted,solid_power,Breaker feeds motor control center B1.
+MCC-1B1,PUMP-AFW-B,1,asserted,solid_power,MCC B1 branch to AFW pump B.
+MCC-1B1,VLV-MSIV-B,1,asserted,solid_power,MCC B1 branch to MSIV B.
+LC-480B,CB-MCCB2,1,asserted,solid_power,Load center B right feeder to MCC breaker.
+CB-MCCB2,MCC-1B2,1,asserted,solid_power,Breaker feeds motor control center B2.
+MCC-1B2,PUMP-CCW-B,1,asserted,solid_power,MCC B2 branch to CCW pump B.
+XFER-ATS-A,LC-480B,1,asserted,solid_power,ATS-A alternate feed from LC-480B side.
+BUS-AUX13B,TR-SAF-C,1,asserted,solid_power,Aux bus B tap to safety transformer C.
+BUS-NON1,TR-SAF-C,1,asserted,solid_power,Non-safety service bus also lands at transformer C upper terminal.
+TR-SAF-C,CB-SAF-C,1,asserted,solid_power,Transformer C secondary to breaker.
+CB-SAF-C,BUS-416C,1,asserted,solid_power,Breaker lands on safety bus C.
+EDG-C,CB-EDG-C,1,asserted,solid_power,Emergency diesel generator C to breaker.
+CB-EDG-C,BUS-416C,1,asserted,solid_power,EDG breaker lands on safety bus C.
+BUS-416C,TR-480-C,1,asserted,solid_power,Safety bus C feeds 480 V transformer C.
+TR-480-C,CB-LC-C,1,asserted,solid_power,Transformer C secondary to load-center breaker.
+CB-LC-C,LC-480C,1,asserted,solid_power,Breaker lands on load center C.
+LC-480C,CB-MCCC1,1,asserted,solid_power,Load center C left feeder to MCC breaker.
+CB-MCCC1,MCC-1C1,1,asserted,solid_power,Breaker feeds motor control center C1.
+MCC-1C1,PUMP-RHR-A,1,asserted,solid_power,MCC C1 branch to RHR pump A.
+LC-480C,CB-MCCC2,1,asserted,solid_power,Load center C right feeder to MCC breaker.
+CB-MCCC2,MCC-1C2,1,asserted,solid_power,Breaker feeds motor control center C2.
+MCC-1C2,HTR-BATRM-A,1,asserted,solid_power,MCC C2 branch to battery room heater A.
+MCC-1C2,FAN-CRHV-A,1,asserted,solid_power,MCC C2 branch to control room HVAC fan A.
+LC-480C,XFER-ATS-B,1,asserted,solid_power,ATS-B normal feed from LC-480C side.
+BUS-AUX13B,TR-SAF-D,1,asserted,solid_power,Aux bus B tap to safety transformer D.
+TR-SAF-D,CB-SAF-D,1,asserted,solid_power,Transformer D secondary to breaker.
+CB-SAF-D,BUS-416D,1,asserted,solid_power,Breaker lands on safety bus D.
+EDG-D,CB-EDG-D,1,asserted,solid_power,Emergency diesel generator D to breaker.
+CB-EDG-D,BUS-416D,1,asserted,solid_power,EDG breaker lands on safety bus D.
+BUS-416D,TR-480-D,1,asserted,solid_power,Safety bus D feeds 480 V transformer D.
+TR-480-D,CB-LC-D,1,asserted,solid_power,Transformer D secondary to load-center breaker.
+CB-LC-D,LC-480D,1,asserted,solid_power,Breaker lands on load center D.
+LC-480D,CB-MCCD1,1,asserted,solid_power,Load center D left feeder to MCC breaker.
+CB-MCCD1,MCC-1D1,1,asserted,solid_power,Breaker feeds motor control center D1.
+MCC-1D1,PUMP-RHR-B,1,asserted,solid_power,MCC D1 branch to RHR pump B.
+LC-480D,CB-MCCD2,1,asserted,solid_power,Load center D right feeder to MCC breaker.
+CB-MCCD2,MCC-1D2,1,asserted,solid_power,Breaker feeds motor control center D2.
+MCC-1D2,HTR-BATRM-B,1,asserted,solid_power,MCC D2 branch to battery room heater B.
+MCC-1D2,FAN-CRHV-B,1,asserted,solid_power,MCC D2 branch to control room HVAC fan B.
+XFER-ATS-B,LC-480D,1,asserted,solid_power,ATS-B alternate feed from LC-480D side.
+XFER-ATS-A,CHG-125A,1,asserted,dc_power,ATS-A output down to 125 VDC charger A.
+CHG-125A,BAT-125A,1,asserted,dc_power,Charger A to 125 VDC battery A.
+BAT-125A,PNL-DC-A,1,asserted,dc_power,Battery A to DC panel A.
+PNL-DC-A,INV-UPS-A,1,asserted,dc_power,DC panel A feeds inverter A.
+INV-UPS-A,UPS-PNL-A,1,asserted,dc_power,Inverter A output to vital AC panel A.
+XFER-ATS-A,RECT-48V-A,1,asserted,dc_power,ATS-A feed to 48 V rectifier A.
+RECT-48V-A,BAT-48V-A,1,asserted,dc_power,Rectifier A to 48 V battery A.
+BAT-48V-A,JB-RLY-A,1,asserted,dc_power,48 V battery A to relay power junction box A.
+XFER-ATS-B,CHG-125B,1,asserted,dc_power,ATS-B output down to 125 VDC charger B.
+CHG-125B,BAT-125B,1,asserted,dc_power,Charger B to 125 VDC battery B.
+BAT-125B,PNL-DC-B,1,asserted,dc_power,Battery B to DC panel B.
+PNL-DC-B,INV-UPS-B,1,asserted,dc_power,DC panel B feeds inverter B.
+INV-UPS-B,UPS-PNL-B,1,asserted,dc_power,Inverter B output to vital AC panel B.
+XFER-ATS-B,RECT-48V-B,1,asserted,dc_power,ATS-B feed to 48 V rectifier B.
+RECT-48V-B,BAT-48V-B,1,asserted,dc_power,Rectifier B to 48 V battery B.
+BAT-48V-B,JB-RLY-B,1,asserted,dc_power,48 V battery B to relay power junction box B.
+CP-ESFAS-1,CP-ESFAS-2,1,asserted,dashed_control,Parallel ESF actuation cabinets share visible dashed trunking.
+CP-ESFAS-1,RELAY-K1A,1,asserted,dashed_control,Dashed ESF/control line lands on relay K1A path.
+CP-ESFAS-2,RELAY-K2A,1,asserted,dashed_control,Dashed ESF/control line lands on relay K2A path.
+CP-ESFAS-1,RELAY-K1B,1,asserted,dashed_control,Dashed ESF/control line lands on relay K1B path.
+CP-ESFAS-2,RELAY-K2B,1,asserted,dashed_control,Dashed ESF/control line lands on relay K2B path.
+CB-EDG-A,RELAY-K1A,1,asserted,dashed_control,Control/trip line from EDG breaker A to start relay A.
+CB-SAF-A,RELAY-K1A,1,asserted,dashed_control,Control/trip line from safety breaker A to start relay A.
+CB-EDG-B,RELAY-K1B,1,asserted,dashed_control,Control/trip line from EDG breaker B to start relay B.
+CB-SAF-B,RELAY-K1B,1,asserted,dashed_control,Control/trip line from safety breaker B to start relay B.
+CB-EDG-C,RELAY-K2A,1,asserted,dashed_control,Control/trip line from EDG breaker C to start relay C.
+CB-SAF-C,RELAY-K2A,1,asserted,dashed_control,Control/trip line from safety breaker C to start relay C.
+CB-EDG-D,RELAY-K2B,1,asserted,dashed_control,Control/trip line from EDG breaker D to start relay D.
+CB-SAF-D,RELAY-K2B,1,asserted,dashed_control,Control/trip line from safety breaker D to start relay D.
+BUS-416A,RELAY-UV-A,1,asserted,dashed_control,Undervoltage sensing/control from safety bus A side.
+BUS-416B,RELAY-UV-A,1,asserted,dashed_control,Undervoltage sensing/control from safety bus B side.
+BUS-416C,RELAY-UV-B,1,asserted,dashed_control,Undervoltage sensing/control from safety bus C side.
+BUS-416D,RELAY-UV-B,1,asserted,dashed_control,Undervoltage sensing/control from safety bus D side.
+BUS-416C,RELAY-LOOP-C,1,asserted,dashed_control,Load-shed loop control from train C bus region.
+BUS-416D,RELAY-LOOP-D,1,asserted,dashed_control,Load-shed loop control from train D bus region.
+CP-ESFAS-1,INST-NSSS-A,1,asserted,dashed_control,"Round-1 high-recall CP-to-instrument trunk, later demoted."
+CP-ESFAS-2,INST-NSSS-A,1,asserted,dashed_control,"Round-1 high-recall CP-to-instrument trunk, later demoted."
+CP-ESFAS-1,INST-NSSS-B,1,asserted,dashed_control,"Round-1 high-recall CP-to-instrument trunk, later demoted."
+CP-ESFAS-2,INST-NSSS-B,1,asserted,dashed_control,"Round-1 high-recall CP-to-instrument trunk, later demoted."

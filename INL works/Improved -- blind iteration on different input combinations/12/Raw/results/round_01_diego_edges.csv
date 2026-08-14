@@ -1,0 +1,170 @@
+source,target,status,evidence
+GEN-G1,CB-GEN-1,confirmed,solid source feeder to BUS-4KV-A
+CB-GEN-1,TR-UAT-1,confirmed,solid source feeder to BUS-4KV-A
+TR-UAT-1,CB-101,confirmed,solid source feeder to BUS-4KV-A
+CB-101,BUS-4KV-A,confirmed,solid source feeder to BUS-4KV-A
+TR-SUT-1,DS-SUT-1,confirmed,solid standby transformer feeder to BUS-4KV-A
+DS-SUT-1,CB-102,confirmed,solid standby transformer feeder to BUS-4KV-A
+CB-102,BUS-4KV-A,confirmed,solid standby transformer feeder to BUS-4KV-A
+EDG-1A,DS-EDG-1A,confirmed,solid EDG-1A feeder to BUS-4KV-A
+DS-EDG-1A,CB-103,confirmed,solid EDG-1A feeder to BUS-4KV-A
+CB-103,BUS-4KV-A,confirmed,solid EDG-1A feeder to BUS-4KV-A
+BUS-4KV-A,CB-TIE-1,confirmed,solid 4 kV bus tie through CB-TIE-1
+CB-TIE-1,BUS-4KV-B,confirmed,solid 4 kV bus tie through CB-TIE-1
+EDG-1B,DS-EDG-1B,confirmed,solid EDG-1B feeder to BUS-4KV-B
+DS-EDG-1B,CB-203,confirmed,solid EDG-1B feeder to BUS-4KV-B
+CB-203,BUS-4KV-B,confirmed,solid EDG-1B feeder to BUS-4KV-B
+TR-SUT-2,DS-SUT-2,confirmed,solid standby transformer feeder to BUS-4KV-B
+DS-SUT-2,CB-202,confirmed,solid standby transformer feeder to BUS-4KV-B
+CB-202,BUS-4KV-B,confirmed,solid standby transformer feeder to BUS-4KV-B
+EDG-1C,CB-303,confirmed,solid EDG-1C feeder to BUS-4KV-B
+CB-303,BUS-4KV-B,confirmed,solid EDG-1C feeder to BUS-4KV-B
+BUS-4KV-A,CB-111,confirmed,solid 4 kV to 480 V MCC-1A feeder
+CB-111,TR-480-A,confirmed,solid 4 kV to 480 V MCC-1A feeder
+TR-480-A,BUS-480-A,confirmed,solid 4 kV to 480 V MCC-1A feeder
+BUS-480-A,CB-M1A,confirmed,solid 4 kV to 480 V MCC-1A feeder
+CB-M1A,MCC-1A,confirmed,solid 4 kV to 480 V MCC-1A feeder
+BUS-4KV-A,CB-112,confirmed,solid 4 kV to 480 V MCC-2A feeder
+CB-112,TR-480-C,confirmed,solid 4 kV to 480 V MCC-2A feeder
+TR-480-C,BUS-480-C,confirmed,solid 4 kV to 480 V MCC-2A feeder
+BUS-480-C,CB-M2A,confirmed,solid 4 kV to 480 V MCC-2A feeder
+CB-M2A,MCC-2A,confirmed,solid 4 kV to 480 V MCC-2A feeder
+BUS-4KV-B,CB-211,confirmed,solid 4 kV to 480 V MCC-1B feeder
+CB-211,TR-480-B,confirmed,solid 4 kV to 480 V MCC-1B feeder
+TR-480-B,BUS-480-B,confirmed,solid 4 kV to 480 V MCC-1B feeder
+BUS-480-B,CB-M1B,confirmed,solid 4 kV to 480 V MCC-1B feeder
+CB-M1B,MCC-1B,confirmed,solid 4 kV to 480 V MCC-1B feeder
+BUS-4KV-B,CB-212,confirmed,solid 4 kV to 480 V MCC-2B feeder
+CB-212,TR-480-D,confirmed,solid 4 kV to 480 V MCC-2B feeder
+TR-480-D,BUS-480-D,confirmed,solid 4 kV to 480 V MCC-2B feeder
+BUS-480-D,CB-M2B,confirmed,solid 4 kV to 480 V MCC-2B feeder
+CB-M2B,MCC-2B,confirmed,solid 4 kV to 480 V MCC-2B feeder
+MCC-1A,CB-F001,confirmed,solid MCC-1A load branch
+CB-F001,FU-F001,confirmed,solid MCC-1A load branch
+FU-F001,PUMP-RHR-A,confirmed,solid MCC-1A load branch
+MCC-1A,CB-F002,confirmed,solid MCC-1A load branch
+CB-F002,MS-F002,confirmed,solid MCC-1A load branch
+MS-F002,PUMP-SI-A,confirmed,solid MCC-1A load branch
+MCC-1A,CB-F003,confirmed,solid MCC-1A load branch
+CB-F003,FU-F003,confirmed,solid MCC-1A load branch
+FU-F003,FAN-CR-A,confirmed,solid MCC-1A load branch
+MCC-1A,CB-F004,confirmed,solid MCC-1A load branch
+CB-F004,DS-F004,confirmed,solid MCC-1A load branch
+DS-F004,MOV-RCIC-A,confirmed,solid MCC-1A load branch
+MCC-1A,CB-F005,confirmed,solid MCC-1A load branch
+CB-F005,MS-F005,confirmed,solid MCC-1A load branch
+MS-F005,PUMP-CCW-A,confirmed,solid MCC-1A load branch
+MCC-1A,CB-F006,confirmed,solid MCC-1A load branch
+CB-F006,FU-F006,confirmed,solid MCC-1A load branch
+FU-F006,HTR-SUMP-A,confirmed,solid MCC-1A load branch
+MCC-1A,CB-F007,confirmed,solid MCC-1A load branch
+CB-F007,MS-F007,confirmed,solid MCC-1A load branch
+MS-F007,PMP-BOR-A,confirmed,solid MCC-1A load branch
+MCC-1A,CB-F008,confirmed,solid MCC-1A load branch
+CB-F008,DS-F008,confirmed,solid MCC-1A load branch
+DS-F008,VALVE-IA-A,confirmed,solid MCC-1A load branch
+MCC-2A,CB-F009,confirmed,solid MCC-2A load branch
+CB-F009,MS-F009,confirmed,solid MCC-2A load branch
+MS-F009,PUMP-AFW-A,confirmed,solid MCC-2A load branch
+MCC-2A,CB-F010,confirmed,solid MCC-2A load branch
+CB-F010,MS-F010,confirmed,solid MCC-2A load branch
+MS-F010,PMP-LUBE-A,confirmed,solid MCC-2A load branch
+MCC-2A,CB-F011,confirmed,solid MCC-2A load branch
+CB-F011,DS-F011,confirmed,solid MCC-2A load branch
+DS-F011,MOV-RHR-A,confirmed,solid MCC-2A load branch
+MCC-2A,CB-F012,confirmed,solid MCC-2A load branch
+CB-F012,FU-F012,confirmed,solid MCC-2A load branch
+FU-F012,FAN-BLDG-A,confirmed,solid MCC-2A load branch
+MCC-2A,CB-F013,confirmed,solid MCC-2A load branch
+CB-F013,FU-F013,confirmed,solid MCC-2A load branch
+FU-F013,PNL-RAD-A,confirmed,solid MCC-2A load branch
+MCC-2A,CB-F014,confirmed,solid MCC-2A load branch
+CB-F014,MS-F014,confirmed,solid MCC-2A load branch
+MS-F014,PUMP-SW-A,confirmed,solid MCC-2A load branch
+MCC-2A,CB-F015,confirmed,solid MCC-2A load branch
+CB-F015,DS-F015,confirmed,solid MCC-2A load branch
+MCC-1B,CB-F016,confirmed,solid MCC-1B load branch
+CB-F016,MS-F016,confirmed,solid MCC-1B load branch
+MS-F016,PUMP-RHR-B,confirmed,solid MCC-1B load branch
+MCC-1B,CB-F017,confirmed,solid MCC-1B load branch
+CB-F017,MS-F017,confirmed,solid MCC-1B load branch
+MS-F017,PUMP-SI-B,confirmed,solid MCC-1B load branch
+MCC-1B,CB-F018,confirmed,solid MCC-1B load branch
+CB-F018,FU-F018,confirmed,solid MCC-1B load branch
+FU-F018,FAN-CR-B,confirmed,solid MCC-1B load branch
+MCC-1B,CB-F019,confirmed,solid MCC-1B load branch
+CB-F019,DS-F019,confirmed,solid MCC-1B load branch
+DS-F019,MOV-RCIC-B,confirmed,solid MCC-1B load branch
+MCC-1B,CB-F020,confirmed,solid MCC-1B load branch
+CB-F020,MS-F020,confirmed,solid MCC-1B load branch
+MS-F020,PUMP-CCW-B,confirmed,solid MCC-1B load branch
+MCC-1B,CB-F021,confirmed,solid MCC-1B load branch
+CB-F021,FU-F021,confirmed,solid MCC-1B load branch
+FU-F021,HTR-SUMP-B,confirmed,solid MCC-1B load branch
+MCC-1B,CB-F022,confirmed,solid MCC-1B load branch
+CB-F022,MS-F022,confirmed,solid MCC-1B load branch
+MS-F022,PMP-BOR-B,confirmed,solid MCC-1B load branch
+MCC-1B,CB-F023,confirmed,solid MCC-1B load branch
+CB-F023,DS-F023,confirmed,solid MCC-1B load branch
+DS-F023,VALVE-IA-B,confirmed,solid MCC-1B load branch
+MCC-2B,CB-F024,confirmed,solid MCC-2B load branch
+CB-F024,MS-F024,confirmed,solid MCC-2B load branch
+MS-F024,PUMP-AFW-B,confirmed,solid MCC-2B load branch
+MCC-2B,CB-F025,confirmed,solid MCC-2B load branch
+CB-F025,MS-F025,confirmed,solid MCC-2B load branch
+MS-F025,PMP-LUBE-B,confirmed,solid MCC-2B load branch
+MCC-2B,CB-F026,confirmed,solid MCC-2B load branch
+CB-F026,DS-F026,confirmed,solid MCC-2B load branch
+DS-F026,MOV-RHR-B,confirmed,solid MCC-2B load branch
+MCC-2B,CB-F027,confirmed,solid MCC-2B load branch
+CB-F027,FU-F027,confirmed,solid MCC-2B load branch
+FU-F027,FAN-BLDG-B,confirmed,solid MCC-2B load branch
+MCC-2B,CB-F028,confirmed,solid MCC-2B load branch
+CB-F028,FU-F028,confirmed,solid MCC-2B load branch
+FU-F028,PNL-RAD-B,confirmed,solid MCC-2B load branch
+MCC-2B,CB-F029,confirmed,solid MCC-2B load branch
+CB-F029,MS-F029,confirmed,solid MCC-2B load branch
+MS-F029,PUMP-SW-B,confirmed,solid MCC-2B load branch
+BUS-480-C,CB-DC-1A,confirmed,solid Train A 125 VDC charger feeder
+CB-DC-1A,CHGR-125A,confirmed,solid Train A 125 VDC charger feeder
+CHGR-125A,DC-BUS-A,confirmed,solid Train A 125 VDC charger feeder
+BAT-125A,DC-BUS-A,confirmed,solid battery A tap to DC-BUS-A
+DC-BUS-A,INV-1A,confirmed,solid DC-BUS-A input to inverter
+INV-1A,ATS-INV,confirmed,solid inverter A output to inverter ATS
+BUS-480-B,CB-DC-1B,confirmed,solid Train B 125 VDC charger feeder
+CB-DC-1B,CHGR-125B,confirmed,solid Train B 125 VDC charger feeder
+CHGR-125B,DC-BUS-B,confirmed,solid Train B 125 VDC charger feeder
+BAT-125B,DC-BUS-B,confirmed,solid battery B tap to DC-BUS-B
+DC-BUS-B,INV-1B,confirmed,solid DC-BUS-B input to inverter
+INV-1B,ATS-INV,confirmed,solid inverter B output to inverter ATS
+ATS-INV,BUS-120VAC-ESF,confirmed,solid ATS output to 120 VAC ESF instrument bus
+RELAY-50A,RELAY-86A,confirmed,dashed A-side relay control line
+RELAY-50B,RELAY-86B,confirmed,dashed B-side relay control line
+TB-RPS-A,PNL-RPS-A,confirmed,dashed/control route into A RPS terminal-panel cluster
+TB-RPS-B,PNL-RPS-B,confirmed,dashed/control route into B RPS terminal-panel cluster
+ANN A,TB-ANN-1,confirmed,dotted annunciator A signal to terminal block
+SEQ-REC-1,PNL-ESFAS-A,confirmed,dotted signal route from sequence recorder to ESFAS-A
+SEQ-REC-1,PNL-ESFAS-B,confirmed,dotted signal route from sequence recorder to ESFAS-B
+PNL-RPS-A,GND-1,confirmed,Diego round 1 high-recall equipment ground reference line
+PNL-RPS-B,GND-2,confirmed,Diego round 1 high-recall equipment ground reference line
+DS-F015,SPARE-A2,confirmed,Diego round 1 retained visible spare placeholder load
+BUS-4KV-A,PT-4160A,uncertain_included,likely voltage sensing but no precision-clean bus tap
+BUS-4KV-B,PT-4160B,uncertain_included,likely voltage sensing but no precision-clean bus tap
+CB-101,A_SOURCE_INTERLOCK_TRUNK,uncertain_included,dash-dot source interlock trunk crosses source area
+CB-102,A_SOURCE_INTERLOCK_TRUNK,uncertain_included,dash-dot source interlock trunk crosses source area
+CB-103,A_SOURCE_INTERLOCK_TRUNK,uncertain_included,dash-dot source interlock trunk crosses source area
+CB-203,B_SOURCE_INTERLOCK_TRUNK,uncertain_included,dash-dot source interlock trunk crosses source area
+CB-202,B_SOURCE_INTERLOCK_TRUNK,uncertain_included,dash-dot source interlock trunk crosses source area
+CB-303,B_SOURCE_INTERLOCK_TRUNK,uncertain_included,dash-dot source interlock trunk crosses source area
+BUS-120VAC-ESF,PNL-ESFAS-A,uncertain_included,Diego uncertain instrument-bus panel feed later accepted by Jennifer
+BUS-120VAC-ESF,PNL-ESFAS-B,uncertain_included,Diego uncertain instrument-bus panel feed later accepted by Jennifer
+BUS-120VAC-ESF,PNL-RPS-A,uncertain_included,possible instrument bus feed but endpoint not precision-clean
+BUS-120VAC-ESF,PNL-RPS-B,uncertain_included,possible instrument bus feed but endpoint not precision-clean
+BUS-120VAC-ESF,SEQ-REC-1,uncertain_included,possible recorder feed but endpoint not precision-clean
+RELAY-27A,TB-RPS-A,uncertain_included,dashed relay/RPS route is crowded
+RELAY-27B,TB-RPS-B,uncertain_included,dashed relay/RPS route is crowded
+RELAY-86A,TB-RPS-A,uncertain_included,possible lockout relay control to terminal block
+RELAY-86B,TB-RPS-B,uncertain_included,possible lockout relay control to terminal block
+ANN B,TB-RPS-B,uncertain_included,visible B annunciator route but no discrete endpoint comparable to ANN A
+PNL-RPS-A,PNL-ESFAS-A,uncertain_included,dashed logic route between panel groups is ambiguous
+PNL-RPS-B,PNL-ESFAS-B,uncertain_included,dashed logic route between panel groups is ambiguous

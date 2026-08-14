@@ -1,0 +1,7 @@
+document,iteration,call_id,model,input_tokens_est_low,input_tokens_est_expected,input_tokens_est_high,cached_input_tokens,output_tokens_est_low,output_tokens_est_expected,output_tokens_est_high,reasoning_tokens,image_file_input_tokens_est_expected,usage_object_available,notes
+3,1,main_coordinator_aggregate,GPT-5/Codex main,9000,13500,19000,unknown,1200,2200,3500,not exposed,10500,no,"Main inspected raw, overlay, generated crops, and integrated subagent outputs. Official Responses token counting was not callable because no API key is available in this environment."
+3,1,diego_round1,gpt-5.5,14500,20500,28500,unknown,2500,4200,6500,not exposed,16500,no,High-recall extraction over full images plus visual crops.
+3,1,jennifer_round1,gpt-5.5,13000,18500,26000,unknown,1800,3200,5200,not exposed,14500,no,Precision review of Diego round 1 using raw and derived visual resources.
+3,1,diego_round2,gpt-5.5,8500,12500,18000,unknown,250,650,1200,not exposed,9000,no,"Focused disagreement review on source breaker bus landings, ground treatment, and control labels."
+3,1,jennifer_round2_final,gpt-5.5,10500,15000,21500,unknown,300,750,1300,not exposed,10500,no,Final saturation pass. Usage object was not returned by the multi-agent wrapper.
+3,1,TOTAL_ESTIMATE,,55500,80000,113000,unknown,6050,11000,17700,not exposed,61000,no,Expected total input+output tokens estimate: 91000. Low/high totals can be derived from columns.

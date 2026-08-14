@@ -1,0 +1,231 @@
+1) NODE_LIST_CSV
+node
+GEN-G201
+IPB-201
+CB-GEN-201
+GSU-201
+SWYD-BUS-A
+SWYD-BUS-B
+CB-GRID-A
+GRID-230A
+CB-GRID-B
+GRID-230B
+CB-TIE-230
+TR-UAT-201
+TR-UAT-202
+TR-SST-201
+TR-SST-202
+DG-EDG-201A
+DG-EDG-201B
+CB-DG-A
+CB-DG-B
+ATS-A
+ATS-B
+CB-UAT-1
+CB-UAT-2
+CB-SST-1
+CB-SST-2
+BUS-6KV-A
+BUS-6KV-B
+CB-TIE-6KV
+DS-6KV-A
+DS-6KV-B
+BUS-4KV-N
+PT-6KV-A
+PT-6KV-B
+TR-480A
+TR-480B
+TR-480N
+CB-LC-A1
+CB-LC-B1
+CB-LC-N1
+LC-480A
+LC-480B
+LC-480N
+UV-SENS-A
+UV-SENS-B
+MCC-CCW-A
+MCC-SW-A
+MCC-HPI-A
+MCC-VENT-A
+MCC-CCW-B
+MCC-SW-B
+MCC-HPI-B
+MCC-VENT-B
+JBX-CCW-A
+JBX-SW-A
+JBX-CCW-B
+JBX-SW-B
+PUMP-CCW-A
+PUMP-SW-A
+PUMP-HPI-A
+PUMP-CCW-B
+PUMP-SW-B
+PUMP-HPI-B
+MOV-CCW-201A
+MOV-SI-201A
+MOV-CCW-201B
+MOV-SI-201B
+FAN-CR-A
+FAN-CR-B
+LP-N-A
+LP-N-B
+HTR-BLDG-A
+HTR-BLDG-B
+AC/DC-CHGR-A
+AC/DC-CHGR-B
+BAT-125A
+BAT-125B
+PNL-DC-A
+PNL-DC-B
+AC/DC-REC-A
+AC/DC-REC-B
+DC/AC-INV-A
+DC/AC-INV-B
+UPS-A
+UPS-B
+GND-A
+GND-B
+GND-MAIN
+CT-EDG-A
+CT-EDG-B
+PNL-INST-A
+PNL-INST-B
+CP-ESFAS-A
+CP-ESFAS-B
+PLC-RPS-A
+PLC-RPS-B
+JBX-ESF-A
+JBX-ESF-B
+RELAY-UV-A
+RELAY-UV-B
+RELAY-SI-A
+RELAY-SI-B
+RELAY-LOAD-A
+RELAY-LOAD-B
+RELAY-DG-A
+RELAY-DG-B
+
+2) EDGE_LIST_CSV
+source,target,confidence,line_type,evidence
+GEN-G201,IPB-201,high,POWER_FEEDER,raw_top_left_source solid feeder from GEN-G201 right terminal to IPB-201 left terminal
+IPB-201,CB-GEN-201,high,POWER_FEEDER,raw_top_left_source solid feeder from IPB-201 right terminal to CB-GEN-201
+CB-GEN-201,GSU-201,high,POWER_FEEDER,raw_top_left_source solid feeder from CB-GEN-201 to GSU-201 primary
+GSU-201,SWYD-BUS-A,high,POWER_FEEDER,raw_generator_switchyard GSU-201 secondary tap lands on SWYD-BUS-A with dot
+SWYD-BUS-A,CB-GRID-A,high,POWER_FEEDER,raw_top_center_safety_source SWYD-BUS-A continues through CB-GRID-A
+CB-GRID-A,GRID-230A,high,POWER_FEEDER,raw_top_center_safety_source CB-GRID-A output lands on GRID-230A
+SWYD-BUS-B,CB-GRID-B,high,POWER_FEEDER,raw_top_center_safety_source SWYD-BUS-B continues through CB-GRID-B
+CB-GRID-B,GRID-230B,high,POWER_FEEDER,raw_top_center_safety_source CB-GRID-B output lands on GRID-230B
+SWYD-BUS-A,CB-TIE-230,high,POWER_FEEDER,raw_top_center_safety_source vertical tie feeder from SWYD-BUS-A to CB-TIE-230
+CB-TIE-230,SWYD-BUS-B,high,POWER_FEEDER,raw_top_center_safety_source vertical tie feeder from CB-TIE-230 to SWYD-BUS-B with dot
+IPB-201,TR-UAT-201,high,POWER_FEEDER,raw_top_left_source lower IPB-201 tap drops toward TR-UAT-201
+IPB-201,TR-UAT-202,high,POWER_FEEDER,raw_top_left_source lower IPB-201 branch routes to TR-UAT-202 primary
+SWYD-BUS-A,TR-SST-201,high,POWER_FEEDER,raw_top_center_safety_source vertical tap from SWYD-BUS-A feeds TR-SST-201
+GRID-230B,TR-SST-202,high,POWER_FEEDER,raw_top_center_safety_source GRID-230B lower feeder turns down to TR-SST-202
+DG-EDG-201A,CB-DG-A,high,POWER_FEEDER,raw_mv_left_detail solid EDG-A output feeder enters CB-DG-A
+CB-DG-A,ATS-A,high,POWER_FEEDER,raw_mv_left_detail solid feeder between CB-DG-A and ATS-A
+ATS-A,BUS-6KV-A,high,POWER_FEEDER,raw_mv_left_detail ATS-A vertical feeder lands on BUS-6KV-A with dot
+TR-UAT-201,CB-UAT-1,high,POWER_FEEDER,raw_mv_left_detail TR-UAT-201 secondary drops through CB-UAT-1
+CB-UAT-1,BUS-6KV-A,high,POWER_FEEDER,raw_mv_left_detail CB-UAT-1 feeder lands on BUS-6KV-A with dot
+TR-SST-201,CB-SST-1,high,POWER_FEEDER,raw_mv_left_detail TR-SST-201 secondary drops through CB-SST-1
+CB-SST-1,BUS-6KV-A,high,POWER_FEEDER,raw_mv_left_detail CB-SST-1 feeder lands on BUS-6KV-A with dot
+TR-UAT-202,CB-UAT-2,high,POWER_FEEDER,raw_mv_right_detail TR-UAT-202 secondary routes to CB-UAT-2
+CB-UAT-2,BUS-6KV-B,high,POWER_FEEDER,raw_mv_right_detail CB-UAT-2 feeder lands on BUS-6KV-B with dot
+TR-SST-202,CB-SST-2,high,POWER_FEEDER,raw_mv_right_detail TR-SST-202 secondary drops through CB-SST-2
+CB-SST-2,BUS-6KV-B,high,POWER_FEEDER,raw_mv_right_detail CB-SST-2 feeder lands on BUS-6KV-B with dot
+DG-EDG-201B,CB-DG-B,high,POWER_FEEDER,raw_top_right_source solid EDG-B output feeder enters CB-DG-B
+CB-DG-B,ATS-B,high,POWER_FEEDER,raw_top_right_source solid feeder between CB-DG-B and ATS-B
+ATS-B,BUS-6KV-B,high,POWER_FEEDER,raw_top_right_source ATS-B routed feeder lands on BUS-6KV-B
+BUS-6KV-A,CB-TIE-6KV,high,POWER_FEEDER,raw_mv_safety_buses tie breaker inserted between BUS-6KV-A and BUS-6KV-B
+CB-TIE-6KV,BUS-6KV-B,high,POWER_FEEDER,raw_mv_safety_buses tie breaker output continues to BUS-6KV-B
+BUS-6KV-A,DS-6KV-A,high,POWER_FEEDER,raw_mv_left_detail BUS-6KV-A lower tap passes through DS-6KV-A
+DS-6KV-A,BUS-4KV-N,high,POWER_FEEDER,raw_mv_safety_buses DS-6KV-A output lands on BUS-4KV-N
+BUS-6KV-B,DS-6KV-B,high,POWER_FEEDER,raw_mv_right_detail BUS-6KV-B lower tap passes through DS-6KV-B
+DS-6KV-B,BUS-4KV-N,high,POWER_FEEDER,raw_mv_safety_buses DS-6KV-B output lands on BUS-4KV-N
+BUS-6KV-A,TR-480A,high,POWER_FEEDER,raw_mv_left_detail vertical feeder from BUS-6KV-A to TR-480A
+TR-480A,CB-LC-A1,high,POWER_FEEDER,raw_load_center_a TR-480A secondary drops through CB-LC-A1
+CB-LC-A1,LC-480A,high,POWER_FEEDER,raw_load_center_a CB-LC-A1 output enters LC-480A
+BUS-6KV-B,TR-480B,high,POWER_FEEDER,raw_mv_right_detail vertical feeder from BUS-6KV-B to TR-480B
+TR-480B,CB-LC-B1,high,POWER_FEEDER,raw_load_center_b TR-480B secondary drops through CB-LC-B1
+CB-LC-B1,LC-480B,high,POWER_FEEDER,raw_load_center_b CB-LC-B1 output enters LC-480B
+BUS-4KV-N,TR-480N,high,POWER_FEEDER,raw_load_center_mid_lp vertical tap from BUS-4KV-N to TR-480N
+TR-480N,CB-LC-N1,high,POWER_FEEDER,raw_load_center_mid_lp TR-480N secondary drops through CB-LC-N1
+CB-LC-N1,LC-480N,high,POWER_FEEDER,raw_load_center_mid_lp CB-LC-N1 output enters LC-480N
+LC-480A,MCC-CCW-A,high,POWER_FEEDER,raw_load_center_a LC-480A left feeder lands on MCC-CCW-A
+LC-480A,MCC-SW-A,high,POWER_FEEDER,raw_load_center_a LC-480A feeder lands on MCC-SW-A
+LC-480A,MCC-HPI-A,high,POWER_FEEDER,raw_load_center_a LC-480A feeder lands on MCC-HPI-A
+LC-480A,MCC-VENT-A,high,POWER_FEEDER,raw_load_center_a LC-480A right feeder lands on MCC-VENT-A
+MCC-CCW-A,JBX-CCW-A,high,POWER_FEEDER,raw_load_center_a vertical feeder from MCC-CCW-A lands on JBX-CCW-A
+JBX-CCW-A,PUMP-CCW-A,high,POWER_FEEDER,raw_load_center_a JBX-CCW-A vertical feeder continues to PUMP-CCW-A
+MCC-CCW-A,MOV-CCW-201A,high,POWER_FEEDER,raw_load_center_a separate MCC-CCW-A feeder turns to MOV-CCW-201A
+MCC-SW-A,JBX-SW-A,high,POWER_FEEDER,raw_load_center_a vertical feeder from MCC-SW-A lands on JBX-SW-A
+JBX-SW-A,PUMP-SW-A,high,POWER_FEEDER,raw_load_center_a JBX-SW-A vertical feeder continues to PUMP-SW-A
+MCC-HPI-A,PUMP-HPI-A,high,POWER_FEEDER,raw_load_center_a vertical feeder from MCC-HPI-A lands on PUMP-HPI-A
+MCC-HPI-A,MOV-SI-201A,high,POWER_FEEDER,raw_load_center_a separate MCC-HPI-A feeder turns to MOV-SI-201A
+MCC-VENT-A,FAN-CR-A,high,POWER_FEEDER,raw_load_center_a vertical feeder from MCC-VENT-A lands on FAN-CR-A
+LC-480A,AC/DC-CHGR-A,high,POWER_FEEDER,raw_overview solid feeder descends from LC-480A area into AC/DC-CHGR-A top terminal
+LC-480B,MCC-CCW-B,high,POWER_FEEDER,raw_load_center_b LC-480B left feeder lands on MCC-CCW-B
+LC-480B,MCC-SW-B,high,POWER_FEEDER,raw_load_center_b LC-480B feeder lands on MCC-SW-B
+LC-480B,MCC-HPI-B,high,POWER_FEEDER,raw_load_center_b LC-480B feeder lands on MCC-HPI-B
+LC-480B,MCC-VENT-B,high,POWER_FEEDER,raw_load_center_b LC-480B right feeder lands on MCC-VENT-B
+MCC-CCW-B,JBX-CCW-B,high,POWER_FEEDER,raw_load_center_b vertical feeder from MCC-CCW-B lands on JBX-CCW-B
+JBX-CCW-B,PUMP-CCW-B,high,POWER_FEEDER,raw_load_center_b JBX-CCW-B vertical feeder continues to PUMP-CCW-B
+MCC-CCW-B,MOV-CCW-201B,high,POWER_FEEDER,raw_load_center_b separate MCC-CCW-B feeder turns to MOV-CCW-201B
+MCC-SW-B,JBX-SW-B,high,POWER_FEEDER,raw_load_center_b vertical feeder from MCC-SW-B lands on JBX-SW-B
+JBX-SW-B,PUMP-SW-B,high,POWER_FEEDER,raw_load_center_b JBX-SW-B vertical feeder continues to PUMP-SW-B
+MCC-HPI-B,PUMP-HPI-B,high,POWER_FEEDER,raw_load_center_b vertical feeder from MCC-HPI-B lands on PUMP-HPI-B
+MCC-HPI-B,MOV-SI-201B,high,POWER_FEEDER,raw_load_center_b separate MCC-HPI-B feeder turns to MOV-SI-201B
+MCC-VENT-B,FAN-CR-B,high,POWER_FEEDER,raw_load_center_b vertical feeder from MCC-VENT-B lands on FAN-CR-B
+LC-480B,AC/DC-CHGR-B,high,POWER_FEEDER,raw_overview solid feeder descends from LC-480B area into AC/DC-CHGR-B top terminal
+LC-480N,LP-N-A,high,POWER_FEEDER,raw_load_center_mid_lp LC-480N left feeder lands on LP-N-A
+LC-480N,LP-N-B,high,POWER_FEEDER,raw_load_center_mid_lp LC-480N right feeder lands on LP-N-B
+LP-N-A,HTR-BLDG-A,high,POWER_FEEDER,raw_load_center_mid_lp LP-N-A vertical feeder lands on HTR-BLDG-A
+LP-N-B,HTR-BLDG-B,high,POWER_FEEDER,raw_load_center_mid_lp LP-N-B vertical feeder lands on HTR-BLDG-B
+AC/DC-CHGR-A,PNL-DC-A,high,POWER_FEEDER,raw_dc_ups_a solid horizontal feeder from AC/DC-CHGR-A to PNL-DC-A
+AC/DC-CHGR-A,BAT-125A,high,POWER_FEEDER,raw_dc_ups_a AC/DC-CHGR-A vertical feeder connects to BAT-125A
+BAT-125A,PNL-DC-A,high,POWER_FEEDER,raw_dc_ups_a BAT-125A output turns into PNL-DC-A
+PNL-DC-A,AC/DC-REC-A,high,POWER_FEEDER,raw_dc_ups_a PNL-DC-A vertical feeder enters AC/DC-REC-A
+AC/DC-REC-A,DC/AC-INV-A,high,POWER_FEEDER,raw_dc_ups_a AC/DC-REC-A output turns up to DC/AC-INV-A
+DC/AC-INV-A,UPS-A,high,POWER_FEEDER,raw_dc_ups_a DC/AC-INV-A vertical feeder connects to UPS-A
+AC/DC-CHGR-B,PNL-DC-B,high,POWER_FEEDER,raw_dc_ups_b solid horizontal feeder from AC/DC-CHGR-B to PNL-DC-B
+AC/DC-CHGR-B,BAT-125B,high,POWER_FEEDER,raw_dc_ups_b AC/DC-CHGR-B vertical feeder connects to BAT-125B
+BAT-125B,PNL-DC-B,high,POWER_FEEDER,raw_dc_ups_b BAT-125B output turns into PNL-DC-B
+PNL-DC-B,AC/DC-REC-B,high,POWER_FEEDER,raw_dc_ups_b PNL-DC-B vertical feeder enters AC/DC-REC-B
+AC/DC-REC-B,DC/AC-INV-B,high,POWER_FEEDER,raw_dc_ups_b AC/DC-REC-B output turns up to DC/AC-INV-B
+DC/AC-INV-B,UPS-B,high,POWER_FEEDER,raw_dc_ups_b DC/AC-INV-B vertical feeder connects to UPS-B
+BAT-125A,GND-A,high,GROUND_BOND,raw_grounding_bottom dotted ground bond from BAT-125A descends to GND-A
+AC/DC-REC-A,GND-MAIN,medium,GROUND_BOND,raw_grounding_bottom AC/DC-REC-A dotted drop lands on common ground corridor continuing to GND-MAIN
+GND-A,GND-MAIN,high,GROUND_BOND,raw_grounding_bottom dotted ground corridor links GND-A to GND-MAIN
+BAT-125B,GND-B,high,GROUND_BOND,raw_grounding_bottom dotted ground bond from BAT-125B descends to GND-B
+AC/DC-REC-B,GND-MAIN,medium,GROUND_BOND,raw_grounding_bottom AC/DC-REC-B dotted drop lands on common ground corridor continuing to GND-MAIN
+GND-B,GND-MAIN,high,GROUND_BOND,raw_grounding_bottom dotted ground corridor links GND-B to GND-MAIN
+BUS-6KV-A,PT-6KV-A,high,SENSING_INSTRUMENT,raw_mv_left_detail dashed PT tap drops from BUS-6KV-A to PT-6KV-A
+BUS-6KV-B,PT-6KV-B,high,SENSING_INSTRUMENT,raw_mv_right_detail dashed PT tap drops from BUS-6KV-B to PT-6KV-B
+LC-480A,UV-SENS-A,high,SENSING_INSTRUMENT,raw_load_center_a dashed sensing line from LC-480A side terminal to UV-SENS-A
+LC-480B,UV-SENS-B,high,SENSING_INSTRUMENT,raw_load_center_b dashed sensing line from LC-480B side terminal to UV-SENS-B
+GEN-G201,CT-EDG-A,high,SENSING_INSTRUMENT,raw_top_left_source dashed sensing line drops from GEN-G201 terminal to CT-EDG-A top terminal
+CT-EDG-B,DG-EDG-201B,high,SENSING_INSTRUMENT,raw_esfas_left_terminals dotted sensing drop from CT-EDG-B bottom terminal to DG-EDG-201B top terminal
+PNL-INST-A,RELAY-UV-A,high,CONTROL_INTERLOCK,raw_esfas_rps_bay dashed line from PNL-INST-A right terminal to RELAY-UV-A left terminal
+PNL-INST-B,RELAY-UV-B,high,CONTROL_INTERLOCK,raw_esfas_rps_bay dashed line from PNL-INST-B right terminal to RELAY-UV-B left terminal
+CP-ESFAS-A,RELAY-SI-A,high,CONTROL_INTERLOCK,raw_esfas_rps_bay dashed line from CP-ESFAS-A right terminal to RELAY-SI-A left terminal
+CP-ESFAS-B,RELAY-SI-B,high,CONTROL_INTERLOCK,raw_esfas_rps_bay dashed line from CP-ESFAS-B right terminal to RELAY-SI-B left terminal
+PLC-RPS-A,RELAY-LOAD-A,high,CONTROL_INTERLOCK,raw_esfas_rps_bay dashed line from PLC-RPS-A right terminal to RELAY-LOAD-A left terminal
+PLC-RPS-B,RELAY-LOAD-B,high,CONTROL_INTERLOCK,raw_esfas_rps_bay dashed line from PLC-RPS-B right terminal to RELAY-LOAD-B left terminal
+JBX-ESF-A,RELAY-DG-A,high,CONTROL_INTERLOCK,raw_esfas_rps_bay dashed line from JBX-ESF-A right terminal to RELAY-DG-A left terminal
+JBX-ESF-B,RELAY-DG-B,high,CONTROL_INTERLOCK,raw_esfas_rps_bay dashed line from JBX-ESF-B right terminal to RELAY-DG-B left terminal
+MOV-SI-201A,FAN-CR-A,medium,CONTROL_INTERLOCK,raw_load_center_a dashed local control line spans MOV-SI-201A right terminal to FAN-CR-A left terminal
+MOV-SI-201B,FAN-CR-B,medium,CONTROL_INTERLOCK,raw_load_center_b dashed local control line spans MOV-SI-201B right terminal to FAN-CR-B left terminal
+
+3) ROUND2_DECISION
+- Accept Jennifer round 1 unchanged. Re-inspection found no direct terminal or junction evidence requiring restored corridor edges or changed endpoints.
+
+4) COUNTS
+unique node count: 105
+edge row count: 107
+unique undirected pair count: 107
+
+5) AMBIGUITIES_FOR_JENNIFER_FINAL
+- PT UV and CT sensing corridors enter the ESFAS/RPS area but source-to-panel terminal paths are not individually traceable without relying on shared lanes.
+- CP PLC PNL UPS and PNL-DC corridor links remain excluded because adjacent bundles and crossings do not provide dot or terminal evidence.
+- Relay outputs leaving the bay may continue to ATS breaker load center MCC or MOV circuits but only the direct bay spans and local MOV-to-fan spans are terminal-supported here.
+- Ground-bond and LC-to-charger edges are retained as Jennifer listed because they have visible dotted or solid landed paths in the grounding and DC/UPS/load-center crops.

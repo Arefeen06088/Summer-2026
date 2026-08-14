@@ -1,0 +1,31 @@
+Connectivity matrix validation summary - Document 7 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\7\synthetic_npp_connectivity_matrix_clean.csv
+GT after normalization: 140 undirected edges across 120 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token estimate: low=78875, expected=97045, high=128025.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=126, FP=14, FN=14, Precision=0.900000, Recall=0.900000, F1=0.900000.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges.
+- Extracted components: 120; extra/non-GT names: 0; missing GT component names: 0.
+- False-positive extracted edge examples: ANN-101 -- SR-101; ANN-101 -- UPS-120A; ANN-201 -- SR-101; ANN-201 -- UPS-120B; BAT-125A -- BCHG-125A; BAT-125A -- LC-480A; MCC-A1 -- PNL-AC-CR1; MCC-D1 -- PNL-AC-CR2; ... (+6 more).
+- Missed GT edge examples: BCHG-125A -- LC-480A; CB-DG-A -- RELAY-K102; CB-DG-B -- RELAY-K202; CB-TIE-4 -- RELAY-K101; CB-TIE-4 -- RELAY-K201; CB-UAT-A -- RELAY-K101; CB-UAT-B -- RELAY-K201; MCC-A1 -- RELAY-K102; ... (+6 more).
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=126, FP=0, FN=14, Precision=1.000000, Recall=0.900000, F1=0.947368.
+- If all missed GT edges were added, final performance would be TP=140, FP=14, FN=0, Precision=0.909091, Recall=1.000000, F1=0.952381.
+
+Best evaluated row: Diego -- Round 1 with F1=0.900000.
+
+Round-specific notes:
+- Diego -- Round 1: TP=126, FP=14, FN=14, F1=0.900000; extra nodes=0, missing GT nodes=0. FP examples: ANN-101 -- SR-101; ANN-101 -- UPS-120A; ANN-201 -- SR-101; ANN-201 -- UPS-120B; ... (+10 more). FN examples: BCHG-125A -- LC-480A; CB-DG-A -- RELAY-K102; CB-DG-B -- RELAY-K202; CB-TIE-4 -- RELAY-K101; ... (+10 more).
+- Jennifer -- Round 2: TP=126, FP=14, FN=14, F1=0.900000; extra nodes=0, missing GT nodes=0. FP examples: ANN-101 -- SR-101; ANN-101 -- UPS-120A; ANN-201 -- SR-101; ANN-201 -- UPS-120B; ... (+10 more). FN examples: BCHG-125A -- LC-480A; CB-DG-A -- RELAY-K102; CB-DG-B -- RELAY-K202; CB-TIE-4 -- RELAY-K101; ... (+10 more).
+- Diego -- Round 3: TP=126, FP=14, FN=14, F1=0.900000; extra nodes=0, missing GT nodes=0. FP examples: ANN-101 -- SR-101; ANN-101 -- UPS-120A; ANN-201 -- SR-101; ANN-201 -- UPS-120B; ... (+10 more). FN examples: BCHG-125A -- LC-480A; CB-DG-A -- RELAY-K102; CB-DG-B -- RELAY-K202; CB-TIE-4 -- RELAY-K101; ... (+10 more).
+- Jennifer -- Round 4: TP=126, FP=14, FN=14, F1=0.900000; extra nodes=0, missing GT nodes=0. FP examples: ANN-101 -- SR-101; ANN-101 -- UPS-120A; ANN-201 -- SR-101; ANN-201 -- UPS-120B; ... (+10 more). FN examples: BCHG-125A -- LC-480A; CB-DG-A -- RELAY-K102; CB-DG-B -- RELAY-K202; CB-TIE-4 -- RELAY-K101; ... (+10 more).
+- Final connectivity -- Final: TP=126, FP=14, FN=14, F1=0.900000; extra nodes=0, missing GT nodes=0. FP examples: ANN-101 -- SR-101; ANN-101 -- UPS-120A; ANN-201 -- SR-101; ANN-201 -- UPS-120B; ... (+10 more). FN examples: BCHG-125A -- LC-480A; CB-DG-A -- RELAY-K102; CB-DG-B -- RELAY-K202; CB-TIE-4 -- RELAY-K101; ... (+10 more).

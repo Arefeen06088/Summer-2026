@@ -1,0 +1,46 @@
+Connectivity matrix validation summary - Document 10
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\10\connectivity_matrix_layout_labels_clear.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_connectivity_matrix.csv): TP=102, FP=17, FN=32, Precision=0.857143, Recall=0.761194, F1=0.806324
+- Jennifer -- Round 1 (round_01_jennifer_connectivity_matrix.csv): TP=98, FP=6, FN=36, Precision=0.942308, Recall=0.731343, F1=0.823529
+- Diego -- Round 2 (round_02_diego_connectivity_matrix.csv): TP=98, FP=6, FN=36, Precision=0.942308, Recall=0.731343, F1=0.823529
+- Jennifer -- Round 2 (round_02_jennifer_connectivity_matrix.csv): TP=98, FP=6, FN=36, Precision=0.942308, Recall=0.731343, F1=0.823529
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=98, FP=6, FN=36, Precision=0.942308, Recall=0.731343, F1=0.823529
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- AOV-101A -- MCC-102A
+- AOV-101B -- MCC-102B
+- FAN-AB-A -- HTR-TRACE-A
+- FAN-AB-A -- MCC-103A
+- FAN-AB-B -- HTR-TRACE-B
+- FAN-AB-B -- MCC-103B
+
+False-negative edge examples:
+- BUS-4160-A -- CT-4160-A
+- BUS-4160-B -- CT-4160-B
+- BUS-DC-A -- GND-A
+- BUS-DC-A -- RLY-86A
+- BUS-DC-B -- GND-B
+- BUS-DC-B -- RLY-86B
+- CB-A09 -- PT-4160-A
+- CB-B09 -- PT-4160-B
+- CT-CAB-A -- JB-CONTROL
+- CT-CAB-A -- TB-LV-A
+
+Missing GT node examples:
+- TB-LV-A: 4 missed incident GT edge(s)
+- TB-LV-B: 4 missed incident GT edge(s)
+- CT-CAB-A: 3 missed incident GT edge(s)
+- CT-CAB-B: 3 missed incident GT edge(s)
+- FUSE-A01: 2 missed incident GT edge(s)
+- FUSE-A02: 2 missed incident GT edge(s)
+- FUSE-B01: 2 missed incident GT edge(s)
+- FUSE-B02: 2 missed incident GT edge(s)
+- GND-A: 2 missed incident GT edge(s)
+- GND-B: 2 missed incident GT edge(s)

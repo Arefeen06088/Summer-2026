@@ -1,0 +1,61 @@
+Connectivity matrix validation summary - Document 12
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\12\synthetic_npp_connectivity_matrix_rps_rerouted.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_connectivity_matrix.csv): TP=153, FP=16, FN=27, Precision=0.905325, Recall=0.850000, F1=0.876791
+- Jennifer -- Round 1 (round_01_jennifer_connectivity_matrix.csv): TP=142, FP=6, FN=38, Precision=0.959459, Recall=0.788889, F1=0.865854
+- Diego -- Round 2 (round_02_diego_connectivity_matrix.csv): TP=142, FP=6, FN=38, Precision=0.959459, Recall=0.788889, F1=0.865854
+- Jennifer -- Round 2 (round_02_jennifer_connectivity_matrix.csv): TP=142, FP=6, FN=38, Precision=0.959459, Recall=0.788889, F1=0.865854
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=142, FP=6, FN=38, Precision=0.959459, Recall=0.788889, F1=0.865854
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- ANN A -- TB-ANN-1
+- BUS-480-B -- CB-DC-1B
+- FU-F001 -- PUMP-RHR-A
+- MS-F016 -- PUMP-RHR-B
+- PNL-ESFAS-A -- SEQ-REC-1
+- PNL-ESFAS-B -- SEQ-REC-1
+
+False-negative edge examples:
+- ANN-480A -- PNL-RPS-A
+- ANN-480A -- TB-ANN-1
+- ANN-480B -- SEQ-REC-1
+- BUS-120VAC-ESF -- PNL-RPS-A
+- BUS-120VAC-ESF -- PNL-RPS-B
+- BUS-480-D -- CB-DC-1B
+- BUS-4KV-A -- PT-4160A
+- BUS-4KV-B -- PT-4160B
+- CB-103 -- RELAY-86A
+- CB-111 -- RELAY-27A
+
+Extra/non-GT nodes causing performance drops:
+- ANN A: 1 incident false-positive edge(s)
+- PUMP-RHR-A: 1 incident false-positive edge(s)
+- PUMP-RHR-B: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 3 extra/intermediate nodes were omitted from the extraction (ANN A, PUMP-RHR-A, PUMP-RHR-B), final metrics would be TP=142, FP=3, FN=38, Precision=0.979310, Recall=0.788889, F1=0.873846.
+- If all 3 non-GT nodes were omitted, metrics would be TP=142, FP=3, FN=38, Precision=0.979310, Recall=0.788889, F1=0.873846.
+
+Missing GT node examples:
+- RELAY-27A: 4 missed incident GT edge(s)
+- RELAY-27B: 4 missed incident GT edge(s)
+- ANN-480A: 2 missed incident GT edge(s)
+- PT-4160A: 2 missed incident GT edge(s)
+- PT-4160B: 2 missed incident GT edge(s)
+- ANN-480B: 1 missed incident GT edge(s)
+- GND-1: 1 missed incident GT edge(s)
+- GND-2: 1 missed incident GT edge(s)
+- PUMP-RHR-A1: 1 missed incident GT edge(s)
+- PUMP-RHR-B1: 1 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted PUMP-RHR-A vs GT PUMP-RHR-A1 (similarity 0.95)
+- Extracted PUMP-RHR-B vs GT PUMP-RHR-B1 (similarity 0.95)

@@ -1,0 +1,18 @@
+Connectivity matrix validation summary
+Document: 12
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\12\synthetic_npp_connectivity_matrix_rps_rerouted.csv
+GT normalized nodes: 160; GT normalized edges: 180
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from jennifer_round1_matrix.csv with Precision=0.945122, Recall=0.861111, F1=0.901163
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=155, FP=9, FN=25, Precision=0.945122, Recall=0.861111, F1=0.901163
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+No extra/non-GT extracted nodes were attached to false-positive edges in the final edge set.
+Missing GT nodes examples: none.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: ANN-480A -- RELAY-27A; ANN-480B -- RELAY-27B; PNL-ESFAS-A -- PNL-RPS-A; PNL-ESFAS-A -- SEQ-REC-1; PNL-ESFAS-A -- TB-ANN-1; PNL-ESFAS-B -- PNL-RPS-B; PNL-ESFAS-B -- SEQ-REC-1; PNL-RPS-A -- RELAY-86A.
+False-negative edge examples among GT-known nodes: ANN-480A -- PNL-RPS-A; ANN-480B -- SEQ-REC-1; BUS-120VAC-ESF -- PNL-ESFAS-A; BUS-120VAC-ESF -- PNL-ESFAS-B; BUS-120VAC-ESF -- PNL-RPS-A; BUS-120VAC-ESF -- PNL-RPS-B; CB-103 -- RELAY-86A; CB-111 -- RELAY-27A.
+
+What-if node pruning insight: no non-GT intermediate nodes were available to prune; the remaining drop is mainly connectivity/edge discovery or missing direct GT edges.

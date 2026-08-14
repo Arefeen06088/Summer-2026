@@ -1,0 +1,1 @@
+Saturation check accepted Jennifer round 1. Diego agreed that ground symbols are not matrix nodes, both chargers are fed from BUS-480-LCB, and the ANN/REC dashed link crosses BUS-UPS-B without a junction.

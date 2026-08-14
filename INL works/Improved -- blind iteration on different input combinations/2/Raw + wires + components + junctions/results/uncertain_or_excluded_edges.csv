@@ -1,0 +1,5 @@
+item,decision,reason
+feeder-zone dashed boundary boxes,excluded,"Visual zone boundaries, not component nodes or electrical links."
+"cable IDs, ratings, voltage/frequency text, title block, revision/cable index",excluded,Annotations only; not graph nodes.
+unconnected busbar endcaps,excluded,No component/node label and no adjacent connected device.
+CB-TIE-4AB operating state,retained physical edge; noted normally open,"Breaker is visibly connected between BUS-4160-A and BUS-4160-B; N.O. text describes state, not absence of drawn connectivity."

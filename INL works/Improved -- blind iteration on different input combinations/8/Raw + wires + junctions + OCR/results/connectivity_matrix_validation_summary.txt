@@ -1,0 +1,33 @@
+Connectivity matrix validation summary - Document 8 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\8\connectivity_matrix_improved_local_refined_v3.csv
+GT after normalization: 140 undirected edges across 120 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token estimate: low=84003, expected=105473, high=138973.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=130, FP=8, FN=10, Precision=0.942029, Recall=0.928571, F1=0.935252.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges.
+- Extracted components: 120; extra/non-GT names: 0; missing GT component names: 0.
+- False-positive extracted edge examples: BUS-480-E2A -- MCC-2C; CB-58A -- MOV-8810A; CB-58B -- MOV-8810B; CHGR-125B -- PN-480-B; CP-ESFAS-A -- JB-2A1; JB-2B1 -- PUMP-AF-2B; PN-120B -- VLV-HV-302B; PUMP-CHG-2A -- VLV-HV-302A.
+- Missed GT edge examples: BUS-480-E2B -- CHGR-125B; BUS-480-N2A -- PN-480-A; BUS-480-N2B -- PN-480-B; CB-N1 -- MCC-2C; JB-2A1 -- PN-125A; JB-2B1 -- PN-125B; MOV-8810A -- PN-480-A; MOV-8810B -- PN-480-B; ... (+2 more).
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=130, FP=0, FN=10, Precision=1.000000, Recall=0.928571, F1=0.962963.
+- If all missed GT edges were added, final performance would be TP=140, FP=8, FN=0, Precision=0.945946, Recall=1.000000, F1=0.972222.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.935252.
+
+Round-specific notes:
+- Diego -- Round 1: TP=129, FP=11, FN=11, F1=0.921429; extra nodes=0, missing GT nodes=0. FP examples: CB-58A -- MOV-8810A; CB-58B -- MOV-8810B; CB-N1 -- CHGR-125A; CHGR-125B -- PN-480-B; ... (+7 more). FN examples: BUS-480-E2A -- CHGR-125A; BUS-480-E2B -- CHGR-125B; BUS-480-N2A -- PN-480-A; BUS-480-N2B -- PN-480-B; ... (+7 more).
+- Jennifer -- Round 2: TP=130, FP=8, FN=10, F1=0.935252; extra nodes=0, missing GT nodes=0. FP examples: BUS-480-E2A -- MCC-2C; CB-58A -- MOV-8810A; CB-58B -- MOV-8810B; CHGR-125B -- PN-480-B; ... (+4 more). FN examples: BUS-480-E2B -- CHGR-125B; BUS-480-N2A -- PN-480-A; BUS-480-N2B -- PN-480-B; CB-N1 -- MCC-2C; ... (+6 more).
+- Diego -- Round 3: TP=130, FP=10, FN=10, F1=0.928571; extra nodes=0, missing GT nodes=0. FP examples: BUS-480-E2A -- MCC-2C; CB-58A -- MOV-8810A; CB-58B -- MOV-8810B; CHGR-125B -- PN-480-B; ... (+6 more). FN examples: BUS-480-E2B -- CHGR-125B; BUS-480-N2A -- PN-480-A; BUS-480-N2B -- PN-480-B; CB-N1 -- MCC-2C; ... (+6 more).
+- Jennifer -- Round 4: TP=130, FP=8, FN=10, F1=0.935252; extra nodes=0, missing GT nodes=0. FP examples: BUS-480-E2A -- MCC-2C; CB-58A -- MOV-8810A; CB-58B -- MOV-8810B; CHGR-125B -- PN-480-B; ... (+4 more). FN examples: BUS-480-E2B -- CHGR-125B; BUS-480-N2A -- PN-480-A; BUS-480-N2B -- PN-480-B; CB-N1 -- MCC-2C; ... (+6 more).
+- Diego -- Round 5: TP=130, FP=8, FN=10, F1=0.935252; extra nodes=0, missing GT nodes=0. FP examples: BUS-480-E2A -- MCC-2C; CB-58A -- MOV-8810A; CB-58B -- MOV-8810B; CHGR-125B -- PN-480-B; ... (+4 more). FN examples: BUS-480-E2B -- CHGR-125B; BUS-480-N2A -- PN-480-A; BUS-480-N2B -- PN-480-B; CB-N1 -- MCC-2C; ... (+6 more).
+- Jennifer -- Round 6: TP=130, FP=8, FN=10, F1=0.935252; extra nodes=0, missing GT nodes=0. FP examples: BUS-480-E2A -- MCC-2C; CB-58A -- MOV-8810A; CB-58B -- MOV-8810B; CHGR-125B -- PN-480-B; ... (+4 more). FN examples: BUS-480-E2B -- CHGR-125B; BUS-480-N2A -- PN-480-A; BUS-480-N2B -- PN-480-B; CB-N1 -- MCC-2C; ... (+6 more).
+- Final connectivity -- Final: TP=130, FP=8, FN=10, F1=0.935252; extra nodes=0, missing GT nodes=0. FP examples: BUS-480-E2A -- MCC-2C; CB-58A -- MOV-8810A; CB-58B -- MOV-8810B; CHGR-125B -- PN-480-B; ... (+4 more). FN examples: BUS-480-E2B -- CHGR-125B; BUS-480-N2A -- PN-480-A; BUS-480-N2B -- PN-480-B; CB-N1 -- MCC-2C; ... (+6 more).

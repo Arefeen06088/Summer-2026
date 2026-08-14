@@ -1,0 +1,187 @@
+source,target,status,evidence
+UTIL-230A,DS-230A,confirmed,solid utility/SAT A feed
+DS-230A,SAT-1A,confirmed,solid utility/SAT A feed
+SAT-1A,CB-SAT-A,confirmed,solid utility/SAT A feed
+CB-SAT-A,BUS-4160S1A,confirmed,solid utility/SAT A feed
+UTIL-230B,DS-230B,confirmed,solid utility/SAT B feed
+DS-230B,SAT-1B,confirmed,solid utility/SAT B feed
+SAT-1B,CB-SAT-B,confirmed,solid utility/SAT B feed
+CB-SAT-B,BUS-4160S1B,confirmed,solid utility/SAT B feed
+GEN-1A,CB-GEN-1,confirmed,solid generator to 13 kV bus
+CB-GEN-1,BUS-13K-01,confirmed,solid generator to 13 kV bus
+BUS-13K-01,UAT-1A,confirmed,solid UAT 1A feed
+UAT-1A,CB-UAT-1A,confirmed,solid UAT 1A feed
+CB-UAT-1A,BUS-4160-N1,confirmed,solid UAT 1A feed
+BUS-13K-01,UAT-1B,confirmed,solid UAT 1B feed
+UAT-1B,CB-UAT-1B,confirmed,solid UAT 1B feed
+CB-UAT-1B,BUS-4160-N2,confirmed,solid UAT 1B feed
+BUS-4160-N1,CB-TIE-41N,confirmed,solid normal 4.16 kV bus tie
+CB-TIE-41N,BUS-4160-N2,confirmed,solid normal 4.16 kV bus tie
+EDG-1A,CB-EDG-A,confirmed,solid EDG A feed
+CB-EDG-A,BUS-4160S1A,confirmed,solid EDG A feed
+BUS-4160S1A,CB-481A,confirmed,solid Train A safety 480 branch A1
+CB-481A,TR-480-A1,confirmed,solid Train A safety 480 branch A1
+TR-480-A1,CB-LV-A1,confirmed,solid Train A safety 480 branch A1
+CB-LV-A1,BUS-480-A1,confirmed,solid Train A safety 480 branch A1
+BUS-480-A1,MCC-SAF-A1,confirmed,solid Train A safety 480 branch A1
+MCC-SAF-A1,CB-RHR-A,confirmed,solid Train A safety load branch
+CB-RHR-A,PUMP-RHR-A,confirmed,solid Train A safety load branch
+MCC-SAF-A1,CB-SI-A,confirmed,solid Train A safety load branch
+CB-SI-A,PUMP-SI-A,confirmed,solid Train A safety load branch
+MCC-SAF-A1,CB-CCW-A,confirmed,solid Train A safety load branch
+CB-CCW-A,PUMP-CCW-A,confirmed,solid Train A safety load branch
+BUS-4160S1A,CB-482A,confirmed,solid Train A safety 480 branch A2
+CB-482A,TR-480-A2,confirmed,solid Train A safety 480 branch A2
+TR-480-A2,CB-LV-A2,confirmed,solid Train A safety 480 branch A2
+CB-LV-A2,BUS-480-A2,confirmed,solid Train A safety 480 branch A2
+BUS-480-A2,MCC-SAF-A2,confirmed,solid Train A safety 480 branch A2
+MCC-SAF-A2,CB-CVC-A,confirmed,solid Train A safety load branch
+CB-CVC-A,PUMP-CVC-A,confirmed,solid Train A safety load branch
+MCC-SAF-A2,CB-CRF-A,confirmed,solid Train A safety load branch
+CB-CRF-A,FAN-CR-A,confirmed,solid Train A safety load branch
+MCC-SAF-A2,CB-COMP-A,confirmed,solid Train A safety load branch
+CB-COMP-A,COMP-AIR-A,confirmed,solid Train A safety load branch
+MCC-SAF-A2,PN-MOV-A,confirmed,solid Train A MOV panel feed
+PN-MOV-A,FU-8810A,confirmed,solid Train A MOV fused branch
+FU-8810A,MOV-8810A,confirmed,solid Train A MOV fused branch
+PN-MOV-A,FU-HV302A,confirmed,solid Train A MOV fused branch
+FU-HV302A,VLV-HV-302A,confirmed,solid Train A MOV fused branch
+PN-MOV-A,FU-RCICA,confirmed,solid Train A MOV fused branch
+FU-RCICA,MOV-RCIC-A,confirmed,solid Train A MOV fused branch
+PN-MOV-A,FU-SWA,confirmed,solid Train A MOV fused branch
+FU-SWA,MOV-SW-A,confirmed,solid Train A MOV fused branch
+EDG-1B,CB-EDG-B,confirmed,solid EDG B feed
+CB-EDG-B,BUS-4160S1B,confirmed,solid EDG B feed
+BUS-4160S1B,CB-481B,confirmed,solid Train B safety 480 branch B1
+CB-481B,TR-480-B1,confirmed,solid Train B safety 480 branch B1
+TR-480-B1,CB-LV-B1,confirmed,solid Train B safety 480 branch B1
+CB-LV-B1,BUS-480-B1,confirmed,solid Train B safety 480 branch B1
+BUS-480-B1,MCC-SAF-B1,confirmed,solid Train B safety 480 branch B1
+MCC-SAF-B1,CB-RHR-B,confirmed,solid Train B safety load branch
+CB-RHR-B,PUMP-RHR-B,confirmed,solid Train B safety load branch
+MCC-SAF-B1,CB-SI-B,confirmed,solid Train B safety load branch
+CB-SI-B,PUMP-SI-B,confirmed,solid Train B safety load branch
+MCC-SAF-B1,CB-CCW-B,confirmed,solid Train B safety load branch
+CB-CCW-B,PUMP-CCW-B,confirmed,solid Train B safety load branch
+BUS-4160S1B,CB-482B,confirmed,solid Train B safety 480 branch B2
+CB-482B,TR-480-B2,confirmed,solid Train B safety 480 branch B2
+TR-480-B2,CB-LV-B2,confirmed,solid Train B safety 480 branch B2
+CB-LV-B2,BUS-480-B2,confirmed,solid Train B safety 480 branch B2
+BUS-480-B2,MCC-SAF-B2,confirmed,solid Train B safety 480 branch B2
+MCC-SAF-B2,CB-CVC-B,confirmed,solid Train B safety load branch
+CB-CVC-B,PUMP-CVC-B,confirmed,solid Train B safety load branch
+MCC-SAF-B2,CB-CRF-B,confirmed,solid Train B safety load branch
+CB-CRF-B,FAN-CR-B,confirmed,solid Train B safety load branch
+MCC-SAF-B2,CB-COMP-B,confirmed,solid Train B safety load branch
+CB-COMP-B,COMP-AIR-B,confirmed,solid Train B safety load branch
+MCC-SAF-B2,PN-MOV-B,confirmed,solid Train B MOV panel feed
+PN-MOV-B,FU-8810B,confirmed,solid Train B MOV fused branch
+FU-8810B,MOV-8810B,confirmed,solid Train B MOV fused branch
+PN-MOV-B,FU-HV302B,confirmed,solid Train B MOV fused branch
+FU-HV302B,VLV-HV-302B,confirmed,solid Train B MOV fused branch
+PN-MOV-B,FU-RCICB,confirmed,solid Train B MOV fused branch
+FU-RCICB,MOV-RCIC-B,confirmed,solid Train B MOV fused branch
+PN-MOV-B,FU-SWB,confirmed,solid Train B MOV fused branch
+FU-SWB,MOV-SW-B,confirmed,solid Train B MOV fused branch
+BUS-4160-N1,CB-4160-N1A,confirmed,solid normal 480 N1A branch
+CB-4160-N1A,TR-480-N1A,confirmed,solid normal 480 N1A branch
+TR-480-N1A,CB-480-N1A,confirmed,solid normal 480 N1A branch
+CB-480-N1A,BUS-480-N1A,confirmed,solid normal 480 N1A branch
+BUS-480-N1A,MCC-NORM-1A,confirmed,solid normal 480 N1A branch
+MCC-NORM-1A,PN-480-N1A,confirmed,solid normal 480 N1A branch
+PN-480-N1A,CB-CWP-1A,confirmed,solid normal 480 load branch
+CB-CWP-1A,PUMP-CWP-1A,confirmed,solid normal 480 load branch
+PN-480-N1A,CB-HEAT-1A,confirmed,solid normal 480 load branch
+CB-HEAT-1A,HTR-1A,confirmed,solid normal 480 load branch
+PN-480-N1A,CB-AHU-1A,confirmed,solid normal 480 load branch
+CB-AHU-1A,FAN-AHU-1A,confirmed,solid normal 480 load branch
+BUS-4160-N1,CB-4160-N1B,confirmed,solid normal 480 N1B branch
+CB-4160-N1B,TR-480-N1B,confirmed,solid normal 480 N1B branch
+TR-480-N1B,CB-480-N1B,confirmed,solid normal 480 N1B branch
+CB-480-N1B,BUS-480-N1B,confirmed,solid normal 480 N1B branch
+BUS-480-N1B,MCC-NORM-1B,confirmed,solid normal 480 N1B branch
+MCC-NORM-1B,PN-480-N1B,confirmed,solid normal 480 N1B branch
+PN-480-N1B,CB-CWP-1B,confirmed,solid normal 480 load branch
+CB-CWP-1B,PUMP-CWP-1B,confirmed,solid normal 480 load branch
+PN-480-N1B,CB-SUMP-1B,confirmed,solid normal 480 load branch
+CB-SUMP-1B,PUMP-SUMP-1B,confirmed,solid normal 480 load branch
+PN-480-N1B,CB-LTG-1B,confirmed,solid normal 480 load branch
+CB-LTG-1B,PN-LTG-1B,confirmed,solid normal 480 load branch
+BUS-4160-N2,CB-4160-N2A,confirmed,solid normal 480 N2A branch
+CB-4160-N2A,TR-480-N2A,confirmed,solid normal 480 N2A branch
+TR-480-N2A,CB-480-N2A,confirmed,solid normal 480 N2A branch
+CB-480-N2A,BUS-480-N2A,confirmed,solid normal 480 N2A branch
+BUS-480-N2A,MCC-NORM-2A,confirmed,solid normal 480 N2A branch
+MCC-NORM-2A,PN-480-N2A,confirmed,solid normal 480 N2A branch
+PN-480-N2A,CB-CWP-2A,confirmed,solid normal 480 load branch
+CB-CWP-2A,PUMP-CWP-2A,confirmed,solid normal 480 load branch
+PN-480-N2A,CB-VAC-2A,confirmed,solid normal 480 load branch
+CB-VAC-2A,PUMP-VAC-2A,confirmed,solid normal 480 load branch
+PN-480-N2A,CB-AHU-2A,confirmed,solid normal 480 load branch
+CB-AHU-2A,FAN-AHU-2A,confirmed,solid normal 480 load branch
+BUS-4160-N2,CB-4160-N2B,confirmed,solid normal 480 N2B branch
+CB-4160-N2B,TR-480-N2B,confirmed,solid normal 480 N2B branch
+TR-480-N2B,CB-480-N2B,confirmed,solid normal 480 N2B branch
+CB-480-N2B,BUS-480-N2B,confirmed,solid normal 480 N2B branch
+BUS-480-N2B,MCC-NORM-2B,confirmed,solid normal 480 N2B branch
+MCC-NORM-2B,PN-480-N2B,confirmed,solid normal 480 N2B branch
+PN-480-N2B,CB-CWP-2B,confirmed,solid normal 480 load branch
+CB-CWP-2B,PUMP-CWP-2B,confirmed,solid normal 480 load branch
+PN-480-N2B,CB-OIL-2B,confirmed,solid normal 480 load branch
+CB-OIL-2B,PUMP-OIL-2B,confirmed,solid normal 480 load branch
+PN-480-N2B,CB-LTG-2B,confirmed,solid normal 480 load branch
+CB-LTG-2B,PN-LTG-2B,confirmed,solid normal 480 load branch
+MTR-480-N1,JB-NORM-A,confirmed,dashed normal RTD/control chain
+JB-NORM-A,RTD-PNL-A,confirmed,dashed normal RTD/control chain
+RTD-PNL-A,TB-SEQ-A,confirmed,dashed normal RTD/control chain
+TB-SEQ-A,TDR-SEQ-A,confirmed,dashed normal RTD/control chain
+MTR-480-N2,JB-NORM-B,confirmed,dashed normal RTD/control chain
+JB-NORM-B,RTD-PNL-B,confirmed,dashed normal RTD/control chain
+RTD-PNL-B,TB-SEQ-B,confirmed,dashed normal RTD/control chain
+TB-SEQ-B,TDR-SEQ-B,confirmed,dashed normal RTD/control chain
+BAT-125A,BUS-125DC-A,confirmed,solid battery feed to DC bus
+CHG-125A,BUS-125DC-A,confirmed,solid charger feed to DC bus
+BUS-125DC-A,GND-A,confirmed,ground symbol tied to DC bus
+BUS-125DC-A,PN-125A,confirmed,solid DC panel feed
+BUS-125DC-A,INV-120A,confirmed,solid inverter and 120 VAC panel feed
+INV-120A,BUS-120AC-A,confirmed,solid inverter and 120 VAC panel feed
+BUS-120AC-A,PN-120A,confirmed,solid inverter and 120 VAC panel feed
+BAT-125B,BUS-125DC-B,confirmed,solid battery feed to DC bus
+CHG-125B,BUS-125DC-B,confirmed,solid charger feed to DC bus
+BUS-125DC-B,GND-B,confirmed,ground symbol tied to DC bus
+BUS-125DC-B,PN-125B,confirmed,solid DC panel feed
+BUS-125DC-B,INV-120B,confirmed,solid inverter and 120 VAC panel feed
+INV-120B,BUS-120AC-B,confirmed,solid inverter and 120 VAC panel feed
+BUS-120AC-B,PN-120B,confirmed,solid inverter and 120 VAC panel feed
+BUS-4160S1A,CT-41A,confirmed,dashed A-side CT relay path
+CT-41A,RELAY-50/51A,confirmed,dashed A-side CT relay path
+BUS-4160S1A,PT-41A,confirmed,dashed A-side PT relay path
+PT-41A,RELAY-50/51A,confirmed,dashed A-side PT relay path
+RELAY-50/51A,RELAY-86A,confirmed,dashed A-side protection relay path
+BUS-4160S1B,CT-41B,confirmed,dashed B-side CT relay path
+CT-41B,RELAY-27B,confirmed,dashed B-side CT relay path
+BUS-4160S1B,PT-41B,confirmed,dashed B-side PT relay path
+PT-41B,RELAY-27B,confirmed,dashed B-side PT relay path
+RELAY-27B,RELAY-86B,confirmed,dashed B-side protection relay path
+RELAY-86A,CB-EDG-A,uncertain_included,A-side lockout trip path visible but endpoint is not isolated
+RELAY-86A,CB-482A,uncertain_included,A-side lockout trip path visible but endpoint is not isolated
+RELAY-86A,CB-TIE-41N,uncertain_included,"possible tie trip path, not endpoint-clean"
+RELAY-86B,CB-EDG-B,uncertain_included,B-side lockout trip path visible but endpoint is not isolated
+RELAY-86B,CB-481B,uncertain_included,B-side lockout trip path visible but endpoint is not isolated
+RELAY-86B,CB-482B,uncertain_included,B-side lockout trip path visible but endpoint is not isolated
+FAN-CR-A,PN-MOV-A,uncertain_included,possible solid continuation near fan/MOV-panel geometry
+FAN-CR-B,PN-MOV-B,uncertain_included,possible solid continuation near fan/MOV-panel geometry
+PUMP-SUMP-1B,MTR-480-N1,uncertain_included,dashed source path to normal RTD/control meter
+FAN-AHU-2A,MTR-480-N2,uncertain_included,dashed source path to normal RTD/control meter
+PN-125A,JB-1A,uncertain_included,dashed Train A DC panel to junction box
+PN-125A,JB-2A,uncertain_included,dashed Train A DC panel to junction box
+PN-125B,JB-1B,uncertain_included,dashed Train B DC panel to junction box
+PN-125B,JB-2B,uncertain_included,dashed Train B DC panel to junction box
+PN-120A,PLC-ESF-A,uncertain_included,dashed Train A AC/control panel to PLC
+PN-120B,PLC-ESF-B,uncertain_included,dashed Train B AC/control panel to PLC
+PLC-ESF-A,RELAY-K1A,uncertain_included,dashed Train A PLC relay path
+PLC-ESF-A,RELAY-K2A,uncertain_included,dashed Train A PLC relay path
+PLC-ESF-A,ANN-ESF-A,uncertain_included,dashed Train A PLC annunciator path
+PLC-ESF-B,RELAY-K1B,uncertain_included,dashed Train B PLC relay path
+PLC-ESF-B,RELAY-K2B,uncertain_included,dashed Train B PLC relay path
+PLC-ESF-B,ANN-ESF-B,uncertain_included,dashed Train B PLC annunciator path

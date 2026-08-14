@@ -1,0 +1,42 @@
+action,stable_node_id,original_label,proposed_label,node_kind,evidence,confidence,notes
+addition,,,BUS-4KV-A,power_bus,crop_raw_top_power_sources_bus.png label BUS-4KV-A 4.16 kV SA,high,named horizontal 4.16 kV Train A bus
+addition,,,BUS-4KV-B,power_bus,crop_raw_top_power_sources_bus.png label BUS-4KV-B 4.16 kV SB,high,named horizontal 4.16 kV Train B bus
+addition,,,BUS-480-A,power_bus,crop_raw_left_4160_480_detail.png label BUS-480-A 480 V LC A,high,named 480 V load-center bus
+addition,,,BUS-480-B,power_bus,crop_raw_right_4160_480_detail.png label BUS-480-B 480 V LC B,high,named 480 V load-center bus
+addition,,,BUS-480-C,power_bus,crop_raw_left_4160_480_detail.png label BUS-480-C 480 V LC C,high,named 480 V load-center bus
+addition,,,BUS-480-D,power_bus,crop_raw_right_4160_480_detail.png label BUS-480-D 480 V LC D,high,named 480 V load-center bus
+addition,,,DC-BUS-A,dc_power_bus,crop_raw_dc_inverter_center.png label DC-BUS-A 125 VDC BUS A,high,named 125 VDC bus
+addition,,,DC-BUS-B,dc_power_bus,crop_raw_dc_inverter_center.png label DC-BUS-B 125 VDC BUS B,high,named 125 VDC bus
+addition,,,BUS-120VAC-ESF,ac_instrument_bus,crop_raw_bottom_rps_full.png label BUS-120VAC-ESF 120 VAC ESF INSTR BUS,high,named 120 VAC ESF instrument bus
+addition,,,TRAIN-A-INTERLOCK-NET,logical_interlock_net,crop_raw_top_power_sources_bus.png dash-dot Train A interlock routes,medium,logical node for visually bundled Train A interlock wiring
+addition,,,TRAIN-B-INTERLOCK-NET,logical_interlock_net,crop_raw_top_power_sources_bus.png dash-dot Train B interlock routes,medium,logical node for visually bundled Train B interlock wiring
+addition,,,RPS-A-CONTROL-NET,logical_control_net,crop_raw_bottom_rps_full.png dashed Train A RPS control bundle,medium,logical node for dense dashed RPS A control wiring
+addition,,,RPS-B-CONTROL-NET,logical_control_net,crop_raw_bottom_rps_full.png dashed Train B RPS control bundle,medium,logical node for dense dashed RPS B control wiring
+addition,,,RPS-A-SIGNAL-NET,logical_signal_net,crop_raw_bottom_rps_full.png dotted Train A signal bundle,medium,logical node for dense dotted RPS A and annunciation wiring
+addition,,,RPS-B-SIGNAL-NET,logical_signal_net,crop_raw_bottom_rps_full.png dotted Train B signal bundle,medium,logical node for dense dotted RPS B and annunciation wiring
+addition,,,RPS-A-INTERLOCK-NET,logical_interlock_net,crop_raw_bottom_rps_full.png dash-dot Train A lower interlock bundle,medium,logical node for lower RPS A interlock wiring
+addition,,,RPS-B-INTERLOCK-NET,logical_interlock_net,crop_raw_bottom_rps_full.png dash-dot Train B lower interlock bundle,medium,logical node for lower RPS B interlock wiring
+correction,DET-COMP-0052,MS-F882,MS-F002,motor_starter,contrast_crop_raw_left_mcc1_loads.png under CB-F002 reads MS-F002,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0053,MS-F885,MS-F005,motor_starter,contrast_crop_raw_left_mcc1_loads.png under CB-F005 reads MS-F005,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0054,MS-F887,MS-F007,motor_starter,contrast_crop_raw_left_mcc1_loads.png under CB-F007 reads MS-F007,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0055,MS-F816,MS-F016,motor_starter,contrast_crop_raw_right_mcc1_loads.png under CB-F016 reads MS-F016,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0056,MS-F817,MS-F017,motor_starter,contrast_crop_raw_right_mcc1_loads.png under CB-F017 reads MS-F017,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0057,MS-F828,MS-F020,motor_starter,contrast_crop_raw_right_mcc1_loads.png under CB-F020 reads MS-F020,high,corrects misread feeder number
+correction,DET-COMP-0058,MS-F822,MS-F022,motor_starter,contrast_crop_raw_right_mcc1_loads.png under CB-F022 reads MS-F022,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0059,FU-F881,FU-F001,fuse,contrast_crop_raw_left_mcc1_loads.png under CB-F001 reads FU-F001,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0060,FU-F883,FU-F003,fuse,contrast_crop_raw_left_mcc1_loads.png under CB-F003 reads FU-F003,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0061,FU-F886,FU-F006,fuse,contrast_crop_raw_left_mcc1_loads.png under CB-F006 reads FU-F006,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0062,FU-F818,FU-F018,fuse,contrast_crop_raw_right_mcc1_loads.png under CB-F018 reads FU-F018,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0063,FU-F821,FU-F021,fuse,contrast_crop_raw_right_mcc1_loads.png under CB-F021 reads FU-F021,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0064,DS-F084,DS-F004,disconnect_switch,contrast_crop_raw_left_mcc1_loads.png under CB-F004 reads DS-F004,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0067,DS-F23,DS-F023,disconnect_switch,contrast_crop_raw_right_mcc1_loads.png under CB-F023 reads DS-F23 with pattern suggesting DS-F023,medium,normalized leading zero is plausible but small text is tight
+correction,DET-COMP-0099,MS-F889,MS-F009,motor_starter,contrast_crop_raw_left_mcc2_loads.png under CB-F009 reads MS-F009,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0100,MS-F818,MS-F010,motor_starter,contrast_crop_raw_left_mcc2_loads.png under CB-F010 reads MS-F010,high,corrects misread feeder number
+correction,DET-COMP-0101,MS-F814,MS-F014,motor_starter,contrast_crop_raw_left_mcc2_loads.png under CB-F014 reads MS-F014,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0102,MS-F824,MS-F024,motor_starter,contrast_crop_raw_right_mcc2_loads.png under CB-F024 reads MS-F024,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0103,MS-F825,MS-F025,motor_starter,contrast_crop_raw_right_mcc2_loads.png under CB-F025 reads MS-F025,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0104,MS-F829,MS-F029,motor_starter,contrast_crop_raw_right_mcc2_loads.png under CB-F029 reads MS-F029,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0105,FU-F812,FU-F012,fuse,contrast_crop_raw_left_mcc2_loads.png under CB-F012 reads FU-F012,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0106,FU-F813,FU-F013,fuse,contrast_crop_raw_left_mcc2_loads.png under CB-F013 reads FU-F013,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0107,FU-F827,FU-F027,fuse,contrast_crop_raw_right_mcc2_loads.png under CB-F027 reads FU-F027,high,corrects 8-to-0 OCR confusion
+correction,DET-COMP-0108,FU-F828,FU-F028,fuse,contrast_crop_raw_right_mcc2_loads.png under CB-F028 reads FU-F028,high,corrects 8-to-0 OCR confusion

@@ -1,0 +1,17 @@
+Connectivity matrix validation summary
+Document: 4
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\4\synthetic_npp_120_component_connectivity_matrix.csv
+GT normalized nodes: 120; GT normalized edges: 124
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from round_01_jennifer_connectivity_matrix.csv with Precision=1.000000, Recall=0.991935, F1=0.995951
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=123, FP=0, FN=1, Precision=1.000000, Recall=0.991935, F1=0.995951
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+No extra/non-GT extracted nodes were attached to false-positive edges in the final edge set.
+Missing GT nodes examples: none.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-negative edge examples among GT-known nodes: TB-ESF-A -- TB-ESF-B.
+
+What-if node pruning insight: no non-GT intermediate nodes were available to prune; the remaining drop is mainly connectivity/edge discovery or missing direct GT edges.

@@ -1,0 +1,127 @@
+source,target,confidence,line_type,evidence
+SRC-345KV,BUS-SWY-345KV,HIGH,power,raw__top_sources_full thick switchyard bus begins at source circle
+BUS-SWY-345KV,SAT-1,HIGH,power,raw__top_right_source vertical tap from switchyard bus lands on SAT-1
+SAT-1,CB-SAT,HIGH,power,raw__top_right_source SAT-1 output drops to CB-SAT
+CB-SAT,BUS-4160-B,HIGH,power,raw__train_b_upper_4160 CB-SAT lower conductor lands on BUS-4160-B
+GEN-01,UAT-1,HIGH,power,raw__top_left_source solid generator feeder terminates at UAT-1
+UAT-1,CB-UAT,HIGH,power,raw__top_left_source UAT-1 solid feeder routes down to CB-UAT
+CB-UAT,BUS-4160-A,HIGH,power,raw__train_a_upper_4160 CB-UAT lower conductor lands at BUS-4160-A
+BUS-4160-A,CB-TIE-AB,MEDIUM,power,raw__train_a_upper_4160 horizontal tie feeder leaves A bus toward CB-TIE-AB
+CB-TIE-AB,BUS-4160-B,MEDIUM,power,raw__top_sources_full tie breaker sits on the solid feeder spanning toward division B
+DG-1A,CB-DGA,HIGH,power,raw__train_a_upper_4160 diesel generator circle feeds CB-DGA
+CB-DGA,BUS-4160-A,HIGH,power,raw__train_a_upper_4160 CB-DGA output steps into the 4160 A bus
+BUS-4160-A,CB-A01,HIGH,power,raw__left_full_train 4160 A bus has solid tap into CB-A01
+CB-A01,TR-480-A1,HIGH,power,raw__left_full_train CB-A01 solid feeder terminates at TR-480-A1
+BUS-4160-A,CB-A02,HIGH,power,raw__left_full_train 4160 A bus has solid tap into CB-A02
+CB-A02,TR-480-A2,HIGH,power,raw__left_full_train CB-A02 solid feeder terminates at TR-480-A2
+BUS-4160-A,CB-A03,HIGH,power,raw__left_full_train 4160 A bus has solid tap into CB-A03
+CB-A03,PUMP-RHR-A,HIGH,power,raw__left_full_train CB-A03 feeder terminates at PUMP-RHR-A
+BUS-4160-A,CB-A04,HIGH,power,raw__left_full_train 4160 A bus has solid tap into CB-A04
+CB-A04,PUMP-CS-A,HIGH,power,raw__left_full_train CB-A04 feeder terminates at PUMP-CS-A
+BUS-4160-A,CB-A05,HIGH,power,raw__left_full_train 4160 A bus has solid tap into CB-A05
+CB-A05,PUMP-AFW-A,HIGH,power,raw__left_full_train CB-A05 feeder terminates at PUMP-AFW-A
+BUS-4160-A,CB-A06,HIGH,power,raw__left_full_train 4160 A bus has solid tap into CB-A06
+CB-A06,TR-UPS-A,HIGH,power,raw__left_full_train CB-A06 feeder terminates at TR-UPS-A
+BUS-4160-A,CB-A07,HIGH,power,raw__left_full_train 4160 A bus has solid tap into CB-A07
+CB-A07,CHLR-A,HIGH,power,raw__left_full_train CB-A07 feeder terminates at CHLR-A
+BUS-4160-A,CB-A08,HIGH,power,raw__left_full_train 4160 A bus has solid tap into CB-A08
+CB-A08,FAN-CR-A,HIGH,power,raw__left_full_train CB-A08 feeder terminates at FAN-CR-A
+BUS-4160-A,CB-A09,HIGH,power,raw__left_full_train 4160 A bus has solid tap into CB-A09
+CB-A09,LC-FEEDERS-A,HIGH,power,raw__left_full_train CB-A09 solid feeder terminates at LC-FEEDERS-A
+TR-480-A1,LC-FEEDERS-A,MEDIUM,power,raw__left_full_train transformer secondary conductor continues into the LC feeder backbone
+TR-480-A2,LC-FEEDERS-A,MEDIUM,power,raw__left_full_train second transformer secondary conductor continues into the LC feeder backbone
+TB-SWGR-A,RLY-27A,HIGH,control,raw__train_a_upper_4160 dashed lead from TB-SWGR-A lands at RLY-27A
+TB-SWGR-A,RLY-50A,HIGH,control,raw__train_a_upper_4160 dashed lead from TB-SWGR-A lands at RLY-50A
+TB-SWGR-A,RLY-86A,HIGH,control,raw__train_a_upper_4160 dashed lead from TB-SWGR-A lands at RLY-86A
+BUS-4160-A,PT-4160-A,MEDIUM,signal,raw__left_full_train PT-4160-A sits on a visible instrument tap from the 4160 area
+BUS-4160-A,CT-4160-A,MEDIUM,signal,raw__left_full_train CT-4160-A sits on a visible instrument tap from the 4160 area
+PT-4160-A,RLY-27A,MEDIUM,signal,raw__train_a_controls_left dotted PT signal path returns toward the RLY-27A relay stack
+CT-4160-A,RLY-50A,MEDIUM,signal,raw__train_a_controls_left dotted CT signal path returns toward RLY-50A
+CT-4160-A,PNL-RPS-A,HIGH,signal,raw__train_a_controls_left CT-4160-A solid lead lands into PNL-RPS-A bay
+CT-4160-A,FUSE-A01,MEDIUM,signal,raw__train_a_controls_left CT branch continues down toward FUSE-A01 enclosure
+PNL-RPS-A,TB-LV-A,MEDIUM,control,raw__train_a_controls_left dashed panel cabling drops toward TB-LV-A
+PNL-ESFAS-A,TB-LV-A,HIGH,control,raw__train_a_controls_left control lead runs from PNL-ESFAS-A to TB-LV-A
+PNL-ESFAS-A,FUSE-A02,HIGH,control,raw__train_a_controls_left solid output from PNL-ESFAS-A lands at FUSE-A02
+FUSE-A02,DS-A01,HIGH,control,raw__train_a_lc_feeders FUSE-A02 output conductor runs to the DS-A01 path
+LC-FEEDERS-A,LC-101A,HIGH,power,raw__train_a_lc_feeders vertical output from LC-FEEDERS-A lands at LC-101A
+LC-FEEDERS-A,LC-102A,HIGH,power,raw__train_a_lc_feeders vertical output from LC-FEEDERS-A lands at LC-102A
+LC-101A,DS-A01,HIGH,power,raw__train_a_lc_feeders LC-101A branch routes to DS-A01
+DS-A01,MCC-101A,HIGH,power,raw__train_a_lc_feeders DS-A01 lower conductor drops to MCC-101A
+LC-102A,DS-A02,HIGH,power,raw__train_a_lc_feeders LC-102A branch routes to DS-A02
+DS-A02,MCC-102A,HIGH,power,raw__train_a_lc_feeders DS-A02 lower conductor drops to MCC-102A
+LC-102A,MCC-103A,HIGH,power,raw__train_a_lc_feeders LC-102A vertical conductor continues directly to MCC-103A
+MCC-101A,MOV-101A,HIGH,power,raw__train_a_low_loads MCC-101A drops a solid branch to MOV-101A
+MCC-101A,MOV-102A,HIGH,power,raw__train_a_low_loads MCC-101A drops a solid branch to MOV-102A
+MCC-101A,JB-101A,MEDIUM,control,raw__train_a_low_loads dashed control branch leaves MCC-101A toward JB-101A
+JB-101A,AOV-101A,HIGH,control,raw__train_a_low_loads dashed control line exits JB-101A and terminates at AOV-101A
+MCC-102A,PUMP-CCW-A,HIGH,power,raw__train_a_low_loads MCC-102A solid branch terminates at PUMP-CCW-A
+MCC-102A,MCC-103A,MEDIUM,power,raw__train_a_low_loads low-load solid bus links the MCC-102A and MCC-103A branches
+MCC-103A,FAN-AB-A,HIGH,power,raw__train_a_low_loads MCC-103A solid branch terminates at FAN-AB-A
+FAN-AB-A,HTR-TRACE-A,HIGH,power,raw__train_a_low_loads vertical branch from FAN-AB-A drops into HTR-TRACE-A
+RECT-1A,BCHG-1A,HIGH,power,raw__train_a_dc_ups RECT-1A output line enters BCHG-1A
+BCHG-1A,BAT-1A,HIGH,power,raw__train_a_dc_ups BCHG-1A solid output enters BAT-1A
+BAT-1A,BUS-DC-A,HIGH,power,raw__train_a_dc_ups BAT-1A connects to thick BUS-DC-A
+BUS-DC-A,INV-1A,HIGH,power,raw__train_a_dc_ups BUS-DC-A feeds INV-1A
+INV-1A,BUS-UPS-A,HIGH,power,raw__train_a_dc_ups INV-1A output enters BUS-UPS-A
+BUS-UPS-A,PNL-UPS-A,HIGH,power,raw__train_a_dc_ups BUS-UPS-A terminates at PNL-UPS-A
+PNL-UPS-A,HTR-TRACE-A,MEDIUM,control,raw__left_full_train vertical dashed control route runs between PNL-UPS-A and HTR-TRACE-A
+DG-1B,CB-DGB,HIGH,power,raw__train_b_upper_4160 diesel generator circle feeds CB-DGB
+CB-DGB,BUS-4160-B,HIGH,power,raw__train_b_upper_4160 CB-DGB output steps into the 4160 B bus
+BUS-4160-B,CB-B01,HIGH,power,raw__right_full_train 4160 B bus has solid tap into CB-B01
+CB-B01,TR-480-B1,HIGH,power,raw__right_full_train CB-B01 solid feeder terminates at TR-480-B1
+BUS-4160-B,CB-B02,HIGH,power,raw__right_full_train 4160 B bus has solid tap into CB-B02
+CB-B02,TR-480-B2,HIGH,power,raw__right_full_train CB-B02 solid feeder terminates at TR-480-B2
+BUS-4160-B,CB-B03,HIGH,power,raw__right_full_train 4160 B bus has solid tap into CB-B03
+CB-B03,PUMP-RHR-B,HIGH,power,raw__right_full_train CB-B03 feeder terminates at PUMP-RHR-B
+BUS-4160-B,CB-B04,HIGH,power,raw__right_full_train 4160 B bus has solid tap into CB-B04
+CB-B04,PUMP-CS-B,HIGH,power,raw__right_full_train CB-B04 feeder terminates at PUMP-CS-B
+BUS-4160-B,CB-B05,HIGH,power,raw__right_full_train 4160 B bus has solid tap into CB-B05
+CB-B05,PUMP-AFW-B,HIGH,power,raw__right_full_train CB-B05 feeder terminates at PUMP-AFW-B
+BUS-4160-B,CB-B06,HIGH,power,raw__right_full_train 4160 B bus has solid tap into CB-B06
+CB-B06,TR-UPS-B,HIGH,power,raw__right_full_train CB-B06 feeder terminates at TR-UPS-B
+BUS-4160-B,CB-B07,HIGH,power,raw__right_full_train 4160 B bus has solid tap into CB-B07
+CB-B07,CHLR-B,HIGH,power,raw__right_full_train CB-B07 feeder terminates at CHLR-B
+BUS-4160-B,CB-B08,HIGH,power,raw__right_full_train 4160 B bus has solid tap into CB-B08
+CB-B08,FAN-CR-B,HIGH,power,raw__right_full_train CB-B08 feeder terminates at FAN-CR-B
+BUS-4160-B,CB-B09,HIGH,power,raw__right_full_train 4160 B bus has solid tap into CB-B09
+CB-B09,LC-FEEDERS-B,HIGH,power,raw__right_full_train CB-B09 solid feeder terminates at LC-FEEDERS-B
+TR-480-B1,LC-FEEDERS-B,MEDIUM,power,raw__right_full_train transformer secondary conductor continues into the LC feeder backbone
+TR-480-B2,LC-FEEDERS-B,MEDIUM,power,raw__right_full_train second transformer secondary conductor continues into the LC feeder backbone
+TB-SWGR-B,RLY-27B,HIGH,control,raw__train_b_upper_4160 dashed lead from TB-SWGR-B lands at RLY-27B
+TB-SWGR-B,RLY-50B,HIGH,control,raw__train_b_upper_4160 dashed lead from TB-SWGR-B lands at RLY-50B
+TB-SWGR-B,RLY-86B,HIGH,control,raw__train_b_upper_4160 dashed lead from TB-SWGR-B lands at RLY-86B
+BUS-4160-B,PT-4160-B,MEDIUM,signal,raw__right_full_train PT-4160-B sits on a visible instrument tap from the 4160 area
+BUS-4160-B,CT-4160-B,MEDIUM,signal,raw__right_full_train CT-4160-B sits on a visible instrument tap from the 4160 area
+PT-4160-B,RLY-27B,MEDIUM,signal,raw__train_b_controls_left dotted PT signal path returns toward the RLY-27B relay stack
+CT-4160-B,RLY-50B,MEDIUM,signal,raw__train_b_controls_left dotted CT signal path returns toward RLY-50B
+CT-4160-B,PNL-RPS-B,HIGH,signal,raw__train_b_controls_left CT-4160-B solid lead lands into PNL-RPS-B bay
+CT-4160-B,FUSE-B01,MEDIUM,signal,raw__train_b_controls_left CT branch continues down toward FUSE-B01 enclosure
+PNL-RPS-B,TB-LV-B,MEDIUM,control,raw__train_b_controls_left dashed panel cabling drops toward TB-LV-B
+PNL-ESFAS-B,TB-LV-B,HIGH,control,raw__train_b_controls_left control lead runs from PNL-ESFAS-B to TB-LV-B
+PNL-ESFAS-B,FUSE-B02,HIGH,control,raw__train_b_controls_left solid output from PNL-ESFAS-B lands at FUSE-B02
+FUSE-B02,DS-B01,HIGH,control,raw__train_b_lc_feeders FUSE-B02 output conductor runs to the DS-B01 path
+LC-FEEDERS-B,LC-101B,HIGH,power,raw__train_b_lc_feeders vertical output from LC-FEEDERS-B lands at LC-101B
+LC-FEEDERS-B,LC-102B,HIGH,power,raw__train_b_lc_feeders vertical output from LC-FEEDERS-B lands at LC-102B
+LC-101B,DS-B01,HIGH,power,raw__train_b_lc_feeders LC-101B branch routes to DS-B01
+DS-B01,MCC-101B,HIGH,power,raw__train_b_lc_feeders DS-B01 lower conductor drops to MCC-101B
+LC-102B,DS-B02,HIGH,power,raw__train_b_lc_feeders LC-102B branch routes to DS-B02
+DS-B02,MCC-102B,HIGH,power,raw__train_b_lc_feeders DS-B02 lower conductor drops to MCC-102B
+LC-102B,MCC-103B,HIGH,power,raw__train_b_lc_feeders LC-102B vertical conductor continues directly to MCC-103B
+MCC-101B,MOV-101B,HIGH,power,raw__train_b_low_loads MCC-101B drops a solid branch to MOV-101B
+MCC-101B,MOV-102B,HIGH,power,raw__train_b_low_loads MCC-101B drops a solid branch to MOV-102B
+MCC-101B,JB-101B,MEDIUM,control,raw__train_b_low_loads dashed control branch leaves MCC-101B toward JB-101B
+JB-101B,AOV-101B,HIGH,control,raw__train_b_low_loads dashed control line exits JB-101B and terminates at AOV-101B
+MCC-102B,PUMP-CCW-B,HIGH,power,raw__train_b_low_loads MCC-102B solid branch terminates at PUMP-CCW-B
+MCC-102B,MCC-103B,MEDIUM,power,raw__train_b_low_loads low-load solid bus links the MCC-102B and MCC-103B branches
+MCC-103B,FAN-AB-B,HIGH,power,raw__train_b_low_loads MCC-103B solid branch terminates at FAN-AB-B
+FAN-AB-B,HTR-TRACE-B,HIGH,power,raw__train_b_low_loads vertical branch from FAN-AB-B drops into HTR-TRACE-B
+RECT-1B,BCHG-1B,HIGH,power,raw__train_b_dc_ups RECT-1B output line enters BCHG-1B
+BCHG-1B,BAT-1B,HIGH,power,raw__train_b_dc_ups BCHG-1B solid output enters BAT-1B
+BAT-1B,BUS-DC-B,HIGH,power,raw__train_b_dc_ups BAT-1B connects to thick BUS-DC-B
+BUS-DC-B,INV-1B,HIGH,power,raw__train_b_dc_ups BUS-DC-B feeds INV-1B
+INV-1B,BUS-UPS-B,HIGH,power,raw__train_b_dc_ups INV-1B output enters BUS-UPS-B
+BUS-UPS-B,PNL-UPS-B,HIGH,power,raw__train_b_dc_ups BUS-UPS-B terminates at PNL-UPS-B
+PNL-UPS-B,HTR-TRACE-B,MEDIUM,control,raw__right_full_train vertical dashed control route runs between PNL-UPS-B and HTR-TRACE-B
+PNL-MCR-01,JB-CONTROL,MEDIUM,control,raw__mcr_annunciator dashed control lead routes from PNL-MCR-01 toward JB-CONTROL
+PNL-ANN-01,JB-CONTROL,HIGH,signal,raw__mcr_annunciator dotted signal lead descends from PNL-ANN-01 to JB-CONTROL
+SER-01,JB-CONTROL,HIGH,signal,raw__mcr_annunciator signal lead drops from SER-01 into JB-CONTROL

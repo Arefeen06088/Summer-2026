@@ -1,0 +1,15 @@
+source,target,status,evidence
+RELAY-86A,CB-EDG-A,uncertain_excluded,dashed lockout trip route crosses the area but endpoint is ambiguous
+RELAY-86A,CB-482A,uncertain_excluded,dashed lockout trip route crosses the area but endpoint is ambiguous
+RELAY-86A,CB-TIE-41N,uncertain_excluded,possible tie trip route lacks clear named endpoint
+RELAY-86B,CB-EDG-B,uncertain_excluded,dashed lockout trip route crosses the area but endpoint is ambiguous
+RELAY-86B,CB-481B,uncertain_excluded,dashed lockout trip route crosses the area but endpoint is ambiguous
+RELAY-86B,CB-482B,uncertain_excluded,dashed lockout trip route crosses the area but endpoint is ambiguous
+FAN-CR-A,PN-MOV-A,uncertain_excluded,fan-area linework too close to promote as a separate edge
+FAN-CR-B,PN-MOV-B,uncertain_excluded,fan-area linework too close to promote as a separate edge
+CHG-125A,BAT-125A,uncertain_excluded,charger and battery separately drop to BUS-125DC-A; no direct conductor
+CHG-125B,BAT-125B,uncertain_excluded,charger and battery separately drop to BUS-125DC-B; no direct conductor
+PN-120A,ANN-ESF-A,uncertain_excluded,"clearest path is through PLC-ESF-A, not direct"
+PN-120B,ANN-ESF-B,uncertain_excluded,"clearest path is through PLC-ESF-B, not direct"
+RELAY-K1A/K2A,ANN-ESF-A,uncertain_excluded,relay-to-annunciator variants are not endpoint-clean
+RELAY-K1B/K2B,ANN-ESF-B,uncertain_excluded,relay-to-annunciator variants are not endpoint-clean

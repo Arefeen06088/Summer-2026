@@ -1,0 +1,9 @@
+document,iteration,call_id,actor,round,text_input_tokens_est,image_file_input_tokens_est,input_tokens_est,cached_input_tokens,output_tokens_low,output_tokens_expected,output_tokens_high,reasoning_tokens,total_tokens_low,total_tokens_expected,total_tokens_high,usage_object_available,notes
+10,1,main-01-resource-check-and-crop-setup,Main,orchestration,4250,0,4250,,500,1100,2200,,4113,5350,7513,False,"Directory inspection, no-GT check, crop generation, and initial orchestration. Exact Codex main usage was not exposed."
+10,1,main-02-local-visual-review-and-agent-briefing,Main,orchestration,3750,14450,18200,,1200,2600,4800,,15225,20800,28995,False,Main visual observations and Diego prompt preparation. Grouped because internal model-call boundaries are unavailable.
+10,1,diego-r1-high-recall-extraction,Diego,1,850,20655,21505,,6200,8500,11500,,22414,30005,40447,False,"High-recall node/edge extraction. Tool returned text but no usage object, cached tokens, or reasoning tokens."
+10,1,jennifer-r1-precision-review,Jennifer,2,6625,22610,29235,,800,1400,2800,,23389,30635,41605,False,Precision review of Diego R1. Output was a short six-edge delta but exact usage was not exposed.
+10,1,main-03-artifact-prep-and-local-review,Main,orchestration,5750,8160,13910,,900,1800,3500,,11908,15710,21704,False,Local review of weak spots plus artifact writer generation and validation.
+10,1,diego-r2-saturation-check,Diego,3,650,8245,8895,,150,350,900,,6887,9245,12844,False,Saturation check of Jennifer's six removals and uncertain candidates.
+10,1,jennifer-r2-final-signoff,Jennifer,4,750,5185,5935,,90,180,450,,4617,6115,8388,False,Final agree/disagree sign-off after Diego R2. Expected to be short if saturated.
+10,1,main-04-final-validation-and-response,Main,orchestration,4250,0,4250,,900,1700,3200,,4513,5950,8513,False,"Final artifact validation, token table summary, and response to user."

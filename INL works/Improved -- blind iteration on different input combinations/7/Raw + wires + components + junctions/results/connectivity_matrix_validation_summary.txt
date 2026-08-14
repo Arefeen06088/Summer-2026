@@ -1,0 +1,32 @@
+Connectivity matrix validation summary - Document 7
+Input configuration: Raw + wires + components + junctions
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\7\synthetic_npp_connectivity_matrix_clean.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_connectivity_matrix.csv): TP=123, FP=9, FN=17, Precision=0.931818, Recall=0.878571, F1=0.904412
+- Jennifer -- Round 2 (round_02_jennifer_precision_connectivity_matrix.csv): TP=123, FP=6, FN=17, Precision=0.953488, Recall=0.878571, F1=0.914498
+- Diego -- Round 3 (round_03_diego_saturation_connectivity_matrix.csv): TP=123, FP=6, FN=17, Precision=0.953488, Recall=0.878571, F1=0.914498
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=123, FP=6, FN=17, Precision=0.953488, Recall=0.878571, F1=0.914498
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- ANN-101 -- UPS-120A
+- ANN-201 -- SR-101
+- ANN-201 -- UPS-120B
+- RELAY-K101 -- RELAY-K102
+- RELAY-K101 -- SR-101
+- RELAY-K201 -- RELAY-K202
+
+False-negative edge examples:
+- BCHG-125A -- LC-480A
+- BCHG-125B -- LC-480D
+- CB-DG-A -- RELAY-K102
+- CB-DG-B -- RELAY-K202
+- CB-TIE-4 -- RELAY-K101
+- CB-TIE-4 -- RELAY-K201
+- CB-UAT-A -- RELAY-K101
+- CB-UAT-B -- RELAY-K201
+- MCC-A1 -- RELAY-K102
+- MCC-B1 -- PNL-AC-CR1

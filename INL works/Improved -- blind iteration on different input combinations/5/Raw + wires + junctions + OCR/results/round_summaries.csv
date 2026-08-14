@@ -1,0 +1,5 @@
+document,iteration,round,agent,interpretation,node_count,edge_count,delta_edges_from_previous_round,matrix_file,edge_file,notes
+5,1,01,Diego,all_visible_connections_high_recall,112,140,,round_01_diego_high_recall_matrix.csv,round_01_diego_high_recall_edges.csv,Initial high-recall graph matched 140 but kept an unsupported JB-RLY-A/JB-RLY-B bridge and CP-ESFAS-1/2 tie while missing ATS-to-rectifier feeds.
+5,1,02,Jennifer,all_visible_connections_precision_review,112,140,0,round_02_jennifer_precision_matrix.csv,round_02_jennifer_precision_edges.csv,Precision diff: add XFER-ATS-A/B to RECT-48V-A/B; remove JB-RLY-A--JB-RLY-B and CP-ESFAS-1--CP-ESFAS-2.
+5,1,03,Diego,all_visible_connections_saturated,112,140,0,round_03_diego_saturation_matrix.csv,round_03_diego_saturation_edges.csv,Diego saturation pass accepted Jennifer's correction.
+5,1,04,Jennifer,all_visible_connections_final,112,140,0,round_04_jennifer_final_matrix.csv,round_04_jennifer_final_edges.csv,Final precision close-out after Diego agreement; graph saturated.

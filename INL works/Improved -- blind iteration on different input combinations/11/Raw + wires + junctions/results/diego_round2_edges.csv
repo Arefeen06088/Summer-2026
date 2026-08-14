@@ -1,0 +1,148 @@
+source,target,confidence,line_type,evidence
+GEN-01,TR-UAT-1,high,solid,raw_full_left_power shows GEN-01 connected to TR-UAT-1 by 13.8KV-1A feeder
+TR-UAT-1,CB-UAT-1,high,solid,raw_full_left_power shows UAT1-SEC dropping from TR-UAT-1 to CB-UAT-1
+CB-UAT-1,BUS-13-8A,high,solid,CB-UAT-1 lands directly on BUS-13-8A
+TR-SUT-1,CB-SUT-1,high,solid,raw_full_left_power shows SUT1-SEC from TR-SUT-1 to CB-SUT-1
+CB-SUT-1,BUS-13-8A,high,solid,CB-SUT-1 is landed on BUS-13-8A with a filled tap
+BUS-13-8A,CB-13-TIE,high,solid,BUS-13-8A runs through labeled 13T-A conductor to CB-13-TIE
+CB-13-TIE,BUS-13-8B,high,solid,CB-13-TIE continues by 13T-B conductor to BUS-13-8B
+GEN-02,TR-UAT-2,high,solid,raw_full_right_power shows GEN-02 connected to TR-UAT-2 by 13.8KV-2A feeder
+TR-UAT-2,CB-UAT-2,high,solid,raw_full_right_power shows UAT2-SEC dropping from TR-UAT-2 to CB-UAT-2
+CB-UAT-2,BUS-13-8B,high,solid,CB-UAT-2 lands directly on BUS-13-8B
+TR-SUT-2,CB-SUT-2,high,solid,raw_full_right_power shows SUT2-SEC from TR-SUT-2 to CB-SUT-2
+CB-SUT-2,BUS-13-8B,high,solid,CB-SUT-2 is landed on BUS-13-8B with a filled tap
+BUS-13-8A,NORM-2A,high,solid,raw_train_A_upper shows NORM-2A feeder dropping from BUS-13-8A
+NORM-2A,CB-IN-A,high,solid,raw_train_A_upper shows normal feeder entering CB-IN-A
+CB-IN-A,BUS-4160-A,high,solid,raw_train_A_upper shows diagonal 52N-2A feeder landing on BUS-4160-A with filled dot
+CB-IN-A,RELAY-27A,high,dashed,raw_train_A_upper shows dashed interlock from CB-IN-A to RELAY-27A
+RELAY-27A,CB-DG-A,high,dashed,raw_train_A_upper shows dashed interlock continuing from RELAY-27A to CB-DG-A
+DG1A,CB-DG-A,high,solid,raw_train_A_upper shows DG1A connected through DG-2A conductor to CB-DG-A
+CB-DG-A,BUS-4160-A,high,solid,raw_train_A_upper shows CB-DG-A dropping to BUS-4160-A with filled dot
+BUS-4160-A,CB-4160-A1,high,solid,raw_train_A_upper shows FDR-A1 from BUS-4160-A to CB-4160-A1
+CB-4160-A1,TR-480-A1,high,solid,raw_train_A_upper shows CB-4160-A1 feeding TR-480-A1
+TR-480-A1,CB-480-A1,high,solid,raw_train_A_upper shows TR-480-A1 feeding CB-480-A1
+CB-480-A1,BUS-480-A1,high,solid,raw_train_A_lower shows CB-480-A1 landing on BUS-480-A1
+BUS-4160-A,CB-4160-A2,high,solid,raw_train_A_upper shows FDR-A2 from BUS-4160-A to CB-4160-A2
+CB-4160-A2,TR-480-A2,high,solid,raw_train_A_upper shows CB-4160-A2 feeding TR-480-A2
+TR-480-A2,CB-480-A2,high,solid,raw_train_A_upper shows TR-480-A2 feeding CB-480-A2
+CB-480-A2,BUS-480-A2,high,solid,raw_train_A_lower shows CB-480-A2 landing on BUS-480-A2
+BUS-480-A1,TIE-A12,medium,logical,raw_train_A_lower shows labeled TIE-A12 at the bus section boundary with filled dots
+TIE-A12,BUS-480-A2,medium,logical,raw_train_A_lower shows TIE-A12 spanning the two 480V bus sections without merging the buses
+BUS-480-A1,CB-MCC-A1,high,solid,raw_train_A_lower shows MCC-A1 feeder from BUS-480-A1 to CB-MCC-A1
+CB-MCC-A1,MCC-A1,high,solid,raw_train_A_lower shows CB-MCC-A1 feeding MCC-A1
+MCC-A1,PUMP-SI-A,high,solid,raw_train_A_lower shows MCC-A1 solid branch to PUMP-SI-A
+MCC-A1,PUMP-CCW-A,high,solid,raw_train_A_lower shows MCC-A1 solid branch to PUMP-CCW-A
+MCC-A1,FAN-HVAC-A,high,solid,raw_train_A_lower shows MCC-A1 solid branch to FAN-HVAC-A
+BUS-480-A2,CB-MCC-A2,high,solid,raw_train_A_lower shows MCC-A2 feeder from BUS-480-A2 to CB-MCC-A2
+CB-MCC-A2,MCC-A2,high,solid,raw_train_A_lower shows CB-MCC-A2 feeding MCC-A2
+MCC-A2,MOV-RHR-A,high,solid,raw_train_A_lower shows MCC-A2 solid branch to MOV-RHR-A
+MCC-A2,PANEL-IC-A,medium,dashed,raw_train_A_lower shows dashed control leg from MCC-A2 into PANEL-IC-A
+BUS-480-A2,RECT-125-A,high,solid,raw_train_A_lower shows 125VDC branch from BUS-480-A2 to RECT-125-A
+RECT-125-A,PANEL-IC-A,high,solid,raw_train_A_lower shows RECT-125-A feeding PANEL-IC-A
+PANEL-IC-A,DC-A125,high,solid,raw_train_A_lower shows PANEL-IC-A continuing on DC-A125 conductor
+DC-A125,GND-A,high,solid,raw_train_A_lower shows DC-A125 conductor with filled ground termination at GND-A
+BUS-13-8A,NORM-2B,high,solid,raw_train_B_upper shows NORM-2B feeder dropping from BUS-13-8A
+NORM-2B,CB-IN-B,high,solid,raw_train_B_upper shows normal feeder entering CB-IN-B
+CB-IN-B,BUS-4160-B,high,solid,raw_train_B_upper shows diagonal 52N-2B feeder landing on BUS-4160-B with filled dot
+CB-IN-B,RELAY-27B,high,dashed,raw_train_B_upper shows dashed interlock from CB-IN-B to RELAY-27B
+RELAY-27B,CB-DG-B,high,dashed,raw_train_B_upper shows dashed interlock continuing from RELAY-27B to CB-DG-B
+DG1B,CB-DG-B,high,solid,raw_train_B_upper shows DG1B connected through DG-2B conductor to CB-DG-B
+CB-DG-B,BUS-4160-B,high,solid,raw_train_B_upper shows CB-DG-B dropping to BUS-4160-B with filled dot
+BUS-4160-B,CB-4160-B1,high,solid,raw_train_B_upper shows FDR-B1 from BUS-4160-B to CB-4160-B1
+CB-4160-B1,TR-480-B1,high,solid,raw_train_B_upper shows CB-4160-B1 feeding TR-480-B1
+TR-480-B1,CB-480-B1,high,solid,raw_train_B_upper shows TR-480-B1 feeding CB-480-B1
+CB-480-B1,BUS-480-B1,high,solid,raw_train_B_lower shows CB-480-B1 landing on BUS-480-B1
+BUS-4160-B,CB-4160-B2,high,solid,raw_train_B_upper shows FDR-B2 from BUS-4160-B to CB-4160-B2
+CB-4160-B2,TR-480-B2,high,solid,raw_train_B_upper shows CB-4160-B2 feeding TR-480-B2
+TR-480-B2,CB-480-B2,high,solid,raw_train_B_upper shows TR-480-B2 feeding CB-480-B2
+CB-480-B2,BUS-480-B2,high,solid,raw_train_B_lower shows CB-480-B2 landing on BUS-480-B2
+BUS-480-B1,TIE-B12,medium,logical,raw_train_B_lower shows labeled TIE-B12 at the bus section boundary with filled dots
+TIE-B12,BUS-480-B2,medium,logical,raw_train_B_lower shows TIE-B12 spanning the two 480V bus sections without merging the buses
+BUS-480-B1,CB-MCC-B1,high,solid,raw_train_B_lower shows MCC-B1 feeder from BUS-480-B1 to CB-MCC-B1
+CB-MCC-B1,MCC-B1,high,solid,raw_train_B_lower shows CB-MCC-B1 feeding MCC-B1
+MCC-B1,PUMP-SI-B,high,solid,raw_train_B_lower shows MCC-B1 solid branch to PUMP-SI-B
+MCC-B1,PUMP-CCW-B,high,solid,raw_train_B_lower shows MCC-B1 solid branch to PUMP-CCW-B
+MCC-B1,FAN-HVAC-B,high,solid,raw_train_B_lower shows MCC-B1 solid branch to FAN-HVAC-B
+BUS-480-B2,CB-MCC-B2,high,solid,raw_train_B_lower shows MCC-B2 feeder from BUS-480-B2 to CB-MCC-B2
+CB-MCC-B2,MCC-B2,high,solid,raw_train_B_lower shows CB-MCC-B2 feeding MCC-B2
+MCC-B2,MOV-RHR-B,high,solid,raw_train_B_lower shows MCC-B2 solid branch to MOV-RHR-B
+MCC-B2,PANEL-IC-B,medium,dashed,raw_train_B_lower shows dashed control leg from MCC-B2 into PANEL-IC-B
+BUS-480-B2,RECT-125-B,high,solid,raw_train_B_lower shows 125VDC branch from BUS-480-B2 to RECT-125-B
+RECT-125-B,PANEL-IC-B,high,solid,raw_train_B_lower shows RECT-125-B feeding PANEL-IC-B
+PANEL-IC-B,DC-B125,high,solid,raw_train_B_lower shows PANEL-IC-B continuing on DC-B125 conductor
+DC-B125,GND-B,high,solid,raw_train_B_lower shows DC-B125 conductor with filled ground termination at GND-B
+BUS-13-8B,NORM-2C,high,solid,raw_train_C_upper shows NORM-2C feeder dropping from BUS-13-8B
+NORM-2C,CB-IN-C,high,solid,raw_train_C_upper shows normal feeder entering CB-IN-C
+CB-IN-C,BUS-4160-C,high,solid,raw_train_C_upper shows diagonal 52N-2C feeder landing on BUS-4160-C with filled dot
+CB-IN-C,RELAY-27C,high,dashed,raw_train_C_upper shows dashed interlock from CB-IN-C to RELAY-27C
+RELAY-27C,CB-DG-C,high,dashed,raw_train_C_upper shows dashed interlock continuing from RELAY-27C to CB-DG-C
+DG1C,CB-DG-C,high,solid,raw_train_C_upper shows DG1C connected through DG-2C conductor to CB-DG-C
+CB-DG-C,BUS-4160-C,high,solid,raw_train_C_upper shows CB-DG-C dropping to BUS-4160-C with filled dot
+BUS-4160-C,CB-4160-C1,high,solid,raw_train_C_upper shows FDR-C1 from BUS-4160-C to CB-4160-C1
+CB-4160-C1,TR-480-C1,high,solid,raw_train_C_upper shows CB-4160-C1 feeding TR-480-C1
+TR-480-C1,CB-480-C1,high,solid,raw_train_C_upper shows TR-480-C1 feeding CB-480-C1
+CB-480-C1,BUS-480-C1,high,solid,raw_train_C_lower shows CB-480-C1 landing on BUS-480-C1
+BUS-4160-C,CB-4160-C2,high,solid,raw_train_C_upper shows FDR-C2 from BUS-4160-C to CB-4160-C2
+CB-4160-C2,TR-480-C2,high,solid,raw_train_C_upper shows CB-4160-C2 feeding TR-480-C2
+TR-480-C2,CB-480-C2,high,solid,raw_train_C_upper shows TR-480-C2 feeding CB-480-C2
+CB-480-C2,BUS-480-C2,high,solid,raw_train_C_lower shows CB-480-C2 landing on BUS-480-C2
+BUS-480-C1,TIE-C12,medium,logical,raw_train_C_lower shows labeled TIE-C12 at the bus section boundary with filled dots
+TIE-C12,BUS-480-C2,medium,logical,raw_train_C_lower shows TIE-C12 spanning the two 480V bus sections without merging the buses
+BUS-480-C1,CB-MCC-C1,high,solid,raw_train_C_lower shows MCC-C1 feeder from BUS-480-C1 to CB-MCC-C1
+CB-MCC-C1,MCC-C1,high,solid,raw_train_C_lower shows CB-MCC-C1 feeding MCC-C1
+MCC-C1,PUMP-SI-C,high,solid,raw_train_C_lower shows MCC-C1 solid branch to PUMP-SI-C
+MCC-C1,PUMP-CCW-C,high,solid,raw_train_C_lower shows MCC-C1 solid branch to PUMP-CCW-C
+MCC-C1,FAN-HVAC-C,high,solid,raw_train_C_lower shows MCC-C1 solid branch to FAN-HVAC-C
+BUS-480-C2,CB-MCC-C2,high,solid,raw_train_C_lower shows MCC-C2 feeder from BUS-480-C2 to CB-MCC-C2
+CB-MCC-C2,MCC-C2,high,solid,raw_train_C_lower shows CB-MCC-C2 feeding MCC-C2
+MCC-C2,MOV-RHR-C,high,solid,raw_train_C_lower shows MCC-C2 solid branch to MOV-RHR-C
+MCC-C2,PANEL-IC-C,medium,dashed,raw_train_C_lower shows dashed control leg from MCC-C2 into PANEL-IC-C
+BUS-480-C2,RECT-125-C,high,solid,raw_train_C_lower shows 125VDC branch from BUS-480-C2 to RECT-125-C
+RECT-125-C,PANEL-IC-C,high,solid,raw_train_C_lower shows RECT-125-C feeding PANEL-IC-C
+PANEL-IC-C,DC-C125,high,solid,raw_train_C_lower shows PANEL-IC-C continuing on DC-C125 conductor
+DC-C125,GND-C,high,solid,raw_train_C_lower shows DC-C125 conductor with filled ground termination at GND-C
+BUS-13-8B,NORM-2D,high,solid,raw_train_D_upper shows NORM-2D feeder dropping from BUS-13-8B
+NORM-2D,CB-IN-D,high,solid,raw_train_D_upper shows normal feeder entering CB-IN-D
+CB-IN-D,BUS-4160-D,high,solid,raw_train_D_upper shows diagonal 52N-2D feeder landing on BUS-4160-D with filled dot
+CB-IN-D,RELAY-27D,high,dashed,raw_train_D_upper shows dashed interlock from CB-IN-D to RELAY-27D
+RELAY-27D,CB-DG-D,high,dashed,raw_train_D_upper shows dashed interlock continuing from RELAY-27D to CB-DG-D
+DG1D,CB-DG-D,high,solid,raw_train_D_upper shows DG1D connected through DG-2D conductor to CB-DG-D
+CB-DG-D,BUS-4160-D,high,solid,raw_train_D_upper shows CB-DG-D dropping to BUS-4160-D with filled dot
+BUS-4160-D,CB-4160-D1,high,solid,raw_train_D_upper shows FDR-D1 from BUS-4160-D to CB-4160-D1
+CB-4160-D1,TR-480-D1,high,solid,raw_train_D_upper shows CB-4160-D1 feeding TR-480-D1
+TR-480-D1,CB-480-D1,high,solid,raw_train_D_upper shows TR-480-D1 feeding CB-480-D1
+CB-480-D1,BUS-480-D1,high,solid,raw_train_D_lower shows CB-480-D1 landing on BUS-480-D1
+BUS-4160-D,CB-4160-D2,high,solid,raw_train_D_upper shows FDR-D2 from BUS-4160-D to CB-4160-D2
+CB-4160-D2,TR-480-D2,high,solid,raw_train_D_upper shows CB-4160-D2 feeding TR-480-D2
+TR-480-D2,CB-480-D2,high,solid,raw_train_D_upper shows TR-480-D2 feeding CB-480-D2
+CB-480-D2,BUS-480-D2,high,solid,raw_train_D_lower shows CB-480-D2 landing on BUS-480-D2
+BUS-480-D1,TIE-D12,medium,logical,raw_train_D_lower shows labeled TIE-D12 at the bus section boundary with filled dots
+TIE-D12,BUS-480-D2,medium,logical,raw_train_D_lower shows TIE-D12 spanning the two 480V bus sections without merging the buses
+BUS-480-D1,CB-MCC-D1,high,solid,raw_train_D_lower shows MCC-D1 feeder from BUS-480-D1 to CB-MCC-D1
+CB-MCC-D1,MCC-D1,high,solid,raw_train_D_lower shows CB-MCC-D1 feeding MCC-D1
+MCC-D1,PUMP-SI-D,high,solid,raw_train_D_lower shows MCC-D1 solid branch to PUMP-SI-D
+MCC-D1,PUMP-CCW-D,high,solid,raw_train_D_lower shows MCC-D1 solid branch to PUMP-CCW-D
+MCC-D1,FAN-HVAC-D,high,solid,raw_train_D_lower shows MCC-D1 solid branch to FAN-HVAC-D
+BUS-480-D2,CB-MCC-D2,high,solid,raw_train_D_lower shows MCC-D2 feeder from BUS-480-D2 to CB-MCC-D2
+CB-MCC-D2,MCC-D2,high,solid,raw_train_D_lower shows CB-MCC-D2 feeding MCC-D2
+MCC-D2,MOV-RHR-D,high,solid,raw_train_D_lower shows MCC-D2 solid branch to MOV-RHR-D
+MCC-D2,PANEL-IC-D,medium,dashed,raw_train_D_lower shows dashed control leg from MCC-D2 into PANEL-IC-D
+BUS-480-D2,RECT-125-D,high,solid,raw_train_D_lower shows 125VDC branch from BUS-480-D2 to RECT-125-D
+RECT-125-D,PANEL-IC-D,high,solid,raw_train_D_lower shows RECT-125-D feeding PANEL-IC-D
+PANEL-IC-D,DC-D125,high,solid,raw_train_D_lower shows PANEL-IC-D continuing on DC-D125 conductor
+DC-D125,GND-D,high,solid,raw_train_D_lower shows DC-D125 conductor with filled ground termination at GND-D
+BAT-125A,BUS-DC-125A,high,solid,raw_bottom_left_dc shows BAT-125A connected to BUS-DC-125A
+BUS-DC-125A,INV-UPS-A,high,solid,raw_bottom_left_dc shows BUS-DC-125A feeding INV-UPS-A at UPS-AIN
+INV-UPS-A,PANEL-RPS-A,high,solid,raw_bottom_left_dc shows INV-UPS-A output UPS-AOUT entering PANEL-RPS-A
+BUS-DC-125A,ATS-480-A,medium,mixed,raw_bottom_left_dc and raw_train_B_lower show solid DC tap continuing to ATS-480-A region
+PANEL-RPS-A,ATS-480-A,medium,mixed,raw_bottom_left_dc shows ATS-AOUT route leaving PANEL-RPS-A toward ATS-480-A
+PANEL-RPS-A,PANEL-SSPS,medium,dashed,raw_bottom_center_interlocks shows dashed interlock corridor from RPS-A side terminating at PANEL-SSPS
+BAT-125B,BUS-DC-125B,high,solid,raw_bottom_center_interlocks shows BAT-125B connected to BUS-DC-125B
+BUS-DC-125B,INV-UPS-B,high,solid,raw_bottom_right_dc shows BUS-DC-125B feeding INV-UPS-B at UPS-BIN
+INV-UPS-B,PANEL-RPS-B,high,solid,raw_bottom_right_dc shows INV-UPS-B output UPS-BOUT entering PANEL-RPS-B
+BUS-DC-125B,ATS-480-B,medium,mixed,raw_bottom_center_interlocks and raw_bottom_right_dc show DC-B125 and ATS-BOUT routing through ATS-480-B area
+PANEL-RPS-B,ATS-480-B,medium,mixed,raw_bottom_right_dc shows ATS-BOUT route returning from PANEL-RPS-B toward ATS-480-B
+PANEL-RPS-B,PANEL-SSPS,medium,dashed,raw_bottom_center_interlocks shows dashed interlock corridor from RPS-B side terminating at PANEL-SSPS
+BUS-DC-125A,DC-A125,medium,solid,raw_train_A_lower and raw_bottom_left_dc show DC-A125 routed into the 125VDC division A bus network
+BUS-DC-125B,DC-C125,medium,solid,raw_train_C_lower and raw_bottom_center_interlocks show DC-C125 routed into the 125VDC division B bus network
+BUS-DC-125B,DC-D125,medium,solid,raw_train_D_lower and raw_bottom_right_dc show DC-D125 routed into the 125VDC division B bus network

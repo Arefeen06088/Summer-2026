@@ -1,0 +1,34 @@
+[
+  {
+    "round": "round01_diego",
+    "nodes": 183,
+    "edges": 194,
+    "agent": "Diego",
+    "role": "high-recall extractor",
+    "summary": "Accepted all visually landed power, DC, ground, MCC relay, and local tie-control edges; kept DG-to-NSS and cross-side tie-control edges uncertain."
+  },
+  {
+    "round": "round01_jennifer",
+    "nodes": 183,
+    "edges": 194,
+    "agent": "Jennifer",
+    "role": "precision reviewer/refiner",
+    "summary": "Accepted Diego's edge set unchanged; confirmed uncertain DG-to-NSS and cross-side SEQ/RPS cases should not be promoted."
+  },
+  {
+    "round": "round02_diego",
+    "nodes": 183,
+    "edges": 194,
+    "agent": "Diego",
+    "role": "high-recall saturation review",
+    "summary": "Rechecked Jennifer's unchanged set and agreed the extraction was saturated."
+  },
+  {
+    "round": "round02_jennifer",
+    "nodes": 183,
+    "edges": 194,
+    "agent": "Jennifer",
+    "role": "precision final signoff",
+    "summary": "Final signoff: accepted edge set unchanged and remaining ambiguous cases excluded."
+  }
+]

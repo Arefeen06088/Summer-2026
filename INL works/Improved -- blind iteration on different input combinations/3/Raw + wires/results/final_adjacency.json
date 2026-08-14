@@ -1,0 +1,393 @@
+{
+  "GRID-1": [
+    "AUX-TR-1A"
+  ],
+  "AUX-TR-1A": [
+    "CB-101",
+    "GRID-1"
+  ],
+  "CB-101": [
+    "AUX-TR-1A"
+  ],
+  "BUS-416A": [
+    "BUS-TIE-41",
+    "CB-CHG-A",
+    "CB-DG1A",
+    "TR-480A1",
+    "TR-480A2"
+  ],
+  "EDG-1A": [
+    "CB-DG1A"
+  ],
+  "CB-DG1A": [
+    "BUS-416A",
+    "EDG-1A"
+  ],
+  "TR-480A1": [
+    "BUS-416A",
+    "CB-480A1"
+  ],
+  "CB-480A1": [
+    "MCC-480A1",
+    "TR-480A1"
+  ],
+  "MCC-480A1": [
+    "CB-480A1",
+    "FDB-A1"
+  ],
+  "TR-480A2": [
+    "BUS-416A",
+    "CB-480A2"
+  ],
+  "CB-480A2": [
+    "MCC-480A2",
+    "TR-480A2"
+  ],
+  "MCC-480A2": [
+    "CB-480A2",
+    "FDB-A2"
+  ],
+  "BUS-TIE-41": [
+    "BUS-416A",
+    "BUS-416B"
+  ],
+  "GND-1E": [],
+  "BUS-416B": [
+    "BUS-TIE-41",
+    "CB-CHG-B",
+    "CB-DG1B",
+    "TR-480B1",
+    "TR-480B2"
+  ],
+  "CB-102": [
+    "AUX-TR-1B"
+  ],
+  "AUX-TR-1B": [
+    "CB-102",
+    "GRID-2"
+  ],
+  "GRID-2": [
+    "AUX-TR-1B"
+  ],
+  "EDG-1B": [
+    "CB-DG1B"
+  ],
+  "CB-DG1B": [
+    "BUS-416B",
+    "EDG-1B"
+  ],
+  "TR-480B1": [
+    "BUS-416B",
+    "CB-480B1"
+  ],
+  "CB-480B1": [
+    "MCC-480B1",
+    "TR-480B1"
+  ],
+  "MCC-480B1": [
+    "CB-480B1",
+    "FDB-B1"
+  ],
+  "TR-480B2": [
+    "BUS-416B",
+    "CB-480B2"
+  ],
+  "CB-480B2": [
+    "MCC-480B2",
+    "TR-480B2"
+  ],
+  "MCC-480B2": [
+    "CB-480B2",
+    "FDB-B2"
+  ],
+  "CB-CHG-A": [
+    "BUS-416A",
+    "CHGR-125A"
+  ],
+  "CHGR-125A": [
+    "CB-CHG-A",
+    "DC-BUS-A"
+  ],
+  "BAT-125A": [
+    "DC-BUS-A"
+  ],
+  "DC-BUS-A": [
+    "BAT-125A",
+    "CHGR-125A",
+    "INV-120A"
+  ],
+  "INV-120A": [
+    "BUS-120A",
+    "DC-BUS-A"
+  ],
+  "BUS-120A": [
+    "INV-120A",
+    "PANEL-RPS-A"
+  ],
+  "CB-CHG-B": [
+    "BUS-416B",
+    "CHGR-125B"
+  ],
+  "CHGR-125B": [
+    "CB-CHG-B",
+    "DC-BUS-B"
+  ],
+  "BAT-125B": [
+    "DC-BUS-B"
+  ],
+  "DC-BUS-B": [
+    "BAT-125B",
+    "CHGR-125B",
+    "INV-120B"
+  ],
+  "INV-120B": [
+    "BUS-120B",
+    "DC-BUS-B"
+  ],
+  "BUS-120B": [
+    "INV-120B",
+    "PANEL-RPS-B"
+  ],
+  "FDB-A1": [
+    "CB-CCW-A1",
+    "CB-FAN-A1",
+    "CB-MOV-A101",
+    "CB-MOV-A102",
+    "CB-RHR-A1",
+    "CB-SI-A1",
+    "MCC-480A1"
+  ],
+  "CB-SI-A1": [
+    "FDB-A1",
+    "PUMP-SI-A1"
+  ],
+  "PUMP-SI-A1": [
+    "CB-SI-A1"
+  ],
+  "CB-RHR-A1": [
+    "FDB-A1",
+    "PUMP-RHR-A1"
+  ],
+  "PUMP-RHR-A1": [
+    "CB-RHR-A1"
+  ],
+  "CB-CCW-A1": [
+    "FDB-A1",
+    "PUMP-CCW-A1"
+  ],
+  "PUMP-CCW-A1": [
+    "CB-CCW-A1"
+  ],
+  "CB-FAN-A1": [
+    "FAN-CR-A1",
+    "FDB-A1"
+  ],
+  "FAN-CR-A1": [
+    "CB-FAN-A1"
+  ],
+  "CB-MOV-A101": [
+    "FDB-A1",
+    "VALVE-SI-A101"
+  ],
+  "VALVE-SI-A101": [
+    "CB-MOV-A101"
+  ],
+  "CB-MOV-A102": [
+    "FDB-A1",
+    "VALVE-RHR-A102"
+  ],
+  "VALVE-RHR-A102": [
+    "CB-MOV-A102"
+  ],
+  "FDB-A2": [
+    "CB-AFW-A2",
+    "CB-CS-A2",
+    "CB-FAN-A2",
+    "CB-HTR-A2",
+    "CB-MOV-A201",
+    "CB-SW-A2",
+    "MCC-480A2"
+  ],
+  "CB-CS-A2": [
+    "FDB-A2",
+    "PUMP-CS-A2"
+  ],
+  "PUMP-CS-A2": [
+    "CB-CS-A2"
+  ],
+  "CB-SW-A2": [
+    "FDB-A2",
+    "PUMP-SW-A2"
+  ],
+  "PUMP-SW-A2": [
+    "CB-SW-A2"
+  ],
+  "CB-AFW-A2": [
+    "FDB-A2",
+    "PUMP-AFW-A2"
+  ],
+  "PUMP-AFW-A2": [
+    "CB-AFW-A2"
+  ],
+  "CB-FAN-A2": [
+    "FAN-EB-A2",
+    "FDB-A2"
+  ],
+  "FAN-EB-A2": [
+    "CB-FAN-A2"
+  ],
+  "CB-MOV-A201": [
+    "FDB-A2",
+    "VALVE-CCW-A201"
+  ],
+  "VALVE-CCW-A201": [
+    "CB-MOV-A201"
+  ],
+  "CB-HTR-A2": [
+    "FDB-A2",
+    "HTR-BAY-A2"
+  ],
+  "HTR-BAY-A2": [
+    "CB-HTR-A2"
+  ],
+  "FDB-B1": [
+    "CB-CCW-B1",
+    "CB-FAN-B1",
+    "CB-MOV-B101",
+    "CB-MOV-B102",
+    "CB-RHR-B1",
+    "CB-SI-B1",
+    "MCC-480B1"
+  ],
+  "CB-SI-B1": [
+    "FDB-B1",
+    "PUMP-SI-B1"
+  ],
+  "PUMP-SI-B1": [
+    "CB-SI-B1"
+  ],
+  "CB-RHR-B1": [
+    "FDB-B1",
+    "PUMP-RHR-B1"
+  ],
+  "PUMP-RHR-B1": [
+    "CB-RHR-B1"
+  ],
+  "CB-CCW-B1": [
+    "FDB-B1",
+    "PUMP-CCW-B1"
+  ],
+  "PUMP-CCW-B1": [
+    "CB-CCW-B1"
+  ],
+  "CB-FAN-B1": [
+    "FAN-CR-B1",
+    "FDB-B1"
+  ],
+  "FAN-CR-B1": [
+    "CB-FAN-B1"
+  ],
+  "CB-MOV-B101": [
+    "FDB-B1",
+    "VALVE-SI-B101"
+  ],
+  "VALVE-SI-B101": [
+    "CB-MOV-B101"
+  ],
+  "CB-MOV-B102": [
+    "FDB-B1",
+    "VALVE-RHR-B102"
+  ],
+  "VALVE-RHR-B102": [
+    "CB-MOV-B102"
+  ],
+  "FDB-B2": [
+    "CB-CS-B2",
+    "CB-FAN-B2",
+    "CB-HTR-B2",
+    "CB-MOV-B201",
+    "CB-SW-B2",
+    "MCC-480B2"
+  ],
+  "CB-CS-B2": [
+    "FDB-B2",
+    "PUMP-CS-B2"
+  ],
+  "PUMP-CS-B2": [
+    "CB-CS-B2"
+  ],
+  "CB-SW-B2": [
+    "FDB-B2",
+    "PUMP-SW-B2"
+  ],
+  "PUMP-SW-B2": [
+    "CB-SW-B2"
+  ],
+  "CB-FAN-B2": [
+    "FAN-EB-B2",
+    "FDB-B2"
+  ],
+  "FAN-EB-B2": [
+    "CB-FAN-B2"
+  ],
+  "CB-MOV-B201": [
+    "FDB-B2",
+    "VALVE-CCW-B201"
+  ],
+  "VALVE-CCW-B201": [
+    "CB-MOV-B201"
+  ],
+  "CB-HTR-B2": [
+    "FDB-B2",
+    "HTR-BAY-B2"
+  ],
+  "HTR-BAY-B2": [
+    "CB-HTR-B2"
+  ],
+  "INST-PT-A": [
+    "PANEL-RPS-A"
+  ],
+  "INST-LT-A": [
+    "PANEL-RPS-A"
+  ],
+  "RELAY-K27A": [
+    "PANEL-ESF-A",
+    "PANEL-RPS-A"
+  ],
+  "PANEL-RPS-A": [
+    "BUS-120A",
+    "INST-LT-A",
+    "INST-PT-A",
+    "RELAY-K27A"
+  ],
+  "PANEL-ESF-A": [
+    "JB-A401",
+    "RELAY-K27A"
+  ],
+  "JB-A401": [
+    "PANEL-ESF-A"
+  ],
+  "INST-PT-B": [
+    "PANEL-RPS-B"
+  ],
+  "INST-LT-B": [
+    "PANEL-RPS-B"
+  ],
+  "RELAY-K27B": [
+    "PANEL-ESF-B",
+    "PANEL-RPS-B"
+  ],
+  "PANEL-RPS-B": [
+    "BUS-120B",
+    "INST-LT-B",
+    "INST-PT-B",
+    "RELAY-K27B"
+  ],
+  "PANEL-ESF-B": [
+    "JB-B501",
+    "RELAY-K27B"
+  ],
+  "JB-B501": [
+    "PANEL-ESF-B"
+  ]
+}

@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 4
+Input configuration: Raw + components
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\4\synthetic_npp_120_component_connectivity_matrix.csv
+GT normalized nodes: 120; GT normalized edges: 124
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from jennifer_round1_matrix.csv with Precision=0.983740, Recall=0.975806, F1=0.979757
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=121, FP=2, FN=3, Precision=0.983740, Recall=0.975806, F1=0.979757
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+Extra/non-GT nodes most responsible for FP edges: MOV-TA-106 (1 FP edges).
+Missing GT nodes examples: MOV-IA-106.
+Close-but-not-exact name examples: MOV-TA-106 -> MOV-IA-106 (0.90).
+False-positive edge examples among GT-known nodes: BUS-480-LCB -- CB-CHG-A.
+False-negative edge examples among GT-known nodes: BUS-480-LCA -- CB-CHG-A; TB-ESF-A -- TB-ESF-B.
+False-positive examples involving extra/non-GT nodes: MOV-TA-106 -- OL-F106.
+False-negative examples involving missing/differently named nodes: MOV-IA-106 -- OL-F106.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (MOV-TA-106), the final-row metrics would be TP=121, FP=1, FN=3, Precision=0.991803, Recall=0.975806, F1=0.983740.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=121, FP=1, FN=3, Precision=0.991803, Recall=0.975806, F1=0.983740.

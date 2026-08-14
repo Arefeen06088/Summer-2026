@@ -1,0 +1,35 @@
+Connectivity matrix validation summary - Document 8
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\8\connectivity_matrix_improved_local_refined_v3.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_connectivity_matrix.csv): TP=122, FP=15, FN=18, Precision=0.890511, Recall=0.871429, F1=0.880866
+- Jennifer -- Round 1 (round_01_jennifer_connectivity_matrix.csv): TP=121, FP=4, FN=19, Precision=0.968000, Recall=0.864286, F1=0.913208
+- Diego -- Round 2 (round_02_diego_connectivity_matrix.csv): TP=125, FP=4, FN=15, Precision=0.968992, Recall=0.892857, F1=0.929368
+- Jennifer -- Round 2 (round_02_jennifer_connectivity_matrix.csv): TP=125, FP=4, FN=15, Precision=0.968992, Recall=0.892857, F1=0.929368
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=125, FP=4, FN=15, Precision=0.968992, Recall=0.892857, F1=0.929368
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- BUS-480-E2A -- MCC-2C
+- BUS-480-N2A -- DS-480-A
+- BUS-480-N2B -- DS-480-B
+- PUMP-CHG-2A -- VLV-HV-302A
+
+False-negative edge examples:
+- BUS-480-E2A -- DS-480-A
+- BUS-480-E2B -- DS-480-B
+- BUS-480-N2A -- PN-480-A
+- BUS-480-N2B -- PN-480-B
+- CB-51A -- RELAY-K1A
+- CB-51B -- RELAY-K1B
+- CB-52A -- RELAY-K1A
+- CB-52B -- RELAY-K1B
+- CB-53A -- RELAY-K1A
+- CB-53B -- RELAY-K1B
+
+Missing GT node examples:
+- VLV-HV-302B: 1 missed incident GT edge(s)

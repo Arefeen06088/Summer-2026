@@ -1,0 +1,37 @@
+Connectivity matrix validation summary - Document 5
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\5\synthetic_npp_connectivity_matrix_final_cleaned_v4.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_connectivity_matrix.csv): TP=111, FP=61, FN=29, Precision=0.645349, Recall=0.792857, F1=0.711538
+- Jennifer -- Round 1 (round_01_jennifer_connectivity_matrix.csv): TP=118, FP=43, FN=22, Precision=0.732919, Recall=0.842857, F1=0.784053
+- Diego -- Round 2 (round_02_diego_connectivity_matrix.csv): TP=118, FP=43, FN=22, Precision=0.732919, Recall=0.842857, F1=0.784053
+- Jennifer -- Round 2 (round_02_jennifer_connectivity_matrix.csv): TP=118, FP=43, FN=22, Precision=0.732919, Recall=0.842857, F1=0.784053
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=118, FP=43, FN=22, Precision=0.732919, Recall=0.842857, F1=0.784053
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- BAT-48V-A -- GND-GRID
+- BAT-48V-B -- GND-GRID
+- BUS-NON1 -- TR-SAF-C
+- BUS-SY230 -- TR-UAT-1A
+- BUS-SY230 -- TR-UAT-1B
+- CB-LC-A -- RELAY-UV-A
+- CB-LC-B -- RELAY-UV-A
+- CB-LC-C -- RELAY-UV-B
+- CB-LC-D -- RELAY-UV-B
+- CB-MCCC1 -- RELAY-LOOP-C
+
+False-negative edge examples:
+- BUS-416A -- RELAY-UV-A
+- BUS-416B -- RELAY-UV-B
+- BUS-416C -- RELAY-LOOP-C
+- BUS-416D -- RELAY-LOOP-D
+- BUS-AUX13B -- BUS-NON1
+- CB-SAF-A -- RELAY-K1A
+- CB-SAF-B -- RELAY-K1B
+- CB-SAF-C -- RELAY-K2A
+- CB-SAF-D -- RELAY-K2B
+- CP-ESFAS-1 -- PNL-DC-A

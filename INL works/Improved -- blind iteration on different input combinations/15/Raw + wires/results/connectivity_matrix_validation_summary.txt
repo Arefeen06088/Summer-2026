@@ -1,0 +1,18 @@
+Connectivity matrix validation summary
+Document: 15
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\15\improved_synthetic_nuclear_connectivity_matrix.csv
+GT normalized nodes: 183; GT normalized edges: 190
+Matrices evaluated: 5
+Best row: Diego -- Round 2 from connectivity_matrix_round_02_diego_saturation.csv with Precision=0.978947, Recall=0.978947, F1=0.978947
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=186, FP=4, FN=4, Precision=0.978947, Recall=0.978947, F1=0.978947
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+No extra/non-GT extracted nodes were present in the final node set.
+No GT components were missing from the final node set.
+No strong close-name mismatches were detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: CB-DG-A -- RPS-AC-1; CB-DG-C -- RPS-AC-2; CB-NF-B -- SEQ-1AB; CB-NF-D -- SEQ-2CD.
+False-negative edge examples among GT-known nodes: CB-DG-B -- SEQ-1AB; CB-DG-D -- SEQ-2CD; CB-NF-A -- RPS-AC-1; CB-NF-C -- RPS-AC-2.
+
+What-if node pruning insight: no non-GT intermediate nodes were available to prune; the remaining drop is mainly connectivity/edge discovery or missing direct GT edges.

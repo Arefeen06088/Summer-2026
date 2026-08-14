@@ -1,0 +1,31 @@
+Connectivity matrix validation summary - Document 9 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\9\connectivity_matrix_expanded_clear_refined_v3_reworked.csv
+GT after normalization: 200 undirected edges across 180 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token estimate: low=77418, expected=98858, high=131228.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=168, FP=24, FN=32, Precision=0.875000, Recall=0.840000, F1=0.857143.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges.
+- Extracted components: 180; extra/non-GT names: 0; missing GT component names: 0.
+- False-positive extracted edge examples: ANN-ESF-A -- PN-120A; ANN-ESF-A -- RELAY-K2A; ANN-ESF-B -- PN-120B; ANN-ESF-B -- RELAY-K2B; CB-481B -- CB-482B; CB-481B -- RELAY-27B; CB-482A -- CB-EDG-A; CB-482A -- RELAY-50/51A; ... (+16 more).
+- Missed GT edge examples: ANN-ESF-A -- RELAY-86A; ANN-ESF-B -- RELAY-86B; BUS-4160-N1 -- RELAY-50/51A; BUS-4160-N2 -- RELAY-27B; BUS-4160S1A -- CT-41A; BUS-4160S1A -- PT-41A; BUS-4160S1B -- CT-41B; BUS-4160S1B -- PT-41B; ... (+24 more).
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=168, FP=0, FN=32, Precision=1.000000, Recall=0.840000, F1=0.913043.
+- If all missed GT edges were added, final performance would be TP=200, FP=24, FN=0, Precision=0.892857, Recall=1.000000, F1=0.943396.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.857143.
+
+Round-specific notes:
+- Diego -- Round 1: TP=168, FP=32, FN=32, F1=0.840000; extra nodes=0, missing GT nodes=0. FP examples: ANN-ESF-A -- PN-120A; ANN-ESF-A -- RELAY-K2A; ANN-ESF-B -- PN-120B; ANN-ESF-B -- RELAY-K2B; ... (+28 more). FN examples: ANN-ESF-A -- RELAY-86A; ANN-ESF-B -- RELAY-86B; BUS-4160-N1 -- RELAY-50/51A; BUS-4160-N2 -- RELAY-27B; ... (+28 more).
+- Jennifer -- Round 2: TP=168, FP=24, FN=32, F1=0.857143; extra nodes=0, missing GT nodes=0. FP examples: ANN-ESF-A -- PN-120A; ANN-ESF-A -- RELAY-K2A; ANN-ESF-B -- PN-120B; ANN-ESF-B -- RELAY-K2B; ... (+20 more). FN examples: ANN-ESF-A -- RELAY-86A; ANN-ESF-B -- RELAY-86B; BUS-4160-N1 -- RELAY-50/51A; BUS-4160-N2 -- RELAY-27B; ... (+28 more).
+- Diego -- Round 3: TP=168, FP=24, FN=32, F1=0.857143; extra nodes=0, missing GT nodes=0. FP examples: ANN-ESF-A -- PN-120A; ANN-ESF-A -- RELAY-K2A; ANN-ESF-B -- PN-120B; ANN-ESF-B -- RELAY-K2B; ... (+20 more). FN examples: ANN-ESF-A -- RELAY-86A; ANN-ESF-B -- RELAY-86B; BUS-4160-N1 -- RELAY-50/51A; BUS-4160-N2 -- RELAY-27B; ... (+28 more).
+- Jennifer -- Round 4: TP=168, FP=24, FN=32, F1=0.857143; extra nodes=0, missing GT nodes=0. FP examples: ANN-ESF-A -- PN-120A; ANN-ESF-A -- RELAY-K2A; ANN-ESF-B -- PN-120B; ANN-ESF-B -- RELAY-K2B; ... (+20 more). FN examples: ANN-ESF-A -- RELAY-86A; ANN-ESF-B -- RELAY-86B; BUS-4160-N1 -- RELAY-50/51A; BUS-4160-N2 -- RELAY-27B; ... (+28 more).
+- Final connectivity -- Final: TP=168, FP=24, FN=32, F1=0.857143; extra nodes=0, missing GT nodes=0. FP examples: ANN-ESF-A -- PN-120A; ANN-ESF-A -- RELAY-K2A; ANN-ESF-B -- PN-120B; ANN-ESF-B -- RELAY-K2B; ... (+20 more). FN examples: ANN-ESF-A -- RELAY-86A; ANN-ESF-B -- RELAY-86B; BUS-4160-N1 -- RELAY-50/51A; BUS-4160-N2 -- RELAY-27B; ... (+28 more).

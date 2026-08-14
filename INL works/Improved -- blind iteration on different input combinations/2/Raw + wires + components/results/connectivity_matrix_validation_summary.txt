@@ -1,0 +1,39 @@
+Connectivity matrix validation summary - Document 2
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\2\connectivity_matrix_variant_b_100.csv
+
+Scores:
+- Diego -- Round 1 (rounds\diego_round1_connectivity_matrix.csv): TP=98, FP=2, FN=2, Precision=0.980000, Recall=0.980000, F1=0.980000
+- Jennifer -- Round 1 (rounds\jennifer_round1_connectivity_matrix.csv): TP=98, FP=2, FN=2, Precision=0.980000, Recall=0.980000, F1=0.980000
+- Diego -- Round 2 (rounds\diego_round2_accepted_connectivity_matrix.csv): TP=98, FP=2, FN=2, Precision=0.980000, Recall=0.980000, F1=0.980000
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=98, FP=2, FN=2, Precision=0.980000, Recall=0.980000, F1=0.980000
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- INST-N501A -- RLY-K501A
+- INST-N501B -- RLY-K501B
+
+False-negative edge examples:
+- INST-NI501A -- RLY-K501A
+- INST-NI501B -- RLY-K501B
+
+Extra/non-GT nodes causing performance drops:
+- INST-N501A: 1 incident false-positive edge(s)
+- INST-N501B: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 2 extra/intermediate nodes were omitted from the extraction (INST-N501A, INST-N501B), final metrics would be TP=98, FP=0, FN=2, Precision=1.000000, Recall=0.980000, F1=0.989899.
+- If all 2 non-GT nodes were omitted, metrics would be TP=98, FP=0, FN=2, Precision=1.000000, Recall=0.980000, F1=0.989899.
+
+Missing GT node examples:
+- INST-NI501A: 1 missed incident GT edge(s)
+- INST-NI501B: 1 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted INST-N501A vs GT INST-NI501A (similarity 0.95)
+- Extracted INST-N501B vs GT INST-NI501B (similarity 0.95)

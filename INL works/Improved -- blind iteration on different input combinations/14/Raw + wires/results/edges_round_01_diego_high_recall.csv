@@ -1,0 +1,176 @@
+source,target,type,evidence
+BAT-125A,BUS-125DCA,dc,Diego R1 battery tap
+BAT-125B,BUS-125DCB,dc,Diego R1 battery tap
+BUS-125DCA,CB-DC-TIE,dc_tie,Diego R1 solid tie
+BUS-125DCA,CHG-125A,dc_supply,Diego R1 A charger path
+BUS-125DCA,INV-120A,ups,Diego R1 UPS path
+BUS-125DCB,CB-DC-TIE,dc_tie,Diego R1 solid tie
+BUS-125DCB,CHG-125B,dc_supply,Diego R1 high-recall B charger/panel path
+BUS-125DCB,INV-120B,ups,Diego R1 UPS path
+BUS-480A,CB-480-TIE,power_tie,Diego R1 solid tie
+BUS-480A,CB-480A-03,power,Diego R1 branch chain
+BUS-480A,CB-480A-04,power,Diego R1 branch chain
+BUS-480A,CB-480A-05,power,Diego R1 branch chain
+BUS-480A,CB-480A-06,power,Diego R1 branch chain
+BUS-480A,CB-480A-08,power,Diego R1 branch chain
+BUS-480A,CB-480A-09,power,Diego R1 branch chain
+BUS-480A,PANEL-RPS-A,dc_supply,Diego R1 A charger path
+BUS-480A,TR-480A,power,Diego R1 transformer downfeed
+BUS-480B,CB-480-TIE,power_tie,Diego R1 solid tie
+BUS-480B,CB-480B-03,power,Diego R1 branch chain
+BUS-480B,CB-480B-04,power,Diego R1 branch chain
+BUS-480B,CB-480B-05,power,Diego R1 branch chain
+BUS-480B,CB-480B-06,power,Diego R1 branch chain
+BUS-480B,CB-480B-08,power,Diego R1 branch chain
+BUS-480B,PANEL-LS-B,dc_supply,Diego R1 high-recall B charger/panel path
+BUS-480B,TR-480B,power,Diego R1 transformer downfeed
+BUS-4A,CB-4A-01,power,Diego R1 branch chain
+BUS-4A,CB-4A-02,power,Diego R1 branch chain
+BUS-4A,CB-4A-07,power,Diego R1 branch chain
+BUS-4A,CB-DG-A,power,Diego R1 solid source feeder
+BUS-4A,CB-SST-A,power,Diego R1 solid source feeder
+BUS-4A,CB-TIE-4KV,power_tie,Diego R1 solid tie
+BUS-4A,CB-UAT-1,power,Diego R1 solid source feeder
+BUS-4A,TR-480A,power,Diego R1 transformer downfeed
+BUS-4B,CB-4B-01,power,Diego R1 branch chain
+BUS-4B,CB-4B-02,power,Diego R1 branch chain
+BUS-4B,CB-4B-07,power,Diego R1 branch chain
+BUS-4B,CB-DG-B,power,Diego R1 source feeder
+BUS-4B,CB-SST-B,power,Diego R1 source feeder
+BUS-4B,CB-TIE-4KV,power_tie,Diego R1 solid tie
+BUS-4B,TR-480B,power,Diego R1 transformer downfeed
+BUS-UPS-A,INV-120A,ups,Diego R1 UPS path
+BUS-UPS-B,INV-120B,ups,Diego R1 UPS path
+CB-480A-03,DS-480A-03,power,Diego R1 branch chain
+CB-480A-03,RELAY-KA03,control,Diego R1 high-recall relay/control edge
+CB-480A-04,DS-480A-04,power,Diego R1 branch chain
+CB-480A-04,RELAY-KA04,control,Diego R1 high-recall relay/control edge
+CB-480A-05,DS-480A-05,power,Diego R1 branch chain
+CB-480A-05,RELAY-KA05,control,Diego R1 high-recall relay/control edge
+CB-480A-06,DS-480A-06,power,Diego R1 branch chain
+CB-480A-06,RELAY-KA06,control,Diego R1 high-recall relay/control edge
+CB-480A-08,DS-480A-08,power,Diego R1 branch chain
+CB-480A-08,RELAY-KA08,control,Diego R1 high-recall relay/control edge
+CB-480A-09,DS-480A-09,power,Diego R1 branch chain
+CB-480A-09,RELAY-KA09,control,Diego R1 high-recall relay/control edge
+CB-480B-03,DS-480B-03,power,Diego R1 branch chain
+CB-480B-03,RELAY-KB03,control,Diego R1 high-recall relay/control edge
+CB-480B-04,DS-480B-04,power,Diego R1 branch chain
+CB-480B-04,RELAY-KB04,control,Diego R1 high-recall relay/control edge
+CB-480B-05,DS-480B-05,power,Diego R1 branch chain
+CB-480B-05,RELAY-KB05,control,Diego R1 high-recall relay/control edge
+CB-480B-06,DS-480B-06,power,Diego R1 branch chain
+CB-480B-06,RELAY-KB06,control,Diego R1 high-recall relay/control edge
+CB-480B-08,DS-480B-08,power,Diego R1 branch chain
+CB-480B-08,RELAY-KB08,control,Diego R1 high-recall relay/control edge
+CB-4A-01,DS-4A-01,power,Diego R1 branch chain
+CB-4A-01,RELAY-KA01,control,Diego R1 high-recall relay/control edge
+CB-4A-02,DS-4A-02,power,Diego R1 branch chain
+CB-4A-02,RELAY-KA02,control,Diego R1 high-recall relay/control edge
+CB-4A-07,DS-4A-07,power,Diego R1 branch chain
+CB-4A-07,RELAY-KA07,control,Diego R1 high-recall relay/control edge
+CB-4B-01,DS-4B-01,power,Diego R1 branch chain
+CB-4B-01,RELAY-KB01,control,Diego R1 high-recall relay/control edge
+CB-4B-02,DS-4B-02,power,Diego R1 branch chain
+CB-4B-02,RELAY-KB02,control,Diego R1 high-recall relay/control edge
+CB-4B-07,DS-4B-07,power,Diego R1 branch chain
+CB-4B-07,RELAY-KB07,control,Diego R1 high-recall relay/control edge
+CB-DC-TIE,PANEL-ANN,control,Diego R1 high-recall dashed/control vertical association
+CB-DG-A,TR-DG-A,power,Diego R1 solid source feeder
+CB-DG-B,TR-DG-B,power,Diego R1 source feeder
+CB-SST-A,TR-SST-A,power,Diego R1 solid source feeder
+CB-SST-B,TR-SST-B,power,Diego R1 source feeder
+CB-UAT-1,TR-UAT-1,power,Diego R1 solid source feeder
+CHG-125A,PANEL-RPS-A,dc_supply,Diego R1 A charger path
+CHG-125B,PANEL-LS-B,dc_supply,Diego R1 high-recall B charger/panel path
+COMP-IA-1A,GND-A09,power,Diego R1 branch chain
+COMP-IA-1A,TB-A09,power,Diego R1 branch chain
+DG-1A,TR-DG-A,power,Diego R1 solid source feeder
+DG-1B,TR-DG-B,power,Diego R1 source feeder
+DS-480A-03,KON-A03,power,Diego R1 branch chain
+DS-480A-04,FU-A04,power,Diego R1 branch chain
+DS-480A-05,OL-A05,power,Diego R1 branch chain
+DS-480A-06,KON-A06,power,Diego R1 branch chain
+DS-480A-08,OL-A08,power,Diego R1 branch chain
+DS-480A-09,KON-A09,power,Diego R1 branch chain
+DS-480B-03,KON-B03,power,Diego R1 branch chain
+DS-480B-04,FU-B04,power,Diego R1 branch chain
+DS-480B-05,OL-B05,power,Diego R1 branch chain
+DS-480B-06,KON-B06,power,Diego R1 branch chain
+DS-480B-08,OL-B08,power,Diego R1 branch chain
+DS-4A-01,FU-A01,power,Diego R1 branch chain
+DS-4A-02,OL-A02,power,Diego R1 branch chain
+DS-4A-07,FU-A07,power,Diego R1 branch chain
+DS-4B-01,FU-B01,power,Diego R1 branch chain
+DS-4B-02,OL-B02,power,Diego R1 branch chain
+DS-4B-07,FU-B07,power,Diego R1 branch chain
+FAN-CR-1A,GND-A04,power,Diego R1 branch chain
+FAN-CR-1A,TB-A04,power,Diego R1 branch chain
+FAN-CR-1B,GND-B04,power,Diego R1 branch chain
+FAN-CR-1B,TB-B04,power,Diego R1 branch chain
+FI-A01,TB-A01,signal_tap,Diego R1 local instrument tap
+FI-B01,TB-B01,signal_tap,Diego R1 local instrument tap
+FS-A03,TB-A03,signal_tap,Diego R1 local instrument tap
+FS-B03,TB-B03,signal_tap,Diego R1 local instrument tap
+FU-A01,TB-A01,power,Diego R1 branch chain
+FU-A04,TB-A04,power,Diego R1 branch chain
+FU-A07,TB-A07,power,Diego R1 branch chain
+FU-B01,TB-B01,power,Diego R1 branch chain
+FU-B04,TB-B04,power,Diego R1 branch chain
+FU-B07,TB-B07,power,Diego R1 branch chain
+GEN-TG1,TR-UAT-1,power,Diego R1 solid source feeder
+GND-A01,PUMP-CS-1A,power,Diego R1 branch chain
+GND-A02,PUMP-RHR-1A,power,Diego R1 branch chain
+GND-A03,PUMP-SW-1A,power,Diego R1 branch chain
+GND-A05,MOV-SI-101A,power,Diego R1 branch chain
+GND-A06,RECT-AUX-1A,power,Diego R1 branch chain
+GND-A07,PUMP-CW-1A,power,Diego R1 branch chain
+GND-A08,HTR-PZR-A,power,Diego R1 branch chain
+GND-B01,PUMP-CS-1B,power,Diego R1 branch chain
+GND-B02,PUMP-RHR-1B,power,Diego R1 branch chain
+GND-B03,PUMP-SW-1B,power,Diego R1 branch chain
+GND-B05,MOV-SI-101B,power,Diego R1 branch chain
+GND-B06,INV-AUX-1B,power,Diego R1 branch chain
+GND-B07,PUMP-CW-1B,power,Diego R1 branch chain
+GND-B08,HVAC-CHLR-1B,power,Diego R1 branch chain
+GRID-1,TR-SST-A,power,Diego R1 solid source feeder
+GRID-2,TR-SST-B,power,Diego R1 source feeder
+HTR-PZR-A,TB-A08,power,Diego R1 branch chain
+HVAC-CHLR-1B,TB-B08,power,Diego R1 branch chain
+INV-AUX-1B,TB-B06,power,Diego R1 branch chain
+KON-A03,TB-A03,power,Diego R1 branch chain
+KON-A06,TB-A06,power,Diego R1 branch chain
+KON-A09,TB-A09,power,Diego R1 branch chain
+KON-B03,TB-B03,power,Diego R1 branch chain
+KON-B06,TB-B06,power,Diego R1 branch chain
+LT-B08,TB-B08,signal_tap,Diego R1 local instrument tap
+MOV-SI-101A,TB-A05,power,Diego R1 branch chain
+MOV-SI-101B,TB-B05,power,Diego R1 branch chain
+OL-A02,TB-A02,power,Diego R1 branch chain
+OL-A05,TB-A05,power,Diego R1 branch chain
+OL-A08,TB-A08,power,Diego R1 branch chain
+OL-B02,TB-B02,power,Diego R1 branch chain
+OL-B05,TB-B05,power,Diego R1 branch chain
+OL-B08,TB-B08,power,Diego R1 branch chain
+PANEL-ANN,PANEL-MCR,control,Diego R1 high-recall dashed/control vertical association
+PI-A02,TB-A02,signal_tap,Diego R1 local instrument tap
+PI-B02,TB-B02,signal_tap,Diego R1 local instrument tap
+PS-A09,TB-A09,signal_tap,Diego R1 local instrument tap
+PT-A07,TB-A07,signal_tap,Diego R1 local instrument tap
+PT-B07,TB-B07,signal_tap,Diego R1 local instrument tap
+PUMP-CS-1A,TB-A01,power,Diego R1 branch chain
+PUMP-CS-1B,TB-B01,power,Diego R1 branch chain
+PUMP-CW-1A,TB-A07,power,Diego R1 branch chain
+PUMP-CW-1B,TB-B07,power,Diego R1 branch chain
+PUMP-RHR-1A,TB-A02,power,Diego R1 branch chain
+PUMP-RHR-1B,TB-B02,power,Diego R1 branch chain
+PUMP-SW-1A,TB-A03,power,Diego R1 branch chain
+PUMP-SW-1B,TB-B03,power,Diego R1 branch chain
+RECT-AUX-1A,TB-A06,power,Diego R1 branch chain
+TB-A04,TS-A04,signal_tap,Diego R1 local instrument tap
+TB-A05,ZS-A05,signal_tap,Diego R1 local instrument tap
+TB-A06,VM-A06,signal_tap,Diego R1 local instrument tap
+TB-A08,TT-A08,signal_tap,Diego R1 local instrument tap
+TB-B04,TS-B04,signal_tap,Diego R1 local instrument tap
+TB-B05,ZS-B05,signal_tap,Diego R1 local instrument tap
+TB-B06,VM-B06,signal_tap,Diego R1 local instrument tap

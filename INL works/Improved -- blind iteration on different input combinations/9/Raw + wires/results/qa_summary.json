@@ -1,0 +1,156 @@
+[
+  {
+    "round": "round01_diego",
+    "agent": "Diego",
+    "node_count": 180,
+    "edge_count": 182,
+    "matrix_size": [
+      180,
+      180
+    ],
+    "symmetric": true,
+    "diagonal_zero": true,
+    "isolated_nodes": [],
+    "note": "Diego R1 high-recall accepted graph. Kept the initially read tie label CB-TIE-416-N and included the visually plausible FAN-CR-B--PN-MOV-B MOV feed. Uncertain edges from Diego R1 are documented separately, but not set to 1 in this round matrix.",
+    "uncertain_or_rejected_edges": [
+      "CB-482A--RELAY-50/51A",
+      "RELAY-86A--CB-482A",
+      "RELAY-86A--CB-CWP-1A",
+      "CB-482B--RELAY-86B",
+      "RELAY-86B--CB-481B",
+      "CB-482B--RELAY-27B",
+      "BUS-480-A2--CB-CWP-1A",
+      "PUMP-RHR-A--PLC-ESF-A",
+      "PUMP-SI-A--PLC-ESF-A",
+      "PUMP-CCW-A--PLC-ESF-A",
+      "PUMP-RHR-B--PLC-ESF-B",
+      "PUMP-SI-B--PLC-ESF-B",
+      "PUMP-CCW-B--PLC-ESF-B",
+      "JB-2A--PLC-ESF-A",
+      "JB-2B--PLC-ESF-B",
+      "PN-MOV-A--MCC-SAF-A2",
+      "PN-MOV-B--MCC-SAF-B2"
+    ]
+  },
+  {
+    "round": "round02_jennifer",
+    "agent": "Jennifer",
+    "node_count": 180,
+    "edge_count": 185,
+    "matrix_size": [
+      180,
+      180
+    ],
+    "symmetric": true,
+    "diagonal_zero": true,
+    "isolated_nodes": [],
+    "note": "Jennifer R1 precision graph. Corrected CB-TIE-416-N to CB-TIE-41N; replaced FAN-CR-B--PN-MOV-B with MCC-SAF-B2--PN-MOV-B; promoted CB-EDG-A--CB-482A, CB-EDG-B--CB-482B, and RELAY-27B--CB-481B.",
+    "uncertain_or_rejected_edges": [
+      "CB-482A--RELAY-50/51A",
+      "RELAY-86A--CB-482A",
+      "RELAY-86A--CB-CWP-1A",
+      "CB-482B--RELAY-86B",
+      "RELAY-86B--CB-481B",
+      "CB-482B--RELAY-27B",
+      "BUS-480-A2--CB-CWP-1A",
+      "PUMP-RHR-A--PLC-ESF-A",
+      "PUMP-SI-A--PLC-ESF-A",
+      "PUMP-CCW-A--PLC-ESF-A",
+      "PUMP-RHR-B--PLC-ESF-B",
+      "PUMP-SI-B--PLC-ESF-B",
+      "PUMP-CCW-B--PLC-ESF-B",
+      "JB-2A--PLC-ESF-A",
+      "JB-2B--PLC-ESF-B",
+      "PN-MOV-A--MCC-SAF-A2",
+      "FAN-CR-B--PN-MOV-B"
+    ]
+  },
+  {
+    "round": "round03_diego",
+    "agent": "Diego",
+    "node_count": 180,
+    "edge_count": 186,
+    "matrix_size": [
+      180,
+      180
+    ],
+    "symmetric": true,
+    "diagonal_zero": true,
+    "isolated_nodes": [],
+    "note": "Diego R2 saturation check over Jennifer R1. Added the plausible B-side lower control edge JB-2B--PLC-ESF-B; the other R2 mentions were already present in Jennifer R1.",
+    "uncertain_or_rejected_edges": [
+      "RELAY-86B--RELAY-27B duplicate of accepted RELAY-27B--RELAY-86B",
+      "PUMP-SUMP-1B--MTR-480-N1 duplicate of accepted edge",
+      "FAN-AHU-2A--MTR-480-N2 duplicate of accepted edge"
+    ]
+  },
+  {
+    "round": "round04_jennifer",
+    "agent": "Jennifer",
+    "node_count": 180,
+    "edge_count": 187,
+    "matrix_size": [
+      180,
+      180
+    ],
+    "symmetric": true,
+    "diagonal_zero": true,
+    "isolated_nodes": [],
+    "note": "Jennifer R2 precision graph. Accepted JB-2B--PLC-ESF-B and RELAY-86A--CB-482A. Other R2 additions were duplicates of already accepted relay edges.",
+    "uncertain_or_rejected_edges": [
+      "JB-2A--PLC-ESF-A rejected"
+    ]
+  },
+  {
+    "round": "round05_diego",
+    "agent": "Diego",
+    "node_count": 180,
+    "edge_count": 196,
+    "matrix_size": [
+      180,
+      180
+    ],
+    "symmetric": true,
+    "diagonal_zero": true,
+    "isolated_nodes": [],
+    "note": "Diego R3 count-sanity high-recall graph. Added all R3 candidate edges that had some visual plausibility, including low-confidence shared-trunk candidates, so Jennifer could filter them.",
+    "uncertain_or_rejected_edges": [
+      "RELAY-27B--CB-482B",
+      "RTD-PNL-A--RTD-PNL-B",
+      "PUMP-RHR-A--JB-1A",
+      "PUMP-SI-A--JB-2A",
+      "PUMP-CCW-A--JB-2A",
+      "PUMP-RHR-B--JB-1B",
+      "PUMP-SI-B--JB-2B",
+      "PUMP-CCW-B--JB-2B"
+    ]
+  },
+  {
+    "round": "round06_jennifer_final",
+    "agent": "Jennifer",
+    "node_count": 180,
+    "edge_count": 189,
+    "matrix_size": [
+      180,
+      180
+    ],
+    "symmetric": true,
+    "diagonal_zero": true,
+    "isolated_nodes": [],
+    "note": "Jennifer R3 final precision graph. Accepted PN-LTG-1B--JB-NORM-A and PUMP-SI-B--JB-2B only; rejected the remaining R3 shared-trunk or endpoint-ambiguous candidates. Final saturated matrix.",
+    "uncertain_or_rejected_edges": [
+      "RELAY-27B--CB-482B rejected",
+      "RTD-PNL-A--RTD-PNL-B rejected",
+      "PUMP-RHR-A--JB-1A rejected",
+      "PUMP-SI-A--JB-2A rejected",
+      "PUMP-CCW-A--JB-2A rejected",
+      "PUMP-RHR-B--JB-1B rejected",
+      "PUMP-CCW-B--JB-2B rejected",
+      "RELAY-86A--CB-CWP-1A rejected",
+      "PN-LTG-2B--JB-NORM-B rejected",
+      "PN-MOV-A--MCC-SAF-A2 rejected",
+      "FAN-CR-B--PN-MOV-B rejected",
+      "JB-2A--PLC-ESF-A rejected"
+    ]
+  }
+]

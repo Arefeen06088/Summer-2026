@@ -1,0 +1,36 @@
+Connectivity matrix validation summary - Document 13 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\13\synthetic_npp_connectivity_matrix_dc_bus_clean_retry.csv
+GT after normalization: 194 undirected edges across 187 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token usage was not available in local tracking files.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=184, FP=11, FN=10, Precision=0.943590, Recall=0.948454, F1=0.946015.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names.
+- Extracted components: 192; extra/non-GT names: 5; missing GT component names: 0.
+- False-positive extracted edge examples: CB-201 -- UNIT-GENERATOR-AUX-FEED; GND-A -- PP-A1; GND-B -- PP-B1; GND-C -- PP-C1; GND-D -- PP-D1; LC-480A -- LOCAL-IO-A; LC-480B -- LOCAL-IO-B; LC-480C -- LOCAL-IO-C; ... (+3 more).
+- Missed GT edge examples: CB-201 -- TR-UAT-1A; CB-201 -- TR-UAT-1B; DC-BUS-A -- JB-A1; DC-BUS-B -- JB-B1; DC-BUS-C -- JB-C1; DC-BUS-D -- JB-D1; GND-A -- TR-480A; GND-B -- TR-480B; ... (+2 more).
+- Extra/non-GT component examples: LOCAL-IO-A; LOCAL-IO-B; LOCAL-IO-C; LOCAL-IO-D; UNIT-GENERATOR-AUX-FEED.
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=184, FP=0, FN=10, Precision=1.000000, Recall=0.948454, F1=0.973545.
+- If all missed GT edges were added, final performance would be TP=194, FP=11, FN=0, Precision=0.946341, Recall=1.000000, F1=0.972431.
+- If extra node UNIT-GENERATOR-AUX-FEED and its 3 false-positive incident edge(s) were not put in extraction, final performance would be TP=184, FP=8, FN=10, Precision=0.958333, Recall=0.948454, F1=0.953368.
+- If extra node LOCAL-IO-A and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=184, FP=10, FN=10, Precision=0.948454, Recall=0.948454, F1=0.948454.
+- If extra node LOCAL-IO-B and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=184, FP=10, FN=10, Precision=0.948454, Recall=0.948454, F1=0.948454.
+- If extra node LOCAL-IO-C and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=184, FP=10, FN=10, Precision=0.948454, Recall=0.948454, F1=0.948454.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.946015.
+
+Round-specific notes:
+- Diego -- Round 1: TP=187, FP=56, FN=7, F1=0.855835; extra nodes=16, missing GT nodes=0. FP examples: 125VDC-SYSTEM-SHT-DC-2 -- DC-BUS-C; ANNUNCIATOR-PLANT-PROCESS-COMPUTER -- BUS-4D; BUS-230KV-SWITCHYARD -- GRID-230KV; BUS-230KV-SWITCHYARD -- SWYD-230; ... (+52 more). FN examples: CB-201 -- TR-UAT-1A; CB-201 -- TR-UAT-1B; GND-A -- TR-480A; GND-B -- TR-480B; ... (+3 more).
+- Jennifer -- Round 2: TP=184, FP=11, FN=10, F1=0.946015; extra nodes=5, missing GT nodes=0. FP examples: CB-201 -- UNIT-GENERATOR-AUX-FEED; GND-A -- PP-A1; GND-B -- PP-B1; GND-C -- PP-C1; ... (+7 more). FN examples: CB-201 -- TR-UAT-1A; CB-201 -- TR-UAT-1B; DC-BUS-A -- JB-A1; DC-BUS-B -- JB-B1; ... (+6 more).
+- Diego -- Round 3: TP=184, FP=11, FN=10, F1=0.946015; extra nodes=5, missing GT nodes=0. FP examples: CB-201 -- UNIT-GENERATOR-AUX-FEED; GND-A -- PP-A1; GND-B -- PP-B1; GND-C -- PP-C1; ... (+7 more). FN examples: CB-201 -- TR-UAT-1A; CB-201 -- TR-UAT-1B; DC-BUS-A -- JB-A1; DC-BUS-B -- JB-B1; ... (+6 more).
+- Jennifer -- Round 4: TP=184, FP=11, FN=10, F1=0.946015; extra nodes=5, missing GT nodes=0. FP examples: CB-201 -- UNIT-GENERATOR-AUX-FEED; GND-A -- PP-A1; GND-B -- PP-B1; GND-C -- PP-C1; ... (+7 more). FN examples: CB-201 -- TR-UAT-1A; CB-201 -- TR-UAT-1B; DC-BUS-A -- JB-A1; DC-BUS-B -- JB-B1; ... (+6 more).
+- Final connectivity -- Final: TP=184, FP=11, FN=10, F1=0.946015; extra nodes=5, missing GT nodes=0. FP examples: CB-201 -- UNIT-GENERATOR-AUX-FEED; GND-A -- PP-A1; GND-B -- PP-B1; GND-C -- PP-C1; ... (+7 more). FN examples: CB-201 -- TR-UAT-1A; CB-201 -- TR-UAT-1B; DC-BUS-A -- JB-A1; DC-BUS-B -- JB-B1; ... (+6 more).

@@ -1,0 +1,41 @@
+Connectivity matrix validation summary - Document 11
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\11\synthetic_npp_connectivity_matrix_relocated_names.csv
+
+Scores:
+- Diego -- Round 1 (round01_diego_connectivity_matrix.csv): TP=120, FP=12, FN=18, Precision=0.909091, Recall=0.869565, F1=0.888889
+- Jennifer -- Round 1 (round01_jennifer_connectivity_matrix.csv): TP=126, FP=10, FN=12, Precision=0.926471, Recall=0.913043, F1=0.919708
+- Diego -- Round 2 (round02_diego_connectivity_matrix.csv): TP=126, FP=10, FN=12, Precision=0.926471, Recall=0.913043, F1=0.919708
+- Jennifer -- Round 2 (round02_jennifer_connectivity_matrix.csv): TP=126, FP=10, FN=12, Precision=0.926471, Recall=0.913043, F1=0.919708
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=126, FP=10, FN=12, Precision=0.926471, Recall=0.913043, F1=0.919708
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- ATS-480-A -- MCC-A1
+- ATS-480-A -- MCC-B1
+- ATS-480-B -- MCC-C1
+- ATS-480-B -- MCC-D1
+- BUS-DC-125A -- RECT-125-B
+- BUS-DC-125B -- RECT-125-C
+- PANEL-IC-A -- RECT-125-A
+- PANEL-IC-B -- RECT-125-B
+- PANEL-IC-C -- RECT-125-C
+- PANEL-IC-D -- RECT-125-D
+
+False-negative edge examples:
+- ATS-480-A -- BUS-480-A1
+- ATS-480-A -- BUS-480-C1
+- ATS-480-B -- BUS-480-B1
+- ATS-480-B -- BUS-480-D1
+- BUS-DC-125A -- RECT-125-C
+- BUS-DC-125B -- RECT-125-B
+- PANEL-RPS-A -- PANEL-SSPS
+- PANEL-RPS-B -- PANEL-SSPS
+- PANEL-SSPS -- RELAY-27A
+- PANEL-SSPS -- RELAY-27B
+
+Missing GT node examples:
+- PANEL-SSPS: 6 missed incident GT edge(s)

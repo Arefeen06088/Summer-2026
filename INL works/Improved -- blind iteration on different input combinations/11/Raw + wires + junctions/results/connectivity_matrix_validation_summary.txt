@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 11
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\11\synthetic_npp_connectivity_matrix_relocated_names.csv
+GT normalized nodes: 120; GT normalized edges: 138
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from jennifer_round1_matrix.csv with Precision=0.748299, Recall=0.797101, F1=0.771930
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=110, FP=37, FN=28, Precision=0.748299, Recall=0.797101, F1=0.771930
+Primary issue: extra/misnamed/intermediate extracted nodes created false-positive edges.
+
+Extra/non-GT nodes most responsible for FP edges: DC-A125 (3 FP edges); DC-C125 (3 FP edges); DC-D125 (3 FP edges); NORM-2D (2 FP edges); DC-B125 (2 FP edges); NORM-2C (2 FP edges); NORM-2B (2 FP edges); TIE-B12 (2 FP edges).
+Missing GT nodes examples: DG-1A; DG-1B; DG-1C; DG-1D.
+Close-but-not-exact name examples: DG1A -> DG-1A (0.89); DG1B -> DG-1B (0.89); DG1C -> DG-1C (0.89); DG1D -> DG-1D (0.89).
+False-positive edge examples among GT-known nodes: ATS-480-A -- BUS-DC-125A; ATS-480-B -- BUS-DC-125B; PANEL-IC-A -- RECT-125-A; PANEL-IC-B -- RECT-125-B; PANEL-IC-C -- RECT-125-C; PANEL-IC-D -- RECT-125-D.
+False-negative edge examples among GT-known nodes: ATS-480-A -- BUS-480-A1; ATS-480-A -- BUS-480-C1; ATS-480-B -- BUS-480-B1; ATS-480-B -- BUS-480-D1; BUS-13-8A -- CB-IN-A; BUS-13-8A -- CB-IN-B; BUS-13-8B -- CB-IN-C; BUS-13-8B -- CB-IN-D.
+False-positive examples involving extra/non-GT nodes: BUS-13-8A -- NORM-2A; BUS-13-8A -- NORM-2B; BUS-13-8B -- NORM-2C; BUS-13-8B -- NORM-2D; BUS-480-A1 -- TIE-A12; BUS-480-A2 -- TIE-A12; BUS-480-B1 -- TIE-B12; BUS-480-B2 -- TIE-B12.
+False-negative examples involving missing/differently named nodes: CB-DG-A -- DG-1A; CB-DG-B -- DG-1B; CB-DG-C -- DG-1C; CB-DG-D -- DG-1D.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (DC-A125; DC-C125; DC-D125; NORM-2D; DC-B125), the final-row metrics would be TP=110, FP=24, FN=28, Precision=0.820896, Recall=0.797101, F1=0.808824.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=110, FP=6, FN=28, Precision=0.948276, Recall=0.797101, F1=0.866142.

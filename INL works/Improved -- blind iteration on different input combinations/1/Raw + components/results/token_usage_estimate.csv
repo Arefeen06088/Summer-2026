@@ -1,0 +1,7 @@
+document,iteration,call_id,agent,model,usage_object_available,input_tokens_low,input_tokens_expected,input_tokens_high,cached_input_tokens,image_file_input_tokens_expected,output_tokens_low,output_tokens_expected,output_tokens_high,reasoning_tokens,total_tokens_expected,notes
+1 / Raw + components,1,main_coordinator_aggregate,main,gpt-5,no,32000,43000,58000,unknown,9945,2200,3600,5200,not exposed,46600,"Aggregate estimate for orchestration, visual inspection, tool-result reading, and final response. Includes images viewed directly by main agent."
+1 / Raw + components,1,diego_round1,Diego,gpt-5.5,no,18000,20500,24500,unknown,13260,3600,5200,7200,not exposed,25700,12 image inputs; output was known after execution but exact tokenizer count unavailable.
+1 / Raw + components,1,jennifer_round1,Jennifer,gpt-5.5,no,21500,25800,31500,unknown,13260,4200,6200,8200,not exposed,32000,12 image inputs plus Diego proposal summary.
+1 / Raw + components,1,diego_round2,Diego,gpt-5.5,no,8000,10200,13000,unknown,5865,900,1500,2200,not exposed,11700,Narrow convergence review with 5 image inputs.
+1 / Raw + components,1,jennifer_round2_final,Jennifer,gpt-5.5,no,10500,13800,17500,unknown,6970,1200,2100,3200,not exposed,15900,Final saturation check with accepted edge list and 6 image inputs.
+1 / Raw + components,1,TOTAL,all,mixed,no,90000,113300,144500,unknown,49300,12100,18600,26000,not exposed,131900,Expected total across main aggregate and all subagent calls. Official endpoint not called because OPENAI_API_KEY was absent.

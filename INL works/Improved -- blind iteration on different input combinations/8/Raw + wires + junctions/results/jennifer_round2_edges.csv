@@ -1,0 +1,137 @@
+source,target,confidence,line_type,evidence
+GRID-345-01,SUT-2A,HIGH,AC power feeder,raw top left shows solid vertical feeder from grid source into SUT-2A
+SUT-2A,CB-402A,HIGH,AC power feeder,raw top left shows SUT-2A solid feeder entering CB-402A
+CB-402A,BUS-4160-N2A,HIGH,AC power feeder,raw top left shows CB-402A lower lead landing on BUS-4160-N2A dot
+UAT-2A,CB-401A,HIGH,AC power feeder,raw top left shows UAT-2A feeder entering CB-401A
+CB-401A,BUS-4160-N2A,HIGH,AC power feeder,raw top left shows CB-401A lower lead landing on normal bus dot
+GEN-U2,UAT-2A,HIGH,AC power feeder,raw top normal source shows 2E-100 collector from generator to UAT-2A
+GEN-U2,UAT-2B,HIGH,AC power feeder,raw top center shows generator collector continuing to UAT-2B
+UAT-2B,CB-401B,HIGH,AC power feeder,raw top center shows UAT-2B vertical feeder entering CB-401B
+CB-401B,BUS-4160-N2B,HIGH,AC power feeder,raw top center shows CB-401B lower lead landing on BUS-4160-N2B
+GRID-345-02,SUT-2B,HIGH,AC power feeder,raw top right shows solid vertical feeder from grid source into SUT-2B
+SUT-2B,CB-402B,HIGH,AC power feeder,raw top right shows SUT-2B feeder entering CB-402B
+CB-402B,BUS-4160-N2B,HIGH,AC power feeder,raw top right shows CB-402B lower lead landing on N2B bus dot
+BUS-4160-N2A,CB-TIE-4160,HIGH,AC power feeder,raw top center shows left normal bus ending at CB-TIE-4160 terminal
+CB-TIE-4160,BUS-4160-N2B,HIGH,AC power feeder,raw top center shows CB-TIE-4160 exiting to right normal bus
+BUS-4160-N2A,BUS-4160-S2A,MEDIUM,AC power feeder,raw full and safety crop show vertical solid downlead between N2A and S2A bus dots
+BUS-4160-N2B,BUS-4160-S2B,MEDIUM,AC power feeder,raw full and safety crop show vertical solid downlead between N2B and S2B bus dots
+EDG-2A,CB-EDG-A,HIGH,AC power feeder,raw safety left shows EDG-2A solid lead into CB-EDG-A
+CB-EDG-A,BUS-4160-S2A,HIGH,AC power feeder,raw safety left shows CB-EDG-A lower lead landing on S2A bus
+BUS-4160-S2A,TR-480-2A,HIGH,AC power feeder,raw safety left shows vertical feeder dropping from S2A to TR-480-2A
+TR-480-2A,BUS-480-E2A,HIGH,AC power feeder,raw safety and 480 crop show transformer output continuing to BUS-480-E2A
+BUS-4160-S2A,CT-4160A,HIGH,CT PT signal,raw safety left shows dotted tap from S2A bus to CT-4160A
+CT-4160A,RELAY-50/51A,HIGH,CT PT signal,raw safety left shows dotted CT lead terminating at RELAY-50/51A
+BUS-4160-S2A,PT-4160A,HIGH,CT PT signal,raw safety left shows dotted tap from S2A bus to PT-4160A
+PT-4160A,RELAY-27A,HIGH,CT PT signal,raw safety left shows dotted PT lead terminating at RELAY-27A
+RELAY-50/51A,RELAY-86A,MEDIUM,interlock trip permit,raw safety left shows stepped dashed trip logic from 50-51A area to 86A
+RELAY-27A,RELAY-86A,HIGH,interlock trip permit,raw safety left shows dashed lead from RELAY-27A terminating at RELAY-86A
+CB-EDG-A,RELAY-86A,HIGH,interlock trip permit,raw safety left shows 86A TRIP dashed route from CB-EDG-A to RELAY-86A
+EDG-2C,CB-EDG-C,HIGH,AC power feeder,raw safety center shows EDG-2C vertical lead into CB-EDG-C
+CB-EDG-C,BUS-4160-S2A,HIGH,AC power feeder,raw safety center shows left solid bus run terminating at CB-EDG-C path
+CB-EDG-C,BUS-4160-S2B,HIGH,AC power feeder,raw safety center shows right solid bus run terminating at CB-EDG-C path
+BUS-4160-N2A,TR-480-N2A,MEDIUM,AC power feeder,raw safety center shows normal downlead into TR-480-N2A while EDG-C crossing has no junction dot
+TR-480-N2A,BUS-480-N2A,HIGH,AC power feeder,raw safety center shows TR-480-N2A lower lead landing on BUS-480-N2A
+BUS-4160-N2B,TR-480-N2B,MEDIUM,AC power feeder,raw safety center shows normal downlead into TR-480-N2B while EDG-C crossing has no junction dot
+TR-480-N2B,BUS-480-N2B,HIGH,AC power feeder,raw safety center shows TR-480-N2B lower lead landing on BUS-480-N2B
+BUS-480-N2A,DS-480-A,HIGH,AC power feeder,raw 480 crop shows N2A branch descending to DS-480-A
+DS-480-A,DS-480-B,MEDIUM,AC power feeder,raw 480 crop shows normally open feeder tie drawn between DS-480-A and DS-480-B
+DS-480-B,BUS-480-N2B,HIGH,AC power feeder,raw 480 crop shows DS-480-B branch rising to BUS-480-N2B
+BUS-480-N2A,CB-N1,HIGH,AC power feeder,raw 480 crop shows N2A vertical feeder entering CB-N1
+BUS-480-N2B,CB-N2,HIGH,AC power feeder,raw 480 crop shows N2B vertical feeder entering CB-N2
+EDG-2B,CB-EDG-B,HIGH,AC power feeder,raw safety right shows EDG-2B solid lead into CB-EDG-B
+CB-EDG-B,BUS-4160-S2B,HIGH,AC power feeder,raw safety right shows CB-EDG-B lower lead landing on S2B bus
+BUS-4160-S2B,TR-480-2B,HIGH,AC power feeder,raw safety right shows vertical feeder dropping from S2B to TR-480-2B
+TR-480-2B,BUS-480-E2B,HIGH,AC power feeder,raw safety and 480 crop show transformer output continuing to BUS-480-E2B
+BUS-4160-S2B,CT-4160B,HIGH,CT PT signal,raw safety right shows dotted tap from S2B bus to CT-4160B
+CT-4160B,RELAY-50/51B,HIGH,CT PT signal,raw safety right shows dotted CT lead terminating at RELAY-50/51B
+BUS-4160-S2B,PT-4160B,HIGH,CT PT signal,raw safety right shows dotted tap from S2B bus to PT-4160B
+PT-4160B,RELAY-27B,HIGH,CT PT signal,raw safety right shows dotted PT lead terminating at RELAY-27B
+RELAY-50/51B,RELAY-86B,MEDIUM,interlock trip permit,raw safety right shows stepped dashed trip logic from 50-51B area to 86B
+RELAY-27B,RELAY-86B,HIGH,interlock trip permit,raw safety right shows dashed lead from RELAY-27B terminating at RELAY-86B
+CB-EDG-B,RELAY-86B,HIGH,interlock trip permit,raw safety right shows 86B TRIP dashed route from CB-EDG-B to RELAY-86B
+BUS-480-E2A,MCC-2A1,HIGH,AC power feeder,raw 480 crop shows solid vertical feeder from BUS-480-E2A to MCC-2A1
+BUS-480-E2A,MCC-2A2,HIGH,AC power feeder,raw 480 crop shows solid vertical feeder from BUS-480-E2A to MCC-2A2
+BUS-480-E2A,PN-480-A,HIGH,AC power feeder,raw 480 crop shows solid vertical feeder from BUS-480-E2A to PN-480-A
+PN-480-A,GND-A,HIGH,equipment ground,raw left lower detail shows GND-A symbol tied to the PN-480-A feeder branch
+BUS-480-E2B,MCC-2B1,HIGH,AC power feeder,raw 480 crop shows solid vertical feeder from BUS-480-E2B to MCC-2B1
+BUS-480-E2B,MCC-2B2,HIGH,AC power feeder,raw 480 crop shows solid vertical feeder from BUS-480-E2B to MCC-2B2
+BUS-480-E2B,PN-480-B,HIGH,AC power feeder,raw 480 crop shows solid vertical feeder from BUS-480-E2B to PN-480-B
+BUS-480-E2B,GND-B,HIGH,equipment ground,raw 480 crop shows GND-B symbol terminating on BUS-480-E2B branch
+MCC-2A1,CB-51A,HIGH,AC power feeder,raw load feeders A shows MCC-2A1 left feeder landing at CB-51A
+CB-51A,PUMP-SI-2A,HIGH,AC power feeder,raw load feeders A shows CB-51A lower feeder terminating at PUMP-SI-2A
+MCC-2A1,CB-52A,HIGH,AC power feeder,raw load feeders A shows MCC-2A1 second feeder landing at CB-52A
+CB-52A,PUMP-RHR-2A,HIGH,AC power feeder,raw load feeders A shows CB-52A lower feeder terminating at PUMP-RHR-2A
+MCC-2A1,CB-53A,HIGH,AC power feeder,raw load feeders A shows MCC-2A1 third feeder landing at CB-53A
+CB-53A,PUMP-CS-2A,HIGH,AC power feeder,raw load feeders A shows CB-53A lower feeder terminating at PUMP-CS-2A
+MCC-2A1,CB-54A,HIGH,AC power feeder,raw load feeders A shows MCC-2A1 right feeder landing at CB-54A
+CB-54A,PUMP-CCW-2A,HIGH,AC power feeder,raw load feeders A shows CB-54A lower feeder terminating at PUMP-CCW-2A
+MCC-2A2,CB-55A,HIGH,AC power feeder,raw load feeders A shows MCC-2A2 left feeder landing at CB-55A
+CB-55A,FAN-CRE-2A,HIGH,AC power feeder,raw load feeders A shows CB-55A lower feeder terminating at FAN-CRE-2A
+MCC-2A2,CB-56A,HIGH,AC power feeder,raw load feeders A shows MCC-2A2 feeder landing at CB-56A
+CB-56A,MOV-8801A,HIGH,AC power feeder,raw load feeders A shows CB-56A lower feeder terminating at MOV-8801A
+MCC-2A2,CB-57A,HIGH,AC power feeder,raw load feeders A shows MCC-2A2 feeder landing at CB-57A
+CB-57A,MOV-8802A,HIGH,AC power feeder,raw load feeders A shows CB-57A lower feeder terminating at MOV-8802A
+MCC-2A2,CB-58A,HIGH,AC power feeder,raw load feeders A shows MCC-2A2 right feeder landing at CB-58A
+CB-58A,PUMP-AF-2A,HIGH,AC power feeder,raw load feeders A shows CB-58A lower feeder terminating at PUMP-AF-2A
+PN-480-A,MOV-8810A,HIGH,AC power feeder,raw left lower detail shows PN-480-A 2E-180 branch dropping to MOV-8810A
+PN-480-A,PUMP-CHG-2A,HIGH,AC power feeder,raw left lower detail shows PN-480-A right feeder dropping to PUMP-CHG-2A
+PUMP-CHG-2A,VLV-HV-302A,MEDIUM,AC power feeder,raw load feeders A shows same solid vertical feeder continuing from pump area to VLV-HV-302A
+MCC-2C,FAN-VENT-2A,HIGH,AC power feeder,raw left lower detail shows MCC-2C lower feeder descending to FAN-VENT-2A
+MCC-2C,CHGR-125A,MEDIUM,AC power feeder,raw DC UPS A shows solid MCC-2C branch landing at CHGR-125A AC side
+CB-N1,CHGR-125A,HIGH,AC power feeder,raw 480 and DC UPS A show CB-N1 output landing on CHGR-125A
+CB-N2,MCC-2D,HIGH,AC power feeder,raw 480 crop shows CB-N2 feeder landing at MCC-2D
+MCC-2D,PUMP-CHG-2B,HIGH,AC power feeder,raw left lower detail shows MCC-2D lower feeder descending to PUMP-CHG-2B
+MCC-2D,FAN-VENT-2B,HIGH,AC power feeder,raw left lower detail shows MCC-2D second lower feeder descending to FAN-VENT-2B
+CHGR-125A,BAT-2A,HIGH,125 VDC feeder,raw DC UPS A shows dashed DC link between CHGR-125A and BAT-2A
+CHGR-125A,BUS-125DC-A,HIGH,125 VDC feeder,raw DC UPS A shows charger DC drop landing on BUS-125DC-A dot
+BAT-2A,BUS-125DC-A,HIGH,125 VDC feeder,raw DC UPS A shows battery dashed lead landing on BUS-125DC-A dot
+BUS-125DC-A,FUSE-125A,HIGH,125 VDC feeder,raw DC UPS A shows dashed tap from DC bus to FUSE-125A
+FUSE-125A,PN-125A,HIGH,125 VDC feeder,raw DC UPS A shows dashed lead continuing from FUSE-125A to PN-125A
+BUS-125DC-A,INV-120A,HIGH,125 VDC feeder,raw DC UPS A shows DC bus drop terminating at INV-120A
+INV-120A,BUS-120AC-A,HIGH,120 VAC control,raw DC UPS A shows inverter output landing on BUS-120AC-A
+BUS-120AC-A,FUSE-120A,HIGH,120 VAC control,raw DC UPS A shows BUS-120AC-A branch dropping through FUSE-120A
+FUSE-120A,PN-120A,HIGH,120 VAC control,raw DC UPS A shows control lead continuing from FUSE-120A to PN-120A
+PN-125A,CP-ESFAS-A,HIGH,125 VDC feeder,raw DC UPS A and cable table show PN-125A feeder terminating at CP-ESFAS-A
+PN-120A,CP-RPS-A,HIGH,120 VAC control,raw DC UPS A shows PN-120A dashed control feeder dropping to CP-RPS-A
+MOV-8801A,JB-2A1,HIGH,interlock trip permit,raw load feeders A shows dashed 2C-335 lead from MOV-8801A to JB-2A1
+JB-2A1,RELAY-K1A,MEDIUM,interlock trip permit,raw bottom crosslinks show dashed run from JB-2A1 into RELAY-K1A routing
+RELAY-K1A,CP-ESFAS-A,HIGH,interlock trip permit,raw bottom crosslinks show 2C-326 dashed line from RELAY-K1A to CP-ESFAS-A
+RELAY-K1A,CB-51A,HIGH,interlock trip permit,raw load feeders A and cable table show K1A dashed control to CB-51A
+RELAY-K1A,CB-52A,MEDIUM,interlock trip permit,raw load feeders A shows CB-52A dashed vertical landing in the K1A bundle
+RELAY-K1A,CB-53A,MEDIUM,interlock trip permit,raw load feeders A shows CB-53A dashed vertical landing in the K1A bundle
+MCC-2B1,CB-51B,HIGH,AC power feeder,raw load feeders B shows MCC-2B1 left feeder landing at CB-51B
+CB-51B,PUMP-SI-2B,HIGH,AC power feeder,raw load feeders B shows CB-51B lower feeder terminating at PUMP-SI-2B
+MCC-2B1,CB-52B,HIGH,AC power feeder,raw load feeders B shows MCC-2B1 second feeder landing at CB-52B
+CB-52B,PUMP-RHR-2B,HIGH,AC power feeder,raw load feeders B shows CB-52B lower feeder terminating at PUMP-RHR-2B
+MCC-2B1,CB-53B,HIGH,AC power feeder,raw load feeders B shows MCC-2B1 third feeder landing at CB-53B
+CB-53B,PUMP-CS-2B,HIGH,AC power feeder,raw load feeders B shows CB-53B lower feeder terminating at PUMP-CS-2B
+MCC-2B1,CB-54B,HIGH,AC power feeder,raw load feeders B shows MCC-2B1 right feeder landing at CB-54B
+CB-54B,PUMP-CCW-2B,HIGH,AC power feeder,raw load feeders B shows CB-54B lower feeder terminating at PUMP-CCW-2B
+MCC-2B2,CB-55B,HIGH,AC power feeder,raw load feeders B shows MCC-2B2 left feeder landing at CB-55B
+CB-55B,FAN-CRE-2B,HIGH,AC power feeder,raw load feeders B shows CB-55B lower feeder terminating at FAN-CRE-2B
+MCC-2B2,CB-56B,HIGH,AC power feeder,raw load feeders B shows MCC-2B2 feeder landing at CB-56B
+CB-56B,MOV-8801B,HIGH,AC power feeder,raw load feeders B shows CB-56B lower feeder terminating at MOV-8801B
+MCC-2B2,CB-57B,HIGH,AC power feeder,raw load feeders B shows MCC-2B2 feeder landing at CB-57B
+CB-57B,MOV-8802B,HIGH,AC power feeder,raw load feeders B shows CB-57B lower feeder terminating at MOV-8802B
+MCC-2B2,CB-58B,HIGH,AC power feeder,raw load feeders B shows MCC-2B2 right feeder landing at CB-58B
+CB-58B,PUMP-AF-2B,HIGH,AC power feeder,raw load feeders B shows CB-58B lower feeder terminating at PUMP-AF-2B
+PN-480-B,CHGR-125B,HIGH,AC power feeder,raw DC UPS B shows PN-480-B solid branch feeding CHGR-125B AC side
+CHGR-125B,BAT-2B,HIGH,125 VDC feeder,raw DC UPS B shows dashed DC link between CHGR-125B and BAT-2B
+CHGR-125B,BUS-125DC-B,HIGH,125 VDC feeder,raw DC UPS B shows charger DC drop landing on BUS-125DC-B dot
+BAT-2B,BUS-125DC-B,HIGH,125 VDC feeder,raw DC UPS B shows battery dashed lead landing on BUS-125DC-B dot
+BUS-125DC-B,FUSE-125B,HIGH,125 VDC feeder,raw DC UPS B shows dashed tap from DC bus to FUSE-125B
+FUSE-125B,PN-125B,HIGH,125 VDC feeder,raw DC UPS B shows dashed lead continuing from FUSE-125B to PN-125B
+BUS-125DC-B,INV-120B,HIGH,125 VDC feeder,raw DC UPS B shows DC bus drop terminating at INV-120B
+INV-120B,BUS-120AC-B,HIGH,120 VAC control,raw DC UPS B shows inverter output landing on BUS-120AC-B
+BUS-120AC-B,FUSE-120B,HIGH,120 VAC control,raw DC UPS B shows BUS-120AC-B branch dropping through FUSE-120B
+FUSE-120B,PN-120B,HIGH,120 VAC control,raw DC UPS B shows control lead continuing from FUSE-120B toward PN-120B
+PN-125B,CP-ESFAS-B,HIGH,125 VDC feeder,raw DC UPS B and cable table show PN-125B feeder terminating at CP-ESFAS-B
+PN-120B,CP-RPS-B,HIGH,120 VAC control,raw DC UPS B shows PN-120B dashed control feeder dropping to CP-RPS-B
+PN-120B,VLV-HV-302B,HIGH,120 VAC control,raw DC UPS B shows PN-120B branch landing at VLV-HV-302B
+FUSE-120B,VLV-HV-302B,MEDIUM,120 VAC control,raw DC UPS B shows FUSE-120B route joining the VLV-HV-302B control branch
+MOV-8801B,JB-2B1,HIGH,interlock trip permit,raw load feeders B shows dashed lead from MOV-8801B to JB-2B1
+JB-2B1,RELAY-K1B,MEDIUM,interlock trip permit,raw bottom crosslinks show dashed run from JB-2B1 into RELAY-K1B routing
+RELAY-K1B,CP-ESFAS-B,HIGH,interlock trip permit,raw bottom crosslinks show dashed line from RELAY-K1B to CP-ESFAS-B
+RELAY-K1B,CB-51B,HIGH,interlock trip permit,raw load feeders B and cable table show K1B dashed control to CB-51B
+RELAY-K1B,CB-52B,MEDIUM,interlock trip permit,raw load feeders B shows CB-52B dashed vertical landing in the K1B bundle
+RELAY-K1B,CB-53B,MEDIUM,interlock trip permit,raw load feeders B shows CB-53B dashed vertical landing in the K1B bundle

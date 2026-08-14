@@ -1,0 +1,56 @@
+{
+  "document": "12",
+  "iteration": "1",
+  "resource_folder": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\12\\Raw + components",
+  "source_restriction": "Only Document 12 Raw + components resources were used; no GT, no OCR, no web.",
+  "agents": [
+    "Diego",
+    "Jennifer"
+  ],
+  "round_sequence": [
+    "Diego round 1 high-recall extraction",
+    "Jennifer round 1 precision review",
+    "Diego round 2 saturation review",
+    "Jennifer round 2 final confirmation"
+  ],
+  "agreement_status": {
+    "status": "final_saturated_consensus",
+    "confirmed_by": "Jennifer",
+    "agrees_with_diego_round2": true,
+    "final_corrections_required": false,
+    "summary": "Final confirmation found no node changes, label corrections, asserted-edge changes, uncertain-edge changes, or removals. Saturation/final consensus confirmed.",
+    "matrix_policy": "Final CSV contains refined asserted_edges only; uncertain_edges are excluded."
+  },
+  "validation": {
+    "node_count": 160,
+    "asserted_edge_count": 163,
+    "symmetric": true,
+    "diagonal_zero": true,
+    "binary": true
+  },
+  "uncertain_edge_count": 25,
+  "removed_edge_count": 0,
+  "label_correction_count": 0,
+  "round_files_copied": [
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\12\\Raw + components\\results\\diego_round1_edges.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\12\\Raw + components\\results\\diego_round1_connectivity_matrix.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\12\\Raw + components\\results\\jennifer_round1_nodes.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\12\\Raw + components\\results\\jennifer_round1_edges.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\12\\Raw + components\\results\\jennifer_round1_connectivity_matrix.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\12\\Raw + components\\results\\diego_round2_edges.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\12\\Raw + components\\results\\diego_round2_connectivity_matrix.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\12\\Raw + components\\results\\jennifer_round2_final_nodes.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\12\\Raw + components\\results\\jennifer_round2_final_edges.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\12\\Raw + components\\results\\jennifer_round2_final_connectivity_matrix.csv"
+  ],
+  "token_estimate_totals": {
+    "total_input_tokens_expected": 165896,
+    "total_image_tokens_expected": 42415,
+    "total_output_tokens_expected": 162781,
+    "total_reasoning_tokens_expected": 78000,
+    "total_tokens_low": 312983,
+    "total_tokens_expected": 406677,
+    "total_tokens_high": 565374
+  },
+  "generated_at_utc": "2026-07-17T16:50:18.747979+00:00"
+}

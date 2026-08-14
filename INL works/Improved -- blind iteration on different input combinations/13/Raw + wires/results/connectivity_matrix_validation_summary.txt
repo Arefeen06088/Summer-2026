@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 13
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\13\synthetic_npp_connectivity_matrix_dc_bus_clean_retry.csv
+GT normalized nodes: 187; GT normalized edges: 194
+Matrices evaluated: 5
+Best row: Diego -- Round 2 from connectivity_matrix_round_02_diego_saturation.csv with Precision=0.958115, Recall=0.943299, F1=0.950649
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=183, FP=8, FN=11, Precision=0.958115, Recall=0.943299, F1=0.950649
+Primary issue: missing or differently named GT components contributed false negatives.
+
+Extra/non-GT nodes most responsible for FP edges: UNIT-GEN-AUX-FEED (3 FP edges); LOCAL-I/O-C (1 FP edges); LOCAL-I/O-B (1 FP edges); LOCAL-I/O-D (1 FP edges); LOCAL-I/O-A (1 FP edges).
+Missing GT nodes examples: GND-A; GND-B; GND-C; GND-D; GND-PLANT.
+No strong close-name mismatches were detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: BUS-4A -- TR-SUT-1B.
+False-negative edge examples among GT-known nodes: BUS-4B -- TR-SUT-1B; CB-201 -- TR-UAT-1A; CB-201 -- TR-UAT-1B.
+False-positive examples involving extra/non-GT nodes: CB-201 -- UNIT-GEN-AUX-FEED; LC-480A -- LOCAL-I/O-A; LC-480B -- LOCAL-I/O-B; LC-480C -- LOCAL-I/O-C; LC-480D -- LOCAL-I/O-D; TR-UAT-1A -- UNIT-GEN-AUX-FEED; TR-UAT-1B -- UNIT-GEN-AUX-FEED.
+False-negative examples involving missing/differently named nodes: GND-A -- GND-PLANT; GND-A -- TR-480A; GND-B -- GND-PLANT; GND-B -- TR-480B; GND-C -- GND-PLANT; GND-C -- TR-480C; GND-D -- GND-PLANT; GND-D -- TR-480D.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (UNIT-GEN-AUX-FEED; LOCAL-I/O-C; LOCAL-I/O-B; LOCAL-I/O-D; LOCAL-I/O-A), the final-row metrics would be TP=183, FP=1, FN=11, Precision=0.994565, Recall=0.943299, F1=0.968254.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=183, FP=1, FN=11, Precision=0.994565, Recall=0.943299, F1=0.968254.

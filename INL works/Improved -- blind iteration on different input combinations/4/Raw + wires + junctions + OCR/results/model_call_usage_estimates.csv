@@ -1,0 +1,6 @@
+document,iteration,agent,call_id,call_purpose,input_text_tokens_expected,cached_input_tokens_estimate,image_file_tokens_expected,output_tokens_low,output_tokens_expected,output_tokens_high,reasoning_tokens_available,reasoning_tokens_estimate,usage_object_collected,total_tokens_low,total_tokens_expected,total_tokens_high,notes
+4,1,main-agent,main-aggregate,"orchestration, local visual inspection, artifact generation",76000,28000,17935,2500,4500,8500,not_exposed,not_available,no,96435,98435,102435,Usage object unavailable in Codex; cumulative estimate across main turns
+4,1,Diego,diego-r1,high-recall extraction,5600,0,11390,2500,4200,7500,not_exposed,not_available,no,19490,21190,24490,Prompt plus images; output estimated from returned path proposal
+4,1,Jennifer,jennifer-r1,precision review,6200,0,13855,1300,2300,4200,not_exposed,not_available,no,21355,22355,24255,Reviewed Diego proposal plus focused crops
+4,1,Diego,diego-r2,narrow cleanup agreement,550,400,0,150,300,700,not_exposed,not_available,no,700,850,1250,Follow-up call in same subagent thread; cached tokens not exposed
+4,1,Jennifer,jennifer-r2,final saturation,450,350,0,120,220,450,not_exposed,not_available,no,570,670,900,Final confirmation call; cached tokens not exposed

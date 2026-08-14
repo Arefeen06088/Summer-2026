@@ -1,0 +1,124 @@
+source,target,confidence,evidence,include_in_matrix
+GEN-G201,IPB-201,H,solid feeder,True
+IPB-201,CB-GEN-201,H,solid feeder,True
+CB-GEN-201,GSU-201,H,solid feeder,True
+GSU-201,SWYD-BUS-A,H,solid drop to upper switchyard bus,True
+SWYD-BUS-A,CB-TIE-230,H,tie breaker terminal,True
+CB-TIE-230,SWYD-BUS-B,H,tie breaker terminal,True
+SWYD-BUS-A,CB-GRID-A,H,solid bus tap,True
+CB-GRID-A,GRID-230A,H,solid feeder,True
+SWYD-BUS-B,CB-GRID-B,H,solid bus tap,True
+CB-GRID-B,GRID-230B,H,solid feeder,True
+IPB-201,TR-UAT-201,M,generator/IPB branch,True
+IPB-201,TR-UAT-202,M,generator/IPB branch,True
+SWYD-BUS-B,TR-SST-201,H,solid lower-bus drop,True
+SWYD-BUS-B,TR-SST-202,H,solid lower-bus drop,True
+TR-UAT-201,CB-UAT-1,H,solid feeder,True
+CB-UAT-1,BUS-6KV-A,H,solid bus drop,True
+TR-SST-201,CB-SST-1,H,solid feeder,True
+CB-SST-1,BUS-6KV-A,H,solid bus drop,True
+TR-UAT-202,CB-UAT-2,H,solid feeder,True
+CB-UAT-2,BUS-6KV-B,H,solid bus drop,True
+TR-SST-202,CB-SST-2,H,solid feeder,True
+CB-SST-2,BUS-6KV-B,H,solid bus drop,True
+DG EDG-201A,CB-DG-A,H,solid feeder,True
+CB-DG-A,ATS-A,H,solid feeder,True
+ATS-A,BUS-6KV-A,H,solid bus drop,True
+CT-EDG-A,DG EDG-201A,M,visible associated instrument line,True
+BUS-6KV-A,PT-6KV-A,H,solid bus tap,True
+BUS-6KV-A,DS-6KV-A,H,solid bus drop,True
+DS-6KV-A,BUS-4KV-N,H,disconnect to 4 kV N bus,True
+BUS-6KV-A,CB-TIE-6KV,H,tie breaker terminal,True
+CB-TIE-6KV,BUS-6KV-B,H,tie breaker terminal,True
+DG EDG-201B,CB-DG-B,H,solid feeder,True
+CB-DG-B,ATS-B,H,solid feeder,True
+ATS-B,BUS-6KV-B,H,solid bus drop,True
+CT-EDG-B,DG EDG-201B,M,visible associated instrument line,True
+BUS-6KV-B,PT-6KV-B,H,solid bus tap,True
+BUS-6KV-B,DS-6KV-B,H,solid bus drop,True
+DS-6KV-B,BUS-4KV-N,H,disconnect to 4 kV N bus,True
+BUS-4KV-N,TR-480N,H,solid transformer drop,True
+BUS-6KV-A,TR-480A,H,solid transformer drop,True
+BUS-6KV-B,TR-480B,H,solid transformer drop,True
+TR-480A,CB-LC-A1,H,solid feeder,True
+CB-LC-A1,LC-480A,H,solid feeder,True
+LC-480A,UV-SENS-A,M,dashed sensor lead,True
+LC-480A,MCC-CCW-A,H,solid feeder,True
+MCC-CCW-A,JBX-CCW-A,H,solid feeder,True
+JBX-CCW-A,PUMP-CCW-A,H,solid feeder,True
+MCC-CCW-A,MOV-CCW-201A,H,solid feeder,True
+LC-480A,MCC-SW-A,H,solid feeder,True
+MCC-SW-A,JBX-SW-A,H,solid feeder,True
+JBX-SW-A,PUMP-SW-A,H,solid feeder,True
+LC-480A,MCC-HPI-A,H,solid feeder,True
+MCC-HPI-A,PUMP-HPI-A,H,solid feeder,True
+LC-480A,MCC-VENT-A,H,solid feeder,True
+MCC-VENT-A,MOV-SI-201A,H,solid feeder,True
+MCC-VENT-A,FAN-CR-A,H,solid feeder,True
+MOV-SI-201A,FAN-CR-A,U,short dashed neighbor link ambiguous,False
+TR-480B,CB-LC-B1,H,solid feeder,True
+CB-LC-B1,LC-480B,H,solid feeder,True
+LC-480B,UV-SENS-B,M,dashed sensor lead,True
+LC-480B,MCC-CCW-B,H,solid feeder,True
+MCC-CCW-B,JBX-CCW-B,H,solid feeder,True
+JBX-CCW-B,PUMP-CCW-B,H,solid feeder,True
+MCC-CCW-B,MOV-CCW-201B,H,solid feeder,True
+LC-480B,MCC-SW-B,H,solid feeder,True
+MCC-SW-B,JBX-SW-B,H,solid feeder,True
+JBX-SW-B,PUMP-SW-B,H,solid feeder,True
+LC-480B,MCC-HPI-B,H,solid feeder,True
+MCC-HPI-B,PUMP-HPI-B,H,solid feeder,True
+LC-480B,MCC-VENT-B,H,solid feeder,True
+MCC-VENT-B,MOV-SI-201B,H,solid feeder,True
+MCC-VENT-B,FAN-CR-B,H,solid feeder,True
+MOV-SI-201B,FAN-CR-B,U,short dashed neighbor link ambiguous,False
+TR-480N,CB-LC-N1,H,solid feeder,True
+CB-LC-N1,LC-480N,H,solid feeder,True
+LC-480N,LP-N-A,H,solid feeder,True
+LP-N-A,HTR-BLDG-A,H,solid feeder,True
+LC-480N,LP-N-B,H,solid feeder,True
+LP-N-B,HTR-BLDG-B,H,solid feeder,True
+AC/DC CHGR-A,PNL-DC-A,H,solid DC/UPS link,True
+AC/DC CHGR-A,BAT-125A,H,solid battery link,True
+BAT-125A,AC/DC REC-A,M,visible branch but partly indirect,True
+AC/DC REC-A,PNL-DC-A,H,solid vertical link,True
+AC/DC REC-A,UPS-A,H,solid link,True
+DC/AC INV-A,UPS-A,H,solid link,True
+BAT-125A,GND-A,M,dotted ground bond,True
+GND-A,GND-MAIN,M,dotted ground bond,True
+AC/DC CHGR-B,PNL-DC-B,H,solid DC/UPS link,True
+AC/DC CHGR-B,BAT-125B,H,solid battery link,True
+BAT-125B,AC/DC REC-B,M,visible branch but partly indirect,True
+AC/DC REC-B,PNL-DC-B,H,solid vertical link,True
+AC/DC REC-B,UPS-B,H,solid link,True
+DC/AC INV-B,UPS-B,H,solid link,True
+BAT-125B,GND-B,M,dotted ground bond,True
+GND-B,GND-MAIN,M,dotted ground bond,True
+CT-EDG-A,PNL-INST-A,U,long dashed instrument path not fully traceable,False
+CT-EDG-B,PNL-INST-B,U,long dashed instrument path not fully traceable,False
+UV-SENS-A,RELAY-UV-A,M,long dashed sensing path,True
+UV-SENS-B,RELAY-UV-B,M,long dashed sensing path,True
+PNL-INST-A,RELAY-UV-A,M,dashed terminal-to-terminal path,True
+PNL-INST-B,RELAY-UV-B,M,dashed terminal-to-terminal path,True
+CP-ESFAS-A,RELAY-SI-A,M,dashed terminal path,True
+CP-ESFAS-B,RELAY-SI-B,M,dashed terminal path,True
+CP-ESFAS-A,PLC-RPS-A,U,shared dashed trunk/crossings ambiguous,False
+CP-ESFAS-B,PLC-RPS-B,U,shared dashed trunk/crossings ambiguous,False
+CP-ESFAS-A,JBX-ESF-A,M,dashed ESF path,True
+CP-ESFAS-B,JBX-ESF-B,M,dashed ESF path,True
+PLC-RPS-A,RELAY-LOAD-A,M,dashed terminal path,True
+PLC-RPS-B,RELAY-LOAD-B,M,dashed terminal path,True
+PLC-RPS-A,RELAY-DG-A,U,dense dashed trunk ambiguous,False
+PLC-RPS-B,RELAY-DG-B,U,dense dashed trunk ambiguous,False
+JBX-ESF-A,RELAY-DG-A,M,dashed terminal path,True
+JBX-ESF-B,RELAY-DG-B,M,dashed terminal path,True
+DG EDG-201A,RELAY-DG-A,U,long dashed control route ambiguous,False
+DG EDG-201B,RELAY-DG-B,U,long dashed control route ambiguous,False
+ATS-A,RELAY-DG-A,U,long dashed control route ambiguous,False
+ATS-B,RELAY-DG-B,U,long dashed control route ambiguous,False
+MOV-SI-201A,RELAY-SI-A,L,long dashed control/sensing route,True
+MOV-SI-201B,RELAY-SI-B,L,long dashed control/sensing route,True
+FAN-CR-A,RELAY-LOAD-A,L,long dashed load-control route,True
+FAN-CR-B,RELAY-LOAD-B,L,long dashed load-control route,True
+PUMP-HPI-A,RELAY-LOAD-A,L,long dashed load-control route,True
+PUMP-HPI-B,RELAY-LOAD-B,L,long dashed load-control route,True

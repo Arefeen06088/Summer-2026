@@ -1,0 +1,56 @@
+{
+  "document": "4",
+  "iteration": 1,
+  "round": "round_01_diego",
+  "node_count": 120,
+  "edge_count": 127,
+  "agent": "Diego",
+  "role": "high-recall extractor",
+  "matrix_policy": "Includes Diego's confident edges plus plausible/uncertain dashed/control extras as 1s; uncertain extras are listed separately.",
+  "uncertain_edges_included": [
+    [
+      "RPS-TRAIN-A",
+      "RELAY-K701"
+    ],
+    [
+      "ESFAS-TRAIN-A",
+      "RELAY-K701"
+    ],
+    [
+      "RELAY-K701",
+      "TB-ESF-A"
+    ],
+    [
+      "ANN-CP-A",
+      "TB-ESF-A"
+    ],
+    [
+      "RPS-TRAIN-B",
+      "RELAY-K702"
+    ],
+    [
+      "ESFAS-TRAIN-B",
+      "RELAY-K702"
+    ],
+    [
+      "RELAY-K702",
+      "TB-ESF-B"
+    ],
+    [
+      "REC-SER-01",
+      "TB-ESF-B"
+    ],
+    [
+      "ANN-CP-A",
+      "REC-SER-01"
+    ],
+    [
+      "RELAY-K701",
+      "CB-LC-B"
+    ],
+    [
+      "RELAY-K702",
+      "CB-LC-B2"
+    ]
+  ]
+}

@@ -1,0 +1,35 @@
+Connectivity matrix validation summary - Document 6 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\6\synthetic_npp_connectivity_matrix_variant3_redo_clean_v7.csv
+GT after normalization: 131 undirected edges across 105 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token estimate: low=106600, expected=126460, high=159730.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=111, FP=20, FN=20, Precision=0.847328, Recall=0.847328, F1=0.847328.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names; missing exact GT component names; close-but-not-exact component names.
+- Extracted components: 105; extra/non-GT names: 2; missing GT component names: 2.
+- False-positive extracted edge examples: ATS-A -- RELAY-DG-A; ATS-B -- RELAY-DG-B; CB-DG-A -- DG-201A; CB-DG-B -- DG-201B; CT-EDG-A -- DG-201A; CT-EDG-B -- DG-201B; DG-201A -- RELAY-DG-A; DG-201B -- RELAY-DG-B; ... (+12 more).
+- Missed GT edge examples: ATS-A -- RELAY-UV-A; ATS-B -- RELAY-UV-B; CB-DG-A -- EDG-201A; CB-DG-B -- EDG-201B; CP-ESFAS-A -- PNL-DC-A; CP-ESFAS-B -- PNL-DC-B; CT-EDG-A -- EDG-201A; CT-EDG-A -- PNL-INST-A; ... (+12 more).
+- Extra/non-GT component examples: DG-201A; DG-201B.
+- Missing GT component examples: EDG-201A; EDG-201B.
+- Close-but-not-exact component examples: DG-201A ~ EDG-201A (0.93); DG-201B ~ EDG-201B (0.93).
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=111, FP=0, FN=20, Precision=1.000000, Recall=0.847328, F1=0.917355.
+- If all missed GT edges were added, final performance would be TP=131, FP=20, FN=0, Precision=0.867550, Recall=1.000000, F1=0.929078.
+- If extra node DG-201A and its 3 false-positive incident edge(s) were not put in extraction, final performance would be TP=111, FP=17, FN=20, Precision=0.867188, Recall=0.847328, F1=0.857143.
+- If extra node DG-201B and its 3 false-positive incident edge(s) were not put in extraction, final performance would be TP=111, FP=17, FN=20, Precision=0.867188, Recall=0.847328, F1=0.857143.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.847328.
+
+Round-specific notes:
+- Jennifer -- Round 2: TP=111, FP=20, FN=20, F1=0.847328; extra nodes=2, missing GT nodes=2. FP examples: ATS-A -- RELAY-DG-A; ATS-B -- RELAY-DG-B; CB-DG-A -- DG-201A; CB-DG-B -- DG-201B; ... (+16 more). FN examples: ATS-A -- RELAY-UV-A; ATS-B -- RELAY-UV-B; CB-DG-A -- EDG-201A; CB-DG-B -- EDG-201B; ... (+16 more).
+- Diego -- Round 3: TP=111, FP=20, FN=20, F1=0.847328; extra nodes=2, missing GT nodes=2. FP examples: ATS-A -- RELAY-DG-A; ATS-B -- RELAY-DG-B; CB-DG-A -- DG-201A; CB-DG-B -- DG-201B; ... (+16 more). FN examples: ATS-A -- RELAY-UV-A; ATS-B -- RELAY-UV-B; CB-DG-A -- EDG-201A; CB-DG-B -- EDG-201B; ... (+16 more).
+- Jennifer -- Round 4: TP=111, FP=20, FN=20, F1=0.847328; extra nodes=2, missing GT nodes=2. FP examples: ATS-A -- RELAY-DG-A; ATS-B -- RELAY-DG-B; CB-DG-A -- DG-201A; CB-DG-B -- DG-201B; ... (+16 more). FN examples: ATS-A -- RELAY-UV-A; ATS-B -- RELAY-UV-B; CB-DG-A -- EDG-201A; CB-DG-B -- EDG-201B; ... (+16 more).
+- Final connectivity -- Final: TP=111, FP=20, FN=20, F1=0.847328; extra nodes=2, missing GT nodes=2. FP examples: ATS-A -- RELAY-DG-A; ATS-B -- RELAY-DG-B; CB-DG-A -- DG-201A; CB-DG-B -- DG-201B; ... (+16 more). FN examples: ATS-A -- RELAY-UV-A; ATS-B -- RELAY-UV-B; CB-DG-A -- EDG-201A; CB-DG-B -- EDG-201B; ... (+16 more).

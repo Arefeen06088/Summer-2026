@@ -1,0 +1,65 @@
+Connectivity matrix validation summary - Document 5
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\5\synthetic_npp_connectivity_matrix_final_cleaned_v4.csv
+
+Scores:
+- Diego -- Round 1 (diego_round_1_matrix.csv): TP=95, FP=32, FN=45, Precision=0.748031, Recall=0.678571, F1=0.711610
+- Jennifer -- Round 1 (jennifer_round_1_matrix.csv): TP=96, FP=28, FN=44, Precision=0.774194, Recall=0.685714, F1=0.727273
+- Diego -- Round 2 (diego_round_2_matrix.csv): TP=96, FP=30, FN=44, Precision=0.761905, Recall=0.685714, F1=0.721805
+- Jennifer -- Round 2 (jennifer_round_2_matrix.csv): TP=96, FP=29, FN=44, Precision=0.768000, Recall=0.685714, F1=0.724528
+- Diego -- Round 3 (diego_round_3_agreement_matrix.csv): TP=96, FP=29, FN=44, Precision=0.768000, Recall=0.685714, F1=0.724528
+- Final connectivity -- Final (connectivity_matrix_final.csv): TP=96, FP=29, FN=44, Precision=0.768000, Recall=0.685714, F1=0.724528
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- 230KV-SWITCHYARD-BUS -- BRK-2301
+- 230KV-SWITCHYARD-BUS -- BRK-2302
+- 230KV-SWITCHYARD-BUS -- BUS-SY230
+- 230KV-SWITCHYARD-BUS -- TR-RAT-1A
+- 230KV-SWITCHYARD-BUS -- TR-RAT-1B
+- BUS-416A -- RELAY-K1A
+- BUS-416B -- RELAY-K1B
+- BUS-416C -- RELAY-K2A
+- BUS-416D -- RELAY-K2B
+- BUS-NON1 -- TR-SAF-C
+
+False-negative edge examples:
+- BRK-2301 -- BUS-SY230
+- BRK-2302 -- BUS-SY230
+- BUS-416A -- RELAY-UV-A
+- BUS-416B -- RELAY-UV-B
+- BUS-416C -- RELAY-LOOP-C
+- BUS-416D -- RELAY-LOOP-D
+- BUS-AUX13B -- BUS-NON1
+- BUS-SY230 -- GND-GRID
+- BUS-SY230 -- TR-RAT-1A
+- BUS-SY230 -- TR-RAT-1B
+
+Extra/non-GT nodes causing performance drops:
+- 230KV-SWITCHYARD-BUS: 5 incident false-positive edge(s)
+- XFEER-ATS-B: 3 incident false-positive edge(s)
+- XFEER-ATS-A: 2 incident false-positive edge(s)
+- V-MSIV-A: 2 incident false-positive edge(s)
+- V-MSIV-B: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (230KV-SWITCHYARD-BUS, XFEER-ATS-B, XFEER-ATS-A, V-MSIV-A, V-MSIV-B), final metrics would be TP=96, FP=17, FN=44, Precision=0.849558, Recall=0.685714, F1=0.758893.
+- If all 5 non-GT nodes were omitted, metrics would be TP=96, FP=17, FN=44, Precision=0.849558, Recall=0.685714, F1=0.758893.
+
+Missing GT node examples:
+- GND-GRID: 8 missed incident GT edge(s)
+- XFER-ATS-A: 3 missed incident GT edge(s)
+- XFER-ATS-B: 3 missed incident GT edge(s)
+- VLV-MSIV-A: 1 missed incident GT edge(s)
+- VLV-MSIV-B: 1 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted XFEER-ATS-A vs GT XFER-ATS-A (similarity 0.95)
+- Extracted XFEER-ATS-B vs GT XFER-ATS-B (similarity 0.95)
+- Extracted V-MSIV-A vs GT VLV-MSIV-A (similarity 0.89)
+- Extracted V-MSIV-B vs GT VLV-MSIV-B (similarity 0.89)

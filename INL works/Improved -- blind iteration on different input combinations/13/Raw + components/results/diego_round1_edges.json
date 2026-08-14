@@ -1,0 +1,1334 @@
+{
+  "document": "13",
+  "round": "1",
+  "extractor": "Diego",
+  "source_scope": {
+    "allowed_folder": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\13\\Raw + components",
+    "method": "Manual visual inspection of the raw schematic and same-folder component-overlay/crop images only; no GT, no prior-document answers, no Raw+wires resources, no OCR.",
+    "primary_images_used": [
+      "raw -- synthetic diagram _.png",
+      "results/raw_01_left_schematic_full.png",
+      "results/raw_02_top_sources_and_4160_buses.png",
+      "results/raw_03_train_a_full_2x.png",
+      "results/raw_04_train_b_full_2x.png",
+      "results/raw_05_train_c_full_2x.png",
+      "results/raw_06_train_d_full_2x.png",
+      "results/raw_07_train_a_loads_dc_zoom_2x.png",
+      "results/raw_08_train_b_loads_dc_zoom_2x.png",
+      "results/raw_09_train_c_loads_dc_zoom_2x.png",
+      "results/raw_10_train_d_loads_dc_zoom_2x.png",
+      "results/raw_11_startup_switchyard_feed_2x.png",
+      "results/raw_12_train_a_source_detail_2x.png",
+      "results/raw_13_train_b_source_detail_2x.png",
+      "results/raw_14_train_c_source_detail_2x.png",
+      "results/raw_15_train_d_source_detail_2x.png",
+      "results/raw_16_common_ground_and_cross_ties.png",
+      "results/raw_17_notes_legend_schedule.png"
+    ]
+  },
+  "node_order": [
+    "GRID-230KV",
+    "SWYD-230",
+    "DS-101",
+    "CB-101",
+    "TR-SUT-1A",
+    "TR-SUT-1B",
+    "GEN-G1",
+    "CB-201",
+    "TR-UAT-1A",
+    "TR-UAT-1B",
+    "BUS-4A",
+    "CB-DGA",
+    "EDG-A",
+    "CB-TIE-AB",
+    "CB-4A-48",
+    "TR-480A",
+    "CB-48A",
+    "LC-480A",
+    "PP-A1",
+    "MCC-A1",
+    "CB-A01",
+    "DS-A01",
+    "PMP-SI-A01",
+    "RLY-KA01",
+    "CB-A02",
+    "PMP-RHR-A02",
+    "RLY-KA02",
+    "CB-A03",
+    "DS-A03",
+    "MTR-CCW-A03",
+    "CB-A04",
+    "FAN-VC-A04",
+    "CB-A05",
+    "MOV-RCS-A05",
+    "RLY-KA05",
+    "MCC-A2",
+    "CB-A06",
+    "DS-A06",
+    "PMP-CHG-A06",
+    "CB-A07",
+    "HTR-CAB-A07",
+    "RLY-KA07",
+    "CB-A08",
+    "INST-RK-A08",
+    "CB-A09",
+    "VLV-HPI-A09",
+    "CB-A10",
+    "PNL-ESF-A10",
+    "LOCAL-IO-A",
+    "JB-A1",
+    "BAT-125A",
+    "CHG-125A",
+    "DC-BUS-A",
+    "INV-A",
+    "UPS-A",
+    "BUS-4B",
+    "CB-DGB",
+    "EDG-B",
+    "CB-4B-48",
+    "TR-480B",
+    "CB-48B",
+    "LC-480B",
+    "PP-B1",
+    "MCC-B1",
+    "CB-B01",
+    "PMP-SI-B01",
+    "CB-B02",
+    "DS-B02",
+    "PMP-RHR-B02",
+    "RLY-KB02",
+    "CB-B03",
+    "MTR-CCW-B03",
+    "CB-B04",
+    "FAN-VC-B04",
+    "RLY-KB04",
+    "CB-B05",
+    "DS-B05",
+    "MOV-RCS-B05",
+    "MCC-B2",
+    "CB-B06",
+    "PMP-CHG-B06",
+    "RLY-KB06",
+    "CB-B07",
+    "HTR-CAB-B07",
+    "CB-B08",
+    "DS-B08",
+    "INST-RK-B08",
+    "CB-B09",
+    "VLV-HPI-B09",
+    "CB-B10",
+    "PNL-ESF-B10",
+    "LOCAL-IO-B",
+    "JB-B1",
+    "BAT-125B",
+    "CHG-125B",
+    "DC-BUS-B",
+    "INV-B",
+    "UPS-B",
+    "BUS-4C",
+    "CB-DGC",
+    "EDG-C",
+    "CB-TIE-CD",
+    "CB-4C-48",
+    "TR-480C",
+    "CB-48C",
+    "LC-480C",
+    "PP-C1",
+    "MCC-C1",
+    "CB-C01",
+    "DS-C01",
+    "PMP-SI-C01",
+    "RLY-KC01",
+    "CB-C02",
+    "PMP-RHR-C02",
+    "CB-C03",
+    "MTR-CCW-C03",
+    "RLY-KC03",
+    "CB-C04",
+    "DS-C04",
+    "FAN-VC-C04",
+    "CB-C05",
+    "MOV-RCS-C05",
+    "MCC-C2",
+    "CB-C06",
+    "PMP-CHG-C06",
+    "CB-C07",
+    "DS-C07",
+    "HTR-CAB-C07",
+    "CB-C08",
+    "INST-RK-C08",
+    "RLY-KC08",
+    "CB-C09",
+    "VLV-HPI-C09",
+    "CB-C10",
+    "PNL-ESF-C10",
+    "LOCAL-IO-C",
+    "JB-C1",
+    "BAT-125C",
+    "CHG-125C",
+    "DC-BUS-C",
+    "INV-C",
+    "UPS-C",
+    "BUS-4D",
+    "CB-DGD",
+    "EDG-D",
+    "CB-4D-48",
+    "TR-480D",
+    "CB-48D",
+    "LC-480D",
+    "PP-D1",
+    "MCC-D1",
+    "CB-D01",
+    "PMP-SI-D01",
+    "CB-D02",
+    "DS-D02",
+    "PMP-RHR-D02",
+    "RLY-KD02",
+    "CB-D03",
+    "MTR-CCW-D03",
+    "CB-D04",
+    "FAN-VC-D04",
+    "CB-D05",
+    "MOV-RCS-D05",
+    "RLY-KD05",
+    "MCC-D2",
+    "CB-D06",
+    "DS-D06",
+    "PMP-CHG-D06",
+    "CB-D07",
+    "HTR-CAB-D07",
+    "RLY-KD07",
+    "CB-D08",
+    "INST-RK-D08",
+    "CB-D09",
+    "DS-D09",
+    "VLV-HPI-D09",
+    "CB-D10",
+    "PNL-ESF-D10",
+    "RLY-KD10",
+    "LOCAL-IO-D",
+    "JB-D1",
+    "BAT-125D",
+    "CHG-125D",
+    "DC-BUS-D",
+    "INV-D",
+    "UPS-D",
+    "GND-A",
+    "GND-B",
+    "GND-C",
+    "GND-D",
+    "GND-PLANT",
+    "ANNUNCIATOR-PLANT-PROCESS-COMPUTER",
+    "125VDC-SYSTEM-SHT-DC-2"
+  ],
+  "asserted_edges": [
+    [
+      "GRID-230KV",
+      "SWYD-230",
+      "raw_11_startup_switchyard_feed_2x: solid feeder leaves GRID-230KV circle and enters SWYD-230 box."
+    ],
+    [
+      "SWYD-230",
+      "DS-101",
+      "raw_11_startup_switchyard_feed_2x: solid feeder runs from SWYD-230 to disconnect DS-101."
+    ],
+    [
+      "DS-101",
+      "CB-101",
+      "raw_11_startup_switchyard_feed_2x: solid feeder continues from DS-101 to ANSI-52 breaker CB-101."
+    ],
+    [
+      "CB-101",
+      "TR-SUT-1A",
+      "raw_11_startup_switchyard_feed_2x: CB-101 upper output branches directly to transformer TR-SUT-1A."
+    ],
+    [
+      "CB-101",
+      "TR-SUT-1B",
+      "raw_11_startup_switchyard_feed_2x: CB-101 lower output branches directly to transformer TR-SUT-1B."
+    ],
+    [
+      "TR-SUT-1A",
+      "BUS-4A",
+      "raw_02_top_sources_and_4160_buses plus raw_12_train_a_source_detail_2x: TR-SUT-1A secondary routes down to dotted connection on BUS-4A at the T3/T4 area."
+    ],
+    [
+      "TR-SUT-1B",
+      "BUS-4B",
+      "raw_02_top_sources_and_4160_buses plus raw_13_train_b_source_detail_2x: TR-SUT-1B secondary routes to the BUS-4B left-side feed."
+    ],
+    [
+      "GEN-G1",
+      "CB-201",
+      "raw_14_train_c_source_detail_2x: unit generator GEN-G1 solid output passes through breaker CB-201."
+    ],
+    [
+      "CB-201",
+      "TR-UAT-1A",
+      "raw_14_train_c_source_detail_2x: CB-201 output branches upward/right into TR-UAT-1A primary."
+    ],
+    [
+      "CB-201",
+      "TR-UAT-1B",
+      "raw_01_left_schematic_full and raw_15_train_d_source_detail_2x: unit-generator auxiliary feed continues from CB-201/common route into TR-UAT-1B primary."
+    ],
+    [
+      "TR-UAT-1A",
+      "BUS-4C",
+      "raw_14_train_c_source_detail_2x: TR-UAT-1A secondary drops to the dotted feed on BUS-4C near T3/T4."
+    ],
+    [
+      "TR-UAT-1B",
+      "BUS-4D",
+      "raw_15_train_d_source_detail_2x: TR-UAT-1B secondary drops to the dotted feed on BUS-4D near T3/T4."
+    ],
+    [
+      "BUS-4A",
+      "CB-DGA",
+      "raw_02_top_sources_and_4160_buses/raw_12_train_a_source_detail_2x: diesel-generator feeder for train A lands on BUS-4A through breaker CB-DGA."
+    ],
+    [
+      "CB-DGA",
+      "EDG-A",
+      "raw_02_top_sources_and_4160_buses/raw_12_train_a_source_detail_2x: breaker CB-DGA is in the solid feeder immediately adjacent to generator EDG-A."
+    ],
+    [
+      "BUS-4B",
+      "CB-DGB",
+      "raw_02_top_sources_and_4160_buses/raw_13_train_b_source_detail_2x: diesel-generator feeder for train B lands on BUS-4B through breaker CB-DGB."
+    ],
+    [
+      "CB-DGB",
+      "EDG-B",
+      "raw_02_top_sources_and_4160_buses/raw_13_train_b_source_detail_2x: breaker CB-DGB is in the solid feeder immediately adjacent to generator EDG-B."
+    ],
+    [
+      "BUS-4C",
+      "CB-DGC",
+      "raw_14_train_c_source_detail_2x: diesel-generator feeder for train C lands on BUS-4C through breaker CB-DGC."
+    ],
+    [
+      "CB-DGC",
+      "EDG-C",
+      "raw_14_train_c_source_detail_2x: breaker CB-DGC is in the solid feeder immediately adjacent to generator EDG-C."
+    ],
+    [
+      "BUS-4D",
+      "CB-DGD",
+      "raw_15_train_d_source_detail_2x: diesel-generator feeder for train D lands on BUS-4D through breaker CB-DGD."
+    ],
+    [
+      "CB-DGD",
+      "EDG-D",
+      "raw_15_train_d_source_detail_2x: breaker CB-DGD is in the solid feeder immediately adjacent to generator EDG-D."
+    ],
+    [
+      "BUS-4A",
+      "CB-TIE-AB",
+      "raw_03_train_a_full_2x: BUS-4A tie extension passes through breaker CB-TIE-AB toward train B."
+    ],
+    [
+      "CB-TIE-AB",
+      "BUS-4B",
+      "raw_04_train_b_full_2x: left-side tie line from CB-TIE-AB enters BUS-4B."
+    ],
+    [
+      "BUS-4C",
+      "CB-TIE-CD",
+      "raw_05_train_c_full_2x: BUS-4C tie extension passes through breaker CB-TIE-CD toward train D."
+    ],
+    [
+      "CB-TIE-CD",
+      "BUS-4D",
+      "raw_06_train_d_full_2x: left-side tie line from CB-TIE-CD enters BUS-4D."
+    ],
+    [
+      "BUS-4A",
+      "CB-4A-48",
+      "raw_12_train_a_source_detail_2x: 4.16 kV bus BUS-4A drops through feeder breaker CB-4A-48."
+    ],
+    [
+      "CB-4A-48",
+      "TR-480A",
+      "raw_12_train_a_source_detail_2x: breaker CB-4A-48 is directly above transformer TR-480A on the feeder."
+    ],
+    [
+      "TR-480A",
+      "CB-48A",
+      "raw_12_train_a_source_detail_2x: transformer TR-480A secondary connects to 480 V breaker CB-48A."
+    ],
+    [
+      "CB-48A",
+      "LC-480A",
+      "raw_12_train_a_source_detail_2x: breaker CB-48A lands on the thick 480 V load-center bus LC-480A."
+    ],
+    [
+      "LC-480A",
+      "PP-A1",
+      "raw_07_train_a_loads_dc_zoom_2x: left vertical feeder from LC-480A enters power panel PP-A1."
+    ],
+    [
+      "LC-480A",
+      "MCC-A1",
+      "raw_07_train_a_loads_dc_zoom_2x: vertical feeder from LC-480A lands on the left MCC bus MCC-A1."
+    ],
+    [
+      "LC-480A",
+      "MCC-A2",
+      "raw_07_train_a_loads_dc_zoom_2x: vertical feeder from LC-480A lands on the right MCC bus MCC-A2."
+    ],
+    [
+      "LC-480A",
+      "LOCAL-IO-A",
+      "raw_07_train_a_loads_dc_zoom_2x: right vertical branch labeled LOCAL I/O drops from LC-480A."
+    ],
+    [
+      "LOCAL-IO-A",
+      "JB-A1",
+      "raw_07_train_a_loads_dc_zoom_2x: LOCAL I/O branch continues directly into the junction box label JB-A1."
+    ],
+    [
+      "BAT-125A",
+      "CHG-125A",
+      "raw_07_train_a_loads_dc_zoom_2x: battery BAT-125A is wired vertically into charger CHG-125A."
+    ],
+    [
+      "CHG-125A",
+      "DC-BUS-A",
+      "raw_07_train_a_loads_dc_zoom_2x: charger CHG-125A output lands on thick 125 VDC bus DC-BUS-A."
+    ],
+    [
+      "DC-BUS-A",
+      "INV-A",
+      "raw_07_train_a_loads_dc_zoom_2x: DC bus DC-BUS-A feeds inverter INV-A on the vertical DC branch."
+    ],
+    [
+      "INV-A",
+      "UPS-A",
+      "raw_07_train_a_loads_dc_zoom_2x: inverter INV-A is vertically wired to UPS UPS-A."
+    ],
+    [
+      "MCC-A1",
+      "CB-A01",
+      "raw_07_train_a_loads_dc_zoom_2x: vertical feeder from MCC-A1 bus drops to breaker CB-A01."
+    ],
+    [
+      "CB-A01",
+      "DS-A01",
+      "raw_07_train_a_loads_dc_zoom_2x: breaker CB-A01 output continues directly to disconnect DS-A01."
+    ],
+    [
+      "DS-A01",
+      "PMP-SI-A01",
+      "raw_07_train_a_loads_dc_zoom_2x: disconnect DS-A01 output continues directly to load PMP-SI-A01."
+    ],
+    [
+      "MCC-A1",
+      "CB-A02",
+      "raw_07_train_a_loads_dc_zoom_2x: vertical feeder from MCC-A1 bus drops to breaker CB-A02."
+    ],
+    [
+      "CB-A02",
+      "PMP-RHR-A02",
+      "raw_07_train_a_loads_dc_zoom_2x: breaker CB-A02 output continues directly down to load PMP-RHR-A02."
+    ],
+    [
+      "MCC-A1",
+      "CB-A03",
+      "raw_07_train_a_loads_dc_zoom_2x: vertical feeder from MCC-A1 bus drops to breaker CB-A03."
+    ],
+    [
+      "CB-A03",
+      "DS-A03",
+      "raw_07_train_a_loads_dc_zoom_2x: breaker CB-A03 output continues directly to disconnect DS-A03."
+    ],
+    [
+      "DS-A03",
+      "MTR-CCW-A03",
+      "raw_07_train_a_loads_dc_zoom_2x: disconnect DS-A03 output continues directly to load MTR-CCW-A03."
+    ],
+    [
+      "MCC-A1",
+      "CB-A04",
+      "raw_07_train_a_loads_dc_zoom_2x: vertical feeder from MCC-A1 bus drops to breaker CB-A04."
+    ],
+    [
+      "CB-A04",
+      "FAN-VC-A04",
+      "raw_07_train_a_loads_dc_zoom_2x: breaker CB-A04 output continues directly down to load FAN-VC-A04."
+    ],
+    [
+      "MCC-A1",
+      "CB-A05",
+      "raw_07_train_a_loads_dc_zoom_2x: vertical feeder from MCC-A1 bus drops to breaker CB-A05."
+    ],
+    [
+      "CB-A05",
+      "MOV-RCS-A05",
+      "raw_07_train_a_loads_dc_zoom_2x: breaker CB-A05 output continues directly down to load MOV-RCS-A05."
+    ],
+    [
+      "MCC-A2",
+      "CB-A06",
+      "raw_07_train_a_loads_dc_zoom_2x: vertical feeder from MCC-A2 bus drops to breaker CB-A06."
+    ],
+    [
+      "CB-A06",
+      "DS-A06",
+      "raw_07_train_a_loads_dc_zoom_2x: breaker CB-A06 output continues directly to disconnect DS-A06."
+    ],
+    [
+      "DS-A06",
+      "PMP-CHG-A06",
+      "raw_07_train_a_loads_dc_zoom_2x: disconnect DS-A06 output continues directly to load PMP-CHG-A06."
+    ],
+    [
+      "MCC-A2",
+      "CB-A07",
+      "raw_07_train_a_loads_dc_zoom_2x: vertical feeder from MCC-A2 bus drops to breaker CB-A07."
+    ],
+    [
+      "CB-A07",
+      "HTR-CAB-A07",
+      "raw_07_train_a_loads_dc_zoom_2x: breaker CB-A07 output continues directly down to load HTR-CAB-A07."
+    ],
+    [
+      "MCC-A2",
+      "CB-A08",
+      "raw_07_train_a_loads_dc_zoom_2x: vertical feeder from MCC-A2 bus drops to breaker CB-A08."
+    ],
+    [
+      "CB-A08",
+      "INST-RK-A08",
+      "raw_07_train_a_loads_dc_zoom_2x: breaker CB-A08 output continues directly down to load INST-RK-A08."
+    ],
+    [
+      "MCC-A2",
+      "CB-A09",
+      "raw_07_train_a_loads_dc_zoom_2x: vertical feeder from MCC-A2 bus drops to breaker CB-A09."
+    ],
+    [
+      "CB-A09",
+      "VLV-HPI-A09",
+      "raw_07_train_a_loads_dc_zoom_2x: breaker CB-A09 output continues directly down to load VLV-HPI-A09."
+    ],
+    [
+      "MCC-A2",
+      "CB-A10",
+      "raw_07_train_a_loads_dc_zoom_2x: vertical feeder from MCC-A2 bus drops to breaker CB-A10."
+    ],
+    [
+      "CB-A10",
+      "PNL-ESF-A10",
+      "raw_07_train_a_loads_dc_zoom_2x: breaker CB-A10 output continues directly down to load PNL-ESF-A10."
+    ],
+    [
+      "RLY-KA01",
+      "CB-A01",
+      "raw_07_train_a_loads_dc_zoom_2x: dashed control/trip lead from relay RLY-KA01 terminates at breaker CB-A01."
+    ],
+    [
+      "RLY-KA02",
+      "CB-A02",
+      "raw_07_train_a_loads_dc_zoom_2x: dashed control/trip lead from relay RLY-KA02 terminates at breaker CB-A02."
+    ],
+    [
+      "RLY-KA05",
+      "CB-A05",
+      "raw_07_train_a_loads_dc_zoom_2x: dashed control/trip lead from relay RLY-KA05 terminates at breaker CB-A05."
+    ],
+    [
+      "RLY-KA07",
+      "CB-A07",
+      "raw_07_train_a_loads_dc_zoom_2x: dashed control/trip lead from relay RLY-KA07 terminates at breaker CB-A07."
+    ],
+    [
+      "BUS-4B",
+      "CB-4B-48",
+      "raw_13_train_b_source_detail_2x: 4.16 kV bus BUS-4B drops through feeder breaker CB-4B-48."
+    ],
+    [
+      "CB-4B-48",
+      "TR-480B",
+      "raw_13_train_b_source_detail_2x: breaker CB-4B-48 is directly above transformer TR-480B on the feeder."
+    ],
+    [
+      "TR-480B",
+      "CB-48B",
+      "raw_13_train_b_source_detail_2x: transformer TR-480B secondary connects to 480 V breaker CB-48B."
+    ],
+    [
+      "CB-48B",
+      "LC-480B",
+      "raw_13_train_b_source_detail_2x: breaker CB-48B lands on the thick 480 V load-center bus LC-480B."
+    ],
+    [
+      "LC-480B",
+      "PP-B1",
+      "raw_08_train_b_loads_dc_zoom_2x: left vertical feeder from LC-480B enters power panel PP-B1."
+    ],
+    [
+      "LC-480B",
+      "MCC-B1",
+      "raw_08_train_b_loads_dc_zoom_2x: vertical feeder from LC-480B lands on the left MCC bus MCC-B1."
+    ],
+    [
+      "LC-480B",
+      "MCC-B2",
+      "raw_08_train_b_loads_dc_zoom_2x: vertical feeder from LC-480B lands on the right MCC bus MCC-B2."
+    ],
+    [
+      "LC-480B",
+      "LOCAL-IO-B",
+      "raw_08_train_b_loads_dc_zoom_2x: right vertical branch labeled LOCAL I/O drops from LC-480B."
+    ],
+    [
+      "LOCAL-IO-B",
+      "JB-B1",
+      "raw_08_train_b_loads_dc_zoom_2x: LOCAL I/O branch continues directly into the junction box label JB-B1."
+    ],
+    [
+      "BAT-125B",
+      "CHG-125B",
+      "raw_08_train_b_loads_dc_zoom_2x: battery BAT-125B is wired vertically into charger CHG-125B."
+    ],
+    [
+      "CHG-125B",
+      "DC-BUS-B",
+      "raw_08_train_b_loads_dc_zoom_2x: charger CHG-125B output lands on thick 125 VDC bus DC-BUS-B."
+    ],
+    [
+      "DC-BUS-B",
+      "INV-B",
+      "raw_08_train_b_loads_dc_zoom_2x: DC bus DC-BUS-B feeds inverter INV-B on the vertical DC branch."
+    ],
+    [
+      "INV-B",
+      "UPS-B",
+      "raw_08_train_b_loads_dc_zoom_2x: inverter INV-B is vertically wired to UPS UPS-B."
+    ],
+    [
+      "MCC-B1",
+      "CB-B01",
+      "raw_08_train_b_loads_dc_zoom_2x: vertical feeder from MCC-B1 bus drops to breaker CB-B01."
+    ],
+    [
+      "CB-B01",
+      "PMP-SI-B01",
+      "raw_08_train_b_loads_dc_zoom_2x: breaker CB-B01 output continues directly down to load PMP-SI-B01."
+    ],
+    [
+      "MCC-B1",
+      "CB-B02",
+      "raw_08_train_b_loads_dc_zoom_2x: vertical feeder from MCC-B1 bus drops to breaker CB-B02."
+    ],
+    [
+      "CB-B02",
+      "DS-B02",
+      "raw_08_train_b_loads_dc_zoom_2x: breaker CB-B02 output continues directly to disconnect DS-B02."
+    ],
+    [
+      "DS-B02",
+      "PMP-RHR-B02",
+      "raw_08_train_b_loads_dc_zoom_2x: disconnect DS-B02 output continues directly to load PMP-RHR-B02."
+    ],
+    [
+      "MCC-B1",
+      "CB-B03",
+      "raw_08_train_b_loads_dc_zoom_2x: vertical feeder from MCC-B1 bus drops to breaker CB-B03."
+    ],
+    [
+      "CB-B03",
+      "MTR-CCW-B03",
+      "raw_08_train_b_loads_dc_zoom_2x: breaker CB-B03 output continues directly down to load MTR-CCW-B03."
+    ],
+    [
+      "MCC-B1",
+      "CB-B04",
+      "raw_08_train_b_loads_dc_zoom_2x: vertical feeder from MCC-B1 bus drops to breaker CB-B04."
+    ],
+    [
+      "CB-B04",
+      "FAN-VC-B04",
+      "raw_08_train_b_loads_dc_zoom_2x: breaker CB-B04 output continues directly down to load FAN-VC-B04."
+    ],
+    [
+      "MCC-B1",
+      "CB-B05",
+      "raw_08_train_b_loads_dc_zoom_2x: vertical feeder from MCC-B1 bus drops to breaker CB-B05."
+    ],
+    [
+      "CB-B05",
+      "DS-B05",
+      "raw_08_train_b_loads_dc_zoom_2x: breaker CB-B05 output continues directly to disconnect DS-B05."
+    ],
+    [
+      "DS-B05",
+      "MOV-RCS-B05",
+      "raw_08_train_b_loads_dc_zoom_2x: disconnect DS-B05 output continues directly to load MOV-RCS-B05."
+    ],
+    [
+      "MCC-B2",
+      "CB-B06",
+      "raw_08_train_b_loads_dc_zoom_2x: vertical feeder from MCC-B2 bus drops to breaker CB-B06."
+    ],
+    [
+      "CB-B06",
+      "PMP-CHG-B06",
+      "raw_08_train_b_loads_dc_zoom_2x: breaker CB-B06 output continues directly down to load PMP-CHG-B06."
+    ],
+    [
+      "MCC-B2",
+      "CB-B07",
+      "raw_08_train_b_loads_dc_zoom_2x: vertical feeder from MCC-B2 bus drops to breaker CB-B07."
+    ],
+    [
+      "CB-B07",
+      "HTR-CAB-B07",
+      "raw_08_train_b_loads_dc_zoom_2x: breaker CB-B07 output continues directly down to load HTR-CAB-B07."
+    ],
+    [
+      "MCC-B2",
+      "CB-B08",
+      "raw_08_train_b_loads_dc_zoom_2x: vertical feeder from MCC-B2 bus drops to breaker CB-B08."
+    ],
+    [
+      "CB-B08",
+      "DS-B08",
+      "raw_08_train_b_loads_dc_zoom_2x: breaker CB-B08 output continues directly to disconnect DS-B08."
+    ],
+    [
+      "DS-B08",
+      "INST-RK-B08",
+      "raw_08_train_b_loads_dc_zoom_2x: disconnect DS-B08 output continues directly to load INST-RK-B08."
+    ],
+    [
+      "MCC-B2",
+      "CB-B09",
+      "raw_08_train_b_loads_dc_zoom_2x: vertical feeder from MCC-B2 bus drops to breaker CB-B09."
+    ],
+    [
+      "CB-B09",
+      "VLV-HPI-B09",
+      "raw_08_train_b_loads_dc_zoom_2x: breaker CB-B09 output continues directly down to load VLV-HPI-B09."
+    ],
+    [
+      "MCC-B2",
+      "CB-B10",
+      "raw_08_train_b_loads_dc_zoom_2x: vertical feeder from MCC-B2 bus drops to breaker CB-B10."
+    ],
+    [
+      "CB-B10",
+      "PNL-ESF-B10",
+      "raw_08_train_b_loads_dc_zoom_2x: breaker CB-B10 output continues directly down to load PNL-ESF-B10."
+    ],
+    [
+      "RLY-KB02",
+      "CB-B02",
+      "raw_08_train_b_loads_dc_zoom_2x: dashed control/trip lead from relay RLY-KB02 terminates at breaker CB-B02."
+    ],
+    [
+      "RLY-KB04",
+      "CB-B04",
+      "raw_08_train_b_loads_dc_zoom_2x: dashed control/trip lead from relay RLY-KB04 terminates at breaker CB-B04."
+    ],
+    [
+      "RLY-KB06",
+      "CB-B06",
+      "raw_08_train_b_loads_dc_zoom_2x: dashed control/trip lead from relay RLY-KB06 terminates at breaker CB-B06."
+    ],
+    [
+      "BUS-4C",
+      "CB-4C-48",
+      "raw_14_train_c_source_detail_2x: 4.16 kV bus BUS-4C drops through feeder breaker CB-4C-48."
+    ],
+    [
+      "CB-4C-48",
+      "TR-480C",
+      "raw_14_train_c_source_detail_2x: breaker CB-4C-48 is directly above transformer TR-480C on the feeder."
+    ],
+    [
+      "TR-480C",
+      "CB-48C",
+      "raw_14_train_c_source_detail_2x: transformer TR-480C secondary connects to 480 V breaker CB-48C."
+    ],
+    [
+      "CB-48C",
+      "LC-480C",
+      "raw_14_train_c_source_detail_2x: breaker CB-48C lands on the thick 480 V load-center bus LC-480C."
+    ],
+    [
+      "LC-480C",
+      "PP-C1",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: left vertical feeder from LC-480C enters power panel PP-C1."
+    ],
+    [
+      "LC-480C",
+      "MCC-C1",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: vertical feeder from LC-480C lands on the left MCC bus MCC-C1."
+    ],
+    [
+      "LC-480C",
+      "MCC-C2",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: vertical feeder from LC-480C lands on the right MCC bus MCC-C2."
+    ],
+    [
+      "LC-480C",
+      "LOCAL-IO-C",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: right vertical branch labeled LOCAL I/O drops from LC-480C."
+    ],
+    [
+      "LOCAL-IO-C",
+      "JB-C1",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: LOCAL I/O branch continues directly into the junction box label JB-C1."
+    ],
+    [
+      "BAT-125C",
+      "CHG-125C",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: battery BAT-125C is wired vertically into charger CHG-125C."
+    ],
+    [
+      "CHG-125C",
+      "DC-BUS-C",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: charger CHG-125C output lands on thick 125 VDC bus DC-BUS-C."
+    ],
+    [
+      "DC-BUS-C",
+      "INV-C",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: DC bus DC-BUS-C feeds inverter INV-C on the vertical DC branch."
+    ],
+    [
+      "INV-C",
+      "UPS-C",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: inverter INV-C is vertically wired to UPS UPS-C."
+    ],
+    [
+      "MCC-C1",
+      "CB-C01",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: vertical feeder from MCC-C1 bus drops to breaker CB-C01."
+    ],
+    [
+      "CB-C01",
+      "DS-C01",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: breaker CB-C01 output continues directly to disconnect DS-C01."
+    ],
+    [
+      "DS-C01",
+      "PMP-SI-C01",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: disconnect DS-C01 output continues directly to load PMP-SI-C01."
+    ],
+    [
+      "MCC-C1",
+      "CB-C02",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: vertical feeder from MCC-C1 bus drops to breaker CB-C02."
+    ],
+    [
+      "CB-C02",
+      "PMP-RHR-C02",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: breaker CB-C02 output continues directly down to load PMP-RHR-C02."
+    ],
+    [
+      "MCC-C1",
+      "CB-C03",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: vertical feeder from MCC-C1 bus drops to breaker CB-C03."
+    ],
+    [
+      "CB-C03",
+      "MTR-CCW-C03",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: breaker CB-C03 output continues directly down to load MTR-CCW-C03."
+    ],
+    [
+      "MCC-C1",
+      "CB-C04",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: vertical feeder from MCC-C1 bus drops to breaker CB-C04."
+    ],
+    [
+      "CB-C04",
+      "DS-C04",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: breaker CB-C04 output continues directly to disconnect DS-C04."
+    ],
+    [
+      "DS-C04",
+      "FAN-VC-C04",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: disconnect DS-C04 output continues directly to load FAN-VC-C04."
+    ],
+    [
+      "MCC-C1",
+      "CB-C05",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: vertical feeder from MCC-C1 bus drops to breaker CB-C05."
+    ],
+    [
+      "CB-C05",
+      "MOV-RCS-C05",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: breaker CB-C05 output continues directly down to load MOV-RCS-C05."
+    ],
+    [
+      "MCC-C2",
+      "CB-C06",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: vertical feeder from MCC-C2 bus drops to breaker CB-C06."
+    ],
+    [
+      "CB-C06",
+      "PMP-CHG-C06",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: breaker CB-C06 output continues directly down to load PMP-CHG-C06."
+    ],
+    [
+      "MCC-C2",
+      "CB-C07",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: vertical feeder from MCC-C2 bus drops to breaker CB-C07."
+    ],
+    [
+      "CB-C07",
+      "DS-C07",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: breaker CB-C07 output continues directly to disconnect DS-C07."
+    ],
+    [
+      "DS-C07",
+      "HTR-CAB-C07",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: disconnect DS-C07 output continues directly to load HTR-CAB-C07."
+    ],
+    [
+      "MCC-C2",
+      "CB-C08",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: vertical feeder from MCC-C2 bus drops to breaker CB-C08."
+    ],
+    [
+      "CB-C08",
+      "INST-RK-C08",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: breaker CB-C08 output continues directly down to load INST-RK-C08."
+    ],
+    [
+      "MCC-C2",
+      "CB-C09",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: vertical feeder from MCC-C2 bus drops to breaker CB-C09."
+    ],
+    [
+      "CB-C09",
+      "VLV-HPI-C09",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: breaker CB-C09 output continues directly down to load VLV-HPI-C09."
+    ],
+    [
+      "MCC-C2",
+      "CB-C10",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: vertical feeder from MCC-C2 bus drops to breaker CB-C10."
+    ],
+    [
+      "CB-C10",
+      "PNL-ESF-C10",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: breaker CB-C10 output continues directly down to load PNL-ESF-C10."
+    ],
+    [
+      "RLY-KC01",
+      "CB-C01",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: dashed control/trip lead from relay RLY-KC01 terminates at breaker CB-C01."
+    ],
+    [
+      "RLY-KC03",
+      "CB-C03",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: dashed control/trip lead from relay RLY-KC03 terminates at breaker CB-C03."
+    ],
+    [
+      "RLY-KC08",
+      "CB-C08",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: dashed control/trip lead from relay RLY-KC08 terminates at breaker CB-C08."
+    ],
+    [
+      "BUS-4D",
+      "CB-4D-48",
+      "raw_15_train_d_source_detail_2x: 4.16 kV bus BUS-4D drops through feeder breaker CB-4D-48."
+    ],
+    [
+      "CB-4D-48",
+      "TR-480D",
+      "raw_15_train_d_source_detail_2x: breaker CB-4D-48 is directly above transformer TR-480D on the feeder."
+    ],
+    [
+      "TR-480D",
+      "CB-48D",
+      "raw_15_train_d_source_detail_2x: transformer TR-480D secondary connects to 480 V breaker CB-48D."
+    ],
+    [
+      "CB-48D",
+      "LC-480D",
+      "raw_15_train_d_source_detail_2x: breaker CB-48D lands on the thick 480 V load-center bus LC-480D."
+    ],
+    [
+      "LC-480D",
+      "PP-D1",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: left vertical feeder from LC-480D enters power panel PP-D1."
+    ],
+    [
+      "LC-480D",
+      "MCC-D1",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: vertical feeder from LC-480D lands on the left MCC bus MCC-D1."
+    ],
+    [
+      "LC-480D",
+      "MCC-D2",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: vertical feeder from LC-480D lands on the right MCC bus MCC-D2."
+    ],
+    [
+      "LC-480D",
+      "LOCAL-IO-D",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: right vertical branch labeled LOCAL I/O drops from LC-480D."
+    ],
+    [
+      "LOCAL-IO-D",
+      "JB-D1",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: LOCAL I/O branch continues directly into the junction box label JB-D1."
+    ],
+    [
+      "BAT-125D",
+      "CHG-125D",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: battery BAT-125D is wired vertically into charger CHG-125D."
+    ],
+    [
+      "CHG-125D",
+      "DC-BUS-D",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: charger CHG-125D output lands on thick 125 VDC bus DC-BUS-D."
+    ],
+    [
+      "DC-BUS-D",
+      "INV-D",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: DC bus DC-BUS-D feeds inverter INV-D on the vertical DC branch."
+    ],
+    [
+      "INV-D",
+      "UPS-D",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: inverter INV-D is vertically wired to UPS UPS-D."
+    ],
+    [
+      "MCC-D1",
+      "CB-D01",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: vertical feeder from MCC-D1 bus drops to breaker CB-D01."
+    ],
+    [
+      "CB-D01",
+      "PMP-SI-D01",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: breaker CB-D01 output continues directly down to load PMP-SI-D01."
+    ],
+    [
+      "MCC-D1",
+      "CB-D02",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: vertical feeder from MCC-D1 bus drops to breaker CB-D02."
+    ],
+    [
+      "CB-D02",
+      "DS-D02",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: breaker CB-D02 output continues directly to disconnect DS-D02."
+    ],
+    [
+      "DS-D02",
+      "PMP-RHR-D02",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: disconnect DS-D02 output continues directly to load PMP-RHR-D02."
+    ],
+    [
+      "MCC-D1",
+      "CB-D03",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: vertical feeder from MCC-D1 bus drops to breaker CB-D03."
+    ],
+    [
+      "CB-D03",
+      "MTR-CCW-D03",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: breaker CB-D03 output continues directly down to load MTR-CCW-D03."
+    ],
+    [
+      "MCC-D1",
+      "CB-D04",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: vertical feeder from MCC-D1 bus drops to breaker CB-D04."
+    ],
+    [
+      "CB-D04",
+      "FAN-VC-D04",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: breaker CB-D04 output continues directly down to load FAN-VC-D04."
+    ],
+    [
+      "MCC-D1",
+      "CB-D05",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: vertical feeder from MCC-D1 bus drops to breaker CB-D05."
+    ],
+    [
+      "CB-D05",
+      "MOV-RCS-D05",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: breaker CB-D05 output continues directly down to load MOV-RCS-D05."
+    ],
+    [
+      "MCC-D2",
+      "CB-D06",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: vertical feeder from MCC-D2 bus drops to breaker CB-D06."
+    ],
+    [
+      "CB-D06",
+      "DS-D06",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: breaker CB-D06 output continues directly to disconnect DS-D06."
+    ],
+    [
+      "DS-D06",
+      "PMP-CHG-D06",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: disconnect DS-D06 output continues directly to load PMP-CHG-D06."
+    ],
+    [
+      "MCC-D2",
+      "CB-D07",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: vertical feeder from MCC-D2 bus drops to breaker CB-D07."
+    ],
+    [
+      "CB-D07",
+      "HTR-CAB-D07",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: breaker CB-D07 output continues directly down to load HTR-CAB-D07."
+    ],
+    [
+      "MCC-D2",
+      "CB-D08",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: vertical feeder from MCC-D2 bus drops to breaker CB-D08."
+    ],
+    [
+      "CB-D08",
+      "INST-RK-D08",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: breaker CB-D08 output continues directly down to load INST-RK-D08."
+    ],
+    [
+      "MCC-D2",
+      "CB-D09",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: vertical feeder from MCC-D2 bus drops to breaker CB-D09."
+    ],
+    [
+      "CB-D09",
+      "DS-D09",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: breaker CB-D09 output continues directly to disconnect DS-D09."
+    ],
+    [
+      "DS-D09",
+      "VLV-HPI-D09",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: disconnect DS-D09 output continues directly to load VLV-HPI-D09."
+    ],
+    [
+      "MCC-D2",
+      "CB-D10",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: vertical feeder from MCC-D2 bus drops to breaker CB-D10."
+    ],
+    [
+      "CB-D10",
+      "PNL-ESF-D10",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: breaker CB-D10 output continues directly down to load PNL-ESF-D10."
+    ],
+    [
+      "RLY-KD02",
+      "CB-D02",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: dashed control/trip lead from relay RLY-KD02 terminates at breaker CB-D02."
+    ],
+    [
+      "RLY-KD05",
+      "CB-D05",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: dashed control/trip lead from relay RLY-KD05 terminates at breaker CB-D05."
+    ],
+    [
+      "RLY-KD07",
+      "CB-D07",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: dashed control/trip lead from relay RLY-KD07 terminates at breaker CB-D07."
+    ],
+    [
+      "RLY-KD10",
+      "CB-D10",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: dashed control/trip lead from relay RLY-KD10 terminates at breaker CB-D10."
+    ],
+    [
+      "GEN-G1",
+      "GND-A",
+      "raw_14_train_c_source_detail_2x: grounding symbol/label GND-A is drawn on a vertical grounding line tied to the GEN-G1 auxiliary-feed source region."
+    ],
+    [
+      "GND-A",
+      "GND-C",
+      "raw_01_left_schematic_full: left-side grounding conductor continues from GND-A region down to the train C ground label GND-C."
+    ],
+    [
+      "GND-B",
+      "GND-D",
+      "raw_16_common_ground_and_cross_ties: vertical grounding conductor runs from GND-B down through the GND-D label."
+    ],
+    [
+      "GND-C",
+      "GND-PLANT",
+      "raw_01_left_schematic_full/raw_16_common_ground_and_cross_ties: lower left grounding conductor routes into the common GND-PLANT symbol."
+    ],
+    [
+      "GND-D",
+      "GND-PLANT",
+      "raw_16_common_ground_and_cross_ties: lower right grounding conductor routes into the common GND-PLANT symbol."
+    ]
+  ],
+  "uncertain_edges": [
+    [
+      "JB-A1",
+      "DC-BUS-A",
+      "raw_07_train_a_loads_dc_zoom_2x: dashed vertical/horizontal segment near JB-A1 appears to terminate at the 125 VDC bus area DC-BUS-A.",
+      "Dashed DC tie/control path is partially open/offset and may be a control or UPS tie note rather than a direct electrical feeder."
+    ],
+    [
+      "BAT-125A",
+      "DC-BUS-A",
+      "raw_07_train_a_loads_dc_zoom_2x: battery/charger/DC-bus cluster places BAT-125A immediately above the charger and bus DC-BUS-A.",
+      "The drawing may imply common DC-bus connection, but the visibly traceable line passes through CHG-125A; direct battery-to-bus edge is not explicit."
+    ],
+    [
+      "LC-480A",
+      "CHG-125A",
+      "raw_07_train_a_loads_dc_zoom_2x: charger CHG-125A is labeled AC/DC and sits beside the 480 V local branch from LC-480A.",
+      "No solid AC input line from the 480 V bus to the charger is directly traceable in the crop."
+    ],
+    [
+      "JB-B1",
+      "DC-BUS-B",
+      "raw_08_train_b_loads_dc_zoom_2x: dashed vertical/horizontal segment near JB-B1 appears to terminate at the 125 VDC bus area DC-BUS-B.",
+      "Dashed DC tie/control path is partially open/offset and may be a control or UPS tie note rather than a direct electrical feeder."
+    ],
+    [
+      "BAT-125B",
+      "DC-BUS-B",
+      "raw_08_train_b_loads_dc_zoom_2x: battery/charger/DC-bus cluster places BAT-125B immediately above the charger and bus DC-BUS-B.",
+      "The drawing may imply common DC-bus connection, but the visibly traceable line passes through CHG-125B; direct battery-to-bus edge is not explicit."
+    ],
+    [
+      "LC-480B",
+      "CHG-125B",
+      "raw_08_train_b_loads_dc_zoom_2x: charger CHG-125B is labeled AC/DC and sits beside the 480 V local branch from LC-480B.",
+      "No solid AC input line from the 480 V bus to the charger is directly traceable in the crop."
+    ],
+    [
+      "JB-C1",
+      "DC-BUS-C",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: dashed vertical/horizontal segment near JB-C1 appears to terminate at the 125 VDC bus area DC-BUS-C.",
+      "Dashed DC tie/control path is partially open/offset and may be a control or UPS tie note rather than a direct electrical feeder."
+    ],
+    [
+      "BAT-125C",
+      "DC-BUS-C",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: battery/charger/DC-bus cluster places BAT-125C immediately above the charger and bus DC-BUS-C.",
+      "The drawing may imply common DC-bus connection, but the visibly traceable line passes through CHG-125C; direct battery-to-bus edge is not explicit."
+    ],
+    [
+      "LC-480C",
+      "CHG-125C",
+      "raw_09_train_c_loads_dc_zoom_2x/raw_05_train_c_full_2x: charger CHG-125C is labeled AC/DC and sits beside the 480 V local branch from LC-480C.",
+      "No solid AC input line from the 480 V bus to the charger is directly traceable in the crop."
+    ],
+    [
+      "JB-D1",
+      "DC-BUS-D",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: dashed vertical/horizontal segment near JB-D1 appears to terminate at the 125 VDC bus area DC-BUS-D.",
+      "Dashed DC tie/control path is partially open/offset and may be a control or UPS tie note rather than a direct electrical feeder."
+    ],
+    [
+      "BAT-125D",
+      "DC-BUS-D",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: battery/charger/DC-bus cluster places BAT-125D immediately above the charger and bus DC-BUS-D.",
+      "The drawing may imply common DC-bus connection, but the visibly traceable line passes through CHG-125D; direct battery-to-bus edge is not explicit."
+    ],
+    [
+      "LC-480D",
+      "CHG-125D",
+      "raw_10_train_d_loads_dc_zoom_2x/raw_06_train_d_full_2x: charger CHG-125D is labeled AC/DC and sits beside the 480 V local branch from LC-480D.",
+      "No solid AC input line from the 480 V bus to the charger is directly traceable in the crop."
+    ],
+    [
+      "BUS-4D",
+      "ANNUNCIATOR-PLANT-PROCESS-COMPUTER",
+      "raw_06_train_d_full_2x/raw_10_train_d_loads_dc_zoom_2x: light line at Train D T5/T6 exits right with label TO ANNUNCIATOR / PLANT PROCESS COMPUTER.",
+      "Off-sheet instrument/signal continuation; exact originating named component or bus tap is not explicit."
+    ],
+    [
+      "GEN-G1",
+      "125VDC-SYSTEM-SHT-DC-2",
+      "raw_05_train_c_full_2x/raw_01_left_schematic_full: left-edge continuation note names 125 VDC SYSTEM SHT-DC-2 near the unit-generator/train-C source area.",
+      "Continuation arrow is off-sheet and the exact endpoint on this sheet is not visually clear."
+    ],
+    [
+      "TR-UAT-1B",
+      "GND-B",
+      "raw_15_train_d_source_detail_2x: GND-B grounding symbol and conductor run close to the TR-UAT-1B source conductor.",
+      "Line routing near TR-UAT-1B is visually close, but the symbol may be grounding/reference rather than a direct transformer terminal edge."
+    ]
+  ],
+  "rejected_non_edges": [
+    [
+      "BUS-4A",
+      "BUS-4B",
+      "Not directly joined; visual path goes through named tie breaker CB-TIE-AB."
+    ],
+    [
+      "BUS-4C",
+      "BUS-4D",
+      "Not directly joined; visual path goes through named tie breaker CB-TIE-CD."
+    ],
+    [
+      "MCC-A1",
+      "MCC-A2",
+      "Separate MCC bus sections with a visible gap; both are fed from LC-480A."
+    ],
+    [
+      "MCC-B1",
+      "MCC-B2",
+      "Separate MCC bus sections with a visible gap; both are fed from LC-480B."
+    ],
+    [
+      "MCC-C1",
+      "MCC-C2",
+      "Separate MCC bus sections with a visible gap; both are fed from LC-480C."
+    ],
+    [
+      "MCC-D1",
+      "MCC-D2",
+      "Separate MCC bus sections with a visible gap; both are fed from LC-480D."
+    ],
+    [
+      "CB-A01",
+      "CB-A02",
+      "Both hang from MCC-A1; same-bus membership is represented through MCC-A1, not breaker-to-breaker edges."
+    ],
+    [
+      "PMP-SI-A01",
+      "PMP-RHR-A02",
+      "Both are loads on MCC-A1 branches, but no direct line joins the loads."
+    ],
+    [
+      "DC-BUS-A",
+      "DC-BUS-B",
+      "No direct DC bus tie is shown between train A and train B DC buses in the component-only sheet."
+    ],
+    [
+      "DC-BUS-C",
+      "DC-BUS-D",
+      "No direct DC bus tie is shown between train C and train D DC buses in the component-only sheet."
+    ],
+    [
+      "ESFAS",
+      "RLY-*",
+      "The L.O. permissive from ESFAS notes are textual control-source notes, not individually traceable named endpoint wires."
+    ],
+    [
+      "GND-A",
+      "GND-B",
+      "Ground labels are not made a clique; only visually continuous grounding-conductor adjacencies are asserted."
+    ],
+    [
+      "LC-480A",
+      "LC-480B",
+      "No 480 V load-center tie is shown; each LC is fed from its train transformer path."
+    ],
+    [
+      "LC-480C",
+      "LC-480D",
+      "No 480 V load-center tie is shown; each LC is fed from its train transformer path."
+    ]
+  ],
+  "label_ambiguity_notes": [
+    "The repeated LOCAL I/O label has no printed train suffix; I suffix it as LOCAL-IO-A/B/C/D by the adjacent train and JB-A1/B1/C1/D1 label.",
+    "GEN-G1 is read from the unit-generator auxiliary-feed source crop; the circle itself only shows G, while the nearby label reads GEN-G1.",
+    "Relay-to-breaker dashed control edges are included only where the dashed line is visible between a named RLY-K* relay and a named CB-* breaker.",
+    "The battery/charger/DC-bus graphics may imply common battery-bus wiring, but only BAT->CHG->DC-BUS is asserted because that is the visible direct trace.",
+    "Off-sheet continuations to the annunciator/plant process computer and 125 VDC sheet are kept uncertain because the endpoint is outside this schematic or not a named on-sheet terminal.",
+    "Grounding labels GND-A/B/C/D and GND-PLANT are included sparsely; I did not collapse all grounds into a complete mutual clique."
+  ],
+  "matrix_semantics": "CSV adjacency matrix uses node_order for rows and columns, asserted_edges only, symmetric, diagonal 0."
+}

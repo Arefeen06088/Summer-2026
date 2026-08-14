@@ -1,0 +1,8 @@
+document,iteration,call_id,actor,round,text_input_tokens_est,image_file_input_tokens_est,input_tokens_est,cached_input_tokens,output_tokens_low,output_tokens_expected,output_tokens_high,reasoning_tokens,total_tokens_low,total_tokens_expected,total_tokens_high,usage_object_available,notes
+7,1,main-setup-and-resource-check,Main,orchestration,4500,0,4500,,600,1200,2200,,4425,5700,7825,False,"Directory/file inspection, crop planning, no GT/OCR check. Exact Codex main-call usage is not exposed."
+7,1,main-visual-review,Main,orchestration,2250,30345,32595,,1400,2600,4500,,26072,35195,48279,False,Main-agent visual inspection batches aggregated; individual internal model-call boundaries are not exposed.
+7,1,diego-r1-high-recall,Diego,1,525,13515,14040,,6500,8500,11500,,17083,22540,30402,False,"Subagent output was captured by the tool, but the model usage object was not exposed."
+7,1,jennifer-r1-precision,Jennifer,2,3625,13515,17140,,6200,8200,11000,,19418,25340,33777,False,Input includes Diego R1 proposal summary plus image set.
+7,1,diego-r2-saturation,Diego,3,1050,8755,9805,,3800,5200,7200,,11259,15005,20332,False,Saturation review; output is the 120-node/140-edge final candidate.
+7,1,jennifer-r2-final-signoff,Jennifer,4,4125,5440,9565,,200,700,2200,,7787,10265,14701,False,Final agree/disagree check. Expected output is short if saturated.
+7,1,main-artifact-generation-and-final,Main,orchestration,6000,0,6000,,1200,2200,4200,,6300,8200,11700,False,"Script generation, validation, final response. Exact Codex usage is not exposed."

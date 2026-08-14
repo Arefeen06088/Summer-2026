@@ -1,0 +1,32 @@
+Connectivity matrix validation summary - Document 4 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\4\synthetic_npp_120_component_connectivity_matrix.csv
+GT after normalization: 124 undirected edges across 120 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token estimate: low=138550, expected=143500, high=153330.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=107, FP=1, FN=17, Precision=0.990741, Recall=0.862903, F1=0.922414.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; missing exact GT component names.
+- Extracted components: 118; extra/non-GT names: 0; missing GT component names: 2.
+- False-positive extracted edge examples: BUS-480-LCB -- CB-CHG-A.
+- Missed GT edge examples: ANN-CP-A -- REC-SER-01; ANN-CP-A -- TB-ESF-A; BUS-480-LCA -- CB-CHG-A; BUS-480-LCA -- CB-LC-TIE; BUS-480-LCB -- CB-LC-TIE; BUS-480-RB1 -- CB-TIE-480; BUS-480-RB2 -- CB-TIE-480; ESFAS-TRAIN-A -- RELAY-K701; ... (+9 more).
+- Missing GT component examples: GND-NG-A; GND-NG-B.
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=107, FP=0, FN=17, Precision=1.000000, Recall=0.862903, F1=0.926407.
+- If all missed GT edges were added, final performance would be TP=124, FP=1, FN=0, Precision=0.992000, Recall=1.000000, F1=0.995984.
+
+Best evaluated row: Diego -- Round 1 with F1=0.940678.
+
+Round-specific notes:
+- Diego -- Round 1: TP=111, FP=1, FN=13, F1=0.940678; extra nodes=0, missing GT nodes=2. FP examples: BUS-480-LCB -- CB-CHG-A. FN examples: ANN-CP-A -- REC-SER-01; ANN-CP-A -- TB-ESF-A; BUS-480-LCA -- CB-CHG-A; ESFAS-TRAIN-A -- RELAY-K701; ... (+9 more).
+- Jennifer -- Round 2: TP=107, FP=1, FN=17, F1=0.922414; extra nodes=0, missing GT nodes=2. FP examples: BUS-480-LCB -- CB-CHG-A. FN examples: ANN-CP-A -- REC-SER-01; ANN-CP-A -- TB-ESF-A; BUS-480-LCA -- CB-CHG-A; BUS-480-LCA -- CB-LC-TIE; ... (+13 more).
+- Diego -- Round 3: TP=107, FP=1, FN=17, F1=0.922414; extra nodes=0, missing GT nodes=2. FP examples: BUS-480-LCB -- CB-CHG-A. FN examples: ANN-CP-A -- REC-SER-01; ANN-CP-A -- TB-ESF-A; BUS-480-LCA -- CB-CHG-A; BUS-480-LCA -- CB-LC-TIE; ... (+13 more).
+- Jennifer -- Round 4: TP=107, FP=1, FN=17, F1=0.922414; extra nodes=0, missing GT nodes=2. FP examples: BUS-480-LCB -- CB-CHG-A. FN examples: ANN-CP-A -- REC-SER-01; ANN-CP-A -- TB-ESF-A; BUS-480-LCA -- CB-CHG-A; BUS-480-LCA -- CB-LC-TIE; ... (+13 more).
+- Final connectivity -- Final: TP=107, FP=1, FN=17, F1=0.922414; extra nodes=0, missing GT nodes=2. FP examples: BUS-480-LCB -- CB-CHG-A. FN examples: ANN-CP-A -- REC-SER-01; ANN-CP-A -- TB-ESF-A; BUS-480-LCA -- CB-CHG-A; BUS-480-LCA -- CB-LC-TIE; ... (+13 more).

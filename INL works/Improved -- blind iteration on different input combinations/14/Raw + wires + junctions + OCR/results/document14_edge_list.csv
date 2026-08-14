@@ -1,0 +1,219 @@
+node_a,node_b,kind,evidence,confidence
+GRID-1,TR-SST-A,power_feeder,raw top_sources_and_4kv: solid vertical GRID-1/TR-SST-A/CB-SST-A stack lands on BUS-4A dot.,high
+TR-SST-A,CB-SST-A,power_feeder,raw top_sources_and_4kv: solid vertical GRID-1/TR-SST-A/CB-SST-A stack lands on BUS-4A dot.,high
+CB-SST-A,BUS-4A,power_feeder,raw top_sources_and_4kv: solid vertical GRID-1/TR-SST-A/CB-SST-A stack lands on BUS-4A dot.,high
+GEN-TG1,TR-UAT-1,power_feeder,raw top_sources_and_4kv: solid vertical GEN-TG1/TR-UAT-1/CB-UAT-1 stack lands on BUS-4A dot.,high
+TR-UAT-1,CB-UAT-1,power_feeder,raw top_sources_and_4kv: solid vertical GEN-TG1/TR-UAT-1/CB-UAT-1 stack lands on BUS-4A dot.,high
+CB-UAT-1,BUS-4A,power_feeder,raw top_sources_and_4kv: solid vertical GEN-TG1/TR-UAT-1/CB-UAT-1 stack lands on BUS-4A dot.,high
+DG-1A,TR-DG-A,power_feeder,raw top_sources_and_4kv: solid vertical DG-1A/TR-DG-A/CB-DG-A stack lands on BUS-4A dot.,high
+TR-DG-A,CB-DG-A,power_feeder,raw top_sources_and_4kv: solid vertical DG-1A/TR-DG-A/CB-DG-A stack lands on BUS-4A dot.,high
+CB-DG-A,BUS-4A,power_feeder,raw top_sources_and_4kv: solid vertical DG-1A/TR-DG-A/CB-DG-A stack lands on BUS-4A dot.,high
+GRID-2,TR-SST-B,power_feeder,raw top_sources_and_4kv: solid vertical GRID-2/TR-SST-B/CB-SST-B stack lands on BUS-4B dot.,high
+TR-SST-B,CB-SST-B,power_feeder,raw top_sources_and_4kv: solid vertical GRID-2/TR-SST-B/CB-SST-B stack lands on BUS-4B dot.,high
+CB-SST-B,BUS-4B,power_feeder,raw top_sources_and_4kv: solid vertical GRID-2/TR-SST-B/CB-SST-B stack lands on BUS-4B dot.,high
+DG-1B,TR-DG-B,power_feeder,raw top_sources_and_4kv: solid vertical DG-1B/TR-DG-B/CB-DG-B stack lands on BUS-4B dot.,high
+TR-DG-B,CB-DG-B,power_feeder,raw top_sources_and_4kv: solid vertical DG-1B/TR-DG-B/CB-DG-B stack lands on BUS-4B dot.,high
+CB-DG-B,BUS-4B,power_feeder,raw top_sources_and_4kv: solid vertical DG-1B/TR-DG-B/CB-DG-B stack lands on BUS-4B dot.,high
+BUS-4A,CB-TIE-4KV,bus_tie,raw top_sources_and_4kv: lower solid tie conductor connects BUS-4A and BUS-4B through CB-TIE-4KV.,high
+CB-TIE-4KV,BUS-4B,bus_tie,raw top_sources_and_4kv: lower solid tie conductor connects BUS-4A and BUS-4B through CB-TIE-4KV.,high
+BUS-4A,TR-480A,power_feeder,"raw full_left_half: solid transformer drop leaves BUS-4A, passes through TR-480A, and lands on BUS-480A.",high
+TR-480A,BUS-480A,power_feeder,"raw full_left_half: solid transformer drop leaves BUS-4A, passes through TR-480A, and lands on BUS-480A.",high
+BUS-4B,TR-480B,power_feeder,"raw full_right_half: solid transformer drop leaves BUS-4B, passes through TR-480B, and lands on BUS-480B.",high
+TR-480B,BUS-480B,power_feeder,"raw full_right_half: solid transformer drop leaves BUS-4B, passes through TR-480B, and lands on BUS-480B.",high
+BUS-4A,CB-4A-01,power_feeder,raw 4kV branch A01: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+CB-4A-01,DS-4A-01,power_feeder,raw 4kV branch A01: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+DS-4A-01,FU-A01,power_feeder,raw 4kV branch A01: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+FU-A01,TB-A01,power_feeder,raw 4kV branch A01: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+TB-A01,PUMP-CS-1A,power_feeder,raw 4kV branch A01: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+PUMP-CS-1A,GND-A01,ground,raw 4kV branch A01: load has individual vertical conductor to labeled ground GND-A01.,high
+FI-A01,TB-A01,instrument_branch,raw 4kV branch A01: instrument bubble FI-A01 has short side connection into terminal block TB-A01.,high
+RELAY-KA01,CB-4A-01,control_interlock,raw 4kV branch A01: dashed/mechanical relay contact drawn adjacent to breaker CB-4A-01.,medium
+RELAY-KA01,DS-4A-01,control_interlock,raw 4kV branch A01: relay/contact dashed line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KA01,CTRL-TRAIN-A-DASHED,dashed_control,raw 4kV branch A01: dashed control vertical continues from relay/feeder column toward lower train control bundle.,medium
+BUS-4A,CB-4A-02,power_feeder,raw 4kV branch A02: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+CB-4A-02,DS-4A-02,power_feeder,raw 4kV branch A02: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+DS-4A-02,OL-A02,power_feeder,raw 4kV branch A02: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+OL-A02,TB-A02,power_feeder,raw 4kV branch A02: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+TB-A02,PUMP-RHR-1A,power_feeder,raw 4kV branch A02: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+PUMP-RHR-1A,GND-A02,ground,raw 4kV branch A02: load has individual vertical conductor to labeled ground GND-A02.,high
+PI-A02,TB-A02,instrument_branch,raw 4kV branch A02: instrument bubble PI-A02 has short side connection into terminal block TB-A02.,high
+RELAY-KA02,CB-4A-02,control_interlock,raw 4kV branch A02: dashed/mechanical relay contact drawn adjacent to breaker CB-4A-02.,medium
+RELAY-KA02,DS-4A-02,control_interlock,raw 4kV branch A02: relay/contact dashed line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KA02,CTRL-TRAIN-A-DASHED,dashed_control,raw 4kV branch A02: dashed control vertical continues from relay/feeder column toward lower train control bundle.,medium
+BUS-4A,CB-4A-07,power_feeder,raw 4kV branch A07: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+CB-4A-07,DS-4A-07,power_feeder,raw 4kV branch A07: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+DS-4A-07,FU-A07,power_feeder,raw 4kV branch A07: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+FU-A07,TB-A07,power_feeder,raw 4kV branch A07: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+TB-A07,PUMP-CW-1A,power_feeder,raw 4kV branch A07: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+PUMP-CW-1A,GND-A07,ground,raw 4kV branch A07: load has individual vertical conductor to labeled ground GND-A07.,high
+PT-A07,TB-A07,instrument_branch,raw 4kV branch A07: instrument bubble PT-A07 has short side connection into terminal block TB-A07.,high
+RELAY-KA07,CB-4A-07,control_interlock,raw 4kV branch A07: dashed/mechanical relay contact drawn adjacent to breaker CB-4A-07.,medium
+RELAY-KA07,DS-4A-07,control_interlock,raw 4kV branch A07: relay/contact dashed line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KA07,CTRL-TRAIN-A-DASHED,dashed_control,raw 4kV branch A07: dashed control vertical continues from relay/feeder column toward lower train control bundle.,medium
+BUS-4B,CB-4B-01,power_feeder,raw 4kV branch B01: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+CB-4B-01,DS-4B-01,power_feeder,raw 4kV branch B01: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+DS-4B-01,FU-B01,power_feeder,raw 4kV branch B01: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+FU-B01,TB-B01,power_feeder,raw 4kV branch B01: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+TB-B01,PUMP-CS-1B,power_feeder,raw 4kV branch B01: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+PUMP-CS-1B,GND-B01,ground,raw 4kV branch B01: load has individual vertical conductor to labeled ground GND-B01.,high
+FI-B01,TB-B01,instrument_branch,raw 4kV branch B01: instrument bubble FI-B01 has short side connection into terminal block TB-B01.,high
+RELAY-KB01,CB-4B-01,control_interlock,raw 4kV branch B01: dashed/mechanical relay contact drawn adjacent to breaker CB-4B-01.,medium
+RELAY-KB01,DS-4B-01,control_interlock,raw 4kV branch B01: relay/contact dashed line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KB01,CTRL-TRAIN-B-DASHED,dashed_control,raw 4kV branch B01: dashed control vertical continues from relay/feeder column toward lower train control bundle.,medium
+BUS-4B,CB-4B-02,power_feeder,raw 4kV branch B02: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+CB-4B-02,DS-4B-02,power_feeder,raw 4kV branch B02: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+DS-4B-02,OL-B02,power_feeder,raw 4kV branch B02: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+OL-B02,TB-B02,power_feeder,raw 4kV branch B02: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+TB-B02,PUMP-RHR-1B,power_feeder,raw 4kV branch B02: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+PUMP-RHR-1B,GND-B02,ground,raw 4kV branch B02: load has individual vertical conductor to labeled ground GND-B02.,high
+PI-B02,TB-B02,instrument_branch,raw 4kV branch B02: instrument bubble PI-B02 has short side connection into terminal block TB-B02.,high
+RELAY-KB02,CB-4B-02,control_interlock,raw 4kV branch B02: dashed/mechanical relay contact drawn adjacent to breaker CB-4B-02.,medium
+RELAY-KB02,DS-4B-02,control_interlock,raw 4kV branch B02: relay/contact dashed line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KB02,CTRL-TRAIN-B-DASHED,dashed_control,raw 4kV branch B02: dashed control vertical continues from relay/feeder column toward lower train control bundle.,medium
+BUS-4B,CB-4B-07,power_feeder,raw 4kV branch B07: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+CB-4B-07,DS-4B-07,power_feeder,raw 4kV branch B07: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+DS-4B-07,FU-B07,power_feeder,raw 4kV branch B07: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+FU-B07,TB-B07,power_feeder,raw 4kV branch B07: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+TB-B07,PUMP-CW-1B,power_feeder,raw 4kV branch B07: solid vertical branch from named bus through breaker/disconnect/protection/terminal block to load.,high
+PUMP-CW-1B,GND-B07,ground,raw 4kV branch B07: load has individual vertical conductor to labeled ground GND-B07.,high
+PT-B07,TB-B07,instrument_branch,raw 4kV branch B07: instrument bubble PT-B07 has short side connection into terminal block TB-B07.,high
+RELAY-KB07,CB-4B-07,control_interlock,raw 4kV branch B07: dashed/mechanical relay contact drawn adjacent to breaker CB-4B-07.,medium
+RELAY-KB07,DS-4B-07,control_interlock,raw 4kV branch B07: relay/contact dashed line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KB07,CTRL-TRAIN-B-DASHED,dashed_control,raw 4kV branch B07: dashed control vertical continues from relay/feeder column toward lower train control bundle.,medium
+BUS-480A,CB-480-TIE,bus_tie,raw middle_480_tie: solid offset tie conductor connects BUS-480A and BUS-480B through CB-480-TIE.,high
+CB-480-TIE,BUS-480B,bus_tie,raw middle_480_tie: solid offset tie conductor connects BUS-480A and BUS-480B through CB-480-TIE.,high
+BUS-480A,CB-48A-03,power_feeder,raw 480 V branch A03: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+CB-48A-03,DS-48A-03,power_feeder,raw 480 V branch A03: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+DS-48A-03,KON-A03,power_feeder,raw 480 V branch A03: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+KON-A03,TB-A03,power_feeder,raw 480 V branch A03: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+TB-A03,PUMP-SW-1A,power_feeder,raw 480 V branch A03: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+PUMP-SW-1A,GND-A03,ground,raw 480 V branch A03: load has its own vertical conductor to labeled ground GND-A03.,high
+FS-A03,TB-A03,instrument_branch,raw 480 V branch A03: instrument bubble FS-A03 has side branch into terminal block TB-A03.,high
+RELAY-KA03,CB-48A-03,control_interlock,raw 480 V branch A03: relay contact/coil drawn adjacent to breaker CB-48A-03 with dashed mechanical/control indication.,medium
+RELAY-KA03,DS-48A-03,control_interlock,raw 480 V branch A03: dashed relay line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KA03,CTRL-TRAIN-A-DASHED,dashed_control,raw 480 V branch A03: dashed vertical from feeder column descends into train dashed control bundle above panels.,medium
+BUS-480A,CB-48A-04,power_feeder,raw 480 V branch A04: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+CB-48A-04,DS-48A-04,power_feeder,raw 480 V branch A04: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+DS-48A-04,FU-A04,power_feeder,raw 480 V branch A04: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+FU-A04,TB-A04,power_feeder,raw 480 V branch A04: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+TB-A04,FAN-R-1A,power_feeder,raw 480 V branch A04: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+FAN-R-1A,GND-A04,ground,raw 480 V branch A04: load has its own vertical conductor to labeled ground GND-A04.,high
+TS-A04,TB-A04,instrument_branch,raw 480 V branch A04: instrument bubble TS-A04 has side branch into terminal block TB-A04.,high
+RELAY-KA04,CB-48A-04,control_interlock,raw 480 V branch A04: relay contact/coil drawn adjacent to breaker CB-48A-04 with dashed mechanical/control indication.,medium
+RELAY-KA04,DS-48A-04,control_interlock,raw 480 V branch A04: dashed relay line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KA04,CTRL-TRAIN-A-DASHED,dashed_control,raw 480 V branch A04: dashed vertical from feeder column descends into train dashed control bundle above panels.,medium
+BUS-480A,CB-48A-05,power_feeder,raw 480 V branch A05: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+CB-48A-05,DS-48A-05,power_feeder,raw 480 V branch A05: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+DS-48A-05,OL-A05,power_feeder,raw 480 V branch A05: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+OL-A05,TB-A05,power_feeder,raw 480 V branch A05: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+TB-A05,MOV-ST-101A,power_feeder,raw 480 V branch A05: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+MOV-ST-101A,GND-A05,ground,raw 480 V branch A05: load has its own vertical conductor to labeled ground GND-A05.,high
+ZS-A05,TB-A05,instrument_branch,raw 480 V branch A05: instrument bubble ZS-A05 has side branch into terminal block TB-A05.,high
+RELAY-KA05,CB-48A-05,control_interlock,raw 480 V branch A05: relay contact/coil drawn adjacent to breaker CB-48A-05 with dashed mechanical/control indication.,medium
+RELAY-KA05,DS-48A-05,control_interlock,raw 480 V branch A05: dashed relay line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KA05,CTRL-TRAIN-A-DASHED,dashed_control,raw 480 V branch A05: dashed vertical from feeder column descends into train dashed control bundle above panels.,medium
+BUS-480A,CB-48A-06,power_feeder,raw 480 V branch A06: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+CB-48A-06,DS-48A-06,power_feeder,raw 480 V branch A06: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+DS-48A-06,KON-A06,power_feeder,raw 480 V branch A06: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+KON-A06,TB-A06,power_feeder,raw 480 V branch A06: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+TB-A06,RECT-AUX-1A,power_feeder,raw 480 V branch A06: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+RECT-AUX-1A,GND-A06,ground,raw 480 V branch A06: load has its own vertical conductor to labeled ground GND-A06.,high
+VM-A06,TB-A06,instrument_branch,raw 480 V branch A06: instrument bubble VM-A06 has side branch into terminal block TB-A06.,high
+RELAY-KA06,CB-48A-06,control_interlock,raw 480 V branch A06: relay contact/coil drawn adjacent to breaker CB-48A-06 with dashed mechanical/control indication.,medium
+RELAY-KA06,DS-48A-06,control_interlock,raw 480 V branch A06: dashed relay line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KA06,CTRL-TRAIN-A-DASHED,dashed_control,raw 480 V branch A06: dashed vertical from feeder column descends into train dashed control bundle above panels.,medium
+BUS-480A,CB-48A-08,power_feeder,raw 480 V branch A08: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+CB-48A-08,DS-48A-08,power_feeder,raw 480 V branch A08: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+DS-48A-08,OL-A08,power_feeder,raw 480 V branch A08: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+OL-A08,TB-A08,power_feeder,raw 480 V branch A08: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+TB-A08,HTR-PZR-A,power_feeder,raw 480 V branch A08: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+HTR-PZR-A,GND-A08,ground,raw 480 V branch A08: load has its own vertical conductor to labeled ground GND-A08.,high
+TT-A08,TB-A08,instrument_branch,raw 480 V branch A08: instrument bubble TT-A08 has side branch into terminal block TB-A08.,high
+RELAY-KA08,CB-48A-08,control_interlock,raw 480 V branch A08: relay contact/coil drawn adjacent to breaker CB-48A-08 with dashed mechanical/control indication.,medium
+RELAY-KA08,DS-48A-08,control_interlock,raw 480 V branch A08: dashed relay line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KA08,CTRL-TRAIN-A-DASHED,dashed_control,raw 480 V branch A08: dashed vertical from feeder column descends into train dashed control bundle above panels.,medium
+BUS-480A,CB-48A-09,power_feeder,raw 480 V branch A09: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+CB-48A-09,DS-48A-09,power_feeder,raw 480 V branch A09: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+DS-48A-09,KON-A09,power_feeder,raw 480 V branch A09: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+KON-A09,TB-A09,power_feeder,raw 480 V branch A09: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+TB-A09,COMP-IA-1A,power_feeder,raw 480 V branch A09: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+COMP-IA-1A,GND-A09,ground,raw 480 V branch A09: load has its own vertical conductor to labeled ground GND-A09.,high
+PS-A09,TB-A09,instrument_branch,raw 480 V branch A09: instrument bubble PS-A09 has side branch into terminal block TB-A09.,high
+RELAY-KA09,CB-48A-09,control_interlock,raw 480 V branch A09: relay contact/coil drawn adjacent to breaker CB-48A-09 with dashed mechanical/control indication.,medium
+RELAY-KA09,DS-48A-09,control_interlock,raw 480 V branch A09: dashed relay line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KA09,CTRL-TRAIN-A-DASHED,dashed_control,raw 480 V branch A09: dashed vertical from feeder column descends into train dashed control bundle above panels.,medium
+BUS-480B,CB-48B-03,power_feeder,raw 480 V branch B03: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+CB-48B-03,DS-48B-03,power_feeder,raw 480 V branch B03: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+DS-48B-03,KON-B03,power_feeder,raw 480 V branch B03: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+KON-B03,TB-B03,power_feeder,raw 480 V branch B03: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+TB-B03,PUMP-SW-1B,power_feeder,raw 480 V branch B03: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+PUMP-SW-1B,GND-B03,ground,raw 480 V branch B03: load has its own vertical conductor to labeled ground GND-B03.,high
+FS-B03,TB-B03,instrument_branch,raw 480 V branch B03: instrument bubble FS-B03 has side branch into terminal block TB-B03.,high
+RELAY-KB03,CB-48B-03,control_interlock,raw 480 V branch B03: relay contact/coil drawn adjacent to breaker CB-48B-03 with dashed mechanical/control indication.,medium
+RELAY-KB03,DS-48B-03,control_interlock,raw 480 V branch B03: dashed relay line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KB03,CTRL-TRAIN-B-DASHED,dashed_control,raw 480 V branch B03: dashed vertical from feeder column descends into train dashed control bundle above panels.,medium
+BUS-480B,CB-48B-04,power_feeder,raw 480 V branch B04: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+CB-48B-04,DS-48B-04,power_feeder,raw 480 V branch B04: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+DS-48B-04,FU-B04,power_feeder,raw 480 V branch B04: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+FU-B04,TB-B04,power_feeder,raw 480 V branch B04: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+TB-B04,FAN-R-1B,power_feeder,raw 480 V branch B04: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+FAN-R-1B,GND-B04,ground,raw 480 V branch B04: load has its own vertical conductor to labeled ground GND-B04.,high
+TS-B04,TB-B04,instrument_branch,raw 480 V branch B04: instrument bubble TS-B04 has side branch into terminal block TB-B04.,high
+RELAY-KB04,CB-48B-04,control_interlock,raw 480 V branch B04: relay contact/coil drawn adjacent to breaker CB-48B-04 with dashed mechanical/control indication.,medium
+RELAY-KB04,DS-48B-04,control_interlock,raw 480 V branch B04: dashed relay line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KB04,CTRL-TRAIN-B-DASHED,dashed_control,raw 480 V branch B04: dashed vertical from feeder column descends into train dashed control bundle above panels.,medium
+BUS-480B,CB-48B-05,power_feeder,raw 480 V branch B05: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+CB-48B-05,DS-48B-05,power_feeder,raw 480 V branch B05: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+DS-48B-05,OL-B05,power_feeder,raw 480 V branch B05: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+OL-B05,TB-B05,power_feeder,raw 480 V branch B05: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+TB-B05,MOV-ST-101B,power_feeder,raw 480 V branch B05: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+MOV-ST-101B,GND-B05,ground,raw 480 V branch B05: load has its own vertical conductor to labeled ground GND-B05.,high
+ZS-B05,TB-B05,instrument_branch,raw 480 V branch B05: instrument bubble ZS-B05 has side branch into terminal block TB-B05.,high
+RELAY-KB05,CB-48B-05,control_interlock,raw 480 V branch B05: relay contact/coil drawn adjacent to breaker CB-48B-05 with dashed mechanical/control indication.,medium
+RELAY-KB05,DS-48B-05,control_interlock,raw 480 V branch B05: dashed relay line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KB05,CTRL-TRAIN-B-DASHED,dashed_control,raw 480 V branch B05: dashed vertical from feeder column descends into train dashed control bundle above panels.,medium
+BUS-480B,CB-48B-06,power_feeder,raw 480 V branch B06: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+CB-48B-06,DS-48B-06,power_feeder,raw 480 V branch B06: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+DS-48B-06,KON-B06,power_feeder,raw 480 V branch B06: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+KON-B06,TB-B06,power_feeder,raw 480 V branch B06: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+TB-B06,INV-AUX-1B,power_feeder,raw 480 V branch B06: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+INV-AUX-1B,GND-B06,ground,raw 480 V branch B06: load has its own vertical conductor to labeled ground GND-B06.,high
+VM-B06,TB-B06,instrument_branch,raw 480 V branch B06: instrument bubble VM-B06 has side branch into terminal block TB-B06.,high
+RELAY-KB06,CB-48B-06,control_interlock,raw 480 V branch B06: relay contact/coil drawn adjacent to breaker CB-48B-06 with dashed mechanical/control indication.,medium
+RELAY-KB06,DS-48B-06,control_interlock,raw 480 V branch B06: dashed relay line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KB06,CTRL-TRAIN-B-DASHED,dashed_control,raw 480 V branch B06: dashed vertical from feeder column descends into train dashed control bundle above panels.,medium
+BUS-480B,CB-48B-08,power_feeder,raw 480 V branch B08: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+CB-48B-08,DS-48B-08,power_feeder,raw 480 V branch B08: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+DS-48B-08,OL-B08,power_feeder,raw 480 V branch B08: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+OL-B08,TB-B08,power_feeder,raw 480 V branch B08: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+TB-B08,HVAC-CHLR-1B,power_feeder,raw 480 V branch B08: solid vertical branch from named 480 V bus through breaker/disconnect/protection or contactor/terminal block to load.,high
+HVAC-CHLR-1B,GND-B08,ground,raw 480 V branch B08: load has its own vertical conductor to labeled ground GND-B08.,high
+LT-B08,TB-B08,instrument_branch,raw 480 V branch B08: instrument bubble LT-B08 has side branch into terminal block TB-B08.,high
+RELAY-KB08,CB-48B-08,control_interlock,raw 480 V branch B08: relay contact/coil drawn adjacent to breaker CB-48B-08 with dashed mechanical/control indication.,medium
+RELAY-KB08,DS-48B-08,control_interlock,raw 480 V branch B08: dashed relay line runs beside breaker/disconnect stack; DS relation plausible but terminal is not explicit.,low
+RELAY-KB08,CTRL-TRAIN-B-DASHED,dashed_control,raw 480 V branch B08: dashed vertical from feeder column descends into train dashed control bundle above panels.,medium
+BUS-480A,CHG-125A,power_feeder,raw full_left_half/lower_panels: solid vertical feeder descends from BUS-480A area to CHG-125A and continues to BUS-125DCA.,high
+CHG-125A,BUS-125DCA,power_feeder,raw raw bottom-left DC/UPS band: CHG-125A bottom solid conductor lands on BUS-125DCA junction.,high
+BUS-125DCA,BAT-125A,power_feeder,raw raw bottom-left DC/UPS band: BUS-125DCA vertical drop with dot feeds BAT-125A symbol.,high
+BUS-125DCA,INV-120A,power_feeder,raw raw bottom-left DC/UPS band: BUS-125DCA vertical drop with dot enters INV-120A.,high
+INV-120A,BUS-UPS-A,power_feeder,raw raw bottom-left DC/UPS band: INV-120A bottom conductor lands on BUS-UPS-A dot.,high
+BUS-125DCA,CB-DG-TIE,bus_tie,raw lower_dc_and_tie/center_panels: BUS-125DCA connects by solid tie conductor to left side of CB-DG-TIE.,high
+CB-DG-TIE,BUS-125DCB,bus_tie,raw lower_dc_and_tie/center_panels: right side of CB-DG-TIE connects by solid tie conductor to BUS-125DCB.,high
+BUS-480B,CHG-125B,power_feeder,raw full_right_half/lower panels: solid vertical feeder descends from BUS-480B area to CHG-125B and continues to BUS-125DCB.,high
+CHG-125B,BUS-125DCB,power_feeder,raw raw bottom-right DC/UPS band: CHG-125B bottom solid conductor lands on BUS-125DCB junction.,high
+BUS-125DCB,BAT-125B,power_feeder,raw raw bottom-right DC/UPS band: BUS-125DCB vertical drop with dot feeds BAT-125B symbol.,high
+BUS-125DCB,INV-120B,power_feeder,raw raw bottom-right DC/UPS band: BUS-125DCB vertical drop enters INV-120B.,high
+INV-120B,BUS-UPS-B,power_feeder,raw raw bottom-right DC/UPS band: INV-120B bottom conductor lands on BUS-UPS-B dot.,high
+CTRL-TRAIN-A-DASHED,PANEL-ESF-A,dashed_control,raw raw lower A panel band: dashed train A control bundle drops to/along PANEL-ESF-A top edge.,medium
+CTRL-TRAIN-A-DASHED,PANEL-RPS-A,dashed_control,raw raw lower A panel band: train A dashed bundle passes immediately above PANEL-RPS-A; exact terminal hidden by overlapping solid feeder.,low
+CTRL-TRAIN-A-DASHED,PANEL-LS-A,dashed_control,raw raw lower A panel band: dashed train A control bundle visibly drops to PANEL-LS-A top edge.,medium
+CTRL-TRAIN-B-DASHED,PANEL-LS-B,dashed_control,raw raw lower B panel band: dashed train B control bundle drops to/along PANEL-LS-B top edge.,medium
+CTRL-TRAIN-B-DASHED,PANEL-RPS-B,dashed_control,raw raw lower B panel band: dashed train B control bundle crosses and drops at PANEL-RPS-B.,medium
+CTRL-TRAIN-B-DASHED,PANEL-ESF-B,dashed_control,raw raw lower B panel band: dashed train B control bundle drops to/along PANEL-ESF-B top edge.,medium
+CTRL-TRAIN-A-DASHED,PANEL-MCR,dashed_control,raw raw central lower panel band: left-side dashed train bundle enters PANEL-MCR side/top region.,medium
+CTRL-TRAIN-B-DASHED,PANEL-MCR,dashed_control,raw raw central lower panel band: right-side dashed train bundle enters PANEL-MCR side/top region.,medium
+PANEL-MCR,PANEL-ANN,dashed_control,raw raw central lower panel band: dashed vertical connects PANEL-MCR down to PANEL-ANN.,high
+PANEL-ANN,CB-DG-TIE,dashed_control,raw raw central lower panel band: dashed vertical continues from PANEL-ANN down to CB-DG-TIE.,high
+BUS-480A,PANEL-RPS-A,panel_feed_uncertain,raw raw lower A panel band: solid charger feeder visually passes through PANEL-RPS-A; may be a true panel feed or overdraw.,low
+PANEL-RPS-A,CHG-125A,panel_feed_uncertain,raw raw lower A panel band: same solid vertical leaves PANEL-RPS-A bottom and enters CHG-125A; included as plausible but ambiguous.,low
+BUS-UPS-A,MASTER_TERMINAL_BLOCKS,logical_terminal,raw raw bottom-left DC/UPS band: MASTER TERMINAL BLOCKS strip is directly below/adjacent to BUS-UPS-A; no per-cell conductors resolved.,low

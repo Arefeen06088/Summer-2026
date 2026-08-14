@@ -1,0 +1,49 @@
+{
+  "document": "2",
+  "iteration": "1",
+  "created_utc": "2026-07-23T03:09:00Z",
+  "nodes": 100,
+  "edges": 100,
+  "matrix_rows": 100,
+  "matrix_cols": 100,
+  "diagonal_sum": 0,
+  "symmetric": true,
+  "off_diagonal_nonzero_entries": 200,
+  "edge_type_counts": {
+    "solid": 50,
+    "bus-tap": 43,
+    "dashed": 7
+  },
+  "subagent_rounds": [
+    {
+      "round": "round_01_diego_high_recall",
+      "agent": "Diego",
+      "status": "proposed 100 nodes and 100 edges from visual evidence, including dashed control/permissive links.",
+      "nodes": 100,
+      "edges": 100
+    },
+    {
+      "round": "round_02_jennifer_precision_review",
+      "agent": "Jennifer",
+      "status": "no nodes or edges removed; clarified dashed/control edge classification.",
+      "nodes": 100,
+      "edges": 100
+    },
+    {
+      "round": "round_03_diego_convergence",
+      "agent": "Diego",
+      "status": "accepted Jennifer refinement; no graph changes.",
+      "nodes": 100,
+      "edges": 100
+    },
+    {
+      "round": "round_04_jennifer_final",
+      "agent": "Jennifer",
+      "status": "final saturated matrix confirmed.",
+      "nodes": 100,
+      "edges": 100
+    }
+  ],
+  "ocr_used": false,
+  "gt_or_validation_used": false
+}

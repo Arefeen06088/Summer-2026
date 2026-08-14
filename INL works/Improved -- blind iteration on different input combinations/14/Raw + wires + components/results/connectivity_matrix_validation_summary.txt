@@ -1,0 +1,78 @@
+Connectivity matrix validation summary - Document 14
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\14\connectivity_matrix_even_bus_spacing.csv
+
+Scores:
+- Diego -- Round 1 (round01_diego_connectivity_matrix.csv): TP=127, FP=47, FN=63, Precision=0.729885, Recall=0.668421, F1=0.697802
+- Jennifer -- Round 1 (round01_jennifer_connectivity_matrix.csv): TP=121, FP=36, FN=69, Precision=0.770701, Recall=0.636842, F1=0.697406
+- Diego -- Round 2 (round02_diego_connectivity_matrix.csv): TP=121, FP=36, FN=69, Precision=0.770701, Recall=0.636842, F1=0.697406
+- Jennifer -- Round 2 (round02_jennifer_connectivity_matrix.csv): TP=121, FP=36, FN=69, Precision=0.770701, Recall=0.636842, F1=0.697406
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=121, FP=36, FN=69, Precision=0.770701, Recall=0.636842, F1=0.697406
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- BUS-480A -- CB-480A-03
+- BUS-480A -- CB-480A-04
+- BUS-480A -- CB-480A-05
+- BUS-480A -- CB-480A-06
+- BUS-480A -- CB-480A-08
+- BUS-480A -- CB-480A-09
+- BUS-480A -- PANEL-RPS-A
+- BUS-480B -- CB-480B-03
+- BUS-480B -- CB-480B-04
+- BUS-480B -- CB-480B-05
+
+False-negative edge examples:
+- BUS-480A -- CB-48A-03
+- BUS-480A -- CB-48A-04
+- BUS-480A -- CB-48A-05
+- BUS-480A -- CB-48A-06
+- BUS-480A -- CB-48A-08
+- BUS-480A -- CB-48A-09
+- BUS-480A -- CHG-125A
+- BUS-480B -- CB-48B-03
+- BUS-480B -- CB-48B-04
+- BUS-480B -- CB-48B-05
+
+Extra/non-GT nodes causing performance drops:
+- CB-480A-03: 2 incident false-positive edge(s)
+- CB-480A-04: 2 incident false-positive edge(s)
+- CB-480A-05: 2 incident false-positive edge(s)
+- CB-480A-06: 2 incident false-positive edge(s)
+- CB-480A-08: 2 incident false-positive edge(s)
+- CB-480A-09: 2 incident false-positive edge(s)
+- CB-480B-03: 2 incident false-positive edge(s)
+- CB-480B-04: 2 incident false-positive edge(s)
+- CB-480B-05: 2 incident false-positive edge(s)
+- CB-480B-06: 2 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (CB-480A-03, CB-480A-04, CB-480A-05, CB-480A-06, CB-480A-08), final metrics would be TP=121, FP=26, FN=69, Precision=0.823129, Recall=0.636842, F1=0.718101.
+- If all 22 non-GT nodes were omitted, metrics would be TP=121, FP=3, FN=69, Precision=0.975806, Recall=0.636842, F1=0.770701.
+
+Missing GT node examples:
+- PANEL-ESF-A: 4 missed incident GT edge(s)
+- PANEL-ESF-B: 4 missed incident GT edge(s)
+- CB-48A-03: 3 missed incident GT edge(s)
+- CB-48A-04: 3 missed incident GT edge(s)
+- CB-48A-05: 3 missed incident GT edge(s)
+- CB-48A-06: 3 missed incident GT edge(s)
+- CB-48A-08: 3 missed incident GT edge(s)
+- CB-48A-09: 3 missed incident GT edge(s)
+- CB-48B-03: 3 missed incident GT edge(s)
+- CB-48B-04: 3 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted CB-480A-03 vs GT CB-48A-03 (similarity 0.95)
+- Extracted CB-480A-04 vs GT CB-48A-04 (similarity 0.95)
+- Extracted CB-480A-05 vs GT CB-48A-05 (similarity 0.95)
+- Extracted CB-480A-06 vs GT CB-48A-06 (similarity 0.95)
+- Extracted CB-480A-08 vs GT CB-48A-08 (similarity 0.95)
+- Extracted CB-480A-09 vs GT CB-48A-09 (similarity 0.95)
+- Extracted CB-480B-03 vs GT CB-48B-03 (similarity 0.95)
+- Extracted CB-480B-04 vs GT CB-48B-04 (similarity 0.95)

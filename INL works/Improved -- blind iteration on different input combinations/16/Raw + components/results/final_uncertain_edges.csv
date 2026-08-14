@@ -1,0 +1,19 @@
+source,target,reason
+TR-4KV-480A,BUS-4KV-B,"TR-4KV-480A primary drop visually crosses the lower 4 kV bus region, but no filled dot is visible at the crossing; not asserted."
+GEN-EDG-B,BUS-4KV-A,GEN-EDG-B vertical conductor crosses the upper 4 kV bus without a visible filled dot; treated as a non-connection.
+BUS-480-A,CB-11A-FDR / CB-12A-FDR / CB-21A-FDR,"Upper 480 V bus has nearby vertical drops, but feeder breakers are visually landed on the lower 480 V busbar; matrix uses BUS-480-B for feeder taps."
+CB-401A,CB-401B,"Dashed breaker-trip/control route is visible between the two source breakers, but its exact endpoint chain below the 4 kV source area is unclear."
+CP-DCS-01,CP-ESF-A,"Dashed/control routes run between the ESF/DCS panels, but crossings and junction dots around the panel boundaries are not fully separable."
+CP-RPS-A,selected A-train MCC breaker trip line,A dashed horizontal trip line passes through several A-train branch breakers; endpoints to CP-RPS-A/CP-ESF-A are plausible but not cleanly isolated.
+CP-RPS-B,selected B-train MCC breaker trip line,A dashed horizontal trip line passes through several B-train branch breakers; endpoints to CP-RPS-B/CP-ESF-B are plausible but not cleanly isolated.
+BUS-125DC-A,BATT-125A,Battery is clearly dashed to CHGR-125A; a direct battery-to-125 VDC bus landing is not visually distinct from the charger connection.
+BUS-125DC-B,BATT-125B,Battery is clearly dashed to CHGR-125B; a direct battery-to-125 VDC bus landing is not visually distinct from the charger connection.
+ANN-501,BUS-125DC-A,"ANN-501 sits just above the 125 VDC bus label/run, but the visible lead reads more like the LT-RWST101 signal lead than a power bus junction."
+JB-CONTAIN,TB-ESF-2,"Right containment junction box is tied into a dashed enclosure/control route near TB-ESF-2, but the immediate endpoint is partially ambiguous."
+JB-CONTAIN,XS-DOOR101,XS-DOOR101 signal is visually tied to TB-ESF-2; a separate direct JB-CONTAIN-to-XS lead is plausible from the dashed enclosure but not explicit.
+UCG-01,BUS-120-RPS-A,"Dashed route approaches UCG-01 from the A-side vital bus area, but there is no clear filled junction from BUS-120-RPS-A to UCG-01."
+UCG-01,BUS-120-RPS-B,"Dashed route approaches UCG-01 from the B-side vital bus area, but there is no clear filled junction from BUS-120-RPS-B to UCG-01."
+BUS-480-B,TR-RPS-A / TR-RPS-B exact tap breakers,"Solid 480 V vertical feeds into TR-RPS-A and TR-RPS-B are visible, but no separately labeled upstream breaker for those transformer taps is legible."
+CP-ANN-01,TB-ESF-2,"Demoted from Diego: the B-train annunciator/control route is visible, but shared dashed/dotted routing around TR-RPS-B/MG-RPS-B prevents a confident direct endpoint call."
+MG-RPS-A,BUS-120-RPS-A,"The MG output/meter vertical run lands on BUS-120-RPS-A, but FT-AFW101/METER-VM-1 inline/side-tap interpretation is ambiguous; retained only the visible instrument chain and bus landing."
+MG-RPS-B,BUS-120-RPS-B,"The solid vertical output run lands on BUS-120-RPS-B, but RTD-RCS101 appears on the same run; direct MG-to-bus modeling is left uncertain rather than added as a shortcut."

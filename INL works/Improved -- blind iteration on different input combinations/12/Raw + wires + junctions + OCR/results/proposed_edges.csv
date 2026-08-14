@@ -1,0 +1,218 @@
+node_a,node_b,kind,evidence,confidence
+GEN-G1,CB-GEN-1,power,crop_raw_top_power_sources_bus.png solid generator feeder,high
+CB-GEN-1,TR-UAT-1,power,crop_raw_top_power_sources_bus.png solid feeder from generator breaker to UAT,high
+TR-UAT-1,CB-101,power,crop_raw_top_power_sources_bus.png solid feeder from UAT to bus breaker,high
+CB-101,BUS-4KV-A,power,crop_raw_top_power_sources_bus.png solid tap with dot on BUS-4KV-A,high
+TR-SUT-1,DS-SUT-1,power,crop_raw_top_power_sources_bus.png solid standby transformer feeder to disconnect,high
+DS-SUT-1,CB-102,power,crop_raw_top_power_sources_bus.png solid feeder from disconnect to breaker,high
+CB-102,BUS-4KV-A,power,crop_raw_top_power_sources_bus.png solid tap with dot on BUS-4KV-A,high
+EDG-1A,DS-EDG-1A,power,crop_raw_top_power_sources_bus.png solid diesel generator feeder to disconnect,high
+DS-EDG-1A,CB-103,power,crop_raw_top_power_sources_bus.png solid feeder from diesel disconnect to breaker,high
+CB-103,BUS-4KV-A,power,crop_raw_top_power_sources_bus.png solid tap with dot on BUS-4KV-A,high
+BUS-4KV-A,CB-TIE-1,power,crop_raw_top_power_sources_bus.png solid left side of bus tie breaker,high
+CB-TIE-1,BUS-4KV-B,power,crop_raw_top_power_sources_bus.png solid right side of bus tie breaker,high
+EDG-1B,DS-EDG-1B,power,crop_raw_top_power_sources_bus.png solid diesel generator feeder to disconnect,high
+DS-EDG-1B,CB-203,power,crop_raw_top_power_sources_bus.png solid feeder from diesel disconnect to breaker,high
+CB-203,BUS-4KV-B,power,crop_raw_top_power_sources_bus.png solid tap with dot on BUS-4KV-B,high
+TR-SUT-2,DS-SUT-2,power,crop_raw_top_power_sources_bus.png solid standby transformer feeder to disconnect,high
+DS-SUT-2,CB-202,power,crop_raw_top_power_sources_bus.png solid feeder from disconnect to breaker,high
+CB-202,BUS-4KV-B,power,crop_raw_top_power_sources_bus.png solid tap with dot on BUS-4KV-B,high
+EDG-1C,CB-303,power,crop_raw_top_power_sources_bus.png solid diesel generator feeder directly to breaker,high
+CB-303,BUS-4KV-B,power,crop_raw_top_power_sources_bus.png solid tap with dot on BUS-4KV-B,high
+BUS-4KV-A,CB-111,power,crop_raw_left_4160_480_detail.png solid tap from BUS-4KV-A to transformer feeder breaker,high
+CB-111,TR-480-A,power,crop_raw_left_4160_480_detail.png solid feeder from breaker to transformer,high
+TR-480-A,BUS-480-A,power,crop_raw_left_4160_480_detail.png solid transformer secondary tap to BUS-480-A,high
+BUS-4KV-A,CB-112,power,crop_raw_left_4160_480_detail.png solid tap from BUS-4KV-A to transformer feeder breaker,high
+CB-112,TR-480-C,power,crop_raw_left_4160_480_detail.png solid feeder from breaker to transformer,high
+TR-480-C,BUS-480-C,power,crop_raw_left_4160_480_detail.png solid transformer secondary tap to BUS-480-C,high
+BUS-4KV-B,CB-211,power,crop_raw_right_4160_480_detail.png solid tap from BUS-4KV-B to transformer feeder breaker,high
+CB-211,TR-480-B,power,crop_raw_right_4160_480_detail.png solid feeder from breaker to transformer,high
+TR-480-B,BUS-480-B,power,crop_raw_right_4160_480_detail.png solid transformer secondary tap to BUS-480-B,high
+BUS-4KV-B,CB-212,power,crop_raw_right_4160_480_detail.png solid tap from BUS-4KV-B to transformer feeder breaker,high
+CB-212,TR-480-D,power,crop_raw_right_4160_480_detail.png solid feeder from breaker to transformer,high
+TR-480-D,BUS-480-D,power,crop_raw_right_4160_480_detail.png solid transformer secondary tap to BUS-480-D,high
+BUS-4KV-A,PT-4160A,signal,crop_raw_left_4160_480_detail.png dotted instrument tap near BUS-4KV-A,high
+BUS-4KV-B,PT-4160B,signal,crop_raw_right_4160_480_detail.png dotted instrument tap near BUS-4KV-B,high
+BUS-480-A,CB-M1A,power,crop_raw_left_4160_480_detail.png solid tap from BUS-480-A to MCC feeder breaker,high
+CB-M1A,MCC-1A,power,crop_raw_left_mcc1_loads.png solid feeder from CB-M1A into MCC-1A bus,high
+BUS-480-C,CB-M2A,power,crop_raw_left_4160_480_detail.png solid tap from BUS-480-C to MCC feeder breaker,high
+CB-M2A,MCC-2A,power,crop_raw_left_mcc2_loads.png solid feeder path from CB-M2A to MCC-2A bus,medium
+BUS-480-B,CB-M1B,power,crop_raw_right_4160_480_detail.png solid tap from BUS-480-B to MCC feeder breaker,high
+CB-M1B,MCC-1B,power,crop_raw_right_mcc1_loads.png solid feeder from CB-M1B into MCC-1B bus,high
+BUS-480-D,CB-M2B,power,crop_raw_right_4160_480_detail.png solid tap from BUS-480-D to MCC feeder breaker,high
+CB-M2B,MCC-2B,power,crop_raw_right_mcc2_loads.png solid feeder path from CB-M2B to MCC-2B bus,medium
+MCC-1A,CB-F001,power,crop_raw_left_mcc1_loads.png solid MCC-1A bus tap to CB-F001,high
+CB-F001,FU-F001,power,crop_raw_left_mcc1_loads.png vertical feeder from CB-F001 to fuse,high
+FU-F001,PUMP-RHR-A1,power,crop_raw_left_mcc1_loads.png vertical feeder from fuse to pump,high
+MCC-1A,CB-F002,power,crop_raw_left_mcc1_loads.png solid MCC-1A bus tap to CB-F002,high
+CB-F002,MS-F002,power,crop_raw_left_mcc1_loads.png vertical feeder from CB-F002 to motor starter,high
+MS-F002,PUMP-SI-A,power,crop_raw_left_mcc1_loads.png vertical feeder from starter to pump,high
+MCC-1A,CB-F003,power,crop_raw_left_mcc1_loads.png solid MCC-1A bus tap to CB-F003,high
+CB-F003,FU-F003,power,crop_raw_left_mcc1_loads.png vertical feeder from CB-F003 to fuse,high
+FU-F003,FAN-CR-A,power,crop_raw_left_mcc1_loads.png vertical feeder from fuse to fan motor,high
+MCC-1A,CB-F004,power,crop_raw_left_mcc1_loads.png solid MCC-1A bus tap to CB-F004,high
+CB-F004,DS-F004,power,crop_raw_left_mcc1_loads.png vertical feeder from CB-F004 to disconnect,high
+DS-F004,MOV-RCIC-A,power,crop_raw_left_mcc1_loads.png vertical feeder from disconnect to MOV,high
+MCC-1A,CB-F005,power,crop_raw_left_mcc1_loads.png solid MCC-1A bus tap to CB-F005,high
+CB-F005,MS-F005,power,crop_raw_left_mcc1_loads.png vertical feeder from CB-F005 to motor starter,high
+MS-F005,PUMP-CCW-A,power,crop_raw_left_mcc1_loads.png vertical feeder from starter to pump,high
+MCC-1A,CB-F006,power,crop_raw_left_mcc1_loads.png solid MCC-1A bus tap to CB-F006,high
+CB-F006,FU-F006,power,crop_raw_left_mcc1_loads.png vertical feeder from CB-F006 to fuse,high
+FU-F006,HTR-SUMP-A,power,crop_raw_left_mcc1_loads.png vertical feeder from fuse to heater,high
+MCC-1A,CB-F007,power,crop_raw_left_mcc1_loads.png solid MCC-1A bus tap to CB-F007,high
+CB-F007,MS-F007,power,crop_raw_left_mcc1_loads.png vertical feeder from CB-F007 to motor starter,high
+MS-F007,PMP-BOR-A,power,crop_raw_left_mcc1_loads.png vertical feeder from starter to pump,high
+MCC-1A,CB-F008,power,crop_raw_left_mcc1_loads.png solid MCC-1A bus tap to CB-F008,high
+CB-F008,DS-F008,power,crop_raw_left_mcc1_loads.png vertical feeder from CB-F008 to disconnect,high
+DS-F008,VALVE-IA-A,power,crop_raw_left_mcc1_loads.png vertical feeder from disconnect to valve,high
+MCC-2A,CB-F009,power,crop_raw_left_mcc2_loads.png solid MCC-2A bus tap to CB-F009,high
+CB-F009,MS-F009,power,crop_raw_left_mcc2_loads.png vertical feeder from CB-F009 to motor starter,high
+MS-F009,PUMP-AFW-A,power,crop_raw_left_mcc2_loads.png vertical feeder from starter to pump,high
+MCC-2A,CB-F010,power,crop_raw_left_mcc2_loads.png solid MCC-2A bus tap to CB-F010,high
+CB-F010,MS-F010,power,crop_raw_left_mcc2_loads.png vertical feeder from CB-F010 to motor starter,high
+MS-F010,PMP-LUBE-A,power,crop_raw_left_mcc2_loads.png vertical feeder from starter to pump,high
+MCC-2A,CB-F011,power,crop_raw_left_mcc2_loads.png solid MCC-2A bus tap to CB-F011,high
+CB-F011,DS-F011,power,crop_raw_left_mcc2_loads.png vertical feeder from CB-F011 to disconnect,high
+DS-F011,MOV-RHR-A,power,crop_raw_left_mcc2_loads.png vertical feeder from disconnect to MOV,high
+MCC-2A,CB-F012,power,crop_raw_left_mcc2_loads.png solid MCC-2A bus tap to CB-F012,high
+CB-F012,FU-F012,power,crop_raw_left_mcc2_loads.png vertical feeder from CB-F012 to fuse,high
+FU-F012,FAN-BLDG-A,power,crop_raw_left_mcc2_loads.png vertical feeder from fuse to fan motor,high
+MCC-2A,CB-F013,power,crop_raw_left_mcc2_loads.png solid MCC-2A bus tap to CB-F013,high
+CB-F013,FU-F013,power,crop_raw_left_mcc2_loads.png vertical feeder from CB-F013 to fuse,high
+FU-F013,PNL-RAD-A,power,crop_raw_left_mcc2_loads.png vertical feeder from fuse to radiation panel,high
+MCC-2A,CB-F014,power,crop_raw_left_mcc2_loads.png solid MCC-2A bus tap to CB-F014,high
+CB-F014,MS-F014,power,crop_raw_left_mcc2_loads.png vertical feeder from CB-F014 to motor starter,high
+MS-F014,PUMP-SW-A,power,crop_raw_left_mcc2_loads.png vertical feeder from starter to pump,high
+MCC-2A,CB-F015,power,crop_raw_left_mcc2_loads.png solid MCC-2A bus tap to CB-F015,high
+CB-F015,DS-F015,power,crop_raw_left_mcc2_loads.png vertical feeder from CB-F015 to disconnect,high
+DS-F015,SPARE-A2,power,crop_raw_left_mcc2_loads.png vertical feeder from disconnect to spare load,high
+MCC-1B,CB-F016,power,crop_raw_right_mcc1_loads.png solid MCC-1B bus tap to CB-F016,high
+CB-F016,MS-F016,power,crop_raw_right_mcc1_loads.png vertical feeder from CB-F016 to motor starter,high
+MS-F016,PUMP-RHR-B1,power,crop_raw_right_mcc1_loads.png vertical feeder from starter to pump,high
+MCC-1B,CB-F017,power,crop_raw_right_mcc1_loads.png solid MCC-1B bus tap to CB-F017,high
+CB-F017,MS-F017,power,crop_raw_right_mcc1_loads.png vertical feeder from CB-F017 to motor starter,high
+MS-F017,PUMP-SI-B,power,crop_raw_right_mcc1_loads.png vertical feeder from starter to pump,high
+MCC-1B,CB-F018,power,crop_raw_right_mcc1_loads.png solid MCC-1B bus tap to CB-F018,high
+CB-F018,FU-F018,power,crop_raw_right_mcc1_loads.png vertical feeder from CB-F018 to fuse,high
+FU-F018,FAN-CR-B,power,crop_raw_right_mcc1_loads.png vertical feeder from fuse to fan motor,high
+MCC-1B,CB-F019,power,crop_raw_right_mcc1_loads.png solid MCC-1B bus tap to CB-F019,high
+CB-F019,DS-F019,power,crop_raw_right_mcc1_loads.png vertical feeder from CB-F019 to disconnect,high
+DS-F019,MOV-RCIC-B,power,crop_raw_right_mcc1_loads.png vertical feeder from disconnect to MOV,high
+MCC-1B,CB-F020,power,crop_raw_right_mcc1_loads.png solid MCC-1B bus tap to CB-F020,high
+CB-F020,MS-F020,power,crop_raw_right_mcc1_loads.png vertical feeder from CB-F020 to motor starter,high
+MS-F020,PUMP-CCW-B,power,crop_raw_right_mcc1_loads.png vertical feeder from starter to pump,high
+MCC-1B,CB-F021,power,crop_raw_right_mcc1_loads.png solid MCC-1B bus tap to CB-F021,high
+CB-F021,FU-F021,power,crop_raw_right_mcc1_loads.png vertical feeder from CB-F021 to fuse,high
+FU-F021,HTR-SUMP-B,power,crop_raw_right_mcc1_loads.png vertical feeder from fuse to heater,high
+MCC-1B,CB-F022,power,crop_raw_right_mcc1_loads.png solid MCC-1B bus tap to CB-F022,high
+CB-F022,MS-F022,power,crop_raw_right_mcc1_loads.png vertical feeder from CB-F022 to motor starter,high
+MS-F022,PMP-BOR-B,power,crop_raw_right_mcc1_loads.png vertical feeder from starter to pump,high
+MCC-1B,CB-F023,power,crop_raw_right_mcc1_loads.png solid MCC-1B bus tap to CB-F023,high
+CB-F023,DS-F023,power,crop_raw_right_mcc1_loads.png vertical feeder from CB-F023 to disconnect,medium
+DS-F023,VALVE-IA-B,power,crop_raw_right_mcc1_loads.png vertical feeder from disconnect to valve,medium
+MCC-2B,CB-F024,power,crop_raw_right_mcc2_loads.png solid MCC-2B bus tap to CB-F024,high
+CB-F024,MS-F024,power,crop_raw_right_mcc2_loads.png vertical feeder from CB-F024 to motor starter,high
+MS-F024,PUMP-AFW-B,power,crop_raw_right_mcc2_loads.png vertical feeder from starter to pump,high
+MCC-2B,CB-F025,power,crop_raw_right_mcc2_loads.png solid MCC-2B bus tap to CB-F025,high
+CB-F025,MS-F025,power,crop_raw_right_mcc2_loads.png vertical feeder from CB-F025 to motor starter,high
+MS-F025,PMP-LUBE-B,power,crop_raw_right_mcc2_loads.png vertical feeder from starter to pump,high
+MCC-2B,CB-F026,power,crop_raw_right_mcc2_loads.png solid MCC-2B bus tap to CB-F026,high
+CB-F026,DS-F026,power,crop_raw_right_mcc2_loads.png vertical feeder from CB-F026 to disconnect,high
+DS-F026,MOV-RHR-B,power,crop_raw_right_mcc2_loads.png vertical feeder from disconnect to MOV,high
+MCC-2B,CB-F027,power,crop_raw_right_mcc2_loads.png solid MCC-2B bus tap to CB-F027,high
+CB-F027,FU-F027,power,crop_raw_right_mcc2_loads.png vertical feeder from CB-F027 to fuse,high
+FU-F027,FAN-BLDG-B,power,crop_raw_right_mcc2_loads.png vertical feeder from fuse to fan motor,high
+MCC-2B,CB-F028,power,crop_raw_right_mcc2_loads.png solid MCC-2B bus tap to CB-F028,high
+CB-F028,FU-F028,power,crop_raw_right_mcc2_loads.png vertical feeder from CB-F028 to fuse,high
+FU-F028,PNL-RAD-B,power,crop_raw_right_mcc2_loads.png vertical feeder from fuse to radiation panel,high
+MCC-2B,CB-F029,power,crop_raw_right_mcc2_loads.png solid MCC-2B bus tap to CB-F029,high
+CB-F029,MS-F029,power,crop_raw_right_mcc2_loads.png vertical feeder from CB-F029 to motor starter,high
+MS-F029,PUMP-SW-B,power,crop_raw_right_mcc2_loads.png vertical feeder from starter to pump,high
+MCC-2A,CB-DC-1A,power,crop_raw_dc_inverter_center.png solid feeder from MCC-2A area to charger breaker,medium
+CB-DC-1A,CHGR-125A,power,crop_raw_dc_inverter_center.png solid feeder from breaker to charger,high
+CHGR-125A,DC-BUS-A,power,crop_raw_dc_inverter_center.png solid charger output tap to DC-BUS-A,high
+BAT-125A,DC-BUS-A,power,crop_raw_dc_inverter_center.png solid battery tap to DC-BUS-A,high
+DC-BUS-A,INV-1A,power,crop_raw_dc_inverter_center.png solid DC bus tap to inverter,high
+INV-1A,ATS-INV,power,crop_raw_dc_inverter_center.png solid inverter AC output to ATS-INV,high
+MCC-2B,CB-DC-1B,power,crop_raw_dc_inverter_center.png solid feeder from MCC-2B area to charger breaker,medium
+CB-DC-1B,CHGR-125B,power,crop_raw_dc_inverter_center.png solid feeder from breaker to charger,high
+CHGR-125B,DC-BUS-B,power,crop_raw_dc_inverter_center.png solid charger output tap to DC-BUS-B,high
+BAT-125B,DC-BUS-B,power,crop_raw_dc_inverter_center.png solid battery tap to DC-BUS-B,high
+DC-BUS-B,INV-1B,power,crop_raw_dc_inverter_center.png solid DC bus tap to inverter,high
+INV-1B,ATS-INV,power,crop_raw_dc_inverter_center.png solid inverter AC output to ATS-INV,high
+ATS-INV,BUS-120VAC-ESF,power,crop_raw_bottom_rps_full.png solid ATS output tap to 120 VAC ESF bus,high
+BUS-120VAC-ESF,SEQ-REC-1,signal,crop_raw_bottom_rps_center.png dotted branch around sequence recorder from ESF bus area,medium
+BUS-120VAC-ESF,RPS-A-CONTROL-NET,control,crop_raw_bottom_rps_full.png dashed control routing adjacent to ESF instrument bus on Train A side,low
+BUS-120VAC-ESF,RPS-B-CONTROL-NET,control,crop_raw_bottom_rps_full.png dashed control routing adjacent to ESF instrument bus on Train B side,low
+PNL-RPS-A,GND-1,ground,crop_raw_bottom_rps_left.png solid equipment ground reference from panel to ground symbol,high
+PNL-RPS-B,GND-2,ground,crop_raw_bottom_rps_right.png solid equipment ground reference from panel to ground symbol,high
+CB-GEN-1,TRAIN-A-INTERLOCK-NET,interlock,crop_raw_top_power_sources_bus.png dash-dot interlock line passes generator breaker area,medium
+CB-101,TRAIN-A-INTERLOCK-NET,interlock,crop_raw_top_power_sources_bus.png dash-dot interlock line passes breaker CB-101,medium
+CB-102,TRAIN-A-INTERLOCK-NET,interlock,crop_raw_top_power_sources_bus.png dash-dot interlock line passes breaker CB-102,medium
+CB-103,TRAIN-A-INTERLOCK-NET,interlock,crop_raw_top_power_sources_bus.png dash-dot interlock line passes breaker CB-103,medium
+CB-111,TRAIN-A-INTERLOCK-NET,interlock,crop_raw_left_4160_480_detail.png dash-dot interlock line passes feeder breaker CB-111,medium
+CB-112,TRAIN-A-INTERLOCK-NET,interlock,crop_raw_left_4160_480_detail.png dash-dot interlock line passes feeder breaker CB-112,medium
+CB-M1A,TRAIN-A-INTERLOCK-NET,interlock,crop_raw_left_mcc1_loads.png dashed interlock/control box reaches MCC-1A feeder breaker,medium
+CB-M2A,TRAIN-A-INTERLOCK-NET,interlock,crop_raw_left_4160_480_detail.png dash-dot interlock/control routing near MCC-2A feeder breaker,medium
+CB-TIE-1,TRAIN-A-INTERLOCK-NET,interlock,crop_raw_top_power_sources_bus.png tie breaker is inside Train A interlock boundary,medium
+RPS-A-INTERLOCK-NET,TRAIN-A-INTERLOCK-NET,interlock,crop_raw_bottom_rps_full.png vertical dash-dot routes tie upper Train A interlocks to lower RPS A bundle,low
+CB-203,TRAIN-B-INTERLOCK-NET,interlock,crop_raw_top_power_sources_bus.png dash-dot interlock line passes breaker CB-203,medium
+CB-202,TRAIN-B-INTERLOCK-NET,interlock,crop_raw_top_power_sources_bus.png dash-dot interlock line passes breaker CB-202,medium
+CB-303,TRAIN-B-INTERLOCK-NET,interlock,crop_raw_top_power_sources_bus.png dash-dot interlock line passes breaker CB-303,medium
+CB-211,TRAIN-B-INTERLOCK-NET,interlock,crop_raw_right_4160_480_detail.png dash-dot interlock line passes feeder breaker CB-211,medium
+CB-212,TRAIN-B-INTERLOCK-NET,interlock,crop_raw_right_4160_480_detail.png dash-dot interlock line passes feeder breaker CB-212,medium
+CB-M1B,TRAIN-B-INTERLOCK-NET,interlock,crop_raw_right_mcc1_loads.png dashed interlock/control box reaches MCC-1B feeder breaker,medium
+CB-M2B,TRAIN-B-INTERLOCK-NET,interlock,crop_raw_right_4160_480_detail.png dash-dot interlock/control routing near MCC-2B feeder breaker,medium
+CB-TIE-1,TRAIN-B-INTERLOCK-NET,interlock,crop_raw_top_power_sources_bus.png tie breaker is inside Train B interlock boundary,medium
+RPS-B-INTERLOCK-NET,TRAIN-B-INTERLOCK-NET,interlock,crop_raw_bottom_rps_full.png vertical dash-dot routes tie upper Train B interlocks to lower RPS B bundle,low
+DC-BUS-A,RPS-A-CONTROL-NET,control,crop_raw_bottom_rps_full.png dashed branch from DC-BUS-A label into Train A control bundle,medium
+ATS-INV,RPS-A-CONTROL-NET,control,crop_raw_bottom_rps_full.png dashed static transfer control line into Train A bundle,low
+RELAY-27A,RPS-A-CONTROL-NET,control,crop_raw_bottom_rps_left.png dashed control line enters UV relay region,high
+RELAY-50A,RPS-A-CONTROL-NET,control,crop_raw_bottom_rps_left.png dashed control line enters OC relay region,high
+RELAY-86A,RPS-A-CONTROL-NET,control,crop_raw_bottom_rps_left.png dashed control line enters lockout relay region,high
+TB-RPS-A,RPS-A-CONTROL-NET,control,crop_raw_bottom_rps_left.png dashed control bundle terminates at TB-RPS-A,high
+PNL-RPS-A,RPS-A-CONTROL-NET,control,crop_raw_bottom_rps_left.png dashed control bundle wraps PNL-RPS-A,high
+PNL-ESFAS-A,RPS-A-CONTROL-NET,control,crop_raw_bottom_rps_center.png dashed control run from RPS A area to ESFAS A panel,medium
+DC-BUS-B,RPS-B-CONTROL-NET,control,crop_raw_bottom_rps_full.png dashed branch from DC-BUS-B label into Train B control bundle,medium
+ATS-INV,RPS-B-CONTROL-NET,control,crop_raw_bottom_rps_full.png dashed static transfer control line into Train B bundle,low
+RELAY-27B,RPS-B-CONTROL-NET,control,crop_raw_bottom_rps_right.png dashed control line enters UV relay region,high
+RELAY-50B,RPS-B-CONTROL-NET,control,crop_raw_bottom_rps_right.png dashed control line enters OC relay region,high
+RELAY-86B,RPS-B-CONTROL-NET,control,crop_raw_bottom_rps_right.png dashed control line enters lockout relay region,high
+TB-RPS-B,RPS-B-CONTROL-NET,control,crop_raw_bottom_rps_right.png dashed control bundle terminates at TB-RPS-B,high
+PNL-RPS-B,RPS-B-CONTROL-NET,control,crop_raw_bottom_rps_right.png dashed control bundle wraps PNL-RPS-B,high
+PNL-ESFAS-B,RPS-B-CONTROL-NET,control,crop_raw_bottom_rps_center.png dashed control run from RPS B area to ESFAS B panel,medium
+ANN-480A,RPS-A-SIGNAL-NET,signal,crop_raw_bottom_rps_left.png dotted signal line through ANN-480A,high
+TB-ANN-1,RPS-A-SIGNAL-NET,signal,crop_raw_bottom_rps_left.png dotted annunciation line to TB-ANN-1,high
+TB-RPS-A,RPS-A-SIGNAL-NET,signal,crop_raw_bottom_rps_left.png dotted signal line through TB-RPS-A,high
+PNL-RPS-A,RPS-A-SIGNAL-NET,signal,crop_raw_bottom_rps_left.png dotted and short terminal signal routes around PNL-RPS-A,medium
+PNL-ESFAS-A,RPS-A-SIGNAL-NET,signal,crop_raw_bottom_rps_center.png dotted branch to ESFAS A panel,medium
+SEQ-REC-1,RPS-A-SIGNAL-NET,signal,crop_raw_bottom_rps_center.png dotted SER signal branch from Train A side,medium
+RELAY-27A,RPS-A-SIGNAL-NET,signal,crop_raw_bottom_rps_left.png dotted status path near UV relay,medium
+RELAY-50A,RPS-A-SIGNAL-NET,signal,crop_raw_bottom_rps_left.png dotted status path near OC relay,medium
+RELAY-86A,RPS-A-SIGNAL-NET,signal,crop_raw_bottom_rps_left.png dotted status path near lockout relay,medium
+ANN-480A,TB-ANN-1,signal,crop_raw_bottom_rps_left.png visible annunciator branch to TB-ANN-1,high
+TB-ANN-1,SEQ-REC-1,signal,crop_raw_bottom_rps_full.png note and dotted annunciation route toward sequence recorder,medium
+ANN-480B,RPS-B-SIGNAL-NET,signal,crop_raw_bottom_rps_right.png dotted signal line through ANN-480B,high
+TB-RPS-B,RPS-B-SIGNAL-NET,signal,crop_raw_bottom_rps_right.png dotted signal line through TB-RPS-B,high
+PNL-RPS-B,RPS-B-SIGNAL-NET,signal,crop_raw_bottom_rps_right.png dotted and short terminal signal routes around PNL-RPS-B,medium
+PNL-ESFAS-B,RPS-B-SIGNAL-NET,signal,crop_raw_bottom_rps_center.png dotted branch to ESFAS B panel,medium
+SEQ-REC-1,RPS-B-SIGNAL-NET,signal,crop_raw_bottom_rps_center.png dotted SER signal branch from Train B side,medium
+RELAY-27B,RPS-B-SIGNAL-NET,signal,crop_raw_bottom_rps_right.png dotted status path near UV relay,medium
+RELAY-50B,RPS-B-SIGNAL-NET,signal,crop_raw_bottom_rps_right.png dotted status path near OC relay,medium
+RELAY-86B,RPS-B-SIGNAL-NET,signal,crop_raw_bottom_rps_right.png dotted status path near lockout relay,medium
+RELAY-27A,RPS-A-INTERLOCK-NET,interlock,crop_raw_bottom_rps_left.png dash-dot interlock bundle near UV relay,medium
+RELAY-50A,RPS-A-INTERLOCK-NET,interlock,crop_raw_bottom_rps_left.png dash-dot interlock bundle near OC relay,medium
+RELAY-86A,RPS-A-INTERLOCK-NET,interlock,crop_raw_bottom_rps_left.png dash-dot interlock bundle near lockout relay,medium
+TB-RPS-A,RPS-A-INTERLOCK-NET,interlock,crop_raw_bottom_rps_left.png dash-dot interlock bundle through TB-RPS-A region,medium
+PNL-RPS-A,RPS-A-INTERLOCK-NET,interlock,crop_raw_bottom_rps_left.png dash-dot interlock bundle around PNL-RPS-A,medium
+PNL-ESFAS-A,RPS-A-INTERLOCK-NET,interlock,crop_raw_bottom_rps_center.png dash-dot interlock run reaches ESFAS A area,low
+RELAY-27B,RPS-B-INTERLOCK-NET,interlock,crop_raw_bottom_rps_right.png dash-dot interlock bundle near UV relay,medium
+RELAY-50B,RPS-B-INTERLOCK-NET,interlock,crop_raw_bottom_rps_right.png dash-dot interlock bundle near OC relay,medium
+RELAY-86B,RPS-B-INTERLOCK-NET,interlock,crop_raw_bottom_rps_right.png dash-dot interlock bundle near lockout relay,medium
+TB-RPS-B,RPS-B-INTERLOCK-NET,interlock,crop_raw_bottom_rps_right.png dash-dot interlock bundle through TB-RPS-B region,medium
+PNL-RPS-B,RPS-B-INTERLOCK-NET,interlock,crop_raw_bottom_rps_right.png dash-dot interlock bundle around PNL-RPS-B,medium
+PNL-ESFAS-B,RPS-B-INTERLOCK-NET,interlock,crop_raw_bottom_rps_center.png dash-dot interlock run reaches ESFAS B area,low
+PNL-RPS-A,PNL-ESFAS-A,control,crop_raw_bottom_rps_center.png dashed control path from RPS A panel to ESFAS A panel,medium
+PNL-RPS-B,PNL-ESFAS-B,control,crop_raw_bottom_rps_center.png dashed control path from RPS B panel to ESFAS B panel,medium
+PNL-ESFAS-A,SEQ-REC-1,signal,crop_raw_bottom_rps_center.png dotted signal path between ESFAS A and sequence recorder area,medium
+PNL-ESFAS-B,SEQ-REC-1,signal,crop_raw_bottom_rps_center.png dotted signal path between ESFAS B and sequence recorder area,medium

@@ -1,0 +1,101 @@
+source,target,edge_type,chain,evidence
+GRID-N501,DS-N501,solid,source_grid_a,"Raw top-left source crop: GRID-N501, DS-N501, TR-SU-1A, and CB-SU-1A are joined by a solid vertical conductor into BUS-4160-A."
+DS-N501,TR-SU-1A,solid,source_grid_a,"Raw top-left source crop: GRID-N501, DS-N501, TR-SU-1A, and CB-SU-1A are joined by a solid vertical conductor into BUS-4160-A."
+TR-SU-1A,CB-SU-1A,solid,source_grid_a,"Raw top-left source crop: GRID-N501, DS-N501, TR-SU-1A, and CB-SU-1A are joined by a solid vertical conductor into BUS-4160-A."
+CB-SU-1A,BUS-4160-A,bus-tap,source_grid_a,"Raw top-left source crop: GRID-N501, DS-N501, TR-SU-1A, and CB-SU-1A are joined by a solid vertical conductor into BUS-4160-A."
+GEN-EDG-A,DS-DG-A,solid,source_edg_a,"Raw top-left source crop: GEN-EDG-A, DS-DG-A, and CB-DG-A are joined by a solid vertical conductor into BUS-4160-A."
+DS-DG-A,CB-DG-A,solid,source_edg_a,"Raw top-left source crop: GEN-EDG-A, DS-DG-A, and CB-DG-A are joined by a solid vertical conductor into BUS-4160-A."
+CB-DG-A,BUS-4160-A,bus-tap,source_edg_a,"Raw top-left source crop: GEN-EDG-A, DS-DG-A, and CB-DG-A are joined by a solid vertical conductor into BUS-4160-A."
+BUS-4160-A,CB-TIE-4AB,bus-tap,bus_tie_4ab,Raw header tie crop: BUS-4160-A and BUS-4160-B are connected through CB-TIE-4AB; labeled normally open but physically drawn.
+CB-TIE-4AB,BUS-4160-B,bus-tap,bus_tie_4ab,Raw header tie crop: BUS-4160-A and BUS-4160-B are connected through CB-TIE-4AB; labeled normally open but physically drawn.
+GRID-R502,DS-R502,solid,source_grid_b,"Raw top-right source crop: GRID-R502, DS-R502, TR-SU-1B, and CB-SU-1B are joined by a solid vertical conductor into BUS-4160-B."
+DS-R502,TR-SU-1B,solid,source_grid_b,"Raw top-right source crop: GRID-R502, DS-R502, TR-SU-1B, and CB-SU-1B are joined by a solid vertical conductor into BUS-4160-B."
+TR-SU-1B,CB-SU-1B,solid,source_grid_b,"Raw top-right source crop: GRID-R502, DS-R502, TR-SU-1B, and CB-SU-1B are joined by a solid vertical conductor into BUS-4160-B."
+CB-SU-1B,BUS-4160-B,bus-tap,source_grid_b,"Raw top-right source crop: GRID-R502, DS-R502, TR-SU-1B, and CB-SU-1B are joined by a solid vertical conductor into BUS-4160-B."
+GEN-EDG-B,DS-DG-B,solid,source_edg_b,"Raw top-right source crop: GEN-EDG-B, DS-DG-B, and CB-DG-B are joined by a solid vertical conductor into BUS-4160-B."
+DS-DG-B,CB-DG-B,solid,source_edg_b,"Raw top-right source crop: GEN-EDG-B, DS-DG-B, and CB-DG-B are joined by a solid vertical conductor into BUS-4160-B."
+CB-DG-B,BUS-4160-B,bus-tap,source_edg_b,"Raw top-right source crop: GEN-EDG-B, DS-DG-B, and CB-DG-B are joined by a solid vertical conductor into BUS-4160-B."
+GEN-AAC-1,DS-AAC-1,solid,source_aac_1,"Raw top-right source crop: GEN-AAC-1, DS-AAC-1, and CB-AAC-1 are joined by a solid vertical conductor into BUS-4160-B."
+DS-AAC-1,CB-AAC-1,solid,source_aac_1,"Raw top-right source crop: GEN-AAC-1, DS-AAC-1, and CB-AAC-1 are joined by a solid vertical conductor into BUS-4160-B."
+CB-AAC-1,BUS-4160-B,bus-tap,source_aac_1,"Raw top-right source crop: GEN-AAC-1, DS-AAC-1, and CB-AAC-1 are joined by a solid vertical conductor into BUS-4160-B."
+BUS-4160-A,CB-F11A,bus-tap,rhr_a,Raw left feeder/load crops: RHR A feeder is one vertical solid chain from BUS-4160-A through CB-F11A and downstream RHR A load devices.
+CB-F11A,TR-LC11A,solid,rhr_a,Raw left feeder/load crops: RHR A feeder is one vertical solid chain from BUS-4160-A through CB-F11A and downstream RHR A load devices.
+TR-LC11A,BUS-480-A1,bus-tap,rhr_a,Raw left feeder/load crops: RHR A feeder is one vertical solid chain from BUS-4160-A through CB-F11A and downstream RHR A load devices.
+BUS-480-A1,CB-M11A,bus-tap,rhr_a,Raw left feeder/load crops: RHR A feeder is one vertical solid chain from BUS-4160-A through CB-F11A and downstream RHR A load devices.
+CB-M11A,MCC-11A,solid,rhr_a,Raw left feeder/load crops: RHR A feeder is one vertical solid chain from BUS-4160-A through CB-F11A and downstream RHR A load devices.
+MCC-11A,CB-P101A,solid,rhr_a,Raw left feeder/load crops: RHR A feeder is one vertical solid chain from BUS-4160-A through CB-F11A and downstream RHR A load devices.
+CB-P101A,MTR-P101A,solid,rhr_a,Raw left feeder/load crops: RHR A feeder is one vertical solid chain from BUS-4160-A through CB-F11A and downstream RHR A load devices.
+MTR-P101A,PUMP-RHR-A,solid,rhr_a,Raw left feeder/load crops: RHR A feeder is one vertical solid chain from BUS-4160-A through CB-F11A and downstream RHR A load devices.
+BUS-4160-A,CB-F12A,bus-tap,si_a,Raw left feeder/load crops: SI A feeder is one vertical solid chain from BUS-4160-A through CB-F12A and downstream SI A load devices.
+CB-F12A,TR-LC12A,solid,si_a,Raw left feeder/load crops: SI A feeder is one vertical solid chain from BUS-4160-A through CB-F12A and downstream SI A load devices.
+TR-LC12A,BUS-480-A2,bus-tap,si_a,Raw left feeder/load crops: SI A feeder is one vertical solid chain from BUS-4160-A through CB-F12A and downstream SI A load devices.
+BUS-480-A2,CB-M12A,bus-tap,si_a,Raw left feeder/load crops: SI A feeder is one vertical solid chain from BUS-4160-A through CB-F12A and downstream SI A load devices.
+CB-M12A,MCC-12A,solid,si_a,Raw left feeder/load crops: SI A feeder is one vertical solid chain from BUS-4160-A through CB-F12A and downstream SI A load devices.
+MCC-12A,CB-P201A,solid,si_a,Raw left feeder/load crops: SI A feeder is one vertical solid chain from BUS-4160-A through CB-F12A and downstream SI A load devices.
+CB-P201A,MTR-P201A,solid,si_a,Raw left feeder/load crops: SI A feeder is one vertical solid chain from BUS-4160-A through CB-F12A and downstream SI A load devices.
+MTR-P201A,PUMP-SI-A,solid,si_a,Raw left feeder/load crops: SI A feeder is one vertical solid chain from BUS-4160-A through CB-F12A and downstream SI A load devices.
+BUS-4160-A,CB-F13A,bus-tap,cav_a,Raw left feeder/load crops: CAV A feeder is one vertical solid chain from BUS-4160-A through CB-F13A and downstream CAV fan devices.
+CB-F13A,TR-LC13A,solid,cav_a,Raw left feeder/load crops: CAV A feeder is one vertical solid chain from BUS-4160-A through CB-F13A and downstream CAV fan devices.
+TR-LC13A,BUS-480-A3,bus-tap,cav_a,Raw left feeder/load crops: CAV A feeder is one vertical solid chain from BUS-4160-A through CB-F13A and downstream CAV fan devices.
+BUS-480-A3,CB-M13A,bus-tap,cav_a,Raw left feeder/load crops: CAV A feeder is one vertical solid chain from BUS-4160-A through CB-F13A and downstream CAV fan devices.
+CB-M13A,MCC-13A,solid,cav_a,Raw left feeder/load crops: CAV A feeder is one vertical solid chain from BUS-4160-A through CB-F13A and downstream CAV fan devices.
+MCC-13A,CB-FAN-A,solid,cav_a,Raw left feeder/load crops: CAV A feeder is one vertical solid chain from BUS-4160-A through CB-F13A and downstream CAV fan devices.
+CB-FAN-A,MTR-FAN-A,solid,cav_a,Raw left feeder/load crops: CAV A feeder is one vertical solid chain from BUS-4160-A through CB-F13A and downstream CAV fan devices.
+MTR-FAN-A,FAN-CAV-A,solid,cav_a,Raw left feeder/load crops: CAV A feeder is one vertical solid chain from BUS-4160-A through CB-F13A and downstream CAV fan devices.
+BUS-4160-A,CB-F14A,bus-tap,rps_ac_dc_a,"Raw left feeder/RPS crops: RPS/DC A vertical solid chain runs from BUS-4160-A through CB-F14A, TR-RPS-A, BUS-208-A, REC-125-A to BUS-125DC-A."
+CB-F14A,TR-RPS-A,solid,rps_ac_dc_a,"Raw left feeder/RPS crops: RPS/DC A vertical solid chain runs from BUS-4160-A through CB-F14A, TR-RPS-A, BUS-208-A, REC-125-A to BUS-125DC-A."
+TR-RPS-A,BUS-208-A,bus-tap,rps_ac_dc_a,"Raw left feeder/RPS crops: RPS/DC A vertical solid chain runs from BUS-4160-A through CB-F14A, TR-RPS-A, BUS-208-A, REC-125-A to BUS-125DC-A."
+BUS-208-A,REC-125-A,bus-tap,rps_ac_dc_a,"Raw left feeder/RPS crops: RPS/DC A vertical solid chain runs from BUS-4160-A through CB-F14A, TR-RPS-A, BUS-208-A, REC-125-A to BUS-125DC-A."
+REC-125-A,BUS-125DC-A,bus-tap,rps_ac_dc_a,"Raw left feeder/RPS crops: RPS/DC A vertical solid chain runs from BUS-4160-A through CB-F14A, TR-RPS-A, BUS-208-A, REC-125-A to BUS-125DC-A."
+BUS-125DC-A,BAT-125-A,bus-tap,battery_a,Raw left RPS crop: BAT-125-A taps directly to BUS-125DC-A at the busbar.
+BUS-125DC-A,INV-120-A,bus-tap,rps_inverter_a,"Raw left RPS crop: BUS-125DC-A feeds INV-120-A, BUS-120AC-A, and CP-RPS-A through a vertical solid chain."
+INV-120-A,BUS-120AC-A,bus-tap,rps_inverter_a,"Raw left RPS crop: BUS-125DC-A feeds INV-120-A, BUS-120AC-A, and CP-RPS-A through a vertical solid chain."
+BUS-120AC-A,CP-RPS-A,bus-tap,rps_inverter_a,"Raw left RPS crop: BUS-125DC-A feeds INV-120-A, BUS-120AC-A, and CP-RPS-A through a vertical solid chain."
+CP-RPS-A,RLY-K501A,dashed,rps_instrument_a,Raw left RPS crop: CP-RPS-A connects to RLY-K501A and INST-NI501A with dashed control/instrument linework.
+RLY-K501A,INST-NI501A,dashed,rps_instrument_a,Raw left RPS crop: CP-RPS-A connects to RLY-K501A and INST-NI501A with dashed control/instrument linework.
+BUS-4160-A,CB-CVCS-A,bus-tap,cvcs_a_power,"Raw CVCS A crop: BUS-4160-A feeds CB-CVCS-A, MCC-CVCS-A, MTR-CVCS-A, and PUMP-CVCS-A through a vertical solid chain."
+CB-CVCS-A,MCC-CVCS-A,solid,cvcs_a_power,"Raw CVCS A crop: BUS-4160-A feeds CB-CVCS-A, MCC-CVCS-A, MTR-CVCS-A, and PUMP-CVCS-A through a vertical solid chain."
+MCC-CVCS-A,MTR-CVCS-A,solid,cvcs_a_power,"Raw CVCS A crop: BUS-4160-A feeds CB-CVCS-A, MCC-CVCS-A, MTR-CVCS-A, and PUMP-CVCS-A through a vertical solid chain."
+MTR-CVCS-A,PUMP-CVCS-A,solid,cvcs_a_power,"Raw CVCS A crop: BUS-4160-A feeds CB-CVCS-A, MCC-CVCS-A, MTR-CVCS-A, and PUMP-CVCS-A through a vertical solid chain."
+PUMP-CVCS-A,VLV-LCV201A,dashed,cvcs_a_valve,Raw CVCS A crop: PUMP-CVCS-A connects to VLV-LCV201A with dashed control/permissive linework.
+BUS-4160-B,CB-F11B,bus-tap,rhr_b,Raw right feeder/load crops: RHR B feeder is one vertical solid chain from BUS-4160-B through CB-F11B and downstream RHR B load devices.
+CB-F11B,TR-LC11B,solid,rhr_b,Raw right feeder/load crops: RHR B feeder is one vertical solid chain from BUS-4160-B through CB-F11B and downstream RHR B load devices.
+TR-LC11B,BUS-480-B1,bus-tap,rhr_b,Raw right feeder/load crops: RHR B feeder is one vertical solid chain from BUS-4160-B through CB-F11B and downstream RHR B load devices.
+BUS-480-B1,CB-M11B,bus-tap,rhr_b,Raw right feeder/load crops: RHR B feeder is one vertical solid chain from BUS-4160-B through CB-F11B and downstream RHR B load devices.
+CB-M11B,MCC-11B,solid,rhr_b,Raw right feeder/load crops: RHR B feeder is one vertical solid chain from BUS-4160-B through CB-F11B and downstream RHR B load devices.
+MCC-11B,CB-P101B,solid,rhr_b,Raw right feeder/load crops: RHR B feeder is one vertical solid chain from BUS-4160-B through CB-F11B and downstream RHR B load devices.
+CB-P101B,MTR-P101B,solid,rhr_b,Raw right feeder/load crops: RHR B feeder is one vertical solid chain from BUS-4160-B through CB-F11B and downstream RHR B load devices.
+MTR-P101B,PUMP-RHR-B,solid,rhr_b,Raw right feeder/load crops: RHR B feeder is one vertical solid chain from BUS-4160-B through CB-F11B and downstream RHR B load devices.
+BUS-4160-B,CB-F12B,bus-tap,si_b,Raw right feeder/load crops: SI B feeder is one vertical solid chain from BUS-4160-B through CB-F12B and downstream SI B load devices.
+CB-F12B,TR-LC12B,solid,si_b,Raw right feeder/load crops: SI B feeder is one vertical solid chain from BUS-4160-B through CB-F12B and downstream SI B load devices.
+TR-LC12B,BUS-480-B2,bus-tap,si_b,Raw right feeder/load crops: SI B feeder is one vertical solid chain from BUS-4160-B through CB-F12B and downstream SI B load devices.
+BUS-480-B2,CB-M12B,bus-tap,si_b,Raw right feeder/load crops: SI B feeder is one vertical solid chain from BUS-4160-B through CB-F12B and downstream SI B load devices.
+CB-M12B,MCC-12B,solid,si_b,Raw right feeder/load crops: SI B feeder is one vertical solid chain from BUS-4160-B through CB-F12B and downstream SI B load devices.
+MCC-12B,CB-P201B,solid,si_b,Raw right feeder/load crops: SI B feeder is one vertical solid chain from BUS-4160-B through CB-F12B and downstream SI B load devices.
+CB-P201B,MTR-P201B,solid,si_b,Raw right feeder/load crops: SI B feeder is one vertical solid chain from BUS-4160-B through CB-F12B and downstream SI B load devices.
+MTR-P201B,PUMP-SI-B,solid,si_b,Raw right feeder/load crops: SI B feeder is one vertical solid chain from BUS-4160-B through CB-F12B and downstream SI B load devices.
+BUS-4160-B,CB-F13B,bus-tap,cav_b,Raw right feeder/load crops: CAV B feeder is one vertical solid chain from BUS-4160-B through CB-F13B and downstream CAV fan devices.
+CB-F13B,TR-LC13B,solid,cav_b,Raw right feeder/load crops: CAV B feeder is one vertical solid chain from BUS-4160-B through CB-F13B and downstream CAV fan devices.
+TR-LC13B,BUS-480-B3,bus-tap,cav_b,Raw right feeder/load crops: CAV B feeder is one vertical solid chain from BUS-4160-B through CB-F13B and downstream CAV fan devices.
+BUS-480-B3,CB-M13B,bus-tap,cav_b,Raw right feeder/load crops: CAV B feeder is one vertical solid chain from BUS-4160-B through CB-F13B and downstream CAV fan devices.
+CB-M13B,MCC-13B,solid,cav_b,Raw right feeder/load crops: CAV B feeder is one vertical solid chain from BUS-4160-B through CB-F13B and downstream CAV fan devices.
+MCC-13B,CB-FAN-B,solid,cav_b,Raw right feeder/load crops: CAV B feeder is one vertical solid chain from BUS-4160-B through CB-F13B and downstream CAV fan devices.
+CB-FAN-B,MTR-FAN-B,solid,cav_b,Raw right feeder/load crops: CAV B feeder is one vertical solid chain from BUS-4160-B through CB-F13B and downstream CAV fan devices.
+MTR-FAN-B,FAN-CAV-B,solid,cav_b,Raw right feeder/load crops: CAV B feeder is one vertical solid chain from BUS-4160-B through CB-F13B and downstream CAV fan devices.
+BUS-4160-B,CB-F14B,bus-tap,rps_ac_dc_b,"Raw right feeder/RPS crops: RPS/DC B vertical solid chain runs from BUS-4160-B through CB-F14B, TR-RPS-B, BUS-208-B, REC-125-B to BUS-125DC-B."
+CB-F14B,TR-RPS-B,solid,rps_ac_dc_b,"Raw right feeder/RPS crops: RPS/DC B vertical solid chain runs from BUS-4160-B through CB-F14B, TR-RPS-B, BUS-208-B, REC-125-B to BUS-125DC-B."
+TR-RPS-B,BUS-208-B,bus-tap,rps_ac_dc_b,"Raw right feeder/RPS crops: RPS/DC B vertical solid chain runs from BUS-4160-B through CB-F14B, TR-RPS-B, BUS-208-B, REC-125-B to BUS-125DC-B."
+BUS-208-B,REC-125-B,bus-tap,rps_ac_dc_b,"Raw right feeder/RPS crops: RPS/DC B vertical solid chain runs from BUS-4160-B through CB-F14B, TR-RPS-B, BUS-208-B, REC-125-B to BUS-125DC-B."
+REC-125-B,BUS-125DC-B,bus-tap,rps_ac_dc_b,"Raw right feeder/RPS crops: RPS/DC B vertical solid chain runs from BUS-4160-B through CB-F14B, TR-RPS-B, BUS-208-B, REC-125-B to BUS-125DC-B."
+BUS-125DC-B,BAT-125-B,bus-tap,battery_b,Raw right RPS crop: BAT-125-B taps directly to BUS-125DC-B at the busbar.
+BUS-125DC-B,INV-120-B,bus-tap,rps_inverter_b,"Raw right RPS crop: BUS-125DC-B feeds INV-120-B, BUS-120AC-B, and CP-RPS-B through a vertical solid chain."
+INV-120-B,BUS-120AC-B,bus-tap,rps_inverter_b,"Raw right RPS crop: BUS-125DC-B feeds INV-120-B, BUS-120AC-B, and CP-RPS-B through a vertical solid chain."
+BUS-120AC-B,CP-RPS-B,bus-tap,rps_inverter_b,"Raw right RPS crop: BUS-125DC-B feeds INV-120-B, BUS-120AC-B, and CP-RPS-B through a vertical solid chain."
+CP-RPS-B,RLY-K501B,dashed,rps_instrument_b,Raw right RPS crop: CP-RPS-B connects to RLY-K501B and INST-NI501B with dashed control/instrument linework.
+RLY-K501B,INST-NI501B,dashed,rps_instrument_b,Raw right RPS crop: CP-RPS-B connects to RLY-K501B and INST-NI501B with dashed control/instrument linework.
+BUS-4160-B,CB-CVCS-B,bus-tap,cvcs_b_power,"Raw CVCS B crop: BUS-4160-B feeds CB-CVCS-B, MCC-CVCS-B, MTR-CVCS-B, and PUMP-CVCS-B through a vertical solid chain."
+CB-CVCS-B,MCC-CVCS-B,solid,cvcs_b_power,"Raw CVCS B crop: BUS-4160-B feeds CB-CVCS-B, MCC-CVCS-B, MTR-CVCS-B, and PUMP-CVCS-B through a vertical solid chain."
+MCC-CVCS-B,MTR-CVCS-B,solid,cvcs_b_power,"Raw CVCS B crop: BUS-4160-B feeds CB-CVCS-B, MCC-CVCS-B, MTR-CVCS-B, and PUMP-CVCS-B through a vertical solid chain."
+MTR-CVCS-B,PUMP-CVCS-B,solid,cvcs_b_power,"Raw CVCS B crop: BUS-4160-B feeds CB-CVCS-B, MCC-CVCS-B, MTR-CVCS-B, and PUMP-CVCS-B through a vertical solid chain."
+PUMP-CVCS-B,VLV-LCV201B,dashed,cvcs_b_valve,Raw CVCS B crop: PUMP-CVCS-B connects to VLV-LCV201B with dashed control/permissive linework.
+CP-RPS-A,CP-RPS-B,dashed,rps_ab_cross_tie,Raw lower control tie crop: long dashed line joins CP-RPS-A to CP-RPS-B.

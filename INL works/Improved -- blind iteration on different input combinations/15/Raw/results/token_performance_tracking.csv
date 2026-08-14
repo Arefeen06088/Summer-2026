@@ -1,0 +1,7 @@
+timestamp,case,round,agent,role,approx_prompt_tokens,approx_completion_tokens,matrix_nodes,matrix_edges,output_artifact,notes
+2026-07-14T03:03:49,15,local,main,inventory/crops,700,120,183,194,codes/crops,Approximate tokens; tool did not expose exact subagent usage
+2026-07-14T03:03:49,15,round_01,Diego,high-recall extraction,3200,2400,183,194,round_01_diego_matrix.csv,Confirmed edges plus uncertain exclusions
+2026-07-14T03:03:49,15,round_02,Jennifer,precision review,3900,700,183,194,round_02_jennifer_matrix.csv,Accepted Diego confirmed set; excluded uncertain near-alignments
+2026-07-14T03:03:49,15,round_03,Diego,saturation check,450,230,183,194,round_03_diego_saturation_matrix.csv,No edge edits; noted 190/194 count tension
+2026-07-14T03:03:49,15,round_04,Jennifer,final confirmation,360,220,183,194,round_04_jennifer_final_matrix.csv,Final reviewer pass; see extraction note
+2026-07-14T03:03:49,15,local,main,artifact generation/validation,900,180,183,194,final_connectivity_matrix.csv,"Symmetric matrix, zero diagonal"

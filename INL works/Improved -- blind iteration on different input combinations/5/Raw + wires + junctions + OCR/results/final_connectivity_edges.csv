@@ -1,0 +1,141 @@
+edge_id,node_a,node_b,edge_kind,status_note,included_in_final_matrix
+E-001,GRID-N230,ISO-230A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-002,ISO-230A,BRK-2301,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-003,BRK-2301,BUS-SY230,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-004,GEN-G101,GSU-1,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-005,GSU-1,BUS-SY230,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-006,BUS-SY230,BRK-2302,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-007,BRK-2302,ISO-230B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-008,ISO-230B,GRID-S230,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-009,BUS-SY230,TR-RAT-1A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-010,BUS-SY230,TR-UAT-1A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-011,BUS-SY230,TR-UAT-1B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-012,BUS-SY230,TR-RAT-1B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-013,TR-RAT-1A,CB-AUX-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-014,TR-UAT-1A,CB-AUX-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-015,CB-AUX-A,BUS-AUX13A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-016,TR-UAT-1B,CB-AUX-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-017,TR-RAT-1B,CB-AUX-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-018,CB-AUX-B,BUS-AUX13B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-019,BUS-AUX13A,CB-TIE13,solid_power_normally_open_tie,"N.O. auxiliary bus tie; drawn connection, not assumed closed.",yes
+E-020,CB-TIE13,BUS-AUX13B,solid_power_normally_open_tie,"N.O. auxiliary bus tie; drawn connection, not assumed closed.",yes
+E-021,BUS-AUX13A,BUS-NON1,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-022,BUS-NON1,TR-SAF-C,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-023,BUS-AUX13A,TR-SAF-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-024,BUS-AUX13A,TR-SAF-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-025,BUS-AUX13B,TR-SAF-C,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-026,BUS-AUX13B,TR-SAF-D,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-027,TR-SAF-A,CB-SAF-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-028,CB-SAF-A,BUS-416A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-029,EDG-A,CB-EDG-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-030,CB-EDG-A,BUS-416A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-031,BUS-416A,CB-TIE-AB,solid_power_normally_open_tie,"N.O. 4.16 kV A/B tie; drawn connection, not assumed closed.",yes
+E-032,CB-TIE-AB,BUS-416B,solid_power_normally_open_tie,"N.O. 4.16 kV A/B tie; drawn connection, not assumed closed.",yes
+E-033,BUS-416A,TR-480-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-034,TR-480-A,CB-LC-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-035,CB-LC-A,LC-480A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-036,TR-SAF-B,CB-SAF-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-037,CB-SAF-B,BUS-416B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-038,EDG-B,CB-EDG-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-039,CB-EDG-B,BUS-416B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-040,BUS-416B,TR-480-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-041,TR-480-B,CB-LC-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-042,CB-LC-B,LC-480B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-043,TR-SAF-C,CB-SAF-C,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-044,CB-SAF-C,BUS-416C,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-045,EDG-C,CB-EDG-C,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-046,CB-EDG-C,BUS-416C,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-047,BUS-416C,CB-TIE-CD,solid_power_normally_open_tie_lsc,"N.O. 4.16 kV C/D tie with LSC mark; drawn connection, not assumed closed.",yes
+E-048,CB-TIE-CD,BUS-416D,solid_power_normally_open_tie_lsc,"N.O. 4.16 kV C/D tie with LSC mark; drawn connection, not assumed closed.",yes
+E-049,BUS-416C,TR-480-C,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-050,TR-480-C,CB-LC-C,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-051,CB-LC-C,LC-480C,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-052,TR-SAF-D,CB-SAF-D,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-053,CB-SAF-D,BUS-416D,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-054,EDG-D,CB-EDG-D,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-055,CB-EDG-D,BUS-416D,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-056,BUS-416D,TR-480-D,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-057,TR-480-D,CB-LC-D,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-058,CB-LC-D,LC-480D,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-059,LC-480A,CB-MCCA1,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-060,CB-MCCA1,MCC-1A1,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-061,MCC-1A1,PUMP-AFW-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-062,MCC-1A1,V-MISV-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-063,LC-480A,CB-MCCA2,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-064,CB-MCCA2,MCC-1A2,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-065,MCC-1A2,PUMP-CCW-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-066,LC-480A,XFER-ATS-A,solid_vital_ac_dc_power,Solid ATS/DC/rectifier feeder connection.,yes
+E-067,LC-480B,CB-MCCB1,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-068,CB-MCCB1,MCC-1B1,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-069,MCC-1B1,PUMP-AFW-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-070,MCC-1B1,V-MISV-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-071,LC-480B,CB-MCCB2,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-072,CB-MCCB2,MCC-1B2,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-073,MCC-1B2,PUMP-CCW-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-074,LC-480B,XFER-ATS-A,solid_vital_ac_dc_power,Solid ATS/DC/rectifier feeder connection.,yes
+E-075,LC-480C,CB-MCCC1,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-076,CB-MCCC1,MCC-1C1,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-077,MCC-1C1,PUMP-RHR-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-078,LC-480C,CB-MCCC2,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-079,CB-MCCC2,MCC-1C2,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-080,MCC-1C2,HTR-BATRM-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-081,MCC-1C2,FAN-CRHV-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-082,LC-480C,XFER-ATS-B,solid_vital_ac_dc_power,Solid ATS/DC/rectifier feeder connection.,yes
+E-083,LC-480D,CB-MCCD1,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-084,CB-MCCD1,MCC-1D1,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-085,MCC-1D1,PUMP-RHR-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-086,LC-480D,CB-MCCD2,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-087,CB-MCCD2,MCC-1D2,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-088,MCC-1D2,HTR-BATRM-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-089,MCC-1D2,FAN-CRHV-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-090,LC-480D,XFER-ATS-B,solid_vital_ac_dc_power,Solid ATS/DC/rectifier feeder connection.,yes
+E-091,XFER-ATS-A,CHG-125A,solid_vital_ac_dc_power,Solid ATS/DC/rectifier feeder connection.,yes
+E-092,XFER-ATS-A,RECT-48V-A,solid_vital_ac_dc_power,Solid ATS/DC/rectifier feeder connection.,yes
+E-093,CHG-125A,BAT-125A,solid_vital_ac_dc_power,Solid ATS/DC/rectifier feeder connection.,yes
+E-094,BAT-125A,PNL-DC-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-095,PNL-DC-A,INV-UPS-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-096,INV-UPS-A,UPS-PNL-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-097,RECT-48V-A,BAT-48V-A,solid_vital_ac_dc_power,Solid ATS/DC/rectifier feeder connection.,yes
+E-098,BAT-48V-A,JB-RLY-A,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-099,JB-RLY-B,BAT-48V-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-100,BAT-48V-B,RECT-48V-B,solid_vital_ac_dc_power,Solid ATS/DC/rectifier feeder connection.,yes
+E-101,XFER-ATS-B,CHG-125B,solid_vital_ac_dc_power,Solid ATS/DC/rectifier feeder connection.,yes
+E-102,XFER-ATS-B,RECT-48V-B,solid_vital_ac_dc_power,Solid ATS/DC/rectifier feeder connection.,yes
+E-103,CHG-125B,BAT-125B,solid_vital_ac_dc_power,Solid ATS/DC/rectifier feeder connection.,yes
+E-104,BAT-125B,PNL-DC-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-105,PNL-DC-B,INV-UPS-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-106,INV-UPS-B,UPS-PNL-B,solid_power_feeder,Solid power feeder/source/load connection.,yes
+E-107,CB-EDG-A,RELAY-K1A,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-108,CB-SAF-A,RELAY-K1A,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-109,CB-EDG-B,RELAY-K1B,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-110,CB-SAF-B,RELAY-K1B,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-111,CB-EDG-C,RELAY-K2A,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-112,CB-SAF-C,RELAY-K2A,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-113,CB-EDG-D,RELAY-K2B,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-114,CB-SAF-D,RELAY-K2B,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-115,CP-ESFAS-1,RELAY-K1A,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-116,CP-ESFAS-1,RELAY-K1B,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-117,CP-ESFAS-1,RELAY-UV-A,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-118,CP-ESFAS-2,RELAY-K2A,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-119,CP-ESFAS-2,RELAY-K2B,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-120,CP-ESFAS-2,RELAY-UV-B,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-121,CP-ESFAS-2,RELAY-LOOP-C,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-122,CP-ESFAS-2,RELAY-LOOP-D,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-123,PNL-DC-A,CP-ESFAS-1,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-124,PNL-DC-B,CP-ESFAS-2,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-125,PNL-DC-A,PNL-DC-B,control_trip_close_dashed,Dashed control/trip/close connection with terminal dots.,yes
+E-126,BUS-416A,RELAY-UV-A,sensing_instrument_dash_dot,Dash-dot sensing/instrument connection with terminal dots.,yes
+E-127,BUS-416B,RELAY-UV-B,sensing_instrument_dash_dot,Dash-dot sensing/instrument connection with terminal dots.,yes
+E-128,BUS-416C,RELAY-LOOP-C,sensing_instrument_dash_dot,Dash-dot sensing/instrument connection with terminal dots.,yes
+E-129,BUS-416D,RELAY-LOOP-D,sensing_instrument_dash_dot,Dash-dot sensing/instrument connection with terminal dots.,yes
+E-130,INST-NSSS-A,CP-ESFAS-1,sensing_instrument_dash_dot,Dash-dot sensing/instrument connection with terminal dots.,yes
+E-131,INST-NSSS-B,CP-ESFAS-2,sensing_instrument_dash_dot,Dash-dot sensing/instrument connection with terminal dots.,yes
+E-132,GSU-1,GND-GRID,grounding_conductor_dotted,Dotted grounding-conductor connection to GND-GRID.,yes
+E-133,TR-RAT-1A,GND-GRID,grounding_conductor_dotted,Dotted grounding-conductor connection to GND-GRID.,yes
+E-134,TR-RAT-1B,GND-GRID,grounding_conductor_dotted,Dotted grounding-conductor connection to GND-GRID.,yes
+E-135,PUMP-CCW-A,GND-GRID,grounding_conductor_dotted,Dotted grounding-conductor connection to GND-GRID.,yes
+E-136,PUMP-CCW-B,GND-GRID,grounding_conductor_dotted,Dotted grounding-conductor connection to GND-GRID.,yes
+E-137,FAN-CRHV-A,GND-GRID,grounding_conductor_dotted,Dotted grounding-conductor connection to GND-GRID.,yes
+E-138,FAN-CRHV-B,GND-GRID,grounding_conductor_dotted,Dotted grounding-conductor connection to GND-GRID.,yes
+E-139,BAT-48V-A,GND-GRID,grounding_conductor_dotted,Dotted grounding-conductor connection to GND-GRID.,yes
+E-140,BAT-48V-B,GND-GRID,grounding_conductor_dotted,Dotted grounding-conductor connection to GND-GRID.,yes

@@ -1,0 +1,32 @@
+Connectivity matrix validation summary - Document 13
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\13\synthetic_npp_connectivity_matrix_dc_bus_clean_retry.csv
+
+Scores:
+- Diego -- Round 1 (round01_diego_connectivity_matrix.csv): TP=186, FP=9, FN=8, Precision=0.953846, Recall=0.958763, F1=0.956298
+- Jennifer -- Round 1 (round01_jennifer_connectivity_matrix.csv): TP=182, FP=1, FN=12, Precision=0.994536, Recall=0.938144, F1=0.965517
+- Diego -- Round 2 (round02_diego_connectivity_matrix.csv): TP=182, FP=1, FN=12, Precision=0.994536, Recall=0.938144, F1=0.965517
+- Jennifer -- Round 2 (round02_jennifer_connectivity_matrix.csv): TP=182, FP=1, FN=12, Precision=0.994536, Recall=0.938144, F1=0.965517
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=182, FP=1, FN=12, Precision=0.994536, Recall=0.938144, F1=0.965517
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- GEN-G1 -- GND-A
+
+False-negative edge examples:
+- DC-BUS-A -- JB-A1
+- DC-BUS-B -- JB-B1
+- DC-BUS-C -- JB-C1
+- DC-BUS-D -- JB-D1
+- GND-A -- GND-PLANT
+- GND-A -- TR-480A
+- GND-B -- GND-PLANT
+- GND-B -- TR-480B
+- PP-A1 -- UPS-A
+- PP-B1 -- UPS-B
+
+Missing GT node examples:
+- GND-B: 2 missed incident GT edge(s)

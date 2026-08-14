@@ -1,0 +1,21 @@
+Connectivity matrix validation summary
+Document: 13
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\13\synthetic_npp_connectivity_matrix_dc_bus_clean_retry.csv
+GT normalized nodes: 187; GT normalized edges: 194
+Matrices evaluated: 5
+Best row: Diego -- Round 1 from diego_round1_matrix.csv with Precision=0.934010, Recall=0.948454, F1=0.941176
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=180, FP=9, FN=14, Precision=0.952381, Recall=0.927835, F1=0.939948
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+Extra/non-GT nodes most responsible for FP edges: LOCAL-IO-B (1 FP edges); LOCAL-IO-C (1 FP edges); LOCAL-IO-D (1 FP edges); LOCAL-IO-A (1 FP edges).
+Missing GT nodes examples: none.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: BUS-4C -- CB-201; GND-A -- PP-A1; GND-B -- PP-B1; GND-C -- PP-C1; GND-D -- PP-D1.
+False-negative edge examples among GT-known nodes: CB-201 -- TR-UAT-1A; CB-201 -- TR-UAT-1B; DC-BUS-A -- JB-A1; DC-BUS-B -- JB-B1; DC-BUS-C -- JB-C1; DC-BUS-D -- JB-D1; GND-A -- TR-480A; GND-B -- TR-480B.
+False-positive examples involving extra/non-GT nodes: LC-480A -- LOCAL-IO-A; LC-480B -- LOCAL-IO-B; LC-480C -- LOCAL-IO-C; LC-480D -- LOCAL-IO-D.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (LOCAL-IO-B; LOCAL-IO-C; LOCAL-IO-D; LOCAL-IO-A), the final-row metrics would be TP=180, FP=5, FN=14, Precision=0.972973, Recall=0.927835, F1=0.949868.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=180, FP=5, FN=14, Precision=0.972973, Recall=0.927835, F1=0.949868.

@@ -1,0 +1,20 @@
+Connectivity matrix validation summary
+Document: 1
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\1\connectivity_matrix_clean_100_connected.csv
+GT normalized nodes: 100; GT normalized edges: 100
+Matrices evaluated: 3
+Best row: Diego -- Round 1 from round_01_diego_connectivity_matrix.csv with Precision=0.941748, Recall=0.970000, F1=0.955665
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=97, FP=6, FN=3, Precision=0.941748, Recall=0.970000, F1=0.955665
+Primary issue: extra/misnamed/intermediate extracted nodes created false-positive edges.
+
+Extra/non-GT nodes most responsible for FP edges: PT-A (2 FP edges); DC-TIE-125AB (2 FP edges); PT-B (2 FP edges).
+Missing GT nodes examples: none.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-negative edge examples among GT-known nodes: BUS-125DC-A -- BUS-125DC-B; INSTR-PT-A -- RELAY-UV-A; INSTR-PT-B -- RELAY-UV-B.
+False-positive examples involving extra/non-GT nodes: BUS-125DC-A -- DC-TIE-125AB; BUS-125DC-B -- DC-TIE-125AB; INSTR-PT-A -- PT-A; INSTR-PT-B -- PT-B; PT-A -- RELAY-UV-A; PT-B -- RELAY-UV-B.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (PT-A; DC-TIE-125AB; PT-B), the final-row metrics would be TP=97, FP=0, FN=3, Precision=1.000000, Recall=0.970000, F1=0.984772.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=97, FP=0, FN=3, Precision=1.000000, Recall=0.970000, F1=0.984772.

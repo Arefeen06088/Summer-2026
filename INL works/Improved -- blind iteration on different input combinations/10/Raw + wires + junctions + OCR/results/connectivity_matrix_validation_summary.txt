@@ -1,0 +1,37 @@
+Connectivity matrix validation summary - Document 10 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\10\connectivity_matrix_layout_labels_clear.csv
+GT after normalization: 134 undirected edges across 120 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token estimate: low=104360, expected=130310, high=171010.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=102, FP=31, FN=32, Precision=0.766917, Recall=0.761194, F1=0.764045.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names; missing exact GT component names.
+- Extracted components: 122; extra/non-GT names: 4; missing GT component names: 2.
+- False-positive extracted edge examples: 480V-LC-FEEDERS-A -- CB-A09; 480V-LC-FEEDERS-A -- LC-101A; 480V-LC-FEEDERS-A -- LC-102A; 480V-LC-FEEDERS-B -- CB-B09; 480V-LC-FEEDERS-B -- LC-101B; 480V-LC-FEEDERS-B -- LC-102B; AOV-101A -- MCC-102A; AOV-101B -- MCC-102B; ... (+23 more).
+- Missed GT edge examples: BCHG-1A -- BUS-DC-A; BCHG-1B -- BUS-DC-B; BUS-DC-A -- GND-A; BUS-DC-A -- RLY-86A; BUS-DC-B -- GND-B; BUS-DC-B -- RLY-86B; CB-A09 -- PT-4160-A; CB-B09 -- PT-4160-B; ... (+24 more).
+- Extra/non-GT component examples: 480V-LC-FEEDERS-A; 480V-LC-FEEDERS-B; CT-CAB-A-CONTROL-CABLE-TRAY; CT-CAB-B-CONTROL-CABLE-TRAY.
+- Missing GT component examples: CT-CAB-A; CT-CAB-B.
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=102, FP=0, FN=32, Precision=1.000000, Recall=0.761194, F1=0.864407.
+- If all missed GT edges were added, final performance would be TP=134, FP=31, FN=0, Precision=0.812121, Recall=1.000000, F1=0.896321.
+- If extra node CT-CAB-A-CONTROL-CABLE-TRAY and its 4 false-positive incident edge(s) were not put in extraction, final performance would be TP=102, FP=27, FN=32, Precision=0.790698, Recall=0.761194, F1=0.775665.
+- If extra node CT-CAB-B-CONTROL-CABLE-TRAY and its 4 false-positive incident edge(s) were not put in extraction, final performance would be TP=102, FP=27, FN=32, Precision=0.790698, Recall=0.761194, F1=0.775665.
+- If extra node 480V-LC-FEEDERS-A and its 3 false-positive incident edge(s) were not put in extraction, final performance would be TP=102, FP=28, FN=32, Precision=0.784615, Recall=0.761194, F1=0.772727.
+- If extra node 480V-LC-FEEDERS-B and its 3 false-positive incident edge(s) were not put in extraction, final performance would be TP=102, FP=28, FN=32, Precision=0.784615, Recall=0.761194, F1=0.772727.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.764045.
+
+Round-specific notes:
+- Diego -- Round 1: TP=106, FP=51, FN=28, F1=0.728522; extra nodes=4, missing GT nodes=2. FP examples: 480V-LC-FEEDERS-A -- CB-A09; 480V-LC-FEEDERS-A -- FUSE-A01; 480V-LC-FEEDERS-A -- FUSE-A02; 480V-LC-FEEDERS-A -- LC-101A; ... (+47 more). FN examples: BCHG-1A -- BUS-DC-A; BCHG-1B -- BUS-DC-B; BUS-DC-A -- RLY-86A; BUS-DC-B -- RLY-86B; ... (+24 more).
+- Jennifer -- Round 2: TP=102, FP=31, FN=32, F1=0.764045; extra nodes=4, missing GT nodes=2. FP examples: 480V-LC-FEEDERS-A -- CB-A09; 480V-LC-FEEDERS-A -- LC-101A; 480V-LC-FEEDERS-A -- LC-102A; 480V-LC-FEEDERS-B -- CB-B09; ... (+27 more). FN examples: BCHG-1A -- BUS-DC-A; BCHG-1B -- BUS-DC-B; BUS-DC-A -- GND-A; BUS-DC-A -- RLY-86A; ... (+28 more).
+- Diego -- Round 3: TP=102, FP=31, FN=32, F1=0.764045; extra nodes=4, missing GT nodes=2. FP examples: 480V-LC-FEEDERS-A -- CB-A09; 480V-LC-FEEDERS-A -- LC-101A; 480V-LC-FEEDERS-A -- LC-102A; 480V-LC-FEEDERS-B -- CB-B09; ... (+27 more). FN examples: BCHG-1A -- BUS-DC-A; BCHG-1B -- BUS-DC-B; BUS-DC-A -- GND-A; BUS-DC-A -- RLY-86A; ... (+28 more).
+- Jennifer -- Round 4: TP=102, FP=31, FN=32, F1=0.764045; extra nodes=4, missing GT nodes=2. FP examples: 480V-LC-FEEDERS-A -- CB-A09; 480V-LC-FEEDERS-A -- LC-101A; 480V-LC-FEEDERS-A -- LC-102A; 480V-LC-FEEDERS-B -- CB-B09; ... (+27 more). FN examples: BCHG-1A -- BUS-DC-A; BCHG-1B -- BUS-DC-B; BUS-DC-A -- GND-A; BUS-DC-A -- RLY-86A; ... (+28 more).
+- Final connectivity -- Final: TP=102, FP=31, FN=32, F1=0.764045; extra nodes=4, missing GT nodes=2. FP examples: 480V-LC-FEEDERS-A -- CB-A09; 480V-LC-FEEDERS-A -- LC-101A; 480V-LC-FEEDERS-A -- LC-102A; 480V-LC-FEEDERS-B -- CB-B09; ... (+27 more). FN examples: BCHG-1A -- BUS-DC-A; BCHG-1B -- BUS-DC-B; BUS-DC-A -- GND-A; BUS-DC-A -- RLY-86A; ... (+28 more).

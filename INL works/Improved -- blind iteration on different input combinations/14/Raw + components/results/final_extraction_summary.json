@@ -1,0 +1,61 @@
+{
+  "document": "14",
+  "iteration": "1",
+  "resource_folder": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\14\\Raw + components",
+  "source_restriction": "Only Document 14 Raw + components resources were used; no GT, no OCR, no web, no Raw + wires.",
+  "agents": [
+    "Diego",
+    "Jennifer"
+  ],
+  "round_sequence": [
+    "Diego round 1 high-recall extraction",
+    "Jennifer round 1 precision review",
+    "Diego round 2 saturation review",
+    "Jennifer round 2 final confirmation"
+  ],
+  "agreement_status": {
+    "status": "final_saturation_consensus_confirmed",
+    "summary": "Jennifer final confirmation agrees with Diego round 2: no further node, label, asserted-edge, or uncertain-edge changes are needed.",
+    "accepted_consensus_points": [
+      "Keep the 178-node order unchanged.",
+      "Keep 156 refined asserted edges unchanged.",
+      "Keep 30 uncertain edges unchanged.",
+      "Retain PANEL-ANN -- CB-DC-TIE as an asserted dashed control connection because the center interlocks crop shows a direct named endpoint path.",
+      "Keep weaker PANEL-MCR tie-breaker interpretations out of the asserted matrix."
+    ]
+  },
+  "validation": {
+    "node_count": 178,
+    "asserted_edge_count": 156,
+    "symmetric": true,
+    "diagonal_zero": true,
+    "binary": true
+  },
+  "uncertain_edge_count": 30,
+  "removed_edge_count": 0,
+  "final_round_added_edge_count": 0,
+  "jennifer_round1_added_edge_count": 1,
+  "label_correction_count": 0,
+  "round_files_copied": [
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\14\\Raw + components\\results\\diego_round1_edges.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\14\\Raw + components\\results\\diego_round1_connectivity_matrix.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\14\\Raw + components\\results\\jennifer_round1_nodes.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\14\\Raw + components\\results\\jennifer_round1_edges.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\14\\Raw + components\\results\\jennifer_round1_connectivity_matrix.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\14\\Raw + components\\results\\diego_round2_edges.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\14\\Raw + components\\results\\diego_round2_connectivity_matrix.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\14\\Raw + components\\results\\jennifer_round2_final_nodes.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\14\\Raw + components\\results\\jennifer_round2_final_edges.json",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\14\\Raw + components\\results\\jennifer_round2_final_connectivity_matrix.csv"
+  ],
+  "token_estimate_totals": {
+    "total_input_tokens_expected": 129672,
+    "total_image_tokens_expected": 57885,
+    "total_output_tokens_expected": 124690,
+    "total_reasoning_tokens_expected": 90000,
+    "total_tokens_low": 252191,
+    "total_tokens_expected": 344362,
+    "total_tokens_high": 511536
+  },
+  "generated_at_utc": "2026-07-17T18:09:59.992155+00:00"
+}

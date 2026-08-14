@@ -1,0 +1,133 @@
+source,target,status,evidence
+GEN-01,TR-UAT-1,confirmed,solid GEN-01/UAT feed to 13.8 kV bus A
+TR-UAT-1,CB-UAT-1,confirmed,solid GEN-01/UAT feed to 13.8 kV bus A
+CB-UAT-1,BUS-13-8A,confirmed,solid GEN-01/UAT feed to 13.8 kV bus A
+TR-SUT-1,CB-SUT-1,confirmed,solid SUT-1 feed to 13.8 kV bus A
+CB-SUT-1,BUS-13-8A,confirmed,solid SUT-1 feed to 13.8 kV bus A
+BUS-13-8A,CB-13-TIE,confirmed,solid 13.8 kV bus tie through CB-13-TIE
+CB-13-TIE,BUS-13-8B,confirmed,solid 13.8 kV bus tie through CB-13-TIE
+GEN-02,TR-UAT-2,confirmed,solid GEN-02/UAT feed to 13.8 kV bus B
+TR-UAT-2,CB-UAT-2,confirmed,solid GEN-02/UAT feed to 13.8 kV bus B
+CB-UAT-2,BUS-13-8B,confirmed,solid GEN-02/UAT feed to 13.8 kV bus B
+TR-SUT-2,CB-SUT-2,confirmed,solid SUT-2 feed to 13.8 kV bus B
+CB-SUT-2,BUS-13-8B,confirmed,solid SUT-2 feed to 13.8 kV bus B
+BUS-13-8A,CB-IN-A,confirmed,solid normal incoming feeder drop to Train A
+BUS-13-8A,CB-IN-B,confirmed,solid normal incoming feeder drop to Train B
+BUS-13-8B,CB-IN-C,confirmed,solid normal incoming feeder drop to Train C
+BUS-13-8B,CB-IN-D,confirmed,solid normal incoming feeder drop to Train D
+CB-IN-A,BUS-4160-A,confirmed,solid incoming feeder to 4.16 kV safety bus
+DG-1A,CB-DG-A,confirmed,solid diesel generator feeder to DG breaker
+CB-DG-A,BUS-4160-A,confirmed,solid DG breaker feeder to 4.16 kV bus
+CB-IN-A,RELAY-27A,confirmed,dashed undervoltage/control interlock path
+RELAY-27A,CB-DG-A,confirmed,dashed undervoltage/control interlock path
+BUS-4160-A,CB-4160-A1,confirmed,solid 4.16 kV branch to transformer 1
+CB-4160-A1,TR-480-A1,confirmed,solid breaker-to-transformer branch
+TR-480-A1,CB-480-A1,confirmed,solid transformer low-side branch
+CB-480-A1,BUS-480-A1,confirmed,solid 480 V breaker-to-bus branch
+BUS-4160-A,CB-4160-A2,confirmed,solid 4.16 kV branch to transformer 2
+CB-4160-A2,TR-480-A2,confirmed,solid breaker-to-transformer branch
+TR-480-A2,CB-480-A2,confirmed,solid transformer low-side branch
+CB-480-A2,BUS-480-A2,confirmed,solid 480 V breaker-to-bus branch
+BUS-480-A1,BUS-480-A2,confirmed,continuous solid 480 V tie conductor; TIE label not used as node
+BUS-480-A1,CB-MCC-A1,confirmed,solid feeder from 480 V bus 1 to MCC breaker
+CB-MCC-A1,MCC-A1,confirmed,solid MCC breaker-to-MCC connection
+BUS-480-A2,CB-MCC-A2,confirmed,solid feeder from 480 V bus 2 to MCC breaker
+CB-MCC-A2,MCC-A2,confirmed,solid MCC breaker-to-MCC connection
+MCC-A1,PUMP-SI-A,confirmed,solid MCC load feeder
+MCC-A1,PUMP-CCW-A,confirmed,solid MCC load feeder
+MCC-A1,FAN-HVAC-A,confirmed,solid MCC load feeder
+MCC-A2,MOV-RHR-A,confirmed,solid MCC load feeder to MOV
+BUS-480-A2,RECT-125-A,confirmed,solid 125 VDC rectifier supply from 480 V bus 2
+RECT-125-A,PANEL-IC-A,confirmed,solid rectifier/DC conductor through I/C panel terminal
+PANEL-IC-A,GND-A,confirmed,visible grounded terminal from I/C panel
+CB-IN-B,BUS-4160-B,confirmed,solid incoming feeder to 4.16 kV safety bus
+DG-1B,CB-DG-B,confirmed,solid diesel generator feeder to DG breaker
+CB-DG-B,BUS-4160-B,confirmed,solid DG breaker feeder to 4.16 kV bus
+CB-IN-B,RELAY-27B,confirmed,dashed undervoltage/control interlock path
+RELAY-27B,CB-DG-B,confirmed,dashed undervoltage/control interlock path
+BUS-4160-B,CB-4160-B1,confirmed,solid 4.16 kV branch to transformer 1
+CB-4160-B1,TR-480-B1,confirmed,solid breaker-to-transformer branch
+TR-480-B1,CB-480-B1,confirmed,solid transformer low-side branch
+CB-480-B1,BUS-480-B1,confirmed,solid 480 V breaker-to-bus branch
+BUS-4160-B,CB-4160-B2,confirmed,solid 4.16 kV branch to transformer 2
+CB-4160-B2,TR-480-B2,confirmed,solid breaker-to-transformer branch
+TR-480-B2,CB-480-B2,confirmed,solid transformer low-side branch
+CB-480-B2,BUS-480-B2,confirmed,solid 480 V breaker-to-bus branch
+BUS-480-B1,BUS-480-B2,confirmed,continuous solid 480 V tie conductor; TIE label not used as node
+BUS-480-B1,CB-MCC-B1,confirmed,solid feeder from 480 V bus 1 to MCC breaker
+CB-MCC-B1,MCC-B1,confirmed,solid MCC breaker-to-MCC connection
+BUS-480-B2,CB-MCC-B2,confirmed,solid feeder from 480 V bus 2 to MCC breaker
+CB-MCC-B2,MCC-B2,confirmed,solid MCC breaker-to-MCC connection
+MCC-B1,PUMP-SI-B,confirmed,solid MCC load feeder
+MCC-B1,PUMP-CCW-B,confirmed,solid MCC load feeder
+MCC-B1,FAN-HVAC-B,confirmed,solid MCC load feeder
+MCC-B2,MOV-RHR-B,confirmed,solid MCC load feeder to MOV
+BUS-480-B2,RECT-125-B,confirmed,solid 125 VDC rectifier supply from 480 V bus 2
+RECT-125-B,PANEL-IC-B,confirmed,solid rectifier/DC conductor through I/C panel terminal
+PANEL-IC-B,GND-B,confirmed,visible grounded terminal from I/C panel
+CB-IN-C,BUS-4160-C,confirmed,solid incoming feeder to 4.16 kV safety bus
+DG-1C,CB-DG-C,confirmed,solid diesel generator feeder to DG breaker
+CB-DG-C,BUS-4160-C,confirmed,solid DG breaker feeder to 4.16 kV bus
+CB-IN-C,RELAY-27C,confirmed,dashed undervoltage/control interlock path
+RELAY-27C,CB-DG-C,confirmed,dashed undervoltage/control interlock path
+BUS-4160-C,CB-4160-C1,confirmed,solid 4.16 kV branch to transformer 1
+CB-4160-C1,TR-480-C1,confirmed,solid breaker-to-transformer branch
+TR-480-C1,CB-480-C1,confirmed,solid transformer low-side branch
+CB-480-C1,BUS-480-C1,confirmed,solid 480 V breaker-to-bus branch
+BUS-4160-C,CB-4160-C2,confirmed,solid 4.16 kV branch to transformer 2
+CB-4160-C2,TR-480-C2,confirmed,solid breaker-to-transformer branch
+TR-480-C2,CB-480-C2,confirmed,solid transformer low-side branch
+CB-480-C2,BUS-480-C2,confirmed,solid 480 V breaker-to-bus branch
+BUS-480-C1,BUS-480-C2,confirmed,continuous solid 480 V tie conductor; TIE label not used as node
+BUS-480-C1,CB-MCC-C1,confirmed,solid feeder from 480 V bus 1 to MCC breaker
+CB-MCC-C1,MCC-C1,confirmed,solid MCC breaker-to-MCC connection
+BUS-480-C2,CB-MCC-C2,confirmed,solid feeder from 480 V bus 2 to MCC breaker
+CB-MCC-C2,MCC-C2,confirmed,solid MCC breaker-to-MCC connection
+MCC-C1,PUMP-SI-C,confirmed,solid MCC load feeder
+MCC-C1,PUMP-CCW-C,confirmed,solid MCC load feeder
+MCC-C1,FAN-HVAC-C,confirmed,solid MCC load feeder
+MCC-C2,MOV-RHR-C,confirmed,solid MCC load feeder to MOV
+BUS-480-C2,RECT-125-C,confirmed,solid 125 VDC rectifier supply from 480 V bus 2
+RECT-125-C,PANEL-IC-C,confirmed,solid rectifier/DC conductor through I/C panel terminal
+PANEL-IC-C,GND-C,confirmed,visible grounded terminal from I/C panel
+CB-IN-D,BUS-4160-D,confirmed,solid incoming feeder to 4.16 kV safety bus
+DG-1D,CB-DG-D,confirmed,solid diesel generator feeder to DG breaker
+CB-DG-D,BUS-4160-D,confirmed,solid DG breaker feeder to 4.16 kV bus
+CB-IN-D,RELAY-27D,confirmed,dashed undervoltage/control interlock path
+RELAY-27D,CB-DG-D,confirmed,dashed undervoltage/control interlock path
+BUS-4160-D,CB-4160-D1,confirmed,solid 4.16 kV branch to transformer 1
+CB-4160-D1,TR-480-D1,confirmed,solid breaker-to-transformer branch
+TR-480-D1,CB-480-D1,confirmed,solid transformer low-side branch
+CB-480-D1,BUS-480-D1,confirmed,solid 480 V breaker-to-bus branch
+BUS-4160-D,CB-4160-D2,confirmed,solid 4.16 kV branch to transformer 2
+CB-4160-D2,TR-480-D2,confirmed,solid breaker-to-transformer branch
+TR-480-D2,CB-480-D2,confirmed,solid transformer low-side branch
+CB-480-D2,BUS-480-D2,confirmed,solid 480 V breaker-to-bus branch
+BUS-480-D1,BUS-480-D2,confirmed,continuous solid 480 V tie conductor; TIE label not used as node
+BUS-480-D1,CB-MCC-D1,confirmed,solid feeder from 480 V bus 1 to MCC breaker
+CB-MCC-D1,MCC-D1,confirmed,solid MCC breaker-to-MCC connection
+BUS-480-D2,CB-MCC-D2,confirmed,solid feeder from 480 V bus 2 to MCC breaker
+CB-MCC-D2,MCC-D2,confirmed,solid MCC breaker-to-MCC connection
+MCC-D1,PUMP-SI-D,confirmed,solid MCC load feeder
+MCC-D1,PUMP-CCW-D,confirmed,solid MCC load feeder
+MCC-D1,FAN-HVAC-D,confirmed,solid MCC load feeder
+MCC-D2,MOV-RHR-D,confirmed,solid MCC load feeder to MOV
+BUS-480-D2,RECT-125-D,confirmed,solid 125 VDC rectifier supply from 480 V bus 2
+RECT-125-D,PANEL-IC-D,confirmed,solid rectifier/DC conductor through I/C panel terminal
+PANEL-IC-D,GND-D,confirmed,visible grounded terminal from I/C panel
+PANEL-IC-A,BUS-DC-125A,confirmed,solid DC-A125 landing to Division A DC bus
+PANEL-IC-B,BUS-DC-125B,confirmed,solid DC-B125 route into Division B DC bus area
+PANEL-IC-C,BUS-DC-125B,confirmed,solid DC-C125 route into Division B DC bus area
+PANEL-IC-D,BUS-DC-125B,confirmed,solid DC-D125 route into Division B DC bus area
+BAT-125A,BUS-DC-125A,confirmed,solid battery A connection to DC bus
+BUS-DC-125A,INV-UPS-A,confirmed,solid UPS-AIN connection from DC bus
+INV-UPS-A,PANEL-RPS-A,confirmed,solid UPS-AOUT connection to RPS panel
+BAT-125B,BUS-DC-125B,confirmed,solid battery B connection to DC bus
+BUS-DC-125B,INV-UPS-B,confirmed,solid UPS-BIN connection from DC bus
+INV-UPS-B,PANEL-RPS-B,confirmed,solid UPS-BOUT connection to RPS panel
+MCC-A1,ATS-480-A,confirmed,solid ATS-A1 route from A-side MCC branch to ATS-480-A
+MCC-B1,ATS-480-A,confirmed,solid ATS-B1 route from B-side MCC branch to ATS-480-A
+ATS-480-A,PANEL-RPS-A,confirmed,solid ATS-AOUT route to PANEL-RPS-A
+MCC-C1,ATS-480-B,confirmed,solid ATS-C1 route from C-side MCC branch to ATS-480-B
+MCC-D1,ATS-480-B,confirmed,solid ATS-D1 route from D-side MCC branch to ATS-480-B
+ATS-480-B,PANEL-RPS-B,confirmed,solid ATS-BOUT route to PANEL-RPS-B

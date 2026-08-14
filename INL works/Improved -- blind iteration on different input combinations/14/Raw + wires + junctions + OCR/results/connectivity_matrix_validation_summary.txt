@@ -1,0 +1,38 @@
+Connectivity matrix validation summary - Document 14 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\14\connectivity_matrix_even_bus_spacing.csv
+GT after normalization: 190 undirected edges across 178 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token usage was not available in local tracking files.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=159, FP=39, FN=31, Precision=0.803030, Recall=0.836842, F1=0.819588.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names; missing exact GT component names; close-but-not-exact component names.
+- Extracted components: 180; extra/non-GT names: 8; missing GT component names: 6.
+- False-positive extracted edge examples: BUS-480A -- PANEL-RPS-A; CB-DC-TIE -- PANEL-ANN; CHG-125A -- PANEL-RPS-A; CTRL-TRAIN-A-DASHED -- PANEL-ESF-A; CTRL-TRAIN-A-DASHED -- PANEL-LS-A; CTRL-TRAIN-A-DASHED -- PANEL-MCR; CTRL-TRAIN-A-DASHED -- RELAY-KA01; CTRL-TRAIN-A-DASHED -- RELAY-KA02; ... (+31 more).
+- Missed GT edge examples: BUS-480A -- CHG-125A; BUS-UPS-A -- PANEL-MCR; FAN-CR-1A -- GND-A04; FAN-CR-1A -- TB-A04; FAN-CR-1B -- GND-B04; FAN-CR-1B -- TB-B04; GND-A05 -- MOV-SI-101A; GND-A07 -- PUMP-CCW-1A; ... (+23 more).
+- Extra/non-GT component examples: CTRL-TRAIN-A-DASHED; CTRL-TRAIN-B-DASHED; FAN-R-1A; FAN-R-1B; MOV-ST-101A; MOV-ST-101B; PUMP-CW-1A; PUMP-CW-1B.
+- Missing GT component examples: FAN-CR-1A; FAN-CR-1B; MOV-SI-101A; MOV-SI-101B; PUMP-CCW-1A; PUMP-CCW-1B.
+- Close-but-not-exact component examples: FAN-R-1A ~ FAN-CR-1A (0.94); FAN-R-1B ~ FAN-CR-1B (0.94); MOV-ST-101A ~ MOV-SI-101A (0.91); MOV-ST-101B ~ MOV-SI-101B (0.91); PUMP-CW-1A ~ PUMP-CCW-1A (0.95); PUMP-CW-1B ~ PUMP-CCW-1B (0.95).
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=159, FP=0, FN=31, Precision=1.000000, Recall=0.836842, F1=0.911175.
+- If all missed GT edges were added, final performance would be TP=190, FP=39, FN=0, Precision=0.829694, Recall=1.000000, F1=0.906921.
+- If extra node CTRL-TRAIN-A-DASHED and its 12 false-positive incident edge(s) were not put in extraction, final performance would be TP=159, FP=27, FN=31, Precision=0.854839, Recall=0.836842, F1=0.845745.
+- If extra node CTRL-TRAIN-B-DASHED and its 12 false-positive incident edge(s) were not put in extraction, final performance would be TP=159, FP=27, FN=31, Precision=0.854839, Recall=0.836842, F1=0.845745.
+- If extra node FAN-R-1A and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=159, FP=37, FN=31, Precision=0.811224, Recall=0.836842, F1=0.823834.
+- If extra node FAN-R-1B and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=159, FP=37, FN=31, Precision=0.811224, Recall=0.836842, F1=0.823834.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.819588.
+
+Round-specific notes:
+- Diego -- Round 1: TP=158, FP=60, FN=32, F1=0.774510; extra nodes=10, missing GT nodes=7. FP examples: BUS-125DCA -- CB-DG-TIE; BUS-125DCB -- CB-DG-TIE; BUS-480A -- PANEL-RPS-A; BUS-UPS-A -- MASTER_TERMINAL_BLOCKS; ... (+56 more). FN examples: BUS-125DCA -- CB-DC-TIE; BUS-125DCB -- CB-DC-TIE; BUS-UPS-A -- PANEL-MCR; FAN-CR-1A -- GND-A04; ... (+28 more).
+- Jennifer -- Round 2: TP=159, FP=39, FN=31, F1=0.819588; extra nodes=8, missing GT nodes=6. FP examples: BUS-480A -- PANEL-RPS-A; CB-DC-TIE -- PANEL-ANN; CHG-125A -- PANEL-RPS-A; CTRL-TRAIN-A-DASHED -- PANEL-ESF-A; ... (+35 more). FN examples: BUS-480A -- CHG-125A; BUS-UPS-A -- PANEL-MCR; FAN-CR-1A -- GND-A04; FAN-CR-1A -- TB-A04; ... (+27 more).
+- Diego -- Round 3: TP=159, FP=39, FN=31, F1=0.819588; extra nodes=8, missing GT nodes=6. FP examples: BUS-480A -- PANEL-RPS-A; CB-DC-TIE -- PANEL-ANN; CHG-125A -- PANEL-RPS-A; CTRL-TRAIN-A-DASHED -- PANEL-ESF-A; ... (+35 more). FN examples: BUS-480A -- CHG-125A; BUS-UPS-A -- PANEL-MCR; FAN-CR-1A -- GND-A04; FAN-CR-1A -- TB-A04; ... (+27 more).
+- Jennifer -- Round 4: TP=159, FP=39, FN=31, F1=0.819588; extra nodes=8, missing GT nodes=6. FP examples: BUS-480A -- PANEL-RPS-A; CB-DC-TIE -- PANEL-ANN; CHG-125A -- PANEL-RPS-A; CTRL-TRAIN-A-DASHED -- PANEL-ESF-A; ... (+35 more). FN examples: BUS-480A -- CHG-125A; BUS-UPS-A -- PANEL-MCR; FAN-CR-1A -- GND-A04; FAN-CR-1A -- TB-A04; ... (+27 more).
+- Final connectivity -- Final: TP=159, FP=39, FN=31, F1=0.819588; extra nodes=8, missing GT nodes=6. FP examples: BUS-480A -- PANEL-RPS-A; CB-DC-TIE -- PANEL-ANN; CHG-125A -- PANEL-RPS-A; CTRL-TRAIN-A-DASHED -- PANEL-ESF-A; ... (+35 more). FN examples: BUS-480A -- CHG-125A; BUS-UPS-A -- PANEL-MCR; FAN-CR-1A -- GND-A04; FAN-CR-1A -- TB-A04; ... (+27 more).

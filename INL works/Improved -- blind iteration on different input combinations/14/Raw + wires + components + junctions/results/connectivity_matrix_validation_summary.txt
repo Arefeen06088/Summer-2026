@@ -1,0 +1,37 @@
+Connectivity matrix validation summary - Document 14
+Input configuration: Raw + wires + components + junctions
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\14\connectivity_matrix_even_bus_spacing.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_connectivity_matrix.csv): TP=125, FP=78, FN=65, Precision=0.615764, Recall=0.657895, F1=0.636132
+- Jennifer -- Round 2 (round_02_jennifer_precision_connectivity_matrix.csv): TP=171, FP=3, FN=19, Precision=0.982759, Recall=0.900000, F1=0.939560
+- Diego -- Round 3 (round_03_diego_saturation_connectivity_matrix.csv): TP=171, FP=3, FN=19, Precision=0.982759, Recall=0.900000, F1=0.939560
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=171, FP=3, FN=19, Precision=0.982759, Recall=0.900000, F1=0.939560
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- BUS-480A -- PANEL-RPS-A
+- CB-DC-TIE -- PANEL-ANN
+- CHG-125A -- PANEL-RPS-A
+
+False-negative edge examples:
+- BUS-480A -- CHG-125A
+- BUS-UPS-A -- PANEL-MCR
+- PANEL-ANN -- RELAY-KA09
+- PANEL-ANN -- RELAY-KB08
+- PANEL-ESF-A -- RELAY-KA01
+- PANEL-ESF-A -- RELAY-KA02
+- PANEL-ESF-A -- RELAY-KA04
+- PANEL-ESF-A -- RELAY-KA07
+- PANEL-ESF-B -- RELAY-KB01
+- PANEL-ESF-B -- RELAY-KB02
+
+Missing GT node examples:
+- PANEL-ESF-A: 4 missed incident GT edge(s)
+- PANEL-ESF-B: 4 missed incident GT edge(s)
+- PANEL-LS-A: 2 missed incident GT edge(s)
+- PANEL-LS-B: 2 missed incident GT edge(s)
+- PANEL-RPS-B: 1 missed incident GT edge(s)

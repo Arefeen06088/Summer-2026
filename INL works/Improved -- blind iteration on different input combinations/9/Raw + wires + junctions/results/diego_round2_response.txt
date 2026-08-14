@@ -1,0 +1,9 @@
+ROLE: Diego high-recall extractor round 2
+DOCUMENT: 9
+AGREE_WITH_JENNIFER_ROUND1
+
+I agree Jennifer's round-1 precision graph is saturated. The retained graph matches the directly visible solid feeder chains, bus taps, DC control buses, grounded DC drops, CT/PT relay landings, MOV fuse branches, normal auxiliary meter pickups, and bottom-panel PLC/relay/annunciator landings.
+
+Main reasons: Jennifer removed only unsupported corridor/perimeter inferences, dashed routes without unambiguous labeled endpoints, relay-to-transformer or inter-train guesses, and crossings/near-passes without raw junction dots. Her normal-meter corrections keep the visible PUMP-SUMP-1B to MTR-480-N1 and FAN-AHU-2A to MTR-480-N2 pickups while dropping alternate breaker/panel interpretations that are not direct landings. Her control-panel corrections preserve PN-120 to PLC, PLC to annunciator, PLC to K relays, and K2 to annunciator paths while removing broader PN/JB/outer-loop connections that visually remain shared routing, not definite component edges.
+
+No removed component or edge has enough direct visual evidence to reinstate.

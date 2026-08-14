@@ -1,0 +1,3097 @@
+{
+  "document": 10,
+  "iteration": 1,
+  "resource_location": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\10\\Raw + wires + components",
+  "method": "raw schematic plus visual aids only; no GT and no OCR",
+  "node_count_final": 120,
+  "edge_count_final": 120,
+  "removed_by_jennifer": [
+    {
+      "A": "480V-LC-FEEDERS-A",
+      "B": "DS-A01",
+      "type": "S"
+    },
+    {
+      "A": "480V-LC-FEEDERS-B",
+      "B": "DS-B01",
+      "type": "S"
+    },
+    {
+      "A": "BUS-4160-A",
+      "B": "CT-4160-A",
+      "type": "S"
+    },
+    {
+      "A": "BUS-4160-A",
+      "B": "PT-4160-A",
+      "type": "S"
+    },
+    {
+      "A": "BUS-4160-B",
+      "B": "CT-4160-B",
+      "type": "S"
+    },
+    {
+      "A": "BUS-4160-B",
+      "B": "PT-4160-B",
+      "type": "S"
+    }
+  ],
+  "uncertain_candidates": [
+    "BUS-SWY-345KV,UAT-1,S",
+    "BUS-SWY-345KV,GEN-01,S",
+    "TR-480-A1,480V-LC-FEEDERS-A,S",
+    "TR-480-A2,480V-LC-FEEDERS-A,S",
+    "TR-480-B1,480V-LC-FEEDERS-B,S",
+    "TR-480-B2,480V-LC-FEEDERS-B,S",
+    "FUSE-A01,CT-4160-A,SIG",
+    "FUSE-A01,CB-A09,SIG",
+    "FUSE-B01,CT-4160-B,SIG",
+    "FUSE-B01,CB-B09,SIG",
+    "PT-4160-A,PNL-RPS-A,SIG",
+    "CT-4160-A,PNL-RPS-A,SIG",
+    "PT-4160-B,PNL-RPS-B,SIG",
+    "CT-4160-B,PNL-RPS-B,SIG",
+    "MCC-102A,FAN-AB-A,S",
+    "MCC-103A,PUMP-CCW-A,S",
+    "MCC-102B,FAN-AB-B,S",
+    "MCC-103B,PUMP-CCW-B,S",
+    "TB-LV-A,MCC-101A,D",
+    "TB-LV-B,MCC-101B,D",
+    "TB-LV-A,PNL-UPS-A,D",
+    "TB-LV-B,PNL-UPS-B,D",
+    "JB-CONTROL,TB-SWGR-A,D",
+    "JB-CONTROL,TB-LV-A,D",
+    "JB-CONTROL,TB-SWGR-B,D",
+    "JB-CONTROL,TB-LV-B,D",
+    "GND-A,PNL-UPS-A,G",
+    "GND-B,PNL-UPS-B,G",
+    "GND-A,TB-LV-A,G",
+    "GND-B,TB-LV-B,G"
+  ],
+  "round_summaries": [
+    {
+      "round": 1,
+      "agent": "Diego",
+      "status": "proposal_with_uncertain_candidates",
+      "node_count": 120,
+      "edge_count": 126,
+      "type_counts": {
+        "D": 15,
+        "G": 2,
+        "S": 101,
+        "SIG": 8
+      }
+    },
+    {
+      "round": 2,
+      "agent": "Jennifer",
+      "status": "refined",
+      "node_count": 120,
+      "edge_count": 120,
+      "type_counts": {
+        "D": 15,
+        "G": 2,
+        "S": 95,
+        "SIG": 8
+      }
+    },
+    {
+      "round": 3,
+      "agent": "Diego",
+      "status": "saturated_agreed",
+      "node_count": 120,
+      "edge_count": 120,
+      "type_counts": {
+        "D": 15,
+        "G": 2,
+        "S": 95,
+        "SIG": 8
+      }
+    },
+    {
+      "round": 4,
+      "agent": "Jennifer",
+      "status": "saturated_agreed",
+      "node_count": 120,
+      "edge_count": 120,
+      "type_counts": {
+        "D": 15,
+        "G": 2,
+        "S": 95,
+        "SIG": 8
+      }
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "agent": "Diego",
+      "role": "high-recall extractor",
+      "status": "proposal_with_uncertain_candidates",
+      "nodes": [
+        "SRC-345KV",
+        "BUS-SWY-345KV",
+        "GEN-01",
+        "UAT-1",
+        "CB-UAT",
+        "DG-1A",
+        "CB-DGA",
+        "BUS-4160-A",
+        "CB-TIE-AB",
+        "SAT-1",
+        "CB-SAT",
+        "DG-1B",
+        "CB-DGB",
+        "BUS-4160-B",
+        "CB-A01",
+        "TR-480-A1",
+        "CB-A02",
+        "TR-480-A2",
+        "CB-A03",
+        "PUMP-RHR-A",
+        "CB-A04",
+        "PUMP-CS-A",
+        "CB-A05",
+        "PUMP-AFW-A",
+        "CB-A06",
+        "TR-UPS-A",
+        "CB-A07",
+        "CHLR-A",
+        "CB-A08",
+        "480V-LC-FEEDERS-A",
+        "FAN-CR-A",
+        "CB-A09",
+        "TB-SWGR-A",
+        "RLY-27A",
+        "RLY-50A",
+        "RLY-86A",
+        "PT-4160-A",
+        "CT-4160-A",
+        "PNL-RPS-A",
+        "PNL-ESFAS-A",
+        "TB-LV-A",
+        "FUSE-A01",
+        "FUSE-A02",
+        "LC-101A",
+        "DS-A01",
+        "MCC-101A",
+        "MOV-101A",
+        "MOV-102A",
+        "JB-101A",
+        "LC-102A",
+        "DS-A02",
+        "MCC-102A",
+        "AOV-101A",
+        "PUMP-CCW-A",
+        "FAN-AB-A",
+        "HTR-TRACE-A",
+        "MCC-103A",
+        "RECT-1A",
+        "BCHG-1A",
+        "BAT-1A",
+        "BUS-DC-A",
+        "INV-1A",
+        "BUS-UPS-A",
+        "PNL-UPS-A",
+        "GND-A",
+        "CB-B01",
+        "TR-480-B1",
+        "CB-B02",
+        "TR-480-B2",
+        "CB-B03",
+        "PUMP-RHR-B",
+        "CB-B04",
+        "PUMP-CS-B",
+        "CB-B05",
+        "PUMP-AFW-B",
+        "CB-B06",
+        "TR-UPS-B",
+        "CB-B07",
+        "CHLR-B",
+        "CB-B08",
+        "480V-LC-FEEDERS-B",
+        "FAN-CR-B",
+        "CB-B09",
+        "TB-SWGR-B",
+        "RLY-27B",
+        "RLY-50B",
+        "RLY-86B",
+        "PT-4160-B",
+        "CT-4160-B",
+        "PNL-RPS-B",
+        "PNL-ESFAS-B",
+        "TB-LV-B",
+        "FUSE-B01",
+        "FUSE-B02",
+        "LC-101B",
+        "DS-B01",
+        "MCC-101B",
+        "MOV-101B",
+        "MOV-102B",
+        "JB-101B",
+        "LC-102B",
+        "DS-B02",
+        "MCC-102B",
+        "AOV-101B",
+        "PUMP-CCW-B",
+        "FAN-AB-B",
+        "HTR-TRACE-B",
+        "MCC-103B",
+        "RECT-1B",
+        "BCHG-1B",
+        "BAT-1B",
+        "BUS-DC-B",
+        "INV-1B",
+        "BUS-UPS-B",
+        "PNL-UPS-B",
+        "GND-B",
+        "PNL-MCR-01",
+        "PNL-ANN-01",
+        "SER-01",
+        "JB-CONTROL"
+      ],
+      "edges": [
+        {
+          "A": "SRC-345KV",
+          "B": "BUS-SWY-345KV",
+          "type": "S"
+        },
+        {
+          "A": "BUS-SWY-345KV",
+          "B": "SAT-1",
+          "type": "S"
+        },
+        {
+          "A": "GEN-01",
+          "B": "UAT-1",
+          "type": "S"
+        },
+        {
+          "A": "UAT-1",
+          "B": "CB-UAT",
+          "type": "S"
+        },
+        {
+          "A": "CB-UAT",
+          "B": "BUS-4160-A",
+          "type": "S"
+        },
+        {
+          "A": "DG-1A",
+          "B": "CB-DGA",
+          "type": "S"
+        },
+        {
+          "A": "CB-DGA",
+          "B": "BUS-4160-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-TIE-AB",
+          "type": "S"
+        },
+        {
+          "A": "CB-TIE-AB",
+          "B": "BUS-4160-B",
+          "type": "S"
+        },
+        {
+          "A": "SAT-1",
+          "B": "CB-SAT",
+          "type": "S"
+        },
+        {
+          "A": "CB-SAT",
+          "B": "BUS-4160-B",
+          "type": "S"
+        },
+        {
+          "A": "DG-1B",
+          "B": "CB-DGB",
+          "type": "S"
+        },
+        {
+          "A": "CB-DGB",
+          "B": "BUS-4160-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A01",
+          "type": "S"
+        },
+        {
+          "A": "CB-A01",
+          "B": "TR-480-A1",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A02",
+          "type": "S"
+        },
+        {
+          "A": "CB-A02",
+          "B": "TR-480-A2",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A03",
+          "type": "S"
+        },
+        {
+          "A": "CB-A03",
+          "B": "PUMP-RHR-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A04",
+          "type": "S"
+        },
+        {
+          "A": "CB-A04",
+          "B": "PUMP-CS-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A05",
+          "type": "S"
+        },
+        {
+          "A": "CB-A05",
+          "B": "PUMP-AFW-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A06",
+          "type": "S"
+        },
+        {
+          "A": "CB-A06",
+          "B": "TR-UPS-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A07",
+          "type": "S"
+        },
+        {
+          "A": "CB-A07",
+          "B": "CHLR-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A08",
+          "type": "S"
+        },
+        {
+          "A": "CB-A08",
+          "B": "480V-LC-FEEDERS-A",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-A",
+          "B": "FAN-CR-A",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-A",
+          "B": "LC-101A",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-A",
+          "B": "LC-102A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A09",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "PT-4160-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CT-4160-A",
+          "type": "S"
+        },
+        {
+          "A": "TB-SWGR-A",
+          "B": "RLY-27A",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-A",
+          "B": "RLY-50A",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-A",
+          "B": "RLY-86A",
+          "type": "D"
+        },
+        {
+          "A": "RLY-27A",
+          "B": "PT-4160-A",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-50A",
+          "B": "CT-4160-A",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-86A",
+          "B": "CT-4160-A",
+          "type": "SIG"
+        },
+        {
+          "A": "PNL-RPS-A",
+          "B": "FUSE-A01",
+          "type": "S"
+        },
+        {
+          "A": "PNL-ESFAS-A",
+          "B": "FUSE-A02",
+          "type": "S"
+        },
+        {
+          "A": "PNL-RPS-A",
+          "B": "TB-LV-A",
+          "type": "D"
+        },
+        {
+          "A": "PNL-ESFAS-A",
+          "B": "TB-LV-A",
+          "type": "D"
+        },
+        {
+          "A": "FUSE-A02",
+          "B": "DS-A01",
+          "type": "S"
+        },
+        {
+          "A": "FUSE-A02",
+          "B": "DS-A02",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-A",
+          "B": "DS-A01",
+          "type": "S"
+        },
+        {
+          "A": "LC-101A",
+          "B": "DS-A01",
+          "type": "S"
+        },
+        {
+          "A": "DS-A01",
+          "B": "MCC-101A",
+          "type": "S"
+        },
+        {
+          "A": "LC-102A",
+          "B": "DS-A02",
+          "type": "S"
+        },
+        {
+          "A": "DS-A02",
+          "B": "MCC-102A",
+          "type": "S"
+        },
+        {
+          "A": "LC-102A",
+          "B": "MCC-103A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101A",
+          "B": "MOV-101A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101A",
+          "B": "MOV-102A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101A",
+          "B": "JB-101A",
+          "type": "D"
+        },
+        {
+          "A": "JB-101A",
+          "B": "AOV-101A",
+          "type": "D"
+        },
+        {
+          "A": "MCC-102A",
+          "B": "AOV-101A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-102A",
+          "B": "PUMP-CCW-A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-103A",
+          "B": "FAN-AB-A",
+          "type": "S"
+        },
+        {
+          "A": "FAN-AB-A",
+          "B": "HTR-TRACE-A",
+          "type": "S"
+        },
+        {
+          "A": "RECT-1A",
+          "B": "BCHG-1A",
+          "type": "S"
+        },
+        {
+          "A": "BCHG-1A",
+          "B": "BAT-1A",
+          "type": "S"
+        },
+        {
+          "A": "BAT-1A",
+          "B": "BUS-DC-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-DC-A",
+          "B": "INV-1A",
+          "type": "S"
+        },
+        {
+          "A": "INV-1A",
+          "B": "BUS-UPS-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-UPS-A",
+          "B": "PNL-UPS-A",
+          "type": "S"
+        },
+        {
+          "A": "GND-A",
+          "B": "BUS-DC-A",
+          "type": "G"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B01",
+          "type": "S"
+        },
+        {
+          "A": "CB-B01",
+          "B": "TR-480-B1",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B02",
+          "type": "S"
+        },
+        {
+          "A": "CB-B02",
+          "B": "TR-480-B2",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B03",
+          "type": "S"
+        },
+        {
+          "A": "CB-B03",
+          "B": "PUMP-RHR-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B04",
+          "type": "S"
+        },
+        {
+          "A": "CB-B04",
+          "B": "PUMP-CS-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B05",
+          "type": "S"
+        },
+        {
+          "A": "CB-B05",
+          "B": "PUMP-AFW-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B06",
+          "type": "S"
+        },
+        {
+          "A": "CB-B06",
+          "B": "TR-UPS-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B07",
+          "type": "S"
+        },
+        {
+          "A": "CB-B07",
+          "B": "CHLR-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B08",
+          "type": "S"
+        },
+        {
+          "A": "CB-B08",
+          "B": "480V-LC-FEEDERS-B",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-B",
+          "B": "FAN-CR-B",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-B",
+          "B": "LC-101B",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-B",
+          "B": "LC-102B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B09",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "PT-4160-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CT-4160-B",
+          "type": "S"
+        },
+        {
+          "A": "TB-SWGR-B",
+          "B": "RLY-27B",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-B",
+          "B": "RLY-50B",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-B",
+          "B": "RLY-86B",
+          "type": "D"
+        },
+        {
+          "A": "RLY-27B",
+          "B": "PT-4160-B",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-50B",
+          "B": "CT-4160-B",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-86B",
+          "B": "CT-4160-B",
+          "type": "SIG"
+        },
+        {
+          "A": "PNL-RPS-B",
+          "B": "FUSE-B01",
+          "type": "S"
+        },
+        {
+          "A": "PNL-ESFAS-B",
+          "B": "FUSE-B02",
+          "type": "S"
+        },
+        {
+          "A": "PNL-RPS-B",
+          "B": "TB-LV-B",
+          "type": "D"
+        },
+        {
+          "A": "PNL-ESFAS-B",
+          "B": "TB-LV-B",
+          "type": "D"
+        },
+        {
+          "A": "FUSE-B02",
+          "B": "DS-B01",
+          "type": "S"
+        },
+        {
+          "A": "FUSE-B02",
+          "B": "DS-B02",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-B",
+          "B": "DS-B01",
+          "type": "S"
+        },
+        {
+          "A": "LC-101B",
+          "B": "DS-B01",
+          "type": "S"
+        },
+        {
+          "A": "DS-B01",
+          "B": "MCC-101B",
+          "type": "S"
+        },
+        {
+          "A": "LC-102B",
+          "B": "DS-B02",
+          "type": "S"
+        },
+        {
+          "A": "DS-B02",
+          "B": "MCC-102B",
+          "type": "S"
+        },
+        {
+          "A": "LC-102B",
+          "B": "MCC-103B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101B",
+          "B": "MOV-101B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101B",
+          "B": "MOV-102B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101B",
+          "B": "JB-101B",
+          "type": "D"
+        },
+        {
+          "A": "JB-101B",
+          "B": "AOV-101B",
+          "type": "D"
+        },
+        {
+          "A": "MCC-102B",
+          "B": "AOV-101B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-102B",
+          "B": "PUMP-CCW-B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-103B",
+          "B": "FAN-AB-B",
+          "type": "S"
+        },
+        {
+          "A": "FAN-AB-B",
+          "B": "HTR-TRACE-B",
+          "type": "S"
+        },
+        {
+          "A": "RECT-1B",
+          "B": "BCHG-1B",
+          "type": "S"
+        },
+        {
+          "A": "BCHG-1B",
+          "B": "BAT-1B",
+          "type": "S"
+        },
+        {
+          "A": "BAT-1B",
+          "B": "BUS-DC-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-DC-B",
+          "B": "INV-1B",
+          "type": "S"
+        },
+        {
+          "A": "INV-1B",
+          "B": "BUS-UPS-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-UPS-B",
+          "B": "PNL-UPS-B",
+          "type": "S"
+        },
+        {
+          "A": "GND-B",
+          "B": "BUS-DC-B",
+          "type": "G"
+        },
+        {
+          "A": "PNL-MCR-01",
+          "B": "JB-CONTROL",
+          "type": "D"
+        },
+        {
+          "A": "PNL-ANN-01",
+          "B": "JB-CONTROL",
+          "type": "SIG"
+        },
+        {
+          "A": "SER-01",
+          "B": "JB-CONTROL",
+          "type": "SIG"
+        }
+      ],
+      "notes": [
+        "Initial high-recall proposal with separate uncertain candidate list.",
+        "Jennifer later removed six overconnected accepted edges."
+      ]
+    },
+    {
+      "round": 2,
+      "agent": "Jennifer",
+      "role": "precision reviewer/refiner",
+      "status": "refined",
+      "nodes": [
+        "SRC-345KV",
+        "BUS-SWY-345KV",
+        "GEN-01",
+        "UAT-1",
+        "CB-UAT",
+        "DG-1A",
+        "CB-DGA",
+        "BUS-4160-A",
+        "CB-TIE-AB",
+        "SAT-1",
+        "CB-SAT",
+        "DG-1B",
+        "CB-DGB",
+        "BUS-4160-B",
+        "CB-A01",
+        "TR-480-A1",
+        "CB-A02",
+        "TR-480-A2",
+        "CB-A03",
+        "PUMP-RHR-A",
+        "CB-A04",
+        "PUMP-CS-A",
+        "CB-A05",
+        "PUMP-AFW-A",
+        "CB-A06",
+        "TR-UPS-A",
+        "CB-A07",
+        "CHLR-A",
+        "CB-A08",
+        "480V-LC-FEEDERS-A",
+        "FAN-CR-A",
+        "CB-A09",
+        "TB-SWGR-A",
+        "RLY-27A",
+        "RLY-50A",
+        "RLY-86A",
+        "PT-4160-A",
+        "CT-4160-A",
+        "PNL-RPS-A",
+        "PNL-ESFAS-A",
+        "TB-LV-A",
+        "FUSE-A01",
+        "FUSE-A02",
+        "LC-101A",
+        "DS-A01",
+        "MCC-101A",
+        "MOV-101A",
+        "MOV-102A",
+        "JB-101A",
+        "LC-102A",
+        "DS-A02",
+        "MCC-102A",
+        "AOV-101A",
+        "PUMP-CCW-A",
+        "FAN-AB-A",
+        "HTR-TRACE-A",
+        "MCC-103A",
+        "RECT-1A",
+        "BCHG-1A",
+        "BAT-1A",
+        "BUS-DC-A",
+        "INV-1A",
+        "BUS-UPS-A",
+        "PNL-UPS-A",
+        "GND-A",
+        "CB-B01",
+        "TR-480-B1",
+        "CB-B02",
+        "TR-480-B2",
+        "CB-B03",
+        "PUMP-RHR-B",
+        "CB-B04",
+        "PUMP-CS-B",
+        "CB-B05",
+        "PUMP-AFW-B",
+        "CB-B06",
+        "TR-UPS-B",
+        "CB-B07",
+        "CHLR-B",
+        "CB-B08",
+        "480V-LC-FEEDERS-B",
+        "FAN-CR-B",
+        "CB-B09",
+        "TB-SWGR-B",
+        "RLY-27B",
+        "RLY-50B",
+        "RLY-86B",
+        "PT-4160-B",
+        "CT-4160-B",
+        "PNL-RPS-B",
+        "PNL-ESFAS-B",
+        "TB-LV-B",
+        "FUSE-B01",
+        "FUSE-B02",
+        "LC-101B",
+        "DS-B01",
+        "MCC-101B",
+        "MOV-101B",
+        "MOV-102B",
+        "JB-101B",
+        "LC-102B",
+        "DS-B02",
+        "MCC-102B",
+        "AOV-101B",
+        "PUMP-CCW-B",
+        "FAN-AB-B",
+        "HTR-TRACE-B",
+        "MCC-103B",
+        "RECT-1B",
+        "BCHG-1B",
+        "BAT-1B",
+        "BUS-DC-B",
+        "INV-1B",
+        "BUS-UPS-B",
+        "PNL-UPS-B",
+        "GND-B",
+        "PNL-MCR-01",
+        "PNL-ANN-01",
+        "SER-01",
+        "JB-CONTROL"
+      ],
+      "edges": [
+        {
+          "A": "SRC-345KV",
+          "B": "BUS-SWY-345KV",
+          "type": "S"
+        },
+        {
+          "A": "BUS-SWY-345KV",
+          "B": "SAT-1",
+          "type": "S"
+        },
+        {
+          "A": "GEN-01",
+          "B": "UAT-1",
+          "type": "S"
+        },
+        {
+          "A": "UAT-1",
+          "B": "CB-UAT",
+          "type": "S"
+        },
+        {
+          "A": "CB-UAT",
+          "B": "BUS-4160-A",
+          "type": "S"
+        },
+        {
+          "A": "DG-1A",
+          "B": "CB-DGA",
+          "type": "S"
+        },
+        {
+          "A": "CB-DGA",
+          "B": "BUS-4160-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-TIE-AB",
+          "type": "S"
+        },
+        {
+          "A": "CB-TIE-AB",
+          "B": "BUS-4160-B",
+          "type": "S"
+        },
+        {
+          "A": "SAT-1",
+          "B": "CB-SAT",
+          "type": "S"
+        },
+        {
+          "A": "CB-SAT",
+          "B": "BUS-4160-B",
+          "type": "S"
+        },
+        {
+          "A": "DG-1B",
+          "B": "CB-DGB",
+          "type": "S"
+        },
+        {
+          "A": "CB-DGB",
+          "B": "BUS-4160-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A01",
+          "type": "S"
+        },
+        {
+          "A": "CB-A01",
+          "B": "TR-480-A1",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A02",
+          "type": "S"
+        },
+        {
+          "A": "CB-A02",
+          "B": "TR-480-A2",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A03",
+          "type": "S"
+        },
+        {
+          "A": "CB-A03",
+          "B": "PUMP-RHR-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A04",
+          "type": "S"
+        },
+        {
+          "A": "CB-A04",
+          "B": "PUMP-CS-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A05",
+          "type": "S"
+        },
+        {
+          "A": "CB-A05",
+          "B": "PUMP-AFW-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A06",
+          "type": "S"
+        },
+        {
+          "A": "CB-A06",
+          "B": "TR-UPS-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A07",
+          "type": "S"
+        },
+        {
+          "A": "CB-A07",
+          "B": "CHLR-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A08",
+          "type": "S"
+        },
+        {
+          "A": "CB-A08",
+          "B": "480V-LC-FEEDERS-A",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-A",
+          "B": "FAN-CR-A",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-A",
+          "B": "LC-101A",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-A",
+          "B": "LC-102A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A09",
+          "type": "S"
+        },
+        {
+          "A": "TB-SWGR-A",
+          "B": "RLY-27A",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-A",
+          "B": "RLY-50A",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-A",
+          "B": "RLY-86A",
+          "type": "D"
+        },
+        {
+          "A": "RLY-27A",
+          "B": "PT-4160-A",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-50A",
+          "B": "CT-4160-A",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-86A",
+          "B": "CT-4160-A",
+          "type": "SIG"
+        },
+        {
+          "A": "PNL-RPS-A",
+          "B": "FUSE-A01",
+          "type": "S"
+        },
+        {
+          "A": "PNL-ESFAS-A",
+          "B": "FUSE-A02",
+          "type": "S"
+        },
+        {
+          "A": "PNL-RPS-A",
+          "B": "TB-LV-A",
+          "type": "D"
+        },
+        {
+          "A": "PNL-ESFAS-A",
+          "B": "TB-LV-A",
+          "type": "D"
+        },
+        {
+          "A": "FUSE-A02",
+          "B": "DS-A01",
+          "type": "S"
+        },
+        {
+          "A": "FUSE-A02",
+          "B": "DS-A02",
+          "type": "S"
+        },
+        {
+          "A": "LC-101A",
+          "B": "DS-A01",
+          "type": "S"
+        },
+        {
+          "A": "DS-A01",
+          "B": "MCC-101A",
+          "type": "S"
+        },
+        {
+          "A": "LC-102A",
+          "B": "DS-A02",
+          "type": "S"
+        },
+        {
+          "A": "DS-A02",
+          "B": "MCC-102A",
+          "type": "S"
+        },
+        {
+          "A": "LC-102A",
+          "B": "MCC-103A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101A",
+          "B": "MOV-101A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101A",
+          "B": "MOV-102A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101A",
+          "B": "JB-101A",
+          "type": "D"
+        },
+        {
+          "A": "JB-101A",
+          "B": "AOV-101A",
+          "type": "D"
+        },
+        {
+          "A": "MCC-102A",
+          "B": "AOV-101A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-102A",
+          "B": "PUMP-CCW-A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-103A",
+          "B": "FAN-AB-A",
+          "type": "S"
+        },
+        {
+          "A": "FAN-AB-A",
+          "B": "HTR-TRACE-A",
+          "type": "S"
+        },
+        {
+          "A": "RECT-1A",
+          "B": "BCHG-1A",
+          "type": "S"
+        },
+        {
+          "A": "BCHG-1A",
+          "B": "BAT-1A",
+          "type": "S"
+        },
+        {
+          "A": "BAT-1A",
+          "B": "BUS-DC-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-DC-A",
+          "B": "INV-1A",
+          "type": "S"
+        },
+        {
+          "A": "INV-1A",
+          "B": "BUS-UPS-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-UPS-A",
+          "B": "PNL-UPS-A",
+          "type": "S"
+        },
+        {
+          "A": "GND-A",
+          "B": "BUS-DC-A",
+          "type": "G"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B01",
+          "type": "S"
+        },
+        {
+          "A": "CB-B01",
+          "B": "TR-480-B1",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B02",
+          "type": "S"
+        },
+        {
+          "A": "CB-B02",
+          "B": "TR-480-B2",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B03",
+          "type": "S"
+        },
+        {
+          "A": "CB-B03",
+          "B": "PUMP-RHR-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B04",
+          "type": "S"
+        },
+        {
+          "A": "CB-B04",
+          "B": "PUMP-CS-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B05",
+          "type": "S"
+        },
+        {
+          "A": "CB-B05",
+          "B": "PUMP-AFW-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B06",
+          "type": "S"
+        },
+        {
+          "A": "CB-B06",
+          "B": "TR-UPS-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B07",
+          "type": "S"
+        },
+        {
+          "A": "CB-B07",
+          "B": "CHLR-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B08",
+          "type": "S"
+        },
+        {
+          "A": "CB-B08",
+          "B": "480V-LC-FEEDERS-B",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-B",
+          "B": "FAN-CR-B",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-B",
+          "B": "LC-101B",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-B",
+          "B": "LC-102B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B09",
+          "type": "S"
+        },
+        {
+          "A": "TB-SWGR-B",
+          "B": "RLY-27B",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-B",
+          "B": "RLY-50B",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-B",
+          "B": "RLY-86B",
+          "type": "D"
+        },
+        {
+          "A": "RLY-27B",
+          "B": "PT-4160-B",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-50B",
+          "B": "CT-4160-B",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-86B",
+          "B": "CT-4160-B",
+          "type": "SIG"
+        },
+        {
+          "A": "PNL-RPS-B",
+          "B": "FUSE-B01",
+          "type": "S"
+        },
+        {
+          "A": "PNL-ESFAS-B",
+          "B": "FUSE-B02",
+          "type": "S"
+        },
+        {
+          "A": "PNL-RPS-B",
+          "B": "TB-LV-B",
+          "type": "D"
+        },
+        {
+          "A": "PNL-ESFAS-B",
+          "B": "TB-LV-B",
+          "type": "D"
+        },
+        {
+          "A": "FUSE-B02",
+          "B": "DS-B01",
+          "type": "S"
+        },
+        {
+          "A": "FUSE-B02",
+          "B": "DS-B02",
+          "type": "S"
+        },
+        {
+          "A": "LC-101B",
+          "B": "DS-B01",
+          "type": "S"
+        },
+        {
+          "A": "DS-B01",
+          "B": "MCC-101B",
+          "type": "S"
+        },
+        {
+          "A": "LC-102B",
+          "B": "DS-B02",
+          "type": "S"
+        },
+        {
+          "A": "DS-B02",
+          "B": "MCC-102B",
+          "type": "S"
+        },
+        {
+          "A": "LC-102B",
+          "B": "MCC-103B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101B",
+          "B": "MOV-101B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101B",
+          "B": "MOV-102B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101B",
+          "B": "JB-101B",
+          "type": "D"
+        },
+        {
+          "A": "JB-101B",
+          "B": "AOV-101B",
+          "type": "D"
+        },
+        {
+          "A": "MCC-102B",
+          "B": "AOV-101B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-102B",
+          "B": "PUMP-CCW-B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-103B",
+          "B": "FAN-AB-B",
+          "type": "S"
+        },
+        {
+          "A": "FAN-AB-B",
+          "B": "HTR-TRACE-B",
+          "type": "S"
+        },
+        {
+          "A": "RECT-1B",
+          "B": "BCHG-1B",
+          "type": "S"
+        },
+        {
+          "A": "BCHG-1B",
+          "B": "BAT-1B",
+          "type": "S"
+        },
+        {
+          "A": "BAT-1B",
+          "B": "BUS-DC-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-DC-B",
+          "B": "INV-1B",
+          "type": "S"
+        },
+        {
+          "A": "INV-1B",
+          "B": "BUS-UPS-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-UPS-B",
+          "B": "PNL-UPS-B",
+          "type": "S"
+        },
+        {
+          "A": "GND-B",
+          "B": "BUS-DC-B",
+          "type": "G"
+        },
+        {
+          "A": "PNL-MCR-01",
+          "B": "JB-CONTROL",
+          "type": "D"
+        },
+        {
+          "A": "PNL-ANN-01",
+          "B": "JB-CONTROL",
+          "type": "SIG"
+        },
+        {
+          "A": "SER-01",
+          "B": "JB-CONTROL",
+          "type": "SIG"
+        }
+      ],
+      "notes": [
+        "Removed solid bus-to-PT/CT edges because PT/CT devices are visually tied by dotted signal routing, not clean solid bus landings.",
+        "Removed direct 480V-LC-FEEDERS-A/B to DS-A01/B01 edges as overconnected.",
+        "No added edges; uncertain cable-tray, signal, transformer-secondary, and ground candidates remain out."
+      ]
+    },
+    {
+      "round": 3,
+      "agent": "Diego",
+      "role": "saturation extractor",
+      "status": "saturated_agreed",
+      "nodes": [
+        "SRC-345KV",
+        "BUS-SWY-345KV",
+        "GEN-01",
+        "UAT-1",
+        "CB-UAT",
+        "DG-1A",
+        "CB-DGA",
+        "BUS-4160-A",
+        "CB-TIE-AB",
+        "SAT-1",
+        "CB-SAT",
+        "DG-1B",
+        "CB-DGB",
+        "BUS-4160-B",
+        "CB-A01",
+        "TR-480-A1",
+        "CB-A02",
+        "TR-480-A2",
+        "CB-A03",
+        "PUMP-RHR-A",
+        "CB-A04",
+        "PUMP-CS-A",
+        "CB-A05",
+        "PUMP-AFW-A",
+        "CB-A06",
+        "TR-UPS-A",
+        "CB-A07",
+        "CHLR-A",
+        "CB-A08",
+        "480V-LC-FEEDERS-A",
+        "FAN-CR-A",
+        "CB-A09",
+        "TB-SWGR-A",
+        "RLY-27A",
+        "RLY-50A",
+        "RLY-86A",
+        "PT-4160-A",
+        "CT-4160-A",
+        "PNL-RPS-A",
+        "PNL-ESFAS-A",
+        "TB-LV-A",
+        "FUSE-A01",
+        "FUSE-A02",
+        "LC-101A",
+        "DS-A01",
+        "MCC-101A",
+        "MOV-101A",
+        "MOV-102A",
+        "JB-101A",
+        "LC-102A",
+        "DS-A02",
+        "MCC-102A",
+        "AOV-101A",
+        "PUMP-CCW-A",
+        "FAN-AB-A",
+        "HTR-TRACE-A",
+        "MCC-103A",
+        "RECT-1A",
+        "BCHG-1A",
+        "BAT-1A",
+        "BUS-DC-A",
+        "INV-1A",
+        "BUS-UPS-A",
+        "PNL-UPS-A",
+        "GND-A",
+        "CB-B01",
+        "TR-480-B1",
+        "CB-B02",
+        "TR-480-B2",
+        "CB-B03",
+        "PUMP-RHR-B",
+        "CB-B04",
+        "PUMP-CS-B",
+        "CB-B05",
+        "PUMP-AFW-B",
+        "CB-B06",
+        "TR-UPS-B",
+        "CB-B07",
+        "CHLR-B",
+        "CB-B08",
+        "480V-LC-FEEDERS-B",
+        "FAN-CR-B",
+        "CB-B09",
+        "TB-SWGR-B",
+        "RLY-27B",
+        "RLY-50B",
+        "RLY-86B",
+        "PT-4160-B",
+        "CT-4160-B",
+        "PNL-RPS-B",
+        "PNL-ESFAS-B",
+        "TB-LV-B",
+        "FUSE-B01",
+        "FUSE-B02",
+        "LC-101B",
+        "DS-B01",
+        "MCC-101B",
+        "MOV-101B",
+        "MOV-102B",
+        "JB-101B",
+        "LC-102B",
+        "DS-B02",
+        "MCC-102B",
+        "AOV-101B",
+        "PUMP-CCW-B",
+        "FAN-AB-B",
+        "HTR-TRACE-B",
+        "MCC-103B",
+        "RECT-1B",
+        "BCHG-1B",
+        "BAT-1B",
+        "BUS-DC-B",
+        "INV-1B",
+        "BUS-UPS-B",
+        "PNL-UPS-B",
+        "GND-B",
+        "PNL-MCR-01",
+        "PNL-ANN-01",
+        "SER-01",
+        "JB-CONTROL"
+      ],
+      "edges": [
+        {
+          "A": "SRC-345KV",
+          "B": "BUS-SWY-345KV",
+          "type": "S"
+        },
+        {
+          "A": "BUS-SWY-345KV",
+          "B": "SAT-1",
+          "type": "S"
+        },
+        {
+          "A": "GEN-01",
+          "B": "UAT-1",
+          "type": "S"
+        },
+        {
+          "A": "UAT-1",
+          "B": "CB-UAT",
+          "type": "S"
+        },
+        {
+          "A": "CB-UAT",
+          "B": "BUS-4160-A",
+          "type": "S"
+        },
+        {
+          "A": "DG-1A",
+          "B": "CB-DGA",
+          "type": "S"
+        },
+        {
+          "A": "CB-DGA",
+          "B": "BUS-4160-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-TIE-AB",
+          "type": "S"
+        },
+        {
+          "A": "CB-TIE-AB",
+          "B": "BUS-4160-B",
+          "type": "S"
+        },
+        {
+          "A": "SAT-1",
+          "B": "CB-SAT",
+          "type": "S"
+        },
+        {
+          "A": "CB-SAT",
+          "B": "BUS-4160-B",
+          "type": "S"
+        },
+        {
+          "A": "DG-1B",
+          "B": "CB-DGB",
+          "type": "S"
+        },
+        {
+          "A": "CB-DGB",
+          "B": "BUS-4160-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A01",
+          "type": "S"
+        },
+        {
+          "A": "CB-A01",
+          "B": "TR-480-A1",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A02",
+          "type": "S"
+        },
+        {
+          "A": "CB-A02",
+          "B": "TR-480-A2",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A03",
+          "type": "S"
+        },
+        {
+          "A": "CB-A03",
+          "B": "PUMP-RHR-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A04",
+          "type": "S"
+        },
+        {
+          "A": "CB-A04",
+          "B": "PUMP-CS-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A05",
+          "type": "S"
+        },
+        {
+          "A": "CB-A05",
+          "B": "PUMP-AFW-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A06",
+          "type": "S"
+        },
+        {
+          "A": "CB-A06",
+          "B": "TR-UPS-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A07",
+          "type": "S"
+        },
+        {
+          "A": "CB-A07",
+          "B": "CHLR-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A08",
+          "type": "S"
+        },
+        {
+          "A": "CB-A08",
+          "B": "480V-LC-FEEDERS-A",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-A",
+          "B": "FAN-CR-A",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-A",
+          "B": "LC-101A",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-A",
+          "B": "LC-102A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A09",
+          "type": "S"
+        },
+        {
+          "A": "TB-SWGR-A",
+          "B": "RLY-27A",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-A",
+          "B": "RLY-50A",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-A",
+          "B": "RLY-86A",
+          "type": "D"
+        },
+        {
+          "A": "RLY-27A",
+          "B": "PT-4160-A",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-50A",
+          "B": "CT-4160-A",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-86A",
+          "B": "CT-4160-A",
+          "type": "SIG"
+        },
+        {
+          "A": "PNL-RPS-A",
+          "B": "FUSE-A01",
+          "type": "S"
+        },
+        {
+          "A": "PNL-ESFAS-A",
+          "B": "FUSE-A02",
+          "type": "S"
+        },
+        {
+          "A": "PNL-RPS-A",
+          "B": "TB-LV-A",
+          "type": "D"
+        },
+        {
+          "A": "PNL-ESFAS-A",
+          "B": "TB-LV-A",
+          "type": "D"
+        },
+        {
+          "A": "FUSE-A02",
+          "B": "DS-A01",
+          "type": "S"
+        },
+        {
+          "A": "FUSE-A02",
+          "B": "DS-A02",
+          "type": "S"
+        },
+        {
+          "A": "LC-101A",
+          "B": "DS-A01",
+          "type": "S"
+        },
+        {
+          "A": "DS-A01",
+          "B": "MCC-101A",
+          "type": "S"
+        },
+        {
+          "A": "LC-102A",
+          "B": "DS-A02",
+          "type": "S"
+        },
+        {
+          "A": "DS-A02",
+          "B": "MCC-102A",
+          "type": "S"
+        },
+        {
+          "A": "LC-102A",
+          "B": "MCC-103A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101A",
+          "B": "MOV-101A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101A",
+          "B": "MOV-102A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101A",
+          "B": "JB-101A",
+          "type": "D"
+        },
+        {
+          "A": "JB-101A",
+          "B": "AOV-101A",
+          "type": "D"
+        },
+        {
+          "A": "MCC-102A",
+          "B": "AOV-101A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-102A",
+          "B": "PUMP-CCW-A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-103A",
+          "B": "FAN-AB-A",
+          "type": "S"
+        },
+        {
+          "A": "FAN-AB-A",
+          "B": "HTR-TRACE-A",
+          "type": "S"
+        },
+        {
+          "A": "RECT-1A",
+          "B": "BCHG-1A",
+          "type": "S"
+        },
+        {
+          "A": "BCHG-1A",
+          "B": "BAT-1A",
+          "type": "S"
+        },
+        {
+          "A": "BAT-1A",
+          "B": "BUS-DC-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-DC-A",
+          "B": "INV-1A",
+          "type": "S"
+        },
+        {
+          "A": "INV-1A",
+          "B": "BUS-UPS-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-UPS-A",
+          "B": "PNL-UPS-A",
+          "type": "S"
+        },
+        {
+          "A": "GND-A",
+          "B": "BUS-DC-A",
+          "type": "G"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B01",
+          "type": "S"
+        },
+        {
+          "A": "CB-B01",
+          "B": "TR-480-B1",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B02",
+          "type": "S"
+        },
+        {
+          "A": "CB-B02",
+          "B": "TR-480-B2",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B03",
+          "type": "S"
+        },
+        {
+          "A": "CB-B03",
+          "B": "PUMP-RHR-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B04",
+          "type": "S"
+        },
+        {
+          "A": "CB-B04",
+          "B": "PUMP-CS-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B05",
+          "type": "S"
+        },
+        {
+          "A": "CB-B05",
+          "B": "PUMP-AFW-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B06",
+          "type": "S"
+        },
+        {
+          "A": "CB-B06",
+          "B": "TR-UPS-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B07",
+          "type": "S"
+        },
+        {
+          "A": "CB-B07",
+          "B": "CHLR-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B08",
+          "type": "S"
+        },
+        {
+          "A": "CB-B08",
+          "B": "480V-LC-FEEDERS-B",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-B",
+          "B": "FAN-CR-B",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-B",
+          "B": "LC-101B",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-B",
+          "B": "LC-102B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B09",
+          "type": "S"
+        },
+        {
+          "A": "TB-SWGR-B",
+          "B": "RLY-27B",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-B",
+          "B": "RLY-50B",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-B",
+          "B": "RLY-86B",
+          "type": "D"
+        },
+        {
+          "A": "RLY-27B",
+          "B": "PT-4160-B",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-50B",
+          "B": "CT-4160-B",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-86B",
+          "B": "CT-4160-B",
+          "type": "SIG"
+        },
+        {
+          "A": "PNL-RPS-B",
+          "B": "FUSE-B01",
+          "type": "S"
+        },
+        {
+          "A": "PNL-ESFAS-B",
+          "B": "FUSE-B02",
+          "type": "S"
+        },
+        {
+          "A": "PNL-RPS-B",
+          "B": "TB-LV-B",
+          "type": "D"
+        },
+        {
+          "A": "PNL-ESFAS-B",
+          "B": "TB-LV-B",
+          "type": "D"
+        },
+        {
+          "A": "FUSE-B02",
+          "B": "DS-B01",
+          "type": "S"
+        },
+        {
+          "A": "FUSE-B02",
+          "B": "DS-B02",
+          "type": "S"
+        },
+        {
+          "A": "LC-101B",
+          "B": "DS-B01",
+          "type": "S"
+        },
+        {
+          "A": "DS-B01",
+          "B": "MCC-101B",
+          "type": "S"
+        },
+        {
+          "A": "LC-102B",
+          "B": "DS-B02",
+          "type": "S"
+        },
+        {
+          "A": "DS-B02",
+          "B": "MCC-102B",
+          "type": "S"
+        },
+        {
+          "A": "LC-102B",
+          "B": "MCC-103B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101B",
+          "B": "MOV-101B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101B",
+          "B": "MOV-102B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101B",
+          "B": "JB-101B",
+          "type": "D"
+        },
+        {
+          "A": "JB-101B",
+          "B": "AOV-101B",
+          "type": "D"
+        },
+        {
+          "A": "MCC-102B",
+          "B": "AOV-101B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-102B",
+          "B": "PUMP-CCW-B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-103B",
+          "B": "FAN-AB-B",
+          "type": "S"
+        },
+        {
+          "A": "FAN-AB-B",
+          "B": "HTR-TRACE-B",
+          "type": "S"
+        },
+        {
+          "A": "RECT-1B",
+          "B": "BCHG-1B",
+          "type": "S"
+        },
+        {
+          "A": "BCHG-1B",
+          "B": "BAT-1B",
+          "type": "S"
+        },
+        {
+          "A": "BAT-1B",
+          "B": "BUS-DC-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-DC-B",
+          "B": "INV-1B",
+          "type": "S"
+        },
+        {
+          "A": "INV-1B",
+          "B": "BUS-UPS-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-UPS-B",
+          "B": "PNL-UPS-B",
+          "type": "S"
+        },
+        {
+          "A": "GND-B",
+          "B": "BUS-DC-B",
+          "type": "G"
+        },
+        {
+          "A": "PNL-MCR-01",
+          "B": "JB-CONTROL",
+          "type": "D"
+        },
+        {
+          "A": "PNL-ANN-01",
+          "B": "JB-CONTROL",
+          "type": "SIG"
+        },
+        {
+          "A": "SER-01",
+          "B": "JB-CONTROL",
+          "type": "SIG"
+        }
+      ],
+      "notes": [
+        "AGREED with Jennifer refined matrix.",
+        "Confirmed the six removed edges should stay out.",
+        "Confirmed no uncertain candidates should be promoted."
+      ]
+    },
+    {
+      "round": 4,
+      "agent": "Jennifer",
+      "role": "final precision sign-off",
+      "status": "saturated_agreed",
+      "nodes": [
+        "SRC-345KV",
+        "BUS-SWY-345KV",
+        "GEN-01",
+        "UAT-1",
+        "CB-UAT",
+        "DG-1A",
+        "CB-DGA",
+        "BUS-4160-A",
+        "CB-TIE-AB",
+        "SAT-1",
+        "CB-SAT",
+        "DG-1B",
+        "CB-DGB",
+        "BUS-4160-B",
+        "CB-A01",
+        "TR-480-A1",
+        "CB-A02",
+        "TR-480-A2",
+        "CB-A03",
+        "PUMP-RHR-A",
+        "CB-A04",
+        "PUMP-CS-A",
+        "CB-A05",
+        "PUMP-AFW-A",
+        "CB-A06",
+        "TR-UPS-A",
+        "CB-A07",
+        "CHLR-A",
+        "CB-A08",
+        "480V-LC-FEEDERS-A",
+        "FAN-CR-A",
+        "CB-A09",
+        "TB-SWGR-A",
+        "RLY-27A",
+        "RLY-50A",
+        "RLY-86A",
+        "PT-4160-A",
+        "CT-4160-A",
+        "PNL-RPS-A",
+        "PNL-ESFAS-A",
+        "TB-LV-A",
+        "FUSE-A01",
+        "FUSE-A02",
+        "LC-101A",
+        "DS-A01",
+        "MCC-101A",
+        "MOV-101A",
+        "MOV-102A",
+        "JB-101A",
+        "LC-102A",
+        "DS-A02",
+        "MCC-102A",
+        "AOV-101A",
+        "PUMP-CCW-A",
+        "FAN-AB-A",
+        "HTR-TRACE-A",
+        "MCC-103A",
+        "RECT-1A",
+        "BCHG-1A",
+        "BAT-1A",
+        "BUS-DC-A",
+        "INV-1A",
+        "BUS-UPS-A",
+        "PNL-UPS-A",
+        "GND-A",
+        "CB-B01",
+        "TR-480-B1",
+        "CB-B02",
+        "TR-480-B2",
+        "CB-B03",
+        "PUMP-RHR-B",
+        "CB-B04",
+        "PUMP-CS-B",
+        "CB-B05",
+        "PUMP-AFW-B",
+        "CB-B06",
+        "TR-UPS-B",
+        "CB-B07",
+        "CHLR-B",
+        "CB-B08",
+        "480V-LC-FEEDERS-B",
+        "FAN-CR-B",
+        "CB-B09",
+        "TB-SWGR-B",
+        "RLY-27B",
+        "RLY-50B",
+        "RLY-86B",
+        "PT-4160-B",
+        "CT-4160-B",
+        "PNL-RPS-B",
+        "PNL-ESFAS-B",
+        "TB-LV-B",
+        "FUSE-B01",
+        "FUSE-B02",
+        "LC-101B",
+        "DS-B01",
+        "MCC-101B",
+        "MOV-101B",
+        "MOV-102B",
+        "JB-101B",
+        "LC-102B",
+        "DS-B02",
+        "MCC-102B",
+        "AOV-101B",
+        "PUMP-CCW-B",
+        "FAN-AB-B",
+        "HTR-TRACE-B",
+        "MCC-103B",
+        "RECT-1B",
+        "BCHG-1B",
+        "BAT-1B",
+        "BUS-DC-B",
+        "INV-1B",
+        "BUS-UPS-B",
+        "PNL-UPS-B",
+        "GND-B",
+        "PNL-MCR-01",
+        "PNL-ANN-01",
+        "SER-01",
+        "JB-CONTROL"
+      ],
+      "edges": [
+        {
+          "A": "SRC-345KV",
+          "B": "BUS-SWY-345KV",
+          "type": "S"
+        },
+        {
+          "A": "BUS-SWY-345KV",
+          "B": "SAT-1",
+          "type": "S"
+        },
+        {
+          "A": "GEN-01",
+          "B": "UAT-1",
+          "type": "S"
+        },
+        {
+          "A": "UAT-1",
+          "B": "CB-UAT",
+          "type": "S"
+        },
+        {
+          "A": "CB-UAT",
+          "B": "BUS-4160-A",
+          "type": "S"
+        },
+        {
+          "A": "DG-1A",
+          "B": "CB-DGA",
+          "type": "S"
+        },
+        {
+          "A": "CB-DGA",
+          "B": "BUS-4160-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-TIE-AB",
+          "type": "S"
+        },
+        {
+          "A": "CB-TIE-AB",
+          "B": "BUS-4160-B",
+          "type": "S"
+        },
+        {
+          "A": "SAT-1",
+          "B": "CB-SAT",
+          "type": "S"
+        },
+        {
+          "A": "CB-SAT",
+          "B": "BUS-4160-B",
+          "type": "S"
+        },
+        {
+          "A": "DG-1B",
+          "B": "CB-DGB",
+          "type": "S"
+        },
+        {
+          "A": "CB-DGB",
+          "B": "BUS-4160-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A01",
+          "type": "S"
+        },
+        {
+          "A": "CB-A01",
+          "B": "TR-480-A1",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A02",
+          "type": "S"
+        },
+        {
+          "A": "CB-A02",
+          "B": "TR-480-A2",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A03",
+          "type": "S"
+        },
+        {
+          "A": "CB-A03",
+          "B": "PUMP-RHR-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A04",
+          "type": "S"
+        },
+        {
+          "A": "CB-A04",
+          "B": "PUMP-CS-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A05",
+          "type": "S"
+        },
+        {
+          "A": "CB-A05",
+          "B": "PUMP-AFW-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A06",
+          "type": "S"
+        },
+        {
+          "A": "CB-A06",
+          "B": "TR-UPS-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A07",
+          "type": "S"
+        },
+        {
+          "A": "CB-A07",
+          "B": "CHLR-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A08",
+          "type": "S"
+        },
+        {
+          "A": "CB-A08",
+          "B": "480V-LC-FEEDERS-A",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-A",
+          "B": "FAN-CR-A",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-A",
+          "B": "LC-101A",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-A",
+          "B": "LC-102A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-A",
+          "B": "CB-A09",
+          "type": "S"
+        },
+        {
+          "A": "TB-SWGR-A",
+          "B": "RLY-27A",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-A",
+          "B": "RLY-50A",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-A",
+          "B": "RLY-86A",
+          "type": "D"
+        },
+        {
+          "A": "RLY-27A",
+          "B": "PT-4160-A",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-50A",
+          "B": "CT-4160-A",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-86A",
+          "B": "CT-4160-A",
+          "type": "SIG"
+        },
+        {
+          "A": "PNL-RPS-A",
+          "B": "FUSE-A01",
+          "type": "S"
+        },
+        {
+          "A": "PNL-ESFAS-A",
+          "B": "FUSE-A02",
+          "type": "S"
+        },
+        {
+          "A": "PNL-RPS-A",
+          "B": "TB-LV-A",
+          "type": "D"
+        },
+        {
+          "A": "PNL-ESFAS-A",
+          "B": "TB-LV-A",
+          "type": "D"
+        },
+        {
+          "A": "FUSE-A02",
+          "B": "DS-A01",
+          "type": "S"
+        },
+        {
+          "A": "FUSE-A02",
+          "B": "DS-A02",
+          "type": "S"
+        },
+        {
+          "A": "LC-101A",
+          "B": "DS-A01",
+          "type": "S"
+        },
+        {
+          "A": "DS-A01",
+          "B": "MCC-101A",
+          "type": "S"
+        },
+        {
+          "A": "LC-102A",
+          "B": "DS-A02",
+          "type": "S"
+        },
+        {
+          "A": "DS-A02",
+          "B": "MCC-102A",
+          "type": "S"
+        },
+        {
+          "A": "LC-102A",
+          "B": "MCC-103A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101A",
+          "B": "MOV-101A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101A",
+          "B": "MOV-102A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101A",
+          "B": "JB-101A",
+          "type": "D"
+        },
+        {
+          "A": "JB-101A",
+          "B": "AOV-101A",
+          "type": "D"
+        },
+        {
+          "A": "MCC-102A",
+          "B": "AOV-101A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-102A",
+          "B": "PUMP-CCW-A",
+          "type": "S"
+        },
+        {
+          "A": "MCC-103A",
+          "B": "FAN-AB-A",
+          "type": "S"
+        },
+        {
+          "A": "FAN-AB-A",
+          "B": "HTR-TRACE-A",
+          "type": "S"
+        },
+        {
+          "A": "RECT-1A",
+          "B": "BCHG-1A",
+          "type": "S"
+        },
+        {
+          "A": "BCHG-1A",
+          "B": "BAT-1A",
+          "type": "S"
+        },
+        {
+          "A": "BAT-1A",
+          "B": "BUS-DC-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-DC-A",
+          "B": "INV-1A",
+          "type": "S"
+        },
+        {
+          "A": "INV-1A",
+          "B": "BUS-UPS-A",
+          "type": "S"
+        },
+        {
+          "A": "BUS-UPS-A",
+          "B": "PNL-UPS-A",
+          "type": "S"
+        },
+        {
+          "A": "GND-A",
+          "B": "BUS-DC-A",
+          "type": "G"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B01",
+          "type": "S"
+        },
+        {
+          "A": "CB-B01",
+          "B": "TR-480-B1",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B02",
+          "type": "S"
+        },
+        {
+          "A": "CB-B02",
+          "B": "TR-480-B2",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B03",
+          "type": "S"
+        },
+        {
+          "A": "CB-B03",
+          "B": "PUMP-RHR-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B04",
+          "type": "S"
+        },
+        {
+          "A": "CB-B04",
+          "B": "PUMP-CS-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B05",
+          "type": "S"
+        },
+        {
+          "A": "CB-B05",
+          "B": "PUMP-AFW-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B06",
+          "type": "S"
+        },
+        {
+          "A": "CB-B06",
+          "B": "TR-UPS-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B07",
+          "type": "S"
+        },
+        {
+          "A": "CB-B07",
+          "B": "CHLR-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B08",
+          "type": "S"
+        },
+        {
+          "A": "CB-B08",
+          "B": "480V-LC-FEEDERS-B",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-B",
+          "B": "FAN-CR-B",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-B",
+          "B": "LC-101B",
+          "type": "S"
+        },
+        {
+          "A": "480V-LC-FEEDERS-B",
+          "B": "LC-102B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-4160-B",
+          "B": "CB-B09",
+          "type": "S"
+        },
+        {
+          "A": "TB-SWGR-B",
+          "B": "RLY-27B",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-B",
+          "B": "RLY-50B",
+          "type": "D"
+        },
+        {
+          "A": "TB-SWGR-B",
+          "B": "RLY-86B",
+          "type": "D"
+        },
+        {
+          "A": "RLY-27B",
+          "B": "PT-4160-B",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-50B",
+          "B": "CT-4160-B",
+          "type": "SIG"
+        },
+        {
+          "A": "RLY-86B",
+          "B": "CT-4160-B",
+          "type": "SIG"
+        },
+        {
+          "A": "PNL-RPS-B",
+          "B": "FUSE-B01",
+          "type": "S"
+        },
+        {
+          "A": "PNL-ESFAS-B",
+          "B": "FUSE-B02",
+          "type": "S"
+        },
+        {
+          "A": "PNL-RPS-B",
+          "B": "TB-LV-B",
+          "type": "D"
+        },
+        {
+          "A": "PNL-ESFAS-B",
+          "B": "TB-LV-B",
+          "type": "D"
+        },
+        {
+          "A": "FUSE-B02",
+          "B": "DS-B01",
+          "type": "S"
+        },
+        {
+          "A": "FUSE-B02",
+          "B": "DS-B02",
+          "type": "S"
+        },
+        {
+          "A": "LC-101B",
+          "B": "DS-B01",
+          "type": "S"
+        },
+        {
+          "A": "DS-B01",
+          "B": "MCC-101B",
+          "type": "S"
+        },
+        {
+          "A": "LC-102B",
+          "B": "DS-B02",
+          "type": "S"
+        },
+        {
+          "A": "DS-B02",
+          "B": "MCC-102B",
+          "type": "S"
+        },
+        {
+          "A": "LC-102B",
+          "B": "MCC-103B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101B",
+          "B": "MOV-101B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101B",
+          "B": "MOV-102B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-101B",
+          "B": "JB-101B",
+          "type": "D"
+        },
+        {
+          "A": "JB-101B",
+          "B": "AOV-101B",
+          "type": "D"
+        },
+        {
+          "A": "MCC-102B",
+          "B": "AOV-101B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-102B",
+          "B": "PUMP-CCW-B",
+          "type": "S"
+        },
+        {
+          "A": "MCC-103B",
+          "B": "FAN-AB-B",
+          "type": "S"
+        },
+        {
+          "A": "FAN-AB-B",
+          "B": "HTR-TRACE-B",
+          "type": "S"
+        },
+        {
+          "A": "RECT-1B",
+          "B": "BCHG-1B",
+          "type": "S"
+        },
+        {
+          "A": "BCHG-1B",
+          "B": "BAT-1B",
+          "type": "S"
+        },
+        {
+          "A": "BAT-1B",
+          "B": "BUS-DC-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-DC-B",
+          "B": "INV-1B",
+          "type": "S"
+        },
+        {
+          "A": "INV-1B",
+          "B": "BUS-UPS-B",
+          "type": "S"
+        },
+        {
+          "A": "BUS-UPS-B",
+          "B": "PNL-UPS-B",
+          "type": "S"
+        },
+        {
+          "A": "GND-B",
+          "B": "BUS-DC-B",
+          "type": "G"
+        },
+        {
+          "A": "PNL-MCR-01",
+          "B": "JB-CONTROL",
+          "type": "D"
+        },
+        {
+          "A": "PNL-ANN-01",
+          "B": "JB-CONTROL",
+          "type": "SIG"
+        },
+        {
+          "A": "SER-01",
+          "B": "JB-CONTROL",
+          "type": "SIG"
+        }
+      ],
+      "notes": [
+        "SATURATED / AGREED.",
+        "Final graph is 120 nodes and 120 accepted undirected edges.",
+        "No final correction."
+      ]
+    }
+  ]
+}

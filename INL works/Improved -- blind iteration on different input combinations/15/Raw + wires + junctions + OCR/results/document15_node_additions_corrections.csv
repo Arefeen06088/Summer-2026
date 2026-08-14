@@ -1,0 +1,25 @@
+node_id,label,node_kind,role_or_type,action,related_existing_node,evidence,confidence
+ADD-BUS-SWY-1,BUS-SWY-1,logical_bus,345 kV switchyard bus A,add,,"Long upper solid busbar labeled 345 kV SWITCHYARD A / BUS-SWY-1; taps from TR-GSU-1, TR-UAT-1, TR-SAT-1 and CB-SWY-TIE in upper_offsite_sources_raw.png.",high
+ADD-BUS-SWY-2,BUS-SWY-2,logical_bus,345 kV switchyard bus B,add,,"Long upper solid busbar labeled 345 kV SWITCHYARD B / BUS-SWY-2; taps from TR-GSU-2, TR-UAT-2, TR-SAT-2 and CB-SWY-TIE in upper_offsite_sources_raw.png.",high
+ADD-BUS-NSS-1,BUS-NSS-1,logical_bus,normal station service bus 1,add,,Horizontal busbar labeled NORMAL STATION SERVICE BUS 1 / BUS-NSS-1 feeding divisions 1A/1B in upper_4kv_sources_all_raw.png.,high
+ADD-BUS-NSS-2,BUS-NSS-2,logical_bus,normal station service bus 2,add,,Horizontal busbar labeled NORMAL STATION SERVICE BUS 2 / BUS-NSS-2 feeding divisions 2A/2B in upper_4kv_sources_all_raw.png.,high
+ADD-BUS-416A,BUS-416A,logical_bus,4.16 kV class 1E bus A,add,,"Division 1A long busbar labeled 4.16 KV CLASS 1E BUS A / BUS-416A with visible junction dots to NF, DG, tie, and TX feeder.",high
+ADD-BUS-416B,BUS-416B,logical_bus,4.16 kV class 1E bus B,add,,"Division 1B long busbar labeled 4.16 KV CLASS 1E BUS B / BUS-416B with visible junction dots to NF, DG, tie, and TX feeder.",high
+ADD-BUS-416C,BUS-416C,logical_bus,4.16 kV class 1E bus C,add,,"Division 2A long busbar labeled 4.16 KV CLASS 1E BUS C / BUS-416C with visible junction dots to NF, DG, tie, and TX feeder.",high
+ADD-BUS-416D,BUS-416D,logical_bus,4.16 kV class 1E bus D,add,,"Division 2B long busbar labeled 4.16 KV CLASS 1E BUS D / BUS-416D with visible junction dots to NF, DG, tie, and TX feeder.",high
+ADD-BUS-480A,BUS-480A,logical_bus,480 V load center A,add,,"Horizontal busbar labeled 480 V LOAD CENTER A / BUS-480A below TR-480A, connected downward to MCC-1A in full_division_a_raw.png.",high
+ADD-BUS-480B,BUS-480B,logical_bus,480 V load center B,add,,"Horizontal busbar labeled 480 V LOAD CENTER B / BUS-480B below TR-480B, connected downward to MCC-1B.",high
+ADD-BUS-480C,BUS-480C,logical_bus,480 V load center C,add,,"Horizontal busbar labeled 480 V LOAD CENTER C / BUS-480C below TR-480C, connected downward to MCC-1C.",high
+ADD-BUS-480D,BUS-480D,logical_bus,480 V load center D,add,,"Horizontal busbar labeled 480 V LOAD CENTER D / BUS-480D below TR-480D, connected downward to MCC-1D.",high
+ADD-BUS-DC-A,BUS-DC-A,logical_bus,125 VDC bus A,add,,Lower control crop labels 125 VDC / BUS-DC-A between CHG-1A and INV-1A with ground tap.,high
+ADD-BUS-DC-B,BUS-DC-B,logical_bus,125 VDC bus B,add,,Lower control crop labels 125 VDC / BUS-DC-B between CHG-1B and INV-1B with ground tap.,high
+ADD-BUS-DC-C,BUS-DC-C,logical_bus,125 VDC bus C,add,,Lower control crop labels 125 VDC / BUS-DC-C between CHG-1C and INV-1C with ground tap.,high
+ADD-BUS-DC-D,BUS-DC-D,logical_bus,125 VDC bus D,add,,Lower control crop labels 125 VDC / BUS-DC-D between CHG-1D and INV-1D with ground tap.,high
+ADD-CTRL-SEQ-1AB,SEQ-1AB,logical_control_node,sequence/protection control block,add,,"Control block labeled SEQ-1AB in the dashed AB tie/source-control area, visible between CB-DG-A and CB-NF-B in transformers_480_all_raw.png.",medium
+ADD-CTRL-RPS-AC-1,RPS-AC-1,logical_control_node,sequence/protection control block,add,,"Control block labeled RPS-AC-1 below SEQ-1AB in the dashed AB control area, with dashed leads to the same vertical control paths.",medium
+ADD-CTRL-SEQ-2CD,SEQ-2CD,logical_control_node,sequence/protection control block,add,,"Control block labeled SEQ-2CD in the dashed CD tie/source-control area, visible between CB-DG-C and CB-NF-D in division_cd_4kv_raw.png.",medium
+ADD-CTRL-RPS-AC-2,RPS-AC-2,logical_control_node,sequence/protection control block,add,,"Control block labeled RPS-AC-2 below SEQ-2CD in the dashed CD control area, with dashed leads to the same vertical control paths.",medium
+DET-COMP-0036,MCC-1A,physical_component,motor_control_center_busbar,confirm_role_correction,DET-COMP-0036,Raw division crop shows MCC-1A as a long horizontal motor-control-center busbar with six solid feeder drops and a vertical incoming feed from the matching 480 V bus.,high
+DET-COMP-0037,MCC-1B,physical_component,motor_control_center_busbar,confirm_role_correction,DET-COMP-0037,Raw division crop shows MCC-1B as a long horizontal motor-control-center busbar with six solid feeder drops and a vertical incoming feed from the matching 480 V bus.,high
+DET-COMP-0038,MCC-1C,physical_component,motor_control_center_busbar,confirm_role_correction,DET-COMP-0038,Raw division crop shows MCC-1C as a long horizontal motor-control-center busbar with six solid feeder drops and a vertical incoming feed from the matching 480 V bus.,high
+DET-COMP-0039,MCC-1D,physical_component,motor_control_center_busbar,confirm_role_correction,DET-COMP-0039,Raw division crop shows MCC-1D as a long horizontal motor-control-center busbar with six solid feeder drops and a vertical incoming feed from the matching 480 V bus.,high

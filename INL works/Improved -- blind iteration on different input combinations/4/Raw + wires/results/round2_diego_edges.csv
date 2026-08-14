@@ -1,0 +1,117 @@
+source,target,include_in_matrix,edge_type,confidence,evidence
+US-345A,CB-UAT-A,1,power,high,solid utility transformer feeder to RB1
+CB-UAT-A,TR-UAT-1,1,power,high,solid utility transformer feeder to RB1
+TR-UAT-1,CB-IN-A,1,power,high,solid utility transformer feeder to RB1
+CB-IN-A,BUS-480-RB1,1,power,high,solid utility transformer feeder to RB1
+EDG-1A,CB-DG-A,1,power,high,solid emergency generator feeder to RB1
+CB-DG-A,BUS-480-RB1,1,power,high,solid emergency generator feeder to RB1
+US-230B,CB-SAT-B,1,power,high,solid utility transformer feeder to RB2
+CB-SAT-B,TR-SAT-2,1,power,high,solid utility transformer feeder to RB2
+TR-SAT-2,CB-IN-B,1,power,high,solid utility transformer feeder to RB2
+CB-IN-B,BUS-480-RB2,1,power,high,solid utility transformer feeder to RB2
+EDG-1B,CB-DG-B,1,power,high,solid emergency generator feeder to RB2
+CB-DG-B,BUS-480-RB2,1,power,high,solid emergency generator feeder to RB2
+BUS-480-RB1,CB-TIE-480,1,power,high,solid right-side tie between 480 V buses
+CB-TIE-480,BUS-480-RB2,1,power,high,solid right-side tie between 480 V buses
+BUS-480-RB1,CB-LC-A,1,power,high,solid feeder from RB1 to LC-A
+CB-LC-A,TR-LC-A,1,power,high,solid feeder from RB1 to LC-A
+TR-LC-A,CB-LC-A2,1,power,high,solid feeder from RB1 to LC-A
+CB-LC-A2,BUS-480-LCA,1,power,high,solid feeder from RB1 to LC-A
+TR-LC-A,GND-NG-A,1,ground,high,ground symbol at TR-LC-A
+BUS-480-RB2,CB-LC-B,1,power,high,solid feeder from RB2 to LC-B
+CB-LC-B,TR-LC-B,1,power,high,solid feeder from RB2 to LC-B
+TR-LC-B,CB-LC-B2,1,power,high,solid feeder from RB2 to LC-B
+CB-LC-B2,BUS-480-LCB,1,power,high,solid feeder from RB2 to LC-B
+TR-LC-B,GND-NG-B,1,ground,high,ground symbol at TR-LC-B
+BUS-480-LCA,CB-LC-TIE,1,power,high,dot-marked lower bus tie via CB-LC-TIE
+CB-LC-TIE,BUS-480-LCB,1,power,high,dot-marked lower bus tie via CB-LC-TIE
+BUS-480-RB1,CB-F101,1,power,high,solid CB-F101 load branch
+CB-F101,OL-F101,1,power,high,solid CB-F101 load branch
+OL-F101,PMP-SI-1A,1,power,high,solid CB-F101 load branch
+BUS-480-RB2,CB-F102,1,power,high,solid CB-F102 load branch
+CB-F102,OL-F102,1,power,high,solid CB-F102 load branch
+OL-F102,PMP-RHR-1A,1,power,high,solid CB-F102 load branch
+BUS-480-RB1,CB-F103,1,power,high,solid CB-F103 load branch
+CB-F103,OL-F103,1,power,high,solid CB-F103 load branch
+OL-F103,FAN-CTMT-1A,1,power,high,solid CB-F103 load branch
+BUS-480-RB2,CB-F104,1,power,high,solid CB-F104 load branch
+CB-F104,OL-F104,1,power,high,solid CB-F104 load branch
+OL-F104,MOV-RC-104,1,power,high,solid CB-F104 load branch
+BUS-480-RB1,CB-F105,1,power,high,solid CB-F105 load branch
+CB-F105,OL-F105,1,power,high,solid CB-F105 load branch
+OL-F105,PMP-CCW-1A,1,power,high,solid CB-F105 load branch
+BUS-480-RB2,CB-F106,1,power,high,solid CB-F106 load branch
+CB-F106,OL-F106,1,power,high,solid CB-F106 load branch
+OL-F106,MOV-IA-106,1,power,high,solid CB-F106 load branch
+BUS-480-RB1,CB-F107,1,power,high,solid CB-F107 load branch
+CB-F107,OL-F107,1,power,high,solid CB-F107 load branch
+OL-F107,FAN-AHU-1A,1,power,high,solid CB-F107 load branch
+BUS-480-RB2,CB-F108,1,power,high,solid CB-F108 load branch
+CB-F108,OL-F108,1,power,high,solid CB-F108 load branch
+OL-F108,PMP-CS-1A,1,power,high,solid CB-F108 load branch
+BUS-480-RB1,CB-F109,1,power,high,solid CB-F109 load branch
+CB-F109,OL-F109,1,power,high,solid CB-F109 load branch
+OL-F109,MOV-EF-109,1,power,high,solid CB-F109 load branch
+BUS-480-RB2,CB-F110,1,power,high,solid CB-F110 load branch
+CB-F110,OL-F110,1,power,high,solid CB-F110 load branch
+OL-F110,HTR-PZR-1,1,power,high,solid CB-F110 load branch
+BUS-480-RB1,CB-F111,1,power,high,solid CB-F111 load branch
+CB-F111,OL-F111,1,power,high,solid CB-F111 load branch
+OL-F111,PMP-SI-1B,1,power,high,solid CB-F111 load branch
+BUS-480-RB2,CB-F112,1,power,high,solid CB-F112 load branch
+CB-F112,OL-F112,1,power,high,solid CB-F112 load branch
+OL-F112,PMP-RHR-1B,1,power,high,solid CB-F112 load branch
+BUS-480-RB1,CB-F113,1,power,high,solid CB-F113 load branch
+CB-F113,OL-F113,1,power,high,solid CB-F113 load branch
+OL-F113,FAN-CTMT-1B,1,power,high,solid CB-F113 load branch
+BUS-480-RB2,CB-F114,1,power,high,solid CB-F114 load branch
+CB-F114,OL-F114,1,power,high,solid CB-F114 load branch
+OL-F114,MOV-RC-114,1,power,high,solid CB-F114 load branch
+BUS-480-RB1,CB-F115,1,power,high,solid CB-F115 load branch
+CB-F115,OL-F115,1,power,high,solid CB-F115 load branch
+OL-F115,PNL-SPARE-F15,1,power,high,solid CB-F115 load branch
+BUS-480-LCA,CB-A201,1,power,high,solid CB-A201 load-center branch
+CB-A201,OL-201,1,power,high,solid CB-A201 load-center branch
+OL-201,PMP-SW-2A,1,power,high,solid CB-A201 load-center branch
+BUS-480-LCA,CB-A202,1,power,high,solid CB-A202 load-center branch
+CB-A202,OL-202,1,power,high,solid CB-A202 load-center branch
+OL-202,PMP-CVC-2A,1,power,high,solid CB-A202 load-center branch
+BUS-480-LCA,CB-A203,1,power,high,solid CB-A203 load-center branch
+CB-A203,OL-203,1,power,high,solid CB-A203 load-center branch
+OL-203,MOV-SI-203,1,power,high,solid CB-A203 load-center branch
+BUS-480-LCA,CB-A204,1,power,high,solid CB-A204 load-center branch
+CB-A204,OL-204,1,power,high,solid CB-A204 load-center branch
+OL-204,FAN-CR-2A,1,power,high,solid CB-A204 load-center branch
+BUS-480-LCA,CB-A205,1,power,high,solid CB-A205 load-center branch
+CB-A205,OL-205,1,power,high,solid CB-A205 load-center branch
+OL-205,HTR-BATT-A,1,power,high,solid CB-A205 load-center branch
+BUS-480-LCB,CB-B206,1,power,high,solid CB-B206 load-center branch
+CB-B206,OL-206,1,power,high,solid CB-B206 load-center branch
+OL-206,PMP-SW-2B,1,power,high,solid CB-B206 load-center branch
+BUS-480-LCB,CB-B207,1,power,high,solid CB-B207 load-center branch
+CB-B207,OL-207,1,power,high,solid CB-B207 load-center branch
+OL-207,PMP-CVC-2B,1,power,high,solid CB-B207 load-center branch
+BUS-480-LCB,CB-B208,1,power,high,solid CB-B208 load-center branch
+CB-B208,OL-208,1,power,high,solid CB-B208 load-center branch
+OL-208,MOV-SI-208,1,power,high,solid CB-B208 load-center branch
+BUS-480-LCB,CB-B209,1,power,high,solid CB-B209 load-center branch
+CB-B209,OL-209,1,power,high,solid CB-B209 load-center branch
+OL-209,PNL-LTG-209,1,power,high,solid CB-B209 load-center branch
+BUS-480-LCA,DCA-01,1,dc_power,high,solid train A charger feed into 125 VDC bus
+DCA-01,CB-CHG-A,1,dc_power,high,solid train A charger feed into 125 VDC bus
+CB-CHG-A,CHG-125A,1,dc_power,high,solid train A charger feed into 125 VDC bus
+CHG-125A,BUS-125DCA,1,dc_power,high,solid train A charger feed into 125 VDC bus
+BUS-125DCA,BAT-125A,1,dc_power,high,battery tie to BUS-125DCA
+BUS-125DCA,INV-120A,1,dc_power,high,solid train A inverter feed to UPS-A
+INV-120A,BUS-UPS-A,1,dc_power,high,solid train A inverter feed to UPS-A
+BUS-UPS-A,RPS-TRAIN-A,1,dc_power,high,solid UPS-A supply branch
+BUS-UPS-A,ESFAS-TRAIN-A,1,dc_power,high,solid UPS-A supply branch
+BUS-480-LCB,DCB-01,1,dc_power,high,solid train B charger feed into 125 VDC bus
+DCB-01,CB-CHG-B,1,dc_power,high,solid train B charger feed into 125 VDC bus
+CB-CHG-B,CHG-125B,1,dc_power,high,solid train B charger feed into 125 VDC bus
+CHG-125B,BUS-125DCB,1,dc_power,high,solid train B charger feed into 125 VDC bus
+BUS-125DCB,BAT-125B,1,dc_power,high,battery tie to BUS-125DCB
+BUS-125DCB,INV-120B,1,dc_power,high,solid train B inverter feed to UPS-B
+INV-120B,BUS-UPS-B,1,dc_power,high,solid train B inverter feed to UPS-B
+BUS-UPS-B,RPS-TRAIN-B,1,dc_power,high,solid UPS-B supply branch
+BUS-UPS-B,ESFAS-TRAIN-B,1,dc_power,high,solid UPS-B supply branch

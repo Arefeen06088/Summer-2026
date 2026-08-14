@@ -1,0 +1,860 @@
+[
+  [
+    "GEN-01",
+    "TR-UAT-1",
+    "raw_01: solid 13.8KV-1A line from GEN-01 to UAT transformer",
+    "solid_power"
+  ],
+  [
+    "TR-UAT-1",
+    "CB-UAT-1",
+    "raw_01: UAT1-SEC drop from transformer to inline breaker",
+    "solid_power"
+  ],
+  [
+    "CB-UAT-1",
+    "BUS-13-8A",
+    "raw_01: breaker body inserted on left 13.8 kV bus A",
+    "solid_power"
+  ],
+  [
+    "TR-SUT-1",
+    "CB-SUT-1",
+    "raw_01: SUT1-SEC drop to right-side breaker on bus A",
+    "solid_power"
+  ],
+  [
+    "CB-SUT-1",
+    "BUS-13-8A",
+    "raw_01: CB-SUT-1 touches right end of BUS-13-8A",
+    "solid_power"
+  ],
+  [
+    "CB-SUT-1",
+    "CB-13-TIE",
+    "raw_01: solid 13T-A segment from CB-SUT-1 to tie breaker",
+    "solid_power"
+  ],
+  [
+    "CB-13-TIE",
+    "CB-UAT-2",
+    "raw_01: solid 13T-B segment from tie breaker to CB-UAT-2",
+    "solid_power"
+  ],
+  [
+    "GEN-02",
+    "TR-UAT-2",
+    "raw_01: solid 13.8KV-2A line from GEN-02 to UAT-2 transformer",
+    "solid_power"
+  ],
+  [
+    "TR-UAT-2",
+    "CB-UAT-2",
+    "raw_01: UAT2-SEC drop into inline breaker",
+    "solid_power"
+  ],
+  [
+    "CB-UAT-2",
+    "BUS-13-8B",
+    "raw_01: breaker body inserted on left of BUS-13-8B",
+    "solid_power"
+  ],
+  [
+    "TR-SUT-2",
+    "CB-SUT-2",
+    "raw_01: SUT2-SEC drop to right-side breaker",
+    "solid_power"
+  ],
+  [
+    "CB-SUT-2",
+    "BUS-13-8B",
+    "raw_01: CB-SUT-2 touches right end of BUS-13-8B",
+    "solid_power"
+  ],
+  [
+    "BUS-13-8A",
+    "CB-IN-A",
+    "raw_01/raw_02: vertical normal feed NORM-2A from bus A to CB-IN-A",
+    "solid_power"
+  ],
+  [
+    "BUS-13-8A",
+    "CB-IN-B",
+    "raw_01/raw_03: vertical normal feed NORM-2B from bus A to CB-IN-B",
+    "solid_power"
+  ],
+  [
+    "BUS-13-8B",
+    "CB-IN-C",
+    "raw_01/raw_04: vertical normal feed NORM-2C from bus B to CB-IN-C",
+    "solid_power"
+  ],
+  [
+    "BUS-13-8B",
+    "CB-IN-D",
+    "raw_01/raw_05: vertical normal feed NORM-2D from bus B to CB-IN-D",
+    "solid_power"
+  ],
+  [
+    "CB-IN-A",
+    "BUS-4160-A",
+    "raw_02/raw_09: diagonal 52N-2A feeder lands on BUS-4160-A junction dot",
+    "solid_power"
+  ],
+  [
+    "DG-1A",
+    "CB-DG-A",
+    "raw_02/raw_09: DG vertical feeder enters CB-DG-A",
+    "solid_power"
+  ],
+  [
+    "CB-DG-A",
+    "BUS-4160-A",
+    "raw_02/raw_09: vertical 52G-2A feeder lands on BUS-4160-A dot",
+    "solid_power"
+  ],
+  [
+    "BUS-4160-A",
+    "CB-4160-A1",
+    "raw_02/raw_09: FDR-A1 vertical tap from 4.16 kV bus to breaker",
+    "solid_power"
+  ],
+  [
+    "CB-4160-A1",
+    "TR-480-A1",
+    "raw_02/raw_09: vertical feeder 52-A1 from breaker to transformer",
+    "solid_power"
+  ],
+  [
+    "TR-480-A1",
+    "CB-480-A1",
+    "raw_02/raw_09: transformer secondary vertical to 480 V breaker",
+    "solid_power"
+  ],
+  [
+    "CB-480-A1",
+    "BUS-480-A1",
+    "raw_02/raw_09: LC-A1 vertical lands on left 480 bus section",
+    "solid_power"
+  ],
+  [
+    "BUS-4160-A",
+    "CB-4160-A2",
+    "raw_02/raw_09: FDR-A2 vertical tap from 4.16 kV bus to breaker",
+    "solid_power"
+  ],
+  [
+    "CB-4160-A2",
+    "TR-480-A2",
+    "raw_02/raw_09: vertical feeder 52-A2 from breaker to transformer",
+    "solid_power"
+  ],
+  [
+    "TR-480-A2",
+    "CB-480-A2",
+    "raw_02/raw_09: transformer secondary vertical to 480 V breaker",
+    "solid_power"
+  ],
+  [
+    "CB-480-A2",
+    "BUS-480-A2",
+    "raw_02/raw_09: LC-A2 vertical lands on right 480 bus section",
+    "solid_power"
+  ],
+  [
+    "BUS-480-A1",
+    "BUS-480-A2",
+    "raw_02/raw_09: continuous horizontal 480 busbar across labeled sections with tie label only",
+    "logical_bus"
+  ],
+  [
+    "BUS-480-A1",
+    "CB-MCC-A1",
+    "raw_02/raw_09: MCC-A1 vertical tap from left 480 bus through breaker",
+    "solid_power"
+  ],
+  [
+    "CB-MCC-A1",
+    "MCC-A1",
+    "raw_02/raw_09: short vertical conductor from CB-MCC-A1 to MCC-A1",
+    "solid_power"
+  ],
+  [
+    "MCC-A1",
+    "PUMP-SI-A",
+    "raw_02/raw_09: left MCC outgoing branch L-AP1 to pump motor",
+    "solid_power"
+  ],
+  [
+    "MCC-A1",
+    "PUMP-CCW-A",
+    "raw_02/raw_09: center MCC outgoing branch to CCW pump motor",
+    "solid_power"
+  ],
+  [
+    "MCC-A1",
+    "FAN-HVAC-A",
+    "raw_02/raw_09: right MCC outgoing branch to HVAC fan motor",
+    "solid_power"
+  ],
+  [
+    "BUS-480-A2",
+    "CB-MCC-A2",
+    "raw_02/raw_09: MCC-A2 vertical tap from right 480 bus through breaker",
+    "solid_power"
+  ],
+  [
+    "CB-MCC-A2",
+    "MCC-A2",
+    "raw_02/raw_09: short vertical conductor from CB-MCC-A2 to MCC-A2",
+    "solid_power"
+  ],
+  [
+    "MCC-A2",
+    "MOV-RHR-A",
+    "raw_02/raw_09: MCC-A2 outgoing branch L-AV1 to MOV-RHR-A",
+    "solid_power"
+  ],
+  [
+    "BUS-480-A2",
+    "RECT-125-A",
+    "raw_02/raw_09: right-side 125VDC/BC-A vertical tap from 480 bus into rectifier",
+    "solid_power"
+  ],
+  [
+    "RECT-125-A",
+    "PANEL-IC-A",
+    "raw_02/raw_09: solid DC vertical continues from RECT-125-A to PANEL-IC-A",
+    "solid_power"
+  ],
+  [
+    "PANEL-IC-A",
+    "GND-A",
+    "raw_02/raw_09: solid vertical continues below I/C panel to ground symbol/dot",
+    "solid_power"
+  ],
+  [
+    "CB-IN-A",
+    "RELAY-27A",
+    "raw_02/raw_09: dashed control/interlock line from incoming breaker to relay 27A",
+    "dashed_control"
+  ],
+  [
+    "RELAY-27A",
+    "CB-DG-A",
+    "raw_02/raw_09: dashed control/interlock line from relay 27A to DG breaker",
+    "dashed_control"
+  ],
+  [
+    "RELAY-27A",
+    "CONTROL_POWER_RPS_INTERLOCKS",
+    "raw_02/raw_09/raw_08: relay vertical dashed leg continues into common interlock field",
+    "dashed_control"
+  ],
+  [
+    "MCC-A2",
+    "PANEL-IC-A",
+    "raw_02/raw_09: dashed interlock/control branch from right MCC to I/C panel",
+    "dashed_control"
+  ],
+  [
+    "CB-IN-B",
+    "BUS-4160-B",
+    "raw_03/raw_10: diagonal 52N-2B feeder lands on BUS-4160-B junction dot",
+    "solid_power"
+  ],
+  [
+    "DG-1B",
+    "CB-DG-B",
+    "raw_03/raw_10: DG vertical feeder enters CB-DG-B",
+    "solid_power"
+  ],
+  [
+    "CB-DG-B",
+    "BUS-4160-B",
+    "raw_03/raw_10: vertical 52G-2B feeder lands on BUS-4160-B dot",
+    "solid_power"
+  ],
+  [
+    "BUS-4160-B",
+    "CB-4160-B1",
+    "raw_03/raw_10: FDR-B1 vertical tap from 4.16 kV bus to breaker",
+    "solid_power"
+  ],
+  [
+    "CB-4160-B1",
+    "TR-480-B1",
+    "raw_03/raw_10: vertical feeder 52-B1 from breaker to transformer",
+    "solid_power"
+  ],
+  [
+    "TR-480-B1",
+    "CB-480-B1",
+    "raw_03/raw_10: transformer secondary vertical to 480 V breaker",
+    "solid_power"
+  ],
+  [
+    "CB-480-B1",
+    "BUS-480-B1",
+    "raw_03/raw_10: LC-B1 vertical lands on left 480 bus section",
+    "solid_power"
+  ],
+  [
+    "BUS-4160-B",
+    "CB-4160-B2",
+    "raw_03/raw_10: FDR-B2 vertical tap from 4.16 kV bus to breaker",
+    "solid_power"
+  ],
+  [
+    "CB-4160-B2",
+    "TR-480-B2",
+    "raw_03/raw_10: vertical feeder 52-B2 from breaker to transformer",
+    "solid_power"
+  ],
+  [
+    "TR-480-B2",
+    "CB-480-B2",
+    "raw_03/raw_10: transformer secondary vertical to 480 V breaker",
+    "solid_power"
+  ],
+  [
+    "CB-480-B2",
+    "BUS-480-B2",
+    "raw_03/raw_10: LC-B2 vertical lands on right 480 bus section",
+    "solid_power"
+  ],
+  [
+    "BUS-480-B1",
+    "BUS-480-B2",
+    "raw_03/raw_10: continuous horizontal 480 busbar across labeled sections with tie label only",
+    "logical_bus"
+  ],
+  [
+    "BUS-480-B1",
+    "CB-MCC-B1",
+    "raw_03/raw_10: MCC-B1 vertical tap from left 480 bus through breaker",
+    "solid_power"
+  ],
+  [
+    "CB-MCC-B1",
+    "MCC-B1",
+    "raw_03/raw_10: short vertical conductor from CB-MCC-B1 to MCC-B1",
+    "solid_power"
+  ],
+  [
+    "MCC-B1",
+    "PUMP-SI-B",
+    "raw_03/raw_10: left MCC outgoing branch L-BP1 to pump motor",
+    "solid_power"
+  ],
+  [
+    "MCC-B1",
+    "PUMP-CCW-B",
+    "raw_03/raw_10: center MCC outgoing branch to CCW pump motor",
+    "solid_power"
+  ],
+  [
+    "MCC-B1",
+    "FAN-HVAC-B",
+    "raw_03/raw_10: right MCC outgoing branch to HVAC fan motor",
+    "solid_power"
+  ],
+  [
+    "BUS-480-B2",
+    "CB-MCC-B2",
+    "raw_03/raw_10: MCC-B2 vertical tap from right 480 bus through breaker",
+    "solid_power"
+  ],
+  [
+    "CB-MCC-B2",
+    "MCC-B2",
+    "raw_03/raw_10: short vertical conductor from CB-MCC-B2 to MCC-B2",
+    "solid_power"
+  ],
+  [
+    "MCC-B2",
+    "MOV-RHR-B",
+    "raw_03/raw_10: MCC-B2 outgoing branch L-BV1 to MOV-RHR-B",
+    "solid_power"
+  ],
+  [
+    "BUS-480-B2",
+    "RECT-125-B",
+    "raw_03/raw_10: right-side 125VDC/BC-B vertical tap from 480 bus into rectifier",
+    "solid_power"
+  ],
+  [
+    "RECT-125-B",
+    "PANEL-IC-B",
+    "raw_03/raw_10: solid DC vertical continues from RECT-125-B to PANEL-IC-B",
+    "solid_power"
+  ],
+  [
+    "PANEL-IC-B",
+    "GND-B",
+    "raw_03/raw_10: solid vertical continues below I/C panel to ground symbol/dot",
+    "solid_power"
+  ],
+  [
+    "CB-IN-B",
+    "RELAY-27B",
+    "raw_03/raw_10: dashed control/interlock line from incoming breaker to relay 27B",
+    "dashed_control"
+  ],
+  [
+    "RELAY-27B",
+    "CB-DG-B",
+    "raw_03/raw_10: dashed control/interlock line from relay 27B to DG breaker",
+    "dashed_control"
+  ],
+  [
+    "RELAY-27B",
+    "CONTROL_POWER_RPS_INTERLOCKS",
+    "raw_03/raw_10/raw_08: relay vertical dashed leg continues into common interlock field",
+    "dashed_control"
+  ],
+  [
+    "MCC-B2",
+    "PANEL-IC-B",
+    "raw_03/raw_10: dashed interlock/control branch from right MCC to I/C panel",
+    "dashed_control"
+  ],
+  [
+    "CB-IN-C",
+    "BUS-4160-C",
+    "raw_04/raw_11: diagonal 52N-2C feeder lands on BUS-4160-C junction dot",
+    "solid_power"
+  ],
+  [
+    "DG-1C",
+    "CB-DG-C",
+    "raw_04/raw_11: DG vertical feeder enters CB-DG-C",
+    "solid_power"
+  ],
+  [
+    "CB-DG-C",
+    "BUS-4160-C",
+    "raw_04/raw_11: vertical 52G-2C feeder lands on BUS-4160-C dot",
+    "solid_power"
+  ],
+  [
+    "BUS-4160-C",
+    "CB-4160-C1",
+    "raw_04/raw_11: FDR-C1 vertical tap from 4.16 kV bus to breaker",
+    "solid_power"
+  ],
+  [
+    "CB-4160-C1",
+    "TR-480-C1",
+    "raw_04/raw_11: vertical feeder 52-C1 from breaker to transformer",
+    "solid_power"
+  ],
+  [
+    "TR-480-C1",
+    "CB-480-C1",
+    "raw_04/raw_11: transformer secondary vertical to 480 V breaker",
+    "solid_power"
+  ],
+  [
+    "CB-480-C1",
+    "BUS-480-C1",
+    "raw_04/raw_11: LC-C1 vertical lands on left 480 bus section",
+    "solid_power"
+  ],
+  [
+    "BUS-4160-C",
+    "CB-4160-C2",
+    "raw_04/raw_11: FDR-C2 vertical tap from 4.16 kV bus to breaker",
+    "solid_power"
+  ],
+  [
+    "CB-4160-C2",
+    "TR-480-C2",
+    "raw_04/raw_11: vertical feeder 52-C2 from breaker to transformer",
+    "solid_power"
+  ],
+  [
+    "TR-480-C2",
+    "CB-480-C2",
+    "raw_04/raw_11: transformer secondary vertical to 480 V breaker",
+    "solid_power"
+  ],
+  [
+    "CB-480-C2",
+    "BUS-480-C2",
+    "raw_04/raw_11: LC-C2 vertical lands on right 480 bus section",
+    "solid_power"
+  ],
+  [
+    "BUS-480-C1",
+    "BUS-480-C2",
+    "raw_04/raw_11: continuous horizontal 480 busbar across labeled sections with tie label only",
+    "logical_bus"
+  ],
+  [
+    "BUS-480-C1",
+    "CB-MCC-C1",
+    "raw_04/raw_11: MCC-C1 vertical tap from left 480 bus through breaker",
+    "solid_power"
+  ],
+  [
+    "CB-MCC-C1",
+    "MCC-C1",
+    "raw_04/raw_11: short vertical conductor from CB-MCC-C1 to MCC-C1",
+    "solid_power"
+  ],
+  [
+    "MCC-C1",
+    "PUMP-SI-C",
+    "raw_04/raw_11: left MCC outgoing branch L-CP1 to pump motor",
+    "solid_power"
+  ],
+  [
+    "MCC-C1",
+    "PUMP-CCW-C",
+    "raw_04/raw_11: center MCC outgoing branch to CCW pump motor",
+    "solid_power"
+  ],
+  [
+    "MCC-C1",
+    "FAN-HVAC-C",
+    "raw_04/raw_11: right MCC outgoing branch to HVAC fan motor",
+    "solid_power"
+  ],
+  [
+    "BUS-480-C2",
+    "CB-MCC-C2",
+    "raw_04/raw_11: MCC-C2 vertical tap from right 480 bus through breaker",
+    "solid_power"
+  ],
+  [
+    "CB-MCC-C2",
+    "MCC-C2",
+    "raw_04/raw_11: short vertical conductor from CB-MCC-C2 to MCC-C2",
+    "solid_power"
+  ],
+  [
+    "MCC-C2",
+    "MOV-RHR-C",
+    "raw_04/raw_11: MCC-C2 outgoing branch L-CV1 to MOV-RHR-C",
+    "solid_power"
+  ],
+  [
+    "BUS-480-C2",
+    "RECT-125-C",
+    "raw_04/raw_11: right-side 125VDC/BC-C vertical tap from 480 bus into rectifier",
+    "solid_power"
+  ],
+  [
+    "RECT-125-C",
+    "PANEL-IC-C",
+    "raw_04/raw_11: solid DC vertical continues from RECT-125-C to PANEL-IC-C",
+    "solid_power"
+  ],
+  [
+    "PANEL-IC-C",
+    "GND-C",
+    "raw_04/raw_11: solid vertical continues below I/C panel to ground symbol/dot",
+    "solid_power"
+  ],
+  [
+    "CB-IN-C",
+    "RELAY-27C",
+    "raw_04/raw_11: dashed control/interlock line from incoming breaker to relay 27C",
+    "dashed_control"
+  ],
+  [
+    "RELAY-27C",
+    "CB-DG-C",
+    "raw_04/raw_11: dashed control/interlock line from relay 27C to DG breaker",
+    "dashed_control"
+  ],
+  [
+    "RELAY-27C",
+    "CONTROL_POWER_RPS_INTERLOCKS",
+    "raw_04/raw_11/raw_08: relay vertical dashed leg continues into common interlock field",
+    "dashed_control"
+  ],
+  [
+    "MCC-C2",
+    "PANEL-IC-C",
+    "raw_04/raw_11: dashed interlock/control branch from right MCC to I/C panel",
+    "dashed_control"
+  ],
+  [
+    "CB-IN-D",
+    "BUS-4160-D",
+    "raw_05/raw_12: diagonal 52N-2D feeder lands on BUS-4160-D junction dot",
+    "solid_power"
+  ],
+  [
+    "DG-1D",
+    "CB-DG-D",
+    "raw_05/raw_12: DG vertical feeder enters CB-DG-D",
+    "solid_power"
+  ],
+  [
+    "CB-DG-D",
+    "BUS-4160-D",
+    "raw_05/raw_12: vertical 52G-2D feeder lands on BUS-4160-D dot",
+    "solid_power"
+  ],
+  [
+    "BUS-4160-D",
+    "CB-4160-D1",
+    "raw_05/raw_12: FDR-D1 vertical tap from 4.16 kV bus to breaker",
+    "solid_power"
+  ],
+  [
+    "CB-4160-D1",
+    "TR-480-D1",
+    "raw_05/raw_12: vertical feeder 52-D1 from breaker to transformer",
+    "solid_power"
+  ],
+  [
+    "TR-480-D1",
+    "CB-480-D1",
+    "raw_05/raw_12: transformer secondary vertical to 480 V breaker",
+    "solid_power"
+  ],
+  [
+    "CB-480-D1",
+    "BUS-480-D1",
+    "raw_05/raw_12: LC-D1 vertical lands on left 480 bus section",
+    "solid_power"
+  ],
+  [
+    "BUS-4160-D",
+    "CB-4160-D2",
+    "raw_05/raw_12: FDR-D2 vertical tap from 4.16 kV bus to breaker",
+    "solid_power"
+  ],
+  [
+    "CB-4160-D2",
+    "TR-480-D2",
+    "raw_05/raw_12: vertical feeder 52-D2 from breaker to transformer",
+    "solid_power"
+  ],
+  [
+    "TR-480-D2",
+    "CB-480-D2",
+    "raw_05/raw_12: transformer secondary vertical to 480 V breaker",
+    "solid_power"
+  ],
+  [
+    "CB-480-D2",
+    "BUS-480-D2",
+    "raw_05/raw_12: LC-D2 vertical lands on right 480 bus section",
+    "solid_power"
+  ],
+  [
+    "BUS-480-D1",
+    "BUS-480-D2",
+    "raw_05/raw_12: continuous horizontal 480 busbar across labeled sections with tie label only",
+    "logical_bus"
+  ],
+  [
+    "BUS-480-D1",
+    "CB-MCC-D1",
+    "raw_05/raw_12: MCC-D1 vertical tap from left 480 bus through breaker",
+    "solid_power"
+  ],
+  [
+    "CB-MCC-D1",
+    "MCC-D1",
+    "raw_05/raw_12: short vertical conductor from CB-MCC-D1 to MCC-D1",
+    "solid_power"
+  ],
+  [
+    "MCC-D1",
+    "PUMP-SI-D",
+    "raw_05/raw_12: left MCC outgoing branch L-DP1 to pump motor",
+    "solid_power"
+  ],
+  [
+    "MCC-D1",
+    "PUMP-CCW-D",
+    "raw_05/raw_12: center MCC outgoing branch to CCW pump motor",
+    "solid_power"
+  ],
+  [
+    "MCC-D1",
+    "FAN-HVAC-D",
+    "raw_05/raw_12: right MCC outgoing branch to HVAC fan motor",
+    "solid_power"
+  ],
+  [
+    "BUS-480-D2",
+    "CB-MCC-D2",
+    "raw_05/raw_12: MCC-D2 vertical tap from right 480 bus through breaker",
+    "solid_power"
+  ],
+  [
+    "CB-MCC-D2",
+    "MCC-D2",
+    "raw_05/raw_12: short vertical conductor from CB-MCC-D2 to MCC-D2",
+    "solid_power"
+  ],
+  [
+    "MCC-D2",
+    "MOV-RHR-D",
+    "raw_05/raw_12: MCC-D2 outgoing branch L-DV1 to MOV-RHR-D",
+    "solid_power"
+  ],
+  [
+    "BUS-480-D2",
+    "RECT-125-D",
+    "raw_05/raw_12: right-side 125VDC/BC-D vertical tap from 480 bus into rectifier",
+    "solid_power"
+  ],
+  [
+    "RECT-125-D",
+    "PANEL-IC-D",
+    "raw_05/raw_12: solid DC vertical continues from RECT-125-D to PANEL-IC-D",
+    "solid_power"
+  ],
+  [
+    "PANEL-IC-D",
+    "GND-D",
+    "raw_05/raw_12: solid vertical continues below I/C panel to ground symbol/dot",
+    "solid_power"
+  ],
+  [
+    "CB-IN-D",
+    "RELAY-27D",
+    "raw_05/raw_12: dashed control/interlock line from incoming breaker to relay 27D",
+    "dashed_control"
+  ],
+  [
+    "RELAY-27D",
+    "CB-DG-D",
+    "raw_05/raw_12: dashed control/interlock line from relay 27D to DG breaker",
+    "dashed_control"
+  ],
+  [
+    "RELAY-27D",
+    "CONTROL_POWER_RPS_INTERLOCKS",
+    "raw_05/raw_12/raw_08: relay vertical dashed leg continues into common interlock field",
+    "dashed_control"
+  ],
+  [
+    "MCC-D2",
+    "PANEL-IC-D",
+    "raw_05/raw_12: dashed interlock/control branch from right MCC to I/C panel",
+    "dashed_control"
+  ],
+  [
+    "GND-A",
+    "BUS-DC-125A",
+    "raw_06/raw_13: solid vertical/elbow from GND-A region lands on BUS-DC-125A dot",
+    "solid_power"
+  ],
+  [
+    "GND-B",
+    "BUS-DC-125A",
+    "raw_06/raw_08: B-side DC/ground vertical appears to continue into Division A lower bus region; endpoint visually cropped; Jennifer round-2: solid DC/ground route confirmed",
+    "solid_power"
+  ],
+  [
+    "GND-C",
+    "BUS-DC-125B",
+    "raw_07/raw_14: solid vertical from GND-C region lands on BUS-DC-125B dot",
+    "solid_power"
+  ],
+  [
+    "GND-D",
+    "BUS-DC-125B",
+    "raw_07: D-side DC-D125/GND-D line visually ties into lower Division B routing, endpoint visually off crop; Jennifer round-2: solid DC/ground route confirmed",
+    "solid_power"
+  ],
+  [
+    "BUS-480-A1",
+    "ATS-480-A",
+    "raw_02/raw_08: solid ATS feeder branch labeled ATS-A1 descends from A 480 section toward ATS-480-A; Jennifer round-2: solid conductor confirmed",
+    "solid_power"
+  ],
+  [
+    "BUS-480-B1",
+    "ATS-480-A",
+    "raw_03/raw_08: solid ATS feeder branch labeled ATS-B1/ATS-480-A tied to B-side 480 train area; Jennifer round-2: solid conductor confirmed",
+    "solid_power"
+  ],
+  [
+    "BUS-480-C1",
+    "ATS-480-B",
+    "raw_04/raw_08: solid branch labeled ATS-C1 reaches ATS-480-B region; Jennifer round-2: solid conductor confirmed",
+    "solid_power"
+  ],
+  [
+    "BUS-480-D1",
+    "ATS-480-B",
+    "raw_05/raw_08: D-side lower branch visually routes toward ATS-480-B interlock/power area; Jennifer round-2: solid conductor confirmed",
+    "solid_power"
+  ],
+  [
+    "BAT-125A",
+    "BUS-DC-125A",
+    "raw_06/raw_13: battery BAT-A connects directly to BUS-DC-125A left end",
+    "solid_power"
+  ],
+  [
+    "BUS-DC-125A",
+    "INV-UPS-A",
+    "raw_06/raw_13: BUS-DC-125A feeds UPS-AIN into INV-UPS-A",
+    "solid_power"
+  ],
+  [
+    "INV-UPS-A",
+    "PANEL-RPS-A",
+    "raw_06/raw_13: UPS-AOUT solid line from inverter to PANEL-RPS-A",
+    "solid_power"
+  ],
+  [
+    "BAT-125B",
+    "BUS-DC-125B",
+    "raw_07/raw_14: battery BAT-B connects directly to BUS-DC-125B left end",
+    "solid_power"
+  ],
+  [
+    "BUS-DC-125B",
+    "INV-UPS-B",
+    "raw_07/raw_14: BUS-DC-125B feeds UPS-BIN into INV-UPS-B",
+    "solid_power"
+  ],
+  [
+    "INV-UPS-B",
+    "PANEL-RPS-B",
+    "raw_07/raw_14: UPS-BOUT solid line from inverter to PANEL-RPS-B",
+    "solid_power"
+  ],
+  [
+    "PANEL-RPS-A",
+    "CONTROL_POWER_RPS_INTERLOCKS",
+    "raw_06/raw_13: dashed RPS/interlock line leaves PANEL-RPS-A into common dashed field",
+    "dashed_control"
+  ],
+  [
+    "PANEL-RPS-B",
+    "CONTROL_POWER_RPS_INTERLOCKS",
+    "raw_07/raw_14: dashed RPS/interlock line leaves PANEL-RPS-B into common dashed field",
+    "dashed_control"
+  ],
+  [
+    "PANEL-SSPS",
+    "CONTROL_POWER_RPS_INTERLOCKS",
+    "raw_08/full: PANEL-SSPS sits on and receives multiple dashed interlock/control conductors",
+    "dashed_control"
+  ],
+  [
+    "ATS-480-A",
+    "PANEL-RPS-A",
+    "raw_06/raw_13: solid conductor labeled ATS-AOUT leaves ATS-480-A and enters PANEL-RPS-A; dashed interlock line is separate",
+    "solid_power"
+  ],
+  [
+    "ATS-480-B",
+    "PANEL-RPS-B",
+    "raw_07/raw_14: solid conductor labeled ATS-BOUT leaves ATS-480-B and enters PANEL-RPS-B; dashed interlock line is separate",
+    "solid_power"
+  ]
+]

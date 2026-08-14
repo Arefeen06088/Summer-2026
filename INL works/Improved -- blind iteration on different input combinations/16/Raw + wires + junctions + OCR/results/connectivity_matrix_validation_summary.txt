@@ -1,0 +1,38 @@
+Connectivity matrix validation summary - Document 16 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\16\synthetic_npp_connectivity_matrix_revised(1).csv
+GT after normalization: 190 undirected edges across 180 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token usage was not available in local tracking files.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=162, FP=21, FN=28, Precision=0.885246, Recall=0.852632, F1=0.868633.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names; missing exact GT component names; close-but-not-exact component names.
+- Extracted components: 179; extra/non-GT names: 6; missing GT component names: 7.
+- False-positive extracted edge examples: BUS-120-RPS-A -- METER-VM-1; BUS-120-RPS-B -- RTD-RCS101; BUS-120-RPS-B -- UCP-01; BUS-125DC-A -- CHGR-125A; BUS-125DC-A -- CP-DCS-01; BUS-125DC-A -- CP-RPS-A; BUS-125DC-A -- REC-SOE-1; BUS-125DC-B -- CHGR-125B; ... (+13 more).
+- Missed GT edge examples: BATT-125A -- BUS-125DC-A; BATT-125B -- BUS-125DC-B; BUS-120-RPS-A -- CP-DCS-01; BUS-120-RPS-A -- CP-RPS-A; BUS-120-RPS-A -- UCC-01; BUS-120-RPS-B -- CP-ANN-01; BUS-120-RPS-B -- CP-RPS-B; BUS-120-RPS-B -- UCC-01; ... (+20 more).
+- Extra/non-GT component examples: CB-31A-FDR30-B; GND-NO; JB-R; JB-RPS-A3-1A; JB-RPS-B3-1B; UCP-01.
+- Missing GT component examples: CB-31A-FDR; GND-N0; JB-RPS-A; JB-RPS-B; TB-1A; TB-1B; UCC-01.
+- Close-but-not-exact component examples: CB-31A-FDR30-B ~ CB-31A-FDR (0.83); GND-NO ~ GND-N0 (0.83); UCP-01 ~ UCC-01 (0.83).
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=162, FP=0, FN=28, Precision=1.000000, Recall=0.852632, F1=0.920455.
+- If all missed GT edges were added, final performance would be TP=190, FP=21, FN=0, Precision=0.900474, Recall=1.000000, F1=0.947631.
+- If extra node CB-31A-FDR30-B and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=162, FP=19, FN=28, Precision=0.895028, Recall=0.852632, F1=0.873315.
+- If extra node JB-RPS-A3-1A and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=162, FP=19, FN=28, Precision=0.895028, Recall=0.852632, F1=0.873315.
+- If extra node JB-RPS-B3-1B and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=162, FP=19, FN=28, Precision=0.895028, Recall=0.852632, F1=0.873315.
+- If extra node UCP-01 and its 2 false-positive incident edge(s) were not put in extraction, final performance would be TP=162, FP=19, FN=28, Precision=0.895028, Recall=0.852632, F1=0.873315.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.868633.
+
+Round-specific notes:
+- Diego -- Round 1: TP=164, FP=34, FN=26, F1=0.845361; extra nodes=6, missing GT nodes=7. FP examples: ANN-501 -- BUS-125DC-A; BUS-120-RPS-A -- METER-VM-1; BUS-120-RPS-B -- RTD-RCS101; BUS-120-RPS-B -- UCP-01; ... (+30 more). FN examples: BUS-120-RPS-A -- CP-DCS-01; BUS-120-RPS-A -- CP-RPS-A; BUS-120-RPS-A -- UCC-01; BUS-120-RPS-B -- CP-ANN-01; ... (+22 more).
+- Jennifer -- Round 2: TP=162, FP=21, FN=28, F1=0.868633; extra nodes=6, missing GT nodes=7. FP examples: BUS-120-RPS-A -- METER-VM-1; BUS-120-RPS-B -- RTD-RCS101; BUS-120-RPS-B -- UCP-01; BUS-125DC-A -- CHGR-125A; ... (+17 more). FN examples: BATT-125A -- BUS-125DC-A; BATT-125B -- BUS-125DC-B; BUS-120-RPS-A -- CP-DCS-01; BUS-120-RPS-A -- CP-RPS-A; ... (+24 more).
+- Diego -- Round 3: TP=162, FP=21, FN=28, F1=0.868633; extra nodes=6, missing GT nodes=7. FP examples: BUS-120-RPS-A -- METER-VM-1; BUS-120-RPS-B -- RTD-RCS101; BUS-120-RPS-B -- UCP-01; BUS-125DC-A -- CHGR-125A; ... (+17 more). FN examples: BATT-125A -- BUS-125DC-A; BATT-125B -- BUS-125DC-B; BUS-120-RPS-A -- CP-DCS-01; BUS-120-RPS-A -- CP-RPS-A; ... (+24 more).
+- Jennifer -- Round 4: TP=162, FP=21, FN=28, F1=0.868633; extra nodes=6, missing GT nodes=7. FP examples: BUS-120-RPS-A -- METER-VM-1; BUS-120-RPS-B -- RTD-RCS101; BUS-120-RPS-B -- UCP-01; BUS-125DC-A -- CHGR-125A; ... (+17 more). FN examples: BATT-125A -- BUS-125DC-A; BATT-125B -- BUS-125DC-B; BUS-120-RPS-A -- CP-DCS-01; BUS-120-RPS-A -- CP-RPS-A; ... (+24 more).
+- Final connectivity -- Final: TP=162, FP=21, FN=28, F1=0.868633; extra nodes=6, missing GT nodes=7. FP examples: BUS-120-RPS-A -- METER-VM-1; BUS-120-RPS-B -- RTD-RCS101; BUS-120-RPS-B -- UCP-01; BUS-125DC-A -- CHGR-125A; ... (+17 more). FN examples: BATT-125A -- BUS-125DC-A; BATT-125B -- BUS-125DC-B; BUS-120-RPS-A -- CP-DCS-01; BUS-120-RPS-A -- CP-RPS-A; ... (+24 more).

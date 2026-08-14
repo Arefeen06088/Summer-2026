@@ -1,0 +1,11 @@
+source,target,reason
+BUS-480-A,TR-RPS-A,upstream RPS transformer feeder source is not cleanly terminated at the A rail
+BUS-480-B,TR-RPS-B,upstream RPS transformer feeder source is not cleanly terminated at the B rail
+BUS-120-RPS-A,UCB-01,lower shared dashed/common route is not a clean one-hop endpoint
+BUS-120-RPS-B,UCB-01,lower shared dashed/common route is not a clean one-hop endpoint
+UCB-01,GND-NO,UCB/common ground routing is shared and not accepted as a hard endpoint chain
+JB-CONTAIN,XS-DOOR101,containment junction to door switch is visually plausible but routed through shared signal trunk
+RTD-RCS101,MG-RPS-B,RTD side connection lands near a shared vertical route; exact endpoint ambiguous
+CP-DCS-01,TB-ESF-1,dotted/signal route is shared with multiple endpoints
+CP-ANN-01,TB-ESF-2,dotted/signal route is shared with multiple endpoints
+CB-401A,CB-401B,dashed breaker trip/interlock routing is visually plausible but not a hard terminal-to-terminal edge

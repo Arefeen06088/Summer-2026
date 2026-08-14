@@ -1,0 +1,67 @@
+{
+  "document": 2,
+  "resource_folder": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\2\\Raw + wires",
+  "main_decision": "final_matrix.csv includes all drawn electrical links: solid feeders, the drawn N.O. bus tie through CB-TIE-4AB, and supported dashed control/instrument/permissive wiring. This follows notes 3 and 5.",
+  "agents": {
+    "diego": {
+      "id": "019f6dec-deb0-7660-8ef9-00f8fa716958",
+      "model": "gpt-5.5",
+      "role": "high-recall extractor"
+    },
+    "jennifer": {
+      "id": "019f6df2-7ffd-7243-859a-d9ec07e2c201",
+      "model": "gpt-5.5",
+      "role": "precision reviewer/refiner"
+    }
+  },
+  "rounds": {
+    "round1_diego": "high-recall all-plausible extraction; tie/control edges tagged but included in all-drawn-link matrix",
+    "round1_jennifer": "precision review confirmed all drawn electrical links are in scope and corrected labels/scope",
+    "round2_diego": "reconciliation pass accepting Jennifer's scope and labels",
+    "round2_jennifer": "final saturation confirmation"
+  },
+  "qa": {
+    "round1_diego": {
+      "node_count": 100,
+      "edge_count": 100,
+      "symmetric": true,
+      "zero_diagonal": true
+    },
+    "round1_jennifer": {
+      "node_count": 100,
+      "edge_count": 100,
+      "symmetric": true,
+      "zero_diagonal": true
+    },
+    "round2_diego": {
+      "node_count": 100,
+      "edge_count": 100,
+      "symmetric": true,
+      "zero_diagonal": true
+    },
+    "round2_jennifer": {
+      "node_count": 100,
+      "edge_count": 100,
+      "symmetric": true,
+      "zero_diagonal": true
+    },
+    "final": {
+      "node_count": 100,
+      "edge_count": 100,
+      "symmetric": true,
+      "zero_diagonal": true
+    },
+    "candidate_solid_power_only": {
+      "node_count": 100,
+      "edge_count": 91,
+      "symmetric": true,
+      "zero_diagonal": true
+    }
+  },
+  "edge_type_counts": {
+    "solid_power_or_dc": 91,
+    "bus_tie": 2,
+    "control_signal": 7,
+    "final_total": 100
+  }
+}

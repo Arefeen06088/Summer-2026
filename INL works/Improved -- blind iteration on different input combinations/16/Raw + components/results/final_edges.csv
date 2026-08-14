@@ -1,0 +1,183 @@
+source,target,type,evidence
+GRID-161KV,TR-SST-1A,power,raw_10_left_source_train: solid utility lead enters TR-SST-1A from GRID-161KV.
+TR-SST-1A,CB-401A,power,raw_10_left_source_train: transformer secondary lead rises to CB-401A.
+TR-SST-1A,CB-401B,power,raw_10_left_source_train: second transformer secondary lead descends to CB-401B.
+CB-401A,BUS-4KV-A,power,raw_10_left_source_train: CB-401A output lands on upper 4 kV bus with filled junction.
+CB-401B,BUS-4KV-B,power,raw_10_left_source_train: CB-401B output lands on lower 4 kV bus with filled junction.
+BUS-4KV-A,CB-TIE-4AB,tie,raw_11_center_source_train: vertical tie breaker connects from BUS-4KV-A.
+CB-TIE-4AB,BUS-4KV-B,tie,raw_11_center_source_train: same tie breaker continues to BUS-4KV-B with filled junction.
+GEN-EDG-A,CB-EDG-A,power,raw_11_center_source_train: GEN-EDG-A vertical lead enters CB-EDG-A.
+CB-EDG-A,BUS-4KV-A,power,raw_11_center_source_train: CB-EDG-A bottom lead connects to upper 4 kV bus dot.
+GEN-EDG-B,CB-EDG-B,power,raw_11_center_source_train/raw_12_right_source_train: GEN-EDG-B vertical lead enters CB-EDG-B.
+CB-EDG-B,BUS-4KV-B,power,raw_11_center_source_train/raw_12_right_source_train: CB-EDG-B bottom lead connects to lower 4 kV bus dot.
+BUS-4KV-A,TR-4KV-480A,power,raw_10_left_source_train: filled tap from BUS-4KV-A feeds TR-4KV-480A primary.
+TR-4KV-480A,CB-480A-IN,power,raw_10_left_source_train: TR-4KV-480A secondary descends through CB-480A-IN.
+CB-480A-IN,BUS-480-A,power,raw_17_close_cb11a_cb12a_cb21a_2x: incoming breaker output ties to upper 480 V bus.
+BUS-4KV-B,TR-4KV-480B,power,raw_11_center_source_train: filled tap from BUS-4KV-B feeds TR-4KV-480B primary.
+TR-4KV-480B,CB-480B-IN,power,raw_11_center_source_train: TR-4KV-480B secondary descends through CB-480B-IN.
+CB-480B-IN,BUS-480-A,power,raw_21_close_mcc31a_cb11b_2x: CB-480B-IN output lands on upper 480 V bus.
+BUS-480-A,CB-TIE-480AB,tie,raw_20_close_480_tie_cb31a_2x: tie breaker has upper filled connection to BUS-480-A.
+CB-TIE-480AB,BUS-480-B,tie,raw_20_close_480_tie_cb31a_2x: tie breaker continues to the lower 480 V busbar.
+BUS-480-B,CB-11A-FDR,power,raw_13_left_mid_controls/raw_19_close_cb11a_cb12a_cb21a_2x: vertical feeder tap from lower 480 V bus enters CB-11A-FDR.
+CB-11A-FDR,MCC-11A,power,raw_13_left_mid_controls/raw_19_close_cb11a_cb12a_cb21a_2x: CB-11A-FDR output descends into MCC-11A bus enclosure.
+BUS-480-B,CB-12A-FDR,power,raw_13_left_mid_controls/raw_19_close_cb11a_cb12a_cb21a_2x: vertical feeder tap from lower 480 V bus enters CB-12A-FDR.
+CB-12A-FDR,MCC-12A,power,raw_13_left_mid_controls/raw_19_close_cb11a_cb12a_cb21a_2x: CB-12A-FDR output descends into MCC-12A bus enclosure.
+BUS-480-B,CB-21A-FDR,power,raw_13_left_mid_controls/raw_19_close_cb11a_cb12a_cb21a_2x: vertical feeder tap from lower 480 V bus enters CB-21A-FDR.
+CB-21A-FDR,MCC-21A,power,raw_13_left_mid_controls/raw_19_close_cb11a_cb12a_cb21a_2x: CB-21A-FDR output descends into MCC-21A bus enclosure.
+BUS-480-B,CB-31A-FDR30-B,power,raw_14_center_mid_controls/raw_20_close_480_tie_cb31a_2x: vertical feeder tap from lower 480 V bus enters CB-31A-FDR30-B.
+CB-31A-FDR30-B,MCC-31A,power,raw_14_center_mid_controls/raw_20_close_480_tie_cb31a_2x: CB-31A-FDR30-B output descends into MCC-31A bus enclosure.
+BUS-480-B,CB-11B-FDR,power,raw_14_center_mid_controls/raw_21_close_mcc31a_cb11b_2x: vertical feeder tap from lower 480 V bus enters CB-11B-FDR.
+CB-11B-FDR,MCC-11B,power,raw_14_center_mid_controls/raw_21_close_mcc31a_cb11b_2x: CB-11B-FDR output descends into MCC-11B bus enclosure.
+BUS-480-B,CB-12B-FDR,power,raw_14_center_mid_controls/raw_21_close_mcc31a_cb11b_2x: vertical feeder tap from lower 480 V bus enters CB-12B-FDR.
+CB-12B-FDR,MCC-12B,power,raw_14_center_mid_controls/raw_21_close_mcc31a_cb11b_2x: CB-12B-FDR output descends into MCC-12B bus enclosure.
+BUS-480-B,CB-21B-FDR,power,raw_14_center_mid_controls: vertical feeder tap from lower 480 V bus enters CB-21B-FDR.
+CB-21B-FDR,MCC-21B,power,raw_14_center_mid_controls: CB-21B-FDR output descends into MCC-21B bus enclosure.
+BUS-480-B,CB-31B-FDR,power,raw_15_right_mid_controls: vertical feeder tap from lower 480 V bus enters CB-31B-FDR.
+CB-31B-FDR,MCC-31B,power,raw_15_right_mid_controls: CB-31B-FDR output descends into MCC-31B bus enclosure.
+MCC-11A,CB-P201A,power,raw_13_left_mid_controls: MCC-11A internal bus dot feeds CB-P201A.
+CB-P201A,RELAY-KP201A,power,raw_13_left_mid_controls: branch conductor descends from CB-P201A into RELAY-KP201A.
+RELAY-KP201A,PUMP-RHR201A,power,raw_13_left_mid_controls: same branch continues from RELAY-KP201A to PUMP-RHR201A.
+PUMP-RHR201A,GND-P201A,ground,raw_13_left_mid_controls: PUMP-RHR201A lower lead terminates at GND-P201A.
+MCC-11A,CB-P211A,power,raw_13_left_mid_controls: MCC-11A internal bus dot feeds CB-P211A.
+CB-P211A,RELAY-KP211A,power,raw_13_left_mid_controls: branch conductor descends from CB-P211A into RELAY-KP211A.
+RELAY-KP211A,PUMP-CS211A,power,raw_13_left_mid_controls: same branch continues from RELAY-KP211A to PUMP-CS211A.
+PUMP-CS211A,GND-P211A,ground,raw_13_left_mid_controls: PUMP-CS211A lower lead terminates at GND-P211A.
+MCC-11A,CB-P221A,power,raw_13_left_mid_controls: MCC-11A internal bus dot feeds CB-P221A.
+CB-P221A,RELAY-KP221A,power,raw_13_left_mid_controls: branch conductor descends from CB-P221A into RELAY-KP221A.
+RELAY-KP221A,PUMP-SI221A,power,raw_13_left_mid_controls: same branch continues from RELAY-KP221A to PUMP-SI221A.
+PUMP-SI221A,GND-P221A,ground,raw_13_left_mid_controls: PUMP-SI221A lower lead terminates at GND-P221A.
+MCC-12A,CB-P101A,power,raw_13_left_mid_controls: MCC-12A internal bus dot feeds CB-P101A.
+CB-P101A,RELAY-KP101A,power,raw_13_left_mid_controls: branch conductor descends from CB-P101A into RELAY-KP101A.
+RELAY-KP101A,PUMP-AFW101A,power,raw_13_left_mid_controls: same branch continues from RELAY-KP101A to PUMP-AFW101A.
+PUMP-AFW101A,GND-P101A,ground,raw_13_left_mid_controls: PUMP-AFW101A lower lead terminates at GND-P101A.
+MCC-12A,CB-HV101A,power,raw_13_left_mid_controls: MCC-12A internal bus dot feeds CB-HV101A.
+CB-HV101A,RELAY-KHV101A,control,raw_13_left_mid_controls: branch conductor descends from CB-HV101A into RELAY-KHV101A.
+RELAY-KHV101A,MOV-HV101A,control,raw_13_left_mid_controls: same branch continues from RELAY-KHV101A to MOV-HV101A.
+MOV-HV101A,TB-HV101A,control,raw_13_left_mid_controls: MOV-HV101A lower lead terminates at TB-HV101A.
+MCC-12A,CB-FN1A,power,raw_13_left_mid_controls: MCC-12A internal bus dot feeds CB-FN1A.
+CB-FN1A,RELAY-KFN1A,power,raw_13_left_mid_controls: branch conductor descends from CB-FN1A into RELAY-KFN1A.
+RELAY-KFN1A,FAN-HV1A,power,raw_13_left_mid_controls: same branch continues from RELAY-KFN1A to FAN-HV1A.
+FAN-HV1A,GND-FN1A,ground,raw_13_left_mid_controls: FAN-HV1A lower lead terminates at GND-FN1A.
+MCC-21A,CB-P301A,power,raw_13_left_mid_controls: MCC-21A internal bus dot feeds CB-P301A.
+CB-P301A,RELAY-KP301A,power,raw_13_left_mid_controls: branch conductor descends from CB-P301A into RELAY-KP301A.
+RELAY-KP301A,PUMP-CCM301A,power,raw_13_left_mid_controls: same branch continues from RELAY-KP301A to PUMP-CCM301A.
+PUMP-CCM301A,GND-P301A,ground,raw_13_left_mid_controls: PUMP-CCM301A lower lead terminates at GND-P301A.
+MCC-21A,CB-P401A,power,raw_13_left_mid_controls: MCC-21A internal bus dot feeds CB-P401A.
+CB-P401A,RELAY-KP401A,power,raw_13_left_mid_controls: branch conductor descends from CB-P401A into RELAY-KP401A.
+RELAY-KP401A,PUMP-SW401A,power,raw_13_left_mid_controls: same branch continues from RELAY-KP401A to PUMP-SW401A.
+PUMP-SW401A,GND-P401A,ground,raw_13_left_mid_controls: PUMP-SW401A lower lead terminates at GND-P401A.
+MCC-21A,CB-HT1A,power,raw_13_left_mid_controls: MCC-21A internal bus dot feeds CB-HT1A.
+CB-HT1A,RELAY-KHT1A,power,raw_13_left_mid_controls: branch conductor descends from CB-HT1A into RELAY-KHT1A.
+RELAY-KHT1A,HTR-PZR1A,power,raw_13_left_mid_controls: same branch continues from RELAY-KHT1A to HTR-PZR1A.
+HTR-PZR1A,TB-HT1A,control,raw_13_left_mid_controls: HTR-PZR1A lower lead terminates at TB-HT1A.
+MCC-31A,CB-RM1A,power,raw_13_left_mid_controls/raw_14_center_mid_controls: MCC-31A internal bus dot feeds CB-RM1A.
+CB-RM1A,RELAY-KRM1A,signal,raw_13_left_mid_controls/raw_14_center_mid_controls: branch conductor descends from CB-RM1A into RELAY-KRM1A.
+RELAY-KRM1A,MON-RAD1A,signal,raw_13_left_mid_controls/raw_14_center_mid_controls: same branch continues from RELAY-KRM1A to MON-RAD1A.
+MON-RAD1A,TB-RM1A,signal,raw_13_left_mid_controls/raw_14_center_mid_controls: MON-RAD1A lower lead terminates at TB-RM1A.
+MCC-31A,CB-P501A,power,raw_13_left_mid_controls/raw_14_center_mid_controls: MCC-31A internal bus dot feeds CB-P501A.
+CB-P501A,RELAY-KP501A,power,raw_13_left_mid_controls/raw_14_center_mid_controls: branch conductor descends from CB-P501A into RELAY-KP501A.
+RELAY-KP501A,PUMP-CHM501A,power,raw_13_left_mid_controls/raw_14_center_mid_controls: same branch continues from RELAY-KP501A to PUMP-CHM501A.
+PUMP-CHM501A,GND-P501A,ground,raw_13_left_mid_controls/raw_14_center_mid_controls: PUMP-CHM501A lower lead terminates at GND-P501A.
+MCC-31A,CB-CV121A,power,raw_13_left_mid_controls/raw_14_center_mid_controls: MCC-31A internal bus dot feeds CB-CV121A.
+CB-CV121A,RELAY-KCV121A,control,raw_13_left_mid_controls/raw_14_center_mid_controls: branch conductor descends from CB-CV121A into RELAY-KCV121A.
+RELAY-KCV121A,MOV-CV121A,control,raw_13_left_mid_controls/raw_14_center_mid_controls: same branch continues from RELAY-KCV121A to MOV-CV121A.
+MOV-CV121A,TB-CV121A,control,raw_13_left_mid_controls/raw_14_center_mid_controls: MOV-CV121A lower lead terminates at TB-CV121A.
+MCC-11B,CB-P201B,power,raw_14_center_mid_controls: MCC-11B internal bus dot feeds CB-P201B.
+CB-P201B,RELAY-KP201B,power,raw_14_center_mid_controls: branch conductor descends from CB-P201B into RELAY-KP201B.
+RELAY-KP201B,PUMP-RHR201B,power,raw_14_center_mid_controls: same branch continues from RELAY-KP201B to PUMP-RHR201B.
+PUMP-RHR201B,GND-P201B,ground,raw_14_center_mid_controls: PUMP-RHR201B lower lead terminates at GND-P201B.
+MCC-11B,CB-P211B,power,raw_14_center_mid_controls: MCC-11B internal bus dot feeds CB-P211B.
+CB-P211B,RELAY-KP211B,power,raw_14_center_mid_controls: branch conductor descends from CB-P211B into RELAY-KP211B.
+RELAY-KP211B,PUMP-CS211B,power,raw_14_center_mid_controls: same branch continues from RELAY-KP211B to PUMP-CS211B.
+PUMP-CS211B,GND-P211B,ground,raw_14_center_mid_controls: PUMP-CS211B lower lead terminates at GND-P211B.
+MCC-11B,CB-P221B,power,raw_14_center_mid_controls: MCC-11B internal bus dot feeds CB-P221B.
+CB-P221B,RELAY-KP221B,power,raw_14_center_mid_controls: branch conductor descends from CB-P221B into RELAY-KP221B.
+RELAY-KP221B,PUMP-SI221B,power,raw_14_center_mid_controls: same branch continues from RELAY-KP221B to PUMP-SI221B.
+PUMP-SI221B,GND-P221B,ground,raw_14_center_mid_controls: PUMP-SI221B lower lead terminates at GND-P221B.
+MCC-12B,CB-P101B,power,raw_14_center_mid_controls: MCC-12B internal bus dot feeds CB-P101B.
+CB-P101B,RELAY-KP101B,power,raw_14_center_mid_controls: branch conductor descends from CB-P101B into RELAY-KP101B.
+RELAY-KP101B,PUMP-AFW101B,power,raw_14_center_mid_controls: same branch continues from RELAY-KP101B to PUMP-AFW101B.
+PUMP-AFW101B,GND-P101B,ground,raw_14_center_mid_controls: PUMP-AFW101B lower lead terminates at GND-P101B.
+MCC-12B,CB-HV101B,power,raw_14_center_mid_controls: MCC-12B internal bus dot feeds CB-HV101B.
+CB-HV101B,RELAY-KHV101B,control,raw_14_center_mid_controls: branch conductor descends from CB-HV101B into RELAY-KHV101B.
+RELAY-KHV101B,MOV-HV101B,control,raw_14_center_mid_controls: same branch continues from RELAY-KHV101B to MOV-HV101B.
+MOV-HV101B,TB-HV101B,control,raw_14_center_mid_controls: MOV-HV101B lower lead terminates at TB-HV101B.
+MCC-12B,CB-FN1B,power,raw_14_center_mid_controls: MCC-12B internal bus dot feeds CB-FN1B.
+CB-FN1B,RELAY-KFN1B,power,raw_14_center_mid_controls: branch conductor descends from CB-FN1B into RELAY-KFN1B.
+RELAY-KFN1B,FAN-HV1B,power,raw_14_center_mid_controls: same branch continues from RELAY-KFN1B to FAN-HV1B.
+FAN-HV1B,GND-FN1B,ground,raw_14_center_mid_controls: FAN-HV1B lower lead terminates at GND-FN1B.
+MCC-21B,CB-P301B,power,raw_14_center_mid_controls/raw_15_right_mid_controls: MCC-21B internal bus dot feeds CB-P301B.
+CB-P301B,RELAY-KP301B,power,raw_14_center_mid_controls/raw_15_right_mid_controls: branch conductor descends from CB-P301B into RELAY-KP301B.
+RELAY-KP301B,PUMP-CCM301B,power,raw_14_center_mid_controls/raw_15_right_mid_controls: same branch continues from RELAY-KP301B to PUMP-CCM301B.
+PUMP-CCM301B,GND-P301B,ground,raw_14_center_mid_controls/raw_15_right_mid_controls: PUMP-CCM301B lower lead terminates at GND-P301B.
+MCC-21B,CB-P401B,power,raw_14_center_mid_controls/raw_15_right_mid_controls: MCC-21B internal bus dot feeds CB-P401B.
+CB-P401B,RELAY-KP401B,power,raw_14_center_mid_controls/raw_15_right_mid_controls: branch conductor descends from CB-P401B into RELAY-KP401B.
+RELAY-KP401B,PUMP-SW401B,power,raw_14_center_mid_controls/raw_15_right_mid_controls: same branch continues from RELAY-KP401B to PUMP-SW401B.
+PUMP-SW401B,GND-P401B,ground,raw_14_center_mid_controls/raw_15_right_mid_controls: PUMP-SW401B lower lead terminates at GND-P401B.
+MCC-21B,CB-HT1B,power,raw_14_center_mid_controls/raw_15_right_mid_controls: MCC-21B internal bus dot feeds CB-HT1B.
+CB-HT1B,RELAY-KHT1B,power,raw_14_center_mid_controls/raw_15_right_mid_controls: branch conductor descends from CB-HT1B into RELAY-KHT1B.
+RELAY-KHT1B,HTR-PZR1B,power,raw_14_center_mid_controls/raw_15_right_mid_controls: same branch continues from RELAY-KHT1B to HTR-PZR1B.
+HTR-PZR1B,TB-HT1B,control,raw_14_center_mid_controls/raw_15_right_mid_controls: HTR-PZR1B lower lead terminates at TB-HT1B.
+MCC-31B,CB-RM1B,power,raw_15_right_mid_controls: MCC-31B internal bus dot feeds CB-RM1B.
+CB-RM1B,RELAY-KRM1B,signal,raw_15_right_mid_controls: branch conductor descends from CB-RM1B into RELAY-KRM1B.
+RELAY-KRM1B,MON-RAD1B,signal,raw_15_right_mid_controls: same branch continues from RELAY-KRM1B to MON-RAD1B.
+MON-RAD1B,TB-RM1B,signal,raw_15_right_mid_controls: MON-RAD1B lower lead terminates at TB-RM1B.
+MCC-31B,CB-P501B,power,raw_15_right_mid_controls: MCC-31B internal bus dot feeds CB-P501B.
+CB-P501B,RELAY-KP501B,power,raw_15_right_mid_controls: branch conductor descends from CB-P501B into RELAY-KP501B.
+RELAY-KP501B,PUMP-CHM501B,power,raw_15_right_mid_controls: same branch continues from RELAY-KP501B to PUMP-CHM501B.
+PUMP-CHM501B,GND-P501B,ground,raw_15_right_mid_controls: PUMP-CHM501B lower lead terminates at GND-P501B.
+MCC-31B,CB-CV121B,power,raw_15_right_mid_controls: MCC-31B internal bus dot feeds CB-CV121B.
+CB-CV121B,RELAY-KCV121B,control,raw_15_right_mid_controls: branch conductor descends from CB-CV121B into RELAY-KCV121B.
+RELAY-KCV121B,MOV-CV121B,control,raw_15_right_mid_controls: same branch continues from RELAY-KCV121B to MOV-CV121B.
+MOV-CV121B,TB-CV121B,control,raw_15_right_mid_controls: MOV-CV121B lower lead terminates at TB-CV121B.
+BUS-480-B,TR-RPS-A,power,raw_16_left_lower_dc/raw_24_close_vital_a_2x: solid vertical 480 V feed enters top of TR-RPS-A.
+TR-RPS-A,MG-RPS-A,power,raw_24_close_vital_a_2x: TR-RPS-A secondary descends directly to MG-RPS-A.
+MG-RPS-A,FT-AFW101,signal,raw_24_close_vital_a_2x: vertical instrument/power run from MG-RPS-A passes through FT-AFW101 junction.
+FT-AFW101,METER-VM-1,signal,raw_24_close_vital_a_2x: FT-AFW101 lower dotted lead continues to METER-VM-1.
+METER-VM-1,BUS-120-RPS-A,power,raw_26_close_vital_a_2x: METER-VM-1 vertical run terminates on BUS-120-RPS-A with filled dot.
+BUS-125DC-A,CHGR-125A,dc_power,raw_28_close_bottom_left_batteries_2x: CHGR-125A top lead ties into BUS-125DC-A.
+BATT-125A,CHGR-125A,dc_power,raw_28_close_bottom_left_batteries_2x: dashed DC link from BATT-125A to CHGR-125A.
+BUS-125DC-A,INV-120A,dc_power,raw_28_close_bottom_left_batteries_2x: vertical from BUS-125DC-A drops to INV-120A input.
+INV-120A,BUS-120-RPS-A,power,raw_28_close_bottom_left_batteries_2x: INV-120A output lands on BUS-120-RPS-A.
+BUS-125DC-A,CP-RPS-A,dc_power,raw_16_left_lower_dc: vertical tap from BUS-125DC-A rises into CP-RPS-A/RPS control area.
+CP-RPS-A,JB-RPS-A3-1A,control,raw_16_left_lower_dc/raw_22_close_left_rps_control_2x: CP-RPS-A lower conductor drops into JB-RPS-A3-1A.
+JB-RPS-A3-1A,PROT-UV-A,control,raw_16_left_lower_dc: JB-RPS-A3-1A continues down to PROT-UV-A.
+PROT-UV-A,RELAY-27A,control,raw_16_left_lower_dc: dashed control wire leaves PROT-UV-A right terminal and enters RELAY-27A.
+RELAY-27A,CP-ESF-A,control,raw_16_left_lower_dc: dashed route from RELAY-27A continues upward/right to CP-ESF-A area.
+BUS-125DC-A,CP-ESF-A,dc_power,raw_16_left_lower_dc: solid vertical feed from BUS-125DC-A rises at CP-ESF-A side.
+CP-ESF-A,TB-2A,control,raw_16_left_lower_dc: CP-ESF-A bottom lead connects to TB-2A.
+TB-2A,PROT-GF-A,control,raw_16_left_lower_dc: TB-2A lower lead continues to PROT-GF-A.
+PROT-GF-A,RELAY-86A,control,raw_16_left_lower_dc/raw_24_close_vital_a_2x: dashed trip/control line runs from PROT-GF-A to RELAY-86A.
+RELAY-86A,TB-3A,control,raw_24_close_vital_a_2x: dashed output from RELAY-86A ties to TB-3A vertical/control route.
+TB-3A,CP-DCS-01,control,raw_16_left_lower_dc/raw_24_close_vital_a_2x: TB-3A vertical lead connects upward to CP-DCS-01.
+CP-DCS-01,TB-ESF-1,signal,raw_24_close_vital_a_2x: dotted/dashed DCS signal bundle leaves CP-DCS-01 and lands on TB-ESF-1.
+MG-RPS-A,TB-ESF-1,signal,raw_24_close_vital_a_2x: dotted signal from MG-RPS-A right side enters TB-ESF-1.
+TB-ESF-1,PT-RCS101,signal,raw_24_close_vital_a_2x: dotted signal conductor from TB-ESF-1 to PT-RCS101.
+PT-RCS101,REC-SOE-1,signal,raw_24_close_vital_a_2x/raw_28_close_bottom_left_batteries_2x: PT-RCS101 lower lead enters REC-SOE-1.
+REC-SOE-1,BUS-125DC-A,dc_power,raw_28_close_bottom_left_batteries_2x: REC-SOE-1 lower connection lands on BUS-125DC-A junction.
+TB-ESF-1,LT-RWST101,signal,raw_24_close_vital_a_2x: dotted signal conductor from TB-ESF-1 to LT-RWST101.
+LT-RWST101,ANN-501,signal,raw_24_close_vital_a_2x: LT-RWST101 lower lead connects to ANN-501.
+TB-ESF-1,FT-AFW101,signal,raw_24_close_vital_a_2x: dotted signal conductor from TB-ESF-1 to FT-AFW101.
+BUS-480-B,TR-RPS-B,power,raw_17_center_lower_dc/raw_27_close_vital_b_2x: solid vertical 480 V feed enters top of TR-RPS-B.
+TR-RPS-B,MG-RPS-B,power,raw_27_close_vital_b_2x: TR-RPS-B secondary descends directly to MG-RPS-B.
+MG-RPS-B,RTD-RCS101,signal,raw_27_close_vital_b_2x: vertical run from MG-RPS-B has filled tap to RTD-RCS101.
+RTD-RCS101,BUS-120-RPS-B,power,raw_27_close_vital_b_2x/raw_29_close_bottom_right_batteries_2x: RTD/MG vertical run lands on BUS-120-RPS-B.
+BUS-125DC-B,CHGR-125B,dc_power,raw_29_close_bottom_right_batteries_2x: CHGR-125B top lead ties into BUS-125DC-B.
+BATT-125B,CHGR-125B,dc_power,raw_29_close_bottom_right_batteries_2x: dashed DC link from BATT-125B to CHGR-125B.
+BUS-125DC-B,INV-120B,dc_power,raw_29_close_bottom_right_batteries_2x: vertical from BUS-125DC-B drops to INV-120B input.
+INV-120B,BUS-120-RPS-B,power,raw_29_close_bottom_right_batteries_2x: INV-120B output lands on BUS-120-RPS-B.
+BUS-125DC-B,CP-RPS-B,dc_power,raw_17_center_lower_dc: vertical tap from BUS-125DC-B rises into CP-RPS-B/RPS control area.
+CP-RPS-B,JB-RPS-B3-1B,control,raw_17_center_lower_dc: CP-RPS-B lower conductor drops into JB-RPS-B3-1B.
+JB-RPS-B3-1B,PROT-UV-B,control,raw_17_center_lower_dc: JB-RPS-B3-1B continues down to PROT-UV-B.
+PROT-UV-B,RELAY-27B,control,raw_17_center_lower_dc: dashed control wire leaves PROT-UV-B right terminal and enters RELAY-27B.
+RELAY-27B,CP-ESF-B,control,raw_17_center_lower_dc: dashed route from RELAY-27B continues to CP-ESF-B area.
+BUS-125DC-B,CP-ESF-B,dc_power,raw_17_center_lower_dc/raw_27_close_vital_b_2x: solid vertical feed from BUS-125DC-B rises at CP-ESF-B side.
+CP-ESF-B,TB-2B,control,raw_17_center_lower_dc/raw_27_close_vital_b_2x: CP-ESF-B bottom lead connects to TB-2B.
+TB-2B,PROT-GF-B,control,raw_17_center_lower_dc/raw_27_close_vital_b_2x: TB-2B lower lead continues to PROT-GF-B.
+PROT-GF-B,RELAY-86B,control,raw_17_center_lower_dc/raw_27_close_vital_b_2x: dashed trip/control line runs from PROT-GF-B to RELAY-86B.
+RELAY-86B,TB-3B,control,raw_27_close_vital_b_2x: dashed output from RELAY-86B ties to TB-3B/annunciator route.
+TB-3B,CP-ANN-01,control,raw_27_close_vital_b_2x: TB-3B vertical lead connects upward to CP-ANN-01.
+MG-RPS-B,TB-ESF-2,signal,raw_27_close_vital_b_2x: dotted signal from MG-RPS-B right side enters TB-ESF-2.
+TB-ESF-2,LS-SUMP101,signal,raw_27_close_vital_b_2x: dotted signal conductor from TB-ESF-2 to LS-SUMP101.
+TB-ESF-2,XS-DOOR101,signal,raw_27_close_vital_b_2x: dotted signal conductor from TB-ESF-2 to XS-DOOR101.
+UCG-01,GND-N0,ground,raw_17_center_lower_dc: UCG-01 lower conductor terminates at GND-N0 ground symbol.

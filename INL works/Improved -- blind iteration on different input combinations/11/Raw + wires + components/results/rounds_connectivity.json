@@ -1,0 +1,42 @@
+[
+  {
+    "round": "round01_diego",
+    "node_count": 124,
+    "edge_count": 132,
+    "matrix": "round01_diego_connectivity_matrix.csv",
+    "edges": "round01_diego_edges.csv",
+    "agent": "Diego",
+    "role": "high-recall extractor",
+    "summary": "Initial high-recall extraction retained four *-SEC conductor labels as nodes and left ATS feeder/DC bus landings uncertain."
+  },
+  {
+    "round": "round01_jennifer",
+    "node_count": 120,
+    "edge_count": 136,
+    "matrix": "round01_jennifer_connectivity_matrix.csv",
+    "edges": "round01_jennifer_edges.csv",
+    "agent": "Jennifer",
+    "role": "precision reviewer/refiner",
+    "summary": "Removed conductor-label-only *-SEC nodes, promoted clear MCC-to-ATS and rectifier-to-DC-bus solid landings, kept SSPS dashed routes uncertain."
+  },
+  {
+    "round": "round02_diego",
+    "node_count": 120,
+    "edge_count": 136,
+    "matrix": "round02_diego_connectivity_matrix.csv",
+    "edges": "round02_diego_edges.csv",
+    "agent": "Diego",
+    "role": "high-recall saturation review",
+    "summary": "Saturation pass over Jennifer's corrected candidate."
+  },
+  {
+    "round": "round02_jennifer",
+    "node_count": 120,
+    "edge_count": 136,
+    "matrix": "round02_jennifer_connectivity_matrix.csv",
+    "edges": "round02_jennifer_edges.csv",
+    "agent": "Jennifer",
+    "role": "precision final signoff",
+    "summary": "Final precision signoff after Diego saturation response."
+  }
+]

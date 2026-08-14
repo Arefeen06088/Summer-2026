@@ -1,0 +1,5 @@
+prediction_file,predicted_node_count,gt_node_count,predicted_edge_count,gt_edge_count,TP,FP,FN,precision,recall,F1,relaxed_TP,relaxed_FP,relaxed_FN,relaxed_precision,relaxed_recall,relaxed_F1,delta_F1_if_OCR_confusions_solved,likely_main_gap_reason
+connectivity_matrix_balanced.csv,98,100,77,115,65,12,50,0.844156,0.565217,0.677083,65,12,50,0.844156,0.565217,0.677083,0.000000,missing components (25); missing edges/connectivity (25)
+connectivity_matrix_balanced_plus.csv,98,100,86,115,67,19,48,0.779070,0.582609,0.666667,67,19,48,0.779070,0.582609,0.666667,0.000000,missing components (25); missing edges/connectivity (23)
+connectivity_matrix_high_precision.csv,98,100,70,115,62,8,53,0.885714,0.539130,0.670270,62,8,53,0.885714,0.539130,0.670270,0.000000,missing edges/connectivity (28); missing components (25)
+connectivity_matrix_recall_favoring.csv,98,100,100,115,68,32,47,0.680000,0.591304,0.632558,68,32,47,0.680000,0.591304,0.632558,0.000000,missing components (25); extra/spurious edges (23)

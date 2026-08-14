@@ -1,0 +1,37 @@
+Connectivity matrix validation summary - Document 7
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\7\synthetic_npp_connectivity_matrix_clean.csv
+
+Scores:
+- Diego -- Round 1 (round_matrices\round_01_diego_connectivity_matrix.csv): TP=122, FP=14, FN=18, Precision=0.897059, Recall=0.871429, F1=0.884058
+- Jennifer -- Round 2 (round_matrices\round_02_jennifer_connectivity_matrix.csv): TP=124, FP=11, FN=16, Precision=0.918519, Recall=0.885714, F1=0.901818
+- Diego -- Round 3 (round_matrices\round_03_diego_connectivity_matrix.csv): TP=127, FP=13, FN=13, Precision=0.907143, Recall=0.907143, F1=0.907143
+- Jennifer -- Round 4 (round_matrices\round_04_jennifer_connectivity_matrix.csv): TP=127, FP=13, FN=13, Precision=0.907143, Recall=0.907143, F1=0.907143
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=127, FP=13, FN=13, Precision=0.907143, Recall=0.907143, F1=0.907143
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- ANN-101 -- UPS-120A
+- ANN-201 -- SR-101
+- ANN-201 -- UPS-120B
+- BAT-125A -- BCHG-125A
+- BAT-125A -- LC-480A
+- MCC-A1 -- PNL-AC-CR1
+- MCC-D1 -- PNL-AC-CR2
+- PNL-AC-CR1 -- RELAY-K101
+- PNL-AC-CR1 -- RELAY-K102
+- PNL-AC-CR2 -- RELAY-K201
+
+False-negative edge examples:
+- BCHG-125A -- LC-480A
+- CB-DG-A -- RELAY-K102
+- CB-DG-B -- RELAY-K202
+- CB-TIE-4 -- RELAY-K101
+- CB-TIE-4 -- RELAY-K201
+- CB-UAT-A -- RELAY-K101
+- CB-UAT-B -- RELAY-K201
+- MCC-A1 -- RELAY-K102
+- MCC-D1 -- RELAY-K202
+- PNL-AC-CR1 -- RELAY-K201

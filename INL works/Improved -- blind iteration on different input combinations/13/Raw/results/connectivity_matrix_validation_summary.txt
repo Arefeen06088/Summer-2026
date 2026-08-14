@@ -1,0 +1,31 @@
+Connectivity matrix validation summary - Document 13
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\13\synthetic_npp_connectivity_matrix_dc_bus_clean_retry.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_connectivity_matrix.csv): TP=182, FP=4, FN=12, Precision=0.978495, Recall=0.938144, F1=0.957895
+- Jennifer -- Round 1 (round_01_jennifer_connectivity_matrix.csv): TP=186, FP=0, FN=8, Precision=1.000000, Recall=0.958763, F1=0.978947
+- Diego -- Round 2 (round_02_diego_connectivity_matrix.csv): TP=186, FP=0, FN=8, Precision=1.000000, Recall=0.958763, F1=0.978947
+- Jennifer -- Round 2 (round_02_jennifer_connectivity_matrix.csv): TP=186, FP=0, FN=8, Precision=1.000000, Recall=0.958763, F1=0.978947
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=186, FP=0, FN=8, Precision=1.000000, Recall=0.958763, F1=0.978947
+
+Main reasons the final score was not perfect:
+- GT edges are missing; recall is the limiting term.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-negative edge examples:
+- GND-A -- GND-PLANT
+- GND-A -- TR-480A
+- GND-B -- GND-PLANT
+- GND-B -- TR-480B
+- GND-C -- GND-PLANT
+- GND-C -- TR-480C
+- GND-D -- GND-PLANT
+- GND-D -- TR-480D
+
+Missing GT node examples:
+- GND-PLANT: 4 missed incident GT edge(s)
+- GND-A: 2 missed incident GT edge(s)
+- GND-B: 2 missed incident GT edge(s)
+- GND-C: 2 missed incident GT edge(s)
+- GND-D: 2 missed incident GT edge(s)

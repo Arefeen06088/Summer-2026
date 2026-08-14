@@ -1,0 +1,32 @@
+{
+  "node_count": 120,
+  "edge_count": 116,
+  "qa_errors": [],
+  "isolated_nodes": [
+    "GND-A",
+    "GND-B"
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "agent": "Diego",
+      "description": "High-recall first extraction, including visually plausible route/area nodes.",
+      "node_count": 123,
+      "edge_count": 127
+    },
+    {
+      "round": 2,
+      "agent": "Jennifer",
+      "description": "Precision refinement; removed route/area annotations and unsupported sensor/protection edges.",
+      "node_count": 120,
+      "edge_count": 116
+    },
+    {
+      "round": 3,
+      "agent": "Diego",
+      "description": "Convergence pass; Diego agreed with Jennifer R1 final graph.",
+      "node_count": 120,
+      "edge_count": 116
+    }
+  ]
+}

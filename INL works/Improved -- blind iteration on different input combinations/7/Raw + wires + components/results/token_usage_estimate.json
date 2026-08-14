@@ -1,0 +1,502 @@
+{
+  "limitations": [
+    "No OpenAI API key was available, so the Responses input-token counting endpoint could not be called.",
+    "The Codex/subagent tool responses did not expose usage objects, cached input tokens, or reasoning tokens.",
+    "Text tokens use chars/4 approximation because tiktoken is not installed in this environment.",
+    "Image tokens use a high-detail 512-tile approximation from actual image dimensions."
+  ],
+  "calls": [
+    {
+      "document": 7,
+      "iteration": 1,
+      "call_id": "main-setup-and-resource-check",
+      "actor": "Main",
+      "round": "orchestration",
+      "input_tokens_est": 4500,
+      "cached_input_tokens": null,
+      "output_tokens_low": 600,
+      "output_tokens_expected": 1200,
+      "output_tokens_high": 2200,
+      "reasoning_tokens": null,
+      "image_file_input_tokens_est": 0,
+      "text_input_tokens_est": 4500,
+      "total_tokens_low": 4425,
+      "total_tokens_expected": 5700,
+      "total_tokens_high": 7825,
+      "usage_object_available": false,
+      "image_inputs": [],
+      "notes": "Directory/file inspection, crop planning, no GT/OCR check. Exact Codex main-call usage is not exposed."
+    },
+    {
+      "document": 7,
+      "iteration": 1,
+      "call_id": "main-visual-review",
+      "actor": "Main",
+      "round": "orchestration",
+      "input_tokens_est": 32595,
+      "cached_input_tokens": null,
+      "output_tokens_low": 1400,
+      "output_tokens_expected": 2600,
+      "output_tokens_high": 4500,
+      "reasoning_tokens": null,
+      "image_file_input_tokens_est": 30345,
+      "text_input_tokens_est": 2250,
+      "total_tokens_low": 26072,
+      "total_tokens_expected": 35195,
+      "total_tokens_high": 48279,
+      "usage_object_available": false,
+      "image_inputs": [
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\top_aux_power_and_sources.png",
+          "width": 5530,
+          "height": 1210,
+          "estimated_image_tokens": 2465
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\left_train_ab_loads.png",
+          "width": 2530,
+          "height": 1600,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\right_train_cd_loads.png",
+          "width": 2700,
+          "height": 1600,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\left_train_a_dc_control.png",
+          "width": 2260,
+          "height": 1580,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\right_train_b_dc_control.png",
+          "width": 2500,
+          "height": 1580,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\bottom_interlock_raceways.png",
+          "width": 4050,
+          "height": 1430,
+          "estimated_image_tokens": 1785
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\detected_components_and_logical_overlay\\top_aux_power_and_sources.png",
+          "width": 5530,
+          "height": 1210,
+          "estimated_image_tokens": 2465
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\detected_components_and_logical_overlay\\left_train_ab_loads.png",
+          "width": 2530,
+          "height": 1600,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\detected_components_and_logical_overlay\\right_train_cd_loads.png",
+          "width": 2700,
+          "height": 1600,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\title_legend_notes.png",
+          "width": 1300,
+          "height": 4100,
+          "estimated_image_tokens": 1785
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\top_left_offsite_satA.png",
+          "width": 1600,
+          "height": 1250,
+          "estimated_image_tokens": 765
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\top_right_satB_dgB.png",
+          "width": 2000,
+          "height": 1250,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\bus4_tie_middle.png",
+          "width": 1250,
+          "height": 600,
+          "estimated_image_tokens": 1445
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\a_battery_charger_zoom.png",
+          "width": 1650,
+          "height": 650,
+          "estimated_image_tokens": 1445
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\b_battery_charger_zoom.png",
+          "width": 2100,
+          "height": 650,
+          "estimated_image_tokens": 1785
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\a_control_center_zoom.png",
+          "width": 2900,
+          "height": 1150,
+          "estimated_image_tokens": 1445
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\b_control_center_zoom.png",
+          "width": 3000,
+          "height": 1150,
+          "estimated_image_tokens": 1445
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\a_control_full_zoom.png",
+          "width": 2850,
+          "height": 1400,
+          "estimated_image_tokens": 1445
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\b_control_full_zoom.png",
+          "width": 3050,
+          "height": 1400,
+          "estimated_image_tokens": 1445
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\raceways_lower_full.png",
+          "width": 6250,
+          "height": 2450,
+          "estimated_image_tokens": 1445
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\mcc_a_b_control_taps.png",
+          "width": 3700,
+          "height": 1700,
+          "estimated_image_tokens": 1445
+        }
+      ],
+      "notes": "Main-agent visual inspection batches aggregated; individual internal model-call boundaries are not exposed."
+    },
+    {
+      "document": 7,
+      "iteration": 1,
+      "call_id": "diego-r1-high-recall",
+      "actor": "Diego",
+      "round": 1,
+      "input_tokens_est": 14040,
+      "cached_input_tokens": null,
+      "output_tokens_low": 6500,
+      "output_tokens_expected": 8500,
+      "output_tokens_high": 11500,
+      "reasoning_tokens": null,
+      "image_file_input_tokens_est": 13515,
+      "text_input_tokens_est": 525,
+      "total_tokens_low": 17083,
+      "total_tokens_expected": 22540,
+      "total_tokens_high": 30402,
+      "usage_object_available": false,
+      "image_inputs": [
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\raw -- synthetic_npp_electrical_schematic_clean (1).png",
+          "width": 7200,
+          "height": 4800,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\detected_components_and_logical_overlay.png",
+          "width": 7200,
+          "height": 4800,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\wires_mask_overlay.png",
+          "width": 7200,
+          "height": 4800,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\top_aux_power_and_sources.png",
+          "width": 5530,
+          "height": 1210,
+          "estimated_image_tokens": 2465
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\left_train_ab_loads.png",
+          "width": 2530,
+          "height": 1600,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\right_train_cd_loads.png",
+          "width": 2700,
+          "height": 1600,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\left_train_a_dc_control.png",
+          "width": 2260,
+          "height": 1580,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\right_train_b_dc_control.png",
+          "width": 2500,
+          "height": 1580,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\bottom_interlock_raceways.png",
+          "width": 4050,
+          "height": 1430,
+          "estimated_image_tokens": 1785
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\detected_components_and_logical_overlay\\whole_functional_area.png",
+          "width": 5630,
+          "height": 4250,
+          "estimated_image_tokens": 765
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\wires_mask_overlay\\whole_functional_area.png",
+          "width": 5630,
+          "height": 4250,
+          "estimated_image_tokens": 765
+        }
+      ],
+      "notes": "Subagent output was captured by the tool, but the model usage object was not exposed."
+    },
+    {
+      "document": 7,
+      "iteration": 1,
+      "call_id": "jennifer-r1-precision",
+      "actor": "Jennifer",
+      "round": 2,
+      "input_tokens_est": 17140,
+      "cached_input_tokens": null,
+      "output_tokens_low": 6200,
+      "output_tokens_expected": 8200,
+      "output_tokens_high": 11000,
+      "reasoning_tokens": null,
+      "image_file_input_tokens_est": 13515,
+      "text_input_tokens_est": 3625,
+      "total_tokens_low": 19418,
+      "total_tokens_expected": 25340,
+      "total_tokens_high": 33777,
+      "usage_object_available": false,
+      "image_inputs": [
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\raw -- synthetic_npp_electrical_schematic_clean (1).png",
+          "width": 7200,
+          "height": 4800,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\detected_components_and_logical_overlay.png",
+          "width": 7200,
+          "height": 4800,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\wires_mask_overlay.png",
+          "width": 7200,
+          "height": 4800,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\top_aux_power_and_sources.png",
+          "width": 5530,
+          "height": 1210,
+          "estimated_image_tokens": 2465
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\left_train_ab_loads.png",
+          "width": 2530,
+          "height": 1600,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\right_train_cd_loads.png",
+          "width": 2700,
+          "height": 1600,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\left_train_a_dc_control.png",
+          "width": 2260,
+          "height": 1580,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\right_train_b_dc_control.png",
+          "width": 2500,
+          "height": 1580,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\raw____synthetic_npp_electrical_schematic_clean__1_\\bottom_interlock_raceways.png",
+          "width": 4050,
+          "height": 1430,
+          "estimated_image_tokens": 1785
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\detected_components_and_logical_overlay\\whole_functional_area.png",
+          "width": 5630,
+          "height": 4250,
+          "estimated_image_tokens": 765
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\wires_mask_overlay\\whole_functional_area.png",
+          "width": 5630,
+          "height": 4250,
+          "estimated_image_tokens": 765
+        }
+      ],
+      "notes": "Input includes Diego R1 proposal summary plus image set."
+    },
+    {
+      "document": 7,
+      "iteration": 1,
+      "call_id": "diego-r2-saturation",
+      "actor": "Diego",
+      "round": 3,
+      "input_tokens_est": 9805,
+      "cached_input_tokens": null,
+      "output_tokens_low": 3800,
+      "output_tokens_expected": 5200,
+      "output_tokens_high": 7200,
+      "reasoning_tokens": null,
+      "image_file_input_tokens_est": 8755,
+      "text_input_tokens_est": 1050,
+      "total_tokens_low": 11259,
+      "total_tokens_expected": 15005,
+      "total_tokens_high": 20332,
+      "usage_object_available": false,
+      "image_inputs": [
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\raw -- synthetic_npp_electrical_schematic_clean (1).png",
+          "width": 7200,
+          "height": 4800,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\top_left_offsite_satA.png",
+          "width": 1600,
+          "height": 1250,
+          "estimated_image_tokens": 765
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\top_right_satB_dgB.png",
+          "width": 2000,
+          "height": 1250,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\bus4_tie_middle.png",
+          "width": 1250,
+          "height": 600,
+          "estimated_image_tokens": 1445
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\a_control_full_zoom.png",
+          "width": 2850,
+          "height": 1400,
+          "estimated_image_tokens": 1445
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\b_control_full_zoom.png",
+          "width": 3050,
+          "height": 1400,
+          "estimated_image_tokens": 1445
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\raceways_lower_full.png",
+          "width": 6250,
+          "height": 2450,
+          "estimated_image_tokens": 1445
+        }
+      ],
+      "notes": "Saturation review; output is the 120-node/140-edge final candidate."
+    },
+    {
+      "document": 7,
+      "iteration": 1,
+      "call_id": "jennifer-r2-final-signoff",
+      "actor": "Jennifer",
+      "round": 4,
+      "input_tokens_est": 9565,
+      "cached_input_tokens": null,
+      "output_tokens_low": 200,
+      "output_tokens_expected": 700,
+      "output_tokens_high": 2200,
+      "reasoning_tokens": null,
+      "image_file_input_tokens_est": 5440,
+      "text_input_tokens_est": 4125,
+      "total_tokens_low": 7787,
+      "total_tokens_expected": 10265,
+      "total_tokens_high": 14701,
+      "usage_object_available": false,
+      "image_inputs": [
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\raw -- synthetic_npp_electrical_schematic_clean (1).png",
+          "width": 7200,
+          "height": 4800,
+          "estimated_image_tokens": 1105
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\a_control_full_zoom.png",
+          "width": 2850,
+          "height": 1400,
+          "estimated_image_tokens": 1445
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\b_control_full_zoom.png",
+          "width": 3050,
+          "height": 1400,
+          "estimated_image_tokens": 1445
+        },
+        {
+          "path": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\7\\Raw + wires + components\\results\\visual_crops\\focused\\raceways_lower_full.png",
+          "width": 6250,
+          "height": 2450,
+          "estimated_image_tokens": 1445
+        }
+      ],
+      "notes": "Final agree/disagree check. Expected output is short if saturated."
+    },
+    {
+      "document": 7,
+      "iteration": 1,
+      "call_id": "main-artifact-generation-and-final",
+      "actor": "Main",
+      "round": "orchestration",
+      "input_tokens_est": 6000,
+      "cached_input_tokens": null,
+      "output_tokens_low": 1200,
+      "output_tokens_expected": 2200,
+      "output_tokens_high": 4200,
+      "reasoning_tokens": null,
+      "image_file_input_tokens_est": 0,
+      "text_input_tokens_est": 6000,
+      "total_tokens_low": 6300,
+      "total_tokens_expected": 8200,
+      "total_tokens_high": 11700,
+      "usage_object_available": false,
+      "image_inputs": [],
+      "notes": "Script generation, validation, final response. Exact Codex usage is not exposed."
+    }
+  ],
+  "totals": {
+    "document": 7,
+    "iteration": 1,
+    "method": "offline estimate; no API key, no Responses input-token counting endpoint call",
+    "input_tokens_est": 93645,
+    "image_file_input_tokens_est": 71570,
+    "text_input_tokens_est": 22075,
+    "output_tokens_low": 19900,
+    "output_tokens_expected": 28600,
+    "output_tokens_high": 42800,
+    "total_tokens_low": 92344,
+    "total_tokens_expected": 122245,
+    "total_tokens_high": 167016,
+    "cached_input_tokens": null,
+    "reasoning_tokens": null
+  }
+}

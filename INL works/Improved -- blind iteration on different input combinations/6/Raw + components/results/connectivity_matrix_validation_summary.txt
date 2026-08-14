@@ -1,0 +1,18 @@
+Connectivity matrix validation summary
+Document: 6
+Input configuration: Raw + components
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\6\synthetic_npp_connectivity_matrix_variant3_redo_clean_v7.csv
+GT normalized nodes: 105; GT normalized edges: 131
+Matrices evaluated: 5
+Best row: Diego -- Round 1 from diego_round1_connectivity_matrix.csv with Precision=0.961165, Recall=0.755725, F1=0.846154
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=99, FP=4, FN=32, Precision=0.961165, Recall=0.755725, F1=0.846154
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+No extra/non-GT extracted nodes were attached to false-positive edges in the final edge set.
+Missing GT nodes examples: none.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: GND-A -- REC-A; GND-B -- REC-B; JBX-ESF-A -- RELAY-DG-A; JBX-ESF-B -- RELAY-DG-B.
+False-negative edge examples among GT-known nodes: ATS-A -- RELAY-UV-A; ATS-B -- RELAY-UV-B; CB-DG-A -- RELAY-DG-A; CB-DG-B -- RELAY-DG-B; CP-ESFAS-A -- JBX-ESF-A; CP-ESFAS-A -- PNL-DC-A; CP-ESFAS-A -- UPS-A; CP-ESFAS-B -- JBX-ESF-B.
+
+What-if node pruning insight: no non-GT intermediate nodes were available to prune; the remaining drop is mainly connectivity/edge discovery or missing direct GT edges.

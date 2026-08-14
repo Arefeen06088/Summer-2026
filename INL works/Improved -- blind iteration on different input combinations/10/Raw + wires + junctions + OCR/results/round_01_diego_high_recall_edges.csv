@@ -1,0 +1,158 @@
+node_a,node_b,edge_kind,confidence,evidence
+SRC-345KV,BUS-SWY-345KV,power,high,raw top source crop shows source circle tied to top solid bus
+BUS-SWY-345KV,SAT-1,power,high,top bus has vertical drop to SAT-1 transformer
+SAT-1,CB-SAT,power,high,SAT-1 output conductor drops to CB-SAT
+CB-SAT,BUS-4160-B,power,high,CB-SAT lower conductor lands on BUS-4160-B
+GEN-01,UAT-1,power,high,solid conductor between GEN-01 and UAT-1
+UAT-1,CB-UAT,power,high,UAT-1 left side conductor drops through CB-UAT
+CB-UAT,BUS-4160-A,power,high,CB-UAT lower conductor lands on BUS-4160-A
+DG-1A,CB-DGA,power,high,DG-1A solid conductor enters CB-DGA
+CB-DGA,BUS-4160-A,power,high,CB-DGA output lands on BUS-4160-A
+DG-1B,CB-DGB,power,high,DG-1B solid conductor enters CB-DGB
+CB-DGB,BUS-4160-B,power,high,CB-DGB output lands on BUS-4160-B
+BUS-4160-A,CB-TIE-AB,power,high,horizontal tie conductor from A bus to CB-TIE-AB
+CB-TIE-AB,BUS-4160-B,power,high,horizontal tie conductor from CB-TIE-AB to B bus
+BUS-4160-A,CB-A01,power,high,A bus tap into CB-A01
+CB-A01,TR-480-A1,power,high,CB-A01 output conductor reaches TR-480-A1
+BUS-4160-A,CB-A02,power,high,A bus tap into CB-A02
+CB-A02,TR-480-A2,power,high,CB-A02 output aligns with TR-480-A2 feeder
+BUS-4160-A,CB-A03,power,high,A bus tap into CB-A03
+CB-A03,PUMP-RHR-A,power,high,CB-A03 feeder line reaches RHR pump branch
+BUS-4160-A,CB-A04,power,high,A bus tap into CB-A04
+CB-A04,PUMP-CS-A,power,high,CB-A04 feeder line reaches CS pump branch
+BUS-4160-A,CB-A05,power,high,A bus tap into CB-A05
+CB-A05,PUMP-AFW-A,power,high,CB-A05 feeder line reaches AFW pump branch
+BUS-4160-A,CB-A06,power,high,A bus tap into CB-A06
+CB-A06,TR-UPS-A,power,high,CB-A06 output conductor reaches visible TR-UPS-A symbol
+BUS-4160-A,CB-A07,power,high,A bus tap into CB-A07
+CB-A07,CHLR-A,power,high,CB-A07 output conductor reaches CHLR-A rectangle
+BUS-4160-A,CB-A08,power,high,A bus tap into CB-A08
+CB-A08,FAN-CR-A,power,high,CB-A08 output conductor follows right feeder to FAN-CR-A
+BUS-4160-A,CB-A09,power,high,A bus tap into CB-A09
+CB-A09,480V-LC-FEEDERS-A,power,medium,CB-A09 lower feeder visually continues into A 480V LC feeder area
+BUS-4160-B,CB-B01,power,high,B bus tap into CB-B01
+CB-B01,TR-480-B1,power,high,CB-B01 output conductor reaches TR-480-B1
+BUS-4160-B,CB-B02,power,high,B bus tap into CB-B02
+CB-B02,TR-480-B2,power,high,CB-B02 output aligns with TR-480-B2 feeder
+BUS-4160-B,CB-B03,power,high,B bus tap into CB-B03
+CB-B03,PUMP-RHR-B,power,high,CB-B03 feeder line reaches RHR pump branch
+BUS-4160-B,CB-B04,power,high,B bus tap into CB-B04
+CB-B04,PUMP-CS-B,power,high,CB-B04 feeder line reaches CS pump branch
+BUS-4160-B,CB-B05,power,high,B bus tap into CB-B05
+CB-B05,PUMP-AFW-B,power,high,CB-B05 feeder line reaches AFW pump branch
+BUS-4160-B,CB-B06,power,high,B bus tap into CB-B06
+CB-B06,TR-UPS-B,power,high,CB-B06 output conductor reaches visible TR-UPS-B symbol
+BUS-4160-B,CB-B07,power,high,B bus tap into CB-B07
+CB-B07,CHLR-B,power,high,CB-B07 output conductor reaches CHLR-B rectangle
+BUS-4160-B,CB-B08,power,high,B bus tap into CB-B08
+CB-B08,FAN-CR-B,power,high,CB-B08 output conductor follows right feeder to FAN-CR-B
+BUS-4160-B,CB-B09,power,high,B bus tap into CB-B09
+CB-B09,480V-LC-FEEDERS-B,power,medium,CB-B09 lower feeder visually continues into B 480V LC feeder area
+480V-LC-FEEDERS-A,LC-101A,power,high,A 480V feeder label area connects down to LC-101A
+480V-LC-FEEDERS-A,LC-102A,power,high,A 480V feeder label area connects down to LC-102A
+480V-LC-FEEDERS-A,FUSE-A01,power_candidate,medium,FUSE-A01 is geometrically tied into same lower A feeder cluster
+480V-LC-FEEDERS-A,FUSE-A02,power_candidate,medium,FUSE-A02 solid conductor ties into same A low-voltage feeder run
+LC-101A,DS-A01,power,high,solid conductor from LC-101A descends to DS-A01 line
+DS-A01,MCC-101A,power,high,DS-A01 output drops to MCC-101A
+LC-102A,DS-A02,power,high,solid conductor from LC-102A descends to DS-A02
+DS-A02,MCC-102A,power,high,DS-A02 output drops to MCC-102A
+LC-102A,MCC-103A,power,high,LC-102A right-hand vertical conductor drops to MCC-103A
+MCC-101A,MOV-101A,power,high,MCC-101A left vertical feeder reaches MOV-101A
+MCC-101A,MOV-102A,power,high,MCC-101A right vertical feeder reaches MOV-102A
+MCC-101A,JB-101A,control,medium,dashed conductor from MCC-101A vicinity to JB-101A
+MCC-102A,AOV-101A,power,high,MCC-102A vertical branch reaches AOV-101A
+MCC-102A,PUMP-CCW-A,power,high,MCC-102A lower horizontal branch reaches PUMP-CCW-A
+MCC-102A,FAN-AB-A,power_candidate,medium,shared lower conductor from MCC-102A continues toward FAN-AB-A branch
+MCC-103A,FAN-AB-A,power,high,MCC-103A vertical branch reaches FAN-AB-A
+FAN-AB-A,HTR-TRACE-A,power,high,FAN-AB-A lower branch continues to HTR-TRACE-A symbol
+JB-101A,AOV-101A,signal,high,dashed signal path from JB-101A to AOV-101A terminal
+PNL-UPS-A,HTR-TRACE-A,control_candidate,low,dashed vertical route near HTR-TRACE-A and PNL-UPS-A suggests possible control or supply relation
+FUSE-A02,DS-A01,power_candidate,medium,FUSE-A02 output conductor visually joins DS-A01 horizontal feeder run
+480V-LC-FEEDERS-B,LC-101B,power,high,B 480V feeder label area connects down to LC-101B
+480V-LC-FEEDERS-B,LC-102B,power,high,B 480V feeder label area connects down to LC-102B
+480V-LC-FEEDERS-B,FUSE-B01,power_candidate,medium,FUSE-B01 is geometrically tied into same lower B feeder cluster
+480V-LC-FEEDERS-B,FUSE-B02,power_candidate,medium,FUSE-B02 solid conductor ties into same B low-voltage feeder run
+LC-101B,DS-B01,power,high,solid conductor from LC-101B descends to DS-B01 line
+DS-B01,MCC-101B,power,high,DS-B01 output drops to MCC-101B
+LC-102B,DS-B02,power,high,solid conductor from LC-102B descends to DS-B02
+DS-B02,MCC-102B,power,high,DS-B02 output drops to MCC-102B
+LC-102B,MCC-103B,power,high,LC-102B right-hand vertical conductor drops to MCC-103B
+MCC-101B,MOV-101B,power,high,MCC-101B left vertical feeder reaches MOV-101B
+MCC-101B,MOV-102B,power,high,MCC-101B right vertical feeder reaches MOV-102B
+MCC-101B,JB-101B,control,medium,dashed conductor from MCC-101B vicinity to JB-101B
+MCC-102B,AOV-101B,power,high,MCC-102B vertical branch reaches AOV-101B
+MCC-102B,PUMP-CCW-B,power,high,MCC-102B lower horizontal branch reaches PUMP-CCW-B
+MCC-102B,FAN-AB-B,power_candidate,medium,shared lower conductor from MCC-102B continues toward FAN-AB-B branch
+MCC-103B,FAN-AB-B,power,high,MCC-103B vertical branch reaches FAN-AB-B
+FAN-AB-B,HTR-TRACE-B,power,high,FAN-AB-B lower branch continues to HTR-TRACE-B symbol
+JB-101B,AOV-101B,signal,high,dashed signal path from JB-101B to AOV-101B terminal
+PNL-UPS-B,HTR-TRACE-B,control_candidate,low,dashed vertical route near HTR-TRACE-B and PNL-UPS-B suggests possible control or supply relation
+FUSE-B02,DS-B01,power_candidate,medium,FUSE-B02 output conductor visually joins DS-B01 horizontal feeder run
+480V-LC-FEEDERS-A,RECT-1A,power_candidate,medium,left-side solid feed route from A low-voltage area continues toward RECT-1A input
+RECT-1A,BCHG-1A,power,high,solid DC/UPS train A conductor from RECT-1A to BCHG-1A
+BCHG-1A,BAT-1A,power,high,solid conductor from BCHG-1A to BAT-1A
+BAT-1A,BUS-DC-A,power,high,BAT-1A right conductor lands on BUS-DC-A
+BUS-DC-A,INV-1A,power,high,BUS-DC-A solid conductor feeds INV-1A
+INV-1A,BUS-UPS-A,power,high,INV-1A output lands on BUS-UPS-A
+BUS-UPS-A,PNL-UPS-A,power,high,BUS-UPS-A solid conductor reaches PNL-UPS-A
+GND-A,BUS-DC-A,ground,medium,dash-dot ground/reference route encloses A DC bus area
+GND-A,PNL-UPS-A,ground,medium,dash-dot ground/reference route passes PNL-UPS-A boundary
+480V-LC-FEEDERS-B,RECT-1B,power_candidate,medium,left-side solid feed route from B low-voltage area continues toward RECT-1B input
+RECT-1B,BCHG-1B,power,high,solid DC/UPS train B conductor from RECT-1B to BCHG-1B
+BCHG-1B,BAT-1B,power,high,solid conductor from BCHG-1B to BAT-1B
+BAT-1B,BUS-DC-B,power,high,BAT-1B right conductor lands on BUS-DC-B
+BUS-DC-B,INV-1B,power,high,BUS-DC-B solid conductor feeds INV-1B
+INV-1B,BUS-UPS-B,power,high,INV-1B output lands on BUS-UPS-B
+BUS-UPS-B,PNL-UPS-B,power,high,BUS-UPS-B solid conductor reaches PNL-UPS-B
+GND-B,BUS-DC-B,ground,medium,dash-dot ground/reference route encloses B DC bus area
+GND-B,PNL-UPS-B,ground,medium,dash-dot ground/reference route passes PNL-UPS-B boundary
+PT-4160-A,BUS-4160-A,signal_tap,high,dotted PT tap tied to A switchgear bus region
+CT-4160-A,BUS-4160-A,signal_tap,high,CT conductor is drawn adjacent to and tapped from A switchgear bus run
+PT-4160-A,RLY-27A,signal,medium,dotted protection signal route from PT area to RLY-27A branch
+CT-4160-A,RLY-50A,signal,medium,dotted protection signal route from CT area to RLY-50A branch
+CT-4160-A,RLY-86A,signal,medium,dotted protection signal route from CT area to RLY-86A branch
+TB-SWGR-A,RLY-27A,control_signal,high,dashed terminal-block branch reaches RLY-27A
+TB-SWGR-A,RLY-50A,control_signal,high,dashed terminal-block branch reaches RLY-50A
+TB-SWGR-A,RLY-86A,control_signal,high,dashed terminal-block branch reaches RLY-86A
+PT-4160-A,PNL-RPS-A,signal,medium,dotted PT route continues into PNL-RPS-A area
+CT-4160-A,PNL-RPS-A,signal,medium,CT route descends into PNL-RPS-A area
+CT-4160-A,FUSE-A01,signal_candidate,medium,CT lower route passes into FUSE-A01 cluster
+FUSE-A01,PNL-RPS-A,control_signal,medium,FUSE-A01 is drawn immediately on PNL-RPS-A instrument/control path
+FUSE-A02,PNL-ESFAS-A,control_signal,high,FUSE-A02 solid route ties to PNL-ESFAS-A branch
+PNL-RPS-A,TB-LV-A,control,medium,dashed control route links PNL-RPS-A and TB-LV-A
+PNL-ESFAS-A,TB-LV-A,control,medium,dashed control route links PNL-ESFAS-A and TB-LV-A
+CT-CAB-A-CONTROL-CABLE-TRAY,TB-SWGR-A,control,medium,dashed tray drops to TB-SWGR-A region
+CT-CAB-A-CONTROL-CABLE-TRAY,PNL-RPS-A,control,medium,dashed tray route enters A protection panel area
+CT-CAB-A-CONTROL-CABLE-TRAY,PNL-ESFAS-A,control,medium,dashed tray route enters A ESFAS panel area
+CT-CAB-A-CONTROL-CABLE-TRAY,TB-LV-A,control,medium,dashed tray route enters TB-LV-A region
+PT-4160-B,BUS-4160-B,signal_tap,high,dotted PT tap tied to B switchgear bus region
+CT-4160-B,BUS-4160-B,signal_tap,high,CT conductor is drawn adjacent to and tapped from B switchgear bus run
+PT-4160-B,RLY-27B,signal,medium,dotted protection signal route from PT area to RLY-27B branch
+CT-4160-B,RLY-50B,signal,medium,dotted protection signal route from CT area to RLY-50B branch
+CT-4160-B,RLY-86B,signal,medium,dotted protection signal route from CT area to RLY-86B branch
+TB-SWGR-B,RLY-27B,control_signal,high,dashed terminal-block branch reaches RLY-27B
+TB-SWGR-B,RLY-50B,control_signal,high,dashed terminal-block branch reaches RLY-50B
+TB-SWGR-B,RLY-86B,control_signal,high,dashed terminal-block branch reaches RLY-86B
+PT-4160-B,PNL-RPS-B,signal,medium,dotted PT route continues into PNL-RPS-B area
+CT-4160-B,PNL-RPS-B,signal,medium,CT route descends into PNL-RPS-B area
+CT-4160-B,FUSE-B01,signal_candidate,medium,CT lower route passes into FUSE-B01 cluster
+FUSE-B01,PNL-RPS-B,control_signal,medium,FUSE-B01 is drawn immediately on PNL-RPS-B instrument/control path
+FUSE-B02,PNL-ESFAS-B,control_signal,high,FUSE-B02 solid route ties to PNL-ESFAS-B branch
+PNL-RPS-B,TB-LV-B,control,medium,dashed control route links PNL-RPS-B and TB-LV-B
+PNL-ESFAS-B,TB-LV-B,control,medium,dashed control route links PNL-ESFAS-B and TB-LV-B
+CT-CAB-B-CONTROL-CABLE-TRAY,TB-SWGR-B,control,medium,dashed tray drops to TB-SWGR-B region
+CT-CAB-B-CONTROL-CABLE-TRAY,PNL-RPS-B,control,medium,dashed tray route enters B protection panel area
+CT-CAB-B-CONTROL-CABLE-TRAY,PNL-ESFAS-B,control,medium,dashed tray route enters B ESFAS panel area
+CT-CAB-B-CONTROL-CABLE-TRAY,TB-LV-B,control,medium,dashed tray route enters TB-LV-B region
+CT-CAB-A-CONTROL-CABLE-TRAY,JB-CONTROL,control,medium,dashed A-side tray route enters MCR bay and JB-CONTROL cluster
+CT-CAB-B-CONTROL-CABLE-TRAY,JB-CONTROL,control,medium,dashed B-side tray route enters MCR bay and JB-CONTROL cluster
+CT-CAB-A-CONTROL-CABLE-TRAY,PNL-MCR-01,control,medium,dashed tray route visually enters PNL-MCR-01 bay
+CT-CAB-B-CONTROL-CABLE-TRAY,PNL-MCR-01,control,medium,dashed tray route visually enters PNL-MCR-01 bay
+CT-CAB-A-CONTROL-CABLE-TRAY,PNL-ANN-01,signal,medium,dotted tray route aligns with PNL-ANN-01
+CT-CAB-B-CONTROL-CABLE-TRAY,PNL-ANN-01,signal,medium,dotted tray route aligns with PNL-ANN-01
+PNL-MCR-01,JB-CONTROL,control,medium,dashed MCR bay routing converges at JB-CONTROL
+PNL-ANN-01,JB-CONTROL,signal,medium,dotted annunciator route converges at JB-CONTROL
+SER-01,JB-CONTROL,signal,high,dotted or dashed route from SER-01 lower area to JB-CONTROL
+PNL-ANN-01,SER-01,signal,medium,dotted vertical bay route links annunciator panel and SER-01
+CT-CAB-A-CONTROL-CABLE-TRAY,SER-01,signal_candidate,medium,dotted MCR bay route from tray side reaches SER-01 level
+CT-CAB-B-CONTROL-CABLE-TRAY,SER-01,signal_candidate,medium,dotted MCR bay route from tray side reaches SER-01 level

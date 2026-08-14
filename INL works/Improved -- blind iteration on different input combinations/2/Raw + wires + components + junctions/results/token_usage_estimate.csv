@@ -1,0 +1,7 @@
+document,iteration,round,agent,model_call,input_tokens_est_low,input_tokens_est_expected,input_tokens_est_high,cached_input_tokens,image_file_input_tokens_est,output_tokens_est_low,output_tokens_est_expected,output_tokens_est_high,reasoning_tokens,usage_object_available,notes
+2,1,main_setup_visual_inspection,Main,main agent orchestration and visual crop inspection,6500,9500,13000,not exposed,6200,800,1400,2400,not exposed,no,Local shell/PIL inspection plus model visual reads; no OCR and no GT/validation artifacts.
+2,1,round_01_diego,Diego,high-recall extraction,5600,7600,9800,not exposed,13940,1800,2700,3900,not exposed,no,Subagent usage object not returned by tool; image tokens approximated from dimensions.
+2,1,round_02_jennifer,Jennifer,precision review/refinement,8200,10800,13600,not exposed,13940,1200,1900,2800,not exposed,no,Includes Diego proposal text plus visual resources.
+2,1,round_03_diego,Diego,convergence check after Jennifer correction,500,750,1100,not exposed,0,120,220,400,not exposed,no,Text-only follow-up in same subagent context; cached tokens not exposed.
+2,1,round_04_jennifer,Jennifer,final sign-off,350,550,900,not exposed,0,80,160,300,not exposed,no,Text-only final confirmation; no API key for Responses counting endpoint.
+2,1,main_write_verify,Main,"artifact writing, verification, final response",2500,4000,6500,not exposed,0,400,900,1500,not exposed,no,Final report generation and sanity-check command outputs.

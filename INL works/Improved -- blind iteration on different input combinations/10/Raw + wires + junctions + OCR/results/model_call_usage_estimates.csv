@@ -1,0 +1,8 @@
+document,iteration,call_id,round,agent,description,input_tokens_est,cached_input_tokens_est,image_file_input_tokens_est,output_tokens_low,output_tokens_expected,output_tokens_high,reasoning_tokens_low,reasoning_tokens_expected,reasoning_tokens_high,total_tokens_low,total_tokens_expected,total_tokens_high,usage_object_available
+10,1,main-01,setup,Main,"Inventory resources, inspect source images, create evidence crops.",3321,0,3315,700,1400,2600,1200,3600,7200,5221,8321,13121,no
+10,1,subagent-01,01,Diego,High-recall extraction from raw/overlays/crops.,36456,0,17000,3800,6200,9600,6000,11000,18000,46256,53656,64056,no
+10,1,subagent-02,01,Jennifer,Independent precision orientation from raw/overlays/crops.,27302,0,17000,800,1600,2800,2500,6000,11000,30602,34902,41102,no
+10,1,subagent-03,02,Jennifer,Precision review of Diego round 1 proposal.,4678,17000,0,900,1800,3400,3000,7000,13000,8578,13478,21078,no
+10,1,subagent-04,03,Diego,Saturation check against Jennifer removals.,4413,17000,0,500,900,1800,1500,3500,7000,6413,8813,13213,no
+10,1,subagent-05,04,Jennifer,Final confirmation of saturated result.,350,17000,0,250,500,1100,800,1800,4000,1400,2650,5450,no
+10,1,main-02,artifact,Main,"Generate round matrices, validate final matrix, summarize usage.",4090,0,0,600,1200,2400,1200,3200,6500,5890,8490,12990,no

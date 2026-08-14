@@ -1,0 +1,121 @@
+source_id,source,target_id,target,status
+n001,GEN-G201,n002,IPB-201,confirmed
+n002,IPB-201,n004,CB-GEN-201,confirmed
+n004,CB-GEN-201,n005,GSU-201,confirmed
+n005,GSU-201,n006,SWYD-BUS-A,confirmed
+n006,SWYD-BUS-A,n007,CB-GRID-A,confirmed
+n007,CB-GRID-A,n008,GRID-230A,confirmed
+n010,SWYD-BUS-B,n011,CB-GRID-B,confirmed
+n011,CB-GRID-B,n012,GRID-230B,confirmed
+n006,SWYD-BUS-A,n009,CB-TIE-230,confirmed
+n009,CB-TIE-230,n010,SWYD-BUS-B,confirmed
+n002,IPB-201,n003,IPB/UAT tap,confirmed
+n003,IPB/UAT tap,n013,TR-UAT-201,confirmed
+n003,IPB/UAT tap,n014,TR-UAT-202,confirmed
+n006,SWYD-BUS-A,n015,TR-SST-201,confirmed
+n010,SWYD-BUS-B,n016,TR-SST-202,confirmed
+n013,TR-UAT-201,n023,CB-UAT-1,confirmed
+n023,CB-UAT-1,n027,BUS-6KV-A,confirmed
+n015,TR-SST-201,n025,CB-SST-1,confirmed
+n025,CB-SST-1,n027,BUS-6KV-A,confirmed
+n017,DG-EDG-201A,n018,CB-DG-A,confirmed
+n018,CB-DG-A,n019,ATS-A,confirmed
+n019,ATS-A,n027,BUS-6KV-A,confirmed
+n014,TR-UAT-202,n024,CB-UAT-2,confirmed
+n024,CB-UAT-2,n029,BUS-6KV-B,confirmed
+n016,TR-SST-202,n026,CB-SST-2,confirmed
+n026,CB-SST-2,n029,BUS-6KV-B,confirmed
+n020,DG-EDG-201B,n021,CB-DG-B,confirmed
+n021,CB-DG-B,n022,ATS-B,confirmed
+n022,ATS-B,n029,BUS-6KV-B,confirmed
+n027,BUS-6KV-A,n028,CB-TIE-6KV,confirmed
+n028,CB-TIE-6KV,n029,BUS-6KV-B,confirmed
+n027,BUS-6KV-A,n030,PT-6KV-A,confirmed
+n029,BUS-6KV-B,n031,PT-6KV-B,confirmed
+n027,BUS-6KV-A,n032,DS-6KV-A,confirmed
+n032,DS-6KV-A,n034,BUS-4KV-N,confirmed
+n029,BUS-6KV-B,n033,DS-6KV-B,confirmed
+n033,DS-6KV-B,n034,BUS-4KV-N,confirmed
+n027,BUS-6KV-A,n035,TR-480A,confirmed
+n035,TR-480A,n036,CB-LC-A1,confirmed
+n036,CB-LC-A1,n037,LC-480A,confirmed
+n029,BUS-6KV-B,n039,TR-480B,confirmed
+n039,TR-480B,n040,CB-LC-B1,confirmed
+n040,CB-LC-B1,n041,LC-480B,confirmed
+n034,BUS-4KV-N,n043,TR-480N,confirmed
+n043,TR-480N,n044,CB-LC-N1,confirmed
+n044,CB-LC-N1,n045,LC-480N,confirmed
+n037,LC-480A,n046,MCC-CCW-A,confirmed
+n046,MCC-CCW-A,n047,JBX-CCW-A,confirmed
+n047,JBX-CCW-A,n048,PUMP-CCW-A,confirmed
+n046,MCC-CCW-A,n049,MOV-CCW-201A,confirmed
+n037,LC-480A,n050,MCC-SW-A,confirmed
+n050,MCC-SW-A,n051,JBX-SW-A,confirmed
+n051,JBX-SW-A,n052,PUMP-SW-A,confirmed
+n037,LC-480A,n053,MCC-HPI-A,confirmed
+n053,MCC-HPI-A,n054,PUMP-HPI-A,confirmed
+n053,MCC-HPI-A,n055,MOV-SI-201A,confirmed
+n037,LC-480A,n056,MCC-VENT-A,confirmed
+n056,MCC-VENT-A,n057,FAN-CR-A,confirmed
+n041,LC-480B,n058,MCC-CCW-B,confirmed
+n058,MCC-CCW-B,n059,JBX-CCW-B,confirmed
+n059,JBX-CCW-B,n060,PUMP-CCW-B,confirmed
+n058,MCC-CCW-B,n061,MOV-CCW-201B,confirmed
+n041,LC-480B,n062,MCC-SW-B,confirmed
+n062,MCC-SW-B,n063,JBX-SW-B,confirmed
+n063,JBX-SW-B,n064,PUMP-SW-B,confirmed
+n041,LC-480B,n065,MCC-HPI-B,confirmed
+n065,MCC-HPI-B,n066,PUMP-HPI-B,confirmed
+n065,MCC-HPI-B,n067,MOV-SI-201B,confirmed
+n041,LC-480B,n068,MCC-VENT-B,confirmed
+n068,MCC-VENT-B,n069,FAN-CR-B,confirmed
+n045,LC-480N,n070,LP-N-A,confirmed
+n070,LP-N-A,n071,HTR-BLDG-A,confirmed
+n045,LC-480N,n072,LP-N-B,confirmed
+n072,LP-N-B,n073,HTR-BLDG-B,confirmed
+n037,LC-480A,n074,AC/DC CHGR-A,confirmed
+n074,AC/DC CHGR-A,n076,PNL-DC-A,confirmed
+n074,AC/DC CHGR-A,n075,BAT-125A,confirmed
+n075,BAT-125A,n076,PNL-DC-A,confirmed
+n076,PNL-DC-A,n077,AC/DC REC-A,confirmed
+n077,AC/DC REC-A,n078,DC/AC INV-A,confirmed
+n078,DC/AC INV-A,n079,UPS-A,confirmed
+n041,LC-480B,n080,AC/DC CHGR-B,confirmed
+n080,AC/DC CHGR-B,n082,PNL-DC-B,confirmed
+n080,AC/DC CHGR-B,n081,BAT-125B,confirmed
+n081,BAT-125B,n082,PNL-DC-B,confirmed
+n082,PNL-DC-B,n083,AC/DC REC-B,confirmed
+n083,AC/DC REC-B,n084,DC/AC INV-B,confirmed
+n084,DC/AC INV-B,n085,UPS-B,confirmed
+n037,LC-480A,n038,UV-SENS-A,confirmed
+n041,LC-480B,n042,UV-SENS-B,confirmed
+n055,MOV-SI-201A,n057,FAN-CR-A,confirmed
+n067,MOV-SI-201B,n069,FAN-CR-B,confirmed
+n086,PNL-INST-A,n094,RELAY-UV-A,confirmed
+n087,PNL-INST-B,n095,RELAY-UV-B,confirmed
+n088,CP-ESFAS-A,n096,RELAY-SI-A,confirmed
+n089,CP-ESFAS-B,n097,RELAY-SI-B,confirmed
+n090,PLC-RPS-A,n098,RELAY-LOAD-A,confirmed
+n091,PLC-RPS-B,n099,RELAY-LOAD-B,confirmed
+n092,JBX-ESF-A,n100,RELAY-DG-A,confirmed
+n093,JBX-ESF-B,n101,RELAY-DG-B,confirmed
+n075,BAT-125A,n104,GND-A,confirmed
+n077,AC/DC REC-A,n104,GND-A,confirmed
+n104,GND-A,n106,GND-MAIN,confirmed
+n081,BAT-125B,n105,GND-B,confirmed
+n083,AC/DC REC-B,n105,GND-B,confirmed
+n105,GND-B,n106,GND-MAIN,confirmed
+n038,UV-SENS-A,n086,PNL-INST-A,uncertain
+n038,UV-SENS-A,n094,RELAY-UV-A,uncertain
+n042,UV-SENS-B,n087,PNL-INST-B,uncertain
+n042,UV-SENS-B,n095,RELAY-UV-B,uncertain
+n102,CT-EDG-A,n017,DG-EDG-201A,uncertain
+n102,CT-EDG-A,n086,PNL-INST-A,uncertain
+n102,CT-EDG-A,n100,RELAY-DG-A,uncertain
+n103,CT-EDG-B,n020,DG-EDG-201B,uncertain
+n103,CT-EDG-B,n087,PNL-INST-B,uncertain
+n103,CT-EDG-B,n101,RELAY-DG-B,uncertain
+n018,CB-DG-A,n100,RELAY-DG-A,uncertain
+n021,CB-DG-B,n101,RELAY-DG-B,uncertain
+n055,MOV-SI-201A,n096,RELAY-SI-A,uncertain
+n067,MOV-SI-201B,n097,RELAY-SI-B,uncertain

@@ -1,0 +1,21 @@
+Connectivity matrix validation summary
+Document: 11
+Input configuration: Raw + components
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\11\synthetic_npp_connectivity_matrix_relocated_names.csv
+GT normalized nodes: 120; GT normalized edges: 138
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from jennifer_round1_connectivity_matrix.csv with Precision=0.867133, Recall=0.898551, F1=0.882562
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=124, FP=19, FN=14, Precision=0.867133, Recall=0.898551, F1=0.882562
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+Extra/non-GT nodes most responsible for FP edges: CONTROL-POWER-RPS-INTERLOCKS (7 FP edges).
+Missing GT nodes examples: none.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: ATS-480-A -- BUS-480-B1; ATS-480-B -- BUS-480-C1; BUS-DC-125A -- GND-A; BUS-DC-125A -- GND-B; BUS-DC-125B -- GND-C; BUS-DC-125B -- GND-D; CB-13-TIE -- CB-SUT-1; CB-13-TIE -- CB-UAT-2.
+False-negative edge examples among GT-known nodes: ATS-480-A -- BUS-480-C1; ATS-480-B -- BUS-480-B1; BUS-13-8A -- CB-13-TIE; BUS-13-8B -- CB-13-TIE; BUS-DC-125A -- RECT-125-A; BUS-DC-125A -- RECT-125-C; BUS-DC-125B -- RECT-125-B; BUS-DC-125B -- RECT-125-D.
+False-positive examples involving extra/non-GT nodes: CONTROL-POWER-RPS-INTERLOCKS -- PANEL-RPS-A; CONTROL-POWER-RPS-INTERLOCKS -- PANEL-RPS-B; CONTROL-POWER-RPS-INTERLOCKS -- PANEL-SSPS; CONTROL-POWER-RPS-INTERLOCKS -- RELAY-27A; CONTROL-POWER-RPS-INTERLOCKS -- RELAY-27B; CONTROL-POWER-RPS-INTERLOCKS -- RELAY-27C; CONTROL-POWER-RPS-INTERLOCKS -- RELAY-27D.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (CONTROL-POWER-RPS-INTERLOCKS), the final-row metrics would be TP=124, FP=12, FN=14, Precision=0.911765, Recall=0.898551, F1=0.905109.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=124, FP=12, FN=14, Precision=0.911765, Recall=0.898551, F1=0.905109.

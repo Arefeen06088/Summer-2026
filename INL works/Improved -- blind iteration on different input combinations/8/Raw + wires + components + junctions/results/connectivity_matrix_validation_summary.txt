@@ -1,0 +1,36 @@
+Connectivity matrix validation summary - Document 8
+Input configuration: Raw + wires + components + junctions
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\8\connectivity_matrix_improved_local_refined_v3.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_connectivity_matrix.csv): TP=130, FP=14, FN=10, Precision=0.902778, Recall=0.928571, F1=0.915493
+- Jennifer -- Round 2 (round_02_jennifer_precision_connectivity_matrix.csv): TP=129, FP=11, FN=11, Precision=0.921429, Recall=0.921429, F1=0.921429
+- Diego -- Round 3 (round_03_diego_saturation_connectivity_matrix.csv): TP=129, FP=11, FN=11, Precision=0.921429, Recall=0.921429, F1=0.921429
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=129, FP=11, FN=11, Precision=0.921429, Recall=0.921429, F1=0.921429
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- BUS-120AC-A -- PN-125A
+- BUS-120AC-B -- PN-125B
+- BUS-4160-S2A -- TR-480-N2A
+- BUS-4160-S2B -- TR-480-N2B
+- CB-N1 -- CHGR-125A
+- CHGR-125B -- PN-480-B
+- CP-ESFAS-B -- MOV-8810B
+- JB-2B1 -- PUMP-AF-2B
+- PN-120B -- VLV-HV-302B
+- PN-480-A -- PUMP-CHG-2A
+
+False-negative edge examples:
+- BUS-4160-N2A -- TR-480-N2A
+- BUS-4160-N2B -- TR-480-N2B
+- BUS-480-E2A -- CHGR-125A
+- BUS-480-E2B -- CHGR-125B
+- BUS-480-N2A -- PN-480-A
+- BUS-480-N2B -- PN-480-B
+- JB-2A1 -- PN-125A
+- JB-2B1 -- PN-125B
+- MCC-2C -- PUMP-CHG-2A
+- PN-480-A -- VLV-HV-302A

@@ -1,0 +1,74 @@
+{
+  "document": 14,
+  "resource_scope": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\14\\Raw + wires + junctions + OCR",
+  "node_counts": {
+    "existing_component_rows_from_component_visual_ocr_labels_csv": 166,
+    "proposed_node_additions_total": 15,
+    "proposed_logical_bus_nodes": 8,
+    "proposed_logical_control_nodes": 2,
+    "proposed_aggregate_terminal_nodes": 1,
+    "proposed_missing_physical_components": 4,
+    "total_graph_nodes_if_all_additions_accepted": 181,
+    "node_additions_by_confidence": {
+      "high": 12,
+      "medium": 2,
+      "low": 1
+    },
+    "node_additions_by_kind": {
+      "logical_node": 11,
+      "physical_component": 4
+    }
+  },
+  "edge_counts": {
+    "total_edges": 218,
+    "by_kind": {
+      "bus_tie": 6,
+      "control_interlock": 34,
+      "dashed_control": 27,
+      "ground": 17,
+      "instrument_branch": 17,
+      "logical_terminal": 1,
+      "panel_feed_uncertain": 2,
+      "power_feeder": 114
+    },
+    "by_confidence": {
+      "high": 156,
+      "low": 21,
+      "medium": 41
+    },
+    "by_kind_and_confidence": {
+      "bus_tie": {
+        "high": 6
+      },
+      "control_interlock": {
+        "low": 17,
+        "medium": 17
+      },
+      "dashed_control": {
+        "high": 2,
+        "low": 1,
+        "medium": 24
+      },
+      "ground": {
+        "high": 17
+      },
+      "instrument_branch": {
+        "high": 17
+      },
+      "logical_terminal": {
+        "low": 1
+      },
+      "panel_feed_uncertain": {
+        "low": 2
+      },
+      "power_feeder": {
+        "high": 114
+      }
+    }
+  },
+  "confidence_policy": {
+    "high": "solid conductor with visible junction/stack continuity, named bus drop, explicit ground, or clear terminal/instrument branch",
+    "medium": "visible dashed relay/control relationship with clear branch proximity but not a power conductor terminal",
+    "low": "plausible dashed/control/panel or aggregate-terminal relation where the exact terminal is ambiguous or overdrawn"
+  }
+}

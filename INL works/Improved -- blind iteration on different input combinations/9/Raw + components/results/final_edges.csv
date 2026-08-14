@@ -1,0 +1,185 @@
+source,target,confidence,evidence
+UTIL-230A,DS-230A,high,solid offsite feeder leaves UTIL-230A and enters DS-230A
+DS-230A,SAT-1A,high,solid feeder continues from DS-230A to SAT-1A transformer symbol
+SAT-1A,CB-SAT-A,high,solid stepped feeder drops from SAT-1A to CB-SAT-A
+CB-SAT-A,BUS-4160S1A,high,solid vertical feeder from CB-SAT-A lands on BUS-4160S1A
+UTIL-230B,DS-230B,high,solid offsite feeder leaves UTIL-230B and enters DS-230B
+DS-230B,SAT-1B,high,solid feeder continues from DS-230B to SAT-1B transformer symbol
+SAT-1B,CB-SAT-B,high,solid stepped feeder drops from SAT-1B to CB-SAT-B
+CB-SAT-B,BUS-4160S1B,high,solid vertical feeder from CB-SAT-B lands on BUS-4160S1B
+GEN-1A,CB-GEN-1,high,solid generator output line from GEN-1A enters CB-GEN-1
+CB-GEN-1,BUS-13K-01,high,solid line from CB-GEN-1 ties into the 13 kV bus
+BUS-13K-01,UAT-1A,high,vertical tap from BUS-13K-01 drops to UAT-1A
+UAT-1A,CB-UAT-1A,high,solid vertical feeder from UAT-1A to CB-UAT-1A
+CB-UAT-1A,BUS-4160-N1,high,solid feeder from CB-UAT-1A lands on BUS-4160-N1
+BUS-13K-01,UAT-1B,high,vertical tap from BUS-13K-01 drops to UAT-1B
+UAT-1B,CB-UAT-1B,high,solid vertical feeder from UAT-1B to CB-UAT-1B
+CB-UAT-1B,BUS-4160-N2,high,solid feeder from CB-UAT-1B lands on BUS-4160-N2
+BUS-4160-N1,CB-TIE-41N,high,solid bus tie conductor from BUS-4160-N1 enters CB-TIE-41N
+CB-TIE-41N,BUS-4160-N2,high,solid bus tie conductor exits CB-TIE-41N to BUS-4160-N2
+BUS-4160-N1,CB-4160-N1A,high,solid vertical normal auxiliary feeder segment connects BUS-4160-N1 to CB-4160-N1A
+CB-4160-N1A,TR-480-N1A,high,solid vertical normal auxiliary feeder segment connects CB-4160-N1A to TR-480-N1A
+TR-480-N1A,CB-480-N1A,high,solid vertical normal auxiliary feeder segment connects TR-480-N1A to CB-480-N1A
+CB-480-N1A,BUS-480-N1A,high,solid vertical normal auxiliary feeder segment connects CB-480-N1A to BUS-480-N1A
+BUS-480-N1A,MCC-NORM-1A,high,solid vertical normal auxiliary feeder segment connects BUS-480-N1A to MCC-NORM-1A
+MCC-NORM-1A,PN-480-N1A,high,solid vertical normal auxiliary feeder segment connects MCC-NORM-1A to PN-480-N1A
+BUS-4160-N1,CB-4160-N1B,high,solid vertical normal auxiliary feeder segment connects BUS-4160-N1 to CB-4160-N1B
+CB-4160-N1B,TR-480-N1B,high,solid vertical normal auxiliary feeder segment connects CB-4160-N1B to TR-480-N1B
+TR-480-N1B,CB-480-N1B,high,solid vertical normal auxiliary feeder segment connects TR-480-N1B to CB-480-N1B
+CB-480-N1B,BUS-480-N1B,high,solid vertical normal auxiliary feeder segment connects CB-480-N1B to BUS-480-N1B
+BUS-480-N1B,MCC-NORM-1B,high,solid vertical normal auxiliary feeder segment connects BUS-480-N1B to MCC-NORM-1B
+MCC-NORM-1B,PN-480-N1B,high,solid vertical normal auxiliary feeder segment connects MCC-NORM-1B to PN-480-N1B
+BUS-4160-N2,CB-4160-N2A,high,solid vertical normal auxiliary feeder segment connects BUS-4160-N2 to CB-4160-N2A
+CB-4160-N2A,TR-480-N2A,high,solid vertical normal auxiliary feeder segment connects CB-4160-N2A to TR-480-N2A
+TR-480-N2A,CB-480-N2A,high,solid vertical normal auxiliary feeder segment connects TR-480-N2A to CB-480-N2A
+CB-480-N2A,BUS-480-N2A,high,solid vertical normal auxiliary feeder segment connects CB-480-N2A to BUS-480-N2A
+BUS-480-N2A,MCC-NORM-2A,high,solid vertical normal auxiliary feeder segment connects BUS-480-N2A to MCC-NORM-2A
+MCC-NORM-2A,PN-480-N2A,high,solid vertical normal auxiliary feeder segment connects MCC-NORM-2A to PN-480-N2A
+BUS-4160-N2,CB-4160-N2B,high,solid vertical normal auxiliary feeder segment connects BUS-4160-N2 to CB-4160-N2B
+CB-4160-N2B,TR-480-N2B,high,solid vertical normal auxiliary feeder segment connects CB-4160-N2B to TR-480-N2B
+TR-480-N2B,CB-480-N2B,high,solid vertical normal auxiliary feeder segment connects TR-480-N2B to CB-480-N2B
+CB-480-N2B,BUS-480-N2B,high,solid vertical normal auxiliary feeder segment connects CB-480-N2B to BUS-480-N2B
+BUS-480-N2B,MCC-NORM-2B,high,solid vertical normal auxiliary feeder segment connects BUS-480-N2B to MCC-NORM-2B
+MCC-NORM-2B,PN-480-N2B,high,solid vertical normal auxiliary feeder segment connects MCC-NORM-2B to PN-480-N2B
+PN-480-N1A,CB-CWP-1A,high,solid branch feeder from PN-480-N1A reaches CB-CWP-1A
+CB-CWP-1A,PUMP-CWP-1A,high,solid load feeder from CB-CWP-1A terminates at PUMP-CWP-1A
+PN-480-N1A,CB-HEAT-1A,high,solid branch feeder from PN-480-N1A reaches CB-HEAT-1A
+CB-HEAT-1A,HTR-1A,high,solid load feeder from CB-HEAT-1A terminates at HTR-1A
+PN-480-N1A,CB-AHU-1A,high,solid branch feeder from PN-480-N1A reaches CB-AHU-1A
+CB-AHU-1A,FAN-AHU-1A,high,solid load feeder from CB-AHU-1A terminates at FAN-AHU-1A
+PN-480-N1B,CB-CWP-1B,high,solid branch feeder from PN-480-N1B reaches CB-CWP-1B
+CB-CWP-1B,PUMP-CWP-1B,high,solid load feeder from CB-CWP-1B terminates at PUMP-CWP-1B
+PN-480-N1B,CB-SUMP-1B,high,solid branch feeder from PN-480-N1B reaches CB-SUMP-1B
+CB-SUMP-1B,PUMP-SUMP-1B,high,solid load feeder from CB-SUMP-1B terminates at PUMP-SUMP-1B
+PN-480-N1B,CB-LTG-1B,high,solid branch feeder from PN-480-N1B reaches CB-LTG-1B
+CB-LTG-1B,PN-LTG-1B,high,solid load feeder from CB-LTG-1B terminates at PN-LTG-1B
+PN-480-N2A,CB-CWP-2A,high,solid branch feeder from PN-480-N2A reaches CB-CWP-2A
+CB-CWP-2A,PUMP-CWP-2A,high,solid load feeder from CB-CWP-2A terminates at PUMP-CWP-2A
+PN-480-N2A,CB-VAC-2A,high,solid branch feeder from PN-480-N2A reaches CB-VAC-2A
+CB-VAC-2A,PUMP-VAC-2A,high,solid load feeder from CB-VAC-2A terminates at PUMP-VAC-2A
+PN-480-N2A,CB-AHU-2A,high,solid branch feeder from PN-480-N2A reaches CB-AHU-2A
+CB-AHU-2A,FAN-AHU-2A,high,solid load feeder from CB-AHU-2A terminates at FAN-AHU-2A
+PN-480-N2B,CB-CWP-2B,high,solid branch feeder from PN-480-N2B reaches CB-CWP-2B
+CB-CWP-2B,PUMP-CWP-2B,high,solid load feeder from CB-CWP-2B terminates at PUMP-CWP-2B
+PN-480-N2B,CB-OIL-2B,high,solid branch feeder from PN-480-N2B reaches CB-OIL-2B
+CB-OIL-2B,PUMP-OIL-2B,high,solid load feeder from CB-OIL-2B terminates at PUMP-OIL-2B
+PN-480-N2B,CB-LTG-2B,high,solid branch feeder from PN-480-N2B reaches CB-LTG-2B
+CB-LTG-2B,PN-LTG-2B,high,solid load feeder from CB-LTG-2B terminates at PN-LTG-2B
+PN-480-N1A,PN-480-N1B,medium,dashed control/instrument line visibly spans between PN-480-N1A and PN-480-N1B
+PUMP-SUMP-1B,MTR-480-N1,medium,dashed vertical control/instrument line descends from the PUMP-SUMP-1B area to MTR-480-N1
+MTR-480-N1,JB-NORM-A,medium,dashed horizontal control/instrument line connects MTR-480-N1 to JB-NORM-A
+JB-NORM-A,RTD-PNL-A,medium,dashed vertical route leaves JB-NORM-A and enters RTD-PNL-A
+RTD-PNL-A,TB-SEQ-A,medium,dashed vertical route continues from RTD-PNL-A to TB-SEQ-A
+TB-SEQ-A,TDR-SEQ-A,medium,dashed vertical route continues from TB-SEQ-A to TDR-SEQ-A
+PN-480-N2A,PN-480-N2B,medium,dashed control/instrument line visibly spans between PN-480-N2A and PN-480-N2B
+FAN-AHU-2A,MTR-480-N2,medium,dashed control/instrument line descends from the FAN-AHU-2A column to MTR-480-N2
+MTR-480-N2,JB-NORM-B,medium,dashed horizontal control/instrument line connects MTR-480-N2 to JB-NORM-B
+JB-NORM-B,RTD-PNL-B,medium,dashed vertical route leaves JB-NORM-B and enters RTD-PNL-B
+RTD-PNL-B,TB-SEQ-B,medium,dashed vertical route continues from RTD-PNL-B to TB-SEQ-B
+TB-SEQ-B,TDR-SEQ-B,medium,dashed vertical route continues from TB-SEQ-B to TDR-SEQ-B
+EDG-1A,CB-EDG-A,high,solid feeder from EDG-1A generator circle enters CB-EDG-A
+CB-EDG-A,BUS-4160S1A,high,solid vertical feeder from CB-EDG-A lands on BUS-4160S1A
+BUS-4160S1A,CT-41A,medium,instrument tap line from BUS-4160S1A drops to CT-41A
+BUS-4160S1A,PT-41A,medium,instrument tap line from BUS-4160S1A drops to PT-41A
+CT-41A,RELAY-50/51A,medium,dashed instrument route from CT-41A enters RELAY-50/51A
+PT-41A,RELAY-50/51A,medium,dashed instrument route from PT-41A enters RELAY-50/51A
+RELAY-50/51A,RELAY-86A,medium,dashed relay/control line runs from RELAY-50/51A toward RELAY-86A
+BUS-4160S1A,CB-481A,high,solid vertical feeder from BUS-4160S1A drops to CB-481A
+CB-481A,TR-480-A1,high,solid feeder continues from CB-481A to TR-480-A1
+TR-480-A1,CB-LV-A1,high,solid feeder continues from TR-480-A1 to CB-LV-A1
+CB-LV-A1,BUS-480-A1,high,solid feeder lands on BUS-480-A1
+BUS-480-A1,MCC-SAF-A1,high,solid vertical tap from BUS-480-A1 enters MCC-SAF-A1
+BUS-4160S1A,CB-482A,high,solid vertical feeder from BUS-4160S1A drops to CB-482A
+CB-482A,TR-480-A2,high,solid feeder continues from CB-482A to TR-480-A2
+TR-480-A2,CB-LV-A2,high,solid feeder continues from TR-480-A2 to CB-LV-A2
+CB-LV-A2,BUS-480-A2,high,solid feeder lands on BUS-480-A2
+BUS-480-A2,MCC-SAF-A2,high,solid vertical tap from BUS-480-A2 enters MCC-SAF-A2
+MCC-SAF-A1,CB-RHR-A,high,solid branch feeder from MCC-SAF-A1 common feeder reaches CB-RHR-A
+CB-RHR-A,PUMP-RHR-A,high,solid load feeder from CB-RHR-A terminates at PUMP-RHR-A
+MCC-SAF-A1,CB-SI-A,high,solid branch feeder from MCC-SAF-A1 common feeder reaches CB-SI-A
+CB-SI-A,PUMP-SI-A,high,solid load feeder from CB-SI-A terminates at PUMP-SI-A
+MCC-SAF-A1,CB-CCW-A,high,solid branch feeder from MCC-SAF-A1 common feeder reaches CB-CCW-A
+CB-CCW-A,PUMP-CCW-A,high,solid load feeder from CB-CCW-A terminates at PUMP-CCW-A
+MCC-SAF-A2,CB-CVC-A,high,solid branch feeder from MCC-SAF-A2 common feeder reaches CB-CVC-A
+CB-CVC-A,PUMP-CVC-A,high,solid load feeder from CB-CVC-A terminates at PUMP-CVC-A
+MCC-SAF-A2,CB-CRF-A,high,solid branch feeder from MCC-SAF-A2 common feeder reaches CB-CRF-A
+CB-CRF-A,FAN-CR-A,high,solid load feeder from CB-CRF-A terminates at FAN-CR-A
+MCC-SAF-A2,CB-COMP-A,high,solid branch feeder from MCC-SAF-A2 common feeder reaches CB-COMP-A
+CB-COMP-A,COMP-AIR-A,high,solid load feeder from CB-COMP-A terminates at COMP-AIR-A
+MCC-SAF-A2,PN-MOV-A,medium,solid branch from the MCC-SAF-A2 feeder area routes down/right into PN-MOV-A
+PN-MOV-A,FU-8810A,high,solid feeder leaves PN-MOV-A terminal to FU-8810A
+FU-8810A,MOV-8810A,high,solid final lead from FU-8810A drops to MOV-8810A
+PN-MOV-A,FU-HV302A,high,solid feeder leaves PN-MOV-A terminal to FU-HV302A
+FU-HV302A,VLV-HV-302A,high,solid final lead from FU-HV302A drops to VLV-HV-302A
+PN-MOV-A,FU-RCICA,high,solid feeder leaves PN-MOV-A terminal to FU-RCICA
+FU-RCICA,MOV-RCIC-A,high,solid final lead from FU-RCICA drops to MOV-RCIC-A
+PN-MOV-A,FU-SWA,high,solid feeder leaves PN-MOV-A terminal to FU-SWA
+FU-SWA,MOV-SW-A,high,solid final lead from FU-SWA drops to MOV-SW-A
+EDG-1B,CB-EDG-B,high,solid feeder from EDG-1B generator circle enters CB-EDG-B
+CB-EDG-B,BUS-4160S1B,high,solid vertical feeder from CB-EDG-B lands on BUS-4160S1B
+BUS-4160S1B,CT-41B,medium,instrument tap line from BUS-4160S1B drops to CT-41B
+BUS-4160S1B,PT-41B,medium,instrument tap line from BUS-4160S1B drops to PT-41B
+CT-41B,RELAY-27B,medium,dashed instrument route from CT-41B enters RELAY-27B
+PT-41B,RELAY-27B,medium,dashed instrument route from PT-41B enters RELAY-27B
+RELAY-27B,CB-481B,medium,control line from RELAY-27B visually lands at the CB-481B area
+BUS-4160S1B,CB-481B,high,solid vertical feeder from BUS-4160S1B drops to CB-481B
+CB-481B,TR-480-B1,high,solid feeder continues from CB-481B to TR-480-B1
+TR-480-B1,CB-LV-B1,high,solid feeder continues from TR-480-B1 to CB-LV-B1
+CB-LV-B1,BUS-480-B1,high,solid feeder lands on BUS-480-B1
+BUS-480-B1,MCC-SAF-B1,high,solid vertical tap from BUS-480-B1 enters MCC-SAF-B1
+BUS-4160S1B,CB-482B,high,solid vertical feeder from BUS-4160S1B drops to CB-482B
+CB-482B,TR-480-B2,high,solid feeder continues from CB-482B to TR-480-B2
+TR-480-B2,CB-LV-B2,high,solid feeder continues from TR-480-B2 to CB-LV-B2
+CB-LV-B2,BUS-480-B2,high,solid feeder lands on BUS-480-B2
+BUS-480-B2,MCC-SAF-B2,high,solid vertical tap from BUS-480-B2 enters MCC-SAF-B2
+MCC-SAF-B1,CB-RHR-B,high,solid branch feeder from MCC-SAF-B1 common feeder reaches CB-RHR-B
+CB-RHR-B,PUMP-RHR-B,high,solid load feeder from CB-RHR-B terminates at PUMP-RHR-B
+MCC-SAF-B1,CB-SI-B,high,solid branch feeder from MCC-SAF-B1 common feeder reaches CB-SI-B
+CB-SI-B,PUMP-SI-B,high,solid load feeder from CB-SI-B terminates at PUMP-SI-B
+MCC-SAF-B1,CB-CCW-B,high,solid branch feeder from MCC-SAF-B1 common feeder reaches CB-CCW-B
+CB-CCW-B,PUMP-CCW-B,high,solid load feeder from CB-CCW-B terminates at PUMP-CCW-B
+MCC-SAF-B2,CB-CVC-B,high,solid branch feeder from MCC-SAF-B2 common feeder reaches CB-CVC-B
+CB-CVC-B,PUMP-CVC-B,high,solid load feeder from CB-CVC-B terminates at PUMP-CVC-B
+MCC-SAF-B2,CB-CRF-B,high,solid branch feeder from MCC-SAF-B2 common feeder reaches CB-CRF-B
+CB-CRF-B,FAN-CR-B,high,solid load feeder from CB-CRF-B terminates at FAN-CR-B
+MCC-SAF-B2,CB-COMP-B,high,solid branch feeder from MCC-SAF-B2 common feeder reaches CB-COMP-B
+CB-COMP-B,COMP-AIR-B,high,solid load feeder from CB-COMP-B terminates at COMP-AIR-B
+MCC-SAF-B2,PN-MOV-B,medium,solid branch from the MCC-SAF-B2 feeder area routes down/right into PN-MOV-B
+PN-MOV-B,FU-8810B,high,solid feeder leaves PN-MOV-B terminal to FU-8810B
+FU-8810B,MOV-8810B,high,solid final lead from FU-8810B drops to MOV-8810B
+PN-MOV-B,FU-HV302B,high,solid feeder leaves PN-MOV-B terminal to FU-HV302B
+FU-HV302B,VLV-HV-302B,high,solid final lead from FU-HV302B drops to VLV-HV-302B
+PN-MOV-B,FU-RCICB,high,solid feeder leaves PN-MOV-B terminal to FU-RCICB
+FU-RCICB,MOV-RCIC-B,high,solid final lead from FU-RCICB drops to MOV-RCIC-B
+PN-MOV-B,FU-SWB,high,solid feeder leaves PN-MOV-B terminal to FU-SWB
+FU-SWB,MOV-SW-B,high,solid final lead from FU-SWB drops to MOV-SW-B
+BAT-125A,BUS-125DC-A,high,solid vertical tap from BAT-125A lands on BUS-125DC-A
+CHG-125A,BUS-125DC-A,high,solid vertical tap from CHG-125A lands on BUS-125DC-A
+BUS-125DC-A,INV-120A,high,solid bus segment enters INV-120A
+INV-120A,BUS-120AC-A,high,solid bus segment exits INV-120A to BUS-120AC-A
+BUS-125DC-A,GND-A,medium,solid ground tap below BUS-125DC-A reaches GND-A
+BUS-125DC-A,PN-125A,high,solid vertical tap from BUS-125DC-A feeds PN-125A
+BUS-120AC-A,PN-120A,high,solid vertical tap from BUS-120AC-A feeds PN-120A
+PN-125A,JB-1A,medium,dashed control line from PN-125A runs to JB-1A
+PN-125A,JB-2A,medium,dashed control line from PN-125A runs to JB-2A
+PN-120A,PLC-ESF-A,medium,dashed control line from PN-120A routes to PLC-ESF-A
+PN-120A,ANN-ESF-A,medium,dashed control line from PN-120A routes to ANN-ESF-A
+PLC-ESF-A,RELAY-K1A,medium,dashed relay/control branch from PLC-ESF-A reaches RELAY-K1A
+PLC-ESF-A,RELAY-K2A,medium,dashed relay/control branch from PLC-ESF-A reaches RELAY-K2A
+PLC-ESF-A,ANN-ESF-A,medium,dashed annunciator/control line runs between PLC-ESF-A and ANN-ESF-A
+RELAY-K2A,ANN-ESF-A,medium,dashed relay/control line from RELAY-K2A visually enters ANN-ESF-A
+BAT-125B,BUS-125DC-B,high,solid vertical tap from BAT-125B lands on BUS-125DC-B
+CHG-125B,BUS-125DC-B,high,solid vertical tap from CHG-125B lands on BUS-125DC-B
+BUS-125DC-B,INV-120B,high,solid bus segment enters INV-120B
+INV-120B,BUS-120AC-B,high,solid bus segment exits INV-120B to BUS-120AC-B
+BUS-125DC-B,GND-B,medium,solid ground tap below BUS-125DC-B reaches GND-B
+BUS-125DC-B,PN-125B,high,solid vertical tap from BUS-125DC-B feeds PN-125B
+BUS-120AC-B,PN-120B,high,solid vertical tap from BUS-120AC-B feeds PN-120B
+PN-125B,JB-1B,medium,dashed control line from PN-125B runs to JB-1B
+PN-125B,JB-2B,medium,dashed control line from PN-125B runs to JB-2B
+PN-120B,PLC-ESF-B,medium,dashed control line from PN-120B routes to PLC-ESF-B
+PN-120B,ANN-ESF-B,medium,dashed control line from PN-120B routes to ANN-ESF-B
+PLC-ESF-B,RELAY-K1B,medium,dashed relay/control branch from PLC-ESF-B reaches RELAY-K1B
+PLC-ESF-B,RELAY-K2B,medium,dashed relay/control branch from PLC-ESF-B reaches RELAY-K2B
+PLC-ESF-B,ANN-ESF-B,medium,dashed annunciator/control line runs between PLC-ESF-B and ANN-ESF-B
+RELAY-K2B,ANN-ESF-B,medium,dashed relay/control line from RELAY-K2B visually enters ANN-ESF-B

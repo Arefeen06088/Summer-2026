@@ -1,0 +1,6 @@
+document,iteration,agent,call_id,call_purpose,input_text_tokens_expected,cached_input_tokens_estimate,image_file_tokens_expected,output_tokens_low,output_tokens_expected,output_tokens_high,reasoning_tokens_available,reasoning_tokens_estimate,usage_object_collected,total_tokens_low,total_tokens_expected,total_tokens_high,notes
+1,1,main-agent,main-aggregate,orchestration plus visual inspection,65000,25000,7735,2500,4500,8000,not_exposed,not_available,no,75235,77235,80735,Usage object unavailable in Codex; cumulative estimate across main decision turns
+1,1,Diego,diego-r1,high-recall extraction,18500,0,3315,9000,14000,22000,not_exposed,not_available,no,30815,35815,43815,Input estimated from prompt plus copied CSV aids; output estimated from returned node/edge/matrix text
+1,1,Jennifer,jennifer-r1,precision review,4300,0,4420,1800,2800,4500,not_exposed,not_available,no,10520,11520,13220,Reviewed Diego summary plus raw/overlay/crops
+1,1,Diego,diego-r2,revision/agreement,900,500,0,400,700,1200,not_exposed,not_available,no,1300,1600,2100,Follow-up call in same subagent thread; cached tokens not exposed
+1,1,Jennifer,jennifer-r2,final saturation,450,300,0,150,250,500,not_exposed,not_available,no,600,700,950,Final confirmation call; cached tokens not exposed

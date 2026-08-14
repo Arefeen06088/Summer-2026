@@ -1,0 +1,25 @@
+Connectivity matrix validation summary - Document 15
+Input configuration: Raw + wires + components + junctions
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\15\improved_synthetic_nuclear_connectivity_matrix.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_matrix.csv): TP=186, FP=10, FN=4, Precision=0.948980, Recall=0.978947, F1=0.963731
+- Jennifer -- Round 2 (round_02_jennifer_matrix.csv): TP=186, FP=8, FN=4, Precision=0.958763, Recall=0.978947, F1=0.968750
+- Diego -- Round 3 (round_03_diego_matrix.csv): TP=186, FP=4, FN=4, Precision=0.978947, Recall=0.978947, F1=0.978947
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=186, FP=4, FN=4, Precision=0.978947, Recall=0.978947, F1=0.978947
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=186, FP=4, FN=4, Precision=0.978947, Recall=0.978947, F1=0.978947
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- CB-DG-A -- RPS-AC-1
+- CB-DG-C -- RPS-AC-2
+- CB-NF-B -- SEQ-1AB
+- CB-NF-D -- SEQ-2CD
+
+False-negative edge examples:
+- CB-DG-B -- SEQ-1AB
+- CB-DG-D -- SEQ-2CD
+- CB-NF-A -- RPS-AC-1
+- CB-NF-C -- RPS-AC-2

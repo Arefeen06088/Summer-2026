@@ -1,0 +1,66 @@
+{
+  "document": 4,
+  "resource_folder": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\4\\Raw + wires",
+  "main_decision": "final_matrix.csv is the saturated Diego/Jennifer solid power/DC-power connectivity matrix; dashed control/signal routes are preserved separately.",
+  "agents": {
+    "diego": {
+      "id": "019f6dda-b9a7-74a0-9bd4-0c80fff2dc6b",
+      "model": "gpt-5.5",
+      "role": "high-recall extractor"
+    },
+    "jennifer": {
+      "id": "019f6de1-05e7-7fb0-aa30-32843bcb5b47",
+      "model": "gpt-5.5",
+      "role": "precision reviewer/refiner"
+    }
+  },
+  "rounds": {
+    "round1_diego": "high-recall matrix with originally read FAN-CNTMT labels and dashed/uncertain candidates included",
+    "round1_jennifer": "corrected solid power/DC-power matrix with dashed-only nodes retained as isolated rows",
+    "round2_diego": "accepted corrections; omitted dashed-only control nodes",
+    "round2_jennifer": "accepted round2 Diego as saturated/final"
+  },
+  "qa": {
+    "round1_diego": {
+      "node_count": 122,
+      "edge_count": 127,
+      "symmetric": true,
+      "zero_diagonal": true
+    },
+    "round1_jennifer": {
+      "node_count": 122,
+      "edge_count": 116,
+      "symmetric": true,
+      "zero_diagonal": true
+    },
+    "round2_diego": {
+      "node_count": 116,
+      "edge_count": 116,
+      "symmetric": true,
+      "zero_diagonal": true
+    },
+    "round2_jennifer": {
+      "node_count": 116,
+      "edge_count": 116,
+      "symmetric": true,
+      "zero_diagonal": true
+    },
+    "final": {
+      "node_count": 116,
+      "edge_count": 116,
+      "symmetric": true,
+      "zero_diagonal": true
+    },
+    "candidate_all_visual_supported": {
+      "node_count": 122,
+      "edge_count": 123,
+      "symmetric": true,
+      "zero_diagonal": true
+    }
+  },
+  "control_signal_note": {
+    "supported_excluded_edges": 7,
+    "uncertain_excluded_edges": 4,
+    "all_visual_candidate": "candidate_all_visual_supported_matrix.csv includes supported dashed/control routes only"
+  }
+}

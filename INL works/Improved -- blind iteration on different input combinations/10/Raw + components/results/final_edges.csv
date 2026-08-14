@@ -1,0 +1,125 @@
+source,target,kind,confidence,evidence
+SRC-345KV,BUS-SWY-345KV,power,high,solid conductor from SRC-345KV circle into thick top BUS-SWY-345KV
+BUS-SWY-345KV,SAT-1,power,high,solid vertical tap from BUS-SWY-345KV into SAT-1
+SAT-1,CB-SAT,power,high,solid conductor from SAT-1 routes down to CB-SAT
+CB-SAT,BUS-4160-B,power,high,solid conductor from CB-SAT lands on BUS-4160-B
+GEN-01,UAT-1,power,high,solid line connects UAT-1 to GEN-01
+UAT-1,CB-UAT,power,high,solid conductor from UAT-1 feeder routes to CB-UAT
+CB-UAT,BUS-4160-A,power,high,CB-UAT conductor visibly lands on BUS-4160-A
+BUS-4160-A,CB-TIE-AB,power,high,solid tie feeder leaves BUS-4160-A and enters CB-TIE-AB
+CB-TIE-AB,BUS-4160-B,power,high,solid tie conductor continues from CB-TIE-AB into the B switchgear bus boundary; center clear-bay crossings are not treated as extra junctions
+DG-1A,CB-DGA,power,high,solid line from DG-1A enters CB-DGA
+CB-DGA,BUS-4160-A,power,high,solid conductor from CB-DGA lands on BUS-4160-A
+DG-1B,CB-DGB,power,high,solid line from DG-1B enters CB-DGB
+CB-DGB,BUS-4160-B,power,high,solid conductor from CB-DGB lands on BUS-4160-B
+BUS-4160-A,CB-A01,power,high,short solid tap from BUS-4160-A to CB-A01
+BUS-4160-A,CB-A02,power,high,short solid tap from BUS-4160-A to CB-A02
+BUS-4160-A,CB-A03,power,high,short solid tap from BUS-4160-A to CB-A03
+BUS-4160-A,CB-A04,power,high,short solid tap from BUS-4160-A to CB-A04
+BUS-4160-A,CB-A05,power,high,short solid tap from BUS-4160-A to CB-A05
+BUS-4160-A,CB-A06,power,high,short solid tap from BUS-4160-A to CB-A06
+BUS-4160-A,CB-A07,power,high,short solid tap from BUS-4160-A to CB-A07
+BUS-4160-A,CB-A08,power,high,short solid tap from BUS-4160-A to CB-A08
+BUS-4160-A,CB-A09,power,high,short solid tap from BUS-4160-A to CB-A09
+CB-A01,TR-480-A1,power,high,solid feeder from CB-A01 terminates at TR-480-A1
+CB-A02,TR-480-A2,power,medium,solid feeder from CB-A02 aligns with TR-480-A2 branch
+CB-A03,PUMP-RHR-A,power,high,solid feeder row from CB-A03 reaches PUMP-RHR-A
+CB-A04,PUMP-CS-A,power,high,solid feeder row from CB-A04 reaches PUMP-CS-A
+CB-A05,PUMP-AFW-A,power,high,solid feeder row from CB-A05 reaches PUMP-AFW-A
+CB-A06,TR-UPS-A,power,medium,solid feeder from CB-A06 reaches TR-UPS-A branch
+CB-A07,CHLR-A,power,high,solid feeder row from CB-A07 reaches CHLR-A
+CB-A08,480V LC FEEDERS - A,power,high,solid feeder from CB-A08 enters labeled 480V LC FEEDERS - A
+480V LC FEEDERS - A,FAN-CR-A,power,high,solid feeder from 480V LC FEEDERS - A reaches FAN-CR-A
+BUS-4160-A,PT-4160-A,power,high,solid tap from BUS-4160-A routes to PT-4160-A
+CT-4160-A,FUSE-A01,signal,medium,dotted signal loop around CT-4160-A continues to FUSE-A01
+PNL-ESFAS-A,FUSE-A02,power,medium,solid conductor from PNL-ESFAS-A runs into FUSE-A02
+FUSE-A02,DS-A01,power,medium,solid lower feeder from FUSE-A02 routes to DS-A01 area
+PNL-RPS-A,TB-LV-A,control,medium,dashed cable-tray drop links PNL-RPS-A to TB-LV-A
+PNL-ESFAS-A,TB-LV-A,control,medium,dashed cable-tray drop links PNL-ESFAS-A to TB-LV-A
+480V LC FEEDERS - A,LC-101A,power,high,solid drop from 480V LC FEEDERS - A lands on LC-101A
+480V LC FEEDERS - A,LC-102A,power,high,solid drop from 480V LC FEEDERS - A lands on LC-102A
+LC-101A,DS-A01,power,high,solid conductor drops from LC-101A to DS-A01
+LC-102A,DS-A02,power,high,solid conductor drops from LC-102A to DS-A02
+DS-A01,MCC-101A,power,high,solid conductor from DS-A01 feeds MCC-101A
+DS-A02,MCC-102A,power,high,solid conductor from DS-A02 feeds MCC-102A
+LC-102A,MCC-103A,power,high,solid vertical feeder from LC-102A continues to MCC-103A
+MCC-101A,MOV-101A,power,high,solid drop from MCC-101A reaches MOV-101A
+MCC-101A,MOV-102A,power,high,solid drop from MCC-101A reaches MOV-102A
+MCC-101A,JB-101A,control,medium,dashed control lead leaves MCC-101A area and drops to JB-101A
+JB-101A,AOV-101A,control,high,dashed control line runs from JB-101A to AOV-101A
+MCC-102A,AOV-101A,power,high,solid feeder from MCC-102A reaches AOV-101A
+MCC-102A,PUMP-CCW-A,power,high,solid feeder from MCC-102A reaches PUMP-CCW-A
+MCC-103A,FAN-AB-A,power,high,solid vertical feeder from MCC-103A reaches FAN-AB-A
+FAN-AB-A,HTR-TRACE-A,power,high,solid vertical conductor connects FAN-AB-A to HTR-TRACE-A
+HTR-TRACE-A,PNL-UPS-A,control,medium,vertical dashed/control lead descends from HTR-TRACE-A toward PNL-UPS-A
+RECT-1A,BCHG-1A,power,high,solid DC/UPS train conductor from RECT-1A to BCHG-1A
+BCHG-1A,BAT-1A,power,high,solid conductor from BCHG-1A into BAT-1A
+BAT-1A,BUS-DC-A,power,high,BAT-1A connects by solid conductor to BUS-DC-A
+BUS-DC-A,INV-1A,power,high,solid conductor leaves BUS-DC-A and enters INV-1A
+INV-1A,BUS-UPS-A,power,high,solid conductor from INV-1A feeds BUS-UPS-A
+BUS-UPS-A,PNL-UPS-A,power,high,solid conductor from BUS-UPS-A enters PNL-UPS-A
+GND-A,GND-A ROUTE,ground,high,dash-dot ground route terminates at GND-A
+CT-CAB-A CONTROL CABLE TRAY,TB-SWGR-A,control,medium,visible cable-tray drop reaches TB-SWGR-A
+CT-CAB-A CONTROL CABLE TRAY,TB-LV-A,control,medium,lower dashed cable-tray routing reaches TB-LV-A
+TB-SWGR-A,RLY-27A,control,high,dashed lead from TB-SWGR-A terminates at RLY-27A
+TB-SWGR-A,RLY-50A,control,high,dashed lead from TB-SWGR-A terminates at RLY-50A
+TB-SWGR-A,RLY-86A,control,high,dashed lead from TB-SWGR-A terminates at RLY-86A
+BUS-4160-B,CB-B01,power,high,short solid tap from BUS-4160-B to CB-B01
+BUS-4160-B,CB-B02,power,high,short solid tap from BUS-4160-B to CB-B02
+BUS-4160-B,CB-B03,power,high,short solid tap from BUS-4160-B to CB-B03
+BUS-4160-B,CB-B04,power,high,short solid tap from BUS-4160-B to CB-B04
+BUS-4160-B,CB-B05,power,high,short solid tap from BUS-4160-B to CB-B05
+BUS-4160-B,CB-B06,power,high,short solid tap from BUS-4160-B to CB-B06
+BUS-4160-B,CB-B07,power,high,short solid tap from BUS-4160-B to CB-B07
+BUS-4160-B,CB-B08,power,high,short solid tap from BUS-4160-B to CB-B08
+BUS-4160-B,CB-B09,power,high,short solid tap from BUS-4160-B to CB-B09
+CB-B01,TR-480-B1,power,high,solid feeder from CB-B01 terminates at TR-480-B1
+CB-B02,TR-480-B2,power,medium,solid feeder from CB-B02 aligns with TR-480-B2 branch
+CB-B03,PUMP-RHR-B,power,high,solid feeder row from CB-B03 reaches PUMP-RHR-B
+CB-B04,PUMP-CS-B,power,high,solid feeder row from CB-B04 reaches PUMP-CS-B
+CB-B05,PUMP-AFW-B,power,high,solid feeder row from CB-B05 reaches PUMP-AFW-B
+CB-B06,TR-UPS-B,power,medium,solid feeder from CB-B06 reaches TR-UPS-B branch
+CB-B07,CHLR-B,power,high,solid feeder row from CB-B07 reaches CHLR-B
+CB-B08,480V LC FEEDERS - B,power,high,solid feeder from CB-B08 enters labeled 480V LC FEEDERS - B
+480V LC FEEDERS - B,FAN-CR-B,power,high,solid feeder from 480V LC FEEDERS - B reaches FAN-CR-B
+BUS-4160-B,PT-4160-B,power,high,solid tap from BUS-4160-B routes to PT-4160-B
+CT-4160-B,FUSE-B01,signal,medium,dotted signal loop around CT-4160-B continues to FUSE-B01
+PNL-ESFAS-B,FUSE-B02,power,medium,solid conductor from PNL-ESFAS-B runs into FUSE-B02
+FUSE-B02,DS-B01,power,medium,solid lower feeder from FUSE-B02 routes to DS-B01 area
+PNL-RPS-B,TB-LV-B,control,medium,dashed cable-tray drop links PNL-RPS-B to TB-LV-B
+PNL-ESFAS-B,TB-LV-B,control,medium,dashed cable-tray drop links PNL-ESFAS-B to TB-LV-B
+480V LC FEEDERS - B,LC-101B,power,high,solid drop from 480V LC FEEDERS - B lands on LC-101B
+480V LC FEEDERS - B,LC-102B,power,high,solid drop from 480V LC FEEDERS - B lands on LC-102B
+LC-101B,DS-B01,power,high,solid conductor drops from LC-101B to DS-B01
+LC-102B,DS-B02,power,high,solid conductor drops from LC-102B to DS-B02
+DS-B01,MCC-101B,power,high,solid conductor from DS-B01 feeds MCC-101B
+DS-B02,MCC-102B,power,high,solid conductor from DS-B02 feeds MCC-102B
+LC-102B,MCC-103B,power,high,solid vertical feeder from LC-102B continues to MCC-103B
+MCC-101B,MOV-101B,power,high,solid drop from MCC-101B reaches MOV-101B
+MCC-101B,MOV-102B,power,high,solid drop from MCC-101B reaches MOV-102B
+MCC-101B,JB-101B,control,medium,dashed control lead leaves MCC-101B area and drops to JB-101B
+JB-101B,AOV-101B,control,high,dashed control line runs from JB-101B to AOV-101B
+MCC-102B,AOV-101B,power,high,solid feeder from MCC-102B reaches AOV-101B
+MCC-102B,PUMP-CCW-B,power,high,solid feeder from MCC-102B reaches PUMP-CCW-B
+MCC-103B,FAN-AB-B,power,high,solid vertical feeder from MCC-103B reaches FAN-AB-B
+FAN-AB-B,HTR-TRACE-B,power,high,solid vertical conductor connects FAN-AB-B to HTR-TRACE-B
+HTR-TRACE-B,PNL-UPS-B,control,medium,vertical dashed/control lead descends from HTR-TRACE-B toward PNL-UPS-B
+RECT-1B,BCHG-1B,power,high,solid DC/UPS train conductor from RECT-1B to BCHG-1B
+BCHG-1B,BAT-1B,power,high,solid conductor from BCHG-1B into BAT-1B
+BAT-1B,BUS-DC-B,power,high,BAT-1B connects by solid conductor to BUS-DC-B
+BUS-DC-B,INV-1B,power,high,solid conductor leaves BUS-DC-B and enters INV-1B
+INV-1B,BUS-UPS-B,power,high,solid conductor from INV-1B feeds BUS-UPS-B
+BUS-UPS-B,PNL-UPS-B,power,high,solid conductor from BUS-UPS-B enters PNL-UPS-B
+GND-B,GND-B ROUTE,ground,high,dash-dot ground route terminates at GND-B
+CT-CAB-B CONTROL CABLE TRAY,TB-SWGR-B,control,medium,visible cable-tray drop reaches TB-SWGR-B
+CT-CAB-B CONTROL CABLE TRAY,TB-LV-B,control,medium,lower dashed cable-tray routing reaches TB-LV-B
+TB-SWGR-B,RLY-27B,control,high,dashed lead from TB-SWGR-B terminates at RLY-27B
+TB-SWGR-B,RLY-50B,control,high,dashed lead from TB-SWGR-B terminates at RLY-50B
+TB-SWGR-B,RLY-86B,control,high,dashed lead from TB-SWGR-B terminates at RLY-86B
+CT-CAB-B CONTROL CABLE TRAY,PNL-MCR-01,control,medium,long dashed cable-tray drop enters PNL-MCR-01 control bay area
+CT-CAB-B CONTROL CABLE TRAY,JB-CONTROL,control,medium,long dashed control drops from CT-CAB-B route descend to JB-CONTROL
+PNL-MCR-01,JB-CONTROL,control,medium,dashed control lead visible between PNL-MCR-01 routing and JB-CONTROL
+PNL-ANN-01,JB-CONTROL,signal,medium,dotted signal lead from PNL-ANN-01 side descends toward JB-CONTROL
+SER-01,JB-CONTROL,signal,medium,dotted signal lead from SER-01 area joins JB-CONTROL bundle
+CT-4160-A,BUS-4160-A,signal,medium,A-side dotted signal run leaves the CT-4160-A enclosure and visibly terminates at the BUS-4160-A breaker/bus cluster near CB-A08/A09.
+CT-4160-B,BUS-4160-B,signal,medium,B-side dotted signal run leaves the CT-4160-B enclosure and visibly terminates at the BUS-4160-B breaker/bus cluster near CB-B08/B09.

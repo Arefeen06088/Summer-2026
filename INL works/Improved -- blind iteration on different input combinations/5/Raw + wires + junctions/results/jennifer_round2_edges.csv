@@ -1,0 +1,112 @@
+source,target,confidence,evidence
+GRID-N230,ISO-230A,high,solid feeder from GRID-N230 block to ISO-230A terminal
+ISO-230A,BRK-2301,high,solid feeder continues from ISO-230A to BRK-2301
+BRK-2301,BUS-SY230,high,solid drop from BRK-2301 to filled tap on 230 kV switchyard bus
+GRID-S230,ISO-230B,high,solid feeder from GRID-S230 block to ISO-230B terminal
+ISO-230B,BRK-2302,high,solid feeder continues from ISO-230B to BRK-2302
+BRK-2302,BUS-SY230,high,solid drop from BRK-2302 to filled tap on 230 kV switchyard bus
+GEN-G101,GSU-1,high,generator terminal is tied directly to top of GSU-1
+GSU-1,BUS-SY230,high,GSU-1 lower terminals connect to BUS-SY230/switchyard conductor
+BUS-SY230,TR-UAT-1A,high,BUS-SY230 feeder runs to TR-UAT-1A primary terminal
+BUS-SY230,TR-UAT-1B,high,BUS-SY230 feeder runs to TR-UAT-1B primary terminal
+BUS-SY230,TR-RAT-1A,high,RAT-A filled tap drops from 230 kV bus to TR-RAT-1A
+BUS-SY230,TR-RAT-1B,high,RAT-B filled tap drops from 230 kV bus to TR-RAT-1B
+TR-RAT-1A,CB-AUX-A,high,solid secondary feeder from TR-RAT-1A to left side of CB-AUX-A
+TR-UAT-1A,CB-AUX-A,high,solid secondary feeder from TR-UAT-1A to right side of CB-AUX-A
+CB-AUX-A,BUS-AUX13A,high,CB-AUX-A bottom terminal drops to BUS-AUX13A filled tap
+TR-UAT-1B,CB-AUX-B,high,solid secondary feeder from TR-UAT-1B to left side of CB-AUX-B
+TR-RAT-1B,CB-AUX-B,high,solid secondary feeder from TR-RAT-1B to right side of CB-AUX-B
+CB-AUX-B,BUS-AUX13B,high,CB-AUX-B bottom terminal drops to BUS-AUX13B filled tap
+BUS-AUX13A,CB-TIE13,high,left aux bus conductor enters left terminal of CB-TIE13
+CB-TIE13,BUS-AUX13B,high,right terminal of CB-TIE13 returns to BUS-AUX13B
+BUS-AUX13A,BUS-NON1,medium,visible vertical tap from left aux-bus region feeds BUS-NON1; bus/node interpretation retained but not expanded
+BUS-NON1,TR-SAF-C,high,BUS-NON1 service bus enters left primary terminal of TR-SAF-C
+BUS-AUX13A,TR-SAF-A,high,SAF A filled tap drops from BUS-AUX13A to TR-SAF-A primary
+TR-SAF-A,CB-SAF-A,high,TR-SAF-A secondary drops directly to CB-SAF-A
+CB-SAF-A,BUS-416A,high,CB-SAF-A bottom terminal lands on BUS-416A
+EDG-A,CB-EDG-A,high,EDG-A output terminal is wired directly to CB-EDG-A
+CB-EDG-A,BUS-416A,high,CB-EDG-A feeder drops to filled tap on BUS-416A
+BUS-416A,CB-TIE-AB,high,BUS-416A right end feeds left terminal of CB-TIE-AB
+BUS-416A,TR-480-A,high,BUS-416A filled tap drops to TR-480-A
+TR-480-A,CB-LC-A,high,TR-480-A secondary drops directly to CB-LC-A
+CB-LC-A,LC-480A,high,CB-LC-A bottom terminal feeds LC-480A
+LC-480A,CB-MCCA1,high,LC-480A left output runs to CB-MCCA1
+CB-MCCA1,MCC-1A1,high,CB-MCCA1 output drops to MCC-1A1
+LC-480A,CB-MCCA2,high,LC-480A right output branches to CB-MCCA2
+CB-MCCA2,MCC-1A2,high,CB-MCCA2 output drops to MCC-1A2
+MCC-1A1,PUMP-AFW-A,high,MCC-1A1 left load feeder drops to PUMP-AFW-A
+MCC-1A2,PUMP-CCW-A,high,MCC-1A2 lower feeder continues to PUMP-CCW-A terminal
+MCC-1A1,VLV-MSIV-A,medium,MCC-1A1 right terminal has a solid feeder to the MSIV-A terminal path
+LC-480A,ATS-A NORM,high,LC-480A right bus terminal continues as labeled ATS-A NORM vertical conductor
+CB-TIE-AB,BUS-416B,high,right side of CB-TIE-AB lands on BUS-416B
+BUS-AUX13A,TR-SAF-B,high,SAF B filled tap drops from BUS-AUX13A to TR-SAF-B primary
+TR-SAF-B,CB-SAF-B,high,TR-SAF-B secondary drops directly to CB-SAF-B
+CB-SAF-B,BUS-416B,high,CB-SAF-B bottom terminal lands on BUS-416B
+EDG-B,CB-EDG-B,high,EDG-B output terminal is wired directly to CB-EDG-B
+CB-EDG-B,BUS-416B,high,CB-EDG-B feeder drops to filled tap on BUS-416B
+BUS-416B,TR-480-B,high,BUS-416B filled tap drops to TR-480-B
+TR-480-B,CB-LC-B,high,TR-480-B secondary drops directly to CB-LC-B
+CB-LC-B,LC-480B,high,CB-LC-B bottom terminal feeds LC-480B
+LC-480B,CB-MCCB1,high,LC-480B left output runs to CB-MCCB1
+CB-MCCB1,MCC-1B1,high,CB-MCCB1 output drops to MCC-1B1
+LC-480B,CB-MCCB2,high,LC-480B right output branches to CB-MCCB2
+CB-MCCB2,MCC-1B2,high,CB-MCCB2 output drops to MCC-1B2
+MCC-1B1,PUMP-AFW-B,high,MCC-1B1 left load feeder drops to PUMP-AFW-B
+MCC-1B2,PUMP-CCW-B,high,MCC-1B2 lower feeder continues to PUMP-CCW-B terminal
+MCC-1B1,VLV-MSIV-B,medium,MCC-1B1 right terminal has a solid feeder to VLV-MSIV-B
+LC-480B,ATS-A ALT,high,LC-480B right bus terminal continues as labeled ATS-A ALT alternate conductor
+BUS-AUX13B,TR-SAF-C,high,SAF C filled tap drops from BUS-AUX13B to right primary terminal of TR-SAF-C
+TR-SAF-C,CB-SAF-C,high,TR-SAF-C secondary drops directly to CB-SAF-C
+CB-SAF-C,BUS-416C,high,CB-SAF-C bottom terminal lands on BUS-416C
+EDG-C,CB-EDG-C,high,EDG-C output terminal is wired directly to CB-EDG-C
+CB-EDG-C,BUS-416C,high,CB-EDG-C feeder drops to filled tap on BUS-416C
+BUS-416C,CB-TIE-CD,high,BUS-416C right end feeds left terminal of CB-TIE-CD
+BUS-416C,TR-480-C,high,BUS-416C filled tap drops to TR-480-C
+TR-480-C,CB-LC-C,high,TR-480-C secondary drops directly to CB-LC-C
+CB-LC-C,LC-480C,high,CB-LC-C bottom terminal feeds LC-480C
+LC-480C,CB-MCCC1,high,LC-480C left output runs to CB-MCCC1
+CB-MCCC1,MCC-1C1,high,CB-MCCC1 output drops to MCC-1C1
+LC-480C,CB-MCCC2,high,LC-480C right output branches to CB-MCCC2
+CB-MCCC2,MCC-1C2,high,CB-MCCC2 output drops to MCC-1C2
+MCC-1C1,PUMP-RHR-A,high,MCC-1C1 left load feeder drops to PUMP-RHR-A
+MCC-1C2,ATS-B NORM,medium,MCC-1C2 left/lower branch taps the labeled ATS-B NORM vertical conductor
+MCC-1C2,HTR-BATRM-A,high,MCC-1C2 right load feeder drops to HTR-BATRM-A
+LC-480C,ATS-B NORM,high,LC-480C right bus terminal continues as labeled ATS-B NORM conductor
+ATS-B NORM,FAN-CRHV-A,high,ATS-B NORM vertical conductor continues to filled terminal on FAN-CRHV-A
+ATS-B NORM,HTR-BATRM-A,medium,ATS-B NORM has a visible horizontal branch into HTR-BATRM-A terminal
+CB-TIE-CD,BUS-416D,high,right side of CB-TIE-CD lands on BUS-416D
+BUS-AUX13B,TR-SAF-D,high,SAF D filled tap drops from BUS-AUX13B to TR-SAF-D primary
+TR-SAF-D,CB-SAF-D,high,TR-SAF-D secondary drops directly to CB-SAF-D
+CB-SAF-D,BUS-416D,high,CB-SAF-D bottom terminal lands on BUS-416D
+EDG-D,CB-EDG-D,high,EDG-D output terminal is wired directly to CB-EDG-D
+CB-EDG-D,BUS-416D,high,CB-EDG-D feeder drops to filled tap on BUS-416D
+BUS-416D,TR-480-D,high,BUS-416D filled tap drops to TR-480-D
+TR-480-D,CB-LC-D,high,TR-480-D secondary drops directly to CB-LC-D
+CB-LC-D,LC-480D,high,CB-LC-D bottom terminal feeds LC-480D
+LC-480D,CB-MCCD1,high,LC-480D left output runs to CB-MCCD1
+CB-MCCD1,MCC-1D1,high,CB-MCCD1 output drops to MCC-1D1
+LC-480D,CB-MCCD2,high,LC-480D right output branches to CB-MCCD2
+CB-MCCD2,MCC-1D2,high,CB-MCCD2 output drops to MCC-1D2
+MCC-1D1,PUMP-RHR-B,high,MCC-1D1 left load feeder drops to PUMP-RHR-B
+MCC-1D2,FAN-CRHV-B,high,MCC-1D2 left/lower feeder continues to FAN-CRHV-B
+MCC-1D2,HTR-BATRM-B,high,MCC-1D2 right load feeder drops to HTR-BATRM-B
+LC-480D,ATS-B ALT,high,LC-480D left bus terminal continues as labeled ATS-B ALT alternate conductor
+ATS-A NORM,XFER-ATS-A,high,ATS-A NORM conductor lands on a top input terminal of XFER-ATS-A
+ATS-A ALT,XFER-ATS-A,high,ATS-A ALT conductor lands on the other top input terminal of XFER-ATS-A
+XFER-ATS-A,CHG-125A,high,XFER-ATS-A bottom output drops to CHG-125A
+CHG-125A,BAT-125A,high,vertical 125 VDC path from CHG-125A to BAT-125A
+BAT-125A,PNL-DC-A,high,vertical 125 VDC path from BAT-125A to PNL-DC-A
+PNL-DC-A,INV-UPS-A,high,solid conductor from PNL-DC-A lower terminal to INV-UPS-A DC input
+INV-UPS-A,UPS-PNL-A,high,solid AC output from INV-UPS-A to UPS-PNL-A
+RECT-48V-A,BAT-48V-A,high,RECT-48V-A DC output is wired directly to BAT-48V-A
+BAT-48V-A,JB-RLY-A,high,BAT-48V-A output is wired directly to JB-RLY-A
+ATS-B NORM,XFER-ATS-B,high,ATS-B NORM conductor lands on a top input terminal of XFER-ATS-B
+ATS-B ALT,XFER-ATS-B,high,ATS-B ALT conductor lands on the other top input terminal of XFER-ATS-B
+XFER-ATS-B,CHG-125B,high,XFER-ATS-B bottom output drops to CHG-125B
+CHG-125B,BAT-125B,high,vertical 125 VDC path from CHG-125B to BAT-125B
+BAT-125B,PNL-DC-B,high,vertical 125 VDC path from BAT-125B to PNL-DC-B
+PNL-DC-B,INV-UPS-B,high,solid conductor from PNL-DC-B lower terminal to INV-UPS-B DC input
+INV-UPS-B,UPS-PNL-B,high,solid AC output from INV-UPS-B to UPS-PNL-B
+RECT-48V-B,BAT-48V-B,high,RECT-48V-B DC output is wired directly to BAT-48V-B
+BAT-48V-B,JB-RLY-B,high,BAT-48V-B output is wired directly to JB-RLY-B
+CP-ESFAS-1,CP-ESFAS-2,medium,adjacent ESFAS cabinets share visible vertical dashed terminal runs with filled terminal dots

@@ -1,0 +1,16 @@
+Connectivity matrix validation summary
+Document: 2
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\2\connectivity_matrix_variant_b_100.csv
+GT normalized nodes: 100; GT normalized edges: 100
+Matrices evaluated: 3
+Best row: Diego -- Round 1 from round_01_diego_connectivity_matrix.csv with Precision=1.000000, Recall=1.000000, F1=1.000000
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=100, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000
+Perfect score: every normalized GT edge was recovered with no extra edges.
+
+No extra/non-GT extracted nodes were attached to false-positive edges in the final edge set.
+Missing GT nodes examples: none.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+
+What-if node pruning insight: no non-GT intermediate nodes were available to prune; the remaining drop is mainly connectivity/edge discovery or missing direct GT edges.

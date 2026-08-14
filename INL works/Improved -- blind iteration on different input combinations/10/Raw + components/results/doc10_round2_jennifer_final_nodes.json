@@ -1,0 +1,769 @@
+{
+  "document": "10",
+  "iteration": "1",
+  "round": "jennifer_round2_final",
+  "agent": "Jennifer",
+  "final_status": "saturation_agreement",
+  "method": "final precision confirmation of Doc10 Raw + components only; no GT/OCR/web",
+  "node_order": [
+    "SRC-345KV",
+    "BUS-SWY-345KV",
+    "UAT-1",
+    "GEN-01",
+    "SAT-1",
+    "CB-TIE-AB",
+    "BUS-4160-A",
+    "CB-UAT",
+    "DG-1A",
+    "CB-DGA",
+    "CB-A01",
+    "CB-A02",
+    "CB-A03",
+    "CB-A04",
+    "CB-A05",
+    "CB-A06",
+    "CB-A07",
+    "CB-A08",
+    "CB-A09",
+    "TR-480-A1",
+    "TR-480-A2",
+    "PUMP-RHR-A",
+    "PUMP-CS-A",
+    "PUMP-AFW-A",
+    "TR-UPS-A",
+    "CHLR-A",
+    "FAN-CR-A",
+    "480V LC FEEDERS - A",
+    "PT-4160-A",
+    "CT-4160-A",
+    "FUSE-A01",
+    "FUSE-A02",
+    "PNL-RPS-A",
+    "PNL-ESFAS-A",
+    "TB-LV-A",
+    "LC-101A",
+    "LC-102A",
+    "DS-A01",
+    "DS-A02",
+    "MCC-101A",
+    "MCC-102A",
+    "MCC-103A",
+    "MOV-101A",
+    "MOV-102A",
+    "JB-101A",
+    "AOV-101A",
+    "PUMP-CCW-A",
+    "FAN-AB-A",
+    "HTR-TRACE-A",
+    "RECT-1A",
+    "BCHG-1A",
+    "BAT-1A",
+    "BUS-DC-A",
+    "INV-1A",
+    "BUS-UPS-A",
+    "PNL-UPS-A",
+    "TB-SWGR-A",
+    "RLY-27A",
+    "RLY-50A",
+    "RLY-86A",
+    "CT-CAB-A CONTROL CABLE TRAY",
+    "GND-A",
+    "GND-A ROUTE",
+    "BUS-4160-B",
+    "CB-SAT",
+    "DG-1B",
+    "CB-DGB",
+    "CB-B01",
+    "CB-B02",
+    "CB-B03",
+    "CB-B04",
+    "CB-B05",
+    "CB-B06",
+    "CB-B07",
+    "CB-B08",
+    "CB-B09",
+    "TR-480-B1",
+    "TR-480-B2",
+    "PUMP-RHR-B",
+    "PUMP-CS-B",
+    "PUMP-AFW-B",
+    "TR-UPS-B",
+    "CHLR-B",
+    "FAN-CR-B",
+    "480V LC FEEDERS - B",
+    "PT-4160-B",
+    "CT-4160-B",
+    "FUSE-B01",
+    "FUSE-B02",
+    "PNL-RPS-B",
+    "PNL-ESFAS-B",
+    "TB-LV-B",
+    "LC-101B",
+    "LC-102B",
+    "DS-B01",
+    "DS-B02",
+    "MCC-101B",
+    "MCC-102B",
+    "MCC-103B",
+    "MOV-101B",
+    "MOV-102B",
+    "JB-101B",
+    "AOV-101B",
+    "PUMP-CCW-B",
+    "FAN-AB-B",
+    "HTR-TRACE-B",
+    "RECT-1B",
+    "BCHG-1B",
+    "BAT-1B",
+    "BUS-DC-B",
+    "INV-1B",
+    "BUS-UPS-B",
+    "PNL-UPS-B",
+    "TB-SWGR-B",
+    "RLY-27B",
+    "RLY-50B",
+    "RLY-86B",
+    "CT-CAB-B CONTROL CABLE TRAY",
+    "GND-B",
+    "GND-B ROUTE",
+    "PNL-MCR-01",
+    "PNL-ANN-01",
+    "SER-01",
+    "JB-CONTROL"
+  ],
+  "nodes": [
+    {
+      "id": "SRC-345KV",
+      "type": "source",
+      "evidence": "top-left circle labeled SRC-345KV tied by solid conductor to upper 345 kV bus"
+    },
+    {
+      "id": "BUS-SWY-345KV",
+      "type": "bus",
+      "evidence": "thick top horizontal bus labeled BUS-SWY-345KV"
+    },
+    {
+      "id": "UAT-1",
+      "type": "transformer",
+      "evidence": "upper A-side transformer rectangle labeled UAT-1"
+    },
+    {
+      "id": "GEN-01",
+      "type": "source",
+      "evidence": "large circle labeled GEN-01 connected to UAT-1 by solid conductor"
+    },
+    {
+      "id": "SAT-1",
+      "type": "transformer",
+      "evidence": "upper B-side transformer rectangle labeled SAT-1 tapped from BUS-SWY-345KV"
+    },
+    {
+      "id": "CB-TIE-AB",
+      "type": "breaker",
+      "evidence": "breaker labeled CB-TIE-AB on the solid tie between A and B switchgear"
+    },
+    {
+      "id": "BUS-4160-A",
+      "type": "bus",
+      "evidence": "vertical thick A switchgear bus labeled BUS-4160-A / 4160V CL 1E SWGR A"
+    },
+    {
+      "id": "CB-UAT",
+      "type": "breaker",
+      "evidence": "breaker labeled CB-UAT above BUS-4160-A"
+    },
+    {
+      "id": "DG-1A",
+      "type": "source",
+      "evidence": "circle labeled DG-1A"
+    },
+    {
+      "id": "CB-DGA",
+      "type": "breaker",
+      "evidence": "breaker labeled CB-DGA between DG-1A and BUS-4160-A"
+    },
+    {
+      "id": "CB-A01",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A01 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A02",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A02 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A03",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A03 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A04",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A04 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A05",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A05 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A06",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A06 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A07",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A07 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A08",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A08 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-A09",
+      "type": "breaker",
+      "evidence": "A-side switchgear feeder breaker labeled CB-A09 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "TR-480-A1",
+      "type": "transformer",
+      "evidence": "A transformer labeled TR-480-A1 on CB-A01 feeder"
+    },
+    {
+      "id": "TR-480-A2",
+      "type": "transformer",
+      "evidence": "A transformer labeled TR-480-A2 near upper pump feeders"
+    },
+    {
+      "id": "PUMP-RHR-A",
+      "type": "load",
+      "evidence": "A motor circle labeled PUMP-RHR-A"
+    },
+    {
+      "id": "PUMP-CS-A",
+      "type": "load",
+      "evidence": "A motor circle labeled PUMP-CS-A"
+    },
+    {
+      "id": "PUMP-AFW-A",
+      "type": "load",
+      "evidence": "A motor circle labeled PUMP-AFW-A"
+    },
+    {
+      "id": "TR-UPS-A",
+      "type": "transformer",
+      "evidence": "A transformer labeled TR-UPS-A on mid-level feeder"
+    },
+    {
+      "id": "CHLR-A",
+      "type": "load",
+      "evidence": "A rectangular load labeled CHLR-A"
+    },
+    {
+      "id": "FAN-CR-A",
+      "type": "load",
+      "evidence": "A fan/motor symbol labeled FAN-CR-A"
+    },
+    {
+      "id": "480V LC FEEDERS - A",
+      "type": "bus",
+      "evidence": "A feeder group label 480V LC FEEDERS - A"
+    },
+    {
+      "id": "PT-4160-A",
+      "type": "control",
+      "evidence": "A circle labeled PT-4160-A with solid tap and dotted signal routing"
+    },
+    {
+      "id": "CT-4160-A",
+      "type": "control",
+      "evidence": "A circle labeled CT-4160-A near RPS/ESFAS/fuses"
+    },
+    {
+      "id": "FUSE-A01",
+      "type": "breaker",
+      "evidence": "A fuse symbol labeled FUSE-A01"
+    },
+    {
+      "id": "FUSE-A02",
+      "type": "breaker",
+      "evidence": "A fuse symbol labeled FUSE-A02"
+    },
+    {
+      "id": "PNL-RPS-A",
+      "type": "panel",
+      "evidence": "A panel labeled PNL-RPS-A"
+    },
+    {
+      "id": "PNL-ESFAS-A",
+      "type": "panel",
+      "evidence": "A panel labeled PNL-ESFAS-A"
+    },
+    {
+      "id": "TB-LV-A",
+      "type": "panel",
+      "evidence": "A terminal board labeled TB-LV-A"
+    },
+    {
+      "id": "LC-101A",
+      "type": "panel",
+      "evidence": "A load center labeled LC-101A"
+    },
+    {
+      "id": "LC-102A",
+      "type": "panel",
+      "evidence": "A load center labeled LC-102A"
+    },
+    {
+      "id": "DS-A01",
+      "type": "breaker",
+      "evidence": "A disconnect switch labeled DS-A01"
+    },
+    {
+      "id": "DS-A02",
+      "type": "breaker",
+      "evidence": "A disconnect switch labeled DS-A02"
+    },
+    {
+      "id": "MCC-101A",
+      "type": "panel",
+      "evidence": "A motor control center labeled MCC-101A"
+    },
+    {
+      "id": "MCC-102A",
+      "type": "panel",
+      "evidence": "A motor control center labeled MCC-102A"
+    },
+    {
+      "id": "MCC-103A",
+      "type": "panel",
+      "evidence": "A motor control center labeled MCC-103A"
+    },
+    {
+      "id": "MOV-101A",
+      "type": "load",
+      "evidence": "A motor-operated valve labeled MOV-101A"
+    },
+    {
+      "id": "MOV-102A",
+      "type": "load",
+      "evidence": "A motor-operated valve labeled MOV-102A"
+    },
+    {
+      "id": "JB-101A",
+      "type": "panel",
+      "evidence": "A junction box labeled JB-101A"
+    },
+    {
+      "id": "AOV-101A",
+      "type": "load",
+      "evidence": "A air-operated valve labeled AOV-101A"
+    },
+    {
+      "id": "PUMP-CCW-A",
+      "type": "load",
+      "evidence": "A motor circle labeled PUMP-CCW-A"
+    },
+    {
+      "id": "FAN-AB-A",
+      "type": "load",
+      "evidence": "A fan/motor symbol labeled FAN-AB-A"
+    },
+    {
+      "id": "HTR-TRACE-A",
+      "type": "load",
+      "evidence": "A heater trace rectangle labeled HTR-TRACE-A"
+    },
+    {
+      "id": "RECT-1A",
+      "type": "source",
+      "evidence": "A DC/UPS train rectangle labeled RECT-1A"
+    },
+    {
+      "id": "BCHG-1A",
+      "type": "other",
+      "evidence": "A battery charger rectangle labeled BCHG-1A"
+    },
+    {
+      "id": "BAT-1A",
+      "type": "source",
+      "evidence": "A battery symbol labeled BAT-1A"
+    },
+    {
+      "id": "BUS-DC-A",
+      "type": "bus",
+      "evidence": "A thick DC bus labeled BUS-DC-A"
+    },
+    {
+      "id": "INV-1A",
+      "type": "other",
+      "evidence": "A inverter rectangle labeled INV-1A"
+    },
+    {
+      "id": "BUS-UPS-A",
+      "type": "bus",
+      "evidence": "A thick UPS bus labeled BUS-UPS-A"
+    },
+    {
+      "id": "PNL-UPS-A",
+      "type": "panel",
+      "evidence": "A UPS panel labeled PNL-UPS-A"
+    },
+    {
+      "id": "TB-SWGR-A",
+      "type": "panel",
+      "evidence": "A terminal board labeled TB-SWGR-A beside relay stack"
+    },
+    {
+      "id": "RLY-27A",
+      "type": "relay",
+      "evidence": "A relay circle labeled RLY-27A"
+    },
+    {
+      "id": "RLY-50A",
+      "type": "relay",
+      "evidence": "A relay circle labeled RLY-50A"
+    },
+    {
+      "id": "RLY-86A",
+      "type": "relay",
+      "evidence": "A relay circle labeled RLY-86A"
+    },
+    {
+      "id": "CT-CAB-A CONTROL CABLE TRAY",
+      "type": "control",
+      "evidence": "upper A route label CT-CAB-A CONTROL CABLE TRAY"
+    },
+    {
+      "id": "GND-A",
+      "type": "ground",
+      "evidence": "lower A ground symbol labeled GND-A"
+    },
+    {
+      "id": "GND-A ROUTE",
+      "type": "logical_node",
+      "evidence": "A dash-dot ground routing adjacent to GND-A"
+    },
+    {
+      "id": "BUS-4160-B",
+      "type": "bus",
+      "evidence": "vertical thick B switchgear bus labeled BUS-4160-B / 4160V CL 1E SWGR B"
+    },
+    {
+      "id": "CB-SAT",
+      "type": "breaker",
+      "evidence": "breaker labeled CB-SAT below SAT-1"
+    },
+    {
+      "id": "DG-1B",
+      "type": "source",
+      "evidence": "circle labeled DG-1B"
+    },
+    {
+      "id": "CB-DGB",
+      "type": "breaker",
+      "evidence": "breaker labeled CB-DGB between DG-1B and BUS-4160-B"
+    },
+    {
+      "id": "CB-B01",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B01 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B02",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B02 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B03",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B03 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B04",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B04 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B05",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B05 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B06",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B06 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B07",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B07 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B08",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B08 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "CB-B09",
+      "type": "breaker",
+      "evidence": "B-side switchgear feeder breaker labeled CB-B09 tapped from the vertical 4160 V bus"
+    },
+    {
+      "id": "TR-480-B1",
+      "type": "transformer",
+      "evidence": "B transformer labeled TR-480-B1 on CB-B01 feeder"
+    },
+    {
+      "id": "TR-480-B2",
+      "type": "transformer",
+      "evidence": "B transformer labeled TR-480-B2 near upper pump feeders"
+    },
+    {
+      "id": "PUMP-RHR-B",
+      "type": "load",
+      "evidence": "B motor circle labeled PUMP-RHR-B"
+    },
+    {
+      "id": "PUMP-CS-B",
+      "type": "load",
+      "evidence": "B motor circle labeled PUMP-CS-B"
+    },
+    {
+      "id": "PUMP-AFW-B",
+      "type": "load",
+      "evidence": "B motor circle labeled PUMP-AFW-B"
+    },
+    {
+      "id": "TR-UPS-B",
+      "type": "transformer",
+      "evidence": "B transformer labeled TR-UPS-B on mid-level feeder"
+    },
+    {
+      "id": "CHLR-B",
+      "type": "load",
+      "evidence": "B rectangular load labeled CHLR-B"
+    },
+    {
+      "id": "FAN-CR-B",
+      "type": "load",
+      "evidence": "B fan/motor symbol labeled FAN-CR-B"
+    },
+    {
+      "id": "480V LC FEEDERS - B",
+      "type": "bus",
+      "evidence": "B feeder group label 480V LC FEEDERS - B"
+    },
+    {
+      "id": "PT-4160-B",
+      "type": "control",
+      "evidence": "B circle labeled PT-4160-B with solid tap and dotted signal routing"
+    },
+    {
+      "id": "CT-4160-B",
+      "type": "control",
+      "evidence": "B circle labeled CT-4160-B near RPS/ESFAS/fuses"
+    },
+    {
+      "id": "FUSE-B01",
+      "type": "breaker",
+      "evidence": "B fuse symbol labeled FUSE-B01"
+    },
+    {
+      "id": "FUSE-B02",
+      "type": "breaker",
+      "evidence": "B fuse symbol labeled FUSE-B02"
+    },
+    {
+      "id": "PNL-RPS-B",
+      "type": "panel",
+      "evidence": "B panel labeled PNL-RPS-B"
+    },
+    {
+      "id": "PNL-ESFAS-B",
+      "type": "panel",
+      "evidence": "B panel labeled PNL-ESFAS-B"
+    },
+    {
+      "id": "TB-LV-B",
+      "type": "panel",
+      "evidence": "B terminal board labeled TB-LV-B"
+    },
+    {
+      "id": "LC-101B",
+      "type": "panel",
+      "evidence": "B load center labeled LC-101B"
+    },
+    {
+      "id": "LC-102B",
+      "type": "panel",
+      "evidence": "B load center labeled LC-102B"
+    },
+    {
+      "id": "DS-B01",
+      "type": "breaker",
+      "evidence": "B disconnect switch labeled DS-B01"
+    },
+    {
+      "id": "DS-B02",
+      "type": "breaker",
+      "evidence": "B disconnect switch labeled DS-B02"
+    },
+    {
+      "id": "MCC-101B",
+      "type": "panel",
+      "evidence": "B motor control center labeled MCC-101B"
+    },
+    {
+      "id": "MCC-102B",
+      "type": "panel",
+      "evidence": "B motor control center labeled MCC-102B"
+    },
+    {
+      "id": "MCC-103B",
+      "type": "panel",
+      "evidence": "B motor control center labeled MCC-103B"
+    },
+    {
+      "id": "MOV-101B",
+      "type": "load",
+      "evidence": "B motor-operated valve labeled MOV-101B"
+    },
+    {
+      "id": "MOV-102B",
+      "type": "load",
+      "evidence": "B motor-operated valve labeled MOV-102B"
+    },
+    {
+      "id": "JB-101B",
+      "type": "panel",
+      "evidence": "B junction box labeled JB-101B"
+    },
+    {
+      "id": "AOV-101B",
+      "type": "load",
+      "evidence": "B air-operated valve labeled AOV-101B"
+    },
+    {
+      "id": "PUMP-CCW-B",
+      "type": "load",
+      "evidence": "B motor circle labeled PUMP-CCW-B"
+    },
+    {
+      "id": "FAN-AB-B",
+      "type": "load",
+      "evidence": "B fan/motor symbol labeled FAN-AB-B"
+    },
+    {
+      "id": "HTR-TRACE-B",
+      "type": "load",
+      "evidence": "B heater trace rectangle labeled HTR-TRACE-B"
+    },
+    {
+      "id": "RECT-1B",
+      "type": "source",
+      "evidence": "B DC/UPS train rectangle labeled RECT-1B"
+    },
+    {
+      "id": "BCHG-1B",
+      "type": "other",
+      "evidence": "B battery charger rectangle labeled BCHG-1B"
+    },
+    {
+      "id": "BAT-1B",
+      "type": "source",
+      "evidence": "B battery symbol labeled BAT-1B"
+    },
+    {
+      "id": "BUS-DC-B",
+      "type": "bus",
+      "evidence": "B thick DC bus labeled BUS-DC-B"
+    },
+    {
+      "id": "INV-1B",
+      "type": "other",
+      "evidence": "B inverter rectangle labeled INV-1B"
+    },
+    {
+      "id": "BUS-UPS-B",
+      "type": "bus",
+      "evidence": "B thick UPS bus labeled BUS-UPS-B"
+    },
+    {
+      "id": "PNL-UPS-B",
+      "type": "panel",
+      "evidence": "B UPS panel labeled PNL-UPS-B"
+    },
+    {
+      "id": "TB-SWGR-B",
+      "type": "panel",
+      "evidence": "B terminal board labeled TB-SWGR-B beside relay stack"
+    },
+    {
+      "id": "RLY-27B",
+      "type": "relay",
+      "evidence": "B relay circle labeled RLY-27B"
+    },
+    {
+      "id": "RLY-50B",
+      "type": "relay",
+      "evidence": "B relay circle labeled RLY-50B"
+    },
+    {
+      "id": "RLY-86B",
+      "type": "relay",
+      "evidence": "B relay circle labeled RLY-86B"
+    },
+    {
+      "id": "CT-CAB-B CONTROL CABLE TRAY",
+      "type": "control",
+      "evidence": "upper B route label CT-CAB-B CONTROL CABLE TRAY"
+    },
+    {
+      "id": "GND-B",
+      "type": "ground",
+      "evidence": "lower B ground symbol labeled GND-B"
+    },
+    {
+      "id": "GND-B ROUTE",
+      "type": "logical_node",
+      "evidence": "B dash-dot ground routing adjacent to GND-B"
+    },
+    {
+      "id": "PNL-MCR-01",
+      "type": "panel",
+      "evidence": "right-side control bay panel labeled PNL-MCR-01"
+    },
+    {
+      "id": "PNL-ANN-01",
+      "type": "panel",
+      "evidence": "right-side annunciator panel labeled PNL-ANN-01"
+    },
+    {
+      "id": "SER-01",
+      "type": "panel",
+      "evidence": "right-side panel/recorder labeled SER-01"
+    },
+    {
+      "id": "JB-CONTROL",
+      "type": "panel",
+      "evidence": "right-side junction box labeled JB-CONTROL"
+    }
+  ],
+  "notes": [
+    "Finalized Diego round2 / Jennifer round1 saturation agreement after visual precision confirmation against Doc10 Raw + components context only.",
+    "Node order contains 124 nodes and is unchanged from Jennifer round1 and Diego round2.",
+    "No newly visible issue was found in the supplied Doc10 visual context; A/B train separation, CB-TIE-AB boundary, breaker rows, fuse/CT signal endpoints, control bay panels, and ground isolation remain as previously refined."
+  ],
+  "quality_checks": {
+    "symmetric_matrix": true,
+    "diagonal_zero": true,
+    "edge_count_matches_matrix": true,
+    "node_count_matches_matrix": true,
+    "node_order_matches_agreed_sources": true,
+    "no_label_corrections": true
+  }
+}

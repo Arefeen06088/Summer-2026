@@ -1,0 +1,120 @@
+source,target,status,evidence
+SRC-345KV,BUS-SWY-345KV,confirmed,solid offsite 345 kV/sat feed to B bus
+BUS-SWY-345KV,SAT-1,confirmed,solid offsite 345 kV/sat feed to B bus
+SAT-1,CB-SAT,confirmed,solid offsite 345 kV/sat feed to B bus
+CB-SAT,BUS-4160-B,confirmed,solid offsite 345 kV/sat feed to B bus
+GEN-01,UAT-1,confirmed,solid generator/UAT feed to A bus
+UAT-1,CB-UAT,confirmed,solid generator/UAT feed to A bus
+CB-UAT,BUS-4160-A,confirmed,solid generator/UAT feed to A bus
+DG-1A,CB-DGA,confirmed,solid diesel generator A feed
+CB-DGA,BUS-4160-A,confirmed,solid diesel generator A feed
+DG-1B,CB-DGB,confirmed,solid diesel generator B feed
+CB-DGB,BUS-4160-B,confirmed,solid diesel generator B feed
+BUS-4160-A,CB-TIE-AB,confirmed,solid bus tie between 4.16 kV buses
+CB-TIE-AB,BUS-4160-B,confirmed,solid bus tie between 4.16 kV buses
+BUS-4160-A,CB-A01,confirmed,solid tap from BUS-4160-A to breaker
+BUS-4160-A,CB-A02,confirmed,solid tap from BUS-4160-A to breaker
+BUS-4160-A,CB-A03,confirmed,solid tap from BUS-4160-A to breaker
+BUS-4160-A,CB-A04,confirmed,solid tap from BUS-4160-A to breaker
+BUS-4160-A,CB-A05,confirmed,solid tap from BUS-4160-A to breaker
+BUS-4160-A,CB-A06,confirmed,solid tap from BUS-4160-A to breaker
+BUS-4160-A,CB-A07,confirmed,solid tap from BUS-4160-A to breaker
+BUS-4160-A,CB-A08,confirmed,solid tap from BUS-4160-A to breaker
+BUS-4160-A,CB-A09,confirmed,solid tap from BUS-4160-A to breaker
+BUS-4160-B,CB-B01,confirmed,solid tap from BUS-4160-B to breaker
+BUS-4160-B,CB-B02,confirmed,solid tap from BUS-4160-B to breaker
+BUS-4160-B,CB-B03,confirmed,solid tap from BUS-4160-B to breaker
+BUS-4160-B,CB-B04,confirmed,solid tap from BUS-4160-B to breaker
+BUS-4160-B,CB-B05,confirmed,solid tap from BUS-4160-B to breaker
+BUS-4160-B,CB-B06,confirmed,solid tap from BUS-4160-B to breaker
+BUS-4160-B,CB-B07,confirmed,solid tap from BUS-4160-B to breaker
+BUS-4160-B,CB-B08,confirmed,solid tap from BUS-4160-B to breaker
+BUS-4160-B,CB-B09,confirmed,solid tap from BUS-4160-B to breaker
+CB-A01,TR-480-A1,confirmed,solid breaker load conductor
+CB-A02,TR-480-A2,confirmed,solid breaker load conductor
+CB-A03,PUMP-RHR-A,confirmed,solid breaker load conductor
+CB-A04,PUMP-CS-A,confirmed,solid breaker load conductor
+CB-A05,PUMP-AFW-A,confirmed,solid breaker load conductor
+CB-A06,TR-UPS-A,confirmed,solid breaker load conductor
+CB-A07,CHLR-A,confirmed,solid breaker load conductor
+CB-A08,FAN-CR-A,confirmed,solid breaker load conductor
+CB-B01,TR-480-B1,confirmed,solid breaker load conductor
+CB-B02,TR-480-B2,confirmed,solid breaker load conductor
+CB-B03,PUMP-RHR-B,confirmed,solid breaker load conductor
+CB-B04,PUMP-CS-B,confirmed,solid breaker load conductor
+CB-B05,PUMP-AFW-B,confirmed,solid breaker load conductor
+CB-B06,TR-UPS-B,confirmed,solid breaker load conductor
+CB-B07,CHLR-B,confirmed,solid breaker load conductor
+CB-B08,FAN-CR-B,confirmed,solid breaker load conductor
+TR-480-A1,480V LC FEEDERS-A,confirmed,Diego round 1 interpreted feeder label as logical node
+TR-480-A2,480V LC FEEDERS-A,confirmed,Diego round 1 interpreted feeder label as logical node
+480V LC FEEDERS-A,LC-101A,confirmed,Diego round 1 interpreted feeder label as logical node
+480V LC FEEDERS-A,LC-102A,confirmed,Diego round 1 interpreted feeder label as logical node
+TR-480-B1,480V LC FEEDERS-B,confirmed,Diego round 1 interpreted feeder label as logical node
+TR-480-B2,480V LC FEEDERS-B,confirmed,Diego round 1 interpreted feeder label as logical node
+480V LC FEEDERS-B,LC-101B,confirmed,Diego round 1 interpreted feeder label as logical node
+480V LC FEEDERS-B,LC-102B,confirmed,Diego round 1 interpreted feeder label as logical node
+LC-101A,DS-A01,confirmed,solid load center branch
+DS-A01,MCC-101A,confirmed,solid disconnect-to-MCC branch
+MCC-101A,MOV-101A,confirmed,solid MCC load branch
+MCC-101A,MOV-102A,confirmed,solid MCC load branch
+JB-101A,AOV-101A,confirmed,control connection from junction box to AOV
+LC-102A,DS-A02,confirmed,solid load center branch
+DS-A02,MCC-102A,confirmed,solid disconnect-to-MCC branch
+LC-102A,MCC-103A,confirmed,solid load center branch
+MCC-102A,AOV-101A,confirmed,solid/control load branch to AOV
+MCC-102A,PUMP-CCW-A,confirmed,solid MCC load branch
+MCC-103A,FAN-AB-A,confirmed,solid MCC load branch
+FAN-AB-A,HTR-TRACE-A,confirmed,solid continuation to heat trace
+LC-101B,DS-B01,confirmed,solid load center branch
+DS-B01,MCC-101B,confirmed,solid disconnect-to-MCC branch
+MCC-101B,MOV-101B,confirmed,solid MCC load branch
+MCC-101B,MOV-102B,confirmed,solid MCC load branch
+JB-101B,AOV-101B,confirmed,control connection from junction box to AOV
+LC-102B,DS-B02,confirmed,solid load center branch
+DS-B02,MCC-102B,confirmed,solid disconnect-to-MCC branch
+LC-102B,MCC-103B,confirmed,solid load center branch
+MCC-102B,AOV-101B,confirmed,solid/control load branch to AOV
+MCC-102B,PUMP-CCW-B,confirmed,solid MCC load branch
+MCC-103B,FAN-AB-B,confirmed,solid MCC load branch
+FAN-AB-B,HTR-TRACE-B,confirmed,solid continuation to heat trace
+RECT-1A,BCHG-1A,confirmed,solid DC/UPS train A rectifier-to-charger conductor
+BCHG-1A,BAT-1A,confirmed,solid DC/UPS train A charger-to-battery conductor
+BCHG-1A,BUS-DC-A,confirmed,separate upper conductor from charger to DC bus junction
+BAT-1A,BUS-DC-A,confirmed,solid battery-to-DC bus conductor
+BUS-DC-A,INV-1A,confirmed,solid DC bus to inverter conductor
+INV-1A,BUS-UPS-A,confirmed,solid inverter to UPS bus conductor
+BUS-UPS-A,PNL-UPS-A,confirmed,solid UPS bus to UPS panel conductor
+RECT-1B,BCHG-1B,confirmed,solid DC/UPS train B rectifier-to-charger conductor
+BCHG-1B,BAT-1B,confirmed,solid DC/UPS train B charger-to-battery conductor
+BCHG-1B,BUS-DC-B,confirmed,separate upper conductor from charger to DC bus junction
+BAT-1B,BUS-DC-B,confirmed,solid battery-to-DC bus conductor
+BUS-DC-B,INV-1B,confirmed,solid DC bus to inverter conductor
+INV-1B,BUS-UPS-B,confirmed,solid inverter to UPS bus conductor
+BUS-UPS-B,PNL-UPS-B,confirmed,solid UPS bus to UPS panel conductor
+TB-SWGR-A,RLY-27A,confirmed,dashed TB-SWGR-A to relay path
+TB-SWGR-A,RLY-50A,confirmed,dashed TB-SWGR-A to relay path
+TB-SWGR-A,RLY-86A,confirmed,dashed TB-SWGR-A to relay path
+PT-4160-A,RLY-27A,confirmed,dotted PT-to-undervoltage relay path
+CT-4160-A,RLY-50A,confirmed,dotted CT-to-overcurrent relay path
+TB-SWGR-B,RLY-27B,confirmed,dashed TB-SWGR-B to relay path
+TB-SWGR-B,RLY-50B,confirmed,dashed TB-SWGR-B to relay path
+TB-SWGR-B,RLY-86B,confirmed,dashed TB-SWGR-B to relay path
+PT-4160-B,RLY-27B,confirmed,dotted PT-to-undervoltage relay path
+CT-4160-B,RLY-50B,confirmed,dotted CT-to-overcurrent relay path
+CT-CAB-A,TB-SWGR-A,confirmed,Diego round 1 treated cable-tray label as a logical node
+CT-4160-A,RLY-86A,confirmed,Diego round 1 high-recall possible CT lockout relay path
+CT-CAB-B,TB-SWGR-B,confirmed,Diego round 1 treated cable-tray label as a logical node
+CT-4160-B,RLY-86B,confirmed,Diego round 1 high-recall possible CT lockout relay path
+CT-CAB-B,PNL-MCR-01,confirmed,Diego round 1 high-recall cable-tray-to-MCR candidate
+CT-CAB-B,JB-CONTROL,confirmed,Diego round 1 high-recall cable-tray-to-control-JB candidate
+PNL-ANN-01,JB-CONTROL,confirmed,visible annunciator panel to control junction box
+SER-01,JB-CONTROL,confirmed,visible server/control route to junction box
+MCC-101A,JB-101A,uncertain_included,junction-box endpoint visible but not promoted until precision review
+MCC-101B,JB-101B,uncertain_included,junction-box endpoint visible but not promoted until precision review
+PNL-RPS-A,FUSE-A01,uncertain_included,nearby panel-to-fuse solid strokes were visually plausible but endpoint-cleanliness was uncertain
+PNL-ESFAS-A,FUSE-A02,uncertain_included,nearby panel-to-fuse solid strokes were visually plausible but endpoint-cleanliness was uncertain
+PNL-RPS-B,FUSE-B01,uncertain_included,nearby panel-to-fuse solid strokes were visually plausible but endpoint-cleanliness was uncertain
+PNL-ESFAS-B,FUSE-B02,uncertain_included,nearby panel-to-fuse solid strokes were visually plausible but endpoint-cleanliness was uncertain
+BUS-DC-A,GND-A,uncertain_included,ground route visible in the area but endpoint was not clean enough
+BUS-DC-B,GND-B,uncertain_included,ground route visible in the area but endpoint was not clean enough

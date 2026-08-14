@@ -1,0 +1,35 @@
+Connectivity matrix validation summary - Document 1 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\1\connectivity_matrix_clean_100_connected.csv
+GT after normalization: 100 undirected edges across 100 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token estimate: low=118470, expected=126870, high=140820.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=89, FP=3, FN=11, Precision=0.967391, Recall=0.890000, F1=0.927083.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names.
+- Extracted components: 103; extra/non-GT names: 3; missing GT component names: 0.
+- False-positive extracted edge examples: BUS-4KV-A -- EXT-4KV-BUS-A-SH2; BUS-4KV-B -- EXT-4KV-BUS-B-SH3; BUS-4KV-C -- EXT-AAC-BUS-C-SH4.
+- Missed GT edge examples: BUS-125DC-A -- BUS-125DC-B; BUS-4KV-A -- CB-TIE-AB; BUS-4KV-B -- CB-TIE-BC; BUS-4KV-B -- DS-TIE-AB; BUS-4KV-C -- DS-TIE-BC; CB-TIE-AB -- DS-TIE-AB; CB-TIE-BC -- DS-TIE-BC; INSTR-PT-A -- RELAY-UV-A; ... (+3 more).
+- Extra/non-GT component examples: EXT-4KV-BUS-A-SH2; EXT-4KV-BUS-B-SH3; EXT-AAC-BUS-C-SH4.
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=89, FP=0, FN=11, Precision=1.000000, Recall=0.890000, F1=0.941799.
+- If all missed GT edges were added, final performance would be TP=100, FP=3, FN=0, Precision=0.970874, Recall=1.000000, F1=0.985222.
+- If extra node EXT-4KV-BUS-A-SH2 and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=89, FP=2, FN=11, Precision=0.978022, Recall=0.890000, F1=0.931937.
+- If extra node EXT-4KV-BUS-B-SH3 and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=89, FP=2, FN=11, Precision=0.978022, Recall=0.890000, F1=0.931937.
+- If extra node EXT-AAC-BUS-C-SH4 and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=89, FP=2, FN=11, Precision=0.978022, Recall=0.890000, F1=0.931937.
+
+Best evaluated row: Diego -- Round 1 with F1=0.964824.
+
+Round-specific notes:
+- Diego -- Round 1: TP=96, FP=3, FN=4, F1=0.964824; extra nodes=3, missing GT nodes=0. FP examples: BUS-4KV-A -- EXT-4KV-BUS-A-SH2; BUS-4KV-B -- EXT-4KV-BUS-B-SH3; BUS-4KV-C -- EXT-AAC-BUS-C-SH4. FN examples: INSTR-PT-A -- RELAY-UV-A; INSTR-PT-B -- RELAY-UV-B; PNL-RPS-A -- RELAY-UV-A; PNL-RPS-B -- RELAY-UV-B.
+- Jennifer -- Round 2: TP=89, FP=3, FN=11, F1=0.927083; extra nodes=3, missing GT nodes=0. FP examples: BUS-4KV-A -- EXT-4KV-BUS-A-SH2; BUS-4KV-B -- EXT-4KV-BUS-B-SH3; BUS-4KV-C -- EXT-AAC-BUS-C-SH4. FN examples: BUS-125DC-A -- BUS-125DC-B; BUS-4KV-A -- CB-TIE-AB; BUS-4KV-B -- CB-TIE-BC; BUS-4KV-B -- DS-TIE-AB; ... (+7 more).
+- Diego -- Round 3: TP=89, FP=3, FN=11, F1=0.927083; extra nodes=3, missing GT nodes=0. FP examples: BUS-4KV-A -- EXT-4KV-BUS-A-SH2; BUS-4KV-B -- EXT-4KV-BUS-B-SH3; BUS-4KV-C -- EXT-AAC-BUS-C-SH4. FN examples: BUS-125DC-A -- BUS-125DC-B; BUS-4KV-A -- CB-TIE-AB; BUS-4KV-B -- CB-TIE-BC; BUS-4KV-B -- DS-TIE-AB; ... (+7 more).
+- Jennifer -- Round 4: TP=89, FP=3, FN=11, F1=0.927083; extra nodes=3, missing GT nodes=0. FP examples: BUS-4KV-A -- EXT-4KV-BUS-A-SH2; BUS-4KV-B -- EXT-4KV-BUS-B-SH3; BUS-4KV-C -- EXT-AAC-BUS-C-SH4. FN examples: BUS-125DC-A -- BUS-125DC-B; BUS-4KV-A -- CB-TIE-AB; BUS-4KV-B -- CB-TIE-BC; BUS-4KV-B -- DS-TIE-AB; ... (+7 more).
+- Final connectivity -- Final: TP=89, FP=3, FN=11, F1=0.927083; extra nodes=3, missing GT nodes=0. FP examples: BUS-4KV-A -- EXT-4KV-BUS-A-SH2; BUS-4KV-B -- EXT-4KV-BUS-B-SH3; BUS-4KV-C -- EXT-AAC-BUS-C-SH4. FN examples: BUS-125DC-A -- BUS-125DC-B; BUS-4KV-A -- CB-TIE-AB; BUS-4KV-B -- CB-TIE-BC; BUS-4KV-B -- DS-TIE-AB; ... (+7 more).

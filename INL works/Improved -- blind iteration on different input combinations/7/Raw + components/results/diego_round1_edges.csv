@@ -1,0 +1,124 @@
+source,target,evidence_type,evidence
+GEN-G01,ISO-GEN-1,solid_power,Generator symbol connects directly to generator isolator.
+ISO-GEN-1,CB-GEN-A,solid_power,Isolator output connects to generator breaker.
+CB-GEN-A,BUS-13A,solid_power,Generator breaker vertical feeder lands on BUS-13A.
+BUS-13A,CB-TIE-13,solid_bus_tie,BUS-13A right end enters 13 kV tie breaker.
+CB-TIE-13,BUS-13B,solid_bus_tie,13 kV tie breaker output enters BUS-13B.
+OFFSITE-345,DS-SAT-1,solid_power,Offsite source connects to station auxiliary disconnect.
+DS-SAT-1,TR-SAT-A,solid_power,Disconnect lower/right terminal feeds TR-SAT-A.
+TR-SAT-A,CB-SAT-A,solid_power,TR-SAT-A secondary connects to SAT breaker A.
+CB-SAT-A,BUS-4A,solid_power,SAT breaker A lands on BUS-4A.
+DS-SAT-1,TR-SAT-B,solid_power,Disconnect top/right feeder continues across to TR-SAT-B.
+TR-SAT-B,CB-SAT-B,solid_power,TR-SAT-B secondary connects to SAT breaker B.
+CB-SAT-B,BUS-4B,solid_power,SAT breaker B lands on BUS-4B.
+BUS-13A,CB-UAT-A,solid_power,BUS-13A tap feeds UAT breaker A.
+CB-UAT-A,TR-UAT-A,solid_power,UAT breaker A connects to TR-UAT-A.
+TR-UAT-A,BUS-4A,solid_power,TR-UAT-A secondary lands on BUS-4A.
+BUS-13B,CB-UAT-B,solid_power,BUS-13B tap feeds UAT breaker B.
+CB-UAT-B,TR-UAT-B,solid_power,UAT breaker B connects to TR-UAT-B.
+TR-UAT-B,BUS-4B,solid_power,TR-UAT-B secondary lands on BUS-4B.
+DG-1A,CB-DG-A,solid_power,Diesel generator A connects to DG breaker A.
+CB-DG-A,BUS-4A,solid_power,DG breaker A lands on BUS-4A.
+DG-1B,CB-DG-B,solid_power,Diesel generator B connects to DG breaker B.
+CB-DG-B,BUS-4B,solid_power,DG breaker B lands on BUS-4B.
+BUS-4A,CB-TIE-4,solid_bus_tie,BUS-4A right end enters 4.16 kV tie breaker.
+CB-TIE-4,BUS-4B,solid_bus_tie,4.16 kV tie breaker output enters BUS-4B.
+BUS-4A,CB-480A,solid_power,BUS-4A feeder 4A-FDR-A drops to CB-480A.
+CB-480A,TR-480A,solid_power,CB-480A feeds transformer 480A.
+TR-480A,LC-480A,solid_power,Transformer 480A lands on LC-480A.
+BUS-4A,CB-480B,solid_power,BUS-4A feeder 4A-FDR-B drops to CB-480B.
+CB-480B,TR-480B,solid_power,CB-480B feeds transformer 480B.
+TR-480B,LC-480B,solid_power,Transformer 480B lands on LC-480B.
+BUS-4B,CB-480C,solid_power,BUS-4B feeder 4B-FDR-C drops to CB-480C.
+CB-480C,TR-480C,solid_power,CB-480C feeds transformer 480C.
+TR-480C,LC-480C,solid_power,Transformer 480C lands on LC-480C.
+BUS-4B,CB-480D,solid_power,BUS-4B feeder 4B-FDR-D drops to CB-480D.
+CB-480D,TR-480D,solid_power,CB-480D feeds transformer 480D.
+TR-480D,LC-480D,solid_power,Transformer 480D lands on LC-480D.
+LC-480A,CB-MCC-A1,solid_power,LC-480A left drop feeds MCC breaker A1.
+CB-MCC-A1,MCC-A1,solid_power,MCC breaker A1 lands on MCC-A1.
+LC-480A,CB-MCC-A2,solid_power,LC-480A right drop feeds MCC breaker A2.
+CB-MCC-A2,MCC-A2,solid_power,MCC breaker A2 lands on MCC-A2.
+LC-480B,CB-MCC-B1,solid_power,LC-480B left drop feeds MCC breaker B1.
+CB-MCC-B1,MCC-B1,solid_power,MCC breaker B1 lands on MCC-B1.
+LC-480B,CB-MCC-B2,solid_power,LC-480B right drop feeds MCC breaker B2.
+CB-MCC-B2,MCC-B2,solid_power,MCC breaker B2 lands on MCC-B2.
+LC-480C,CB-MCC-C1,solid_power,LC-480C left drop feeds MCC breaker C1.
+CB-MCC-C1,MCC-C1,solid_power,MCC breaker C1 lands on MCC-C1.
+LC-480C,CB-MCC-C2,solid_power,LC-480C right drop feeds MCC breaker C2.
+CB-MCC-C2,MCC-C2,solid_power,MCC breaker C2 lands on MCC-C2.
+LC-480D,CB-MCC-D1,solid_power,LC-480D left drop feeds MCC breaker D1.
+CB-MCC-D1,MCC-D1,solid_power,MCC breaker D1 lands on MCC-D1.
+LC-480D,CB-MCC-D2,solid_power,LC-480D center drop feeds MCC breaker D2.
+CB-MCC-D2,MCC-D2,solid_power,MCC breaker D2 lands on MCC-D2.
+MCC-A1,CB-P201A,solid_power,MCC-A1 left branch feeds pump breaker P201A.
+CB-P201A,PUMP-P201A,solid_power,Breaker P201A feeds pump P201A.
+MCC-A1,CB-MOV101A,solid_power,MCC-A1 center branch feeds MOV breaker 101A.
+CB-MOV101A,MOV-101A,solid_power,MOV breaker 101A feeds MOV-101A.
+MCC-A1,CB-FAN101A,solid_power,MCC-A1 right branch feeds fan breaker 101A.
+CB-FAN101A,FAN-F101A,solid_power,Fan breaker 101A feeds FAN-F101A.
+MCC-A2,CB-P202A,solid_power,MCC-A2 left branch feeds pump breaker P202A.
+CB-P202A,PUMP-P202A,solid_power,Breaker P202A feeds pump P202A.
+MCC-A2,CB-MOV102A,solid_power,MCC-A2 center branch feeds MOV breaker 102A.
+CB-MOV102A,MOV-102A,solid_power,MOV breaker 102A feeds MOV-102A.
+MCC-A2,CB-HTR101A,solid_power,MCC-A2 right branch feeds heater breaker 101A.
+CB-HTR101A,HTR-H101A,solid_power,Heater breaker 101A feeds HTR-H101A.
+MCC-B1,CB-P201B,solid_power,MCC-B1 left branch feeds pump breaker P201B.
+CB-P201B,PUMP-P201B,solid_power,Breaker P201B feeds pump P201B.
+MCC-B1,CB-MOV101B,solid_power,MCC-B1 center branch feeds MOV breaker 101B.
+CB-MOV101B,MOV-101B,solid_power,MOV breaker 101B feeds MOV-101B.
+MCC-B1,CB-FAN101B,solid_power,MCC-B1 right branch feeds fan breaker 101B.
+CB-FAN101B,FAN-F101B,solid_power,Fan breaker 101B feeds FAN-F101B.
+MCC-B2,CB-P202B,solid_power,MCC-B2 left branch feeds pump breaker P202B.
+CB-P202B,PUMP-P202B,solid_power,Breaker P202B feeds pump P202B.
+MCC-B2,CB-MOV102B,solid_power,MCC-B2 center branch feeds MOV breaker 102B.
+CB-MOV102B,MOV-102B,solid_power,MOV breaker 102B feeds MOV-102B.
+MCC-B2,CB-HTR101B,solid_power,MCC-B2 right branch feeds heater breaker 101B.
+CB-HTR101B,HTR-H101B,solid_power,Heater breaker 101B feeds HTR-H101B.
+MCC-C1,CB-P301A,solid_power,MCC-C1 left branch feeds pump breaker P301A.
+CB-P301A,PUMP-P301A,solid_power,Breaker P301A feeds pump P301A.
+MCC-C1,CB-MOV201A,solid_power,MCC-C1 center branch feeds MOV breaker 201A.
+CB-MOV201A,MOV-201A,solid_power,MOV breaker 201A feeds MOV-201A.
+MCC-C1,CB-FAN201A,solid_power,MCC-C1 right branch feeds fan breaker 201A.
+CB-FAN201A,FAN-F201A,solid_power,Fan breaker 201A feeds FAN-F201A.
+MCC-C2,CB-P302A,solid_power,MCC-C2 left branch feeds pump breaker P302A.
+CB-P302A,PUMP-P302A,solid_power,Breaker P302A feeds pump P302A.
+MCC-C2,CB-MOV202A,solid_power,MCC-C2 center branch feeds MOV breaker 202A.
+CB-MOV202A,MOV-202A,solid_power,MOV breaker 202A feeds MOV-202A.
+MCC-C2,CB-HTR201A,solid_power,MCC-C2 right branch feeds heater breaker 201A.
+CB-HTR201A,HTR-H201A,solid_power,Heater breaker 201A feeds HTR-H201A.
+MCC-D1,CB-P301B,solid_power,MCC-D1 left branch feeds pump breaker P301B.
+CB-P301B,PUMP-P301B,solid_power,Breaker P301B feeds pump P301B.
+MCC-D1,CB-MOV201B,solid_power,MCC-D1 center branch feeds MOV breaker 201B.
+CB-MOV201B,MOV-201B,solid_power,MOV breaker 201B feeds MOV-201B.
+MCC-D1,CB-FAN201B,solid_power,MCC-D1 right branch feeds fan breaker 201B.
+CB-FAN201B,FAN-F201B,solid_power,Fan breaker 201B feeds FAN-F201B.
+MCC-D2,CB-P302B,solid_power,MCC-D2 left branch feeds pump breaker P302B.
+CB-P302B,PUMP-P302B,solid_power,Breaker P302B feeds pump P302B.
+MCC-D2,CB-MOV202B,solid_power,MCC-D2 center branch feeds MOV breaker 202B.
+CB-MOV202B,MOV-202B,solid_power,MOV breaker 202B feeds MOV-202B.
+MCC-D2,CB-HTR201B,solid_power,MCC-D2 right branch feeds heater breaker 201B.
+CB-HTR201B,HTR-H201B,solid_power,Heater breaker 201B feeds HTR-H201B.
+BAT-125A,BUS-125DCA,solid_dc,Battery A bottom terminal lands on BUS-125DCA.
+BAT-125A,BCHG-125A,solid_dc,Train A battery and charger share a visible solid terminal conductor.
+BCHG-125A,BUS-125DCA,solid_dc,Charger A bottom terminal lands on BUS-125DCA.
+BUS-125DCA,INV-120A,solid_dc,BUS-125DCA tap feeds inverter A.
+BUS-125DCA,PPS-A,solid_dc,BUS-125DCA tap feeds PPS-A.
+INV-120A,UPS-120A,dashed_control,Dashed terminal line connects inverter A to UPS A.
+UPS-120A,PNL-AC-CR1,dashed_control,Dashed terminal line connects UPS A to AC panel CR1.
+PNL-AC-CR1,PPS-A,dashed_control,Dashed terminal line connects panel CR1 to PPS-A.
+UPS-120A,ANN-101,dashed_control,Vertical dashed line from UPS A terminal drops to ANN-101.
+ANN-101,RELAY-K101,dashed_control,ANN-101 right terminal has dashed line to relay K101.
+PPS-A,RELAY-K101,dashed_control,PPS-A lower dashed path lands on relay K101.
+PPS-A,RELAY-K102,dashed_control,PPS-A lower dashed path lands on relay K102.
+BAT-125B,BUS-125DCB,solid_dc,Battery B bottom terminal lands on BUS-125DCB.
+BCHG-125B,BUS-125DCB,solid_dc,Charger B bottom terminal lands on BUS-125DCB.
+BUS-125DCB,INV-120B,solid_dc,BUS-125DCB tap feeds inverter B.
+BUS-125DCB,PPS-B,solid_dc,BUS-125DCB tap feeds PPS-B.
+INV-120B,UPS-120B,dashed_control,Dashed terminal line connects inverter B to UPS B.
+UPS-120B,PNL-AC-CR2,dashed_control,Dashed terminal line connects UPS B to AC panel CR2.
+PNL-AC-CR2,PPS-B,dashed_control,Dashed terminal line connects panel CR2 to PPS-B.
+UPS-120B,ANN-201,dashed_control,Vertical dashed line from UPS B terminal drops to ANN-201.
+ANN-201,RELAY-K201,dashed_control,ANN-201 right terminal has dashed line to relay K201.
+PPS-B,RELAY-K201,dashed_control,PPS-B lower dashed path lands on relay K201.
+PPS-B,RELAY-K202,dashed_control,PPS-B lower dashed path lands on relay K202.

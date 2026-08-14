@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 16
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\16\synthetic_npp_connectivity_matrix_revised(1).csv
+GT normalized nodes: 180; GT normalized edges: 190
+Matrices evaluated: 5
+Best row: Diego -- Round 2 from connectivity_matrix_round_02_diego_saturation.csv with Precision=0.894040, Recall=0.710526, F1=0.791789
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=135, FP=16, FN=55, Precision=0.894040, Recall=0.710526, F1=0.791789
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+Extra/non-GT nodes most responsible for FP edges: CB-31A-FDR30-B (2 FP edges); PUMP-CHM501B (2 FP edges); PUMP-CCM301A (2 FP edges); PUMP-SM401B (2 FP edges); PUMP-CHM501A (2 FP edges); PUMP-SM401A (2 FP edges); PUMP-CCM301B (2 FP edges).
+Missing GT nodes examples: CB-31A-FDR; GND-N0; JB-RPS-A; JB-RPS-B; PUMP-CCW301A; PUMP-CCW301B; PUMP-CHW501A; PUMP-CHW501B; PUMP-SW401A; PUMP-SW401B.
+Close-but-not-exact name examples: PUMP-CCM301A -> PUMP-CCW301A (0.92); PUMP-CCM301B -> PUMP-CCW301B (0.92); PUMP-CHM501A -> PUMP-CHW501A (0.92); PUMP-CHM501B -> PUMP-CHW501B (0.92); PUMP-SM401A -> PUMP-SW401A (0.91); PUMP-SM401B -> PUMP-SW401B (0.91); CB-31A-FDR30-B -> CB-31A-FDR (0.83); GND-NO -> GND-N0 (0.83).
+False-positive edge examples among GT-known nodes: BUS-125DC-A -- CHGR-125A; BUS-125DC-B -- CHGR-125B.
+False-negative edge examples among GT-known nodes: BATT-125A -- BUS-125DC-A; BATT-125B -- BUS-125DC-B; BUS-120-RPS-A -- CP-DCS-01; BUS-120-RPS-A -- CP-RPS-A; BUS-120-RPS-B -- CP-ANN-01; BUS-120-RPS-B -- CP-RPS-B; BUS-125DC-A -- CP-ESF-A; BUS-125DC-B -- CP-ESF-B.
+False-positive examples involving extra/non-GT nodes: BUS-480-B -- CB-31A-FDR30-B; CB-31A-FDR30-B -- MCC-31A; GND-P301A -- PUMP-CCM301A; GND-P301B -- PUMP-CCM301B; GND-P401A -- PUMP-SM401A; GND-P401B -- PUMP-SM401B; GND-P501A -- PUMP-CHM501A; GND-P501B -- PUMP-CHM501B.
+False-negative examples involving missing/differently named nodes: BUS-120-RPS-A -- UCC-01; BUS-120-RPS-B -- UCC-01; BUS-480-A -- CB-31A-FDR; CB-31A-FDR -- MCC-31A; CP-RPS-A -- JB-RPS-A; CP-RPS-A -- TB-1A; CP-RPS-B -- JB-RPS-B; CP-RPS-B -- TB-1B.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (CB-31A-FDR30-B; PUMP-CHM501B; PUMP-CCM301A; PUMP-SM401B; PUMP-CHM501A), the final-row metrics would be TP=135, FP=6, FN=55, Precision=0.957447, Recall=0.710526, F1=0.815710.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=135, FP=2, FN=55, Precision=0.985401, Recall=0.710526, F1=0.825688.

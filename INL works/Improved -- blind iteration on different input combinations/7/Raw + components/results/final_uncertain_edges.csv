@@ -1,0 +1,12 @@
+source,target,reason
+PNL-AC-CR1,RELAY-K101,"Nearby vertical dashed conductors, but terminal ownership is unclear."
+PNL-AC-CR2,RELAY-K201,"Nearby vertical dashed conductors, but terminal ownership is unclear."
+ANN-101,PPS-A,"Diagonal dotted/sensing path visible, but endpoint semantics are ambiguous."
+ANN-201,PPS-B,"Diagonal dotted/sensing path visible, but endpoint semantics are ambiguous."
+ANN-101,SR-101,"Bottom cross-train dashed route approaches SR-101, but exact terminal ownership is unclear."
+SR-101,ANN-201,"Bottom cross-train dashed route approaches SR-101, but exact terminal ownership is unclear."
+RELAY-K101,RELAY-K102,Plausible dashed interlock in congested area; not asserted without clear terminal-to-terminal ownership.
+RELAY-K201,RELAY-K202,Plausible dashed interlock in congested area; not asserted without clear terminal-to-terminal ownership.
+RELAY-K102,SR-101,Plausible dashed interlock/cross-train path; held uncertain.
+RELAY-K202,SR-101,Plausible dashed interlock/cross-train path; held uncertain.
+MCC/load devices,CTRL-RACEWAY-A/B,"Dashed raceway paths are visually present but are routing regions, not safe component-to-component edges."

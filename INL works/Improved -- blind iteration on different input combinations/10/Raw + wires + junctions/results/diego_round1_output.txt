@@ -1,0 +1,335 @@
+ROLE: Diego high-recall extractor
+DOCUMENT: 10
+Primary evidence was the raw schematic. Crops overlays and wire-node views were used only to trace visually present solid power dashed control dotted signal and dash-dot ground routes. I counted named components buses terminal boards junction boxes fuses breaker terminals filled taps and ground symbols as connection endpoints. Plain crossings without a raw dot or component landing were not promoted to definite edges though some long routed control corridors are included at LOW confidence for high recall.
+NODE_ORDER_CSV
+SRC-345KV,BUS-SWY-345KV,GEN-01,CB-GEN-1,UAT-1,SAT-1,CB-UAT,CB-SAT,CB-TIE-AB,CT-CAB-A,CT-CAB-B,DG-1A,CB-DGA,BUS-4160-A,TB-SWGR-A,RLY-27A,RLY-50A,RLY-86A,PT-4160-A,CT-4160-A,PNL-RPS-A,PNL-ESFAS-A,TB-LV-A,FUSE-A01,FUSE-A02,CB-A01,CB-A02,CB-A03,CB-A04,CB-A05,CB-A06,CB-A07,CB-A08,CB-A09,TR-480-A1,TR-480-A2,TR-UPS-A,LC-FEEDERS-A,PUMP-RHR-A,PUMP-CS-A,PUMP-AFW-A,CHLR-A,FAN-CR-A,LC-101A,LC-102A,DS-A01,DS-A02,MCC-101A,MCC-102A,MCC-103A,MOV-101A,MOV-102A,JB-101A,AOV-101A,PUMP-CCW-A,FAN-AB-A,HTR-TRACE-A,RECT-1A,BCHG-1A,BAT-1A,BUS-DC-A,INV-1A,BUS-UPS-A,PNL-UPS-A,GND-A,DG-1B,CB-DGB,BUS-4160-B,TB-SWGR-B,RLY-27B,RLY-50B,RLY-86B,PT-4160-B,CT-4160-B,PNL-RPS-B,PNL-ESFAS-B,TB-LV-B,FUSE-B01,FUSE-B02,CB-B01,CB-B02,CB-B03,CB-B04,CB-B05,CB-B06,CB-B07,CB-B08,CB-B09,TR-480-B1,TR-480-B2,TR-UPS-B,LC-FEEDERS-B,PUMP-RHR-B,PUMP-CS-B,PUMP-AFW-B,CHLR-B,FAN-CR-B,LC-101B,LC-102B,DS-B01,DS-B02,MCC-101B,MCC-102B,MCC-103B,MOV-101B,MOV-102B,JB-101B,AOV-101B,PUMP-CCW-B,FAN-AB-B,HTR-TRACE-B,RECT-1B,BCHG-1B,BAT-1B,BUS-DC-B,INV-1B,BUS-UPS-B,PNL-UPS-B,GND-B,PNL-MCR-01,PNL-ANN-01,SER-01,JB-CONTROL
+EDGE_LIST_CSV
+source,target,confidence,line_type,evidence
+SRC-345KV,BUS-SWY-345KV,HIGH,power,raw__top_sources_full thick switchyard bus starts at source circle
+BUS-SWY-345KV,SAT-1,HIGH,power,raw__top_right_source vertical solid tap from switchyard bus to SAT-1
+SAT-1,CB-SAT,HIGH,power,raw__top_right_source solid feeder leaves SAT-1 and drops to CB-SAT
+CB-SAT,BUS-4160-B,HIGH,power,raw__train_b_upper_4160 CB-SAT lower conductor lands on BUS-4160-B
+GEN-01,UAT-1,HIGH,power,raw__top_left_source solid line between generator circle and UAT-1
+UAT-1,CB-UAT,HIGH,power,raw__top_left_source UAT-1 solid feeder routes down-left to CB-UAT
+CB-UAT,BUS-4160-A,HIGH,power,raw__train_a_upper_4160 CB-UAT lower conductor lands at BUS-4160-A tap
+BUS-4160-A,CB-TIE-AB,MEDIUM,power,raw__train_a_upper_4160 horizontal tie feeder leaves A bus toward CB-TIE-AB
+CB-TIE-AB,BUS-4160-B,MEDIUM,power,raw__top_sources_full tie breaker visually sits on solid feeder spanning between divisions
+GEN-01,CB-GEN-1,LOW,power,raw__top_sources_full generator breaker label is not cleanly separated but generator-to-switchyard path is geometrically plausible
+CB-GEN-1,BUS-SWY-345KV,LOW,power,raw__top_sources_full possible generator breaker/switchyard relationship near the top bus
+CT-CAB-A,CT-CAB-B,LOW,control,raw__top_sources_full dashed control tray routing steps between class division headers
+CT-CAB-A,GND-A,MEDIUM,ground,raw__left_full_train dash-dot ground/reference route terminates at GND-A symbol
+CT-CAB-B,GND-B,MEDIUM,ground,raw__right_full_train dash-dot ground/reference route terminates at GND-B symbol
+DG-1A,CB-DGA,HIGH,power,raw__train_a_upper_4160 diesel generator circle feeds its DG breaker by solid line
+CB-DGA,BUS-4160-A,HIGH,power,raw__train_a_upper_4160 DG breaker output steps into the 4160 switchgear bus
+BUS-4160-A,CB-A01,HIGH,power,raw__left_full_train thick 4160 bus has solid tap into CB-A01
+CB-A01,TR-480-A1,HIGH,power,raw__left_full_train CB-A01 horizontal solid feeder terminates at TR-480-A1
+BUS-4160-A,CB-A02,HIGH,power,raw__left_full_train thick 4160 bus has solid tap into CB-A02
+CB-A02,TR-480-A2,HIGH,power,raw__left_full_train CB-A02 horizontal solid feeder terminates at TR-480-A2
+BUS-4160-A,CB-A03,HIGH,power,raw__left_full_train thick 4160 bus has solid tap into CB-A03
+CB-A03,PUMP-RHR-A,HIGH,power,raw__left_full_train CB-A03 horizontal solid feeder terminates at PUMP-RHR-A
+BUS-4160-A,CB-A04,HIGH,power,raw__left_full_train thick 4160 bus has solid tap into CB-A04
+CB-A04,PUMP-CS-A,HIGH,power,raw__left_full_train CB-A04 horizontal solid feeder terminates at PUMP-CS-A
+BUS-4160-A,CB-A05,HIGH,power,raw__left_full_train thick 4160 bus has solid tap into CB-A05
+CB-A05,PUMP-AFW-A,HIGH,power,raw__left_full_train CB-A05 horizontal solid feeder terminates at PUMP-AFW-A
+BUS-4160-A,CB-A06,HIGH,power,raw__left_full_train thick 4160 bus has solid tap into CB-A06
+CB-A06,TR-UPS-A,HIGH,power,raw__left_full_train CB-A06 horizontal solid feeder terminates at TR-UPS-A
+BUS-4160-A,CB-A07,HIGH,power,raw__left_full_train thick 4160 bus has solid tap into CB-A07
+CB-A07,CHLR-A,HIGH,power,raw__left_full_train CB-A07 horizontal solid feeder terminates at CHLR-A
+BUS-4160-A,CB-A08,HIGH,power,raw__left_full_train thick 4160 bus has solid tap into CB-A08
+CB-A08,FAN-CR-A,HIGH,power,raw__left_full_train CB-A08 horizontal solid feeder terminates at FAN-CR-A
+BUS-4160-A,CB-A09,HIGH,power,raw__left_full_train thick 4160 bus has solid tap into CB-A09
+CB-A09,LC-FEEDERS-A,HIGH,power,raw__left_full_train CB-A09 horizontal solid feeder terminates at LC-FEEDERS-A
+TR-480-A1,LC-FEEDERS-A,MEDIUM,power,raw__left_full_train transformer secondary vertical bus visually continues into the 480V LC feeder area
+TR-480-A2,LC-FEEDERS-A,MEDIUM,power,raw__left_full_train second transformer secondary conductor joins the same low-voltage feeder backbone
+TR-UPS-A,PNL-UPS-A,LOW,power,raw__left_full_train UPS transformer and UPS panel are linked by nearby power routing through the lower train area
+TB-SWGR-A,RLY-27A,HIGH,control,raw__train_a_upper_4160 dashed lead from switchgear terminal board lands at RLY-27A
+TB-SWGR-A,RLY-50A,HIGH,control,raw__train_a_upper_4160 dashed lead from switchgear terminal board lands at RLY-50A
+TB-SWGR-A,RLY-86A,HIGH,control,raw__train_a_upper_4160 dashed lead from switchgear terminal board lands at RLY-86A
+RLY-27A,RLY-50A,LOW,signal,raw__train_a_upper_4160 dotted relay trunk passes between adjacent relay taps
+RLY-50A,RLY-86A,LOW,signal,raw__train_a_upper_4160 dotted relay trunk passes between adjacent relay taps
+BUS-4160-A,PT-4160-A,MEDIUM,signal,raw__left_full_train PT circle sits on instrument tap from 4160 switchgear area
+BUS-4160-A,CT-4160-A,MEDIUM,signal,raw__left_full_train CT circle sits on instrument tap from 4160 switchgear area
+PT-4160-A,RLY-27A,MEDIUM,signal,raw__train_a_controls_left dotted PT signal route returns toward relay stack
+CT-4160-A,RLY-50A,MEDIUM,signal,raw__train_a_controls_left dotted CT signal route returns toward relay stack
+CT-4160-A,RLY-86A,LOW,signal,raw__train_a_controls_left dotted CT/relay trunk continues near RLY-86A
+PT-4160-A,PNL-RPS-A,MEDIUM,signal,raw__train_a_controls_left dotted instrument path enters the RPS panel region
+CT-4160-A,PNL-RPS-A,HIGH,signal,raw__train_a_controls_left solid/dotted CT lead visibly lands into PNL-RPS-A bay
+CT-4160-A,FUSE-A01,MEDIUM,signal,raw__train_a_controls_left CT branch drops toward FUSE-A01 enclosure
+PNL-RPS-A,FUSE-A01,HIGH,control,raw__train_a_controls_left panel output routes by solid/control lead to FUSE-A01
+PNL-ESFAS-A,FUSE-A02,HIGH,control,raw__train_a_controls_left PNL-ESFAS-A solid output lands at FUSE-A02
+PNL-RPS-A,TB-LV-A,MEDIUM,control,raw__train_a_controls_left dashed panel cabling drops toward TB-LV-A
+PNL-ESFAS-A,TB-LV-A,HIGH,control,raw__train_a_controls_left dashed/solid control lead runs from ESFAS panel to low-voltage terminal board
+TB-LV-A,FUSE-A02,LOW,control,raw__train_a_controls_left low-voltage terminal board is on the same dashed control bundle as FUSE-A02
+FUSE-A01,CB-A09,LOW,signal,raw__train_a_controls_left dotted fuse route reaches the lower breaker stack near CB-A09
+FUSE-A02,DS-A01,HIGH,control,raw__train_a_lc_feeders fuse output solid conductor runs to DS-A01 feed path
+FUSE-A02,LC-FEEDERS-A,LOW,control,raw__train_a_lc_feeders fuse output shares the lower LC feeder control route
+CT-CAB-A,TB-SWGR-A,MEDIUM,control,raw__left_full_train class-division cable tray drops by dashed/control routing to TB-SWGR-A
+CT-CAB-A,PNL-RPS-A,LOW,control,raw__left_full_train left-side tray corridor reaches the RPS panel area
+CT-CAB-A,PNL-ESFAS-A,LOW,control,raw__left_full_train left-side tray corridor reaches the ESFAS panel area
+CT-CAB-A,TB-LV-A,LOW,control,raw__left_full_train tray corridor descends beside TB-LV-A with visible terminations
+LC-FEEDERS-A,LC-101A,HIGH,power,raw__train_a_lc_feeders vertical output from low-voltage feeder box lands at LC-101A
+LC-FEEDERS-A,LC-102A,HIGH,power,raw__train_a_lc_feeders vertical output from low-voltage feeder box lands at LC-102A
+LC-101A,DS-A01,HIGH,power,raw__train_a_lc_feeders LC-101A branch routes to disconnect DS-A01
+DS-A01,MCC-101A,HIGH,power,raw__train_a_lc_feeders DS-A01 lower conductor drops to MCC-101A
+LC-102A,DS-A02,HIGH,power,raw__train_a_lc_feeders LC-102A branch routes to disconnect DS-A02
+DS-A02,MCC-102A,HIGH,power,raw__train_a_lc_feeders DS-A02 lower conductor drops to MCC-102A
+LC-102A,MCC-103A,HIGH,power,raw__train_a_lc_feeders LC-102A vertical conductor continues directly to MCC-103A
+DS-A01,DS-A02,LOW,power,raw__train_a_lc_feeders bottom tie-looking conductor passes between the two disconnects
+DS-A02,MCC-103A,LOW,power,raw__train_a_lc_feeders DS-A02 lower bus shares geometry with MCC-103A branch
+MCC-101A,MOV-101A,HIGH,power,raw__train_a_low_loads MCC-101A drops a solid branch to MOV-101A
+MCC-101A,MOV-102A,HIGH,power,raw__train_a_low_loads MCC-101A drops a solid branch to MOV-102A
+MCC-101A,JB-101A,MEDIUM,control,raw__train_a_low_loads dashed control branch leaves MCC-101A toward JB-101A
+JB-101A,AOV-101A,HIGH,control,raw__train_a_low_loads dashed/control line exits JB-101A and terminates at AOV-101A
+MCC-102A,AOV-101A,MEDIUM,power,raw__train_a_low_loads MCC-102A branch is visually near the AOV power/control landing
+MCC-102A,PUMP-CCW-A,HIGH,power,raw__train_a_low_loads MCC-102A solid branch terminates at PUMP-CCW-A
+MCC-102A,MCC-103A,MEDIUM,power,raw__train_a_low_loads solid low-load bus visually links MCC-102A and MCC-103A branches
+MCC-103A,FAN-AB-A,HIGH,power,raw__train_a_low_loads MCC-103A solid branch terminates at FAN-AB-A
+FAN-AB-A,HTR-TRACE-A,HIGH,power,raw__train_a_low_loads vertical branch from fan area drops into heater trace box
+MCC-103A,HTR-TRACE-A,MEDIUM,power,raw__train_a_low_loads MCC-103A branch shares the same vertical feeder to heater trace
+JB-101A,MCC-102A,LOW,control,raw__train_a_low_loads JB control line and MCC-102A load branch run into same local control/load cluster
+RECT-1A,BCHG-1A,HIGH,power,raw__train_a_dc_ups rectifier output solid line enters battery charger
+BCHG-1A,BAT-1A,HIGH,power,raw__train_a_dc_ups battery charger solid output enters battery block
+BAT-1A,BUS-DC-A,HIGH,power,raw__train_a_dc_ups battery block connects to thick DC bus
+BCHG-1A,BUS-DC-A,MEDIUM,power,raw__train_a_dc_ups charger/battery conductor continues along the DC bus route
+BUS-DC-A,INV-1A,HIGH,power,raw__train_a_dc_ups thick DC bus feeds inverter input
+INV-1A,BUS-UPS-A,HIGH,power,raw__train_a_dc_ups inverter output enters thick UPS bus
+BUS-UPS-A,PNL-UPS-A,HIGH,power,raw__train_a_dc_ups thick UPS bus terminates at PNL-UPS-A
+PNL-UPS-A,HTR-TRACE-A,MEDIUM,control,raw__left_full_train vertical dashed/control route rises from PNL-UPS-A toward HTR-TRACE-A
+BUS-DC-A,GND-A,HIGH,ground,raw__train_a_dc_ups dash-dot ground route from DC train terminates at GND-A
+BAT-1A,GND-A,MEDIUM,ground,raw__train_a_dc_ups battery enclosure sits on same dash-dot ground/reference route
+PNL-UPS-A,GND-A,LOW,ground,raw__train_a_dc_ups UPS panel lies inside the same ground reference corridor
+RECT-1A,GND-A,LOW,ground,raw__train_a_dc_ups rectifier lies on lower dash-dot ground/reference corridor
+BUS-DC-A,PNL-RPS-A,LOW,control,raw__left_full_train bottom dashed DC/UPS control corridor rises toward RPS panel area
+BUS-DC-A,PNL-ESFAS-A,LOW,control,raw__left_full_train bottom dashed DC/UPS control corridor rises toward ESFAS panel area
+PNL-UPS-A,PNL-ESFAS-A,LOW,control,raw__left_full_train dashed UPS panel control route returns toward ESFAS panel area
+DG-1B,CB-DGB,HIGH,power,raw__train_b_upper_4160 diesel generator circle feeds its DG breaker by solid line
+CB-DGB,BUS-4160-B,HIGH,power,raw__train_b_upper_4160 DG breaker output steps into the 4160 switchgear bus
+BUS-4160-B,CB-B01,HIGH,power,raw__right_full_train thick 4160 bus has solid tap into CB-B01
+CB-B01,TR-480-B1,HIGH,power,raw__right_full_train CB-B01 horizontal solid feeder terminates at TR-480-B1
+BUS-4160-B,CB-B02,HIGH,power,raw__right_full_train thick 4160 bus has solid tap into CB-B02
+CB-B02,TR-480-B2,HIGH,power,raw__right_full_train CB-B02 horizontal solid feeder terminates at TR-480-B2
+BUS-4160-B,CB-B03,HIGH,power,raw__right_full_train thick 4160 bus has solid tap into CB-B03
+CB-B03,PUMP-RHR-B,HIGH,power,raw__right_full_train CB-B03 horizontal solid feeder terminates at PUMP-RHR-B
+BUS-4160-B,CB-B04,HIGH,power,raw__right_full_train thick 4160 bus has solid tap into CB-B04
+CB-B04,PUMP-CS-B,HIGH,power,raw__right_full_train CB-B04 horizontal solid feeder terminates at PUMP-CS-B
+BUS-4160-B,CB-B05,HIGH,power,raw__right_full_train thick 4160 bus has solid tap into CB-B05
+CB-B05,PUMP-AFW-B,HIGH,power,raw__right_full_train CB-B05 horizontal solid feeder terminates at PUMP-AFW-B
+BUS-4160-B,CB-B06,HIGH,power,raw__right_full_train thick 4160 bus has solid tap into CB-B06
+CB-B06,TR-UPS-B,HIGH,power,raw__right_full_train CB-B06 horizontal solid feeder terminates at TR-UPS-B
+BUS-4160-B,CB-B07,HIGH,power,raw__right_full_train thick 4160 bus has solid tap into CB-B07
+CB-B07,CHLR-B,HIGH,power,raw__right_full_train CB-B07 horizontal solid feeder terminates at CHLR-B
+BUS-4160-B,CB-B08,HIGH,power,raw__right_full_train thick 4160 bus has solid tap into CB-B08
+CB-B08,FAN-CR-B,HIGH,power,raw__right_full_train CB-B08 horizontal solid feeder terminates at FAN-CR-B
+BUS-4160-B,CB-B09,HIGH,power,raw__right_full_train thick 4160 bus has solid tap into CB-B09
+CB-B09,LC-FEEDERS-B,HIGH,power,raw__right_full_train CB-B09 horizontal solid feeder terminates at LC-FEEDERS-B
+TR-480-B1,LC-FEEDERS-B,MEDIUM,power,raw__right_full_train transformer secondary vertical bus visually continues into the 480V LC feeder area
+TR-480-B2,LC-FEEDERS-B,MEDIUM,power,raw__right_full_train second transformer secondary conductor joins the same low-voltage feeder backbone
+TR-UPS-B,PNL-UPS-B,LOW,power,raw__right_full_train UPS transformer and UPS panel are linked by nearby power routing through the lower train area
+TB-SWGR-B,RLY-27B,HIGH,control,raw__train_b_upper_4160 dashed lead from switchgear terminal board lands at RLY-27B
+TB-SWGR-B,RLY-50B,HIGH,control,raw__train_b_upper_4160 dashed lead from switchgear terminal board lands at RLY-50B
+TB-SWGR-B,RLY-86B,HIGH,control,raw__train_b_upper_4160 dashed lead from switchgear terminal board lands at RLY-86B
+RLY-27B,RLY-50B,LOW,signal,raw__train_b_upper_4160 dotted relay trunk passes between adjacent relay taps
+RLY-50B,RLY-86B,LOW,signal,raw__train_b_upper_4160 dotted relay trunk passes between adjacent relay taps
+BUS-4160-B,PT-4160-B,MEDIUM,signal,raw__right_full_train PT circle sits on instrument tap from 4160 switchgear area
+BUS-4160-B,CT-4160-B,MEDIUM,signal,raw__right_full_train CT circle sits on instrument tap from 4160 switchgear area
+PT-4160-B,RLY-27B,MEDIUM,signal,raw__train_b_controls_left dotted PT signal route returns toward relay stack
+CT-4160-B,RLY-50B,MEDIUM,signal,raw__train_b_controls_left dotted CT signal route returns toward relay stack
+CT-4160-B,RLY-86B,LOW,signal,raw__train_b_controls_left dotted CT/relay trunk continues near RLY-86B
+PT-4160-B,PNL-RPS-B,MEDIUM,signal,raw__train_b_controls_left dotted instrument path enters the RPS panel region
+CT-4160-B,PNL-RPS-B,HIGH,signal,raw__train_b_controls_left solid/dotted CT lead visibly lands into PNL-RPS-B bay
+CT-4160-B,FUSE-B01,MEDIUM,signal,raw__train_b_controls_left CT branch drops toward FUSE-B01 enclosure
+PNL-RPS-B,FUSE-B01,HIGH,control,raw__train_b_controls_left panel output routes by solid/control lead to FUSE-B01
+PNL-ESFAS-B,FUSE-B02,HIGH,control,raw__train_b_controls_left PNL-ESFAS-B solid output lands at FUSE-B02
+PNL-RPS-B,TB-LV-B,MEDIUM,control,raw__train_b_controls_left dashed panel cabling drops toward TB-LV-B
+PNL-ESFAS-B,TB-LV-B,HIGH,control,raw__train_b_controls_left dashed/solid control lead runs from ESFAS panel to low-voltage terminal board
+TB-LV-B,FUSE-B02,LOW,control,raw__train_b_controls_left low-voltage terminal board is on the same dashed control bundle as FUSE-B02
+FUSE-B01,CB-B09,LOW,signal,raw__train_b_controls_left dotted fuse route reaches the lower breaker stack near CB-B09
+FUSE-B02,DS-B01,HIGH,control,raw__train_b_lc_feeders fuse output solid conductor runs to DS-B01 feed path
+FUSE-B02,LC-FEEDERS-B,LOW,control,raw__train_b_lc_feeders fuse output shares the lower LC feeder control route
+CT-CAB-B,TB-SWGR-B,MEDIUM,control,raw__right_full_train class-division cable tray drops by dashed/control routing to TB-SWGR-B
+CT-CAB-B,PNL-RPS-B,LOW,control,raw__right_full_train left-side tray corridor reaches the RPS panel area
+CT-CAB-B,PNL-ESFAS-B,LOW,control,raw__right_full_train left-side tray corridor reaches the ESFAS panel area
+CT-CAB-B,TB-LV-B,LOW,control,raw__right_full_train tray corridor descends beside TB-LV-B with visible terminations
+LC-FEEDERS-B,LC-101B,HIGH,power,raw__train_b_lc_feeders vertical output from low-voltage feeder box lands at LC-101B
+LC-FEEDERS-B,LC-102B,HIGH,power,raw__train_b_lc_feeders vertical output from low-voltage feeder box lands at LC-102B
+LC-101B,DS-B01,HIGH,power,raw__train_b_lc_feeders LC-101B branch routes to disconnect DS-B01
+DS-B01,MCC-101B,HIGH,power,raw__train_b_lc_feeders DS-B01 lower conductor drops to MCC-101B
+LC-102B,DS-B02,HIGH,power,raw__train_b_lc_feeders LC-102B branch routes to disconnect DS-B02
+DS-B02,MCC-102B,HIGH,power,raw__train_b_lc_feeders DS-B02 lower conductor drops to MCC-102B
+LC-102B,MCC-103B,HIGH,power,raw__train_b_lc_feeders LC-102B vertical conductor continues directly to MCC-103B
+DS-B01,DS-B02,LOW,power,raw__train_b_lc_feeders bottom tie-looking conductor passes between the two disconnects
+DS-B02,MCC-103B,LOW,power,raw__train_b_lc_feeders DS-B02 lower bus shares geometry with MCC-103B branch
+MCC-101B,MOV-101B,HIGH,power,raw__train_b_low_loads MCC-101B drops a solid branch to MOV-101B
+MCC-101B,MOV-102B,HIGH,power,raw__train_b_low_loads MCC-101B drops a solid branch to MOV-102B
+MCC-101B,JB-101B,MEDIUM,control,raw__train_b_low_loads dashed control branch leaves MCC-101B toward JB-101B
+JB-101B,AOV-101B,HIGH,control,raw__train_b_low_loads dashed/control line exits JB-101B and terminates at AOV-101B
+MCC-102B,AOV-101B,MEDIUM,power,raw__train_b_low_loads MCC-102B branch is visually near the AOV power/control landing
+MCC-102B,PUMP-CCW-B,HIGH,power,raw__train_b_low_loads MCC-102B solid branch terminates at PUMP-CCW-B
+MCC-102B,MCC-103B,MEDIUM,power,raw__train_b_low_loads solid low-load bus visually links MCC-102B and MCC-103B branches
+MCC-103B,FAN-AB-B,HIGH,power,raw__train_b_low_loads MCC-103B solid branch terminates at FAN-AB-B
+FAN-AB-B,HTR-TRACE-B,HIGH,power,raw__train_b_low_loads vertical branch from fan area drops into heater trace box
+MCC-103B,HTR-TRACE-B,MEDIUM,power,raw__train_b_low_loads MCC-103B branch shares the same vertical feeder to heater trace
+JB-101B,MCC-102B,LOW,control,raw__train_b_low_loads JB control line and MCC-102B load branch run into same local control/load cluster
+RECT-1B,BCHG-1B,HIGH,power,raw__train_b_dc_ups rectifier output solid line enters battery charger
+BCHG-1B,BAT-1B,HIGH,power,raw__train_b_dc_ups battery charger solid output enters battery block
+BAT-1B,BUS-DC-B,HIGH,power,raw__train_b_dc_ups battery block connects to thick DC bus
+BCHG-1B,BUS-DC-B,MEDIUM,power,raw__train_b_dc_ups charger/battery conductor continues along the DC bus route
+BUS-DC-B,INV-1B,HIGH,power,raw__train_b_dc_ups thick DC bus feeds inverter input
+INV-1B,BUS-UPS-B,HIGH,power,raw__train_b_dc_ups inverter output enters thick UPS bus
+BUS-UPS-B,PNL-UPS-B,HIGH,power,raw__train_b_dc_ups thick UPS bus terminates at PNL-UPS-B
+PNL-UPS-B,HTR-TRACE-B,MEDIUM,control,raw__right_full_train vertical dashed/control route rises from PNL-UPS-B toward HTR-TRACE-B
+BUS-DC-B,GND-B,HIGH,ground,raw__train_b_dc_ups dash-dot ground route from DC train terminates at GND-B
+BAT-1B,GND-B,MEDIUM,ground,raw__train_b_dc_ups battery enclosure sits on same dash-dot ground/reference route
+PNL-UPS-B,GND-B,LOW,ground,raw__train_b_dc_ups UPS panel lies inside the same ground reference corridor
+RECT-1B,GND-B,LOW,ground,raw__train_b_dc_ups rectifier lies on lower dash-dot ground/reference corridor
+BUS-DC-B,PNL-RPS-B,LOW,control,raw__right_full_train bottom dashed DC/UPS control corridor rises toward RPS panel area
+BUS-DC-B,PNL-ESFAS-B,LOW,control,raw__right_full_train bottom dashed DC/UPS control corridor rises toward ESFAS panel area
+PNL-UPS-B,PNL-ESFAS-B,LOW,control,raw__right_full_train dashed UPS panel control route returns toward ESFAS panel area
+CT-CAB-B,PNL-MCR-01,MEDIUM,control,raw__mcr_annunciator dashed cable-tray branch visibly enters PNL-MCR-01
+CT-CAB-B,JB-CONTROL,HIGH,control,raw__mcr_annunciator dashed cable-tray bundle terminates at JB-CONTROL
+CT-CAB-A,JB-CONTROL,LOW,control,raw__mcr_annunciator adjacent left dashed bundle plausibly comes from division A tray
+PNL-MCR-01,JB-CONTROL,MEDIUM,control,raw__mcr_annunciator dashed control lead routes from PNL-MCR-01 toward JB-CONTROL
+PNL-ANN-01,JB-CONTROL,HIGH,signal,raw__mcr_annunciator dotted signal lead descends from annunciator panel to JB-CONTROL
+SER-01,JB-CONTROL,HIGH,signal,raw__mcr_annunciator signal lead drops from SER-01 into JB-CONTROL
+PNL-ANN-01,SER-01,LOW,signal,raw__mcr_annunciator dotted vertical signal route passes between annunciator and SER panel
+PNL-MCR-01,PNL-ANN-01,LOW,control,raw__mcr_annunciator both panels share the same local MCR dashed control bundle
+JB-CONTROL,PNL-RPS-A,LOW,control,raw__mcr_annunciator long dashed control corridor plausibly routes from MCR bay to division A RPS
+JB-CONTROL,PNL-ESFAS-A,LOW,control,raw__mcr_annunciator long dashed control corridor plausibly routes from MCR bay to division A ESFAS
+JB-CONTROL,PNL-RPS-B,LOW,control,raw__mcr_annunciator long dashed control corridor plausibly routes from MCR bay to division B RPS
+JB-CONTROL,PNL-ESFAS-B,LOW,control,raw__mcr_annunciator long dashed control corridor plausibly routes from MCR bay to division B ESFAS
+PNL-ANN-01,PNL-ESFAS-A,LOW,signal,raw__mcr_annunciator and raw__left_full_train annunciator signal corridor plausibly returns to ESFAS-A
+PNL-ANN-01,PNL-ESFAS-B,LOW,signal,raw__mcr_annunciator and raw__right_full_train annunciator signal corridor plausibly returns to ESFAS-B
+MATRIX_CSV
+,SRC-345KV,BUS-SWY-345KV,GEN-01,CB-GEN-1,UAT-1,SAT-1,CB-UAT,CB-SAT,CB-TIE-AB,CT-CAB-A,CT-CAB-B,DG-1A,CB-DGA,BUS-4160-A,TB-SWGR-A,RLY-27A,RLY-50A,RLY-86A,PT-4160-A,CT-4160-A,PNL-RPS-A,PNL-ESFAS-A,TB-LV-A,FUSE-A01,FUSE-A02,CB-A01,CB-A02,CB-A03,CB-A04,CB-A05,CB-A06,CB-A07,CB-A08,CB-A09,TR-480-A1,TR-480-A2,TR-UPS-A,LC-FEEDERS-A,PUMP-RHR-A,PUMP-CS-A,PUMP-AFW-A,CHLR-A,FAN-CR-A,LC-101A,LC-102A,DS-A01,DS-A02,MCC-101A,MCC-102A,MCC-103A,MOV-101A,MOV-102A,JB-101A,AOV-101A,PUMP-CCW-A,FAN-AB-A,HTR-TRACE-A,RECT-1A,BCHG-1A,BAT-1A,BUS-DC-A,INV-1A,BUS-UPS-A,PNL-UPS-A,GND-A,DG-1B,CB-DGB,BUS-4160-B,TB-SWGR-B,RLY-27B,RLY-50B,RLY-86B,PT-4160-B,CT-4160-B,PNL-RPS-B,PNL-ESFAS-B,TB-LV-B,FUSE-B01,FUSE-B02,CB-B01,CB-B02,CB-B03,CB-B04,CB-B05,CB-B06,CB-B07,CB-B08,CB-B09,TR-480-B1,TR-480-B2,TR-UPS-B,LC-FEEDERS-B,PUMP-RHR-B,PUMP-CS-B,PUMP-AFW-B,CHLR-B,FAN-CR-B,LC-101B,LC-102B,DS-B01,DS-B02,MCC-101B,MCC-102B,MCC-103B,MOV-101B,MOV-102B,JB-101B,AOV-101B,PUMP-CCW-B,FAN-AB-B,HTR-TRACE-B,RECT-1B,BCHG-1B,BAT-1B,BUS-DC-B,INV-1B,BUS-UPS-B,PNL-UPS-B,GND-B,PNL-MCR-01,PNL-ANN-01,SER-01,JB-CONTROL
+SRC-345KV,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BUS-SWY-345KV,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GEN-01,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-GEN-1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+UAT-1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SAT-1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-UAT,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-SAT,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-TIE-AB,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CT-CAB-A,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+CT-CAB-B,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1
+DG-1A,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-DGA,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BUS-4160-A,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TB-SWGR-A,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RLY-27A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RLY-50A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RLY-86A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PT-4160-A,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CT-4160-A,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PNL-RPS-A,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+PNL-ESFAS-A,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+TB-LV-A,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+FUSE-A01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+FUSE-A02,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-A01,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-A02,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-A03,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-A04,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-A05,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-A06,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-A07,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-A08,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-A09,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TR-480-A1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TR-480-A2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TR-UPS-A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LC-FEEDERS-A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PUMP-RHR-A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PUMP-CS-A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PUMP-AFW-A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CHLR-A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+FAN-CR-A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LC-101A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LC-102A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DS-A01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DS-A02,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MCC-101A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MCC-102A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MCC-103A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MOV-101A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MOV-102A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+JB-101A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+AOV-101A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PUMP-CCW-A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+FAN-AB-A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+HTR-TRACE-A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RECT-1A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BCHG-1A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BAT-1A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BUS-DC-A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+INV-1A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BUS-UPS-A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PNL-UPS-A,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GND-A,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DG-1B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-DGB,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BUS-4160-B,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TB-SWGR-B,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RLY-27B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RLY-50B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RLY-86B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PT-4160-B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CT-4160-B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PNL-RPS-B,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+PNL-ESFAS-B,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,1
+TB-LV-B,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+FUSE-B01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+FUSE-B02,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-B01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-B02,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-B03,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-B04,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-B05,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-B06,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-B07,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-B08,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CB-B09,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TR-480-B1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TR-480-B2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TR-UPS-B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+LC-FEEDERS-B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PUMP-RHR-B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PUMP-CS-B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PUMP-AFW-B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CHLR-B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+FAN-CR-B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LC-101B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LC-102B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DS-B01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DS-B02,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MCC-101B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MCC-102B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MCC-103B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+MOV-101B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MOV-102B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+JB-101B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+AOV-101B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PUMP-CCW-B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+FAN-AB-B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+HTR-TRACE-B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+RECT-1B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+BCHG-1B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+BAT-1B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0
+BUS-DC-B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,1,0,0,0,0
+INV-1B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+BUS-UPS-B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0
+PNL-UPS-B,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0
+GND-B,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0
+PNL-MCR-01,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+PNL-ANN-01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+SER-01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+JB-CONTROL,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0
+AMBIGUITIES
+- CB-GEN-1 is not cleanly separated in the raw top-source crop. I included a low-confidence generator/switchyard path because the context and geometry suggest a possible generator breaker relationship.
+- CB-TIE-AB visually sits on a horizontal solid feeder between the class divisions. I treated it as a medium-confidence tie between BUS-4160-A and BUS-4160-B rather than a plain crossing.
+- CT-CAB-A and CT-CAB-B are labeled cable tray/control reference routes. Edges from trays to panels and grounds are high-recall corridor candidates when the routed line visibly approaches or lands at the equipment bay.
+- Dotted PT/CT/relay routes around TB-SWGR and the fuse blocks are visually dense. I kept plausible relay and fuse endpoints but exact terminal order is uncertain.
+- FUSE-A01/B01 to lower breaker-stack and FUSE-A02/B02 to LC feeder/disconnect routes are visually plausible but exact protective-control function is uncertain.
+- Low-load MCC links among MCC-102 and MCC-103 and DS-to-MCC branches are based on visible solid bus geometry. Crossings without junction dots were otherwise not counted.
+- Long dashed MCR to division control-panel links and UPS/DC control returns are low-confidence corridor edges included for recall only.
+- Dash-dot ground routes are isolated reference bands. I counted only visually terminated ground-symbol routes and nearby equipment taps as low or medium confidence where the raw endpoint was not a direct short drop.

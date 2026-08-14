@@ -1,0 +1,42 @@
+Connectivity matrix validation summary - Document 12
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\12\synthetic_npp_connectivity_matrix_rps_rerouted.csv
+
+Scores:
+- Diego -- Round 1 (round01_diego_connectivity_matrix.csv): TP=157, FP=14, FN=23, Precision=0.918129, Recall=0.872222, F1=0.894587
+- Jennifer -- Round 1 (round01_jennifer_connectivity_matrix.csv): TP=153, FP=13, FN=27, Precision=0.921687, Recall=0.850000, F1=0.884393
+- Diego -- Round 2 (round02_diego_connectivity_matrix.csv): TP=153, FP=13, FN=27, Precision=0.921687, Recall=0.850000, F1=0.884393
+- Jennifer -- Round 2 (round02_jennifer_connectivity_matrix.csv): TP=153, FP=13, FN=27, Precision=0.921687, Recall=0.850000, F1=0.884393
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=153, FP=13, FN=27, Precision=0.921687, Recall=0.850000, F1=0.884393
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- ANN-480A -- RELAY-27A
+- ANN-480B -- RELAY-27B
+- CB-101 -- CB-102
+- CB-102 -- CB-103
+- CB-103 -- CB-TIE-1
+- CB-111 -- CB-112
+- CB-202 -- CB-203
+- CB-202 -- CB-303
+- CB-203 -- CB-TIE-1
+- CB-211 -- CB-212
+
+False-negative edge examples:
+- ANN-480A -- PNL-RPS-A
+- ANN-480B -- SEQ-REC-1
+- BUS-120VAC-ESF -- PNL-ESFAS-A
+- BUS-120VAC-ESF -- PNL-ESFAS-B
+- BUS-120VAC-ESF -- PNL-RPS-A
+- BUS-120VAC-ESF -- PNL-RPS-B
+- BUS-4KV-A -- PT-4160A
+- BUS-4KV-B -- PT-4160B
+- CB-103 -- RELAY-86A
+- CB-111 -- RELAY-27A
+
+Missing GT node examples:
+- PT-4160A: 2 missed incident GT edge(s)
+- PT-4160B: 2 missed incident GT edge(s)

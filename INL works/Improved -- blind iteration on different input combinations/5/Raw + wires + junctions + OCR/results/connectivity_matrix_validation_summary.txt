@@ -1,0 +1,35 @@
+Connectivity matrix validation summary - Document 5 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\5\synthetic_npp_connectivity_matrix_final_cleaned_v4.csv
+GT after normalization: 140 undirected edges across 112 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token estimate: low=77450, expected=97510, high=130580.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=125, FP=15, FN=15, Precision=0.892857, Recall=0.892857, F1=0.892857.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names; missing exact GT component names.
+- Extracted components: 112; extra/non-GT names: 2; missing GT component names: 2.
+- False-positive extracted edge examples: BAT-48V-A -- GND-GRID; BAT-48V-B -- GND-GRID; BUS-NON1 -- TR-SAF-C; BUS-SY230 -- TR-UAT-1A; BUS-SY230 -- TR-UAT-1B; CP-ESFAS-2 -- RELAY-UV-B; FAN-CRHV-A -- GND-GRID; FAN-CRHV-B -- GND-GRID; ... (+7 more).
+- Missed GT edge examples: BUS-AUX13B -- BUS-NON1; BUS-SY230 -- GND-GRID; CP-ESFAS-1 -- RELAY-UV-B; GEN-G101 -- TR-UAT-1A; GEN-G101 -- TR-UAT-1B; GND-GRID -- LC-480A; GND-GRID -- LC-480B; GND-GRID -- LC-480C; ... (+7 more).
+- Extra/non-GT component examples: V-MISV-A; V-MISV-B.
+- Missing GT component examples: VLV-MSIV-A; VLV-MSIV-B.
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=125, FP=0, FN=15, Precision=1.000000, Recall=0.892857, F1=0.943396.
+- If all missed GT edges were added, final performance would be TP=140, FP=15, FN=0, Precision=0.903226, Recall=1.000000, F1=0.949153.
+- If extra node V-MISV-A and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=125, FP=14, FN=15, Precision=0.899281, Recall=0.892857, F1=0.896057.
+- If extra node V-MISV-B and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=125, FP=14, FN=15, Precision=0.899281, Recall=0.892857, F1=0.896057.
+
+Best evaluated row: Diego -- Round 1 with F1=0.892857.
+
+Round-specific notes:
+- Diego -- Round 1: TP=125, FP=15, FN=15, F1=0.892857; extra nodes=2, missing GT nodes=2. FP examples: BAT-48V-A -- GND-GRID; BAT-48V-B -- GND-GRID; BUS-NON1 -- TR-SAF-C; BUS-SY230 -- TR-UAT-1A; ... (+11 more). FN examples: BUS-AUX13B -- BUS-NON1; BUS-SY230 -- GND-GRID; CP-ESFAS-1 -- RELAY-UV-B; GEN-G101 -- TR-UAT-1A; ... (+11 more).
+- Jennifer -- Round 2: TP=125, FP=15, FN=15, F1=0.892857; extra nodes=2, missing GT nodes=2. FP examples: BAT-48V-A -- GND-GRID; BAT-48V-B -- GND-GRID; BUS-NON1 -- TR-SAF-C; BUS-SY230 -- TR-UAT-1A; ... (+11 more). FN examples: BUS-AUX13B -- BUS-NON1; BUS-SY230 -- GND-GRID; CP-ESFAS-1 -- RELAY-UV-B; GEN-G101 -- TR-UAT-1A; ... (+11 more).
+- Diego -- Round 3: TP=125, FP=15, FN=15, F1=0.892857; extra nodes=2, missing GT nodes=2. FP examples: BAT-48V-A -- GND-GRID; BAT-48V-B -- GND-GRID; BUS-NON1 -- TR-SAF-C; BUS-SY230 -- TR-UAT-1A; ... (+11 more). FN examples: BUS-AUX13B -- BUS-NON1; BUS-SY230 -- GND-GRID; CP-ESFAS-1 -- RELAY-UV-B; GEN-G101 -- TR-UAT-1A; ... (+11 more).
+- Jennifer -- Round 4: TP=125, FP=15, FN=15, F1=0.892857; extra nodes=2, missing GT nodes=2. FP examples: BAT-48V-A -- GND-GRID; BAT-48V-B -- GND-GRID; BUS-NON1 -- TR-SAF-C; BUS-SY230 -- TR-UAT-1A; ... (+11 more). FN examples: BUS-AUX13B -- BUS-NON1; BUS-SY230 -- GND-GRID; CP-ESFAS-1 -- RELAY-UV-B; GEN-G101 -- TR-UAT-1A; ... (+11 more).
+- Final connectivity -- Final: TP=125, FP=15, FN=15, F1=0.892857; extra nodes=2, missing GT nodes=2. FP examples: BAT-48V-A -- GND-GRID; BAT-48V-B -- GND-GRID; BUS-NON1 -- TR-SAF-C; BUS-SY230 -- TR-UAT-1A; ... (+11 more). FN examples: BUS-AUX13B -- BUS-NON1; BUS-SY230 -- GND-GRID; CP-ESFAS-1 -- RELAY-UV-B; GEN-G101 -- TR-UAT-1A; ... (+11 more).

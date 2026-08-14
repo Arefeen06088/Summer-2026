@@ -1,0 +1,159 @@
+source,target,confidence,line_type,evidence
+OFFSITE-345,DS-SAT-1,HIGH,solid power,raw__top_left_offsite_gen solid line from offsite box to DS-SAT-1 left terminal
+DS-SAT-1,TR-SAT-A,HIGH,solid power,raw__top_left_offsite_gen DS-SAT-1 right terminal drops to TR-SAT-A
+DS-SAT-1,AUX-13.8KV-SOURCE-LINE,MEDIUM,solid power,raw__top_left_offsite_gen DS top tap reaches unlabeled upper source conductor
+AUX-13.8KV-SOURCE-LINE,TR-SAT-B,LOW,solid power,raw__top_sources_full upper source conductor turns down to TR-SAT-B
+TR-SAT-A,CB-SAT-A,HIGH,solid power,raw__top_left_offsite_gen transformer bottom terminal to CB-SAT-A
+CB-SAT-A,BUS-4A,HIGH,solid power,raw__top_left_offsite_gen CB-SAT-A bottom terminal lands on BUS-4A
+TR-SAT-B,CB-SAT-B,HIGH,solid power,raw__top_right_standby TR-SAT-B bottom terminal to CB-SAT-B
+CB-SAT-B,BUS-4B,HIGH,solid power,raw__top_right_standby CB-SAT-B bottom terminal lands on BUS-4B
+GEN-G01,ISO-GEN-1,HIGH,solid power,raw__top_left_offsite_gen generator circle connects to ISO-GEN-1
+ISO-GEN-1,CB-GEN-A,HIGH,solid power,raw__top_left_offsite_gen ISO-GEN-1 right terminal connects to CB-GEN-A
+CB-GEN-A,BUS-13A,HIGH,solid power,raw__top_left_offsite_gen CB-GEN-A vertical drop lands on BUS-13A
+BUS-13A,CB-TIE-13,HIGH,solid power,raw__top_mid_bus_tie BUS-13A heavy line enters CB-TIE-13
+CB-TIE-13,BUS-13B,HIGH,solid power,raw__top_mid_bus_tie CB-TIE-13 exits to BUS-13B
+BUS-13A,CB-UAT-A,HIGH,solid power,raw__top_left_offsite_gen BUS-13A tap drops into CB-UAT-A
+CB-UAT-A,TR-UAT-A,HIGH,solid power,raw__top_left_offsite_gen CB-UAT-A bottom terminal to TR-UAT-A
+TR-UAT-A,BUS-4A,HIGH,solid power,raw__top_left_offsite_gen TR-UAT-A bottom lead lands on BUS-4A
+BUS-13B,CB-UAT-B,HIGH,solid power,raw__top_sources_full BUS-13B tap drops into CB-UAT-B
+CB-UAT-B,TR-UAT-B,HIGH,solid power,raw__top_right_standby CB-UAT-B bottom terminal to TR-UAT-B
+TR-UAT-B,BUS-4B,HIGH,solid power,raw__top_right_standby TR-UAT-B bottom lead lands on BUS-4B
+BUS-4A,CB-TIE-4,HIGH,solid power,raw__top_mid_bus_tie BUS-4A heavy line enters CB-TIE-4
+CB-TIE-4,BUS-4B,HIGH,solid power,raw__top_mid_bus_tie CB-TIE-4 exits to BUS-4B
+DG-1A,CB-DG-A,HIGH,solid power,raw__top_mid_bus_tie DG-1A vertical lead to CB-DG-A
+CB-DG-A,BUS-4A,HIGH,solid power,raw__top_mid_bus_tie CB-DG-A bottom lead lands on BUS-4A
+DG-1B,CB-DG-B,HIGH,solid power,raw__top_right_standby DG-1B vertical lead to CB-DG-B
+CB-DG-B,BUS-4B,HIGH,solid power,raw__top_right_standby CB-DG-B bottom lead lands on BUS-4B
+CB-DG-A,CTRL-RACEWAY-A,MEDIUM,dashed control,raw__top_mid_bus_tie dashed line leaves CB-DG-A side into vertical raceway path
+CB-DG-B,CTRL-RACEWAY-B,MEDIUM,dashed control,raw__top_right_standby dashed line leaves CB-DG-B side into right raceway path
+BUS-4A,CB-480A,HIGH,solid power,raw__train_ab_load_centers 4A-FDR-A drops from BUS-4A to CB-480A
+CB-480A,TR-480A,HIGH,solid power,raw__train_ab_load_centers CB-480A bottom terminal to TR-480A
+TR-480A,LC-480A,HIGH,solid power,raw__train_ab_load_centers TR-480A bottom lead lands on LC-480A
+BUS-4A,CB-480B,HIGH,solid power,raw__train_ab_load_centers 4A-FDR-B drops from BUS-4A to CB-480B
+CB-480B,TR-480B,HIGH,solid power,raw__train_ab_load_centers CB-480B bottom terminal to TR-480B
+TR-480B,LC-480B,HIGH,solid power,raw__train_ab_load_centers TR-480B bottom lead lands on LC-480B
+BUS-4B,CB-480C,HIGH,solid power,raw__train_cd_load_centers 4B-FDR-C drops from BUS-4B to CB-480C
+CB-480C,TR-480C,HIGH,solid power,raw__train_cd_load_centers CB-480C bottom terminal to TR-480C
+TR-480C,LC-480C,HIGH,solid power,raw__train_cd_load_centers TR-480C bottom lead lands on LC-480C
+BUS-4B,CB-480D,HIGH,solid power,raw__train_cd_load_centers 4B-FDR-D drops from BUS-4B to CB-480D
+CB-480D,TR-480D,HIGH,solid power,raw__train_cd_load_centers CB-480D bottom terminal to TR-480D
+TR-480D,LC-480D,HIGH,solid power,raw__train_cd_load_centers TR-480D bottom lead lands on LC-480D
+LC-480A,CB-MCC-A1,HIGH,solid power,raw__train_a_loads LC-480A left tap drops to CB-MCC-A1
+CB-MCC-A1,MCC-A1,HIGH,solid power,raw__train_a_loads CB-MCC-A1 bottom terminal to MCC-A1
+MCC-A1,CB-P201A,HIGH,solid power,raw__train_a_loads MCC-A1 left feeder to CB-P201A
+CB-P201A,PUMP-P201A,HIGH,solid power,raw__train_a_loads CB-P201A bottom lead to pump
+MCC-A1,CB-MOV101A,HIGH,solid power,raw__train_a_loads MCC-A1 center feeder to CB-MOV101A
+CB-MOV101A,MOV-101A,HIGH,solid power,raw__train_a_loads CB-MOV101A bottom lead to MOV-101A
+MCC-A1,CB-FAN101A,HIGH,solid power,raw__train_a_loads MCC-A1 right feeder to CB-FAN101A
+CB-FAN101A,FAN-F101A,HIGH,solid power,raw__train_a_loads CB-FAN101A bottom lead to fan
+LC-480A,CB-MCC-A2,HIGH,solid power,raw__train_a_loads LC-480A right tap drops to CB-MCC-A2
+CB-MCC-A2,MCC-A2,HIGH,solid power,raw__train_a_loads CB-MCC-A2 bottom terminal to MCC-A2
+MCC-A2,CB-P202A,HIGH,solid power,raw__train_a_loads MCC-A2 left feeder to CB-P202A
+CB-P202A,PUMP-P202A,HIGH,solid power,raw__train_a_loads CB-P202A bottom lead to pump
+MCC-A2,CB-MOV102A,HIGH,solid power,raw__train_a_loads MCC-A2 center feeder to CB-MOV102A
+CB-MOV102A,MOV-102A,HIGH,solid power,raw__train_a_loads CB-MOV102A bottom lead to MOV-102A
+MCC-A2,CB-HTR101A,HIGH,solid power,raw__train_a_loads MCC-A2 right feeder to CB-HTR101A
+CB-HTR101A,HTR-H101A,HIGH,solid power,raw__train_a_loads CB-HTR101A bottom lead to heater
+LC-480B,CB-MCC-B1,HIGH,solid power,raw__train_b_loads LC-480B left tap drops to CB-MCC-B1
+CB-MCC-B1,MCC-B1,HIGH,solid power,raw__train_b_loads CB-MCC-B1 bottom terminal to MCC-B1
+MCC-B1,CB-P201B,HIGH,solid power,raw__train_b_loads MCC-B1 left feeder to CB-P201B
+CB-P201B,PUMP-P201B,HIGH,solid power,raw__train_b_loads CB-P201B bottom lead to pump
+MCC-B1,CB-MOV101B,HIGH,solid power,raw__train_b_loads MCC-B1 center feeder to CB-MOV101B
+CB-MOV101B,MOV-101B,HIGH,solid power,raw__train_b_loads CB-MOV101B bottom lead to MOV-101B
+MCC-B1,CB-FAN101B,HIGH,solid power,raw__train_b_loads MCC-B1 right feeder to CB-FAN101B
+CB-FAN101B,FAN-F101B,HIGH,solid power,raw__train_b_loads CB-FAN101B bottom lead to fan
+LC-480B,CB-MCC-B2,HIGH,solid power,raw__train_b_loads LC-480B right tap drops to CB-MCC-B2
+CB-MCC-B2,MCC-B2,HIGH,solid power,raw__train_b_loads CB-MCC-B2 bottom terminal to MCC-B2
+MCC-B2,CB-P202B,HIGH,solid power,raw__train_b_loads MCC-B2 left feeder to CB-P202B
+CB-P202B,PUMP-P202B,HIGH,solid power,raw__train_b_loads CB-P202B bottom lead to pump
+MCC-B2,CB-MOV102B,HIGH,solid power,raw__train_b_loads MCC-B2 center feeder to CB-MOV102B
+CB-MOV102B,MOV-102B,HIGH,solid power,raw__train_b_loads CB-MOV102B bottom lead to MOV-102B
+MCC-B2,CB-HTR101B,HIGH,solid power,raw__train_b_loads MCC-B2 right feeder to CB-HTR101B
+CB-HTR101B,HTR-H101B,HIGH,solid power,raw__train_b_loads CB-HTR101B bottom lead to heater
+LC-480C,CB-MCC-C1,HIGH,solid power,raw__train_c_loads LC-480C left tap drops to CB-MCC-C1
+CB-MCC-C1,MCC-C1,HIGH,solid power,raw__train_c_loads CB-MCC-C1 bottom terminal to MCC-C1
+MCC-C1,CB-P301A,HIGH,solid power,raw__train_cd_load_centers MCC-C1 left feeder to CB-P301A
+CB-P301A,PUMP-P301A,HIGH,solid power,raw__train_cd_load_centers CB-P301A bottom lead to pump
+MCC-C1,CB-MOV201A,HIGH,solid power,raw__train_c_loads MCC-C1 center feeder to CB-MOV201A
+CB-MOV201A,MOV-201A,HIGH,solid power,raw__train_c_loads CB-MOV201A bottom lead to MOV-201A
+MCC-C1,CB-FAN201A,HIGH,solid power,raw__train_c_loads MCC-C1 right feeder to CB-FAN201A
+CB-FAN201A,FAN-F201A,HIGH,solid power,raw__train_c_loads CB-FAN201A bottom lead to fan
+LC-480C,CB-MCC-C2,HIGH,solid power,raw__train_c_loads LC-480C right tap drops to CB-MCC-C2
+CB-MCC-C2,MCC-C2,HIGH,solid power,raw__train_c_loads CB-MCC-C2 bottom terminal to MCC-C2
+MCC-C2,CB-P302A,HIGH,solid power,raw__train_c_loads MCC-C2 left feeder to CB-P302A
+CB-P302A,PUMP-P302A,HIGH,solid power,raw__train_c_loads CB-P302A bottom lead to pump
+MCC-C2,CB-MOV202A,HIGH,solid power,raw__train_c_loads MCC-C2 center feeder to CB-MOV202A
+CB-MOV202A,MOV-202A,HIGH,solid power,raw__train_c_loads CB-MOV202A bottom lead to MOV-202A
+MCC-C2,CB-HTR201A,HIGH,solid power,raw__train_c_loads MCC-C2 right feeder to CB-HTR201A
+CB-HTR201A,HTR-H201A,HIGH,solid power,raw__train_c_loads CB-HTR201A bottom lead to heater
+LC-480D,CB-MCC-D1,HIGH,solid power,raw__train_d_loads LC-480D left tap drops to CB-MCC-D1
+CB-MCC-D1,MCC-D1,HIGH,solid power,raw__train_d_loads CB-MCC-D1 bottom terminal to MCC-D1
+MCC-D1,CB-P301B,HIGH,solid power,raw__train_d_loads MCC-D1 left feeder to CB-P301B
+CB-P301B,PUMP-P301B,HIGH,solid power,raw__train_d_loads CB-P301B bottom lead to pump
+MCC-D1,CB-MOV201B,HIGH,solid power,raw__train_d_loads MCC-D1 center feeder to CB-MOV201B
+CB-MOV201B,MOV-201B,HIGH,solid power,raw__train_d_loads CB-MOV201B bottom lead to MOV-201B
+MCC-D1,CB-FAN201B,HIGH,solid power,raw__train_d_loads MCC-D1 right feeder to CB-FAN201B
+CB-FAN201B,FAN-F201B,HIGH,solid power,raw__train_d_loads CB-FAN201B bottom lead to fan
+LC-480D,CB-MCC-D2,HIGH,solid power,raw__train_d_loads LC-480D right tap drops to CB-MCC-D2
+CB-MCC-D2,MCC-D2,HIGH,solid power,raw__train_d_loads CB-MCC-D2 bottom terminal to MCC-D2
+MCC-D2,CB-P302B,HIGH,solid power,raw__train_d_loads MCC-D2 left feeder to CB-P302B
+CB-P302B,PUMP-P302B,HIGH,solid power,raw__train_d_loads CB-P302B bottom lead to pump
+MCC-D2,CB-MOV202B,HIGH,solid power,raw__train_d_loads MCC-D2 center feeder to CB-MOV202B
+CB-MOV202B,MOV-202B,HIGH,solid power,raw__train_d_loads CB-MOV202B bottom lead to MOV-202B
+MCC-D2,CB-HTR201B,HIGH,solid power,raw__train_d_loads MCC-D2 right feeder to CB-HTR201B
+CB-HTR201B,HTR-H201B,HIGH,solid power,raw__train_d_loads CB-HTR201B bottom lead to heater
+LC-480A,BAT-125A,LOW,solid power,raw__dc_control_a left incoming solid feeder appears to descend from Train A load-center area into battery line
+LC-480D,BCHG-125B,LOW,solid power,raw__train_d_loads and raw__dc_control_b right solid drop appears to feed BCHG-125B
+BAT-125A,BCHG-125A,MEDIUM,solid power,raw__dc_control_a solid horizontal conductor from battery side to charger side
+BAT-125A,BUS-125DCA,HIGH,solid power,raw__dc_control_a BAT-125A bottom terminal lands on BUS-125DCA
+BCHG-125A,BUS-125DCA,HIGH,solid power,raw__dc_control_a BCHG-125A bottom terminal lands on BUS-125DCA
+BUS-125DCA,INV-120A,HIGH,solid power,raw__dc_control_a BUS-125DCA vertical tap feeds INV-120A
+BUS-125DCA,PPS-A,HIGH,solid power,raw__dc_control_a BUS-125DCA vertical tap feeds PPS-A
+INV-120A,UPS-120A,HIGH,dashed control,raw__dc_control_a_detail dashed horizontal link between INV-120A and UPS-120A
+UPS-120A,PNL-AC-CR1,HIGH,dashed control,raw__dc_control_a_detail dashed horizontal link between UPS-120A and PNL-AC-CR1
+PNL-AC-CR1,PPS-A,HIGH,dashed control,raw__dc_control_a_detail dashed horizontal link from PNL-AC-CR1 to PPS-A
+UPS-120A,ANN-101,HIGH,dashed control,raw__dc_control_a_detail UPS-120A bottom dashed vertical terminates at ANN-101
+ANN-101,PNL-AC-CR1,MEDIUM,dashed control,raw__dc_control_a_detail ANN-101 right dashed link reaches PNL relay verticals
+ANN-101,PPS-A,MEDIUM,dashed sensing,raw__dc_control_a_detail diagonal dashed line from ANN-101 area terminates at PPS-A left side
+PNL-AC-CR1,RELAY-K101,MEDIUM,dashed control,raw__dc_control_a_detail vertical dashed line below PNL-AC-CR1 terminates at relay K101
+PNL-AC-CR1,CTRL-RACEWAY-A,MEDIUM,dashed control,raw__dc_control_a vertical raceway lines pass through PNL-AC-CR1 terminals
+PPS-A,RELAY-K101,HIGH,dashed control,raw__dc_control_a_detail PPS-A bottom dashed branch reaches RELAY-K101
+PPS-A,RELAY-K102,HIGH,dashed control,raw__dc_control_a_detail PPS-A bottom dashed branches reach RELAY-K102
+PPS-A,CTRL-RACEWAY-A,MEDIUM,dashed control,raw__dc_control_a vertical dashed raceway lines terminate at PPS-A top and bottom terminals
+ANN-101,RELAY-K101,HIGH,dashed control,raw__dc_control_a_detail dashed horizontal line from ANN-101 to RELAY-K101 left side
+RELAY-K101,RELAY-K102,HIGH,dashed control,raw__dc_control_a_detail dashed lower horizontal link connects K101 and K102
+RELAY-K101,CTRL-RACEWAY-A,MEDIUM,dashed control,raw__dc_control_a_detail raceway dashed verticals pass through RELAY-K101 terminals
+RELAY-K102,CTRL-RACEWAY-A,MEDIUM,dashed control,raw__dc_control_a_detail raceway dashed verticals pass through RELAY-K102 terminals
+ANN-101,CTRL-RACEWAY-A,MEDIUM,dashed control,raw__dc_control_a ANN-101 bottom dashed line enters CTRL RACEWAY A
+RELAY-K102,SR-101,MEDIUM,dashed control,raw__control_relay_crosslinks dashed horizontal from RELAY-K102 reaches SR-101 left side
+ANN-101,SR-101,LOW,dashed control,raw__control_relay_crosslinks long lower dashed path from ANN-101 area toward SR-101
+MCC-A1,CTRL-RACEWAY-A,MEDIUM,dashed control,raw__train_a_loads dashed line exits MCC-A1 right side and descends to control raceway
+MCC-B1,CTRL-RACEWAY-A,LOW,dashed control,raw__train_b_loads dashed vertical path beside MCC-B1 appears to terminate at the MCC side
+BAT-125B,BUS-125DCB,HIGH,solid power,raw__dc_control_b BAT-125B bottom terminal lands on BUS-125DCB
+BCHG-125B,BUS-125DCB,HIGH,solid power,raw__dc_control_b BCHG-125B bottom terminal lands on BUS-125DCB
+BUS-125DCB,INV-120B,HIGH,solid power,raw__dc_control_b BUS-125DCB vertical tap feeds INV-120B
+BUS-125DCB,PPS-B,HIGH,solid power,raw__dc_control_b BUS-125DCB vertical tap feeds PPS-B
+INV-120B,UPS-120B,HIGH,dashed control,raw__dc_control_b_detail dashed horizontal link between INV-120B and UPS-120B
+UPS-120B,PNL-AC-CR2,HIGH,dashed control,raw__dc_control_b_detail dashed horizontal link between UPS-120B and PNL-AC-CR2
+PNL-AC-CR2,PPS-B,HIGH,dashed control,raw__dc_control_b_detail dashed horizontal link from PNL-AC-CR2 to PPS-B
+UPS-120B,ANN-201,HIGH,dashed control,raw__dc_control_b_detail UPS-120B bottom dashed vertical terminates at ANN-201
+ANN-201,PPS-B,MEDIUM,dashed sensing,raw__dc_control_b_detail diagonal dashed line from ANN-201 area terminates at PPS-B left side
+PNL-AC-CR2,RELAY-K201,MEDIUM,dashed control,raw__dc_control_b_detail vertical dashed line below PNL-AC-CR2 terminates at RELAY-K201
+PNL-AC-CR2,RELAY-K202,LOW,dashed control,raw__dc_control_b_detail right dashed branch from PNL-AC-CR2 area runs toward K202 circuit
+PNL-AC-CR2,CTRL-RACEWAY-B,MEDIUM,dashed control,raw__dc_control_b vertical raceway lines pass through PNL-AC-CR2 terminals
+PPS-B,RELAY-K201,MEDIUM,dashed control,raw__dc_control_b_detail PPS-B bottom dashed branch ties into K201 control loop
+PPS-B,RELAY-K202,HIGH,dashed control,raw__dc_control_b_detail PPS-B bottom dashed branches reach RELAY-K202
+PPS-B,CTRL-RACEWAY-B,MEDIUM,dashed control,raw__dc_control_b vertical dashed raceway lines terminate at PPS-B top and bottom terminals
+ANN-201,RELAY-K201,HIGH,dashed control,raw__dc_control_b_detail dashed horizontal line from ANN-201 to RELAY-K201 left side
+RELAY-K201,RELAY-K202,MEDIUM,dashed sensing,raw__dc_control_b_detail diagonal lower dashed line visually links K201 and K202 loops
+RELAY-K201,CTRL-RACEWAY-B,MEDIUM,dashed control,raw__dc_control_b_detail raceway dashed verticals pass through RELAY-K201 terminals
+RELAY-K202,CTRL-RACEWAY-B,MEDIUM,dashed control,raw__dc_control_b_detail raceway dashed verticals pass through RELAY-K202 terminals
+ANN-201,CTRL-RACEWAY-B,MEDIUM,dashed control,raw__dc_control_b ANN-201 lower dashed path enters CTRL RACEWAY B
+MCC-C1,CTRL-RACEWAY-B,MEDIUM,dashed control,raw__train_c_loads dashed vertical from MCC-C1 side descends to lower raceway
+MCC-D1,CTRL-RACEWAY-B,MEDIUM,dashed control,raw__train_d_loads dashed line enters MCC-D1 left side from raceway
+SR-101,ANN-201,LOW,dashed control,raw__control_relay_crosslinks long lower dashed path leaves SR-101 area toward B annunciator vertical
+SR-101,RELAY-K202,LOW,dashed sensing,raw__control_relay_crosslinks long lower dashed path visually continues into B relay K202 circuit
+SR-101,CTRL-RACEWAY-A,MEDIUM,dashed control,raw__control_relay_crosslinks SR-101 sits on A-to-B dashed control raceway path
+SR-101,CTRL-RACEWAY-B,LOW,dashed control,raw__control_relay_crosslinks lower dashed path from SR-101 continues into B raceway region
+RELAY-K101,RELAY-K201,LOW,dashed control,raw__control_relay_crosslinks lower long dashed line plausibly ties A relay K101 circuit to B relay K201 path
+RELAY-K102,RELAY-K202,LOW,dashed control,raw__control_relay_crosslinks long dashed relay crosslink plausibly reaches K202 circuit through SR-101 area

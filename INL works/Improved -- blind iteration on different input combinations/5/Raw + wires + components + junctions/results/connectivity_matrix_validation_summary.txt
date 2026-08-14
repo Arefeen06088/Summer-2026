@@ -1,0 +1,47 @@
+Connectivity matrix validation summary - Document 5
+Input configuration: Raw + wires + components + junctions
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\5\synthetic_npp_connectivity_matrix_final_cleaned_v4.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_connectivity_matrix.csv): TP=95, FP=5, FN=45, Precision=0.950000, Recall=0.678571, F1=0.791667
+- Jennifer -- Round 2 (round_02_jennifer_precision_connectivity_matrix.csv): TP=97, FP=8, FN=43, Precision=0.923810, Recall=0.692857, F1=0.791837
+- Diego -- Round 3 (round_03_diego_saturation_connectivity_matrix.csv): TP=97, FP=8, FN=43, Precision=0.923810, Recall=0.692857, F1=0.791837
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=97, FP=8, FN=43, Precision=0.923810, Recall=0.692857, F1=0.791837
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- BUS-NON1 -- TR-SAF-C
+- BUS-SY230 -- TR-UAT-1A
+- BUS-SY230 -- TR-UAT-1B
+- HTR-BATRM-A -- XFER-ATS-B
+- PUMP-RHR-B -- XFER-ATS-B
+- RECT-48V-A -- XFER-ATS-A
+- RECT-48V-B -- XFER-ATS-B
+- VLV-MSIV-A -- XFER-ATS-A
+
+False-negative edge examples:
+- BUS-416A -- RELAY-UV-A
+- BUS-416B -- RELAY-UV-B
+- BUS-416C -- RELAY-LOOP-C
+- BUS-416D -- RELAY-LOOP-D
+- BUS-AUX13B -- BUS-NON1
+- BUS-SY230 -- GND-GRID
+- CB-EDG-A -- RELAY-K1A
+- CB-EDG-B -- RELAY-K1B
+- CB-EDG-C -- RELAY-K2A
+- CB-EDG-D -- RELAY-K2B
+
+Missing GT node examples:
+- GND-GRID: 8 missed incident GT edge(s)
+- CP-ESFAS-1: 6 missed incident GT edge(s)
+- CP-ESFAS-2: 6 missed incident GT edge(s)
+- RELAY-K1A: 3 missed incident GT edge(s)
+- RELAY-K1B: 3 missed incident GT edge(s)
+- RELAY-K2A: 3 missed incident GT edge(s)
+- RELAY-K2B: 3 missed incident GT edge(s)
+- INST-NSSS-A: 2 missed incident GT edge(s)
+- INST-NSSS-B: 2 missed incident GT edge(s)
+- RELAY-LOOP-C: 2 missed incident GT edge(s)

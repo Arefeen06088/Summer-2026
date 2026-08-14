@@ -1,0 +1,21 @@
+Connectivity matrix validation summary
+Document: 5
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\5\synthetic_npp_connectivity_matrix_final_cleaned_v4.csv
+GT normalized nodes: 112; GT normalized edges: 140
+Matrices evaluated: 5
+Best row: Diego -- Round 1 from diego_round1_matrix.csv with Precision=0.701149, Recall=0.871429, F1=0.777070
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=96, FP=15, FN=44, Precision=0.864865, Recall=0.685714, F1=0.764940
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+Extra/non-GT nodes most responsible for FP edges: ATS-B NORM (5 FP edges); ATS-A NORM (2 FP edges); ATS-A ALT (2 FP edges); ATS-B ALT (2 FP edges).
+Missing GT nodes examples: none.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: BUS-NON1 -- TR-SAF-C; BUS-SY230 -- TR-UAT-1A; BUS-SY230 -- TR-UAT-1B; CP-ESFAS-1 -- CP-ESFAS-2.
+False-negative edge examples among GT-known nodes: BUS-416A -- RELAY-UV-A; BUS-416B -- RELAY-UV-B; BUS-416C -- RELAY-LOOP-C; BUS-416D -- RELAY-LOOP-D; BUS-AUX13B -- BUS-NON1; BUS-SY230 -- GND-GRID; CB-EDG-A -- RELAY-K1A; CB-EDG-B -- RELAY-K1B.
+False-positive examples involving extra/non-GT nodes: ATS-A ALT -- LC-480B; ATS-A ALT -- XFER-ATS-A; ATS-A NORM -- LC-480A; ATS-A NORM -- XFER-ATS-A; ATS-B ALT -- LC-480D; ATS-B ALT -- XFER-ATS-B; ATS-B NORM -- FAN-CRHV-A; ATS-B NORM -- HTR-BATRM-A.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (ATS-B NORM; ATS-A NORM; ATS-A ALT; ATS-B ALT), the final-row metrics would be TP=96, FP=4, FN=44, Precision=0.960000, Recall=0.685714, F1=0.800000.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=96, FP=4, FN=44, Precision=0.960000, Recall=0.685714, F1=0.800000.

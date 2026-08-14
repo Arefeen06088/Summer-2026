@@ -1,0 +1,137 @@
+node_a,node_b,edge_kind,confidence,evidence
+GEN-01,TR-UAT-1,power,high,Solid 13.8 kV generator lead enters TR-UAT-1.
+TR-UAT-1,CB-UAT-1,power,high,UAT-1 secondary conductor lands on CB-UAT-1.
+CB-UAT-1,BUS-13-8A,power_bus_connection,high,CB-UAT-1 connects into BUS-13-8A.
+TR-SUT-1,CB-SUT-1,power,high,SUT-1 secondary conductor lands on CB-SUT-1.
+CB-SUT-1,BUS-13-8A,power_bus_connection,high,CB-SUT-1 connects into BUS-13-8A.
+CB-SUT-1,CB-13-TIE,power_tie,high,Right side of CB-SUT-1 continues on the 13T-A tie conductor.
+CB-13-TIE,BUS-13-8B,power_tie,high,CB-13-TIE right side continues into BUS-13-8B.
+GEN-02,TR-UAT-2,power,high,Solid 13.8 kV generator lead enters TR-UAT-2.
+TR-UAT-2,CB-UAT-2,power,high,UAT-2 secondary conductor lands on CB-UAT-2.
+CB-UAT-2,BUS-13-8B,power_bus_connection,high,CB-UAT-2 connects into BUS-13-8B.
+TR-SUT-2,CB-SUT-2,power,high,SUT-2 secondary conductor lands on CB-SUT-2.
+CB-SUT-2,BUS-13-8B,power_bus_connection,high,CB-SUT-2 connects into BUS-13-8B.
+BUS-13-8A,CB-IN-A,power,high,Normal incoming feeder for train A drops from BUS-13-8A.
+CB-IN-A,BUS-4160-A,power_bus_connection,high,CB-IN-A lands on BUS-4160-A.
+DG-2A,CB-DG-A,power,high,Diesel generator DG-2A lead enters CB-DG-A.
+CB-DG-A,BUS-4160-A,power_bus_connection,high,CB-DG-A lands on BUS-4160-A.
+CB-IN-A,RELAY-27A,control_interlock,medium,Dashed interlock line from CB-IN-A to RELAY-27A.
+RELAY-27A,CB-DG-A,control_interlock,medium,Dashed interlock line from RELAY-27A to CB-DG-A.
+BUS-4160-A,CB-4160-A1,power,high,4160 bus feeder A1.
+CB-4160-A1,TR-480-A1,power,high,CB-4160-A1 feeds TR-480-A1.
+TR-480-A1,CB-480-A1,power,high,TR-480-A1 secondary feeds CB-480-A1.
+CB-480-A1,BUS-480-A1,power_bus_connection,high,CB-480-A1 lands on BUS-480-A1.
+BUS-4160-A,CB-4160-A2,power,high,4160 bus feeder A2.
+CB-4160-A2,TR-480-A2,power,high,CB-4160-A2 feeds TR-480-A2.
+TR-480-A2,CB-480-A2,power,high,TR-480-A2 secondary feeds CB-480-A2.
+CB-480-A2,BUS-480-A2,power_bus_connection,high,CB-480-A2 lands on BUS-480-A2.
+BUS-480-A1,BUS-480-A2,power_bus_connection,medium,Solid horizontal 480 V bus ties A1 and A2.
+BUS-480-A1,CB-MCC-A1,power,high,BUS-480-A1 drops to CB-MCC-A1.
+CB-MCC-A1,MCC-A1,power,high,CB-MCC-A1 feeds MCC-A1.
+BUS-480-A2,CB-MCC-A2,power,high,BUS-480-A2 drops to CB-MCC-A2.
+CB-MCC-A2,MCC-A2,power,high,CB-MCC-A2 feeds MCC-A2.
+BUS-480-A2,RECT-125-A,rectifier_ac_feed,high,BUS-480-A2 branch feeds RECT-125-A.
+RECT-125-A,PANEL-IC-A,dc_power,high,RECT-125-A output conductor passes to PANEL-IC-A.
+PANEL-IC-A,BUS-DC-125A,dc_bus_connection,high,PANEL-IC-A DC conductor continues to BUS-DC-125A.
+PANEL-IC-A,GND-A,ground,high,PANEL-IC-A has local ground symbol GND-A.
+MCC-A1,PUMP-SI-A,load_feeder,high,MCC-A1 left load feeder drops to PUMP-SI-A.
+MCC-A1,PUMP-CCW-A,load_feeder,high,MCC-A1 center load feeder drops to PUMP-CCW-A.
+MCC-A1,FAN-HVAC-A,load_feeder,high,MCC-A1 right load feeder drops to FAN-HVAC-A.
+MCC-A2,MOV-RHR-A,load_feeder,high,MCC-A2 load feeder drops to MOV-RHR-A.
+MCC-A1,ATS-480-A,ats_input_feeder,medium,MCC-A1 solid ATS feeder continues to ATS-480-A.
+MCC-A2,PANEL-IC-A,control_interlock,medium,Dashed interlock from MCC-A2 to PANEL-IC-A.
+BUS-13-8A,CB-IN-B,power,high,Normal incoming feeder for train B drops from BUS-13-8A.
+CB-IN-B,BUS-4160-B,power_bus_connection,high,CB-IN-B lands on BUS-4160-B.
+DG-2B,CB-DG-B,power,high,Diesel generator DG-2B lead enters CB-DG-B.
+CB-DG-B,BUS-4160-B,power_bus_connection,high,CB-DG-B lands on BUS-4160-B.
+CB-IN-B,RELAY-27B,control_interlock,medium,Dashed interlock line from CB-IN-B to RELAY-27B.
+RELAY-27B,CB-DG-B,control_interlock,medium,Dashed interlock line from RELAY-27B to CB-DG-B.
+BUS-4160-B,CB-4160-B1,power,high,4160 bus feeder B1.
+CB-4160-B1,TR-480-B1,power,high,CB-4160-B1 feeds TR-480-B1.
+TR-480-B1,CB-480-B1,power,high,TR-480-B1 secondary feeds CB-480-B1.
+CB-480-B1,BUS-480-B1,power_bus_connection,high,CB-480-B1 lands on BUS-480-B1.
+BUS-4160-B,CB-4160-B2,power,high,4160 bus feeder B2.
+CB-4160-B2,TR-480-B2,power,high,CB-4160-B2 feeds TR-480-B2.
+TR-480-B2,CB-480-B2,power,high,TR-480-B2 secondary feeds CB-480-B2.
+CB-480-B2,BUS-480-B2,power_bus_connection,high,CB-480-B2 lands on BUS-480-B2.
+BUS-480-B1,BUS-480-B2,power_bus_connection,medium,Solid horizontal 480 V bus ties B1 and B2.
+BUS-480-B1,CB-MCC-B1,power,high,BUS-480-B1 drops to CB-MCC-B1.
+CB-MCC-B1,MCC-B1,power,high,CB-MCC-B1 feeds MCC-B1.
+BUS-480-B2,CB-MCC-B2,power,high,BUS-480-B2 drops to CB-MCC-B2.
+CB-MCC-B2,MCC-B2,power,high,CB-MCC-B2 feeds MCC-B2.
+BUS-480-B2,RECT-125-B,rectifier_ac_feed,high,BUS-480-B2 branch feeds RECT-125-B.
+RECT-125-B,PANEL-IC-B,dc_power,high,RECT-125-B output conductor passes to PANEL-IC-B.
+PANEL-IC-B,BUS-DC-125A,dc_bus_connection,high,PANEL-IC-B DC conductor continues to BUS-DC-125A.
+PANEL-IC-B,GND-B,ground,high,PANEL-IC-B has local ground symbol GND-B.
+MCC-B1,PUMP-SI-B,load_feeder,high,MCC-B1 left load feeder drops to PUMP-SI-B.
+MCC-B1,PUMP-CCW-B,load_feeder,high,MCC-B1 center load feeder drops to PUMP-CCW-B.
+MCC-B1,FAN-HVAC-B,load_feeder,high,MCC-B1 right load feeder drops to FAN-HVAC-B.
+MCC-B2,MOV-RHR-B,load_feeder,high,MCC-B2 load feeder drops to MOV-RHR-B.
+MCC-B1,ATS-480-A,ats_input_feeder,medium,MCC-B1 solid ATS feeder continues to ATS-480-A.
+MCC-B2,PANEL-IC-B,control_interlock,medium,Dashed interlock from MCC-B2 to PANEL-IC-B.
+BUS-13-8B,CB-IN-C,power,high,Normal incoming feeder for train C drops from BUS-13-8B.
+CB-IN-C,BUS-4160-C,power_bus_connection,high,CB-IN-C lands on BUS-4160-C.
+DG-2C,CB-DG-C,power,high,Diesel generator DG-2C lead enters CB-DG-C.
+CB-DG-C,BUS-4160-C,power_bus_connection,high,CB-DG-C lands on BUS-4160-C.
+CB-IN-C,RELAY-27C,control_interlock,medium,Dashed interlock line from CB-IN-C to RELAY-27C.
+RELAY-27C,CB-DG-C,control_interlock,medium,Dashed interlock line from RELAY-27C to CB-DG-C.
+BUS-4160-C,CB-4160-C1,power,high,4160 bus feeder C1.
+CB-4160-C1,TR-480-C1,power,high,CB-4160-C1 feeds TR-480-C1.
+TR-480-C1,CB-480-C1,power,high,TR-480-C1 secondary feeds CB-480-C1.
+CB-480-C1,BUS-480-C1,power_bus_connection,high,CB-480-C1 lands on BUS-480-C1.
+BUS-4160-C,CB-4160-C2,power,high,4160 bus feeder C2.
+CB-4160-C2,TR-480-C2,power,high,CB-4160-C2 feeds TR-480-C2.
+TR-480-C2,CB-480-C2,power,high,TR-480-C2 secondary feeds CB-480-C2.
+CB-480-C2,BUS-480-C2,power_bus_connection,high,CB-480-C2 lands on BUS-480-C2.
+BUS-480-C1,BUS-480-C2,power_bus_connection,medium,Solid horizontal 480 V bus ties C1 and C2.
+BUS-480-C1,CB-MCC-C1,power,high,BUS-480-C1 drops to CB-MCC-C1.
+CB-MCC-C1,MCC-C1,power,high,CB-MCC-C1 feeds MCC-C1.
+BUS-480-C2,CB-MCC-C2,power,high,BUS-480-C2 drops to CB-MCC-C2.
+CB-MCC-C2,MCC-C2,power,high,CB-MCC-C2 feeds MCC-C2.
+BUS-480-C2,RECT-125-C,rectifier_ac_feed,high,BUS-480-C2 branch feeds RECT-125-C.
+RECT-125-C,PANEL-IC-C,dc_power,high,RECT-125-C output conductor passes to PANEL-IC-C.
+PANEL-IC-C,BUS-DC-125B,dc_bus_connection,high,PANEL-IC-C DC conductor continues to BUS-DC-125B.
+PANEL-IC-C,GND-C,ground,high,PANEL-IC-C has local ground symbol GND-C.
+MCC-C1,PUMP-SI-C,load_feeder,high,MCC-C1 left load feeder drops to PUMP-SI-C.
+MCC-C1,PUMP-CCW-C,load_feeder,high,MCC-C1 center load feeder drops to PUMP-CCW-C.
+MCC-C1,FAN-HVAC-C,load_feeder,high,MCC-C1 right load feeder drops to FAN-HVAC-C.
+MCC-C2,MOV-RHR-C,load_feeder,high,MCC-C2 load feeder drops to MOV-RHR-C.
+MCC-C1,ATS-480-B,ats_input_feeder,medium,MCC-C1 solid ATS feeder continues to ATS-480-B.
+MCC-C2,PANEL-IC-C,control_interlock,medium,Dashed interlock from MCC-C2 to PANEL-IC-C.
+BUS-13-8B,CB-IN-D,power,high,Normal incoming feeder for train D drops from BUS-13-8B.
+CB-IN-D,BUS-4160-D,power_bus_connection,high,CB-IN-D lands on BUS-4160-D.
+DG-2D,CB-DG-D,power,high,Diesel generator DG-2D lead enters CB-DG-D.
+CB-DG-D,BUS-4160-D,power_bus_connection,high,CB-DG-D lands on BUS-4160-D.
+CB-IN-D,RELAY-27D,control_interlock,medium,Dashed interlock line from CB-IN-D to RELAY-27D.
+RELAY-27D,CB-DG-D,control_interlock,medium,Dashed interlock line from RELAY-27D to CB-DG-D.
+BUS-4160-D,CB-4160-D1,power,high,4160 bus feeder D1.
+CB-4160-D1,TR-480-D1,power,high,CB-4160-D1 feeds TR-480-D1.
+TR-480-D1,CB-480-D1,power,high,TR-480-D1 secondary feeds CB-480-D1.
+CB-480-D1,BUS-480-D1,power_bus_connection,high,CB-480-D1 lands on BUS-480-D1.
+BUS-4160-D,CB-4160-D2,power,high,4160 bus feeder D2.
+CB-4160-D2,TR-480-D2,power,high,CB-4160-D2 feeds TR-480-D2.
+TR-480-D2,CB-480-D2,power,high,TR-480-D2 secondary feeds CB-480-D2.
+CB-480-D2,BUS-480-D2,power_bus_connection,high,CB-480-D2 lands on BUS-480-D2.
+BUS-480-D1,BUS-480-D2,power_bus_connection,medium,Solid horizontal 480 V bus ties D1 and D2.
+BUS-480-D1,CB-MCC-D1,power,high,BUS-480-D1 drops to CB-MCC-D1.
+CB-MCC-D1,MCC-D1,power,high,CB-MCC-D1 feeds MCC-D1.
+BUS-480-D2,CB-MCC-D2,power,high,BUS-480-D2 drops to CB-MCC-D2.
+CB-MCC-D2,MCC-D2,power,high,CB-MCC-D2 feeds MCC-D2.
+BUS-480-D2,RECT-125-D,rectifier_ac_feed,high,BUS-480-D2 branch feeds RECT-125-D.
+RECT-125-D,PANEL-IC-D,dc_power,high,RECT-125-D output conductor passes to PANEL-IC-D.
+PANEL-IC-D,BUS-DC-125B,dc_bus_connection,high,PANEL-IC-D DC conductor continues to BUS-DC-125B.
+PANEL-IC-D,GND-D,ground,high,PANEL-IC-D has local ground symbol GND-D.
+MCC-D1,PUMP-SI-D,load_feeder,high,MCC-D1 left load feeder drops to PUMP-SI-D.
+MCC-D1,PUMP-CCW-D,load_feeder,high,MCC-D1 center load feeder drops to PUMP-CCW-D.
+MCC-D1,FAN-HVAC-D,load_feeder,high,MCC-D1 right load feeder drops to FAN-HVAC-D.
+MCC-D2,MOV-RHR-D,load_feeder,high,MCC-D2 load feeder drops to MOV-RHR-D.
+MCC-D1,ATS-480-B,ats_input_feeder,medium,MCC-D1 solid ATS feeder continues to ATS-480-B.
+MCC-D2,PANEL-IC-D,control_interlock,medium,Dashed interlock from MCC-D2 to PANEL-IC-D.
+BAT-125A,BUS-DC-125A,dc_power,high,BAT-125A lands on BUS-DC-125A.
+BUS-DC-125A,INV-UPS-A,dc_power,high,BUS-DC-125A feeds INV-UPS-A.
+INV-UPS-A,PANEL-RPS-A,dc_power,high,INV-UPS-A output lands on PANEL-RPS-A.
+ATS-480-A,PANEL-RPS-A,ats_output,medium,ATS-480-A output conductor lands on PANEL-RPS-A.
+BAT-125B,BUS-DC-125B,dc_power,high,BAT-125B lands on BUS-DC-125B.
+BUS-DC-125B,INV-UPS-B,dc_power,high,BUS-DC-125B feeds INV-UPS-B.
+INV-UPS-B,PANEL-RPS-B,dc_power,high,INV-UPS-B output lands on PANEL-RPS-B.
+ATS-480-B,PANEL-RPS-B,ats_output,medium,ATS-480-B output conductor lands on PANEL-RPS-B.

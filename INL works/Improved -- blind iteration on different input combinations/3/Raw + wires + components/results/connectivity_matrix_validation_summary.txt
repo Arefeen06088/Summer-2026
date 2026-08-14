@@ -1,0 +1,38 @@
+Connectivity matrix validation summary - Document 3
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\3\synthetic_npp_100_component_connectivity_matrix.csv
+
+Scores:
+- Diego -- Round 1 (rounds\diego_round1_connectivity_matrix.csv): TP=98, FP=2, FN=2, Precision=0.980000, Recall=0.980000, F1=0.980000
+- Jennifer -- Round 1 (rounds\jennifer_round1_connectivity_matrix.csv): TP=98, FP=2, FN=2, Precision=0.980000, Recall=0.980000, F1=0.980000
+- Diego -- Round 2 (rounds\diego_round2_accepted_connectivity_matrix.csv): TP=98, FP=2, FN=2, Precision=0.980000, Recall=0.980000, F1=0.980000
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=98, FP=2, FN=2, Precision=0.980000, Recall=0.980000, F1=0.980000
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- JB-A401 -- TB-A401
+- JB-B501 -- TB-B501
+
+False-negative edge examples:
+- BUS-416A -- GND-1E
+- BUS-416B -- GND-1E
+
+Extra/non-GT nodes causing performance drops:
+- TB-A401: 1 incident false-positive edge(s)
+- TB-B501: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 2 extra/intermediate nodes were omitted from the extraction (TB-A401, TB-B501), final metrics would be TP=98, FP=0, FN=2, Precision=1.000000, Recall=0.980000, F1=0.989899.
+- If all 2 non-GT nodes were omitted, metrics would be TP=98, FP=0, FN=2, Precision=1.000000, Recall=0.980000, F1=0.989899.
+
+Missing GT node examples:
+- GND-1E: 2 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted TB-A401 vs GT JB-A401 (similarity 0.86)
+- Extracted TB-B501 vs GT JB-B501 (similarity 0.86)

@@ -1,0 +1,7 @@
+document,iteration,call,model,text_input_tokens_low,text_input_tokens_expected,text_input_tokens_high,cached_input_tokens,image_file_input_tokens_low,image_file_input_tokens_expected,image_file_input_tokens_high,output_tokens_low,output_tokens_expected,output_tokens_high,reasoning_tokens_low,reasoning_tokens_expected,reasoning_tokens_high,total_tokens_low,total_tokens_expected,total_tokens_high,usage_object_available,notes
+12,1,main_agent_orchestration,gpt-5,21000,28000,37800,0,32396,43194,58312,2100,2800,3781,7500,10000,13500,62996,83994,113393,no,"Main visual inspection, tool orchestration, graph construction, validation, and file writing."
+12,1,Diego_R1_high_recall,gpt-5.5,638,850,1148,0,31422,41896,56560,3150,4200,5670,4875,6500,8775,40085,53446,72153,no,Completed high-recall extractor pass.
+12,1,Jennifer_R1_precision_stalled_shutdown,gpt-5.5,3900,5200,7021,0,31422,41896,56560,0,0,0,4500,6000,8101,39822,53096,71682,no,Spawned and then shut down after two long waits; no usage object or final output was exposed.
+12,1,Jennifer_R1_precision_targeted,gpt-5.5,2700,3600,4860,0,25910,34546,46638,750,1000,1350,2700,3600,4860,32060,42746,57708,no,Completed narrowed precision review.
+12,1,Diego_R2_saturation,gpt-5.5,1088,1450,1958,0,26881,35841,48386,600,800,1080,2250,3000,4051,30819,41091,55475,no,Completed saturation pass focused on deltas.
+12,1,Jennifer_R2_final,gpt-5.5,675,900,1215,0,21369,28491,38463,638,850,1148,1950,2600,3511,24632,32841,44337,no,Completed final precision confirmation.

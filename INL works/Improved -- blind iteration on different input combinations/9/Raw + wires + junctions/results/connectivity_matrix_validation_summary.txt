@@ -1,0 +1,18 @@
+Connectivity matrix validation summary
+Document: 9
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\9\connectivity_matrix_expanded_clear_refined_v3_reworked.csv
+GT normalized nodes: 180; GT normalized edges: 200
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from jennifer_round1_matrix.csv with Precision=0.914894, Recall=0.860000, F1=0.886598
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=172, FP=16, FN=28, Precision=0.914894, Recall=0.860000, F1=0.886598
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+No extra/non-GT extracted nodes were attached to false-positive edges in the final edge set.
+Missing GT nodes examples: none.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: ANN-ESF-A -- RELAY-K2A; ANN-ESF-B -- RELAY-K2B; BAT-125A -- JB-1A; BAT-125B -- JB-1B; CB-481B -- RELAY-27B; CB-482A -- CB-EDG-A; CB-482A -- RELAY-50/51A; CB-482B -- CB-EDG-B.
+False-negative edge examples among GT-known nodes: ANN-ESF-A -- RELAY-86A; ANN-ESF-B -- RELAY-86B; BUS-4160-N1 -- RELAY-50/51A; BUS-4160-N2 -- RELAY-27B; CB-EDG-A -- RELAY-86A; CB-EDG-B -- RELAY-86B; CB-RHR-A -- JB-1A; CB-RHR-B -- JB-1B.
+
+What-if node pruning insight: no non-GT intermediate nodes were available to prune; the remaining drop is mainly connectivity/edge discovery or missing direct GT edges.

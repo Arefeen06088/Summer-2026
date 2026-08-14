@@ -1,0 +1,195 @@
+source,target,type,evidence
+GEN-101,CB-GEN-101,solid_power,top offsite source band
+CB-GEN-101,TR-GSU-1,solid_power,top offsite source band
+TR-GSU-1,BUS-SWY-1,solid_power,top offsite source band
+BUS-SWY-1,CB-SWY-TIE,solid_power,top offsite source band
+CB-SWY-TIE,BUS-SWY-2,solid_power,top offsite source band
+GEN-102,CB-GEN-102,solid_power,top offsite source band
+CB-GEN-102,TR-GSU-2,solid_power,top offsite source band
+TR-GSU-2,BUS-SWY-2,solid_power,top offsite source band
+BUS-SWY-1,TR-UAT-1,solid_power,top offsite source band
+TR-UAT-1,BUS-NSS-1,solid_power,top offsite source band
+BUS-SWY-1,TR-SAT-1,solid_power,top offsite source band
+TR-SAT-1,BUS-NSS-1,solid_power,top offsite source band
+BUS-SWY-2,TR-UAT-2,solid_power,top offsite source band
+TR-UAT-2,BUS-NSS-2,solid_power,top offsite source band
+BUS-SWY-2,TR-SAT-2,solid_power,top offsite source band
+TR-SAT-2,BUS-NSS-2,solid_power,top offsite source band
+BUS-NSS-1,CB-NF-A,solid_power,normal feeder to division A
+CB-NF-A,BUS-416A,solid_power,division A 4.16 kV bus
+DG-1A,CB-DG-A,solid_power,diesel feeder to division A
+CB-DG-A,BUS-416A,solid_power,division A 4.16 kV bus
+CB-NF-A,CB-DG-A,dashed_control,division A top breaker interlock
+BUS-416A,CB-TX-A,solid_power,division A transformer feeder
+CB-TX-A,TR-480A,solid_power,division A transformer feeder
+TR-480A,BUS-480A,solid_power,division A 480 V load center
+BUS-480A,MCC-1A,solid_power,division A MCC feeder
+BAT-125A,CHG-1A,dashed_dc_control,division A DC chain
+CHG-1A,BUS-DC-A,dashed_dc_control,division A DC chain
+BUS-DC-A,INV-1A,dashed_dc_control,division A DC chain
+BUS-DC-A,GND-A,dashed_dc_control,division A DC ground drop
+INV-1A,CP-1A,dashed_dc_control,division A inverter/control panel
+CP-1A,TB-1A,dashed_dc_control,division A control panel to terminal block
+CP-1A,JB-1A,dashed_dc_control,division A control panel to junction box
+RLY-A06,TB-1A,dashed_control,division A long relay 06 lead to terminal block
+MCC-1A,CB-A01,solid_power,division A MCC branch 01
+CB-A01,DS-A01,solid_power,division A branch 01 protective path
+DS-A01,PMP-SI-A1,solid_power,division A branch 01 load feeder
+CB-A01,RLY-A01,dashed_control,division A branch 01 relay lead
+MCC-1A,CB-A02,solid_power,division A MCC branch 02
+CB-A02,FU-A02,solid_power,division A branch 02 protective path
+FU-A02,PMP-CS-A2,solid_power,division A branch 02 load feeder
+CB-A02,RLY-A02,dashed_control,division A branch 02 relay lead
+MCC-1A,CB-A03,solid_power,division A MCC branch 03
+CB-A03,DS-A03,solid_power,division A branch 03 protective path
+DS-A03,MOV-A03,solid_power,division A branch 03 load feeder
+CB-A03,RLY-A03,dashed_control,division A branch 03 relay lead
+MCC-1A,CB-A04,solid_power,division A MCC branch 04
+CB-A04,FU-A04,solid_power,division A branch 04 protective path
+FU-A04,MTR-A04,solid_power,division A branch 04 load feeder
+CB-A04,RLY-A04,dashed_control,division A branch 04 relay lead
+MCC-1A,CB-A05,solid_power,division A MCC branch 05
+CB-A05,DS-A05,solid_power,division A branch 05 protective path
+DS-A05,INST-A05,solid_power,division A branch 05 load feeder
+CB-A05,RLY-A05,dashed_control,division A branch 05 relay lead
+MCC-1A,CB-A06,solid_power,division A MCC branch 06
+CB-A06,FU-A06,solid_power,division A branch 06 protective path
+FU-A06,PMP-SW-A6,solid_power,division A branch 06 load feeder
+CB-A06,RLY-A06,dashed_control,division A branch 06 relay lead
+BUS-NSS-1,CB-NF-B,solid_power,normal feeder to division B
+CB-NF-B,BUS-416B,solid_power,division B 4.16 kV bus
+DG-1B,CB-DG-B,solid_power,diesel feeder to division B
+CB-DG-B,BUS-416B,solid_power,division B 4.16 kV bus
+CB-NF-B,CB-DG-B,dashed_control,division B top breaker interlock
+BUS-416B,CB-TX-B,solid_power,division B transformer feeder
+CB-TX-B,TR-480B,solid_power,division B transformer feeder
+TR-480B,BUS-480B,solid_power,division B 480 V load center
+BUS-480B,MCC-1B,solid_power,division B MCC feeder
+BAT-125B,CHG-1B,dashed_dc_control,division B DC chain
+CHG-1B,BUS-DC-B,dashed_dc_control,division B DC chain
+BUS-DC-B,INV-1B,dashed_dc_control,division B DC chain
+BUS-DC-B,GND-B,dashed_dc_control,division B DC ground drop
+INV-1B,CP-1B,dashed_dc_control,division B inverter/control panel
+CP-1B,TB-1B,dashed_dc_control,division B control panel to terminal block
+CP-1B,JB-1B,dashed_dc_control,division B control panel to junction box
+RLY-B06,TB-1B,dashed_control,division B long relay 06 lead to terminal block
+MCC-1B,CB-B01,solid_power,division B MCC branch 01
+CB-B01,DS-B01,solid_power,division B branch 01 protective path
+DS-B01,PMP-SI-B1,solid_power,division B branch 01 load feeder
+CB-B01,RLY-B01,dashed_control,division B branch 01 relay lead
+MCC-1B,CB-B02,solid_power,division B MCC branch 02
+CB-B02,FU-B02,solid_power,division B branch 02 protective path
+FU-B02,PMP-CS-B2,solid_power,division B branch 02 load feeder
+CB-B02,RLY-B02,dashed_control,division B branch 02 relay lead
+MCC-1B,CB-B03,solid_power,division B MCC branch 03
+CB-B03,DS-B03,solid_power,division B branch 03 protective path
+DS-B03,MOV-B03,solid_power,division B branch 03 load feeder
+CB-B03,RLY-B03,dashed_control,division B branch 03 relay lead
+MCC-1B,CB-B04,solid_power,division B MCC branch 04
+CB-B04,FU-B04,solid_power,division B branch 04 protective path
+FU-B04,MTR-B04,solid_power,division B branch 04 load feeder
+CB-B04,RLY-B04,dashed_control,division B branch 04 relay lead
+MCC-1B,CB-B05,solid_power,division B MCC branch 05
+CB-B05,DS-B05,solid_power,division B branch 05 protective path
+DS-B05,INST-B05,solid_power,division B branch 05 load feeder
+CB-B05,RLY-B05,dashed_control,division B branch 05 relay lead
+MCC-1B,CB-B06,solid_power,division B MCC branch 06
+CB-B06,FU-B06,solid_power,division B branch 06 protective path
+FU-B06,PMP-SW-B6,solid_power,division B branch 06 load feeder
+CB-B06,RLY-B06,dashed_control,division B branch 06 relay lead
+BUS-NSS-2,CB-NF-C,solid_power,normal feeder to division C
+CB-NF-C,BUS-416C,solid_power,division C 4.16 kV bus
+DG-1C,CB-DG-C,solid_power,diesel feeder to division C
+CB-DG-C,BUS-416C,solid_power,division C 4.16 kV bus
+CB-NF-C,CB-DG-C,dashed_control,division C top breaker interlock
+BUS-416C,CB-TX-C,solid_power,division C transformer feeder
+CB-TX-C,TR-480C,solid_power,division C transformer feeder
+TR-480C,BUS-480C,solid_power,division C 480 V load center
+BUS-480C,MCC-1C,solid_power,division C MCC feeder
+BAT-125C,CHG-1C,dashed_dc_control,division C DC chain
+CHG-1C,BUS-DC-C,dashed_dc_control,division C DC chain
+BUS-DC-C,INV-1C,dashed_dc_control,division C DC chain
+BUS-DC-C,GND-C,dashed_dc_control,division C DC ground drop
+INV-1C,CP-1C,dashed_dc_control,division C inverter/control panel
+CP-1C,TB-1C,dashed_dc_control,division C control panel to terminal block
+CP-1C,JB-1C,dashed_dc_control,division C control panel to junction box
+RLY-C06,TB-1C,dashed_control,division C long relay 06 lead to terminal block
+MCC-1C,CB-C01,solid_power,division C MCC branch 01
+CB-C01,DS-C01,solid_power,division C branch 01 protective path
+DS-C01,PMP-SI-C1,solid_power,division C branch 01 load feeder
+CB-C01,RLY-C01,dashed_control,division C branch 01 relay lead
+MCC-1C,CB-C02,solid_power,division C MCC branch 02
+CB-C02,FU-C02,solid_power,division C branch 02 protective path
+FU-C02,PMP-CS-C2,solid_power,division C branch 02 load feeder
+CB-C02,RLY-C02,dashed_control,division C branch 02 relay lead
+MCC-1C,CB-C03,solid_power,division C MCC branch 03
+CB-C03,DS-C03,solid_power,division C branch 03 protective path
+DS-C03,MOV-C03,solid_power,division C branch 03 load feeder
+CB-C03,RLY-C03,dashed_control,division C branch 03 relay lead
+MCC-1C,CB-C04,solid_power,division C MCC branch 04
+CB-C04,FU-C04,solid_power,division C branch 04 protective path
+FU-C04,MTR-C04,solid_power,division C branch 04 load feeder
+CB-C04,RLY-C04,dashed_control,division C branch 04 relay lead
+MCC-1C,CB-C05,solid_power,division C MCC branch 05
+CB-C05,DS-C05,solid_power,division C branch 05 protective path
+DS-C05,INST-C05,solid_power,division C branch 05 load feeder
+CB-C05,RLY-C05,dashed_control,division C branch 05 relay lead
+MCC-1C,CB-C06,solid_power,division C MCC branch 06
+CB-C06,FU-C06,solid_power,division C branch 06 protective path
+FU-C06,PMP-SW-C6,solid_power,division C branch 06 load feeder
+CB-C06,RLY-C06,dashed_control,division C branch 06 relay lead
+BUS-NSS-2,CB-NF-D,solid_power,normal feeder to division D
+CB-NF-D,BUS-416D,solid_power,division D 4.16 kV bus
+DG-1D,CB-DG-D,solid_power,diesel feeder to division D
+CB-DG-D,BUS-416D,solid_power,division D 4.16 kV bus
+CB-NF-D,CB-DG-D,dashed_control,division D top breaker interlock
+BUS-416D,CB-TX-D,solid_power,division D transformer feeder
+CB-TX-D,TR-480D,solid_power,division D transformer feeder
+TR-480D,BUS-480D,solid_power,division D 480 V load center
+BUS-480D,MCC-1D,solid_power,division D MCC feeder
+BAT-125D,CHG-1D,dashed_dc_control,division D DC chain
+CHG-1D,BUS-DC-D,dashed_dc_control,division D DC chain
+BUS-DC-D,INV-1D,dashed_dc_control,division D DC chain
+BUS-DC-D,GND-D,dashed_dc_control,division D DC ground drop
+INV-1D,CP-1D,dashed_dc_control,division D inverter/control panel
+CP-1D,TB-1D,dashed_dc_control,division D control panel to terminal block
+CP-1D,JB-1D,dashed_dc_control,division D control panel to junction box
+RLY-D06,TB-1D,dashed_control,division D long relay 06 lead to terminal block
+MCC-1D,CB-D01,solid_power,division D MCC branch 01
+CB-D01,DS-D01,solid_power,division D branch 01 protective path
+DS-D01,PMP-SI-D1,solid_power,division D branch 01 load feeder
+CB-D01,RLY-D01,dashed_control,division D branch 01 relay lead
+MCC-1D,CB-D02,solid_power,division D MCC branch 02
+CB-D02,FU-D02,solid_power,division D branch 02 protective path
+FU-D02,PMP-CS-D2,solid_power,division D branch 02 load feeder
+CB-D02,RLY-D02,dashed_control,division D branch 02 relay lead
+MCC-1D,CB-D03,solid_power,division D MCC branch 03
+CB-D03,DS-D03,solid_power,division D branch 03 protective path
+DS-D03,MOV-D03,solid_power,division D branch 03 load feeder
+CB-D03,RLY-D03,dashed_control,division D branch 03 relay lead
+MCC-1D,CB-D04,solid_power,division D MCC branch 04
+CB-D04,FU-D04,solid_power,division D branch 04 protective path
+FU-D04,MTR-D04,solid_power,division D branch 04 load feeder
+CB-D04,RLY-D04,dashed_control,division D branch 04 relay lead
+MCC-1D,CB-D05,solid_power,division D MCC branch 05
+CB-D05,DS-D05,solid_power,division D branch 05 protective path
+DS-D05,INST-D05,solid_power,division D branch 05 load feeder
+CB-D05,RLY-D05,dashed_control,division D branch 05 relay lead
+MCC-1D,CB-D06,solid_power,division D MCC branch 06
+CB-D06,FU-D06,solid_power,division D branch 06 protective path
+FU-D06,PMP-SW-D6,solid_power,division D branch 06 load feeder
+CB-D06,RLY-D06,dashed_control,division D branch 06 relay lead
+BUS-416A,CB-TIE-AB,solid_power,1A/1B normally open tie
+CB-TIE-AB,DS-TIE-AB,solid_power,1A/1B normally open tie
+DS-TIE-AB,BUS-416B,solid_power,1A/1B normally open tie
+CB-DG-A,SEQ-1AB,dashed_control,1A/1B tie sequence control
+SEQ-1AB,CB-NF-B,dashed_control,1A/1B tie sequence control return
+CB-DG-A,RPS-AC-1,dashed_control,1A/1B RPS control
+RPS-AC-1,CB-NF-B,dashed_control,1A/1B RPS control return
+BUS-416C,CB-TIE-CD,solid_power,2A/2B normally open tie
+CB-TIE-CD,DS-TIE-CD,solid_power,2A/2B normally open tie
+DS-TIE-CD,BUS-416D,solid_power,2A/2B normally open tie
+CB-DG-C,SEQ-2CD,dashed_control,2A/2B tie sequence control
+SEQ-2CD,CB-NF-D,dashed_control,2A/2B tie sequence control return
+CB-DG-C,RPS-AC-2,dashed_control,2A/2B RPS control
+RPS-AC-2,CB-NF-D,dashed_control,2A/2B RPS control return

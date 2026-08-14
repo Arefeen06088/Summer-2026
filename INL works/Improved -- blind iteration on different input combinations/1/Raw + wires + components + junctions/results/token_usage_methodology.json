@@ -1,0 +1,13 @@
+{
+  "method": [
+    "The exact OpenAI Responses input-token counting endpoint was not called because no API key was available.",
+    "Text token estimates use a local tiktoken encoding when available, otherwise characters / 4.",
+    "Tokenizer actually used: chars_div_4_fallback.",
+    "Image/file input estimates use a local high-detail tile approximation from image dimensions.",
+    "Cached input tokens and reasoning tokens were not exposed by Codex or subagent tool responses.",
+    "Output estimates use visible/generated JSON payload size where known; main-agent aggregate output is a range."
+  ],
+  "official_counting_endpoint": "POST /v1/responses/input_tokens",
+  "official_docs": "https://developers.openai.com/api/docs/guides/token-counting",
+  "api_key_available": false
+}

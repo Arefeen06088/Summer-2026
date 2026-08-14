@@ -1,0 +1,21 @@
+Connectivity matrix validation summary - Document 4
+Input configuration: Raw + wires + components + junctions
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\4\synthetic_npp_120_component_connectivity_matrix.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_connectivity_matrix.csv): TP=116, FP=2, FN=8, Precision=0.983051, Recall=0.935484, F1=0.958678
+- Jennifer -- Round 2 (round_02_jennifer_precision_connectivity_matrix.csv): TP=121, FP=2, FN=3, Precision=0.983740, Recall=0.975806, F1=0.979757
+- Diego -- Round 3 (round_03_diego_saturation_connectivity_matrix.csv): TP=121, FP=2, FN=3, Precision=0.983740, Recall=0.975806, F1=0.979757
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=121, FP=2, FN=3, Precision=0.983740, Recall=0.975806, F1=0.979757
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- BAT-125A -- CHG-125A
+- BAT-125B -- CHG-125B
+
+False-negative edge examples:
+- BAT-125A -- BUS-125DCA
+- BAT-125B -- BUS-125DCB
+- TB-ESF-A -- TB-ESF-B

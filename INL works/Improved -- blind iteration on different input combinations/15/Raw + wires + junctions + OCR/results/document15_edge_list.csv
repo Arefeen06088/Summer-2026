@@ -1,0 +1,203 @@
+node_a,node_b,kind,evidence,confidence
+DET-COMP-0001,DET-COMP-0005,solid_power,Upper_offsite_sources_raw.png shows GEN-101 connected by a solid conductor to CB-GEN-101.,high
+DET-COMP-0005,DET-COMP-0002,solid_power,CB-GEN-101 is in series with TR-GSU-1 on the generator 101 source line.,high
+DET-COMP-0002,ADD-BUS-SWY-1,solid_bus_tap,TR-GSU-1 vertical tap terminates on the BUS-SWY-1 busbar with a junction dot.,high
+DET-COMP-0003,DET-COMP-0006,solid_power,Upper_offsite_sources_raw.png shows GEN-102 connected by a solid conductor to CB-GEN-102.,high
+DET-COMP-0006,DET-COMP-0004,solid_power,CB-GEN-102 is in series with TR-GSU-2 on the generator 102 source line.,high
+DET-COMP-0004,ADD-BUS-SWY-2,solid_bus_tap,TR-GSU-2 vertical tap terminates on the BUS-SWY-2 busbar with a junction dot.,high
+ADD-BUS-SWY-1,DET-COMP-0007,tie_power,CB-SWY-TIE is drawn inline on the switchyard bus tie at the right end of BUS-SWY-1.,high
+DET-COMP-0007,ADD-BUS-SWY-2,tie_power,CB-SWY-TIE continues into BUS-SWY-2 as the visible switchyard tie path.,high
+ADD-BUS-SWY-1,DET-COMP-0009,solid_bus_tap,TR-UAT-1 is drawn as a vertical tap from the switchyard bus in upper_offsite_sources_raw.png.,high
+DET-COMP-0009,ADD-BUS-NSS-1,transformer_power,TR-UAT-1 secondary connects down to the matching normal station service busbar.,high
+ADD-BUS-SWY-1,DET-COMP-0008,solid_bus_tap,TR-SAT-1 is drawn as a vertical tap from the switchyard bus in upper_offsite_sources_raw.png.,high
+DET-COMP-0008,ADD-BUS-NSS-1,transformer_power,TR-SAT-1 secondary connects down to the matching normal station service busbar.,high
+ADD-BUS-SWY-2,DET-COMP-0010,solid_bus_tap,TR-UAT-2 is drawn as a vertical tap from the switchyard bus in upper_offsite_sources_raw.png.,high
+DET-COMP-0010,ADD-BUS-NSS-2,transformer_power,TR-UAT-2 secondary connects down to the matching normal station service busbar.,high
+ADD-BUS-SWY-2,DET-COMP-0011,solid_bus_tap,TR-SAT-2 is drawn as a vertical tap from the switchyard bus in upper_offsite_sources_raw.png.,high
+DET-COMP-0011,ADD-BUS-NSS-2,transformer_power,TR-SAT-2 secondary connects down to the matching normal station service busbar.,high
+ADD-BUS-NSS-1,DET-COMP-0017,solid_bus_tap,CB-NF-A has a solid vertical feeder from the matching BUS-NSS bus into Division A.,high
+DET-COMP-0017,ADD-BUS-416A,solid_power,CB-NF-A lower terminal lands on ADD-BUS-416A with a visible junction dot.,high
+DET-COMP-0012,DET-COMP-0023,solid_power,DG-1A source symbol is on the same vertical solid riser as CB-DG-A.,high
+ADD-BUS-NSS-1,DET-COMP-0023,solid_bus_tap,CB-DG-A top riser intersects the NSS busbar at a visible junction; kept as visually plausible shared source/tap.,medium
+DET-COMP-0023,ADD-BUS-416A,solid_power,CB-DG-A lower terminal lands on ADD-BUS-416A with a visible junction dot.,high
+ADD-BUS-416A,DET-COMP-0028,solid_bus_tap,CB-TX-A is the downward transformer feeder from ADD-BUS-416A.,high
+DET-COMP-0028,DET-COMP-0032,solid_power,CB-TX-A is in series with TR-480A on the transformer feeder.,high
+DET-COMP-0032,ADD-BUS-480A,transformer_power,TR-480A secondary connects to the labeled ADD-BUS-480A load-center busbar.,high
+ADD-BUS-480A,DET-COMP-0036,solid_bus_tap,Full division crop shows a vertical solid conductor from ADD-BUS-480A down to MCC-1A.,high
+ADD-BUS-NSS-1,DET-COMP-0018,solid_bus_tap,CB-NF-B has a solid vertical feeder from the matching BUS-NSS bus into Division B.,high
+DET-COMP-0018,ADD-BUS-416B,solid_power,CB-NF-B lower terminal lands on ADD-BUS-416B with a visible junction dot.,high
+DET-COMP-0013,DET-COMP-0019,solid_power,DG-1B source symbol is on the same vertical solid riser as CB-DG-B.,high
+ADD-BUS-NSS-1,DET-COMP-0019,solid_bus_tap,CB-DG-B top riser intersects the NSS busbar at a visible junction; kept as visually plausible shared source/tap.,medium
+DET-COMP-0019,ADD-BUS-416B,solid_power,CB-DG-B lower terminal lands on ADD-BUS-416B with a visible junction dot.,high
+ADD-BUS-416B,DET-COMP-0029,solid_bus_tap,CB-TX-B is the downward transformer feeder from ADD-BUS-416B.,high
+DET-COMP-0029,DET-COMP-0033,solid_power,CB-TX-B is in series with TR-480B on the transformer feeder.,high
+DET-COMP-0033,ADD-BUS-480B,transformer_power,TR-480B secondary connects to the labeled ADD-BUS-480B load-center busbar.,high
+ADD-BUS-480B,DET-COMP-0037,solid_bus_tap,Full division crop shows a vertical solid conductor from ADD-BUS-480B down to MCC-1B.,high
+ADD-BUS-NSS-2,DET-COMP-0020,solid_bus_tap,CB-NF-C has a solid vertical feeder from the matching BUS-NSS bus into Division C.,high
+DET-COMP-0020,ADD-BUS-416C,solid_power,CB-NF-C lower terminal lands on ADD-BUS-416C with a visible junction dot.,high
+DET-COMP-0014,DET-COMP-0021,solid_power,DG-1C source symbol is on the same vertical solid riser as CB-DG-C.,high
+ADD-BUS-NSS-2,DET-COMP-0021,solid_bus_tap,CB-DG-C top riser intersects the NSS busbar at a visible junction; kept as visually plausible shared source/tap.,medium
+DET-COMP-0021,ADD-BUS-416C,solid_power,CB-DG-C lower terminal lands on ADD-BUS-416C with a visible junction dot.,high
+ADD-BUS-416C,DET-COMP-0030,solid_bus_tap,CB-TX-C is the downward transformer feeder from ADD-BUS-416C.,high
+DET-COMP-0030,DET-COMP-0034,solid_power,CB-TX-C is in series with TR-480C on the transformer feeder.,high
+DET-COMP-0034,ADD-BUS-480C,transformer_power,TR-480C secondary connects to the labeled ADD-BUS-480C load-center busbar.,high
+ADD-BUS-480C,DET-COMP-0038,solid_bus_tap,Full division crop shows a vertical solid conductor from ADD-BUS-480C down to MCC-1C.,high
+ADD-BUS-NSS-2,DET-COMP-0022,solid_bus_tap,CB-NF-D has a solid vertical feeder from the matching BUS-NSS bus into Division D.,high
+DET-COMP-0022,ADD-BUS-416D,solid_power,CB-NF-D lower terminal lands on ADD-BUS-416D with a visible junction dot.,high
+DET-COMP-0015,DET-COMP-0016,solid_power,DG-1D source symbol is on the same vertical solid riser as CB-DG-D.,high
+ADD-BUS-NSS-2,DET-COMP-0016,solid_bus_tap,CB-DG-D top riser intersects the NSS busbar at a visible junction; kept as visually plausible shared source/tap.,medium
+DET-COMP-0016,ADD-BUS-416D,solid_power,CB-DG-D lower terminal lands on ADD-BUS-416D with a visible junction dot.,high
+ADD-BUS-416D,DET-COMP-0031,solid_bus_tap,CB-TX-D is the downward transformer feeder from ADD-BUS-416D.,high
+DET-COMP-0031,DET-COMP-0035,solid_power,CB-TX-D is in series with TR-480D on the transformer feeder.,high
+DET-COMP-0035,ADD-BUS-480D,transformer_power,TR-480D secondary connects to the labeled ADD-BUS-480D load-center busbar.,high
+ADD-BUS-480D,DET-COMP-0039,solid_bus_tap,Full division crop shows a vertical solid conductor from ADD-BUS-480D down to MCC-1D.,high
+ADD-BUS-416A,DET-COMP-0026,tie_power,BUS-416A continues right into CB-TIE-AB on the normally-open AB tie path.,high
+DET-COMP-0026,DET-COMP-0024,tie_power,CB-TIE-AB is in series with DS-TIE-AB between the A and B 4.16 kV buses.,high
+DET-COMP-0024,ADD-BUS-416B,tie_power,DS-TIE-AB right terminal joins BUS-416B with a junction dot.,high
+ADD-BUS-416C,DET-COMP-0027,tie_power,BUS-416C continues right into CB-TIE-CD on the normally-open CD tie path.,high
+DET-COMP-0027,DET-COMP-0025,tie_power,CB-TIE-CD is in series with DS-TIE-CD between the C and D 4.16 kV buses.,high
+DET-COMP-0025,ADD-BUS-416D,tie_power,DS-TIE-CD right terminal joins BUS-416D with a junction dot.,high
+DET-COMP-0036,DET-COMP-0040,mcc_feeder_power,MCC-1A busbar has a solid vertical feeder drop to CB-A01 feeder A01.,high
+DET-COMP-0040,DET-COMP-0064,solid_power,CB-A01 lower conductor runs solidly to protective/isolation device DS-A01.,high
+DET-COMP-0064,DET-COMP-0116,solid_power,DS-A01 lower conductor continues to load PMP-SI-A1.,high
+DET-COMP-0040,DET-COMP-0088,dashed_control_association,Dashed control/trip lead is drawn from CB-A01 toward relay RLY-A01 on feeder A01.,medium
+DET-COMP-0036,DET-COMP-0041,mcc_feeder_power,MCC-1A busbar has a solid vertical feeder drop to CB-A02 feeder A02.,high
+DET-COMP-0041,DET-COMP-0065,solid_power,CB-A02 lower conductor runs solidly to protective/isolation device FU-A02.,high
+DET-COMP-0065,DET-COMP-0117,solid_power,FU-A02 lower conductor continues to load PMP-CS-A2.,high
+DET-COMP-0041,DET-COMP-0089,dashed_control_association,Dashed control/trip lead is drawn from CB-A02 toward relay RLY-A02 on feeder A02.,medium
+DET-COMP-0036,DET-COMP-0042,mcc_feeder_power,MCC-1A busbar has a solid vertical feeder drop to CB-A03 feeder A03.,high
+DET-COMP-0042,DET-COMP-0066,solid_power,CB-A03 lower conductor runs solidly to protective/isolation device DS-A03.,high
+DET-COMP-0066,DET-COMP-0112,solid_power,DS-A03 lower conductor continues to load MOV-A03.,high
+DET-COMP-0042,DET-COMP-0090,dashed_control_association,Dashed control/trip lead is drawn from CB-A03 toward relay RLY-A03 on feeder A03.,medium
+DET-COMP-0036,DET-COMP-0043,mcc_feeder_power,MCC-1A busbar has a solid vertical feeder drop to CB-A04 feeder A04.,high
+DET-COMP-0043,DET-COMP-0067,solid_power,CB-A04 lower conductor runs solidly to protective/isolation device FU-A04.,high
+DET-COMP-0067,DET-COMP-0118,solid_power,FU-A04 lower conductor continues to load MTR-A04.,high
+DET-COMP-0043,DET-COMP-0091,dashed_control_association,Dashed control/trip lead is drawn from CB-A04 toward relay RLY-A04 on feeder A04.,medium
+DET-COMP-0036,DET-COMP-0044,mcc_feeder_power,MCC-1A busbar has a solid vertical feeder drop to CB-A05 feeder A05.,high
+DET-COMP-0044,DET-COMP-0068,solid_power,CB-A05 lower conductor runs solidly to protective/isolation device DS-A05.,high
+DET-COMP-0068,DET-COMP-0119,solid_power,DS-A05 lower conductor continues to load INST-A05.,high
+DET-COMP-0044,DET-COMP-0092,dashed_control_association,Dashed control/trip lead is drawn from CB-A05 toward relay RLY-A05 on feeder A05.,medium
+DET-COMP-0036,DET-COMP-0045,mcc_feeder_power,MCC-1A busbar has a solid vertical feeder drop to CB-A06 feeder A06.,high
+DET-COMP-0045,DET-COMP-0069,solid_power,CB-A06 lower conductor runs solidly to protective/isolation device FU-A06.,high
+DET-COMP-0069,DET-COMP-0120,solid_power,FU-A06 lower conductor continues to load PMP-SW-A6.,high
+DET-COMP-0045,DET-COMP-0093,dashed_control_association,Dashed control/trip lead is drawn from CB-A06 toward relay RLY-A06 on feeder A06.,medium
+DET-COMP-0037,DET-COMP-0046,mcc_feeder_power,MCC-1B busbar has a solid vertical feeder drop to CB-B01 feeder B01.,high
+DET-COMP-0046,DET-COMP-0070,solid_power,CB-B01 lower conductor runs solidly to protective/isolation device DS-B01.,high
+DET-COMP-0070,DET-COMP-0121,solid_power,DS-B01 lower conductor continues to load PMP-SI-B1.,high
+DET-COMP-0046,DET-COMP-0094,dashed_control_association,Dashed control/trip lead is drawn from CB-B01 toward relay RLY-B01 on feeder B01.,medium
+DET-COMP-0037,DET-COMP-0047,mcc_feeder_power,MCC-1B busbar has a solid vertical feeder drop to CB-B02 feeder B02.,high
+DET-COMP-0047,DET-COMP-0071,solid_power,CB-B02 lower conductor runs solidly to protective/isolation device FU-B02.,high
+DET-COMP-0071,DET-COMP-0122,solid_power,FU-B02 lower conductor continues to load PMP-CS-B2.,high
+DET-COMP-0047,DET-COMP-0095,dashed_control_association,Dashed control/trip lead is drawn from CB-B02 toward relay RLY-B02 on feeder B02.,medium
+DET-COMP-0037,DET-COMP-0048,mcc_feeder_power,MCC-1B busbar has a solid vertical feeder drop to CB-B03 feeder B03.,high
+DET-COMP-0048,DET-COMP-0072,solid_power,CB-B03 lower conductor runs solidly to protective/isolation device DS-B03.,high
+DET-COMP-0072,DET-COMP-0113,solid_power,DS-B03 lower conductor continues to load MOV-B03.,high
+DET-COMP-0048,DET-COMP-0096,dashed_control_association,Dashed control/trip lead is drawn from CB-B03 toward relay RLY-B03 on feeder B03.,medium
+DET-COMP-0037,DET-COMP-0049,mcc_feeder_power,MCC-1B busbar has a solid vertical feeder drop to CB-B04 feeder B04.,high
+DET-COMP-0049,DET-COMP-0073,solid_power,CB-B04 lower conductor runs solidly to protective/isolation device FU-B04.,high
+DET-COMP-0073,DET-COMP-0123,solid_power,FU-B04 lower conductor continues to load MTR-B04.,high
+DET-COMP-0049,DET-COMP-0097,dashed_control_association,Dashed control/trip lead is drawn from CB-B04 toward relay RLY-B04 on feeder B04.,medium
+DET-COMP-0037,DET-COMP-0050,mcc_feeder_power,MCC-1B busbar has a solid vertical feeder drop to CB-B05 feeder B05.,high
+DET-COMP-0050,DET-COMP-0074,solid_power,CB-B05 lower conductor runs solidly to protective/isolation device DS-B05.,high
+DET-COMP-0074,DET-COMP-0124,solid_power,DS-B05 lower conductor continues to load INST-B05.,high
+DET-COMP-0050,DET-COMP-0098,dashed_control_association,Dashed control/trip lead is drawn from CB-B05 toward relay RLY-B05 on feeder B05.,medium
+DET-COMP-0037,DET-COMP-0051,mcc_feeder_power,MCC-1B busbar has a solid vertical feeder drop to CB-B06 feeder B06.,high
+DET-COMP-0051,DET-COMP-0075,solid_power,CB-B06 lower conductor runs solidly to protective/isolation device FU-B06.,high
+DET-COMP-0075,DET-COMP-0125,solid_power,FU-B06 lower conductor continues to load PMP-SW-B6.,high
+DET-COMP-0051,DET-COMP-0099,dashed_control_association,Dashed control/trip lead is drawn from CB-B06 toward relay RLY-B06 on feeder B06.,medium
+DET-COMP-0038,DET-COMP-0052,mcc_feeder_power,MCC-1C busbar has a solid vertical feeder drop to CB-C01 feeder C01.,high
+DET-COMP-0052,DET-COMP-0076,solid_power,CB-C01 lower conductor runs solidly to protective/isolation device DS-C01.,high
+DET-COMP-0076,DET-COMP-0126,solid_power,DS-C01 lower conductor continues to load PMP-SI-C1.,high
+DET-COMP-0052,DET-COMP-0100,dashed_control_association,Dashed control/trip lead is drawn from CB-C01 toward relay RLY-C01 on feeder C01.,medium
+DET-COMP-0038,DET-COMP-0053,mcc_feeder_power,MCC-1C busbar has a solid vertical feeder drop to CB-C02 feeder C02.,high
+DET-COMP-0053,DET-COMP-0077,solid_power,CB-C02 lower conductor runs solidly to protective/isolation device FU-C02.,high
+DET-COMP-0077,DET-COMP-0127,solid_power,FU-C02 lower conductor continues to load PMP-CS-C2.,high
+DET-COMP-0053,DET-COMP-0101,dashed_control_association,Dashed control/trip lead is drawn from CB-C02 toward relay RLY-C02 on feeder C02.,medium
+DET-COMP-0038,DET-COMP-0054,mcc_feeder_power,MCC-1C busbar has a solid vertical feeder drop to CB-C03 feeder C03.,high
+DET-COMP-0054,DET-COMP-0078,solid_power,CB-C03 lower conductor runs solidly to protective/isolation device DS-C03.,high
+DET-COMP-0078,DET-COMP-0114,solid_power,DS-C03 lower conductor continues to load MOV-C03.,high
+DET-COMP-0054,DET-COMP-0102,dashed_control_association,Dashed control/trip lead is drawn from CB-C03 toward relay RLY-C03 on feeder C03.,medium
+DET-COMP-0038,DET-COMP-0055,mcc_feeder_power,MCC-1C busbar has a solid vertical feeder drop to CB-C04 feeder C04.,high
+DET-COMP-0055,DET-COMP-0079,solid_power,CB-C04 lower conductor runs solidly to protective/isolation device FU-C04.,high
+DET-COMP-0079,DET-COMP-0128,solid_power,FU-C04 lower conductor continues to load MTR-C04.,high
+DET-COMP-0055,DET-COMP-0103,dashed_control_association,Dashed control/trip lead is drawn from CB-C04 toward relay RLY-C04 on feeder C04.,medium
+DET-COMP-0038,DET-COMP-0056,mcc_feeder_power,MCC-1C busbar has a solid vertical feeder drop to CB-C05 feeder C05.,high
+DET-COMP-0056,DET-COMP-0080,solid_power,CB-C05 lower conductor runs solidly to protective/isolation device DS-C05.,high
+DET-COMP-0080,DET-COMP-0129,solid_power,DS-C05 lower conductor continues to load INST-C05.,high
+DET-COMP-0056,DET-COMP-0104,dashed_control_association,Dashed control/trip lead is drawn from CB-C05 toward relay RLY-C05 on feeder C05.,medium
+DET-COMP-0038,DET-COMP-0057,mcc_feeder_power,MCC-1C busbar has a solid vertical feeder drop to CB-C06 feeder C06.,high
+DET-COMP-0057,DET-COMP-0081,solid_power,CB-C06 lower conductor runs solidly to protective/isolation device FU-C06.,high
+DET-COMP-0081,DET-COMP-0130,solid_power,FU-C06 lower conductor continues to load PMP-SW-C6.,high
+DET-COMP-0057,DET-COMP-0105,dashed_control_association,Dashed control/trip lead is drawn from CB-C06 toward relay RLY-C06 on feeder C06.,medium
+DET-COMP-0039,DET-COMP-0058,mcc_feeder_power,MCC-1D busbar has a solid vertical feeder drop to CB-D01 feeder D01.,high
+DET-COMP-0058,DET-COMP-0082,solid_power,CB-D01 lower conductor runs solidly to protective/isolation device DS-D01.,high
+DET-COMP-0082,DET-COMP-0131,solid_power,DS-D01 lower conductor continues to load PMP-SI-D1.,high
+DET-COMP-0058,DET-COMP-0106,dashed_control_association,Dashed control/trip lead is drawn from CB-D01 toward relay RLY-D01 on feeder D01.,medium
+DET-COMP-0039,DET-COMP-0059,mcc_feeder_power,MCC-1D busbar has a solid vertical feeder drop to CB-D02 feeder D02.,high
+DET-COMP-0059,DET-COMP-0083,solid_power,CB-D02 lower conductor runs solidly to protective/isolation device FU-D02.,high
+DET-COMP-0083,DET-COMP-0132,solid_power,FU-D02 lower conductor continues to load PMP-CS-D2.,high
+DET-COMP-0059,DET-COMP-0107,dashed_control_association,Dashed control/trip lead is drawn from CB-D02 toward relay RLY-D02 on feeder D02.,medium
+DET-COMP-0039,DET-COMP-0060,mcc_feeder_power,MCC-1D busbar has a solid vertical feeder drop to CB-D03 feeder D03.,high
+DET-COMP-0060,DET-COMP-0084,solid_power,CB-D03 lower conductor runs solidly to protective/isolation device DS-D03.,high
+DET-COMP-0084,DET-COMP-0115,solid_power,DS-D03 lower conductor continues to load MOV-D03.,high
+DET-COMP-0060,DET-COMP-0108,dashed_control_association,Dashed control/trip lead is drawn from CB-D03 toward relay RLY-D03 on feeder D03.,medium
+DET-COMP-0039,DET-COMP-0061,mcc_feeder_power,MCC-1D busbar has a solid vertical feeder drop to CB-D04 feeder D04.,high
+DET-COMP-0061,DET-COMP-0085,solid_power,CB-D04 lower conductor runs solidly to protective/isolation device FU-D04.,high
+DET-COMP-0085,DET-COMP-0133,solid_power,FU-D04 lower conductor continues to load MTR-D04.,high
+DET-COMP-0061,DET-COMP-0109,dashed_control_association,Dashed control/trip lead is drawn from CB-D04 toward relay RLY-D04 on feeder D04.,medium
+DET-COMP-0039,DET-COMP-0062,mcc_feeder_power,MCC-1D busbar has a solid vertical feeder drop to CB-D05 feeder D05.,high
+DET-COMP-0062,DET-COMP-0086,solid_power,CB-D05 lower conductor runs solidly to protective/isolation device DS-D05.,high
+DET-COMP-0086,DET-COMP-0134,solid_power,DS-D05 lower conductor continues to load INST-D05.,high
+DET-COMP-0062,DET-COMP-0110,dashed_control_association,Dashed control/trip lead is drawn from CB-D05 toward relay RLY-D05 on feeder D05.,medium
+DET-COMP-0039,DET-COMP-0063,mcc_feeder_power,MCC-1D busbar has a solid vertical feeder drop to CB-D06 feeder D06.,high
+DET-COMP-0063,DET-COMP-0087,solid_power,CB-D06 lower conductor runs solidly to protective/isolation device FU-D06.,high
+DET-COMP-0087,DET-COMP-0135,solid_power,FU-D06 lower conductor continues to load PMP-SW-D6.,high
+DET-COMP-0063,DET-COMP-0111,dashed_control_association,Dashed control/trip lead is drawn from CB-D06 toward relay RLY-D06 on feeder D06.,medium
+DET-COMP-0140,DET-COMP-0136,dashed_dc_control_path,Lower DC crop shows a dashed/weak conductor from BAT-125A to CHG-1A.,medium
+DET-COMP-0136,ADD-BUS-DC-A,dc_bus_connection,CHG-1A connects to the labeled 125 VDC ADD-BUS-DC-A segment.,high
+ADD-BUS-DC-A,DET-COMP-0141,dc_bus_connection,The labeled 125 VDC ADD-BUS-DC-A segment continues to INV-1A.,high
+ADD-BUS-DC-A,DET-COMP-0160,ground_reference,ADD-BUS-DC-A has a vertical dashed ground reference drop to GND-A.,high
+DET-COMP-0141,DET-COMP-0142,dashed_dc_control_path,Dashed DC/control path continues from INV-1A to CP-1A.,medium
+DET-COMP-0142,DET-COMP-0143,dashed_control_path,Dashed horizontal control path continues from CP-1A to TB-1A.,medium
+DET-COMP-0142,DET-COMP-0156,dashed_control_path,CP-1A has a dashed lower branch to JB-1A.,medium
+DET-COMP-0093,DET-COMP-0143,dashed_control_path,Full division crop shows the feeder-06 dashed relay/control lead dropping down into TB-1A.,low
+DET-COMP-0144,DET-COMP-0137,dashed_dc_control_path,Lower DC crop shows a dashed/weak conductor from BAT-125B to CHG-1B.,medium
+DET-COMP-0137,ADD-BUS-DC-B,dc_bus_connection,CHG-1B connects to the labeled 125 VDC ADD-BUS-DC-B segment.,high
+ADD-BUS-DC-B,DET-COMP-0145,dc_bus_connection,The labeled 125 VDC ADD-BUS-DC-B segment continues to INV-1B.,high
+ADD-BUS-DC-B,DET-COMP-0161,ground_reference,ADD-BUS-DC-B has a vertical dashed ground reference drop to GND-B.,high
+DET-COMP-0145,DET-COMP-0146,dashed_dc_control_path,Dashed DC/control path continues from INV-1B to CP-1B.,medium
+DET-COMP-0146,DET-COMP-0147,dashed_control_path,Dashed horizontal control path continues from CP-1B to TB-1B.,medium
+DET-COMP-0146,DET-COMP-0157,dashed_control_path,CP-1B has a dashed lower branch to JB-1B.,medium
+DET-COMP-0099,DET-COMP-0147,dashed_control_path,Full division crop shows the feeder-06 dashed relay/control lead dropping down into TB-1B.,low
+DET-COMP-0148,DET-COMP-0138,dashed_dc_control_path,Lower DC crop shows a dashed/weak conductor from BAT-125C to CHG-1C.,medium
+DET-COMP-0138,ADD-BUS-DC-C,dc_bus_connection,CHG-1C connects to the labeled 125 VDC ADD-BUS-DC-C segment.,high
+ADD-BUS-DC-C,DET-COMP-0149,dc_bus_connection,The labeled 125 VDC ADD-BUS-DC-C segment continues to INV-1C.,high
+ADD-BUS-DC-C,DET-COMP-0162,ground_reference,ADD-BUS-DC-C has a vertical dashed ground reference drop to GND-C.,high
+DET-COMP-0149,DET-COMP-0150,dashed_dc_control_path,Dashed DC/control path continues from INV-1C to CP-1C.,medium
+DET-COMP-0150,DET-COMP-0151,dashed_control_path,Dashed horizontal control path continues from CP-1C to TB-1C.,medium
+DET-COMP-0150,DET-COMP-0158,dashed_control_path,CP-1C has a dashed lower branch to JB-1C.,medium
+DET-COMP-0105,DET-COMP-0151,dashed_control_path,Full division crop shows the feeder-06 dashed relay/control lead dropping down into TB-1C.,low
+DET-COMP-0152,DET-COMP-0139,dashed_dc_control_path,Lower DC crop shows a dashed/weak conductor from BAT-125D to CHG-1D.,medium
+DET-COMP-0139,ADD-BUS-DC-D,dc_bus_connection,CHG-1D connects to the labeled 125 VDC ADD-BUS-DC-D segment.,high
+ADD-BUS-DC-D,DET-COMP-0153,dc_bus_connection,The labeled 125 VDC ADD-BUS-DC-D segment continues to INV-1D.,high
+ADD-BUS-DC-D,DET-COMP-0163,ground_reference,ADD-BUS-DC-D has a vertical dashed ground reference drop to GND-D.,high
+DET-COMP-0153,DET-COMP-0154,dashed_dc_control_path,Dashed DC/control path continues from INV-1D to CP-1D.,medium
+DET-COMP-0154,DET-COMP-0155,dashed_control_path,Dashed horizontal control path continues from CP-1D to TB-1D.,medium
+DET-COMP-0154,DET-COMP-0159,dashed_control_path,CP-1D has a dashed lower branch to JB-1D.,medium
+DET-COMP-0111,DET-COMP-0155,dashed_control_path,Full division crop shows the feeder-06 dashed relay/control lead dropping down into TB-1D.,low
+DET-COMP-0017,DET-COMP-0023,dashed_control_path,Division AB crop shows a dashed trip/control lead from CB-NF-A across to CB-DG-A.,medium
+DET-COMP-0023,ADD-CTRL-SEQ-1AB,dashed_control_path,SEQ-1AB left dashed vertical lead rises to the CB-DG-A control area.,medium
+ADD-CTRL-SEQ-1AB,DET-COMP-0018,dashed_control_path,SEQ-1AB right dashed lead rises toward the CB-NF-B control area.,medium
+DET-COMP-0023,ADD-CTRL-RPS-AC-1,dashed_control_path,RPS-AC-1 shares the left dashed vertical control path coming down from CB-DG-A.,medium
+ADD-CTRL-RPS-AC-1,DET-COMP-0018,dashed_control_path,RPS-AC-1 right dashed lead connects toward the CB-NF-B control area.,medium
+DET-COMP-0018,DET-COMP-0019,dashed_control_path,Division AB crop shows a dashed trip/control lead from CB-NF-B across to CB-DG-B.,medium
+ADD-CTRL-SEQ-1AB,DET-COMP-0026,dashed_control_association,SEQ-1AB sits inside the dashed AB normally-open tie/control enclosure near CB-TIE-AB; direct lead to breaker is plausible but not explicit.,low
+ADD-CTRL-RPS-AC-1,DET-COMP-0026,dashed_control_association,RPS-AC-1 sits inside the dashed AB tie/control enclosure near CB-TIE-AB; direct breaker association is plausible but not explicit.,low
+DET-COMP-0020,DET-COMP-0021,dashed_control_path,Division CD crop shows a dashed trip/control lead from CB-NF-C across to CB-DG-C.,medium
+DET-COMP-0021,ADD-CTRL-SEQ-2CD,dashed_control_path,SEQ-2CD left dashed vertical lead rises to the CB-DG-C control area.,medium
+ADD-CTRL-SEQ-2CD,DET-COMP-0022,dashed_control_path,SEQ-2CD right dashed lead rises toward the CB-NF-D control area.,medium
+DET-COMP-0021,ADD-CTRL-RPS-AC-2,dashed_control_path,RPS-AC-2 shares the left dashed vertical control path coming down from CB-DG-C.,medium
+ADD-CTRL-RPS-AC-2,DET-COMP-0022,dashed_control_path,RPS-AC-2 right dashed lead connects toward the CB-NF-D control area.,medium
+DET-COMP-0022,DET-COMP-0016,dashed_control_path,Division CD crop shows a dashed trip/control lead from CB-NF-D across to CB-DG-D.,medium
+ADD-CTRL-SEQ-2CD,DET-COMP-0027,dashed_control_association,SEQ-2CD sits inside the dashed CD normally-open tie/control enclosure near CB-TIE-CD; direct lead to breaker is plausible but not explicit.,low
+ADD-CTRL-RPS-AC-2,DET-COMP-0027,dashed_control_association,RPS-AC-2 sits inside the dashed CD tie/control enclosure near CB-TIE-CD; direct breaker association is plausible but not explicit.,low

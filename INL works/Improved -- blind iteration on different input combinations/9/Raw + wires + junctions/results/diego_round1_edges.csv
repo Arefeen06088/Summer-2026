@@ -1,0 +1,245 @@
+source,target,confidence,line_type,evidence
+UTIL-230A,DS-230A,HIGH,solid power,raw__top_left_sources solid feeder leaves utility block through disconnect
+DS-230A,SAT-1A,HIGH,solid power,raw__top_left_sources solid horizontal feeder reaches transformer symbol
+SAT-1A,CB-SAT-A,HIGH,solid power,raw__top_left_sources solid stepped feeder into breaker
+CB-SAT-A,BUS-4160S1A,HIGH,solid power,raw__top_sources_full vertical feeder from SAT breaker lands on Train A safety bus
+GEN-1A,CB-GEN-1,HIGH,solid power,raw__top_center_generator_uat generator circle feeds breaker by solid line
+CB-GEN-1,BUS-13K-01,HIGH,solid power,raw__top_center_generator_uat breaker output joins thick 13k bus
+BUS-13K-01,UAT-1A,HIGH,solid power,raw__top_center_generator_uat vertical tap from 13k bus to UAT-1A
+UAT-1A,CB-UAT-1A,HIGH,solid power,raw__top_center_generator_uat UAT-1A vertical feeder enters breaker
+CB-UAT-1A,BUS-4160-N1,HIGH,solid power,raw__top_center_generator_uat breaker lands on left normal 4160 bus
+BUS-13K-01,UAT-1B,HIGH,solid power,raw__top_center_generator_uat vertical tap from 13k bus to UAT-1B
+UAT-1B,CB-UAT-1B,HIGH,solid power,raw__top_center_generator_uat UAT-1B vertical feeder enters breaker
+CB-UAT-1B,BUS-4160-N2,HIGH,solid power,raw__top_center_generator_uat breaker lands on right normal 4160 bus
+UTIL-230B,DS-230B,HIGH,solid power,raw__top_right_sources solid feeder from utility block to disconnect
+DS-230B,SAT-1B,HIGH,solid power,raw__top_right_sources disconnect output reaches transformer symbol
+SAT-1B,CB-SAT-B,HIGH,solid power,raw__top_right_sources stepped solid feeder enters SAT breaker
+CB-SAT-B,BUS-4160S1B,HIGH,solid power,raw__top_sources_full vertical feeder from SAT breaker to Train B safety bus
+BUS-4160-N1,CB-TIE-41N,HIGH,solid power,raw__normal_aux_4160_480 left normal bus terminates at tie breaker
+CB-TIE-41N,BUS-4160-N2,HIGH,solid power,raw__normal_aux_4160_480 tie breaker output continues to right normal bus
+EDG-1A,CB-EDG-A,HIGH,solid power,raw__train_a_safety_4160 generator circle feeds EDG breaker by solid line
+CB-EDG-A,BUS-4160S1A,HIGH,solid power,raw__train_a_safety_4160 breaker vertical feeder lands on thick safety bus
+BUS-4160S1A,CB-481A,HIGH,solid power,raw__train_a_safety_4160 left vertical feeder from safety bus to breaker
+CB-481A,TR-480-A1,HIGH,solid power,raw__train_a_safety_4160 breaker continues vertically to transformer
+TR-480-A1,CB-LV-A1,HIGH,solid power,raw__train_a_safety_4160 transformer continues vertically to LV breaker
+CB-LV-A1,BUS-480-A1,HIGH,solid power,raw__train_a_480_loads LV breaker lands on BUS-480-A1
+BUS-480-A1,MCC-SAF-A1,HIGH,solid power,raw__train_a_480_loads vertical tap from 480 bus to MCC
+MCC-SAF-A1,CB-RHR-A,HIGH,solid power,raw__train_a_480_loads MCC load bus feeds RHR breaker
+CB-RHR-A,PUMP-RHR-A,HIGH,solid power,raw__train_a_480_loads breaker vertical conductor terminates at pump motor
+MCC-SAF-A1,CB-SI-A,HIGH,solid power,raw__train_a_480_loads MCC load bus feeds SI breaker
+CB-SI-A,PUMP-SI-A,HIGH,solid power,raw__train_a_480_loads breaker vertical conductor terminates at pump motor
+MCC-SAF-A1,CB-CCW-A,HIGH,solid power,raw__train_a_480_loads MCC load bus feeds CCW breaker
+CB-CCW-A,PUMP-CCW-A,HIGH,solid power,raw__train_a_480_loads breaker vertical conductor terminates at pump motor
+BUS-4160S1A,CB-482A,HIGH,solid power,raw__train_a_safety_4160 second vertical feeder from safety bus to breaker
+CB-482A,TR-480-A2,HIGH,solid power,raw__train_a_safety_4160 breaker continues vertically to transformer
+TR-480-A2,CB-LV-A2,HIGH,solid power,raw__train_a_safety_4160 transformer continues vertically to LV breaker
+CB-LV-A2,BUS-480-A2,HIGH,solid power,raw__train_a_480_loads LV breaker lands on BUS-480-A2
+BUS-480-A2,MCC-SAF-A2,HIGH,solid power,raw__train_a_480_loads vertical tap from 480 bus to MCC
+MCC-SAF-A2,CB-CVC-A,HIGH,solid power,raw__train_a_480_loads MCC load bus feeds CVC breaker
+CB-CVC-A,PUMP-CVC-A,HIGH,solid power,raw__train_a_480_loads breaker vertical conductor terminates at pump motor
+MCC-SAF-A2,CB-CRF-A,HIGH,solid power,raw__train_a_480_loads MCC load bus feeds CRF breaker
+CB-CRF-A,FAN-CR-A,HIGH,solid power,raw__train_a_480_loads breaker vertical conductor terminates at fan motor
+FAN-CR-A,PN-MOV-A,MEDIUM,solid power,raw__train_a_480_loads solid conductor continues from fan branch down and angles into MOV panel
+MCC-SAF-A2,CB-COMP-A,HIGH,solid power,raw__train_a_480_loads MCC load bus feeds air compressor breaker
+CB-COMP-A,COMP-AIR-A,HIGH,solid power,raw__train_a_480_loads breaker vertical conductor terminates at compressor motor
+PN-MOV-A,FU-8810A,HIGH,solid power,raw__train_a_mov_panel solid branch from panel to fuse FU-8810A
+FU-8810A,MOV-8810A,HIGH,solid power,raw__train_a_mov_panel fuse drops by solid conductor to valve actuator
+PN-MOV-A,FU-HV302A,HIGH,solid power,raw__train_a_mov_panel solid branch from panel to HV302 fuse
+FU-HV302A,VLV-HV-302A,HIGH,solid power,raw__train_a_mov_panel fuse output routes by solid stepped conductor to valve
+PN-MOV-A,FU-RCICA,HIGH,solid power,raw__train_a_mov_panel solid branch from panel to RCIC fuse
+FU-RCICA,MOV-RCIC-A,HIGH,solid power,raw__train_a_mov_panel fuse drops by solid conductor to RCIC MOV
+PN-MOV-A,FU-SWA,HIGH,solid power,raw__train_a_mov_panel solid branch from panel to SW fuse
+FU-SWA,MOV-SW-A,HIGH,solid power,raw__train_a_mov_panel fuse drops by solid conductor to SW MOV
+BUS-4160S1A,CT-41A,MEDIUM,signal,raw__train_a_safety_4160 dashed instrument lead descends from bus area to CT
+BUS-4160S1A,PT-41A,MEDIUM,signal,raw__train_a_safety_4160 dashed instrument lead descends from bus area to PT
+CT-41A,RELAY-50/51A,HIGH,signal,raw__train_a_safety_4160 dashed CT lead visibly terminates at relay box
+PT-41A,RELAY-50/51A,HIGH,signal,raw__train_a_safety_4160 dashed PT lead visibly terminates at relay box
+RELAY-50/51A,RELAY-86A,HIGH,interlock,raw__train_a_safety_4160 dashed trip/control conductor between relay boxes
+RELAY-50/51A,CB-482A,MEDIUM,interlock,raw__train_a_safety_4160 dashed trip path runs through CB-482A terminal area
+CB-EDG-A,CB-482A,MEDIUM,interlock,raw__train_a_safety_4160 dashed path from EDG breaker loops to CB-482A
+CB-EDG-A,RELAY-50/51A,LOW,interlock,raw__train_a_safety_4160 same dashed trip loop appears to continue toward 50/51 relay
+CB-482A,RELAY-86A,LOW,interlock,nodes_overlay__train_a_safety_4160 dashed terminal cluster between breaker and 86 relay
+CB-EDG-A,RELAY-86A,LOW,interlock,nodes_overlay__train_a_safety_4160 EDG breaker dashed loop returns near 86 relay
+CB-481A,RELAY-50/51A,LOW,interlock,raw__train_a_safety_4160 protective relay loop lies near 481A feeder with plausible trip termination
+EDG-1B,CB-EDG-B,HIGH,solid power,raw__train_b_safety_4160 generator circle feeds EDG breaker by solid line
+CB-EDG-B,BUS-4160S1B,HIGH,solid power,raw__train_b_safety_4160 breaker vertical feeder lands on thick safety bus
+BUS-4160S1B,CB-481B,HIGH,solid power,raw__train_b_safety_4160 vertical feeder from safety bus to breaker
+CB-481B,TR-480-B1,HIGH,solid power,raw__train_b_safety_4160 breaker continues to transformer branch
+TR-480-B1,CB-LV-B1,HIGH,solid power,raw__train_b_safety_4160 transformer continues vertically to LV breaker
+CB-LV-B1,BUS-480-B1,HIGH,solid power,raw__train_b_480_loads LV breaker lands on BUS-480-B1
+BUS-480-B1,MCC-SAF-B1,HIGH,solid power,raw__train_b_480_loads vertical tap from 480 bus to MCC
+MCC-SAF-B1,CB-RHR-B,HIGH,solid power,raw__train_b_480_loads MCC load bus feeds RHR breaker
+CB-RHR-B,PUMP-RHR-B,HIGH,solid power,raw__train_b_480_loads breaker vertical conductor terminates at pump motor
+MCC-SAF-B1,CB-SI-B,HIGH,solid power,raw__train_b_480_loads MCC load bus feeds SI breaker
+CB-SI-B,PUMP-SI-B,HIGH,solid power,raw__train_b_480_loads breaker vertical conductor terminates at pump motor
+MCC-SAF-B1,CB-CCW-B,HIGH,solid power,raw__train_b_480_loads MCC load bus feeds CCW breaker
+CB-CCW-B,PUMP-CCW-B,HIGH,solid power,raw__train_b_480_loads breaker vertical conductor terminates at pump motor
+BUS-4160S1B,CB-482B,HIGH,solid power,raw__train_b_safety_4160 second vertical feeder from safety bus to breaker
+CB-482B,TR-480-B2,HIGH,solid power,raw__train_b_safety_4160 breaker continues vertically to transformer
+TR-480-B2,CB-LV-B2,HIGH,solid power,raw__train_b_safety_4160 transformer continues vertically to LV breaker
+CB-LV-B2,BUS-480-B2,HIGH,solid power,raw__train_b_480_loads LV breaker lands on BUS-480-B2
+BUS-480-B2,MCC-SAF-B2,HIGH,solid power,raw__train_b_480_loads vertical tap from 480 bus to MCC
+MCC-SAF-B2,CB-CVC-B,HIGH,solid power,raw__train_b_480_loads MCC load bus feeds CVC breaker
+CB-CVC-B,PUMP-CVC-B,HIGH,solid power,raw__train_b_480_loads breaker vertical conductor terminates at pump motor
+MCC-SAF-B2,CB-CRF-B,HIGH,solid power,raw__train_b_480_loads MCC load bus feeds CRF breaker
+CB-CRF-B,FAN-CR-B,HIGH,solid power,raw__train_b_480_loads breaker vertical conductor terminates at fan motor
+FAN-CR-B,PN-MOV-B,MEDIUM,solid power,raw__train_b_480_loads solid conductor continues from fan branch down and angles into MOV panel
+MCC-SAF-B2,CB-COMP-B,HIGH,solid power,raw__train_b_480_loads MCC load bus feeds compressor breaker
+CB-COMP-B,COMP-AIR-B,HIGH,solid power,raw__train_b_480_loads breaker vertical conductor terminates at compressor motor
+PN-MOV-B,FU-8810B,HIGH,solid power,raw__train_b_mov_panel solid branch from panel to fuse FU-8810B
+FU-8810B,MOV-8810B,HIGH,solid power,raw__train_b_mov_panel fuse drops by solid conductor to valve actuator
+PN-MOV-B,FU-HV302B,HIGH,solid power,raw__train_b_mov_panel solid branch from panel to HV302 fuse
+FU-HV302B,VLV-HV-302B,HIGH,solid power,raw__train_b_mov_panel fuse output routes by solid stepped conductor to valve
+PN-MOV-B,FU-RCICB,HIGH,solid power,raw__train_b_mov_panel solid branch from panel to RCIC fuse
+FU-RCICB,MOV-RCIC-B,HIGH,solid power,raw__train_b_mov_panel fuse drops by solid conductor to RCIC MOV
+PN-MOV-B,FU-SWB,HIGH,solid power,raw__train_b_mov_panel solid branch from panel to SW fuse
+FU-SWB,MOV-SW-B,HIGH,solid power,raw__train_b_mov_panel fuse drops by solid conductor to SW MOV
+BUS-4160S1B,CT-41B,MEDIUM,signal,raw__train_b_safety_4160 dashed instrument lead descends from bus area to CT
+BUS-4160S1B,PT-41B,MEDIUM,signal,raw__train_b_safety_4160 dashed instrument lead descends from bus area to PT
+CT-41B,RELAY-27B,HIGH,signal,raw__train_b_safety_4160 dashed CT lead visibly terminates at relay
+PT-41B,RELAY-27B,HIGH,signal,raw__train_b_safety_4160 dashed PT lead visibly terminates at relay
+RELAY-27B,RELAY-86B,HIGH,interlock,raw__train_b_safety_4160 dashed trip/control conductor between relay boxes
+RELAY-27B,CB-481B,MEDIUM,interlock,raw__train_b_safety_4160 dashed relay loop reaches CB-481B terminal area
+CB-EDG-B,CB-482B,MEDIUM,interlock,raw__train_b_safety_4160 dashed path from EDG breaker loops to CB-482B
+CB-482B,RELAY-27B,MEDIUM,interlock,raw__train_b_safety_4160 dashed horizontal trip line crosses CB-482B and relay area
+RELAY-86B,TR-480-B1,LOW,interlock,raw__right_full_system long dashed trip/interlock run leaves relay toward B1 transformer area
+RELAY-86B,TR-480-B2,LOW,interlock,raw__right_full_system long dashed trip/interlock run crosses toward B2 transformer area
+CB-EDG-B,RELAY-86B,LOW,interlock,nodes_overlay__right_full_system EDG breaker dashed loop returns near 86 relay perimeter
+CB-482B,RELAY-86B,LOW,interlock,nodes_overlay__train_b_safety_4160 dashed cluster between 482B feeder and relay-86B side
+BUS-4160-N1,CB-4160-N1A,HIGH,solid power,raw__normal_aux_4160_480 vertical tap from N1 bus to N1A breaker
+CB-4160-N1A,TR-480-N1A,HIGH,solid power,raw__normal_aux_4160_480 breaker continues vertically to transformer
+TR-480-N1A,CB-480-N1A,HIGH,solid power,raw__normal_aux_4160_480 transformer continues to 480 breaker
+CB-480-N1A,BUS-480-N1A,HIGH,solid power,raw__normal_aux_4160_480 breaker lands on normal 480 bus
+BUS-480-N1A,MCC-NORM-1A,HIGH,solid power,raw__normal_aux_4160_480 vertical tap from bus to MCC
+MCC-NORM-1A,PN-480-N1A,HIGH,solid power,raw__normal_aux_4160_480 MCC feeds panel below by solid vertical conductor
+BUS-4160-N1,CB-4160-N1B,HIGH,solid power,raw__normal_aux_4160_480 vertical tap from N1 bus to N1B breaker
+CB-4160-N1B,TR-480-N1B,HIGH,solid power,raw__normal_aux_4160_480 breaker continues vertically to transformer
+TR-480-N1B,CB-480-N1B,HIGH,solid power,raw__normal_aux_4160_480 transformer continues to 480 breaker
+CB-480-N1B,BUS-480-N1B,HIGH,solid power,raw__normal_aux_4160_480 breaker lands on normal 480 bus
+BUS-480-N1B,MCC-NORM-1B,HIGH,solid power,raw__normal_aux_4160_480 vertical tap from bus to MCC
+MCC-NORM-1B,PN-480-N1B,HIGH,solid power,raw__normal_aux_4160_480 MCC feeds panel below by solid vertical conductor
+BUS-4160-N2,CB-4160-N2A,HIGH,solid power,raw__normal_aux_4160_480 vertical tap from N2 bus to N2A breaker
+CB-4160-N2A,TR-480-N2A,HIGH,solid power,raw__normal_aux_4160_480 breaker continues vertically to transformer
+TR-480-N2A,CB-480-N2A,HIGH,solid power,raw__normal_aux_4160_480 transformer continues to 480 breaker
+CB-480-N2A,BUS-480-N2A,HIGH,solid power,raw__normal_aux_4160_480 breaker lands on normal 480 bus
+BUS-480-N2A,MCC-NORM-2A,HIGH,solid power,raw__normal_aux_4160_480 vertical tap from bus to MCC
+MCC-NORM-2A,PN-480-N2A,HIGH,solid power,raw__normal_aux_4160_480 MCC feeds panel below by solid vertical conductor
+BUS-4160-N2,CB-4160-N2B,HIGH,solid power,raw__normal_aux_4160_480 vertical tap from N2 bus to N2B breaker
+CB-4160-N2B,TR-480-N2B,HIGH,solid power,raw__normal_aux_4160_480 breaker continues vertically to transformer
+TR-480-N2B,CB-480-N2B,HIGH,solid power,raw__normal_aux_4160_480 transformer continues to 480 breaker
+CB-480-N2B,BUS-480-N2B,HIGH,solid power,raw__normal_aux_4160_480 breaker lands on normal 480 bus
+BUS-480-N2B,MCC-NORM-2B,HIGH,solid power,raw__normal_aux_4160_480 vertical tap from bus to MCC
+MCC-NORM-2B,PN-480-N2B,HIGH,solid power,raw__normal_aux_4160_480 MCC feeds panel below by solid vertical conductor
+PN-480-N1A,CB-CWP-1A,HIGH,solid power,raw__normal_aux_loads panel branch feeds CWP-1A breaker
+CB-CWP-1A,PUMP-CWP-1A,HIGH,solid power,raw__normal_aux_loads breaker vertical conductor terminates at pump motor
+PN-480-N1A,CB-HEAT-1A,HIGH,solid power,raw__normal_aux_loads panel branch feeds heater breaker
+CB-HEAT-1A,HTR-1A,HIGH,solid power,raw__normal_aux_loads breaker vertical conductor terminates at heater load
+PN-480-N1A,CB-AHU-1A,HIGH,solid power,raw__normal_aux_loads panel branch feeds AHU breaker
+CB-AHU-1A,FAN-AHU-1A,HIGH,solid power,raw__normal_aux_loads breaker vertical conductor terminates at fan motor
+PN-480-N1B,CB-CWP-1B,HIGH,solid power,raw__normal_aux_loads panel branch feeds CWP-1B breaker
+CB-CWP-1B,PUMP-CWP-1B,HIGH,solid power,raw__normal_aux_loads breaker vertical conductor terminates at pump motor
+PN-480-N1B,CB-SUMP-1B,HIGH,solid power,raw__normal_aux_loads panel branch feeds sump breaker
+CB-SUMP-1B,PUMP-SUMP-1B,HIGH,solid power,raw__normal_aux_loads breaker vertical conductor terminates at pump motor
+PN-480-N1B,CB-LTG-1B,HIGH,solid power,raw__normal_aux_loads panel branch feeds lighting breaker
+CB-LTG-1B,PN-LTG-1B,HIGH,solid power,raw__normal_aux_loads breaker branch terminates at lighting panel
+PN-480-N2A,CB-CWP-2A,HIGH,solid power,raw__normal_aux_loads panel branch feeds CWP-2A breaker
+CB-CWP-2A,PUMP-CWP-2A,HIGH,solid power,raw__normal_aux_loads breaker vertical conductor terminates at pump motor
+PN-480-N2A,CB-VAC-2A,HIGH,solid power,raw__normal_aux_loads panel branch feeds VAC breaker
+CB-VAC-2A,PUMP-VAC-2A,HIGH,solid power,raw__normal_aux_loads breaker vertical conductor terminates at pump motor
+PN-480-N2A,CB-AHU-2A,HIGH,solid power,raw__normal_aux_loads panel branch feeds AHU breaker
+CB-AHU-2A,FAN-AHU-2A,HIGH,solid power,raw__normal_aux_loads breaker vertical conductor terminates at fan motor
+PN-480-N2B,CB-CWP-2B,HIGH,solid power,raw__normal_aux_loads panel branch feeds CWP-2B breaker
+CB-CWP-2B,PUMP-CWP-2B,HIGH,solid power,raw__normal_aux_loads breaker vertical conductor terminates at pump motor
+PN-480-N2B,CB-OIL-2B,HIGH,solid power,raw__normal_aux_loads panel branch feeds oil breaker
+CB-OIL-2B,PUMP-OIL-2B,HIGH,solid power,raw__normal_aux_loads breaker vertical conductor terminates at pump motor
+PN-480-N2B,CB-LTG-2B,HIGH,solid power,raw__normal_aux_loads panel branch feeds lighting breaker
+CB-LTG-2B,PN-LTG-2B,HIGH,solid power,raw__normal_aux_loads breaker branch terminates at lighting panel
+PN-480-N1A,PN-480-N1B,MEDIUM,signal,raw__normal_aux_loads dashed horizontal conductor links adjacent normal panels
+PN-480-N2A,PN-480-N2B,MEDIUM,signal,raw__normal_aux_loads dashed horizontal conductor links adjacent normal panels
+CB-SUMP-1B,MTR-480-N1,MEDIUM,signal,raw__normal_aux_loads dashed vertical from sump circuit continues to meter
+PUMP-SUMP-1B,MTR-480-N1,MEDIUM,signal,raw__normal_aux_loads dashed instrument line descends from sump motor area to meter
+MTR-480-N1,JB-NORM-A,HIGH,signal,raw__normal_aux_loads dashed line from meter angles then runs horizontally to junction box
+CB-AHU-2A,MTR-480-N2,MEDIUM,signal,raw__normal_aux_loads dashed vertical through AHU circuit continues to meter
+FAN-AHU-2A,MTR-480-N2,MEDIUM,signal,raw__normal_aux_loads dashed instrument line descends from AHU fan area to meter
+MTR-480-N2,JB-NORM-B,HIGH,signal,raw__normal_aux_loads dashed line from meter runs horizontally to junction box
+JB-NORM-A,RTD-PNL-A,HIGH,signal,raw__normal_aux_loads paired dashed vertical conductors link junction box and RTD panel
+RTD-PNL-A,TB-SEQ-A,HIGH,signal,raw__normal_aux_loads dashed vertical conductor from RTD panel to sequence terminal box
+TB-SEQ-A,TDR-SEQ-A,HIGH,signal,raw__normal_aux_loads dashed vertical conductor from terminal box to timer relay
+JB-NORM-B,RTD-PNL-B,HIGH,signal,raw__normal_aux_loads paired dashed vertical conductors link junction box and RTD panel
+RTD-PNL-B,TB-SEQ-B,HIGH,signal,raw__normal_aux_loads dashed vertical conductor from RTD panel to sequence terminal box
+TB-SEQ-B,TDR-SEQ-B,HIGH,signal,raw__normal_aux_loads dashed vertical conductor from terminal box to timer relay
+RTD-PNL-A,RTD-PNL-B,LOW,interlock,raw__central_control large dashed route brackets both sequence panels with possible cross-train logic
+RTD-PNL-A,PLC-ESF-A,LOW,interlock,raw__center_full_system large dashed loop from RTD area descends toward Train A ESF controls
+RTD-PNL-B,PLC-ESF-B,LOW,interlock,raw__center_full_system large dashed loop from RTD area descends toward Train B ESF controls
+TDR-SEQ-A,PLC-ESF-A,LOW,interlock,raw__center_full_system sequence timer lies on dashed control route toward A controls
+TDR-SEQ-B,PLC-ESF-B,LOW,interlock,raw__center_full_system sequence timer lies on dashed control route toward B controls
+CB-TIE-41N,RTD-PNL-A,LOW,interlock,raw__normal_aux_4160_480 dashed lead leaves tie breaker downward into normal control area
+CB-TIE-41N,RTD-PNL-B,LOW,interlock,raw__normal_aux_4160_480 dashed lead leaves tie breaker downward and right into normal control area
+BAT-125A,BUS-125DC-A,HIGH,DC control,raw__train_a_dc_control battery drops by solid conductor to DC bus
+CHG-125A,BUS-125DC-A,HIGH,DC control,raw__train_a_dc_control charger drops by solid conductor to DC bus
+BUS-125DC-A,INV-120A,HIGH,DC control,raw__train_a_dc_control thick DC bus feeds inverter input
+INV-120A,BUS-120AC-A,HIGH,DC control,raw__train_a_dc_control inverter output joins thick 120VAC bus
+BUS-125DC-A,PN-125A,HIGH,DC control,raw__train_a_dc_control vertical tap from DC bus to PN-125A
+BUS-120AC-A,PN-120A,HIGH,DC control,raw__train_a_dc_control vertical tap from AC control bus to PN-120A
+BUS-125DC-A,GND-A,HIGH,ground,raw__train_a_dc_control ground symbol visibly terminates on DC bus conductor
+BAT-125A,JB-1A,MEDIUM,signal,raw__train_a_dc_control dashed vertical control lead passes from battery area to JB-1A
+PN-125A,JB-1A,HIGH,interlock,raw__train_a_dc_control dashed conductor from panel left side terminates at JB-1A
+PN-125A,JB-2A,HIGH,interlock,raw__train_a_dc_control dashed conductor from panel right side routes to JB-2A
+PN-125A,PN-120A,LOW,interlock,raw__train_a_dc_control dashed control routing from 125V panel continues toward 120V panel region
+JB-2A,PLC-ESF-A,MEDIUM,interlock,raw__train_a_dc_control dashed route from JB-2A proceeds toward PLC control bay
+PN-120A,PLC-ESF-A,HIGH,DC control,raw__train_a_dc_control PN-120A has dashed and solid drops into PLC-ESF-A bay
+PN-120A,ANN-ESF-A,HIGH,signal,raw__train_a_dc_control dashed lead from PN-120A routes to annunciator circle
+PLC-ESF-A,ANN-ESF-A,HIGH,signal,raw__train_a_dc_control dashed horizontal signal line from PLC to annunciator
+PLC-ESF-A,RELAY-K1A,HIGH,interlock,raw__train_a_dc_control dashed lead from PLC bottom-left to relay K1A
+PLC-ESF-A,RELAY-K2A,HIGH,interlock,raw__train_a_dc_control dashed lead from PLC bottom-right to relay K2A
+RELAY-K1A,RELAY-K2A,LOW,interlock,raw__train_a_dc_control bottom dashed control path connects relay bay terminals
+RELAY-K2A,ANN-ESF-A,MEDIUM,interlock,raw__train_a_dc_control dashed right-side path from K2A loops toward annunciator
+RELAY-K1A,PN-120A,LOW,interlock,nodes_overlay__left_full_system K1A terminal tied into dashed PN-120A control enclosure
+RELAY-K2A,PN-120A,LOW,interlock,nodes_overlay__left_full_system K2A terminal tied into dashed PN-120A control enclosure
+INV-120A,PLC-ESF-A,LOW,interlock,raw__train_a_dc_control dashed vertical route beside inverter descends into PLC area
+PUMP-RHR-A,PLC-ESF-A,LOW,interlock,raw__left_full_system dashed safety load interlock descends from RHR pump area toward A controls
+PUMP-SI-A,PLC-ESF-A,LOW,interlock,raw__left_full_system dashed safety load interlock descends from SI pump area toward A controls
+PUMP-CCW-A,PLC-ESF-A,LOW,interlock,raw__left_full_system dashed safety load region shares descending control route toward A controls
+PN-MOV-A,PLC-ESF-A,LOW,interlock,raw__left_full_system dashed MOV panel route continues down the A-side control perimeter
+MOV-SW-A,ANN-ESF-A,LOW,signal,raw__train_a_mov_panel and raw__train_a_dc_control right-side dashed route plausibly links SW MOV status to annunciator
+MOV-RCIC-A,PLC-ESF-A,LOW,signal,raw__train_a_mov_panel RCIC MOV branch lies on same dashed control perimeter to PLC
+MCC-SAF-A1,MCC-SAF-A2,LOW,interlock,raw__train_a_480_loads slanted dashed control conductor crosses both safety MCC boxes
+MCC-SAF-A1,PLC-ESF-A,LOW,interlock,raw__left_full_system dashed conductor from MCC-SAF-A1 area descends toward A controls
+MCC-SAF-A2,PLC-ESF-A,LOW,interlock,raw__left_full_system dashed conductor from MCC-SAF-A2 area descends toward A controls
+RELAY-86A,PLC-ESF-A,LOW,interlock,raw__left_full_system dashed trip perimeter from relay area continues toward A control region
+RELAY-50/51A,PLC-ESF-A,LOW,signal,raw__left_full_system protective relay dashed network feeds broader A control perimeter
+BAT-125B,BUS-125DC-B,HIGH,DC control,raw__train_b_dc_control battery drops by solid conductor to DC bus
+CHG-125B,BUS-125DC-B,HIGH,DC control,raw__train_b_dc_control charger drops by solid conductor to DC bus
+BUS-125DC-B,INV-120B,HIGH,DC control,raw__train_b_dc_control thick DC bus feeds inverter input
+INV-120B,BUS-120AC-B,HIGH,DC control,raw__train_b_dc_control inverter output joins thick 120VAC bus
+BUS-125DC-B,PN-125B,HIGH,DC control,raw__train_b_dc_control vertical tap from DC bus to PN-125B
+BUS-120AC-B,PN-120B,HIGH,DC control,raw__train_b_dc_control vertical tap from AC control bus to PN-120B
+BUS-125DC-B,GND-B,HIGH,ground,raw__train_b_dc_control ground symbol visibly terminates on DC bus conductor
+BAT-125B,JB-1B,MEDIUM,signal,raw__train_b_dc_control dashed vertical control lead passes from battery area to JB-1B
+PN-125B,JB-1B,HIGH,interlock,raw__train_b_dc_control dashed conductor from panel left side terminates at JB-1B
+PN-125B,JB-2B,HIGH,interlock,raw__train_b_dc_control dashed conductor from panel right side routes to JB-2B
+PN-125B,PN-120B,LOW,interlock,raw__train_b_dc_control dashed control routing from 125V panel continues toward 120V panel region
+JB-2B,PLC-ESF-B,MEDIUM,interlock,raw__train_b_dc_control dashed route from JB-2B proceeds toward PLC control bay
+PN-120B,PLC-ESF-B,HIGH,DC control,raw__train_b_dc_control PN-120B has dashed and solid drops into PLC-ESF-B bay
+PN-120B,ANN-ESF-B,HIGH,signal,raw__train_b_dc_control dashed lead from PN-120B routes to annunciator circle
+PLC-ESF-B,ANN-ESF-B,HIGH,signal,raw__train_b_dc_control dashed horizontal signal line from PLC to annunciator
+PLC-ESF-B,RELAY-K1B,HIGH,interlock,raw__train_b_dc_control dashed lead from PLC bottom-left to relay K1B
+PLC-ESF-B,RELAY-K2B,HIGH,interlock,raw__train_b_dc_control dashed lead from PLC bottom-right to relay K2B
+RELAY-K1B,RELAY-K2B,LOW,interlock,raw__train_b_dc_control bottom dashed control path connects relay bay terminals
+RELAY-K2B,ANN-ESF-B,MEDIUM,interlock,raw__train_b_dc_control dashed right-side path from K2B loops toward annunciator
+RELAY-K1B,PN-120B,LOW,interlock,nodes_overlay__right_full_system K1B terminal tied into dashed PN-120B control enclosure
+RELAY-K2B,PN-120B,LOW,interlock,nodes_overlay__right_full_system K2B terminal tied into dashed PN-120B control enclosure
+INV-120B,PLC-ESF-B,LOW,interlock,raw__train_b_dc_control dashed vertical route beside inverter descends into PLC area
+PUMP-RHR-B,PLC-ESF-B,LOW,interlock,raw__right_full_system dashed safety load interlock descends from RHR pump area toward B controls
+PUMP-SI-B,PLC-ESF-B,LOW,interlock,raw__right_full_system dashed safety load interlock descends from SI pump area toward B controls
+PUMP-CCW-B,PLC-ESF-B,LOW,interlock,raw__right_full_system dashed safety load region shares descending control route toward B controls
+PN-MOV-B,PLC-ESF-B,LOW,interlock,raw__right_full_system dashed MOV panel route continues down the B-side control perimeter
+MOV-SW-B,ANN-ESF-B,LOW,signal,raw__train_b_mov_panel and raw__train_b_dc_control right-side dashed route plausibly links SW MOV status to annunciator
+MOV-RCIC-B,PLC-ESF-B,LOW,signal,raw__train_b_mov_panel RCIC MOV branch lies on same dashed control perimeter to PLC
+MCC-SAF-B1,MCC-SAF-B2,LOW,interlock,raw__train_b_480_loads slanted dashed control conductor crosses both safety MCC regions
+MCC-SAF-B1,PLC-ESF-B,LOW,interlock,raw__right_full_system dashed conductor from MCC-SAF-B1 area descends toward B controls
+MCC-SAF-B2,PLC-ESF-B,LOW,interlock,raw__right_full_system dashed conductor from MCC-SAF-B2 area descends toward B controls
+RELAY-86B,PLC-ESF-B,LOW,interlock,raw__right_full_system dashed trip perimeter from relay area continues toward B control region
+RELAY-27B,PLC-ESF-B,LOW,signal,raw__right_full_system protective relay dashed network feeds broader B control perimeter
+PLC-ESF-A,PLC-ESF-B,LOW,interlock,raw__center_full_system large dashed loop spans between train control regions near bottom perimeter
+ANN-ESF-A,ANN-ESF-B,LOW,signal,raw__left_full_system and raw__right_full_system annunciator circles lie on common outer dashed control perimeter

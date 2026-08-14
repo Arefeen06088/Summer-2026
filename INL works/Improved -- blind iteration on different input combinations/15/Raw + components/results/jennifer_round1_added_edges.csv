@@ -1,0 +1,53 @@
+source,target,type,evidence
+CB-NF-A,CB-DG-A,control,raw_07_div_1a_safety_4160_480_2x: dashed control/trip lead runs directly between normal feeder breaker CB-NF-A and diesel breaker CB-DG-A
+CB-NF-B,CB-DG-B,control,raw_08_div_1b_safety_4160_480_2x: dashed control/trip lead runs directly between normal feeder breaker CB-NF-B and diesel breaker CB-DG-B
+CB-NF-C,CB-DG-C,control,raw_09_div_2a_safety_4160_480_2x: dashed control/trip lead runs directly between normal feeder breaker CB-NF-C and diesel breaker CB-DG-C
+CB-NF-D,CB-DG-D,control,raw_10_div_2b_safety_4160_480_2x: dashed control/trip lead runs directly between normal feeder breaker CB-NF-D and diesel breaker CB-DG-D
+CB-A01,RLY-A01,control,raw_11_div_1a_mcc_loads: dashed trip/status trace leaves CB-A01 and terminates at relay RLY-A01
+CB-A02,RLY-A02,control,raw_11_div_1a_mcc_loads: dashed trip/status trace leaves CB-A02 and terminates at relay RLY-A02
+CB-A03,RLY-A03,control,raw_11_div_1a_mcc_loads: dashed trip/status trace leaves CB-A03 and terminates at relay RLY-A03
+CB-A04,RLY-A04,control,raw_11_div_1a_mcc_loads: dashed trip/status trace leaves CB-A04 and terminates at relay RLY-A04
+CB-A05,RLY-A05,control,raw_11_div_1a_mcc_loads: dashed trip/status trace leaves CB-A05 and terminates at relay RLY-A05
+CB-A06,RLY-A06,control,raw_11_div_1a_mcc_loads: dashed trip/status trace leaves CB-A06 and terminates at relay RLY-A06
+CB-B01,RLY-B01,control,raw_12_div_1b_mcc_loads: dashed trip/status trace leaves CB-B01 and terminates at relay RLY-B01
+CB-B02,RLY-B02,control,raw_12_div_1b_mcc_loads: dashed trip/status trace leaves CB-B02 and terminates at relay RLY-B02
+CB-B03,RLY-B03,control,raw_12_div_1b_mcc_loads: dashed trip/status trace leaves CB-B03 and terminates at relay RLY-B03
+CB-B04,RLY-B04,control,raw_12_div_1b_mcc_loads: dashed trip/status trace leaves CB-B04 and terminates at relay RLY-B04
+CB-B05,RLY-B05,control,raw_12_div_1b_mcc_loads: dashed trip/status trace leaves CB-B05 and terminates at relay RLY-B05
+CB-B06,RLY-B06,control,raw_12_div_1b_mcc_loads: dashed trip/status trace leaves CB-B06 and terminates at relay RLY-B06
+CB-C01,RLY-C01,control,raw_13_div_2a_mcc_loads: dashed trip/status trace leaves CB-C01 and terminates at relay RLY-C01
+CB-C02,RLY-C02,control,raw_13_div_2a_mcc_loads: dashed trip/status trace leaves CB-C02 and terminates at relay RLY-C02
+CB-C03,RLY-C03,control,raw_13_div_2a_mcc_loads: dashed trip/status trace leaves CB-C03 and terminates at relay RLY-C03
+CB-C04,RLY-C04,control,raw_13_div_2a_mcc_loads: dashed trip/status trace leaves CB-C04 and terminates at relay RLY-C04
+CB-C05,RLY-C05,control,raw_13_div_2a_mcc_loads: dashed trip/status trace leaves CB-C05 and terminates at relay RLY-C05
+CB-C06,RLY-C06,control,raw_13_div_2a_mcc_loads: dashed trip/status trace leaves CB-C06 and terminates at relay RLY-C06
+CB-D01,RLY-D01,control,raw_14_div_2b_mcc_loads: dashed trip/status trace leaves CB-D01 and terminates at relay RLY-D01
+CB-D02,RLY-D02,control,raw_14_div_2b_mcc_loads: dashed trip/status trace leaves CB-D02 and terminates at relay RLY-D02
+CB-D03,RLY-D03,control,raw_14_div_2b_mcc_loads: dashed trip/status trace leaves CB-D03 and terminates at relay RLY-D03
+CB-D04,RLY-D04,control,raw_14_div_2b_mcc_loads: dashed trip/status trace leaves CB-D04 and terminates at relay RLY-D04
+CB-D05,RLY-D05,control,raw_14_div_2b_mcc_loads: dashed trip/status trace leaves CB-D05 and terminates at relay RLY-D05
+CB-D06,RLY-D06,control,raw_14_div_2b_mcc_loads: dashed trip/status trace leaves CB-D06 and terminates at relay RLY-D06
+BAT-125A,CHG-1A,control,raw_26_div_1a_dc_detail_2x: dashed horizontal trace directly links battery BAT-125A to charger CHG-1A
+CHG-1A,BUS-DC-A,control,raw_26_div_1a_dc_detail_2x: dashed trace exits CHG-1A and lands at left junction dot on BUS-DC-A
+BUS-DC-A,INV-1A,control,raw_26_div_1a_dc_detail_2x: dashed trace leaves right BUS-DC-A junction dot and enters inverter INV-1A
+INV-1A,CP-1A,control,raw_26_div_1a_dc_detail_2x: dashed horizontal trace directly connects INV-1A to control panel CP-1A
+CP-1A,TB-1A,control,raw_26_div_1a_dc_detail_2x: dashed horizontal trace directly connects CP-1A to terminal box TB-1A
+CP-1A,JB-1A,control,raw_26_div_1a_dc_detail_2x: dashed branch drops from CP-1A and turns into junction box JB-1A
+BAT-125B,CHG-1B,control,raw_27_div_1b_dc_detail_2x: dashed horizontal trace directly links battery BAT-125B to charger CHG-1B
+CHG-1B,BUS-DC-B,control,raw_27_div_1b_dc_detail_2x: dashed trace exits CHG-1B and lands at left junction dot on BUS-DC-B
+BUS-DC-B,INV-1B,control,raw_27_div_1b_dc_detail_2x: dashed trace leaves right BUS-DC-B junction dot and enters inverter INV-1B
+INV-1B,CP-1B,control,raw_27_div_1b_dc_detail_2x: dashed horizontal trace directly connects INV-1B to control panel CP-1B
+CP-1B,TB-1B,control,raw_27_div_1b_dc_detail_2x: dashed horizontal trace directly connects CP-1B to terminal box TB-1B
+CP-1B,JB-1B,control,raw_27_div_1b_dc_detail_2x: dashed branch drops from CP-1B and turns into junction box JB-1B
+BAT-125C,CHG-1C,control,raw_28_div_2a_dc_detail_2x: dashed horizontal trace directly links battery BAT-125C to charger CHG-1C
+CHG-1C,BUS-DC-C,control,raw_28_div_2a_dc_detail_2x: dashed trace exits CHG-1C and lands at left junction dot on BUS-DC-C
+BUS-DC-C,INV-1C,control,raw_28_div_2a_dc_detail_2x: dashed trace leaves right BUS-DC-C junction dot and enters inverter INV-1C
+INV-1C,CP-1C,control,raw_28_div_2a_dc_detail_2x: dashed horizontal trace directly connects INV-1C to control panel CP-1C
+CP-1C,TB-1C,control,raw_28_div_2a_dc_detail_2x: dashed horizontal trace directly connects CP-1C to terminal box TB-1C
+CP-1C,JB-1C,control,raw_28_div_2a_dc_detail_2x: dashed branch drops from CP-1C and turns into junction box JB-1C
+BAT-125D,CHG-1D,control,raw_29_div_2b_dc_detail_2x: dashed horizontal trace directly links battery BAT-125D to charger CHG-1D
+CHG-1D,BUS-DC-D,control,raw_29_div_2b_dc_detail_2x: dashed trace exits CHG-1D and lands at left junction dot on BUS-DC-D
+BUS-DC-D,INV-1D,control,raw_29_div_2b_dc_detail_2x: dashed trace leaves right BUS-DC-D junction dot and enters inverter INV-1D
+INV-1D,CP-1D,control,raw_29_div_2b_dc_detail_2x: dashed horizontal trace directly connects INV-1D to control panel CP-1D
+CP-1D,TB-1D,control,raw_29_div_2b_dc_detail_2x: dashed horizontal trace directly connects CP-1D to terminal box TB-1D
+CP-1D,JB-1D,control,raw_29_div_2b_dc_detail_2x: dashed branch drops from CP-1D and turns into junction box JB-1D

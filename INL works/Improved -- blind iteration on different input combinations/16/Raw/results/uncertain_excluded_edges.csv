@@ -1,0 +1,10 @@
+source,target,reason
+MG-RPS-B,RTD-RCS101,Visible signal tap is not a clean accepted component-to-component edge; RTD node removed from final matrix
+BUS-125DC-A,BATT-125A,"Battery visibly connects to charger, not directly to 125 VDC bus"
+BUS-125DC-B,BATT-125B,"Battery visibly connects to charger, not directly to 125 VDC bus"
+RELAY-86A,TB-3A,Dashed route crosses/approaches TB-3A area without clear filled-dot termination
+RELAY-86B,TB-3B,Dashed route crosses/approaches TB-3B area without clear filled-dot termination
+CB-480B-IN,BUS-480-A,B incomer crosses upper A header without filled dot and lands on BUS-480-B
+BUS-480-A,CB-31A-FDR30-B,"Feeder is connected to lower BUS-480-B header, not upper BUS-480-A"
+long dashed MCC/control routes,lower control panels,Excluded unless both endpoints are named devices with filled dots
+BUS-125DC-A/B,CP-RPS/CP-ESF/CP-DCS/CP-ANN,Panel power/control feeds are not reliable component edges from crops alone

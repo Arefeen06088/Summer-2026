@@ -1,0 +1,11 @@
+source,target,reason
+BUS-4160-N1,BUS-4160-N2,The two normal 4.16 kV bus segments are separated by visible end gaps and CB-TIE-41N; no direct bus-to-bus conductor is drawn bypassing the tie breaker.
+BUS-4160-N1,CB-4160-N2A,"CB-4160-N2A is tapped from the BUS-4160-N2 segment to the right of CB-TIE-41N, not from the N1 segment."
+BUS-4160-N2,CB-4160-N1B,CB-4160-N1B is tapped from BUS-4160-N1 to the left of CB-TIE-41N; the N2 bus does not directly feed it.
+BUS-480-A1,BUS-480-B1,Train A and Train B 480 V safety buses are drawn as physically separated systems; dashed train/control boundaries are not power conductors.
+MCC-SAF-A1,MCC-SAF-B1,The A and B safety MCCs are in separate train areas with no solid conductor between them.
+FAN-CR-A,PN-MOV-A,The nearby solid branch is the MCC-SAF-A2 feeder path toward PN-MOV-A; the fan load itself is not shown feeding the panel.
+FAN-CR-B,PN-MOV-B,The nearby solid branch is the MCC-SAF-B2 feeder path toward PN-MOV-B; the fan load itself is not shown feeding the panel.
+PN-480-N1A,BUS-4160-N1,PN-480-N1A is downstream through BUS-480-N1A and MCC-NORM-1A; the dashed enclosure boundary near it is not a direct upstream bus connection.
+PN-125A,PN-120A,"The panels are supplied from different drawn buses, BUS-125DC-A and BUS-120AC-A; no direct conductor between the panel rectangles is shown."
+PN-125B,PN-120B,"The panels are supplied from different drawn buses, BUS-125DC-B and BUS-120AC-B; no direct conductor between the panel rectangles is shown."

@@ -1,0 +1,6 @@
+document,iteration,call_id,agent,model,input_tokens_est,cached_input_tokens_est,image_file_input_tokens_est,output_tokens_est,reasoning_tokens_est,total_low,total_expected,total_high,usage_object_available,notes
+6,1,main-orchestration-aggregate,Main agent,Codex session model,50000,0,28000,11000,not exposed,65000,89000,125000,no,"Aggregate estimate for orchestration, image inspection, tool-result digestion, and artifact generation."
+6,1,diego-round-1,Diego,gpt-5.5 requested; reused existing agent due thread limit,13000,0,26000,13000,not exposed,43000,52000,70000,no,Prompt plus full raw/overlay and crop set; official token counter unavailable because OPENAI_API_KEY was not set.
+6,1,jennifer-round-1,Jennifer,gpt-5.5 requested; reused existing agent due thread limit,17000,0,21000,1100,not exposed,34000,39100,56000,no,Includes Diego proposal text and focused visual package.
+6,1,diego-round-2,Diego,gpt-5.5 requested; reused existing agent due thread limit,900,0,9000,450,not exposed,8000,10350,16000,no,Focused saturation prompt with raw and three focused crops.
+6,1,jennifer-round-2-final,Jennifer,gpt-5.5 requested; reused existing agent due thread limit,450,0,7000,250,not exposed,6200,7700,12000,no,"Final confirmation prompt with raw, control bay, and DC/UPS crop."

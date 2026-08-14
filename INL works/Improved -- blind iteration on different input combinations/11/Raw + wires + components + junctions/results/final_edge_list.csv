@@ -1,0 +1,131 @@
+source,target,status,evidence
+GEN-01,TR-UAT-1,accepted,solid 13.8 kV source line
+TR-UAT-1,CB-UAT-1,accepted,solid line from transformer to breaker
+CB-UAT-1,BUS-13-8A,accepted,breaker lands on normal service bus A
+TR-SUT-1,CB-SUT-1,accepted,solid standby transformer feeder
+CB-SUT-1,BUS-13-8A,accepted,breaker lands on normal service bus A
+BUS-13-8A,CB-13-TIE,accepted,bus A enters tie breaker
+CB-13-TIE,BUS-13-8B,accepted,tie breaker exits to bus B
+GEN-02,TR-UAT-2,accepted,solid 13.8 kV source line
+TR-UAT-2,CB-UAT-2,accepted,solid line from transformer to breaker
+CB-UAT-2,BUS-13-8B,accepted,breaker lands on normal service bus B
+TR-SUT-2,CB-SUT-2,accepted,solid standby transformer feeder
+CB-SUT-2,BUS-13-8B,accepted,breaker lands on normal service bus B
+BUS-13-8A,CB-IN-A,accepted,normal incoming feeder to train A
+BUS-13-8A,CB-IN-B,accepted,normal incoming feeder to train B
+BUS-13-8B,CB-IN-C,accepted,normal incoming feeder to train C
+BUS-13-8B,CB-IN-D,accepted,normal incoming feeder to train D
+CB-IN-A,BUS-4160-A,accepted,normal incoming breaker to 4.16 kV bus
+DG-1A,CB-DG-A,accepted,diesel generator lead to breaker
+CB-DG-A,BUS-4160-A,accepted,DG breaker feeder lands on 4.16 kV bus
+BUS-4160-A,CB-4160-A1,accepted,feeder from 4.16 kV bus to branch 1 breaker
+CB-4160-A1,TR-480-A1,accepted,branch 1 breaker to transformer
+TR-480-A1,CB-480-A1,accepted,branch 1 transformer to low-side breaker
+CB-480-A1,BUS-480-A1,accepted,branch 1 low-side breaker to 480 V bus
+BUS-4160-A,CB-4160-A2,accepted,feeder from 4.16 kV bus to branch 2 breaker
+CB-4160-A2,TR-480-A2,accepted,branch 2 breaker to transformer
+TR-480-A2,CB-480-A2,accepted,branch 2 transformer to low-side breaker
+CB-480-A2,BUS-480-A2,accepted,branch 2 low-side breaker to 480 V bus
+BUS-480-A1,BUS-480-A2,accepted,continuous 480 V bus section with visible tie/junction dots
+BUS-480-A1,CB-MCC-A1,accepted,480 V bus to MCC 1 breaker
+CB-MCC-A1,MCC-A1,accepted,MCC 1 breaker to MCC
+MCC-A1,PUMP-SI-A,accepted,MCC 1 feeder to safety injection pump
+MCC-A1,PUMP-CCW-A,accepted,MCC 1 feeder to CCW pump
+MCC-A1,FAN-HVAC-A,accepted,MCC 1 feeder to HVAC fan
+BUS-480-A2,CB-MCC-A2,accepted,480 V bus to MCC 2 breaker
+CB-MCC-A2,MCC-A2,accepted,MCC 2 breaker to MCC
+MCC-A2,MOV-RHR-A,accepted,MCC 2 feeder to RHR MOV
+BUS-480-A2,RECT-125-A,accepted,480 V bus branch to 125 VDC rectifier
+RECT-125-A,PANEL-IC-A,accepted,rectifier DC output to instrument/control panel
+CB-IN-B,BUS-4160-B,accepted,normal incoming breaker to 4.16 kV bus
+DG-1B,CB-DG-B,accepted,diesel generator lead to breaker
+CB-DG-B,BUS-4160-B,accepted,DG breaker feeder lands on 4.16 kV bus
+BUS-4160-B,CB-4160-B1,accepted,feeder from 4.16 kV bus to branch 1 breaker
+CB-4160-B1,TR-480-B1,accepted,branch 1 breaker to transformer
+TR-480-B1,CB-480-B1,accepted,branch 1 transformer to low-side breaker
+CB-480-B1,BUS-480-B1,accepted,branch 1 low-side breaker to 480 V bus
+BUS-4160-B,CB-4160-B2,accepted,feeder from 4.16 kV bus to branch 2 breaker
+CB-4160-B2,TR-480-B2,accepted,branch 2 breaker to transformer
+TR-480-B2,CB-480-B2,accepted,branch 2 transformer to low-side breaker
+CB-480-B2,BUS-480-B2,accepted,branch 2 low-side breaker to 480 V bus
+BUS-480-B1,BUS-480-B2,accepted,continuous 480 V bus section with visible tie/junction dots
+BUS-480-B1,CB-MCC-B1,accepted,480 V bus to MCC 1 breaker
+CB-MCC-B1,MCC-B1,accepted,MCC 1 breaker to MCC
+MCC-B1,PUMP-SI-B,accepted,MCC 1 feeder to safety injection pump
+MCC-B1,PUMP-CCW-B,accepted,MCC 1 feeder to CCW pump
+MCC-B1,FAN-HVAC-B,accepted,MCC 1 feeder to HVAC fan
+BUS-480-B2,CB-MCC-B2,accepted,480 V bus to MCC 2 breaker
+CB-MCC-B2,MCC-B2,accepted,MCC 2 breaker to MCC
+MCC-B2,MOV-RHR-B,accepted,MCC 2 feeder to RHR MOV
+BUS-480-B2,RECT-125-B,accepted,480 V bus branch to 125 VDC rectifier
+RECT-125-B,PANEL-IC-B,accepted,rectifier DC output to instrument/control panel
+CB-IN-C,BUS-4160-C,accepted,normal incoming breaker to 4.16 kV bus
+DG-1C,CB-DG-C,accepted,diesel generator lead to breaker
+CB-DG-C,BUS-4160-C,accepted,DG breaker feeder lands on 4.16 kV bus
+BUS-4160-C,CB-4160-C1,accepted,feeder from 4.16 kV bus to branch 1 breaker
+CB-4160-C1,TR-480-C1,accepted,branch 1 breaker to transformer
+TR-480-C1,CB-480-C1,accepted,branch 1 transformer to low-side breaker
+CB-480-C1,BUS-480-C1,accepted,branch 1 low-side breaker to 480 V bus
+BUS-4160-C,CB-4160-C2,accepted,feeder from 4.16 kV bus to branch 2 breaker
+CB-4160-C2,TR-480-C2,accepted,branch 2 breaker to transformer
+TR-480-C2,CB-480-C2,accepted,branch 2 transformer to low-side breaker
+CB-480-C2,BUS-480-C2,accepted,branch 2 low-side breaker to 480 V bus
+BUS-480-C1,BUS-480-C2,accepted,continuous 480 V bus section with visible tie/junction dots
+BUS-480-C1,CB-MCC-C1,accepted,480 V bus to MCC 1 breaker
+CB-MCC-C1,MCC-C1,accepted,MCC 1 breaker to MCC
+MCC-C1,PUMP-SI-C,accepted,MCC 1 feeder to safety injection pump
+MCC-C1,PUMP-CCW-C,accepted,MCC 1 feeder to CCW pump
+MCC-C1,FAN-HVAC-C,accepted,MCC 1 feeder to HVAC fan
+BUS-480-C2,CB-MCC-C2,accepted,480 V bus to MCC 2 breaker
+CB-MCC-C2,MCC-C2,accepted,MCC 2 breaker to MCC
+MCC-C2,MOV-RHR-C,accepted,MCC 2 feeder to RHR MOV
+BUS-480-C2,RECT-125-C,accepted,480 V bus branch to 125 VDC rectifier
+RECT-125-C,PANEL-IC-C,accepted,rectifier DC output to instrument/control panel
+CB-IN-D,BUS-4160-D,accepted,normal incoming breaker to 4.16 kV bus
+DG-1D,CB-DG-D,accepted,diesel generator lead to breaker
+CB-DG-D,BUS-4160-D,accepted,DG breaker feeder lands on 4.16 kV bus
+BUS-4160-D,CB-4160-D1,accepted,feeder from 4.16 kV bus to branch 1 breaker
+CB-4160-D1,TR-480-D1,accepted,branch 1 breaker to transformer
+TR-480-D1,CB-480-D1,accepted,branch 1 transformer to low-side breaker
+CB-480-D1,BUS-480-D1,accepted,branch 1 low-side breaker to 480 V bus
+BUS-4160-D,CB-4160-D2,accepted,feeder from 4.16 kV bus to branch 2 breaker
+CB-4160-D2,TR-480-D2,accepted,branch 2 breaker to transformer
+TR-480-D2,CB-480-D2,accepted,branch 2 transformer to low-side breaker
+CB-480-D2,BUS-480-D2,accepted,branch 2 low-side breaker to 480 V bus
+BUS-480-D1,BUS-480-D2,accepted,continuous 480 V bus section with visible tie/junction dots
+BUS-480-D1,CB-MCC-D1,accepted,480 V bus to MCC 1 breaker
+CB-MCC-D1,MCC-D1,accepted,MCC 1 breaker to MCC
+MCC-D1,PUMP-SI-D,accepted,MCC 1 feeder to safety injection pump
+MCC-D1,PUMP-CCW-D,accepted,MCC 1 feeder to CCW pump
+MCC-D1,FAN-HVAC-D,accepted,MCC 1 feeder to HVAC fan
+BUS-480-D2,CB-MCC-D2,accepted,480 V bus to MCC 2 breaker
+CB-MCC-D2,MCC-D2,accepted,MCC 2 breaker to MCC
+MCC-D2,MOV-RHR-D,accepted,MCC 2 feeder to RHR MOV
+BUS-480-D2,RECT-125-D,accepted,480 V bus branch to 125 VDC rectifier
+RECT-125-D,PANEL-IC-D,accepted,rectifier DC output to instrument/control panel
+BAT-125A,BUS-DC-125A,accepted,battery A lands on DC bus A
+BUS-DC-125A,INV-UPS-A,accepted,DC bus A to inverter/UPS A
+INV-UPS-A,PANEL-RPS-A,accepted,UPS A output to RPS A panel
+BAT-125B,BUS-DC-125B,accepted,battery B lands on DC bus B
+BUS-DC-125B,INV-UPS-B,accepted,DC bus B to inverter/UPS B
+INV-UPS-B,PANEL-RPS-B,accepted,UPS B output to RPS B panel
+ATS-480-A,PANEL-RPS-A,accepted,visible ATS-AOUT route to RPS A panel
+ATS-480-B,PANEL-RPS-B,accepted,visible ATS-BOUT route to RPS B panel
+CB-IN-A,RELAY-27A,accepted,dashed undervoltage relay input from incoming breaker
+RELAY-27A,CB-DG-A,accepted,dashed relay interlock to DG breaker
+RELAY-27A,PANEL-SSPS,accepted,dashed relay signal routed to SSPS panel
+MCC-A2,PANEL-IC-A,accepted,dashed instrument/control line from MCC 2 to IC panel
+CB-IN-B,RELAY-27B,accepted,dashed undervoltage relay input from incoming breaker
+RELAY-27B,CB-DG-B,accepted,dashed relay interlock to DG breaker
+RELAY-27B,PANEL-SSPS,accepted,dashed relay signal routed to SSPS panel
+MCC-B2,PANEL-IC-B,accepted,dashed instrument/control line from MCC 2 to IC panel
+CB-IN-C,RELAY-27C,accepted,dashed undervoltage relay input from incoming breaker
+RELAY-27C,CB-DG-C,accepted,dashed relay interlock to DG breaker
+RELAY-27C,PANEL-SSPS,accepted,dashed relay signal routed to SSPS panel
+MCC-C2,PANEL-IC-C,accepted,dashed instrument/control line from MCC 2 to IC panel
+CB-IN-D,RELAY-27D,accepted,dashed undervoltage relay input from incoming breaker
+RELAY-27D,CB-DG-D,accepted,dashed relay interlock to DG breaker
+RELAY-27D,PANEL-SSPS,accepted,dashed relay signal routed to SSPS panel
+MCC-D2,PANEL-IC-D,accepted,dashed instrument/control line from MCC 2 to IC panel
+PANEL-SSPS,PANEL-RPS-A,accepted,dashed SSPS/RPS interlock route
+PANEL-SSPS,PANEL-RPS-B,accepted,dashed SSPS/RPS interlock route

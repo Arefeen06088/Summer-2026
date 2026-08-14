@@ -1,0 +1,65 @@
+{
+  "document": "15",
+  "iteration": "1",
+  "base": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iteration on different input combinations\\15\\Raw + wires + components + junctions",
+  "allowed_sources_only": true,
+  "used_ground_truth": false,
+  "used_ocr": false,
+  "final_node_count": 183,
+  "final_edge_count": 190,
+  "rounds": [
+    {
+      "round": "round_01_diego",
+      "agent": "Diego",
+      "role": "high-recall extractor",
+      "node_count": 183,
+      "edge_count": 196,
+      "status": "candidate graph; included two NSS-DG proximity edges and four local dashed context edges"
+    },
+    {
+      "round": "round_02_jennifer",
+      "agent": "Jennifer",
+      "role": "precision reviewer/refiner",
+      "node_count": 183,
+      "edge_count": 194,
+      "status": "removed NSS-DG proximity edges; retained local dashed context edges pending convergence"
+    },
+    {
+      "round": "round_03_diego",
+      "agent": "Diego",
+      "role": "convergence reviewer",
+      "node_count": 183,
+      "edge_count": 190,
+      "status": "Option B: removed four local dashed context edges and retained ground edges; 183 nodes / 190 edges"
+    },
+    {
+      "round": "round_04_jennifer_final",
+      "agent": "Jennifer",
+      "role": "final saturation reviewer",
+      "node_count": 183,
+      "edge_count": 190,
+      "status": "SATURATED: final graph is Diego round 3 Option B"
+    }
+  ],
+  "token_summary": {
+    "document": "15",
+    "iteration": "1",
+    "method": "local estimate because no API key was available for the OpenAI Responses input-token counting endpoint",
+    "text_token_estimator": "approximate prompt/message token count from observed prompt sizes; fallback about 4 characters per token",
+    "image_file_token_estimator": "standard high-detail vision tile heuristic applied qualitatively to raw/overlay/crop payloads",
+    "usage_objects": "not exposed by the local Codex main/subagent tool responses",
+    "calls": 6,
+    "input_tokens_est": 34700,
+    "cached_input_tokens_est": 0,
+    "image_file_input_tokens_est": 29500,
+    "output_tokens_low": 13520,
+    "output_tokens_expected": 21180,
+    "output_tokens_high": 30100,
+    "reasoning_tokens_low": 5750,
+    "reasoning_tokens_expected": 11280,
+    "reasoning_tokens_high": 20750,
+    "total_tokens_low": 83470,
+    "total_tokens_expected": 96660,
+    "total_tokens_high": 115050
+  }
+}

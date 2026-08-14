@@ -1,0 +1,21 @@
+source,target,status,evidence
+BUS-480-A1,TIE-A12,uncertain_excluded,"TIE-A12 is a conductor/tie label, replaced by direct BUS-480-A1--BUS-480-A2"
+BUS-480-B1,TIE-B12,uncertain_excluded,"TIE-B12 is a conductor/tie label, replaced by direct BUS-480-B1--BUS-480-B2"
+BUS-480-C1,TIE-C12,uncertain_excluded,"TIE-C12 is a conductor/tie label, replaced by direct BUS-480-C1--BUS-480-C2"
+BUS-480-D1,TIE-D12,uncertain_excluded,"TIE-D12 is a conductor/tie label, replaced by direct BUS-480-D1--BUS-480-D2"
+RECT-125-A,BUS-DC-125A,uncertain_excluded,precision path is RECT-125-A--PANEL-IC-A--BUS-DC-125A
+RECT-125-B,BUS-DC-125B,uncertain_excluded,precision path is RECT-125-B--PANEL-IC-B--BUS-DC-125B
+RECT-125-C,BUS-DC-125B,uncertain_excluded,precision path is RECT-125-C--PANEL-IC-C--BUS-DC-125B
+RECT-125-D,BUS-DC-125B,uncertain_excluded,precision path is RECT-125-D--PANEL-IC-D--BUS-DC-125B
+PANEL-SSPS,RELAY-27A,uncertain_excluded,dashed SSPS/interlock bundle is visible but endpoint-specific landing is ambiguous
+PANEL-SSPS,RELAY-27B,uncertain_excluded,dashed SSPS/interlock bundle is visible but endpoint-specific landing is ambiguous
+PANEL-SSPS,RELAY-27C,uncertain_excluded,dashed SSPS/interlock bundle is visible but endpoint-specific landing is ambiguous
+PANEL-SSPS,RELAY-27D,uncertain_excluded,dashed SSPS/interlock bundle is visible but endpoint-specific landing is ambiguous
+PANEL-SSPS,PANEL-RPS-A,uncertain_excluded,dashed RPS/SSPS interlock path is not endpoint-clean
+PANEL-SSPS,PANEL-RPS-B,uncertain_excluded,dashed RPS/SSPS interlock path is not endpoint-clean
+PANEL-SSPS,ATS-480-A,uncertain_excluded,no clean direct endpoint from SSPS to ATS-480-A
+PANEL-SSPS,ATS-480-B,uncertain_excluded,no clean direct endpoint from SSPS to ATS-480-B
+GND-A,BUS-DC-125A,uncertain_excluded,"ground terminal is tied to PANEL-IC-A, not directly to the DC bus"
+GND-B,BUS-DC-125B,uncertain_excluded,"ground terminal is tied to PANEL-IC-B, not directly to the DC bus"
+GND-C,BUS-DC-125B,uncertain_excluded,"ground terminal is tied to PANEL-IC-C, not directly to the DC bus"
+GND-D,BUS-DC-125B,uncertain_excluded,"ground terminal is tied to PANEL-IC-D, not directly to the DC bus"

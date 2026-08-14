@@ -1,0 +1,67 @@
+[
+  {
+    "round": "round1_diego",
+    "node_count": 120,
+    "edge_count": 123,
+    "matrix_size": [
+      120,
+      120
+    ],
+    "symmetric": true,
+    "diagonal_zero": true,
+    "isolated_nodes": [],
+    "notes": "High-recall proposal. Candidate matrix includes visually plausible items later rejected or left uncertain, including DS-SAT-1--TR-SAT-B, BUS-125DC*--PNL-* and RELAY-K202--SR-101."
+  },
+  {
+    "round": "round1_jennifer",
+    "node_count": 120,
+    "edge_count": 126,
+    "matrix_size": [
+      120,
+      120
+    ],
+    "symmetric": true,
+    "diagonal_zero": true,
+    "isolated_nodes": [],
+    "notes": "Precision refinement. Removed unsupported/ambiguous high-recall edges and added resolved bottom control-panel dashed edges."
+  },
+  {
+    "round": "round2_diego",
+    "node_count": 120,
+    "edge_count": 126,
+    "matrix_size": [
+      120,
+      120
+    ],
+    "symmetric": true,
+    "diagonal_zero": true,
+    "isolated_nodes": [],
+    "notes": "Targeted adjudication. Diego accepted Jennifer R1 unchanged."
+  },
+  {
+    "round": "round2_jennifer_final",
+    "node_count": 120,
+    "edge_count": 127,
+    "matrix_size": [
+      120,
+      120
+    ],
+    "symmetric": true,
+    "diagonal_zero": true,
+    "isolated_nodes": [],
+    "notes": "Final precision pass. Jennifer R2 accepted RELAY-K202--SR-101 based on the added SR-to-B-relay crop and otherwise kept Diego R2/Jennifer R1 unchanged."
+  },
+  {
+    "round": "round3_diego_saturation",
+    "node_count": 120,
+    "edge_count": 127,
+    "matrix_size": [
+      120,
+      120
+    ],
+    "symmetric": true,
+    "diagonal_zero": true,
+    "isolated_nodes": [],
+    "notes": "Saturation pass. Diego R3 agreed with Jennifer R2: RELAY-K202--SR-101 accepted, DS-SAT-1--TR-SAT-B rejected/uncertain, no further deltas."
+  }
+]

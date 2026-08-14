@@ -1,0 +1,7 @@
+timestamp,case,round,agent,role,approx_prompt_tokens,approx_completion_tokens,matrix_nodes,matrix_edges,output_artifact,notes
+2026-07-14T03:31:20,16,local,main,inventory/crops/local inspection,1400,240,177,173,codes/crops,Approximate tokens; exact tool token accounting unavailable
+2026-07-14T03:31:20,16,round_01,Diego,high-recall extraction,4300,3200,178,178,round_01_diego_matrix.csv,Broad proposal with later-pruned edges
+2026-07-14T03:31:20,16,round_02,Jennifer,precision review,5200,1900,177,173,round_02_jennifer_matrix.csv,"Corrected BUS-480-B, removed unsupported lower edges"
+2026-07-14T03:31:20,16,round_03,Diego,saturation check,900,220,177,173,round_03_diego_saturation_matrix.csv,Agreed with Jennifer corrections
+2026-07-14T03:31:20,16,round_04,Jennifer,final confirmation,420,160,177,173,round_04_jennifer_final_matrix.csv,Removed RTD-RCS101 from final node list
+2026-07-14T03:31:20,16,local,main,artifact generation/validation,1200,200,177,173,final_connectivity_matrix.csv,"Symmetric matrix, zero diagonal"

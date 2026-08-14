@@ -1,0 +1,197 @@
+source,target,edge_type,confidence,evidence
+GEN-101,CB-GEN-101,solid_power,high,top source solid line
+CB-GEN-101,TR-GSU-1,solid_power,high,top source solid line
+TR-GSU-1,BUS-SWY-1,solid_power,high,vertical drop to switchyard bus
+BUS-SWY-1,CB-SWY-TIE,solid_power,high,switchyard tie solid line
+CB-SWY-TIE,BUS-SWY-2,solid_power,high,switchyard tie solid line
+GEN-102,CB-GEN-102,solid_power,high,top source solid line
+CB-GEN-102,TR-GSU-2,solid_power,high,top source solid line
+TR-GSU-2,BUS-SWY-2,solid_power,high,vertical drop to switchyard bus
+BUS-SWY-1,TR-UAT-1,solid_power,high,solid transformer drop
+TR-UAT-1,BUS-NSS-1,solid_power,high,solid transformer drop
+BUS-SWY-1,TR-SAT-1,solid_power,high,solid transformer drop
+TR-SAT-1,BUS-NSS-1,solid_power,high,solid transformer drop
+BUS-SWY-2,TR-UAT-2,solid_power,high,solid transformer drop
+TR-UAT-2,BUS-NSS-2,solid_power,high,solid transformer drop
+BUS-SWY-2,TR-SAT-2,solid_power,high,solid transformer drop
+TR-SAT-2,BUS-NSS-2,solid_power,high,solid transformer drop
+BUS-NSS-1,CB-NF-A,solid_power,high,solid normal feeder
+DG-1A,CB-DG-A,solid_power,high,solid diesel feeder drop
+CB-NF-A,BUS-416A,solid_power,high,solid feeder to 4.16 kV bus
+CB-DG-A,BUS-416A,solid_power,high,solid diesel feeder to 4.16 kV bus
+BUS-NSS-1,CB-NF-B,solid_power,high,solid normal feeder
+DG-1B,CB-DG-B,solid_power,high,solid diesel feeder drop
+CB-NF-B,BUS-416B,solid_power,high,solid feeder to 4.16 kV bus
+CB-DG-B,BUS-416B,solid_power,high,solid diesel feeder to 4.16 kV bus
+BUS-NSS-2,CB-NF-C,solid_power,high,solid normal feeder
+DG-1C,CB-DG-C,solid_power,high,solid diesel feeder drop
+CB-NF-C,BUS-416C,solid_power,high,solid feeder to 4.16 kV bus
+CB-DG-C,BUS-416C,solid_power,high,solid diesel feeder to 4.16 kV bus
+BUS-NSS-2,CB-NF-D,solid_power,high,solid normal feeder
+DG-1D,CB-DG-D,solid_power,high,solid diesel feeder drop
+CB-NF-D,BUS-416D,solid_power,high,solid feeder to 4.16 kV bus
+CB-DG-D,BUS-416D,solid_power,high,solid diesel feeder to 4.16 kV bus
+BUS-416A,CB-TX-A,solid_power,high,solid transformer feeder
+CB-TX-A,TR-480A,solid_power,high,solid transformer feeder
+TR-480A,BUS-480A,solid_power,high,solid transformer feeder
+BUS-480A,MCC-1A,solid_power,high,solid load-center to MCC feeder
+BUS-416B,CB-TX-B,solid_power,high,solid transformer feeder
+CB-TX-B,TR-480B,solid_power,high,solid transformer feeder
+TR-480B,BUS-480B,solid_power,high,solid transformer feeder
+BUS-480B,MCC-1B,solid_power,high,solid load-center to MCC feeder
+BUS-416C,CB-TX-C,solid_power,high,solid transformer feeder
+CB-TX-C,TR-480C,solid_power,high,solid transformer feeder
+TR-480C,BUS-480C,solid_power,high,solid transformer feeder
+BUS-480C,MCC-1C,solid_power,high,solid load-center to MCC feeder
+BUS-416D,CB-TX-D,solid_power,high,solid transformer feeder
+CB-TX-D,TR-480D,solid_power,high,solid transformer feeder
+TR-480D,BUS-480D,solid_power,high,solid transformer feeder
+BUS-480D,MCC-1D,solid_power,high,solid load-center to MCC feeder
+BUS-416A,CB-TIE-AB,solid_power,high,normally-open tie solid line
+CB-TIE-AB,DS-TIE-AB,solid_power,high,normally-open tie solid line
+DS-TIE-AB,BUS-416B,solid_power,high,normally-open tie solid line
+BUS-416C,CB-TIE-CD,solid_power,high,normally-open tie solid line
+CB-TIE-CD,DS-TIE-CD,solid_power,high,normally-open tie solid line
+DS-TIE-CD,BUS-416D,solid_power,high,normally-open tie solid line
+CB-DG-A,SEQ-1AB,dashed_control,high,dashed cross-division control endpoint
+CB-NF-B,SEQ-1AB,dashed_control,high,dashed cross-division control endpoint
+CB-DG-A,RPS-AC-1,dashed_control,high,dashed cross-division control endpoint
+CB-NF-B,RPS-AC-1,dashed_control,high,dashed cross-division control endpoint
+CB-DG-C,SEQ-2CD,dashed_control,high,dashed cross-division control endpoint
+CB-NF-D,SEQ-2CD,dashed_control,high,dashed cross-division control endpoint
+CB-DG-C,RPS-AC-2,dashed_control,high,dashed cross-division control endpoint
+CB-NF-D,RPS-AC-2,dashed_control,high,dashed cross-division control endpoint
+MCC-1A,CB-A01,solid_power,high,MCC-1A branch vertical feeder
+CB-A01,DS-A01,solid_power,high,branch device in series
+DS-A01,PMP-SI-A1,solid_power,high,branch load feeder
+CB-A01,RLY-A01,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1A,CB-A02,solid_power,high,MCC-1A branch vertical feeder
+CB-A02,FU-A02,solid_power,high,branch device in series
+FU-A02,PMP-CS-A2,solid_power,high,branch load feeder
+CB-A02,RLY-A02,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1A,CB-A03,solid_power,high,MCC-1A branch vertical feeder
+CB-A03,DS-A03,solid_power,high,branch device in series
+DS-A03,MOV-A03,solid_power,high,branch load feeder
+CB-A03,RLY-A03,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1A,CB-A04,solid_power,high,MCC-1A branch vertical feeder
+CB-A04,FU-A04,solid_power,high,branch device in series
+FU-A04,MTR-A04,solid_power,high,branch load feeder
+CB-A04,RLY-A04,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1A,CB-A05,solid_power,high,MCC-1A branch vertical feeder
+CB-A05,DS-A05,solid_power,high,branch device in series
+DS-A05,INST-A05,solid_power,high,branch load feeder
+CB-A05,RLY-A05,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1A,CB-A06,solid_power,high,MCC-1A branch vertical feeder
+CB-A06,FU-A06,solid_power,high,branch device in series
+FU-A06,PMP-SW-A6,solid_power,high,branch load feeder
+CB-A06,RLY-A06,dashed_control,medium_high,dashed relay lead from breaker
+RLY-A06,TB-1A,dashed_control,medium_high,dashed relay lead continues to terminal block
+BAT-125A,CHG-1A,dashed_control,medium_high,dashed 125 VDC control line
+CHG-1A,BUS-DC-A,dashed_control,medium_high,dashed 125 VDC control line to bus
+BUS-DC-A,INV-1A,dashed_control,medium_high,dashed 125 VDC control line
+INV-1A,CP-1A,dashed_control,medium_high,dashed control line
+CP-1A,TB-1A,dashed_control,medium_high,dashed terminal control line
+CP-1A,JB-1A,dashed_control,medium_high,dashed junction-box branch
+BUS-DC-A,GND-A,dashed_control,medium,explicit dashed ground-reference connection
+MCC-1B,CB-B01,solid_power,high,MCC-1B branch vertical feeder
+CB-B01,DS-B01,solid_power,high,branch device in series
+DS-B01,PMP-SI-B1,solid_power,high,branch load feeder
+CB-B01,RLY-B01,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1B,CB-B02,solid_power,high,MCC-1B branch vertical feeder
+CB-B02,FU-B02,solid_power,high,branch device in series
+FU-B02,PMP-CS-B2,solid_power,high,branch load feeder
+CB-B02,RLY-B02,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1B,CB-B03,solid_power,high,MCC-1B branch vertical feeder
+CB-B03,DS-B03,solid_power,high,branch device in series
+DS-B03,MOV-B03,solid_power,high,branch load feeder
+CB-B03,RLY-B03,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1B,CB-B04,solid_power,high,MCC-1B branch vertical feeder
+CB-B04,FU-B04,solid_power,high,branch device in series
+FU-B04,MTR-B04,solid_power,high,branch load feeder
+CB-B04,RLY-B04,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1B,CB-B05,solid_power,high,MCC-1B branch vertical feeder
+CB-B05,DS-B05,solid_power,high,branch device in series
+DS-B05,INST-B05,solid_power,high,branch load feeder
+CB-B05,RLY-B05,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1B,CB-B06,solid_power,high,MCC-1B branch vertical feeder
+CB-B06,FU-B06,solid_power,high,branch device in series
+FU-B06,PMP-SW-B6,solid_power,high,branch load feeder
+CB-B06,RLY-B06,dashed_control,medium_high,dashed relay lead from breaker
+RLY-B06,TB-1B,dashed_control,medium_high,dashed relay lead continues to terminal block
+BAT-125B,CHG-1B,dashed_control,medium_high,dashed 125 VDC control line
+CHG-1B,BUS-DC-B,dashed_control,medium_high,dashed 125 VDC control line to bus
+BUS-DC-B,INV-1B,dashed_control,medium_high,dashed 125 VDC control line
+INV-1B,CP-1B,dashed_control,medium_high,dashed control line
+CP-1B,TB-1B,dashed_control,medium_high,dashed terminal control line
+CP-1B,JB-1B,dashed_control,medium_high,dashed junction-box branch
+BUS-DC-B,GND-B,dashed_control,medium,explicit dashed ground-reference connection
+MCC-1C,CB-C01,solid_power,high,MCC-1C branch vertical feeder
+CB-C01,DS-C01,solid_power,high,branch device in series
+DS-C01,PMP-SI-C1,solid_power,high,branch load feeder
+CB-C01,RLY-C01,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1C,CB-C02,solid_power,high,MCC-1C branch vertical feeder
+CB-C02,FU-C02,solid_power,high,branch device in series
+FU-C02,PMP-CS-C2,solid_power,high,branch load feeder
+CB-C02,RLY-C02,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1C,CB-C03,solid_power,high,MCC-1C branch vertical feeder
+CB-C03,DS-C03,solid_power,high,branch device in series
+DS-C03,MOV-C03,solid_power,high,branch load feeder
+CB-C03,RLY-C03,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1C,CB-C04,solid_power,high,MCC-1C branch vertical feeder
+CB-C04,FU-C04,solid_power,high,branch device in series
+FU-C04,MTR-C04,solid_power,high,branch load feeder
+CB-C04,RLY-C04,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1C,CB-C05,solid_power,high,MCC-1C branch vertical feeder
+CB-C05,DS-C05,solid_power,high,branch device in series
+DS-C05,INST-C05,solid_power,high,branch load feeder
+CB-C05,RLY-C05,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1C,CB-C06,solid_power,high,MCC-1C branch vertical feeder
+CB-C06,FU-C06,solid_power,high,branch device in series
+FU-C06,PMP-SW-C6,solid_power,high,branch load feeder
+CB-C06,RLY-C06,dashed_control,medium_high,dashed relay lead from breaker
+RLY-C06,TB-1C,dashed_control,medium_high,dashed relay lead continues to terminal block
+BAT-125C,CHG-1C,dashed_control,medium_high,dashed 125 VDC control line
+CHG-1C,BUS-DC-C,dashed_control,medium_high,dashed 125 VDC control line to bus
+BUS-DC-C,INV-1C,dashed_control,medium_high,dashed 125 VDC control line
+INV-1C,CP-1C,dashed_control,medium_high,dashed control line
+CP-1C,TB-1C,dashed_control,medium_high,dashed terminal control line
+CP-1C,JB-1C,dashed_control,medium_high,dashed junction-box branch
+BUS-DC-C,GND-C,dashed_control,medium,explicit dashed ground-reference connection
+MCC-1D,CB-D01,solid_power,high,MCC-1D branch vertical feeder
+CB-D01,DS-D01,solid_power,high,branch device in series
+DS-D01,PMP-SI-D1,solid_power,high,branch load feeder
+CB-D01,RLY-D01,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1D,CB-D02,solid_power,high,MCC-1D branch vertical feeder
+CB-D02,FU-D02,solid_power,high,branch device in series
+FU-D02,PMP-CS-D2,solid_power,high,branch load feeder
+CB-D02,RLY-D02,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1D,CB-D03,solid_power,high,MCC-1D branch vertical feeder
+CB-D03,DS-D03,solid_power,high,branch device in series
+DS-D03,MOV-D03,solid_power,high,branch load feeder
+CB-D03,RLY-D03,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1D,CB-D04,solid_power,high,MCC-1D branch vertical feeder
+CB-D04,FU-D04,solid_power,high,branch device in series
+FU-D04,MTR-D04,solid_power,high,branch load feeder
+CB-D04,RLY-D04,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1D,CB-D05,solid_power,high,MCC-1D branch vertical feeder
+CB-D05,DS-D05,solid_power,high,branch device in series
+DS-D05,INST-D05,solid_power,high,branch load feeder
+CB-D05,RLY-D05,dashed_control,medium_high,dashed relay lead from breaker
+MCC-1D,CB-D06,solid_power,high,MCC-1D branch vertical feeder
+CB-D06,FU-D06,solid_power,high,branch device in series
+FU-D06,PMP-SW-D6,solid_power,high,branch load feeder
+CB-D06,RLY-D06,dashed_control,medium_high,dashed relay lead from breaker
+RLY-D06,TB-1D,dashed_control,medium_high,dashed relay lead continues to terminal block
+BAT-125D,CHG-1D,dashed_control,medium_high,dashed 125 VDC control line
+CHG-1D,BUS-DC-D,dashed_control,medium_high,dashed 125 VDC control line to bus
+BUS-DC-D,INV-1D,dashed_control,medium_high,dashed 125 VDC control line
+INV-1D,CP-1D,dashed_control,medium_high,dashed control line
+CP-1D,TB-1D,dashed_control,medium_high,dashed terminal control line
+CP-1D,JB-1D,dashed_control,medium_high,dashed junction-box branch
+BUS-DC-D,GND-D,dashed_control,medium,explicit dashed ground-reference connection
+CB-NF-A,CB-DG-A,dashed_control_context,medium,"local dashed breaker-to-breaker context/control-trip line, later excluded"
+CB-NF-B,CB-DG-B,dashed_control_context,medium,"local dashed breaker-to-breaker context/control-trip line, later excluded"
+CB-NF-C,CB-DG-C,dashed_control_context,medium,"local dashed breaker-to-breaker context/control-trip line, later excluded"
+CB-NF-D,CB-DG-D,dashed_control_context,medium,"local dashed breaker-to-breaker context/control-trip line, later excluded"
+BUS-NSS-1,DG-1A,inline_symbol_contact,medium,"high-recall proximity of DG symbol on NSS bus, later excluded"
+BUS-NSS-2,DG-1C,inline_symbol_contact,medium,"high-recall proximity of DG symbol on NSS bus, later excluded"

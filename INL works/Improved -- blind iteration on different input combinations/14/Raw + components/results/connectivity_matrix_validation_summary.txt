@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 14
+Input configuration: Raw + components
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\14\connectivity_matrix_even_bus_spacing.csv
+GT normalized nodes: 178; GT normalized edges: 190
+Matrices evaluated: 5
+Best row: Diego -- Round 1 from diego_round1_connectivity_matrix.csv with Precision=0.787097, Recall=0.642105, F1=0.707246
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=122, FP=34, FN=68, Precision=0.782051, Recall=0.642105, F1=0.705202
+Primary issue: missing or differently named GT components contributed false negatives.
+
+Extra/non-GT nodes most responsible for FP edges: CB-480B-03 (2 FP edges); CB-480A-03 (2 FP edges); CB-480A-05 (2 FP edges); DS-480B-05 (2 FP edges); DS-480A-05 (2 FP edges); CB-480A-06 (2 FP edges); CB-480B-05 (2 FP edges); CB-480B-06 (2 FP edges).
+Missing GT nodes examples: CB-48A-03; CB-48A-04; CB-48A-05; CB-48A-06; CB-48A-08; CB-48A-09; CB-48B-03; CB-48B-04; CB-48B-05; CB-48B-06.
+Close-but-not-exact name examples: CB-480A-03 -> CB-48A-03 (0.95); CB-480A-04 -> CB-48A-04 (0.95); CB-480A-05 -> CB-48A-05 (0.95); CB-480A-06 -> CB-48A-06 (0.95); CB-480A-08 -> CB-48A-08 (0.95); CB-480A-09 -> CB-48A-09 (0.95); CB-480B-03 -> CB-48B-03 (0.95); CB-480B-04 -> CB-48B-04 (0.95).
+False-positive edge examples among GT-known nodes: CB-DC-TIE -- PANEL-ANN.
+False-negative edge examples among GT-known nodes: BUS-UPS-A -- PANEL-MCR; CB-4A-01 -- RELAY-KA01; CB-4A-02 -- RELAY-KA02; CB-4A-07 -- RELAY-KA07; CB-4B-01 -- RELAY-KB01; CB-4B-02 -- RELAY-KB02; CB-4B-07 -- RELAY-KB07; PANEL-ANN -- RELAY-KA09.
+False-positive examples involving extra/non-GT nodes: BUS-480A -- CB-480A-03; BUS-480A -- CB-480A-04; BUS-480A -- CB-480A-05; BUS-480A -- CB-480A-06; BUS-480A -- CB-480A-08; BUS-480A -- CB-480A-09; BUS-480B -- CB-480B-03; BUS-480B -- CB-480B-04.
+False-negative examples involving missing/differently named nodes: BUS-480A -- CB-48A-03; BUS-480A -- CB-48A-04; BUS-480A -- CB-48A-05; BUS-480A -- CB-48A-06; BUS-480A -- CB-48A-08; BUS-480A -- CB-48A-09; BUS-480B -- CB-48B-03; BUS-480B -- CB-48B-04.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (CB-480B-03; CB-480A-03; CB-480A-05; DS-480B-05; DS-480A-05), the final-row metrics would be TP=122, FP=25, FN=68, Precision=0.829932, Recall=0.642105, F1=0.724036.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=122, FP=1, FN=68, Precision=0.991870, Recall=0.642105, F1=0.779553.

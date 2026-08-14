@@ -1,0 +1,33 @@
+Connectivity matrix validation summary - Document 1
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\1\connectivity_matrix_clean_100_connected.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_connectivity_matrix.csv): TP=91, FP=9, FN=9, Precision=0.910000, Recall=0.910000, F1=0.910000
+- Jennifer -- Round 1 (round_01_jennifer_connectivity_matrix.csv): TP=97, FP=4, FN=3, Precision=0.960396, Recall=0.970000, F1=0.965174
+- Diego -- Round 2 (round_02_diego_connectivity_matrix.csv): TP=97, FP=4, FN=3, Precision=0.960396, Recall=0.970000, F1=0.965174
+- Jennifer -- Round 2 (round_02_jennifer_connectivity_matrix.csv): TP=97, FP=4, FN=3, Precision=0.960396, Recall=0.970000, F1=0.965174
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=97, FP=4, FN=3, Precision=0.960396, Recall=0.970000, F1=0.965174
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+
+False-positive edge examples:
+- INSTR-PT-A -- PT-A
+- INSTR-PT-B -- PT-B
+- PT-A -- RELAY-UV-A
+- PT-B -- RELAY-UV-B
+
+False-negative edge examples:
+- BUS-125DC-A -- BUS-125DC-B
+- INSTR-PT-A -- RELAY-UV-A
+- INSTR-PT-B -- RELAY-UV-B
+
+Extra/non-GT nodes causing performance drops:
+- PT-A: 2 incident false-positive edge(s)
+- PT-B: 2 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 2 extra/intermediate nodes were omitted from the extraction (PT-A, PT-B), final metrics would be TP=97, FP=0, FN=3, Precision=1.000000, Recall=0.970000, F1=0.984772.
+- If all 2 non-GT nodes were omitted, metrics would be TP=97, FP=0, FN=3, Precision=1.000000, Recall=0.970000, F1=0.984772.

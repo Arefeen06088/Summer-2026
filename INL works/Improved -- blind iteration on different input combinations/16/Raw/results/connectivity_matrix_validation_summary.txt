@@ -1,0 +1,76 @@
+Connectivity matrix validation summary - Document 16
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\16\synthetic_npp_connectivity_matrix_revised(1).csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_matrix.csv): TP=153, FP=25, FN=37, Precision=0.859551, Recall=0.805263, F1=0.831522
+- Jennifer -- Round 2 (round_02_jennifer_matrix.csv): TP=151, FP=22, FN=39, Precision=0.872832, Recall=0.794737, F1=0.831956
+- Diego -- Round 3 (round_03_diego_saturation_matrix.csv): TP=151, FP=22, FN=39, Precision=0.872832, Recall=0.794737, F1=0.831956
+- Jennifer -- Round 4 (round_04_jennifer_final_matrix.csv): TP=151, FP=22, FN=39, Precision=0.872832, Recall=0.794737, F1=0.831956
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=151, FP=22, FN=39, Precision=0.872832, Recall=0.794737, F1=0.831956
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- BUS-120-RPS-A -- UCP-01
+- BUS-120-RPS-B -- UCP-01
+- BUS-125DC-A -- CHGR-125A
+- BUS-125DC-B -- CHGR-125B
+- BUS-480-B -- CB-31A-FDR30-B
+- CB-31A-FDR30-B -- MCC-31A
+- CP-DCS-01 -- PT-RCS101
+- CP-RPS-A -- JB-RPS-AB-1A
+- CP-RPS-B -- JB-RPS-B3-1B
+- FAN-FN1A -- GND-FN1A
+
+False-negative edge examples:
+- BATT-125A -- BUS-125DC-A
+- BATT-125B -- BUS-125DC-B
+- BUS-120-RPS-A -- CP-DCS-01
+- BUS-120-RPS-A -- CP-RPS-A
+- BUS-120-RPS-A -- UCC-01
+- BUS-120-RPS-B -- CP-ANN-01
+- BUS-120-RPS-B -- CP-RPS-B
+- BUS-120-RPS-B -- UCC-01
+- BUS-125DC-A -- CP-ESF-A
+- BUS-125DC-B -- CP-ESF-B
+
+Extra/non-GT nodes causing performance drops:
+- UCP-01: 3 incident false-positive edge(s)
+- CB-31A-FDR30-B: 2 incident false-positive edge(s)
+- JB-RPS-AB-1A: 2 incident false-positive edge(s)
+- JB-RPS-B3-1B: 2 incident false-positive edge(s)
+- FAN-FN1A: 2 incident false-positive edge(s)
+- FAN-FN1B: 2 incident false-positive edge(s)
+- PUMP-CHM501A: 2 incident false-positive edge(s)
+- PUMP-CHM501B: 2 incident false-positive edge(s)
+- GND-NO: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (UCP-01, CB-31A-FDR30-B, JB-RPS-AB-1A, JB-RPS-B3-1B, FAN-FN1A), final metrics would be TP=151, FP=11, FN=39, Precision=0.932099, Recall=0.794737, F1=0.857955.
+- If all 9 non-GT nodes were omitted, metrics would be TP=151, FP=5, FN=39, Precision=0.967949, Recall=0.794737, F1=0.872832.
+
+Missing GT node examples:
+- UCC-01: 3 missed incident GT edge(s)
+- CB-31A-FDR: 2 missed incident GT edge(s)
+- FAN-HV1A: 2 missed incident GT edge(s)
+- FAN-HV1B: 2 missed incident GT edge(s)
+- JB-RPS-A: 2 missed incident GT edge(s)
+- JB-RPS-B: 2 missed incident GT edge(s)
+- PUMP-CHW501A: 2 missed incident GT edge(s)
+- PUMP-CHW501B: 2 missed incident GT edge(s)
+- TB-1A: 2 missed incident GT edge(s)
+- TB-1B: 2 missed incident GT edge(s)
+
+Close-but-not-exact component-name examples:
+- Extracted PUMP-CHM501A vs GT PUMP-CHW501A (similarity 0.92)
+- Extracted PUMP-CHM501B vs GT PUMP-CHW501B (similarity 0.92)
+- Extracted CB-31A-FDR30-B vs GT CB-31A-FDR (similarity 0.83)
+- Extracted GND-NO vs GT GND-N0 (similarity 0.83)
+- Extracted UCP-01 vs GT UCC-01 (similarity 0.83)
+- Extracted JB-RPS-AB-1A vs GT JB-RPS-A (similarity 0.80)
+- Extracted JB-RPS-B3-1B vs GT JB-RPS-B (similarity 0.80)

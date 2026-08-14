@@ -1,0 +1,22 @@
+DIEGO ROUND 2 RESPONSE - DOCUMENT 5
+
+1. ACCEPTED_JENNIFER_EDGES
+I agree with Jennifer's precision-first revised graph after re-checking the removals/changes against the raw schematic, wire mask overlay, node overlay, and local inspection crops. I accept her retained solid feeder topology, the local CB/transformer/load-center/MCC/load edges, the retained local CP-ESFAS-1 to CP-ESFAS-2 dashed/control edge, the confidence changes around MCC/MSIV and ATS-B NORM/FAN-CRHV-A, and the train-C reroute through ATS-B NORM.
+
+Accepted removals/changes:
+- Removed long dashed protection/control fanouts among JB-RLY, CP-ESFAS, relay, instrument, breaker, and bus nodes: accepted because the protection bay contains many crossings/parallel dashed runs, and the direct endpoint mapping is not visually secure without filled terminal evidence.
+- Removed relay-to-breaker/bus inferred control/sensing edges: accepted for the same crossing/endpoint ambiguity.
+- Removed XFER-ATS-A to RECT-48V-A and XFER-ATS-B to RECT-48V-B: accepted because rectifier AC input conductors are visible, but a direct terminal-supported tie to the XFER-ATS nodes is not secure.
+- Removed PNL-DC-A to JB-RLY-A and PNL-DC-B to JB-RLY-B: accepted because the dashed routes leave/approach the panel areas, but do not provide a secure direct endpoint-to-endpoint connection.
+- Removed GND-GRID endpoint guesses: accepted because dotted grounding conductors are present, but component terminal endpoints are not unambiguous enough for graph adjacency.
+- Replaced MCC-1C2,FAN-CRHV-A with MCC-1C2,ATS-B NORM plus ATS-B NORM,FAN-CRHV-A: accepted. The raw and overlays show MCC-1C2's left/lower branch landing on the labeled ATS-B NORM conductor, and that conductor continuing to the filled FAN-CRHV-A terminal.
+- Component labels and matrix order: accepted; I found no component label/order issue.
+
+2. REINSTATE_EDGES_CSV
+source,target,confidence,evidence
+
+3. REMOVE_OR_CHANGE_JENNIFER_EDGES_CSV
+source,target,action,evidence
+
+4. SATURATION_STATUS
+AGREE_WITH_JENNIFER -- Focused re-check found no Jennifer removal that is visually supported enough to restore, no added/rerouted Jennifer edge that should be changed, and no component label/order issue. No updated matrix is needed.

@@ -1,0 +1,6 @@
+document,iteration,round,agent,interpretation,node_count,edge_count,delta_edges_from_previous_round,matrix_file,edge_file,notes
+2,1,01,Diego,all_drawn_electrical_links_high_recall,100,100,,round_01_diego_high_recall_matrix.csv,round_01_diego_high_recall_edges.csv,Initial high-recall pass retained N.O. tie and dashed control/signal candidates as visually drawn links.
+2,1,02,Jennifer,closed_or_solid_operational_subset,100,91,-9,round_02_jennifer_precision_closed_subset_matrix.csv,round_02_jennifer_precision_closed_subset_edges.csv,Precision pass removed N.O./dashed/control candidates for an energized/solid subset.
+2,1,03,Diego,closed_or_solid_operational_subset,100,91,0,round_03_diego_closed_saturation_matrix.csv,round_03_diego_closed_saturation_edges.csv,Diego initially agreed with Jennifer under the closed/energized interpretation.
+2,1,04,Diego,all_drawn_electrical_links,100,100,9,round_04_diego_reconciled_drawn_links_matrix.csv,round_04_diego_reconciled_drawn_links_edges.csv,"After reconciling raw title/notes, Diego recommended the 100-edge drawn-link matrix."
+2,1,05,Jennifer,all_drawn_electrical_links,100,100,0,round_05_jennifer_final_drawn_links_matrix.csv,round_05_jennifer_final_drawn_links_edges.csv,Jennifer final review agreed that the requested matrix should capture all 100 drawn electrical links.

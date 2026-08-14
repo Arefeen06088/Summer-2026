@@ -1,0 +1,183 @@
+source,target,type,evidence
+GEN-101,CB-GEN-101,power,raw top crop: generator GEN-101 connected by solid lead to CB-GEN-101
+CB-GEN-101,TR-GSU-1,power,raw top crop: CB-GEN-101 feeds transformer symbol TR-GSU-1 on solid source line
+TR-GSU-1,BUS-SWY-1,power,raw top crop: TR-GSU-1 vertical drop lands with dot on BUS-SWY-1
+GEN-102,CB-GEN-102,power,raw top crop: generator GEN-102 connected by solid lead to CB-GEN-102
+CB-GEN-102,TR-GSU-2,power,raw top crop: CB-GEN-102 feeds transformer symbol TR-GSU-2 on solid source line
+TR-GSU-2,BUS-SWY-2,power,raw top crop: TR-GSU-2 vertical drop lands with dot on BUS-SWY-2
+BUS-SWY-1,CB-SWY-TIE,tie,raw top crop: BUS-SWY-1 solid switchyard bus terminates at CB-SWY-TIE
+CB-SWY-TIE,BUS-SWY-2,tie,raw top crop: CB-SWY-TIE connects across to BUS-SWY-2 on the switchyard bus
+BUS-SWY-1,TR-UAT-1,power,raw top crop: TR-UAT-1 vertical transformer tap from BUS-SWY-1
+TR-UAT-1,BUS-NSS-1,power,raw top crop: TR-UAT-1 descends to BUS-NSS-1 with solid junction
+BUS-SWY-1,TR-SAT-1,power,raw top crop: TR-SAT-1 vertical transformer tap from BUS-SWY-1
+TR-SAT-1,BUS-NSS-1,power,raw top crop: TR-SAT-1 descends to BUS-NSS-1 with solid junction
+BUS-SWY-2,TR-UAT-2,power,raw top crop: TR-UAT-2 vertical transformer tap from BUS-SWY-2
+TR-UAT-2,BUS-NSS-2,power,raw top crop: TR-UAT-2 descends to BUS-NSS-2 with solid junction
+BUS-SWY-2,TR-SAT-2,power,raw top crop: TR-SAT-2 vertical transformer tap from BUS-SWY-2
+TR-SAT-2,BUS-NSS-2,power,raw top crop: TR-SAT-2 descends to BUS-NSS-2 with solid junction
+BUS-NSS-1,CB-NF-A,power,raw div A crop: normal feeder breaker CB-NF-A drops from BUS-NSS-1
+CB-NF-A,BUS-416A,power,raw div A crop: CB-NF-A solid vertical lead lands on BUS-416A
+DG-1A,CB-DG-A,power,raw div A crop: diesel generator DG-1A solid vertical lead feeds CB-DG-A
+CB-DG-A,BUS-416A,power,raw div A crop: CB-DG-A solid vertical lead lands on BUS-416A
+BUS-NSS-1,CB-NF-B,power,raw div B crop: normal feeder breaker CB-NF-B drops from BUS-NSS-1
+CB-NF-B,BUS-416B,power,raw div B crop: CB-NF-B solid vertical lead lands on BUS-416B
+DG-1B,CB-DG-B,power,raw div B crop: diesel generator DG-1B solid vertical lead feeds CB-DG-B
+CB-DG-B,BUS-416B,power,raw div B crop: CB-DG-B solid vertical lead lands on BUS-416B
+BUS-NSS-2,CB-NF-C,power,raw div C crop: normal feeder breaker CB-NF-C drops from BUS-NSS-2
+CB-NF-C,BUS-416C,power,raw div C crop: CB-NF-C solid vertical lead lands on BUS-416C
+DG-1C,CB-DG-C,power,raw div C crop: diesel generator DG-1C solid vertical lead feeds CB-DG-C
+CB-DG-C,BUS-416C,power,raw div C crop: CB-DG-C solid vertical lead lands on BUS-416C
+BUS-NSS-2,CB-NF-D,power,raw div D crop: normal feeder breaker CB-NF-D drops from BUS-NSS-2
+CB-NF-D,BUS-416D,power,raw div D crop: CB-NF-D solid vertical lead lands on BUS-416D
+DG-1D,CB-DG-D,power,raw div D crop: diesel generator DG-1D solid vertical lead feeds CB-DG-D
+CB-DG-D,BUS-416D,power,raw div D crop: CB-DG-D solid vertical lead lands on BUS-416D
+BUS-416A,CB-TIE-AB,tie,tie crop AB: BUS-416A solid bus enters normally-open CB-TIE-AB
+CB-TIE-AB,DS-TIE-AB,tie,tie crop AB: CB-TIE-AB connected in series to DS-TIE-AB
+DS-TIE-AB,BUS-416B,tie,tie crop AB: DS-TIE-AB solid line continues to BUS-416B
+BUS-416C,CB-TIE-CD,tie,tie crop CD: BUS-416C solid bus enters normally-open CB-TIE-CD
+CB-TIE-CD,DS-TIE-CD,tie,tie crop CD: CB-TIE-CD connected in series to DS-TIE-CD
+DS-TIE-CD,BUS-416D,tie,tie crop CD: DS-TIE-CD solid line continues to BUS-416D
+BUS-416A,CB-TX-A,power,raw div A 416/480 crop: transformer feeder breaker CB-TX-A drops from BUS-416A
+CB-TX-A,TR-480A,power,raw div A 416/480 crop: CB-TX-A feeds transformer TR-480A
+TR-480A,BUS-480A,power,raw div A 416/480 crop: TR-480A descends to BUS-480A
+BUS-480A,MCC-1A,power,raw div A overview/load crop: BUS-480A continues down to MCC-1A
+BUS-416B,CB-TX-B,power,raw div B 416/480 crop: transformer feeder breaker CB-TX-B drops from BUS-416B
+CB-TX-B,TR-480B,power,raw div B 416/480 crop: CB-TX-B feeds transformer TR-480B
+TR-480B,BUS-480B,power,raw div B 416/480 crop: TR-480B descends to BUS-480B
+BUS-480B,MCC-1B,power,raw div B overview/load crop: BUS-480B continues down to MCC-1B
+BUS-416C,CB-TX-C,power,raw div C 416/480 crop: transformer feeder breaker CB-TX-C drops from BUS-416C
+CB-TX-C,TR-480C,power,raw div C 416/480 crop: CB-TX-C feeds transformer TR-480C
+TR-480C,BUS-480C,power,raw div C 416/480 crop: TR-480C descends to BUS-480C
+BUS-480C,MCC-1C,power,raw div C overview/load crop: BUS-480C continues down to MCC-1C
+BUS-416D,CB-TX-D,power,raw div D 416/480 crop: transformer feeder breaker CB-TX-D drops from BUS-416D
+CB-TX-D,TR-480D,power,raw div D 416/480 crop: CB-TX-D feeds transformer TR-480D
+TR-480D,BUS-480D,power,raw div D 416/480 crop: TR-480D descends to BUS-480D
+BUS-480D,MCC-1D,power,raw div D overview/load crop: BUS-480D continues down to MCC-1D
+MCC-1A,CB-A01,power,raw MCC-A crop: vertical feeder from MCC-1A bus to CB-A01
+CB-A01,DS-A01,power,raw MCC-A crop: CB-A01 solid feeder continues to DS-A01
+DS-A01,PMP-SI-A1,power,raw MCC-A crop: DS-A01 solid feeder continues to load PMP-SI-A1
+MCC-1A,CB-A02,power,raw MCC-A crop: vertical feeder from MCC-1A bus to CB-A02
+CB-A02,FU-A02,power,raw MCC-A crop: CB-A02 solid feeder continues to FU-A02
+FU-A02,PMP-CS-A2,power,raw MCC-A crop: FU-A02 solid feeder continues to load PMP-CS-A2
+MCC-1A,CB-A03,power,raw MCC-A crop: vertical feeder from MCC-1A bus to CB-A03
+CB-A03,DS-A03,power,raw MCC-A crop: CB-A03 solid feeder continues to DS-A03
+DS-A03,MOV-A03,power,raw MCC-A crop: DS-A03 solid feeder continues to load MOV-A03
+MCC-1A,CB-A04,power,raw MCC-A crop: vertical feeder from MCC-1A bus to CB-A04
+CB-A04,FU-A04,power,raw MCC-A crop: CB-A04 solid feeder continues to FU-A04
+FU-A04,MTR-A04,power,raw MCC-A crop: FU-A04 solid feeder continues to load MTR-A04
+MCC-1A,CB-A05,power,raw MCC-A crop: vertical feeder from MCC-1A bus to CB-A05
+CB-A05,DS-A05,power,raw MCC-A crop: CB-A05 solid feeder continues to DS-A05
+DS-A05,INST-A05,power,raw MCC-A crop: DS-A05 solid feeder continues to load INST-A05
+MCC-1A,CB-A06,power,raw MCC-A crop: vertical feeder from MCC-1A bus to CB-A06
+CB-A06,FU-A06,power,raw MCC-A crop: CB-A06 solid feeder continues to FU-A06
+FU-A06,PMP-SW-A6,power,raw MCC-A crop: FU-A06 solid feeder continues to load PMP-SW-A6
+MCC-1B,CB-B01,power,raw MCC-B crop: vertical feeder from MCC-1B bus to CB-B01
+CB-B01,DS-B01,power,raw MCC-B crop: CB-B01 solid feeder continues to DS-B01
+DS-B01,PMP-SI-B1,power,raw MCC-B crop: DS-B01 solid feeder continues to load PMP-SI-B1
+MCC-1B,CB-B02,power,raw MCC-B crop: vertical feeder from MCC-1B bus to CB-B02
+CB-B02,FU-B02,power,raw MCC-B crop: CB-B02 solid feeder continues to FU-B02
+FU-B02,PMP-CS-B2,power,raw MCC-B crop: FU-B02 solid feeder continues to load PMP-CS-B2
+MCC-1B,CB-B03,power,raw MCC-B crop: vertical feeder from MCC-1B bus to CB-B03
+CB-B03,DS-B03,power,raw MCC-B crop: CB-B03 solid feeder continues to DS-B03
+DS-B03,MOV-B03,power,raw MCC-B crop: DS-B03 solid feeder continues to load MOV-B03
+MCC-1B,CB-B04,power,raw MCC-B crop: vertical feeder from MCC-1B bus to CB-B04
+CB-B04,FU-B04,power,raw MCC-B crop: CB-B04 solid feeder continues to FU-B04
+FU-B04,MTR-B04,power,raw MCC-B crop: FU-B04 solid feeder continues to load MTR-B04
+MCC-1B,CB-B05,power,raw MCC-B crop: vertical feeder from MCC-1B bus to CB-B05
+CB-B05,DS-B05,power,raw MCC-B crop: CB-B05 solid feeder continues to DS-B05
+DS-B05,INST-B05,power,raw MCC-B crop: DS-B05 solid feeder continues to load INST-B05
+MCC-1B,CB-B06,power,raw MCC-B crop: vertical feeder from MCC-1B bus to CB-B06
+CB-B06,FU-B06,power,raw MCC-B crop: CB-B06 solid feeder continues to FU-B06
+FU-B06,PMP-SW-B6,power,raw MCC-B crop: FU-B06 solid feeder continues to load PMP-SW-B6
+MCC-1C,CB-C01,power,raw MCC-C crop: vertical feeder from MCC-1C bus to CB-C01
+CB-C01,DS-C01,power,raw MCC-C crop: CB-C01 solid feeder continues to DS-C01
+DS-C01,PMP-SI-C1,power,raw MCC-C crop: DS-C01 solid feeder continues to load PMP-SI-C1
+MCC-1C,CB-C02,power,raw MCC-C crop: vertical feeder from MCC-1C bus to CB-C02
+CB-C02,FU-C02,power,raw MCC-C crop: CB-C02 solid feeder continues to FU-C02
+FU-C02,PMP-CS-C2,power,raw MCC-C crop: FU-C02 solid feeder continues to load PMP-CS-C2
+MCC-1C,CB-C03,power,raw MCC-C crop: vertical feeder from MCC-1C bus to CB-C03
+CB-C03,DS-C03,power,raw MCC-C crop: CB-C03 solid feeder continues to DS-C03
+DS-C03,MOV-C03,power,raw MCC-C crop: DS-C03 solid feeder continues to load MOV-C03
+MCC-1C,CB-C04,power,raw MCC-C crop: vertical feeder from MCC-1C bus to CB-C04
+CB-C04,FU-C04,power,raw MCC-C crop: CB-C04 solid feeder continues to FU-C04
+FU-C04,MTR-C04,power,raw MCC-C crop: FU-C04 solid feeder continues to load MTR-C04
+MCC-1C,CB-C05,power,raw MCC-C crop: vertical feeder from MCC-1C bus to CB-C05
+CB-C05,DS-C05,power,raw MCC-C crop: CB-C05 solid feeder continues to DS-C05
+DS-C05,INST-C05,power,raw MCC-C crop: DS-C05 solid feeder continues to load INST-C05
+MCC-1C,CB-C06,power,raw MCC-C crop: vertical feeder from MCC-1C bus to CB-C06
+CB-C06,FU-C06,power,raw MCC-C crop: CB-C06 solid feeder continues to FU-C06
+FU-C06,PMP-SW-C6,power,raw MCC-C crop: FU-C06 solid feeder continues to load PMP-SW-C6
+MCC-1D,CB-D01,power,raw MCC-D crop: vertical feeder from MCC-1D bus to CB-D01
+CB-D01,DS-D01,power,raw MCC-D crop: CB-D01 solid feeder continues to DS-D01
+DS-D01,PMP-SI-D1,power,raw MCC-D crop: DS-D01 solid feeder continues to load PMP-SI-D1
+MCC-1D,CB-D02,power,raw MCC-D crop: vertical feeder from MCC-1D bus to CB-D02
+CB-D02,FU-D02,power,raw MCC-D crop: CB-D02 solid feeder continues to FU-D02
+FU-D02,PMP-CS-D2,power,raw MCC-D crop: FU-D02 solid feeder continues to load PMP-CS-D2
+MCC-1D,CB-D03,power,raw MCC-D crop: vertical feeder from MCC-1D bus to CB-D03
+CB-D03,DS-D03,power,raw MCC-D crop: CB-D03 solid feeder continues to DS-D03
+DS-D03,MOV-D03,power,raw MCC-D crop: DS-D03 solid feeder continues to load MOV-D03
+MCC-1D,CB-D04,power,raw MCC-D crop: vertical feeder from MCC-1D bus to CB-D04
+CB-D04,FU-D04,power,raw MCC-D crop: CB-D04 solid feeder continues to FU-D04
+FU-D04,MTR-D04,power,raw MCC-D crop: FU-D04 solid feeder continues to load MTR-D04
+MCC-1D,CB-D05,power,raw MCC-D crop: vertical feeder from MCC-1D bus to CB-D05
+CB-D05,DS-D05,power,raw MCC-D crop: CB-D05 solid feeder continues to DS-D05
+DS-D05,INST-D05,power,raw MCC-D crop: DS-D05 solid feeder continues to load INST-D05
+MCC-1D,CB-D06,power,raw MCC-D crop: vertical feeder from MCC-1D bus to CB-D06
+CB-D06,FU-D06,power,raw MCC-D crop: CB-D06 solid feeder continues to FU-D06
+FU-D06,PMP-SW-D6,power,raw MCC-D crop: FU-D06 solid feeder continues to load PMP-SW-D6
+BUS-DC-A,GND-A,ground,raw DC detail A: BUS-DC-A has vertical drop from bus dot to ground symbol GND-A
+BUS-DC-B,GND-B,ground,raw DC detail B: BUS-DC-B has vertical drop from bus dot to ground symbol GND-B
+BUS-DC-C,GND-C,ground,raw DC detail C: BUS-DC-C has vertical drop from bus dot to ground symbol GND-C
+BUS-DC-D,GND-D,ground,raw DC detail D: BUS-DC-D has vertical drop from bus dot to ground symbol GND-D
+CB-NF-A,CB-DG-A,control,raw_07_div_1a_safety_4160_480_2x: dashed control/trip lead runs directly between normal feeder breaker CB-NF-A and diesel breaker CB-DG-A
+CB-NF-B,CB-DG-B,control,raw_08_div_1b_safety_4160_480_2x: dashed control/trip lead runs directly between normal feeder breaker CB-NF-B and diesel breaker CB-DG-B
+CB-NF-C,CB-DG-C,control,raw_09_div_2a_safety_4160_480_2x: dashed control/trip lead runs directly between normal feeder breaker CB-NF-C and diesel breaker CB-DG-C
+CB-NF-D,CB-DG-D,control,raw_10_div_2b_safety_4160_480_2x: dashed control/trip lead runs directly between normal feeder breaker CB-NF-D and diesel breaker CB-DG-D
+CB-A01,RLY-A01,control,raw_11_div_1a_mcc_loads: dashed trip/status trace leaves CB-A01 and terminates at relay RLY-A01
+CB-A02,RLY-A02,control,raw_11_div_1a_mcc_loads: dashed trip/status trace leaves CB-A02 and terminates at relay RLY-A02
+CB-A03,RLY-A03,control,raw_11_div_1a_mcc_loads: dashed trip/status trace leaves CB-A03 and terminates at relay RLY-A03
+CB-A04,RLY-A04,control,raw_11_div_1a_mcc_loads: dashed trip/status trace leaves CB-A04 and terminates at relay RLY-A04
+CB-A05,RLY-A05,control,raw_11_div_1a_mcc_loads: dashed trip/status trace leaves CB-A05 and terminates at relay RLY-A05
+CB-A06,RLY-A06,control,raw_11_div_1a_mcc_loads: dashed trip/status trace leaves CB-A06 and terminates at relay RLY-A06
+CB-B01,RLY-B01,control,raw_12_div_1b_mcc_loads: dashed trip/status trace leaves CB-B01 and terminates at relay RLY-B01
+CB-B02,RLY-B02,control,raw_12_div_1b_mcc_loads: dashed trip/status trace leaves CB-B02 and terminates at relay RLY-B02
+CB-B03,RLY-B03,control,raw_12_div_1b_mcc_loads: dashed trip/status trace leaves CB-B03 and terminates at relay RLY-B03
+CB-B04,RLY-B04,control,raw_12_div_1b_mcc_loads: dashed trip/status trace leaves CB-B04 and terminates at relay RLY-B04
+CB-B05,RLY-B05,control,raw_12_div_1b_mcc_loads: dashed trip/status trace leaves CB-B05 and terminates at relay RLY-B05
+CB-B06,RLY-B06,control,raw_12_div_1b_mcc_loads: dashed trip/status trace leaves CB-B06 and terminates at relay RLY-B06
+CB-C01,RLY-C01,control,raw_13_div_2a_mcc_loads: dashed trip/status trace leaves CB-C01 and terminates at relay RLY-C01
+CB-C02,RLY-C02,control,raw_13_div_2a_mcc_loads: dashed trip/status trace leaves CB-C02 and terminates at relay RLY-C02
+CB-C03,RLY-C03,control,raw_13_div_2a_mcc_loads: dashed trip/status trace leaves CB-C03 and terminates at relay RLY-C03
+CB-C04,RLY-C04,control,raw_13_div_2a_mcc_loads: dashed trip/status trace leaves CB-C04 and terminates at relay RLY-C04
+CB-C05,RLY-C05,control,raw_13_div_2a_mcc_loads: dashed trip/status trace leaves CB-C05 and terminates at relay RLY-C05
+CB-C06,RLY-C06,control,raw_13_div_2a_mcc_loads: dashed trip/status trace leaves CB-C06 and terminates at relay RLY-C06
+CB-D01,RLY-D01,control,raw_14_div_2b_mcc_loads: dashed trip/status trace leaves CB-D01 and terminates at relay RLY-D01
+CB-D02,RLY-D02,control,raw_14_div_2b_mcc_loads: dashed trip/status trace leaves CB-D02 and terminates at relay RLY-D02
+CB-D03,RLY-D03,control,raw_14_div_2b_mcc_loads: dashed trip/status trace leaves CB-D03 and terminates at relay RLY-D03
+CB-D04,RLY-D04,control,raw_14_div_2b_mcc_loads: dashed trip/status trace leaves CB-D04 and terminates at relay RLY-D04
+CB-D05,RLY-D05,control,raw_14_div_2b_mcc_loads: dashed trip/status trace leaves CB-D05 and terminates at relay RLY-D05
+CB-D06,RLY-D06,control,raw_14_div_2b_mcc_loads: dashed trip/status trace leaves CB-D06 and terminates at relay RLY-D06
+BAT-125A,CHG-1A,control,raw_26_div_1a_dc_detail_2x: dashed horizontal trace directly links battery BAT-125A to charger CHG-1A
+CHG-1A,BUS-DC-A,control,raw_26_div_1a_dc_detail_2x: dashed trace exits CHG-1A and lands at left junction dot on BUS-DC-A
+BUS-DC-A,INV-1A,control,raw_26_div_1a_dc_detail_2x: dashed trace leaves right BUS-DC-A junction dot and enters inverter INV-1A
+INV-1A,CP-1A,control,raw_26_div_1a_dc_detail_2x: dashed horizontal trace directly connects INV-1A to control panel CP-1A
+CP-1A,TB-1A,control,raw_26_div_1a_dc_detail_2x: dashed horizontal trace directly connects CP-1A to terminal box TB-1A
+CP-1A,JB-1A,control,raw_26_div_1a_dc_detail_2x: dashed branch drops from CP-1A and turns into junction box JB-1A
+BAT-125B,CHG-1B,control,raw_27_div_1b_dc_detail_2x: dashed horizontal trace directly links battery BAT-125B to charger CHG-1B
+CHG-1B,BUS-DC-B,control,raw_27_div_1b_dc_detail_2x: dashed trace exits CHG-1B and lands at left junction dot on BUS-DC-B
+BUS-DC-B,INV-1B,control,raw_27_div_1b_dc_detail_2x: dashed trace leaves right BUS-DC-B junction dot and enters inverter INV-1B
+INV-1B,CP-1B,control,raw_27_div_1b_dc_detail_2x: dashed horizontal trace directly connects INV-1B to control panel CP-1B
+CP-1B,TB-1B,control,raw_27_div_1b_dc_detail_2x: dashed horizontal trace directly connects CP-1B to terminal box TB-1B
+CP-1B,JB-1B,control,raw_27_div_1b_dc_detail_2x: dashed branch drops from CP-1B and turns into junction box JB-1B
+BAT-125C,CHG-1C,control,raw_28_div_2a_dc_detail_2x: dashed horizontal trace directly links battery BAT-125C to charger CHG-1C
+CHG-1C,BUS-DC-C,control,raw_28_div_2a_dc_detail_2x: dashed trace exits CHG-1C and lands at left junction dot on BUS-DC-C
+BUS-DC-C,INV-1C,control,raw_28_div_2a_dc_detail_2x: dashed trace leaves right BUS-DC-C junction dot and enters inverter INV-1C
+INV-1C,CP-1C,control,raw_28_div_2a_dc_detail_2x: dashed horizontal trace directly connects INV-1C to control panel CP-1C
+CP-1C,TB-1C,control,raw_28_div_2a_dc_detail_2x: dashed horizontal trace directly connects CP-1C to terminal box TB-1C
+CP-1C,JB-1C,control,raw_28_div_2a_dc_detail_2x: dashed branch drops from CP-1C and turns into junction box JB-1C
+BAT-125D,CHG-1D,control,raw_29_div_2b_dc_detail_2x: dashed horizontal trace directly links battery BAT-125D to charger CHG-1D
+CHG-1D,BUS-DC-D,control,raw_29_div_2b_dc_detail_2x: dashed trace exits CHG-1D and lands at left junction dot on BUS-DC-D
+BUS-DC-D,INV-1D,control,raw_29_div_2b_dc_detail_2x: dashed trace leaves right BUS-DC-D junction dot and enters inverter INV-1D
+INV-1D,CP-1D,control,raw_29_div_2b_dc_detail_2x: dashed horizontal trace directly connects INV-1D to control panel CP-1D
+CP-1D,TB-1D,control,raw_29_div_2b_dc_detail_2x: dashed horizontal trace directly connects CP-1D to terminal box TB-1D
+CP-1D,JB-1D,control,raw_29_div_2b_dc_detail_2x: dashed branch drops from CP-1D and turns into junction box JB-1D

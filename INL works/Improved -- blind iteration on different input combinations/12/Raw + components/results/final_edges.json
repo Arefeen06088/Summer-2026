@@ -1,0 +1,1160 @@
+{
+  "document": "12",
+  "iteration": "1",
+  "node_order": [
+    "GEN-G1",
+    "CB-GEN-1",
+    "TR-UAT-1",
+    "CB-101",
+    "TR-SUT-1",
+    "DS-SUT-1",
+    "CB-102",
+    "EDG-1A",
+    "DS-EDG-1A",
+    "CB-103",
+    "BUS-4KV-A",
+    "CB-TIE-1",
+    "BUS-4KV-B",
+    "EDG-1B",
+    "DS-EDG-1B",
+    "CB-203",
+    "TR-SUT-2",
+    "DS-SUT-2",
+    "CB-202",
+    "EDG-1C",
+    "CB-303",
+    "CB-111",
+    "TR-480-A",
+    "BUS-480-A",
+    "CB-112",
+    "TR-480-C",
+    "BUS-480-C",
+    "PT-4160A",
+    "CB-211",
+    "TR-480-B",
+    "BUS-480-B",
+    "CB-212",
+    "TR-480-D",
+    "BUS-480-D",
+    "PT-4160B",
+    "CB-M1A",
+    "MCC-1A",
+    "CB-F001",
+    "FU-F001",
+    "PUMP-RHR-A1",
+    "CB-F002",
+    "MS-F002",
+    "PUMP-SI-A",
+    "CB-F003",
+    "FU-F003",
+    "FAN-CR-A",
+    "CB-F004",
+    "DS-F004",
+    "MOV-RCIC-A",
+    "CB-F005",
+    "MS-F005",
+    "PUMP-CCW-A",
+    "CB-F006",
+    "FU-F006",
+    "HTR-SUMP-A",
+    "CB-F007",
+    "MS-F007",
+    "PMP-BOR-A",
+    "CB-F008",
+    "DS-F008",
+    "VALVE-IA-A",
+    "CB-M2A",
+    "MCC-2A",
+    "CB-F009",
+    "MS-F009",
+    "PUMP-AFW-A",
+    "CB-F010",
+    "MS-F010",
+    "PMP-LUBE-A",
+    "CB-F011",
+    "DS-F011",
+    "MOV-RHR-A",
+    "CB-F012",
+    "FU-F012",
+    "FAN-BLDG-A",
+    "CB-F013",
+    "FU-F013",
+    "PNL-RAD-A",
+    "CB-F014",
+    "MS-F014",
+    "PUMP-SW-A",
+    "CB-F015",
+    "DS-F015",
+    "SPARE-A2",
+    "CB-M1B",
+    "MCC-1B",
+    "CB-F016",
+    "MS-F016",
+    "PUMP-RHR-B1",
+    "CB-F017",
+    "MS-F017",
+    "PUMP-SI-B",
+    "CB-F018",
+    "FU-F018",
+    "FAN-CR-B",
+    "CB-F019",
+    "DS-F019",
+    "MOV-RCIC-B",
+    "CB-F020",
+    "MS-F020",
+    "PUMP-CCW-B",
+    "CB-F021",
+    "FU-F021",
+    "HTR-SUMP-B",
+    "CB-F022",
+    "MS-F022",
+    "PMP-BOR-B",
+    "CB-F023",
+    "DS-F023",
+    "VALVE-IA-B",
+    "CB-M2B",
+    "MCC-2B",
+    "CB-F024",
+    "MS-F024",
+    "PUMP-AFW-B",
+    "CB-F025",
+    "MS-F025",
+    "PMP-LUBE-B",
+    "CB-F026",
+    "DS-F026",
+    "MOV-RHR-B",
+    "CB-F027",
+    "FU-F027",
+    "FAN-BLDG-B",
+    "CB-F028",
+    "FU-F028",
+    "PNL-RAD-B",
+    "CB-F029",
+    "MS-F029",
+    "PUMP-SW-B",
+    "CB-DC-1A",
+    "CHGR-125A",
+    "BAT-125A",
+    "DC-BUS-A",
+    "INV-1A",
+    "CB-DC-1B",
+    "CHGR-125B",
+    "BAT-125B",
+    "DC-BUS-B",
+    "INV-1B",
+    "ATS-INV",
+    "BUS-120VAC-ESF",
+    "PNL-RPS-A",
+    "PNL-ESFAS-A",
+    "PNL-RPS-B",
+    "PNL-ESFAS-B",
+    "SEQ-REC-1",
+    "TB-RPS-A",
+    "TB-RPS-B",
+    "ANN-480A",
+    "ANN-480B",
+    "RELAY-27A",
+    "RELAY-50A",
+    "RELAY-86A",
+    "RELAY-27B",
+    "RELAY-50B",
+    "RELAY-86B",
+    "TB-ANN-1",
+    "GND-1",
+    "GND-2"
+  ],
+  "asserted_edges": [
+    [
+      "GEN-G1",
+      "CB-GEN-1",
+      "Solid vertical source lead from generator GEN-G1 into breaker CB-GEN-1 in Safety Train A."
+    ],
+    [
+      "CB-GEN-1",
+      "TR-UAT-1",
+      "Solid vertical line continues from CB-GEN-1 to transformer TR-UAT-1."
+    ],
+    [
+      "TR-UAT-1",
+      "CB-101",
+      "Transformer TR-UAT-1 output is drawn directly down into breaker CB-101."
+    ],
+    [
+      "CB-101",
+      "BUS-4KV-A",
+      "CB-101 bottom terminal lands on the thick BUS-4KV-A conductor with a junction dot."
+    ],
+    [
+      "TR-SUT-1",
+      "DS-SUT-1",
+      "Standby transformer TR-SUT-1 has a solid vertical lead to disconnect DS-SUT-1."
+    ],
+    [
+      "DS-SUT-1",
+      "CB-102",
+      "DS-SUT-1 output continues vertically to breaker CB-102."
+    ],
+    [
+      "CB-102",
+      "BUS-4KV-A",
+      "CB-102 bottom terminal lands on BUS-4KV-A with a junction dot."
+    ],
+    [
+      "EDG-1A",
+      "DS-EDG-1A",
+      "Emergency diesel generator EDG-1A has a solid vertical lead to DS-EDG-1A."
+    ],
+    [
+      "DS-EDG-1A",
+      "CB-103",
+      "DS-EDG-1A output continues vertically to CB-103."
+    ],
+    [
+      "CB-103",
+      "BUS-4KV-A",
+      "CB-103 bottom terminal lands on BUS-4KV-A with a junction dot."
+    ],
+    [
+      "BUS-4KV-A",
+      "CB-TIE-1",
+      "The 4.16 kV A bus feeds the left terminal of tie breaker CB-TIE-1."
+    ],
+    [
+      "CB-TIE-1",
+      "BUS-4KV-B",
+      "The right terminal of CB-TIE-1 continues as BUS-4KV-B."
+    ],
+    [
+      "EDG-1B",
+      "DS-EDG-1B",
+      "EDG-1B is vertically connected to DS-EDG-1B."
+    ],
+    [
+      "DS-EDG-1B",
+      "CB-203",
+      "DS-EDG-1B output continues down to CB-203."
+    ],
+    [
+      "CB-203",
+      "BUS-4KV-B",
+      "CB-203 bottom terminal lands on BUS-4KV-B with a junction dot."
+    ],
+    [
+      "TR-SUT-2",
+      "DS-SUT-2",
+      "TR-SUT-2 is vertically connected to DS-SUT-2."
+    ],
+    [
+      "DS-SUT-2",
+      "CB-202",
+      "DS-SUT-2 output continues down to CB-202."
+    ],
+    [
+      "CB-202",
+      "BUS-4KV-B",
+      "CB-202 bottom terminal lands on BUS-4KV-B with a junction dot."
+    ],
+    [
+      "EDG-1C",
+      "CB-303",
+      "EDG-1C has a direct vertical lead down to CB-303."
+    ],
+    [
+      "CB-303",
+      "BUS-4KV-B",
+      "CB-303 bottom terminal lands on BUS-4KV-B with a junction dot."
+    ],
+    [
+      "BUS-4KV-A",
+      "CB-111",
+      "CB-111 is tapped from the underside of BUS-4KV-A."
+    ],
+    [
+      "CB-111",
+      "TR-480-A",
+      "CB-111 feeds transformer TR-480-A directly below."
+    ],
+    [
+      "TR-480-A",
+      "BUS-480-A",
+      "TR-480-A secondary drops vertically to BUS-480-A."
+    ],
+    [
+      "BUS-4KV-A",
+      "CB-112",
+      "CB-112 is tapped from BUS-4KV-A at the TR-480-C feeder."
+    ],
+    [
+      "CB-112",
+      "TR-480-C",
+      "CB-112 feeds transformer TR-480-C directly below."
+    ],
+    [
+      "TR-480-C",
+      "BUS-480-C",
+      "TR-480-C secondary drops vertically to BUS-480-C."
+    ],
+    [
+      "BUS-4KV-A",
+      "PT-4160A",
+      "Dotted potential-transformer tap is drawn directly from BUS-4KV-A down to PT-4160A; treated as direct instrument/protection adjacency, not a solid feeder."
+    ],
+    [
+      "BUS-4KV-B",
+      "CB-211",
+      "CB-211 is tapped from BUS-4KV-B at the TR-480-B feeder."
+    ],
+    [
+      "CB-211",
+      "TR-480-B",
+      "CB-211 feeds transformer TR-480-B directly below."
+    ],
+    [
+      "TR-480-B",
+      "BUS-480-B",
+      "TR-480-B secondary drops vertically to BUS-480-B."
+    ],
+    [
+      "BUS-4KV-B",
+      "CB-212",
+      "CB-212 is tapped from BUS-4KV-B at the TR-480-D feeder."
+    ],
+    [
+      "CB-212",
+      "TR-480-D",
+      "CB-212 feeds transformer TR-480-D directly below."
+    ],
+    [
+      "TR-480-D",
+      "BUS-480-D",
+      "TR-480-D secondary drops vertically to BUS-480-D."
+    ],
+    [
+      "BUS-4KV-B",
+      "PT-4160B",
+      "Dotted potential-transformer tap is drawn directly from BUS-4KV-B down to PT-4160B; treated as direct instrument/protection adjacency, not a solid feeder."
+    ],
+    [
+      "BUS-480-A",
+      "CB-M1A",
+      "BUS-480-A vertical feeder passes through CB-M1A."
+    ],
+    [
+      "CB-M1A",
+      "MCC-1A",
+      "CB-M1A bottom terminal lands on the MCC-1A bus."
+    ],
+    [
+      "BUS-480-C",
+      "CB-M2A",
+      "BUS-480-C feeder passes through CB-M2A."
+    ],
+    [
+      "CB-M2A",
+      "MCC-2A",
+      "CB-M2A output doglegs down to the MCC-2A bus."
+    ],
+    [
+      "BUS-480-B",
+      "CB-M1B",
+      "BUS-480-B feeder passes through CB-M1B."
+    ],
+    [
+      "CB-M1B",
+      "MCC-1B",
+      "CB-M1B bottom terminal lands on the MCC-1B bus."
+    ],
+    [
+      "BUS-480-D",
+      "CB-M2B",
+      "BUS-480-D feeder passes through CB-M2B."
+    ],
+    [
+      "CB-M2B",
+      "MCC-2B",
+      "CB-M2B output doglegs down to the MCC-2B bus."
+    ],
+    [
+      "MCC-1A",
+      "CB-F001",
+      "CB-F001 is a vertical feeder tap from MCC-1A."
+    ],
+    [
+      "CB-F001",
+      "FU-F001",
+      "CB-F001 output continues directly to FU-F001."
+    ],
+    [
+      "FU-F001",
+      "PUMP-RHR-A1",
+      "FU-F001 output continues directly to load PUMP-RHR-A1."
+    ],
+    [
+      "MCC-1A",
+      "CB-F002",
+      "CB-F002 is a vertical feeder tap from MCC-1A."
+    ],
+    [
+      "CB-F002",
+      "MS-F002",
+      "CB-F002 output continues directly to MS-F002."
+    ],
+    [
+      "MS-F002",
+      "PUMP-SI-A",
+      "MS-F002 output continues directly to load PUMP-SI-A."
+    ],
+    [
+      "MCC-1A",
+      "CB-F003",
+      "CB-F003 is a vertical feeder tap from MCC-1A."
+    ],
+    [
+      "CB-F003",
+      "FU-F003",
+      "CB-F003 output continues directly to FU-F003."
+    ],
+    [
+      "FU-F003",
+      "FAN-CR-A",
+      "FU-F003 output continues directly to load FAN-CR-A."
+    ],
+    [
+      "MCC-1A",
+      "CB-F004",
+      "CB-F004 is a vertical feeder tap from MCC-1A."
+    ],
+    [
+      "CB-F004",
+      "DS-F004",
+      "CB-F004 output continues directly to DS-F004."
+    ],
+    [
+      "DS-F004",
+      "MOV-RCIC-A",
+      "DS-F004 output continues directly to load MOV-RCIC-A."
+    ],
+    [
+      "MCC-1A",
+      "CB-F005",
+      "CB-F005 is a vertical feeder tap from MCC-1A."
+    ],
+    [
+      "CB-F005",
+      "MS-F005",
+      "CB-F005 output continues directly to MS-F005."
+    ],
+    [
+      "MS-F005",
+      "PUMP-CCW-A",
+      "MS-F005 output continues directly to load PUMP-CCW-A."
+    ],
+    [
+      "MCC-1A",
+      "CB-F006",
+      "CB-F006 is a vertical feeder tap from MCC-1A."
+    ],
+    [
+      "CB-F006",
+      "FU-F006",
+      "CB-F006 output continues directly to FU-F006."
+    ],
+    [
+      "FU-F006",
+      "HTR-SUMP-A",
+      "FU-F006 output continues directly to load HTR-SUMP-A."
+    ],
+    [
+      "MCC-1A",
+      "CB-F007",
+      "CB-F007 is a vertical feeder tap from MCC-1A."
+    ],
+    [
+      "CB-F007",
+      "MS-F007",
+      "CB-F007 output continues directly to MS-F007."
+    ],
+    [
+      "MS-F007",
+      "PMP-BOR-A",
+      "MS-F007 output continues directly to load PMP-BOR-A."
+    ],
+    [
+      "MCC-1A",
+      "CB-F008",
+      "CB-F008 is a vertical feeder tap from MCC-1A."
+    ],
+    [
+      "CB-F008",
+      "DS-F008",
+      "CB-F008 output continues directly to DS-F008."
+    ],
+    [
+      "DS-F008",
+      "VALVE-IA-A",
+      "DS-F008 output continues directly to load VALVE-IA-A."
+    ],
+    [
+      "MCC-2A",
+      "CB-F009",
+      "CB-F009 is a vertical feeder tap from MCC-2A."
+    ],
+    [
+      "CB-F009",
+      "MS-F009",
+      "CB-F009 output continues directly to MS-F009."
+    ],
+    [
+      "MS-F009",
+      "PUMP-AFW-A",
+      "MS-F009 output continues directly to load PUMP-AFW-A."
+    ],
+    [
+      "MCC-2A",
+      "CB-F010",
+      "CB-F010 is a vertical feeder tap from MCC-2A."
+    ],
+    [
+      "CB-F010",
+      "MS-F010",
+      "CB-F010 output continues directly to MS-F010."
+    ],
+    [
+      "MS-F010",
+      "PMP-LUBE-A",
+      "MS-F010 output continues directly to load PMP-LUBE-A."
+    ],
+    [
+      "MCC-2A",
+      "CB-F011",
+      "CB-F011 is a vertical feeder tap from MCC-2A."
+    ],
+    [
+      "CB-F011",
+      "DS-F011",
+      "CB-F011 output continues directly to DS-F011."
+    ],
+    [
+      "DS-F011",
+      "MOV-RHR-A",
+      "DS-F011 output continues directly to load MOV-RHR-A."
+    ],
+    [
+      "MCC-2A",
+      "CB-F012",
+      "CB-F012 is a vertical feeder tap from MCC-2A."
+    ],
+    [
+      "CB-F012",
+      "FU-F012",
+      "CB-F012 output continues directly to FU-F012."
+    ],
+    [
+      "FU-F012",
+      "FAN-BLDG-A",
+      "FU-F012 output continues directly to load FAN-BLDG-A."
+    ],
+    [
+      "MCC-2A",
+      "CB-F013",
+      "CB-F013 is a vertical feeder tap from MCC-2A."
+    ],
+    [
+      "CB-F013",
+      "FU-F013",
+      "CB-F013 output continues directly to FU-F013."
+    ],
+    [
+      "FU-F013",
+      "PNL-RAD-A",
+      "FU-F013 output continues directly to load PNL-RAD-A."
+    ],
+    [
+      "MCC-2A",
+      "CB-F014",
+      "CB-F014 is a vertical feeder tap from MCC-2A."
+    ],
+    [
+      "CB-F014",
+      "MS-F014",
+      "CB-F014 output continues directly to MS-F014."
+    ],
+    [
+      "MS-F014",
+      "PUMP-SW-A",
+      "MS-F014 output continues directly to load PUMP-SW-A."
+    ],
+    [
+      "MCC-2A",
+      "CB-F015",
+      "CB-F015 is a vertical feeder tap from MCC-2A."
+    ],
+    [
+      "CB-F015",
+      "DS-F015",
+      "CB-F015 output continues directly to DS-F015."
+    ],
+    [
+      "DS-F015",
+      "SPARE-A2",
+      "DS-F015 output continues directly to load SPARE-A2."
+    ],
+    [
+      "MCC-1B",
+      "CB-F016",
+      "CB-F016 is a vertical feeder tap from MCC-1B."
+    ],
+    [
+      "CB-F016",
+      "MS-F016",
+      "CB-F016 output continues directly to MS-F016."
+    ],
+    [
+      "MS-F016",
+      "PUMP-RHR-B1",
+      "MS-F016 output continues directly to load PUMP-RHR-B1."
+    ],
+    [
+      "MCC-1B",
+      "CB-F017",
+      "CB-F017 is a vertical feeder tap from MCC-1B."
+    ],
+    [
+      "CB-F017",
+      "MS-F017",
+      "CB-F017 output continues directly to MS-F017."
+    ],
+    [
+      "MS-F017",
+      "PUMP-SI-B",
+      "MS-F017 output continues directly to load PUMP-SI-B."
+    ],
+    [
+      "MCC-1B",
+      "CB-F018",
+      "CB-F018 is a vertical feeder tap from MCC-1B."
+    ],
+    [
+      "CB-F018",
+      "FU-F018",
+      "CB-F018 output continues directly to FU-F018."
+    ],
+    [
+      "FU-F018",
+      "FAN-CR-B",
+      "FU-F018 output continues directly to load FAN-CR-B."
+    ],
+    [
+      "MCC-1B",
+      "CB-F019",
+      "CB-F019 is a vertical feeder tap from MCC-1B."
+    ],
+    [
+      "CB-F019",
+      "DS-F019",
+      "CB-F019 output continues directly to DS-F019."
+    ],
+    [
+      "DS-F019",
+      "MOV-RCIC-B",
+      "DS-F019 output continues directly to load MOV-RCIC-B."
+    ],
+    [
+      "MCC-1B",
+      "CB-F020",
+      "CB-F020 is a vertical feeder tap from MCC-1B."
+    ],
+    [
+      "CB-F020",
+      "MS-F020",
+      "CB-F020 output continues directly to MS-F020."
+    ],
+    [
+      "MS-F020",
+      "PUMP-CCW-B",
+      "MS-F020 output continues directly to load PUMP-CCW-B."
+    ],
+    [
+      "MCC-1B",
+      "CB-F021",
+      "CB-F021 is a vertical feeder tap from MCC-1B."
+    ],
+    [
+      "CB-F021",
+      "FU-F021",
+      "CB-F021 output continues directly to FU-F021."
+    ],
+    [
+      "FU-F021",
+      "HTR-SUMP-B",
+      "FU-F021 output continues directly to load HTR-SUMP-B."
+    ],
+    [
+      "MCC-1B",
+      "CB-F022",
+      "CB-F022 is a vertical feeder tap from MCC-1B."
+    ],
+    [
+      "CB-F022",
+      "MS-F022",
+      "CB-F022 output continues directly to MS-F022."
+    ],
+    [
+      "MS-F022",
+      "PMP-BOR-B",
+      "MS-F022 output continues directly to load PMP-BOR-B."
+    ],
+    [
+      "MCC-1B",
+      "CB-F023",
+      "CB-F023 is a vertical feeder tap from MCC-1B."
+    ],
+    [
+      "CB-F023",
+      "DS-F023",
+      "CB-F023 output continues directly to DS-F023."
+    ],
+    [
+      "DS-F023",
+      "VALVE-IA-B",
+      "DS-F023 output continues directly to load VALVE-IA-B."
+    ],
+    [
+      "MCC-2B",
+      "CB-F024",
+      "CB-F024 is a vertical feeder tap from MCC-2B."
+    ],
+    [
+      "CB-F024",
+      "MS-F024",
+      "CB-F024 output continues directly to MS-F024."
+    ],
+    [
+      "MS-F024",
+      "PUMP-AFW-B",
+      "MS-F024 output continues directly to load PUMP-AFW-B."
+    ],
+    [
+      "MCC-2B",
+      "CB-F025",
+      "CB-F025 is a vertical feeder tap from MCC-2B."
+    ],
+    [
+      "CB-F025",
+      "MS-F025",
+      "CB-F025 output continues directly to MS-F025."
+    ],
+    [
+      "MS-F025",
+      "PMP-LUBE-B",
+      "MS-F025 output continues directly to load PMP-LUBE-B."
+    ],
+    [
+      "MCC-2B",
+      "CB-F026",
+      "CB-F026 is a vertical feeder tap from MCC-2B."
+    ],
+    [
+      "CB-F026",
+      "DS-F026",
+      "CB-F026 output continues directly to DS-F026."
+    ],
+    [
+      "DS-F026",
+      "MOV-RHR-B",
+      "DS-F026 output continues directly to load MOV-RHR-B."
+    ],
+    [
+      "MCC-2B",
+      "CB-F027",
+      "CB-F027 is a vertical feeder tap from MCC-2B."
+    ],
+    [
+      "CB-F027",
+      "FU-F027",
+      "CB-F027 output continues directly to FU-F027."
+    ],
+    [
+      "FU-F027",
+      "FAN-BLDG-B",
+      "FU-F027 output continues directly to load FAN-BLDG-B."
+    ],
+    [
+      "MCC-2B",
+      "CB-F028",
+      "CB-F028 is a vertical feeder tap from MCC-2B."
+    ],
+    [
+      "CB-F028",
+      "FU-F028",
+      "CB-F028 output continues directly to FU-F028."
+    ],
+    [
+      "FU-F028",
+      "PNL-RAD-B",
+      "FU-F028 output continues directly to load PNL-RAD-B."
+    ],
+    [
+      "MCC-2B",
+      "CB-F029",
+      "CB-F029 is a vertical feeder tap from MCC-2B."
+    ],
+    [
+      "CB-F029",
+      "MS-F029",
+      "CB-F029 output continues directly to MS-F029."
+    ],
+    [
+      "MS-F029",
+      "PUMP-SW-B",
+      "MS-F029 output continues directly to load PUMP-SW-B."
+    ],
+    [
+      "MCC-2A",
+      "CB-DC-1A",
+      "Solid right-end riser from MCC-2A continues directly down to CB-DC-1A for charger A; no DC-bus shortcut is inferred."
+    ],
+    [
+      "CB-DC-1A",
+      "CHGR-125A",
+      "CB-DC-1A feeds CHGR-125A directly below."
+    ],
+    [
+      "CHGR-125A",
+      "DC-BUS-A",
+      "CHGR-125A lower DC lead lands on DC-BUS-A with a junction dot."
+    ],
+    [
+      "BAT-125A",
+      "DC-BUS-A",
+      "BAT-125A vertical lead lands on DC-BUS-A."
+    ],
+    [
+      "DC-BUS-A",
+      "INV-1A",
+      "INV-1A DC input lands directly on DC-BUS-A at the bus tap/junction; the separate AC output continues toward ATS-INV."
+    ],
+    [
+      "INV-1A",
+      "ATS-INV",
+      "INV-1A AC output doglegs directly down/right into ATS-INV."
+    ],
+    [
+      "MCC-2B",
+      "CB-DC-1B",
+      "Solid riser from MCC-2B continues directly down to CB-DC-1B for charger B; no DC-bus shortcut is inferred."
+    ],
+    [
+      "CB-DC-1B",
+      "CHGR-125B",
+      "CB-DC-1B feeds CHGR-125B directly below."
+    ],
+    [
+      "CHGR-125B",
+      "DC-BUS-B",
+      "CHGR-125B lower DC lead lands on DC-BUS-B with a junction dot."
+    ],
+    [
+      "BAT-125B",
+      "DC-BUS-B",
+      "BAT-125B vertical lead lands on DC-BUS-B."
+    ],
+    [
+      "DC-BUS-B",
+      "INV-1B",
+      "INV-1B DC input lands directly on DC-BUS-B at the bus tap/junction; the separate AC output continues toward ATS-INV."
+    ],
+    [
+      "INV-1B",
+      "ATS-INV",
+      "INV-1B AC output doglegs directly down/left into ATS-INV."
+    ],
+    [
+      "ATS-INV",
+      "BUS-120VAC-ESF",
+      "ATS-INV static output drops vertically to a junction on BUS-120VAC-ESF."
+    ],
+    [
+      "BUS-120VAC-ESF",
+      "PNL-RPS-A",
+      "Solid vertical 120 VAC ESF bus tap feeds the top of PNL-RPS-A."
+    ],
+    [
+      "BUS-120VAC-ESF",
+      "PNL-ESFAS-A",
+      "Solid vertical 120 VAC ESF bus tap feeds the top of PNL-ESFAS-A."
+    ],
+    [
+      "BUS-120VAC-ESF",
+      "PNL-RPS-B",
+      "Solid vertical 120 VAC ESF bus tap feeds the top of PNL-RPS-B."
+    ],
+    [
+      "BUS-120VAC-ESF",
+      "PNL-ESFAS-B",
+      "Solid vertical 120 VAC ESF bus tap feeds the top of PNL-ESFAS-B."
+    ],
+    [
+      "PNL-RPS-A",
+      "GND-1",
+      "PNL-RPS-A bottom lead runs as a solid line directly to the GND-1 / EG-1 ground symbol."
+    ],
+    [
+      "PNL-RPS-B",
+      "GND-2",
+      "PNL-RPS-B bottom lead runs as a solid line directly to the GND-2 / EG-2 ground symbol."
+    ],
+    [
+      "ANN-480A",
+      "RELAY-27A",
+      "Dashed annunciation/control line from ANN-480A lands on RELAY-27A without another named endpoint in between."
+    ],
+    [
+      "ANN-480B",
+      "RELAY-27B",
+      "Dashed annunciation/control line from ANN-480B lands on RELAY-27B without another named endpoint in between."
+    ],
+    [
+      "ANN-480A",
+      "TB-ANN-1",
+      "Dotted annunciation lead drops from ANN-480A and runs directly into terminal block TB-ANN-1."
+    ],
+    [
+      "RELAY-50A",
+      "RELAY-86A",
+      "Dashed A-side OC/lockout control path visibly runs from RELAY-50A to RELAY-86A."
+    ],
+    [
+      "RELAY-50B",
+      "RELAY-86B",
+      "Dashed B-side OC/lockout control path visibly runs from RELAY-50B to RELAY-86B."
+    ],
+    [
+      "RELAY-27A",
+      "TB-RPS-A",
+      "Dashed UV relay output is routed into terminal block TB-RPS-A."
+    ],
+    [
+      "RELAY-86A",
+      "TB-RPS-A",
+      "Multiple dashed lockout relay leads are routed into TB-RPS-A."
+    ],
+    [
+      "TB-RPS-A",
+      "PNL-RPS-A",
+      "Multiple dashed/terminal leads from TB-RPS-A descend directly into PNL-RPS-A."
+    ],
+    [
+      "PNL-RPS-A",
+      "PNL-ESFAS-A",
+      "Dashed RPS A logic path leaves PNL-RPS-A and routes directly to PNL-ESFAS-A in the bottom logic crop."
+    ],
+    [
+      "PNL-ESFAS-A",
+      "SEQ-REC-1",
+      "Dotted signal line from PNL-ESFAS-A routes directly to SEQ-REC-1."
+    ],
+    [
+      "RELAY-27B",
+      "TB-RPS-B",
+      "Dashed UV relay output is routed into terminal block TB-RPS-B."
+    ],
+    [
+      "RELAY-86B",
+      "TB-RPS-B",
+      "Multiple dashed lockout relay leads are routed into TB-RPS-B."
+    ],
+    [
+      "TB-RPS-B",
+      "PNL-RPS-B",
+      "Multiple dashed/terminal leads from TB-RPS-B descend directly into PNL-RPS-B."
+    ],
+    [
+      "PNL-RPS-B",
+      "PNL-ESFAS-B",
+      "Dashed RPS B logic path leaves PNL-RPS-B and routes directly to PNL-ESFAS-B in the bottom logic crop."
+    ],
+    [
+      "PNL-ESFAS-B",
+      "SEQ-REC-1",
+      "Dotted signal line from PNL-ESFAS-B routes directly to SEQ-REC-1."
+    ]
+  ],
+  "uncertain_edges": [
+    [
+      "PT-4160A",
+      "RELAY-27A",
+      "A dotted/signal route from PT-4160A area descends toward the A-side UV relay/logic group.",
+      "Long route is partly outside the tight crop and mingles with other dashed control paths."
+    ],
+    [
+      "PT-4160B",
+      "RELAY-27B",
+      "A dotted/signal route from PT-4160B area descends toward the B-side UV relay/logic group.",
+      "Long route is partly outside the tight crop and mingles with other dashed control paths."
+    ],
+    [
+      "PT-4160A",
+      "ANN-480A",
+      "Dotted annunciation path appears to share the A-side PT/UV signal route near ANN-480A.",
+      "Could be an annunciation branch from relay outputs rather than a direct PT-to-annunciator connection."
+    ],
+    [
+      "PT-4160B",
+      "ANN-480B",
+      "Dotted annunciation path appears to share the B-side PT/UV signal route near ANN-480B.",
+      "Could be an annunciation branch from relay outputs rather than a direct PT-to-annunciator connection."
+    ],
+    [
+      "BUS-120VAC-ESF",
+      "SEQ-REC-1",
+      "SEQ-REC-1 sits immediately below BUS-120VAC-ESF with dotted signal/power routing around it.",
+      "The visible connection is dotted signal routing, not a clear solid bus tap."
+    ],
+    [
+      "RELAY-27A",
+      "RELAY-86A",
+      "A-side dashed logic from RELAY-27A bends into the same terminal cluster used by RELAY-86A.",
+      "The terminal block may mediate the connection; direct relay-to-relay adjacency is not visually separable."
+    ],
+    [
+      "RELAY-27B",
+      "RELAY-86B",
+      "B-side dashed logic from RELAY-27B bends into the same terminal cluster used by RELAY-86B.",
+      "The terminal block may mediate the connection; direct relay-to-relay adjacency is not visually separable."
+    ],
+    [
+      "RELAY-50A",
+      "TB-RPS-A",
+      "A-side OC relay dashed lead appears to route upward/right toward the TB-RPS-A cluster.",
+      "Path is partly obscured by crossings and may first pass through RELAY-86A."
+    ],
+    [
+      "RELAY-50B",
+      "TB-RPS-B",
+      "B-side OC relay dashed lead appears to route upward/left toward the TB-RPS-B cluster.",
+      "Path is partly obscured by crossings and may first pass through RELAY-86B."
+    ],
+    [
+      "TB-ANN-1",
+      "RELAY-50A",
+      "Dashed/dotted annunciation path from TB-ANN-1 runs near the RELAY-50A lower route.",
+      "Shared annunciation bus makes direct endpoint ambiguous."
+    ],
+    [
+      "TB-ANN-1",
+      "RELAY-86A",
+      "Dashed/dotted annunciation path from TB-ANN-1 runs near the RELAY-86A lower route.",
+      "Shared annunciation bus makes direct endpoint ambiguous."
+    ],
+    [
+      "ANN-480A",
+      "RELAY-50A",
+      "ANN-480A has a dashed line extending into the lower A-side relay network.",
+      "It is unclear whether the line lands on RELAY-50A or on shared annunciation/control wiring."
+    ],
+    [
+      "ANN-480B",
+      "RELAY-50B",
+      "ANN-480B has a dashed line extending into the lower B-side relay network.",
+      "It is unclear whether the line lands on RELAY-50B or on shared annunciation/control wiring."
+    ],
+    [
+      "ANN-480A",
+      "RELAY-86A",
+      "A dashed route from the annunciation area approaches the RELAY-86A/terminal cluster.",
+      "Multiple lines overlap near TB-RPS-A, so this may be indirect."
+    ],
+    [
+      "ANN-480B",
+      "RELAY-86B",
+      "A dashed route from the annunciation area approaches the RELAY-86B/terminal cluster.",
+      "Multiple lines overlap near TB-RPS-B, so this may be indirect."
+    ],
+    [
+      "TB-RPS-A",
+      "PNL-ESFAS-A",
+      "Dashed A-side terminal-block route drops and bends toward the ESFAS A panel.",
+      "Could connect through PNL-RPS-A before reaching ESFAS A."
+    ],
+    [
+      "TB-RPS-B",
+      "PNL-ESFAS-B",
+      "Dashed B-side terminal-block route drops and bends toward the ESFAS B panel.",
+      "Could connect through PNL-RPS-B before reaching ESFAS B."
+    ],
+    [
+      "CB-101",
+      "CB-102",
+      "A dash-dot interlock line runs across the A-side top source breaker row.",
+      "This is likely a shared interlock/control bus, not a proven direct pairwise connection."
+    ],
+    [
+      "CB-102",
+      "CB-103",
+      "The same dash-dot interlock line continues across CB-102 and CB-103.",
+      "Shared interlock/control bus prevents direct pairwise certainty."
+    ],
+    [
+      "CB-103",
+      "CB-TIE-1",
+      "Dash-dot interlock routing continues from the A source breaker group toward CB-TIE-1.",
+      "The route detours around the tie breaker and may represent a control manifold."
+    ],
+    [
+      "CB-TIE-1",
+      "CB-203",
+      "Dash-dot interlock routing continues across the tie region into the B source breaker group.",
+      "The direct endpoint through the tie interlock is not certain."
+    ],
+    [
+      "CB-203",
+      "CB-202",
+      "A dash-dot interlock line runs across the B-side source breaker row.",
+      "Shared interlock/control bus prevents direct pairwise certainty."
+    ],
+    [
+      "CB-202",
+      "CB-303",
+      "The B-side dash-dot interlock line continues from CB-202 toward CB-303.",
+      "Shared interlock/control bus prevents direct pairwise certainty."
+    ],
+    [
+      "CB-111",
+      "CB-112",
+      "Dash-dot control/interlock path spans the A-side 480 V transformer feeder breaker area.",
+      "The path appears to be a control route, not a distinct direct wire between feeder breakers."
+    ],
+    [
+      "CB-211",
+      "CB-212",
+      "Dash-dot control/interlock path spans the B-side 480 V transformer feeder breaker area.",
+      "The path appears to be a control route, not a distinct direct wire between feeder breakers."
+    ]
+  ],
+  "removed_edges": [],
+  "rejected_non_edges": [
+    "Loads on the same MCC bus are not connected pairwise; each load is connected only through its own feeder breaker and series device to the named MCC bus.",
+    "BUS-4KV-A source breakers CB-101/CB-102/CB-103 are not made mutually adjacent through the bus; each connects to BUS-4KV-A.",
+    "BUS-4KV-B source breakers CB-203/CB-202/CB-303 are not made mutually adjacent through the bus; each connects to BUS-4KV-B.",
+    "BUS-480-C is not connected directly to MCC-2A in the matrix; the modeled path is through CB-M2A despite a visually close dogleg/riser.",
+    "BUS-480-D is not connected directly to MCC-2B in the matrix; the modeled path is through CB-M2B despite a visually close dogleg/riser.",
+    "MCC-1A and MCC-2A are not connected to each other; nearby vertical conductors are feeder/dogleg routes, not an MCC tie.",
+    "MCC-1B and MCC-2B are not connected to each other; nearby vertical conductors and load drops are not a bus tie.",
+    "DC-BUS-A and DC-BUS-B are not directly tied; each feeds its own inverter, and ATS-INV handles the downstream AC transfer path.",
+    "DC-BUS-A is not connected directly to ATS-INV; the path goes through INV-1A.",
+    "DC-BUS-B is not connected directly to ATS-INV; the path goes through INV-1B.",
+    "PNL-ESFAS-A and PNL-ESFAS-B are not directly connected to each other; both are separately associated with BUS-120VAC-ESF/SEQ-REC-1.",
+    "Terminal-block fan-out pins are not expanded into anonymous junction nodes."
+  ],
+  "label_corrections": [],
+  "agreement_status": {
+    "status": "final_saturated_consensus",
+    "confirmed_by": "Jennifer",
+    "agrees_with_diego_round2": true,
+    "final_corrections_required": false,
+    "summary": "Final confirmation found no node changes, label corrections, asserted-edge changes, uncertain-edge changes, or removals. Saturation/final consensus confirmed.",
+    "matrix_policy": "Final CSV contains refined asserted_edges only; uncertain_edges are excluded."
+  },
+  "matrix_policy": "Final matrix contains asserted_edges only; uncertain_edges are excluded."
+}

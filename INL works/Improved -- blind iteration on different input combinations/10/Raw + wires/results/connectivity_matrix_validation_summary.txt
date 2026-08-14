@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 10
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\10\connectivity_matrix_layout_labels_clear.csv
+GT normalized nodes: 120; GT normalized edges: 134
+Matrices evaluated: 4
+Best row: Jennifer -- Round 2 from connectivity_matrix_round_02_jennifer.csv with Precision=0.827586, Recall=0.716418, F1=0.768000
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=96, FP=20, FN=38, Precision=0.827586, Recall=0.716418, F1=0.768000
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+Extra/non-GT nodes most responsible for FP edges: 480V LC FEEDERS-B (4 FP edges); 480V LC FEEDERS-A (4 FP edges).
+Missing GT nodes examples: CT-CAB-A; CT-CAB-B.
+No strong close-name mismatches were detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: CB-A09 -- FUSE-A01; CB-B09 -- FUSE-B01; CT-4160-A -- FUSE-A01; CT-4160-B -- FUSE-B01; DS-A01 -- FUSE-A02; DS-A02 -- FUSE-A02; DS-B01 -- FUSE-B02; DS-B02 -- FUSE-B02.
+False-negative edge examples among GT-known nodes: BCHG-1A -- BUS-DC-A; BCHG-1B -- BUS-DC-B; BUS-4160-A -- CT-4160-A; BUS-4160-B -- CT-4160-B; BUS-DC-A -- GND-A; BUS-DC-A -- RLY-86A; BUS-DC-B -- GND-B; BUS-DC-B -- RLY-86B.
+False-positive examples involving extra/non-GT nodes: 480V LC FEEDERS-A -- CB-A08; 480V LC FEEDERS-A -- FAN-CR-A; 480V LC FEEDERS-A -- LC-101A; 480V LC FEEDERS-A -- LC-102A; 480V LC FEEDERS-B -- CB-B08; 480V LC FEEDERS-B -- FAN-CR-B; 480V LC FEEDERS-B -- LC-101B; 480V LC FEEDERS-B -- LC-102B.
+False-negative examples involving missing/differently named nodes: CT-CAB-A -- JB-CONTROL; CT-CAB-A -- TB-LV-A; CT-CAB-A -- TB-SWGR-A; CT-CAB-B -- JB-CONTROL; CT-CAB-B -- TB-LV-B; CT-CAB-B -- TB-SWGR-B.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (480V LC FEEDERS-B; 480V LC FEEDERS-A), the final-row metrics would be TP=96, FP=12, FN=38, Precision=0.888889, Recall=0.716418, F1=0.793388.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=96, FP=12, FN=38, Precision=0.888889, Recall=0.716418, F1=0.793388.

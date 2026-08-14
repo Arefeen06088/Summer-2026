@@ -1,0 +1,18 @@
+Connectivity matrix validation summary
+Document: 8
+Input configuration: Raw + components
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\8\connectivity_matrix_improved_local_refined_v3.csv
+GT normalized nodes: 120; GT normalized edges: 140
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from jennifer_round1_connectivity_matrix.csv with Precision=0.944882, Recall=0.857143, F1=0.898876
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=120, FP=7, FN=20, Precision=0.944882, Recall=0.857143, F1=0.898876
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+No extra/non-GT extracted nodes were attached to false-positive edges in the final edge set.
+Missing GT nodes examples: none.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: BUS-480-N2A -- DS-480-A; BUS-480-N2B -- DS-480-B; CB-N1 -- CHGR-125A; CB-N2 -- CHGR-125B; JB-2A1 -- RELAY-K1A; JB-2B1 -- RELAY-K1B; MCC-2C -- VLV-HV-302A.
+False-negative edge examples among GT-known nodes: BUS-4160-S2B -- CB-EDG-C; BUS-480-E2A -- CHGR-125A; BUS-480-E2A -- DS-480-A; BUS-480-E2B -- CHGR-125B; BUS-480-E2B -- DS-480-B; BUS-480-N2A -- PN-480-A; BUS-480-N2B -- PN-480-B; CB-401A -- RELAY-86A.
+
+What-if node pruning insight: no non-GT intermediate nodes were available to prune; the remaining drop is mainly connectivity/edge discovery or missing direct GT edges.

@@ -1,0 +1,96 @@
+document,iteration,artifact,modality,tokens_est,method
+12,1,component_visual_ocr_labels.csv,text,14281,ceil(characters/4)
+12,1,wire_nodes.csv,text,4191,ceil(characters/4)
+12,1,results\final_connectivity_edges.csv,text,3692,ceil(characters/4)
+12,1,results\final_connectivity_matrix.csv,text,13501,ceil(characters/4)
+12,1,results\node_addition_correction_decisions.csv,text,1215,ceil(characters/4)
+12,1,results\node_additions_corrections.csv,text,1603,ceil(characters/4)
+12,1,results\nodes.csv,text,11687,ceil(characters/4)
+12,1,results\proposed_edges.csv,text,5767,ceil(characters/4)
+12,1,results\rejected_or_uncertain_edges.csv,text,2791,ceil(characters/4)
+12,1,results\round3_saturated_edges.csv,text,4269,ceil(characters/4)
+12,1,results\round3_saturated_node_additions_corrections.csv,text,1325,ceil(characters/4)
+12,1,results\round_01_diego_high_recall_edges.csv,text,5768,ceil(characters/4)
+12,1,results\round_01_diego_high_recall_matrix.csv,text,14891,ceil(characters/4)
+12,1,results\round_01_diego_high_recall_nodes.csv,text,11969,ceil(characters/4)
+12,1,results\round_02_jennifer_precision_edges.csv,text,3692,ceil(characters/4)
+12,1,results\round_02_jennifer_precision_matrix.csv,text,13501,ceil(characters/4)
+12,1,results\round_03_diego_saturation_edges.csv,text,3692,ceil(characters/4)
+12,1,results\round_03_diego_saturation_matrix.csv,text,13501,ceil(characters/4)
+12,1,results\round_04_jennifer_final_edges.csv,text,3692,ceil(characters/4)
+12,1,results\round_04_jennifer_final_matrix.csv,text,13501,ceil(characters/4)
+12,1,results\round_summaries.csv,text,192,ceil(characters/4)
+12,1,results\round3_saturation_notes.md,text,371,ceil(characters/4)
+12,1,results\uncertain_rejected_notes.md,text,758,ceil(characters/4)
+12,1,results\final_proposed_counts.txt,text,151,ceil(characters/4)
+12,1,results\round3_saturated_counts.txt,text,214,ceil(characters/4)
+12,1,codes\generate_connectivity_artifacts.py,text,5572,ceil(characters/4)
+12,1,codes\prepare_evidence_crops.py,text,572,ceil(characters/4)
+12,1,component_labels_banners_overlay.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,raw -- synthetic_npp_electrical_schematic_rps_rerouted.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,wire_nodes_overlay.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,wires_mask.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,wires_mask_overlay.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\contrast_crop_raw_bottom_rps_full.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\contrast_crop_raw_bottom_rps_left.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\contrast_crop_raw_bottom_rps_right.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\contrast_crop_raw_dc_inverter_center.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\contrast_crop_raw_left_4160_480_detail.png,image,595,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\contrast_crop_raw_left_mcc1_loads.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\contrast_crop_raw_left_mcc2_loads.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\contrast_crop_raw_right_4160_480_detail.png,image,595,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\contrast_crop_raw_right_mcc1_loads.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\contrast_crop_raw_right_mcc2_loads.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\contrast_crop_raw_top_power_sources_bus.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_labels_bottom_rps_center.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_labels_bottom_rps_full.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_labels_bottom_rps_left.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_labels_bottom_rps_right.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_labels_dc_inverter_center.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_labels_left_4160_480_detail.png,image,595,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_labels_left_mcc1_loads.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_labels_left_mcc2_loads.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_labels_notes_legend_title.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_labels_right_4160_480_detail.png,image,595,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_labels_right_mcc1_loads.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_labels_right_mcc2_loads.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_labels_top_power_sources_bus.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_mask_overlay_bottom_rps_center.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_mask_overlay_bottom_rps_full.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_mask_overlay_bottom_rps_left.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_mask_overlay_bottom_rps_right.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_mask_overlay_dc_inverter_center.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_mask_overlay_left_4160_480_detail.png,image,595,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_mask_overlay_left_mcc1_loads.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_mask_overlay_left_mcc2_loads.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_mask_overlay_notes_legend_title.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_mask_overlay_right_4160_480_detail.png,image,595,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_mask_overlay_right_mcc1_loads.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_mask_overlay_right_mcc2_loads.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_mask_overlay_top_power_sources_bus.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_raw_bottom_rps_center.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_raw_bottom_rps_full.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_raw_bottom_rps_left.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_raw_bottom_rps_right.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_raw_dc_inverter_center.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_raw_left_4160_480_detail.png,image,595,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_raw_left_mcc1_loads.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_raw_left_mcc2_loads.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_raw_notes_legend_title.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_raw_right_4160_480_detail.png,image,595,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_raw_right_mcc1_loads.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_raw_right_mcc2_loads.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_raw_top_power_sources_bus.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_wires_bottom_rps_center.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_wires_bottom_rps_full.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_wires_bottom_rps_left.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_wires_bottom_rps_right.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_wires_dc_inverter_center.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_wires_left_4160_480_detail.png,image,595,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_wires_left_mcc1_loads.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_wires_left_mcc2_loads.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_wires_notes_legend_title.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_wires_right_4160_480_detail.png,image,595,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_wires_right_mcc1_loads.png,image,1105,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_wires_right_mcc2_loads.png,image,765,85 + 170 per 512 tile after OpenAI high-detail scaling
+12,1,codes\crop_wires_top_power_sources_bus.png,image,1445,85 + 170 per 512 tile after OpenAI high-detail scaling

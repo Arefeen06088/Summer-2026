@@ -1,0 +1,22 @@
+Connectivity matrix validation summary
+Document: 6
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\6\synthetic_npp_connectivity_matrix_variant3_redo_clean_v7.csv
+GT normalized nodes: 105; GT normalized edges: 131
+Matrices evaluated: 5
+Best row: Diego -- Round 1 from diego_round1_connectivity_matrix.csv with Precision=0.703448, Recall=0.778626, F1=0.739130
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=84, FP=23, FN=47, Precision=0.785047, Recall=0.641221, F1=0.705882
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+Extra/non-GT nodes most responsible for FP edges: AC/DC-REC-B (3 FP edges); AC/DC-CHGR-B (3 FP edges); AC/DC-REC-A (3 FP edges); AC/DC-CHGR-A (3 FP edges); DC/AC-INV-A (2 FP edges); DG-EDG-201B (2 FP edges); DC/AC-INV-B (2 FP edges); DG-EDG-201A (1 FP edges).
+Missing GT nodes examples: CHGR-A; CHGR-B; EDG-201A; EDG-201B; INV-A; INV-B; REC-A; REC-B.
+Close-but-not-exact name examples: DG-EDG-201A -> EDG-201A (0.84); DG-EDG-201B -> EDG-201B (0.84).
+False-positive edge examples among GT-known nodes: CT-EDG-A -- GEN-G201; FAN-CR-A -- MOV-SI-201A; FAN-CR-B -- MOV-SI-201B; GRID-230B -- TR-SST-202; JBX-ESF-A -- RELAY-DG-A; JBX-ESF-B -- RELAY-DG-B.
+False-negative edge examples among GT-known nodes: ATS-A -- RELAY-UV-A; ATS-B -- RELAY-UV-B; CB-DG-A -- RELAY-DG-A; CB-DG-B -- RELAY-DG-B; CP-ESFAS-A -- JBX-ESF-A; CP-ESFAS-A -- PNL-DC-A; CP-ESFAS-A -- UPS-A; CP-ESFAS-B -- JBX-ESF-B.
+False-positive examples involving extra/non-GT nodes: AC/DC-CHGR-A -- BAT-125A; AC/DC-CHGR-A -- LC-480A; AC/DC-CHGR-A -- PNL-DC-A; AC/DC-CHGR-B -- BAT-125B; AC/DC-CHGR-B -- LC-480B; AC/DC-CHGR-B -- PNL-DC-B; AC/DC-REC-A -- DC/AC-INV-A; AC/DC-REC-A -- GND-MAIN.
+False-negative examples involving missing/differently named nodes: BAT-125A -- CHGR-A; BAT-125B -- CHGR-B; CB-DG-A -- EDG-201A; CB-DG-B -- EDG-201B; CHGR-A -- LC-480A; CHGR-A -- PNL-DC-A; CHGR-B -- LC-480B; CHGR-B -- PNL-DC-B.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (AC/DC-REC-B; AC/DC-CHGR-B; AC/DC-REC-A; AC/DC-CHGR-A; DC/AC-INV-A), the final-row metrics would be TP=84, FP=10, FN=47, Precision=0.893617, Recall=0.641221, F1=0.746667.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=84, FP=6, FN=47, Precision=0.933333, Recall=0.641221, F1=0.760181.

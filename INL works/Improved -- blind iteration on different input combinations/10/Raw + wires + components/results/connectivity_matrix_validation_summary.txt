@@ -1,0 +1,51 @@
+Connectivity matrix validation summary - Document 10
+Input configuration: Raw + wires + components
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\10\connectivity_matrix_layout_labels_clear.csv
+
+Scores:
+- Diego -- Round 1 (round_matrices\round_01_diego_connectivity_matrix.csv): TP=102, FP=24, FN=32, Precision=0.809524, Recall=0.761194, F1=0.784615
+- Jennifer -- Round 2 (round_matrices\round_02_jennifer_connectivity_matrix.csv): TP=100, FP=20, FN=34, Precision=0.833333, Recall=0.746269, F1=0.787402
+- Diego -- Round 3 (round_matrices\round_03_diego_connectivity_matrix.csv): TP=100, FP=20, FN=34, Precision=0.833333, Recall=0.746269, F1=0.787402
+- Jennifer -- Round 4 (round_matrices\round_04_jennifer_connectivity_matrix.csv): TP=100, FP=20, FN=34, Precision=0.833333, Recall=0.746269, F1=0.787402
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=100, FP=20, FN=34, Precision=0.833333, Recall=0.746269, F1=0.787402
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- 480V-LC-FEEDERS-A -- CB-A08
+- 480V-LC-FEEDERS-A -- FAN-CR-A
+- 480V-LC-FEEDERS-A -- LC-101A
+- 480V-LC-FEEDERS-A -- LC-102A
+- 480V-LC-FEEDERS-B -- CB-B08
+- 480V-LC-FEEDERS-B -- FAN-CR-B
+- 480V-LC-FEEDERS-B -- LC-101B
+- 480V-LC-FEEDERS-B -- LC-102B
+- AOV-101A -- MCC-102A
+- AOV-101B -- MCC-102B
+
+False-negative edge examples:
+- BCHG-1A -- BUS-DC-A
+- BCHG-1B -- BUS-DC-B
+- BUS-4160-A -- CT-4160-A
+- BUS-4160-B -- CT-4160-B
+- BUS-DC-A -- RLY-86A
+- BUS-DC-B -- RLY-86B
+- CB-A08 -- FAN-CR-A
+- CB-A09 -- PT-4160-A
+- CB-B08 -- FAN-CR-B
+- CB-B09 -- PT-4160-B
+
+Extra/non-GT nodes causing performance drops:
+- 480V-LC-FEEDERS-A: 4 incident false-positive edge(s)
+- 480V-LC-FEEDERS-B: 4 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 2 extra/intermediate nodes were omitted from the extraction (480V-LC-FEEDERS-A, 480V-LC-FEEDERS-B), final metrics would be TP=100, FP=12, FN=34, Precision=0.892857, Recall=0.746269, F1=0.813008.
+- If all 2 non-GT nodes were omitted, metrics would be TP=100, FP=12, FN=34, Precision=0.892857, Recall=0.746269, F1=0.813008.
+
+Missing GT node examples:
+- CT-CAB-A: 3 missed incident GT edge(s)
+- CT-CAB-B: 3 missed incident GT edge(s)

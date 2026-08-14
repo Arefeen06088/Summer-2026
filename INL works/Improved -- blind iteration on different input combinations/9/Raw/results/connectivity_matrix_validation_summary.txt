@@ -1,0 +1,31 @@
+Connectivity matrix validation summary - Document 9
+Input configuration: Raw
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\9\connectivity_matrix_expanded_clear_refined_v3_reworked.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_connectivity_matrix.csv): TP=176, FP=10, FN=24, Precision=0.946237, Recall=0.880000, F1=0.911917
+- Jennifer -- Round 1 (round_01_jennifer_connectivity_matrix.csv): TP=174, FP=4, FN=26, Precision=0.977528, Recall=0.870000, F1=0.920635
+- Diego -- Round 2 (round_02_diego_connectivity_matrix.csv): TP=174, FP=4, FN=26, Precision=0.977528, Recall=0.870000, F1=0.920635
+- Jennifer -- Round 2 (round_02_jennifer_connectivity_matrix.csv): TP=174, FP=4, FN=26, Precision=0.977528, Recall=0.870000, F1=0.920635
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=174, FP=4, FN=26, Precision=0.977528, Recall=0.870000, F1=0.920635
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- FAN-AHU-2A -- MTR-480-N2
+- MTR-480-N1 -- PUMP-SUMP-1B
+- PLC-ESF-A -- PN-120A
+- PLC-ESF-B -- PN-120B
+
+False-negative edge examples:
+- ANN-ESF-A -- RELAY-86A
+- ANN-ESF-B -- RELAY-86B
+- BUS-4160-N1 -- RELAY-50/51A
+- BUS-4160-N2 -- RELAY-27B
+- CB-EDG-A -- RELAY-86A
+- CB-EDG-B -- RELAY-86B
+- CB-RHR-A -- JB-1A
+- CB-RHR-B -- JB-1B
+- CB-SI-A -- JB-2A
+- CB-SI-B -- JB-2B

@@ -1,0 +1,21 @@
+Connectivity matrix validation summary
+Document: 7
+Input configuration: Raw + wires + junctions
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\7\synthetic_npp_connectivity_matrix_clean.csv
+GT normalized nodes: 120; GT normalized edges: 140
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from jennifer_round1_matrix.csv with Precision=0.945736, Recall=0.871429, F1=0.907063
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=122, FP=7, FN=18, Precision=0.945736, Recall=0.871429, F1=0.907063
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+Extra/non-GT nodes most responsible for FP edges: AUX-13.8KV-SOURCE-LINE (2 FP edges).
+Missing GT nodes examples: none.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: ANN-101 -- UPS-120A; ANN-201 -- UPS-120B; BAT-125A -- BCHG-125A; RELAY-K101 -- RELAY-K102; RELAY-K201 -- RELAY-K202.
+False-negative edge examples among GT-known nodes: BCHG-125A -- LC-480A; BCHG-125B -- LC-480D; CB-DG-A -- RELAY-K102; CB-DG-B -- RELAY-K202; CB-TIE-4 -- RELAY-K101; CB-TIE-4 -- RELAY-K201; CB-UAT-A -- RELAY-K101; CB-UAT-B -- RELAY-K201.
+False-positive examples involving extra/non-GT nodes: AUX-13.8KV-SOURCE-LINE -- DS-SAT-1; AUX-13.8KV-SOURCE-LINE -- TR-SAT-B.
+
+What-if node pruning insight:
+If edges involving the top extra/non-GT nodes were not included (AUX-13.8KV-SOURCE-LINE), the final-row metrics would be TP=122, FP=5, FN=18, Precision=0.960630, Recall=0.871429, F1=0.913858.
+If all edges involving non-GT extracted nodes were removed, metrics would be TP=122, FP=5, FN=18, Precision=0.960630, Recall=0.871429, F1=0.913858.

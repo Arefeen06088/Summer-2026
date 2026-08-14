@@ -1,0 +1,39 @@
+Connectivity matrix validation summary - Document 13
+Input configuration: Raw + wires + components + junctions
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\13\synthetic_npp_connectivity_matrix_dc_bus_clean_retry.csv
+
+Scores:
+- Diego -- Round 1 (round_01_diego_high_recall_connectivity_matrix.csv): TP=186, FP=16, FN=8, Precision=0.920792, Recall=0.958763, F1=0.939394
+- Jennifer -- Round 2 (round_02_jennifer_precision_connectivity_matrix.csv): TP=186, FP=4, FN=8, Precision=0.978947, Recall=0.958763, F1=0.968750
+- Diego -- Round 3 (round_03_diego_saturation_connectivity_matrix.csv): TP=186, FP=4, FN=8, Precision=0.978947, Recall=0.958763, F1=0.968750
+- Final connectivity -- Final (final_connectivity_matrix.csv): TP=186, FP=4, FN=8, Precision=0.978947, Recall=0.958763, F1=0.968750
+
+Main reasons the final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often behave like intermediate or over-specific nodes and create false-positive incident edges.
+
+False-positive edge examples:
+- 125VDC-A -- DC-BUS-A
+- 125VDC-B -- DC-BUS-B
+- 125VDC-C -- DC-BUS-C
+- 125VDC-D -- DC-BUS-D
+
+False-negative edge examples:
+- DC-BUS-A -- JB-A1
+- DC-BUS-B -- JB-B1
+- DC-BUS-C -- JB-C1
+- DC-BUS-D -- JB-D1
+- GND-A -- TR-480A
+- GND-B -- TR-480B
+- GND-C -- TR-480C
+- GND-D -- TR-480D
+
+Extra/non-GT nodes causing performance drops:
+- 125VDC-A: 1 incident false-positive edge(s)
+- 125VDC-B: 1 incident false-positive edge(s)
+- 125VDC-C: 1 incident false-positive edge(s)
+- 125VDC-D: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 4 extra/intermediate nodes were omitted from the extraction (125VDC-A, 125VDC-B, 125VDC-C, 125VDC-D), final metrics would be TP=186, FP=0, FN=8, Precision=1.000000, Recall=0.958763, F1=0.978947.
+- If all 4 non-GT nodes were omitted, metrics would be TP=186, FP=0, FN=8, Precision=1.000000, Recall=0.958763, F1=0.978947.

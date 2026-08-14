@@ -1,0 +1,37 @@
+Connectivity matrix validation summary - Document 11 (Raw + wires + junctions + OCR)
+
+Ground truth normalization:
+The GT CSV was normalized into an undirected edge set. Edge-list GT files use source_component and target_component columns; matrix-like CSVs are converted to the same undirected edge-set format. Extracted connectivity/adjacency matrix CSVs were evaluated the same way. Confidence matrices were excluded.
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\11\synthetic_npp_connectivity_matrix_relocated_names.csv
+GT after normalization: 138 undirected edges across 120 component names.
+
+Token usage:
+Token source files: model_call_usage_estimates.csv; token_usage_totals_by_document.csv.
+Document total token estimate: low=159859, expected=195459, high=250059.
+Token values are estimates when usage objects were not available.
+
+Final-row assessment:
+- Final connectivity -- Final: TP=119, FP=17, FN=19, Precision=0.875000, Recall=0.862319, F1=0.868613.
+- Main reason score is below perfect: both extra extracted edges and missed GT edges; extra/non-GT component names; missing exact GT component names.
+- Extracted components: 120; extra/non-GT names: 4; missing GT component names: 4.
+- False-positive extracted edge examples: ATS-480-A -- MCC-A1; ATS-480-A -- MCC-B1; ATS-480-B -- MCC-C1; ATS-480-B -- MCC-D1; BUS-DC-125A -- PANEL-IC-A; BUS-DC-125A -- PANEL-IC-B; BUS-DC-125B -- PANEL-IC-C; BUS-DC-125B -- PANEL-IC-D; ... (+9 more).
+- Missed GT edge examples: ATS-480-A -- BUS-480-A1; ATS-480-A -- BUS-480-C1; ATS-480-B -- BUS-480-B1; ATS-480-B -- BUS-480-D1; BUS-13-8A -- CB-13-TIE; BUS-DC-125A -- RECT-125-A; BUS-DC-125A -- RECT-125-C; BUS-DC-125B -- RECT-125-B; ... (+11 more).
+- Extra/non-GT component examples: DG-2A; DG-2B; DG-2C; DG-2D.
+- Missing GT component examples: DG-1A; DG-1B; DG-1C; DG-1D.
+
+Counterfactual performance insights:
+- If all false-positive extracted edges were not put in extraction, final performance would be TP=119, FP=0, FN=19, Precision=1.000000, Recall=0.862319, F1=0.926070.
+- If all missed GT edges were added, final performance would be TP=138, FP=17, FN=0, Precision=0.890323, Recall=1.000000, F1=0.941980.
+- If extra node DG-2A and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=119, FP=16, FN=19, Precision=0.881481, Recall=0.862319, F1=0.871795.
+- If extra node DG-2B and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=119, FP=16, FN=19, Precision=0.881481, Recall=0.862319, F1=0.871795.
+- If extra node DG-2C and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=119, FP=16, FN=19, Precision=0.881481, Recall=0.862319, F1=0.871795.
+- If extra node DG-2D and its 1 false-positive incident edge(s) were not put in extraction, final performance would be TP=119, FP=16, FN=19, Precision=0.881481, Recall=0.862319, F1=0.871795.
+
+Best evaluated row: Jennifer -- Round 2 with F1=0.868613.
+
+Round-specific notes:
+- Diego -- Round 1: TP=32, FP=221, FN=106, F1=0.163683; extra nodes=109, missing GT nodes=4. FP examples: 13.8KV-1A -- GEN-01; 13.8KV-1A -- TR-UAT-1; 13.8KV-2A -- GEN-02; 13.8KV-2A -- TR-UAT-2; ... (+217 more). FN examples: ATS-480-A -- BUS-480-A1; ATS-480-A -- BUS-480-C1; ATS-480-A -- PANEL-RPS-A; ATS-480-B -- BUS-480-B1; ... (+102 more).
+- Jennifer -- Round 2: TP=119, FP=17, FN=19, F1=0.868613; extra nodes=4, missing GT nodes=4. FP examples: ATS-480-A -- MCC-A1; ATS-480-A -- MCC-B1; ATS-480-B -- MCC-C1; ATS-480-B -- MCC-D1; ... (+13 more). FN examples: ATS-480-A -- BUS-480-A1; ATS-480-A -- BUS-480-C1; ATS-480-B -- BUS-480-B1; ATS-480-B -- BUS-480-D1; ... (+15 more).
+- Diego -- Round 3: TP=119, FP=17, FN=19, F1=0.868613; extra nodes=4, missing GT nodes=4. FP examples: ATS-480-A -- MCC-A1; ATS-480-A -- MCC-B1; ATS-480-B -- MCC-C1; ATS-480-B -- MCC-D1; ... (+13 more). FN examples: ATS-480-A -- BUS-480-A1; ATS-480-A -- BUS-480-C1; ATS-480-B -- BUS-480-B1; ATS-480-B -- BUS-480-D1; ... (+15 more).
+- Jennifer -- Round 4: TP=119, FP=17, FN=19, F1=0.868613; extra nodes=4, missing GT nodes=4. FP examples: ATS-480-A -- MCC-A1; ATS-480-A -- MCC-B1; ATS-480-B -- MCC-C1; ATS-480-B -- MCC-D1; ... (+13 more). FN examples: ATS-480-A -- BUS-480-A1; ATS-480-A -- BUS-480-C1; ATS-480-B -- BUS-480-B1; ATS-480-B -- BUS-480-D1; ... (+15 more).
+- Final connectivity -- Final: TP=119, FP=17, FN=19, F1=0.868613; extra nodes=4, missing GT nodes=4. FP examples: ATS-480-A -- MCC-A1; ATS-480-A -- MCC-B1; ATS-480-B -- MCC-C1; ATS-480-B -- MCC-D1; ... (+13 more). FN examples: ATS-480-A -- BUS-480-A1; ATS-480-A -- BUS-480-C1; ATS-480-B -- BUS-480-B1; ATS-480-B -- BUS-480-D1; ... (+15 more).

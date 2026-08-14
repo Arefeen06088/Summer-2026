@@ -1,0 +1,18 @@
+Connectivity matrix validation summary
+Document: 11
+Input configuration: Raw + wires
+GT file used: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\11\synthetic_npp_connectivity_matrix_relocated_names.csv
+GT normalized nodes: 120; GT normalized edges: 138
+Matrices evaluated: 5
+Best row: Jennifer -- Round 1 from round1_jennifer_matrix.csv with Precision=0.929577, Recall=0.956522, F1=0.942857
+Final/selected diagnostic row: Final connectivity -- Final
+Final metrics: TP=132, FP=10, FN=6, Precision=0.929577, Recall=0.956522, F1=0.942857
+Primary issue: edge discovery between otherwise recognized components was imperfect.
+
+No extra/non-GT extracted nodes were attached to false-positive edges in the final edge set.
+Missing GT nodes examples: none.
+Close-but-not-exact name examples: none detected by the simple fuzzy-name check.
+False-positive edge examples among GT-known nodes: ATS-480-A -- BUS-480-B1; ATS-480-B -- BUS-480-C1; BUS-DC-125A -- PANEL-IC-A; BUS-DC-125B -- PANEL-IC-B; BUS-DC-125B -- PANEL-IC-C; BUS-DC-125B -- PANEL-IC-D; PANEL-IC-A -- RECT-125-A; PANEL-IC-B -- RECT-125-B.
+False-negative edge examples among GT-known nodes: ATS-480-A -- BUS-480-C1; ATS-480-B -- BUS-480-B1; BUS-DC-125A -- RECT-125-A; BUS-DC-125A -- RECT-125-C; BUS-DC-125B -- RECT-125-B; BUS-DC-125B -- RECT-125-D.
+
+What-if node pruning insight: no non-GT intermediate nodes were available to prune; the remaining drop is mainly connectivity/edge discovery or missing direct GT edges.

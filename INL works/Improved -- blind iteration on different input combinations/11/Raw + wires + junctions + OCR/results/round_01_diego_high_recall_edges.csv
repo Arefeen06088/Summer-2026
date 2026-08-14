@@ -1,0 +1,254 @@
+node_a,node_b,edge_kind,confidence,evidence
+GEN-01,13.8KV-1A,power_feeder,high,Solid generator output lead labeled 13.8KV-1A in top sources crop.
+13.8KV-1A,TR-UAT-1,power_feeder,high,Same solid generator-to-UAT lead enters TR-UAT-1.
+TR-UAT-1,UAT1-SEC,power_feeder,high,Secondary conductor labeled UAT1-SEC leaves TR-UAT-1.
+UAT1-SEC,CB-UAT-1,power_feeder,high,UAT1-SEC descends to CB-UAT-1.
+CB-UAT-1,BUS-13-8A,power_bus_connection,high,CB-UAT-1 is inline on the left end of BUS-13-8A.
+TR-SUT-1,SUT1-SEC,power_feeder,high,Startup transformer secondary label SUT1-SEC leaves TR-SUT-1.
+SUT1-SEC,CB-SUT-1,power_feeder,high,SUT1-SEC conductor lands on CB-SUT-1.
+CB-SUT-1,BUS-13-8A,power_bus_connection,high,CB-SUT-1 sits at the right end of the BUS-13-8A section.
+CB-SUT-1,13T-A,power_tie_feeder,high,13T-A printed immediately to the right of CB-SUT-1.
+13T-A,CB-13-TIE,power_tie_feeder,high,13T-A conductor reaches CB-13-TIE.
+CB-13-TIE,13T-B,power_tie_feeder,high,13T-B printed immediately to the right of CB-13-TIE.
+13T-B,BUS-13-8B,power_tie_feeder,high,13T-B continues into the BUS-13-8B side.
+GEN-02,13.8KV-2A,power_feeder,high,Solid generator output lead labeled 13.8KV-2A in top sources crop.
+13.8KV-2A,TR-UAT-2,power_feeder,high,Same solid generator-to-UAT lead enters TR-UAT-2.
+TR-UAT-2,UAT2-SEC,power_feeder,high,Secondary conductor labeled UAT2-SEC leaves TR-UAT-2.
+UAT2-SEC,CB-UAT-2,power_feeder,high,UAT2-SEC descends to CB-UAT-2.
+CB-UAT-2,BUS-13-8B,power_bus_connection,high,CB-UAT-2 is inline on BUS-13-8B.
+TR-SUT-2,SUT2-SEC,power_feeder,high,Startup transformer secondary label SUT2-SEC leaves TR-SUT-2.
+SUT2-SEC,CB-SUT-2,power_feeder,high,SUT2-SEC conductor lands on CB-SUT-2.
+CB-SUT-2,BUS-13-8B,power_bus_connection,high,CB-SUT-2 is at the right end of BUS-13-8B.
+BUS-13-8A,NORM-2A,power_feeder,high,Vertical normal incoming feeder labeled NORM-2A drops from BUS-13-8A.
+NORM-2A,CB-IN-A,power_feeder,high,NORM-2A lands on CB-IN-A.
+CB-IN-A,52N-2A,power_feeder,high,Diagonal solid conductor from CB-IN-A labeled 52N-2A.
+52N-2A,BUS-4160-A,power_feeder,high,52N-2A terminates at BUS-4160-A junction dot.
+DG-2A,CB-DG-A,power_feeder,high,Diesel generator vertical lead to CB-DG-A; symbol text may read DG-1A while CSV labels component DG-2A.
+CB-DG-A,52G-2A,power_feeder,high,CB-DG-A lower conductor labeled 52G-2A.
+52G-2A,BUS-4160-A,power_feeder,high,52G-2A lands on BUS-4160-A at junction.
+BUS-4160-A,FDR-A1,power_feeder,high,Vertical feeder FDR-A1 drops from BUS-4160-A.
+FDR-A1,CB-4160-A1,power_feeder,high,FDR-A1 lands on CB-4160-A1.
+CB-4160-A1,52-A1,power_feeder,high,Printed 52-A1 conductor below CB-4160-A1.
+52-A1,TR-480-A1,power_feeder,high,52-A1 reaches TR-480-A1.
+TR-480-A1,480-A1,power_feeder,high,Printed 480-A1 conductor below TR-480-A1.
+480-A1,CB-480-A1,power_feeder,high,480-A1 reaches CB-480-A1.
+CB-480-A1,LC-A1,power_feeder,high,Printed LC-A1 conductor below CB-480-A1.
+LC-A1,BUS-480-A1,power_feeder,high,LC-A1 lands on BUS-480-A1.
+BUS-4160-A,FDR-A2,power_feeder,high,Vertical feeder FDR-A2 drops from BUS-4160-A.
+FDR-A2,CB-4160-A2,power_feeder,high,FDR-A2 lands on CB-4160-A2.
+CB-4160-A2,52-A2,power_feeder,high,Printed 52-A2 conductor below CB-4160-A2.
+52-A2,TR-480-A2,power_feeder,high,52-A2 reaches TR-480-A2.
+TR-480-A2,480-A2,power_feeder,high,Printed 480-A2 conductor below TR-480-A2.
+480-A2,CB-480-A2,power_feeder,high,480-A2 reaches CB-480-A2.
+CB-480-A2,LC-A2,power_feeder,high,Printed LC-A2 conductor below CB-480-A2.
+LC-A2,BUS-480-A2,power_feeder,high,LC-A2 lands on BUS-480-A2.
+BUS-480-A1,BUS-480-A2,power_bus_connection,medium,Solid horizontal 480 V bus visually connects BUS-480-A1 and BUS-480-A2 across the TIE-A12 crossing.
+BUS-480-A1,CB-MCC-A1,power_feeder,high,Vertical MCC-A1 feeder drops from BUS-480-A1 to CB-MCC-A1.
+CB-MCC-A1,52M-A1,power_feeder,high,52M-A1 printed below CB-MCC-A1.
+52M-A1,MCC-A1,power_feeder,high,52M-A1 lands on MCC-A1.
+BUS-480-A2,CB-MCC-A2,power_feeder,high,Vertical MCC-A2 feeder drops from BUS-480-A2 to CB-MCC-A2.
+CB-MCC-A2,52M-A2,power_feeder,high,52M-A2 printed below CB-MCC-A2.
+52M-A2,MCC-A2,power_feeder,high,52M-A2 lands on MCC-A2.
+MCC-A1,L-AP1,load_feeder,high,Left load feeder L-AP1 exits MCC-A1.
+L-AP1,PUMP-SI-A,load_feeder,high,L-AP1 drops to PUMP-SI-A motor symbol.
+MCC-A1,L-AP2,load_feeder,high,"Center crowded load feeder from MCC-A1, read as L-AP2."
+L-AP2,PUMP-CCW-A,load_feeder,high,L-AP2 drops to PUMP-CCW-A motor symbol.
+MCC-A1,L-AF1,load_feeder,medium,"Right crowded load feeder from MCC-A1, read as L-AF1."
+L-AF1,FAN-HVAC-A,load_feeder,medium,L-AF1 branches to FAN-HVAC-A.
+MCC-A1,ATS-A1,ats_input_feeder,medium,Same MCC-A1 load-exit area continues downward to printed ATS-A1 ATS input.
+ATS-A1,ATS-480-A,ats_input_feeder,medium,ATS-A1 solid conductor enters ATS-480-A.
+MCC-A2,L-AV1,load_feeder,high,L-AV1 exits MCC-A2.
+L-AV1,MOV-RHR-A,load_feeder,high,L-AV1 drops to MOV-RHR-A.
+BUS-480-A2,BC-A,rectifier_ac_feed,high,BC-A vertical branch leaves BUS-480-A2 toward RECT-125-A.
+BC-A,RECT-125-A,rectifier_ac_feed,high,BC-A lands on RECT-125-A.
+RECT-125-A,DC-A125,dc_power,high,Vertical 125 VDC conductor continues from RECT-125-A toward PANEL-IC-A and lower DC bus.
+DC-A125,PANEL-IC-A,dc_power,high,DC-A125 passes through/lands on PANEL-IC-A.
+DC-A125,BUS-DC-125A,dc_bus_connection,high,DC-A125 descends to BUS-DC-125A in bottom DC crop.
+PANEL-IC-A,GND-A,ground,high,PANEL-IC-A has a solid terminal to ground symbol GND-A.
+CB-IN-A,RELAY-27A,control_interlock,medium,Dashed interlock line from CB-IN-A to RELAY-27A.
+RELAY-27A,CB-DG-A,control_interlock,medium,Dashed interlock line from RELAY-27A to CB-DG-A.
+RELAY-27A,TIE-A12,control_interlock,medium,Dashed vertical line descends from RELAY-27A through TIE-A12 label.
+TIE-A12,SSPS-A,control_interlock,medium,Same dashed vertical interlock path continues below 480 V bus to SSPS-A label.
+SSPS-A,CONTROL-POWER-RPS-INTERLOCKS,control_interlock,medium,SSPS-A dashed path enters the lower CONTROL POWER AND RPS INTERLOCKS region.
+MCC-A2,PANEL-IC-A,control_interlock,medium,Dashed line from MCC-A2 down to PANEL-IC-A.
+PANEL-IC-A,SSPS-A,control_interlock_uncertain,low,"PANEL-IC-A appears tied into the same division interlock area, but exact dashed landing is partially indirect."
+BUS-13-8A,NORM-2B,power_feeder,high,Vertical normal incoming feeder labeled NORM-2B drops from BUS-13-8A.
+NORM-2B,CB-IN-B,power_feeder,high,NORM-2B lands on CB-IN-B.
+CB-IN-B,52N-2B,power_feeder,high,Diagonal solid conductor from CB-IN-B labeled 52N-2B.
+52N-2B,BUS-4160-B,power_feeder,high,52N-2B terminates at BUS-4160-B junction dot.
+DG-2B,CB-DG-B,power_feeder,high,Diesel generator vertical lead to CB-DG-B; symbol text may read DG-1B while CSV labels component DG-2B.
+CB-DG-B,52G-2B,power_feeder,high,CB-DG-B lower conductor labeled 52G-2B.
+52G-2B,BUS-4160-B,power_feeder,high,52G-2B lands on BUS-4160-B at junction.
+BUS-4160-B,FDR-B1,power_feeder,high,Vertical feeder FDR-B1 drops from BUS-4160-B.
+FDR-B1,CB-4160-B1,power_feeder,high,FDR-B1 lands on CB-4160-B1.
+CB-4160-B1,52-B1,power_feeder,high,Printed 52-B1 conductor below CB-4160-B1.
+52-B1,TR-480-B1,power_feeder,high,52-B1 reaches TR-480-B1.
+TR-480-B1,480-B1,power_feeder,high,Printed 480-B1 conductor below TR-480-B1.
+480-B1,CB-480-B1,power_feeder,high,480-B1 reaches CB-480-B1.
+CB-480-B1,LC-B1,power_feeder,high,Printed LC-B1 conductor below CB-480-B1.
+LC-B1,BUS-480-B1,power_feeder,high,LC-B1 lands on BUS-480-B1.
+BUS-4160-B,FDR-B2,power_feeder,high,Vertical feeder FDR-B2 drops from BUS-4160-B.
+FDR-B2,CB-4160-B2,power_feeder,high,FDR-B2 lands on CB-4160-B2.
+CB-4160-B2,52-B2,power_feeder,high,Printed 52-B2 conductor below CB-4160-B2.
+52-B2,TR-480-B2,power_feeder,high,52-B2 reaches TR-480-B2.
+TR-480-B2,480-B2,power_feeder,high,Printed 480-B2 conductor below TR-480-B2.
+480-B2,CB-480-B2,power_feeder,high,480-B2 reaches CB-480-B2.
+CB-480-B2,LC-B2,power_feeder,high,Printed LC-B2 conductor below CB-480-B2.
+LC-B2,BUS-480-B2,power_feeder,high,LC-B2 lands on BUS-480-B2.
+BUS-480-B1,BUS-480-B2,power_bus_connection,medium,Solid horizontal 480 V bus visually connects BUS-480-B1 and BUS-480-B2 across the TIE-B12 crossing.
+BUS-480-B1,CB-MCC-B1,power_feeder,high,Vertical MCC-B1 feeder drops from BUS-480-B1 to CB-MCC-B1.
+CB-MCC-B1,52M-B1,power_feeder,high,52M-B1 printed below CB-MCC-B1.
+52M-B1,MCC-B1,power_feeder,high,52M-B1 lands on MCC-B1.
+BUS-480-B2,CB-MCC-B2,power_feeder,high,Vertical MCC-B2 feeder drops from BUS-480-B2 to CB-MCC-B2.
+CB-MCC-B2,52M-B2,power_feeder,high,52M-B2 printed below CB-MCC-B2.
+52M-B2,MCC-B2,power_feeder,high,52M-B2 lands on MCC-B2.
+MCC-B1,L-BP1,load_feeder,high,Left load feeder L-BP1 exits MCC-B1.
+L-BP1,PUMP-SI-B,load_feeder,high,L-BP1 drops to PUMP-SI-B motor symbol.
+MCC-B1,L-BP2,load_feeder,high,"Center crowded load feeder from MCC-B1, read as L-BP2."
+L-BP2,PUMP-CCW-B,load_feeder,high,L-BP2 drops to PUMP-CCW-B motor symbol.
+MCC-B1,L-BF1,load_feeder,medium,"Right crowded load feeder from MCC-B1, read as L-BF1."
+L-BF1,FAN-HVAC-B,load_feeder,medium,L-BF1 branches to FAN-HVAC-B.
+MCC-B1,ATS-B1,ats_input_feeder,medium,Same MCC-B1 load-exit area continues downward to printed ATS-B1 ATS input.
+ATS-B1,ATS-480-A,ats_input_feeder,medium,ATS-B1 solid conductor enters ATS-480-A.
+MCC-B2,L-BV1,load_feeder,high,L-BV1 exits MCC-B2.
+L-BV1,MOV-RHR-B,load_feeder,high,L-BV1 drops to MOV-RHR-B.
+BUS-480-B2,BC-B,rectifier_ac_feed,high,BC-B vertical branch leaves BUS-480-B2 toward RECT-125-B.
+BC-B,RECT-125-B,rectifier_ac_feed,high,BC-B lands on RECT-125-B.
+RECT-125-B,DC-B125,dc_power,high,Vertical 125 VDC conductor continues from RECT-125-B toward PANEL-IC-B and lower DC bus.
+DC-B125,PANEL-IC-B,dc_power,high,DC-B125 passes through/lands on PANEL-IC-B.
+DC-B125,BUS-DC-125A,dc_bus_connection,high,DC-B125 descends to BUS-DC-125A in bottom DC crop.
+PANEL-IC-B,GND-B,ground,high,PANEL-IC-B has a solid terminal to ground symbol GND-B.
+CB-IN-B,RELAY-27B,control_interlock,medium,Dashed interlock line from CB-IN-B to RELAY-27B.
+RELAY-27B,CB-DG-B,control_interlock,medium,Dashed interlock line from RELAY-27B to CB-DG-B.
+RELAY-27B,TIE-B12,control_interlock,medium,Dashed vertical line descends from RELAY-27B through TIE-B12 label.
+TIE-B12,SSPS-B,control_interlock,medium,Same dashed vertical interlock path continues below 480 V bus to SSPS-B label.
+SSPS-B,CONTROL-POWER-RPS-INTERLOCKS,control_interlock,medium,SSPS-B dashed path enters the lower CONTROL POWER AND RPS INTERLOCKS region.
+MCC-B2,PANEL-IC-B,control_interlock,medium,Dashed line from MCC-B2 down to PANEL-IC-B.
+PANEL-IC-B,SSPS-B,control_interlock_uncertain,low,"PANEL-IC-B appears tied into the same division interlock area, but exact dashed landing is partially indirect."
+BUS-13-8B,NORM-2C,power_feeder,high,Vertical normal incoming feeder labeled NORM-2C drops from BUS-13-8B.
+NORM-2C,CB-IN-C,power_feeder,high,NORM-2C lands on CB-IN-C.
+CB-IN-C,52N-2C,power_feeder,high,Diagonal solid conductor from CB-IN-C labeled 52N-2C.
+52N-2C,BUS-4160-C,power_feeder,high,52N-2C terminates at BUS-4160-C junction dot.
+DG-2C,CB-DG-C,power_feeder,high,Diesel generator vertical lead to CB-DG-C; symbol text may read DG-1C while CSV labels component DG-2C.
+CB-DG-C,52G-2C,power_feeder,high,CB-DG-C lower conductor labeled 52G-2C.
+52G-2C,BUS-4160-C,power_feeder,high,52G-2C lands on BUS-4160-C at junction.
+BUS-4160-C,FDR-C1,power_feeder,high,Vertical feeder FDR-C1 drops from BUS-4160-C.
+FDR-C1,CB-4160-C1,power_feeder,high,FDR-C1 lands on CB-4160-C1.
+CB-4160-C1,52-C1,power_feeder,high,Printed 52-C1 conductor below CB-4160-C1.
+52-C1,TR-480-C1,power_feeder,high,52-C1 reaches TR-480-C1.
+TR-480-C1,480-C1,power_feeder,high,Printed 480-C1 conductor below TR-480-C1.
+480-C1,CB-480-C1,power_feeder,high,480-C1 reaches CB-480-C1.
+CB-480-C1,LC-C1,power_feeder,high,Printed LC-C1 conductor below CB-480-C1.
+LC-C1,BUS-480-C1,power_feeder,high,LC-C1 lands on BUS-480-C1.
+BUS-4160-C,FDR-C2,power_feeder,high,Vertical feeder FDR-C2 drops from BUS-4160-C.
+FDR-C2,CB-4160-C2,power_feeder,high,FDR-C2 lands on CB-4160-C2.
+CB-4160-C2,52-C2,power_feeder,high,Printed 52-C2 conductor below CB-4160-C2.
+52-C2,TR-480-C2,power_feeder,high,52-C2 reaches TR-480-C2.
+TR-480-C2,480-C2,power_feeder,high,Printed 480-C2 conductor below TR-480-C2.
+480-C2,CB-480-C2,power_feeder,high,480-C2 reaches CB-480-C2.
+CB-480-C2,LC-C2,power_feeder,high,Printed LC-C2 conductor below CB-480-C2.
+LC-C2,BUS-480-C2,power_feeder,high,LC-C2 lands on BUS-480-C2.
+BUS-480-C1,BUS-480-C2,power_bus_connection,medium,Solid horizontal 480 V bus visually connects BUS-480-C1 and BUS-480-C2 across the TIE-C12 crossing.
+BUS-480-C1,CB-MCC-C1,power_feeder,high,Vertical MCC-C1 feeder drops from BUS-480-C1 to CB-MCC-C1.
+CB-MCC-C1,52M-C1,power_feeder,high,52M-C1 printed below CB-MCC-C1.
+52M-C1,MCC-C1,power_feeder,high,52M-C1 lands on MCC-C1.
+BUS-480-C2,CB-MCC-C2,power_feeder,high,Vertical MCC-C2 feeder drops from BUS-480-C2 to CB-MCC-C2.
+CB-MCC-C2,52M-C2,power_feeder,high,52M-C2 printed below CB-MCC-C2.
+52M-C2,MCC-C2,power_feeder,high,52M-C2 lands on MCC-C2.
+MCC-C1,L-CP1,load_feeder,high,Left load feeder L-CP1 exits MCC-C1.
+L-CP1,PUMP-SI-C,load_feeder,high,L-CP1 drops to PUMP-SI-C motor symbol.
+MCC-C1,L-CP2,load_feeder,high,"Center crowded load feeder from MCC-C1, read as L-CP2."
+L-CP2,PUMP-CCW-C,load_feeder,high,L-CP2 drops to PUMP-CCW-C motor symbol.
+MCC-C1,L-CF1,load_feeder,medium,"Right crowded load feeder from MCC-C1, read as L-CF1."
+L-CF1,FAN-HVAC-C,load_feeder,medium,L-CF1 branches to FAN-HVAC-C.
+MCC-C1,ATS-C1,ats_input_feeder,medium,Same MCC-C1 load-exit area continues downward to printed ATS-C1 ATS input.
+ATS-C1,ATS-480-B,ats_input_feeder,medium,ATS-C1 solid conductor enters ATS-480-B.
+MCC-C2,L-CV1,load_feeder,high,L-CV1 exits MCC-C2.
+L-CV1,MOV-RHR-C,load_feeder,high,L-CV1 drops to MOV-RHR-C.
+BUS-480-C2,BC-C,rectifier_ac_feed,high,BC-C vertical branch leaves BUS-480-C2 toward RECT-125-C.
+BC-C,RECT-125-C,rectifier_ac_feed,high,BC-C lands on RECT-125-C.
+RECT-125-C,DC-C125,dc_power,high,Vertical 125 VDC conductor continues from RECT-125-C toward PANEL-IC-C and lower DC bus.
+DC-C125,PANEL-IC-C,dc_power,high,DC-C125 passes through/lands on PANEL-IC-C.
+DC-C125,BUS-DC-125B,dc_bus_connection,high,DC-C125 descends to BUS-DC-125B in bottom DC crop.
+PANEL-IC-C,GND-C,ground,high,PANEL-IC-C has a solid terminal to ground symbol GND-C.
+CB-IN-C,RELAY-27C,control_interlock,medium,Dashed interlock line from CB-IN-C to RELAY-27C.
+RELAY-27C,CB-DG-C,control_interlock,medium,Dashed interlock line from RELAY-27C to CB-DG-C.
+RELAY-27C,TIE-C12,control_interlock,medium,Dashed vertical line descends from RELAY-27C through TIE-C12 label.
+TIE-C12,SSPS-C,control_interlock,medium,Same dashed vertical interlock path continues below 480 V bus to SSPS-C label.
+SSPS-C,CONTROL-POWER-RPS-INTERLOCKS,control_interlock,medium,SSPS-C dashed path enters the lower CONTROL POWER AND RPS INTERLOCKS region.
+MCC-C2,PANEL-IC-C,control_interlock,medium,Dashed line from MCC-C2 down to PANEL-IC-C.
+PANEL-IC-C,SSPS-C,control_interlock_uncertain,low,"PANEL-IC-C appears tied into the same division interlock area, but exact dashed landing is partially indirect."
+BUS-13-8B,NORM-2D,power_feeder,high,Vertical normal incoming feeder labeled NORM-2D drops from BUS-13-8B.
+NORM-2D,CB-IN-D,power_feeder,high,NORM-2D lands on CB-IN-D.
+CB-IN-D,52N-2D,power_feeder,high,Diagonal solid conductor from CB-IN-D labeled 52N-2D.
+52N-2D,BUS-4160-D,power_feeder,high,52N-2D terminates at BUS-4160-D junction dot.
+DG-2D,CB-DG-D,power_feeder,high,Diesel generator vertical lead to CB-DG-D; symbol text may read DG-1D while CSV labels component DG-2D.
+CB-DG-D,52G-2D,power_feeder,high,CB-DG-D lower conductor labeled 52G-2D.
+52G-2D,BUS-4160-D,power_feeder,high,52G-2D lands on BUS-4160-D at junction.
+BUS-4160-D,FDR-D1,power_feeder,high,Vertical feeder FDR-D1 drops from BUS-4160-D.
+FDR-D1,CB-4160-D1,power_feeder,high,FDR-D1 lands on CB-4160-D1.
+CB-4160-D1,52-D1,power_feeder,high,Printed 52-D1 conductor below CB-4160-D1.
+52-D1,TR-480-D1,power_feeder,high,52-D1 reaches TR-480-D1.
+TR-480-D1,480-D1,power_feeder,high,Printed 480-D1 conductor below TR-480-D1.
+480-D1,CB-480-D1,power_feeder,high,480-D1 reaches CB-480-D1.
+CB-480-D1,LC-D1,power_feeder,high,Printed LC-D1 conductor below CB-480-D1.
+LC-D1,BUS-480-D1,power_feeder,high,LC-D1 lands on BUS-480-D1.
+BUS-4160-D,FDR-D2,power_feeder,high,Vertical feeder FDR-D2 drops from BUS-4160-D.
+FDR-D2,CB-4160-D2,power_feeder,high,FDR-D2 lands on CB-4160-D2.
+CB-4160-D2,52-D2,power_feeder,high,Printed 52-D2 conductor below CB-4160-D2.
+52-D2,TR-480-D2,power_feeder,high,52-D2 reaches TR-480-D2.
+TR-480-D2,480-D2,power_feeder,high,Printed 480-D2 conductor below TR-480-D2.
+480-D2,CB-480-D2,power_feeder,high,480-D2 reaches CB-480-D2.
+CB-480-D2,LC-D2,power_feeder,high,Printed LC-D2 conductor below CB-480-D2.
+LC-D2,BUS-480-D2,power_feeder,high,LC-D2 lands on BUS-480-D2.
+BUS-480-D1,BUS-480-D2,power_bus_connection,medium,Solid horizontal 480 V bus visually connects BUS-480-D1 and BUS-480-D2 across the TIE-D12 crossing.
+BUS-480-D1,CB-MCC-D1,power_feeder,high,Vertical MCC-D1 feeder drops from BUS-480-D1 to CB-MCC-D1.
+CB-MCC-D1,52M-D1,power_feeder,high,52M-D1 printed below CB-MCC-D1.
+52M-D1,MCC-D1,power_feeder,high,52M-D1 lands on MCC-D1.
+BUS-480-D2,CB-MCC-D2,power_feeder,high,Vertical MCC-D2 feeder drops from BUS-480-D2 to CB-MCC-D2.
+CB-MCC-D2,52M-D2,power_feeder,high,52M-D2 printed below CB-MCC-D2.
+52M-D2,MCC-D2,power_feeder,high,52M-D2 lands on MCC-D2.
+MCC-D1,L-DP1,load_feeder,high,Left load feeder L-DP1 exits MCC-D1.
+L-DP1,PUMP-SI-D,load_feeder,high,L-DP1 drops to PUMP-SI-D motor symbol.
+MCC-D1,L-DP2,load_feeder,high,"Center crowded load feeder from MCC-D1, read as L-DP2."
+L-DP2,PUMP-CCW-D,load_feeder,high,L-DP2 drops to PUMP-CCW-D motor symbol.
+MCC-D1,L-DF1,load_feeder,medium,"Right crowded load feeder from MCC-D1, read as L-DF1."
+L-DF1,FAN-HVAC-D,load_feeder,medium,L-DF1 branches to FAN-HVAC-D.
+MCC-D1,ATS-D1,ats_input_feeder,medium,Same MCC-D1 load-exit area continues downward to printed ATS-D1 ATS input.
+ATS-D1,ATS-480-B,ats_input_feeder,medium,ATS-D1 solid conductor enters ATS-480-B.
+MCC-D2,L-DV1,load_feeder,high,L-DV1 exits MCC-D2.
+L-DV1,MOV-RHR-D,load_feeder,high,L-DV1 drops to MOV-RHR-D.
+BUS-480-D2,BC-D,rectifier_ac_feed,high,BC-D vertical branch leaves BUS-480-D2 toward RECT-125-D.
+BC-D,RECT-125-D,rectifier_ac_feed,high,BC-D lands on RECT-125-D.
+RECT-125-D,DC-D125,dc_power,high,Vertical 125 VDC conductor continues from RECT-125-D toward PANEL-IC-D and lower DC bus.
+DC-D125,PANEL-IC-D,dc_power,high,DC-D125 passes through/lands on PANEL-IC-D.
+DC-D125,BUS-DC-125B,dc_bus_connection,high,DC-D125 descends to BUS-DC-125B in bottom DC crop.
+PANEL-IC-D,GND-D,ground,high,PANEL-IC-D has a solid terminal to ground symbol GND-D.
+CB-IN-D,RELAY-27D,control_interlock,medium,Dashed interlock line from CB-IN-D to RELAY-27D.
+RELAY-27D,CB-DG-D,control_interlock,medium,Dashed interlock line from RELAY-27D to CB-DG-D.
+RELAY-27D,TIE-D12,control_interlock,medium,Dashed vertical line descends from RELAY-27D through TIE-D12 label.
+TIE-D12,SSPS-D,control_interlock,medium,Same dashed vertical interlock path continues below 480 V bus to SSPS-D label.
+SSPS-D,CONTROL-POWER-RPS-INTERLOCKS,control_interlock,medium,SSPS-D dashed path enters the lower CONTROL POWER AND RPS INTERLOCKS region.
+MCC-D2,PANEL-IC-D,control_interlock,medium,Dashed line from MCC-D2 down to PANEL-IC-D.
+PANEL-IC-D,SSPS-D,control_interlock_uncertain,low,"PANEL-IC-D appears tied into the same division interlock area, but exact dashed landing is partially indirect."
+BAT-125A,BAT-A,dc_power,high,BAT-A printed between BAT-125A and BUS-DC-125A.
+BAT-A,BUS-DC-125A,dc_power,high,BAT-A conductor lands on BUS-DC-125A.
+BUS-DC-125A,UPS-AIN,dc_power,high,BUS-DC-125A right side labeled UPS-AIN into INV-UPS-A.
+UPS-AIN,INV-UPS-A,dc_power,high,UPS-AIN enters INV-UPS-A.
+INV-UPS-A,UPS-AOUT,dc_power,high,UPS-AOUT exits INV-UPS-A.
+UPS-AOUT,PANEL-RPS-A,dc_power,high,UPS-AOUT lands on PANEL-RPS-A.
+ATS-480-A,ATS-AOUT,ats_output,medium,ATS-AOUT solid conductor exits ATS-480-A.
+ATS-AOUT,PANEL-RPS-A,ats_output,medium,ATS-AOUT lands on PANEL-RPS-A top/left side.
+PANEL-RPS-A,CONTROL-POWER-RPS-INTERLOCKS,control_interlock,medium,PANEL-RPS-A lies inside/connected to dashed CONTROL POWER AND RPS INTERLOCKS region.
+BAT-125B,BAT-B,dc_power,high,BAT-B printed between BAT-125B and BUS-DC-125B.
+BAT-B,BUS-DC-125B,dc_power,high,BAT-B conductor lands on BUS-DC-125B.
+BUS-DC-125B,UPS-BIN,dc_power,high,BUS-DC-125B right side labeled UPS-BIN into INV-UPS-B.
+UPS-BIN,INV-UPS-B,dc_power,high,UPS-BIN enters INV-UPS-B.
+INV-UPS-B,UPS-BOUT,dc_power,high,UPS-BOUT exits INV-UPS-B.
+UPS-BOUT,PANEL-RPS-B,dc_power,high,UPS-BOUT lands on PANEL-RPS-B.
+ATS-480-B,ATS-BOUT,ats_output,medium,ATS-BOUT solid conductor exits ATS-480-B.
+ATS-BOUT,PANEL-RPS-B,ats_output,medium,ATS-BOUT lands on PANEL-RPS-B top/left side.
+PANEL-RPS-B,CONTROL-POWER-RPS-INTERLOCKS,control_interlock,medium,PANEL-RPS-B lies inside/connected to dashed CONTROL POWER AND RPS INTERLOCKS region.
+PANEL-SSPS,CONTROL-POWER-RPS-INTERLOCKS,control_interlock,medium,PANEL-SSPS is drawn inside lower dashed CONTROL POWER AND RPS INTERLOCKS region.
+ATS-480-A,CONTROL-POWER-RPS-INTERLOCKS,control_interlock,low,ATS-480-A is crossed/enclosed by lower dashed interlock run.
+ATS-480-B,CONTROL-POWER-RPS-INTERLOCKS,control_interlock,low,ATS-480-B is crossed/enclosed by lower dashed interlock run.
