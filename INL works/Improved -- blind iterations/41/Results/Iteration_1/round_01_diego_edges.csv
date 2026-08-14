@@ -1,0 +1,62 @@
+source,target,evidence,confidence
+OFFSITE-A,TR-1A,Top 4 kV Train A crop: OFFSITE-A source terminal connects by solid feeder into the TR-1A primary winding.,certain
+TR-1A,CB-101,Top 4 kV Train A crop: TR-1A secondary leaves by solid feeder to CB-101 line-side terminal.,certain
+CB-101,BUS-1A-4.16KV,Top 4 kV Train A crop: CB-101 load-side terminal lands directly on BUS-1A-4.16KV.,certain
+EDG-1A,CB-105,Top 4 kV Train A crop: EDG-1A output feeder runs solid to CB-105 line-side terminal.,certain
+CB-105,BUS-1A-4.16KV,Top 4 kV Train A crop: CB-105 EDG incoming feeder turns up and lands on BUS-1A-4.16KV.,certain
+TR-1A,GND-1E,Top 4 kV Train A raw/manual inventory: grounding conductor from TR-1A lower terminal goes to labeled GND-1E ground symbol.,certain
+BUS-1A-4.16KV,CB-TIE-1AB,Top tie crop: BUS-1A-4.16KV right terminal feeds the left side of normally-open CB-TIE-1AB.,certain
+CB-TIE-1AB,BUS-1B-4.16KV,Top tie/Train B crop: right side of CB-TIE-1AB feeds the left terminal of BUS-1B-4.16KV.,certain
+OFFSITE-B,TR-1B,Top 4 kV Train B crop: OFFSITE-B source terminal connects by solid feeder into the TR-1B primary winding.,certain
+TR-1B,CB-102,Top 4 kV Train B crop: TR-1B secondary leaves by solid feeder to CB-102 line-side terminal.,certain
+CB-102,BUS-1B-4.16KV,Top 4 kV Train B crop: CB-102 load-side terminal lands directly on BUS-1B-4.16KV.,certain
+EDG-1B,CB-106,Top 4 kV Train B crop: EDG-1B output feeder runs solid to CB-106 line-side terminal.,certain
+CB-106,BUS-1B-4.16KV,Top 4 kV Train B crop: CB-106 EDG incoming feeder turns up and lands on BUS-1B-4.16KV.,certain
+BUS-1A-4.16KV,TR-LC-1A,Full/middle transformer crops: vertical solid feeder drops from BUS-1A-4.16KV to TR-LC-1A.,certain
+TR-LC-1A,CB-201,Middle transformer crop: TR-LC-1A secondary connects down to CB-201.,certain
+CB-201,BUS-480A,Middle transformer crop: CB-201 lower terminal lands on BUS-480A.,certain
+BUS-1A-4.16KV,TR-SAF-1A,Full/middle transformer crops: vertical solid feeder drops from BUS-1A-4.16KV to TR-SAF-1A.,certain
+TR-SAF-1A,CB-203,Middle transformer crop: TR-SAF-1A secondary connects down to CB-203.,certain
+CB-203,BUS-480E1A,Middle transformer crop: CB-203 lower terminal lands on BUS-480E1A.,certain
+BUS-1B-4.16KV,TR-LC-1B,Full/middle transformer crops: vertical solid feeder drops from BUS-1B-4.16KV to TR-LC-1B.,certain
+TR-LC-1B,CB-202,Middle transformer crop: TR-LC-1B secondary connects down to CB-202.,certain
+CB-202,BUS-480B,Middle transformer crop: CB-202 lower terminal lands on BUS-480B.,certain
+BUS-1B-4.16KV,TR-SAF-1B,Full/middle transformer crops: vertical solid feeder drops from BUS-1B-4.16KV to TR-SAF-1B.,certain
+TR-SAF-1B,CB-204,Middle transformer crop: TR-SAF-1B secondary connects down to CB-204.,certain
+CB-204,BUS-480E1B,"Middle transformer crop: CB-204 lower feeder routes to BUS-480E1B; nearby BUS-480B crossing is treated as routing, not a bus tie.",certain
+BUS-480A,MCC-1A,MCC A load crop: vertical feeder from BUS-480A lands on top of MCC-1A.,certain
+BUS-480A,MCC-1C,MCC A load crop: vertical feeder from BUS-480A lands on top of MCC-1C.,certain
+BUS-480E1A,MCC-ESS-A,MCC A load crop: vertical feeder from BUS-480E1A lands on MCC-ESS-A.,certain
+BUS-480B,MCC-1B,MCC B load crop: vertical feeder from BUS-480B lands on top of MCC-1B.,certain
+BUS-480B,MCC-1D,MCC B load crop: vertical feeder from BUS-480B lands on top of MCC-1D.,certain
+BUS-480E1B,MCC-ESS-B,MCC B load crop: vertical feeder from BUS-480E1B lands on MCC-ESS-B.,certain
+MCC-1A,PUMP-CCW-103A,MCC A load crop: solid feeder from MCC-1A bottom terminal routes to PUMP-CCW-103A.,certain
+MCC-1C,FAN-CRHV-104A,MCC A load crop: solid feeder from MCC-1C bottom terminal routes to FAN-CRHV-104A.,certain
+MCC-ESS-A,PUMP-SI-101A,MCC A load crop: left feeder from MCC-ESS-A routes to PUMP-SI-101A.,certain
+MCC-ESS-A,PUMP-RHR-102A,MCC A load crop: center feeder from MCC-ESS-A routes to PUMP-RHR-102A.,certain
+MCC-ESS-A,MOV-1201A,MCC A load crop: right feeder from MCC-ESS-A routes to MOV-1201A.,certain
+MCC-1B,PUMP-CCW-103B,MCC B load crop: solid feeder from MCC-1B bottom terminal routes to PUMP-CCW-103B.,certain
+MCC-1D,FAN-CRHV-104B,MCC B load crop: solid feeder from MCC-1D bottom terminal routes to FAN-CRHV-104B.,certain
+MCC-ESS-B,PUMP-SI-101B,MCC B load crop: left feeder from MCC-ESS-B routes to PUMP-SI-101B.,certain
+MCC-ESS-B,PUMP-RHR-102B,MCC B load crop: center feeder from MCC-ESS-B routes to PUMP-RHR-102B.,certain
+MCC-ESS-B,MOV-1201B,MCC B load crop: right feeder from MCC-ESS-B routes to MOV-1201B.,certain
+BUS-480A,CHGR-125A,Charger feeds wide/vital A crops: long solid 1A-480 feeder from BUS-480A left side routes to CHGR-125A AC input.,probable
+CHGR-125A,DC-BUS-125A,Vital Train A crop: CHGR-125A DC output lands on DC-BUS-125A.,certain
+BAT-125A,DC-BUS-125A,Vital Train A crop: BAT-125A feeder lands on DC-BUS-125A.,certain
+DC-BUS-125A,INV-120A,Vital Train A crop: DC-BUS-125A right terminal connects to INV-120A input.,certain
+INV-120A,UPS-BUS-A,Vital Train A crop: INV-120A output connects to UPS-BUS-A.,certain
+UPS-BUS-A,PANEL-RPS-A,Vital Train A/control crop: UPS-BUS-A feeder rises into PANEL-RPS-A bottom terminal.,certain
+UPS-BUS-A,INST-RACK-1,Vital Train A/rack zoom: UPS-BUS-A right terminal feeds INST-RACK-1 top terminal.,certain
+BUS-480B,CHGR-125B,Charger feeds wide crop: right-side 1B-480 feeder visually routes from the B 480 area to CHGR-125B AC input; exact bus landing is partly indirect.,probable
+BUS-480E1B,CHGR-125B,"Charger feeds wide and B-side zoom: CHGR-125B AC feeder also runs adjacent to the ESS-B feeder/bus route, making an ESS-B bus landing visually plausible.",uncertain
+CHGR-125B,DC-BUS-125B,Vital Train B crop: CHGR-125B DC output lands on DC-BUS-125B.,certain
+BAT-125B,DC-BUS-125B,Vital Train B crop: BAT-125B feeder lands on DC-BUS-125B.,certain
+DC-BUS-125B,INV-120B,Vital Train B crop: DC-BUS-125B terminal connects to INV-120B input.,certain
+INV-120B,UPS-BUS-B,Vital Train B crop: INV-120B output connects to UPS-BUS-B.,certain
+UPS-BUS-B,PANEL-RPS-B,Vital Train B/control crop: UPS-BUS-B feeder rises into PANEL-RPS-B bottom terminal.,certain
+RELAY-K86A,PANEL-RPS-A,Control interlocks crop: dashed vertical interlock drops from RELAY-K86A to PANEL-RPS-A side terminal.,certain
+RELAY-K86B,PANEL-RPS-B,Control interlocks crop: dashed vertical interlock drops from RELAY-K86B to PANEL-RPS-B side terminal.,certain
+PANEL-RPS-A,JB-ESF-01,Control interlocks crop: dashed run from PANEL-RPS-A top terminal goes to the left side of JB-ESF-01.,certain
+PANEL-RPS-B,JB-ESF-01,Control interlocks crop: dashed run from PANEL-RPS-B top terminal goes to the right side of JB-ESF-01.,certain
+CB-105,RELAY-K86A,Top Train A and control crops: CB-105 lower dashed CTRL-86A lockout lead continues to RELAY-K86A.,probable
+CB-106,RELAY-K86B,Top Train B and control crops: CB-106 lower dashed CTRL-86B lockout lead continues to RELAY-K86B.,probable

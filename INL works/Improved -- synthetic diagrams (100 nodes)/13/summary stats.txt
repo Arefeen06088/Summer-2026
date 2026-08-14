@@ -1,0 +1,16 @@
+REDEEMED SCHEMATIC QC REPORT
+Base image: synthetic_npp_electrical_schematic.png
+Output image: synthetic_npp_electrical_schematic_redeemed.png
+Components: 187
+Connections: 194
+Average node degree: 2.075
+Isolated components: 0
+Duplicate CSV rows: 0
+Missing required visible ID components from CSV: []
+Applied visual fixes:
+- Added visible labels CB-4A-48/CB-4B-48/CB-4C-48/CB-4D-48 and TR-480A/TR-480B/TR-480C/TR-480D.
+- Relocated CB-48A/CB-48B/CB-48C/CB-48D right of their transformer symbols, clearing the LC-480 busbars.
+- Extended LC-480A/B/C/D busbars to their PP permissive panel nodes.
+- Moved JB-A1/B1/C1/D1 left and redrew their branch/dashed connections.
+- Split and lowered DC-BUS-A/B/C/D labels so CHG-125A/B/C/D remain legible.
+- No topology changes; CSV matrix remains a one-row-per-visible-connection match.

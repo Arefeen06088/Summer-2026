@@ -1,0 +1,33 @@
+Connectivity matrix validation summary - Document 40
+Scope: Iteration_1 only
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\40\connectivity_matrix(1).csv
+Token usage: no token estimate files were present under this results tree.
+Note: MCC-21A-480V-3PH and MCC-21B-480V-3PH were normalized to GT MCC-21A and MCC-21B, consistent with the earlier non-penalized naming case.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\current_round_01_diego_matrix.csv): TP=54, FP=6, FN=2, Precision=0.900000, Recall=0.964286, F1=0.931034
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\current_round_01_jennifer_matrix.csv): TP=54, FP=4, FN=2, Precision=0.931034, Recall=0.964286, F1=0.947368
+- Diego -- Iteration 1 Round 2 (Iteration_1\current_round_02_diego_matrix.csv): TP=54, FP=4, FN=2, Precision=0.931034, Recall=0.964286, F1=0.947368
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\current_round_02_jennifer_matrix.csv): TP=54, FP=4, FN=2, Precision=0.931034, Recall=0.964286, F1=0.947368
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=54, FP=4, FN=2, Precision=0.931034, Recall=0.964286, F1=0.947368
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list and create false-positive incident edges.
+
+False-positive edge examples:
+- RPS-PNL-A -- VOLTAGE-SIG-A
+- RPS-PNL-B -- VOLTAGE-SIG-B
+- VOLTAGE-SIG-A -- VT-21A
+- VOLTAGE-SIG-B -- VT-21B
+
+False-negative edge examples:
+- RPS-PNL-A -- VT-21A
+- RPS-PNL-B -- VT-21B
+
+Extra/non-GT nodes causing performance drops:
+- VOLTAGE-SIG-A: 2 incident false-positive edge(s)
+- VOLTAGE-SIG-B: 2 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 2 extra/intermediate nodes were omitted from the extraction (VOLTAGE-SIG-A, VOLTAGE-SIG-B), metrics would be TP=54, FP=0, FN=2, Precision=1.000000, Recall=0.964286, F1=0.981818.

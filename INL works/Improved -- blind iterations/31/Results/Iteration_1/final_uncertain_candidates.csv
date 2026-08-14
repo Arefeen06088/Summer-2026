@@ -1,0 +1,7 @@
+node_a,node_b,reason
+FT-203,FCV-203,"Plausible through the same lower branch, but `FT-203 -- HV-203 -- FCV-203` is the more local accepted path without adding a second junction-spanning edge."
+SWS-501,HV-511A,"Plausible branch continuation, but `SWS-501 -- FT-511A -- HV-511A` preserves the visible named FT endpoint on that header segment."
+RD-601,FI-601,The RD/FI area has close parallel chemical-injection and CCW lines; the final matrix leaves the existing chemical path intact rather than merging nearby lines.
+LV-401,MOV-402,"The LV outlet appears to enter the return-strainer inlet area, but the accepted endpoint is `LV-401 -- STR-402`; a separate LV-to-MOV edge would overstate the inlet tee."
+TIC-310,FCV-310,The control around TIC/FIC-310 is visually plausible but not direct enough; retained control edge is `FIC-310 -- FCV-310`.
+COH-301,RTH-401,Retained in the final matrix because the vertical header segment is visibly continuous between named header boxes; nevertheless it remains a long-header adjacency and should not be expanded into additional cliques.

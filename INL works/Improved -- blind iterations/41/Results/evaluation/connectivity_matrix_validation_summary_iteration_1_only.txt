@@ -1,0 +1,49 @@
+Connectivity matrix validation summary - Document 41
+Scope: Iteration_1 only
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\41\synthetic_npp_connectivity_matrix(3).csv
+Token usage: no token estimate files were present under this results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_matrix.csv): TP=48, FP=13, FN=12, Precision=0.786885, Recall=0.800000, F1=0.793388
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_matrix.csv): TP=48, FP=12, FN=12, Precision=0.800000, Recall=0.800000, F1=0.800000
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_matrix.csv): TP=48, FP=12, FN=12, Precision=0.800000, Recall=0.800000, F1=0.800000
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_matrix.csv): TP=48, FP=12, FN=12, Precision=0.800000, Recall=0.800000, F1=0.800000
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=48, FP=12, FN=12, Precision=0.800000, Recall=0.800000, F1=0.800000
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list and create false-positive incident edges.
+- Some GT nodes are missing from the extraction, creating false negatives for their incident edges.
+
+False-positive edge examples:
+- BUS-1A-4.16KV -- CB-101
+- BUS-1A-4.16KV -- CB-105
+- BUS-1A-4.16KV -- CB-TIE-1AB
+- BUS-1A-4.16KV -- TR-LC-1A
+- BUS-1A-4.16KV -- TR-SAF-1A
+- BUS-1B-4.16KV -- CB-102
+- BUS-1B-4.16KV -- CB-106
+- BUS-1B-4.16KV -- CB-TIE-1AB
+- BUS-1B-4.16KV -- TR-LC-1B
+- BUS-1B-4.16KV -- TR-SAF-1B
+
+False-negative edge examples:
+- BUS-1A -- CB-101
+- BUS-1A -- CB-105
+- BUS-1A -- CB-TIE-1AB
+- BUS-1A -- TR-LC-1A
+- BUS-1A -- TR-SAF-1A
+- BUS-1B -- CB-102
+- BUS-1B -- CB-106
+- BUS-1B -- CB-TIE-1AB
+- BUS-1B -- TR-LC-1B
+- BUS-1B -- TR-SAF-1B
+
+Extra/non-GT nodes causing performance drops:
+- BUS-1A-4.16KV: 5 incident false-positive edge(s)
+- BUS-1B-4.16KV: 5 incident false-positive edge(s)
+- OFFSITE-A: 1 incident false-positive edge(s)
+- OFFSITE-B: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 4 extra/intermediate nodes were omitted from the extraction (BUS-1A-4.16KV, BUS-1B-4.16KV, OFFSITE-A, OFFSITE-B), metrics would be TP=48, FP=0, FN=12, Precision=1.000000, Recall=0.800000, F1=0.888889.

@@ -1,0 +1,8 @@
+Candidate,Final disposition,Reason
+`INV-120-1A` -- `BUS-125DC-B`,Removed previously / not accepted in final,Ambiguous lower conductor; not direct enough as a component-to-B-bus feed for the final precision matrix.
+`480V-CHGR-A-FEEDER` -- any `BUS-480-*` node,Rejected / not added,No raw-visible endpoint to a specific upstream 480 V node was established.
+`480V-CHGR-B-FEEDER` -- any `BUS-480-*` node,Rejected / not added,No raw-visible endpoint to a specific upstream 480 V node was established.
+`RPS-TRIP-BUS` -- `RELAY-K501A`,Rejected / not added,"The relay route to the trip coil is visible, but a direct endpoint to the named trip bus node is not established."
+`RPS-TRIP-BUS` -- `RELAY-K501B`,Rejected / not added,"The relay route to the trip coil is visible, but a direct endpoint to the named trip bus node is not established."
+"Clique expansion among RPS panels, relays, trip bus, and trip coil",Rejected / not added,Dashed/control routes were kept to direct endpoint-supported edges only.
+Intermediate `WN-*`/`W###` route nodes,Rejected / not added,These remain routing aids/intermediate wire labels rather than final matrix connectivity objects.

@@ -1,0 +1,176 @@
+source,target,evidence,confidence
+GRID-161KV,TR-SST-1A,top_4kv_sources_buses raw: solid feeder from grid source into station service transformer,certain
+TR-SST-1A,CB-401A,top_4kv_sources_buses raw: upper transformer secondary solid feeder terminates at CB-401A,certain
+TR-SST-1A,CB-401B,top_4kv_sources_buses raw: lower transformer secondary solid feeder terminates at CB-401B,certain
+CB-401A,BUS-4KV-A,top_4kv_sources_buses raw: CB-401A output dot on named BUS-4KV-A,certain
+CB-401B,BUS-4KV-B,top_4kv_sources_buses raw: CB-401B output dot on named BUS-4KV-B,certain
+BUS-4KV-A,CB-TIE-4AB,top_4kv_sources_buses raw: vertical tie conductor from BUS-4KV-A to CB-TIE-4AB,certain
+CB-TIE-4AB,BUS-4KV-B,top_4kv_sources_buses raw: vertical tie conductor from CB-TIE-4AB to BUS-4KV-B,certain
+GEN-EDG-A,CB-EDG-A,top_4kv_sources_buses raw: EDG-A generator vertical feeder into CB-EDG-A,certain
+CB-EDG-A,BUS-4KV-A,top_4kv_sources_buses raw: CB-EDG-A feeder dot on BUS-4KV-A,certain
+GEN-EDG-B,CB-EDG-B,top_4kv_sources_buses raw: EDG-B generator vertical feeder into CB-EDG-B,certain
+CB-EDG-B,BUS-4KV-B,top_4kv_sources_buses raw: CB-EDG-B feeder dot on BUS-4KV-B; crossing at upper bus has no junction dot,certain
+BUS-4KV-A,TR-4KV-480A,top/full raw: vertical solid drop from BUS-4KV-A to TR-4KV-480A; lower 4 kV crossing has no junction dot,certain
+TR-4KV-480A,CB-480A-IN,left_480_infeed_and_tie raw: transformer secondary solid feeder to CB-480A-IN,certain
+CB-480A-IN,BUS-480-A,left_480_infeed_and_tie raw: CB-480A-IN output dot on BUS-480-A,certain
+BUS-4KV-B,TR-4KV-480B,top/full raw: vertical solid drop from BUS-4KV-B to TR-4KV-480B,certain
+TR-4KV-480B,CB-480B-IN,right_480_infeed raw: transformer secondary solid feeder to CB-480B-IN,certain
+CB-480B-IN,BUS-480-B,right_480_infeed/full raw: CB-480B-IN output on lower 480 V bus; upper 480 bus crossing has no junction dot,certain
+BUS-480-A,CB-TIE-480AB,left_480_infeed_and_tie raw: BUS-480-A vertical tie conductor into CB-TIE-480AB,certain
+CB-TIE-480AB,BUS-480-B,left_480_infeed_and_tie raw: CB-TIE-480AB vertical conductor to BUS-480-B,certain
+BUS-480-A,CB-11A-FDR,full/mcc row raw: feeder breaker CB-11A-FDR drops from named BUS-480-A,certain
+CB-11A-FDR,MCC-11A,mcc row raw: CB-11A-FDR output conductor terminates at MCC-11A,certain
+BUS-480-A,CB-12A-FDR,full/mcc row raw: feeder breaker CB-12A-FDR drops from named BUS-480-A,certain
+CB-12A-FDR,MCC-12A,mcc row raw: CB-12A-FDR output conductor terminates at MCC-12A,certain
+BUS-480-A,CB-21A-FDR,full/mcc row raw: feeder breaker CB-21A-FDR drops from named BUS-480-A,certain
+CB-21A-FDR,MCC-21A,mcc row raw: CB-21A-FDR output conductor terminates at MCC-21A,certain
+BUS-480-A,CB-31A-FDR30-B,full/mcc row raw: feeder breaker CB-31A-FDR30-B drops from named BUS-480-A,certain
+CB-31A-FDR30-B,MCC-31A,mcc row raw: CB-31A-FDR30-B output conductor terminates at MCC-31A,certain
+BUS-480-B,CB-11B-FDR,full/mcc row raw: feeder breaker CB-11B-FDR drops from named BUS-480-B,certain
+CB-11B-FDR,MCC-11B,mcc row raw: CB-11B-FDR output conductor terminates at MCC-11B,certain
+BUS-480-B,CB-12B-FDR,full/mcc row raw: feeder breaker CB-12B-FDR drops from named BUS-480-B,certain
+CB-12B-FDR,MCC-12B,mcc row raw: CB-12B-FDR output conductor terminates at MCC-12B,certain
+BUS-480-B,CB-21B-FDR,full/mcc row raw: feeder breaker CB-21B-FDR drops from named BUS-480-B,certain
+CB-21B-FDR,MCC-21B,mcc row raw: CB-21B-FDR output conductor terminates at MCC-21B,certain
+BUS-480-B,CB-31B-FDR,full/mcc row raw: feeder breaker CB-31B-FDR drops from named BUS-480-B,certain
+CB-31B-FDR,MCC-31B,mcc row raw: CB-31B-FDR output conductor terminates at MCC-31B,certain
+MCC-11A,CB-P201A,selected safety loads/MCC raw: MCC-11A internal bus branch to CB-P201A,certain
+CB-P201A,RELAY-KP201A,selected safety loads raw: vertical branch conductor from CB-P201A to RELAY-KP201A,certain
+RELAY-KP201A,PUMP-RHR201A,selected safety loads raw: vertical branch conductor from RELAY-KP201A to PUMP-RHR201A,certain
+PUMP-RHR201A,GND-P201A,selected safety loads raw: visible branch termination from PUMP-RHR201A to GND-P201A,certain
+MCC-11A,CB-P211A,selected safety loads/MCC raw: MCC-11A internal bus branch to CB-P211A,certain
+CB-P211A,RELAY-KP211A,selected safety loads raw: vertical branch conductor from CB-P211A to RELAY-KP211A,certain
+RELAY-KP211A,PUMP-CS211A,selected safety loads raw: vertical branch conductor from RELAY-KP211A to PUMP-CS211A,certain
+PUMP-CS211A,GND-P211A,selected safety loads raw: visible branch termination from PUMP-CS211A to GND-P211A,certain
+MCC-11A,CB-P221A,selected safety loads/MCC raw: MCC-11A internal bus branch to CB-P221A,certain
+CB-P221A,RELAY-KP221A,selected safety loads raw: vertical branch conductor from CB-P221A to RELAY-KP221A,certain
+RELAY-KP221A,PUMP-SI221A,selected safety loads raw: vertical branch conductor from RELAY-KP221A to PUMP-SI221A,certain
+PUMP-SI221A,GND-P221A,selected safety loads raw: visible branch termination from PUMP-SI221A to GND-P221A,certain
+MCC-12A,CB-P101A,selected safety loads/MCC raw: MCC-12A internal bus branch to CB-P101A,certain
+CB-P101A,RELAY-KP101A,selected safety loads raw: vertical branch conductor from CB-P101A to RELAY-KP101A,certain
+RELAY-KP101A,PUMP-AFW101A,selected safety loads raw: vertical branch conductor from RELAY-KP101A to PUMP-AFW101A,certain
+PUMP-AFW101A,GND-P101A,selected safety loads raw: visible branch termination from PUMP-AFW101A to GND-P101A,certain
+MCC-12A,CB-HV101A,selected safety loads/MCC raw: MCC-12A internal bus branch to CB-HV101A,certain
+CB-HV101A,RELAY-KHV101A,selected safety loads raw: vertical branch conductor from CB-HV101A to RELAY-KHV101A,certain
+RELAY-KHV101A,MOV-HV101A,selected safety loads raw: vertical branch conductor from RELAY-KHV101A to MOV-HV101A,certain
+MOV-HV101A,TB-HV101A,selected safety loads raw: visible branch termination from MOV-HV101A to TB-HV101A,certain
+MCC-12A,CB-FN1A,selected safety loads/MCC raw: MCC-12A internal bus branch to CB-FN1A,certain
+CB-FN1A,RELAY-KFN1A,selected safety loads raw: vertical branch conductor from CB-FN1A to RELAY-KFN1A,certain
+RELAY-KFN1A,FAN-HV1A,selected safety loads raw: vertical branch conductor from RELAY-KFN1A to FAN-HV1A,certain
+FAN-HV1A,GND-FN1A,selected safety loads raw: visible branch termination from FAN-HV1A to GND-FN1A,certain
+MCC-21A,CB-P301A,selected safety loads/MCC raw: MCC-21A internal bus branch to CB-P301A,certain
+CB-P301A,RELAY-KP301A,selected safety loads raw: vertical branch conductor from CB-P301A to RELAY-KP301A,certain
+RELAY-KP301A,PUMP-CCW301A,selected safety loads raw: vertical branch conductor from RELAY-KP301A to PUMP-CCW301A,certain
+PUMP-CCW301A,GND-P301A,selected safety loads raw: visible branch termination from PUMP-CCW301A to GND-P301A,certain
+MCC-21A,CB-P401A,selected safety loads/MCC raw: MCC-21A internal bus branch to CB-P401A,certain
+CB-P401A,RELAY-KP401A,selected safety loads raw: vertical branch conductor from CB-P401A to RELAY-KP401A,certain
+RELAY-KP401A,PUMP-SW401A,selected safety loads raw: vertical branch conductor from RELAY-KP401A to PUMP-SW401A,certain
+PUMP-SW401A,GND-P401A,selected safety loads raw: visible branch termination from PUMP-SW401A to GND-P401A,certain
+MCC-21A,CB-HT1A,selected safety loads/MCC raw: MCC-21A internal bus branch to CB-HT1A,certain
+CB-HT1A,RELAY-KHT1A,selected safety loads raw: vertical branch conductor from CB-HT1A to RELAY-KHT1A,certain
+RELAY-KHT1A,HTR-PZR1A,selected safety loads raw: vertical branch conductor from RELAY-KHT1A to HTR-PZR1A,certain
+HTR-PZR1A,TB-HT1A,selected safety loads raw: visible branch termination from HTR-PZR1A to TB-HT1A,certain
+MCC-31A,CB-RM1A,selected safety loads/MCC raw: MCC-31A internal bus branch to CB-RM1A,certain
+CB-RM1A,RELAY-KRM1A,selected safety loads raw: vertical branch conductor from CB-RM1A to RELAY-KRM1A,certain
+RELAY-KRM1A,MON-RAD1A,selected safety loads raw: vertical branch conductor from RELAY-KRM1A to MON-RAD1A,certain
+MON-RAD1A,TB-RM1A,selected safety loads raw: visible branch termination from MON-RAD1A to TB-RM1A,certain
+MCC-31A,CB-P501A,selected safety loads/MCC raw: MCC-31A internal bus branch to CB-P501A,certain
+CB-P501A,RELAY-KP501A,selected safety loads raw: vertical branch conductor from CB-P501A to RELAY-KP501A,certain
+RELAY-KP501A,PUMP-CHW501A,selected safety loads raw: vertical branch conductor from RELAY-KP501A to PUMP-CHW501A,certain
+PUMP-CHW501A,GND-P501A,selected safety loads raw: visible branch termination from PUMP-CHW501A to GND-P501A,certain
+MCC-31A,CB-CV121A,selected safety loads/MCC raw: MCC-31A internal bus branch to CB-CV121A,certain
+CB-CV121A,RELAY-KCV121A,selected safety loads raw: vertical branch conductor from CB-CV121A to RELAY-KCV121A,certain
+RELAY-KCV121A,MOV-CV121A,selected safety loads raw: vertical branch conductor from RELAY-KCV121A to MOV-CV121A,certain
+MOV-CV121A,TB-CV121A,selected safety loads raw: visible branch termination from MOV-CV121A to TB-CV121A,certain
+MCC-11B,CB-P201B,selected safety loads/MCC raw: MCC-11B internal bus branch to CB-P201B,certain
+CB-P201B,RELAY-KP201B,selected safety loads raw: vertical branch conductor from CB-P201B to RELAY-KP201B,certain
+RELAY-KP201B,PUMP-RHR201B,selected safety loads raw: vertical branch conductor from RELAY-KP201B to PUMP-RHR201B,certain
+PUMP-RHR201B,GND-P201B,selected safety loads raw: visible branch termination from PUMP-RHR201B to GND-P201B,certain
+MCC-11B,CB-P211B,selected safety loads/MCC raw: MCC-11B internal bus branch to CB-P211B,certain
+CB-P211B,RELAY-KP211B,selected safety loads raw: vertical branch conductor from CB-P211B to RELAY-KP211B,certain
+RELAY-KP211B,PUMP-CS211B,selected safety loads raw: vertical branch conductor from RELAY-KP211B to PUMP-CS211B,certain
+PUMP-CS211B,GND-P211B,selected safety loads raw: visible branch termination from PUMP-CS211B to GND-P211B,certain
+MCC-11B,CB-P221B,selected safety loads/MCC raw: MCC-11B internal bus branch to CB-P221B,certain
+CB-P221B,RELAY-KP221B,selected safety loads raw: vertical branch conductor from CB-P221B to RELAY-KP221B,certain
+RELAY-KP221B,PUMP-SI221B,selected safety loads raw: vertical branch conductor from RELAY-KP221B to PUMP-SI221B,certain
+PUMP-SI221B,GND-P221B,selected safety loads raw: visible branch termination from PUMP-SI221B to GND-P221B,certain
+MCC-12B,CB-P101B,selected safety loads/MCC raw: MCC-12B internal bus branch to CB-P101B,certain
+CB-P101B,RELAY-KP101B,selected safety loads raw: vertical branch conductor from CB-P101B to RELAY-KP101B,certain
+RELAY-KP101B,PUMP-AFW101B,selected safety loads raw: vertical branch conductor from RELAY-KP101B to PUMP-AFW101B,certain
+PUMP-AFW101B,GND-P101B,selected safety loads raw: visible branch termination from PUMP-AFW101B to GND-P101B,certain
+MCC-12B,CB-HV101B,selected safety loads/MCC raw: MCC-12B internal bus branch to CB-HV101B,certain
+CB-HV101B,RELAY-KHV101B,selected safety loads raw: vertical branch conductor from CB-HV101B to RELAY-KHV101B,certain
+RELAY-KHV101B,MOV-HV101B,selected safety loads raw: vertical branch conductor from RELAY-KHV101B to MOV-HV101B,certain
+MOV-HV101B,TB-HV101B,selected safety loads raw: visible branch termination from MOV-HV101B to TB-HV101B,certain
+MCC-12B,CB-FN1B,selected safety loads/MCC raw: MCC-12B internal bus branch to CB-FN1B,certain
+CB-FN1B,RELAY-KFN1B,selected safety loads raw: vertical branch conductor from CB-FN1B to RELAY-KFN1B,certain
+RELAY-KFN1B,FAN-HV1B,selected safety loads raw: vertical branch conductor from RELAY-KFN1B to FAN-HV1B,certain
+FAN-HV1B,GND-FN1B,selected safety loads raw: visible branch termination from FAN-HV1B to GND-FN1B,certain
+MCC-21B,CB-P301B,selected safety loads/MCC raw: MCC-21B internal bus branch to CB-P301B,certain
+CB-P301B,RELAY-KP301B,selected safety loads raw: vertical branch conductor from CB-P301B to RELAY-KP301B,certain
+RELAY-KP301B,PUMP-CCW301B,selected safety loads raw: vertical branch conductor from RELAY-KP301B to PUMP-CCW301B,certain
+PUMP-CCW301B,GND-P301B,selected safety loads raw: visible branch termination from PUMP-CCW301B to GND-P301B,certain
+MCC-21B,CB-P401B,selected safety loads/MCC raw: MCC-21B internal bus branch to CB-P401B,certain
+CB-P401B,RELAY-KP401B,selected safety loads raw: vertical branch conductor from CB-P401B to RELAY-KP401B,certain
+RELAY-KP401B,PUMP-SW401B,selected safety loads raw: vertical branch conductor from RELAY-KP401B to PUMP-SW401B,certain
+PUMP-SW401B,GND-P401B,selected safety loads raw: visible branch termination from PUMP-SW401B to GND-P401B,certain
+MCC-21B,CB-HT1B,selected safety loads/MCC raw: MCC-21B internal bus branch to CB-HT1B,certain
+CB-HT1B,RELAY-KHT1B,selected safety loads raw: vertical branch conductor from CB-HT1B to RELAY-KHT1B,certain
+RELAY-KHT1B,HTR-PZR1B,selected safety loads raw: vertical branch conductor from RELAY-KHT1B to HTR-PZR1B,certain
+HTR-PZR1B,TB-HT1B,selected safety loads raw: visible branch termination from HTR-PZR1B to TB-HT1B,certain
+MCC-31B,CB-RM1B,selected safety loads/MCC raw: MCC-31B internal bus branch to CB-RM1B,certain
+CB-RM1B,RELAY-KRM1B,selected safety loads raw: vertical branch conductor from CB-RM1B to RELAY-KRM1B,certain
+RELAY-KRM1B,MON-RAD1B,selected safety loads raw: vertical branch conductor from RELAY-KRM1B to MON-RAD1B,certain
+MON-RAD1B,TB-RM1B,selected safety loads raw: visible branch termination from MON-RAD1B to TB-RM1B,certain
+MCC-31B,CB-P501B,selected safety loads/MCC raw: MCC-31B internal bus branch to CB-P501B,certain
+CB-P501B,RELAY-KP501B,selected safety loads raw: vertical branch conductor from CB-P501B to RELAY-KP501B,certain
+RELAY-KP501B,PUMP-CHW501B,selected safety loads raw: vertical branch conductor from RELAY-KP501B to PUMP-CHW501B,certain
+PUMP-CHW501B,GND-P501B,selected safety loads raw: visible branch termination from PUMP-CHW501B to GND-P501B,certain
+MCC-31B,CB-CV121B,selected safety loads/MCC raw: MCC-31B internal bus branch to CB-CV121B,certain
+CB-CV121B,RELAY-KCV121B,selected safety loads raw: vertical branch conductor from CB-CV121B to RELAY-KCV121B,certain
+RELAY-KCV121B,MOV-CV121B,selected safety loads raw: vertical branch conductor from RELAY-KCV121B to MOV-CV121B,certain
+MOV-CV121B,TB-CV121B,selected safety loads raw: visible branch termination from MOV-CV121B to TB-CV121B,certain
+BUS-480-A,TR-RPS-A,full/control raw: solid vertical feeder from BUS-480-A to TR-RPS-A,certain
+TR-RPS-A,MG-RPS-A,control_protection_a raw: TR-RPS-A lower conductor to MG-RPS-A,certain
+BUS-480-B,TR-RPS-B,full/control raw: solid vertical feeder from BUS-480-B to TR-RPS-B,certain
+TR-RPS-B,MG-RPS-B,control_protection_b raw: TR-RPS-B lower conductor to MG-RPS-B,certain
+BATT-125A,BUS-125DC-A,dc_vital_a raw: BATT-125A terminal tied to named BUS-125DC-A,certain
+CHGR-125A,BUS-125DC-A,dc_vital_a raw: CHGR-125A terminal tied to named BUS-125DC-A,certain
+INV-120A,BUS-125DC-A,dc_vital_a raw: INV-120A upper input tied to named BUS-125DC-A,certain
+INV-120A,BUS-120-RPS-A,dc_vital_a raw: INV-120A lower output tied to named BUS-120-RPS-A,certain
+BATT-125B,BUS-125DC-B,dc_vital_b raw: BATT-125B terminal tied to named BUS-125DC-B,certain
+CHGR-125B,BUS-125DC-B,dc_vital_b raw: CHGR-125B terminal tied to named BUS-125DC-B,certain
+INV-120B,BUS-125DC-B,dc_vital_b raw: INV-120B upper input tied to named BUS-125DC-B,certain
+INV-120B,BUS-120-RPS-B,dc_vital_b raw: INV-120B lower output tied to named BUS-120-RPS-B,certain
+CP-ESF-A,TB-2A,control_protection_a raw: CP-ESF-A bottom conductor terminates at TB-2A,certain
+TB-2A,PROT-GF-A,control_protection_a raw: TB-2A vertical conductor terminates at PROT-GF-A,certain
+CP-DCS-01,TB-3A,control_protection_a raw: CP-DCS-01 bottom conductor terminates at TB-3A,certain
+PROT-UV-A,RELAY-27A,control_protection_a raw: dashed control line terminates between PROT-UV-A and RELAY-27A,certain
+PROT-GF-A,RELAY-86A,control_protection_a raw: dashed control line terminates between PROT-GF-A and RELAY-86A,certain
+CP-ESF-B,TB-2B,control_protection_b raw: CP-ESF-B bottom conductor terminates at TB-2B,certain
+TB-2B,PROT-GF-B,control_protection_b raw: TB-2B vertical conductor terminates at PROT-GF-B,certain
+CP-ANN-01,TB-3B,control_protection_b raw: CP-ANN-01 bottom conductor terminates at TB-3B,certain
+PROT-UV-B,RELAY-27B,control_protection_b raw: dashed control line terminates between PROT-UV-B and RELAY-27B,certain
+PROT-GF-B,RELAY-86B,control_protection_b raw: dashed control line terminates between PROT-GF-B and RELAY-86B,certain
+PT-RCS101,TB-ESF-1,control_protection_a raw: dotted signal line from PT-RCS101 to TB-ESF-1,certain
+PT-RCS101,REC-SOE-1,control_protection_a raw: vertical named termination from PT-RCS101 to REC-SOE-1,certain
+LT-RWST101,TB-ESF-1,control_protection_a raw: dotted signal line from LT-RWST101 to TB-ESF-1,certain
+LT-RWST101,ANN-501,control_protection_a raw: vertical named termination from LT-RWST101 to ANN-501,certain
+FT-AFW101,TB-ESF-1,control_protection_a raw: dotted signal line from FT-AFW101 to TB-ESF-1,certain
+FT-AFW101,METER-VM-1,control_protection_a raw: vertical named termination from FT-AFW101 to METER-VM-1,certain
+MG-RPS-A,TB-ESF-1,control_protection_a raw: dotted signal/control line between MG-RPS-A and TB-ESF-1,certain
+MG-RPS-A,FT-AFW101,control_protection_a raw: vertical conductor from MG-RPS-A to FT-AFW101,uncertain_visual
+METER-VM-1,BUS-120-RPS-A,dc_vital_a/full raw: METER-VM-1 vertical line terminates at BUS-120-RPS-A,certain
+RTD-RCS101,MG-RPS-B,control_protection_b raw: vertical conductor from MG-RPS-B to RTD-RCS101,certain
+RTD-RCS101,BUS-120-RPS-B,dc_vital_b/full raw: RTD-RCS101 vertical line terminates at BUS-120-RPS-B,uncertain_visual
+MG-RPS-B,TB-ESF-2,control_protection_b raw: dotted signal/control line between MG-RPS-B and TB-ESF-2,certain
+TB-ESF-2,LS-SUMP101,control_protection_b raw: dotted signal line from TB-ESF-2 to LS-SUMP101,certain
+TB-ESF-2,XS-DOOR101,control_protection_b raw: dotted signal line from TB-ESF-2 toward XS-DOOR101,certain
+XS-DOOR101,JB-CONTAIN,control_protection_b raw: dotted signal route visibly terminates at XS-DOOR101 and JB-CONTAIN,uncertain_routed_signal
+UCP-01,GND-NO,zoom_gnd_no_ucp/jennifer_ucp_context raw: labeled UCP-01 box has solid down-lead terminating at GND-NO ground symbol,certain
+UCP-01,BUS-120-RPS-A,jennifer_ucp_wide raw: dashed conductor lands on UCP-01 left terminal and the visible end/dot of BUS-120-RPS-A,certain_visual
+UCP-01,BUS-120-RPS-B,jennifer_ucp_wide raw: dashed conductor lands on UCP-01 right terminal and the visible end/dot of BUS-120-RPS-B,certain_visual
+CP-RPS-A,DB-RPS-A3-1A,round3_rps_a_fullraw_zoom/control_protection_a raw: solid vertical endpoint from CP-RPS-A bottom terminal to local junction box labeled DB-RPS-A3-1A,certain_visual
+DB-RPS-A3-1A,PROT-UV-A,round3_rps_a_fullraw_zoom/control_protection_a raw: solid vertical endpoint from DB-RPS-A3-1A bottom terminal to PROT-UV-A top terminal,certain_visual
+CP-RPS-B,JB-RPS-B3-1B,round3_rps_b_fullraw_zoom/control_protection_b raw: solid vertical endpoint from CP-RPS-B bottom terminal to local junction box labeled JB-RPS-B3-1B,certain_visual
+JB-RPS-B3-1B,PROT-UV-B,round3_rps_b_fullraw_zoom/control_protection_b raw: solid vertical endpoint from JB-RPS-B3-1B bottom terminal to PROT-UV-B top terminal,certain_visual

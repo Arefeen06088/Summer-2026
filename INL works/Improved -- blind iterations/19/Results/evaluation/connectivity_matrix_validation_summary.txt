@@ -1,0 +1,28 @@
+Connectivity matrix validation summary - Document 19
+Input tree: Improved -- blind iterations
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\19\connectivity_matrix_v3.csv
+Token usage: no token estimate files were present under the requested results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_matrix.csv): TP=197, FP=3, FN=3, Precision=0.985000, Recall=0.985000, F1=0.985000
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_matrix.csv): TP=193, FP=3, FN=7, Precision=0.984694, Recall=0.965000, F1=0.974747
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_matrix.csv): TP=193, FP=3, FN=7, Precision=0.984694, Recall=0.965000, F1=0.974747
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_matrix.csv): TP=193, FP=3, FN=7, Precision=0.984694, Recall=0.965000, F1=0.974747
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=193, FP=3, FN=7, Precision=0.984694, Recall=0.965000, F1=0.974747
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- BAT-125A -- CHGR-125A
+- BAT-125B -- CHGR-125B
+- INST-601 -- LS-MOV601
+
+False-negative edge examples:
+- BUS-125DC-A -- CHGR-125A
+- BUS-125DC-B -- CHGR-125B
+- BUS-480-A -- CB-301
+- BUS-480-A -- CHGR-125A
+- BUS-480-B -- CB-302
+- BUS-480-B -- CHGR-125B
+- LS-MOV601 -- VALVE-MOV601

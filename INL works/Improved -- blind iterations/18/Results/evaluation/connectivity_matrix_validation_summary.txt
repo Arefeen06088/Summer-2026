@@ -1,0 +1,56 @@
+Connectivity matrix validation summary - Document 18
+Input tree: Improved -- blind iterations
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\18\synthetic_nuclear_connectivity_matrix_readable.csv
+Token usage: no token estimate files were present under the requested results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_matrix.csv): TP=181, FP=11, FN=19, Precision=0.942708, Recall=0.905000, F1=0.923469
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_matrix.csv): TP=183, FP=6, FN=17, Precision=0.968254, Recall=0.915000, F1=0.940874
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_matrix.csv): TP=183, FP=6, FN=17, Precision=0.968254, Recall=0.915000, F1=0.940874
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_matrix.csv): TP=183, FP=6, FN=17, Precision=0.968254, Recall=0.915000, F1=0.940874
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=183, FP=6, FN=17, Precision=0.968254, Recall=0.915000, F1=0.940874
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often act like extra/intermediate nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- BUS-4160A -- TB-RPS-A
+- FU-PT-A -- XFRM-CTRL-A
+- FU-PT-B -- XFRM-CTRL-B
+- TB-RPS-A -- TR-480-A1
+- TB-RPS-A -- XFRM-CTRL-A
+- TB-RPS-B -- XFRM-CTRL-B
+
+False-negative edge examples:
+- BUS-4160A -- TR-480-A1
+- FU-PT-A -- XFMR-CTRL-A
+- FU-PT-B -- XFMR-CTRL-B
+- JB-RPS-A -- RELAY-K101
+- JB-RPS-B -- RELAY-K201
+- PLC-RPS-A -- RELAY-K101
+- PLC-RPS-A -- RELAY-K102
+- PLC-RPS-A -- RELAY-K103
+- PLC-RPS-A -- RELAY-K104
+- PLC-RPS-B -- RELAY-K201
+
+Extra/non-GT nodes causing performance drops:
+- XFRM-CTRL-A: 2 incident false-positive edge(s)
+- XFRM-CTRL-B: 2 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 2 extra/intermediate nodes were omitted from the extraction (XFRM-CTRL-A, XFRM-CTRL-B), metrics would be TP=183, FP=2, FN=17, Precision=0.989189, Recall=0.915000, F1=0.950649.
+
+Missing GT node examples:
+- RELAY-K101: 2 missed incident GT edge(s)
+- RELAY-K102: 2 missed incident GT edge(s)
+- RELAY-K201: 2 missed incident GT edge(s)
+- RELAY-K202: 2 missed incident GT edge(s)
+- XFMR-CTRL-A: 2 missed incident GT edge(s)
+- XFMR-CTRL-B: 2 missed incident GT edge(s)
+- JB-RPS-A: 1 missed incident GT edge(s)
+- JB-RPS-B: 1 missed incident GT edge(s)
+- PNL-ANN-A: 1 missed incident GT edge(s)
+- PNL-ANN-B: 1 missed incident GT edge(s)

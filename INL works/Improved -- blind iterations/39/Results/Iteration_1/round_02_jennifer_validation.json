@@ -1,0 +1,53 @@
+{
+  "reviewer": "Jennifer",
+  "round": "round_02",
+  "iteration": "Iteration_1",
+  "scope": "Allowed doc39 input resources, listed current aids/crops, input-derived geometry sanity aid, and current Iteration_1 round artifacts only.",
+  "decision": {
+    "RPS-A -> JB-A101": "keep",
+    "RPS-B -> JB-B101": "keep",
+    "agreement_with_diego_r02": true,
+    "matrix_identical_to_diego_r02": true
+  },
+  "node_count": 54,
+  "edge_row_count": 79,
+  "edge_status_counts": {
+    "keep": 56,
+    "remove": 23
+  },
+  "keep_edge_count": 56,
+  "remove_edge_count": 23,
+  "uncertain_edge_count": 0,
+  "matrix_shape": [
+    54,
+    54
+  ],
+  "excluded_annotation_labels": [
+    "CONTROL-ROOM-ANNUNCIATION",
+    "DIVISION-I-TRAIN-A-SAFETY-POWER",
+    "DIVISION-II-TRAIN-B-SAFETY-POWER",
+    "LC-A",
+    "LC-B",
+    "N-O-TIE",
+    "NORMAL-OFFSITE-FEED-A",
+    "NORMAL-OFFSITE-FEED-B"
+  ],
+  "checks": {
+    "all_status_values_valid": true,
+    "no_duplicate_node_names": true,
+    "no_wire_node_nodes": true,
+    "no_annotation_only_final_nodes": true,
+    "keep_edges_reference_only_final_nodes": true,
+    "no_duplicate_keep_edges": true,
+    "matrix_nodes_match_nodes_csv": true,
+    "matrix_includes_only_keep_edges": true,
+    "matrix_edge_count_matches_keep_edges": true,
+    "matrix_symmetric": true,
+    "matrix_zero_diagonal": true,
+    "matrix_identical_to_diego_r02": true,
+    "rps_a_to_jb_a101_keep": true,
+    "rps_b_to_jb_b101_keep": true
+  },
+  "saturation": true,
+  "saturation_assessment": "Saturation reached. The only remaining Diego/Jennifer R02 disagreement was rechecked against the raw schematic and current crops; both long dashed RPS-to-JB control conductors are sufficiently supported as keep edges."
+}

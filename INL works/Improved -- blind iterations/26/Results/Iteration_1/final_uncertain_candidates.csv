@@ -1,0 +1,6 @@
+Candidate,Final status,Reason
+`BUS-125DCA` -- `CB-INV-A` and `BUS-125DCB` -- `CB-INV-B`,Kept,The breakers remain plausible visible taps at the DC bus near the inverter feeder labels.
+`BUS-125DCA` -- `INV-31A` and `BUS-125DCB` -- `INV-31B`,Kept,The inverter vertical conductors land on the DC buses and continue to the inverter symbols.
+`RPS-PNL-A` -- `TB-UPS-A` and `RPS-PNL-B` -- `TB-UPS-B`,Kept,"These are dashed/control-style links, but they terminate between named devices."
+`RELAY-K7*` -- `TB-RPS-*` -- `PT-31*` chains,Kept,Endpoint-supported instrument/control chains remain plausible and saturated.
+"Small route labels such as `DC-A-INV`, `DC-B-INV`, `120-A-N`, and `120-B-N`",Notes-only,"These are conductor/route labels, not independent connectivity nodes."

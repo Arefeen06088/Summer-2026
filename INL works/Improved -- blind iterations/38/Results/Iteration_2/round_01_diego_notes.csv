@@ -1,0 +1,18 @@
+item,decision,evidence
+node_model,included physical components plus true visible BUS-* rails,"Used component_visual_ocr_labels.csv for 47 physical component names and raw schematic/overlay for BUS-4160A, BUS-4160B, BUS-480A, BUS-480B, BUS-125DC-A, BUS-120AC-A, BUS-125DC-B, BUS-120AC-B."
+physical_component_count,47 included,All physical_component rows in component_visual_ocr_labels.csv were visually present on the raw schematic.
+bus_node_count,8 included,Only printed BUS-* rails were promoted to named connectivity nodes.
+descriptor_labels,excluded as separate nodes,"4.16 KV ESF DIV I/II, 480 VAC DIV I/II, 120 VAC INST A/B, and 125 VDC TRAIN A/B describe the BUS-* rails and were not separate nodes."
+terminal_and_route_labels,excluded,"2A-XC1, 2A-BCL, 2B-XC1, 2B-BCL, 2A-F1..2A-F6, 2B-F1..2B-F6, and MCC bucket numbers are route/terminal/feeder labels, not physical components or buses."
+external_continuations,excluded,"TO UNIT AUX BUS CONT., FROM UNIT MAIN GENERATOR, SOURCE: STARTUP AUX XFMR, and TO STATION YARD CONT. are continuation/source descriptors rather than named in-scope nodes."
+BUS-4160A_to_BUS-4160B,no direct bus-bus edge,CB-105 is shown as normally-open bus tie; edges are BUS-4160A-CB-105 and CB-105-BUS-4160B only.
+BUS-480A_to_BUS-480B,excluded,Raw schematic states 480V tie reserved space/no connection shown between the two 480 VAC divisions.
+TR-CPT-A_to_BUS-120AC-A,excluded but visually reviewed,TR-CPT-A lower secondary descends to an isolated terminal dot left of BUS-120AC-A; no solid junction to BUS-120AC-A is visible.
+TR-CPT-B_to_BUS-120AC-B,included,"TR-CPT-B lower secondary visibly lands on BUS-120AC-B, unlike the A-side CPT."
+RELAY-86A,included to BUS-125DC-A with dashed/control confidence,Dashed vertical control tap leaves BUS-125DC-A and enters RELAY-86A; no separate RPS-PNL-A edge was visible.
+RELAY-86B,included to BUS-125DC-B with dashed/control confidence,Dashed vertical control tap leaves BUS-125DC-B and enters RELAY-86B; no separate RPS-PNL-B edge was visible.
+RELAY-27A,included only to RPS-PNL-A,RELAY-27A has a dashed control link to RPS-PNL-A but sits off BUS-120AC-A with a visible gap/no solid tap.
+RELAY-27B,included to BUS-120AC-B and RPS-PNL-B,RELAY-27B is visibly tied into BUS-120AC-B and also has a dashed control link to RPS-PNL-B.
+GND-STA,included as isolated physical node,"GND-STA station ground symbol is visible, but its dotted/dashed route does not make a clear component-to-bus/component edge in the selected node model."
+S-125DC-A_and_S-125DC-B,excluded as separate nodes,Text appears adjacent to battery symbols; battery components are represented as BAT-125A/B and rails as BUS-125DC-A/B.
+dashed_boundaries,excluded as containment/route geometry,Dashed boxes around diesel/control areas were treated as boundaries or cable routes except where a named relay had a visible dashed tap.

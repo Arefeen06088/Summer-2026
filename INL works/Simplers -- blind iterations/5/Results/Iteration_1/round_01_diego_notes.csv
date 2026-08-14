@@ -1,0 +1,13 @@
+item,decision,evidence
+node_set,included,"Included 51 named physical components from the component/OCR CSV plus 10 logical connectivity endpoints visible as true buses, rails, control lanes, or named signal lanes."
+TRAIN-A-480V-SAFETY-CHANNEL,excluded_context_label,Top banner describes sheet region/train; no distinct wire terminal or bus endpoint visible.
+TRAIN-B-480V-SAFETY-CHANNEL,excluded_context_label,Top banner describes sheet region/train; no distinct wire terminal or bus endpoint visible.
+SOURCE-NORMAL,excluded_context_label,"Text is a source annotation near the A-train source equipment, not a separate wired endpoint; connectivity represented through UAT-2A, DG-21A, DS-21A, and ATS-21A."
+SOURCE-ALTERNATE,excluded_context_label,"Text is a source annotation near the B-train source equipment, not a separate wired endpoint; connectivity represented through SAT-2B, DG-21B, DS-21B, and ATS-21B."
+MCC physical vs bus logical,included_internal_edges,MCC-21A and MCC-21B physical enclosures are retained as named components and tied to their corresponding 480 V 3PH logical bus nodes.
+TIE-BKR-21AB,included_between_buses,"Breaker is drawn in series between the SWGR-21A and SWGR-21B bus sections, so both bus-to-breaker edges are included."
+VT signal crossings,no_dot_interpretation,"VT dashed voltage-signal lines pass near MOV-RWST feeders; raw schematic explicitly notes no dot means no junction, so MOV-RWST to voltage-signal edges were not added."
+CT-21A / CT-21B,uncertain_edges_retained,CTs are visually adjacent to fan feeder branches rather than clearly inline; CT-to-fan and CT-to-RPS-panel edges are included at medium confidence.
+DC bus to RPS panels,uncertain_edges_retained,Dashed/terminal drops from DC bus regions to RPS panels are visually plausible control-power feeds; included at medium confidence.
+VOLTAGE-SIG-A / VOLTAGE-SIG-B,uncertain_edges_retained,Named voltage signal lanes are connected to VTs and RPS panels; RPS-panel landing is visually plausible but less direct than solid feeder connections.
+anonymous wire nodes,excluded,WIRE-NODE-* topology points were used as visual aids only and not included as matrix nodes because they are unnamed junctions/endpoints.

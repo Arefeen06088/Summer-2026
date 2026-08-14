@@ -1,0 +1,48 @@
+Connectivity matrix validation summary - Document 5, Iteration 1
+
+Ground truth normalization:
+The GT file is an edge list, so it was normalized into an undirected set of component-to-component edges before validation. The extracted CSV files were adjacency matrices and were normalized into the same undirected edge-set format. Diego/Jennifer round matrix files and final_connectivity_matrix.csv were evaluated.
+
+GT after normalization: 56 undirected edges across 55 component names.
+
+Document-specific normalization:
+For this document, MCC-21A-480V-3PH and MCC-21B-480V-3PH were treated as drawing-faithful aliases for the GT nodes MCC-21A and MCC-21B. The metrics CSV uses this alias-normalized scoring, so those MCC labels are not penalized.
+
+Main reason the raw scores were not perfect:
+The dominant raw-score issue is close-but-not-perfect component naming for MCC nodes. The extracted matrices use MCC-21A-480V-3PH and MCC-21B-480V-3PH, while the GT uses MCC-21A and MCC-21B. Under exact validation, this creates 14 false positives and 14 false negatives in Jennifer Round 1, Diego Round 2, Jennifer Round 2, and the final matrix, even though the physical MCC connectivity is otherwise consistent.
+
+Close-but-not-perfect component names driving most of the score drop:
+- MCC-21A-480V-3PH should map to MCC-21A
+- MCC-21B-480V-3PH should map to MCC-21B
+
+Raw component-name effects:
+- Extra extracted names across the matrices: MCC-21A-480V-3PH, MCC-21B-480V-3PH, RPS-CH-A-CONTROL-LANE, RPS-CH-B-CONTROL-LANE, VOLTAGE-SIG-A, VOLTAGE-SIG-B.
+- Missing exact GT names across the matrices: MCC-21A, MCC-21B.
+
+Remaining issues after applying the MCC name alias counterfactual:
+If MCC-21A-480V-3PH and MCC-21B-480V-3PH are treated as MCC-21A and MCC-21B, Jennifer Round 1, Diego Round 2, Jennifer Round 2, and the final matrix become perfect. Diego Round 1 still has extra intermediate control/signal nodes and four false-positive GT-node edges after the MCC alias correction.
+
+Examples causing the raw drop:
+- CB-MPA1 -- MCC-21A-480V-3PH was extracted, but the GT expects CB-MPA1 -- MCC-21A.
+- MCC-21A-480V-3PH -- PUMP-CCW21A was extracted, but the GT expects MCC-21A -- PUMP-CCW21A.
+- CB-MPB1 -- MCC-21B-480V-3PH was extracted, but the GT expects CB-MPB1 -- MCC-21B.
+- MCC-21B-480V-3PH -- MOV-RWST21B was extracted, but the GT expects MCC-21B -- MOV-RWST21B.
+- Diego Round 1 also inserted extra intermediate nodes: RPS-CH-A-CONTROL-LANE, RPS-CH-B-CONTROL-LANE, VOLTAGE-SIG-A, and VOLTAGE-SIG-B. These split several GT relay/RPS and voltage-signal edges into two-hop paths.
+
+Counterfactual performance:
+The metrics CSV now uses MCC alias-normalized scores. The comparisons below preserve the previous raw exact-name values for context and show what happens if extra intermediate nodes are collapsed, and if remaining incorrect/missing edges are fixed.
+- Diego -- Round 1: raw TP=32, FP=34, FN=24, Precision=0.484848, Recall=0.571429, F1=0.524590. If MCC-21A/B-480V-3PH were treated as MCC-21A/B, performance would become TP=46, FP=18, FN=10, Precision=0.718750, Recall=0.821429, F1=0.766667. If extra intermediate nodes were collapsed after that MCC-name correction, performance would become TP=56, FP=4, FN=0, Precision=0.933333, Recall=1.000000, F1=0.965517. If the remaining FP edges after MCC-name correction were not put in extraction (CB-MPA1 -- RPS-CH-A-CONTROL-LANE, CB-MPB1 -- RPS-CH-B-CONTROL-LANE, CT-21A -- FAN-RB21A, CT-21B -- FAN-RB21B, DC-BUS-21A -- RPS-PNL-A, DC-BUS-21B -- RPS-PNL-B, INV-21A -- RPS-CH-A-CONTROL-LANE, INV-21B -- RPS-CH-B-CONTROL-LANE, RELAY-86A -- RPS-CH-A-CONTROL-LANE, RELAY-86B -- RPS-CH-B-CONTROL-LANE, RELAY-K21A -- RPS-CH-A-CONTROL-LANE, RELAY-K21B -- RPS-CH-B-CONTROL-LANE, RPS-CH-A-CONTROL-LANE -- RPS-PNL-A, RPS-CH-B-CONTROL-LANE -- RPS-PNL-B, RPS-PNL-A -- VOLTAGE-SIG-A, RPS-PNL-B -- VOLTAGE-SIG-B, VOLTAGE-SIG-A -- VT-21A, VOLTAGE-SIG-B -- VT-21B), performance would become TP=46, FP=0, FN=10, Precision=1.000000, Recall=0.821429, F1=0.901961. If the remaining missed GT edges after MCC-name correction were added (CB-MPA1 -- RELAY-86A, CB-MPB1 -- RELAY-86B, INV-21A -- RPS-PNL-A, INV-21B -- RPS-PNL-B, RELAY-86A -- RELAY-K21A, RELAY-86B -- RELAY-K21B, RELAY-K21A -- RPS-PNL-A, RELAY-K21B -- RPS-PNL-B, RPS-PNL-A -- VT-21A, RPS-PNL-B -- VT-21B), performance would become TP=56, FP=18, FN=0, Precision=0.756757, Recall=1.000000, F1=0.861538. If both remaining FP and FN issues were fixed after MCC-name correction, performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+- Jennifer -- Round 1: raw TP=42, FP=14, FN=14, Precision=0.750000, Recall=0.750000, F1=0.750000. If MCC-21A/B-480V-3PH were treated as MCC-21A/B, performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If extra intermediate nodes were collapsed after that MCC-name correction, performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If the remaining FP edges after MCC-name correction were not put in extraction (none), performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If the remaining missed GT edges after MCC-name correction were added (none), performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If both remaining FP and FN issues were fixed after MCC-name correction, performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+- Diego -- Round 2: raw TP=42, FP=14, FN=14, Precision=0.750000, Recall=0.750000, F1=0.750000. If MCC-21A/B-480V-3PH were treated as MCC-21A/B, performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If extra intermediate nodes were collapsed after that MCC-name correction, performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If the remaining FP edges after MCC-name correction were not put in extraction (none), performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If the remaining missed GT edges after MCC-name correction were added (none), performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If both remaining FP and FN issues were fixed after MCC-name correction, performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+- Jennifer -- Round 2: raw TP=42, FP=14, FN=14, Precision=0.750000, Recall=0.750000, F1=0.750000. If MCC-21A/B-480V-3PH were treated as MCC-21A/B, performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If extra intermediate nodes were collapsed after that MCC-name correction, performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If the remaining FP edges after MCC-name correction were not put in extraction (none), performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If the remaining missed GT edges after MCC-name correction were added (none), performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If both remaining FP and FN issues were fixed after MCC-name correction, performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+- Final connectivity -- Final: raw TP=42, FP=14, FN=14, Precision=0.750000, Recall=0.750000, F1=0.750000. If MCC-21A/B-480V-3PH were treated as MCC-21A/B, performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If extra intermediate nodes were collapsed after that MCC-name correction, performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If the remaining FP edges after MCC-name correction were not put in extraction (none), performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If the remaining missed GT edges after MCC-name correction were added (none), performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. If both remaining FP and FN issues were fixed after MCC-name correction, performance would become TP=56, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+
+Round-specific notes:
+- Diego -- Round 1: raw extra names=6, raw missing exact GT names=0, raw FP=34, raw FN=24; after MCC-name correction FP=18, FN=10.
+- Jennifer -- Round 1: raw extra names=2, raw missing exact GT names=2, raw FP=14, raw FN=14; after MCC-name correction FP=0, FN=0.
+- Diego -- Round 2: raw extra names=2, raw missing exact GT names=2, raw FP=14, raw FN=14; after MCC-name correction FP=0, FN=0.
+- Jennifer -- Round 2: raw extra names=2, raw missing exact GT names=2, raw FP=14, raw FN=14; after MCC-name correction FP=0, FN=0.
+- Final connectivity -- Final: raw extra names=2, raw missing exact GT names=2, raw FP=14, raw FN=14; after MCC-name correction FP=0, FN=0.
+
+Conclusion:
+After accepting MCC-21A-480V-3PH and MCC-21B-480V-3PH as the GT MCC-21A and MCC-21B, Jennifer Round 1, Diego Round 2, Jennifer Round 2, and the final matrix are perfect. Diego Round 1 still has intermediate control/signal nodes and a few incorrect GT-node edges, so it remains less clean even after that MCC naming correction.

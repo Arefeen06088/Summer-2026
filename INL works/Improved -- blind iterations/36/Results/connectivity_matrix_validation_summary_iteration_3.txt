@@ -1,0 +1,32 @@
+Connectivity matrix validation summary - Iteration 3
+
+Ground truth normalization:
+The GT file is an edge list, so it was normalized into an undirected set of component-to-component edges before validation. The extracted CSV files were adjacency matrices and were normalized into the same undirected edge-set format. Only Diego/Jennifer round matrix files were evaluated; final_connectivity_matrix.csv was not included because it is not tied to an extractor-round row name.
+
+Main reason the scores were not perfect:
+Iteration 3 is no longer losing score because of wrong component names, near-miss component names, missing components, false-positive GT-to-GT links, or extra intermediate nodes. All GT component names were present exactly, there were no extra non-GT matrix nodes, and there were zero false positives. The only remaining score loss is one missing GT edge in every round: CB-13-TIE -- PNL-RPS-1.
+
+Intermediate nodes responsible for the drop:
+No intermediate nodes caused a drop in Iteration 3. Earlier intermediate labels such as SU-A, SU-B, EDG-A, EDG-B, LC-A1, LC-A2, LC-B1, and LC-B2 were no longer present as matrix nodes, so the previous two-hop split-edge problem was removed.
+
+Counterfactual performance if intermediate nodes were not used:
+Because Iteration 3 already contains no extra intermediate nodes, the counterfactual is identical to the raw score. There are no intermediate-node FPs to remove and no split-through-intermediate FNs to recover.
+- Diego -- Round 1: TP=59, FP=0, FN=1, Precision=1.000000, Recall=0.983333, F1=0.991597. If intermediate nodes were removed/collapsed, performance would remain TP=59, FP=0, FN=1, Precision=1.000000, Recall=0.983333, F1=0.991597. Remaining FN: CB-13-TIE -- PNL-RPS-1.
+- Jennifer -- Round 1: TP=59, FP=0, FN=1, Precision=1.000000, Recall=0.983333, F1=0.991597. If intermediate nodes were removed/collapsed, performance would remain TP=59, FP=0, FN=1, Precision=1.000000, Recall=0.983333, F1=0.991597. Remaining FN: CB-13-TIE -- PNL-RPS-1.
+- Diego -- Round 2: TP=59, FP=0, FN=1, Precision=1.000000, Recall=0.983333, F1=0.991597. If intermediate nodes were removed/collapsed, performance would remain TP=59, FP=0, FN=1, Precision=1.000000, Recall=0.983333, F1=0.991597. Remaining FN: CB-13-TIE -- PNL-RPS-1.
+- Jennifer -- Round 2: TP=59, FP=0, FN=1, Precision=1.000000, Recall=0.983333, F1=0.991597. If intermediate nodes were removed/collapsed, performance would remain TP=59, FP=0, FN=1, Precision=1.000000, Recall=0.983333, F1=0.991597. Remaining FN: CB-13-TIE -- PNL-RPS-1.
+
+What improved from Iterations 1 and 2:
+- Compared with Iteration 1, Iteration 3 improved average F1 from 0.755638 to 0.991597. Total FP fell from 83 to 0, and total FN fell from 44 to 4.
+- Compared with Iteration 2, Iteration 3 improved average F1 from 0.805488 to 0.991597. Total FP fell from 64 to 0, and total FN fell from 35 to 4.
+- The practical improvement was that Iteration 3 stopped adding non-GT tap/intermediate nodes as separate graph nodes. This eliminated the previous false positives from edges like BUS-13K-A -- SU-A and SU-A -- TR-SU-A, and converted those cases into the direct GT edges expected by the validator.
+- Precision improved to 1.000000 for every extractor/round because there were no false positives. Recall stayed just below perfect because CB-13-TIE -- PNL-RPS-1 was still missing.
+
+Round-specific notes:
+- Diego -- Round 1: zero FP, no missing component names, no extra component names, and one FN: CB-13-TIE -- PNL-RPS-1.
+- Jennifer -- Round 1: zero FP, no missing component names, no extra component names, and one FN: CB-13-TIE -- PNL-RPS-1.
+- Diego -- Round 2: zero FP, no missing component names, no extra component names, and one FN: CB-13-TIE -- PNL-RPS-1.
+- Jennifer -- Round 2: zero FP, no missing component names, no extra component names, and one FN: CB-13-TIE -- PNL-RPS-1.
+
+Conclusion:
+Iteration 3 represents a clear improvement over Iterations 1 and 2. The earlier performance loss from intermediate-node granularity was resolved. The remaining non-perfect score is due to a genuine connectivity/edge discovery miss for CB-13-TIE -- PNL-RPS-1, not component-name quality or intermediate-node normalization.

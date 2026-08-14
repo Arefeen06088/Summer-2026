@@ -1,0 +1,41 @@
+Connectivity matrix validation summary - Document 11
+Input tree: Improved -- blind iterations
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\11\synthetic_npp_connectivity_matrix_relocated_names.csv
+Token usage: no token estimate files were present under the requested results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_connectivity_matrix.csv): TP=126, FP=32, FN=12, Precision=0.797468, Recall=0.913043, F1=0.851351
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_connectivity_matrix.csv): TP=124, FP=4, FN=14, Precision=0.968750, Recall=0.898551, F1=0.932331
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_connectivity_matrix.csv): TP=124, FP=8, FN=14, Precision=0.939394, Recall=0.898551, F1=0.918519
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_connectivity_matrix.csv): TP=124, FP=8, FN=14, Precision=0.939394, Recall=0.898551, F1=0.918519
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=124, FP=8, FN=14, Precision=0.939394, Recall=0.898551, F1=0.918519
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- BUS-DC-125A -- PANEL-IC-A
+- BUS-DC-125B -- PANEL-IC-B
+- BUS-DC-125B -- PANEL-IC-C
+- BUS-DC-125B -- PANEL-IC-D
+- PANEL-IC-A -- RECT-125-A
+- PANEL-IC-B -- RECT-125-B
+- PANEL-IC-C -- RECT-125-C
+- PANEL-IC-D -- RECT-125-D
+
+False-negative edge examples:
+- ATS-480-A -- BUS-480-A1
+- ATS-480-A -- BUS-480-C1
+- ATS-480-B -- BUS-480-B1
+- ATS-480-B -- BUS-480-D1
+- BUS-DC-125A -- RECT-125-A
+- BUS-DC-125A -- RECT-125-C
+- BUS-DC-125B -- RECT-125-B
+- BUS-DC-125B -- RECT-125-D
+- PANEL-RPS-A -- PANEL-SSPS
+- PANEL-RPS-B -- PANEL-SSPS
+
+
+Missing GT node examples:
+- PANEL-SSPS: 6 missed incident GT edge(s)

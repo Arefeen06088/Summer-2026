@@ -1,0 +1,114 @@
+{
+  "reviewer": "Diego",
+  "round": "current_round_02",
+  "iteration": "Improved doc 10 Iteration_1",
+  "scope": {
+    "used_only_allowed_input_resources_current_aids_and_jennifer_r01": true,
+    "ground_truth_or_eval_outputs_used": false,
+    "prior_or_archived_results_used": false,
+    "tracker_metrics_used": false
+  },
+  "node_count": 120,
+  "edge_candidate_count": 152,
+  "status_counts": {
+    "keep": 125,
+    "remove": 27
+  },
+  "keep_edge_count": 125,
+  "matrix_node_count": 120,
+  "matrix_edge_count": 125,
+  "checks": {
+    "no_WN_final_nodes": true,
+    "no_annotation_only_final_nodes": true,
+    "edges_reference_only_final_nodes": true,
+    "keep_edges_reference_only_final_nodes": true,
+    "no_duplicate_keep_edges": true,
+    "statuses_valid": true,
+    "matrix_includes_only_keep_edges": true,
+    "matrix_symmetric": true,
+    "matrix_zero_diagonal": true
+  },
+  "missing_edge_references": [],
+  "missing_keep_edge_references": [],
+  "wn_final_nodes": [],
+  "annotation_only_final_nodes": [],
+  "duplicate_keep_edges": [],
+  "isolated_nodes_after_keep_matrix": [
+    "SER-01"
+  ],
+  "changes_vs_jennifer_r01_count": 10,
+  "changes_vs_jennifer_r01": [
+    {
+      "source": "CT-4160-A",
+      "target": "BUS-4160-A",
+      "status": "keep",
+      "change": "Jennifer R01 remove -> keep; restored as visually supported CT-to-bus terminal."
+    },
+    {
+      "source": "CT-4160-B",
+      "target": "BUS-4160-B",
+      "status": "keep",
+      "change": "Jennifer R01 remove -> keep; restored as visually supported CT-to-bus terminal."
+    },
+    {
+      "source": "CB-A09",
+      "target": "FUSE-A01",
+      "status": "remove",
+      "change": "Jennifer R01 uncertain -> remove; no continuous unambiguous CB-A09-to-FUSE-A01 endpoint."
+    },
+    {
+      "source": "CB-B09",
+      "target": "FUSE-B01",
+      "status": "remove",
+      "change": "Jennifer R01 uncertain -> remove; no continuous unambiguous CB-B09-to-FUSE-B01 endpoint."
+    },
+    {
+      "source": "CT-4160-A",
+      "target": "CB-A08",
+      "status": "remove",
+      "change": "Jennifer R01 uncertain -> remove; endpoint resolves to BUS-4160-A rather than CB-A08."
+    },
+    {
+      "source": "CT-4160-B",
+      "target": "CB-B08",
+      "status": "remove",
+      "change": "Jennifer R01 uncertain -> remove; endpoint resolves to BUS-4160-B rather than CB-B08."
+    },
+    {
+      "source": "TB-SWGR-A",
+      "target": "TB-LV-A",
+      "status": "remove",
+      "change": "Jennifer R01 uncertain -> remove; shared tray/proximity is not a direct final-node edge."
+    },
+    {
+      "source": "TB-SWGR-B",
+      "target": "TB-LV-B",
+      "status": "remove",
+      "change": "Jennifer R01 uncertain -> remove; shared tray/proximity is not a direct final-node edge."
+    },
+    {
+      "source": "TB-LV-A",
+      "target": "PNL-UPS-A",
+      "status": "remove",
+      "change": "Jennifer R01 uncertain -> remove; no unambiguous TB-LV-A-to-PNL-UPS-A endpoint."
+    },
+    {
+      "source": "TB-LV-B",
+      "target": "PNL-UPS-B",
+      "status": "remove",
+      "change": "Jennifer R01 uncertain -> remove; no unambiguous TB-LV-B-to-PNL-UPS-B endpoint."
+    }
+  ],
+  "saturation_assessment": {
+    "recommendation": "saturated_after_R02_with_one_small_matrix_correction",
+    "summary": "Node set is stable at 120. The only matrix additions versus Jennifer R01 are CT-4160-A/B to BUS-4160-A/B. The eight Jennifer-uncertain edges do not meet the raw-continuous-terminal standard and are removed from candidate status as well as excluded from the matrix.",
+    "residual_risk": "Low; remaining ambiguity is semantic only around whether CT sensing-line contact with the 4160 V bus should be represented, but the raw endpoint is visible on both trains."
+  },
+  "outputs": {
+    "nodes": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Results\\Iteration_1\\current_round_02_diego_nodes.csv",
+    "edges": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Results\\Iteration_1\\current_round_02_diego_edges.csv",
+    "matrix": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Results\\Iteration_1\\current_round_02_diego_matrix.csv",
+    "notes": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Results\\Iteration_1\\current_round_02_diego_notes.md",
+    "validation": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Results\\Iteration_1\\current_round_02_diego_validation.json"
+  }
+}

@@ -1,0 +1,77 @@
+Connectivity matrix validation summary - Document 5
+Input tree: Improved -- blind iterations
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\5\synthetic_npp_connectivity_matrix_final_cleaned_v4.csv
+Token usage: no token estimate files were present under the requested results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_matrix.csv): TP=130, FP=39, FN=10, Precision=0.769231, Recall=0.928571, F1=0.841424
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_matrix.csv): TP=130, FP=31, FN=10, Precision=0.807453, Recall=0.928571, F1=0.863787
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_matrix.csv): TP=119, FP=11, FN=21, Precision=0.915385, Recall=0.850000, F1=0.881481
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_matrix.csv): TP=119, FP=11, FN=21, Precision=0.915385, Recall=0.850000, F1=0.881481
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=119, FP=11, FN=21, Precision=0.915385, Recall=0.850000, F1=0.881481
+- Diego -- Iteration 2 Round 1 (Iteration_2\round_01_diego_matrix.csv): TP=114, FP=22, FN=26, Precision=0.838235, Recall=0.814286, F1=0.826087
+- Jennifer -- Iteration 2 Round 1 (Iteration_2\round_01_jennifer_matrix.csv): TP=113, FP=17, FN=27, Precision=0.869231, Recall=0.807143, F1=0.837037
+- Diego -- Iteration 2 Round 2 (Iteration_2\round_02_diego_matrix.csv): TP=113, FP=13, FN=27, Precision=0.896825, Recall=0.807143, F1=0.849624
+- Jennifer -- Iteration 2 Round 2 (Iteration_2\round_02_jennifer_matrix.csv): TP=113, FP=13, FN=27, Precision=0.896825, Recall=0.807143, F1=0.849624
+- Final connectivity -- Iteration 2 Final (Iteration_2\final_connectivity_matrix.csv): TP=113, FP=13, FN=27, Precision=0.896825, Recall=0.807143, F1=0.849624
+- Diego -- Iteration 3 Round 1 (Iteration_3\round_01_diego_matrix.csv): TP=125, FP=66, FN=15, Precision=0.654450, Recall=0.892857, F1=0.755287
+- Jennifer -- Iteration 3 Round 1 (Iteration_3\round_01_jennifer_matrix.csv): TP=114, FP=10, FN=26, Precision=0.919355, Recall=0.814286, F1=0.863636
+- Diego -- Iteration 3 Round 2 (Iteration_3\round_02_diego_matrix.csv): TP=114, FP=10, FN=26, Precision=0.919355, Recall=0.814286, F1=0.863636
+- Jennifer -- Iteration 3 Round 2 (Iteration_3\round_02_jennifer_matrix.csv): TP=114, FP=10, FN=26, Precision=0.919355, Recall=0.814286, F1=0.863636
+- Final connectivity -- Iteration 3 Final (Iteration_3\final_connectivity_matrix.csv): TP=114, FP=10, FN=26, Precision=0.919355, Recall=0.814286, F1=0.863636
+- Diego -- Iteration 4 Round 1 (Iteration_4\round_01_diego_matrix.csv): TP=118, FP=67, FN=22, Precision=0.637838, Recall=0.842857, F1=0.726154
+- Jennifer -- Iteration 4 Round 1 (Iteration_4\round_01_jennifer_matrix.csv): TP=104, FP=8, FN=36, Precision=0.928571, Recall=0.742857, F1=0.825397
+- Diego -- Iteration 4 Round 2 (Iteration_4\round_02_diego_matrix.csv): TP=107, FP=14, FN=33, Precision=0.884298, Recall=0.764286, F1=0.819923
+- Jennifer -- Iteration 4 Round 2 (Iteration_4\round_02_jennifer_matrix.csv): TP=107, FP=14, FN=33, Precision=0.884298, Recall=0.764286, F1=0.819923
+- Final connectivity -- Iteration 4 Final (Iteration_4\final_connectivity_matrix.csv): TP=107, FP=14, FN=33, Precision=0.884298, Recall=0.764286, F1=0.819923
+- Diego -- Iteration 5 Round 1 (Iteration_5\round_01_diego_matrix.csv): TP=100, FP=40, FN=40, Precision=0.714286, Recall=0.714286, F1=0.714286
+- Jennifer -- Iteration 5 Round 1 (Iteration_5\round_01_jennifer_matrix.csv): TP=99, FP=27, FN=41, Precision=0.785714, Recall=0.707143, F1=0.744361
+- Diego -- Iteration 5 Round 2 (Iteration_5\round_02_diego_matrix.csv): TP=99, FP=27, FN=41, Precision=0.785714, Recall=0.707143, F1=0.744361
+- Jennifer -- Iteration 5 Round 2 (Iteration_5\round_02_jennifer_matrix.csv): TP=99, FP=27, FN=41, Precision=0.785714, Recall=0.707143, F1=0.744361
+- Final connectivity -- Iteration 5 Final (Iteration_5\final_connectivity_matrix.csv): TP=99, FP=27, FN=41, Precision=0.785714, Recall=0.707143, F1=0.744361
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often act like extra/intermediate nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- BAT-48V-A -- GND-GRID
+- BAT-48V-B -- GND-GRID
+- BUS-NON1 -- TR-SAF-C
+- BUS-SY230 -- TR-UAT-1A
+- BUS-SY230 -- TR-UAT-1B
+- CP-ESFAS-1 -- RELAY-K2A
+- CP-ESFAS-1 -- RELAY-K2B
+- CP-ESFAS-2 -- RELAY-K1A
+- CP-ESFAS-2 -- RELAY-K1B
+- GND-GRID -- INV-UPS-A
+
+False-negative edge examples:
+- BUS-416A -- RELAY-UV-A
+- BUS-416B -- RELAY-UV-B
+- BUS-416C -- RELAY-LOOP-C
+- BUS-416D -- RELAY-LOOP-D
+- BUS-AUX13B -- BUS-NON1
+- BUS-SY230 -- GND-GRID
+- CB-EDG-A -- RELAY-K1A
+- CB-EDG-B -- RELAY-K1B
+- CB-EDG-C -- RELAY-K2A
+- CB-EDG-D -- RELAY-K2B
+
+Extra/non-GT nodes causing performance drops:
+- V-MISV-A: 3 incident false-positive edge(s)
+- V-MISV-B: 2 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 2 extra/intermediate nodes were omitted from the extraction (V-MISV-A, V-MISV-B), metrics would be TP=99, FP=22, FN=41, Precision=0.818182, Recall=0.707143, F1=0.758621.
+
+Missing GT node examples:
+- INST-NSSS-A: 2 missed incident GT edge(s)
+- INST-NSSS-B: 2 missed incident GT edge(s)
+- RELAY-LOOP-C: 2 missed incident GT edge(s)
+- RELAY-LOOP-D: 2 missed incident GT edge(s)
+- RELAY-UV-A: 2 missed incident GT edge(s)
+- RELAY-UV-B: 2 missed incident GT edge(s)
+- VLV-MSIV-A: 1 missed incident GT edge(s)
+- VLV-MSIV-B: 1 missed incident GT edge(s)

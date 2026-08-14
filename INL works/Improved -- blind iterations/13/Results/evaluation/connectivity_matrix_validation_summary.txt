@@ -1,0 +1,55 @@
+Connectivity matrix validation summary - Document 13
+Input tree: Improved -- blind iterations
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\13\synthetic_npp_connectivity_matrix_dc_bus_clean_retry.csv
+Token usage: no token estimate files were present under the requested results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_connectivity_matrix.csv): TP=182, FP=47, FN=12, Precision=0.794760, Recall=0.938144, F1=0.860520
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_connectivity_matrix.csv): TP=166, FP=4, FN=28, Precision=0.976471, Recall=0.855670, F1=0.912088
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_connectivity_matrix.csv): TP=166, FP=4, FN=28, Precision=0.976471, Recall=0.855670, F1=0.912088
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_connectivity_matrix.csv): TP=166, FP=4, FN=28, Precision=0.976471, Recall=0.855670, F1=0.912088
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=166, FP=4, FN=28, Precision=0.976471, Recall=0.855670, F1=0.912088
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often act like extra/intermediate nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- LC-480A -- LOCAL-IO-A
+- LC-480B -- LOCAL-IO-B
+- LC-480C -- LOCAL-IO-C
+- LC-480D -- LOCAL-IO-D
+
+False-negative edge examples:
+- BUS-4B -- TR-SUT-1B
+- CB-201 -- TR-UAT-1B
+- CB-A01 -- RLY-KA01
+- CB-A02 -- RLY-KA02
+- CB-A05 -- RLY-KA05
+- CB-A07 -- RLY-KA07
+- CB-B02 -- RLY-KB02
+- CB-B04 -- RLY-KB04
+- CB-B06 -- RLY-KB06
+- CB-C01 -- RLY-KC01
+
+Extra/non-GT nodes causing performance drops:
+- LOCAL-IO-A: 1 incident false-positive edge(s)
+- LOCAL-IO-B: 1 incident false-positive edge(s)
+- LOCAL-IO-C: 1 incident false-positive edge(s)
+- LOCAL-IO-D: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 4 extra/intermediate nodes were omitted from the extraction (LOCAL-IO-A, LOCAL-IO-B, LOCAL-IO-C, LOCAL-IO-D), metrics would be TP=166, FP=0, FN=28, Precision=1.000000, Recall=0.855670, F1=0.922222.
+
+Missing GT node examples:
+- RLY-KA01: 1 missed incident GT edge(s)
+- RLY-KA02: 1 missed incident GT edge(s)
+- RLY-KA05: 1 missed incident GT edge(s)
+- RLY-KA07: 1 missed incident GT edge(s)
+- RLY-KB02: 1 missed incident GT edge(s)
+- RLY-KB04: 1 missed incident GT edge(s)
+- RLY-KB06: 1 missed incident GT edge(s)
+- RLY-KC01: 1 missed incident GT edge(s)
+- RLY-KC03: 1 missed incident GT edge(s)
+- RLY-KC08: 1 missed incident GT edge(s)

@@ -1,0 +1,7 @@
+"item","decision","evidence"
+"round_2_agreement","Agree with Jennifer Round 1; no matrix or edge changes.","Jennifer round_01_jennifer_matrix.csv and round_01_jennifer_edges.csv are byte-for-byte identical to Diego Round 1 outputs and preserve the collapsed components-plus-real-buses graph."
+"agent_convergence","Agents have converged on the 55-node, 59-edge graph.","Both agents retain all 47 physical components plus eight real BUS-* nodes and exclude SU-A, EDG-A, SU-B, EDG-B, LC-A1, LC-A2, LC-B1, and LC-B2 as printed tap/intermediate labels."
+"collapsed_tap_edges","Keep collapsed direct component-to-bus replacements.","TR-SU-A -- BUS-13K-A, TR-EDG-A -- BUS-13K-A, TR-SU-B -- BUS-13K-B, TR-EDG-B -- BUS-13K-B, MCC-01A -- BUS-480-A, MCC-02A -- BUS-480-A, MCC-01B -- BUS-480-B, and MCC-02B -- BUS-480-B are present."
+"dashed_control_edges","Keep dashed/control component-to-component edges.","JB-ESF-A -- PNL-ESF-A, JB-ESF-B -- PNL-ESF-B, PNL-ESF-A -- PUMP-AFW-A, PNL-ESF-A -- VALVE-MOV-A, PNL-ESF-B -- PUMP-AFW-B, and PNL-ESF-B -- VALVE-MOV-B remain because both endpoints are real physical components and the schematic shows visible control/interlock wiring."
+"rps_edge","Keep CB-4K-TIE -- PNL-RPS-1.","The solid lead runs from CB-4K-TIE to PNL-RPS-1; RPS LOCKOUT is annotation text rather than a node."
+"real_buses","No additional bus nodes added.","The retained real bus nodes are BUS-13K-A, BUS-13K-B, BUS-4K-A, BUS-4K-B, BUS-480-A, BUS-480-B, BUS-DC125-A, and BUS-DC125-B; descriptor and title-block text remains excluded."

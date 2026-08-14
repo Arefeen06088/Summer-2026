@@ -1,0 +1,35 @@
+candidate,decision,reason
+GND-GRID,excluded,Named station ground reference rail with dotted grounding conductors; excluded as protective/reference system rather than final component connectivity.
+"train boundaries, RAT/SAF/ATS route labels, ESF-K labels, cable labels, WN-* points",excluded,"Context, route, cable, or anonymous topology labels rather than named connectivity endpoints."
+JB-RLY-A/B fan-out to individual relays,excluded,Round 01 high-recall trunk guesses; not direct visible named-device endpoints in the raw schematic.
+CP-ESFAS-1/2 to UV/LOOP relay weak guesses,excluded,Removed in Round 02 because the direct dashed paths were not sufficiently supported as endpoint pairs.
+BUS-AUX13A -- BUS-NON1,retained_medium_confidence,raw visual shows BUS-NON1 as a named non-safety 13.8 kV service bus with its left end tied by a vertical drop to the BUS-AUX13A segment near CB-TIE13; retained as a bus-to-bus conductor but kept uncertain because it is near the tie/boundary geometry
+BUS-NON1 -- TR-SAF-C,retained_medium_confidence,raw visual shows the thick BUS-NON1 rail terminating at a filled dot on the left terminal of TR-SAF-C; retained uncertain because TR-SAF-C also has the separate BUS-AUX13B tap at its upper terminal
+MCC-1C2 -- FAN-CRHV-A,retained_medium_confidence,"raw visual supports a solid feeder path from the MCC-1C2 area to FAN-CRHV-A, but the nearby ATS-B NORM vertical route makes this load connection visually ambiguous"
+MCC-1D2 -- FAN-CRHV-B,retained_medium_confidence,"raw visual supports a solid feeder path from the MCC-1D2 area to FAN-CRHV-B, but the nearby ATS-B ALT vertical route makes this load connection visually ambiguous"
+INV-UPS-A -- RECT-48V-A,retained_medium_confidence,bottom dashed/solid-looking interconnect from INV-UPS-A toward RECT-48V-A; line style is weaker than main feeders
+JB-RLY-A -- JB-RLY-B,retained_medium_confidence,long relay-power/control interconnect between junction boxes across bottom center
+RECT-48V-B -- INV-UPS-B,retained_medium_confidence,bottom dashed/solid-looking interconnect from RECT-48V-B toward INV-UPS-B; line style is weaker than main feeders
+PNL-DC-A -- PNL-DC-B,retained_medium_confidence,dashed horizontal control/DC inter-panel line visually links PNL-DC-A and PNL-DC-B terminals
+CP-ESFAS-1 -- RELAY-K1A,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots from CP-ESFAS-1 left-side terminal network to RELAY-K1A"
+CP-ESFAS-1 -- RELAY-K1B,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots from CP-ESFAS-1 right-side terminal network to RELAY-K1B"
+CP-ESFAS-2 -- RELAY-K2A,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots from CP-ESFAS-2 left-side terminal network to RELAY-K2A"
+CP-ESFAS-2 -- RELAY-K2B,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots from CP-ESFAS-2 right-side terminal network to RELAY-K2B"
+INST-NSSS-A -- CP-ESFAS-1,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots sensing/control riser from INST-NSSS-A into ESFAS cabinet terminal network"
+INST-NSSS-A -- CP-ESFAS-2,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots sensing/control riser from INST-NSSS-A into ESFAS cabinet terminal network"
+INST-NSSS-B -- CP-ESFAS-1,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots sensing/control riser from INST-NSSS-B into ESFAS cabinet terminal network"
+INST-NSSS-B -- CP-ESFAS-2,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots sensing/control riser from INST-NSSS-B into ESFAS cabinet terminal network"
+RELAY-K1A -- CB-EDG-A,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots EDG/safety start relay A path toward train A EDG breaker"
+RELAY-K1A -- CB-SAF-A,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots EDG/safety start relay A path toward train A safety breaker"
+RELAY-K1B -- CB-EDG-B,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots EDG/safety start relay B path toward train B EDG breaker"
+RELAY-K1B -- CB-SAF-B,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots EDG/safety start relay B path toward train B safety breaker"
+RELAY-K2A -- CB-EDG-C,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots EDG/safety start relay C path toward train C EDG breaker"
+RELAY-K2A -- CB-SAF-C,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots EDG/safety start relay C path toward train C safety breaker"
+RELAY-K2B -- CB-EDG-D,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots EDG/safety start relay D path toward train D EDG breaker"
+RELAY-K2B -- CB-SAF-D,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots EDG/safety start relay D path toward train D safety breaker"
+RELAY-UV-A -- BUS-416A,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots/dash-dot undervoltage sensing path associated with 4.16 kV safety bus A"
+RELAY-UV-B -- BUS-416B,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots/dash-dot undervoltage sensing path associated with 4.16 kV safety bus B"
+RELAY-LOOP-C -- BUS-416C,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots/dash-dot load-shed/sensing path associated with 4.16 kV safety bus C"
+RELAY-LOOP-D -- BUS-416D,retained_medium_confidence,"dashed/dash-dot control, trip-close, or sensing path with component terminal dots/dash-dot load-shed/sensing path associated with 4.16 kV safety bus D"
+PNL-DC-A -- CP-ESFAS-1,retained_medium_confidence,dashed control-power route leaves PNL-DC-A area and enters the ESF/control bay with panel terminal dots; retained uncertain because the long route shares trunk segments
+PNL-DC-B -- CP-ESFAS-2,retained_medium_confidence,dashed control-power route leaves PNL-DC-B area and enters the ESF/control bay with panel terminal dots; retained uncertain because the long route shares trunk segments

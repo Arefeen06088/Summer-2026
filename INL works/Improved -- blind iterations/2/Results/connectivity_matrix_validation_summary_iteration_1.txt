@@ -1,0 +1,43 @@
+Connectivity matrix validation summary - Improved Document 2, Iteration 1
+==========================================================================
+
+Ground truth source: C:\Asif_all_python_projects\INL\Improved -- processing synthetic diagrams (100 nodes)\2\connectivity_matrix_variant_b_100.csv
+Ground truth normalized as an undirected edge list with 100 edges across 100 component names.
+Evaluated extracted matrices from: C:\Asif_all_python_projects\INL\Improved -- blind iterations\2\Results\Iteration_1
+Included files: round_01_diego_matrix.csv, round_01_jennifer_matrix.csv, round_02_diego_matrix.csv, round_02_jennifer_matrix.csv, final_connectivity_matrix.csv
+
+Strict exact-match metrics
+--------------------------
+- Diego -- Round 1: TP=100, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000
+- Jennifer -- Round 1: TP=99, FP=0, FN=1, P=1.000000, R=0.990000, F1=0.994975
+- Diego -- Round 2: TP=99, FP=0, FN=1, P=1.000000, R=0.990000, F1=0.994975
+- Jennifer -- Round 2: TP=99, FP=0, FN=1, P=1.000000, R=0.990000, F1=0.994975
+- Final connectivity -- Final: TP=99, FP=0, FN=1, P=1.000000, R=0.990000, F1=0.994975
+
+Primary reason performance is not perfect
+-----------------------------------------
+Diego Round 1 is perfect. The other four evaluated matrices miss exactly one GT connectivity edge and introduce no false-positive edges. Therefore, the only performance drop is a small edge-discovery/recall issue, not a component-name issue.
+
+There is no evidence of broad component-name failure, close-but-not-perfect naming, missing components, or intermediate-node over-insertion in the evaluated matrices.
+
+Examples causing the score drop
+--------------------------------
+Repeated false-positive extracted edges, counted across all evaluated rows:
+- None
+
+Repeated missed GT edges, counted across all evaluated rows:
+- CP-RPS-A -- CP-RPS-B (missed in Jennifer Round 1, Diego Round 2, Jennifer Round 2, and Final connectivity)
+
+Intermediate/extra-node effects
+-------------------------------
+No intermediate or extracted-only nodes caused a drop in performance. The non-perfect rows have FP=0; they simply omitted the CP-RPS-A -- CP-RPS-B edge.
+
+Counterfactual insights
+-----------------------
+- Diego -- Round 1 is already perfect: TP=100, FP=0, FN=0, F1=1.000000.
+- For Jennifer Round 1, Diego Round 2, Jennifer Round 2, and Final connectivity, adding the missed CP-RPS-A -- CP-RPS-B edge would make performance TP=100, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+- Removing false positives would not change any row because all rows already have FP=0.
+
+Bottom line
+-----------
+This iteration is essentially perfect. The only non-perfect rows lose one recall point from a single missed GT edge, CP-RPS-A -- CP-RPS-B; component naming and intermediate-node extraction are not responsible for the score drop.

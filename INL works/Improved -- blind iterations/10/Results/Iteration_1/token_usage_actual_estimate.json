@@ -1,0 +1,105 @@
+{
+  "family": "Improved",
+  "document": 10,
+  "iteration": 1,
+  "main_boundary_timestamp": "2026-07-27T18:39:29.751Z",
+  "usage_by_agent": {
+    "diego_r01": {
+      "input_tokens": 2056916,
+      "cached_input_tokens": 1813760,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 48399,
+      "reasoning_output_tokens": 27408,
+      "total_tokens": 2105315,
+      "model_calls": 30
+    },
+    "diego_r02": {
+      "input_tokens": 1827849,
+      "cached_input_tokens": 1664000,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 24221,
+      "reasoning_output_tokens": 12354,
+      "total_tokens": 1852070,
+      "model_calls": 32
+    },
+    "jennifer_r01": {
+      "input_tokens": 961538,
+      "cached_input_tokens": 802176,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 20745,
+      "reasoning_output_tokens": 11700,
+      "total_tokens": 982283,
+      "model_calls": 17
+    },
+    "jennifer_r02": {
+      "input_tokens": 1906415,
+      "cached_input_tokens": 1682816,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 18784,
+      "reasoning_output_tokens": 6717,
+      "total_tokens": 1925199,
+      "model_calls": 33
+    },
+    "main": {
+      "input_tokens": 9801816,
+      "cached_input_tokens": 9326848,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 38756,
+      "reasoning_output_tokens": 14605,
+      "total_tokens": 9898918,
+      "model_calls": 63
+    }
+  },
+  "main": {
+    "input_tokens": 9801816,
+    "cached_input_tokens": 9326848,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 38756,
+    "reasoning_output_tokens": 14605,
+    "total_tokens": 9898918,
+    "model_calls": 63
+  },
+  "diego": {
+    "input_tokens": 3884765,
+    "cached_input_tokens": 3477760,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 72620,
+    "reasoning_output_tokens": 39762,
+    "total_tokens": 3957385,
+    "model_calls": 62
+  },
+  "jennifer": {
+    "input_tokens": 2867953,
+    "cached_input_tokens": 2484992,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 39529,
+    "reasoning_output_tokens": 18417,
+    "total_tokens": 2907482,
+    "model_calls": 50
+  },
+  "subagents": {
+    "input_tokens": 6752718,
+    "cached_input_tokens": 5962752,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 112149,
+    "reasoning_output_tokens": 58179,
+    "total_tokens": 6864867,
+    "model_calls": 112
+  },
+  "total": {
+    "input_tokens": 16554534,
+    "cached_input_tokens": 15289600,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 150905,
+    "reasoning_output_tokens": 72784,
+    "total_tokens": 16763785,
+    "model_calls": 175
+  },
+  "single_agent_proxy": {
+    "low": 4580044,
+    "expected": 7054774,
+    "high": 12004233
+  },
+  "image_file_input_note": "not separately exposed; included in input_tokens",
+  "planned_payload_counting_endpoint_note": "Not separately called for this completed run; actual Codex token_count usage objects were available for all completed calls."
+}

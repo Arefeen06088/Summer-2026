@@ -1,0 +1,142 @@
+{
+  "workflow_label": "Improved doc 14 / Iteration 1",
+  "update_timestamp": "2026-07-27T11:51:15-06:00",
+  "main_start_timestamp": "2026-07-27T17:24:03.066Z",
+  "main": {
+    "model_calls": 69,
+    "input_tokens": 8791226,
+    "cached_input_tokens": 8039936,
+    "output_tokens": 38841,
+    "reasoning_output_tokens": 14644,
+    "total_tokens": 8886060,
+    "first_token_count_timestamp": "2026-07-27T17:24:14.723Z",
+    "last_token_count_timestamp": "2026-07-27T17:51:06.871Z"
+  },
+  "rounds": [
+    {
+      "model_calls": 23,
+      "input_tokens": 1604409,
+      "cached_input_tokens": 1376896,
+      "output_tokens": 29628,
+      "reasoning_output_tokens": 20979,
+      "total_tokens": 1634037,
+      "first_token_count_timestamp": "2026-07-27T17:25:59.083Z",
+      "last_token_count_timestamp": "2026-07-27T17:32:40.115Z",
+      "agent": "Diego",
+      "round": "1",
+      "nickname": "Pauli",
+      "session_id": "019fa49c-7527-7740-a563-2059f013f512",
+      "session_file": "C:\\Users\\AREFA\\.codex\\sessions\\2026\\07\\27\\rollout-2026-07-27T11-25-45-019fa49c-7527-7740-a563-2059f013f512.jsonl"
+    },
+    {
+      "model_calls": 28,
+      "input_tokens": 1818012,
+      "cached_input_tokens": 1583616,
+      "output_tokens": 13935,
+      "reasoning_output_tokens": 6466,
+      "total_tokens": 1831947,
+      "first_token_count_timestamp": "2026-07-27T17:33:08.610Z",
+      "last_token_count_timestamp": "2026-07-27T17:36:41.769Z",
+      "agent": "Jennifer",
+      "round": "1",
+      "nickname": "Mill",
+      "session_id": "019fa4a3-105e-7410-8391-0ee374661c12",
+      "session_file": "C:\\Users\\AREFA\\.codex\\sessions\\2026\\07\\27\\rollout-2026-07-27T11-32-58-019fa4a3-105e-7410-8391-0ee374661c12.jsonl"
+    },
+    {
+      "model_calls": 30,
+      "input_tokens": 1950488,
+      "cached_input_tokens": 1710336,
+      "output_tokens": 21989,
+      "reasoning_output_tokens": 12088,
+      "total_tokens": 1972477,
+      "first_token_count_timestamp": "2026-07-27T17:37:31.301Z",
+      "last_token_count_timestamp": "2026-07-27T17:42:58.088Z",
+      "agent": "Diego",
+      "round": "2",
+      "nickname": "Ohm",
+      "session_id": "019fa4a7-14f4-7cc2-b0f5-82058a824048",
+      "session_file": "C:\\Users\\AREFA\\.codex\\sessions\\2026\\07\\27\\rollout-2026-07-27T11-37-21-019fa4a7-14f4-7cc2-b0f5-82058a824048.jsonl"
+    },
+    {
+      "model_calls": 22,
+      "input_tokens": 877818,
+      "cached_input_tokens": 772352,
+      "output_tokens": 10538,
+      "reasoning_output_tokens": 3120,
+      "total_tokens": 888356,
+      "first_token_count_timestamp": "2026-07-27T17:43:21.097Z",
+      "last_token_count_timestamp": "2026-07-27T17:46:00.110Z",
+      "agent": "Jennifer",
+      "round": "2",
+      "nickname": "Dirac",
+      "session_id": "019fa4ac-6897-71a3-9ccb-3fde526ff5f9",
+      "session_file": "C:\\Users\\AREFA\\.codex\\sessions\\2026\\07\\27\\rollout-2026-07-27T11-43-10-019fa4ac-6897-71a3-9ccb-3fde526ff5f9.jsonl"
+    }
+  ],
+  "diego": {
+    "model_calls": 53,
+    "input_tokens": 3554897,
+    "cached_input_tokens": 3087232,
+    "output_tokens": 51617,
+    "reasoning_output_tokens": 33067,
+    "total_tokens": 3606514
+  },
+  "jennifer": {
+    "model_calls": 50,
+    "input_tokens": 2695830,
+    "cached_input_tokens": 2355968,
+    "output_tokens": 24473,
+    "reasoning_output_tokens": 9586,
+    "total_tokens": 2720303
+  },
+  "subagents": {
+    "model_calls": 103,
+    "input_tokens": 6250727,
+    "cached_input_tokens": 5443200,
+    "output_tokens": 76090,
+    "reasoning_output_tokens": 42653,
+    "total_tokens": 6326817
+  },
+  "workflow": {
+    "model_calls": 172,
+    "input_tokens": 15041953,
+    "cached_input_tokens": 13483136,
+    "output_tokens": 114931,
+    "reasoning_output_tokens": 57297,
+    "total_tokens": 15212877
+  },
+  "single_agent": {
+    "low": 3855552,
+    "expected": 6077067,
+    "high": 10520097
+  },
+  "final_validation": {
+    "document": "Improved doc 14",
+    "iteration": "Iteration_1",
+    "source_round": "round_02_jennifer",
+    "created_at": "2026-07-27T11:47:09",
+    "node_count": 178,
+    "edge_rows": 199,
+    "kept_edges_in_matrix": 190,
+    "uncertain_edges_excluded_from_matrix": 8,
+    "removed_edges_excluded_from_matrix": 1,
+    "status_counts": {
+      "keep": 190,
+      "uncertain": 8,
+      "remove": 1
+    },
+    "matrix_size": [
+      178,
+      178
+    ],
+    "matrix_symmetric": true,
+    "matrix_zero_diagonal": true,
+    "duplicate_kept_edges": [],
+    "invalid_kept_edge_endpoints": [],
+    "no_intermediate_wire_nodes": true,
+    "blind_extraction_note": "Final files are promoted from Jennifer round 2 agreement. Extraction used only input resources, current input-derived crops/aids, and current-round Diego/Jennifer files; GT, evaluator outputs, and archived prior results were not used."
+  },
+  "token_usage_basis": "actual local Codex token_count last_token_usage logs for the main agent since the latest doc14 user boundary plus all four completed Diego/Jennifer subagent session logs; final response not included",
+  "single_agent_estimate_basis": "single-agent one-round proxy = Diego round 1 actual usage plus 25%/50%/100% of observed main-agent orchestration tokens for low/expected/high; no GT metrics used"
+}

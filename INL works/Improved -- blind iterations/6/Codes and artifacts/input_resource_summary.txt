@@ -1,0 +1,17 @@
+raw_image=C:\Asif_all_python_projects\INL\Simplers -- blind iterations\6\Input resources\raw -- synthetic_npp_electrical_schematic(2).png
+raw_size=4800x3200
+component_count=60
+component_type_counts={'source': 2, 'transformer': 6, 'breaker': 8, 'tie_breaker': 1, 'generator': 2, 'motor_control_center': 6, 'motor_operated_valve': 2, 'pump_motor': 6, 'fan_motor': 2, 'junction_box': 1, 'relay': 2, 'panel': 2, 'charger': 2, 'ups_bus': 2, 'dc_bus': 2, 'inverter': 2, 'battery': 2, 'instrument_rack': 1, 'bus': 6, 'unit_region': 3}
+node_kind_counts={'physical_component': 51, 'logical_node': 9}
+wire_node_count=493
+wire_node_type_counts={'endpoint': 374, 't_section': 65, 'junction': 54}
+
+crop_boxes:
+- 01_full_working_area: (0, 0, 4800, 3200)
+- 02_top_sources_and_bus: (0, 180, 4800, 760)
+- 03_upper_feeders: (0, 600, 4800, 1320)
+- 04_middle_distribution: (0, 1050, 4800, 2050)
+- 05_lower_distribution: (0, 1850, 4800, 3200)
+- 06_left_half: (0, 180, 2500, 3200)
+- 07_right_half: (2300, 180, 4800, 3200)
+- 08_center_controls: (1200, 900, 3600, 2600)

@@ -1,0 +1,39 @@
+Connectivity matrix validation summary - Document 2, Iteration 1
+
+Ground truth normalization:
+The GT file is an edge list, so it was normalized into an undirected set of component-to-component edges before validation. The extracted CSV files were adjacency matrices and were normalized into the same undirected edge-set format. Only Diego/Jennifer round matrix files were evaluated; final_connectivity_matrix.csv was not included because it is not tied to an extractor-round row name.
+
+GT after normalization: 58 undirected edges across 55 component names.
+
+Main reason the scores were not perfect:
+The non-perfect score was caused by imperfect connectivity/edge discovery, not by component naming. All GT component names were present exactly in every extracted round matrix, there were no extra non-GT matrix nodes, and there were no false positives. The only drop came from two GT edges that were missing in every evaluated round.
+
+Missing GT edges causing the drop:
+- PAN-RPS-A -- RELAY-K12A
+- PAN-RPS-B -- RELAY-K12B
+
+What was not responsible:
+- Component names were not wrong or close-but-imperfect; every GT component name appeared exactly.
+- No GT components were missing from the extracted matrices.
+- No extra intermediate nodes were inserted into the extracted matrices.
+- No false-positive extracted edges were found.
+
+Examples causing the drop:
+- PAN-RPS-A and RELAY-K12A are both present as component names, but the GT edge PAN-RPS-A -- RELAY-K12A was not discovered.
+- PAN-RPS-B and RELAY-K12B are both present as component names, but the GT edge PAN-RPS-B -- RELAY-K12B was not discovered.
+
+Counterfactual performance:
+Because there were no extra nodes or false positives, there is nothing to remove from the extraction. Removing non-GT items would leave the score unchanged. If the two missing relay-to-RPS-panel edges had been added, every round would have reached a perfect score.
+- Diego -- Round 1: raw TP=56, FP=0, FN=2, Precision=1.000000, Recall=0.965517, F1=0.982456. If non-GT/extra nodes were removed, performance would remain TP=56, FP=0, FN=2, Precision=1.000000, Recall=0.965517, F1=0.982456. If the two missing GT edges were added, performance would become TP=58, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+- Jennifer -- Round 1: raw TP=56, FP=0, FN=2, Precision=1.000000, Recall=0.965517, F1=0.982456. If non-GT/extra nodes were removed, performance would remain TP=56, FP=0, FN=2, Precision=1.000000, Recall=0.965517, F1=0.982456. If the two missing GT edges were added, performance would become TP=58, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+- Diego -- Round 2: raw TP=56, FP=0, FN=2, Precision=1.000000, Recall=0.965517, F1=0.982456. If non-GT/extra nodes were removed, performance would remain TP=56, FP=0, FN=2, Precision=1.000000, Recall=0.965517, F1=0.982456. If the two missing GT edges were added, performance would become TP=58, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+- Jennifer -- Round 2: raw TP=56, FP=0, FN=2, Precision=1.000000, Recall=0.965517, F1=0.982456. If non-GT/extra nodes were removed, performance would remain TP=56, FP=0, FN=2, Precision=1.000000, Recall=0.965517, F1=0.982456. If the two missing GT edges were added, performance would become TP=58, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+
+Round-specific notes:
+- Diego -- Round 1: zero FP, no missing component names, no extra component names, and FN edges: PAN-RPS-A -- RELAY-K12A, PAN-RPS-B -- RELAY-K12B.
+- Jennifer -- Round 1: zero FP, no missing component names, no extra component names, and FN edges: PAN-RPS-A -- RELAY-K12A, PAN-RPS-B -- RELAY-K12B.
+- Diego -- Round 2: zero FP, no missing component names, no extra component names, and FN edges: PAN-RPS-A -- RELAY-K12A, PAN-RPS-B -- RELAY-K12B.
+- Jennifer -- Round 2: zero FP, no missing component names, no extra component names, and FN edges: PAN-RPS-A -- RELAY-K12A, PAN-RPS-B -- RELAY-K12B.
+
+Conclusion:
+Document 2 / Iteration 1 is already highly precise. The only remaining issue is a recurring edge-discovery miss for two relay-to-RPS-panel links. This is not a naming or normalization problem; it is a small number of omitted connectivity edges.

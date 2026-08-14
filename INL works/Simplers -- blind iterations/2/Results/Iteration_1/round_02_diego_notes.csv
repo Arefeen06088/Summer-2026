@@ -1,0 +1,16 @@
+item,decision,evidence
+physical_component_nodes,included,Included all 47 labels marked physical_component in component_visual_ocr_labels.csv; each is visibly present in the raw schematic.
+BUS-6KA; BUS-6KB,included,Raw schematic shows long named 6.9 kV busbars with filled taps; overlay corroborates true BUS-* logical bus nodes.
+BUS-480A; BUS-480B,included,Raw schematic shows named 480 V load-center busbars with multiple filled taps; treated as true BUS-* nodes.
+BUS-125DCA; BUS-125DCB,included,"Raw schematic shows named 125 VDC busbars with charger, battery, inverter, and ground taps; treated as true BUS-* nodes."
+BUS-120A; BUS-120B,included,Raw schematic shows named 120 VAC RPS busbars with inverter outputs and panel/rack taps; treated as true BUS-* nodes.
+P01-P50 terminal labels,excluded_as_nodes_collapsed_to_edges,"These labels sit on conductor spans between components/buses; they are retained only in edge evidence, not as graph nodes."
+G01; G02 ground tap labels,excluded_as_nodes_collapsed_to_edges,G01/G02 mark taps from BUS-125DCA/B to physical ground components GND-01A/B; graph uses direct bus-to-ground edges.
+C01; C04 control labels,excluded_as_nodes_collapsed_to_edges,C01 and C04 are dashed control conductors; graph uses ATS-1A--RELAY-K12A and ATS-1B--RELAY-K12B direct edges.
+C03; C06 control labels,excluded_as_nodes_collapsed_to_edges,C03 and C06 are dashed RPS/PLC control routes; graph uses PAN-RPS-A--PLC-ESF and PLC-ESF--PAN-RPS-B medium-confidence edges.
+C02; C05 vertical dashed routes,excluded_ambiguous,"Raw schematic shows these dashed cable-tray/control routes near the DC section, but no clean two-component endpoint pair is visible; not promoted to nodes or edges."
+RELAY-K12B left dashed spur,not_connected_in_matrix,"A dashed spur leaves/approaches RELAY-K12B toward the C05 route, but its lower endpoint is cable-tray-like rather than a distinct component terminal; documented as ambiguous and excluded."
+INST-RACK-A; INST-RACK-B control adjacency,not_connected_in_matrix,Instrument racks have clear solid BUS-120A/B power taps; dashed tray lines pass around nearby panels but do not show a distinct rack-to-PLC or rack-to-RPS terminal connection.
+APERTURE CARD; notes/title/revision tables,excluded,"These are drawing annotations/blocks, not physical components or true BUS-* nodes."
+wire_nodes.csv endpoint IDs,excluded_as_nodes,WIRE-NODE-* entries are geometric extraction points/endpoints; they were used as visual aids only and collapsed into named component/bus edges.
+round_2_jennifer_confirmation,agreed_converged,"Jennifer Round 1 matrix and edge CSVs were byte-identical to Diego Round 1; verified 55 nodes, 56 undirected edges, symmetric matrix, diagonal zero, and edge file matches matrix."

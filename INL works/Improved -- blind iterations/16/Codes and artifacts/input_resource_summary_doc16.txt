@@ -1,0 +1,23 @@
+Doc 16 input resource summary
+=============================
+Primary raw schematic: raw -- synthetic_npp_electrical_schematic_revised(1).png (4087 x 2732)
+Matching derived resources: component_visual_ocr_labels.csv, detected_components_and_logical_detection_plus_ocr_overlay.png, wires_mask.png, wires_mask_overlay.png, wire_nodes.csv, wire_nodes_overlay.png
+Physical component labels from CSV after title-block exclusion: 168
+Manual physical components from raw: 2
+Manual named logical bus labels: 8
+
+Logical nodes retained:
+- BUS-4KV-A (bus): named upper 4160 V safety bus
+- BUS-4KV-B (bus): named lower 4160 V safety bus
+- BUS-480-A (bus): named upper 480 V load-center bus
+- BUS-480-B (bus): lower 480 V load-center bus visually paired with BUS-480-A and tied through CB-TIE-480AB
+- BUS-125DC-A (bus): named 125 VDC A vital bus near battery/charger/inverter A
+- BUS-125DC-B (bus): named 125 VDC B vital bus near battery/charger/inverter B
+- BUS-120-RPS-A (bus): named 120 VAC RPS A bus below INV-120A
+- BUS-120-RPS-B (bus): named 120 VAC RPS B bus below INV-120B
+
+Extraction warning: exclude note boxes, legend items, title block text, anonymous WN-* wire-node points, line ticks, and pure crossings.
+The OCR candidate PP-E1-480-125R is excluded from this inventory because it is title-block/drawing-number text, not a schematic component.
+The raw-visible UCP-01 box is added manually because it is a labeled schematic component connected to GND-NO.
+The raw-visible DB-RPS-A3-1A box is added manually because OCR missed the A-side RPS lower box label.
+The OCR candidate JB-R is retained as a label-corrected physical component named JB-RPS-B3-1B.

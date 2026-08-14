@@ -1,0 +1,44 @@
+Connectivity matrix validation summary - Document 12
+Input tree: Improved -- blind iterations
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\12\synthetic_npp_connectivity_matrix_rps_rerouted.csv
+Token usage: no token estimate files were present under the requested results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_connectivity_matrix.csv): TP=165, FP=33, FN=15, Precision=0.833333, Recall=0.916667, F1=0.873016
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_connectivity_matrix.csv): TP=140, FP=2, FN=40, Precision=0.985915, Recall=0.777778, F1=0.869565
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_connectivity_matrix.csv): TP=142, FP=2, FN=38, Precision=0.986111, Recall=0.788889, F1=0.876543
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_connectivity_matrix.csv): TP=142, FP=2, FN=38, Precision=0.986111, Recall=0.788889, F1=0.876543
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=142, FP=2, FN=38, Precision=0.986111, Recall=0.788889, F1=0.876543
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- CB-DC-1A -- MCC-2A
+- CB-DC-1B -- MCC-2B
+
+False-negative edge examples:
+- ANN-480A -- PNL-RPS-A
+- ANN-480A -- TB-ANN-1
+- ANN-480B -- SEQ-REC-1
+- BUS-120VAC-ESF -- PNL-ESFAS-A
+- BUS-120VAC-ESF -- PNL-ESFAS-B
+- BUS-480-C -- CB-DC-1A
+- BUS-480-D -- CB-DC-1B
+- BUS-4KV-A -- PT-4160A
+- BUS-4KV-B -- PT-4160B
+- CB-103 -- RELAY-86A
+
+
+Missing GT node examples:
+- RELAY-86A: 6 missed incident GT edge(s)
+- RELAY-86B: 6 missed incident GT edge(s)
+- TB-RPS-A: 5 missed incident GT edge(s)
+- TB-RPS-B: 5 missed incident GT edge(s)
+- RELAY-27A: 4 missed incident GT edge(s)
+- RELAY-27B: 4 missed incident GT edge(s)
+- SEQ-REC-1: 4 missed incident GT edge(s)
+- RELAY-50A: 3 missed incident GT edge(s)
+- RELAY-50B: 3 missed incident GT edge(s)
+- ANN-480A: 2 missed incident GT edge(s)

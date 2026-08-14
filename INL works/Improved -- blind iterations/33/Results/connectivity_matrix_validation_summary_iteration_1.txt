@@ -1,0 +1,152 @@
+Connectivity matrix validation summary - Improved Document 33, Iteration 1
+==========================================================================
+
+Ground truth source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\33\synthetic_aux_ccw_connectivity_matrix_v14_highres_clean.csv
+Ground truth normalized as an undirected edge set with 210 edges across 200 component names.
+Evaluated extracted matrices from: C:\Asif_all_python_projects\INL\Improved -- blind iterations\33\Results\Iteration_1
+Included files: connectivity_matrix.csv, round_01_diego_matrix.csv, round_01_jennifer_matrix.csv, round_02_diego_matrix.csv, round_02_jennifer_matrix.csv, final_connectivity_matrix.csv
+Note: connectivity_matrix.csv is included because its filename also ends with _matrix.csv; it is labeled as an unlabeled connectivity matrix row.
+
+Strict exact-match metrics
+--------------------------
+- Connectivity matrix -- Unlabeled: TP=106, FP=116, FN=104, P=0.477477, R=0.504762, F1=0.490741
+- Diego -- Round 1: TP=104, FP=132, FN=106, P=0.440678, R=0.495238, F1=0.466368
+- Jennifer -- Round 1: TP=106, FP=116, FN=104, P=0.477477, R=0.504762, F1=0.490741
+- Diego -- Round 2: TP=106, FP=116, FN=104, P=0.477477, R=0.504762, F1=0.490741
+- Jennifer -- Round 2: TP=106, FP=116, FN=104, P=0.477477, R=0.504762, F1=0.490741
+- Final connectivity -- Final: TP=106, FP=116, FN=104, P=0.477477, R=0.504762, F1=0.490741
+
+Primary reason performance is not perfect
+-----------------------------------------
+The dominant loss is a mix of extra extracted links and imperfect connectivity/edge discovery: false positives are more common than false negatives across the evaluated matrices.
+Component naming is not the broad driver unless noted below. Most errors are wrong or missing edges between otherwise recognizable components.
+Best strict rows: Connectivity matrix -- Unlabeled, Jennifer -- Round 1, Diego -- Round 2, Jennifer -- Round 2, Final connectivity -- Final with F1=0.490741. Lowest strict row: Diego -- Round 1 with F1=0.466368.
+
+Close-but-not-perfect component names
+-------------------------------------
+- Extracted P-12A is close to GT PI-12A (similarity about 0.94).
+- Extracted P-12B is close to GT PI-12B (similarity about 0.94).
+- Extracted HX-31A is close to GT HX-301A (similarity about 0.92).
+- Extracted HX-31B is close to GT HX-301B (similarity about 0.92).
+- Extracted TAH-301 is close to GT TAL-301 (similarity about 0.89).
+- Extracted PY-12A is close to GT PI-12A (similarity about 0.86).
+- Extracted PY-12B is close to GT PI-12B (similarity about 0.86).
+- Extracted PY-202 is close to GT PI-202 (similarity about 0.86).
+- Extracted PY-401 is close to GT PI-401 (similarity about 0.86).
+- Extracted TY-101 is close to GT TI-101 (similarity about 0.86).
+These are diagnostic close-name candidates only; the official CSV keeps strict exact matching unless a document-specific alias is explicitly requested.
+
+Component coverage
+------------------
+GT components absent from at least one extracted matrix: 38. Examples: HDR-CHM-100, HDR-CW-DISC, HDR-CW-RET, HDR-CW-SUCT, HDR-CW-SUP, HDR-DATA-100, HDR-DR-100, HDR-FLT-IN, HDR-FLT-OUT, HDR-HX-IN, HDR-HX-OUT, HDR-IA-100.
+Extracted-only component names seen in at least one matrix: 31. Examples: 1" IA HEADER - 80 PSIG, 1/2" CHEMICAL DOSING HEADER, 3" FLOOR DRAIN / RADWASTE RETURN HEADER, 4" FILTER INLET MANIFOLD, 4" FILTER OUTLET MANIFOLD, 4" HX INLET MANIFOLD, 4" HX OUTLET MANIFOLD, 6" CCW RETURN HEADER, 6" CCW SUPPLY HEADER, 6" PUMP DISCHARGE HEADER, 6" PUMP SUCTION HEADER, 8" SERVICE WATER RETURN HEADER.
+
+Examples causing the score drop
+--------------------------------
+Repeated false-positive extracted edges, counted across all evaluated rows:
+- 6" PUMP DISCHARGE HEADER -- QI-301 (6 rows)
+- 4" HX INLET MANIFOLD -- HV-31A (6 rows)
+- JB-201 -- PDT-201 (6 rows)
+- TT-101 -- TY-101 (6 rows)
+- 4" FILTER INLET MANIFOLD -- HV-201 (6 rows)
+- FT-301 -- JB-201 (6 rows)
+- 4" FILTER OUTLET MANIFOLD -- HV-231 (6 rows)
+- 4" HX INLET MANIFOLD -- MOV-301 (6 rows)
+- 1" IA HEADER - 80 PSIG -- AFR-401 (6 rows)
+- 3" FLOOR DRAIN / RADWASTE RETURN HEADER -- DV-501 (6 rows)
+- FE-401 -- PT-401 (6 rows)
+- P-12A -- PY-12A (6 rows)
+- CV-12B -- P-12B (6 rows)
+- HV-405 -- MOV-404 (6 rows)
+Repeated missed GT edges, counted across all evaluated rows:
+- JB-12B -- PT-13B (6 rows)
+- HDR-CHM-100 -- QI-301 (6 rows)
+- HDR-HX-IN -- HV-31A (6 rows)
+- HV-32B -- HX-301B (6 rows)
+- HV-31A -- HX-301A (6 rows)
+- FE-201 -- HDR-CW-DISC (6 rows)
+- HX-301A -- TT-31A (6 rows)
+- HDR-HX-OUT -- HV-32B (6 rows)
+- HDR-HX-IN -- MOV-301 (6 rows)
+- HDR-HX-OUT -- TCV-301 (6 rows)
+- HDR-CW-DISC -- MOV-13A (6 rows)
+- HDR-DATA-100 -- PLC-101 (6 rows)
+- CV-301A -- MIX-301 (6 rows)
+- HDR-FLT-IN -- PSV-201 (6 rows)
+
+Intermediate/extra-node effects
+-------------------------------
+Extra extracted node names that create false-positive links most often:
+- HX-31A: involved in 42 FP edge appearances
+- HX-31B: involved in 42 FP edge appearances
+- 4" FILTER INLET MANIFOLD: involved in 41 FP edge appearances
+- 1" IA HEADER - 80 PSIG: involved in 30 FP edge appearances
+- 8" SERVICE WATER RETURN HEADER: involved in 30 FP edge appearances
+- 6" PUMP DISCHARGE HEADER: involved in 24 FP edge appearances
+- 4" FILTER OUTLET MANIFOLD: involved in 24 FP edge appearances
+- P-12A: involved in 24 FP edge appearances
+- P-12B: involved in 24 FP edge appearances
+- 8" SERVICE WATER SUPPLY HEADER: involved in 24 FP edge appearances
+- SAMPLE / ANALYZER PANEL: involved in 24 FP edge appearances
+- DCS / PLC DATA BUS: involved in 23 FP edge appearances
+High-impact FP nodes overall, including valid GT components used in incorrect links:
+- HX-31A: involved in 42 FP edge appearances
+- HX-31B: involved in 42 FP edge appearances
+- 4" FILTER INLET MANIFOLD: involved in 41 FP edge appearances
+- 1" IA HEADER - 80 PSIG: involved in 30 FP edge appearances
+- 8" SERVICE WATER RETURN HEADER: involved in 30 FP edge appearances
+- 6" PUMP DISCHARGE HEADER: involved in 24 FP edge appearances
+- JB-201: involved in 24 FP edge appearances
+- 4" FILTER OUTLET MANIFOLD: involved in 24 FP edge appearances
+- P-12A: involved in 24 FP edge appearances
+- P-12B: involved in 24 FP edge appearances
+- TK-101: involved in 24 FP edge appearances
+- JB-202: involved in 24 FP edge appearances
+
+Counterfactual insights
+-----------------------
+Connectivity matrix -- Unlabeled:
+- If FP links involving extracted-only/close-name nodes were removed (85 edges), performance would be: TP=106, FP=31, FN=104, P=0.773723, R=0.504762, F1=0.610951.
+- If close-name aliases were accepted (P-12A->PI-12A, P-12B->PI-12B, HX-31A->HX-301A, HX-31B->HX-301B), performance would be: TP=118, FP=102, FN=92, P=0.536364, R=0.561905, F1=0.548837.
+- If all false-positive links were not put in extraction, performance would be: TP=106, FP=0, FN=104, P=1.000000, R=0.504762, F1=0.670886.
+- If the missed GT links were added but current FPs remained, performance would be: TP=210, FP=116, FN=0, P=0.644172, R=1.000000, F1=0.783582.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=210, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Diego -- Round 1:
+- If FP links involving extracted-only/close-name nodes were removed (92 edges), performance would be: TP=104, FP=40, FN=106, P=0.722222, R=0.495238, F1=0.587571.
+- If close-name aliases were accepted (P-12A->PI-12A, P-12B->PI-12B, HX-31A->HX-301A, HX-31B->HX-301B), performance would be: TP=116, FP=118, FN=94, P=0.495726, R=0.552381, F1=0.522523.
+- If all false-positive links were not put in extraction, performance would be: TP=104, FP=0, FN=106, P=1.000000, R=0.495238, F1=0.662420.
+- If the missed GT links were added but current FPs remained, performance would be: TP=210, FP=132, FN=0, P=0.614035, R=1.000000, F1=0.760870.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=210, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Jennifer -- Round 1:
+- If FP links involving extracted-only/close-name nodes were removed (85 edges), performance would be: TP=106, FP=31, FN=104, P=0.773723, R=0.504762, F1=0.610951.
+- If close-name aliases were accepted (P-12A->PI-12A, P-12B->PI-12B, HX-31A->HX-301A, HX-31B->HX-301B), performance would be: TP=118, FP=102, FN=92, P=0.536364, R=0.561905, F1=0.548837.
+- If all false-positive links were not put in extraction, performance would be: TP=106, FP=0, FN=104, P=1.000000, R=0.504762, F1=0.670886.
+- If the missed GT links were added but current FPs remained, performance would be: TP=210, FP=116, FN=0, P=0.644172, R=1.000000, F1=0.783582.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=210, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Diego -- Round 2:
+- If FP links involving extracted-only/close-name nodes were removed (85 edges), performance would be: TP=106, FP=31, FN=104, P=0.773723, R=0.504762, F1=0.610951.
+- If close-name aliases were accepted (P-12A->PI-12A, P-12B->PI-12B, HX-31A->HX-301A, HX-31B->HX-301B), performance would be: TP=118, FP=102, FN=92, P=0.536364, R=0.561905, F1=0.548837.
+- If all false-positive links were not put in extraction, performance would be: TP=106, FP=0, FN=104, P=1.000000, R=0.504762, F1=0.670886.
+- If the missed GT links were added but current FPs remained, performance would be: TP=210, FP=116, FN=0, P=0.644172, R=1.000000, F1=0.783582.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=210, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Jennifer -- Round 2:
+- If FP links involving extracted-only/close-name nodes were removed (85 edges), performance would be: TP=106, FP=31, FN=104, P=0.773723, R=0.504762, F1=0.610951.
+- If close-name aliases were accepted (P-12A->PI-12A, P-12B->PI-12B, HX-31A->HX-301A, HX-31B->HX-301B), performance would be: TP=118, FP=102, FN=92, P=0.536364, R=0.561905, F1=0.548837.
+- If all false-positive links were not put in extraction, performance would be: TP=106, FP=0, FN=104, P=1.000000, R=0.504762, F1=0.670886.
+- If the missed GT links were added but current FPs remained, performance would be: TP=210, FP=116, FN=0, P=0.644172, R=1.000000, F1=0.783582.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=210, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Final connectivity -- Final:
+- If FP links involving extracted-only/close-name nodes were removed (85 edges), performance would be: TP=106, FP=31, FN=104, P=0.773723, R=0.504762, F1=0.610951.
+- If close-name aliases were accepted (P-12A->PI-12A, P-12B->PI-12B, HX-31A->HX-301A, HX-31B->HX-301B), performance would be: TP=118, FP=102, FN=92, P=0.536364, R=0.561905, F1=0.548837.
+- If all false-positive links were not put in extraction, performance would be: TP=106, FP=0, FN=104, P=1.000000, R=0.504762, F1=0.670886.
+- If the missed GT links were added but current FPs remained, performance would be: TP=210, FP=116, FN=0, P=0.644172, R=1.000000, F1=0.783582.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=210, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Bottom line
+-----------
+The remaining gap is mostly edge discovery, with the specific FP/FN examples above showing where the extracted connectivity diverges from GT. Naming issues are secondary unless listed in the close-name section.

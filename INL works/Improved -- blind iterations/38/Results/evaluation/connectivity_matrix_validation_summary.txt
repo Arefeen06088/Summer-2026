@@ -1,0 +1,35 @@
+Connectivity matrix validation summary - Document 38
+Input tree: Improved -- blind iterations
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\38\synthetic_npp_connectivity_matrix_improved.csv
+Token usage: no token estimate files were present under the requested results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_matrix.csv): TP=55, FP=4, FN=5, Precision=0.932203, Recall=0.916667, F1=0.924370
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_matrix.csv): TP=50, FP=1, FN=10, Precision=0.980392, Recall=0.833333, F1=0.900901
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_matrix.csv): TP=50, FP=1, FN=10, Precision=0.980392, Recall=0.833333, F1=0.900901
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_matrix.csv): TP=50, FP=1, FN=10, Precision=0.980392, Recall=0.833333, F1=0.900901
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=50, FP=1, FN=10, Precision=0.980392, Recall=0.833333, F1=0.900901
+- Diego -- Iteration 2 Round 1 (Iteration_2\round_01_diego_matrix.csv): TP=54, FP=1, FN=6, Precision=0.981818, Recall=0.900000, F1=0.939130
+- Jennifer -- Iteration 2 Round 1 (Iteration_2\round_01_jennifer_matrix.csv): TP=54, FP=1, FN=6, Precision=0.981818, Recall=0.900000, F1=0.939130
+- Diego -- Iteration 2 Round 2 (Iteration_2\round_02_diego_matrix.csv): TP=54, FP=1, FN=6, Precision=0.981818, Recall=0.900000, F1=0.939130
+- Jennifer -- Iteration 2 Round 2 (Iteration_2\round_02_jennifer_matrix.csv): TP=54, FP=1, FN=6, Precision=0.981818, Recall=0.900000, F1=0.939130
+- Final connectivity -- Iteration 2 Final (Iteration_2\final_connectivity_matrix.csv): TP=54, FP=1, FN=6, Precision=0.981818, Recall=0.900000, F1=0.939130
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- BUS-120AC-B -- RELAY-27B
+
+False-negative edge examples:
+- BUS-120AC-A -- TR-CPT-A
+- CB-103 -- RELAY-86A
+- CB-104 -- RELAY-86B
+- CB-201A -- RELAY-27A
+- CB-201B -- RELAY-27B
+- GND-STA -- TR-201A
+
+
+Missing GT node examples:
+- GND-STA: 1 missed incident GT edge(s)

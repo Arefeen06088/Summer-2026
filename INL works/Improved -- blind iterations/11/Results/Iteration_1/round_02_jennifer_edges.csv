@@ -1,0 +1,133 @@
+node_a,node_b,edge_type,source,evidence
+GEN-01,TR-UAT-1,solid_power_feeder,round_02_jennifer_saturated,Top-left crop: solid 13.8KV-1A feeder directly connects generator GEN-01 to transformer TR-UAT-1.
+TR-UAT-1,CB-UAT-1,solid_power_feeder,round_02_jennifer_saturated,Top-left crop: UAT1-SEC solid secondary feeder runs from TR-UAT-1 down/right to CB-UAT-1.
+CB-UAT-1,BUS-13-8A,solid_power_feeder,round_02_jennifer_saturated,Top-left crop: CB-UAT-1 is inserted on/tapped to the thick BUS-13-8A line with visible connection.
+TR-SUT-1,CB-SUT-1,solid_power_feeder,round_02_jennifer_saturated,Top-center crop: SUT1-SEC solid feeder drops from TR-SUT-1 to CB-SUT-1.
+CB-SUT-1,BUS-13-8A,solid_power_feeder,round_02_jennifer_saturated,Top-center crop: CB-SUT-1 output sits on the thick BUS-13-8A segment left of the tie.
+BUS-13-8A,CB-13-TIE,solid_power_feeder,round_02_jennifer_saturated,Top-center crop: thick bus segment labeled 13T-A connects BUS-13-8A to the left side of CB-13-TIE.
+CB-13-TIE,BUS-13-8B,solid_power_feeder,round_02_jennifer_saturated,Top-center/right crops: thick bus segment labeled 13T-B exits CB-13-TIE toward BUS-13-8B.
+GEN-02,TR-UAT-2,solid_power_feeder,round_02_jennifer_saturated,Top-center/right crop: solid 13.8KV-2A feeder directly connects GEN-02 to TR-UAT-2.
+TR-UAT-2,CB-UAT-2,solid_power_feeder,round_02_jennifer_saturated,Top-right crop: UAT2-SEC solid secondary feeder runs from TR-UAT-2 to CB-UAT-2.
+CB-UAT-2,BUS-13-8B,solid_power_feeder,round_02_jennifer_saturated,Top-right crop: CB-UAT-2 is inserted on/tapped to the thick BUS-13-8B line.
+TR-SUT-2,CB-SUT-2,solid_power_feeder,round_02_jennifer_saturated,Top-right crop: SUT2-SEC solid feeder drops from TR-SUT-2 to CB-SUT-2.
+CB-SUT-2,BUS-13-8B,solid_power_feeder,round_02_jennifer_saturated,Top-right crop: CB-SUT-2 output is on the thick BUS-13-8B segment.
+BUS-13-8A,CB-IN-A,solid_power_feeder,round_02_jennifer_saturated,Train A upper crop: normal incoming feeder from BUS-13-8A drops to CB-IN-A.
+CB-IN-A,BUS-4160-A,solid_power_feeder,round_02_jennifer_saturated,Train A upper crop: solid slanted feeder from CB-IN-A lands on BUS-4160-A with a junction dot.
+DG-1A,CB-DG-A,solid_power_feeder,round_02_jennifer_saturated,Top train A crop and Jennifer DG zoom: diesel generator DG-1A is vertically connected by the solid feeder labeled DG-2A to CB-DG-A.
+CB-DG-A,BUS-4160-A,solid_power_feeder,round_02_jennifer_saturated,Train A upper crop: CB-DG-A vertical feeder lands on BUS-4160-A with a junction dot.
+CB-IN-A,RELAY-27A,dashed_control_interlock,round_02_jennifer_saturated,Train A upper crop: short dashed control/interlock line runs from CB-IN-A to RELAY-27A.
+RELAY-27A,CB-DG-A,dashed_control_interlock,round_02_jennifer_saturated,Train A upper crop: short dashed control/interlock line runs from RELAY-27A to CB-DG-A.
+BUS-4160-A,CB-4160-A1,solid_power_feeder,round_02_jennifer_saturated,Train A mid crop: feeder FDR-A1 drops from BUS-4160-A to CB-4160-A1.
+CB-4160-A1,TR-480-A1,solid_power_feeder,round_02_jennifer_saturated,Train A mid crop: solid 52-A1 feeder connects CB-4160-A1 to TR-480-A1.
+TR-480-A1,CB-480-A1,solid_power_feeder,round_02_jennifer_saturated,Train A mid crop: transformer secondary labeled 480-A1 feeds CB-480-A1.
+CB-480-A1,BUS-480-A1,solid_power_feeder,round_02_jennifer_saturated,Train A mid crop: LC-A1 solid feeder lands from CB-480-A1 onto BUS-480-A1.
+BUS-480-A1,CB-MCC-A1,solid_power_feeder,round_02_jennifer_saturated,Train A mid/lower crop: vertical MCC-A1 branch drops from BUS-480-A1 to CB-MCC-A1.
+CB-MCC-A1,MCC-A1,solid_power_feeder,round_02_jennifer_saturated,Train A lower crop: 52M-A1 solid feeder connects CB-MCC-A1 to MCC-A1.
+BUS-4160-A,CB-4160-A2,solid_power_feeder,round_02_jennifer_saturated,Train A mid crop: feeder FDR-A2 drops from BUS-4160-A to CB-4160-A2.
+CB-4160-A2,TR-480-A2,solid_power_feeder,round_02_jennifer_saturated,Train A mid crop: solid 52-A2 feeder connects CB-4160-A2 to TR-480-A2.
+TR-480-A2,CB-480-A2,solid_power_feeder,round_02_jennifer_saturated,Train A mid crop: transformer secondary labeled 480-A2 feeds CB-480-A2.
+CB-480-A2,BUS-480-A2,solid_power_feeder,round_02_jennifer_saturated,Train A mid crop: LC-A2 solid feeder lands from CB-480-A2 onto BUS-480-A2.
+BUS-480-A2,CB-MCC-A2,solid_power_feeder,round_02_jennifer_saturated,Train A mid/lower crop: vertical MCC-A2 branch drops from BUS-480-A2 to CB-MCC-A2.
+CB-MCC-A2,MCC-A2,solid_power_feeder,round_02_jennifer_saturated,Train A lower crop: 52M-A2 solid feeder connects CB-MCC-A2 to MCC-A2.
+BUS-480-A2,RECT-125-A,solid_power_feeder,round_02_jennifer_saturated,Train A lower crop: vertical 125VDC/rectifier branch descends from BUS-480-A2 to RECT-125-A.
+RECT-125-A,PANEL-IC-A,solid_dc_feeder,round_02_jennifer_saturated,Train A lower crop: solid DC-A125 vertical line continues from RECT-125-A through/along PANEL-IC-A.
+MCC-A1,PUMP-SI-A,solid_power_feeder,round_02_jennifer_saturated,Train A lower crop: MCC-A1 branch labeled L-AP1 feeds PUMP-SI-A.
+MCC-A1,PUMP-CCW-A,solid_power_feeder,round_02_jennifer_saturated,Train A lower crop: MCC-A1 branch feeds PUMP-CCW-A.
+MCC-A1,FAN-HVAC-A,solid_power_feeder,round_02_jennifer_saturated,Train A lower crop: MCC-A1 branch feeds FAN-HVAC-A.
+MCC-A2,MOV-RHR-A,solid_power_feeder,round_02_jennifer_saturated,Train A lower crop: MCC-A2 branch labeled L-AV1 feeds MOV-RHR-A.
+MCC-A2,PANEL-IC-A,dashed_control_interlock,round_02_jennifer_saturated,Train A lower crop: dashed local control/interlock route leaves MCC-A2 and drops to PANEL-IC-A.
+PANEL-IC-A,GND-A,ground_reference,round_02_jennifer_saturated,Train A lower/bottom crop: PANEL-IC-A DC vertical conductor continues to visible ground symbol GND-A.
+BUS-13-8A,CB-IN-B,solid_power_feeder,round_02_jennifer_saturated,Train B upper crop: normal incoming feeder from BUS-13-8A drops to CB-IN-B.
+CB-IN-B,BUS-4160-B,solid_power_feeder,round_02_jennifer_saturated,Train B upper crop: solid slanted feeder from CB-IN-B lands on BUS-4160-B with a junction dot.
+DG-1B,CB-DG-B,solid_power_feeder,round_02_jennifer_saturated,Top train B crop and Jennifer DG zoom: diesel generator DG-1B is vertically connected by the solid feeder labeled DG-2B to CB-DG-B.
+CB-DG-B,BUS-4160-B,solid_power_feeder,round_02_jennifer_saturated,Train B upper crop: CB-DG-B vertical feeder lands on BUS-4160-B with a junction dot.
+CB-IN-B,RELAY-27B,dashed_control_interlock,round_02_jennifer_saturated,Train B upper crop: short dashed control/interlock line runs from CB-IN-B to RELAY-27B.
+RELAY-27B,CB-DG-B,dashed_control_interlock,round_02_jennifer_saturated,Train B upper crop: short dashed control/interlock line runs from RELAY-27B to CB-DG-B.
+BUS-4160-B,CB-4160-B1,solid_power_feeder,round_02_jennifer_saturated,Train B mid crop: feeder FDR-B1 drops from BUS-4160-B to CB-4160-B1.
+CB-4160-B1,TR-480-B1,solid_power_feeder,round_02_jennifer_saturated,Train B mid crop: solid 52-B1 feeder connects CB-4160-B1 to TR-480-B1.
+TR-480-B1,CB-480-B1,solid_power_feeder,round_02_jennifer_saturated,Train B mid crop: transformer secondary labeled 480-B1 feeds CB-480-B1.
+CB-480-B1,BUS-480-B1,solid_power_feeder,round_02_jennifer_saturated,Train B mid crop: LC-B1 solid feeder lands from CB-480-B1 onto BUS-480-B1.
+BUS-480-B1,CB-MCC-B1,solid_power_feeder,round_02_jennifer_saturated,Train B mid/lower crop: vertical MCC-B1 branch drops from BUS-480-B1 to CB-MCC-B1.
+CB-MCC-B1,MCC-B1,solid_power_feeder,round_02_jennifer_saturated,Train B lower crop: 52M-B1 solid feeder connects CB-MCC-B1 to MCC-B1.
+BUS-4160-B,CB-4160-B2,solid_power_feeder,round_02_jennifer_saturated,Train B mid crop: feeder FDR-B2 drops from BUS-4160-B to CB-4160-B2.
+CB-4160-B2,TR-480-B2,solid_power_feeder,round_02_jennifer_saturated,Train B mid crop: solid 52-B2 feeder connects CB-4160-B2 to TR-480-B2.
+TR-480-B2,CB-480-B2,solid_power_feeder,round_02_jennifer_saturated,Train B mid crop: transformer secondary labeled 480-B2 feeds CB-480-B2.
+CB-480-B2,BUS-480-B2,solid_power_feeder,round_02_jennifer_saturated,Train B mid crop: LC-B2 solid feeder lands from CB-480-B2 onto BUS-480-B2.
+BUS-480-B2,CB-MCC-B2,solid_power_feeder,round_02_jennifer_saturated,Train B mid/lower crop: vertical MCC-B2 branch drops from BUS-480-B2 to CB-MCC-B2.
+CB-MCC-B2,MCC-B2,solid_power_feeder,round_02_jennifer_saturated,Train B lower crop: 52M-B2 solid feeder connects CB-MCC-B2 to MCC-B2.
+BUS-480-B2,RECT-125-B,solid_power_feeder,round_02_jennifer_saturated,Train B lower crop: vertical 125VDC/rectifier branch descends from BUS-480-B2 to RECT-125-B.
+RECT-125-B,PANEL-IC-B,solid_dc_feeder,round_02_jennifer_saturated,Train B lower crop: solid DC-B125 vertical line continues from RECT-125-B through/along PANEL-IC-B.
+MCC-B1,PUMP-SI-B,solid_power_feeder,round_02_jennifer_saturated,Train B lower crop: MCC-B1 branch labeled L-BP1 feeds PUMP-SI-B.
+MCC-B1,PUMP-CCW-B,solid_power_feeder,round_02_jennifer_saturated,Train B lower crop: MCC-B1 branch feeds PUMP-CCW-B.
+MCC-B1,FAN-HVAC-B,solid_power_feeder,round_02_jennifer_saturated,Train B lower crop: MCC-B1 branch feeds FAN-HVAC-B.
+MCC-B2,MOV-RHR-B,solid_power_feeder,round_02_jennifer_saturated,Train B lower crop: MCC-B2 branch labeled L-BV1 feeds MOV-RHR-B.
+MCC-B2,PANEL-IC-B,dashed_control_interlock,round_02_jennifer_saturated,Train B lower crop: dashed local control/interlock route leaves MCC-B2 and drops to PANEL-IC-B.
+PANEL-IC-B,GND-B,ground_reference,round_02_jennifer_saturated,Train B lower/bottom crop: PANEL-IC-B DC vertical conductor continues to visible ground symbol GND-B.
+BUS-13-8B,CB-IN-C,solid_power_feeder,round_02_jennifer_saturated,Train C upper crop: normal incoming feeder from BUS-13-8B drops to CB-IN-C.
+CB-IN-C,BUS-4160-C,solid_power_feeder,round_02_jennifer_saturated,Train C upper crop: solid slanted feeder from CB-IN-C lands on BUS-4160-C with a junction dot.
+DG-1C,CB-DG-C,solid_power_feeder,round_02_jennifer_saturated,Top train C crop and Jennifer DG zoom: diesel generator DG-1C is vertically connected by the solid feeder labeled DG-2C to CB-DG-C.
+CB-DG-C,BUS-4160-C,solid_power_feeder,round_02_jennifer_saturated,Train C upper crop: CB-DG-C vertical feeder lands on BUS-4160-C with a junction dot.
+CB-IN-C,RELAY-27C,dashed_control_interlock,round_02_jennifer_saturated,Train C upper crop: short dashed control/interlock line runs from CB-IN-C to RELAY-27C.
+RELAY-27C,CB-DG-C,dashed_control_interlock,round_02_jennifer_saturated,Train C upper crop: short dashed control/interlock line runs from RELAY-27C to CB-DG-C.
+BUS-4160-C,CB-4160-C1,solid_power_feeder,round_02_jennifer_saturated,Train C mid crop: feeder FDR-C1 drops from BUS-4160-C to CB-4160-C1.
+CB-4160-C1,TR-480-C1,solid_power_feeder,round_02_jennifer_saturated,Train C mid crop: solid 52-C1 feeder connects CB-4160-C1 to TR-480-C1.
+TR-480-C1,CB-480-C1,solid_power_feeder,round_02_jennifer_saturated,Train C mid crop: transformer secondary labeled 480-C1 feeds CB-480-C1.
+CB-480-C1,BUS-480-C1,solid_power_feeder,round_02_jennifer_saturated,Train C mid crop: LC-C1 solid feeder lands from CB-480-C1 onto BUS-480-C1.
+BUS-480-C1,CB-MCC-C1,solid_power_feeder,round_02_jennifer_saturated,Train C mid/lower crop: vertical MCC-C1 branch drops from BUS-480-C1 to CB-MCC-C1.
+CB-MCC-C1,MCC-C1,solid_power_feeder,round_02_jennifer_saturated,Train C lower crop: 52M-C1 solid feeder connects CB-MCC-C1 to MCC-C1.
+BUS-4160-C,CB-4160-C2,solid_power_feeder,round_02_jennifer_saturated,Train C mid crop: feeder FDR-C2 drops from BUS-4160-C to CB-4160-C2.
+CB-4160-C2,TR-480-C2,solid_power_feeder,round_02_jennifer_saturated,Train C mid crop: solid 52-C2 feeder connects CB-4160-C2 to TR-480-C2.
+TR-480-C2,CB-480-C2,solid_power_feeder,round_02_jennifer_saturated,Train C mid crop: transformer secondary labeled 480-C2 feeds CB-480-C2.
+CB-480-C2,BUS-480-C2,solid_power_feeder,round_02_jennifer_saturated,Train C mid crop: LC-C2 solid feeder lands from CB-480-C2 onto BUS-480-C2.
+BUS-480-C2,CB-MCC-C2,solid_power_feeder,round_02_jennifer_saturated,Train C mid/lower crop: vertical MCC-C2 branch drops from BUS-480-C2 to CB-MCC-C2.
+CB-MCC-C2,MCC-C2,solid_power_feeder,round_02_jennifer_saturated,Train C lower crop: 52M-C2 solid feeder connects CB-MCC-C2 to MCC-C2.
+BUS-480-C2,RECT-125-C,solid_power_feeder,round_02_jennifer_saturated,Train C lower crop: vertical 125VDC/rectifier branch descends from BUS-480-C2 to RECT-125-C.
+RECT-125-C,PANEL-IC-C,solid_dc_feeder,round_02_jennifer_saturated,Train C lower crop: solid DC-C125 vertical line continues from RECT-125-C through/along PANEL-IC-C.
+MCC-C1,PUMP-SI-C,solid_power_feeder,round_02_jennifer_saturated,Train C lower crop: MCC-C1 branch labeled L-CP1 feeds PUMP-SI-C.
+MCC-C1,PUMP-CCW-C,solid_power_feeder,round_02_jennifer_saturated,Train C lower crop: MCC-C1 branch feeds PUMP-CCW-C.
+MCC-C1,FAN-HVAC-C,solid_power_feeder,round_02_jennifer_saturated,Train C lower crop: MCC-C1 branch feeds FAN-HVAC-C.
+MCC-C2,MOV-RHR-C,solid_power_feeder,round_02_jennifer_saturated,Train C lower crop: MCC-C2 branch labeled L-CV1 feeds MOV-RHR-C.
+MCC-C2,PANEL-IC-C,dashed_control_interlock,round_02_jennifer_saturated,Train C lower crop: dashed local control/interlock route leaves MCC-C2 and drops to PANEL-IC-C.
+PANEL-IC-C,GND-C,ground_reference,round_02_jennifer_saturated,Train C lower/bottom crop: PANEL-IC-C DC vertical conductor continues to visible ground symbol GND-C.
+BUS-13-8B,CB-IN-D,solid_power_feeder,round_02_jennifer_saturated,Train D upper crop: normal incoming feeder from BUS-13-8B drops to CB-IN-D.
+CB-IN-D,BUS-4160-D,solid_power_feeder,round_02_jennifer_saturated,Train D upper crop: solid slanted feeder from CB-IN-D lands on BUS-4160-D with a junction dot.
+DG-1D,CB-DG-D,solid_power_feeder,round_02_jennifer_saturated,Top train D crop and Jennifer DG zoom: diesel generator DG-1D is vertically connected by the solid feeder labeled DG-2D to CB-DG-D.
+CB-DG-D,BUS-4160-D,solid_power_feeder,round_02_jennifer_saturated,Train D upper crop: CB-DG-D vertical feeder lands on BUS-4160-D with a junction dot.
+CB-IN-D,RELAY-27D,dashed_control_interlock,round_02_jennifer_saturated,Train D upper crop: short dashed control/interlock line runs from CB-IN-D to RELAY-27D.
+RELAY-27D,CB-DG-D,dashed_control_interlock,round_02_jennifer_saturated,Train D upper crop: short dashed control/interlock line runs from RELAY-27D to CB-DG-D.
+BUS-4160-D,CB-4160-D1,solid_power_feeder,round_02_jennifer_saturated,Train D mid crop: feeder FDR-D1 drops from BUS-4160-D to CB-4160-D1.
+CB-4160-D1,TR-480-D1,solid_power_feeder,round_02_jennifer_saturated,Train D mid crop: solid 52-D1 feeder connects CB-4160-D1 to TR-480-D1.
+TR-480-D1,CB-480-D1,solid_power_feeder,round_02_jennifer_saturated,Train D mid crop: transformer secondary labeled 480-D1 feeds CB-480-D1.
+CB-480-D1,BUS-480-D1,solid_power_feeder,round_02_jennifer_saturated,Train D mid crop: LC-D1 solid feeder lands from CB-480-D1 onto BUS-480-D1.
+BUS-480-D1,CB-MCC-D1,solid_power_feeder,round_02_jennifer_saturated,Train D mid/lower crop: vertical MCC-D1 branch drops from BUS-480-D1 to CB-MCC-D1.
+CB-MCC-D1,MCC-D1,solid_power_feeder,round_02_jennifer_saturated,Train D lower crop: 52M-D1 solid feeder connects CB-MCC-D1 to MCC-D1.
+BUS-4160-D,CB-4160-D2,solid_power_feeder,round_02_jennifer_saturated,Train D mid crop: feeder FDR-D2 drops from BUS-4160-D to CB-4160-D2.
+CB-4160-D2,TR-480-D2,solid_power_feeder,round_02_jennifer_saturated,Train D mid crop: solid 52-D2 feeder connects CB-4160-D2 to TR-480-D2.
+TR-480-D2,CB-480-D2,solid_power_feeder,round_02_jennifer_saturated,Train D mid crop: transformer secondary labeled 480-D2 feeds CB-480-D2.
+CB-480-D2,BUS-480-D2,solid_power_feeder,round_02_jennifer_saturated,Train D mid crop: LC-D2 solid feeder lands from CB-480-D2 onto BUS-480-D2.
+BUS-480-D2,CB-MCC-D2,solid_power_feeder,round_02_jennifer_saturated,Train D mid/lower crop: vertical MCC-D2 branch drops from BUS-480-D2 to CB-MCC-D2.
+CB-MCC-D2,MCC-D2,solid_power_feeder,round_02_jennifer_saturated,Train D lower crop: 52M-D2 solid feeder connects CB-MCC-D2 to MCC-D2.
+BUS-480-D2,RECT-125-D,solid_power_feeder,round_02_jennifer_saturated,Train D lower crop: vertical 125VDC/rectifier branch descends from BUS-480-D2 to RECT-125-D.
+RECT-125-D,PANEL-IC-D,solid_dc_feeder,round_02_jennifer_saturated,Train D lower crop: solid DC-D125 vertical line continues from RECT-125-D through/along PANEL-IC-D.
+MCC-D1,PUMP-SI-D,solid_power_feeder,round_02_jennifer_saturated,Train D lower crop: MCC-D1 branch labeled L-DP1 feeds PUMP-SI-D.
+MCC-D1,PUMP-CCW-D,solid_power_feeder,round_02_jennifer_saturated,Train D lower crop: MCC-D1 branch feeds PUMP-CCW-D.
+MCC-D1,FAN-HVAC-D,solid_power_feeder,round_02_jennifer_saturated,Train D lower crop: MCC-D1 branch feeds FAN-HVAC-D.
+MCC-D2,MOV-RHR-D,solid_power_feeder,round_02_jennifer_saturated,Train D lower crop: MCC-D2 branch labeled L-DV1 feeds MOV-RHR-D.
+MCC-D2,PANEL-IC-D,dashed_control_interlock,round_02_jennifer_saturated,Train D lower crop: dashed local control/interlock route leaves MCC-D2 and drops to PANEL-IC-D.
+PANEL-IC-D,GND-D,ground_reference,round_02_jennifer_saturated,Train D lower/bottom crop: PANEL-IC-D DC vertical conductor continues to visible ground symbol GND-D.
+BAT-125A,BUS-DC-125A,solid_dc_feeder,round_02_jennifer_saturated,Bottom-left crop: BAT-125A connects by solid BAT-A line to BUS-DC-125A with a junction dot.
+BUS-DC-125A,INV-UPS-A,solid_dc_feeder,round_02_jennifer_saturated,Bottom-left crop: BUS-DC-125A solid segment labeled UPS-AIN feeds INV-UPS-A.
+INV-UPS-A,PANEL-RPS-A,solid_dc_feeder,round_02_jennifer_saturated,Bottom-left crop: INV-UPS-A output labeled UPS-AOUT directly enters PANEL-RPS-A.
+BAT-125B,BUS-DC-125B,solid_dc_feeder,round_02_jennifer_saturated,Bottom-right crop: BAT-125B connects by solid BAT-B line to BUS-DC-125B with a junction dot.
+BUS-DC-125B,INV-UPS-B,solid_dc_feeder,round_02_jennifer_saturated,Bottom-right crop: BUS-DC-125B solid segment labeled UPS-BIN feeds INV-UPS-B.
+INV-UPS-B,PANEL-RPS-B,solid_dc_feeder,round_02_jennifer_saturated,Bottom-right crop: INV-UPS-B output labeled UPS-BOUT directly enters PANEL-RPS-B.
+ATS-480-A,PANEL-RPS-A,solid_control_power,round_02_jennifer_saturated,Bottom-left crop: solid ATS-AOUT route leaves ATS-480-A and lands at PANEL-RPS-A.
+ATS-480-B,PANEL-RPS-B,solid_control_power,round_02_jennifer_saturated,Bottom-right crop: solid ATS-BOUT route leaves ATS-480-B and lands at PANEL-RPS-B.
+BUS-480-A1,BUS-480-A2,solid_power_feeder,round_02_jennifer_saturated,Crops 05 and 25 show BUS-480-A1 and BUS-480-A2 joined by the thick visible TIE-A12 segment with junction dots at both ends.
+BUS-480-B1,BUS-480-B2,solid_power_feeder,round_02_jennifer_saturated,Crops 06 and 26 show BUS-480-B1 and BUS-480-B2 joined by the thick visible TIE-B12 segment with junction dots at both ends.
+BUS-480-C1,BUS-480-C2,solid_power_feeder,round_02_jennifer_saturated,Crops 07 and 27 show BUS-480-C1 and BUS-480-C2 joined by the thick visible TIE-C12 segment with junction dots at both ends.
+BUS-480-D1,BUS-480-D2,solid_power_feeder,round_02_jennifer_saturated,Crops 08 and 28 show BUS-480-D1 and BUS-480-D2 joined by the thick visible TIE-D12 segment with junction dots at both ends.
+PANEL-IC-A,BUS-DC-125A,solid_dc_feeder,round_02_jennifer_saturated,"Crops 21, 25, and 31 show the DC-A125 solid conductor leaving the PANEL-IC-A/rectifier branch and landing on BUS-DC-125A at a visible junction dot; accepted as panel-to-bus, not RECT-to-bus skip."
+PANEL-IC-B,BUS-DC-125B,solid_dc_feeder,round_02_jennifer_saturated,"Crops 22, 26, 29, and 32 show the DC-B125 conductor leaving PANEL-IC-B and continuing into the BUS-DC-125B lower bus area with a visible bus junction dot; accepted as direct panel-to-bus branch."
+PANEL-IC-C,BUS-DC-125B,solid_dc_feeder,round_02_jennifer_saturated,"Crops 23, 29, and 30 show the DC-C125 conductor from PANEL-IC-C routing to the BUS-DC-125B lower bus area with a visible junction dot; no direct BUS-DC-125A endpoint is visible for this route."
+PANEL-IC-D,BUS-DC-125B,solid_dc_feeder,round_02_jennifer_saturated,"Crops 24, 28, 30, and 32 show the DC-D125 conductor from PANEL-IC-D continuing to BUS-DC-125B at a visible lower-bus junction dot; accepted as panel-to-bus, not RECT-to-bus skip."

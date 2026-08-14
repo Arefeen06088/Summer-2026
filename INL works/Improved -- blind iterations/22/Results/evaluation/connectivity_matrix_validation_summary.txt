@@ -1,0 +1,37 @@
+Connectivity matrix validation summary - Document 22
+Input tree: Improved -- blind iterations
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\22\synthetic_npp_connectivity_matrix_clean(1).csv
+Token usage: no token estimate files were present under the requested results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_matrix.csv): TP=198, FP=9, FN=10, Precision=0.956522, Recall=0.951923, F1=0.954217
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_matrix.csv): TP=198, FP=9, FN=10, Precision=0.956522, Recall=0.951923, F1=0.954217
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_matrix.csv): TP=198, FP=9, FN=10, Precision=0.956522, Recall=0.951923, F1=0.954217
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_matrix.csv): TP=198, FP=9, FN=10, Precision=0.956522, Recall=0.951923, F1=0.954217
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=198, FP=9, FN=10, Precision=0.956522, Recall=0.951923, F1=0.954217
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- CB-RHR-A -- CB-SI-A
+- CB-RHR-A -- INST-CT-A
+- CB-RHR-B -- CB-SI-B
+- CB-RHR-B -- INST-CT-B
+- CB-RHR-C -- CB-SI-C
+- CB-RHR-C -- INST-CT-C
+- CB-RHR-D -- CB-SI-D
+- CB-RHR-D -- INST-CT-D
+- METER-A01 -- XFMR-PT-1
+
+False-negative edge examples:
+- BUS-125A -- METER-A01
+- BUS-4160-A -- XFMR-PT-1
+- CB-RHR-A -- MCC-AA
+- CB-RHR-A -- RELAY-KA1
+- CB-RHR-B -- MCC-BA
+- CB-RHR-B -- RELAY-KB1
+- CB-RHR-C -- MCC-CA
+- CB-RHR-C -- RELAY-KC1
+- CB-RHR-D -- MCC-DA
+- CB-RHR-D -- RELAY-KD1

@@ -1,0 +1,122 @@
+source,target,confidence,evidence
+GEN-G201,IPB-201,0.98,raw crop 02: solid generator feeder terminates at IPB-201
+IPB-201,CB-GEN-201,0.98,raw crop 02: isolated phase bus continues into CB-GEN-201
+CB-GEN-201,GSU-201,0.98,raw crop 02: solid feeder from generator breaker to GSU-201
+GSU-201,SWYD-BUS-A,0.94,raw crop 02: GSU high-side tap rises to labeled SWYD-BUS-A
+SWYD-BUS-A,CB-GRID-A,0.96,raw crop 02: SWYD-BUS-A solid feeder lands on CB-GRID-A
+CB-GRID-A,GRID-230A,0.96,raw crop 02: CB-GRID-A output lands on GRID-230A
+SWYD-BUS-A,CB-TIE-230,0.94,raw crop 02: vertical tie feeder from SWYD-BUS-A into CB-TIE-230
+CB-TIE-230,SWYD-BUS-B,0.94,raw crop 02: CB-TIE-230 lower terminal lands on SWYD-BUS-B
+SWYD-BUS-B,CB-GRID-B,0.96,raw crop 02: SWYD-BUS-B solid feeder lands on CB-GRID-B
+CB-GRID-B,GRID-230B,0.96,raw crop 02: CB-GRID-B output lands on GRID-230B
+IPB-201,TR-UAT-201,0.88,raw crops 02/03: IPB branch drops to TR-UAT-201
+IPB-201,TR-UAT-202,0.84,raw crops 02/03: second IPB branch routes to TR-UAT-202
+SWYD-BUS-B,TR-SST-201,0.88,raw crops 02/03: startup transformer tap descends from SWYD-BUS-B to TR-SST-201
+SWYD-BUS-B,TR-SST-202,0.88,raw crops 02/03: startup transformer tap descends from SWYD-BUS-B to TR-SST-202
+TR-UAT-201,CB-UAT-1,0.96,raw crop 03: vertical feeder from TR-UAT-201 to CB-UAT-1
+TR-UAT-202,CB-UAT-2,0.82,raw crop 03: routed UAT-202 feeder lands at CB-UAT-2; long route is visually congested
+TR-SST-201,CB-SST-1,0.96,raw crop 03: vertical feeder from TR-SST-201 to CB-SST-1
+TR-SST-202,CB-SST-2,0.96,raw crop 03: vertical feeder from TR-SST-202 to CB-SST-2
+DG-201A,CB-DG-A,0.96,raw crop 03/12: solid feeder from DG-201A to CB-DG-A
+CB-DG-A,ATS-A,0.96,raw crop 03/12: solid feeder from CB-DG-A to ATS-A
+ATS-A,BUS-6KV-A,0.93,raw crop 03: ATS-A lower feeder lands on BUS-6KV-A
+CB-UAT-1,BUS-6KV-A,0.96,raw crop 03: CB-UAT-1 lower terminal taps BUS-6KV-A
+CB-SST-1,BUS-6KV-A,0.93,raw crop 03: CB-SST-1 lower terminal taps BUS-6KV-A
+BUS-6KV-A,CB-TIE-6KV,0.95,raw crop 03: BUS-6KV-A connects to left side of CB-TIE-6KV
+CB-TIE-6KV,BUS-6KV-B,0.95,raw crop 03: CB-TIE-6KV connects to BUS-6KV-B on the opposite side
+BUS-6KV-A,PT-6KV-A,0.93,raw crop 03: PT-6KV-A taps the BUS-6KV-A section
+BUS-6KV-B,PT-6KV-B,0.93,raw crop 03: PT-6KV-B taps the BUS-6KV-B section
+BUS-6KV-A,DS-6KV-A,0.93,raw crop 03: DS-6KV-A upper terminal is fed from BUS-6KV-A
+DS-6KV-A,BUS-4KV-N,0.96,raw crops 03/11: DS-6KV-A lower terminal lands on central bus labeled BUS-4KV-N
+BUS-6KV-B,DS-6KV-B,0.93,raw crop 03: DS-6KV-B upper terminal is fed from BUS-6KV-B
+DS-6KV-B,BUS-4KV-N,0.96,raw crops 03/11: DS-6KV-B lower terminal lands on central bus labeled BUS-4KV-N
+BUS-6KV-A,TR-480A,0.94,raw crops 03/04: BUS-6KV-A tap feeds TR-480A
+BUS-6KV-B,TR-480B,0.94,raw crops 03/06: BUS-6KV-B tap feeds TR-480B
+BUS-4KV-N,TR-480N,0.96,raw crops 03/05/11: central BUS-4KV-N feeds TR-480N
+BUS-6KV-B,CB-UAT-2,0.94,raw crop 03: CB-UAT-2 lower terminal taps BUS-6KV-B
+BUS-6KV-B,CB-SST-2,0.94,raw crop 03: CB-SST-2 lower terminal taps BUS-6KV-B
+BUS-6KV-B,ATS-B,0.93,raw crops 03/09/13: ATS-B lower feeder lands on BUS-6KV-B
+ATS-B,CB-DG-B,0.96,raw crops 09/13: solid feeder from ATS-B to CB-DG-B
+CB-DG-B,DG-201B,0.96,raw crops 09/13: solid feeder from CB-DG-B to DG-201B
+TR-480A,CB-LC-A1,0.97,raw crop 04: TR-480A feeds CB-LC-A1
+CB-LC-A1,LC-480A,0.97,raw crop 04: CB-LC-A1 output feeds LC-480A
+LC-480A,UV-SENS-A,0.86,raw crop 04/15: dashed sensing branch terminates at LC-480A and UV-SENS-A
+LC-480A,MCC-CCW-A,0.96,raw crop 04: solid feeder from LC-480A to MCC-CCW-A
+LC-480A,MCC-SW-A,0.96,raw crop 04: solid feeder from LC-480A to MCC-SW-A
+LC-480A,MCC-HPI-A,0.96,raw crop 04: solid feeder from LC-480A to MCC-HPI-A
+LC-480A,MCC-VENT-A,0.96,raw crop 04: solid feeder from LC-480A to MCC-VENT-A
+LC-480A,CHGR-A,0.90,raw crops 04/07: long solid feeder descends from LC-480A to CHGR-A
+MCC-CCW-A,JBX-CCW-A,0.96,raw crop 04: vertical feeder from MCC-CCW-A to JBX-CCW-A
+JBX-CCW-A,PUMP-CCW-A,0.96,raw crop 04: JBX-CCW-A output drops to PUMP-CCW-A
+MCC-CCW-A,MOV-CCW-201A,0.92,raw crop 04: routed feeder from MCC-CCW-A to MOV-CCW-201A
+MCC-SW-A,JBX-SW-A,0.96,raw crop 04: vertical feeder from MCC-SW-A to JBX-SW-A
+JBX-SW-A,PUMP-SW-A,0.96,raw crop 04: JBX-SW-A output drops to PUMP-SW-A
+MCC-HPI-A,PUMP-HPI-A,0.96,raw crop 04/15: vertical feeder from MCC-HPI-A to PUMP-HPI-A
+MCC-HPI-A,MOV-SI-201A,0.92,raw crop 04/15: routed feeder from MCC-HPI-A to MOV-SI-201A
+MCC-VENT-A,FAN-CR-A,0.96,raw crop 04/15: vertical feeder from MCC-VENT-A to FAN-CR-A
+MOV-SI-201A,FAN-CR-A,0.70,raw crop 15: dashed local/control line visibly terminates at MOV-SI-201A and FAN-CR-A
+TR-480B,CB-LC-B1,0.97,raw crop 06: TR-480B feeds CB-LC-B1
+CB-LC-B1,LC-480B,0.97,raw crop 06: CB-LC-B1 output feeds LC-480B
+LC-480B,UV-SENS-B,0.86,raw crop 06/16: dashed sensing branch terminates at LC-480B and UV-SENS-B
+LC-480B,MCC-CCW-B,0.96,raw crop 06: solid feeder from LC-480B to MCC-CCW-B
+LC-480B,MCC-SW-B,0.96,raw crop 06: solid feeder from LC-480B to MCC-SW-B
+LC-480B,MCC-HPI-B,0.96,raw crop 06: solid feeder from LC-480B to MCC-HPI-B
+LC-480B,MCC-VENT-B,0.96,raw crop 06: solid feeder from LC-480B to MCC-VENT-B
+LC-480B,CHGR-B,0.90,raw crops 06/07: long solid feeder descends from LC-480B to CHGR-B
+MCC-CCW-B,JBX-CCW-B,0.96,raw crop 06: vertical feeder from MCC-CCW-B to JBX-CCW-B
+JBX-CCW-B,PUMP-CCW-B,0.96,raw crop 06: JBX-CCW-B output drops to PUMP-CCW-B
+MCC-CCW-B,MOV-CCW-201B,0.92,raw crop 06: routed feeder from MCC-CCW-B to MOV-CCW-201B
+MCC-SW-B,JBX-SW-B,0.96,raw crop 06: vertical feeder from MCC-SW-B to JBX-SW-B
+JBX-SW-B,PUMP-SW-B,0.96,raw crop 06: JBX-SW-B output drops to PUMP-SW-B
+MCC-HPI-B,PUMP-HPI-B,0.96,raw crop 06/16: vertical feeder from MCC-HPI-B to PUMP-HPI-B
+MCC-HPI-B,MOV-SI-201B,0.92,raw crop 06/16: routed feeder from MCC-HPI-B to MOV-SI-201B
+MCC-VENT-B,FAN-CR-B,0.96,raw crop 06/16: vertical feeder from MCC-VENT-B to FAN-CR-B
+MOV-SI-201B,FAN-CR-B,0.70,raw crop 16: dashed local/control line visibly terminates at MOV-SI-201B and FAN-CR-B
+TR-480N,CB-LC-N1,0.97,raw crop 05: TR-480N feeds CB-LC-N1
+CB-LC-N1,LC-480N,0.97,raw crop 05: CB-LC-N1 output feeds LC-480N
+LC-480N,LP-N-A,0.96,raw crop 05: LC-480N feeder routes to LP-N-A
+LP-N-A,HTR-BLDG-A,0.96,raw crop 05: LP-N-A output drops to HTR-BLDG-A
+LC-480N,LP-N-B,0.96,raw crop 05: LC-480N feeder routes to LP-N-B
+LP-N-B,HTR-BLDG-B,0.96,raw crop 05: LP-N-B output drops to HTR-BLDG-B
+CHGR-A,PNL-DC-A,0.96,raw crop 07: solid DC feeder from CHGR-A to PNL-DC-A
+CHGR-A,BAT-125A,0.95,raw crop 07: vertical feeder from CHGR-A to BAT-125A
+BAT-125A,PNL-DC-A,0.84,raw crop 07: battery branch routes into PNL-DC-A side wiring
+PNL-DC-A,REC-A,0.96,raw crop 07: vertical feeder from PNL-DC-A to REC-A
+REC-A,INV-A,0.95,raw crop 07: routed feeder from REC-A to INV-A
+INV-A,UPS-A,0.96,raw crop 07: vertical feeder from INV-A to UPS-A
+CHGR-B,PNL-DC-B,0.96,raw crop 07: solid DC feeder from CHGR-B to PNL-DC-B
+CHGR-B,BAT-125B,0.95,raw crop 07: vertical feeder from CHGR-B to BAT-125B
+BAT-125B,PNL-DC-B,0.84,raw crop 07: battery branch routes into PNL-DC-B side wiring
+PNL-DC-B,REC-B,0.96,raw crop 07: vertical feeder from PNL-DC-B to REC-B
+REC-B,INV-B,0.95,raw crop 07: routed feeder from REC-B to INV-B
+INV-B,UPS-B,0.96,raw crop 07: vertical feeder from INV-B to UPS-B
+BAT-125A,GND-A,0.96,raw crop 07/10: dotted ground bond from BAT-125A to GND-A
+REC-A,GND-A,0.90,raw crop 07/10: dotted ground bond drops from REC-A area to GND-A
+GND-A,GND-MAIN,0.96,raw crop 07/10: dotted grounding conductor ties GND-A to GND-MAIN
+BAT-125B,GND-B,0.96,raw crop 07/10: dotted ground bond from BAT-125B to GND-B
+REC-B,GND-B,0.90,raw crop 07/10: dotted ground bond drops from REC-B area to GND-B
+GND-B,GND-MAIN,0.96,raw crop 07/10: dotted grounding conductor ties GND-B to GND-MAIN
+PNL-INST-A,RELAY-UV-A,0.94,raw crop 08/09: direct dashed line from PNL-INST-A to RELAY-UV-A
+PNL-INST-B,RELAY-UV-B,0.94,raw crop 08/09: direct dashed line from PNL-INST-B to RELAY-UV-B
+CP-ESFAS-A,RELAY-SI-A,0.94,raw crop 08/09: direct dashed line from CP-ESFAS-A to RELAY-SI-A
+CP-ESFAS-B,RELAY-SI-B,0.94,raw crop 08/09: direct dashed line from CP-ESFAS-B to RELAY-SI-B
+PLC-RPS-A,RELAY-LOAD-A,0.94,raw crop 08/09: direct dashed line from PLC-RPS-A to RELAY-LOAD-A
+PLC-RPS-B,RELAY-LOAD-B,0.94,raw crop 08/09: direct dashed line from PLC-RPS-B to RELAY-LOAD-B
+JBX-ESF-A,RELAY-DG-A,0.94,raw crop 08/09: direct dashed line from JBX-ESF-A to RELAY-DG-A
+JBX-ESF-B,RELAY-DG-B,0.94,raw crop 08/09: direct dashed line from JBX-ESF-B to RELAY-DG-B
+UV-SENS-A,PNL-INST-A,0.80,raw crops 14/15: UV-SENS-A sensing line routes to PNL-INST-A
+UV-SENS-B,PNL-INST-B,0.80,raw crops 09/16: UV-SENS-B sensing line routes to PNL-INST-B
+PT-6KV-A,PNL-INST-A,0.76,raw crops 03/14: PT-6KV-A instrument lead routes to PNL-INST-A
+PT-6KV-B,PNL-INST-B,0.76,raw crops 03/09/14: PT-6KV-B instrument lead routes to PNL-INST-B
+CT-EDG-A,PNL-INST-A,0.72,raw crops 12/14: CT-EDG-A sensing line routes toward PNL-INST-A
+CT-EDG-B,PNL-INST-B,0.72,raw crops 08/09/13: CT-EDG-B sensing line routes toward PNL-INST-B
+CB-DG-A,RELAY-DG-A,0.74,raw crops 12/14: CB-DG-A dashed interlock line routes to DG relay channel A
+CB-DG-B,RELAY-DG-B,0.74,raw crops 08/09/13: CB-DG-B dashed interlock line routes to DG relay channel B
+ATS-A,RELAY-DG-A,0.70,raw crops 12/14: ATS-A dashed interlock line routes to DG relay channel A
+ATS-B,RELAY-DG-B,0.70,raw crops 08/09/13: ATS-B dashed interlock line routes to DG relay channel B
+RELAY-SI-A,MCC-HPI-A,0.68,"raw crops 09/15: SI-A control line terminates at MCC-HPI-A side port, not directly at the HPI pump"
+RELAY-SI-A,MOV-SI-201A,0.70,raw crops 09/15: SI-A dashed control route terminates at MOV-SI-201A port
+RELAY-SI-B,MCC-HPI-B,0.68,"raw crops 09/16: SI-B control line terminates at MCC-HPI-B side port, not directly at the HPI pump"
+RELAY-SI-B,MOV-SI-201B,0.70,raw crops 09/16: SI-B dashed control route terminates at MOV-SI-201B port
+RELAY-LOAD-A,FAN-CR-A,0.68,raw crops 09/15: load relay A dashed route terminates at FAN-CR-A control port; crossings nearby are not expanded
+RELAY-LOAD-B,FAN-CR-B,0.68,raw crops 09/16: load relay B dashed route terminates at FAN-CR-B control port; crossings nearby are not expanded

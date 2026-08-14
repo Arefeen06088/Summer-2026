@@ -1,0 +1,39 @@
+Connectivity matrix validation summary - Iteration 2
+
+Ground truth normalization:
+The GT file is an edge list, so it was normalized into an undirected set of component-to-component edges before validation. The extracted CSV files were adjacency matrices and were normalized into the same undirected edge-set format. Only Diego/Jennifer round matrix files were evaluated; final_connectivity_matrix.csv was not included because it is not tied to an extractor-round row name.
+
+Main reason the scores were not perfect:
+The main issue was not wrong component names, near-miss component names, or missing GT components. All GT component names were present exactly in every evaluated matrix. The score drop was mainly caused by extra intermediate labels/tap nodes being treated as graph nodes, while the GT expects direct component-to-component edges.
+
+Intermediate nodes responsible for the drop:
+- SU-A split BUS-13K-A -- TR-SU-A into BUS-13K-A -- SU-A -- TR-SU-A.
+- SU-B split BUS-13K-B -- TR-SU-B into BUS-13K-B -- SU-B -- TR-SU-B.
+- EDG-A split BUS-13K-A -- TR-EDG-A into BUS-13K-A -- EDG-A -- TR-EDG-A.
+- EDG-B split BUS-13K-B -- TR-EDG-B into BUS-13K-B -- EDG-B -- TR-EDG-B.
+- LC-A1 split BUS-480-A -- MCC-01A into BUS-480-A -- LC-A1 -- MCC-01A.
+- LC-A2 split BUS-480-A -- MCC-02A into BUS-480-A -- LC-A2 -- MCC-02A.
+- LC-B1 split BUS-480-B -- MCC-01B into BUS-480-B -- LC-B1 -- MCC-01B.
+- LC-B2 split BUS-480-B -- MCC-02B into BUS-480-B -- LC-B2 -- MCC-02B.
+
+What caused FP/FN counts:
+- Every false positive involved an extra non-GT intermediate node. There were no false-positive edges directly between two valid GT component names.
+- Most false negatives were GT direct edges that were represented as two-hop paths through an intermediate node.
+- No GT components were missing from the extracted matrices.
+- There was no evidence that imperfect spelling or close-but-not-perfect component names caused the score loss.
+
+Counterfactual performance if intermediate nodes were not used:
+These estimates assume that each GT-node -> extra-node -> GT-node path is collapsed into the corresponding direct GT component-to-component edge, and that edges involving the extra non-GT node are no longer counted as extracted connectivity.
+- Diego -- Round 1 used 8 extra intermediate nodes: EDG-A, EDG-B, LC-A1, LC-A2, LC-B1, LC-B2, SU-A, SU-B. Collapsing the two-hop paths would recover 8 of 8 FN edges and remove 16 FP edges. Performance would become TP=60, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000. Remaining unrecovered FN edges: none.
+- Jennifer -- Round 1 used 8 extra intermediate nodes: EDG-A, EDG-B, LC-A1, LC-A2, LC-B1, LC-B2, SU-A, SU-B. Collapsing the two-hop paths would recover 8 of 9 FN edges and remove 16 FP edges. Performance would become TP=59, FP=0, FN=1, Precision=1.000000, Recall=0.983333, F1=0.991597. Remaining unrecovered FN edges: CB-13-TIE -- PNL-RPS-1.
+- Diego -- Round 2 used 8 extra intermediate nodes: EDG-A, EDG-B, LC-A1, LC-A2, LC-B1, LC-B2, SU-A, SU-B. Collapsing the two-hop paths would recover 8 of 9 FN edges and remove 16 FP edges. Performance would become TP=59, FP=0, FN=1, Precision=1.000000, Recall=0.983333, F1=0.991597. Remaining unrecovered FN edges: CB-13-TIE -- PNL-RPS-1.
+- Jennifer -- Round 2 used 8 extra intermediate nodes: EDG-A, EDG-B, LC-A1, LC-A2, LC-B1, LC-B2, SU-A, SU-B. Collapsing the two-hop paths would recover 8 of 9 FN edges and remove 16 FP edges. Performance would become TP=59, FP=0, FN=1, Precision=1.000000, Recall=0.983333, F1=0.991597. Remaining unrecovered FN edges: CB-13-TIE -- PNL-RPS-1.
+
+Round-specific notes:
+- Diego -- Round 1: raw metrics were TP=52, FP=16, FN=8, Precision=0.764706, Recall=0.866667, F1=0.812500. Split-through-intermediate FN edges: 8; genuinely unrecovered FN edges: 0.
+- Jennifer -- Round 1: raw metrics were TP=51, FP=16, FN=9, Precision=0.761194, Recall=0.850000, F1=0.803150. Split-through-intermediate FN edges: 8; genuinely unrecovered FN edges: 1.
+- Diego -- Round 2: raw metrics were TP=51, FP=16, FN=9, Precision=0.761194, Recall=0.850000, F1=0.803150. Split-through-intermediate FN edges: 8; genuinely unrecovered FN edges: 1.
+- Jennifer -- Round 2: raw metrics were TP=51, FP=16, FN=9, Precision=0.761194, Recall=0.850000, F1=0.803150. Split-through-intermediate FN edges: 8; genuinely unrecovered FN edges: 1.
+
+Conclusion:
+The imperfect score was primarily caused by connectivity/edge granularity: intermediate extracted labels split direct GT edges. Diego Round 1 would be perfect if those intermediate nodes were collapsed. Jennifer Round 1, Diego Round 2, and Jennifer Round 2 would be near-perfect, with only one genuinely missed GT connection remaining: CB-13-TIE -- PNL-RPS-1.

@@ -1,0 +1,54 @@
+Connectivity matrix validation summary - Document 16
+Scope: Iteration_1 only
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\16\synthetic_npp_connectivity_matrix_revised(1).csv
+Token usage: no token estimate files were present under this results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_matrix.csv): TP=159, FP=15, FN=31, Precision=0.913793, Recall=0.836842, F1=0.873626
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_matrix.csv): TP=157, FP=14, FN=33, Precision=0.918129, Recall=0.826316, F1=0.869806
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_matrix.csv): TP=157, FP=14, FN=33, Precision=0.918129, Recall=0.826316, F1=0.869806
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_matrix.csv): TP=157, FP=14, FN=33, Precision=0.918129, Recall=0.826316, F1=0.869806
+- Diego -- Iteration 1 Round 3 (Iteration_1\round_03_diego_matrix.csv): TP=157, FP=18, FN=33, Precision=0.897143, Recall=0.826316, F1=0.860274
+- Jennifer -- Iteration 1 Round 3 (Iteration_1\round_03_jennifer_matrix.csv): TP=157, FP=18, FN=33, Precision=0.897143, Recall=0.826316, F1=0.860274
+- Diego -- Iteration 1 Round 4 (Iteration_1\round_04_diego_matrix.csv): TP=157, FP=18, FN=33, Precision=0.897143, Recall=0.826316, F1=0.860274
+- Jennifer -- Iteration 1 Round 4 (Iteration_1\round_04_jennifer_matrix.csv): TP=157, FP=18, FN=33, Precision=0.897143, Recall=0.826316, F1=0.860274
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=157, FP=18, FN=33, Precision=0.897143, Recall=0.826316, F1=0.860274
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list and create false-positive incident edges.
+- Some GT nodes are missing from the extraction, creating false negatives for their incident edges.
+
+False-positive edge examples:
+- BUS-120-RPS-A -- METER-VM-1
+- BUS-120-RPS-A -- UCP-01
+- BUS-120-RPS-B -- RTD-RCS101
+- BUS-120-RPS-B -- UCP-01
+- BUS-125DC-A -- CHGR-125A
+- BUS-125DC-B -- CHGR-125B
+- BUS-480-A -- CB-31A-FDR30-B
+- CB-31A-FDR30-B -- MCC-31A
+- CP-RPS-A -- DB-RPS-A3-1A
+- CP-RPS-B -- JB-RPS-B3-1B
+
+False-negative edge examples:
+- BATT-125A -- CHGR-125A
+- BATT-125B -- CHGR-125B
+- BUS-120-RPS-A -- CP-DCS-01
+- BUS-120-RPS-A -- CP-RPS-A
+- BUS-120-RPS-A -- MG-RPS-A
+- BUS-120-RPS-A -- UCC-01
+- BUS-120-RPS-B -- CP-ANN-01
+- BUS-120-RPS-B -- CP-RPS-B
+- BUS-120-RPS-B -- MG-RPS-B
+- BUS-120-RPS-B -- UCC-01
+
+Extra/non-GT nodes causing performance drops:
+- UCP-01: 3 incident false-positive edge(s)
+- CB-31A-FDR30-B: 2 incident false-positive edge(s)
+- DB-RPS-A3-1A: 2 incident false-positive edge(s)
+- JB-RPS-B3-1B: 2 incident false-positive edge(s)
+- GND-NO: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (UCP-01, CB-31A-FDR30-B, DB-RPS-A3-1A, JB-RPS-B3-1B, GND-NO), metrics would be TP=157, FP=9, FN=33, Precision=0.945783, Recall=0.826316, F1=0.882022.

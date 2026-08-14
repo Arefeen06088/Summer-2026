@@ -1,0 +1,23 @@
+item,decision,evidence
+node-list,included 47 OCR physical components,component_visual_ocr_labels.csv lists GEN-U2A through GND-STA; each was visually checked against the raw schematic symbols/labels
+node-list,included true BUS-* rails,"raw/overlay show BUS-4160A, BUS-4160B, BUS-480A, BUS-480B, BUS-125DC-A, BUS-125DC-B, BUS-120AC-A, and BUS-120AC-B as named conductor rails"
+node-list,excluded duplicate division descriptors as separate nodes,"4.16 KV ESF DIV I/II, 480 VAC DIV I/II, 125 VDC TRAIN A/B, and 120 VAC INST A/B label the nearby BUS-* rails rather than separate connectivity points"
+node-list,excluded 480V tie reserved space,text states 480V TIE RESERVED SPACE / NO CONNECTION SHOWN between BUS-480A and BUS-480B; no tie edge emitted
+top-4160,no direct BUS-4160A to BUS-4160B edge,CB-105 is visibly in the path and the status table marks CB-105 BUS TIE OPEN; edges stop at each breaker terminal
+top-4160,included both A-side source paths to BUS-4160A,TR-UAT-2A and DG-2A/CB-103 both land on the left vertical riser/tap feeding BUS-4160A
+top-4160,included both B-side source paths to BUS-4160B,TR-SUT-2B/CB-102 and DG-2B/CB-104 both land on BUS-4160B via visible solid taps
+transformers,modeled 4.16kV to 480V feeders as series device chains,BUS-4160A-CB-201A-TR-201A-CB-301A-BUS-480A and BUS-4160B-CB-201B-TR-201B-CB-301B-BUS-480B are visible vertical chains
+MCC loads,collapsed internal MCC buckets to MCC-to-load edges,load bucket numbers 01-06 and local disconnect boxes are visible internal details but not separately named components in the OCR list
+lower-A,included BUS-480A feeds to TR-CPT-A and CHGR-2A,two solid vertical/parallel feeder routes leave BUS-480A down the left side toward the control power transformer and charger
+lower-B,included BUS-480B feeds to TR-CPT-B and CHGR-2B,two solid vertical/parallel feeder routes leave BUS-480B down the right side toward the control power transformer and charger
+DC buses,"included battery, charger, inverter, and 86 relay taps","BAT-125A/B, CHGR-2A/B, INV-2A/B, and RELAY-86A/B are drawn on or tapped to the 125VDC train rails; relay edges marked lower confidence because they are control devices"
+AC buses,"included transformer, inverter, RPS panel, and 27 relay taps",BUS-120AC-A/B are fed from TR-CPT-A/B and INV-2A/B and visibly tap to RPS-PNL-A/B; RELAY-27A/B monitor/control connections are lower confidence
+dashed-control,included low-confidence relay-panel control edges,"dashed/control paths around RELAY-86A/B, RELAY-27A/B, and RPS-PNL-A/B are visually plausible but not solid power conductors"
+dashed-control,excluded dashed cable tray boundaries as nodes,"large dashed rectangles and route notes describe cable routing/separation, not named electrical nodes"
+terminal-labels,excluded 2A-XC1 and 2A-BCL as nodes,labels sit on/near vertical riser or cable routing marks; connectivity is represented by BUS-480A to TR-CPT-A/CHGR-2A rather than terminal nodes
+terminal-labels,excluded 2B-XC1 and 2B-BCL as nodes,labels sit on/near right-side riser or cable routing marks; connectivity is represented by BUS-480B to TR-CPT-B/CHGR-2B rather than terminal nodes
+cable-schedule,excluded feeder IDs 2A-F1 through 2B-F3,schedule and cable labels identify MCC feeder cables but do not add independent schematic nodes beyond MCC-to-load edges
+external-labels,excluded TO UNIT AUX BUS CONT. and TO STATION YARD CONT. as nodes,continuation/descriptor boxes are visible but no named component/bus connectivity was needed for the supported internal graph
+ground,included GND-STA but no matrix edge,GND-STA is a visible station ground symbol; the nearby dotted route is a single-point ground/control indication without a named bus/component endpoint in this node model
+ground,excluded dotted ground/control path as an intermediate node,general note says station ground shown single point only; adding anonymous dotted-route nodes would inflate false positives
+crossings,honored crossing-without-dot note,general note says crossings without dots are not connections; supported edges require visible tap/dot/terminal geometry or component adjacency

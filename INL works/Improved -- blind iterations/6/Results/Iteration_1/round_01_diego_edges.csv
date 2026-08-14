@@ -1,0 +1,154 @@
+source,target,confidence,evidence
+GEN-G201,IPB-201,0.98,raw crop 02: solid power feeder from generator symbol to isolated phase bus
+IPB-201,CB-GEN-201,0.98,raw crop 02: solid feeder continues from IPB-201 into CB-GEN-201
+CB-GEN-201,GSU-201,0.98,raw crop 02: solid feeder from generator breaker into GSU-201 transformer
+GSU-201,SWYD-BUS-A,0.94,raw crop 02: GSU-201 high-side tap rises to labeled SWYD-BUS-A
+SWYD-BUS-A,CB-GRID-A,0.96,raw crop 02: labeled SWYD-BUS-A feeds CB-GRID-A
+CB-GRID-A,GRID-230A,0.96,raw crop 02: CB-GRID-A output connects to GRID-230A source symbol
+SWYD-BUS-A,CB-TIE-230,0.94,raw crop 02: vertical tie feeder from SWYD-BUS-A into CB-TIE-230
+CB-TIE-230,SWYD-BUS-B,0.94,raw crop 02: CB-TIE-230 lower terminal lands on labeled SWYD-BUS-B
+SWYD-BUS-B,CB-GRID-B,0.96,raw crop 02: labeled SWYD-BUS-B feeds CB-GRID-B
+CB-GRID-B,GRID-230B,0.96,raw crop 02: CB-GRID-B output connects to GRID-230B source symbol
+IPB-201,TR-UAT-201,0.86,raw crops 02/03: branch from generator/IPB area drops to TR-UAT-201
+IPB-201,TR-UAT-202,0.80,raw crops 02/03: second UAT branch is routed from generator/IPB area; exact tap is visually congested
+SWYD-BUS-B,TR-SST-201,0.88,raw crops 02/03: startup transformer tap descends from lower switchyard bus region to TR-SST-201
+SWYD-BUS-B,TR-SST-202,0.88,raw crops 02/03: startup transformer tap descends from lower switchyard bus region to TR-SST-202
+TR-UAT-201,CB-UAT-1,0.96,raw crop 03: vertical feeder from TR-UAT-201 to CB-UAT-1
+TR-UAT-202,CB-UAT-2,0.82,raw crop 03: UAT-202 feeder routes to the CB-UAT-2 bus incomer; long routed segment makes this medium risk
+TR-SST-201,CB-SST-1,0.96,raw crop 03: vertical feeder from TR-SST-201 to CB-SST-1
+TR-SST-202,CB-SST-2,0.96,raw crop 03: vertical feeder from TR-SST-202 to CB-SST-2
+DG-201A,CB-DG-A,0.96,raw crop 03: solid feeder from diesel generator DG-201A to CB-DG-A
+CB-DG-A,ATS-A,0.96,raw crop 03: solid feeder from CB-DG-A into ATS-A
+ATS-A,BUS-6KV-A,0.93,raw crop 03: ATS-A lower feeder lands on the left labeled 6 kV bus section
+CB-UAT-1,BUS-6KV-A,0.96,raw crop 03: CB-UAT-1 lower terminal taps the left 6 kV bus
+CB-SST-1,BUS-6KV-A,0.93,raw crop 03: CB-SST-1 lower terminal taps the left 6 kV bus
+BUS-6KV-A,CB-TIE-6KV,0.95,raw crop 03: labeled BUS-6KV-A connects to one side of CB-TIE-6KV
+CB-TIE-6KV,BUS-6KV-B,0.95,raw crop 03: opposite side of CB-TIE-6KV connects to the other labeled 6 kV bus
+BUS-6KV-A,PT-6KV-A,0.93,raw crop 03: potential transformer PT-6KV-A taps the 6 kV A bus
+BUS-6KV-B,PT-6KV-B,0.93,raw crop 03: potential transformer PT-6KV-B taps the 6 kV B bus
+BUS-6KV-A,DS-6KV-A,0.93,raw crop 03: disconnect DS-6KV-A is fed from the A bus before the neutral/normal bus
+DS-6KV-A,BUS-6KV-N,0.93,raw crop 03: DS-6KV-A lower terminal lands on labeled BUS-6KV-N
+BUS-6KV-B,DS-6KV-B,0.93,raw crop 03: disconnect DS-6KV-B is fed from the B bus before the neutral/normal bus
+DS-6KV-B,BUS-6KV-N,0.93,raw crop 03: DS-6KV-B lower terminal lands on labeled BUS-6KV-N
+BUS-6KV-A,TR-480A,0.94,raw crops 03/04: 6 kV A bus tap feeds transformer TR-480A
+BUS-6KV-B,TR-480B,0.94,raw crops 03/06: 6 kV B bus tap feeds transformer TR-480B
+BUS-6KV-N,TR-480N,0.94,raw crops 03/05: labeled BUS-6KV-N feeds transformer TR-480N
+BUS-6KV-B,CB-UAT-2,0.94,raw crop 03: CB-UAT-2 lower terminal taps the right 6 kV bus
+BUS-6KV-B,CB-SST-2,0.94,raw crop 03: CB-SST-2 lower terminal taps the right 6 kV bus
+BUS-6KV-B,ATS-B,0.93,raw crop 08/09 plus full raw: ATS-B lower feeder lands on the right 6 kV bus
+ATS-B,CB-DG-B,0.96,raw crop 08/09: solid feeder from ATS-B to CB-DG-B
+CB-DG-B,DG-201B,0.96,raw crop 08/09: solid feeder from CB-DG-B to DG-201B
+CT-EDG-A,DG-201A,0.74,raw crop 03: CT-EDG-A is placed on/adjacent to DG-201A sensing path
+CT-EDG-A,CB-DG-A,0.70,raw crop 03: CT-EDG-A sensing geometry aligns with the EDG-A feeder/breaker path
+CT-EDG-B,DG-201B,0.74,raw crop 08/09: CT-EDG-B is placed on/adjacent to DG-201B sensing path
+CT-EDG-B,CB-DG-B,0.70,raw crop 08/09: CT-EDG-B sensing geometry aligns with the EDG-B feeder/breaker path
+TR-480A,CB-LC-A1,0.97,raw crop 04: transformer TR-480A feeds CB-LC-A1
+CB-LC-A1,LC-480A,0.97,raw crop 04: CB-LC-A1 output feeds LC-480A
+LC-480A,UV-SENS-A,0.82,raw crop 04: dashed sensing branch from LC-480A side to UV-SENS-A
+LC-480A,MCC-CCW-A,0.96,raw crop 04: solid feeder from LC-480A to MCC-CCW-A
+LC-480A,MCC-SW-A,0.96,raw crop 04: solid feeder from LC-480A to MCC-SW-A
+LC-480A,MCC-HPI-A,0.96,raw crop 04: solid feeder from LC-480A to MCC-HPI-A
+LC-480A,MCC-VENT-A,0.96,raw crop 04: solid feeder from LC-480A to MCC-VENT-A
+LC-480A,CHGR-A,0.86,raw crops 04/07: long solid feeder descends from LC-480A area to AC/DC charger CHGR-A
+MCC-CCW-A,JBX-CCW-A,0.96,raw crop 04: vertical feeder from MCC-CCW-A to JBX-CCW-A
+JBX-CCW-A,PUMP-CCW-A,0.96,raw crop 04: JBX-CCW-A output drops to PUMP-CCW-A motor
+MCC-CCW-A,MOV-CCW-201A,0.92,raw crop 04: second feeder from MCC-CCW-A routes to MOV-CCW-201A
+MCC-SW-A,JBX-SW-A,0.96,raw crop 04: vertical feeder from MCC-SW-A to JBX-SW-A
+JBX-SW-A,PUMP-SW-A,0.96,raw crop 04: JBX-SW-A output drops to PUMP-SW-A motor
+MCC-HPI-A,PUMP-HPI-A,0.96,raw crop 04: vertical feeder from MCC-HPI-A to PUMP-HPI-A
+MCC-HPI-A,MOV-SI-201A,0.92,raw crop 04: routed feeder from MCC-HPI-A to MOV-SI-201A
+MCC-VENT-A,FAN-CR-A,0.96,raw crop 04: vertical feeder from MCC-VENT-A to FAN-CR-A
+MOV-SI-201A,FAN-CR-A,0.60,raw crop 04: nearby dashed control segment visibly terminates at MOV/FAN ports; crossing bundle is ambiguous
+TR-480B,CB-LC-B1,0.97,raw crop 06: transformer TR-480B feeds CB-LC-B1
+CB-LC-B1,LC-480B,0.97,raw crop 06: CB-LC-B1 output feeds LC-480B
+LC-480B,UV-SENS-B,0.82,raw crop 06: dashed sensing branch from LC-480B side to UV-SENS-B
+LC-480B,MCC-CCW-B,0.96,raw crop 06: solid feeder from LC-480B to MCC-CCW-B
+LC-480B,MCC-SW-B,0.96,raw crop 06: solid feeder from LC-480B to MCC-SW-B
+LC-480B,MCC-HPI-B,0.96,raw crop 06: solid feeder from LC-480B to MCC-HPI-B
+LC-480B,MCC-VENT-B,0.96,raw crop 06: solid feeder from LC-480B to MCC-VENT-B
+LC-480B,CHGR-B,0.86,raw crops 06/07: long solid feeder descends from LC-480B area to AC/DC charger CHGR-B
+MCC-CCW-B,JBX-CCW-B,0.96,raw crop 06: vertical feeder from MCC-CCW-B to JBX-CCW-B
+JBX-CCW-B,PUMP-CCW-B,0.96,raw crop 06: JBX-CCW-B output drops to PUMP-CCW-B motor
+MCC-CCW-B,MOV-CCW-201B,0.92,raw crop 06: second feeder from MCC-CCW-B routes to MOV-CCW-201B
+MCC-SW-B,JBX-SW-B,0.96,raw crop 06: vertical feeder from MCC-SW-B to JBX-SW-B
+JBX-SW-B,PUMP-SW-B,0.96,raw crop 06: JBX-SW-B output drops to PUMP-SW-B motor
+MCC-HPI-B,PUMP-HPI-B,0.96,raw crop 06: vertical feeder from MCC-HPI-B to PUMP-HPI-B
+MCC-HPI-B,MOV-SI-201B,0.92,raw crop 06: routed feeder from MCC-HPI-B to MOV-SI-201B
+MCC-VENT-B,FAN-CR-B,0.96,raw crop 06: vertical feeder from MCC-VENT-B to FAN-CR-B
+MOV-SI-201B,FAN-CR-B,0.60,raw crop 06: nearby dashed control segment visibly terminates at MOV/FAN ports; crossing bundle is ambiguous
+TR-480N,CB-LC-N1,0.97,raw crop 05: TR-480N feeds CB-LC-N1
+CB-LC-N1,LC-480N,0.97,raw crop 05: CB-LC-N1 output feeds LC-480N
+LC-480N,LP-N-A,0.96,raw crop 05: LC-480N feeder routes to LP-N-A
+LP-N-A,HTR-BLDG-A,0.96,raw crop 05: LP-N-A output drops to HTR-BLDG-A
+LC-480N,LP-N-B,0.96,raw crop 05: LC-480N feeder routes to LP-N-B
+LP-N-B,HTR-BLDG-B,0.96,raw crop 05: LP-N-B output drops to HTR-BLDG-B
+CHGR-A,PNL-DC-A,0.96,raw crop 07: solid DC feeder from CHGR-A to PNL-DC-A
+CHGR-A,BAT-125A,0.95,raw crop 07: vertical feeder from CHGR-A to BAT-125A
+BAT-125A,PNL-DC-A,0.84,raw crop 07: battery branch routes into the DC panel side wiring
+PNL-DC-A,REC-A,0.96,raw crop 07: vertical feeder from PNL-DC-A to REC-A
+REC-A,INV-A,0.95,raw crop 07: routed feeder from REC-A to INV-A
+INV-A,UPS-A,0.96,raw crop 07: vertical feeder from INV-A to UPS-A
+REC-A,BAT-125A,0.70,raw crop 07: adjacent battery/rectifier DC branch is visually plausible but partly routed behind panel wiring
+UPS-A,JBX-ESF-A,0.74,raw crops 07/08: dashed/control power bundle leaves UPS-A toward ESFAS junction box A
+PNL-DC-A,JBX-ESF-A,0.68,raw crops 07/08: DC panel A dashed bundle routes toward ESFAS junction area
+CHGR-B,PNL-DC-B,0.96,raw crop 07: solid DC feeder from CHGR-B to PNL-DC-B
+CHGR-B,BAT-125B,0.95,raw crop 07: vertical feeder from CHGR-B to BAT-125B
+BAT-125B,PNL-DC-B,0.84,raw crop 07: battery branch routes into the DC panel side wiring
+PNL-DC-B,REC-B,0.96,raw crop 07: vertical feeder from PNL-DC-B to REC-B
+REC-B,INV-B,0.95,raw crop 07: routed feeder from REC-B to INV-B
+INV-B,UPS-B,0.96,raw crop 07: vertical feeder from INV-B to UPS-B
+REC-B,BAT-125B,0.70,raw crop 07: adjacent battery/rectifier DC branch is visually plausible but partly routed behind panel wiring
+UPS-B,JBX-ESF-B,0.74,raw crops 07/08: dashed/control power bundle leaves UPS-B toward ESFAS junction box B
+PNL-DC-B,JBX-ESF-B,0.68,raw crops 07/08: DC panel B dashed bundle routes toward ESFAS junction area
+BAT-125A,GND-A,0.96,raw crop 07/10: dotted ground bond from BAT-125A down to GND-A
+REC-A,GND-A,0.88,raw crop 07/10: dotted ground bond near REC-A drops to GND-A bus
+PNL-DC-A,GND-A,0.64,raw crop 07/10: panel-area ground bond is visually close to PNL/REC-A bundle; exact device landing is uncertain
+GND-A,GND-MAIN,0.96,raw crop 07/10: dotted grounding conductor ties GND-A to GND-MAIN
+BAT-125B,GND-B,0.96,raw crop 07/10: dotted ground bond from BAT-125B down to GND-B
+REC-B,GND-B,0.88,raw crop 07/10: dotted ground bond near REC-B drops to GND-B bus
+PNL-DC-B,GND-B,0.64,raw crop 07/10: panel-area ground bond is visually close to PNL/REC-B bundle; exact device landing is uncertain
+GND-B,GND-MAIN,0.96,raw crop 07/10: dotted grounding conductor ties GND-B to GND-MAIN
+PNL-INST-A,RELAY-UV-A,0.94,raw crop 08/09: dashed control/instrument line from PNL-INST-A to RELAY-UV-A
+PNL-INST-B,RELAY-UV-B,0.94,raw crop 08/09: dashed control/instrument line from PNL-INST-B to RELAY-UV-B
+CP-ESFAS-A,RELAY-SI-A,0.94,raw crop 08/09: dashed control line from CP-ESFAS-A to RELAY-SI-A
+CP-ESFAS-B,RELAY-SI-B,0.94,raw crop 08/09: dashed control line from CP-ESFAS-B to RELAY-SI-B
+PLC-RPS-A,RELAY-LOAD-A,0.94,raw crop 08/09: dashed control line from PLC-RPS-A to RELAY-LOAD-A
+PLC-RPS-B,RELAY-LOAD-B,0.94,raw crop 08/09: dashed control line from PLC-RPS-B to RELAY-LOAD-B
+JBX-ESF-A,RELAY-DG-A,0.94,raw crop 08/09: dashed control line from JBX-ESF-A to RELAY-DG-A
+JBX-ESF-B,RELAY-DG-B,0.94,raw crop 08/09: dashed control line from JBX-ESF-B to RELAY-DG-B
+RELAY-UV-A,RELAY-UV-B,0.62,raw crop 08/09: relay output loop/vertical dashed return appears to join UV relay channels; ambiguous crossings nearby
+RELAY-SI-A,RELAY-SI-B,0.62,raw crop 08/09: relay output loop/vertical dashed return appears to join SI relay channels; ambiguous crossings nearby
+RELAY-LOAD-A,RELAY-LOAD-B,0.60,raw crop 08/09: lower relay output bundle shows cross-train dashed routing; terminal ownership is ambiguous
+RELAY-DG-A,RELAY-DG-B,0.60,raw crop 08/09: DG relay dashed routing has a visible cross-train bundle; terminal ownership is ambiguous
+UV-SENS-A,PNL-INST-A,0.78,raw full/crop 04/09: UV-SENS-A dashed sensing line routes toward instrument panel A
+UV-SENS-B,PNL-INST-B,0.78,raw full/crop 06/09: UV-SENS-B dashed sensing line routes toward instrument panel B
+PT-6KV-A,PNL-INST-A,0.76,raw crops 03/09: PT-6KV-A sensing/instrument lead routes into instrument panel area
+PT-6KV-B,PNL-INST-B,0.76,raw crops 03/09: PT-6KV-B sensing/instrument lead routes into instrument panel area
+CT-EDG-A,PNL-INST-A,0.72,raw full/crop 03/09: EDG-A current transformer sensing lead routes toward instrument panel A
+CT-EDG-B,PNL-INST-B,0.72,raw crop 08/09: EDG-B current transformer sensing lead routes toward instrument panel B
+CB-DG-A,RELAY-DG-A,0.74,raw full/crop 03/09: DG-A breaker interlock/control lead routes to DG relay channel A
+CB-DG-B,RELAY-DG-B,0.74,raw crop 08/09: DG-B breaker interlock/control lead routes to DG relay channel B
+DG-201A,RELAY-DG-A,0.66,raw full/crop 03/09: EDG-A dashed control/sensing bundle routes toward DG relay A
+DG-201B,RELAY-DG-B,0.66,raw crop 08/09: EDG-B dashed control/sensing bundle routes toward DG relay B
+ATS-A,RELAY-DG-A,0.66,raw full/crop 03/09: ATS-A interlock bundle routes toward DG relay/control bay
+ATS-B,RELAY-DG-B,0.66,raw crop 08/09: ATS-B interlock bundle routes toward DG relay/control bay
+CP-ESFAS-A,JBX-ESF-A,0.72,raw crop 08/09: CP-ESFAS-A left-side dashed bundle shares the ESFAS-A junction path
+CP-ESFAS-B,JBX-ESF-B,0.72,raw crop 08/09: CP-ESFAS-B left-side dashed bundle shares the ESFAS-B junction path
+PLC-RPS-A,JBX-ESF-A,0.70,raw crop 08/09: PLC-RPS-A dashed control bundle returns through ESFAS-A junction area
+PLC-RPS-B,JBX-ESF-B,0.70,raw crop 08/09: PLC-RPS-B dashed control bundle returns through ESFAS-B junction area
+RELAY-SI-A,MOV-SI-201A,0.70,raw full/crops 04/09: SI relay A dashed control bundle routes to MOV-SI-201A field device
+RELAY-SI-A,PUMP-HPI-A,0.68,raw full/crops 04/09: SI relay A dashed control bundle plausibly controls/monitors HPI pump A
+RELAY-SI-B,MOV-SI-201B,0.70,raw full/crops 06/09: SI relay B dashed control bundle routes to MOV-SI-201B field device
+RELAY-SI-B,PUMP-HPI-B,0.68,raw full/crops 06/09: SI relay B dashed control bundle plausibly controls/monitors HPI pump B
+RELAY-LOAD-A,LC-480A,0.66,raw full/crops 04/09: load relay A dashed bundle routes back to train A load-center area
+RELAY-LOAD-B,LC-480B,0.66,raw full/crops 06/09: load relay B dashed bundle routes back to train B load-center area
+RELAY-LOAD-A,MCC-VENT-A,0.64,raw full/crops 04/09: load relay A dashed bundle aligns with MCC/fan load shed path
+RELAY-LOAD-B,MCC-VENT-B,0.64,raw full/crops 06/09: load relay B dashed bundle aligns with MCC/fan load shed path
+RELAY-LOAD-A,FAN-CR-A,0.62,raw full/crops 04/09: load relay A dashed bundle reaches fan/control load area; endpoint is visually congested
+RELAY-LOAD-B,FAN-CR-B,0.62,raw full/crops 06/09: load relay B dashed bundle reaches fan/control load area; endpoint is visually congested
+UPS-A,PNL-INST-A,0.68,raw crops 07/09: UPS-A vital/control power bundle routes toward instrument panel A
+UPS-A,CP-ESFAS-A,0.68,raw crops 07/09: UPS-A vital/control power bundle routes toward CP-ESFAS-A
+UPS-A,PLC-RPS-A,0.66,raw crops 07/09: UPS-A vital/control power bundle routes toward PLC-RPS-A
+UPS-B,PNL-INST-B,0.68,raw crops 07/09: UPS-B vital/control power bundle routes toward instrument panel B
+UPS-B,CP-ESFAS-B,0.68,raw crops 07/09: UPS-B vital/control power bundle routes toward CP-ESFAS-B
+UPS-B,PLC-RPS-B,0.66,raw crops 07/09: UPS-B vital/control power bundle routes toward PLC-RPS-B

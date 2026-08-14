@@ -1,0 +1,80 @@
+source,target,evidence,status,change_vs_jennifer_r01
+OFFSITE-230KV-A,DS-230A,solid vertical power conductor from OFFSITE-230KV-A block into DS-230A,keep,unchanged_from_jennifer_r01
+DS-230A,TR-1A,solid vertical power conductor from DS-230A into TR-1A,keep,unchanged_from_jennifer_r01
+TR-1A,CB-1A,solid vertical power conductor from TR-1A into CB-1A,keep,unchanged_from_jennifer_r01
+CB-1A,BUS-4160-A-DIV-I,solid vertical drop from CB-1A to dot on A 4160 bus,keep,unchanged_from_jennifer_r01
+EDG-1A,CB-DG-A,solid vertical conductor from EDG-1A to CB-DG-A,keep,unchanged_from_jennifer_r01
+CB-DG-A,BUS-4160-A-DIV-I,solid vertical drop from CB-DG-A to dot on A 4160 bus,keep,unchanged_from_jennifer_r01
+BUS-4160-A-DIV-I,CB-TIE-AB,solid horizontal A bus segment enters left side of CB-TIE-AB,keep,unchanged_from_jennifer_r01
+CB-TIE-AB,BUS-4160-B-DIV-II,solid horizontal segment exits CB-TIE-AB to B 4160 bus,keep,unchanged_from_jennifer_r01
+OFFSITE-230KV-B,DS-230B,solid vertical power conductor from OFFSITE-230KV-B block into DS-230B,keep,unchanged_from_jennifer_r01
+DS-230B,TR-1B,solid vertical power conductor from DS-230B into TR-1B,keep,unchanged_from_jennifer_r01
+TR-1B,CB-1B,solid vertical power conductor from TR-1B into CB-1B,keep,unchanged_from_jennifer_r01
+CB-1B,BUS-4160-B-DIV-II,solid vertical drop from CB-1B to dot on B 4160 bus,keep,unchanged_from_jennifer_r01
+EDG-1B,CB-DG-B,solid vertical conductor from EDG-1B to CB-DG-B,keep,unchanged_from_jennifer_r01
+CB-DG-B,BUS-4160-B-DIV-II,solid vertical drop from CB-DG-B to dot on B 4160 bus,keep,unchanged_from_jennifer_r01
+BUS-4160-A-DIV-I,RELAY-UV-A,dashed/sensing tap drops from A 4160 bus dot to RELAY-UV-A,keep,unchanged_from_jennifer_r01
+BUS-4160-B-DIV-II,RELAY-UV-B,dashed/sensing tap drops from B 4160 bus dot to RELAY-UV-B,keep,unchanged_from_jennifer_r01
+BUS-4160-A-DIV-I,TR-480-A,solid vertical feeder from A 4160 bus dot to TR-480-A,keep,unchanged_from_jennifer_r01
+TR-480-A,CB-480-A,solid vertical power conductor from TR-480-A to CB-480-A,keep,unchanged_from_jennifer_r01
+CB-480-A,BUS-480-A,solid vertical power conductor from CB-480-A to dot on BUS-480-A,keep,unchanged_from_jennifer_r01
+BUS-4160-B-DIV-II,TR-480-B,solid vertical feeder from B 4160 bus dot to TR-480-B,keep,unchanged_from_jennifer_r01
+TR-480-B,CB-480-B,solid vertical power conductor from TR-480-B to CB-480-B,keep,unchanged_from_jennifer_r01
+CB-480-B,BUS-480-B,solid vertical power conductor from CB-480-B to dot on BUS-480-B,keep,unchanged_from_jennifer_r01
+LC-A,BUS-480-A,"LC-A text sits at BUS-480-A end but is a label, not a separate electrical node",remove,unchanged_from_jennifer_r01
+LC-B,BUS-480-B,"LC-B text sits at BUS-480-B end but is a label, not a separate electrical node",remove,unchanged_from_jennifer_r01
+BUS-480-A,GND-PLANT,solid vertical ground-reference connection from right end of BUS-480-A to GND-PLANT symbol,keep,unchanged_from_jennifer_r01
+BUS-480-A,MCC-A1,solid vertical feeder from BUS-480-A down into MCC-A1,keep,unchanged_from_jennifer_r01
+BUS-480-A,MCC-A2,solid vertical feeder from BUS-480-A down into MCC-A2,keep,unchanged_from_jennifer_r01
+BUS-480-B,MCC-B1,solid vertical feeder from BUS-480-B down into MCC-B1,keep,unchanged_from_jennifer_r01
+BUS-480-B,MCC-B2,solid vertical feeder from BUS-480-B down into MCC-B2,keep,unchanged_from_jennifer_r01
+MCC-A1,PUMP-RHR-A,solid routed feeder from MCC-A1 bottom to PUMP-RHR-A terminal,keep,unchanged_from_jennifer_r01
+MCC-A1,PUMP-CS-A,solid vertical feeder from MCC-A1 to PUMP-CS-A terminal,keep,unchanged_from_jennifer_r01
+MCC-A2,PUMP-CCW-A,solid routed feeder from MCC-A2 to PUMP-CCW-A terminal,keep,unchanged_from_jennifer_r01
+MCC-A2,MOV-881A,solid vertical/routed feeder from MCC-A2 to MOV-881A top terminal,keep,unchanged_from_jennifer_r01
+MCC-A2,MOV-742A,solid routed feeder from MCC-A2 to MOV-742A top terminal,keep,unchanged_from_jennifer_r01
+MCC-B1,PUMP-RHR-B,solid routed feeder from MCC-B1 to PUMP-RHR-B terminal,keep,unchanged_from_jennifer_r01
+MCC-B1,PUMP-CS-B,solid vertical feeder from MCC-B1 to PUMP-CS-B terminal,keep,unchanged_from_jennifer_r01
+MCC-B2,PUMP-CCW-B,solid routed feeder from MCC-B2 to PUMP-CCW-B terminal,keep,unchanged_from_jennifer_r01
+MCC-B2,MOV-881B,solid vertical/routed feeder from MCC-B2 to MOV-881B top terminal,keep,unchanged_from_jennifer_r01
+MCC-B2,MOV-742B,solid vertical/routed feeder from MCC-B2 to MOV-742B top terminal,keep,unchanged_from_jennifer_r01
+BUS-4160-A-DIV-I,CHG-125A,no clear terminal from A 4160 bus to CHG-125A; the visible charger feed lands at the 480 V load-center end,remove,unchanged_from_jennifer_r01
+BUS-480-A,CHG-125A,solid conductor leaves CHG-125A top/right terminal and bends to the LC-A end of BUS-480-A,keep,unchanged_from_jennifer_r01
+CHG-125A,BAT-125A,visible vertical stack conductor from CHG-125A down to BAT-125A terminal,keep,unchanged_from_jennifer_r01
+BAT-125A,INV-120A,visible vertical stack conductor from BAT-125A down to INV-120A terminal,keep,unchanged_from_jennifer_r01
+INV-120A,PANEL-120A,visible vertical stack conductor from INV-120A down to PANEL-120A terminal,keep,unchanged_from_jennifer_r01
+PANEL-120A,RPS-A,visible vertical stack conductor from PANEL-120A down to RPS-A terminal,keep,unchanged_from_jennifer_r01
+BUS-4160-B-DIV-II,CHG-125B,no clear terminal from B 4160 bus to CHG-125B; the visible charger feed lands at the 480 V load-center end,remove,unchanged_from_jennifer_r01
+BUS-480-B,CHG-125B,solid conductor leaves CHG-125B top/left terminal and bends to the LC-B end of BUS-480-B,keep,unchanged_from_jennifer_r01
+CHG-125B,BAT-125B,visible vertical stack conductor from CHG-125B down to BAT-125B terminal,keep,unchanged_from_jennifer_r01
+BAT-125B,INV-120B,visible vertical stack conductor from BAT-125B down to INV-120B terminal,keep,unchanged_from_jennifer_r01
+INV-120B,PANEL-120B,visible vertical stack conductor from INV-120B down to PANEL-120B terminal,keep,unchanged_from_jennifer_r01
+PANEL-120B,RPS-B,visible vertical stack conductor from PANEL-120B down to RPS-B terminal,keep,unchanged_from_jennifer_r01
+RPS-A,RELAY-KA1,short dashed control/interlock conductor leaves RPS-A and enters RELAY-KA1 area,keep,unchanged_from_jennifer_r01
+RPS-B,RELAY-KB1,short dashed vertical control/interlock conductor from RPS-B down to RELAY-KB1,keep,unchanged_from_jennifer_r01
+MOV-881A,JB-A101,short dashed control conductor drops from MOV-881A to a top terminal on JB-A101,keep,unchanged_from_jennifer_r01
+MOV-742A,JB-A101,short dashed control conductor drops from MOV-742A to a top terminal on JB-A101,keep,unchanged_from_jennifer_r01
+MOV-881B,JB-B101,short dashed control conductor drops from MOV-881B to a top terminal on JB-B101,keep,unchanged_from_jennifer_r01
+MOV-742B,JB-B101,short dashed control conductor drops from MOV-742B to a top terminal on JB-B101,keep,unchanged_from_jennifer_r01
+JB-A101,CONTROL-ROOM-ANNUNCIATION,"CONTROL ROOM ANNUNCIATION is text under the lower dashed route, not a component or terminal node",remove,unchanged_from_jennifer_r01
+ANN-CR01,CONTROL-ROOM-ANNUNCIATION,"CONTROL ROOM ANNUNCIATION is route text below ANN-CR01, not a separate bus endpoint",remove,unchanged_from_jennifer_r01
+REC-SOE01,CONTROL-ROOM-ANNUNCIATION,"CONTROL ROOM ANNUNCIATION is route text below REC-SOE01, not a separate bus endpoint",remove,unchanged_from_jennifer_r01
+JB-B101,CONTROL-ROOM-ANNUNCIATION,"CONTROL ROOM ANNUNCIATION is text under the lower dashed route, not a component or terminal node",remove,unchanged_from_jennifer_r01
+RPS-A,JB-A101,magnified raw left control area shows a continuous dashed control conductor from the RPS-A lower terminal down and right into the JB-A101 left terminal; raw terminal schedule A101 also names RPS-A as the source,keep,changed_from_uncertain_to_keep
+RPS-B,JB-B101,magnified raw right control area shows a continuous dashed control conductor from the RPS-B right terminal down the right-side route and left into the JB-B101 right terminal; raw terminal schedule B101 also names RPS-B as the source,keep,changed_from_uncertain_to_keep
+RPS-A,CONTROL-ROOM-ANNUNCIATION,CONTROL ROOM ANNUNCIATION is route text; long RPS-A dashed path should not be collapsed into a logical bus,remove,unchanged_from_jennifer_r01
+RPS-B,CONTROL-ROOM-ANNUNCIATION,CONTROL ROOM ANNUNCIATION is route text; long RPS-B dashed path should not be collapsed into a logical bus,remove,unchanged_from_jennifer_r01
+INV-120A,LC-A,"LC-A is only the BUS-480-A end label, and the side conductor visibly belongs to the CHG-125A feed rather than an inverter terminal",remove,unchanged_from_jennifer_r01
+INV-120B,LC-B,"LC-B is only the BUS-480-B end label, and the side conductor visibly belongs to the CHG-125B feed rather than an inverter terminal",remove,unchanged_from_jennifer_r01
+JB-A101,ANN-CR01,raw lower crop shows a visual gap between JB-A101 and ANN-CR01; no short box-to-box dashed segment is present,remove,unchanged_from_jennifer_r01
+ANN-CR01,REC-SOE01,short dashed horizontal segment directly connects ANN-CR01 right side to REC-SOE01 left side,keep,unchanged_from_jennifer_r01
+REC-SOE01,JB-B101,raw lower crop shows a visual gap between REC-SOE01 and JB-B101; no short box-to-box dashed segment is present,remove,unchanged_from_jennifer_r01
+MCC-A1,RELAY-KA1,solid MCC-A1 load routing passes near RELAY-KA1 but does not land on a relay terminal,remove,unchanged_from_jennifer_r01
+BUS-4160-A-DIV-I,BUS-4160-B-DIV-II,direct bus-to-bus shortcut bypasses the visible CB-TIE-AB tie breaker,remove,unchanged_from_jennifer_r01
+OFFSITE-230KV-A,BUS-4160-A-DIV-I,"direct offsite-to-bus shortcut bypasses DS-230A, TR-1A, and CB-1A",remove,unchanged_from_jennifer_r01
+OFFSITE-230KV-B,BUS-4160-B-DIV-II,"direct offsite-to-bus shortcut bypasses DS-230B, TR-1B, and CB-1B",remove,unchanged_from_jennifer_r01
+BUS-4160-A-DIV-I,BUS-480-A,direct 4160-to-480 shortcut bypasses TR-480-A and CB-480-A,remove,unchanged_from_jennifer_r01
+BUS-4160-B-DIV-II,BUS-480-B,direct 4160-to-480 shortcut bypasses TR-480-B and CB-480-B,remove,unchanged_from_jennifer_r01
+BUS-480-B,GND-PLANT,ground reference symbol is drawn on the A 480 V bus side only; no B 480 V ground terminal is visible,remove,unchanged_from_jennifer_r01
+CHG-125A,INV-120A,direct charger-to-inverter shortcut bypasses BAT-125A and the visible stack conductor sequence,remove,unchanged_from_jennifer_r01
+CHG-125B,INV-120B,direct charger-to-inverter shortcut bypasses BAT-125B and the visible stack conductor sequence,remove,unchanged_from_jennifer_r01

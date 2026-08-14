@@ -1,0 +1,70 @@
+{
+  "artifact": "round_02_jennifer_validation",
+  "role": "Jennifer final precision reviewer/refiner",
+  "iteration": "Improved doc 6 / Iteration_1 / round 02 final precision check",
+  "decision": "saturated/agreed with Diego round 02",
+  "raw_image_authoritative": true,
+  "blind_scope_statement": "Used only original input resources, fresh input-derived artifacts/crops, and current round 02 files; no GT, scoring/evaluation files, previous archives, or unrelated results.",
+  "files_written": {
+    "edges_csv": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_02_jennifer_edges.csv",
+    "matrix_csv": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_02_jennifer_matrix.csv",
+    "notes_md": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_02_jennifer_notes.md",
+    "validation_json": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_02_jennifer_validation.json"
+  },
+  "copied_from_diego_round_02": {
+    "edges_source": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_02_diego_edges.csv",
+    "matrix_source": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_02_diego_matrix.csv",
+    "edges_identical_to_diego_round_02": true,
+    "matrix_identical_to_diego_round_02": true
+  },
+  "bus_label_review": {
+    "retained_label": "BUS-4KV-N",
+    "rejected_label": "BUS-6KV-N",
+    "status": "verified and retained",
+    "evidence": [
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Codes and artifacts\\inspection_crops_improved\\03_safety_bus_full_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Codes and artifacts\\inspection_crops_improved\\11_bus_6kv_label_focus_raw.png"
+    ]
+  },
+  "counts": {
+    "nodes": 105,
+    "component_nodes": 100,
+    "explicit_bus_nodes": 5,
+    "edges": 121,
+    "duplicate_undirected_edges": 0
+  },
+  "validation_checks": {
+    "node_set_matches_component_list_plus_explicit_buses": true,
+    "invalid_nodes": [],
+    "missing_expected_nodes": [],
+    "edge_nodes_subset_of_matrix_nodes": true,
+    "edge_matrix_match": true,
+    "matrix_symmetric": true,
+    "matrix_diagonal_zero": true,
+    "self_edges": [],
+    "old_BUS_6KV_N_present_in_graph_csvs": false,
+    "isolated_nodes": [],
+    "confidence_min": 0.68,
+    "confidence_max": 0.98
+  },
+  "delta_from_diego_round_02": {
+    "added_edges": [],
+    "removed_edges": [],
+    "renamed_labels": [],
+    "explanation": "No clear issue found; Diego round 02 graph copied forward exactly."
+  },
+  "input_files_used": [
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Input resources\\raw -- synthetic_npp_electrical_schematic_variant3_redo_clean_v7.png",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Input resources\\component_visual_ocr_labels.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Input resources\\wire_nodes.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Input resources\\wire_nodes_overlay.png",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Input resources\\wires_mask_overlay.png",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Input resources\\component_and_logical_detection_plus_ocr_overlay.png",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Codes and artifacts\\component_labels_list_improved.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Codes and artifacts\\component_labels_list_improved.txt",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Codes and artifacts\\inspection_crops_improved\\*.png",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_02_diego_edges.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_02_diego_matrix.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_02_diego_notes.md"
+  ]
+}

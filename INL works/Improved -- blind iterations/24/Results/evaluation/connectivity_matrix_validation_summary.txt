@@ -1,0 +1,29 @@
+Connectivity matrix validation summary - Document 24
+Input tree: Improved -- blind iterations
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\24\synthetic_npp_connectivity_matrix_rev2.csv
+Token usage: no token estimate files were present under the requested results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_matrix.csv): TP=199, FP=3, FN=5, Precision=0.985149, Recall=0.975490, F1=0.980296
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_matrix.csv): TP=199, FP=1, FN=5, Precision=0.995000, Recall=0.975490, F1=0.985149
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_matrix.csv): TP=199, FP=1, FN=5, Precision=0.995000, Recall=0.975490, F1=0.985149
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_matrix.csv): TP=199, FP=1, FN=5, Precision=0.995000, Recall=0.975490, F1=0.985149
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=199, FP=1, FN=5, Precision=0.995000, Recall=0.975490, F1=0.985149
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- ESFAS-PNL-A -- TRIP-MOD-A
+
+False-negative edge examples:
+- CB-DG1A -- TRIP-MOD-A
+- CB-DG1B -- TRIP-MOD-B
+- CB-TIE-1 -- LOAD-SHED-CAB
+- CB-TIE-1 -- SYNC-CAB
+- ESFAS-PNL-B -- LOAD-SHED-CAB
+
+
+Missing GT node examples:
+- SYNC-CAB: 1 missed incident GT edge(s)

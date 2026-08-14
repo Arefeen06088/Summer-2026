@@ -1,0 +1,9 @@
+candidate,candidate_type,status,evidence
+TR-CPT-A -- BUS-120AC-A,edge,excluded,TR-CPT-A secondary descends to an isolated terminal dot left of BUS-120AC-A; no solid landing or junction to the rail is visible.
+RELAY-27A -- BUS-120AC-A,edge,excluded,RELAY-27A is near BUS-120AC-A but has no visible solid tap or junction to the 120 VAC rail.
+BUS-4160A -- BUS-4160B,edge,excluded,The visible path is mediated by normally-open bus tie CB-105; no direct bus-bus matrix edge is used.
+BUS-480A -- BUS-480B,edge,excluded,The diagram notes 480V tie reserved space and no connection shown between the two 480 VAC divisions.
+GND-STA -- dashed/dotted route,edge,excluded,GND-STA is visible but the dashed/dotted route does not provide a clear named component or BUS endpoint.
+"2A-XC1, 2A-BCL, 2B-XC1, 2B-BCL",node,excluded,"These are terminal/cable route labels near risers, not physical components or true BUS rails."
+"2A-F1..2A-F6, 2B-F1..2B-F6, bucket numbers",node,excluded,Feeder IDs and MCC bucket numbers describe load routes and internal buckets rather than independent matrix nodes.
+division descriptors and continuation/source boxes,node,excluded,"Text such as 4.16 KV ESF DIV I/II, 480 VAC DIV I/II, 125 VDC TRAIN A/B, 120 VAC INST A/B, TO UNIT AUX BUS CONT., and TO STATION YARD CONT. describes rails or external continuations."

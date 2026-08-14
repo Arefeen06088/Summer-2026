@@ -1,0 +1,80 @@
+source,target,evidence,status,review_reason
+OFFSITE-230KV-A,DS-230A,solid vertical power conductor from OFFSITE-230KV-A block into DS-230A,keep,kept from Diego; clear terminal-to-terminal power path
+DS-230A,TR-1A,solid vertical power conductor from DS-230A into TR-1A,keep,kept from Diego; clear terminal-to-terminal power path
+TR-1A,CB-1A,solid vertical power conductor from TR-1A into CB-1A,keep,kept from Diego; clear terminal-to-terminal power path
+CB-1A,BUS-4160-A-DIV-I,solid vertical drop from CB-1A to dot on A 4160 bus,keep,kept from Diego; clear bus tap
+EDG-1A,CB-DG-A,solid vertical conductor from EDG-1A to CB-DG-A,keep,kept from Diego; clear generator breaker path
+CB-DG-A,BUS-4160-A-DIV-I,solid vertical drop from CB-DG-A to dot on A 4160 bus,keep,kept from Diego; clear bus tap
+BUS-4160-A-DIV-I,CB-TIE-AB,solid horizontal A bus segment enters left side of CB-TIE-AB,keep,kept from Diego; tie path passes through named breaker
+CB-TIE-AB,BUS-4160-B-DIV-II,solid horizontal segment exits CB-TIE-AB to B 4160 bus,keep,kept from Diego; tie path passes through named breaker
+OFFSITE-230KV-B,DS-230B,solid vertical power conductor from OFFSITE-230KV-B block into DS-230B,keep,kept from Diego; clear terminal-to-terminal power path
+DS-230B,TR-1B,solid vertical power conductor from DS-230B into TR-1B,keep,kept from Diego; clear terminal-to-terminal power path
+TR-1B,CB-1B,solid vertical power conductor from TR-1B into CB-1B,keep,kept from Diego; clear terminal-to-terminal power path
+CB-1B,BUS-4160-B-DIV-II,solid vertical drop from CB-1B to dot on B 4160 bus,keep,kept from Diego; clear bus tap
+EDG-1B,CB-DG-B,solid vertical conductor from EDG-1B to CB-DG-B,keep,kept from Diego; clear generator breaker path
+CB-DG-B,BUS-4160-B-DIV-II,solid vertical drop from CB-DG-B to dot on B 4160 bus,keep,kept from Diego; clear bus tap
+BUS-4160-A-DIV-I,RELAY-UV-A,dashed/sensing tap drops from A 4160 bus dot to RELAY-UV-A,keep,kept from Diego; visible short sensing tap
+BUS-4160-B-DIV-II,RELAY-UV-B,dashed/sensing tap drops from B 4160 bus dot to RELAY-UV-B,keep,kept from Diego; visible short sensing tap
+BUS-4160-A-DIV-I,TR-480-A,solid vertical feeder from A 4160 bus dot to TR-480-A,keep,kept from Diego; clear transformer feeder
+TR-480-A,CB-480-A,solid vertical power conductor from TR-480-A to CB-480-A,keep,kept from Diego; clear terminal-to-terminal power path
+CB-480-A,BUS-480-A,solid vertical power conductor from CB-480-A to dot on BUS-480-A,keep,kept from Diego; clear bus tap
+BUS-4160-B-DIV-II,TR-480-B,solid vertical feeder from B 4160 bus dot to TR-480-B,keep,kept from Diego; clear transformer feeder
+TR-480-B,CB-480-B,solid vertical power conductor from TR-480-B to CB-480-B,keep,kept from Diego; clear terminal-to-terminal power path
+CB-480-B,BUS-480-B,solid vertical power conductor from CB-480-B to dot on BUS-480-B,keep,kept from Diego; clear bus tap
+LC-A,BUS-480-A,"LC-A text sits at BUS-480-A end but is a label, not a separate electrical node",remove,changed from Diego keep; LC-A folded into BUS-480-A node
+LC-B,BUS-480-B,"LC-B text sits at BUS-480-B end but is a label, not a separate electrical node",remove,changed from Diego keep; LC-B folded into BUS-480-B node
+BUS-480-A,GND-PLANT,solid vertical ground-reference connection from right end of BUS-480-A to GND-PLANT symbol,keep,kept from Diego; clear ground reference endpoint
+BUS-480-A,MCC-A1,solid vertical feeder from BUS-480-A down into MCC-A1,keep,kept from Diego; clear load-center feeder
+BUS-480-A,MCC-A2,solid vertical feeder from BUS-480-A down into MCC-A2,keep,kept from Diego; clear load-center feeder
+BUS-480-B,MCC-B1,solid vertical feeder from BUS-480-B down into MCC-B1,keep,kept from Diego; clear load-center feeder
+BUS-480-B,MCC-B2,solid vertical feeder from BUS-480-B down into MCC-B2,keep,kept from Diego; clear load-center feeder
+MCC-A1,PUMP-RHR-A,solid routed feeder from MCC-A1 bottom to PUMP-RHR-A terminal,keep,kept from Diego; visible solid load feeder
+MCC-A1,PUMP-CS-A,solid vertical feeder from MCC-A1 to PUMP-CS-A terminal,keep,kept from Diego; visible solid load feeder
+MCC-A2,PUMP-CCW-A,solid routed feeder from MCC-A2 to PUMP-CCW-A terminal,keep,kept from Diego; visible solid load feeder
+MCC-A2,MOV-881A,solid vertical/routed feeder from MCC-A2 to MOV-881A top terminal,keep,kept from Diego; visible solid load feeder
+MCC-A2,MOV-742A,solid routed feeder from MCC-A2 to MOV-742A top terminal,keep,kept from Diego; visible solid load feeder
+MCC-B1,PUMP-RHR-B,solid routed feeder from MCC-B1 to PUMP-RHR-B terminal,keep,kept from Diego; visible solid load feeder
+MCC-B1,PUMP-CS-B,solid vertical feeder from MCC-B1 to PUMP-CS-B terminal,keep,kept from Diego; visible solid load feeder
+MCC-B2,PUMP-CCW-B,solid routed feeder from MCC-B2 to PUMP-CCW-B terminal,keep,kept from Diego; visible solid load feeder
+MCC-B2,MOV-881B,solid vertical/routed feeder from MCC-B2 to MOV-881B top terminal,keep,kept from Diego; visible solid load feeder
+MCC-B2,MOV-742B,solid vertical/routed feeder from MCC-B2 to MOV-742B top terminal,keep,kept from Diego; visible solid load feeder
+BUS-4160-A-DIV-I,CHG-125A,no clear terminal from A 4160 bus to CHG-125A; the visible charger feed lands at the 480 V load-center end,remove,changed from Diego keep; original was inferred from proximity
+BUS-480-A,CHG-125A,solid conductor leaves CHG-125A top/right terminal and bends to the LC-A end of BUS-480-A,keep,added by Jennifer; clear 480 V bus-to-charger feed replaces Diego 4160 shortcut
+CHG-125A,BAT-125A,visible vertical stack conductor from CHG-125A down to BAT-125A terminal,keep,kept from Diego; clear stack continuity
+BAT-125A,INV-120A,visible vertical stack conductor from BAT-125A down to INV-120A terminal,keep,kept from Diego; clear stack continuity
+INV-120A,PANEL-120A,visible vertical stack conductor from INV-120A down to PANEL-120A terminal,keep,kept from Diego; clear stack continuity
+PANEL-120A,RPS-A,visible vertical stack conductor from PANEL-120A down to RPS-A terminal,keep,kept from Diego; clear stack continuity
+BUS-4160-B-DIV-II,CHG-125B,no clear terminal from B 4160 bus to CHG-125B; the visible charger feed lands at the 480 V load-center end,remove,changed from Diego keep; original was inferred from proximity
+BUS-480-B,CHG-125B,solid conductor leaves CHG-125B top/left terminal and bends to the LC-B end of BUS-480-B,keep,added by Jennifer; clear 480 V bus-to-charger feed replaces Diego 4160 shortcut
+CHG-125B,BAT-125B,visible vertical stack conductor from CHG-125B down to BAT-125B terminal,keep,kept from Diego; clear stack continuity
+BAT-125B,INV-120B,visible vertical stack conductor from BAT-125B down to INV-120B terminal,keep,kept from Diego; clear stack continuity
+INV-120B,PANEL-120B,visible vertical stack conductor from INV-120B down to PANEL-120B terminal,keep,kept from Diego; clear stack continuity
+PANEL-120B,RPS-B,visible vertical stack conductor from PANEL-120B down to RPS-B terminal,keep,kept from Diego; clear stack continuity
+RPS-A,RELAY-KA1,short dashed control/interlock conductor leaves RPS-A and enters RELAY-KA1 area,keep,kept from Diego; short local control connection has visible endpoints
+RPS-B,RELAY-KB1,short dashed vertical control/interlock conductor from RPS-B down to RELAY-KB1,keep,kept from Diego; short local control connection has visible endpoints
+MOV-881A,JB-A101,short dashed control conductor drops from MOV-881A to a top terminal on JB-A101,keep,kept from Diego; visible MOV-to-JB drop
+MOV-742A,JB-A101,short dashed control conductor drops from MOV-742A to a top terminal on JB-A101,keep,kept from Diego; visible MOV-to-JB drop
+MOV-881B,JB-B101,short dashed control conductor drops from MOV-881B to a top terminal on JB-B101,keep,kept from Diego; visible MOV-to-JB drop
+MOV-742B,JB-B101,short dashed control conductor drops from MOV-742B to a top terminal on JB-B101,keep,kept from Diego; visible MOV-to-JB drop
+JB-A101,CONTROL-ROOM-ANNUNCIATION,"CONTROL ROOM ANNUNCIATION is text under the lower dashed route, not a component or terminal node",remove,changed from Diego keep; annotation node removed
+ANN-CR01,CONTROL-ROOM-ANNUNCIATION,"CONTROL ROOM ANNUNCIATION is route text below ANN-CR01, not a separate bus endpoint",remove,changed from Diego keep; annotation node removed
+REC-SOE01,CONTROL-ROOM-ANNUNCIATION,"CONTROL ROOM ANNUNCIATION is route text below REC-SOE01, not a separate bus endpoint",remove,changed from Diego keep; annotation node removed
+JB-B101,CONTROL-ROOM-ANNUNCIATION,"CONTROL ROOM ANNUNCIATION is text under the lower dashed route, not a component or terminal node",remove,changed from Diego keep; annotation node removed
+RPS-A,JB-A101,long dashed route from RPS-A bottom trends toward the lower control route and JB-A101 but ownership is not resolved by a short direct endpoint,uncertain,kept out of matrix; long RPS route is plausible but too ambiguous for precision keep
+RPS-B,JB-B101,long dashed route from RPS-B/right perimeter trends toward JB-B101 but ownership is not resolved by a short direct endpoint,uncertain,kept out of matrix; long RPS route is plausible but too ambiguous for precision keep
+RPS-A,CONTROL-ROOM-ANNUNCIATION,CONTROL ROOM ANNUNCIATION is route text; long RPS-A dashed path should not be collapsed into a logical bus,remove,changed from Diego uncertain; annotation node removed
+RPS-B,CONTROL-ROOM-ANNUNCIATION,CONTROL ROOM ANNUNCIATION is route text; long RPS-B dashed path should not be collapsed into a logical bus,remove,changed from Diego uncertain; annotation node removed
+INV-120A,LC-A,"LC-A is only the BUS-480-A end label, and the side conductor visibly belongs to the CHG-125A feed rather than an inverter terminal",remove,changed from Diego uncertain; LC-A node removed
+INV-120B,LC-B,"LC-B is only the BUS-480-B end label, and the side conductor visibly belongs to the CHG-125B feed rather than an inverter terminal",remove,changed from Diego uncertain; LC-B node removed
+JB-A101,ANN-CR01,raw lower crop shows a visual gap between JB-A101 and ANN-CR01; no short box-to-box dashed segment is present,remove,changed from Diego uncertain; no clear terminal connection
+ANN-CR01,REC-SOE01,short dashed horizontal segment directly connects ANN-CR01 right side to REC-SOE01 left side,keep,changed from Diego uncertain to keep; direct component-to-component segment is visible
+REC-SOE01,JB-B101,raw lower crop shows a visual gap between REC-SOE01 and JB-B101; no short box-to-box dashed segment is present,remove,changed from Diego uncertain; no clear terminal connection
+MCC-A1,RELAY-KA1,solid MCC-A1 load routing passes near RELAY-KA1 but does not land on a relay terminal,remove,changed from Diego uncertain; nearby wire is not a terminal connection
+BUS-4160-A-DIV-I,BUS-4160-B-DIV-II,direct bus-to-bus shortcut bypasses the visible CB-TIE-AB tie breaker,remove,kept removed from Diego; tie is represented through CB-TIE-AB
+OFFSITE-230KV-A,BUS-4160-A-DIV-I,"direct offsite-to-bus shortcut bypasses DS-230A, TR-1A, and CB-1A",remove,kept removed from Diego; path must pass through intervening named components
+OFFSITE-230KV-B,BUS-4160-B-DIV-II,"direct offsite-to-bus shortcut bypasses DS-230B, TR-1B, and CB-1B",remove,kept removed from Diego; path must pass through intervening named components
+BUS-4160-A-DIV-I,BUS-480-A,direct 4160-to-480 shortcut bypasses TR-480-A and CB-480-A,remove,kept removed from Diego; path must pass through intervening named components
+BUS-4160-B-DIV-II,BUS-480-B,direct 4160-to-480 shortcut bypasses TR-480-B and CB-480-B,remove,kept removed from Diego; path must pass through intervening named components
+BUS-480-B,GND-PLANT,ground reference symbol is drawn on the A 480 V bus side only; no B 480 V ground terminal is visible,remove,kept removed from Diego; no clear B-side ground connection
+CHG-125A,INV-120A,direct charger-to-inverter shortcut bypasses BAT-125A and the visible stack conductor sequence,remove,kept removed from Diego; battery is between charger and inverter
+CHG-125B,INV-120B,direct charger-to-inverter shortcut bypasses BAT-125B and the visible stack conductor sequence,remove,kept removed from Diego; battery is between charger and inverter

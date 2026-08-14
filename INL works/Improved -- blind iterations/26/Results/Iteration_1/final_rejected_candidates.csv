@@ -1,0 +1,8 @@
+Candidate,Final decision,Reason
+`BUS-INV-A` -- `BUS-120N-A`,Rejected,No direct solid bus-to-bus tie is visible; the supported path is mediated by `PNL-AC-A`.
+`BUS-INV-B` -- `BUS-120N-B`,Rejected,Same pattern as Train A; the supported path is mediated by `PNL-AC-B`.
+`BUS-120N-A` -- `RPS-PNL-A`,Rejected,No direct 120N-to-RPS panel tap is visible.
+`BUS-120N-B` -- `RPS-PNL-B`,Rejected,No direct 120N-to-RPS panel tap is visible.
+"Direct `BUS-416A` -- `BUS-416B`, `BUS-480A` -- `BUS-480B`, or `BUS-125DCA` -- `BUS-125DCB`",Rejected,Train ties remain breaker-mediated in the raw schematic.
+WN/W### wire-route artifacts,Rejected,They are not raw-visible electrical objects for the final node set.
+Broad dashed-lane connectivity across regions,Rejected,Dashed routing does not establish additional component connectivity without named endpoints.

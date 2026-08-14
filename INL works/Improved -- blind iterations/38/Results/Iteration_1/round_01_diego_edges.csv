@@ -1,0 +1,60 @@
+source,target,confidence,evidence
+GEN-U2A,CB-101,0.98,solid horizontal conductor between GEN-U2A symbol and CB-101 switch at upper left
+CB-101,TR-UAT-2A,0.98,solid horizontal conductor from CB-101 right terminal into TR-UAT-2A primary
+TR-UAT-2A,BUS-4160A,0.95,transformer secondary/riser drops to a dotted tap on the left end of BUS-4160A
+DG-2A,CB-103,0.98,solid horizontal conductor from DG-2A to CB-103 inside ESF diesel A area
+CB-103,BUS-4160A,0.94,CB-103 output joins the vertical riser that taps BUS-4160A
+BUS-4160A,CB-105,0.97,BUS-4160A runs directly into west side of normally open bus-tie breaker CB-105
+CB-105,BUS-4160B,0.97,east side of CB-105 continues as BUS-4160B; contact status is open so no direct bus-bus edge used
+TR-SUT-2B,CB-102,0.98,solid horizontal conductor from startup auxiliary transformer TR-SUT-2B to CB-102
+CB-102,BUS-4160B,0.95,vertical conductor from CB-102 drops to a tap on BUS-4160B
+DG-2B,CB-104,0.98,solid horizontal conductor from DG-2B to CB-104 inside ESF diesel B area
+CB-104,BUS-4160B,0.94,CB-104 output rises to a vertical tap on BUS-4160B
+BUS-4160A,CB-201A,0.98,vertical feeder tap drops from BUS-4160A to CB-201A
+CB-201A,TR-201A,0.98,series vertical conductor between CB-201A and TR-201A
+TR-201A,CB-301A,0.98,series vertical conductor between TR-201A and CB-301A
+CB-301A,BUS-480A,0.98,vertical feeder from CB-301A lands on BUS-480A
+BUS-4160B,CB-201B,0.98,vertical feeder tap drops from BUS-4160B to CB-201B
+CB-201B,TR-201B,0.98,series vertical conductor between CB-201B and TR-201B
+TR-201B,CB-301B,0.98,series vertical conductor between TR-201B and CB-301B
+CB-301B,BUS-480B,0.98,vertical feeder from CB-301B lands on BUS-480B
+BUS-480A,CB-401A,0.98,vertical feeder tap drops from BUS-480A through CB-401A
+CB-401A,MCC-2A1,0.97,CB-401A output continues downward into the MCC-2A1 enclosure/top bus
+MCC-2A1,PUMP-RHR2A,0.95,load bucket 01 vertical feeder exits MCC-2A1 to PUMP-RHR2A
+MCC-2A1,PUMP-CCW2A,0.95,load bucket 02 vertical feeder exits MCC-2A1 to PUMP-CCW2A
+MCC-2A1,PUMP-SW2A,0.95,load bucket 03 vertical feeder exits MCC-2A1 to PUMP-SW2A
+MCC-2A1,FAN-CR2A,0.95,load bucket 04 vertical feeder exits MCC-2A1 to FAN-CR2A
+MCC-2A1,MOV-RHR141A,0.95,load bucket 05 vertical feeder exits MCC-2A1 to MOV-RHR141A
+MCC-2A1,MOV-SI221A,0.95,load bucket 06 vertical feeder exits MCC-2A1 to MOV-SI221A
+BUS-480A,TR-CPT-A,0.95,left solid feeder from BUS-480A descends to TR-CPT-A primary
+TR-CPT-A,BUS-120AC-A,0.95,TR-CPT-A secondary vertical conductor lands on BUS-120AC-A
+BUS-480A,CHGR-2A,0.93,parallel solid 480V feeder from BUS-480A routes to CHGR-2A AC input
+CHGR-2A,BUS-125DC-A,0.96,CHGR-2A DC output ties into the horizontal BUS-125DC-A rail
+BAT-125A,BUS-125DC-A,0.97,BAT-125A battery symbol is drawn directly on/tapped to BUS-125DC-A
+BUS-125DC-A,INV-2A,0.95,vertical DC input tap from BUS-125DC-A descends into INV-2A
+INV-2A,BUS-120AC-A,0.96,INV-2A AC output lands on BUS-120AC-A
+BUS-125DC-A,RELAY-86A,0.82,lockout relay 86A is shown with a vertical tap from the 125VDC Train A bus; control device connection
+BUS-120AC-A,RPS-PNL-A,0.90,vertical tap from BUS-120AC-A descends into RPS-PNL-A
+BUS-120AC-A,RELAY-27A,0.72,UV BUS A relay is adjacent to/tied into the 120VAC instrument bus area; monitoring/control route is partly dashed
+RELAY-27A,RPS-PNL-A,0.48,dashed control route visually links the UV relay area with RPS-PNL-A; included as low-confidence control edge
+RELAY-86A,RPS-PNL-A,0.45,dashed/control routing around lockout relay 86A and RPS-PNL-A is visually plausible but not a solid power conductor
+BUS-480B,CB-401B,0.98,vertical feeder tap drops from BUS-480B through CB-401B
+CB-401B,MCC-2B1,0.97,CB-401B output continues downward into the MCC-2B1 enclosure/top bus
+MCC-2B1,PUMP-RHR2B,0.95,load bucket 01 vertical feeder exits MCC-2B1 to PUMP-RHR2B
+MCC-2B1,PUMP-CCW2B,0.95,load bucket 02 vertical feeder exits MCC-2B1 to PUMP-CCW2B
+MCC-2B1,PUMP-SW2B,0.95,load bucket 03 vertical feeder exits MCC-2B1 to PUMP-SW2B
+MCC-2B1,FAN-CR2B,0.95,load bucket 04 vertical feeder exits MCC-2B1 to FAN-CR2B
+MCC-2B1,MOV-RHR142B,0.95,load bucket 05 vertical feeder exits MCC-2B1 to MOV-RHR142B
+MCC-2B1,MOV-SI222B,0.95,load bucket 06 vertical feeder exits MCC-2B1 to MOV-SI222B
+BUS-480B,TR-CPT-B,0.95,right-side solid feeder from BUS-480B descends to TR-CPT-B primary
+TR-CPT-B,BUS-120AC-B,0.95,TR-CPT-B secondary vertical conductor lands on BUS-120AC-B
+BUS-480B,CHGR-2B,0.93,parallel solid 480V feeder from BUS-480B routes to CHGR-2B AC input
+CHGR-2B,BUS-125DC-B,0.96,CHGR-2B DC output ties into the horizontal BUS-125DC-B rail
+BAT-125B,BUS-125DC-B,0.97,BAT-125B battery symbol is drawn directly on/tapped to BUS-125DC-B
+BUS-125DC-B,INV-2B,0.95,vertical DC input tap from BUS-125DC-B descends into INV-2B
+INV-2B,BUS-120AC-B,0.96,INV-2B AC output lands on BUS-120AC-B
+BUS-125DC-B,RELAY-86B,0.82,lockout relay 86B is shown with a vertical tap from the 125VDC Train B bus; control device connection
+BUS-120AC-B,RPS-PNL-B,0.90,vertical tap from BUS-120AC-B descends into RPS-PNL-B
+BUS-120AC-B,RELAY-27B,0.74,UV BUS B relay is drawn at the right side of BUS-120AC-B with a visible monitoring/control tap
+RELAY-27B,RPS-PNL-B,0.50,dashed/control route and close solid geometry around UV relay 27B and RPS-PNL-B support a low-confidence control edge
+RELAY-86B,RPS-PNL-B,0.45,dashed/control routing around lockout relay 86B and RPS-PNL-B is visually plausible but not a solid power conductor

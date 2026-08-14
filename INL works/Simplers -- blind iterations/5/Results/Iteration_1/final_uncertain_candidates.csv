@@ -1,0 +1,15 @@
+candidate,decision,reason
+MCC-21A / MCC-21B physical enclosure labels,excluded,Duplicate enclosure labels for the named MCC 480 V bus rails; final graph keeps the actual rail nodes.
+RPS-CH-A-CONTROL-LANE / RPS-CH-B-CONTROL-LANE,excluded,"Route text labels for dashed control wiring, not separate terminal endpoints."
+VOLTAGE-SIG-A / VOLTAGE-SIG-B,excluded,Signal-route labels; direct VT-to-RPS named-device edges preserve the visually supported connectivity.
+DC-BUS-21A/B -- RPS-PNL-A/B,excluded,Dashed terminal drops cross or approach the solid 125 VDC rails without junction dots.
+CT-21A/B -- FAN-RB21A/B,excluded,CT symbols are adjacent to fan feeders but not visibly in series with them; dashed leads route to RPS panels.
+CB-MPA1 -- RELAY-86A,retained_medium_confidence,Dashed trip-control path leaves the CB-MPA1 area and routes into the A control relay chain; retained as direct device edge after removing lane-label node.
+RPS-PNL-A -- INV-21A,retained_medium_confidence,Dashed control lane continues from RPS-PNL-A toward INV-21A; kept as control connection separate from the solid DC bus tap.
+CT-21A -- RPS-PNL-A,retained_medium_confidence,Dashed instrument lead from CT-21A descends toward the RPS-PNL-A terminal block; no separate CT-to-fan wire is drawn.
+VT-21A -- RPS-PNL-A,retained_medium_confidence,"Dashed voltage-signal path descends from VT-21A and turns toward RPS-PNL-A; VOLTAGE-SIG-A is treated as a route label, not a node."
+CB-MPB1 -- RELAY-86B,retained_medium_confidence,Dashed trip-control path from the CB-MPB1 area routes into the B control relay chain; retained as direct device edge after removing lane-label node.
+RPS-PNL-B -- INV-21B,retained_medium_confidence,Dashed control lane continues from RPS-PNL-B toward INV-21B; kept as control connection separate from the solid DC bus tap.
+JB-21B -- RPS-PNL-B,retained_medium_confidence,Dashed signal routing from JB-21B turns toward the RPS-PNL-B terminal area; retained but not upgraded because the route shares a crowded dashed region.
+CT-21B -- RPS-PNL-B,retained_medium_confidence,Dashed instrument lead from CT-21B descends toward the RPS-PNL-B terminal block; no separate CT-to-fan wire is drawn.
+VT-21B -- RPS-PNL-B,retained_medium_confidence,"Dashed voltage-signal path descends from VT-21B and routes toward RPS-PNL-B; VOLTAGE-SIG-B is treated as a route label, not a node."

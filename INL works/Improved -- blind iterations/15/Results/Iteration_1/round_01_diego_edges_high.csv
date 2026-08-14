@@ -1,0 +1,131 @@
+source,target,edge_type,evidence
+GEN-101,CB-GEN-101,solid_power_feeder,Raw/top source crop: GEN-101 connects by solid line to CB-GEN-101.
+CB-GEN-101,TR-GSU-1,solid_power_feeder,Raw/top source crop: CB-GEN-101 connects by solid line to TR-GSU-1.
+TR-GSU-1,BUS-SWY-1,solid_bus_tap,Raw/full_power_top crop: TR-GSU-1 drops by solid vertical line to a dot on BUS-SWY-1.
+GEN-102,CB-GEN-102,solid_power_feeder,Raw/top source crop: GEN-102 connects by solid line to CB-GEN-102.
+CB-GEN-102,TR-GSU-2,solid_power_feeder,Raw/top source crop: CB-GEN-102 connects by solid line to TR-GSU-2.
+TR-GSU-2,BUS-SWY-2,solid_bus_tap,Raw/full_power_top crop: TR-GSU-2 drops by solid vertical line to a dot on BUS-SWY-2.
+BUS-SWY-1,CB-SWY-TIE,solid_switchyard_tie,Raw/full_power_top crop: BUS-SWY-1 solid bus continues into CB-SWY-TIE.
+CB-SWY-TIE,BUS-SWY-2,solid_switchyard_tie,Raw/full_power_top crop: CB-SWY-TIE connects by solid line into BUS-SWY-2.
+BUS-SWY-1,TR-UAT-1,solid_transformer_feeder,Raw/top left source crop: TR-UAT-1 is tapped by solid vertical line from BUS-SWY-1.
+TR-UAT-1,BUS-NSS-1,solid_transformer_feeder,Raw/top left source crop: TR-UAT-1 connects downward by solid vertical line to BUS-NSS-1.
+BUS-SWY-1,TR-SAT-1,solid_transformer_feeder,Raw/top center-left crop: TR-SAT-1 is tapped by solid vertical line from BUS-SWY-1.
+TR-SAT-1,BUS-NSS-1,solid_transformer_feeder,Raw/top center-left crop: TR-SAT-1 connects downward by solid vertical line to BUS-NSS-1.
+BUS-SWY-2,TR-UAT-2,solid_transformer_feeder,Raw/top center-right crop: TR-UAT-2 is tapped by solid vertical line from BUS-SWY-2.
+TR-UAT-2,BUS-NSS-2,solid_transformer_feeder,Raw/top center-right crop: TR-UAT-2 connects downward by solid vertical line to BUS-NSS-2.
+BUS-SWY-2,TR-SAT-2,solid_transformer_feeder,Raw/top right/top center-right crop: TR-SAT-2 is tapped by solid vertical line from BUS-SWY-2.
+TR-SAT-2,BUS-NSS-2,solid_transformer_feeder,Raw/top right/top center-right crop: TR-SAT-2 connects downward by solid vertical line to BUS-NSS-2.
+BUS-NSS-1,CB-NF-A,solid_normal_feeder,Raw/top left/Div 1A upper crops: BUS-NSS-1 solid tap drops to CB-NF-A.
+CB-NF-A,BUS-416A,solid_normal_feeder,Raw/top left/Div 1A upper crops: CB-NF-A continues by solid vertical line to BUS-416A.
+BUS-NSS-1,DG-1A,solid_visual_bus_contact,Raw/top left/Div 1A upper crops: DG-1A symbol is visually on/touched by the solid BUS-NSS-1 bus line.
+DG-1A,CB-DG-A,solid_diesel_feeder,Raw/top left/Div 1A upper crops: DG-1A drops by solid vertical line to CB-DG-A.
+CB-DG-A,BUS-416A,solid_diesel_feeder,Raw/top left/Div 1A upper crops: CB-DG-A continues by solid vertical line to BUS-416A.
+BUS-NSS-1,CB-NF-B,solid_normal_feeder,Raw/top center-left/Div 1B upper crops: BUS-NSS-1 solid tap drops to CB-NF-B.
+CB-NF-B,BUS-416B,solid_normal_feeder,Raw/top center-left/Div 1B upper crops: CB-NF-B continues by solid vertical line to BUS-416B.
+BUS-NSS-1,DG-1B,solid_visual_bus_contact,Raw/top center-left/Div 1B upper crops: DG-1B symbol is visually on/touched by the solid BUS-NSS-1 bus line.
+DG-1B,CB-DG-B,solid_diesel_feeder,Raw/top center-left/Div 1B upper crops: DG-1B drops by solid vertical line to CB-DG-B.
+CB-DG-B,BUS-416B,solid_diesel_feeder,Raw/top center-left/Div 1B upper crops: CB-DG-B continues by solid vertical line to BUS-416B.
+BUS-NSS-2,CB-NF-C,solid_normal_feeder,Raw/top center-right/Div 2A upper crops: BUS-NSS-2 solid tap drops to CB-NF-C.
+CB-NF-C,BUS-416C,solid_normal_feeder,Raw/top center-right/Div 2A upper crops: CB-NF-C continues by solid vertical line to BUS-416C.
+BUS-NSS-2,DG-1C,solid_visual_bus_contact,Raw/top center-right/Div 2A upper crops: DG-1C symbol is visually on/touched by the solid BUS-NSS-2 bus line.
+DG-1C,CB-DG-C,solid_diesel_feeder,Raw/top center-right/Div 2A upper crops: DG-1C drops by solid vertical line to CB-DG-C.
+CB-DG-C,BUS-416C,solid_diesel_feeder,Raw/top center-right/Div 2A upper crops: CB-DG-C continues by solid vertical line to BUS-416C.
+BUS-NSS-2,CB-NF-D,solid_normal_feeder,Raw/top right/Div 2B upper crops: BUS-NSS-2 solid tap drops to CB-NF-D.
+CB-NF-D,BUS-416D,solid_normal_feeder,Raw/top right/Div 2B upper crops: CB-NF-D continues by solid vertical line to BUS-416D.
+BUS-NSS-2,DG-1D,solid_visual_bus_contact,Raw/top right/Div 2B upper crops: DG-1D symbol is visually on/touched by the solid BUS-NSS-2 bus line.
+DG-1D,CB-DG-D,solid_diesel_feeder,Raw/top right/Div 2B upper crops: DG-1D drops by solid vertical line to CB-DG-D.
+CB-DG-D,BUS-416D,solid_diesel_feeder,Raw/top right/Div 2B upper crops: CB-DG-D continues by solid vertical line to BUS-416D.
+BUS-416A,CB-TIE-AB,solid_bus_tie_normally_open,Raw/top/Div 1A crop: BUS-416A solid bus connects into CB-TIE-AB; label says normally open tie.
+CB-TIE-AB,DS-TIE-AB,solid_bus_tie_normally_open,Raw/top bus tie crop: CB-TIE-AB connects by solid line to DS-TIE-AB.
+DS-TIE-AB,BUS-416B,solid_bus_tie_normally_open,Raw/top bus tie crop: DS-TIE-AB connects by solid line into BUS-416B.
+BUS-416C,CB-TIE-CD,solid_bus_tie_normally_open,Raw/top/Div 2A crop: BUS-416C solid bus connects into CB-TIE-CD; label says normally open tie.
+CB-TIE-CD,DS-TIE-CD,solid_bus_tie_normally_open,Raw/top bus tie crop: CB-TIE-CD connects by solid line to DS-TIE-CD.
+DS-TIE-CD,BUS-416D,solid_bus_tie_normally_open,Raw/top bus tie crop: DS-TIE-CD connects by solid line into BUS-416D.
+BUS-416A,CB-TX-A,solid_transformer_feeder,Raw/Div A upper crop: BUS-416A solid tap drops to CB-TX-A.
+CB-TX-A,TR-480A,solid_transformer_feeder,Raw/Div A upper crop: CB-TX-A continues by solid line to TR-480A.
+TR-480A,BUS-480A,solid_transformer_feeder,Raw/Div A upper crop: TR-480A connects downward to BUS-480A.
+BUS-480A,MCC-1A,solid_load_center_feeder,Raw/Div A upper crop: BUS-480A solid vertical feeder connects to MCC-1A.
+BUS-416B,CB-TX-B,solid_transformer_feeder,Raw/Div B upper crop: BUS-416B solid tap drops to CB-TX-B.
+CB-TX-B,TR-480B,solid_transformer_feeder,Raw/Div B upper crop: CB-TX-B continues by solid line to TR-480B.
+TR-480B,BUS-480B,solid_transformer_feeder,Raw/Div B upper crop: TR-480B connects downward to BUS-480B.
+BUS-480B,MCC-1B,solid_load_center_feeder,Raw/Div B upper crop: BUS-480B solid vertical feeder connects to MCC-1B.
+BUS-416C,CB-TX-C,solid_transformer_feeder,Raw/Div C upper crop: BUS-416C solid tap drops to CB-TX-C.
+CB-TX-C,TR-480C,solid_transformer_feeder,Raw/Div C upper crop: CB-TX-C continues by solid line to TR-480C.
+TR-480C,BUS-480C,solid_transformer_feeder,Raw/Div C upper crop: TR-480C connects downward to BUS-480C.
+BUS-480C,MCC-1C,solid_load_center_feeder,Raw/Div C upper crop: BUS-480C solid vertical feeder connects to MCC-1C.
+BUS-416D,CB-TX-D,solid_transformer_feeder,Raw/Div D upper crop: BUS-416D solid tap drops to CB-TX-D.
+CB-TX-D,TR-480D,solid_transformer_feeder,Raw/Div D upper crop: CB-TX-D continues by solid line to TR-480D.
+TR-480D,BUS-480D,solid_transformer_feeder,Raw/Div D upper crop: TR-480D connects downward to BUS-480D.
+BUS-480D,MCC-1D,solid_load_center_feeder,Raw/Div D upper crop: BUS-480D solid vertical feeder connects to MCC-1D.
+MCC-1A,CB-A01,solid_mcc_feeder,Raw/Div A upper crop: MCC-1A has a solid vertical feeder drop to CB-A01.
+CB-A01,DS-A01,solid_load_feeder,Raw/Div A lower crop: CB-A01 continues by solid feeder to DS-A01.
+DS-A01,PMP-SI-A1,solid_load_feeder,Raw/Div A lower crop: DS-A01 continues by solid feeder to PMP-SI-A1.
+MCC-1A,CB-A02,solid_mcc_feeder,Raw/Div A upper crop: MCC-1A has a solid vertical feeder drop to CB-A02.
+CB-A02,FU-A02,solid_load_feeder,Raw/Div A lower crop: CB-A02 continues by solid feeder to FU-A02.
+FU-A02,PMP-CS-A2,solid_load_feeder,Raw/Div A lower crop: FU-A02 continues by solid feeder to PMP-CS-A2.
+MCC-1A,CB-A03,solid_mcc_feeder,Raw/Div A upper crop: MCC-1A has a solid vertical feeder drop to CB-A03.
+CB-A03,DS-A03,solid_load_feeder,Raw/Div A lower crop: CB-A03 continues by solid feeder to DS-A03.
+DS-A03,MOV-A03,solid_load_feeder,Raw/Div A lower crop: DS-A03 continues by solid feeder to MOV-A03.
+MCC-1A,CB-A04,solid_mcc_feeder,Raw/Div A upper crop: MCC-1A has a solid vertical feeder drop to CB-A04.
+CB-A04,FU-A04,solid_load_feeder,Raw/Div A lower crop: CB-A04 continues by solid feeder to FU-A04.
+FU-A04,MTR-A04,solid_load_feeder,Raw/Div A lower crop: FU-A04 continues by solid feeder to MTR-A04.
+MCC-1A,CB-A05,solid_mcc_feeder,Raw/Div A upper crop: MCC-1A has a solid vertical feeder drop to CB-A05.
+CB-A05,DS-A05,solid_load_feeder,Raw/Div A lower crop: CB-A05 continues by solid feeder to DS-A05.
+DS-A05,INST-A05,solid_load_feeder,Raw/Div A lower crop: DS-A05 continues by solid feeder to INST-A05.
+MCC-1A,CB-A06,solid_mcc_feeder,Raw/Div A upper crop: MCC-1A has a solid vertical feeder drop to CB-A06.
+CB-A06,FU-A06,solid_load_feeder,Raw/Div A lower crop: CB-A06 continues by solid feeder to FU-A06.
+FU-A06,PMP-SW-A6,solid_load_feeder,Raw/Div A lower crop: FU-A06 continues by solid feeder to PMP-SW-A6.
+MCC-1B,CB-B01,solid_mcc_feeder,Raw/Div B upper crop: MCC-1B has a solid vertical feeder drop to CB-B01.
+CB-B01,DS-B01,solid_load_feeder,Raw/Div B lower crop: CB-B01 continues by solid feeder to DS-B01.
+DS-B01,PMP-SI-B1,solid_load_feeder,Raw/Div B lower crop: DS-B01 continues by solid feeder to PMP-SI-B1.
+MCC-1B,CB-B02,solid_mcc_feeder,Raw/Div B upper crop: MCC-1B has a solid vertical feeder drop to CB-B02.
+CB-B02,FU-B02,solid_load_feeder,Raw/Div B lower crop: CB-B02 continues by solid feeder to FU-B02.
+FU-B02,PMP-CS-B2,solid_load_feeder,Raw/Div B lower crop: FU-B02 continues by solid feeder to PMP-CS-B2.
+MCC-1B,CB-B03,solid_mcc_feeder,Raw/Div B upper crop: MCC-1B has a solid vertical feeder drop to CB-B03.
+CB-B03,DS-B03,solid_load_feeder,Raw/Div B lower crop: CB-B03 continues by solid feeder to DS-B03.
+DS-B03,MOV-B03,solid_load_feeder,Raw/Div B lower crop: DS-B03 continues by solid feeder to MOV-B03.
+MCC-1B,CB-B04,solid_mcc_feeder,Raw/Div B upper crop: MCC-1B has a solid vertical feeder drop to CB-B04.
+CB-B04,FU-B04,solid_load_feeder,Raw/Div B lower crop: CB-B04 continues by solid feeder to FU-B04.
+FU-B04,MTR-B04,solid_load_feeder,Raw/Div B lower crop: FU-B04 continues by solid feeder to MTR-B04.
+MCC-1B,CB-B05,solid_mcc_feeder,Raw/Div B upper crop: MCC-1B has a solid vertical feeder drop to CB-B05.
+CB-B05,DS-B05,solid_load_feeder,Raw/Div B lower crop: CB-B05 continues by solid feeder to DS-B05.
+DS-B05,INST-B05,solid_load_feeder,Raw/Div B lower crop: DS-B05 continues by solid feeder to INST-B05.
+MCC-1B,CB-B06,solid_mcc_feeder,Raw/Div B upper crop: MCC-1B has a solid vertical feeder drop to CB-B06.
+CB-B06,FU-B06,solid_load_feeder,Raw/Div B lower crop: CB-B06 continues by solid feeder to FU-B06.
+FU-B06,PMP-SW-B6,solid_load_feeder,Raw/Div B lower crop: FU-B06 continues by solid feeder to PMP-SW-B6.
+MCC-1C,CB-C01,solid_mcc_feeder,Raw/Div C upper crop: MCC-1C has a solid vertical feeder drop to CB-C01.
+CB-C01,DS-C01,solid_load_feeder,Raw/Div C lower crop: CB-C01 continues by solid feeder to DS-C01.
+DS-C01,PMP-SI-C1,solid_load_feeder,Raw/Div C lower crop: DS-C01 continues by solid feeder to PMP-SI-C1.
+MCC-1C,CB-C02,solid_mcc_feeder,Raw/Div C upper crop: MCC-1C has a solid vertical feeder drop to CB-C02.
+CB-C02,FU-C02,solid_load_feeder,Raw/Div C lower crop: CB-C02 continues by solid feeder to FU-C02.
+FU-C02,PMP-CS-C2,solid_load_feeder,Raw/Div C lower crop: FU-C02 continues by solid feeder to PMP-CS-C2.
+MCC-1C,CB-C03,solid_mcc_feeder,Raw/Div C upper crop: MCC-1C has a solid vertical feeder drop to CB-C03.
+CB-C03,DS-C03,solid_load_feeder,Raw/Div C lower crop: CB-C03 continues by solid feeder to DS-C03.
+DS-C03,MOV-C03,solid_load_feeder,Raw/Div C lower crop: DS-C03 continues by solid feeder to MOV-C03.
+MCC-1C,CB-C04,solid_mcc_feeder,Raw/Div C upper crop: MCC-1C has a solid vertical feeder drop to CB-C04.
+CB-C04,FU-C04,solid_load_feeder,Raw/Div C lower crop: CB-C04 continues by solid feeder to FU-C04.
+FU-C04,MTR-C04,solid_load_feeder,Raw/Div C lower crop: FU-C04 continues by solid feeder to MTR-C04.
+MCC-1C,CB-C05,solid_mcc_feeder,Raw/Div C upper crop: MCC-1C has a solid vertical feeder drop to CB-C05.
+CB-C05,DS-C05,solid_load_feeder,Raw/Div C lower crop: CB-C05 continues by solid feeder to DS-C05.
+DS-C05,INST-C05,solid_load_feeder,Raw/Div C lower crop: DS-C05 continues by solid feeder to INST-C05.
+MCC-1C,CB-C06,solid_mcc_feeder,Raw/Div C upper crop: MCC-1C has a solid vertical feeder drop to CB-C06.
+CB-C06,FU-C06,solid_load_feeder,Raw/Div C lower crop: CB-C06 continues by solid feeder to FU-C06.
+FU-C06,PMP-SW-C6,solid_load_feeder,Raw/Div C lower crop: FU-C06 continues by solid feeder to PMP-SW-C6.
+MCC-1D,CB-D01,solid_mcc_feeder,Raw/Div D upper crop: MCC-1D has a solid vertical feeder drop to CB-D01.
+CB-D01,DS-D01,solid_load_feeder,Raw/Div D lower crop: CB-D01 continues by solid feeder to DS-D01.
+DS-D01,PMP-SI-D1,solid_load_feeder,Raw/Div D lower crop: DS-D01 continues by solid feeder to PMP-SI-D1.
+MCC-1D,CB-D02,solid_mcc_feeder,Raw/Div D upper crop: MCC-1D has a solid vertical feeder drop to CB-D02.
+CB-D02,FU-D02,solid_load_feeder,Raw/Div D lower crop: CB-D02 continues by solid feeder to FU-D02.
+FU-D02,PMP-CS-D2,solid_load_feeder,Raw/Div D lower crop: FU-D02 continues by solid feeder to PMP-CS-D2.
+MCC-1D,CB-D03,solid_mcc_feeder,Raw/Div D upper crop: MCC-1D has a solid vertical feeder drop to CB-D03.
+CB-D03,DS-D03,solid_load_feeder,Raw/Div D lower crop: CB-D03 continues by solid feeder to DS-D03.
+DS-D03,MOV-D03,solid_load_feeder,Raw/Div D lower crop: DS-D03 continues by solid feeder to MOV-D03.
+MCC-1D,CB-D04,solid_mcc_feeder,Raw/Div D upper crop: MCC-1D has a solid vertical feeder drop to CB-D04.
+CB-D04,FU-D04,solid_load_feeder,Raw/Div D lower crop: CB-D04 continues by solid feeder to FU-D04.
+FU-D04,MTR-D04,solid_load_feeder,Raw/Div D lower crop: FU-D04 continues by solid feeder to MTR-D04.
+MCC-1D,CB-D05,solid_mcc_feeder,Raw/Div D upper crop: MCC-1D has a solid vertical feeder drop to CB-D05.
+CB-D05,DS-D05,solid_load_feeder,Raw/Div D lower crop: CB-D05 continues by solid feeder to DS-D05.
+DS-D05,INST-D05,solid_load_feeder,Raw/Div D lower crop: DS-D05 continues by solid feeder to INST-D05.
+MCC-1D,CB-D06,solid_mcc_feeder,Raw/Div D upper crop: MCC-1D has a solid vertical feeder drop to CB-D06.
+CB-D06,FU-D06,solid_load_feeder,Raw/Div D lower crop: CB-D06 continues by solid feeder to FU-D06.
+FU-D06,PMP-SW-D6,solid_load_feeder,Raw/Div D lower crop: FU-D06 continues by solid feeder to PMP-SW-D6.

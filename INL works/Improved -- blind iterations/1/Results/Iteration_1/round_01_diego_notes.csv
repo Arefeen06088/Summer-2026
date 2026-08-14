@@ -1,0 +1,11 @@
+item,decision,evidence,uncertainty
+node_policy_physical_labels,included_all_90_component_visual_ocr_normalized_text_labels,component_visual_ocr_labels.csv has 90 rows; nodes preserve OCR row order before logical buses.,low
+node_policy_bus_bars,included_10_named_logical_bus_nodes,"raw/label crops show BUS-4KV-A/B/C, BUS-480-A/B/C, BUS-125DC-A/B, BUS-120AC-A/B as named bus bars.",low
+ground_node,not_included,No named or visually explicit ground component/symbol observed in raw schematic or inspection crops.,low
+wire_nodes,excluded_all_WN_and_junction_rows,"wire_nodes.csv/overlays used only as tap evidence; WN IDs, junction dots, bends, and grid markers are not output nodes.",low
+4kv_bus_ties,represented_A_B_and_B_C_ties_through_named_CB_and_DS_devices,top_sources_switchgear_raw.png shows BUS-4KV-A -> CB-TIE-AB -> DS-TIE-AB -> BUS-4KV-B and BUS-4KV-B -> CB-TIE-BC -> DS-TIE-BC -> BUS-4KV-C.,low
+480v_load_feeders,represented_each_load_branch_as_BUS_to_CB_to_MCC_to_relay_or_solenoid_to_load,"load_row_full_raw.png shows vertical solid conductor chains for A, B, and C load feeders.",low
+charger_ac_inputs,included_BUS-480-A_to_CHG-125A_and_BUS-480-B_to_CHG-125B,full_topology_raw.png shows far-right charger-board vertical taps from BUS-480-A/B descending to CHG-125A/B AC inputs with no named component label between.,medium
+dc_tie,included_BUS-125DC-A_to_BUS-125DC-B_as_normally_open_bus_tie_edge,"lower_full_raw.png shows a solid conductor between the bus ends labeled N.O. DC TIE, but no named physical component label.",medium
+rps_control_lines,kept_dashed_panel_to_uv_relay_edges_only,rps_a_detail_contact_sheet.png and rps_b_detail_contact_sheet.png show dashed control conductors directly from PNL-RPS-A/B to RELAY-UV-A/B.,low
+instrumentation_lines,kept_dotted_uv_relay_to_instr_pt_edges_without_fanning_out,inverters_rps_uv_contact_sheet.png and rps_pt_detail_contact_sheet.png show dotted conductors from RELAY-UV-A/B toward INSTR-PT-A/B; unlabeled PT circle collapsed to named endpoint.,medium

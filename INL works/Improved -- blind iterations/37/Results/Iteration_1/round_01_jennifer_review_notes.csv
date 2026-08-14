@@ -1,0 +1,17 @@
+item,action,reason
+node_set_55_nodes,confirmed,"Matrix uses 47 visible physical components plus only the true busbar nodes BUS-6KA, BUS-6KB, BUS-480A, BUS-480B, BUS-125DCA, BUS-125DCB, BUS-120A, and BUS-120B."
+port_wire_labels_Pxx_Cxx_Gxx,excluded_as_nodes,"Pxx, Cxx, and Gxx labels are visual conductor/tap labels, not standalone components or true BUS nodes; connectivity is collapsed to named endpoints."
+solid_power_edges,retained,Raw schematic supports Diego solid power/component-to-bus edges for visible conductor labels P01-P10 and P13-P50; no supported solid power edge was missing or overconnected.
+P11_P12_P18_P19,not_added,"These labels are not visible as supported conductor endpoints in the supplied raw schematic/resources, so no inferred edges were added for them."
+ATS-1A--RELAY-K12A,retained,Dashed C01 directly connects the right side of ATS-1A to the left side of RELAY-K12A; this is a supported control/interlock edge.
+ATS-1B--RELAY-K12B,retained,Dashed C04 directly connects RELAY-K12B to the left side of ATS-1B; this is a supported control/interlock edge.
+PAN-RPS-A--PLC-ESF,retained_medium_confidence,Dashed C03 forms a visible routed control path between PAN-RPS-A and PLC-ESF; retained as a logical/control edge rather than a port node.
+PLC-ESF--PAN-RPS-B,retained_medium_confidence,Dashed C06 forms a visible routed control path between PLC-ESF and PAN-RPS-B; retained as a logical/control edge rather than a port node.
+C02_vertical_route,uncertain_excluded_from_matrix,C02 is a vertical dashed cable-tray/control route near the DC section with no clean two-component endpoint pair in the raw schematic; documented as uncertain outside the matrix.
+C05_vertical_route,uncertain_excluded_from_matrix,C05 is a vertical dashed cable-tray/control route near BAT-125B/RELAY-K12B with no clean two-component endpoint pair; documented as uncertain outside the matrix.
+RELAY-K12A_to_C02_route,not_added,A nearby C02 dashed route is visually adjacent to RELAY-K12A but does not provide a direct named endpoint pair; no relay-to-route edge was added.
+RELAY-K12B_to_C05_spur,uncertain_excluded_from_matrix,"A dashed spur near RELAY-K12B approaches the C05 route, but the other endpoint is cable-tray-like rather than a distinct component terminal; excluded rather than guessed."
+INST-RACK-A_control,not_added,INST-RACK-A has a clear solid BUS-120A load tap via P43; the nearby dashed route passes around/under the rack without a clean rack terminal endpoint.
+INST-RACK-B_control,not_added,INST-RACK-B has a clear solid BUS-120B load tap via P50; no distinct dashed control endpoint into the rack is visible.
+section_and_cable_tray_lines,not_added,Long dashed routing/section lines labeled around the 125 VDC and 120 VAC RPS distribution area are not treated as graph edges without named component endpoints.
+diego_connectivity_delta,none,"Jennifer review found no supported edge additions, removals, or node-order changes relative to Diego Round 1."

@@ -1,0 +1,9 @@
+node_a,node_b,reason
+`CAL-301`,`P-301B`,"The calibration-column line tees into the metering suction manifold, but the clearest immediate named branch is P-301A; B-side reach was not accepted."
+`AFR-301`,`TCV-301 / PCV-302`,"Pneumatic service is plausible by loop grouping, but the visible routes are controller-to-valve signals rather than clear AFR terminations."
+`AFR-401`,`FCV-401 / AV-501`,"Pneumatic service is plausible locally, but visible endpoint evidence is insufficient under the strict AFR rule."
+`JB-301`,`DCS / PLC DATA BUS`,"A broader marshalling path exists through JB-402/CP-101/PLC-101, but no direct bus landing was accepted."
+`JB-501`,`DCS / PLC DATA BUS`,"Sample/analyzer signals plausibly reach DCS through marshalling, but the direct bus shortcut is not visible."
+`TK-301`,`LT-301`,"Tank level association is visually plausible; retained from Diego, though the linework is weaker than the solid tank piping."
+`RECIRC TO SURGE TANK`,"`6"" CCW RETURN HEADER`",The long recirc/return geometry crosses dense lower-left routing; retained as Diego modeled because the raw line remains visibly continuous enough.
+`SWBV-31A/B/32A/B`,`HX service-water paths`,The SWBV labels are visible but were not promoted to matrix nodes because the accepted node policy avoids extra non-inventory valve labels without clear component inventory support.

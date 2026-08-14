@@ -1,0 +1,56 @@
+Connectivity matrix validation summary - Document 3, Iteration 1
+
+Ground truth normalization:
+The GT file is an edge list, so it was normalized into an undirected set of component-to-component edges before validation. The extracted CSV files were adjacency matrices and were normalized into the same undirected edge-set format. Diego/Jennifer round matrix files and final_connectivity_matrix.csv were evaluated.
+
+GT after normalization: 60 undirected edges across 55 component names.
+
+Main reason the scores were not perfect:
+The non-perfect scores were caused by connectivity/edge discovery errors, not by component naming. All GT component names were present exactly in every evaluated matrix, and there were no extra non-GT component names. The score drop came from a mix of missing GT edges and a few incorrect extra edges between valid GT nodes.
+
+Incorrect extracted edges causing FP:
+- BUS-120AC-A -- RELAY-27A
+- BUS-120AC-B -- RELAY-27B
+- RELAY-86A -- RPS-PNL-A
+- RELAY-86B -- RPS-PNL-B
+
+Missing GT edges causing FN:
+- BUS-120AC-A -- TR-CPT-A
+- BUS-125DC-A -- RELAY-86A
+- BUS-125DC-B -- RELAY-86B
+- CB-103 -- RELAY-86A
+- CB-104 -- RELAY-86B
+- CB-201A -- RELAY-27A
+- CB-201B -- RELAY-27B
+- GND-STA -- TR-201A
+- RELAY-27A -- RPS-PNL-A
+- RELAY-27B -- RPS-PNL-B
+
+What was not responsible:
+- Component names were not wrong or close-but-imperfect; every GT component name appeared exactly.
+- No GT components were missing from the extracted matrices.
+- No extra intermediate/non-GT nodes were inserted into the extracted matrices.
+- No false negatives were recoverable as a two-hop path through an intermediate node.
+
+Examples causing the drop:
+- Diego Round 1 added incorrect direct edges such as RELAY-86A -- RPS-PNL-A and BUS-120AC-A -- RELAY-27A while missing the GT breaker/relay links CB-103 -- RELAY-86A and CB-201A -- RELAY-27A.
+- Jennifer Round 1, Diego Round 2, Jennifer Round 2, and the final connectivity matrix each had only one FP, BUS-120AC-B -- RELAY-27B, but missed a larger set of control/relay-related GT edges including CB-103 -- RELAY-86A, CB-104 -- RELAY-86B, RELAY-27A -- RPS-PNL-A, and RELAY-27B -- RPS-PNL-B.
+- GND-STA -- TR-201A was also missed in every evaluated matrix.
+
+Counterfactual performance:
+Because there were no extra nodes, removing non-GT component nodes would not change the score. The useful counterfactuals are: remove incorrect FP edges, add missing GT edges, or do both.
+- Diego -- Round 1: raw TP=55, FP=4, FN=5, Precision=0.932203, Recall=0.916667, F1=0.924370. If the FP edges were not put in extraction (BUS-120AC-A -- RELAY-27A, BUS-120AC-B -- RELAY-27B, RELAY-86A -- RPS-PNL-A, RELAY-86B -- RPS-PNL-B), performance would become TP=55, FP=0, FN=5, Precision=1.000000, Recall=0.916667, F1=0.956522. If the missed GT edges were added (CB-103 -- RELAY-86A, CB-104 -- RELAY-86B, CB-201A -- RELAY-27A, CB-201B -- RELAY-27B, GND-STA -- TR-201A), performance would become TP=60, FP=4, FN=0, Precision=0.937500, Recall=1.000000, F1=0.967742. If both were fixed, performance would become TP=60, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+- Jennifer -- Round 1: raw TP=50, FP=1, FN=10, Precision=0.980392, Recall=0.833333, F1=0.900901. If the FP edges were not put in extraction (BUS-120AC-B -- RELAY-27B), performance would become TP=50, FP=0, FN=10, Precision=1.000000, Recall=0.833333, F1=0.909091. If the missed GT edges were added (BUS-120AC-A -- TR-CPT-A, BUS-125DC-A -- RELAY-86A, BUS-125DC-B -- RELAY-86B, CB-103 -- RELAY-86A, CB-104 -- RELAY-86B, CB-201A -- RELAY-27A, CB-201B -- RELAY-27B, GND-STA -- TR-201A, RELAY-27A -- RPS-PNL-A, RELAY-27B -- RPS-PNL-B), performance would become TP=60, FP=1, FN=0, Precision=0.983607, Recall=1.000000, F1=0.991736. If both were fixed, performance would become TP=60, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+- Diego -- Round 2: raw TP=50, FP=1, FN=10, Precision=0.980392, Recall=0.833333, F1=0.900901. If the FP edges were not put in extraction (BUS-120AC-B -- RELAY-27B), performance would become TP=50, FP=0, FN=10, Precision=1.000000, Recall=0.833333, F1=0.909091. If the missed GT edges were added (BUS-120AC-A -- TR-CPT-A, BUS-125DC-A -- RELAY-86A, BUS-125DC-B -- RELAY-86B, CB-103 -- RELAY-86A, CB-104 -- RELAY-86B, CB-201A -- RELAY-27A, CB-201B -- RELAY-27B, GND-STA -- TR-201A, RELAY-27A -- RPS-PNL-A, RELAY-27B -- RPS-PNL-B), performance would become TP=60, FP=1, FN=0, Precision=0.983607, Recall=1.000000, F1=0.991736. If both were fixed, performance would become TP=60, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+- Jennifer -- Round 2: raw TP=50, FP=1, FN=10, Precision=0.980392, Recall=0.833333, F1=0.900901. If the FP edges were not put in extraction (BUS-120AC-B -- RELAY-27B), performance would become TP=50, FP=0, FN=10, Precision=1.000000, Recall=0.833333, F1=0.909091. If the missed GT edges were added (BUS-120AC-A -- TR-CPT-A, BUS-125DC-A -- RELAY-86A, BUS-125DC-B -- RELAY-86B, CB-103 -- RELAY-86A, CB-104 -- RELAY-86B, CB-201A -- RELAY-27A, CB-201B -- RELAY-27B, GND-STA -- TR-201A, RELAY-27A -- RPS-PNL-A, RELAY-27B -- RPS-PNL-B), performance would become TP=60, FP=1, FN=0, Precision=0.983607, Recall=1.000000, F1=0.991736. If both were fixed, performance would become TP=60, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+- Final connectivity -- Final: raw TP=50, FP=1, FN=10, Precision=0.980392, Recall=0.833333, F1=0.900901. If the FP edges were not put in extraction (BUS-120AC-B -- RELAY-27B), performance would become TP=50, FP=0, FN=10, Precision=1.000000, Recall=0.833333, F1=0.909091. If the missed GT edges were added (BUS-120AC-A -- TR-CPT-A, BUS-125DC-A -- RELAY-86A, BUS-125DC-B -- RELAY-86B, CB-103 -- RELAY-86A, CB-104 -- RELAY-86B, CB-201A -- RELAY-27A, CB-201B -- RELAY-27B, GND-STA -- TR-201A, RELAY-27A -- RPS-PNL-A, RELAY-27B -- RPS-PNL-B), performance would become TP=60, FP=1, FN=0, Precision=0.983607, Recall=1.000000, F1=0.991736. If both were fixed, performance would become TP=60, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+
+Round-specific notes:
+- Diego -- Round 1: extra nodes=0, missing component names=0, FP edges=4, FN edges=5.
+- Jennifer -- Round 1: extra nodes=0, missing component names=0, FP edges=1, FN edges=10.
+- Diego -- Round 2: extra nodes=0, missing component names=0, FP edges=1, FN edges=10.
+- Jennifer -- Round 2: extra nodes=0, missing component names=0, FP edges=1, FN edges=10.
+- Final connectivity -- Final: extra nodes=0, missing component names=0, FP edges=1, FN edges=10.
+
+Conclusion:
+Document 3 / Iteration 1 is primarily limited by edge discovery in the relay/control portion of the schematic. Naming was clean and component coverage was complete. The final connectivity matrix matches the later round pattern: high precision with one incorrect relay edge and ten missed GT edges. From this analysis onward, final_connectivity_matrix.csv should be included alongside the Diego/Jennifer round matrices.

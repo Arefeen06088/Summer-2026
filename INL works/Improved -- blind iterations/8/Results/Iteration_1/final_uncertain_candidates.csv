@@ -1,0 +1,9 @@
+candidate,decision,reason
+CB-303,excluded,Overlay/OCR artifact in feeder-tie area; no visually supported breaker box.
+2E-100,excluded,"Cable/source-run label, not a component/bus/ground node."
+DS-480-A -- BUS-480-N2A,excluded,Tie line crosses N2A feeder without a visible junction dot.
+DS-480-B -- BUS-480-N2B,excluded,Tie line crosses N2B feeder without a visible junction dot.
+MCC-2C -- PUMP-CHG-2A,excluded,PUMP-CHG-2A is visually better supported from PN-480-A.
+CB-N1 -- CHGR-125A,excluded,Charger AC feed is separate from the CB-N1-to-MCC-2C branch.
+CB-N2 -- CHGR-125B,excluded,Charger AC feed is separate from the CB-N2-to-MCC-2D branch.
+direct equipment grounds beyond GND-A/B bus ties,excluded,Only the two bus-ground links are visually supported.

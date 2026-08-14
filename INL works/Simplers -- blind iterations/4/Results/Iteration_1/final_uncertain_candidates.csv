@@ -1,0 +1,11 @@
+candidate,candidate_type,status,evidence
+CONTROL-ROOM-ANNUNCIATION,node,excluded,Printed along a broad dashed corridor; reviewed as a corridor label rather than a standalone connectivity node.
+"LC-A, LC-B",node,excluded,Labels mark local load-center/endpoint tap positions at BUS-480-A/B and are represented by direct component-to-bus edges.
+"DIVISION-I-TRAIN-A-SAFETY-POWER, DIVISION-II-TRAIN-B-SAFETY-POWER",node,excluded,"Dashed-region banners describe train boundaries, not electrical connectivity nodes."
+"NORMAL-OFFSITE-FEED-A, NORMAL-OFFSITE-FEED-B, N.O.-TIE",node,excluded,Feed/tie annotations describe nearby power paths; the matrix represents the actual named devices and buses.
+BUS-480-A -- INV-120A,edge,excluded_uncertain,"LC-A side-tap geometry clearly supports the charger feed, but no unambiguous direct inverter-to-480-bus landing is visible."
+BUS-480-B -- INV-120B,edge,excluded_uncertain,"LC-B side-tap geometry clearly supports the charger feed, but no unambiguous direct inverter-to-480-bus landing is visible."
+"RPS-A -- MOV-881A, RPS-A -- MOV-742A",edge,excluded,Direct RPS-to-MOV control interpretation would duplicate the visually supported JB-A101-mediated control paths.
+"RPS-B -- MOV-881B, RPS-B -- MOV-742B",edge,excluded,Direct RPS-to-MOV control interpretation would duplicate the visually supported JB-B101-mediated control paths.
+REC-SOE01 -- JB-B101,edge,excluded,Connection appears to be a broad lower corridor continuation rather than a supported direct edge between named devices.
+"Terminal schedule rows, reference drawing rows, anonymous wire topology points",node,excluded,"These are tabular annotations or detected topology endpoints, not named schematic components/buses."

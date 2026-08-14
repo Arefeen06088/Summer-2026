@@ -1,0 +1,57 @@
+source,target,evidence
+OFFSITE-230KV-A,DS-230A,solid vertical power conductor from OFFSITE-230KV-A block into DS-230A
+DS-230A,TR-1A,solid vertical power conductor from DS-230A into TR-1A
+TR-1A,CB-1A,solid vertical power conductor from TR-1A into CB-1A
+CB-1A,BUS-4160-A-DIV-I,solid vertical drop from CB-1A to dot on A 4160 bus
+EDG-1A,CB-DG-A,solid vertical conductor from EDG-1A to CB-DG-A
+CB-DG-A,BUS-4160-A-DIV-I,solid vertical drop from CB-DG-A to dot on A 4160 bus
+BUS-4160-A-DIV-I,CB-TIE-AB,solid horizontal A bus segment enters left side of CB-TIE-AB
+CB-TIE-AB,BUS-4160-B-DIV-II,solid horizontal segment exits CB-TIE-AB to B 4160 bus
+OFFSITE-230KV-B,DS-230B,solid vertical power conductor from OFFSITE-230KV-B block into DS-230B
+DS-230B,TR-1B,solid vertical power conductor from DS-230B into TR-1B
+TR-1B,CB-1B,solid vertical power conductor from TR-1B into CB-1B
+CB-1B,BUS-4160-B-DIV-II,solid vertical drop from CB-1B to dot on B 4160 bus
+EDG-1B,CB-DG-B,solid vertical conductor from EDG-1B to CB-DG-B
+CB-DG-B,BUS-4160-B-DIV-II,solid vertical drop from CB-DG-B to dot on B 4160 bus
+BUS-4160-A-DIV-I,RELAY-UV-A,dashed/sensing tap drops from A 4160 bus dot to RELAY-UV-A
+BUS-4160-B-DIV-II,RELAY-UV-B,dashed/sensing tap drops from B 4160 bus dot to RELAY-UV-B
+BUS-4160-A-DIV-I,TR-480-A,solid vertical feeder from A 4160 bus dot to TR-480-A
+TR-480-A,CB-480-A,solid vertical power conductor from TR-480-A to CB-480-A
+CB-480-A,BUS-480-A,solid vertical power conductor from CB-480-A to dot on BUS-480-A
+BUS-4160-B-DIV-II,TR-480-B,solid vertical feeder from B 4160 bus dot to TR-480-B
+TR-480-B,CB-480-B,solid vertical power conductor from TR-480-B to CB-480-B
+CB-480-B,BUS-480-B,solid vertical power conductor from CB-480-B to dot on BUS-480-B
+BUS-480-A,GND-PLANT,solid vertical ground-reference connection from right end of BUS-480-A to GND-PLANT symbol
+BUS-480-A,MCC-A1,solid vertical feeder from BUS-480-A down into MCC-A1
+BUS-480-A,MCC-A2,solid vertical feeder from BUS-480-A down into MCC-A2
+BUS-480-B,MCC-B1,solid vertical feeder from BUS-480-B down into MCC-B1
+BUS-480-B,MCC-B2,solid vertical feeder from BUS-480-B down into MCC-B2
+MCC-A1,PUMP-RHR-A,solid routed feeder from MCC-A1 bottom to PUMP-RHR-A terminal
+MCC-A1,PUMP-CS-A,solid vertical feeder from MCC-A1 to PUMP-CS-A terminal
+MCC-A2,PUMP-CCW-A,solid routed feeder from MCC-A2 to PUMP-CCW-A terminal
+MCC-A2,MOV-881A,solid vertical/routed feeder from MCC-A2 to MOV-881A top terminal
+MCC-A2,MOV-742A,solid routed feeder from MCC-A2 to MOV-742A top terminal
+MCC-B1,PUMP-RHR-B,solid routed feeder from MCC-B1 to PUMP-RHR-B terminal
+MCC-B1,PUMP-CS-B,solid vertical feeder from MCC-B1 to PUMP-CS-B terminal
+MCC-B2,PUMP-CCW-B,solid routed feeder from MCC-B2 to PUMP-CCW-B terminal
+MCC-B2,MOV-881B,solid vertical/routed feeder from MCC-B2 to MOV-881B top terminal
+MCC-B2,MOV-742B,solid vertical/routed feeder from MCC-B2 to MOV-742B top terminal
+BUS-480-A,CHG-125A,solid conductor leaves CHG-125A top/right terminal and bends to the LC-A end of BUS-480-A
+CHG-125A,BAT-125A,visible vertical stack conductor from CHG-125A down to BAT-125A terminal
+BAT-125A,INV-120A,visible vertical stack conductor from BAT-125A down to INV-120A terminal
+INV-120A,PANEL-120A,visible vertical stack conductor from INV-120A down to PANEL-120A terminal
+PANEL-120A,RPS-A,visible vertical stack conductor from PANEL-120A down to RPS-A terminal
+BUS-480-B,CHG-125B,solid conductor leaves CHG-125B top/left terminal and bends to the LC-B end of BUS-480-B
+CHG-125B,BAT-125B,visible vertical stack conductor from CHG-125B down to BAT-125B terminal
+BAT-125B,INV-120B,visible vertical stack conductor from BAT-125B down to INV-120B terminal
+INV-120B,PANEL-120B,visible vertical stack conductor from INV-120B down to PANEL-120B terminal
+PANEL-120B,RPS-B,visible vertical stack conductor from PANEL-120B down to RPS-B terminal
+RPS-A,RELAY-KA1,short dashed control/interlock conductor leaves RPS-A and enters RELAY-KA1 area
+RPS-B,RELAY-KB1,short dashed vertical control/interlock conductor from RPS-B down to RELAY-KB1
+MOV-881A,JB-A101,short dashed control conductor drops from MOV-881A to a top terminal on JB-A101
+MOV-742A,JB-A101,short dashed control conductor drops from MOV-742A to a top terminal on JB-A101
+MOV-881B,JB-B101,short dashed control conductor drops from MOV-881B to a top terminal on JB-B101
+MOV-742B,JB-B101,short dashed control conductor drops from MOV-742B to a top terminal on JB-B101
+RPS-A,JB-A101,magnified raw left control area shows a continuous dashed control conductor from the RPS-A lower terminal down and right into the JB-A101 left terminal; raw terminal schedule A101 also names RPS-A as the source
+RPS-B,JB-B101,magnified raw right control area shows a continuous dashed control conductor from the RPS-B right terminal down the right-side route and left into the JB-B101 right terminal; raw terminal schedule B101 also names RPS-B as the source
+ANN-CR01,REC-SOE01,short dashed horizontal segment directly connects ANN-CR01 right side to REC-SOE01 left side

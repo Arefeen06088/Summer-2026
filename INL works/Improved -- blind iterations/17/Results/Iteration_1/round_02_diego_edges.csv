@@ -1,0 +1,202 @@
+source,target,confidence,evidence,region,action_vs_jennifer
+GEN-001,UAT-1A,0.92,Raw top-source crop shows a solid generator conductor with a visible tap down to the UAT-1A high-side terminal.,top_4160_sources_tie,accepted_no_change
+GEN-001,UAT-1B,0.92,Raw top-source crop shows the same solid generator conductor continuing right with a visible tap down to UAT-1B; crossing-only lines are not used as junctions.,top_4160_sources_tie,accepted_no_change
+DG-1A,CB-DG-1A,0.96,Vertical solid feeder between source/transformer/generator symbol and its labeled breaker.,top_4160_sources_tie,accepted_no_change
+DG-1B,CB-DG-1B,0.96,Vertical solid feeder between source/transformer/generator symbol and its labeled breaker.,top_4160_sources_tie,accepted_no_change
+SAT-1A,CB-SAT-1A,0.96,Vertical solid feeder between source/transformer/generator symbol and its labeled breaker.,top_4160_sources_tie,accepted_no_change
+UAT-1A,CB-UAT-1A,0.96,Vertical solid feeder between source/transformer/generator symbol and its labeled breaker.,top_4160_sources_tie,accepted_no_change
+UAT-1B,CB-UAT-1B,0.96,Vertical solid feeder between source/transformer/generator symbol and its labeled breaker.,top_4160_sources_tie,accepted_no_change
+SAT-1B,CB-SAT-1B,0.96,Vertical solid feeder between source/transformer/generator symbol and its labeled breaker.,top_4160_sources_tie,accepted_no_change
+CB-SAT-1A,BUS-4160-A,0.96,Breaker lower terminal lands directly on the named 4.16 kV bus rail.,top_4160_sources_tie,accepted_no_change
+CB-UAT-1A,BUS-4160-A,0.96,Breaker lower terminal lands directly on the named 4.16 kV bus rail.,top_4160_sources_tie,accepted_no_change
+CB-DG-1A,BUS-4160-A,0.96,Breaker lower terminal lands directly on the named 4.16 kV bus rail.,top_4160_sources_tie,accepted_no_change
+CB-UAT-1B,BUS-4160-B,0.96,Breaker lower terminal lands directly on the named 4.16 kV bus rail.,top_4160_sources_tie,accepted_no_change
+CB-DG-1B,BUS-4160-B,0.96,Breaker lower terminal lands directly on the named 4.16 kV bus rail.,top_4160_sources_tie,accepted_no_change
+CB-SAT-1B,BUS-4160-B,0.96,Breaker lower terminal lands directly on the named 4.16 kV bus rail.,top_4160_sources_tie,accepted_no_change
+BUS-4160-A,CB-TIE-4AB,0.96,Tie breaker is drawn in-line between the two named 4.16 kV bus rails.,top_4160_sources_tie,accepted_no_change
+BUS-4160-A,PT-4160-A,0.88,PT-4160-A has a vertical tap from the Train A 4.16 kV bus.,top_4160_sources_tie,accepted_no_change
+BUS-4160-A,CB-TR-A1,0.95,4.16 kV bus drop feeds the transformer feeder breaker.,top_to_480_transformers,accepted_no_change
+BUS-4160-A,CB-TR-A2,0.95,4.16 kV bus drop feeds the transformer feeder breaker.,top_to_480_transformers,accepted_no_change
+CB-TIE-4AB,BUS-4160-B,0.96,Tie breaker is drawn in-line between the two named 4.16 kV bus rails.,top_4160_sources_tie,accepted_no_change
+BUS-4160-B,PT-4160-B,0.88,PT-4160-B has a vertical tap from the Train B 4.16 kV bus.,top_4160_sources_tie,accepted_no_change
+BUS-4160-B,CB-TR-B2,0.95,4.16 kV bus drop feeds the transformer feeder breaker.,top_to_480_transformers,accepted_no_change
+BUS-4160-B,CB-TR-B1,0.95,4.16 kV bus drop feeds the transformer feeder breaker.,top_to_480_transformers,accepted_no_change
+CB-TR-B2,TR-LC-B2,0.96,Vertical solid connection from feeder breaker to load-center transformer.,top_to_480_transformers,accepted_no_change
+CB-TR-A1,TR-LC-A1,0.96,Vertical solid connection from feeder breaker to load-center transformer.,top_to_480_transformers,accepted_no_change
+CB-TR-B1,TR-LC-B1,0.96,Vertical solid connection from feeder breaker to load-center transformer.,top_to_480_transformers,accepted_no_change
+CB-TR-A2,TR-LC-A2,0.96,Vertical solid connection from feeder breaker to load-center transformer.,top_to_480_transformers,accepted_no_change
+TR-LC-A1,CB-480-A1,0.96,Transformer secondary continues vertically to the 480 V breaker.,top_to_480_transformers,accepted_no_change
+TR-LC-A2,CB-480-A2,0.96,Transformer secondary continues vertically to the 480 V breaker.,top_to_480_transformers,accepted_no_change
+TR-LC-B1,CB-480-B1,0.96,Transformer secondary continues vertically to the 480 V breaker.,top_to_480_transformers,accepted_no_change
+TR-LC-B2,CB-480-B2,0.96,Transformer secondary continues vertically to the 480 V breaker.,top_to_480_transformers,accepted_no_change
+CB-480-A1,BUS-480-A,0.96,480 V breaker terminal lands directly on the named 480 V load-center bus rail.,middle_480_loads,accepted_no_change
+CB-480-A2,BUS-480-A,0.96,480 V breaker terminal lands directly on the named 480 V load-center bus rail.,middle_480_loads,accepted_no_change
+CB-480-B1,BUS-480-B,0.96,480 V breaker terminal lands directly on the named 480 V load-center bus rail.,middle_480_loads,accepted_no_change
+CB-480-B2,BUS-480-B,0.96,480 V breaker terminal lands directly on the named 480 V load-center bus rail.,middle_480_loads,accepted_no_change
+BUS-480-A,AM-480-A,0.74,Raw 480 V crop shows the AM-480-A dashed/instrument tap landing on BUS-480-A; kept as a named meter tap with reduced confidence.,middle_480_loads,accepted_no_change
+BUS-480-A,VM-480-A,0.74,Raw 480 V crop shows the VM-480-A dashed/instrument tap landing on BUS-480-A; kept as a named meter tap with reduced confidence.,middle_480_loads,accepted_no_change
+BUS-480-B,AM-480-B,0.74,Raw 480 V meter focus crop shows the AM-480-B dashed/instrument tap landing on BUS-480-B; kept as a named meter tap with reduced confidence.,middle_480_loads,accepted_no_change
+BUS-480-B,VM-480-B,0.74,Raw 480 V meter focus crop shows the VM-480-B dashed/instrument tap landing on BUS-480-B; kept as a named meter tap with reduced confidence.,middle_480_loads,accepted_no_change
+BUS-480-A,CT-480-A1,0.80,Raw CT component crop reads CT-480-A1 and shows its short vertical tap landing on BUS-480-A.,middle_480_loads,accepted_no_change
+BUS-480-B,CT-480-B1,0.80,Raw CT component crop reads CT-480-B1 and shows its short vertical tap landing on BUS-480-B.,middle_480_loads,accepted_no_change
+BUS-480-A,GND-SMGR-A,0.88,Raw 480 V crop shows a right-angled solid ground branch from BUS-480-A to GND-SMGR-A.,middle_480_loads,accepted_no_change
+BUS-480-B,GND-SMGR-B,0.88,Raw 480 V crop shows a right-angled solid ground branch from BUS-480-B to GND-SMGR-B.,middle_480_loads,accepted_no_change
+BUS-480-A,CB-TIE-480AB,0.96,480 V tie breaker is drawn in-line between the Train A and Train B load-center buses.,middle_480_loads,accepted_no_change
+CB-TIE-480AB,BUS-480-B,0.96,480 V tie breaker is drawn in-line between the Train A and Train B load-center buses.,middle_480_loads,accepted_no_change
+BUS-480-A,CB-101A,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_A,accepted_no_change
+BUS-480-A,CB-102A,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_A,accepted_no_change
+BUS-480-A,CB-103A,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_A,accepted_no_change
+BUS-480-A,CB-104A,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_A,accepted_no_change
+BUS-480-A,CB-105A,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_A,accepted_no_change
+BUS-480-A,CB-106A,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_A,accepted_no_change
+BUS-480-A,CB-107A,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_A,accepted_no_change
+BUS-480-A,CB-108A,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_A,accepted_no_change
+BUS-480-A,CB-109A,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_A,accepted_no_change
+BUS-480-A,CB-110A,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_A,accepted_no_change
+BUS-480-A,CB-111A,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_A,accepted_no_change
+BUS-480-A,CB-112A,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_A,accepted_no_change
+BUS-480-A,CB-DC-A,0.62,"Kept as the visually indicated Train A 480 V feed routed by side channel into CB-DC-A; part of the route is off-crop/long-routed, so confidence remains low-medium.",bottom_dc_ac_control_A,accepted_no_change
+BUS-480-B,CB-201B,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_B,accepted_no_change
+BUS-480-B,CB-202B,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_B,accepted_no_change
+BUS-480-B,CB-203B,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_B,accepted_no_change
+BUS-480-B,CB-204B,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_B,accepted_no_change
+BUS-480-B,CB-205B,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_B,accepted_no_change
+BUS-480-B,CB-206B,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_B,accepted_no_change
+BUS-480-B,CB-207B,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_B,accepted_no_change
+BUS-480-B,CB-208B,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_B,accepted_no_change
+BUS-480-B,CB-209B,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_B,accepted_no_change
+BUS-480-B,CB-210B,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_B,accepted_no_change
+BUS-480-B,CB-211B,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_B,accepted_no_change
+BUS-480-B,CB-212B,0.96,Named 480 V bus rail has a direct vertical tap to the branch breaker.,middle_480_loads_B,accepted_no_change
+BUS-480-B,CB-DC-B,0.62,"Kept as the visually indicated Train B 480 V feed routed by side channel into CB-DC-B; part of the route is off-crop/long-routed, so confidence remains low-medium.",bottom_dc_ac_control_B,accepted_no_change
+CB-101A,DS-101A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+CB-102A,FU-102A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+CB-103A,DS-103A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+CB-104A,FU-104A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+CB-105A,DS-105A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+CB-106A,FU-106A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+CB-107A,DS-107A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+CB-108A,FU-108A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+CB-109A,DS-109A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+CB-110A,FU-110A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+CB-111A,DS-111A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+CB-112A,FU-112A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+CB-201B,DS-201B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+CB-202B,FU-202B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+CB-203B,DS-203B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+CB-204B,FU-204B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+CB-205B,DS-205B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+CB-206B,FU-206B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+CB-207B,DS-207B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+CB-208B,FU-208B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+CB-209B,DS-209B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+CB-210B,FU-210B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+CB-211B,DS-211B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+CB-212B,FU-212B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+DS-101A,MS-101A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+FU-102A,MS-102A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+DS-103A,MS-103A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+FU-104A,MS-104A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+DS-105A,MS-105A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+FU-106A,RELAY-K106A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+DS-107A,RELAY-K107A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+FU-108A,MS-108A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+DS-109A,MS-109A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+FU-110A,MS-110A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+DS-111A,MS-111A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+FU-112A,RELAY-K112A,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_A,accepted_no_change
+DS-201B,MS-201B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+FU-202B,MS-202B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+DS-203B,MS-203B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+FU-204B,MS-204B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+DS-205B,MS-205B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+FU-206B,RELAY-K206B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+DS-207B,RELAY-K207B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+FU-208B,MS-208B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+DS-209B,MS-209B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+FU-210B,MS-210B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+DS-211B,MS-211B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+FU-212B,RELAY-K212B,0.94,Series branch protection/control symbols are vertically connected by solid feeder wiring.,middle_480_loads_B,accepted_no_change
+MS-101A,PUMP-SLC-1A,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_A,accepted_no_change
+MS-102A,PUMP-CCW-1A,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_A,accepted_no_change
+MS-103A,PUMP-RHR-1A,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_A,accepted_no_change
+MS-104A,PUMP-CS-1A,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_A,accepted_no_change
+MS-105A,FAN-CDR1-1A,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_A,accepted_no_change
+MS-108A,HTR-PZR-1A,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_A,accepted_no_change
+MS-109A,PUMP-SW-1A,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_A,accepted_no_change
+MS-110A,MTR-AHU-1A,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_A,accepted_no_change
+MS-111A,CMP-AIR-1A,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_A,accepted_no_change
+MS-201B,PUMP-SLC-1B,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_B,accepted_no_change
+MS-202B,PUMP-CCW-1B,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_B,accepted_no_change
+MS-203B,PUMP-RHR-1B,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_B,accepted_no_change
+MS-204B,PUMP-CS-1B,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_B,accepted_no_change
+MS-205B,FAN-CDR1-1B,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_B,accepted_no_change
+MS-208B,HTR-PZR-1B,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_B,accepted_no_change
+MS-209B,PUMP-SW-1B,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_B,accepted_no_change
+MS-210B,MTR-AHU-1B,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_B,accepted_no_change
+MS-211B,CMP-AIR-1B,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_B,accepted_no_change
+RELAY-K106A,MOV-RHCU-101A,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_A,accepted_no_change
+RELAY-K107A,MOV-RHR-102A,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_A,accepted_no_change
+RELAY-K112A,INST-RAD-1A,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_A,accepted_no_change
+RELAY-K206B,MOV-RHCU-101B,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_B,accepted_no_change
+RELAY-K207B,MOV-RHR-102B,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_B,accepted_no_change
+RELAY-K212B,INST-RAD-1B,0.92,Vertical branch conductor continues from upstream device into the labeled load/control component.,middle_480_loads_B,accepted_no_change
+PUMP-SLC-1A,TB-SLC-1A,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_A,accepted_no_change
+PUMP-CCW-1A,GND-CCW-1A,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_A,accepted_no_change
+PUMP-RHR-1A,LS-RHR-1A,0.86,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_A,accepted_no_change
+PUMP-CS-1A,TB-CS-1A,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_A,accepted_no_change
+FAN-CDR1-1A,GND-FAN-1A,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_A,accepted_no_change
+PUMP-SW-1A,GND-SW-1A,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_A,accepted_no_change
+MTR-AHU-1A,GND-AHU-1A,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_A,accepted_no_change
+CMP-AIR-1A,TB-AIR-1A,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_A,accepted_no_change
+PUMP-SLC-1B,TB-SLC-1B,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_B,accepted_no_change
+PUMP-CCW-1B,GND-CCW-1B,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_B,accepted_no_change
+PUMP-RHR-1B,LS-RHR-1B,0.86,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_B,accepted_no_change
+PUMP-CS-1B,TB-CS-1B,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_B,accepted_no_change
+FAN-CDR1-1B,GND-FAN-1B,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_B,accepted_no_change
+PUMP-SW-1B,GND-SW-1B,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_B,accepted_no_change
+MTR-AHU-1B,GND-AHU-1B,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_B,accepted_no_change
+CMP-AIR-1B,TB-AIR-1B,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_B,accepted_no_change
+MOV-RHCU-101A,LS-RHCU-101A,0.86,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_A,accepted_no_change
+MOV-RHR-102A,LS-RHR-102A,0.86,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_A,accepted_no_change
+HTR-PZR-1A,TB-HTR-1A,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_A,accepted_no_change
+MOV-RHCU-101B,LS-RHCU-101B,0.86,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_B,accepted_no_change
+MOV-RHR-102B,LS-RHR-102B,0.86,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_B,accepted_no_change
+HTR-PZR-1B,TB-HTR-1B,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_B,accepted_no_change
+INST-RAD-1A,JB-RAD-1A,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_A,accepted_no_change
+INST-RAD-1B,JB-RAD-1B,0.90,"Load output continues to the shown field terminal, ground, level switch, or junction box.",middle_480_loads_B,accepted_no_change
+CB-DC-A,CHGR-125-A,0.95,CB-DC feeds the adjacent 125 V battery charger through solid wiring.,bottom_dc_ac_control_A,accepted_no_change
+CB-DC-B,CHGR-125-B,0.95,CB-DC feeds the adjacent 125 V battery charger through solid wiring.,bottom_dc_ac_control_B,accepted_no_change
+CHGR-125-A,BAT-125-A,0.95,Battery charger DC output is drawn directly to the battery symbol.,bottom_dc_ac_control_A,accepted_no_change
+BAT-125-A,BUS-125DC-A,0.95,Battery terminal drops directly to the named 125 VDC bus rail.,bottom_dc_ac_control_A,accepted_no_change
+CHGR-125-B,BAT-125-B,0.95,Battery charger DC output is drawn directly to the battery symbol.,bottom_dc_ac_control_B,accepted_no_change
+BAT-125-B,BUS-125DC-B,0.95,Battery terminal drops directly to the named 125 VDC bus rail.,bottom_dc_ac_control_B,accepted_no_change
+BUS-125DC-A,CB-DCTIE-AB,0.96,DC tie breaker is drawn in-line between the Train A and Train B 125 VDC buses.,bottom_dc_ac_control_tie,accepted_no_change
+BUS-125DC-A,GND-DC-A,0.88,Ground symbol is tied to the 125 VDC bus by a short branch.,bottom_dc_ac_control_A,accepted_no_change
+BUS-125DC-A,INV-120-A,0.95,125 VDC bus has a vertical feed into the inverter DC side.,bottom_dc_ac_control_A,accepted_no_change
+CB-DCTIE-AB,BUS-125DC-B,0.96,DC tie breaker is drawn in-line between the Train A and Train B 125 VDC buses.,bottom_dc_ac_control_tie,accepted_no_change
+BUS-125DC-B,GND-DC-B,0.88,Ground symbol is tied to the 125 VDC bus by a short branch.,bottom_dc_ac_control_B,accepted_no_change
+BUS-125DC-B,INV-120-B,0.95,125 VDC bus has a vertical feed into the inverter DC side.,bottom_dc_ac_control_B,accepted_no_change
+INV-120-A,BUS-120AC-A,0.95,Inverter AC side feeds the named 120 VAC bus rail below it.,bottom_dc_ac_control_A,accepted_no_change
+INV-120-B,BUS-120AC-B,0.95,Inverter AC side feeds the named 120 VAC bus rail below it.,bottom_dc_ac_control_B,accepted_no_change
+BUS-120AC-A,STS-120-A,0.92,120 VAC inverter bus has a vertical tap to the STS symbol.,bottom_dc_ac_control_A,accepted_no_change
+STS-120-A,PNL-RPS-A,0.76,Raw lower control crop shows the dashed STS-120-A output dropping to the top of PNL-RPS-A; kept as a dashed control/feed edge.,bottom_dc_ac_control_A,accepted_no_change
+BUS-120AC-B,STS-120-B,0.92,120 VAC inverter bus has a vertical tap to the STS symbol.,bottom_dc_ac_control_B,accepted_no_change
+STS-120-B,PNL-RPS-B,0.76,Raw lower control crop shows the dashed STS-120-B output dropping to the top of PNL-RPS-B; kept as a dashed control/feed edge.,bottom_dc_ac_control_B,accepted_no_change
+PNL-RPS-A,TB-RPS-A,0.84,Raw Train A relay zoom shows dashed wiring from PNL-RPS-A to TB-RPS-A.,bottom_control_panels_A,accepted_no_change
+PNL-RPS-A,RELAY-UV-A1,0.82,Raw Train A relay zoom shows a dashed run from PNL-RPS-A to RELAY-UV-A1.,bottom_control_panels_A,accepted_no_change
+PNL-RPS-A,RELAY-UV-A2,0.82,Raw Train A relay zoom shows a dashed run from PNL-RPS-A to RELAY-UV-A2.,bottom_control_panels_A,accepted_no_change
+PNL-ESF-A,TB-ESF-A,0.84,Raw Train A relay zoom shows dashed wiring from PNL-ESF-A to TB-ESF-A.,bottom_control_panels_A,accepted_no_change
+PNL-ESF-A,RELAY-RPS-A,0.82,Raw Train A relay zoom shows a dashed run from PNL-ESF-A to RELAY-RPS-A.,bottom_control_panels_A,accepted_no_change
+PNL-ESF-A,RELAY-ESF-A,0.82,Raw Train A relay zoom shows a dashed run from PNL-ESF-A to RELAY-ESF-A.,bottom_control_panels_A,accepted_no_change
+PNL-RPS-B,TB-RPS-B,0.84,Raw Train B relay zoom shows dashed wiring from PNL-RPS-B to TB-RPS-B.,bottom_control_panels_B,accepted_no_change
+PNL-RPS-B,RELAY-UV-B1,0.82,Raw Train B relay zoom shows a dashed run from PNL-RPS-B to RELAY-UV-B1.,bottom_control_panels_B,accepted_no_change
+PNL-RPS-B,RELAY-UV-B2,0.82,Raw Train B relay zoom shows a dashed run from PNL-RPS-B to RELAY-UV-B2.,bottom_control_panels_B,accepted_no_change
+PNL-ESF-B,TB-ESF-B,0.84,Raw Train B relay zoom shows dashed wiring from PNL-ESF-B to TB-ESF-B.,bottom_control_panels_B,accepted_no_change
+PNL-ESF-B,RELAY-RPS-B,0.82,Raw Train B relay zoom shows a dashed run from PNL-ESF-B to RELAY-RPS-B.,bottom_control_panels_B,accepted_no_change
+PNL-ESF-B,RELAY-ESF-B,0.82,Raw Train B relay zoom shows a dashed run from PNL-ESF-B to RELAY-ESF-B.,bottom_control_panels_B,accepted_no_change
+PNL-DCS,REC-SOE-1,0.80,Raw annunciation/SOE zoom shows dashed wiring from PNL-DCS down to REC-SOE-1; nearby crossings are not treated as junctions.,bottom_annunciation_soe,accepted_no_change
+PNL-ANN,ANN-ESF-A,0.82,Raw annunciation/SOE zoom shows dashed wiring from PNL-ANN to ANN-ESF-A.,bottom_annunciation_soe,accepted_no_change
+PNL-ANN,ANN-ESF-B,0.82,Raw annunciation/SOE zoom shows dashed wiring from PNL-ANN to ANN-ESF-B.,bottom_annunciation_soe,accepted_no_change
+RELAY-ESF-A,REC-SOE-1,0.62,Raw Train A relay/annunciation zoom shows a dotted SOE/alarm path from RELAY-ESF-A to REC-SOE-1; kept with low confidence due to dotted signal style.,bottom_annunciation_soe_uncertain,accepted_no_change
+RELAY-ESF-B,REC-SOE-2,0.66,Raw Train B relay zoom shows a dotted SOE/alarm path from RELAY-ESF-B to REC-SOE-2; kept with low confidence due to dotted signal style.,bottom_annunciation_soe_uncertain,accepted_no_change

@@ -1,0 +1,104 @@
+﻿source,target,confidence,evidence,review_action
+GEN-G201,IPB-201,high,Solid generator conductor into isolated phase bus.,jennifer_retained
+IPB-201,CB-GEN-201,high,Solid conductor from IPB-201 to generator breaker.,jennifer_retained
+CB-GEN-201,GSU-201,high,Solid conductor from generator breaker to GSU primary.,jennifer_retained
+GSU-201,SWYD-BUS-A,high,GSU secondary rises by filled tap to SWYD-BUS-A.,jennifer_retained
+SWYD-BUS-A,CB-GRID-A,high,Switchyard bus A terminates at CB-GRID-A.,jennifer_retained
+CB-GRID-A,GRID-230A,high,Solid conductor from CB-GRID-A to GRID-230A source block.,jennifer_retained
+SWYD-BUS-A,CB-TIE-230,high,Filled vertical tap from SWYD-BUS-A to tie breaker.,jennifer_retained
+CB-TIE-230,SWYD-BUS-B,high,Filled vertical tap from tie breaker to SWYD-BUS-B.,jennifer_retained
+SWYD-BUS-B,CB-GRID-B,high,Switchyard bus B terminates at CB-GRID-B.,jennifer_retained
+CB-GRID-B,GRID-230B,high,Solid conductor from CB-GRID-B to GRID-230B source block.,jennifer_retained
+SWYD-BUS-A,TR-SST-201,high,Filled tap from SWYD-BUS-A down to TR-SST-201; crossing over BUS-B has no junction dot.,jennifer_retained
+IPB-201,TR-UAT-201,high,Auxiliary tap from IPB-201 lower terminal to TR-UAT-201.,jennifer_retained
+IPB-201,TR-UAT-202,high,Auxiliary tap from IPB-201 lower terminal to TR-UAT-202.,jennifer_retained
+TR-UAT-201,CB-UAT-1,high,TR-UAT-201 secondary drops to CB-UAT-1.,jennifer_retained
+CB-UAT-1,BUS-6KV-A,high,CB-UAT-1 bottom terminal lands on BUS-6KV-A.,jennifer_retained
+TR-UAT-202,CB-UAT-2,high,TR-UAT-202 secondary drops to CB-UAT-2.,jennifer_retained
+CB-UAT-2,BUS-6KV-B,high,CB-UAT-2 bottom terminal lands on BUS-6KV-B.,jennifer_retained
+TR-SST-201,CB-SST-1,high,TR-SST-201 secondary drops to CB-SST-1.,jennifer_retained
+CB-SST-1,BUS-6KV-A,high,CB-SST-1 bottom terminal lands on BUS-6KV-A.,jennifer_retained
+TR-SST-202,CB-SST-2,high,TR-SST-202 secondary drops to CB-SST-2.,jennifer_retained
+CB-SST-2,BUS-6KV-B,high,CB-SST-2 bottom terminal lands on BUS-6KV-B.,jennifer_retained
+DG-201A,CB-DG-A,high,Solid feeder from diesel generator A to CB-DG-A.,jennifer_retained
+CB-DG-A,ATS-A,high,Solid feeder from CB-DG-A to ATS-A.,jennifer_retained
+ATS-A,BUS-6KV-A,high,ATS-A output drops to BUS-6KV-A.,jennifer_retained
+DG-201B,CB-DG-B,high,Solid feeder from diesel generator B to CB-DG-B.,jennifer_retained
+CB-DG-B,ATS-B,high,Solid feeder from CB-DG-B to ATS-B.,jennifer_retained
+ATS-B,BUS-6KV-B,high,ATS-B output drops to BUS-6KV-B.,jennifer_retained
+BUS-6KV-A,CB-TIE-6KV,high,BUS-6KV-A terminates at left side of CB-TIE-6KV.,jennifer_retained
+CB-TIE-6KV,BUS-6KV-B,high,Right side of CB-TIE-6KV terminates on BUS-6KV-B.,jennifer_retained
+BUS-6KV-A,PT-6KV-A,high,Potential transformer A has a dotted/vertical tap from BUS-6KV-A.,jennifer_retained
+BUS-6KV-B,PT-6KV-B,high,Potential transformer B has a dotted/vertical tap from BUS-6KV-B.,jennifer_retained
+BUS-6KV-A,DS-6KV-A,high,BUS-6KV-A tap feeds DS-6KV-A.,jennifer_retained
+DS-6KV-A,BUS-4KV-N,high,DS-6KV-A lower terminal lands on BUS-4KV-N.,jennifer_retained
+BUS-6KV-B,DS-6KV-B,high,BUS-6KV-B tap feeds DS-6KV-B.,jennifer_retained
+DS-6KV-B,BUS-4KV-N,high,DS-6KV-B lower terminal lands on BUS-4KV-N.,jennifer_retained
+BUS-6KV-A,TR-480A,high,BUS-6KV-A vertical feeder to TR-480A.,jennifer_retained
+TR-480A,CB-LC-A1,high,TR-480A secondary drops to CB-LC-A1.,jennifer_retained
+CB-LC-A1,LC-480A,high,CB-LC-A1 bottom terminal drops to LC-480A.,jennifer_retained
+LC-480A,UV-SENS-A,medium,Dotted sensing tap from LC-480A terminal area to UV-SENS-A.,jennifer_retained
+LC-480A,MCC-CCW-A,high,Solid feeder from LC-480A to MCC-CCW-A.,jennifer_retained
+LC-480A,MCC-SW-A,high,Solid feeder from LC-480A to MCC-SW-A.,jennifer_retained
+LC-480A,MCC-HPI-A,high,Solid feeder from LC-480A to MCC-HPI-A.,jennifer_retained
+LC-480A,MCC-VENT-A,high,Solid feeder from LC-480A to MCC-VENT-A.,jennifer_retained
+LC-480A,CHGR-A,medium,Diego retained visible long down-feed from the A-side load center region to CHGR-A.,jennifer_retained
+BUS-6KV-B,TR-480B,high,BUS-6KV-B vertical feeder to TR-480B.,jennifer_retained
+TR-480B,CB-LC-B1,high,TR-480B secondary drops to CB-LC-B1.,jennifer_retained
+CB-LC-B1,LC-480B,high,CB-LC-B1 bottom terminal drops to LC-480B.,jennifer_retained
+LC-480B,UV-SENS-B,medium,Dotted sensing tap from LC-480B terminal area to UV-SENS-B.,jennifer_retained
+LC-480B,MCC-CCW-B,high,Solid feeder from LC-480B to MCC-CCW-B.,jennifer_retained
+LC-480B,MCC-SW-B,high,Solid feeder from LC-480B to MCC-SW-B.,jennifer_retained
+LC-480B,MCC-HPI-B,high,Solid feeder from LC-480B to MCC-HPI-B.,jennifer_retained
+LC-480B,MCC-VENT-B,high,Solid feeder from LC-480B to MCC-VENT-B.,jennifer_retained
+LC-480B,CHGR-B,medium,Diego retained visible long down-feed from the B-side load center region to CHGR-B.,jennifer_retained
+BUS-4KV-N,TR-480N,high,BUS-4KV-N vertical feeder to TR-480N.,jennifer_retained
+TR-480N,CB-LC-N1,high,TR-480N secondary drops to CB-LC-N1.,jennifer_retained
+CB-LC-N1,LC-480N,high,CB-LC-N1 drops to LC-480N.,jennifer_retained
+LC-480N,LP-N-A,high,Solid feeder from LC-480N to LP-N-A.,jennifer_retained
+LP-N-A,HTR-BLDG-A,high,LP-N-A drops to HTR-BLDG-A.,jennifer_retained
+LC-480N,LP-N-B,high,Solid feeder from LC-480N to LP-N-B.,jennifer_retained
+LP-N-B,HTR-BLDG-B,high,LP-N-B drops to HTR-BLDG-B.,jennifer_retained
+MCC-CCW-A,JBX-CCW-A,high,MCC-CCW-A vertical feeder to JBX-CCW-A.,jennifer_retained
+JBX-CCW-A,PUMP-CCW-A,high,JBX-CCW-A drops to PUMP-CCW-A.,jennifer_retained
+MCC-CCW-A,MOV-CCW-201A,high,MCC-CCW-A routed feeder to MOV-CCW-201A.,jennifer_retained
+MCC-SW-A,JBX-SW-A,high,MCC-SW-A vertical feeder to JBX-SW-A.,jennifer_retained
+JBX-SW-A,PUMP-SW-A,high,JBX-SW-A drops to PUMP-SW-A.,jennifer_retained
+MCC-HPI-A,PUMP-HPI-A,high,MCC-HPI-A vertical feeder to PUMP-HPI-A.,jennifer_retained
+MCC-HPI-A,MOV-SI-201A,high,MCC-HPI-A routed feeder to MOV-SI-201A.,jennifer_retained
+MCC-VENT-A,FAN-CR-A,high,MCC-VENT-A drops to FAN-CR-A.,jennifer_retained
+MCC-CCW-B,JBX-CCW-B,high,MCC-CCW-B vertical feeder to JBX-CCW-B.,jennifer_retained
+JBX-CCW-B,PUMP-CCW-B,high,JBX-CCW-B drops to PUMP-CCW-B.,jennifer_retained
+MCC-CCW-B,MOV-CCW-201B,high,MCC-CCW-B routed feeder to MOV-CCW-201B.,jennifer_retained
+MCC-SW-B,JBX-SW-B,high,MCC-SW-B vertical feeder to JBX-SW-B.,jennifer_retained
+JBX-SW-B,PUMP-SW-B,high,JBX-SW-B drops to PUMP-SW-B.,jennifer_retained
+MCC-HPI-B,PUMP-HPI-B,high,MCC-HPI-B vertical feeder to PUMP-HPI-B.,jennifer_retained
+MCC-HPI-B,MOV-SI-201B,high,MCC-HPI-B routed feeder to MOV-SI-201B.,jennifer_retained
+MCC-VENT-B,FAN-CR-B,high,MCC-VENT-B drops to FAN-CR-B.,jennifer_retained
+CHGR-A,PNL-DC-A,high,Solid conductor from CHGR-A to PNL-DC-A.,jennifer_retained
+CHGR-A,BAT-125A,high,CHGR-A drops to BAT-125A.,jennifer_retained
+BAT-125A,PNL-DC-A,high,Solid side feeder from BAT-125A to PNL-DC-A.,jennifer_retained
+PNL-DC-A,REC-A,high,PNL-DC-A drops to REC-A.,jennifer_retained
+REC-A,INV-A,high,REC-A routes to INV-A.,jennifer_retained
+INV-A,UPS-A,high,INV-A drops to UPS-A.,jennifer_retained
+BAT-125A,GND-A,high,Dotted ground bond from BAT-125A to GND-A.,jennifer_retained
+REC-A,GND-A,high,Dotted ground bond from REC-A to GND-A.,jennifer_retained
+GND-A,GND-MAIN,high,Dotted grounding path from GND-A to GND-MAIN.,jennifer_retained
+CHGR-B,PNL-DC-B,high,Solid conductor from CHGR-B to PNL-DC-B.,jennifer_retained
+CHGR-B,BAT-125B,high,CHGR-B drops to BAT-125B.,jennifer_retained
+BAT-125B,PNL-DC-B,high,Solid side feeder from BAT-125B to PNL-DC-B.,jennifer_retained
+PNL-DC-B,REC-B,high,PNL-DC-B drops to REC-B.,jennifer_retained
+REC-B,INV-B,high,REC-B routes to INV-B.,jennifer_retained
+INV-B,UPS-B,high,INV-B drops to UPS-B.,jennifer_retained
+BAT-125B,GND-B,high,Dotted ground bond from BAT-125B to GND-B.,jennifer_retained
+REC-B,GND-B,high,Dotted ground bond from REC-B to GND-B.,jennifer_retained
+GND-B,GND-MAIN,high,Dotted grounding path from GND-B to GND-MAIN.,jennifer_retained
+PNL-INST-A,RELAY-UV-A,medium,Same-row dashed route between instrument panel A and UV relay A.,jennifer_retained
+PNL-INST-B,RELAY-UV-B,medium,Same-row dashed route between instrument panel B and UV relay B.,jennifer_retained
+CP-ESFAS-A,RELAY-SI-A,medium,Same-row dashed route between ESFAS panel A and SI relay A.,jennifer_retained
+CP-ESFAS-B,RELAY-SI-B,medium,Same-row dashed route between ESFAS panel B and SI relay B.,jennifer_retained
+PLC-RPS-A,RELAY-LOAD-A,medium,Same-row dashed route between RPS PLC A and load relay A.,jennifer_retained
+PLC-RPS-B,RELAY-LOAD-B,medium,Same-row dashed route between RPS PLC B and load relay B.,jennifer_retained
+JBX-ESF-A,RELAY-DG-A,medium,Same-row dashed route between ESF junction box A and DG relay A.,jennifer_retained
+JBX-ESF-B,RELAY-DG-B,medium,Same-row dashed route between ESF junction box B and DG relay B.,jennifer_retained
+GRID-230B,TR-SST-202,high,"Jennifer correction: SST-202 primary visually lands on the GRID-230B/post-CB-GRID-B conductor, not directly on SWYD-BUS-B.",jennifer_replaced_swyd_bus_b_source

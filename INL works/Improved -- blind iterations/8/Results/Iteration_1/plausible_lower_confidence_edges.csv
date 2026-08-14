@@ -1,0 +1,42 @@
+node_a,node_b,edge_type,reason_for_lower_confidence,evidence
+DS-480-A,BUS-480-N2A,power_tie,device is shown in normally open feeder-tie area and exact tap point is visually crowded,DS-480-A sits below BUS-480-N2A with solid tie geometry
+DS-480-A,DS-480-B,power_tie,feeder tie is explicitly normally open so operational connectivity may be open,solid line between the two disconnect switches
+DS-480-B,BUS-480-N2B,power_tie,device is shown in normally open feeder-tie area and exact tap point is visually crowded,DS-480-B sits below BUS-480-N2B with solid tie geometry
+DS-480-A,BUS-480-E2A,power_tie,possible left tie endpoint may be BUS-480-E2A instead of BUS-480-N2A,solid horizontal line from left 480 bus into DS-480-A area
+DS-480-B,BUS-480-E2B,power_tie,possible right tie endpoint may be BUS-480-E2B instead of BUS-480-N2B,solid horizontal line from DS-480-B area toward right 480 bus
+CB-N1,CHGR-125A,power,CB-N1/charger geometry is crowded with MCC-2C feeder,solid line descends from CB-N1 and branches adjacent to CHGR-125A
+CB-N2,CHGR-125B,power,CB-N2/charger geometry is crowded with PN-480-B/MCC-2D feeder,solid line descends from CB-N2 toward Train B DC/UPS/control area
+MCC-2C,PUMP-CHG-2A,power,MCC-2C is partially cropped/overlaps PN-480-A feeder region,solid branch from MCC-2C area aligns with PUMP-CHG-2A
+MCC-2C,FAN-VENT-2A,power,MCC-2C is partially cropped/overlaps PN-480-A feeder region,solid branch from MCC-2C area aligns with FAN-VENT-2A
+MCC-2D,PUMP-CHG-2B,power,MCC-2D is partly left of the crop and shares visual region with PN-480-B feeders,solid branch from MCC-2D area aligns with PUMP-CHG-2B
+MCC-2D,FAN-VENT-2B,power,MCC-2D is partly left of the crop and shares visual region with PN-480-B feeders,solid branch from MCC-2D area aligns with FAN-VENT-2B
+GND-A,BUS-480-E2A,ground,ground symbol has dashed connection from bus/tap area and exact equipment-ground target is ambiguous,ground symbol labeled GND-A below BUS-480-E2A area
+GND-B,BUS-480-E2B,ground,ground symbol has dashed connection from bus/tap area and exact equipment-ground target is ambiguous,ground symbol labeled GND-B below BUS-480-E2B area
+BUS-4160-S2A,CT-4160A,signal_sensing,CT/PT dashed sensing lines are not solid power feeders,dashed vertical tap from BUS-4160-S2A to CT-4160A
+CT-4160A,RELAY-50/51A,signal_sensing,dashed protective relay circuit rather than power,dashed line from CT-4160A to RELAY-50/51A
+BUS-4160-S2A,PT-4160A,signal_sensing,PT dashed sensing line is not a solid feeder,dashed vertical tap from BUS-4160-S2A to PT-4160A
+PT-4160A,RELAY-27A,signal_sensing,dashed protective relay circuit rather than power,dashed line from PT-4160A to RELAY-27A
+RELAY-50/51A,RELAY-86A,trip_signal,protective trip wiring is dashed and routed through cabinet area,dashed line from relay group to 86A
+RELAY-27A,RELAY-86A,trip_signal,protective trip wiring is dashed and routed through cabinet area,dashed line from relay group to 86A
+RELAY-86A,CB-EDG-A,trip_signal,86A trip dashed line appears routed to EDG breaker but routing is long,dashed line labeled 86A TRIP near CB-EDG-A
+BUS-4160-S2B,CT-4160B,signal_sensing,CT/PT dashed sensing lines are not solid power feeders,dashed vertical tap from BUS-4160-S2B to CT-4160B
+CT-4160B,RELAY-50/51B,signal_sensing,dashed protective relay circuit rather than power,dashed line from CT-4160B to RELAY-50/51B
+BUS-4160-S2B,PT-4160B,signal_sensing,PT dashed sensing line is not a solid feeder,dashed vertical tap from BUS-4160-S2B to PT-4160B
+PT-4160B,RELAY-27B,signal_sensing,dashed protective relay circuit rather than power,dashed line from PT-4160B to RELAY-27B
+RELAY-50/51B,RELAY-86B,trip_signal,protective trip wiring is dashed and routed through cabinet area,dashed line from relay group to 86B
+RELAY-27B,RELAY-86B,trip_signal,protective trip wiring is dashed and routed through cabinet area,dashed line from relay group to 86B
+RELAY-86B,CB-EDG-B,trip_signal,86B trip dashed line appears routed to EDG breaker but routing is long,dashed line labeled 86B TRIP near CB-EDG-B
+MOV-8801A,JB-2A1,control_signal,dashed control wiring from MOV area to junction box,visible dashed line labeled near JB-2A1
+MOV-8802A,JB-2A1,control_signal,dashed control wiring likely joins the same JB/control path,visible dashed routing from MOV control area toward JB-2A1
+JB-2A1,RELAY-K1A,control_signal,dashed control path continues from JB area toward relay K1A,lower Train A dashed routing
+RELAY-K1A,CP-ESFAS-A,control_signal,dashed relay/control wiring,visible dashed line from relay area toward CP-ESFAS-A
+RELAY-K1A,CP-RPS-A,control_signal,dashed relay/control wiring,visible dashed line from relay area toward CP-RPS-A
+PN-125A,CP-ESFAS-A,dc_control,dashed panel feed is partially obscured by cabinet boundary,dashed vertical from PN-125A region into CP-ESFAS-A
+PN-120A,CP-RPS-A,ac_control,dashed panel feed is partially obscured by cabinet boundary,dashed vertical from PN-120A into CP-RPS-A
+MOV-8801B,JB-2B1,control_signal,dashed control wiring from MOV area to junction box,visible dashed line labeled near JB-2B1
+MOV-8802B,JB-2B1,control_signal,dashed control wiring likely joins the same JB/control path,visible dashed routing from MOV control area toward JB-2B1
+JB-2B1,RELAY-K1B,control_signal,dashed control path continues from JB area toward relay K1B,lower Train B dashed routing
+RELAY-K1B,CP-ESFAS-B,control_signal,dashed relay/control wiring,visible dashed line from relay area toward CP-ESFAS-B
+RELAY-K1B,CP-RPS-B,control_signal,dashed relay/control wiring,visible dashed line from relay area toward CP-RPS-B
+PN-125B,CP-ESFAS-B,dc_control,dashed panel feed is partially obscured by cabinet boundary,dashed vertical from PN-125B region into CP-ESFAS-B
+PN-120B,CP-RPS-B,ac_control,dashed panel feed is partially obscured by cabinet boundary,dashed vertical from PN-120B into CP-RPS-B

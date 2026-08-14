@@ -1,0 +1,15 @@
+item,decision,evidence
+round2_scope,used only allowed inputs plus Jennifer proposal,Re-check was based on raw schematic and overlays/CSVs under Input resources plus round_01_jennifer_* files; out-of-folder inspection crops were not used as evidence.
+round2_result,agree with Jennifer 51-edge proposal,No Diego Round 02 additions or removals relative to Jennifer; loop appears saturated from Diego high-recall side.
+node-list,all required physical components retained,Jennifer/Diego node universe remains 55 nodes: all 47 OCR physical components from component_visual_ocr_labels.csv plus 8 true BUS-* rails visible on the schematic.
+node-list,no missing true BUS-* rail found,"Visible true BUS-* rails are BUS-4160A, BUS-4160B, BUS-480A, BUS-480B, BUS-125DC-A, BUS-125DC-B, BUS-120AC-A, and BUS-120AC-B; division/train/instrument descriptors are not separate nodes."
+TR-CPT-A_to_BUS-120AC-A,exclude edge,Raw image shows TR-CPT-A secondary conductor descending as a separate vertical line to a black endpoint below/left of BUS-120AC-A; the 120VAC rail starts to the right with a visible gap and no junction dot.
+TR-CPT-B_to_BUS-120AC-B,retain edge,Raw image shows TR-CPT-B secondary vertical conductor continuing down to BUS-120AC-B with a solid junction at the rail.
+RELAY-86A,exclude DC bus and RPS edges,RELAY-86A is reached by dashed/control routing from the 125VDC train area and has no solid conductor edge into RPS-PNL-A.
+RELAY-86B,exclude DC bus and RPS edges,RELAY-86B similarly uses dashed/control routing from the 125VDC train area and has no solid conductor edge into RPS-PNL-B.
+RELAY-27A,exclude BUS-120AC-A and RPS edges,A-side RELAY-27A sits beside the bus/panel area but its visible routes are dashed/control-only; no solid tap from BUS-120AC-A is drawn.
+RELAY-27B,retain BUS-120AC-B edge only,B-side RELAY-27B has a solid conductor branch from the right end of BUS-120AC-B into the relay; the downstream panel/control route is dashed and not retained as a RPS edge.
+GND-STA,retain isolated node with no edge,"GND-STA is a visible station ground symbol, but the nearby dotted/dashed route is a single-point ground/control indication without a supported solid component/BUS connection."
+control_and_terminal_labels,continue excluding intermediate labels as nodes,"2A-XC1, 2A-BCL, 2B-XC1, 2B-BCL, feeder IDs, load-bucket numbers, and cable-tray/control-route descriptors remain excluded to avoid false positive intermediate nodes."
+CB-105_bus_tie,no direct BUS-4160A to BUS-4160B edge,"CB-105 remains the intervening bus-tie device; status table shows it open, so only bus-to-breaker edges are retained."
+480V_tie_space,no BUS-480A to BUS-480B edge,Raw text explicitly says 480V tie reserved space/no connection shown between the two 480V buses.

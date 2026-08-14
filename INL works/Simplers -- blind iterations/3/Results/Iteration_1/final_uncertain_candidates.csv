@@ -1,0 +1,12 @@
+candidate,candidate_type,status,evidence
+TR-CPT-A -- BUS-120AC-A,edge,excluded_uncertain,A-side CPT secondary conductor terminates at a visible endpoint/gap; no solid landing on BUS-120AC-A is visible.
+BUS-125DC-A -- RELAY-86A,edge,excluded,"Relay 86A route is dashed/control-only from the 125 VDC rail area, not a solid matrix conductor."
+BUS-120AC-A -- RELAY-27A,edge,excluded,Relay 27A has no visible solid tap to BUS-120AC-A; nearby route is dashed/control-only.
+RELAY-27A -- RPS-PNL-A,edge,excluded,"The visible route between relay 27A and RPS-PNL-A is dashed/control wiring, not a solid connectivity edge."
+RELAY-86A -- RPS-PNL-A,edge,excluded,"The visible route between relay 86A and RPS-PNL-A is dashed/control wiring, not a solid connectivity edge."
+BUS-125DC-B -- RELAY-86B,edge,excluded,"Relay 86B route is dashed/control-only from the 125 VDC rail area, not a solid matrix conductor."
+RELAY-27B -- RPS-PNL-B,edge,excluded,"Relay 27B has a solid BUS-120AC-B tap, but its route toward RPS-PNL-B is dashed/control-only."
+RELAY-86B -- RPS-PNL-B,edge,excluded,"The visible route between relay 86B and RPS-PNL-B is dashed/control wiring, not a solid connectivity edge."
+GND-STA -- dotted ground/control route,edge,excluded,Station ground is visible but no supported solid edge to a named component or BUS node is visible.
+"2A-XC1, 2A-BCL, 2B-XC1, 2B-BCL",node,excluded,Cable/terminal route labels sit near dashed/side risers and are not physical components or true BUS rails.
+division descriptors and feeder IDs,node,excluded,"Labels such as 4.16 KV ESF DIV I/II, 480 VAC DIV I/II, 125 VDC TRAIN A/B, 120 VAC INST A/B, feeder IDs, and bucket numbers describe routes/rails rather than separate connectivity nodes."

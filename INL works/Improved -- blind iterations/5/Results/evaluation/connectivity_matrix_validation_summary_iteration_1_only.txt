@@ -1,0 +1,52 @@
+Connectivity matrix validation summary - Document 5
+Scope: Iteration_1 only
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\5\synthetic_npp_connectivity_matrix_final_cleaned_v4.csv
+Token usage: no token estimate files were present under this results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_matrix.csv): TP=130, FP=39, FN=10, Precision=0.769231, Recall=0.928571, F1=0.841424
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_matrix.csv): TP=130, FP=31, FN=10, Precision=0.807453, Recall=0.928571, F1=0.863787
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_matrix.csv): TP=119, FP=11, FN=21, Precision=0.915385, Recall=0.850000, F1=0.881481
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_matrix.csv): TP=119, FP=11, FN=21, Precision=0.915385, Recall=0.850000, F1=0.881481
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=119, FP=11, FN=21, Precision=0.915385, Recall=0.850000, F1=0.881481
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list and create false-positive incident edges.
+- Some GT nodes are missing from the extraction, creating false negatives for their incident edges.
+
+False-positive edge examples:
+- BUS-NON1 -- TR-SAF-C
+- BUS-SY230 -- TR-UAT-1A
+- BUS-SY230 -- TR-UAT-1B
+- CP-ESFAS-1 -- INST-NSSS-B
+- CP-ESFAS-2 -- INST-NSSS-A
+- INV-UPS-A -- RECT-48V-A
+- INV-UPS-B -- RECT-48V-B
+- JB-RLY-A -- JB-RLY-B
+- MCC-1A1 -- V-MISV-A
+- MCC-1B1 -- V-MISV-B
+
+False-negative edge examples:
+- BUS-AUX13B -- BUS-NON1
+- BUS-SY230 -- GND-GRID
+- CP-ESFAS-1 -- RELAY-UV-A
+- CP-ESFAS-1 -- RELAY-UV-B
+- CP-ESFAS-2 -- RELAY-LOOP-C
+- CP-ESFAS-2 -- RELAY-LOOP-D
+- GEN-G101 -- TR-UAT-1A
+- GEN-G101 -- TR-UAT-1B
+- GND-GRID -- GSU-1
+- GND-GRID -- LC-480A
+
+Extra/non-GT nodes causing performance drops:
+- V-MISV-A: 1 incident false-positive edge(s)
+- V-MISV-B: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 2 extra/intermediate nodes were omitted from the extraction (V-MISV-A, V-MISV-B), metrics would be TP=119, FP=9, FN=21, Precision=0.929688, Recall=0.850000, F1=0.888060.
+
+Missing GT node examples:
+- GND-GRID: 8 missed incident GT edge(s)
+- VLV-MSIV-A: 1 missed incident GT edge(s)
+- VLV-MSIV-B: 1 missed incident GT edge(s)

@@ -1,0 +1,73 @@
+source,target,confidence,evidence
+GRID-230-A,CB-SW-A,0.98,Solid horizontal power feeder from GRID-230-A right port to CB-SW-A left port; endpoints align around y=280 in raw and wire-node overlay.
+CB-SW-A,TR-SU-A,0.98,Solid horizontal feeder from CB-SW-A right port to TR-SU-A left port with port dots on both component boxes.
+TR-SU-A,SU-A,0.96,Solid output from TR-SU-A right side routes down/right to the named SU-A tap at the left side of the 13.8 kV switchgear.
+SU-A,BUS-13K-A,0.96,Named SU-A tap line visibly joins the left end of the BUS-13K-A / 13.8 kV switchgear bus at a filled tap dot.
+GEN-DG-A,CB-DG-A,0.98,Solid horizontal feeder from GEN-DG-A right port to CB-DG-A left port with aligned endpoint nodes near y=670.
+CB-DG-A,TR-EDG-A,0.98,Solid horizontal feeder from CB-DG-A right port to TR-EDG-A left port.
+TR-EDG-A,EDG-A,0.96,Solid output from TR-EDG-A right side reaches the named EDG-A tap at the 13.8 kV bus.
+EDG-A,BUS-13K-A,0.97,"Named EDG-A tap is drawn as a filled dot on BUS-13K-A, aligned with the diesel-generator transformer feeder."
+GRID-230-B,CB-SW-B,0.98,Solid horizontal power feeder from GRID-230-B left port to CB-SW-B right port; endpoints align around y=280.
+CB-SW-B,TR-SU-B,0.98,Solid horizontal feeder from CB-SW-B left port to TR-SU-B right port.
+TR-SU-B,SU-B,0.96,Solid output from TR-SU-B routes to the named SU-B tap on the right side of the 13.8 kV switchgear.
+SU-B,BUS-13K-B,0.96,Named SU-B tap line visibly joins the right end of BUS-13K-B at a filled tap dot.
+GEN-DG-B,CB-DG-B,0.98,Solid horizontal feeder from GEN-DG-B left port to CB-DG-B right port with aligned endpoint nodes near y=670.
+CB-DG-B,TR-EDG-B,0.98,Solid horizontal feeder from CB-DG-B left port to TR-EDG-B right port.
+TR-EDG-B,EDG-B,0.96,Solid output from TR-EDG-B left side reaches the named EDG-B tap at the 13.8 kV bus.
+EDG-B,BUS-13K-B,0.97,"Named EDG-B tap is drawn as a filled dot on BUS-13K-B, aligned with the diesel-generator transformer feeder."
+BUS-13K-A,CB-13-TIE,0.95,Left segment of BUS-13K-A enters the left terminal of CB-13-TIE; solid bus with filled junction/tap dot immediately left of breaker.
+CB-13-TIE,BUS-13K-B,0.95,Right terminal of CB-13-TIE exits onto BUS-13K-B; tie is labeled open but both terminals are visibly wired to the bus halves.
+BUS-13K-A,TR-4K-A,0.96,Vertical solid feeder drops from BUS-13K-A filled tap to the top terminal of TR-4K-A.
+BUS-13K-B,TR-4K-B,0.96,Vertical solid feeder drops from BUS-13K-B filled tap to the top terminal of TR-4K-B.
+TR-4K-A,CB-4K-A,0.98,Short solid vertical feeder from TR-4K-A bottom terminal to CB-4K-A top terminal.
+CB-4K-A,BUS-4K-A,0.97,CB-4K-A bottom terminal drops directly to the BUS-4K-A / 4.16 kV class 1E bus at a filled tap.
+BUS-4K-A,CB-4K-TIE,0.95,Left BUS-4K-A segment enters CB-4K-TIE left terminal; solid horizontal 4.16 kV bus line.
+CB-4K-TIE,BUS-4K-B,0.95,CB-4K-TIE right terminal exits onto BUS-4K-B; solid horizontal 4.16 kV tie connection.
+TR-4K-B,CB-4K-B,0.98,Short solid vertical feeder from TR-4K-B bottom terminal to CB-4K-B top terminal.
+CB-4K-B,BUS-4K-B,0.97,CB-4K-B bottom terminal drops directly to BUS-4K-B at a filled tap.
+BUS-4K-A,TR-480-A,0.96,Vertical solid feeder drops from a BUS-4K-A filled tap to TR-480-A top terminal.
+TR-480-A,CB-LC-A,0.98,Short solid vertical feeder from TR-480-A bottom terminal to CB-LC-A top terminal.
+CB-LC-A,BUS-480-A,0.97,CB-LC-A bottom terminal drops to the BUS-480-A horizontal 480 VAC load-center bus at a filled tap.
+BUS-4K-B,TR-480-B,0.96,Vertical solid feeder drops from a BUS-4K-B filled tap to TR-480-B top terminal.
+TR-480-B,CB-LC-B,0.98,Short solid vertical feeder from TR-480-B bottom terminal to CB-LC-B top terminal.
+CB-LC-B,BUS-480-B,0.97,CB-LC-B bottom terminal drops to the BUS-480-B horizontal 480 VAC load-center bus at a filled tap.
+CB-13-TIE,RPS-TRIP,0.45,Dashed control/interlock route labeled RPS TRIP leaves the underside/left side of the CB-13-TIE area; ambiguous non-power circuit.
+RPS-TRIP,PNL-RPS-1,0.45,"Dashed RPS TRIP route runs downward to the left side of the RPS panel region; no solid power join, treated as ambiguous control."
+CB-4K-TIE,RPS-LOCKOUT,0.65,Vertical solid control/lockout lead from CB-4K-TIE bottom terminal enters label block RPS LOCKOUT.
+RPS-LOCKOUT,PNL-RPS-1,0.65,RPS LOCKOUT lead continues as a solid vertical line into the top terminal of PNL-RPS-1/RPS panel.
+BUS-480-A,LC-A1,0.97,Named LC-A1 filled tap sits on BUS-480-A and drops to MCC-01A.
+LC-A1,MCC-01A,0.97,Solid vertical feeder from LC-A1 tap down to MCC-01A top terminal.
+BUS-480-A,LC-A2,0.97,Named LC-A2 filled tap sits on BUS-480-A and drops to MCC-02A.
+LC-A2,MCC-02A,0.97,Solid vertical feeder from LC-A2 tap down to MCC-02A top terminal.
+BUS-480-A,RECT-125A,0.94,"Solid routed feeder leaves the left end of BUS-480-A, runs down the left side of the load/DC area, and enters the AC side/top of RECT-125A."
+MCC-01A,PUMP-RHR-A,0.97,Solid branch feeder from MCC-01A lower-left terminal to PUMP-RHR-A top terminal.
+MCC-01A,MOTOR-CCW-A,0.97,Solid branch feeder from MCC-01A lower-right terminal to MOTOR-CCW-A top terminal.
+MCC-02A,PUMP-AFW-A,0.97,Solid branch feeder from MCC-02A lower-left terminal to PUMP-AFW-A top terminal.
+MCC-02A,VALVE-MOV-A,0.97,Solid branch feeder from MCC-02A lower-middle terminal to VALVE-MOV-A/MOV actuator top terminal.
+MCC-02A,FAN-CONTAIN-A,0.97,Solid branch feeder from MCC-02A lower-right terminal routes horizontally then down to FAN-CONTAIN-A top terminal.
+RECT-125A,BUS-DC125-A,0.97,RECT-125A DC side is solid-wired to the BUS-DC125-A / 125 VDC A horizontal bus.
+BAT-125A,BUS-DC125-A,0.98,Battery BAT-125A has a solid vertical tap up to BUS-DC125-A at a filled junction dot.
+INV-120A,BUS-DC125-A,0.97,INV-120A DC side is solid-wired to the right end of BUS-DC125-A with a filled bus tap nearby.
+INV-120A,PNL-ESF-A,0.95,Solid feeder from INV-120A top terminal routes upward/right into the bottom terminal of PNL-ESF-A.
+JB-ESF-A,PNL-ESF-A,0.78,Vertical terminal-to-terminal link from JB-ESF-A bottom dot to PNL-ESF-A top dot; short run may be signal/control but is visibly joined.
+PNL-ESF-A,CTRL-ESF-A-DASHED,0.50,Dashed control/interlock route connects to left-side terminals of PNL-ESF-A and runs beneath Train A loads.
+CTRL-ESF-A-DASHED,PUMP-AFW-A,0.42,Dashed Train A control route has a vertical dashed leg aligned with PUMP-AFW-A bottom; ambiguous control rather than power.
+CTRL-ESF-A-DASHED,VALVE-MOV-A,0.48,Dashed Train A control route has a vertical dashed leg up to VALVE-MOV-A bottom; ambiguous control/interlock circuit.
+BUS-480-B,LC-B1,0.97,Named LC-B1 filled tap sits on BUS-480-B and drops to MCC-01B.
+LC-B1,MCC-01B,0.97,Solid vertical feeder from LC-B1 tap down to MCC-01B top terminal.
+BUS-480-B,LC-B2,0.97,Named LC-B2 filled tap sits on BUS-480-B and drops to MCC-02B.
+LC-B2,MCC-02B,0.97,Solid vertical feeder from LC-B2 tap down to MCC-02B top terminal.
+BUS-480-B,RECT-125B,0.94,"Solid routed feeder leaves the right end of BUS-480-B, runs down the right side of the load/DC area, and enters the AC side/top of RECT-125B."
+MCC-01B,PUMP-RHR-B,0.97,Solid branch feeder from MCC-01B lower-left terminal to PUMP-RHR-B top terminal.
+MCC-01B,MOTOR-CCW-B,0.97,Solid branch feeder from MCC-01B lower-right terminal to MOTOR-CCW-B top terminal.
+MCC-02B,PUMP-AFW-B,0.97,Solid branch feeder from MCC-02B lower-left terminal to PUMP-AFW-B top terminal.
+MCC-02B,VALVE-MOV-B,0.97,Solid branch feeder from MCC-02B lower-middle terminal to VALVE-MOV-B/MOV actuator top terminal.
+MCC-02B,FAN-CONTAIN-B,0.97,Solid branch feeder from MCC-02B lower-right terminal routes horizontally then down to FAN-CONTAIN-B top terminal.
+RECT-125B,BUS-DC125-B,0.97,RECT-125B DC side is solid-wired to the BUS-DC125-B / 125 VDC B horizontal bus.
+BAT-125B,BUS-DC125-B,0.98,Battery BAT-125B has a solid vertical tap up to BUS-DC125-B at a filled junction dot.
+INV-120B,BUS-DC125-B,0.97,INV-120B DC side is solid-wired to the left end of BUS-DC125-B with a filled bus tap nearby.
+INV-120B,PNL-ESF-B,0.95,Solid feeder from INV-120B top terminal routes upward/right into the bottom terminal of PNL-ESF-B.
+JB-ESF-B,PNL-ESF-B,0.78,Vertical terminal-to-terminal link from JB-ESF-B bottom dot to PNL-ESF-B top dot; short run may be signal/control but is visibly joined.
+PNL-ESF-B,CTRL-ESF-B-DASHED,0.50,Dashed control/interlock route connects to right-side terminals of PNL-ESF-B and runs beneath Train B loads.
+CTRL-ESF-B-DASHED,PUMP-AFW-B,0.42,Dashed Train B control route has a vertical dashed leg aligned with PUMP-AFW-B bottom; ambiguous control rather than power.
+CTRL-ESF-B-DASHED,VALVE-MOV-B,0.48,Dashed Train B control route has a vertical dashed leg up to VALVE-MOV-B bottom; ambiguous control/interlock circuit.

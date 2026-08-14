@@ -1,0 +1,63 @@
+node_name,node_kind,component_type,center_x,center_y,bbox,confidence,evidence
+DIVISION-I-TRAIN-A-SAFETY-POWER,logical_node,boundary,1675.0,242.5,"[1100, 215, 2250, 270]",high,Train A safety power division label.
+DIVISION-II-TRAIN-B-SAFETY-POWER,logical_node,boundary,3630.0,242.5,"[3000, 215, 4260, 270]",high,Train B safety power division label.
+OFFSITE-230KV-A,physical_component,source,735.0,265.0,"[515, 205, 955, 325]",high,Tight box around offsite 230 kV A source block.
+OFFSITE-230KV-B,physical_component,source,2965.0,265.0,"[2685, 205, 3245, 325]",high,Tight box around offsite 230 kV B source block.
+DS-230A,physical_component,disconnect_switch,770.0,450.0,"[560, 375, 980, 525]",high,Tight box around DS-230A disconnect switch block.
+EDG-1A,physical_component,generator,1530.0,450.0,"[1370, 285, 1690, 615]",high,Tight box around EDG-1A generator circle and label.
+DS-230B,physical_component,disconnect_switch,3000.0,450.0,"[2790, 375, 3210, 525]",high,Tight box around DS-230B disconnect switch block.
+EDG-1B,physical_component,generator,3665.0,450.0,"[3505, 285, 3825, 615]",high,Tight box around EDG-1B generator circle and label.
+TR-1A,physical_component,transformer,750.0,630.0,"[585, 525, 915, 735]",high,Tight box around TR-1A transformer block.
+TR-1B,physical_component,transformer,3005.0,630.0,"[2785, 525, 3225, 735]",high,Tight box around TR-1B transformer block.
+CB-1A,physical_component,breaker,752.5,795.0,"[555, 735, 950, 855]",high,Tight box around CB-1A breaker block.
+CB-1B,physical_component,breaker,3010.0,795.0,"[2770, 735, 3250, 855]",high,Tight box around CB-1B breaker block.
+CB-DG-A,physical_component,breaker,1517.5,797.5,"[1335, 730, 1700, 865]",high,Tight box around CB-DG-A breaker block.
+CB-DG-B,physical_component,breaker,3670.0,797.5,"[3470, 730, 3870, 865]",high,Tight box around CB-DG-B breaker block.
+N-O-TIE,logical_node,tie_note,2290.0,815.0,"[2110, 780, 2470, 850]",high,Normally open tie note above CB-TIE-AB.
+BUS-4160-A-DIV-I,logical_node,bus,1217.5,892.5,"[325, 855, 2110, 930]",high,4.16 kV ESF Bus A label.
+BUS-4160-B-DIV-II,logical_node,bus,3310.0,892.5,"[2470, 855, 4150, 930]",high,4.16 kV ESF Bus B label.
+CB-TIE-AB,physical_component,tie_breaker,2282.5,925.0,"[2095, 840, 2470, 1010]",high,Tight box around CB-TIE-AB tie breaker.
+NORMAL-OFFSITE-FEED-A,logical_node,feed_note,635.0,967.5,"[320, 925, 950, 1010]",high,Normal offsite feed label on A side.
+NORMAL-OFFSITE-FEED-B,logical_node,feed_note,3025.0,967.5,"[2700, 925, 3350, 1010]",high,Normal offsite feed label on B side.
+CHG-125A,physical_component,charger,250.0,1106.5,"[55, 1035, 445, 1178]",high,Tight box around CHG-125A charger block.
+CHG-125B,physical_component,charger,4245.0,1106.5,"[4040, 1035, 4450, 1178]",high,Tight box around CHG-125B charger block.
+RELAY-UV-A,physical_component,relay,1867.5,1132.5,"[1600, 1040, 2135, 1225]",high,Tight box around RELAY-UV-A block.
+RELAY-UV-B,physical_component,relay,2820.0,1132.5,"[2580, 1040, 3060, 1225]",high,Tight box around RELAY-UV-B block.
+TR-480-A,physical_component,transformer,1020.0,1165.0,"[775, 1050, 1265, 1280]",high,Tight box around TR-480-A transformer block.
+TR-480-B,physical_component,transformer,3212.5,1165.0,"[2955, 1050, 3470, 1280]",high,Tight box around TR-480-B transformer block.
+BAT-125A,physical_component,battery,250.0,1294.0,"[55, 1218, 445, 1370]",high,Tight box around BAT-125A battery block.
+BAT-125B,physical_component,battery,4245.0,1294.0,"[4040, 1218, 4450, 1370]",high,Tight box around BAT-125B battery block.
+CB-480-A,physical_component,breaker,1020.0,1395.0,"[760, 1310, 1280, 1480]",high,Tight box around CB-480-A breaker block.
+CB-480-B,physical_component,breaker,3220.0,1395.0,"[2950, 1310, 3490, 1480]",high,Tight box around CB-480-B breaker block.
+INV-120A,physical_component,inverter,250.0,1475.0,"[55, 1405, 445, 1545]",high,Tight box around INV-120A inverter block.
+INV-120B,physical_component,inverter,4245.0,1475.0,"[4040, 1405, 4450, 1545]",high,Tight box around INV-120B inverter block.
+BUS-480-A,logical_node,bus,1285.0,1512.5,"[440, 1485, 2130, 1540]",high,480 V load center A bus label.
+BUS-480-B,logical_node,bus,3360.0,1512.5,"[2370, 1485, 4350, 1540]",high,480 V load center B bus label.
+LC-A,logical_node,local_control,475.0,1515.0,"[405, 1465, 545, 1565]",high,LC-A label at A-side 480 V load center.
+LC-B,logical_node,local_control,4005.0,1515.0,"[3920, 1465, 4090, 1565]",high,LC-B label at B-side 480 V load center.
+PANEL-120A,physical_component,panel,250.0,1677.5,"[55, 1605, 445, 1750]",high,Tight box around PANEL-120A block.
+PANEL-120B,physical_component,panel,4245.0,1677.5,"[4040, 1605, 4450, 1750]",high,Tight box around PANEL-120B block.
+GND-PLANT,physical_component,ground,2052.5,1747.5,"[1900, 1650, 2205, 1845]",high,Tight box around GND-PLANT ground/reference symbol.
+MCC-A1,physical_component,mcc,715.0,1810.0,"[365, 1690, 1065, 1930]",high,Tight box around MCC-A1 safety loads assembly.
+MCC-A2,physical_component,mcc,1560.0,1810.0,"[1210, 1690, 1910, 1930]",high,Tight box around MCC-A2 valve/pump assembly.
+MCC-B1,physical_component,mcc,2810.0,1810.0,"[2400, 1690, 3220, 1930]",high,Tight box around MCC-B1 safety loads assembly.
+MCC-B2,physical_component,mcc,3645.0,1810.0,"[3290, 1690, 4000, 1930]",high,Tight box around MCC-B2 valve/pump assembly.
+RPS-A,physical_component,rps_panel,250.0,1855.0,"[55, 1785, 445, 1925]",high,Tight box around RPS-A DIV I panel block.
+RPS-B,physical_component,rps_panel,4245.0,1855.0,"[4040, 1785, 4450, 1925]",high,Tight box around RPS-B DIV II panel block.
+RELAY-KA1,physical_component,relay,527.5,2027.5,"[310, 1940, 745, 2115]",high,Tight box around RELAY-KA1 relay block.
+RELAY-KB1,physical_component,relay,4245.0,2070.0,"[4040, 2000, 4450, 2140]",high,Tight box around RELAY-KB1 relay block.
+MOV-881A,physical_component,motor_operated_valve,1530.0,2310.0,"[1380, 2205, 1680, 2415]",high,Tight box around MOV-881A valve block. Lower-row bbox corrected to reduce/avoid overlap with neighboring components. Final lower-band bbox tightened around component body/label to reduce row overlaps and avoid crowding OCR banners.
+MOV-742A,physical_component,motor_operated_valve,1947.5,2310.0,"[1780, 2205, 2115, 2415]",high,Tight box around MOV-742A valve block. Lower-row bbox corrected to reduce/avoid overlap with neighboring components. Final lower-band bbox tightened around component body/label to reduce row overlaps and avoid crowding OCR banners.
+MOV-881B,physical_component,motor_operated_valve,3762.5,2310.0,"[3620, 2205, 3905, 2415]",high,Tight box around MOV-881B valve block. Final coordinate tightened to avoid overlap with adjacent load component. Lower-row bbox corrected to reduce/avoid overlap with neighboring components. Final lower-band bbox tightened around component body/label to reduce row overlaps and avoid crowding OCR banners.
+MOV-742B,physical_component,motor_operated_valve,4142.5,2310.0,"[3960, 2205, 4325, 2415]",high,Tight box around MOV-742B valve block. Final coordinate tightened to avoid overlap with adjacent load component. Lower-row bbox corrected to reduce/avoid overlap with neighboring components. Final lower-band bbox tightened around component body/label to reduce row overlaps and avoid crowding OCR banners.
+PUMP-RHR-A,physical_component,pump,425.0,2335.0,"[295, 2255, 555, 2415]",high,Tight box around PUMP-RHR-A block. Final coordinate tightened to avoid overlap with adjacent load component. Lower-row bbox corrected to reduce/avoid overlap with neighboring components. Final lower-band bbox tightened around component body/label to reduce row overlaps and avoid crowding OCR banners.
+PUMP-CS-A,physical_component,pump,750.0,2335.0,"[600, 2255, 900, 2415]",high,Tight box around PUMP-CS-A block. Final coordinate tightened to avoid overlap with adjacent load component. Lower-row bbox corrected to reduce/avoid overlap with neighboring components. Final lower-band bbox tightened around component body/label to reduce row overlaps and avoid crowding OCR banners.
+PUMP-CCW-A,physical_component,pump,1167.5,2335.0,"[1010, 2255, 1325, 2415]",high,Tight box around PUMP-CCW-A block. Lower-row bbox corrected to reduce/avoid overlap with neighboring components. Final lower-band bbox tightened around component body/label to reduce row overlaps and avoid crowding OCR banners.
+PUMP-RHR-B,physical_component,pump,2545.0,2335.0,"[2375, 2255, 2715, 2415]",high,Tight box around PUMP-RHR-B block. Final coordinate tightened to avoid overlap with adjacent load component. Lower-row bbox corrected to reduce/avoid overlap with neighboring components. Final lower-band bbox tightened around component body/label to reduce row overlaps and avoid crowding OCR banners.
+PUMP-CS-B,physical_component,pump,2962.5,2335.0,"[2770, 2255, 3155, 2415]",high,Tight box around PUMP-CS-B block. Final coordinate tightened to avoid overlap with adjacent load component. Lower-row bbox corrected to reduce/avoid overlap with neighboring components. Final lower-band bbox tightened around component body/label to reduce row overlaps and avoid crowding OCR banners.
+PUMP-CCW-B,physical_component,pump,3385.0,2335.0,"[3220, 2255, 3550, 2415]",high,Tight box around PUMP-CCW-B block. Lower-row bbox corrected to reduce/avoid overlap with neighboring components. Final lower-band bbox tightened around component body/label to reduce row overlaps and avoid crowding OCR banners.
+JB-A101,physical_component,junction_box,1762.5,2522.5,"[1595, 2470, 1930, 2575]",high,Tight box around JB-A101 junction box. Lower-row bbox corrected to reduce/avoid overlap with neighboring components. Final lower-band bbox tightened around component body/label to reduce row overlaps and avoid crowding OCR banners. Final bottom control/JB bbox re-centered on visible black block to avoid row drift.
+ANN-CR01,physical_component,annunciator,2317.5,2522.5,"[2040, 2470, 2595, 2575]",high,Tight box around ANN-CR01 block. Lower-row bbox corrected to reduce/avoid overlap with neighboring components. Final lower-band bbox tightened around component body/label to reduce row overlaps and avoid crowding OCR banners. Final bottom control/JB bbox re-centered on visible black block to avoid row drift.
+REC-SOE01,physical_component,recorder,2880.0,2522.5,"[2655, 2470, 3105, 2575]",high,Tight box around REC-SOE01 block. Lower-row bbox corrected to reduce/avoid overlap with neighboring components. Final lower-band bbox tightened around component body/label to reduce row overlaps and avoid crowding OCR banners. Final bottom control/JB bbox re-centered on visible black block to avoid row drift.
+JB-B101,physical_component,junction_box,3835.0,2522.5,"[3615, 2470, 4055, 2575]",high,Tight box around JB-B101 junction box. Lower-row bbox corrected to reduce/avoid overlap with neighboring components. Final lower-band bbox tightened around component body/label to reduce row overlaps and avoid crowding OCR banners. Final bottom control/JB bbox re-centered on visible black block to avoid row drift.
+CONTROL-ROOM-ANNUNCIATION,logical_node,control_bus,2950.0,2552.5,"[1850, 2520, 4050, 2585]",high,Control room annunciation dashed bus label.

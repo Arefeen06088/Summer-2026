@@ -1,0 +1,22 @@
+Node A,Node B,Reason
+`MCC-101`,`P-501`,No visible direct MCC drop to P-501; P-501 is locally tied to LIC-501/SP-501.
+`PT-501`,`H-N2-101`,"PT-501 signal line to PIC-501 is clear, but a direct N2 process tap is not visually terminated."
+`H-CCW-S`,`ZSO-101`,"ZSO-101 is an actuator position instrument, not a process-line bridge from the header endpoint."
+`ZSC-101`,`TIE-101`,ZSC-101 is paired with ZSO-101 on the actuator signal line; it is not the named process endpoint.
+`TIE-103`,`ZSO-102`,"ZSO-102 is an actuator position instrument, not the process path from TIE-103."
+`ZSC-102`,`OPC-102`,ZSC-102 is paired with ZSO-102 on the actuator signal line; process path is handled by TIE-103--OPC-102.
+`PSV-201`,`PI-301`,Both are local to V-101 but no direct line between the PSV and PI is visible.
+`LT-101`,`LSHH-101`,Both are tank level devices; direct LT-to-LSHH linkage is not visually supported.
+`LIC-101`,`LSHH-101`,Controller-to-level-switch shortcut; LSHH-101 is locally associated with TK-101.
+`LIC-101`,`LSLL-101`,Controller-to-level-switch shortcut; LSLL-101 is locally associated with TK-101/PCV-201 route.
+`LIC-101`,`HV-113B`,Controller-to-hand-valve/process shortcut; direct termination is not clear.
+`HV-113A`,`VV-101`,"VV-101 is on a vent/tank branch, not the inline discharge continuation from HV-113A."
+`H-SW-S`,`HS-201`,"HS-201 is an actuator/hand-switch association, not the service-water process endpoint."
+`HS-201`,`TIE-301`,HS-201 is not used as the process bridge to TIE-301.
+`LT-401`,`TK-402`,LT-401 is visibly local to TK-401; extension to TK-402 is an unsupported association.
+`LIC-401`,`HV-410`,LIC-401-to-HV-410 control/association shortcut is not a clear local termination.
+`LIC-401`,`HV-411`,LIC-401-to-HV-411 control/association shortcut is not a clear local termination.
+`SV-105`,`Q-401`,H-CD-MIX has separate local routes to SV-105 and Q-401; SV-105--Q-401 closes an unsupported triangle.
+`AIC-401`,`SP-101`,AIC-401 connects through AIT-401; direct AIC-to-sample-box shortcut removed.
+`H-VNT-101`,`LIC-501`,Vent line adjacency is represented through LT-501--LIC-501; direct H-VNT-to-LIC skips LT-501.
+`H-SMP-101`,`SP-501`,"Plausible sample/waste bridge, but no clear local termination into SP-501 was visible."

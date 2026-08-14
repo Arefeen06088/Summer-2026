@@ -1,0 +1,45 @@
+{
+  "iteration": 1,
+  "document_folder": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\1",
+  "final_source_round": "round_01_jennifer",
+  "nodes": 100,
+  "edges": 100,
+  "physical_components_in_input": 90,
+  "physical_components_in_final": 90,
+  "physical_missing": [],
+  "expected_buses_present": [
+    "BUS-120AC-A",
+    "BUS-120AC-B",
+    "BUS-125DC-A",
+    "BUS-125DC-B",
+    "BUS-480-A",
+    "BUS-480-B",
+    "BUS-480-C",
+    "BUS-4KV-A",
+    "BUS-4KV-B",
+    "BUS-4KV-C"
+  ],
+  "expected_buses_missing": [],
+  "logical_or_nonphysical_nodes": [
+    "BUS-120AC-A",
+    "BUS-120AC-B",
+    "BUS-125DC-A",
+    "BUS-125DC-B",
+    "BUS-480-A",
+    "BUS-480-B",
+    "BUS-480-C",
+    "BUS-4KV-A",
+    "BUS-4KV-B",
+    "BUS-4KV-C"
+  ],
+  "ground_like_nodes": [],
+  "matrix_is_symmetric_binary_zero_diagonal": true,
+  "matrix_edge_csv_match": true,
+  "notes": [
+    "All physical normalized_text labels should remain represented as rows.",
+    "Intermediate anonymous wire-node points are intentionally excluded.",
+    "Only visually named bus bars are retained as logical nodes.",
+    "No ground node is included unless visible in the final source round.",
+    "Remaining uncertainty is documented in final_notes.csv."
+  ]
+}

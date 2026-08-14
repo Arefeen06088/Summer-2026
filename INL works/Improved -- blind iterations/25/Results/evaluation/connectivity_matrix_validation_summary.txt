@@ -1,0 +1,52 @@
+Connectivity matrix validation summary - Document 25
+Input tree: Improved -- blind iterations
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\25\synthetic_npp_connectivity_matrix_revised_v4.csv
+Token usage: no token estimate files were present under the requested results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_matrix.csv): TP=192, FP=11, FN=16, Precision=0.945813, Recall=0.923077, F1=0.934307
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_matrix.csv): TP=191, FP=11, FN=17, Precision=0.945545, Recall=0.918269, F1=0.931707
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_matrix.csv): TP=191, FP=11, FN=17, Precision=0.945545, Recall=0.918269, F1=0.931707
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_matrix.csv): TP=191, FP=11, FN=17, Precision=0.945545, Recall=0.918269, F1=0.931707
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=191, FP=11, FN=17, Precision=0.945545, Recall=0.918269, F1=0.931707
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often act like extra/intermediate nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+
+False-positive edge examples:
+- 480V-CHGR-A-FEEDER -- CHGR-125-1A
+- 480V-CHGR-B-FEEDER -- CHGR-125-1B
+- DS-4A01 -- TR-480-1A
+- DS-4B01 -- TR-480-1B
+- DS-4C01 -- TR-480-1C
+- MCC-A1 -- MCC-A2
+- MCC-B1 -- MCC-B2
+- MCC-C1 -- MCC-C2
+- PNL-A-B-TIE -- PNL-RPS-A
+- PNL-A-B-TIE -- PNL-RPS-B
+
+False-negative edge examples:
+- BUS-125DC-A -- INV-120-1B
+- BUS-125DC-B -- INV-120-1A
+- BUS-4160-A -- TR-480-1A
+- BUS-4160-B -- TR-480-1B
+- BUS-4160-C -- TR-480-1C
+- BUS-480-1A -- CHGR-125-1A
+- BUS-480-1A -- MCC-A2
+- BUS-480-1B -- CHGR-125-1B
+- BUS-480-1B -- MCC-B2
+- BUS-480-1C -- MCC-C2
+
+Extra/non-GT nodes causing performance drops:
+- PNL-A-B-TIE: 2 incident false-positive edge(s)
+- 480V-CHGR-A-FEEDER: 1 incident false-positive edge(s)
+- 480V-CHGR-B-FEEDER: 1 incident false-positive edge(s)
+- RPS-TRIP-BUS: 1 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 4 extra/intermediate nodes were omitted from the extraction (PNL-A-B-TIE, 480V-CHGR-A-FEEDER, 480V-CHGR-B-FEEDER, RPS-TRIP-BUS), metrics would be TP=191, FP=6, FN=17, Precision=0.969543, Recall=0.918269, F1=0.943210.
+
+Missing GT node examples:
+- SWYD-115KV: 3 missed incident GT edge(s)

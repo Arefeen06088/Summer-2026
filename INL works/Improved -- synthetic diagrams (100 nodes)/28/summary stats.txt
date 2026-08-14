@@ -1,0 +1,28 @@
+| Metric                                                                | Value |
+| --------------------------------------------------------------------- | ----: |
+| Components / nodes                                                    |   200 |
+| Visible connections / CSV rows                                        |   210 |
+| Average node degree                                                   |  2.10 |
+| Process lines                                                         |    49 |
+| Utility, drain, vent, relief, sample, bypass, and recirculation lines |   119 |
+| Signal / control / data / interlock lines                             |    42 |
+| Control loops                                                         |     9 |
+
+Synthetic Auxiliary CCW P&ID Summary Statistics
+================================================
+number_of_components: 200
+number_of_connections: 210
+average_node_degree: 2.1
+equipment_type_distribution: {'filter': 3, 'heat_exchanger': 2, 'injection_quill': 1, 'mixer': 1, 'pump': 7, 'sample_cooler': 1, 'sample_panel': 1, 'strainer': 4, 'tank': 3, 'vessel': 2}
+valve_type_distribution: {'check_valve': 7, 'control_valve': 9, 'differential_valve': 1, 'drain_valve': 12, 'manual_valve': 41, 'motor_valve': 5, 'relief_valve': 6, 'sample_valve': 6, 'solenoid_valve': 7, 'vent_valve': 10}
+instrument_type_distribution: {'AIT': 1, 'CP': 1, 'DCS': 1, 'FIC': 4, 'FT': 4, 'JB': 3, 'LCP': 1, 'LI': 2, 'LIC': 2, 'LSHH': 2, 'LSL': 2, 'LSLL': 1, 'LT': 4, 'PDT': 2, 'PIC': 2, 'PLC': 1, 'PSL': 1, 'PT': 8, 'TI': 1, 'TIC': 1, 'TT': 3}
+piping_service_distribution: {'alarm_interlock': 1, 'analyzer_signal': 1, 'chemical_dosing': 23, 'component_cooling_water': 46, 'data_link': 2, 'demin_water': 5, 'differential_pressure': 2, 'drain': 16, 'flow_control': 4, 'flow_signal': 4, 'instrument_air': 8, 'level_control': 2, 'level_signal': 4, 'level_switch': 4, 'local_indicator': 2, 'nitrogen': 4, 'pressure_control': 2, 'pressure_signal': 8, 'pressure_switch': 1, 'relief': 12, 'sample': 9, 'service_water': 18, 'temperature_control': 1, 'temperature_signal': 4, 'vent': 16, 'wastewater': 11}
+connection_type_distribution: {'bypass_line': 11, 'control_signal': 9, 'data_signal': 2, 'drain_line': 27, 'instrument_signal': 30, 'interlock_signal': 1, 'process_pipe': 34, 'recirculation_line': 4, 'relief_line': 12, 'sample_line': 9, 'utility_pipe': 55, 'vent_line': 16}
+number_of_control_loops: 9
+control_loops: ['FIC-201', 'FIC-301', 'FIC-211A', 'FIC-211B', 'PIC-121', 'PIC-213', 'TIC-203', 'LIC-101', 'LIC-401']
+number_of_process_lines: 49
+number_of_utility_lines: 119
+number_of_signal_control_lines: 42
+nodes_with_degree_zero: []
+unique_tags: True
+csv_columns: ['source_component', 'target_component', 'connection_type', 'line_id', 'service', 'flow_direction']

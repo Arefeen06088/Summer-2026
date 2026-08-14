@@ -1,0 +1,11 @@
+item,action,reason
+round_02_connectivity_match,confirmed,Diego Round 2 matrix and edge list match Jennifer Round 1 intended final connectivity exactly.
+agent_convergence,converged_saturated,"Jennifer and Diego now agree on the same node set, 56-edge connectivity, and conservative handling of ambiguous dashed routes; no further supported changes were identified."
+node_set,confirmed,"Final matrix retains 47 visible physical components plus only the true BUS nodes BUS-6KA, BUS-6KB, BUS-480A, BUS-480B, BUS-125DCA, BUS-125DCB, BUS-120A, and BUS-120B."
+solid_power_edges,confirmed,All retained solid power/component-to-bus edges remain visually supported by the raw schematic.
+control_edges_retained,confirmed,"Supported dashed control edges retained are ATS-1A--RELAY-K12A via C01, ATS-1B--RELAY-K12B via C04, PAN-RPS-A--PLC-ESF via C03, and PLC-ESF--PAN-RPS-B via C06."
+C02_C05_vertical_routes,uncertain_excluded_from_matrix,"C02 and C05 remain ambiguous cable-tray/control routes without clean two-component endpoint pairs, so they are documented outside the matrix rather than guessed."
+relay_spurs_to_vertical_routes,uncertain_excluded_from_matrix,Dashed adjacency/spurs near RELAY-K12A/RELAY-K12B toward C02/C05 do not establish distinct component-to-component endpoints.
+INST-RACK-A_control,not_added,INST-RACK-A remains connected only as a solid BUS-120A load via P43; nearby dashed routing lacks a clean rack endpoint.
+INST-RACK-B_control,not_added,INST-RACK-B remains connected only as a solid BUS-120B load via P50; no distinct dashed control endpoint is visible.
+round_02_delta_from_diego,none,No mismatch was found; Jennifer Round 2 matrix and edges are copies of Diego Round 2 connectivity.

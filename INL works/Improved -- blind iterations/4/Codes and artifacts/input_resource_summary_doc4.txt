@@ -1,0 +1,19 @@
+Doc 4 input resource summary
+============================
+Primary raw schematic: raw -- synthetic_npp_120_component_electrical_schematic.png (8800 x 5734)
+Matching derived resources: component_visual_ocr_labels.csv, detected_components_and_logical_overlay.png, wires_mask.png, wires_mask_overlay.png, wire_nodes.csv, wire_nodes_overlay.png
+Ignored as mismatched aid unless explicitly needed: 5500 x 3362 raw/62-label component_and_logical files, which align with a different mirrored-train drawing.
+Physical component labels retained from matching CSV: 110
+Logical buses/grounds manually read from matching overlay/raw: 10
+
+Logical nodes:
+- BUS-480-RB1 (bus): green logical bus label and top thick reactor bus
+- BUS-480-RB2 (bus): green logical bus label and second thick reactor bus
+- BUS-480-LCA (bus): green logical bus label and lower left load-center bus
+- BUS-480-LCB (bus): green logical bus label and lower right load-center bus
+- BUS-125DCA (bus): green 125 VDC bus A label between charger and inverter
+- BUS-UPS-A (bus): green UPS bus A label between inverter and train A panels
+- BUS-125DCB (bus): green 125 VDC bus B label between charger and inverter
+- BUS-UPS-B (bus): green UPS bus B label between inverter and train B panels
+- GND-NG-A (ground): green ground node near TR-LC-A neutral grounding
+- GND-NG-B (ground): green ground node near TR-LC-B neutral grounding

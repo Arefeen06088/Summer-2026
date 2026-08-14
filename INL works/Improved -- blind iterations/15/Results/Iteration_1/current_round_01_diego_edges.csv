@@ -1,0 +1,199 @@
+source,target,confidence,evidence,edge_type
+GEN-101,CB-GEN-101,0.95,top_switchyard_sources raw/overlay: GEN-101 output conductor lands on CB-GEN-101 in series,power_solid
+CB-GEN-101,TR-GSU-1,0.95,top_switchyard_sources raw/overlay: CB-GEN-101 output conductor lands on TR-GSU-1 primary symbol,power_solid
+TR-GSU-1,BUS-SWY-1,0.95,top_switchyard_sources raw/overlay: vertical transformer conductor lands on BUS-SWY-1,power_solid
+GEN-102,CB-GEN-102,0.95,top_switchyard_sources raw/overlay: GEN-102 output conductor lands on CB-GEN-102 in series,power_solid
+CB-GEN-102,TR-GSU-2,0.95,top_switchyard_sources raw/overlay: CB-GEN-102 output conductor lands on TR-GSU-2 primary symbol,power_solid
+TR-GSU-2,BUS-SWY-2,0.95,top_switchyard_sources raw/overlay: vertical transformer conductor lands on BUS-SWY-2,power_solid
+BUS-SWY-1,CB-SWY-TIE,0.92,top_switchyard_sources raw/overlay: BUS-SWY-1 terminates at left side of CB-SWY-TIE,power_solid
+CB-SWY-TIE,BUS-SWY-2,0.92,top_switchyard_sources raw/overlay: right side of CB-SWY-TIE lands on BUS-SWY-2,power_solid
+BUS-SWY-1,TR-UAT-1,0.94,top_switchyard_sources raw/overlay: TR-UAT-1 vertical conductor taps BUS-SWY-1,power_solid
+TR-UAT-1,BUS-NSS-1,0.94,top_switchyard_sources and division_a_medium_voltage raw: TR-UAT-1 lower conductor lands on BUS-NSS-1,power_solid
+BUS-SWY-1,TR-SAT-1,0.94,top_switchyard_sources raw/overlay: TR-SAT-1 vertical conductor taps BUS-SWY-1,power_solid
+TR-SAT-1,BUS-NSS-1,0.94,top_switchyard_sources and division_b_medium_voltage raw: TR-SAT-1 lower conductor lands on BUS-NSS-1,power_solid
+BUS-SWY-2,TR-UAT-2,0.94,top_switchyard_sources raw/overlay: TR-UAT-2 vertical conductor taps BUS-SWY-2,power_solid
+TR-UAT-2,BUS-NSS-2,0.94,top_switchyard_sources and division_c_medium_voltage raw: TR-UAT-2 lower conductor lands on BUS-NSS-2,power_solid
+BUS-SWY-2,TR-SAT-2,0.94,top_switchyard_sources raw/overlay: TR-SAT-2 vertical conductor taps BUS-SWY-2,power_solid
+TR-SAT-2,BUS-NSS-2,0.94,top_switchyard_sources and division_d_medium_voltage raw: TR-SAT-2 lower conductor lands on BUS-NSS-2,power_solid
+BUS-NSS-1,CB-NF-A,0.93,division_a_medium_voltage raw/overlay: normal-feed vertical conductor drops from BUS-NSS-1 into CB-NF-A,power_solid
+CB-NF-A,BUS-416A,0.93,division_a_medium_voltage raw/overlay: CB-NF-A lower conductor lands on BUS-416A,power_solid
+DG-1A,CB-DG-A,0.92,division_a_medium_voltage raw/overlay: diesel generator DG-1A has vertical conductor to CB-DG-A,power_solid
+CB-DG-A,BUS-416A,0.93,division_a_medium_voltage raw/overlay: CB-DG-A lower conductor lands on BUS-416A,power_solid
+BUS-416A,CB-TX-A,0.94,division_a_medium_voltage raw/overlay: transformer feeder taps BUS-416A and enters CB-TX-A,power_solid
+CB-TX-A,TR-480A,0.94,division_a_medium_voltage raw/overlay: CB-TX-A lower conductor lands on TR-480A,power_solid
+TR-480A,BUS-480A,0.94,division_a_medium_voltage raw/overlay: TR-480A lower conductor lands on BUS-480A,power_solid
+BUS-480A,MCC-1A,0.90,division_a_medium_voltage plus division_a_mcc_loads raw: vertical feeder continues from BUS-480A to MCC-1A,power_solid
+BUS-NSS-1,CB-NF-B,0.93,division_b_medium_voltage raw/overlay: normal-feed vertical conductor drops from BUS-NSS-1 into CB-NF-B,power_solid
+CB-NF-B,BUS-416B,0.93,division_b_medium_voltage raw/overlay: CB-NF-B lower conductor lands on BUS-416B,power_solid
+DG-1B,CB-DG-B,0.92,division_b_medium_voltage raw/overlay: diesel generator DG-1B has vertical conductor to CB-DG-B,power_solid
+CB-DG-B,BUS-416B,0.93,division_b_medium_voltage raw/overlay: CB-DG-B lower conductor lands on BUS-416B,power_solid
+BUS-416B,CB-TX-B,0.94,division_b_medium_voltage raw/overlay: transformer feeder taps BUS-416B and enters CB-TX-B,power_solid
+CB-TX-B,TR-480B,0.94,division_b_medium_voltage raw/overlay: CB-TX-B lower conductor lands on TR-480B,power_solid
+TR-480B,BUS-480B,0.94,division_b_medium_voltage raw/overlay: TR-480B lower conductor lands on BUS-480B,power_solid
+BUS-480B,MCC-1B,0.90,division_b_medium_voltage plus division_b_mcc_loads raw: vertical feeder continues from BUS-480B to MCC-1B,power_solid
+BUS-NSS-2,CB-NF-C,0.93,division_c_medium_voltage raw/overlay: normal-feed vertical conductor drops from BUS-NSS-2 into CB-NF-C,power_solid
+CB-NF-C,BUS-416C,0.93,division_c_medium_voltage raw/overlay: CB-NF-C lower conductor lands on BUS-416C,power_solid
+DG-1C,CB-DG-C,0.92,division_c_medium_voltage raw/overlay: diesel generator DG-1C has vertical conductor to CB-DG-C,power_solid
+CB-DG-C,BUS-416C,0.93,division_c_medium_voltage raw/overlay: CB-DG-C lower conductor lands on BUS-416C,power_solid
+BUS-416C,CB-TX-C,0.94,division_c_medium_voltage raw/overlay: transformer feeder taps BUS-416C and enters CB-TX-C,power_solid
+CB-TX-C,TR-480C,0.94,division_c_medium_voltage raw/overlay: CB-TX-C lower conductor lands on TR-480C,power_solid
+TR-480C,BUS-480C,0.94,division_c_medium_voltage raw/overlay: TR-480C lower conductor lands on BUS-480C,power_solid
+BUS-480C,MCC-1C,0.90,division_c_medium_voltage plus division_c_mcc_loads raw: vertical feeder continues from BUS-480C to MCC-1C,power_solid
+BUS-NSS-2,CB-NF-D,0.93,division_d_medium_voltage raw/overlay: normal-feed vertical conductor drops from BUS-NSS-2 into CB-NF-D,power_solid
+CB-NF-D,BUS-416D,0.93,division_d_medium_voltage raw/overlay: CB-NF-D lower conductor lands on BUS-416D,power_solid
+DG-1D,CB-DG-D,0.92,division_d_medium_voltage raw/overlay: diesel generator DG-1D has vertical conductor to CB-DG-D,power_solid
+CB-DG-D,BUS-416D,0.93,division_d_medium_voltage raw/overlay: CB-DG-D lower conductor lands on BUS-416D,power_solid
+BUS-416D,CB-TX-D,0.94,division_d_medium_voltage raw/overlay: transformer feeder taps BUS-416D and enters CB-TX-D,power_solid
+CB-TX-D,TR-480D,0.94,division_d_medium_voltage raw/overlay: CB-TX-D lower conductor lands on TR-480D,power_solid
+TR-480D,BUS-480D,0.94,division_d_medium_voltage raw/overlay: TR-480D lower conductor lands on BUS-480D,power_solid
+BUS-480D,MCC-1D,0.90,division_d_medium_voltage plus division_d_mcc_loads raw: vertical feeder continues from BUS-480D to MCC-1D,power_solid
+BUS-NSS-1,DG-1A,0.42,division_a_medium_voltage wire_nodes_overlay/raw: BUS-NSS-1 line appears to enter/exit the DG-1A symbol; possible symbol overlap/overconnection,power_solid_uncertain
+BUS-NSS-2,DG-1C,0.42,division_c_medium_voltage raw: BUS-NSS-2 line appears to enter/exit the DG-1C symbol; possible symbol overlap/overconnection,power_solid_uncertain
+BUS-416A,CB-TIE-AB,0.93,tie_ab_and_control raw/overlay: left BUS-416A conductor lands on CB-TIE-AB,power_solid
+CB-TIE-AB,DS-TIE-AB,0.93,tie_ab_and_control raw/overlay: CB-TIE-AB is in series with DS-TIE-AB,power_solid
+DS-TIE-AB,BUS-416B,0.93,tie_ab_and_control raw/overlay: DS-TIE-AB right conductor lands on BUS-416B,power_solid
+BUS-416C,CB-TIE-CD,0.93,tie_cd_and_control raw/overlay: left BUS-416C conductor lands on CB-TIE-CD,power_solid
+CB-TIE-CD,DS-TIE-CD,0.93,tie_cd_and_control raw/overlay: CB-TIE-CD is in series with DS-TIE-CD,power_solid
+DS-TIE-CD,BUS-416D,0.93,tie_cd_and_control raw/overlay: DS-TIE-CD right conductor lands on BUS-416D,power_solid
+CB-NF-A,CB-DG-A,0.60,division_a_medium_voltage raw/overlay: dashed control/trip lead runs between CB-NF-A and CB-DG-A,control_dashed
+CB-NF-B,CB-DG-B,0.60,division_b_medium_voltage raw/overlay: dashed control/trip lead runs between CB-NF-B and CB-DG-B,control_dashed
+CB-NF-C,CB-DG-C,0.60,division_c_medium_voltage raw/overlay: dashed control/trip lead runs between CB-NF-C and CB-DG-C,control_dashed
+CB-NF-D,CB-DG-D,0.60,division_d_medium_voltage raw/overlay: dashed control/trip lead runs between CB-NF-D and CB-DG-D,control_dashed
+SEQ-1AB,CB-DG-A,0.48,division_a_medium_voltage and tie_ab_and_control raw: dashed vertical from CB-DG-A region descends into SEQ-1AB branch,control_dashed_uncertain
+RPS-AC-1,CB-DG-A,0.48,division_a_medium_voltage and tie_ab_and_control raw: lower dashed vertical from CB-DG-A region descends into RPS-AC-1 branch,control_dashed_uncertain
+SEQ-1AB,CB-NF-B,0.45,division_b_medium_voltage and tie_ab_and_control raw: dashed vertical from SEQ-1AB branch rises near CB-NF-B/control line,control_dashed_uncertain
+RPS-AC-1,CB-NF-B,0.45,division_b_medium_voltage and tie_ab_and_control raw: dashed vertical from RPS-AC-1 branch rises near CB-NF-B/control line,control_dashed_uncertain
+SEQ-1AB,RPS-AC-1,0.35,tie_ab_and_control raw: SEQ-1AB and RPS-AC-1 share the same dashed side risers; junction interpretation uncertain,control_dashed_uncertain
+SEQ-2CD,CB-DG-C,0.48,division_c_medium_voltage and tie_cd_and_control raw: dashed vertical from CB-DG-C region descends into SEQ-2CD branch,control_dashed_uncertain
+RPS-AC-2,CB-DG-C,0.48,division_c_medium_voltage and tie_cd_and_control raw: lower dashed vertical from CB-DG-C region descends into RPS-AC-2 branch,control_dashed_uncertain
+SEQ-2CD,CB-NF-D,0.45,division_d_medium_voltage and tie_cd_and_control raw: dashed vertical from SEQ-2CD branch rises near CB-NF-D/control line,control_dashed_uncertain
+RPS-AC-2,CB-NF-D,0.45,division_d_medium_voltage and tie_cd_and_control raw: dashed vertical from RPS-AC-2 branch rises near CB-NF-D/control line,control_dashed_uncertain
+SEQ-2CD,RPS-AC-2,0.35,tie_cd_and_control raw: SEQ-2CD and RPS-AC-2 share the same dashed side risers; junction interpretation uncertain,control_dashed_uncertain
+MCC-1A,CB-A01,0.95,division_a_mcc_loads raw/overlay: vertical feeder from MCC-1A bus lands on CB-A01,power_solid
+CB-A01,DS-A01,0.94,division_a_mcc_loads raw/overlay: CB-A01 lower solid conductor lands on DS-A01,power_solid
+DS-A01,PMP-SI-A1,0.94,division_a_mcc_loads raw/overlay: DS-A01 lower solid conductor lands on terminal load PMP-SI-A1,power_solid
+CB-A01,RLY-A01,0.62,division_a_mcc_loads raw/overlay: dashed trip/control lead from CB-A01 side lands at relay RLY-A01,control_dashed
+MCC-1A,CB-A02,0.95,division_a_mcc_loads raw/overlay: vertical feeder from MCC-1A bus lands on CB-A02,power_solid
+CB-A02,FU-A02,0.94,division_a_mcc_loads raw/overlay: CB-A02 lower solid conductor lands on FU-A02,power_solid
+FU-A02,PMP-CS-A2,0.94,division_a_mcc_loads raw/overlay: FU-A02 lower solid conductor lands on terminal load PMP-CS-A2,power_solid
+CB-A02,RLY-A02,0.62,division_a_mcc_loads raw/overlay: dashed trip/control lead from CB-A02 side lands at relay RLY-A02,control_dashed
+MCC-1A,CB-A03,0.95,division_a_mcc_loads raw/overlay: vertical feeder from MCC-1A bus lands on CB-A03,power_solid
+CB-A03,DS-A03,0.94,division_a_mcc_loads raw/overlay: CB-A03 lower solid conductor lands on DS-A03,power_solid
+DS-A03,MOV-A03,0.94,division_a_mcc_loads raw/overlay: DS-A03 lower solid conductor lands on terminal load MOV-A03,power_solid
+CB-A03,RLY-A03,0.62,division_a_mcc_loads raw/overlay: dashed trip/control lead from CB-A03 side lands at relay RLY-A03,control_dashed
+MCC-1A,CB-A04,0.95,division_a_mcc_loads raw/overlay: vertical feeder from MCC-1A bus lands on CB-A04,power_solid
+CB-A04,FU-A04,0.94,division_a_mcc_loads raw/overlay: CB-A04 lower solid conductor lands on FU-A04,power_solid
+FU-A04,MTR-A04,0.94,division_a_mcc_loads raw/overlay: FU-A04 lower solid conductor lands on terminal load MTR-A04,power_solid
+CB-A04,RLY-A04,0.62,division_a_mcc_loads raw/overlay: dashed trip/control lead from CB-A04 side lands at relay RLY-A04,control_dashed
+MCC-1A,CB-A05,0.95,division_a_mcc_loads raw/overlay: vertical feeder from MCC-1A bus lands on CB-A05,power_solid
+CB-A05,DS-A05,0.94,division_a_mcc_loads raw/overlay: CB-A05 lower solid conductor lands on DS-A05,power_solid
+DS-A05,INST-A05,0.94,division_a_mcc_loads raw/overlay: DS-A05 lower solid conductor lands on terminal load INST-A05,power_solid
+CB-A05,RLY-A05,0.62,division_a_mcc_loads raw/overlay: dashed trip/control lead from CB-A05 side lands at relay RLY-A05,control_dashed
+MCC-1A,CB-A06,0.95,division_a_mcc_loads raw/overlay: vertical feeder from MCC-1A bus lands on CB-A06,power_solid
+CB-A06,FU-A06,0.94,division_a_mcc_loads raw/overlay: CB-A06 lower solid conductor lands on FU-A06,power_solid
+FU-A06,PMP-SW-A6,0.94,division_a_mcc_loads raw/overlay: FU-A06 lower solid conductor lands on terminal load PMP-SW-A6,power_solid
+CB-A06,RLY-A06,0.62,division_a_mcc_loads raw/overlay: dashed trip/control lead from CB-A06 side lands at relay RLY-A06,control_dashed
+MCC-1B,CB-B01,0.95,division_b_mcc_loads raw/overlay: vertical feeder from MCC-1B bus lands on CB-B01,power_solid
+CB-B01,DS-B01,0.94,division_b_mcc_loads raw/overlay: CB-B01 lower solid conductor lands on DS-B01,power_solid
+DS-B01,PMP-SI-B1,0.94,division_b_mcc_loads raw/overlay: DS-B01 lower solid conductor lands on terminal load PMP-SI-B1,power_solid
+CB-B01,RLY-B01,0.62,division_b_mcc_loads raw/overlay: dashed trip/control lead from CB-B01 side lands at relay RLY-B01,control_dashed
+MCC-1B,CB-B02,0.95,division_b_mcc_loads raw/overlay: vertical feeder from MCC-1B bus lands on CB-B02,power_solid
+CB-B02,FU-B02,0.94,division_b_mcc_loads raw/overlay: CB-B02 lower solid conductor lands on FU-B02,power_solid
+FU-B02,PMP-CS-B2,0.94,division_b_mcc_loads raw/overlay: FU-B02 lower solid conductor lands on terminal load PMP-CS-B2,power_solid
+CB-B02,RLY-B02,0.62,division_b_mcc_loads raw/overlay: dashed trip/control lead from CB-B02 side lands at relay RLY-B02,control_dashed
+MCC-1B,CB-B03,0.95,division_b_mcc_loads raw/overlay: vertical feeder from MCC-1B bus lands on CB-B03,power_solid
+CB-B03,DS-B03,0.94,division_b_mcc_loads raw/overlay: CB-B03 lower solid conductor lands on DS-B03,power_solid
+DS-B03,MOV-B03,0.94,division_b_mcc_loads raw/overlay: DS-B03 lower solid conductor lands on terminal load MOV-B03,power_solid
+CB-B03,RLY-B03,0.62,division_b_mcc_loads raw/overlay: dashed trip/control lead from CB-B03 side lands at relay RLY-B03,control_dashed
+MCC-1B,CB-B04,0.95,division_b_mcc_loads raw/overlay: vertical feeder from MCC-1B bus lands on CB-B04,power_solid
+CB-B04,FU-B04,0.94,division_b_mcc_loads raw/overlay: CB-B04 lower solid conductor lands on FU-B04,power_solid
+FU-B04,MTR-B04,0.94,division_b_mcc_loads raw/overlay: FU-B04 lower solid conductor lands on terminal load MTR-B04,power_solid
+CB-B04,RLY-B04,0.62,division_b_mcc_loads raw/overlay: dashed trip/control lead from CB-B04 side lands at relay RLY-B04,control_dashed
+MCC-1B,CB-B05,0.95,division_b_mcc_loads raw/overlay: vertical feeder from MCC-1B bus lands on CB-B05,power_solid
+CB-B05,DS-B05,0.94,division_b_mcc_loads raw/overlay: CB-B05 lower solid conductor lands on DS-B05,power_solid
+DS-B05,INST-B05,0.94,division_b_mcc_loads raw/overlay: DS-B05 lower solid conductor lands on terminal load INST-B05,power_solid
+CB-B05,RLY-B05,0.62,division_b_mcc_loads raw/overlay: dashed trip/control lead from CB-B05 side lands at relay RLY-B05,control_dashed
+MCC-1B,CB-B06,0.95,division_b_mcc_loads raw/overlay: vertical feeder from MCC-1B bus lands on CB-B06,power_solid
+CB-B06,FU-B06,0.94,division_b_mcc_loads raw/overlay: CB-B06 lower solid conductor lands on FU-B06,power_solid
+FU-B06,PMP-SW-B6,0.94,division_b_mcc_loads raw/overlay: FU-B06 lower solid conductor lands on terminal load PMP-SW-B6,power_solid
+CB-B06,RLY-B06,0.62,division_b_mcc_loads raw/overlay: dashed trip/control lead from CB-B06 side lands at relay RLY-B06,control_dashed
+MCC-1C,CB-C01,0.95,division_c_mcc_loads raw/overlay: vertical feeder from MCC-1C bus lands on CB-C01,power_solid
+CB-C01,DS-C01,0.94,division_c_mcc_loads raw/overlay: CB-C01 lower solid conductor lands on DS-C01,power_solid
+DS-C01,PMP-SI-C1,0.94,division_c_mcc_loads raw/overlay: DS-C01 lower solid conductor lands on terminal load PMP-SI-C1,power_solid
+CB-C01,RLY-C01,0.62,division_c_mcc_loads raw/overlay: dashed trip/control lead from CB-C01 side lands at relay RLY-C01,control_dashed
+MCC-1C,CB-C02,0.95,division_c_mcc_loads raw/overlay: vertical feeder from MCC-1C bus lands on CB-C02,power_solid
+CB-C02,FU-C02,0.94,division_c_mcc_loads raw/overlay: CB-C02 lower solid conductor lands on FU-C02,power_solid
+FU-C02,PMP-CS-C2,0.94,division_c_mcc_loads raw/overlay: FU-C02 lower solid conductor lands on terminal load PMP-CS-C2,power_solid
+CB-C02,RLY-C02,0.62,division_c_mcc_loads raw/overlay: dashed trip/control lead from CB-C02 side lands at relay RLY-C02,control_dashed
+MCC-1C,CB-C03,0.95,division_c_mcc_loads raw/overlay: vertical feeder from MCC-1C bus lands on CB-C03,power_solid
+CB-C03,DS-C03,0.94,division_c_mcc_loads raw/overlay: CB-C03 lower solid conductor lands on DS-C03,power_solid
+DS-C03,MOV-C03,0.94,division_c_mcc_loads raw/overlay: DS-C03 lower solid conductor lands on terminal load MOV-C03,power_solid
+CB-C03,RLY-C03,0.62,division_c_mcc_loads raw/overlay: dashed trip/control lead from CB-C03 side lands at relay RLY-C03,control_dashed
+MCC-1C,CB-C04,0.95,division_c_mcc_loads raw/overlay: vertical feeder from MCC-1C bus lands on CB-C04,power_solid
+CB-C04,FU-C04,0.94,division_c_mcc_loads raw/overlay: CB-C04 lower solid conductor lands on FU-C04,power_solid
+FU-C04,MTR-C04,0.94,division_c_mcc_loads raw/overlay: FU-C04 lower solid conductor lands on terminal load MTR-C04,power_solid
+CB-C04,RLY-C04,0.62,division_c_mcc_loads raw/overlay: dashed trip/control lead from CB-C04 side lands at relay RLY-C04,control_dashed
+MCC-1C,CB-C05,0.95,division_c_mcc_loads raw/overlay: vertical feeder from MCC-1C bus lands on CB-C05,power_solid
+CB-C05,DS-C05,0.94,division_c_mcc_loads raw/overlay: CB-C05 lower solid conductor lands on DS-C05,power_solid
+DS-C05,INST-C05,0.94,division_c_mcc_loads raw/overlay: DS-C05 lower solid conductor lands on terminal load INST-C05,power_solid
+CB-C05,RLY-C05,0.62,division_c_mcc_loads raw/overlay: dashed trip/control lead from CB-C05 side lands at relay RLY-C05,control_dashed
+MCC-1C,CB-C06,0.95,division_c_mcc_loads raw/overlay: vertical feeder from MCC-1C bus lands on CB-C06,power_solid
+CB-C06,FU-C06,0.94,division_c_mcc_loads raw/overlay: CB-C06 lower solid conductor lands on FU-C06,power_solid
+FU-C06,PMP-SW-C6,0.94,division_c_mcc_loads raw/overlay: FU-C06 lower solid conductor lands on terminal load PMP-SW-C6,power_solid
+CB-C06,RLY-C06,0.62,division_c_mcc_loads raw/overlay: dashed trip/control lead from CB-C06 side lands at relay RLY-C06,control_dashed
+MCC-1D,CB-D01,0.95,division_d_mcc_loads raw/overlay: vertical feeder from MCC-1D bus lands on CB-D01,power_solid
+CB-D01,DS-D01,0.94,division_d_mcc_loads raw/overlay: CB-D01 lower solid conductor lands on DS-D01,power_solid
+DS-D01,PMP-SI-D1,0.94,division_d_mcc_loads raw/overlay: DS-D01 lower solid conductor lands on terminal load PMP-SI-D1,power_solid
+CB-D01,RLY-D01,0.62,division_d_mcc_loads raw/overlay: dashed trip/control lead from CB-D01 side lands at relay RLY-D01,control_dashed
+MCC-1D,CB-D02,0.95,division_d_mcc_loads raw/overlay: vertical feeder from MCC-1D bus lands on CB-D02,power_solid
+CB-D02,FU-D02,0.94,division_d_mcc_loads raw/overlay: CB-D02 lower solid conductor lands on FU-D02,power_solid
+FU-D02,PMP-CS-D2,0.94,division_d_mcc_loads raw/overlay: FU-D02 lower solid conductor lands on terminal load PMP-CS-D2,power_solid
+CB-D02,RLY-D02,0.62,division_d_mcc_loads raw/overlay: dashed trip/control lead from CB-D02 side lands at relay RLY-D02,control_dashed
+MCC-1D,CB-D03,0.95,division_d_mcc_loads raw/overlay: vertical feeder from MCC-1D bus lands on CB-D03,power_solid
+CB-D03,DS-D03,0.94,division_d_mcc_loads raw/overlay: CB-D03 lower solid conductor lands on DS-D03,power_solid
+DS-D03,MOV-D03,0.94,division_d_mcc_loads raw/overlay: DS-D03 lower solid conductor lands on terminal load MOV-D03,power_solid
+CB-D03,RLY-D03,0.62,division_d_mcc_loads raw/overlay: dashed trip/control lead from CB-D03 side lands at relay RLY-D03,control_dashed
+MCC-1D,CB-D04,0.95,division_d_mcc_loads raw/overlay: vertical feeder from MCC-1D bus lands on CB-D04,power_solid
+CB-D04,FU-D04,0.94,division_d_mcc_loads raw/overlay: CB-D04 lower solid conductor lands on FU-D04,power_solid
+FU-D04,MTR-D04,0.94,division_d_mcc_loads raw/overlay: FU-D04 lower solid conductor lands on terminal load MTR-D04,power_solid
+CB-D04,RLY-D04,0.62,division_d_mcc_loads raw/overlay: dashed trip/control lead from CB-D04 side lands at relay RLY-D04,control_dashed
+MCC-1D,CB-D05,0.95,division_d_mcc_loads raw/overlay: vertical feeder from MCC-1D bus lands on CB-D05,power_solid
+CB-D05,DS-D05,0.94,division_d_mcc_loads raw/overlay: CB-D05 lower solid conductor lands on DS-D05,power_solid
+DS-D05,INST-D05,0.94,division_d_mcc_loads raw/overlay: DS-D05 lower solid conductor lands on terminal load INST-D05,power_solid
+CB-D05,RLY-D05,0.62,division_d_mcc_loads raw/overlay: dashed trip/control lead from CB-D05 side lands at relay RLY-D05,control_dashed
+MCC-1D,CB-D06,0.95,division_d_mcc_loads raw/overlay: vertical feeder from MCC-1D bus lands on CB-D06,power_solid
+CB-D06,FU-D06,0.94,division_d_mcc_loads raw/overlay: CB-D06 lower solid conductor lands on FU-D06,power_solid
+FU-D06,PMP-SW-D6,0.94,division_d_mcc_loads raw/overlay: FU-D06 lower solid conductor lands on terminal load PMP-SW-D6,power_solid
+CB-D06,RLY-D06,0.62,division_d_mcc_loads raw/overlay: dashed trip/control lead from CB-D06 side lands at relay RLY-D06,control_dashed
+BAT-125A,CHG-1A,0.82,division_a_dc_ground raw/overlay: dashed DC/control line connects BAT-125A to CHG-1A,dc_dashed
+CHG-1A,BUS-DC-A,0.90,division_a_dc_ground raw/overlay: dashed line from CHG-1A lands on BUS-DC-A,dc_dashed
+BUS-DC-A,INV-1A,0.90,division_a_dc_ground raw/overlay: dashed line from BUS-DC-A lands on INV-1A,dc_dashed
+INV-1A,CP-1A,0.86,division_a_dc_ground raw/overlay: dashed line from INV-1A lands on CP-1A,dc_dashed
+CP-1A,TB-1A,0.84,division_a_dc_ground raw/overlay: dashed horizontal line from CP-1A lands on TB-1A,control_dashed
+CP-1A,JB-1A,0.80,division_a_dc_ground raw/overlay: dashed drop from CP-1A turns into JB-1A,control_dashed
+BUS-DC-A,GND-A,0.78,division_a_dc_ground raw/overlay: dashed ground tap drops from BUS-DC-A to GND-A,ground_dashed
+RLY-A06,TB-1A,0.44,division_a_dc_ground plus division_a_mcc_loads raw: long dashed control lead from RLY-A06 area descends to TB-1A,control_dashed_uncertain
+BAT-125B,CHG-1B,0.82,division_b_dc_ground raw/overlay: dashed DC/control line connects BAT-125B to CHG-1B,dc_dashed
+CHG-1B,BUS-DC-B,0.90,division_b_dc_ground raw/overlay: dashed line from CHG-1B lands on BUS-DC-B,dc_dashed
+BUS-DC-B,INV-1B,0.90,division_b_dc_ground raw/overlay: dashed line from BUS-DC-B lands on INV-1B,dc_dashed
+INV-1B,CP-1B,0.86,division_b_dc_ground raw/overlay: dashed line from INV-1B lands on CP-1B,dc_dashed
+CP-1B,TB-1B,0.84,division_b_dc_ground raw/overlay: dashed horizontal line from CP-1B lands on TB-1B,control_dashed
+CP-1B,JB-1B,0.80,division_b_dc_ground raw/overlay: dashed drop from CP-1B turns into JB-1B,control_dashed
+BUS-DC-B,GND-B,0.78,division_b_dc_ground raw/overlay: dashed ground tap drops from BUS-DC-B to GND-B,ground_dashed
+RLY-B06,TB-1B,0.44,division_b_dc_ground plus division_b_mcc_loads raw: long dashed control lead from RLY-B06 area descends to TB-1B,control_dashed_uncertain
+BAT-125C,CHG-1C,0.82,division_c_dc_ground raw/overlay: dashed DC/control line connects BAT-125C to CHG-1C,dc_dashed
+CHG-1C,BUS-DC-C,0.90,division_c_dc_ground raw/overlay: dashed line from CHG-1C lands on BUS-DC-C,dc_dashed
+BUS-DC-C,INV-1C,0.90,division_c_dc_ground raw/overlay: dashed line from BUS-DC-C lands on INV-1C,dc_dashed
+INV-1C,CP-1C,0.86,division_c_dc_ground raw/overlay: dashed line from INV-1C lands on CP-1C,dc_dashed
+CP-1C,TB-1C,0.84,division_c_dc_ground raw/overlay: dashed horizontal line from CP-1C lands on TB-1C,control_dashed
+CP-1C,JB-1C,0.80,division_c_dc_ground raw/overlay: dashed drop from CP-1C turns into JB-1C,control_dashed
+BUS-DC-C,GND-C,0.78,division_c_dc_ground raw/overlay: dashed ground tap drops from BUS-DC-C to GND-C,ground_dashed
+RLY-C06,TB-1C,0.44,division_c_dc_ground plus division_c_mcc_loads raw: long dashed control lead from RLY-C06 area descends to TB-1C,control_dashed_uncertain
+BAT-125D,CHG-1D,0.82,division_d_dc_ground raw/overlay: dashed DC/control line connects BAT-125D to CHG-1D,dc_dashed
+CHG-1D,BUS-DC-D,0.90,division_d_dc_ground raw/overlay: dashed line from CHG-1D lands on BUS-DC-D,dc_dashed
+BUS-DC-D,INV-1D,0.90,division_d_dc_ground raw/overlay: dashed line from BUS-DC-D lands on INV-1D,dc_dashed
+INV-1D,CP-1D,0.86,division_d_dc_ground raw/overlay: dashed line from INV-1D lands on CP-1D,dc_dashed
+CP-1D,TB-1D,0.84,division_d_dc_ground raw/overlay: dashed horizontal line from CP-1D lands on TB-1D,control_dashed
+CP-1D,JB-1D,0.80,division_d_dc_ground raw/overlay: dashed drop from CP-1D turns into JB-1D,control_dashed
+BUS-DC-D,GND-D,0.78,division_d_dc_ground raw/overlay: dashed ground tap drops from BUS-DC-D to GND-D,ground_dashed
+RLY-D06,TB-1D,0.44,division_d_dc_ground plus division_d_mcc_loads raw: long dashed control lead from RLY-D06 area descends to TB-1D,control_dashed_uncertain

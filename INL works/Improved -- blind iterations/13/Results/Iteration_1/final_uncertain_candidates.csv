@@ -1,0 +1,34 @@
+source,target,evidence,uncertainty_reason
+TR-SUT-1B,BUS-4A,The TR-SUT-1B secondary is drawn near the BUS-4A source riser and other long source conductors in the top-left/top-center crops.,Cross-routing and shared vertical source geometry make the actual bus landing ambiguous; do not accept as a direct edge without Diego confirmation.
+TR-SUT-1B,BUS-4B,A long solid source path from the SUT/EDG-A area runs toward the BUS-4B source region in the top-center crop.,The line path crosses the A/B source area and is not a clean transformer-to-bus endpoint in the crop.
+CB-DGA,BUS-4B,The top-center crop shows a long source conductor from the EDG-A area toward the BUS-4B side.,The conductor is near the auto-start annotation and cross-train source routing; direct CB-DGA-to-BUS-4B connectivity is not visually certain.
+CB-DGB,BUS-4A,The A/B source area includes long solid conductors between the two train regions.,No clean junction-dot path from CB-DGB back to BUS-4A is visually supported; likely overconnect/cross-route candidate.
+CB-201,TR-UAT-1B,The lower source crops show the unit generator auxiliary source conductors spanning toward both UAT transformer areas.,The TR-UAT-1B primary feed route is partly off the central crop and overlaps other C/D source conductors.
+TR-UAT-1A,BUS-4D,The lower C/D source region contains long UAT conductors running across the C/D bus area.,Cross-routing near the C/D tie region is ambiguous; direct TR-UAT-1A-to-BUS-4D landing is not confirmed.
+TR-UAT-1B,BUS-4C,The lower source region shows long UAT conductors crossing between the C and D train source areas.,The visible clean landing for TR-UAT-1B is on the D-side bus; a C-side connection remains ambiguous.
+LC-480A,CHG-125A,CHG-125A is located in the train A LC/DC cluster below the LC-480A area.,No direct AC feeder from LC-480A to the charger terminal is cleanly visible; proximity alone is insufficient.
+LC-480B,CHG-125B,CHG-125B is located in the train B LC/DC cluster below the LC-480B area.,No direct AC feeder from LC-480B to the charger terminal is cleanly visible; proximity alone is insufficient.
+LC-480C,CHG-125C,CHG-125C is located in the train C LC/DC cluster below the LC-480C area.,No direct AC feeder from LC-480C to the charger terminal is cleanly visible; proximity alone is insufficient.
+LC-480D,CHG-125D,CHG-125D is located in the train D LC/DC cluster below the LC-480D area.,No direct AC feeder from LC-480D to the charger terminal is cleanly visible; proximity alone is insufficient.
+JB-A1,DC-BUS-A,JB-A1 sits immediately above the train A DC/UPS cluster with nearby vertical/dashed wiring.,The nearby path is not a clean solid direct conductor to DC-BUS-A and may be control/instrument routing.
+JB-B1,DC-BUS-B,JB-B1 sits immediately above the train B DC/UPS cluster with nearby vertical/dashed wiring.,The nearby path is not a clean solid direct conductor to DC-BUS-B and may be control/instrument routing.
+JB-C1,DC-BUS-C,JB-C1 sits immediately above the train C DC/UPS cluster with nearby vertical/dashed wiring.,The nearby path is not a clean solid direct conductor to DC-BUS-C and may be control/instrument routing.
+JB-D1,DC-BUS-D,JB-D1 sits immediately above the train D DC/UPS cluster with nearby vertical/dashed wiring.,The nearby path is not a clean solid direct conductor to DC-BUS-D and may be control/instrument routing.
+UPS-A,LOCAL-IO-A,UPS-A has a side output conductor in the train A DC/UPS area and LOCAL I/O is labeled at the LC-480A terminal tap.,The UPS output is not visibly traceable to the LOCAL-IO-A terminal; do not infer the relationship from label proximity.
+UPS-B,LOCAL-IO-B,UPS-B has a side output conductor in the train B DC/UPS area and LOCAL I/O is labeled at the LC-480B terminal tap.,The UPS output is not visibly traceable to the LOCAL-IO-B terminal; do not infer the relationship from label proximity.
+UPS-C,LOCAL-IO-C,UPS-C has a side output conductor in the train C DC/UPS area and LOCAL I/O is labeled at the LC-480C terminal tap.,The UPS output is not visibly traceable to the LOCAL-IO-C terminal; do not infer the relationship from label proximity.
+UPS-D,LOCAL-IO-D,UPS-D has a side output conductor in the train D DC/UPS area and LOCAL I/O is labeled at the LC-480D terminal tap.,The UPS output is not visibly traceable to the LOCAL-IO-D terminal; do not infer the relationship from label proximity.
+RLY-KA01,CB-A01,Train A control crop shows RLY-KA01 near CB-A01 with dashed control/trip marking.,Dashed control/trip routing is not accepted as direct physical connectivity.
+RLY-KA02,CB-A02,Train A control crop shows RLY-KA02 near CB-A02 with dashed control/trip marking.,Dashed control/trip routing is not accepted as direct physical connectivity.
+RLY-KA05,CB-A05,Train A control crop shows RLY-KA05 near CB-A05 with dashed control/trip marking.,Dashed control/trip routing is not accepted as direct physical connectivity.
+RLY-KA07,CB-A07,Train A control crop shows RLY-KA07 near CB-A07 with dashed control/trip marking.,Dashed control/trip routing is not accepted as direct physical connectivity.
+RLY-KB02,CB-B02,Train B control crop shows RLY-KB02 near CB-B02 with dashed control/trip marking.,Dashed control/trip routing is not accepted as direct physical connectivity.
+RLY-KB04,CB-B04,Train B control crop shows RLY-KB04 near CB-B04 with dashed control/trip marking.,Dashed control/trip routing is not accepted as direct physical connectivity.
+RLY-KB06,CB-B06,Train B control crop shows RLY-KB06 near CB-B06 with dashed control/trip marking.,Dashed control/trip routing is not accepted as direct physical connectivity.
+RLY-KC01,CB-C01,Train C control crop shows RLY-KC01 near CB-C01 with dashed control/trip marking.,Dashed control/trip routing is not accepted as direct physical connectivity.
+RLY-KC03,CB-C03,Train C control crop shows RLY-KC03 near CB-C03 with dashed control/trip marking.,Dashed control/trip routing is not accepted as direct physical connectivity.
+RLY-KC08,CB-C08,Train C control crop shows RLY-KC08 near CB-C08 with dashed control/trip marking.,Dashed control/trip routing is not accepted as direct physical connectivity.
+RLY-KD02,CB-D02,Train D control crop shows RLY-KD02 near CB-D02 with dashed control/trip marking.,Dashed control/trip routing is not accepted as direct physical connectivity.
+RLY-KD05,CB-D05,Train D control crop shows RLY-KD05 near CB-D05 with dashed control/trip marking.,Dashed control/trip routing is not accepted as direct physical connectivity.
+RLY-KD07,CB-D07,Train D control crop shows RLY-KD07 near CB-D07 with dashed control/trip marking.,Dashed control/trip routing is not accepted as direct physical connectivity.
+RLY-KD10,CB-D10,Train D control crop shows RLY-KD10 near CB-D10 with dashed control/trip marking.,Dashed control/trip routing is not accepted as direct physical connectivity.

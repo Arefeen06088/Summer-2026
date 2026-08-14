@@ -1,0 +1,155 @@
+{
+  "document": "Improved doc 6",
+  "iteration": 1,
+  "token_update_timestamp": "2026-07-27T11:23:31-06:00",
+  "main_task_start_timestamp": "2026-07-27T16:56:12.813Z",
+  "main": {
+    "model_calls": 58,
+    "usage": {
+      "input_tokens": 7666245,
+      "cached_input_tokens": 6840704,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 41356,
+      "reasoning_output_tokens": 19720,
+      "total_tokens": 7762006
+    },
+    "first_timestamp": "2026-07-27T16:56:26.929Z",
+    "last_timestamp": "2026-07-27T17:23:22.420Z",
+    "final_cumulative_usage": {
+      "input_tokens": 357220480,
+      "cached_input_tokens": 329153408,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1409868,
+      "reasoning_output_tokens": 396304,
+      "total_tokens": 358630348
+    },
+    "log_path": "C:\\Users\\AREFA\\.codex\\sessions\\2026\\06\\23\\rollout-2026-06-23T09-16-37-019ef50d-f35f-7dc2-a1f6-b49c274038fe.jsonl"
+  },
+  "diego": {
+    "model_calls": 51,
+    "usage": {
+      "input_tokens": 5347290,
+      "cached_input_tokens": 4642944,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 42940,
+      "reasoning_output_tokens": 24846,
+      "total_tokens": 5390230
+    },
+    "first_timestamp": "2026-07-27T16:59:26.415Z",
+    "last_timestamp": "2026-07-27T17:18:04.910Z",
+    "final_cumulative_usage": {
+      "input_tokens": 5347290,
+      "cached_input_tokens": 4642944,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 42940,
+      "reasoning_output_tokens": 24846,
+      "total_tokens": 5390230
+    },
+    "log_path": "C:\\Users\\AREFA\\.codex\\sessions\\2026\\07\\27\\rollout-2026-07-27T10-59-12-019fa484-259b-7cd2-8c68-342432c6e4a8.jsonl"
+  },
+  "jennifer": {
+    "model_calls": 41,
+    "usage": {
+      "input_tokens": 4038848,
+      "cached_input_tokens": 3565952,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 37855,
+      "reasoning_output_tokens": 18212,
+      "total_tokens": 4076703
+    },
+    "first_timestamp": "2026-07-27T17:08:25.552Z",
+    "last_timestamp": "2026-07-27T17:20:04.181Z",
+    "final_cumulative_usage": {
+      "input_tokens": 4038848,
+      "cached_input_tokens": 3565952,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 37855,
+      "reasoning_output_tokens": 18212,
+      "total_tokens": 4076703
+    },
+    "log_path": "C:\\Users\\AREFA\\.codex\\sessions\\2026\\07\\27\\rollout-2026-07-27T11-08-15-019fa48c-6e48-7d40-94f6-b13fbd9c9ed7.jsonl"
+  },
+  "diego_round1_proxy": {
+    "model_calls": 32,
+    "usage": {
+      "input_tokens": 2666970,
+      "cached_input_tokens": 2321408,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 35923,
+      "reasoning_output_tokens": 22733,
+      "total_tokens": 2702893
+    },
+    "first_timestamp": "2026-07-27T16:59:26.415Z",
+    "last_timestamp": "2026-07-27T17:07:42.665Z",
+    "final_cumulative_usage": {
+      "input_tokens": 2666970,
+      "cached_input_tokens": 2321408,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 35923,
+      "reasoning_output_tokens": 22733,
+      "total_tokens": 2702893
+    },
+    "log_path": "C:\\Users\\AREFA\\.codex\\sessions\\2026\\07\\27\\rollout-2026-07-27T10-59-12-019fa484-259b-7cd2-8c68-342432c6e4a8.jsonl"
+  },
+  "completed_subagent": {
+    "input_tokens": 9386138,
+    "cached_input_tokens": 8208896,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 80795,
+    "reasoning_output_tokens": 43058,
+    "total_tokens": 9466933,
+    "model_calls": 92
+  },
+  "actual": {
+    "input_tokens": 17052383,
+    "cached_input_tokens": 15049600,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 122151,
+    "reasoning_output_tokens": 62778,
+    "total_tokens": 17228939,
+    "model_calls": 150
+  },
+  "workflow_estimate": {
+    "low_total_tokens": 17228939,
+    "expected_total_tokens": 17278939,
+    "high_total_tokens": 17378939,
+    "basis": "actual observed usage plus final response/closeout margin"
+  },
+  "single_agent_proxy": {
+    "low_total_tokens": 4643394,
+    "expected_total_tokens": 6583896,
+    "high_total_tokens": 10464899,
+    "expected_token_savings_vs_multi_agent": -10645043,
+    "expected_token_savings_pct_vs_multi_agent": -61.78583,
+    "multi_agent_vs_single_agent_expected_token_ratio": 2.61683,
+    "extra_multi_agent_tokens_vs_single_agent_expected": 10645043,
+    "basis": "Diego round 1 cumulative usage plus 25%/50%/100% of observed main orchestration usage"
+  },
+  "final_validation": {
+    "artifact": "final_connectivity_validation",
+    "document": "Improved doc 6",
+    "iteration": 1,
+    "blind_scope_statement": "Final files are copied from saturated Diego/Jennifer round outputs; extraction used Input resources and fresh input-derived artifacts only.",
+    "source_edges": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_02_jennifer_edges.csv",
+    "source_matrix": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_02_jennifer_matrix.csv",
+    "node_count": 105,
+    "edge_count": 121,
+    "matrix_edge_count": 121,
+    "row_header_match": true,
+    "symmetric": true,
+    "zero_diagonal": true,
+    "duplicate_edges": [],
+    "self_edges": [],
+    "invalid_edge_nodes": [],
+    "edge_matrix_mismatches": [],
+    "edges_missing_from_csv": [],
+    "bus_6kv_n_present": false,
+    "bus_4kv_n_present": true,
+    "isolated_nodes": []
+  },
+  "logs": {
+    "main": "C:\\Users\\AREFA\\.codex\\sessions\\2026\\06\\23\\rollout-2026-06-23T09-16-37-019ef50d-f35f-7dc2-a1f6-b49c274038fe.jsonl",
+    "diego": "C:\\Users\\AREFA\\.codex\\sessions\\2026\\07\\27\\rollout-2026-07-27T10-59-12-019fa484-259b-7cd2-8c68-342432c6e4a8.jsonl",
+    "jennifer": "C:\\Users\\AREFA\\.codex\\sessions\\2026\\07\\27\\rollout-2026-07-27T11-08-15-019fa48c-6e48-7d40-94f6-b13fbd9c9ed7.jsonl"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "agent": "Diego",
+  "document": "Improved doc 39",
+  "iteration": "Iteration_1",
+  "created_for_date": "2026-07-27",
+  "allowed_resource_policy": {
+    "used_raw_input_resources": true,
+    "used_current_aids_and_crops": true,
+    "used_gt_scoring_evaluator_or_prior_results": false
+  },
+  "files_written": [
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\39\\Results\\Iteration_1\\round_01_diego_nodes.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\39\\Results\\Iteration_1\\round_01_diego_edges.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\39\\Results\\Iteration_1\\round_01_diego_matrix.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\39\\Results\\Iteration_1\\round_01_diego_notes.md",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\39\\Results\\Iteration_1\\round_01_diego_validation.json"
+  ],
+  "counts": {
+    "nodes": 57,
+    "edges_total": 77,
+    "edges_keep": 59,
+    "edges_uncertain": 10,
+    "edges_remove": 8,
+    "matrix_dimension": 57
+  },
+  "checks": {
+    "unique_node_names": true,
+    "all_keep_edge_endpoints_in_nodes": true,
+    "matrix_symmetric": true,
+    "matrix_diagonal_zero": true,
+    "matrix_uses_keep_edges_only": true,
+    "no_anonymous_wire_nodes_as_final_nodes": true,
+    "annotation_labels_excluded_as_final_nodes": true
+  },
+  "excluded_labels": [
+    "DIVISION-I-TRAIN-A-SAFETY-POWER",
+    "DIVISION-II-TRAIN-B-SAFETY-POWER",
+    "NORMAL-OFFSITE-FEED-A",
+    "NORMAL-OFFSITE-FEED-B",
+    "N.O. TIE",
+    "WIRE-NODE-*"
+  ],
+  "status": "valid"
+}

@@ -1,0 +1,159 @@
+node_a,node_b,edge_type,source,evidence
+GEN-01,TR-UAT-1,solid_power_feeder,round_01_diego_high_confidence,Top-left crop: solid 13.8KV-1A feeder directly connects generator GEN-01 to transformer TR-UAT-1.
+TR-UAT-1,CB-UAT-1,solid_power_feeder,round_01_diego_high_confidence,Top-left crop: UAT1-SEC solid secondary feeder runs from TR-UAT-1 down/right to CB-UAT-1.
+CB-UAT-1,BUS-13-8A,solid_power_feeder,round_01_diego_high_confidence,Top-left crop: CB-UAT-1 is inserted on/tapped to the thick BUS-13-8A line with visible connection.
+TR-SUT-1,CB-SUT-1,solid_power_feeder,round_01_diego_high_confidence,Top-center crop: SUT1-SEC solid feeder drops from TR-SUT-1 to CB-SUT-1.
+CB-SUT-1,BUS-13-8A,solid_power_feeder,round_01_diego_high_confidence,Top-center crop: CB-SUT-1 output sits on the thick BUS-13-8A segment left of the tie.
+BUS-13-8A,CB-13-TIE,solid_power_feeder,round_01_diego_high_confidence,Top-center crop: thick bus segment labeled 13T-A connects BUS-13-8A to the left side of CB-13-TIE.
+CB-13-TIE,BUS-13-8B,solid_power_feeder,round_01_diego_high_confidence,Top-center/right crops: thick bus segment labeled 13T-B exits CB-13-TIE toward BUS-13-8B.
+GEN-02,TR-UAT-2,solid_power_feeder,round_01_diego_high_confidence,Top-center/right crop: solid 13.8KV-2A feeder directly connects GEN-02 to TR-UAT-2.
+TR-UAT-2,CB-UAT-2,solid_power_feeder,round_01_diego_high_confidence,Top-right crop: UAT2-SEC solid secondary feeder runs from TR-UAT-2 to CB-UAT-2.
+CB-UAT-2,BUS-13-8B,solid_power_feeder,round_01_diego_high_confidence,Top-right crop: CB-UAT-2 is inserted on/tapped to the thick BUS-13-8B line.
+TR-SUT-2,CB-SUT-2,solid_power_feeder,round_01_diego_high_confidence,Top-right crop: SUT2-SEC solid feeder drops from TR-SUT-2 to CB-SUT-2.
+CB-SUT-2,BUS-13-8B,solid_power_feeder,round_01_diego_high_confidence,Top-right crop: CB-SUT-2 output is on the thick BUS-13-8B segment.
+BUS-13-8A,CB-IN-A,solid_power_feeder,round_01_diego_high_confidence,Train A upper crop: normal incoming feeder from BUS-13-8A drops to CB-IN-A.
+CB-IN-A,BUS-4160-A,solid_power_feeder,round_01_diego_high_confidence,Train A upper crop: solid slanted feeder from CB-IN-A lands on BUS-4160-A with a junction dot.
+DG-2A,CB-DG-A,solid_power_feeder,round_01_diego_high_confidence,Train A upper crop: diesel generator DG-2A is vertically connected to CB-DG-A.
+CB-DG-A,BUS-4160-A,solid_power_feeder,round_01_diego_high_confidence,Train A upper crop: CB-DG-A vertical feeder lands on BUS-4160-A with a junction dot.
+CB-IN-A,RELAY-27A,dashed_control_interlock,round_01_diego_high_confidence,Train A upper crop: short dashed control/interlock line runs from CB-IN-A to RELAY-27A.
+RELAY-27A,CB-DG-A,dashed_control_interlock,round_01_diego_high_confidence,Train A upper crop: short dashed control/interlock line runs from RELAY-27A to CB-DG-A.
+BUS-4160-A,CB-4160-A1,solid_power_feeder,round_01_diego_high_confidence,Train A mid crop: feeder FDR-A1 drops from BUS-4160-A to CB-4160-A1.
+CB-4160-A1,TR-480-A1,solid_power_feeder,round_01_diego_high_confidence,Train A mid crop: solid 52-A1 feeder connects CB-4160-A1 to TR-480-A1.
+TR-480-A1,CB-480-A1,solid_power_feeder,round_01_diego_high_confidence,Train A mid crop: transformer secondary labeled 480-A1 feeds CB-480-A1.
+CB-480-A1,BUS-480-A1,solid_power_feeder,round_01_diego_high_confidence,Train A mid crop: LC-A1 solid feeder lands from CB-480-A1 onto BUS-480-A1.
+BUS-480-A1,CB-MCC-A1,solid_power_feeder,round_01_diego_high_confidence,Train A mid/lower crop: vertical MCC-A1 branch drops from BUS-480-A1 to CB-MCC-A1.
+CB-MCC-A1,MCC-A1,solid_power_feeder,round_01_diego_high_confidence,Train A lower crop: 52M-A1 solid feeder connects CB-MCC-A1 to MCC-A1.
+BUS-4160-A,CB-4160-A2,solid_power_feeder,round_01_diego_high_confidence,Train A mid crop: feeder FDR-A2 drops from BUS-4160-A to CB-4160-A2.
+CB-4160-A2,TR-480-A2,solid_power_feeder,round_01_diego_high_confidence,Train A mid crop: solid 52-A2 feeder connects CB-4160-A2 to TR-480-A2.
+TR-480-A2,CB-480-A2,solid_power_feeder,round_01_diego_high_confidence,Train A mid crop: transformer secondary labeled 480-A2 feeds CB-480-A2.
+CB-480-A2,BUS-480-A2,solid_power_feeder,round_01_diego_high_confidence,Train A mid crop: LC-A2 solid feeder lands from CB-480-A2 onto BUS-480-A2.
+BUS-480-A2,CB-MCC-A2,solid_power_feeder,round_01_diego_high_confidence,Train A mid/lower crop: vertical MCC-A2 branch drops from BUS-480-A2 to CB-MCC-A2.
+CB-MCC-A2,MCC-A2,solid_power_feeder,round_01_diego_high_confidence,Train A lower crop: 52M-A2 solid feeder connects CB-MCC-A2 to MCC-A2.
+BUS-480-A2,RECT-125-A,solid_power_feeder,round_01_diego_high_confidence,Train A lower crop: vertical 125VDC/rectifier branch descends from BUS-480-A2 to RECT-125-A.
+RECT-125-A,PANEL-IC-A,solid_dc_feeder,round_01_diego_high_confidence,Train A lower crop: solid DC-A125 vertical line continues from RECT-125-A through/along PANEL-IC-A.
+MCC-A1,PUMP-SI-A,solid_power_feeder,round_01_diego_high_confidence,Train A lower crop: MCC-A1 branch labeled L-AP1 feeds PUMP-SI-A.
+MCC-A1,PUMP-CCW-A,solid_power_feeder,round_01_diego_high_confidence,Train A lower crop: MCC-A1 branch feeds PUMP-CCW-A.
+MCC-A1,FAN-HVAC-A,solid_power_feeder,round_01_diego_high_confidence,Train A lower crop: MCC-A1 branch feeds FAN-HVAC-A.
+MCC-A2,MOV-RHR-A,solid_power_feeder,round_01_diego_high_confidence,Train A lower crop: MCC-A2 branch labeled L-AV1 feeds MOV-RHR-A.
+MCC-A2,PANEL-IC-A,dashed_control_interlock,round_01_diego_high_confidence,Train A lower crop: dashed local control/interlock route leaves MCC-A2 and drops to PANEL-IC-A.
+PANEL-IC-A,GND-A,ground_reference,round_01_diego_high_confidence,Train A lower/bottom crop: PANEL-IC-A DC vertical conductor continues to visible ground symbol GND-A.
+BUS-13-8A,CB-IN-B,solid_power_feeder,round_01_diego_high_confidence,Train B upper crop: normal incoming feeder from BUS-13-8A drops to CB-IN-B.
+CB-IN-B,BUS-4160-B,solid_power_feeder,round_01_diego_high_confidence,Train B upper crop: solid slanted feeder from CB-IN-B lands on BUS-4160-B with a junction dot.
+DG-2B,CB-DG-B,solid_power_feeder,round_01_diego_high_confidence,Train B upper crop: diesel generator DG-2B is vertically connected to CB-DG-B.
+CB-DG-B,BUS-4160-B,solid_power_feeder,round_01_diego_high_confidence,Train B upper crop: CB-DG-B vertical feeder lands on BUS-4160-B with a junction dot.
+CB-IN-B,RELAY-27B,dashed_control_interlock,round_01_diego_high_confidence,Train B upper crop: short dashed control/interlock line runs from CB-IN-B to RELAY-27B.
+RELAY-27B,CB-DG-B,dashed_control_interlock,round_01_diego_high_confidence,Train B upper crop: short dashed control/interlock line runs from RELAY-27B to CB-DG-B.
+BUS-4160-B,CB-4160-B1,solid_power_feeder,round_01_diego_high_confidence,Train B mid crop: feeder FDR-B1 drops from BUS-4160-B to CB-4160-B1.
+CB-4160-B1,TR-480-B1,solid_power_feeder,round_01_diego_high_confidence,Train B mid crop: solid 52-B1 feeder connects CB-4160-B1 to TR-480-B1.
+TR-480-B1,CB-480-B1,solid_power_feeder,round_01_diego_high_confidence,Train B mid crop: transformer secondary labeled 480-B1 feeds CB-480-B1.
+CB-480-B1,BUS-480-B1,solid_power_feeder,round_01_diego_high_confidence,Train B mid crop: LC-B1 solid feeder lands from CB-480-B1 onto BUS-480-B1.
+BUS-480-B1,CB-MCC-B1,solid_power_feeder,round_01_diego_high_confidence,Train B mid/lower crop: vertical MCC-B1 branch drops from BUS-480-B1 to CB-MCC-B1.
+CB-MCC-B1,MCC-B1,solid_power_feeder,round_01_diego_high_confidence,Train B lower crop: 52M-B1 solid feeder connects CB-MCC-B1 to MCC-B1.
+BUS-4160-B,CB-4160-B2,solid_power_feeder,round_01_diego_high_confidence,Train B mid crop: feeder FDR-B2 drops from BUS-4160-B to CB-4160-B2.
+CB-4160-B2,TR-480-B2,solid_power_feeder,round_01_diego_high_confidence,Train B mid crop: solid 52-B2 feeder connects CB-4160-B2 to TR-480-B2.
+TR-480-B2,CB-480-B2,solid_power_feeder,round_01_diego_high_confidence,Train B mid crop: transformer secondary labeled 480-B2 feeds CB-480-B2.
+CB-480-B2,BUS-480-B2,solid_power_feeder,round_01_diego_high_confidence,Train B mid crop: LC-B2 solid feeder lands from CB-480-B2 onto BUS-480-B2.
+BUS-480-B2,CB-MCC-B2,solid_power_feeder,round_01_diego_high_confidence,Train B mid/lower crop: vertical MCC-B2 branch drops from BUS-480-B2 to CB-MCC-B2.
+CB-MCC-B2,MCC-B2,solid_power_feeder,round_01_diego_high_confidence,Train B lower crop: 52M-B2 solid feeder connects CB-MCC-B2 to MCC-B2.
+BUS-480-B2,RECT-125-B,solid_power_feeder,round_01_diego_high_confidence,Train B lower crop: vertical 125VDC/rectifier branch descends from BUS-480-B2 to RECT-125-B.
+RECT-125-B,PANEL-IC-B,solid_dc_feeder,round_01_diego_high_confidence,Train B lower crop: solid DC-B125 vertical line continues from RECT-125-B through/along PANEL-IC-B.
+MCC-B1,PUMP-SI-B,solid_power_feeder,round_01_diego_high_confidence,Train B lower crop: MCC-B1 branch labeled L-BP1 feeds PUMP-SI-B.
+MCC-B1,PUMP-CCW-B,solid_power_feeder,round_01_diego_high_confidence,Train B lower crop: MCC-B1 branch feeds PUMP-CCW-B.
+MCC-B1,FAN-HVAC-B,solid_power_feeder,round_01_diego_high_confidence,Train B lower crop: MCC-B1 branch feeds FAN-HVAC-B.
+MCC-B2,MOV-RHR-B,solid_power_feeder,round_01_diego_high_confidence,Train B lower crop: MCC-B2 branch labeled L-BV1 feeds MOV-RHR-B.
+MCC-B2,PANEL-IC-B,dashed_control_interlock,round_01_diego_high_confidence,Train B lower crop: dashed local control/interlock route leaves MCC-B2 and drops to PANEL-IC-B.
+PANEL-IC-B,GND-B,ground_reference,round_01_diego_high_confidence,Train B lower/bottom crop: PANEL-IC-B DC vertical conductor continues to visible ground symbol GND-B.
+BUS-13-8B,CB-IN-C,solid_power_feeder,round_01_diego_high_confidence,Train C upper crop: normal incoming feeder from BUS-13-8B drops to CB-IN-C.
+CB-IN-C,BUS-4160-C,solid_power_feeder,round_01_diego_high_confidence,Train C upper crop: solid slanted feeder from CB-IN-C lands on BUS-4160-C with a junction dot.
+DG-2C,CB-DG-C,solid_power_feeder,round_01_diego_high_confidence,Train C upper crop: diesel generator DG-2C is vertically connected to CB-DG-C.
+CB-DG-C,BUS-4160-C,solid_power_feeder,round_01_diego_high_confidence,Train C upper crop: CB-DG-C vertical feeder lands on BUS-4160-C with a junction dot.
+CB-IN-C,RELAY-27C,dashed_control_interlock,round_01_diego_high_confidence,Train C upper crop: short dashed control/interlock line runs from CB-IN-C to RELAY-27C.
+RELAY-27C,CB-DG-C,dashed_control_interlock,round_01_diego_high_confidence,Train C upper crop: short dashed control/interlock line runs from RELAY-27C to CB-DG-C.
+BUS-4160-C,CB-4160-C1,solid_power_feeder,round_01_diego_high_confidence,Train C mid crop: feeder FDR-C1 drops from BUS-4160-C to CB-4160-C1.
+CB-4160-C1,TR-480-C1,solid_power_feeder,round_01_diego_high_confidence,Train C mid crop: solid 52-C1 feeder connects CB-4160-C1 to TR-480-C1.
+TR-480-C1,CB-480-C1,solid_power_feeder,round_01_diego_high_confidence,Train C mid crop: transformer secondary labeled 480-C1 feeds CB-480-C1.
+CB-480-C1,BUS-480-C1,solid_power_feeder,round_01_diego_high_confidence,Train C mid crop: LC-C1 solid feeder lands from CB-480-C1 onto BUS-480-C1.
+BUS-480-C1,CB-MCC-C1,solid_power_feeder,round_01_diego_high_confidence,Train C mid/lower crop: vertical MCC-C1 branch drops from BUS-480-C1 to CB-MCC-C1.
+CB-MCC-C1,MCC-C1,solid_power_feeder,round_01_diego_high_confidence,Train C lower crop: 52M-C1 solid feeder connects CB-MCC-C1 to MCC-C1.
+BUS-4160-C,CB-4160-C2,solid_power_feeder,round_01_diego_high_confidence,Train C mid crop: feeder FDR-C2 drops from BUS-4160-C to CB-4160-C2.
+CB-4160-C2,TR-480-C2,solid_power_feeder,round_01_diego_high_confidence,Train C mid crop: solid 52-C2 feeder connects CB-4160-C2 to TR-480-C2.
+TR-480-C2,CB-480-C2,solid_power_feeder,round_01_diego_high_confidence,Train C mid crop: transformer secondary labeled 480-C2 feeds CB-480-C2.
+CB-480-C2,BUS-480-C2,solid_power_feeder,round_01_diego_high_confidence,Train C mid crop: LC-C2 solid feeder lands from CB-480-C2 onto BUS-480-C2.
+BUS-480-C2,CB-MCC-C2,solid_power_feeder,round_01_diego_high_confidence,Train C mid/lower crop: vertical MCC-C2 branch drops from BUS-480-C2 to CB-MCC-C2.
+CB-MCC-C2,MCC-C2,solid_power_feeder,round_01_diego_high_confidence,Train C lower crop: 52M-C2 solid feeder connects CB-MCC-C2 to MCC-C2.
+BUS-480-C2,RECT-125-C,solid_power_feeder,round_01_diego_high_confidence,Train C lower crop: vertical 125VDC/rectifier branch descends from BUS-480-C2 to RECT-125-C.
+RECT-125-C,PANEL-IC-C,solid_dc_feeder,round_01_diego_high_confidence,Train C lower crop: solid DC-C125 vertical line continues from RECT-125-C through/along PANEL-IC-C.
+MCC-C1,PUMP-SI-C,solid_power_feeder,round_01_diego_high_confidence,Train C lower crop: MCC-C1 branch labeled L-CP1 feeds PUMP-SI-C.
+MCC-C1,PUMP-CCW-C,solid_power_feeder,round_01_diego_high_confidence,Train C lower crop: MCC-C1 branch feeds PUMP-CCW-C.
+MCC-C1,FAN-HVAC-C,solid_power_feeder,round_01_diego_high_confidence,Train C lower crop: MCC-C1 branch feeds FAN-HVAC-C.
+MCC-C2,MOV-RHR-C,solid_power_feeder,round_01_diego_high_confidence,Train C lower crop: MCC-C2 branch labeled L-CV1 feeds MOV-RHR-C.
+MCC-C2,PANEL-IC-C,dashed_control_interlock,round_01_diego_high_confidence,Train C lower crop: dashed local control/interlock route leaves MCC-C2 and drops to PANEL-IC-C.
+PANEL-IC-C,GND-C,ground_reference,round_01_diego_high_confidence,Train C lower/bottom crop: PANEL-IC-C DC vertical conductor continues to visible ground symbol GND-C.
+BUS-13-8B,CB-IN-D,solid_power_feeder,round_01_diego_high_confidence,Train D upper crop: normal incoming feeder from BUS-13-8B drops to CB-IN-D.
+CB-IN-D,BUS-4160-D,solid_power_feeder,round_01_diego_high_confidence,Train D upper crop: solid slanted feeder from CB-IN-D lands on BUS-4160-D with a junction dot.
+DG-2D,CB-DG-D,solid_power_feeder,round_01_diego_high_confidence,Train D upper crop: diesel generator DG-2D is vertically connected to CB-DG-D.
+CB-DG-D,BUS-4160-D,solid_power_feeder,round_01_diego_high_confidence,Train D upper crop: CB-DG-D vertical feeder lands on BUS-4160-D with a junction dot.
+CB-IN-D,RELAY-27D,dashed_control_interlock,round_01_diego_high_confidence,Train D upper crop: short dashed control/interlock line runs from CB-IN-D to RELAY-27D.
+RELAY-27D,CB-DG-D,dashed_control_interlock,round_01_diego_high_confidence,Train D upper crop: short dashed control/interlock line runs from RELAY-27D to CB-DG-D.
+BUS-4160-D,CB-4160-D1,solid_power_feeder,round_01_diego_high_confidence,Train D mid crop: feeder FDR-D1 drops from BUS-4160-D to CB-4160-D1.
+CB-4160-D1,TR-480-D1,solid_power_feeder,round_01_diego_high_confidence,Train D mid crop: solid 52-D1 feeder connects CB-4160-D1 to TR-480-D1.
+TR-480-D1,CB-480-D1,solid_power_feeder,round_01_diego_high_confidence,Train D mid crop: transformer secondary labeled 480-D1 feeds CB-480-D1.
+CB-480-D1,BUS-480-D1,solid_power_feeder,round_01_diego_high_confidence,Train D mid crop: LC-D1 solid feeder lands from CB-480-D1 onto BUS-480-D1.
+BUS-480-D1,CB-MCC-D1,solid_power_feeder,round_01_diego_high_confidence,Train D mid/lower crop: vertical MCC-D1 branch drops from BUS-480-D1 to CB-MCC-D1.
+CB-MCC-D1,MCC-D1,solid_power_feeder,round_01_diego_high_confidence,Train D lower crop: 52M-D1 solid feeder connects CB-MCC-D1 to MCC-D1.
+BUS-4160-D,CB-4160-D2,solid_power_feeder,round_01_diego_high_confidence,Train D mid crop: feeder FDR-D2 drops from BUS-4160-D to CB-4160-D2.
+CB-4160-D2,TR-480-D2,solid_power_feeder,round_01_diego_high_confidence,Train D mid crop: solid 52-D2 feeder connects CB-4160-D2 to TR-480-D2.
+TR-480-D2,CB-480-D2,solid_power_feeder,round_01_diego_high_confidence,Train D mid crop: transformer secondary labeled 480-D2 feeds CB-480-D2.
+CB-480-D2,BUS-480-D2,solid_power_feeder,round_01_diego_high_confidence,Train D mid crop: LC-D2 solid feeder lands from CB-480-D2 onto BUS-480-D2.
+BUS-480-D2,CB-MCC-D2,solid_power_feeder,round_01_diego_high_confidence,Train D mid/lower crop: vertical MCC-D2 branch drops from BUS-480-D2 to CB-MCC-D2.
+CB-MCC-D2,MCC-D2,solid_power_feeder,round_01_diego_high_confidence,Train D lower crop: 52M-D2 solid feeder connects CB-MCC-D2 to MCC-D2.
+BUS-480-D2,RECT-125-D,solid_power_feeder,round_01_diego_high_confidence,Train D lower crop: vertical 125VDC/rectifier branch descends from BUS-480-D2 to RECT-125-D.
+RECT-125-D,PANEL-IC-D,solid_dc_feeder,round_01_diego_high_confidence,Train D lower crop: solid DC-D125 vertical line continues from RECT-125-D through/along PANEL-IC-D.
+MCC-D1,PUMP-SI-D,solid_power_feeder,round_01_diego_high_confidence,Train D lower crop: MCC-D1 branch labeled L-DP1 feeds PUMP-SI-D.
+MCC-D1,PUMP-CCW-D,solid_power_feeder,round_01_diego_high_confidence,Train D lower crop: MCC-D1 branch feeds PUMP-CCW-D.
+MCC-D1,FAN-HVAC-D,solid_power_feeder,round_01_diego_high_confidence,Train D lower crop: MCC-D1 branch feeds FAN-HVAC-D.
+MCC-D2,MOV-RHR-D,solid_power_feeder,round_01_diego_high_confidence,Train D lower crop: MCC-D2 branch labeled L-DV1 feeds MOV-RHR-D.
+MCC-D2,PANEL-IC-D,dashed_control_interlock,round_01_diego_high_confidence,Train D lower crop: dashed local control/interlock route leaves MCC-D2 and drops to PANEL-IC-D.
+PANEL-IC-D,GND-D,ground_reference,round_01_diego_high_confidence,Train D lower/bottom crop: PANEL-IC-D DC vertical conductor continues to visible ground symbol GND-D.
+BAT-125A,BUS-DC-125A,solid_dc_feeder,round_01_diego_high_confidence,Bottom-left crop: BAT-125A connects by solid BAT-A line to BUS-DC-125A with a junction dot.
+BUS-DC-125A,INV-UPS-A,solid_dc_feeder,round_01_diego_high_confidence,Bottom-left crop: BUS-DC-125A solid segment labeled UPS-AIN feeds INV-UPS-A.
+INV-UPS-A,PANEL-RPS-A,solid_dc_feeder,round_01_diego_high_confidence,Bottom-left crop: INV-UPS-A output labeled UPS-AOUT directly enters PANEL-RPS-A.
+BAT-125B,BUS-DC-125B,solid_dc_feeder,round_01_diego_high_confidence,Bottom-right crop: BAT-125B connects by solid BAT-B line to BUS-DC-125B with a junction dot.
+BUS-DC-125B,INV-UPS-B,solid_dc_feeder,round_01_diego_high_confidence,Bottom-right crop: BUS-DC-125B solid segment labeled UPS-BIN feeds INV-UPS-B.
+INV-UPS-B,PANEL-RPS-B,solid_dc_feeder,round_01_diego_high_confidence,Bottom-right crop: INV-UPS-B output labeled UPS-BOUT directly enters PANEL-RPS-B.
+ATS-480-A,PANEL-RPS-A,solid_control_power,round_01_diego_high_confidence,Bottom-left crop: solid ATS-AOUT route leaves ATS-480-A and lands at PANEL-RPS-A.
+ATS-480-B,PANEL-RPS-B,solid_control_power,round_01_diego_high_confidence,Bottom-right crop: solid ATS-BOUT route leaves ATS-480-B and lands at PANEL-RPS-B.
+RELAY-27A,PANEL-SSPS,dashed_control_interlock,round_01_diego_plausible,Train A dashed relay/control vertical is labeled SSPS-A near the 480 bus area and continues toward the central SSPS region. Lower-confidence note: Long dashed control route crosses solid feeders and extends beyond a single crop; visual evidence supports a candidate route but not a clean endpoint-to-endpoint trace.
+PANEL-IC-A,MOV-RHR-A,dashed_control_interlock,round_01_diego_plausible,"Train A local I/C panel is connected by a dashed route to the MCC-A2 area that feeds MOV-RHR-A. Lower-confidence note: The dashed line visibly reaches the MCC/control branch rather than the MOV symbol itself, so the MOV endpoint is functional/geometric inference."
+RECT-125-A,GND-A,ground_reference,round_01_diego_plausible,Train A DC vertical route from RECT-125-A/PANEL-IC-A continues to the visible GND-A symbol. Lower-confidence note: The high edge records PANEL-IC-to-ground; rectifier-to-ground is same vertical conductor inference and could be indirect through the panel/DC line.
+RELAY-27B,PANEL-SSPS,dashed_control_interlock,round_01_diego_plausible,Train B dashed relay/control vertical is labeled SSPS-B near the 480 bus area and continues toward the central SSPS region. Lower-confidence note: Long dashed control route crosses solid feeders and extends beyond a single crop; visual evidence supports a candidate route but not a clean endpoint-to-endpoint trace.
+PANEL-IC-B,MOV-RHR-B,dashed_control_interlock,round_01_diego_plausible,"Train B local I/C panel is connected by a dashed route to the MCC-B2 area that feeds MOV-RHR-B. Lower-confidence note: The dashed line visibly reaches the MCC/control branch rather than the MOV symbol itself, so the MOV endpoint is functional/geometric inference."
+RECT-125-B,GND-B,ground_reference,round_01_diego_plausible,Train B DC vertical route from RECT-125-B/PANEL-IC-B continues to the visible GND-B symbol. Lower-confidence note: The high edge records PANEL-IC-to-ground; rectifier-to-ground is same vertical conductor inference and could be indirect through the panel/DC line.
+RELAY-27C,PANEL-SSPS,dashed_control_interlock,round_01_diego_plausible,Train C dashed relay/control vertical is labeled SSPS-C near the 480 bus area and continues toward the central SSPS region. Lower-confidence note: Long dashed control route crosses solid feeders and extends beyond a single crop; visual evidence supports a candidate route but not a clean endpoint-to-endpoint trace.
+PANEL-IC-C,MOV-RHR-C,dashed_control_interlock,round_01_diego_plausible,"Train C local I/C panel is connected by a dashed route to the MCC-C2 area that feeds MOV-RHR-C. Lower-confidence note: The dashed line visibly reaches the MCC/control branch rather than the MOV symbol itself, so the MOV endpoint is functional/geometric inference."
+RECT-125-C,GND-C,ground_reference,round_01_diego_plausible,Train C DC vertical route from RECT-125-C/PANEL-IC-C continues to the visible GND-C symbol. Lower-confidence note: The high edge records PANEL-IC-to-ground; rectifier-to-ground is same vertical conductor inference and could be indirect through the panel/DC line.
+RELAY-27D,PANEL-SSPS,dashed_control_interlock,round_01_diego_plausible,Train D dashed relay/control vertical is labeled SSPS-D near the 480 bus area and continues toward the central SSPS region. Lower-confidence note: Long dashed control route crosses solid feeders and extends beyond a single crop; visual evidence supports a candidate route but not a clean endpoint-to-endpoint trace.
+PANEL-IC-D,MOV-RHR-D,dashed_control_interlock,round_01_diego_plausible,"Train D local I/C panel is connected by a dashed route to the MCC-D2 area that feeds MOV-RHR-D. Lower-confidence note: The dashed line visibly reaches the MCC/control branch rather than the MOV symbol itself, so the MOV endpoint is functional/geometric inference."
+RECT-125-D,GND-D,ground_reference,round_01_diego_plausible,Train D DC vertical route from RECT-125-D/PANEL-IC-D continues to the visible GND-D symbol. Lower-confidence note: The high edge records PANEL-IC-to-ground; rectifier-to-ground is same vertical conductor inference and could be indirect through the panel/DC line.
+MCC-A1,ATS-480-A,solid_power_feeder,round_01_diego_plausible,Lower A/ATS crops show a solid feeder labeled ATS-A1 leaving the MCC-A1 load cluster and routing toward ATS-480-A. Lower-confidence note: Long lower feeder runs across/crops into ATS area with nearby crossings; endpoint at ATS is visually plausible but not as direct as local load branches.
+MCC-C1,ATS-480-A,solid_power_feeder,round_01_diego_plausible,Overview/full-half crops show an ATS-C1 solid route from the C-side load cluster toward ATS-480-A/Division A transfer area. Lower-confidence note: Route is long and partly outside the local C crop; A/C pairing is visually suggested but endpoint trace is not fully isolated.
+MCC-B1,ATS-480-B,solid_power_feeder,round_01_diego_plausible,Overview/full-half crops show an ATS-B1 solid route from the B-side load cluster toward ATS-480-B/Division B transfer area. Lower-confidence note: Route is long and crosses the dense lower region; endpoint trace is plausible but not cleanly local.
+MCC-D1,ATS-480-B,solid_power_feeder,round_01_diego_plausible,"Lower D/ATS crops show a solid feeder labeled ATS-D1 leaving MCC-D1 load cluster and routing toward ATS-480-B. Lower-confidence note: Long lower feeder enters the ATS area with crossings and crop clipping, so kept for review."
+RECT-125-A,BUS-DC-125A,solid_dc_feeder,round_01_diego_plausible,A-side DC line labeled DC-A125 descends from RECT-125-A/PANEL-IC-A region toward the 125 VDC Division A bus area. Lower-confidence note: Long DC feeder shares vertical ground/panel routing and crosses lower conductors; likely but not a direct short visible endpoint.
+RECT-125-C,BUS-DC-125A,solid_dc_feeder,round_01_diego_plausible,"C-side DC line labeled DC-C125 descends from RECT-125-C/PANEL-IC-C region toward the Division A lower bus area, matching A/C grouping. Lower-confidence note: C-to-Division-A route is long and partly outside local crop; included because A/C redundancy is visually noted."
+RECT-125-B,BUS-DC-125B,solid_dc_feeder,round_01_diego_plausible,B-side DC line labeled DC-B125 descends from RECT-125-B/PANEL-IC-B region toward the 125 VDC Division B bus area. Lower-confidence note: Long DC feeder is visible in overview/full-half crops but has crossings and partial clipping.
+RECT-125-D,BUS-DC-125B,solid_dc_feeder,round_01_diego_plausible,"D-side DC line labeled DC-D125 descends from RECT-125-D/PANEL-IC-D region toward the Division B lower bus area, matching B/D grouping. Lower-confidence note: D-to-Division-B route is long with lower-region crossings; plausible but needs review."
+PANEL-IC-A,BUS-DC-125A,solid_dc_feeder,round_01_diego_plausible,"PANEL-IC-A sits on the DC-A125 vertical route that continues down into the Division A bus region. Lower-confidence note: Panel-to-bus may be through the same rectifier/DC conductor and ground reference, not a simple direct component edge."
+PANEL-IC-C,BUS-DC-125A,solid_dc_feeder,round_01_diego_plausible,PANEL-IC-C sits on the DC-C125 vertical route that appears to feed/return to the Division A bus region. Lower-confidence note: Long C-side path is not fully isolated in one crop; included for recall.
+PANEL-IC-B,BUS-DC-125B,solid_dc_feeder,round_01_diego_plausible,PANEL-IC-B sits on the DC-B125 vertical route associated with Division B bus routing. Lower-confidence note: Long B-side path and crossings make this less certain than local panel-ground edge.
+PANEL-IC-D,BUS-DC-125B,solid_dc_feeder,round_01_diego_plausible,PANEL-IC-D sits on the DC-D125 vertical route associated with Division B bus routing. Lower-confidence note: Long D-side path and crossings make this less certain than local panel-ground edge.
+PANEL-SSPS,PANEL-RPS-A,dashed_control_interlock,round_01_diego_plausible,Bottom-center/left crops show dashed control-power/RPS interlock routing between the SSPS region and RPS-A area. Lower-confidence note: Dashed route is long and partly hidden by crop boundaries; connection is visually plausible but not locally direct.
+PANEL-SSPS,PANEL-RPS-B,dashed_control_interlock,round_01_diego_plausible,Bottom-center/right crops show dashed control-power/RPS interlock routing between the SSPS region and RPS-B area. Lower-confidence note: Dashed route is long and crosses dense lower wiring; kept as candidate.
+PANEL-SSPS,ATS-480-A,dashed_control_interlock,round_01_diego_plausible,Bottom-left crop shows dashed interlock lines around ATS-480-A and central SSPS/control-power area. Lower-confidence note: Dashed lines pass near/through multiple conductors and endpoints are not fully resolved.
+PANEL-SSPS,ATS-480-B,dashed_control_interlock,round_01_diego_plausible,Bottom-right crop shows dashed interlock lines around ATS-480-B and central SSPS/control-power area. Lower-confidence note: Dashed lines pass near/through multiple conductors and endpoints are not fully resolved.
+BUS-DC-125A,PANEL-SSPS,solid_or_dashed_control_power,round_01_diego_plausible,Overview places PANEL-SSPS inside the lower control/RPS area near Division A/B DC bus routing. Lower-confidence note: A direct SSPS supply is not cleanly visible; candidate retained because the panel lies in the control power block.
+BUS-DC-125B,PANEL-SSPS,solid_or_dashed_control_power,round_01_diego_plausible,Overview places PANEL-SSPS inside the lower control/RPS area near Division A/B DC bus routing. Lower-confidence note: A direct SSPS supply is not cleanly visible; candidate retained because the panel lies in the control power block.
+GND-A,BUS-DC-125A,ground_reference,round_01_diego_plausible,Bottom-left crop shows GND-A on the same vertical DC-A125/Division A return route descending toward BUS-DC-125A. Lower-confidence note: Ground-to-DC-bus interpretation may represent return/reference rather than a normal positive bus edge.
+GND-C,BUS-DC-125A,ground_reference,round_01_diego_plausible,Right/center crop shows GND-C on DC-C125/Division A-style lower routing. Lower-confidence note: Ground-to-bus path is long and may be reference/return rather than direct feed.
+GND-B,BUS-DC-125B,ground_reference,round_01_diego_plausible,Bottom/overview crops show GND-B on DC-B125 lower routing associated with BUS-DC-125B. Lower-confidence note: Ground-to-bus interpretation may represent return/reference rather than a normal bus edge.
+GND-D,BUS-DC-125B,ground_reference,round_01_diego_plausible,Bottom-right crop shows GND-D on DC-D125 lower routing associated with BUS-DC-125B. Lower-confidence note: Ground-to-bus path is long and may be reference/return rather than direct feed.

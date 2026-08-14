@@ -1,0 +1,144 @@
+Connectivity matrix validation summary - Improved Document 14, Iteration 1
+==========================================================================
+
+Ground truth source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\14\connectivity_matrix_even_bus_spacing.csv
+Ground truth normalized as an undirected edge set with 190 edges across 178 component names.
+Evaluated extracted matrices from: C:\Asif_all_python_projects\INL\Improved -- blind iterations\14\Results\Iteration_1
+Included files: connectivity_matrix.csv, round_01_diego_connectivity_matrix.csv, round_01_jennifer_connectivity_matrix.csv, round_02_diego_connectivity_matrix.csv, round_02_jennifer_connectivity_matrix.csv, final_connectivity_matrix.csv
+Note: connectivity_matrix.csv is included because its filename also ends with _matrix.csv; it is labeled as an unlabeled connectivity matrix row.
+
+Strict exact-match metrics
+--------------------------
+- Connectivity matrix -- Unlabeled: TP=156, FP=16, FN=34, P=0.906977, R=0.821053, F1=0.861878
+- Diego -- Round 1: TP=161, FP=37, FN=29, P=0.813131, R=0.847368, F1=0.829897
+- Jennifer -- Round 1: TP=156, FP=16, FN=34, P=0.906977, R=0.821053, F1=0.861878
+- Diego -- Round 2: TP=156, FP=16, FN=34, P=0.906977, R=0.821053, F1=0.861878
+- Jennifer -- Round 2: TP=156, FP=16, FN=34, P=0.906977, R=0.821053, F1=0.861878
+- Final connectivity -- Final: TP=156, FP=16, FN=34, P=0.906977, R=0.821053, F1=0.861878
+
+Primary reason performance is not perfect
+-----------------------------------------
+The dominant loss is imperfect connectivity/edge discovery: false negatives are more common than false positives across the evaluated matrices.
+Component naming is not the broad driver unless noted below. Most errors are wrong or missing edges between otherwise recognizable components.
+Best strict rows: Connectivity matrix -- Unlabeled, Jennifer -- Round 1, Diego -- Round 2, Jennifer -- Round 2, Final connectivity -- Final with F1=0.861878. Lowest strict row: Diego -- Round 1 with F1=0.829897.
+
+Close-but-not-perfect component names
+-------------------------------------
+- Extracted PUMP-CW-1A is close to GT PUMP-CCW-1A (similarity about 0.98).
+- Extracted PUMP-CW-1B is close to GT PUMP-CCW-1B (similarity about 0.98).
+- Extracted FAN-R-1A is close to GT FAN-CR-1A (similarity about 0.97).
+- Extracted FAN-R-1B is close to GT FAN-CR-1B (similarity about 0.97).
+- Extracted MOV-ST-101A is close to GT MOV-SI-101A (similarity about 0.94).
+- Extracted MOV-ST-101B is close to GT MOV-SI-101B (similarity about 0.94).
+- Extracted CB-DG-TIE is close to GT CB-DC-TIE (similarity about 0.92).
+These are diagnostic close-name candidates only; the official CSV keeps strict exact matching unless a document-specific alias is explicitly requested.
+
+Component coverage
+------------------
+GT components absent from at least one extracted matrix: 7. Examples: CB-DC-TIE, FAN-CR-1A, FAN-CR-1B, MOV-SI-101A, MOV-SI-101B, PUMP-CCW-1A, PUMP-CCW-1B.
+Extracted-only component names seen in at least one matrix: 8. Examples: CB-DG-TIE, FAN-R-1A, FAN-R-1B, MASTER-TERMINAL-BLOCKS, MOV-ST-101A, MOV-ST-101B, PUMP-CW-1A, PUMP-CW-1B.
+
+Examples causing the score drop
+--------------------------------
+Repeated false-positive extracted edges, counted across all evaluated rows:
+- GND-B07 -- PUMP-CW-1B (6 rows)
+- MOV-ST-101B -- TB-B05 (6 rows)
+- BUS-125DCA -- CB-DG-TIE (6 rows)
+- FAN-R-1B -- GND-B04 (6 rows)
+- GND-B05 -- MOV-ST-101B (6 rows)
+- BUS-480A -- PANEL-RPS-A (6 rows)
+- FAN-R-1A -- GND-A04 (6 rows)
+- BUS-125DCB -- CB-DG-TIE (6 rows)
+- MOV-ST-101A -- TB-A05 (6 rows)
+- FAN-R-1A -- TB-A04 (6 rows)
+- FAN-R-1B -- TB-B04 (6 rows)
+- CHG-125A -- PANEL-RPS-A (6 rows)
+- GND-A05 -- MOV-ST-101A (6 rows)
+- GND-A07 -- PUMP-CW-1A (6 rows)
+Repeated missed GT edges, counted across all evaluated rows:
+- FAN-CR-1A -- TB-A04 (6 rows)
+- PANEL-RPS-B -- RELAY-KB05 (6 rows)
+- MOV-SI-101A -- TB-A05 (6 rows)
+- GND-B05 -- MOV-SI-101B (6 rows)
+- PANEL-ANN -- RELAY-KB08 (6 rows)
+- PANEL-ESF-B -- RELAY-KB04 (6 rows)
+- BUS-125DCB -- CB-DC-TIE (6 rows)
+- MOV-SI-101B -- TB-B05 (6 rows)
+- PANEL-LS-A -- RELAY-KA06 (6 rows)
+- GND-A05 -- MOV-SI-101A (6 rows)
+- PANEL-ESF-B -- RELAY-KB01 (6 rows)
+- PANEL-ANN -- RELAY-KA09 (6 rows)
+- GND-A07 -- PUMP-CCW-1A (6 rows)
+- BUS-125DCA -- CB-DC-TIE (6 rows)
+
+Intermediate/extra-node effects
+-------------------------------
+Extra extracted node names that create false-positive links most often:
+- CB-DG-TIE: involved in 15 FP edge appearances
+- PUMP-CW-1B: involved in 12 FP edge appearances
+- MOV-ST-101B: involved in 12 FP edge appearances
+- FAN-R-1B: involved in 12 FP edge appearances
+- FAN-R-1A: involved in 12 FP edge appearances
+- MOV-ST-101A: involved in 12 FP edge appearances
+- PUMP-CW-1A: involved in 12 FP edge appearances
+High-impact FP nodes overall, including valid GT components used in incorrect links:
+- CB-DG-TIE: involved in 15 FP edge appearances
+- PANEL-RPS-A: involved in 15 FP edge appearances
+- PUMP-CW-1B: involved in 12 FP edge appearances
+- MOV-ST-101B: involved in 12 FP edge appearances
+- FAN-R-1B: involved in 12 FP edge appearances
+- FAN-R-1A: involved in 12 FP edge appearances
+- MOV-ST-101A: involved in 12 FP edge appearances
+- PUMP-CW-1A: involved in 12 FP edge appearances
+- BUS-480A: involved in 7 FP edge appearances
+- GND-B07: involved in 6 FP edge appearances
+- TB-B05: involved in 6 FP edge appearances
+- BUS-125DCA: involved in 6 FP edge appearances
+
+Counterfactual insights
+-----------------------
+Connectivity matrix -- Unlabeled:
+- If FP links involving extracted-only/close-name nodes were removed (14 edges), performance would be: TP=156, FP=2, FN=34, P=0.987342, R=0.821053, F1=0.896552.
+- If close-name aliases were accepted (PUMP-CW-1A->PUMP-CCW-1A, PUMP-CW-1B->PUMP-CCW-1B, FAN-R-1A->FAN-CR-1A, FAN-R-1B->FAN-CR-1B), performance would be: TP=170, FP=2, FN=20, P=0.988372, R=0.894737, F1=0.939227.
+- If all false-positive links were not put in extraction, performance would be: TP=156, FP=0, FN=34, P=1.000000, R=0.821053, F1=0.901734.
+- If the missed GT links were added but current FPs remained, performance would be: TP=190, FP=16, FN=0, P=0.922330, R=1.000000, F1=0.959596.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=190, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Diego -- Round 1:
+- If FP links involving extracted-only/close-name nodes were removed (17 edges), performance would be: TP=161, FP=20, FN=29, P=0.889503, R=0.847368, F1=0.867925.
+- If close-name aliases were accepted (PUMP-CW-1A->PUMP-CCW-1A, PUMP-CW-1B->PUMP-CCW-1B, FAN-R-1A->FAN-CR-1A, FAN-R-1B->FAN-CR-1B), performance would be: TP=175, FP=23, FN=15, P=0.883838, R=0.921053, F1=0.902062.
+- If all false-positive links were not put in extraction, performance would be: TP=161, FP=0, FN=29, P=1.000000, R=0.847368, F1=0.917379.
+- If the missed GT links were added but current FPs remained, performance would be: TP=190, FP=37, FN=0, P=0.837004, R=1.000000, F1=0.911271.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=190, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Jennifer -- Round 1:
+- If FP links involving extracted-only/close-name nodes were removed (14 edges), performance would be: TP=156, FP=2, FN=34, P=0.987342, R=0.821053, F1=0.896552.
+- If close-name aliases were accepted (PUMP-CW-1A->PUMP-CCW-1A, PUMP-CW-1B->PUMP-CCW-1B, FAN-R-1A->FAN-CR-1A, FAN-R-1B->FAN-CR-1B), performance would be: TP=170, FP=2, FN=20, P=0.988372, R=0.894737, F1=0.939227.
+- If all false-positive links were not put in extraction, performance would be: TP=156, FP=0, FN=34, P=1.000000, R=0.821053, F1=0.901734.
+- If the missed GT links were added but current FPs remained, performance would be: TP=190, FP=16, FN=0, P=0.922330, R=1.000000, F1=0.959596.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=190, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Diego -- Round 2:
+- If FP links involving extracted-only/close-name nodes were removed (14 edges), performance would be: TP=156, FP=2, FN=34, P=0.987342, R=0.821053, F1=0.896552.
+- If close-name aliases were accepted (PUMP-CW-1A->PUMP-CCW-1A, PUMP-CW-1B->PUMP-CCW-1B, FAN-R-1A->FAN-CR-1A, FAN-R-1B->FAN-CR-1B), performance would be: TP=170, FP=2, FN=20, P=0.988372, R=0.894737, F1=0.939227.
+- If all false-positive links were not put in extraction, performance would be: TP=156, FP=0, FN=34, P=1.000000, R=0.821053, F1=0.901734.
+- If the missed GT links were added but current FPs remained, performance would be: TP=190, FP=16, FN=0, P=0.922330, R=1.000000, F1=0.959596.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=190, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Jennifer -- Round 2:
+- If FP links involving extracted-only/close-name nodes were removed (14 edges), performance would be: TP=156, FP=2, FN=34, P=0.987342, R=0.821053, F1=0.896552.
+- If close-name aliases were accepted (PUMP-CW-1A->PUMP-CCW-1A, PUMP-CW-1B->PUMP-CCW-1B, FAN-R-1A->FAN-CR-1A, FAN-R-1B->FAN-CR-1B), performance would be: TP=170, FP=2, FN=20, P=0.988372, R=0.894737, F1=0.939227.
+- If all false-positive links were not put in extraction, performance would be: TP=156, FP=0, FN=34, P=1.000000, R=0.821053, F1=0.901734.
+- If the missed GT links were added but current FPs remained, performance would be: TP=190, FP=16, FN=0, P=0.922330, R=1.000000, F1=0.959596.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=190, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Final connectivity -- Final:
+- If FP links involving extracted-only/close-name nodes were removed (14 edges), performance would be: TP=156, FP=2, FN=34, P=0.987342, R=0.821053, F1=0.896552.
+- If close-name aliases were accepted (PUMP-CW-1A->PUMP-CCW-1A, PUMP-CW-1B->PUMP-CCW-1B, FAN-R-1A->FAN-CR-1A, FAN-R-1B->FAN-CR-1B), performance would be: TP=170, FP=2, FN=20, P=0.988372, R=0.894737, F1=0.939227.
+- If all false-positive links were not put in extraction, performance would be: TP=156, FP=0, FN=34, P=1.000000, R=0.821053, F1=0.901734.
+- If the missed GT links were added but current FPs remained, performance would be: TP=190, FP=16, FN=0, P=0.922330, R=1.000000, F1=0.959596.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=190, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Bottom line
+-----------
+The remaining gap is mostly edge discovery, with the specific FP/FN examples above showing where the extracted connectivity diverges from GT. Naming issues are secondary unless listed in the close-name section.

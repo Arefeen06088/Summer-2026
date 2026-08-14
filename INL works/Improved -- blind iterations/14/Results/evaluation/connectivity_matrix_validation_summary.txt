@@ -1,0 +1,73 @@
+Connectivity matrix validation summary - document 14, Iteration_1 only
+
+GT edges: 190
+Final evaluated matrix: final_connectivity_matrix.csv
+Final score: TP=158, FP=32, FN=32, Precision=0.831579, Recall=0.831579, F1=0.831579
+Token usage: token_usage_actual_estimate.json (document totals from workflow actual total; round totals from explicit rounds list); document expected total=15212877
+
+Primary reason the score is not perfect
+- A noticeable share of the loss appears tied to close-but-not-exact component names, plus the listed edge differences.
+- Extra predicted nodes not in GT: 7
+- GT nodes missing from extraction: 7
+- False-positive edges: 32; false-negative edges: 32
+
+False-positive edge examples
+  - BUS-125DCA -- CB-DG-TIE
+  - BUS-125DCB -- CB-DG-TIE
+  - BUS-480A -- PANEL-ESF-A
+  - BUS-480A -- PANEL-LS-A
+  - BUS-480A -- PANEL-RPS-A
+  - BUS-480B -- PANEL-ESF-B
+  - BUS-480B -- PANEL-LS-B
+  - BUS-480B -- PANEL-RPS-B
+  - CB-DG-TIE -- PANEL-ANN
+  - CHG-125A -- PANEL-RPS-A
+  - CHG-125B -- PANEL-RPS-B
+  - FAN-R-1A -- GND-A04
+
+False-negative edge examples
+  - BUS-125DCA -- CB-DC-TIE
+  - BUS-125DCB -- CB-DC-TIE
+  - BUS-480A -- CHG-125A
+  - BUS-480B -- CHG-125B
+  - BUS-UPS-A -- PANEL-MCR
+  - FAN-CR-1A -- GND-A04
+  - FAN-CR-1A -- TB-A04
+  - FAN-CR-1B -- GND-B04
+  - FAN-CR-1B -- TB-B04
+  - GND-A05 -- MOV-SI-101A
+  - GND-A07 -- PUMP-CCW-1A
+  - GND-B05 -- MOV-SI-101B
+
+Component-name / component-set examples
+- Extra predicted node examples: CB-DG-TIE, FAN-R-1A, FAN-R-1B, MOV-ST-101A, MOV-ST-101B, PUMP-CW-1A, PUMP-CW-1B
+- Missing GT node examples: CB-DC-TIE, FAN-CR-1A, FAN-CR-1B, MOV-SI-101A, MOV-SI-101B, PUMP-CCW-1A, PUMP-CCW-1B
+- Close-name examples:
+  - extracted PUMP-CW-1B vs GT PUMP-CCW-1B (similarity 0.95)
+  - extracted PUMP-CW-1A vs GT PUMP-CCW-1A (similarity 0.95)
+  - extracted FAN-R-1B vs GT FAN-CR-1B (similarity 0.94)
+  - extracted FAN-R-1A vs GT FAN-CR-1A (similarity 0.94)
+  - extracted MOV-ST-101B vs GT MOV-SI-101B (similarity 0.91)
+  - extracted MOV-ST-101A vs GT MOV-SI-101A (similarity 0.91)
+  - extracted CB-DG-TIE vs GT CB-DC-TIE (similarity 0.89)
+
+Intermediate-node what-if examples
+- Degree-2 extra intermediate-node candidates: 6
+- If all 6 degree-2 extra nodes were bypassed, final F1 would be 0.844920 (delta +0.013341); TP=158, FP=26, FN=32.
+- Individual intermediate-node examples that improve F1 when bypassed:
+  - PUMP-CW-1B between GND-B07 and TB-B07 -> F1 0.833773 (delta +0.002194)
+  - PUMP-CW-1A between GND-A07 and TB-A07 -> F1 0.833773 (delta +0.002194)
+  - MOV-ST-101B between GND-B05 and TB-B05 -> F1 0.833773 (delta +0.002194)
+  - MOV-ST-101A between GND-A05 and TB-A05 -> F1 0.833773 (delta +0.002194)
+  - FAN-R-1B between GND-B04 and TB-B04 -> F1 0.833773 (delta +0.002194)
+  - FAN-R-1A between GND-A04 and TB-A04 -> F1 0.833773 (delta +0.002194)
+
+Rows evaluated
+- Diego -- Iteration 1 Round 1: P=0.834197, R=0.847368, F1=0.840731 (Iteration_1\round_01_diego_matrix.csv)
+- Jennifer -- Iteration 1 Round 1: P=0.871508, R=0.821053, F1=0.845528 (Iteration_1\round_01_jennifer_matrix.csv)
+- Diego -- Iteration 1 Round 2: P=0.831579, R=0.831579, F1=0.831579 (Iteration_1\round_02_diego_matrix.csv)
+- Jennifer -- Iteration 1 Round 2: P=0.831579, R=0.831579, F1=0.831579 (Iteration_1\round_02_jennifer_matrix.csv)
+- Final connectivity -- Iteration 1 Final: P=0.831579, R=0.831579, F1=0.831579 (Iteration_1\final_connectivity_matrix.csv)
+
+Normalization note
+- Labels were uppercased, whitespace/hyphen variants were collapsed, underscores were treated as hyphens, and known MCC voltage suffix aliases were mapped to the GT labels.

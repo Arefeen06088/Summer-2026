@@ -1,0 +1,36 @@
+Connectivity matrix validation summary - Document 7
+Input tree: Improved -- blind iterations
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\7\synthetic_npp_connectivity_matrix_clean.csv
+Token usage: no token estimate files were present under the requested results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_matrix.csv): TP=118, FP=5, FN=22, Precision=0.959350, Recall=0.842857, F1=0.897338
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_matrix.csv): TP=117, FP=2, FN=23, Precision=0.983193, Recall=0.835714, F1=0.903475
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_matrix.csv): TP=124, FP=7, FN=16, Precision=0.946565, Recall=0.885714, F1=0.915129
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_matrix.csv): TP=124, FP=7, FN=16, Precision=0.946565, Recall=0.885714, F1=0.915129
+- Diego -- Iteration 1 Round 3 (Iteration_1\round_03_diego_matrix.csv): TP=124, FP=7, FN=16, Precision=0.946565, Recall=0.885714, F1=0.915129
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=124, FP=7, FN=16, Precision=0.946565, Recall=0.885714, F1=0.915129
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- ANN-101 -- SR-101
+- ANN-101 -- UPS-120A
+- ANN-201 -- SR-101
+- ANN-201 -- UPS-120B
+- BAT-125A -- BCHG-125A
+- PNL-AC-CR2 -- RELAY-K201
+- RELAY-K101 -- RELAY-K102
+
+False-negative edge examples:
+- BCHG-125A -- LC-480A
+- BCHG-125B -- LC-480D
+- CB-DG-A -- RELAY-K102
+- CB-DG-B -- RELAY-K202
+- CB-TIE-4 -- RELAY-K101
+- CB-TIE-4 -- RELAY-K201
+- CB-UAT-A -- RELAY-K101
+- CB-UAT-B -- RELAY-K201
+- MCC-A1 -- RELAY-K102
+- MCC-B1 -- PNL-AC-CR1

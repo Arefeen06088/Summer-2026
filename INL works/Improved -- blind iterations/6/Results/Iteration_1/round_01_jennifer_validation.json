@@ -1,0 +1,268 @@
+{
+  "artifact": "round_01_jennifer_validation",
+  "role": "Jennifer precision reviewer/refiner",
+  "iteration": "Improved doc 6 / Iteration_1 / Diego round 01 review",
+  "blind_scope_statement": "Only listed input resources, fresh input-derived inspection crops/artifacts, and Diego round_01 files were used.",
+  "raw_image_authoritative": true,
+  "bus_label_review": {
+    "diego_label": "BUS-6KV-N",
+    "corrected_label": "BUS-4KV-N",
+    "evidence": [
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Codes and artifacts\\inspection_crops_improved\\11_bus_6kv_label_focus_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Codes and artifacts\\inspection_crops_improved\\03_safety_bus_full_raw.png"
+    ],
+    "status": "corrected in edges and matrix"
+  },
+  "files_written": {
+    "edges_csv": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_01_jennifer_edges.csv",
+    "matrix_csv": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_01_jennifer_matrix.csv",
+    "notes_md": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_01_jennifer_notes.md",
+    "validation_json": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_01_jennifer_validation.json"
+  },
+  "counts": {
+    "nodes": 105,
+    "component_nodes": 100,
+    "explicit_bus_nodes": 5,
+    "edges": 121,
+    "diego_edges": 153,
+    "removed_from_diego_excluding_bus_relabel": 34,
+    "added_precision_edges": 2,
+    "relabeled_bus_edges": 3
+  },
+  "validation_checks": {
+    "node_set_matches_component_list_plus_explicit_buses": true,
+    "invalid_nodes": [],
+    "missing_expected_nodes": [],
+    "edge_nodes_subset_of_matrix_nodes": true,
+    "duplicate_edges": false,
+    "self_edges": [],
+    "confidence_min": 0.68,
+    "confidence_max": 0.98,
+    "matrix_symmetric": true,
+    "matrix_diagonal_zero": true,
+    "uncorrected_BUS_6KV_N_present": false,
+    "isolated_nodes": []
+  },
+  "changes_from_diego": {
+    "removed_or_uncertain_edges_excluding_bus_relabel": [
+      {
+        "source": "CT-EDG-A",
+        "target": "DG-201A",
+        "reason": "CT symbol is on a dashed sensing/instrument line; no drawn CT terminal to DG-201A"
+      },
+      {
+        "source": "CT-EDG-A",
+        "target": "CB-DG-A",
+        "reason": "no direct CT terminal to CB-DG-A; nearby association only"
+      },
+      {
+        "source": "CT-EDG-B",
+        "target": "DG-201B",
+        "reason": "CT symbol is on a dashed sensing/instrument line; no drawn CT terminal to DG-201B"
+      },
+      {
+        "source": "CT-EDG-B",
+        "target": "CB-DG-B",
+        "reason": "no direct CT terminal to CB-DG-B; nearby association only"
+      },
+      {
+        "source": "REC-A",
+        "target": "BAT-125A",
+        "reason": "battery branch routes to PNL-DC-A; no direct REC-A to BAT-125A line visible"
+      },
+      {
+        "source": "REC-B",
+        "target": "BAT-125B",
+        "reason": "battery branch routes to PNL-DC-B; no direct REC-B to BAT-125B line visible"
+      },
+      {
+        "source": "PNL-DC-A",
+        "target": "GND-A",
+        "reason": "dotted ground bond lands at battery/rectifier area, not PNL-DC-A"
+      },
+      {
+        "source": "PNL-DC-B",
+        "target": "GND-B",
+        "reason": "dotted ground bond lands at battery/rectifier area, not PNL-DC-B"
+      },
+      {
+        "source": "UPS-A",
+        "target": "JBX-ESF-A",
+        "reason": "long dash-dot UPS/control bundle lacks an unambiguous named JBX-A termination"
+      },
+      {
+        "source": "PNL-DC-A",
+        "target": "JBX-ESF-A",
+        "reason": "long dash-dot DC panel bundle lacks an unambiguous named JBX-A termination"
+      },
+      {
+        "source": "UPS-B",
+        "target": "JBX-ESF-B",
+        "reason": "long dash-dot UPS/control bundle lacks an unambiguous named JBX-B termination"
+      },
+      {
+        "source": "PNL-DC-B",
+        "target": "JBX-ESF-B",
+        "reason": "long dash-dot DC panel bundle lacks an unambiguous named JBX-B termination"
+      },
+      {
+        "source": "RELAY-UV-A",
+        "target": "RELAY-UV-B",
+        "reason": "cross-train relay loop has crossings/returns without clear dot-confirmed direct relay-to-relay connectivity"
+      },
+      {
+        "source": "RELAY-SI-A",
+        "target": "RELAY-SI-B",
+        "reason": "cross-train relay loop has crossings/returns without clear dot-confirmed direct relay-to-relay connectivity"
+      },
+      {
+        "source": "RELAY-LOAD-A",
+        "target": "RELAY-LOAD-B",
+        "reason": "cross-train relay loop has crossings/returns without clear dot-confirmed direct relay-to-relay connectivity"
+      },
+      {
+        "source": "RELAY-DG-A",
+        "target": "RELAY-DG-B",
+        "reason": "cross-train relay loop has crossings/returns without clear dot-confirmed direct relay-to-relay connectivity"
+      },
+      {
+        "source": "DG-201A",
+        "target": "RELAY-DG-A",
+        "reason": "dashed DG relay route does not visibly terminate on DG-201A; keep CB/ATS terminations only"
+      },
+      {
+        "source": "DG-201B",
+        "target": "RELAY-DG-B",
+        "reason": "dashed DG relay route does not visibly terminate on DG-201B; keep CB/ATS terminations only"
+      },
+      {
+        "source": "CP-ESFAS-A",
+        "target": "JBX-ESF-A",
+        "reason": "shared control-bay routing is ambiguous; no direct named endpoint edge retained"
+      },
+      {
+        "source": "CP-ESFAS-B",
+        "target": "JBX-ESF-B",
+        "reason": "shared control-bay routing is ambiguous; no direct named endpoint edge retained"
+      },
+      {
+        "source": "PLC-RPS-A",
+        "target": "JBX-ESF-A",
+        "reason": "shared control-bay routing is ambiguous; no direct named endpoint edge retained"
+      },
+      {
+        "source": "PLC-RPS-B",
+        "target": "JBX-ESF-B",
+        "reason": "shared control-bay routing is ambiguous; no direct named endpoint edge retained"
+      },
+      {
+        "source": "RELAY-SI-A",
+        "target": "PUMP-HPI-A",
+        "reason": "SI dashed line terminates at MCC-HPI-A/MOV-SI-201A, not directly at PUMP-HPI-A"
+      },
+      {
+        "source": "RELAY-SI-B",
+        "target": "PUMP-HPI-B",
+        "reason": "SI dashed line terminates at MCC-HPI-B/MOV-SI-201B, not directly at PUMP-HPI-B"
+      },
+      {
+        "source": "RELAY-LOAD-A",
+        "target": "LC-480A",
+        "reason": "load relay route not visibly terminated on LC-480A; LC line is UV sensing branch"
+      },
+      {
+        "source": "RELAY-LOAD-B",
+        "target": "LC-480B",
+        "reason": "load relay route not visibly terminated on LC-480B; LC line is UV sensing branch"
+      },
+      {
+        "source": "RELAY-LOAD-A",
+        "target": "MCC-VENT-A",
+        "reason": "no clear dashed terminal on MCC-VENT-A; keep direct FAN-CR-A control termination"
+      },
+      {
+        "source": "RELAY-LOAD-B",
+        "target": "MCC-VENT-B",
+        "reason": "no clear dashed terminal on MCC-VENT-B; keep direct FAN-CR-B control termination"
+      },
+      {
+        "source": "UPS-A",
+        "target": "PNL-INST-A",
+        "reason": "long UPS/control power route is not unambiguously terminated at PNL-INST-A"
+      },
+      {
+        "source": "UPS-A",
+        "target": "CP-ESFAS-A",
+        "reason": "long UPS/control power route is not unambiguously terminated at CP-ESFAS-A"
+      },
+      {
+        "source": "UPS-A",
+        "target": "PLC-RPS-A",
+        "reason": "long UPS/control power route is not unambiguously terminated at PLC-RPS-A"
+      },
+      {
+        "source": "UPS-B",
+        "target": "PNL-INST-B",
+        "reason": "long UPS/control power route is not unambiguously terminated at PNL-INST-B"
+      },
+      {
+        "source": "UPS-B",
+        "target": "CP-ESFAS-B",
+        "reason": "long UPS/control power route is not unambiguously terminated at CP-ESFAS-B"
+      },
+      {
+        "source": "UPS-B",
+        "target": "PLC-RPS-B",
+        "reason": "long UPS/control power route is not unambiguously terminated at PLC-RPS-B"
+      }
+    ],
+    "added_precision_edges": [
+      {
+        "source": "RELAY-SI-A",
+        "target": "MCC-HPI-A",
+        "reason": "replaces Diego pump-level inference with the drawn MCC-HPI-A dashed side-port termination"
+      },
+      {
+        "source": "RELAY-SI-B",
+        "target": "MCC-HPI-B",
+        "reason": "replaces Diego pump-level inference with the drawn MCC-HPI-B dashed side-port termination"
+      }
+    ],
+    "bus_relabel_edges": [
+      {
+        "diego_source": "DS-6KV-A",
+        "diego_target": "BUS-6KV-N",
+        "jennifer_source": "DS-6KV-A",
+        "jennifer_target": "BUS-4KV-N"
+      },
+      {
+        "diego_source": "DS-6KV-B",
+        "diego_target": "BUS-6KV-N",
+        "jennifer_source": "DS-6KV-B",
+        "jennifer_target": "BUS-4KV-N"
+      },
+      {
+        "diego_source": "BUS-6KV-N",
+        "diego_target": "TR-480N",
+        "jennifer_source": "BUS-4KV-N",
+        "jennifer_target": "TR-480N"
+      }
+    ],
+    "computed_norm_removed_count": 34,
+    "computed_norm_added_count": 2
+  },
+  "input_files_used": [
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Input resources\\raw -- synthetic_npp_electrical_schematic_variant3_redo_clean_v7.png",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Input resources\\component_visual_ocr_labels.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Input resources\\wire_nodes.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Input resources\\wire_nodes_overlay.png",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Input resources\\wires_mask_overlay.png",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Input resources\\component_and_logical_detection_plus_ocr_overlay.png",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Codes and artifacts\\component_labels_list_improved.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Codes and artifacts\\component_labels_list_improved.txt",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Codes and artifacts\\inspection_crops_improved\\*.png",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_01_diego_edges.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_01_diego_matrix.csv",
+    "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\6\\Results\\Iteration_1\\round_01_diego_notes.md"
+  ]
+}

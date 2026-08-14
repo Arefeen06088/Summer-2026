@@ -1,0 +1,14 @@
+item,decision,evidence
+resource_scope,blind_only,Reviewed only Doc 5 Iteration 1 blind input resources plus Round 01 Jennifer and Diego files in the allowed Iteration_1 results folder; no GT/evaluator/score/prior-doc outputs used.
+round_02_topology,agree_exactly_with_jennifer,Diego Round 02 mirrors Jennifer Round 01 topology exactly: 55 matrix nodes and 56 undirected edges.
+saturation_candidate,yes,"After rechecking raw schematic linework and overlays, Jennifer precision refinement appears saturated for visually supported named endpoints without adding route labels or duplicate assemblies."
+MCC-21A / MCC-21B physical nodes,exclude,Agree with Jennifer: MCC-21A and MCC-21B are enclosure/assembly labels around the actual 480 V 3PH bus rails. Keeping both physical assembly and bus node creates a duplicate endpoint; final graph keeps only MCC-21A-480V-3PH and MCC-21B-480V-3PH as connectivity nodes.
+RPS-CH-A/B-CONTROL-LANE,route_label_not_matrix_node,Agree with Jennifer: RPS CH A/B control lane text labels identify dashed routing bands rather than terminal devices. Direct named-device chain edges better represent visible connectivity.
+VOLTAGE-SIG-A/B,route_label_not_matrix_node,Agree with Jennifer: VOLTAGE SIG A/B text labels annotate dashed instrument paths. Final graph collapses these into VT-21A--RPS-PNL-A and VT-21B--RPS-PNL-B medium-confidence device edges.
+CT-to-RPS,keep_medium,CT-21A/B dashed instrument leads visually descend toward RPS panel terminal regions; keep CT-21A--RPS-PNL-A and CT-21B--RPS-PNL-B at medium confidence.
+VT-to-RPS,keep_medium,VT-21A/B dashed voltage signal paths route toward RPS panel terminal regions; keep VT-21A--RPS-PNL-A and VT-21B--RPS-PNL-B at medium confidence after collapsing voltage-signal route labels.
+CT-to-fan,remove,Agree with Jennifer: CT symbols sit near fan feeder branches but are not clearly inline and lack an explicit wire/junction to FAN-RB21A/B; do not include CT-to-fan edges.
+DC-bus-to-RPS,remove,Agree with Jennifer: dashed RPS terminal drops approach/cross DC bus areas without clear solid tap or junction dot; do not include DC-BUS-21A/B--RPS-PNL-A/B edges.
+A direct control chain,keep,Agree with replacement chain: CB-MPA1--RELAY-86A--RELAY-K21A--RPS-PNL-A--INV-21A captures the dashed A control lane using named device endpoints.
+B direct control chain,keep,Agree with replacement chain: CB-MPB1--RELAY-86B--RELAY-K21B--RPS-PNL-B--INV-21B captures the dashed B control lane using named device endpoints.
+line crossings without dots,not_connected,Preserved Jennifer no-junction interpretation: dashed crossings near MOV-RWST and DC/RPS regions are not added as edges where no dot or terminal landing is visible.

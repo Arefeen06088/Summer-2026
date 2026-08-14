@@ -1,0 +1,42 @@
+Connectivity matrix validation summary
+
+Ground truth normalization:
+The GT file is an edge list, so it was normalized into an undirected set of component-to-component edges before validation. The extracted CSV files were adjacency matrices and were normalized into the same undirected edge-set format.
+
+Main reason the scores were not perfect:
+The dominant issue was not misspelled or missing GT component names. All GT component names were present exactly in each extracted matrix. The lost score mostly came from a different connectivity representation: the extracted matrices introduced extra intermediate labels/tap nodes that are not present as components in the GT, so a single GT edge was often represented as two extracted edges.
+
+Intermediate nodes responsible for the drop:
+- SU-A split TR-SU-A -- BUS-13K-A into TR-SU-A -- SU-A -- BUS-13K-A.
+- SU-B split TR-SU-B -- BUS-13K-B into TR-SU-B -- SU-B -- BUS-13K-B.
+- EDG-A split TR-EDG-A -- BUS-13K-A into TR-EDG-A -- EDG-A -- BUS-13K-A.
+- EDG-B split TR-EDG-B -- BUS-13K-B into TR-EDG-B -- EDG-B -- BUS-13K-B.
+- LC-A1 split BUS-480-A -- MCC-01A into BUS-480-A -- LC-A1 -- MCC-01A.
+- LC-A2 split BUS-480-A -- MCC-02A into BUS-480-A -- LC-A2 -- MCC-02A.
+- LC-B1 split BUS-480-B -- MCC-01B into BUS-480-B -- LC-B1 -- MCC-01B.
+- LC-B2 split BUS-480-B -- MCC-02B into BUS-480-B -- LC-B2 -- MCC-02B.
+- RPS-LOCKOUT split CB-4K-TIE -- PNL-RPS-1 into CB-4K-TIE -- RPS-LOCKOUT -- PNL-RPS-1.
+- RPS-TRIP split CB-13-TIE -- PNL-RPS-1 only in Diego Round 1. In the other three matrices, RPS-TRIP appeared as an extra node connected to PNL-RPS-1 but did not recover the missing CB-13-TIE -- PNL-RPS-1 edge.
+- CTRL-ESF-A-DASHED appeared only in Diego Round 1 and split PNL-ESF-A -- PUMP-AFW-A and PNL-ESF-A -- VALVE-MOV-A.
+- CTRL-ESF-B-DASHED appeared only in Diego Round 1 and split PNL-ESF-B -- PUMP-AFW-B and PNL-ESF-B -- VALVE-MOV-B.
+
+What caused FP/FN counts:
+- False positives were entirely due to edges involving extra non-GT labels. There were no false-positive edges directly between two valid GT component names.
+- False negatives were mostly GT direct edges that were split through those extra labels.
+- No GT components were missing from the extracted matrices.
+- There was no evidence that near-miss spelling or imperfect component naming was the main issue.
+
+Counterfactual performance if intermediate nodes were not used:
+The following estimates assume that each GT-node -> extra-node -> GT-node path is represented instead as the corresponding direct GT component-to-component edge, and that edges involving the extra non-GT node are not counted as extracted connectivity.
+
+- Diego -- Round 1 used 12 extra intermediate nodes: SU-A, SU-B, EDG-A, EDG-B, LC-A1, LC-A2, LC-B1, LC-B2, RPS-LOCKOUT, RPS-TRIP, CTRL-ESF-A-DASHED, and CTRL-ESF-B-DASHED. If those intermediate nodes were not inserted and the equivalent direct component edges were used, all 14 missed GT edges would be recovered and all 26 extra-node FPs would disappear. Performance would become TP=60, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000.
+- Jennifer -- Round 1 used 10 extra intermediate nodes: SU-A, SU-B, EDG-A, EDG-B, LC-A1, LC-A2, LC-B1, LC-B2, RPS-LOCKOUT, and RPS-TRIP. Removing/collapsing them would recover 9 of 10 missed GT edges and remove all 19 FPs. Performance would become TP=59, FP=0, FN=1, Precision=1.000000, Recall=0.983333, F1=0.991597. The remaining FN would be CB-13-TIE -- PNL-RPS-1.
+- Diego -- Round 2 used the same 10 extra intermediate nodes as Jennifer Round 1. Removing/collapsing them would also give TP=59, FP=0, FN=1, Precision=1.000000, Recall=0.983333, F1=0.991597. The remaining FN would be CB-13-TIE -- PNL-RPS-1.
+- Jennifer -- Round 2 used the same 10 extra intermediate nodes as Jennifer Round 1. Removing/collapsing them would also give TP=59, FP=0, FN=1, Precision=1.000000, Recall=0.983333, F1=0.991597. The remaining FN would be CB-13-TIE -- PNL-RPS-1.
+
+Round-specific notes:
+- Diego -- Round 1 had 26 FP and 14 FN. All 14 FN edges were recoverable as two-hop paths through extra intermediate labels. Diego also included extra dashed control labels, CTRL-ESF-A-DASHED and CTRL-ESF-B-DASHED, which split several ESF panel-to-load GT edges.
+- Jennifer -- Round 1, Diego -- Round 2, and Jennifer -- Round 2 each had 19 FP and 10 FN. In each case, 9 of the 10 FN edges were split through extra intermediate labels. The remaining missed GT edge was CB-13-TIE -- PNL-RPS-1, which was not recovered even as a two-hop path through an extra label.
+
+Conclusion:
+The imperfect score was primarily caused by connectivity/edge normalization granularity rather than wrong or missing component names. The extractors generally found the relevant physical connectivity, but often inserted intermediate labels as graph nodes while the GT uses direct component-to-component edges. A secondary issue in Jennifer Round 1, Diego Round 2, and Jennifer Round 2 was one genuinely missed GT connection: CB-13-TIE -- PNL-RPS-1.

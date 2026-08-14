@@ -1,0 +1,58 @@
+node_name,node_type,evidence
+OFFSITE-230KV-A,source,raw source block at upper left labeled OFFSITE 230 kV A
+DS-230A,disconnect_switch,raw disconnect switch symbol below OFFSITE-230KV-A
+TR-1A,transformer,raw transformer symbol labeled TR-1A 230/4.16
+CB-1A,breaker,raw breaker symbol below TR-1A
+EDG-1A,generator,raw generator circle labeled EDG-1A emergency diesel
+CB-DG-A,breaker,raw breaker symbol below EDG-1A
+BUS-4160-A-DIV-I,bus,raw double horizontal 4.16 kV ESF bus labeled BUS-4160-A DIV I
+CB-TIE-AB,tie_breaker,raw tie breaker between the two 4160 buses
+BUS-4160-B-DIV-II,bus,raw double horizontal 4.16 kV ESF bus labeled BUS-4160-B DIV II
+OFFSITE-230KV-B,source,raw source block at upper right labeled OFFSITE 230 kV B
+DS-230B,disconnect_switch,raw disconnect switch symbol below OFFSITE-230KV-B
+TR-1B,transformer,raw transformer symbol labeled TR-1B 230/4.16
+CB-1B,breaker,raw breaker symbol below TR-1B
+EDG-1B,generator,raw generator circle labeled EDG-1B emergency diesel
+CB-DG-B,breaker,raw breaker symbol below EDG-1B
+RELAY-UV-A,relay,raw relay block tapped by dashed conductor from BUS-4160-A-DIV-I
+RELAY-UV-B,relay,raw relay block tapped by dashed conductor from BUS-4160-B-DIV-II
+TR-480-A,transformer,raw transformer symbol labeled TR-480-A 4.16/0.48
+CB-480-A,breaker,raw breaker symbol below TR-480-A
+BUS-480-A,bus,raw double horizontal 480 V load center A bus
+TR-480-B,transformer,raw transformer symbol labeled TR-480-B 4.16/0.48
+CB-480-B,breaker,raw breaker symbol below TR-480-B
+BUS-480-B,bus,raw double horizontal 480 V load center B bus
+LC-A,local_control_node,raw LC-A label at left end of BUS-480-A conductor
+LC-B,local_control_node,raw LC-B label at right end of BUS-480-B conductor
+GND-PLANT,ground,raw ground reference symbol labeled GND-PLANT
+CHG-125A,charger,raw charger box in left DC stack labeled CHG-125A
+BAT-125A,battery,raw battery box in left DC stack labeled BAT-125A
+INV-120A,inverter,raw inverter box in left DC stack labeled INV-120A
+PANEL-120A,panel,raw panel box in left stack labeled PANEL-120A
+RPS-A,rps_panel,raw RPS panel box labeled RPS-A DIV I
+CHG-125B,charger,raw charger box in right DC stack labeled CHG-125B
+BAT-125B,battery,raw battery box in right DC stack labeled BAT-125B
+INV-120B,inverter,raw inverter box in right DC stack labeled INV-120B
+PANEL-120B,panel,raw panel box in right stack labeled PANEL-120B
+RPS-B,rps_panel,raw RPS panel box labeled RPS-B DIV II
+MCC-A1,mcc,raw MCC block labeled MCC-A1 safety loads
+MCC-A2,mcc,raw MCC block labeled MCC-A2 valve/pump
+MCC-B1,mcc,raw MCC block labeled MCC-B1 safety loads
+MCC-B2,mcc,raw MCC block labeled MCC-B2 valve/pump
+RELAY-KA1,relay,raw relay block below RPS-A and MCC-A1 labeled RELAY-KA1
+RELAY-KB1,relay,raw relay block below RPS-B labeled RELAY-KB1
+PUMP-RHR-A,pump,raw pump load box labeled PUMP-RHR-A RHR A
+PUMP-CS-A,pump,raw pump load box labeled PUMP-CS-A core spray
+PUMP-CCW-A,pump,raw pump load box labeled PUMP-CCW-A CCW A
+PUMP-RHR-B,pump,raw pump load box labeled PUMP-RHR-B RHR B
+PUMP-CS-B,pump,raw pump load box labeled PUMP-CS-B core spray
+PUMP-CCW-B,pump,raw pump load box labeled PUMP-CCW-B CCW B
+MOV-881A,motor_operated_valve,raw MOV load box labeled MOV-881A
+MOV-742A,motor_operated_valve,raw MOV load box labeled MOV-742A
+MOV-881B,motor_operated_valve,raw MOV load box labeled MOV-881B
+MOV-742B,motor_operated_valve,raw MOV load box labeled MOV-742B
+JB-A101,junction_box,raw junction box labeled JB-A101 below A-side MOVs
+ANN-CR01,annunciator,raw annunciator box labeled ANN-CR01
+REC-SOE01,recorder,raw recorder box labeled REC-SOE01
+JB-B101,junction_box,raw junction box labeled JB-B101 below B-side MOVs
+CONTROL-ROOM-ANNUNCIATION,control_bus,raw bottom label CONTROL ROOM ANNUNCIATION on dashed control route

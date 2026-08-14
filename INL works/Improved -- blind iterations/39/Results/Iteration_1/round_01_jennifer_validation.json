@@ -1,0 +1,55 @@
+{
+  "added_edges_vs_diego": [
+    {
+      "source": "BUS-480-A",
+      "status": "keep",
+      "target": "CHG-125A"
+    },
+    {
+      "source": "BUS-480-B",
+      "status": "keep",
+      "target": "CHG-125B"
+    }
+  ],
+  "checks": {
+    "all_status_values_valid": true,
+    "keep_edges_reference_only_nodes_csv": true,
+    "matrix_edge_count_matches_keep_edges": true,
+    "matrix_includes_only_keep_edges": true,
+    "matrix_nodes_match_nodes_csv": true,
+    "matrix_symmetric": true,
+    "matrix_zero_diagonal": true,
+    "no_duplicate_keep_edges": true,
+    "no_duplicate_node_names": true,
+    "no_wire_node_nodes": true
+  },
+  "edge_row_count": 79,
+  "edge_status_counts": {
+    "keep": 54,
+    "remove": 23,
+    "uncertain": 2
+  },
+  "iteration": "Iteration_1",
+  "keep_edge_count": 54,
+  "matrix_shape": [
+    54,
+    54
+  ],
+  "node_count": 54,
+  "notes": "Only keep edges are represented in round_01_jennifer_matrix.csv; uncertain/remove rows are documented in the edge review CSV only.",
+  "remove_edge_count": 23,
+  "removed_diego_nodes": [
+    "LC-A",
+    "LC-B",
+    "CONTROL-ROOM-ANNUNCIATION"
+  ],
+  "reviewer": "Jennifer",
+  "round": "round_01",
+  "scope": "Allowed input resources, current allowed aids, and Diego round 01 artifacts only.",
+  "status_changes_vs_diego": {
+    "keep_to_remove": 8,
+    "uncertain_to_keep": 1,
+    "uncertain_to_remove": 7
+  },
+  "uncertain_edge_count": 2
+}

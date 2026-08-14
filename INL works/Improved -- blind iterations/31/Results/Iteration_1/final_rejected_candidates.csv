@@ -1,0 +1,7 @@
+node_a,node_b,reason
+FT-511A,FCV-511A,"Rejected from Diego R01 and still rejected in final saturation. `FT-511A` is on the supply branch/header side; the nearer visible branch valve is `HV-511A`, while `FIC-511A -- FCV-511A` captures the direct control signal."
+HV-511A,HX-301A,Rejected from Diego R01 and still rejected. The FCV-side branch is the nearer named endpoint to `HX-301A`; retaining `HV-511A -- HX-301A` skipped over `FCV-511A`.
+HV-511B,HX-301A,"Rejected from Diego R01 and still rejected. The branch passes through the `FT-511B`/`FCV-511B` area before the cooler connection, so this remains overconnected."
+HV-511B,HX-301B,Rejected from Diego R01 and still rejected. Same service-water branch overconnection; `FCV-511B -- HX-301B` remains as the nearer accepted edge.
+FH-301,HV-203,"Rejected from Diego R01 and still rejected. The line from `FH-301` to the lower branch has `FT-203` as the nearer named endpoint, so the accepted local path is `FH-301 -- FT-203 -- HV-203`."
+TIC-310,HV-512B,Rejected from Diego R01 and still rejected. The crowded dot-dashed path does not clearly terminate on `HV-512B`; accepted TIC endpoints are the clearer temperature-controller links.

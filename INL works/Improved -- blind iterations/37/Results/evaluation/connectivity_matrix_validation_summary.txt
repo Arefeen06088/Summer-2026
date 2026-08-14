@@ -1,0 +1,18 @@
+Connectivity matrix validation summary - Document 37
+Input tree: Improved -- blind iterations
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\37\synthetic_npp_connectivity_matrix_v2(1).csv
+Token usage: no token estimate files were present under the requested results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_matrix.csv): TP=56, FP=0, FN=2, Precision=1.000000, Recall=0.965517, F1=0.982456
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_matrix.csv): TP=56, FP=0, FN=2, Precision=1.000000, Recall=0.965517, F1=0.982456
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_matrix.csv): TP=56, FP=0, FN=2, Precision=1.000000, Recall=0.965517, F1=0.982456
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_matrix.csv): TP=56, FP=0, FN=2, Precision=1.000000, Recall=0.965517, F1=0.982456
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=56, FP=0, FN=2, Precision=1.000000, Recall=0.965517, F1=0.982456
+
+Main reasons the selected final score was not perfect:
+- GT edges are missing; recall is the limiting term.
+
+False-negative edge examples:
+- PAN-RPS-A -- RELAY-K12A
+- PAN-RPS-B -- RELAY-K12B

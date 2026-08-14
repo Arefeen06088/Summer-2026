@@ -1,0 +1,73 @@
+Connectivity matrix validation summary - Document 3
+Input tree: Improved -- blind iterations
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\3\synthetic_npp_100_component_connectivity_matrix.csv
+Token usage: no token estimate files were present under the requested results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_matrix.csv): TP=98, FP=2, FN=2, Precision=0.980000, Recall=0.980000, F1=0.980000
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_matrix.csv): TP=98, FP=0, FN=2, Precision=1.000000, Recall=0.980000, F1=0.989899
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_matrix.csv): TP=98, FP=0, FN=2, Precision=1.000000, Recall=0.980000, F1=0.989899
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_matrix.csv): TP=98, FP=0, FN=2, Precision=1.000000, Recall=0.980000, F1=0.989899
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=98, FP=0, FN=2, Precision=1.000000, Recall=0.980000, F1=0.989899
+- Diego -- Iteration 2 Round 1 (Iteration_2\round_01_diego_matrix.csv): TP=0, FP=55, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+- Jennifer -- Iteration 2 Round 1 (Iteration_2\round_01_jennifer_matrix.csv): TP=0, FP=55, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+- Diego -- Iteration 2 Round 2 (Iteration_2\round_02_diego_matrix.csv): TP=0, FP=55, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+- Jennifer -- Iteration 2 Round 2 (Iteration_2\round_02_jennifer_matrix.csv): TP=0, FP=55, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+- Final connectivity -- Iteration 2 Final (Iteration_2\final_connectivity_matrix.csv): TP=0, FP=55, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often act like extra/intermediate nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- BAT-125A -- BUS-125DC-A
+- BAT-125B -- BUS-125DC-B
+- BUS-120AC-A -- INV-2A
+- BUS-120AC-A -- RPS-PNL-A
+- BUS-120AC-B -- INV-2B
+- BUS-120AC-B -- RELAY-27B
+- BUS-120AC-B -- RPS-PNL-B
+- BUS-120AC-B -- TR-CPT-B
+- BUS-125DC-A -- CHGR-2A
+- BUS-125DC-A -- INV-2A
+
+False-negative edge examples:
+- AUX-TR-1A -- CB-101
+- AUX-TR-1A -- GRID-1
+- AUX-TR-1B -- CB-102
+- AUX-TR-1B -- GRID-2
+- BAT-125A -- DC-BUS-A
+- BAT-125B -- DC-BUS-B
+- BUS-120A -- INV-120A
+- BUS-120A -- PANEL-RPS-A
+- BUS-120B -- INV-120B
+- BUS-120B -- PANEL-RPS-B
+
+Extra/non-GT nodes causing performance drops:
+- MCC-2A1: 7 incident false-positive edge(s)
+- MCC-2B1: 7 incident false-positive edge(s)
+- BUS-125DC-A: 4 incident false-positive edge(s)
+- BUS-125DC-B: 4 incident false-positive edge(s)
+- BUS-120AC-B: 4 incident false-positive edge(s)
+- BUS-4160A: 4 incident false-positive edge(s)
+- BUS-4160B: 4 incident false-positive edge(s)
+- BUS-480A: 4 incident false-positive edge(s)
+- BUS-480B: 4 incident false-positive edge(s)
+- BUS-120AC-A: 2 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (MCC-2A1, MCC-2B1, BUS-125DC-A, BUS-125DC-B, BUS-120AC-B), metrics would be TP=0, FP=29, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000.
+
+Missing GT node examples:
+- BUS-416A: 7 missed incident GT edge(s)
+- BUS-416B: 7 missed incident GT edge(s)
+- FDB-A1: 7 missed incident GT edge(s)
+- FDB-A2: 7 missed incident GT edge(s)
+- FDB-B1: 7 missed incident GT edge(s)
+- FDB-B2: 6 missed incident GT edge(s)
+- PANEL-RPS-A: 4 missed incident GT edge(s)
+- PANEL-RPS-B: 4 missed incident GT edge(s)
+- DC-BUS-A: 3 missed incident GT edge(s)
+- DC-BUS-B: 3 missed incident GT edge(s)

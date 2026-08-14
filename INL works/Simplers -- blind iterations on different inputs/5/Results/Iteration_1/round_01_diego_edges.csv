@@ -1,0 +1,67 @@
+source,target,confidence,evidence,diego_action
+DG-21A,ATS-21A,high,solid feeder drops from DG-21A generator and turns into the left side of ATS-21A,include_edge
+UAT-2A,DS-21A,high,solid vertical feeder exits UAT-2A transformer into DS-21A disconnect,include_edge
+DS-21A,ATS-21A,high,solid feeder leaves DS-21A and runs to the right side of ATS-21A,include_edge
+ATS-21A,SWGR-21A,high,solid vertical feeder from ATS-21A lands on SWGR-21A bus with a junction dot,include_edge
+SWGR-21A,TIE-BKR-21AB,high,SWGR-21A bus continues into left terminal of TIE-BKR-21AB,include_edge
+TIE-BKR-21AB,SWGR-21B,high,right terminal of TIE-BKR-21AB continues as SWGR-21B bus,include_edge
+SWGR-21A,CB-21A1,high,vertical feeder from SWGR-21A junction dot enters CB-21A1,include_edge
+CB-21A1,TR-21A,high,solid feeder continues downward from CB-21A1 into TR-21A transformer,include_edge
+TR-21A,MCC-21A-480V-3PH,high,solid feeder exits TR-21A and lands on MCC-21A 480 V 3PH bus with junction dot,include_edge
+MCC-21A,MCC-21A-480V-3PH,high,MCC-21A enclosure contains the labeled 480 V 3PH bus rail,include_internal_bus_edge
+MCC-21A-480V-3PH,CB-MPA1,high,left MCC-21A bus tap drops through CB-MPA1 feeder breaker,include_edge
+CB-MPA1,PUMP-SI21A,high,solid feeder continues from CB-MPA1 to PUMP-SI21A motor,include_edge
+MCC-21A-480V-3PH,PUMP-CCW21A,high,solid vertical feeder from MCC-21A bus lands on PUMP-CCW21A motor,include_edge
+MCC-21A-480V-3PH,FAN-RB21A,high,solid vertical feeder from MCC-21A bus lands on FAN-RB21A fan motor,include_edge
+MCC-21A-480V-3PH,MOV-HV211A,high,solid vertical feeder from MCC-21A bus lands on MOV-HV211A operator,include_edge
+MCC-21A-480V-3PH,MOV-RWST21A,high,solid vertical feeder from MCC-21A bus lands on MOV-RWST21A operator,include_edge
+MCC-21A-480V-3PH,XFMR-CPT21A,high,right MCC-21A bus tap feeds XFMR-CPT21A transformer by solid feeder,include_edge
+XFMR-CPT21A,AC-PNL-120A,high,solid feeder exits XFMR-CPT21A and lands on AC-PNL-120A,include_edge
+AC-PNL-120A,RECT-21A,high,solid feeder leaves AC-PNL-120A and enters RECT-21A charger,include_edge
+RECT-21A,DC-BUS-21A,high,RECT-21A output solid vertical feeder lands on DC-BUS-21A with junction dot,include_edge
+BAT-21A,DC-BUS-21A,high,BAT-21A battery terminals connect by solid vertical feeder to DC-BUS-21A,include_edge
+INV-21A,DC-BUS-21A,high,INV-21A is tied by solid vertical feeder to DC-BUS-21A at the rectifier/bus node,include_edge
+DC-BUS-21A,RPS-PNL-A,medium,dashed/terminal drop from the DC bus area routes to RPS-PNL-A terminals; visually plausible 125 VDC logic supply,include_edge_uncertain
+CB-MPA1,RPS-CH-A-CONTROL-LANE,medium,dashed trip-control line from CB-MPA1 feeder area drops into RPS CH A control lane,include_control_edge
+RELAY-86A,RPS-CH-A-CONTROL-LANE,high,RELAY-86A is drawn inline on the dashed RPS CH A control lane,include_control_edge
+RELAY-K21A,RPS-CH-A-CONTROL-LANE,high,RELAY-K21A is drawn inline on the dashed RPS CH A control lane,include_control_edge
+RPS-PNL-A,RPS-CH-A-CONTROL-LANE,high,RPS-PNL-A terminal block is connected directly to dashed RPS CH A control lane,include_control_edge
+INV-21A,RPS-CH-A-CONTROL-LANE,high,INV-21A control terminal connects to the dashed RPS CH A control lane,include_control_edge
+LOCA-SIG-A,JB-21A,high,dashed logic/signal line runs from LOCA-SIG-A circle into JB-21A terminal block,include_signal_edge
+JB-21A,RPS-PNL-A,high,dashed signal line exits JB-21A and routes down to RPS-PNL-A terminal area,include_signal_edge
+CT-21A,FAN-RB21A,medium,"CT-21A is drawn adjacent to the FAN-RB21A feeder branch, consistent with current sensing on that load",include_edge_uncertain
+CT-21A,RPS-PNL-A,medium,dashed instrument/control lead from CT-21A region descends toward RPS-PNL-A terminals,include_edge_uncertain
+VT-21A,VOLTAGE-SIG-A,high,dashed instrument lead from VT-21A continues to the labeled VOLTAGE SIG A path,include_signal_edge
+VOLTAGE-SIG-A,RPS-PNL-A,medium,labeled VOLTAGE SIG A dashed path turns toward RPS-PNL-A terminal block,include_signal_edge_uncertain
+SAT-2B,DS-21B,high,solid vertical feeder exits SAT-2B transformer into DS-21B disconnect,include_edge
+DS-21B,ATS-21B,high,solid feeder leaves DS-21B and runs to the left side of ATS-21B,include_edge
+DG-21B,ATS-21B,high,solid feeder drops from DG-21B generator and turns into the right side of ATS-21B,include_edge
+ATS-21B,SWGR-21B,high,solid vertical feeder from ATS-21B lands on SWGR-21B bus with a junction dot,include_edge
+SWGR-21B,CB-21B1,high,vertical feeder from SWGR-21B junction dot enters CB-21B1,include_edge
+CB-21B1,TR-21B,high,solid feeder continues downward from CB-21B1 into TR-21B transformer,include_edge
+TR-21B,MCC-21B-480V-3PH,high,solid feeder exits TR-21B and lands on MCC-21B 480 V 3PH bus with junction dot,include_edge
+MCC-21B,MCC-21B-480V-3PH,high,MCC-21B enclosure contains the labeled 480 V 3PH bus rail,include_internal_bus_edge
+MCC-21B-480V-3PH,XFMR-CPT21B,high,left MCC-21B bus tap feeds XFMR-CPT21B transformer by solid feeder,include_edge
+XFMR-CPT21B,AC-PNL-120B,high,solid feeder exits XFMR-CPT21B and lands on AC-PNL-120B,include_edge
+AC-PNL-120B,RECT-21B,high,solid feeder leaves AC-PNL-120B and enters RECT-21B charger,include_edge
+RECT-21B,DC-BUS-21B,high,RECT-21B output solid vertical feeder lands on DC-BUS-21B with junction dot,include_edge
+BAT-21B,DC-BUS-21B,high,BAT-21B battery terminals connect by solid vertical feeder to DC-BUS-21B,include_edge
+INV-21B,DC-BUS-21B,high,INV-21B is tied by solid vertical feeder to DC-BUS-21B,include_edge
+DC-BUS-21B,RPS-PNL-B,medium,dashed/terminal drop from DC-BUS-21B area routes to RPS-PNL-B terminals; visually plausible 125 VDC logic supply,include_edge_uncertain
+MCC-21B-480V-3PH,CB-MPB1,high,MCC-21B bus tap drops through CB-MPB1 feeder breaker,include_edge
+CB-MPB1,PUMP-SI21B,high,solid feeder continues from CB-MPB1 to PUMP-SI21B motor,include_edge
+MCC-21B-480V-3PH,PUMP-CCW21B,high,solid vertical feeder from MCC-21B bus lands on PUMP-CCW21B motor,include_edge
+MCC-21B-480V-3PH,FAN-RB21B,high,solid vertical feeder from MCC-21B bus lands on FAN-RB21B fan motor,include_edge
+MCC-21B-480V-3PH,MOV-HV211B,high,solid vertical feeder from MCC-21B bus lands on MOV-HV211B operator,include_edge
+MCC-21B-480V-3PH,MOV-RWST21B,high,solid vertical feeder from MCC-21B bus lands on MOV-RWST21B operator,include_edge
+CB-MPB1,RPS-CH-B-CONTROL-LANE,medium,dashed trip-control line from CB-MPB1 feeder area drops into RPS CH B control lane,include_control_edge
+RELAY-86B,RPS-CH-B-CONTROL-LANE,high,RELAY-86B is drawn inline on the dashed RPS CH B control lane,include_control_edge
+RELAY-K21B,RPS-CH-B-CONTROL-LANE,high,RELAY-K21B is drawn inline on the dashed RPS CH B control lane,include_control_edge
+RPS-PNL-B,RPS-CH-B-CONTROL-LANE,high,RPS-PNL-B terminal block is connected directly to dashed RPS CH B control lane,include_control_edge
+INV-21B,RPS-CH-B-CONTROL-LANE,high,INV-21B control terminal connects to the dashed RPS CH B control lane,include_control_edge
+LOCA-SIG-B,JB-21B,high,dashed logic/signal line runs from LOCA-SIG-B circle into JB-21B terminal block,include_signal_edge
+JB-21B,RPS-PNL-B,high,dashed signal line exits JB-21B and routes down to RPS-PNL-B terminal area,include_signal_edge
+CT-21B,FAN-RB21B,medium,"CT-21B is drawn adjacent to the FAN-RB21B feeder branch, consistent with current sensing on that load",include_edge_uncertain
+CT-21B,RPS-PNL-B,medium,dashed instrument/control lead from CT-21B region descends toward RPS-PNL-B terminals,include_edge_uncertain
+VT-21B,VOLTAGE-SIG-B,high,dashed instrument lead from VT-21B continues to the labeled VOLTAGE SIG B path,include_signal_edge
+VOLTAGE-SIG-B,RPS-PNL-B,medium,labeled VOLTAGE SIG B dashed path turns toward RPS-PNL-B terminal block,include_signal_edge_uncertain

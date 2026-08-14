@@ -1,0 +1,58 @@
+Connectivity matrix validation summary - document 10, Iteration_1 only
+
+GT edges: 134
+Final evaluated matrix: final_connectivity_matrix.csv
+Final score: TP=97, FP=28, FN=37, Precision=0.776000, Recall=0.723881, F1=0.749035
+Token usage: token_usage_actual_estimate.json (document totals from total usage; round totals from usage_by_agent); document expected total=16763785
+
+Primary reason the score is not perfect
+- The score is limited by a mix of imperfect edge discovery and component-set mismatch.
+- Extra predicted nodes not in GT: 2
+- GT nodes missing from extraction: 3
+- False-positive edges: 28; false-negative edges: 37
+
+False-positive edge examples
+  - AOV-101A -- MCC-102A
+  - AOV-101B -- MCC-102B
+  - BUS-4160-A -- FUSE-A01
+  - BUS-4160-A -- RECT-1A
+  - BUS-4160-B -- FUSE-B01
+  - BUS-4160-B -- RECT-1B
+  - BUS-480V-LC-FEEDERS-A -- CB-A08
+  - BUS-480V-LC-FEEDERS-A -- FAN-CR-A
+  - BUS-480V-LC-FEEDERS-A -- LC-101A
+  - BUS-480V-LC-FEEDERS-A -- LC-102A
+  - BUS-480V-LC-FEEDERS-B -- CB-B08
+  - BUS-480V-LC-FEEDERS-B -- FAN-CR-B
+
+False-negative edge examples
+  - BCHG-1A -- BUS-DC-A
+  - BCHG-1B -- BUS-DC-B
+  - BUS-DC-A -- RLY-86A
+  - BUS-DC-B -- RLY-86B
+  - CB-A08 -- FAN-CR-A
+  - CB-A09 -- PT-4160-A
+  - CB-B08 -- FAN-CR-B
+  - CB-B09 -- PT-4160-B
+  - CT-4160-A -- RLY-50A
+  - CT-4160-B -- RLY-50B
+  - CT-CAB-A -- JB-CONTROL
+  - CT-CAB-A -- TB-LV-A
+
+Component-name / component-set examples
+- Extra predicted node examples: BUS-480V-LC-FEEDERS-A, BUS-480V-LC-FEEDERS-B
+- Missing GT node examples: CT-CAB-A, CT-CAB-B, SER-01
+- Close-name examples: none detected above threshold
+
+Intermediate-node what-if examples
+- No degree-2 extra intermediate nodes were found in the final extraction.
+
+Rows evaluated
+- Diego -- Iteration 1 Round 1: P=0.723881, R=0.723881, F1=0.723881 (Iteration_1\current_round_01_diego_matrix.csv)
+- Jennifer -- Iteration 1 Round 1: P=0.772358, R=0.708955, F1=0.739300 (Iteration_1\current_round_01_jennifer_matrix.csv)
+- Diego -- Iteration 1 Round 2: P=0.776000, R=0.723881, F1=0.749035 (Iteration_1\current_round_02_diego_matrix.csv)
+- Jennifer -- Iteration 1 Round 2: P=0.776000, R=0.723881, F1=0.749035 (Iteration_1\current_round_02_jennifer_matrix.csv)
+- Final connectivity -- Iteration 1 Final: P=0.776000, R=0.723881, F1=0.749035 (Iteration_1\final_connectivity_matrix.csv)
+
+Normalization note
+- Labels were uppercased, whitespace/hyphen variants were collapsed, underscores were treated as hyphens, and known MCC voltage suffix aliases were mapped to the GT labels.

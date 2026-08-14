@@ -1,0 +1,1270 @@
+from_id,to_id,connection_type,notes
+BUS-2A,CB-2A-A,electrical,Phase A
+BUS-2A,CB-2A-B,electrical,Phase B
+BUS-2A,CB-2A-C,electrical,Phase C
+CB-2A-A,FU-2A-A,electrical,
+CB-2A-B,FU-2A-B,electrical,
+CB-2A-C,FU-2A-C,electrical,
+DS-1A,MTR-1,electrical,3-phase supply
+MTR-1,EXC-1,mechanical,shaft coupling
+EXC-1,GEN-1,mechanical,shaft coupling
+GEN-1,CB-1,electrical,generator output
+CB-1,FU-1A,electrical,175A generator output path
+CB-1,FU-1B,electrical,175A generator output path
+FU-1A,G1,electrical,
+FU-1B,G2,electrical,
+GEN-1,GND,ground,
+PB-STOP,PB-START,control,start/stop chain
+PB-START,CR-OV1,control,
+PB-START,CR-VB1,control,
+CR-OV1,T4,control,reset after overvoltage
+CR-VB1,T21,control,voltage buildup
+PL-R1,T2,indicator,motor ON lamp
+PL-R1,T7,indicator,motor ON lamp return
+PL-G1,T7,indicator,motor OFF lamp
+PL-G1,T1,indicator,motor OFF lamp return
+AM-1,T11,measurement,
+AM-1,T12,measurement,
+VM-1,T13,measurement,
+VM-1,T14,measurement,
+VADJ-1,T8,control,
+VADJ-1,T9,control,wiper
+VADJ-1,T10,control,
+K1,T16,control,relay coil
+K1,T17,control,relay coil
+K2,T18,control,relay coil
+K2,T19,control,relay coil
+PB-RST1,K27-1A,control,reset path
+KM1-A,K27-1A,control,seal-in path
+K27-1A,K59-1A,control,series relay contact chain
+K59-1A,K81-1A,control,series relay contact chain
+K81-1A,KM1,control,feeds master relay coil
+KM1-B,PL-R2,indicator,red pilot lamp path
+KM1-C,PL-G2,indicator,green pilot lamp path
+KM1,KM1-A,mechanical,relay operates contact
+KM1,KM1-B,mechanical,relay operates contact
+KM1,KM1-C,mechanical,relay operates contact
+KM1,KM1-D,mechanical,relay operates contact
+K27-1,K27-1A,mechanical,relay operates contact
+K59-1,K59-1A,mechanical,relay operates contact
+K81-1,K81-1A,mechanical,relay operates contact
+PB-RST2,K27-2A,control,reset path
+KM2-A,K27-2A,control,seal-in path
+K27-2A,K59-2A,control,series relay contact chain
+K59-2A,K81-2A,control,series relay contact chain
+K81-2A,KM2,control,feeds master relay coil
+KM2-B,PL-R3,indicator,red pilot lamp path
+KM2-C,PL-G3,indicator,green pilot lamp path
+KM2,KM2-A,mechanical,relay operates contact
+KM2,KM2-B,mechanical,relay operates contact
+KM2,KM2-C,mechanical,relay operates contact
+KM2,KM2-D,mechanical,relay operates contact
+K27-2,K27-2A,mechanical,relay operates contact
+K59-2,K59-2A,mechanical,relay operates contact
+K81-2,K81-2A,mechanical,relay operates contact
+FU-20A,CSA-2,electrical,
+CSA-2,K42GA,electrical,relay coil path
+K42GA,K42TA-A,electrical,
+K42TA-A,CSA-1,electrical,
+CSA-2,PL-R4,indicator,red lamp parallel branch
+PL-R4,K42TA-A,indicator,return side of K42GA
+FU-6A,PL-A1,electrical,
+FU-6B,PL-A2,electrical,
+PL-A2,K42TB-F,electrical,42TB contact below PL-A2
+FU-20B,CSA-4,electrical,
+CSA-4,K42TA,electrical,relay coil path
+K42TA,K42GA-B,electrical,
+K42GA-B,K42TB-A,electrical,
+K42TB-A,CSA-3,electrical,
+CSA-4,PL-R5,indicator,red lamp parallel branch
+PL-R5,K42GA-B,indicator,return side of K42TA
+ANN-3,K42GA-C,annunciator,input contact
+ANN-3,KALT-B,annunciator,amber-lamp contact
+ANN-3,K42TB-B,annunciator,input contact
+ANN-4,K42GB-A,annunciator,input contact
+ANN-4,KALT-A,annunciator,amber-lamp contact
+ANN-4,K42TA-C,annunciator,input contact
+FU-20C,CSB-4,electrical,
+CSB-4,K42TB,electrical,relay coil path
+K42TB,K42GB-C,electrical,
+K42GB-C,K42TA-D,electrical,
+K42TA-D,CSB-3,electrical,
+CSB-4,PL-R6,indicator,red lamp parallel branch
+PL-R6,K42GB-C,indicator,return side of K42TB
+FU-6C,PL-A3,electrical,
+PL-A3,K42TA-E,electrical,42TA contact below PL-A3
+FU-6D,PL-A4,electrical,
+FU-20D,CSB-2,electrical,
+CSB-2,K42GB,electrical,relay coil path
+K42GB,K42TB-D,electrical,
+K42TB-D,CSB-1,electrical,
+CSB-2,PL-R7,indicator,red lamp parallel branch
+PL-R7,K42TB-D,indicator,return side of K42GB
+PB-RST3,KTD2-1A,control,
+KTD1-1A,KTD2-1A,control,
+KTD2-1A,KM3,control,feeds master relay coil
+KM3-B,K27-3A,control,
+K27-3A,K59-3A,control,
+K59-3A,K81-3A,control,
+K81-3A,KTD2-1,control,
+KTD2-1,PL-R4,indicator,
+KM3-C,PL-G4,indicator,
+KM3,KM3-A,mechanical,relay operates contact
+KM3,KM3-B,mechanical,relay operates contact
+KM3,KM3-C,mechanical,relay operates contact
+KM3,KM3-D,mechanical,relay operates contact
+K27-3,K27-3A,mechanical,relay operates contact
+K59-3,K59-3A,mechanical,relay operates contact
+K81-3,K81-3A,mechanical,relay operates contact
+KTD1-1,KTD1-1A,mechanical,timer operates contact
+KTD2-1,KTD2-1A,mechanical,timer operates contact
+PB-RST4,KTD2-2A,control,
+KTD1-2A,KTD2-2A,control,
+KTD2-2A,KM4,control,feeds master relay coil
+KM4-B,K27-4A,control,
+K27-4A,K59-4A,control,
+K59-4A,K81-4A,control,
+K81-4A,KTD2-2,control,
+KTD2-2,PL-R5,indicator,
+KM4-C,PL-G5,indicator,
+KM4,KM4-A,mechanical,relay operates contact
+KM4,KM4-B,mechanical,relay operates contact
+KM4,KM4-C,mechanical,relay operates contact
+KM4,KM4-D,mechanical,relay operates contact
+K27-4,K27-4A,mechanical,relay operates contact
+K59-4,K59-4A,mechanical,relay operates contact
+K81-4,K81-4A,mechanical,relay operates contact
+KTD1-2,KTD1-2A,mechanical,timer operates contact
+KTD2-2,KTD2-2A,mechanical,timer operates contact
+BUS-2B,CB-2B-A,electrical,Phase A
+BUS-2B,CB-2B-B,electrical,Phase B
+BUS-2B,CB-2B-C,electrical,Phase C
+CB-2B-A,FU-2B-A,electrical,
+CB-2B-B,FU-2B-B,electrical,
+CB-2B-C,FU-2B-C,electrical,
+DS-1B,MTR-2,electrical,3-phase supply
+MTR-2,EXC-2,mechanical,shaft coupling
+EXC-2,GEN-2,mechanical,shaft coupling
+GEN-2,CB-2,electrical,generator output
+CB-2,FU-2A,electrical,175A generator output path
+CB-2,FU-2B,electrical,175A generator output path
+FU-2A,G1B,electrical,
+FU-2B,G2B,electrical,
+GEN-2,GND,ground,
+PB-STOP-2,PB-START-2,control,start/stop chain
+PB-START-2,CR-OV2,control,
+PB-START-2,CR-VB2,control,
+CR-OV2,P4,control,reset after overvoltage
+CR-VB2,P21,control,voltage buildup
+PL-R8,P2,indicator,motor ON lamp
+PL-R8,P7,indicator,motor ON lamp return
+PL-G8,P7,indicator,motor OFF lamp
+PL-G8,P1,indicator,motor OFF lamp return
+AM-2,P11,measurement,
+AM-2,P12,measurement,
+VM-2,P13,measurement,
+VM-2,P14,measurement,
+VADJ-2,P8,control,
+VADJ-2,P9,control,wiper
+VADJ-2,P10,control,
+K3,P16,control,relay coil
+K3,P17,control,relay coil
+K4,P18,control,relay coil
+K4,P19,control,relay coil
+PB-RST5,K27-5A,control,
+KM5-A,K27-5A,control,
+K27-5A,K59-5A,control,
+K59-5A,K81-5A,control,
+K81-5A,KM5,control,feeds master relay coil
+KM5-B,PL-R6,indicator,
+KM5-C,PL-G6,indicator,
+KM5,KM5-A,mechanical,relay operates contact
+KM5,KM5-B,mechanical,relay operates contact
+KM5,KM5-C,mechanical,relay operates contact
+KM5,KM5-D,mechanical,relay operates contact
+K27-5,K27-5A,mechanical,relay operates contact
+K59-5,K59-5A,mechanical,relay operates contact
+K81-5,K81-5A,mechanical,relay operates contact
+PB-RST6,K27-6A,control,
+KM6-A,K27-6A,control,
+K27-6A,K59-6A,control,
+K59-6A,K81-6A,control,
+K81-6A,KM6,control,feeds master relay coil
+KM6-B,PL-R7,indicator,
+KM6-C,PL-G7,indicator,
+KM6,KM6-A,mechanical,relay operates contact
+KM6,KM6-B,mechanical,relay operates contact
+KM6,KM6-C,mechanical,relay operates contact
+KM6,KM6-D,mechanical,relay operates contact
+K27-6,K27-6A,mechanical,relay operates contact
+K59-6,K59-6A,mechanical,relay operates contact
+K81-6,K81-6A,mechanical,relay operates contact
+K27-1,K59-1,electrical,normalized via 2A1L
+K27-1,K81-1,electrical,normalized via 2A1L
+K27-1,KM1-A,electrical,normalized via 2A1L
+K27-1,KM1-B,electrical,normalized via 2A1L
+K27-1,KM1-C,electrical,normalized via 2A1L
+K27-1,PB-RST1,electrical,normalized via 2A1L
+K27-1,T22,electrical,normalized via 2A1L
+K59-1,K81-1,electrical,normalized via 2A1L
+K59-1,KM1-A,electrical,normalized via 2A1L
+K59-1,KM1-B,electrical,normalized via 2A1L
+K59-1,KM1-C,electrical,normalized via 2A1L
+K59-1,PB-RST1,electrical,normalized via 2A1L
+K59-1,T22,electrical,normalized via 2A1L
+K81-1,KM1-A,electrical,normalized via 2A1L
+K81-1,KM1-B,electrical,normalized via 2A1L
+K81-1,KM1-C,electrical,normalized via 2A1L
+K81-1,PB-RST1,electrical,normalized via 2A1L
+K81-1,T22,electrical,normalized via 2A1L
+KM1-A,KM1-B,electrical,normalized via 2A1L
+KM1-A,KM1-C,electrical,normalized via 2A1L
+KM1-A,PB-RST1,electrical,normalized via 2A1L
+KM1-A,T22,electrical,normalized via 2A1L
+KM1-B,KM1-C,electrical,normalized via 2A1L
+KM1-B,PB-RST1,electrical,normalized via 2A1L
+KM1-B,T22,electrical,normalized via 2A1L
+KM1-C,PB-RST1,electrical,normalized via 2A1L
+KM1-C,T22,electrical,normalized via 2A1L
+PB-RST1,T22,electrical,normalized via 2A1L
+K27-2,K59-2,electrical,normalized via 2A2L
+K27-2,K81-2,electrical,normalized via 2A2L
+K27-2,KM2-A,electrical,normalized via 2A2L
+K27-2,KM2-B,electrical,normalized via 2A2L
+K27-2,KM2-C,electrical,normalized via 2A2L
+K27-2,PB-RST2,electrical,normalized via 2A2L
+K27-2,T23,electrical,normalized via 2A2L
+K59-2,K81-2,electrical,normalized via 2A2L
+K59-2,KM2-A,electrical,normalized via 2A2L
+K59-2,KM2-B,electrical,normalized via 2A2L
+K59-2,KM2-C,electrical,normalized via 2A2L
+K59-2,PB-RST2,electrical,normalized via 2A2L
+K59-2,T23,electrical,normalized via 2A2L
+K81-2,KM2-A,electrical,normalized via 2A2L
+K81-2,KM2-B,electrical,normalized via 2A2L
+K81-2,KM2-C,electrical,normalized via 2A2L
+K81-2,PB-RST2,electrical,normalized via 2A2L
+K81-2,T23,electrical,normalized via 2A2L
+KM2-A,KM2-B,electrical,normalized via 2A2L
+KM2-A,KM2-C,electrical,normalized via 2A2L
+KM2-A,PB-RST2,electrical,normalized via 2A2L
+KM2-A,T23,electrical,normalized via 2A2L
+KM2-B,KM2-C,electrical,normalized via 2A2L
+KM2-B,PB-RST2,electrical,normalized via 2A2L
+KM2-B,T23,electrical,normalized via 2A2L
+KM2-C,PB-RST2,electrical,normalized via 2A2L
+KM2-C,T23,electrical,normalized via 2A2L
+PB-RST2,T23,electrical,normalized via 2A2L
+K27-1,K27-2,electrical,normalized via 2AN
+K27-1,K59-1,electrical,normalized via 2AN
+K27-1,K59-2,electrical,normalized via 2AN
+K27-1,K81-1,electrical,normalized via 2AN
+K27-1,K81-2,electrical,normalized via 2AN
+K27-1,KM1,electrical,normalized via 2AN
+K27-1,KM2,electrical,normalized via 2AN
+K27-1,PL-G2,electrical,normalized via 2AN
+K27-1,PL-G3,electrical,normalized via 2AN
+K27-1,PL-R2,electrical,normalized via 2AN
+K27-1,PL-R3,electrical,normalized via 2AN
+K27-1,T14,electrical,normalized via 2AN
+K27-2,K59-1,electrical,normalized via 2AN
+K27-2,K59-2,electrical,normalized via 2AN
+K27-2,K81-1,electrical,normalized via 2AN
+K27-2,K81-2,electrical,normalized via 2AN
+K27-2,KM1,electrical,normalized via 2AN
+K27-2,KM2,electrical,normalized via 2AN
+K27-2,PL-G2,electrical,normalized via 2AN
+K27-2,PL-G3,electrical,normalized via 2AN
+K27-2,PL-R2,electrical,normalized via 2AN
+K27-2,PL-R3,electrical,normalized via 2AN
+K27-2,T14,electrical,normalized via 2AN
+K59-1,K59-2,electrical,normalized via 2AN
+K59-1,K81-1,electrical,normalized via 2AN
+K59-1,K81-2,electrical,normalized via 2AN
+K59-1,KM1,electrical,normalized via 2AN
+K59-1,KM2,electrical,normalized via 2AN
+K59-1,PL-G2,electrical,normalized via 2AN
+K59-1,PL-G3,electrical,normalized via 2AN
+K59-1,PL-R2,electrical,normalized via 2AN
+K59-1,PL-R3,electrical,normalized via 2AN
+K59-1,T14,electrical,normalized via 2AN
+K59-2,K81-1,electrical,normalized via 2AN
+K59-2,K81-2,electrical,normalized via 2AN
+K59-2,KM1,electrical,normalized via 2AN
+K59-2,KM2,electrical,normalized via 2AN
+K59-2,PL-G2,electrical,normalized via 2AN
+K59-2,PL-G3,electrical,normalized via 2AN
+K59-2,PL-R2,electrical,normalized via 2AN
+K59-2,PL-R3,electrical,normalized via 2AN
+K59-2,T14,electrical,normalized via 2AN
+K81-1,K81-2,electrical,normalized via 2AN
+K81-1,KM1,electrical,normalized via 2AN
+K81-1,KM2,electrical,normalized via 2AN
+K81-1,PL-G2,electrical,normalized via 2AN
+K81-1,PL-G3,electrical,normalized via 2AN
+K81-1,PL-R2,electrical,normalized via 2AN
+K81-1,PL-R3,electrical,normalized via 2AN
+K81-1,T14,electrical,normalized via 2AN
+K81-2,KM1,electrical,normalized via 2AN
+K81-2,KM2,electrical,normalized via 2AN
+K81-2,PL-G2,electrical,normalized via 2AN
+K81-2,PL-G3,electrical,normalized via 2AN
+K81-2,PL-R2,electrical,normalized via 2AN
+K81-2,PL-R3,electrical,normalized via 2AN
+K81-2,T14,electrical,normalized via 2AN
+KM1,KM2,electrical,normalized via 2AN
+KM1,PL-G2,electrical,normalized via 2AN
+KM1,PL-G3,electrical,normalized via 2AN
+KM1,PL-R2,electrical,normalized via 2AN
+KM1,PL-R3,electrical,normalized via 2AN
+KM1,T14,electrical,normalized via 2AN
+KM2,PL-G2,electrical,normalized via 2AN
+KM2,PL-G3,electrical,normalized via 2AN
+KM2,PL-R2,electrical,normalized via 2AN
+KM2,PL-R3,electrical,normalized via 2AN
+KM2,T14,electrical,normalized via 2AN
+PL-G2,PL-G3,electrical,normalized via 2AN
+PL-G2,PL-R2,electrical,normalized via 2AN
+PL-G2,PL-R3,electrical,normalized via 2AN
+PL-G2,T14,electrical,normalized via 2AN
+PL-G3,PL-R2,electrical,normalized via 2AN
+PL-G3,PL-R3,electrical,normalized via 2AN
+PL-G3,T14,electrical,normalized via 2AN
+PL-R2,PL-R3,electrical,normalized via 2AN
+PL-R2,T14,electrical,normalized via 2AN
+PL-R3,T14,electrical,normalized via 2AN
+K27-5,K59-5,electrical,normalized via 2B1L
+K27-5,K81-5,electrical,normalized via 2B1L
+K27-5,KM5-A,electrical,normalized via 2B1L
+K27-5,KM5-B,electrical,normalized via 2B1L
+K27-5,KM5-C,electrical,normalized via 2B1L
+K27-5,P22,electrical,normalized via 2B1L
+K27-5,PB-RST5,electrical,normalized via 2B1L
+K59-5,K81-5,electrical,normalized via 2B1L
+K59-5,KM5-A,electrical,normalized via 2B1L
+K59-5,KM5-B,electrical,normalized via 2B1L
+K59-5,KM5-C,electrical,normalized via 2B1L
+K59-5,P22,electrical,normalized via 2B1L
+K59-5,PB-RST5,electrical,normalized via 2B1L
+K81-5,KM5-A,electrical,normalized via 2B1L
+K81-5,KM5-B,electrical,normalized via 2B1L
+K81-5,KM5-C,electrical,normalized via 2B1L
+K81-5,P22,electrical,normalized via 2B1L
+K81-5,PB-RST5,electrical,normalized via 2B1L
+KM5-A,KM5-B,electrical,normalized via 2B1L
+KM5-A,KM5-C,electrical,normalized via 2B1L
+KM5-A,P22,electrical,normalized via 2B1L
+KM5-A,PB-RST5,electrical,normalized via 2B1L
+KM5-B,KM5-C,electrical,normalized via 2B1L
+KM5-B,P22,electrical,normalized via 2B1L
+KM5-B,PB-RST5,electrical,normalized via 2B1L
+KM5-C,P22,electrical,normalized via 2B1L
+KM5-C,PB-RST5,electrical,normalized via 2B1L
+P22,PB-RST5,electrical,normalized via 2B1L
+K27-6,K59-6,electrical,normalized via 2B2L
+K27-6,K81-6,electrical,normalized via 2B2L
+K27-6,KM6-A,electrical,normalized via 2B2L
+K27-6,KM6-B,electrical,normalized via 2B2L
+K27-6,KM6-C,electrical,normalized via 2B2L
+K27-6,P23,electrical,normalized via 2B2L
+K27-6,PB-RST6,electrical,normalized via 2B2L
+K59-6,K81-6,electrical,normalized via 2B2L
+K59-6,KM6-A,electrical,normalized via 2B2L
+K59-6,KM6-B,electrical,normalized via 2B2L
+K59-6,KM6-C,electrical,normalized via 2B2L
+K59-6,P23,electrical,normalized via 2B2L
+K59-6,PB-RST6,electrical,normalized via 2B2L
+K81-6,KM6-A,electrical,normalized via 2B2L
+K81-6,KM6-B,electrical,normalized via 2B2L
+K81-6,KM6-C,electrical,normalized via 2B2L
+K81-6,P23,electrical,normalized via 2B2L
+K81-6,PB-RST6,electrical,normalized via 2B2L
+KM6-A,KM6-B,electrical,normalized via 2B2L
+KM6-A,KM6-C,electrical,normalized via 2B2L
+KM6-A,P23,electrical,normalized via 2B2L
+KM6-A,PB-RST6,electrical,normalized via 2B2L
+KM6-B,KM6-C,electrical,normalized via 2B2L
+KM6-B,P23,electrical,normalized via 2B2L
+KM6-B,PB-RST6,electrical,normalized via 2B2L
+KM6-C,P23,electrical,normalized via 2B2L
+KM6-C,PB-RST6,electrical,normalized via 2B2L
+P23,PB-RST6,electrical,normalized via 2B2L
+K27-5,K27-6,electrical,normalized via 2BN
+K27-5,K59-5,electrical,normalized via 2BN
+K27-5,K59-6,electrical,normalized via 2BN
+K27-5,K81-5,electrical,normalized via 2BN
+K27-5,K81-6,electrical,normalized via 2BN
+K27-5,KM5,electrical,normalized via 2BN
+K27-5,KM6,electrical,normalized via 2BN
+K27-5,P14,electrical,normalized via 2BN
+K27-5,PL-G6,electrical,normalized via 2BN
+K27-5,PL-G7,electrical,normalized via 2BN
+K27-5,PL-R6,electrical,normalized via 2BN
+K27-5,PL-R7,electrical,normalized via 2BN
+K27-6,K59-5,electrical,normalized via 2BN
+K27-6,K59-6,electrical,normalized via 2BN
+K27-6,K81-5,electrical,normalized via 2BN
+K27-6,K81-6,electrical,normalized via 2BN
+K27-6,KM5,electrical,normalized via 2BN
+K27-6,KM6,electrical,normalized via 2BN
+K27-6,P14,electrical,normalized via 2BN
+K27-6,PL-G6,electrical,normalized via 2BN
+K27-6,PL-G7,electrical,normalized via 2BN
+K27-6,PL-R6,electrical,normalized via 2BN
+K27-6,PL-R7,electrical,normalized via 2BN
+K59-5,K59-6,electrical,normalized via 2BN
+K59-5,K81-5,electrical,normalized via 2BN
+K59-5,K81-6,electrical,normalized via 2BN
+K59-5,KM5,electrical,normalized via 2BN
+K59-5,KM6,electrical,normalized via 2BN
+K59-5,P14,electrical,normalized via 2BN
+K59-5,PL-G6,electrical,normalized via 2BN
+K59-5,PL-G7,electrical,normalized via 2BN
+K59-5,PL-R6,electrical,normalized via 2BN
+K59-5,PL-R7,electrical,normalized via 2BN
+K59-6,K81-5,electrical,normalized via 2BN
+K59-6,K81-6,electrical,normalized via 2BN
+K59-6,KM5,electrical,normalized via 2BN
+K59-6,KM6,electrical,normalized via 2BN
+K59-6,P14,electrical,normalized via 2BN
+K59-6,PL-G6,electrical,normalized via 2BN
+K59-6,PL-G7,electrical,normalized via 2BN
+K59-6,PL-R6,electrical,normalized via 2BN
+K59-6,PL-R7,electrical,normalized via 2BN
+K81-5,K81-6,electrical,normalized via 2BN
+K81-5,KM5,electrical,normalized via 2BN
+K81-5,KM6,electrical,normalized via 2BN
+K81-5,P14,electrical,normalized via 2BN
+K81-5,PL-G6,electrical,normalized via 2BN
+K81-5,PL-G7,electrical,normalized via 2BN
+K81-5,PL-R6,electrical,normalized via 2BN
+K81-5,PL-R7,electrical,normalized via 2BN
+K81-6,KM5,electrical,normalized via 2BN
+K81-6,KM6,electrical,normalized via 2BN
+K81-6,P14,electrical,normalized via 2BN
+K81-6,PL-G6,electrical,normalized via 2BN
+K81-6,PL-G7,electrical,normalized via 2BN
+K81-6,PL-R6,electrical,normalized via 2BN
+K81-6,PL-R7,electrical,normalized via 2BN
+KM5,KM6,electrical,normalized via 2BN
+KM5,P14,electrical,normalized via 2BN
+KM5,PL-G6,electrical,normalized via 2BN
+KM5,PL-G7,electrical,normalized via 2BN
+KM5,PL-R6,electrical,normalized via 2BN
+KM5,PL-R7,electrical,normalized via 2BN
+KM6,P14,electrical,normalized via 2BN
+KM6,PL-G6,electrical,normalized via 2BN
+KM6,PL-G7,electrical,normalized via 2BN
+KM6,PL-R6,electrical,normalized via 2BN
+KM6,PL-R7,electrical,normalized via 2BN
+P14,PL-G6,electrical,normalized via 2BN
+P14,PL-G7,electrical,normalized via 2BN
+P14,PL-R6,electrical,normalized via 2BN
+P14,PL-R7,electrical,normalized via 2BN
+PL-G6,PL-G7,electrical,normalized via 2BN
+PL-G6,PL-R6,electrical,normalized via 2BN
+PL-G6,PL-R7,electrical,normalized via 2BN
+PL-G7,PL-R6,electrical,normalized via 2BN
+PL-G7,PL-R7,electrical,normalized via 2BN
+PL-R6,PL-R7,electrical,normalized via 2BN
+FU-10A,K27-3,electrical,normalized via 2C1L
+FU-10A,K59-3,electrical,normalized via 2C1L
+FU-10A,K81-3,electrical,normalized via 2C1L
+FU-10A,KM3-B,electrical,normalized via 2C1L
+FU-10A,KM3-C,electrical,normalized via 2C1L
+FU-10A,KTD1-1A,electrical,normalized via 2C1L
+FU-10A,PB-RST3,electrical,normalized via 2C1L
+K27-3,K59-3,electrical,normalized via 2C1L
+K27-3,K81-3,electrical,normalized via 2C1L
+K27-3,KM3-B,electrical,normalized via 2C1L
+K27-3,KM3-C,electrical,normalized via 2C1L
+K27-3,KTD1-1A,electrical,normalized via 2C1L
+K27-3,PB-RST3,electrical,normalized via 2C1L
+K59-3,K81-3,electrical,normalized via 2C1L
+K59-3,KM3-B,electrical,normalized via 2C1L
+K59-3,KM3-C,electrical,normalized via 2C1L
+K59-3,KTD1-1A,electrical,normalized via 2C1L
+K59-3,PB-RST3,electrical,normalized via 2C1L
+K81-3,KM3-B,electrical,normalized via 2C1L
+K81-3,KM3-C,electrical,normalized via 2C1L
+K81-3,KTD1-1A,electrical,normalized via 2C1L
+K81-3,PB-RST3,electrical,normalized via 2C1L
+KM3-B,KM3-C,electrical,normalized via 2C1L
+KM3-B,KTD1-1A,electrical,normalized via 2C1L
+KM3-B,PB-RST3,electrical,normalized via 2C1L
+KM3-C,KTD1-1A,electrical,normalized via 2C1L
+KM3-C,PB-RST3,electrical,normalized via 2C1L
+KTD1-1A,PB-RST3,electrical,normalized via 2C1L
+FU-10B,K27-4,electrical,normalized via 2C2L
+FU-10B,K59-4,electrical,normalized via 2C2L
+FU-10B,K81-4,electrical,normalized via 2C2L
+FU-10B,KM4-B,electrical,normalized via 2C2L
+FU-10B,KM4-C,electrical,normalized via 2C2L
+FU-10B,KTD1-2A,electrical,normalized via 2C2L
+FU-10B,PB-RST4,electrical,normalized via 2C2L
+K27-4,K59-4,electrical,normalized via 2C2L
+K27-4,K81-4,electrical,normalized via 2C2L
+K27-4,KM4-B,electrical,normalized via 2C2L
+K27-4,KM4-C,electrical,normalized via 2C2L
+K27-4,KTD1-2A,electrical,normalized via 2C2L
+K27-4,PB-RST4,electrical,normalized via 2C2L
+K59-4,K81-4,electrical,normalized via 2C2L
+K59-4,KM4-B,electrical,normalized via 2C2L
+K59-4,KM4-C,electrical,normalized via 2C2L
+K59-4,KTD1-2A,electrical,normalized via 2C2L
+K59-4,PB-RST4,electrical,normalized via 2C2L
+K81-4,KM4-B,electrical,normalized via 2C2L
+K81-4,KM4-C,electrical,normalized via 2C2L
+K81-4,KTD1-2A,electrical,normalized via 2C2L
+K81-4,PB-RST4,electrical,normalized via 2C2L
+KM4-B,KM4-C,electrical,normalized via 2C2L
+KM4-B,KTD1-2A,electrical,normalized via 2C2L
+KM4-B,PB-RST4,electrical,normalized via 2C2L
+KM4-C,KTD1-2A,electrical,normalized via 2C2L
+KM4-C,PB-RST4,electrical,normalized via 2C2L
+KTD1-2A,PB-RST4,electrical,normalized via 2C2L
+DS-2,K27-3,electrical,normalized via 2CN/N
+DS-2,K27-4,electrical,normalized via 2CN/N
+DS-2,K59-3,electrical,normalized via 2CN/N
+DS-2,K59-4,electrical,normalized via 2CN/N
+DS-2,K81-3,electrical,normalized via 2CN/N
+DS-2,K81-4,electrical,normalized via 2CN/N
+DS-2,KM3,electrical,normalized via 2CN/N
+DS-2,KM4,electrical,normalized via 2CN/N
+DS-2,KTD1-1,electrical,normalized via 2CN/N
+DS-2,KTD1-2,electrical,normalized via 2CN/N
+DS-2,PL-G4,electrical,normalized via 2CN/N
+DS-2,PL-G5,electrical,normalized via 2CN/N
+DS-2,PL-R4,electrical,normalized via 2CN/N
+DS-2,PL-R5,electrical,normalized via 2CN/N
+K27-3,K27-4,electrical,normalized via 2CN/N
+K27-3,K59-3,electrical,normalized via 2CN/N
+K27-3,K59-4,electrical,normalized via 2CN/N
+K27-3,K81-3,electrical,normalized via 2CN/N
+K27-3,K81-4,electrical,normalized via 2CN/N
+K27-3,KM3,electrical,normalized via 2CN/N
+K27-3,KM4,electrical,normalized via 2CN/N
+K27-3,KTD1-1,electrical,normalized via 2CN/N
+K27-3,KTD1-2,electrical,normalized via 2CN/N
+K27-3,PL-G4,electrical,normalized via 2CN/N
+K27-3,PL-G5,electrical,normalized via 2CN/N
+K27-3,PL-R4,electrical,normalized via 2CN/N
+K27-3,PL-R5,electrical,normalized via 2CN/N
+K27-4,K59-3,electrical,normalized via 2CN/N
+K27-4,K59-4,electrical,normalized via 2CN/N
+K27-4,K81-3,electrical,normalized via 2CN/N
+K27-4,K81-4,electrical,normalized via 2CN/N
+K27-4,KM3,electrical,normalized via 2CN/N
+K27-4,KM4,electrical,normalized via 2CN/N
+K27-4,KTD1-1,electrical,normalized via 2CN/N
+K27-4,KTD1-2,electrical,normalized via 2CN/N
+K27-4,PL-G4,electrical,normalized via 2CN/N
+K27-4,PL-G5,electrical,normalized via 2CN/N
+K27-4,PL-R4,electrical,normalized via 2CN/N
+K27-4,PL-R5,electrical,normalized via 2CN/N
+K59-3,K59-4,electrical,normalized via 2CN/N
+K59-3,K81-3,electrical,normalized via 2CN/N
+K59-3,K81-4,electrical,normalized via 2CN/N
+K59-3,KM3,electrical,normalized via 2CN/N
+K59-3,KM4,electrical,normalized via 2CN/N
+K59-3,KTD1-1,electrical,normalized via 2CN/N
+K59-3,KTD1-2,electrical,normalized via 2CN/N
+K59-3,PL-G4,electrical,normalized via 2CN/N
+K59-3,PL-G5,electrical,normalized via 2CN/N
+K59-3,PL-R4,electrical,normalized via 2CN/N
+K59-3,PL-R5,electrical,normalized via 2CN/N
+K59-4,K81-3,electrical,normalized via 2CN/N
+K59-4,K81-4,electrical,normalized via 2CN/N
+K59-4,KM3,electrical,normalized via 2CN/N
+K59-4,KM4,electrical,normalized via 2CN/N
+K59-4,KTD1-1,electrical,normalized via 2CN/N
+K59-4,KTD1-2,electrical,normalized via 2CN/N
+K59-4,PL-G4,electrical,normalized via 2CN/N
+K59-4,PL-G5,electrical,normalized via 2CN/N
+K59-4,PL-R4,electrical,normalized via 2CN/N
+K59-4,PL-R5,electrical,normalized via 2CN/N
+K81-3,K81-4,electrical,normalized via 2CN/N
+K81-3,KM3,electrical,normalized via 2CN/N
+K81-3,KM4,electrical,normalized via 2CN/N
+K81-3,KTD1-1,electrical,normalized via 2CN/N
+K81-3,KTD1-2,electrical,normalized via 2CN/N
+K81-3,PL-G4,electrical,normalized via 2CN/N
+K81-3,PL-G5,electrical,normalized via 2CN/N
+K81-3,PL-R4,electrical,normalized via 2CN/N
+K81-3,PL-R5,electrical,normalized via 2CN/N
+K81-4,KM3,electrical,normalized via 2CN/N
+K81-4,KM4,electrical,normalized via 2CN/N
+K81-4,KTD1-1,electrical,normalized via 2CN/N
+K81-4,KTD1-2,electrical,normalized via 2CN/N
+K81-4,PL-G4,electrical,normalized via 2CN/N
+K81-4,PL-G5,electrical,normalized via 2CN/N
+K81-4,PL-R4,electrical,normalized via 2CN/N
+K81-4,PL-R5,electrical,normalized via 2CN/N
+KM3,KM4,electrical,normalized via 2CN/N
+KM3,KTD1-1,electrical,normalized via 2CN/N
+KM3,KTD1-2,electrical,normalized via 2CN/N
+KM3,PL-G4,electrical,normalized via 2CN/N
+KM3,PL-G5,electrical,normalized via 2CN/N
+KM3,PL-R4,electrical,normalized via 2CN/N
+KM3,PL-R5,electrical,normalized via 2CN/N
+KM4,KTD1-1,electrical,normalized via 2CN/N
+KM4,KTD1-2,electrical,normalized via 2CN/N
+KM4,PL-G4,electrical,normalized via 2CN/N
+KM4,PL-G5,electrical,normalized via 2CN/N
+KM4,PL-R4,electrical,normalized via 2CN/N
+KM4,PL-R5,electrical,normalized via 2CN/N
+KTD1-1,KTD1-2,electrical,normalized via 2CN/N
+KTD1-1,PL-G4,electrical,normalized via 2CN/N
+KTD1-1,PL-G5,electrical,normalized via 2CN/N
+KTD1-1,PL-R4,electrical,normalized via 2CN/N
+KTD1-1,PL-R5,electrical,normalized via 2CN/N
+KTD1-2,PL-G4,electrical,normalized via 2CN/N
+KTD1-2,PL-G5,electrical,normalized via 2CN/N
+KTD1-2,PL-R4,electrical,normalized via 2CN/N
+KTD1-2,PL-R5,electrical,normalized via 2CN/N
+PL-G4,PL-G5,electrical,normalized via 2CN/N
+PL-G4,PL-R4,electrical,normalized via 2CN/N
+PL-G4,PL-R5,electrical,normalized via 2CN/N
+PL-G5,PL-R4,electrical,normalized via 2CN/N
+PL-G5,PL-R5,electrical,normalized via 2CN/N
+PL-R4,PL-R5,electrical,normalized via 2CN/N
+KA-1,KA-11,annunciator,normalized via 2M360
+KA-1,KA-3,annunciator,normalized via 2M360
+KA-1,KA-5,annunciator,normalized via 2M360
+KA-1,KA-7,annunciator,normalized via 2M360
+KA-1,KA-9,annunciator,normalized via 2M360
+KA-1,KG1-A,annunciator,normalized via 2M360
+KA-1,KG2-A,annunciator,normalized via 2M360
+KA-1,KG3-A,annunciator,normalized via 2M360
+KA-1,KG4-A,annunciator,normalized via 2M360
+KA-1,KG5-A,annunciator,normalized via 2M360
+KA-1,KG6-A,annunciator,normalized via 2M360
+KA-1,KR1-A,annunciator,normalized via 2M360
+KA-1,KR2-A,annunciator,normalized via 2M360
+KA-1,KR3-A,annunciator,normalized via 2M360
+KA-1,KR4-A,annunciator,normalized via 2M360
+KA-1,KR5-A,annunciator,normalized via 2M360
+KA-1,KR6-A,annunciator,normalized via 2M360
+KA-1,KS1-A,annunciator,normalized via 2M360
+KA-1,KS2-A,annunciator,normalized via 2M360
+KA-1,KS5-A,annunciator,normalized via 2M360
+KA-1,KS6-A,annunciator,normalized via 2M360
+KA-1,KSP-1,annunciator,normalized via 2M360
+KA-1,KSP-2,annunciator,normalized via 2M360
+KA-11,KA-3,annunciator,normalized via 2M360
+KA-11,KA-5,annunciator,normalized via 2M360
+KA-11,KA-7,annunciator,normalized via 2M360
+KA-11,KA-9,annunciator,normalized via 2M360
+KA-11,KG1-A,annunciator,normalized via 2M360
+KA-11,KG2-A,annunciator,normalized via 2M360
+KA-11,KG3-A,annunciator,normalized via 2M360
+KA-11,KG4-A,annunciator,normalized via 2M360
+KA-11,KG5-A,annunciator,normalized via 2M360
+KA-11,KG6-A,annunciator,normalized via 2M360
+KA-11,KR1-A,annunciator,normalized via 2M360
+KA-11,KR2-A,annunciator,normalized via 2M360
+KA-11,KR3-A,annunciator,normalized via 2M360
+KA-11,KR4-A,annunciator,normalized via 2M360
+KA-11,KR5-A,annunciator,normalized via 2M360
+KA-11,KR6-A,annunciator,normalized via 2M360
+KA-11,KS1-A,annunciator,normalized via 2M360
+KA-11,KS2-A,annunciator,normalized via 2M360
+KA-11,KS5-A,annunciator,normalized via 2M360
+KA-11,KS6-A,annunciator,normalized via 2M360
+KA-11,KSP-1,annunciator,normalized via 2M360
+KA-11,KSP-2,annunciator,normalized via 2M360
+KA-3,KA-5,annunciator,normalized via 2M360
+KA-3,KA-7,annunciator,normalized via 2M360
+KA-3,KA-9,annunciator,normalized via 2M360
+KA-3,KG1-A,annunciator,normalized via 2M360
+KA-3,KG2-A,annunciator,normalized via 2M360
+KA-3,KG3-A,annunciator,normalized via 2M360
+KA-3,KG4-A,annunciator,normalized via 2M360
+KA-3,KG5-A,annunciator,normalized via 2M360
+KA-3,KG6-A,annunciator,normalized via 2M360
+KA-3,KR1-A,annunciator,normalized via 2M360
+KA-3,KR2-A,annunciator,normalized via 2M360
+KA-3,KR3-A,annunciator,normalized via 2M360
+KA-3,KR4-A,annunciator,normalized via 2M360
+KA-3,KR5-A,annunciator,normalized via 2M360
+KA-3,KR6-A,annunciator,normalized via 2M360
+KA-3,KS1-A,annunciator,normalized via 2M360
+KA-3,KS2-A,annunciator,normalized via 2M360
+KA-3,KS5-A,annunciator,normalized via 2M360
+KA-3,KS6-A,annunciator,normalized via 2M360
+KA-3,KSP-1,annunciator,normalized via 2M360
+KA-3,KSP-2,annunciator,normalized via 2M360
+KA-5,KA-7,annunciator,normalized via 2M360
+KA-5,KA-9,annunciator,normalized via 2M360
+KA-5,KG1-A,annunciator,normalized via 2M360
+KA-5,KG2-A,annunciator,normalized via 2M360
+KA-5,KG3-A,annunciator,normalized via 2M360
+KA-5,KG4-A,annunciator,normalized via 2M360
+KA-5,KG5-A,annunciator,normalized via 2M360
+KA-5,KG6-A,annunciator,normalized via 2M360
+KA-5,KR1-A,annunciator,normalized via 2M360
+KA-5,KR2-A,annunciator,normalized via 2M360
+KA-5,KR3-A,annunciator,normalized via 2M360
+KA-5,KR4-A,annunciator,normalized via 2M360
+KA-5,KR5-A,annunciator,normalized via 2M360
+KA-5,KR6-A,annunciator,normalized via 2M360
+KA-5,KS1-A,annunciator,normalized via 2M360
+KA-5,KS2-A,annunciator,normalized via 2M360
+KA-5,KS5-A,annunciator,normalized via 2M360
+KA-5,KS6-A,annunciator,normalized via 2M360
+KA-5,KSP-1,annunciator,normalized via 2M360
+KA-5,KSP-2,annunciator,normalized via 2M360
+KA-7,KA-9,annunciator,normalized via 2M360
+KA-7,KG1-A,annunciator,normalized via 2M360
+KA-7,KG2-A,annunciator,normalized via 2M360
+KA-7,KG3-A,annunciator,normalized via 2M360
+KA-7,KG4-A,annunciator,normalized via 2M360
+KA-7,KG5-A,annunciator,normalized via 2M360
+KA-7,KG6-A,annunciator,normalized via 2M360
+KA-7,KR1-A,annunciator,normalized via 2M360
+KA-7,KR2-A,annunciator,normalized via 2M360
+KA-7,KR3-A,annunciator,normalized via 2M360
+KA-7,KR4-A,annunciator,normalized via 2M360
+KA-7,KR5-A,annunciator,normalized via 2M360
+KA-7,KR6-A,annunciator,normalized via 2M360
+KA-7,KS1-A,annunciator,normalized via 2M360
+KA-7,KS2-A,annunciator,normalized via 2M360
+KA-7,KS5-A,annunciator,normalized via 2M360
+KA-7,KS6-A,annunciator,normalized via 2M360
+KA-7,KSP-1,annunciator,normalized via 2M360
+KA-7,KSP-2,annunciator,normalized via 2M360
+KA-9,KG1-A,annunciator,normalized via 2M360
+KA-9,KG2-A,annunciator,normalized via 2M360
+KA-9,KG3-A,annunciator,normalized via 2M360
+KA-9,KG4-A,annunciator,normalized via 2M360
+KA-9,KG5-A,annunciator,normalized via 2M360
+KA-9,KG6-A,annunciator,normalized via 2M360
+KA-9,KR1-A,annunciator,normalized via 2M360
+KA-9,KR2-A,annunciator,normalized via 2M360
+KA-9,KR3-A,annunciator,normalized via 2M360
+KA-9,KR4-A,annunciator,normalized via 2M360
+KA-9,KR5-A,annunciator,normalized via 2M360
+KA-9,KR6-A,annunciator,normalized via 2M360
+KA-9,KS1-A,annunciator,normalized via 2M360
+KA-9,KS2-A,annunciator,normalized via 2M360
+KA-9,KS5-A,annunciator,normalized via 2M360
+KA-9,KS6-A,annunciator,normalized via 2M360
+KA-9,KSP-1,annunciator,normalized via 2M360
+KA-9,KSP-2,annunciator,normalized via 2M360
+KG1-A,KG2-A,annunciator,normalized via 2M360
+KG1-A,KG3-A,annunciator,normalized via 2M360
+KG1-A,KG4-A,annunciator,normalized via 2M360
+KG1-A,KG5-A,annunciator,normalized via 2M360
+KG1-A,KG6-A,annunciator,normalized via 2M360
+KG1-A,KR1-A,annunciator,normalized via 2M360
+KG1-A,KR2-A,annunciator,normalized via 2M360
+KG1-A,KR3-A,annunciator,normalized via 2M360
+KG1-A,KR4-A,annunciator,normalized via 2M360
+KG1-A,KR5-A,annunciator,normalized via 2M360
+KG1-A,KR6-A,annunciator,normalized via 2M360
+KG1-A,KS1-A,annunciator,normalized via 2M360
+KG1-A,KS2-A,annunciator,normalized via 2M360
+KG1-A,KS5-A,annunciator,normalized via 2M360
+KG1-A,KS6-A,annunciator,normalized via 2M360
+KG1-A,KSP-1,annunciator,normalized via 2M360
+KG1-A,KSP-2,annunciator,normalized via 2M360
+KG2-A,KG3-A,annunciator,normalized via 2M360
+KG2-A,KG4-A,annunciator,normalized via 2M360
+KG2-A,KG5-A,annunciator,normalized via 2M360
+KG2-A,KG6-A,annunciator,normalized via 2M360
+KG2-A,KR1-A,annunciator,normalized via 2M360
+KG2-A,KR2-A,annunciator,normalized via 2M360
+KG2-A,KR3-A,annunciator,normalized via 2M360
+KG2-A,KR4-A,annunciator,normalized via 2M360
+KG2-A,KR5-A,annunciator,normalized via 2M360
+KG2-A,KR6-A,annunciator,normalized via 2M360
+KG2-A,KS1-A,annunciator,normalized via 2M360
+KG2-A,KS2-A,annunciator,normalized via 2M360
+KG2-A,KS5-A,annunciator,normalized via 2M360
+KG2-A,KS6-A,annunciator,normalized via 2M360
+KG2-A,KSP-1,annunciator,normalized via 2M360
+KG2-A,KSP-2,annunciator,normalized via 2M360
+KG3-A,KG4-A,annunciator,normalized via 2M360
+KG3-A,KG5-A,annunciator,normalized via 2M360
+KG3-A,KG6-A,annunciator,normalized via 2M360
+KG3-A,KR1-A,annunciator,normalized via 2M360
+KG3-A,KR2-A,annunciator,normalized via 2M360
+KG3-A,KR3-A,annunciator,normalized via 2M360
+KG3-A,KR4-A,annunciator,normalized via 2M360
+KG3-A,KR5-A,annunciator,normalized via 2M360
+KG3-A,KR6-A,annunciator,normalized via 2M360
+KG3-A,KS1-A,annunciator,normalized via 2M360
+KG3-A,KS2-A,annunciator,normalized via 2M360
+KG3-A,KS5-A,annunciator,normalized via 2M360
+KG3-A,KS6-A,annunciator,normalized via 2M360
+KG3-A,KSP-1,annunciator,normalized via 2M360
+KG3-A,KSP-2,annunciator,normalized via 2M360
+KG4-A,KG5-A,annunciator,normalized via 2M360
+KG4-A,KG6-A,annunciator,normalized via 2M360
+KG4-A,KR1-A,annunciator,normalized via 2M360
+KG4-A,KR2-A,annunciator,normalized via 2M360
+KG4-A,KR3-A,annunciator,normalized via 2M360
+KG4-A,KR4-A,annunciator,normalized via 2M360
+KG4-A,KR5-A,annunciator,normalized via 2M360
+KG4-A,KR6-A,annunciator,normalized via 2M360
+KG4-A,KS1-A,annunciator,normalized via 2M360
+KG4-A,KS2-A,annunciator,normalized via 2M360
+KG4-A,KS5-A,annunciator,normalized via 2M360
+KG4-A,KS6-A,annunciator,normalized via 2M360
+KG4-A,KSP-1,annunciator,normalized via 2M360
+KG4-A,KSP-2,annunciator,normalized via 2M360
+KG5-A,KG6-A,annunciator,normalized via 2M360
+KG5-A,KR1-A,annunciator,normalized via 2M360
+KG5-A,KR2-A,annunciator,normalized via 2M360
+KG5-A,KR3-A,annunciator,normalized via 2M360
+KG5-A,KR4-A,annunciator,normalized via 2M360
+KG5-A,KR5-A,annunciator,normalized via 2M360
+KG5-A,KR6-A,annunciator,normalized via 2M360
+KG5-A,KS1-A,annunciator,normalized via 2M360
+KG5-A,KS2-A,annunciator,normalized via 2M360
+KG5-A,KS5-A,annunciator,normalized via 2M360
+KG5-A,KS6-A,annunciator,normalized via 2M360
+KG5-A,KSP-1,annunciator,normalized via 2M360
+KG5-A,KSP-2,annunciator,normalized via 2M360
+KG6-A,KR1-A,annunciator,normalized via 2M360
+KG6-A,KR2-A,annunciator,normalized via 2M360
+KG6-A,KR3-A,annunciator,normalized via 2M360
+KG6-A,KR4-A,annunciator,normalized via 2M360
+KG6-A,KR5-A,annunciator,normalized via 2M360
+KG6-A,KR6-A,annunciator,normalized via 2M360
+KG6-A,KS1-A,annunciator,normalized via 2M360
+KG6-A,KS2-A,annunciator,normalized via 2M360
+KG6-A,KS5-A,annunciator,normalized via 2M360
+KG6-A,KS6-A,annunciator,normalized via 2M360
+KG6-A,KSP-1,annunciator,normalized via 2M360
+KG6-A,KSP-2,annunciator,normalized via 2M360
+KR1-A,KR2-A,annunciator,normalized via 2M360
+KR1-A,KR3-A,annunciator,normalized via 2M360
+KR1-A,KR4-A,annunciator,normalized via 2M360
+KR1-A,KR5-A,annunciator,normalized via 2M360
+KR1-A,KR6-A,annunciator,normalized via 2M360
+KR1-A,KS1-A,annunciator,normalized via 2M360
+KR1-A,KS2-A,annunciator,normalized via 2M360
+KR1-A,KS5-A,annunciator,normalized via 2M360
+KR1-A,KS6-A,annunciator,normalized via 2M360
+KR1-A,KSP-1,annunciator,normalized via 2M360
+KR1-A,KSP-2,annunciator,normalized via 2M360
+KR2-A,KR3-A,annunciator,normalized via 2M360
+KR2-A,KR4-A,annunciator,normalized via 2M360
+KR2-A,KR5-A,annunciator,normalized via 2M360
+KR2-A,KR6-A,annunciator,normalized via 2M360
+KR2-A,KS1-A,annunciator,normalized via 2M360
+KR2-A,KS2-A,annunciator,normalized via 2M360
+KR2-A,KS5-A,annunciator,normalized via 2M360
+KR2-A,KS6-A,annunciator,normalized via 2M360
+KR2-A,KSP-1,annunciator,normalized via 2M360
+KR2-A,KSP-2,annunciator,normalized via 2M360
+KR3-A,KR4-A,annunciator,normalized via 2M360
+KR3-A,KR5-A,annunciator,normalized via 2M360
+KR3-A,KR6-A,annunciator,normalized via 2M360
+KR3-A,KS1-A,annunciator,normalized via 2M360
+KR3-A,KS2-A,annunciator,normalized via 2M360
+KR3-A,KS5-A,annunciator,normalized via 2M360
+KR3-A,KS6-A,annunciator,normalized via 2M360
+KR3-A,KSP-1,annunciator,normalized via 2M360
+KR3-A,KSP-2,annunciator,normalized via 2M360
+KR4-A,KR5-A,annunciator,normalized via 2M360
+KR4-A,KR6-A,annunciator,normalized via 2M360
+KR4-A,KS1-A,annunciator,normalized via 2M360
+KR4-A,KS2-A,annunciator,normalized via 2M360
+KR4-A,KS5-A,annunciator,normalized via 2M360
+KR4-A,KS6-A,annunciator,normalized via 2M360
+KR4-A,KSP-1,annunciator,normalized via 2M360
+KR4-A,KSP-2,annunciator,normalized via 2M360
+KR5-A,KR6-A,annunciator,normalized via 2M360
+KR5-A,KS1-A,annunciator,normalized via 2M360
+KR5-A,KS2-A,annunciator,normalized via 2M360
+KR5-A,KS5-A,annunciator,normalized via 2M360
+KR5-A,KS6-A,annunciator,normalized via 2M360
+KR5-A,KSP-1,annunciator,normalized via 2M360
+KR5-A,KSP-2,annunciator,normalized via 2M360
+KR6-A,KS1-A,annunciator,normalized via 2M360
+KR6-A,KS2-A,annunciator,normalized via 2M360
+KR6-A,KS5-A,annunciator,normalized via 2M360
+KR6-A,KS6-A,annunciator,normalized via 2M360
+KR6-A,KSP-1,annunciator,normalized via 2M360
+KR6-A,KSP-2,annunciator,normalized via 2M360
+KS1-A,KS2-A,annunciator,normalized via 2M360
+KS1-A,KS5-A,annunciator,normalized via 2M360
+KS1-A,KS6-A,annunciator,normalized via 2M360
+KS1-A,KSP-1,annunciator,normalized via 2M360
+KS1-A,KSP-2,annunciator,normalized via 2M360
+KS2-A,KS5-A,annunciator,normalized via 2M360
+KS2-A,KS6-A,annunciator,normalized via 2M360
+KS2-A,KSP-1,annunciator,normalized via 2M360
+KS2-A,KSP-2,annunciator,normalized via 2M360
+KS5-A,KS6-A,annunciator,normalized via 2M360
+KS5-A,KSP-1,annunciator,normalized via 2M360
+KS5-A,KSP-2,annunciator,normalized via 2M360
+KS6-A,KSP-1,annunciator,normalized via 2M360
+KS6-A,KSP-2,annunciator,normalized via 2M360
+KSP-1,KSP-2,annunciator,normalized via 2M360
+CB-902,DS-2,electrical,normalized via L1
+CB-902,FU-10A,electrical,normalized via L1
+CB-902,FU-10B,electrical,normalized via L1
+CB-902,FU-20A,electrical,normalized via L1
+CB-902,FU-20B,electrical,normalized via L1
+CB-902,FU-6A,electrical,normalized via L1
+CB-902,FU-6B,electrical,normalized via L1
+DS-2,FU-10A,electrical,normalized via L1
+DS-2,FU-10B,electrical,normalized via L1
+DS-2,FU-20A,electrical,normalized via L1
+DS-2,FU-20B,electrical,normalized via L1
+DS-2,FU-6A,electrical,normalized via L1
+DS-2,FU-6B,electrical,normalized via L1
+FU-10A,FU-10B,electrical,normalized via L1
+FU-10A,FU-20A,electrical,normalized via L1
+FU-10A,FU-20B,electrical,normalized via L1
+FU-10A,FU-6A,electrical,normalized via L1
+FU-10A,FU-6B,electrical,normalized via L1
+FU-10B,FU-20A,electrical,normalized via L1
+FU-10B,FU-20B,electrical,normalized via L1
+FU-10B,FU-6A,electrical,normalized via L1
+FU-10B,FU-6B,electrical,normalized via L1
+FU-20A,FU-20B,electrical,normalized via L1
+FU-20A,FU-6A,electrical,normalized via L1
+FU-20A,FU-6B,electrical,normalized via L1
+FU-20B,FU-6A,electrical,normalized via L1
+FU-20B,FU-6B,electrical,normalized via L1
+FU-6A,FU-6B,electrical,normalized via L1
+KA-2,KA-4,electrical,normalized via L11A
+KA-2,KA-6,electrical,normalized via L11A
+KA-2,KA-8,electrical,normalized via L11A
+KA-4,KA-6,electrical,normalized via L11A
+KA-4,KA-8,electrical,normalized via L11A
+KA-6,KA-8,electrical,normalized via L11A
+KA-10,KA-12,electrical,normalized via L11B
+DS-2,G1,electrical,normalized via L12A
+CB-952,FU-20C,electrical,normalized via L1B
+CB-952,FU-20D,electrical,normalized via L1B
+CB-952,FU-6C,electrical,normalized via L1B
+CB-952,FU-6D,electrical,normalized via L1B
+CB-952,K42TB-E,electrical,normalized via L1B
+FU-20C,FU-20D,electrical,normalized via L1B
+FU-20C,FU-6C,electrical,normalized via L1B
+FU-20C,FU-6D,electrical,normalized via L1B
+FU-20C,K42TB-E,electrical,normalized via L1B
+FU-20D,FU-6C,electrical,normalized via L1B
+FU-20D,FU-6D,electrical,normalized via L1B
+FU-20D,K42TB-E,electrical,normalized via L1B
+FU-6C,FU-6D,electrical,normalized via L1B
+FU-6C,K42TB-E,electrical,normalized via L1B
+FU-6D,K42TB-E,electrical,normalized via L1B
+KM1-D,KM2-D,electrical,normalized via L21A
+KM1-D,KM3-D,electrical,normalized via L21A
+KM1-D,KM4-D,electrical,normalized via L21A
+KM2-D,KM3-D,electrical,normalized via L21A
+KM2-D,KM4-D,electrical,normalized via L21A
+KM3-D,KM4-D,electrical,normalized via L21A
+KM5-D,KM6-D,electrical,normalized via L21B
+DS-2,G2,electrical,normalized via L22A
+CB-952,K42GB-D,electrical,normalized via L2B
+KA-1,KA-11,annunciator,normalized via NM22B
+KA-1,KA-3,annunciator,normalized via NM22B
+KA-1,KA-5,annunciator,normalized via NM22B
+KA-1,KA-7,annunciator,normalized via NM22B
+KA-1,KA-9,annunciator,normalized via NM22B
+KA-1,KG1-A,annunciator,normalized via NM22B
+KA-1,KG2-A,annunciator,normalized via NM22B
+KA-1,KG3-A,annunciator,normalized via NM22B
+KA-1,KG4-A,annunciator,normalized via NM22B
+KA-1,KG5-A,annunciator,normalized via NM22B
+KA-1,KG6-A,annunciator,normalized via NM22B
+KA-1,KR1-A,annunciator,normalized via NM22B
+KA-1,KR2-A,annunciator,normalized via NM22B
+KA-1,KR3-A,annunciator,normalized via NM22B
+KA-1,KR4-A,annunciator,normalized via NM22B
+KA-1,KR5-A,annunciator,normalized via NM22B
+KA-1,KR6-A,annunciator,normalized via NM22B
+KA-1,KS1-A,annunciator,normalized via NM22B
+KA-1,KS2-A,annunciator,normalized via NM22B
+KA-1,KS5-A,annunciator,normalized via NM22B
+KA-1,KS6-A,annunciator,normalized via NM22B
+KA-1,KSP-1,annunciator,normalized via NM22B
+KA-1,KSP-2,annunciator,normalized via NM22B
+KA-11,KA-3,annunciator,normalized via NM22B
+KA-11,KA-5,annunciator,normalized via NM22B
+KA-11,KA-7,annunciator,normalized via NM22B
+KA-11,KA-9,annunciator,normalized via NM22B
+KA-11,KG1-A,annunciator,normalized via NM22B
+KA-11,KG2-A,annunciator,normalized via NM22B
+KA-11,KG3-A,annunciator,normalized via NM22B
+KA-11,KG4-A,annunciator,normalized via NM22B
+KA-11,KG5-A,annunciator,normalized via NM22B
+KA-11,KG6-A,annunciator,normalized via NM22B
+KA-11,KR1-A,annunciator,normalized via NM22B
+KA-11,KR2-A,annunciator,normalized via NM22B
+KA-11,KR3-A,annunciator,normalized via NM22B
+KA-11,KR4-A,annunciator,normalized via NM22B
+KA-11,KR5-A,annunciator,normalized via NM22B
+KA-11,KR6-A,annunciator,normalized via NM22B
+KA-11,KS1-A,annunciator,normalized via NM22B
+KA-11,KS2-A,annunciator,normalized via NM22B
+KA-11,KS5-A,annunciator,normalized via NM22B
+KA-11,KS6-A,annunciator,normalized via NM22B
+KA-11,KSP-1,annunciator,normalized via NM22B
+KA-11,KSP-2,annunciator,normalized via NM22B
+KA-3,KA-5,annunciator,normalized via NM22B
+KA-3,KA-7,annunciator,normalized via NM22B
+KA-3,KA-9,annunciator,normalized via NM22B
+KA-3,KG1-A,annunciator,normalized via NM22B
+KA-3,KG2-A,annunciator,normalized via NM22B
+KA-3,KG3-A,annunciator,normalized via NM22B
+KA-3,KG4-A,annunciator,normalized via NM22B
+KA-3,KG5-A,annunciator,normalized via NM22B
+KA-3,KG6-A,annunciator,normalized via NM22B
+KA-3,KR1-A,annunciator,normalized via NM22B
+KA-3,KR2-A,annunciator,normalized via NM22B
+KA-3,KR3-A,annunciator,normalized via NM22B
+KA-3,KR4-A,annunciator,normalized via NM22B
+KA-3,KR5-A,annunciator,normalized via NM22B
+KA-3,KR6-A,annunciator,normalized via NM22B
+KA-3,KS1-A,annunciator,normalized via NM22B
+KA-3,KS2-A,annunciator,normalized via NM22B
+KA-3,KS5-A,annunciator,normalized via NM22B
+KA-3,KS6-A,annunciator,normalized via NM22B
+KA-3,KSP-1,annunciator,normalized via NM22B
+KA-3,KSP-2,annunciator,normalized via NM22B
+KA-5,KA-7,annunciator,normalized via NM22B
+KA-5,KA-9,annunciator,normalized via NM22B
+KA-5,KG1-A,annunciator,normalized via NM22B
+KA-5,KG2-A,annunciator,normalized via NM22B
+KA-5,KG3-A,annunciator,normalized via NM22B
+KA-5,KG4-A,annunciator,normalized via NM22B
+KA-5,KG5-A,annunciator,normalized via NM22B
+KA-5,KG6-A,annunciator,normalized via NM22B
+KA-5,KR1-A,annunciator,normalized via NM22B
+KA-5,KR2-A,annunciator,normalized via NM22B
+KA-5,KR3-A,annunciator,normalized via NM22B
+KA-5,KR4-A,annunciator,normalized via NM22B
+KA-5,KR5-A,annunciator,normalized via NM22B
+KA-5,KR6-A,annunciator,normalized via NM22B
+KA-5,KS1-A,annunciator,normalized via NM22B
+KA-5,KS2-A,annunciator,normalized via NM22B
+KA-5,KS5-A,annunciator,normalized via NM22B
+KA-5,KS6-A,annunciator,normalized via NM22B
+KA-5,KSP-1,annunciator,normalized via NM22B
+KA-5,KSP-2,annunciator,normalized via NM22B
+KA-7,KA-9,annunciator,normalized via NM22B
+KA-7,KG1-A,annunciator,normalized via NM22B
+KA-7,KG2-A,annunciator,normalized via NM22B
+KA-7,KG3-A,annunciator,normalized via NM22B
+KA-7,KG4-A,annunciator,normalized via NM22B
+KA-7,KG5-A,annunciator,normalized via NM22B
+KA-7,KG6-A,annunciator,normalized via NM22B
+KA-7,KR1-A,annunciator,normalized via NM22B
+KA-7,KR2-A,annunciator,normalized via NM22B
+KA-7,KR3-A,annunciator,normalized via NM22B
+KA-7,KR4-A,annunciator,normalized via NM22B
+KA-7,KR5-A,annunciator,normalized via NM22B
+KA-7,KR6-A,annunciator,normalized via NM22B
+KA-7,KS1-A,annunciator,normalized via NM22B
+KA-7,KS2-A,annunciator,normalized via NM22B
+KA-7,KS5-A,annunciator,normalized via NM22B
+KA-7,KS6-A,annunciator,normalized via NM22B
+KA-7,KSP-1,annunciator,normalized via NM22B
+KA-7,KSP-2,annunciator,normalized via NM22B
+KA-9,KG1-A,annunciator,normalized via NM22B
+KA-9,KG2-A,annunciator,normalized via NM22B
+KA-9,KG3-A,annunciator,normalized via NM22B
+KA-9,KG4-A,annunciator,normalized via NM22B
+KA-9,KG5-A,annunciator,normalized via NM22B
+KA-9,KG6-A,annunciator,normalized via NM22B
+KA-9,KR1-A,annunciator,normalized via NM22B
+KA-9,KR2-A,annunciator,normalized via NM22B
+KA-9,KR3-A,annunciator,normalized via NM22B
+KA-9,KR4-A,annunciator,normalized via NM22B
+KA-9,KR5-A,annunciator,normalized via NM22B
+KA-9,KR6-A,annunciator,normalized via NM22B
+KA-9,KS1-A,annunciator,normalized via NM22B
+KA-9,KS2-A,annunciator,normalized via NM22B
+KA-9,KS5-A,annunciator,normalized via NM22B
+KA-9,KS6-A,annunciator,normalized via NM22B
+KA-9,KSP-1,annunciator,normalized via NM22B
+KA-9,KSP-2,annunciator,normalized via NM22B
+KG1-A,KG2-A,annunciator,normalized via NM22B
+KG1-A,KG3-A,annunciator,normalized via NM22B
+KG1-A,KG4-A,annunciator,normalized via NM22B
+KG1-A,KG5-A,annunciator,normalized via NM22B
+KG1-A,KG6-A,annunciator,normalized via NM22B
+KG1-A,KR1-A,annunciator,normalized via NM22B
+KG1-A,KR2-A,annunciator,normalized via NM22B
+KG1-A,KR3-A,annunciator,normalized via NM22B
+KG1-A,KR4-A,annunciator,normalized via NM22B
+KG1-A,KR5-A,annunciator,normalized via NM22B
+KG1-A,KR6-A,annunciator,normalized via NM22B
+KG1-A,KS1-A,annunciator,normalized via NM22B
+KG1-A,KS2-A,annunciator,normalized via NM22B
+KG1-A,KS5-A,annunciator,normalized via NM22B
+KG1-A,KS6-A,annunciator,normalized via NM22B
+KG1-A,KSP-1,annunciator,normalized via NM22B
+KG1-A,KSP-2,annunciator,normalized via NM22B
+KG2-A,KG3-A,annunciator,normalized via NM22B
+KG2-A,KG4-A,annunciator,normalized via NM22B
+KG2-A,KG5-A,annunciator,normalized via NM22B
+KG2-A,KG6-A,annunciator,normalized via NM22B
+KG2-A,KR1-A,annunciator,normalized via NM22B
+KG2-A,KR2-A,annunciator,normalized via NM22B
+KG2-A,KR3-A,annunciator,normalized via NM22B
+KG2-A,KR4-A,annunciator,normalized via NM22B
+KG2-A,KR5-A,annunciator,normalized via NM22B
+KG2-A,KR6-A,annunciator,normalized via NM22B
+KG2-A,KS1-A,annunciator,normalized via NM22B
+KG2-A,KS2-A,annunciator,normalized via NM22B
+KG2-A,KS5-A,annunciator,normalized via NM22B
+KG2-A,KS6-A,annunciator,normalized via NM22B
+KG2-A,KSP-1,annunciator,normalized via NM22B
+KG2-A,KSP-2,annunciator,normalized via NM22B
+KG3-A,KG4-A,annunciator,normalized via NM22B
+KG3-A,KG5-A,annunciator,normalized via NM22B
+KG3-A,KG6-A,annunciator,normalized via NM22B
+KG3-A,KR1-A,annunciator,normalized via NM22B
+KG3-A,KR2-A,annunciator,normalized via NM22B
+KG3-A,KR3-A,annunciator,normalized via NM22B
+KG3-A,KR4-A,annunciator,normalized via NM22B
+KG3-A,KR5-A,annunciator,normalized via NM22B
+KG3-A,KR6-A,annunciator,normalized via NM22B
+KG3-A,KS1-A,annunciator,normalized via NM22B
+KG3-A,KS2-A,annunciator,normalized via NM22B
+KG3-A,KS5-A,annunciator,normalized via NM22B
+KG3-A,KS6-A,annunciator,normalized via NM22B
+KG3-A,KSP-1,annunciator,normalized via NM22B
+KG3-A,KSP-2,annunciator,normalized via NM22B
+KG4-A,KG5-A,annunciator,normalized via NM22B
+KG4-A,KG6-A,annunciator,normalized via NM22B
+KG4-A,KR1-A,annunciator,normalized via NM22B
+KG4-A,KR2-A,annunciator,normalized via NM22B
+KG4-A,KR3-A,annunciator,normalized via NM22B
+KG4-A,KR4-A,annunciator,normalized via NM22B
+KG4-A,KR5-A,annunciator,normalized via NM22B
+KG4-A,KR6-A,annunciator,normalized via NM22B
+KG4-A,KS1-A,annunciator,normalized via NM22B
+KG4-A,KS2-A,annunciator,normalized via NM22B
+KG4-A,KS5-A,annunciator,normalized via NM22B
+KG4-A,KS6-A,annunciator,normalized via NM22B
+KG4-A,KSP-1,annunciator,normalized via NM22B
+KG4-A,KSP-2,annunciator,normalized via NM22B
+KG5-A,KG6-A,annunciator,normalized via NM22B
+KG5-A,KR1-A,annunciator,normalized via NM22B
+KG5-A,KR2-A,annunciator,normalized via NM22B
+KG5-A,KR3-A,annunciator,normalized via NM22B
+KG5-A,KR4-A,annunciator,normalized via NM22B
+KG5-A,KR5-A,annunciator,normalized via NM22B
+KG5-A,KR6-A,annunciator,normalized via NM22B
+KG5-A,KS1-A,annunciator,normalized via NM22B
+KG5-A,KS2-A,annunciator,normalized via NM22B
+KG5-A,KS5-A,annunciator,normalized via NM22B
+KG5-A,KS6-A,annunciator,normalized via NM22B
+KG5-A,KSP-1,annunciator,normalized via NM22B
+KG5-A,KSP-2,annunciator,normalized via NM22B
+KG6-A,KR1-A,annunciator,normalized via NM22B
+KG6-A,KR2-A,annunciator,normalized via NM22B
+KG6-A,KR3-A,annunciator,normalized via NM22B
+KG6-A,KR4-A,annunciator,normalized via NM22B
+KG6-A,KR5-A,annunciator,normalized via NM22B
+KG6-A,KR6-A,annunciator,normalized via NM22B
+KG6-A,KS1-A,annunciator,normalized via NM22B
+KG6-A,KS2-A,annunciator,normalized via NM22B
+KG6-A,KS5-A,annunciator,normalized via NM22B
+KG6-A,KS6-A,annunciator,normalized via NM22B
+KG6-A,KSP-1,annunciator,normalized via NM22B
+KG6-A,KSP-2,annunciator,normalized via NM22B
+KR1-A,KR2-A,annunciator,normalized via NM22B
+KR1-A,KR3-A,annunciator,normalized via NM22B
+KR1-A,KR4-A,annunciator,normalized via NM22B
+KR1-A,KR5-A,annunciator,normalized via NM22B
+KR1-A,KR6-A,annunciator,normalized via NM22B
+KR1-A,KS1-A,annunciator,normalized via NM22B
+KR1-A,KS2-A,annunciator,normalized via NM22B
+KR1-A,KS5-A,annunciator,normalized via NM22B
+KR1-A,KS6-A,annunciator,normalized via NM22B
+KR1-A,KSP-1,annunciator,normalized via NM22B
+KR1-A,KSP-2,annunciator,normalized via NM22B
+KR2-A,KR3-A,annunciator,normalized via NM22B
+KR2-A,KR4-A,annunciator,normalized via NM22B
+KR2-A,KR5-A,annunciator,normalized via NM22B
+KR2-A,KR6-A,annunciator,normalized via NM22B
+KR2-A,KS1-A,annunciator,normalized via NM22B
+KR2-A,KS2-A,annunciator,normalized via NM22B
+KR2-A,KS5-A,annunciator,normalized via NM22B
+KR2-A,KS6-A,annunciator,normalized via NM22B
+KR2-A,KSP-1,annunciator,normalized via NM22B
+KR2-A,KSP-2,annunciator,normalized via NM22B
+KR3-A,KR4-A,annunciator,normalized via NM22B
+KR3-A,KR5-A,annunciator,normalized via NM22B
+KR3-A,KR6-A,annunciator,normalized via NM22B
+KR3-A,KS1-A,annunciator,normalized via NM22B
+KR3-A,KS2-A,annunciator,normalized via NM22B
+KR3-A,KS5-A,annunciator,normalized via NM22B
+KR3-A,KS6-A,annunciator,normalized via NM22B
+KR3-A,KSP-1,annunciator,normalized via NM22B
+KR3-A,KSP-2,annunciator,normalized via NM22B
+KR4-A,KR5-A,annunciator,normalized via NM22B
+KR4-A,KR6-A,annunciator,normalized via NM22B
+KR4-A,KS1-A,annunciator,normalized via NM22B
+KR4-A,KS2-A,annunciator,normalized via NM22B
+KR4-A,KS5-A,annunciator,normalized via NM22B
+KR4-A,KS6-A,annunciator,normalized via NM22B
+KR4-A,KSP-1,annunciator,normalized via NM22B
+KR4-A,KSP-2,annunciator,normalized via NM22B
+KR5-A,KR6-A,annunciator,normalized via NM22B
+KR5-A,KS1-A,annunciator,normalized via NM22B
+KR5-A,KS2-A,annunciator,normalized via NM22B
+KR5-A,KS5-A,annunciator,normalized via NM22B
+KR5-A,KS6-A,annunciator,normalized via NM22B
+KR5-A,KSP-1,annunciator,normalized via NM22B
+KR5-A,KSP-2,annunciator,normalized via NM22B
+KR6-A,KS1-A,annunciator,normalized via NM22B
+KR6-A,KS2-A,annunciator,normalized via NM22B
+KR6-A,KS5-A,annunciator,normalized via NM22B
+KR6-A,KS6-A,annunciator,normalized via NM22B
+KR6-A,KSP-1,annunciator,normalized via NM22B
+KR6-A,KSP-2,annunciator,normalized via NM22B
+KS1-A,KS2-A,annunciator,normalized via NM22B
+KS1-A,KS5-A,annunciator,normalized via NM22B
+KS1-A,KS6-A,annunciator,normalized via NM22B
+KS1-A,KSP-1,annunciator,normalized via NM22B
+KS1-A,KSP-2,annunciator,normalized via NM22B
+KS2-A,KS5-A,annunciator,normalized via NM22B
+KS2-A,KS6-A,annunciator,normalized via NM22B
+KS2-A,KSP-1,annunciator,normalized via NM22B
+KS2-A,KSP-2,annunciator,normalized via NM22B
+KS5-A,KS6-A,annunciator,normalized via NM22B
+KS5-A,KSP-1,annunciator,normalized via NM22B
+KS5-A,KSP-2,annunciator,normalized via NM22B
+KS6-A,KSP-1,annunciator,normalized via NM22B
+KS6-A,KSP-2,annunciator,normalized via NM22B
+KSP-1,KSP-2,annunciator,normalized via NM22B
+CSA-1,CSA-3,electrical,normalized via RET-2A
+CSA-1,K42TB-F,electrical,normalized via RET-2A
+CSA-1,PL-A1,electrical,normalized via RET-2A
+CSA-3,K42TB-F,electrical,normalized via RET-2A
+CSA-3,PL-A1,electrical,normalized via RET-2A
+K42TB-F,PL-A1,electrical,normalized via RET-2A
+CSB-1,CSB-3,electrical,normalized via RET-2B
+CSB-1,K42GB-D,electrical,normalized via RET-2B
+CSB-1,K42TA-E,electrical,normalized via RET-2B
+CSB-1,K42TB-E,electrical,normalized via RET-2B
+CSB-1,PL-A4,electrical,normalized via RET-2B
+CSB-3,K42GB-D,electrical,normalized via RET-2B
+CSB-3,K42TA-E,electrical,normalized via RET-2B
+CSB-3,K42TB-E,electrical,normalized via RET-2B
+CSB-3,PL-A4,electrical,normalized via RET-2B
+K42GB-D,K42TA-E,electrical,normalized via RET-2B
+K42GB-D,K42TB-E,electrical,normalized via RET-2B
+K42GB-D,PL-A4,electrical,normalized via RET-2B
+K42TA-E,K42TB-E,electrical,normalized via RET-2B
+K42TA-E,PL-A4,electrical,normalized via RET-2B
+K42TB-E,PL-A4,electrical,normalized via RET-2B
+KTD1-1,KTD1-2,control,normalized via TDD
+DS-1A,FU-2A-A,electrical,normalized via X11
+DS-1A,FU-2A-B,electrical,normalized via X12
+DS-1A,FU-2A-C,electrical,normalized via X13
+DS-1B,FU-2B-A,electrical,normalized via X21
+DS-1B,FU-2B-B,electrical,normalized via X22
+DS-1B,FU-2B-C,electrical,normalized via X23

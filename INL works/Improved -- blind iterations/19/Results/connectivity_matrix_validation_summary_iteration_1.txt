@@ -1,0 +1,95 @@
+Connectivity matrix validation summary - Improved Document 19, Iteration 1
+==========================================================================
+
+Ground truth source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\19\connectivity_matrix_v3.csv
+Ground truth normalized as an undirected edge set with 200 edges across 200 component names.
+Evaluated extracted matrices from: C:\Asif_all_python_projects\INL\Improved -- blind iterations\19\Results\Iteration_1
+Included files: connectivity_matrix.csv, round_01_diego_matrix.csv, round_01_jennifer_matrix.csv, round_02_diego_matrix.csv, round_02_jennifer_matrix.csv, final_connectivity_matrix.csv
+Note: connectivity_matrix.csv is included because its filename also ends with _matrix.csv; it is labeled as an unlabeled connectivity matrix row.
+
+Strict exact-match metrics
+--------------------------
+- Connectivity matrix -- Unlabeled: TP=193, FP=3, FN=7, P=0.984694, R=0.965000, F1=0.974747
+- Diego -- Round 1: TP=197, FP=3, FN=3, P=0.985000, R=0.985000, F1=0.985000
+- Jennifer -- Round 1: TP=193, FP=3, FN=7, P=0.984694, R=0.965000, F1=0.974747
+- Diego -- Round 2: TP=193, FP=3, FN=7, P=0.984694, R=0.965000, F1=0.974747
+- Jennifer -- Round 2: TP=193, FP=3, FN=7, P=0.984694, R=0.965000, F1=0.974747
+- Final connectivity -- Final: TP=193, FP=3, FN=7, P=0.984694, R=0.965000, F1=0.974747
+
+Primary reason performance is not perfect
+-----------------------------------------
+The dominant loss is imperfect connectivity/edge discovery: false negatives are more common than false positives across the evaluated matrices.
+Component naming is not the broad driver unless noted below. Most errors are wrong or missing edges between otherwise recognizable components.
+Best strict rows: Diego -- Round 1 with F1=0.985000. Lowest strict row: Connectivity matrix -- Unlabeled with F1=0.974747.
+
+Close-but-not-perfect component names
+-------------------------------------
+No strong recurring close-name mismatch was found. The score drop is therefore not mainly from spelling/label drift.
+
+Examples causing the score drop
+--------------------------------
+Repeated false-positive extracted edges, counted across all evaluated rows:
+- BAT-125A -- CHGR-125A (6 rows)
+- INST-601 -- LS-MOV601 (6 rows)
+- BAT-125B -- CHGR-125B (6 rows)
+Repeated missed GT edges, counted across all evaluated rows:
+- LS-MOV601 -- VALVE-MOV601 (6 rows)
+- BUS-125DC-B -- CHGR-125B (6 rows)
+- BUS-125DC-A -- CHGR-125A (6 rows)
+- BUS-480-B -- CHGR-125B (5 rows)
+- BUS-480-A -- CHGR-125A (5 rows)
+- BUS-480-A -- CB-301 (5 rows)
+- BUS-480-B -- CB-302 (5 rows)
+
+Intermediate/extra-node effects
+-------------------------------
+No false positives are primarily driven by extracted-only intermediate node names.
+High-impact FP nodes overall, including valid GT components used in incorrect links:
+- BAT-125A: involved in 6 FP edge appearances
+- CHGR-125A: involved in 6 FP edge appearances
+- INST-601: involved in 6 FP edge appearances
+- LS-MOV601: involved in 6 FP edge appearances
+- BAT-125B: involved in 6 FP edge appearances
+- CHGR-125B: involved in 6 FP edge appearances
+
+Counterfactual insights
+-----------------------
+Connectivity matrix -- Unlabeled:
+- Removing extracted-only-node FP links has no effect because this row has no such FP links.
+- If all false-positive links were not put in extraction, performance would be: TP=193, FP=0, FN=7, P=1.000000, R=0.965000, F1=0.982188.
+- If the missed GT links were added but current FPs remained, performance would be: TP=200, FP=3, FN=0, P=0.985222, R=1.000000, F1=0.992556.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=200, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Diego -- Round 1:
+- Removing extracted-only-node FP links has no effect because this row has no such FP links.
+- If all false-positive links were not put in extraction, performance would be: TP=197, FP=0, FN=3, P=1.000000, R=0.985000, F1=0.992443.
+- If the missed GT links were added but current FPs remained, performance would be: TP=200, FP=3, FN=0, P=0.985222, R=1.000000, F1=0.992556.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=200, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Jennifer -- Round 1:
+- Removing extracted-only-node FP links has no effect because this row has no such FP links.
+- If all false-positive links were not put in extraction, performance would be: TP=193, FP=0, FN=7, P=1.000000, R=0.965000, F1=0.982188.
+- If the missed GT links were added but current FPs remained, performance would be: TP=200, FP=3, FN=0, P=0.985222, R=1.000000, F1=0.992556.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=200, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Diego -- Round 2:
+- Removing extracted-only-node FP links has no effect because this row has no such FP links.
+- If all false-positive links were not put in extraction, performance would be: TP=193, FP=0, FN=7, P=1.000000, R=0.965000, F1=0.982188.
+- If the missed GT links were added but current FPs remained, performance would be: TP=200, FP=3, FN=0, P=0.985222, R=1.000000, F1=0.992556.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=200, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Jennifer -- Round 2:
+- Removing extracted-only-node FP links has no effect because this row has no such FP links.
+- If all false-positive links were not put in extraction, performance would be: TP=193, FP=0, FN=7, P=1.000000, R=0.965000, F1=0.982188.
+- If the missed GT links were added but current FPs remained, performance would be: TP=200, FP=3, FN=0, P=0.985222, R=1.000000, F1=0.992556.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=200, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Final connectivity -- Final:
+- Removing extracted-only-node FP links has no effect because this row has no such FP links.
+- If all false-positive links were not put in extraction, performance would be: TP=193, FP=0, FN=7, P=1.000000, R=0.965000, F1=0.982188.
+- If the missed GT links were added but current FPs remained, performance would be: TP=200, FP=3, FN=0, P=0.985222, R=1.000000, F1=0.992556.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=200, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Bottom line
+-----------
+The remaining gap is mostly edge discovery, with the specific FP/FN examples above showing where the extracted connectivity diverges from GT. Naming issues are secondary unless listed in the close-name section.

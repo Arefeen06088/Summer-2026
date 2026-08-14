@@ -1,0 +1,78 @@
+source,target,evidence,status
+OFFSITE-230KV-A,DS-230A,solid vertical power conductor from offsite A source block into DS-230A,keep
+DS-230A,TR-1A,solid vertical power conductor from DS-230A into TR-1A,keep
+TR-1A,CB-1A,solid vertical power conductor from TR-1A into CB-1A,keep
+CB-1A,BUS-4160-A-DIV-I,solid vertical power drop from CB-1A to A 4160 bus dot,keep
+EDG-1A,CB-DG-A,solid vertical power conductor from EDG-1A to diesel generator breaker,keep
+CB-DG-A,BUS-4160-A-DIV-I,solid vertical power drop from CB-DG-A to A 4160 bus dot,keep
+BUS-4160-A-DIV-I,CB-TIE-AB,solid horizontal tie segment from A 4160 bus into left side of CB-TIE-AB,keep
+CB-TIE-AB,BUS-4160-B-DIV-II,solid horizontal tie segment from right side of CB-TIE-AB into B 4160 bus,keep
+OFFSITE-230KV-B,DS-230B,solid vertical power conductor from offsite B source block into DS-230B,keep
+DS-230B,TR-1B,solid vertical power conductor from DS-230B into TR-1B,keep
+TR-1B,CB-1B,solid vertical power conductor from TR-1B into CB-1B,keep
+CB-1B,BUS-4160-B-DIV-II,solid vertical power drop from CB-1B to B 4160 bus dot,keep
+EDG-1B,CB-DG-B,solid vertical power conductor from EDG-1B to diesel generator breaker,keep
+CB-DG-B,BUS-4160-B-DIV-II,solid vertical power drop from CB-DG-B to B 4160 bus dot,keep
+BUS-4160-A-DIV-I,RELAY-UV-A,dashed sensing/control tap drops from A 4160 bus to RELAY-UV-A,keep
+BUS-4160-B-DIV-II,RELAY-UV-B,dashed sensing/control tap drops from B 4160 bus to RELAY-UV-B,keep
+BUS-4160-A-DIV-I,TR-480-A,solid vertical transformer feeder from A 4160 bus to TR-480-A,keep
+TR-480-A,CB-480-A,solid vertical power conductor from TR-480-A to CB-480-A,keep
+CB-480-A,BUS-480-A,solid vertical power conductor from CB-480-A to BUS-480-A dot,keep
+BUS-4160-B-DIV-II,TR-480-B,solid vertical transformer feeder from B 4160 bus to TR-480-B,keep
+TR-480-B,CB-480-B,solid vertical power conductor from TR-480-B to CB-480-B,keep
+CB-480-B,BUS-480-B,solid vertical power conductor from CB-480-B to BUS-480-B dot,keep
+LC-A,BUS-480-A,LC-A label sits on the left end of the A 480 V bus conductor,keep
+LC-B,BUS-480-B,LC-B label sits on the right end of the B 480 V bus conductor,keep
+BUS-480-A,GND-PLANT,solid vertical ground reference connection from right end of BUS-480-A to GND-PLANT symbol,keep
+BUS-480-A,MCC-A1,solid vertical feeder from BUS-480-A down into MCC-A1,keep
+BUS-480-A,MCC-A2,solid vertical feeder from BUS-480-A down into MCC-A2,keep
+BUS-480-B,MCC-B1,solid vertical feeder from BUS-480-B down into MCC-B1,keep
+BUS-480-B,MCC-B2,solid vertical feeder from BUS-480-B down into MCC-B2,keep
+MCC-A1,PUMP-RHR-A,solid load feeder from MCC-A1 safety loads to PUMP-RHR-A,keep
+MCC-A1,PUMP-CS-A,solid load feeder from MCC-A1 safety loads to PUMP-CS-A,keep
+MCC-A2,PUMP-CCW-A,solid load feeder from MCC-A2 valve/pump section to PUMP-CCW-A,keep
+MCC-A2,MOV-881A,solid load feeder from MCC-A2 valve/pump section to MOV-881A,keep
+MCC-A2,MOV-742A,solid load feeder from MCC-A2 valve/pump section to MOV-742A,keep
+MCC-B1,PUMP-RHR-B,solid load feeder from MCC-B1 safety loads to PUMP-RHR-B,keep
+MCC-B1,PUMP-CS-B,solid load feeder from MCC-B1 safety loads to PUMP-CS-B,keep
+MCC-B2,PUMP-CCW-B,solid load feeder from MCC-B2 valve/pump section to PUMP-CCW-B,keep
+MCC-B2,MOV-881B,solid load feeder from MCC-B2 valve/pump section to MOV-881B,keep
+MCC-B2,MOV-742B,solid load feeder from MCC-B2 valve/pump section to MOV-742B,keep
+BUS-4160-A-DIV-I,CHG-125A,solid routed feed leaves left end of A 4160 bus area toward CHG-125A stack,keep
+CHG-125A,BAT-125A,visible DC stack conductor between CHG-125A and BAT-125A,keep
+BAT-125A,INV-120A,visible DC stack conductor and raw terminal schedule support BAT-A to INV-A path,keep
+INV-120A,PANEL-120A,visible stack conductor from INV-120A toward PANEL-120A,keep
+PANEL-120A,RPS-A,visible stack conductor from PANEL-120A toward RPS-A,keep
+BUS-4160-B-DIV-II,CHG-125B,solid routed feed leaves right end of B 4160 bus area toward CHG-125B stack,keep
+CHG-125B,BAT-125B,visible DC stack conductor between CHG-125B and BAT-125B,keep
+BAT-125B,INV-120B,visible DC stack conductor between BAT-125B and INV-120B,keep
+INV-120B,PANEL-120B,visible stack conductor from INV-120B toward PANEL-120B,keep
+PANEL-120B,RPS-B,visible stack conductor from PANEL-120B toward RPS-B,keep
+RPS-A,RELAY-KA1,short dashed control/interlock conductor from RPS-A into RELAY-KA1,keep
+RPS-B,RELAY-KB1,dashed control/interlock conductor from RPS-B into RELAY-KB1,keep
+MOV-881A,JB-A101,dashed control conductor from MOV-881A down to JB-A101,keep
+MOV-742A,JB-A101,dashed control conductor from MOV-742A down to JB-A101,keep
+MOV-881B,JB-B101,dashed control conductor from MOV-881B down to JB-B101,keep
+MOV-742B,JB-B101,dashed control conductor from MOV-742B down to JB-B101,keep
+JB-A101,CONTROL-ROOM-ANNUNCIATION,JB-A101 sits on the labeled lower control-room annunciation dashed route,keep
+ANN-CR01,CONTROL-ROOM-ANNUNCIATION,ANN-CR01 is placed directly on the labeled lower control-room annunciation dashed route,keep
+REC-SOE01,CONTROL-ROOM-ANNUNCIATION,REC-SOE01 is placed directly on the labeled lower control-room annunciation dashed route,keep
+JB-B101,CONTROL-ROOM-ANNUNCIATION,JB-B101 sits on the labeled lower control-room annunciation dashed route,keep
+RPS-A,JB-A101,long dashed route from RPS-A descends to lower perimeter and trends toward JB-A101 but intermediate routing is ambiguous,uncertain
+RPS-B,JB-B101,long dashed route from RPS-B descends to lower/right perimeter and trends toward JB-B101 but intermediate routing is ambiguous,uncertain
+RPS-A,CONTROL-ROOM-ANNUNCIATION,left RPS-A dashed conductors appear to join the lower control-room route but termination ownership is not fully resolved,uncertain
+RPS-B,CONTROL-ROOM-ANNUNCIATION,right RPS-B dashed conductors appear to join the lower control-room route but termination ownership is not fully resolved,uncertain
+INV-120A,LC-A,side-stack conductor near INV-120A approaches the LC-A end of BUS-480-A but raw geometry does not clearly show a direct inverter terminal,uncertain
+INV-120B,LC-B,side-stack conductor near INV-120B approaches the LC-B end of BUS-480-B but raw geometry does not clearly show a direct inverter terminal,uncertain
+JB-A101,ANN-CR01,lower dashed route visually continues from JB-A101 toward ANN-CR01 but final matrix represents this through CONTROL-ROOM-ANNUNCIATION,uncertain
+ANN-CR01,REC-SOE01,dashed segment between ANN-CR01 and REC-SOE01 is visible but final matrix represents both as taps on CONTROL-ROOM-ANNUNCIATION,uncertain
+REC-SOE01,JB-B101,lower dashed route continues toward B-side junction box but exact segment ownership is partly obscured by intervening layout,uncertain
+MCC-A1,RELAY-KA1,solid load routing passes close to RELAY-KA1 but a direct MCC-to-relay terminal is not visually certain,uncertain
+BUS-4160-A-DIV-I,BUS-4160-B-DIV-II,direct bus-to-bus shortcut rejected because the solid tie path passes through CB-TIE-AB,remove
+OFFSITE-230KV-A,BUS-4160-A-DIV-I,direct source-to-bus shortcut rejected because path passes through DS-230A TR-1A and CB-1A,remove
+OFFSITE-230KV-B,BUS-4160-B-DIV-II,direct source-to-bus shortcut rejected because path passes through DS-230B TR-1B and CB-1B,remove
+BUS-4160-A-DIV-I,BUS-480-A,direct 4160-to-480 shortcut rejected because path passes through TR-480-A and CB-480-A,remove
+BUS-4160-B-DIV-II,BUS-480-B,direct 4160-to-480 shortcut rejected because path passes through TR-480-B and CB-480-B,remove
+BUS-480-B,GND-PLANT,raw ground reference symbol is shown connected to the A 480 bus side and no clear B 480 bus ground tie is drawn,remove
+CHG-125A,INV-120A,direct charger-to-inverter shortcut rejected because raw stack shows BAT-125A between them,remove
+CHG-125B,INV-120B,direct charger-to-inverter shortcut rejected because raw stack shows BAT-125B between them,remove

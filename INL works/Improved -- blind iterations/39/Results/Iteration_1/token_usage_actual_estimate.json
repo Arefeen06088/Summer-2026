@@ -1,0 +1,114 @@
+{
+  "family": "Improved",
+  "document": 39,
+  "iteration": 1,
+  "main_start_boundary_utc": "2026-07-27T18:07:35.791000+00:00",
+  "token_update_timestamp": "2026-07-27T12:38:24-06:00",
+  "basis": "Actual local Codex token_count last_token_usage logs for the main agent since the latest doc39 user boundary plus all four completed Diego/Jennifer subagent session logs; final response not included.",
+  "main": {
+    "model_calls": 61,
+    "input_tokens": 7838768,
+    "cached_input_tokens": 7306752,
+    "output_tokens": 31515,
+    "reasoning_output_tokens": 9792,
+    "total_tokens": 7927491
+  },
+  "diego": {
+    "model_calls": 39,
+    "input_tokens": 2065661,
+    "cached_input_tokens": 1742464,
+    "output_tokens": 40180,
+    "reasoning_output_tokens": 21016,
+    "total_tokens": 2105841
+  },
+  "jennifer": {
+    "model_calls": 55,
+    "input_tokens": 3620973,
+    "cached_input_tokens": 3176064,
+    "output_tokens": 42833,
+    "reasoning_output_tokens": 22064,
+    "total_tokens": 3663806
+  },
+  "completed_subagents": {
+    "model_calls": 94,
+    "input_tokens": 5686634,
+    "cached_input_tokens": 4918528,
+    "output_tokens": 83013,
+    "reasoning_output_tokens": 43080,
+    "total_tokens": 5769647
+  },
+  "observed_workflow": {
+    "model_calls": 155,
+    "input_tokens": 13525402,
+    "cached_input_tokens": 12225280,
+    "output_tokens": 114528,
+    "reasoning_output_tokens": 52872,
+    "total_tokens": 13697138
+  },
+  "round_totals": [
+    {
+      "agent_role": "Diego",
+      "round": "round_01",
+      "agent_id": "019fa4c5-6689-7e52-a791-9c8404d200f8",
+      "nickname": "Dewey",
+      "usage": {
+        "model_calls": 13,
+        "input_tokens": 669774,
+        "cached_input_tokens": 531328,
+        "output_tokens": 25529,
+        "reasoning_output_tokens": 14586,
+        "total_tokens": 695303
+      }
+    },
+    {
+      "agent_role": "Jennifer",
+      "round": "round_01",
+      "agent_id": "019fa4cb-63d2-7282-b57e-cc21ff33962f",
+      "nickname": "Sartre",
+      "usage": {
+        "model_calls": 31,
+        "input_tokens": 2387407,
+        "cached_input_tokens": 2096768,
+        "output_tokens": 30409,
+        "reasoning_output_tokens": 16749,
+        "total_tokens": 2417816
+      }
+    },
+    {
+      "agent_role": "Diego",
+      "round": "round_02",
+      "agent_id": "019fa4d3-6e33-79d2-98f3-1bd69207b24b",
+      "nickname": "Ampere",
+      "usage": {
+        "model_calls": 26,
+        "input_tokens": 1395887,
+        "cached_input_tokens": 1211136,
+        "output_tokens": 14651,
+        "reasoning_output_tokens": 6430,
+        "total_tokens": 1410538
+      }
+    },
+    {
+      "agent_role": "Jennifer",
+      "round": "round_02",
+      "agent_id": "019fa4d7-933d-7cc2-8f4b-833a27af6f59",
+      "nickname": "Heisenberg",
+      "usage": {
+        "model_calls": 24,
+        "input_tokens": 1233566,
+        "cached_input_tokens": 1079296,
+        "output_tokens": 12424,
+        "reasoning_output_tokens": 5315,
+        "total_tokens": 1245990
+      }
+    }
+  ],
+  "single_agent_one_round_proxy": {
+    "low_total_tokens": 2677176,
+    "expected_total_tokens": 4659049,
+    "high_total_tokens": 8622794,
+    "basis": "Diego round 1 actual total plus 25%/50%/100% of observed main-agent orchestration tokens, as a one-agent one-round proxy."
+  },
+  "image_file_input_tokens": null,
+  "image_file_input_note": "not separately exposed; included in input_tokens"
+}

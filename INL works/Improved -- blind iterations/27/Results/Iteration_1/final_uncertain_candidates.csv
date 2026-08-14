@@ -1,0 +1,8 @@
+Candidate,Status,Reason
+`DC-BUS-125A -- DC-BUS-125B`,Omitted as uncertain,"The heavy horizontal line appears continuous, but the raw prints two distinct DC bus labels; a direct edge could overmerge logical A/B buses."
+`DC-BUS-125B -- PANEL-CTRL-MAIN`,Omitted as uncertain,The panel tap lands near the shared DC bus line; connecting it to both DC bus labels would create a hidden A/B tie.
+`BAT-125A -- DC-BUS-125A`,Omitted as uncertain,"The battery is visible, but no direct conductor to the DC bus is clearly drawn."
+`BAT-125B -- DC-BUS-125B`,Omitted as uncertain,"The battery is visible, but no direct conductor to the DC bus is clearly drawn."
+`CHGR-125A -- DC-BUS-125A`,Omitted as uncertain,"Functionally plausible charger/DC relation, but the visible geometry is enclosure/dotted boundary, not a clear conductor."
+`CHGR-125B -- DC-BUS-125B`,Omitted as uncertain,"Functionally plausible charger/DC relation, but the visible geometry is enclosure/dotted boundary, not a clear conductor."
+`JB-A10 -- DC-BUS-125A`,Omitted as uncertain,The nearby dashed branch aligns with `LT-A10`; the DC bus touch is not visually definite.

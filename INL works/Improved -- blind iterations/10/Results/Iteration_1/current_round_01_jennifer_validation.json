@@ -1,0 +1,155 @@
+{
+  "reviewer": "Jennifer",
+  "round": "current_round_01",
+  "scope": {
+    "used_only_allowed_input_resources_and_current_round_artifacts": true,
+    "ground_truth_or_eval_outputs_used": false,
+    "prior_or_archived_results_used": false
+  },
+  "node_count": 120,
+  "edge_candidate_count": 152,
+  "status_counts": {
+    "keep": 123,
+    "remove": 21,
+    "uncertain": 8
+  },
+  "keep_edge_count": 123,
+  "matrix_node_count": 120,
+  "matrix_edge_count": 123,
+  "checks": {
+    "matrix_includes_only_keep_edges": true,
+    "matrix_symmetric": true,
+    "matrix_zero_diagonal": true,
+    "no_wn_final_nodes": true,
+    "edges_reference_only_nodes_csv": true,
+    "matrix_references_only_nodes_csv": true,
+    "duplicate_undirected_edge_candidates": false
+  },
+  "missing_edge_nodes": [],
+  "wn_nodes": [],
+  "isolated_nodes_after_keep_matrix": [
+    "SER-01"
+  ],
+  "status_changes_from_diego_count": 17,
+  "status_changes_from_diego": [
+    {
+      "source": "RLY-27A",
+      "target": "RLY-50A",
+      "from": "keep",
+      "to": "remove",
+      "reason": "Removed for precision: both relays branch from the local relay/control trunk, but no direct relay-to-relay terminal path is drawn."
+    },
+    {
+      "source": "RLY-50A",
+      "target": "RLY-86A",
+      "from": "keep",
+      "to": "remove",
+      "reason": "Removed for precision: shared relay trunk/proximity is already represented by terminal-board and instrument links; no direct relay-to-relay terminal path is drawn."
+    },
+    {
+      "source": "CT-4160-A",
+      "target": "FUSE-A01",
+      "from": "keep",
+      "to": "remove",
+      "reason": "Removed: dotted sensing/protection route passes near the fuse area, but no clear terminal into FUSE-A01 is visible."
+    },
+    {
+      "source": "PT-4160-A",
+      "target": "BUS-4160-A",
+      "from": "keep",
+      "to": "remove",
+      "reason": "Removed: PT-4160-A is adjacent to the 4160 V bus/tap area, but a clear PT terminal directly on BUS-4160-A is not visible."
+    },
+    {
+      "source": "CT-4160-A",
+      "target": "BUS-4160-A",
+      "from": "keep",
+      "to": "remove",
+      "reason": "Removed: CT-4160-A has visible dotted sensing routes, but no clean terminal directly on BUS-4160-A is shown."
+    },
+    {
+      "source": "RLY-27B",
+      "target": "RLY-50B",
+      "from": "keep",
+      "to": "remove",
+      "reason": "Removed for precision: both relays branch from the local relay/control trunk, but no direct relay-to-relay terminal path is drawn."
+    },
+    {
+      "source": "RLY-50B",
+      "target": "RLY-86B",
+      "from": "keep",
+      "to": "remove",
+      "reason": "Removed for precision: shared relay trunk/proximity is already represented by terminal-board and instrument links; no direct relay-to-relay terminal path is drawn."
+    },
+    {
+      "source": "CT-4160-B",
+      "target": "FUSE-B01",
+      "from": "keep",
+      "to": "remove",
+      "reason": "Removed: dotted sensing/protection route passes near the fuse area, but no clear terminal into FUSE-B01 is visible."
+    },
+    {
+      "source": "PT-4160-B",
+      "target": "BUS-4160-B",
+      "from": "keep",
+      "to": "remove",
+      "reason": "Removed: PT-4160-B is adjacent to the 4160 V bus/tap area, but a clear PT terminal directly on BUS-4160-B is not visible."
+    },
+    {
+      "source": "CT-4160-B",
+      "target": "BUS-4160-B",
+      "from": "keep",
+      "to": "remove",
+      "reason": "Removed: CT-4160-B has visible dotted sensing routes, but no clean terminal directly on BUS-4160-B is shown."
+    },
+    {
+      "source": "PNL-ANN-01",
+      "target": "SER-01",
+      "from": "keep",
+      "to": "remove",
+      "reason": "Removed: the dotted annunciator route runs beside SER-01 without a visible terminal entering the serial relay."
+    },
+    {
+      "source": "SER-01",
+      "target": "JB-CONTROL",
+      "from": "keep",
+      "to": "remove",
+      "reason": "Removed: the dotted route continues to JB-CONTROL beside SER-01; the raw schematic does not show a clear SER-01 terminal endpoint."
+    },
+    {
+      "source": "TB-SWGR-A",
+      "target": "PNL-MCR-01",
+      "from": "uncertain",
+      "to": "remove",
+      "reason": "Removed: long control-tray proximity does not show a clear terminal-to-terminal path from TB-SWGR-A into PNL-MCR-01."
+    },
+    {
+      "source": "TB-SWGR-B",
+      "target": "PNL-MCR-01",
+      "from": "uncertain",
+      "to": "remove",
+      "reason": "Removed: long control-tray proximity does not show a clear terminal-to-terminal path from TB-SWGR-B into PNL-MCR-01."
+    },
+    {
+      "source": "PNL-ANN-01",
+      "target": "JB-CONTROL",
+      "from": "uncertain",
+      "to": "keep",
+      "reason": "Kept: direct dotted terminal path is visible from PNL-ANN-01 to JB-CONTROL; SER-01 is not used as an intermediate node."
+    },
+    {
+      "source": "PUMP-CCW-A",
+      "target": "FAN-AB-A",
+      "from": "uncertain",
+      "to": "remove",
+      "reason": "Removed: this would be a load-to-load edge across a shared lower conductor region; visible MCC-to-load endpoints are the supported representation."
+    },
+    {
+      "source": "PUMP-CCW-B",
+      "target": "FAN-AB-B",
+      "from": "uncertain",
+      "to": "remove",
+      "reason": "Removed: this would be a load-to-load edge across a shared lower conductor region; visible MCC-to-load endpoints are the supported representation."
+    }
+  ]
+}

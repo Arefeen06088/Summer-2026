@@ -1,0 +1,15 @@
+candidate,decision,reason
+JB-1A0 / JB-2A0 / JB-1B0 / JB-2B0 node labels,renamed,"raw zooms show labels JB-1A, JB-2A, JB-1B, JB-2B; adjacent circles are terminal marks, not trailing O/0 characters"
+FAN-CR-B -- PN-MOV-B,out,B-side MOV feed is a separate solid branch from the MCC-SAF-B2 feeder area; it does not pass through FAN-CR-B
+MCC-SAF-A2 -- PN-MOV-A,out,A-side accepted endpoint-to-endpoint connection is FAN-CR-A to PN-MOV-A; direct MCC-SAF-A2 edge would bypass visible intermediate endpoints
+MCC-SAF-A1 -- PN-125A,uncertain/out,long dashed route follows train control/boundary routing; no clean endpoint-to-endpoint termination at PN-125A
+MCC-SAF-A2 -- PN-125A,uncertain/out,long dashed route reaches the control area but exact terminal ownership is not visually supported
+MCC-SAF-B1 -- PN-125B,uncertain/out,long dashed route follows train control/boundary routing; no clean endpoint-to-endpoint termination at PN-125B
+MCC-SAF-B2 -- PN-125B,uncertain/out,long dashed route reaches the control area but exact terminal ownership is not visually supported
+PN-120A -- ANN-ESF-A,uncertain/out,annunciator dashed routing is visually tied to PLC-ESF-A; direct PN-120A-to-ANN endpoint is overconnected
+PN-120B -- ANN-ESF-B,uncertain/out,annunciator dashed routing is visually tied to PLC-ESF-B; direct PN-120B-to-ANN endpoint is overconnected
+RELAY-86A -- CB-482A,uncertain/out,dashed trip/control path crosses and runs near CB-482A; direct terminal ownership is ambiguous
+RELAY-86A -- CB-TIE-41N,uncertain/out,"CB-TIE-41N dashed control lead is visible, but the route to RELAY-86A is not a clean endpoint-to-endpoint connection"
+RELAY-86B -- CB-481B,uncertain/out,B-side relay/control path has nearby crossings and shared bends; direct breaker endpoint is not visually certain
+RELAY-86B -- CB-482B,uncertain/out,dashed route passes near CB-482B but does not clearly terminate at it
+RELAY-86B -- CB-TIE-41N,uncertain/out,"long dashed interlock path reaches the B-side relay region, but endpoint-to-endpoint ownership is ambiguous"

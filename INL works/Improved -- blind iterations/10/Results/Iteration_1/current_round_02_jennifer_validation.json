@@ -1,0 +1,125 @@
+﻿{
+  "reviewer": "Jennifer",
+  "round": "current_round_02",
+  "iteration": "Improved doc 10 Iteration_1",
+  "scope": {
+    "used_only_current_doc10_input_resources_current_aids_and_required_diego_r02_files": true,
+    "ground_truth_or_eval_outputs_used": false,
+    "gt_derived_feedback_used": false,
+    "prior_or_archived_result_folders_used": false,
+    "tracker_performance_metrics_used": false,
+    "prior_round_files_used_as_decision_evidence": false,
+    "scope_note": "Diego R02 notes and validation were inspected because they were required inputs for this saturation review; the decision was made against current raw/input-derived evidence and Diego R02 files only."
+  },
+  "files_inspected": {
+    "diego_r02": [
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Results\\Iteration_1\\current_round_02_diego_nodes.csv",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Results\\Iteration_1\\current_round_02_diego_edges.csv",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Results\\Iteration_1\\current_round_02_diego_matrix.csv",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Results\\Iteration_1\\current_round_02_diego_notes.md",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Results\\Iteration_1\\current_round_02_diego_validation.json"
+    ],
+    "current_crops_and_aids": [
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\16_train_a_fuse_pt_ct_zoom_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\17_train_b_fuse_pt_ct_zoom_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\21_train_a_terminal_tray_zoom3_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\22_train_b_terminal_tray_zoom3_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\24_train_a_4160_to_rect_zoom3_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\25_train_b_4160_to_rect_zoom3_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\20_control_bay_zoom_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\23_mcr_left_routes_zoom3_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\r02_control_bay_x2.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\02_top_source_bus_tie_raw_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\03_train_a_switchgear_upper_raw_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\04_train_b_switchgear_upper_raw_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\05_train_a_lc_mcc_loads_raw_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\06_train_b_lc_mcc_loads_raw_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\07_train_a_dc_ups_ground_raw_raw.png",
+      "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Codes and artifacts\\inspection_crops_current\\08_train_b_dc_ups_ground_raw_raw.png"
+    ]
+  },
+  "focus_question_answers": {
+    "accept_diego_stable_120_node_set": true,
+    "accept_demoting_all_eight_r01_uncertain_edges_to_remove": true,
+    "accept_restoring_exactly_two_ct_to_4160_bus_keep_edges": true,
+    "ser_01_correctly_isolated": true,
+    "raw_supported_final_edge_involving_ser_01": false,
+    "any_r02_keep_edges_removed_as_overconnected_shortcuts": false,
+    "saturation_reached": true
+  },
+  "accepted_restored_keep_edges": [
+    {
+      "source": "CT-4160-A",
+      "target": "BUS-4160-A",
+      "status": "keep",
+      "review": "Accepted; current train A crop shows the dotted CT sensing line ending on BUS-4160-A rather than CB-A08 or FUSE-A01."
+    },
+    {
+      "source": "CT-4160-B",
+      "target": "BUS-4160-B",
+      "status": "keep",
+      "review": "Accepted; current train B crop mirrors the CT-to-BUS-4160-B endpoint."
+    }
+  ],
+  "accepted_demoted_edges": [
+    { "source": "CB-A09", "target": "FUSE-A01", "status": "remove" },
+    { "source": "CB-B09", "target": "FUSE-B01", "status": "remove" },
+    { "source": "CT-4160-A", "target": "CB-A08", "status": "remove" },
+    { "source": "CT-4160-B", "target": "CB-B08", "status": "remove" },
+    { "source": "TB-SWGR-A", "target": "TB-LV-A", "status": "remove" },
+    { "source": "TB-SWGR-B", "target": "TB-LV-B", "status": "remove" },
+    { "source": "TB-LV-A", "target": "PNL-UPS-A", "status": "remove" },
+    { "source": "TB-LV-B", "target": "PNL-UPS-B", "status": "remove" }
+  ],
+  "node_count": 120,
+  "unique_node_count": 120,
+  "edge_candidate_count": 152,
+  "status_counts": {
+    "keep": 125,
+    "remove": 27,
+    "uncertain": 0
+  },
+  "keep_edge_count": 125,
+  "matrix_node_count": 120,
+  "matrix_edge_count": 125,
+  "checks": {
+    "no_WN_final_nodes": true,
+    "no_annotation_only_final_nodes": true,
+    "edges_reference_only_final_nodes": true,
+    "keep_edges_reference_only_final_nodes": true,
+    "no_duplicate_edge_pairs": true,
+    "no_duplicate_keep_edges": true,
+    "statuses_valid": true,
+    "matrix_includes_only_keep_edges": true,
+    "matrix_includes_all_keep_edges": true,
+    "matrix_edge_set_equals_keep_edge_set": true,
+    "matrix_symmetric": true,
+    "matrix_zero_diagonal": true,
+    "matrix_binary_entries_only": true,
+    "matrix_node_order_matches_nodes_csv": true
+  },
+  "missing_edge_references": [],
+  "missing_keep_edge_references": [],
+  "wn_final_nodes": [],
+  "annotation_only_final_nodes": [],
+  "duplicate_edge_pairs": [],
+  "duplicate_keep_edges": [],
+  "isolated_nodes_after_keep_matrix": [
+    "SER-01"
+  ],
+  "overconnected_keep_edges_removed": [],
+  "changes_vs_diego_r02_count": 0,
+  "changes_vs_diego_r02": [],
+  "saturation_assessment": {
+    "recommendation": "saturation_reached",
+    "summary": "Jennifer R02 accepts Diego R02 without changes: the 120-node set is stable, the eight demoted candidates remain remove, the two CT-to-4160-bus restorations are raw-supported, SER-01 remains isolated, and no remaining keep edges were identified as unsupported shortcuts.",
+    "residual_risk": "Low; remaining ambiguity does not rise to a status change under the current raw/input-derived evidence standard."
+  },
+  "outputs": {
+    "nodes": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Results\\Iteration_1\\current_round_02_jennifer_nodes.csv",
+    "edges": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Results\\Iteration_1\\current_round_02_jennifer_edges.csv",
+    "matrix": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Results\\Iteration_1\\current_round_02_jennifer_matrix.csv",
+    "notes": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Results\\Iteration_1\\current_round_02_jennifer_notes.md",
+    "validation": "C:\\Asif_all_python_projects\\INL\\Improved -- blind iterations\\10\\Results\\Iteration_1\\current_round_02_jennifer_validation.json"
+  }
+}

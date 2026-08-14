@@ -1,0 +1,57 @@
+{
+  "reviewer": "Diego",
+  "round": "round_02",
+  "iteration": "Iteration_1",
+  "scope": "Allowed input resources, current allowed aids, Diego round 01 artifacts, and Jennifer round 01 precision review only.",
+  "node_count": 54,
+  "edge_row_count": 79,
+  "edge_status_counts": {
+    "keep": 56,
+    "remove": 23
+  },
+  "keep_edge_count": 56,
+  "remove_edge_count": 23,
+  "uncertain_edge_count": 0,
+  "matrix_shape": [
+    54,
+    54
+  ],
+  "changed_edges_vs_jennifer_r01": [
+    {
+      "source": "RPS-A",
+      "target": "JB-A101",
+      "from": "uncertain",
+      "to": "keep"
+    },
+    {
+      "source": "RPS-B",
+      "target": "JB-B101",
+      "from": "uncertain",
+      "to": "keep"
+    }
+  ],
+  "excluded_annotation_labels": [
+    "CONTROL-ROOM-ANNUNCIATION",
+    "DIVISION-I-TRAIN-A-SAFETY-POWER",
+    "DIVISION-II-TRAIN-B-SAFETY-POWER",
+    "LC-A",
+    "LC-B",
+    "N-O-TIE",
+    "NORMAL-OFFSITE-FEED-A",
+    "NORMAL-OFFSITE-FEED-B"
+  ],
+  "checks": {
+    "all_status_values_valid": true,
+    "no_duplicate_node_names": true,
+    "no_wire_node_nodes": true,
+    "no_annotation_only_final_nodes": true,
+    "keep_edges_reference_only_nodes_csv": true,
+    "no_duplicate_keep_edges": true,
+    "matrix_nodes_match_nodes_csv": true,
+    "matrix_includes_only_keep_edges": true,
+    "matrix_edge_count_matches_keep_edges": true,
+    "matrix_symmetric": true,
+    "matrix_zero_diagonal": true
+  },
+  "saturation_assessment": "High saturation. The final remaining challenged areas were rechecked on raw full-sheet and magnified current-image crops; only the two continuous long RPS-to-JB dashed conductors warrant correction from Jennifer. No further broad pass is recommended unless a reviewer wants a focused audit of those two keeps."
+}

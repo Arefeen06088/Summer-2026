@@ -1,0 +1,20 @@
+Candidate,Action,Reason
+`PSV-2102` - `VNT-2140`,Removed,`PSV-2102` sits on a separate/unclear dashed route near the solid vent line; no clear endpoint to `VNT-2140`.
+`TK-210` - `LAHH-2101`,Removed,Alarm bubble is paired to `LSHH-2101`; direct tank adjacency is an association shortcut.
+`TK-210` - `LALL-2102`,Removed,Alarm bubble is paired to `LSL-2102`; direct tank adjacency is an association shortcut.
+`TS-2110A` - `P-2101A`,Removed,Dashed route is not a clear pump endpoint; retained TS/PT local signal chain.
+`PI-2110A` - `P-2101A`,Removed,Dashed route passes through pump area without clear endpoint.
+`TS-2110B` - `P-2101B`,Removed,Dashed route is not a clear pump endpoint; retained TS/PT local signal chain.
+`PI-2110B` - `P-2101B`,Removed,Dashed route passes through pump area without clear endpoint.
+`PSV-2110` - `T-2130`,Removed,Relief landing near the filter/bypass inlet is visually plausible but not endpointed.
+`TT-2120O` - `HX-2120`,Removed,Outlet temperature transmitter is carried through instrument chain; direct HX endpoint is less clear than `TT-2120I`/`TI-2120`.
+`FCV-2125` - `TAL-2120`,Removed,"Alarm line belongs to the TT/alarm chain, not directly to FCV."
+`TAL-2120` - `TI-2120`,Removed,No direct local endpoint; added `TT-2120O` - `TAL-2120` instead.
+`T-2131` - `HV-SW-DRAIN`,Removed,Cross-domain/crossing association; the visible local path is `HX-2120` - `HV-SW-DRAIN`.
+`HS-2102` - `P-2110A`,Removed,Pump control landing is plausible but weak; no clear direct pump endpoint.
+`HS-2102` - `P-2110B`,Removed,Pump control landing is plausible but weak; no clear direct pump endpoint.
+`HV-2142B` - `R-2114`,Removed,Weak skip/branch interpretation around named `T-2140` and the vertical injection stack.
+`HV-DRN-2103` - `CP-CHEM-2101`,Removed,Drain header passes by/through CP box; CP is not a process drain terminal.
+`CP-CHEM-2101` - `SV-2144`,Removed,Same crossing/box issue; replaced by local drain valve sequence.
+`PI-SW-2101`,Rejected as new node,Visible in raw crop but not inventory and not an allowed non-inventory endpoint/header/tie/drain/control node.
+`FLG-2110A/B`,Rejected as new nodes,Visible fittings but not inventory and not needed under accepted non-inventory node policy.

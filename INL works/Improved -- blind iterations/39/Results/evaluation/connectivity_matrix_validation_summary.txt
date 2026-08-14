@@ -1,0 +1,60 @@
+Connectivity matrix validation summary - document 39, Iteration_1 only
+
+GT edges: 58
+Final evaluated matrix: final_connectivity_matrix.csv
+Final score: TP=44, FP=12, FN=14, Precision=0.785714, Recall=0.758621, F1=0.771930
+Token usage: token_usage_actual_estimate.json (document totals from observed_workflow total; round totals from round_totals list); document expected total=13697138
+
+Primary reason the score is not perfect
+- Some loss appears tied to close-but-not-exact component names, plus direct edge discovery differences.
+- Extra predicted nodes not in GT: 4
+- GT nodes missing from extraction: 4
+- False-positive edges: 12; false-negative edges: 14
+
+False-positive edge examples
+  - BUS-4160-A-DIV-I -- CB-1A
+  - BUS-4160-A-DIV-I -- CB-DG-A
+  - BUS-4160-A-DIV-I -- CB-TIE-AB
+  - BUS-4160-A-DIV-I -- RELAY-UV-A
+  - BUS-4160-A-DIV-I -- TR-480-A
+  - BUS-4160-B-DIV-II -- CB-1B
+  - BUS-4160-B-DIV-II -- CB-DG-B
+  - BUS-4160-B-DIV-II -- CB-TIE-AB
+  - BUS-4160-B-DIV-II -- RELAY-UV-B
+  - BUS-4160-B-DIV-II -- TR-480-B
+  - DS-230A -- OFFSITE-230KV-A
+  - DS-230B -- OFFSITE-230KV-B
+
+False-negative edge examples
+  - ANN-CR01 -- RPS-A
+  - ANN-CR01 -- RPS-B
+  - BUS-4160-A -- CB-1A
+  - BUS-4160-A -- CB-DG-A
+  - BUS-4160-A -- CB-TIE-AB
+  - BUS-4160-A -- RELAY-UV-A
+  - BUS-4160-A -- TR-480-A
+  - BUS-4160-B -- CB-1B
+  - BUS-4160-B -- CB-DG-B
+  - BUS-4160-B -- CB-TIE-AB
+  - BUS-4160-B -- RELAY-UV-B
+  - BUS-4160-B -- TR-480-B
+
+Component-name / component-set examples
+- Extra predicted node examples: BUS-4160-A-DIV-I, BUS-4160-B-DIV-II, OFFSITE-230KV-A, OFFSITE-230KV-B
+- Missing GT node examples: BUS-4160-A, BUS-4160-B, GRID-230A, GRID-230B
+- Close-name examples:
+  - extracted BUS-4160-A-DIV-I vs GT BUS-4160-A (similarity 0.77)
+  - extracted BUS-4160-B-DIV-II vs GT BUS-4160-B (similarity 0.74)
+
+Intermediate-node what-if examples
+- No degree-2 extra intermediate nodes were found in the final extraction.
+
+Rows evaluated
+- Diego -- Iteration 1 Round 1: P=0.661017, R=0.672414, F1=0.666667 (Iteration_1\round_01_diego_matrix.csv)
+- Jennifer -- Iteration 1 Round 1: P=0.777778, R=0.724138, F1=0.750000 (Iteration_1\round_01_jennifer_matrix.csv)
+- Diego -- Iteration 1 Round 2: P=0.785714, R=0.758621, F1=0.771930 (Iteration_1\round_02_diego_matrix.csv)
+- Jennifer -- Iteration 1 Round 2: P=0.785714, R=0.758621, F1=0.771930 (Iteration_1\round_02_jennifer_matrix.csv)
+- Final connectivity -- Iteration 1 Final: P=0.785714, R=0.758621, F1=0.771930 (Iteration_1\final_connectivity_matrix.csv)
+
+Normalization note
+- Labels were uppercased, whitespace/hyphen variants were collapsed, underscores were treated as hyphens, and known MCC voltage suffix aliases were mapped to the GT labels.

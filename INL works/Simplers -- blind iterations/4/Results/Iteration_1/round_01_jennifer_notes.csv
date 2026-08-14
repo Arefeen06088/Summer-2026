@@ -1,0 +1,23 @@
+item,decision,evidence
+node-list,"Final matrix uses 54 nodes: Diego's 50 physical components plus BUS-4160-A-DIV-I, BUS-4160-B-DIV-II, BUS-480-A, and BUS-480-B.",CONTROL-ROOM-ANNUNCIATION was removed as a corridor label; LC-A and LC-B were not added as distinct nodes.
+CONTROL-ROOM-ANNUNCIATION,Removed as a matrix node.,"The text labels a broad dashed lower corridor/boundary, not a boxed component, terminal, bus, rail, or named conductor endpoint. Diego edges from this label to ANN-CR01, REC-SOE01, JB-A101, JB-B101, RPS-A, and RPS-B were removed."
+LC-A,Excluded as a separate node.,"LC-A is printed at the left endpoint of the BUS-480-A/load-center feeder geometry. The visible feeder is represented by BUS-480-A edges, including the added BUS-480-A to CHG-125A edge."
+LC-B,Excluded as a separate node.,"LC-B is printed at the right endpoint of the BUS-480-B/load-center feeder geometry. The visible feeder is represented by BUS-480-B edges, including the added BUS-480-B to CHG-125B edge."
+BUS-480-A--CHG-125A,Added.,"A solid conductor leaves the BUS-480-A endpoint labeled LC-A, rises beside the 125 V stack, and terminates at the top input of CHG-125A."
+BUS-480-B--CHG-125B,Added.,"A solid conductor leaves the BUS-480-B endpoint labeled LC-B, rises beside the 125 V stack, and terminates at the top input of CHG-125B."
+BUS-480-A--GND-PLANT,"Retained, lower-confidence ground-reference edge.",The raw schematic shows a solid conductor dropping from BUS-480-A to the named GND-PLANT symbol. It is a ground-reference connection and no corresponding B-side ground edge is drawn.
+RPS-A--MOV-881A / RPS-A--MOV-742A,Removed as direct edges.,"The visible dashed control conductors route from RPS-A to JB-A101 and from JB-A101 to the MOVs. The direct RPS-to-MOV relation is schedule/logical language, not a direct named-node conductor on the diagram."
+RPS-B--MOV-881B / RPS-B--MOV-742B,Removed as direct edges.,"The visible dashed control conductors route from RPS-B to JB-B101 and from JB-B101 to the MOVs. The direct RPS-to-MOV relation is schedule/logical language, not a direct named-node conductor on the diagram."
+RPS-A--JB-A101,Retained.,A dashed control route visibly leaves RPS-A and reaches the lower A-side path into JB-A101.
+RPS-B--JB-B101,Retained.,Dashed control routes visibly leave RPS-B and reach the JB-B101 field junction area.
+JB-A101--MOV-881A / JB-A101--MOV-742A,Retained.,Each A-side MOV has a visible dashed drop to the JB-A101 path.
+JB-B101--MOV-881B / JB-B101--MOV-742B,Retained.,Each B-side MOV has a visible dashed drop to the JB-B101 path.
+ANN-CR01--REC-SOE01,Retained.,A short dashed conductor visibly bridges the ANN-CR01 and REC-SOE01 boxes.
+REC-SOE01--JB-B101,Removed.,"The lower dashed corridor passes below the control-room label, but no direct named conductor visibly connects REC-SOE01 to JB-B101."
+RELAY-KA1 / RELAY-KB1,Retained as RPS control/interlock edges only.,Dashed control/interlock routes visibly connect RPS-A to RELAY-KA1 and RPS-B to RELAY-KB1; no extra MCC/load edges were added for these relays.
+RELAY-UV-A / RELAY-UV-B,Retained as bus sensing/control edges.,Each relay has a visible dashed drop from its corresponding 4.16 kV bus.
+125 VDC stack edges,Retained sequential charger-battery-inverter-panel-RPS stack edges for both trains.,"The raw schematic shows vertical/dc conductor continuity through CHG, BAT, INV, PANEL, and RPS on both A and B stacks."
+MCC load edges,Retained Diego's MCC-to-pump/MOV load edges.,Solid load conductors visibly drop from MCC-A1/A2 and MCC-B1/B2 to their named pump and MOV loads.
+banners/feed notes/tie note/terminal schedule/topology points,Excluded as nodes.,"Division banners, NORMAL-OFFSITE-FEED-A/B, N.O.-TIE, terminal schedule rows, reference drawing text, and anonymous wire endpoints/T-sections are not distinct named matrix components or rails."
+broad dashed corridors,Excluded as standalone graph nodes or edges.,Only dashed/control conductors visibly connected between named matrix nodes were retained; broad corridor/boundary lines were not converted into connectivity.
+BUS-480-A/B--INV-120A/B candidates,Left uncertain/excluded.,The LC-A/LC-B feeder geometry clearly ties the 480 V load centers to the charger input path; no separate unambiguous named termination from BUS-480-A/B directly into INV-120A/B was added.

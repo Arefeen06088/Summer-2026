@@ -1,0 +1,21 @@
+node_a,node_b,reason
+`DCS / PLC DATA BUS`,`JB-101`,No visible direct landing from JB-101 onto the data bus; the local chemical/left control wiring routes through JB-302/field instruments.
+`DCS / PLC DATA BUS`,`JB-302`,JB-302 terminates local chemical skid wiring and the JB-101 route; no direct raw-image endpoint on the data bus was visible.
+`DCS / PLC DATA BUS`,`JB-301`,JB-301 routes through the local right-side marshalling path toward JB-402 rather than landing directly on the bus.
+`DCS / PLC DATA BUS`,`JB-501`,"JB-501 is visibly tied to the sample/analyzer signal chain and JB-402 route, not directly to the bus."
+`DCS / PLC DATA BUS`,`DCS-001`,DCS-001 connects via CONTROL ROOM LINK; direct bus-to-DCS shortcut skips the visible named link.
+`AFR-201`,`FCV-230`,FCV-230 has its own aligned AFR-230 drop; no direct AFR-201 route to FCV-230 was accepted.
+`AFR-301`,`TCV-301`,Only controller/valve dashed signal is visible; no clear IA/AFR route terminating on TCV-301.
+`AFR-301`,`PCV-302`,Only PIC/PCV dashed control signal is visible; no clear AFR-301 pneumatic endpoint at PCV-302.
+`AFR-401`,`FCV-401`,"FIC-401 to FCV-401 signal is visible, but the AFR-401-to-FCV-401 pneumatic route does not visibly terminate."
+`AFR-401`,`AV-501`,AV-501 is on the sample panel process/analyzer path; no visible AFR-401 pneumatic termination was accepted.
+`DPI-21A`,`DPT-21A`,DPI-21A has a local tap to the filter assembly; it is not visibly chained directly to DPT-21A.
+`DPT-21A`,`FLT-201A`,DPT-21A is on the dashed signal run to PDI/PDT; no direct visible process/tap endpoint at FLT-201A.
+`DPI-21B`,`DPT-21B`,DPI-21B has a local tap to the filter assembly; it is not visibly chained directly to DPT-21B.
+`DPT-21B`,`FLT-201B`,DPT-21B signal continues toward JB-201; no direct visible process/tap endpoint at FLT-201B.
+`TY-31A`,`VV-31A`,The TT/TY signal line crosses near the vent-valve centerline without a supported endpoint connection.
+`TY-31B`,`VV-31B`,The TT/TY signal line crosses near the vent-valve centerline without a supported endpoint connection.
+`CAL-301`,`TK-301`,CAL-301 is not visibly piped directly to TK-301; its visible line tees into the metering-pump suction side.
+`CAL-301`,`JB-302`,The nearby dashed JB-302 run passes by the calibration column without a clear termination on CAL-301.
+`AIC-301`,"`1/2"" CHEMICAL DOSING HEADER`","AIC-301 is on the analyzer/control signal path; the accepted visible endpoint is the final valve signal, not the process header itself."
+`SV-101`,`TK-102`,SV-101 does not visibly land directly on TK-102; the nearby makeup route is represented locally through HV-104/TK-102.

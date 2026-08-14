@@ -1,0 +1,8 @@
+topic,note,impact_or_action
+source_scope,Used only allowed blind input resources under Input resources plus outputs written under Results/Iteration_1. Did not open source/evaluation folders or GT-derived feedback.,compliance note
+node_inventory,Matrix uses 100 labels from component_and_logical_visual_ocr_labels.csv in file order: 89 physical components followed by 11 logical bus/ground nodes.,row/column ordering
+edge_policy,"Collapsed anonymous wire endpoints, junction dots, bends, and WN-* nodes into direct named endpoint edges; included physical components, named buses/logical nodes, and the visible GND-1E ground reference.",format policy
+edge_count,Edge list contains 100 unique undirected named edges; matrix contains 100 undirected 1-connections.,validation summary
+ground_uncertainty,"GND-1E is visually connected by dot-dash GND-A/GND-B reference stubs near the charger area, but the exact named endpoint is crowded by labels and crossings. I mapped these to CB-CHG-A and CB-CHG-B with medium-low confidence rather than introducing anonymous GND-A/GND-B nodes.",main uncertainty
+control_signal_policy,"Dotted instrument and dashed control lines in the RPS/ESF area were treated as logical connectivity, not power-only connectivity, because they terminate on visible component terminals and the legend names those line styles.",included medium-high confidence edges
+bus_crossings,"Gaps and crossings without terminal dots between adjacent buses (for example BUS-120A/B, DC-BUS-A/B, FDB-A1/A2, FDB-B1/B2) were not connected.",excluded plausible false joins

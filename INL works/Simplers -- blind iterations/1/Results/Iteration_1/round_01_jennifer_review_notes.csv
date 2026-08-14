@@ -1,0 +1,14 @@
+item,action,reason
+Solid power feeders and named bus/tap nodes,kept,"Continuous solid wires, component port dots, and filled bus taps visually support Diego's source, transformer, breaker, bus, MCC, DC bus, rectifier, battery, and inverter power connections."
+CB-13-TIE -> RPS-TRIP,removed / uncertain,"The dashed RPS TRIP route begins below/near the CB-13-TIE label area, but a clear terminal/port-dot connection from CB-13-TIE to that dashed route is not visible."
+RPS-TRIP -> PNL-RPS-1,kept with moderate confidence,The labeled dashed RPS TRIP route visibly enters a left-side port dot on PNL-RPS-1; only the upstream source of that route remains uncertain.
+CB-4K-TIE -> RPS-LOCKOUT -> PNL-RPS-1,kept,"The RPS LOCKOUT path is a solid, labeled, port-to-port control/lockout lead from CB-4K-TIE to the top of PNL-RPS-1."
+CTRL-ESF-A-DASHED,removed / replaced,This is not a visible schematic label; it was an invented intermediate node for the Train A dashed control route.
+PNL-ESF-A -> PUMP-AFW-A,added as direct dashed-control edge,The Train A dashed route connects a PNL-ESF-A side port to the bottom port dot of PUMP-AFW-A.
+PNL-ESF-A -> VALVE-MOV-A,added as direct dashed-control edge,The Train A dashed route connects a PNL-ESF-A side port to the bottom port dot of VALVE-MOV-A.
+CTRL-ESF-B-DASHED,removed / replaced,This is not a visible schematic label; it was an invented intermediate node for the Train B dashed control route.
+PNL-ESF-B -> PUMP-AFW-B,added as direct dashed-control edge,The Train B dashed route connects a PNL-ESF-B side port to the bottom port dot of PUMP-AFW-B.
+PNL-ESF-B -> VALVE-MOV-B,added as direct dashed-control edge,The Train B dashed route connects a PNL-ESF-B side port to the bottom port dot of VALVE-MOV-B.
+FAN-CONTAIN-A / FAN-CONTAIN-B dashed proximity,not added,The dashed control routes pass near the fan labels but no terminal dot or vertical dashed leg enters either fan symbol.
+JB-ESF-A/B -> PNL-ESF-A/B,kept,Each junction box has a visible dashed terminal-to-terminal link to its corresponding ESF panel.
+PNL-RPS-1 bottom stub,not added / uncertain,"A short bottom lead is visible on PNL-RPS-1, but no named endpoint or component terminal is visible on this sheet."

@@ -1,0 +1,132 @@
+Connectivity matrix validation summary - Improved Document 35, Iteration 1
+==========================================================================
+
+Ground truth source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\35\connectivity_matrix_readable_r13.csv
+Ground truth normalized as an undirected edge set with 210 edges across 190 component names.
+Evaluated extracted matrices from: C:\Asif_all_python_projects\INL\Improved -- blind iterations\35\Results\Iteration_1
+Included files: connectivity_matrix.csv, round_01_diego_matrix.csv, round_01_jennifer_matrix.csv, round_02_diego_matrix.csv, round_02_jennifer_matrix.csv, final_connectivity_matrix.csv
+Note: connectivity_matrix.csv is included because its filename also ends with _matrix.csv; it is labeled as an unlabeled connectivity matrix row.
+
+Strict exact-match metrics
+--------------------------
+- Connectivity matrix -- Unlabeled: TP=138, FP=64, FN=72, P=0.683168, R=0.657143, F1=0.669903
+- Diego -- Round 1: TP=141, FP=73, FN=69, P=0.658879, R=0.671429, F1=0.665094
+- Jennifer -- Round 1: TP=138, FP=64, FN=72, P=0.683168, R=0.657143, F1=0.669903
+- Diego -- Round 2: TP=138, FP=64, FN=72, P=0.683168, R=0.657143, F1=0.669903
+- Jennifer -- Round 2: TP=138, FP=64, FN=72, P=0.683168, R=0.657143, F1=0.669903
+- Final connectivity -- Final: TP=138, FP=64, FN=72, P=0.683168, R=0.657143, F1=0.669903
+
+Primary reason performance is not perfect
+-----------------------------------------
+The dominant loss is imperfect connectivity/edge discovery: false negatives are more common than false positives across the evaluated matrices.
+Component naming is not the broad driver unless noted below. Most errors are wrong or missing edges between otherwise recognizable components.
+Best strict rows: Connectivity matrix -- Unlabeled, Jennifer -- Round 1, Diego -- Round 2, Jennifer -- Round 2, Final connectivity -- Final with F1=0.669903. Lowest strict row: Diego -- Round 1 with F1=0.665094.
+
+Close-but-not-perfect component names
+-------------------------------------
+- Extracted HV-1102 is close to GT HV-2102 (similarity about 0.86).
+These are diagnostic close-name candidates only; the official CSV keeps strict exact matching unless a document-specific alias is explicitly requested.
+
+Component coverage
+------------------
+GT components absent from at least one extracted matrix: 12. Examples: FLG-2110A, FLG-2110B, H-VENT-2101, HV-2102, HV-DRN-2106, HV-VENT-2101, HV-VENT-2102, HV-VENT-2103, OPC-VENT-2101, PI-SW-2101, T-2100, VNT-SW-2101.
+Extracted-only component names seen in at least one matrix: 1. Examples: HV-1102.
+
+Examples causing the score drop
+--------------------------------
+Repeated false-positive extracted edges, counted across all evaluated rows:
+- FIC-SW-2101 -- HS-2101 (6 rows)
+- HV-2147 -- T-2110 (6 rows)
+- HV-DRN-2107 -- SV-2144 (6 rows)
+- H-DRN-2101 -- HV-DRN-2104 (6 rows)
+- FI-2140 -- PI-2140 (6 rows)
+- PT-2110A -- TS-2110A (6 rows)
+- HV-SAM-2102 -- T-2122B (6 rows)
+- AIT-2140 -- FCV-2114 (6 rows)
+- P-2110A -- T-2110 (6 rows)
+- HV-1102 -- TK-210 (6 rows)
+- DRN-2101 -- HV-DRN-2102 (6 rows)
+- KQI-2101 -- XA-2110 (6 rows)
+- FIC-2110 -- SV-2110 (6 rows)
+- HV-SW-2102 -- TIC-2130 (6 rows)
+Repeated missed GT edges, counted across all evaluated rows:
+- KQI-2101 -- TS-2110A (6 rows)
+- PI-SW-2101 -- STR-SW-2101 (6 rows)
+- HV-SAM-2102 -- T-2125 (6 rows)
+- H-2102 -- PSV-2110 (6 rows)
+- H-VENT-2101 -- HV-VENT-2101 (6 rows)
+- HV-DRN-2107 -- R-2114 (6 rows)
+- PCV-2132 -- T-2110 (6 rows)
+- HV-VENT-2103 -- OPC-VENT-2101 (6 rows)
+- FLT-2120A -- PI-2120A (6 rows)
+- FIC-2140 -- LT-2110 (6 rows)
+- H-VENT-2101 -- VNT-2140 (6 rows)
+- PSV-2102 -- TK-210 (6 rows)
+- HS-2102 -- PLC-2101 (6 rows)
+- FLG-2110A -- STR-2110A (6 rows)
+
+Intermediate/extra-node effects
+-------------------------------
+Extra extracted node names that create false-positive links most often:
+- HV-1102: involved in 12 FP edge appearances
+High-impact FP nodes overall, including valid GT components used in incorrect links:
+- T-2110: involved in 24 FP edge appearances
+- FCV-2114: involved in 24 FP edge appearances
+- T-2101: involved in 24 FP edge appearances
+- FIC-2140: involved in 24 FP edge appearances
+- XA-2110: involved in 18 FP edge appearances
+- JB-2101: involved in 18 FP edge appearances
+- PCV-2132: involved in 18 FP edge appearances
+- JB-2102: involved in 18 FP edge appearances
+- PLC-2101: involved in 18 FP edge appearances
+- HS-2102: involved in 14 FP edge appearances
+- T-2130: involved in 13 FP edge appearances
+- HS-2101: involved in 12 FP edge appearances
+
+Counterfactual insights
+-----------------------
+Connectivity matrix -- Unlabeled:
+- If FP links involving extracted-only/close-name nodes were removed (2 edges), performance would be: TP=138, FP=62, FN=72, P=0.690000, R=0.657143, F1=0.673171.
+- If close-name aliases were accepted (HV-1102->HV-2102), performance would be: TP=139, FP=63, FN=71, P=0.688119, R=0.661905, F1=0.674757.
+- If all false-positive links were not put in extraction, performance would be: TP=138, FP=0, FN=72, P=1.000000, R=0.657143, F1=0.793103.
+- If the missed GT links were added but current FPs remained, performance would be: TP=210, FP=64, FN=0, P=0.766423, R=1.000000, F1=0.867769.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=210, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Diego -- Round 1:
+- If FP links involving extracted-only/close-name nodes were removed (2 edges), performance would be: TP=141, FP=71, FN=69, P=0.665094, R=0.671429, F1=0.668246.
+- If close-name aliases were accepted (HV-1102->HV-2102), performance would be: TP=142, FP=72, FN=68, P=0.663551, R=0.676190, F1=0.669811.
+- If all false-positive links were not put in extraction, performance would be: TP=141, FP=0, FN=69, P=1.000000, R=0.671429, F1=0.803419.
+- If the missed GT links were added but current FPs remained, performance would be: TP=210, FP=73, FN=0, P=0.742049, R=1.000000, F1=0.851927.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=210, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Jennifer -- Round 1:
+- If FP links involving extracted-only/close-name nodes were removed (2 edges), performance would be: TP=138, FP=62, FN=72, P=0.690000, R=0.657143, F1=0.673171.
+- If close-name aliases were accepted (HV-1102->HV-2102), performance would be: TP=139, FP=63, FN=71, P=0.688119, R=0.661905, F1=0.674757.
+- If all false-positive links were not put in extraction, performance would be: TP=138, FP=0, FN=72, P=1.000000, R=0.657143, F1=0.793103.
+- If the missed GT links were added but current FPs remained, performance would be: TP=210, FP=64, FN=0, P=0.766423, R=1.000000, F1=0.867769.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=210, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Diego -- Round 2:
+- If FP links involving extracted-only/close-name nodes were removed (2 edges), performance would be: TP=138, FP=62, FN=72, P=0.690000, R=0.657143, F1=0.673171.
+- If close-name aliases were accepted (HV-1102->HV-2102), performance would be: TP=139, FP=63, FN=71, P=0.688119, R=0.661905, F1=0.674757.
+- If all false-positive links were not put in extraction, performance would be: TP=138, FP=0, FN=72, P=1.000000, R=0.657143, F1=0.793103.
+- If the missed GT links were added but current FPs remained, performance would be: TP=210, FP=64, FN=0, P=0.766423, R=1.000000, F1=0.867769.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=210, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Jennifer -- Round 2:
+- If FP links involving extracted-only/close-name nodes were removed (2 edges), performance would be: TP=138, FP=62, FN=72, P=0.690000, R=0.657143, F1=0.673171.
+- If close-name aliases were accepted (HV-1102->HV-2102), performance would be: TP=139, FP=63, FN=71, P=0.688119, R=0.661905, F1=0.674757.
+- If all false-positive links were not put in extraction, performance would be: TP=138, FP=0, FN=72, P=1.000000, R=0.657143, F1=0.793103.
+- If the missed GT links were added but current FPs remained, performance would be: TP=210, FP=64, FN=0, P=0.766423, R=1.000000, F1=0.867769.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=210, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Final connectivity -- Final:
+- If FP links involving extracted-only/close-name nodes were removed (2 edges), performance would be: TP=138, FP=62, FN=72, P=0.690000, R=0.657143, F1=0.673171.
+- If close-name aliases were accepted (HV-1102->HV-2102), performance would be: TP=139, FP=63, FN=71, P=0.688119, R=0.661905, F1=0.674757.
+- If all false-positive links were not put in extraction, performance would be: TP=138, FP=0, FN=72, P=1.000000, R=0.657143, F1=0.793103.
+- If the missed GT links were added but current FPs remained, performance would be: TP=210, FP=64, FN=0, P=0.766423, R=1.000000, F1=0.867769.
+- If both FP links were removed and missed GT links were added, the row would be perfect: TP=210, FP=0, FN=0, P=1.000000, R=1.000000, F1=1.000000.
+
+Bottom line
+-----------
+The remaining gap is mostly edge discovery, with the specific FP/FN examples above showing where the extracted connectivity diverges from GT. Naming issues are secondary unless listed in the close-name section.

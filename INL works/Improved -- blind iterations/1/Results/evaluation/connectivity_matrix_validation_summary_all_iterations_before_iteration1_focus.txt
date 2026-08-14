@@ -1,0 +1,78 @@
+Connectivity matrix validation summary - Document 1
+Input tree: Improved -- blind iterations
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\1\connectivity_matrix_clean_100_connected.csv
+Token usage: no token estimate files were present under the requested results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_matrix.csv): TP=100, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_matrix.csv): TP=100, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_matrix.csv): TP=0, FP=69, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_matrix.csv): TP=0, FP=69, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=100, FP=0, FN=0, Precision=1.000000, Recall=1.000000, F1=1.000000
+- Diego -- Iteration 2 Round 1 (Iteration_2\round_01_diego_matrix.csv): TP=0, FP=68, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+- Jennifer -- Iteration 2 Round 1 (Iteration_2\round_01_jennifer_matrix.csv): TP=0, FP=67, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+- Diego -- Iteration 2 Round 2 (Iteration_2\round_02_diego_matrix.csv): TP=0, FP=67, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+- Jennifer -- Iteration 2 Round 2 (Iteration_2\round_02_jennifer_matrix.csv): TP=0, FP=67, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+- Final connectivity -- Iteration 2 Final (Iteration_2\final_connectivity_matrix.csv): TP=0, FP=67, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+- Diego -- Iteration 3 Round 1 (Iteration_3\round_01_diego_matrix.csv): TP=0, FP=59, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+- Jennifer -- Iteration 3 Round 1 (Iteration_3\round_01_jennifer_matrix.csv): TP=0, FP=59, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+- Diego -- Iteration 3 Round 2 (Iteration_3\round_02_diego_matrix.csv): TP=0, FP=59, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+- Jennifer -- Iteration 3 Round 2 (Iteration_3\round_02_jennifer_matrix.csv): TP=0, FP=59, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+- Final connectivity -- Iteration 3 Final (Iteration_3\final_connectivity_matrix.csv): TP=0, FP=59, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+- Some extracted nodes do not appear in the normalized GT node list; these often act like extra/intermediate nodes and create false-positive incident edges.
+- Some GT nodes are not present in the extraction, which creates false negatives for their incident GT edges.
+- Several labels are close to GT names but not exact after normalization, suggesting near-miss component naming rather than entirely wrong components.
+
+False-positive edge examples:
+- BAT-125A -- BUS-DC125-A
+- BAT-125B -- BUS-DC125-B
+- BUS-13K-A -- CB-13-TIE
+- BUS-13K-A -- TR-4K-A
+- BUS-13K-A -- TR-EDG-A
+- BUS-13K-A -- TR-SU-A
+- BUS-13K-B -- CB-13-TIE
+- BUS-13K-B -- TR-4K-B
+- BUS-13K-B -- TR-EDG-B
+- BUS-13K-B -- TR-SU-B
+
+False-negative edge examples:
+- AAC-GEN-1 -- CB-AAC-C
+- BAT-125A -- BUS-125DC-A
+- BAT-125A -- CHG-125A
+- BAT-125B -- BUS-125DC-B
+- BAT-125B -- CHG-125B
+- BUS-120AC-A -- INV-120A
+- BUS-120AC-A -- PNL-RPS-A
+- BUS-120AC-B -- INV-120B
+- BUS-120AC-B -- PNL-RPS-B
+- BUS-125DC-A -- BUS-125DC-B
+
+Extra/non-GT nodes causing performance drops:
+- BUS-13K-A: 4 incident false-positive edge(s)
+- BUS-13K-B: 4 incident false-positive edge(s)
+- PNL-ESF-A: 4 incident false-positive edge(s)
+- PNL-ESF-B: 4 incident false-positive edge(s)
+- BUS-DC125-A: 3 incident false-positive edge(s)
+- BUS-DC125-B: 3 incident false-positive edge(s)
+- BUS-4K-A: 3 incident false-positive edge(s)
+- CB-4K-TIE: 3 incident false-positive edge(s)
+- BUS-4K-B: 3 incident false-positive edge(s)
+- CB-13-TIE: 2 incident false-positive edge(s)
+
+What-if pruning insight:
+- If these 5 extra/intermediate nodes were omitted from the extraction (BUS-13K-A, BUS-13K-B, PNL-ESF-A, PNL-ESF-B, BUS-DC125-A), metrics would be TP=0, FP=40, FN=100, Precision=0.000000, Recall=0.000000, F1=0.000000.
+
+Missing GT node examples:
+- BUS-480-C: 5 missed incident GT edge(s)
+- BUS-4KV-A: 5 missed incident GT edge(s)
+- BUS-4KV-B: 5 missed incident GT edge(s)
+- BUS-4KV-C: 4 missed incident GT edge(s)
+- BUS-125DC-A: 3 missed incident GT edge(s)
+- BUS-125DC-B: 3 missed incident GT edge(s)
+- BUS-120AC-A: 2 missed incident GT edge(s)
+- BUS-120AC-B: 2 missed incident GT edge(s)
+- CB-48A-01: 2 missed incident GT edge(s)
+- CB-48B-01: 2 missed incident GT edge(s)

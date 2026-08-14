@@ -1,0 +1,19 @@
+item,decision,evidence
+node_model,"included 55 nodes: physical components plus true BUS-* rails","Used component_visual_ocr_labels.csv for 47 physical component names and the raw/overlay resources for BUS-4160A, BUS-4160B, BUS-480A, BUS-480B, BUS-125DC-A, BUS-120AC-A, BUS-125DC-B, and BUS-120AC-B."
+edge_model,retained Diego topology after precision review,"Reviewed Diego's 55 edges against the raw schematic and derived overlays; Jennifer made 0 additions and 0 removals."
+descriptor_labels,excluded as separate nodes,"4.16 KV ESF DIV I/II, 480 VAC DIV I/II, 120 VAC INST A/B, and 125 VDC TRAIN A/B describe printed rails and are not separate matrix nodes."
+terminal_and_route_labels,excluded,"2A-XC1, 2A-BCL, 2B-XC1, 2B-BCL, 2A-F1..2A-F6, 2B-F1..2B-F6, and MCC bucket numbers are terminal/feeder labels rather than physical components or true BUS nodes."
+external_continuations,excluded,"TO UNIT AUX BUS CONT., FROM UNIT MAIN GENERATOR, SOURCE: STARTUP AUX XFMR, and TO STATION YARD CONT. are continuation/source descriptors rather than in-scope nodes."
+BUS-4160A_to_BUS-4160B,no direct bus-bus edge,CB-105 is the visible normally-open bus tie; retained only BUS-4160A--CB-105 and CB-105--BUS-4160B.
+BUS-480A_to_BUS-480B,excluded,Raw schematic states 480V tie reserved space/no connection shown between the two 480 VAC divisions.
+TR-CPT-A_to_BUS-120AC-A,excluded,"TR-CPT-A lower secondary descends to an isolated terminal dot left of BUS-120AC-A; no solid landing or junction to BUS-120AC-A is visible."
+TR-CPT-B_to_BUS-120AC-B,included,TR-CPT-B lower secondary visibly lands on BUS-120AC-B at the B-side 120 VAC rail.
+RELAY-86A_to_BUS-125DC-A,included,Visible dashed named-device control tap leaves BUS-125DC-A and enters RELAY-86A; treated as a valid relay/bus edge.
+RELAY-86B_to_BUS-125DC-B,included,Visible dashed named-device control tap leaves BUS-125DC-B and enters RELAY-86B; treated as a valid relay/bus edge.
+RELAY-27A_to_RPS-PNL-A,included,Visible dashed named-device control conductor links RELAY-27A and RPS-PNL-A.
+RELAY-27A_to_BUS-120AC-A,excluded,RELAY-27A sits near BUS-120AC-A but no solid bus tap or visible junction to the rail is shown.
+RELAY-27B_to_BUS-120AC-B,included,RELAY-27B has a visible solid tap/junction on BUS-120AC-B.
+RELAY-27B_to_RPS-PNL-B,included,Visible dashed named-device control conductor links RELAY-27B and RPS-PNL-B.
+GND-STA,kept isolated,"GND-STA station ground symbol is visible, but the dashed/dotted route does not provide a clear named component/BUS edge in the selected node model."
+S-125DC-A_and_S-125DC-B,excluded as separate nodes,Text appears adjacent to battery symbols; represented by BAT-125A/B components and BUS-125DC-A/B rails instead.
+uncertain_or_excluded_candidates,"excluded rather than guessed","Excluded TR-CPT-A--BUS-120AC-A, RELAY-27A--BUS-120AC-A, direct BUS-4160A--BUS-4160B, direct BUS-480A--BUS-480B, and any GND-STA edge."

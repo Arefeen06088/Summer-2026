@@ -1,0 +1,5 @@
+﻿candidate,decision,reason
+CT-EDG-A / CT-EDG-B to DG or control-panel endpoints,excluded,"CT symbols are present, but no direct named endpoint is visually supported strongly enough for a matrix edge."
+PT-6KV-A/B or UV-SENS-A/B to PNL-INST/RELAY-UV endpoints,excluded except bus/load-center sensing taps already listed,"Long dashed/dotted continuations exist, but exact named endpoints/crossing junctions are ambiguous."
+PNL-DC/UPS/REC long dash-dot routes to ESFAS/RPS control bay,excluded,Routes are visible but endpoints are ambiguous; adding them would overconnect the control bay.
+right-side relay output trunks and cross-row relay interconnects,excluded,Same-row panel-to-relay edges are retained; trunk crossings lack filled junction proof.

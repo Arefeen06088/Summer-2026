@@ -1,0 +1,30 @@
+Connectivity matrix validation summary - Document 26
+Input tree: Improved -- blind iterations
+GT source: C:\Asif_all_python_projects\INL\Improved -- synthetic diagrams (100 nodes)\26\synthetic_npp_connectivity_matrix_v3.csv
+Token usage: no token estimate files were present under the requested results tree.
+
+Scores:
+- Diego -- Iteration 1 Round 1 (Iteration_1\round_01_diego_matrix.csv): TP=197, FP=6, FN=12, Precision=0.970443, Recall=0.942584, F1=0.956311
+- Jennifer -- Iteration 1 Round 1 (Iteration_1\round_01_jennifer_matrix.csv): TP=199, FP=2, FN=10, Precision=0.990050, Recall=0.952153, F1=0.970732
+- Diego -- Iteration 1 Round 2 (Iteration_1\round_02_diego_matrix.csv): TP=199, FP=2, FN=10, Precision=0.990050, Recall=0.952153, F1=0.970732
+- Jennifer -- Iteration 1 Round 2 (Iteration_1\round_02_jennifer_matrix.csv): TP=199, FP=2, FN=10, Precision=0.990050, Recall=0.952153, F1=0.970732
+- Final connectivity -- Iteration 1 Final (Iteration_1\final_connectivity_matrix.csv): TP=199, FP=2, FN=10, Precision=0.990050, Recall=0.952153, F1=0.970732
+
+Main reasons the selected final score was not perfect:
+- Both extra extracted edges and missed GT edges are present, so the drop is mostly imperfect connectivity/edge discovery.
+
+False-positive edge examples:
+- BUS-125DCA -- INV-31A
+- BUS-125DCB -- INV-31B
+
+False-negative edge examples:
+- CB-480A13 -- RELAY-K7A3
+- CB-480B13 -- RELAY-K7B3
+- CB-4A03 -- RELAY-K7A1
+- CB-4B03 -- RELAY-K7B1
+- CB-INV-A -- INV-31A
+- CB-INV-B -- INV-31B
+- RELAY-K7A2 -- STR-A1-1
+- RELAY-K7A4 -- STR-A3-3
+- RELAY-K7B2 -- STR-B1-1
+- RELAY-K7B4 -- STR-B3-3

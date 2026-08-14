@@ -1,0 +1,4 @@
+﻿item,decision,evidence,uncertainty
+node_policy,Included 100 final_label components from component_visual_ocr_labels.csv plus five visible named electrical buses; excluded broad green area boxes and anonymous WN-* nodes.,"Raw diagram and detected/logical overlay show SWYD-BUS-A, SWYD-BUS-B, BUS-6KV-A, BUS-6KV-B, BUS-4KV-N as true buses.",low
+BUS-4KV-N label,"Used BUS-4KV-N from raw visual label, despite Diego noting overlay/OCR ambiguity.",Raw crop reads BUS-4KV-N; raw is the most reliable resource.,medium
+uncertain_high_recall_candidates,"Did not include CT-to-control, PT-to-control, UV-to-control, long DC/control-bay routes, right relay output trunks, or MOV/FAN/HPI-to-control routes in Diego matrix because endpoints were ambiguous.",Diego listed these separately as uncertain candidates; no GT or validation feedback used.,high
