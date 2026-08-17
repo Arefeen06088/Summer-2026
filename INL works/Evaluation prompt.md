@@ -1,0 +1,88 @@
+**Evaluation Prompt**
+
+
+
+Extracted connectivity matrices are stored in:
+
+**\[EXTRACTED\_RESULTS\_FOLDER]**
+
+
+
+Ground-truth connectivity data is stored in:
+
+**\[GROUND\_TRUTH\_FOLDER]**
+
+
+
+Store the final evaluation CSV in:
+
+**\[OUTPUT\_FOLDER]**
+
+
+
+Store all intermediate artifacts and code in:
+
+**\[WORKING\_FOLDER\_PATH]**
+
+
+
+Evaluate the extracted connectivity matrices produced by Diego and Jennifer across the different rounds/iterations.
+
+
+
+For each extracted connectivity matrix, identify the corresponding extractor name and round number from the folder structure and/or filename.
+
+
+
+The ground-truth connectivity matrix for the corresponding document is available in the ground-truth folder. Note that the ground truth may be stored as a connectivity list rather than a matrix, so normalize/convert it into the same connectivity-matrix representation used by the extracted results before performing the evaluation.
+
+
+
+Compare each extracted connectivity matrix against the normalized ground truth and calculate the following validation metrics:
+
+
+
+False Positives (FP)
+
+False Negatives (FN)
+
+Precision
+
+Recall
+
+F1 Score
+
+
+
+Ensure that the extracted and ground-truth matrices are aligned consistently before comparison. Normalize node/component identifiers, ordering, matrix dimensions, and connectivity representation as required so that equivalent connections are compared correctly.
+
+
+
+Create a single CSV file containing the evaluation results. Use the validation metrics as the column names, and use the following format for each row name:
+
+
+
+{Extractor\_name} -- Round {Round\_no.}
+
+
+
+For example:
+
+
+
+Diego -- Round 1
+
+Jennifer -- Round 1
+
+
+
+Save the final CSV under:
+
+
+
+**\[OUTPUT\_FOLDER]**
+
+
+
+Do not modify the original extracted matrices or ground-truth files. Use copies or intermediate artifacts in the working folder if normalization or preprocessing is required.
+
