@@ -1,0 +1,34 @@
+Before Running
+
+1.  Set the .env path containing INL_LITELLM_API_KEY: ENV_PATH =
+    Path(r”[PATH_TO_.ENV]“)
+
+2.  Set the model config path: CONFIG_PATH =
+    Path(r”[PATH_TO_CONFIG.TOML]“)
+
+3.  Set the resource folder containing the five input images:
+    RESOURCE_FOLDER = Path(r”[RESOURCE_FOLDER]“)
+
+    Required layers:
+
+    -   raw
+    -   component
+    -   wire
+    -   text
+    -   junction/node
+
+4.  Set the output folder: RESULTS_ROOT = Path(r”[RESULTS_FOLDER]“)
+
+5.  Check the resource filenames and modify them if necessary:
+
+    RESOURCE_FILES = { “raw”: “raw.png”, “component”:
+    “component_layer.png”, “wire”: “wire_layer.png”, “text”:
+    “text_layer.png”, “node”: “junction_node_layer.png”, }
+
+Then run:
+
+python multi_agent_connectivity_extraction.py
+
+Note: Existing Diego and Jennifer folders inside RESULTS_ROOT are
+deleted at the beginning of each run. Save any previous results you want
+to keep before rerunning.
