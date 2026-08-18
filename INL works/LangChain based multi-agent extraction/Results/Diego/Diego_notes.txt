@@ -1,0 +1,34 @@
+Extraction notes for Diego (independent extractor)
+
+1. Component identifiers
+   - I used synthetic identifiers (e.g., MAIN_4KV_BUS, TRAIN_A_POWER_BUS, PUMP_A_1, BUS_120VAC) rather than the exact printed equipment tags. The diagram text is small and dense; reading every tag reliably with the vision model was not feasible. Each identifier corresponds to a visually distinct piece of equipment or bus, typically aligned with green (busbar) or orange (component) boxes in the component layer.
+
+2. Scope and aggregation
+   - The connectivity captured here focuses on the primary power distribution path (4 kV safety bus feeding four safety trains and their major pump loads) and the lower 125 VDC / 120 VAC control-power path (DC bus, inverter, 120 VAC bus, SSPS panel).
+   - I intentionally aggregated many internal devices (circuit breakers, fuses, contactors, transformer windings, control relays, and detailed control-power branches) into higher-level nodes such as TRAIN_A_POWER_BUS and TRAIN_A_LOAD pumps. This was done to keep the matrix tractable and because following every individual device in series would produce a very large matrix.
+   - As a result, each TRAIN_X_POWER_BUS node represents the effective power bus and associated upstream protective devices feeding the three main pump loads drawn at the bottom of that safety-train column.
+
+3. Ignored / simplified elements
+   - Control-power circuits from the 120 VAC bus up into each safety train (e.g., contactor coils, logic relays) were mostly ignored. Although wires from the 120 VAC bus clearly run into each train, they terminate on coils and control devices that are electrically isolated from the 4 kV / 480 V power paths. Modeling those individually would require many extra nodes; instead, I limited the 120 VAC connectivity to the obvious inverter and SSPS connections.
+   - Transformer primaries and secondaries within each train were not modeled as separate nodes; they are implicitly included in TRAIN_X_POWER_BUS. Thus, I did not create explicit connections between different voltage-level buses via transformers.
+   - Some small annotation lines, dashed lines, and panel boundary outlines were confirmed (via the junction/node layer) as non-conductive and were therefore excluded from connectivity.
+
+4. Connectivity assumptions
+   - MAIN_4KV_BUS is treated as a single electrically continuous bus across the width of the drawing. It is directly connected (via series protective devices that I aggregated) to each TRAIN_X_POWER_BUS. The junction/node layer shows continuous conductive paths from the main bus down into each train column.
+   - Each TRAIN_X_POWER_BUS is directly connected to three major motor/pump loads at the bottom of that train column. The wire layer shows solid conductive paths from the train bus, through contactors/breakers, to each motor symbol. I treated those paths as direct connections between TRAIN_X_POWER_BUS and each PUMP_X_n component.
+   - On the lower control-power portion, BUS_125VDC connects to INVERTER_A (left bottom), and INVERTER_A connects to BUS_120VAC. The wire layer and junction nodes show clear endpoints at the DC side and AC side of the inverter and a continuous AC bus along the bottom of the drawing.
+   - BUS_120VAC is directly connected to the SSPS_PANEL via vertical feeders; this is evident from the wire and junction layers.
+   - I did **not** assert any direct electrical connection between BUS_120VAC and the safety-train power buses, because the apparent links pass through control coils or transformer windings that do not create a single conductive node between those buses.
+
+5. Ambiguities and uncertainties
+   - Exact equipment tags (e.g., detailed pump numbers, breaker identifiers, bus names such as BUS-SC-12B) could not all be read with high confidence due to resolution and scale. Where tags were unclear, I substituted synthetic names and recorded this here.
+   - The number of pump loads per train is assumed to be three, based on the visible motor symbols and their orange component boxes. If there are additional smaller loads within a train that are not clearly distinguishable at this scale, they are not represented.
+   - The internal topology of SSPS and other panels is not modeled; SSPS_PANEL is treated as a single node connected only to BUS_120VAC.
+
+6. Matrix consistency
+   - The adjacency matrix is square and symmetric with a zero diagonal, and all entries are binary (0 or 1).
+   - Every edge listed in Diego_edges.csv corresponds to a 1 in the matrix, and every 1 in the matrix corresponds to an undirected edge in the edge list.
+
+7. Limitations
+   - This representation is a coarse-grained view of the electrical connectivity. It is suitable for high-level network analysis (which buses feed which major loads and panels) but not for detailed protection or control-circuit studies.
+   - Another extractor working from the same diagram may choose a finer granularity (including every fuse, breaker, and control device) and may use the actual printed equipment tags instead of synthetic IDs.

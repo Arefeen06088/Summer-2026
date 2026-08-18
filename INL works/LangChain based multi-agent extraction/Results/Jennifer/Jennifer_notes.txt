@@ -1,0 +1,57 @@
+Extraction overview
+-------------------
+
+This connectivity extraction is based on the provided RAW, component, wire, text, and junction/node layers for the synthetic nuclear plant one-line control power schematic.
+
+To keep the adjacency matrix tractable while still reflecting the main electrical topology, I modeled:
+- The major AC and DC buses.
+- The main feeders from the 480 V safety buses to the intermediate safety/control buses.
+- The control power transformers feeding the common control power bus.
+- The 125 VDC inverter and DC distribution bus.
+- The SSPS panel.
+- Aggregated load groups for each safety train rather than every individual motor and protective device.
+
+Component identifiers and naming
+--------------------------------
+
+- The original diagram uses detailed identifiers (e.g., RBC-HS-2A, RBC-VY-4A, RBC-BC-1ZB, RBC-DC-1ZB, specific breaker and transformer numbers). Many of these labels are very small on the overall sheet, so I adopted simplified, location-based identifiers such as BUS_HS2A, BUS_VY4A, BUS_BC1ZB, BUS_DC1ZB, etc.
+- Tie breakers between the four top safety buses are modeled as TIE_AB, TIE_BC, and TIE_CD.
+- The main feeders from each top bus down to the corresponding intermediate bus are modeled as FEED_A, FEED_B, FEED_C, and FEED_D.
+- The control power transformers (and their associated protective devices) from each intermediate bus down to the common control power bus are modeled as CPT_A, CPT_B, CPT_C, and CPT_D.
+- The transformer connecting the lower AC bus to the control power bus is modeled as XFORMER_HS1ZB_BC1ZB.
+- The 125 VDC inverter and the DC distribution bus are modeled as INVERTER_A and BUS_DC1ZB.
+- The SSPS panel is modeled simply as SSPS.
+- All loads within each safety train fed from the common control power bus are aggregated into a single logical component per train: LOAD_TRAIN_A, LOAD_TRAIN_B, LOAD_TRAIN_C, and LOAD_TRAIN_D.
+
+Ambiguities and assumptions
+---------------------------
+
+1. Text legibility:
+   - Some component identifiers on the original sheet are too small to read with high confidence. Where the exact tag number was uncertain, I used simplified names based on bus function and physical location.
+   - The simplified names will not match the exact plant tag numbers but preserve relative topology.
+
+2. Component aggregation:
+   - Each FEED_* component may in reality represent a breaker plus associated disconnects or fuses between a 480 V safety bus and the corresponding intermediate bus.
+   - Each CPT_* component aggregates the primary and secondary disconnects, fuses, and transformer associated with feeding the control power bus from the respective intermediate bus.
+   - XFORMER_HS1ZB_BC1ZB represents a transformer plus protective devices between the lower AC bus and the control power bus.
+   - LOAD_TRAIN_* aggregates multiple motors and their individual starters, fuses, and contactors in that train. In the raw diagram, multiple motors are shown per train; I did not enumerate each motor separately.
+   - Because of this aggregation, the matrix describes direct connectivity between these grouped components rather than every single device symbol.
+
+3. SSPS connections:
+   - The wire and junction layers show SSPS connected both to the DC distribution bus and to the control power bus. I modeled both direct connections (BUS_DC1ZB–SSPS and BUS_BC1ZB–SSPS).
+
+4. Excluded detail:
+   - Instrumentation, indicator lights, auxiliary contacts, and dashed control wiring are not represented in the matrix.
+   - Any small internal interconnections within complex component symbols (for example, internal links within SSPS or within motor starter assemblies) are not modeled.
+   - Any potential alternate or emergency feeds not clearly distinguishable from the main feeders were omitted to avoid speculative connections.
+
+5. Junction vs. crossing:
+   - The junction/node layer was used qualitatively to distinguish true junctions (solid dots) from simple graphical crossings. Only conductors with explicit junction nodes or continuous line segments were treated as electrical connections.
+
+Validation-related notes
+------------------------
+
+- The matrix is square (29 x 29), symmetric, and the diagonal entries are all zero.
+- Every edge in Jennifer_edges.csv corresponds to a pair of components marked with a "1" in Jennifer_matrix.csv.
+- All connections in the matrix are supported by visible conductive paths in the wire layer and confirmed by junction nodes; I did not add connections solely to make the network appear more complete.
+- The level of detail is intentionally coarse-grained (grouped feeders, transformers, and load groups) due to text legibility limitations and the complexity of the original one-line diagram.
